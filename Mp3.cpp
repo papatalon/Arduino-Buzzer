@@ -19,10 +19,24 @@ void Mp3::init(void) {
   softwareSerialMP3.begin(9600);
   Serial.println(F("Initializing MP3Player ..."));
 
-  if (!mp3.begin(softwareSerialMP3, false))
+  mp3.begin(softwareSerialMP3, false);
+
+  // begin() renvoie toujours true quand l'ACK est désactivé : on ne peut pas
+  // s'y fier. On interroge donc réellement le module (readState envoie une
+  // requête et attend une réponse). Aucune réponse (DFPlayer absent /
+  // simulation Wokwi) -> -1. On tente plusieurs fois pour éviter un faux
+  // négatif sur le vrai matériel.
+  bool detected = false;
+  for (int i = 0; i < 3 && !detected; i++) {
+    if (mp3.readState() != -1) {
+      detected = true;
+    }
+  }
+
+  if (!detected)
   {
     // Aucun DFPlayer détecté (carte SD absente ou simulation Wokwi).
-    // On bascule en mode simulation au lieu de bloquer le programme.
+    // On bascule en mode simulation au lieu de jouer dans le vide.
     simulation = true;
     Serial.println(F("DFPlayer introuvable -> mode SIMULATION (sons sur le port serie)."));
   }
