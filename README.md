@@ -9,11 +9,11 @@ Le projet est développé et simulé sur [Wokwi](https://wokwi.com/projects/4204
 | Composant | Détail |
 |-----------|--------|
 | Carte | Arduino Mega 2560 |
-| Buzzers | 4 boutons poussoirs (rouge, bleu, jaune, vert) — `INPUT_PULLUP` sur pins 6, 8, 10, 12 |
-| LEDs | 4 LEDs (une par buzzer) sur pins 7, 9, 11, 13, via résistances 220 Ω |
+| Buzzers | 4 boutons poussoirs (rouge, bleu, jaune, vert) — `INPUT_PULLUP` sur pins 5, 7, 9, 11 |
+| LEDs | 4 LEDs (une par buzzer) sur pins 6, 8, 10, 12, via résistances 220 Ω |
 | Clavier | Membrane matricielle 4×4 — lignes sur pins 39/41/43/45, colonnes sur 47/49/51/53 |
 | Écran | LCD 20×4 en I²C (adresse `0x27`, SDA/SCL sur pins 20/21) |
-| Son | Module MP3 (simulé via le moniteur série pour l'instant) |
+| Son | Module DFPlayer Mini (carte SD) — RX 15, TX 14, BUSY 2 |
 
 Le câblage complet est décrit dans [diagram.json](diagram.json).
 
@@ -45,8 +45,19 @@ Les sons sont répartis par plages d'identifiants dans [Mp3.h](Mp3.h) (init, bon
 | [Buzzer.cpp](Buzzer.cpp) / [.h](Buzzer.h) | Gestion des buzzers, LEDs et logique de jeu (singleton) |
 | [AppKeypad.h](AppKeypad.h) | Lecture du clavier matriciel et détection du reset (singleton) |
 | [LcdDisplay.cpp](LcdDisplay.cpp) / [.h](LcdDisplay.h) | Affichage LCD 20×4 avec défilement de texte et gestion des accents |
-| [Mp3.cpp](Mp3.cpp) / [.h](Mp3.h) | Sélection et lecture des sons (singleton) |
+| [Mp3.cpp](Mp3.cpp) / [.h](Mp3.h) | Pilotage du DFPlayer Mini + bascule simulation (singleton) |
 | [OledDisplay.cpp](OledDisplay.cpp) / [.h](OledDisplay.h) | Variante d'affichage OLED (non utilisée actuellement) |
+
+## Son : matériel réel et simulation
+
+Les sons sont organisés sur la carte SD du DFPlayer Mini en **4 dossiers** : `01` (init), `02` (buzzers), `03` (bonnes réponses), `04` (mauvaises réponses).
+
+Le module [Mp3](Mp3.cpp) **détecte automatiquement** la présence du DFPlayer au démarrage (`mp3.begin`) :
+
+- **DFPlayer détecté** (Arduino réel) → les sons sont joués normalement.
+- **DFPlayer absent** (simulation Wokwi, ou carte SD manquante) → bascule automatique en **mode simulation** : au lieu de bloquer, le programme affiche sur le moniteur série le dossier et le fichier qui *auraient* été joués (`[SIM] Lecture dossier ...`).
+
+Aucun réglage à modifier entre la simulation et le téléversement réel : **le même code fonctionne dans les deux cas**.
 
 ## Dépendances
 
@@ -54,6 +65,7 @@ Bibliothèques Arduino requises (voir [libraries.txt](libraries.txt)) :
 
 - `Keypad`
 - `LiquidCrystal I2C`
+- `DFRobotDFPlayerMini` *(pilotage du module son ; `SoftwareSerial` est fourni par le core AVR)*
 - `Adafruit SSD1306` *(pour la variante OLED)*
 - `Adafruit GFX Library` *(pour la variante OLED)*
 
@@ -71,7 +83,7 @@ arduino-cli compile --fqbn arduino:avr:mega --output-dir build .
 arduino-cli upload  --fqbn arduino:avr:mega -p <PORT> .
 ```
 
-Le moniteur série (9600 bauds) affiche les identifiants de sons « joués » tant que le module MP3 réel n'est pas branché.
+En simulation Wokwi (DFPlayer absent), le moniteur série (9600 bauds) affiche les sons « joués » sous la forme `[SIM] Lecture dossier ...`. Sur l'Arduino réel équipé du DFPlayer et de la carte SD, les sons sont diffusés réellement — sans rien changer au code.
 
 ## Auteur
 

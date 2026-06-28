@@ -18,25 +18,25 @@ public:
 
     void setWaitingForBuzzer();
     PhaseMode waitingBuzzerIsPressed(PhaseMode currentMode);
-    
-    void setBuzzerPressed();
-    PhaseMode buzzerIsPressed(PhaseMode currentMode, char pressedKey);  
 
-    void initMp3Index(); 
+    void setBuzzerPressed();
+    PhaseMode buzzerIsPressed(PhaseMode currentMode, char pressedKey);
+
+    void initMp3Index();
     void endConfiguration();
 
 private:
   Buzzer(const Buzzer&) = delete;
   Buzzer& operator=(const Buzzer&) = delete;
-    
+
   // Initialisation du buzzer
   // Array 0:  Buzzer
   // Array 1:  { Pin Led, Pin Button}
   int buzzers[4][3] = {
-    {7, 6, 0}, //Rouge
-    {9, 8, 1}, //Bleu
-    {11, 10, 2}, //Jaune
-    {13, 12, 3} // Vert
+    {6, 5, 0}, //Rouge
+    {8, 7, 1}, //Bleu
+    {10, 9, 2}, //Jaune
+    {12, 11, 3} // Vert
   };
 
   bool actives[4] = { true, true, true, true};

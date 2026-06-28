@@ -4,7 +4,7 @@
 #include <Arduino.h>
 #include <LiquidCrystal_I2C.h>
 
-#define SCROLL_DELAY 100
+#define SCROLL_DELAY 350
 #define PADDING 3
 
 class LcdDisplay {
