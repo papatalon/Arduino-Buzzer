@@ -47,6 +47,8 @@ Chaque buzzer (couleur) a un score. Deux modes, choisis au menu via `C` :
 
 Les scores sont remis à zéro au lancement d'une partie (`#`). Entre chaque question (après une bonne réponse), l'écran des scores s'affiche 15 secondes (ou `#` pour enchaîner). En fin de partie (`C`), l'écran affiche les scores finaux et la couleur gagnante avec un son de victoire (en cas d'égalité, « EGALITE » est affiché sans son).
 
+Seuls les **buzzers présents** (déclarés via l'assistant) apparaissent sur les écrans de scores ; les buzzers absents sont masqués, et le gagnant est calculé uniquement parmi les présents.
+
 ### Assistant de configuration des buzzers (`A` au menu)
 
 L'assistant fait le tour des 4 buzzers (Rouge → Bleu → Jaune → Vert). Pour chacun :

@@ -152,8 +152,30 @@ void Buzzer::resetScores() {
 void Buzzer::displayScores(const char* title, const char* prompt) {
   display.clear();
   display.setText(title, 0);
-  display.setText(String(colorName(0)) + ":" + scores[0] + "   " + colorName(1) + ":" + scores[1], 1);
-  display.setText(String(colorName(2)) + ":" + scores[2] + "   " + colorName(3) + ":" + scores[3], 2);
+
+  // N'affiche que les buzzers présents, jusqu'à 2 par ligne.
+  String line1 = "";
+  String line2 = "";
+  int shown = 0;
+  for (int i = 0; i < 4; i++) {
+    if (!enabled[i]) {
+      continue;
+    }
+    String entry = String(colorName(i)) + ":" + scores[i];
+    if (shown == 0) {
+      line1 = entry;
+    } else if (shown == 1) {
+      line1 += "   " + entry;
+    } else if (shown == 2) {
+      line2 = entry;
+    } else {
+      line2 += "   " + entry;
+    }
+    shown++;
+  }
+
+  display.setText(line1, 1);
+  display.setText(line2, 2);
   display.setText(prompt, 3);
 }
 
@@ -195,17 +217,18 @@ void Buzzer::setEndGame() {
     }
   }
 
-  display.clear();
-  display.setText("FIN DE PARTIE", 0);
-  display.setText(String(colorName(0)) + ":" + scores[0] + "   " + colorName(1) + ":" + scores[1], 1);
-  display.setText(String(colorName(2)) + ":" + scores[2] + "   " + colorName(3) + ":" + scores[3], 2);
-
+  String prompt;
   if (!any) {
-    display.setText("Aucun buzzer  #=menu", 3);
+    prompt = "Aucun buzzer  #=menu";
   } else if (count > 1) {
-    display.setText(String("EGALITE (") + best + " pts)  #=menu", 3);
+    prompt = String("EGALITE (") + best + " pts)  #=menu";
   } else {
-    display.setText(String("Gagnant: ") + colorName(winner) + "  #=menu", 3);
+    prompt = String("Gagnant: ") + colorName(winner) + "  #=menu";
+  }
+
+  displayScores("FIN DE PARTIE", prompt.c_str());
+
+  if (any && count == 1) {
     mp3.playGoodAnswer();            // son de victoire
   }
 }
