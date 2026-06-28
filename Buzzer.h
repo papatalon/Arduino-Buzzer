@@ -45,6 +45,10 @@ public:
     void setEndGame();                       // écran fin de partie (gagnant + son)
     PhaseMode endGame(char pressedKey);
 
+    // Correction d'une erreur de l'animateur : annule la dernière décision
+    // (bonne/mauvaise) et revient juger le même buzzer.
+    PhaseMode correctLastDecision(PhaseMode fallback);
+
 private:
   Buzzer(const Buzzer&) = delete;
   Buzzer& operator=(const Buzzer&) = delete;
@@ -70,6 +74,10 @@ private:
   int scores[4] = { 0, 0, 0, 0};
   bool penaltyMode = false;           // false = Classique, true = Pénalité (-1 si mauvaise)
   unsigned long scoresShownAt = 0;    // horodatage d'affichage des scores
+
+  // Mémoire de la dernière décision (pour correction).
+  int lastJudgedBuzzer = -1;
+  bool lastWasGood = false;
 
   int currentBuzzerId;
   unsigned long previousMillis = 0;

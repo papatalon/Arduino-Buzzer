@@ -62,6 +62,8 @@ PhaseMode getCurrentMode() {
     case WAITING_BUZZER:
       if (pressedKey == 'C') {
         mode = END_GAME;                 // terminer la partie
+      } else if (pressedKey == 'B') {
+        mode = buzzer.correctLastDecision(currentMode);  // corriger la derniere decision
       } else {
         mode = buzzer.waitingBuzzerIsPressed(currentMode);
       }

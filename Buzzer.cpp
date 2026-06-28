@@ -46,7 +46,7 @@ void Buzzer::setWaitingForBuzzer() {
   display.clear();
   display.setText("     EN ATTENTE", 0);
   display.setText("    D'UNE REPONSE", 1);
-  display.setText("C = terminer la partie", 3);
+  display.setText("C terminer   B corriger", 3);
 }
 
 void Buzzer::setBuzzerPressed() {
@@ -81,6 +81,8 @@ void Buzzer::goodAnswer() {
   int ledPin = buzzers[currentBuzzerId][0];
 
   scores[currentBuzzerId]++;        // bonne réponse : +1
+  lastJudgedBuzzer = currentBuzzerId;
+  lastWasGood = true;
 
   mp3.playGoodAnswer();
   digitalWrite(ledPin, LOW);
@@ -95,11 +97,32 @@ void Buzzer::badAnswer() {
   if (penaltyMode) {
     scores[currentBuzzerId]--;      // mode Pénalité : -1 (peut être négatif)
   }
+  lastJudgedBuzzer = currentBuzzerId;
+  lastWasGood = false;
 
   mp3.playBadAnswer();
 
   actives[currentBuzzerId] = false;
   digitalWrite(ledPin, LOW);
+}
+
+PhaseMode Buzzer::correctLastDecision(PhaseMode fallback) {
+  if (lastJudgedBuzzer < 0) {
+    return fallback;                // rien à corriger
+  }
+
+  int id = lastJudgedBuzzer;
+  if (lastWasGood) {
+    scores[id]--;                  // annule le +1 d'une bonne réponse
+  } else {
+    actives[id] = true;            // ré-active le buzzer écarté
+    if (penaltyMode) {
+      scores[id]++;                // annule le -1 de la pénalité
+    }
+  }
+
+  currentBuzzerId = id;            // on revient juger ce même buzzer
+  return BUZZER_PRESSED;
 }
 
 void Buzzer::resetAllBuzzers() {
@@ -147,6 +170,8 @@ void Buzzer::resetScores() {
   for (int i = 0; i < 4; i++) {
     scores[i] = 0;
   }
+  lastJudgedBuzzer = -1;
+  lastWasGood = false;
 }
 
 void Buzzer::displayScores(const char* title, const char* prompt) {
@@ -181,12 +206,15 @@ void Buzzer::displayScores(const char* title, const char* prompt) {
 
 void Buzzer::setShowScores() {
   scoresShownAt = millis();
-  displayScores("      SCORES", "# = question suivante");
+  displayScores("      SCORES", "# suivant   B corriger");
 }
 
 PhaseMode Buzzer::showScores(char pressedKey) {
   if (pressedKey == 'C') {
     return END_GAME;                 // terminer la partie depuis l'écran scores
+  }
+  if (pressedKey == 'B') {
+    return correctLastDecision(SHOW_SCORES);  // corriger la dernière décision
   }
   if (pressedKey == '#') {
     return WAITING_BUZZER;           // passer tout de suite à la question suivante

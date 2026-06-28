@@ -28,11 +28,11 @@ L'application est une machine à états ([PhaseMode.h](PhaseMode.h)) pilotée da
   - `#` : démarrer la partie (`WAITING_BUZZER`) — **remet les scores à zéro**
 - **BUZZER_CONFIG** — Assistant de configuration guidé (voir ci-dessous). `#` quitte à tout moment.
 - **SHUFFLE_BUZZER** — Réattribue aléatoirement les sons à tous les buzzers, **après confirmation** (`#` = confirmer, `*` = annuler) pour éviter d'écraser une configuration faite via l'assistant.
-- **WAITING_BUZZER** — En attente : le premier buzzer *présent et actif* pressé allume sa LED, joue son son et passe en `BUZZER_PRESSED`. `C` termine la partie (`END_GAME`).
+- **WAITING_BUZZER** — En attente : le premier buzzer *présent et actif* pressé allume sa LED, joue son son et passe en `BUZZER_PRESSED`. `C` termine la partie (`END_GAME`), `B` corrige la dernière décision.
 - **BUZZER_PRESSED** — L'animateur tranche :
   - `A` : bonne réponse → **+1 point**, son de bonne réponse, clignotement, buzzers réactivés, puis écran des scores (`SHOW_SCORES`).
   - `D` : mauvaise réponse → son d'échec, le buzzer fautif est désactivé pour ce tour (**−1 point en mode Pénalité**), on reste sur la même question.
-- **SHOW_SCORES** — Affiche les scores entre les questions (2 colonnes + titre), pendant 15 s ou jusqu'à `#`. `C` termine la partie.
+- **SHOW_SCORES** — Affiche les scores entre les questions (2 colonnes + titre), pendant 15 s ou jusqu'à `#`. `C` termine la partie, `B` corrige la dernière décision.
 - **END_GAME** — Scores finaux + couleur gagnante (+ son de victoire) ; `#` revient au menu.
 - **RESET** — Une touche de reset (gérée par [AppKeypad](AppKeypad.h)) éteint les LEDs et revient au menu.
 
@@ -48,6 +48,10 @@ Chaque buzzer (couleur) a un score. Deux modes, choisis au menu via `C` :
 Les scores sont remis à zéro au lancement d'une partie (`#`). Entre chaque question (après une bonne réponse), l'écran des scores s'affiche 15 secondes (ou `#` pour enchaîner). En fin de partie (`C`), l'écran affiche les scores finaux et la couleur gagnante avec un son de victoire (en cas d'égalité, « EGALITE » est affiché sans son).
 
 Seuls les **buzzers présents** (déclarés via l'assistant) apparaissent sur les écrans de scores ; les buzzers absents sont masqués, et le gagnant est calculé uniquement parmi les présents.
+
+### Corriger une erreur de jugement
+
+Si l'animateur se trompe (coche bonne au lieu de mauvaise, ou l'inverse), la touche `B` **annule la dernière décision** : le score est rétabli comme avant, et on revient sur l'écran de jugement (`BIP / A / D`) du **même buzzer** pour appuyer sur la bonne touche. Disponible depuis l'écran des scores (après une bonne réponse) et depuis l'écran d'attente (après une mauvaise réponse).
 
 ### Assistant de configuration des buzzers (`A` au menu)
 
