@@ -24,9 +24,6 @@ public:
     void setBuzzerPressed();
     PhaseMode buzzerIsPressed(PhaseMode currentMode, char pressedKey);
 
-    void initMp3Index();
-    void endConfiguration();
-
     // Assistant de configuration
     void resetConfigState();                 // ré-active tout, remet l'anti-rebond
     void setEnabled(int buzzerId, bool value);
@@ -53,14 +50,12 @@ private:
   Buzzer(const Buzzer&) = delete;
   Buzzer& operator=(const Buzzer&) = delete;
 
-  // Initialisation du buzzer
-  // Array 0:  Buzzer
-  // Array 1:  { Pin Led, Pin Button}
-  int buzzers[4][3] = {
-    {6, 5, 0}, //Rouge
-    {8, 7, 1}, //Bleu
-    {10, 9, 2}, //Jaune
-    {12, 11, 3} // Vert
+  // Brochage des buzzers : { Pin LED, Pin Bouton }
+  int buzzers[4][2] = {
+    {6, 5},   //Rouge
+    {8, 7},   //Bleu
+    {10, 9},  //Jaune
+    {12, 11}  //Vert
   };
 
   bool actives[4] = { true, true, true, true};
@@ -80,7 +75,6 @@ private:
   bool lastWasGood = false;
 
   int currentBuzzerId;
-  unsigned long previousMillis = 0;
 
   void goodAnswer();
   void badAnswer();

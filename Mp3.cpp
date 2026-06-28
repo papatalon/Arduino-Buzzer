@@ -72,7 +72,6 @@ void Mp3::initializeMP3Arrays(void)
     }
 
     mp3Arrays[i].size = count;
-    mp3Arrays[i].array = new int[count];
 
     Serial.print(F("Dossier "));
     Serial.print(folderId);
@@ -184,15 +183,15 @@ void Mp3::resetConfig() {
 
 void Mp3::playInit() {
   int arraySize = mp3Arrays[INIT_FOLDER - 1].size;
-  int randomIndex = random(arraySize);
+  int fileNumber = random(arraySize) + 1;   // fichiers DFPlayer numérotés à partir de 1
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier INIT, fichier "));
-    Serial.println(randomIndex);
+    Serial.println(fileNumber);
     return;
   }
 
-  mp3.playFolder(INIT_FOLDER, randomIndex);
+  mp3.playFolder(INIT_FOLDER, fileNumber);
 }
 
 void Mp3::playBuzzer(int buzzerId) {
@@ -210,26 +209,26 @@ void Mp3::playBuzzer(int buzzerId) {
 
 void Mp3::playGoodAnswer() {
   int arraySize = mp3Arrays[GOOD_FOLDER - 1].size;
-  int randomIndex = random(arraySize);
+  int fileNumber = random(arraySize) + 1;   // fichiers DFPlayer numérotés à partir de 1
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier GOOD, fichier "));
-    Serial.println(randomIndex);
+    Serial.println(fileNumber);
     return;
   }
 
-  mp3.playFolder(GOOD_FOLDER, randomIndex);
+  mp3.playFolder(GOOD_FOLDER, fileNumber);
 }
 
 void Mp3::playBadAnswer() {
   int arraySize = mp3Arrays[BAD_FOLDER - 1].size;
-  int randomIndex = random(arraySize);
+  int fileNumber = random(arraySize) + 1;   // fichiers DFPlayer numérotés à partir de 1
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier BAD, fichier "));
-    Serial.println(randomIndex);
+    Serial.println(fileNumber);
     return;
   }
 
-  mp3.playFolder(BAD_FOLDER, randomIndex);
+  mp3.playFolder(BAD_FOLDER, fileNumber);
 }

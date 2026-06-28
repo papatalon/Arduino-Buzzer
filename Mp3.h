@@ -48,9 +48,7 @@ class Mp3 {
 
     struct MP3Array
     {
-      int *array = nullptr;
       int size = 0;
-      int index = 0;
     };
 
     void initializeMP3Arrays(void);

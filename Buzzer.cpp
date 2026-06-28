@@ -28,7 +28,6 @@ PhaseMode Buzzer::waitingBuzzerIsPressed(PhaseMode currentMode) {
     int buttonPin = buzzers[i][1];
     if (enabled[i] && actives[i] && digitalRead(buttonPin) == LOW) { // Button pressed
       currentBuzzerId = i;
-      previousMillis = millis();
 
       int ledPin = buzzers[currentBuzzerId][0];
       digitalWrite(ledPin, HIGH);
@@ -87,8 +86,8 @@ void Buzzer::goodAnswer() {
   mp3.playGoodAnswer();
   digitalWrite(ledPin, LOW);
 
-  Buzzer:blink();
-  Buzzer::resetAllBuzzers();
+  blink();
+  resetAllBuzzers();
 }
 
 void Buzzer::badAnswer() {
@@ -295,37 +294,3 @@ void Buzzer::setLed(int buzzerId, bool on) {
   digitalWrite(buzzers[buzzerId][0], on ? HIGH : LOW);
 }
 
-void Buzzer::initMp3Index() {
-  for(int i = 0; i < 4; i++) {
-    buzzers[currentBuzzerId][2] = -1;
-  }
-}
-
-void Buzzer::endConfiguration() {
-  // Array to track used values
-  // int buzzerSoundCount = mp3.getBuzzerSoundCount();
-
-  // bool usedValues[buzzerSoundCount] = {}; // Index 0 to 10, where 0 will not be used
-
-
-  // // Mark existing values as used
-  // for (int i = 0; i < 4; i++) {
-  //   int soundIndex = buzzers[i][2];
-  //   if (soundIndex != -1) {
-  //     usedValues[soundIndex] = true;
-  //   }
-  // }
-
-  // // Fill in -1 values with unique random numbers between 1 and 10
-  // for (int i = 0; i < 4; i++) {
-  //   if (buzzers[i][2] == -1) {
-  //     int newValue;
-  //     do {
-  //       newValue = random(0, buzzerSoundCount); // Generate a random number between 1 and 10
-  //     } while (usedValues[newValue]); // Repeat if the value is already used
-
-  //     buzzers[i][2] = newValue; // Assign the unique random value
-  //     usedValues[newValue] = true; // Mark the value as used
-  //   }
-  // }
-}
