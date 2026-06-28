@@ -26,7 +26,7 @@ L'application est une machine à états ([PhaseMode.h](PhaseMode.h)) pilotée da
   - `B` : attribuer des sons aléatoires (`SHUFFLE_BUZZER`)
   - `#` : démarrer la partie (`WAITING_BUZZER`)
 - **BUZZER_CONFIG** — Assistant de configuration guidé (voir ci-dessous). `#` quitte à tout moment.
-- **SHUFFLE_BUZZER** — Réattribue aléatoirement les sons à tous les buzzers.
+- **SHUFFLE_BUZZER** — Réattribue aléatoirement les sons à tous les buzzers, **après confirmation** (`#` = confirmer, `*` = annuler) pour éviter d'écraser une configuration faite via l'assistant.
 - **WAITING_BUZZER** — En attente : le premier buzzer *présent et actif* pressé allume sa LED, joue son son et passe en `BUZZER_PRESSED`.
 - **BUZZER_PRESSED** — L'animateur tranche :
   - `A` : bonne réponse → son de bonne réponse, clignotement, tous les buzzers réactivés, retour en attente.

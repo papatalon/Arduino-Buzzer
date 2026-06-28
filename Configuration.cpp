@@ -27,25 +27,36 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
 }
 
 void Configuration::setShuffleBuzzers() {
-
-  mp3.shuffleBuzzers();
-
+  // On NE mélange pas encore : on demande confirmation pour éviter
+  // d'écraser une configuration faite via l'assistant.
+  shufStep = SHUF_CONFIRM;
   display.clear();
-  display.setText("    CONFIGURATION", 0);
-  display.setText("Les sons ont été changés aléatoirement", 1);
-  display.setText("#: Retourner au menu", 3);
+  display.setText("SONS ALEATOIRES", 0);
+  display.setText("Ecrase les sons configures", 1);
+  display.setText("# = confirmer", 2);
+  display.setText("* = annuler", 3);
 }
 
 PhaseMode Configuration::shuffleBuzzer(char pressedKey) {
-  if(!pressedKey) {
+  if (shufStep == SHUF_CONFIRM) {
+    if (pressedKey == '*') {
+      return CONFIGURATION;          // annulé : aucun son modifié
+    }
+    if (pressedKey == '#') {
+      mp3.shuffleBuzzers();          // confirmé : on re-tire les sons
+      shufStep = SHUF_DONE;
+      display.clear();
+      display.setText("Sons changes", 0);
+      display.setText("aleatoirement", 1);
+      display.setText("# = retour au menu", 3);
+    }
     return SHUFFLE_BUZZER;
   }
 
-  switch(pressedKey) {
-    case '#':
-      return CONFIGURATION;
+  // SHUF_DONE
+  if (pressedKey == '#') {
+    return CONFIGURATION;
   }
-
   return SHUFFLE_BUZZER;
 }
 

@@ -20,8 +20,12 @@ private:
   // Étapes de l'assistant de configuration d'un buzzer.
   enum CfgStep { CFG_PROMPT, CFG_CHOOSING };
 
+  // Étapes de l'écran "Sons aléatoires" (confirmation avant d'écraser).
+  enum ShufStep { SHUF_CONFIRM, SHUF_DONE };
+
   int cfgIndex = 0;          // buzzer en cours de configuration (0..3)
   CfgStep cfgStep = CFG_PROMPT;
+  ShufStep shufStep = SHUF_CONFIRM;
 
   void showConfigPrompt();
   void showConfigChoice();
