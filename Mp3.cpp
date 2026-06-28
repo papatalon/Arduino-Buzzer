@@ -101,9 +101,15 @@ void Mp3::shuffleBuzzers() {
   }
 
   // Assign the first 4 shuffled indices to buzzerSound
+  const char* couleurs[4] = { "Rouge", "Bleu", "Jaune", "Vert" };
   for (int i = 0; i < 4; i++) {
     buzzerSound[i] = buzzerIds[i];
-    Serial.println(buzzerSound[i]);
+    Serial.print(F("Buzzer "));
+    Serial.print(i);
+    Serial.print(F(" ("));
+    Serial.print(couleurs[i]);
+    Serial.print(F(") -> son "));
+    Serial.println(buzzerSound[i] + 1);
   }
 }
 
