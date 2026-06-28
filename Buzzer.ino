@@ -60,11 +60,21 @@ PhaseMode getCurrentMode() {
       mode = reset();
       break;
     case WAITING_BUZZER:
-      mode = buzzer.waitingBuzzerIsPressed(currentMode);
+      if (pressedKey == 'C') {
+        mode = END_GAME;                 // terminer la partie
+      } else {
+        mode = buzzer.waitingBuzzerIsPressed(currentMode);
+      }
       break;
     case BUZZER_PRESSED:
       mode = buzzer.buzzerIsPressed(currentMode, pressedKey);
-      break; 
+      break;
+    case SHOW_SCORES:
+      mode = buzzer.showScores(pressedKey);
+      break;
+    case END_GAME:
+      mode = buzzer.endGame(pressedKey);
+      break;
   }
 
   return mode;
@@ -94,6 +104,12 @@ void updateMode() {
       break;
     case BUZZER_PRESSED:
       buzzer.setBuzzerPressed();
+      break;
+    case SHOW_SCORES:
+      buzzer.setShowScores();
+      break;
+    case END_GAME:
+      buzzer.setEndGame();
       break;
   }
 }

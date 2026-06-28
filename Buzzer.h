@@ -6,6 +6,8 @@
 #include <Arduino.h>
 #include "Mp3.h";
 
+#define SCORES_DISPLAY_MS 15000  // durée d'affichage des scores entre les questions
+
 class Buzzer {
 public:
 
@@ -32,6 +34,17 @@ public:
     bool wasPressed(int buzzerId);           // front montant d'un appui (anti-rebond)
     void setLed(int buzzerId, bool on);
 
+    // Score et modes de jeu
+    void setPenaltyMode(bool value);
+    void togglePenaltyMode();
+    bool isPenaltyMode();
+    void resetScores();
+
+    void setShowScores();                    // écran scores entre les questions
+    PhaseMode showScores(char pressedKey);
+    void setEndGame();                       // écran fin de partie (gagnant + son)
+    PhaseMode endGame(char pressedKey);
+
 private:
   Buzzer(const Buzzer&) = delete;
   Buzzer& operator=(const Buzzer&) = delete;
@@ -53,6 +66,11 @@ private:
   // État précédent du bouton, pour l'anti-rebond pendant la configuration.
   bool prevPressed[4] = { false, false, false, false};
 
+  // Scores par buzzer et mode de jeu.
+  int scores[4] = { 0, 0, 0, 0};
+  bool penaltyMode = false;           // false = Classique, true = Pénalité (-1 si mauvaise)
+  unsigned long scoresShownAt = 0;    // horodatage d'affichage des scores
+
   int currentBuzzerId;
   unsigned long previousMillis = 0;
 
@@ -60,6 +78,8 @@ private:
   void badAnswer();
   void resetAllBuzzers();
   void blink();
+  const char* colorName(int i);
+  void displayScores(const char* title, const char* prompt);
 
   LcdDisplay& display = LcdDisplay::shared();
   Mp3& mp3 = Mp3::shared();

@@ -8,7 +8,9 @@ enum PhaseMode {
     BUZZER_CONFIG,
     RESET,
     WAITING_BUZZER,
-    BUZZER_PRESSED
+    BUZZER_PRESSED,
+    SHOW_SCORES,
+    END_GAME
 };
 
 #endif

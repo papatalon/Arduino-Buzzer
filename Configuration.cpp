@@ -2,9 +2,9 @@
 
 void Configuration::init() {
   display.clear();
-  display.setText("    CONFIGURATION", 0);
-  display.setText("A: Configurer les sons des buzzers", 1);
-  display.setText("B: Sons aléatoires", 2);
+  display.setText(String("MENU  Mode: ") + (buzzer.isPenaltyMode() ? "Penalite" : "Classique"), 0);
+  display.setText("A: Configurer les sons   B: Sons aleatoires", 1);
+  display.setText("C: Changer de mode", 2);
   display.setText("#: Démarrer la partie", 3);
 }
 
@@ -19,7 +19,12 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
       return BUZZER_CONFIG;
     case 'B':
       return SHUFFLE_BUZZER;
+    case 'C':
+      buzzer.togglePenaltyMode();   // bascule Classique <-> Pénalité
+      init();                       // redessine le menu avec le nouveau mode
+      return CONFIGURATION;
     case '#':
+      buzzer.resetScores();         // nouvelle partie : scores remis à zéro
       return WAITING_BUZZER;
   }
 

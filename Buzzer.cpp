@@ -46,6 +46,7 @@ void Buzzer::setWaitingForBuzzer() {
   display.clear();
   display.setText("     EN ATTENTE", 0);
   display.setText("    D'UNE REPONSE", 1);
+  display.setText("C = terminer la partie", 3);
 }
 
 void Buzzer::setBuzzerPressed() {
@@ -63,10 +64,10 @@ PhaseMode Buzzer::buzzerIsPressed(PhaseMode currentMode, char pressedKey) {
   switch (pressedKey) {
     case 'A':
       Buzzer::goodAnswer();
-      return WAITING_BUZZER;
+      return SHOW_SCORES;       // fin de question -> écran des scores
     case 'D':
       Buzzer::badAnswer();
-      return WAITING_BUZZER;
+      return WAITING_BUZZER;    // même question, les autres peuvent répondre
       break;
     default:
       return currentMode;
@@ -79,6 +80,8 @@ PhaseMode Buzzer::buzzerIsPressed(PhaseMode currentMode, char pressedKey) {
 void Buzzer::goodAnswer() {
   int ledPin = buzzers[currentBuzzerId][0];
 
+  scores[currentBuzzerId]++;        // bonne réponse : +1
+
   mp3.playGoodAnswer();
   digitalWrite(ledPin, LOW);
 
@@ -88,6 +91,10 @@ void Buzzer::goodAnswer() {
 
 void Buzzer::badAnswer() {
   int ledPin = buzzers[currentBuzzerId][0];
+
+  if (penaltyMode) {
+    scores[currentBuzzerId]--;      // mode Pénalité : -1 (peut être négatif)
+  }
 
   mp3.playBadAnswer();
 
@@ -112,6 +119,103 @@ void Buzzer::blink() {
     digitalWrite(ledPin, LOW);  // Turn the LED off
     delay(delayTime);        // Wait for the specified delay time
   }
+}
+
+const char* Buzzer::colorName(int i) {
+  switch (i) {
+    case 0: return "Rouge";
+    case 1: return "Bleu";
+    case 2: return "Jaune";
+    case 3: return "Vert";
+    default: return "?";
+  }
+}
+
+void Buzzer::setPenaltyMode(bool value) {
+  penaltyMode = value;
+}
+
+void Buzzer::togglePenaltyMode() {
+  penaltyMode = !penaltyMode;
+}
+
+bool Buzzer::isPenaltyMode() {
+  return penaltyMode;
+}
+
+void Buzzer::resetScores() {
+  for (int i = 0; i < 4; i++) {
+    scores[i] = 0;
+  }
+}
+
+void Buzzer::displayScores(const char* title, const char* prompt) {
+  display.clear();
+  display.setText(title, 0);
+  display.setText(String(colorName(0)) + ":" + scores[0] + "   " + colorName(1) + ":" + scores[1], 1);
+  display.setText(String(colorName(2)) + ":" + scores[2] + "   " + colorName(3) + ":" + scores[3], 2);
+  display.setText(prompt, 3);
+}
+
+void Buzzer::setShowScores() {
+  scoresShownAt = millis();
+  displayScores("      SCORES", "# = question suivante");
+}
+
+PhaseMode Buzzer::showScores(char pressedKey) {
+  if (pressedKey == 'C') {
+    return END_GAME;                 // terminer la partie depuis l'écran scores
+  }
+  if (pressedKey == '#') {
+    return WAITING_BUZZER;           // passer tout de suite à la question suivante
+  }
+  if (millis() - scoresShownAt >= SCORES_DISPLAY_MS) {
+    return WAITING_BUZZER;           // au bout de 15 s, question suivante
+  }
+  return SHOW_SCORES;
+}
+
+void Buzzer::setEndGame() {
+  // Détermine le meilleur score parmi les buzzers présents.
+  int best = 0;
+  bool any = false;
+  for (int i = 0; i < 4; i++) {
+    if (enabled[i] && (!any || scores[i] > best)) {
+      best = scores[i];
+      any = true;
+    }
+  }
+
+  int count = 0;
+  int winner = -1;
+  for (int i = 0; i < 4; i++) {
+    if (enabled[i] && scores[i] == best) {
+      count++;
+      winner = i;
+    }
+  }
+
+  display.clear();
+  display.setText("FIN DE PARTIE", 0);
+  display.setText(String(colorName(0)) + ":" + scores[0] + "   " + colorName(1) + ":" + scores[1], 1);
+  display.setText(String(colorName(2)) + ":" + scores[2] + "   " + colorName(3) + ":" + scores[3], 2);
+
+  if (!any) {
+    display.setText("Aucun buzzer  #=menu", 3);
+  } else if (count > 1) {
+    display.setText(String("EGALITE (") + best + " pts)  #=menu", 3);
+  } else {
+    display.setText(String("Gagnant: ") + colorName(winner) + "  #=menu", 3);
+    mp3.playGoodAnswer();            // son de victoire
+  }
+}
+
+PhaseMode Buzzer::endGame(char pressedKey) {
+  if (pressedKey == '#') {
+    resetLights();
+    return CONFIGURATION;
+  }
+  return END_GAME;
 }
 
 void Buzzer::resetConfigState() {
