@@ -26,7 +26,7 @@ PhaseMode Buzzer::waitingBuzzerIsPressed(PhaseMode currentMode) {
 
   for (int i = 0; i < 4; i++) {
     int buttonPin = buzzers[i][1];
-    if (actives[i] && digitalRead(buttonPin) == LOW) { // Button pressed
+    if (enabled[i] && actives[i] && digitalRead(buttonPin) == LOW) { // Button pressed
       currentBuzzerId = i;
       previousMillis = millis();
 
@@ -112,6 +112,32 @@ void Buzzer::blink() {
     digitalWrite(ledPin, LOW);  // Turn the LED off
     delay(delayTime);        // Wait for the specified delay time
   }
+}
+
+void Buzzer::resetConfigState() {
+  for (int i = 0; i < 4; i++) {
+    enabled[i] = true;
+    prevPressed[i] = false;
+  }
+}
+
+void Buzzer::setEnabled(int buzzerId, bool value) {
+  enabled[buzzerId] = value;
+}
+
+bool Buzzer::isEnabled(int buzzerId) {
+  return enabled[buzzerId];
+}
+
+bool Buzzer::wasPressed(int buzzerId) {
+  bool pressedNow = (digitalRead(buzzers[buzzerId][1]) == LOW);
+  bool edge = pressedNow && !prevPressed[buzzerId];
+  prevPressed[buzzerId] = pressedNow;
+  return edge;
+}
+
+void Buzzer::setLed(int buzzerId, bool on) {
+  digitalWrite(buzzers[buzzerId][0], on ? HIGH : LOW);
 }
 
 void Buzzer::initMp3Index() {

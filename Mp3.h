@@ -33,7 +33,18 @@ class Mp3 {
     void playBadAnswer();
     void shuffleBuzzers();
 
+    // Configuration des sons (assistant)
+    int getSound(int buzzerId);             // index du son courant (0-based)
+    void cycleSound(int buzzerId);          // passe au son suivant non verrouillé
+    void lockSound(int buzzerId);           // verrouille le son du buzzer
+    void ensureUnlockedSound(int buzzerId); // décale si le son est déjà verrouillé ailleurs
+    void resetConfig();                     // déverrouille tous les buzzers
+
   private:
+
+    bool isSoundLockedByOther(int sound, int buzzerId);
+    bool locked[4] = { false, false, false, false };
+
 
     struct MP3Array
     {

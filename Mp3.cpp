@@ -113,6 +113,54 @@ void Mp3::shuffleBuzzers() {
   }
 }
 
+int Mp3::getSound(int buzzerId) {
+  return buzzerSound[buzzerId];
+}
+
+bool Mp3::isSoundLockedByOther(int sound, int buzzerId) {
+  for (int j = 0; j < 4; j++) {
+    if (j != buzzerId && locked[j] && buzzerSound[j] == sound) {
+      return true;
+    }
+  }
+  return false;
+}
+
+void Mp3::cycleSound(int buzzerId) {
+  int poolSize = mp3Arrays[BUZZER_FOLDER - 1].size;
+  if (poolSize <= 0) {
+    return;
+  }
+
+  int candidate = buzzerSound[buzzerId];
+  // Cherche le prochain son non verrouillé par un autre buzzer.
+  for (int step = 0; step < poolSize; step++) {
+    candidate = (candidate + 1) % poolSize;
+    if (!isSoundLockedByOther(candidate, buzzerId)) {
+      buzzerSound[buzzerId] = candidate;
+      return;
+    }
+  }
+  // Tous les autres sons sont verrouillés : on garde le son courant.
+}
+
+void Mp3::ensureUnlockedSound(int buzzerId) {
+  // Si le son a été "volé" puis verrouillé par un autre buzzer, on en prend un libre.
+  if (isSoundLockedByOther(buzzerSound[buzzerId], buzzerId)) {
+    cycleSound(buzzerId);
+  }
+}
+
+void Mp3::lockSound(int buzzerId) {
+  locked[buzzerId] = true;
+}
+
+void Mp3::resetConfig() {
+  for (int i = 0; i < 4; i++) {
+    locked[i] = false;
+  }
+}
+
 void Mp3::playInit() {
   int arraySize = mp3Arrays[INIT_FOLDER - 1].size;
   int randomIndex = random(arraySize);

@@ -49,22 +49,94 @@ PhaseMode Configuration::shuffleBuzzer(char pressedKey) {
   return SHUFFLE_BUZZER;
 }
 
-void Configuration::setBuzzerConfig() {
-  buzzer.initMp3Index();
-
-  display.clear();
-  display.setText("    CONFIGURATION", 0);
-  display.setText("Appuyez sur un buzzer pour le configurer", 1);
-  display.setText("#: Retourner au menu", 3);
-
+const char* Configuration::colorName(int i) {
+  switch (i) {
+    case 0: return "Rouge";
+    case 1: return "Bleu";
+    case 2: return "Jaune";
+    case 3: return "Vert";
+    default: return "?";
+  }
 }
 
- PhaseMode Configuration::buzzerConfig(char pressedKey) {
-  switch(pressedKey) {
-    case '#': 
-      buzzer.endConfiguration();
-      return CONFIGURATION;
+void Configuration::showConfigPrompt() {
+  display.clear();
+  display.setText("CONFIG BUZZER", 0);
+  display.setText(String(colorName(cfgIndex)) + " : appuyez sur le buzzer", 1);
+  display.setText("* = passer (absent)", 2);
+  display.setText("# = terminer", 3);
+}
+
+void Configuration::showConfigChoice() {
+  display.clear();
+  display.setText(String(colorName(cfgIndex)) + " - son " + String(mp3.getSound(cfgIndex) + 1), 0);
+  display.setText("A = valider", 1);
+  display.setText("B = autre son", 2);
+  display.setText("* = passer (absent)", 3);
+}
+
+PhaseMode Configuration::advanceConfig() {
+  cfgIndex++;
+  if (cfgIndex >= 4) {
+    buzzer.resetLights();
+    return CONFIGURATION; // tous les buzzers traités -> retour au menu
+  }
+  cfgStep = CFG_PROMPT;
+  showConfigPrompt();
+  return BUZZER_CONFIG;
+}
+
+void Configuration::setBuzzerConfig() {
+  mp3.resetConfig();         // déverrouille tous les sons
+  buzzer.resetConfigState(); // ré-active tous les buzzers + anti-rebond
+  buzzer.resetLights();
+  cfgIndex = 0;
+  cfgStep = CFG_PROMPT;
+  showConfigPrompt();
+}
+
+PhaseMode Configuration::buzzerConfig(char pressedKey) {
+  // Lecture du bouton physique à chaque tick (front montant anti-rebond).
+  bool pressed = buzzer.wasPressed(cfgIndex);
+
+  // Sortie de l'assistant à tout moment.
+  if (pressedKey == '#') {
+    buzzer.resetLights();
+    return CONFIGURATION;
+  }
+
+  if (cfgStep == CFG_PROMPT) {
+    if (pressedKey == '*') {            // buzzer absent
+      buzzer.setEnabled(cfgIndex, false);
+      return advanceConfig();
+    }
+    if (pressed) {                      // buzzer présent : on joue son son
+      buzzer.setEnabled(cfgIndex, true);
+      mp3.ensureUnlockedSound(cfgIndex);
+      buzzer.setLed(cfgIndex, true);
+      mp3.playBuzzer(cfgIndex);
+      cfgStep = CFG_CHOOSING;
+      showConfigChoice();
+    }
+    return BUZZER_CONFIG;
+  }
+
+  // CFG_CHOOSING
+  if (pressedKey == 'B') {              // essayer un autre son
+    mp3.cycleSound(cfgIndex);
+    mp3.playBuzzer(cfgIndex);
+    showConfigChoice();
+  } else if (pressedKey == 'A') {       // valider et verrouiller
+    mp3.lockSound(cfgIndex);
+    buzzer.setLed(cfgIndex, false);
+    return advanceConfig();
+  } else if (pressedKey == '*') {       // finalement absent
+    buzzer.setEnabled(cfgIndex, false);
+    buzzer.setLed(cfgIndex, false);
+    return advanceConfig();
+  } else if (pressed) {                 // ré-appui : rejoue le son courant
+    mp3.playBuzzer(cfgIndex);
   }
 
   return BUZZER_CONFIG;
- }
+}

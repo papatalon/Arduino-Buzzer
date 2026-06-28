@@ -55,6 +55,7 @@ PhaseMode getCurrentMode() {
       break;
     case BUZZER_CONFIG:
       mode = configuration.buzzerConfig(pressedKey);
+      break;
     case RESET:
       mode = reset();
       break;

@@ -25,15 +25,30 @@ L'application est une machine à états ([PhaseMode.h](PhaseMode.h)) pilotée da
   - `A` : configurer les sons des buzzers (`BUZZER_CONFIG`)
   - `B` : attribuer des sons aléatoires (`SHUFFLE_BUZZER`)
   - `#` : démarrer la partie (`WAITING_BUZZER`)
-- **BUZZER_CONFIG** — Appuyer sur un buzzer pour lui assigner un son ; `#` retourne au menu. Les buzzers non configurés reçoivent un son aléatoire unique à la fin.
+- **BUZZER_CONFIG** — Assistant de configuration guidé (voir ci-dessous). `#` quitte à tout moment.
 - **SHUFFLE_BUZZER** — Réattribue aléatoirement les sons à tous les buzzers.
-- **WAITING_BUZZER** — En attente : le premier buzzer actif pressé allume sa LED, joue son son et passe en `BUZZER_PRESSED`.
+- **WAITING_BUZZER** — En attente : le premier buzzer *présent et actif* pressé allume sa LED, joue son son et passe en `BUZZER_PRESSED`.
 - **BUZZER_PRESSED** — L'animateur tranche :
   - `A` : bonne réponse → son de bonne réponse, clignotement, tous les buzzers réactivés, retour en attente.
   - `D` : mauvaise réponse → son d'échec, le buzzer fautif est désactivé pour ce tour, retour en attente.
 - **RESET** — Une touche de reset (gérée par [AppKeypad](AppKeypad.h)) éteint les LEDs et revient au menu.
 
-Les sons sont répartis par plages d'identifiants dans [Mp3.h](Mp3.h) (init, bonnes réponses, mauvaises réponses, buzzers).
+Les sons sont organisés en 4 dossiers sur la carte SD (voir [Mp3.h](Mp3.h)) : init, buzzers, bonnes réponses, mauvaises réponses.
+
+### Assistant de configuration des buzzers (`A` au menu)
+
+L'assistant fait le tour des 4 buzzers (Rouge → Bleu → Jaune → Vert). Pour chacun :
+
+1. L'écran affiche `<Couleur> : appuyez sur le buzzer`.
+   - **Appui sur le buzzer** → son son est joué, on passe au choix.
+   - **`*`** → buzzer déclaré *absent* (exclu du pool).
+   - **`#`** → quitte l'assistant.
+2. Après l'appui :
+   - **`B`** → essaie un autre son (parcourt les sons disponibles, en sautant ceux déjà verrouillés ; peut « voler » le son d'un buzzer pas encore configuré).
+   - **`A`** → valide et **verrouille** le son de ce buzzer.
+   - **`*`** → buzzer déclaré absent.
+
+La configuration est **optionnelle** : si on lance directement la partie (`#`), on joue avec les **4 buzzers et des sons aléatoires** (état par défaut). Elle n'est pas sauvegardée entre deux mises sous tension.
 
 ## Structure du code
 
