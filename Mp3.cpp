@@ -53,11 +53,32 @@ void Mp3::init(void) {
 
 void Mp3::initializeMP3Arrays(void)
 {
-  // Init
   for (int i = 0; i < 4; i++)
   {
-    mp3Arrays[i].size = getFileCount(i + 1);
-    mp3Arrays[i].array = new int[mp3Arrays[i].size];
+    int folderId = i + 1;
+    int count = getFileCount(folderId);   // valeur de repli (#define)
+
+    // Sur le vrai matériel, on demande au DFPlayer le nombre réel de
+    // fichiers présents dans le dossier de la carte SD.
+    if (!simulation) {
+      int detected = mp3.readFileCountsInFolder(folderId);
+      if (detected > 0) {
+        count = detected;
+      } else {
+        Serial.print(F("Dossier "));
+        Serial.print(folderId);
+        Serial.println(F(": comptage indisponible, repli sur la valeur par defaut."));
+      }
+    }
+
+    mp3Arrays[i].size = count;
+    mp3Arrays[i].array = new int[count];
+
+    Serial.print(F("Dossier "));
+    Serial.print(folderId);
+    Serial.print(F(": "));
+    Serial.print(count);
+    Serial.println(F(" fichiers"));
   }
 }
 
