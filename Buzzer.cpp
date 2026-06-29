@@ -90,7 +90,8 @@ void Buzzer::goodAnswer() {
   mp3.playGoodAnswer();
   digitalWrite(ledPin, LOW);
 
-  blink();
+  // Le clignotement de la LED se fait sans blocage pendant l'écran des
+  // scores (voir showScores), pour ne pas figer le clavier ni l'afficheur.
   resetAllBuzzers();
 }
 
@@ -131,19 +132,6 @@ PhaseMode Buzzer::correctLastDecision(PhaseMode fallback) {
 void Buzzer::resetAllBuzzers() {
   for(int i = 0; i < 4; i++) {
     actives[i] = true;
-  }
-}
-
-void Buzzer::blink() {
-  int ledPin = buzzers[currentBuzzerId][0];
-  int delayTime = 100;
-
-  // Blink the LED 5 times
-  for (int i = 0; i < 10; i++) {
-    digitalWrite(ledPin, HIGH); // Turn the LED on
-    delay(delayTime);        // Wait for the specified delay time
-    digitalWrite(ledPin, LOW);  // Turn the LED off
-    delay(delayTime);        // Wait for the specified delay time
   }
 }
 
@@ -214,17 +202,24 @@ void Buzzer::setShowScores() {
 
 PhaseMode Buzzer::showScores(char pressedKey) {
   if (pressedKey == 'C') {
+    setLed(currentBuzzerId, false);
     return END_GAME;                 // terminer la partie depuis l'écran scores
   }
   if (pressedKey == 'B') {
+    setLed(currentBuzzerId, false);
     return correctLastDecision(SHOW_SCORES);  // corriger la dernière décision
   }
   if (pressedKey == '#') {
+    setLed(currentBuzzerId, false);
     return WAITING_BUZZER;           // passer tout de suite à la question suivante
   }
   if (millis() - scoresShownAt >= SCORES_DISPLAY_MS) {
+    setLed(currentBuzzerId, false);
     return WAITING_BUZZER;           // au bout de 15 s, question suivante
   }
+
+  // Clignotement non bloquant de la LED du buzzer qui a bien répondu.
+  setLed(currentBuzzerId, ((millis() / 250) % 2) == 0);
   return SHOW_SCORES;
 }
 

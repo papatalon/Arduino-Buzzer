@@ -79,7 +79,6 @@ private:
   void goodAnswer();
   void badAnswer();
   void resetAllBuzzers();
-  void blink();
   const char* colorName(int i);
   void displayScores(const char* title, const char* prompt);
 
