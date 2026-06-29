@@ -7,6 +7,7 @@
 #include "Mp3.h";
 
 #define SCORES_DISPLAY_MS 15000  // durée d'affichage des scores entre les questions
+#define WIN_BLINK_MS 1500        // durée du clignotement de la LED du gagnant
 
 class Buzzer {
 public:

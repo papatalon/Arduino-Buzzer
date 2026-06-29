@@ -218,8 +218,13 @@ PhaseMode Buzzer::showScores(char pressedKey) {
     return WAITING_BUZZER;           // au bout de 15 s, question suivante
   }
 
-  // Clignotement non bloquant de la LED du buzzer qui a bien répondu.
-  setLed(currentBuzzerId, ((millis() / 250) % 2) == 0);
+  // Courte célébration : la LED du gagnant clignote ~1,5 s puis s'éteint.
+  unsigned long elapsed = millis() - scoresShownAt;
+  if (elapsed < WIN_BLINK_MS) {
+    setLed(currentBuzzerId, ((millis() / 250) % 2) == 0);
+  } else {
+    setLed(currentBuzzerId, false);
+  }
   return SHOW_SCORES;
 }
 
