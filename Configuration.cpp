@@ -3,9 +3,9 @@
 void Configuration::init() {
   display.clear();
   display.setText(String("= MENU =  ") + (buzzer.isPenaltyMode() ? "Penalite" : "Classique"), 0);
-  display.setText("A:Config   B:Hasard", 1);
-  display.setText("C:Mode     D:Volume", 2);
-  display.setText("# : Jouer", 3);
+  display.setText("A: Config Buzzers", 1);
+  display.setText("B: Sons au hasard", 2);
+  display.setText("C:Mode D:Vol #:Jouer", 3);
 }
 
 PhaseMode Configuration::manageConfiguration(char pressedKey) {
