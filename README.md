@@ -77,7 +77,7 @@ La configuration est **optionnelle** : si on lance directement la partie (`#`), 
 | [Configuration.cpp](Configuration.cpp) / [.h](Configuration.h) | Menus et écrans de configuration |
 | [Buzzer.cpp](Buzzer.cpp) / [.h](Buzzer.h) | Gestion des buzzers, LEDs et logique de jeu (singleton) |
 | [AppKeypad.h](AppKeypad.h) | Lecture du clavier matriciel et détection du reset (singleton) |
-| [LcdDisplay.cpp](LcdDisplay.cpp) / [.h](LcdDisplay.h) | Affichage LCD 20×4 avec défilement de texte et gestion des accents |
+| [LcdDisplay.cpp](LcdDisplay.cpp) / [.h](LcdDisplay.h) | Affichage LCD 20×4 (textes calibrés sur 20 colonnes ; défilement en secours) et gestion des accents |
 | [Mp3.cpp](Mp3.cpp) / [.h](Mp3.h) | Pilotage du DFPlayer Mini + bascule simulation (singleton) |
 | [OledDisplay.cpp](OledDisplay.cpp) / [.h](OledDisplay.h) | Variante d'affichage OLED (non utilisée actuellement) |
 

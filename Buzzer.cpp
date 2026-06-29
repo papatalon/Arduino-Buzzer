@@ -43,18 +43,17 @@ PhaseMode Buzzer::waitingBuzzerIsPressed(PhaseMode currentMode) {
 
 void Buzzer::setWaitingForBuzzer() {
   display.clear();
-  display.setText("     EN ATTENTE", 0);
-  display.setText("    D'UNE REPONSE", 1);
-  display.setText("C terminer   B corriger", 3);
+  display.setText("    EN ATTENTE", 0);
+  display.setText("   D'UNE REPONSE", 1);
+  display.setText("B:corriger   C:fin", 3);
 }
 
 void Buzzer::setBuzzerPressed() {
     display.clear();
-    display.setText("  BIP!!!!!", 0);
-    display.setText("A: Bonne réponse", 1);
-    display.setText("D: Mauvaise réponse", 2);
+    display.setText(String("BIP ! -> ") + colorName(currentBuzzerId), 0);
+    display.setText("A: Bonne reponse", 1);
+    display.setText("D: Mauvaise reponse", 2);
     int ledPin = buzzers[currentBuzzerId][0];
-    //Buzzer:blink();
     digitalWrite(ledPin, HIGH);
 }
 
@@ -205,7 +204,7 @@ void Buzzer::displayScores(const char* title, const char* prompt) {
 
 void Buzzer::setShowScores() {
   scoresShownAt = millis();
-  displayScores("      SCORES", "# suivant   B corriger");
+  displayScores("      SCORES", "#=suite B=corr C=fin");
 }
 
 PhaseMode Buzzer::showScores(char pressedKey) {
@@ -246,11 +245,11 @@ void Buzzer::setEndGame() {
 
   String prompt;
   if (!any) {
-    prompt = "Aucun buzzer  #=menu";
+    prompt = "Aucun buzzer #menu";
   } else if (count > 1) {
-    prompt = String("EGALITE (") + best + " pts)  #=menu";
+    prompt = String("EGALITE ") + best + "pts #menu";
   } else {
-    prompt = String("Gagnant: ") + colorName(winner) + "  #=menu";
+    prompt = String("Gagne:") + colorName(winner) + " #menu";
   }
 
   displayScores("FIN DE PARTIE", prompt.c_str());

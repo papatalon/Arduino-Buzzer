@@ -2,10 +2,10 @@
 
 void Configuration::init() {
   display.clear();
-  display.setText(String("MENU  Mode: ") + (buzzer.isPenaltyMode() ? "Penalite" : "Classique"), 0);
-  display.setText("A: Configurer les sons   B: Sons aleatoires", 1);
-  display.setText("C: Changer de mode", 2);
-  display.setText("#: Démarrer la partie", 3);
+  display.setText(String("= MENU =  ") + (buzzer.isPenaltyMode() ? "Penalite" : "Classique"), 0);
+  display.setText("A: Sons des buzzers", 1);
+  display.setText("B: Sons au hasard", 2);
+  display.setText("C: Mode    # : Jouer", 3);
 }
 
 PhaseMode Configuration::manageConfiguration(char pressedKey) {
@@ -36,10 +36,10 @@ void Configuration::setShuffleBuzzers() {
   // d'écraser une configuration faite via l'assistant.
   shufStep = SHUF_CONFIRM;
   display.clear();
-  display.setText("SONS ALEATOIRES", 0);
-  display.setText("Ecrase les sons configures", 1);
-  display.setText("# = confirmer", 2);
-  display.setText("* = annuler", 3);
+  display.setText("SONS AU HASARD", 0);
+  display.setText("Ecrase la config !", 1);
+  display.setText("# confirmer", 2);
+  display.setText("* annuler", 3);
 }
 
 PhaseMode Configuration::shuffleBuzzer(char pressedKey) {
@@ -51,9 +51,8 @@ PhaseMode Configuration::shuffleBuzzer(char pressedKey) {
       mp3.shuffleBuzzers();          // confirmé : on re-tire les sons
       shufStep = SHUF_DONE;
       display.clear();
-      display.setText("Sons changes", 0);
-      display.setText("aleatoirement", 1);
-      display.setText("# = retour au menu", 3);
+      display.setText("Nouveaux sons OK", 0);
+      display.setText("# retour au menu", 3);
     }
     return SHUFFLE_BUZZER;
   }
@@ -77,9 +76,9 @@ const char* Configuration::colorName(int i) {
 
 void Configuration::showConfigPrompt() {
   display.clear();
-  display.setText("CONFIG BUZZER", 0);
-  display.setText(String(colorName(cfgIndex)) + " : appuyez sur le buzzer", 1);
-  display.setText("* = passer (absent)", 2);
+  display.setText(String("CONFIG ") + colorName(cfgIndex), 0);
+  display.setText("Appuie sur le buzzer", 1);
+  display.setText("* = absent", 2);
   display.setText("# = terminer", 3);
 }
 
@@ -88,7 +87,7 @@ void Configuration::showConfigChoice() {
   display.setText(String(colorName(cfgIndex)) + " - son " + String(mp3.getSound(cfgIndex) + 1), 0);
   display.setText("A = valider", 1);
   display.setText("B = autre son", 2);
-  display.setText("* = passer (absent)", 3);
+  display.setText("* = absent", 3);
 }
 
 PhaseMode Configuration::advanceConfig() {
