@@ -68,14 +68,25 @@ PhaseMode Configuration::shuffleBuzzer(char pressedKey) {
 }
 
 void Configuration::setVolumeScreen() {
+  // Arme l'anti-rebond des buzzers pour éviter un aperçu parasite à l'entrée.
+  for (int i = 0; i < 4; i++) {
+    buzzer.wasPressed(i);
+  }
   display.clear();
   display.setText("      VOLUME", 0);
   display.setText(String("    Vol: ") + mp3.getVolume() + " / 30", 1);
-  display.setText("2 = +    8 = -", 2);
+  display.setText("2=+  8=-  Buzz=test", 2);
   display.setText("# : retour", 3);
 }
 
 PhaseMode Configuration::volumeScreen(char pressedKey) {
+  // Aperçu : appuyer sur un buzzer joue son son au volume courant.
+  for (int i = 0; i < 4; i++) {
+    if (buzzer.wasPressed(i)) {
+      mp3.playBuzzer(i);
+    }
+  }
+
   if (pressedKey == '#') {
     mp3.saveVolume();        // mémorise le volume (persistant après extinction)
     return CONFIGURATION;
