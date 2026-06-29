@@ -52,8 +52,21 @@ void Buzzer::setWaitingForBuzzer() {
   display.clear();
 
   if (tiebreak) {
+    // Repères : LED allumées pour les ex æquo + liste des couleurs en lice.
+    String parts = "";
+    for (int i = 0; i < 4; i++) {
+      bool inPlay = enabled[i] && actives[i];
+      setLed(i, inPlay);
+      if (inPlay) {
+        if (parts.length() > 0) {
+          parts += " ";
+        }
+        parts += colorName(i);
+      }
+    }
     display.setText("  BRIS D'EGALITE", 0);
     display.setText("   Buzzez vite !", 1);
+    display.setText(parts, 2);
     return;
   }
 
@@ -306,6 +319,8 @@ PhaseMode Buzzer::endConfirm(char pressedKey) {
 }
 
 void Buzzer::setEndGame() {
+  resetLights();   // éteint d'éventuelles LED restées allumées (bris d'égalité)
+
   // Détermine le meilleur score parmi les buzzers présents.
   int best = 0;
   bool any = false;
