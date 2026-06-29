@@ -10,7 +10,9 @@ enum PhaseMode {
     WAITING_BUZZER,
     BUZZER_PRESSED,
     SHOW_SCORES,
-    END_GAME
+    END_CONFIRM,
+    END_GAME,
+    VOLUME
 };
 
 #endif

@@ -43,7 +43,7 @@ void Mp3::init(void) {
   else
   {
     mp3.stop();
-    mp3.volume(10);
+    setVolume(volume);
     Serial.println(F("MP3Player online."));
   }
 
@@ -209,7 +209,11 @@ void Mp3::playBuzzer(int buzzerId) {
 
 void Mp3::playGoodAnswer() {
   int arraySize = mp3Arrays[GOOD_FOLDER - 1].size;
-  int fileNumber = random(arraySize) + 1;   // fichiers DFPlayer numérotés à partir de 1
+  int fileNumber;
+  do {
+    fileNumber = random(arraySize) + 1;     // fichiers DFPlayer numérotés à partir de 1
+  } while (arraySize > 1 && fileNumber == lastGood);  // pas 2x le même de suite
+  lastGood = fileNumber;
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier GOOD, fichier "));
@@ -222,7 +226,11 @@ void Mp3::playGoodAnswer() {
 
 void Mp3::playBadAnswer() {
   int arraySize = mp3Arrays[BAD_FOLDER - 1].size;
-  int fileNumber = random(arraySize) + 1;   // fichiers DFPlayer numérotés à partir de 1
+  int fileNumber;
+  do {
+    fileNumber = random(arraySize) + 1;
+  } while (arraySize > 1 && fileNumber == lastBad);
+  lastBad = fileNumber;
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier BAD, fichier "));
@@ -231,4 +239,25 @@ void Mp3::playBadAnswer() {
   }
 
   mp3.playFolder(BAD_FOLDER, fileNumber);
+}
+
+void Mp3::setVolume(int v) {
+  if (v < 0) v = 0;
+  if (v > 30) v = 30;
+  volume = v;
+  if (!simulation) {
+    mp3.volume(volume);
+  }
+}
+
+int Mp3::getVolume() {
+  return volume;
+}
+
+void Mp3::volumeUp() {
+  setVolume(volume + 1);
+}
+
+void Mp3::volumeDown() {
+  setVolume(volume - 1);
 }

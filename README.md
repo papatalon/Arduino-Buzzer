@@ -25,18 +25,23 @@ L'application est une machine à états ([PhaseMode.h](PhaseMode.h)) pilotée da
   - `A` : configurer les sons des buzzers (`BUZZER_CONFIG`)
   - `B` : attribuer des sons aléatoires (`SHUFFLE_BUZZER`)
   - `C` : changer de mode de jeu (Classique ⇄ Pénalité ; le mode est affiché)
+  - `D` : régler le **volume** (`VOLUME`)
   - `#` : démarrer la partie (`WAITING_BUZZER`) — **remet les scores à zéro**
+- **VOLUME** — Réglage du volume du DFPlayer (0–30) : `8` = +, `2` = −, `#` = retour au menu.
 - **BUZZER_CONFIG** — Assistant de configuration guidé (voir ci-dessous). `#` quitte à tout moment.
 - **SHUFFLE_BUZZER** — Réattribue aléatoirement les sons à tous les buzzers, **après confirmation** (`#` = confirmer, `*` = annuler) pour éviter d'écraser une configuration faite via l'assistant.
-- **WAITING_BUZZER** — En attente : le premier buzzer *présent et actif* pressé allume sa LED, joue son son et passe en `BUZZER_PRESSED`. `C` termine la partie (`END_GAME`), `B` corrige la dernière décision.
+- **WAITING_BUZZER** — En attente : le premier buzzer *présent et actif* pressé allume sa LED, joue son son et passe en `BUZZER_PRESSED`. `C` demande à terminer la partie, `B` corrige la dernière décision.
 - **BUZZER_PRESSED** — L'animateur tranche :
-  - `A` : bonne réponse → **+1 point**, son de bonne réponse, clignotement, buzzers réactivés, puis écran des scores (`SHOW_SCORES`).
+  - `A` : bonne réponse → **+1 point**, son de bonne réponse, puis écran des scores (`SHOW_SCORES`) avec clignotement bref de la LED du gagnant.
   - `D` : mauvaise réponse → son d'échec, le buzzer fautif est désactivé pour ce tour (**−1 point en mode Pénalité**), on reste sur la même question.
-- **SHOW_SCORES** — Affiche les scores entre les questions (2 colonnes + titre), pendant 15 s ou jusqu'à `#`. `C` termine la partie, `B` corrige la dernière décision.
+- **SHOW_SCORES** — Affiche les scores entre les questions (2 colonnes + titre), pendant 15 s ou jusqu'à `#`. `C` demande à terminer la partie, `B` corrige la dernière décision.
+- **END_CONFIRM** — Confirmation avant de terminer la partie (`#` = oui, `*` = non / continuer).
 - **END_GAME** — Scores finaux + couleur gagnante (+ son de victoire) ; `#` revient au menu.
 - **RESET** — Une touche de reset (gérée par [AppKeypad](AppKeypad.h)) éteint les LEDs et revient au menu.
 
 Les sons sont organisés en 4 dossiers sur la carte SD (voir [Mp3.h](Mp3.h)) : init, buzzers, bonnes réponses, mauvaises réponses. Le **nombre de fichiers par dossier est détecté automatiquement** au démarrage en interrogeant le DFPlayer (`readFileCountsInFolder`) ; les constantes `*_FILE_COUNT` de [Mp3.h](Mp3.h) ne servent que de **valeurs de repli** (simulation Wokwi, ou si la détection échoue). Les comptes sont affichés sur le port série au démarrage.
+
+Au démarrage, un **son d'intro** (dossier `01`) est joué. Le **volume** (0–30) se règle depuis le menu (`D`). Pour les sons de bonne/mauvaise réponse, le même fichier n'est jamais **rejoué deux fois de suite** (anti-répétition).
 
 ### Score et modes de jeu
 

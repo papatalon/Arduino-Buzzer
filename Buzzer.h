@@ -40,6 +40,8 @@ public:
 
     void setShowScores();                    // écran scores entre les questions
     PhaseMode showScores(char pressedKey);
+    void setEndConfirm();                    // confirmation avant de terminer
+    PhaseMode endConfirm(char pressedKey);
     void setEndGame();                       // écran fin de partie (gagnant + son)
     PhaseMode endGame(char pressedKey);
 

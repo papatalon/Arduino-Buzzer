@@ -14,6 +14,8 @@ public:
     PhaseMode shuffleBuzzer(char pressedKey);
     void setBuzzerConfig();
     PhaseMode buzzerConfig(char pressedKey);
+    void setVolumeScreen();
+    PhaseMode volumeScreen(char pressedKey);
 
 private:
 

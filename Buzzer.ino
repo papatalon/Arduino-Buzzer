@@ -29,6 +29,7 @@ void setup() {
   buzzer.init();
   configuration.init();
   mp3.init();
+  mp3.playInit();   // son d'intro au démarrage (dossier 01)
 }
 
 void loop() {
@@ -61,7 +62,7 @@ PhaseMode getCurrentMode() {
       break;
     case WAITING_BUZZER:
       if (pressedKey == 'C') {
-        mode = END_GAME;                 // terminer la partie
+        mode = END_CONFIRM;              // demander confirmation avant de terminer
       } else if (pressedKey == 'B') {
         mode = buzzer.correctLastDecision(currentMode);  // corriger la derniere decision
       } else {
@@ -74,8 +75,14 @@ PhaseMode getCurrentMode() {
     case SHOW_SCORES:
       mode = buzzer.showScores(pressedKey);
       break;
+    case END_CONFIRM:
+      mode = buzzer.endConfirm(pressedKey);
+      break;
     case END_GAME:
       mode = buzzer.endGame(pressedKey);
+      break;
+    case VOLUME:
+      mode = configuration.volumeScreen(pressedKey);
       break;
   }
 
@@ -110,8 +117,14 @@ void updateMode() {
     case SHOW_SCORES:
       buzzer.setShowScores();
       break;
+    case END_CONFIRM:
+      buzzer.setEndConfirm();
+      break;
     case END_GAME:
       buzzer.setEndGame();
+      break;
+    case VOLUME:
+      configuration.setVolumeScreen();
       break;
   }
 }

@@ -203,7 +203,7 @@ void Buzzer::setShowScores() {
 PhaseMode Buzzer::showScores(char pressedKey) {
   if (pressedKey == 'C') {
     setLed(currentBuzzerId, false);
-    return END_GAME;                 // terminer la partie depuis l'écran scores
+    return END_CONFIRM;              // demander confirmation avant de terminer
   }
   if (pressedKey == 'B') {
     setLed(currentBuzzerId, false);
@@ -226,6 +226,23 @@ PhaseMode Buzzer::showScores(char pressedKey) {
     setLed(currentBuzzerId, false);
   }
   return SHOW_SCORES;
+}
+
+void Buzzer::setEndConfirm() {
+  display.clear();
+  display.setText("TERMINER LA PARTIE ?", 0);
+  display.setText("# = oui", 2);
+  display.setText("* = non (continuer)", 3);
+}
+
+PhaseMode Buzzer::endConfirm(char pressedKey) {
+  if (pressedKey == '#') {
+    return END_GAME;
+  }
+  if (pressedKey == '*') {
+    return WAITING_BUZZER;   // on reprend la partie
+  }
+  return END_CONFIRM;
 }
 
 void Buzzer::setEndGame() {

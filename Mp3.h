@@ -33,6 +33,12 @@ class Mp3 {
     void playBadAnswer();
     void shuffleBuzzers();
 
+    // Volume (0..30)
+    void setVolume(int v);
+    int getVolume();
+    void volumeUp();
+    void volumeDown();
+
     // Configuration des sons (assistant)
     int getSound(int buzzerId);             // index du son courant (0-based)
     void cycleSound(int buzzerId);          // passe au son suivant non verrouillé
@@ -44,6 +50,10 @@ class Mp3 {
 
     bool isSoundLockedByOther(int sound, int buzzerId);
     bool locked[4] = { false, false, false, false };
+
+    int volume = 10;        // volume courant (0..30)
+    int lastGood = -1;      // dernier fichier GOOD joué (anti-répétition)
+    int lastBad = -1;       // dernier fichier BAD joué (anti-répétition)
 
 
     struct MP3Array

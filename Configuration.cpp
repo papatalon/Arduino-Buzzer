@@ -3,9 +3,9 @@
 void Configuration::init() {
   display.clear();
   display.setText(String("= MENU =  ") + (buzzer.isPenaltyMode() ? "Penalite" : "Classique"), 0);
-  display.setText("A: Config Buzzers", 1);
-  display.setText("B: Sons au hasard", 2);
-  display.setText("C: Mode    # : Jouer", 3);
+  display.setText("A:Config   B:Hasard", 1);
+  display.setText("C:Mode     D:Volume", 2);
+  display.setText("# : Jouer", 3);
 }
 
 PhaseMode Configuration::manageConfiguration(char pressedKey) {
@@ -23,6 +23,8 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
       buzzer.togglePenaltyMode();   // bascule Classique <-> Pénalité
       init();                       // redessine le menu avec le nouveau mode
       return CONFIGURATION;
+    case 'D':
+      return VOLUME;                // écran de réglage du volume
     case '#':
       buzzer.resetScores();         // nouvelle partie : scores remis à zéro
       return WAITING_BUZZER;
@@ -62,6 +64,28 @@ PhaseMode Configuration::shuffleBuzzer(char pressedKey) {
     return CONFIGURATION;
   }
   return SHUFFLE_BUZZER;
+}
+
+void Configuration::setVolumeScreen() {
+  display.clear();
+  display.setText("      VOLUME", 0);
+  display.setText(String("    Vol: ") + mp3.getVolume() + " / 30", 1);
+  display.setText("2 = -    8 = +", 2);
+  display.setText("# : retour", 3);
+}
+
+PhaseMode Configuration::volumeScreen(char pressedKey) {
+  if (pressedKey == '#') {
+    return CONFIGURATION;
+  }
+  if (pressedKey == '8') {
+    mp3.volumeUp();
+    setVolumeScreen();
+  } else if (pressedKey == '2') {
+    mp3.volumeDown();
+    setVolumeScreen();
+  }
+  return VOLUME;
 }
 
 const char* Configuration::colorName(int i) {
