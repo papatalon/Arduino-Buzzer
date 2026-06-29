@@ -23,28 +23,36 @@ void Buzzer::resetLights() {
 }
 
 PhaseMode Buzzer::waitingBuzzerIsPressed(PhaseMode currentMode) {
+  PhaseMode result = currentMode;
 
   for (int i = 0; i < 4; i++) {
-    int buttonPin = buzzers[i][1];
-    if (enabled[i] && actives[i] && digitalRead(buttonPin) == LOW) { // Button pressed
+    bool pressedNow = (digitalRead(buzzers[i][1]) == LOW);
+    // Front descendant uniquement : un bouton maintenu ne se redéclenche pas.
+    bool edge = pressedNow && !prevPressed[i];
+    prevPressed[i] = pressedNow;
+
+    if (result == currentMode && enabled[i] && actives[i] && edge) {
       currentBuzzerId = i;
-
-      int ledPin = buzzers[currentBuzzerId][0];
-      digitalWrite(ledPin, HIGH);
-
-      mp3.playBuzzer(currentBuzzerId);
-
-      return BUZZER_PRESSED;
+      digitalWrite(buzzers[i][0], HIGH);
+      mp3.playBuzzer(i);
+      result = BUZZER_PRESSED;
     }
   }
 
-  return currentMode;
+  return result;
 }
 
 void Buzzer::setWaitingForBuzzer() {
+  // Mémorise l'état courant des boutons : un bouton déjà maintenu en entrant
+  // en attente devra être relâché avant de pouvoir buzzer (anti-rebond).
+  for (int i = 0; i < 4; i++) {
+    prevPressed[i] = (digitalRead(buzzers[i][1]) == LOW);
+  }
+
   display.clear();
-  display.setText("    EN ATTENTE", 0);
-  display.setText("   D'UNE REPONSE", 1);
+  display.setText(String("Question ") + questionNumber, 0);
+  display.setText("    EN ATTENTE", 1);
+  display.setText("   D'UNE REPONSE", 2);
   // "B:corriger" n'a de sens que si une décision a déjà été prise.
   if (lastJudgedBuzzer >= 0) {
     display.setText("B:corriger   C:fin", 3);
@@ -86,6 +94,7 @@ void Buzzer::goodAnswer() {
   scores[currentBuzzerId]++;        // bonne réponse : +1
   lastJudgedBuzzer = currentBuzzerId;
   lastWasGood = true;
+  questionNumber++;                 // question résolue -> on passe à la suivante
 
   mp3.playGoodAnswer();
   digitalWrite(ledPin, LOW);
@@ -118,6 +127,9 @@ PhaseMode Buzzer::correctLastDecision(PhaseMode fallback) {
   int id = lastJudgedBuzzer;
   if (lastWasGood) {
     scores[id]--;                  // annule le +1 d'une bonne réponse
+    if (questionNumber > 1) {
+      questionNumber--;            // on rouvre la question
+    }
   } else {
     actives[id] = true;            // ré-active le buzzer écarté
     if (penaltyMode) {
@@ -163,6 +175,7 @@ void Buzzer::resetScores() {
   }
   lastJudgedBuzzer = -1;
   lastWasGood = false;
+  questionNumber = 1;
 }
 
 void Buzzer::displayScores(const char* title, const char* prompt) {

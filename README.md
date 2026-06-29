@@ -30,7 +30,7 @@ L'application est une machine à états ([PhaseMode.h](PhaseMode.h)) pilotée da
 - **VOLUME** — Réglage du volume du DFPlayer (0–30) : `2` = +, `8` = −, `#` = retour au menu.
 - **BUZZER_CONFIG** — Assistant de configuration guidé (voir ci-dessous). `#` quitte à tout moment.
 - **SHUFFLE_BUZZER** — Réattribue aléatoirement les sons à tous les buzzers, **après confirmation** (`#` = confirmer, `*` = annuler) pour éviter d'écraser une configuration faite via l'assistant.
-- **WAITING_BUZZER** — En attente : le premier buzzer *présent et actif* pressé allume sa LED, joue son son et passe en `BUZZER_PRESSED`. `C` demande à terminer la partie, `B` corrige la dernière décision.
+- **WAITING_BUZZER** — En attente (le n° de **question** est affiché) : le premier buzzer *présent et actif* pressé allume sa LED, joue son son et passe en `BUZZER_PRESSED`. La détection est sur **front d'appui** (un bouton maintenu ne se redéclenche pas tout seul). `C` demande à terminer la partie, `B` corrige la dernière décision.
 - **BUZZER_PRESSED** — L'animateur tranche :
   - `A` : bonne réponse → **+1 point**, son de bonne réponse, puis écran des scores (`SHOW_SCORES`) avec clignotement bref de la LED du gagnant.
   - `D` : mauvaise réponse → son d'échec, le buzzer fautif est désactivé pour ce tour (**−1 point en mode Pénalité**), on reste sur la même question.
@@ -113,6 +113,8 @@ Bibliothèques Arduino requises (voir [libraries.txt](libraries.txt)) :
 
 1. Ouvrir le projet sur [Wokwi](https://wokwi.com/projects/420440216092145665), ou
 2. Utiliser l'extension Wokwi pour VS Code : compiler le sketch (génère `build/Buzzer.ino.hex` et `.elf`), puis lancer la simulation via [wokwi.toml](wokwi.toml).
+
+> ⚠️ Wokwi simule le **dernier binaire compilé** : il faut **recompiler** après chaque modif du code, puis relancer la simulation, sinon on teste un binaire périmé. Une tâche VS Code « Compiler (Arduino Mega) » est fournie ([.vscode/tasks.json](.vscode/tasks.json)) — lance-la avec **Ctrl+Shift+B** avant « Wokwi: Start Simulator ».
 
 ### Avec arduino-cli
 

@@ -77,6 +77,8 @@ private:
   int lastJudgedBuzzer = -1;
   bool lastWasGood = false;
 
+  int questionNumber = 1;   // numéro de la question en cours
+
   int currentBuzzerId;
 
   void goodAnswer();
