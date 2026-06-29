@@ -75,9 +75,9 @@ void Buzzer::setWaitingForBuzzer() {
   display.setText("   D'UNE REPONSE", 2);
   // "B:corriger" n'a de sens que si une décision a déjà été prise.
   if (lastJudgedBuzzer >= 0) {
-    display.setText("B:corriger   C:fin", 3);
+    display.setText("B:corr 0:pass C:fin", 3);
   } else {
-    display.setText("C: terminer", 3);
+    display.setText("0:passer   C:fin", 3);
   }
 }
 
@@ -86,6 +86,7 @@ void Buzzer::setBuzzerPressed() {
     display.setText(String("BIP ! -> ") + colorName(currentBuzzerId), 0);
     display.setText("A: Bonne reponse", 1);
     display.setText("D: Mauvaise reponse", 2);
+    display.setText("0 = passer", 3);
     int ledPin = buzzers[currentBuzzerId][0];
     digitalWrite(ledPin, HIGH);
 }
@@ -134,12 +135,26 @@ PhaseMode Buzzer::buzzerIsPressed(PhaseMode currentMode, char pressedKey) {
       Buzzer::badAnswer();
       return WAITING_BUZZER;    // même question, les autres peuvent répondre
       break;
+    case '0':
+      Buzzer::skipQuestion();
+      return WAITING_BUZZER;    // question abandonnée, personne ne marque
     default:
       return currentMode;
   };
 
 
   return currentMode;
+}
+
+void Buzzer::skipQuestion() {
+  if (tiebreak) {
+    return;                  // pas de "passer" pendant un bris d'égalité
+  }
+  resetLights();
+  resetAllBuzzers();         // tous les buzzers présents redeviennent actifs
+  lastJudgedBuzzer = -1;     // plus de décision à corriger
+  lastWasGood = false;
+  questionNumber++;          // on passe à la question suivante
 }
 
 void Buzzer::goodAnswer() {

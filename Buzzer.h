@@ -38,6 +38,8 @@ public:
     bool isPenaltyMode();
     void resetScores();
 
+    void skipQuestion();                     // passer la question (personne ne marque)
+
     void setShowScores();                    // écran scores entre les questions
     PhaseMode showScores(char pressedKey);
     void setEndConfirm();                    // confirmation avant de terminer

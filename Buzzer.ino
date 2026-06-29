@@ -65,6 +65,10 @@ PhaseMode getCurrentMode() {
         mode = END_CONFIRM;              // demander confirmation avant de terminer
       } else if (pressedKey == 'B') {
         mode = buzzer.correctLastDecision(currentMode);  // corriger la derniere decision
+      } else if (pressedKey == '0') {
+        buzzer.skipQuestion();          // passer la question (personne ne marque)
+        buzzer.setWaitingForBuzzer();   // rafraichit l'ecran (nouveau numero)
+        mode = WAITING_BUZZER;
       } else {
         mode = buzzer.waitingBuzzerIsPressed(currentMode);
       }
