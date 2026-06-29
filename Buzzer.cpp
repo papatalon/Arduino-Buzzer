@@ -45,7 +45,12 @@ void Buzzer::setWaitingForBuzzer() {
   display.clear();
   display.setText("    EN ATTENTE", 0);
   display.setText("   D'UNE REPONSE", 1);
-  display.setText("B:corriger   C:fin", 3);
+  // "B:corriger" n'a de sens que si une décision a déjà été prise.
+  if (lastJudgedBuzzer >= 0) {
+    display.setText("B:corriger   C:fin", 3);
+  } else {
+    display.setText("C: terminer", 3);
+  }
 }
 
 void Buzzer::setBuzzerPressed() {
