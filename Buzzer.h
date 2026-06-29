@@ -8,6 +8,8 @@
 
 #define SCORES_DISPLAY_MS 15000  // durée d'affichage des scores entre les questions
 #define WIN_BLINK_MS 1500        // durée du clignotement de la LED du gagnant
+#define INTRO_MS 4000            // durée du chenillard d'intro au lancement
+#define INTRO_STEP_MS 120        // vitesse du chenillard (ms par LED)
 
 class Buzzer {
 public:
@@ -37,6 +39,9 @@ public:
     void togglePenaltyMode();
     bool isPenaltyMode();
     void resetScores();
+
+    void setIntro();                         // lance le chenillard d'intro
+    PhaseMode intro(char pressedKey);
 
     void skipQuestion();                     // passer la question (personne ne marque)
 
@@ -74,6 +79,7 @@ private:
   int scores[4] = { 0, 0, 0, 0};
   bool penaltyMode = false;           // false = Classique, true = Pénalité (-1 si mauvaise)
   unsigned long scoresShownAt = 0;    // horodatage d'affichage des scores
+  unsigned long introStart = 0;       // horodatage du début de l'intro
 
   // Mémoire de la dernière décision (pour correction).
   int lastJudgedBuzzer = -1;

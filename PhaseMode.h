@@ -7,6 +7,7 @@ enum PhaseMode {
     SHUFFLE_BUZZER,
     BUZZER_CONFIG,
     RESET,
+    INTRO,
     WAITING_BUZZER,
     BUZZER_PRESSED,
     SHOW_SCORES,

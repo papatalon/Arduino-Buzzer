@@ -146,6 +146,31 @@ PhaseMode Buzzer::buzzerIsPressed(PhaseMode currentMode, char pressedKey) {
   return currentMode;
 }
 
+void Buzzer::setIntro() {
+  introStart = millis();
+  display.clear();
+  display.setText("   C'EST PARTI !", 0);
+  display.setText("  Que le meilleur", 1);
+  display.setText("     gagne !", 2);
+}
+
+PhaseMode Buzzer::intro(char pressedKey) {
+  unsigned long elapsed = millis() - introStart;
+
+  // N'importe quelle touche, ou la fin du minuteur, lance la 1re question.
+  if (pressedKey || elapsed >= INTRO_MS) {
+    resetLights();
+    return WAITING_BUZZER;
+  }
+
+  // Chenillard festif : les LED s'allument l'une après l'autre.
+  int step = (elapsed / INTRO_STEP_MS) % 4;
+  for (int i = 0; i < 4; i++) {
+    setLed(i, i == step);
+  }
+  return INTRO;
+}
+
 void Buzzer::skipQuestion() {
   if (tiebreak) {
     return;                  // pas de "passer" pendant un bris d'égalité

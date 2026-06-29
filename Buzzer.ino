@@ -60,6 +60,9 @@ PhaseMode getCurrentMode() {
     case RESET:
       mode = reset();
       break;
+    case INTRO:
+      mode = buzzer.intro(pressedKey);
+      break;
     case WAITING_BUZZER:
       if (pressedKey == 'C') {
         mode = END_CONFIRM;              // demander confirmation avant de terminer
@@ -111,6 +114,9 @@ void updateMode() {
       break;
     case RESET:
       setReset();
+      break;
+    case INTRO:
+      buzzer.setIntro();
       break;
     case WAITING_BUZZER:
       buzzer.setWaitingForBuzzer();

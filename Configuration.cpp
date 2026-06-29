@@ -28,7 +28,7 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
     case '#':
       buzzer.resetScores();         // nouvelle partie : scores remis à zéro
       mp3.playInit();               // son de lancement (dossier 01)
-      return WAITING_BUZZER;
+      return INTRO;                 // chenillard festif pendant la musique
   }
 
   return CONFIGURATION;
