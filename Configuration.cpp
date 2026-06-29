@@ -27,6 +27,7 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
       return VOLUME;                // écran de réglage du volume
     case '#':
       buzzer.resetScores();         // nouvelle partie : scores remis à zéro
+      mp3.playInit();               // son de lancement (dossier 01)
       return WAITING_BUZZER;
   }
 

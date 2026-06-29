@@ -26,7 +26,7 @@ L'application est une machine à états ([PhaseMode.h](PhaseMode.h)) pilotée da
   - `B` : attribuer des sons aléatoires (`SHUFFLE_BUZZER`)
   - `C` : changer de mode de jeu (Classique ⇄ Pénalité ; le mode est affiché)
   - `D` : régler le **volume** (`VOLUME`)
-  - `#` : démarrer la partie (`WAITING_BUZZER`) — **remet les scores à zéro**
+  - `#` : démarrer la partie (`WAITING_BUZZER`) — **remet les scores à zéro** et joue un son de lancement (dossier `01`)
 - **VOLUME** — Réglage du volume du DFPlayer (0–30) : `2` = +, `8` = −, `#` = retour au menu.
 - **BUZZER_CONFIG** — Assistant de configuration guidé (voir ci-dessous). `#` quitte à tout moment.
 - **SHUFFLE_BUZZER** — Réattribue aléatoirement les sons à tous les buzzers, **après confirmation** (`#` = confirmer, `*` = annuler) pour éviter d'écraser une configuration faite via l'assistant.
