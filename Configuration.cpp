@@ -70,7 +70,7 @@ void Configuration::setVolumeScreen() {
   display.clear();
   display.setText("      VOLUME", 0);
   display.setText(String("    Vol: ") + mp3.getVolume() + " / 30", 1);
-  display.setText("2 = -    8 = +", 2);
+  display.setText("2 = +    8 = -", 2);
   display.setText("# : retour", 3);
 }
 
@@ -78,10 +78,10 @@ PhaseMode Configuration::volumeScreen(char pressedKey) {
   if (pressedKey == '#') {
     return CONFIGURATION;
   }
-  if (pressedKey == '8') {
+  if (pressedKey == '2') {
     mp3.volumeUp();
     setVolumeScreen();
-  } else if (pressedKey == '2') {
+  } else if (pressedKey == '8') {
     mp3.volumeDown();
     setVolumeScreen();
   }
