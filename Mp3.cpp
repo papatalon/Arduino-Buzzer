@@ -1,4 +1,7 @@
 #include "Mp3.h"
+#include <EEPROM.h>
+
+#define EEPROM_ADDR_VOLUME 0   // adresse EEPROM du volume sauvegardé
 
 Mp3::Mp3(): softwareSerialMP3(RX_PIN, TX_PIN) {
 }
@@ -14,6 +17,13 @@ Mp3& Mp3::shared() {
 void Mp3::init(void) {
 
   randomSeed(analogRead(0));
+
+  // Recharge le volume sauvegardé (EEPROM). Une case non initialisée vaut
+  // 255 -> on garde alors la valeur par défaut.
+  int storedVolume = EEPROM.read(EEPROM_ADDR_VOLUME);
+  if (storedVolume >= 0 && storedVolume <= 30) {
+    volume = storedVolume;
+  }
 
   pinMode(BUSY_PIN, INPUT);
   softwareSerialMP3.begin(9600);
@@ -260,4 +270,9 @@ void Mp3::volumeUp() {
 
 void Mp3::volumeDown() {
   setVolume(volume - 1);
+}
+
+void Mp3::saveVolume() {
+  // update n'écrit que si la valeur a changé (ménage l'EEPROM).
+  EEPROM.update(EEPROM_ADDR_VOLUME, (uint8_t)volume);
 }

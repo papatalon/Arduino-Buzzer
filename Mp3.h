@@ -38,6 +38,7 @@ class Mp3 {
     int getVolume();
     void volumeUp();
     void volumeDown();
+    void saveVolume();      // sauvegarde le volume en EEPROM (persistant)
 
     // Configuration des sons (assistant)
     int getSound(int buzzerId);             // index du son courant (0-based)

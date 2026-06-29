@@ -41,7 +41,7 @@ L'application est une machine à états ([PhaseMode.h](PhaseMode.h)) pilotée da
 
 Les sons sont organisés en 4 dossiers sur la carte SD (voir [Mp3.h](Mp3.h)) : init, buzzers, bonnes réponses, mauvaises réponses. Le **nombre de fichiers par dossier est détecté automatiquement** au démarrage en interrogeant le DFPlayer (`readFileCountsInFolder`) ; les constantes `*_FILE_COUNT` de [Mp3.h](Mp3.h) ne servent que de **valeurs de repli** (simulation Wokwi, ou si la détection échoue). Les comptes sont affichés sur le port série au démarrage.
 
-Au démarrage, un **son d'intro** (dossier `01`) est joué. Le **volume** (0–30) se règle depuis le menu (`D`). Pour les sons de bonne/mauvaise réponse, le même fichier n'est jamais **rejoué deux fois de suite** (anti-répétition).
+Au démarrage, un **son d'intro** (dossier `01`) est joué. Le **volume** (0–30) se règle depuis le menu (`D`) et est **sauvegardé en EEPROM** : il est conservé après extinction et rechargé au démarrage. Pour les sons de bonne/mauvaise réponse, le même fichier n'est jamais **rejoué deux fois de suite** (anti-répétition).
 
 ### Score et modes de jeu
 

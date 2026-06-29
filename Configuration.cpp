@@ -76,6 +76,7 @@ void Configuration::setVolumeScreen() {
 
 PhaseMode Configuration::volumeScreen(char pressedKey) {
   if (pressedKey == '#') {
+    mp3.saveVolume();        // mémorise le volume (persistant après extinction)
     return CONFIGURATION;
   }
   if (pressedKey == '2') {
