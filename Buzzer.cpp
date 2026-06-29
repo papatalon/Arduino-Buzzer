@@ -50,6 +50,13 @@ void Buzzer::setWaitingForBuzzer() {
   }
 
   display.clear();
+
+  if (tiebreak) {
+    display.setText("  BRIS D'EGALITE", 0);
+    display.setText("   Buzzez vite !", 1);
+    return;
+  }
+
   display.setText(String("Question ") + questionNumber, 0);
   display.setText("    EN ATTENTE", 1);
   display.setText("   D'UNE REPONSE", 2);
@@ -71,6 +78,40 @@ void Buzzer::setBuzzerPressed() {
 }
 
 PhaseMode Buzzer::buzzerIsPressed(PhaseMode currentMode, char pressedKey) {
+
+  // Bris d'égalité : règles particulières.
+  if (tiebreak) {
+    if (pressedKey == 'A') {                 // bonne réponse -> gagne la partie
+      scores[currentBuzzerId]++;
+      mp3.playGoodAnswer();
+      setLed(currentBuzzerId, false);
+      tiebreak = false;
+      return END_GAME;
+    }
+    if (pressedKey == 'D') {                  // éliminé du bris
+      mp3.playBadAnswer();
+      actives[currentBuzzerId] = false;
+      setLed(currentBuzzerId, false);
+
+      int remaining = 0;
+      int last = -1;
+      for (int i = 0; i < 4; i++) {
+        if (enabled[i] && actives[i]) {
+          remaining++;
+          last = i;
+        }
+      }
+      if (remaining <= 1) {                   // dernier en lice -> gagnant
+        if (remaining == 1) {
+          scores[last]++;
+        }
+        tiebreak = false;
+        return END_GAME;
+      }
+      return WAITING_BUZZER;                   // le bris continue
+    }
+    return currentMode;
+  }
 
   switch (pressedKey) {
     case 'A':
@@ -176,6 +217,12 @@ void Buzzer::resetScores() {
   lastJudgedBuzzer = -1;
   lastWasGood = false;
   questionNumber = 1;
+  tiebreak = false;
+  endTie = false;
+  // Nouvelle partie : tous les buzzers présents redeviennent actifs.
+  for (int i = 0; i < 4; i++) {
+    actives[i] = true;
+  }
 }
 
 void Buzzer::displayScores(const char* title, const char* prompt) {
@@ -278,16 +325,18 @@ void Buzzer::setEndGame() {
     }
   }
 
+  endTie = (any && count > 1);
+
   String prompt;
   if (!any) {
     prompt = "Aucun buzzer #menu";
-  } else if (count > 1) {
-    prompt = String("EGALITE ") + best + "pts #menu";
+  } else if (endTie) {
+    prompt = "#=bris   *=menu";    // égalité : proposer un bris d'égalité
   } else {
     prompt = String("Gagne:") + colorName(winner) + " #menu";
   }
 
-  displayScores("FIN DE PARTIE", prompt.c_str());
+  displayScores(endTie ? "EGALITE !" : "FIN DE PARTIE", prompt.c_str());
 
   if (any && count == 1) {
     mp3.playGoodAnswer();            // son de victoire
@@ -295,11 +344,40 @@ void Buzzer::setEndGame() {
 }
 
 PhaseMode Buzzer::endGame(char pressedKey) {
+  if (endTie) {
+    if (pressedKey == '#') {         // lancer le bris d'égalité
+      enterTiebreak();
+      return WAITING_BUZZER;
+    }
+    if (pressedKey == '*') {         // accepter l'égalité
+      resetLights();
+      return CONFIGURATION;
+    }
+    return END_GAME;
+  }
+
   if (pressedKey == '#') {
     resetLights();
     return CONFIGURATION;
   }
   return END_GAME;
+}
+
+void Buzzer::enterTiebreak() {
+  // Meilleur score parmi les présents.
+  int best = 0;
+  bool any = false;
+  for (int i = 0; i < 4; i++) {
+    if (enabled[i] && (!any || scores[i] > best)) {
+      best = scores[i];
+      any = true;
+    }
+  }
+  // Seuls les ex æquo peuvent buzzer (les autres restent présents mais neutralisés).
+  for (int i = 0; i < 4; i++) {
+    actives[i] = (enabled[i] && scores[i] == best);
+  }
+  tiebreak = true;
 }
 
 void Buzzer::resetConfigState() {

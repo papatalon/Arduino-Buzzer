@@ -79,6 +79,11 @@ private:
 
   int questionNumber = 1;   // numéro de la question en cours
 
+  bool tiebreak = false;    // bris d'égalité en cours
+  bool endTie = false;      // l'écran de fin affiche une égalité
+
+  void enterTiebreak();     // n'autorise que les ex æquo à buzzer
+
   int currentBuzzerId;
 
   void goodAnswer();

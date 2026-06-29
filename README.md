@@ -36,7 +36,7 @@ L'application est une machine à états ([PhaseMode.h](PhaseMode.h)) pilotée da
   - `D` : mauvaise réponse → son d'échec, le buzzer fautif est désactivé pour ce tour (**−1 point en mode Pénalité**), on reste sur la même question.
 - **SHOW_SCORES** — Affiche les scores entre les questions (2 colonnes + titre), pendant 15 s ou jusqu'à `#`. `C` demande à terminer la partie, `B` corrige la dernière décision.
 - **END_CONFIRM** — Confirmation avant de terminer la partie (`#` = oui, `*` = non / continuer).
-- **END_GAME** — Scores finaux + couleur gagnante (+ son de victoire) ; `#` revient au menu.
+- **END_GAME** — Scores finaux. Si un gagnant unique : couleur gagnante + son de victoire, `#` revient au menu. Si **égalité** au sommet : `#` lance un **bris d'égalité**, `*` accepte l'égalité (retour au menu).
 - **RESET** — Une touche de reset (gérée par [AppKeypad](AppKeypad.h)) éteint les LEDs et revient au menu.
 
 Les sons sont organisés en 4 dossiers sur la carte SD (voir [Mp3.h](Mp3.h)) : init, buzzers, bonnes réponses, mauvaises réponses. Le **nombre de fichiers par dossier est détecté automatiquement** au démarrage en interrogeant le DFPlayer (`readFileCountsInFolder`) ; les constantes `*_FILE_COUNT` de [Mp3.h](Mp3.h) ne servent que de **valeurs de repli** (simulation Wokwi, ou si la détection échoue). Les comptes sont affichés sur le port série au démarrage.
@@ -53,6 +53,15 @@ Chaque buzzer (couleur) a un score. Deux modes, choisis au menu via `C` :
 Les scores sont remis à zéro au lancement d'une partie (`#`). Entre chaque question (après une bonne réponse), l'écran des scores s'affiche 15 secondes (ou `#` pour enchaîner). En fin de partie (`C`), l'écran affiche les scores finaux et la couleur gagnante avec un son de victoire (en cas d'égalité, « EGALITE » est affiché sans son).
 
 Seuls les **buzzers présents** (déclarés via l'assistant) apparaissent sur les écrans de scores ; les buzzers absents sont masqués, et le gagnant est calculé uniquement parmi les présents.
+
+### Bris d'égalité
+
+Si la partie se termine sur une **égalité** au sommet, l'écran de fin propose un bris (`#`). Pendant le bris (« BRIS D'EGALITE »), **seuls les buzzers ex æquo** peuvent buzzer ; l'animateur juge :
+
+- `A` (bonne réponse) → ce buzzer **gagne la partie** (+1, score final unique).
+- `D` (mauvaise réponse) → ce buzzer est **éliminé du bris** ; le dernier encore en lice gagne.
+
+On enchaîne ensuite sur l'écran de fin avec le gagnant désigné.
 
 ### Corriger une erreur de jugement
 
