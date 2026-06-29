@@ -3,7 +3,7 @@
 void Configuration::init() {
   display.clear();
   display.setText(String("= MENU =  ") + (buzzer.isPenaltyMode() ? "Penalite" : "Classique"), 0);
-  display.setText("A: Config Buzzer", 1);
+  display.setText("A: Config Buzzers", 1);
   display.setText("B: Sons au hasard", 2);
   display.setText("C: Mode    # : Jouer", 3);
 }
