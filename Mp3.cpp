@@ -31,15 +31,27 @@ void Mp3::init(void) {
 
   mp3.begin(softwareSerialMP3, false);
 
+  // Le DFPlayer met ~1,5 à 3 s après la mise sous tension pour lire la carte SD
+  // et devenir capable de répondre aux requêtes. Sans cette pause, readState()
+  // peut renvoyer -1 alors que le module est bien présent (faux négatif).
+  delay(2000);
+
   // begin() renvoie toujours true quand l'ACK est désactivé : on ne peut pas
   // s'y fier. On interroge donc réellement le module (readState envoie une
   // requête et attend une réponse). Aucune réponse (DFPlayer absent /
-  // simulation Wokwi) -> -1. On tente plusieurs fois pour éviter un faux
-  // négatif sur le vrai matériel.
+  // simulation Wokwi) -> -1. On tente plusieurs fois, en laissant du temps
+  // entre les essais, pour éviter un faux négatif sur le vrai matériel.
   bool detected = false;
-  for (int i = 0; i < 3 && !detected; i++) {
-    if (mp3.readState() != -1) {
+  for (int i = 0; i < 5 && !detected; i++) {
+    int state = mp3.readState();
+    Serial.print(F("  readState() essai "));
+    Serial.print(i + 1);
+    Serial.print(F(" -> "));
+    Serial.println(state);
+    if (state != -1) {
       detected = true;
+    } else {
+      delay(500);
     }
   }
 
