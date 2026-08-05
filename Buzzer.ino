@@ -47,7 +47,9 @@ PhaseMode getCurrentMode() {
     return RESET;
   }
 
-  if(appKeypad.isLedTestActivated(pressedKey)) {
+  // Mode cache de test cablage : accessible uniquement depuis la CONFIGURATION
+  // (evite une entree accidentelle en pleine partie).
+  if(currentMode == CONFIGURATION && appKeypad.isLedTestActivated(pressedKey)) {
     return LED_TEST;   // mode cache de test cablage (LED + boutons)
   }
 
