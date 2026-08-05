@@ -30,15 +30,17 @@ bool AppKeypad::isResetActivated(char pressedKey) {
   return false;
 }
 
-// Mode cache de test cablage : la sequence '*' puis '1' (dans les 400 ms)
+// Mode cache de test cablage : la sequence '*' puis '1' (dans les 2 s)
 // bascule vers LED_TEST. Le '*' initial a deja arme previousKey/previousMillis
-// via isResetActivated(), appele juste avant.
+// via isResetActivated(), appele juste avant. Fenetre volontairement large
+// (2 s) car on enchaine deux touches differentes, plus lent qu'un double-tap.
 bool AppKeypad::isLedTestActivated(char pressedKey) {
 
   if(pressedKey && pressedKey == '1') {
     unsigned long currentMillis = millis();
-    if(previousKey == '*' && currentMillis - previousMillis < 400) {
+    if(previousKey == '*' && currentMillis - previousMillis < 2000) {
       previousKey = ' ';          // consomme la sequence
+      Serial.println(F("[MODE] Entree dans LED_TEST (sequence *1)."));
       return true;
     }
   }
