@@ -32,7 +32,9 @@ void Buzzer::setLedTest() {
   ledTestMaster = true;
   for (int i = 0; i < 4; i++) {
     ledTestOn[i] = true;
-    ledTestPrev[i] = false;
+    // Mémorise l'état courant des boutons : un bouton déjà maintenu en entrant
+    // ne provoquera pas de bascule tant qu'il n'a pas été relâché.
+    prevPressed[i] = (digitalRead(buzzers[i][1]) == LOW);
     setLed(i, true);
   }
   display.clear();
@@ -58,17 +60,9 @@ PhaseMode Buzzer::ledTest(char pressedKey) {
     Serial.println(ledTestMaster ? F("ON") : F("OFF"));
   }
 
-  // Boutons des buzzers : bascule la LED du buzzer appuye (front descendant).
+  // Boutons des buzzers : bascule la LED du buzzer appuye (front anti-rebondi).
   for (int i = 0; i < 4; i++) {
-    bool pressedNow = (digitalRead(buzzers[i][1]) == LOW);
-    bool edge = pressedNow && !ledTestPrev[i];
-    ledTestPrev[i] = pressedNow;
-
-    // Anti-rebond : on ignore un nouveau front survenant trop tot apres le
-    // precedent (un seul appui mecanique produit sinon plusieurs fronts).
-    unsigned long now = millis();
-    if (edge && (now - ledTestLastMs[i] >= LED_TEST_DEBOUNCE_MS)) {
-      ledTestLastMs[i] = now;
+    if (buttonPressed(i)) {
       ledTestOn[i] = !ledTestOn[i];
       setLed(i, ledTestOn[i]);
       display.setText(String(colorName(i)) + ": " + (ledTestOn[i] ? "ON" : "OFF"), 3);
@@ -91,10 +85,8 @@ PhaseMode Buzzer::waitingBuzzerIsPressed(PhaseMode currentMode) {
   PhaseMode result = currentMode;
 
   for (int i = 0; i < 4; i++) {
-    bool pressedNow = (digitalRead(buzzers[i][1]) == LOW);
-    // Front descendant uniquement : un bouton maintenu ne se redéclenche pas.
-    bool edge = pressedNow && !prevPressed[i];
-    prevPressed[i] = pressedNow;
+    // Front descendant anti-rebondi : un bouton maintenu ne se redéclenche pas.
+    bool edge = buttonPressed(i);
 
     if (result == currentMode && enabled[i] && actives[i] && edge) {
       currentBuzzerId = i;
@@ -515,11 +507,27 @@ bool Buzzer::isEnabled(int buzzerId) {
   return enabled[buzzerId];
 }
 
-bool Buzzer::wasPressed(int buzzerId) {
+// Lecture centralisée d'un bouton de buzzer : renvoie true une seule fois par
+// appui (front descendant), avec anti-rebond temporel commun. Le 1er front est
+// accepté immédiatement (aucune latence pour le buzz en jeu) ; seuls les fronts
+// survenant moins de BUTTON_DEBOUNCE_MS après sont rejetés (rebond mécanique).
+bool Buzzer::buttonPressed(int buzzerId) {
   bool pressedNow = (digitalRead(buzzers[buzzerId][1]) == LOW);
   bool edge = pressedNow && !prevPressed[buzzerId];
   prevPressed[buzzerId] = pressedNow;
-  return edge;
+
+  if (edge) {
+    unsigned long now = millis();
+    if (now - lastEdgeMs[buzzerId] >= BUTTON_DEBOUNCE_MS) {
+      lastEdgeMs[buzzerId] = now;
+      return true;
+    }
+  }
+  return false;
+}
+
+bool Buzzer::wasPressed(int buzzerId) {
+  return buttonPressed(buzzerId);
 }
 
 void Buzzer::setLed(int buzzerId, bool on) {
