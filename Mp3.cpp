@@ -55,6 +55,11 @@ void Mp3::init(void) {
     }
   }
 
+  // === TEST DIAGNOSTIC (a retirer) : on force le mode reel meme si readState
+  // n'a rien renvoye, pour verifier si le module joue quand meme le son. ===
+  detected = true;
+  Serial.println(F("  [TEST] mode reel force -> on tente une lecture reelle."));
+
   if (!detected)
   {
     // Aucun DFPlayer détecté (carte SD absente ou simulation Wokwi).
