@@ -11,6 +11,7 @@ class AppKeypad {
 public:
   static AppKeypad& shared();
   bool isResetActivated(char pressedKey);
+  bool isLedTestActivated(char pressedKey);   // sequence cachee *1 -> mode test
   char getKey();
 
 private:

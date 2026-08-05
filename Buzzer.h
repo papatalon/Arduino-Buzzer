@@ -21,6 +21,10 @@ public:
     void init();
     void resetLights();
 
+    // Mode cache de test cablage (entree *1) : LED + boutons.
+    void setLedTest();                       // entree : allume les 4 LED
+    PhaseMode ledTest(char pressedKey);      // touche = tout on/off ; bouton = sa LED
+
     void setWaitingForBuzzer();
     PhaseMode waitingBuzzerIsPressed(PhaseMode currentMode);
 
@@ -69,6 +73,11 @@ private:
   };
 
   bool actives[4] = { true, true, true, true};
+
+  // État du mode de test câblage (LED_TEST).
+  bool ledTestOn[4] = { true, true, true, true};   // état voulu de chaque LED
+  bool ledTestPrev[4] = { false, false, false, false}; // anti-rebond boutons
+  bool ledTestMaster = true;                       // état de la bascule globale (touche)
 
   // Buzzer présent / dans le pool (déclaré via l'assistant de configuration).
   bool enabled[4] = { true, true, true, true};

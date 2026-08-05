@@ -13,7 +13,8 @@ enum PhaseMode {
     SHOW_SCORES,
     END_CONFIRM,
     END_GAME,
-    VOLUME
+    VOLUME,
+    LED_TEST        // mode cache de test cablage (LED + boutons), entree *1
 };
 
 #endif

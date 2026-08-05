@@ -47,6 +47,10 @@ PhaseMode getCurrentMode() {
     return RESET;
   }
 
+  if(appKeypad.isLedTestActivated(pressedKey)) {
+    return LED_TEST;   // mode cache de test cablage (LED + boutons)
+  }
+
   switch (currentMode) {
     case CONFIGURATION:
       mode = configuration.manageConfiguration(pressedKey);
@@ -90,6 +94,9 @@ PhaseMode getCurrentMode() {
       break;
     case VOLUME:
       mode = configuration.volumeScreen(pressedKey);
+      break;
+    case LED_TEST:
+      mode = buzzer.ledTest(pressedKey);
       break;
   }
 
@@ -135,6 +142,9 @@ void updateMode() {
       break;
     case VOLUME:
       configuration.setVolumeScreen();
+      break;
+    case LED_TEST:
+      buzzer.setLedTest();
       break;
   }
 }

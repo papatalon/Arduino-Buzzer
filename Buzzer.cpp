@@ -14,20 +14,59 @@ void Buzzer::init() {
     pinMode(buzzers[buzzerId][0],OUTPUT);
     pinMode(buzzers[buzzerId][1],INPUT_PULLUP);
   }
-
-  // === PATCH TEMPORAIRE (test de cablage - a retirer) ===
-  // Allume les LED des 4 buzzers au demarrage pour verifier le cablage
-  // couleur par couleur. Elles restent allumees en mode CONFIGURATION.
-  for (int buzzerId = 0; buzzerId < 4; buzzerId++) {
-    digitalWrite(buzzers[buzzerId][0], HIGH);
-  }
-  Serial.println(F("[PATCH] LED des 4 buzzers allumees (test cablage)."));
 }
 
 void Buzzer::resetLights() {
   for (int buzzerId = 0; buzzerId < 4; buzzerId++) {
     digitalWrite(buzzers[buzzerId][0], LOW);
   }
+}
+
+// === Mode cache de test cablage (LED_TEST), entree via *1 ===
+// A l'entree, les 4 LED s'allument. Ensuite :
+//  - une touche du clavier bascule TOUTES les LED (test des sorties LED) ;
+//  - un appui sur un bouton de buzzer bascule SA propre LED et affiche la
+//    couleur (test conjoint du bouton et de la LED, couleur par couleur).
+// Sortie : ** (reset) -> retour a la configuration.
+void Buzzer::setLedTest() {
+  ledTestMaster = true;
+  for (int i = 0; i < 4; i++) {
+    ledTestOn[i] = true;
+    ledTestPrev[i] = false;
+    setLed(i, true);
+  }
+  display.clear();
+  display.setText("Test LED + boutons", 0);
+  display.setText("Touche: tout on/off", 1);
+  display.setText("Bouton: sa LED", 2);
+  display.setText("**  = retour config", 3);
+}
+
+PhaseMode Buzzer::ledTest(char pressedKey) {
+  // Touche du clavier : bascule globale de toutes les LED.
+  if (pressedKey) {
+    ledTestMaster = !ledTestMaster;
+    for (int i = 0; i < 4; i++) {
+      ledTestOn[i] = ledTestMaster;
+      setLed(i, ledTestMaster);
+    }
+    display.setText(ledTestMaster ? "Tout: ON" : "Tout: OFF", 3);
+  }
+
+  // Boutons des buzzers : bascule la LED du buzzer appuye (front descendant).
+  for (int i = 0; i < 4; i++) {
+    bool pressedNow = (digitalRead(buzzers[i][1]) == LOW);
+    bool edge = pressedNow && !ledTestPrev[i];
+    ledTestPrev[i] = pressedNow;
+
+    if (edge) {
+      ledTestOn[i] = !ledTestOn[i];
+      setLed(i, ledTestOn[i]);
+      display.setText(String(colorName(i)) + ": " + (ledTestOn[i] ? "ON" : "OFF"), 3);
+    }
+  }
+
+  return LED_TEST;
 }
 
 PhaseMode Buzzer::waitingBuzzerIsPressed(PhaseMode currentMode) {
