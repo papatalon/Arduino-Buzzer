@@ -14,6 +14,14 @@ void Buzzer::init() {
     pinMode(buzzers[buzzerId][0],OUTPUT);
     pinMode(buzzers[buzzerId][1],INPUT_PULLUP);
   }
+
+  // === PATCH TEMPORAIRE (test de cablage - a retirer) ===
+  // Allume les LED des 4 buzzers au demarrage pour verifier le cablage
+  // couleur par couleur. Elles restent allumees en mode CONFIGURATION.
+  for (int buzzerId = 0; buzzerId < 4; buzzerId++) {
+    digitalWrite(buzzers[buzzerId][0], HIGH);
+  }
+  Serial.println(F("[PATCH] LED des 4 buzzers allumees (test cablage)."));
 }
 
 void Buzzer::resetLights() {
