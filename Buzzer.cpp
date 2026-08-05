@@ -51,6 +51,11 @@ PhaseMode Buzzer::ledTest(char pressedKey) {
       setLed(i, ledTestMaster);
     }
     display.setText(ledTestMaster ? "Tout: ON" : "Tout: OFF", 3);
+
+    Serial.print(F("[LED_TEST] Touche '"));
+    Serial.print(pressedKey);
+    Serial.print(F("' -> Tout: "));
+    Serial.println(ledTestMaster ? F("ON") : F("OFF"));
   }
 
   // Boutons des buzzers : bascule la LED du buzzer appuye (front descendant).
@@ -63,6 +68,15 @@ PhaseMode Buzzer::ledTest(char pressedKey) {
       ledTestOn[i] = !ledTestOn[i];
       setLed(i, ledTestOn[i]);
       display.setText(String(colorName(i)) + ": " + (ledTestOn[i] ? "ON" : "OFF"), 3);
+
+      Serial.print(F("[LED_TEST] Bouton "));
+      Serial.print(colorName(i));
+      Serial.print(F(" (pin "));
+      Serial.print(buzzers[i][1]);
+      Serial.print(F(") -> LED pin "));
+      Serial.print(buzzers[i][0]);
+      Serial.print(F(" : "));
+      Serial.println(ledTestOn[i] ? F("ON") : F("OFF"));
     }
   }
 
