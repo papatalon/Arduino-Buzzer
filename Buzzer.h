@@ -10,6 +10,7 @@
 #define WIN_BLINK_MS 1500        // durée du clignotement de la LED du gagnant
 #define INTRO_MS 4000            // durée du chenillard d'intro au lancement
 #define INTRO_STEP_MS 120        // vitesse du chenillard (ms par LED)
+#define LED_TEST_DEBOUNCE_MS 200 // anti-rebond des boutons dans le mode LED_TEST
 
 class Buzzer {
 public:
@@ -76,7 +77,8 @@ private:
 
   // État du mode de test câblage (LED_TEST).
   bool ledTestOn[4] = { true, true, true, true};   // état voulu de chaque LED
-  bool ledTestPrev[4] = { false, false, false, false}; // anti-rebond boutons
+  bool ledTestPrev[4] = { false, false, false, false}; // front précédent des boutons
+  unsigned long ledTestLastMs[4] = { 0, 0, 0, 0};  // horodatage du dernier front accepté
   bool ledTestMaster = true;                       // état de la bascule globale (touche)
 
   // Buzzer présent / dans le pool (déclaré via l'assistant de configuration).

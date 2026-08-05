@@ -64,7 +64,11 @@ PhaseMode Buzzer::ledTest(char pressedKey) {
     bool edge = pressedNow && !ledTestPrev[i];
     ledTestPrev[i] = pressedNow;
 
-    if (edge) {
+    // Anti-rebond : on ignore un nouveau front survenant trop tot apres le
+    // precedent (un seul appui mecanique produit sinon plusieurs fronts).
+    unsigned long now = millis();
+    if (edge && (now - ledTestLastMs[i] >= LED_TEST_DEBOUNCE_MS)) {
+      ledTestLastMs[i] = now;
       ledTestOn[i] = !ledTestOn[i];
       setLed(i, ledTestOn[i]);
       display.setText(String(colorName(i)) + ": " + (ledTestOn[i] ? "ON" : "OFF"), 3);
