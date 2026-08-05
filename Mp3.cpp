@@ -25,53 +25,46 @@ void Mp3::init(void) {
     volume = storedVolume;
   }
 
-  pinMode(BUSY_PIN, INPUT);
+  // BUSY est HIGH au repos et LOW quand le module joue. On active le pull-up
+  // interne : ainsi, sans module (simulation Wokwi ou broche non câblée), la
+  // lecture donne HIGH -> mode simulation.
+  pinMode(BUSY_PIN, INPUT_PULLUP);
   softwareSerialMP3.begin(9600);
   Serial.println(F("Initializing MP3Player ..."));
 
   mp3.begin(softwareSerialMP3, false);
 
   // Le DFPlayer met ~1,5 à 3 s après la mise sous tension pour lire la carte SD
-  // et devenir capable de répondre aux requêtes. Sans cette pause, readState()
-  // peut renvoyer -1 alors que le module est bien présent (faux négatif).
+  // et devenir capable d'accepter des commandes.
   delay(2000);
 
-  // begin() renvoie toujours true quand l'ACK est désactivé : on ne peut pas
-  // s'y fier. On interroge donc réellement le module (readState envoie une
-  // requête et attend une réponse). Aucune réponse (DFPlayer absent /
-  // simulation Wokwi) -> -1. On tente plusieurs fois, en laissant du temps
-  // entre les essais, pour éviter un faux négatif sur le vrai matériel.
+  // Détection via la broche BUSY. De nombreux modules DFPlayer « clones »
+  // jouent parfaitement mais ne répondent à AUCUNE requête série (readState,
+  // readFileCountsInFolder -> toujours -1) : impossible de les détecter en les
+  // interrogeant. On lance donc une courte lecture test et on observe BUSY,
+  // qui passe à LOW dès que le module joue. Aucun module -> BUSY reste HIGH.
+  setVolume(volume);
+  mp3.playFolder(INIT_FOLDER, 1);   // le fichier 1 du dossier init existe toujours
+
   bool detected = false;
-  for (int i = 0; i < 5 && !detected; i++) {
-    int state = mp3.readState();
-    Serial.print(F("  readState() essai "));
-    Serial.print(i + 1);
-    Serial.print(F(" -> "));
-    Serial.println(state);
-    if (state != -1) {
+  for (int i = 0; i < 10 && !detected; i++) {
+    delay(100);
+    if (digitalRead(BUSY_PIN) == LOW) {
       detected = true;
-    } else {
-      delay(500);
     }
   }
-
-  // === TEST DIAGNOSTIC (a retirer) : on force le mode reel meme si readState
-  // n'a rien renvoye, pour verifier si le module joue quand meme le son. ===
-  detected = true;
-  Serial.println(F("  [TEST] mode reel force -> on tente une lecture reelle."));
+  mp3.stop();   // on coupe la lecture test ; l'intro sera jouée par playInit()
 
   if (!detected)
   {
-    // Aucun DFPlayer détecté (carte SD absente ou simulation Wokwi).
-    // On bascule en mode simulation au lieu de jouer dans le vide.
+    // Aucun module détecté (BUSY jamais actif) : simulation Wokwi, carte SD
+    // absente, ou broche BUSY non câblée. On affiche les sons sur le série.
     simulation = true;
-    Serial.println(F("DFPlayer introuvable -> mode SIMULATION (sons sur le port serie)."));
+    Serial.println(F("DFPlayer introuvable (BUSY inactif) -> mode SIMULATION."));
   }
   else
   {
-    mp3.stop();
-    setVolume(volume);
-    Serial.println(F("MP3Player online."));
+    Serial.println(F("MP3Player online (detecte via BUSY)."));
   }
 
   initializeMP3Arrays();
