@@ -7,8 +7,8 @@
 #include "Buzzer.h"
 #include "Mp3.h"
 
-PhaseMode currentMode = CONFIGURATION;
-PhaseMode previousMode = CONFIGURATION;
+PhaseMode currentMode = BOOT;
+PhaseMode previousMode = BOOT;
 
 // Create an instance of DisplayManager
 // DisplayManager& displayManager = DisplayManager::shared();
@@ -29,19 +29,24 @@ void bootTick() {
 void setup() {
   Serial.begin(9600);
 
+  // Amorce le générateur aléatoire avant tout tirage (message de démarrage,
+  // sons des buzzers...). A0 est laissée flottante : sa lecture est du bruit.
+  randomSeed(analogRead(0));
+
   if(!display.init()) {
     Serial.println("INIT FAIL");
   }
 
   buzzer.init();
 
-  // Animation de démarrage pendant l'initialisation (bloquante) du DFPlayer.
+  // 1. Message rigolo + points animés pendant l'init (bloquante) du DFPlayer.
   buzzer.showBootScreen();
   mp3.init(bootTick);
-  buzzer.resetLights();   // fin de l'animation : on éteint les LED
 
-  configuration.init();   // le menu s'affiche une fois tout prêt
+  // 2. La chanson d'intro démarre : l'écran passe à l'égaliseur (mode BOOT).
+  //    Le menu s'affichera à la fin de la musique (voir Buzzer::boot).
   mp3.playInit();         // son d'intro au démarrage (dossier 01)
+  buzzer.setBoot();
 }
 
 void loop() {
@@ -66,6 +71,9 @@ PhaseMode getCurrentMode() {
   }
 
   switch (currentMode) {
+    case BOOT:
+      mode = buzzer.boot(pressedKey);
+      break;
     case CONFIGURATION:
       mode = configuration.manageConfiguration(pressedKey);
       break;
@@ -126,6 +134,9 @@ void updateMode() {
 
   previousMode = currentMode;
   switch (currentMode) {
+    case BOOT:
+      buzzer.setBoot();
+      break;
     case CONFIGURATION:
       configuration.init();
       break;

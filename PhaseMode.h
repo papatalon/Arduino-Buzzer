@@ -3,6 +3,7 @@
 
 // Define the PhaseMode enum here
 enum PhaseMode {
+    BOOT,           // demarrage : egaliseur anime pendant la chanson d'intro
     CONFIGURATION,
     SHUFFLE_BUZZER,
     BUZZER_CONFIG,

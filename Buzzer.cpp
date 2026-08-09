@@ -22,49 +22,110 @@ void Buzzer::resetLights() {
   }
 }
 
-// Écran affiché pendant l'initialisation du DFPlayer (voir bootTick) :
-// un égaliseur audio plein écran, dessiné avec des caractères personnalisés.
+// Messages de démarrage tirés au hasard : la 2e ligne reçoit les points
+// animés, donc on la garde courte (max ~16 colonnes sur les 20 du LCD).
+static const char* const BOOT_MESSAGES[BOOT_MESSAGE_COUNT][2] = {
+  { "Chauffage des",       "pouces"          },
+  { "Reveil des lutins",   "du son"          },
+  { "sudo demarrer quiz",  "Acces autorise"  },
+  { "Temps restant :",     "environ 3 jours" },
+  { "Compilation de",      "l'ambiance"      },
+};
+
+// === Phase 1 : pendant l'initialisation (bloquante) du DFPlayer ===
+// Un message rigolo tiré au hasard, dont les points s'animent (voir bootTick).
 void Buzzer::showBootScreen() {
+  bootMessage = random(BOOT_MESSAGE_COUNT);
+  lastDots = -1;
   display.clear();
-  display.initBarChars();
+  display.setText(BOOT_MESSAGES[bootMessage][0], 1);
+  display.setText(BOOT_MESSAGES[bootMessage][1], 2);
 }
 
-// Appelé en boucle par mp3.init() pendant les attentes de démarrage : fait
-// tourner le chenillard des LED (même effet que l'intro de partie) et fait
-// danser les barres de l'égaliseur, sans bloquer.
-void Buzzer::bootTick() {
-  int step = (millis() / INTRO_STEP_MS) % 4;
+// Chenillard : les 4 LED s'allument l'une après l'autre.
+void Buzzer::ledChase(unsigned long elapsed) {
+  int step = (elapsed / INTRO_STEP_MS) % 4;
   for (int i = 0; i < 4; i++) {
     setLed(i, i == step);
   }
+}
 
-  // Une nouvelle image de l'égaliseur toutes les ~150 ms (le redessin complet
-  // du LCD en I2C est lent : on ne le fait pas à chaque tick).
-  static unsigned long lastFrame = 0;
-  static uint8_t heights[20];
-  static bool seeded = false;
+// Appelé en boucle par mp3.init() pendant les attentes de démarrage : chenillard
+// des LED + points animés derrière le message, sans bloquer.
+void Buzzer::bootTick() {
+  ledChase(millis());
 
-  unsigned long now = millis();
-  if (now - lastFrame < 150) {
+  // Points de 0 à 3, redessinés seulement quand leur nombre change (le bus
+  // I2C de l'afficheur est lent).
+  int dots = (millis() / BOOT_DOT_MS) % 4;
+  if (dots == lastDots) {
     return;
   }
-  lastFrame = now;
+  lastDots = dots;
 
-  if (!seeded) {
-    seeded = true;
-    for (int i = 0; i < 20; i++) {
-      heights[i] = random(4, 29);
-    }
+  String line = BOOT_MESSAGES[bootMessage][1];
+  for (int i = 0; i < dots; i++) {
+    line += ".";
   }
+  display.setText(line, 2);
+}
 
-  // Marche aléatoire : chaque barre monte/descend un peu, comme un VU-mètre.
+// === Phase 2 : pendant la chanson d'intro ===
+// L'écran bascule sur un égaliseur audio plein écran, dessiné avec les
+// caractères personnalisés du LCD.
+void Buzzer::setBoot() {
+  bootStart = millis();
+  lastEqFrame = bootStart;
+  display.clear();
+  display.initBarChars();
   for (int i = 0; i < 20; i++) {
-    int h = heights[i] + random(-7, 8);
+    eqHeights[i] = random(4, 29);
+  }
+  display.drawEqualizer(eqHeights);
+}
+
+// Marche aléatoire : chaque barre monte/descend un peu, comme un VU-mètre.
+void Buzzer::updateEqualizer() {
+  for (int i = 0; i < 20; i++) {
+    int h = (int)eqHeights[i] + random(-7, 8);
     if (h < 1) h = 1;
     if (h > 32) h = 32;
-    heights[i] = h;
+    eqHeights[i] = h;
   }
-  display.drawEqualizer(heights);
+  display.drawEqualizer(eqHeights);
+}
+
+PhaseMode Buzzer::boot(char pressedKey) {
+  unsigned long elapsed = millis() - bootStart;
+
+  // N'importe quelle touche, ou la fin de la chanson, ouvre le menu.
+  if (pressedKey || songFinished(elapsed)) {
+    resetLights();
+    return CONFIGURATION;
+  }
+
+  ledChase(elapsed);
+
+  unsigned long now = millis();
+  if (now - lastEqFrame >= EQ_FRAME_MS) {
+    lastEqFrame = now;
+    updateEqualizer();
+  }
+  return BOOT;
+}
+
+// Le chenillard accompagne la chanson : il tourne tant que le DFPlayer joue
+// (broche BUSY à LOW). INTRO_START_MS laisse au module le temps de démarrer la
+// lecture avant de tester la fin ; INTRO_MAX_MS borne la durée par sécurité.
+// En simulation (pas de BUSY), on garde un minuteur fixe.
+bool Buzzer::songFinished(unsigned long elapsed) {
+  if (mp3.isSimulation()) {
+    return elapsed >= INTRO_MS;
+  }
+  if (elapsed < INTRO_START_MS) {
+    return false;                    // on laisse la lecture démarrer
+  }
+  return !mp3.isBusy() || elapsed >= INTRO_MAX_MS;
 }
 
 // === Mode cache de test cablage (LED_TEST), entree via *1 ===
@@ -260,31 +321,13 @@ void Buzzer::setIntro() {
 PhaseMode Buzzer::intro(char pressedKey) {
   unsigned long elapsed = millis() - introStart;
 
-  // Le chenillard festif accompagne la chanson de lancement : il tourne tant
-  // que le DFPlayer joue (broche BUSY à LOW), donc pour toute la durée de la
-  // chanson. INTRO_START_MS laisse au module le temps de démarrer la lecture
-  // (BUSY passe à LOW) avant de tester la fin ; INTRO_MAX_MS borne la durée
-  // par sécurité. En simulation (pas de BUSY), on garde le minuteur fixe.
-  bool finished;
-  if (mp3.isSimulation()) {
-    finished = elapsed >= INTRO_MS;
-  } else if (elapsed < INTRO_START_MS) {
-    finished = false;                          // on laisse la lecture démarrer
-  } else {
-    finished = !mp3.isBusy() || elapsed >= INTRO_MAX_MS;
-  }
-
   // N'importe quelle touche, ou la fin de la chanson, lance la 1re question.
-  if (pressedKey || finished) {
+  if (pressedKey || songFinished(elapsed)) {
     resetLights();
     return WAITING_BUZZER;
   }
 
-  // Chenillard festif : les LED s'allument l'une après l'autre.
-  int step = (elapsed / INTRO_STEP_MS) % 4;
-  for (int i = 0; i < 4; i++) {
-    setLed(i, i == step);
-  }
+  ledChase(elapsed);   // chenillard festif pendant la musique
   return INTRO;
 }
 

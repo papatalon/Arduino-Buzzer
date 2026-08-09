@@ -26,7 +26,8 @@ void Mp3::waitAnimated(unsigned long ms, void (*onTick)()) {
 
 void Mp3::init(void (*onTick)()) {
 
-  randomSeed(analogRead(0));
+  // Note : randomSeed() est fait dans setup(), avant le tirage du message de
+  // demarrage — surtout ne pas re-amorcer ici (on repartirait a zero).
 
   // Recharge le volume sauvegardé (EEPROM). Une case non initialisée vaut
   // 255 -> on garde alors la valeur par défaut.

@@ -13,6 +13,9 @@
 #define INTRO_START_MS 500       // délai avant de tester BUSY (démarrage du DFPlayer)
 #define INTRO_MAX_MS 30000       // durée maxi de sécurité du chenillard d'intro
 #define BUTTON_DEBOUNCE_MS 200   // anti-rebond commun a tous les boutons de buzzer
+#define BOOT_MESSAGE_COUNT 5     // nombre de messages de demarrage disponibles
+#define BOOT_DOT_MS 300          // vitesse des points animes du message de demarrage
+#define EQ_FRAME_MS 150          // duree d'une image de l'egaliseur (redessin I2C lent)
 
 class Buzzer {
 public:
@@ -24,10 +27,15 @@ public:
     void init();
     void resetLights();
 
-    // Animation de démarrage (pendant l'initialisation du DFPlayer) :
-    // écran fixe + chenillard des LED, comme au lancement d'une partie.
+    // Démarrage en deux temps :
+    //  1. pendant l'initialisation (bloquante) du DFPlayer : message
+    //     humoristique tiré au hasard + points animés (showBootScreen/bootTick) ;
+    //  2. pendant la chanson d'intro : égaliseur plein écran (setBoot/boot),
+    //     puis passage au menu quand la musique est finie.
     void showBootScreen();
     void bootTick();
+    void setBoot();
+    PhaseMode boot(char pressedKey);
 
     // Mode cache de test cablage (entree *1) : LED + boutons.
     void setLedTest();                       // entree : allume les 4 LED
@@ -113,6 +121,19 @@ private:
   void enterTiebreak();     // n'autorise que les ex æquo à buzzer
 
   int currentBuzzerId;
+
+  // Démarrage : message tiré au hasard, horodatage et état des animations.
+  int bootMessage = 0;
+  unsigned long bootStart = 0;
+  unsigned long lastEqFrame = 0;
+  int lastDots = -1;
+  uint8_t eqHeights[20];
+  void updateEqualizer();             // fait danser les barres d'une image
+  void ledChase(unsigned long elapsed);  // chenillard des 4 LED
+
+  // Vrai quand la chanson lancée il y a `elapsed` ms est terminée (BUSY), ou
+  // que la durée de sécurité est écoulée. En simulation : minuteur fixe.
+  bool songFinished(unsigned long elapsed);
 
   void goodAnswer();
   void badAnswer();
