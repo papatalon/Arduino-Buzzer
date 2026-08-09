@@ -1,12 +1,16 @@
 #include "Buzzer.h"
+#include "QuestionBank.h"
 #include <EEPROM.h>
 
 // Plan d'occupation de l'EEPROM : l'adresse 0 est le volume (voir Mp3.cpp).
-// Chrono par mode : Classique puis Pénalité, chacun (1re réponse, suivantes).
+// Chrono par mode : Chrono classique, Chrono pénalité, Vol — chacun (1re
+// réponse, suivantes).
 #define EEPROM_ADDR_CLASSIC_FIRST 1
 #define EEPROM_ADDR_CLASSIC_NEXT 2
 #define EEPROM_ADDR_PENALTY_FIRST 3
 #define EEPROM_ADDR_PENALTY_NEXT 4
+#define EEPROM_ADDR_VOL_FIRST 5
+#define EEPROM_ADDR_VOL_NEXT 6
 
 Buzzer::Buzzer() {}
 
@@ -233,6 +237,16 @@ void Buzzer::setWaitingForBuzzer() {
     startBuzzTimer();
   }
 
+  // Vol, nouvelle question : seul le joueur désigné (volTurn) peut buzzer.
+  // Uniquement à l'entrée de la question (pas à chaque ré-appel pendant la
+  // phase de vol, sinon un voleur qui vient d'échouer serait réactivé) —
+  // c'est badAnswer() qui ouvre le vol aux autres, une seule fois.
+  if (gameMode == GAME_VOL && !tiebreak && !secondaryRound) {
+    for (int i = 0; i < 4; i++) {
+      actives[i] = enabled[i] && (i == volTurn);
+    }
+  }
+
   display.clear();
 
   if (tiebreak) {
@@ -255,19 +269,53 @@ void Buzzer::setWaitingForBuzzer() {
     return;
   }
 
+  // Banque de questions : une nouvelle question est tirée à chaque nouveau
+  // numéro (pas à chaque retour ici pendant la même question, par ex. après
+  // une mauvaise réponse). Elle occupe la ligne 2 (défile si > 20 colonnes).
+  QuestionBank& bank = QuestionBank::shared();
+  bool bankOn = bank.isActive();
+  if (bankOn && lastDrawnQuestion != questionNumber) {
+    if (bank.drawQuestion()) {
+      lastDrawnQuestion = questionNumber;
+    } else {
+      bankOn = false;
+    }
+  }
+
   if (timerRunning) {
     // Départ automatique (réponses secondaires) : titre + barre pleine.
     drawBuzzTimer((unsigned long)timerLimit * 1000UL);
   } else {
-    display.setText(String("Question ") + questionNumber, 0);
+    String title;
+    if (gameMode == GAME_VOL && !secondaryRound) {
+      // Vol : le joueur désigné prime sur la catégorie dans le titre.
+      title = String("Q") + questionNumber + " Tour: " + colorName(volTurn);
+    } else if (bankOn) {
+      title = String("Q") + questionNumber + " - " + bank.questionCategory();
+    } else {
+      title = String("Question ") + questionNumber;
+    }
+    display.setText(title, 0);
     // Chrono armé : il attend le « top » de l'animateur (question à lire).
     display.setText(timerLimit > 0 ? "  D = top chrono" : "   EN ATTENTE...", 1);
   }
-  // "B:corriger" n'a de sens que si une décision a déjà été prise.
-  if (lastJudgedBuzzer >= 0) {
-    display.setText("#:son   B:corriger", 2);
+
+  // Vol, 1re réponse : la LED du joueur désigné reste allumée.
+  if (gameMode == GAME_VOL) {
+    setLed(volTurn, !secondaryRound);
+  }
+
+  if (bankOn) {
+    display.setText(bank.questionText(), 2);   // la question (défile si longue)
+  } else if (gameMode == GAME_VOL && !secondaryRound) {
+    display.setText(String("Tour: ") + colorName(volTurn), 2);
   } else {
-    display.setText("#:son d'ambiance", 2);
+    // "B:corriger" n'a de sens que si une décision a déjà été prise.
+    if (lastJudgedBuzzer >= 0) {
+      display.setText("#:son   B:corriger", 2);
+    } else {
+      display.setText("#:son d'ambiance", 2);
+    }
   }
   display.setText("0:passer    C:fin", 3);
 }
@@ -276,8 +324,15 @@ void Buzzer::setBuzzerPressed() {
     resetLights();   // coupe un éventuel clignotement de fin de chrono
     display.clear();
     display.setText(String("BIP ! -> ") + colorName(currentBuzzerId), 0);
-    display.setText("A: Bonne reponse", 1);
-    display.setText("D: Mauvaise reponse", 2);
+    QuestionBank& bank = QuestionBank::shared();
+    if (bank.isActive()) {
+      // La bonne réponse est affichée pour l'animateur, qui juge.
+      display.setText(String("Rep: ") + bank.answerText(), 1);
+      display.setText("A:Bonne  D:Mauvaise", 2);
+    } else {
+      display.setText("A: Bonne reponse", 1);
+      display.setText("D: Mauvaise reponse", 2);
+    }
     display.setText("0 = passer", 3);
     int ledPin = buzzers[currentBuzzerId][0];
     digitalWrite(ledPin, HIGH);
@@ -358,6 +413,7 @@ PhaseMode Buzzer::intro(char pressedKey) {
   unsigned long elapsed = millis() - introStart;
 
   // N'importe quelle touche, ou la fin de la chanson, lance le jeu choisi.
+  // (Vol n'a pas d'intro : il passe directement de CONFIGURATION à VOL_SPIN.)
   if (pressedKey || songFinished(elapsed)) {
     resetLights();
     bool isSimon = (gameMode == GAME_SIMON || gameMode == GAME_SIMON_REVERSE);
@@ -366,6 +422,53 @@ PhaseMode Buzzer::intro(char pressedKey) {
 
   ledChase(elapsed);   // chenillard festif pendant la musique
   return INTRO;
+}
+
+// === Vol : tirage au sort anime du 1er joueur ===
+// Chenillard limite aux buzzers presents + son du dossier 06, pendant
+// VOL_SPIN_MS ; le joueur tire au sort est determine des l'entree (pour ne
+// pas dependre du minutage de l'animation) et revele en fin d'animation par
+// setWaitingForBuzzer(), qui allume sa LED et affiche "Tour: <couleur>".
+void Buzzer::setVolSpin() {
+  volSpinStart = millis();
+  volTurn = randomEnabledBuzzer();
+  mp3.playSpin();
+  display.clear();
+  display.setText("  TIRAGE AU SORT", 0);
+  display.setText(" Qui va repondre ?", 1);
+}
+
+PhaseMode Buzzer::volSpin(char pressedKey) {
+  unsigned long elapsed = millis() - volSpinStart;
+
+  // N'importe quelle touche, ou la fin de l'animation, revele le joueur.
+  if (pressedKey || elapsed >= VOL_SPIN_MS) {
+    resetLights();
+    return WAITING_BUZZER;
+  }
+
+  ledChaseEnabled(elapsed);
+  return VOL_SPIN;
+}
+
+// Chenillard limite aux buzzers presents (contrairement a ledChase(), qui
+// parcourt les 4 sans distinction) : n'allume jamais un buzzer absent.
+void Buzzer::ledChaseEnabled(unsigned long elapsed) {
+  int pool[4];
+  int count = 0;
+  for (int i = 0; i < 4; i++) {
+    if (enabled[i]) {
+      pool[count++] = i;
+    }
+  }
+  if (count == 0) {
+    return;
+  }
+  int step = (elapsed / VOL_SPIN_STEP_MS) % count;
+  for (int i = 0; i < 4; i++) {
+    setLed(i, false);
+  }
+  setLed(pool[step], true);
 }
 
 void Buzzer::skipQuestion() {
@@ -378,6 +481,9 @@ void Buzzer::skipQuestion() {
   lastWasGood = false;
   secondaryRound = false;    // la prochaine question repart sur le chrono long
   questionNumber++;          // on passe à la question suivante
+  if (gameMode == GAME_VOL) {
+    volTurn = nextEnabledBuzzer(volTurn);   // au suivant, même sans réponse
+  }
 }
 
 void Buzzer::goodAnswer() {
@@ -388,6 +494,9 @@ void Buzzer::goodAnswer() {
   lastWasGood = true;
   secondaryRound = false;           // question suivante : chrono long
   questionNumber++;                 // question résolue -> on passe à la suivante
+  if (gameMode == GAME_VOL) {
+    volTurn = nextEnabledBuzzer(volTurn);   // au suivant, qu'il ait gagné ou volé
+  }
 
   mp3.playGoodAnswer();
   digitalWrite(ledPin, LOW);
@@ -405,12 +514,24 @@ void Buzzer::badAnswer() {
   }
   lastJudgedBuzzer = currentBuzzerId;
   lastWasGood = false;
+  bool wasFirstAttempt = !secondaryRound;
   secondaryRound = true;            // les autres reprennent sur le chrono court
 
   mp3.playBadAnswer();
 
   actives[currentBuzzerId] = false;
   digitalWrite(ledPin, LOW);
+
+  // Vol : le joueur désigné vient d'échouer (1er échec de la question) —
+  // on ouvre le vol aux autres présents. Un voleur qui échoue à son tour
+  // reste éliminé (juste la ligne au-dessus, sans repasser ici).
+  if (gameMode == GAME_VOL && wasFirstAttempt && currentBuzzerId == volTurn) {
+    for (int i = 0; i < 4; i++) {
+      if (i != volTurn) {
+        actives[i] = enabled[i];
+      }
+    }
+  }
 }
 
 PhaseMode Buzzer::correctLastDecision(PhaseMode fallback) {
@@ -468,6 +589,7 @@ const char* Buzzer::gameModeName(GameMode mode) {
     case GAME_PENALTY:        return "Penalite";
     case GAME_CHRONO_CLASSIC: return "Chrono classique";
     case GAME_CHRONO_PENALTY: return "Chrono penalite";
+    case GAME_VOL:            return "Vol";
     case GAME_SIMON:          return "Simon";
     case GAME_SIMON_REVERSE:  return "Simon inverse";
     default:                  return "Classique";
@@ -479,14 +601,18 @@ bool Buzzer::isPenaltyMode() {
 }
 
 bool Buzzer::isChronoMode() {
-  return gameMode == GAME_CHRONO_CLASSIC || gameMode == GAME_CHRONO_PENALTY;
+  return gameMode == GAME_CHRONO_CLASSIC || gameMode == GAME_CHRONO_PENALTY || gameMode == GAME_VOL;
 }
 
 // === Chrono de buzz ===
-// Deux jeux de durées : slot 0 pour Chrono classique, slot 1 pour Chrono
-// pénalité (les variantes sans chrono n'utilisent pas ces durées).
+// Trois jeux de durées : slot 0 pour Chrono classique, slot 1 pour Chrono
+// pénalité, slot 2 pour Vol (les autres jeux n'utilisent pas ces durées).
 static int buzzTimeSlot(GameMode mode) {
-  return (mode == GAME_CHRONO_PENALTY) ? 1 : 0;
+  switch (mode) {
+    case GAME_CHRONO_PENALTY: return 1;
+    case GAME_VOL:            return 2;
+    default:                  return 0;
+  }
 }
 
 // Les durées sont conservées en EEPROM, comme le volume. Une case jamais
@@ -508,6 +634,14 @@ void Buzzer::loadBuzzTimes() {
   if (stored >= 0 && stored <= BUZZ_TIME_MAX) {
     nextBuzzTime[1] = stored;
   }
+  stored = EEPROM.read(EEPROM_ADDR_VOL_FIRST);
+  if (stored >= 0 && stored <= BUZZ_TIME_MAX) {
+    firstBuzzTime[2] = stored;
+  }
+  stored = EEPROM.read(EEPROM_ADDR_VOL_NEXT);
+  if (stored >= 0 && stored <= BUZZ_TIME_MAX) {
+    nextBuzzTime[2] = stored;
+  }
 }
 
 void Buzzer::saveBuzzTimes() {
@@ -516,6 +650,8 @@ void Buzzer::saveBuzzTimes() {
   EEPROM.update(EEPROM_ADDR_CLASSIC_NEXT, (uint8_t)nextBuzzTime[0]);
   EEPROM.update(EEPROM_ADDR_PENALTY_FIRST, (uint8_t)firstBuzzTime[1]);
   EEPROM.update(EEPROM_ADDR_PENALTY_NEXT, (uint8_t)nextBuzzTime[1]);
+  EEPROM.update(EEPROM_ADDR_VOL_FIRST, (uint8_t)firstBuzzTime[2]);
+  EEPROM.update(EEPROM_ADDR_VOL_NEXT, (uint8_t)nextBuzzTime[2]);
 }
 
 int Buzzer::getFirstBuzzTime(GameMode mode) {
@@ -580,8 +716,27 @@ PhaseMode Buzzer::tickBuzzTimer() {
 
   if (remaining <= 0) {
     timerRunning = false;
-    timeUp = true;
     mp3.playBadAnswer();
+
+    // Vol, 1re réponse : le joueur désigné n'a pas répondu à temps -> on
+    // ouvre le vol aux autres (comme une mauvaise réponse), la question ne
+    // se ferme pas. Le droit de réplique (phase de vol, secondaryRound)
+    // suit la règle normale ci-dessous : personne ne vole à temps -> fermée.
+    if (gameMode == GAME_VOL && !secondaryRound) {
+      lastJudgedBuzzer = volTurn;
+      lastWasGood = false;
+      actives[volTurn] = false;
+      for (int i = 0; i < 4; i++) {
+        if (i != volTurn) {
+          actives[i] = enabled[i];
+        }
+      }
+      secondaryRound = true;
+      setWaitingForBuzzer();  // même mode : personne ne réarme l'écran pour nous
+      return WAITING_BUZZER;
+    }
+
+    timeUp = true;
     skipQuestion();            // personne ne marque, on passe à la suivante
     return SHOW_SCORES;
   }
@@ -613,10 +768,42 @@ void Buzzer::resetScores() {
   secondaryRound = false;
   timerRunning = false;
   timeUp = false;
+  lastDrawnQuestion = 0;   // banque : la 1re question sera tirée à l'attente
+  // volTurn (mode Vol) est tiré au sort par setVolSpin(), juste avant la
+  // 1re question — inutile de le faire ici aussi.
   // Nouvelle partie : tous les buzzers présents redeviennent actifs.
   for (int i = 0; i < 4; i++) {
     actives[i] = true;
   }
+}
+
+void Buzzer::setQuestionLimit(int n) {
+  questionLimit = (n < 0) ? 0 : n;
+}
+
+// Prochain buzzer présent après 'from' (boucle sur les 4) ; s'il n'y en a
+// qu'un seul, le renvoie tel quel (rien à faire tourner).
+int Buzzer::nextEnabledBuzzer(int from) {
+  for (int step = 1; step <= 4; step++) {
+    int i = (from + step) % 4;
+    if (enabled[i]) {
+      return i;
+    }
+  }
+  return from;
+}
+
+// Un buzzer présent tiré au hasard (tirage équitable, quel que soit le
+// nombre de buzzers présents).
+int Buzzer::randomEnabledBuzzer() {
+  int pool[4];
+  int count = 0;
+  for (int i = 0; i < 4; i++) {
+    if (enabled[i]) {
+      pool[count++] = i;
+    }
+  }
+  return (count > 0) ? pool[random(count)] : 0;
 }
 
 void Buzzer::displayScores(const char* title, const char* prompt) {
@@ -666,6 +853,10 @@ void Buzzer::setShowScores() {
 }
 
 PhaseMode Buzzer::showScores(char pressedKey) {
+  // Nombre de questions choisi au lancement atteint : la partie se termine
+  // d'elle-même au lieu d'enchaîner sur une question de plus.
+  bool limitReached = (questionLimit > 0 && questionNumber > questionLimit);
+
   if (pressedKey == 'C') {
     setLed(currentBuzzerId, false);
     return END_CONFIRM;              // demander confirmation avant de terminer
@@ -676,11 +867,11 @@ PhaseMode Buzzer::showScores(char pressedKey) {
   }
   if (pressedKey == '#') {
     setLed(currentBuzzerId, false);
-    return WAITING_BUZZER;           // passer tout de suite à la question suivante
+    return limitReached ? END_GAME : WAITING_BUZZER;
   }
   if (millis() - scoresShownAt >= SCORES_DISPLAY_MS) {
     setLed(currentBuzzerId, false);
-    return WAITING_BUZZER;           // au bout de 15 s, question suivante
+    return limitReached ? END_GAME : WAITING_BUZZER;
   }
 
   // Courte célébration : la LED du gagnant clignote ~1,5 s puis s'éteint.

@@ -6,7 +6,7 @@ void Configuration::init() {
   display.setText(String("= MENU =  ") + buzzer.gameModeName(), 0);
   display.setText("A: Config Buzzers", 1);
   display.setText("B: Sons au hasard", 2);
-  display.setText("C:Jeu D:Vol  #:Jouer", 3);
+  display.setText("C:Jeu D:Volu #:Jouer", 3);
 }
 
 // Le jeu Simon exige les 4 buzzers : on refuse le lancement et on renvoie
@@ -44,13 +44,19 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
     case '#': {
       GameMode mode = buzzer.getGameMode();
       bool isSimon = (mode == GAME_SIMON || mode == GAME_SIMON_REVERSE);
-      if (isSimon && !buzzer.hasFourPlayers()) {
-        showFourPlayersWarning();   // Simon (endroit ou envers) ne se joue qu'à 4
-        return CONFIGURATION;
+      if (isSimon) {
+        if (!buzzer.hasFourPlayers()) {
+          showFourPlayersWarning(); // Simon (endroit ou envers) ne se joue qu'à 4
+          return CONFIGURATION;
+        }
+        buzzer.resetScores();       // nouvelle partie : scores remis à zéro
+        mp3.playInit();             // son de lancement (dossier 01)
+        return INTRO;               // chenillard festif pendant la musique
       }
-      buzzer.resetScores();         // nouvelle partie : scores remis à zéro
-      mp3.playInit();               // son de lancement (dossier 01)
-      return INTRO;                 // chenillard festif pendant la musique
+      // Tous les quiz (Classique, Pénalité, Chronos, Vol) : on choisit
+      // d'abord les questions (catégories puis nombre) ; le lancement réel
+      // se fait à la fin de quizCount().
+      return QUIZ_CATS;
     }
   }
 
@@ -73,6 +79,7 @@ static const GameListItem GAME_LIST[] = {
   { "Penalite (-1)",    GLK_GAME,   GAME_PENALTY },
   { "Chrono classique", GLK_CHRONO, GAME_CHRONO_CLASSIC },
   { "Chrono penalite",  GLK_CHRONO, GAME_CHRONO_PENALTY },
+  { "Vol",              GLK_CHRONO, GAME_VOL },
   { "Simon (a 4)",      GLK_GAME,   GAME_SIMON },
   { "Simon inverse",    GLK_GAME,   GAME_SIMON_REVERSE },
 };
@@ -211,6 +218,131 @@ PhaseMode Configuration::chronoScreen(char pressedKey) {
       return CONFIGURATION;         // annule : retour au menu principal
   }
   return CHRONO;
+}
+
+// ============================================================
+// Lancement d'un quiz : choix des questions de la banque
+// ============================================================
+
+// Lignes de l'écran des catégories : 0 = Toutes, 1 = Aucune (questionnaire
+// perso), puis les catégories cochables.
+#define QCAT_ROWS (2 + QCAT_COUNT)
+#define QCAT_VISIBLE 3
+
+// Nombre de questions : valeur libre au pas de 1. 0 = Ouvert (l'animateur
+// termine avec C, comme avant).
+#define QCOUNT_MAX 99
+
+String Configuration::qcatLabel(int row) {
+  if (row == 0) {
+    return "Toutes";
+  }
+  if (row == 1) {
+    return "Aucune (perso)";
+  }
+  int c = row - 2;
+  String box = (qcatMask & (1 << c)) ? "[x] " : "[ ] ";
+  return box + QuestionBank::shared().categoryName(c);
+}
+
+void Configuration::showQuizCats() {
+  for (int rowOnScreen = 0; rowOnScreen < QCAT_VISIBLE; rowOnScreen++) {
+    int row = qcatTop + rowOnScreen;
+    if (row >= QCAT_ROWS) {
+      display.setText("", rowOnScreen);
+      continue;
+    }
+    String prefix = (row == qcatCursor) ? "> " : "  ";
+    display.setText(prefix + qcatLabel(row), rowOnScreen);
+  }
+  display.setText("2/8 5:cocher #:OK", 3);
+}
+
+void Configuration::setQuizCats() {
+  // Le masque persiste : on rouvre avec la sélection du match précédent.
+  display.clear();
+  showQuizCats();
+}
+
+PhaseMode Configuration::quizCats(char pressedKey) {
+  switch (pressedKey) {
+    case '2':
+      qcatCursor = (qcatCursor - 1 + QCAT_ROWS) % QCAT_ROWS;
+      break;
+    case '8':
+      qcatCursor = (qcatCursor + 1) % QCAT_ROWS;
+      break;
+    case '5':
+      if (qcatCursor >= 2) {
+        qcatMask ^= (1 << (qcatCursor - 2));   // coche/décoche la catégorie
+      }
+      break;
+    case '#':
+      if (qcatCursor == 0) {
+        qcatMask = (uint16_t)((1 << QCAT_COUNT) - 1);   // Toutes
+      } else if (qcatCursor == 1) {
+        qcatMask = 0;                                   // Aucune : perso
+      } else if (qcatMask == 0) {
+        qcatMask = (1 << (qcatCursor - 2));   // rien de coché : celle du curseur
+      }
+      return QUIZ_COUNT;
+    case '*':
+      return CONFIGURATION;       // annule le lancement
+    default:
+      return QUIZ_CATS;
+  }
+
+  // Recale la fenêtre visible sur le curseur puis redessine.
+  if (qcatCursor < qcatTop) {
+    qcatTop = qcatCursor;
+  } else if (qcatCursor > qcatTop + QCAT_VISIBLE - 1) {
+    qcatTop = qcatCursor - QCAT_VISIBLE + 1;
+  }
+  showQuizCats();
+  return QUIZ_CATS;
+}
+
+void Configuration::showQuizCount() {
+  display.setText(String("> ") + (qcountIdx == 0 ? String("Ouvert") : String(qcountIdx)), 1);
+}
+
+void Configuration::setQuizCount() {
+  display.clear();
+  display.setText("NB DE QUESTIONS", 0);
+  showQuizCount();
+  display.setText("Ouvert = C pour finir", 2);
+  display.setText("2=+  8=-  #:OK *:ret", 3);
+}
+
+PhaseMode Configuration::quizCount(char pressedKey) {
+  switch (pressedKey) {
+    case '2':
+      if (qcountIdx < QCOUNT_MAX) {
+        qcountIdx++;
+      }
+      showQuizCount();
+      break;
+    case '8':
+      if (qcountIdx > 0) {
+        qcountIdx--;
+      }
+      showQuizCount();
+      break;
+    case '#': {
+      // Lancement réel de la partie (remplace l'ancien '#' du menu).
+      buzzer.setQuestionLimit(qcountIdx);
+      QuestionBank::shared().setSelection(qcatMask);
+      buzzer.resetScores();
+      if (buzzer.getGameMode() == GAME_VOL) {
+        return VOL_SPIN;          // Vol : pas d'intro, tirage au sort direct
+      }
+      mp3.playInit();             // son de lancement (dossier 01)
+      return INTRO;
+    }
+    case '*':
+      return QUIZ_CATS;           // revenir au choix des catégories
+  }
+  return QUIZ_COUNT;
 }
 
 void Configuration::setShuffleBuzzers() {

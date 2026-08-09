@@ -14,13 +14,15 @@
 #define GOOD_FOLDER 3
 #define BAD_FOLDER 4
 #define WAITING_FOLDER 5
-#define FOLDER_COUNT 5
+#define SPIN_FOLDER 6
+#define FOLDER_COUNT 6
 
 #define INIT_FILE_COUNT 8
 #define BUZZER_FILE_COUNT 30
 #define GOOD_FILE_COUNT 17
 #define BAD_FILE_COUNT 26
 #define WAITING_FILE_COUNT 6
+#define SPIN_FILE_COUNT 1
 
 
 class Mp3 {
@@ -43,6 +45,7 @@ class Mp3 {
     void playGoodAnswer();
     void playBadAnswer();
     void playWaiting();     // son d'ambiance quand la réponse se fait attendre
+    void playSpin();        // son du tirage au sort (dossier 06, mode Vol)
     void shuffleBuzzers();
 
     // Volume (0..30)

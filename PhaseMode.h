@@ -17,6 +17,9 @@ enum PhaseMode {
     END_GAME,
     VOLUME,
     CHRONO,         // reglage des deux durees du chrono de buzz
+    QUIZ_CATS,      // lancement d'un quiz : choix des categories de questions
+    QUIZ_COUNT,     // lancement d'un quiz : nombre de questions a poser
+    VOL_SPIN,       // Vol : tirage au sort anime (chenillard + son) du 1er joueur
     SIMON_SHOW,     // Simon : demonstration de la sequence
     SIMON_PLAY,     // Simon : les joueurs repetent la sequence
     SIMON_OVER,     // Simon : fin de partie (niveau atteint)

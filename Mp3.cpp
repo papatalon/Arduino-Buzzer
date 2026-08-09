@@ -125,6 +125,8 @@ int Mp3::getFileCount(int folderId)
       return BAD_FILE_COUNT;
     case WAITING_FOLDER:
       return WAITING_FILE_COUNT;
+    case SPIN_FOLDER:
+      return SPIN_FILE_COUNT;
     default:
       return 0;
   }
@@ -315,6 +317,16 @@ void Mp3::playWaiting() {
   }
 
   mp3.playFolder(WAITING_FOLDER, fileNumber);
+}
+
+// Un seul fichier pour l'instant : pas de tirage, on rejoue toujours le même.
+void Mp3::playSpin() {
+  if (simulation) {
+    Serial.println(F("[SIM] Lecture dossier SPIN, fichier 1"));
+    return;
+  }
+
+  mp3.playFolder(SPIN_FOLDER, 1);
 }
 
 void Mp3::setVolume(int v) {

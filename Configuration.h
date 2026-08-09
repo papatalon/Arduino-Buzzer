@@ -5,6 +5,7 @@
 #include "PhaseMode.h"
 #include "Mp3.h"
 #include "Buzzer.h"
+#include "QuestionBank.h"
 
 class Configuration {
 public:
@@ -14,6 +15,10 @@ public:
     PhaseMode gameChoice(char pressedKey);
     void setChronoScreen();                  // reglage des durees du chrono
     PhaseMode chronoScreen(char pressedKey);
+    void setQuizCats();                      // lancement quiz : categories
+    PhaseMode quizCats(char pressedKey);
+    void setQuizCount();                     // lancement quiz : nb de questions
+    PhaseMode quizCount(char pressedKey);
     void setShuffleBuzzers();
     PhaseMode shuffleBuzzer(char pressedKey);
     void setBuzzerConfig();
@@ -55,6 +60,19 @@ private:
   GameMode chronoTargetMode = GAME_CLASSIC;
   int chronoCursor = 0;      // valeur (secondes) en cours de réglage
   void showChronoStep();
+
+  // Lancement d'un quiz : écran des catégories de questions (liste
+  // déroulante multi-sélection : "Toutes", "Aucune" = questionnaire perso,
+  // puis les catégories cochables), puis écran du nombre de questions
+  // ("Ouvert" = l'animateur arrête quand il veut, comme avant).
+  // qcatMask/qcountIdx persistent : mêmes choix proposés au prochain match.
+  int qcatCursor = 0;
+  int qcatTop = 0;
+  uint16_t qcatMask = 0;
+  int qcountIdx = 0;         // nombre de questions choisi (0 = Ouvert)
+  void showQuizCats();
+  String qcatLabel(int row);
+  void showQuizCount();
 
   void showConfigPrompt();
   void showConfigChoice();

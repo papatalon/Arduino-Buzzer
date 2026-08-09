@@ -29,7 +29,8 @@ L'application est une machine à états ([PhaseMode.h](PhaseMode.h)) pilotée da
   - `#` : démarrer la partie (`INTRO`) — **remet les scores à zéro** et joue un son de lancement (dossier `01`)
 - **GAME_CHOICE** — Liste déroulante des **jeux** (jusqu'à 3 lignes visibles ; la fenêtre défile automatiquement si la liste s'allonge — voir `GAME_LIST` dans [Configuration.cpp](Configuration.cpp)) : `2` fait monter le curseur `>` (haut du pavé numérique), `8` le fait descendre, `#` confirme la ligne en surbrillance, `*` revient sans rien changer. Confirmer applique le jeu ; les jeux à configurer (`Chrono classique`, `Chrono penalite`) enchaînent en plus sur leur écran de réglage (`CHRONO`) avant de revenir au menu.
 - **CHRONO** — Réglage des deux durées du chrono de buzz, en deux étapes (comme la liste des jeux : un seul réglage à la fois, curseur `>`) : `2`/`8` font monter/descendre la valeur affichée (comme sur l'écran Volume), `#` la valide et passe à la suivante (1re réponse, puis autres réponses) ; à la 2e validation, les durées sont sauvegardées et on revient à la liste des jeux. `*` interrompt le réglage.
-- **INTRO** — Lancement festif : un **chenillard** allume les LED l'une après l'autre (~4 s) pendant la musique de démarrage, puis passe à la 1re question (ou à la 1re séquence en Simon). N'importe quelle touche passe l'intro.
+- **QUIZ_CATS / QUIZ_COUNT** — Au lancement d'un quiz (`#` au menu, tous les jeux sauf Simon), deux écrans se suivent : le **choix des catégories** de la banque de questions (voir plus bas), puis le **nombre de questions** à poser. C'est la validation du second écran qui démarre réellement la partie.
+- **INTRO** — Lancement festif : un **chenillard** allume les LED l'une après l'autre (~4 s) pendant la musique de démarrage, puis passe à la 1re question (ou à la 1re séquence en Simon). N'importe quelle touche passe l'intro. Absent en **Vol**, qui va directement à son propre tirage au sort (`VOL_SPIN`, voir plus bas).
 - **VOLUME** — Réglage du volume du DFPlayer (0–30) : `2` = +, `8` = −, `#` = sauvegarder et retour. Appuyer sur un **buzzer** joue son son au volume courant (aperçu).
 - **BUZZER_CONFIG** — Assistant de configuration guidé (voir ci-dessous). `#` quitte à tout moment.
 - **SHUFFLE_BUZZER** — Réattribue aléatoirement les sons à tous les buzzers, **après confirmation** (`#` = confirmer, `*` = annuler) pour éviter d'écraser une configuration faite via l'assistant.
@@ -44,7 +45,7 @@ L'application est une machine à états ([PhaseMode.h](PhaseMode.h)) pilotée da
 - **SIMON_SHOW / SIMON_PLAY / SIMON_OVER** — Les trois états du jeu Simon (voir plus bas).
 - **RESET** — Une touche de reset (gérée par [AppKeypad](AppKeypad.h)) éteint les LEDs et revient au menu.
 
-Les sons sont organisés en 5 dossiers sur la carte SD (voir [Mp3.h](Mp3.h)) : init, buzzers, bonnes réponses, mauvaises réponses, ambiance. Le **nombre de fichiers par dossier est détecté automatiquement** au démarrage en interrogeant le DFPlayer (`readFileCountsInFolder`) ; les constantes `*_FILE_COUNT` de [Mp3.h](Mp3.h) ne servent que de **valeurs de repli** (simulation Wokwi, ou si la détection échoue). Les comptes sont affichés sur le port série au démarrage.
+Les sons sont organisés en 6 dossiers sur la carte SD (voir [Mp3.h](Mp3.h)) : init, buzzers, bonnes réponses, mauvaises réponses, ambiance, tirage au sort. Le **nombre de fichiers par dossier est détecté automatiquement** au démarrage en interrogeant le DFPlayer (`readFileCountsInFolder`) ; les constantes `*_FILE_COUNT` de [Mp3.h](Mp3.h) ne servent que de **valeurs de repli** (simulation Wokwi, ou si la détection échoue). Les comptes sont affichés sur le port série au démarrage.
 
 Au **démarrage**, l'initialisation du DFPlayer immobilise la carte ~3 s (le module a besoin de ce délai pour lire la carte SD). Pendant cette attente, un **égaliseur audio animé** occupe tout l'écran et les LED des buzzers défilent en chenillard ; le menu ne s'affiche qu'une fois le module prêt — donc dès qu'il apparaît, le clavier répond. Un **son d'intro** (dossier `01`) est ensuite joué.
 
@@ -64,12 +65,13 @@ La touche `C` du menu ouvre le **sous-menu des jeux**. Le jeu sélectionné s'af
 | **Pénalité** | Quiz : bonne réponse `+1`, mauvaise `−1` |
 | **Chrono classique** | Quiz classique + **chrono de buzz** (configuré à la sélection) |
 | **Chrono pénalité** | Quiz pénalité + **chrono de buzz** (configuré à la sélection) |
+| **Vol** | Question adressée à un joueur ; les autres peuvent la **voler** s'il rate — **chrono toujours actif** |
 | **Simon** | Jeu de mémoire **collaboratif**, obligatoirement à 4 |
 | **Simon inverse** | Comme Simon, mais la séquence se répète **à l'envers** |
 
-### Chrono de buzz (jeux « Chrono ... »)
+### Chrono de buzz (jeux « Chrono ... » et « Vol »)
 
-Le chrono limite le **temps pour buzzer**, pas le temps de répondre : une fois qu'un joueur a buzzé, c'est l'animateur qui décide quand la réponse est finie, sans compteur qui le contredise. Il n'existe que dans les jeux **Chrono classique** et **Chrono pénalité** ; sélectionner l'un d'eux ouvre directement son écran de réglage. Chacun a ses **deux durées indépendantes** (`2`/`8` pour monter/descendre la valeur, pas de 1 s, comme sur l'écran Volume) :
+Le chrono limite le **temps pour buzzer**, pas le temps de répondre : une fois qu'un joueur a buzzé, c'est l'animateur qui décide quand la réponse est finie, sans compteur qui le contredise. Il n'existe que dans les jeux **Chrono classique**, **Chrono pénalité** et **Vol** ; sélectionner l'un d'eux ouvre directement son écran de réglage. Chacun a ses **deux durées indépendantes** (`2`/`8` pour monter/descendre la valeur, pas de 1 s, comme sur l'écran Volume) :
 
 | Durée | S'applique | Départ | Défaut |
 |-------|------------|--------|--------|
@@ -80,9 +82,36 @@ Le top est manuel sur la première réponse parce que la lecture de la question 
 
 Pendant le décompte, l'écran affiche les secondes restantes et une **barre qui se vide**, et sur les **3 dernières secondes** les LED des buzzers encore en lice **clignotent**. À l'expiration, un son d'échec est joué et la question est close sans que personne ne marque : l'écran des scores s'affiche avec le titre « TEMPS ECOULE ! ».
 
-Le pas de réglage est de 1 s (jusqu'à 60 s). Régler une durée sur `off` désactive le chrono correspondant — on retrouve alors le comportement sans limite de temps. Les quatre durées (2 par mode chrono) sont **sauvegardées en EEPROM** (adresses 1 à 4 ; l'adresse 0 est le volume) et rechargées au démarrage. Le chrono ne s'applique **pas** au bris d'égalité, ni aux jeux Simon qui ont leur propre délai.
+Le pas de réglage est de 1 s (jusqu'à 60 s). Régler une durée sur `off` désactive le chrono correspondant — on retrouve alors le comportement sans limite de temps. Les six durées (2 par mode chrono) sont **sauvegardées en EEPROM** (adresses 1 à 6 ; l'adresse 0 est le volume) et rechargées au démarrage. Le chrono ne s'applique **pas** au bris d'égalité, ni aux jeux Simon qui ont leur propre délai.
 
-### Score des modes quiz (Classique / Pénalité / Chrono classique / Chrono pénalité)
+### Vol — question adressée, avec possibilité de voler
+
+Contrairement aux autres quiz (où le premier à buzzer répond), en **Vol** chaque question est adressée à **un seul joueur à la fois** : sa LED s'allume, lui seul peut buzzer (`Tour: <couleur>` à l'écran). Le tour tourne ensuite dans l'ordre des couleurs, une place à chaque question.
+
+Le **premier joueur** est désigné par un **tirage au sort animé** (`VOL_SPIN`) : un chenillard parcourt les buzzers présents (jamais un absent) pendant que le son du tirage (dossier `06`, fichier `1`) joue, puis s'arrête sur le joueur tiré au sort — sa LED reste allumée et l'écran d'attente qui suit affiche aussitôt `Tour: <couleur>`, pour que l'animateur voie clairement qui doit répondre. N'importe quelle touche passe l'animation. **Vol n'a pas d'intro musicale** : `#` au menu enchaîne directement sur ce tirage au sort (l'intro + le tirage auraient fait deux animations à la suite, trop long).
+
+- S'il **répond juste** (`A`) → il marque le point, et le tour passe au joueur suivant.
+- S'il **répond faux** (`D`) **ou n'appuie pas à temps** (chrono écoulé) → il est écarté pour cette question, et la question **s'ouvre aussitôt aux autres présents** (« droit de réplique ») : le chrono court repart tout seul, et le premier d'entre eux à buzzer tente de la « voler ». Comme dans un quiz classique, une nouvelle mauvaise réponse écarte le voleur à son tour et laisse la main aux suivants.
+- Si **personne ne vole à temps** pendant le droit de réplique (chrono écoulé) → là, la question se ferme : personne ne marque, comme en Classique/Pénalité.
+
+Dans tous les cas, le tour passe au joueur présent suivant à la question d'après.
+
+Le joueur désigné doit appuyer sur son propre buzzer pour répondre (comme dans les autres modes) — c'est cet appui qui arrête le chrono. Le chrono de Vol se règle comme celui des jeux Chrono (`2`/`8`, `D` = top sur la 1re réponse, automatique ensuite).
+
+### Banque de questions intégrée
+
+Une **banque de ~1800 questions-réponses** (10 catégories de ~180 : Culture generale, Histoire, Geographie, Sciences et nature, Sports, Musique, Cinema et tele, Quebec, Bouffe et cuisine, Mots et langue) est stockée en Flash — aucune SRAM consommée. La banque dépasse la barrière des 64 Ko adressables par les pointeurs `PROGMEM` classiques : elle est placée en **fin de Flash** (section `.fini1`) et lue en **adressage far 32 bits** (`pgm_read_byte_far`), ce qui laisse les petites chaînes du programme (`F()`) sous les 64 Ko. Les questions vivent dans [Questions.cpp](Questions.cpp) au format `"Question|Reponse\n"` : pour en ajouter, il suffit d'insérer des lignes (sans accents, sans `|`), le comptage est automatique au démarrage — jusqu'à **200 par catégorie** (limite de l'historique EEPROM, soit ~20 places libres par catégorie).
+
+Au lancement d'un quiz (`#` au menu — tous les jeux sauf Simon), deux écrans se présentent :
+
+1. **Catégories** (`QUIZ_CATS`) — liste déroulante : `Toutes`, `Aucune (perso)` — pour jouer avec **son propre questionnaire** papier, comme avant —, puis les 10 catégories cochables. `2`/`8` déplacent le curseur, `5` coche/décoche `[x]`, `#` confirme (sur `Toutes`/`Aucune`, `#` applique directement ; sur une catégorie sans rien de coché, `#` sélectionne celle-là seule), `*` annule le lancement. La sélection est **mémorisée** d'une partie à l'autre.
+2. **Nombre de questions** (`QUIZ_COUNT`) — `Ouvert` (l'animateur termine avec `C`, comportement historique) ou une valeur de 1 à 99 (`2` = +1, `8` = −1). Quand le compte est atteint, la partie se termine d'elle-même sur l'écran des scores finaux. La limite s'applique aussi avec `Aucune` (questionnaire perso).
+
+En jeu avec la banque : la **question s'affiche** sur l'écran d'attente (elle défile si elle dépasse 20 colonnes) avec sa catégorie en titre (`Q5 - Sports`), et la **réponse s'affiche pour l'animateur** sur l'écran de jugement (`Rep: ...`) — c'est lui qui lit la question à voix haute et juge `A`/`D`.
+
+**Anti-répétition** : chaque question posée est marquée dans un **bitmap en EEPROM** (persistant entre les soirées — adresses 16 à 265, 1 bit par question). Une question déjà posée ne ressort jamais, même des semaines plus tard, jusqu'à épuisement des catégories sélectionnées : l'historique de ces catégories est alors remis à zéro automatiquement et le tirage repart.
+
+### Score des modes quiz (Classique / Pénalité / Chrono classique / Chrono pénalité / Vol)
 
 Chaque buzzer (couleur) a un score. Les scores sont remis à zéro au lancement d'une partie (`#`). Entre chaque question (après une bonne réponse **ou une question passée**), l'écran des scores s'affiche 15 secondes (ou `#` pour enchaîner). En fin de partie (`C`), l'écran affiche les scores finaux et la couleur gagnante avec un son de victoire (en cas d'égalité, « EGALITE » est affiché sans son).
 
@@ -142,6 +171,8 @@ La configuration est **optionnelle** : si on lance directement la partie (`#`), 
 | [Configuration.cpp](Configuration.cpp) / [.h](Configuration.h) | Menus et écrans de configuration (dont le sous-menu des jeux) |
 | [Buzzer.cpp](Buzzer.cpp) / [.h](Buzzer.h) | Gestion des buzzers, LEDs et logique des jeux quiz (singleton) |
 | [Simon.cpp](Simon.cpp) / [.h](Simon.h) | Jeu collaboratif de mémoire « Simon » (à 4) |
+| [Questions.cpp](Questions.cpp) / [.h](Questions.h) | Banque de questions-réponses par catégorie (PROGMEM) |
+| [QuestionBank.cpp](QuestionBank.cpp) / [.h](QuestionBank.h) | Tirage sans répétition (historique en EEPROM), sélection de catégories |
 | [AppKeypad.h](AppKeypad.h) | Lecture du clavier matriciel et détection du reset (singleton) |
 | [LcdDisplay.cpp](LcdDisplay.cpp) / [.h](LcdDisplay.h) | Affichage LCD 20×4 (textes calibrés sur 20 colonnes ; défilement en secours), gestion des accents et égaliseur graphique (caractères personnalisés) |
 | [Mp3.cpp](Mp3.cpp) / [.h](Mp3.h) | Pilotage du DFPlayer Mini + bascule simulation (singleton) |
@@ -149,7 +180,7 @@ La configuration est **optionnelle** : si on lance directement la partie (`#`), 
 
 ## Son : matériel réel et simulation
 
-Les sons sont organisés sur la carte SD du DFPlayer Mini en **5 dossiers** : `01` (init), `02` (buzzers), `03` (bonnes réponses), `04` (mauvaises réponses), `05` (ambiance, lancé manuellement par `#` pendant une question).
+Les sons sont organisés sur la carte SD du DFPlayer Mini en **6 dossiers** : `01` (init), `02` (buzzers), `03` (bonnes réponses), `04` (mauvaises réponses), `05` (ambiance, lancé manuellement par `#` pendant une question), `06` (tirage au sort du mode Vol, un seul fichier).
 
 Le module [Mp3](Mp3.cpp) **détecte automatiquement** la présence du DFPlayer au démarrage (`mp3.begin`) :
 

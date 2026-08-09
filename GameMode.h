@@ -12,6 +12,7 @@ enum GameMode {
     GAME_PENALTY,        // quiz : bonne reponse +1, mauvaise -1
     GAME_CHRONO_CLASSIC, // quiz classique + chrono de buzz (duree configuree)
     GAME_CHRONO_PENALTY, // quiz penalite + chrono de buzz (duree configuree)
+    GAME_VOL,            // question adressee a un joueur ; les autres peuvent la voler s'il rate (chrono toujours actif)
     GAME_SIMON,          // jeu collaboratif de memoire (obligatoirement a 4)
     GAME_SIMON_REVERSE,  // comme GAME_SIMON, mais la sequence se repete a l'envers
     GAME_MODE_COUNT      // sentinelle : nombre de jeux (doit rester en dernier)

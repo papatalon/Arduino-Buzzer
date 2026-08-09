@@ -20,6 +20,8 @@
 #define BUZZ_TIME_MAX 60         // duree maxi reglable du chrono de buzz (secondes)
 #define BUZZ_WARN_MS 3000        // les LED clignotent sur les dernieres secondes
 #define BUZZ_WARN_BLINK_MS 200   // periode du clignotement de fin de chrono
+#define VOL_SPIN_MS 2500         // duree du tirage au sort anime (mode Vol)
+#define VOL_SPIN_STEP_MS 120     // vitesse du chenillard du tirage
 
 class Buzzer {
 public:
@@ -44,6 +46,11 @@ public:
     // Mode cache de test cablage (entree *1) : LED + boutons.
     void setLedTest();                       // entree : allume les 4 LED
     PhaseMode ledTest(char pressedKey);      // touche = tout on/off ; bouton = sa LED
+
+    // Vol : tirage au sort anime du 1er joueur (chenillard + son), avant la
+    // 1re question.
+    void setVolSpin();
+    PhaseMode volSpin(char pressedKey);
 
     void setWaitingForBuzzer();
     PhaseMode waitingBuzzerIsPressed(PhaseMode currentMode);
@@ -86,6 +93,10 @@ public:
     PhaseMode intro(char pressedKey);
 
     void skipQuestion();                     // passer la question (personne ne marque)
+
+    // Nombre de questions de la partie (0 = ouvert : l'animateur termine
+    // avec C). Choisi sur l'écran QUIZ_COUNT au lancement.
+    void setQuestionLimit(int n);
 
     void setShowScores();                    // écran scores entre les questions
     PhaseMode showScores(char pressedKey);
@@ -137,13 +148,30 @@ private:
 
   int questionNumber = 1;   // numéro de la question en cours
 
-  // Chrono de buzz, indexé par mode (GAME_CLASSIC=0, GAME_PENALTY=1 ; Simon
-  // n'utilise pas ce chrono). `timerLimit` est la durée retenue pour l'écran
-  // d'attente courant (1re réponse ou suivante) ; le chrono n'est armé que si
-  // elle est > 0. `secondaryRound` distingue les deux cas : vrai dès qu'une
-  // mauvaise réponse a été donnée sur la question en cours.
-  int firstBuzzTime[2] = { 10, 10 };
-  int nextBuzzTime[2] = { 5, 5 };
+  // Banque de questions : limite de la partie (0 = ouvert) et n° de la
+  // dernière question tirée (pour ne tirer qu'une question par n°, pas à
+  // chaque retour sur l'écran d'attente pendant la même question).
+  int questionLimit = 0;
+  int lastDrawnQuestion = 0;
+
+  // Mode Vol : la question est adressée à volTurn (LED allumée, seul buzzer
+  // armé) ; s'il rate, les autres présents peuvent la voler. Le 1er joueur
+  // est tiré au sort ; ensuite le tour passe au buzzer présent suivant à
+  // chaque question résolue.
+  int volTurn = 0;
+  unsigned long volSpinStart = 0;     // horodatage du début du tirage au sort
+  int nextEnabledBuzzer(int from);   // prochain buzzer présent après 'from'
+  int randomEnabledBuzzer();         // un buzzer présent tiré au hasard
+  void ledChaseEnabled(unsigned long elapsed);  // chenillard limité aux buzzers présents
+
+  // Chrono de buzz, indexé par mode (0 = Chrono classique, 1 = Chrono
+  // pénalité, 2 = Vol ; Classique/Pénalité/Simon n'utilisent pas ce chrono).
+  // `timerLimit` est la durée retenue pour l'écran d'attente courant (1re
+  // réponse ou suivante) ; le chrono n'est armé que si elle est > 0.
+  // `secondaryRound` distingue les deux cas : vrai dès qu'une mauvaise
+  // réponse a été donnée sur la question en cours.
+  int firstBuzzTime[3] = { 10, 10, 10 };
+  int nextBuzzTime[3] = { 5, 5, 5 };
   bool secondaryRound = false;
   int timerLimit = 0;               // durée du chrono de l'écran courant (s)
   bool timerRunning = false;

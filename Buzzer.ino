@@ -7,6 +7,7 @@
 #include "Buzzer.h"
 #include "Simon.h"
 #include "Mp3.h"
+#include "QuestionBank.h"
 
 PhaseMode currentMode = BOOT;
 PhaseMode previousMode = BOOT;
@@ -40,6 +41,7 @@ void setup() {
   }
 
   buzzer.init();
+  QuestionBank::shared().init();   // compte les questions de chaque categorie
 
   // 1. Message rigolo + points animés pendant l'init (bloquante) du DFPlayer.
   buzzer.showBootScreen();
@@ -130,6 +132,15 @@ PhaseMode getCurrentMode() {
     case CHRONO:
       mode = configuration.chronoScreen(pressedKey);
       break;
+    case QUIZ_CATS:
+      mode = configuration.quizCats(pressedKey);
+      break;
+    case QUIZ_COUNT:
+      mode = configuration.quizCount(pressedKey);
+      break;
+    case VOL_SPIN:
+      mode = buzzer.volSpin(pressedKey);
+      break;
     case SIMON_SHOW:
       mode = simon.showSequence(pressedKey);
       break;
@@ -196,6 +207,15 @@ void updateMode() {
       break;
     case CHRONO:
       configuration.setChronoScreen();
+      break;
+    case QUIZ_CATS:
+      configuration.setQuizCats();
+      break;
+    case QUIZ_COUNT:
+      configuration.setQuizCount();
+      break;
+    case VOL_SPIN:
+      buzzer.setVolSpin();
       break;
     case SIMON_SHOW:
       simon.setShowSequence();
