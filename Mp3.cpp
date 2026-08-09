@@ -201,6 +201,19 @@ void Mp3::resetConfig() {
   }
 }
 
+bool Mp3::isBusy() {
+  // BUSY est LOW pendant la lecture, HIGH au repos. Sans module (simulation),
+  // la broche n'est pas pilotée : on ne peut pas savoir -> on renvoie faux.
+  if (simulation) {
+    return false;
+  }
+  return digitalRead(BUSY_PIN) == LOW;
+}
+
+bool Mp3::isSimulation() {
+  return simulation;
+}
+
 void Mp3::playInit() {
   int arraySize = mp3Arrays[INIT_FOLDER - 1].size;
   int fileNumber = random(arraySize) + 1;   // fichiers DFPlayer numérotés à partir de 1

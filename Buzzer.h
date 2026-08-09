@@ -8,8 +8,10 @@
 
 #define SCORES_DISPLAY_MS 15000  // durée d'affichage des scores entre les questions
 #define WIN_BLINK_MS 1500        // durée du clignotement de la LED du gagnant
-#define INTRO_MS 4000            // durée du chenillard d'intro au lancement
+#define INTRO_MS 4000            // durée du chenillard d'intro en simulation (pas de BUSY)
 #define INTRO_STEP_MS 120        // vitesse du chenillard (ms par LED)
+#define INTRO_START_MS 500       // délai avant de tester BUSY (démarrage du DFPlayer)
+#define INTRO_MAX_MS 30000       // durée maxi de sécurité du chenillard d'intro
 #define BUTTON_DEBOUNCE_MS 200   // anti-rebond commun a tous les boutons de buzzer
 
 class Buzzer {

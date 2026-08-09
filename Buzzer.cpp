@@ -214,8 +214,22 @@ void Buzzer::setIntro() {
 PhaseMode Buzzer::intro(char pressedKey) {
   unsigned long elapsed = millis() - introStart;
 
-  // N'importe quelle touche, ou la fin du minuteur, lance la 1re question.
-  if (pressedKey || elapsed >= INTRO_MS) {
+  // Le chenillard festif accompagne la chanson de lancement : il tourne tant
+  // que le DFPlayer joue (broche BUSY à LOW), donc pour toute la durée de la
+  // chanson. INTRO_START_MS laisse au module le temps de démarrer la lecture
+  // (BUSY passe à LOW) avant de tester la fin ; INTRO_MAX_MS borne la durée
+  // par sécurité. En simulation (pas de BUSY), on garde le minuteur fixe.
+  bool finished;
+  if (mp3.isSimulation()) {
+    finished = elapsed >= INTRO_MS;
+  } else if (elapsed < INTRO_START_MS) {
+    finished = false;                          // on laisse la lecture démarrer
+  } else {
+    finished = !mp3.isBusy() || elapsed >= INTRO_MAX_MS;
+  }
+
+  // N'importe quelle touche, ou la fin de la chanson, lance la 1re question.
+  if (pressedKey || finished) {
     resetLights();
     return WAITING_BUZZER;
   }

@@ -28,6 +28,12 @@ class Mp3 {
 
     void init(void);
     void playInit();
+
+    // Vrai tant qu'une chanson est en cours de lecture (broche BUSY LOW).
+    // Toujours faux en simulation (aucun module -> BUSY indisponible).
+    bool isBusy();
+    bool isSimulation();
+
     void playBuzzer(int buzzerId);
     void playGoodAnswer();
     void playBadAnswer();
