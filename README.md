@@ -31,19 +31,25 @@ L'application est une machine à états ([PhaseMode.h](PhaseMode.h)) pilotée da
 - **VOLUME** — Réglage du volume du DFPlayer (0–30) : `2` = +, `8` = −, `#` = sauvegarder et retour. Appuyer sur un **buzzer** joue son son au volume courant (aperçu).
 - **BUZZER_CONFIG** — Assistant de configuration guidé (voir ci-dessous). `#` quitte à tout moment.
 - **SHUFFLE_BUZZER** — Réattribue aléatoirement les sons à tous les buzzers, **après confirmation** (`#` = confirmer, `*` = annuler) pour éviter d'écraser une configuration faite via l'assistant.
-- **WAITING_BUZZER** — En attente (le n° de **question** est affiché) : le premier buzzer *présent et actif* pressé allume sa LED, joue son son et passe en `BUZZER_PRESSED`. La détection est sur **front d'appui** (un bouton maintenu ne se redéclenche pas tout seul). `C` demande à terminer la partie, `B` corrige la dernière décision, `0` **passe la question** (personne ne marque, question suivante).
+- **WAITING_BUZZER** — En attente (le n° de **question** est affiché) : le premier buzzer *présent et actif* pressé allume sa LED, joue son son et passe en `BUZZER_PRESSED`. La détection est sur **front d'appui** (un bouton maintenu ne se redéclenche pas tout seul). `C` demande à terminer la partie, `B` corrige la dernière décision, `0` **passe la question** (personne ne marque), `#` lance un **son d'ambiance** (voir ci-dessous).
 - **BUZZER_PRESSED** — L'animateur tranche :
   - `A` : bonne réponse → **+1 point**, son de bonne réponse, puis écran des scores (`SHOW_SCORES`) avec clignotement bref de la LED du gagnant.
   - `D` : mauvaise réponse → son d'échec, le buzzer fautif est désactivé pour ce tour (**−1 point en mode Pénalité**), on reste sur la même question.
-  - `0` : **passer la question** (personne ne marque, on passe à la suivante).
-- **SHOW_SCORES** — Affiche les scores entre les questions (2 colonnes + titre), pendant 15 s ou jusqu'à `#`. `C` demande à terminer la partie, `B` corrige la dernière décision.
+  - `0` : **passer la question** (personne ne marque, on passe à l'écran des scores).
+- **SHOW_SCORES** — Affiche les scores entre les questions (2 colonnes + titre), pendant 15 s ou jusqu'à `#`. `C` demande à terminer la partie, `B` corrige la dernière décision (proposé seulement s'il y a une décision à corriger — pas après une question passée).
 - **END_CONFIRM** — Confirmation avant de terminer la partie (`#` = oui, `*` = non / continuer).
 - **END_GAME** — Scores finaux. Si un gagnant unique : couleur gagnante + son de victoire, `#` revient au menu. Si **égalité** au sommet : `#` lance un **bris d'égalité**, `*` accepte l'égalité (retour au menu).
 - **RESET** — Une touche de reset (gérée par [AppKeypad](AppKeypad.h)) éteint les LEDs et revient au menu.
 
-Les sons sont organisés en 4 dossiers sur la carte SD (voir [Mp3.h](Mp3.h)) : init, buzzers, bonnes réponses, mauvaises réponses. Le **nombre de fichiers par dossier est détecté automatiquement** au démarrage en interrogeant le DFPlayer (`readFileCountsInFolder`) ; les constantes `*_FILE_COUNT` de [Mp3.h](Mp3.h) ne servent que de **valeurs de repli** (simulation Wokwi, ou si la détection échoue). Les comptes sont affichés sur le port série au démarrage.
+Les sons sont organisés en 5 dossiers sur la carte SD (voir [Mp3.h](Mp3.h)) : init, buzzers, bonnes réponses, mauvaises réponses, ambiance. Le **nombre de fichiers par dossier est détecté automatiquement** au démarrage en interrogeant le DFPlayer (`readFileCountsInFolder`) ; les constantes `*_FILE_COUNT` de [Mp3.h](Mp3.h) ne servent que de **valeurs de repli** (simulation Wokwi, ou si la détection échoue). Les comptes sont affichés sur le port série au démarrage.
 
-Au démarrage, un **son d'intro** (dossier `01`) est joué. Le **volume** (0–30) se règle depuis le menu (`D`) et est **sauvegardé en EEPROM** : il est conservé après extinction et rechargé au démarrage. Pour les sons de bonne/mauvaise réponse, le même fichier n'est jamais **rejoué deux fois de suite** (anti-répétition).
+Au **démarrage**, l'initialisation du DFPlayer immobilise la carte ~3 s (le module a besoin de ce délai pour lire la carte SD). Pendant cette attente, un **égaliseur audio animé** occupe tout l'écran et les LED des buzzers défilent en chenillard ; le menu ne s'affiche qu'une fois le module prêt — donc dès qu'il apparaît, le clavier répond. Un **son d'intro** (dossier `01`) est ensuite joué.
+
+Le **volume** (0–30) se règle depuis le menu (`D`) et est **sauvegardé en EEPROM** : il est conservé après extinction et rechargé au démarrage. Pour les sons de bonne/mauvaise réponse et d'ambiance, le même fichier n'est jamais **rejoué deux fois de suite** (anti-répétition).
+
+### Son d'ambiance (`#` pendant une question)
+
+Quand la réponse se fait attendre, l'animateur peut appuyer sur `#` depuis l'écran d'attente pour lancer un **son d'ambiance** tiré au hasard du dossier `05` (jingle d'attente, tic-tac…). La question **continue** : les buzzers restent armés, et un joueur qui buzze **interrompt** le son d'ambiance pour jouer le sien. La touche peut être pressée plusieurs fois, et fonctionne aussi pendant un bris d'égalité.
 
 ### Score et modes de jeu
 
@@ -52,7 +58,7 @@ Chaque buzzer (couleur) a un score. Deux modes, choisis au menu via `C` :
 - **Classique** : bonne réponse `+1`, mauvaise réponse sans effet sur le score.
 - **Pénalité** : bonne réponse `+1`, mauvaise réponse `−1` (le score peut devenir négatif).
 
-Les scores sont remis à zéro au lancement d'une partie (`#`). Entre chaque question (après une bonne réponse), l'écran des scores s'affiche 15 secondes (ou `#` pour enchaîner). En fin de partie (`C`), l'écran affiche les scores finaux et la couleur gagnante avec un son de victoire (en cas d'égalité, « EGALITE » est affiché sans son).
+Les scores sont remis à zéro au lancement d'une partie (`#`). Entre chaque question (après une bonne réponse **ou une question passée**), l'écran des scores s'affiche 15 secondes (ou `#` pour enchaîner). En fin de partie (`C`), l'écran affiche les scores finaux et la couleur gagnante avec un son de victoire (en cas d'égalité, « EGALITE » est affiché sans son).
 
 Seuls les **buzzers présents** (déclarés via l'assistant) apparaissent sur les écrans de scores ; les buzzers absents sont masqués, et le gagnant est calculé uniquement parmi les présents.
 
@@ -78,7 +84,7 @@ L'assistant fait le tour des 4 buzzers (Rouge → Bleu → Jaune → Vert). Pour
    - **`*`** → buzzer déclaré *absent* (exclu du pool).
    - **`#`** → quitte l'assistant.
 2. Après l'appui :
-   - **`B`** → essaie un autre son (parcourt les sons disponibles, en sautant ceux déjà verrouillés ; peut « voler » le son d'un buzzer pas encore configuré).
+   - **`B`** → **son suivant**, **`C`** → **son précédent** (parcourt les sons disponibles dans un sens ou dans l'autre, en sautant ceux déjà verrouillés ; peut « voler » le son d'un buzzer pas encore configuré). Le son est joué à chaque changement.
    - **`A`** → valide et **verrouille** le son de ce buzzer.
    - **`*`** → buzzer déclaré absent.
 
@@ -93,13 +99,13 @@ La configuration est **optionnelle** : si on lance directement la partie (`#`), 
 | [Configuration.cpp](Configuration.cpp) / [.h](Configuration.h) | Menus et écrans de configuration |
 | [Buzzer.cpp](Buzzer.cpp) / [.h](Buzzer.h) | Gestion des buzzers, LEDs et logique de jeu (singleton) |
 | [AppKeypad.h](AppKeypad.h) | Lecture du clavier matriciel et détection du reset (singleton) |
-| [LcdDisplay.cpp](LcdDisplay.cpp) / [.h](LcdDisplay.h) | Affichage LCD 20×4 (textes calibrés sur 20 colonnes ; défilement en secours) et gestion des accents |
+| [LcdDisplay.cpp](LcdDisplay.cpp) / [.h](LcdDisplay.h) | Affichage LCD 20×4 (textes calibrés sur 20 colonnes ; défilement en secours), gestion des accents et égaliseur graphique (caractères personnalisés) |
 | [Mp3.cpp](Mp3.cpp) / [.h](Mp3.h) | Pilotage du DFPlayer Mini + bascule simulation (singleton) |
 | [OledDisplay.cpp](OledDisplay.cpp) / [.h](OledDisplay.h) | Variante d'affichage OLED (non utilisée actuellement) |
 
 ## Son : matériel réel et simulation
 
-Les sons sont organisés sur la carte SD du DFPlayer Mini en **4 dossiers** : `01` (init), `02` (buzzers), `03` (bonnes réponses), `04` (mauvaises réponses).
+Les sons sont organisés sur la carte SD du DFPlayer Mini en **5 dossiers** : `01` (init), `02` (buzzers), `03` (bonnes réponses), `04` (mauvaises réponses), `05` (ambiance, lancé manuellement par `#` pendant une question).
 
 Le module [Mp3](Mp3.cpp) **détecte automatiquement** la présence du DFPlayer au démarrage (`mp3.begin`) :
 
