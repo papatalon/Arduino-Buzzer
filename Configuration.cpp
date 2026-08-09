@@ -1,11 +1,23 @@
 #include "Configuration.h"
 
 void Configuration::init() {
+  warningShown = false;
   display.clear();
-  display.setText(String("= MENU =  ") + (buzzer.isPenaltyMode() ? "Penalite" : "Classique"), 0);
+  display.setText(String("= MENU =  ") + buzzer.gameModeName(), 0);
   display.setText("A: Config Buzzers", 1);
   display.setText("B: Sons au hasard", 2);
-  display.setText("C:Mode D:Vol #:Jouer", 3);
+  display.setText("C:Jeu D:Vol  #:Jouer", 3);
+}
+
+// Le jeu Simon exige les 4 buzzers : on refuse le lancement et on renvoie
+// vers l'assistant de configuration.
+void Configuration::showFourPlayersWarning() {
+  warningShown = true;
+  display.clear();
+  display.setText("  SIMON : 4 JOUEURS", 0);
+  display.setText("Buzzers manquants", 1);
+  display.setText("A: config buzzers", 2);
+  display.setText("Autre touche: menu", 3);
 }
 
 PhaseMode Configuration::manageConfiguration(char pressedKey) {
@@ -14,24 +26,191 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
     return CONFIGURATION;
   }
 
+  // L'avertissement occupe l'écran : la touche remet d'abord le menu en place,
+  // puis elle est traitée normalement.
+  if (warningShown) {
+    init();
+  }
+
   switch(pressedKey) {
     case 'A':
       return BUZZER_CONFIG;
     case 'B':
       return SHUFFLE_BUZZER;
     case 'C':
-      buzzer.togglePenaltyMode();   // bascule Classique <-> Pénalité
-      init();                       // redessine le menu avec le nouveau mode
-      return CONFIGURATION;
+      return GAME_CHOICE;           // sous-menu : choix du jeu
     case 'D':
       return VOLUME;                // écran de réglage du volume
-    case '#':
+    case '#': {
+      GameMode mode = buzzer.getGameMode();
+      bool isSimon = (mode == GAME_SIMON || mode == GAME_SIMON_REVERSE);
+      if (isSimon && !buzzer.hasFourPlayers()) {
+        showFourPlayersWarning();   // Simon (endroit ou envers) ne se joue qu'à 4
+        return CONFIGURATION;
+      }
       buzzer.resetScores();         // nouvelle partie : scores remis à zéro
       mp3.playInit();               // son de lancement (dossier 01)
       return INTRO;                 // chenillard festif pendant la musique
+    }
   }
 
   return CONFIGURATION;
+}
+
+// Liste déroulante du sous-menu "C" : mélange des jeux (choisis directement)
+// et des réglages (qui ouvrent un écran dédié, ex. le chrono d'un mode donné).
+// Ajouter une ligne : l'insérer ici, à la position voulue — l'affichage et le
+// défilement s'adaptent tout seuls (rien d'autre à changer).
+enum GameListKind { GLK_GAME, GLK_CHRONO };
+struct GameListItem {
+  const char* label;
+  GameListKind kind;
+  GameMode target;   // GLK_GAME : jeu à activer ; GLK_CHRONO : mode dont on règle le chrono
+};
+
+static const GameListItem GAME_LIST[] = {
+  { "Classique",        GLK_GAME,   GAME_CLASSIC },
+  { "Penalite (-1)",    GLK_GAME,   GAME_PENALTY },
+  { "Chrono classique", GLK_CHRONO, GAME_CHRONO_CLASSIC },
+  { "Chrono penalite",  GLK_CHRONO, GAME_CHRONO_PENALTY },
+  { "Simon (a 4)",      GLK_GAME,   GAME_SIMON },
+  { "Simon inverse",    GLK_GAME,   GAME_SIMON_REVERSE },
+};
+#define GAME_LIST_COUNT (sizeof(GAME_LIST) / sizeof(GAME_LIST[0]))
+
+// Lignes 0-2 pour la liste (pas de titre : le menu principal a déjà annoncé
+// "Jeu" en appuyant sur C) ; la ligne 3 est réservée à l'aide de navigation.
+#define GAME_LIST_VISIBLE 3
+
+// Recale la fenêtre visible pour que gameCursor y reste toujours : ne fait
+// rien tant que la liste tient déjà sur l'écran, et fait défiler la fenêtre
+// (l'élément du haut disparaît, le suivant apparaît en bas) dès qu'on ajoute
+// une ligne de plus que GAME_LIST_VISIBLE.
+void Configuration::scrollGameWindow() {
+  if (gameCursor < gameWindowTop) {
+    gameWindowTop = gameCursor;
+  } else if (gameCursor > gameWindowTop + GAME_LIST_VISIBLE - 1) {
+    gameWindowTop = gameCursor - GAME_LIST_VISIBLE + 1;
+  }
+  int maxTop = (int)GAME_LIST_COUNT - GAME_LIST_VISIBLE;
+  if (maxTop < 0) {
+    maxTop = 0;
+  }
+  gameWindowTop = constrain(gameWindowTop, 0, maxTop);
+}
+
+// Curseur ">" sur la ligne en surbrillance. 2/8 le déplacent (et font défiler
+// la fenêtre si besoin), # confirme. "2" est physiquement en haut du pavé
+// numérique et "8" en bas (comme "2=+ 8=-" sur l'écran Volume).
+void Configuration::showGameChoice() {
+  for (int row = 0; row < GAME_LIST_VISIBLE; row++) {
+    int index = gameWindowTop + row;
+    if (index >= (int)GAME_LIST_COUNT) {
+      display.setText("", row);
+      continue;
+    }
+    String prefix = (index == gameCursor) ? "> " : "  ";
+    display.setText(prefix + GAME_LIST[index].label, row);
+  }
+  display.setText("2:haut  8:bas  #:OK", 3);
+}
+
+void Configuration::setGameChoice() {
+  // gameCursor est un membre persistant : on rouvre là où l'animateur a
+  // laissé le curseur (ex. sur "Chrono classique" après l'avoir réglé), pas
+  // forcément sur le jeu actif — choisir une ligne de réglage ne change pas
+  // le jeu en cours. scrollGameWindow() s'assure juste que ce curseur reste
+  // visible (utile si la liste a changé de taille entre-temps).
+  scrollGameWindow();
+  display.clear();
+  showGameChoice();
+}
+
+PhaseMode Configuration::gameChoice(char pressedKey) {
+  switch (pressedKey) {
+    case '2':
+      gameCursor = (gameCursor - 1 + GAME_LIST_COUNT) % GAME_LIST_COUNT;
+      scrollGameWindow();
+      showGameChoice();
+      break;
+    case '8':
+      gameCursor = (gameCursor + 1) % GAME_LIST_COUNT;
+      scrollGameWindow();
+      showGameChoice();
+      break;
+    case '#': {
+      const GameListItem& item = GAME_LIST[gameCursor];
+      buzzer.setGameMode(item.target);   // applique le jeu, réglage ou non
+      if (item.kind == GLK_CHRONO) {
+        chronoTargetMode = item.target;   // quel mode régler (Classique/Pénalité)
+        return CHRONO;
+      }
+      return CONFIGURATION;
+    }
+    case '*':
+      return CONFIGURATION;         // annule : le jeu en cours ne change pas
+  }
+  return GAME_CHOICE;
+}
+
+// Pas de réglage : 1 s à chaque appui.
+static int stepBuzzTime(int value, int direction) {
+  return value + direction;
+}
+
+// Durée alignée sur 3 colonnes : "off", " 5s", "10s".
+static String buzzTimeLabel(int seconds) {
+  if (seconds <= 0) {
+    return "off";
+  }
+  return String(seconds < 10 ? " " : "") + seconds + "s";
+}
+
+// Réglage du chrono en deux étapes, pour le mode visé par chronoTargetMode
+// (Classique ou Pénalité, choisi depuis la liste) : un seul réglage à la
+// fois, valeur en surbrillance avec "> ", # pour valider et passer à la
+// suite. Les touches reprennent le réglage déjà en place sur l'écran Volume
+// ("2=+  8=-").
+void Configuration::showChronoStep() {
+  display.setText(buzzer.gameModeName(chronoTargetMode), 0);   // "Chrono classique"...
+  display.setText(chronoStep == CHRONO_FIRST ? "1re reponse" : "Autres reponses", 1);
+  display.setText(String("> ") + buzzTimeLabel(chronoCursor), 2);
+}
+
+void Configuration::setChronoScreen() {
+  chronoStep = CHRONO_FIRST;
+  chronoCursor = buzzer.getFirstBuzzTime(chronoTargetMode);
+  display.clear();
+  showChronoStep();
+  display.setText("2=+  8=-  #OK *:ann", 3);
+}
+
+PhaseMode Configuration::chronoScreen(char pressedKey) {
+  switch (pressedKey) {
+    case '2':
+      chronoCursor = stepBuzzTime(chronoCursor, +1);
+      showChronoStep();
+      break;
+    case '8':
+      chronoCursor = stepBuzzTime(chronoCursor, -1);
+      showChronoStep();
+      break;
+    case '#':
+      if (chronoStep == CHRONO_FIRST) {
+        buzzer.setFirstBuzzTime(chronoTargetMode, chronoCursor);
+        chronoStep = CHRONO_NEXT;
+        chronoCursor = buzzer.getNextBuzzTime(chronoTargetMode);
+        showChronoStep();
+      } else {
+        buzzer.setNextBuzzTime(chronoTargetMode, chronoCursor);
+        buzzer.saveBuzzTimes();     // durées conservées après extinction
+        return CONFIGURATION;       // réglage terminé : retour au menu principal
+      }
+      break;
+    case '*':
+      return CONFIGURATION;         // annule : retour au menu principal
+  }
+  return CHRONO;
 }
 
 void Configuration::setShuffleBuzzers() {

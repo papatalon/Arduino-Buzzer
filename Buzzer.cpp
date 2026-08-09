@@ -1,4 +1,12 @@
 #include "Buzzer.h"
+#include <EEPROM.h>
+
+// Plan d'occupation de l'EEPROM : l'adresse 0 est le volume (voir Mp3.cpp).
+// Chrono par mode : Classique puis Pénalité, chacun (1re réponse, suivantes).
+#define EEPROM_ADDR_CLASSIC_FIRST 1
+#define EEPROM_ADDR_CLASSIC_NEXT 2
+#define EEPROM_ADDR_PENALTY_FIRST 3
+#define EEPROM_ADDR_PENALTY_NEXT 4
 
 Buzzer::Buzzer() {}
 
@@ -14,6 +22,7 @@ void Buzzer::init() {
     pinMode(buzzers[buzzerId][0],OUTPUT);
     pinMode(buzzers[buzzerId][1],INPUT_PULLUP);
   }
+  loadBuzzTimes();
 }
 
 void Buzzer::resetLights() {
@@ -136,11 +145,9 @@ bool Buzzer::songFinished(unsigned long elapsed) {
 // Sortie : ** (reset) -> retour a la configuration.
 void Buzzer::setLedTest() {
   ledTestMaster = true;
+  armButtons();
   for (int i = 0; i < 4; i++) {
     ledTestOn[i] = true;
-    // Mémorise l'état courant des boutons : un bouton déjà maintenu en entrant
-    // ne provoquera pas de bascule tant qu'il n'a pas été relâché.
-    prevPressed[i] = (digitalRead(buzzers[i][1]) == LOW);
     setLed(i, true);
   }
   display.clear();
@@ -202,14 +209,28 @@ PhaseMode Buzzer::waitingBuzzerIsPressed(PhaseMode currentMode) {
     }
   }
 
-  return result;
+  if (result != currentMode) {
+    timerRunning = false;      // quelqu'un a buzzé : le chrono s'arrête
+    return result;
+  }
+
+  return tickBuzzTimer();      // sinon on fait tourner le décompte
 }
 
 void Buzzer::setWaitingForBuzzer() {
-  // Mémorise l'état courant des boutons : un bouton déjà maintenu en entrant
-  // en attente devra être relâché avant de pouvoir buzzer (anti-rebond).
-  for (int i = 0; i < 4; i++) {
-    prevPressed[i] = (digitalRead(buzzers[i][1]) == LOW);
+  armButtons();   // un bouton maintenu en entrant ne buzze pas tout seul
+
+  // Chrono : pas de limite pendant un bris d'égalité. Sur les réponses
+  // secondaires la question est déjà connue, le décompte part tout seul ;
+  // sur la première, il attend le « top » de l'animateur (touche D).
+  // Le chrono n'existe que dans les jeux "Chrono ..." (et jamais en bris).
+  timerLimit = (tiebreak || !isChronoMode())
+                 ? 0
+                 : (secondaryRound ? getNextBuzzTime(gameMode) : getFirstBuzzTime(gameMode));
+  timerRunning = false;
+  lastShownSecs = -1;
+  if (timerLimit > 0 && secondaryRound) {
+    startBuzzTimer();
   }
 
   display.clear();
@@ -234,8 +255,14 @@ void Buzzer::setWaitingForBuzzer() {
     return;
   }
 
-  display.setText(String("Question ") + questionNumber, 0);
-  display.setText("   EN ATTENTE...", 1);
+  if (timerRunning) {
+    // Départ automatique (réponses secondaires) : titre + barre pleine.
+    drawBuzzTimer((unsigned long)timerLimit * 1000UL);
+  } else {
+    display.setText(String("Question ") + questionNumber, 0);
+    // Chrono armé : il attend le « top » de l'animateur (question à lire).
+    display.setText(timerLimit > 0 ? "  D = top chrono" : "   EN ATTENTE...", 1);
+  }
   // "B:corriger" n'a de sens que si une décision a déjà été prise.
   if (lastJudgedBuzzer >= 0) {
     display.setText("#:son   B:corriger", 2);
@@ -246,6 +273,7 @@ void Buzzer::setWaitingForBuzzer() {
 }
 
 void Buzzer::setBuzzerPressed() {
+    resetLights();   // coupe un éventuel clignotement de fin de chrono
     display.clear();
     display.setText(String("BIP ! -> ") + colorName(currentBuzzerId), 0);
     display.setText("A: Bonne reponse", 1);
@@ -314,17 +342,26 @@ void Buzzer::setIntro() {
   introStart = millis();
   display.clear();
   display.setText("   C'EST PARTI !", 0);
-  display.setText("  Que le meilleur", 1);
-  display.setText("     gagne !", 2);
+  if (gameMode == GAME_SIMON_REVERSE) {
+    display.setText("   Memoire a 4 :", 1);
+    display.setText(" a l'envers, gare !", 2);
+  } else if (gameMode == GAME_SIMON) {
+    display.setText("   Memoire a 4 :", 1);
+    display.setText("  tous ensemble !", 2);
+  } else {
+    display.setText("  Que le meilleur", 1);
+    display.setText("     gagne !", 2);
+  }
 }
 
 PhaseMode Buzzer::intro(char pressedKey) {
   unsigned long elapsed = millis() - introStart;
 
-  // N'importe quelle touche, ou la fin de la chanson, lance la 1re question.
+  // N'importe quelle touche, ou la fin de la chanson, lance le jeu choisi.
   if (pressedKey || songFinished(elapsed)) {
     resetLights();
-    return WAITING_BUZZER;
+    bool isSimon = (gameMode == GAME_SIMON || gameMode == GAME_SIMON_REVERSE);
+    return isSimon ? SIMON_SHOW : WAITING_BUZZER;
   }
 
   ledChase(elapsed);   // chenillard festif pendant la musique
@@ -339,6 +376,7 @@ void Buzzer::skipQuestion() {
   resetAllBuzzers();         // tous les buzzers présents redeviennent actifs
   lastJudgedBuzzer = -1;     // plus de décision à corriger
   lastWasGood = false;
+  secondaryRound = false;    // la prochaine question repart sur le chrono long
   questionNumber++;          // on passe à la question suivante
 }
 
@@ -348,6 +386,7 @@ void Buzzer::goodAnswer() {
   scores[currentBuzzerId]++;        // bonne réponse : +1
   lastJudgedBuzzer = currentBuzzerId;
   lastWasGood = true;
+  secondaryRound = false;           // question suivante : chrono long
   questionNumber++;                 // question résolue -> on passe à la suivante
 
   mp3.playGoodAnswer();
@@ -361,11 +400,12 @@ void Buzzer::goodAnswer() {
 void Buzzer::badAnswer() {
   int ledPin = buzzers[currentBuzzerId][0];
 
-  if (penaltyMode) {
+  if (isPenaltyMode()) {
     scores[currentBuzzerId]--;      // mode Pénalité : -1 (peut être négatif)
   }
   lastJudgedBuzzer = currentBuzzerId;
   lastWasGood = false;
+  secondaryRound = true;            // les autres reprennent sur le chrono court
 
   mp3.playBadAnswer();
 
@@ -386,7 +426,7 @@ PhaseMode Buzzer::correctLastDecision(PhaseMode fallback) {
     }
   } else {
     actives[id] = true;            // ré-active le buzzer écarté
-    if (penaltyMode) {
+    if (isPenaltyMode()) {
       scores[id]++;                // annule le -1 de la pénalité
     }
   }
@@ -411,16 +451,154 @@ const char* Buzzer::colorName(int i) {
   }
 }
 
-void Buzzer::setPenaltyMode(bool value) {
-  penaltyMode = value;
+void Buzzer::setGameMode(GameMode value) {
+  gameMode = value;
 }
 
-void Buzzer::togglePenaltyMode() {
-  penaltyMode = !penaltyMode;
+GameMode Buzzer::getGameMode() {
+  return gameMode;
+}
+
+const char* Buzzer::gameModeName() {
+  return gameModeName(gameMode);
+}
+
+const char* Buzzer::gameModeName(GameMode mode) {
+  switch (mode) {
+    case GAME_PENALTY:        return "Penalite";
+    case GAME_CHRONO_CLASSIC: return "Chrono classique";
+    case GAME_CHRONO_PENALTY: return "Chrono penalite";
+    case GAME_SIMON:          return "Simon";
+    case GAME_SIMON_REVERSE:  return "Simon inverse";
+    default:                  return "Classique";
+  }
 }
 
 bool Buzzer::isPenaltyMode() {
-  return penaltyMode;
+  return gameMode == GAME_PENALTY || gameMode == GAME_CHRONO_PENALTY;
+}
+
+bool Buzzer::isChronoMode() {
+  return gameMode == GAME_CHRONO_CLASSIC || gameMode == GAME_CHRONO_PENALTY;
+}
+
+// === Chrono de buzz ===
+// Deux jeux de durées : slot 0 pour Chrono classique, slot 1 pour Chrono
+// pénalité (les variantes sans chrono n'utilisent pas ces durées).
+static int buzzTimeSlot(GameMode mode) {
+  return (mode == GAME_CHRONO_PENALTY) ? 1 : 0;
+}
+
+// Les durées sont conservées en EEPROM, comme le volume. Une case jamais
+// écrite vaut 255 : hors plage, on garde alors la valeur par défaut.
+void Buzzer::loadBuzzTimes() {
+  int stored = EEPROM.read(EEPROM_ADDR_CLASSIC_FIRST);
+  if (stored >= 0 && stored <= BUZZ_TIME_MAX) {
+    firstBuzzTime[0] = stored;
+  }
+  stored = EEPROM.read(EEPROM_ADDR_CLASSIC_NEXT);
+  if (stored >= 0 && stored <= BUZZ_TIME_MAX) {
+    nextBuzzTime[0] = stored;
+  }
+  stored = EEPROM.read(EEPROM_ADDR_PENALTY_FIRST);
+  if (stored >= 0 && stored <= BUZZ_TIME_MAX) {
+    firstBuzzTime[1] = stored;
+  }
+  stored = EEPROM.read(EEPROM_ADDR_PENALTY_NEXT);
+  if (stored >= 0 && stored <= BUZZ_TIME_MAX) {
+    nextBuzzTime[1] = stored;
+  }
+}
+
+void Buzzer::saveBuzzTimes() {
+  // update n'écrit que si la valeur a changé (ménage l'EEPROM).
+  EEPROM.update(EEPROM_ADDR_CLASSIC_FIRST, (uint8_t)firstBuzzTime[0]);
+  EEPROM.update(EEPROM_ADDR_CLASSIC_NEXT, (uint8_t)nextBuzzTime[0]);
+  EEPROM.update(EEPROM_ADDR_PENALTY_FIRST, (uint8_t)firstBuzzTime[1]);
+  EEPROM.update(EEPROM_ADDR_PENALTY_NEXT, (uint8_t)nextBuzzTime[1]);
+}
+
+int Buzzer::getFirstBuzzTime(GameMode mode) {
+  return firstBuzzTime[buzzTimeSlot(mode)];
+}
+
+int Buzzer::getNextBuzzTime(GameMode mode) {
+  return nextBuzzTime[buzzTimeSlot(mode)];
+}
+
+void Buzzer::setFirstBuzzTime(GameMode mode, int seconds) {
+  firstBuzzTime[buzzTimeSlot(mode)] = constrain(seconds, 0, BUZZ_TIME_MAX);
+}
+
+void Buzzer::setNextBuzzTime(GameMode mode, int seconds) {
+  nextBuzzTime[buzzTimeSlot(mode)] = constrain(seconds, 0, BUZZ_TIME_MAX);
+}
+
+// « Top » donné par l'animateur (touche D) une fois la question lue.
+void Buzzer::startBuzzTimer() {
+  if (timerRunning || timerLimit <= 0) {
+    return;
+  }
+  timerRunning = true;
+  timerEnd = millis() + (unsigned long)timerLimit * 1000UL;
+  lastShownSecs = -1;
+}
+
+// Barre dégressive sur la ligne 1 + secondes restantes à droite du titre.
+// Redessinée seulement quand la seconde affichée change (bus I2C lent).
+void Buzzer::drawBuzzTimer(unsigned long remaining) {
+  int secs = (int)((remaining + 999) / 1000);   // arrondi haut : 10..1 puis 0
+  if (secs == lastShownSecs) {
+    return;
+  }
+  lastShownSecs = secs;
+
+  String head = String("Question ") + questionNumber;
+  String tail = String(secs) + "s";
+  while (head.length() + tail.length() < 20) {
+    head += " ";
+  }
+  display.setText(head + tail, 0);
+
+  int filled = (int)((20L * (long)remaining) / (1000L * (long)timerLimit));
+  String bar = "";
+  for (int i = 0; i < filled && i < 20; i++) {
+    bar += "=";
+  }
+  display.setText(bar, 1);
+}
+
+// Décompte appelé à chaque tick de l'écran d'attente. Renvoie SHOW_SCORES
+// quand le temps est écoulé (personne ne marque), WAITING_BUZZER sinon.
+PhaseMode Buzzer::tickBuzzTimer() {
+  if (!timerRunning) {
+    return WAITING_BUZZER;
+  }
+
+  unsigned long now = millis();
+  long remaining = (long)(timerEnd - now);
+
+  if (remaining <= 0) {
+    timerRunning = false;
+    timeUp = true;
+    mp3.playBadAnswer();
+    skipQuestion();            // personne ne marque, on passe à la suivante
+    return SHOW_SCORES;
+  }
+
+  drawBuzzTimer((unsigned long)remaining);
+
+  // Dernières secondes : les LED des buzzers encore en lice clignotent.
+  if (remaining <= BUZZ_WARN_MS) {
+    bool on = ((now / BUZZ_WARN_BLINK_MS) % 2) == 0;
+    for (int i = 0; i < 4; i++) {
+      if (enabled[i] && actives[i]) {
+        setLed(i, on);
+      }
+    }
+  }
+
+  return WAITING_BUZZER;
 }
 
 void Buzzer::resetScores() {
@@ -432,6 +610,9 @@ void Buzzer::resetScores() {
   questionNumber = 1;
   tiebreak = false;
   endTie = false;
+  secondaryRound = false;
+  timerRunning = false;
+  timeUp = false;
   // Nouvelle partie : tous les buzzers présents redeviennent actifs.
   for (int i = 0; i < 4; i++) {
     actives[i] = true;
@@ -470,12 +651,17 @@ void Buzzer::displayScores(const char* title, const char* prompt) {
 
 void Buzzer::setShowScores() {
   scoresShownAt = millis();
+
+  // Le titre rappelle si la question s'est terminée sur le chrono.
+  const char* title = timeUp ? "   TEMPS ECOULE !" : "      SCORES";
+  timeUp = false;
+
   // "B=corr" n'a de sens que si une décision vient d'être prise
   // (après un "passer", il n'y a rien à corriger).
   if (lastJudgedBuzzer >= 0) {
-    displayScores("      SCORES", "#=suite B=corr C=fin");
+    displayScores(title, "#=suite B=corr C=fin");
   } else {
-    displayScores("      SCORES", "#=suite      C=fin");
+    displayScores(title, "#=suite      C=fin");
   }
 }
 
@@ -617,6 +803,25 @@ void Buzzer::setEnabled(int buzzerId, bool value) {
 
 bool Buzzer::isEnabled(int buzzerId) {
   return enabled[buzzerId];
+}
+
+// Vrai si les 4 buzzers sont déclarés présents (requis par le jeu Simon).
+bool Buzzer::hasFourPlayers() {
+  for (int i = 0; i < 4; i++) {
+    if (!enabled[i]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+// Mémorise l'état courant des boutons : un bouton déjà maintenu en entrant dans
+// un écran devra être relâché avant de produire un front. Évite qu'un appui
+// parasite (ou tardif) soit compté dès l'arrivée sur l'écran.
+void Buzzer::armButtons() {
+  for (int i = 0; i < 4; i++) {
+    prevPressed[i] = (digitalRead(buzzers[i][1]) == LOW);
+  }
 }
 
 // Lecture centralisée d'un bouton de buzzer : renvoie true une seule fois par

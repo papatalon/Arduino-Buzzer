@@ -2,6 +2,7 @@
 #define BUZZER_H
 
 #include "PhaseMode.h"
+#include "GameMode.h"
 #include "LcdDisplay.h"
 #include <Arduino.h>
 #include "Mp3.h";
@@ -16,6 +17,9 @@
 #define BOOT_MESSAGE_COUNT 5     // nombre de messages de demarrage disponibles
 #define BOOT_DOT_MS 300          // vitesse des points animes du message de demarrage
 #define EQ_FRAME_MS 150          // duree d'une image de l'egaliseur (redessin I2C lent)
+#define BUZZ_TIME_MAX 60         // duree maxi reglable du chrono de buzz (secondes)
+#define BUZZ_WARN_MS 3000        // les LED clignotent sur les dernieres secondes
+#define BUZZ_WARN_BLINK_MS 200   // periode du clignotement de fin de chrono
 
 class Buzzer {
 public:
@@ -51,14 +55,32 @@ public:
     void resetConfigState();                 // ré-active tout, remet l'anti-rebond
     void setEnabled(int buzzerId, bool value);
     bool isEnabled(int buzzerId);
+    bool hasFourPlayers();                   // les 4 buzzers sont déclarés présents
     bool wasPressed(int buzzerId);           // front montant d'un appui (anti-rebond)
+    void armButtons();                       // ignore les boutons déjà maintenus
     void setLed(int buzzerId, bool on);
+    const char* colorName(int i);            // "Rouge", "Bleu", "Jaune", "Vert"
 
-    // Score et modes de jeu
-    void setPenaltyMode(bool value);
-    void togglePenaltyMode();
-    bool isPenaltyMode();
+    // Score et jeu sélectionné
+    void setGameMode(GameMode value);
+    GameMode getGameMode();
+    const char* gameModeName();               // nom du jeu courant
+    const char* gameModeName(GameMode mode);  // nom d'un jeu quelconque (menu)
+    bool isPenaltyMode();                    // Pénalité ou Chrono pénalité
+    bool isChronoMode();                     // Chrono classique ou Chrono pénalité
     void resetScores();
+
+    // Chrono de buzz (en secondes, 0 = désactivé), réglé séparément pour
+    // Classique et Pénalité. Deux durées par mode : celle de la 1re réponse,
+    // lancée par l'animateur (« top », touche D) une fois la question lue, et
+    // celle des réponses suivantes, qui part toute seule après une mauvaise
+    // réponse. Le tout est sauvegardé en EEPROM.
+    int getFirstBuzzTime(GameMode mode);
+    int getNextBuzzTime(GameMode mode);
+    void setFirstBuzzTime(GameMode mode, int seconds);
+    void setNextBuzzTime(GameMode mode, int seconds);
+    void saveBuzzTimes();
+    void startBuzzTimer();                   // « top » de l'animateur
 
     void setIntro();                         // lance le chenillard d'intro
     PhaseMode intro(char pressedKey);
@@ -103,9 +125,9 @@ private:
   unsigned long lastEdgeMs[4] = { 0, 0, 0, 0};
   bool buttonPressed(int buzzerId);   // front descendant anti-rebondi
 
-  // Scores par buzzer et mode de jeu.
+  // Scores par buzzer et jeu sélectionné (sous-menu "C" du menu).
   int scores[4] = { 0, 0, 0, 0};
-  bool penaltyMode = false;           // false = Classique, true = Pénalité (-1 si mauvaise)
+  GameMode gameMode = GAME_CLASSIC;
   unsigned long scoresShownAt = 0;    // horodatage d'affichage des scores
   unsigned long introStart = 0;       // horodatage du début de l'intro
 
@@ -115,12 +137,33 @@ private:
 
   int questionNumber = 1;   // numéro de la question en cours
 
+  // Chrono de buzz, indexé par mode (GAME_CLASSIC=0, GAME_PENALTY=1 ; Simon
+  // n'utilise pas ce chrono). `timerLimit` est la durée retenue pour l'écran
+  // d'attente courant (1re réponse ou suivante) ; le chrono n'est armé que si
+  // elle est > 0. `secondaryRound` distingue les deux cas : vrai dès qu'une
+  // mauvaise réponse a été donnée sur la question en cours.
+  int firstBuzzTime[2] = { 10, 10 };
+  int nextBuzzTime[2] = { 5, 5 };
+  bool secondaryRound = false;
+  int timerLimit = 0;               // durée du chrono de l'écran courant (s)
+  bool timerRunning = false;
+  unsigned long timerEnd = 0;
+  int lastShownSecs = -1;           // évite de redessiner le LCD à chaque tick
+  bool timeUp = false;              // la question s'est terminée au chrono
+
+  void loadBuzzTimes();             // relit les durées sauvegardées (EEPROM)
+  void drawBuzzTimer(unsigned long remaining);   // barre + secondes restantes
+  PhaseMode tickBuzzTimer();        // décompte : SHOW_SCORES si temps écoulé
+
   bool tiebreak = false;    // bris d'égalité en cours
   bool endTie = false;      // l'écran de fin affiche une égalité
 
   void enterTiebreak();     // n'autorise que les ex æquo à buzzer
 
-  int currentBuzzerId;
+  // Initialisé : une question peut se terminer sans qu'aucun buzzer n'ait été
+  // pressé (touche « passer » ou chrono écoulé), et les écrans de scores
+  // éteignent la LED de currentBuzzerId.
+  int currentBuzzerId = 0;
 
   // Démarrage : message tiré au hasard, horodatage et état des animations.
   int bootMessage = 0;
@@ -138,7 +181,6 @@ private:
   void goodAnswer();
   void badAnswer();
   void resetAllBuzzers();
-  const char* colorName(int i);
   void displayScores(const char* title, const char* prompt);
 
   LcdDisplay& display = LcdDisplay::shared();

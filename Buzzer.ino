@@ -5,6 +5,7 @@
 #include "PhaseMode.h"
 #include "AppKeypad.h"
 #include "Buzzer.h"
+#include "Simon.h"
 #include "Mp3.h"
 
 PhaseMode currentMode = BOOT;
@@ -14,6 +15,7 @@ PhaseMode previousMode = BOOT;
 // DisplayManager& displayManager = DisplayManager::shared();
 AppKeypad& appKeypad = AppKeypad::shared(); 
 Configuration configuration;
+Simon simon;
 Buzzer& buzzer = Buzzer::shared();
 //OledDisplay& display = OledDisplay::shared();
 Mp3& mp3 = Mp3::shared();
@@ -77,6 +79,9 @@ PhaseMode getCurrentMode() {
     case CONFIGURATION:
       mode = configuration.manageConfiguration(pressedKey);
       break;
+    case GAME_CHOICE:
+      mode = configuration.gameChoice(pressedKey);
+      break;
     case SHUFFLE_BUZZER:
       mode = configuration.shuffleBuzzer(pressedKey);
       break;
@@ -97,6 +102,9 @@ PhaseMode getCurrentMode() {
       } else if (pressedKey == '0') {
         buzzer.skipQuestion();          // passer la question (personne ne marque)
         mode = SHOW_SCORES;             // montre les scores avant la suivante
+      } else if (pressedKey == 'D') {
+        buzzer.startBuzzTimer();        // "top" : lance le chrono de buzz
+        mode = buzzer.waitingBuzzerIsPressed(currentMode);
       } else if (pressedKey == '#') {
         mp3.playWaiting();              // son d'ambiance : la reponse se fait attendre
         mode = buzzer.waitingBuzzerIsPressed(currentMode);
@@ -119,6 +127,18 @@ PhaseMode getCurrentMode() {
     case VOLUME:
       mode = configuration.volumeScreen(pressedKey);
       break;
+    case CHRONO:
+      mode = configuration.chronoScreen(pressedKey);
+      break;
+    case SIMON_SHOW:
+      mode = simon.showSequence(pressedKey);
+      break;
+    case SIMON_PLAY:
+      mode = simon.playSequence(pressedKey);
+      break;
+    case SIMON_OVER:
+      mode = simon.gameOver(pressedKey);
+      break;
     case LED_TEST:
       mode = buzzer.ledTest(pressedKey);
       break;
@@ -140,6 +160,9 @@ void updateMode() {
     case CONFIGURATION:
       configuration.init();
       break;
+    case GAME_CHOICE:
+      configuration.setGameChoice();
+      break;
     case SHUFFLE_BUZZER:
       configuration.setShuffleBuzzers();
       break;
@@ -150,6 +173,7 @@ void updateMode() {
       setReset();
       break;
     case INTRO:
+      simon.reset();      // nouvelle partie : sequence Simon repartie de zero
       buzzer.setIntro();
       break;
     case WAITING_BUZZER:
@@ -169,6 +193,18 @@ void updateMode() {
       break;
     case VOLUME:
       configuration.setVolumeScreen();
+      break;
+    case CHRONO:
+      configuration.setChronoScreen();
+      break;
+    case SIMON_SHOW:
+      simon.setShowSequence();
+      break;
+    case SIMON_PLAY:
+      simon.setPlaySequence();
+      break;
+    case SIMON_OVER:
+      simon.setGameOver();
       break;
     case LED_TEST:
       buzzer.setLedTest();
