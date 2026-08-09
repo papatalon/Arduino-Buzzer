@@ -271,7 +271,7 @@ void Buzzer::setWaitingForBuzzer() {
 
   // Banque de questions : une nouvelle question est tirée à chaque nouveau
   // numéro (pas à chaque retour ici pendant la même question, par ex. après
-  // une mauvaise réponse). Elle occupe la ligne 2 (défile si > 20 colonnes).
+  // une mauvaise réponse).
   QuestionBank& bank = QuestionBank::shared();
   bool bankOn = bank.isActive();
   if (bankOn && lastDrawnQuestion != questionNumber) {
@@ -282,42 +282,76 @@ void Buzzer::setWaitingForBuzzer() {
     }
   }
 
-  if (timerRunning) {
-    // Départ automatique (réponses secondaires) : titre + barre pleine.
-    drawBuzzTimer((unsigned long)timerLimit * 1000UL);
-  } else {
-    String title;
-    if (gameMode == GAME_VOL && !secondaryRound) {
-      // Vol : le joueur désigné prime sur la catégorie dans le titre.
-      title = String("Q") + questionNumber + " Tour: " + colorName(volTurn);
-    } else if (bankOn) {
-      title = String("Q") + questionNumber + " - " + bank.questionCategory();
-    } else {
-      title = String("Question ") + questionNumber;
-    }
-    display.setText(title, 0);
-    // Chrono armé : il attend le « top » de l'animateur (question à lire).
-    display.setText(timerLimit > 0 ? "  D = top chrono" : "   EN ATTENTE...", 1);
-  }
-
   // Vol, 1re réponse : la LED du joueur désigné reste allumée.
   if (gameMode == GAME_VOL) {
     setLed(volTurn, !secondaryRound);
   }
 
-  if (bankOn) {
-    display.setText(bank.questionText(), 2);   // la question (défile si longue)
-  } else if (gameMode == GAME_VOL && !secondaryRound) {
-    display.setText(String("Tour: ") + colorName(volTurn), 2);
-  } else {
-    // "B:corriger" n'a de sens que si une décision a déjà été prise.
-    if (lastJudgedBuzzer >= 0) {
-      display.setText("#:son   B:corriger", 2);
+  if (timerRunning) {
+    // Décompte en cours (réponses secondaires) : titre + barre occupent les
+    // lignes 0-1 ; la question, déjà lue, se replie sur les lignes 2-3.
+    drawBuzzTimer((unsigned long)timerLimit * 1000UL);
+    if (bankOn) {
+      wrapText(bank.questionText(), 2, 3);
     } else {
       display.setText("#:son d'ambiance", 2);
+      display.setText("0:passer    C:fin", 3);
     }
+    return;
+  }
+
+  if (bankOn) {
+    // La question a besoin de place : elle occupe les lignes 1 à 3 (60
+    // colonnes), de quoi l'afficher d'un bloc dans la quasi-totalité des
+    // cas. Le titre est donc réduit et porte le rappel du « top ».
+    String head = String("Q") + questionNumber;
+    if (gameMode == GAME_VOL && !secondaryRound) {
+      head += " Tour:" + String(colorName(volTurn));
+    }
+    if (timerLimit > 0) {
+      head += "  D:top";
+    }
+    display.setText(head, 0);
+    wrapText(bank.questionText(), 1, 3);
+    return;
+  }
+
+  // Sans la banque : l'animateur a son propre questionnaire, l'écran garde
+  // donc les rappels de touches.
+  display.setText(String("Question ") + questionNumber, 0);
+  // Chrono armé : il attend le « top » de l'animateur (question à lire).
+  display.setText(timerLimit > 0 ? "  D = top chrono" : "   EN ATTENTE...", 1);
+  if (gameMode == GAME_VOL && !secondaryRound) {
+    display.setText(String("Tour: ") + colorName(volTurn), 2);
+  } else if (lastJudgedBuzzer >= 0) {
+    // "B:corriger" n'a de sens que si une décision a déjà été prise.
+    display.setText("#:son   B:corriger", 2);
+  } else {
+    display.setText("#:son d'ambiance", 2);
   }
   display.setText("0:passer    C:fin", 3);
+}
+
+// Répartit `text` sur les lignes `from` à `to` de l'écran, en coupant aux
+// espaces. Ce qui dépasse reste sur la dernière ligne, qui défile alors.
+void Buzzer::wrapText(String text, int from, int to) {
+  for (int line = from; line <= to; line++) {
+    if (text.length() == 0) {
+      display.setText("", line);
+      continue;
+    }
+    if (text.length() <= 20 || line == to) {
+      display.setText(text, line);   // dernière ligne : défile si trop long
+      text = "";
+      continue;
+    }
+    int cut = text.lastIndexOf(' ', 20);
+    if (cut <= 0) {
+      cut = 20;                      // mot unique trop long : coupe sèche
+    }
+    display.setText(text.substring(0, cut), line);
+    text = text.substring(cut + 1);
+  }
 }
 
 void Buzzer::setBuzzerPressed() {
@@ -326,8 +360,10 @@ void Buzzer::setBuzzerPressed() {
     display.setText(String("BIP ! -> ") + colorName(currentBuzzerId), 0);
     QuestionBank& bank = QuestionBank::shared();
     if (bank.isActive()) {
-      // La bonne réponse est affichée pour l'animateur, qui juge.
-      display.setText(String("Rep: ") + bank.answerText(), 1);
+      // La bonne réponse occupe toute la ligne 1 (20 colonnes) : sans
+      // préfixe « Rep: », la quasi-totalité des réponses tient sans
+      // défilement, donc l'animateur la lit d'un coup d'oeil.
+      display.setText(bank.answerText(), 1);
       display.setText("A:Bonne  D:Mauvaise", 2);
     } else {
       display.setText("A: Bonne reponse", 1);

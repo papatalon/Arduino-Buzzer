@@ -179,6 +179,9 @@ private:
   int lastShownSecs = -1;           // évite de redessiner le LCD à chaque tick
   bool timeUp = false;              // la question s'est terminée au chrono
 
+  // Répartit un texte sur plusieurs lignes de l'écran (coupe aux espaces).
+  void wrapText(String text, int from, int to);
+
   void loadBuzzTimes();             // relit les durées sauvegardées (EEPROM)
   void drawBuzzTimer(unsigned long remaining);   // barre + secondes restantes
   PhaseMode tickBuzzTimer();        // décompte : SHOW_SCORES si temps écoulé
