@@ -22,6 +22,51 @@ void Buzzer::resetLights() {
   }
 }
 
+// Écran affiché pendant l'initialisation du DFPlayer (voir bootTick) :
+// un égaliseur audio plein écran, dessiné avec des caractères personnalisés.
+void Buzzer::showBootScreen() {
+  display.clear();
+  display.initBarChars();
+}
+
+// Appelé en boucle par mp3.init() pendant les attentes de démarrage : fait
+// tourner le chenillard des LED (même effet que l'intro de partie) et fait
+// danser les barres de l'égaliseur, sans bloquer.
+void Buzzer::bootTick() {
+  int step = (millis() / INTRO_STEP_MS) % 4;
+  for (int i = 0; i < 4; i++) {
+    setLed(i, i == step);
+  }
+
+  // Une nouvelle image de l'égaliseur toutes les ~150 ms (le redessin complet
+  // du LCD en I2C est lent : on ne le fait pas à chaque tick).
+  static unsigned long lastFrame = 0;
+  static uint8_t heights[20];
+  static bool seeded = false;
+
+  unsigned long now = millis();
+  if (now - lastFrame < 150) {
+    return;
+  }
+  lastFrame = now;
+
+  if (!seeded) {
+    seeded = true;
+    for (int i = 0; i < 20; i++) {
+      heights[i] = random(4, 29);
+    }
+  }
+
+  // Marche aléatoire : chaque barre monte/descend un peu, comme un VU-mètre.
+  for (int i = 0; i < 20; i++) {
+    int h = heights[i] + random(-7, 8);
+    if (h < 1) h = 1;
+    if (h > 32) h = 32;
+    heights[i] = h;
+  }
+  display.drawEqualizer(heights);
+}
+
 // === Mode cache de test cablage (LED_TEST), entree via *1 ===
 // A l'entree, les 4 LED s'allument. Ensuite :
 //  - une touche du clavier bascule TOUTES les LED (test des sorties LED) ;
@@ -124,18 +169,19 @@ void Buzzer::setWaitingForBuzzer() {
     display.setText("  BRIS D'EGALITE", 0);
     display.setText("   Buzzez vite !", 1);
     display.setText(parts, 2);
+    display.setText("#:son d'ambiance", 3);
     return;
   }
 
   display.setText(String("Question ") + questionNumber, 0);
-  display.setText("    EN ATTENTE", 1);
-  display.setText("   D'UNE REPONSE", 2);
+  display.setText("   EN ATTENTE...", 1);
   // "B:corriger" n'a de sens que si une décision a déjà été prise.
   if (lastJudgedBuzzer >= 0) {
-    display.setText("B:corr 0:pass C:fin", 3);
+    display.setText("#:son   B:corriger", 2);
   } else {
-    display.setText("0:passer   C:fin", 3);
+    display.setText("#:son d'ambiance", 2);
   }
+  display.setText("0:passer    C:fin", 3);
 }
 
 void Buzzer::setBuzzerPressed() {
@@ -194,7 +240,7 @@ PhaseMode Buzzer::buzzerIsPressed(PhaseMode currentMode, char pressedKey) {
       break;
     case '0':
       Buzzer::skipQuestion();
-      return WAITING_BUZZER;    // question abandonnée, personne ne marque
+      return SHOW_SCORES;       // question abandonnée -> écran des scores
     default:
       return currentMode;
   };
@@ -381,7 +427,13 @@ void Buzzer::displayScores(const char* title, const char* prompt) {
 
 void Buzzer::setShowScores() {
   scoresShownAt = millis();
-  displayScores("      SCORES", "#=suite B=corr C=fin");
+  // "B=corr" n'a de sens que si une décision vient d'être prise
+  // (après un "passer", il n'y a rien à corriger).
+  if (lastJudgedBuzzer >= 0) {
+    displayScores("      SCORES", "#=suite B=corr C=fin");
+  } else {
+    displayScores("      SCORES", "#=suite      C=fin");
+  }
 }
 
 PhaseMode Buzzer::showScores(char pressedKey) {
@@ -403,11 +455,14 @@ PhaseMode Buzzer::showScores(char pressedKey) {
   }
 
   // Courte célébration : la LED du gagnant clignote ~1,5 s puis s'éteint.
-  unsigned long elapsed = millis() - scoresShownAt;
-  if (elapsed < WIN_BLINK_MS) {
-    setLed(currentBuzzerId, ((millis() / 250) % 2) == 0);
-  } else {
-    setLed(currentBuzzerId, false);
+  // Uniquement si la question vient d'être gagnée (pas après un "passer").
+  if (lastJudgedBuzzer >= 0 && lastWasGood) {
+    unsigned long elapsed = millis() - scoresShownAt;
+    if (elapsed < WIN_BLINK_MS) {
+      setLed(lastJudgedBuzzer, ((millis() / 250) % 2) == 0);
+    } else {
+      setLed(lastJudgedBuzzer, false);
+    }
   }
   return SHOW_SCORES;
 }

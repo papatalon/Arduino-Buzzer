@@ -24,6 +24,11 @@ public:
     void init();
     void resetLights();
 
+    // Animation de démarrage (pendant l'initialisation du DFPlayer) :
+    // écran fixe + chenillard des LED, comme au lancement d'une partie.
+    void showBootScreen();
+    void bootTick();
+
     // Mode cache de test cablage (entree *1) : LED + boutons.
     void setLedTest();                       // entree : allume les 4 LED
     PhaseMode ledTest(char pressedKey);      // touche = tout on/off ; bouton = sa LED

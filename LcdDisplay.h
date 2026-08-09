@@ -15,6 +15,12 @@ class LcdDisplay {
     void setText(String text, int line);
     void updateScrolling();
     void clear();
+
+    // Égaliseur graphique (animation de démarrage) : charge 8 caractères
+    // personnalisés (barres de 1 à 8 pixels) puis dessine 20 colonnes sur
+    // les 4 lignes. heights[i] = hauteur de la colonne i, de 0 à 32 pixels.
+    void initBarChars();
+    void drawEqualizer(const uint8_t heights[20]);
   
   private:
     LiquidCrystal_I2C lcd;

@@ -19,6 +19,13 @@ Buzzer& buzzer = Buzzer::shared();
 Mp3& mp3 = Mp3::shared();
 LcdDisplay& display = LcdDisplay::shared();
 
+// Wrapper libre passé à mp3.init() : anime l'écran + les LED pendant les
+// attentes de démarrage du DFPlayer (impossible de passer une méthode membre
+// directement comme pointeur de fonction C).
+void bootTick() {
+  buzzer.bootTick();
+}
+
 void setup() {
   Serial.begin(9600);
 
@@ -27,9 +34,14 @@ void setup() {
   }
 
   buzzer.init();
-  configuration.init();
-  mp3.init();
-  mp3.playInit();   // son d'intro au démarrage (dossier 01)
+
+  // Animation de démarrage pendant l'initialisation (bloquante) du DFPlayer.
+  buzzer.showBootScreen();
+  mp3.init(bootTick);
+  buzzer.resetLights();   // fin de l'animation : on éteint les LED
+
+  configuration.init();   // le menu s'affiche une fois tout prêt
+  mp3.playInit();         // son d'intro au démarrage (dossier 01)
 }
 
 void loop() {
@@ -76,8 +88,10 @@ PhaseMode getCurrentMode() {
         mode = buzzer.correctLastDecision(currentMode);  // corriger la derniere decision
       } else if (pressedKey == '0') {
         buzzer.skipQuestion();          // passer la question (personne ne marque)
-        buzzer.setWaitingForBuzzer();   // rafraichit l'ecran (nouveau numero)
-        mode = WAITING_BUZZER;
+        mode = SHOW_SCORES;             // montre les scores avant la suivante
+      } else if (pressedKey == '#') {
+        mp3.playWaiting();              // son d'ambiance : la reponse se fait attendre
+        mode = buzzer.waitingBuzzerIsPressed(currentMode);
       } else {
         mode = buzzer.waitingBuzzerIsPressed(currentMode);
       }

@@ -77,6 +77,38 @@ void LcdDisplay::updateScrolling() {
   }
 }
 
+// Définit les caractères personnalisés 0..7 : une barre remplie depuis le
+// bas, de 1 pixel (char 0) à 8 pixels = cellule pleine (char 7).
+void LcdDisplay::initBarChars() {
+  byte pattern[8];
+  for (int c = 0; c < 8; c++) {
+    for (int row = 0; row < 8; row++) {
+      // row 0 = haut de la cellule ; on remplit les (c+1) rangées du bas.
+      pattern[row] = (row >= 7 - c) ? 0b11111 : 0b00000;
+    }
+    lcd.createChar(c, pattern);
+  }
+}
+
+// Dessine l'égaliseur : chaque colonne est une barre verticale de 0 à 32
+// pixels répartie sur les 4 lignes du LCD (4 x 8 pixels).
+void LcdDisplay::drawEqualizer(const uint8_t heights[20]) {
+  for (int row = 0; row < 4; row++) {
+    lcd.setCursor(0, row);
+    int base = (3 - row) * 8;   // pixels sous cette ligne
+    for (int col = 0; col < 20; col++) {
+      int v = (int)heights[col] - base;
+      if (v <= 0) {
+        lcd.write(' ');
+      } else if (v >= 8) {
+        lcd.write((uint8_t)7);          // cellule pleine
+      } else {
+        lcd.write((uint8_t)(v - 1));    // barre partielle (1..7 pixels)
+      }
+    }
+  }
+}
+
 String LcdDisplay::removeAccents(String text) {
   text.replace("é", "e");
   text.replace("è", "e");

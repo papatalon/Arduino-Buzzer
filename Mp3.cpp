@@ -14,7 +14,17 @@ Mp3& Mp3::shared() {
 }
 
 
-void Mp3::init(void) {
+void Mp3::waitAnimated(unsigned long ms, void (*onTick)()) {
+  unsigned long start = millis();
+  while (millis() - start < ms) {
+    if (onTick) {
+      onTick();
+    }
+    delay(10);
+  }
+}
+
+void Mp3::init(void (*onTick)()) {
 
   randomSeed(analogRead(0));
 
@@ -35,8 +45,8 @@ void Mp3::init(void) {
   mp3.begin(softwareSerialMP3, false);
 
   // Le DFPlayer met ~1,5 à 3 s après la mise sous tension pour lire la carte SD
-  // et devenir capable d'accepter des commandes.
-  delay(2000);
+  // et devenir capable d'accepter des commandes. On anime pendant l'attente.
+  waitAnimated(2000, onTick);
 
   // Détection via la broche BUSY. De nombreux modules DFPlayer « clones »
   // jouent parfaitement mais ne répondent à AUCUNE requête série (readState,
@@ -48,7 +58,7 @@ void Mp3::init(void) {
 
   bool detected = false;
   for (int i = 0; i < 10 && !detected; i++) {
-    delay(100);
+    waitAnimated(100, onTick);
     if (digitalRead(BUSY_PIN) == LOW) {
       detected = true;
     }
@@ -73,7 +83,7 @@ void Mp3::init(void) {
 
 void Mp3::initializeMP3Arrays(void)
 {
-  for (int i = 0; i < 4; i++)
+  for (int i = 0; i < FOLDER_COUNT; i++)
   {
     int folderId = i + 1;
     int count = getFileCount(folderId);   // valeur de repli (#define)
@@ -112,6 +122,8 @@ int Mp3::getFileCount(int folderId)
       return GOOD_FILE_COUNT;
     case BAD_FOLDER:
       return BAD_FILE_COUNT;
+    case WAITING_FOLDER:
+      return WAITING_FILE_COUNT;
     default:
       return 0;
   }
@@ -167,15 +179,23 @@ bool Mp3::isSoundLockedByOther(int sound, int buzzerId) {
 }
 
 void Mp3::cycleSound(int buzzerId) {
+  cycleSoundBy(buzzerId, +1);
+}
+
+void Mp3::cyclePrevSound(int buzzerId) {
+  cycleSoundBy(buzzerId, -1);
+}
+
+void Mp3::cycleSoundBy(int buzzerId, int direction) {
   int poolSize = mp3Arrays[BUZZER_FOLDER - 1].size;
   if (poolSize <= 0) {
     return;
   }
 
   int candidate = buzzerSound[buzzerId];
-  // Cherche le prochain son non verrouillé par un autre buzzer.
+  // Cherche le son suivant/précédent non verrouillé par un autre buzzer.
   for (int step = 0; step < poolSize; step++) {
-    candidate = (candidate + 1) % poolSize;
+    candidate = (candidate + direction + poolSize) % poolSize;
     if (!isSoundLockedByOther(candidate, buzzerId)) {
       buzzerSound[buzzerId] = candidate;
       return;
@@ -272,6 +292,28 @@ void Mp3::playBadAnswer() {
   }
 
   mp3.playFolder(BAD_FOLDER, fileNumber);
+}
+
+// Son d'ambiance lancé par l'animateur quand la réponse tarde à venir.
+void Mp3::playWaiting() {
+  int arraySize = mp3Arrays[WAITING_FOLDER - 1].size;
+  if (arraySize <= 0) {
+    return;
+  }
+
+  int fileNumber;
+  do {
+    fileNumber = random(arraySize) + 1;
+  } while (arraySize > 1 && fileNumber == lastWaiting);   // pas 2x le même de suite
+  lastWaiting = fileNumber;
+
+  if (simulation) {
+    Serial.print(F("[SIM] Lecture dossier WAITING, fichier "));
+    Serial.println(fileNumber);
+    return;
+  }
+
+  mp3.playFolder(WAITING_FOLDER, fileNumber);
 }
 
 void Mp3::setVolume(int v) {

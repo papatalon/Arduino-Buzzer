@@ -122,9 +122,9 @@ void Configuration::showConfigPrompt() {
 void Configuration::showConfigChoice() {
   display.clear();
   display.setText(String(colorName(cfgIndex)) + " - son " + String(mp3.getSound(cfgIndex) + 1), 0);
-  display.setText("A = valider", 1);
-  display.setText("B = autre son", 2);
-  display.setText("* = absent", 3);
+  display.setText("A=valider  *=absent", 1);
+  display.setText("B = son suivant", 2);
+  display.setText("C = son precedent", 3);
 }
 
 PhaseMode Configuration::advanceConfig() {
@@ -174,8 +174,12 @@ PhaseMode Configuration::buzzerConfig(char pressedKey) {
   }
 
   // CFG_CHOOSING
-  if (pressedKey == 'B') {              // essayer un autre son
+  if (pressedKey == 'B') {              // son suivant
     mp3.cycleSound(cfgIndex);
+    mp3.playBuzzer(cfgIndex);
+    showConfigChoice();
+  } else if (pressedKey == 'C') {       // son précédent
+    mp3.cyclePrevSound(cfgIndex);
     mp3.playBuzzer(cfgIndex);
     showConfigChoice();
   } else if (pressedKey == 'A') {       // valider et verrouiller
