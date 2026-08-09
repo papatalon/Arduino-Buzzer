@@ -362,7 +362,22 @@ PhaseMode Configuration::shuffleBuzzer(char pressedKey) {
       return CONFIGURATION;          // annulé : aucun son modifié
     }
     if (pressedKey == '#') {
-      mp3.shuffleBuzzers();          // confirmé : on re-tire les sons
+      // Confirmé : anime le tirage (chenillard + son, comme le mode Vol)
+      // pendant que les sons sont mélangés.
+      buzzer.startSpinAnimation();
+      shufStep = SHUF_SPINNING;
+      display.clear();
+      display.setText("  MELANGE DES SONS", 0);
+      display.setText("   Ecoute bien...", 1);
+    }
+    return SHUFFLE_BUZZER;
+  }
+
+  if (shufStep == SHUF_SPINNING) {
+    // N'importe quelle touche, ou la fin réelle du son, révèle le résultat.
+    if (pressedKey || buzzer.tickSpinAnimation()) {
+      buzzer.resetLights();
+      mp3.shuffleBuzzers();          // on re-tire les sons
       shufStep = SHUF_DONE;
       display.clear();
       display.setText("Nouveaux sons OK", 0);

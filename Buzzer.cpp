@@ -1,6 +1,7 @@
 #include "Buzzer.h"
 #include "QuestionBank.h"
 #include <EEPROM.h>
+#include <math.h>
 
 // Plan d'occupation de l'EEPROM : l'adresse 0 est le volume (voir Mp3.cpp).
 // Chrono par mode : Chrono classique, Chrono pénalité, Vol — chacun (1re
@@ -131,9 +132,9 @@ PhaseMode Buzzer::boot(char pressedKey) {
 // (broche BUSY à LOW). INTRO_START_MS laisse au module le temps de démarrer la
 // lecture avant de tester la fin ; INTRO_MAX_MS borne la durée par sécurité.
 // En simulation (pas de BUSY), on garde un minuteur fixe.
-bool Buzzer::songFinished(unsigned long elapsed) {
+bool Buzzer::songFinished(unsigned long elapsed, unsigned long simDurationMs) {
   if (mp3.isSimulation()) {
-    return elapsed >= INTRO_MS;
+    return elapsed >= simDurationMs;
   }
   if (elapsed < INTRO_START_MS) {
     return false;                    // on laisse la lecture démarrer
@@ -461,34 +462,53 @@ PhaseMode Buzzer::intro(char pressedKey) {
 }
 
 // === Vol : tirage au sort anime du 1er joueur ===
-// Chenillard limite aux buzzers presents + son du dossier 06, pendant
-// VOL_SPIN_MS ; le joueur tire au sort est determine des l'entree (pour ne
-// pas dependre du minutage de l'animation) et revele en fin d'animation par
-// setWaitingForBuzzer(), qui allume sa LED et affiche "Tour: <couleur>".
+// Chenillard limite aux buzzers presents + son du dossier 06, pendant toute
+// la duree reelle du son (songFinished, comme l'intro) ; le joueur tire au
+// sort est determine des l'entree (pour ne pas dependre du minutage de
+// l'animation) et revele en fin d'animation par setWaitingForBuzzer(), qui
+// allume sa LED et affiche "Tour: <couleur>".
 void Buzzer::setVolSpin() {
-  volSpinStart = millis();
   volTurn = randomEnabledBuzzer();
-  mp3.playSpin();
+  startSpinAnimation();
   display.clear();
   display.setText("  TIRAGE AU SORT", 0);
   display.setText(" Qui va repondre ?", 1);
 }
 
 PhaseMode Buzzer::volSpin(char pressedKey) {
-  unsigned long elapsed = millis() - volSpinStart;
-
-  // N'importe quelle touche, ou la fin de l'animation, revele le joueur.
-  if (pressedKey || elapsed >= VOL_SPIN_MS) {
+  // N'importe quelle touche, ou la fin reelle du son, revele le joueur.
+  if (pressedKey || tickSpinAnimation()) {
     resetLights();
     return WAITING_BUZZER;
   }
 
-  ledChaseEnabled(elapsed);
   return VOL_SPIN;
+}
+
+void Buzzer::startSpinAnimation() {
+  volSpinStart = millis();
+  mp3.playSpin();
+  volSpinStepIndex = 0;
+  volSpinIntervalMs = VOL_SPIN_STEP_MS_INITIAL;
+  volSpinNextStepAt = volSpinIntervalMs;
+}
+
+bool Buzzer::tickSpinAnimation() {
+  unsigned long elapsed = millis() - volSpinStart;
+  if (songFinished(elapsed, VOL_SPIN_SIM_MS)) {
+    return true;
+  }
+  ledChaseEnabled(elapsed);
+  return false;
 }
 
 // Chenillard limite aux buzzers presents (contrairement a ledChase(), qui
 // parcourt les 4 sans distinction) : n'allume jamais un buzzer absent.
+// La cadence suit celle du son du tirage (dossier 06), qui demarre par des
+// clics rapides et ralentit progressivement, comme une roue qui tourne : on
+// recalcule l'intervalle courant a chaque pas avec une croissance
+// exponentielle (constante VOL_SPIN_STEP_TAU_MS), plafonnee a
+// VOL_SPIN_STEP_MS_MAX.
 void Buzzer::ledChaseEnabled(unsigned long elapsed) {
   int pool[4];
   int count = 0;
@@ -500,11 +520,18 @@ void Buzzer::ledChaseEnabled(unsigned long elapsed) {
   if (count == 0) {
     return;
   }
-  int step = (elapsed / VOL_SPIN_STEP_MS) % count;
+
+  if (elapsed >= volSpinNextStepAt) {
+    volSpinStepIndex++;
+    float grown = VOL_SPIN_STEP_MS_INITIAL * exp(elapsed / VOL_SPIN_STEP_TAU_MS);
+    volSpinIntervalMs = (unsigned int)min((float)VOL_SPIN_STEP_MS_MAX, grown);
+    volSpinNextStepAt = elapsed + volSpinIntervalMs;
+  }
+
   for (int i = 0; i < 4; i++) {
     setLed(i, false);
   }
-  setLed(pool[step], true);
+  setLed(pool[volSpinStepIndex % count], true);
 }
 
 void Buzzer::skipQuestion() {

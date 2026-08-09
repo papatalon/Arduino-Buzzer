@@ -20,8 +20,10 @@
 #define BUZZ_TIME_MAX 60         // duree maxi reglable du chrono de buzz (secondes)
 #define BUZZ_WARN_MS 3000        // les LED clignotent sur les dernieres secondes
 #define BUZZ_WARN_BLINK_MS 200   // periode du clignotement de fin de chrono
-#define VOL_SPIN_MS 2500         // duree du tirage au sort anime (mode Vol)
-#define VOL_SPIN_STEP_MS 120     // vitesse du chenillard du tirage
+#define VOL_SPIN_SIM_MS 11000        // duree simulee du tirage (pas de BUSY), calee sur le son
+#define VOL_SPIN_STEP_MS_INITIAL 40  // vitesse initiale du chenillard, calee sur le 1er clic du son
+#define VOL_SPIN_STEP_MS_MAX 300     // vitesse la plus lente, atteinte en fin d'animation
+#define VOL_SPIN_STEP_TAU_MS 3600.0  // constante de ralentissement (voir ledChaseEnabled)
 
 class Buzzer {
 public:
@@ -51,6 +53,15 @@ public:
     // 1re question.
     void setVolSpin();
     PhaseMode volSpin(char pressedKey);
+
+    // Animation générique de "tirage au sort" (chenillard qui ralentit +
+    // son du dossier 06) : utilisée par volSpin() ci-dessus, et réutilisable
+    // ailleurs (ex. menu "Sons au hasard"). startSpinAnimation() lance le
+    // chronomètre et le son ; tickSpinAnimation() fait avancer le chenillard
+    // et renvoie vrai quand l'animation (le son) est terminée — à appeler à
+    // chaque tick tant qu'elle renvoie faux.
+    void startSpinAnimation();
+    bool tickSpinAnimation();
 
     void setWaitingForBuzzer();
     PhaseMode waitingBuzzerIsPressed(PhaseMode currentMode);
@@ -160,6 +171,9 @@ private:
   // chaque question résolue.
   int volTurn = 0;
   unsigned long volSpinStart = 0;     // horodatage du début du tirage au sort
+  unsigned long volSpinNextStepAt = 0;  // horodatage (elapsed) du prochain pas du chenillard
+  unsigned int volSpinIntervalMs = 0;   // intervalle courant entre 2 pas (croît avec le temps)
+  int volSpinStepIndex = 0;             // position courante dans le chenillard du tirage
   int nextEnabledBuzzer(int from);   // prochain buzzer présent après 'from'
   int randomEnabledBuzzer();         // un buzzer présent tiré au hasard
   void ledChaseEnabled(unsigned long elapsed);  // chenillard limité aux buzzers présents
@@ -206,8 +220,9 @@ private:
   void ledChase(unsigned long elapsed);  // chenillard des 4 LED
 
   // Vrai quand la chanson lancée il y a `elapsed` ms est terminée (BUSY), ou
-  // que la durée de sécurité est écoulée. En simulation : minuteur fixe.
-  bool songFinished(unsigned long elapsed);
+  // que la durée de sécurité est écoulée. En simulation : minuteur fixe de
+  // durée `simDurationMs` (par défaut celle de la chanson d'intro).
+  bool songFinished(unsigned long elapsed, unsigned long simDurationMs = INTRO_MS);
 
   void goodAnswer();
   void badAnswer();

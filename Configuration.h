@@ -31,8 +31,10 @@ private:
   // Étapes de l'assistant de configuration d'un buzzer.
   enum CfgStep { CFG_PROMPT, CFG_CHOOSING };
 
-  // Étapes de l'écran "Sons aléatoires" (confirmation avant d'écraser).
-  enum ShufStep { SHUF_CONFIRM, SHUF_DONE };
+  // Étapes de l'écran "Sons aléatoires" : confirmation avant d'écraser, puis
+  // animation de tirage (chenillard + son, comme le mode Vol) pendant le
+  // mélange, puis résultat.
+  enum ShufStep { SHUF_CONFIRM, SHUF_SPINNING, SHUF_DONE };
 
   // Liste déroulante du sous-menu "C" (jeux + réglages, ex. Chrono) : tout
   // tient sur 3 lignes visibles ; curseur ">" déplacé par 2/8, la fenêtre
