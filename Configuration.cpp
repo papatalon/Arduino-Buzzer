@@ -53,8 +53,8 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
         mp3.playInit();             // son de lancement (dossier 01)
         return INTRO;               // chenillard festif pendant la musique
       }
-      if (mode == GAME_REFLEX) {
-        // Jeu sans question : on saute le choix des catégories.
+      if (mode == GAME_REFLEX || mode == GAME_BLIND) {
+        // Jeux sans question : on saute le choix des catégories.
         buzzer.resetScores();
         mp3.playInit();
         return INTRO;
@@ -92,6 +92,7 @@ static const GameListItem GAME_LIST[] = {
   { "Simon (a 4)",      GLK_GAME,   GAME_SIMON },
   { "Simon inverse",    GLK_GAME,   GAME_SIMON_REVERSE },
   { "Reflexe",          GLK_ROUNDS, GAME_REFLEX },
+  { "Chrono aveugle",   GLK_ROUNDS, GAME_BLIND },
 };
 #define GAME_LIST_COUNT (sizeof(GAME_LIST) / sizeof(GAME_LIST[0]))
 
@@ -163,7 +164,8 @@ PhaseMode Configuration::gameChoice(char pressedKey) {
         return CHRONO;
       }
       if (item.kind == GLK_ROUNDS) {
-        return REFLEX_SETUP;              // nombre de manches du Réflexe
+        roundsTargetMode = item.target;   // quel jeu régler (Réflexe / aveugle)
+        return ROUNDS_SETUP;
       }
       return CONFIGURATION;
     }
@@ -233,44 +235,44 @@ PhaseMode Configuration::chronoScreen(char pressedKey) {
   return CHRONO;
 }
 
-// Nombre de manches du Réflexe : mêmes touches que l'écran du chrono
-// ("2=+  8=-"), valeur en surbrillance avec "> ". Le réglage est conservé en
-// EEPROM, donc proposé tel quel à la prochaine partie.
+// Nombre de manches du jeu visé par roundsTargetMode : mêmes touches que
+// l'écran du chrono ("2=+  8=-"), valeur en surbrillance avec "> ". Le réglage
+// est conservé en EEPROM, donc proposé tel quel à la prochaine partie.
 void Configuration::showRoundsValue() {
   display.setText(String("> ") + roundsCursor, 2);
 }
 
-void Configuration::setReflexRounds() {
-  roundsCursor = buzzer.getReflexRounds();
+void Configuration::setRoundsScreen() {
+  roundsCursor = buzzer.getGameRounds(roundsTargetMode);
   display.clear();
-  display.setText("REFLEXE", 0);
+  display.setText(buzzer.gameModeName(roundsTargetMode), 0);
   display.setText("Nombre de manches", 1);
   showRoundsValue();
   display.setText("2=+  8=-  #OK *:ann", 3);
 }
 
-PhaseMode Configuration::reflexRounds(char pressedKey) {
+PhaseMode Configuration::roundsScreen(char pressedKey) {
   switch (pressedKey) {
     case '2':
-      if (roundsCursor < REFLEX_ROUNDS_MAX) {
+      if (roundsCursor < GAME_ROUNDS_MAX) {
         roundsCursor++;
       }
       showRoundsValue();
       break;
     case '8':
-      if (roundsCursor > REFLEX_ROUNDS_MIN) {
+      if (roundsCursor > GAME_ROUNDS_MIN) {
         roundsCursor--;
       }
       showRoundsValue();
       break;
     case '#':
-      buzzer.setReflexRounds(roundsCursor);
-      buzzer.saveReflexRounds();    // conservé après extinction
+      buzzer.setGameRounds(roundsTargetMode, roundsCursor);
+      buzzer.saveGameRounds();      // conservé après extinction
       return CONFIGURATION;
     case '*':
       return CONFIGURATION;         // annule : le nombre de manches ne change pas
   }
-  return REFLEX_SETUP;
+  return ROUNDS_SETUP;
 }
 
 // ============================================================

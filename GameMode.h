@@ -16,6 +16,7 @@ enum GameMode {
     GAME_SIMON,          // jeu collaboratif de memoire (obligatoirement a 4)
     GAME_SIMON_REVERSE,  // comme GAME_SIMON, mais la sequence se repete a l'envers
     GAME_REFLEX,         // jeu de rapidite sans question : premier a buzzer au signal
+    GAME_BLIND,          // chrono aveugle : buzzer quand on croit la cible atteinte
     GAME_MODE_COUNT      // sentinelle : nombre de jeux (doit rester en dernier)
 };
 

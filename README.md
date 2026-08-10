@@ -69,6 +69,8 @@ La touche `C` du menu ouvre le **sous-menu des jeux**. Le jeu sélectionné s'af
 | **Vol** | Question adressée à un joueur ; les autres peuvent la **voler** s'il rate — **chrono toujours actif** |
 | **Simon** | Jeu de mémoire **collaboratif**, obligatoirement à 4 |
 | **Simon inverse** | Comme Simon, mais la séquence se répète **à l'envers** |
+| **Réflexe** | **Sans question** : premier à buzzer au signal, temps de réaction en ms |
+| **Chrono aveugle** | **Sans question** : buzzer quand on croit la durée cible atteinte |
 
 ### Chrono de buzz (jeux « Chrono ... » et « Vol »)
 
@@ -83,7 +85,7 @@ Le top est manuel sur la première réponse parce que la lecture de la question 
 
 Pendant le décompte, l'écran affiche les secondes restantes et une **barre qui se vide**, et sur les **3 dernières secondes** les LED des buzzers encore en lice **clignotent**. À l'expiration, un son d'échec est joué et la question est close sans que personne ne marque : l'écran des scores s'affiche avec le titre « TEMPS ECOULE ! ».
 
-Le pas de réglage est de 1 s (jusqu'à 60 s). Régler une durée sur `off` désactive le chrono correspondant — on retrouve alors le comportement sans limite de temps. Les six durées (2 par mode chrono) sont **sauvegardées en EEPROM** (adresses 1 à 6 ; l'adresse 0 est le volume) et rechargées au démarrage. Le chrono ne s'applique **pas** au bris d'égalité, ni aux jeux Simon qui ont leur propre délai.
+Le pas de réglage est de 1 s (jusqu'à 60 s). Régler une durée sur `off` désactive le chrono correspondant — on retrouve alors le comportement sans limite de temps. Les six durées (2 par mode chrono) sont **sauvegardées en EEPROM** (adresses 1 à 6 ; l'adresse 0 est le volume, les adresses 7 et 8 le nombre de manches du Réflexe et du Chrono aveugle) et rechargées au démarrage. Le chrono ne s'applique **pas** au bris d'égalité, ni aux jeux Simon qui ont leur propre délai.
 
 ### Vol — question adressée, avec possibilité de voler
 
@@ -103,9 +105,11 @@ Le joueur désigné doit appuyer sur son propre buzzer pour répondre (comme dan
 
 ### Banque de questions intégrée
 
-Une **banque de 1765 questions-réponses** (10 catégories de 170 à 180 : Culture generale, Histoire, Geographie, Sciences et nature, Sports, Musique, Cinema et tele, Quebec, Bouffe et cuisine, Mots et langue) est stockée en Flash — aucune SRAM consommée. La banque dépasse la barrière des 64 Ko adressables par les pointeurs `PROGMEM` classiques : elle est placée en **fin de Flash** (section `.fini1`) et lue en **adressage far 32 bits** (`pgm_read_byte_far`), ce qui laisse les petites chaînes du programme (`F()`) sous les 64 Ko. Les questions vivent dans [Questions.cpp](Questions.cpp) au format `"Question|Reponse\n"` : pour en ajouter, il suffit d'insérer des lignes (sans accents, sans `|`), le comptage est automatique au démarrage — jusqu'à **200 par catégorie** (limite de l'historique EEPROM, soit ~20 places libres par catégorie).
+Une **banque de 2000 questions-réponses** (10 catégories de 200 : Culture generale, Histoire, Geographie, Sciences et nature, Sports, Musique, Cinema et tele, Quebec, Bouffe et cuisine, Mots et langue) est stockée en Flash — aucune SRAM consommée. La banque dépasse la barrière des 64 Ko adressables par les pointeurs `PROGMEM` classiques : elle est placée en **fin de Flash** (section `.fini1`) et lue en **adressage far 32 bits** (`pgm_read_byte_far`), ce qui laisse les petites chaînes du programme (`F()`) sous les 64 Ko. Les questions vivent dans [Questions.cpp](Questions.cpp) au format `"Question|Reponse\n"` : pour en ajouter, il suffit d'insérer des lignes (sans accents, sans `|`), le comptage est automatique au démarrage — jusqu'à **400 par catégorie** (limite de l'historique EEPROM, soit 200 places libres par catégorie).
 
-Au lancement d'un quiz (`#` au menu — tous les jeux sauf Simon), deux écrans se présentent :
+Chaque question n'a qu'**une seule réponse valide** : les formulations qui en admettaient plusieurs (« quel grand animal dort debout ? » — cheval, mais girafe et éléphant aussi) ont été resserrées ou remplacées, parce qu'une réponse défendable refusée par l'animateur gâche une manche.
+
+Au lancement d'un quiz (`#` au menu — tous les jeux sauf Simon, Réflexe et Chrono aveugle), deux écrans se présentent :
 
 1. **Catégories** (`QUIZ_CATS`) — liste déroulante : `Toutes`, `Aucune (perso)` — pour jouer avec **son propre questionnaire** papier, comme avant —, puis les 10 catégories cochables. `2`/`8` déplacent le curseur, `5` coche/décoche `[x]`, `#` confirme (sur `Toutes`/`Aucune`, `#` applique directement ; sur une catégorie sans rien de coché, `#` sélectionne celle-là seule), `*` annule le lancement. La sélection est **mémorisée** d'une partie à l'autre.
 2. **Nombre de questions** (`QUIZ_COUNT`) — `Ouvert` (l'animateur termine avec `C`, comportement historique) ou une valeur de 1 à 99 (`2` = +1, `8` = −1). Quand le compte est atteint, la partie se termine d'elle-même sur l'écran des scores finaux. La limite s'applique aussi avec `Aucune` (questionnaire perso).
@@ -116,7 +120,7 @@ La **réponse s'affiche pour l'animateur** sur l'écran de jugement, seule sur s
 
 Les questions sont validées automatiquement (aucun doublon, aucun accent, format `Question|Reponse` respecté, réponse tenant sur une ligne, réponse jamais contenue dans sa propre question).
 
-**Anti-répétition** : chaque question posée est marquée dans un **bitmap en EEPROM** (persistant entre les soirées — adresses 16 à 265, 1 bit par question). Une question déjà posée ne ressort jamais, même des semaines plus tard, jusqu'à épuisement des catégories sélectionnées : l'historique de ces catégories est alors remis à zéro automatiquement et le tirage repart.
+**Anti-répétition** : chaque question posée est marquée dans un **bitmap en EEPROM** (persistant entre les soirées — adresses 16 à 515, 1 bit par question, 400 bits réservés par catégorie). L'adresse 15 porte la **version du plan** : si la capacité par catégorie change, les adresses du bitmap se décalent et l'historique est remis à zéro au démarrage plutôt que d'être relu de travers. Une question déjà posée ne ressort jamais, même des semaines plus tard, jusqu'à épuisement des catégories sélectionnées : l'historique de ces catégories est alors remis à zéro automatiquement et le tirage repart.
 
 ### Score des modes quiz (Classique / Pénalité / Chrono classique / Chrono pénalité / Vol)
 
@@ -153,6 +157,34 @@ La partie s'arrête à la **première erreur** : l'écran de fin affiche la **co
 
 Les durées du jeu (démonstration, écho des appuis, délai maxi) sont réglables via les `#define` en tête de [Simon.h](Simon.h).
 
+### Jeux en manches sans question (Réflexe, Chrono aveugle)
+
+Ces deux jeux ne posent **aucune question** : `#` au menu lance directement la partie, sans passer par le choix des catégories. Rien ne s'épuise, ils se rejouent indéfiniment, et ils s'adaptent au **nombre de buzzers déclarés présents** — à un seul joueur, ils deviennent une course au record personnel.
+
+Leur **nombre de manches** se règle depuis leur propre ligne du sous-menu `C`, qui sélectionne le jeu **et** ouvre son écran de réglage (même mécanique que les lignes « Chrono … »). Valeur de 1 à 20, 5 par défaut, `2`/`8` pour l'ajuster, **sauvegardée en EEPROM** (adresse 7 pour le Réflexe, 8 pour le Chrono aveugle) : chaque jeu a son propre réglage. Le nombre est **figé au lancement** de la partie, donc le modifier en cours de route n'affecte pas la partie déjà commencée.
+
+Chacun tient un **record persistant** en EEPROM, affiché sur l'écran de fin et signalé quand il tombe.
+
+### Réflexe — le plus rapide au signal
+
+Implémenté dans [Reflex.cpp](Reflex.cpp). Une manche se déroule ainsi : les LED s'éteignent, un **délai aléatoire de 2 à 8 s** s'écoule (`REFLEX_ARM`, « Attendez le signal… »), puis toutes les LED s'allument d'un coup (`REFLEX_GO`). Le premier à buzzer remporte la manche et son **temps de réaction s'affiche en millisecondes**.
+
+Buzzer **avant** le signal est un **faux départ** : l'écran nomme le fautif, il est éliminé pour la manche en cours (sa LED reste éteinte au signal) et les autres continuent sans lui. Si tout le monde brûle le départ, la manche est nulle ; si personne ne buzze dans les 3 s suivant le signal, elle l'est aussi.
+
+Le **signal officiel est la LED, pas le son** : un `digitalWrite` est instantané alors qu'une commande au DFPlayer met plusieurs millisecondes à partir, ce qui aurait faussé les temps. Le chronomètre part donc juste après l'allumage, et l'écran n'est redessiné qu'ensuite — jamais pendant la mesure. Le seul son de la manche est celui du buzzer du gagnant, joué au résultat.
+
+Le record conservé est le **meilleur temps de réaction** (adresses 516-517). Les délais du jeu sont réglables via les `#define` en tête de [Reflex.h](Reflex.h).
+
+### Chrono aveugle — buzzer à l'aveugle sur une durée
+
+Implémenté dans [BlindTimer.cpp](BlindTimer.cpp). La machine annonce une **durée cible tirée au sort entre 5 et 15 s** (`BLIND_ANNOUNCE`), l'animateur donne le départ avec `#`, puis **l'écran ne bouge plus** (`BLIND_RUN`). Chacun buzze quand il pense la cible atteinte ; le **plus proche** remporte la manche. Aucune connaissance n'est requise, donc petits et grands sont à égalité — c'est ce qui en fait un bon jeu de fin de soirée.
+
+Toutes les LED s'allument au départ et celle d'un joueur **s'éteint quand il a buzzé**. C'est le seul retour visuel : il confirme que l'appui est enregistré sans divulguer la moindre durée, et voir un adversaire s'engager avant soi fait partie du jeu.
+
+Rien ne doit donner de **référence temporelle** pendant la manche : aucun son n'est joué (la durée d'un extrait se compterait), aucune ligne de l'écran ne dépasse 20 colonnes (une ligne qui défile donne un rythme), et rien n'est redessiné. Un joueur qui ne buzze jamais est noté `----` : la manche est coupée 10 s après la cible.
+
+L'écran de résultat affiche la cible, le **temps de chacun** au dixième (deux joueurs par ligne), le gagnant et les scores. Le record conservé est le **plus petit écart** jamais réalisé, affiché au centième (adresses 518-519). Les bornes de la cible sont réglables via les `#define` en tête de [BlindTimer.h](BlindTimer.h).
+
 ## Assistant de configuration des buzzers (`A` au menu)
 
 L'assistant fait le tour des 4 buzzers (Rouge → Bleu → Jaune → Vert). Pour chacun :
@@ -174,10 +206,12 @@ La configuration est **optionnelle** : si on lance directement la partie (`#`), 
 |---------|------|
 | [Buzzer.ino](Buzzer.ino) | Point d'entrée, boucle principale et machine à états |
 | [PhaseMode.h](PhaseMode.h) | Énumération des états de l'application |
-| [GameMode.h](GameMode.h) | Énumération des jeux disponibles (Classique / Pénalité / Simon) |
+| [GameMode.h](GameMode.h) | Énumération des jeux disponibles (quiz, Simon, Réflexe, Chrono aveugle) |
 | [Configuration.cpp](Configuration.cpp) / [.h](Configuration.h) | Menus et écrans de configuration (dont le sous-menu des jeux) |
 | [Buzzer.cpp](Buzzer.cpp) / [.h](Buzzer.h) | Gestion des buzzers, LEDs et logique des jeux quiz (singleton) |
 | [Simon.cpp](Simon.cpp) / [.h](Simon.h) | Jeu collaboratif de mémoire « Simon » (à 4) |
+| [Reflex.cpp](Reflex.cpp) / [.h](Reflex.h) | Jeu de rapidité « Réflexe » (sans question, en manches) |
+| [BlindTimer.cpp](BlindTimer.cpp) / [.h](BlindTimer.h) | Jeu « Chrono aveugle » (sans question, en manches) |
 | [Questions.cpp](Questions.cpp) / [.h](Questions.h) | Banque de questions-réponses par catégorie (PROGMEM) |
 | [QuestionBank.cpp](QuestionBank.cpp) / [.h](QuestionBank.h) | Tirage sans répétition (historique en EEPROM), sélection de catégories |
 | [AppKeypad.h](AppKeypad.h) | Lecture du clavier matriciel et détection du reset (singleton) |

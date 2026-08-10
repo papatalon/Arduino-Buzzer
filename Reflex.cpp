@@ -7,7 +7,7 @@ void Reflex::reset() {
     falseStart[i] = false;
   }
   round = 0;
-  totalRounds = buzzer.getReflexRounds();
+  totalRounds = buzzer.getGameRounds(GAME_REFLEX);
   aborted = false;
   bestMs = 0;
   newRecord = false;

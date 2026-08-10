@@ -7,6 +7,7 @@
 #include "Buzzer.h"
 #include "Simon.h"
 #include "Reflex.h"
+#include "BlindTimer.h"
 #include "Mp3.h"
 #include "QuestionBank.h"
 
@@ -19,6 +20,7 @@ AppKeypad& appKeypad = AppKeypad::shared();
 Configuration configuration;
 Simon simon;
 Reflex reflex;
+BlindTimer blindTimer;
 Buzzer& buzzer = Buzzer::shared();
 //OledDisplay& display = OledDisplay::shared();
 Mp3& mp3 = Mp3::shared();
@@ -154,8 +156,8 @@ PhaseMode getCurrentMode() {
     case SIMON_OVER:
       mode = simon.gameOver(pressedKey);
       break;
-    case REFLEX_SETUP:
-      mode = configuration.reflexRounds(pressedKey);
+    case ROUNDS_SETUP:
+      mode = configuration.roundsScreen(pressedKey);
       break;
     case REFLEX_ARM:
       mode = reflex.arm(pressedKey);
@@ -168,6 +170,18 @@ PhaseMode getCurrentMode() {
       break;
     case REFLEX_OVER:
       mode = reflex.gameOver(pressedKey);
+      break;
+    case BLIND_ANNOUNCE:
+      mode = blindTimer.announce(pressedKey);
+      break;
+    case BLIND_RUN:
+      mode = blindTimer.run(pressedKey);
+      break;
+    case BLIND_RESULT:
+      mode = blindTimer.result(pressedKey);
+      break;
+    case BLIND_OVER:
+      mode = blindTimer.gameOver(pressedKey);
       break;
     case LED_TEST:
       mode = buzzer.ledTest(pressedKey);
@@ -204,7 +218,8 @@ void updateMode() {
       break;
     case INTRO:
       simon.reset();      // nouvelle partie : sequence Simon repartie de zero
-      reflex.reset();     // ... et scores du Reflexe remis a zero
+      reflex.reset();     // ... et scores des jeux en manches remis a zero
+      blindTimer.reset();
       buzzer.setIntro();
       break;
     case WAITING_BUZZER:
@@ -249,8 +264,8 @@ void updateMode() {
     case SIMON_OVER:
       simon.setGameOver();
       break;
-    case REFLEX_SETUP:
-      configuration.setReflexRounds();
+    case ROUNDS_SETUP:
+      configuration.setRoundsScreen();
       break;
     case REFLEX_ARM:
       reflex.setArm();
@@ -263,6 +278,18 @@ void updateMode() {
       break;
     case REFLEX_OVER:
       reflex.setGameOver();
+      break;
+    case BLIND_ANNOUNCE:
+      blindTimer.setAnnounce();
+      break;
+    case BLIND_RUN:
+      blindTimer.setRun();
+      break;
+    case BLIND_RESULT:
+      blindTimer.setResult();
+      break;
+    case BLIND_OVER:
+      blindTimer.setGameOver();
       break;
     case LED_TEST:
       buzzer.setLedTest();

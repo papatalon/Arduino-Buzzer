@@ -12,7 +12,9 @@
 #define EEPROM_ADDR_PENALTY_NEXT 4
 #define EEPROM_ADDR_VOL_FIRST 5
 #define EEPROM_ADDR_VOL_NEXT 6
-#define EEPROM_ADDR_REFLEX_ROUNDS 7   // nombre de manches du jeu Réflexe
+// Manches par jeu : 7 = Réflexe, 8 = Chrono aveugle.
+#define EEPROM_ADDR_ROUNDS_REFLEX 7
+#define EEPROM_ADDR_ROUNDS_BLIND 8
 
 Buzzer::Buzzer() {}
 
@@ -29,7 +31,7 @@ void Buzzer::init() {
     pinMode(buzzers[buzzerId][1],INPUT_PULLUP);
   }
   loadBuzzTimes();
-  loadReflexRounds();
+  loadGameRounds();
 }
 
 void Buzzer::resetLights() {
@@ -471,6 +473,9 @@ void Buzzer::setIntro() {
   } else if (gameMode == GAME_REFLEX) {
     display.setText("     Reflexes :", 1);
     display.setText("  le plus rapide !", 2);
+  } else if (gameMode == GAME_BLIND) {
+    display.setText("  Chrono aveugle :", 1);
+    display.setText("  fiez-vous a vous", 2);
   } else {
     display.setText("  Que le meilleur", 1);
     display.setText("     gagne !", 2);
@@ -486,6 +491,9 @@ PhaseMode Buzzer::intro(char pressedKey) {
     resetLights();
     if (gameMode == GAME_REFLEX) {
       return REFLEX_ARM;
+    }
+    if (gameMode == GAME_BLIND) {
+      return BLIND_ANNOUNCE;
     }
     bool isSimon = (gameMode == GAME_SIMON || gameMode == GAME_SIMON_REVERSE);
     return isSimon ? SIMON_SHOW : WAITING_BUZZER;
@@ -709,6 +717,7 @@ const char* Buzzer::gameModeName(GameMode mode) {
     case GAME_SIMON:          return "Simon";
     case GAME_SIMON_REVERSE:  return "Simon inverse";
     case GAME_REFLEX:         return "Reflexe";
+    case GAME_BLIND:          return "Chrono aveugle";
     default:                  return "Classique";
   }
 }
@@ -771,25 +780,37 @@ void Buzzer::saveBuzzTimes() {
   EEPROM.update(EEPROM_ADDR_VOL_NEXT, (uint8_t)nextBuzzTime[2]);
 }
 
+// === Nombre de manches (jeux qui se jouent en manches) ===
+// Deux jeux de valeurs : slot 0 pour le Réflexe, slot 1 pour le Chrono
+// aveugle. Les autres jeux n'utilisent pas ce réglage.
+static int gameRoundsSlot(GameMode mode) {
+  return (mode == GAME_BLIND) ? 1 : 0;
+}
+
 // Même principe que les durées de chrono : une case jamais écrite vaut 255,
 // hors plage, et on garde alors la valeur par défaut.
-void Buzzer::loadReflexRounds() {
-  int stored = EEPROM.read(EEPROM_ADDR_REFLEX_ROUNDS);
-  if (stored >= REFLEX_ROUNDS_MIN && stored <= REFLEX_ROUNDS_MAX) {
-    reflexRounds = stored;
+void Buzzer::loadGameRounds() {
+  int stored = EEPROM.read(EEPROM_ADDR_ROUNDS_REFLEX);
+  if (stored >= GAME_ROUNDS_MIN && stored <= GAME_ROUNDS_MAX) {
+    gameRounds[0] = stored;
+  }
+  stored = EEPROM.read(EEPROM_ADDR_ROUNDS_BLIND);
+  if (stored >= GAME_ROUNDS_MIN && stored <= GAME_ROUNDS_MAX) {
+    gameRounds[1] = stored;
   }
 }
 
-void Buzzer::saveReflexRounds() {
-  EEPROM.update(EEPROM_ADDR_REFLEX_ROUNDS, (uint8_t)reflexRounds);
+void Buzzer::saveGameRounds() {
+  EEPROM.update(EEPROM_ADDR_ROUNDS_REFLEX, (uint8_t)gameRounds[0]);
+  EEPROM.update(EEPROM_ADDR_ROUNDS_BLIND, (uint8_t)gameRounds[1]);
 }
 
-int Buzzer::getReflexRounds() {
-  return reflexRounds;
+int Buzzer::getGameRounds(GameMode mode) {
+  return gameRounds[gameRoundsSlot(mode)];
 }
 
-void Buzzer::setReflexRounds(int n) {
-  reflexRounds = constrain(n, REFLEX_ROUNDS_MIN, REFLEX_ROUNDS_MAX);
+void Buzzer::setGameRounds(GameMode mode, int n) {
+  gameRounds[gameRoundsSlot(mode)] = constrain(n, GAME_ROUNDS_MIN, GAME_ROUNDS_MAX);
 }
 
 int Buzzer::getFirstBuzzTime(GameMode mode) {

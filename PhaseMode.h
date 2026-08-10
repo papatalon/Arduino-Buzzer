@@ -24,11 +24,15 @@ enum PhaseMode {
     SIMON_SHOW,     // Simon : demonstration de la sequence
     SIMON_PLAY,     // Simon : les joueurs repetent la sequence
     SIMON_OVER,     // Simon : fin de partie (niveau atteint)
-    REFLEX_SETUP,   // Reflexe : reglage du nombre de manches
+    ROUNDS_SETUP,   // reglage du nombre de manches (Reflexe, Chrono aveugle)
     REFLEX_ARM,     // Reflexe : attente du signal (buzzer = faux depart)
     REFLEX_GO,      // Reflexe : signal donne, course au buzz
     REFLEX_RESULT,  // Reflexe : resultat de la manche (temps de reaction)
     REFLEX_OVER,    // Reflexe : fin de partie (scores + record)
+    BLIND_ANNOUNCE, // Chrono aveugle : cible annoncee, attente du depart
+    BLIND_RUN,      // Chrono aveugle : chrono en cours, ecran fige
+    BLIND_RESULT,   // Chrono aveugle : temps de chacun et gagnant de la manche
+    BLIND_OVER,     // Chrono aveugle : fin de partie (scores + record)
     LED_TEST        // mode cache de test cablage (LED + boutons), entree *1
 };
 
