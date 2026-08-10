@@ -154,6 +154,9 @@ PhaseMode getCurrentMode() {
     case SIMON_OVER:
       mode = simon.gameOver(pressedKey);
       break;
+    case REFLEX_SETUP:
+      mode = configuration.reflexRounds(pressedKey);
+      break;
     case REFLEX_ARM:
       mode = reflex.arm(pressedKey);
       break;
@@ -245,6 +248,9 @@ void updateMode() {
       break;
     case SIMON_OVER:
       simon.setGameOver();
+      break;
+    case REFLEX_SETUP:
+      configuration.setReflexRounds();
       break;
     case REFLEX_ARM:
       reflex.setArm();

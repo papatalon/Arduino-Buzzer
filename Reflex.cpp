@@ -7,6 +7,7 @@ void Reflex::reset() {
     falseStart[i] = false;
   }
   round = 0;
+  totalRounds = buzzer.getReflexRounds();
   aborted = false;
   bestMs = 0;
   newRecord = false;
@@ -66,7 +67,9 @@ void Reflex::setArm() {
   armStart = millis();
 
   display.clear();
-  display.setText(String("REFLEXE  Manche ") + round + "/" + REFLEX_ROUNDS, 0);
+  // Une seule espace apres REFLEXE : au pire ("20/20") la ligne fait pile les
+  // 20 colonnes du LCD, donc elle ne se met jamais a defiler.
+  display.setText(String("REFLEXE Manche ") + round + "/" + totalRounds, 0);
   display.setText("Attendez le signal..", 1);
   display.setText("C: terminer", 3);
 }
@@ -170,7 +173,7 @@ void Reflex::setResult() {
   }
 
   display.setText(scoreLine(), 2);
-  display.setText(round >= REFLEX_ROUNDS ? "#: resultats" : "#: manche suivante", 3);
+  display.setText(round >= totalRounds ? "#: resultats" : "#: manche suivante", 3);
 }
 
 PhaseMode Reflex::result(char pressedKey) {
@@ -179,7 +182,7 @@ PhaseMode Reflex::result(char pressedKey) {
     return REFLEX_OVER;
   }
   if (pressedKey == '#') {
-    return (round >= REFLEX_ROUNDS) ? REFLEX_OVER : REFLEX_ARM;
+    return (round >= totalRounds) ? REFLEX_OVER : REFLEX_ARM;
   }
   return REFLEX_RESULT;
 }

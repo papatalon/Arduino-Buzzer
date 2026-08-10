@@ -12,6 +12,7 @@
 #define EEPROM_ADDR_PENALTY_NEXT 4
 #define EEPROM_ADDR_VOL_FIRST 5
 #define EEPROM_ADDR_VOL_NEXT 6
+#define EEPROM_ADDR_REFLEX_ROUNDS 7   // nombre de manches du jeu Réflexe
 
 Buzzer::Buzzer() {}
 
@@ -28,6 +29,7 @@ void Buzzer::init() {
     pinMode(buzzers[buzzerId][1],INPUT_PULLUP);
   }
   loadBuzzTimes();
+  loadReflexRounds();
 }
 
 void Buzzer::resetLights() {
@@ -767,6 +769,27 @@ void Buzzer::saveBuzzTimes() {
   EEPROM.update(EEPROM_ADDR_PENALTY_NEXT, (uint8_t)nextBuzzTime[1]);
   EEPROM.update(EEPROM_ADDR_VOL_FIRST, (uint8_t)firstBuzzTime[2]);
   EEPROM.update(EEPROM_ADDR_VOL_NEXT, (uint8_t)nextBuzzTime[2]);
+}
+
+// Même principe que les durées de chrono : une case jamais écrite vaut 255,
+// hors plage, et on garde alors la valeur par défaut.
+void Buzzer::loadReflexRounds() {
+  int stored = EEPROM.read(EEPROM_ADDR_REFLEX_ROUNDS);
+  if (stored >= REFLEX_ROUNDS_MIN && stored <= REFLEX_ROUNDS_MAX) {
+    reflexRounds = stored;
+  }
+}
+
+void Buzzer::saveReflexRounds() {
+  EEPROM.update(EEPROM_ADDR_REFLEX_ROUNDS, (uint8_t)reflexRounds);
+}
+
+int Buzzer::getReflexRounds() {
+  return reflexRounds;
+}
+
+void Buzzer::setReflexRounds(int n) {
+  reflexRounds = constrain(n, REFLEX_ROUNDS_MIN, REFLEX_ROUNDS_MAX);
 }
 
 int Buzzer::getFirstBuzzTime(GameMode mode) {

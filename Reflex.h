@@ -6,7 +6,9 @@
 #include "Mp3.h"
 #include "Buzzer.h"
 
-#define REFLEX_ROUNDS 5              // manches d'une partie
+// Le nombre de manches d'une partie se regle dans le menu (ligne "Reflexe" de
+// la liste des jeux) et vit dans Buzzer, avec les autres reglages persistants :
+// voir REFLEX_ROUNDS_MIN/MAX/DEFAULT et getReflexRounds() dans Buzzer.h.
 #define REFLEX_WAIT_MIN_MS 2000      // delai mini avant le signal
 #define REFLEX_WAIT_MAX_MS 8000      // delai maxi avant le signal
 #define REFLEX_ANSWER_MS 3000        // delai maxi pour buzzer apres le signal
@@ -51,7 +53,10 @@ private:
   int scores[4] = { 0, 0, 0, 0 };
   bool falseStart[4] = { false, false, false, false };  // elimine de la manche
 
-  int round = 0;                 // manche en cours (1..REFLEX_ROUNDS)
+  int round = 0;                 // manche en cours (1..totalRounds)
+  // Nombre de manches de LA partie en cours, fige par reset() : changer le
+  // reglage dans le menu n'affecte donc pas une partie deja commencee.
+  int totalRounds = REFLEX_ROUNDS_DEFAULT;
   bool aborted = false;          // partie terminee par l'animateur (C)
 
   // Attente du signal.

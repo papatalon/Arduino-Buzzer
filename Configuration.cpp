@@ -73,11 +73,14 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
 // et des réglages (qui ouvrent un écran dédié, ex. le chrono d'un mode donné).
 // Ajouter une ligne : l'insérer ici, à la position voulue — l'affichage et le
 // défilement s'adaptent tout seuls (rien d'autre à changer).
-enum GameListKind { GLK_GAME, GLK_CHRONO };
+// GLK_GAME : la ligne se contente d'activer le jeu. GLK_CHRONO et GLK_ROUNDS
+// l'activent AUSSI, puis ouvrent son écran de réglage (durées du chrono,
+// nombre de manches du Réflexe).
+enum GameListKind { GLK_GAME, GLK_CHRONO, GLK_ROUNDS };
 struct GameListItem {
   const char* label;
   GameListKind kind;
-  GameMode target;   // GLK_GAME : jeu à activer ; GLK_CHRONO : mode dont on règle le chrono
+  GameMode target;   // jeu à activer (et dont on règle le paramètre, si réglage)
 };
 
 static const GameListItem GAME_LIST[] = {
@@ -88,7 +91,7 @@ static const GameListItem GAME_LIST[] = {
   { "Vol",              GLK_CHRONO, GAME_VOL },
   { "Simon (a 4)",      GLK_GAME,   GAME_SIMON },
   { "Simon inverse",    GLK_GAME,   GAME_SIMON_REVERSE },
-  { "Reflexe",          GLK_GAME,   GAME_REFLEX },
+  { "Reflexe",          GLK_ROUNDS, GAME_REFLEX },
 };
 #define GAME_LIST_COUNT (sizeof(GAME_LIST) / sizeof(GAME_LIST[0]))
 
@@ -159,6 +162,9 @@ PhaseMode Configuration::gameChoice(char pressedKey) {
         chronoTargetMode = item.target;   // quel mode régler (Classique/Pénalité)
         return CHRONO;
       }
+      if (item.kind == GLK_ROUNDS) {
+        return REFLEX_SETUP;              // nombre de manches du Réflexe
+      }
       return CONFIGURATION;
     }
     case '*':
@@ -225,6 +231,46 @@ PhaseMode Configuration::chronoScreen(char pressedKey) {
       return CONFIGURATION;         // annule : retour au menu principal
   }
   return CHRONO;
+}
+
+// Nombre de manches du Réflexe : mêmes touches que l'écran du chrono
+// ("2=+  8=-"), valeur en surbrillance avec "> ". Le réglage est conservé en
+// EEPROM, donc proposé tel quel à la prochaine partie.
+void Configuration::showRoundsValue() {
+  display.setText(String("> ") + roundsCursor, 2);
+}
+
+void Configuration::setReflexRounds() {
+  roundsCursor = buzzer.getReflexRounds();
+  display.clear();
+  display.setText("REFLEXE", 0);
+  display.setText("Nombre de manches", 1);
+  showRoundsValue();
+  display.setText("2=+  8=-  #OK *:ann", 3);
+}
+
+PhaseMode Configuration::reflexRounds(char pressedKey) {
+  switch (pressedKey) {
+    case '2':
+      if (roundsCursor < REFLEX_ROUNDS_MAX) {
+        roundsCursor++;
+      }
+      showRoundsValue();
+      break;
+    case '8':
+      if (roundsCursor > REFLEX_ROUNDS_MIN) {
+        roundsCursor--;
+      }
+      showRoundsValue();
+      break;
+    case '#':
+      buzzer.setReflexRounds(roundsCursor);
+      buzzer.saveReflexRounds();    // conservé après extinction
+      return CONFIGURATION;
+    case '*':
+      return CONFIGURATION;         // annule : le nombre de manches ne change pas
+  }
+  return REFLEX_SETUP;
 }
 
 // ============================================================

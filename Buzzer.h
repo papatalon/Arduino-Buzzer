@@ -18,6 +18,9 @@
 #define BOOT_DOT_MS 300          // vitesse des points animes du message de demarrage
 #define EQ_FRAME_MS 150          // duree d'une image de l'egaliseur (redessin I2C lent)
 #define BUZZ_TIME_MAX 60         // duree maxi reglable du chrono de buzz (secondes)
+#define REFLEX_ROUNDS_MIN 1      // nombre de manches du jeu Reflexe : mini
+#define REFLEX_ROUNDS_MAX 20     // ... maxi
+#define REFLEX_ROUNDS_DEFAULT 5  // ... valeur par defaut (avant tout reglage)
 #define BUZZ_WARN_MS 3000        // les LED clignotent sur les dernieres secondes
 #define BUZZ_WARN_BLINK_MS 200   // periode du clignotement de fin de chrono
 #define VOL_SPIN_SIM_MS 11000        // duree simulee du tirage (pas de BUSY), calee sur le son
@@ -104,6 +107,12 @@ public:
     void setNextBuzzTime(GameMode mode, int seconds);
     void saveBuzzTimes();
     void startBuzzTimer();                   // « top » de l'animateur
+
+    // Nombre de manches d'une partie de Réflexe, réglé depuis la liste des
+    // jeux et sauvegardé en EEPROM (comme les durées de chrono).
+    int getReflexRounds();
+    void setReflexRounds(int n);
+    void saveReflexRounds();
 
     void setIntro();                         // lance le chenillard d'intro
     PhaseMode intro(char pressedKey);
@@ -207,7 +216,10 @@ private:
   // Répartit un texte sur plusieurs lignes de l'écran (coupe aux espaces).
   void wrapText(String text, int from, int to);
 
+  int reflexRounds = REFLEX_ROUNDS_DEFAULT;   // manches d'une partie de Réflexe
+
   void loadBuzzTimes();             // relit les durées sauvegardées (EEPROM)
+  void loadReflexRounds();          // idem pour le nombre de manches du Réflexe
   void drawBuzzTimer(unsigned long remaining);   // barre + secondes restantes
   PhaseMode tickBuzzTimer();        // décompte : SHOW_SCORES si temps écoulé
 

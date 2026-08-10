@@ -15,6 +15,8 @@ public:
     PhaseMode gameChoice(char pressedKey);
     void setChronoScreen();                  // reglage des durees du chrono
     PhaseMode chronoScreen(char pressedKey);
+    void setReflexRounds();                  // reglage du nb de manches du Reflexe
+    PhaseMode reflexRounds(char pressedKey);
     void setQuizCats();                      // lancement quiz : categories
     PhaseMode quizCats(char pressedKey);
     void setQuizCount();                     // lancement quiz : nb de questions
@@ -62,6 +64,11 @@ private:
   GameMode chronoTargetMode = GAME_CLASSIC;
   int chronoCursor = 0;      // valeur (secondes) en cours de réglage
   void showChronoStep();
+
+  // Réglage du nombre de manches du Réflexe, ouvert depuis la ligne "Reflexe"
+  // de la liste déroulante (qui sélectionne aussi le jeu, comme le Chrono).
+  int roundsCursor = REFLEX_ROUNDS_DEFAULT;
+  void showRoundsValue();
 
   // Lancement d'un quiz : écran des catégories de questions (liste
   // déroulante multi-sélection : "Toutes", "Aucune" = questionnaire perso,
