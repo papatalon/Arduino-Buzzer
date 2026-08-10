@@ -1,7 +1,14 @@
 #include "AppKeypad.h"
 #include "PhaseMode.h"
 
-AppKeypad::AppKeypad() {}
+// La librairie Keypad debounce a 10 ms par defaut : trop court pour un
+// clavier membrane bon marche, ce qui peut faire lire une touche deux fois
+// pour un seul appui (ex. "2" pour regler le nombre de questions compte pour
+// 2 incrementations au lieu d'une). 25 ms filtre ce rebond sans ajouter de
+// latence perceptible.
+AppKeypad::AppKeypad() {
+  customKeypad.setDebounceTime(25);
+}
 
 // === Required for Singletons ===
 // Define the single instance as a static member
