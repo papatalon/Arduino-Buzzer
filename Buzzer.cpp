@@ -327,7 +327,10 @@ void Buzzer::setWaitingForBuzzer() {
   if (bankOn) {
     // La question a besoin de place : elle occupe les lignes 1 à 3 (60
     // colonnes), de quoi l'afficher d'un bloc dans la quasi-totalité des
-    // cas. Le titre est donc réduit et porte le rappel du « top ».
+    // cas. Le titre est donc réduit, et porte aussi les rappels de touches
+    // (plus de place pour eux ailleurs) : « 0:passer » et « C:fin » sont
+    // sinon invisibles en mode banque. Si ça dépasse 20 colonnes (Vol +
+    // chrono + tour affiché), le titre défile — l'affichage gère ça tout seul.
     String head = String("Q") + questionNumber;
     if (gameMode == GAME_VOL && !secondaryRound) {
       head += " Tour:" + String(colorName(volTurn));
@@ -335,6 +338,7 @@ void Buzzer::setWaitingForBuzzer() {
     if (timerLimit > 0) {
       head += "  D:top";
     }
+    head += "  0:pass C:fin";
     display.setText(head, 0);
     wrapText(bank.questionText(), 1, 3);
     return;
@@ -443,8 +447,7 @@ PhaseMode Buzzer::buzzerIsPressed(PhaseMode currentMode, char pressedKey) {
       return WAITING_BUZZER;    // même question, les autres peuvent répondre
       break;
     case '0':
-      Buzzer::skipQuestion();
-      return SHOW_SCORES;       // question abandonnée -> écran des scores
+      return Buzzer::skipQuestion();   // question abandonnée -> écran des scores (ou réponse d'abord)
     default:
       return currentMode;
   };
@@ -557,10 +560,11 @@ void Buzzer::ledChaseEnabled(unsigned long elapsed) {
   setLed(pool[volSpinStepIndex % count], true);
 }
 
-void Buzzer::skipQuestion() {
+PhaseMode Buzzer::skipQuestion() {
   if (tiebreak) {
-    return;                  // pas de "passer" pendant un bris d'égalité
+    return SHOW_SCORES;      // pas de "passer" pendant un bris d'égalité
   }
+  bool bankOn = QuestionBank::shared().isActive();
   resetLights();
   resetAllBuzzers();         // tous les buzzers présents redeviennent actifs
   lastJudgedBuzzer = -1;     // plus de décision à corriger
@@ -570,6 +574,24 @@ void Buzzer::skipQuestion() {
   if (gameMode == GAME_VOL) {
     volTurn = nextEnabledBuzzer(volTurn);   // au suivant, même sans réponse
   }
+  // Banque active : personne n'a répondu, donc personne ne connaît la
+  // réponse — on la montre avant l'écran des scores.
+  return bankOn ? ANSWER_REVEAL : SHOW_SCORES;
+}
+
+// === Question passée sans réponse : révèle la réponse (banque) ===
+void Buzzer::setAnswerReveal() {
+  display.clear();
+  display.setText("Personne n'a repondu", 0);
+  wrapText(String("Rep: ") + QuestionBank::shared().answerText(), 1, 2);
+  display.setText("        # : suite", 3);
+}
+
+PhaseMode Buzzer::answerReveal(char pressedKey) {
+  if (pressedKey == '#') {
+    return SHOW_SCORES;
+  }
+  return ANSWER_REVEAL;
 }
 
 void Buzzer::goodAnswer() {
@@ -823,8 +845,7 @@ PhaseMode Buzzer::tickBuzzTimer() {
     }
 
     timeUp = true;
-    skipQuestion();            // personne ne marque, on passe à la suivante
-    return SHOW_SCORES;
+    return skipQuestion();     // personne ne marque, on passe à la suivante (ou réponse d'abord)
   }
 
   drawBuzzTimer((unsigned long)remaining);

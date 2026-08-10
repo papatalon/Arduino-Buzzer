@@ -12,6 +12,7 @@ enum PhaseMode {
     INTRO,
     WAITING_BUZZER,
     BUZZER_PRESSED,
+    ANSWER_REVEAL,  // question passee (personne n'a repondu) : affiche la reponse (banque)
     SHOW_SCORES,
     END_CONFIRM,
     END_GAME,

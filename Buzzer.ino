@@ -102,8 +102,7 @@ PhaseMode getCurrentMode() {
       } else if (pressedKey == 'B') {
         mode = buzzer.correctLastDecision(currentMode);  // corriger la derniere decision
       } else if (pressedKey == '0') {
-        buzzer.skipQuestion();          // passer la question (personne ne marque)
-        mode = SHOW_SCORES;             // montre les scores avant la suivante
+        mode = buzzer.skipQuestion();   // passer la question -> scores (ou reponse d'abord)
       } else if (pressedKey == 'D') {
         buzzer.startBuzzTimer();        // "top" : lance le chrono de buzz
         mode = buzzer.waitingBuzzerIsPressed(currentMode);
@@ -116,6 +115,9 @@ PhaseMode getCurrentMode() {
       break;
     case BUZZER_PRESSED:
       mode = buzzer.buzzerIsPressed(currentMode, pressedKey);
+      break;
+    case ANSWER_REVEAL:
+      mode = buzzer.answerReveal(pressedKey);
       break;
     case SHOW_SCORES:
       mode = buzzer.showScores(pressedKey);
@@ -192,6 +194,9 @@ void updateMode() {
       break;
     case BUZZER_PRESSED:
       buzzer.setBuzzerPressed();
+      break;
+    case ANSWER_REVEAL:
+      buzzer.setAnswerReveal();
       break;
     case SHOW_SCORES:
       buzzer.setShowScores();

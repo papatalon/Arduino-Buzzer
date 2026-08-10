@@ -69,6 +69,11 @@ public:
     void setBuzzerPressed();
     PhaseMode buzzerIsPressed(PhaseMode currentMode, char pressedKey);
 
+    // Question passée sans réponse (banque active) : affiche la réponse
+    // avant l'écran des scores, pour que l'animateur la découvre aussi.
+    void setAnswerReveal();
+    PhaseMode answerReveal(char pressedKey);
+
     // Assistant de configuration
     void resetConfigState();                 // ré-active tout, remet l'anti-rebond
     void setEnabled(int buzzerId, bool value);
@@ -103,7 +108,10 @@ public:
     void setIntro();                         // lance le chenillard d'intro
     PhaseMode intro(char pressedKey);
 
-    void skipQuestion();                     // passer la question (personne ne marque)
+    // Passer la question (personne ne marque). Renvoie ANSWER_REVEAL si la
+    // banque est active (pour montrer la réponse à l'animateur), sinon
+    // directement SHOW_SCORES.
+    PhaseMode skipQuestion();
 
     // Nombre de questions de la partie (0 = ouvert : l'animateur termine
     // avec C). Choisi sur l'écran QUIZ_COUNT au lancement.
