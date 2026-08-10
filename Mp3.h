@@ -42,6 +42,11 @@ class Mp3 {
     bool isSimulation();
 
     void playBuzzer(int buzzerId);
+
+    // Joue un son quelconque du dossier des buzzers (index 0-based), même s'il
+    // n'est attribué à aucun buzzer : sert aux « leurres » du jeu Ne buzze pas.
+    void playBuzzerSound(int soundIndex);
+    int buzzerSoundPoolSize();              // nombre de sons disponibles
     void playGoodAnswer();
     void playBadAnswer();
     void playWaiting();     // son d'ambiance quand la réponse se fait attendre

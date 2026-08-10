@@ -33,6 +33,10 @@ enum PhaseMode {
     BLIND_RUN,      // Chrono aveugle : chrono en cours, ecran fige
     BLIND_RESULT,   // Chrono aveugle : temps de chacun et gagnant de la manche
     BLIND_OVER,     // Chrono aveugle : fin de partie (scores + record)
+    SOUND_SETUP,    // Ne buzze pas : reglage (nb de sons, puis leurres)
+    SOUND_LEARN,    // Ne buzze pas : apprentissage des 4 sons
+    SOUND_PLAY,     // Ne buzze pas : flux continu de sons
+    SOUND_OVER,     // Ne buzze pas : fin de partie (scores)
     LED_TEST        // mode cache de test cablage (LED + boutons), entree *1
 };
 

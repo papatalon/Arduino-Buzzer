@@ -71,6 +71,7 @@ La touche `C` du menu ouvre le **sous-menu des jeux**. Le jeu sélectionné s'af
 | **Simon inverse** | Comme Simon, mais la séquence se répète **à l'envers** |
 | **Réflexe** | **Sans question** : premier à buzzer au signal, temps de réaction en ms |
 | **Chrono aveugle** | **Sans question** : buzzer quand on croit la durée cible atteinte |
+| **Ne buzze pas** | **Sans question** : flux de sons, buzzer **seulement** sur le sien |
 
 ### Chrono de buzz (jeux « Chrono ... » et « Vol »)
 
@@ -85,7 +86,7 @@ Le top est manuel sur la première réponse parce que la lecture de la question 
 
 Pendant le décompte, l'écran affiche les secondes restantes et une **barre qui se vide**, et sur les **3 dernières secondes** les LED des buzzers encore en lice **clignotent**. À l'expiration, un son d'échec est joué et la question est close sans que personne ne marque : l'écran des scores s'affiche avec le titre « TEMPS ECOULE ! ».
 
-Le pas de réglage est de 1 s (jusqu'à 60 s). Régler une durée sur `off` désactive le chrono correspondant — on retrouve alors le comportement sans limite de temps. Les six durées (2 par mode chrono) sont **sauvegardées en EEPROM** (adresses 1 à 6 ; l'adresse 0 est le volume, les adresses 7 et 8 le nombre de manches du Réflexe et du Chrono aveugle) et rechargées au démarrage. Le chrono ne s'applique **pas** au bris d'égalité, ni aux jeux Simon qui ont leur propre délai.
+Le pas de réglage est de 1 s (jusqu'à 60 s). Régler une durée sur `off` désactive le chrono correspondant — on retrouve alors le comportement sans limite de temps. Les six durées (2 par mode chrono) sont **sauvegardées en EEPROM** (adresses 1 à 6 ; l'adresse 0 est le volume, les adresses 7 à 9 le nombre de manches des jeux qui se jouent en manches, l'adresse 10 les leurres de Ne buzze pas) et rechargées au démarrage. Le chrono ne s'applique **pas** au bris d'égalité, ni aux jeux Simon qui ont leur propre délai.
 
 ### Vol — question adressée, avec possibilité de voler
 
@@ -109,7 +110,7 @@ Une **banque de 2000 questions-réponses** (10 catégories de 200 : Culture gene
 
 Chaque question n'a qu'**une seule réponse valide** : les formulations qui en admettaient plusieurs (« quel grand animal dort debout ? » — cheval, mais girafe et éléphant aussi) ont été resserrées ou remplacées, parce qu'une réponse défendable refusée par l'animateur gâche une manche.
 
-Au lancement d'un quiz (`#` au menu — tous les jeux sauf Simon, Réflexe et Chrono aveugle), deux écrans se présentent :
+Au lancement d'un quiz (`#` au menu — tous les jeux sauf Simon et les trois jeux sans question), deux écrans se présentent :
 
 1. **Catégories** (`QUIZ_CATS`) — liste déroulante : `Toutes`, `Aucune (perso)` — pour jouer avec **son propre questionnaire** papier, comme avant —, puis les 10 catégories cochables. `2`/`8` déplacent le curseur, `5` coche/décoche `[x]`, `#` confirme (sur `Toutes`/`Aucune`, `#` applique directement ; sur une catégorie sans rien de coché, `#` sélectionne celle-là seule), `*` annule le lancement. La sélection est **mémorisée** d'une partie à l'autre.
 2. **Nombre de questions** (`QUIZ_COUNT`) — `Ouvert` (l'animateur termine avec `C`, comportement historique) ou une valeur de 1 à 99 (`2` = +1, `8` = −1). Quand le compte est atteint, la partie se termine d'elle-même sur l'écran des scores finaux. La limite s'applique aussi avec `Aucune` (questionnaire perso).
@@ -157,13 +158,13 @@ La partie s'arrête à la **première erreur** : l'écran de fin affiche la **co
 
 Les durées du jeu (démonstration, écho des appuis, délai maxi) sont réglables via les `#define` en tête de [Simon.h](Simon.h).
 
-### Jeux en manches sans question (Réflexe, Chrono aveugle)
+### Jeux en manches sans question (Réflexe, Chrono aveugle, Ne buzze pas)
 
-Ces deux jeux ne posent **aucune question** : `#` au menu lance directement la partie, sans passer par le choix des catégories. Rien ne s'épuise, ils se rejouent indéfiniment, et ils s'adaptent au **nombre de buzzers déclarés présents** — à un seul joueur, ils deviennent une course au record personnel.
+Ces trois jeux ne posent **aucune question** : `#` au menu lance directement la partie, sans passer par le choix des catégories. Rien ne s'épuise, ils se rejouent indéfiniment, et ils s'adaptent au **nombre de buzzers déclarés présents** — à un seul joueur, ils deviennent une course au record personnel.
 
-Leur **nombre de manches** se règle depuis leur propre ligne du sous-menu `C`, qui sélectionne le jeu **et** ouvre son écran de réglage (même mécanique que les lignes « Chrono … »). Valeur de 1 à 20, 5 par défaut, `2`/`8` pour l'ajuster, **sauvegardée en EEPROM** (adresse 7 pour le Réflexe, 8 pour le Chrono aveugle) : chaque jeu a son propre réglage. Le nombre est **figé au lancement** de la partie, donc le modifier en cours de route n'affecte pas la partie déjà commencée.
+Leur **nombre de manches** se règle depuis leur propre ligne du sous-menu `C`, qui sélectionne le jeu **et** ouvre son écran de réglage (même mécanique que les lignes « Chrono … »). Valeur de 1 à 20, `2`/`8` pour l'ajuster, **sauvegardée en EEPROM** (adresses 7 à 9, un réglage par jeu). Le défaut est de 5 manches, sauf pour Ne buzze pas où un flux de 12 sons est le minimum pour que la difficulté ait le temps de monter. Le nombre est **figé au lancement** de la partie, donc le modifier en cours de route n'affecte pas la partie déjà commencée.
 
-Chacun tient un **record persistant** en EEPROM, affiché sur l'écran de fin et signalé quand il tombe.
+Le Réflexe et le Chrono aveugle tiennent chacun un **record persistant** en EEPROM, affiché sur l'écran de fin et signalé quand il tombe. Ne buzze pas n'en a pas : son score dépend du nombre de sons et de la présence des leurres, donc deux parties ne sont pas comparables.
 
 ### Réflexe — le plus rapide au signal
 
@@ -184,6 +185,32 @@ Toutes les LED s'allument au départ et celle d'un joueur **s'éteint quand il a
 Rien ne doit donner de **référence temporelle** pendant la manche : aucun son n'est joué (la durée d'un extrait se compterait), aucune ligne de l'écran ne dépasse 20 colonnes (une ligne qui défile donne un rythme), et rien n'est redessiné. Un joueur qui ne buzze jamais est noté `----` : la manche est coupée 10 s après la cible.
 
 L'écran de résultat affiche la cible, le **temps de chacun** au dixième (deux joueurs par ligne), le gagnant et les scores. Le record conservé est le **plus petit écart** jamais réalisé, affiché au centième (adresses 518-519). Les bornes de la cible sont réglables via les `#define` en tête de [BlindTimer.h](BlindTimer.h).
+
+### Ne buzze pas — jeu d'oreille en flux continu
+
+Implémenté dans [SoundGame.cpp](SoundGame.cpp). Ce jeu donne enfin une **mécanique de jeu** au son de buzz de chaque joueur, jusque-là purement décoratif : la machine enchaîne des sons et il faut buzzer quand c'est **le sien** — surtout pas quand c'est celui d'un autre.
+
+**Phase d'apprentissage** (`SOUND_LEARN`) d'abord : chaque son est joué une fois, LED allumée et couleur nommée (« Son de Rouge »). Elle est indispensable, parce que l'assistant `A` garantit 4 **fichiers** différents mais pas 4 sons **audiblement distincts** — si deux se ressemblent trop, c'est le moment de s'en apercevoir et d'aller les changer (`A` ou `B`) avant que ça compte. `#` lance la partie, `C` revient au menu.
+
+**Le flux est continu** (`SOUND_PLAY`) : il n'y a pas de fenêtre de réponse arbitraire, la limite est le **son suivant**. C'est ce qui crée la pression — avec une fenêtre confortable, chacun prendrait tranquillement son temps, ne raterait jamais son son, et tout le monde finirait à égalité. L'écart entre deux sons **se resserre au fil de la partie** (2,5 s au début, 1,2 s à la fin, par pas de 100 ms), ce qui donne une montée en tension et une fin naturelle.
+
+Barème :
+
+| Situation | Effet |
+|-----------|-------|
+| Reconnaître **son** son | `+1` |
+| Buzzer sur le son d'**un autre** (ou sur un leurre) | `−1`, et on est écarté de ce son |
+| Laisser passer **son propre** son | `−1` |
+
+La dernière pénalité n'est pas une sévérité gratuite : sans elle, ne jamais buzzer serait une stratégie sans risque, et un joueur passif à zéro finirait devant des joueurs actifs en négatif. Symétriquement, buzzer sur tout pour ne jamais rater le sien coûte un point à chaque erreur — le barème décourage les deux tricheries évidentes. Un joueur qui se trompe est écarté du son en cours, mais la manche **continue** pour que le vrai propriétaire puisse encore le réclamer : un doigt nerveux ne vole pas le point de quelqu'un d'autre.
+
+**Sons leurres** (optionnels, réglables) : des sons du dossier `02` qui n'appartiennent à **personne**, et sur lesquels personne ne doit buzzer — ce sont les pièges les plus efficaces. Ils représentent environ 30 % du flux quand ils sont actifs. Le son d'un buzzer déclaré **absent** fait un leurre parfaitement valable, puisque personne ne l'a appris.
+
+**Aucune LED ne s'allume pendant le flux** : elle trahirait le son en cours. L'écran affiche la progression, le verdict du son précédent (« Rouge +1 », « Bleu se trompe ! », « Rouge a rate », « Leurre evite ! ») et les scores courants.
+
+Deux réglages, sur un écran en deux étapes ouvert depuis la ligne du menu : le **nombre de sons** puis les **leurres** (`oui`/`non`), tous deux sauvegardés en EEPROM (adresses 9 et 10). Le rythme du flux et la proportion de leurres sont réglables via les `#define` en tête de [SoundGame.h](SoundGame.h).
+
+⚠️ **C'est le seul jeu intestable dans Wokwi** : il n'y a pas de DFPlayer dans la simulation, donc aucun son n'est émis (ils sont seulement écrits sur le port série). La logique tourne à l'identique — le flux est cadencé par un minuteur, pas par la fin réelle des sons — mais le jeu ne se juge que sur la borne.
 
 ## Assistant de configuration des buzzers (`A` au menu)
 
@@ -212,6 +239,7 @@ La configuration est **optionnelle** : si on lance directement la partie (`#`), 
 | [Simon.cpp](Simon.cpp) / [.h](Simon.h) | Jeu collaboratif de mémoire « Simon » (à 4) |
 | [Reflex.cpp](Reflex.cpp) / [.h](Reflex.h) | Jeu de rapidité « Réflexe » (sans question, en manches) |
 | [BlindTimer.cpp](BlindTimer.cpp) / [.h](BlindTimer.h) | Jeu « Chrono aveugle » (sans question, en manches) |
+| [SoundGame.cpp](SoundGame.cpp) / [.h](SoundGame.h) | Jeu « Ne buzze pas » (flux de sons continu, leurres) |
 | [Questions.cpp](Questions.cpp) / [.h](Questions.h) | Banque de questions-réponses par catégorie (PROGMEM) |
 | [QuestionBank.cpp](QuestionBank.cpp) / [.h](QuestionBank.h) | Tirage sans répétition (historique en EEPROM), sélection de catégories |
 | [AppKeypad.h](AppKeypad.h) | Lecture du clavier matriciel et détection du reset (singleton) |

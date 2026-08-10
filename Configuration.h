@@ -17,6 +17,8 @@ public:
     PhaseMode chronoScreen(char pressedKey);
     void setRoundsScreen();                  // reglage du nb de manches d'un jeu
     PhaseMode roundsScreen(char pressedKey);
+    void setSoundSetup();                    // Ne buzze pas : nb de sons + leurres
+    PhaseMode soundSetup(char pressedKey);
     void setQuizCats();                      // lancement quiz : categories
     PhaseMode quizCats(char pressedKey);
     void setQuizCount();                     // lancement quiz : nb de questions
@@ -71,6 +73,13 @@ private:
   int roundsCursor = GAME_ROUNDS_DEFAULT;
   GameMode roundsTargetMode = GAME_REFLEX;
   void showRoundsValue();
+
+  // Réglage de « Ne buzze pas » en deux étapes (nombre de sons, puis leurres),
+  // comme l'écran du chrono : un seul réglage à la fois, `#` valide et enchaîne.
+  enum SoundStep { SOUND_CFG_COUNT, SOUND_CFG_DECOYS };
+  SoundStep soundStep = SOUND_CFG_COUNT;
+  bool soundDecoysCursor = true;
+  void showSoundStep();
 
   // Lancement d'un quiz : écran des catégories de questions (liste
   // déroulante multi-sélection : "Toutes", "Aucune" = questionnaire perso,

@@ -263,6 +263,27 @@ void Mp3::playBuzzer(int buzzerId) {
   mp3.playFolder(BUZZER_FOLDER, mp3Id + 1);
 }
 
+// Comme playBuzzer(), mais pour un son designe directement plutot que via le
+// buzzer qui le porte (leurres du jeu Ne buzze pas).
+void Mp3::playBuzzerSound(int soundIndex) {
+  int poolSize = mp3Arrays[BUZZER_FOLDER - 1].size;
+  if (soundIndex < 0 || soundIndex >= poolSize) {
+    return;
+  }
+
+  if (simulation) {
+    Serial.print(F("[SIM] Lecture dossier BUZZER, fichier "));
+    Serial.println(soundIndex + 1);
+    return;
+  }
+
+  mp3.playFolder(BUZZER_FOLDER, soundIndex + 1);
+}
+
+int Mp3::buzzerSoundPoolSize() {
+  return mp3Arrays[BUZZER_FOLDER - 1].size;
+}
+
 void Mp3::playGoodAnswer() {
   int arraySize = mp3Arrays[GOOD_FOLDER - 1].size;
   int fileNumber;

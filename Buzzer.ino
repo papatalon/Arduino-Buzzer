@@ -8,6 +8,7 @@
 #include "Simon.h"
 #include "Reflex.h"
 #include "BlindTimer.h"
+#include "SoundGame.h"
 #include "Mp3.h"
 #include "QuestionBank.h"
 
@@ -21,6 +22,7 @@ Configuration configuration;
 Simon simon;
 Reflex reflex;
 BlindTimer blindTimer;
+SoundGame soundGame;
 Buzzer& buzzer = Buzzer::shared();
 //OledDisplay& display = OledDisplay::shared();
 Mp3& mp3 = Mp3::shared();
@@ -183,6 +185,18 @@ PhaseMode getCurrentMode() {
     case BLIND_OVER:
       mode = blindTimer.gameOver(pressedKey);
       break;
+    case SOUND_SETUP:
+      mode = configuration.soundSetup(pressedKey);
+      break;
+    case SOUND_LEARN:
+      mode = soundGame.learn(pressedKey);
+      break;
+    case SOUND_PLAY:
+      mode = soundGame.play(pressedKey);
+      break;
+    case SOUND_OVER:
+      mode = soundGame.gameOver(pressedKey);
+      break;
     case LED_TEST:
       mode = buzzer.ledTest(pressedKey);
       break;
@@ -220,6 +234,7 @@ void updateMode() {
       simon.reset();      // nouvelle partie : sequence Simon repartie de zero
       reflex.reset();     // ... et scores des jeux en manches remis a zero
       blindTimer.reset();
+      soundGame.reset();
       buzzer.setIntro();
       break;
     case WAITING_BUZZER:
@@ -290,6 +305,18 @@ void updateMode() {
       break;
     case BLIND_OVER:
       blindTimer.setGameOver();
+      break;
+    case SOUND_SETUP:
+      configuration.setSoundSetup();
+      break;
+    case SOUND_LEARN:
+      soundGame.setLearn();
+      break;
+    case SOUND_PLAY:
+      soundGame.setPlay();
+      break;
+    case SOUND_OVER:
+      soundGame.setGameOver();
       break;
     case LED_TEST:
       buzzer.setLedTest();

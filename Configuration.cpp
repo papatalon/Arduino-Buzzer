@@ -53,7 +53,7 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
         mp3.playInit();             // son de lancement (dossier 01)
         return INTRO;               // chenillard festif pendant la musique
       }
-      if (mode == GAME_REFLEX || mode == GAME_BLIND) {
+      if (mode == GAME_REFLEX || mode == GAME_BLIND || mode == GAME_SOUND) {
         // Jeux sans question : on saute le choix des catégories.
         buzzer.resetScores();
         mp3.playInit();
@@ -73,10 +73,10 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
 // et des réglages (qui ouvrent un écran dédié, ex. le chrono d'un mode donné).
 // Ajouter une ligne : l'insérer ici, à la position voulue — l'affichage et le
 // défilement s'adaptent tout seuls (rien d'autre à changer).
-// GLK_GAME : la ligne se contente d'activer le jeu. GLK_CHRONO et GLK_ROUNDS
-// l'activent AUSSI, puis ouvrent son écran de réglage (durées du chrono,
-// nombre de manches du Réflexe).
-enum GameListKind { GLK_GAME, GLK_CHRONO, GLK_ROUNDS };
+// GLK_GAME : la ligne se contente d'activer le jeu. Les autres genres
+// l'activent AUSSI, puis ouvrent son écran de réglage : durées du chrono,
+// nombre de manches, ou réglages de « Ne buzze pas ».
+enum GameListKind { GLK_GAME, GLK_CHRONO, GLK_ROUNDS, GLK_SOUND };
 struct GameListItem {
   const char* label;
   GameListKind kind;
@@ -93,6 +93,7 @@ static const GameListItem GAME_LIST[] = {
   { "Simon inverse",    GLK_GAME,   GAME_SIMON_REVERSE },
   { "Reflexe",          GLK_ROUNDS, GAME_REFLEX },
   { "Chrono aveugle",   GLK_ROUNDS, GAME_BLIND },
+  { "Ne buzze pas",     GLK_SOUND,  GAME_SOUND },
 };
 #define GAME_LIST_COUNT (sizeof(GAME_LIST) / sizeof(GAME_LIST[0]))
 
@@ -166,6 +167,9 @@ PhaseMode Configuration::gameChoice(char pressedKey) {
       if (item.kind == GLK_ROUNDS) {
         roundsTargetMode = item.target;   // quel jeu régler (Réflexe / aveugle)
         return ROUNDS_SETUP;
+      }
+      if (item.kind == GLK_SOUND) {
+        return SOUND_SETUP;               // nb de sons, puis leurres
       }
       return CONFIGURATION;
     }
@@ -273,6 +277,70 @@ PhaseMode Configuration::roundsScreen(char pressedKey) {
       return CONFIGURATION;         // annule : le nombre de manches ne change pas
   }
   return ROUNDS_SETUP;
+}
+
+// « Ne buzze pas » a deux réglages : le nombre de sons du flux, puis
+// l'activation des sons leurres. Même présentation que l'écran du chrono —
+// une étape à la fois, `#` valide et enchaîne, `*` annule tout.
+void Configuration::showSoundStep() {
+  if (soundStep == SOUND_CFG_COUNT) {
+    display.setText("Nombre de sons", 1);
+    display.setText(String("> ") + roundsCursor, 2);
+    display.setText("2=+  8=-  #OK *:ann", 3);
+  } else {
+    display.setText("Sons leurres", 1);
+    display.setText(String("> ") + (soundDecoysCursor ? "oui" : "non"), 2);
+    display.setText("2/8: changer  #OK", 3);
+  }
+}
+
+void Configuration::setSoundSetup() {
+  soundStep = SOUND_CFG_COUNT;
+  roundsCursor = buzzer.getGameRounds(GAME_SOUND);
+  soundDecoysCursor = buzzer.getSoundDecoys();
+  display.clear();
+  display.setText("NE BUZZE PAS", 0);
+  showSoundStep();
+}
+
+PhaseMode Configuration::soundSetup(char pressedKey) {
+  switch (pressedKey) {
+    case '2':
+      if (soundStep == SOUND_CFG_COUNT) {
+        if (roundsCursor < GAME_ROUNDS_MAX) {
+          roundsCursor++;
+        }
+      } else {
+        soundDecoysCursor = !soundDecoysCursor;
+      }
+      showSoundStep();
+      break;
+    case '8':
+      if (soundStep == SOUND_CFG_COUNT) {
+        if (roundsCursor > GAME_ROUNDS_MIN) {
+          roundsCursor--;
+        }
+      } else {
+        soundDecoysCursor = !soundDecoysCursor;
+      }
+      showSoundStep();
+      break;
+    case '#':
+      if (soundStep == SOUND_CFG_COUNT) {
+        soundStep = SOUND_CFG_DECOYS;
+        showSoundStep();
+      } else {
+        buzzer.setGameRounds(GAME_SOUND, roundsCursor);
+        buzzer.setSoundDecoys(soundDecoysCursor);
+        buzzer.saveGameRounds();       // conservés après extinction
+        buzzer.saveSoundDecoys();
+        return CONFIGURATION;
+      }
+      break;
+    case '*':
+      return CONFIGURATION;            // annule : rien n'est modifié
+  }
+  return SOUND_SETUP;
 }
 
 // ============================================================

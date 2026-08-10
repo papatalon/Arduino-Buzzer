@@ -12,9 +12,12 @@
 #define EEPROM_ADDR_PENALTY_NEXT 4
 #define EEPROM_ADDR_VOL_FIRST 5
 #define EEPROM_ADDR_VOL_NEXT 6
-// Manches par jeu : 7 = Réflexe, 8 = Chrono aveugle.
+// Manches par jeu : 7 = Réflexe, 8 = Chrono aveugle, 9 = Ne buzze pas.
+// 10 = leurres de Ne buzze pas (0/1).
 #define EEPROM_ADDR_ROUNDS_REFLEX 7
 #define EEPROM_ADDR_ROUNDS_BLIND 8
+#define EEPROM_ADDR_ROUNDS_SOUND 9
+#define EEPROM_ADDR_SOUND_DECOYS 10
 
 Buzzer::Buzzer() {}
 
@@ -32,6 +35,7 @@ void Buzzer::init() {
   }
   loadBuzzTimes();
   loadGameRounds();
+  loadSoundDecoys();
 }
 
 void Buzzer::resetLights() {
@@ -476,6 +480,9 @@ void Buzzer::setIntro() {
   } else if (gameMode == GAME_BLIND) {
     display.setText("  Chrono aveugle :", 1);
     display.setText("  fiez-vous a vous", 2);
+  } else if (gameMode == GAME_SOUND) {
+    display.setText("   Ne buzze pas :", 1);
+    display.setText("  ouvrez l'oreille", 2);
   } else {
     display.setText("  Que le meilleur", 1);
     display.setText("     gagne !", 2);
@@ -494,6 +501,9 @@ PhaseMode Buzzer::intro(char pressedKey) {
     }
     if (gameMode == GAME_BLIND) {
       return BLIND_ANNOUNCE;
+    }
+    if (gameMode == GAME_SOUND) {
+      return SOUND_LEARN;      // on apprend les sons avant que ca compte
     }
     bool isSimon = (gameMode == GAME_SIMON || gameMode == GAME_SIMON_REVERSE);
     return isSimon ? SIMON_SHOW : WAITING_BUZZER;
@@ -718,6 +728,7 @@ const char* Buzzer::gameModeName(GameMode mode) {
     case GAME_SIMON_REVERSE:  return "Simon inverse";
     case GAME_REFLEX:         return "Reflexe";
     case GAME_BLIND:          return "Chrono aveugle";
+    case GAME_SOUND:          return "Ne buzze pas";
     default:                  return "Classique";
   }
 }
@@ -781,10 +792,15 @@ void Buzzer::saveBuzzTimes() {
 }
 
 // === Nombre de manches (jeux qui se jouent en manches) ===
-// Deux jeux de valeurs : slot 0 pour le Réflexe, slot 1 pour le Chrono
-// aveugle. Les autres jeux n'utilisent pas ce réglage.
+// Trois jeux de valeurs : slot 0 pour le Réflexe, slot 1 pour le Chrono
+// aveugle, slot 2 pour Ne buzze pas. Les autres jeux n'utilisent pas ce
+// réglage.
 static int gameRoundsSlot(GameMode mode) {
-  return (mode == GAME_BLIND) ? 1 : 0;
+  switch (mode) {
+    case GAME_BLIND: return 1;
+    case GAME_SOUND: return 2;
+    default:         return 0;
+  }
 }
 
 // Même principe que les durées de chrono : une case jamais écrite vaut 255,
@@ -798,11 +814,36 @@ void Buzzer::loadGameRounds() {
   if (stored >= GAME_ROUNDS_MIN && stored <= GAME_ROUNDS_MAX) {
     gameRounds[1] = stored;
   }
+  stored = EEPROM.read(EEPROM_ADDR_ROUNDS_SOUND);
+  if (stored >= GAME_ROUNDS_MIN && stored <= GAME_ROUNDS_MAX) {
+    gameRounds[2] = stored;
+  }
 }
 
 void Buzzer::saveGameRounds() {
   EEPROM.update(EEPROM_ADDR_ROUNDS_REFLEX, (uint8_t)gameRounds[0]);
   EEPROM.update(EEPROM_ADDR_ROUNDS_BLIND, (uint8_t)gameRounds[1]);
+  EEPROM.update(EEPROM_ADDR_ROUNDS_SOUND, (uint8_t)gameRounds[2]);
+}
+
+// Une case jamais écrite vaut 255 : on garde alors le défaut (leurres actifs).
+void Buzzer::loadSoundDecoys() {
+  int stored = EEPROM.read(EEPROM_ADDR_SOUND_DECOYS);
+  if (stored == 0 || stored == 1) {
+    soundDecoys = (stored == 1);
+  }
+}
+
+void Buzzer::saveSoundDecoys() {
+  EEPROM.update(EEPROM_ADDR_SOUND_DECOYS, soundDecoys ? 1 : 0);
+}
+
+bool Buzzer::getSoundDecoys() {
+  return soundDecoys;
+}
+
+void Buzzer::setSoundDecoys(bool value) {
+  soundDecoys = value;
 }
 
 int Buzzer::getGameRounds(GameMode mode) {

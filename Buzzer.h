@@ -21,6 +21,7 @@
 #define GAME_ROUNDS_MIN 1        // nombre de manches d'une partie : mini
 #define GAME_ROUNDS_MAX 20       // ... maxi
 #define GAME_ROUNDS_DEFAULT 5    // ... valeur par defaut (avant tout reglage)
+#define SOUND_ROUNDS_DEFAULT 12  // ... sauf Ne buzze pas : un flux court serait plat
 #define BUZZ_WARN_MS 3000        // les LED clignotent sur les dernieres secondes
 #define BUZZ_WARN_BLINK_MS 200   // periode du clignotement de fin de chrono
 #define VOL_SPIN_SIM_MS 11000        // duree simulee du tirage (pas de BUSY), calee sur le son
@@ -114,6 +115,11 @@ public:
     int getGameRounds(GameMode mode);
     void setGameRounds(GameMode mode, int n);
     void saveGameRounds();
+
+    // Ne buzze pas : sons « leurres » (n'appartenant à personne) mêlés au flux.
+    bool getSoundDecoys();
+    void setSoundDecoys(bool value);
+    void saveSoundDecoys();
 
     void setIntro();                         // lance le chenillard d'intro
     PhaseMode intro(char pressedKey);
@@ -217,11 +223,13 @@ private:
   // Répartit un texte sur plusieurs lignes de l'écran (coupe aux espaces).
   void wrapText(String text, int from, int to);
 
-  // Manches par jeu : slot 0 = Réflexe, slot 1 = Chrono aveugle.
-  int gameRounds[2] = { GAME_ROUNDS_DEFAULT, GAME_ROUNDS_DEFAULT };
+  // Manches par jeu : slot 0 = Réflexe, 1 = Chrono aveugle, 2 = Ne buzze pas.
+  int gameRounds[3] = { GAME_ROUNDS_DEFAULT, GAME_ROUNDS_DEFAULT, SOUND_ROUNDS_DEFAULT };
+  bool soundDecoys = true;          // Ne buzze pas : leurres actifs par défaut
 
   void loadBuzzTimes();             // relit les durées sauvegardées (EEPROM)
   void loadGameRounds();            // idem pour le nombre de manches par jeu
+  void loadSoundDecoys();           // idem pour les leurres de Ne buzze pas
   void drawBuzzTimer(unsigned long remaining);   // barre + secondes restantes
   PhaseMode tickBuzzTimer();        // décompte : SHOW_SCORES si temps écoulé
 
