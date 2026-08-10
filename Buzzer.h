@@ -141,10 +141,13 @@ private:
   // Buzzer présent / dans le pool (déclaré via l'assistant de configuration).
   bool enabled[4] = { true, true, true, true};
   // Détection de front + anti-rebond des boutons de buzzer (lecture centralisée
-  // via buttonPressed()). prevPressed = état précédent, lastEdgeMs = horodatage
-  // du dernier front accepté (rejette les fronts trop rapprochés = rebonds).
+  // via buttonPressed()). Le front d'appui est accepté immédiatement (aucune
+  // latence pour une course de buzz), mais un nouvel appui n'est réarmé
+  // qu'après un relâchement stable de BUTTON_DEBOUNCE_MS : ça filtre le rebond
+  // de contact au relâchement, qui sinon ressemblait à un second appui.
   bool prevPressed[4] = { false, false, false, false};
-  unsigned long lastEdgeMs[4] = { 0, 0, 0, 0};
+  bool releasing[4] = { false, false, false, false};      // relâchement en cours de confirmation
+  unsigned long releaseStartMs[4] = { 0, 0, 0, 0};         // début du relâchement (à confirmer)
   bool buttonPressed(int buzzerId);   // front descendant anti-rebondi
 
   // Scores par buzzer et jeu sélectionné (sous-menu "C" du menu).

@@ -1048,6 +1048,7 @@ void Buzzer::resetConfigState() {
   for (int i = 0; i < 4; i++) {
     enabled[i] = true;
     prevPressed[i] = false;
+    releasing[i] = false;
   }
 }
 
@@ -1075,23 +1076,43 @@ bool Buzzer::hasFourPlayers() {
 void Buzzer::armButtons() {
   for (int i = 0; i < 4; i++) {
     prevPressed[i] = (digitalRead(buzzers[i][1]) == LOW);
+    releasing[i] = false;
   }
 }
 
 // Lecture centralisée d'un bouton de buzzer : renvoie true une seule fois par
-// appui (front descendant), avec anti-rebond temporel commun. Le 1er front est
-// accepté immédiatement (aucune latence pour le buzz en jeu) ; seuls les fronts
-// survenant moins de BUTTON_DEBOUNCE_MS après sont rejetés (rebond mécanique).
+// appui (front descendant). Le front est accepté immédiatement (aucune
+// latence pour le buzz en jeu) : dès que la broche passe à LOW alors qu'on
+// n'était pas déjà en appui, c'est gagné.
+//
+// Le nouvel appui n'est réarmé qu'après un relâchement stable pendant
+// BUTTON_DEBOUNCE_MS. Sans ça, le rebond mécanique du contact au relâchement
+// (la broche qui repasse brièvement à LOW juste après avoir relâché) était
+// lu comme un second appui — c'est ce qui produisait les "doubles clics
+// fantômes" en Simon, où plusieurs appuis rapprochés du même joueur sont
+// courants. Toute retombée à LOW pendant la confirmation du relâchement
+// annule le compte à rebours, sans redéclencher d'appui (on est toujours
+// considéré comme pressé).
 bool Buzzer::buttonPressed(int buzzerId) {
   bool pressedNow = (digitalRead(buzzers[buzzerId][1]) == LOW);
-  bool edge = pressedNow && !prevPressed[buzzerId];
-  prevPressed[buzzerId] = pressedNow;
+  unsigned long now = millis();
 
-  if (edge) {
-    unsigned long now = millis();
-    if (now - lastEdgeMs[buzzerId] >= BUTTON_DEBOUNCE_MS) {
-      lastEdgeMs[buzzerId] = now;
+  if (pressedNow) {
+    releasing[buzzerId] = false;   // un retour a LOW annule un relachement en cours
+    if (!prevPressed[buzzerId]) {
+      prevPressed[buzzerId] = true;
       return true;
+    }
+    return false;
+  }
+
+  if (prevPressed[buzzerId]) {
+    if (!releasing[buzzerId]) {
+      releasing[buzzerId] = true;
+      releaseStartMs[buzzerId] = now;
+    } else if (now - releaseStartMs[buzzerId] >= BUTTON_DEBOUNCE_MS) {
+      prevPressed[buzzerId] = false;   // relachement confirme : pret pour un nouvel appui
+      releasing[buzzerId] = false;
     }
   }
   return false;
