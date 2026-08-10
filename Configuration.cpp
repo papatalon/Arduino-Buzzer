@@ -53,6 +53,12 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
         mp3.playInit();             // son de lancement (dossier 01)
         return INTRO;               // chenillard festif pendant la musique
       }
+      if (mode == GAME_REFLEX) {
+        // Jeu sans question : on saute le choix des catégories.
+        buzzer.resetScores();
+        mp3.playInit();
+        return INTRO;
+      }
       // Tous les quiz (Classique, Pénalité, Chronos, Vol) : on choisit
       // d'abord les questions (catégories puis nombre) ; le lancement réel
       // se fait à la fin de quizCount().
@@ -82,6 +88,7 @@ static const GameListItem GAME_LIST[] = {
   { "Vol",              GLK_CHRONO, GAME_VOL },
   { "Simon (a 4)",      GLK_GAME,   GAME_SIMON },
   { "Simon inverse",    GLK_GAME,   GAME_SIMON_REVERSE },
+  { "Reflexe",          GLK_GAME,   GAME_REFLEX },
 };
 #define GAME_LIST_COUNT (sizeof(GAME_LIST) / sizeof(GAME_LIST[0]))
 

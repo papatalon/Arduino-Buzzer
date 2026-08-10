@@ -466,6 +466,9 @@ void Buzzer::setIntro() {
   } else if (gameMode == GAME_SIMON) {
     display.setText("   Memoire a 4 :", 1);
     display.setText("  tous ensemble !", 2);
+  } else if (gameMode == GAME_REFLEX) {
+    display.setText("     Reflexes :", 1);
+    display.setText("  le plus rapide !", 2);
   } else {
     display.setText("  Que le meilleur", 1);
     display.setText("     gagne !", 2);
@@ -479,6 +482,9 @@ PhaseMode Buzzer::intro(char pressedKey) {
   // (Vol n'a pas d'intro : il passe directement de CONFIGURATION à VOL_SPIN.)
   if (pressedKey || songFinished(elapsed)) {
     resetLights();
+    if (gameMode == GAME_REFLEX) {
+      return REFLEX_ARM;
+    }
     bool isSimon = (gameMode == GAME_SIMON || gameMode == GAME_SIMON_REVERSE);
     return isSimon ? SIMON_SHOW : WAITING_BUZZER;
   }
@@ -700,6 +706,7 @@ const char* Buzzer::gameModeName(GameMode mode) {
     case GAME_VOL:            return "Vol";
     case GAME_SIMON:          return "Simon";
     case GAME_SIMON_REVERSE:  return "Simon inverse";
+    case GAME_REFLEX:         return "Reflexe";
     default:                  return "Classique";
   }
 }

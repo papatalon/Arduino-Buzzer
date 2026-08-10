@@ -24,6 +24,10 @@ enum PhaseMode {
     SIMON_SHOW,     // Simon : demonstration de la sequence
     SIMON_PLAY,     // Simon : les joueurs repetent la sequence
     SIMON_OVER,     // Simon : fin de partie (niveau atteint)
+    REFLEX_ARM,     // Reflexe : attente du signal (buzzer = faux depart)
+    REFLEX_GO,      // Reflexe : signal donne, course au buzz
+    REFLEX_RESULT,  // Reflexe : resultat de la manche (temps de reaction)
+    REFLEX_OVER,    // Reflexe : fin de partie (scores + record)
     LED_TEST        // mode cache de test cablage (LED + boutons), entree *1
 };
 

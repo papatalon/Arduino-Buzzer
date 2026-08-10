@@ -6,6 +6,7 @@
 #include "AppKeypad.h"
 #include "Buzzer.h"
 #include "Simon.h"
+#include "Reflex.h"
 #include "Mp3.h"
 #include "QuestionBank.h"
 
@@ -17,6 +18,7 @@ PhaseMode previousMode = BOOT;
 AppKeypad& appKeypad = AppKeypad::shared(); 
 Configuration configuration;
 Simon simon;
+Reflex reflex;
 Buzzer& buzzer = Buzzer::shared();
 //OledDisplay& display = OledDisplay::shared();
 Mp3& mp3 = Mp3::shared();
@@ -152,6 +154,18 @@ PhaseMode getCurrentMode() {
     case SIMON_OVER:
       mode = simon.gameOver(pressedKey);
       break;
+    case REFLEX_ARM:
+      mode = reflex.arm(pressedKey);
+      break;
+    case REFLEX_GO:
+      mode = reflex.go(pressedKey);
+      break;
+    case REFLEX_RESULT:
+      mode = reflex.result(pressedKey);
+      break;
+    case REFLEX_OVER:
+      mode = reflex.gameOver(pressedKey);
+      break;
     case LED_TEST:
       mode = buzzer.ledTest(pressedKey);
       break;
@@ -187,6 +201,7 @@ void updateMode() {
       break;
     case INTRO:
       simon.reset();      // nouvelle partie : sequence Simon repartie de zero
+      reflex.reset();     // ... et scores du Reflexe remis a zero
       buzzer.setIntro();
       break;
     case WAITING_BUZZER:
@@ -230,6 +245,18 @@ void updateMode() {
       break;
     case SIMON_OVER:
       simon.setGameOver();
+      break;
+    case REFLEX_ARM:
+      reflex.setArm();
+      break;
+    case REFLEX_GO:
+      reflex.setGo();
+      break;
+    case REFLEX_RESULT:
+      reflex.setResult();
+      break;
+    case REFLEX_OVER:
+      reflex.setGameOver();
       break;
     case LED_TEST:
       buzzer.setLedTest();

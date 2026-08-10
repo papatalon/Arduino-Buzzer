@@ -15,6 +15,7 @@ enum GameMode {
     GAME_VOL,            // question adressee a un joueur ; les autres peuvent la voler s'il rate (chrono toujours actif)
     GAME_SIMON,          // jeu collaboratif de memoire (obligatoirement a 4)
     GAME_SIMON_REVERSE,  // comme GAME_SIMON, mais la sequence se repete a l'envers
+    GAME_REFLEX,         // jeu de rapidite sans question : premier a buzzer au signal
     GAME_MODE_COUNT      // sentinelle : nombre de jeux (doit rester en dernier)
 };
 
