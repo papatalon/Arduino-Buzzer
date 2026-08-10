@@ -3,12 +3,18 @@
 
 // Historique "deja posee" : 1 bit par question, en EEPROM. Les adresses 0-6
 // sont prises (volume + chronos, voir Mp3.cpp et Buzzer.cpp) ; le bitmap
-// commence a 16. Chaque categorie reserve QB_STRIDE bits (25 octets), que
+// commence a 16. Chaque categorie reserve QB_STRIDE bits (50 octets), que
 // ses questions existent ou non : on peut donc ajouter des questions a une
 // categorie sans decaler l'historique des autres.
+//
+// L'adresse 15 contient la version du plan d'occupation : si QB_STRIDE
+// change, les adresses du bitmap se decalent et l'ancien historique devient
+// du bruit. init() compare la version et remet le bitmap a zero au besoin.
+#define QB_EEPROM_VERSION_ADDR 15
+#define QB_LAYOUT_VERSION 2                  // incrementer si QB_STRIDE change
 #define QB_EEPROM_BASE 16
-#define QB_STRIDE 200                        // capacite max par categorie
-#define QB_BYTES_PER_CAT (QB_STRIDE / 8)     // 25 octets par categorie
+#define QB_STRIDE 400                        // capacite max par categorie
+#define QB_BYTES_PER_CAT (QB_STRIDE / 8)     // 50 octets par categorie
 
 QuestionBank& QuestionBank::shared() {
   static QuestionBank instance;
@@ -19,6 +25,14 @@ QuestionBank& QuestionBank::shared() {
 // (un '\n' = une question). Lecture en adressage far (32 bits) : la banque
 // est placee au-dela des 64 Ko. Quelques dizaines de ms au demarrage.
 void QuestionBank::init() {
+  // Bitmap invalide (premier demarrage ou changement de QB_STRIDE) :
+  // remise a zero de l'historique de toutes les categories.
+  if (EEPROM.read(QB_EEPROM_VERSION_ADDR) != QB_LAYOUT_VERSION) {
+    Serial.println(F("Historique des questions : nouveau plan EEPROM, remise a zero."));
+    resetHistory((1 << QCAT_COUNT) - 1);
+    EEPROM.update(QB_EEPROM_VERSION_ADDR, QB_LAYOUT_VERSION);
+  }
+
   for (int c = 0; c < QCAT_COUNT; c++) {
     uint32_t p = qcatDataFar(c);
     int n = 0;
