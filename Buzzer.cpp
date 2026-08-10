@@ -251,12 +251,35 @@ void Buzzer::setWaitingForBuzzer() {
   display.clear();
 
   if (tiebreak) {
-    // Repères : LED allumées pour les ex æquo + liste des couleurs en lice.
+    // LED allumées pour les ex æquo (seuls buzzers en lice).
+    for (int i = 0; i < 4; i++) {
+      setLed(i, enabled[i] && actives[i]);
+    }
+
+    // Banque de questions active : le bris d'égalité pioche lui aussi une
+    // question (une seule pour tout le bris, voir enterTiebreak() qui avance
+    // questionNumber pour forcer ce tirage). Sinon, comme avant : l'animateur
+    // pose sa propre question à l'oral.
+    QuestionBank& bank = QuestionBank::shared();
+    bool bankOn = bank.isActive();
+    if (bankOn && lastDrawnQuestion != questionNumber) {
+      if (bank.drawQuestion()) {
+        lastDrawnQuestion = questionNumber;
+      } else {
+        bankOn = false;
+      }
+    }
+
+    if (bankOn) {
+      display.setText("EGALITE - Buzzez !", 0);
+      wrapText(bank.questionText(), 1, 3);
+      return;
+    }
+
+    // Pas de banque : liste des couleurs encore en lice, question à l'oral.
     String parts = "";
     for (int i = 0; i < 4; i++) {
-      bool inPlay = enabled[i] && actives[i];
-      setLed(i, inPlay);
-      if (inPlay) {
+      if (enabled[i] && actives[i]) {
         if (parts.length() > 0) {
           parts += " ";
         }
@@ -1042,6 +1065,7 @@ void Buzzer::enterTiebreak() {
     actives[i] = (enabled[i] && scores[i] == best);
   }
   tiebreak = true;
+  questionNumber++;   // force un nouveau tirage dans la banque (voir setWaitingForBuzzer)
 }
 
 void Buzzer::resetConfigState() {

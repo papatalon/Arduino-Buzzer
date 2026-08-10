@@ -125,7 +125,7 @@ Seuls les **buzzers présents** (déclarés via l'assistant) apparaissent sur le
 
 ### Bris d'égalité
 
-Si la partie se termine sur une **égalité** au sommet, l'écran de fin propose un bris (`#`). Pendant le bris (« BRIS D'EGALITE »), **seuls les buzzers ex æquo** peuvent buzzer — leurs **LED s'allument** et leurs **couleurs sont affichées** à l'écran ; les autres sont neutralisés (sans effet à l'appui). L'animateur juge :
+Si la partie se termine sur une **égalité** au sommet, l'écran de fin propose un bris (`#`). Pendant le bris, **seuls les buzzers ex æquo** peuvent buzzer — leurs **LED s'allument** ; les autres sont neutralisés (sans effet à l'appui). Si la banque de questions est active, une question y est aussi tirée pour le bris (comme pour une question normale) ; sinon l'écran affiche les couleurs en lice et l'animateur pose sa question à l'oral. L'animateur juge :
 
 - `A` (bonne réponse) → ce buzzer **gagne la partie** (+1, score final unique).
 - `D` (mauvaise réponse) → ce buzzer est **éliminé du bris** ; le dernier encore en lice gagne.
