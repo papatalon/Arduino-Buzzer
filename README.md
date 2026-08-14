@@ -199,11 +199,14 @@ Barème :
 
 | Situation | Effet |
 |-----------|-------|
-| Reconnaître **son** son | `+1` |
+| Reconnaître **son** son, dans la **première moitié** de l'écart courant | `+2` |
+| Reconnaître **son** son, plus tard | `+1` |
 | Buzzer sur le son d'**un autre** (ou sur un leurre) | `−1`, et on est écarté de ce son |
 | Laisser passer **son propre** son | `−1` |
 
 La dernière pénalité n'est pas une sévérité gratuite : sans elle, ne jamais buzzer serait une stratégie sans risque, et un joueur passif à zéro finirait devant des joueurs actifs en négatif. Symétriquement, buzzer sur tout pour ne jamais rater le sien coûte un point à chaque erreur — le barème décourage les deux tricheries évidentes. Un joueur qui se trompe est écarté du son en cours, mais la manche **continue** pour que le vrai propriétaire puisse encore le réclamer : un doigt nerveux ne vole pas le point de quelqu'un d'autre.
+
+Le bonus de rapidité (`+2`) existe pour une raison symétrique : l'écart est largement assez long pour écouter un son en entier avant de se décider, donc sans ce bonus, attendre d'être sûr serait aussi une stratégie sans risque (le fameux « coasting »). Le seuil (la moitié de l'écart courant) se resserre tout seul avec la difficulté ambiante, sans réglage supplémentaire. Le bonus ne s'applique qu'aux bonnes réponses : se tromper reste `−1` quelle que soit la vitesse, pour ne pas inciter à buzzer au hasard.
 
 **Sons leurres** (optionnels, réglables) : des sons du dossier `02` qui n'appartiennent à **personne**, et sur lesquels personne ne doit buzzer — ce sont les pièges les plus efficaces. Ils représentent environ 30 % du flux quand ils sont actifs. Le son d'un buzzer déclaré **absent** fait un leurre parfaitement valable, puisque personne ne l'a appris.
 

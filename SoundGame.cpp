@@ -160,7 +160,7 @@ void SoundGame::playNext() {
   showProgress();
 }
 
-void SoundGame::handleBuzz(int i) {
+void SoundGame::handleBuzz(int i, unsigned long now) {
   if (buzzed[i]) {
     return;                  // un seul verdict par son et par joueur
   }
@@ -168,8 +168,20 @@ void SoundGame::handleBuzz(int i) {
 
   if (i == owner) {
     claimed = true;
-    scores[i]++;
-    display.setText(String(buzzer.colorName(i)) + " +1", 1);
+    // Buzzer dans la PREMIERE MOITIE de l'ecart courant rapporte +2 au lieu
+    // de +1 : sans ce bonus, ecouter le son en entier avant de se decider
+    // est une strategie sans risque (l'ecart laisse largement le temps de
+    // reconnaitre n'importe quel son avant la fin). Se tromper reste -1
+    // quelle que soit la vitesse : la rapidite n'est recompensee que si
+    // c'est le bon son, pour ne pas inciter a buzzer au hasard.
+    unsigned long elapsed = now - soundStart;
+    if (elapsed <= interval / 2) {
+      scores[i] += 2;
+      display.setText(String(buzzer.colorName(i)) + " +2 rapide !", 1);
+    } else {
+      scores[i]++;
+      display.setText(String(buzzer.colorName(i)) + " +1", 1);
+    }
   } else {
     scores[i]--;
     display.setText(String(buzzer.colorName(i)) + " se trompe !", 1);
@@ -213,7 +225,7 @@ PhaseMode SoundGame::play(char pressedKey) {
 
   for (int i = 0; i < 4; i++) {
     if (buzzer.isEnabled(i) && buzzer.wasPressed(i)) {
-      handleBuzz(i);
+      handleBuzz(i, now);
     }
   }
 

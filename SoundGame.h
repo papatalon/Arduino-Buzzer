@@ -24,10 +24,13 @@
 // (SOUND_INTERVAL_START -> SOUND_INTERVAL_MIN), ce qui fait monter la tension
 // et donne une fin naturelle.
 //
-// Bareme : reconnaitre son son +1 ; buzzer sur le son d'un autre -1 (et on est
-// ecarte de ce son, mais son proprietaire peut encore le reclamer) ; laisser
-// passer son propre son -1. Cette derniere penalite est indispensable : sans
-// elle, ne jamais buzzer serait une stratégie sans risque.
+// Bareme : reconnaitre son son +1, ou +2 si c'est dans la PREMIERE MOITIE de
+// l'ecart courant (recompense la rapidite, pas seulement la justesse : sans
+// ca, ecouter le son en entier avant de buzzer serait sans risque) ; buzzer
+// sur le son d'un autre -1 (et on est ecarte de ce son, mais son proprietaire
+// peut encore le reclamer) ; laisser passer son propre son -1. Cette derniere
+// penalite est indispensable : sans elle, ne jamais buzzer serait une
+// stratégie sans risque.
 //
 // Une phase d'APPRENTISSAGE precede la partie : chaque son est joue une fois,
 // LED allumee et couleur nommee. L'assistant garantit 4 fichiers differents,
@@ -74,7 +77,7 @@ private:
   int pickDecoySound();          // son du dossier appartenant a personne (-1 si aucun)
   void playNext();               // enchaine le son suivant
   void judgeCurrent();           // penalise le proprietaire qui n'a rien fait
-  void handleBuzz(int i);
+  void handleBuzz(int i, unsigned long now);
 
   String scoreLine();            // scores compacts : "R2 B-1 J0 V1"
   void showProgress();
