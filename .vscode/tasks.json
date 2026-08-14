@@ -6,6 +6,14 @@
   // Raccourci : Ctrl+Shift+B (tâche de build par défaut).
   // Si arduino-cli est dans le PATH, remplace "command" par "arduino-cli".
   "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "comPort",
+      "type": "promptString",
+      "description": "Port serie de la carte (voir Gestionnaire de peripheriques)",
+      "default": "COM3"
+    }
+  ],
   "tasks": [
     {
       "label": "Compiler (Arduino Mega)",
@@ -24,6 +32,33 @@
         "kind": "build",
         "isDefault": true
       },
+      "problemMatcher": ["$gcc"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      // Compile ET televerse en une seule commande (arduino-cli --upload),
+      // pour ne jamais televerser un binaire perime. Demande le port a
+      // chaque lancement (le numero COM varie d'un poste a l'autre) ; le
+      // port doit etre completement libre (fermer l'IDE Arduino et tout
+      // moniteur serie ouvert avant de lancer cette tache).
+      "label": "Televerser (Arduino Mega)",
+      "type": "process",
+      "command": "C:/Program Files/Arduino CLI/arduino-cli.exe",
+      "args": [
+        "compile",
+        "--fqbn", "arduino:avr:mega",
+        "--upload",
+        "--port", "${input:comPort}",
+        "--output-dir", "build",
+        "."
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "build",
       "problemMatcher": ["$gcc"],
       "presentation": {
         "reveal": "always",
