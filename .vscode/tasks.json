@@ -4,7 +4,11 @@
   // éviter de simuler un binaire périmé.
   //
   // Raccourci : Ctrl+Shift+B (tâche de build par défaut).
-  // Si arduino-cli est dans le PATH, remplace "command" par "arduino-cli".
+  //
+  // Suppose arduino-cli dans le PATH (cas normal après son installation,
+  // ex. "winget install ArduinoSA.CLI"). Si ce n'est pas le cas sur un poste
+  // donné, remplace "arduino-cli" par le chemin complet de l'exécutable dans
+  // les deux tâches ci-dessous (ex. "C:/Program Files/Arduino CLI/arduino-cli.exe").
   "version": "2.0.0",
   "inputs": [
     {
@@ -18,7 +22,7 @@
     {
       "label": "Compiler (Arduino Mega)",
       "type": "process",
-      "command": "C:/Program Files/Arduino CLI/arduino-cli.exe",
+      "command": "arduino-cli",
       "args": [
         "compile",
         "--fqbn", "arduino:avr:mega",
@@ -46,7 +50,7 @@
       // moniteur serie ouvert avant de lancer cette tache).
       "label": "Televerser (Arduino Mega)",
       "type": "process",
-      "command": "C:/Program Files/Arduino CLI/arduino-cli.exe",
+      "command": "arduino-cli",
       "args": [
         "compile",
         "--fqbn", "arduino:avr:mega",
