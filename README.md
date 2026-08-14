@@ -215,7 +215,7 @@ Deux réglages, sur un écran en deux étapes ouvert depuis la ligne du menu : l
 
 ### Duel — signal sonore, exactement 2 joueurs
 
-Implémenté dans [Duel.cpp](Duel.cpp). Contrairement au Réflexe (signal **visuel**), le Duel donne le départ avec un **signal sonore** : les deux duellistes peuvent jouer **les yeux fermés**, dos à dos. Comme il n'y a qu'un seul haut-parleur, les deux l'entendent au même instant — le délai réel de démarrage du DFPlayer (quelques dizaines de ms) ne favorise donc personne, seul l'écart entre les deux appuis compte. Le signal réutilise le « gong » du tirage au sort (`mp3.playSpin()`, dossier `06`) : c'est le seul son de la carte qui convient à cet usage, pas un fichier dédié.
+Implémenté dans [Duel.cpp](Duel.cpp). Contrairement au Réflexe (signal **visuel**), le Duel donne le départ avec un **signal sonore** : les deux duellistes peuvent jouer **les yeux fermés**, dos à dos. Comme il n'y a qu'un seul haut-parleur, les deux l'entendent au même instant — le délai réel de démarrage du DFPlayer (quelques dizaines de ms) ne favorise donc personne, seul l'écart entre les deux appuis compte. Le signal est un **son de buzzer tiré au hasard** dans tout le dossier `02` (pas forcément celui d'un des deux duellistes) : avec un son fixe, les joueurs finiraient par reconnaître son tout début et partiraient dessus plutôt que d'attendre le signal complet.
 
 **Le jeu exige exactement 2 buzzers présents** — comme Simon en exige 4, mais à l'inverse : ni 1, ni 3, ni 4. Peu importe **lesquels** : Rouge contre Vert, Bleu contre Jaune, tant qu'il y en a deux. Si ce n'est pas le cas, `#` affiche « DUEL : 2 JOUEURS » et renvoie vers l'assistant (`A`) au lieu de lancer la partie.
 

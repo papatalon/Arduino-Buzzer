@@ -14,12 +14,12 @@
 
 // Duel au son, pour EXACTEMENT 2 joueurs (obligatoirement, comme Simon exige
 // 4 : voir Buzzer::hasExactlyTwoPlayers()). A la difference du Reflexe, le
-// signal de depart n'est PAS visuel mais SONORE (le "gong" du tirage au
-// sort, reutilise ici comme signal de depart) : les deux duellistes peuvent
-// jouer les yeux fermes, dos a dos. Comme il n'y a qu'un seul haut-parleur,
-// les deux l'entendent au meme instant : la course entre les deux appuis
-// reste juste quel que soit le delai de demarrage reel du DFPlayer, qui
-// touche les deux joueurs de facon identique.
+// signal de depart n'est PAS visuel mais SONORE (un son de buzzer tire au
+// hasard, voir setGo()) : les deux duellistes peuvent jouer les yeux fermes,
+// dos a dos. Comme il n'y a qu'un seul haut-parleur, les deux l'entendent au
+// meme instant : la course entre les deux appuis reste juste quel que soit
+// le delai de demarrage reel du DFPlayer, qui touche les deux joueurs de
+// facon identique.
 //
 // Les deux buzzers qui s'affrontent sont ceux declares presents (assistant
 // "A") : peu importe lesquels (Rouge contre Vert, Bleu contre Jaune...), le

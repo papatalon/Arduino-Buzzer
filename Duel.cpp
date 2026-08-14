@@ -91,9 +91,20 @@ PhaseMode Duel::arm(char pressedKey) {
 // meme instant, donc le delai de demarrage reel du DFPlayer (quelques
 // dizaines de ms) ne favorise personne — seul l'ecart entre les deux appuis
 // compte, pas l'instant absolu du signal.
+//
+// Le signal est un son de buzzer tire au hasard dans tout le dossier (pas
+// forcement celui d'un des deux duellistes) plutot que toujours le meme
+// fichier : avec un seul son fixe, les joueurs finiraient par en reconnaitre
+// le tout debut et partiraient dessus au lieu d'attendre le signal complet.
 void Duel::setGo() {
   buzzer.armButtons();
-  mp3.playSpin();          // reutilise le "gong" du tirage au sort (mode Vol)
+
+  int poolSize = mp3.buzzerSoundPoolSize();
+  if (poolSize > 0) {
+    mp3.playBuzzerSound(random(poolSize));
+  } else {
+    mp3.playSpin();        // repli improbable : dossier des buzzers vide
+  }
   goStart = millis();
 
   display.clear();
