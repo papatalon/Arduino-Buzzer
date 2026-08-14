@@ -5,10 +5,15 @@
   //
   // Raccourci : Ctrl+Shift+B (tâche de build par défaut).
   //
-  // Suppose arduino-cli dans le PATH (cas normal après son installation,
-  // ex. "winget install ArduinoSA.CLI"). Si ce n'est pas le cas sur un poste
-  // donné, remplace "arduino-cli" par le chemin complet de l'exécutable dans
-  // les deux tâches ci-dessous (ex. "C:/Program Files/Arduino CLI/arduino-cli.exe").
+  // "type": "shell" (et non "process") : c'est ce qui fait chercher
+  // arduino-cli dans le PATH comme le ferait un terminal. Avec "process",
+  // VS Code tente d'exécuter le chemin littéral sans recherche PATH, d'où un
+  // échec du style "D:\...\arduino-cli n'existe pas" si ce n'est pas un
+  // chemin absolu. Suppose arduino-cli installé et dans le PATH (ex.
+  // "winget install ArduinoSA.CLI", puis rouvrir VS Code pour que le PATH
+  // mis à jour soit visible). Si ce n'est pas le cas sur un poste donné,
+  // remplace "arduino-cli" par le chemin complet de l'exécutable dans les
+  // deux tâches ci-dessous (ex. "C:/Program Files/Arduino CLI/arduino-cli.exe").
   "version": "2.0.0",
   "inputs": [
     {
@@ -21,7 +26,7 @@
   "tasks": [
     {
       "label": "Compiler (Arduino Mega)",
-      "type": "process",
+      "type": "shell",
       "command": "arduino-cli",
       "args": [
         "compile",
@@ -49,7 +54,7 @@
       // port doit etre completement libre (fermer l'IDE Arduino et tout
       // moniteur serie ouvert avant de lancer cette tache).
       "label": "Televerser (Arduino Mega)",
-      "type": "process",
+      "type": "shell",
       "command": "arduino-cli",
       "args": [
         "compile",
