@@ -83,6 +83,7 @@ public:
     void setEnabled(int buzzerId, bool value);
     bool isEnabled(int buzzerId);
     bool hasFourPlayers();                   // les 4 buzzers sont déclarés présents
+    bool hasExactlyTwoPlayers();             // exactement 2 (requis par le jeu Duel)
     bool wasPressed(int buzzerId);           // front montant d'un appui (anti-rebond)
     void armButtons();                       // ignore les boutons déjà maintenus
     void setLed(int buzzerId, bool on);
@@ -223,8 +224,8 @@ private:
   // Répartit un texte sur plusieurs lignes de l'écran (coupe aux espaces).
   void wrapText(String text, int from, int to);
 
-  // Manches par jeu : slot 0 = Réflexe, 1 = Chrono aveugle, 2 = Ne buzze pas.
-  int gameRounds[3] = { GAME_ROUNDS_DEFAULT, GAME_ROUNDS_DEFAULT, SOUND_ROUNDS_DEFAULT };
+  // Manches par jeu : 0 = Réflexe, 1 = Chrono aveugle, 2 = Ne buzze pas, 3 = Duel.
+  int gameRounds[4] = { GAME_ROUNDS_DEFAULT, GAME_ROUNDS_DEFAULT, SOUND_ROUNDS_DEFAULT, GAME_ROUNDS_DEFAULT };
   bool soundDecoys = true;          // Ne buzze pas : leurres actifs par défaut
 
   void loadBuzzTimes();             // relit les durées sauvegardées (EEPROM)

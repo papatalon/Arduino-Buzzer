@@ -72,6 +72,7 @@ La touche `C` du menu ouvre le **sous-menu des jeux**. Le jeu sélectionné s'af
 | **Réflexe** | **Sans question** : premier à buzzer au signal, temps de réaction en ms |
 | **Chrono aveugle** | **Sans question** : buzzer quand on croit la durée cible atteinte |
 | **Ne buzze pas** | **Sans question** : flux de sons, buzzer **seulement** sur le sien |
+| **Duel** | **Sans question, exactement 2 joueurs** : signal sonore, premier à buzzer gagne |
 
 ### Chrono de buzz (jeux « Chrono ... » et « Vol »)
 
@@ -86,7 +87,7 @@ Le top est manuel sur la première réponse parce que la lecture de la question 
 
 Pendant le décompte, l'écran affiche les secondes restantes et une **barre qui se vide**, et sur les **3 dernières secondes** les LED des buzzers encore en lice **clignotent**. À l'expiration, un son d'échec est joué et la question est close sans que personne ne marque : l'écran des scores s'affiche avec le titre « TEMPS ECOULE ! ».
 
-Le pas de réglage est de 1 s (jusqu'à 60 s). Régler une durée sur `off` désactive le chrono correspondant — on retrouve alors le comportement sans limite de temps. Les six durées (2 par mode chrono) sont **sauvegardées en EEPROM** (adresses 1 à 6 ; l'adresse 0 est le volume, les adresses 7 à 9 le nombre de manches des jeux qui se jouent en manches, l'adresse 10 les leurres de Ne buzze pas) et rechargées au démarrage. Le chrono ne s'applique **pas** au bris d'égalité, ni aux jeux Simon qui ont leur propre délai.
+Le pas de réglage est de 1 s (jusqu'à 60 s). Régler une durée sur `off` désactive le chrono correspondant — on retrouve alors le comportement sans limite de temps. Les six durées (2 par mode chrono) sont **sauvegardées en EEPROM** (adresses 1 à 6 ; l'adresse 0 est le volume, les adresses 7, 8, 9 et 11 le nombre de manches des jeux qui se jouent en manches — Réflexe, Chrono aveugle, Ne buzze pas, Duel —, l'adresse 10 les leurres de Ne buzze pas) et rechargées au démarrage. Le chrono ne s'applique **pas** au bris d'égalité, ni aux jeux Simon qui ont leur propre délai.
 
 ### Vol — question adressée, avec possibilité de voler
 
@@ -110,7 +111,7 @@ Une **banque de 2000 questions-réponses** (10 catégories de 200 : Culture gene
 
 Chaque question n'a qu'**une seule réponse valide** : les formulations qui en admettaient plusieurs (« quel grand animal dort debout ? » — cheval, mais girafe et éléphant aussi) ont été resserrées ou remplacées, parce qu'une réponse défendable refusée par l'animateur gâche une manche.
 
-Au lancement d'un quiz (`#` au menu — tous les jeux sauf Simon et les trois jeux sans question), deux écrans se présentent :
+Au lancement d'un quiz (`#` au menu — tous les jeux sauf Simon et les quatre jeux sans question), deux écrans se présentent :
 
 1. **Catégories** (`QUIZ_CATS`) — liste déroulante : `Toutes`, `Aucune (perso)` — pour jouer avec **son propre questionnaire** papier, comme avant —, puis les 10 catégories cochables. `2`/`8` déplacent le curseur, `5` coche/décoche `[x]`, `#` confirme (sur `Toutes`/`Aucune`, `#` applique directement ; sur une catégorie sans rien de coché, `#` sélectionne celle-là seule), `*` annule le lancement. La sélection est **mémorisée** d'une partie à l'autre.
 2. **Nombre de questions** (`QUIZ_COUNT`) — `Ouvert` (l'animateur termine avec `C`, comportement historique) ou une valeur de 1 à 99 (`2` = +1, `8` = −1). Quand le compte est atteint, la partie se termine d'elle-même sur l'écran des scores finaux. La limite s'applique aussi avec `Aucune` (questionnaire perso).
@@ -158,13 +159,13 @@ La partie s'arrête à la **première erreur** : l'écran de fin affiche la **co
 
 Les durées du jeu (démonstration, écho des appuis, délai maxi) sont réglables via les `#define` en tête de [Simon.h](Simon.h).
 
-### Jeux en manches sans question (Réflexe, Chrono aveugle, Ne buzze pas)
+### Jeux en manches sans question (Réflexe, Chrono aveugle, Ne buzze pas, Duel)
 
-Ces trois jeux ne posent **aucune question** : `#` au menu lance directement la partie, sans passer par le choix des catégories. Rien ne s'épuise, ils se rejouent indéfiniment, et ils s'adaptent au **nombre de buzzers déclarés présents** — à un seul joueur, ils deviennent une course au record personnel.
+Ces quatre jeux ne posent **aucune question** : `#` au menu lance directement la partie, sans passer par le choix des catégories. Rien ne s'épuise, ils se rejouent indéfiniment. Le Réflexe, le Chrono aveugle et Ne buzze pas s'adaptent au **nombre de buzzers déclarés présents** — à un seul joueur, ils deviennent une course au record personnel. **Le Duel fait exception** : il exige **exactement 2** joueurs présents (voir sa section dédiée ci-dessous).
 
-Leur **nombre de manches** se règle depuis leur propre ligne du sous-menu `C`, qui sélectionne le jeu **et** ouvre son écran de réglage (même mécanique que les lignes « Chrono … »). Valeur de 1 à 20, `2`/`8` pour l'ajuster, **sauvegardée en EEPROM** (adresses 7 à 9, un réglage par jeu). Le défaut est de 5 manches, sauf pour Ne buzze pas où un flux de 12 sons est le minimum pour que la difficulté ait le temps de monter. Le nombre est **figé au lancement** de la partie, donc le modifier en cours de route n'affecte pas la partie déjà commencée.
+Leur **nombre de manches** se règle depuis leur propre ligne du sous-menu `C`, qui sélectionne le jeu **et** ouvre son écran de réglage (même mécanique que les lignes « Chrono … »). Valeur de 1 à 20, `2`/`8` pour l'ajuster, **sauvegardée en EEPROM** (adresses 7, 8, 9 et 11, un réglage par jeu). Le défaut est de 5 manches, sauf pour Ne buzze pas où un flux de 12 sons est le minimum pour que la difficulté ait le temps de monter. Le nombre est **figé au lancement** de la partie, donc le modifier en cours de route n'affecte pas la partie déjà commencée.
 
-Le Réflexe et le Chrono aveugle tiennent chacun un **record persistant** en EEPROM, affiché sur l'écran de fin et signalé quand il tombe. Ne buzze pas n'en a pas : son score dépend du nombre de sons et de la présence des leurres, donc deux parties ne sont pas comparables.
+Le Réflexe et le Chrono aveugle tiennent chacun un **record persistant** en EEPROM, affiché sur l'écran de fin et signalé quand il tombe. Ne buzze pas et le Duel n'en ont pas : leurs scores dépendent du nombre de manches (et, pour Ne buzze pas, de la présence des leurres), donc deux parties ne sont pas comparables.
 
 ### Réflexe — le plus rapide au signal
 
@@ -212,6 +213,18 @@ Deux réglages, sur un écran en deux étapes ouvert depuis la ligne du menu : l
 
 ⚠️ **C'est le seul jeu intestable dans Wokwi** : il n'y a pas de DFPlayer dans la simulation, donc aucun son n'est émis (ils sont seulement écrits sur le port série). La logique tourne à l'identique — le flux est cadencé par un minuteur, pas par la fin réelle des sons — mais le jeu ne se juge que sur la borne.
 
+### Duel — signal sonore, exactement 2 joueurs
+
+Implémenté dans [Duel.cpp](Duel.cpp). Contrairement au Réflexe (signal **visuel**), le Duel donne le départ avec un **signal sonore** : les deux duellistes peuvent jouer **les yeux fermés**, dos à dos. Comme il n'y a qu'un seul haut-parleur, les deux l'entendent au même instant — le délai réel de démarrage du DFPlayer (quelques dizaines de ms) ne favorise donc personne, seul l'écart entre les deux appuis compte. Le signal réutilise le « gong » du tirage au sort (`mp3.playSpin()`, dossier `06`) : c'est le seul son de la carte qui convient à cet usage, pas un fichier dédié.
+
+**Le jeu exige exactement 2 buzzers présents** — comme Simon en exige 4, mais à l'inverse : ni 1, ni 3, ni 4. Peu importe **lesquels** : Rouge contre Vert, Bleu contre Jaune, tant qu'il y en a deux. Si ce n'est pas le cas, `#` affiche « DUEL : 2 JOUEURS » et renvoie vers l'assistant (`A`) au lieu de lancer la partie.
+
+Déroulement d'une manche : délai aléatoire de 2 à 7 s (`DUEL_ARM`, aucune LED, juste le silence), puis le signal sonore (`DUEL_GO`). Le premier des deux à buzzer gagne la manche et son temps de réaction s'affiche. Buzzer **avant** le signal est un faux départ qui offre directement la manche à l'adversaire — à deux, il n'y a personne d'autre à qui la faire jouer. Si aucun des deux ne buzze dans les 3 s suivant le signal, la manche est nulle.
+
+L'écran de fin annonce le vainqueur de la partie (ou l'égalité) selon le nombre de manches gagnées. Les bornes du délai sont réglables via les `#define` en tête de [Duel.h](Duel.h).
+
+Le Duel n'est **pas testable à l'oreille** dans Wokwi pour la même raison que Ne buzze pas (pas de DFPlayer en simulation), mais sa mécanique (faux départ, score, enchaînement des manches) reste vérifiable : le texte « GO ! » s'affiche à l'écran exactement au moment du signal, ce qui permet de la déclencher au clic sans l'entendre.
+
 ## Assistant de configuration des buzzers (`A` au menu)
 
 L'assistant fait le tour des 4 buzzers (Rouge → Bleu → Jaune → Vert). Pour chacun :
@@ -240,6 +253,7 @@ La configuration est **optionnelle** : si on lance directement la partie (`#`), 
 | [Reflex.cpp](Reflex.cpp) / [.h](Reflex.h) | Jeu de rapidité « Réflexe » (sans question, en manches) |
 | [BlindTimer.cpp](BlindTimer.cpp) / [.h](BlindTimer.h) | Jeu « Chrono aveugle » (sans question, en manches) |
 | [SoundGame.cpp](SoundGame.cpp) / [.h](SoundGame.h) | Jeu « Ne buzze pas » (flux de sons continu, leurres) |
+| [Duel.cpp](Duel.cpp) / [.h](Duel.h) | Jeu « Duel » (signal sonore, exactement 2 joueurs) |
 | [Questions.cpp](Questions.cpp) / [.h](Questions.h) | Banque de questions-réponses par catégorie (PROGMEM) |
 | [QuestionBank.cpp](QuestionBank.cpp) / [.h](QuestionBank.h) | Tirage sans répétition (historique en EEPROM), sélection de catégories |
 | [AppKeypad.h](AppKeypad.h) | Lecture du clavier matriciel et détection du reset (singleton) |

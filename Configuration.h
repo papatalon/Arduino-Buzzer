@@ -57,6 +57,7 @@ private:
   // du menu : la touche suivante redessine le menu avant d'être traitée.
   bool warningShown = false;
   void showFourPlayersWarning();
+  void showTwoPlayersWarning();
 
   // Réglage du chrono en deux étapes (1re réponse, puis autres réponses),
   // ouvert depuis une ligne "Chrono ..." de la liste déroulante ;

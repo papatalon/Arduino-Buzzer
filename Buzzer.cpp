@@ -13,11 +13,12 @@
 #define EEPROM_ADDR_VOL_FIRST 5
 #define EEPROM_ADDR_VOL_NEXT 6
 // Manches par jeu : 7 = Réflexe, 8 = Chrono aveugle, 9 = Ne buzze pas.
-// 10 = leurres de Ne buzze pas (0/1).
+// 10 = leurres de Ne buzze pas (0/1). 11 = manches du Duel.
 #define EEPROM_ADDR_ROUNDS_REFLEX 7
 #define EEPROM_ADDR_ROUNDS_BLIND 8
 #define EEPROM_ADDR_ROUNDS_SOUND 9
 #define EEPROM_ADDR_SOUND_DECOYS 10
+#define EEPROM_ADDR_ROUNDS_DUEL 11
 
 Buzzer::Buzzer() {}
 
@@ -483,6 +484,9 @@ void Buzzer::setIntro() {
   } else if (gameMode == GAME_SOUND) {
     display.setText("   Ne buzze pas :", 1);
     display.setText("  ouvrez l'oreille", 2);
+  } else if (gameMode == GAME_DUEL) {
+    display.setText("     Duel au son :", 1);
+    display.setText("  fermez les yeux !", 2);
   } else {
     display.setText("  Que le meilleur", 1);
     display.setText("     gagne !", 2);
@@ -504,6 +508,9 @@ PhaseMode Buzzer::intro(char pressedKey) {
     }
     if (gameMode == GAME_SOUND) {
       return SOUND_LEARN;      // on apprend les sons avant que ca compte
+    }
+    if (gameMode == GAME_DUEL) {
+      return DUEL_ARM;
     }
     bool isSimon = (gameMode == GAME_SIMON || gameMode == GAME_SIMON_REVERSE);
     return isSimon ? SIMON_SHOW : WAITING_BUZZER;
@@ -729,6 +736,7 @@ const char* Buzzer::gameModeName(GameMode mode) {
     case GAME_REFLEX:         return "Reflexe";
     case GAME_BLIND:          return "Chrono aveugle";
     case GAME_SOUND:          return "Ne buzze pas";
+    case GAME_DUEL:           return "Duel";
     default:                  return "Classique";
   }
 }
@@ -792,13 +800,14 @@ void Buzzer::saveBuzzTimes() {
 }
 
 // === Nombre de manches (jeux qui se jouent en manches) ===
-// Trois jeux de valeurs : slot 0 pour le Réflexe, slot 1 pour le Chrono
-// aveugle, slot 2 pour Ne buzze pas. Les autres jeux n'utilisent pas ce
+// Quatre jeux de valeurs : slot 0 pour le Réflexe, 1 pour le Chrono aveugle,
+// 2 pour Ne buzze pas, 3 pour le Duel. Les autres jeux n'utilisent pas ce
 // réglage.
 static int gameRoundsSlot(GameMode mode) {
   switch (mode) {
     case GAME_BLIND: return 1;
     case GAME_SOUND: return 2;
+    case GAME_DUEL:  return 3;
     default:         return 0;
   }
 }
@@ -818,12 +827,17 @@ void Buzzer::loadGameRounds() {
   if (stored >= GAME_ROUNDS_MIN && stored <= GAME_ROUNDS_MAX) {
     gameRounds[2] = stored;
   }
+  stored = EEPROM.read(EEPROM_ADDR_ROUNDS_DUEL);
+  if (stored >= GAME_ROUNDS_MIN && stored <= GAME_ROUNDS_MAX) {
+    gameRounds[3] = stored;
+  }
 }
 
 void Buzzer::saveGameRounds() {
   EEPROM.update(EEPROM_ADDR_ROUNDS_REFLEX, (uint8_t)gameRounds[0]);
   EEPROM.update(EEPROM_ADDR_ROUNDS_BLIND, (uint8_t)gameRounds[1]);
   EEPROM.update(EEPROM_ADDR_ROUNDS_SOUND, (uint8_t)gameRounds[2]);
+  EEPROM.update(EEPROM_ADDR_ROUNDS_DUEL, (uint8_t)gameRounds[3]);
 }
 
 // Une case jamais écrite vaut 255 : on garde alors le défaut (leurres actifs).
@@ -1205,6 +1219,18 @@ bool Buzzer::hasFourPlayers() {
     }
   }
   return true;
+}
+
+// Vrai si exactement 2 buzzers sont déclarés présents (requis par le jeu
+// Duel) : peu importe lesquels, un duel se joue à deux, pas à trois ou quatre.
+bool Buzzer::hasExactlyTwoPlayers() {
+  int n = 0;
+  for (int i = 0; i < 4; i++) {
+    if (enabled[i]) {
+      n++;
+    }
+  }
+  return n == 2;
 }
 
 // Mémorise l'état courant des boutons : un bouton déjà maintenu en entrant dans

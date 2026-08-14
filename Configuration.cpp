@@ -20,6 +20,17 @@ void Configuration::showFourPlayersWarning() {
   display.setText("Autre touche: menu", 3);
 }
 
+// Le jeu Duel exige EXACTEMENT 2 buzzers presents (ni 1, ni 3, ni 4) : peu
+// importe lesquels, il se joue toujours a deux.
+void Configuration::showTwoPlayersWarning() {
+  warningShown = true;
+  display.clear();
+  display.setText("   DUEL : 2 JOUEURS", 0);
+  display.setText("Il en faut exactement", 1);
+  display.setText("A: config buzzers", 2);
+  display.setText("Autre touche: menu", 3);
+}
+
 PhaseMode Configuration::manageConfiguration(char pressedKey) {
 
   if(!pressedKey) {
@@ -52,6 +63,15 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
         buzzer.resetScores();       // nouvelle partie : scores remis à zéro
         mp3.playInit();             // son de lancement (dossier 01)
         return INTRO;               // chenillard festif pendant la musique
+      }
+      if (mode == GAME_DUEL) {
+        if (!buzzer.hasExactlyTwoPlayers()) {
+          showTwoPlayersWarning(); // le Duel se joue a deux, ni plus ni moins
+          return CONFIGURATION;
+        }
+        buzzer.resetScores();
+        mp3.playInit();
+        return INTRO;
       }
       if (mode == GAME_REFLEX || mode == GAME_BLIND || mode == GAME_SOUND) {
         // Jeux sans question : on saute le choix des catégories.
@@ -94,6 +114,7 @@ static const GameListItem GAME_LIST[] = {
   { "Reflexe",          GLK_ROUNDS, GAME_REFLEX },
   { "Chrono aveugle",   GLK_ROUNDS, GAME_BLIND },
   { "Ne buzze pas",     GLK_SOUND,  GAME_SOUND },
+  { "Duel",             GLK_ROUNDS, GAME_DUEL },
 };
 #define GAME_LIST_COUNT (sizeof(GAME_LIST) / sizeof(GAME_LIST[0]))
 

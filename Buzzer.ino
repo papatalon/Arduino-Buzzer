@@ -9,6 +9,7 @@
 #include "Reflex.h"
 #include "BlindTimer.h"
 #include "SoundGame.h"
+#include "Duel.h"
 #include "Mp3.h"
 #include "QuestionBank.h"
 
@@ -23,6 +24,7 @@ Simon simon;
 Reflex reflex;
 BlindTimer blindTimer;
 SoundGame soundGame;
+Duel duel;
 Buzzer& buzzer = Buzzer::shared();
 //OledDisplay& display = OledDisplay::shared();
 Mp3& mp3 = Mp3::shared();
@@ -197,6 +199,18 @@ PhaseMode getCurrentMode() {
     case SOUND_OVER:
       mode = soundGame.gameOver(pressedKey);
       break;
+    case DUEL_ARM:
+      mode = duel.arm(pressedKey);
+      break;
+    case DUEL_GO:
+      mode = duel.go(pressedKey);
+      break;
+    case DUEL_RESULT:
+      mode = duel.result(pressedKey);
+      break;
+    case DUEL_OVER:
+      mode = duel.gameOver(pressedKey);
+      break;
     case LED_TEST:
       mode = buzzer.ledTest(pressedKey);
       break;
@@ -235,6 +249,7 @@ void updateMode() {
       reflex.reset();     // ... et scores des jeux en manches remis a zero
       blindTimer.reset();
       soundGame.reset();
+      duel.reset();
       buzzer.setIntro();
       break;
     case WAITING_BUZZER:
@@ -317,6 +332,18 @@ void updateMode() {
       break;
     case SOUND_OVER:
       soundGame.setGameOver();
+      break;
+    case DUEL_ARM:
+      duel.setArm();
+      break;
+    case DUEL_GO:
+      duel.setGo();
+      break;
+    case DUEL_RESULT:
+      duel.setResult();
+      break;
+    case DUEL_OVER:
+      duel.setGameOver();
       break;
     case LED_TEST:
       buzzer.setLedTest();

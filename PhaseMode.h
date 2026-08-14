@@ -37,6 +37,10 @@ enum PhaseMode {
     SOUND_LEARN,    // Ne buzze pas : apprentissage des 4 sons
     SOUND_PLAY,     // Ne buzze pas : flux continu de sons
     SOUND_OVER,     // Ne buzze pas : fin de partie (scores)
+    DUEL_ARM,       // Duel : attente du signal (buzzer = faux depart)
+    DUEL_GO,        // Duel : signal sonore donne, course au buzz
+    DUEL_RESULT,    // Duel : resultat de la manche
+    DUEL_OVER,      // Duel : fin de partie (scores)
     LED_TEST        // mode cache de test cablage (LED + boutons), entree *1
 };
 
