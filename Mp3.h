@@ -4,6 +4,7 @@
 #include "SoftwareSerial.h"
 #include "DFRobotDFPlayerMini.h"
 #include <Arduino.h>
+#include "BleLink.h"
 
 #define RX_PIN 15
 #define TX_PIN 14
@@ -88,6 +89,11 @@ class Mp3 {
     void initializeMP3Arrays(void);
     int getFileCount(int folderId);
 
+    // Telemetrie app compagnon (BLE) : un seul point de construction du
+    // message SOUND, appele par chaque play*() juste avant (ou a la place
+    // de) la lecture DFPlayer.
+    void sendSoundEvent(int folder, int file);
+
     // Attend ms millisecondes en appelant onTick périodiquement (animation).
     void waitAnimated(unsigned long ms, void (*onTick)());
 
@@ -100,6 +106,7 @@ class Mp3 {
 
     DFRobotDFPlayerMini mp3;
     SoftwareSerial softwareSerialMP3;
+    BleLink& ble = BleLink::shared();
     Mp3(const Mp3&) = delete;
     Mp3& operator=(const Mp3&) = delete;
 };

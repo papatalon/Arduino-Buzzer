@@ -12,6 +12,7 @@
 #include "Duel.h"
 #include "Mp3.h"
 #include "QuestionBank.h"
+#include "BleLink.h"
 
 PhaseMode currentMode = BOOT;
 PhaseMode previousMode = BOOT;
@@ -39,6 +40,7 @@ void bootTick() {
 
 void setup() {
   Serial.begin(9600);
+  BleLink::shared().init();
 
   // Amorce le générateur aléatoire avant tout tirage (message de démarrage,
   // sons des buzzers...). A0 est laissée flottante : sa lecture est du bruit.
@@ -225,6 +227,7 @@ void updateMode() {
   }
 
   previousMode = currentMode;
+  BleLink::shared().send("STATE|" + String((int)currentMode));
   switch (currentMode) {
     case BOOT:
       buzzer.setBoot();

@@ -216,6 +216,11 @@ void Mp3::ensureUnlockedSound(int buzzerId) {
 
 void Mp3::lockSound(int buzzerId) {
   locked[buzzerId] = true;
+  ble.send("CFG_SOUND|" + String(buzzerId) + "|" + String(buzzerSound[buzzerId]));
+}
+
+void Mp3::sendSoundEvent(int folder, int file) {
+  ble.send("SOUND|" + String(folder) + "|" + String(file));
 }
 
 void Mp3::resetConfig() {
@@ -253,6 +258,7 @@ void Mp3::playInit() {
 void Mp3::playBuzzer(int buzzerId) {
 
   int mp3Id = buzzerSound[buzzerId];
+  sendSoundEvent(BUZZER_FOLDER, mp3Id + 1);
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier BUZZER, fichier "));
@@ -270,6 +276,7 @@ void Mp3::playBuzzerSound(int soundIndex) {
   if (soundIndex < 0 || soundIndex >= poolSize) {
     return;
   }
+  sendSoundEvent(BUZZER_FOLDER, soundIndex + 1);
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier BUZZER, fichier "));
@@ -291,6 +298,7 @@ void Mp3::playGoodAnswer() {
     fileNumber = random(arraySize) + 1;     // fichiers DFPlayer numérotés à partir de 1
   } while (arraySize > 1 && fileNumber == lastGood);  // pas 2x le même de suite
   lastGood = fileNumber;
+  sendSoundEvent(GOOD_FOLDER, fileNumber);
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier GOOD, fichier "));
@@ -308,6 +316,7 @@ void Mp3::playBadAnswer() {
     fileNumber = random(arraySize) + 1;
   } while (arraySize > 1 && fileNumber == lastBad);
   lastBad = fileNumber;
+  sendSoundEvent(BAD_FOLDER, fileNumber);
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier BAD, fichier "));
@@ -330,6 +339,7 @@ void Mp3::playWaiting() {
     fileNumber = random(arraySize) + 1;
   } while (arraySize > 1 && fileNumber == lastWaiting);   // pas 2x le même de suite
   lastWaiting = fileNumber;
+  sendSoundEvent(WAITING_FOLDER, fileNumber);
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier WAITING, fichier "));
@@ -342,6 +352,7 @@ void Mp3::playWaiting() {
 
 // Un seul fichier pour l'instant : pas de tirage, on rejoue toujours le même.
 void Mp3::playSpin() {
+  sendSoundEvent(SPIN_FOLDER, 1);
   if (simulation) {
     Serial.println(F("[SIM] Lecture dossier SPIN, fichier 1"));
     return;

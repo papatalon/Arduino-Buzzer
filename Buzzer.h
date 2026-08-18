@@ -6,6 +6,7 @@
 #include "LcdDisplay.h"
 #include <Arduino.h>
 #include "Mp3.h";
+#include "BleLink.h"
 
 #define SCORES_DISPLAY_MS 15000  // durée d'affichage des scores entre les questions
 #define WIN_BLINK_MS 1500        // durée du clignotement de la LED du gagnant
@@ -263,8 +264,14 @@ private:
   void resetAllBuzzers();
   void displayScores(const char* title, const char* prompt);
 
+  // Telemetrie app compagnon (BLE) : un seul point de construction du message
+  // SCORE, appele partout ou scores[] change (bonne/mauvaise reponse,
+  // correction, remise a zero).
+  void sendScoreTelemetry();
+
   LcdDisplay& display = LcdDisplay::shared();
   Mp3& mp3 = Mp3::shared();
+  BleLink& ble = BleLink::shared();
 };
 
 #endif

@@ -407,6 +407,7 @@ void Buzzer::setBuzzerPressed() {
       display.setText("D: Mauvaise reponse", 2);
     }
     display.setText("0 = passer", 3);
+    ble.send("BUZZ|" + String(currentBuzzerId));
     int ledPin = buzzers[currentBuzzerId][0];
     digitalWrite(ledPin, HIGH);
 }
@@ -641,6 +642,7 @@ void Buzzer::goodAnswer() {
 
   mp3.playGoodAnswer();
   digitalWrite(ledPin, LOW);
+  sendScoreTelemetry();
 
   // Le clignotement de la LED se fait sans blocage pendant l'écran des
   // scores (voir showScores), pour ne pas figer le clavier ni l'afficheur.
@@ -662,6 +664,7 @@ void Buzzer::badAnswer() {
 
   actives[currentBuzzerId] = false;
   digitalWrite(ledPin, LOW);
+  sendScoreTelemetry();
 
   // Vol : le joueur désigné vient d'échouer (1er échec de la question) —
   // on ouvre le vol aux autres présents. Un voleur qui échoue à son tour
@@ -692,6 +695,7 @@ PhaseMode Buzzer::correctLastDecision(PhaseMode fallback) {
       scores[id]++;                // annule le -1 de la pénalité
     }
   }
+  sendScoreTelemetry();
 
   currentBuzzerId = id;            // on revient juger ce même buzzer
   return BUZZER_PRESSED;
@@ -715,6 +719,7 @@ const char* Buzzer::colorName(int i) {
 
 void Buzzer::setGameMode(GameMode value) {
   gameMode = value;
+  ble.send("GAME|" + String((int)value));
 }
 
 GameMode Buzzer::getGameMode() {
@@ -988,6 +993,12 @@ void Buzzer::resetScores() {
   for (int i = 0; i < 4; i++) {
     actives[i] = true;
   }
+  sendScoreTelemetry();
+}
+
+void Buzzer::sendScoreTelemetry() {
+  ble.send("SCORE|" + String(scores[0]) + "|" + String(scores[1]) + "|" +
+           String(scores[2]) + "|" + String(scores[3]));
 }
 
 void Buzzer::setQuestionLimit(int n) {
@@ -1205,6 +1216,8 @@ void Buzzer::resetConfigState() {
 
 void Buzzer::setEnabled(int buzzerId, bool value) {
   enabled[buzzerId] = value;
+  ble.send("PRESENT|" + String(enabled[0]) + "|" + String(enabled[1]) + "|" +
+           String(enabled[2]) + "|" + String(enabled[3]));
 }
 
 bool Buzzer::isEnabled(int buzzerId) {
