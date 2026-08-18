@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../broadsheet/dashed_box.dart';
+import '../broadsheet/pulse.dart';
 import '../broadsheet/tokens.dart';
 import '../protocol.dart';
 import 'popout_snapshot.dart';
@@ -48,9 +49,9 @@ class PopoutContent extends StatelessWidget {
             ),
             Expanded(
               child: Center(
-                child: Text(
-                  "Le contenu (question, chrono, buzz) arrive à l'étape 4.",
-                  style: BSType.body(size: 20, color: BSColors.neutral600),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 80),
+                  child: _CenterZone(snapshot: snapshot),
                 ),
               ),
             ),
@@ -75,6 +76,120 @@ class _HeaderMeta extends StatelessWidget {
       children: [
         Text(label, style: BSType.popoutHeaderMeta(color: BSColors.neutral600)),
         Text(value.toUpperCase(), style: BSType.popoutHeaderMeta(color: BSColors.text)),
+      ],
+    );
+  }
+}
+
+// Bloc central pendant une question (design_handoff_buzzer_console/README.md,
+// "Le flux d'une question (Chrono pénalité)") — miroir public du contenu
+// console (QuestionFlowView), en respectant la confidentialité : la
+// réponse n'arrive dans [snapshot] que si elle a déjà été révélée (voir
+// PopoutSnapshot.fromGameState), donc rien à filtrer ici.
+class _CenterZone extends StatelessWidget {
+  const _CenterZone({required this.snapshot});
+  final PopoutSnapshot snapshot;
+
+  @override
+  Widget build(BuildContext context) {
+    return switch (snapshot.flowState) {
+      QuestionFlowState.arming => _ArmingZone(snapshot: snapshot),
+      QuestionFlowState.buzzed => _BuzzedZone(snapshot: snapshot),
+      QuestionFlowState.scored => _ScoredZone(snapshot: snapshot),
+      QuestionFlowState.revealed => _RevealedZone(snapshot: snapshot),
+      QuestionFlowState.none => Text(
+          "En attente d'une question.",
+          style: BSType.body(size: 20, color: BSColors.neutral600),
+          textAlign: TextAlign.center,
+        ),
+    };
+  }
+}
+
+class _ArmingZone extends StatelessWidget {
+  const _ArmingZone({required this.snapshot});
+  final PopoutSnapshot snapshot;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(snapshot.questionText ?? '', style: BSType.questionPopout(), textAlign: TextAlign.center),
+        const SizedBox(height: BSSpace.s6),
+        Text('ATTENDEZ LE TOP', style: BSType.popoutHeaderMeta(color: BSColors.neutral500)),
+        const SizedBox(height: BSSpace.s2),
+        Container(width: 400, height: 20, color: BSColors.neutral300),
+      ],
+    );
+  }
+}
+
+class _BuzzedZone extends StatelessWidget {
+  const _BuzzedZone({required this.snapshot});
+  final PopoutSnapshot snapshot;
+
+  @override
+  Widget build(BuildContext context) {
+    final idx = snapshot.lastBuzz;
+    if (idx == null || idx < 0 || idx >= kBuzzerColors.length) return const SizedBox.shrink();
+    final color = kBuzzerColors[idx];
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Pulse(child: Container(width: 88, height: 88, color: color.fill)),
+        const SizedBox(height: BSSpace.s4),
+        Text('${color.name.toUpperCase()} A BUZZÉ', style: BSType.heroDigitPopout(size: 64, color: color.fill)),
+      ],
+    );
+  }
+}
+
+class _ScoredZone extends StatelessWidget {
+  const _ScoredZone({required this.snapshot});
+  final PopoutSnapshot snapshot;
+
+  @override
+  Widget build(BuildContext context) {
+    final idx = snapshot.lastBuzz;
+    final color = (idx != null && idx >= 0 && idx < kBuzzerColors.length) ? kBuzzerColors[idx] : null;
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        if (color != null)
+          Text('${color.name.toUpperCase()} MARQUE', style: BSType.heroDigitPopout(size: 96, color: color.fill)),
+        const SizedBox(height: BSSpace.s4),
+        if (snapshot.answerText != null)
+          Text(snapshot.answerText!, style: BSType.answerPopout(size: 40), textAlign: TextAlign.center),
+      ],
+    );
+  }
+}
+
+class _RevealedZone extends StatelessWidget {
+  const _RevealedZone({required this.snapshot});
+  final PopoutSnapshot snapshot;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          snapshot.questionText ?? '',
+          style: BSType.body(size: 40, color: BSColors.neutral700).copyWith(fontWeight: FontWeight.w600),
+          textAlign: TextAlign.center,
+        ),
+        const SizedBox(height: BSSpace.s4),
+        Text('LA RÉPONSE ÉTAIT', style: BSType.popoutHeaderMeta(color: BSColors.accent2_700)),
+        const SizedBox(height: BSSpace.s2),
+        if (snapshot.answerText != null)
+          Text(snapshot.answerText!, style: BSType.answerPopout(size: 140), textAlign: TextAlign.center),
+        const SizedBox(height: BSSpace.s4),
+        Text(
+          "PERSONNE N'A TROUVÉ",
+          style: BSType.body(size: 32, color: BSColors.neutral700).copyWith(fontWeight: FontWeight.w600),
+        ),
       ],
     );
   }

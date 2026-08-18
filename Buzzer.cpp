@@ -274,6 +274,7 @@ void Buzzer::setWaitingForBuzzer() {
     if (bankOn && lastDrawnQuestion != questionNumber) {
       if (bank.drawQuestion()) {
         lastDrawnQuestion = questionNumber;
+        ble.send("QUESTION|" + bank.questionCategory() + "|" + bank.questionText() + "|" + bank.answerText());
       } else {
         bankOn = false;
       }
@@ -310,6 +311,7 @@ void Buzzer::setWaitingForBuzzer() {
   if (bankOn && lastDrawnQuestion != questionNumber) {
     if (bank.drawQuestion()) {
       lastDrawnQuestion = questionNumber;
+      ble.send("QUESTION|" + bank.questionCategory() + "|" + bank.questionText() + "|" + bank.answerText());
     } else {
       bankOn = false;
     }

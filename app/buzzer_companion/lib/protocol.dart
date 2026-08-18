@@ -59,6 +59,21 @@ const Map<String, String> _friendlyPhaseLabels = {
   'GAME_CHOICE': 'Choix du jeu',
 };
 
+// Une fois la phase à ANSWER_REVEAL (personne n'a trouvé) ou SHOW_SCORES
+// (quelqu'un a trouvé), la question est terminée et sa réponse peut
+// atteindre l'écran public — avant ça, elle reste console-only (voir le
+// tableau de confidentialité du handoff de design).
+final int _kPhaseAnswerReveal = kPhaseNames.indexOf('ANSWER_REVEAL');
+final int _kPhaseShowScores = kPhaseNames.indexOf('SHOW_SCORES');
+final int _kPhaseBuzzerPressed = kPhaseNames.indexOf('BUZZER_PRESSED');
+final int _kPhaseWaitingBuzzer = kPhaseNames.indexOf('WAITING_BUZZER');
+
+// Les 4 états du flux d'une question (design_handoff_buzzer_console/
+// README.md, "Le flux d'une question (Chrono pénalité)") que l'app sait
+// distinguer avec la télémétrie actuelle. `none` couvre tout le reste
+// (menus, écrans de configuration...) : pas encore modélisé ici.
+enum QuestionFlowState { arming, buzzed, scored, revealed, none }
+
 String phaseLabel(int? phase) {
   if (phase == null || phase < 0 || phase >= kPhaseNames.length) return '—';
   final raw = kPhaseNames[phase];
@@ -89,6 +104,21 @@ class GameState extends ChangeNotifier {
   int? phase;
   int? lastBuzz;
   final List<int?> buzzerSound = [null, null, null, null];
+
+  String? questionCategory;
+  String? questionText;
+  String? answerText;
+
+  bool get answerRevealed => phase == _kPhaseAnswerReveal || phase == _kPhaseShowScores;
+
+  QuestionFlowState get questionFlowState {
+    if (questionText == null) return QuestionFlowState.none;
+    if (phase == _kPhaseAnswerReveal) return QuestionFlowState.revealed;
+    if (phase == _kPhaseShowScores) return QuestionFlowState.scored;
+    if (phase == _kPhaseBuzzerPressed) return QuestionFlowState.buzzed;
+    if (phase == _kPhaseWaitingBuzzer) return QuestionFlowState.arming;
+    return QuestionFlowState.none;
+  }
 
   StreamSubscription<String>? _sub;
 
@@ -138,6 +168,15 @@ class GameState extends ChangeNotifier {
         case 'BUZZ':
           if (parts.length == 2) {
             lastBuzz = int.tryParse(parts[1]);
+            notifyListeners();
+          }
+          break;
+        case 'QUESTION':
+          if (parts.length == 4) {
+            questionCategory = parts[1];
+            questionText = parts[2];
+            answerText = parts[3];
+            lastBuzz = null; // une nouvelle question efface le dernier buzz
             notifyListeners();
           }
           break;

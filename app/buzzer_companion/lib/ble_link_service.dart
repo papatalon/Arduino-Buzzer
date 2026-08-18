@@ -39,8 +39,24 @@ class BleLinkService extends ChangeNotifier {
     });
 
     UniversalBle.onAvailabilityChange = (state) {
+      final wasOff = availability != AvailabilityState.poweredOn;
       availability = state;
+      // Éteindre le Bluetooth de Windows ne déclenche pas forcément
+      // `onConnectionChange` — observé : la console reste affichée comme
+      // "connectée" alors qu'il ne peut plus y avoir de lien radio réel.
+      // Sans ce radio éteint/indisponible, aucune connexion n'est possible.
+      if (state != AvailabilityState.poweredOn && connectedDeviceId != null) {
+        connectedDeviceId = null;
+        connectedDeviceName = null;
+        status = 'Bluetooth indisponible (${state.name}).';
+      }
       notifyListeners();
+      // Radio qui revient (ex. après un aller-retour off/on qui a servi à
+      // purger une session BLE fantôme) : retente la reconnexion sans
+      // attendre un clic manuel sur "Se connecter".
+      if (wasOff && state == AvailabilityState.poweredOn && connectedDeviceId == null) {
+        _tryAutoReconnect();
+      }
     };
     UniversalBle.getBluetoothAvailabilityState().then((state) {
       availability = state;

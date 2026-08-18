@@ -6,6 +6,7 @@ import '../ble_link_service.dart';
 import '../popout/popout_launcher.dart';
 import '../protocol.dart';
 import 'phosphor_duotone.dart';
+import 'question_flow.dart';
 import 'right_rail.dart';
 import 'tokens.dart';
 
@@ -259,6 +260,12 @@ class _CenterColumn extends StatelessWidget {
         ),
       );
     }
+    if (game.questionFlowState != QuestionFlowState.none) {
+      return Align(
+        alignment: Alignment.topLeft,
+        child: QuestionFlowView(game: game),
+      );
+    }
     return Align(
       alignment: Alignment.topLeft,
       child: Column(
@@ -270,8 +277,8 @@ class _CenterColumn extends StatelessWidget {
           Text(gameModeName(game.gameMode), style: BSType.body(size: 17, color: BSColors.neutral700)),
           const SizedBox(height: BSSpace.s6),
           Text(
-            "Le contenu détaillé de chaque état (question, chrono, jugement)\n"
-            "arrive à l'étape 4 — flux d'une question en Chrono pénalité.",
+            "En attente d'une question — les écrans de jeu spécifiques "
+            "(Simon, Vol, Duel...) arrivent en étape suivante.",
             style: BSType.body(size: 15, color: BSColors.neutral600),
           ),
         ],

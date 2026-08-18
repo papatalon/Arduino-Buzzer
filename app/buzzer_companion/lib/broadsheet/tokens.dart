@@ -145,11 +145,19 @@ class BSType {
         color: color,
       );
 
-  static TextStyle questionPopout({Color color = Colors.white}) => _serif(
+  static TextStyle questionPopout({Color color = BSColors.text}) => _serif(
         size: 96,
         weight: FontWeight.w600,
         height: 1.06,
         letterSpacing: -0.025 * 96,
+        color: color,
+      );
+
+  static TextStyle answerPopout({double size = 40, Color color = BSColors.accent2_800}) => _serif(
+        size: size,
+        weight: FontWeight.w400,
+        height: 1.1,
+        style: FontStyle.italic,
         color: color,
       );
 
