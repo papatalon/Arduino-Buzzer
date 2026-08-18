@@ -35,16 +35,24 @@ class PopoutSnapshot {
   final String? questionText;
   final String? answerText;
 
-  factory PopoutSnapshot.fromGameState(GameState game) => PopoutSnapshot(
-        scores: game.scores,
-        present: game.present,
-        gameMode: game.gameMode,
-        lastBuzz: game.lastBuzz,
-        flowState: game.questionFlowState,
-        questionCategory: game.questionText != null ? game.questionCategory : null,
-        questionText: game.questionText,
-        answerText: game.answerRevealed ? game.answerText : null,
-      );
+  factory PopoutSnapshot.fromGameState(GameState game) {
+    // La question elle-même n'est pas listée comme sensible dans le tableau
+    // de confidentialité du design, mais le client a précisé que sur le
+    // pop-out, elle ne doit apparaître qu'une fois le chrono lancé — pas
+    // avant, pendant que l'animateur la lit encore à voix haute.
+    final showQuestion = game.questionText != null &&
+        !(game.questionFlowState == QuestionFlowState.arming && !game.chronoStarted);
+    return PopoutSnapshot(
+      scores: game.scores,
+      present: game.present,
+      gameMode: game.gameMode,
+      lastBuzz: game.lastBuzz,
+      flowState: game.questionFlowState,
+      questionCategory: showQuestion ? game.questionCategory : null,
+      questionText: showQuestion ? game.questionText : null,
+      answerText: game.answerRevealed ? game.answerText : null,
+    );
+  }
 
   factory PopoutSnapshot.decode(String raw) {
     final json = jsonDecode(raw) as Map<String, dynamic>;

@@ -20,39 +20,89 @@ class DeviceScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: Alignment.topLeft,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            children: [
-              Text('Appareil', style: BSType.buzzerNameConsole(size: 26)),
-              const Spacer(),
-              OutlinedButton.icon(
-                onPressed: ble.toggleScan,
-                style: OutlinedButton.styleFrom(
-                  foregroundColor: BSColors.text,
-                  side: const BorderSide(color: BSColors.divider),
-                  shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+    return SingleChildScrollView(
+      child: Align(
+        alignment: Alignment.topLeft,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Row(
+              children: [
+                Text('Appareil', style: BSType.buzzerNameConsole(size: 26)),
+                const Spacer(),
+                OutlinedButton.icon(
+                  onPressed: ble.toggleScan,
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: BSColors.text,
+                    side: const BorderSide(color: BSColors.divider),
+                    shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                  ),
+                  icon: PhosphorDuotone(
+                    ble.scanning ? PhosphorGlyphs.xCircle : PhosphorGlyphs.magnifyingGlass,
+                    size: 16,
+                  ),
+                  label: Text(ble.scanning ? 'Arrêter' : 'Chercher', style: BSType.body(size: 14)),
                 ),
-                icon: PhosphorDuotone(
-                  ble.scanning ? PhosphorGlyphs.xCircle : PhosphorGlyphs.magnifyingGlass,
-                  size: 16,
-                ),
-                label: Text(ble.scanning ? 'Arrêter' : 'Chercher', style: BSType.body(size: 14)),
-              ),
+              ],
+            ),
+            const SizedBox(height: BSSpace.s4),
+            if (ble.connectedDeviceId != null) ...[
+              // Toujours affiché séparément de la liste de scan : un
+              // appareil déjà connecté cesse d'annoncer, donc il ne
+              // réapparaîtrait jamais dans un nouveau scan — vider la
+              // liste avant de rescanner (toggleScan) le ferait sinon
+              // disparaître de l'écran, sans façon de le déconnecter.
+              Text('CONNECTÉ', style: BSType.sectionKicker()),
+              const SizedBox(height: BSSpace.s2),
+              _ConnectedRow(ble: ble),
+              const SizedBox(height: BSSpace.s4),
+              Container(height: 1, color: BSColors.divider),
+              const SizedBox(height: BSSpace.s4),
             ],
+            _DeviceList(ble: ble),
+            const SizedBox(height: BSSpace.s6),
+            Container(height: 1, color: BSColors.divider),
+            const SizedBox(height: BSSpace.s4),
+            Text('DIAGNOSTIC DE LIAISON', style: BSType.sectionKicker()),
+            const SizedBox(height: BSSpace.s3),
+            _Diagnostics(ble: ble, game: game),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ConnectedRow extends StatelessWidget {
+  const _ConnectedRow({required this.ble});
+  final BleLinkService ble;
+
+  @override
+  Widget build(BuildContext context) {
+    final name = ble.connectedDeviceName?.isNotEmpty == true ? ble.connectedDeviceName! : '(sans nom)';
+    return Container(
+      width: 620,
+      padding: const EdgeInsets.symmetric(horizontal: BSSpace.s3, vertical: BSSpace.s2),
+      color: BSColors.accent100,
+      child: Row(
+        children: [
+          const PhosphorDuotone(PhosphorGlyphs.bluetoothConnected, size: 18, color: BSColors.accent700),
+          const SizedBox(width: BSSpace.s2),
+          Expanded(
+            child: Text(name, style: BSType.body(size: 16, color: BSColors.text).copyWith(fontWeight: FontWeight.w600)),
           ),
-          const SizedBox(height: BSSpace.s4),
-          _DeviceList(ble: ble),
-          const SizedBox(height: BSSpace.s6),
-          Container(height: 1, color: BSColors.divider),
-          const SizedBox(height: BSSpace.s4),
-          Text('DIAGNOSTIC DE LIAISON', style: BSType.sectionKicker()),
-          const SizedBox(height: BSSpace.s3),
-          _Diagnostics(ble: ble, game: game),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+            color: BSColors.accent100,
+            child: Text('Connecté', style: BSType.body(size: 12, color: BSColors.accent800)),
+          ),
+          const SizedBox(width: BSSpace.s2),
+          TextButton(
+            onPressed: ble.disconnect,
+            style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
+            child: const Text('Déconnecter'),
+          ),
         ],
       ),
     );
@@ -65,7 +115,7 @@ class _DeviceList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final devices = ble.devices.values.toList()
+    final devices = ble.devices.values.where((d) => d.deviceId != ble.connectedDeviceId).toList()
       ..sort((a, b) {
         final byName = (a.name ?? '').compareTo(b.name ?? '');
         return byName != 0 ? byName : a.deviceId.compareTo(b.deviceId);
@@ -73,7 +123,7 @@ class _DeviceList extends StatelessWidget {
 
     if (devices.isEmpty) {
       return Text(
-        ble.scanning ? 'Recherche en cours...' : "Aucun appareil trouvé. Clique « Chercher ».",
+        ble.scanning ? 'Recherche en cours...' : "Aucun autre appareil trouvé. Clique « Chercher ».",
         style: BSType.body(size: 15, color: BSColors.neutral600),
       );
     }
@@ -100,19 +150,12 @@ class _DeviceRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final connected = ble.connectedDeviceId == device.deviceId;
     final name = device.name?.isNotEmpty == true ? device.name! : '(sans nom)';
-    return Container(
+    return SizedBox(
       width: 620,
-      padding: EdgeInsets.symmetric(horizontal: connected ? BSSpace.s3 : 0, vertical: BSSpace.s2),
-      color: connected ? BSColors.accent100 : null,
       child: Row(
         children: [
-          PhosphorDuotone(
-            connected ? PhosphorGlyphs.bluetoothConnected : PhosphorGlyphs.bluetooth,
-            size: 18,
-            color: connected ? BSColors.accent700 : BSColors.neutral500,
-          ),
+          const PhosphorDuotone(PhosphorGlyphs.bluetooth, size: 18, color: BSColors.neutral500),
           const SizedBox(width: BSSpace.s2),
           Expanded(
             child: Column(
@@ -126,17 +169,10 @@ class _DeviceRow extends StatelessWidget {
               ],
             ),
           ),
-          if (connected)
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
-              color: BSColors.accent100,
-              child: Text('Connecté', style: BSType.body(size: 12, color: BSColors.accent800)),
-            ),
-          const SizedBox(width: BSSpace.s2),
           TextButton(
-            onPressed: connected ? ble.disconnect : () => ble.connect(device),
+            onPressed: () => ble.connect(device),
             style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
-            child: Text(connected ? 'Déconnecter' : 'Connecter'),
+            child: const Text('Connecter'),
           ),
         ],
       ),

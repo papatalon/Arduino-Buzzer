@@ -112,12 +112,18 @@ class _ArmingZone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // La question n'arrive dans l'instantané qu'une fois le chrono lancé
+    // (voir PopoutSnapshot.fromGameState) : tant que ce n'est pas le cas,
+    // rien à afficher ici sauf l'attente elle-même — le public ne doit pas
+    // la voir pendant que l'animateur la lit encore à voix haute.
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text(snapshot.questionText ?? '', style: BSType.questionPopout(), textAlign: TextAlign.center),
-        const SizedBox(height: BSSpace.s6),
-        Text('ATTENDEZ LE TOP', style: BSType.popoutHeaderMeta(color: BSColors.neutral500)),
+        if (snapshot.questionText != null) ...[
+          Text(snapshot.questionText!, style: BSType.questionPopout(), textAlign: TextAlign.center),
+          const SizedBox(height: BSSpace.s6),
+        ],
+        Text('CHRONO NON LANCÉ', style: BSType.popoutHeaderMeta(color: BSColors.neutral500)),
         const SizedBox(height: BSSpace.s2),
         Container(width: 400, height: 20, color: BSColors.neutral300),
       ],

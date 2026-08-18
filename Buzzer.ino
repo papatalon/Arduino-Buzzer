@@ -72,17 +72,30 @@ void loop() {
 PhaseMode getCurrentMode() {
   PhaseMode mode = currentMode;
 
-  char pressedKey = appKeypad.getKey();
+  char physicalKey = appKeypad.getKey();
+  // Toujours lu, meme si une touche physique vient d'arriver : sans ca, les
+  // octets qui arrivent pendant ce tour resteraient dans le tampon serie de
+  // l'AT-09 et deborderaient a la longue.
+  char bleKey = BleLink::shared().pollKey();
 
-  if(appKeypad.isResetActivated(pressedKey)) {
+  // Les sequences cachees (reset, test cablage) restent reservees au clavier
+  // physique : une commande BLE ne doit pas pouvoir les declencher, et ne
+  // doit pas non plus polluer leur fenetre de detection (previousKey/
+  // previousMillis dans AppKeypad), qui n'a de sens que pour de vraies
+  // frappes successives.
+  if(appKeypad.isResetActivated(physicalKey)) {
     return RESET;
   }
 
   // Mode cache de test cablage : accessible uniquement depuis la CONFIGURATION
   // (evite une entree accidentelle en pleine partie).
-  if(currentMode == CONFIGURATION && appKeypad.isLedTestActivated(pressedKey)) {
+  if(currentMode == CONFIGURATION && appKeypad.isLedTestActivated(physicalKey)) {
     return LED_TEST;   // mode cache de test cablage (LED + boutons)
   }
+
+  // La touche physique est prioritaire ; une commande BLE ne joue que si
+  // aucune touche n'a ete pressee ce tour-ci.
+  char pressedKey = (physicalKey != NO_KEY) ? physicalKey : bleKey;
 
   switch (currentMode) {
     case BOOT:

@@ -73,47 +73,60 @@ class _ConsoleShellState extends State<ConsoleShell> {
     return Scaffold(
       backgroundColor: BSColors.bg,
       body: SafeArea(
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            _Sidebar(
-              ble: widget.ble,
-              selected: _section,
-              onSelect: (s) => setState(() => _section = s),
-            ),
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(34, 26, 34, 0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Container(height: 5, color: BSColors.text),
-                    _DatelineRail(game: widget.game, clock: _clock),
-                    Container(height: 1, color: BSColors.text),
-                    const SizedBox(height: 30),
-                    Expanded(
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Expanded(child: _CenterColumn(section: _section, game: widget.game, ble: widget.ble)),
-                          const SizedBox(width: 44),
-                          DecoratedBox(
-                            decoration: const BoxDecoration(
-                              border: Border(left: BorderSide(color: BSColors.divider)),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.only(left: 32),
-                              child: RightRail(game: widget.game, popout: widget.popout),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
+        // Sans ce ListenableBuilder, le rail de dateline, la colonne centrale
+        // et le tableau des scores ne se reconstruisent jamais tout seuls
+        // quand `game`/`ble` changent (seuls les deux ListenableBuilder
+        // ponctuels — statut BLE de la barre latérale, bouton de l'écran
+        // public — écoutaient quoi que ce soit) : ils ne rafraîchissaient
+        // qu'au hasard d'un rebuild déclenché ailleurs (le tic d'horloge
+        // toutes les 30s, un clic de nav), ce qui ressemblait à des lenteurs
+        // BLE alors que la donnée était déjà arrivée depuis longtemps.
+        child: ListenableBuilder(
+          listenable: Listenable.merge([widget.ble, widget.game]),
+          builder: (context, _) {
+            return Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                _Sidebar(
+                  ble: widget.ble,
+                  selected: _section,
+                  onSelect: (s) => setState(() => _section = s),
                 ),
-              ),
-            ),
-          ],
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(34, 26, 34, 0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Container(height: 5, color: BSColors.text),
+                        _DatelineRail(game: widget.game, clock: _clock),
+                        Container(height: 1, color: BSColors.text),
+                        const SizedBox(height: 30),
+                        Expanded(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(child: _CenterColumn(section: _section, game: widget.game, ble: widget.ble)),
+                              const SizedBox(width: 44),
+                              DecoratedBox(
+                                decoration: const BoxDecoration(
+                                  border: Border(left: BorderSide(color: BSColors.divider)),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(left: 32),
+                                  child: RightRail(game: widget.game, popout: widget.popout),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            );
+          },
         ),
       ),
     );
@@ -272,7 +285,7 @@ class _CenterColumn extends StatelessWidget {
     if (game.questionFlowState != QuestionFlowState.none) {
       return Align(
         alignment: Alignment.topLeft,
-        child: QuestionFlowView(game: game),
+        child: QuestionFlowView(game: game, ble: ble),
       );
     }
     final label = phaseLabel(game.phase);

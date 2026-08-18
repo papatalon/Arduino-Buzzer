@@ -34,6 +34,13 @@ class BleLinkService extends ChangeNotifier {
   final _messageController = StreamController<String>.broadcast();
   Stream<String> get messages => _messageController.stream;
 
+  // La caractéristique FFE1 de l'AT-09 sert aux deux sens (notify pour
+  // recevoir, write pour envoyer) : trouvée une fois dans
+  // _discoverUartCharacteristic, réutilisée par sendKey().
+  String? _uartServiceId;
+  String? _uartCharacteristicId;
+  bool _uartWriteWithoutResponse = true;
+
   Timer? _refreshTimer;
 
   void init() {
@@ -89,6 +96,8 @@ class BleLinkService extends ChangeNotifier {
         connectedDeviceName = devices[deviceId]?.name ?? connectedDeviceName;
       } else {
         connectedDeviceName = null;
+        _uartServiceId = null;
+        _uartCharacteristicId = null;
       }
       status = isConnected
           ? 'Connecté à ${connectedDeviceName ?? deviceId}'
@@ -201,6 +210,34 @@ class BleLinkService extends ChangeNotifier {
     if (id != null) await UniversalBle.disconnect(id);
   }
 
+  // Simule une touche du clavier matriciel côté firmware (protocole
+  // "KEY|<touche>", voir BleLink::pollKey côté Mega). N'importe quelle
+  // action App→Mega passe par ici — pas de commande séparée par écran.
+  Future<void> sendKey(String key) async {
+    final deviceId = connectedDeviceId;
+    final serviceId = _uartServiceId;
+    final characteristicId = _uartCharacteristicId;
+    if (deviceId == null || serviceId == null || characteristicId == null) {
+      status = 'Envoi impossible : aucune caractéristique BLE identifiée pour écrire.';
+      notifyListeners();
+      return;
+    }
+    try {
+      await UniversalBle.write(
+        deviceId,
+        serviceId,
+        characteristicId,
+        Uint8List.fromList(utf8.encode('KEY|$key\n')),
+        withoutResponse: _uartWriteWithoutResponse,
+      );
+      status = 'Commande KEY|$key envoyée.';
+      notifyListeners();
+    } catch (e) {
+      status = "Échec d'envoi de la commande : $e";
+      notifyListeners();
+    }
+  }
+
   // Cherche une caractéristique notifiable (celle par laquelle le Mega pousse
   // ses messages) parmi les services de l'appareil connecté, avec une
   // reprise : juste après une connexion, le module peut ne pas encore
@@ -219,6 +256,11 @@ class BleLinkService extends ChangeNotifier {
               service.uuid,
               characteristic.uuid,
             );
+            _uartServiceId = service.uuid;
+            _uartCharacteristicId = characteristic.uuid;
+            _uartWriteWithoutResponse =
+                characteristic.properties.contains(CharacteristicProperty.writeWithoutResponse) ||
+                    !characteristic.properties.contains(CharacteristicProperty.write);
             status = 'Connecté à ${connectedDeviceName ?? deviceId} · abonné aux notifications';
             notifyListeners();
             return;

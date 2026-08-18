@@ -899,6 +899,7 @@ void Buzzer::startBuzzTimer() {
   timerRunning = true;
   timerEnd = millis() + (unsigned long)timerLimit * 1000UL;
   lastShownSecs = -1;
+  ble.send("CHRONO_START");
 }
 
 // Barre dégressive sur la ligne 1 + secondes restantes à droite du titre.

@@ -110,6 +110,7 @@ class GameState extends ChangeNotifier {
   String? questionCategory;
   String? questionText;
   String? answerText;
+  bool chronoStarted = false;
 
   bool get answerRevealed => phase == _kPhaseAnswerReveal || phase == _kPhaseShowScores;
 
@@ -185,6 +186,7 @@ class GameState extends ChangeNotifier {
             questionText = parts[2];
             answerText = parts[3];
             lastBuzz = null; // une nouvelle question efface le dernier buzz
+            chronoStarted = false;
             handled = true;
           }
           break;
@@ -201,6 +203,10 @@ class GameState extends ChangeNotifier {
         case 'SOUND':
           // Pas encore consommé côté UI (viendra avec la lecture de son
           // dans l'app) — reconnu, donc pas compté comme rejeté.
+          handled = true;
+          break;
+        case 'CHRONO_START':
+          chronoStarted = true;
           handled = true;
           break;
       }
