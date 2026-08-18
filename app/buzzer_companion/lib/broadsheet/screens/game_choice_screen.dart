@@ -36,9 +36,13 @@ const _kRules = [
 const _kSimpleGameIndices = {0, 1, 5, 6};
 
 class GameChoiceScreen extends StatelessWidget {
-  const GameChoiceScreen({super.key, required this.game, required this.ble});
+  const GameChoiceScreen({super.key, required this.game, required this.ble, required this.onGameSelected});
   final GameState game;
   final BleLinkService ble;
+  // Appelé juste après l'envoi de la commande, pour que la console
+  // enchaîne sur "Partie" — il n'y a plus rien à faire ici une fois le
+  // jeu choisi.
+  final VoidCallback onGameSelected;
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +62,12 @@ class GameChoiceScreen extends StatelessWidget {
                 _GameCard(
                   index: i,
                   active: game.gameMode == i,
-                  onSelect: _kSimpleGameIndices.contains(i) ? () => ble.selectGame(i) : null,
+                  onSelect: _kSimpleGameIndices.contains(i)
+                      ? () {
+                          ble.selectGame(i);
+                          onGameSelected();
+                        }
+                      : null,
                 ),
             ],
           ),

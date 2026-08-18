@@ -224,6 +224,36 @@ class BleLinkService extends ChangeNotifier {
     if (id != null) await UniversalBle.disconnect(id);
   }
 
+  // Déconnecte puis reconnecte tout de suite au même appareil, en un clic —
+  // utile en particulier pour purger une connexion "fantôme" (connectée
+  // mais silencieuse, voir la mémoire du projet) sans repasser par
+  // Chercher + Connecter séparément.
+  Future<void> reconnect() async {
+    final id = connectedDeviceId;
+    if (id == null) return;
+    status = 'Reconnexion...';
+    notifyListeners();
+    try {
+      await UniversalBle.disconnect(id);
+    } catch (_) {
+      // Au mieux-effort : on tente la reconnexion même si la déconnexion a échoué.
+    }
+    // Même parade que _tryAutoReconnect() : un bref scan avant de se
+    // reconnecter force Windows à rafraîchir sa vue de l'appareil plutôt
+    // que de réutiliser une session BLE périmée.
+    try {
+      await UniversalBle.startScan();
+      await Future.delayed(const Duration(milliseconds: 1500));
+      await UniversalBle.stopScan();
+    } catch (_) {}
+    try {
+      await UniversalBle.connect(id);
+    } catch (e) {
+      status = 'Reconnexion échouée : $e';
+      notifyListeners();
+    }
+  }
+
   // Simule une touche du clavier matriciel côté firmware (protocole
   // "KEY|<touche>", voir BleLink::pollKey côté Mega). N'importe quelle
   // action App→Mega passe par ici — pas de commande séparée par écran.

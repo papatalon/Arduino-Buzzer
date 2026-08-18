@@ -99,6 +99,12 @@ class _ConnectedRow extends StatelessWidget {
           ),
           const SizedBox(width: BSSpace.s2),
           TextButton(
+            onPressed: ble.reconnect,
+            style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
+            child: const Text('Reconnecter'),
+          ),
+          const SizedBox(width: BSSpace.s2),
+          TextButton(
             onPressed: ble.disconnect,
             style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
             child: const Text('Déconnecter'),

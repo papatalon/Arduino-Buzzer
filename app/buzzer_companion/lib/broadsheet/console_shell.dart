@@ -106,7 +106,14 @@ class _ConsoleShellState extends State<ConsoleShell> {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Expanded(child: _CenterColumn(section: _section, game: widget.game, ble: widget.ble)),
+                              Expanded(
+                                child: _CenterColumn(
+                                  section: _section,
+                                  game: widget.game,
+                                  ble: widget.ble,
+                                  onNavigate: (s) => setState(() => _section = s),
+                                ),
+                              ),
                               const SizedBox(width: 44),
                               DecoratedBox(
                                 decoration: const BoxDecoration(
@@ -262,11 +269,12 @@ class _DatelineRail extends StatelessWidget {
 }
 
 class _CenterColumn extends StatelessWidget {
-  const _CenterColumn({required this.section, required this.game, required this.ble});
+  const _CenterColumn({required this.section, required this.game, required this.ble, required this.onNavigate});
 
   final ConsoleSection section;
   final GameState game;
   final BleLinkService ble;
+  final ValueChanged<ConsoleSection> onNavigate;
 
   @override
   Widget build(BuildContext context) {
@@ -274,7 +282,13 @@ class _CenterColumn extends StatelessWidget {
       case ConsoleSection.buzzers:
         return BuzzersScreen(game: game);
       case ConsoleSection.jeuActif:
-        return GameChoiceScreen(game: game, ble: ble);
+        return GameChoiceScreen(
+          game: game,
+          ble: ble,
+          // Une fois le jeu choisi, il n'y a plus rien à faire sur cet écran
+          // - retour direct sur "Partie" pour enchaîner sur la partie.
+          onGameSelected: () => onNavigate(ConsoleSection.partie),
+        );
       case ConsoleSection.questions:
         return const QuestionsScreen();
       case ConsoleSection.appareil:
