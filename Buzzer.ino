@@ -67,6 +67,11 @@ void loop() {
   display.updateScrolling();
   currentMode = getCurrentMode();
   updateMode();
+  // Ecran fige sur l'ASCII art "controle par l'app" tant que le controle est
+  // actif (voir LcdDisplay::setControlOverride) - appele apres updateMode()
+  // pour toujours avoir le dernier mot sur ce que la phase courante vient
+  // de dessiner.
+  display.setControlOverride(BleLink::shared().appInControl());
 }
 
 PhaseMode getCurrentMode() {
@@ -93,9 +98,17 @@ PhaseMode getCurrentMode() {
     return LED_TEST;   // mode cache de test cablage (LED + boutons)
   }
 
-  // La touche physique est prioritaire ; une commande BLE ne joue que si
-  // aucune touche n'a ete pressee ce tour-ci.
-  char pressedKey = (physicalKey != NO_KEY) ? physicalKey : bleKey;
+  // Quand l'app a pris le controle (voir BleLink::appInControl), elle a
+  // 100% la main : le clavier physique est ignore (hors reset/test cable
+  // ci-dessus, qui restent une echappatoire de securite dans tous les cas).
+  // Sinon, comportement inchange : la touche physique est prioritaire, une
+  // commande BLE ne joue que si aucune touche n'a ete pressee ce tour-ci.
+  char pressedKey;
+  if (BleLink::shared().appInControl()) {
+    pressedKey = bleKey;
+  } else {
+    pressedKey = (physicalKey != NO_KEY) ? physicalKey : bleKey;
+  }
 
   switch (currentMode) {
     case BOOT:

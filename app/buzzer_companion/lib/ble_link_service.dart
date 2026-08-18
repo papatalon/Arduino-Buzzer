@@ -43,6 +43,13 @@ class BleLinkService extends ChangeNotifier {
 
   Timer? _refreshTimer;
 
+  // Heartbeat "CTRL|1" (voir BleLink::appInControl côté Mega) : répété tant
+  // que l'app est connectée, pour que le firmware sache qu'elle a 100% le
+  // contrôle (clavier physique verrouillé) — expire tout seul côté Mega si
+  // ce heartbeat cesse, donc pas besoin d'un "CTRL|0" fiable à la
+  // déconnexion (envoyé au mieux-effort seulement).
+  Timer? _controlHeartbeat;
+
   void init() {
     // Rafraîchit en continu (liste d'appareils qui arrivent pendant un scan,
     // âge du dernier message sur l'écran "Appareil") plutôt que de suivre un
@@ -96,6 +103,11 @@ class BleLinkService extends ChangeNotifier {
         connectedDeviceName = devices[deviceId]?.name ?? connectedDeviceName;
       } else {
         connectedDeviceName = null;
+        _stopControlHeartbeat();
+        // Au mieux-effort seulement (le lien peut déjà être coupé) : le
+        // filet de sécurité réel côté Mega est l'expiration du heartbeat
+        // (voir BleLink::appInControl), pas ce message.
+        _writeUartLine(deviceId, _uartServiceId, _uartCharacteristicId, 'CTRL|0');
         _uartServiceId = null;
         _uartCharacteristicId = null;
       }
@@ -120,6 +132,8 @@ class BleLinkService extends ChangeNotifier {
   @override
   void dispose() {
     _refreshTimer?.cancel();
+    _stopControlHeartbeat();
+    _writeUartLine(connectedDeviceId, _uartServiceId, _uartCharacteristicId, 'CTRL|0');
     _messageController.close();
     if (scanning) UniversalBle.stopScan();
     super.dispose();
@@ -214,27 +228,47 @@ class BleLinkService extends ChangeNotifier {
   // "KEY|<touche>", voir BleLink::pollKey côté Mega). N'importe quelle
   // action App→Mega passe par ici — pas de commande séparée par écran.
   Future<void> sendKey(String key) async {
-    final deviceId = connectedDeviceId;
-    final serviceId = _uartServiceId;
-    final characteristicId = _uartCharacteristicId;
-    if (deviceId == null || serviceId == null || characteristicId == null) {
-      status = 'Envoi impossible : aucune caractéristique BLE identifiée pour écrire.';
-      notifyListeners();
-      return;
-    }
+    final ok = await _writeUartLine(connectedDeviceId, _uartServiceId, _uartCharacteristicId, 'KEY|$key');
+    status = ok
+        ? 'Commande KEY|$key envoyée.'
+        : 'Envoi impossible : aucune caractéristique BLE identifiée pour écrire.';
+    notifyListeners();
+  }
+
+  // Démarre/arrête le heartbeat "CTRL|1" (voir le champ _controlHeartbeat) :
+  // tant qu'il est envoyé, le firmware considère que l'app a 100% le
+  // contrôle et ignore le clavier physique (hors reset/test câblage).
+  void _startControlHeartbeat() {
+    _controlHeartbeat?.cancel();
+    _writeUartLine(connectedDeviceId, _uartServiceId, _uartCharacteristicId, 'CTRL|1');
+    _controlHeartbeat = Timer.periodic(const Duration(seconds: 1), (_) {
+      _writeUartLine(connectedDeviceId, _uartServiceId, _uartCharacteristicId, 'CTRL|1');
+    });
+  }
+
+  void _stopControlHeartbeat() {
+    _controlHeartbeat?.cancel();
+    _controlHeartbeat = null;
+  }
+
+  // Écriture brute partagée par sendKey() et le heartbeat "CTRL|" — un seul
+  // chemin d'écriture BLE, silencieux si la caractéristique n'est pas
+  // (encore) identifiée. Retourne si l'écriture a été tentée sans erreur.
+  Future<bool> _writeUartLine(String? deviceId, String? serviceId, String? characteristicId, String line) async {
+    if (deviceId == null || serviceId == null || characteristicId == null) return false;
     try {
       await UniversalBle.write(
         deviceId,
         serviceId,
         characteristicId,
-        Uint8List.fromList(utf8.encode('KEY|$key\n')),
+        Uint8List.fromList(utf8.encode('$line\n')),
         withoutResponse: _uartWriteWithoutResponse,
       );
-      status = 'Commande KEY|$key envoyée.';
-      notifyListeners();
+      return true;
     } catch (e) {
       status = "Échec d'envoi de la commande : $e";
       notifyListeners();
+      return false;
     }
   }
 
@@ -263,6 +297,7 @@ class BleLinkService extends ChangeNotifier {
                     !characteristic.properties.contains(CharacteristicProperty.write);
             status = 'Connecté à ${connectedDeviceName ?? deviceId} · abonné aux notifications';
             notifyListeners();
+            _startControlHeartbeat();
             return;
           }
         }

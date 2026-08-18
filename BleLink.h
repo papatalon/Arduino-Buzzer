@@ -8,6 +8,13 @@
 // README). Telemetrie sortante (Mega -> app) et commandes entrantes
 // (app -> Mega, protocole "KEY|<touche>" : l'app simule une touche du
 // clavier matriciel, rejouee telle quelle dans la meme machine a etats).
+//
+// L'AT-09 est un pont UART transparent (4 fils, pas de broche STATE) : le
+// Mega ne peut pas savoir directement si un telephone est connecte. Le
+// "controle" de l'app est donc deduit d'un signal logiciel ("CTRL|1",
+// repete toutes les ~1s tant que l'app est connectee) avec expiration
+// automatique (appInControl()) si les messages cessent d'arriver - pour ne
+// pas rester verrouille si le lien BLE tombe sans preavis.
 class BleLink {
   public:
     static BleLink& shared();
@@ -17,15 +24,24 @@ class BleLink {
 
     // A appeler une fois par tour de loop() : draine Serial2 et renvoie la
     // touche demandee par l'app si une ligne "KEY|X" complete est arrivee,
-    // sinon 0 (equivalent a NO_KEY). Ne bloque jamais.
+    // sinon 0 (equivalent a NO_KEY). Reconnait aussi au passage les lignes
+    // "CTRL|0"/"CTRL|1" (voir appInControl()). Ne bloque jamais.
     char pollKey();
+
+    // Vrai si l'app a annonce le controle ("CTRL|1") et l'a reconfirme
+    // recemment (heartbeat) - expire tout seul si les messages cessent.
+    bool appInControl();
 
   private:
     BleLink();
     BleLink(const BleLink&) = delete;
     BleLink& operator=(const BleLink&) = delete;
 
+    static const unsigned long kControlTimeoutMs = 3000;  // ~3x la cadence du heartbeat app
+
     String _rxBuffer;
+    bool _inControl = false;
+    unsigned long _lastControlMillis = 0;
 };
 
 #endif

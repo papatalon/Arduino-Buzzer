@@ -24,6 +24,11 @@ char BleLink::pollKey() {
       _rxBuffer.trim();  // Serial2.println cote app envoie "\r\n"
       if (_rxBuffer.startsWith("KEY|") && _rxBuffer.length() == 5) {
         result = _rxBuffer.charAt(4);
+      } else if (_rxBuffer == "CTRL|1") {
+        _inControl = true;
+        _lastControlMillis = millis();
+      } else if (_rxBuffer == "CTRL|0") {
+        _inControl = false;
       }
       _rxBuffer = "";
     } else if (_rxBuffer.length() < 32) {  // ligne trop longue : forcement corrompue, on l'ignore
@@ -31,4 +36,8 @@ char BleLink::pollKey() {
     }
   }
   return result;
+}
+
+bool BleLink::appInControl() {
+  return _inControl && (millis() - _lastControlMillis <= kControlTimeoutMs);
 }

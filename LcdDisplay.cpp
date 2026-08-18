@@ -25,6 +25,8 @@ void LcdDisplay::clear() {
 
 void LcdDisplay::setText(String text, int line) {
 
+  if (_controlOverrideActive) return;  // ecran fige sur l'ASCII art "controle par l'app"
+
   text = removeAccents(text);
 
   messages[line] = text;
@@ -44,6 +46,8 @@ void LcdDisplay::displayText(String text, int line) {
 }
 
 void LcdDisplay::updateScrolling() {
+
+  if (_controlOverrideActive) return;  // ecran fige sur l'ASCII art "controle par l'app"
 
   unsigned long currentMillis = millis();
   if (currentMillis - previousMillis < SCROLL_DELAY) {
@@ -107,6 +111,46 @@ void LcdDisplay::drawEqualizer(const uint8_t heights[20]) {
       }
     }
   }
+}
+
+// Ecran plein format annoncant que l'app a pris le controle (voir
+// BleLink::appInControl) - dessine directement via lcd, en contournant
+// setText()/clear() (qui sont eux-memes bloques tant que ce verrou est
+// actif, pour figer l'affichage meme si le jeu reel continue d'appeler
+// setText() en arriere-plan). Contenu ajustable ici sans toucher au reste
+// du firmware.
+void LcdDisplay::setControlOverride(bool active) {
+  if (active == _controlOverrideActive) return;
+  _controlOverrideActive = active;
+  if (!active) return;  // le prochain setText() du jeu reel redessine normalement
+
+  lcd.clear();
+
+  String border = "";
+  for (int i = 0; i < 20; i++) border += '#';
+
+  lcd.setCursor(0, 0);
+  lcd.print(border);
+  lcd.setCursor(0, 1);
+  lcd.print(centerLine("CONTROLE A DISTANCE"));
+  lcd.setCursor(0, 2);
+  lcd.print(centerLine("PAR L'APPLICATION"));
+  lcd.setCursor(0, 3);
+  lcd.print(centerLine("CLAVIER VERROUILLE"));
+}
+
+// Centre un texte (deja sans accents) sur 20 colonnes, tronque s'il est
+// trop long.
+String LcdDisplay::centerLine(String text) {
+  int len = text.length();
+  if (len >= 20) return text.substring(0, 20);
+  int left = (20 - len) / 2;
+  int right = 20 - len - left;
+  String out = "";
+  for (int i = 0; i < left; i++) out += ' ';
+  out += text;
+  for (int i = 0; i < right; i++) out += ' ';
+  return out;
 }
 
 String LcdDisplay::removeAccents(String text) {
