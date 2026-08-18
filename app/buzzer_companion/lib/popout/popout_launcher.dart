@@ -1,0 +1,82 @@
+import 'dart:async';
+
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+import 'package:flutter/foundation.dart';
+
+import 'popout_snapshot.dart';
+import 'popout_window.dart';
+import 'window_launch_args.dart';
+
+// Ouvre/pilote la fenêtre de l'écran public depuis la console.
+class PopoutLauncher extends ChangeNotifier {
+  PopoutLauncher() {
+    // Si l'animateur ferme la fenêtre elle-même (bouton natif, Alt+F4), rien
+    // ne le dit spontanément à ce contrôleur : sans ce suivi, le bouton
+    // "Détacher" resterait bloqué sur "réattacher" indéfiniment.
+    _windowsChangedSub = onWindowsChanged.listen((_) => _checkStillOpen());
+  }
+
+  bool get isOpen => _controller != null;
+
+  WindowController? _controller;
+  StreamSubscription<void>? _windowsChangedSub;
+
+  Future<void> _checkStillOpen() async {
+    final controller = _controller;
+    if (controller == null) return;
+    final all = await WindowController.getAll();
+    final stillOpen = all.any((c) => c.windowId == controller.windowId);
+    if (!stillOpen) {
+      _controller = null;
+      notifyListeners();
+    }
+  }
+
+  // [currentSnapshot] est poussé juste après l'ouverture : sans ça, une
+  // fenêtre ouverte après le début de la partie reste bloquée sur l'état
+  // vide jusqu'au prochain message BLE, ce qui a fait croire une fois que
+  // rien ne fonctionnait alors que seule la synchronisation initiale
+  // manquait.
+  Future<void> open(PopoutSnapshot currentSnapshot) async {
+    if (_controller != null) {
+      await _controller!.show();
+      await pushSnapshot(currentSnapshot);
+      return;
+    }
+
+    _controller = await WindowController.create(
+      WindowConfiguration(
+        hiddenAtLaunch: true,
+        arguments: const WindowLaunchArgs(kind: WindowKind.popout).encode(),
+      ),
+    );
+    notifyListeners();
+    // La nouvelle fenêtre doit finir d'enregistrer son gestionnaire de canal
+    // (PopoutWindow.initState, asynchrone) avant de pouvoir recevoir quoi
+    // que ce soit — WindowController.create ne garantit que la création de
+    // la fenêtre native, pas la fin de l'init Dart côté nouvel engine.
+    await Future.delayed(const Duration(milliseconds: 400));
+    await pushSnapshot(currentSnapshot);
+  }
+
+  Future<void> pushSnapshot(PopoutSnapshot snapshot) async {
+    if (_controller == null) return;
+    await popoutChannel.invokeMethod('updateState', snapshot.encode());
+  }
+
+  Future<void> close() async {
+    if (_controller == null) return;
+    // Pas de .close() intégré à WindowController : on demande à la fenêtre
+    // de se fermer elle-même (voir le handler enregistré dans
+    // PopoutWindow._registerCloseHandler).
+    await _controller!.invokeMethod('window_close');
+    _controller = null;
+    notifyListeners();
+  }
+
+  @override
+  void dispose() {
+    _windowsChangedSub?.cancel();
+    super.dispose();
+  }
+}
