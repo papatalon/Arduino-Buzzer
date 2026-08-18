@@ -20,6 +20,13 @@ class BleLinkService extends ChangeNotifier {
   String? connectedDeviceName;
   String status = 'Prêt.';
 
+  // Compteurs de liaison pour l'écran "Appareil" (design_handoff_buzzer_
+  // console/README.md, 1h) : combien de lignes complètes sont arrivées, la
+  // dernière telle quelle, et son horodatage (pour un "âge" affiché).
+  int messagesReceived = 0;
+  String? lastRawMessage;
+  DateTime? lastMessageAt;
+
   // Le MTU BLE (~20 octets sur l'AT-09) fragmente les messages sur plusieurs
   // notifications : on accumule jusqu'au prochain "\n" avant de considérer
   // qu'un message est complet.
@@ -27,15 +34,15 @@ class BleLinkService extends ChangeNotifier {
   final _messageController = StreamController<String>.broadcast();
   Stream<String> get messages => _messageController.stream;
 
-  bool _devicesDirty = false;
   Timer? _refreshTimer;
 
   void init() {
+    // Rafraîchit en continu (liste d'appareils qui arrivent pendant un scan,
+    // âge du dernier message sur l'écran "Appareil") plutôt que de suivre un
+    // drapeau "dirty" par type d'évènement — l'UI de cette app reste assez
+    // simple pour que le coût d'un rebuild à ce rythme soit négligeable.
     _refreshTimer = Timer.periodic(const Duration(milliseconds: 500), (_) {
-      if (_devicesDirty) {
-        _devicesDirty = false;
-        notifyListeners();
-      }
+      notifyListeners();
     });
 
     UniversalBle.onAvailabilityChange = (state) {
@@ -74,7 +81,6 @@ class BleLinkService extends ChangeNotifier {
         device.name = previousName;
       }
       devices[device.deviceId] = device;
-      _devicesDirty = true;
     };
 
     UniversalBle.onConnectionChange = (deviceId, isConnected, error) {
@@ -241,7 +247,12 @@ class BleLinkService extends ChangeNotifier {
     _rxBuffer = lines.removeLast();  // fragment incomplet, garde pour la prochaine notification
     for (final line in lines) {
       final trimmed = line.trim();  // Serial2.println termine par "\r\n"
-      if (trimmed.isNotEmpty) _messageController.add(trimmed);
+      if (trimmed.isNotEmpty) {
+        messagesReceived++;
+        lastRawMessage = trimmed;
+        lastMessageAt = DateTime.now();
+        _messageController.add(trimmed);
+      }
     }
   }
 }

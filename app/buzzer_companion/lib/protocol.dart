@@ -74,14 +74,16 @@ final int _kPhaseWaitingBuzzer = kPhaseNames.indexOf('WAITING_BUZZER');
 // (menus, écrans de configuration...) : pas encore modélisé ici.
 enum QuestionFlowState { arming, buzzed, scored, revealed, none }
 
+// Chaîne vide quand la donnée n'existe pas encore — jamais de tiret cadratin
+// nulle part dans l'app (retour explicite du client).
 String phaseLabel(int? phase) {
-  if (phase == null || phase < 0 || phase >= kPhaseNames.length) return '—';
+  if (phase == null || phase < 0 || phase >= kPhaseNames.length) return '';
   final raw = kPhaseNames[phase];
   return _friendlyPhaseLabels[raw] ?? raw;
 }
 
 String gameModeName(int? mode) {
-  if (mode == null || mode < 0 || mode >= kGameModeNames.length) return '—';
+  if (mode == null || mode < 0 || mode >= kGameModeNames.length) return '';
   return kGameModeNames[mode];
 }
 
@@ -120,6 +122,11 @@ class GameState extends ChangeNotifier {
     return QuestionFlowState.none;
   }
 
+  // Lignes reçues mais ni reconnues ni exploitables (type inconnu, nombre de
+  // champs inattendu, exception de parsing) — pour l'écran "Appareil"
+  // (design_handoff_buzzer_console/README.md, 1h, "lignes rejetées").
+  int messagesRejected = 0;
+
   StreamSubscription<String>? _sub;
 
   void listenTo(Stream<String> messages) {
@@ -134,6 +141,7 @@ class GameState extends ChangeNotifier {
   }
 
   void _handleMessage(String line) {
+    var handled = false;
     try {
       final parts = line.split('|');
       if (parts.isEmpty) return;
@@ -143,32 +151,32 @@ class GameState extends ChangeNotifier {
           final parsed = _parseInts(parts.sublist(1));
           if (parsed != null && parsed.length == 4) {
             scores = parsed;
-            notifyListeners();
+            handled = true;
           }
           break;
         case 'PRESENT':
           final parsed = _parseInts(parts.sublist(1));
           if (parsed != null && parsed.length == 4) {
             present = parsed.map((v) => v != 0).toList();
-            notifyListeners();
+            handled = true;
           }
           break;
         case 'GAME':
           if (parts.length == 2) {
             gameMode = int.tryParse(parts[1]);
-            notifyListeners();
+            handled = true;
           }
           break;
         case 'STATE':
           if (parts.length == 2) {
             phase = int.tryParse(parts[1]);
-            notifyListeners();
+            handled = true;
           }
           break;
         case 'BUZZ':
           if (parts.length == 2) {
             lastBuzz = int.tryParse(parts[1]);
-            notifyListeners();
+            handled = true;
           }
           break;
         case 'QUESTION':
@@ -177,7 +185,7 @@ class GameState extends ChangeNotifier {
             questionText = parts[2];
             answerText = parts[3];
             lastBuzz = null; // une nouvelle question efface le dernier buzz
-            notifyListeners();
+            handled = true;
           }
           break;
         case 'CFG_SOUND':
@@ -186,16 +194,29 @@ class GameState extends ChangeNotifier {
             final sound = int.tryParse(parts[2]);
             if (color != null && color >= 0 && color < 4) {
               buzzerSound[color] = sound;
-              notifyListeners();
+              handled = true;
             }
           }
           break;
-        // SOUND : pas encore consommé côté UI (viendra avec la lecture de
-        // son dans l'app).
+        case 'SOUND':
+          // Pas encore consommé côté UI (viendra avec la lecture de son
+          // dans l'app) — reconnu, donc pas compté comme rejeté.
+          handled = true;
+          break;
       }
+
+      if (handled) {
+        notifyListeners();
+      } else {
+        messagesRejected++;
+        notifyListeners();
+      }
+      return;
     } catch (_) {
       // Ligne malformée (ex. coupée pendant une reconnexion) : ignorée
       // plutôt que de faire planter le parseur.
+      messagesRejected++;
+      notifyListeners();
     }
   }
 }

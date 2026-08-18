@@ -8,6 +8,10 @@ import '../protocol.dart';
 import 'phosphor_duotone.dart';
 import 'question_flow.dart';
 import 'right_rail.dart';
+import 'screens/buzzers_screen.dart';
+import 'screens/device_screen.dart';
+import 'screens/game_choice_screen.dart';
+import 'screens/questions_screen.dart';
 import 'tokens.dart';
 
 enum ConsoleSection { partie, jeuActif, buzzers, questions, appareil }
@@ -91,7 +95,7 @@ class _ConsoleShellState extends State<ConsoleShell> {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Expanded(child: _CenterColumn(section: _section, game: widget.game)),
+                          Expanded(child: _CenterColumn(section: _section, game: widget.game, ble: widget.ble)),
                           const SizedBox(width: 44),
                           DecoratedBox(
                             decoration: const BoxDecoration(
@@ -245,20 +249,25 @@ class _DatelineRail extends StatelessWidget {
 }
 
 class _CenterColumn extends StatelessWidget {
-  const _CenterColumn({required this.section, required this.game});
+  const _CenterColumn({required this.section, required this.game, required this.ble});
 
   final ConsoleSection section;
   final GameState game;
+  final BleLinkService ble;
 
   @override
   Widget build(BuildContext context) {
-    if (section != ConsoleSection.partie) {
-      return Center(
-        child: Text(
-          '${_sectionLabels[section]} — à construire (étape 5)',
-          style: BSType.body(size: 16, color: BSColors.neutral600),
-        ),
-      );
+    switch (section) {
+      case ConsoleSection.buzzers:
+        return BuzzersScreen(game: game);
+      case ConsoleSection.jeuActif:
+        return GameChoiceScreen(game: game);
+      case ConsoleSection.questions:
+        return const QuestionsScreen();
+      case ConsoleSection.appareil:
+        return DeviceScreen(ble: ble, game: game);
+      case ConsoleSection.partie:
+        break;
     }
     if (game.questionFlowState != QuestionFlowState.none) {
       return Align(
@@ -266,21 +275,22 @@ class _CenterColumn extends StatelessWidget {
         child: QuestionFlowView(game: game),
       );
     }
+    final label = phaseLabel(game.phase);
+    final mode = gameModeName(game.gameMode);
     return Align(
       alignment: Alignment.topLeft,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(phaseLabel(game.phase), style: BSType.questionConsole()),
-          const SizedBox(height: BSSpace.s2),
-          Text(gameModeName(game.gameMode), style: BSType.body(size: 17, color: BSColors.neutral700)),
-          const SizedBox(height: BSSpace.s6),
           Text(
-            "En attente d'une question — les écrans de jeu spécifiques "
-            "(Simon, Vol, Duel...) arrivent en étape suivante.",
-            style: BSType.body(size: 15, color: BSColors.neutral600),
+            label.isNotEmpty ? label : 'En attente de données du buzzer',
+            style: BSType.questionConsole(),
           ),
+          if (mode.isNotEmpty) ...[
+            const SizedBox(height: BSSpace.s2),
+            Text(mode, style: BSType.body(size: 17, color: BSColors.neutral700)),
+          ],
         ],
       ),
     );

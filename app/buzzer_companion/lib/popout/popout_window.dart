@@ -56,7 +56,7 @@ class _PopoutWindowState extends State<PopoutWindow> {
     const options = WindowOptions(
       size: Size(1280, 720),
       center: true,
-      title: 'Buzzer — écran public',
+      title: 'Buzzer : écran public',
       backgroundColor: BSColors.bg,
     );
     await windowManager.waitUntilReadyToShow(options, () async {

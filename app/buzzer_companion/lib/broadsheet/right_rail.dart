@@ -86,7 +86,7 @@ class _BuzzerRow extends StatelessWidget {
               ],
             ),
           ),
-          Text(present ? '$score' : '—', style: BSType.scoreConsole()),
+          Text(present ? '$score' : '', style: BSType.scoreConsole()),
         ],
       ),
     );

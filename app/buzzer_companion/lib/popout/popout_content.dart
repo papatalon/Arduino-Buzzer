@@ -37,9 +37,9 @@ class PopoutContent extends StatelessWidget {
                     child: Text('logo soirée', style: TextStyle(fontSize: 13, color: BSColors.neutral600)),
                   ),
                   const Spacer(),
+                  // Pas de "PROGRESSION" (question X/Y) : aucune télémétrie
+                  // réelle pour ça pour l'instant (voir QuestionsScreen).
                   _HeaderMeta(label: 'JEU ACTIF', value: gameModeName(snapshot.gameMode)),
-                  const SizedBox(width: 52),
-                  const _HeaderMeta(label: 'PROGRESSION', value: '—'),
                 ],
               ),
             ),
@@ -227,7 +227,7 @@ class _Scoreboard extends StatelessWidget {
                       children: [
                         Text(color.name.toUpperCase(), style: BSType.buzzerNamePopout()),
                         Text(
-                          present && i < snapshot.scores.length ? '${snapshot.scores[i]}' : '—',
+                          present && i < snapshot.scores.length ? '${snapshot.scores[i]}' : '',
                           style: BSType.scorePopout(),
                         ),
                       ],
