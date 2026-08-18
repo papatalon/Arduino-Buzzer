@@ -13,6 +13,13 @@ public:
     PhaseMode manageConfiguration(char pressedKey);
     void setGameChoice();                    // sous-menu "C" : choix du jeu
     PhaseMode gameChoice(char pressedKey);
+    // Selectionne directement le jeu d'index [index] (meme ordre que
+    // GameMode/kGameModeNames cote app) et le confirme, sans passer par la
+    // navigation haut/bas du clavier - utilise par la commande App->Mega
+    // SELECT_GAME|<n> (voir BleLink::consumeGameSelect()). Fonctionne peu
+    // importe la phase courante : l'app n'est pas soumise a la contrainte
+    // sequentielle du clavier physique.
+    PhaseMode selectGameIndex(int index);
     void setChronoScreen();                  // reglage des durees du chrono
     PhaseMode chronoScreen(char pressedKey);
     void setRoundsScreen();                  // reglage du nb de manches d'un jeu
@@ -48,6 +55,7 @@ private:
   int gameWindowTop = 0;     // première ligne affichée (haut de la fenêtre visible)
   void showGameChoice();
   void scrollGameWindow();               // recale gameWindowTop sur gameCursor
+  PhaseMode confirmGameSelection();       // applique GAME_LIST[gameCursor] (utilise par '#' et selectGameIndex)
 
   int cfgIndex = 0;          // buzzer en cours de configuration (0..3)
   CfgStep cfgStep = CFG_PROMPT;

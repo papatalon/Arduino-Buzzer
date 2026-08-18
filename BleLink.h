@@ -25,12 +25,19 @@ class BleLink {
     // A appeler une fois par tour de loop() : draine Serial2 et renvoie la
     // touche demandee par l'app si une ligne "KEY|X" complete est arrivee,
     // sinon 0 (equivalent a NO_KEY). Reconnait aussi au passage les lignes
-    // "CTRL|0"/"CTRL|1" (voir appInControl()). Ne bloque jamais.
+    // "CTRL|0"/"CTRL|1" (voir appInControl()) et "SELECT_GAME|<n>" (voir
+    // consumeGameSelect()). Ne bloque jamais.
     char pollKey();
 
     // Vrai si l'app a annonce le controle ("CTRL|1") et l'a reconfirme
     // recemment (heartbeat) - expire tout seul si les messages cessent.
     bool appInControl();
+
+    // Retourne l'index de jeu demande par un "SELECT_GAME|<n>" recu depuis
+    // le dernier appel (0-10), ou -1 si aucun n'est en attente. Consommee
+    // une seule fois (remise a -1 apres lecture) : une vraie commande, pas
+    // une simulation de touche - voir Configuration::selectGameIndex().
+    int consumeGameSelect();
 
   private:
     BleLink();
@@ -42,6 +49,7 @@ class BleLink {
     String _rxBuffer;
     bool _inControl = false;
     unsigned long _lastControlMillis = 0;
+    int _pendingGameSelect = -1;
 };
 
 #endif

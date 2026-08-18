@@ -274,7 +274,7 @@ class _CenterColumn extends StatelessWidget {
       case ConsoleSection.buzzers:
         return BuzzersScreen(game: game);
       case ConsoleSection.jeuActif:
-        return GameChoiceScreen(game: game);
+        return GameChoiceScreen(game: game, ble: ble);
       case ConsoleSection.questions:
         return const QuestionsScreen();
       case ConsoleSection.appareil:

@@ -178,26 +178,38 @@ PhaseMode Configuration::gameChoice(char pressedKey) {
       scrollGameWindow();
       showGameChoice();
       break;
-    case '#': {
-      const GameListItem& item = GAME_LIST[gameCursor];
-      buzzer.setGameMode(item.target);   // applique le jeu, réglage ou non
-      if (item.kind == GLK_CHRONO) {
-        chronoTargetMode = item.target;   // quel mode régler (Classique/Pénalité)
-        return CHRONO;
-      }
-      if (item.kind == GLK_ROUNDS) {
-        roundsTargetMode = item.target;   // quel jeu régler (Réflexe / aveugle)
-        return ROUNDS_SETUP;
-      }
-      if (item.kind == GLK_SOUND) {
-        return SOUND_SETUP;               // nb de sons, puis leurres
-      }
-      return CONFIGURATION;
-    }
+    case '#':
+      return confirmGameSelection();
     case '*':
       return CONFIGURATION;         // annule : le jeu en cours ne change pas
   }
   return GAME_CHOICE;
+}
+
+PhaseMode Configuration::confirmGameSelection() {
+  const GameListItem& item = GAME_LIST[gameCursor];
+  buzzer.setGameMode(item.target);   // applique le jeu, réglage ou non
+  if (item.kind == GLK_CHRONO) {
+    chronoTargetMode = item.target;   // quel mode régler (Classique/Pénalité)
+    return CHRONO;
+  }
+  if (item.kind == GLK_ROUNDS) {
+    roundsTargetMode = item.target;   // quel jeu régler (Réflexe / aveugle)
+    return ROUNDS_SETUP;
+  }
+  if (item.kind == GLK_SOUND) {
+    return SOUND_SETUP;               // nb de sons, puis leurres
+  }
+  return CONFIGURATION;
+}
+
+// Selection directe (commande App->Mega SELECT_GAME|<n>), sans passer par
+// la navigation haut/bas du clavier - voir BleLink::consumeGameSelect() et
+// le commentaire dans Configuration.h.
+PhaseMode Configuration::selectGameIndex(int index) {
+  if (index < 0 || index >= GAME_LIST_COUNT) return GAME_CHOICE;  // securite, ignore
+  gameCursor = index;
+  return confirmGameSelection();
 }
 
 // Pas de réglage : 1 s à chaque appui.

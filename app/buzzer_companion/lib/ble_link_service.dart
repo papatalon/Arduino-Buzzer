@@ -235,6 +235,18 @@ class BleLinkService extends ChangeNotifier {
     notifyListeners();
   }
 
+  // Choisit directement le jeu d'index [index] (protocole "SELECT_GAME|<n>",
+  // voir Configuration::selectGameIndex côté Mega) — une vraie commande, pas
+  // une simulation de touche : fonctionne peu importe la phase courante du
+  // buzzer, pas seulement depuis le menu de choix du jeu.
+  Future<void> selectGame(int index) async {
+    final ok = await _writeUartLine(connectedDeviceId, _uartServiceId, _uartCharacteristicId, 'SELECT_GAME|$index');
+    status = ok
+        ? 'Jeu sélectionné.'
+        : 'Envoi impossible : aucune caractéristique BLE identifiée pour écrire.';
+    notifyListeners();
+  }
+
   // Démarre/arrête le heartbeat "CTRL|1" (voir le champ _controlHeartbeat) :
   // tant qu'il est envoyé, le firmware considère que l'app a 100% le
   // contrôle et ignore le clavier physique (hors reset/test câblage).

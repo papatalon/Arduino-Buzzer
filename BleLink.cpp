@@ -29,6 +29,11 @@ char BleLink::pollKey() {
         _lastControlMillis = millis();
       } else if (_rxBuffer == "CTRL|0") {
         _inControl = false;
+      } else if (_rxBuffer.startsWith("SELECT_GAME|")) {
+        int idx = _rxBuffer.substring(12).toInt();
+        if (idx >= 0 && idx < 11) {  // GAME_MODE_COUNT
+          _pendingGameSelect = idx;
+        }
       }
       _rxBuffer = "";
     } else if (_rxBuffer.length() < 32) {  // ligne trop longue : forcement corrompue, on l'ignore
@@ -40,4 +45,10 @@ char BleLink::pollKey() {
 
 bool BleLink::appInControl() {
   return _inControl && (millis() - _lastControlMillis <= kControlTimeoutMs);
+}
+
+int BleLink::consumeGameSelect() {
+  int v = _pendingGameSelect;
+  _pendingGameSelect = -1;
+  return v;
 }

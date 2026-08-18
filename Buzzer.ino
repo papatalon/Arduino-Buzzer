@@ -98,6 +98,15 @@ PhaseMode getCurrentMode() {
     return LED_TEST;   // mode cache de test cablage (LED + boutons)
   }
 
+  // Commande App->Mega SELECT_GAME|<n> (voir BleLink::consumeGameSelect) :
+  // une vraie commande, pas une simulation de touche - fonctionne peu
+  // importe la phase courante (l'app n'est pas soumise a la contrainte
+  // sequentielle du clavier physique, contrairement au menu GAME_CHOICE).
+  int gameSelect = BleLink::shared().consumeGameSelect();
+  if (gameSelect >= 0) {
+    return configuration.selectGameIndex(gameSelect);
+  }
+
   // Quand l'app a pris le controle (voir BleLink::appInControl), elle a
   // 100% la main : le clavier physique est ignore (hors reset/test cable
   // ci-dessus, qui restent une echappatoire de securite dans tous les cas).
