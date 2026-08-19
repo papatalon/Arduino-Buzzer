@@ -65,13 +65,28 @@ void setup() {
 
 void loop() {
   display.updateScrolling();
+
+  // Detecte le moment precis ou l'app prend le controle (front montant de
+  // appInControl) : elle vient peut-etre de se (re)connecter alors que le
+  // Mega est deja assis sur sa phase courante depuis un moment, sans
+  // transition recente pour l'annoncer - STATE/GAME ne sont envoyes qu'aux
+  // transitions, donc l'app resterait autrement aveugle jusqu'a la
+  // prochaine. On la resynchronise immediatement ici.
+  static bool wasInControl = false;
+  bool inControl = BleLink::shared().appInControl();
+  if (inControl && !wasInControl) {
+    BleLink::shared().send("STATE|" + String((int)currentMode));
+    BleLink::shared().send("GAME|" + String((int)buzzer.getGameMode()));
+  }
+  wasInControl = inControl;
+
   currentMode = getCurrentMode();
   updateMode();
   // Ecran fige sur l'ASCII art "controle par l'app" tant que le controle est
   // actif (voir LcdDisplay::setControlOverride) - appele apres updateMode()
   // pour toujours avoir le dernier mot sur ce que la phase courante vient
   // de dessiner.
-  display.setControlOverride(BleLink::shared().appInControl());
+  display.setControlOverride(inControl);
 }
 
 PhaseMode getCurrentMode() {
@@ -105,6 +120,15 @@ PhaseMode getCurrentMode() {
   int gameSelect = BleLink::shared().consumeGameSelect();
   if (gameSelect >= 0) {
     return configuration.selectGameIndex(gameSelect);
+  }
+
+  // Commande App->Mega SET_CATS|<mask> (voir BleLink::consumeCategoryMask) :
+  // contrairement a SELECT_GAME, cette commande termine une etape precise
+  // (choix des categories) et n'a de sens que dans son propre ecran - gardee
+  // par la phase courante, pas une navigation libre.
+  int catMask = BleLink::shared().consumeCategoryMask();
+  if (catMask >= 0 && currentMode == QUIZ_CATS) {
+    return configuration.confirmCategories(catMask);
   }
 
   // Quand l'app a pris le controle (voir BleLink::appInControl), elle a

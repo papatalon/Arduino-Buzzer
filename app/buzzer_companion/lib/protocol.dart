@@ -34,6 +34,22 @@ const kGameModeNames = [
   'Duel',
 ];
 
+// Doit rester dans le même ordre que Questions.cpp (CAT0_NAME..CAT9_NAME).
+// Catégories fixes, compilées dans le firmware (pas de carte SD/EEPROM) —
+// à resynchroniser seulement si Questions.cpp change.
+const kCategoryNames = [
+  'Culture générale',
+  'Histoire',
+  'Géographie',
+  'Sciences et nature',
+  'Sports',
+  'Musique',
+  'Cinéma et télé',
+  'Québec',
+  'Bouffe et cuisine',
+  'Mots et langue',
+];
+
 // Doit rester dans le même ordre que PhaseMode.h. Fragile par construction :
 // un ajout/retrait dans l'enum Arduino doit se refléter ici.
 const kPhaseNames = [
@@ -67,6 +83,45 @@ final int _kPhaseAnswerReveal = kPhaseNames.indexOf('ANSWER_REVEAL');
 final int _kPhaseShowScores = kPhaseNames.indexOf('SHOW_SCORES');
 final int _kPhaseBuzzerPressed = kPhaseNames.indexOf('BUZZER_PRESSED');
 final int _kPhaseWaitingBuzzer = kPhaseNames.indexOf('WAITING_BUZZER');
+final int _kPhaseChrono = kPhaseNames.indexOf('CHRONO');
+final int _kPhaseRoundsSetup = kPhaseNames.indexOf('ROUNDS_SETUP');
+final int _kPhaseSoundSetup = kPhaseNames.indexOf('SOUND_SETUP');
+final int _kPhaseQuizCats = kPhaseNames.indexOf('QUIZ_CATS');
+final int _kPhaseQuizCount = kPhaseNames.indexOf('QUIZ_COUNT');
+final int _kPhaseConfiguration = kPhaseNames.indexOf('CONFIGURATION');
+final int _kPhaseIntro = kPhaseNames.indexOf('INTRO');
+
+// Sous-écrans de réglage après un choix de jeu (durée, manches, sons,
+// catégories/nombre de questions) — voir GameSetupView. Contrairement au
+// flux de question, ces phases n'ont pas besoin d'un enum dédié : une
+// seule vérification suffit pour savoir s'il faut afficher GameSetupView
+// à la place du contenu normal.
+bool isGameSetupPhase(int? phase) =>
+    phase != null &&
+    (phase == _kPhaseChrono ||
+        phase == _kPhaseRoundsSetup ||
+        phase == _kPhaseSoundSetup ||
+        phase == _kPhaseQuizCats ||
+        phase == _kPhaseQuizCount);
+
+// Au menu CONFIGURATION (rien en cours) : c'est là que la console propose
+// « Lancer la partie » (KEY|#), qui enchaîne selon le jeu choisi.
+bool isAtConfigurationMenu(int? phase) => phase != null && phase == _kPhaseConfiguration;
+
+// Jeux avec un chrono à lancer manuellement (Chrono classique=2, Chrono
+// pénalité=3, Vol=4 — mêmes index que kGameModeNames/GameMode.h). Les
+// autres jeux de quiz (Classique, Pénalité) n'ont pas de chrono du tout :
+// le flux de question (QuestionFlowView) et le pop-out ne doivent montrer
+// le bouton "Lancer le chrono"/l'attente CHRONO_START que pour ceux-ci.
+bool usesChrono(int? gameMode) => gameMode == 2 || gameMode == 3 || gameMode == 4;
+
+// "Question 3" (nombre ouvert) ou "Question 3 sur 20" (nombre fixe) —
+// chaîne vide tant qu'aucune question n'a encore été posée.
+String questionProgressLabel(int questionsAsked, int? qcountValue) {
+  if (questionsAsked <= 0) return '';
+  if (qcountValue != null && qcountValue > 0) return 'Question $questionsAsked sur $qcountValue';
+  return 'Question $questionsAsked';
+}
 
 // Les 4 états du flux d'une question (design_handoff_buzzer_console/
 // README.md, "Le flux d'une question (Chrono pénalité)") que l'app sait
@@ -111,6 +166,22 @@ class GameState extends ChangeNotifier {
   String? questionText;
   String? answerText;
   bool chronoStarted = false;
+
+  // Sous-écrans de réglage (voir isGameSetupPhase/GameSetupView) : valeur en
+  // cours d'ajustement, telle qu'affichée sur le LCD du buzzer.
+  int? setupChronoStep;      // 0 = 1re reponse, 1 = autres reponses
+  int? setupChronoSeconds;
+  int? setupRoundsCount;
+  int? setupSoundStep;       // 0 = nombre de sons, 1 = leurres
+  int? setupSoundValue;      // nombre de sons (step 0) ou 0/1 booleen (step 1)
+  int? qcatMask;             // bitmask des 10 categories cochees
+  int? qcountValue;          // nombre de questions (0 = Ouvert)
+
+  // Nombre de questions posees depuis le debut de la partie courante
+  // (compte cote app, incremente a chaque QUESTION recu, remis a zero au
+  // retour a INTRO). Avec qcountValue, permet d'afficher "Question N" ou
+  // "Question N sur M".
+  int questionsAsked = 0;
 
   bool get answerRevealed => phase == _kPhaseAnswerReveal || phase == _kPhaseShowScores;
 
@@ -170,7 +241,11 @@ class GameState extends ChangeNotifier {
           break;
         case 'STATE':
           if (parts.length == 2) {
-            phase = int.tryParse(parts[1]);
+            final newPhase = int.tryParse(parts[1]);
+            if (newPhase == _kPhaseIntro && phase != _kPhaseIntro) {
+              questionsAsked = 0; // nouvelle partie qui commence
+            }
+            phase = newPhase;
             handled = true;
           }
           break;
@@ -187,6 +262,7 @@ class GameState extends ChangeNotifier {
             answerText = parts[3];
             lastBuzz = null; // une nouvelle question efface le dernier buzz
             chronoStarted = false;
+            questionsAsked++;
             handled = true;
           }
           break;
@@ -208,6 +284,38 @@ class GameState extends ChangeNotifier {
         case 'CHRONO_START':
           chronoStarted = true;
           handled = true;
+          break;
+        case 'CHRONO_CFG':
+          if (parts.length == 3) {
+            setupChronoStep = int.tryParse(parts[1]);
+            setupChronoSeconds = int.tryParse(parts[2]);
+            handled = setupChronoStep != null && setupChronoSeconds != null;
+          }
+          break;
+        case 'ROUNDS_CFG':
+          if (parts.length == 2) {
+            setupRoundsCount = int.tryParse(parts[1]);
+            handled = setupRoundsCount != null;
+          }
+          break;
+        case 'SOUND_CFG':
+          if (parts.length == 3) {
+            setupSoundStep = int.tryParse(parts[1]);
+            setupSoundValue = int.tryParse(parts[2]);
+            handled = setupSoundStep != null && setupSoundValue != null;
+          }
+          break;
+        case 'QCAT_CFG':
+          if (parts.length == 2) {
+            qcatMask = int.tryParse(parts[1]);
+            handled = qcatMask != null;
+          }
+          break;
+        case 'QCOUNT_CFG':
+          if (parts.length == 2) {
+            qcountValue = int.tryParse(parts[1]);
+            handled = qcountValue != null;
+          }
           break;
       }
 

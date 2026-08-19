@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../ble_link_service.dart';
 import '../popout/popout_launcher.dart';
 import '../protocol.dart';
+import 'game_setup_view.dart';
 import 'phosphor_duotone.dart';
 import 'question_flow.dart';
 import 'right_rail.dart';
@@ -296,6 +297,9 @@ class _CenterColumn extends StatelessWidget {
       case ConsoleSection.partie:
         break;
     }
+    if (isGameSetupPhase(game.phase)) {
+      return GameSetupView(game: game, ble: ble);
+    }
     if (game.questionFlowState != QuestionFlowState.none) {
       return Align(
         alignment: Alignment.topLeft,
@@ -317,6 +321,19 @@ class _CenterColumn extends StatelessWidget {
           if (mode.isNotEmpty) ...[
             const SizedBox(height: BSSpace.s2),
             Text(mode, style: BSType.body(size: 17, color: BSColors.neutral700)),
+          ],
+          if (isAtConfigurationMenu(game.phase)) ...[
+            const SizedBox(height: BSSpace.s4),
+            FilledButton(
+              onPressed: () => ble.sendKey('#'),
+              style: FilledButton.styleFrom(
+                backgroundColor: BSColors.accent,
+                foregroundColor: BSColors.bg,
+                shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+              ),
+              child: const Text('Lancer la partie'),
+            ),
           ],
         ],
       ),

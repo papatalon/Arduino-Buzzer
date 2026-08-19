@@ -39,6 +39,11 @@ class BleLink {
     // une simulation de touche - voir Configuration::selectGameIndex().
     int consumeGameSelect();
 
+    // Retourne le masque de categories demande par un "SET_CATS|<n>" recu
+    // depuis le dernier appel (0-1023), ou -1 si aucun n'est en attente.
+    // Consommee une seule fois - voir Configuration::confirmCategories().
+    int consumeCategoryMask();
+
   private:
     BleLink();
     BleLink(const BleLink&) = delete;
@@ -50,6 +55,7 @@ class BleLink {
     bool _inControl = false;
     unsigned long _lastControlMillis = 0;
     int _pendingGameSelect = -1;
+    int _pendingCategoryMask = -1;
 };
 
 #endif

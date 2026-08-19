@@ -37,8 +37,13 @@ class PopoutContent extends StatelessWidget {
                     child: Text('logo soirée', style: TextStyle(fontSize: 13, color: BSColors.neutral600)),
                   ),
                   const Spacer(),
-                  // Pas de "PROGRESSION" (question X/Y) : aucune télémétrie
-                  // réelle pour ça pour l'instant (voir QuestionsScreen).
+                  if (questionProgressLabel(snapshot.questionsAsked, snapshot.qcountValue).isNotEmpty) ...[
+                    _HeaderMeta(
+                      label: 'PROGRESSION',
+                      value: questionProgressLabel(snapshot.questionsAsked, snapshot.qcountValue),
+                    ),
+                    const SizedBox(width: 40),
+                  ],
                   _HeaderMeta(label: 'JEU ACTIF', value: gameModeName(snapshot.gameMode)),
                 ],
               ),
@@ -112,10 +117,13 @@ class _ArmingZone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // La question n'arrive dans l'instantané qu'une fois le chrono lancé
-    // (voir PopoutSnapshot.fromGameState) : tant que ce n'est pas le cas,
-    // rien à afficher ici sauf l'attente elle-même — le public ne doit pas
-    // la voir pendant que l'animateur la lit encore à voix haute.
+    // Pour les jeux avec chrono, la question n'arrive dans l'instantané
+    // qu'une fois le chrono lancé (voir PopoutSnapshot.fromGameState) : tant
+    // que ce n'est pas le cas, rien à afficher ici sauf l'attente elle-même
+    // — le public ne doit pas la voir pendant que l'animateur la lit encore
+    // à voix haute. Les jeux sans chrono (Classique, Pénalité...) n'ont pas
+    // cette attente : la question arrive tout de suite, pas de barre.
+    final chrono = usesChrono(snapshot.gameMode);
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -123,9 +131,11 @@ class _ArmingZone extends StatelessWidget {
           Text(snapshot.questionText!, style: BSType.questionPopout(), textAlign: TextAlign.center),
           const SizedBox(height: BSSpace.s6),
         ],
-        Text('CHRONO NON LANCÉ', style: BSType.popoutHeaderMeta(color: BSColors.neutral500)),
-        const SizedBox(height: BSSpace.s2),
-        Container(width: 400, height: 20, color: BSColors.neutral300),
+        if (chrono) ...[
+          Text('CHRONO NON LANCÉ', style: BSType.popoutHeaderMeta(color: BSColors.neutral500)),
+          const SizedBox(height: BSSpace.s2),
+          Container(width: 400, height: 20, color: BSColors.neutral300),
+        ],
       ],
     );
   }

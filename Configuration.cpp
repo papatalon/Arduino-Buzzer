@@ -234,6 +234,7 @@ void Configuration::showChronoStep() {
   display.setText(buzzer.gameModeName(chronoTargetMode), 0);   // "Chrono classique"...
   display.setText(chronoStep == CHRONO_FIRST ? "1re reponse" : "Autres reponses", 1);
   display.setText(String("> ") + buzzTimeLabel(chronoCursor), 2);
+  ble.send("CHRONO_CFG|" + String((int)chronoStep) + "|" + String(chronoCursor));
 }
 
 void Configuration::setChronoScreen() {
@@ -277,6 +278,7 @@ PhaseMode Configuration::chronoScreen(char pressedKey) {
 // est conservé en EEPROM, donc proposé tel quel à la prochaine partie.
 void Configuration::showRoundsValue() {
   display.setText(String("> ") + roundsCursor, 2);
+  ble.send("ROUNDS_CFG|" + String(roundsCursor));
 }
 
 void Configuration::setRoundsScreen() {
@@ -320,10 +322,12 @@ void Configuration::showSoundStep() {
     display.setText("Nombre de sons", 1);
     display.setText(String("> ") + roundsCursor, 2);
     display.setText("2=+  8=-  #OK *:ann", 3);
+    ble.send("SOUND_CFG|0|" + String(roundsCursor));
   } else {
     display.setText("Sons leurres", 1);
     display.setText(String("> ") + (soundDecoysCursor ? "oui" : "non"), 2);
     display.setText("2/8: changer  #OK", 3);
+    ble.send("SOUND_CFG|1|" + String(soundDecoysCursor ? 1 : 0));
   }
 }
 
@@ -412,6 +416,7 @@ void Configuration::showQuizCats() {
     display.setText(prefix + qcatLabel(row), rowOnScreen);
   }
   display.setText("2/8 5:cocher #:OK", 3);
+  ble.send("QCAT_CFG|" + String(qcatMask));
 }
 
 void Configuration::setQuizCats() {
@@ -458,8 +463,18 @@ PhaseMode Configuration::quizCats(char pressedKey) {
   return QUIZ_CATS;
 }
 
+// Selection directe (commande App->Mega SET_CATS|<mask>) : contourne les
+// raccourcis de gameChoice-like ci-dessus (bases sur qcatCursor, qui n'a
+// aucun rapport avec ce que l'app vient de cocher) - l'app envoie deja le
+// masque final exact.
+PhaseMode Configuration::confirmCategories(int mask) {
+  qcatMask = (uint16_t)mask;
+  return QUIZ_COUNT;
+}
+
 void Configuration::showQuizCount() {
   display.setText(String("> ") + (qcountIdx == 0 ? String("Ouvert") : String(qcountIdx)), 1);
+  ble.send("QCOUNT_CFG|" + String(qcountIdx));
 }
 
 void Configuration::setQuizCount() {

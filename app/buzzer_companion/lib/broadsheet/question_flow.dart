@@ -29,12 +29,21 @@ class QuestionFlowView extends StatelessWidget {
     final state = game.questionFlowState;
     final revealed = state == QuestionFlowState.revealed;
 
+    final progress = questionProgressLabel(game.questionsAsked, game.qcountValue);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        if ((game.questionCategory ?? '').isNotEmpty)
-          Text(game.questionCategory!.toUpperCase(), style: BSType.sectionKicker()),
+        Row(
+          children: [
+            if ((game.questionCategory ?? '').isNotEmpty)
+              Text(game.questionCategory!.toUpperCase(), style: BSType.sectionKicker()),
+            if (progress.isNotEmpty) ...[
+              const Spacer(),
+              Text(progress, style: BSType.body(size: 13, color: BSColors.neutral600)),
+            ],
+          ],
+        ),
         const SizedBox(height: BSSpace.s2),
         Text(
           game.questionText ?? '',
@@ -46,7 +55,7 @@ class QuestionFlowView extends StatelessWidget {
         _AnswerBlock(state: state, answer: game.answerText ?? ''),
         const SizedBox(height: BSSpace.s6),
         switch (state) {
-          QuestionFlowState.arming => _ArmingBlock(ble: ble),
+          QuestionFlowState.arming => _ArmingBlock(game: game, ble: ble),
           QuestionFlowState.buzzed => _BuzzedBlock(game: game, ble: ble),
           QuestionFlowState.scored => _ScoredBlock(game: game, ble: ble),
           QuestionFlowState.revealed => _RevealedBlock(ble: ble),
@@ -164,11 +173,13 @@ class _ButtonLabel extends StatelessWidget {
 // --- Blocs par état ------------------------------------------------------
 
 class _ArmingBlock extends StatelessWidget {
-  const _ArmingBlock({required this.ble});
+  const _ArmingBlock({required this.game, required this.ble});
+  final GameState game;
   final BleLinkService ble;
 
   @override
   Widget build(BuildContext context) {
+    final chrono = usesChrono(game.gameMode);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -188,16 +199,20 @@ class _ArmingBlock extends StatelessWidget {
         Text("Personne n'a buzzé", style: BSType.body(size: 17, color: BSColors.neutral700)),
         const SizedBox(height: BSSpace.s1),
         Text(
-          'Lis la question à voix haute, puis lance le chrono.',
+          chrono ? 'Lis la question à voix haute, puis lance le chrono.' : 'En attente d\'un buzz.',
           style: BSType.body(size: 15, color: BSColors.neutral600),
         ),
         const SizedBox(height: BSSpace.s4),
-        Text('CHRONO NON LANCÉ', style: BSType.datelineRail(color: BSColors.neutral600)),
-        const SizedBox(height: BSSpace.s4),
+        if (chrono) ...[
+          Text('CHRONO NON LANCÉ', style: BSType.datelineRail(color: BSColors.neutral600)),
+          const SizedBox(height: BSSpace.s4),
+        ],
         Row(
           children: [
-            _PrimaryButton(label: 'Lancer le chrono', shortcut: 'D', onPressed: () => ble.sendKey('D')),
-            const SizedBox(width: BSSpace.s3),
+            if (chrono) ...[
+              _PrimaryButton(label: 'Lancer le chrono', shortcut: 'D', onPressed: () => ble.sendKey('D')),
+              const SizedBox(width: BSSpace.s3),
+            ],
             _SecondaryButton(label: 'Révéler la réponse', shortcut: '0', onPressed: () => ble.sendKey('0')),
           ],
         ),

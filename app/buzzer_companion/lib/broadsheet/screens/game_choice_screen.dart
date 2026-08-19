@@ -5,13 +5,11 @@ import '../../protocol.dart';
 import '../tokens.dart';
 
 // Écran "Choix du jeu" (design_handoff_buzzer_console/README.md, 1f) : les
-// 11 modes, celui actif marqué. Seuls les jeux qui s'appliquent en une
-// seule confirmation au clavier (Classique, Pénalité, Simon, Simon
-// inverse) sont sélectionnables en un clic (commande "SELECT_GAME|<n>",
-// voir Configuration::selectGameIndex côté Mega) — les 7 autres
-// enchaînent sur un sous-écran de réglage (durée, manches, sons) qui n'a
-// pas encore d'UI côté app, donc ils restent affichés mais inertes pour
-// l'instant.
+// 11 modes, celui actif marqué, tous cliquables (commande "SELECT_GAME|<n>",
+// voir Configuration::selectGameIndex côté Mega). Les jeux qui enchaînent
+// sur un sous-écran de réglage (durée, manches, sons) atterrissent sur
+// GameSetupView une fois la phase changée — voir onGameSelected, qui
+// ramène toujours sur "Partie".
 //
 // Les phrases de règle sont une description approximative déduite des noms
 // et du code existant (Questions.h, Simon.h, Reflex.h, SoundGame.h...) — à
@@ -29,11 +27,6 @@ const _kRules = [
   'Buzzer sur le mauvais son élimine le joueur.',
   'Deux joueurs s\'affrontent en tête-à-tête.',
 ];
-
-// Jeux qui s'appliquent en une seule confirmation au clavier (pas de
-// sous-écran de réglage) — les seuls sélectionnables depuis l'app pour
-// l'instant. Index : voir GameMode.h / kGameModeNames.
-const _kSimpleGameIndices = {0, 1, 5, 6};
 
 class GameChoiceScreen extends StatelessWidget {
   const GameChoiceScreen({super.key, required this.game, required this.ble, required this.onGameSelected});
@@ -62,12 +55,10 @@ class GameChoiceScreen extends StatelessWidget {
                 _GameCard(
                   index: i,
                   active: game.gameMode == i,
-                  onSelect: _kSimpleGameIndices.contains(i)
-                      ? () {
-                          ble.selectGame(i);
-                          onGameSelected();
-                        }
-                      : null,
+                  onSelect: () {
+                    ble.selectGame(i);
+                    onGameSelected();
+                  },
                 ),
             ],
           ),
@@ -81,11 +72,10 @@ class _GameCard extends StatelessWidget {
   const _GameCard({required this.index, required this.active, required this.onSelect});
   final int index;
   final bool active;
-  final VoidCallback? onSelect;
+  final VoidCallback onSelect;
 
   @override
   Widget build(BuildContext context) {
-    final enabled = onSelect != null;
     final card = Container(
       width: 320,
       padding: const EdgeInsets.only(top: BSSpace.s2),
@@ -93,41 +83,30 @@ class _GameCard extends StatelessWidget {
         border: Border(top: BorderSide(color: active ? BSColors.accent2 : BSColors.text, width: 2)),
         color: active ? BSColors.accent2_100 : null,
       ),
-      child: Opacity(
-        opacity: enabled ? 1 : 0.5,
-        child: Padding(
-          padding: EdgeInsets.all(active ? BSSpace.s3 : 0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Expanded(
-                    child: Text(kGameModeNames[index], style: BSType.buzzerNameConsole(size: 23)),
-                  ),
-                  if (active)
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
-                      color: BSColors.accent2_100,
-                      child: Text('Actif', style: BSType.body(size: 12, color: BSColors.accent2_800)),
-                    ),
-                ],
-              ),
-              const SizedBox(height: BSSpace.s1),
-              Text(_kRules[index], style: BSType.body(size: 15, color: BSColors.neutral700)),
-              if (!enabled) ...[
-                const SizedBox(height: BSSpace.s1),
-                Text(
-                  'Nécessite le clavier pour l\'instant',
-                  style: BSType.body(size: 13, color: BSColors.neutral600),
+      child: Padding(
+        padding: EdgeInsets.all(active ? BSSpace.s3 : 0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: Text(kGameModeNames[index], style: BSType.buzzerNameConsole(size: 23)),
                 ),
+                if (active)
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+                    color: BSColors.accent2_100,
+                    child: Text('Actif', style: BSType.body(size: 12, color: BSColors.accent2_800)),
+                  ),
               ],
-            ],
-          ),
+            ),
+            const SizedBox(height: BSSpace.s1),
+            Text(_kRules[index], style: BSType.body(size: 15, color: BSColors.neutral700)),
+          ],
         ),
       ),
     );
-    if (!enabled) return card;
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: GestureDetector(onTap: onSelect, child: card),

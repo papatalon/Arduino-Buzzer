@@ -18,6 +18,8 @@ class PopoutSnapshot {
     this.questionCategory,
     this.questionText,
     this.answerText,
+    this.questionsAsked = 0,
+    this.qcountValue,
   });
 
   static const empty = PopoutSnapshot(
@@ -34,14 +36,21 @@ class PopoutSnapshot {
   final String? questionCategory;
   final String? questionText;
   final String? answerText;
+  final int questionsAsked;
+  final int? qcountValue;
 
   factory PopoutSnapshot.fromGameState(GameState game) {
     // La question elle-même n'est pas listée comme sensible dans le tableau
     // de confidentialité du design, mais le client a précisé que sur le
     // pop-out, elle ne doit apparaître qu'une fois le chrono lancé — pas
-    // avant, pendant que l'animateur la lit encore à voix haute.
+    // avant, pendant que l'animateur la lit encore à voix haute. Seuls les
+    // jeux avec un chrono (Chrono classique/pénalité, Vol) ont cette
+    // attente : les autres (Classique, Pénalité...) n'envoient jamais
+    // CHRONO_START, donc la question resterait cachée pour toujours sans
+    // cette garde.
+    final needsChronoGate = usesChrono(game.gameMode);
     final showQuestion = game.questionText != null &&
-        !(game.questionFlowState == QuestionFlowState.arming && !game.chronoStarted);
+        !(needsChronoGate && game.questionFlowState == QuestionFlowState.arming && !game.chronoStarted);
     return PopoutSnapshot(
       scores: game.scores,
       present: game.present,
@@ -51,6 +60,8 @@ class PopoutSnapshot {
       questionCategory: showQuestion ? game.questionCategory : null,
       questionText: showQuestion ? game.questionText : null,
       answerText: game.answerRevealed ? game.answerText : null,
+      questionsAsked: game.questionsAsked,
+      qcountValue: game.qcountValue,
     );
   }
 
@@ -65,6 +76,8 @@ class PopoutSnapshot {
       questionCategory: json['questionCategory'] as String?,
       questionText: json['questionText'] as String?,
       answerText: json['answerText'] as String?,
+      questionsAsked: json['questionsAsked'] as int? ?? 0,
+      qcountValue: json['qcountValue'] as int?,
     );
   }
 
@@ -77,5 +90,7 @@ class PopoutSnapshot {
         'questionCategory': questionCategory,
         'questionText': questionText,
         'answerText': answerText,
+        'questionsAsked': questionsAsked,
+        'qcountValue': qcountValue,
       });
 }

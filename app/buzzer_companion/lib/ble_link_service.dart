@@ -50,6 +50,19 @@ class BleLinkService extends ChangeNotifier {
   // déconnexion (envoyé au mieux-effort seulement).
   Timer? _controlHeartbeat;
 
+  // Dernier "PONG" reçu (réponse du Mega à chaque "CTRL|1", voir
+  // BleLink::pollKey côté firmware) — contrairement à la télémétrie de jeu,
+  // qui peut légitimement rester silencieuse en attendant un buzz, un
+  // heartbeat doit toujours revenir : sert de détecteur fiable de
+  // connexion "fantôme" (voir _checkLinkHealth).
+  DateTime? _lastPongAt;
+  bool _recovering = false;
+
+  // Une seule reconnexion complète auto-déclenchée par échec de découverte
+  // de services par connexion (voir _escalateDiscoveryFailure) — pour ne
+  // pas boucler indéfiniment si le radio Windows est vraiment bloqué.
+  bool _triedFullReconnectForDiscovery = false;
+
   void init() {
     // Rafraîchit en continu (liste d'appareils qui arrivent pendant un scan,
     // âge du dernier message sur l'écran "Appareil") plutôt que de suivre un
@@ -101,6 +114,7 @@ class BleLinkService extends ChangeNotifier {
       connectedDeviceId = isConnected ? deviceId : null;
       if (isConnected) {
         connectedDeviceName = devices[deviceId]?.name ?? connectedDeviceName;
+        _triedFullReconnectForDiscovery = false;  // nouvelle connexion, nouvelle chance
       } else {
         connectedDeviceName = null;
         _stopControlHeartbeat();
@@ -227,30 +241,43 @@ class BleLinkService extends ChangeNotifier {
   // Déconnecte puis reconnecte tout de suite au même appareil, en un clic —
   // utile en particulier pour purger une connexion "fantôme" (connectée
   // mais silencieuse, voir la mémoire du projet) sans repasser par
-  // Chercher + Connecter séparément.
+  // Chercher + Connecter séparément. Appelée depuis plusieurs endroits (le
+  // bouton "Reconnecter", l'échec de découverte, le chien de garde du
+  // heartbeat) : un verrou évite que deux reconnexions se chevauchent et se
+  // marchent dessus (observé : ça laisse connectedDeviceId pointer vers une
+  // session BLE déjà remplacée, et les écritures échouent avec
+  // "deviceNotFound").
+  bool _reconnectInProgress = false;
+
   Future<void> reconnect() async {
+    if (_reconnectInProgress) return;
     final id = connectedDeviceId;
     if (id == null) return;
-    status = 'Reconnexion...';
-    notifyListeners();
+    _reconnectInProgress = true;
     try {
-      await UniversalBle.disconnect(id);
-    } catch (_) {
-      // Au mieux-effort : on tente la reconnexion même si la déconnexion a échoué.
-    }
-    // Même parade que _tryAutoReconnect() : un bref scan avant de se
-    // reconnecter force Windows à rafraîchir sa vue de l'appareil plutôt
-    // que de réutiliser une session BLE périmée.
-    try {
-      await UniversalBle.startScan();
-      await Future.delayed(const Duration(milliseconds: 1500));
-      await UniversalBle.stopScan();
-    } catch (_) {}
-    try {
-      await UniversalBle.connect(id);
-    } catch (e) {
-      status = 'Reconnexion échouée : $e';
+      status = 'Reconnexion...';
       notifyListeners();
+      try {
+        await UniversalBle.disconnect(id);
+      } catch (_) {
+        // Au mieux-effort : on tente la reconnexion même si la déconnexion a échoué.
+      }
+      // Même parade que _tryAutoReconnect() : un bref scan avant de se
+      // reconnecter force Windows à rafraîchir sa vue de l'appareil plutôt
+      // que de réutiliser une session BLE périmée.
+      try {
+        await UniversalBle.startScan();
+        await Future.delayed(const Duration(milliseconds: 1500));
+        await UniversalBle.stopScan();
+      } catch (_) {}
+      try {
+        await UniversalBle.connect(id);
+      } catch (e) {
+        status = 'Reconnexion échouée : $e';
+        notifyListeners();
+      }
+    } finally {
+      _reconnectInProgress = false;
     }
   }
 
@@ -277,20 +304,51 @@ class BleLinkService extends ChangeNotifier {
     notifyListeners();
   }
 
+  // Confirme la sélection de catégories de questions (protocole
+  // "SET_CATS|<mask>", voir Configuration::confirmCategories côté Mega) —
+  // une vraie commande (pas une simulation de touche) : le masque final
+  // est envoyé d'un coup, pas coché case par case, pour éviter les
+  // raccourcis dépendants du curseur physique côté firmware.
+  Future<void> setCategories(int mask) async {
+    final ok = await _writeUartLine(connectedDeviceId, _uartServiceId, _uartCharacteristicId, 'SET_CATS|$mask');
+    status = ok
+        ? 'Catégories confirmées.'
+        : 'Envoi impossible : aucune caractéristique BLE identifiée pour écrire.';
+    notifyListeners();
+  }
+
   // Démarre/arrête le heartbeat "CTRL|1" (voir le champ _controlHeartbeat) :
   // tant qu'il est envoyé, le firmware considère que l'app a 100% le
   // contrôle et ignore le clavier physique (hors reset/test câblage).
   void _startControlHeartbeat() {
     _controlHeartbeat?.cancel();
+    _lastPongAt = DateTime.now();  // laisse une marge avant le premier chien de garde
     _writeUartLine(connectedDeviceId, _uartServiceId, _uartCharacteristicId, 'CTRL|1');
     _controlHeartbeat = Timer.periodic(const Duration(seconds: 1), (_) {
       _writeUartLine(connectedDeviceId, _uartServiceId, _uartCharacteristicId, 'CTRL|1');
+      _checkLinkHealth();
     });
   }
 
   void _stopControlHeartbeat() {
     _controlHeartbeat?.cancel();
     _controlHeartbeat = null;
+    _lastPongAt = null;
+  }
+
+  // Filet de sécurité contre une connexion "fantôme" (BLE affiche connecté
+  // mais plus rien ne circule, dans un sens ou dans l'autre) : si aucun
+  // PONG n'est revenu depuis 4s malgré l'envoi continu du heartbeat (4x sa
+  // cadence, marge raisonnable), le lien est mort — reconnexion automatique,
+  // sans attendre que l'opérateur le remarque et clique lui-même.
+  void _checkLinkHealth() {
+    if (_recovering) return;
+    final last = _lastPongAt;
+    if (last != null && DateTime.now().difference(last) < const Duration(seconds: 4)) return;
+    _recovering = true;
+    status = 'Connexion silencieuse détectée, reconnexion automatique...';
+    notifyListeners();
+    reconnect().whenComplete(() => _recovering = false);
   }
 
   // Écriture brute partagée par sendKey() et le heartbeat "CTRL|" — un seul
@@ -348,16 +406,34 @@ class BleLinkService extends ChangeNotifier {
         await _discoverUartCharacteristic(deviceId, attempt: 1);
         return;
       }
-      status = 'Aucune caractéristique notifiable trouvée.';
-      notifyListeners();
+      await _escalateDiscoveryFailure(deviceId, 'Aucune caractéristique notifiable trouvée.');
     } catch (e) {
       if (attempt == 0) {
         await _discoverUartCharacteristic(deviceId, attempt: 1);
         return;
       }
-      status = 'Erreur de découverte des services : $e';
-      notifyListeners();
+      await _escalateDiscoveryFailure(deviceId, 'Erreur de découverte des services : $e');
     }
+  }
+
+  // Si la découverte de services échoue complètement (deux essais rapides
+  // déjà épuisés, pas juste un délai insuffisant) : une reconnexion
+  // complète (déconnexion + scan + reconnexion) a de meilleures chances
+  // qu'un nouvel essai de découverte sur la même session BLE, peut-être
+  // corrompue. Une seule tentative de ce type par connexion — si ça échoue
+  // encore, seul un vrai aller-retour Bluetooth off/on dans les réglages
+  // Windows a fonctionné à chaque fois par le passé (voir la mémoire du
+  // projet) ; pas de boucle automatique indéfinie dans ce cas.
+  Future<void> _escalateDiscoveryFailure(String deviceId, String message) async {
+    if (_triedFullReconnectForDiscovery) {
+      status = '$message Éteins puis rallume le Bluetooth de Windows pour débloquer.';
+      notifyListeners();
+      return;
+    }
+    _triedFullReconnectForDiscovery = true;
+    status = '$message Nouvelle tentative de connexion complète...';
+    notifyListeners();
+    await reconnect();
   }
 
   void _handleIncomingBytes(Uint8List value) {
@@ -366,12 +442,15 @@ class BleLinkService extends ChangeNotifier {
     _rxBuffer = lines.removeLast();  // fragment incomplet, garde pour la prochaine notification
     for (final line in lines) {
       final trimmed = line.trim();  // Serial2.println termine par "\r\n"
-      if (trimmed.isNotEmpty) {
-        messagesReceived++;
-        lastRawMessage = trimmed;
-        lastMessageAt = DateTime.now();
-        _messageController.add(trimmed);
+      if (trimmed.isEmpty) continue;
+      messagesReceived++;
+      lastRawMessage = trimmed;
+      lastMessageAt = DateTime.now();
+      if (trimmed == 'PONG') {
+        _lastPongAt = DateTime.now();  // reponse au heartbeat, pas un message de jeu
+        continue;
       }
+      _messageController.add(trimmed);
     }
   }
 }

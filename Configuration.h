@@ -6,6 +6,7 @@
 #include "Mp3.h"
 #include "Buzzer.h"
 #include "QuestionBank.h"
+#include "BleLink.h"
 
 class Configuration {
 public:
@@ -28,6 +29,12 @@ public:
     PhaseMode soundSetup(char pressedKey);
     void setQuizCats();                      // lancement quiz : categories
     PhaseMode quizCats(char pressedKey);
+    // Applique directement le masque de categories [mask] et passe a
+    // QUIZ_COUNT, sans passer par les raccourcis dependants du curseur
+    // physique (qui n'ont de sens que pour une seule frappe a la fois) -
+    // utilise par la commande App->Mega SET_CATS|<mask> (voir
+    // BleLink::consumeCategoryMask()).
+    PhaseMode confirmCategories(int mask);
     void setQuizCount();                     // lancement quiz : nb de questions
     PhaseMode quizCount(char pressedKey);
     void setShuffleBuzzers();
@@ -111,6 +118,7 @@ private:
   LcdDisplay& display = LcdDisplay::shared();
   Mp3& mp3 = Mp3::shared();
   Buzzer& buzzer = Buzzer::shared();
+  BleLink& ble = BleLink::shared();
 };
 
 #endif
