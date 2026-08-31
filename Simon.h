@@ -5,6 +5,7 @@
 #include "PhaseMode.h"
 #include "Mp3.h"
 #include "Buzzer.h"
+#include "BleLink.h"
 
 #define SIMON_MAX_LEVEL 32      // longueur maxi de la sequence (1 octet par etape)
 #define SIMON_START_MS 1500     // pause avant la demo (le temps de lire l'ecran)
@@ -57,11 +58,13 @@ private:
 
   void showTitle();                 // ligne 0 : "SIMON - Niveau N"
   void showProgress();              // ligne 2 : progression "x / N"
+  void sendTelemetry();             // "SIMON|niveau|saisis|longueur" vers l'app
   PhaseMode fail(const char* title);  // termine la partie avec ce titre
 
   LcdDisplay& display = LcdDisplay::shared();
   Mp3& mp3 = Mp3::shared();
   Buzzer& buzzer = Buzzer::shared();
+  BleLink& ble = BleLink::shared();
 };
 
 #endif

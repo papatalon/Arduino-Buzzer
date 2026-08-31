@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../audio/sound_engine.dart';
 import '../ble_link_service.dart';
+import '../event_logo.dart';
 import '../popout/popout_launcher.dart';
 import '../team_names.dart';
 import '../protocol.dart';
@@ -40,6 +41,7 @@ class ConsoleShell extends StatefulWidget {
     required this.popout,
     required this.sound,
     required this.teams,
+    required this.logo,
   });
 
   final BleLinkService ble;
@@ -47,6 +49,7 @@ class ConsoleShell extends StatefulWidget {
   final PopoutLauncher popout;
   final SoundEngine sound;
   final TeamNames teams;
+  final EventLogo logo;
 
   @override
   State<ConsoleShell> createState() => _ConsoleShellState();
@@ -120,6 +123,7 @@ class _ConsoleShellState extends State<ConsoleShell> {
                                   ble: widget.ble,
                                   sound: widget.sound,
                                   teams: widget.teams,
+                                  logo: widget.logo,
                                   onNavigate: (s) => setState(() => _section = s),
                                 ),
                               ),
@@ -130,7 +134,12 @@ class _ConsoleShellState extends State<ConsoleShell> {
                                 ),
                                 child: Padding(
                                   padding: const EdgeInsets.only(left: 32),
-                                  child: RightRail(game: widget.game, popout: widget.popout, teams: widget.teams),
+                                  child: RightRail(
+                                    game: widget.game,
+                                    popout: widget.popout,
+                                    teams: widget.teams,
+                                    logo: widget.logo,
+                                  ),
                                 ),
                               ),
                             ],
@@ -268,7 +277,7 @@ class _DatelineRail extends StatelessWidget {
         children: [
           Text("CONSOLE DE L'ANIMATEUR", style: BSType.datelineRail()),
           const Spacer(),
-          Text(gameModeName(game.gameMode).toUpperCase(), style: BSType.datelineRail()),
+          Text(gameModeName(game.displayGameMode).toUpperCase(), style: BSType.datelineRail()),
           const SizedBox(width: 26),
           Text(clock, style: BSType.datelineRail(color: BSColors.text)),
         ],
@@ -284,11 +293,13 @@ class _CenterColumn extends StatelessWidget {
     required this.ble,
     required this.sound,
     required this.teams,
+    required this.logo,
     required this.onNavigate,
   });
 
   final SoundEngine sound;
   final TeamNames teams;
+  final EventLogo logo;
 
   final ConsoleSection section;
   final GameState game;
@@ -311,7 +322,7 @@ class _CenterColumn extends StatelessWidget {
       case ConsoleSection.questions:
         return const QuestionsScreen();
       case ConsoleSection.appareil:
-        return DeviceScreen(ble: ble, game: game);
+        return DeviceScreen(ble: ble, game: game, logo: logo);
       case ConsoleSection.partie:
         break;
     }
@@ -330,8 +341,18 @@ class _CenterColumn extends StatelessWidget {
         child: QuestionFlowView(game: game, ble: ble, teams: teams),
       );
     }
+    // Les jeux non-quiz n'ont pas de question : sans cette branche, la
+    // console tombait sur le repli générique et n'annonçait qu'un nom de
+    // phase brut pendant toute une partie de Réflexe ou de Simon.
+    final layout = layoutFor(game.gameMode);
+    if (layout != GameLayout.quiz && isGameRunning(game.phase)) {
+      return Align(
+        alignment: Alignment.topLeft,
+        child: _GameProgressView(game: game, teams: teams, layout: layout),
+      );
+    }
     final label = phaseLabel(game.phase);
-    final mode = gameModeName(game.gameMode);
+    final mode = gameModeName(game.displayGameMode);
     return Align(
       alignment: Alignment.topLeft,
       child: Column(
@@ -342,25 +363,121 @@ class _CenterColumn extends StatelessWidget {
             label.isNotEmpty ? label : 'En attente de données du buzzer',
             style: BSType.questionConsole(),
           ),
-          if (mode.isNotEmpty) ...[
-            const SizedBox(height: BSSpace.s2),
-            Text(mode, style: BSType.body(size: 17, color: BSColors.neutral700)),
-          ],
+          const SizedBox(height: BSSpace.s2),
+          Text(
+            mode.isNotEmpty ? mode : 'Aucun jeu choisi',
+            style: BSType.body(size: 17, color: BSColors.neutral700),
+          ),
+          // Proposer « Lancer la partie » sans jeu choisi serait trompeur :
+          // le Mega démarrerait celui qu'il garde en mémoire, pas celui que
+          // l'opérateur croit lancer. On l'oriente d'abord vers le choix.
           if (isAtConfigurationMenu(game.phase)) ...[
             const SizedBox(height: BSSpace.s4),
-            FilledButton(
-              onPressed: () => ble.sendKey('#'),
-              style: FilledButton.styleFrom(
-                backgroundColor: BSColors.accent,
-                foregroundColor: BSColors.bg,
-                shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+            if (mode.isEmpty)
+              OutlinedButton(
+                onPressed: () => onNavigate(ConsoleSection.jeuActif),
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: BSColors.text,
+                  side: const BorderSide(color: BSColors.divider),
+                  shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+                ),
+                child: const Text('Choisir un jeu'),
+              )
+            else
+              FilledButton(
+                onPressed: () => ble.sendKey('#'),
+                style: FilledButton.styleFrom(
+                  backgroundColor: BSColors.accent,
+                  foregroundColor: BSColors.bg,
+                  shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+                ),
+                child: const Text('Lancer la partie'),
               ),
-              child: const Text('Lancer la partie'),
-            ),
           ],
         ],
       ),
     );
+  }
+}
+
+// Suivi d'un jeu non-quiz dans la console. Même règle que l'écran public :
+// les points montrés sont ceux du jeu en cours, et Simon n'en a aucun.
+class _GameProgressView extends StatelessWidget {
+  const _GameProgressView({required this.game, required this.teams, required this.layout});
+
+  final GameState game;
+  final TeamNames teams;
+  final GameLayout layout;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(gameModeName(game.displayGameMode), style: BSType.questionConsole()),
+        const SizedBox(height: BSSpace.s2),
+        Text(phaseLabel(game.phase), style: BSType.body(size: 15, color: BSColors.neutral600)),
+        const SizedBox(height: BSSpace.s6),
+        if (layout == GameLayout.simon) ..._simon() else ..._manches(),
+      ],
+    );
+  }
+
+  List<Widget> _simon() {
+    final done = game.simonLevel;
+    if (done == null) {
+      return [Text("En attente du buzzer", style: BSType.body(size: 17, color: BSColors.neutral700))];
+    }
+    // [simonLevel] compte les niveaux réussis : celui qui se joue est le
+    // suivant, comme sur l'écran du buzzer.
+    final shown = game.gameFinished ? done : done + 1;
+    final length = game.simonLength ?? 0;
+    return [
+      Text(game.gameFinished ? 'NIVEAU ATTEINT' : 'NIVEAU', style: BSType.sectionKicker()),
+      Text('$shown', style: BSType.scoreConsole(color: BSColors.accent).copyWith(fontSize: 64)),
+      if (!game.gameFinished && length > 0)
+        Text('${game.simonEntered ?? 0} / $length', style: BSType.body(size: 17, color: BSColors.neutral700)),
+    ];
+  }
+
+  List<Widget> _manches() {
+    final progress = roundProgressLabel(game.gameRound, game.gameTotalRounds, gameMode: game.gameMode);
+    return [
+      if (progress.isNotEmpty) ...[
+        Text(progress, style: BSType.body(size: 22, color: BSColors.text).copyWith(fontWeight: FontWeight.w600)),
+        const SizedBox(height: BSSpace.s4),
+      ],
+      if (game.gameFinished) ...[
+        Text(_resultLabel(), style: BSType.body(size: 22, color: BSColors.accent2_800).copyWith(fontWeight: FontWeight.w600)),
+        const SizedBox(height: BSSpace.s4),
+      ],
+      Text('POINTS DE CE JEU', style: BSType.sectionKicker()),
+      const SizedBox(height: BSSpace.s2),
+      for (var i = 0; i < 4; i++)
+        if (game.present[i])
+          Padding(
+            padding: const EdgeInsets.only(bottom: BSSpace.s1),
+            child: Row(
+              children: [
+                Container(width: 14, height: 14, color: kBuzzerColors[i].fill),
+                const SizedBox(width: BSSpace.s2),
+                SizedBox(width: 200, child: Text(teams.nameFor(i), style: BSType.body(size: 18, color: BSColors.text))),
+                Text(
+                  '${i < game.gameScores.length ? game.gameScores[i] : 0}',
+                  style: BSType.body(size: 18, color: BSColors.text).copyWith(fontWeight: FontWeight.w600),
+                ),
+              ],
+            ),
+          ),
+    ];
+  }
+
+  String _resultLabel() {
+    final winner = game.gameWinner;
+    if (winner != null && winner >= 0 && winner < 4) return '${teams.nameFor(winner)} gagne la partie';
+    return game.gameTie ? 'Égalité' : 'Aucun vainqueur';
   }
 }

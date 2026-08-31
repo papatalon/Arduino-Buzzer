@@ -1,9 +1,11 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
-import '../broadsheet/dashed_box.dart';
 import '../broadsheet/pulse.dart';
 import '../broadsheet/tokens.dart';
 import '../protocol.dart';
+import 'popout_idle.dart';
 import 'popout_snapshot.dart';
 
 // Contenu visuel du châssis pop-out (design_handoff_buzzer_console/README.md,
@@ -19,6 +21,20 @@ class PopoutContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Toute la mise en page dépend du jeu : un Simon n'a pas de points à
+    // montrer, un Réflexe a les siens (pas ceux du quiz), et un jeu de quiz
+    // garde l'écran d'origine. Voir GameLayout dans protocol.dart.
+    //
+    // La STRUCTURE se décide sur [gameMode], le jeu réellement chargé dans le
+    // buzzer, et non sur [displayGameMode] : ce dernier reste vide tant que
+    // l'opérateur n'a pas choisi lui-même (pour ne pas annoncer un jeu qu'il
+    // n'a pas voulu), ce qui est la bonne règle pour un TITRE mais pas pour
+    // une mise en page — une app relancée en pleine partie de Simon serait
+    // sinon remise en écran de quiz, tableau des scores compris.
+    final layout = layoutFor(snapshot.gameMode);
+    // Aux menus et pendant la configuration, rien ne se joue : la salle ne
+    // doit voir ni bandeau ni compteur, seulement le logo.
+    final running = isGameRunning(snapshot.phase);
     return SizedBox(
       width: 1440,
       height: 810,
@@ -31,20 +47,21 @@ class PopoutContent extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  const DashedBox(
-                    width: 118,
-                    height: 44,
-                    child: Text('logo soirée', style: TextStyle(fontSize: 13, color: BSColors.neutral600)),
-                  ),
+                  // Pas de case tiretée quand aucun logo n'est choisi :
+                  // l'emplacement disparaît au lieu de laisser un trou.
+                  if (snapshot.logoPath != null) _EventLogoImage(path: snapshot.logoPath!),
                   const Spacer(),
-                  if (questionProgressLabel(snapshot.questionsAsked, snapshot.qcountValue).isNotEmpty) ...[
-                    _HeaderMeta(
-                      label: 'PROGRESSION',
-                      value: questionProgressLabel(snapshot.questionsAsked, snapshot.qcountValue),
-                    ),
+                  if (running && _progressLabel(layout).isNotEmpty) ...[
+                    _HeaderMeta(label: 'PROGRESSION', value: _progressLabel(layout)),
                     const SizedBox(width: 40),
                   ],
-                  _HeaderMeta(label: 'JEU ACTIF', value: gameModeName(snapshot.gameMode)),
+                  // Masqué tant qu'aucun jeu n'est choisi : un intitulé
+                  // « JEU ACTIF » suivi du vide, devant la salle, fait
+                  // penser à un écran cassé. Masqué aussi pendant l'attente,
+                  // où l'écran annonce déjà le jeu à venir en grand, au
+                  // centre : le répéter en petit dans le coin ferait doublon.
+                  if (running && gameModeName(snapshot.displayGameMode).isNotEmpty)
+                    _HeaderMeta(label: 'JEU ACTIF', value: gameModeName(snapshot.displayGameMode)),
                 ],
               ),
             ),
@@ -52,18 +69,69 @@ class PopoutContent extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(52, 18, 52, 0),
               child: SizedBox(height: 4, child: ColoredBox(color: BSColors.text)),
             ),
-            Expanded(
-              child: Center(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 80),
-                  child: _CenterZone(snapshot: snapshot),
+            // Hors partie, l'écran d'attente prend tout le bas du châssis :
+            // il porte son propre pied de page (les équipes du soir) à la
+            // place du tableau des scores, qui n'aurait que des zéros à
+            // montrer.
+            if (!running)
+              Expanded(child: PopoutIdle(snapshot: snapshot))
+            else
+              Expanded(
+                child: Center(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 80),
+                    child: switch (layout) {
+                      GameLayout.quiz => _CenterZone(snapshot: snapshot),
+                      GameLayout.manches => _MancheZone(snapshot: snapshot),
+                      GameLayout.simon => _SimonZone(snapshot: snapshot),
+                    },
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(height: 4, child: ColoredBox(color: BSColors.text)),
-            _Scoreboard(snapshot: snapshot),
+            // Deux raisons de n'avoir aucun bandeau : le jeu en cours ne
+            // marque pas de points (Simon), ou aucune partie ne tourne. Dans
+            // les deux cas un tableau de zéros devant la salle serait faux.
+            if (running && gameHasScores(snapshot.gameMode)) ...[
+              const SizedBox(height: 4, child: ColoredBox(color: BSColors.text)),
+              _Scoreboard(
+                snapshot: snapshot,
+                scores: layout == GameLayout.manches ? snapshot.gameScores : snapshot.scores,
+              ),
+            ],
           ],
         ),
+      ),
+    );
+  }
+
+  String _progressLabel(GameLayout layout) => switch (layout) {
+        GameLayout.quiz => questionProgressLabel(snapshot.questionsAsked, snapshot.qcountValue),
+        GameLayout.manches => roundProgressLabel(
+            snapshot.gameRound,
+            snapshot.gameTotalRounds,
+            gameMode: snapshot.gameMode,
+          ),
+        // Le niveau de Simon est le sujet de l'écran, pas une métadonnée de
+        // coin : il est affiché en grand au centre.
+        GameLayout.simon => '',
+      };
+}
+
+// Image choisie par l'opérateur (voir EventLogo). Un fichier disparu depuis
+// le choix ne doit pas casser l'écran public en pleine soirée : on n'affiche
+// simplement rien.
+class _EventLogoImage extends StatelessWidget {
+  const _EventLogoImage({required this.path});
+  final String path;
+
+  @override
+  Widget build(BuildContext context) {
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxHeight: 64, maxWidth: 320),
+      child: Image.file(
+        File(path),
+        fit: BoxFit.contain,
+        errorBuilder: (_, _, _) => const SizedBox.shrink(),
       ),
     );
   }
@@ -102,11 +170,16 @@ class _CenterZone extends StatelessWidget {
       QuestionFlowState.buzzed => _BuzzedZone(snapshot: snapshot),
       QuestionFlowState.scored => _ScoredZone(snapshot: snapshot),
       QuestionFlowState.revealed => _RevealedZone(snapshot: snapshot),
-      QuestionFlowState.none => Text(
-          "En attente d'une question.",
-          style: BSType.body(size: 20, color: BSColors.neutral600),
-          textAlign: TextAlign.center,
-        ),
+      // Aucun jeu choisi : rien n'est en attente, donc on n'annonce rien.
+      // L'écran garde son logo et son tableau des scores, ce qui est un
+      // état d'accueil convenable devant la salle.
+      QuestionFlowState.none => gameModeName(snapshot.displayGameMode).isEmpty
+          ? const SizedBox.shrink()
+          : Text(
+              "En attente d'une question.",
+              style: BSType.body(size: 20, color: BSColors.neutral600),
+              textAlign: TextAlign.center,
+            ),
     };
   }
 }
@@ -227,9 +300,93 @@ class _RevealedZone extends StatelessWidget {
   }
 }
 
-class _Scoreboard extends StatelessWidget {
-  const _Scoreboard({required this.snapshot});
+// Jeux à manches (Réflexe, Chrono aveugle, Ne buzze pas, Duel) : pas de
+// question à afficher, donc le centre porte la manche en cours, puis le
+// résultat une fois la partie terminée.
+class _MancheZone extends StatelessWidget {
+  const _MancheZone({required this.snapshot});
   final PopoutSnapshot snapshot;
+
+  @override
+  Widget build(BuildContext context) {
+    if (snapshot.gameFinished) {
+      final winner = snapshot.gameWinner;
+      if (winner != null && winner >= 0 && winner < kBuzzerColors.length) {
+        return FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            '${snapshot.teamName(winner).toUpperCase()} GAGNE',
+            maxLines: 1,
+            style: BSType.heroDigitPopout(size: 110, color: kBuzzerColors[winner].fill),
+          ),
+        );
+      }
+      return Text(
+        snapshot.gameTie ? 'ÉGALITÉ' : 'AUCUN VAINQUEUR',
+        style: BSType.heroDigitPopout(size: 92, color: BSColors.text),
+        textAlign: TextAlign.center,
+      );
+    }
+
+    final label = roundProgressLabel(
+      snapshot.gameRound,
+      snapshot.gameTotalRounds,
+      gameMode: snapshot.gameMode,
+    );
+    if (label.isEmpty) return const SizedBox.shrink();
+    return FittedBox(
+      fit: BoxFit.scaleDown,
+      child: Text(
+        label.toUpperCase(),
+        maxLines: 1,
+        style: BSType.heroDigitPopout(size: 92, color: BSColors.text),
+      ),
+    );
+  }
+}
+
+// Simon : le cas qui a motivé toute cette passe. Jeu collaboratif, aucun
+// point n'est marqué, donc rien à mettre dans un tableau des scores (il est
+// masqué en amont) — ce qui compte est le niveau, seul, en grand.
+class _SimonZone extends StatelessWidget {
+  const _SimonZone({required this.snapshot});
+  final PopoutSnapshot snapshot;
+
+  @override
+  Widget build(BuildContext context) {
+    final done = snapshot.simonLevel;
+    if (done == null) return const SizedBox.shrink();
+    // [simonLevel] compte les niveaux RÉUSSIS : celui qui se joue est donc
+    // le suivant, comme sur l'écran du buzzer ("SIMON - Niveau N").
+    final shown = snapshot.gameFinished ? done : done + 1;
+    final length = snapshot.simonLength ?? 0;
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          snapshot.gameFinished ? 'NIVEAU ATTEINT' : 'NIVEAU',
+          style: BSType.popoutHeaderMeta(color: BSColors.neutral600),
+        ),
+        const SizedBox(height: BSSpace.s2),
+        Text('$shown', style: BSType.heroDigitPopout(size: 220, color: BSColors.accent)),
+        if (!snapshot.gameFinished && length > 0) ...[
+          const SizedBox(height: BSSpace.s4),
+          Text(
+            '${snapshot.simonEntered ?? 0} / $length',
+            style: BSType.body(size: 40, color: BSColors.neutral700),
+          ),
+        ],
+      ],
+    );
+  }
+}
+
+class _Scoreboard extends StatelessWidget {
+  const _Scoreboard({required this.snapshot, required this.scores});
+  final PopoutSnapshot snapshot;
+  // Ceux du quiz ou ceux du jeu en cours, selon la mise en page : sans ça,
+  // un Réflexe affichait les points du quiz précédent.
+  final List<int> scores;
 
   @override
   Widget build(BuildContext context) {
@@ -275,7 +432,7 @@ class _Scoreboard extends StatelessWidget {
                               ),
                             ),
                             Text(
-                              present && i < snapshot.scores.length ? '${snapshot.scores[i]}' : '',
+                              present && i < scores.length ? '${scores[i]}' : '',
                               style: BSType.scorePopout(),
                             ),
                           ],

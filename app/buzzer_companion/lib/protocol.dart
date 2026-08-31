@@ -124,6 +124,74 @@ bool isAtConfigurationMenu(int? phase) => phase != null && phase == _kPhaseConfi
 // le bouton "Lancer le chrono"/l'attente CHRONO_START que pour ceux-ci.
 bool usesChrono(int? gameMode) => gameMode == 2 || gameMode == 3 || gameMode == 4;
 
+// Trois familles d'écrans, parce que les onze jeux n'ont pas la même matière
+// à montrer. Sans cette distinction, l'écran public affichait le tableau des
+// scores du QUIZ pendant un Réflexe ou un Simon : périmé au mieux, faux au
+// pire, puisque ces jeux tiennent leurs propres scores (voir GSCORE) ou n'en
+// ont aucun.
+//
+//   quiz    (0-4)   question, réponse, scores du quiz, chrono
+//   manches (7-10)  scores propres au jeu + « Manche X sur Y »
+//   simon   (5-6)   aucun score : le niveau atteint, seul
+enum GameLayout { quiz, manches, simon }
+
+GameLayout layoutFor(int? gameMode) {
+  if (gameMode == 5 || gameMode == 6) return GameLayout.simon;
+  if (gameMode != null && gameMode >= 7 && gameMode <= 10) return GameLayout.manches;
+  return GameLayout.quiz;
+}
+
+// Est-ce que CE jeu marque des points ? Répondu jeu par jeu, pas déduit
+// d'un défaut : Simon et Simon inverse sont collaboratifs et n'en ont
+// aucun, et le prochain jeu ajouté devra répondre à la question plutôt que
+// d'hériter d'un tableau des scores qu'il ne remplira jamais.
+bool gameHasScores(int? gameMode) => gameMode != null && gameMode != 5 && gameMode != 6;
+
+// Phases de menu, de configuration et de repos : rien ne se joue, donc
+// l'écran public n'a aucun score à montrer — même pour un jeu qui en a. Sans
+// cette distinction, la salle voyait un tableau de zéros avant même le
+// début de la soirée.
+final Set<int> _kIdlePhases = {
+  kPhaseNames.indexOf('BOOT'),
+  kPhaseNames.indexOf('CONFIGURATION'),
+  kPhaseNames.indexOf('GAME_CHOICE'),
+  kPhaseNames.indexOf('SHUFFLE_BUZZER'),
+  kPhaseNames.indexOf('BUZZER_CONFIG'),
+  kPhaseNames.indexOf('RESET'),
+  kPhaseNames.indexOf('VOLUME'),
+  kPhaseNames.indexOf('CHRONO'),
+  kPhaseNames.indexOf('QUIZ_CATS'),
+  kPhaseNames.indexOf('QUIZ_COUNT'),
+  kPhaseNames.indexOf('ROUNDS_SETUP'),
+  kPhaseNames.indexOf('SOUND_SETUP'),
+  kPhaseNames.indexOf('LED_TEST'),
+};
+
+// END_CONFIRM et END_GAME en font partie : la partie n'est pas finie tant
+// que la salle n'a pas vu le résultat.
+bool isGameRunning(int? phase) => phase != null && !_kIdlePhases.contains(phase);
+
+// Écrans de fin des jeux non-quiz (un par jeu côté firmware) : c'est là que
+// le gagnant annoncé par GOVER a un sens à l'écran.
+final Set<int> _kGameResultPhases = {
+  kPhaseNames.indexOf('SIMON_OVER'),
+  kPhaseNames.indexOf('REFLEX_OVER'),
+  kPhaseNames.indexOf('BLIND_OVER'),
+  kPhaseNames.indexOf('SOUND_OVER'),
+  kPhaseNames.indexOf('DUEL_OVER'),
+};
+
+bool isGameResultPhase(int? phase) => phase != null && _kGameResultPhases.contains(phase);
+
+// « Manche 2 sur 5 » (« Son 2 sur 12 » pour Ne buzze pas, où les manches
+// sont des sons). Chaîne vide tant qu'aucune manche n'a commencé.
+String roundProgressLabel(int? round, int? total, {int? gameMode}) {
+  if (round == null || round <= 0) return '';
+  final noun = gameMode == 9 ? 'Son' : 'Manche';
+  if (total == null || total <= 0) return '$noun $round';
+  return '$noun $round sur $total';
+}
+
 // "Question 3" (nombre ouvert) ou "Question 3 sur 20" (nombre fixe) —
 // chaîne vide tant qu'aucune question n'a encore été posée.
 String questionProgressLabel(int questionsAsked, int? qcountValue) {
@@ -194,6 +262,26 @@ class GameState extends ChangeNotifier {
   int? qcatMask;             // bitmask des 10 categories cochees
   int? qcountValue;          // nombre de questions (0 = Ouvert)
 
+  // Jeux non-quiz : chacun tient SES propres scores cote firmware, sans
+  // rapport avec ceux du quiz (voir BleLink::sendGameScores). Les melanger
+  // afficherait devant la salle des points qui n'ont pas ete marques dans
+  // le jeu en cours.
+  List<int> gameScores = [0, 0, 0, 0];
+  int? gameRound;
+  int? gameTotalRounds;
+  int? gameWinner;           // null = personne (egalite, abandon)
+  bool gameTie = false;
+  // Distingue "abandon" (GOVER|-1|0) de "partie en cours" : sans ce
+  // drapeau, les deux se ressemblent (aucun gagnant, aucune egalite) et
+  // l'ecran public resterait sur la manche courante apres un abandon.
+  bool gameFinished = false;
+
+  // Simon (message SIMON) : pas de score du tout, juste le niveau atteint et
+  // l'avancement dans la sequence en cours.
+  int? simonLevel;
+  int? simonEntered;
+  int? simonLength;
+
   // Etat du lecteur audio du buzzer (message AUDIO, envoye a la prise de
   // controle) : permet de distinguer "silencieux parce que le volume est
   // bas" de "silencieux parce que le DFPlayer n'a pas ete detecte au
@@ -213,6 +301,32 @@ class GameState extends ChangeNotifier {
   // retour a INTRO). Avec qcountValue, permet d'afficher "Question N" ou
   // "Question N sur M".
   int questionsAsked = 0;
+
+  // Le Mega garde toujours un jeu en mémoire (le dernier choisi, conservé
+  // en EEPROM) et l'annonce dès la connexion. L'afficher au démarrage
+  // laisserait croire qu'un jeu est prêt alors que l'opérateur n'a rien
+  // choisi. On ne l'affiche donc qu'une fois choisi dans cette session —
+  // ou si une partie est déjà en cours, cas d'une app relancée en pleine
+  // soirée, où masquer le jeu serait cette fois trompeur.
+  bool _gameChosen = false;
+  void markGameChosen() {
+    _gameChosen = true;
+    notifyListeners();
+  }
+
+  // Condition volontairement affirmative : une première version disait
+  // « afficher sauf si on est au menu », ce qui affichait le jeu au
+  // démarrage tant qu'aucun message d'état n'était arrivé — la phase était
+  // alors inconnue, donc « pas au menu » était vrai. On exige une preuve
+  // positive qu'une partie tourne.
+  //
+  // Cette preuve est la phase, pas la présence d'une question : les cinq
+  // jeux non-quiz (Simon, Réflexe...) n'en posent jamais, donc une app
+  // relancée en pleine partie de Simon se croyait au repos.
+  int? get displayGameMode {
+    if (_gameChosen) return gameMode;
+    return isGameRunning(phase) ? gameMode : null;
+  }
 
   bool get answerRevealed => phase == _kPhaseAnswerReveal || phase == _kPhaseShowScores;
 
@@ -393,6 +507,57 @@ class GameState extends ChangeNotifier {
           if (parts.length == 2) {
             qcatMask = int.tryParse(parts[1]);
             handled = qcatMask != null;
+          }
+          break;
+        case 'GSCORE':
+          final parsed = _parseInts(parts.sublist(1));
+          if (parsed != null && parsed.length == 4) {
+            gameScores = parsed;
+            handled = true;
+          }
+          break;
+        case 'GROUND':
+          if (parts.length == 3) {
+            final round = int.tryParse(parts[1]);
+            final total = int.tryParse(parts[2]);
+            if (round != null && total != null) {
+              gameRound = round;
+              gameTotalRounds = total;
+              // Manche 0 = le reset() du jeu : une nouvelle partie commence,
+              // donc le resultat de la precedente ne doit plus rester
+              // affiche.
+              if (round == 0) {
+                gameWinner = null;
+                gameTie = false;
+                gameFinished = false;
+              }
+              handled = true;
+            }
+          }
+          break;
+        case 'GOVER':
+          if (parts.length == 3) {
+            final winner = int.tryParse(parts[1]);
+            final tie = int.tryParse(parts[2]);
+            if (winner != null && tie != null) {
+              gameWinner = winner >= 0 ? winner : null;
+              gameTie = tie != 0;
+              gameFinished = true;
+              handled = true;
+            }
+          }
+          break;
+        case 'SIMON':
+          if (parts.length == 4) {
+            final level = int.tryParse(parts[1]);
+            final entered = int.tryParse(parts[2]);
+            final length = int.tryParse(parts[3]);
+            if (level != null && entered != null && length != null) {
+              simonLevel = level;
+              simonEntered = entered;
+              simonLength = length;
+              handled = true;
+            }
           }
           break;
         case 'QCOUNT_CFG':

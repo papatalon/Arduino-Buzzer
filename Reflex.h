@@ -5,6 +5,7 @@
 #include "PhaseMode.h"
 #include "Mp3.h"
 #include "Buzzer.h"
+#include "BleLink.h"
 
 // Le nombre de manches d'une partie se regle dans le menu (ligne "Reflexe" de
 // la liste des jeux) et vit dans Buzzer, avec les autres reglages persistants :
@@ -81,6 +82,7 @@ private:
   LcdDisplay& display = LcdDisplay::shared();
   Mp3& mp3 = Mp3::shared();
   Buzzer& buzzer = Buzzer::shared();
+  BleLink& ble = BleLink::shared();
 };
 
 #endif

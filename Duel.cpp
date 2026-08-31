@@ -30,6 +30,13 @@ void Duel::reset() {
   winnerMs = 0;
   falseStart = false;
   falseStarter = -1;
+
+  // Scores propres au jeu, distincts de ceux du quiz : voir
+  // BleLink::sendGameScores. Les deux duellistes se deduisent cote app des
+  // buzzers presents (findPlayers() ne fait pas autre chose), donc aucun
+  // message supplementaire n'est necessaire pour les nommer.
+  ble.sendGameScores(scores);
+  ble.sendGameRound(0, totalRounds);
 }
 
 // "Rouge 2   Vert 1" : toujours les deux mêmes duellistes, pas besoin
@@ -57,6 +64,8 @@ void Duel::setArm() {
   display.setText(String(buzzer.colorName(playerA)) + " vs " + buzzer.colorName(playerB), 1);
   display.setText("Le son va sonner...", 2);
   display.setText("C: terminer", 3);
+
+  ble.sendGameRound(round, totalRounds);
 }
 
 PhaseMode Duel::arm(char pressedKey) {
@@ -163,6 +172,8 @@ void Duel::setResult() {
 
   display.setText(scoreLine(), 2);
   display.setText(round >= totalRounds ? "#: resultats" : "#: manche suivante", 3);
+
+  ble.sendGameScores(scores);
 }
 
 PhaseMode Duel::result(char pressedKey) {
@@ -194,6 +205,11 @@ void Duel::setGameOver() {
 
   display.setText(scoreLine(), 1);
   display.setText("#: rejouer  *: menu", 3);
+
+  ble.sendGameScores(scores);
+  ble.sendGameOver(
+      (aborted || tie) ? -1 : ((scores[playerA] > scores[playerB]) ? playerA : playerB),
+      tie && !aborted);
 
   if (!aborted && !tie) {
     mp3.playGoodAnswer();

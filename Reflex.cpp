@@ -13,6 +13,12 @@ void Reflex::reset() {
   newRecord = false;
   winner = -1;
   winnerMs = 0;
+
+  // Les scores du Reflexe n'ont rien a voir avec ceux du quiz : sans cette
+  // remise a zero annoncee, l'app garderait a l'ecran ceux de la partie
+  // precedente.
+  ble.sendGameScores(scores);
+  ble.sendGameRound(0, totalRounds);
 }
 
 // Buzzers presents qui n'ont pas fait de faux depart dans la manche en cours.
@@ -72,6 +78,8 @@ void Reflex::setArm() {
   display.setText(String("REFLEXE Manche ") + round + "/" + totalRounds, 0);
   display.setText("Attendez le signal..", 1);
   display.setText("C: terminer", 3);
+
+  ble.sendGameRound(round, totalRounds);
 }
 
 PhaseMode Reflex::arm(char pressedKey) {
@@ -174,6 +182,8 @@ void Reflex::setResult() {
 
   display.setText(scoreLine(), 2);
   display.setText(round >= totalRounds ? "#: resultats" : "#: manche suivante", 3);
+
+  ble.sendGameScores(scores);
 }
 
 PhaseMode Reflex::result(char pressedKey) {
@@ -245,6 +255,10 @@ void Reflex::setGameOver() {
   }
 
   display.setText("#: rejouer  *: menu", 3);
+
+  const bool decided = !aborted && any && maxScore > 0;
+  ble.sendGameScores(scores);
+  ble.sendGameOver(decided && leaders == 1 ? who : -1, decided && leaders > 1);
 
   if (!aborted && maxScore > 0) {
     mp3.playGoodAnswer();

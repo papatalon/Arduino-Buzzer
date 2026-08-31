@@ -1,7 +1,10 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:universal_ble/universal_ble.dart';
 
 import '../../ble_link_service.dart';
+import '../../event_logo.dart';
 import '../../protocol.dart';
 import '../phosphor_duotone.dart';
 import '../tokens.dart';
@@ -14,9 +17,10 @@ import '../tokens.dart';
 // la colonne centrale — le rail droit lui-même reste le châssis invariant
 // validé à l'étape 1 (tableau des buzzers + écran public).
 class DeviceScreen extends StatelessWidget {
-  const DeviceScreen({super.key, required this.ble, required this.game});
+  const DeviceScreen({super.key, required this.ble, required this.game, required this.logo});
   final BleLinkService ble;
   final GameState game;
+  final EventLogo logo;
 
   @override
   Widget build(BuildContext context) {
@@ -67,6 +71,12 @@ class DeviceScreen extends StatelessWidget {
             Text('DIAGNOSTIC DE LIAISON', style: BSType.sectionKicker()),
             const SizedBox(height: BSSpace.s3),
             _Diagnostics(ble: ble, game: game),
+            const SizedBox(height: BSSpace.s6),
+            Container(height: 1, color: BSColors.divider),
+            const SizedBox(height: BSSpace.s4),
+            Text('LOGO DE LA SOIRÉE', style: BSType.sectionKicker()),
+            const SizedBox(height: BSSpace.s3),
+            _LogoSetting(logo: logo),
           ],
         ),
       ),
@@ -276,6 +286,74 @@ class _Stat extends StatelessWidget {
         Text(label, style: BSType.body(size: 13, color: BSColors.neutral600)),
         Text(value, style: BSType.scoreConsole(color: color ?? BSColors.text)),
       ],
+    );
+  }
+}
+
+// Import du logo affiché en haut de l'écran public. Réglage général de la
+// soirée, pas propre à un buzzer : il vit donc ici et non sur l'écran
+// Buzzers. Le bouton « Retirer » est aussi important que le choix lui-même
+// (demande explicite du client) : une image mise pour une soirée doit
+// pouvoir partir aussi vite qu'elle est arrivée.
+class _LogoSetting extends StatelessWidget {
+  const _LogoSetting({required this.logo});
+  final EventLogo logo;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: logo,
+      builder: (context, _) {
+        final path = logo.path;
+        return SizedBox(
+          width: 620,
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              if (path != null) ...[
+                ConstrainedBox(
+                  constraints: const BoxConstraints(maxHeight: 56, maxWidth: 180),
+                  child: Image.file(
+                    File(path),
+                    fit: BoxFit.contain,
+                    errorBuilder: (_, _, _) => Text(
+                      'Image introuvable',
+                      style: BSType.body(size: 14, color: BSColors.accent2_800),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: BSSpace.s3),
+              ],
+              Expanded(
+                child: Text(
+                  path ?? "Aucune image choisie. L'écran public n'affiche alors aucun emplacement vide.",
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: BSType.body(size: 14, color: BSColors.neutral600),
+                ),
+              ),
+              const SizedBox(width: BSSpace.s3),
+              OutlinedButton(
+                onPressed: logo.pick,
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: BSColors.text,
+                  side: const BorderSide(color: BSColors.divider),
+                  shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                ),
+                child: Text(path == null ? 'Choisir une image' : 'Changer', style: BSType.body(size: 14)),
+              ),
+              if (path != null) ...[
+                const SizedBox(width: BSSpace.s2),
+                TextButton(
+                  onPressed: logo.clear,
+                  style: TextButton.styleFrom(foregroundColor: BSColors.accent2_800),
+                  child: const Text('Retirer'),
+                ),
+              ],
+            ],
+          ),
+        );
+      },
     );
   }
 }

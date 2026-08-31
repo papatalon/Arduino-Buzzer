@@ -34,6 +34,11 @@ void BlindTimer::reset() {
   bestGapMs = BLIND_NO_RECORD;
   newRecord = false;
   winner = -1;
+
+  // Scores propres au jeu, distincts de ceux du quiz : voir
+  // BleLink::sendGameScores.
+  ble.sendGameScores(scores);
+  ble.sendGameRound(0, totalRounds);
 }
 
 bool BlindTimer::allBuzzed() {
@@ -117,6 +122,8 @@ void BlindTimer::setAnnounce() {
   display.setText(String("CHRONO AVEUGLE ") + round + "/" + totalRounds, 0);
   display.setText(String("Cible : ") + (targetMs / 1000) + " secondes", 1);
   display.setText("#: depart  C: fin", 3);
+
+  ble.sendGameRound(round, totalRounds);
 }
 
 PhaseMode BlindTimer::announce(char pressedKey) {
@@ -218,6 +225,8 @@ void BlindTimer::setResult() {
 
   showTimes();
   display.setText(scoreLine() + "  #", 3);
+
+  ble.sendGameScores(scores);
 }
 
 PhaseMode BlindTimer::result(char pressedKey) {
@@ -288,6 +297,10 @@ void BlindTimer::setGameOver() {
   }
 
   display.setText("#: rejouer  *: menu", 3);
+
+  const bool decided = !aborted && any && maxScore > 0;
+  ble.sendGameScores(scores);
+  ble.sendGameOver(decided && leaders == 1 ? who : -1, decided && leaders > 1);
 
   if (!aborted && maxScore > 0) {
     mp3.playGoodAnswer();

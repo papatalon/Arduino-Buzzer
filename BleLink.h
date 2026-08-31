@@ -22,6 +22,17 @@ class BleLink {
     void init();
     void send(const String& message);
 
+    // Telemetrie commune aux jeux non-quiz (Reflexe, Chrono aveugle, Duel,
+    // Ne buzze pas). Chacun garde SES propres scores, distincts de ceux du
+    // quiz (Buzzer::scores) : sans ces messages, l'app affichait les scores
+    // du quiz pendant un jeu qui n'y touche pas.
+    //   GSCORE|s0|s1|s2|s3   scores propres au jeu
+    //   GROUND|<manche>|<total>
+    //   GOVER|<gagnant>|<egalite>   gagnant -1 = aucun (personne ou abandon)
+    void sendGameScores(const int scores[4]);
+    void sendGameRound(int round, int total);
+    void sendGameOver(int winner, bool tie);
+
     // A appeler une fois par tour de loop() : draine Serial2 et renvoie la
     // touche demandee par l'app si une ligne "KEY|X" complete est arrivee,
     // sinon 0 (equivalent a NO_KEY). Reconnait aussi au passage les lignes

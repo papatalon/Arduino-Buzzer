@@ -16,6 +16,18 @@ void BleLink::send(const String& message) {
   Serial2.println(message);
 }
 
+void BleLink::sendGameScores(const int scores[4]) {
+  send(String("GSCORE|") + scores[0] + "|" + scores[1] + "|" + scores[2] + "|" + scores[3]);
+}
+
+void BleLink::sendGameRound(int round, int total) {
+  send(String("GROUND|") + round + "|" + total);
+}
+
+void BleLink::sendGameOver(int winner, bool tie) {
+  send(String("GOVER|") + winner + "|" + (tie ? 1 : 0));
+}
+
 char BleLink::pollKey() {
   char result = 0;
   while (Serial2.available()) {

@@ -6,6 +6,12 @@ void Simon::reset() {
   overTitle = "";
   failedBuzzer = -1;
   reverse = (buzzer.getGameMode() == GAME_SIMON_REVERSE);
+  inputIndex = 0;
+  sendTelemetry();
+  // Simon n'a ni score ni manche, mais "GROUND|0" reste le signal generique
+  // de nouvelle partie cote app : sans lui, l'ecran public garderait le
+  // "partie terminee" du Simon precedent.
+  ble.sendGameRound(0, 0);
 }
 
 void Simon::showTitle() {
@@ -14,6 +20,14 @@ void Simon::showTitle() {
 
 void Simon::showProgress() {
   display.setText(String("      ") + inputIndex + " / " + length, 2);
+  sendTelemetry();
+}
+
+// Simon est le seul jeu sans score : ce qu'il y a a montrer, c'est le niveau
+// atteint et l'avancement dans la sequence en cours. D'ou un message a lui
+// plutot qu'un GSCORE vide qui ferait afficher un tableau de zeros.
+void Simon::sendTelemetry() {
+  ble.send(String("SIMON|") + level + "|" + inputIndex + "|" + length);
 }
 
 PhaseMode Simon::fail(const char* title) {
@@ -34,12 +48,14 @@ void Simon::setShowSequence() {
   showIndex = 0;
   showLit = false;          // on commence par la pause de lecture (SIMON_START_MS)
   stepStart = millis();
+  inputIndex = 0;           // rien de saisi tant que la demo tourne
 
   buzzer.resetLights();
   display.clear();
   showTitle();
   display.setText("Observez la sequence", 1);
   display.setText("Chacun sa couleur !", 3);
+  sendTelemetry();
 }
 
 PhaseMode Simon::showSequence(char pressedKey) {
@@ -193,6 +209,11 @@ void Simon::setGameOver() {
   display.setText(String("Niveau atteint : ") + level, 1);
   display.setText(comment, 2);
   display.setText("#: rejouer   *: menu", 3);
+  sendTelemetry();
+  // Jeu collaboratif : jamais de gagnant individuel, mais l'app doit savoir
+  // que la partie est finie pour afficher le niveau atteint plutot que le
+  // niveau en cours.
+  ble.sendGameOver(-1, false);
 
   if (level >= SIMON_MAX_LEVEL) {
     mp3.playGoodAnswer();

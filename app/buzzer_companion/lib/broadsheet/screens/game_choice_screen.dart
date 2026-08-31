@@ -54,9 +54,13 @@ class GameChoiceScreen extends StatelessWidget {
               for (var i = 0; i < kGameModeNames.length; i++)
                 _GameCard(
                   index: i,
-                  active: game.gameMode == i,
+                  active: game.displayGameMode == i,
                   onSelect: () {
                     ble.selectGame(i);
+                    // Choix délibéré de l'opérateur : à partir d'ici le jeu
+                    // actif peut être annoncé partout (voir
+                    // GameState.displayGameMode).
+                    game.markGameChosen();
                     onGameSelected();
                   },
                 ),

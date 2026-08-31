@@ -9,6 +9,7 @@ import 'audio/sound_library.dart';
 import 'ble_link_service.dart';
 import 'broadsheet/console_shell.dart';
 import 'broadsheet/tokens.dart';
+import 'event_logo.dart';
 import 'popout/popout_launcher.dart';
 import 'popout/popout_snapshot.dart';
 import 'popout/popout_window.dart';
@@ -55,6 +56,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   final _game = GameState();
   final _popout = PopoutLauncher();
   final _teams = TeamNames();
+  final _logo = EventLogo();
   late final SoundEngine _sound;
   StreamSubscription<SfxEvent>? _sfxSub;
 
@@ -75,6 +77,8 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     _sound.init();
     _teams.load();
     _teams.addListener(_pushSnapshotToPopout);
+    _logo.load();
+    _logo.addListener(_pushSnapshotToPopout);
     _sfxSub = _game.sfxEvents.listen(_handleSfx);
   }
 
@@ -100,7 +104,8 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   }
 
   void _pushSnapshotToPopout() {
-    _popout.pushSnapshot(PopoutSnapshot.fromGameState(_game, teamNames: _teams.all));
+    _popout.pushSnapshot(
+        PopoutSnapshot.fromGameState(_game, teamNames: _teams.all, logoPath: _logo.path));
   }
 
   @override
@@ -110,6 +115,8 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     _ble.dispose();
     _game.removeListener(_pushSnapshotToPopout);
     _teams.removeListener(_pushSnapshotToPopout);
+    _logo.removeListener(_pushSnapshotToPopout);
+    _logo.dispose();
     _teams.dispose();
     _game.dispose();
     _popout.close();
@@ -130,7 +137,14 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
         splashFactory: NoSplash.splashFactory,
         highlightColor: Colors.transparent,
       ),
-      home: ConsoleShell(ble: _ble, game: _game, popout: _popout, sound: _sound, teams: _teams),
+      home: ConsoleShell(
+        ble: _ble,
+        game: _game,
+        popout: _popout,
+        sound: _sound,
+        teams: _teams,
+        logo: _logo,
+      ),
     );
   }
 }

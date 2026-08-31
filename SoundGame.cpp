@@ -14,6 +14,11 @@ void SoundGame::reset() {
   claimed = false;
   learnIndex = -1;
   learnDone = false;
+
+  // Scores propres au jeu, distincts de ceux du quiz : voir
+  // BleLink::sendGameScores.
+  ble.sendGameScores(scores);
+  ble.sendGameRound(0, totalSounds);
 }
 
 String SoundGame::scoreLine() {
@@ -32,6 +37,9 @@ String SoundGame::scoreLine() {
 
 void SoundGame::showProgress() {
   display.setText(String("NE BUZZE PAS  ") + played + "/" + totalSounds, 0);
+  // Ici les "manches" sont des sons : meme forme, meme message que les
+  // autres jeux a manches.
+  ble.sendGameRound(played, totalSounds);
 }
 
 // === Apprentissage des sons ===
@@ -242,6 +250,7 @@ PhaseMode SoundGame::play(char pressedKey) {
   if (now - soundStart >= interval) {
     judgeCurrent();
     display.setText(scoreLine(), 3);
+    ble.sendGameScores(scores);
 
     if (played >= totalSounds) {
       return SOUND_OVER;
@@ -299,6 +308,10 @@ void SoundGame::setGameOver() {
   display.setText(scoreLine(), 1);
   display.setText(String(played) + " sons" + (decoys ? ", leurres" : ""), 2);
   display.setText("#: rejouer  *: menu", 3);
+
+  const bool decided = !aborted && any;
+  ble.sendGameScores(scores);
+  ble.sendGameOver(decided && leaders == 1 ? who : -1, decided && leaders > 1);
 
   if (!aborted && any && leaders == 1) {
     mp3.playGoodAnswer();

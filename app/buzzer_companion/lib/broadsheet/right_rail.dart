@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../event_logo.dart';
 import '../popout/popout_launcher.dart';
 import '../popout/popout_snapshot.dart';
 import '../protocol.dart';
@@ -11,11 +12,18 @@ import 'tokens.dart';
 // l'écran public, actions de partie. Voir design_handoff_buzzer_console
 // /README.md, section "Rail droit (340 px)".
 class RightRail extends StatelessWidget {
-  const RightRail({super.key, required this.game, required this.popout, required this.teams});
+  const RightRail({
+    super.key,
+    required this.game,
+    required this.popout,
+    required this.teams,
+    required this.logo,
+  });
 
   final GameState game;
   final PopoutLauncher popout;
   final TeamNames teams;
+  final EventLogo logo;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +34,7 @@ class RightRail extends StatelessWidget {
         children: [
           _BuzzerTable(game: game, teams: teams),
           const SizedBox(height: BSSpace.s6),
-          _PublicScreenPreview(game: game, popout: popout, teams: teams),
+          _PublicScreenPreview(game: game, popout: popout, teams: teams, logo: logo),
         ],
       ),
     );
@@ -38,6 +46,19 @@ class _BuzzerTable extends StatelessWidget {
   final TeamNames teams;
   final GameState game;
 
+  // Le rail de la console suit la même règle que l'écran public : rien tant
+  // qu'aucune partie ne tourne, les points du jeu en cours ensuite, et rien
+  // du tout pour Simon qui n'en marque pas (voir GameLayout et gameHasScores
+  // dans protocol.dart).
+  int? _scoreFor(int i) {
+    if (!isGameRunning(game.phase) || !gameHasScores(game.gameMode)) return null;
+    return switch (layoutFor(game.gameMode)) {
+      GameLayout.quiz => game.scores[i],
+      GameLayout.manches => i < game.gameScores.length ? game.gameScores[i] : null,
+      GameLayout.simon => null,
+    };
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -48,7 +69,7 @@ class _BuzzerTable extends StatelessWidget {
           _BuzzerRow(
             color: kBuzzerColors[i],
             present: game.present[i],
-            score: game.scores[i],
+            score: _scoreFor(i),
             soundIndex: game.buzzerSound[i],
             teams: teams,
             index: i,
@@ -71,7 +92,7 @@ class _BuzzerRow extends StatelessWidget {
 
   final BuzzerColor color;
   final bool present;
-  final int score;
+  final int? score;
   final int? soundIndex;
   final TeamNames teams;
   final int index;
@@ -102,7 +123,7 @@ class _BuzzerRow extends StatelessWidget {
               ],
             ),
           ),
-          Text(present ? '$score' : '', style: BSType.scoreConsole()),
+          Text(present && score != null ? '$score' : '', style: BSType.scoreConsole()),
         ],
       ),
     );
@@ -110,10 +131,16 @@ class _BuzzerRow extends StatelessWidget {
 }
 
 class _PublicScreenPreview extends StatelessWidget {
-  const _PublicScreenPreview({required this.game, required this.popout, required this.teams});
+  const _PublicScreenPreview({
+    required this.game,
+    required this.popout,
+    required this.teams,
+    required this.logo,
+  });
   final GameState game;
   final PopoutLauncher popout;
   final TeamNames teams;
+  final EventLogo logo;
 
   @override
   Widget build(BuildContext context) {
@@ -131,7 +158,11 @@ class _PublicScreenPreview extends StatelessWidget {
               child: OutlinedButton.icon(
                 onPressed: active
                     ? popout.close
-                    : () => popout.open(PopoutSnapshot.fromGameState(game, teamNames: teams.all)),
+                    : () => popout.open(PopoutSnapshot.fromGameState(
+                        game,
+                        teamNames: teams.all,
+                        logoPath: logo.path,
+                      )),
                 style: OutlinedButton.styleFrom(
                   foregroundColor: active ? BSColors.accent700 : BSColors.text,
                   backgroundColor: active ? BSColors.accent100 : null,

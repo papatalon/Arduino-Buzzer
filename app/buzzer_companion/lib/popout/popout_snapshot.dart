@@ -14,6 +14,8 @@ class PopoutSnapshot {
     required this.present,
     required this.flowState,
     this.gameMode,
+    this.displayGameMode,
+    this.phase,
     this.lastBuzz,
     this.questionCategory,
     this.questionText,
@@ -21,6 +23,16 @@ class PopoutSnapshot {
     this.questionsAsked = 0,
     this.qcountValue,
     this.teamNames = const ['', '', '', ''],
+    this.gameScores = const [0, 0, 0, 0],
+    this.gameRound,
+    this.gameTotalRounds,
+    this.gameWinner,
+    this.gameTie = false,
+    this.gameFinished = false,
+    this.simonLevel,
+    this.simonEntered,
+    this.simonLength,
+    this.logoPath,
   });
 
   static const empty = PopoutSnapshot(
@@ -31,7 +43,13 @@ class PopoutSnapshot {
 
   final List<int> scores;
   final List<bool> present;
+  // [gameMode] sert à la logique (y a-t-il un chrono ?) et reste donc
+  // toujours renseigné ; [displayGameMode] est ce qu'on montre au public,
+  // vide tant qu'aucun jeu n'a été choisi (voir GameState).
   final int? gameMode;
+  final int? displayGameMode;
+  // Phase courante : dit si une partie tourne vraiment (isGameRunning).
+  final int? phase;
   final int? lastBuzz;
   final QuestionFlowState flowState;
   final String? questionCategory;
@@ -45,6 +63,25 @@ class PopoutSnapshot {
   // entrée vide veut dire « utiliser la couleur ».
   final List<String> teamNames;
 
+  // Jeux non-quiz : scores propres au jeu, progression des manches, et
+  // résultat final. Distincts de [scores], qui reste celui du quiz (voir
+  // GameLayout dans protocol.dart).
+  final List<int> gameScores;
+  final int? gameRound;
+  final int? gameTotalRounds;
+  final int? gameWinner;
+  final bool gameTie;
+  final bool gameFinished;
+
+  // Simon : aucun score, seulement le niveau atteint.
+  final int? simonLevel;
+  final int? simonEntered;
+  final int? simonLength;
+
+  // Chemin du logo de la soirée sur le disque (les deux fenêtres tournent
+  // sur la même machine), null si l'opérateur n'en a pas choisi.
+  final String? logoPath;
+
   // Nom à afficher pour un buzzer, avec repli sur la couleur.
   String teamName(int index) {
     if (index < 0 || index >= kBuzzerColors.length) return '';
@@ -55,7 +92,11 @@ class PopoutSnapshot {
   // teamNames est obligatoire à dessein : un appel qui l'oubliait produisait
   // un écran public muet sur les noms, sans erreur ni avertissement. Le
   // compilateur attrape désormais le cas.
-  factory PopoutSnapshot.fromGameState(GameState game, {required List<String> teamNames}) {
+  factory PopoutSnapshot.fromGameState(
+    GameState game, {
+    required List<String> teamNames,
+    required String? logoPath,
+  }) {
     // La question elle-même n'est pas listée comme sensible dans le tableau
     // de confidentialité du design, mais le client a précisé que sur le
     // pop-out, elle ne doit apparaître qu'une fois le chrono lancé — pas
@@ -71,6 +112,8 @@ class PopoutSnapshot {
       scores: game.scores,
       present: game.present,
       gameMode: game.gameMode,
+      displayGameMode: game.displayGameMode,
+      phase: game.phase,
       lastBuzz: game.lastBuzz,
       flowState: game.questionFlowState,
       questionCategory: showQuestion ? game.questionCategory : null,
@@ -79,6 +122,16 @@ class PopoutSnapshot {
       questionsAsked: game.questionsAsked,
       qcountValue: game.qcountValue,
       teamNames: teamNames,
+      gameScores: game.gameScores,
+      gameRound: game.gameRound,
+      gameTotalRounds: game.gameTotalRounds,
+      gameWinner: game.gameWinner,
+      gameTie: game.gameTie,
+      gameFinished: game.gameFinished,
+      simonLevel: game.simonLevel,
+      simonEntered: game.simonEntered,
+      simonLength: game.simonLength,
+      logoPath: logoPath,
     );
   }
 
@@ -88,6 +141,8 @@ class PopoutSnapshot {
       scores: (json['scores'] as List).cast<int>(),
       present: (json['present'] as List).cast<bool>(),
       gameMode: json['gameMode'] as int?,
+      displayGameMode: json['displayGameMode'] as int?,
+      phase: json['phase'] as int?,
       lastBuzz: json['lastBuzz'] as int?,
       flowState: QuestionFlowState.values.byName(json['flowState'] as String? ?? 'none'),
       questionCategory: json['questionCategory'] as String?,
@@ -96,6 +151,16 @@ class PopoutSnapshot {
       questionsAsked: json['questionsAsked'] as int? ?? 0,
       qcountValue: json['qcountValue'] as int?,
       teamNames: (json['teamNames'] as List?)?.cast<String>() ?? const ['', '', '', ''],
+      gameScores: (json['gameScores'] as List?)?.cast<int>() ?? const [0, 0, 0, 0],
+      gameRound: json['gameRound'] as int?,
+      gameTotalRounds: json['gameTotalRounds'] as int?,
+      gameWinner: json['gameWinner'] as int?,
+      gameTie: json['gameTie'] as bool? ?? false,
+      gameFinished: json['gameFinished'] as bool? ?? false,
+      simonLevel: json['simonLevel'] as int?,
+      simonEntered: json['simonEntered'] as int?,
+      simonLength: json['simonLength'] as int?,
+      logoPath: json['logoPath'] as String?,
     );
   }
 
@@ -103,6 +168,8 @@ class PopoutSnapshot {
         'scores': scores,
         'present': present,
         'gameMode': gameMode,
+        'displayGameMode': displayGameMode,
+        'phase': phase,
         'lastBuzz': lastBuzz,
         'flowState': flowState.name,
         'questionCategory': questionCategory,
@@ -111,5 +178,15 @@ class PopoutSnapshot {
         'questionsAsked': questionsAsked,
         'qcountValue': qcountValue,
         'teamNames': teamNames,
+        'gameScores': gameScores,
+        'gameRound': gameRound,
+        'gameTotalRounds': gameTotalRounds,
+        'gameWinner': gameWinner,
+        'gameTie': gameTie,
+        'gameFinished': gameFinished,
+        'simonLevel': simonLevel,
+        'simonEntered': simonEntered,
+        'simonLength': simonLength,
+        'logoPath': logoPath,
       });
 }
