@@ -57,6 +57,19 @@ void setup() {
   buzzer.showBootScreen();
   mp3.init(bootTick);
 
+  // Lecteur audio introuvable : on le dit clairement une fois au demarrage
+  // (le repere "X" en haut a droite restera ensuite, mais un seul
+  // caractere serait cryptique si on ne l'a jamais vu explique).
+  if (mp3.isSimulation()) {
+    display.clear();
+    display.setText("PAS DE LECTEUR AUDIO", 0);
+    display.setText("Verifie le DFPlayer", 1);
+    display.setText("et la carte SD.", 2);
+    display.setText("Repere : X en haut", 3);
+    delay(3000);
+  }
+  display.setAudioWarning(mp3.isSimulation());
+
   // 2. La chanson d'intro démarre : l'écran passe à l'égaliseur (mode BOOT).
   //    Le menu s'affichera à la fin de la musique (voir Buzzer::boot).
   mp3.playInit();         // son d'intro au démarrage (dossier 01)
@@ -77,6 +90,23 @@ void loop() {
   if (inControl && !wasInControl) {
     BleLink::shared().send("STATE|" + String((int)currentMode));
     BleLink::shared().send("GAME|" + String((int)buzzer.getGameMode()));
+    // Etat du lecteur audio : sans ca, impossible de distinguer "pas de
+    // son parce que le volume est bas" de "pas de son parce que le
+    // DFPlayer n'a pas ete detecte au demarrage" (mode simulation, voir
+    // Mp3::isSimulation). Envoye ici plutot qu'au boot : au demarrage,
+    // aucune app n'est encore connectee pour le recevoir.
+    BleLink::shared().send(String("AUDIO|") + (mp3.isSimulation() ? "0" : "1")
+                           + "|" + String(mp3.getVolume()));
+    // Question en cours : QUESTION n'est envoye qu'au tirage, donc une app
+    // qui se (re)connecte en pleine partie afficherait une question vide.
+    // Type distinct (QSYNC) et non QUESTION : cote app, QUESTION compte une
+    // question de plus et efface le dernier buzz - ce qui fausserait le
+    // compteur et l'etat "untel s'est trompe" a chaque reconnexion.
+    QuestionBank& bank = QuestionBank::shared();
+    if (bank.isActive() && bank.questionText().length() > 0) {
+      BleLink::shared().send("QSYNC|" + bank.questionCategory() + "|"
+                             + bank.questionText() + "|" + bank.answerText());
+    }
   }
   wasInControl = inControl;
 

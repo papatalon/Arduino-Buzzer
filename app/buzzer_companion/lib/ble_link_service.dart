@@ -56,12 +56,6 @@ class BleLinkService extends ChangeNotifier {
   // heartbeat doit toujours revenir : sert de détecteur fiable de
   // connexion "fantôme" (voir _checkLinkHealth).
   DateTime? _lastPongAt;
-  bool _recovering = false;
-
-  // Une seule reconnexion complète auto-déclenchée par échec de découverte
-  // de services par connexion (voir _escalateDiscoveryFailure) — pour ne
-  // pas boucler indéfiniment si le radio Windows est vraiment bloqué.
-  bool _triedFullReconnectForDiscovery = false;
 
   void init() {
     // Rafraîchit en continu (liste d'appareils qui arrivent pendant un scan,
@@ -114,7 +108,6 @@ class BleLinkService extends ChangeNotifier {
       connectedDeviceId = isConnected ? deviceId : null;
       if (isConnected) {
         connectedDeviceName = devices[deviceId]?.name ?? connectedDeviceName;
-        _triedFullReconnectForDiscovery = false;  // nouvelle connexion, nouvelle chance
       } else {
         connectedDeviceName = null;
         _stopControlHeartbeat();
@@ -238,6 +231,31 @@ class BleLinkService extends ChangeNotifier {
     if (id != null) await UniversalBle.disconnect(id);
   }
 
+  // Oublie l'appareil sauvegardé (SharedPreferences) et coupe la connexion
+  // en cours : la prochaine reconnexion ne pourra plus se faire toute
+  // seule avec un identifiant peut-être périmé — il faudra Chercher +
+  // Connecter manuellement sur une entrée de scan fraîche. À utiliser si
+  // la reconnexion automatique semble coincée sur un appareil qui ne
+  // répond plus (voir la mémoire du projet : connexion "fantôme").
+  Future<void> forgetDevice() async {
+    final id = connectedDeviceId;
+    _stopControlHeartbeat();
+    if (id != null) {
+      try {
+        await UniversalBle.disconnect(id);
+      } catch (_) {}
+    }
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_lastDeviceIdKey);
+    await prefs.remove(_lastDeviceNameKey);
+    connectedDeviceId = null;
+    connectedDeviceName = null;
+    _uartServiceId = null;
+    _uartCharacteristicId = null;
+    status = 'Appareil oublié. Utilise Chercher puis Connecter pour une connexion fraîche.';
+    notifyListeners();
+  }
+
   // Déconnecte puis reconnecte tout de suite au même appareil, en un clic —
   // utile en particulier pour purger une connexion "fantôme" (connectée
   // mais silencieuse, voir la mémoire du projet) sans repasser par
@@ -339,37 +357,87 @@ class BleLinkService extends ChangeNotifier {
   // Filet de sécurité contre une connexion "fantôme" (BLE affiche connecté
   // mais plus rien ne circule, dans un sens ou dans l'autre) : si aucun
   // PONG n'est revenu depuis 4s malgré l'envoi continu du heartbeat (4x sa
-  // cadence, marge raisonnable), le lien est mort — reconnexion automatique,
-  // sans attendre que l'opérateur le remarque et clique lui-même.
+  // cadence, marge raisonnable), le lien est mort.
+  //
+  // Volontairement PAS de reconnexion automatique ici (essayé, puis
+  // retiré le 2026-08-19) : le plugin BLE Windows (`universal_ble`) a un
+  // bug natif connu où un connect() déclenché justement dans ce genre de
+  // contexte (après un échec de type "deviceNotFound") peut faire planter
+  // tout le processus sans aucune trace côté Dart (voir issue GitHub
+  // Navideck/universal_ble#213 — corrigée en partie, mais on a reproduit
+  // un crash très similaire malgré le correctif). Relancer connect()
+  // automatiquement en boucle dans cette situation augmente donc le
+  // risque de crash plutôt que de le réduire. On se contente de prévenir
+  // clairement l'opérateur, qui décide lui-même de reconnecter ou de
+  // redémarrer l'app.
+  bool _linkWarningShown = false;
+
+  // Vrai tant que le heartbeat revient : l'écran Appareil s'en sert pour
+  // afficher un état de liaison fiable, indépendant du texte de [status]
+  // (qui, lui, garde le dernier évènement en date et peut donc être périmé).
+  bool get linkAlive =>
+      _lastPongAt != null && DateTime.now().difference(_lastPongAt!) < const Duration(seconds: 4);
+
   void _checkLinkHealth() {
-    if (_recovering) return;
     final last = _lastPongAt;
-    if (last != null && DateTime.now().difference(last) < const Duration(seconds: 4)) return;
-    _recovering = true;
-    status = 'Connexion silencieuse détectée, reconnexion automatique...';
-    notifyListeners();
-    reconnect().whenComplete(() => _recovering = false);
+    final silent = last == null || DateTime.now().difference(last) >= const Duration(seconds: 4);
+    if (silent && !_linkWarningShown) {
+      _linkWarningShown = true;
+      status = 'Connexion silencieuse : aucune réponse du buzzer depuis plusieurs secondes. '
+          'Clique Reconnecter, ou redémarre l\'app si ça ne suffit pas.';
+      notifyListeners();
+    } else if (!silent && _linkWarningShown) {
+      // Le lien est revenu tout seul : sans ça, l'avertissement resterait
+      // affiché indéfiniment et donnerait une fausse impression de panne.
+      _linkWarningShown = false;
+      status = 'Connecté à ${connectedDeviceName ?? connectedDeviceId} · liaison rétablie';
+      notifyListeners();
+    }
   }
+
+  // File d'attente des écritures BLE : garantit qu'une seule est en vol à
+  // la fois. Sans ça, un clic de l'opérateur peut tomber pile pendant
+  // l'écriture périodique du heartbeat (1/s) — deux appels concurrents à
+  // UniversalBle.write() sur la même caractéristique. C'est précisément
+  // le genre de situation qui fait remonter une exception WinRT non gérée
+  // dans le plugin Windows (issue Navideck/universal_ble#213) et tue la
+  // liaison, voire le processus. Observé en test : la liaison mourait
+  // systématiquement au moment d'une action de l'opérateur, jamais au
+  // repos alors que le heartbeat écrivait pourtant en continu.
+  Future<void> _writeChain = Future<void>.value();
 
   // Écriture brute partagée par sendKey() et le heartbeat "CTRL|" — un seul
   // chemin d'écriture BLE, silencieux si la caractéristique n'est pas
   // (encore) identifiée. Retourne si l'écriture a été tentée sans erreur.
-  Future<bool> _writeUartLine(String? deviceId, String? serviceId, String? characteristicId, String line) async {
-    if (deviceId == null || serviceId == null || characteristicId == null) return false;
-    try {
-      await UniversalBle.write(
-        deviceId,
-        serviceId,
-        characteristicId,
-        Uint8List.fromList(utf8.encode('$line\n')),
-        withoutResponse: _uartWriteWithoutResponse,
-      );
-      return true;
-    } catch (e) {
-      status = "Échec d'envoi de la commande : $e";
-      notifyListeners();
-      return false;
+  Future<bool> _writeUartLine(String? deviceId, String? serviceId, String? characteristicId, String line) {
+    if (deviceId == null || serviceId == null || characteristicId == null) {
+      return Future.value(false);
     }
+
+    final result = _writeChain.then((_) async {
+      try {
+        await UniversalBle.write(
+          deviceId,
+          serviceId,
+          characteristicId,
+          Uint8List.fromList(utf8.encode('$line\n')),
+          withoutResponse: _uartWriteWithoutResponse,
+          // Une écriture qui ne rend jamais la main bloquerait toute la
+          // file : on la laisse tomber plutôt que de figer les suivantes.
+        ).timeout(const Duration(seconds: 3));
+        return true;
+      } catch (e) {
+        status = "Échec d'envoi de la commande : $e";
+        notifyListeners();
+        return false;
+      }
+    });
+
+    // Le maillon suivant attend celui-ci, succès ou échec — sinon une
+    // erreur romprait la chaîne et les écritures suivantes partiraient
+    // de nouveau en parallèle.
+    _writeChain = result.then((_) {}, onError: (_) {});
+    return result;
   }
 
   // Cherche une caractéristique notifiable (celle par laquelle le Mega pousse
@@ -406,34 +474,28 @@ class BleLinkService extends ChangeNotifier {
         await _discoverUartCharacteristic(deviceId, attempt: 1);
         return;
       }
-      await _escalateDiscoveryFailure(deviceId, 'Aucune caractéristique notifiable trouvée.');
+      _reportDiscoveryFailure('Aucune caractéristique notifiable trouvée.');
     } catch (e) {
       if (attempt == 0) {
         await _discoverUartCharacteristic(deviceId, attempt: 1);
         return;
       }
-      await _escalateDiscoveryFailure(deviceId, 'Erreur de découverte des services : $e');
+      _reportDiscoveryFailure('Erreur de découverte des services : $e');
     }
   }
 
   // Si la découverte de services échoue complètement (deux essais rapides
-  // déjà épuisés, pas juste un délai insuffisant) : une reconnexion
-  // complète (déconnexion + scan + reconnexion) a de meilleures chances
-  // qu'un nouvel essai de découverte sur la même session BLE, peut-être
-  // corrompue. Une seule tentative de ce type par connexion — si ça échoue
-  // encore, seul un vrai aller-retour Bluetooth off/on dans les réglages
-  // Windows a fonctionné à chaque fois par le passé (voir la mémoire du
-  // projet) ; pas de boucle automatique indéfinie dans ce cas.
-  Future<void> _escalateDiscoveryFailure(String deviceId, String message) async {
-    if (_triedFullReconnectForDiscovery) {
-      status = '$message Éteins puis rallume le Bluetooth de Windows pour débloquer.';
-      notifyListeners();
-      return;
-    }
-    _triedFullReconnectForDiscovery = true;
-    status = '$message Nouvelle tentative de connexion complète...';
+  // déjà épuisés, pas juste un délai insuffisant) : signale clairement le
+  // problème plutôt que de retenter connect() automatiquement. Essayé
+  // avant (reconnexion complète auto-déclenchée), puis retiré le
+  // 2026-08-19 — voir la note dans _checkLinkHealth : un connect()
+  // automatique dans ce genre de contexte peut faire planter tout le
+  // processus (bug natif connu du plugin BLE Windows). L'opérateur clique
+  // "Reconnecter"/"Oublier" lui-même, ou éteint/rallume le Bluetooth
+  // Windows si ça persiste (seule parade fiable observée jusqu'ici).
+  void _reportDiscoveryFailure(String message) {
+    status = '$message Clique Reconnecter, ou éteins/rallume le Bluetooth de Windows si ça persiste.';
     notifyListeners();
-    await reconnect();
   }
 
   void _handleIncomingBytes(Uint8List value) {

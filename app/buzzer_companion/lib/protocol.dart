@@ -90,6 +90,15 @@ final int _kPhaseQuizCats = kPhaseNames.indexOf('QUIZ_CATS');
 final int _kPhaseQuizCount = kPhaseNames.indexOf('QUIZ_COUNT');
 final int _kPhaseConfiguration = kPhaseNames.indexOf('CONFIGURATION');
 final int _kPhaseIntro = kPhaseNames.indexOf('INTRO');
+final int _kPhaseEndConfirm = kPhaseNames.indexOf('END_CONFIRM');
+final int _kPhaseEndGame = kPhaseNames.indexOf('END_GAME');
+
+// Fin de partie : confirmation avant de terminer, puis ecran final. Ces
+// deux phases n'avaient aucune interface — l'operateur cliquait
+// "Terminer la partie" et se retrouvait bloque devant un ecran sans
+// boutons, sans moyen de confirmer ni d'annuler.
+bool isEndConfirmPhase(int? phase) => phase != null && phase == _kPhaseEndConfirm;
+bool isEndGamePhase(int? phase) => phase != null && phase == _kPhaseEndGame;
 
 // Sous-écrans de réglage après un choix de jeu (durée, manches, sons,
 // catégories/nombre de questions) — voir GameSetupView. Contrairement au
@@ -176,6 +185,20 @@ class GameState extends ChangeNotifier {
   int? setupSoundValue;      // nombre de sons (step 0) ou 0/1 booleen (step 1)
   int? qcatMask;             // bitmask des 10 categories cochees
   int? qcountValue;          // nombre de questions (0 = Ouvert)
+
+  // Etat du lecteur audio du buzzer (message AUDIO, envoye a la prise de
+  // controle) : permet de distinguer "silencieux parce que le volume est
+  // bas" de "silencieux parce que le DFPlayer n'a pas ete detecte au
+  // demarrage" (mode simulation cote firmware). Null tant qu'aucun
+  // message AUDIO n'est arrive.
+  bool? audioPlayerDetected;
+  int? audioVolume;
+
+  // Fin de partie (message ENDGAME) : en cas d'egalite, '#' lance un bris
+  // d'egalite au lieu de revenir au menu — l'interface a besoin de le
+  // savoir pour ne pas proposer un bouton qui ment sur ce qu'il fait.
+  bool endGameTie = false;
+  int? endGameWinner;   // null = aucun buzzer present
 
   // Nombre de questions posees depuis le debut de la partie courante
   // (compte cote app, incremente a chaque QUESTION recu, remis a zero au
@@ -280,6 +303,40 @@ class GameState extends ChangeNotifier {
           // Pas encore consommé côté UI (viendra avec la lecture de son
           // dans l'app) — reconnu, donc pas compté comme rejeté.
           handled = true;
+          break;
+        case 'ENDGAME':
+          if (parts.length == 3) {
+            final tie = int.tryParse(parts[1]);
+            final winner = int.tryParse(parts[2]);
+            if (tie != null && winner != null) {
+              endGameTie = tie != 0;
+              endGameWinner = winner >= 0 ? winner : null;
+              handled = true;
+            }
+          }
+          break;
+        case 'QSYNC':
+          // Renvoi de la question en cours a la (re)connexion — mêmes
+          // champs que QUESTION, mais sans les effets de bord : ce n'est
+          // pas une nouvelle question, donc ni compteur incrémenté ni
+          // dernier buzz effacé (voir Buzzer.ino, bloc de resynchro).
+          if (parts.length == 4) {
+            questionCategory = parts[1];
+            questionText = parts[2];
+            answerText = parts[3];
+            handled = true;
+          }
+          break;
+        case 'AUDIO':
+          if (parts.length == 3) {
+            final detected = int.tryParse(parts[1]);
+            final vol = int.tryParse(parts[2]);
+            if (detected != null && vol != null) {
+              audioPlayerDetected = detected != 0;
+              audioVolume = vol;
+              handled = true;
+            }
+          }
           break;
         case 'CHRONO_START':
           chronoStarted = true;

@@ -25,12 +25,18 @@ void LcdDisplay::clear() {
 
 void LcdDisplay::setText(String text, int line) {
 
-  if (_controlOverrideActive) return;  // ecran fige sur l'ASCII art "controle par l'app"
-
   text = removeAccents(text);
 
   messages[line] = text;
   offsets[line] = 0;
+
+  // Ecran fige sur l'ASCII art "controle par l'app" : on memorise quand
+  // meme ce que le jeu veut afficher (messages[] ci-dessus), sans le
+  // peindre. Ca permet de repeindre l'ecran reel tel quel des que le
+  // controle est relache - sinon il resterait fige jusqu'a la prochaine
+  // transition de phase, qui peut ne jamais venir si le jeu est assis
+  // dans une phase stable (ex. WAITING_BUZZER).
+  if (_controlOverrideActive) return;
 
   displayText(text, line);
 
@@ -43,6 +49,21 @@ void LcdDisplay::displayText(String text, int line) {
   lcd.setCursor(0, line);
   lcd.print(text.substring(0, 20));
 
+  // Repere "pas de lecteur audio" : repeint apres le texte pour survivre
+  // a n'importe quel ecran de jeu (chacun redessine ses 4 lignes de zero,
+  // il n'y a aucune zone reservee sur ce LCD 20x4). Uniquement en mode
+  // simulation, donc l'affichage normal n'est jamais ampute.
+  if (_audioWarning && line == 0) {
+    lcd.setCursor(19, 0);
+    lcd.print("X");
+  }
+
+}
+
+void LcdDisplay::setAudioWarning(bool active) {
+  if (active == _audioWarning) return;
+  _audioWarning = active;
+  displayText(messages[0], 0);   // applique (ou efface) le repere tout de suite
 }
 
 void LcdDisplay::updateScrolling() {
@@ -122,7 +143,17 @@ void LcdDisplay::drawEqualizer(const uint8_t heights[20]) {
 void LcdDisplay::setControlOverride(bool active) {
   if (active == _controlOverrideActive) return;
   _controlOverrideActive = active;
-  if (!active) return;  // le prochain setText() du jeu reel redessine normalement
+
+  if (!active) {
+    // Controle relache : repeint immediatement ce que le jeu voulait
+    // afficher pendant le gel (memorise par setText()). Ne pas compter
+    // sur le prochain setText() du jeu : il n'arrive qu'a la prochaine
+    // transition de phase, donc jamais si le jeu attend un buzz.
+    for (int i = 0; i < 4; i++) {
+      displayText(messages[i], i);
+    }
+    return;
+  }
 
   lcd.clear();
 

@@ -28,11 +28,19 @@ class LcdDisplay {
     // A appeler une fois par tour de loop().
     void setControlOverride(bool active);
 
+    // Affiche un repere persistant en haut a droite quand le lecteur audio
+    // n'a pas ete detecte au demarrage (mode simulation, voir
+    // Mp3::isSimulation) : sans ca, "aucun son" est indistinguable d'un
+    // simple volume a zero quand on est devant le buzzer. Ne dessine rien
+    // en fonctionnement normal, donc aucun risque d'ecraser du contenu.
+    void setAudioWarning(bool active);
+
   private:
     LiquidCrystal_I2C lcd;
     String messages[4] = { "", "", "", ""};
     int offsets[4] = { 0, 0, 0, 0 };
     bool _controlOverrideActive = false;
+    bool _audioWarning = false;
     void displayText(String text, int line);
     unsigned long previousMillis = 0;    // Last time of update
     String removeAccents(String text);

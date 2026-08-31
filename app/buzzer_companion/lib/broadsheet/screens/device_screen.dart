@@ -109,6 +109,12 @@ class _ConnectedRow extends StatelessWidget {
             style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
             child: const Text('Déconnecter'),
           ),
+          const SizedBox(width: BSSpace.s2),
+          TextButton(
+            onPressed: ble.forgetDevice,
+            style: TextButton.styleFrom(foregroundColor: BSColors.neutral600),
+            child: const Text('Oublier'),
+          ),
         ],
       ),
     );
@@ -200,6 +206,25 @@ class _Diagnostics extends StatelessWidget {
     return '${seconds ~/ 60} min';
   }
 
+  // Distingue les trois cas qui se ressemblent tous "pas de son" quand on
+  // est devant le buzzer : lecteur absent, lecteur présent mais muet, ou
+  // lecteur qui fonctionne (voir GameState.audioPlayerDetected).
+  String _audio() {
+    final detected = game.audioPlayerDetected;
+    if (detected == null) return '';
+    if (!detected) return 'Absent';
+    final vol = game.audioVolume;
+    if (vol != null && vol <= 0) return 'Muet';
+    return 'Volume ${vol ?? ""}';
+  }
+
+  Color? _audioColor() {
+    final detected = game.audioPlayerDetected;
+    if (detected == null) return null;
+    if (!detected || (game.audioVolume ?? 1) <= 0) return BSColors.accent2_800;
+    return BSColors.accent700;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -207,11 +232,22 @@ class _Diagnostics extends StatelessWidget {
       children: [
         Row(
           children: [
+            // État en direct, calculé à partir du heartbeat plutôt que du
+            // texte de statut (qui garde le dernier évènement et peut être
+            // périmé) — voir BleLinkService.linkAlive.
+            _Stat(
+              label: 'Liaison',
+              value: ble.linkAlive ? 'Vivante' : 'Silencieuse',
+              color: ble.linkAlive ? BSColors.accent700 : BSColors.accent2_800,
+            ),
+            const SizedBox(width: BSSpace.s6),
             _Stat(label: 'Messages reçus', value: '${ble.messagesReceived}'),
             const SizedBox(width: BSSpace.s6),
             _Stat(label: 'Lignes rejetées', value: '${game.messagesRejected}'),
             const SizedBox(width: BSSpace.s6),
             _Stat(label: 'Dernier message', value: _age()),
+            const SizedBox(width: BSSpace.s6),
+            _Stat(label: 'Audio', value: _audio(), color: _audioColor()),
           ],
         ),
         const SizedBox(height: BSSpace.s4),
@@ -227,9 +263,10 @@ class _Diagnostics extends StatelessWidget {
 }
 
 class _Stat extends StatelessWidget {
-  const _Stat({required this.label, required this.value});
+  const _Stat({required this.label, required this.value, this.color});
   final String label;
   final String value;
+  final Color? color;
 
   @override
   Widget build(BuildContext context) {
@@ -237,7 +274,7 @@ class _Stat extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(label, style: BSType.body(size: 13, color: BSColors.neutral600)),
-        Text(value, style: BSType.scoreConsole(color: BSColors.text)),
+        Text(value, style: BSType.scoreConsole(color: color ?? BSColors.text)),
       ],
     );
   }

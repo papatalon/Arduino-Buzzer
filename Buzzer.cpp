@@ -1166,6 +1166,12 @@ void Buzzer::setEndGame() {
 
   displayScores(endTie ? "EGALITE !" : "FIN DE PARTIE", prompt.c_str());
 
+  // L'app a besoin de savoir s'il y a egalite : ca change le sens des
+  // touches en END_GAME ('#' lance un bris d'egalite au lieu de revenir
+  // au menu), donc l'interface ne peut pas proposer de boutons honnetes
+  // sans cette information. -1 comme gagnant = aucun buzzer present.
+  ble.send("ENDGAME|" + String(endTie ? 1 : 0) + "|" + String(any ? winner : -1));
+
   if (any && count == 1) {
     mp3.playGoodAnswer();            // son de victoire
   }

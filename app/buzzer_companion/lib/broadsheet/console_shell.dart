@@ -300,6 +300,12 @@ class _CenterColumn extends StatelessWidget {
     if (isGameSetupPhase(game.phase)) {
       return GameSetupView(game: game, ble: ble);
     }
+    if (isEndConfirmPhase(game.phase)) {
+      return EndConfirmView(ble: ble);
+    }
+    if (isEndGamePhase(game.phase)) {
+      return EndGameView(game: game, ble: ble);
+    }
     if (game.questionFlowState != QuestionFlowState.none) {
       return Align(
         alignment: Alignment.topLeft,

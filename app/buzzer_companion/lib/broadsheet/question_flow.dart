@@ -17,7 +17,9 @@ import 'tokens.dart';
 // Les boutons envoient "KEY|<touche>" au firmware (BleLink::pollKey côté
 // Mega) : chaque action rejoue exactement la touche physique correspondante
 // dans la même machine à états, vérifiée dans Buzzer.cpp avant d'écrire ce
-// fichier — voir la touche affichée à droite de chaque bouton.
+// fichier. La touche elle-même n'est plus affichée dans le libellé : l'app
+// est maintenant le mode de contrôle principal, le raccourci clavier
+// physique n'a plus d'intérêt pour l'opérateur (décision du client).
 class QuestionFlowView extends StatelessWidget {
   const QuestionFlowView({super.key, required this.game, required this.ble});
 
@@ -66,6 +68,93 @@ class QuestionFlowView extends StatelessWidget {
   }
 }
 
+// Confirmation avant de terminer une partie (phase END_CONFIRM) : le
+// firmware attend '#' pour confirmer ou '*' pour reprendre. Sans cet
+// ecran, cliquer "Terminer la partie" laissait l'operateur bloque.
+class EndConfirmView extends StatelessWidget {
+  const EndConfirmView({super.key, required this.ble});
+  final BleLinkService ble;
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: Alignment.topLeft,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text('Terminer la partie ?', style: BSType.questionConsole()),
+          const SizedBox(height: BSSpace.s2),
+          Text(
+            'Les scores seront affiches et la partie prendra fin.',
+            style: BSType.body(size: 17, color: BSColors.neutral700),
+          ),
+          const SizedBox(height: BSSpace.s6),
+          Row(
+            children: [
+              _PrimaryButton(label: 'Oui, terminer', onPressed: () => ble.sendKey('#')),
+              const SizedBox(width: BSSpace.s3),
+              _SecondaryButton(label: 'Reprendre la partie', onPressed: () => ble.sendKey('*')),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// Ecran final (phase END_GAME). En cas d'egalite le firmware propose un
+// bris d'egalite sur '#', sinon '#' revient au menu : les libelles
+// suivent donc l'etat reel (voir le message ENDGAME).
+class EndGameView extends StatelessWidget {
+  const EndGameView({super.key, required this.game, required this.ble});
+  final GameState game;
+  final BleLinkService ble;
+
+  @override
+  Widget build(BuildContext context) {
+    final idx = game.endGameWinner;
+    final winner = (idx != null && idx >= 0 && idx < kBuzzerColors.length) ? kBuzzerColors[idx] : null;
+    final tie = game.endGameTie;
+
+    return Align(
+      alignment: Alignment.topLeft,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(tie ? 'Égalité' : 'Fin de partie', style: BSType.questionConsole()),
+          const SizedBox(height: BSSpace.s3),
+          if (!tie && winner != null)
+            Row(
+              children: [
+                Container(width: 52, height: 52, color: winner.fill),
+                const SizedBox(width: BSSpace.s3),
+                Text('${winner.name} gagne', style: BSType.buzzerNameConsole(size: 38)),
+              ],
+            ),
+          if (tie)
+            Text(
+              'Plusieurs buzzers sont a egalite.',
+              style: BSType.body(size: 17, color: BSColors.neutral700),
+            ),
+          const SizedBox(height: BSSpace.s6),
+          Row(
+            children: [
+              if (tie) ...[
+                _PrimaryButton(label: "Lancer un bris d'égalité", onPressed: () => ble.sendKey('#')),
+                const SizedBox(width: BSSpace.s3),
+                _SecondaryButton(label: "Accepter l'égalité", onPressed: () => ble.sendKey('*')),
+              ] else
+                _PrimaryButton(label: 'Retour au menu', onPressed: () => ble.sendKey('#')),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class _AnswerBlock extends StatelessWidget {
   const _AnswerBlock({required this.state, required this.answer});
   final QuestionFlowState state;
@@ -91,9 +180,8 @@ class _AnswerBlock extends StatelessWidget {
 // btn-secondary/ghost) --------------------------------------------------
 
 class _PrimaryButton extends StatelessWidget {
-  const _PrimaryButton({required this.label, required this.shortcut, required this.onPressed});
+  const _PrimaryButton({required this.label, required this.onPressed});
   final String label;
-  final String shortcut;
   final VoidCallback onPressed;
 
   @override
@@ -106,15 +194,14 @@ class _PrimaryButton extends StatelessWidget {
         shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
       ),
-      child: _ButtonLabel(label: label, shortcut: shortcut, color: BSColors.bg),
+      child: Text(label, style: BSType.body(size: 15, color: BSColors.bg).copyWith(fontWeight: FontWeight.w600)),
     );
   }
 }
 
 class _SecondaryButton extends StatelessWidget {
-  const _SecondaryButton({required this.label, required this.shortcut, required this.onPressed});
+  const _SecondaryButton({required this.label, required this.onPressed});
   final String label;
-  final String shortcut;
   final VoidCallback onPressed;
 
   @override
@@ -127,15 +214,14 @@ class _SecondaryButton extends StatelessWidget {
         shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
       ),
-      child: _ButtonLabel(label: label, shortcut: shortcut, color: BSColors.text),
+      child: Text(label, style: BSType.body(size: 15, color: BSColors.text).copyWith(fontWeight: FontWeight.w600)),
     );
   }
 }
 
 class _GhostButton extends StatelessWidget {
-  const _GhostButton({required this.label, required this.shortcut, required this.onPressed});
+  const _GhostButton({required this.label, required this.onPressed});
   final String label;
-  final String shortcut;
   final VoidCallback onPressed;
 
   @override
@@ -143,29 +229,7 @@ class _GhostButton extends StatelessWidget {
     return TextButton(
       onPressed: onPressed,
       style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
-      child: _ButtonLabel(label: label, shortcut: shortcut, color: BSColors.accent700),
-    );
-  }
-}
-
-class _ButtonLabel extends StatelessWidget {
-  const _ButtonLabel({required this.label, required this.shortcut, required this.color});
-  final String label;
-  final String shortcut;
-  final Color color;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Text(label, style: BSType.body(size: 15, color: color).copyWith(fontWeight: FontWeight.w600)),
-        const SizedBox(width: 10),
-        Opacity(
-          opacity: 0.6,
-          child: Text(shortcut, style: BSType.body(size: 13, color: color)),
-        ),
-      ],
+      child: Text(label, style: BSType.body(size: 15, color: BSColors.accent700).copyWith(fontWeight: FontWeight.w600)),
     );
   }
 }
@@ -180,6 +244,15 @@ class _ArmingBlock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final chrono = usesChrono(game.gameMode);
+
+    // Un lastBuzz encore renseigné en phase d'attente veut dire qu'une
+    // réponse vient d'être refusée : le buzzer fautif est désactivé pour
+    // cette question, mais les autres peuvent encore répondre (voir
+    // Buzzer::badAnswer). Une nouvelle question remet lastBuzz à null,
+    // donc pas de confusion possible avec un vrai début de question.
+    final idx = game.lastBuzz;
+    final rejected = (idx != null && idx >= 0 && idx < kBuzzerColors.length) ? kBuzzerColors[idx] : null;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -196,10 +269,15 @@ class _ArmingBlock extends StatelessWidget {
           ],
         ),
         const SizedBox(height: BSSpace.s3),
-        Text("Personne n'a buzzé", style: BSType.body(size: 17, color: BSColors.neutral700)),
+        Text(
+          rejected != null ? '${rejected.name} s\'est trompé' : "Personne n'a buzzé",
+          style: BSType.body(size: 17, color: BSColors.neutral700),
+        ),
         const SizedBox(height: BSSpace.s1),
         Text(
-          chrono ? 'Lis la question à voix haute, puis lance le chrono.' : 'En attente d\'un buzz.',
+          rejected != null
+              ? 'Les autres peuvent encore répondre.'
+              : (chrono ? 'Lis la question à voix haute, puis lance le chrono.' : 'En attente d\'un buzz.'),
           style: BSType.body(size: 15, color: BSColors.neutral600),
         ),
         const SizedBox(height: BSSpace.s4),
@@ -210,18 +288,22 @@ class _ArmingBlock extends StatelessWidget {
         Row(
           children: [
             if (chrono) ...[
-              _PrimaryButton(label: 'Lancer le chrono', shortcut: 'D', onPressed: () => ble.sendKey('D')),
+              _PrimaryButton(label: 'Lancer le chrono', onPressed: () => ble.sendKey('D')),
               const SizedBox(width: BSSpace.s3),
             ],
-            _SecondaryButton(label: 'Révéler la réponse', shortcut: '0', onPressed: () => ble.sendKey('0')),
+            _SecondaryButton(label: 'Révéler la réponse', onPressed: () => ble.sendKey('0')),
           ],
         ),
         const SizedBox(height: BSSpace.s2),
         Row(
           children: [
-            _GhostButton(label: 'Corriger', shortcut: 'B', onPressed: () => ble.sendKey('B')),
+            // Son d'ambiance pendant que la reponse se fait attendre
+            // (touche # en WAITING_BUZZER, voir Buzzer.ino).
+            _GhostButton(label: "Son d'attente", onPressed: () => ble.sendKey('#')),
             const SizedBox(width: BSSpace.s3),
-            _GhostButton(label: 'Terminer la partie', shortcut: 'C', onPressed: () => ble.sendKey('C')),
+            _GhostButton(label: 'Corriger', onPressed: () => ble.sendKey('B')),
+            const SizedBox(width: BSSpace.s3),
+            _GhostButton(label: 'Terminer la partie', onPressed: () => ble.sendKey('C')),
           ],
         ),
       ],
@@ -262,9 +344,9 @@ class _BuzzedBlock extends StatelessWidget {
         const SizedBox(height: BSSpace.s4),
         Row(
           children: [
-            _PrimaryButton(label: 'Bonne réponse', shortcut: 'A', onPressed: () => ble.sendKey('A')),
+            _PrimaryButton(label: 'Bonne réponse', onPressed: () => ble.sendKey('A')),
             const SizedBox(width: BSSpace.s3),
-            _SecondaryButton(label: 'Mauvaise réponse', shortcut: 'D', onPressed: () => ble.sendKey('D')),
+            _SecondaryButton(label: 'Mauvaise réponse', onPressed: () => ble.sendKey('D')),
           ],
         ),
       ],
@@ -302,9 +384,9 @@ class _ScoredBlock extends StatelessWidget {
         const SizedBox(height: BSSpace.s4),
         Row(
           children: [
-            _PrimaryButton(label: 'Continuer maintenant', shortcut: '#', onPressed: () => ble.sendKey('#')),
+            _PrimaryButton(label: 'Continuer maintenant', onPressed: () => ble.sendKey('#')),
             const SizedBox(width: BSSpace.s3),
-            _GhostButton(label: 'Corriger', shortcut: 'B', onPressed: () => ble.sendKey('B')),
+            _GhostButton(label: 'Corriger', onPressed: () => ble.sendKey('B')),
           ],
         ),
       ],
@@ -329,7 +411,7 @@ class _RevealedBlock extends StatelessWidget {
           ],
         ),
         const SizedBox(height: BSSpace.s4),
-        _PrimaryButton(label: 'Continuer', shortcut: '#', onPressed: () => ble.sendKey('#')),
+        _PrimaryButton(label: 'Continuer', onPressed: () => ble.sendKey('#')),
       ],
     );
   }
