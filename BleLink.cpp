@@ -77,6 +77,11 @@ char BleLink::pollKey() {
           _pendingSoundCommand = action;
           _pendingSoundBuzzer = who;
         }
+      } else if (_rxBuffer.startsWith("SET_PRESENT|")) {
+        int mask = _rxBuffer.substring(12).toInt();
+        if (mask >= 0 && mask < 16) {  // 4 bits, un par buzzer
+          _pendingPresenceMask = mask;
+        }
       } else if (_rxBuffer.startsWith("SET_CATS|")) {
         int mask = _rxBuffer.substring(9).toInt();
         if (mask >= 0 && mask < 1024) {  // 10 bits (QCAT_COUNT)
@@ -98,6 +103,12 @@ bool BleLink::appInControl() {
 int BleLink::consumeGameSelect() {
   int v = _pendingGameSelect;
   _pendingGameSelect = -1;
+  return v;
+}
+
+int BleLink::consumePresenceMask() {
+  int v = _pendingPresenceMask;
+  _pendingPresenceMask = -1;
   return v;
 }
 

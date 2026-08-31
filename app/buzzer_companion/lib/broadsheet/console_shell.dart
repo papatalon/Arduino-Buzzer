@@ -385,16 +385,7 @@ class _CenterColumn extends StatelessWidget {
                 child: const Text('Choisir un jeu'),
               )
             else
-              FilledButton(
-                onPressed: () => ble.sendKey('#'),
-                style: FilledButton.styleFrom(
-                  backgroundColor: BSColors.accent,
-                  foregroundColor: BSColors.bg,
-                  shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
-                ),
-                child: const Text('Lancer la partie'),
-              ),
+              _LaunchButton(game: game, ble: ble, onNavigate: onNavigate),
           ],
         ],
       ),
@@ -479,5 +470,72 @@ class _GameProgressView extends StatelessWidget {
     final winner = game.gameWinner;
     if (winner != null && winner >= 0 && winner < 4) return '${teams.nameFor(winner)} gagne la partie';
     return game.gameTie ? 'Égalité' : 'Aucun vainqueur';
+  }
+}
+
+// « Lancer la partie », avec le contrôle du nombre de joueurs fait ICI plutôt
+// que d'attendre le refus du buzzer. Simon exige quatre buzzers et le Duel
+// exactement deux ; le firmware refuse bien le lancement dans le cas
+// contraire, mais son avertissement s'affiche sur le LCD, que l'app fige
+// quand elle a le contrôle. Sans ce garde-fou, le clic ne faisait
+// visiblement rien. Le message du Mega (WARN|PLAYERS) reste relayé en
+// dessous, comme filet.
+class _LaunchButton extends StatelessWidget {
+  const _LaunchButton({required this.game, required this.ble, required this.onNavigate});
+
+  final GameState game;
+  final BleLinkService ble;
+  final ValueChanged<ConsoleSection> onNavigate;
+
+  @override
+  Widget build(BuildContext context) {
+    final requis = playerRange(game.displayGameMode);
+    final presents = game.present.where((p) => p).length;
+    final compte = requis == null || (presents >= requis.min && presents <= requis.max);
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        FilledButton(
+          onPressed: compte ? () => ble.sendKey('#') : null,
+          style: FilledButton.styleFrom(
+            backgroundColor: BSColors.accent,
+            foregroundColor: BSColors.bg,
+            disabledBackgroundColor: BSColors.neutral300,
+            disabledForegroundColor: BSColors.neutral600,
+            shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+          ),
+          child: const Text('Lancer la partie'),
+        ),
+        if (!compte || game.playersWarning != null) ...[
+          const SizedBox(height: BSSpace.s2),
+          Row(
+            children: [
+              Text(
+                _explication(requis ?? game.playersWarning, presents),
+                style: BSType.body(size: 15, color: BSColors.accent2_800),
+              ),
+              const SizedBox(width: BSSpace.s2),
+              TextButton(
+                onPressed: () => onNavigate(ConsoleSection.buzzers),
+                style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
+                child: const Text('Régler la présence'),
+              ),
+            ],
+          ),
+        ],
+      ],
+    );
+  }
+
+  String _explication(({int min, int max})? requis, int presents) {
+    final buzzers = presents <= 1 ? '$presents buzzer' : '$presents buzzers';
+    if (requis == null) return 'Le nombre de buzzers ne convient pas à ce jeu. $buzzers en jeu.';
+    if (requis.min == requis.max) {
+      return 'Ce jeu se joue à ${requis.min}, ni plus ni moins. $buzzers en jeu.';
+    }
+    return 'Ce jeu se joue de ${requis.min} à ${requis.max} buzzers. $buzzers en jeu.';
   }
 }

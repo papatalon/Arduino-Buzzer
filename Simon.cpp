@@ -7,6 +7,24 @@ void Simon::reset() {
   failedBuzzer = -1;
   reverse = (buzzer.getGameMode() == GAME_SIMON_REVERSE);
   inputIndex = 0;
+
+  // Les couleurs de la partie sont celles des buzzers presents. Sans ca, a
+  // deux joueurs, la machine demanderait des couleurs que personne ne tient.
+  playerCount = 0;
+  for (int i = 0; i < 4; i++) {
+    if (buzzer.isEnabled(i)) {
+      players[playerCount++] = (uint8_t)i;
+    }
+  }
+  // Filet de securite : Configuration refuse deja de lancer a moins de deux,
+  // mais random(0) n'aurait aucun sens si on arrivait ici autrement.
+  if (playerCount == 0) {
+    for (int i = 0; i < 4; i++) {
+      players[i] = (uint8_t)i;
+    }
+    playerCount = 4;
+  }
+
   sendTelemetry();
   // Simon n'a ni score ni manche, mais "GROUND|0" reste le signal generique
   // de nouvelle partie cote app : sans lui, l'ecran public garderait le
@@ -41,7 +59,7 @@ void Simon::setShowSequence() {
   failedBuzzer = -1;
 
   if (length < SIMON_MAX_LEVEL) {
-    sequence[length] = random(4);
+    sequence[length] = players[random(playerCount)];
     length++;
   }
 
@@ -137,7 +155,9 @@ PhaseMode Simon::playSequence(char pressedKey) {
   }
 
   for (int i = 0; i < 4; i++) {
-    if (!buzzer.wasPressed(i)) {
+    // Un buzzer declare absent reste branche : sans ce filtre, un appui
+    // dessus ferait echouer une partie a laquelle il ne participe pas.
+    if (!buzzer.isEnabled(i) || !buzzer.wasPressed(i)) {
       continue;
     }
 

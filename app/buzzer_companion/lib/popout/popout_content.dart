@@ -390,61 +390,71 @@ class _Scoreboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Seuls les buzzers en jeu. Un buzzer absent n'a pas de score à montrer,
+    // et l'estomper laissait une colonne grise devant la salle qui ne fait
+    // que soulever une question. Les équipes restantes se partagent toute la
+    // largeur : à deux, chacune a la moitié de l'écran.
+    final enJeu = [
+      for (var i = 0; i < 4; i++)
+        if (i < snapshot.present.length && snapshot.present[i]) i,
+    ];
+    if (enJeu.isEmpty) return const SizedBox.shrink();
+
     return SizedBox(
       height: 140,
       child: Row(
-        children: List.generate(4, (i) {
-          final color = kBuzzerColors[i];
-          final present = i < snapshot.present.length && snapshot.present[i];
-          final flashed = snapshot.lastBuzz == i;
-          return Expanded(
-            child: Container(
-              color: flashed ? BSColors.accent100 : null,
-              padding: EdgeInsets.only(
-                left: i == 0 ? 52 : 28,
-                top: 18,
-              ),
-              child: Opacity(
-                opacity: present ? 1 : 0.4,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(width: 22, height: 22, margin: const EdgeInsets.only(top: 6), color: color.fill),
-                    const SizedBox(width: 14),
-                    // Expanded borne la colonne à sa part de l'écran, sinon
-                    // un nom long déborde sur le buzzer voisin. Le nom
-                    // rétrécit pour tenir plutôt que d'être tronqué : sur un
-                    // écran vu par la salle, un nom d'équipe coupé au milieu
-                    // ferait négligé.
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.only(right: 16),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            FittedBox(
-                              fit: BoxFit.scaleDown,
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                snapshot.teamName(i).toUpperCase(),
-                                maxLines: 1,
-                                style: BSType.buzzerNamePopout(),
-                              ),
-                            ),
-                            Text(
-                              present && i < scores.length ? '${scores[i]}' : '',
-                              style: BSType.scorePopout(),
-                            ),
-                          ],
-                        ),
-                      ),
+        // Expanded doit rester un enfant DIRECT du Row : l'envelopper dans
+        // quoi que ce soit ferait planter la mise en page à l'exécution.
+        children: [
+          for (var rang = 0; rang < enJeu.length; rang++)
+            Expanded(child: _buildColonne(enJeu[rang], rang == 0)),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildColonne(int i, bool premiere) {
+    return Container(
+      color: snapshot.lastBuzz == i ? BSColors.accent100 : null,
+      padding: EdgeInsets.only(left: premiere ? 52 : 28, top: 18),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            width: 22,
+            height: 22,
+            margin: const EdgeInsets.only(top: 6),
+            color: kBuzzerColors[i].fill,
+          ),
+          const SizedBox(width: 14),
+          // Expanded borne la colonne à sa part de l'écran, sinon un nom
+          // long déborde sur le buzzer voisin. Le nom rétrécit pour tenir
+          // plutôt que d'être tronqué : sur un écran vu par la salle, un nom
+          // d'équipe coupé au milieu ferait négligé.
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.only(right: 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      snapshot.teamName(i).toUpperCase(),
+                      maxLines: 1,
+                      style: BSType.buzzerNamePopout(),
                     ),
-                  ],
-                ),
+                  ),
+                  Text(
+                    i < scores.length ? '${scores[i]}' : '',
+                    style: BSType.scorePopout(),
+                  ),
+                ],
               ),
             ),
-          );
-        }),
+          ),
+        ],
       ),
     );
   }

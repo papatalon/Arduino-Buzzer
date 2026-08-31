@@ -141,6 +141,19 @@ GameLayout layoutFor(int? gameMode) {
   return GameLayout.quiz;
 }
 
+// Nombre de buzzers admis par le jeu, ou null s'il s'accommode de n'importe
+// quel nombre. Simon se joue de deux à quatre (la séquence n'est tirée que
+// parmi les couleurs en jeu, mais à un seul joueur il suffirait d'appuyer à
+// chaque fois) et le Duel à exactement deux. Le firmware refuse le lancement
+// autrement (Configuration::manageConfiguration), et son avertissement
+// s'affiche sur un LCD que l'app fige : mieux vaut que la console le dise
+// elle-même, avant le clic.
+({int min, int max})? playerRange(int? gameMode) {
+  if (gameMode == 5 || gameMode == 6) return (min: 2, max: 4);  // Simon, Simon inverse
+  if (gameMode == 10) return (min: 2, max: 2);                  // Duel
+  return null;
+}
+
 // Est-ce que CE jeu marque des points ? Répondu jeu par jeu, pas déduit
 // d'un défaut : Simon et Simon inverse sont collaboratifs et n'en ont
 // aucun, et le prochain jeu ajouté devra répondre à la question plutôt que
@@ -290,6 +303,10 @@ class GameState extends ChangeNotifier {
   bool? audioPlayerDetected;
   int? audioVolume;
 
+  // Intervalle exige par le jeu quand le Mega vient de refuser un lancement
+  // (message WARN|PLAYERS). Null le reste du temps.
+  ({int min, int max})? playersWarning;
+
   // Fin de partie (message ENDGAME) : en cas d'egalite, '#' lance un bris
   // d'egalite au lieu de revenir au menu — l'interface a besoin de le
   // savoir pour ne pas proposer un bouton qui ment sur ce qu'il fait.
@@ -382,7 +399,26 @@ class GameState extends ChangeNotifier {
           final parsed = _parseInts(parts.sublist(1));
           if (parsed != null && parsed.length == 4) {
             present = parsed.map((v) => v != 0).toList();
+            // La présence vient de changer : un avertissement « il en faut
+            // quatre » n'a plus lieu d'être affiché tant qu'on n'a pas
+            // réessayé de lancer.
+            playersWarning = null;
             handled = true;
+          }
+          break;
+        case 'WARN':
+          // "WARN|PLAYERS|<min>|<max>" : le Mega a refusé de lancer la
+          // partie faute du bon nombre de buzzers. Son message va sur le
+          // LCD, que l'app fige quand elle a le contrôle, donc sans ce
+          // relais le clic sur « Lancer la partie » resterait sans effet ni
+          // explication.
+          if (parts.length == 4 && parts[1] == 'PLAYERS') {
+            final min = int.tryParse(parts[2]);
+            final max = int.tryParse(parts[3]);
+            if (min != null && max != null) {
+              playersWarning = (min: min, max: max);
+              handled = true;
+            }
           }
           break;
         case 'GAME':

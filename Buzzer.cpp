@@ -1223,24 +1223,42 @@ void Buzzer::resetConfigState() {
   }
 }
 
-void Buzzer::setEnabled(int buzzerId, bool value) {
-  enabled[buzzerId] = value;
+void Buzzer::sendPresence() {
   ble.send("PRESENT|" + String(enabled[0]) + "|" + String(enabled[1]) + "|" +
            String(enabled[2]) + "|" + String(enabled[3]));
+}
+
+void Buzzer::setEnabled(int buzzerId, bool value) {
+  enabled[buzzerId] = value;
+  sendPresence();
+}
+
+// Les quatre d'un coup, depuis l'app (commande SET_PRESENT). Un seul message
+// de telemetrie plutot que quatre : l'app envoie un etat complet, pas une
+// suite de changements, et quatre PRESENT successifs feraient clignoter son
+// affichage a chaque bascule.
+void Buzzer::setPresenceMask(int mask) {
+  for (int i = 0; i < 4; i++) {
+    enabled[i] = (mask & (1 << i)) != 0;
+  }
+  sendPresence();
 }
 
 bool Buzzer::isEnabled(int buzzerId) {
   return enabled[buzzerId];
 }
 
-// Vrai si les 4 buzzers sont déclarés présents (requis par le jeu Simon).
-bool Buzzer::hasFourPlayers() {
+// Nombre de buzzers déclarés présents. Simon s'en sert pour ne tirer sa
+// séquence QUE parmi les couleurs réellement en jeu : à deux joueurs, la
+// séquence n'utilise que ces deux couleurs.
+int Buzzer::playerCount() {
+  int n = 0;
   for (int i = 0; i < 4; i++) {
-    if (!enabled[i]) {
-      return false;
+    if (enabled[i]) {
+      n++;
     }
   }
-  return true;
+  return n;
 }
 
 // Vrai si exactement 2 buzzers sont déclarés présents (requis par le jeu

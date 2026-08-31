@@ -162,45 +162,47 @@ class _TonightBand extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Seulement les équipes en jeu : un buzzer déclaré absent n'existe pas
+    // pour la salle, et le montrer estompé ne fait que poser la question
+    // « pourquoi celui-là est gris ? ». Celles qui restent se partagent
+    // toute la largeur.
+    final enJeu = [
+      for (var i = 0; i < 4; i++)
+        if (i < snapshot.present.length && snapshot.present[i]) i,
+    ];
+    if (enJeu.isEmpty) return const SizedBox.shrink();
+
     return Column(
       children: [
         const SizedBox(height: 4, child: ColoredBox(color: BSColors.text)),
         SizedBox(
           height: 140,
           child: Row(
-            children: List.generate(4, (i) {
-              final present = i < snapshot.present.length && snapshot.present[i];
-              return Expanded(
-                child: Padding(
-                  padding: EdgeInsets.only(left: i == 0 ? 52 : 28, top: 22),
-                  child: Opacity(
-                    opacity: present ? 1 : 0.35,
+            children: [
+              for (var rang = 0; rang < enJeu.length; rang++)
+                Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.only(left: rang == 0 ? 52 : 28, top: 22),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Container(width: 44, height: 10, color: kBuzzerColors[i].fill),
+                        Container(width: 44, height: 10, color: kBuzzerColors[enJeu[rang]].fill),
                         const SizedBox(height: BSSpace.s3),
                         FittedBox(
                           fit: BoxFit.scaleDown,
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            snapshot.teamName(i).toUpperCase(),
+                            snapshot.teamName(enJeu[rang]).toUpperCase(),
                             maxLines: 1,
-                            style: BSType.buzzerNamePopout(
-                              color: present ? BSColors.text : BSColors.neutral600,
-                            ),
+                            style: BSType.buzzerNamePopout(color: BSColors.text),
                           ),
                         ),
-                        Text(
-                          present ? 'PRÊT' : 'ABSENT',
-                          style: BSType.body(size: 18, color: BSColors.neutral600),
-                        ),
+                        Text('PRÊT', style: BSType.body(size: 18, color: BSColors.neutral600)),
                       ],
                     ),
                   ),
                 ),
-              );
-            }),
+            ],
           ),
         ),
       ],

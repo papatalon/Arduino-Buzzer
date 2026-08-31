@@ -181,6 +181,16 @@ PhaseMode getCurrentMode() {
     }
   }
 
+  // Commande App->Mega SET_PRESENT|<masque> : declarer un buzzer absent pour
+  // jouer a deux ou a trois. L'assistant du clavier ("A") ne peut pas rendre
+  // ce service a l'app - il exige un appui PHYSIQUE sur chaque buzzer
+  // present, et le clavier est verrouille de toute facon. Comme la config
+  // des sons, ca ne touche pas la phase : on ne court-circuite pas le switch.
+  int presenceMask = BleLink::shared().consumePresenceMask();
+  if (presenceMask >= 0) {
+    buzzer.setPresenceMask(presenceMask);
+  }
+
   // Commande App->Mega SET_CATS|<mask> (voir BleLink::consumeCategoryMask) :
   // contrairement a SELECT_GAME, cette commande termine une etape precise
   // (choix des categories) et n'a de sens que dans son propre ecran - gardee

@@ -82,8 +82,9 @@ public:
     // Assistant de configuration
     void resetConfigState();                 // ré-active tout, remet l'anti-rebond
     void setEnabled(int buzzerId, bool value);
+    void setPresenceMask(int mask);          // les 4 d'un coup (app, SET_PRESENT)
     bool isEnabled(int buzzerId);
-    bool hasFourPlayers();                   // les 4 buzzers sont déclarés présents
+    int playerCount();                       // combien de buzzers en jeu (0-4)
     bool hasExactlyTwoPlayers();             // exactement 2 (requis par le jeu Duel)
     bool wasPressed(int buzzerId);           // front montant d'un appui (anti-rebond)
     void armButtons();                       // ignore les boutons déjà maintenus
@@ -149,6 +150,8 @@ public:
 private:
   Buzzer(const Buzzer&) = delete;
   Buzzer& operator=(const Buzzer&) = delete;
+
+  void sendPresence();                       // telemetrie PRESENT|r|b|j|v
 
   // Brochage des buzzers : { Pin LED, Pin Bouton }
   int buzzers[4][2] = {

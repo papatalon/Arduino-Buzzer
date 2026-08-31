@@ -397,6 +397,23 @@ class BleLinkService extends ChangeNotifier {
     notifyListeners();
   }
 
+  // Déclare quels buzzers sont en jeu (protocole "SET_PRESENT|<masque>",
+  // bit 0 = rouge ... bit 3 = vert). C'est le seul moyen de jouer à deux ou
+  // à trois depuis l'app : l'assistant du clavier exige un appui PHYSIQUE
+  // sur chaque buzzer présent, geste impossible à piloter à distance, et le
+  // clavier est de toute façon verrouillé pendant que l'app a le contrôle.
+  Future<void> setPresence(List<bool> present) async {
+    var mask = 0;
+    for (var i = 0; i < present.length && i < 4; i++) {
+      if (present[i]) mask |= 1 << i;
+    }
+    final ok = await _writeUartLine(connectedDeviceId, _uartServiceId, _uartCharacteristicId, 'SET_PRESENT|$mask');
+    status = ok
+        ? 'Présence des buzzers mise à jour.'
+        : 'Envoi impossible : aucune caractéristique BLE identifiée pour écrire.';
+    notifyListeners();
+  }
+
   // Émulation de la broche BUSY du DFPlayer : quand l'app joue les sons à
   // la place du buzzer, le firmware n'a plus aucun repère pour savoir si un
   // son est en cours. Il s'en sert pour caler le chenillard de l'intro sur

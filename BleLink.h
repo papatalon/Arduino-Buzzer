@@ -55,6 +55,14 @@ class BleLink {
     // Consommee une seule fois - voir Configuration::confirmCategories().
     int consumeCategoryMask();
 
+    // Retourne le masque de presence demande par un "SET_PRESENT|<n>" recu
+    // depuis le dernier appel (bit 0 = rouge ... bit 3 = vert), ou -1 si
+    // aucun n'est en attente. Consommee une seule fois. Sert a jouer a deux
+    // (ou a trois) depuis l'app : l'assistant du clavier exige d'appuyer
+    // physiquement sur chaque buzzer present, ce qui est impossible a
+    // piloter a distance - et le clavier est de toute facon verrouille.
+    int consumePresenceMask();
+
     // Etat de lecture rapporte par l'app ("SFX_BUSY|0/1") quand elle joue
     // les sons a notre place : remplace la broche BUSY du DFPlayer, qui ne
     // bouge plus dans ce mode. Voir Mp3::isBusy().
@@ -86,6 +94,7 @@ class BleLink {
     unsigned long _lastControlMillis = 0;
     int _pendingGameSelect = -1;
     int _pendingCategoryMask = -1;
+    int _pendingPresenceMask = -1;
     bool _appSoundBusy = false;
     bool _appHandlesSound = true;
     char _pendingSoundCommand = 0;

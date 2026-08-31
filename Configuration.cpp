@@ -9,13 +9,19 @@ void Configuration::init() {
   display.setText("C:Jeu D:Volu #:Jouer", 3);
 }
 
-// Le jeu Simon exige les 4 buzzers : on refuse le lancement et on renvoie
-// vers l'assistant de configuration.
+// Le jeu Simon a besoin d'au moins deux couleurs a memoriser : a un seul
+// joueur, il suffirait d'appuyer a chaque fois. On refuse donc le lancement
+// et on renvoie vers l'assistant de configuration.
 void Configuration::showFourPlayersWarning() {
   warningShown = true;
+  // Cet avertissement vit sur le LCD, qui est fige tant que l'app a le
+  // controle : sans cette telemetrie, "Lancer la partie" depuis l'app ne
+  // ferait rien du tout, sans un mot d'explication nulle part. L'intervalle
+  // (min|max) permet a l'app de dire "au moins deux" plutot que "exactement".
+  ble.send("WARN|PLAYERS|2|4");
   display.clear();
-  display.setText("  SIMON : 4 JOUEURS", 0);
-  display.setText("Buzzers manquants", 1);
+  display.setText(" SIMON : 2 A 4 JOUEURS", 0);
+  display.setText("Il en faut au moins 2", 1);
   display.setText("A: config buzzers", 2);
   display.setText("Autre touche: menu", 3);
 }
@@ -24,6 +30,7 @@ void Configuration::showFourPlayersWarning() {
 // importe lesquels, il se joue toujours a deux.
 void Configuration::showTwoPlayersWarning() {
   warningShown = true;
+  ble.send("WARN|PLAYERS|2|2");   // meme raison que ci-dessus, mais exactement deux
   display.clear();
   display.setText("   DUEL : 2 JOUEURS", 0);
   display.setText("Il en faut exactement", 1);
@@ -56,8 +63,8 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
       GameMode mode = buzzer.getGameMode();
       bool isSimon = (mode == GAME_SIMON || mode == GAME_SIMON_REVERSE);
       if (isSimon) {
-        if (!buzzer.hasFourPlayers()) {
-          showFourPlayersWarning(); // Simon (endroit ou envers) ne se joue qu'à 4
+        if (buzzer.playerCount() < 2) {
+          showFourPlayersWarning(); // Simon se joue de 2 à 4, jamais seul
           return CONFIGURATION;
         }
         buzzer.resetScores();       // nouvelle partie : scores remis à zéro

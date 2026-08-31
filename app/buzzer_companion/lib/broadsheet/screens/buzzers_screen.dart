@@ -184,14 +184,11 @@ class _BuzzerRow extends StatelessWidget {
             width: 190,
             child: _TeamNameField(index: index, teams: teams),
           ),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
-            decoration: BoxDecoration(color: present ? BSColors.accent100 : BSColors.neutral100),
-            child: Text(
-              present ? 'Présent' : 'Absent',
-              style: BSType.body(size: 13, color: present ? BSColors.accent800 : BSColors.neutral800),
-            ),
-          ),
+          // Bascule, et non plus une simple étiquette : c'est ainsi qu'on
+          // joue à deux ou à trois. L'assistant du clavier fait la même
+          // chose mais exige un appui physique sur chaque buzzer présent,
+          // geste que l'app ne peut pas reproduire à distance.
+          _PresenceToggle(index: index, game: game, ble: ble),
           const SizedBox(width: BSSpace.s3),
           // Le nom prend la place restante plutôt qu'une largeur fixe :
           // avec trois boutons, une largeur figée faisait déborder la
@@ -431,6 +428,44 @@ class _VolumeControl extends StatelessWidget {
         ),
         Text('${(sound.volume * 100).round()} %', style: BSType.body(size: 15, color: BSColors.neutral700)),
       ],
+    );
+  }
+}
+
+// Présent / absent, en un clic. Le Mega reçoit l'état complet des quatre
+// (SET_PRESENT|<masque>) plutôt qu'un changement isolé : l'app est la source
+// de vérité pendant qu'elle a le contrôle, et un état complet ne peut pas se
+// désynchroniser si un message se perd.
+class _PresenceToggle extends StatelessWidget {
+  const _PresenceToggle({required this.index, required this.game, required this.ble});
+
+  final int index;
+  final GameState game;
+  final BleLinkService ble;
+
+  @override
+  Widget build(BuildContext context) {
+    final present = game.present[index];
+    return Tooltip(
+      message: present ? 'Retirer ce buzzer de la partie' : 'Remettre ce buzzer en jeu',
+      child: InkWell(
+        onTap: () {
+          final next = List<bool>.from(game.present);
+          next[index] = !present;
+          ble.setPresence(next);
+        },
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+          decoration: BoxDecoration(
+            color: present ? BSColors.accent100 : BSColors.neutral100,
+            border: Border.all(color: present ? BSColors.accent300 : BSColors.neutral300),
+          ),
+          child: Text(
+            present ? 'Présent' : 'Absent',
+            style: BSType.body(size: 13, color: present ? BSColors.accent800 : BSColors.neutral800),
+          ),
+        ),
+      ),
     );
   }
 }
