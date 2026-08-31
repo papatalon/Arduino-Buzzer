@@ -146,8 +146,11 @@ void SoundGame::playNext() {
     mp3.playBuzzer(owner);
   } else {
     int decoy = pickDecoySound();
-    if (decoy >= 0) {
-      mp3.playBuzzerSound(decoy);
+    if (decoy >= 0 || mp3.isDelegated()) {
+      // Delegue : l'app choisit elle-meme un leurre qu'aucun buzzer
+      // present ne possede (elle seule connait les assignations), donc
+      // l'index calcule ici est ignore de son cote.
+      mp3.playDecoySound(decoy);
     } else {
       owner = pickPlayer();          // aucun son libre : on retombe sur un joueur
       if (owner >= 0) {

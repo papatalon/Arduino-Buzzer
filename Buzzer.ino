@@ -97,6 +97,7 @@ void loop() {
     // aucune app n'est encore connectee pour le recevoir.
     BleLink::shared().send(String("AUDIO|") + (mp3.isSimulation() ? "0" : "1")
                            + "|" + String(mp3.getVolume()));
+    mp3.sendAllSoundAssignments();
     // Question en cours : QUESTION n'est envoye qu'au tirage, donc une app
     // qui se (re)connecte en pleine partie afficherait une question vide.
     // Type distinct (QSYNC) et non QUESTION : cote app, QUESTION compte une
@@ -150,6 +151,34 @@ PhaseMode getCurrentMode() {
   int gameSelect = BleLink::shared().consumeGameSelect();
   if (gameSelect >= 0) {
     return configuration.selectGameIndex(gameSelect);
+  }
+
+  // Configuration des sons du DFPlayer pilotee depuis l'app : reproduit ce
+  // que fait l'assistant du clavier, qui est verrouille tant que l'app a le
+  // controle. N'affecte que l'etat du son, jamais la phase de jeu - on ne
+  // court-circuite donc pas le switch, contrairement a SELECT_GAME.
+  char soundCmd = BleLink::shared().consumeSoundCommand();
+  if (soundCmd != 0) {
+    int who = BleLink::shared().soundCommandBuzzer();
+    switch (soundCmd) {
+      case 'S':
+        mp3.shuffleBuzzers();
+        mp3.sendAllSoundAssignments();
+        break;
+      case 'N':
+        mp3.cycleSound(who);
+        mp3.sendAllSoundAssignments();
+        mp3.playBuzzer(who);      // on entend tout de suite le nouveau
+        break;
+      case 'P':
+        mp3.cyclePrevSound(who);
+        mp3.sendAllSoundAssignments();
+        mp3.playBuzzer(who);
+        break;
+      case 'E':
+        mp3.playBuzzer(who);
+        break;
+    }
   }
 
   // Commande App->Mega SET_CATS|<mask> (voir BleLink::consumeCategoryMask) :

@@ -100,8 +100,10 @@ void Duel::setGo() {
   buzzer.armButtons();
 
   int poolSize = mp3.buzzerSoundPoolSize();
-  if (poolSize > 0) {
-    mp3.playBuzzerSound(random(poolSize));
+  if (poolSize > 0 || mp3.isDelegated()) {
+    // Delegue : c'est l'app qui pioche dans sa bibliotheque, le compte
+    // local du Mega n'a plus cours.
+    mp3.playRandomBuzzerSound();
   } else {
     mp3.playSpin();        // repli improbable : dossier des buzzers vide
   }

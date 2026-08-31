@@ -2,8 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../audio/sound_engine.dart';
 import '../ble_link_service.dart';
 import '../popout/popout_launcher.dart';
+import '../team_names.dart';
 import '../protocol.dart';
 import 'game_setup_view.dart';
 import 'phosphor_duotone.dart';
@@ -36,11 +38,15 @@ class ConsoleShell extends StatefulWidget {
     required this.ble,
     required this.game,
     required this.popout,
+    required this.sound,
+    required this.teams,
   });
 
   final BleLinkService ble;
   final GameState game;
   final PopoutLauncher popout;
+  final SoundEngine sound;
+  final TeamNames teams;
 
   @override
   State<ConsoleShell> createState() => _ConsoleShellState();
@@ -112,6 +118,8 @@ class _ConsoleShellState extends State<ConsoleShell> {
                                   section: _section,
                                   game: widget.game,
                                   ble: widget.ble,
+                                  sound: widget.sound,
+                                  teams: widget.teams,
                                   onNavigate: (s) => setState(() => _section = s),
                                 ),
                               ),
@@ -122,7 +130,7 @@ class _ConsoleShellState extends State<ConsoleShell> {
                                 ),
                                 child: Padding(
                                   padding: const EdgeInsets.only(left: 32),
-                                  child: RightRail(game: widget.game, popout: widget.popout),
+                                  child: RightRail(game: widget.game, popout: widget.popout, teams: widget.teams),
                                 ),
                               ),
                             ],
@@ -270,7 +278,17 @@ class _DatelineRail extends StatelessWidget {
 }
 
 class _CenterColumn extends StatelessWidget {
-  const _CenterColumn({required this.section, required this.game, required this.ble, required this.onNavigate});
+  const _CenterColumn({
+    required this.section,
+    required this.game,
+    required this.ble,
+    required this.sound,
+    required this.teams,
+    required this.onNavigate,
+  });
+
+  final SoundEngine sound;
+  final TeamNames teams;
 
   final ConsoleSection section;
   final GameState game;
@@ -281,7 +299,7 @@ class _CenterColumn extends StatelessWidget {
   Widget build(BuildContext context) {
     switch (section) {
       case ConsoleSection.buzzers:
-        return BuzzersScreen(game: game);
+        return BuzzersScreen(game: game, sound: sound, ble: ble, teams: teams);
       case ConsoleSection.jeuActif:
         return GameChoiceScreen(
           game: game,
@@ -304,12 +322,12 @@ class _CenterColumn extends StatelessWidget {
       return EndConfirmView(ble: ble);
     }
     if (isEndGamePhase(game.phase)) {
-      return EndGameView(game: game, ble: ble);
+      return EndGameView(game: game, ble: ble, teams: teams);
     }
     if (game.questionFlowState != QuestionFlowState.none) {
       return Align(
         alignment: Alignment.topLeft,
-        child: QuestionFlowView(game: game, ble: ble),
+        child: QuestionFlowView(game: game, ble: ble, teams: teams),
       );
     }
     final label = phaseLabel(game.phase);

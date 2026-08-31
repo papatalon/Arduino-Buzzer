@@ -20,6 +20,7 @@ class PopoutSnapshot {
     this.answerText,
     this.questionsAsked = 0,
     this.qcountValue,
+    this.teamNames = const ['', '', '', ''],
   });
 
   static const empty = PopoutSnapshot(
@@ -39,7 +40,22 @@ class PopoutSnapshot {
   final int questionsAsked;
   final int? qcountValue;
 
-  factory PopoutSnapshot.fromGameState(GameState game) {
+  // Noms d'équipe : la fenêtre du pop-out ne partage pas la mémoire de la
+  // fenêtre principale, ils doivent donc voyager dans l'instantané. Une
+  // entrée vide veut dire « utiliser la couleur ».
+  final List<String> teamNames;
+
+  // Nom à afficher pour un buzzer, avec repli sur la couleur.
+  String teamName(int index) {
+    if (index < 0 || index >= kBuzzerColors.length) return '';
+    final custom = index < teamNames.length ? teamNames[index] : '';
+    return custom.isNotEmpty ? custom : kBuzzerColors[index].name;
+  }
+
+  // teamNames est obligatoire à dessein : un appel qui l'oubliait produisait
+  // un écran public muet sur les noms, sans erreur ni avertissement. Le
+  // compilateur attrape désormais le cas.
+  factory PopoutSnapshot.fromGameState(GameState game, {required List<String> teamNames}) {
     // La question elle-même n'est pas listée comme sensible dans le tableau
     // de confidentialité du design, mais le client a précisé que sur le
     // pop-out, elle ne doit apparaître qu'une fois le chrono lancé — pas
@@ -62,6 +78,7 @@ class PopoutSnapshot {
       answerText: game.answerRevealed ? game.answerText : null,
       questionsAsked: game.questionsAsked,
       qcountValue: game.qcountValue,
+      teamNames: teamNames,
     );
   }
 
@@ -78,6 +95,7 @@ class PopoutSnapshot {
       answerText: json['answerText'] as String?,
       questionsAsked: json['questionsAsked'] as int? ?? 0,
       qcountValue: json['qcountValue'] as int?,
+      teamNames: (json['teamNames'] as List?)?.cast<String>() ?? const ['', '', '', ''],
     );
   }
 
@@ -92,5 +110,6 @@ class PopoutSnapshot {
         'answerText': answerText,
         'questionsAsked': questionsAsked,
         'qcountValue': qcountValue,
+        'teamNames': teamNames,
       });
 }

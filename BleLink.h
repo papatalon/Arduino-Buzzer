@@ -44,6 +44,25 @@ class BleLink {
     // Consommee une seule fois - voir Configuration::confirmCategories().
     int consumeCategoryMask();
 
+    // Etat de lecture rapporte par l'app ("SFX_BUSY|0/1") quand elle joue
+    // les sons a notre place : remplace la broche BUSY du DFPlayer, qui ne
+    // bouge plus dans ce mode. Voir Mp3::isBusy().
+    bool appSoundBusy();
+
+    // Faux quand l'operateur a demande que le buzzer joue lui-meme les
+    // sons (pas de haut-parleur cote PC, par exemple). Transporte par le
+    // heartbeat, voir pollKey().
+    bool appHandlesSound();
+
+    // Commande de configuration des sons du DFPlayer demandee par l'app,
+    // ou 0 si rien en attente. Consommee une seule fois. Sert a piloter a
+    // distance ce que l'assistant du clavier fait localement - sans quoi,
+    // en mode "son du buzzer", personne ne pourrait reassigner les sons :
+    // l'app n'a pas prise dessus et le clavier est verrouille.
+    //   'S' = melanger, 'N' = suivant, 'P' = precedent, 'E' = ecouter
+    char consumeSoundCommand();
+    int soundCommandBuzzer();   // buzzer vise (0-3), -1 pour "melanger"
+
   private:
     BleLink();
     BleLink(const BleLink&) = delete;
@@ -56,6 +75,10 @@ class BleLink {
     unsigned long _lastControlMillis = 0;
     int _pendingGameSelect = -1;
     int _pendingCategoryMask = -1;
+    bool _appSoundBusy = false;
+    bool _appHandlesSound = true;
+    char _pendingSoundCommand = 0;
+    int _pendingSoundBuzzer = -1;
 };
 
 #endif

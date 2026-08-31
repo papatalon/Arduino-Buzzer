@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../popout/popout_launcher.dart';
 import '../popout/popout_snapshot.dart';
 import '../protocol.dart';
+import '../team_names.dart';
 import 'phosphor_duotone.dart';
 import 'tokens.dart';
 
@@ -10,10 +11,11 @@ import 'tokens.dart';
 // l'écran public, actions de partie. Voir design_handoff_buzzer_console
 // /README.md, section "Rail droit (340 px)".
 class RightRail extends StatelessWidget {
-  const RightRail({super.key, required this.game, required this.popout});
+  const RightRail({super.key, required this.game, required this.popout, required this.teams});
 
   final GameState game;
   final PopoutLauncher popout;
+  final TeamNames teams;
 
   @override
   Widget build(BuildContext context) {
@@ -22,9 +24,9 @@ class RightRail extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          _BuzzerTable(game: game),
+          _BuzzerTable(game: game, teams: teams),
           const SizedBox(height: BSSpace.s6),
-          _PublicScreenPreview(game: game, popout: popout),
+          _PublicScreenPreview(game: game, popout: popout, teams: teams),
         ],
       ),
     );
@@ -32,7 +34,8 @@ class RightRail extends StatelessWidget {
 }
 
 class _BuzzerTable extends StatelessWidget {
-  const _BuzzerTable({required this.game});
+  const _BuzzerTable({required this.game, required this.teams});
+  final TeamNames teams;
   final GameState game;
 
   @override
@@ -47,6 +50,8 @@ class _BuzzerTable extends StatelessWidget {
             present: game.present[i],
             score: game.scores[i],
             soundIndex: game.buzzerSound[i],
+            teams: teams,
+            index: i,
           ),
         ],
       ],
@@ -60,12 +65,16 @@ class _BuzzerRow extends StatelessWidget {
     required this.present,
     required this.score,
     required this.soundIndex,
+    required this.teams,
+    required this.index,
   });
 
   final BuzzerColor color;
   final bool present;
   final int score;
   final int? soundIndex;
+  final TeamNames teams;
+  final int index;
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +90,14 @@ class _BuzzerRow extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(color.name, style: BSType.buzzerNameConsole(size: 21)),
+                // Rail étroit (340 px) : un nom long est tronqué proprement
+                // plutôt que de déborder sur le score à sa droite.
+                Text(
+                  teams.nameFor(index),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: BSType.buzzerNameConsole(size: 21),
+                ),
                 Text(status, style: BSType.body(size: 14, color: BSColors.neutral700)),
               ],
             ),
@@ -94,9 +110,10 @@ class _BuzzerRow extends StatelessWidget {
 }
 
 class _PublicScreenPreview extends StatelessWidget {
-  const _PublicScreenPreview({required this.game, required this.popout});
+  const _PublicScreenPreview({required this.game, required this.popout, required this.teams});
   final GameState game;
   final PopoutLauncher popout;
+  final TeamNames teams;
 
   @override
   Widget build(BuildContext context) {
@@ -112,7 +129,9 @@ class _PublicScreenPreview extends StatelessWidget {
             return SizedBox(
               width: double.infinity,
               child: OutlinedButton.icon(
-                onPressed: active ? popout.close : () => popout.open(PopoutSnapshot.fromGameState(game)),
+                onPressed: active
+                    ? popout.close
+                    : () => popout.open(PopoutSnapshot.fromGameState(game, teamNames: teams.all)),
                 style: OutlinedButton.styleFrom(
                   foregroundColor: active ? BSColors.accent700 : BSColors.text,
                   backgroundColor: active ? BSColors.accent100 : null,

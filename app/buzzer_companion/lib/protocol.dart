@@ -161,6 +161,14 @@ List<int>? _parseInts(List<String> raw) {
   return result;
 }
 
+// Évènement sonore reçu du Mega : un type ("GOOD", "BUZZ"...) et, pour
+// BUZZ, l'index de la couleur concernée.
+class SfxEvent {
+  const SfxEvent(this.type, this.arg);
+  final String type;
+  final int? arg;
+}
+
 // État de la partie, reconstruit à partir des messages du protocole
 // Mega -> app (voir le plan companion-app pour le détail des messages).
 class GameState extends ChangeNotifier {
@@ -224,6 +232,12 @@ class GameState extends ChangeNotifier {
 
   StreamSubscription<String>? _sub;
 
+  // Les évènements sonores sont un flux et non un état : rejouer le même
+  // son deux fois de suite doit produire deux notifications distinctes, ce
+  // qu'un champ observable ne permettrait pas.
+  final _sfxController = StreamController<SfxEvent>.broadcast();
+  Stream<SfxEvent> get sfxEvents => _sfxController.stream;
+
   void listenTo(Stream<String> messages) {
     _sub?.cancel();
     _sub = messages.listen(_handleMessage);
@@ -232,6 +246,7 @@ class GameState extends ChangeNotifier {
   @override
   void dispose() {
     _sub?.cancel();
+    _sfxController.close();
     super.dispose();
   }
 
@@ -300,9 +315,21 @@ class GameState extends ChangeNotifier {
           }
           break;
         case 'SOUND':
-          // Pas encore consommé côté UI (viendra avec la lecture de son
-          // dans l'app) — reconnu, donc pas compté comme rejeté.
+          // Ancien format (dossier/fichier), encore émis quand le buzzer
+          // joue lui-même : l'app n'en fait rien, les index du Mega ne
+          // correspondent pas forcément à sa bibliothèque. Reconnu, donc
+          // pas compté comme rejeté.
           handled = true;
+          break;
+        case 'SFX':
+          // Évènement sonore sémantique : le Mega dit ce qui se passe
+          // ("le bleu a buzzé", "bonne réponse"), l'app choisit le fichier
+          // dans sa propre bibliothèque. Voir Mp3::delegateToApp.
+          if (parts.length >= 2) {
+            final arg = parts.length >= 3 ? int.tryParse(parts[2]) : null;
+            _sfxController.add(SfxEvent(parts[1], arg));
+            handled = true;
+          }
           break;
         case 'ENDGAME':
           if (parts.length == 3) {

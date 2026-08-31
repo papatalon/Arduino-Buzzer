@@ -7,6 +7,7 @@ import 'package:universal_ble/universal_ble.dart';
 
 const _lastDeviceIdKey = 'last_device_id';
 const _lastDeviceNameKey = 'last_device_name';
+const _appHandlesSoundKey = 'app_handles_sound';
 
 // Encapsule tout le dialogue BLE avec l'AT-09 : scan, connexion (avec
 // reconnexion automatique au dernier appareil connu), et ré-assemblage des
@@ -50,6 +51,27 @@ class BleLinkService extends ChangeNotifier {
   // déconnexion (envoyé au mieux-effort seulement).
   Timer? _controlHeartbeat;
 
+  // Où sort le son : l'app (défaut) ou le haut-parleur du buzzer. Réglable
+  // par l'opérateur — sans haut-parleur côté PC, l'app muette rendrait le
+  // buzzer inutilisable. Voyage dans le heartbeat (voir
+  // _startControlHeartbeat) pour se rétablir tout seul si le Mega redémarre.
+  bool appHandlesSound = true;
+
+  Future<void> setAppHandlesSound(bool value) async {
+    appHandlesSound = value;
+    notifyListeners();
+    // Envoi immédiat : sans ça le changement n'agirait qu'au prochain
+    // battement, jusqu'à une seconde plus tard.
+    await _writeUartLine(
+      connectedDeviceId,
+      _uartServiceId,
+      _uartCharacteristicId,
+      'CTRL|1|${value ? 1 : 0}',
+    );
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_appHandlesSoundKey, value);
+  }
+
   // Dernier "PONG" reçu (réponse du Mega à chaque "CTRL|1", voir
   // BleLink::pollKey côté firmware) — contrairement à la télémétrie de jeu,
   // qui peut légitimement rester silencieuse en attendant un buzz, un
@@ -58,6 +80,16 @@ class BleLinkService extends ChangeNotifier {
   DateTime? _lastPongAt;
 
   void init() {
+    // Réglage de sortie audio retenu d'une session à l'autre : un
+    // opérateur sans haut-parleur ne veut pas le rebasculer chaque fois.
+    SharedPreferences.getInstance().then((prefs) {
+      final saved = prefs.getBool(_appHandlesSoundKey);
+      if (saved != null && saved != appHandlesSound) {
+        appHandlesSound = saved;
+        notifyListeners();
+      }
+    });
+
     // Rafraîchit en continu (liste d'appareils qui arrivent pendant un scan,
     // âge du dernier message sur l'écran "Appareil") plutôt que de suivre un
     // drapeau "dirty" par type d'évènement — l'UI de cette app reste assez
@@ -89,6 +121,16 @@ class BleLinkService extends ChangeNotifier {
     UniversalBle.getBluetoothAvailabilityState().then((state) {
       availability = state;
       notifyListeners();
+      // La reconnexion automatique n'est tentée qu'une fois l'adaptateur
+      // confirmé allumé. Lancée dès init() comme avant, elle partait
+      // pendant que la pile Bluetooth de Windows finissait de s'initialiser
+      // : la connexion "réussissait" mais la découverte des services ne
+      // trouvait aucune caractéristique notifiable. C'est ce qui obligeait
+      // à cliquer "Reconnecter" après chaque démarrage — ce bouton, lui,
+      // s'exécute forcément une fois la pile prête.
+      if (state == AvailabilityState.poweredOn && connectedDeviceId == null) {
+        _tryAutoReconnect();
+      }
     });
 
     UniversalBle.onScanResult = (device) {
@@ -133,7 +175,8 @@ class BleLinkService extends ChangeNotifier {
       _handleIncomingBytes(value);
     };
 
-    _tryAutoReconnect();
+    // Pas de _tryAutoReconnect() ici : elle est déclenchée par la lecture
+    // de l'état de l'adaptateur ci-dessus, une fois celui-ci confirmé prêt.
   }
 
   @override
@@ -157,11 +200,43 @@ class BleLinkService extends ChangeNotifier {
   // Tente de se reconnecter au dernier appareil connu (par adresse) sans
   // attendre un scan manuel.
   Future<void> _tryAutoReconnect() async {
+    // Deux chemins déclenchent cette reconnexion : la lecture initiale de
+    // l'état de l'adaptateur et l'évènement onAvailabilityChange, qui
+    // arrivent tous deux au démarrage. Sans ce verrou, deux séquences
+    // déconnexion/scan/connexion tournaient en parallèle sur le même
+    // appareil — et Windows renvoyait alors une base GATT incomplète
+    // (services génériques seulement, sans le FFE0 de l'AT-09), d'où
+    // "aucune caractéristique notifiable" à chaque démarrage. Constaté
+    // dans les traces, pas déduit.
+    if (_reconnectInProgress) return;
+    _reconnectInProgress = true;
+    try {
+      await _autoReconnectInner();
+    } finally {
+      _reconnectInProgress = false;
+    }
+  }
+
+  Future<void> _autoReconnectInner() async {
     final prefs = await SharedPreferences.getInstance();
     final savedId = prefs.getString(_lastDeviceIdKey);
     if (savedId == null) return;
 
     connectedDeviceName = prefs.getString(_lastDeviceNameKey);
+
+    // Déconnexion préalable, même si l'app vient de démarrer et se croit
+    // déconnectée : quand le processus précédent s'est fermé, Windows garde
+    // souvent la connexion BLE ouverte au niveau système. Un connect() dans
+    // cet état répond "déjà connecté" sans erreur, mais le nouveau
+    // processus se retrouve sans session GATT utilisable — c'est le
+    // fantôme classique. C'est exactement ce que faisait le bouton
+    // "Reconnecter", seul moyen fiable jusqu'ici de repartir proprement.
+    try {
+      await UniversalBle.disconnect(savedId);
+      await Future.delayed(const Duration(milliseconds: 300));
+    } catch (_) {
+      // Attendu si Windows ne le considérait effectivement pas connecté.
+    }
 
     // Un bref scan avant de se connecter par adresse force Windows à
     // rafraîchir sa vue de l'appareil plutôt que de réutiliser une session
@@ -322,6 +397,35 @@ class BleLinkService extends ChangeNotifier {
     notifyListeners();
   }
 
+  // Émulation de la broche BUSY du DFPlayer : quand l'app joue les sons à
+  // la place du buzzer, le firmware n'a plus aucun repère pour savoir si un
+  // son est en cours. Il s'en sert pour caler le chenillard de l'intro sur
+  // la musique (Buzzer::songFinished), d'où ce signal.
+  Future<void> sendSoundBusy(bool busy) async {
+    await _writeUartLine(
+      connectedDeviceId,
+      _uartServiceId,
+      _uartCharacteristicId,
+      'SFX_BUSY|${busy ? 1 : 0}',
+    );
+  }
+
+  // Configuration des sons du DFPlayer, pilotée à distance. Sans ça, en
+  // mode « son du buzzer » personne ne pourrait réassigner les sons :
+  // l'app ne joue pas, et le clavier du buzzer est verrouillé tant qu'elle
+  // a le contrôle. Reproduit l'assistant du clavier.
+  Future<void> _sendSoundCommand(String action, int buzzerId) => _writeUartLine(
+        connectedDeviceId,
+        _uartServiceId,
+        _uartCharacteristicId,
+        'SND|$action|$buzzerId',
+      );
+
+  Future<void> buzzerSoundShuffle() => _sendSoundCommand('S', -1);
+  Future<void> buzzerSoundNext(int buzzerId) => _sendSoundCommand('N', buzzerId);
+  Future<void> buzzerSoundPrevious(int buzzerId) => _sendSoundCommand('P', buzzerId);
+  Future<void> buzzerSoundPreview(int buzzerId) => _sendSoundCommand('E', buzzerId);
+
   // Confirme la sélection de catégories de questions (protocole
   // "SET_CATS|<mask>", voir Configuration::confirmCategories côté Mega) —
   // une vraie commande (pas une simulation de touche) : le masque final
@@ -341,9 +445,11 @@ class BleLinkService extends ChangeNotifier {
   void _startControlHeartbeat() {
     _controlHeartbeat?.cancel();
     _lastPongAt = DateTime.now();  // laisse une marge avant le premier chien de garde
-    _writeUartLine(connectedDeviceId, _uartServiceId, _uartCharacteristicId, 'CTRL|1');
+    _writeUartLine(connectedDeviceId, _uartServiceId, _uartCharacteristicId,
+        'CTRL|1|${appHandlesSound ? 1 : 0}');
     _controlHeartbeat = Timer.periodic(const Duration(seconds: 1), (_) {
-      _writeUartLine(connectedDeviceId, _uartServiceId, _uartCharacteristicId, 'CTRL|1');
+      _writeUartLine(connectedDeviceId, _uartServiceId, _uartCharacteristicId,
+        'CTRL|1|${appHandlesSound ? 1 : 0}');
       _checkLinkHealth();
     });
   }

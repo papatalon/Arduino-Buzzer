@@ -61,17 +61,31 @@ class PopoutLauncher extends ChangeNotifier {
 
   Future<void> pushSnapshot(PopoutSnapshot snapshot) async {
     if (_controller == null) return;
-    await popoutChannel.invokeMethod('updateState', snapshot.encode());
+    try {
+      await popoutChannel.invokeMethod('updateState', snapshot.encode());
+    } catch (_) {
+      // Fenêtre fermée entre la vérification ci-dessus et l'envoi : un
+      // instantané perdu est sans conséquence, le suivant suivra.
+    }
   }
 
   Future<void> close() async {
-    if (_controller == null) return;
+    final controller = _controller;
+    if (controller == null) return;
+    // Oublié AVANT d'attendre la fermeture : sinon, pendant que la fenêtre
+    // se ferme, un instantané poussé par la télémétrie continuerait de
+    // viser un canal en train de disparaître.
+    _controller = null;
+    notifyListeners();
     // Pas de .close() intégré à WindowController : on demande à la fenêtre
     // de se fermer elle-même (voir le handler enregistré dans
     // PopoutWindow._registerCloseHandler).
-    await _controller!.invokeMethod('window_close');
-    _controller = null;
-    notifyListeners();
+    try {
+      await controller.invokeMethod('window_close');
+    } catch (_) {
+      // La fenêtre a pu disparaître entre-temps (fermeture native) : rien
+      // à rattraper, l'état local est déjà à jour.
+    }
   }
 
   @override

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../ble_link_service.dart';
 import '../protocol.dart';
+import '../team_names.dart';
 import 'phosphor_duotone.dart';
 import 'pulse.dart';
 import 'tokens.dart';
@@ -21,10 +22,11 @@ import 'tokens.dart';
 // est maintenant le mode de contrôle principal, le raccourci clavier
 // physique n'a plus d'intérêt pour l'opérateur (décision du client).
 class QuestionFlowView extends StatelessWidget {
-  const QuestionFlowView({super.key, required this.game, required this.ble});
+  const QuestionFlowView({super.key, required this.game, required this.ble, required this.teams});
 
   final GameState game;
   final BleLinkService ble;
+  final TeamNames teams;
 
   @override
   Widget build(BuildContext context) {
@@ -57,9 +59,9 @@ class QuestionFlowView extends StatelessWidget {
         _AnswerBlock(state: state, answer: game.answerText ?? ''),
         const SizedBox(height: BSSpace.s6),
         switch (state) {
-          QuestionFlowState.arming => _ArmingBlock(game: game, ble: ble),
-          QuestionFlowState.buzzed => _BuzzedBlock(game: game, ble: ble),
-          QuestionFlowState.scored => _ScoredBlock(game: game, ble: ble),
+          QuestionFlowState.arming => _ArmingBlock(game: game, ble: ble, teams: teams),
+          QuestionFlowState.buzzed => _BuzzedBlock(game: game, ble: ble, teams: teams),
+          QuestionFlowState.scored => _ScoredBlock(game: game, ble: ble, teams: teams),
           QuestionFlowState.revealed => _RevealedBlock(ble: ble),
           QuestionFlowState.none => const SizedBox.shrink(),
         },
@@ -107,9 +109,10 @@ class EndConfirmView extends StatelessWidget {
 // bris d'egalite sur '#', sinon '#' revient au menu : les libelles
 // suivent donc l'etat reel (voir le message ENDGAME).
 class EndGameView extends StatelessWidget {
-  const EndGameView({super.key, required this.game, required this.ble});
+  const EndGameView({super.key, required this.game, required this.ble, required this.teams});
   final GameState game;
   final BleLinkService ble;
+  final TeamNames teams;
 
   @override
   Widget build(BuildContext context) {
@@ -130,7 +133,7 @@ class EndGameView extends StatelessWidget {
               children: [
                 Container(width: 52, height: 52, color: winner.fill),
                 const SizedBox(width: BSSpace.s3),
-                Text('${winner.name} gagne', style: BSType.buzzerNameConsole(size: 38)),
+                Text('${teams.nameFor(idx!)} gagne', style: BSType.buzzerNameConsole(size: 38)),
               ],
             ),
           if (tie)
@@ -237,7 +240,8 @@ class _GhostButton extends StatelessWidget {
 // --- Blocs par état ------------------------------------------------------
 
 class _ArmingBlock extends StatelessWidget {
-  const _ArmingBlock({required this.game, required this.ble});
+  const _ArmingBlock({required this.game, required this.ble, required this.teams});
+  final TeamNames teams;
   final GameState game;
   final BleLinkService ble;
 
@@ -270,7 +274,7 @@ class _ArmingBlock extends StatelessWidget {
         ),
         const SizedBox(height: BSSpace.s3),
         Text(
-          rejected != null ? '${rejected.name} s\'est trompé' : "Personne n'a buzzé",
+          rejected != null ? '${teams.nameFor(idx!)} s\'est trompé' : "Personne n'a buzzé",
           style: BSType.body(size: 17, color: BSColors.neutral700),
         ),
         const SizedBox(height: BSSpace.s1),
@@ -312,7 +316,8 @@ class _ArmingBlock extends StatelessWidget {
 }
 
 class _BuzzedBlock extends StatelessWidget {
-  const _BuzzedBlock({required this.game, required this.ble});
+  const _BuzzedBlock({required this.game, required this.ble, required this.teams});
+  final TeamNames teams;
   final GameState game;
   final BleLinkService ble;
 
@@ -332,7 +337,7 @@ class _BuzzedBlock extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('${color.name} a buzzé', style: BSType.buzzerNameConsole(size: 38)),
+                Text('${teams.nameFor(idx)} a buzzé', style: BSType.buzzerNameConsole(size: 38)),
                 Text(
                   'Chrono arrêté · les autres buzzers sont neutralisés',
                   style: BSType.body(size: 15, color: BSColors.neutral600),
@@ -355,7 +360,8 @@ class _BuzzedBlock extends StatelessWidget {
 }
 
 class _ScoredBlock extends StatelessWidget {
-  const _ScoredBlock({required this.game, required this.ble});
+  const _ScoredBlock({required this.game, required this.ble, required this.teams});
+  final TeamNames teams;
   final GameState game;
   final BleLinkService ble;
 
@@ -375,7 +381,7 @@ class _ScoredBlock extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('${color.name} marque', style: BSType.buzzerNameConsole(size: 56)),
+                Text('${teams.nameFor(idx)} marque', style: BSType.buzzerNameConsole(size: 56)),
                 Text('${game.scores[idx]}', style: BSType.scoreConsole(color: BSColors.accent700)),
               ],
             ),

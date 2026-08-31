@@ -38,7 +38,7 @@ dependencies:
   shared_preferences: ^2.5.5
   desktop_multi_window: ^0.3.0
   window_manager: ^0.5.2
-
+  flutter_soloud: ^4.1.7
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -61,10 +61,18 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  # Bibliothèque de sons embarquée : l'app doit être autonome, sans dépendre
+  # de la carte SD du buzzer. Les dossiers sont déclarés en bloc (et non
+  # fichier par fichier) pour qu'ajouter un son ne demande qu'un rebuild —
+  # le compte réel est lu à l'exécution depuis AssetManifest, voir
+  # lib/audio/sound_library.dart.
+  assets:
+    - assets/sounds/01_Intro/
+    - assets/sounds/02_Buzzer/
+    - assets/sounds/03_Good/
+    - assets/sounds/04_Bad/
+    - assets/sounds/05_Waiting/
+    - assets/sounds/06_Divers/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

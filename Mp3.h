@@ -37,16 +37,28 @@ class Mp3 {
     void init(void (*onTick)() = nullptr);
     void playInit();
 
-    // Vrai tant qu'une chanson est en cours de lecture (broche BUSY LOW).
+    // Vrai tant qu'une chanson est en cours de lecture. Lit la broche BUSY
+    // en temps normal ; en mode delegue c'est l'app qui rapporte son etat
+    // de lecture (voir setAppBusy), sinon le chenillard de l'intro n'aurait
+    // plus aucun repere pour se caler sur la musique.
     // Toujours faux en simulation (aucun module -> BUSY indisponible).
     bool isBusy();
     bool isSimulation();
+
+    // Vrai quand l'app joue les sons a notre place : le Mega ne gere plus
+    // que les lumieres et se contente d'annoncer les evenements sonores.
+    bool isDelegated();
 
     void playBuzzer(int buzzerId);
 
     // Joue un son quelconque du dossier des buzzers (index 0-based), même s'il
     // n'est attribué à aucun buzzer : sert aux « leurres » du jeu Ne buzze pas.
     void playBuzzerSound(int soundIndex);
+
+    // Variantes semantiques, necessaires parce qu'en mode delegue l'app
+    // detient les assignations : elle seule sait quels sons sont libres.
+    void playRandomBuzzerSound();     // Duel : signal de depart, son quelconque
+    void playDecoySound(int soundIndex);  // Ne buzze pas : leurre
     int buzzerSoundPoolSize();              // nombre de sons disponibles
     void playGoodAnswer();
     void playBadAnswer();
@@ -68,6 +80,12 @@ class Mp3 {
     void lockSound(int buzzerId);           // verrouille le son du buzzer
     void ensureUnlockedSound(int buzzerId); // décale si le son est déjà verrouillé ailleurs
     void resetConfig();                     // déverrouille tous les buzzers
+
+    // Annonce les 4 assignations d'un coup. Necessaire a la (re)connexion :
+    // CFG_SOUND n'etait emis que par lockSound(), donc une app qui se
+    // connectait sans passer par l'assistant n'apprenait jamais quel son
+    // porte chaque buzzer.
+    void sendAllSoundAssignments();
 
   private:
 
@@ -93,6 +111,12 @@ class Mp3 {
     // message SOUND, appele par chaque play*() juste avant (ou a la place
     // de) la lecture DFPlayer.
     void sendSoundEvent(int folder, int file);
+
+    // Annonce l'evenement sonore a l'app et renvoie true si c'est elle qui
+    // joue (l'appelant doit alors s'arreter la, sans commander le
+    // DFPlayer). Un seul point de decision, plutot que la meme condition
+    // repetee dans chaque play*().
+    bool delegateToApp(const String& event);
 
     // Attend ms millisecondes en appelant onTick périodiquement (animation).
     void waitAnimated(unsigned long ms, void (*onTick)());

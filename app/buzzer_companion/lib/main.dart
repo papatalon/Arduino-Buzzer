@@ -1,7 +1,11 @@
+import 'dart:async';
+
 import 'package:desktop_multi_window/desktop_multi_window.dart';
 import 'package:flutter/material.dart';
 import 'package:window_manager/window_manager.dart';
 
+import 'audio/sound_engine.dart';
+import 'audio/sound_library.dart';
 import 'ble_link_service.dart';
 import 'broadsheet/console_shell.dart';
 import 'broadsheet/tokens.dart';
@@ -10,6 +14,7 @@ import 'popout/popout_snapshot.dart';
 import 'popout/popout_window.dart';
 import 'popout/window_launch_args.dart';
 import 'protocol.dart';
+import 'team_names.dart';
 
 Future<void> main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -49,6 +54,9 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   final _ble = BleLinkService();
   final _game = GameState();
   final _popout = PopoutLauncher();
+  final _teams = TeamNames();
+  late final SoundEngine _sound;
+  StreamSubscription<SfxEvent>? _sfxSub;
 
   @override
   void initState() {
@@ -56,16 +64,53 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     _ble.init();
     _game.listenTo(_ble.messages);
     _game.addListener(_pushSnapshotToPopout);
+
+    // Moteur de son : joue la bibliothèque embarquée à la place du DFPlayer
+    // et renvoie au Mega son état de lecture, qui remplace la broche BUSY
+    // (voir SoundEngine).
+    _sound = SoundEngine(
+      library: SoundLibrary(),
+      onBusyChanged: _ble.sendSoundBusy,
+    );
+    _sound.init();
+    _teams.load();
+    _teams.addListener(_pushSnapshotToPopout);
+    _sfxSub = _game.sfxEvents.listen(_handleSfx);
+  }
+
+  void _handleSfx(SfxEvent event) {
+    switch (event.type) {
+      case 'INTRO':
+        _sound.playIntro();
+      case 'GOOD':
+        _sound.playGood();
+      case 'BAD':
+        _sound.playBad();
+      case 'WAIT':
+        _sound.playWaiting();
+      case 'SPIN':
+        _sound.playSpin();
+      case 'BUZZ':
+        if (event.arg != null) _sound.playBuzzer(event.arg!);
+      case 'RANDBUZZ':
+        _sound.playRandomBuzzerSound();
+      case 'DECOY':
+        _sound.playDecoy(_game.present);
+    }
   }
 
   void _pushSnapshotToPopout() {
-    _popout.pushSnapshot(PopoutSnapshot.fromGameState(_game));
+    _popout.pushSnapshot(PopoutSnapshot.fromGameState(_game, teamNames: _teams.all));
   }
 
   @override
   void dispose() {
+    _sfxSub?.cancel();
+    _sound.dispose();
     _ble.dispose();
     _game.removeListener(_pushSnapshotToPopout);
+    _teams.removeListener(_pushSnapshotToPopout);
+    _teams.dispose();
     _game.dispose();
     _popout.close();
     super.dispose();
@@ -85,7 +130,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
         splashFactory: NoSplash.splashFactory,
         highlightColor: Colors.transparent,
       ),
-      home: ConsoleShell(ble: _ble, game: _game, popout: _popout),
+      home: ConsoleShell(ble: _ble, game: _game, popout: _popout, sound: _sound, teams: _teams),
     );
   }
 }

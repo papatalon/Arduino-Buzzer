@@ -4,6 +4,8 @@
 
 #include "flutter/generated_plugin_registrant.h"
 #include "desktop_multi_window/desktop_multi_window_plugin.h"
+#include <screen_retriever_windows/screen_retriever_windows_plugin_c_api.h>
+#include <window_manager/window_manager_plugin.h>
 
 FlutterWindow::FlutterWindow(const flutter::DartProject& project)
     : project_(project) {}
@@ -30,7 +32,20 @@ bool FlutterWindow::OnCreate() {
     auto *flutter_view_controller =
         reinterpret_cast<flutter::FlutterViewController *>(controller);
     auto *registry = flutter_view_controller->engine();
-    RegisterPlugins(registry);
+    // Enregistrement volontairement restreint, au lieu du RegisterPlugins()
+    // complet : la fenetre de l'ecran public n'utilise que le canal
+    // multi-fenetre et window_manager (voir lib/popout/popout_window.dart).
+    // Lui donner aussi universal_ble creait une seconde instance du greffon
+    // BLE dans le meme processus, recreee a chaque detachement - et ce
+    // greffon nous a deja valu deux plantages natifs sous Windows.
+    // L'ecran public n'a rien a faire du Bluetooth : il recoit son etat par
+    // le canal, pas par la radio.
+    DesktopMultiWindowPluginRegisterWithRegistrar(
+        registry->GetRegistrarForPlugin("DesktopMultiWindowPlugin"));
+    ScreenRetrieverWindowsPluginCApiRegisterWithRegistrar(
+        registry->GetRegistrarForPlugin("ScreenRetrieverWindowsPluginCApi"));
+    WindowManagerPluginRegisterWithRegistrar(
+        registry->GetRegistrarForPlugin("WindowManagerPlugin"));
   });
   SetChildContent(flutter_controller_->view()->GetNativeWindow());
 

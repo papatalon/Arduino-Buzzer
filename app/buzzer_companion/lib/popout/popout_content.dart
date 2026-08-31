@@ -155,7 +155,16 @@ class _BuzzedZone extends StatelessWidget {
       children: [
         Pulse(child: Container(width: 88, height: 88, color: color.fill)),
         const SizedBox(height: BSSpace.s4),
-        Text('${color.name.toUpperCase()} A BUZZÉ', style: BSType.heroDigitPopout(size: 64, color: color.fill)),
+        // Rétrécit si le nom d'équipe est long : à 64 px, quelques mots de
+        // plus suffisent à déborder les 1440 px de l'écran.
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            '${snapshot.teamName(idx).toUpperCase()} A BUZZÉ',
+            maxLines: 1,
+            style: BSType.heroDigitPopout(size: 64, color: color.fill),
+          ),
+        ),
       ],
     );
   }
@@ -173,7 +182,14 @@ class _ScoredZone extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         if (color != null)
-          Text('${color.name.toUpperCase()} MARQUE', style: BSType.heroDigitPopout(size: 96, color: color.fill)),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              '${snapshot.teamName(idx!).toUpperCase()} MARQUE',
+              maxLines: 1,
+              style: BSType.heroDigitPopout(size: 96, color: color.fill),
+            ),
+          ),
         const SizedBox(height: BSSpace.s4),
         if (snapshot.answerText != null)
           Text(snapshot.answerText!, style: BSType.answerPopout(size: 40), textAlign: TextAlign.center),
@@ -238,15 +254,33 @@ class _Scoreboard extends StatelessWidget {
                   children: [
                     Container(width: 22, height: 22, margin: const EdgeInsets.only(top: 6), color: color.fill),
                     const SizedBox(width: 14),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(color.name.toUpperCase(), style: BSType.buzzerNamePopout()),
-                        Text(
-                          present && i < snapshot.scores.length ? '${snapshot.scores[i]}' : '',
-                          style: BSType.scorePopout(),
+                    // Expanded borne la colonne à sa part de l'écran, sinon
+                    // un nom long déborde sur le buzzer voisin. Le nom
+                    // rétrécit pour tenir plutôt que d'être tronqué : sur un
+                    // écran vu par la salle, un nom d'équipe coupé au milieu
+                    // ferait négligé.
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            FittedBox(
+                              fit: BoxFit.scaleDown,
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                snapshot.teamName(i).toUpperCase(),
+                                maxLines: 1,
+                                style: BSType.buzzerNamePopout(),
+                              ),
+                            ),
+                            Text(
+                              present && i < snapshot.scores.length ? '${snapshot.scores[i]}' : '',
+                              style: BSType.scorePopout(),
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
                   ],
                 ),
