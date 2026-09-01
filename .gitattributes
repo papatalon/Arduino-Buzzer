@@ -1,0 +1,16 @@
+# Le catalogue publie (site/) est servi tel quel, et les empreintes SHA-1 que
+# porte catalogue.json sont calculees sur les octets que le generateur ecrit,
+# en LF. Laisser git le ressortir en CRLF sur un poste Windows a deux effets
+# desagreables :
+#
+#   tool/verify_catalogue.dart echoue sur chaque empreinte quand on verifie
+#   une copie locale, alors que le site publie (servi depuis Linux, donc en
+#   LF) est parfaitement bon ;
+#
+#   les 127 fichiers apparaissent modifies apres chaque regeneration, alors
+#   que leur contenu est identique. On finit par ne plus regarder git status.
+site/** text eol=lf
+
+# Le generateur et ses sources d'accents ecrivent aussi en LF. Meme raison :
+# regenerer ne doit pas salir l'arbre de travail.
+app/buzzer_companion/tool/** text eol=lf
