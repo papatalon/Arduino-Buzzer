@@ -3,51 +3,89 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Questionnaires du Buzzer</title>
+<title>Console de l'animateur</title>
+<meta name="description" content="La console de l'animateur du Buzzer, pour Windows.">
 <style>
-  :root { color-scheme: light dark; }
-  body { font-family: Georgia, "Times New Roman", serif; max-width: 46rem;
-         margin: 4rem auto; padding: 0 1.5rem; line-height: 1.6; }
-  h1 { font-size: 2rem; margin-bottom: 0.25rem; }
-  .chapeau { color: #666; margin-top: 0; }
-  ul { list-style: none; padding: 0; }
-  li { display: flex; justify-content: space-between; gap: 1rem;
-       border-bottom: 1px solid #ccc; padding: 0.45rem 0; }
-  li span { color: #666; white-space: nowrap; }
-  code { background: rgba(127,127,127,.15); padding: 0.1rem 0.3rem; }
+  :root {
+    color-scheme: light dark;
+    --texte: #201e1d;
+    --gris: #605d5d;
+    --filet: rgba(32,30,29,.16);
+    --accent: #006786;
+    --fond: #f3f2f2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --texte: #ece9e9; --gris: #a8a4a4; --filet: rgba(236,233,233,.18);
+            --accent: #62c5ee; --fond: #1a1918; }
+  }
+  * { box-sizing: border-box; }
+  body { font-family: Georgia, "Times New Roman", serif; max-width: 44rem;
+         margin: 0 auto; padding: 4rem 1.5rem; line-height: 1.6;
+         color: var(--texte); background: var(--fond); }
+  h1 { font-size: 2.6rem; line-height: 1.1; margin: 0 0 .4rem; }
+  .chapeau { color: var(--gris); font-size: 1.2rem; margin: 0 0 2.5rem; }
+  .telecharger { display: inline-block; background: var(--accent);
+                 color: var(--fond); text-decoration: none; font-size: 1.15rem;
+                 padding: .9rem 1.6rem; border: 0; }
+  .telecharger:hover { filter: brightness(1.12); }
+  .sous-bouton { color: var(--gris); font-size: .95rem; margin-top: .7rem; }
+  h2 { font-size: 1rem; letter-spacing: .09em; text-transform: uppercase;
+       color: var(--gris); font-weight: normal; margin: 3rem 0 .8rem;
+       border-top: 1px solid var(--filet); padding-top: 1.2rem; }
+  ul { padding-left: 1.1rem; }
+  li { margin-bottom: .5rem; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .35rem; }
+  footer { margin-top: 3.5rem; border-top: 1px solid var(--filet);
+           padding-top: 1.2rem; color: var(--gris); font-size: .92rem; }
+  a { color: var(--accent); }
 </style>
 </head>
 <body>
-  <h1>Questionnaires du Buzzer</h1>
-  <p class="chapeau">125 questionnaires, 3008 questions,
-     19 collections. Aucun ne dépasse 25 questions : une soirée
-     n'est pas un marathon.</p>
-  <p>Ce site est le catalogue que la console de l'animateur va chercher. Elle
-     lit d'abord <code>/catalogue.json</code>, puis télécharge les
-     questionnaires que vous choisissez, un par un, dans <code>/q/</code>.</p>
+  <h1>Console de l'animateur</h1>
+  <p class="chapeau">Menez une soirée de quiz depuis votre ordinateur, avec un
+     écran projeté pour la salle. L'application pilote le buzzer par Bluetooth.</p>
+
+  <a class="telecharger" href="https://github.com/papatalon/Arduino-Buzzer/releases/download/v1.0.0/buzzer-console-1.0.0-windows.zip">Télécharger pour Windows</a>
+  <p class="sous-bouton">Version 1.0.0 · environ 18 Mo ·
+     Windows 10 ou 11, 64 bits</p>
+
+  <h2>Ce qu'elle fait</h2>
   <ul>
-    <li><strong>Bouffe et cuisine</strong> <span>8 questionnaires</span></li>
-    <li><strong>Cinéma et télé</strong> <span>8 questionnaires</span></li>
-    <li><strong>Créatures et légendes</strong> <span>3 questionnaires</span></li>
-    <li><strong>Culture générale</strong> <span>8 questionnaires</span></li>
-    <li><strong>Géographie</strong> <span>8 questionnaires</span></li>
-    <li><strong>Histoire</strong> <span>8 questionnaires</span></li>
-    <li><strong>L'espace et le ciel</strong> <span>3 questionnaires</span></li>
-    <li><strong>Le Québec ailleurs</strong> <span>5 questionnaires</span></li>
-    <li><strong>Le corps humain</strong> <span>3 questionnaires</span></li>
-    <li><strong>Le règne animal</strong> <span>8 questionnaires</span></li>
-    <li><strong>Mots et langue</strong> <span>8 questionnaires</span></li>
-    <li><strong>Musique</strong> <span>8 questionnaires</span></li>
-    <li><strong>Mélanges</strong> <span>17 questionnaires</span></li>
-    <li><strong>Québec</strong> <span>8 questionnaires</span></li>
-    <li><strong>Sciences et nature</strong> <span>8 questionnaires</span></li>
-    <li><strong>Sports</strong> <span>8 questionnaires</span></li>
-    <li><strong>Sports d'hiver</strong> <span>3 questionnaires</span></li>
-    <li><strong>Spécial Noël</strong> <span>1 questionnaire</span></li>
-    <li><strong>Super-héros et BD</strong> <span>2 questionnaires</span></li>
+    <li>Conduit la partie : question posée, buzz, bonne ou mauvaise réponse,
+        scores, chrono. Le clavier du buzzer se verrouille pendant ce temps.</li>
+    <li>Affiche un <strong>écran public</strong> dans une fenêtre séparée, à
+        glisser sur le projecteur et à passer en plein écran. Ce que la salle
+        voit dépend du jeu, et la réponse n'y apparaît jamais avant la fin de
+        la question.</li>
+    <li>Joue les sons par les haut-parleurs de l'ordinateur plutôt que par le
+        petit haut-parleur du buzzer, et retombe sur ce dernier si le lien
+        Bluetooth tombe.</li>
+    <li>Apporte <strong>3008 questions</strong> en
+        125 questionnaires, aucun ne dépassant 25 questions.
+        Vous pouvez aussi écrire les vôtres.</li>
   </ul>
-  <p>Les questionnaires sont produits à partir de la banque compilée dans le
-     firmware du buzzer. Le format est du JSON en clair, en français : il se
-     retouche dans un éditeur de texte.</p>
+
+  <h2>Installation</h2>
+  <ul>
+    <li>Décompressez l'archive où vous voulez, puis lancez
+        <code>buzzer_companion.exe</code>. Il n'y a rien à installer.</li>
+    <li>Gardez les fichiers ensemble : l'exécutable a besoin des bibliothèques
+        et du dossier <code>data</code> qui l'accompagnent.</li>
+    <li>Windows peut afficher un avertissement au premier lancement, faute de
+        signature de code. « Informations complémentaires », puis « Exécuter
+        quand même ».</li>
+  </ul>
+
+  <h2>Il vous faut aussi</h2>
+  <ul>
+    <li>Le buzzer à quatre boutons, avec son module Bluetooth.</li>
+    <li>Un ordinateur Windows avec Bluetooth basse énergie.</li>
+    <li>Un second écran ou un projecteur, si vous voulez l'écran public.</li>
+  </ul>
+
+  <footer>
+    Les questionnaires sont téléchargés par l'application depuis ce même site.
+    Le code est ouvert : <a href="https://github.com/papatalon/Arduino-Buzzer">papatalon/Arduino-Buzzer</a>.
+  </footer>
 </body>
 </html>

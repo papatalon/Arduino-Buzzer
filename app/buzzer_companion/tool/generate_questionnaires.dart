@@ -53,6 +53,18 @@ const kMaxQuestions = 25;
 // Le chemin est relatif a app/buzzer_companion, d'ou le script se lance.
 var _outputDir = '../../site';
 
+// La page d'accueil renvoie vers la version publiee sur GitHub. Le binaire
+// n'entre PAS dans le depot : 18 Mo par version, dans un depot qui en fait 11
+// au complet, et qu'aucune compression delta ne reduit d'une livraison a
+// l'autre. Chaque version resterait stockee en entier, pour toujours.
+const kDepotGitHub = 'https://github.com/papatalon/Arduino-Buzzer';
+const kDepotGitHubCourt = 'papatalon/Arduino-Buzzer';
+
+// Purement indicatif, a rafraichir quand l'archive change nettement de taille.
+// Faux, il ne fait qu'induire en erreur sur la duree du telechargement ; il ne
+// casse rien.
+const kTailleTelechargement = '18 Mo';
+
 class Entry {
   Entry(this.category, this.question, this.answer);
   final String category;
@@ -265,23 +277,32 @@ void _writeIntrouvable() {
 </html>
 ''');
 }
-
-// Une vraie page, pas un fichier vide : quelqu'un qui tombe sur l'adresse
-// doit comprendre ce qu'il regarde. Volontairement sans dépendance ni image,
-// pour qu'elle reste un seul fichier que Cloudflare sert tel quel.
+// La page d'accueil est une page de TÉLÉCHARGEMENT. Le site distribue une
+// application ; le catalogue de questionnaires est la machinerie qu'elle va
+// chercher toute seule, pas le sujet. Quelqu'un qui arrive sur l'adresse veut
+// installer la console, pas lire un inventaire.
+//
+// Le compte de questionnaires reste, mais comme argument : c'est ce que
+// l'application apporte, pas ce que le site expose.
+//
+// Volontairement sans dépendance, sans image et sans script : un seul fichier
+// que Cloudflare sert tel quel.
+//
+// Le binaire n'est PAS publié ici. Un zip de 18 Mo par version, dans un dépôt
+// qui en fait 11 au complet, et qu'aucune compression delta ne réduit d'une
+// version à l'autre : chaque livraison resterait stockée en entier, pour
+// toujours. Il vit dans les versions publiées de GitHub, et cette page y
+// renvoie.
 void _writeAccueil() {
   final collections = <String, int>{};
   for (final entree in _catalogue) {
     final nom = entree['collection'] as String;
     collections[nom] = (collections[nom] ?? 0) + 1;
   }
-  final noms = collections.keys.toList()..sort();
   final questions = _catalogue.fold<int>(0, (s, e) => s + (e['questions'] as int));
-
-  final lignes = noms
-      .map((nom) => '    <li><strong>$nom</strong> '
-          '<span>${collections[nom]} questionnaire${collections[nom]! > 1 ? 's' : ''}</span></li>')
-      .join('\n');
+  final version = _versionApp();
+  final lien = '$kDepotGitHub/releases/download/v$version/'
+      'buzzer-console-$version-windows.zip';
 
   File('$_outputDir/index.html').writeAsStringSync('''
 <!doctype html>
@@ -289,37 +310,109 @@ void _writeAccueil() {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Questionnaires du Buzzer</title>
+<title>Console de l'animateur</title>
+<meta name="description" content="La console de l'animateur du Buzzer, pour Windows.">
 <style>
-  :root { color-scheme: light dark; }
-  body { font-family: Georgia, "Times New Roman", serif; max-width: 46rem;
-         margin: 4rem auto; padding: 0 1.5rem; line-height: 1.6; }
-  h1 { font-size: 2rem; margin-bottom: 0.25rem; }
-  .chapeau { color: #666; margin-top: 0; }
-  ul { list-style: none; padding: 0; }
-  li { display: flex; justify-content: space-between; gap: 1rem;
-       border-bottom: 1px solid #ccc; padding: 0.45rem 0; }
-  li span { color: #666; white-space: nowrap; }
-  code { background: rgba(127,127,127,.15); padding: 0.1rem 0.3rem; }
+  :root {
+    color-scheme: light dark;
+    --texte: #201e1d;
+    --gris: #605d5d;
+    --filet: rgba(32,30,29,.16);
+    --accent: #006786;
+    --fond: #f3f2f2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --texte: #ece9e9; --gris: #a8a4a4; --filet: rgba(236,233,233,.18);
+            --accent: #62c5ee; --fond: #1a1918; }
+  }
+  * { box-sizing: border-box; }
+  body { font-family: Georgia, "Times New Roman", serif; max-width: 44rem;
+         margin: 0 auto; padding: 4rem 1.5rem; line-height: 1.6;
+         color: var(--texte); background: var(--fond); }
+  h1 { font-size: 2.6rem; line-height: 1.1; margin: 0 0 .4rem; }
+  .chapeau { color: var(--gris); font-size: 1.2rem; margin: 0 0 2.5rem; }
+  .telecharger { display: inline-block; background: var(--accent);
+                 color: var(--fond); text-decoration: none; font-size: 1.15rem;
+                 padding: .9rem 1.6rem; border: 0; }
+  .telecharger:hover { filter: brightness(1.12); }
+  .sous-bouton { color: var(--gris); font-size: .95rem; margin-top: .7rem; }
+  h2 { font-size: 1rem; letter-spacing: .09em; text-transform: uppercase;
+       color: var(--gris); font-weight: normal; margin: 3rem 0 .8rem;
+       border-top: 1px solid var(--filet); padding-top: 1.2rem; }
+  ul { padding-left: 1.1rem; }
+  li { margin-bottom: .5rem; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .35rem; }
+  footer { margin-top: 3.5rem; border-top: 1px solid var(--filet);
+           padding-top: 1.2rem; color: var(--gris); font-size: .92rem; }
+  a { color: var(--accent); }
 </style>
 </head>
 <body>
-  <h1>Questionnaires du Buzzer</h1>
-  <p class="chapeau">${_catalogue.length} questionnaires, $questions questions,
-     ${noms.length} collections. Aucun ne dépasse 25 questions : une soirée
-     n'est pas un marathon.</p>
-  <p>Ce site est le catalogue que la console de l'animateur va chercher. Elle
-     lit d'abord <code>/catalogue.json</code>, puis télécharge les
-     questionnaires que vous choisissez, un par un, dans <code>/q/</code>.</p>
+  <h1>Console de l'animateur</h1>
+  <p class="chapeau">Menez une soirée de quiz depuis votre ordinateur, avec un
+     écran projeté pour la salle. L'application pilote le buzzer par Bluetooth.</p>
+
+  <a class="telecharger" href="$lien">Télécharger pour Windows</a>
+  <p class="sous-bouton">Version $version · environ $kTailleTelechargement ·
+     Windows 10 ou 11, 64 bits</p>
+
+  <h2>Ce qu'elle fait</h2>
   <ul>
-$lignes
+    <li>Conduit la partie : question posée, buzz, bonne ou mauvaise réponse,
+        scores, chrono. Le clavier du buzzer se verrouille pendant ce temps.</li>
+    <li>Affiche un <strong>écran public</strong> dans une fenêtre séparée, à
+        glisser sur le projecteur et à passer en plein écran. Ce que la salle
+        voit dépend du jeu, et la réponse n'y apparaît jamais avant la fin de
+        la question.</li>
+    <li>Joue les sons par les haut-parleurs de l'ordinateur plutôt que par le
+        petit haut-parleur du buzzer, et retombe sur ce dernier si le lien
+        Bluetooth tombe.</li>
+    <li>Apporte <strong>$questions questions</strong> en
+        ${_catalogue.length} questionnaires, aucun ne dépassant 25 questions.
+        Vous pouvez aussi écrire les vôtres.</li>
   </ul>
-  <p>Les questionnaires sont produits à partir de la banque compilée dans le
-     firmware du buzzer. Le format est du JSON en clair, en français : il se
-     retouche dans un éditeur de texte.</p>
+
+  <h2>Installation</h2>
+  <ul>
+    <li>Décompressez l'archive où vous voulez, puis lancez
+        <code>buzzer_companion.exe</code>. Il n'y a rien à installer.</li>
+    <li>Gardez les fichiers ensemble : l'exécutable a besoin des bibliothèques
+        et du dossier <code>data</code> qui l'accompagnent.</li>
+    <li>Windows peut afficher un avertissement au premier lancement, faute de
+        signature de code. « Informations complémentaires », puis « Exécuter
+        quand même ».</li>
+  </ul>
+
+  <h2>Il vous faut aussi</h2>
+  <ul>
+    <li>Le buzzer à quatre boutons, avec son module Bluetooth.</li>
+    <li>Un ordinateur Windows avec Bluetooth basse énergie.</li>
+    <li>Un second écran ou un projecteur, si vous voulez l'écran public.</li>
+  </ul>
+
+  <footer>
+    Les questionnaires sont téléchargés par l'application depuis ce même site.
+    Le code est ouvert : <a href="$kDepotGitHub">$kDepotGitHubCourt</a>.
+  </footer>
 </body>
 </html>
 ''');
+}
+
+// Lue dans pubspec.yaml plutôt que recopiée ici : une version en double finit
+// toujours par diverger, et c'est la page publique qui mentirait.
+String _versionApp() {
+  final pubspec = File('pubspec.yaml');
+  if (pubspec.existsSync()) {
+    for (final ligne in pubspec.readAsLinesSync()) {
+      if (ligne.startsWith('version:')) {
+        // « 1.0.0+1 » : le numéro de build ne regarde pas l'utilisateur.
+        return ligne.substring(8).trim().split('+').first;
+      }
+    }
+  }
+  stderr.writeln('Version introuvable dans pubspec.yaml.');
+  exit(1);
 }
 
 // --- Lecture de Questions.cpp -------------------------------------------
