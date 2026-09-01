@@ -19,6 +19,7 @@ void SoundGame::reset() {
   // BleLink::sendGameScores.
   ble.sendGameScores(scores);
   ble.sendGameRound(0, totalSounds);
+  ble.send("SNDO|-2|0");   // -2 = rien a reveler encore (nouvelle partie)
 }
 
 String SoundGame::scoreLine() {
@@ -88,6 +89,7 @@ PhaseMode SoundGame::learn(char pressedKey) {
     learnDone = true;
     display.setText("", 2);
     display.setText("#: c'est parti", 3);
+    ble.send("SNDL|-1");     // apprentissage termine
     return SOUND_LEARN;
   }
 
@@ -95,6 +97,9 @@ PhaseMode SoundGame::learn(char pressedKey) {
   buzzer.setLed(next, true);
   mp3.playBuzzer(next);
   display.setText(String("Son de ") + buzzer.colorName(next), 2);
+  // Pendant l'apprentissage, dire a qui appartient le son est le BUT : la
+  // LED s'allume et la couleur est nommee. Rien a cacher a ce stade.
+  ble.send(String("SNDL|") + next);
   learnStart = millis();
   return SOUND_LEARN;
 }
@@ -201,6 +206,11 @@ void SoundGame::handleBuzz(int i, unsigned long now) {
 
 // Verdict du son qui vient de s'ecouler, au moment ou le suivant demarre.
 void SoundGame::judgeCurrent() {
+  // Le proprietaire n'est revele qu'ICI, jamais pendant que le son joue :
+  // c'est toute la question du jeu, et l'ecran public y repondrait avant
+  // les joueurs. A cet instant la fenetre pour buzzer est deja fermee.
+  ble.send(String("SNDO|") + owner + "|" + (claimed ? 1 : 0));
+
   if (owner >= 0) {
     if (!claimed) {
       scores[owner]--;       // laisser passer son propre son coute un point

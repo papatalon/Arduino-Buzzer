@@ -87,6 +87,7 @@ class SoundEngine extends ChangeNotifier {
 
   @override
   void dispose() {
+    _recallTimer?.cancel();
     _busyPoll?.cancel();
     _soloud.deinit();
     super.dispose();
@@ -151,6 +152,77 @@ class SoundEngine extends ChangeNotifier {
 
   // Apercu d'un son du dossier des buzzers sans toucher aux assignations.
   Future<void> previewBuzzerSound(int soundIndex) => _play(SoundFolder.buzzer, soundIndex);
+
+  // --- Rappel des sons ----------------------------------------------------
+  //
+  // Avant de lancer une partie, l'animateur refait entendre a la salle le son
+  // de chaque equipe, un par un, pendant que l'ecran public montre de qui il
+  // s'agit. « Ne buzze pas » a toujours eu cette etape (SoundGame::learn) et
+  // elle est utile a tous les jeux : personne ne reconnait son buzz s'il ne
+  // l'a pas entendu depuis le debut de la soiree.
+  //
+  // Sequence pilotee ici plutot que dans le firmware : c'est l'app qui
+  // possede la bibliotheque et les assignations, et elle sait exactement
+  // quand un son se termine (le sondage d'occupation qui sert deja au
+  // chenillard de l'intro).
+
+  static const _recallGapMs = 700;   // silence entre deux sons
+
+  List<int> _recallQueue = [];
+  Timer? _recallTimer;
+
+  // Buzzer dont le son passe en ce moment, ou null si aucun rappel en cours.
+  // Transporte jusqu'a l'ecran public par l'instantane.
+  int? recallIndex;
+
+  bool get recalling => recallIndex != null || _recallQueue.isNotEmpty;
+
+  void startRecall(List<bool> present) {
+    stopRecall();
+    _recallQueue = [
+      for (var i = 0; i < 4; i++)
+        if (i < present.length && present[i]) i,
+    ];
+    _nextRecall();
+  }
+
+  void stopRecall() {
+    _recallTimer?.cancel();
+    _recallTimer = null;
+    _recallQueue = [];
+    if (recallIndex != null) {
+      recallIndex = null;
+      notifyListeners();
+    }
+  }
+
+  Future<void> _nextRecall() async {
+    if (_recallQueue.isEmpty) {
+      recallIndex = null;
+      notifyListeners();
+      return;
+    }
+    final who = _recallQueue.removeAt(0);
+    recallIndex = who;
+    notifyListeners();
+    // Attendu, pas lance et oublie : au retour, l'etat « occupe » est deja
+    // pose. Sans ca, le premier tic du sondage (150 ms) pourrait tomber
+    // pendant le chargement du fichier, voir « libre », et enchainer sur le
+    // son suivant avant meme d'avoir joue celui-ci.
+    await playBuzzer(who);
+    // On enchaine a la FIN du son plutot qu'apres un delai fixe : les sons
+    // de la bibliotheque n'ont pas tous la meme duree, et un delai fixe
+    // couperait les longs ou laisserait un blanc apres les courts.
+    _recallTimer?.cancel();
+    _recallTimer = Timer.periodic(const Duration(milliseconds: 150), (t) {
+      if (_busy) return;
+      t.cancel();
+      _recallTimer = null;
+      Future.delayed(const Duration(milliseconds: _recallGapMs), () {
+        if (recallIndex != null) _nextRecall();
+      });
+    });
+  }
 
   // Fait defiler le son d'un buzzer, en sautant ceux deja pris par un autre
   // buzzer tant qu'il reste des sons libres (meme intention que

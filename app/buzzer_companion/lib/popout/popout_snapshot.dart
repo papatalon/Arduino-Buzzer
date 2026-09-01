@@ -32,6 +32,24 @@ class PopoutSnapshot {
     this.simonLevel,
     this.simonEntered,
     this.simonLength,
+    this.reflexWinner,
+    this.reflexMs,
+    this.reflexBestMs,
+    this.reflexRecordMs,
+    this.reflexNewRecord = false,
+    this.reflexFalseStarts = const [],
+    this.blindTargetS,
+    this.blindWinner,
+    this.blindTimes = const [0, 0, 0, 0],
+    this.duelPlayerA,
+    this.duelPlayerB,
+    this.duelWinner,
+    this.duelMs,
+    this.duelFalseStarter,
+    this.soundLearning,
+    this.soundLastOwner,
+    this.soundLastClaimed = false,
+    this.recallIndex,
     this.logoPath,
   });
 
@@ -78,6 +96,31 @@ class PopoutSnapshot {
   final int? simonEntered;
   final int? simonLength;
 
+  // Details propres a chaque jeu non-quiz : ce que son ecran public montre
+  // et que les autres n'ont pas (temps de reaction, cible, duellistes...).
+  final int? reflexWinner;
+  final int? reflexMs;
+  final int? reflexBestMs;
+  final int? reflexRecordMs;
+  final bool reflexNewRecord;
+  final List<int> reflexFalseStarts;
+  final int? blindTargetS;
+  final int? blindWinner;
+  final List<int> blindTimes;
+  final int? duelPlayerA;
+  final int? duelPlayerB;
+  final int? duelWinner;
+  final int? duelMs;
+  final int? duelFalseStarter;
+  final int? soundLearning;
+  final int? soundLastOwner;
+  final bool soundLastClaimed;
+
+  // Rappel des sons avant le depart : buzzer dont le son passe en ce moment.
+  // Null quand aucun rappel n'est en cours. Pilote par l'app (SoundEngine),
+  // pas par le Mega.
+  final int? recallIndex;
+
   // Chemin du logo de la soirée sur le disque (les deux fenêtres tournent
   // sur la même machine), null si l'opérateur n'en a pas choisi.
   final String? logoPath;
@@ -96,6 +139,7 @@ class PopoutSnapshot {
     GameState game, {
     required List<String> teamNames,
     required String? logoPath,
+    required int? recallIndex,
   }) {
     // La question elle-même n'est pas listée comme sensible dans le tableau
     // de confidentialité du design, mais le client a précisé que sur le
@@ -131,6 +175,24 @@ class PopoutSnapshot {
       simonLevel: game.simonLevel,
       simonEntered: game.simonEntered,
       simonLength: game.simonLength,
+      reflexWinner: game.reflexWinner,
+      reflexMs: game.reflexMs,
+      reflexBestMs: game.reflexBestMs,
+      reflexRecordMs: game.reflexRecordMs,
+      reflexNewRecord: game.reflexNewRecord,
+      reflexFalseStarts: game.reflexFalseStarts.toList(),
+      blindTargetS: game.blindTargetS,
+      blindWinner: game.blindWinner,
+      blindTimes: game.blindTimes,
+      duelPlayerA: game.duelPlayerA,
+      duelPlayerB: game.duelPlayerB,
+      duelWinner: game.duelWinner,
+      duelMs: game.duelMs,
+      duelFalseStarter: game.duelFalseStarter,
+      soundLearning: game.soundLearning,
+      soundLastOwner: game.soundLastOwner,
+      soundLastClaimed: game.soundLastClaimed,
+      recallIndex: recallIndex,
       logoPath: logoPath,
     );
   }
@@ -160,6 +222,24 @@ class PopoutSnapshot {
       simonLevel: json['simonLevel'] as int?,
       simonEntered: json['simonEntered'] as int?,
       simonLength: json['simonLength'] as int?,
+      reflexWinner: json['reflexWinner'] as int?,
+      reflexMs: json['reflexMs'] as int?,
+      reflexBestMs: json['reflexBestMs'] as int?,
+      reflexRecordMs: json['reflexRecordMs'] as int?,
+      reflexNewRecord: json['reflexNewRecord'] as bool? ?? false,
+      reflexFalseStarts: (json['reflexFalseStarts'] as List?)?.cast<int>() ?? const [],
+      blindTargetS: json['blindTargetS'] as int?,
+      blindWinner: json['blindWinner'] as int?,
+      blindTimes: (json['blindTimes'] as List?)?.cast<int>() ?? const [0, 0, 0, 0],
+      duelPlayerA: json['duelPlayerA'] as int?,
+      duelPlayerB: json['duelPlayerB'] as int?,
+      duelWinner: json['duelWinner'] as int?,
+      duelMs: json['duelMs'] as int?,
+      duelFalseStarter: json['duelFalseStarter'] as int?,
+      soundLearning: json['soundLearning'] as int?,
+      soundLastOwner: json['soundLastOwner'] as int?,
+      soundLastClaimed: json['soundLastClaimed'] as bool? ?? false,
+      recallIndex: json['recallIndex'] as int?,
       logoPath: json['logoPath'] as String?,
     );
   }
@@ -187,6 +267,24 @@ class PopoutSnapshot {
         'simonLevel': simonLevel,
         'simonEntered': simonEntered,
         'simonLength': simonLength,
+        'reflexWinner': reflexWinner,
+        'reflexMs': reflexMs,
+        'reflexBestMs': reflexBestMs,
+        'reflexRecordMs': reflexRecordMs,
+        'reflexNewRecord': reflexNewRecord,
+        'reflexFalseStarts': reflexFalseStarts,
+        'blindTargetS': blindTargetS,
+        'blindWinner': blindWinner,
+        'blindTimes': blindTimes,
+        'duelPlayerA': duelPlayerA,
+        'duelPlayerB': duelPlayerB,
+        'duelWinner': duelWinner,
+        'duelMs': duelMs,
+        'duelFalseStarter': duelFalseStarter,
+        'soundLearning': soundLearning,
+        'soundLastOwner': soundLastOwner,
+        'soundLastClaimed': soundLastClaimed,
+        'recallIndex': recallIndex,
         'logoPath': logoPath,
       });
 }

@@ -216,7 +216,19 @@ PhaseMode Configuration::confirmGameSelection() {
 PhaseMode Configuration::selectGameIndex(int index) {
   if (index < 0 || index >= GAME_LIST_COUNT) return GAME_CHOICE;  // securite, ignore
   gameCursor = index;
-  return confirmGameSelection();
+  PhaseMode next = confirmGameSelection();
+  // Les jeux sans reglage reviennent au menu : ce n'est pas une transition,
+  // donc updateMode() n'enverra aucun STATE et l'app ne saurait jamais que
+  // sa commande a abouti. Elle attendrait une reponse qui ne vient pas.
+  // On l'annonce donc explicitement.
+  //
+  // Cas ou la phase courante n'etait PAS le menu (l'app peut changer de jeu
+  // en pleine partie) : updateMode enverra aussi un STATE, et l'app en
+  // recevra deux identiques. Sans consequence, elle repose la meme valeur.
+  if (next == CONFIGURATION) {
+    ble.send("STATE|" + String((int)CONFIGURATION));
+  }
+  return next;
 }
 
 // Pas de réglage : 1 s à chaque appui.

@@ -75,6 +75,9 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
       onBusyChanged: _ble.sendSoundBusy,
     );
     _sound.init();
+    // Le rappel des sons se voit sur l'écran public : ses changements
+    // doivent donc pousser un instantané, comme ceux du jeu.
+    _sound.addListener(_pushSnapshotToPopout);
     _teams.load();
     _teams.addListener(_pushSnapshotToPopout);
     _logo.load();
@@ -105,12 +108,18 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
 
   void _pushSnapshotToPopout() {
     _popout.pushSnapshot(
-        PopoutSnapshot.fromGameState(_game, teamNames: _teams.all, logoPath: _logo.path));
+        PopoutSnapshot.fromGameState(
+      _game,
+      teamNames: _teams.all,
+      logoPath: _logo.path,
+      recallIndex: _sound.recallIndex,
+    ));
   }
 
   @override
   void dispose() {
     _sfxSub?.cancel();
+    _sound.removeListener(_pushSnapshotToPopout);
     _sound.dispose();
     _ble.dispose();
     _game.removeListener(_pushSnapshotToPopout);

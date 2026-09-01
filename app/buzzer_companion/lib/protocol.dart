@@ -184,6 +184,12 @@ final Set<int> _kIdlePhases = {
 // que la salle n'a pas vu le résultat.
 bool isGameRunning(int? phase) => phase != null && !_kIdlePhases.contains(phase);
 
+// Comparaison par nom plutôt que par index magique : les écrans publics
+// distinguent une demi-douzaine de phases chacun, et « phase == 24 » ne se
+// relit pas.
+bool isPhase(int? phase, String name) =>
+    phase != null && phase >= 0 && phase < kPhaseNames.length && kPhaseNames[phase] == name;
+
 // Écrans de fin des jeux non-quiz (un par jeu côté firmware) : c'est là que
 // le gagnant annoncé par GOVER a un sens à l'écran.
 final Set<int> _kGameResultPhases = {
@@ -295,6 +301,33 @@ class GameState extends ChangeNotifier {
   int? simonEntered;
   int? simonLength;
 
+  // Reflexe : resultat de la derniere manche et record. Rien n'arrive
+  // pendant l'attente ni au signal, volontairement (voir Reflex::setResult).
+  int? reflexWinner;         // -1 = personne
+  int? reflexMs;             // temps du gagnant de la manche
+  int? reflexBestMs;         // meilleur temps de la partie (0 = aucun)
+  int? reflexRecordMs;       // record persistant (65535 = aucun)
+  bool reflexNewRecord = false;
+  final Set<int> reflexFalseStarts = {};
+
+  // Chrono aveugle : cible annoncee, puis temps de chacun au resultat.
+  int? blindTargetS;
+  int? blindWinner;
+  List<int> blindTimes = [0, 0, 0, 0];   // ms, 0 = n'a pas buzze
+
+  // Duel : les deux duellistes et le resultat de la manche.
+  int? duelPlayerA;
+  int? duelPlayerB;
+  int? duelWinner;
+  int? duelMs;
+  int? duelFalseStarter;     // -1 = pas de faux depart
+
+  // Ne buzze pas : le son en cours d'apprentissage, et le proprietaire du
+  // dernier son JOUE (revele seulement une fois la fenetre fermee).
+  int? soundLearning;        // -1 = apprentissage termine
+  int? soundLastOwner;       // -1 = leurre, -2 = rien a reveler
+  bool soundLastClaimed = false;
+
   // Etat du lecteur audio du buzzer (message AUDIO, envoye a la prise de
   // controle) : permet de distinguer "silencieux parce que le volume est
   // bas" de "silencieux parce que le DFPlayer n'a pas ete detecte au
@@ -326,8 +359,32 @@ class GameState extends ChangeNotifier {
   // ou si une partie est déjà en cours, cas d'une app relancée en pleine
   // soirée, où masquer le jeu serait cette fois trompeur.
   bool _gameChosen = false;
+
+  // Vrai entre le clic sur un jeu et la réponse du buzzer. La console
+  // navigue vers « Partie » tout de suite, sans attendre l'aller-retour BLE
+  // (~200 ms) : sans ce drapeau, elle affichait pendant ce temps l'écran de
+  // lancement complet, règles comprises, avant d'être remplacée par l'écran
+  // de réglage du jeu. Ça se voyait comme un clignotement.
+  //
+  // Le firmware annonce toujours la phase d'arrivée après un SELECT_GAME,
+  // même quand elle ne change pas (voir Configuration::selectGameIndex), donc
+  // l'attente se termine dans tous les cas.
+  bool awaitingSelection = false;
+  Timer? _selectionTimeout;
+
   void markGameChosen() {
     _gameChosen = true;
+    awaitingSelection = true;
+    // Garde-fou : si la réponse ne vient pas (lien coupé au mauvais moment),
+    // la console ne doit pas rester bloquée sur « Envoi au buzzer » toute la
+    // soirée.
+    _selectionTimeout?.cancel();
+    _selectionTimeout = Timer(const Duration(seconds: 2), () {
+      if (awaitingSelection) {
+        awaitingSelection = false;
+        notifyListeners();
+      }
+    });
     notifyListeners();
   }
 
@@ -376,6 +433,7 @@ class GameState extends ChangeNotifier {
 
   @override
   void dispose() {
+    _selectionTimeout?.cancel();
     _sub?.cancel();
     _sfxController.close();
     super.dispose();
@@ -434,6 +492,9 @@ class GameState extends ChangeNotifier {
               questionsAsked = 0; // nouvelle partie qui commence
             }
             phase = newPhase;
+            // Le buzzer a dit où il a atterri : la console peut afficher.
+            _selectionTimeout?.cancel();
+            awaitingSelection = false;
             handled = true;
           }
           break;
@@ -566,7 +627,23 @@ class GameState extends ChangeNotifier {
                 gameWinner = null;
                 gameTie = false;
                 gameFinished = false;
+                soundLastOwner = null;
+                soundLearning = null;
               }
+              // Nouvelle manche : le résultat de la précédente ne doit plus
+              // rester à l'écran pendant qu'on attend le signal. Réflexe,
+              // Chrono aveugle et Duel n'envoient GROUND qu'une fois par
+              // manche, donc c'est le bon repère. « Ne buzze pas » l'envoie
+              // à chaque son, d'où l'absence de soundLastOwner ici : il
+              // effacerait la révélation aussitôt affichée.
+              reflexFalseStarts.clear();
+              reflexWinner = null;
+              reflexMs = null;
+              blindWinner = null;
+              blindTimes = [0, 0, 0, 0];
+              duelWinner = null;
+              duelMs = null;
+              duelFalseStarter = null;
               handled = true;
             }
           }
@@ -581,6 +658,81 @@ class GameState extends ChangeNotifier {
               gameFinished = true;
               handled = true;
             }
+          }
+          break;
+        case 'RFLX':
+          if (parts.length == 4) {
+            final w = int.tryParse(parts[1]);
+            final ms = int.tryParse(parts[2]);
+            final best = int.tryParse(parts[3]);
+            if (w != null && ms != null && best != null) {
+              reflexWinner = w;
+              reflexMs = ms;
+              reflexBestMs = best;
+              handled = true;
+            }
+          }
+          break;
+        case 'RFLXF':
+          if (parts.length == 2) {
+            final who = int.tryParse(parts[1]);
+            if (who != null && who >= 0 && who < 4) {
+              reflexFalseStarts.add(who);
+              handled = true;
+            }
+          }
+          break;
+        case 'RFLXR':
+          if (parts.length == 4) {
+            reflexBestMs = int.tryParse(parts[1]);
+            reflexRecordMs = int.tryParse(parts[2]);
+            reflexNewRecord = parts[3] != '0';
+            handled = reflexBestMs != null && reflexRecordMs != null;
+          }
+          break;
+        case 'BLND':
+          if (parts.length == 2) {
+            blindTargetS = int.tryParse(parts[1]);
+            handled = blindTargetS != null;
+          }
+          break;
+        case 'BLNDR':
+          if (parts.length == 6) {
+            final w = int.tryParse(parts[1]);
+            final t = _parseInts(parts.sublist(2));
+            if (w != null && t != null && t.length == 4) {
+              blindWinner = w;
+              blindTimes = t;
+              handled = true;
+            }
+          }
+          break;
+        case 'DUELP':
+          if (parts.length == 3) {
+            duelPlayerA = int.tryParse(parts[1]);
+            duelPlayerB = int.tryParse(parts[2]);
+            handled = duelPlayerA != null && duelPlayerB != null;
+          }
+          break;
+        case 'DUELR':
+          if (parts.length == 4) {
+            duelWinner = int.tryParse(parts[1]);
+            duelMs = int.tryParse(parts[2]);
+            duelFalseStarter = int.tryParse(parts[3]);
+            handled = duelWinner != null && duelMs != null && duelFalseStarter != null;
+          }
+          break;
+        case 'SNDL':
+          if (parts.length == 2) {
+            soundLearning = int.tryParse(parts[1]);
+            handled = soundLearning != null;
+          }
+          break;
+        case 'SNDO':
+          if (parts.length == 3) {
+            soundLastOwner = int.tryParse(parts[1]);
+            soundLastClaimed = parts[2] != '0';
+            handled = soundLastOwner != null;
           }
           break;
         case 'SIMON':

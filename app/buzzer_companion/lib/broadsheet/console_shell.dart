@@ -8,6 +8,7 @@ import '../event_logo.dart';
 import '../popout/popout_launcher.dart';
 import '../team_names.dart';
 import '../protocol.dart';
+import 'game_rules_panel.dart';
 import 'game_setup_view.dart';
 import 'phosphor_duotone.dart';
 import 'question_flow.dart';
@@ -326,6 +327,18 @@ class _CenterColumn extends StatelessWidget {
       case ConsoleSection.partie:
         break;
     }
+    // Le buzzer n'a pas encore dit où il atterrit : on ne devine pas. Une
+    // ligne calme le temps de l'aller-retour vaut mieux qu'un écran de
+    // lancement complet qui disparaît aussitôt.
+    if (game.awaitingSelection) {
+      return Align(
+        alignment: Alignment.topLeft,
+        child: Text(
+          'Envoi au buzzer...',
+          style: BSType.body(size: 20, color: BSColors.neutral600),
+        ),
+      );
+    }
     if (isGameSetupPhase(game.phase)) {
       return GameSetupView(game: game, ble: ble);
     }
@@ -346,14 +359,19 @@ class _CenterColumn extends StatelessWidget {
     // phase brut pendant toute une partie de Réflexe ou de Simon.
     final layout = layoutFor(game.gameMode);
     if (layout != GameLayout.quiz && isGameRunning(game.phase)) {
-      return Align(
-        alignment: Alignment.topLeft,
-        child: _GameProgressView(game: game, teams: teams, layout: layout),
+      // Défilable : progression, scores et boutons de conduite ne tiennent
+      // pas toujours dans la hauteur d'une fenêtre réduite.
+      return SingleChildScrollView(
+        child: Align(
+          alignment: Alignment.topLeft,
+          child: _GameProgressView(game: game, teams: teams, layout: layout, ble: ble),
+        ),
       );
     }
     final label = phaseLabel(game.phase);
     final mode = gameModeName(game.displayGameMode);
-    return Align(
+    return SingleChildScrollView(
+      child: Align(
       alignment: Alignment.topLeft,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -387,7 +405,19 @@ class _CenterColumn extends StatelessWidget {
             else
               _LaunchButton(game: game, ble: ble, onNavigate: onNavigate),
           ],
+          // Le moment où l'animateur explique le jeu à la salle et refait
+          // entendre les sons est le même : juste avant de lancer. Les deux
+          // vivent donc ici, entre le choix du jeu et le départ.
+          if (isAtConfigurationMenu(game.phase) && mode.isNotEmpty) ...[
+            const SizedBox(height: BSSpace.s6),
+            Container(height: 1, color: BSColors.divider),
+            const SizedBox(height: BSSpace.s4),
+            _SoundRecallButton(game: game, sound: sound, teams: teams),
+            const SizedBox(height: BSSpace.s6),
+            GameRulesPanel(gameMode: game.displayGameMode),
+          ],
         ],
+      ),
       ),
     );
   }
@@ -396,11 +426,17 @@ class _CenterColumn extends StatelessWidget {
 // Suivi d'un jeu non-quiz dans la console. Même règle que l'écran public :
 // les points montrés sont ceux du jeu en cours, et Simon n'en a aucun.
 class _GameProgressView extends StatelessWidget {
-  const _GameProgressView({required this.game, required this.teams, required this.layout});
+  const _GameProgressView({
+    required this.game,
+    required this.teams,
+    required this.layout,
+    required this.ble,
+  });
 
   final GameState game;
   final TeamNames teams;
   final GameLayout layout;
+  final BleLinkService ble;
 
   @override
   Widget build(BuildContext context) {
@@ -413,6 +449,8 @@ class _GameProgressView extends StatelessWidget {
         Text(phaseLabel(game.phase), style: BSType.body(size: 15, color: BSColors.neutral600)),
         const SizedBox(height: BSSpace.s6),
         if (layout == GameLayout.simon) ..._simon() else ..._manches(),
+        const SizedBox(height: BSSpace.s6),
+        _GameControls(game: game, ble: ble),
       ],
     );
   }
@@ -537,5 +575,168 @@ class _LaunchButton extends StatelessWidget {
       return 'Ce jeu se joue à ${requis.min}, ni plus ni moins. $buzzers en jeu.';
     }
     return 'Ce jeu se joue de ${requis.min} à ${requis.max} buzzers. $buzzers en jeu.';
+  }
+}
+
+// Une action que l'animateur peut déclencher dans la phase courante, et la
+// touche du clavier physique qu'elle rejoue.
+class _GameAction {
+  const _GameAction(this.label, this.key, {this.primary = false});
+  final String label;
+  final String key;
+  final bool primary;
+}
+
+// Boutons de conduite des jeux non-quiz. Sans eux, ces jeux étaient
+// INJOUABLES depuis l'app : le Chrono aveugle attend « # » pour donner le
+// départ, « Ne buzze pas » attend « # » après l'apprentissage, le Réflexe et
+// le Duel attendent « # » pour enchaîner les manches. Le clavier physique
+// étant verrouillé pendant que l'app a le contrôle, plus personne ne pouvait
+// donner ces ordres, et l'écran ne proposait rien à cliquer.
+class _GameControls extends StatelessWidget {
+  const _GameControls({required this.game, required this.ble});
+
+  final GameState game;
+  final BleLinkService ble;
+
+  // Les touches viennent directement des switch de chaque jeu côté firmware
+  // (Reflex::arm/result/gameOver, BlindTimer::announce/run/result, etc.) :
+  // toute divergence ici se verrait comme un bouton sans effet.
+  List<_GameAction> _actions() {
+    final p = game.phase;
+
+    if (isPhase(p, 'SIMON_SHOW') || isPhase(p, 'SIMON_PLAY')) {
+      return const [_GameAction('Abandonner', 'C')];
+    }
+    if (isPhase(p, 'BLIND_ANNOUNCE')) {
+      return const [
+        _GameAction('Donner le départ', '#', primary: true),
+        _GameAction('Terminer la partie', 'C'),
+      ];
+    }
+    if (isPhase(p, 'SOUND_LEARN')) {
+      return const [
+        _GameAction("C'est parti", '#', primary: true),
+        _GameAction('Retour au menu', 'C'),
+      ];
+    }
+    if (isPhase(p, 'REFLEX_RESULT') || isPhase(p, 'BLIND_RESULT') || isPhase(p, 'DUEL_RESULT')) {
+      final derniere = game.gameRound != null &&
+          game.gameTotalRounds != null &&
+          game.gameRound! >= game.gameTotalRounds!;
+      return [
+        _GameAction(derniere ? 'Voir les résultats' : 'Manche suivante', '#', primary: true),
+        const _GameAction('Terminer la partie', 'C'),
+      ];
+    }
+    if (isPhase(p, 'REFLEX_ARM') ||
+        isPhase(p, 'REFLEX_GO') ||
+        isPhase(p, 'BLIND_RUN') ||
+        isPhase(p, 'DUEL_ARM') ||
+        isPhase(p, 'DUEL_GO') ||
+        isPhase(p, 'SOUND_PLAY')) {
+      return const [_GameAction('Terminer la partie', 'C')];
+    }
+    if (isPhase(p, 'SIMON_OVER') ||
+        isPhase(p, 'REFLEX_OVER') ||
+        isPhase(p, 'BLIND_OVER') ||
+        isPhase(p, 'DUEL_OVER') ||
+        isPhase(p, 'SOUND_OVER')) {
+      return const [
+        _GameAction('Rejouer', '#', primary: true),
+        _GameAction('Retour au menu', '*'),
+      ];
+    }
+    return const [];
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final actions = _actions();
+    if (actions.isEmpty) return const SizedBox.shrink();
+    return Wrap(
+      spacing: BSSpace.s2,
+      runSpacing: BSSpace.s2,
+      children: [
+        for (final a in actions)
+          if (a.primary)
+            FilledButton(
+              onPressed: () => ble.sendKey(a.key),
+              style: FilledButton.styleFrom(
+                backgroundColor: BSColors.accent,
+                foregroundColor: BSColors.bg,
+                shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+              ),
+              child: Text(a.label),
+            )
+          else
+            OutlinedButton(
+              onPressed: () => ble.sendKey(a.key),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: BSColors.text,
+                side: const BorderSide(color: BSColors.divider),
+                shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+              ),
+              child: Text(a.label),
+            ),
+      ],
+    );
+  }
+}
+
+// Refait entendre à la salle le son de chaque équipe, un par un, pendant que
+// l'écran public montre de qui il s'agit. « Ne buzze pas » a toujours eu
+// cette étape ; elle est utile à tous les jeux, parce que personne ne
+// reconnaît son buzz s'il ne l'a pas entendu depuis le début de la soirée.
+//
+// Déclenché par l'animateur plutôt qu'automatiquement au départ : la partie
+// s'ouvre sur une musique d'intro, et y superposer quatre sons de buzz les
+// rendrait justement méconnaissables. Ici, il le lance pendant qu'il
+// explique le jeu, et peut le rejouer si la salle a mal entendu.
+class _SoundRecallButton extends StatelessWidget {
+  const _SoundRecallButton({required this.game, required this.sound, required this.teams});
+
+  final GameState game;
+  final SoundEngine sound;
+  final TeamNames teams;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: sound,
+      builder: (context, _) {
+        final enCours = sound.recalling;
+        final qui = sound.recallIndex;
+        return Row(
+          children: [
+            OutlinedButton(
+              onPressed: enCours ? sound.stopRecall : () => sound.startRecall(game.present),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: BSColors.text,
+                side: const BorderSide(color: BSColors.divider),
+                shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+              ),
+              child: Text(enCours ? 'Arrêter le rappel' : 'Rappeler les sons'),
+            ),
+            const SizedBox(width: BSSpace.s3),
+            if (qui != null) ...[
+              Container(width: 16, height: 16, color: kBuzzerColors[qui].fill),
+              const SizedBox(width: BSSpace.s2),
+              Text(teams.nameFor(qui), style: BSType.body(size: 17, color: BSColors.text)),
+            ] else
+              Expanded(
+                child: Text(
+                  'Fait entendre le son de chaque équipe, avec sa couleur sur '
+                  "l'écran public.",
+                  style: BSType.body(size: 15, color: BSColors.neutral600),
+                ),
+              ),
+          ],
+        );
+      },
+    );
   }
 }

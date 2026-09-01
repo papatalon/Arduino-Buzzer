@@ -37,6 +37,9 @@ void Duel::reset() {
   // message supplementaire n'est necessaire pour les nommer.
   ble.sendGameScores(scores);
   ble.sendGameRound(0, totalRounds);
+  // Les deux duellistes, pour que l'ecran public les mette face a face.
+  ble.send(String("DUELP|") + playerA + "|" + playerB);
+  ble.send("DUELR|-1|0|-1");   // efface le resultat de la partie precedente
 }
 
 // "Rouge 2   Vert 1" : toujours les deux mêmes duellistes, pas besoin
@@ -174,6 +177,10 @@ void Duel::setResult() {
   display.setText(round >= totalRounds ? "#: resultats" : "#: manche suivante", 3);
 
   ble.sendGameScores(scores);
+  // Comme le Reflexe : envoye au RESULTAT seulement. Le signal du Duel est
+  // sonore, et un ecran qui changerait au moment du GO donnerait un signal
+  // visuel concurrent, plus lent et irregulier.
+  ble.send(String("DUELR|") + winner + "|" + winnerMs + "|" + (falseStart ? falseStarter : -1));
 }
 
 PhaseMode Duel::result(char pressedKey) {

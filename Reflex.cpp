@@ -19,6 +19,7 @@ void Reflex::reset() {
   // precedente.
   ble.sendGameScores(scores);
   ble.sendGameRound(0, totalRounds);
+  ble.send("RFLX|-1|0|0");   // efface le resultat de la partie precedente
 }
 
 // Buzzers presents qui n'ont pas fait de faux depart dans la manche en cours.
@@ -99,6 +100,9 @@ PhaseMode Reflex::arm(char pressedKey) {
     falseStart[i] = true;
     mp3.playBadAnswer();
     display.setText(String("Faux depart: ") + buzzer.colorName(i), 2);
+    // Un faux depart est deja public (LED + ecran du buzzer) : l'annoncer a
+    // la salle ne divulgue rien sur le signal a venir.
+    ble.send(String("RFLXF|") + i);
   }
 
   // Plus personne en lice : manche nulle.
@@ -184,6 +188,11 @@ void Reflex::setResult() {
   display.setText(round >= totalRounds ? "#: resultats" : "#: manche suivante", 3);
 
   ble.sendGameScores(scores);
+  // Envoye seulement ICI, jamais pendant l'attente ni au signal : un message
+  // qui part au moment du GO ferait changer l'ecran public, que les joueurs
+  // pourraient prendre comme signal a la place de la LED. Le BLE est bien
+  // trop lent et irregulier pour arbitrer des temps de reaction.
+  ble.send(String("RFLX|") + winner + "|" + winnerMs + "|" + bestMs);
 }
 
 PhaseMode Reflex::result(char pressedKey) {
@@ -258,6 +267,7 @@ void Reflex::setGameOver() {
 
   const bool decided = !aborted && any && maxScore > 0;
   ble.sendGameScores(scores);
+  ble.send(String("RFLXR|") + bestMs + "|" + record + "|" + (newRecord ? 1 : 0));
   ble.sendGameOver(decided && leaders == 1 ? who : -1, decided && leaders > 1);
 
   if (!aborted && maxScore > 0) {

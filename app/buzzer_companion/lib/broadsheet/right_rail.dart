@@ -162,6 +162,10 @@ class _PublicScreenPreview extends StatelessWidget {
                         game,
                         teamNames: teams.all,
                         logoPath: logo.path,
+                        // Instantané d'ouverture seulement : le vrai état
+                        // arrive avec la première poussée, et personne
+                        // n'ouvre l'écran public en plein rappel des sons.
+                        recallIndex: null,
                       )),
                 style: OutlinedButton.styleFrom(
                   foregroundColor: active ? BSColors.accent700 : BSColors.text,
@@ -183,6 +187,16 @@ class _PublicScreenPreview extends StatelessWidget {
               ),
             );
           },
+        ),
+        const SizedBox(height: BSSpace.s1),
+        // Le plein écran ne se commande PAS d'ici : il s'applique à l'écran
+        // où se trouve la fenêtre, et depuis la console on la fullscreen-ait
+        // sur le moniteur de l'animateur, qu'elle recouvrait. On glisse
+        // d'abord la fenêtre sur le projecteur, puis on bascule depuis
+        // elle-même (voir PopoutWindow).
+        Text(
+          'Glissez-la sur le projecteur, puis F11 pour le plein écran.',
+          style: BSType.body(size: 13, color: BSColors.neutral600),
         ),
       ],
     );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../ble_link_service.dart';
+import '../../game_rules.dart';
 import '../../protocol.dart';
 import '../tokens.dart';
 
@@ -11,22 +12,9 @@ import '../tokens.dart';
 // GameSetupView une fois la phase changée — voir onGameSelected, qui
 // ramène toujours sur "Partie".
 //
-// Les phrases de règle sont une description approximative déduite des noms
-// et du code existant (Questions.h, Simon.h, Reflex.h, SoundGame.h...) — à
-// faire vérifier par le propriétaire du firmware si un libellé est faux.
-const _kRules = [
-  'Le premier à buzzer répond ; bonne réponse, un point.',
-  'Comme Classique, mais une mauvaise réponse retire un point.',
-  'Un temps limité est accordé pour buzzer.',
-  'Chrono et pénalité combinés.',
-  'Un joueur désigné répond en premier ; les autres peuvent lui voler la question.',
-  'Les joueurs répètent une séquence de couleurs qui s\'allonge.',
-  'Comme Simon, mais la séquence se répète en sens inverse.',
-  'Le temps de réaction au signal de départ est le score.',
-  'Chaque joueur vise une durée cible sans la voir défiler.',
-  'Buzzer sur le mauvais son élimine le joueur.',
-  'Deux joueurs s\'affrontent en tête-à-tête.',
-];
+// Les règles complètes vivent dans lib/game_rules.dart : la carte n'en
+// montre que la phrase d'accroche, le détail est sur l'écran Partie, au
+// moment où l'animateur l'explique à la salle.
 
 class GameChoiceScreen extends StatelessWidget {
   const GameChoiceScreen({super.key, required this.game, required this.ble, required this.onGameSelected});
@@ -39,7 +27,10 @@ class GameChoiceScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
+    // Défilable : onze cartes sur deux colonnes dépassent la hauteur d'une
+    // fenêtre ordinaire dès qu'elles portent plus d'une ligne de texte.
+    return SingleChildScrollView(
+      child: Align(
       alignment: Alignment.topLeft,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,6 +58,7 @@ class GameChoiceScreen extends StatelessWidget {
             ],
           ),
         ],
+      ),
       ),
     );
   }
@@ -106,7 +98,11 @@ class _GameCard extends StatelessWidget {
               ],
             ),
             const SizedBox(height: BSSpace.s1),
-            Text(_kRules[index], style: BSType.body(size: 15, color: BSColors.neutral700)),
+            Text(kGameRules[index].pitch, style: BSType.body(size: 15, color: BSColors.neutral700)),
+            if (kGameRules[index].setup.isNotEmpty) ...[
+              const SizedBox(height: BSSpace.s1),
+              Text(kGameRules[index].setup, style: BSType.body(size: 13, color: BSColors.neutral600)),
+            ],
           ],
         ),
       ),
