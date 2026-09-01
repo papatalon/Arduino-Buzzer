@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
+import 'package:crypto/crypto.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 
@@ -30,9 +31,9 @@ import 'questionnaire.dart';
 // l'application va chercher ses questionnaires, et un mauvais collage dans un
 // champ de saisie viderait la bibliothèque sans qu'il sache pourquoi.
 //
-// L'adresse du projet Cloudflare Pages (arduino-buzzer.pages.dev) reste
-// valable et sert de repli si le domaine personnalisé pose problème un jour :
-// elle ne traverse pas les protections de la zone sd6tools.net.
+// L'adresse du projet Cloudflare Pages (arduino-buzzer.pages.dev) sert le
+// même site et reste valable : c'est le repli si le domaine personnalisé
+// pose problème un jour.
 const kCatalogueUrl = 'https://buzzer.sd6tools.net';
 
 const kCatalogueFormat = 'buzzer-catalogue';
@@ -193,11 +194,12 @@ class CatalogueStore extends ChangeNotifier {
 
   // Une requête, avec reprise sur 429 (« trop de requêtes »).
   //
-  // Rapatrier une collection enchaîne jusqu'à seize téléchargements ; le
-  // domaine personnalisé passe par les protections de la zone Cloudflare et
-  // finit par refuser une rafale, ce que l'adresse pages.dev ne fait pas.
-  // Abandonner au premier refus laisserait une collection à moitié
-  // synchronisée sans que l'opérateur comprenne pourquoi.
+  // Rapatrier une collection enchaîne jusqu'à seize téléchargements. Les
+  // fichiers sont maintenant gardés au bord du réseau (voir site/_headers),
+  // mais un cache froid laisse passer la rafale jusqu'à l'origine Cloudflare
+  // Pages, qui la refuse au-delà d'un certain débit. Abandonner au premier
+  // refus laisserait une collection à moitié synchronisée sans que
+  // l'opérateur comprenne pourquoi.
   //
   // On respecte Retry-After quand le serveur le donne, sinon une attente qui
   // s'allonge. Trois essais : au-delà, ce n'est plus une rafale, c'est un
@@ -339,6 +341,18 @@ class CatalogueStore extends ChangeNotifier {
       // Validé avant d'être écrit : un fichier illisible n'a pas à entrer
       // dans la réserve et à échouer plus tard, au pire moment.
       Questionnaire.decode(contenu);
+
+      // L'empreinte de ce qu'on a REÇU, comparée à celle annoncée. Sans ce
+      // contrôle, un cache qui sert une version périmée serait enregistré
+      // comme étant à jour : le fichier ne correspondrait plus à son
+      // empreinte, et l'application ne le saurait jamais.
+      final recue = sha1.convert(reponse.bodyBytes).toString();
+      if (entry.fingerprint.isNotEmpty && recue != entry.fingerprint) {
+        throw const FormatException(
+          "le contenu reçu ne correspond pas à celui annoncé par le catalogue "
+          "(copie périmée servie par un cache ?). Réessayez dans un moment.",
+        );
+      }
       final dir = await _ensureDir();
       await _fichierLocal(dir, entry.id).writeAsString(contenu);
       _local[entry.id] = entry.fingerprint;

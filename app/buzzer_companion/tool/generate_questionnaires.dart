@@ -172,6 +172,7 @@ void main(List<String> args) {
   _writeCatalogue();
   _writeAccueil();
   _writeIntrouvable();
+  _writeEntetes();
 
   stdout.writeln('Écrit dans ${out.absolute.path}');
 }
@@ -207,6 +208,31 @@ void _writeCatalogue() {
   final questions = _catalogue.fold<int>(0, (s, e) => s + (e['questions'] as int));
   stdout.writeln('catalogue.json : ${_catalogue.length} questionnaires, '
       '${collections.length} collections, $questions questions.');
+}
+
+// Cloudflare Pages sert ses fichiers avec « max-age=0, must-revalidate »,
+// donc rien n'est garde au bord du reseau : chaque requete traverse jusqu'a
+// l'origine Pages, qui a sa propre limite de debit. Rapatrier une collection
+// de seize questionnaires se faisait ainsi refuser en 429, et la
+// verification du catalogue (126 requetes d'affilee) signalait une vingtaine
+// de faux problemes.
+//
+// Ce n'etait pas un reglage de securite de la zone : l'en-tete cf-mitigated
+// etait vide et cf-cache-status disait DYNAMIC a chaque appel.
+//
+// s-maxage vise le cache de Cloudflare, max-age le poste client. Les
+// questionnaires ne changent qu'a une regeneration, d'ou une heure au bord ;
+// l'index est garde plus court pour qu'un ajout se voie vite. Une version
+// perimee servie depuis le cache ne peut pas passer inapercue : l'app
+// compare l'empreinte du fichier telecharge a celle annoncee.
+void _writeEntetes() {
+  File('$_outputDir/_headers').writeAsStringSync('''
+/q/*
+  Cache-Control: public, max-age=600, s-maxage=3600
+
+/catalogue.json
+  Cache-Control: public, max-age=60, s-maxage=300
+''');
 }
 
 // Sans ce fichier, Cloudflare Pages sert la page d'accueil AVEC un code 200
