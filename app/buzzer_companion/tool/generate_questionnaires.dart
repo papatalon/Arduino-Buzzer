@@ -95,7 +95,8 @@ void main(List<String> args) {
   // Un fichier par catégorie, découpé en manches de 25.
   for (final entry in parCategorie.entries) {
     _writeParts(entry.key, entry.value,
-        note: 'Banque du buzzer, catégorie ${entry.key}.');
+        note: 'Banque du buzzer, catégorie ${entry.key}.',
+        emoji: kEmojiCategories[entry.key] ?? '');
   }
 
   // Le mélange, c'est le format principal : seize rondes de 25, toutes
@@ -116,6 +117,7 @@ void main(List<String> args) {
     Random(7),
   );
   const kMelanges = 'Mélanges';
+  const kEmojiMelanges = '🎲';
   for (var i = 0; i < kRondes; i++) {
     _write(
       'Toutes catégories ${_numero(i + 1, kRondes)} sur $kRondes',
@@ -123,6 +125,7 @@ void main(List<String> args) {
       note: 'Toutes catégories, autant de chacune. '
           'Ronde ${i + 1} sur $kRondes, aucune question en double.',
       collection: kMelanges,
+      emoji: kEmojiMelanges,
     );
   }
 
@@ -130,7 +133,9 @@ void main(List<String> args) {
   // un creux, sans engager la soirée. Rangée avec les mélanges, dont elle est
   // tirée.
   _write('Manche éclair', series.last,
-      note: 'Dix questions, une de chaque catégorie.', collection: kMelanges);
+      note: 'Dix questions, une de chaque catégorie.',
+      collection: kMelanges,
+      emoji: kEmojiMelanges);
 
   // Découpes thématiques : elles traversent les catégories. « Noël » pioche
   // le renne dans Culture générale, la bûche dans Bouffe, les chants dans
@@ -142,7 +147,7 @@ void main(List<String> args) {
       stdout.writeln('  (ignoré : ${theme.name}, seulement ${trouvees.length} questions)');
       continue;
     }
-    _writeParts(theme.name, trouvees, note: theme.note);
+    _writeParts(theme.name, trouvees, note: theme.note, emoji: theme.emoji);
   }
 
   // Volontairement pas de fichier « Banque complète » : 2000 questions dans un
@@ -272,6 +277,25 @@ const _nomsAccentues = {
 
 String _accentedName(String brut) => _nomsAccentues[brut] ?? brut;
 
+// Un pictogramme par collection, pour reperer une tuile sans lire son nom.
+// Ecrit dans chaque fichier plutot que code en dur dans l'app : l'app n'a
+// pas a connaitre par coeur les noms des collections generees, et une
+// collection inventee par l'operateur a droit au sien.
+//
+// Clefs = noms ACCENTUES, ceux qui finissent dans les fichiers.
+const kEmojiCategories = {
+  'Culture générale': '💡',
+  'Histoire': '🏛️',
+  'Géographie': '🌍',
+  'Sciences et nature': '🔬',
+  'Sports': '🏅',
+  'Musique': '🎵',
+  'Cinéma et télé': '🎬',
+  'Québec': '⚜️',
+  'Bouffe et cuisine': '🍲',
+  'Mots et langue': '🔤',
+};
+
 // Au-delà du français : la banque est pleine de noms étrangers (Dalí,
 // Tolstoï, Bogotá) que le firmware a écrits sans leurs signes. Sans eux dans
 // cette table, l'invariant refuserait une graphie pourtant correcte.
@@ -320,9 +344,11 @@ String _strip(String s) {
 // simplement, et « Noel » attrape « Noël ». Bornes de mots obligatoires,
 // sinon « os » attraperait « chose » et « ski » attraperait « whisky ».
 class Theme {
-  const Theme(this.name, this.note, this.keywords, {this.exclude = const []});
+  const Theme(this.name, this.emoji, this.note, this.keywords,
+      {this.exclude = const [], this.excludeCategories = const []});
 
   final String name;
+  final String emoji;
   final String note;
   final List<String> keywords;
 
@@ -332,7 +358,16 @@ class Theme {
   // relisant ce que chaque theme avait ramasse.
   final List<String> exclude;
 
+  // Categories entieres a laisser de cote. Sert quand une thematique porte le
+  // meme sujet qu'une categorie de la banque : sans ca, « Tout sur le
+  // Quebec » reprenait 161 des 200 questions de la categorie Quebec et
+  // annoncait deux fois la meme chose sous deux tuiles voisines. En excluant
+  // la categorie, la thematique ne garde que ce que la categorie n'a PAS :
+  // le Quebec dispersé dans Musique, Bouffe, Cinema, Sports.
+  final List<String> excludeCategories;
+
   bool matches(Entry e) {
+    if (excludeCategories.contains(e.category)) return false;
     final texte = _strip('${e.question} ${e.answer}').toLowerCase();
     for (final mot in exclude) {
       if (_motPresent(texte, mot)) return false;
@@ -350,7 +385,7 @@ class Theme {
 }
 
 const kThemes = <Theme>[
-  Theme('Spécial Noël', 'Le temps des fêtes, toutes catégories confondues.', [
+  Theme('Spécial Noël', '🎄', 'Le temps des fêtes, toutes catégories confondues.', [
     'noel', 'renne', 'rudolphe', 'sapin', 'buche', 'dinde',
     'reveillon', 'tourtiere', 'canneberge', 'canneberges', 'cannelle',
     'muscade', 'girofle', 'guimauve', "pain d'epice", 'patates pilees',
@@ -362,7 +397,15 @@ const kThemes = <Theme>[
   ], exclude: [
     'chaise',   // « se tirer une buche » : la buche est un siege, ici
   ]),
-  Theme('Tout sur le Québec', "Le Québec d'un bout à l'autre de la banque.", [
+  // Complémentaire de la catégorie « Québec », pas concurrente : elle ramasse
+  // le Québec qui vit AILLEURS, Maurice Richard dans Sports, La Petite Vie
+  // dans Cinéma, la poutine râpée dans Bouffe, les rigodons dans Musique.
+  // Jouer la catégorie puis celle-ci ne repose aucune question.
+  //
+  // Pas de feuille d'érable : c'est l'emblème du Canada. La fleur de lys va
+  // à la catégorie Québec.
+  Theme('Le Québec ailleurs', '🌲',
+      'Le Québec caché dans les neuf autres catégories.', [
     'quebec', 'quebecois', 'quebecoise', 'quebecoises', 'montreal',
     'montrealais', 'montrealaise', 'saint-laurent', 'erable', 'poutine',
     'celine', 'canadiens', 'expos', 'gaspesie', 'gaspesienne', 'saguenay',
@@ -380,8 +423,8 @@ const kThemes = <Theme>[
     'louis cyr', 'bombardier', 'levesque', 'duplessis', 'legault',
     'loi 101', 'oqlf', 'verglas', 'hurons-wendat', 'madelinots',
     'saguenéen', 'trifluvien', 'terre-neuvien',
-  ]),
-  Theme('Le règne animal', 'Bêtes à poil, à plume et à écailles.', [
+  ], excludeCategories: ['Québec']),
+  Theme('Le règne animal', '🐾', 'Bêtes à poil, à plume et à écailles.', [
     'animal', 'animaux', 'oiseau', 'oiseaux', 'poisson', 'poissons',
     'insecte', 'insectes', 'mammifere', 'mammiferes', 'reptile', 'reptiles',
     'chien', 'chienne', 'chat', 'cheval', 'chevaux', 'lion', 'lionceau',
@@ -400,7 +443,7 @@ const kThemes = <Theme>[
     // à frire pour le poisson, une question de grammaire sur le mot loup.
     'pates', 'pate', 'frire', 'muettes', 'palindrome',
   ]),
-  Theme("L'espace et le ciel", 'Planètes, étoiles et conquête spatiale.', [
+  Theme("L'espace et le ciel", '🪐', 'Planètes, étoiles et conquête spatiale.', [
     'planete', 'planetes', 'soleil', 'lune', 'lunes', 'etoile', 'etoiles',
     'galaxie', 'espace', 'astronaute', 'satellite', 'telescope', 'orbite',
     'comete', 'meteorite', 'eclipse', 'mars', 'jupiter', 'saturne', 'venus',
@@ -409,7 +452,7 @@ const kThemes = <Theme>[
     'astre', 'astres', 'astronomie', 'astronome', 'spatiale', 'spatial',
     'aurore boreale', 'equateur', 'hemispheres', 'marees', 'atmosphere',
   ]),
-  Theme('Le corps humain', 'Os, organes et petites mécaniques internes.', [
+  Theme('Le corps humain', '🧠', 'Os, organes et petites mécaniques internes.', [
     'os', 'sang', 'coeur', 'cerveau', 'poumon', 'poumons', 'muscle',
     'organe', 'organes', 'dent', 'dents', 'oeil', 'yeux', 'oreille',
     'peau', 'vitamine', 'cellule', 'cellules', 'chromosomes', 'estomac',
@@ -425,7 +468,7 @@ const kThemes = <Theme>[
     // fois les accents retirés.
     'hexagone', 'triangle', 'octogone', 'pentagone', 'cube', 'statue',
   ]),
-  Theme('Super-héros et BD', 'Capes, masques et bulles.', [
+  Theme('Super-héros et BD', '🦸', 'Capes, masques et bulles.', [
     'super-heros', 'superheros', 'marvel', 'batman', 'superman',
     'spider-man', 'hulk', 'iron man', 'thor', 'wonder woman', 'aquaman',
     'wolverine', 'ant-man', 'thanos', 'captain america', 'joker', 'robin',
@@ -435,7 +478,7 @@ const kThemes = <Theme>[
     'schtroumpfs', 'gargamel', 'lucky luke', 'dalton', 'picsou', 'popeye',
     'garfield', 'bd',
   ]),
-  Theme('Créatures et légendes', 'Monstres, dieux et histoires qu\'on se raconte.', [
+  Theme('Créatures et légendes', '🐉', 'Monstres, dieux et histoires qu\'on se raconte.', [
     'monstre', 'creature', 'creatures', 'dragon', 'fantome', 'sorcier',
     'sorciere', 'vampire', 'geant', 'legende', 'legendaire', 'mythologique',
     'mythique', 'dieu', 'deesse', 'zeus', 'poseidon', 'hades', 'aphrodite',
@@ -446,7 +489,7 @@ const kThemes = <Theme>[
     'merlin', 'arthur', 'romulus', 'remus', 'pandore', 'midas', 'troie',
     'halloween', 'superstition', 'malheur', 'chaudron',
   ]),
-  Theme("Sports d'hiver", 'Tout ce qui se joue sur la glace ou la neige.', [
+  Theme("Sports d'hiver", '⛷️', 'Tout ce qui se joue sur la glace ou la neige.', [
     'hockey', 'patinage', 'patineur', 'patineuse', 'patinoire', 'ski',
     'skieur', 'curling', 'luge', 'skeleton', 'biathlon', 'slalom',
     'ballon-balai', 'rondelle', 'glace', 'neige', 'planche a neige',
@@ -529,10 +572,10 @@ List<List<Entry>> _decoupe(List<Entry> entries, int nbParts) {
 // Faute de collection explicite, le titre fait office : les huit manches
 // d'« Histoire » se retrouvent ensemble sous « Histoire ».
 void _writeParts(String titre, List<Entry> entries,
-    {required String note, String? collection}) {
+    {required String note, required String emoji, String? collection}) {
   final nbParts = (entries.length + kMaxQuestions - 1) ~/ kMaxQuestions;
   if (nbParts <= 1) {
-    _write(titre, entries, note: note, collection: collection ?? titre);
+    _write(titre, entries, note: note, collection: collection ?? titre, emoji: emoji);
     return;
   }
   final parts = _decoupe(entries, nbParts);
@@ -542,6 +585,7 @@ void _writeParts(String titre, List<Entry> entries,
       parts[i],
       note: '$note Manche ${i + 1} sur $nbParts.',
       collection: collection ?? titre,
+      emoji: emoji,
     );
   }
 }
@@ -552,7 +596,7 @@ void _writeParts(String titre, List<Entry> entries,
 String _numero(int n, int total) => total >= 10 ? '$n'.padLeft(2, '0') : '$n';
 
 void _write(String titre, List<Entry> entries,
-    {required String note, required String collection}) {
+    {required String note, required String collection, required String emoji}) {
   final json = const JsonEncoder.withIndent('  ').convert({
     'format': 'buzzer-questionnaire',
     'version': 1,
@@ -561,6 +605,7 @@ void _write(String titre, List<Entry> entries,
     // Range le fichier sous sa tuile dans la bibliothèque de l'app. Sans
     // elle, les 131 fichiers arrivent en un seul tas.
     'collection': collection,
+    'emoji': emoji,
     'questions': entries.map((e) => e.toJson()).toList(),
   });
   final nom = titre.replaceAll(RegExp(r'[\\/:*?"<>|]'), ' ').trim();

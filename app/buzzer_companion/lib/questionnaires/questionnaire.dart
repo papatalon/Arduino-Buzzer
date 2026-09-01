@@ -49,6 +49,7 @@ class Questionnaire {
     this.title = '',
     this.note = '',
     this.collection = '',
+    this.emoji = '',
     List<QuizQuestion>? questions,
   }) : questions = questions ?? [];
 
@@ -64,6 +65,11 @@ class Questionnaire {
   // Facultatif : un questionnaire écrit à la main, ou reçu de quelqu'un
   // d'autre, n'en a pas et se range dans « Mes questionnaires ».
   String collection;
+  // Le pictogramme de la tuile. Porté par chaque fichier plutôt que par une
+  // table dans l'app : une collection inventée par l'opérateur a droit au
+  // sien, et l'app n'a pas à connaître par cœur les noms des collections
+  // générées.
+  String emoji;
   final List<QuizQuestion> questions;
 
   int get usableCount => questions.where((q) => q.isUsable).length;
@@ -72,6 +78,7 @@ class Questionnaire {
         title: title,
         note: note,
         collection: collection,
+        emoji: emoji,
         questions: questions.map((q) => q.copy()).toList(),
       );
 
@@ -81,6 +88,7 @@ class Questionnaire {
         'titre': title,
         'note': note,
         'collection': collection,
+        'emoji': emoji,
         'questions': questions.map((q) => q.toJson()).toList(),
       });
 
@@ -113,6 +121,7 @@ class Questionnaire {
       title: (parsed['titre'] as String?)?.trim() ?? '',
       note: (parsed['note'] as String?)?.trim() ?? '',
       collection: (parsed['collection'] as String?)?.trim() ?? '',
+      emoji: (parsed['emoji'] as String?)?.trim() ?? '',
       questions: [
         if (rawQuestions is List)
           for (final q in rawQuestions)

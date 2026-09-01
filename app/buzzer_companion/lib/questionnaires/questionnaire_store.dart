@@ -17,6 +17,7 @@ class QuestionnaireFile {
     required this.modified,
     required this.title,
     required this.collection,
+    required this.emoji,
     required this.questionCount,
     required this.valid,
   });
@@ -27,6 +28,7 @@ class QuestionnaireFile {
   // Vide pour un questionnaire écrit à la main : il se range alors sous
   // [kMesQuestionnaires].
   final String collection;
+  final String emoji;
   // Titre et compte lus DANS le fichier : choisir entre « Noel.json » et
   // « Noel2.json » sans les ouvrir est impossible, alors qu'entre « Spécial
   // Noël, 24 questions » et « Noël, brouillon, 3 questions » c'est immédiat.
@@ -51,15 +53,22 @@ class QuestionnaireFile {
 // diverger d'une espace ou d'une majuscule.
 const kMesQuestionnaires = 'Mes questionnaires';
 
+// Repli quand aucun fichier d'une collection ne porte d'emoji : mieux vaut un
+// pictogramme neutre qu'une tuile bancale à côté de celles qui en ont un.
+const kEmojiParDefaut = '📄';
+const kEmojiMesQuestionnaires = '✏️';
+
 // Une tuile du premier niveau : une collection et ce qu'elle contient.
 class QuestionnaireCollection {
   const QuestionnaireCollection({
     required this.name,
+    required this.emoji,
     required this.files,
     required this.questionCount,
   });
 
   final String name;
+  final String emoji;
   final List<QuestionnaireFile> files;
   final int questionCount;
 }
@@ -161,12 +170,14 @@ class QuestionnaireStore extends ChangeNotifier {
         // vraiment renseignée plutôt qu'une suite de noms de fichiers.
         String title = '';
         String collection = '';
+        String emoji = '';
         int count = 0;
         bool valid = true;
         try {
           final parsed = Questionnaire.decode(entity.readAsStringSync());
           title = parsed.title;
           collection = parsed.collection;
+          emoji = parsed.emoji;
           count = parsed.questions.length;
         } catch (_) {
           valid = false;
@@ -177,6 +188,7 @@ class QuestionnaireStore extends ChangeNotifier {
           modified: entity.statSync().modified,
           title: title,
           collection: collection,
+          emoji: emoji,
           questionCount: count,
           valid: valid,
         ));
@@ -231,10 +243,21 @@ class QuestionnaireStore extends ChangeNotifier {
       for (final nom in noms)
         QuestionnaireCollection(
           name: nom,
+          emoji: _emojiDe(nom, parNom[nom]!),
           files: parNom[nom]!,
           questionCount: parNom[nom]!.fold(0, (somme, f) => somme + f.questionCount),
         ),
     ];
+  }
+
+  // L'emoji est porté par chaque fichier, mais s'affiche au niveau de la
+  // collection : le premier renseigné fait foi. Une collection dont un seul
+  // fichier a été retouché à la main garde donc son pictogramme.
+  static String _emojiDe(String nom, List<QuestionnaireFile> fichiers) {
+    for (final fichier in fichiers) {
+      if (fichier.emoji.isNotEmpty) return fichier.emoji;
+    }
+    return nom == kMesQuestionnaires ? kEmojiMesQuestionnaires : kEmojiParDefaut;
   }
 
   int get questionCount => files.fold(0, (somme, f) => somme + f.questionCount);

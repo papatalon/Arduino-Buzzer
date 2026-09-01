@@ -337,6 +337,7 @@ class _Library extends StatelessWidget {
             // ne sait pas dans quelle collection chercher.
             _CollectionCard(
               titre: 'Tous les questionnaires',
+              emoji: '📚',
               fichiers: store.files.length,
               questions: store.questionCount,
               vedette: true,
@@ -345,6 +346,7 @@ class _Library extends StatelessWidget {
             for (final collection in store.collections)
               _CollectionCard(
                 titre: collection.name,
+                emoji: collection.emoji,
                 fichiers: collection.files.length,
                 questions: collection.questionCount,
                 vedette: false,
@@ -496,6 +498,7 @@ class _Library extends StatelessWidget {
 class _CollectionCard extends StatelessWidget {
   const _CollectionCard({
     required this.titre,
+    required this.emoji,
     required this.fichiers,
     required this.questions,
     required this.vedette,
@@ -503,6 +506,7 @@ class _CollectionCard extends StatelessWidget {
   });
 
   final String titre;
+  final String emoji;
   final int fichiers;
   final int questions;
   // La tuile « Tous les questionnaires » : même forme, couleur d'accent, pour
@@ -522,6 +526,11 @@ class _CollectionCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Sur sa propre ligne, pas devant le titre : les noms de collection
+          // vont sur deux lignes, et un emoji collé au début du texte pousse
+          // le retour à la ligne à un endroit différent pour chaque tuile.
+          Text(emoji, style: const TextStyle(fontSize: 26, height: 1.2)),
+          const SizedBox(height: BSSpace.s1),
           Text(
             titre,
             maxLines: 2,
@@ -720,6 +729,22 @@ class _Editor extends StatelessWidget {
               // Sans ce champ, tout ce qu'on écrit soi-même s'entasse à
               // jamais dans « Mes questionnaires » : le classement ne
               // servirait qu'aux fichiers générés.
+              // Étroit à dessein : un seul caractère y va. Le sélecteur
+              // d'emoji de Windows (touche Windows + point) le colle ici.
+              SizedBox(
+                width: 96,
+                child: _Field(
+                  key: ValueKey('emoji-${identityHashCode(questionnaire)}'),
+                  value: questionnaire.emoji,
+                  hint: 'Emoji',
+                  style: BSType.body(size: 16, color: BSColors.neutral700),
+                  onChanged: (v) {
+                    questionnaire.emoji = v;
+                    onChanged();
+                  },
+                ),
+              ),
+              const SizedBox(width: BSSpace.s4),
               SizedBox(
                 width: 280,
                 child: _Field(
