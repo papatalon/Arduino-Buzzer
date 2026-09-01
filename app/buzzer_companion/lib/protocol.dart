@@ -269,6 +269,10 @@ class GameState extends ChangeNotifier {
   String? questionCategory;
   String? questionText;
   String? answerText;
+  // Vrai quand la question affichée vient d'un questionnaire de
+  // l'application et non de la banque du buzzer. Sert à l'étiqueter sur la
+  // console ; l'écran public, lui, ne fait aucune différence.
+  bool appQuestion = false;
   bool chronoStarted = false;
 
   // Sous-écrans de réglage (voir isGameSetupPhase/GameSetupView) : valeur en
@@ -426,6 +430,35 @@ class GameState extends ChangeNotifier {
   final _sfxController = StreamController<SfxEvent>.broadcast();
   Stream<SfxEvent> get sfxEvents => _sfxController.stream;
 
+  // Question fournie par un questionnaire de l'application. Elle se pose aux
+  // MÊMES champs que ceux qu'alimente la banque du buzzer : tout l'aval (la
+  // console, l'écran public, la règle qui garde la réponse cachée jusqu'à la
+  // fin de la question) fonctionne sans rien changer.
+  //
+  // En mode applicatif la banque du buzzer est en retrait (masque de
+  // catégories à zéro), donc les deux ne s'écrivent jamais dessus.
+  void setAppQuestion(String? category, String? question, String? answer,
+      {int? numero}) {
+    final vide = question == null || question.isEmpty;
+    // Le compteur de l'écran public compte les QUESTION reçues du buzzer.
+    // En mode applicatif il n'en arrive aucune : sans ça, la salle verrait
+    // « question 0 » pendant toute la soirée.
+    if (numero != null && questionsAsked != numero) questionsAsked = numero;
+    // Sans ce garde, chaque notification de l'état de partie déclencherait
+    // une réécriture, donc une notification, et ainsi de suite.
+    if (questionCategory == category &&
+        questionText == (vide ? null : question) &&
+        answerText == (vide ? null : answer) &&
+        appQuestion == !vide) {
+      return;
+    }
+    questionCategory = category;
+    questionText = vide ? null : question;
+    answerText = vide ? null : answer;
+    appQuestion = !vide;
+    notifyListeners();
+  }
+
   void listenTo(Stream<String> messages) {
     _sub?.cancel();
     _sub = messages.listen(_handleMessage);
@@ -512,6 +545,8 @@ class GameState extends ChangeNotifier {
             lastBuzz = null; // une nouvelle question efface le dernier buzz
             chronoStarted = false;
             questionsAsked++;
+            // Le buzzer fournit la question : ce n'est plus celle de l'app.
+            appQuestion = false;
             handled = true;
           }
           break;

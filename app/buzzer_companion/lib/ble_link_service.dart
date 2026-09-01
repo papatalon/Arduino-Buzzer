@@ -456,6 +456,20 @@ class BleLinkService extends ChangeNotifier {
     notifyListeners();
   }
 
+  // Fixe le nombre de questions et lance la partie. 0 = mode ouvert : le
+  // buzzer ne compte plus, c'est l'application qui décide quand la soirée est
+  // finie. Une vraie commande plutôt que des appuis rejoués, parce que le
+  // compteur du firmware ne reboucle pas : revenir à 0 depuis 99 demanderait
+  // 99 pressions.
+  Future<void> setQuestionCount(int count) async {
+    final ok = await _writeUartLine(
+        connectedDeviceId, _uartServiceId, _uartCharacteristicId, 'SET_COUNT|$count');
+    status = ok
+        ? (count == 0 ? 'Mode ouvert : la partie est lancée.' : 'Partie lancée.')
+        : 'Envoi impossible : aucune caractéristique BLE identifiée pour écrire.';
+    notifyListeners();
+  }
+
   // Démarre/arrête le heartbeat "CTRL|1" (voir le champ _controlHeartbeat) :
   // tant qu'il est envoyé, le firmware considère que l'app a 100% le
   // contrôle et ignore le clavier physique (hors reset/test câblage).

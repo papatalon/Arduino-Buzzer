@@ -6,6 +6,8 @@ import '../audio/sound_engine.dart';
 import '../ble_link_service.dart';
 import '../event_logo.dart';
 import '../popout/popout_launcher.dart';
+import '../questionnaires/active_questionnaire.dart';
+import 'active_questionnaire_bar.dart';
 import '../questionnaires/catalogue.dart';
 import '../questionnaires/questionnaire_store.dart';
 import '../team_names.dart';
@@ -47,6 +49,7 @@ class ConsoleShell extends StatefulWidget {
     required this.logo,
     required this.questionnaires,
     required this.catalogue,
+    required this.actif,
   });
 
   final BleLinkService ble;
@@ -57,6 +60,7 @@ class ConsoleShell extends StatefulWidget {
   final EventLogo logo;
   final QuestionnaireStore questionnaires;
   final CatalogueStore catalogue;
+  final ActiveQuestionnaire actif;
 
   @override
   State<ConsoleShell> createState() => _ConsoleShellState();
@@ -133,6 +137,7 @@ class _ConsoleShellState extends State<ConsoleShell> {
                                   logo: widget.logo,
                                   questionnaires: widget.questionnaires,
                                   catalogue: widget.catalogue,
+                                  actif: widget.actif,
                                   onNavigate: (s) => setState(() => _section = s),
                                 ),
                               ),
@@ -314,6 +319,7 @@ class _CenterColumn extends StatelessWidget {
     required this.logo,
     required this.questionnaires,
     required this.catalogue,
+    required this.actif,
     required this.onNavigate,
   });
 
@@ -322,6 +328,7 @@ class _CenterColumn extends StatelessWidget {
   final EventLogo logo;
   final QuestionnaireStore questionnaires;
   final CatalogueStore catalogue;
+  final ActiveQuestionnaire actif;
 
   final ConsoleSection section;
   final GameState game;
@@ -342,7 +349,8 @@ class _CenterColumn extends StatelessWidget {
           onGameSelected: () => onNavigate(ConsoleSection.partie),
         );
       case ConsoleSection.questions:
-        return QuestionsScreen(store: questionnaires, catalogue: catalogue);
+        return QuestionsScreen(
+            store: questionnaires, catalogue: catalogue, actif: actif);
       case ConsoleSection.appareil:
         return DeviceScreen(ble: ble, game: game, logo: logo);
       case ConsoleSection.partie:
@@ -361,7 +369,7 @@ class _CenterColumn extends StatelessWidget {
       );
     }
     if (isGameSetupPhase(game.phase)) {
-      return GameSetupView(game: game, ble: ble);
+      return GameSetupView(game: game, ble: ble, actif: actif);
     }
     if (isEndConfirmPhase(game.phase)) {
       return EndConfirmView(ble: ble);
@@ -372,7 +380,16 @@ class _CenterColumn extends StatelessWidget {
     if (game.questionFlowState != QuestionFlowState.none) {
       return Align(
         alignment: Alignment.topLeft,
-        child: QuestionFlowView(game: game, ble: ble, teams: teams),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Le bandeau du questionnaire de l'app, quand il y en a un : il
+            // dit d'où viennent les questions et où on en est, et donne le
+            // rattrapage manuel si l'avancement automatique décale.
+            if (actif.active) ActiveQuestionnaireBar(actif: actif),
+            QuestionFlowView(game: game, ble: ble, teams: teams),
+          ],
+        ),
       );
     }
     // Les jeux non-quiz n'ont pas de question : sans cette branche, la

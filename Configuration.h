@@ -37,6 +37,12 @@ public:
     PhaseMode confirmCategories(int mask);
     void setQuizCount();                     // lancement quiz : nb de questions
     PhaseMode quizCount(char pressedKey);
+    // Fixe le nombre de questions [n] (0 = Ouvert) et lance la partie -
+    // utilise par la commande App->Mega SET_COUNT|<n> (voir
+    // BleLink::consumeQuestionCount()). Le mode ouvert est ce que l'app
+    // impose quand c'est elle qui fournit les questions : c'est alors elle
+    // qui decide de la fin, pas le buzzer qui compte jusqu'a N.
+    PhaseMode confirmQuestionCount(int n);
     void setShuffleBuzzers();
     PhaseMode shuffleBuzzer(char pressedKey);
     void setBuzzerConfig();
@@ -45,6 +51,10 @@ public:
     PhaseMode volumeScreen(char pressedKey);
 
 private:
+
+  // Le lancement reel de la partie, partage par le '#' du compteur de
+  // questions et par la commande SET_COUNT de l'app.
+  PhaseMode startMatch();
 
   // Étapes de l'assistant de configuration d'un buzzer.
   enum CfgStep { CFG_PROMPT, CFG_CHOOSING };

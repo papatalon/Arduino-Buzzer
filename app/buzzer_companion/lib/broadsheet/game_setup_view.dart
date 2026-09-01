@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../ble_link_service.dart';
 import '../protocol.dart';
+import '../questionnaires/active_questionnaire.dart';
 import 'tokens.dart';
 
 // Sous-écrans de réglage après un choix de jeu (durée du chrono, nombre de
@@ -11,14 +12,26 @@ import 'tokens.dart';
 // curseur : une seule valeur ajustée à la fois, entièrement visible via la
 // télémétrie (CHRONO_CFG/ROUNDS_CFG/SOUND_CFG/QCOUNT_CFG), donc les boutons
 // +/-/confirmer/annuler réutilisent tels quels "KEY|2"/"KEY|8"/"KEY|#"/
-// "KEY|*" (mêmes touches que le clavier physique). Exception : les
-// catégories (multi-sélection, voir _QuizCatsSetup) envoient une vraie
-// commande (SET_CATS|<mask>) plutôt que de rejouer des touches.
+// "KEY|*" (mêmes touches que le clavier physique).
+//
+// Deux exceptions, où rejouer des touches ne marcherait pas :
+//
+//   Les catégories (multi-sélection, voir _QuizCatsSetup) envoient le masque
+//   final en une commande, SET_CATS|<mask> : les raccourcis du firmware
+//   dépendent d'un curseur physique qui n'a aucun rapport avec ce que l'app
+//   vient de cocher.
+//
+//   Le nombre de questions envoie SET_COUNT|<n> quand un questionnaire de
+//   l'application est en jeu, pour imposer le mode ouvert : le compteur du
+//   firmware ne reboucle pas, donc revenir à 0 depuis 99 demanderait 99
+//   pressions de touche.
 class GameSetupView extends StatelessWidget {
-  const GameSetupView({super.key, required this.game, required this.ble});
+  const GameSetupView(
+      {super.key, required this.game, required this.ble, required this.actif});
 
   final GameState game;
   final BleLinkService ble;
+  final ActiveQuestionnaire actif;
 
   @override
   Widget build(BuildContext context) {
@@ -31,9 +44,9 @@ class GameSetupView extends StatelessWidget {
     } else if (phase == kPhaseNames.indexOf('SOUND_SETUP')) {
       body = _SoundSetup(game: game, ble: ble);
     } else if (phase == kPhaseNames.indexOf('QUIZ_CATS')) {
-      body = _QuizCatsSetup(game: game, ble: ble);
+      body = _QuizCatsSetup(game: game, ble: ble, actif: actif);
     } else if (phase == kPhaseNames.indexOf('QUIZ_COUNT')) {
-      body = _QuizCountSetup(game: game, ble: ble);
+      body = _QuizCountSetup(game: game, ble: ble, actif: actif);
     } else {
       body = const SizedBox.shrink();
     }
@@ -236,22 +249,72 @@ class _SoundSetup extends StatelessWidget {
   }
 }
 
-class _QuizCountSetup extends StatelessWidget {
-  const _QuizCountSetup({required this.game, required this.ble});
+// Nombre de questions. Deux comportements, selon qui mène.
+//
+// Sans questionnaire de l'application : un compteur ordinaire, l'animateur
+// choisit combien de questions et le buzzer arrête la partie à ce compte.
+//
+// AVEC un questionnaire de l'application : le buzzer passe en MODE OUVERT
+// (0) tout seul, et la partie démarre. C'est l'application qui fournit les
+// questions, donc c'est elle qui sait quand la soirée est finie ; un buzzer
+// qui compte jusqu'à 10 pendant qu'on joue une manche de 25 couperait la
+// partie au milieu. L'écran ne fait que passer, il n'y a rien à décider.
+class _QuizCountSetup extends StatefulWidget {
+  const _QuizCountSetup(
+      {required this.game, required this.ble, required this.actif});
   final GameState game;
   final BleLinkService ble;
+  final ActiveQuestionnaire actif;
+
+  @override
+  State<_QuizCountSetup> createState() => _QuizCountSetupState();
+}
+
+class _QuizCountSetupState extends State<_QuizCountSetup> {
+  @override
+  void initState() {
+    super.initState();
+    // Une seule fois, à l'arrivée sur l'écran : entrer dans QUIZ_COUNT monte
+    // ce widget une fois, et la commande fait aussitôt basculer la phase.
+    if (widget.actif.active) {
+      widget.ble.setQuestionCount(0);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
-    final value = game.qcountValue;
+    if (widget.actif.active) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text('Mode ouvert', style: BSType.buzzerNameConsole(size: 26)),
+          const SizedBox(height: BSSpace.s2),
+          SizedBox(
+            width: 620,
+            child: Text(
+              '« ${widget.actif.title} » mène la partie : ${widget.actif.total} '
+              "questions. Le buzzer ne compte pas, c'est l'application qui "
+              'décide quand la soirée est finie.',
+              style: BSType.body(size: 17, color: BSColors.neutral700),
+            ),
+          ),
+          const SizedBox(height: BSSpace.s3),
+          Text('Lancement de la partie...',
+              style: BSType.body(size: 15, color: BSColors.accent700)),
+        ],
+      );
+    }
+
+    final value = widget.game.qcountValue;
     return _SetupCard(
       title: 'Nombre de questions',
-      subtitle: gameModeName(game.gameMode),
+      subtitle: gameModeName(widget.game.gameMode),
       value: value == null ? '' : (value == 0 ? 'Ouvert' : '$value'),
-      onIncrement: () => ble.sendKey('2'),
-      onDecrement: () => ble.sendKey('8'),
-      onConfirm: () => ble.sendKey('#'),
-      onCancel: () => ble.sendKey('*'),
+      onIncrement: () => widget.ble.sendKey('2'),
+      onDecrement: () => widget.ble.sendKey('8'),
+      onConfirm: () => widget.ble.sendKey('#'),
+      onCancel: () => widget.ble.sendKey('*'),
     );
   }
 }
@@ -263,9 +326,11 @@ class _QuizCountSetup extends StatelessWidget {
 // Mega). Initialisé une fois depuis la télémétrie (game.qcatMask) : pas
 // resynchronisé ensuite pour ne pas écraser une sélection en cours.
 class _QuizCatsSetup extends StatefulWidget {
-  const _QuizCatsSetup({required this.game, required this.ble});
+  const _QuizCatsSetup(
+      {required this.game, required this.ble, required this.actif});
   final GameState game;
   final BleLinkService ble;
+  final ActiveQuestionnaire actif;
 
   @override
   State<_QuizCatsSetup> createState() => _QuizCatsSetupState();
@@ -277,6 +342,14 @@ class _QuizCatsSetupState extends State<_QuizCatsSetup> {
   @override
   void initState() {
     super.initState();
+    // Un questionnaire de l'application est en jeu : la banque du buzzer doit
+    // rester en retrait, donc aucune catégorie cochée. Sinon les deux
+    // poseraient des questions différentes en même temps, l'une à l'écran et
+    // l'autre sur le LCD.
+    if (widget.actif.active) {
+      _selected = {};
+      return;
+    }
     final mask = widget.game.qcatMask ?? ((1 << kCategoryNames.length) - 1);
     _selected = {for (var i = 0; i < kCategoryNames.length; i++) if (mask & (1 << i) != 0) i};
   }
@@ -292,6 +365,18 @@ class _QuizCatsSetupState extends State<_QuizCatsSetup> {
       mainAxisSize: MainAxisSize.min,
       children: [
         Text('Catégories de questions', style: BSType.buzzerNameConsole(size: 26)),
+        if (widget.actif.active) ...[
+          const SizedBox(height: BSSpace.s2),
+          SizedBox(
+            width: 620,
+            child: Text(
+              '« ${widget.actif.title} » est en jeu : les questions viennent de '
+              "l'application. Laissez « Aucune » coché pour que la banque du "
+              'buzzer reste en retrait.',
+              style: BSType.body(size: 16, color: BSColors.accent700),
+            ),
+          ),
+        ],
         const SizedBox(height: BSSpace.s4),
         _CatRow(
           label: 'Toutes',

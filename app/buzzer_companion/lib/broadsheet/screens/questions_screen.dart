@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../protocol.dart';
+import '../../questionnaires/active_questionnaire.dart';
 import '../../questionnaires/catalogue.dart';
 import '../../questionnaires/questionnaire.dart';
 import '../../questionnaires/questionnaire_store.dart';
@@ -28,10 +29,15 @@ import '../tokens.dart';
 // liste visible pendant la saisie volait sa largeur à la seule chose qu'on
 // fait à ce moment-là.
 class QuestionsScreen extends StatefulWidget {
-  const QuestionsScreen({super.key, required this.store, required this.catalogue});
+  const QuestionsScreen(
+      {super.key,
+      required this.store,
+      required this.catalogue,
+      required this.actif});
 
   final QuestionnaireStore store;
   final CatalogueStore catalogue;
+  final ActiveQuestionnaire actif;
 
   @override
   State<QuestionsScreen> createState() => _QuestionsScreenState();
@@ -116,6 +122,29 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
       _selection = const _Selection.de(kPersonnalise);
     });
     _tell('Copie créée dans $kPersonnalise. Elle est modifiable.');
+  }
+
+  // Met le questionnaire ouvert en jeu. À partir de là, c'est l'application
+  // qui fournit les questions et le buzzer ne s'occupe que des boutons.
+  void _useForGame() {
+    final open = _open;
+    if (open == null) return;
+    if (open.questions.where((q) => q.isUsable).isEmpty) {
+      _tell("Ce questionnaire n'a aucune question à poser.");
+      return;
+    }
+    final entry = _openEntry;
+    widget.actif.use(
+      open.copy(),
+      origine: entry == null
+          ? kPersonnalise
+          : entry.collection.isEmpty
+              ? 'Catalogue'
+              : 'Catalogue · ${entry.collection}',
+    );
+    // Une copie, pas l'objet ouvert : sinon continuer à écrire dans
+    // l'éditeur modifierait la partie en cours sous les pieds de l'animateur.
+    _tell('« ${open.title} » est en jeu. Allez à Partie pour la conduire.');
   }
 
   // L'adresse du catalogue est un réglage, pas une constante compilée. Le
@@ -322,6 +351,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
           onSave: _save,
           onRename: _saveAsNewName,
           onDuplicate: _duplicateOpen,
+          onUseForGame: _useForGame,
           onExport: () => widget.store.export(_open!),
           onDelete: _openPath == null ? null : _deleteOpen,
         );
@@ -1089,6 +1119,7 @@ class _Editor extends StatelessWidget {
     required this.onSave,
     required this.onRename,
     required this.onDuplicate,
+    required this.onUseForGame,
     required this.onExport,
     required this.onDelete,
     required this.readOnly,
@@ -1103,6 +1134,7 @@ class _Editor extends StatelessWidget {
   final VoidCallback onSave;
   final VoidCallback onRename;
   final VoidCallback onDuplicate;
+  final VoidCallback onUseForGame;
   final VoidCallback onExport;
   final VoidCallback? onDelete;
   // Consultation : le questionnaire vient du catalogue. Les champs sont figés
@@ -1205,6 +1237,20 @@ class _Editor extends StatelessWidget {
                   ),
                 ],
               ],
+              const SizedBox(width: BSSpace.s2),
+              // Disponible dans les deux modes : un questionnaire du
+              // catalogue se joue tel quel, il n'y a aucune raison
+              // d'obliger à le dupliquer d'abord.
+              OutlinedButton(
+                onPressed: onUseForGame,
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: BSColors.text,
+                  side: const BorderSide(color: BSColors.divider),
+                  shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                  padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+                ),
+                child: const Text('Utiliser pour la partie'),
+              ),
               const SizedBox(width: BSSpace.s2),
               TextButton(
                 onPressed: onExport,

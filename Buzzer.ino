@@ -200,6 +200,15 @@ PhaseMode getCurrentMode() {
     return configuration.confirmCategories(catMask);
   }
 
+  // Commande App->Mega SET_COUNT|<n> (voir BleLink::consumeQuestionCount) :
+  // meme logique, gardee par la phase. L'app s'en sert pour imposer le mode
+  // ouvert (0) quand c'est elle qui fournit les questions - c'est alors elle
+  // qui decide de la fin de la soiree, pas le buzzer qui compte jusqu'a N.
+  int qCount = BleLink::shared().consumeQuestionCount();
+  if (qCount >= 0 && currentMode == QUIZ_COUNT) {
+    return configuration.confirmQuestionCount(qCount);
+  }
+
   // Quand l'app a pris le controle (voir BleLink::appInControl), elle a
   // 100% la main : le clavier physique est ignore (hors reset/test cable
   // ci-dessus, qui restent une echappatoire de securite dans tous les cas).

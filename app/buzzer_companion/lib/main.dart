@@ -15,6 +15,7 @@ import 'popout/popout_snapshot.dart';
 import 'popout/popout_window.dart';
 import 'popout/window_launch_args.dart';
 import 'protocol.dart';
+import 'questionnaires/active_questionnaire.dart';
 import 'questionnaires/catalogue.dart';
 import 'questionnaires/questionnaire_store.dart';
 import 'team_names.dart';
@@ -61,6 +62,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   final _logo = EventLogo();
   final _questionnaires = QuestionnaireStore();
   final _catalogue = CatalogueStore();
+  late final ActiveQuestionnaire _actif;
   late final SoundEngine _sound;
   StreamSubscription<SfxEvent>? _sfxSub;
 
@@ -70,6 +72,10 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     _ble.init();
     _game.listenTo(_ble.messages);
     _game.addListener(_pushSnapshotToPopout);
+    // Le questionnaire en jeu suit les transitions de phase pour savoir quand
+    // passer a la question suivante (voir ActiveQuestionnaire).
+    _actif = ActiveQuestionnaire(_game);
+    _game.addListener(_actif.onGameChanged);
 
     // Moteur de son : joue la bibliothèque embarquée à la place du DFPlayer
     // et renvoie au Mega son état de lecture, qui remplace la broche BUSY
@@ -159,6 +165,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
         logo: _logo,
         questionnaires: _questionnaires,
         catalogue: _catalogue,
+        actif: _actif,
       ),
     );
   }

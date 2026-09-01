@@ -518,21 +518,40 @@ PhaseMode Configuration::quizCount(char pressedKey) {
       }
       showQuizCount();
       break;
-    case '#': {
-      // Lancement réel de la partie (remplace l'ancien '#' du menu).
-      buzzer.setQuestionLimit(qcountIdx);
-      QuestionBank::shared().setSelection(qcatMask);
-      buzzer.resetScores();
-      if (buzzer.getGameMode() == GAME_VOL) {
-        return VOL_SPIN;          // Vol : pas d'intro, tirage au sort direct
-      }
-      mp3.playInit();             // son de lancement (dossier 01)
-      return INTRO;
-    }
+    case '#':
+      return startMatch();
     case '*':
       return QUIZ_CATS;           // revenir au choix des catégories
   }
   return QUIZ_COUNT;
+}
+
+// Fixe le nombre de questions et lance la partie, sans passer par le
+// compteur. L'app s'en sert pour imposer le mode ouvert (0) quand c'est elle
+// qui fournit les questions : c'est alors elle qui decide quand la soiree est
+// finie, pas le buzzer qui compte jusqu'a N.
+//
+// Une commande plutot que des appuis rejoues : qcountIdx ne reboucle pas
+// (voir les cases '2' et '8'), donc revenir a 0 depuis 99 demanderait 99
+// pressions.
+PhaseMode Configuration::confirmQuestionCount(int n) {
+  if (n < 0 || n > QCOUNT_MAX) return QUIZ_COUNT;
+  qcountIdx = n;
+  return startMatch();
+}
+
+// Le lancement reel, partage par le '#' du compteur et par la commande de
+// l'app. Extrait tel quel plutot que duplique : deux copies divergeraient au
+// premier ajout (un son, une remise a zero de plus).
+PhaseMode Configuration::startMatch() {
+  buzzer.setQuestionLimit(qcountIdx);
+  QuestionBank::shared().setSelection(qcatMask);
+  buzzer.resetScores();
+  if (buzzer.getGameMode() == GAME_VOL) {
+    return VOL_SPIN;          // Vol : pas d'intro, tirage au sort direct
+  }
+  mp3.playInit();             // son de lancement (dossier 01)
+  return INTRO;
 }
 
 void Configuration::setShuffleBuzzers() {

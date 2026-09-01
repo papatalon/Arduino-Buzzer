@@ -55,6 +55,14 @@ class BleLink {
     // Consommee une seule fois - voir Configuration::confirmCategories().
     int consumeCategoryMask();
 
+    // Retourne le nombre de questions demande par un "SET_COUNT|<n>" recu
+    // depuis le dernier appel (0-99, 0 = Ouvert), ou -1 si aucun n'est en
+    // attente. Consommee une seule fois - voir
+    // Configuration::confirmQuestionCount(). Une vraie commande plutot que
+    // des appuis rejoues : le compteur ne reboucle pas, donc atteindre 0
+    // depuis 99 demanderait 99 pressions de touche.
+    int consumeQuestionCount();
+
     // Retourne le masque de presence demande par un "SET_PRESENT|<n>" recu
     // depuis le dernier appel (bit 0 = rouge ... bit 3 = vert), ou -1 si
     // aucun n'est en attente. Consommee une seule fois. Sert a jouer a deux
@@ -94,6 +102,7 @@ class BleLink {
     unsigned long _lastControlMillis = 0;
     int _pendingGameSelect = -1;
     int _pendingCategoryMask = -1;
+    int _pendingQuestionCount = -1;
     int _pendingPresenceMask = -1;
     bool _appSoundBusy = false;
     bool _appHandlesSound = true;

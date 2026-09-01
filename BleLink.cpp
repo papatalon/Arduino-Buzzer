@@ -87,6 +87,11 @@ char BleLink::pollKey() {
         if (mask >= 0 && mask < 1024) {  // 10 bits (QCAT_COUNT)
           _pendingCategoryMask = mask;
         }
+      } else if (_rxBuffer.startsWith("SET_COUNT|")) {
+        int n = _rxBuffer.substring(10).toInt();
+        if (n >= 0 && n <= 99) {  // QCOUNT_MAX
+          _pendingQuestionCount = n;
+        }
       }
       _rxBuffer = "";
     } else if (_rxBuffer.length() < 32) {  // ligne trop longue : forcement corrompue, on l'ignore
@@ -128,6 +133,12 @@ char BleLink::consumeSoundCommand() {
 
 int BleLink::soundCommandBuzzer() {
   return _pendingSoundBuzzer;
+}
+
+int BleLink::consumeQuestionCount() {
+  int v = _pendingQuestionCount;
+  _pendingQuestionCount = -1;
+  return v;
 }
 
 int BleLink::consumeCategoryMask() {
