@@ -5,6 +5,7 @@
 #include "PhaseMode.h"
 #include "Mp3.h"
 #include "Buzzer.h"
+#include "BleLink.h"
 
 // Le nombre de manches se regle dans le menu (ligne "Chrono aveugle" de la
 // liste des jeux) : voir GAME_ROUNDS_* et getGameRounds() dans Buzzer.h.
@@ -72,6 +73,7 @@ private:
   LcdDisplay& display = LcdDisplay::shared();
   Mp3& mp3 = Mp3::shared();
   Buzzer& buzzer = Buzzer::shared();
+  BleLink& ble = BleLink::shared();
 };
 
 #endif

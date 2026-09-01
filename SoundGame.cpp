@@ -14,6 +14,12 @@ void SoundGame::reset() {
   claimed = false;
   learnIndex = -1;
   learnDone = false;
+
+  // Scores propres au jeu, distincts de ceux du quiz : voir
+  // BleLink::sendGameScores.
+  ble.sendGameScores(scores);
+  ble.sendGameRound(0, totalSounds);
+  ble.send("SNDO|-2|0");   // -2 = rien a reveler encore (nouvelle partie)
 }
 
 String SoundGame::scoreLine() {
@@ -32,6 +38,9 @@ String SoundGame::scoreLine() {
 
 void SoundGame::showProgress() {
   display.setText(String("NE BUZZE PAS  ") + played + "/" + totalSounds, 0);
+  // Ici les "manches" sont des sons : meme forme, meme message que les
+  // autres jeux a manches.
+  ble.sendGameRound(played, totalSounds);
 }
 
 // === Apprentissage des sons ===
@@ -80,6 +89,7 @@ PhaseMode SoundGame::learn(char pressedKey) {
     learnDone = true;
     display.setText("", 2);
     display.setText("#: c'est parti", 3);
+    ble.send("SNDL|-1");     // apprentissage termine
     return SOUND_LEARN;
   }
 
@@ -87,6 +97,9 @@ PhaseMode SoundGame::learn(char pressedKey) {
   buzzer.setLed(next, true);
   mp3.playBuzzer(next);
   display.setText(String("Son de ") + buzzer.colorName(next), 2);
+  // Pendant l'apprentissage, dire a qui appartient le son est le BUT : la
+  // LED s'allume et la couleur est nommee. Rien a cacher a ce stade.
+  ble.send(String("SNDL|") + next);
   learnStart = millis();
   return SOUND_LEARN;
 }
@@ -146,8 +159,11 @@ void SoundGame::playNext() {
     mp3.playBuzzer(owner);
   } else {
     int decoy = pickDecoySound();
-    if (decoy >= 0) {
-      mp3.playBuzzerSound(decoy);
+    if (decoy >= 0 || mp3.isDelegated()) {
+      // Delegue : l'app choisit elle-meme un leurre qu'aucun buzzer
+      // present ne possede (elle seule connait les assignations), donc
+      // l'index calcule ici est ignore de son cote.
+      mp3.playDecoySound(decoy);
     } else {
       owner = pickPlayer();          // aucun son libre : on retombe sur un joueur
       if (owner >= 0) {
@@ -190,6 +206,11 @@ void SoundGame::handleBuzz(int i, unsigned long now) {
 
 // Verdict du son qui vient de s'ecouler, au moment ou le suivant demarre.
 void SoundGame::judgeCurrent() {
+  // Le proprietaire n'est revele qu'ICI, jamais pendant que le son joue :
+  // c'est toute la question du jeu, et l'ecran public y repondrait avant
+  // les joueurs. A cet instant la fenetre pour buzzer est deja fermee.
+  ble.send(String("SNDO|") + owner + "|" + (claimed ? 1 : 0));
+
   if (owner >= 0) {
     if (!claimed) {
       scores[owner]--;       // laisser passer son propre son coute un point
@@ -239,6 +260,7 @@ PhaseMode SoundGame::play(char pressedKey) {
   if (now - soundStart >= interval) {
     judgeCurrent();
     display.setText(scoreLine(), 3);
+    ble.sendGameScores(scores);
 
     if (played >= totalSounds) {
       return SOUND_OVER;
@@ -296,6 +318,10 @@ void SoundGame::setGameOver() {
   display.setText(scoreLine(), 1);
   display.setText(String(played) + " sons" + (decoys ? ", leurres" : ""), 2);
   display.setText("#: rejouer  *: menu", 3);
+
+  const bool decided = !aborted && any;
+  ble.sendGameScores(scores);
+  ble.sendGameOver(decided && leaders == 1 ? who : -1, decided && leaders > 1);
 
   if (!aborted && any && leaders == 1) {
     mp3.playGoodAnswer();

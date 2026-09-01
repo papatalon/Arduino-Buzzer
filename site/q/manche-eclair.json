@@ -1,0 +1,60 @@
+{
+  "format": "buzzer-questionnaire",
+  "version": 1,
+  "titre": "Manche éclair",
+  "note": "Dix questions, une de chaque catégorie.",
+  "collection": "Mélanges",
+  "emoji": "🎲",
+  "questions": [
+    {
+      "categorie": "Sports",
+      "question": "Quel Argentin a soulevé la Coupe du monde 2022 ?",
+      "reponse": "Lionel Messi"
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel cowboy de BD tire plus vite que son ombre ?",
+      "reponse": "Lucky Luke"
+    },
+    {
+      "categorie": "Québec",
+      "question": "Combien de députés siègent à l'Assemblée nationale ?",
+      "reponse": "125"
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle ruée vers l'or a attiré des milliers de gens au Yukon ?",
+      "reponse": "Klondike"
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "De quelle légumineuse est fait le houmous ?",
+      "reponse": "Pois chiches"
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel palindrome de trois lettres exprime un refus ?",
+      "reponse": "Non"
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve traverse l'Égypte ?",
+      "reponse": "Le Nil"
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel roi mythique change en or tout ce qu'il touche ?",
+      "reponse": "Midas"
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
+      "reponse": "La dionée"
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelles pièces de bois claque-t-on entre les doigts au Québec ?",
+      "reponse": "Les cuillères"
+    }
+  ]
+}

@@ -274,6 +274,7 @@ void Buzzer::setWaitingForBuzzer() {
     if (bankOn && lastDrawnQuestion != questionNumber) {
       if (bank.drawQuestion()) {
         lastDrawnQuestion = questionNumber;
+        ble.send("QUESTION|" + bank.questionCategory() + "|" + bank.questionText() + "|" + bank.answerText());
       } else {
         bankOn = false;
       }
@@ -310,6 +311,7 @@ void Buzzer::setWaitingForBuzzer() {
   if (bankOn && lastDrawnQuestion != questionNumber) {
     if (bank.drawQuestion()) {
       lastDrawnQuestion = questionNumber;
+      ble.send("QUESTION|" + bank.questionCategory() + "|" + bank.questionText() + "|" + bank.answerText());
     } else {
       bankOn = false;
     }
@@ -407,6 +409,7 @@ void Buzzer::setBuzzerPressed() {
       display.setText("D: Mauvaise reponse", 2);
     }
     display.setText("0 = passer", 3);
+    ble.send("BUZZ|" + String(currentBuzzerId));
     int ledPin = buzzers[currentBuzzerId][0];
     digitalWrite(ledPin, HIGH);
 }
@@ -641,6 +644,7 @@ void Buzzer::goodAnswer() {
 
   mp3.playGoodAnswer();
   digitalWrite(ledPin, LOW);
+  sendScoreTelemetry();
 
   // Le clignotement de la LED se fait sans blocage pendant l'écran des
   // scores (voir showScores), pour ne pas figer le clavier ni l'afficheur.
@@ -662,6 +666,7 @@ void Buzzer::badAnswer() {
 
   actives[currentBuzzerId] = false;
   digitalWrite(ledPin, LOW);
+  sendScoreTelemetry();
 
   // Vol : le joueur désigné vient d'échouer (1er échec de la question) —
   // on ouvre le vol aux autres présents. Un voleur qui échoue à son tour
@@ -692,6 +697,7 @@ PhaseMode Buzzer::correctLastDecision(PhaseMode fallback) {
       scores[id]++;                // annule le -1 de la pénalité
     }
   }
+  sendScoreTelemetry();
 
   currentBuzzerId = id;            // on revient juger ce même buzzer
   return BUZZER_PRESSED;
@@ -715,6 +721,7 @@ const char* Buzzer::colorName(int i) {
 
 void Buzzer::setGameMode(GameMode value) {
   gameMode = value;
+  ble.send("GAME|" + String((int)value));
 }
 
 GameMode Buzzer::getGameMode() {
@@ -892,6 +899,7 @@ void Buzzer::startBuzzTimer() {
   timerRunning = true;
   timerEnd = millis() + (unsigned long)timerLimit * 1000UL;
   lastShownSecs = -1;
+  ble.send("CHRONO_START");
 }
 
 // Barre dégressive sur la ligne 1 + secondes restantes à droite du titre.
@@ -988,6 +996,12 @@ void Buzzer::resetScores() {
   for (int i = 0; i < 4; i++) {
     actives[i] = true;
   }
+  sendScoreTelemetry();
+}
+
+void Buzzer::sendScoreTelemetry() {
+  ble.send("SCORE|" + String(scores[0]) + "|" + String(scores[1]) + "|" +
+           String(scores[2]) + "|" + String(scores[3]));
 }
 
 void Buzzer::setQuestionLimit(int n) {
@@ -1152,6 +1166,12 @@ void Buzzer::setEndGame() {
 
   displayScores(endTie ? "EGALITE !" : "FIN DE PARTIE", prompt.c_str());
 
+  // L'app a besoin de savoir s'il y a egalite : ca change le sens des
+  // touches en END_GAME ('#' lance un bris d'egalite au lieu de revenir
+  // au menu), donc l'interface ne peut pas proposer de boutons honnetes
+  // sans cette information. -1 comme gagnant = aucun buzzer present.
+  ble.send("ENDGAME|" + String(endTie ? 1 : 0) + "|" + String(any ? winner : -1));
+
   if (any && count == 1) {
     mp3.playGoodAnswer();            // son de victoire
   }
@@ -1203,22 +1223,42 @@ void Buzzer::resetConfigState() {
   }
 }
 
+void Buzzer::sendPresence() {
+  ble.send("PRESENT|" + String(enabled[0]) + "|" + String(enabled[1]) + "|" +
+           String(enabled[2]) + "|" + String(enabled[3]));
+}
+
 void Buzzer::setEnabled(int buzzerId, bool value) {
   enabled[buzzerId] = value;
+  sendPresence();
+}
+
+// Les quatre d'un coup, depuis l'app (commande SET_PRESENT). Un seul message
+// de telemetrie plutot que quatre : l'app envoie un etat complet, pas une
+// suite de changements, et quatre PRESENT successifs feraient clignoter son
+// affichage a chaque bascule.
+void Buzzer::setPresenceMask(int mask) {
+  for (int i = 0; i < 4; i++) {
+    enabled[i] = (mask & (1 << i)) != 0;
+  }
+  sendPresence();
 }
 
 bool Buzzer::isEnabled(int buzzerId) {
   return enabled[buzzerId];
 }
 
-// Vrai si les 4 buzzers sont déclarés présents (requis par le jeu Simon).
-bool Buzzer::hasFourPlayers() {
+// Nombre de buzzers déclarés présents. Simon s'en sert pour ne tirer sa
+// séquence QUE parmi les couleurs réellement en jeu : à deux joueurs, la
+// séquence n'utilise que ces deux couleurs.
+int Buzzer::playerCount() {
+  int n = 0;
   for (int i = 0; i < 4; i++) {
-    if (!enabled[i]) {
-      return false;
+    if (enabled[i]) {
+      n++;
     }
   }
-  return true;
+  return n;
 }
 
 // Vrai si exactement 2 buzzers sont déclarés présents (requis par le jeu

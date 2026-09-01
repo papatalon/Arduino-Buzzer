@@ -1440,7 +1440,7 @@ static const char CAT6_DATA[] QDATA =
   "Quelle souris Disney est l'amoureuse de Mickey ?|Minnie\n"
   "Quel canard Disney porte un costume marin ?|Donald\n"
   "Quel est le chien de compagnie de Mickey ?|Pluto\n"
-  "Quel film Disney de 2013 chante Libere, delivree ?|La Reine des neiges\n"
+  "Quel film Disney de 2013 chante Liberee, delivree ?|La Reine des neiges\n"
   "Quel medecin grincheux de serie boite avec une canne ?|Dr House\n"
   "Quelle voiture emblematique conduit James Bond ?|Aston Martin\n"
   "Quel studio japonais a cree Mon voisin Totoro ?|Ghibli\n"

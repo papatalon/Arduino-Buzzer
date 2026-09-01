@@ -5,6 +5,7 @@
 #include "PhaseMode.h"
 #include "Mp3.h"
 #include "Buzzer.h"
+#include "BleLink.h"
 
 // Le nombre de sons d'une partie et l'activation des leurres se reglent dans le
 // menu (ligne "Ne buzze pas" de la liste des jeux) : voir getGameRounds() et
@@ -85,6 +86,7 @@ private:
   LcdDisplay& display = LcdDisplay::shared();
   Mp3& mp3 = Mp3::shared();
   Buzzer& buzzer = Buzzer::shared();
+  BleLink& ble = BleLink::shared();
 };
 
 #endif

@@ -216,6 +216,35 @@ void Mp3::ensureUnlockedSound(int buzzerId) {
 
 void Mp3::lockSound(int buzzerId) {
   locked[buzzerId] = true;
+  ble.send("CFG_SOUND|" + String(buzzerId) + "|" + String(buzzerSound[buzzerId]));
+}
+
+void Mp3::sendSoundEvent(int folder, int file) {
+  ble.send("SOUND|" + String(folder) + "|" + String(file));
+}
+
+bool Mp3::isDelegated() {
+  // L'app doit avoir le controle ET avoir accepte de jouer les sons :
+  // l'operateur peut demander un repli sur le haut-parleur du buzzer
+  // (aucun haut-parleur cote PC, par exemple).
+  return ble.appInControl() && ble.appHandlesSound();
+}
+
+bool Mp3::delegateToApp(const String& event) {
+  if (!isDelegated()) {
+    return false;
+  }
+  // L'app possede sa propre bibliotheque et ses propres assignations : on
+  // lui envoie l'intention ("bonne reponse", "le bleu a buzze") et non un
+  // numero de fichier, qui n'aurait aucun sens de son cote.
+  ble.send("SFX|" + event);
+  return true;
+}
+
+void Mp3::sendAllSoundAssignments() {
+  for (int i = 0; i < 4; i++) {
+    ble.send("CFG_SOUND|" + String(i) + "|" + String(buzzerSound[i]));
+  }
 }
 
 void Mp3::resetConfig() {
@@ -225,6 +254,12 @@ void Mp3::resetConfig() {
 }
 
 bool Mp3::isBusy() {
+  // Mode delegue : le DFPlayer ne joue plus, donc sa broche BUSY ne bouge
+  // plus. C'est l'app qui rapporte son etat de lecture (SFX_BUSY), ce qui
+  // permet au chenillard de l'intro de rester cale sur la musique.
+  if (isDelegated()) {
+    return ble.appSoundBusy();
+  }
   // BUSY est LOW pendant la lecture, HIGH au repos. Sans module (simulation),
   // la broche n'est pas pilotée : on ne peut pas savoir -> on renvoie faux.
   if (simulation) {
@@ -238,6 +273,8 @@ bool Mp3::isSimulation() {
 }
 
 void Mp3::playInit() {
+  if (delegateToApp("INTRO")) return;
+
   int arraySize = mp3Arrays[INIT_FOLDER - 1].size;
   int fileNumber = random(arraySize) + 1;   // fichiers DFPlayer numérotés à partir de 1
 
@@ -251,8 +288,12 @@ void Mp3::playInit() {
 }
 
 void Mp3::playBuzzer(int buzzerId) {
+  // En mode delegue on envoie la COULEUR, pas un numero de fichier :
+  // l'assignation son<->buzzer appartient a l'app.
+  if (delegateToApp("BUZZ|" + String(buzzerId))) return;
 
   int mp3Id = buzzerSound[buzzerId];
+  sendSoundEvent(BUZZER_FOLDER, mp3Id + 1);
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier BUZZER, fichier "));
@@ -270,6 +311,7 @@ void Mp3::playBuzzerSound(int soundIndex) {
   if (soundIndex < 0 || soundIndex >= poolSize) {
     return;
   }
+  sendSoundEvent(BUZZER_FOLDER, soundIndex + 1);
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier BUZZER, fichier "));
@@ -284,13 +326,38 @@ int Mp3::buzzerSoundPoolSize() {
   return mp3Arrays[BUZZER_FOLDER - 1].size;
 }
 
+// Duel : signal de depart sonore, volontairement un son quelconque et non
+// celui d'un des deux duellistes.
+void Mp3::playRandomBuzzerSound() {
+  if (delegateToApp("RANDBUZZ")) return;
+
+  int poolSize = buzzerSoundPoolSize();
+  if (poolSize <= 0) {
+    return;
+  }
+  playBuzzerSound(random(poolSize));
+}
+
+// Ne buzze pas : un leurre doit n'appartenir a aucun buzzer present, sinon
+// un joueur croirait reconnaitre le sien. En mode delegue seule l'app peut
+// le determiner (elle detient les assignations), d'ou l'evenement dedie
+// plutot qu'un index calcule ici.
+void Mp3::playDecoySound(int soundIndex) {
+  if (delegateToApp("DECOY")) return;
+
+  playBuzzerSound(soundIndex);
+}
+
 void Mp3::playGoodAnswer() {
+  if (delegateToApp("GOOD")) return;
+
   int arraySize = mp3Arrays[GOOD_FOLDER - 1].size;
   int fileNumber;
   do {
     fileNumber = random(arraySize) + 1;     // fichiers DFPlayer numérotés à partir de 1
   } while (arraySize > 1 && fileNumber == lastGood);  // pas 2x le même de suite
   lastGood = fileNumber;
+  sendSoundEvent(GOOD_FOLDER, fileNumber);
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier GOOD, fichier "));
@@ -302,12 +369,15 @@ void Mp3::playGoodAnswer() {
 }
 
 void Mp3::playBadAnswer() {
+  if (delegateToApp("BAD")) return;
+
   int arraySize = mp3Arrays[BAD_FOLDER - 1].size;
   int fileNumber;
   do {
     fileNumber = random(arraySize) + 1;
   } while (arraySize > 1 && fileNumber == lastBad);
   lastBad = fileNumber;
+  sendSoundEvent(BAD_FOLDER, fileNumber);
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier BAD, fichier "));
@@ -320,6 +390,8 @@ void Mp3::playBadAnswer() {
 
 // Son d'ambiance lancé par l'animateur quand la réponse tarde à venir.
 void Mp3::playWaiting() {
+  if (delegateToApp("WAIT")) return;
+
   int arraySize = mp3Arrays[WAITING_FOLDER - 1].size;
   if (arraySize <= 0) {
     return;
@@ -330,6 +402,7 @@ void Mp3::playWaiting() {
     fileNumber = random(arraySize) + 1;
   } while (arraySize > 1 && fileNumber == lastWaiting);   // pas 2x le même de suite
   lastWaiting = fileNumber;
+  sendSoundEvent(WAITING_FOLDER, fileNumber);
 
   if (simulation) {
     Serial.print(F("[SIM] Lecture dossier WAITING, fichier "));
@@ -342,6 +415,9 @@ void Mp3::playWaiting() {
 
 // Un seul fichier pour l'instant : pas de tirage, on rejoue toujours le même.
 void Mp3::playSpin() {
+  if (delegateToApp("SPIN")) return;
+
+  sendSoundEvent(SPIN_FOLDER, 1);
   if (simulation) {
     Serial.println(F("[SIM] Lecture dossier SPIN, fichier 1"));
     return;

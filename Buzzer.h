@@ -6,6 +6,7 @@
 #include "LcdDisplay.h"
 #include <Arduino.h>
 #include "Mp3.h";
+#include "BleLink.h"
 
 #define SCORES_DISPLAY_MS 15000  // durée d'affichage des scores entre les questions
 #define WIN_BLINK_MS 1500        // durée du clignotement de la LED du gagnant
@@ -81,8 +82,9 @@ public:
     // Assistant de configuration
     void resetConfigState();                 // ré-active tout, remet l'anti-rebond
     void setEnabled(int buzzerId, bool value);
+    void setPresenceMask(int mask);          // les 4 d'un coup (app, SET_PRESENT)
     bool isEnabled(int buzzerId);
-    bool hasFourPlayers();                   // les 4 buzzers sont déclarés présents
+    int playerCount();                       // combien de buzzers en jeu (0-4)
     bool hasExactlyTwoPlayers();             // exactement 2 (requis par le jeu Duel)
     bool wasPressed(int buzzerId);           // front montant d'un appui (anti-rebond)
     void armButtons();                       // ignore les boutons déjà maintenus
@@ -148,6 +150,8 @@ public:
 private:
   Buzzer(const Buzzer&) = delete;
   Buzzer& operator=(const Buzzer&) = delete;
+
+  void sendPresence();                       // telemetrie PRESENT|r|b|j|v
 
   // Brochage des buzzers : { Pin LED, Pin Bouton }
   int buzzers[4][2] = {
@@ -263,8 +267,14 @@ private:
   void resetAllBuzzers();
   void displayScores(const char* title, const char* prompt);
 
+  // Telemetrie app compagnon (BLE) : un seul point de construction du message
+  // SCORE, appele partout ou scores[] change (bonne/mauvaise reponse,
+  // correction, remise a zero).
+  void sendScoreTelemetry();
+
   LcdDisplay& display = LcdDisplay::shared();
   Mp3& mp3 = Mp3::shared();
+  BleLink& ble = BleLink::shared();
 };
 
 #endif

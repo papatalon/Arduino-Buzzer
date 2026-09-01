@@ -9,13 +9,19 @@ void Configuration::init() {
   display.setText("C:Jeu D:Volu #:Jouer", 3);
 }
 
-// Le jeu Simon exige les 4 buzzers : on refuse le lancement et on renvoie
-// vers l'assistant de configuration.
+// Le jeu Simon a besoin d'au moins deux couleurs a memoriser : a un seul
+// joueur, il suffirait d'appuyer a chaque fois. On refuse donc le lancement
+// et on renvoie vers l'assistant de configuration.
 void Configuration::showFourPlayersWarning() {
   warningShown = true;
+  // Cet avertissement vit sur le LCD, qui est fige tant que l'app a le
+  // controle : sans cette telemetrie, "Lancer la partie" depuis l'app ne
+  // ferait rien du tout, sans un mot d'explication nulle part. L'intervalle
+  // (min|max) permet a l'app de dire "au moins deux" plutot que "exactement".
+  ble.send("WARN|PLAYERS|2|4");
   display.clear();
-  display.setText("  SIMON : 4 JOUEURS", 0);
-  display.setText("Buzzers manquants", 1);
+  display.setText(" SIMON : 2 A 4 JOUEURS", 0);
+  display.setText("Il en faut au moins 2", 1);
   display.setText("A: config buzzers", 2);
   display.setText("Autre touche: menu", 3);
 }
@@ -24,6 +30,7 @@ void Configuration::showFourPlayersWarning() {
 // importe lesquels, il se joue toujours a deux.
 void Configuration::showTwoPlayersWarning() {
   warningShown = true;
+  ble.send("WARN|PLAYERS|2|2");   // meme raison que ci-dessus, mais exactement deux
   display.clear();
   display.setText("   DUEL : 2 JOUEURS", 0);
   display.setText("Il en faut exactement", 1);
@@ -56,8 +63,8 @@ PhaseMode Configuration::manageConfiguration(char pressedKey) {
       GameMode mode = buzzer.getGameMode();
       bool isSimon = (mode == GAME_SIMON || mode == GAME_SIMON_REVERSE);
       if (isSimon) {
-        if (!buzzer.hasFourPlayers()) {
-          showFourPlayersWarning(); // Simon (endroit ou envers) ne se joue qu'à 4
+        if (buzzer.playerCount() < 2) {
+          showFourPlayersWarning(); // Simon se joue de 2 à 4, jamais seul
           return CONFIGURATION;
         }
         buzzer.resetScores();       // nouvelle partie : scores remis à zéro
@@ -178,26 +185,50 @@ PhaseMode Configuration::gameChoice(char pressedKey) {
       scrollGameWindow();
       showGameChoice();
       break;
-    case '#': {
-      const GameListItem& item = GAME_LIST[gameCursor];
-      buzzer.setGameMode(item.target);   // applique le jeu, réglage ou non
-      if (item.kind == GLK_CHRONO) {
-        chronoTargetMode = item.target;   // quel mode régler (Classique/Pénalité)
-        return CHRONO;
-      }
-      if (item.kind == GLK_ROUNDS) {
-        roundsTargetMode = item.target;   // quel jeu régler (Réflexe / aveugle)
-        return ROUNDS_SETUP;
-      }
-      if (item.kind == GLK_SOUND) {
-        return SOUND_SETUP;               // nb de sons, puis leurres
-      }
-      return CONFIGURATION;
-    }
+    case '#':
+      return confirmGameSelection();
     case '*':
       return CONFIGURATION;         // annule : le jeu en cours ne change pas
   }
   return GAME_CHOICE;
+}
+
+PhaseMode Configuration::confirmGameSelection() {
+  const GameListItem& item = GAME_LIST[gameCursor];
+  buzzer.setGameMode(item.target);   // applique le jeu, réglage ou non
+  if (item.kind == GLK_CHRONO) {
+    chronoTargetMode = item.target;   // quel mode régler (Classique/Pénalité)
+    return CHRONO;
+  }
+  if (item.kind == GLK_ROUNDS) {
+    roundsTargetMode = item.target;   // quel jeu régler (Réflexe / aveugle)
+    return ROUNDS_SETUP;
+  }
+  if (item.kind == GLK_SOUND) {
+    return SOUND_SETUP;               // nb de sons, puis leurres
+  }
+  return CONFIGURATION;
+}
+
+// Selection directe (commande App->Mega SELECT_GAME|<n>), sans passer par
+// la navigation haut/bas du clavier - voir BleLink::consumeGameSelect() et
+// le commentaire dans Configuration.h.
+PhaseMode Configuration::selectGameIndex(int index) {
+  if (index < 0 || index >= GAME_LIST_COUNT) return GAME_CHOICE;  // securite, ignore
+  gameCursor = index;
+  PhaseMode next = confirmGameSelection();
+  // Les jeux sans reglage reviennent au menu : ce n'est pas une transition,
+  // donc updateMode() n'enverra aucun STATE et l'app ne saurait jamais que
+  // sa commande a abouti. Elle attendrait une reponse qui ne vient pas.
+  // On l'annonce donc explicitement.
+  //
+  // Cas ou la phase courante n'etait PAS le menu (l'app peut changer de jeu
+  // en pleine partie) : updateMode enverra aussi un STATE, et l'app en
+  // recevra deux identiques. Sans consequence, elle repose la meme valeur.
+  if (next == CONFIGURATION) {
+    ble.send("STATE|" + String((int)CONFIGURATION));
+  }
+  return next;
 }
 
 // Pas de réglage : 1 s à chaque appui.
@@ -222,6 +253,7 @@ void Configuration::showChronoStep() {
   display.setText(buzzer.gameModeName(chronoTargetMode), 0);   // "Chrono classique"...
   display.setText(chronoStep == CHRONO_FIRST ? "1re reponse" : "Autres reponses", 1);
   display.setText(String("> ") + buzzTimeLabel(chronoCursor), 2);
+  ble.send("CHRONO_CFG|" + String((int)chronoStep) + "|" + String(chronoCursor));
 }
 
 void Configuration::setChronoScreen() {
@@ -265,6 +297,7 @@ PhaseMode Configuration::chronoScreen(char pressedKey) {
 // est conservé en EEPROM, donc proposé tel quel à la prochaine partie.
 void Configuration::showRoundsValue() {
   display.setText(String("> ") + roundsCursor, 2);
+  ble.send("ROUNDS_CFG|" + String(roundsCursor));
 }
 
 void Configuration::setRoundsScreen() {
@@ -308,10 +341,12 @@ void Configuration::showSoundStep() {
     display.setText("Nombre de sons", 1);
     display.setText(String("> ") + roundsCursor, 2);
     display.setText("2=+  8=-  #OK *:ann", 3);
+    ble.send("SOUND_CFG|0|" + String(roundsCursor));
   } else {
     display.setText("Sons leurres", 1);
     display.setText(String("> ") + (soundDecoysCursor ? "oui" : "non"), 2);
     display.setText("2/8: changer  #OK", 3);
+    ble.send("SOUND_CFG|1|" + String(soundDecoysCursor ? 1 : 0));
   }
 }
 
@@ -400,6 +435,7 @@ void Configuration::showQuizCats() {
     display.setText(prefix + qcatLabel(row), rowOnScreen);
   }
   display.setText("2/8 5:cocher #:OK", 3);
+  ble.send("QCAT_CFG|" + String(qcatMask));
 }
 
 void Configuration::setQuizCats() {
@@ -446,8 +482,18 @@ PhaseMode Configuration::quizCats(char pressedKey) {
   return QUIZ_CATS;
 }
 
+// Selection directe (commande App->Mega SET_CATS|<mask>) : contourne les
+// raccourcis de gameChoice-like ci-dessus (bases sur qcatCursor, qui n'a
+// aucun rapport avec ce que l'app vient de cocher) - l'app envoie deja le
+// masque final exact.
+PhaseMode Configuration::confirmCategories(int mask) {
+  qcatMask = (uint16_t)mask;
+  return QUIZ_COUNT;
+}
+
 void Configuration::showQuizCount() {
   display.setText(String("> ") + (qcountIdx == 0 ? String("Ouvert") : String(qcountIdx)), 1);
+  ble.send("QCOUNT_CFG|" + String(qcountIdx));
 }
 
 void Configuration::setQuizCount() {
@@ -472,21 +518,40 @@ PhaseMode Configuration::quizCount(char pressedKey) {
       }
       showQuizCount();
       break;
-    case '#': {
-      // Lancement réel de la partie (remplace l'ancien '#' du menu).
-      buzzer.setQuestionLimit(qcountIdx);
-      QuestionBank::shared().setSelection(qcatMask);
-      buzzer.resetScores();
-      if (buzzer.getGameMode() == GAME_VOL) {
-        return VOL_SPIN;          // Vol : pas d'intro, tirage au sort direct
-      }
-      mp3.playInit();             // son de lancement (dossier 01)
-      return INTRO;
-    }
+    case '#':
+      return startMatch();
     case '*':
       return QUIZ_CATS;           // revenir au choix des catégories
   }
   return QUIZ_COUNT;
+}
+
+// Fixe le nombre de questions et lance la partie, sans passer par le
+// compteur. L'app s'en sert pour imposer le mode ouvert (0) quand c'est elle
+// qui fournit les questions : c'est alors elle qui decide quand la soiree est
+// finie, pas le buzzer qui compte jusqu'a N.
+//
+// Une commande plutot que des appuis rejoues : qcountIdx ne reboucle pas
+// (voir les cases '2' et '8'), donc revenir a 0 depuis 99 demanderait 99
+// pressions.
+PhaseMode Configuration::confirmQuestionCount(int n) {
+  if (n < 0 || n > QCOUNT_MAX) return QUIZ_COUNT;
+  qcountIdx = n;
+  return startMatch();
+}
+
+// Le lancement reel, partage par le '#' du compteur et par la commande de
+// l'app. Extrait tel quel plutot que duplique : deux copies divergeraient au
+// premier ajout (un son, une remise a zero de plus).
+PhaseMode Configuration::startMatch() {
+  buzzer.setQuestionLimit(qcountIdx);
+  QuestionBank::shared().setSelection(qcatMask);
+  buzzer.resetScores();
+  if (buzzer.getGameMode() == GAME_VOL) {
+    return VOL_SPIN;          // Vol : pas d'intro, tirage au sort direct
+  }
+  mp3.playInit();             // son de lancement (dossier 01)
+  return INTRO;
 }
 
 void Configuration::setShuffleBuzzers() {

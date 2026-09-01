@@ -5,6 +5,7 @@
 #include "PhaseMode.h"
 #include "Mp3.h"
 #include "Buzzer.h"
+#include "BleLink.h"
 
 #define SIMON_MAX_LEVEL 32      // longueur maxi de la sequence (1 octet par etape)
 #define SIMON_START_MS 1500     // pause avant la demo (le temps de lire l'ecran)
@@ -14,8 +15,9 @@
 #define SIMON_ROUND_MS 2000     // pause "BRAVO" entre deux niveaux
 #define SIMON_TIMEOUT_MS 10000  // delai maxi entre deux appuis avant echec
 
-// Jeu collaboratif de memoire, facon "Simon". Se joue obligatoirement a 4 :
-// chaque joueur tient une couleur. La machine joue une sequence de couleurs
+// Jeu collaboratif de memoire, facon "Simon". Se joue a 2, 3 ou 4 :
+// chaque joueur tient une couleur, et la sequence n'est tiree QUE parmi les
+// couleurs en jeu (voir reset()). La machine joue une sequence de couleurs
 // (LED + son configure du buzzer correspondant), que l'equipe doit rejouer
 // dans l'ordre (ou a l'envers en mode GAME_SIMON_REVERSE, voir reset()) ;
 // chacun appuie quand SA couleur passe. La sequence s'allonge d'une couleur
@@ -36,6 +38,14 @@ public:
 private:
 
   uint8_t sequence[SIMON_MAX_LEVEL];
+
+  // Couleurs en jeu, figees par reset() : la sequence n'est tiree que
+  // la-dedans, sinon a deux joueurs elle demanderait des couleurs que
+  // personne ne tient. Changer la presence en pleine partie n'affecte donc
+  // pas celle qui est en cours.
+  uint8_t players[4] = { 0, 1, 2, 3 };
+  int playerCount = 4;
+
   int level = 0;              // niveaux reussis (= score collectif)
   int length = 0;             // longueur de la sequence du tour en cours
   bool reverse = false;       // vrai en mode GAME_SIMON_REVERSE (repeter a l'envers)
@@ -57,11 +67,13 @@ private:
 
   void showTitle();                 // ligne 0 : "SIMON - Niveau N"
   void showProgress();              // ligne 2 : progression "x / N"
+  void sendTelemetry();             // "SIMON|niveau|saisis|longueur" vers l'app
   PhaseMode fail(const char* title);  // termine la partie avec ce titre
 
   LcdDisplay& display = LcdDisplay::shared();
   Mp3& mp3 = Mp3::shared();
   Buzzer& buzzer = Buzzer::shared();
+  BleLink& ble = BleLink::shared();
 };
 
 #endif

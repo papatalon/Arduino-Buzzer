@@ -6,6 +6,7 @@
 #include "Mp3.h"
 #include "Buzzer.h"
 #include "QuestionBank.h"
+#include "BleLink.h"
 
 class Configuration {
 public:
@@ -13,6 +14,13 @@ public:
     PhaseMode manageConfiguration(char pressedKey);
     void setGameChoice();                    // sous-menu "C" : choix du jeu
     PhaseMode gameChoice(char pressedKey);
+    // Selectionne directement le jeu d'index [index] (meme ordre que
+    // GameMode/kGameModeNames cote app) et le confirme, sans passer par la
+    // navigation haut/bas du clavier - utilise par la commande App->Mega
+    // SELECT_GAME|<n> (voir BleLink::consumeGameSelect()). Fonctionne peu
+    // importe la phase courante : l'app n'est pas soumise a la contrainte
+    // sequentielle du clavier physique.
+    PhaseMode selectGameIndex(int index);
     void setChronoScreen();                  // reglage des durees du chrono
     PhaseMode chronoScreen(char pressedKey);
     void setRoundsScreen();                  // reglage du nb de manches d'un jeu
@@ -21,8 +29,20 @@ public:
     PhaseMode soundSetup(char pressedKey);
     void setQuizCats();                      // lancement quiz : categories
     PhaseMode quizCats(char pressedKey);
+    // Applique directement le masque de categories [mask] et passe a
+    // QUIZ_COUNT, sans passer par les raccourcis dependants du curseur
+    // physique (qui n'ont de sens que pour une seule frappe a la fois) -
+    // utilise par la commande App->Mega SET_CATS|<mask> (voir
+    // BleLink::consumeCategoryMask()).
+    PhaseMode confirmCategories(int mask);
     void setQuizCount();                     // lancement quiz : nb de questions
     PhaseMode quizCount(char pressedKey);
+    // Fixe le nombre de questions [n] (0 = Ouvert) et lance la partie -
+    // utilise par la commande App->Mega SET_COUNT|<n> (voir
+    // BleLink::consumeQuestionCount()). Le mode ouvert est ce que l'app
+    // impose quand c'est elle qui fournit les questions : c'est alors elle
+    // qui decide de la fin, pas le buzzer qui compte jusqu'a N.
+    PhaseMode confirmQuestionCount(int n);
     void setShuffleBuzzers();
     PhaseMode shuffleBuzzer(char pressedKey);
     void setBuzzerConfig();
@@ -31,6 +51,10 @@ public:
     PhaseMode volumeScreen(char pressedKey);
 
 private:
+
+  // Le lancement reel de la partie, partage par le '#' du compteur de
+  // questions et par la commande SET_COUNT de l'app.
+  PhaseMode startMatch();
 
   // Étapes de l'assistant de configuration d'un buzzer.
   enum CfgStep { CFG_PROMPT, CFG_CHOOSING };
@@ -48,6 +72,7 @@ private:
   int gameWindowTop = 0;     // première ligne affichée (haut de la fenêtre visible)
   void showGameChoice();
   void scrollGameWindow();               // recale gameWindowTop sur gameCursor
+  PhaseMode confirmGameSelection();       // applique GAME_LIST[gameCursor] (utilise par '#' et selectGameIndex)
 
   int cfgIndex = 0;          // buzzer en cours de configuration (0..3)
   CfgStep cfgStep = CFG_PROMPT;
@@ -103,6 +128,7 @@ private:
   LcdDisplay& display = LcdDisplay::shared();
   Mp3& mp3 = Mp3::shared();
   Buzzer& buzzer = Buzzer::shared();
+  BleLink& ble = BleLink::shared();
 };
 
 #endif
