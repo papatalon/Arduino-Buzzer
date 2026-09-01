@@ -8,16 +8,16 @@ import 'package:buzzer_companion/version_check.dart';
 
 void main() {
   test('rien à annoncer quand on est à jour', () {
-    expect(doitAnnoncer(local: 3, publie: 3, ferme: 0), isFalse);
+    expect(doitAnnoncer(local: 3, publie: 3, ferme: -1), isFalse);
   });
 
   test("rien à annoncer quand on est en avance sur ce qui est publié", () {
     // Arrive sur le poste de développement, qui construit avant de publier.
-    expect(doitAnnoncer(local: 4, publie: 3, ferme: 0), isFalse);
+    expect(doitAnnoncer(local: 4, publie: 3, ferme: -1), isFalse);
   });
 
   test('une version plus récente est annoncée', () {
-    expect(doitAnnoncer(local: 3, publie: 4, ferme: 0), isTrue);
+    expect(doitAnnoncer(local: 3, publie: 4, ferme: -1), isTrue);
   });
 
   test('la fermeture fait taire CETTE version', () {
@@ -37,15 +37,15 @@ void main() {
 
   test('sans version publiée connue, on se tait', () {
     // Site injoignable ou fichier illisible : les champs restent à zéro.
-    expect(doitAnnoncer(local: 3, publie: 0, ferme: 0), isFalse);
+    expect(doitAnnoncer(local: 3, publie: null, ferme: -1), isFalse);
   });
 
   test('sans version locale connue, on se tait aussi', () {
     // Si la lecture de la version embarquée échoue, tout est à zéro : rien
     // ne doit s'annoncer, sinon l'avis serait tiré au hasard.
-    expect(doitAnnoncer(local: 0, publie: 0, ferme: 0), isFalse);
+    expect(doitAnnoncer(local: null, publie: null, ferme: -1), isFalse);
     // Et surtout pas quand le site, lui, a répondu : c'est le cas où la
     // règle annoncerait une mise à jour sans savoir depuis quoi.
-    expect(doitAnnoncer(local: 0, publie: 5, ferme: 0), isFalse);
+    expect(doitAnnoncer(local: null, publie: 5, ferme: -1), isFalse);
   });
 }

@@ -32,25 +32,26 @@ const _dismissedKey = 'version_banner_dismissed_build';
 
 // La règle, isolée de la plomberie réseau pour être vérifiable.
 //
-// Trois conditions.
-//
-// « local > 0 » : sans version locale connue, comparer n'a aucun sens et
-// l'avis serait tiré au hasard. init() s'arrête déjà avant d'interroger le
-// site dans ce cas, mais la règle ne doit pas dépendre d'un ordre
-// d'exécution qu'un remaniement pourrait changer.
+// INCONNU SE DIT null, PAS ZÉRO. Une version qu'on n'a pas pu lire et une
+// version numérotée zéro sont deux choses différentes, et zéro est un
+// numéro de build parfaitement légitime : le premier. Confondre les deux
+// faisait taire le bandeau pour quiconque tourne sur un build 0, sans que
+// rien ne le signale.
 //
 // « ferme < publie » : la fermeture vaut POUR CETTE VERSION-LÀ. C'est la
 // condition qu'on croit avoir écrite alors qu'on a écrit autre chose. Un
 // simple booléen « déjà fermé » ferait taire toutes les versions à venir, et
 // l'opérateur ne reverrait plus jamais d'avis de mise à jour.
-bool doitAnnoncer({required int local, required int publie, required int ferme}) =>
-    local > 0 && publie > local && ferme < publie;
+bool doitAnnoncer({required int? local, required int? publie, required int ferme}) =>
+    local != null && publie != null && publie > local && ferme < publie;
 
 class VersionCheck extends ChangeNotifier {
-  int _localBuild = 0;
+  // null tant qu'on n'a pas pu lire la version embarquee.
+  int? _localBuild;
   String localVersion = '';
 
-  int _latestBuild = 0;
+  // null tant que le site n'a pas repondu.
+  int? _latestBuild;
   String latestVersion = '';
   String? notesUrl;
   String? downloadUrl;
@@ -59,9 +60,10 @@ class VersionCheck extends ChangeNotifier {
   // tienne d'une séance à l'autre, mais rattaché À CETTE VERSION-LÀ : la
   // suivante s'annoncera de nouveau. Un « ne plus jamais me le dire » global
   // ferait taire toutes les versions à venir.
-  int _dismissedBuild = 0;
+  // -1, et non 0 : zéro est un numéro de build légitime, donc il ne peut pas
+  // vouloir dire « rien n'a été fermé ».
+  int _dismissedBuild = -1;
 
-  bool get updateAvailable => _latestBuild > _localBuild;
   bool get shouldShow => doitAnnoncer(
         local: _localBuild,
         publie: _latestBuild,
@@ -72,7 +74,9 @@ class VersionCheck extends ChangeNotifier {
     try {
       final info = await PackageInfo.fromPlatform();
       localVersion = info.version;
-      _localBuild = int.tryParse(info.buildNumber) ?? 0;
+      _localBuild = int.tryParse(info.buildNumber);
+      debugPrint('VersionCheck : locale ${info.version} '
+          'build "${info.buildNumber}" lu comme $_localBuild');
     } catch (_) {
       // Sans version locale, toute comparaison serait un mensonge : on se
       // tait plutôt que d'annoncer une mise à jour au hasard.
@@ -80,7 +84,7 @@ class VersionCheck extends ChangeNotifier {
     }
 
     final prefs = await SharedPreferences.getInstance();
-    _dismissedBuild = prefs.getInt(_dismissedKey) ?? 0;
+    _dismissedBuild = prefs.getInt(_dismissedKey) ?? -1;
 
     try {
       final reponse = await http
@@ -91,10 +95,12 @@ class VersionCheck extends ChangeNotifier {
       if (parsed is! Map<String, dynamic>) return;
       if (parsed['format'] != 'buzzer-version') return;
 
-      _latestBuild = (parsed['build'] as num?)?.toInt() ?? 0;
+      _latestBuild = (parsed['build'] as num?)?.toInt();
       latestVersion = (parsed['version'] as String?)?.trim() ?? '';
       notesUrl = (parsed['notes'] as String?)?.trim();
       downloadUrl = (parsed['telechargement'] as String?)?.trim();
+      debugPrint('VersionCheck : publiee $latestVersion build $_latestBuild, '
+          'fermee $_dismissedBuild, bandeau=$shouldShow');
       notifyListeners();
     } on SocketException {
       // Hors ligne : silence.
@@ -104,9 +110,9 @@ class VersionCheck extends ChangeNotifier {
   }
 
   Future<void> dismiss() async {
-    _dismissedBuild = _latestBuild;
+    _dismissedBuild = _latestBuild ?? _dismissedBuild;
     notifyListeners();
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setInt(_dismissedKey, _latestBuild);
+    await prefs.setInt(_dismissedKey, _dismissedBuild);
   }
 }
