@@ -1,0 +1,331 @@
+import 'dart:io';
+
+import 'package:file_selector/file_selector.dart';
+import 'package:flutter/foundation.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:path_provider/path_provider.dart';
+
+import 'questionnaire.dart';
+
+// Un questionnaire tel qu'il apparaît dans la liste, sans son contenu : la
+// liste se dessine à partir des noms de fichiers et de leur date, sans avoir
+// à ouvrir et parser chaque fichier à chaque affichage.
+class QuestionnaireFile {
+  const QuestionnaireFile({
+    required this.path,
+    required this.name,
+    required this.modified,
+    required this.title,
+    required this.collection,
+    required this.questionCount,
+    required this.valid,
+  });
+
+  final String path;
+  final String name;      // nom du fichier sans .json
+  final DateTime modified;
+  // Vide pour un questionnaire écrit à la main : il se range alors sous
+  // [kMesQuestionnaires].
+  final String collection;
+  // Titre et compte lus DANS le fichier : choisir entre « Noel.json » et
+  // « Noel2.json » sans les ouvrir est impossible, alors qu'entre « Spécial
+  // Noël, 24 questions » et « Noël, brouillon, 3 questions » c'est immédiat.
+  final String title;
+  final int questionCount;
+  // Faux pour un fichier .json qui n'est pas un questionnaire, ou abîmé : il
+  // reste visible (sinon on le chercherait sans le trouver) mais annoncé
+  // comme tel.
+  final bool valid;
+
+  String get displayTitle => title.isNotEmpty ? title : name;
+
+  // Sous quelle tuile ce fichier se range. Un fichier abîmé va avec les
+  // questionnaires personnels plutôt que dans une collection générée : c'est
+  // là qu'on ira le chercher pour le réparer.
+  String get displayCollection =>
+      valid && collection.isNotEmpty ? collection : kMesQuestionnaires;
+}
+
+// Le fourre-tout des questionnaires sans collection. Nommé plutôt
+// qu'improvisé à trois endroits, sinon le filtre et l'affichage finissent par
+// diverger d'une espace ou d'une majuscule.
+const kMesQuestionnaires = 'Mes questionnaires';
+
+// Une tuile du premier niveau : une collection et ce qu'elle contient.
+class QuestionnaireCollection {
+  const QuestionnaireCollection({
+    required this.name,
+    required this.files,
+    required this.questionCount,
+  });
+
+  final String name;
+  final List<QuestionnaireFile> files;
+  final int questionCount;
+}
+
+// Les questionnaires vivent dans un dossier CHOISI par l'opérateur, et non
+// dans un recoin de données d'application : il doit pouvoir les copier sur
+// une clé, les envoyer par courriel, ou en écrire un à la main.
+//
+// Le dossier est un réglage, pas une constante. On ne sait pas sur quel
+// poste l'application tournera, et le Documents par défaut peut très bien
+// être un OneDrive d'entreprise, où des questionnaires de party n'ont rien
+// à faire. Le choix est retenu d'une session à l'autre.
+//
+// Faute de choix, on retombe sur Documents/Buzzer/Questionnaires, demandé au
+// système (path_provider) plutôt que reconstruit à partir du profil : là où
+// OneDrive redirige Documents, un chemin deviné pointe à côté et l'opérateur
+// ne retrouve jamais ses fichiers.
+const _folderKey = 'questionnaires_folder';
+
+class QuestionnaireStore extends ChangeNotifier {
+  static const _folderName = 'Buzzer';
+  static const _subFolderName = 'Questionnaires';
+
+  Directory? _dir;
+  String? _chosenPath;
+  List<QuestionnaireFile> files = [];
+  String? lastError;
+
+  String get folderPath => _dir?.path ?? _chosenPath ?? '';
+
+  // Vrai quand l'opérateur a choisi lui-même : sert à proposer le retour au
+  // dossier par défaut, et seulement dans ce cas.
+  bool get usesCustomFolder => _chosenPath != null;
+
+  Future<void> loadPreferences() async {
+    final prefs = await SharedPreferences.getInstance();
+    final saved = prefs.getString(_folderKey);
+    if (saved != null && saved.isNotEmpty) {
+      _chosenPath = saved;
+    }
+    await refresh();
+  }
+
+  // Le dossier choisi peut avoir disparu depuis (clé USB retirée, partage
+  // réseau hors ligne, dossier supprimé). On le dit au lieu de recréer
+  // silencieusement une arborescence ailleurs, ce qui donnerait l'impression
+  // que tous les questionnaires se sont volatilisés.
+  Future<Directory> _ensureDir() async {
+    final existing = _dir;
+    if (existing != null) return existing;
+
+    final chosen = _chosenPath;
+    if (chosen != null) {
+      final dir = Directory(chosen);
+      if (!dir.existsSync()) {
+        throw FileSystemException('Dossier introuvable', chosen);
+      }
+      _dir = dir;
+      return dir;
+    }
+
+    final documents = await getApplicationDocumentsDirectory();
+    final dir = Directory('${documents.path}${Platform.pathSeparator}$_folderName'
+        '${Platform.pathSeparator}$_subFolderName');
+    if (!dir.existsSync()) {
+      await dir.create(recursive: true);
+    }
+    _dir = dir;
+    return dir;
+  }
+
+  Future<void> chooseFolder() async {
+    final picked = await getDirectoryPath(confirmButtonText: 'Utiliser ce dossier');
+    if (picked == null) return;
+    _chosenPath = picked;
+    _dir = null;   // sera revalidé au prochain accès
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_folderKey, picked);
+    await refresh();
+  }
+
+  Future<void> useDefaultFolder() async {
+    _chosenPath = null;
+    _dir = null;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_folderKey);
+    await refresh();
+  }
+
+  Future<void> refresh() async {
+    try {
+      final dir = await _ensureDir();
+      final found = <QuestionnaireFile>[];
+      for (final entity in dir.listSync()) {
+        if (entity is! File || !entity.path.toLowerCase().endsWith('.json')) continue;
+        final name = entity.uri.pathSegments.last;
+        // Chaque fichier est lu au passage. Ce sont quelques kilo-octets et
+        // une poignée de fichiers : le coût est nul, et la liste devient
+        // vraiment renseignée plutôt qu'une suite de noms de fichiers.
+        String title = '';
+        String collection = '';
+        int count = 0;
+        bool valid = true;
+        try {
+          final parsed = Questionnaire.decode(entity.readAsStringSync());
+          title = parsed.title;
+          collection = parsed.collection;
+          count = parsed.questions.length;
+        } catch (_) {
+          valid = false;
+        }
+        found.add(QuestionnaireFile(
+          path: entity.path,
+          name: name.substring(0, name.length - 5),
+          modified: entity.statSync().modified,
+          title: title,
+          collection: collection,
+          questionCount: count,
+          valid: valid,
+        ));
+      }
+      found.sort((a, b) {
+        final ca = a.displayCollection;
+        final cb = b.displayCollection;
+        if (ca != cb) {
+          // Ce que l'opérateur a écrit lui-même passe avant les 131 fichiers
+          // générés, qui ne bougent jamais.
+          if (ca == kMesQuestionnaires) return -1;
+          if (cb == kMesQuestionnaires) return 1;
+          return ca.compareTo(cb);
+        }
+        // Dans une collection générée, l'ordre du titre est le bon :
+        // « 01 sur 16 » avant « 02 sur 16 ». Trier par date n'y donnerait
+        // rien, les 131 fichiers sont écrits dans la même seconde.
+        if (ca != kMesQuestionnaires) return a.displayTitle.compareTo(b.displayTitle);
+        // Le plus récemment retouché en premier : c'est presque toujours
+        // celui qu'on rouvre.
+        return b.modified.compareTo(a.modified);
+      });
+      files = found;
+      lastError = null;
+    } on FileSystemException catch (e) {
+      files = [];
+      lastError = "Dossier introuvable : ${e.path}. Il a peut-être été déplacé, "
+          'ou se trouve sur un disque non branché.';
+    } catch (e) {
+      files = [];
+      lastError = "Impossible de lire le dossier des questionnaires : $e";
+    }
+    notifyListeners();
+  }
+
+  // Les collections, dans l'ordre où elles s'affichent. Recalculé à chaque
+  // lecture plutôt que mis en cache : [files] est déjà trié, le regroupement
+  // ne coûte qu'un parcours, et un cache serait une deuxième vérité à tenir
+  // à jour à chaque enregistrement.
+  List<QuestionnaireCollection> get collections {
+    final parNom = <String, List<QuestionnaireFile>>{};
+    for (final file in files) {
+      parNom.putIfAbsent(file.displayCollection, () => []).add(file);
+    }
+    final noms = parNom.keys.toList()
+      ..sort((a, b) {
+        if (a == kMesQuestionnaires) return -1;
+        if (b == kMesQuestionnaires) return 1;
+        return a.compareTo(b);
+      });
+    return [
+      for (final nom in noms)
+        QuestionnaireCollection(
+          name: nom,
+          files: parNom[nom]!,
+          questionCount: parNom[nom]!.fold(0, (somme, f) => somme + f.questionCount),
+        ),
+    ];
+  }
+
+  int get questionCount => files.fold(0, (somme, f) => somme + f.questionCount);
+
+  Future<Questionnaire?> load(String path) async {
+    try {
+      final raw = await File(path).readAsString();
+      lastError = null;
+      return Questionnaire.decode(raw);
+    } on FormatException catch (e) {
+      lastError = e.message;
+    } catch (e) {
+      lastError = "Impossible d'ouvrir ce fichier : $e";
+    }
+    notifyListeners();
+    return null;
+  }
+
+  // Le nom de fichier vient du titre : on retrouve un questionnaire par son
+  // nom dans l'explorateur sans avoir à l'ouvrir. Renvoie le chemin écrit,
+  // ou null en cas d'échec.
+  Future<String?> save(Questionnaire questionnaire, {String? existingPath}) async {
+    try {
+      final dir = await _ensureDir();
+      final path = existingPath ??
+          '${dir.path}${Platform.pathSeparator}${_fileNameFor(questionnaire.title)}.json';
+      await File(path).writeAsString(questionnaire.encode());
+      lastError = null;
+      await refresh();
+      return path;
+    } catch (e) {
+      lastError = "Enregistrement impossible : $e";
+      notifyListeners();
+      return null;
+    }
+  }
+
+  Future<bool> delete(String path) async {
+    try {
+      final file = File(path);
+      if (file.existsSync()) await file.delete();
+      lastError = null;
+      await refresh();
+      return true;
+    } catch (e) {
+      lastError = "Suppression impossible : $e";
+      notifyListeners();
+      return false;
+    }
+  }
+
+  // Copie un fichier venu d'ailleurs (clé USB, courriel) dans le dossier, en
+  // le validant au passage : un fichier illisible n'a pas à entrer dans la
+  // bibliothèque et à échouer plus tard, au pire moment.
+  Future<String?> import() async {
+    const typeGroup = XTypeGroup(label: 'Questionnaires', extensions: ['json']);
+    final picked = await openFile(acceptedTypeGroups: const [typeGroup]);
+    if (picked == null) return null;
+    final questionnaire = await load(picked.path);
+    if (questionnaire == null) return null;   // lastError est déjà posé
+    final name = picked.name.toLowerCase().endsWith('.json')
+        ? picked.name.substring(0, picked.name.length - 5)
+        : picked.name;
+    if (questionnaire.title.isEmpty) questionnaire.title = name;
+    return save(questionnaire);
+  }
+
+  Future<void> export(Questionnaire questionnaire) async {
+    final location = await getSaveLocation(
+      suggestedName: '${_fileNameFor(questionnaire.title)}.json',
+      acceptedTypeGroups: const [XTypeGroup(label: 'Questionnaires', extensions: ['json'])],
+    );
+    if (location == null) return;
+    try {
+      await File(location.path).writeAsString(questionnaire.encode());
+      lastError = null;
+    } catch (e) {
+      lastError = "Export impossible : $e";
+    }
+    notifyListeners();
+  }
+
+  // Windows refuse \ / : * ? " < > | dans un nom de fichier, et un titre est
+  // du texte libre : sans ce nettoyage, « Cinéma : les années 90 » ferait
+  // échouer l'enregistrement sans que la cause soit devinable.
+  static String _fileNameFor(String title) {
+    final cleaned = title
+        .trim()
+        .replaceAll(RegExp(r'[\\/:*?"<>|]'), ' ')
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .trim();
+    return cleaned.isEmpty ? 'Questionnaire' : cleaned;
+  }
+}

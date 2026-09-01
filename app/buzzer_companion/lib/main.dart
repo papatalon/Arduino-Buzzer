@@ -15,6 +15,7 @@ import 'popout/popout_snapshot.dart';
 import 'popout/popout_window.dart';
 import 'popout/window_launch_args.dart';
 import 'protocol.dart';
+import 'questionnaires/questionnaire_store.dart';
 import 'team_names.dart';
 
 Future<void> main(List<String> args) async {
@@ -57,6 +58,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   final _popout = PopoutLauncher();
   final _teams = TeamNames();
   final _logo = EventLogo();
+  final _questionnaires = QuestionnaireStore();
   late final SoundEngine _sound;
   StreamSubscription<SfxEvent>? _sfxSub;
 
@@ -153,6 +155,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
         sound: _sound,
         teams: _teams,
         logo: _logo,
+        questionnaires: _questionnaires,
       ),
     );
   }

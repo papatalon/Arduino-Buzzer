@@ -6,6 +6,7 @@ import '../audio/sound_engine.dart';
 import '../ble_link_service.dart';
 import '../event_logo.dart';
 import '../popout/popout_launcher.dart';
+import '../questionnaires/questionnaire_store.dart';
 import '../team_names.dart';
 import '../protocol.dart';
 import 'game_rules_panel.dart';
@@ -43,6 +44,7 @@ class ConsoleShell extends StatefulWidget {
     required this.sound,
     required this.teams,
     required this.logo,
+    required this.questionnaires,
   });
 
   final BleLinkService ble;
@@ -51,6 +53,7 @@ class ConsoleShell extends StatefulWidget {
   final SoundEngine sound;
   final TeamNames teams;
   final EventLogo logo;
+  final QuestionnaireStore questionnaires;
 
   @override
   State<ConsoleShell> createState() => _ConsoleShellState();
@@ -125,24 +128,34 @@ class _ConsoleShellState extends State<ConsoleShell> {
                                   sound: widget.sound,
                                   teams: widget.teams,
                                   logo: widget.logo,
+                                  questionnaires: widget.questionnaires,
                                   onNavigate: (s) => setState(() => _section = s),
                                 ),
                               ),
-                              const SizedBox(width: 44),
-                              DecoratedBox(
-                                decoration: const BoxDecoration(
-                                  border: Border(left: BorderSide(color: BSColors.divider)),
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.only(left: 32),
-                                  child: RightRail(
-                                    game: widget.game,
-                                    popout: widget.popout,
-                                    teams: widget.teams,
-                                    logo: widget.logo,
+                              // Le rail droit fait partie du châssis pendant
+                              // qu'on anime : il surveille les buzzers et
+                              // l'écran public. Écrire un questionnaire est
+                              // un tout autre travail, qui se fait souvent
+                              // buzzer débranché et longtemps avant la
+                              // soirée : la table des buzzers n'y sert à
+                              // rien et vole 380 px à la saisie.
+                              if (_section != ConsoleSection.questions) ...[
+                                const SizedBox(width: 44),
+                                DecoratedBox(
+                                  decoration: const BoxDecoration(
+                                    border: Border(left: BorderSide(color: BSColors.divider)),
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(left: 32),
+                                    child: RightRail(
+                                      game: widget.game,
+                                      popout: widget.popout,
+                                      teams: widget.teams,
+                                      logo: widget.logo,
+                                    ),
                                   ),
                                 ),
-                              ),
+                              ],
                             ],
                           ),
                         ),
@@ -295,12 +308,14 @@ class _CenterColumn extends StatelessWidget {
     required this.sound,
     required this.teams,
     required this.logo,
+    required this.questionnaires,
     required this.onNavigate,
   });
 
   final SoundEngine sound;
   final TeamNames teams;
   final EventLogo logo;
+  final QuestionnaireStore questionnaires;
 
   final ConsoleSection section;
   final GameState game;
@@ -321,7 +336,7 @@ class _CenterColumn extends StatelessWidget {
           onGameSelected: () => onNavigate(ConsoleSection.partie),
         );
       case ConsoleSection.questions:
-        return const QuestionsScreen();
+        return QuestionsScreen(store: questionnaires);
       case ConsoleSection.appareil:
         return DeviceScreen(ble: ble, game: game, logo: logo);
       case ConsoleSection.partie:

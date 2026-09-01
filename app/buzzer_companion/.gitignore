@@ -46,3 +46,15 @@ app.*.map.json
 
 # Widget Preview related
 .widget_preview/
+
+# Les questionnaires generes (questionnaires/) SONT versionnes, a la demande
+# de l operateur. Ils sont pourtant derives de Questions.cpp et de
+# tool/accents, donc reproductibles a tout moment par
+# tool/generate_questionnaires.dart : le premier reflexe serait de les
+# ignorer. Mais ce sont des fichiers de contenu, pas un artefact de build. On
+# veut voir dans un diff qu une question a change de manche, et pouvoir se
+# servir du depot comme dossier de questionnaires sans avoir a lancer un
+# script d abord. 550 Ko de JSON, ecrits une fois : le cout est nul.
+#
+# Les questionnaires PERSONNELS, eux, vivent dans le dossier choisi dans
+# l application (ecran Questions, « Changer de dossier »), pas ici.
