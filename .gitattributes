@@ -14,3 +14,8 @@ site/** text eol=lf
 # Le generateur et ses sources d'accents ecrivent aussi en LF. Meme raison :
 # regenerer ne doit pas salir l'arbre de travail.
 app/buzzer_companion/tool/** text eol=lf
+
+# Flutter reecrit ces fichiers en LF a chaque build. Sans cette ligne, ils
+# apparaissent modifies apres chaque compilation alors que leur contenu est
+# identique, et on finit par ne plus lire git status.
+app/buzzer_companion/windows/flutter/** text eol=lf

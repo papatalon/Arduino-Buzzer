@@ -147,68 +147,6 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     _tell('« ${open.title} » est en jeu. Allez à Partie pour la conduire.');
   }
 
-  // L'adresse du catalogue est un réglage, pas une constante compilée. Le
-  // site peut déménager, et surtout : sans ce réglage, impossible d'essayer
-  // quoi que ce soit avant que la publication soit en place.
-  Future<void> _changeCatalogueUrl() async {
-    final controleur = TextEditingController(text: widget.catalogue.baseUrl);
-    final url = await showDialog<String>(
-      context: context,
-      builder: (context) => AlertDialog(
-        backgroundColor: BSColors.bg,
-        shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-        title: Text('Adresse du catalogue', style: BSType.buzzerNameConsole(size: 22)),
-        content: SizedBox(
-          width: 520,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "L'application y lira /catalogue.json, puis les questionnaires "
-                'dans /q/. Sans barre oblique à la fin.',
-                style: BSType.body(size: 15, color: BSColors.neutral700),
-              ),
-              const SizedBox(height: BSSpace.s3),
-              TextField(
-                controller: controleur,
-                autofocus: true,
-                style: BSType.body(size: 16),
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(borderRadius: BorderRadius.zero),
-                  hintText: kCatalogueUrlParDefaut,
-                ),
-                onSubmitted: (v) => Navigator.of(context).pop(v),
-              ),
-            ],
-          ),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            style: TextButton.styleFrom(foregroundColor: BSColors.neutral700),
-            child: const Text('Annuler'),
-          ),
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(kCatalogueUrlParDefaut),
-            style: TextButton.styleFrom(foregroundColor: BSColors.neutral600),
-            child: const Text('Par défaut'),
-          ),
-          FilledButton(
-            onPressed: () => Navigator.of(context).pop(controleur.text),
-            style: FilledButton.styleFrom(
-              backgroundColor: BSColors.accent,
-              foregroundColor: BSColors.bg,
-              shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-            ),
-            child: const Text('Utiliser'),
-          ),
-        ],
-      ),
-    );
-    if (url != null) await widget.catalogue.setBaseUrl(url);
-  }
-
   Future<void> _save() async {
     final open = _open;
     if (open == null) return;
@@ -327,7 +265,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             onNew: _newQuestionnaire,
             onOpen: _openFile,
             onOpenEntry: _openCatalogueEntry,
-            onChangeUrl: _changeCatalogueUrl,
+
             onImport: () async {
               final path = await widget.store.import();
               if (!mounted) return;
@@ -425,6 +363,20 @@ class _Selection {
   bool get estPersonnalise => collection == kPersonnalise;
 }
 
+// L'heure seule quand c'est aujourd'hui, la date en plus sinon : une copie
+// hors ligne peut remonter à des semaines, et « lue à 10:39 » laisserait
+// croire à ce matin.
+String _quand(DateTime? moment) {
+  if (moment == null) return 'à une date inconnue';
+  String deux(int n) => n.toString().padLeft(2, '0');
+  final heure = 'à ${deux(moment.hour)}:${deux(moment.minute)}';
+  final maintenant = DateTime.now();
+  final memeJour = moment.year == maintenant.year &&
+      moment.month == maintenant.month &&
+      moment.day == maintenant.day;
+  return memeJour ? heure : 'le ${deux(moment.day)}/${deux(moment.month)} $heure';
+}
+
 class _Library extends StatelessWidget {
   const _Library({
     required this.store,
@@ -435,7 +387,6 @@ class _Library extends StatelessWidget {
     required this.onOpen,
     required this.onOpenEntry,
     required this.onImport,
-    required this.onChangeUrl,
   });
 
   final QuestionnaireStore store;
@@ -446,7 +397,6 @@ class _Library extends StatelessWidget {
   final ValueChanged<QuestionnaireFile> onOpen;
   final ValueChanged<CatalogueEntry> onOpenEntry;
   final VoidCallback onImport;
-  final VoidCallback onChangeUrl;
 
   // Deux niveaux : on choisit une collection, PUIS un questionnaire. Cent
   // vingt-cinq cartes d'un seul tenant, c'est un mur où plus rien ne se
@@ -498,16 +448,24 @@ class _Library extends StatelessWidget {
         children: [
           Text('COLLECTIONS', style: BSType.sectionKicker()),
           const SizedBox(width: BSSpace.s3),
+          // D'où vient cette liste, dit en clair. « Rien ne signale un
+          // problème » est une preuve trop faible : sans cette ligne, la
+          // seule façon de savoir que le catalogue vient du réseau était de
+          // remarquer l'ABSENCE d'un avertissement.
           if (catalogue.loading)
             Text('Lecture du catalogue...',
                 style: BSType.body(size: 14, color: BSColors.neutral600))
           else if (catalogue.horsLigne)
-            Text('Catalogue hors ligne, dernière copie connue',
-                style: BSType.body(size: 14, color: BSColors.accent2_800))
+            Text(
+              'Hors ligne. Copie du poste, lue ${_quand(catalogue.lastFetch)}',
+              style: BSType.body(size: 14, color: BSColors.accent2_800),
+            )
           else if (entrees.isNotEmpty)
-            Text('${entrees.length} questionnaires en ligne, '
-                '${catalogue.localCount} sur ce poste',
-                style: BSType.body(size: 14, color: BSColors.neutral600)),
+            Text(
+              'Lu en ligne ${_quand(catalogue.lastFetch)} · '
+              '${entrees.length} questionnaires, ${catalogue.localCount} sur ce poste',
+              style: BSType.body(size: 14, color: BSColors.accent700),
+            ),
           const SizedBox(width: BSSpace.s2),
           TextButton(
             onPressed: catalogue.loading ? null : catalogue.refresh,
@@ -668,29 +626,10 @@ class _Library extends StatelessWidget {
 
   List<Widget> _reglages() {
     return [
+      // Pas de bloc « catalogue en ligne » : son adresse est interne, il n'y
+      // a rien à régler. Quand quelque chose échoue, le message d'erreur la
+      // nomme, et c'est le seul moment où elle compte.
       Container(height: 1, color: BSColors.divider),
-      const SizedBox(height: BSSpace.s4),
-      Text('CATALOGUE EN LIGNE', style: BSType.sectionKicker()),
-      const SizedBox(height: BSSpace.s1),
-      SizedBox(
-        width: 900,
-        child: Row(
-          children: [
-            Expanded(
-              child: SelectableText(
-                catalogue.baseUrl,
-                style: BSType.body(size: 15, color: BSColors.neutral700),
-              ),
-            ),
-            const SizedBox(width: BSSpace.s3),
-            TextButton(
-              onPressed: onChangeUrl,
-              style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
-              child: const Text("Changer l'adresse"),
-            ),
-          ],
-        ),
-      ),
       const SizedBox(height: BSSpace.s4),
       Text('MES QUESTIONNAIRES', style: BSType.sectionKicker()),
       const SizedBox(height: BSSpace.s1),

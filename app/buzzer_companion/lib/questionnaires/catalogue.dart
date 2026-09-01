@@ -4,11 +4,10 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import 'questionnaire.dart';
 
-// Le catalogue publié sur buzzer.sd6tools.net, et sa copie locale.
+// Le catalogue publié en ligne, et sa copie locale.
 //
 // Deux idées à garder en tête en lisant ce fichier.
 //
@@ -26,8 +25,15 @@ import 'questionnaire.dart';
 //    régénération du catalogue écraserait son travail, ou qu'un de ses
 //    fichiers disparaîtrait en même temps qu'une collection retirée.
 
-const kCatalogueUrlParDefaut = 'https://buzzer.sd6tools.net';
-const _urlKey = 'catalogue_url';
+// L'adresse du catalogue est INTERNE : pas un réglage, pas de champ dans
+// l'écran. L'opérateur anime une soirée, il n'a aucune raison de décider où
+// l'application va chercher ses questionnaires, et un mauvais collage dans un
+// champ de saisie viderait la bibliothèque sans qu'il sache pourquoi.
+//
+// L'adresse du projet Cloudflare Pages (arduino-buzzer.pages.dev) reste
+// valable et sert de repli si le domaine personnalisé pose problème un jour :
+// elle ne traverse pas les protections de la zone sd6tools.net.
+const kCatalogueUrl = 'https://buzzer.sd6tools.net';
 
 const kCatalogueFormat = 'buzzer-catalogue';
 
@@ -138,12 +144,18 @@ class CatalogueStore extends ChangeNotifier {
 
   final Set<String> _enCours = {};
 
-  String baseUrl = kCatalogueUrlParDefaut;
+  static const baseUrl = kCatalogueUrl;
   String? lastError;
   bool loading = false;
   // Vrai quand le catalogue affiché vient du disque et non du réseau : à dire
   // à l'opérateur, sinon il croit voir le catalogue à jour.
   bool horsLigne = false;
+
+  // Quand le catalogue affiché a été obtenu. Affiché en clair, parce que
+  // « rien ne signale un problème » est une preuve trop faible : sans cette
+  // heure, la seule façon de savoir que la liste vient bien du réseau était
+  // de remarquer l'ABSENCE d'un avertissement.
+  DateTime? lastFetch;
 
   Directory? _dir;
 
@@ -172,9 +184,6 @@ class CatalogueStore extends ChangeNotifier {
   }
 
   Future<void> init() async {
-    final prefs = await SharedPreferences.getInstance();
-    final saved = prefs.getString(_urlKey);
-    if (saved != null && saved.trim().isNotEmpty) baseUrl = saved.trim();
     await _readLocalState();
     // Le disque d'abord : la bibliothèque s'affiche tout de suite, même sans
     // réseau, puis se met à jour quand la requête revient.
@@ -182,13 +191,28 @@ class CatalogueStore extends ChangeNotifier {
     await refresh();
   }
 
-  Future<void> setBaseUrl(String url) async {
-    final propre = url.trim().replaceAll(RegExp(r'/+$'), '');
-    if (propre.isEmpty || propre == baseUrl) return;
-    baseUrl = propre;
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_urlKey, propre);
-    await refresh();
+  // Une requête, avec reprise sur 429 (« trop de requêtes »).
+  //
+  // Rapatrier une collection enchaîne jusqu'à seize téléchargements ; le
+  // domaine personnalisé passe par les protections de la zone Cloudflare et
+  // finit par refuser une rafale, ce que l'adresse pages.dev ne fait pas.
+  // Abandonner au premier refus laisserait une collection à moitié
+  // synchronisée sans que l'opérateur comprenne pourquoi.
+  //
+  // On respecte Retry-After quand le serveur le donne, sinon une attente qui
+  // s'allonge. Trois essais : au-delà, ce n'est plus une rafale, c'est un
+  // vrai problème qu'il vaut mieux annoncer.
+  Future<http.Response> _get(Uri url, {Duration? delai}) async {
+    const essais = 3;
+    for (var i = 0; ; i++) {
+      final reponse =
+          await http.get(url).timeout(delai ?? const Duration(seconds: 20));
+      if (reponse.statusCode != 429 || i >= essais - 1) return reponse;
+      final apres = int.tryParse(reponse.headers['retry-after'] ?? '');
+      await Future<void>.delayed(apres != null
+          ? Duration(seconds: apres.clamp(1, 10))
+          : Duration(milliseconds: 400 * (i + 1)));
+    }
   }
 
   Future<Directory> _ensureDir() async {
@@ -254,6 +278,9 @@ class CatalogueStore extends ChangeNotifier {
       if (!fichier.existsSync()) return;
       catalogue = Catalogue.decode(await fichier.readAsString());
       horsLigne = true;
+      // La date du FICHIER, pas maintenant : ce qu'on affiche date de la
+      // dernière lecture réussie, qui peut remonter à des semaines.
+      lastFetch = fichier.lastModifiedSync();
       notifyListeners();
     } catch (_) {
       // Cache illisible : on attend le réseau.
@@ -264,9 +291,8 @@ class CatalogueStore extends ChangeNotifier {
     loading = true;
     notifyListeners();
     try {
-      final reponse = await http
-          .get(Uri.parse('$baseUrl/catalogue.json'))
-          .timeout(const Duration(seconds: 12));
+      final reponse = await _get(Uri.parse('$baseUrl/catalogue.json'),
+          delai: const Duration(seconds: 12));
       if (reponse.statusCode != 200) {
         throw HttpException('Le serveur a répondu ${reponse.statusCode}.');
       }
@@ -274,6 +300,7 @@ class CatalogueStore extends ChangeNotifier {
       // latin-1 et « Géographie » arriverait en « GÃ©ographie ».
       catalogue = Catalogue.decode(utf8.decode(reponse.bodyBytes));
       horsLigne = false;
+      lastFetch = DateTime.now();
       lastError = null;
       final dir = await _ensureDir();
       await _fichierCatalogue(dir).writeAsString(utf8.decode(reponse.bodyBytes));
@@ -304,9 +331,7 @@ class CatalogueStore extends ChangeNotifier {
     _enCours.add(entry.id);
     notifyListeners();
     try {
-      final reponse = await http
-          .get(Uri.parse('$baseUrl/q/${entry.id}.json'))
-          .timeout(const Duration(seconds: 20));
+      final reponse = await _get(Uri.parse('$baseUrl/q/${entry.id}.json'));
       if (reponse.statusCode != 200) {
         throw HttpException('Le serveur a répondu ${reponse.statusCode}.');
       }
@@ -383,9 +408,7 @@ class CatalogueStore extends ChangeNotifier {
       _ouvertures.add(entry.id);
       notifyListeners();
       try {
-        final reponse = await http
-            .get(Uri.parse('$baseUrl/q/${entry.id}.json'))
-            .timeout(const Duration(seconds: 20));
+        final reponse = await _get(Uri.parse('$baseUrl/q/${entry.id}.json'));
         if (reponse.statusCode != 200) {
           throw HttpException('Le serveur a répondu ${reponse.statusCode}.');
         }

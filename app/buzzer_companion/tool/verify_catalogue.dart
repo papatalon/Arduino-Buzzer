@@ -25,15 +25,32 @@ Future<void> main(List<String> args) async {
   final client = HttpClient();
   var erreurs = 0;
 
+  // Reprise sur 429. Cet outil est le client le plus brutal du projet : 126
+  // requêtes d'affilée sur une connexion réutilisée, plus vite qu'aucun
+  // navigateur. Le domaine personnalisé passe par les protections de la zone
+  // Cloudflare et finit par en refuser une partie, ce que l'adresse pages.dev
+  // ne fait pas. Sans cette reprise, l'outil signalait une vingtaine de faux
+  // problèmes sur un catalogue parfaitement sain.
   Future<List<int>> get(String chemin) async {
-    final requete = await client.getUrl(Uri.parse('$base$chemin'));
-    final reponse = await requete.close();
-    if (reponse.statusCode != 200) {
-      throw HttpException('$chemin : le serveur a répondu ${reponse.statusCode}');
+    const essais = 4;
+    for (var i = 0; ; i++) {
+      final requete = await client.getUrl(Uri.parse('$base$chemin'));
+      final reponse = await requete.close();
+      if (reponse.statusCode == 429 && i < essais - 1) {
+        await reponse.drain<void>();
+        final apres = int.tryParse(reponse.headers.value('retry-after') ?? '');
+        await Future<void>.delayed(apres != null
+            ? Duration(seconds: apres.clamp(1, 10))
+            : Duration(milliseconds: 500 * (i + 1)));
+        continue;
+      }
+      if (reponse.statusCode != 200) {
+        throw HttpException('$chemin : le serveur a répondu ${reponse.statusCode}');
+      }
+      final octets = <int>[];
+      await reponse.forEach(octets.addAll);
+      return octets;
     }
-    final octets = <int>[];
-    await reponse.forEach(octets.addAll);
-    return octets;
   }
 
   stdout.writeln('Catalogue : $base');

@@ -171,6 +171,7 @@ void main(List<String> args) {
 
   _writeCatalogue();
   _writeAccueil();
+  _writeIntrouvable();
 
   stdout.writeln('Écrit dans ${out.absolute.path}');
 }
@@ -206,6 +207,37 @@ void _writeCatalogue() {
   final questions = _catalogue.fold<int>(0, (s, e) => s + (e['questions'] as int));
   stdout.writeln('catalogue.json : ${_catalogue.length} questionnaires, '
       '${collections.length} collections, $questions questions.');
+}
+
+// Sans ce fichier, Cloudflare Pages sert la page d'accueil AVEC un code 200
+// pour n'importe quelle adresse inconnue. Un client qui demande
+// /q/inexistant.json recevrait donc du HTML en croyant recevoir du JSON, et
+// un coup d'œil au code de retour laisserait croire que tout va bien. Pire :
+// on a bien cru un instant que tout le dépôt était publié, parce que
+// /Questions.cpp et /.git/config repondaient 200.
+void _writeIntrouvable() {
+  File('$_outputDir/404.html').writeAsStringSync('''
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introuvable</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: Georgia, "Times New Roman", serif; max-width: 40rem;
+         margin: 6rem auto; padding: 0 1.5rem; line-height: 1.6; }
+  code { background: rgba(127,127,127,.15); padding: 0.1rem 0.3rem; }
+</style>
+</head>
+<body>
+  <h1>Introuvable</h1>
+  <p>Ce site ne publie que le catalogue de questionnaires du Buzzer :
+     <code>/catalogue.json</code> et les questionnaires dans <code>/q/</code>.</p>
+  <p><a href="/">Retour au catalogue</a></p>
+</body>
+</html>
+''');
 }
 
 // Une vraie page, pas un fichier vide : quelqu'un qui tombe sur l'adresse
