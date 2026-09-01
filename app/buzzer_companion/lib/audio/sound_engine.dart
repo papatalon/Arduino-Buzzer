@@ -7,7 +7,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'sound_library.dart';
 
-const _assignmentKey = 'buzzer_sound_assignment';
 const _volumeKey = 'app_sound_volume';
 
 // Moteur de son de l'app : joue la bibliotheque embarquee a la place du
@@ -17,9 +16,26 @@ const _volumeKey = 'app_sound_volume';
 //
 // 1. **Les assignations buzzer -> son appartiennent a l'app.** En mode
 //    delegue le Mega ne gere plus que les lumieres, donc son EEPROM et ses
-//    constantes *_FILE_COUNT ne font plus autorite. L'assignation est
-//    persistee ici (SharedPreferences) et couvre toute la bibliotheque
-//    locale, y compris les sons ajoutes apres coup.
+//    constantes *_FILE_COUNT ne font plus autorite.
+//
+//    Elles sont TIREES AU SORT A CHAQUE DEMARRAGE, et non conservees d'une
+//    fois a l'autre. Elles l'etaient, sous forme d'indices dans la liste
+//    triee du dossier 02_Buzzer, et c'etait un piege : ajouter un seul
+//    fichier decale alphabetiquement tous les indices suivants, si bien que
+//    le rouge changeait de son sans que personne n'ait touche a un reglage.
+//
+//    Enregistrer le nom du fichier plutot que sa position aurait corrige ca,
+//    mais ne rien enregistrer est plus simple encore, et pour un jeu de
+//    party c'est meme un gain : des sons differents d'une soiree a l'autre,
+//    personne ne se lasse. Le choix tient toute la seance, l'app restant
+//    ouverte ; les boutons « Changer » et « Melanger » restent disponibles.
+//
+//    Le prix, assume : un redemarrage EN PLEIN MILIEU d'une soiree rebat les
+//    quatre sons. Entre deux jeux ce n'est rien, puisqu'ils sont rappeles au
+//    debut de chaque partie ; en pleine manche de « Ne buzze pas », dont
+//    tout le mecanisme repose sur la reconnaissance de son propre son, ce le
+//    serait. Un redemarrage en pleine manche casse deja bien d'autres
+//    choses.
 //
 // 2. **Emulation de la broche BUSY.** Le firmware s'en sert pour caler le
 //    chenillard sur la musique d'intro (Buzzer::songFinished). S'il ne joue
@@ -41,7 +57,16 @@ class SoundEngine extends ChangeNotifier {
   // SFX_BUSY vers le Mega.
   final void Function(bool busy) onBusyChanged;
 
-  final SoLoud _soloud = SoLoud.instance;
+  // Paresseux : SoLoud.instance exige le greffon natif des sa construction,
+  // donc un champ ordinaire rendait le moteur impossible a instancier hors
+  // d'une vraie application. Il ne se construit maintenant qu'a la premiere
+  // utilisation, ce qui est de toute facon plus sain pour un objet aussi
+  // lourd.
+  late final SoLoud _soloud = SoLoud.instance;
+  // Vrai une fois le moteur natif demarre. Sert a ne pas l'arreter s'il n'a
+  // jamais demarre : sur un poste sans peripherique audio, init() echoue et
+  // dispose() appelait quand meme deinit().
+  bool _demarre = false;
   final Random _random = Random();
 
   // Sources déjà chargées, gardées en cache : recharger un asset à chaque
@@ -67,20 +92,14 @@ class SoundEngine extends ChangeNotifier {
   Future<void> init() async {
     try {
       await _soloud.init();
+      _demarre = true;
     } catch (e) {
       debugPrint('Moteur audio indisponible : $e');
     }
     await library.load();
+    shuffleAssignments();
+
     final prefs = await SharedPreferences.getInstance();
-
-    final saved = prefs.getStringList(_assignmentKey);
-    if (saved != null && saved.length == 4) {
-      assignment = saved.map((s) => int.tryParse(s) ?? 0).toList();
-    } else {
-      shuffleAssignments(persist: false);
-    }
-    _clampAssignments();
-
     volume = prefs.getDouble(_volumeKey) ?? 0.8;
     notifyListeners();
   }
@@ -89,21 +108,8 @@ class SoundEngine extends ChangeNotifier {
   void dispose() {
     _recallTimer?.cancel();
     _busyPoll?.cancel();
-    _soloud.deinit();
+    if (_demarre) _soloud.deinit();
     super.dispose();
-  }
-
-  // Un son retire de la bibliotheque ne doit pas laisser une assignation
-  // pointer dans le vide.
-  void _clampAssignments() {
-    final max = library.count(SoundFolder.buzzer);
-    if (max == 0) return;
-    assignment = assignment.map((i) => (i < 0 || i >= max) ? 0 : i).toList();
-  }
-
-  Future<void> _persistAssignments() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setStringList(_assignmentKey, assignment.map((i) => '$i').toList());
   }
 
   void _setBusy(bool value) {
@@ -128,15 +134,15 @@ class SoundEngine extends ChangeNotifier {
 
   // --- Assignations -------------------------------------------------------
 
-  void shuffleAssignments({bool persist = true}) {
+  // Quatre sons DISTINCTS tant que la bibliotheque en offre assez : deux
+  // buzzers qui sonnent pareil rendent « Ne buzze pas » injouable. Le modulo
+  // n'est un repli que pour une bibliotheque de moins de quatre sons.
+  void shuffleAssignments() {
     final max = library.count(SoundFolder.buzzer);
     if (max == 0) return;
     final pool = List<int>.generate(max, (i) => i)..shuffle(_random);
     assignment = List<int>.generate(4, (i) => pool[i % pool.length]);
-    if (persist) {
-      _persistAssignments();
-      notifyListeners();
-    }
+    notifyListeners();
   }
 
   // Assigne un son precis (choix direct dans la grille). Contrairement a
@@ -146,7 +152,6 @@ class SoundEngine extends ChangeNotifier {
     final max = library.count(SoundFolder.buzzer);
     if (buzzerId < 0 || buzzerId > 3 || soundIndex < 0 || soundIndex >= max) return;
     assignment[buzzerId] = soundIndex;
-    _persistAssignments();
     notifyListeners();
   }
 
@@ -241,7 +246,6 @@ class SoundEngine extends ChangeNotifier {
       if (!takenByOther) break;
     }
     assignment[buzzerId] = candidate;
-    _persistAssignments();
     notifyListeners();
   }
 
