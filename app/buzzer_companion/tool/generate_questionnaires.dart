@@ -233,6 +233,13 @@ void _writeCatalogue() {
 // Ce n'etait pas un reglage de securite de la zone : l'en-tete cf-mitigated
 // etait vide et cf-cache-status disait DYNAMIC a chaque appel.
 //
+// CES EN-TETES NE SUFFISENT PAS A EUX SEULS. Le cache de Cloudflare ne
+// s'applique d'office qu'a une liste d'extensions statiques, dont .json ne
+// fait pas partie : s-maxage etait ecrit et ignore. Il a fallu une regle de
+// cache sur la zone sd6tools.net (Caching > Cache Rules), « Eligible for
+// cache » sur le hostname buzzer.sd6tools.net, en mode « use cache-control
+// header » pour que ce fichier reste la seule source des durees.
+//
 // s-maxage vise le cache de Cloudflare, max-age le poste client. Les
 // questionnaires ne changent qu'a une regeneration, d'ou une heure au bord ;
 // l'index est garde plus court pour qu'un ajout se voie vite. Une version
