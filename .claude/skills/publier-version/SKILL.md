@@ -103,18 +103,70 @@ Télécharger mène à un 404.
 Rappel : l'archive ne va **jamais** dans le dépôt. 18 Mo par version, sans
 compression delta possible, resteraient dans l'historique pour toujours.
 
-## 6. Publier la version sur GitHub
+## 6. Publier la version sur GitHub, avec de vraies notes
+
+Les notes de version sont **la seule chose que l'utilisateur lit avant de
+télécharger**, et le bandeau de mise à jour y renvoie par « Nouveautés ».
+Elles ne sont pas une formalité de fin de procédure.
+
+### D'abord, retrouver ce qui a changé
+
+Le vrai risque n'est pas d'oublier d'écrire les notes, c'est de ne plus
+savoir quoi y mettre. La matière est dans le dépôt :
+
+```bash
+git log v1.0.0..HEAD --oneline          # remplacer par le tag precedent
+git diff v1.0.0..HEAD --stat | tail -5
+```
+
+Si le firmware a bougé, il faut le dire, parce que l'utilisateur devra
+reflasher :
+
+```bash
+git log v1.0.0..HEAD --oneline -- "*.ino" "*.cpp" "*.h"
+```
+
+### Ensuite, traduire
+
+**Ne jamais coller la liste des commits.** Un message de commit explique un
+changement à quelqu'un qui lit le code ; les notes expliquent une différence
+à quelqu'un qui anime une soirée. « Corrige le decalage d'indices des
+assignations de sons » devient « Les sons des buzzers changent maintenant à
+chaque démarrage. »
+
+Écarter tout ce qui ne se voit pas de l'extérieur : remaniements, tests,
+corrections d'outillage. S'il ne reste rien de visible, le dire simplement
+plutôt que d'étoffer.
+
+### La structure, reprise de la v1.0.0
+
+```markdown
+Une phrase sur ce que cette version apporte.
+
+## Nouveautés
+- Ce qui change pour l'animateur, un point par changement visible.
+
+## Corrections
+- Seulement ce qui se voyait. Un bogue que personne n'a rencontre n'a pas
+  sa place ici.
+
+## Installation
+Seulement si elle change. Sinon, ne pas repeter la v1.0.0.
+
+## À savoir
+Ce qui pourrait surprendre ou bloquer : reflash du firmware necessaire,
+reglage remis a zero, comportement qui change.
+```
+
+### Publier
 
 ```bash
 gh release create v1.1.0 "<chemin du zip>#Console de l'animateur, Windows 64 bits" \
   --title "Console de l'animateur 1.1.0" --notes-file -
 ```
 
-**Écrire de vraies notes**, en français, pour quelqu'un qui anime des
-soirées et non pour un développeur. Ce qui change pour lui, pas la liste des
-commits. Reprendre la structure de la v1.0.0 : ce qui est nouveau,
-l'installation si elle change, ce qu'il faut savoir (un reflash de firmware
-nécessaire, par exemple).
+Puis relire la page publiée : `gh release view v1.1.0`. Des notes vides, ou
+celles de la version précédente, sont pires qu'une version sans bandeau.
 
 ## 7. Pousser le site
 
