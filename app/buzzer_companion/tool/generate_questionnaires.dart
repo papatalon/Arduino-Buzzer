@@ -259,12 +259,21 @@ void _writeCatalogue() {
 //
 // s-maxage vise le cache de Cloudflare, max-age le poste client.
 void _writeEntetes() {
+  // version.json n'est PAS mis en cache, et c'est voulu. Il n'est demande
+  // qu'une fois par lancement de l'application, donc il ne pese rien sur la
+  // limite de debit, et l'avis de mise a jour doit dire la verite tout de
+  // suite : une version publiee ce matin n'a pas a rester invisible cinq
+  // minutes de plus. Il tombait deja sur le defaut de Pages, mais par oubli
+  // plutot que par decision ; c'est ecrit maintenant.
   File('$_outputDir/_headers').writeAsStringSync('''
 /q/*
   Cache-Control: public, max-age=300, s-maxage=300
 
 /catalogue.json
   Cache-Control: public, max-age=300, s-maxage=300
+
+/version.json
+  Cache-Control: public, max-age=0, must-revalidate
 ''');
 }
 
