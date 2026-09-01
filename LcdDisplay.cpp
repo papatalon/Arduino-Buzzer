@@ -145,6 +145,11 @@ void LcdDisplay::setControlOverride(bool active) {
   _controlOverrideActive = active;
 
   if (!active) {
+    // Les caracteres 0 et 1 ont servi au cadenas : ils appartiennent a
+    // l'egaliseur, qui dessinerait des morceaux de cadenas a la place de ses
+    // barres si on ne les lui rendait pas.
+    initBarChars();
+
     // Controle relache : repeint immediatement ce que le jeu voulait
     // afficher pendant le gel (memorise par setText()). Ne pas compter
     // sur le prochain setText() du jeu : il n'arrive qu'a la prochaine
@@ -155,19 +160,56 @@ void LcdDisplay::setControlOverride(bool active) {
     return;
   }
 
+  // Un cadenas dessine sur deux cellules empilees, plus un cadre complet.
+  // L'ancien ecran (une ligne de # et trois lignes centrees) disait la meme
+  // chose, mais avait l'air d'un message d'erreur : ce n'en est pas un,
+  // c'est l'etat normal quand l'app anime la soiree.
+  //
+  // Les caracteres 0 et 1 sont empruntes a l'egaliseur (initBarChars) et lui
+  // sont rendus des que le controle est relache, plus bas.
+  byte anseCadenas[8] = {
+    0b00000,
+    0b00000,
+    0b01110,
+    0b10001,
+    0b10001,
+    0b10001,
+    0b11111,
+    0b11111,
+  };
+  byte corpsCadenas[8] = {
+    0b11111,
+    0b11011,
+    0b11011,
+    0b11111,
+    0b11111,
+    0b00000,
+    0b00000,
+    0b00000,
+  };
+  lcd.createChar(0, anseCadenas);
+  lcd.createChar(1, corpsCadenas);
+
   lcd.clear();
 
-  String border = "";
-  for (int i = 0; i < 20; i++) border += '#';
+  String cadre = "";
+  for (int i = 0; i < 20; i++) cadre += '#';
 
   lcd.setCursor(0, 0);
-  lcd.print(border);
-  lcd.setCursor(0, 1);
-  lcd.print(centerLine("CONTROLE A DISTANCE"));
-  lcd.setCursor(0, 2);
-  lcd.print(centerLine("PAR L'APPLICATION"));
+  lcd.print(cadre);
   lcd.setCursor(0, 3);
-  lcd.print(centerLine("CLAVIER VERROUILLE"));
+  lcd.print(cadre);
+
+  // Colonne 0 et 19 : le cadre. Colonne 3 : le cadenas. Colonnes 5 a 18 :
+  // quatorze caracteres de texte, la largeur de « CLAVIER BLOQUE ».
+  lcd.setCursor(0, 1);
+  lcd.print("#  ");
+  lcd.write(byte(0));
+  lcd.print(" L'APP MENE    #");
+  lcd.setCursor(0, 2);
+  lcd.print("#  ");
+  lcd.write(byte(1));
+  lcd.print(" CLAVIER BLOQUE#");
 }
 
 // Centre un texte (deja sans accents) sur 20 colonnes, tronque s'il est
