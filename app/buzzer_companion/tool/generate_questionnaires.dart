@@ -23,6 +23,8 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 
+import 'package:crypto/crypto.dart';
+
 const _sourcePath = '../../Questions.cpp';
 const _accentsDir = 'tool/accents';
 
@@ -34,14 +36,22 @@ const _accentsDir = 'tool/accents';
 // de la salle.
 const kMaxQuestions = 25;
 
-// Destination par defaut : un dossier du depot, pratique pour verifier le
-// resultat. Mais ce n'est PAS l'endroit ou l'operateur veut ses propres
-// questionnaires : tout ce qu'il creerait la serait versionne. D'ou le
-// premier argument, qui permet d'ecrire directement dans le dossier
-// configure dans l'application :
+// Le generateur ecrit un SITE, pas un dossier de travail. Ce site est publie
+// par Cloudflare Pages sur buzzer.sd6tools.net, et l'application va y
+// chercher son catalogue :
 //
-//   dart run tool/generate_questionnaires.dart "C:\Users\...\Mes questionnaires"
-var _outputDir = 'questionnaires';
+//   site/
+//     index.html          page d'accueil, pour l'humain qui tombe sur l'URL
+//     catalogue.json      l'index : un enregistrement par questionnaire
+//     q/<id>.json         les questionnaires eux-memes
+//
+// Les questionnaires ne sont plus lus depuis le depot par l'application. Elle
+// les telecharge et les garde dans son dossier de donnees ; le dossier
+// configure dans l'application ne contient plus que les questionnaires
+// PERSONNELS de l'operateur.
+//
+// Le chemin est relatif a app/buzzer_companion, d'ou le script se lance.
+var _outputDir = '../../site';
 
 class Entry {
   Entry(this.category, this.question, this.answer);
@@ -90,7 +100,12 @@ void main(List<String> args) {
       '($accentues accentuées, ${categories.length - accentues} en attente).');
 
   final out = Directory(_outputDir);
-  if (!out.existsSync()) out.createSync(recursive: true);
+  // Le dossier q/ est vidé avant d'écrire : sans ça, un questionnaire
+  // renommé (ou une thématique retirée) laisserait son ancien fichier en
+  // place, publié et invisible dans le catalogue.
+  final qDir = Directory('$_outputDir/q');
+  if (qDir.existsSync()) qDir.deleteSync(recursive: true);
+  qDir.createSync(recursive: true);
 
   // Un fichier par catégorie, découpé en manches de 25.
   for (final entry in parCategorie.entries) {
@@ -154,7 +169,99 @@ void main(List<String> args) {
   // seul questionnaire, c'est exactement ce que le plafond interdit. Les 2000
   // sont là quand même, réparties dans les manches par catégorie.
 
+  _writeCatalogue();
+  _writeAccueil();
+
   stdout.writeln('Écrit dans ${out.absolute.path}');
+}
+
+// --- Le catalogue et la page d'accueil -----------------------------------
+
+// L'index que l'application télécharge en premier. Il porte tout ce qu'il
+// faut pour DESSINER la bibliothèque (titres, collections, emoji, nombre de
+// questions) sans télécharger un seul questionnaire. C'est ce qui permet
+// d'afficher les 125 fiches, dont celles qu'on n'a pas encore rapatriées.
+void _writeCatalogue() {
+  final collections = <String, Map<String, dynamic>>{};
+  for (final entree in _catalogue) {
+    final nom = entree['collection'] as String;
+    final vue = collections.putIfAbsent(
+        nom, () => {'nom': nom, 'emoji': entree['emoji'], 'questionnaires': 0, 'questions': 0});
+    vue['questionnaires'] = (vue['questionnaires'] as int) + 1;
+    vue['questions'] = (vue['questions'] as int) + (entree['questions'] as int);
+  }
+
+  final json = const JsonEncoder.withIndent('  ').convert({
+    'format': 'buzzer-catalogue',
+    'version': 1,
+    'questionnaires': _catalogue,
+    // Les collections sont déductibles des questionnaires, mais les
+    // pré-calculer évite à l'application de refaire le regroupement au
+    // démarrage, et fixe leur ordre une fois pour toutes.
+    'collections': collections.values.toList()
+      ..sort((a, b) => (a['nom'] as String).compareTo(b['nom'] as String)),
+  });
+  File('$_outputDir/catalogue.json').writeAsStringSync('$json\n');
+
+  final questions = _catalogue.fold<int>(0, (s, e) => s + (e['questions'] as int));
+  stdout.writeln('catalogue.json : ${_catalogue.length} questionnaires, '
+      '${collections.length} collections, $questions questions.');
+}
+
+// Une vraie page, pas un fichier vide : quelqu'un qui tombe sur l'adresse
+// doit comprendre ce qu'il regarde. Volontairement sans dépendance ni image,
+// pour qu'elle reste un seul fichier que Cloudflare sert tel quel.
+void _writeAccueil() {
+  final collections = <String, int>{};
+  for (final entree in _catalogue) {
+    final nom = entree['collection'] as String;
+    collections[nom] = (collections[nom] ?? 0) + 1;
+  }
+  final noms = collections.keys.toList()..sort();
+  final questions = _catalogue.fold<int>(0, (s, e) => s + (e['questions'] as int));
+
+  final lignes = noms
+      .map((nom) => '    <li><strong>$nom</strong> '
+          '<span>${collections[nom]} questionnaire${collections[nom]! > 1 ? 's' : ''}</span></li>')
+      .join('\n');
+
+  File('$_outputDir/index.html').writeAsStringSync('''
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Questionnaires du Buzzer</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: Georgia, "Times New Roman", serif; max-width: 46rem;
+         margin: 4rem auto; padding: 0 1.5rem; line-height: 1.6; }
+  h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+  .chapeau { color: #666; margin-top: 0; }
+  ul { list-style: none; padding: 0; }
+  li { display: flex; justify-content: space-between; gap: 1rem;
+       border-bottom: 1px solid #ccc; padding: 0.45rem 0; }
+  li span { color: #666; white-space: nowrap; }
+  code { background: rgba(127,127,127,.15); padding: 0.1rem 0.3rem; }
+</style>
+</head>
+<body>
+  <h1>Questionnaires du Buzzer</h1>
+  <p class="chapeau">${_catalogue.length} questionnaires, $questions questions,
+     ${noms.length} collections. Aucun ne dépasse 25 questions : une soirée
+     n'est pas un marathon.</p>
+  <p>Ce site est le catalogue que la console de l'animateur va chercher. Elle
+     lit d'abord <code>/catalogue.json</code>, puis télécharge les
+     questionnaires que vous choisissez, un par un, dans <code>/q/</code>.</p>
+  <ul>
+$lignes
+  </ul>
+  <p>Les questionnaires sont produits à partir de la banque compilée dans le
+     firmware du buzzer. Le format est du JSON en clair, en français : il se
+     retouche dans un éditeur de texte.</p>
+</body>
+</html>
+''');
 }
 
 // --- Lecture de Questions.cpp -------------------------------------------
@@ -595,20 +702,59 @@ void _writeParts(String titre, List<Entry> entries,
 // avant « 2 sur 16 ».
 String _numero(int n, int total) => total >= 10 ? '$n'.padLeft(2, '0') : '$n';
 
+// Ce que le catalogue publiera, rempli au fil des écritures.
+final _catalogue = <Map<String, dynamic>>[];
+final _idsVus = <String, String>{};
+
 void _write(String titre, List<Entry> entries,
     {required String note, required String collection, required String emoji}) {
-  final json = const JsonEncoder.withIndent('  ').convert({
-    'format': 'buzzer-questionnaire',
-    'version': 1,
+  final contenu = '${const JsonEncoder.withIndent('  ').convert({
+        'format': 'buzzer-questionnaire',
+        'version': 1,
+        'titre': titre,
+        'note': note,
+        // Range le fichier sous sa tuile dans la bibliothèque de l'app. Sans
+        // elle, les 125 fichiers arrivent en un seul tas.
+        'collection': collection,
+        'emoji': emoji,
+        'questions': entries.map((e) => e.toJson()).toList(),
+      })}\n';
+
+  final id = _identifiant(titre);
+  final deja = _idsVus[id];
+  if (deja != null) {
+    stderr.writeln('Collision d\'identifiant « $id » : « $deja » et « $titre » '
+        'produisent le même nom de fichier.');
+    exit(1);
+  }
+  _idsVus[id] = titre;
+
+  final octets = utf8.encode(contenu);
+  File('$_outputDir/q/$id.json').writeAsStringSync(contenu);
+
+  _catalogue.add({
+    'id': id,
     'titre': titre,
     'note': note,
-    // Range le fichier sous sa tuile dans la bibliothèque de l'app. Sans
-    // elle, les 131 fichiers arrivent en un seul tas.
     'collection': collection,
     'emoji': emoji,
-    'questions': entries.map((e) => e.toJson()).toList(),
+    'questions': entries.length,
+    'octets': octets.length,
+    // Empreinte du contenu : c'est ce qui permet à l'application de savoir
+    // qu'une copie locale est périmée après une régénération, au lieu de
+    // garder indéfiniment une vieille version sans le dire.
+    'empreinte': sha1.convert(octets).toString(),
   });
-  final nom = titre.replaceAll(RegExp(r'[\\/:*?"<>|]'), ' ').trim();
-  File('$_outputDir/$nom.json').writeAsStringSync('$json\n');
-  stdout.writeln('  $nom.json  (${entries.length})');
+
+  stdout.writeln('  q/$id.json  (${entries.length})');
 }
+
+// Identifiant stable, sûr dans une URL. Les titres portent des accents, des
+// apostrophes et des espaces : « L'espace et le ciel 1 sur 3 » deviendrait
+// « L%27espace%20et%20le%20ciel... » dans une adresse, illisible et sensible
+// aux différences d'encodage entre Windows, Cloudflare et Dart. Le titre
+// lisible vit dans le JSON, pas dans le nom du fichier.
+String _identifiant(String titre) => _strip(titre)
+    .toLowerCase()
+    .replaceAll(RegExp('[^a-z0-9]+'), '-')
+    .replaceAll(RegExp(r'^-+|-+$'), '');

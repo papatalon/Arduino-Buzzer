@@ -41,6 +41,8 @@ dependencies:
   flutter_soloud: ^4.1.7
   file_selector: ^1.0.3
   path_provider: ^2.1.5
+  http: ^1.2.2
+  crypto: ^3.0.6
 dev_dependencies:
   flutter_test:
     sdk: flutter

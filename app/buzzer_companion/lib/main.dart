@@ -15,6 +15,7 @@ import 'popout/popout_snapshot.dart';
 import 'popout/popout_window.dart';
 import 'popout/window_launch_args.dart';
 import 'protocol.dart';
+import 'questionnaires/catalogue.dart';
 import 'questionnaires/questionnaire_store.dart';
 import 'team_names.dart';
 
@@ -59,6 +60,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   final _teams = TeamNames();
   final _logo = EventLogo();
   final _questionnaires = QuestionnaireStore();
+  final _catalogue = CatalogueStore();
   late final SoundEngine _sound;
   StreamSubscription<SfxEvent>? _sfxSub;
 
@@ -156,6 +158,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
         teams: _teams,
         logo: _logo,
         questionnaires: _questionnaires,
+        catalogue: _catalogue,
       ),
     );
   }

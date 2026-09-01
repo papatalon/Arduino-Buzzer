@@ -16,8 +16,6 @@ class QuestionnaireFile {
     required this.name,
     required this.modified,
     required this.title,
-    required this.collection,
-    required this.emoji,
     required this.questionCount,
     required this.valid,
   });
@@ -25,10 +23,6 @@ class QuestionnaireFile {
   final String path;
   final String name;      // nom du fichier sans .json
   final DateTime modified;
-  // Vide pour un questionnaire écrit à la main : il se range alors sous
-  // [kMesQuestionnaires].
-  final String collection;
-  final String emoji;
   // Titre et compte lus DANS le fichier : choisir entre « Noel.json » et
   // « Noel2.json » sans les ouvrir est impossible, alors qu'entre « Spécial
   // Noël, 24 questions » et « Noël, brouillon, 3 questions » c'est immédiat.
@@ -40,38 +34,14 @@ class QuestionnaireFile {
   final bool valid;
 
   String get displayTitle => title.isNotEmpty ? title : name;
-
-  // Sous quelle tuile ce fichier se range. Un fichier abîmé va avec les
-  // questionnaires personnels plutôt que dans une collection générée : c'est
-  // là qu'on ira le chercher pour le réparer.
-  String get displayCollection =>
-      valid && collection.isNotEmpty ? collection : kMesQuestionnaires;
 }
 
-// Le fourre-tout des questionnaires sans collection. Nommé plutôt
-// qu'improvisé à trois endroits, sinon le filtre et l'affichage finissent par
-// diverger d'une espace ou d'une majuscule.
-const kMesQuestionnaires = 'Mes questionnaires';
-
-// Repli quand aucun fichier d'une collection ne porte d'emoji : mieux vaut un
-// pictogramme neutre qu'une tuile bancale à côté de celles qui en ont un.
-const kEmojiParDefaut = '📄';
-const kEmojiMesQuestionnaires = '✏️';
-
-// Une tuile du premier niveau : une collection et ce qu'elle contient.
-class QuestionnaireCollection {
-  const QuestionnaireCollection({
-    required this.name,
-    required this.emoji,
-    required this.files,
-    required this.questionCount,
-  });
-
-  final String name;
-  final String emoji;
-  final List<QuestionnaireFile> files;
-  final int questionCount;
-}
+// La tuile qui regroupe tout ce dossier. Le classement de la bibliothèque se
+// fait désormais par PROVENANCE : le catalogue en lecture seule d'un côté, ce
+// que l'opérateur a écrit lui-même de l'autre. Un questionnaire personnel n'a
+// donc plus de collection à lui, et l'éditeur n'en demande plus.
+const kPersonnalise = 'Personnalisé';
+const kEmojiPersonnalise = '✏️';
 
 // Les questionnaires vivent dans un dossier CHOISI par l'opérateur, et non
 // dans un recoin de données d'application : il doit pouvoir les copier sur
@@ -169,15 +139,11 @@ class QuestionnaireStore extends ChangeNotifier {
         // une poignée de fichiers : le coût est nul, et la liste devient
         // vraiment renseignée plutôt qu'une suite de noms de fichiers.
         String title = '';
-        String collection = '';
-        String emoji = '';
         int count = 0;
         bool valid = true;
         try {
           final parsed = Questionnaire.decode(entity.readAsStringSync());
           title = parsed.title;
-          collection = parsed.collection;
-          emoji = parsed.emoji;
           count = parsed.questions.length;
         } catch (_) {
           valid = false;
@@ -187,30 +153,14 @@ class QuestionnaireStore extends ChangeNotifier {
           name: name.substring(0, name.length - 5),
           modified: entity.statSync().modified,
           title: title,
-          collection: collection,
-          emoji: emoji,
           questionCount: count,
           valid: valid,
         ));
       }
-      found.sort((a, b) {
-        final ca = a.displayCollection;
-        final cb = b.displayCollection;
-        if (ca != cb) {
-          // Ce que l'opérateur a écrit lui-même passe avant les 131 fichiers
-          // générés, qui ne bougent jamais.
-          if (ca == kMesQuestionnaires) return -1;
-          if (cb == kMesQuestionnaires) return 1;
-          return ca.compareTo(cb);
-        }
-        // Dans une collection générée, l'ordre du titre est le bon :
-        // « 01 sur 16 » avant « 02 sur 16 ». Trier par date n'y donnerait
-        // rien, les 131 fichiers sont écrits dans la même seconde.
-        if (ca != kMesQuestionnaires) return a.displayTitle.compareTo(b.displayTitle);
-        // Le plus récemment retouché en premier : c'est presque toujours
-        // celui qu'on rouvre.
-        return b.modified.compareTo(a.modified);
-      });
+      // Le plus récemment retouché en premier : c'est presque toujours celui
+      // qu'on rouvre. Ce dossier ne contient plus que du travail en cours,
+      // le catalogue vit ailleurs, alors la date reprend tout son sens.
+      found.sort((a, b) => b.modified.compareTo(a.modified));
       files = found;
       lastError = null;
     } on FileSystemException catch (e) {
@@ -222,42 +172,6 @@ class QuestionnaireStore extends ChangeNotifier {
       lastError = "Impossible de lire le dossier des questionnaires : $e";
     }
     notifyListeners();
-  }
-
-  // Les collections, dans l'ordre où elles s'affichent. Recalculé à chaque
-  // lecture plutôt que mis en cache : [files] est déjà trié, le regroupement
-  // ne coûte qu'un parcours, et un cache serait une deuxième vérité à tenir
-  // à jour à chaque enregistrement.
-  List<QuestionnaireCollection> get collections {
-    final parNom = <String, List<QuestionnaireFile>>{};
-    for (final file in files) {
-      parNom.putIfAbsent(file.displayCollection, () => []).add(file);
-    }
-    final noms = parNom.keys.toList()
-      ..sort((a, b) {
-        if (a == kMesQuestionnaires) return -1;
-        if (b == kMesQuestionnaires) return 1;
-        return a.compareTo(b);
-      });
-    return [
-      for (final nom in noms)
-        QuestionnaireCollection(
-          name: nom,
-          emoji: _emojiDe(nom, parNom[nom]!),
-          files: parNom[nom]!,
-          questionCount: parNom[nom]!.fold(0, (somme, f) => somme + f.questionCount),
-        ),
-    ];
-  }
-
-  // L'emoji est porté par chaque fichier, mais s'affiche au niveau de la
-  // collection : le premier renseigné fait foi. Une collection dont un seul
-  // fichier a été retouché à la main garde donc son pictogramme.
-  static String _emojiDe(String nom, List<QuestionnaireFile> fichiers) {
-    for (final fichier in fichiers) {
-      if (fichier.emoji.isNotEmpty) return fichier.emoji;
-    }
-    return nom == kMesQuestionnaires ? kEmojiMesQuestionnaires : kEmojiParDefaut;
   }
 
   int get questionCount => files.fold(0, (somme, f) => somme + f.questionCount);
@@ -290,6 +204,32 @@ class QuestionnaireStore extends ChangeNotifier {
       return path;
     } catch (e) {
       lastError = "Enregistrement impossible : $e";
+      notifyListeners();
+      return null;
+    }
+  }
+
+  // Copie un questionnaire du catalogue dans le dossier personnel, où il
+  // devient modifiable. Le nom est rendu unique au lieu d'écraser : dupliquer
+  // deux fois « Histoire 1 sur 8 » doit donner deux fichiers, pas un seul
+  // écrasé sans avertissement.
+  Future<String?> duplicate(Questionnaire source) async {
+    try {
+      final dir = await _ensureDir();
+      final copie = source.copy();
+      final base = _fileNameFor(copie.title);
+      var chemin = '${dir.path}${Platform.pathSeparator}$base.json';
+      var n = 2;
+      while (File(chemin).existsSync()) {
+        chemin = '${dir.path}${Platform.pathSeparator}$base ($n).json';
+        n++;
+      }
+      await File(chemin).writeAsString(copie.encode());
+      lastError = null;
+      await refresh();
+      return chemin;
+    } catch (e) {
+      lastError = "Duplication impossible : $e";
       notifyListeners();
       return null;
     }

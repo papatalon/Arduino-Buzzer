@@ -6,6 +6,7 @@ import '../audio/sound_engine.dart';
 import '../ble_link_service.dart';
 import '../event_logo.dart';
 import '../popout/popout_launcher.dart';
+import '../questionnaires/catalogue.dart';
 import '../questionnaires/questionnaire_store.dart';
 import '../team_names.dart';
 import '../protocol.dart';
@@ -45,6 +46,7 @@ class ConsoleShell extends StatefulWidget {
     required this.teams,
     required this.logo,
     required this.questionnaires,
+    required this.catalogue,
   });
 
   final BleLinkService ble;
@@ -54,6 +56,7 @@ class ConsoleShell extends StatefulWidget {
   final TeamNames teams;
   final EventLogo logo;
   final QuestionnaireStore questionnaires;
+  final CatalogueStore catalogue;
 
   @override
   State<ConsoleShell> createState() => _ConsoleShellState();
@@ -129,6 +132,7 @@ class _ConsoleShellState extends State<ConsoleShell> {
                                   teams: widget.teams,
                                   logo: widget.logo,
                                   questionnaires: widget.questionnaires,
+                                  catalogue: widget.catalogue,
                                   onNavigate: (s) => setState(() => _section = s),
                                 ),
                               ),
@@ -309,6 +313,7 @@ class _CenterColumn extends StatelessWidget {
     required this.teams,
     required this.logo,
     required this.questionnaires,
+    required this.catalogue,
     required this.onNavigate,
   });
 
@@ -316,6 +321,7 @@ class _CenterColumn extends StatelessWidget {
   final TeamNames teams;
   final EventLogo logo;
   final QuestionnaireStore questionnaires;
+  final CatalogueStore catalogue;
 
   final ConsoleSection section;
   final GameState game;
@@ -336,7 +342,7 @@ class _CenterColumn extends StatelessWidget {
           onGameSelected: () => onNavigate(ConsoleSection.partie),
         );
       case ConsoleSection.questions:
-        return QuestionsScreen(store: questionnaires);
+        return QuestionsScreen(store: questionnaires, catalogue: catalogue);
       case ConsoleSection.appareil:
         return DeviceScreen(ble: ble, game: game, logo: logo);
       case ConsoleSection.partie:
