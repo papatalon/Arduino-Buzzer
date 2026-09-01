@@ -1,5 +1,5 @@
 /q/*
-  Cache-Control: public, max-age=600, s-maxage=3600
+  Cache-Control: public, max-age=300, s-maxage=300
 
 /catalogue.json
-  Cache-Control: public, max-age=60, s-maxage=300
+  Cache-Control: public, max-age=300, s-maxage=300

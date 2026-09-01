@@ -240,18 +240,31 @@ void _writeCatalogue() {
 // cache » sur le hostname buzzer.sd6tools.net, en mode « use cache-control
 // header » pour que ce fichier reste la seule source des durees.
 //
-// s-maxage vise le cache de Cloudflare, max-age le poste client. Les
-// questionnaires ne changent qu'a une regeneration, d'ou une heure au bord ;
-// l'index est garde plus court pour qu'un ajout se voie vite. Une version
-// perimee servie depuis le cache ne peut pas passer inapercue : l'app
-// compare l'empreinte du fichier telecharge a celle annoncee.
+// LES DEUX DUREES DOIVENT RESTER EGALES, et c'est contre-intuitif.
+//
+// Un deploiement Pages NE PURGE PAS ce cache : mesure le 1er septembre 2026,
+// un objet mis en cache avant un push etait toujours servi apres, avec un
+// age qui montait. Les anciennes valeurs (une heure pour les questionnaires,
+// cinq minutes pour l'index) creaient donc une fenetre ou l'index annoncait
+// une nouvelle empreinte pendant que le bord servait encore l'ancien
+// fichier. Le controle d'empreinte de l'app refusait alors le
+// telechargement, a juste titre, pendant pres d'une heure.
+//
+// Garder l'index plus frais que ce qu'il decrit est un piege : il decrit des
+// fichiers par leur empreinte, donc il ne peut pas etre en avance sur eux.
+// Cinq minutes des deux cotes laissent une fenetre de cinq minutes apres une
+// publication, et suffisent amplement a absorber la rafale que le cache
+// existe pour absorber : rapatrier une collection de seize questionnaires
+// prend quelques secondes.
+//
+// s-maxage vise le cache de Cloudflare, max-age le poste client.
 void _writeEntetes() {
   File('$_outputDir/_headers').writeAsStringSync('''
 /q/*
-  Cache-Control: public, max-age=600, s-maxage=3600
+  Cache-Control: public, max-age=300, s-maxage=300
 
 /catalogue.json
-  Cache-Control: public, max-age=60, s-maxage=300
+  Cache-Control: public, max-age=300, s-maxage=300
 ''');
 }
 
