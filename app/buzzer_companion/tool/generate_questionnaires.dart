@@ -182,6 +182,7 @@ void main(List<String> args) {
   // sont là quand même, réparties dans les manches par catégorie.
 
   _writeCatalogue();
+  _writeVersion();
   _writeAccueil();
   _writeIntrouvable();
   _writeEntetes();
@@ -277,6 +278,32 @@ void _writeIntrouvable() {
 </html>
 ''');
 }
+// Ce que l'application interroge pour savoir si elle est périmée.
+//
+// La comparaison porte sur le NUMÉRO DE BUILD, un entier qui ne fait que
+// monter, et non sur la version affichée. Comparer « 1.10.0 » et « 1.9.0 »
+// comme des chaînes donne la mauvaise réponse, et les comparer correctement
+// demande du code sémantique qu'il faut réussir. Un « > » entre deux entiers
+// n'a rien à rater.
+//
+// La version lisible voyage quand même : c'est elle qu'on montre à
+// l'opérateur, « 1.2.0 » voulant dire quelque chose là où « build 7 » ne dit
+// rien.
+void _writeVersion() {
+  final version = _versionApp();
+  final build = _buildApp();
+  final json = const JsonEncoder.withIndent('  ').convert({
+    'format': 'buzzer-version',
+    'version': version,
+    'build': build,
+    'notes': '$kDepotGitHub/releases/tag/v$version',
+    'telechargement': '$kDepotGitHub/releases/download/v$version/'
+        'buzzer-console-$version-windows.zip',
+  });
+  File('$_outputDir/version.json').writeAsStringSync('$json\n');
+  stdout.writeln('version.json : $version (build $build)');
+}
+
 // La page d'accueil est une page de TÉLÉCHARGEMENT. Le site distribue une
 // application ; le catalogue de questionnaires est la machinerie qu'elle va
 // chercher toute seule, pas le sujet. Quelqu'un qui arrive sur l'adresse veut
@@ -412,6 +439,25 @@ String _versionApp() {
     }
   }
   stderr.writeln('Version introuvable dans pubspec.yaml.');
+  exit(1);
+}
+
+// Le nombre après le « + » de « 1.0.0+1 ». C'est lui qui décide si une
+// version est plus récente qu'une autre, alors on refuse de deviner : sans
+// numéro de build, mieux vaut arrêter le générateur que publier un
+// version.json qui empêcherait toute mise à jour d'être annoncée.
+int _buildApp() {
+  final pubspec = File('pubspec.yaml');
+  if (pubspec.existsSync()) {
+    for (final ligne in pubspec.readAsLinesSync()) {
+      if (ligne.startsWith('version:')) {
+        final morceaux = ligne.substring(8).trim().split('+');
+        final build = morceaux.length > 1 ? int.tryParse(morceaux[1]) : null;
+        if (build != null) return build;
+      }
+    }
+  }
+  stderr.writeln('Numéro de build absent de pubspec.yaml (attendu « 1.0.0+1 »).');
   exit(1);
 }
 

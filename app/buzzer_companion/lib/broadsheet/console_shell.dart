@@ -8,6 +8,8 @@ import '../event_logo.dart';
 import '../popout/popout_launcher.dart';
 import '../questionnaires/active_questionnaire.dart';
 import 'active_questionnaire_bar.dart';
+import '../version_check.dart';
+import 'version_banner.dart';
 import '../questionnaires/catalogue.dart';
 import '../questionnaires/questionnaire_store.dart';
 import '../team_names.dart';
@@ -50,6 +52,7 @@ class ConsoleShell extends StatefulWidget {
     required this.questionnaires,
     required this.catalogue,
     required this.actif,
+    required this.version,
   });
 
   final BleLinkService ble;
@@ -61,6 +64,7 @@ class ConsoleShell extends StatefulWidget {
   final QuestionnaireStore questionnaires;
   final CatalogueStore catalogue;
   final ActiveQuestionnaire actif;
+  final VersionCheck version;
 
   @override
   State<ConsoleShell> createState() => _ConsoleShellState();
@@ -119,6 +123,9 @@ class _ConsoleShellState extends State<ConsoleShell> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
+                        // Au-dessus du filet de tete : une nouvelle version
+                        // concerne toute la console, pas une section.
+                        VersionBanner(check: widget.version),
                         Container(height: 5, color: BSColors.text),
                         _DatelineRail(game: widget.game, clock: _clock),
                         Container(height: 1, color: BSColors.text),

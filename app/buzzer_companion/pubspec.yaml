@@ -43,6 +43,10 @@ dependencies:
   path_provider: ^2.1.5
   http: ^1.2.2
   crypto: ^3.0.6
+  # Lit la version reellement embarquee dans l'executable, plutot que de la
+  # recopier dans une constante : une version en double finit toujours par
+  # diverger, et c'est l'avis de mise a jour qui mentirait.
+  package_info_plus: ^8.1.2
 dev_dependencies:
   flutter_test:
     sdk: flutter
