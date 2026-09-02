@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../event_logo.dart';
 import '../popout/popout_launcher.dart';
-import '../popout/popout_snapshot.dart';
 import '../protocol.dart';
 import '../team_names.dart';
 import 'phosphor_duotone.dart';
@@ -159,15 +158,10 @@ class _PublicScreenPreview extends StatelessWidget {
               child: OutlinedButton.icon(
                 onPressed: active
                     ? popout.close
-                    : () => popout.open(PopoutSnapshot.fromGameState(
-                        game,
-                        teamNames: teams.all,
-                        logoPath: logo.path,
-                        // Instantané d'ouverture seulement : le vrai état
-                        // arrive avec la première poussée, et personne
-                        // n'ouvre l'écran public en plein rappel des sons.
-                        recallIndex: null,
-                      )),
+                    // Le lanceur fabrique lui-même son instantané : savoir
+                    // si le moteur de jeu mène ou si on suit le buzzer
+                    // n'est pas l'affaire d'un bouton.
+                    : popout.open,
                 style: OutlinedButton.styleFrom(
                   foregroundColor: active ? BSColors.accent700 : BSColors.text,
                   backgroundColor: active ? BSColors.accent100 : null,

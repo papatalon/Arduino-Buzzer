@@ -77,6 +77,8 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   @override
   void initState() {
     super.initState();
+    // Le lanceur fabrique son instantane d'ouverture par ce chemin unique.
+    _popout.instantaneCourant = _instantane;
     _ble.init();
     _game.listenTo(_ble.messages);
     _game.addListener(_pushSnapshotToPopout);
@@ -144,11 +146,19 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     }
   }
 
-  void _pushSnapshotToPopout() {
+  // LE SEUL ENDROIT QUI FABRIQUE L'INSTANTANE DE L'ECRAN PUBLIC.
+  //
+  // Il y en a eu deux : celui-ci et le bouton du rail droit, qui construisait
+  // le sien a l'ouverture de la fenetre. Ils ont diverge. Le bouton ignorait
+  // le moteur de jeu, donc l'ecran public s'ouvrait sur un instantane qui se
+  // croyait en pleine partie, sans jeu ni question a montrer : vide devant la
+  // salle. Le lanceur DEMANDE maintenant l'instantane courant plutot qu'on le
+  // lui fabrique de l'exterieur (voir PopoutLauncher.instantaneCourant).
+  PopoutSnapshot _instantane() {
     // Deux sources possibles, jamais melangees : le moteur de jeu quand
     // l'application mene, la telemetrie du buzzer quand il joue seul.
     final mene = isAppControl(_game.phase) || _moteur.etape != EtapeQuiz.repos;
-    _popout.pushSnapshot(mene
+    return mene
         ? PopoutSnapshot.duMoteur(
             _moteur,
             _game,
@@ -162,8 +172,10 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
             teamNames: _teams.all,
             logoPath: _logo.path,
             recallIndex: _sound.recallIndex,
-          ));
+          );
   }
+
+  void _pushSnapshotToPopout() => _popout.pushSnapshot(_instantane());
 
   @override
   void dispose() {

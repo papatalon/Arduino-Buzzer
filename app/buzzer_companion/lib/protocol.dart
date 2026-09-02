@@ -200,6 +200,13 @@ final Set<int> _kIdlePhases = {
   kPhaseNames.indexOf('ROUNDS_SETUP'),
   kPhaseNames.indexOf('SOUND_SETUP'),
   kPhaseNames.indexOf('LED_TEST'),
+  // APP_CONTROL en fait partie, et c'est important : dans cette phase le
+  // buzzer n'a AUCUNE partie a lui. Il arme des boutons pour l'application,
+  // du debut a la fin de la soiree. Le compter comme une partie qui tourne
+  // faisait basculer l'ecran public en mise en page de partie, sans jeu ni
+  // question a montrer : un ecran vide devant la salle. Ce qui tourne ou
+  // non, en mode application, c'est le moteur de jeu qui le dit.
+  kPhaseNames.indexOf('APP_CONTROL'),
 };
 
 // END_CONFIRM et END_GAME en font partie : la partie n'est pas finie tant

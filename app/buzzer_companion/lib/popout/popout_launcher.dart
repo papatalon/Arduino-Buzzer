@@ -16,6 +16,16 @@ class PopoutLauncher extends ChangeNotifier {
     _windowsChangedSub = onWindowsChanged.listen((_) => _checkStillOpen());
   }
 
+  // QUI SAIT FABRIQUER L'INSTANTANE COURANT. Pose une seule fois par
+  // l'application au demarrage.
+  //
+  // Le lanceur le DEMANDE au lieu qu'on le lui passe : le fabriquer demande
+  // de savoir si le moteur de jeu mene la partie ou si on suit le buzzer, et
+  // un bouton dans un rail lateral n'a pas a connaitre cette regle. Il y a
+  // eu deux endroits pour la fabriquer, ils ont diverge, et l'ecran public
+  // s'ouvrait sur un instantane qui se croyait en pleine partie.
+  PopoutSnapshot Function()? instantaneCourant;
+
   bool get isOpen => _controller != null;
 
   WindowController? _controller;
@@ -37,10 +47,10 @@ class PopoutLauncher extends ChangeNotifier {
   // vide jusqu'au prochain message BLE, ce qui a fait croire une fois que
   // rien ne fonctionnait alors que seule la synchronisation initiale
   // manquait.
-  Future<void> open(PopoutSnapshot currentSnapshot) async {
+  Future<void> open() async {
     if (_controller != null) {
       await _controller!.show();
-      await pushSnapshot(currentSnapshot);
+      await _pousserCourant();
       return;
     }
 
@@ -56,7 +66,12 @@ class PopoutLauncher extends ChangeNotifier {
     // que ce soit — WindowController.create ne garantit que la création de
     // la fenêtre native, pas la fin de l'init Dart côté nouvel engine.
     await Future.delayed(const Duration(milliseconds: 400));
-    await pushSnapshot(currentSnapshot);
+    await _pousserCourant();
+  }
+
+  Future<void> _pousserCourant() async {
+    final instantane = instantaneCourant?.call();
+    if (instantane != null) await pushSnapshot(instantane);
   }
 
   Future<void> pushSnapshot(PopoutSnapshot snapshot) async {
