@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:buzzer_companion/jeu/moteur_quiz.dart';
+import 'package:buzzer_companion/jeu/mots_de_la_fin.dart';
 import 'package:buzzer_companion/protocol.dart';
 import 'package:buzzer_companion/questionnaires/active_questionnaire.dart';
 import 'package:buzzer_companion/questionnaires/questionnaire.dart';
@@ -285,6 +286,33 @@ void main() {
       moteur.terminer();
       expect(materiel.desarmements, greaterThan(avant));
       expect(materiel.leds.last, 0);
+    });
+  });
+
+  group('Le mot de la fin', () {
+    setUp(() => moteur = creer());
+
+    // Tire UNE SEULE FOIS, a la fin de la partie. L'ecran public le recoit
+    // dans l'instantane ; le retirer a chaque reconstruction de la fenetre le
+    // ferait clignoter devant la salle.
+    test('une victoire et une égalité ne piochent pas dans la même liste', () {
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.surBuzz(1, 300);
+      moteur.bonneReponse();
+      moteur.terminer();
+      expect(moteur.gagnant, 1);
+      expect(motsDeVictoire, contains(moteur.motFinal));
+
+      final autre = creer();
+      autre.demarrer(jeuChoisi: 0, limite: 0);
+      autre.terminer();       // personne n'a marqué : tout le monde à zéro
+      expect(autre.egalite, isTrue);
+      expect(motsDEgalite, contains(autre.motFinal));
+    });
+
+    test('rien à dire tant que la partie tourne', () {
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      expect(moteur.motFinal, isEmpty);
     });
   });
 }

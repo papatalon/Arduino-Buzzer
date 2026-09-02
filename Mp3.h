@@ -12,6 +12,11 @@
 
 #define INIT_FOLDER 1
 #define BUZZER_FOLDER 2
+// Duree maxi d'un son de buzzer. Les fichiers de la carte SD vont de la demi
+// seconde a une dizaine de secondes ; laisses entiers, les plus longs
+// couvrent la question suivante. L'application applique la meme limite a sa
+// propre bibliotheque (voir SoundEngine).
+#define BUZZ_MAX_MS 2000
 #define GOOD_FOLDER 3
 #define BAD_FOLDER 4
 #define WAITING_FOLDER 5
@@ -43,6 +48,15 @@ class Mp3 {
     // plus aucun repere pour se caler sur la musique.
     // Toujours faux en simulation (aucun module -> BUSY indisponible).
     bool isBusy();
+
+    // A appeler a chaque tour de boucle : coupe un son de buzzer qui depasse
+    // BUZZ_MAX_MS. Certains fichiers de la carte durent plusieurs secondes,
+    // ce qui couvre la question suivante et retarde toute la soiree.
+    void tick();
+
+    // Coupe net ce qui joue. Sert quand l'application ecourte l'ouverture :
+    // le chenillard s'arrete, la musique doit s'arreter avec lui.
+    void stopNow();
     bool isSimulation();
 
     // Vrai quand l'app joue les sons a notre place : le Mega ne gere plus
@@ -129,6 +143,9 @@ class Mp3 {
     int buzzerSound[4];
 
     DFRobotDFPlayerMini mp3;
+
+    // Depart du son de buzzer en cours, ou 0 si aucun n'est a surveiller.
+    unsigned long buzzStartedAt = 0;
     SoftwareSerial softwareSerialMP3;
     BleLink& ble = BleLink::shared();
     Mp3(const Mp3&) = delete;

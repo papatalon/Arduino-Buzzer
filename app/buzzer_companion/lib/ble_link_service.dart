@@ -440,6 +440,11 @@ class BleLinkService extends ChangeNotifier implements CommandesBuzzer {
         'SND|$action|$buzzerId',
       );
 
+  // Ouvert a Sonorisation, qui route les sons de partie vers le buzzer quand
+  // c'est lui qui porte la sortie audio.
+  Future<void> sendSoundCommand(String action, int buzzerId) =>
+      _sendSoundCommand(action, buzzerId);
+
   Future<void> buzzerSoundShuffle() => _sendSoundCommand('S', -1);
   Future<void> buzzerSoundNext(int buzzerId) => _sendSoundCommand('N', buzzerId);
   Future<void> buzzerSoundPrevious(int buzzerId) => _sendSoundCommand('P', buzzerId);
@@ -467,7 +472,7 @@ class BleLinkService extends ChangeNotifier implements CommandesBuzzer {
   // [masque] : bit 0 = rouge ... bit 3 = vert.
   @override
   Future<void> armer(int masque) => _writeUartLine(connectedDeviceId,
-      _uartServiceId, _uartCharacteristicId, 'ARM|');
+      _uartServiceId, _uartCharacteristicId, 'ARM|$masque');
 
   @override
   Future<void> desarmer() => _writeUartLine(
@@ -475,7 +480,7 @@ class BleLinkService extends ChangeNotifier implements CommandesBuzzer {
 
   @override
   Future<void> allumerLeds(int masque) => _writeUartLine(connectedDeviceId,
-      _uartServiceId, _uartCharacteristicId, 'LED|');
+      _uartServiceId, _uartCharacteristicId, 'LED|$masque');
 
   // Demande le depart au buzzer, sans le faire naviguer dans ses menus.
   //

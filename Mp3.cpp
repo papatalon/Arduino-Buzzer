@@ -275,6 +275,9 @@ bool Mp3::isSimulation() {
 void Mp3::playInit() {
   if (delegateToApp("INTRO")) return;
 
+  // Ces sons-la ont le droit de durer : on cesse de surveiller le buzz.
+  buzzStartedAt = 0;
+
   int arraySize = mp3Arrays[INIT_FOLDER - 1].size;
   int fileNumber = random(arraySize) + 1;   // fichiers DFPlayer numérotés à partir de 1
 
@@ -320,6 +323,26 @@ void Mp3::playBuzzerSound(int soundIndex) {
   }
 
   mp3.playFolder(BUZZER_FOLDER, soundIndex + 1);
+  buzzStartedAt = millis();
+}
+
+// Coupe net ce qui joue, quel que soit le son.
+void Mp3::stopNow() {
+  buzzStartedAt = 0;
+  if (simulation) return;
+  mp3.stop();
+}
+
+// Coupe un son de buzzer trop long. Appele a chaque tour de boucle.
+//
+// Seuls les sons de BUZZER sont surveilles : une musique d'intro ou un son
+// d'attente doit pouvoir durer, c'est meme leur role.
+void Mp3::tick() {
+  if (buzzStartedAt == 0) return;
+  if (millis() - buzzStartedAt < BUZZ_MAX_MS) return;
+  buzzStartedAt = 0;
+  if (simulation) return;
+  mp3.stop();
 }
 
 int Mp3::buzzerSoundPoolSize() {
@@ -351,6 +374,9 @@ void Mp3::playDecoySound(int soundIndex) {
 void Mp3::playGoodAnswer() {
   if (delegateToApp("GOOD")) return;
 
+  // Ces sons-la ont le droit de durer : on cesse de surveiller le buzz.
+  buzzStartedAt = 0;
+
   int arraySize = mp3Arrays[GOOD_FOLDER - 1].size;
   int fileNumber;
   do {
@@ -370,6 +396,9 @@ void Mp3::playGoodAnswer() {
 
 void Mp3::playBadAnswer() {
   if (delegateToApp("BAD")) return;
+
+  // Ces sons-la ont le droit de durer : on cesse de surveiller le buzz.
+  buzzStartedAt = 0;
 
   int arraySize = mp3Arrays[BAD_FOLDER - 1].size;
   int fileNumber;
@@ -391,6 +420,9 @@ void Mp3::playBadAnswer() {
 // Son d'ambiance lancé par l'animateur quand la réponse tarde à venir.
 void Mp3::playWaiting() {
   if (delegateToApp("WAIT")) return;
+
+  // Ces sons-la ont le droit de durer : on cesse de surveiller le buzz.
+  buzzStartedAt = 0;
 
   int arraySize = mp3Arrays[WAITING_FOLDER - 1].size;
   if (arraySize <= 0) {
@@ -416,6 +448,9 @@ void Mp3::playWaiting() {
 // Un seul fichier pour l'instant : pas de tirage, on rejoue toujours le même.
 void Mp3::playSpin() {
   if (delegateToApp("SPIN")) return;
+
+  // Ces sons-la ont le droit de durer : on cesse de surveiller le buzz.
+  buzzStartedAt = 0;
 
   sendSoundEvent(SPIN_FOLDER, 1);
   if (simulation) {

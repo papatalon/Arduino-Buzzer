@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+import '../audio/sonorisation.dart';
 import '../broadsheet/boutons.dart';
+import '../ble_link_service.dart';
+import '../broadsheet/screens/game_choice_screen.dart';
+import '../broadsheet/source_questions.dart';
 import '../broadsheet/tokens.dart';
 import '../protocol.dart';
 import '../questionnaires/active_questionnaire.dart';
@@ -53,12 +57,18 @@ class ConsoleQuizApp extends StatelessWidget {
     required this.actif,
     required this.teams,
     required this.onAllerAuxQuestions,
+    required this.sons,
+    required this.game,
+    required this.ble,
   });
 
   final MoteurQuiz moteur;
   final ActiveQuestionnaire actif;
   final TeamNames teams;
   final VoidCallback onAllerAuxQuestions;
+  final Sonorisation sons;
+  final GameState game;
+  final BleLinkService ble;
 
   @override
   Widget build(BuildContext context) {
@@ -72,10 +82,13 @@ class ConsoleQuizApp extends StatelessWidget {
               EtapeQuiz.repos => _Lancement(
                   moteur: moteur,
                   actif: actif,
+                  game: game,
+                  ble: ble,
                   onAllerAuxQuestions: onAllerAuxQuestions,
                 ),
+              EtapeQuiz.intro => _Ouverture(moteur: moteur),
               EtapeQuiz.finie => _FinDePartie(moteur: moteur, teams: teams),
-              _ => _EnPartie(moteur: moteur, actif: actif, teams: teams),
+              _ => _EnPartie(moteur: moteur, actif: actif, teams: teams, sons: sons),
             },
           ),
         );
@@ -90,11 +103,15 @@ class _Lancement extends StatefulWidget {
   const _Lancement({
     required this.moteur,
     required this.actif,
+    required this.game,
+    required this.ble,
     required this.onAllerAuxQuestions,
   });
 
   final MoteurQuiz moteur;
   final ActiveQuestionnaire actif;
+  final GameState game;
+  final BleLinkService ble;
   final VoidCallback onAllerAuxQuestions;
 
   @override
@@ -102,11 +119,18 @@ class _Lancement extends StatefulWidget {
 }
 
 class _LancementState extends State<_Lancement> {
-  int? _jeu;
   int _premiere = 20;
   int _suivantes = 10;
 
+  // LE JEU N'EST PAS CHOISI ICI. Il l'est sur l'ecran « Jeu actif », et cet
+  // ecran-ci ne fait que le lire. Redemander un choix deja fait, c'etait
+  // remettre deux endroits sur la meme decision.
+  int? get _jeu => widget.moteur.jeuChoisi;
+
   bool get _chrono => _jeu == 2 || _jeu == 3 || _jeu == 4;
+
+  // Les cinq jeux de questions. Les six autres tournent encore sur le buzzer.
+  bool get _estQuiz => _jeu != null && _jeu! >= 0 && _jeu! <= 4;
 
   @override
   Widget build(BuildContext context) {
@@ -125,25 +149,46 @@ class _LancementState extends State<_Lancement> {
         const SizedBox(height: BSSpace.s6),
         Container(height: 2, color: BSColors.text),
         const SizedBox(height: BSSpace.s4),
-
-        // D'où viennent les questions. Sans ça, « Lancer » démarrerait une
-        // partie sans matière et l'animateur ne le découvrirait qu'après.
-        Text('LES QUESTIONS', style: BSType.sectionKicker()),
-        const SizedBox(height: BSSpace.s2),
-        _SourceQuestions(
-            actif: actif, onAllerAuxQuestions: widget.onAllerAuxQuestions),
-        const SizedBox(height: BSSpace.s6),
-
+        // LE JEU D'ABORD. Les questions ne se posent qu'une fois qu'on sait
+        // s'il y en aura : six des onze jeux n'en ont aucune, et les
+        // reclamer avant le choix etait le flux a l'envers.
         Text('LE JEU', style: BSType.sectionKicker()),
         const SizedBox(height: BSSpace.s2),
-        for (final j in _jeuxQuiz) ...[
-          _CarteJeu(
-            nom: j.nom,
-            quoi: j.quoi,
-            choisi: _jeu == j.index,
-            onTap: () => setState(() => _jeu = j.index),
+        if (_jeu == null)
+          GrilleDesJeux(
+            game: widget.game,
+            ble: widget.ble,
+            moteur: widget.moteur,
+            onChoisi: () => setState(() {}),
+          )
+        else ...[
+          // Une fois le jeu retenu, les dix autres explications n'ont plus
+          // rien a apprendre a personne : elles noyaient le seul
+          // renseignement qui compte a ce moment-la.
+          _JeuChoisi(
+            nom: gameModeName(_jeu),
+            regle: _estQuiz
+                ? _jeuxQuiz.firstWhere((j) => j.index == _jeu).quoi
+                : null,
+            onChanger: () => setState(widget.moteur.oublierJeu),
           ),
-          const SizedBox(height: BSSpace.s2),
+          const SizedBox(height: BSSpace.s6),
+
+          // D'ou viennent les questions. Seuls les cinq jeux de quiz en ont
+          // besoin ; sans ca, « Lancer » demarrerait une partie sans matiere
+          // et l'animateur ne le decouvrirait qu'apres.
+          if (_estQuiz) ...[
+            Text('LES QUESTIONS', style: BSType.sectionKicker()),
+            const SizedBox(height: BSSpace.s2),
+            SourceQuestionnaire(
+                actif: actif, onChoisir: widget.onAllerAuxQuestions),
+            const SizedBox(height: BSSpace.s2),
+            SourceLibre(actif: actif),
+            if (actif.libre) ...[
+              const SizedBox(height: BSSpace.s4),
+              NombreLibre(actif: actif, parDefaut: kNombreLibreParDefaut),
+            ],
+          ],
         ],
 
         if (_chrono) ...[
@@ -173,7 +218,7 @@ class _LancementState extends State<_Lancement> {
           children: [
             BSPrimaryButton(
               label: 'Lancer la partie',
-              onPressed: (_jeu == null || !actif.pretAJouer)
+              onPressed: (!_estQuiz || !actif.pretAJouer)
                   ? null
                   : () {
                       final m = widget.moteur;
@@ -183,11 +228,11 @@ class _LancementState extends State<_Lancement> {
                     },
             ),
             const SizedBox(width: BSSpace.s3),
-            if (_jeu == null || !actif.pretAJouer)
+            if (!_estQuiz || !actif.pretAJouer)
               Expanded(
                 child: Text(
-                  _jeu == null
-                      ? 'Choisir un jeu pour continuer'
+                  !_estQuiz
+                      ? 'Choisir un jeu de questions pour continuer'
                       : 'Choisir un questionnaire ou une manche libre',
                   style: BSType.body(size: 15, color: BSColors.neutral600),
                 ),
@@ -208,87 +253,49 @@ class _LancementState extends State<_Lancement> {
   }
 }
 
-class _SourceQuestions extends StatelessWidget {
-  const _SourceQuestions(
-      {required this.actif, required this.onAllerAuxQuestions});
-
-  final ActiveQuestionnaire actif;
-  final VoidCallback onAllerAuxQuestions;
-
-  @override
-  Widget build(BuildContext context) {
-    final String quoi;
-    if (actif.libre) {
-      final n = actif.nombreLibre;
-      quoi = n == null
-          ? "Manche libre, sans limite. Vous posez les questions, l'app compte les points."
-          : "Manche libre de $n question${n > 1 ? 's' : ''}. Vous posez les questions, l'app compte les points.";
-    } else if (actif.active) {
-      quoi =
-          '${actif.title} : ${actif.total} question${actif.total > 1 ? 's' : ''}';
-    } else {
-      quoi = 'Aucun questionnaire choisi.';
-    }
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(
-          child: Text(
-            quoi,
-            style: BSType.body(
-              size: 17,
-              color: actif.pretAJouer ? BSColors.text : BSColors.neutral600,
-            ),
-          ),
-        ),
-        const SizedBox(width: BSSpace.s3),
-        BSGhostButton(
-          label: actif.pretAJouer ? 'Changer' : 'Choisir',
-          onPressed: onAllerAuxQuestions,
-        ),
-      ],
-    );
-  }
-}
-
-class _CarteJeu extends StatelessWidget {
-  const _CarteJeu({
-    required this.nom,
-    required this.quoi,
-    required this.choisi,
-    required this.onTap,
-  });
+// LE JEU RETENU, et lui seul.
+//
+// Il prend la place de la liste : nom en grand, filet magenta, et sa regle
+// rappelee dessous. L'animateur doit voir d'un coup d'oeil ce qu'il s'apprete
+// a lancer, sans le chercher parmi quatre explications qui ne le concernent
+// plus.
+class _JeuChoisi extends StatelessWidget {
+  const _JeuChoisi({required this.nom, required this.regle, required this.onChanger});
 
   final String nom;
-  final String quoi;
-  final bool choisi;
-  final VoidCallback onTap;
+  /// Null pour les six jeux que le buzzer mene encore lui-meme.
+  final String? regle;
+  final VoidCallback onChanger;
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      child: Container(
-        width: 620,
-        padding: const EdgeInsets.symmetric(
-            horizontal: BSSpace.s3, vertical: BSSpace.s3),
-        decoration: BoxDecoration(
-          color: choisi ? BSColors.accent100 : Colors.transparent,
-          border: Border(
-            left: BorderSide(
-              color: choisi ? BSColors.accent : BSColors.divider,
-              width: choisi ? 5 : 1,
-            ),
+    return Container(
+      width: 620,
+      padding: const EdgeInsets.fromLTRB(BSSpace.s3, BSSpace.s3, BSSpace.s3, BSSpace.s4),
+      decoration: const BoxDecoration(
+        color: BSColors.accent100,
+        border: Border(left: BorderSide(color: BSColors.accent, width: 5)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Text(nom, style: BSType.buzzerNameConsole(size: 32)),
+              ),
+              BSGhostButton(label: 'Changer de jeu', onPressed: onChanger),
+            ],
           ),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(nom, style: BSType.buzzerNameConsole(size: 20)),
-            const SizedBox(height: 2),
-            Text(quoi, style: BSType.body(size: 15, color: BSColors.neutral700)),
-          ],
-        ),
+          const SizedBox(height: BSSpace.s2),
+          const SizedBox(width: 72, height: 3, child: ColoredBox(color: BSColors.accent2)),
+          const SizedBox(height: BSSpace.s3),
+          Text(
+            regle ?? "Ce jeu est mene par le buzzer, pas encore par l'application.",
+            style: BSType.body(size: 17, color: BSColors.text),
+          ),
+        ],
       ),
     );
   }
@@ -336,12 +343,17 @@ class _Compteur extends StatelessWidget {
 // --- Pendant la partie ---------------------------------------------------
 
 class _EnPartie extends StatelessWidget {
-  const _EnPartie(
-      {required this.moteur, required this.actif, required this.teams});
+  const _EnPartie({
+    required this.moteur,
+    required this.actif,
+    required this.teams,
+    required this.sons,
+  });
 
   final MoteurQuiz moteur;
   final ActiveQuestionnaire actif;
   final TeamNames teams;
+  final Sonorisation sons;
 
   @override
   Widget build(BuildContext context) {
@@ -355,7 +367,7 @@ class _EnPartie extends StatelessWidget {
         _Question(actif: actif, revelee: revelee),
         const SizedBox(height: BSSpace.s6),
         switch (moteur.etape) {
-          EtapeQuiz.attente => _Attente(moteur: moteur, teams: teams),
+          EtapeQuiz.attente => _Attente(moteur: moteur, teams: teams, sons: sons),
           EtapeQuiz.buzze => _Juger(moteur: moteur, teams: teams),
           EtapeQuiz.scores => _Scores(moteur: moteur, teams: teams),
           EtapeQuiz.revelee => _Revelation(moteur: moteur),
@@ -456,9 +468,10 @@ class _Question extends StatelessWidget {
 }
 
 class _Attente extends StatelessWidget {
-  const _Attente({required this.moteur, required this.teams});
+  const _Attente({required this.moteur, required this.teams, required this.sons});
   final MoteurQuiz moteur;
   final TeamNames teams;
+  final Sonorisation sons;
 
   @override
   Widget build(BuildContext context) {
@@ -493,12 +506,22 @@ class _Attente extends StatelessWidget {
         const SizedBox(height: BSSpace.s4),
         if (moteur.utiliseChrono) _Chrono(moteur: moteur),
         const SizedBox(height: BSSpace.s3),
-        Row(
+        // Wrap et non Row : des boutons de cette taille debordent d'une
+        // colonne etroite, et un bouton coupe est un bouton qu'on rate.
+        Wrap(
+          spacing: BSSpace.s4,
+          runSpacing: BSSpace.s3,
+          crossAxisAlignment: WrapCrossAlignment.center,
           children: [
             BSSecondaryButton(
               label: 'Personne ne trouve',
               onPressed: moteur.passer,
+              grand: true,
             ),
+            // Son d'ambiance pendant que la reponse se fait attendre. Il sort
+            // la ou l'operateur a choisi, PC ou buzzer : le bouton ne decide
+            // pas de la sortie (voir Sonorisation).
+            BSGhostButton(label: "Son d'attente", onPressed: sons.attente),
           ],
         ),
       ],
@@ -524,8 +547,10 @@ class _Chrono extends StatelessWidget {
     if (moteur.chronoPremiere <= 0) return const SizedBox.shrink();
     // Le « top » de l'animateur : il vient de lire la question, le chrono ne
     // peut pas partir avant lui.
-    return BSSecondaryButton(
-        label: 'Lancer le chrono', onPressed: moteur.lancerChronoPremiere);
+    return BSPrimaryButton(
+        label: 'Lancer le chrono',
+        onPressed: moteur.lancerChronoPremiere,
+        grand: true);
   }
 }
 
@@ -549,16 +574,27 @@ class _Juger extends StatelessWidget {
           ],
         ),
         const SizedBox(height: BSSpace.s4),
-        Row(
+        // Wrap et non Row : ces boutons debordent d'une colonne etroite, et un
+        // bouton coupe est un bouton qu'on rate.
+        Wrap(
+          spacing: BSSpace.s6,
+          runSpacing: BSSpace.s3,
+          crossAxisAlignment: WrapCrossAlignment.center,
           children: [
             BSPrimaryButton(
-                label: 'Bonne réponse', onPressed: moteur.bonneReponse),
-            const SizedBox(width: BSSpace.s3),
+              label: 'Bonne réponse',
+              onPressed: moteur.bonneReponse,
+              grand: true,
+            ),
+            // Un vrai ecart entre les deux jugements, et une couleur qui les
+            // separe : se tromper ici retire ou donne un point devant tout le
+            // monde, et il faut ensuite corriger a la vue de la salle.
             BSSecondaryButton(
               label: moteur.estPenalite ? 'Mauvaise (-1)' : 'Mauvaise réponse',
               onPressed: moteur.mauvaiseReponse,
+              grand: true,
+              teinte: BSColors.accent2,
             ),
-            const SizedBox(width: BSSpace.s3),
             BSGhostButton(
                 label: 'Personne ne trouve', onPressed: moteur.passer),
           ],
@@ -622,6 +658,7 @@ class _BoutonSuivante extends StatelessWidget {
     return BSPrimaryButton(
       label: derniere ? 'Voir le résultat' : 'Question suivante',
       onPressed: moteur.continuer,
+      grand: true,
     );
   }
 }
@@ -686,11 +723,70 @@ class _FinDePartie extends StatelessWidget {
         else if (moteur.egalite)
           Text('Plusieurs buzzers sont à égalité.',
               style: BSType.body(size: 17, color: BSColors.neutral700)),
+        if (moteur.motFinal.isNotEmpty) ...[
+          const SizedBox(height: BSSpace.s3),
+          // La meme phrase que la salle voit, pour que l'animateur sache ce
+          // qui est projete derriere lui.
+          SizedBox(
+            width: 620,
+            child: Text(moteur.motFinal,
+                style: BSType.body(size: 17, color: BSColors.neutral600)),
+          ),
+        ],
         const SizedBox(height: BSSpace.s6),
         _TableauScores(moteur: moteur, teams: teams),
         const SizedBox(height: BSSpace.s6),
         BSPrimaryButton(
-            label: 'Nouvelle partie', onPressed: moteur.retourAuMenu),
+            label: 'Nouvelle partie',
+            onPressed: moteur.retourAuMenu,
+            grand: true),
+      ],
+    );
+  }
+}
+
+// --- Ouverture -----------------------------------------------------------
+
+// Pendant la musique et le chenillard. Rien à décider, mais de quoi écourter :
+// l'animateur peut vouloir enchaîner sans attendre la fin du morceau, et si le
+// son sort du buzzer l'application ne sait pas quand il finit.
+class _Ouverture extends StatelessWidget {
+  const _Ouverture({required this.moteur});
+  final MoteurQuiz moteur;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(gameModeName(moteur.jeu).toUpperCase(), style: BSType.sectionKicker()),
+        const SizedBox(height: BSSpace.s2),
+        Text(
+          moteur.ouvertureTerminee ? 'Prêt à commencer' : 'Ouverture',
+          style: BSType.questionConsole(),
+        ),
+        const SizedBox(height: BSSpace.s3),
+        Text(
+          moteur.ouvertureTerminee
+              ? "La première question part quand vous le dites. Prenez le "
+                  "temps d'accueillir la salle : l'écran public tient tout seul."
+              : 'La musique joue et les boutons défilent.',
+          style: BSType.body(size: 17, color: BSColors.neutral700),
+        ),
+        const SizedBox(height: BSSpace.s6),
+        if (moteur.ouvertureTerminee)
+          BSPrimaryButton(
+            label: 'Lancer la première question',
+            onPressed: moteur.commencerLesQuestions,
+            grand: true,
+          )
+        else
+          BSSecondaryButton(
+            label: "Écourter l'ouverture",
+            onPressed: moteur.commencerLesQuestions,
+            grand: true,
+          ),
       ],
     );
   }

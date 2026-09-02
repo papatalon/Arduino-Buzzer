@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:buzzer_companion/jeu/moteur_quiz.dart';
+import 'package:buzzer_companion/jeu/mots_de_la_fin.dart';
 import 'package:buzzer_companion/popout/popout_content.dart';
 import 'package:buzzer_companion/popout/popout_snapshot.dart';
 import 'package:buzzer_companion/protocol.dart';
@@ -143,5 +144,114 @@ void main() {
       ),
     );
     expect(find.text("LE JEU S'EN VIENT"), findsOneWidget);
+  });
+
+  // ECARTE POUR CETTE QUESTION. Une mauvaise reponse met son auteur hors jeu
+  // jusqu'a la suivante. Sans mention, la salle regarde quelqu'un attendre
+  // sans comprendre qu'il ne joue plus ce tour-ci.
+  testWidgets('un buzzer ecarte est marque, puis ne l\'est plus', (tester) async {
+    final actif = ActiveQuestionnaire(GameState())
+      ..use(
+        Questionnaire(title: 'Essai', questions: [
+          QuizQuestion(question: 'Q1', answer: 'R1'),
+          QuizQuestion(question: 'Q2', answer: 'R2'),
+        ]),
+        origine: 'Essai',
+      );
+    final moteur = MoteurQuiz(ble: _MaterielMuet(), actif: actif)
+      ..demarrer(jeuChoisi: 0, limite: 2);
+
+    PopoutSnapshot vu() => PopoutSnapshot.duMoteur(
+          moteur,
+          GameState(),
+          question: actif.current,
+          teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
+          logoPath: null,
+          recallIndex: null,
+        );
+
+    moteur.surBuzz(1, 300);
+    moteur.mauvaiseReponse();
+    await rendre(tester, vu());
+    expect(find.text('ÉCARTÉ'), findsOneWidget);
+
+    // Question tranchee : plus personne n'est ecarte, la mention disparait
+    // au lieu de rester affichee a tort.
+    moteur.surBuzz(0, 300);
+    moteur.bonneReponse();
+    await rendre(tester, vu());
+    expect(find.text('ÉCARTÉ'), findsNothing);
+  });
+
+  // MANCHE LIBRE : l'animateur pose ses propres questions. L'ecran public
+  // n'a aucun texte a projeter, et rester vide au moment ou la salle doit
+  // ecouter ressemble a une panne.
+  testWidgets('manche libre : une phrase remplace la question', (tester) async {
+    final actif = ActiveQuestionnaire(GameState())..utiliserLibre(nombre: 3);
+    final moteur = MoteurQuiz(ble: _MaterielMuet(), actif: actif)
+      ..demarrer(jeuChoisi: 0, limite: 3);
+
+    expect(moteur.motAttention, isNotEmpty);
+    expect(motsDattention, contains(moteur.motAttention));
+
+    await rendre(
+      tester,
+      PopoutSnapshot.duMoteur(
+        moteur,
+        GameState(),
+        question: actif.current,
+        teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
+        logoPath: null,
+        recallIndex: null,
+      ),
+    );
+    expect(find.text(moteur.motAttention), findsOneWidget);
+  });
+
+  testWidgets('avec un questionnaire, aucune phrase de remplacement',
+      (tester) async {
+    final actif = ActiveQuestionnaire(GameState())
+      ..use(
+        Questionnaire(title: 'Essai', questions: [
+          QuizQuestion(question: 'Qui donc ?', answer: 'Lui'),
+        ]),
+        origine: 'Essai',
+      );
+    final moteur = MoteurQuiz(ble: _MaterielMuet(), actif: actif)
+      ..demarrer(jeuChoisi: 0, limite: 1);
+    expect(moteur.motAttention, isEmpty);
+  });
+
+  // LE CHRONO DOIT SE VOIR DE LA SALLE. Il ne servait qu'a l'animateur : le
+  // public voyait « CHRONO NON LANCE » et une barre grise figee, meme pendant
+  // le decompte. C'est pourtant lui qui pousse les joueurs a se decider.
+  testWidgets('le decompte s\'affiche sur l\'ecran public', (tester) async {
+    final actif = ActiveQuestionnaire(GameState())
+      ..use(
+        Questionnaire(title: 'Essai', questions: [
+          QuizQuestion(question: 'Qui donc ?', answer: 'Lui'),
+        ]),
+        origine: 'Essai',
+      );
+    final moteur = MoteurQuiz(ble: _MaterielMuet(), actif: actif)
+      ..chronoPremiere = 20
+      ..chronoSuivantes = 10;
+    moteur.demarrer(jeuChoisi: 2, limite: 1);   // Chrono classique
+    moteur.lancerChronoPremiere();
+
+    await rendre(
+      tester,
+      PopoutSnapshot.duMoteur(
+        moteur,
+        GameState(),
+        question: actif.current,
+        teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
+        logoPath: null,
+        recallIndex: null,
+      ),
+    );
+    expect(find.text('20 s'), findsOneWidget);
+    expect(find.text('CHRONO NON LANCÉ'), findsNothing);
+    moteur.dispose();
   });
 }

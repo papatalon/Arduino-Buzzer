@@ -302,6 +302,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
           // monde, le modifier sur un poste n'aurait aucun sens.
           readOnly: entry != null,
           origine: entry?.collection,
+          pourLaPartie: widget.pourLaPartie,
           onBack: _close,
           onChanged: _touch,
           onSave: _save,
@@ -1123,6 +1124,7 @@ class _Editor extends StatelessWidget {
     required this.onDelete,
     required this.readOnly,
     required this.origine,
+    required this.pourLaPartie,
   });
 
   final Questionnaire questionnaire;
@@ -1136,6 +1138,11 @@ class _Editor extends StatelessWidget {
   final VoidCallback onUseForGame;
   final VoidCallback onExport;
   final VoidCallback? onDelete;
+  // Arrive depuis le lancement d'une partie : on ne vient chercher qu'une
+  // chose, le questionnaire a jouer. Tout ce qui touche a la GESTION des
+  // fichiers (dupliquer, exporter, supprimer) est du bruit a ce moment-la,
+  // et « Utiliser pour la partie » devient l'action principale.
+  final bool pourLaPartie;
   // Consultation : le questionnaire vient du catalogue. Les champs sont figés
   // et il n'y a ni Enregistrer, ni Renommer, ni Supprimer.
   final bool readOnly;
@@ -1192,6 +1199,24 @@ class _Editor extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: BSSpace.s3),
+              // ARRIVE DEPUIS LE LANCEMENT D'UNE PARTIE : une seule action.
+              //
+              // L'animateur est venu chercher un questionnaire, pas gerer ses
+              // fichiers. Dupliquer, exporter et supprimer n'ont rien a faire
+              // la, et « Utiliser pour la partie » prend l'habit du bouton
+              // principal parce que c'est la seule chose a faire ici.
+              if (pourLaPartie)
+                FilledButton(
+                  onPressed: onUseForGame,
+                  style: FilledButton.styleFrom(
+                    backgroundColor: BSColors.accent,
+                    foregroundColor: BSColors.bg,
+                    shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                    padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+                  ),
+                  child: const Text('Utiliser pour la partie'),
+                )
+              else ...[
               if (readOnly) ...[
                 Padding(
                   padding: const EdgeInsets.only(right: BSSpace.s2),
@@ -1262,6 +1287,7 @@ class _Editor extends StatelessWidget {
                   style: TextButton.styleFrom(foregroundColor: BSColors.neutral600),
                   child: const Text('Supprimer'),
                 ),
+              ],
             ],
           ),
           const SizedBox(height: BSSpace.s2),

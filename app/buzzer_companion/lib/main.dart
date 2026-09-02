@@ -6,11 +6,13 @@ import 'package:flutter/material.dart';
 import 'package:window_manager/window_manager.dart';
 
 import 'audio/sound_engine.dart';
+import 'audio/sonorisation.dart';
 import 'audio/sound_library.dart';
 import 'ble_link_service.dart';
 import 'broadsheet/console_shell.dart';
 import 'broadsheet/tokens.dart';
 import 'event_logo.dart';
+import 'jeu/animation_tirage.dart';
 import 'jeu/moteur_quiz.dart';
 import 'popout/popout_launcher.dart';
 import 'popout/popout_snapshot.dart';
@@ -68,6 +70,8 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   final _catalogue = CatalogueStore();
   late final ActiveQuestionnaire _actif;
   late final MoteurQuiz _moteur;
+  late final Sonorisation _sons;
+  late final AnimationTirage _tirage;
   final _version = VersionCheck();
   late final Simulateur _simulateur;
   late final SoundEngine _sound;
@@ -84,18 +88,6 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     _game.addListener(_pushSnapshotToPopout);
     _actif = ActiveQuestionnaire(_game);
     _simulateur = Simulateur(_game);
-
-    // LE MOTEUR DE JEU DE L'APPLICATION. En mode application, le buzzer ne
-    // garde aucun état de partie : il arme des boutons et rapporte les appuis.
-    // C'est ici que vivent la question courante, les scores et la fin de
-    // partie (voir MoteurQuiz).
-    _moteur = MoteurQuiz(ble: _ble, actif: _actif);
-    _moteur.addListener(_pushSnapshotToPopout);
-    _buzzSub = _game.buzzEvents.listen((e) => _moteur.surBuzz(e.buzzer, e.ms));
-    // La présence des buzzers reste une observation du matériel : le moteur
-    // ne peut pas armer un buzzer qui n'est pas là.
-    _game.addListener(_suivrePresence);
-
     // Moteur de son : joue la bibliothèque embarquée à la place du DFPlayer
     // et renvoie au Mega son état de lecture, qui remplace la broche BUSY
     // (voir SoundEngine).
@@ -106,6 +98,29 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     _sound.init();
     // Le rappel des sons se voit sur l'écran public : ses changements
     // doivent donc pousser un instantané, comme ceux du jeu.
+    _sound.addListener(_pushSnapshotToPopout);
+    // Une seule façon de jouer un son de partie. Elle suit le réglage de
+    // sortie audio choisi sur l'écran Buzzers : haut-parleurs du PC ou
+    // haut-parleur du buzzer (voir Sonorisation). Créée avant le moteur de
+    // jeu, qui s'en sert.
+    _sons = Sonorisation(locale: _sound, ble: _ble);
+    // Le tirage au sort anime : chenillard qui ralentit, cale sur son bruitage.
+    // Partage, parce que deux moments s'en servent : melanger les sons des
+    // buzzers, et designer qui ouvre une manche de Vol.
+    _tirage = AnimationTirage(ble: _ble, sons: _sons);
+
+    // LE MOTEUR DE JEU DE L'APPLICATION. En mode application, le buzzer ne
+    // garde aucun état de partie : il arme des boutons et rapporte les appuis.
+    // C'est ici que vivent la question courante, les scores et la fin de
+    // partie (voir MoteurQuiz).
+    _moteur = MoteurQuiz(ble: _ble, actif: _actif, sons: _sons);
+    _moteur.tirage = _tirage;
+    _moteur.addListener(_pushSnapshotToPopout);
+    _buzzSub = _game.buzzEvents.listen((e) => _moteur.surBuzz(e.buzzer, e.ms));
+    // La présence des buzzers reste une observation du matériel : le moteur
+    // ne peut pas armer un buzzer qui n'est pas là.
+    _game.addListener(_suivrePresence);
+
     _sound.addListener(_pushSnapshotToPopout);
     _teams.load();
     _teams.addListener(_pushSnapshotToPopout);
@@ -222,6 +237,8 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
         catalogue: _catalogue,
         actif: _actif,
         moteur: _moteur,
+        sons: _sons,
+        tirage: _tirage,
         version: _version,
         simulateur: _simulateur,
       ),

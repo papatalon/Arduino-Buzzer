@@ -2,6 +2,9 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 
+import '../audio/sonorisation.dart';
+import 'animation_tirage.dart';
+import 'mots_de_la_fin.dart';
 import '../questionnaires/active_questionnaire.dart';
 
 // Les trois seules choses que le moteur demande au materiel. Un contrat aussi
@@ -40,6 +43,10 @@ enum EtapeQuiz {
   /// Rien en cours. On est au choix du jeu ou avant le lancement.
   repos,
 
+  /// Ouverture : musique et chenillard sur les boutons, avant la premiere
+  /// question. C'est le moment ou la salle comprend que ca commence.
+  intro,
+
   /// Question posée, buzzers armés, on attend un buzz.
   attente,
 
@@ -57,15 +64,48 @@ enum EtapeQuiz {
 }
 
 class MoteurQuiz extends ChangeNotifier {
-  MoteurQuiz({required this.ble, required this.actif});
+  MoteurQuiz({required this.ble, required this.actif, this.sons});
 
   final CommandesBuzzer ble;
+
+  /// De quoi sonner. Facultatif : les regles du jeu ne dependent pas du son,
+  /// et les tests les verifient sans avoir a simuler une carte audio.
+  ///
+  /// Le moteur ne sait pas d'ou sort le son. Il demande « joue une bonne
+  /// reponse » et [Sonorisation] route vers les haut-parleurs du PC ou vers
+  /// le haut-parleur du buzzer, selon le reglage de l'operateur.
+  final Sonorisation? sons;
+
+  /// Le tirage au sort anime, quand il y en a un. Facultatif comme [sons] :
+  /// les regles du jeu ne dependent pas d'une animation.
+  AnimationTirage? tirage;
   final ActiveQuestionnaire actif;
 
   EtapeQuiz etape = EtapeQuiz.repos;
 
   /// Index du jeu choisi (0-4 : Classique, Pénalité, Chrono ×2, Vol).
   int? jeu;
+
+  /// Le jeu retenu par l'animateur, AVANT le lancement.
+  ///
+  /// Distinct de [jeu], qui est celui de la partie en cours. Il se choisit
+  /// sur l'ecran « Jeu actif » et nulle part ailleurs : l'ecran de lancement
+  /// le lit, il ne le redemande pas. Le buzzer n'en garde aucune trace quand
+  /// l'application mene.
+  int? jeuChoisi;
+
+  /// Revenir sur son choix, pour rouvrir la grille des jeux.
+  void oublierJeu() {
+    if (jeuChoisi == null) return;
+    jeuChoisi = null;
+    notifyListeners();
+  }
+
+  void choisirJeu(int index) {
+    if (jeuChoisi == index) return;
+    jeuChoisi = index;
+    notifyListeners();
+  }
 
   final List<int> scores = [0, 0, 0, 0];
 
@@ -104,12 +144,21 @@ class MoteurQuiz extends ChangeNotifier {
   int? gagnant;
   bool egalite = false;
 
+  /// La phrase projetee sous le resultat, tiree au sort a la fin de la partie.
+  String motFinal = '';
+
+  /// La phrase projetee a la place de la question, en manche libre.
+  String motAttention = '';
+
   // --- Chrono ------------------------------------------------------------
 
   /// Secondes restantes, ou null si aucun chrono ne tourne.
   int? chronoRestant;
   Timer? _chrono;
   int _chronoTotal = 0;
+
+  /// Duree reglee du chrono en cours, pour dessiner une barre qui se vide.
+  int get chronoTotal => _chronoTotal;
 
   /// Durées réglées par l'animateur, en secondes. Zéro désactive.
   int chronoPremiere = 0;
@@ -150,12 +199,118 @@ class MoteurQuiz extends ChangeNotifier {
     if (estVol) {
       final pool = [for (var i = 0; i < 4; i++) if (presents[i]) i];
       tourVol = pool.isEmpty ? 0 : pool[DateTime.now().microsecond % pool.length];
+      // Le bruitage du tirage NE joue PAS ici : l'ouverture demarre juste
+      // apres, et les deux sons se seraient couverts. Il accompagne
+      // l'animation, au depart de la premiere question (voir
+      // commencerLesQuestions).
+    }
+    // OUVERTURE : musique et chenillard, comme en mode autonome.
+    //
+    // Sans elle, la partie commençait sur une question, sans rien annoncer à
+    // la salle. Le firmware fait ça depuis toujours (Buzzer::ledChase) ; en
+    // mode application c'est au moteur de le faire, puisque c'est lui qui
+    // mène.
+    //
+    // Sautée quand aucune sonorisation n'est branchée : une ouverture
+    // silencieuse n'ouvre rien, et les tests des règles n'ont pas à traverser
+    // une animation pour arriver à la première question.
+    if (sons == null) {
+      questionSuivante();
+      return;
+    }
+    etape = EtapeQuiz.intro;
+    ouvertureTerminee = false;
+    ble.desarmer();
+    sons!.intro();
+    _lancerChenillard();
+    notifyListeners();
+  }
+
+  // --- Ouverture ---------------------------------------------------------
+
+  Timer? _chenillard;
+  int _pasChenillard = 0;
+  DateTime? _debutIntro;
+
+  /// Vitesse du chenillard, en millisecondes par LED. Reprise de
+  /// INTRO_STEP_MS côté firmware, pour que les deux modes aient le même
+  /// rythme.
+  static const _pasMs = 120;
+
+  /// Le firmware attend un peu avant de tester la fin du son, le temps que le
+  /// lecteur démarre (INTRO_START_MS). Même précaution ici, sinon l'ouverture
+  /// se terminerait avant d'avoir commencé.
+  static const _avantDeTesterMs = 500;
+
+  /// Garde-fou, comme INTRO_MAX_MS. Il sert surtout quand le son sort du
+  /// buzzer : l'application ne peut alors pas savoir quand il finit.
+  static const _introMaxMs = 12000;
+
+  void _lancerChenillard() {
+    _arreterChenillard();
+    _pasChenillard = 0;
+    _debutIntro = DateTime.now();
+    ble.allumerLeds(1);
+    _chenillard = Timer.periodic(const Duration(milliseconds: _pasMs), (_) {
+      _pasChenillard++;
+      ble.allumerLeds(1 << (_pasChenillard % 4));
+
+      final depuis = DateTime.now().difference(_debutIntro!).inMilliseconds;
+      if (depuis < _avantDeTesterMs) return;
+      final fini = sons!.finDesSonsConnue ? !sons!.sonEnCours : depuis >= _introMaxMs;
+      if (fini || depuis >= _introMaxMs) _finDeLOuverture();
+    });
+  }
+
+  void _arreterChenillard() {
+    _chenillard?.cancel();
+    _chenillard = null;
+  }
+
+  /// La musique est finie : on ATTEND l'animateur.
+  ///
+  /// Enchainer tout seul sur la premiere question le prenait de court : il
+  /// vient de lancer la partie, la salle applaudit encore, et il doit lire la
+  /// question a voix haute. L'ecran public garde ses messages d'attente
+  /// pendant ce temps, ce qui donne un plan tenable aussi longtemps qu'il
+  /// faut.
+  void _finDeLOuverture() {
+    _arreterChenillard();
+    ble.allumerLeds(0);
+    ouvertureTerminee = true;
+    notifyListeners();
+  }
+
+  /// Vrai quand la musique est finie et qu'on attend le depart de la premiere
+  /// question. Sans objet hors de l'ouverture.
+  bool ouvertureTerminee = false;
+
+  /// Le depart donne par l'animateur. Ecourte aussi la musique si elle joue
+  /// encore.
+  void commencerLesQuestions() {
+    if (etape != EtapeQuiz.intro) return;
+    _arreterChenillard();
+    // La musique s'arrete avec le chenillard : la laisser courir par-dessus
+    // la premiere question serait pire que pas d'ouverture du tout.
+    sons?.arreter();
+    ble.allumerLeds(0);
+
+    // Vol : on designe le joueur qui ouvre, avec le meme tirage anime que le
+    // buzzer fait en mode autonome. Le sort est deja tire (voir demarrer) :
+    // l'animation ne decide de rien, elle annonce.
+    if (estVol && tirage != null) {
+      tirage!.lancer(presents: presents, surFin: questionSuivante);
+      return;
     }
     questionSuivante();
   }
 
   void questionSuivante() {
     numeroQuestion++;
+    // Manche libre : aucun texte a projeter, donc une phrase qui dit ou porter
+    // attention. Tiree ici, une fois par question, pour qu'elle ne change pas
+    // sous les yeux de la salle pendant que l'animateur parle.
+    motAttention = actif.libre ? motDattention() : '';
     // Le questionnaire suit le moteur, il ne devine plus rien : c'est ici
     // qu'on decide de passer a la suivante, donc c'est ici qu'on le dit.
     actif.goTo(numeroQuestion - 1);
@@ -192,6 +347,7 @@ class MoteurQuiz extends ChangeNotifier {
     if (qui < 0 || qui > 3 || !presents[qui] || !enLice[qui]) return;
     buzzeur = qui;
     etape = EtapeQuiz.buzze;
+    sons?.buzz(qui);
     _arreterChrono();
     // Le firmware a déjà allumé la LED du buzzeur ; on la garde seule.
     ble.allumerLeds(1 << qui);
@@ -201,6 +357,7 @@ class MoteurQuiz extends ChangeNotifier {
   void bonneReponse() {
     final qui = buzzeur;
     if (qui == null || etape != EtapeQuiz.buzze) return;
+    sons?.bonneReponse();
     scores[qui]++;
     dernierJuge = qui;
     derniereEtaitBonne = true;
@@ -211,6 +368,7 @@ class MoteurQuiz extends ChangeNotifier {
   void mauvaiseReponse() {
     final qui = buzzeur;
     if (qui == null || etape != EtapeQuiz.buzze) return;
+    sons?.mauvaiseReponse();
     if (estPenalite) scores[qui]--;
     dernierJuge = qui;
     derniereEtaitBonne = false;
@@ -284,6 +442,7 @@ class MoteurQuiz extends ChangeNotifier {
   }
 
   void terminer() {
+    _arreterChenillard();
     _arreterChrono();
     ble.desarmer();
     ble.allumerLeds(0);
@@ -300,10 +459,19 @@ class MoteurQuiz extends ChangeNotifier {
     egalite = trouve && exaequo.length > 1;
     gagnant = (trouve && exaequo.length == 1) ? exaequo.first : null;
     etape = EtapeQuiz.finie;
+    // Tire ici, une seule fois : l'ecran public le recoit dans l'instantane
+    // et ne le retire pas a chaque reconstruction.
+    motFinal = motDeLaFin(egalite: egalite);
+    if (egalite) {
+      sons?.egalite();
+    } else if (gagnant != null) {
+      sons?.victoire();
+    }
     notifyListeners();
   }
 
   void retourAuMenu() {
+    _arreterChenillard();
     _arreterChrono();
     ble.desarmer();
     ble.allumerLeds(0);
@@ -402,6 +570,7 @@ class MoteurQuiz extends ChangeNotifier {
 
   @override
   void dispose() {
+    _arreterChenillard();
     _chrono?.cancel();
     super.dispose();
   }

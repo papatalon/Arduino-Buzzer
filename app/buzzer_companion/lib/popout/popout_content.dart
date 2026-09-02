@@ -231,8 +231,33 @@ class _ArmingZone extends StatelessWidget {
         if (snapshot.questionText != null) ...[
           Text(snapshot.questionText!, style: BSType.questionPopout(), textAlign: TextAlign.center),
           const SizedBox(height: BSSpace.s6),
+        ] else if (snapshot.motAttention.isNotEmpty) ...[
+          // Manche libre : la question se pose a voix haute. Sans ca, l'ecran
+          // reste vide au moment precis ou la salle devrait ecouter, ce qui
+          // ressemble a une panne. Plus discret qu'une vraie question : ce
+          // n'en est pas une, et l'animateur parle par-dessus.
+          SizedBox(
+            width: 1100,
+            child: Text(
+              snapshot.motAttention,
+              textAlign: TextAlign.center,
+              style: BSType.body(size: 46, color: BSColors.neutral600),
+            ),
+          ),
+          const SizedBox(height: BSSpace.s6),
         ],
-        if (chrono) ...[
+        // LE DÉCOMPTE, aussi gros pour la salle que pour l'animateur : c'est
+        // lui qui pousse les joueurs à se décider. Tant qu'il n'est pas lancé,
+        // la barre pleine annonce ce qui s'en vient.
+        if (snapshot.chronoRestant != null) ...[
+          Text('${snapshot.chronoRestant} s',
+              style: BSType.heroDigitPopout(size: 96, color: BSColors.accent2)),
+          const SizedBox(height: BSSpace.s2),
+          _BarreChrono(
+            restant: snapshot.chronoRestant!,
+            total: snapshot.chronoTotal,
+          ),
+        ] else if (chrono) ...[
           Text('CHRONO NON LANCÉ', style: BSType.popoutHeaderMeta(color: BSColors.neutral500)),
           const SizedBox(height: BSSpace.s2),
           Container(width: 400, height: 20, color: BSColors.neutral300),
@@ -442,6 +467,14 @@ class _Scoreboard extends StatelessWidget {
   }
 
   Widget _buildColonne(int i, bool premiere) {
+    // Ecarte pour CETTE question : une mauvaise reponse met son auteur hors
+    // jeu jusqu'a la suivante. Montre seulement tant que la question est
+    // ouverte : une fois tranchee, tout le monde revient, et garder la
+    // mention serait faux.
+    final ouverte = snapshot.flowState == QuestionFlowState.arming ||
+        snapshot.flowState == QuestionFlowState.buzzed;
+    final ecarte = ouverte && i < snapshot.enLice.length && !snapshot.enLice[i];
+    final teinte = ecarte ? BSColors.neutral500 : null;
     return Container(
       color: snapshot.lastBuzz == i ? BSColors.accent100 : null,
       padding: EdgeInsets.only(left: premiere ? 52 : 28, top: 18),
@@ -452,7 +485,9 @@ class _Scoreboard extends StatelessWidget {
             width: 22,
             height: 22,
             margin: const EdgeInsets.only(top: 6),
-            color: kBuzzerColors[i].fill,
+            // La pastille perd sa couleur : c'est ce qui se voit du fond de la
+            // salle, bien avant le mot.
+            color: ecarte ? BSColors.neutral300 : kBuzzerColors[i].fill,
           ),
           const SizedBox(width: 14),
           // Expanded borne la colonne à sa part de l'écran, sinon un nom
@@ -471,12 +506,29 @@ class _Scoreboard extends StatelessWidget {
                     child: Text(
                       snapshot.teamName(i).toUpperCase(),
                       maxLines: 1,
-                      style: BSType.buzzerNamePopout(),
+                      style: BSType.buzzerNamePopout(color: teinte),
                     ),
                   ),
-                  Text(
-                    i < scores.length ? '${scores[i]}' : '',
-                    style: BSType.scorePopout(),
+                  // Le score et la mention sur la MEME ligne : ajouter une
+                  // troisieme ligne ferait grandir la colonne et le bandeau
+                  // sauterait a chaque mauvaise reponse, devant la salle.
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text(
+                        i < scores.length ? '${scores[i]}' : '',
+                        style: BSType.scorePopout(color: teinte),
+                      ),
+                      if (ecarte) ...[
+                        const SizedBox(width: 14),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 18),
+                          child: Text('ÉCARTÉ',
+                              style: BSType.popoutHeaderMeta(
+                                  color: BSColors.neutral500)),
+                        ),
+                      ],
+                    ],
                   ),
                 ],
               ),
@@ -557,7 +609,49 @@ class _FinPartieZone extends StatelessWidget {
             snapshot.gameTie ? 'ÉGALITÉ' : 'AUCUN GAGNANT',
             style: BSType.heroDigitPopout(size: 96),
           ),
+        if (snapshot.motFinal.isNotEmpty) ...[
+          const SizedBox(height: BSSpace.s6),
+          SizedBox(
+            width: 1100,
+            child: Text(
+              snapshot.motFinal,
+              textAlign: TextAlign.center,
+              style: BSType.body(size: 34, color: BSColors.neutral700),
+            ),
+          ),
+        ],
       ],
+    );
+  }
+}
+
+// La barre qui se vide avec le décompte. Même largeur que la barre grise du
+// chrono non lancé, pour que le passage de l'une à l'autre ne fasse pas
+// sauter la mise en page.
+class _BarreChrono extends StatelessWidget {
+  const _BarreChrono({required this.restant, required this.total});
+
+  final int restant;
+  final int total;
+
+  @override
+  Widget build(BuildContext context) {
+    final part = total > 0 ? (restant / total).clamp(0.0, 1.0) : 0.0;
+    return SizedBox(
+      width: 400,
+      height: 20,
+      child: Row(
+        children: [
+          Expanded(
+            flex: (part * 1000).round(),
+            child: const ColoredBox(color: BSColors.accent2),
+          ),
+          Expanded(
+            flex: 1000 - (part * 1000).round(),
+            child: const ColoredBox(color: BSColors.neutral300),
+          ),
+        ],
+      ),
     );
   }
 }

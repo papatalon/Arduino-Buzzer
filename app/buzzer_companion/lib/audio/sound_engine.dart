@@ -108,6 +108,7 @@ class SoundEngine extends ChangeNotifier {
   void dispose() {
     _recallTimer?.cancel();
     _busyPoll?.cancel();
+    _plafond?.cancel();
     if (_demarre) _soloud.deinit();
     super.dispose();
   }
@@ -267,6 +268,7 @@ class SoundEngine extends ChangeNotifier {
       _handle = _soloud.play(source, volume: volume);
       _setBusy(true);
       _startBusyPoll();
+      _plafonnerSiBuzz(folder);
     } catch (e) {
       debugPrint('Lecture impossible ($path) : $e');
       _setBusy(false);
@@ -291,6 +293,33 @@ class SoundEngine extends ChangeNotifier {
     });
   }
 
+  // DUREE MAXI D'UN SON DE BUZZER.
+  //
+  // La bibliotheque va de la demi-seconde a une dizaine de secondes. Laisses
+  // entiers, les plus longs couvrent la question suivante et retardent toute
+  // la soiree. Le firmware applique la meme limite a la carte SD quand c'est
+  // lui qui sonne (BUZZ_MAX_MS dans Mp3.h) : la coupure ne doit pas dependre
+  // de la sortie choisie.
+  //
+  // Seuls les sons de BUZZER sont plafonnes. Une musique d'ouverture ou un
+  // son d'attente doit pouvoir durer, c'est leur role.
+  static const _buzzMaxMs = 2000;
+  Timer? _plafond;
+
+  void _plafonnerSiBuzz(SoundFolder folder) {
+    _plafond?.cancel();
+    _plafond = null;
+    if (folder != SoundFolder.buzzer) return;
+    final vise = _handle;
+    _plafond = Timer(const Duration(milliseconds: _buzzMaxMs), () async {
+      _plafond = null;
+      // Un autre son a pu commencer entre-temps : on ne coupe que celui
+      // qu'on avait vise.
+      if (vise == null || _handle != vise) return;
+      if (_soloud.getIsValidVoiceHandle(vise)) await _soloud.stop(vise);
+    });
+  }
+
   Future<void> _playRandom(SoundFolder folder) async {
     final max = library.count(folder);
     if (max == 0) return;
@@ -300,6 +329,19 @@ class SoundEngine extends ChangeNotifier {
     }
     _lastRandom[folder] = index;
     await _play(folder, index);
+  }
+
+  /// Coupe net la voix en cours. Utilise quand l'animateur ecourte
+  /// l'ouverture : la musique ne doit pas continuer par-dessus la question.
+  Future<void> arreter() async {
+    _plafond?.cancel();
+    _plafond = null;
+    final courant = _handle;
+    _handle = null;
+    if (courant != null && _soloud.getIsValidVoiceHandle(courant)) {
+      await _soloud.stop(courant);
+    }
+    _setBusy(false);
   }
 
   Future<void> playIntro() => _playRandom(SoundFolder.intro);

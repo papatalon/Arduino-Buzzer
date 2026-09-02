@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../audio/sound_engine.dart';
 import '../../audio/sound_library.dart';
 import '../../ble_link_service.dart';
+import '../../jeu/animation_tirage.dart';
 import '../../protocol.dart';
 import '../../team_names.dart';
 import '../tokens.dart';
@@ -22,11 +23,15 @@ class BuzzersScreen extends StatelessWidget {
     required this.sound,
     required this.ble,
     required this.teams,
+    required this.tirage,
   });
   final GameState game;
   final SoundEngine sound;
   final BleLinkService ble;
   final TeamNames teams;
+  // Le melange est un TIRAGE : il s'anime, comme sur le buzzer. Sans ca, le
+  // bouton reassignait les sons en silence et personne ne voyait rien se passer.
+  final AnimationTirage tirage;
 
   @override
   Widget build(BuildContext context) {
@@ -48,9 +53,15 @@ class BuzzersScreen extends StatelessWidget {
                     // change : la bibliothèque de l'app, ou le DFPlayer via
                     // une commande à distance.
                     OutlinedButton(
-                      onPressed: ble.appHandlesSound
-                          ? sound.shuffleAssignments
-                          : ble.buzzerSoundShuffle,
+                      onPressed: () => tirage.lancer(
+                        presents: game.present,
+                        // Les sons ne sont re-tires qu'a la FIN, comme le fait
+                        // le firmware : on decouvre le resultat quand la roue
+                        // s'arrete, pas avant.
+                        surFin: ble.appHandlesSound
+                            ? sound.shuffleAssignments
+                            : ble.buzzerSoundShuffle,
+                      ),
                       style: OutlinedButton.styleFrom(
                         foregroundColor: BSColors.text,
                         side: const BorderSide(color: BSColors.divider),

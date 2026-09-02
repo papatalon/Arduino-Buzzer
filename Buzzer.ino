@@ -80,6 +80,8 @@ void setup() {
 
 void loop() {
   display.updateScrolling();
+  // Coupe un son de buzzer qui depasse sa duree maxi (voir Mp3::tick).
+  mp3.tick();
 
   // Detecte le moment precis ou l'app prend le controle (front montant de
   // appInControl) : elle vient peut-etre de se (re)connecter alors que le
@@ -145,6 +147,72 @@ PhaseMode getCurrentMode() {
     return LED_TEST;   // mode cache de test cablage (LED + boutons)
   }
 
+  // Commande App->Mega SET_PRESENT|<masque> : declarer un buzzer absent pour
+  // jouer a deux ou a trois. L'assistant du clavier ("A") ne peut pas rendre
+  // ce service a l'app - il exige un appui PHYSIQUE sur chaque buzzer
+  // present, et le clavier est verrouille de toute facon. Comme la config
+  // des sons, ca ne touche pas la phase, et pour la meme raison ca doit rester
+  // AU-DESSUS du court-circuit APP_CONTROL : sinon la commande n'est jamais lue
+  // en mode application, justement le seul mode ou elle sert.
+  int presenceMask = BleLink::shared().consumePresenceMask();
+  if (presenceMask >= 0) {
+    buzzer.setPresenceMask(presenceMask);
+  }
+
+  // Configuration ET sons de partie pilotes depuis l'app. Reproduit ce que
+  // fait l'assistant du clavier, qui est verrouille tant que l'app a le
+  // controle, et joue les sons que l'app demande quand l'operateur a choisi
+  // le haut-parleur du buzzer comme sortie.
+  //
+  // AU-DESSUS du court-circuit APP_CONTROL, volontairement : ces commandes ne
+  // touchent jamais la phase de jeu, et en mode application le court-circuit
+  // retourne avant d'arriver ici. Elles etaient donc lues... jamais, ce qui
+  // laissait le buzzer muet alors que c'etait lui qui devait sonner.
+  char soundCmd = BleLink::shared().consumeSoundCommand();
+  if (soundCmd != 0) {
+    int who = BleLink::shared().soundCommandBuzzer();
+    switch (soundCmd) {
+      case 'S':
+        mp3.shuffleBuzzers();
+        mp3.sendAllSoundAssignments();
+        break;
+      case 'N':
+        mp3.cycleSound(who);
+        mp3.sendAllSoundAssignments();
+        mp3.playBuzzer(who);      // on entend tout de suite le nouveau
+        break;
+      case 'P':
+        mp3.cyclePrevSound(who);
+        mp3.sendAllSoundAssignments();
+        mp3.playBuzzer(who);
+        break;
+      case 'E':
+        mp3.playBuzzer(who);
+        break;
+      // Sons de partie demandes par l'application. En mode application c'est
+      // elle qui mene, donc elle qui sait quand un son doit sortir ; mais si
+      // l'operateur a choisi le haut-parleur du buzzer, c'est ici que ca sonne.
+      case 'W':
+        mp3.playWaiting();
+        break;
+      case 'G':
+        mp3.playGoodAnswer();
+        break;
+      case 'B':
+        mp3.playBadAnswer();
+        break;
+      case 'R':
+        mp3.playSpin();
+        break;
+      case 'I':
+        mp3.playInit();   // musique d'ouverture d'une partie
+        break;
+      case 'X':
+        mp3.stopNow();    // l'app ecourte : on se tait
+        break;
+    }
+  }
+
   // ===================================================================
   // MODE ESCLAVE : l'application mene, le buzzer gere les boutons.
   //
@@ -193,44 +261,6 @@ PhaseMode getCurrentMode() {
   int gameSelect = BleLink::shared().consumeGameSelect();
   if (gameSelect >= 0) {
     return configuration.selectGameIndex(gameSelect);
-  }
-
-  // Configuration des sons du DFPlayer pilotee depuis l'app : reproduit ce
-  // que fait l'assistant du clavier, qui est verrouille tant que l'app a le
-  // controle. N'affecte que l'etat du son, jamais la phase de jeu - on ne
-  // court-circuite donc pas le switch, contrairement a SELECT_GAME.
-  char soundCmd = BleLink::shared().consumeSoundCommand();
-  if (soundCmd != 0) {
-    int who = BleLink::shared().soundCommandBuzzer();
-    switch (soundCmd) {
-      case 'S':
-        mp3.shuffleBuzzers();
-        mp3.sendAllSoundAssignments();
-        break;
-      case 'N':
-        mp3.cycleSound(who);
-        mp3.sendAllSoundAssignments();
-        mp3.playBuzzer(who);      // on entend tout de suite le nouveau
-        break;
-      case 'P':
-        mp3.cyclePrevSound(who);
-        mp3.sendAllSoundAssignments();
-        mp3.playBuzzer(who);
-        break;
-      case 'E':
-        mp3.playBuzzer(who);
-        break;
-    }
-  }
-
-  // Commande App->Mega SET_PRESENT|<masque> : declarer un buzzer absent pour
-  // jouer a deux ou a trois. L'assistant du clavier ("A") ne peut pas rendre
-  // ce service a l'app - il exige un appui PHYSIQUE sur chaque buzzer
-  // present, et le clavier est verrouille de toute facon. Comme la config
-  // des sons, ca ne touche pas la phase : on ne court-circuite pas le switch.
-  int presenceMask = BleLink::shared().consumePresenceMask();
-  if (presenceMask >= 0) {
-    buzzer.setPresenceMask(presenceMask);
   }
 
   // Commande App->Mega SET_CATS|<mask> (voir BleLink::consumeCategoryMask) :

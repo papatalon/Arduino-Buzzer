@@ -73,7 +73,13 @@ char BleLink::pollKey() {
         if (sep > 0) {
           who = _rxBuffer.substring(sep + 1).toInt();
         }
-        if (action == 'S' || (who >= 0 && who < 4)) {
+        // Les actions de categorie (attente, bonne, mauvaise, tirage) ne visent
+        // aucun buzzer : l'application les demande quand c'est elle qui mene la
+        // partie mais que le son doit sortir du haut-parleur du buzzer.
+        bool sansBuzzer = (action == 'S' || action == 'W' || action == 'G' ||
+                           action == 'B' || action == 'R' || action == 'I' ||
+                           action == 'X');
+        if (sansBuzzer || (who >= 0 && who < 4)) {
           _pendingSoundCommand = action;
           _pendingSoundBuzzer = who;
         }

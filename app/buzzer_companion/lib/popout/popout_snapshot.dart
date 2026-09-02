@@ -52,6 +52,11 @@ class PopoutSnapshot {
     this.soundLastOwner,
     this.soundLastClaimed = false,
     this.recallIndex,
+    this.enLice = const [true, true, true, true],
+    this.motFinal = '',
+    this.motAttention = '',
+    this.chronoRestant,
+    this.chronoTotal = 0,
     this.logoPath,
     this.appMene = false,
   });
@@ -99,6 +104,27 @@ class PopoutSnapshot {
   // partie tourne vraiment, puisque la phase du buzzer ne le dit plus (il
   // reste en APP_CONTROL du debut a la fin).
   final bool appMene;
+
+  // Qui peut encore repondre A CETTE QUESTION. Une mauvaise reponse ecarte
+  // son auteur jusqu'a la suivante, et la salle doit le voir : sans ca, on
+  // regarde quelqu'un attendre sans comprendre qu'il ne joue plus ce tour-ci.
+  // Tout le monde en lice hors partie, et pour les jeux non-quiz.
+  final List<bool> enLice;
+
+  // La phrase projetee sous le resultat. Tiree une seule fois par le moteur,
+  // a la fin de la partie : la retirer ici, a chaque reconstruction de la
+  // fenetre, la ferait clignoter devant la salle.
+  final String motFinal;
+
+  // En manche libre, la phrase projetee a la place de la question. Vide des
+  // qu'un questionnaire fournit un texte.
+  final String motAttention;
+
+  // Le decompte en cours, en secondes, ou null si aucun chrono ne tourne.
+  // La salle doit le voir aussi grand que l'animateur : c'est elle qui
+  // pousse les joueurs a se decider.
+  final int? chronoRestant;
+  final int chronoTotal;
 
   // Simon : aucun score, seulement le niveau atteint.
   final int? simonLevel;
@@ -175,7 +201,11 @@ class PopoutSnapshot {
       EtapeQuiz.buzze => QuestionFlowState.buzzed,
       EtapeQuiz.scores => QuestionFlowState.scored,
       EtapeQuiz.revelee => QuestionFlowState.revealed,
-      EtapeQuiz.repos || EtapeQuiz.finie => QuestionFlowState.none,
+      // Pendant l'ouverture, l'ecran public reste sur son plan d'attente, qui
+      // annonce deja le jeu en grand : c'est exactement ce qu'il faut montrer
+      // pendant que la musique joue.
+      EtapeQuiz.repos || EtapeQuiz.intro || EtapeQuiz.finie =>
+        QuestionFlowState.none,
     };
     // La reponse ne sort qu'une fois la question tranchee : c'est le contrat
     // de confidentialite, et il se tient ici, a la serialisation.
@@ -183,6 +213,7 @@ class PopoutSnapshot {
 
     return PopoutSnapshot(
       appMene: true,
+      enLice: List<bool>.of(moteur.enLice),
       scores: List<int>.of(moteur.scores),
       present: List<bool>.of(moteur.presents),
       gameMode: moteur.jeu,
@@ -199,6 +230,10 @@ class PopoutSnapshot {
       gameWinner: moteur.gagnant,
       gameTie: moteur.egalite,
       gameFinished: moteur.etape == EtapeQuiz.finie,
+      motFinal: moteur.motFinal,
+      motAttention: moteur.motAttention,
+      chronoRestant: moteur.chronoRestant,
+      chronoTotal: moteur.chronoTotal,
       recallIndex: recallIndex,
       logoPath: logoPath,
     );
@@ -289,6 +324,12 @@ class PopoutSnapshot {
       gameTie: json['gameTie'] as bool? ?? false,
       gameFinished: json['gameFinished'] as bool? ?? false,
       appMene: json['appMene'] as bool? ?? false,
+      enLice: (json['enLice'] as List?)?.cast<bool>() ??
+          const [true, true, true, true],
+      motFinal: json['motFinal'] as String? ?? '',
+      motAttention: json['motAttention'] as String? ?? '',
+      chronoRestant: json['chronoRestant'] as int?,
+      chronoTotal: json['chronoTotal'] as int? ?? 0,
       simonLevel: json['simonLevel'] as int?,
       simonEntered: json['simonEntered'] as int?,
       simonLength: json['simonLength'] as int?,
@@ -335,6 +376,11 @@ class PopoutSnapshot {
         'gameTie': gameTie,
         'gameFinished': gameFinished,
         'appMene': appMene,
+        'enLice': enLice,
+        'motFinal': motFinal,
+        'motAttention': motAttention,
+        'chronoRestant': chronoRestant,
+        'chronoTotal': chronoTotal,
         'simonLevel': simonLevel,
         'simonEntered': simonEntered,
         'simonLength': simonLength,
