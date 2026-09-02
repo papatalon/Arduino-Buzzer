@@ -150,6 +150,9 @@ class MoteurQuiz extends ChangeNotifier {
   /// La phrase projetee a la place de la question, en manche libre.
   String motAttention = '';
 
+  /// La phrase projetee pendant le tirage au sort du mode Vol. Vide sinon.
+  String motTirage = '';
+
   // --- Chrono ------------------------------------------------------------
 
   /// Secondes restantes, ou null si aucun chrono ne tourne.
@@ -299,6 +302,8 @@ class MoteurQuiz extends ChangeNotifier {
     // buzzer fait en mode autonome. Le sort est deja tire (voir demarrer) :
     // l'animation ne decide de rien, elle annonce.
     if (estVol && tirage != null) {
+      motTirage = motDeTirage();
+      notifyListeners();
       tirage!.lancer(presents: presents, surFin: questionSuivante);
       return;
     }
@@ -311,6 +316,7 @@ class MoteurQuiz extends ChangeNotifier {
     // attention. Tiree ici, une fois par question, pour qu'elle ne change pas
     // sous les yeux de la salle pendant que l'animateur parle.
     motAttention = actif.libre ? motDattention() : '';
+    motTirage = '';
     // Le questionnaire suit le moteur, il ne devine plus rien : c'est ici
     // qu'on decide de passer a la suivante, donc c'est ici qu'on le dit.
     actif.goTo(numeroQuestion - 1);

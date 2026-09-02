@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:flutter/foundation.dart' show VoidCallback;
+import 'package:flutter/foundation.dart';
 
 import '../audio/sonorisation.dart';
 import 'moteur_quiz.dart';
@@ -19,7 +19,7 @@ import 'moteur_quiz.dart';
 // manche de Vol. En mode autonome le Mega les anime tous les deux ; en mode
 // application c'est à elle de le faire, puisque le buzzer n'a plus d'état de
 // jeu.
-class AnimationTirage {
+class AnimationTirage extends ChangeNotifier {
   AnimationTirage({required this.ble, required this.sons});
 
   final CommandesBuzzer ble;
@@ -43,6 +43,11 @@ class AnimationTirage {
   /// que des lumières qui s'arrêtent pendant que ça joue encore.
   static const _dureeMs = 7000;
 
+  /// Garde-fou absolu, pour le cas ou un son ne se terminerait jamais. Il ne
+  /// doit PAS servir de duree normale : il l'a fait, et les lumieres
+  /// s'arretaient au milieu du bruitage.
+  static const _securiteMs = 30000;
+
   /// Le son met un instant à démarrer : sans ce délai, on le croirait fini
   /// avant d'avoir commencé. Même précaution que INTRO_START_MS côté
   /// firmware.
@@ -50,6 +55,13 @@ class AnimationTirage {
 
   Timer? _minuteur;
   bool get enCours => _minuteur != null;
+
+  /// Le buzzer allume a cet instant, ou null si rien ne tourne.
+  ///
+  /// Expose pour que l'ecran puisse refleter le chenillard PHYSIQUE : les
+  /// deux montrent la meme chose au meme moment, sinon l'ecran raconte une
+  /// autre histoire que la table.
+  int? allume;
 
   /// Lance l'animation sur les buzzers [presents]. [surFin] est appelé une
   /// seule fois, à la fin, LED éteintes.
@@ -70,17 +82,22 @@ class AnimationTirage {
       final ecoule = DateTime.now().difference(debut).inMilliseconds;
       // On suit le VRAI son quand on peut, plutôt qu'une durée devinée : le
       // chenillard et le bruitage doivent s'arrêter ensemble.
+      // Quand la fin du son est observable, elle FAIT FOI : la duree de repli
+      // ne doit pas ecourter une animation qu'on sait suivre. C'est ce qu'elle
+      // faisait, et le chenillard s'arretait pendant que le bruitage jouait
+      // encore.
       final fini = ecoule >= _avantDeTesterMs &&
-          sons.finDesSonsConnue &&
-          !sons.sonEnCours;
-      if (fini || ecoule >= _dureeMs) {
+          (sons.finDesSonsConnue ? !sons.sonEnCours : ecoule >= _dureeMs);
+      if (fini || ecoule >= _securiteMs) {
         arreter();
         ble.allumerLeds(0);
         surFin();
         return;
       }
-      ble.allumerLeds(1 << pool[index % pool.length]);
+      allume = pool[index % pool.length];
+      ble.allumerLeds(1 << allume!);
       index++;
+      notifyListeners();
       // Croissance exponentielle de l'intervalle, plafonnée : la roue ralentit
       // vite au début, puis de moins en moins.
       final facteur = exp(ecoule / _tauMs);
@@ -89,11 +106,17 @@ class AnimationTirage {
     }
 
     _minuteur = Timer(Duration(milliseconds: prochainPas), pas);
+    // Notifie APRES avoir arme le minuteur : enCours doit deja etre vrai
+    // quand l'ecran se reconstruit, sinon il se croit au repos.
+    notifyListeners();
   }
 
   void arreter() {
+    final tournait = _minuteur != null;
     _minuteur?.cancel();
     _minuteur = null;
+    allume = null;
+    if (tournait) notifyListeners();
   }
 }
 

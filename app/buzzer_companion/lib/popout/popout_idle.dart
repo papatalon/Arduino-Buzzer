@@ -124,6 +124,7 @@ class _PopoutIdleState extends State<PopoutIdle> {
     // Un jeu déjà choisi mais pas encore lancé : la salle a le droit de
     // savoir ce qui l'attend, c'est la moitié du plaisir.
     final aVenir = gameModeName(widget.snapshot.displayGameMode);
+    final tirage = widget.snapshot.motTirage;
 
     return Column(
       children: [
@@ -165,15 +166,22 @@ class _PopoutIdleState extends State<PopoutIdle> {
                     // Hauteur figée à deux lignes : sans ça, passer d'une
                     // phrase courte à une longue faisait sauter tout le bloc
                     // (et le trait magenta avec lui) à chaque rotation.
+                    // Pendant le tirage au sort, la rotation s'efface : la salle
+                    // doit lire ce qui est en train de se decider, pas une
+                    // phrase d'attente qui changerait au milieu.
                     child: SizedBox(
-                      key: ValueKey(_index),
+                      key: ValueKey(tirage.isNotEmpty ? 'tirage' : ''),
                       width: 1080,
                       height: 150,
                       child: Center(
                         child: Text(
-                          _messages[_index],
+                          tirage.isNotEmpty ? tirage : _messages[_index],
                           textAlign: TextAlign.center,
-                          style: BSType.questionPopout(color: BSColors.text).copyWith(fontSize: 62, height: 1.15),
+                          style: BSType.questionPopout(
+                                  color: tirage.isNotEmpty
+                                      ? BSColors.accent2_800
+                                      : BSColors.text)
+                              .copyWith(fontSize: 62, height: 1.15),
                         ),
                       ),
                     ),

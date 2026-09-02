@@ -55,6 +55,7 @@ class PopoutSnapshot {
     this.enLice = const [true, true, true, true],
     this.motFinal = '',
     this.motAttention = '',
+    this.motTirage = '',
     this.chronoRestant,
     this.chronoTotal = 0,
     this.logoPath,
@@ -123,6 +124,11 @@ class PopoutSnapshot {
   // Le decompte en cours, en secondes, ou null si aucun chrono ne tourne.
   // La salle doit le voir aussi grand que l'animateur : c'est elle qui
   // pousse les joueurs a se decider.
+  // Ce qui se joue pendant le tirage au sort du mode Vol. L'ecran public
+  // reste sur son plan d'attente pendant ce temps : cette phrase y prend la
+  // place du message ordinaire, pour dire ce qui est en train de se decider.
+  final String motTirage;
+
   final int? chronoRestant;
   final int chronoTotal;
 
@@ -232,6 +238,7 @@ class PopoutSnapshot {
       gameFinished: moteur.etape == EtapeQuiz.finie,
       motFinal: moteur.motFinal,
       motAttention: moteur.motAttention,
+      motTirage: moteur.motTirage,
       chronoRestant: moteur.chronoRestant,
       chronoTotal: moteur.chronoTotal,
       recallIndex: recallIndex,
@@ -328,6 +335,7 @@ class PopoutSnapshot {
           const [true, true, true, true],
       motFinal: json['motFinal'] as String? ?? '',
       motAttention: json['motAttention'] as String? ?? '',
+      motTirage: json['motTirage'] as String? ?? '',
       chronoRestant: json['chronoRestant'] as int?,
       chronoTotal: json['chronoTotal'] as int? ?? 0,
       simonLevel: json['simonLevel'] as int?,
@@ -379,6 +387,7 @@ class PopoutSnapshot {
         'enLice': enLice,
         'motFinal': motFinal,
         'motAttention': motAttention,
+        'motTirage': motTirage,
         'chronoRestant': chronoRestant,
         'chronoTotal': chronoTotal,
         'simonLevel': simonLevel,

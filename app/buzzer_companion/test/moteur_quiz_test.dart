@@ -315,4 +315,24 @@ void main() {
       expect(moteur.motFinal, isEmpty);
     });
   });
+
+  group('Vol : le tirage', () {
+    // Le bruitage du tirage NE doit PAS jouer pendant l'ouverture : les deux
+    // sons se couvraient. Il accompagne l'animation, au depart de la premiere
+    // question, et l'ecran public annonce alors ce qui se decide.
+    test('le mot du tirage est vide tant que rien ne se tire', () {
+      final m = creer();
+      m.demarrer(jeuChoisi: 4, limite: 0);
+      expect(m.motTirage, isEmpty);
+    });
+
+    test("le sort est tire avant l'ouverture, pas pendant l'animation", () {
+      final m = creer();
+      m.demarrer(jeuChoisi: 4, limite: 0);
+      // Un seul joueur est en lice : c'est le designe, et il l'est des le
+      // depart. L'animation qui suit ne decide de rien, elle annonce.
+      final enLice = [for (var i = 0; i < 4; i++) if (m.enLice[i]) i];
+      expect(enLice, [m.tourVol]);
+    });
+  });
 }

@@ -36,7 +36,7 @@ class BuzzersScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListenableBuilder(
-      listenable: Listenable.merge([sound, ble, teams]),
+      listenable: Listenable.merge([sound, ble, teams, tirage]),
       builder: (context, _) {
         return SingleChildScrollView(
           child: Align(
@@ -53,7 +53,11 @@ class BuzzersScreen extends StatelessWidget {
                     // change : la bibliothèque de l'app, ou le DFPlayer via
                     // une commande à distance.
                     OutlinedButton(
-                      onPressed: () => tirage.lancer(
+                      // Un deuxieme clic pendant l'animation relancerait la roue
+                      // par-dessus elle-meme.
+                      onPressed: tirage.enCours
+                          ? null
+                          : () => tirage.lancer(
                         presents: game.present,
                         // Les sons ne sont re-tires qu'a la FIN, comme le fait
                         // le firmware : on decouvre le resultat quand la roue
@@ -82,7 +86,16 @@ class BuzzersScreen extends StatelessWidget {
                     ],
                   ],
                 ),
-                if (!ble.appHandlesSound) ...[
+                if (tirage.enCours) ...[
+                  const SizedBox(height: BSSpace.s2),
+                  // La roue tourne : on dit pourquoi la section ne repond
+                  // plus, plutot que de laisser croire a un blocage.
+                  Text(
+                    'Mélange en cours. Les sons seront révélés quand la roue '
+                    "s'arrête.",
+                    style: BSType.body(size: 15, color: BSColors.accent2_700),
+                  ),
+                ] else if (!ble.appHandlesSound) ...[
                   const SizedBox(height: BSSpace.s2),
                   Text(
                     'Le son sort du buzzer : ces sons viennent de sa carte SD, '
@@ -97,7 +110,13 @@ class BuzzersScreen extends StatelessWidget {
                       padding: EdgeInsets.symmetric(vertical: BSSpace.s3),
                       child: SizedBox(height: 1, child: ColoredBox(color: BSColors.divider)),
                     ),
-                  _BuzzerRow(index: i, game: game, sound: sound, ble: ble, teams: teams),
+                  _BuzzerRow(
+                      index: i,
+                      game: game,
+                      sound: sound,
+                      ble: ble,
+                      teams: teams,
+                      tirage: tirage),
                 ],
                 const SizedBox(height: BSSpace.s6),
                 Container(height: 1, color: BSColors.divider),
@@ -157,17 +176,23 @@ class _BuzzerRow extends StatelessWidget {
     required this.sound,
     required this.ble,
     required this.teams,
+    required this.tirage,
   });
   final int index;
   final GameState game;
   final SoundEngine sound;
   final BleLinkService ble;
   final TeamNames teams;
+  final AnimationTirage tirage;
 
   @override
   Widget build(BuildContext context) {
     final color = kBuzzerColors[index];
     final present = game.present[index];
+    // Pendant le melange, la ligne ne se touche plus : les sons sont en train
+    // d'etre retires, et changer une assignation a ce moment-la serait ecrase
+    // une seconde plus tard sans que personne comprenne pourquoi.
+    final melange = tirage.enCours;
     final appOwnsSound = ble.appHandlesSound;
 
     // Deux sources d'assignation selon qui joue : la bibliothèque de l'app,
@@ -182,24 +207,38 @@ class _BuzzerRow extends StatelessWidget {
     }
 
     return Opacity(
-      opacity: present ? 1 : 0.55,
+      // Pendant le melange, toute la rangee s'efface SAUF celle que le
+      // chenillard eclaire : l'ecran montre exactement ce que les boutons de
+      // la table font au meme instant.
+      opacity: melange
+          ? (tirage.allume == index ? 1 : 0.25)
+          : (present ? 1 : 0.55),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(width: 18, height: 18, color: color.fill),
+          Container(
+              width: 18,
+              height: 18,
+              color: melange && tirage.allume != index
+                  ? BSColors.neutral300
+                  : color.fill),
           const SizedBox(width: BSSpace.s2),
           // Nom d'équipe éditable, avec la couleur en dessous : la couleur
           // reste l'identité physique du buzzer (câblage, LED), le nom
           // n'est qu'une étiquette de présentation.
           SizedBox(
             width: 190,
-            child: _TeamNameField(index: index, teams: teams),
+            child: melange
+                ? Text(teams.nameFor(index),
+                    style: BSType.body(size: 16, color: BSColors.text))
+                : _TeamNameField(index: index, teams: teams),
           ),
           // Bascule, et non plus une simple étiquette : c'est ainsi qu'on
           // joue à deux ou à trois. L'assistant du clavier fait la même
           // chose mais exige un appui physique sur chaque buzzer présent,
           // geste que l'app ne peut pas reproduire à distance.
-          _PresenceToggle(index: index, game: game, ble: ble),
+          _PresenceToggle(
+              index: index, game: game, ble: ble, actif: !melange),
           const SizedBox(width: BSSpace.s3),
           // Le nom prend la place restante plutôt qu'une largeur fixe :
           // avec trois boutons, une largeur figée faisait déborder la
@@ -207,7 +246,7 @@ class _BuzzerRow extends StatelessWidget {
           // ouvrir la grille de tous les sons — plus pratique que de
           // défiler un par un sur une trentaine de fichiers.
           Expanded(
-            child: appOwnsSound
+            child: (appOwnsSound && !melange)
                 ? MouseRegion(
                     cursor: SystemMouseCursors.click,
                     child: GestureDetector(
@@ -231,9 +270,11 @@ class _BuzzerRow extends StatelessWidget {
           // qui déplace son assignation et joue l'aperçu — sinon, avec le
           // clavier verrouillé, plus personne ne pourrait reconfigurer.
           TextButton(
-            onPressed: () => appOwnsSound
-                ? sound.playBuzzer(index)
-                : ble.buzzerSoundPreview(index),
+            onPressed: melange
+                ? null
+                : () => appOwnsSound
+                    ? sound.playBuzzer(index)
+                    : ble.buzzerSoundPreview(index),
             style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
             child: const Text('Écouter'),
           ),
@@ -241,7 +282,7 @@ class _BuzzerRow extends StatelessWidget {
           // trois boutons texte faisaient déborder la rangée.
           IconButton(
             tooltip: 'Son précédent',
-            onPressed: () {
+            onPressed: melange ? null : () {
               if (appOwnsSound) {
                 sound.cycleAssignment(index, direction: -1);
                 sound.playBuzzer(index);   // on entend tout de suite le nouveau
@@ -254,7 +295,7 @@ class _BuzzerRow extends StatelessWidget {
           ),
           IconButton(
             tooltip: 'Son suivant',
-            onPressed: () {
+            onPressed: melange ? null : () {
               if (appOwnsSound) {
                 sound.cycleAssignment(index);
                 sound.playBuzzer(index);
@@ -448,11 +489,17 @@ class _VolumeControl extends StatelessWidget {
 // de vérité pendant qu'elle a le contrôle, et un état complet ne peut pas se
 // désynchroniser si un message se perd.
 class _PresenceToggle extends StatelessWidget {
-  const _PresenceToggle({required this.index, required this.game, required this.ble});
+  const _PresenceToggle(
+      {required this.index,
+      required this.game,
+      required this.ble,
+      this.actif = true});
 
   final int index;
   final GameState game;
   final BleLinkService ble;
+  /// Faux pendant le melange des sons : la rangee entiere est en lecture seule.
+  final bool actif;
 
   @override
   Widget build(BuildContext context) {
@@ -460,11 +507,13 @@ class _PresenceToggle extends StatelessWidget {
     return Tooltip(
       message: present ? 'Retirer ce buzzer de la partie' : 'Remettre ce buzzer en jeu',
       child: InkWell(
-        onTap: () {
-          final next = List<bool>.from(game.present);
-          next[index] = !present;
-          ble.setPresence(next);
-        },
+        onTap: !actif
+            ? null
+            : () {
+                final next = List<bool>.from(game.present);
+                next[index] = !present;
+                ble.setPresence(next);
+              },
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
           decoration: BoxDecoration(

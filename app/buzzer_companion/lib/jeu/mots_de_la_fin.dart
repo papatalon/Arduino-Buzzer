@@ -73,3 +73,23 @@ const motsDattention = <String>[
 // changer sous les yeux de la salle en pleine question.
 String motDattention({Random? hasard}) =>
     motsDattention[(hasard ?? Random()).nextInt(motsDattention.length)];
+
+// PENDANT LE TIRAGE AU SORT du mode Vol : la roue tourne sur les boutons,
+// mais l'écran public, lui, n'a rien à annoncer. Il resterait sur son plan
+// d'attente ordinaire, sans que la salle comprenne ce qui se joue.
+//
+// Ces phrases disent ce qui se passe, sur le ton du reste : le sort désigne
+// qui ouvrira la question, et personne n'y peut rien.
+const motsDeTirage = <String>[
+  'Le sort choisit qui ouvre. Personne ne négocie.',
+  'La roue tourne. Un seul aura la première chance.',
+  'On tire au sort. Les protestations sont notées, puis ignorées.',
+  "Quelqu'un va être désigné. Ce n'est pas personnel.",
+  'Le hasard travaille. Laissez-le finir.',
+  'La roue décide, et elle ne se relit pas.',
+  'Un buzzer va être choisi. Les autres attendront leur tour.',
+  'Tirage en cours. Croisez ce que vous voulez.',
+];
+
+String motDeTirage({Random? hasard}) =>
+    motsDeTirage[(hasard ?? Random()).nextInt(motsDeTirage.length)];
