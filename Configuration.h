@@ -43,6 +43,10 @@ public:
     // impose quand c'est elle qui fournit les questions : c'est alors elle
     // qui decide de la fin, pas le buzzer qui compte jusqu'a N.
     PhaseMode confirmQuestionCount(int n);
+    // Depart demande par l'application, depuis n'importe quelle phase : banque
+    // du Mega en retrait et compteur ouvert, l'app fournissant les questions.
+    // Voir BleLink::consumeStartGame().
+    PhaseMode startFromApp(int nbQuestions);
     void setShuffleBuzzers();
     PhaseMode shuffleBuzzer(char pressedKey);
     void setBuzzerConfig();

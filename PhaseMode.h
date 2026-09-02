@@ -41,7 +41,8 @@ enum PhaseMode {
     DUEL_GO,        // Duel : signal sonore donne, course au buzz
     DUEL_RESULT,    // Duel : resultat de la manche
     DUEL_OVER,      // Duel : fin de partie (scores)
-    LED_TEST        // mode cache de test cablage (LED + boutons), entree *1
+    LED_TEST,       // mode cache de test cablage (LED + boutons), entree *1
+    APP_CONTROL     // l'application mene : le buzzer n'est qu'un gestionnaire de boutons
 };
 
 #endif

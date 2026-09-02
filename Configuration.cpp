@@ -540,6 +540,36 @@ PhaseMode Configuration::confirmQuestionCount(int n) {
   return startMatch();
 }
 
+// Depart demande par l'application, depuis n'importe quelle phase.
+//
+// EN MODE APPLICATION, LE FIRMWARE N'EST PLUS LE MAITRE DU SPECTACLE. Il ne
+// gere que les buzzers : les lumieres, le verrouillage entre deux questions,
+// et qui a sonne le premier. Les questions, le deroulement et les ecrans
+// appartiennent a l'application.
+//
+// Elle ne fait donc PAS naviguer le firmware dans ses menus. Faire defiler
+// QUIZ_CATS puis QUIZ_COUNT depuis l'app revenait a lui faire mimer une
+// interface qui n'existe que pour le clavier physique, et l'operateur se
+// retrouvait a choisir des categories de la banque du Mega alors qu'il avait
+// deja choisi son questionnaire dans l'application.
+//
+// La banque du Mega est donc mise en retrait (masque a zero) et le compteur
+// en mode ouvert : c'est l'application qui fournit les questions et qui
+// decide quand la soiree est finie.
+PhaseMode Configuration::startFromApp(int nbQuestions) {
+  qcatMask = 0;
+  // Rien de nouveau ici : qcountIdx et « 0 = ouvert » existent depuis
+  // toujours, et startMatch() les applique deja via setQuestionLimit().
+  // L'app se contente de dire lequel elle veut.
+  //
+  // 0 quand un questionnaire de l'app fournit les questions : c'est elle qui
+  // sait quand il est epuise. Un nombre quand l'animateur pose ses propres
+  // questions (questionnaire libre) et veut que la partie s'arrete d'elle
+  // meme apres N.
+  qcountIdx = (nbQuestions < 0 || nbQuestions > QCOUNT_MAX) ? 0 : nbQuestions;
+  return startMatch();
+}
+
 // Le lancement reel, partage par le '#' du compteur et par la commande de
 // l'app. Extrait tel quel plutot que duplique : deux copies divergeraient au
 // premier ajout (un son, une remise a zero de plus).

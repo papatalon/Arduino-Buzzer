@@ -63,6 +63,24 @@ class BleLink {
     // depuis 99 demanderait 99 pressions de touche.
     int consumeQuestionCount();
 
+    // Nombre de questions demande par un "START_GAME|<n>" recu depuis le
+    // dernier appel (0 = ouvert, l'app decide de la fin), ou -1 si aucun
+    // depart n'est en attente. Consommee une seule fois.
+    //
+    // En mode application, l'app ne fait pas naviguer le firmware dans ses
+    // menus : elle demande le depart, et le firmware demarre - voir
+    // Configuration::startFromApp().
+    int consumeStartGame();
+
+    // --- Primitives du mode esclave (voir AppControl) ---------------------
+    //
+    // Masque de buzzers a armer demande par "ARM|<masque>" ou 0 pour un
+    // "DISARM", ou -1 si rien n'est en attente. Consommee une seule fois.
+    int consumeArm();
+    // Masque de LED demande par "LED|<masque>", ou -1 si rien n'est en
+    // attente. Consommee une seule fois.
+    int consumeLeds();
+
     // Retourne le masque de presence demande par un "SET_PRESENT|<n>" recu
     // depuis le dernier appel (bit 0 = rouge ... bit 3 = vert), ou -1 si
     // aucun n'est en attente. Consommee une seule fois. Sert a jouer a deux
@@ -103,6 +121,9 @@ class BleLink {
     int _pendingGameSelect = -1;
     int _pendingCategoryMask = -1;
     int _pendingQuestionCount = -1;
+    int _pendingStartGame = -1;
+    int _pendingArm = -1;
+    int _pendingLeds = -1;
     int _pendingPresenceMask = -1;
     bool _appSoundBusy = false;
     bool _appHandlesSound = true;

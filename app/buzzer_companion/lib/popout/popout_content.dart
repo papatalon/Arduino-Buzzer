@@ -35,7 +35,12 @@ class PopoutContent extends StatelessWidget {
     final layout = layoutFor(snapshot.gameMode);
     // Aux menus et pendant la configuration, rien ne se joue : la salle ne
     // doit voir ni bandeau ni compteur, seulement le logo.
-    final running = isGameRunning(snapshot.phase);
+    // Quand l'application mene, la phase du buzzer ne dit plus rien : il
+    // reste en APP_CONTROL du debut a la fin. C'est le moteur qui sait si une
+    // partie tourne, et l'instantane le rapporte.
+    final running = snapshot.appMene
+        ? snapshot.flowState != QuestionFlowState.none || snapshot.gameFinished
+        : isGameRunning(snapshot.phase);
     return SizedBox(
       width: 1440,
       height: 810,
@@ -183,6 +188,11 @@ class _CenterZone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Fin de partie menée par l'application : le buzzer n'a pas d'écran de
+    // fin à montrer, c'est le moteur qui désigne le gagnant.
+    if (snapshot.appMene && snapshot.gameFinished) {
+      return _FinPartieZone(snapshot: snapshot);
+    }
     return switch (snapshot.flowState) {
       QuestionFlowState.arming => _ArmingZone(snapshot: snapshot),
       QuestionFlowState.buzzed => _BuzzedZone(snapshot: snapshot),
@@ -512,6 +522,42 @@ class _SoundRecallZone extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+// Le mot de la fin devant la salle. Seule l'application peut l'afficher :
+// en mode autonome, c'est le LCD du buzzer qui l'annonce.
+class _FinPartieZone extends StatelessWidget {
+  const _FinPartieZone({required this.snapshot});
+  final PopoutSnapshot snapshot;
+
+  @override
+  Widget build(BuildContext context) {
+    final idx = snapshot.gameWinner;
+    final color = (idx != null && idx >= 0 && idx < kBuzzerColors.length)
+        ? kBuzzerColors[idx]
+        : null;
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text('FIN DE PARTIE', style: BSType.sectionKicker()),
+        const SizedBox(height: BSSpace.s4),
+        if (color != null)
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              '${snapshot.teamName(idx!).toUpperCase()} GAGNE',
+              maxLines: 1,
+              style: BSType.heroDigitPopout(size: 96, color: color.fill),
+            ),
+          )
+        else
+          Text(
+            snapshot.gameTie ? 'ÉGALITÉ' : 'AUCUN GAGNANT',
+            style: BSType.heroDigitPopout(size: 96),
+          ),
+      ],
     );
   }
 }

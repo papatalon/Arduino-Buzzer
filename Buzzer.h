@@ -15,7 +15,7 @@
 #define INTRO_START_MS 500       // délai avant de tester BUSY (démarrage du DFPlayer)
 #define INTRO_MAX_MS 30000       // durée maxi de sécurité du chenillard d'intro
 #define BUTTON_DEBOUNCE_MS 200   // anti-rebond commun a tous les boutons de buzzer
-#define BOOT_MESSAGE_COUNT 5     // nombre de messages de demarrage disponibles
+#define BOOT_MESSAGE_COUNT 8     // nombre de messages de demarrage disponibles
 #define BOOT_DOT_MS 300          // vitesse des points animes du message de demarrage
 #define EQ_FRAME_MS 150          // duree d'une image de l'egaliseur (redessin I2C lent)
 #define BUZZ_TIME_MAX 60         // duree maxi reglable du chrono de buzz (secondes)
@@ -84,6 +84,9 @@ public:
     void setEnabled(int buzzerId, bool value);
     void setPresenceMask(int mask);          // les 4 d'un coup (app, SET_PRESENT)
     bool isEnabled(int buzzerId);
+    // Renvoie la presence des 4 buzzers a l'application. Publique parce que
+    // l'app en a besoin des sa connexion : c'est du materiel, pas du jeu.
+    void sendPresenceNow();
     int playerCount();                       // combien de buzzers en jeu (0-4)
     bool hasExactlyTwoPlayers();             // exactement 2 (requis par le jeu Duel)
     bool wasPressed(int buzzerId);           // front montant d'un appui (anti-rebond)

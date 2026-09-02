@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:desktop_multi_window/desktop_multi_window.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:window_manager/window_manager.dart';
 
@@ -10,12 +11,14 @@ import 'ble_link_service.dart';
 import 'broadsheet/console_shell.dart';
 import 'broadsheet/tokens.dart';
 import 'event_logo.dart';
+import 'jeu/moteur_quiz.dart';
 import 'popout/popout_launcher.dart';
 import 'popout/popout_snapshot.dart';
 import 'popout/popout_window.dart';
 import 'popout/window_launch_args.dart';
 import 'protocol.dart';
 import 'questionnaires/active_questionnaire.dart';
+import 'simulation.dart';
 import 'version_check.dart';
 import 'questionnaires/catalogue.dart';
 import 'questionnaires/questionnaire_store.dart';
@@ -64,9 +67,12 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   final _questionnaires = QuestionnaireStore();
   final _catalogue = CatalogueStore();
   late final ActiveQuestionnaire _actif;
+  late final MoteurQuiz _moteur;
   final _version = VersionCheck();
+  late final Simulateur _simulateur;
   late final SoundEngine _sound;
   StreamSubscription<SfxEvent>? _sfxSub;
+  StreamSubscription<({int buzzer, int ms})>? _buzzSub;
 
   @override
   void initState() {
@@ -74,10 +80,19 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     _ble.init();
     _game.listenTo(_ble.messages);
     _game.addListener(_pushSnapshotToPopout);
-    // Le questionnaire en jeu suit les transitions de phase pour savoir quand
-    // passer a la question suivante (voir ActiveQuestionnaire).
     _actif = ActiveQuestionnaire(_game);
-    _game.addListener(_actif.onGameChanged);
+    _simulateur = Simulateur(_game);
+
+    // LE MOTEUR DE JEU DE L'APPLICATION. En mode application, le buzzer ne
+    // garde aucun état de partie : il arme des boutons et rapporte les appuis.
+    // C'est ici que vivent la question courante, les scores et la fin de
+    // partie (voir MoteurQuiz).
+    _moteur = MoteurQuiz(ble: _ble, actif: _actif);
+    _moteur.addListener(_pushSnapshotToPopout);
+    _buzzSub = _game.buzzEvents.listen((e) => _moteur.surBuzz(e.buzzer, e.ms));
+    // La présence des buzzers reste une observation du matériel : le moteur
+    // ne peut pas armer un buzzer qui n'est pas là.
+    _game.addListener(_suivrePresence);
 
     // Moteur de son : joue la bibliothèque embarquée à la place du DFPlayer
     // et renvoie au Mega son état de lecture, qui remplace la broche BUSY
@@ -97,6 +112,15 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     _sfxSub = _game.sfxEvents.listen(_handleSfx);
     // Silencieux si le site est injoignable : voir VersionCheck.
     _version.init();
+  }
+
+  // La présence des buzzers est la seule chose que le matériel sache mieux
+  // que l'application : un buzzer débranché ne doit pas être armé, ni compter
+  // dans les scores.
+  void _suivrePresence() {
+    final vu = _game.present;
+    if (listEquals(vu, _moteur.presents)) return;
+    _moteur.presents = List<bool>.of(vu);
   }
 
   void _handleSfx(SfxEvent event) {
@@ -121,18 +145,33 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   }
 
   void _pushSnapshotToPopout() {
-    _popout.pushSnapshot(
-        PopoutSnapshot.fromGameState(
-      _game,
-      teamNames: _teams.all,
-      logoPath: _logo.path,
-      recallIndex: _sound.recallIndex,
-    ));
+    // Deux sources possibles, jamais melangees : le moteur de jeu quand
+    // l'application mene, la telemetrie du buzzer quand il joue seul.
+    final mene = isAppControl(_game.phase) || _moteur.etape != EtapeQuiz.repos;
+    _popout.pushSnapshot(mene
+        ? PopoutSnapshot.duMoteur(
+            _moteur,
+            _game,
+            question: _actif.current,
+            teamNames: _teams.all,
+            logoPath: _logo.path,
+            recallIndex: _sound.recallIndex,
+          )
+        : PopoutSnapshot.fromGameState(
+            _game,
+            teamNames: _teams.all,
+            logoPath: _logo.path,
+            recallIndex: _sound.recallIndex,
+          ));
   }
 
   @override
   void dispose() {
     _sfxSub?.cancel();
+    _buzzSub?.cancel();
+    _game.removeListener(_suivrePresence);
+    _moteur.removeListener(_pushSnapshotToPopout);
+    _moteur.dispose();
     _sound.removeListener(_pushSnapshotToPopout);
     _sound.dispose();
     _ble.dispose();
@@ -170,7 +209,9 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
         questionnaires: _questionnaires,
         catalogue: _catalogue,
         actif: _actif,
+        moteur: _moteur,
         version: _version,
+        simulateur: _simulateur,
       ),
     );
   }

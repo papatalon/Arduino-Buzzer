@@ -29,27 +29,37 @@ class PopoutIdle extends StatefulWidget {
 // Assez de lignes pour qu'une soirée entière n'en montre jamais deux fois la
 // même de suite. Ton québécois, jamais moqueur envers un joueur en
 // particulier : c'est affiché devant tout le monde.
+//
+// PAS DE POUCES. Les buzzers sont de gros boutons qu'on abat avec la main,
+// pas des manettes. Quatre messages y faisaient référence et sonnaient faux
+// devant l'objet posé sur la table.
 const _messages = <String>[
-  'Réchauffez-vous le pouce.',
+  'Le bouton est gros. Personne ne pourra dire qu\'il l\'a manqué.',
   "Personne n'a encore perdu. Profitez-en.",
   'Le pointage est à zéro. Tout le monde est premier.',
   'Ça commence dans pas long.',
-  "Le premier pouce l'emporte. Toujours.",
+  "Le premier à peser l'emporte. Toujours.",
   'Buzzer avant de savoir la réponse : un plan risqué.',
   "Aucune question n'a encore fait de victime.",
-  'Que le meilleur pouce gagne.',
+  'Que la main la plus rapide gagne.',
   'Prenez une gorgée. Après, ça va vite.',
   'Il y a des bonnes réponses, et il y a des réponses à zéro point.',
   'Vos coéquipiers comptent sur vous. Aucune pression.',
   'On teste vos réflexes dans un instant.',
   'Le silence avant la tempête de buzz.',
-  'Placez vos pouces. Respirez.',
+  'La main au-dessus du bouton. Respirez.',
   "Ce soir, quelqu'un va buzzer trop vite.",
   'Les remontées spectaculaires commencent toutes à zéro.',
   "Le buzzer ne pardonne pas l'hésitation.",
   'Chacun son tour de briller.',
   'La chance sourit à ceux qui appuient.',
   'Préparez vos meilleures excuses.',
+  'Frapper plus fort ne rend pas la réponse meilleure.',
+  'Le bouton ne connaît pas la réponse. Vous non plus, peut-être.',
+  'On entend qui a buzzé. On voit qui le regrette.',
+  'Un gros bouton, une petite hésitation, une longue soirée.',
+  'Le bouton encaisse. Votre orgueil, un peu moins.',
+  'Quatre boutons, une seule bonne réponse, beaucoup de courage.',
 ];
 
 class _PopoutIdleState extends State<PopoutIdle> {

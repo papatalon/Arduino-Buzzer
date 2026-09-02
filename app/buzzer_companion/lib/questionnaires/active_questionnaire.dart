@@ -32,9 +32,54 @@ class ActiveQuestionnaire extends ChangeNotifier {
   Questionnaire? _questionnaire;
   String _origine = '';
   int _index = 0;
-  int? _lastPhase;
+
+  // QUESTIONNAIRE LIBRE : l'animateur pose ses propres questions, l'app ne
+  // fait que compter les points. Le questionnaire choisi n'est PAS oublié
+  // pour autant : on peut jouer une manche libre entre deux manches d'un
+  // questionnaire sans avoir à le rechoisir après.
+  bool libre = false;
+
+  // Nombre de questions d'une manche libre, ou null pour « sans limite »,
+  // où l'animateur arrête quand il veut. Sans objet quand un questionnaire
+  // fournit les questions : c'est sa longueur qui décide.
+  int? nombreLibre;
 
   bool get active => _questionnaire != null && _questionnaire!.questions.isNotEmpty;
+
+  // Vrai quand une partie peut démarrer : soit un questionnaire fournit les
+  // questions, soit l'animateur a dit qu'il posait les siennes.
+  bool get pretAJouer => libre || active;
+
+  // Ce que « Lancer la partie » envoie au buzzer (START_GAME|<n>).
+  //
+  // Zéro veut dire « ouvert » : le buzzer ne compte pas. C'est le cas avec un
+  // questionnaire, puisque c'est l'app qui sait quand il est épuisé, et le
+  // cas d'une manche libre sans limite.
+  int get nombreALancer => libre ? (nombreLibre ?? 0) : 0;
+
+  void utiliserLibre({int? nombre}) {
+    libre = true;
+    nombreLibre = nombre;
+    // Les questions ne viennent plus de l'app : elle ne doit pas continuer
+    // d'en afficher une.
+    _game.setAppQuestion(null, null, null);
+    notifyListeners();
+  }
+
+  // Revenir au questionnaire deja choisi apres une manche libre.
+  void reprendreQuestionnaire() {
+    if (!active) return;
+    libre = false;
+    _push();
+    notifyListeners();
+  }
+
+  void reglerNombreLibre(int? nombre) {
+    if (nombreLibre == nombre) return;
+    nombreLibre = nombre;
+    notifyListeners();
+  }
+
   String get title => _questionnaire?.title ?? '';
   String get origine => _origine;
   int get index => _index;
@@ -52,6 +97,9 @@ class ActiveQuestionnaire extends ChangeNotifier {
     _questionnaire = questionnaire;
     _origine = origine;
     _index = 0;
+    // Choisir un questionnaire sort du mode libre : c'est lui qui fournit les
+    // questions maintenant.
+    libre = false;
     _push();
     notifyListeners();
   }
@@ -60,6 +108,8 @@ class ActiveQuestionnaire extends ChangeNotifier {
     _questionnaire = null;
     _origine = '';
     _index = 0;
+    libre = false;
+    nombreLibre = null;
     _game.setAppQuestion(null, null, null);
     notifyListeners();
   }
@@ -92,24 +142,9 @@ class ActiveQuestionnaire extends ChangeNotifier {
     );
   }
 
-  // Appelée à chaque notification de l'état de partie.
-  void onGameChanged() {
-    final phase = _game.phase;
-    final avant = _lastPhase;
-    if (phase == avant) return;
-    _lastPhase = phase;
-    if (!active || phase == null) return;
-
-    if (!isPhase(phase, 'WAITING_BUZZER')) return;
-
-    if (avant != null && (isPhase(avant, 'SHOW_SCORES') || isPhase(avant, 'ANSWER_REVEAL'))) {
-      next();
-    } else if (avant != null && isPhase(avant, 'INTRO')) {
-      // Début de partie : on repart de la première question, même si le
-      // questionnaire avait déjà servi.
-      _index = 0;
-      _push();
-      notifyListeners();
-    }
-  }
+  // L'AVANCEMENT N'EST PLUS DEDUIT. Il l'etait, en observant les transitions
+  // de phase du buzzer, parce que c'etait le buzzer qui menait la partie. En
+  // mode application, c'est le moteur de jeu qui decide quand on passe a la
+  // question suivante, et il le dit : il appelle goTo(). Deduire ce qu'on
+  // decide soi-meme etait le symptome d'un mauvais partage des roles.
 }

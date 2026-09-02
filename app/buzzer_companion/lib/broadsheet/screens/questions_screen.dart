@@ -33,11 +33,21 @@ class QuestionsScreen extends StatefulWidget {
       {super.key,
       required this.store,
       required this.catalogue,
-      required this.actif});
+      required this.actif,
+      required this.pourLaPartie,
+      required this.onRetourPartie});
 
   final QuestionnaireStore store;
   final CatalogueStore catalogue;
   final ActiveQuestionnaire actif;
+  // Vrai quand on est arrive ici DEPUIS le lancement d'une partie. L'ecran
+  // dit alors pourquoi, et comment revenir.
+  final bool pourLaPartie;
+  // Ramene a l'ecran Partie. Appele des qu'un questionnaire est mis en jeu :
+  // choisir un questionnaire EST une etape du lancement, pas une visite a la
+  // bibliotheque, et laisser l'operateur retrouver son chemin tout seul
+  // apres coup etait un oubli.
+  final VoidCallback onRetourPartie;
 
   @override
   State<QuestionsScreen> createState() => _QuestionsScreenState();
@@ -144,7 +154,13 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     );
     // Une copie, pas l'objet ouvert : sinon continuer à écrire dans
     // l'éditeur modifierait la partie en cours sous les pieds de l'animateur.
-    _tell('« ${open.title} » est en jeu. Allez à Partie pour la conduire.');
+    //
+    // Et on ramène à Partie plutôt que d'y envoyer par un message. Choisir un
+    // questionnaire EST une étape du lancement : laisser l'opérateur retrouver
+    // son chemin après coup était un oubli, et il n'avait aucun moyen évident
+    // de revenir s'il s'était trompé de source.
+    _tell('« ${open.title} » est en jeu.');
+    widget.onRetourPartie();
   }
 
   Future<void> _save() async {
@@ -259,6 +275,8 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
         if (_open == null) {
           return _Library(
             store: widget.store,
+            pourLaPartie: widget.pourLaPartie,
+            onRetourPartie: widget.onRetourPartie,
             catalogue: widget.catalogue,
             selection: _selection,
             onSelect: (s) => setState(() => _selection = s),
@@ -380,6 +398,8 @@ String _quand(DateTime? moment) {
 class _Library extends StatelessWidget {
   const _Library({
     required this.store,
+    required this.pourLaPartie,
+    required this.onRetourPartie,
     required this.catalogue,
     required this.selection,
     required this.onSelect,
@@ -390,6 +410,8 @@ class _Library extends StatelessWidget {
   });
 
   final QuestionnaireStore store;
+  final bool pourLaPartie;
+  final VoidCallback onRetourPartie;
   final CatalogueStore catalogue;
   final _Selection selection;
   final ValueChanged<_Selection> onSelect;
@@ -417,12 +439,49 @@ class _Library extends StatelessWidget {
 
   // --- Premier niveau : les collections
 
+  // Bandeau montré quand on est arrivé ici depuis le lancement d'une partie.
+  // Il répond aux deux questions qu'on se pose alors : pourquoi suis-je ici,
+  // et comment j'en sors si je me suis trompé. La barre latérale suffisait
+  // techniquement, mais on ne la regarde pas quand on est concentré sur une
+  // tâche.
+  List<Widget> _bandeauPartie() {
+    if (!pourLaPartie) return const [];
+    return [
+      Container(
+        margin: const EdgeInsets.only(bottom: BSSpace.s4),
+        padding: const EdgeInsets.fromLTRB(BSSpace.s3, BSSpace.s2, BSSpace.s2, BSSpace.s2),
+        decoration: const BoxDecoration(
+          color: BSColors.accent100,
+          border: Border(top: BorderSide(color: BSColors.accent, width: 3)),
+        ),
+        child: Row(
+          children: [
+            Expanded(
+              child: Text(
+                'Choisissez un questionnaire, puis « Utiliser pour la partie ». '
+                'Vous reviendrez ici automatiquement.',
+                style: BSType.body(size: 16, color: BSColors.accent900),
+              ),
+            ),
+            const SizedBox(width: BSSpace.s3),
+            TextButton(
+              onPressed: onRetourPartie,
+              style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
+              child: const Text('‹ Retour à Partie'),
+            ),
+          ],
+        ),
+      ),
+    ];
+  }
+
   List<Widget> _grille() {
     final entrees = catalogue.catalogue.entries;
     final questionsCatalogue =
         entrees.fold<int>(0, (somme, e) => somme + e.questionCount);
 
     return [
+      ..._bandeauPartie(),
       Row(
         children: [
           Text('Questionnaires', style: BSType.buzzerNameConsole(size: 26)),
@@ -543,6 +602,7 @@ class _Library extends StatelessWidget {
     final total = perso.length + entrees.length;
 
     return [
+      ..._bandeauPartie(),
       Row(
         children: [
           TextButton(

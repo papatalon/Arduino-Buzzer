@@ -87,6 +87,23 @@ char BleLink::pollKey() {
         if (mask >= 0 && mask < 1024) {  // 10 bits (QCAT_COUNT)
           _pendingCategoryMask = mask;
         }
+      } else if (_rxBuffer.startsWith("ARM|")) {
+        int m = _rxBuffer.substring(4).toInt();
+        if (m >= 0 && m < 16) {
+          _pendingArm = m;
+        }
+      } else if (_rxBuffer == "DISARM") {
+        _pendingArm = 0;
+      } else if (_rxBuffer.startsWith("LED|")) {
+        int m = _rxBuffer.substring(4).toInt();
+        if (m >= 0 && m < 16) {
+          _pendingLeds = m;
+        }
+      } else if (_rxBuffer.startsWith("START_GAME|")) {
+        int n = _rxBuffer.substring(11).toInt();
+        if (n >= 0 && n <= 99) {   // QCOUNT_MAX ; 0 = ouvert
+          _pendingStartGame = n;
+        }
       } else if (_rxBuffer.startsWith("SET_COUNT|")) {
         int n = _rxBuffer.substring(10).toInt();
         if (n >= 0 && n <= 99) {  // QCOUNT_MAX
@@ -133,6 +150,24 @@ char BleLink::consumeSoundCommand() {
 
 int BleLink::soundCommandBuzzer() {
   return _pendingSoundBuzzer;
+}
+
+int BleLink::consumeArm() {
+  int v = _pendingArm;
+  _pendingArm = -1;
+  return v;
+}
+
+int BleLink::consumeLeds() {
+  int v = _pendingLeds;
+  _pendingLeds = -1;
+  return v;
+}
+
+int BleLink::consumeStartGame() {
+  int v = _pendingStartGame;
+  _pendingStartGame = -1;
+  return v;
 }
 
 int BleLink::consumeQuestionCount() {

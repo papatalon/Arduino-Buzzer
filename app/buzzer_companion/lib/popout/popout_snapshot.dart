@@ -1,6 +1,8 @@
 import 'dart:convert';
 
+import '../jeu/moteur_quiz.dart';
 import '../protocol.dart';
+import '../questionnaires/questionnaire.dart';
 
 // Instantané de l'état à synchroniser vers la fenêtre de l'écran public —
 // c'est aussi un contrat de confidentialité : seuls les champs présents ici
@@ -51,6 +53,7 @@ class PopoutSnapshot {
     this.soundLastClaimed = false,
     this.recallIndex,
     this.logoPath,
+    this.appMene = false,
   });
 
   static const empty = PopoutSnapshot(
@@ -90,6 +93,12 @@ class PopoutSnapshot {
   final int? gameWinner;
   final bool gameTie;
   final bool gameFinished;
+
+  // L'APPLICATION MENE : ce qui suit vient du moteur de jeu de l'app, pas de
+  // la telemetrie du buzzer. L'ecran public s'en sert pour savoir quand une
+  // partie tourne vraiment, puisque la phase du buzzer ne le dit plus (il
+  // reste en APP_CONTROL du debut a la fin).
+  final bool appMene;
 
   // Simon : aucun score, seulement le niveau atteint.
   final int? simonLevel;
@@ -135,6 +144,66 @@ class PopoutSnapshot {
   // teamNames est obligatoire à dessein : un appel qui l'oubliait produisait
   // un écran public muet sur les noms, sans erreur ni avertissement. Le
   // compilateur attrape désormais le cas.
+  // L'ECRAN PUBLIC QUAND L'APPLICATION MENE.
+  //
+  // Rien ici ne vient du buzzer : il reste en APP_CONTROL du debut a la fin
+  // de la partie et ne tient plus ni score, ni question, ni fin de partie.
+  // On remplit donc les memes champs que la telemetrie remplissait, avec les
+  // valeurs du moteur, ce qui laisse la fenetre publique telle quelle : elle
+  // sait deja les rendre.
+  factory PopoutSnapshot.duMoteur(
+    MoteurQuiz moteur,
+    GameState game, {
+    required QuizQuestion? question,
+    required List<String> teamNames,
+    required String? logoPath,
+    required int? recallIndex,
+  }) {
+    // Meme regle que pour le firmware : sur les jeux avec chrono, la salle ne
+    // voit la question qu'une fois le « top » donne, pas pendant que
+    // l'animateur la lit encore a voix haute.
+    final porteChrono = moteur.utiliseChrono && moteur.chronoPremiere > 0;
+    final avantLeTop = porteChrono &&
+        moteur.etape == EtapeQuiz.attente &&
+        !moteur.secondeChance &&
+        !moteur.chronoActif &&
+        !moteur.tempsEcoule;
+    final montrer = question != null && !avantLeTop;
+
+    final flow = switch (moteur.etape) {
+      EtapeQuiz.attente => QuestionFlowState.arming,
+      EtapeQuiz.buzze => QuestionFlowState.buzzed,
+      EtapeQuiz.scores => QuestionFlowState.scored,
+      EtapeQuiz.revelee => QuestionFlowState.revealed,
+      EtapeQuiz.repos || EtapeQuiz.finie => QuestionFlowState.none,
+    };
+    // La reponse ne sort qu'une fois la question tranchee : c'est le contrat
+    // de confidentialite, et il se tient ici, a la serialisation.
+    final revelee = moteur.etape == EtapeQuiz.revelee || moteur.etape == EtapeQuiz.scores;
+
+    return PopoutSnapshot(
+      appMene: true,
+      scores: List<int>.of(moteur.scores),
+      present: List<bool>.of(moteur.presents),
+      gameMode: moteur.jeu,
+      displayGameMode: moteur.jeu,
+      phase: game.phase,
+      lastBuzz: moteur.etape == EtapeQuiz.buzze ? moteur.buzzeur : moteur.dernierJuge,
+      flowState: flow,
+      questionCategory: montrer && question.category.isNotEmpty ? question.category : null,
+      questionText: montrer ? question.question : null,
+      answerText: revelee ? question?.answer : null,
+      questionsAsked: moteur.numeroQuestion,
+      qcountValue: moteur.limiteQuestions,
+      teamNames: teamNames,
+      gameWinner: moteur.gagnant,
+      gameTie: moteur.egalite,
+      gameFinished: moteur.etape == EtapeQuiz.finie,
+      recallIndex: recallIndex,
+      logoPath: logoPath,
+    );
+  }
+
   factory PopoutSnapshot.fromGameState(
     GameState game, {
     required List<String> teamNames,
@@ -219,6 +288,7 @@ class PopoutSnapshot {
       gameWinner: json['gameWinner'] as int?,
       gameTie: json['gameTie'] as bool? ?? false,
       gameFinished: json['gameFinished'] as bool? ?? false,
+      appMene: json['appMene'] as bool? ?? false,
       simonLevel: json['simonLevel'] as int?,
       simonEntered: json['simonEntered'] as int?,
       simonLength: json['simonLength'] as int?,
@@ -264,6 +334,7 @@ class PopoutSnapshot {
         'gameWinner': gameWinner,
         'gameTie': gameTie,
         'gameFinished': gameFinished,
+        'appMene': appMene,
         'simonLevel': simonLevel,
         'simonEntered': simonEntered,
         'simonLength': simonLength,

@@ -70,7 +70,6 @@ class _BuzzerTable extends StatelessWidget {
             color: kBuzzerColors[i],
             present: game.present[i],
             score: _scoreFor(i),
-            soundIndex: game.buzzerSound[i],
             teams: teams,
             index: i,
           ),
@@ -85,7 +84,6 @@ class _BuzzerRow extends StatelessWidget {
     required this.color,
     required this.present,
     required this.score,
-    required this.soundIndex,
     required this.teams,
     required this.index,
   });
@@ -93,13 +91,16 @@ class _BuzzerRow extends StatelessWidget {
   final BuzzerColor color;
   final bool present;
   final int? score;
-  final int? soundIndex;
   final TeamNames teams;
   final int index;
 
   @override
   Widget build(BuildContext context) {
-    final status = !present ? 'absent' : (soundIndex != null ? 'son $soundIndex · présent' : 'présent');
+    // Pas de numéro de son ici. « son 15 » est un index interne : ça ne dit
+    // rien à personne. Le rail sert à surveiller la table pendant qu'on
+    // anime, pas à rappeler une configuration. Les sons se règlent sur
+    // l'écran Buzzers, et une fois réglés il n'y a plus rien à en dire.
+    final status = present ? 'présent' : 'absent';
     return Opacity(
       opacity: present ? 1 : 0.45,
       child: Row(

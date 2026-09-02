@@ -6,25 +6,20 @@ import '../questionnaires/active_questionnaire.dart';
 import 'tokens.dart';
 
 // Sous-écrans de réglage après un choix de jeu (durée du chrono, nombre de
-// manches, nombre de sons + leurres, catégories/nombre de questions) — voir
+// manches, nombre de sons + leurres) — voir
 // isGameSetupPhase() dans protocol.dart. Contrairement au choix du jeu
 // (GameChoiceScreen), la plupart de ces écrans n'ont aucune ambiguïté de
 // curseur : une seule valeur ajustée à la fois, entièrement visible via la
-// télémétrie (CHRONO_CFG/ROUNDS_CFG/SOUND_CFG/QCOUNT_CFG), donc les boutons
+// télémétrie (CHRONO_CFG/ROUNDS_CFG/SOUND_CFG), donc les boutons
 // +/-/confirmer/annuler réutilisent tels quels "KEY|2"/"KEY|8"/"KEY|#"/
 // "KEY|*" (mêmes touches que le clavier physique).
 //
-// Deux exceptions, où rejouer des touches ne marcherait pas :
-//
-//   Les catégories (multi-sélection, voir _QuizCatsSetup) envoient le masque
-//   final en une commande, SET_CATS|<mask> : les raccourcis du firmware
-//   dépendent d'un curseur physique qui n'a aucun rapport avec ce que l'app
-//   vient de cocher.
-//
-//   Le nombre de questions envoie SET_COUNT|<n> quand un questionnaire de
-//   l'application est en jeu, pour imposer le mode ouvert : le compteur du
-//   firmware ne reboucle pas, donc revenir à 0 depuis 99 demanderait 99
-//   pressions de touche.
+// CES TROIS ÉCRANS SONT UN RESTE, et ils sont à reprendre. Ce sont encore
+// des miroirs de la machine à états du firmware : l'application y rejoue des
+// touches au lieu de posséder le réglage. Le même travail que celui fait
+// pour les catégories et le nombre de questions reste à faire ici, pour que
+// la durée du chrono, le nombre de manches et le nombre de sons appartiennent
+// à l'application et lui soient dits en une commande.
 class GameSetupView extends StatelessWidget {
   const GameSetupView(
       {super.key, required this.game, required this.ble, required this.actif});
@@ -43,10 +38,11 @@ class GameSetupView extends StatelessWidget {
       body = _RoundsSetup(game: game, ble: ble);
     } else if (phase == kPhaseNames.indexOf('SOUND_SETUP')) {
       body = _SoundSetup(game: game, ble: ble);
-    } else if (phase == kPhaseNames.indexOf('QUIZ_CATS')) {
-      body = _QuizCatsSetup(game: game, ble: ble, actif: actif);
-    } else if (phase == kPhaseNames.indexOf('QUIZ_COUNT')) {
-      body = _QuizCountSetup(game: game, ble: ble, actif: actif);
+    // Plus de QUIZ_CATS ni de QUIZ_COUNT : ces écrans n'existent que pour le
+    // clavier physique du buzzer. En mode application, le questionnaire est
+    // choisi dans l'app et le départ se demande en une commande
+    // (BleLinkService.startGame), sans faire naviguer le firmware dans ses
+    // menus.
     } else {
       body = const SizedBox.shrink();
     }
@@ -245,211 +241,6 @@ class _SoundSetup extends StatelessWidget {
           ],
         ),
       ],
-    );
-  }
-}
-
-// Nombre de questions. Deux comportements, selon qui mène.
-//
-// Sans questionnaire de l'application : un compteur ordinaire, l'animateur
-// choisit combien de questions et le buzzer arrête la partie à ce compte.
-//
-// AVEC un questionnaire de l'application : le buzzer passe en MODE OUVERT
-// (0) tout seul, et la partie démarre. C'est l'application qui fournit les
-// questions, donc c'est elle qui sait quand la soirée est finie ; un buzzer
-// qui compte jusqu'à 10 pendant qu'on joue une manche de 25 couperait la
-// partie au milieu. L'écran ne fait que passer, il n'y a rien à décider.
-class _QuizCountSetup extends StatefulWidget {
-  const _QuizCountSetup(
-      {required this.game, required this.ble, required this.actif});
-  final GameState game;
-  final BleLinkService ble;
-  final ActiveQuestionnaire actif;
-
-  @override
-  State<_QuizCountSetup> createState() => _QuizCountSetupState();
-}
-
-class _QuizCountSetupState extends State<_QuizCountSetup> {
-  @override
-  void initState() {
-    super.initState();
-    // Une seule fois, à l'arrivée sur l'écran : entrer dans QUIZ_COUNT monte
-    // ce widget une fois, et la commande fait aussitôt basculer la phase.
-    if (widget.actif.active) {
-      widget.ble.setQuestionCount(0);
-    }
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    if (widget.actif.active) {
-      return Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text('Mode ouvert', style: BSType.buzzerNameConsole(size: 26)),
-          const SizedBox(height: BSSpace.s2),
-          SizedBox(
-            width: 620,
-            child: Text(
-              '« ${widget.actif.title} » mène la partie : ${widget.actif.total} '
-              "questions. Le buzzer ne compte pas, c'est l'application qui "
-              'décide quand la soirée est finie.',
-              style: BSType.body(size: 17, color: BSColors.neutral700),
-            ),
-          ),
-          const SizedBox(height: BSSpace.s3),
-          Text('Lancement de la partie...',
-              style: BSType.body(size: 15, color: BSColors.accent700)),
-        ],
-      );
-    }
-
-    final value = widget.game.qcountValue;
-    return _SetupCard(
-      title: 'Nombre de questions',
-      subtitle: gameModeName(widget.game.gameMode),
-      value: value == null ? '' : (value == 0 ? 'Ouvert' : '$value'),
-      onIncrement: () => widget.ble.sendKey('2'),
-      onDecrement: () => widget.ble.sendKey('8'),
-      onConfirm: () => widget.ble.sendKey('#'),
-      onCancel: () => widget.ble.sendKey('*'),
-    );
-  }
-}
-
-// Choix des catégories de questions : seul écran de ce fichier avec un état
-// local (Set<int> _selected) — l'opérateur coche/décoche librement sans
-// rien envoyer, puis "Confirmer" transmet le masque final en une seule
-// commande (SET_CATS|<mask>, voir Configuration::confirmCategories côté
-// Mega). Initialisé une fois depuis la télémétrie (game.qcatMask) : pas
-// resynchronisé ensuite pour ne pas écraser une sélection en cours.
-class _QuizCatsSetup extends StatefulWidget {
-  const _QuizCatsSetup(
-      {required this.game, required this.ble, required this.actif});
-  final GameState game;
-  final BleLinkService ble;
-  final ActiveQuestionnaire actif;
-
-  @override
-  State<_QuizCatsSetup> createState() => _QuizCatsSetupState();
-}
-
-class _QuizCatsSetupState extends State<_QuizCatsSetup> {
-  late Set<int> _selected;
-
-  @override
-  void initState() {
-    super.initState();
-    // Un questionnaire de l'application est en jeu : la banque du buzzer doit
-    // rester en retrait, donc aucune catégorie cochée. Sinon les deux
-    // poseraient des questions différentes en même temps, l'une à l'écran et
-    // l'autre sur le LCD.
-    if (widget.actif.active) {
-      _selected = {};
-      return;
-    }
-    final mask = widget.game.qcatMask ?? ((1 << kCategoryNames.length) - 1);
-    _selected = {for (var i = 0; i < kCategoryNames.length; i++) if (mask & (1 << i) != 0) i};
-  }
-
-  int get _mask => _selected.fold(0, (m, i) => m | (1 << i));
-
-  @override
-  Widget build(BuildContext context) {
-    final allSelected = _selected.length == kCategoryNames.length;
-    final noneSelected = _selected.isEmpty;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Text('Catégories de questions', style: BSType.buzzerNameConsole(size: 26)),
-        if (widget.actif.active) ...[
-          const SizedBox(height: BSSpace.s2),
-          SizedBox(
-            width: 620,
-            child: Text(
-              '« ${widget.actif.title} » est en jeu : les questions viennent de '
-              "l'application. Laissez « Aucune » coché pour que la banque du "
-              'buzzer reste en retrait.',
-              style: BSType.body(size: 16, color: BSColors.accent700),
-            ),
-          ),
-        ],
-        const SizedBox(height: BSSpace.s4),
-        _CatRow(
-          label: 'Toutes',
-          checked: allSelected,
-          onTap: () => setState(() => _selected = {for (var i = 0; i < kCategoryNames.length; i++) i}),
-        ),
-        _CatRow(
-          label: 'Aucune (questionnaire perso)',
-          checked: noneSelected,
-          onTap: () => setState(() => _selected = {}),
-        ),
-        const SizedBox(height: BSSpace.s2),
-        for (var i = 0; i < kCategoryNames.length; i++)
-          _CatRow(
-            label: kCategoryNames[i],
-            checked: _selected.contains(i),
-            onTap: () => setState(() {
-              if (!_selected.remove(i)) _selected.add(i);
-            }),
-          ),
-        const SizedBox(height: BSSpace.s4),
-        Row(
-          children: [
-            FilledButton(
-              onPressed: () => widget.ble.setCategories(_mask),
-              style: FilledButton.styleFrom(
-                backgroundColor: BSColors.accent,
-                foregroundColor: BSColors.bg,
-                shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
-              ),
-              child: const Text('Confirmer'),
-            ),
-            const SizedBox(width: BSSpace.s3),
-            TextButton(
-              onPressed: () => widget.ble.sendKey('*'),
-              style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
-              child: const Text('Annuler'),
-            ),
-          ],
-        ),
-      ],
-    );
-  }
-}
-
-class _CatRow extends StatelessWidget {
-  const _CatRow({required this.label, required this.checked, required this.onTap});
-  final String label;
-  final bool checked;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      child: GestureDetector(
-        onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 4),
-          child: Row(
-            children: [
-              Icon(
-                checked ? Icons.check_box : Icons.check_box_outline_blank,
-                size: 20,
-                color: checked ? BSColors.accent700 : BSColors.neutral600,
-              ),
-              const SizedBox(width: BSSpace.s2),
-              Text(label, style: BSType.body(size: 16, color: BSColors.text)),
-            ],
-          ),
-        ),
-      ),
     );
   }
 }

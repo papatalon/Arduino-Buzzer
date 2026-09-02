@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../ble_link_service.dart';
 import '../protocol.dart';
 import '../team_names.dart';
+import 'boutons.dart';
 import 'phosphor_duotone.dart';
 import 'pulse.dart';
 import 'tokens.dart';
@@ -49,14 +50,27 @@ class QuestionFlowView extends StatelessWidget {
           ],
         ),
         const SizedBox(height: BSSpace.s2),
-        Text(
-          game.questionText ?? '',
-          style: revealed
-              ? BSType.body(size: 44, color: BSColors.neutral700).copyWith(fontWeight: FontWeight.w600, height: 1.1)
-              : BSType.questionConsole(),
-        ),
-        const SizedBox(height: BSSpace.s3),
-        _AnswerBlock(state: state, answer: game.answerText ?? ''),
+        // Pas de question à afficher : questionnaire libre, où l'animateur
+        // pose les siennes, ou application redémarrée en pleine partie. On le
+        // dit plutôt que de laisser un blanc qui ressemble à une panne. La
+        // conduite, elle, reste entière en dessous.
+        if ((game.questionText ?? '').isEmpty) ...[
+          Text(
+            'Question posée à voix haute',
+            style: BSType.questionConsole().copyWith(color: BSColors.neutral500),
+          ),
+          const SizedBox(height: BSSpace.s3),
+        ] else ...[
+          Text(
+            game.questionText!,
+            style: revealed
+                ? BSType.body(size: 44, color: BSColors.neutral700)
+                    .copyWith(fontWeight: FontWeight.w600, height: 1.1)
+                : BSType.questionConsole(),
+          ),
+          const SizedBox(height: BSSpace.s3),
+          _AnswerBlock(state: state, answer: game.answerText ?? ''),
+        ],
         const SizedBox(height: BSSpace.s6),
         switch (state) {
           QuestionFlowState.arming => _ArmingBlock(game: game, ble: ble, teams: teams),
@@ -94,9 +108,9 @@ class EndConfirmView extends StatelessWidget {
           const SizedBox(height: BSSpace.s6),
           Row(
             children: [
-              _PrimaryButton(label: 'Oui, terminer', onPressed: () => ble.sendKey('#')),
+              BSPrimaryButton(label: 'Oui, terminer', onPressed: () => ble.sendKey('#')),
               const SizedBox(width: BSSpace.s3),
-              _SecondaryButton(label: 'Reprendre la partie', onPressed: () => ble.sendKey('*')),
+              BSSecondaryButton(label: 'Reprendre la partie', onPressed: () => ble.sendKey('*')),
             ],
           ),
         ],
@@ -145,11 +159,11 @@ class EndGameView extends StatelessWidget {
           Row(
             children: [
               if (tie) ...[
-                _PrimaryButton(label: "Lancer un bris d'égalité", onPressed: () => ble.sendKey('#')),
+                BSPrimaryButton(label: "Lancer un bris d'égalité", onPressed: () => ble.sendKey('#')),
                 const SizedBox(width: BSSpace.s3),
-                _SecondaryButton(label: "Accepter l'égalité", onPressed: () => ble.sendKey('*')),
+                BSSecondaryButton(label: "Accepter l'égalité", onPressed: () => ble.sendKey('*')),
               ] else
-                _PrimaryButton(label: 'Retour au menu', onPressed: () => ble.sendKey('#')),
+                BSPrimaryButton(label: 'Retour au menu', onPressed: () => ble.sendKey('#')),
             ],
           ),
         ],
@@ -176,64 +190,6 @@ class _AnswerBlock extends StatelessWidget {
       );
     }
     return Text(answer, style: BSType.answerConsole());
-  }
-}
-
-// --- Boutons partagés, alignés sur le design system (btn-primary/
-// btn-secondary/ghost) --------------------------------------------------
-
-class _PrimaryButton extends StatelessWidget {
-  const _PrimaryButton({required this.label, required this.onPressed});
-  final String label;
-  final VoidCallback onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return FilledButton(
-      onPressed: onPressed,
-      style: FilledButton.styleFrom(
-        backgroundColor: BSColors.accent,
-        foregroundColor: BSColors.bg,
-        shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
-      ),
-      child: Text(label, style: BSType.body(size: 15, color: BSColors.bg).copyWith(fontWeight: FontWeight.w600)),
-    );
-  }
-}
-
-class _SecondaryButton extends StatelessWidget {
-  const _SecondaryButton({required this.label, required this.onPressed});
-  final String label;
-  final VoidCallback onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return OutlinedButton(
-      onPressed: onPressed,
-      style: OutlinedButton.styleFrom(
-        foregroundColor: BSColors.text,
-        side: const BorderSide(color: BSColors.divider),
-        shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
-      ),
-      child: Text(label, style: BSType.body(size: 15, color: BSColors.text).copyWith(fontWeight: FontWeight.w600)),
-    );
-  }
-}
-
-class _GhostButton extends StatelessWidget {
-  const _GhostButton({required this.label, required this.onPressed});
-  final String label;
-  final VoidCallback onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return TextButton(
-      onPressed: onPressed,
-      style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
-      child: Text(label, style: BSType.body(size: 15, color: BSColors.accent700).copyWith(fontWeight: FontWeight.w600)),
-    );
   }
 }
 
@@ -292,10 +248,10 @@ class _ArmingBlock extends StatelessWidget {
         Row(
           children: [
             if (chrono) ...[
-              _PrimaryButton(label: 'Lancer le chrono', onPressed: () => ble.sendKey('D')),
+              BSPrimaryButton(label: 'Lancer le chrono', onPressed: () => ble.sendKey('D')),
               const SizedBox(width: BSSpace.s3),
             ],
-            _SecondaryButton(label: 'Révéler la réponse', onPressed: () => ble.sendKey('0')),
+            BSSecondaryButton(label: 'Révéler la réponse', onPressed: () => ble.sendKey('0')),
           ],
         ),
         const SizedBox(height: BSSpace.s2),
@@ -303,11 +259,11 @@ class _ArmingBlock extends StatelessWidget {
           children: [
             // Son d'ambiance pendant que la reponse se fait attendre
             // (touche # en WAITING_BUZZER, voir Buzzer.ino).
-            _GhostButton(label: "Son d'attente", onPressed: () => ble.sendKey('#')),
+            BSGhostButton(label: "Son d'attente", onPressed: () => ble.sendKey('#')),
             const SizedBox(width: BSSpace.s3),
-            _GhostButton(label: 'Corriger', onPressed: () => ble.sendKey('B')),
+            BSGhostButton(label: 'Corriger', onPressed: () => ble.sendKey('B')),
             const SizedBox(width: BSSpace.s3),
-            _GhostButton(label: 'Terminer la partie', onPressed: () => ble.sendKey('C')),
+            BSGhostButton(label: 'Terminer la partie', onPressed: () => ble.sendKey('C')),
           ],
         ),
       ],
@@ -349,9 +305,9 @@ class _BuzzedBlock extends StatelessWidget {
         const SizedBox(height: BSSpace.s4),
         Row(
           children: [
-            _PrimaryButton(label: 'Bonne réponse', onPressed: () => ble.sendKey('A')),
+            BSPrimaryButton(label: 'Bonne réponse', onPressed: () => ble.sendKey('A')),
             const SizedBox(width: BSSpace.s3),
-            _SecondaryButton(label: 'Mauvaise réponse', onPressed: () => ble.sendKey('D')),
+            BSSecondaryButton(label: 'Mauvaise réponse', onPressed: () => ble.sendKey('D')),
           ],
         ),
       ],
@@ -390,9 +346,9 @@ class _ScoredBlock extends StatelessWidget {
         const SizedBox(height: BSSpace.s4),
         Row(
           children: [
-            _PrimaryButton(label: 'Continuer maintenant', onPressed: () => ble.sendKey('#')),
+            BSPrimaryButton(label: 'Continuer maintenant', onPressed: () => ble.sendKey('#')),
             const SizedBox(width: BSSpace.s3),
-            _GhostButton(label: 'Corriger', onPressed: () => ble.sendKey('B')),
+            BSGhostButton(label: 'Corriger', onPressed: () => ble.sendKey('B')),
           ],
         ),
       ],
@@ -417,7 +373,7 @@ class _RevealedBlock extends StatelessWidget {
           ],
         ),
         const SizedBox(height: BSSpace.s4),
-        _PrimaryButton(label: 'Continuer', onPressed: () => ble.sendKey('#')),
+        BSPrimaryButton(label: 'Continuer', onPressed: () => ble.sendKey('#')),
       ],
     );
   }

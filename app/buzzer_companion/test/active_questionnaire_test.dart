@@ -6,16 +6,16 @@ import 'package:buzzer_companion/protocol.dart';
 import 'package:buzzer_companion/questionnaires/active_questionnaire.dart';
 import 'package:buzzer_companion/questionnaires/questionnaire.dart';
 
-// L'avancement du questionnaire de l'application est DÉDUIT des transitions
-// de phase du buzzer, pas commandé : le Mega quitte l'écran des scores tout
-// seul après un délai. C'est donc la pièce la plus facile à casser sans le
-// voir, et la seule qui ne se vérifie pas à l'œil sans buzzer branché.
+// Le questionnaire en jeu est la réserve de questions de l'application : le
+// moteur de jeu lui dit où aller, et lui pousse la question courante dans
+// l'état de partie, d'où l'écran public et la console la lisent.
 //
-// Les phases arrivent par le vrai chemin (des lignes « STATE|<n> » dans le
-// flux de messages), pas en écrivant dans les champs : un test qui court-
-// circuite le parsing ne prouverait rien sur le comportement réel.
-
-String _state(String nom) => 'STATE|${kPhaseNames.indexOf(nom)}';
+// Il n'y a plus rien de déduit ici. L'avancement était autrefois deviné en
+// observant les transitions de phase du buzzer, parce que le buzzer menait la
+// partie ; c'est le moteur qui décide maintenant, et [moteur_quiz_test.dart]
+// couvre ses règles. Ce qui reste à protéger, c'est le bornage (aucun index
+// hors du questionnaire) et le fait que les champs se vident au lieu de garder
+// éternellement la dernière question affichée.
 
 void main() {
   late StreamController<String> messages;
@@ -27,19 +27,11 @@ void main() {
     game = GameState();
     game.listenTo(messages.stream);
     actif = ActiveQuestionnaire(game);
-    game.addListener(actif.onGameChanged);
   });
 
   tearDown(() async {
     await messages.close();
   });
-
-  Future<void> phases(List<String> noms) async {
-    for (final nom in noms) {
-      messages.add(_state(nom));
-      await Future<void>.delayed(Duration.zero);
-    }
-  }
 
   Questionnaire troisQuestions() => Questionnaire(
         title: 'Essai',
@@ -60,59 +52,27 @@ void main() {
     expect(game.questionsAsked, 1);
   });
 
-  test('une mauvaise réponse ne fait PAS avancer', () async {
+  test('avancer pousse la question suivante', () {
     actif.use(troisQuestions(), origine: 'Essai');
-    await phases(['INTRO', 'WAITING_BUZZER']);
-    expect(actif.index, 0);
-
-    // Un joueur buzze, se trompe, la main repasse aux autres : c'est la même
-    // question. C'est le cas que confondrait un « avance à chaque retour en
-    // attente de buzz ».
-    await phases(['BUZZER_PRESSED', 'WAITING_BUZZER']);
-    expect(actif.index, 0);
-    expect(game.questionText, 'Q1');
-  });
-
-  test('les scores puis la révélation font avancer', () async {
-    actif.use(troisQuestions(), origine: 'Essai');
-    await phases(['INTRO', 'WAITING_BUZZER']);
-
-    // Quelqu'un a trouvé : scores, puis question suivante.
-    await phases(['BUZZER_PRESSED', 'SHOW_SCORES', 'WAITING_BUZZER']);
+    actif.next();
     expect(actif.index, 1);
     expect(game.questionText, 'Q2');
-
-    // Personne n'a trouvé : la réponse est révélée, puis question suivante.
-    await phases(['ANSWER_REVEAL', 'WAITING_BUZZER']);
-    expect(actif.index, 2);
-    expect(game.questionText, 'Q3');
+    expect(game.questionCategory, 'Deux');
   });
 
-  test('passé la dernière question, le questionnaire est épuisé', () async {
+  test('passé la dernière question, le questionnaire est épuisé', () {
     actif.use(troisQuestions(), origine: 'Essai');
-    await phases(['INTRO', 'WAITING_BUZZER']);
-    await phases(['SHOW_SCORES', 'WAITING_BUZZER']);
-    await phases(['SHOW_SCORES', 'WAITING_BUZZER']);
+    actif.next();
+    actif.next();
     expect(actif.index, 2);
+    expect(actif.exhausted, isFalse);
 
-    await phases(['SHOW_SCORES', 'WAITING_BUZZER']);
+    actif.next();
     expect(actif.exhausted, isTrue);
     // Plus de question à poser : les champs se vident au lieu de garder la
     // dernière question affichée pour toujours.
     expect(game.questionText, isNull);
     expect(game.appQuestion, isFalse);
-  });
-
-  test('une nouvelle partie repart de la première question', () async {
-    actif.use(troisQuestions(), origine: 'Essai');
-    await phases(['INTRO', 'WAITING_BUZZER']);
-    await phases(['SHOW_SCORES', 'WAITING_BUZZER']);
-    expect(actif.index, 1);
-
-    // Retour au menu, puis nouvelle partie.
-    await phases(['SHOW_SCORES', 'END_GAME', 'CONFIGURATION', 'INTRO', 'WAITING_BUZZER']);
-    expect(actif.index, 0);
-    expect(game.questionText, 'Q1');
   });
 
   test('le rattrapage manuel reste borné', () {
@@ -127,16 +87,33 @@ void main() {
     expect(game.questionText, 'Q3');
   });
 
-  test('retirer le questionnaire libère les champs', () async {
+  test('revenir à la première question relit bien la première', () {
+    actif.use(troisQuestions(), origine: 'Essai');
+    actif.goTo(2);
+    expect(game.questionText, 'Q3');
+    // Ce que fait le moteur au démarrage d'une nouvelle partie, même si le
+    // questionnaire avait déjà servi.
+    actif.goTo(0);
+    expect(game.questionText, 'Q1');
+    expect(actif.exhausted, isFalse);
+  });
+
+  test('retirer le questionnaire libère les champs', () {
     actif.use(troisQuestions(), origine: 'Essai');
     expect(game.questionText, 'Q1');
     actif.clear();
     expect(actif.active, isFalse);
     expect(game.questionText, isNull);
     expect(game.appQuestion, isFalse);
+  });
 
-    // Et plus aucune transition ne le réveille.
-    await phases(['INTRO', 'WAITING_BUZZER', 'SHOW_SCORES', 'WAITING_BUZZER']);
+  test('en manche libre, l\'app ne fournit aucune question', () {
+    actif.utiliserLibre(nombre: 5);
+    expect(actif.libre, isTrue);
+    expect(game.questionText, isNull);
+    expect(game.appQuestion, isFalse);
+    // Et la faire avancer ne fabrique rien à afficher.
+    actif.goTo(3);
     expect(game.questionText, isNull);
   });
 

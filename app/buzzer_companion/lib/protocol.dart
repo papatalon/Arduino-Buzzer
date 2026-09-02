@@ -61,6 +61,9 @@ const kPhaseNames = [
   'REFLEX_OVER', 'BLIND_ANNOUNCE', 'BLIND_RUN', 'BLIND_RESULT', 'BLIND_OVER',
   'SOUND_SETUP', 'SOUND_LEARN', 'SOUND_PLAY', 'SOUND_OVER', 'DUEL_ARM',
   'DUEL_GO', 'DUEL_RESULT', 'DUEL_OVER', 'LED_TEST',
+  // Le buzzer est passé en esclave : l'application mène, il ne fait plus que
+  // gérer les boutons. Voir AppControl côté firmware.
+  'APP_CONTROL',
 ];
 
 // Libellés courts, présentables, pour les phases qui comptent le plus pour
@@ -89,6 +92,7 @@ final int _kPhaseSoundSetup = kPhaseNames.indexOf('SOUND_SETUP');
 final int _kPhaseQuizCats = kPhaseNames.indexOf('QUIZ_CATS');
 final int _kPhaseQuizCount = kPhaseNames.indexOf('QUIZ_COUNT');
 final int _kPhaseConfiguration = kPhaseNames.indexOf('CONFIGURATION');
+final int _kPhaseAppControl = kPhaseNames.indexOf('APP_CONTROL');
 final int _kPhaseIntro = kPhaseNames.indexOf('INTRO');
 final int _kPhaseEndConfirm = kPhaseNames.indexOf('END_CONFIRM');
 final int _kPhaseEndGame = kPhaseNames.indexOf('END_GAME');
@@ -109,9 +113,27 @@ bool isGameSetupPhase(int? phase) =>
     phase != null &&
     (phase == _kPhaseChrono ||
         phase == _kPhaseRoundsSetup ||
-        phase == _kPhaseSoundSetup ||
-        phase == _kPhaseQuizCats ||
-        phase == _kPhaseQuizCount);
+        phase == _kPhaseSoundSetup);
+
+// Écrans que l'application NE MIROITE PLUS.
+//
+// En mode application, le questionnaire est choisi dans l'app et la banque du
+// Mega reste en retrait : ses écrans de catégories et de nombre de questions
+// n'existent que pour son clavier physique. Les mirroiter revenait à faire
+// choisir des catégories du Mega à quelqu'un qui avait déjà choisi son
+// questionnaire dans l'application.
+//
+// Le buzzer peut quand même s'y trouver, si quelqu'un y a navigué avant que
+// l'app prenne la main. D'où ce repérage : la console le dit et propose de
+// reprendre la main, au lieu d'afficher un écran qui n'a plus de sens.
+bool isFirmwareOnlyPhase(int? phase) =>
+    phase != null && (phase == _kPhaseQuizCats || phase == _kPhaseQuizCount);
+
+// L'APPLICATION MENE. Le buzzer a lache tout etat de partie : il arme des
+// boutons et rapporte les appuis, rien de plus (voir AppControl cote
+// firmware). La console ne montre donc plus ses ecrans a lui, elle montre le
+// moteur de jeu de l'app.
+bool isAppControl(int? phase) => phase != null && phase == _kPhaseAppControl;
 
 // Au menu CONFIGURATION (rien en cours) : c'est là que la console propose
 // « Lancer la partie » (KEY|#), qui enchaîne selon le jeu choisi.
@@ -401,15 +423,38 @@ class GameState extends ChangeNotifier {
   // Cette preuve est la phase, pas la présence d'une question : les cinq
   // jeux non-quiz (Simon, Réflexe...) n'en posent jamais, donc une app
   // relancée en pleine partie de Simon se croyait au repos.
-  int? get displayGameMode {
-    if (_gameChosen) return gameMode;
-    return isGameRunning(phase) ? gameMode : null;
-  }
+  // Le jeu que l'application considère comme choisi POUR CETTE SÉANCE.
+  //
+  // Null tant que l'opérateur n'en a pas choisi un lui-même, même si le
+  // buzzer en annonce un. Le Mega garde en mémoire le dernier jeu joué et le
+  // renvoie dès qu'on se connecte : l'app affichait donc « Classique · Actif »
+  // à l'ouverture, alors que personne ne l'avait choisi ce soir-là. Une
+  // soirée commence en décidant à quoi on joue.
+  //
+  // Conséquence assumée : une application redémarrée pendant qu'une partie
+  // tourne n'adopte pas cette partie. Les boutons de conduite restent
+  // disponibles (ils se déduisent de la phase, pas du jeu), donc on peut
+  // toujours la terminer, mais l'app ne prétend pas l'avoir voulue.
+  int? get displayGameMode => _gameChosen ? gameMode : null;
 
   bool get answerRevealed => phase == _kPhaseAnswerReveal || phase == _kPhaseShowScores;
 
+  // Déduit de la PHASE seule, jamais de la présence d'une question.
+  //
+  // Le garde-fou « pas de question, pas de flux » avait du sens quand la
+  // banque du Mega fournissait toujours un texte. Il casse deux cas depuis :
+  //
+  //   Le questionnaire LIBRE, où l'animateur pose ses propres questions et
+  //   où il n'y a donc jamais de texte. La console n'aurait affiché aucun
+  //   bouton de conduite, pour toute la partie.
+  //
+  //   Une application redémarrée en pleine partie : le buzzer est en attente
+  //   d'un buzz, l'app n'a plus de question, et l'animateur se retrouvait
+  //   devant un écran sans la moindre sortie.
+  //
+  // Une question absente veut dire « rien à afficher là », pas « aucune
+  // partie en cours ». La conduite ne dépend pas du texte.
   QuestionFlowState get questionFlowState {
-    if (questionText == null) return QuestionFlowState.none;
     if (phase == _kPhaseAnswerReveal) return QuestionFlowState.revealed;
     if (phase == _kPhaseShowScores) return QuestionFlowState.scored;
     if (phase == _kPhaseBuzzerPressed) return QuestionFlowState.buzzed;
@@ -429,6 +474,12 @@ class GameState extends ChangeNotifier {
   // qu'un champ observable ne permettrait pas.
   final _sfxController = StreamController<SfxEvent>.broadcast();
   Stream<SfxEvent> get sfxEvents => _sfxController.stream;
+
+  // Les appuis sont un FLUX, pas un état : deux buzz du même joueur doivent
+  // produire deux évènements, ce qu'un champ observable ne permettrait pas.
+  // C'est ce qui alimente le moteur de jeu de l'application (MoteurQuiz).
+  final _buzzController = StreamController<({int buzzer, int ms})>.broadcast();
+  Stream<({int buzzer, int ms})> get buzzEvents => _buzzController.stream;
 
   // Question fournie par un questionnaire de l'application. Elle se pose aux
   // MÊMES champs que ceux qu'alimente la banque du buzzer : tout l'aval (la
@@ -464,11 +515,22 @@ class GameState extends ChangeNotifier {
     _sub = messages.listen(_handleMessage);
   }
 
+  // Injecte une ligne comme si elle venait du buzzer. Sert au simulateur
+  // (voir lib/simulation.dart), qui permet de travailler les écrans de jeu
+  // sans matériel branché.
+  //
+  // Volontairement le MÊME chemin que le vrai lien : un simulateur qui
+  // écrirait directement dans les champs prouverait que les écrans savent
+  // afficher des champs, pas qu'ils savent afficher ce que le firmware
+  // envoie. Les deux se ressemblent jusqu'au jour où un message change.
+  void injecter(String ligne) => _handleMessage(ligne);
+
   @override
   void dispose() {
     _selectionTimeout?.cancel();
     _sub?.cancel();
     _sfxController.close();
+    _buzzController.close();
     super.dispose();
   }
 
@@ -532,9 +594,18 @@ class GameState extends ChangeNotifier {
           }
           break;
         case 'BUZZ':
-          if (parts.length == 2) {
-            lastBuzz = int.tryParse(parts[1]);
-            handled = true;
+          // Deux formes. « BUZZ|n » vient du mode autonome, où le firmware
+          // mène. « BUZZ|n|ms » vient du mode esclave : le temps de réaction
+          // est mesuré sur le Mega, parce qu'un aller-retour Bluetooth
+          // ajouterait de 30 à 100 ms de gigue.
+          if (parts.length == 2 || parts.length == 3) {
+            final qui = int.tryParse(parts[1]);
+            if (qui != null && qui >= 0 && qui < 4) {
+              lastBuzz = qui;
+              final ms = parts.length == 3 ? int.tryParse(parts[2]) : null;
+              _buzzController.add((buzzer: qui, ms: ms ?? 0));
+              handled = true;
+            }
           }
           break;
         case 'QUESTION':

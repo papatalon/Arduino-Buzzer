@@ -6,6 +6,7 @@ import 'package:universal_ble/universal_ble.dart';
 import '../../ble_link_service.dart';
 import '../../event_logo.dart';
 import '../../protocol.dart';
+import '../../simulation.dart';
 import '../phosphor_duotone.dart';
 import '../tokens.dart';
 
@@ -17,10 +18,17 @@ import '../tokens.dart';
 // la colonne centrale — le rail droit lui-même reste le châssis invariant
 // validé à l'étape 1 (tableau des buzzers + écran public).
 class DeviceScreen extends StatelessWidget {
-  const DeviceScreen({super.key, required this.ble, required this.game, required this.logo});
+  const DeviceScreen({
+    super.key,
+    required this.ble,
+    required this.game,
+    required this.logo,
+    required this.simulateur,
+  });
   final BleLinkService ble;
   final GameState game;
   final EventLogo logo;
+  final Simulateur simulateur;
 
   @override
   Widget build(BuildContext context) {
@@ -77,6 +85,12 @@ class DeviceScreen extends StatelessWidget {
             Text('LOGO DE LA SOIRÉE', style: BSType.sectionKicker()),
             const SizedBox(height: BSSpace.s3),
             _LogoSetting(logo: logo),
+            const SizedBox(height: BSSpace.s6),
+            Container(height: 1, color: BSColors.divider),
+            const SizedBox(height: BSSpace.s4),
+            Text('SIMULATION', style: BSType.sectionKicker()),
+            const SizedBox(height: BSSpace.s3),
+            _SimulationPanel(simulateur: simulateur, game: game),
           ],
         ),
       ),
@@ -350,6 +364,102 @@ class _LogoSetting extends StatelessWidget {
                   child: const Text('Retirer'),
                 ),
               ],
+            ],
+          ),
+        );
+      },
+    );
+  }
+}
+
+// Rejoue une partie sans buzzer branché, pour pouvoir regarder les écrans de
+// jeu. Sur l'écran Appareil, avec les autres outils de diagnostic : c'est un
+// instrument de travail, pas une fonction de soirée.
+//
+// Les lignes injectées sont celles du vrai protocole (voir
+// lib/simulation.dart), donc ce qu'on regarde est ce que le firmware
+// produirait.
+class _SimulationPanel extends StatelessWidget {
+  const _SimulationPanel({required this.simulateur, required this.game});
+
+  final Simulateur simulateur;
+  final GameState game;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: simulateur,
+      builder: (context, _) {
+        return SizedBox(
+          width: 620,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Rejoue une partie sans buzzer, pour regarder les écrans de jeu. "
+                "Allez à « Partie » ou ouvrez l'écran public pendant que ça se "
+                "déroule.",
+                style: BSType.body(size: 15, color: BSColors.neutral700),
+              ),
+              const SizedBox(height: BSSpace.s3),
+              for (final scenario in kScenarios) ...[
+                Row(
+                  children: [
+                    SizedBox(
+                      width: 150,
+                      child: Text(
+                        scenario.nom,
+                        style: BSType.body(size: 17, color: BSColors.text)
+                            .copyWith(fontWeight: FontWeight.w600),
+                      ),
+                    ),
+                    OutlinedButton(
+                      onPressed: () => simulateur.jouer(scenario),
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: BSColors.text,
+                        side: const BorderSide(color: BSColors.divider),
+                        shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                      ),
+                      child: Text(
+                        simulateur.encours == scenario ? 'Rejouer' : 'Jouer',
+                        style: BSType.body(size: 14),
+                      ),
+                    ),
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: BSSpace.s3),
+                  child: Text(
+                    scenario.description,
+                    style: BSType.body(size: 14, color: BSColors.neutral600),
+                  ),
+                ),
+              ],
+              if (simulateur.actif) ...[
+                Text(
+                  'En cours : ${simulateur.encours!.nom}, '
+                  'étape ${simulateur.etape} sur ${simulateur.total}',
+                  style: BSType.body(size: 15, color: BSColors.accent700),
+                ),
+                const SizedBox(height: BSSpace.s2),
+              ],
+              Row(
+                children: [
+                  TextButton(
+                    onPressed: simulateur.actif ? simulateur.arreter : null,
+                    style: TextButton.styleFrom(foregroundColor: BSColors.neutral600),
+                    child: const Text('Arrêter'),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      simulateur.arreter();
+                      remettreAuMenu(game);
+                    },
+                    style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
+                    child: const Text('Revenir au menu'),
+                  ),
+                ],
+              ),
             ],
           ),
         );

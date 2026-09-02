@@ -48,11 +48,14 @@ void Buzzer::resetLights() {
 // Messages de démarrage tirés au hasard : la 2e ligne reçoit les points
 // animés, donc on la garde courte (max ~16 colonnes sur les 20 du LCD).
 static const char* const BOOT_MESSAGES[BOOT_MESSAGE_COUNT][2] = {
-  { "Chauffage des",       "pouces"          },
+  { "Chauffage des",       "gros boutons"    },
   { "Reveil des lutins",   "du son"          },
   { "sudo demarrer quiz",  "Acces autorise"  },
   { "Temps restant :",     "environ 3 jours" },
   { "Compilation de",      "l'ambiance"      },
+  { "Serrage des",         "ressorts"        },
+  { "Verification des",    "mauvaises fois"  },
+  { "Calibration de",      "l'injustice"     },
 };
 
 // === Phase 1 : pendant l'initialisation (bloquante) du DFPlayer ===
@@ -1221,6 +1224,10 @@ void Buzzer::resetConfigState() {
     prevPressed[i] = false;
     releasing[i] = false;
   }
+}
+
+void Buzzer::sendPresenceNow() {
+  sendPresence();
 }
 
 void Buzzer::sendPresence() {

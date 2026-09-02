@@ -5,6 +5,8 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:universal_ble/universal_ble.dart';
 
+import 'jeu/moteur_quiz.dart' show CommandesBuzzer;
+
 const _lastDeviceIdKey = 'last_device_id';
 const _lastDeviceNameKey = 'last_device_name';
 const _appHandlesSoundKey = 'app_handles_sound';
@@ -13,7 +15,7 @@ const _appHandlesSoundKey = 'app_handles_sound';
 // reconnexion automatique au dernier appareil connu), et ré-assemblage des
 // notifications en messages complets. Ne connaît rien du protocole applicatif
 // (STATE/SCORE/...) — ça, c'est le rôle de GameState, qui écoute [messages].
-class BleLinkService extends ChangeNotifier {
+class BleLinkService extends ChangeNotifier implements CommandesBuzzer {
   AvailabilityState availability = AvailabilityState.unknown;
   bool scanning = false;
   final Map<String, BleDevice> devices = {};
@@ -453,6 +455,45 @@ class BleLinkService extends ChangeNotifier {
     status = ok
         ? 'Catégories confirmées.'
         : 'Envoi impossible : aucune caractéristique BLE identifiée pour écrire.';
+    notifyListeners();
+  }
+
+  // --- Primitives du mode esclave -----------------------------------------
+  //
+  // En mode application, le buzzer ne fait que gerer les boutons : on lui dit
+  // quels buzzers accepter, et il repond BUZZ|<n>|<ms>. Voir AppControl cote
+  // firmware.
+
+  // [masque] : bit 0 = rouge ... bit 3 = vert.
+  @override
+  Future<void> armer(int masque) => _writeUartLine(connectedDeviceId,
+      _uartServiceId, _uartCharacteristicId, 'ARM|');
+
+  @override
+  Future<void> desarmer() => _writeUartLine(
+      connectedDeviceId, _uartServiceId, _uartCharacteristicId, 'DISARM');
+
+  @override
+  Future<void> allumerLeds(int masque) => _writeUartLine(connectedDeviceId,
+      _uartServiceId, _uartCharacteristicId, 'LED|');
+
+  // Demande le depart au buzzer, sans le faire naviguer dans ses menus.
+  //
+  // En mode application, le firmware n'est plus le maitre du spectacle : il
+  // ne gere que les buzzers. Lui faire defiler ses ecrans de categories puis
+  // de nombre de questions revenait a mimer une interface qui n'existe que
+  // pour son clavier physique, et l'operateur se retrouvait a choisir des
+  // categories de la banque du Mega alors qu'il avait deja choisi son
+  // questionnaire dans l'application.
+  // [nbQuestions] : 0 pour un depart ouvert, ou le nombre apres lequel le
+  // buzzer arrete la partie. Zero avec un questionnaire de l'app, qui sait
+  // quand il est epuise ; un nombre en manche libre annoncee d'avance.
+  Future<void> startGame(int nbQuestions) async {
+    final ok = await _writeUartLine(connectedDeviceId, _uartServiceId,
+        _uartCharacteristicId, 'START_GAME|');
+    status = ok
+        ? 'Partie lancee.'
+        : 'Envoi impossible : aucune caracteristique BLE identifiee pour ecrire.';
     notifyListeners();
   }
 

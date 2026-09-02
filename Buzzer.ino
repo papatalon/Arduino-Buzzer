@@ -13,6 +13,7 @@
 #include "Mp3.h"
 #include "QuestionBank.h"
 #include "BleLink.h"
+#include "AppControl.h"
 
 PhaseMode currentMode = BOOT;
 PhaseMode previousMode = BOOT;
@@ -26,6 +27,7 @@ Reflex reflex;
 BlindTimer blindTimer;
 SoundGame soundGame;
 Duel duel;
+AppControl appControl;
 Buzzer& buzzer = Buzzer::shared();
 //OledDisplay& display = OledDisplay::shared();
 Mp3& mp3 = Mp3::shared();
@@ -89,7 +91,12 @@ void loop() {
   bool inControl = BleLink::shared().appInControl();
   if (inControl && !wasInControl) {
     BleLink::shared().send("STATE|" + String((int)currentMode));
-    BleLink::shared().send("GAME|" + String((int)buzzer.getGameMode()));
+    // PAS de "GAME|" ici, et pas de QSYNC plus bas. Le Mega garde en memoire
+    // le dernier jeu joue et la derniere question tiree ; les annoncer a la
+    // connexion faisait heriter l'application d'une seance qui n'etait pas la
+    // sienne : elle affichait « Classique - Actif » a l'ouverture, alors que
+    // personne n'avait rien choisi ce soir-la. En mode application, le buzzer
+    // n'a pas de jeu.
     // Etat du lecteur audio : sans ca, impossible de distinguer "pas de
     // son parce que le volume est bas" de "pas de son parce que le
     // DFPlayer n'a pas ete detecte au demarrage" (mode simulation, voir
@@ -98,16 +105,10 @@ void loop() {
     BleLink::shared().send(String("AUDIO|") + (mp3.isSimulation() ? "0" : "1")
                            + "|" + String(mp3.getVolume()));
     mp3.sendAllSoundAssignments();
-    // Question en cours : QUESTION n'est envoye qu'au tirage, donc une app
-    // qui se (re)connecte en pleine partie afficherait une question vide.
-    // Type distinct (QSYNC) et non QUESTION : cote app, QUESTION compte une
-    // question de plus et efface le dernier buzz - ce qui fausserait le
-    // compteur et l'etat "untel s'est trompe" a chaque reconnexion.
-    QuestionBank& bank = QuestionBank::shared();
-    if (bank.isActive() && bank.questionText().length() > 0) {
-      BleLink::shared().send("QSYNC|" + bank.questionCategory() + "|"
-                             + bank.questionText() + "|" + bank.answerText());
-    }
+    // Presence des buzzers : c'est du materiel, pas du jeu, et l'application
+    // en a besoin des la premiere seconde pour savoir avec combien d'equipes
+    // elle joue.
+    buzzer.sendPresenceNow();
   }
   wasInControl = inControl;
 
@@ -142,6 +143,47 @@ PhaseMode getCurrentMode() {
   // (evite une entree accidentelle en pleine partie).
   if(currentMode == CONFIGURATION && appKeypad.isLedTestActivated(physicalKey)) {
     return LED_TEST;   // mode cache de test cablage (LED + boutons)
+  }
+
+  // ===================================================================
+  // MODE ESCLAVE : l'application mene, le buzzer gere les boutons.
+  //
+  // Des que l'app a le controle, le Mega quitte sa machine a etats de jeu et
+  // n'en garde AUCUN etat : pas de jeu en memoire, pas de score, pas de
+  // question, pas de phase de quiz. Il ecoute ARM/DISARM/LED et rapporte les
+  // appuis (voir AppControl). Tout le reste appartient a l'application.
+  //
+  // Le basculement n'a pas de commande dediee : il suit le controle lui-meme.
+  // Une commande de plus voudrait dire un etat de plus a garder synchronise,
+  // et un moyen de plus de le desynchroniser.
+  //
+  // Les echappatoires physiques (reset, test cablage) restent au-dessus : une
+  // panne de radio ne doit jamais rendre le buzzer inutilisable.
+  bool appMene = BleLink::shared().appInControl();
+  if (appMene) {
+    if (currentMode != APP_CONTROL) {
+      return APP_CONTROL;             // updateMode() appellera appControl.enter()
+    }
+    int arm = BleLink::shared().consumeArm();
+    if (arm >= 0) {
+      if (arm == 0) {
+        appControl.disarm();
+      } else {
+        appControl.arm(arm);
+      }
+    }
+    int leds = BleLink::shared().consumeLeds();
+    if (leds >= 0) {
+      appControl.setLeds(leds);
+    }
+    appControl.tick();
+    return APP_CONTROL;
+  }
+
+  // Le controle vient d'expirer (app fermee, radio coupee, hors de portee) :
+  // le buzzer reprend la main tout seul et revient a son menu.
+  if (currentMode == APP_CONTROL) {
+    return CONFIGURATION;
   }
 
   // Commande App->Mega SELECT_GAME|<n> (voir BleLink::consumeGameSelect) :
@@ -198,6 +240,15 @@ PhaseMode getCurrentMode() {
   int catMask = BleLink::shared().consumeCategoryMask();
   if (catMask >= 0 && currentMode == QUIZ_CATS) {
     return configuration.confirmCategories(catMask);
+  }
+
+  // Commande App->Mega START_GAME : l'app demande le depart, sans faire
+  // naviguer le firmware dans ses menus. AUCUNE garde de phase, contrairement
+  // a SET_CATS et SET_COUNT : en mode application, c'est l'app qui mene, et
+  // elle n'a pas a etre la ou le clavier physique aurait du passer.
+  int startCount = BleLink::shared().consumeStartGame();
+  if (startCount >= 0) {
+    return configuration.startFromApp(startCount);
   }
 
   // Commande App->Mega SET_COUNT|<n> (voir BleLink::consumeQuestionCount) :
@@ -487,6 +538,12 @@ void updateMode() {
       break;
     case LED_TEST:
       buzzer.setLedTest();
+      break;
+    case APP_CONTROL:
+      // L'application ouvre sa propre seance : rien a reprendre de ce que le
+      // buzzer faisait avant. L'ecran reste sur le cadenas, pose par
+      // setControlOverride dans la boucle principale.
+      appControl.enter();
       break;
   }
 }
