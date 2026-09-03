@@ -326,3 +326,18 @@ PhaseMode BlindTimer::gameOver(char pressedKey) {
   }
   return BLIND_OVER;
 }
+
+// Le record, ouvert a l'application (messages RECB et SET_RECB). Le plus
+// petit ecart jamais realise, en millisecondes.
+unsigned int BlindTimer::record() {
+  return readRecord();
+}
+
+// N'ecrit QUE si c'est mieux : le garde-fou est ici, chez le proprietaire de
+// la donnee, pas dans l'application qui la lui envoie.
+void BlindTimer::enregistrerRecord(unsigned int ecartMs) {
+  unsigned int actuel = readRecord();
+  if (actuel == BLIND_NO_RECORD || actuel == 0 || ecartMs < actuel) {
+    writeRecord(ecartMs);
+  }
+}

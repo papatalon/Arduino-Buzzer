@@ -345,6 +345,11 @@ class GameState extends ChangeNotifier {
 
   // Chrono aveugle : cible annoncee, puis temps de chacun au resultat.
   int? blindTargetS;
+
+  // Le record du Chrono aveugle : le plus petit ecart jamais realise. Il vit
+  // en EEPROM sur le Mega et vaut pour les deux modes, comme celui du
+  // Reflexe. 65535 veut dire « aucun ».
+  int? blindRecordMs;
   int? blindWinner;
   List<int> blindTimes = [0, 0, 0, 0];   // ms, 0 = n'a pas buzze
 
@@ -799,6 +804,12 @@ class GameState extends ChangeNotifier {
         // chaque mise a jour. Il vit en EEPROM : une partie menee par
         // l'application compte pour le meme record qu'une partie au clavier,
         // parce qu'il appartient au buzzer et non a l'ordinateur.
+        case 'RECB':
+          if (parts.length >= 2) {
+            blindRecordMs = int.tryParse(parts[1]);
+            handled = blindRecordMs != null;
+          }
+          break;
         case 'REC':
           if (parts.length >= 2) {
             reflexRecordMs = int.tryParse(parts[1]);

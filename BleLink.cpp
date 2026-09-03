@@ -83,6 +83,13 @@ char BleLink::pollKey() {
           _pendingSoundCommand = action;
           _pendingSoundBuzzer = who;
         }
+      } else if (_rxBuffer.startsWith("SET_RECB|")) {
+        // Chrono aveugle : le plus petit ecart. Zero est une valeur legitime
+        // (pile sur la cible), contrairement au Reflexe.
+        long e = _rxBuffer.substring(9).toInt();
+        if (e >= 0 && e < 65535) {
+          _pendingRecordBlind = (int)e;
+        }
       } else if (_rxBuffer.startsWith("SET_REC|")) {
         // L'application a battu le record pendant une partie qu'elle menait.
         // Le Mega decide s'il l'enregistre : voir Reflex::enregistrerRecord.
@@ -221,5 +228,11 @@ int BleLink::consumeCategoryMask() {
 int BleLink::consumeRecord() {
   int v = _pendingRecord;
   _pendingRecord = -1;
+  return v;
+}
+
+int BleLink::consumeRecordBlind() {
+  int v = _pendingRecordBlind;
+  _pendingRecordBlind = -1;
   return v;
 }

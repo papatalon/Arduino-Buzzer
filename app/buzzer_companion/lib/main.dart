@@ -14,6 +14,7 @@ import 'broadsheet/tokens.dart';
 import 'event_logo.dart';
 import 'jeu/animation_tirage.dart';
 import 'jeu/moteur_quiz.dart';
+import 'jeu/moteur_chrono_aveugle.dart';
 import 'jeu/moteur_reflexe.dart';
 import 'popout/popout_launcher.dart';
 import 'popout/popout_snapshot.dart';
@@ -74,6 +75,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   late final ActiveQuestionnaire _actif;
   late final MoteurQuiz _moteur;
   late final MoteurReflexe _reflexe;
+  late final MoteurChronoAveugle _chronoAveugle;
   late final Sonorisation _sons;
   late final AnimationTirage _tirage;
   final _version = VersionCheck();
@@ -140,12 +142,21 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     // soiree menee par l'app compte donc pour le meme record qu'une soiree
     // au clavier.
     _reflexe.surNouveauRecord = _ble.enregistrerRecord;
+
+    // LE CHRONO AVEUGLE. Son propre moteur : « le plus proche d'une cible »
+    // n'a rien a voir avec « le premier a peser », et les melanger ferait une
+    // classe de reglages plutot qu'un jeu.
+    _chronoAveugle = MoteurChronoAveugle(ble: _ble, sons: _sons);
+    _chronoAveugle.surNouveauRecord = _ble.enregistrerRecordEcart;
+    _chronoAveugle.addListener(_pushSnapshotToPopout);
     _reflexe.addListener(_pushSnapshotToPopout);
     _moteur.addListener(_pushSnapshotToPopout);
     // Un seul flux d'appuis, aiguille vers le jeu qui tourne. Le buzzer ne
     // sait pas a quoi on joue : c'est justement le principe.
     _buzzSub = _game.buzzEvents.listen((e) {
-      if (_reflexe.etape != EtapeReflexe.repos) {
+      if (_chronoAveugle.etape != EtapeChronoAveugle.repos) {
+        _chronoAveugle.surBuzz(e.buzzer, e.ms);
+      } else if (_reflexe.etape != EtapeReflexe.repos) {
         _reflexe.surBuzz(e.buzzer, e.ms);
       } else {
         _moteur.surBuzz(e.buzzer, e.ms);
@@ -170,10 +181,14 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   // dans les scores.
   void _suivrePresence() {
     final vu = _game.present;
-    // Le record arrive par la telemetrie (message REC).
+    // Les records arrivent par la telemetrie (messages REC et RECB).
     if (_game.reflexRecordMs != _reflexe.record) {
       _reflexe.record = _game.reflexRecordMs;
     }
+    if (_game.blindRecordMs != _chronoAveugle.record) {
+      _chronoAveugle.record = _game.blindRecordMs;
+    }
+    _chronoAveugle.presentsMateriel = List<bool>.of(vu);
     if (listEquals(vu, _moteur.presents)) return;
     _moteur.presents = List<bool>.of(vu);
     _reflexe.presentsMateriel = List<bool>.of(vu);
@@ -209,7 +224,14 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   // salle. Le lanceur DEMANDE maintenant l'instantane courant plutot qu'on le
   // lui fabrique de l'exterieur (voir PopoutLauncher.instantaneCourant).
   PopoutSnapshot _instantane() {
-    // Le Reflexe passe avant : quand il tourne, c'est lui qu'on regarde.
+    // Le jeu qui tourne passe avant : c'est lui qu'on regarde.
+    if (_chronoAveugle.etape != EtapeChronoAveugle.repos) {
+      return PopoutSnapshot.duChronoAveugle(
+        _chronoAveugle,
+        teamNames: _teams.all,
+        logoPath: _logo.path,
+      );
+    }
     if (_reflexe.etape != EtapeReflexe.repos) {
       return PopoutSnapshot.duReflexe(
         _reflexe,
@@ -248,6 +270,8 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     _moteur.dispose();
     _reflexe.removeListener(_pushSnapshotToPopout);
     _reflexe.dispose();
+    _chronoAveugle.removeListener(_pushSnapshotToPopout);
+    _chronoAveugle.dispose();
     _sound.removeListener(_pushSnapshotToPopout);
     _sound.dispose();
     _ble.dispose();
@@ -287,6 +311,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
         actif: _actif,
         moteur: _moteur,
         reflexe: _reflexe,
+        chronoAveugle: _chronoAveugle,
         tirageQuestions: _tirageQuestions,
         sons: _sons,
         tirage: _tirage,

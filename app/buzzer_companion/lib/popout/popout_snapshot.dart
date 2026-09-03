@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import '../jeu/moteur_quiz.dart';
+import '../jeu/moteur_chrono_aveugle.dart';
 import '../jeu/moteur_reflexe.dart';
 import '../protocol.dart';
 import '../questionnaires/questionnaire.dart';
@@ -219,6 +220,52 @@ class PopoutSnapshot {
   // On remplit donc les memes champs que la telemetrie remplissait, avec les
   // valeurs du moteur, ce qui laisse la fenetre publique telle quelle : elle
   // sait deja les rendre.
+  // L'ECRAN PUBLIC PENDANT UN CHRONO AVEUGLE mene par l'application.
+  //
+  // Comme pour le Reflexe, rien de nouveau n'est dessine : BlindZone existe
+  // pour le mode autonome et lit une PHASE A AFFICHER, que le moteur dicte.
+  //
+  // LA CIBLE N'EST DONNEE QU'AVANT LE DEPART. Pendant la course elle reste
+  // affichee (la salle doit s'en souvenir), mais aucun temps ecoule ne l'est :
+  // tout l'interet du jeu est de ne pas savoir.
+  factory PopoutSnapshot.duChronoAveugle(
+    MoteurChronoAveugle moteur, {
+    required List<String> teamNames,
+    required String? logoPath,
+  }) {
+    final phase = switch (moteur.etape) {
+      EtapeChronoAveugle.annonce => 'BLIND_ANNOUNCE',
+      EtapeChronoAveugle.course => 'BLIND_RUN',
+      EtapeChronoAveugle.resultat => 'BLIND_RESULT',
+      EtapeChronoAveugle.finie => 'BLIND_OVER',
+      EtapeChronoAveugle.repos => null,
+    };
+    return PopoutSnapshot(
+      appMene: true,
+      phaseJeu: phase == null ? null : kPhaseNames.indexOf(phase),
+      gameMode: 8,
+      displayGameMode: 8,
+      scores: const [0, 0, 0, 0],
+      gameScores: List<int>.of(moteur.scores),
+      present: List<bool>.of(moteur.presents),
+      flowState: QuestionFlowState.none,
+      gameRound: moteur.manche,
+      gameTotalRounds: moteur.manchesPrevues,
+      brisEgalite: moteur.brisEgalite,
+      gameWinner:
+          moteur.etape == EtapeChronoAveugle.finie ? moteur.vainqueur : null,
+      gameTie: moteur.etape == EtapeChronoAveugle.finie && moteur.egalite,
+      gameFinished: moteur.etape == EtapeChronoAveugle.finie,
+      motFinal: moteur.motFinal,
+      blindTargetS: moteur.cibleSecondes,
+      blindWinner: moteur.gagnant,
+      // Zero veut dire « n'a pas pese », comme cote firmware.
+      blindTimes: [for (var i = 0; i < 4; i++) moteur.temps[i] ?? 0],
+      teamNames: teamNames,
+      logoPath: logoPath,
+    );
+  }
+
   // L'ECRAN PUBLIC PENDANT UN REFLEXE mene par l'application.
   //
   // Rien de nouveau n'est dessine : on remplit les memes champs que la

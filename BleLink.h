@@ -95,6 +95,7 @@ class BleLink {
     int consumePresenceMask();
     // Le record que l'application demande d'enregistrer, ou -1.
     int consumeRecord();
+    int consumeRecordBlind();
 
     // Etat de lecture rapporte par l'app ("SFX_BUSY|0/1") quand elle joue
     // les sons a notre place : remplace la broche BUSY du DFPlayer, qui ne
@@ -136,6 +137,7 @@ class BleLink {
     bool _pendingGoSon = false;
     int _pendingPresenceMask = -1;
     int _pendingRecord = -1;
+    int _pendingRecordBlind = -1;
     bool _appSoundBusy = false;
     bool _appHandlesSound = true;
     char _pendingSoundCommand = 0;

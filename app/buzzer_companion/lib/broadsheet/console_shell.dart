@@ -20,6 +20,8 @@ import 'game_consoles.dart';
 import '../jeu/animation_tirage.dart';
 import '../jeu/console_quiz.dart';
 import '../jeu/console_reflexe.dart';
+import '../jeu/console_chrono_aveugle.dart';
+import '../jeu/moteur_chrono_aveugle.dart';
 import '../jeu/moteur_reflexe.dart';
 import '../questionnaires/tirage_questions.dart';
 import '../jeu/moteur_quiz.dart';
@@ -65,6 +67,7 @@ class ConsoleShell extends StatefulWidget {
     required this.actif,
     required this.moteur,
     required this.reflexe,
+    required this.chronoAveugle,
     required this.tirageQuestions,
     required this.sons,
     required this.tirage,
@@ -83,6 +86,7 @@ class ConsoleShell extends StatefulWidget {
   final ActiveQuestionnaire actif;
   final MoteurQuiz moteur;
   final MoteurReflexe reflexe;
+  final MoteurChronoAveugle chronoAveugle;
   final TirageQuestions tirageQuestions;
   final Sonorisation sons;
   final AnimationTirage tirage;
@@ -183,6 +187,7 @@ class _ConsoleShellState extends State<ConsoleShell> {
                                   actif: widget.actif,
                                   moteur: widget.moteur,
                                   reflexe: widget.reflexe,
+                                  chronoAveugle: widget.chronoAveugle,
                                   tirageQuestions: widget.tirageQuestions,
                                   sons: widget.sons,
                                   tirage: widget.tirage,
@@ -379,6 +384,7 @@ class _CenterColumn extends StatelessWidget {
     required this.actif,
     required this.moteur,
     required this.reflexe,
+    required this.chronoAveugle,
     required this.tirageQuestions,
     required this.sons,
     required this.tirage,
@@ -396,6 +402,7 @@ class _CenterColumn extends StatelessWidget {
   final ActiveQuestionnaire actif;
   final MoteurQuiz moteur;
   final MoteurReflexe reflexe;
+  final MoteurChronoAveugle chronoAveugle;
   final TirageQuestions tirageQuestions;
   final Sonorisation sons;
   final AnimationTirage tirage;
@@ -438,6 +445,15 @@ class _CenterColumn extends StatelessWidget {
     // en pleine question.
     // REFLEXE : sa propre console, avec ses propres regles. Elle passe avant
     // celle du quiz des que le jeu retenu est le sien.
+    // CHRONO AVEUGLE : son propre moteur, sa propre console.
+    if (chronoAveugle.etape != EtapeChronoAveugle.repos ||
+        (isAppControl(game.phase) && moteur.jeuChoisi == 8)) {
+      return ConsoleChronoAveugle(
+        moteur: chronoAveugle,
+        teams: teams,
+        onChangerDeJeu: moteur.oublierJeu,
+      );
+    }
     // REFLEXE et DUEL : le meme moteur, la meme console. Ils passent avant
     // celle du quiz des que le jeu retenu est l'un des deux.
     final vitesse = moteur.jeuChoisi == 7 || moteur.jeuChoisi == 10;

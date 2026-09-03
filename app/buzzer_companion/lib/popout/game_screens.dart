@@ -208,11 +208,17 @@ class BlindZone extends StatelessWidget {
       );
     }
 
-    // BLIND_ANNOUNCE et BLIND_RUN, encore une fois identiques et surtout
-    // TOTALEMENT IMMOBILES. Tout le jeu consiste à estimer une durée sans
-    // repère : la moindre chose qui bouge à l'écran (compteur, barre,
-    // animation, même un point clignotant) donnerait cette référence et
-    // viderait le jeu de son intérêt.
+    // BLIND_ANNOUNCE et BLIND_RUN, encore une fois identiques et surtout SANS
+    // AUCUN REPERE DE DUREE. Tout le jeu consiste a estimer un temps sans
+    // reference : un compteur, une barre qui se remplit, une animation, meme
+    // un point clignotant, donneraient cette reference et videraient le jeu
+    // de son interet.
+    //
+    // QUI A DEJA PESE est la SEULE exception, et elle est deliberee. C'est
+    // exactement ce que montrent les LED des boutons, que le firmware allume
+    // puis eteint une par une : voir un adversaire s'engager seme le doute,
+    // et ca fait partie du jeu. C'est un evenement isole, pas un ecoulement :
+    // ca ne dit a personne combien de temps a passe.
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -220,7 +226,9 @@ class BlindZone extends StatelessWidget {
         const SizedBox(height: BSSpace.s2),
         Text('$cible', style: BSType.heroDigitPopout(size: 240, color: BSColors.accent)),
         Text('SECONDES', style: BSType.popoutHeaderMeta(color: BSColors.neutral600)),
-        const SizedBox(height: BSSpace.s8),
+        const SizedBox(height: BSSpace.s6),
+        _QuiSestEngage(snapshot: snapshot),
+        const SizedBox(height: BSSpace.s6),
         Text('Buzzez au bon moment.', style: BSType.body(size: 34, color: BSColors.neutral700)),
       ],
     );
@@ -479,6 +487,81 @@ class SoundGameZone extends StatelessWidget {
         Text(
           snapshot.soundLastClaimed ? 'Reconnu !' : 'Laissé passer.',
           style: BSType.body(size: 34, color: BSColors.neutral700),
+        ),
+      ],
+    );
+  }
+}
+
+// QUI S'EST DEJA ENGAGE, pendant un Chrono aveugle.
+//
+// Le pendant a l'ecran des LED que le firmware eteint une par une : la salle
+// voit qui a tranche, sans savoir a quel moment il croyait y etre. Le temps
+// n'apparait qu'au resultat.
+//
+// Aucun temps, aucun compteur, rien de continu : ce serait la reference de
+// duree que tout le jeu consiste a ne pas avoir.
+class _QuiSestEngage extends StatelessWidget {
+  const _QuiSestEngage({required this.snapshot});
+
+  final PopoutSnapshot snapshot;
+
+  @override
+  Widget build(BuildContext context) {
+    final enJeu = [
+      for (var i = 0; i < 4; i++)
+        if (i < snapshot.present.length && snapshot.present[i]) i,
+    ];
+    if (enJeu.isEmpty) return const SizedBox.shrink();
+
+    return Wrap(
+      spacing: 44,
+      runSpacing: BSSpace.s3,
+      alignment: WrapAlignment.center,
+      children: [
+        for (final i in enJeu)
+          _Engage(
+            nom: snapshot.teamName(i),
+            couleur: kBuzzerColors[i].fill,
+            aPese: i < snapshot.blindTimes.length && snapshot.blindTimes[i] > 0,
+          ),
+      ],
+    );
+  }
+}
+
+class _Engage extends StatelessWidget {
+  const _Engage({
+    required this.nom,
+    required this.couleur,
+    required this.aPese,
+  });
+
+  final String nom;
+  final Color couleur;
+  final bool aPese;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          width: 54,
+          height: 54,
+          color: aPese ? BSColors.neutral300 : couleur,
+        ),
+        const SizedBox(height: BSSpace.s2),
+        Text(
+          nom.toUpperCase(),
+          style: BSType.buzzerNamePopout(
+              color: aPese ? BSColors.neutral500 : BSColors.text),
+        ),
+        const SizedBox(height: 2),
+        Text(
+          aPese ? 'A PESÉ' : 'EN LICE',
+          style: BSType.popoutHeaderMeta(
+              color: aPese ? BSColors.neutral500 : BSColors.neutral600),
         ),
       ],
     );

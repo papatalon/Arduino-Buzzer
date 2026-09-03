@@ -114,6 +114,7 @@ void loop() {
     // Le record du Reflexe, qui vit en EEPROM et vaut pour les deux modes :
     // l'application le reprend au lieu d'en tenir un seul pour elle.
     BleLink::shared().send("REC|" + String(reflex.record()));
+    BleLink::shared().send("RECB|" + String(blindTimer.record()));
   }
   wasInControl = inControl;
 
@@ -168,6 +169,11 @@ PhaseMode getCurrentMode() {
   if (nouveauRecord > 0) {
     reflex.enregistrerRecord((unsigned int)nouveauRecord);
     BleLink::shared().send("REC|" + String(reflex.record()));
+  }
+  int nouveauRecordB = BleLink::shared().consumeRecordBlind();
+  if (nouveauRecordB >= 0) {
+    blindTimer.enregistrerRecord((unsigned int)nouveauRecordB);
+    BleLink::shared().send("RECB|" + String(blindTimer.record()));
   }
 
   // Configuration ET sons de partie pilotes depuis l'app. Reproduit ce que

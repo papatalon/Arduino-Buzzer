@@ -410,6 +410,14 @@ class BleLinkService extends ChangeNotifier implements CommandesBuzzer {
   Future<void> enregistrerRecord(int ms) => _writeUartLine(connectedDeviceId,
       _uartServiceId, _uartCharacteristicId, 'SET_REC|$ms');
 
+  // Le record du Chrono aveugle : le plus petit ecart. Zero est legitime,
+  // contrairement au Reflexe : c'est un appui pile sur la cible.
+  Future<void> enregistrerRecordEcart(int ecartMs) => _writeUartLine(
+      connectedDeviceId,
+      _uartServiceId,
+      _uartCharacteristicId,
+      'SET_RECB|$ecartMs');
+
   Future<void> setPresence(List<bool> present) async {
     var mask = 0;
     for (var i = 0; i < present.length && i < 4; i++) {

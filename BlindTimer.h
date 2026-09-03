@@ -46,6 +46,12 @@ public:
     void setGameOver();
     PhaseMode gameOver(char pressedKey);
 
+    // LE RECORD APPARTIENT AU BUZZER, comme celui du Reflexe : il vit en
+    // EEPROM et vaut pour les deux modes. Ici c'est le plus petit ecart
+    // jamais realise, en millisecondes.
+    unsigned int record();
+    void enregistrerRecord(unsigned int ecartMs);
+
 private:
 
   int scores[4] = { 0, 0, 0, 0 };
