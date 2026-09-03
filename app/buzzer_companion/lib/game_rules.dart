@@ -84,7 +84,8 @@ const kGameRules = <GameRules>[
       'Réussi ? La séquence s\'allonge d\'une couleur. Une seule erreur, et la partie s\'arrête.',
       'Vous jouez ensemble contre la machine, pas les uns contre les autres. Il n\'y a pas de pointage : ce qui compte est le niveau atteint.',
     ],
-    setup: 'De 2 à 4 buzzers. La séquence n\'utilise que les couleurs en jeu.',
+    setup: 'De 2 à 4 buzzers. Le sens de la répétition, normal ou à l\'envers, '
+        'se choisit au lancement.',
   ),
   // 6 Simon inverse
   GameRules(

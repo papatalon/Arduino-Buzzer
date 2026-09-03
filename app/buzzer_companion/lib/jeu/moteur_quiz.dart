@@ -7,16 +7,36 @@ import 'animation_tirage.dart';
 import 'mots_de_la_fin.dart';
 import '../questionnaires/active_questionnaire.dart';
 
+/// COMMENT LES APPUIS SONT RAPPORTES pendant un armement.
+///
+/// Le quiz s'arrete au premier ; les autres jeux non, et pas de la meme
+/// facon. Nommes plutot que caches derriere des booleens : « continu: true,
+/// repete: false » ne dit pas ce qui se passe, et les deux combinaisons
+/// impossibles existeraient quand meme.
+enum ModeArmement {
+  /// Le PREMIER appui seulement, puis desarmement complet. La regle du quiz,
+  /// ou le premier qui pese prend la main.
+  premier,
+
+  /// Chaque buzzer arme rapporte son appui UNE fois et sort du masque, les
+  /// autres restent en jeu. Chrono aveugle attend un appui de chacun, Ne
+  /// buzze pas une reaction par son.
+  continu,
+
+  /// Chaque appui est rapporte et le masque ne bouge pas : le meme buzzer
+  /// peut revenir tout de suite. C'est ce que Simon demande, ou une sequence
+  /// « rouge, rouge » sort une fois sur quatre a quatre joueurs.
+  repete,
+}
+
 // Les trois seules choses que le moteur demande au materiel. Un contrat aussi
 // etroit se simule en trois lignes dans un test, la ou dependre du service
 // Bluetooth complet rendrait les regles du jeu invérifiables.
 abstract class CommandesBuzzer {
   /// Accepte le prochain appui parmi ces buzzers (bit 0 = rouge).
   ///
-  /// En mode [continu], chaque buzzer arme rapporte son appui et sort du
-  /// masque, les autres restent en jeu. Sinon le premier appui desarme tout,
-  /// ce qui est la regle du quiz mais pas celle des autres jeux.
-  void armer(int masque, {bool continu = false});
+  /// Voir [ModeArmement] pour ce que le buzzer fait des appuis suivants.
+  void armer(int masque, {ModeArmement mode = ModeArmement.premier});
 
   /// N'accepte plus aucun appui.
   void desarmer();

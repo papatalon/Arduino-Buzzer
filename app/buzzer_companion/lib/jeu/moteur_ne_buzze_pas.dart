@@ -4,7 +4,7 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 
 import '../audio/sonorisation.dart';
-import 'moteur_quiz.dart' show CommandesBuzzer;
+import 'moteur_quiz.dart' show CommandesBuzzer, ModeArmement;
 import 'mots_de_la_fin.dart';
 
 enum EtapeNeBuzzePas {
@@ -229,7 +229,7 @@ class MoteurNeBuzzePas extends ChangeNotifier {
     }
     // SEUL celui dont c'est le tour est armé : un voisin impatient ne peut pas
     // déclencher le son de quelqu'un d'autre, ni brûler son tour.
-    ble.armer(1 << qui, continu: false);
+    ble.armer(1 << qui);
     ble.allumerLeds(1 << qui);
   }
 
@@ -271,7 +271,7 @@ class MoteurNeBuzzePas extends ChangeNotifier {
 
     _choisirLeSon();
     // Tous armés en continu : n'importe qui peut réagir, à ses risques.
-    ble.armer(_masqueEnJeu, continu: true);
+    ble.armer(_masqueEnJeu, mode: ModeArmement.continu);
     sons?.sonNumero(sonCourant ?? 0);
 
     _minuteur = Timer(

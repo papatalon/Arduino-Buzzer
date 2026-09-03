@@ -4,6 +4,7 @@ import '../jeu/moteur_quiz.dart';
 import '../jeu/moteur_chrono_aveugle.dart';
 import '../jeu/moteur_ne_buzze_pas.dart';
 import '../jeu/moteur_reflexe.dart';
+import '../jeu/moteur_simon.dart';
 import '../protocol.dart';
 import '../questionnaires/questionnaire.dart';
 
@@ -315,6 +316,51 @@ class PopoutSnapshot {
 
   // L'ECRAN PUBLIC PENDANT UN REFLEXE mene par l'application.
   //
+  // SIMON : le seul jeu SANS AUCUN SCORE.
+  //
+  // [gameScores] reste null a dessein, et pas a zero : la mise en page lit
+  // « pas de scores » et masque le tableau (voir GameLayout.simon). Quatre
+  // zeros afficheraient un tableau vide devant la salle, qui ne souleve
+  // qu'une question. C'est le cas qui avait motive toute la mise en page par
+  // jeu, et rien de nouveau n'est dessine ici : SimonZone existe deja pour le
+  // mode autonome et lit les memes champs.
+  factory PopoutSnapshot.duSimon(
+    MoteurSimon moteur, {
+    required List<String> teamNames,
+    required String? logoPath,
+  }) {
+    final phase = switch (moteur.etape) {
+      // La pause « bravo » reste sur l'ecran de repetition : basculer sur la
+      // demonstration deux secondes avant qu'elle commence ferait clignoter
+      // le titre pour rien.
+      EtapeSimon.demonstration => 'SIMON_SHOW',
+      EtapeSimon.repetition || EtapeSimon.bravo => 'SIMON_PLAY',
+      EtapeSimon.finie => 'SIMON_OVER',
+      EtapeSimon.repos => null,
+    };
+    final mode = moteur.alEnvers ? 6 : 5;
+    return PopoutSnapshot(
+      appMene: true,
+      phaseJeu: phase == null ? null : kPhaseNames.indexOf(phase),
+      gameMode: mode,
+      displayGameMode: mode,
+      scores: const [0, 0, 0, 0],
+      present: List<bool>.of(moteur.presents),
+      flowState: QuestionFlowState.none,
+      // Jeu collaboratif : jamais de gagnant individuel, meme a la fin.
+      gameFinished: moteur.etape == EtapeSimon.finie,
+      motFinal: moteur.motFinal,
+      // Les niveaux REUSSIS. L'ecran ajoute 1 tant que la partie tourne, pour
+      // annoncer celui qui se joue : envoyer le niveau affiche le compterait
+      // deux fois.
+      simonLevel: moteur.niveau,
+      simonEntered: moteur.saisis,
+      simonLength: moteur.sequence.length,
+      teamNames: teamNames,
+      logoPath: logoPath,
+    );
+  }
+
   // Rien de nouveau n'est dessine : on remplit les memes champs que la
   // telemetrie du Mega remplissait, et [phaseJeu] dit a ReflexZone ou on en
   // est. L'ecran du jeu sert donc dans les deux modes sans etre reecrit.

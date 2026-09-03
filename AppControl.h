@@ -27,12 +27,13 @@
 //
 // LES PRIMITIVES
 //
-//   ARM|<masque>[|C] accepte les appuis parmi ces buzzers et repond
+//   ARM|<masque>[|C|M] accepte les appuis parmi ces buzzers et repond
 //                  BUZZ|<n>|<ms>. Sans suffixe : le PREMIER appui seulement,
 //                  puis desarmement complet - c'est la regle du quiz, ou le
 //                  premier qui pese prend la main. Avec |C : mode CONTINU,
 //                  chaque buzzer arme rapporte son appui et sort du masque,
-//                  les autres restent en jeu.
+//                  les autres restent en jeu. Avec |M : mode REPETE, chaque
+//                  appui est rapporte et le masque ne bouge pas.
 //   DISARM         n'accepte plus rien
 //   LED|<masque>   allume ou eteint directement (gagnant, chenillard, Simon)
 //   GO|<masque>    allume ET remet le chrono de reaction a zero, dans la meme
@@ -50,7 +51,7 @@ public:
     // armes et envoie BUZZ des qu'il y en a un.
     void tick();
 
-    void arm(int mask, bool continu = false);
+    void arm(int mask, ArmMode mode = ARM_PREMIER);
     void disarm();
     void setLeds(int mask);
 
@@ -78,16 +79,24 @@ private:
   // enverrait une rafale de BUZZ pendant que l'animateur juge le premier.
   bool fired = false;
 
-  // MODE CONTINU. Le quiz s'arrete au premier appui ; les autres jeux non.
-  // Chrono aveugle attend un appui de CHAQUE joueur, Simon une suite du
-  // meme, Ne buzze pas des appuis a n'importe quel moment. Dans ce mode,
-  // un buzzer qui pese sort du masque et les autres restent armes ; c'est
-  // l'application qui decide quand tout s'arrete.
+  // COMMENT LES APPUIS SONT RAPPORTES. Le quiz s'arrete au premier ; les
+  // autres jeux non.
   //
-  // La LED n'est PAS allumee automatiquement ici : en Reflexe un appui trop
-  // tot est un faux depart, et l'eclairer comme un gagnant serait mentir.
-  // C'est l'application qui allume, quand elle a juge.
-  bool continu = false;
+  // ARM_CONTINU : Chrono aveugle attend un appui de CHAQUE joueur, Ne buzze
+  // pas une reaction par son. Un buzzer qui pese sort du masque, les autres
+  // restent armes.
+  //
+  // ARM_REPETE : Simon attend une SUITE d'appuis, ou le meme buzzer peut
+  // revenir deux fois de suite (une sequence « rouge, rouge » sort une fois
+  // sur quatre a quatre joueurs). Si l'appui sortait du masque, l'app devrait
+  // rearmer entre les deux, et l'aller-retour Bluetooth - 60 a 200 ms -
+  // avalerait le second appui sans que rien ne l'explique a l'ecran. Ici le
+  // masque ne bouge pas : c'est l'application qui desarme quand elle a fini.
+  //
+  // Dans les deux cas la LED n'est PAS allumee automatiquement : en Reflexe
+  // un appui trop tot est un faux depart, et l'eclairer comme un gagnant
+  // serait mentir. C'est l'application qui allume, quand elle a juge.
+  ArmMode mode = ARM_PREMIER;
 
   Buzzer& buzzer = Buzzer::shared();
   BleLink& ble = BleLink::shared();

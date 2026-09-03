@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:buzzer_companion/jeu/moteur_ne_buzze_pas.dart';
-import 'package:buzzer_companion/jeu/moteur_quiz.dart' show CommandesBuzzer;
+import 'package:buzzer_companion/jeu/moteur_quiz.dart' show CommandesBuzzer, ModeArmement;
 import 'package:buzzer_companion/audio/sonorisation.dart';
 import 'package:buzzer_companion/jeu/mots_de_la_fin.dart';
 import 'package:buzzer_companion/popout/popout_snapshot.dart';
@@ -24,9 +24,9 @@ class _Materiel implements CommandesBuzzer {
   int? get dernierArmement => armements.isEmpty ? null : armements.last;
 
   @override
-  void armer(int masque, {bool continu = false}) {
+  void armer(int masque, {ModeArmement mode = ModeArmement.premier}) {
     armements.add(masque);
-    dernierContinu = continu;
+    dernierContinu = (mode == ModeArmement.continu);
   }
 
   @override

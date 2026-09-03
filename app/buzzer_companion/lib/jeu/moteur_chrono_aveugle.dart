@@ -4,7 +4,7 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 
 import '../audio/sonorisation.dart';
-import 'moteur_quiz.dart' show CommandesBuzzer;
+import 'moteur_quiz.dart' show CommandesBuzzer, ModeArmement;
 import 'mots_de_la_fin.dart';
 
 enum EtapeChronoAveugle {
@@ -179,7 +179,7 @@ class MoteurChronoAveugle extends ChangeNotifier {
   void donnerLeDepart() {
     if (etape != EtapeChronoAveugle.annonce) return;
     etape = EtapeChronoAveugle.course;
-    ble.armer(_masqueEnJeu, continu: true);
+    ble.armer(_masqueEnJeu, mode: ModeArmement.continu);
     // GO : allume TOUT et repart le chrono dans la même instruction.
     ble.allumerSignal(_masqueEnJeu);
     _minuteur = Timer(

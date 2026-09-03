@@ -268,7 +268,7 @@ PhaseMode getCurrentMode() {
       if (arm == 0) {
         appControl.disarm();
       } else {
-        appControl.arm(arm, BleLink::shared().armWasContinu());
+        appControl.arm(arm, BleLink::shared().armMode());
       }
     }
     int leds = BleLink::shared().consumeLeds();

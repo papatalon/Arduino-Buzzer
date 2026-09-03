@@ -25,7 +25,7 @@ class _Materiel implements CommandesBuzzer {
   int? get dernierArmement => armements.isEmpty ? null : armements.last;
 
   @override
-  void armer(int masque, {bool continu = false}) => armements.add(masque);
+  void armer(int masque, {ModeArmement mode = ModeArmement.premier}) => armements.add(masque);
 
   @override
   void desarmer() => desarmements++;

@@ -418,20 +418,28 @@ class _SimonZone extends StatelessWidget {
   Widget build(BuildContext context) {
     final done = snapshot.simonLevel;
     if (done == null) return const SizedBox.shrink();
+    // LA FIN DE PARTIE PASSE PAR L'ÉCRAN COMMUN, comme tous les autres jeux.
+    // Sans lui, la salle voyait le même « NIVEAU ATTEINT » qu'en pleine
+    // partie : rien ne disait que c'était fini, et le mot de la fin ne
+    // sortait jamais.
+    if (snapshot.gameFinished) {
+      return GameOverZone(
+        snapshot: snapshot,
+        resultat: '$done',
+        detail: done > 1 ? 'niveaux réussis' : 'niveau réussi',
+      );
+    }
     // [simonLevel] compte les niveaux RÉUSSIS : celui qui se joue est donc
     // le suivant, comme sur l'écran du buzzer ("SIMON - Niveau N").
-    final shown = snapshot.gameFinished ? done : done + 1;
+    final shown = done + 1;
     final length = snapshot.simonLength ?? 0;
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text(
-          snapshot.gameFinished ? 'NIVEAU ATTEINT' : 'NIVEAU',
-          style: BSType.popoutHeaderMeta(color: BSColors.neutral600),
-        ),
+        Text('NIVEAU', style: BSType.popoutHeaderMeta(color: BSColors.neutral600)),
         const SizedBox(height: BSSpace.s2),
         Text('$shown', style: BSType.heroDigitPopout(size: 220, color: BSColors.accent)),
-        if (!snapshot.gameFinished && length > 0) ...[
+        if (length > 0) ...[
           const SizedBox(height: BSSpace.s4),
           Text(
             '${snapshot.simonEntered ?? 0} / $length',

@@ -15,6 +15,14 @@
 // repete toutes les ~1s tant que l'app est connectee) avec expiration
 // automatique (appInControl()) si les messages cessent d'arriver - pour ne
 // pas rester verrouille si le lien BLE tombe sans preavis.
+
+// COMMENT LES APPUIS SONT RAPPORTES pendant un armement. Voir AppControl.
+enum ArmMode : uint8_t {
+  ARM_PREMIER,   // le premier appui seulement, puis desarmement complet (quiz)
+  ARM_CONTINU,   // chaque buzzer rapporte une fois et sort du masque
+  ARM_REPETE,    // chaque appui est rapporte, le masque ne bouge pas (Simon)
+};
+
 class BleLink {
   public:
     static BleLink& shared();
@@ -77,8 +85,8 @@ class BleLink {
     // Masque de buzzers a armer demande par "ARM|<masque>" ou 0 pour un
     // "DISARM", ou -1 si rien n'est en attente. Consommee une seule fois.
     int consumeArm();
-    // Vrai quand le dernier ARM consomme demandait le mode continu.
-    bool armWasContinu();
+    // Comment le dernier ARM consomme veut que les appuis soient rapportes.
+    ArmMode armMode();
     // Masque de LED demande par "LED|<masque>", ou -1 si rien n'est en
     // attente. Consommee une seule fois.
     int consumeLeds();
@@ -131,7 +139,7 @@ class BleLink {
     int _pendingQuestionCount = -1;
     int _pendingStartGame = -1;
     int _pendingArm = -1;
-    bool _pendingArmContinu = false;
+    ArmMode _pendingArmMode = ARM_PREMIER;
     int _pendingLeds = -1;
     int _pendingGo = -1;
     bool _pendingGoSon = false;

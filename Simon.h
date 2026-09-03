@@ -68,6 +68,7 @@ private:
   void showTitle();                 // ligne 0 : "SIMON - Niveau N"
   void showProgress();              // ligne 2 : progression "x / N"
   void sendTelemetry();             // "SIMON|niveau|saisis|longueur" vers l'app
+  uint8_t nextColor();              // la couleur la moins passee, au hasard entre elles
   PhaseMode fail(const char* title);  // termine la partie avec ce titre
 
   LcdDisplay& display = LcdDisplay::shared();

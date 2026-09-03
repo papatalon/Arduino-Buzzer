@@ -5,7 +5,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:universal_ble/universal_ble.dart';
 
-import 'jeu/moteur_quiz.dart' show CommandesBuzzer;
+import 'jeu/moteur_quiz.dart' show CommandesBuzzer, ModeArmement;
 
 const _lastDeviceIdKey = 'last_device_id';
 const _lastDeviceNameKey = 'last_device_name';
@@ -189,6 +189,41 @@ class BleLinkService extends ChangeNotifier implements CommandesBuzzer {
     _messageController.close();
     if (scanning) UniversalBle.stopScan();
     super.dispose();
+  }
+
+  /// LA FERMETURE PROPRE, avant que le processus disparaisse.
+  ///
+  /// Windows garde la session GATT d'un processus mort. Au démarrage suivant,
+  /// connect() répond « déjà connecté » sans la moindre erreur, mais la
+  /// découverte revient sans le service FFE0 de l'AT-09 : c'est le
+  /// « Aucune caractéristique notifiable trouvée » qui oblige à cliquer
+  /// Reconnecter, et ce bouton ne fait rien d'autre que déconnecter d'abord.
+  ///
+  /// [dispose] ne pouvait pas s'en charger : il est synchrone, il rendait la
+  /// main tout de suite et le processus se terminait avant que la
+  /// déconnexion soit partie. Il faut donc l'attendre AVANT de laisser la
+  /// fenêtre se fermer.
+  Future<void> fermerProprement() async {
+    _refreshTimer?.cancel();
+    _stopControlHeartbeat();
+    final id = connectedDeviceId;
+    if (id == null) return;
+    try {
+      // Le buzzer reprend la main tout de suite plutôt qu'après l'expiration
+      // du contrôle : trois secondes de clavier verrouillé pour rien.
+      await _writeUartLine(id, _uartServiceId, _uartCharacteristicId, 'CTRL|0')
+          .timeout(const Duration(milliseconds: 400));
+    } catch (_) {
+      // Lien déjà tombé : il n'y a plus personne à prévenir.
+    }
+    try {
+      // LE GESTE QUI COMPTE. Une pile Bluetooth qui traîne ne doit jamais
+      // empêcher la fenêtre de se fermer, d'où le délai maximal.
+      await UniversalBle.disconnect(id)
+          .timeout(const Duration(milliseconds: 1200));
+    } catch (_) {
+      // Attendu si Windows ne le considérait déjà plus connecté.
+    }
   }
 
   Future<void> _rememberDevice(String deviceId, String? name) async {
@@ -485,11 +520,17 @@ class BleLinkService extends ChangeNotifier implements CommandesBuzzer {
 
   // [masque] : bit 0 = rouge ... bit 3 = vert.
   @override
-  Future<void> armer(int masque, {bool continu = false}) => _writeUartLine(
-      connectedDeviceId,
-      _uartServiceId,
-      _uartCharacteristicId,
-      continu ? 'ARM|$masque|C' : 'ARM|$masque');
+  Future<void> armer(int masque,
+          {ModeArmement mode = ModeArmement.premier}) =>
+      _writeUartLine(
+          connectedDeviceId,
+          _uartServiceId,
+          _uartCharacteristicId,
+          switch (mode) {
+            ModeArmement.premier => 'ARM|$masque',
+            ModeArmement.continu => 'ARM|$masque|C',
+            ModeArmement.repete => 'ARM|$masque|M',
+          });
 
   @override
   Future<void> desarmer() => _writeUartLine(

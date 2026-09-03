@@ -26,11 +26,22 @@ import 'popout_snapshot.dart';
 //
 // [detail] est la seule part propre au jeu : un record de reflexe, un niveau
 // atteint. Le reste (gagnant, egalite, mot de la fin) est commun.
+//
+// [resultat] remplace la ligne du gagnant pour un jeu qui n'en a pas. Simon
+// est collaboratif : « AUCUN VAINQUEUR » y serait faux, personne n'en
+// cherchait un. Ce qu'il a a montrer est le niveau atteint, et c'est la
+// meme place sur l'ecran.
 class GameOverZone extends StatelessWidget {
-  const GameOverZone({super.key, required this.snapshot, this.detail});
+  const GameOverZone({
+    super.key,
+    required this.snapshot,
+    this.detail,
+    this.resultat,
+  });
 
   final PopoutSnapshot snapshot;
   final String? detail;
+  final String? resultat;
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +52,13 @@ class GameOverZone extends StatelessWidget {
       children: [
         Text('FIN DE PARTIE', style: BSType.sectionKicker()),
         const SizedBox(height: BSSpace.s4),
-        if (gagne)
+        if (resultat != null)
+          Text(
+            resultat!,
+            style: BSType.heroDigitPopout(size: 160, color: BSColors.accent),
+            textAlign: TextAlign.center,
+          )
+        else if (gagne)
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(

@@ -53,13 +53,45 @@ PhaseMode Simon::fail(const char* title) {
   return SIMON_OVER;
 }
 
+// LA COULEUR AJOUTEE SORT DE CELLES QUI SONT LE MOINS PASSEES.
+//
+// Tirer chaque couleur au hasard independamment laisse couramment un joueur
+// avec un seul appui sur une sequence de dix pendant qu'un autre en a cinq.
+// Ce n'est pas une malchance rare : a quatre joueurs c'est le cas ORDINAIRE.
+// Et il n'y a meme pas de score pour consoler celui qui n'a rien touche, le
+// jeu est collaboratif : il a juste regarde les autres jouer.
+//
+// On tire donc parmi les couleurs les moins representees, au hasard entre
+// elles. La sequence reste imprevisible - personne ne compte les appuis des
+// autres en pleine partie - et l'ecart tient a une couleur pres.
+uint8_t Simon::nextColor() {
+  int counts[4] = { 0, 0, 0, 0 };
+  for (int k = 0; k < length; k++) {
+    for (int p = 0; p < playerCount; p++) {
+      if (sequence[k] == players[p]) { counts[p]++; break; }
+    }
+  }
+
+  int least = counts[0];
+  for (int p = 1; p < playerCount; p++) {
+    if (counts[p] < least) least = counts[p];
+  }
+
+  uint8_t candidates[4];
+  int n = 0;
+  for (int p = 0; p < playerCount; p++) {
+    if (counts[p] == least) candidates[n++] = players[p];
+  }
+  return candidates[random(n)];
+}
+
 // === Demonstration de la sequence ===
 // Une couleur est ajoutee a chaque entree : le niveau N joue N couleurs.
 void Simon::setShowSequence() {
   failedBuzzer = -1;
 
   if (length < SIMON_MAX_LEVEL) {
-    sequence[length] = players[random(playerCount)];
+    sequence[length] = nextColor();
     length++;
   }
 

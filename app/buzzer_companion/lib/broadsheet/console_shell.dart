@@ -20,11 +20,13 @@ import 'game_consoles.dart';
 import '../jeu/animation_tirage.dart';
 import '../jeu/console_quiz.dart';
 import '../jeu/console_reflexe.dart';
+import '../jeu/console_simon.dart';
 import '../jeu/console_chrono_aveugle.dart';
 import '../jeu/console_ne_buzze_pas.dart';
 import '../jeu/moteur_chrono_aveugle.dart';
 import '../jeu/moteur_ne_buzze_pas.dart';
 import '../jeu/moteur_reflexe.dart';
+import '../jeu/moteur_simon.dart';
 import '../questionnaires/tirage_questions.dart';
 import '../jeu/moteur_quiz.dart';
 import 'game_rules_panel.dart';
@@ -71,6 +73,7 @@ class ConsoleShell extends StatefulWidget {
     required this.reflexe,
     required this.chronoAveugle,
     required this.neBuzzePas,
+    required this.simon,
     required this.tirageQuestions,
     required this.sons,
     required this.tirage,
@@ -91,6 +94,7 @@ class ConsoleShell extends StatefulWidget {
   final MoteurReflexe reflexe;
   final MoteurChronoAveugle chronoAveugle;
   final MoteurNeBuzzePas neBuzzePas;
+  final MoteurSimon simon;
   final TirageQuestions tirageQuestions;
   final Sonorisation sons;
   final AnimationTirage tirage;
@@ -193,6 +197,7 @@ class _ConsoleShellState extends State<ConsoleShell> {
                                   reflexe: widget.reflexe,
                                   chronoAveugle: widget.chronoAveugle,
                                   neBuzzePas: widget.neBuzzePas,
+                                  simon: widget.simon,
                                   tirageQuestions: widget.tirageQuestions,
                                   sons: widget.sons,
                                   tirage: widget.tirage,
@@ -391,6 +396,7 @@ class _CenterColumn extends StatelessWidget {
     required this.reflexe,
     required this.chronoAveugle,
     required this.neBuzzePas,
+    required this.simon,
     required this.tirageQuestions,
     required this.sons,
     required this.tirage,
@@ -410,6 +416,7 @@ class _CenterColumn extends StatelessWidget {
   final MoteurReflexe reflexe;
   final MoteurChronoAveugle chronoAveugle;
   final MoteurNeBuzzePas neBuzzePas;
+  final MoteurSimon simon;
   final TirageQuestions tirageQuestions;
   final Sonorisation sons;
   final AnimationTirage tirage;
@@ -452,6 +459,30 @@ class _CenterColumn extends StatelessWidget {
     // en pleine question.
     // REFLEXE : sa propre console, avec ses propres regles. Elle passe avant
     // celle du quiz des que le jeu retenu est le sien.
+    // SIMON et SIMON INVERSE : le meme moteur, la meme console. Le sens de la
+    // repetition est la seule difference, et c'est un reglage, pas un jeu.
+    final memoire = moteur.jeuChoisi == 5 || moteur.jeuChoisi == 6;
+    if (simon.etape != EtapeSimon.repos ||
+        (isAppControl(game.phase) && memoire)) {
+      // Seulement au repos : basculer le sens en pleine partie changerait la
+      // regle sous les pieds d'une equipe qui a deja memorise trois niveaux.
+      if (simon.etape == EtapeSimon.repos) {
+        simon.alEnvers = moteur.jeuChoisi == 6;
+      }
+      return ConsoleSimon(
+        moteur: simon,
+        teams: teams,
+        onChangerDeJeu: moteur.oublierJeu,
+        // Le moteur de Simon d'abord, parce que c'est lui que la console
+        // ecoute et qui pousse l'instantane vers l'ecran public ; le jeu
+        // retenu ensuite, parce que c'est lui qui garde la grille des jeux
+        // coherente avec ce qui tourne.
+        onChoisirLeSens: (envers) {
+          simon.choisirLeSens(envers);
+          moteur.choisirJeu(envers ? 6 : 5);
+        },
+      );
+    }
     // NE BUZZE PAS : son propre moteur, sa propre console.
     if (neBuzzePas.etape != EtapeNeBuzzePas.repos ||
         (isAppControl(game.phase) && moteur.jeuChoisi == 9)) {

@@ -17,6 +17,7 @@ import 'jeu/moteur_quiz.dart';
 import 'jeu/moteur_chrono_aveugle.dart';
 import 'jeu/moteur_ne_buzze_pas.dart';
 import 'jeu/moteur_reflexe.dart';
+import 'jeu/moteur_simon.dart';
 import 'popout/popout_launcher.dart';
 import 'popout/popout_snapshot.dart';
 import 'popout/popout_window.dart';
@@ -42,10 +43,16 @@ Future<void> main(List<String> args) async {
       // La console suppose un portable 1440x900 minimum (design_handoff_
       // buzzer_console/README.md) — sans cette taille imposée, le rail
       // droit peut manquer de place et déborder sur un écran plus petit.
+      //
+      // LE TITRE SE POSE ICI, pas dans MaterialApp : `MaterialApp.title` ne
+      // touche pas la barre de titre native sous Windows, qui reste sur le
+      // nom du projet Flutter. Meme forme que la fenetre publique, pour que
+      // les deux se reconnaissent dans la barre des taches.
       const options = WindowOptions(
         size: Size(1440, 900),
         minimumSize: Size(1440, 900),
         center: true,
+        title: 'Buzzer : console de l\'animateur',
       );
       await windowManager.waitUntilReadyToShow(options, () async {
         await windowManager.show();
@@ -64,7 +71,8 @@ class BuzzerCompanionApp extends StatefulWidget {
   State<BuzzerCompanionApp> createState() => _BuzzerCompanionAppState();
 }
 
-class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
+class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
+    with WindowListener {
   final _ble = BleLinkService();
   final _game = GameState();
   final _popout = PopoutLauncher();
@@ -78,6 +86,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   late final MoteurReflexe _reflexe;
   late final MoteurChronoAveugle _chronoAveugle;
   late final MoteurNeBuzzePas _neBuzzePas;
+  late final MoteurSimon _simon;
   late final Sonorisation _sons;
   late final AnimationTirage _tirage;
   final _version = VersionCheck();
@@ -89,6 +98,12 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   @override
   void initState() {
     super.initState();
+    // LA FERMETURE EST INTERCEPTEE pour rendre le lien Bluetooth avant que le
+    // processus disparaisse. Sans ca Windows garde la session GATT d'un
+    // processus mort, et le demarrage suivant se connecte sur un fantome :
+    // « aucune caracteristique notifiable », et il faut cliquer Reconnecter.
+    windowManager.addListener(this);
+    windowManager.setPreventClose(true);
     // Le lanceur fabrique son instantane d'ouverture par ce chemin unique.
     _popout.instantaneCourant = _instantane;
     _ble.init();
@@ -156,12 +171,19 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     // ne peuvent pas arriver en connaissant le leur.
     _neBuzzePas = MoteurNeBuzzePas(ble: _ble, sons: _sons);
     _neBuzzePas.addListener(_pushSnapshotToPopout);
+    // SIMON. Le dernier jeu a quitter le firmware : en mode application, le
+    // Mega ne garde aucun etat de jeu, et le son de chaque couleur appartient
+    // deja a l'application.
+    _simon = MoteurSimon(ble: _ble, sons: _sons);
+    _simon.addListener(_pushSnapshotToPopout);
     _reflexe.addListener(_pushSnapshotToPopout);
     _moteur.addListener(_pushSnapshotToPopout);
     // Un seul flux d'appuis, aiguille vers le jeu qui tourne. Le buzzer ne
     // sait pas a quoi on joue : c'est justement le principe.
     _buzzSub = _game.buzzEvents.listen((e) {
-      if (_neBuzzePas.etape != EtapeNeBuzzePas.repos) {
+      if (_simon.etape != EtapeSimon.repos) {
+        _simon.surBuzz(e.buzzer, e.ms);
+      } else if (_neBuzzePas.etape != EtapeNeBuzzePas.repos) {
         _neBuzzePas.surBuzz(e.buzzer, e.ms);
       } else if (_chronoAveugle.etape != EtapeChronoAveugle.repos) {
         _chronoAveugle.surBuzz(e.buzzer, e.ms);
@@ -199,6 +221,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     }
     _chronoAveugle.presentsMateriel = List<bool>.of(vu);
     _neBuzzePas.presentsMateriel = List<bool>.of(vu);
+    _simon.presentsMateriel = List<bool>.of(vu);
     if (listEquals(vu, _moteur.presents)) return;
     _moteur.presents = List<bool>.of(vu);
     _reflexe.presentsMateriel = List<bool>.of(vu);
@@ -235,6 +258,13 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   // lui fabrique de l'exterieur (voir PopoutLauncher.instantaneCourant).
   PopoutSnapshot _instantane() {
     // Le jeu qui tourne passe avant : c'est lui qu'on regarde.
+    if (_simon.etape != EtapeSimon.repos) {
+      return PopoutSnapshot.duSimon(
+        _simon,
+        teamNames: _teams.all,
+        logoPath: _logo.path,
+      );
+    }
     if (_neBuzzePas.etape != EtapeNeBuzzePas.repos) {
       return PopoutSnapshot.duNeBuzzePas(
         _neBuzzePas,
@@ -278,8 +308,28 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
 
   void _pushSnapshotToPopout() => _popout.pushSnapshot(_instantane());
 
+  // LA FENETRE ATTEND QUE LE LIEN SOIT RENDU avant de se fermer.
+  //
+  // dispose() ne pouvait pas s'en charger : il est synchrone, et le processus
+  // se terminait avant que la deconnexion soit partie. Windows gardait alors
+  // la session GATT d'un processus mort, et le demarrage suivant se
+  // connectait dessus sans jamais retrouver le service de l'AT-09.
+  @override
+  void onWindowClose() async {
+    // L'ECRAN PUBLIC PART EN PREMIER, et on l'attend.
+    //
+    // Il survivait a la console de quelques secondes, le temps que le
+    // processus se termine pour de bon : devant une salle, ca ressemble a un
+    // plantage. Le rendu du lien Bluetooth vient apres, parce que lui ne se
+    // voit pas.
+    await _popout.close();
+    await _ble.fermerProprement();
+    await windowManager.destroy();
+  }
+
   @override
   void dispose() {
+    windowManager.removeListener(this);
     _sfxSub?.cancel();
     _buzzSub?.cancel();
     _game.removeListener(_suivrePresence);
@@ -291,6 +341,8 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     _chronoAveugle.dispose();
     _neBuzzePas.removeListener(_pushSnapshotToPopout);
     _neBuzzePas.dispose();
+    _simon.removeListener(_pushSnapshotToPopout);
+    _simon.dispose();
     _sound.removeListener(_pushSnapshotToPopout);
     _sound.dispose();
     _ble.dispose();
@@ -307,7 +359,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Buzzer Companion',
+      title: "Buzzer : console de l'animateur",
       theme: ThemeData(
         fontFamily: 'Source Serif 4',
         scaffoldBackgroundColor: BSColors.bg,
@@ -332,6 +384,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
         reflexe: _reflexe,
         chronoAveugle: _chronoAveugle,
         neBuzzePas: _neBuzzePas,
+        simon: _simon,
         tirageQuestions: _tirageQuestions,
         sons: _sons,
         tirage: _tirage,

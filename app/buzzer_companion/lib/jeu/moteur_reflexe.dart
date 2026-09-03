@@ -4,7 +4,7 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 
 import '../audio/sonorisation.dart';
-import 'moteur_quiz.dart' show CommandesBuzzer;
+import 'moteur_quiz.dart' show CommandesBuzzer, ModeArmement;
 import 'mots_de_la_fin.dart';
 
 // CE QU'ON FAIT D'UN FAUX DÉPART.
@@ -279,7 +279,7 @@ class MoteurReflexe extends ChangeNotifier {
     ble.allumerLeds(0);
     // Armés AVANT le signal, sinon un appui prématuré ne nous parviendrait
     // pas et il n'y aurait aucun faux départ à juger.
-    ble.armer(_masqueEnLice, continu: true);
+    ble.armer(_masqueEnLice, mode: ModeArmement.continu);
     final delai = delaiMinMs + _hasard.nextInt(delaiMaxMs - delaiMinMs);
     _minuteur = Timer(Duration(milliseconds: delai), donnerLeSignal);
     notifyListeners();
@@ -419,7 +419,7 @@ class MoteurReflexe extends ChangeNotifier {
     }
     // On rearme sans toucher au delai en cours : le signal tombera quand il
     // devait tomber, sinon un faux depart renseignerait sur le moment du top.
-    ble.armer(_masqueEnLice, continu: true);
+    ble.armer(_masqueEnLice, mode: ModeArmement.continu);
     notifyListeners();
   }
 

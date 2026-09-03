@@ -42,20 +42,30 @@ class GrilleDesJeux extends StatelessWidget {
         runSpacing: BSSpace.s4,
         children: [
           for (var i = 0; i < kGameModeNames.length; i++)
-            _GameCard(
-              index: i,
-              active: moteur.jeuChoisi == i,
-              onSelect: () {
-                moteur.choisirJeu(i);
-                // En mode application le buzzer ne garde aucun jeu en
-                // memoire : le lui envoyer le remettrait a mener.
-                if (!isAppControl(game.phase)) ble.selectGame(i);
-                // Choix delibere de l'operateur : a partir d'ici le jeu actif
-                // peut etre annonce partout (voir GameState.displayGameMode).
-                game.markGameChosen();
-                onChoisi();
-              },
-            ),
+            // SIMON INVERSE N'A PAS SA CARTE. Ce n'est pas un autre jeu : les
+            // regles, le materiel et le deroulement sont les memes, seul le
+            // sens de la repetition change. Deux cartes cote a cote pour ca
+            // faisaient choisir avant d'avoir explique, alors que le sens se
+            // decide au moment de lancer. Il devient un reglage de la console
+            // de Simon, qui repose bien jeuChoisi sur 6.
+            if (i != 6)
+              _GameCard(
+                index: i,
+                // La carte de Simon reste allumee dans les deux sens.
+                active: i == 5
+                    ? (moteur.jeuChoisi == 5 || moteur.jeuChoisi == 6)
+                    : moteur.jeuChoisi == i,
+                onSelect: () {
+                  moteur.choisirJeu(i);
+                  // En mode application le buzzer ne garde aucun jeu en
+                  // memoire : le lui envoyer le remettrait a mener.
+                  if (!isAppControl(game.phase)) ble.selectGame(i);
+                  // Choix delibere de l'operateur : a partir d'ici le jeu
+                  // actif peut etre annonce partout (voir displayGameMode).
+                  game.markGameChosen();
+                  onChoisi();
+                },
+              ),
         ],
       ),
     );

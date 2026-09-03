@@ -21,7 +21,7 @@ import 'package:buzzer_companion/questionnaires/questionnaire.dart';
 
 class _MaterielMuet implements CommandesBuzzer {
   @override
-  void armer(int masque, {bool continu = false}) {}
+  void armer(int masque, {ModeArmement mode = ModeArmement.premier}) {}
   @override
   void desarmer() {}
   @override
