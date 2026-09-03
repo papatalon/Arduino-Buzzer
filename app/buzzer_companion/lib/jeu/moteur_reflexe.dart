@@ -190,6 +190,23 @@ class MoteurReflexe extends ChangeNotifier {
   /// Meilleur temps de la partie, toutes manches confondues.
   int? meilleurTemps;
 
+  /// LE RECORD DE TOUS LES TEMPS, celui du buzzer.
+  ///
+  /// Il vit en EEPROM sur le Mega et vaut pour les deux modes : une partie
+  /// menee par l'application compte pour le meme record qu'une partie au
+  /// clavier. C'est l'objet qui garde la memoire des soirees, pas
+  /// l'ordinateur qui passait par la. 65535 veut dire « aucun ».
+  int? record;
+
+  /// Vrai quand la partie qui vient de finir a battu le record.
+  bool recordBattu = false;
+
+  /// Appele quand le record tombe, pour que le Mega l'enregistre. Facultatif :
+  /// les regles ne dependent pas de la persistance.
+  void Function(int ms)? surNouveauRecord;
+
+  bool get aUnRecord => record != null && record != 0 && record != 65535;
+
   /// Vrai quand la manche s'est terminée sans que personne ne pèse.
   bool personne = false;
 
@@ -454,6 +471,17 @@ class MoteurReflexe extends ChangeNotifier {
   }
 
   void terminer() {
+    // LE RECORD NE VAUT QUE POUR LE REFLEXE : le Duel se joue au son, ses
+    // temps incluent un delai de demarrage qui n'a rien a voir. Les melanger
+    // fausserait une valeur que le buzzer garde depuis des mois.
+    recordBattu = false;
+    if (jeu == JeuDeVitesse.reflexe && meilleurTemps != null) {
+      if (!aUnRecord || meilleurTemps! < record!) {
+        recordBattu = true;
+        record = meilleurTemps;
+        surNouveauRecord?.call(meilleurTemps!);
+      }
+    }
     _arreterMinuteur();
     ble.desarmer();
     ble.allumerLeds(gagnantParElimination == null

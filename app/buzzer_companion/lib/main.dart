@@ -135,6 +135,11 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     // seule classe redonnerait le fouillis qu'on vient de defaire cote
     // firmware.
     _reflexe = MoteurReflexe(ble: _ble, sons: _sons);
+    // Le record du Reflexe vit en EEPROM sur le Mega : l'application le lit
+    // dans la telemetrie et lui renvoie celui qu'elle vient d'etablir. Une
+    // soiree menee par l'app compte donc pour le meme record qu'une soiree
+    // au clavier.
+    _reflexe.surNouveauRecord = _ble.enregistrerRecord;
     _reflexe.addListener(_pushSnapshotToPopout);
     _moteur.addListener(_pushSnapshotToPopout);
     // Un seul flux d'appuis, aiguille vers le jeu qui tourne. Le buzzer ne
@@ -165,6 +170,10 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   // dans les scores.
   void _suivrePresence() {
     final vu = _game.present;
+    // Le record arrive par la telemetrie (message REC).
+    if (_game.reflexRecordMs != _reflexe.record) {
+      _reflexe.record = _game.reflexRecordMs;
+    }
     if (listEquals(vu, _moteur.presents)) return;
     _moteur.presents = List<bool>.of(vu);
     _reflexe.presentsMateriel = List<bool>.of(vu);

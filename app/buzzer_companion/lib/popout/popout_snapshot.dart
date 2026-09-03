@@ -263,6 +263,8 @@ class PopoutSnapshot {
       reflexWinner: duel ? null : moteur.gagnant,
       reflexMs: duel ? null : moteur.tempsGagnant,
       reflexBestMs: duel ? null : moteur.meilleurTemps,
+      reflexRecordMs: duel ? null : moteur.record,
+      reflexNewRecord: !duel && moteur.recordBattu,
       // L'ecran du Duel a ses propres champs : il met les deux duellistes
       // face a face, ce que la zone du Reflexe ne fait pas.
       duelPlayerA: duel ? _premierPresent(moteur.presents) : null,

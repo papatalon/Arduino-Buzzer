@@ -545,8 +545,23 @@ class _FinDePartie extends StatelessWidget {
         ],
         if (moteur.meilleurTemps != null) ...[
           const SizedBox(height: BSSpace.s3),
-          Text('Meilleur temps de la soirée : ${moteur.meilleurTemps} ms',
-              style: BSType.body(size: 17, color: BSColors.neutral600)),
+          Text(
+            moteur.recordBattu
+                ? 'Record battu : ${moteur.meilleurTemps} ms'
+                : 'Meilleur temps de la partie : ${moteur.meilleurTemps} ms',
+            style: BSType.body(
+                size: 17,
+                color: moteur.recordBattu
+                    ? BSColors.accent2_700
+                    : BSColors.neutral600),
+          ),
+          // Le record du buzzer, pas celui de cette soiree : il vit en EEPROM
+          // et vaut aussi pour les parties jouees au clavier.
+          if (!moteur.recordBattu && moteur.aUnRecord) ...[
+            const SizedBox(height: 2),
+            Text('Record du buzzer : ${moteur.record} ms',
+                style: BSType.body(size: 15, color: BSColors.neutral600)),
+          ],
         ],
         const SizedBox(height: BSSpace.s6),
         _TableauScores(moteur: moteur, teams: teams),

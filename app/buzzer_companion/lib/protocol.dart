@@ -795,6 +795,16 @@ class GameState extends ChangeNotifier {
             }
           }
           break;
+        // LE RECORD DU REFLEXE, envoye par le Mega a la connexion et apres
+        // chaque mise a jour. Il vit en EEPROM : une partie menee par
+        // l'application compte pour le meme record qu'une partie au clavier,
+        // parce qu'il appartient au buzzer et non a l'ordinateur.
+        case 'REC':
+          if (parts.length >= 2) {
+            reflexRecordMs = int.tryParse(parts[1]);
+            handled = reflexRecordMs != null;
+          }
+          break;
         case 'RFLXR':
           if (parts.length == 4) {
             reflexBestMs = int.tryParse(parts[1]);

@@ -111,6 +111,9 @@ void loop() {
     // en a besoin des la premiere seconde pour savoir avec combien d'equipes
     // elle joue.
     buzzer.sendPresenceNow();
+    // Le record du Reflexe, qui vit en EEPROM et vaut pour les deux modes :
+    // l'application le reprend au lieu d'en tenir un seul pour elle.
+    BleLink::shared().send("REC|" + String(reflex.record()));
   }
   wasInControl = inControl;
 
@@ -157,6 +160,14 @@ PhaseMode getCurrentMode() {
   int presenceMask = BleLink::shared().consumePresenceMask();
   if (presenceMask >= 0) {
     buzzer.setPresenceMask(presenceMask);
+  }
+
+  // Le record que l'application vient d'etablir. N'affecte aucune phase : il
+  // reste, comme les sons et la presence, au-dessus du court-circuit.
+  int nouveauRecord = BleLink::shared().consumeRecord();
+  if (nouveauRecord > 0) {
+    reflex.enregistrerRecord((unsigned int)nouveauRecord);
+    BleLink::shared().send("REC|" + String(reflex.record()));
   }
 
   // Configuration ET sons de partie pilotes depuis l'app. Reproduit ce que

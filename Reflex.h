@@ -37,6 +37,14 @@ class Reflex {
 public:
     void reset();                           // nouvelle partie : scores a zero
 
+    // LE RECORD APPARTIENT AU BUZZER, pas a un portable.
+    //
+    // Il vit en EEPROM et vaut pour les deux modes : une partie menee par
+    // l'application compte pour le meme record qu'une partie au clavier. Ces
+    // deux methodes l'ouvrent a l'app (messages REC et SET_REC).
+    unsigned int record();
+    void enregistrerRecord(unsigned int ms);
+
     void setArm();                          // manche suivante : attente du signal
     PhaseMode arm(char pressedKey);
 

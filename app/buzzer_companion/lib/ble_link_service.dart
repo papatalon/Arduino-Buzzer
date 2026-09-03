@@ -404,6 +404,12 @@ class BleLinkService extends ChangeNotifier implements CommandesBuzzer {
   // à trois depuis l'app : l'assistant du clavier exige un appui PHYSIQUE
   // sur chaque buzzer présent, geste impossible à piloter à distance, et le
   // clavier est de toute façon verrouillé pendant que l'app a le contrôle.
+  // Le record du Reflexe, quand l'application vient de le battre. Le Mega
+  // decide s'il l'enregistre : il pourrait recevoir un temps d'une version
+  // plus ancienne, ou moins bon que celui qu'il garde.
+  Future<void> enregistrerRecord(int ms) => _writeUartLine(connectedDeviceId,
+      _uartServiceId, _uartCharacteristicId, 'SET_REC|$ms');
+
   Future<void> setPresence(List<bool> present) async {
     var mask = 0;
     for (var i = 0; i < present.length && i < 4; i++) {

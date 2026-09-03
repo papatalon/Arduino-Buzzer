@@ -288,3 +288,20 @@ PhaseMode Reflex::gameOver(char pressedKey) {
   }
   return REFLEX_OVER;
 }
+
+// Le record, ouvert a l'application. Elle mene le Reflexe en mode applicatif,
+// mais la valeur reste celle du buzzer : c'est l'objet qui garde la memoire
+// des soirees, pas l'ordinateur qui passait par la.
+unsigned int Reflex::record() {
+  return readRecord();
+}
+
+// N'ecrit QUE si c'est mieux : le garde-fou est ici, pas dans l'application.
+// Elle pourrait etre d'une version plus ancienne, ou se tromper.
+void Reflex::enregistrerRecord(unsigned int ms) {
+  if (ms == 0) return;
+  unsigned int actuel = readRecord();
+  if (actuel == REFLEX_NO_RECORD || actuel == 0 || ms < actuel) {
+    writeRecord(ms);
+  }
+}

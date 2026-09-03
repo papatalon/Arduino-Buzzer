@@ -558,4 +558,81 @@ void main() {
       m.dispose();
     });
   });
+
+  group('Le record du buzzer', () {
+    // Il vit en EEPROM sur le Mega et vaut pour les DEUX modes : une soiree
+    // menee par l'application compte pour le meme record qu'une soiree au
+    // clavier. C'est l'objet qui garde la memoire, pas l'ordinateur.
+    test('un meilleur temps bat le record et le fait remonter', () {
+      moteur = creer(manches: 1);
+      int? remonte;
+      moteur
+        ..record = 300
+        ..surNouveauRecord = (ms) => remonte = ms;
+
+      moteur.demarrer();
+      donnerLeSignal(moteur);
+      moteur.surBuzz(_bleu, 240);
+      moteur.continuer();
+
+      expect(moteur.recordBattu, isTrue);
+      expect(moteur.record, 240);
+      expect(remonte, 240, reason: 'le Mega doit l\'enregistrer');
+    });
+
+    test('un temps moins bon ne touche a rien', () {
+      moteur = creer(manches: 1);
+      int? remonte;
+      moteur
+        ..record = 180
+        ..surNouveauRecord = (ms) => remonte = ms;
+
+      moteur.demarrer();
+      donnerLeSignal(moteur);
+      moteur.surBuzz(_bleu, 240);
+      moteur.continuer();
+
+      expect(moteur.recordBattu, isFalse);
+      expect(moteur.record, 180);
+      expect(remonte, isNull);
+    });
+
+    test('sans record connu, le premier temps en devient un', () {
+      moteur = creer(manches: 1);
+      moteur.record = 65535;      // la valeur « aucun » du firmware
+      expect(moteur.aUnRecord, isFalse);
+
+      moteur.demarrer();
+      donnerLeSignal(moteur);
+      moteur.surBuzz(_bleu, 240);
+      moteur.continuer();
+
+      expect(moteur.recordBattu, isTrue);
+      expect(moteur.record, 240);
+    });
+
+    test('LE DUEL NE TOUCHE PAS AU RECORD', () {
+      materiel = _Materiel();
+      final m = MoteurReflexe(ble: materiel, hasard: Random(1))
+        ..presentsMateriel = [true, false, false, true]
+        ..manchesPrevues = 1
+        ..jeu = JeuDeVitesse.duel
+        ..regleFauxDepart = FauxDepart.offreLaManche
+        ..record = 300;
+      int? remonte;
+      m.surNouveauRecord = (ms) => remonte = ms;
+
+      m.demarrer();
+      m.donnerLeSignal();
+      m.surBuzz(_vert, 200);      // meilleur que le record
+      m.continuer();
+
+      // Ses temps incluent le delai de demarrage d'un son : les melanger
+      // fausserait une valeur que le buzzer garde depuis des mois.
+      expect(m.recordBattu, isFalse);
+      expect(m.record, 300);
+      expect(remonte, isNull);
+      m.dispose();
+    });
+  });
 }

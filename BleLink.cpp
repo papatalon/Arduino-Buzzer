@@ -83,6 +83,13 @@ char BleLink::pollKey() {
           _pendingSoundCommand = action;
           _pendingSoundBuzzer = who;
         }
+      } else if (_rxBuffer.startsWith("SET_REC|")) {
+        // L'application a battu le record pendant une partie qu'elle menait.
+        // Le Mega decide s'il l'enregistre : voir Reflex::enregistrerRecord.
+        long ms = _rxBuffer.substring(8).toInt();
+        if (ms > 0 && ms < 65535) {
+          _pendingRecord = (int)ms;
+        }
       } else if (_rxBuffer.startsWith("SET_PRESENT|")) {
         int mask = _rxBuffer.substring(12).toInt();
         if (mask >= 0 && mask < 16) {  // 4 bits, un par buzzer
@@ -208,5 +215,11 @@ int BleLink::consumeQuestionCount() {
 int BleLink::consumeCategoryMask() {
   int v = _pendingCategoryMask;
   _pendingCategoryMask = -1;
+  return v;
+}
+
+int BleLink::consumeRecord() {
+  int v = _pendingRecord;
+  _pendingRecord = -1;
   return v;
 }
