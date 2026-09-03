@@ -15,6 +15,7 @@ import 'event_logo.dart';
 import 'jeu/animation_tirage.dart';
 import 'jeu/moteur_quiz.dart';
 import 'jeu/moteur_chrono_aveugle.dart';
+import 'jeu/moteur_ne_buzze_pas.dart';
 import 'jeu/moteur_reflexe.dart';
 import 'popout/popout_launcher.dart';
 import 'popout/popout_snapshot.dart';
@@ -76,6 +77,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   late final MoteurQuiz _moteur;
   late final MoteurReflexe _reflexe;
   late final MoteurChronoAveugle _chronoAveugle;
+  late final MoteurNeBuzzePas _neBuzzePas;
   late final Sonorisation _sons;
   late final AnimationTirage _tirage;
   final _version = VersionCheck();
@@ -149,12 +151,19 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     _chronoAveugle = MoteurChronoAveugle(ble: _ble, sons: _sons);
     _chronoAveugle.surNouveauRecord = _ble.enregistrerRecordEcart;
     _chronoAveugle.addListener(_pushSnapshotToPopout);
+
+    // NE BUZZE PAS. Il tire ses propres sons a chaque partie : les habitues
+    // ne peuvent pas arriver en connaissant le leur.
+    _neBuzzePas = MoteurNeBuzzePas(ble: _ble, sons: _sons);
+    _neBuzzePas.addListener(_pushSnapshotToPopout);
     _reflexe.addListener(_pushSnapshotToPopout);
     _moteur.addListener(_pushSnapshotToPopout);
     // Un seul flux d'appuis, aiguille vers le jeu qui tourne. Le buzzer ne
     // sait pas a quoi on joue : c'est justement le principe.
     _buzzSub = _game.buzzEvents.listen((e) {
-      if (_chronoAveugle.etape != EtapeChronoAveugle.repos) {
+      if (_neBuzzePas.etape != EtapeNeBuzzePas.repos) {
+        _neBuzzePas.surBuzz(e.buzzer, e.ms);
+      } else if (_chronoAveugle.etape != EtapeChronoAveugle.repos) {
         _chronoAveugle.surBuzz(e.buzzer, e.ms);
       } else if (_reflexe.etape != EtapeReflexe.repos) {
         _reflexe.surBuzz(e.buzzer, e.ms);
@@ -189,6 +198,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
       _chronoAveugle.record = _game.blindRecordMs;
     }
     _chronoAveugle.presentsMateriel = List<bool>.of(vu);
+    _neBuzzePas.presentsMateriel = List<bool>.of(vu);
     if (listEquals(vu, _moteur.presents)) return;
     _moteur.presents = List<bool>.of(vu);
     _reflexe.presentsMateriel = List<bool>.of(vu);
@@ -225,6 +235,13 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   // lui fabrique de l'exterieur (voir PopoutLauncher.instantaneCourant).
   PopoutSnapshot _instantane() {
     // Le jeu qui tourne passe avant : c'est lui qu'on regarde.
+    if (_neBuzzePas.etape != EtapeNeBuzzePas.repos) {
+      return PopoutSnapshot.duNeBuzzePas(
+        _neBuzzePas,
+        teamNames: _teams.all,
+        logoPath: _logo.path,
+      );
+    }
     if (_chronoAveugle.etape != EtapeChronoAveugle.repos) {
       return PopoutSnapshot.duChronoAveugle(
         _chronoAveugle,
@@ -272,6 +289,8 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     _reflexe.dispose();
     _chronoAveugle.removeListener(_pushSnapshotToPopout);
     _chronoAveugle.dispose();
+    _neBuzzePas.removeListener(_pushSnapshotToPopout);
+    _neBuzzePas.dispose();
     _sound.removeListener(_pushSnapshotToPopout);
     _sound.dispose();
     _ble.dispose();
@@ -312,6 +331,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
         moteur: _moteur,
         reflexe: _reflexe,
         chronoAveugle: _chronoAveugle,
+        neBuzzePas: _neBuzzePas,
         tirageQuestions: _tirageQuestions,
         sons: _sons,
         tirage: _tirage,

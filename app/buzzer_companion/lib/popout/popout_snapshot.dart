@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import '../jeu/moteur_quiz.dart';
 import '../jeu/moteur_chrono_aveugle.dart';
+import '../jeu/moteur_ne_buzze_pas.dart';
 import '../jeu/moteur_reflexe.dart';
 import '../protocol.dart';
 import '../questionnaires/questionnaire.dart';
@@ -221,6 +222,52 @@ class PopoutSnapshot {
   // valeurs du moteur, ce qui laisse la fenetre publique telle quelle : elle
   // sait deja les rendre.
   // L'ECRAN PUBLIC PENDANT UN CHRONO AVEUGLE mene par l'application.
+  // L'ECRAN PUBLIC PENDANT « NE BUZZE PAS » mene par l'application.
+  //
+  // Comme pour les autres, rien de nouveau n'est dessine : SoundGameZone
+  // existe pour le mode autonome et lit une PHASE A AFFICHER.
+  //
+  // C'EST LE SON PRECEDENT QUI EST MONTRE, jamais celui en cours. Reveler a
+  // qui appartient le son qui joue repondrait a la question avant les
+  // joueurs, et c'est toute la question du jeu.
+  factory PopoutSnapshot.duNeBuzzePas(
+    MoteurNeBuzzePas moteur, {
+    required List<String> teamNames,
+    required String? logoPath,
+  }) {
+    final phase = switch (moteur.etape) {
+      EtapeNeBuzzePas.ecoute => 'SOUND_LEARN',
+      EtapeNeBuzzePas.flux => 'SOUND_PLAY',
+      EtapeNeBuzzePas.finie => 'SOUND_OVER',
+      EtapeNeBuzzePas.repos => null,
+    };
+    return PopoutSnapshot(
+      appMene: true,
+      phaseJeu: phase == null ? null : kPhaseNames.indexOf(phase),
+      gameMode: 9,
+      displayGameMode: 9,
+      scores: const [0, 0, 0, 0],
+      gameScores: List<int>.of(moteur.scores),
+      present: List<bool>.of(moteur.presents),
+      flowState: QuestionFlowState.none,
+      gameWinner:
+          moteur.etape == EtapeNeBuzzePas.finie ? moteur.vainqueur : null,
+      gameTie: moteur.etape == EtapeNeBuzzePas.finie && moteur.egalite,
+      gameFinished: moteur.etape == EtapeNeBuzzePas.finie,
+      motFinal: moteur.motFinal,
+      // -1 veut dire « ecoute terminee », comme cote firmware.
+      soundLearning: moteur.aQuiLeTour ?? -1,
+      // -2 : aucun son n'est encore passe, donc rien a reveler. Null : le son
+      // precedent etait un leurre.
+      soundLastOwner: !moteur.aDejaJoue
+          ? -2
+          : (moteur.precedentEtaitLeurre ? null : moteur.proprietairePrecedent),
+      soundLastClaimed: moteur.precedentReclame,
+      teamNames: teamNames,
+      logoPath: logoPath,
+    );
+  }
+
   //
   // Comme pour le Reflexe, rien de nouveau n'est dessine : BlindZone existe
   // pour le mode autonome et lit une PHASE A AFFICHER, que le moteur dicte.

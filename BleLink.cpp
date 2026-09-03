@@ -79,7 +79,10 @@ char BleLink::pollKey() {
         bool sansBuzzer = (action == 'S' || action == 'W' || action == 'G' ||
                            action == 'B' || action == 'R' || action == 'I' ||
                            action == 'X' || action == 'Z');
-        if (sansBuzzer || (who >= 0 && who < 4)) {
+        // 'Y' vise un SON par son index dans le dossier, pas un buzzer : la
+        // borne de 4 ne s'y applique pas.
+        if (sansBuzzer || (action == 'Y' && who >= 0) ||
+            (who >= 0 && who < 4)) {
           _pendingSoundCommand = action;
           _pendingSoundBuzzer = who;
         }

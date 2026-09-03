@@ -1,5 +1,6 @@
 import '../ble_link_service.dart';
 import 'sound_engine.dart';
+import 'sound_library.dart';
 
 // LA SEULE FAÇON DE JOUER UN SON DE PARTIE.
 //
@@ -88,6 +89,27 @@ class Sonorisation {
 
   /// Tirage au sort animé, au départ d'une manche de Vol.
   void tirage() => _jouer(locale.playSpin, 'R');
+
+  /// UN SON DESIGNE PAR SON INDEX dans le dossier des buzzers.
+  ///
+  /// Sert a « Ne buzze pas », qui assigne des sons au hasard pour la duree
+  /// d'une partie : les sons configures ne doivent pas bouger pour autant,
+  /// donc on ne peut pas passer par [buzz].
+  void sonNumero(int index) {
+    if (index < 0) return;
+    if (versLApplication) {
+      locale.previewBuzzerSound(index);
+    } else {
+      ble.sendSoundCommand('Y', index);
+    }
+  }
+
+  /// Combien de sons de buzzer sont disponibles, pour tirer une assignation.
+  /// Cote buzzer, le compte vient de la telemetrie : l'application ne lit pas
+  /// sa carte SD.
+  int nombreDeSonsDeBuzzer(int? compteSD) => versLApplication
+      ? locale.library.count(SoundFolder.buzzer)
+      : (compteSD ?? 0);
 
   /// Le son propre à un buzzer, celui qu'on entend quand il est frappé.
   void buzz(int buzzer) {

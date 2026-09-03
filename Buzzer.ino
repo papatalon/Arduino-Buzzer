@@ -107,6 +107,10 @@ void loop() {
     BleLink::shared().send(String("AUDIO|") + (mp3.isSimulation() ? "0" : "1")
                            + "|" + String(mp3.getVolume()));
     mp3.sendAllSoundAssignments();
+    // Combien de sons de buzzer la carte SD contient : l'application en a
+    // besoin pour tirer une assignation au hasard quand c'est le buzzer qui
+    // sonne (voir « Ne buzze pas »).
+    BleLink::shared().send("SNDN|" + String(mp3.buzzerSoundPoolSize()));
     // Presence des buzzers : c'est du materiel, pas du jeu, et l'application
     // en a besoin des la premiere seconde pour savoir avec combien d'equipes
     // elle joue.
@@ -226,6 +230,11 @@ PhaseMode getCurrentMode() {
         break;
       case 'X':
         mp3.stopNow();    // l'app ecourte : on se tait
+        break;
+      case 'Y':
+        // Un son designe par son INDEX. « Ne buzze pas » assigne des sons au
+        // hasard pour la duree d'une partie, sans toucher a la configuration.
+        mp3.playBuzzerSound(who);
         break;
       case 'Z':
         // Duel : signal de depart sonore, un son de buzzer quelconque et non

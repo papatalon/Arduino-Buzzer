@@ -21,7 +21,9 @@ import '../jeu/animation_tirage.dart';
 import '../jeu/console_quiz.dart';
 import '../jeu/console_reflexe.dart';
 import '../jeu/console_chrono_aveugle.dart';
+import '../jeu/console_ne_buzze_pas.dart';
 import '../jeu/moteur_chrono_aveugle.dart';
+import '../jeu/moteur_ne_buzze_pas.dart';
 import '../jeu/moteur_reflexe.dart';
 import '../questionnaires/tirage_questions.dart';
 import '../jeu/moteur_quiz.dart';
@@ -68,6 +70,7 @@ class ConsoleShell extends StatefulWidget {
     required this.moteur,
     required this.reflexe,
     required this.chronoAveugle,
+    required this.neBuzzePas,
     required this.tirageQuestions,
     required this.sons,
     required this.tirage,
@@ -87,6 +90,7 @@ class ConsoleShell extends StatefulWidget {
   final MoteurQuiz moteur;
   final MoteurReflexe reflexe;
   final MoteurChronoAveugle chronoAveugle;
+  final MoteurNeBuzzePas neBuzzePas;
   final TirageQuestions tirageQuestions;
   final Sonorisation sons;
   final AnimationTirage tirage;
@@ -188,6 +192,7 @@ class _ConsoleShellState extends State<ConsoleShell> {
                                   moteur: widget.moteur,
                                   reflexe: widget.reflexe,
                                   chronoAveugle: widget.chronoAveugle,
+                                  neBuzzePas: widget.neBuzzePas,
                                   tirageQuestions: widget.tirageQuestions,
                                   sons: widget.sons,
                                   tirage: widget.tirage,
@@ -385,6 +390,7 @@ class _CenterColumn extends StatelessWidget {
     required this.moteur,
     required this.reflexe,
     required this.chronoAveugle,
+    required this.neBuzzePas,
     required this.tirageQuestions,
     required this.sons,
     required this.tirage,
@@ -403,6 +409,7 @@ class _CenterColumn extends StatelessWidget {
   final MoteurQuiz moteur;
   final MoteurReflexe reflexe;
   final MoteurChronoAveugle chronoAveugle;
+  final MoteurNeBuzzePas neBuzzePas;
   final TirageQuestions tirageQuestions;
   final Sonorisation sons;
   final AnimationTirage tirage;
@@ -445,6 +452,18 @@ class _CenterColumn extends StatelessWidget {
     // en pleine question.
     // REFLEXE : sa propre console, avec ses propres regles. Elle passe avant
     // celle du quiz des que le jeu retenu est le sien.
+    // NE BUZZE PAS : son propre moteur, sa propre console.
+    if (neBuzzePas.etape != EtapeNeBuzzePas.repos ||
+        (isAppControl(game.phase) && moteur.jeuChoisi == 9)) {
+      return ConsoleNeBuzzePas(
+        moteur: neBuzzePas,
+        teams: teams,
+        // Le compte depend de la sortie choisie : la bibliotheque de
+        // l'application, ou la carte SD annoncee par le Mega.
+        nombreDeSons: sons.nombreDeSonsDeBuzzer(game.nombreDeSonsSD),
+        onChangerDeJeu: moteur.oublierJeu,
+      );
+    }
     // CHRONO AVEUGLE : son propre moteur, sa propre console.
     if (chronoAveugle.etape != EtapeChronoAveugle.repos ||
         (isAppControl(game.phase) && moteur.jeuChoisi == 8)) {

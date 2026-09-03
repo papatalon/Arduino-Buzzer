@@ -14,7 +14,9 @@
 #define SOUND_INTERVAL_START 2500    // ecart entre deux sons, au debut
 #define SOUND_INTERVAL_MIN 1200      // ecart le plus serre (fin de partie)
 #define SOUND_INTERVAL_STEP 100      // resserrement a chaque son
-#define SOUND_DECOY_PERCENT 30       // proportion de leurres quand ils sont actifs
+#define SOUND_DECOY_MIN_PCT 15       // part de leurres : plancher
+#define SOUND_DECOY_MAX_PCT 35       // ... et plafond, tiree au sort entre les deux
+#define SOUND_COURSE_MAX (GAME_ROUNDS_MAX + 4)  // le parcours peut arrondir vers le haut
 
 // « Ne buzze pas » : jeu d'oreille. Chaque joueur a deja SON son de buzz
 // (assistant "A") ; la machine enchaine des sons en FLUX CONTINU et il faut
@@ -57,7 +59,16 @@ private:
   int scores[4] = { 0, 0, 0, 0 };
   bool aborted = false;
 
-  int totalSounds = 0;           // sons de la partie, fige par reset()
+  int totalSounds = 0;           // sons de la partie, fige par buildCourse()
+
+  // LE PARCOURS DE LA PARTIE, monte d'avance par buildCourse().
+  //
+  // Chaque case dit a qui appartient le son de ce tour, -1 pour un leurre.
+  // Tirer chaque tour au hasard un par un, comme on le faisait, ne garantit
+  // rien : sur seize tours il arrive couramment qu'un buzzer ne sorte JAMAIS,
+  // et ce joueur ne peut alors pas marquer un seul point sans que rien ne
+  // l'explique. Ici tout le monde a exactement le meme nombre de tours.
+  int8_t course[SOUND_COURSE_MAX];
   bool decoys = false;           // leurres actifs, fige par reset()
 
   // Apprentissage.
@@ -74,7 +85,7 @@ private:
   bool buzzed[4];                // a deja buzze sur ce son (bon ou mauvais)
 
   int pickPlayer();              // un joueur present au hasard (-1 si aucun)
-  int pickOwner();               // joueur au hasard, ou -1 pour un leurre
+  void buildCourse();            // monte le parcours equitable de la partie
   int pickDecoySound();          // son du dossier appartenant a personne (-1 si aucun)
   void playNext();               // enchaine le son suivant
   void judgeCurrent();           // penalise le proprietaire qui n'a rien fait

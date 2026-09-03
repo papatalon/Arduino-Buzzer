@@ -9,6 +9,7 @@ void SoundGame::reset() {
   played = 0;
   totalSounds = buzzer.getGameRounds(GAME_SOUND);
   decoys = buzzer.getSoundDecoys();
+  buildCourse();            // apres decoys : les leurres en dependent
   interval = SOUND_INTERVAL_START;
   owner = -1;
   claimed = false;
@@ -116,12 +117,109 @@ int SoundGame::pickPlayer() {
   return (n > 0) ? pool[random(n)] : -1;
 }
 
-int SoundGame::pickOwner() {
-  if (decoys && (int)random(100) < SOUND_DECOY_PERCENT) {
-    return -1;               // leurre
+// MONTER LE PARCOURS : chaque buzzer present obtient EXACTEMENT le meme
+// nombre de tours.
+//
+// Le menu demande un nombre total de sons ; on le repartit ici. Ce qui ne
+// tombe pas juste sur le nombre de joueurs devient des leurres, ce qui laisse
+// le total conforme a ce que l'animateur a regle. Sans leurres, le total est
+// arrondi vers le bas : mieux vaut deux sons de moins qu'un joueur lese.
+void SoundGame::buildCourse() {
+  int players[4];
+  int n = 0;
+  for (int i = 0; i < 4; i++) {
+    if (buzzer.isEnabled(i)) {
+      players[n++] = i;
+    }
   }
-  return pickPlayer();
+  if (n == 0) {
+    totalSounds = 0;
+    return;
+  }
+
+  int total = totalSounds;
+  if (total > GAME_ROUNDS_MAX) {
+    total = GAME_ROUNDS_MAX;
+  }
+
+  // Part de leurres tiree au sort pour que deux parties ne se ressemblent
+  // pas, mais bornee par le total : vingt tours ne peuvent pas porter cent
+  // leurres.
+  int wanted = 0;
+  bool canDecoy = decoys && pickDecoySound() >= 0;
+  if (canDecoy) {
+    int lo = (total * SOUND_DECOY_MIN_PCT) / 100;
+    int hi = (total * SOUND_DECOY_MAX_PCT) / 100;
+    wanted = lo + ((hi > lo) ? (int)random(hi - lo + 1) : 0);
+  }
+
+  int chances = (total - wanted) / n;
+  if (chances < 1) {
+    chances = 1;              // au moins un tour chacun, meme sur une partie courte
+  }
+  int playerRounds = chances * n;
+  int decoyCount = canDecoy ? (total - playerRounds) : 0;
+  if (decoyCount < 0) {
+    decoyCount = 0;
+  }
+  int len = playerRounds + decoyCount;
+  if (len > SOUND_COURSE_MAX) {
+    len = SOUND_COURSE_MAX;
+  }
+
+  // Combien il reste a placer. L'index 4 porte les leurres : un compteur a
+  // part plutot qu'une valeur -1 melee aux joueurs, sinon "leurre choisi" et
+  // "rien trouve" se confondent et le tri se trompe en silence.
+  int8_t left[5] = { 0, 0, 0, 0, 0 };
+  for (int k = 0; k < n; k++) {
+    left[players[k]] = (int8_t)chances;
+  }
+  left[4] = (int8_t)decoyCount;
+
+  // ETALER LES TOURS D'UN MEME BUZZER : deux tours de suite pour la meme
+  // personne se jouent mal, elle vient de peser et son son revient une
+  // seconde et demie plus tard. On place toujours celui a qui il reste le
+  // plus de tours parmi ceux qui ne viennent pas de jouer, ce qui donne
+  // toujours un ordre valide quand il en existe un. Les leurres ont le droit
+  // de se suivre : ce sont des sons differents a chaque fois.
+  int prev = -2;
+  int pos = 0;
+  while (pos < len) {
+    int best = -1;
+    int bestLeft = 0;
+    int start = (int)random(5);      // depart tournant : sinon le rouge passe toujours en premier a egalite
+    for (int t = 0; t < 5; t++) {
+      int c = (start + t) % 5;
+      if (left[c] <= 0) {
+        continue;
+      }
+      if (c != 4 && c == prev) {
+        continue;
+      }
+      if (left[c] > bestLeft) {
+        bestLeft = left[c];
+        best = c;
+      }
+    }
+    if (best < 0) {
+      for (int c = 0; c < 5; c++) {  // dernier recours : il ne reste que celui qu'on vient de jouer
+        if (left[c] > 0) {
+          best = c;
+          break;
+        }
+      }
+    }
+    if (best < 0) {
+      break;
+    }
+    left[best]--;
+    course[pos++] = (best == 4) ? -1 : (int8_t)best;
+    prev = (best == 4) ? -2 : best;
+  }
+
+  totalSounds = pos;
 }
+
 
 // Un son du dossier des buzzers qui n'appartient a aucun joueur PRESENT : le
 // son d'un buzzer declare absent fait un leurre parfaitement valable, puisque
@@ -154,7 +252,8 @@ void SoundGame::playNext() {
     buzzed[i] = false;
   }
 
-  owner = pickOwner();
+  // Le parcours est monte d'avance : on lit la case du tour, on ne tire plus.
+  owner = (played >= 1 && played <= totalSounds) ? course[played - 1] : -1;
   if (owner >= 0) {
     mp3.playBuzzer(owner);
   } else {

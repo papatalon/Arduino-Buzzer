@@ -346,6 +346,11 @@ class GameState extends ChangeNotifier {
   // Chrono aveugle : cible annoncee, puis temps de chacun au resultat.
   int? blindTargetS;
 
+  // Combien de sons de buzzer la carte SD contient. Sert a tirer une
+  // assignation au hasard quand c'est le buzzer qui sonne : l'application ne
+  // connait pas le contenu de sa carte.
+  int? nombreDeSonsSD;
+
   // Le record du Chrono aveugle : le plus petit ecart jamais realise. Il vit
   // en EEPROM sur le Mega et vaut pour les deux modes, comme celui du
   // Reflexe. 65535 veut dire « aucun ».
@@ -804,6 +809,12 @@ class GameState extends ChangeNotifier {
         // chaque mise a jour. Il vit en EEPROM : une partie menee par
         // l'application compte pour le meme record qu'une partie au clavier,
         // parce qu'il appartient au buzzer et non a l'ordinateur.
+        case 'SNDN':
+          if (parts.length >= 2) {
+            nombreDeSonsSD = int.tryParse(parts[1]);
+            handled = nombreDeSonsSD != null;
+          }
+          break;
         case 'RECB':
           if (parts.length >= 2) {
             blindRecordMs = int.tryParse(parts[1]);
