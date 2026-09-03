@@ -423,10 +423,21 @@ class _SimonZone extends StatelessWidget {
     // partie : rien ne disait que c'était fini, et le mot de la fin ne
     // sortait jamais.
     if (snapshot.gameFinished) {
-      return GameOverZone(
-        snapshot: snapshot,
-        resultat: '$done',
-        detail: done > 1 ? 'niveaux réussis' : 'niveau réussi',
+      // LA SEQUENCE FAIT GROSSIR CET ECRAN, et une longue partie en met
+      // trente-deux couleurs. Plutot que de choisir des tailles qui tiennent
+      // dans le pire cas et qui seraient minuscules dans le cas ordinaire, on
+      // laisse l'ensemble se reduire quand il deborde : devant une salle,
+      // rien ne doit jamais etre coupe.
+      return FittedBox(
+        fit: BoxFit.scaleDown,
+        child: GameOverZone(
+          snapshot: snapshot,
+          resultat: '$done',
+          detail: done > 1 ? 'niveaux réussis' : 'niveau réussi',
+          complement: snapshot.simonSequence.isEmpty
+              ? null
+              : _SimonFin(snapshot: snapshot),
+        ),
       );
     }
     // [simonLevel] compte les niveaux RÉUSSIS : celui qui se joue est donc
@@ -448,6 +459,85 @@ class _SimonZone extends StatelessWidget {
         ],
       ],
     );
+  }
+}
+
+// CE QU'ÉTAIT LA SÉQUENCE, et où la chaîne a lâché.
+//
+// Une fois la partie finie, c'est ce que toute la salle veut voir : elle vient
+// de la subir sans jamais l'avoir en entier sous les yeux.
+//
+// NOMMER LE FAUTIF SANS L'ACCABLER. Il est de toute façon désigné, sa LED est
+// restée allumée sur son buzzer. Le taire serait donc juste gênant. Mais
+// « Bleu s'est trompé » ne fait que pointer quelqu'un devant tout le monde,
+// alors que « Bleu a pesé, c'était à Rouge » raconte la séquence : la même
+// information, sans le procès. Le détail des couleurs se lit tout seul
+// juste au-dessus, et le mot de la fin qui suit parle de l'équipe entière.
+class _SimonFin extends StatelessWidget {
+  const _SimonFin({required this.snapshot});
+  final PopoutSnapshot snapshot;
+
+  @override
+  Widget build(BuildContext context) {
+    final sequence = snapshot.simonSequence;
+    // Une séquence longue doit tenir devant une salle sans devenir un mur de
+    // confettis : les carrés rapetissent plutôt que de partir sur six rangées.
+    final taille = sequence.length <= 12
+        ? 68.0
+        : sequence.length <= 20
+            ? 52.0
+            : 38.0;
+    final fautif = snapshot.simonFautif;
+    final attendu = snapshot.simonAttendu;
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text('LA SÉQUENCE',
+            style: BSType.popoutHeaderMeta(color: BSColors.neutral600)),
+        const SizedBox(height: BSSpace.s3),
+        ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 1180),
+          child: Wrap(
+            alignment: WrapAlignment.center,
+            spacing: 10,
+            runSpacing: 10,
+            children: [
+              for (var k = 0; k < sequence.length; k++)
+                Container(
+                  width: taille,
+                  height: taille,
+                  decoration: BoxDecoration(
+                    color: kBuzzerColors[sequence[k]].fill,
+                    // La case où ça s'est arrêté, encadrée : c'est le
+                    // renseignement, le reste n'est que le décompte.
+                    border: k == _positionAtteinte(sequence.length)
+                        ? Border.all(color: BSColors.text, width: 5)
+                        : null,
+                  ),
+                ),
+            ],
+          ),
+        ),
+        if (fautif != null && attendu != null) ...[
+          const SizedBox(height: BSSpace.s4),
+          Text(
+            '${snapshot.teamName(fautif)} a pesé, '
+            "c'était à ${snapshot.teamName(attendu)}.",
+            textAlign: TextAlign.center,
+            style: BSType.body(size: 34, color: BSColors.text),
+          ),
+        ],
+      ],
+    );
+  }
+
+  /// Où l'équipe s'est rendue, dans le sens où la séquence est MONTRÉE. En
+  /// mode inverse elle part de la fin : compter depuis le début encadrerait
+  /// la mauvaise couleur.
+  int _positionAtteinte(int longueur) {
+    final saisis = snapshot.simonEntered ?? 0;
+    return snapshot.gameMode == 6 ? longueur - 1 - saisis : saisis;
   }
 }
 

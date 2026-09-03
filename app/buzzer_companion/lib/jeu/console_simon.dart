@@ -403,15 +403,22 @@ class _FinDePartie extends StatelessWidget {
         Text('NIVEAU ATTEINT', style: BSType.sectionKicker()),
         const SizedBox(height: BSSpace.s2),
         Text('${moteur.niveau}', style: BSType.buzzerNameConsole(size: 56)),
-        if (fautif != null) ...[
+        // MÊME PHRASE QUE L'ÉCRAN PUBLIC, pour que l'animateur lise à voix
+        // haute ce que la salle a déjà sous les yeux. Elle nomme aussi la
+        // couleur attendue : « Bleu a pesé, c'était à Rouge » raconte la
+        // séquence, là où « Bleu a pesé hors tour » ne fait que le désigner.
+        if (fautif != null && moteur.couleurAttendue != null) ...[
           const SizedBox(height: BSSpace.s4),
           Row(
             children: [
               Container(
                   width: 40, height: 40, color: kBuzzerColors[fautif].fill),
               const SizedBox(width: BSSpace.s3),
-              Text('${teams.nameFor(fautif)} a pesé hors tour',
-                  style: BSType.buzzerNameConsole(size: 24)),
+              Text(
+                '${teams.nameFor(fautif)} a pesé, '
+                "c'était à ${teams.nameFor(moteur.couleurAttendue!)}",
+                style: BSType.buzzerNameConsole(size: 24),
+              ),
             ],
           ),
         ],

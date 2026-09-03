@@ -115,52 +115,87 @@ void main() {
       });
     });
 
-    test('tout le monde pèse à peu près autant', () {
-      // Le tirage indépendant du firmware laissait couramment un joueur avec
-      // un seul appui sur dix pendant qu'un autre en avait cinq. Sans score
-      // pour consoler qui que ce soit, celui-là a juste regardé les autres.
-      for (var graine = 0; graine < 40; graine++) {
-        fakeAsync((horloge) {
-          final m = creer(graine: graine);
-          m.demarrer();
-          for (var niveau = 0; niveau < 12; niveau++) {
-            _passerLaDemo(horloge, m);
-            _rejouerJuste(m);
-            horloge.elapse(const Duration(seconds: 3));
-          }
-          final compte = [0, 0, 0, 0];
-          for (final c in m.sequence) {
-            compte[c]++;
-          }
-          // Douze couleurs pour quatre joueurs : trois chacun, à une près
-          // quand le compte ne tombe pas rond.
-          expect(compte.reduce((a, b) => a > b ? a : b) -
-              compte.reduce((a, b) => a < b ? a : b),
-              lessThanOrEqualTo(1),
-              reason: 'graine $graine : $compte');
-          m.dispose();
-        });
+    // L'ÉQUITÉ ET L'IMPRÉVISIBILITÉ SE MESURENT ENSEMBLE, sur les mêmes
+    // parties : ce sont deux forces opposées, et corriger l'une a déjà cassé
+    // l'autre une fois. Le tirage indépendant du firmware laissait un joueur
+    // avec un appui sur dix pendant qu'un autre en avait cinq ; ne garder que
+    // les couleurs les moins passées a supprimé l'écart mais aussi les
+    // couleurs collées, ce qui rendait la quatrième déductible.
+    group("L'équité de la séquence", () {
+      /// Treize couleurs, comme une partie qui va loin, pour cinquante
+      /// graines. Longueur impaire : à deux joueurs l'écart ne peut donc pas
+      /// tomber à zéro, il vaut 1 au mieux.
+      List<List<int>> cinquanteSequences({int joueurs = 4}) {
+        final presents = [for (var i = 0; i < 4; i++) i < joueurs];
+        final sequences = <List<int>>[];
+        for (var graine = 0; graine < 50; graine++) {
+          fakeAsync((horloge) {
+            final m = creer(presents: presents, graine: graine);
+            m.demarrer();
+            for (var niveau = 0; niveau < 12; niveau++) {
+              _passerLaDemo(horloge, m);
+              _rejouerJuste(m);
+              horloge.elapse(const Duration(seconds: 3));
+            }
+            sequences.add(List<int>.of(m.sequence));
+            m.dispose();
+          });
+        }
+        return sequences;
       }
-    });
 
-    test('la séquence reste imprévisible', () {
-      // L'équité ne doit pas devenir un tour de rôle : « rouge, bleu, jaune,
-      // vert, rouge... » se retiendrait sans mémoire.
-      final vues = <String>{};
-      for (var graine = 0; graine < 20; graine++) {
-        fakeAsync((horloge) {
-          final m = creer(graine: graine);
-          m.demarrer();
-          for (var niveau = 0; niveau < 4; niveau++) {
-            _passerLaDemo(horloge, m);
-            _rejouerJuste(m);
-            horloge.elapse(const Duration(seconds: 3));
-          }
-          vues.add(m.sequence.join(','));
-          m.dispose();
-        });
+      int ecart(List<int> sequence, int joueurs) {
+        final compte = List<int>.filled(joueurs, 0);
+        for (final c in sequence) {
+          compte[c]++;
+        }
+        return compte.reduce((a, b) => a > b ? a : b) -
+            compte.reduce((a, b) => a < b ? a : b);
       }
-      expect(vues.length, greaterThan(10));
+
+      test('personne ne reste à regarder les autres jouer', () {
+        final sequences = cinquanteSequences();
+        final ecarts = [for (final s in sequences) ecart(s, 4)];
+        // Le seuil vise le vrai symptôme : un joueur nettement à l'écart des
+        // autres. Le tirage indépendant y arrivait dans deux parties sur dix.
+        expect(ecarts, everyElement(lessThanOrEqualTo(4)));
+        final serres = ecarts.where((e) => e <= 2).length;
+        expect(serres, greaterThanOrEqualTo(45),
+            reason: 'écarts observés : $ecarts');
+      });
+
+      test('deux couleurs collées restent possibles', () {
+        // Le filtre strict les avait fait disparaître, et la séquence avait
+        // l'air d'un tour de rôle.
+        final sequences = cinquanteSequences();
+        final avecCollees = sequences.where((s) {
+          for (var i = 1; i < s.length; i++) {
+            if (s[i] == s[i - 1]) return true;
+          }
+          return false;
+        }).length;
+        expect(avecCollees, greaterThan(20));
+        // Mais exceptionnelles : elles ne doivent pas revenir à un tirage
+        // indépendant, où presque toutes les parties en contiennent.
+        expect(avecCollees, lessThan(45));
+      });
+
+      test('aucune couleur ne se déduit des autres', () {
+        // Avec une permutation, les quatre premières couleurs sont forcément
+        // les quatre couleurs : la quatrième s'annonce toute seule.
+        final sequences = cinquanteSequences();
+        final quatreDistinctes =
+            sequences.where((s) => s.take(4).toSet().length == 4).length;
+        expect(quatreDistinctes, lessThan(45));
+      });
+
+      test('à deux joueurs aussi, chacun a sa part', () {
+        final sequences = cinquanteSequences(joueurs: 2);
+        // Treize couleurs pour deux joueurs : sept contre six au mieux, donc
+        // un écart de 1. Trois veut dire huit contre cinq, et pas davantage.
+        expect([for (final s in sequences) ecart(s, 2)],
+            everyElement(lessThanOrEqualTo(3)));
+      });
     });
 
     test('un buzzer débranché en cours de partie ne change pas la séquence',
@@ -576,6 +611,90 @@ void main() {
       // Jeu collaboratif : « AUCUN VAINQUEUR » serait faux, personne n'en
       // cherchait un.
       expect(find.text('AUCUN VAINQUEUR'), findsNothing);
+      m.dispose();
+    });
+
+    testWidgets('la séquence ne sort qu\'une fois la partie finie',
+        (tester) async {
+      // Pendant la partie, c'est exactement ce que les joueurs doivent retenir
+      // de tête : la projeter serait jouer à leur place.
+      final materiel2 = _Materiel();
+      final m = MoteurSimon(ble: materiel2, hasard: Random(3));
+      m.demarrer();
+
+      var vu = PopoutSnapshot.duSimon(m,
+          teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'], logoPath: null);
+      expect(vu.simonSequence, isEmpty);
+
+      m.abandonner();
+      vu = PopoutSnapshot.duSimon(m,
+          teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'], logoPath: null);
+      expect(vu.simonSequence, m.sequence);
+      m.dispose();
+    });
+
+    test("l'instantané porte le fautif ET la couleur attendue", () {
+      fakeAsync((horloge) {
+        final m = creer(presents: [true, true, false, false])..demarrer();
+        _passerLaDemo(horloge, m);
+        m.sequence
+          ..clear()
+          ..addAll([_rouge, _bleu]);
+
+        m.surBuzz(_bleu, 0);
+        final vu = PopoutSnapshot.duSimon(m,
+            teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
+            logoPath: null);
+        expect(vu.simonFautif, _bleu);
+        expect(vu.simonAttendu, _rouge);
+        expect(vu.simonSequence, [_rouge, _bleu]);
+        m.dispose();
+      });
+    });
+
+    testWidgets('la salle lit qui a pesé ET à qui c\'était', (tester) async {
+      // Nommer le fautif seul le pointe devant tout le monde ; nommer aussi ce
+      // qui était attendu raconte la séquence. Sa LED le désigne de toute
+      // façon, le taire serait juste gênant.
+      const vu = PopoutSnapshot(
+        appMene: true,
+        gameMode: 5,
+        displayGameMode: 5,
+        scores: [0, 0, 0, 0],
+        present: [true, true, true, true],
+        flowState: QuestionFlowState.none,
+        gameFinished: true,
+        simonLevel: 2,
+        simonEntered: 1,
+        simonLength: 3,
+        simonSequence: [0, 1, 2],
+        simonFautif: 1,
+        simonAttendu: 0,
+        teamNames: ['Rouge', 'Bleu', 'Jaune', 'Vert'],
+      );
+      await tester.pumpWidget(
+          const MaterialApp(home: Scaffold(body: PopoutContent(snapshot: vu))));
+
+      expect(find.text('LA SÉQUENCE'), findsOneWidget);
+      expect(find.text("Bleu a pesé, c'était à Rouge."), findsOneWidget);
+    });
+
+    testWidgets('trop lent n\'accuse personne, mais montre la séquence',
+        (tester) async {
+      final materiel2 = _Materiel();
+      final m = MoteurSimon(ble: materiel2, hasard: Random(5));
+      m.demarrer();
+      m.abandonner();
+
+      final vu = PopoutSnapshot.duSimon(m,
+          teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'], logoPath: null);
+      await tester.pumpWidget(
+          MaterialApp(home: Scaffold(body: PopoutContent(snapshot: vu))));
+
+      expect(find.text('LA SÉQUENCE'), findsOneWidget);
+      expect(vu.simonFautif, isNull);
+      // Aucune phrase ne nomme qui que ce soit : personne n'a fauté.
+      expect(find.textContaining('a pesé'), findsNothing);
       m.dispose();
     });
 

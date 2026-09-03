@@ -15,6 +15,10 @@
 #define SIMON_ROUND_MS 2000     // pause "BRAVO" entre deux niveaux
 #define SIMON_TIMEOUT_MS 10000  // delai maxi entre deux appuis avant echec
 
+// De combien une couleur en retard est favorisee : son poids vaut
+// 1 + retard * SIMON_CATCHUP. Voir Simon::nextColor pour le pourquoi de 4.
+#define SIMON_CATCHUP 4
+
 // Jeu collaboratif de memoire, facon "Simon". Se joue a 2, 3 ou 4 :
 // chaque joueur tient une couleur, et la sequence n'est tiree QUE parmi les
 // couleurs en jeu (voir reset()). La machine joue une sequence de couleurs

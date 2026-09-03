@@ -226,32 +226,45 @@ class _LancementState extends State<_Lancement> {
           ),
         ],
 
-        const SizedBox(height: BSSpace.s6),
-        Row(
-          children: [
-            BSPrimaryButton(
-              label: 'Lancer la partie',
-              onPressed: (!_estQuiz || !actif.pretAJouer)
-                  ? null
-                  : () {
-                      final m = widget.moteur;
-                      m.chronoPremiere = _chrono ? _premiere : 0;
-                      m.chronoSuivantes = _chrono ? _suivantes : 0;
-                      m.demarrer(jeuChoisi: _jeu!, limite: _limite());
-                    },
-            ),
-            const SizedBox(width: BSSpace.s3),
-            if (!_estQuiz || !actif.pretAJouer)
-              Expanded(
-                child: Text(
-                  !_estQuiz
-                      ? 'Choisir un jeu de questions pour continuer'
-                      : 'Choisir un questionnaire ou une manche libre',
-                  style: BSType.body(size: 15, color: BSColors.neutral600),
-                ),
+        // PAS DE BOUTON TANT QU'AUCUN JEU N'EST RETENU.
+        //
+        // Il s'affichait, éteint, sous la grille, avec une phrase qui parlait
+        // déjà de questions : ça reprochait à l'animateur de ne pas avoir fait
+        // une étape qu'il était justement en train de faire. Et les six jeux
+        // sans questions ne repassent jamais ici, ils ont leur propre écran de
+        // lancement, ce qui rendait ce bouton doublement inutile à ce
+        // moment-là. La grille EST l'action : rien ne doit la concurrencer.
+        if (_jeu != null) ...[
+          const SizedBox(height: BSSpace.s6),
+          Row(
+            children: [
+              BSPrimaryButton(
+                label: 'Lancer la partie',
+                onPressed: (!_estQuiz || !actif.pretAJouer)
+                    ? null
+                    : () {
+                        final m = widget.moteur;
+                        m.chronoPremiere = _chrono ? _premiere : 0;
+                        m.chronoSuivantes = _chrono ? _suivantes : 0;
+                        m.demarrer(jeuChoisi: _jeu!, limite: _limite());
+                      },
               ),
-          ],
-        ),
+              const SizedBox(width: BSSpace.s3),
+              if (!_estQuiz || !actif.pretAJouer)
+                Expanded(
+                  child: Text(
+                    // Le cas « pas un quiz » ne se voit plus : ces jeux
+                    // partent de leur propre console. Gardé comme filet pour
+                    // un jeu qu'on ajouterait sans lui écrire la sienne.
+                    !_estQuiz
+                        ? 'Ce jeu se lance depuis son propre écran.'
+                        : 'Choisir un questionnaire ou une manche libre',
+                    style: BSType.body(size: 15, color: BSColors.neutral600),
+                  ),
+                ),
+            ],
+          ),
+        ],
       ],
     );
   }

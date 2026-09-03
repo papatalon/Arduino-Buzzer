@@ -37,11 +37,17 @@ class GameOverZone extends StatelessWidget {
     required this.snapshot,
     this.detail,
     this.resultat,
+    this.complement,
   });
 
   final PopoutSnapshot snapshot;
   final String? detail;
   final String? resultat;
+
+  /// Ce que le jeu a d'autre a raconter, entre le resultat et le mot de la
+  /// fin : la sequence de Simon, par exemple. Le mot de la fin reste dernier,
+  /// c'est lui qui clot.
+  final Widget? complement;
 
   @override
   Widget build(BuildContext context) {
@@ -76,6 +82,10 @@ class GameOverZone extends StatelessWidget {
         if (detail != null && detail!.isNotEmpty) ...[
           const SizedBox(height: BSSpace.s4),
           Text(detail!, style: BSType.body(size: 32, color: BSColors.neutral700)),
+        ],
+        if (complement != null) ...[
+          const SizedBox(height: BSSpace.s6),
+          complement!,
         ],
         if (snapshot.motFinal.isNotEmpty) ...[
           const SizedBox(height: BSSpace.s6),

@@ -38,6 +38,9 @@ class PopoutSnapshot {
     this.simonLevel,
     this.simonEntered,
     this.simonLength,
+    this.simonSequence = const [],
+    this.simonFautif,
+    this.simonAttendu,
     this.reflexWinner,
     this.reflexMs,
     this.reflexBestMs,
@@ -175,6 +178,17 @@ class PopoutSnapshot {
   final int? simonLevel;
   final int? simonEntered;
   final int? simonLength;
+
+  // LA SEQUENCE, montree a la salle une fois la partie finie. Pendant la
+  // partie elle reste vide : c'est exactement ce que les joueurs doivent
+  // retenir de tete, l'afficher serait jouer a leur place.
+  final List<int> simonSequence;
+
+  // Qui a rompu la chaine, et la couleur qu'il fallait. Les deux vont
+  // ensemble : nommer le fautif seul le designe, nommer aussi ce qui etait
+  // attendu raconte la sequence.
+  final int? simonFautif;
+  final int? simonAttendu;
 
   // Details propres a chaque jeu non-quiz : ce que son ecran public montre
   // et que les autres n'ont pas (temps de reaction, cible, duellistes...).
@@ -356,6 +370,16 @@ class PopoutSnapshot {
       simonLevel: moteur.niveau,
       simonEntered: moteur.saisis,
       simonLength: moteur.sequence.length,
+      // LA SEQUENCE NE VOYAGE QU'UNE FOIS LA PARTIE FINIE. C'est ce que les
+      // joueurs doivent retenir de tete : la projeter pendant qu'ils la
+      // rejouent serait jouer a leur place. Apres, elle n'a plus rien a
+      // proteger et c'est ce que tout le monde veut voir.
+      simonSequence: moteur.etape == EtapeSimon.finie
+          ? List<int>.of(moteur.sequence)
+          : const [],
+      simonFautif: moteur.etape == EtapeSimon.finie ? moteur.fautif : null,
+      simonAttendu:
+          moteur.etape == EtapeSimon.finie ? moteur.couleurAttendue : null,
       teamNames: teamNames,
       logoPath: logoPath,
     );
@@ -582,6 +606,9 @@ class PopoutSnapshot {
       simonLevel: json['simonLevel'] as int?,
       simonEntered: json['simonEntered'] as int?,
       simonLength: json['simonLength'] as int?,
+      simonSequence: (json['simonSequence'] as List?)?.cast<int>() ?? const [],
+      simonFautif: json['simonFautif'] as int?,
+      simonAttendu: json['simonAttendu'] as int?,
       reflexWinner: json['reflexWinner'] as int?,
       reflexMs: json['reflexMs'] as int?,
       reflexBestMs: json['reflexBestMs'] as int?,
@@ -636,6 +663,9 @@ class PopoutSnapshot {
         'simonLevel': simonLevel,
         'simonEntered': simonEntered,
         'simonLength': simonLength,
+        'simonSequence': simonSequence,
+        'simonFautif': simonFautif,
+        'simonAttendu': simonAttendu,
         'reflexWinner': reflexWinner,
         'reflexMs': reflexMs,
         'reflexBestMs': reflexBestMs,
