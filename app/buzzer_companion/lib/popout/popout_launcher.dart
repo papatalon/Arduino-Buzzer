@@ -96,10 +96,15 @@ class PopoutLauncher extends ChangeNotifier {
     // de se fermer elle-même (voir le handler enregistré dans
     // PopoutWindow._registerCloseHandler).
     try {
-      await controller.invokeMethod('window_close');
+      // AVEC UN DÉLAI MAXIMAL : la fermeture de la console attend celle-ci, et
+      // une fenêtre publique qui ne répond plus ne doit pas retenir tout le
+      // reste. Le processus se termine de toute façon juste après.
+      await controller
+          .invokeMethod('window_close')
+          .timeout(const Duration(milliseconds: 600));
     } catch (_) {
-      // La fenêtre a pu disparaître entre-temps (fermeture native) : rien
-      // à rattraper, l'état local est déjà à jour.
+      // La fenêtre a pu disparaître entre-temps (fermeture native), ou ne plus
+      // répondre : rien à rattraper, l'état local est déjà à jour.
     }
   }
 

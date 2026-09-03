@@ -19,6 +19,12 @@
 // 1 + retard * SIMON_CATCHUP. Voir Simon::nextColor pour le pourquoi de 4.
 #define SIMON_CATCHUP 4
 
+// Le supplement de poids d'une couleur restee silencieuse sur toute la
+// fenetre glissante. Voir Simon::nextColor : sans lui, une partie courte se
+// terminait avant que le rattrapage ait agi, et une longue laissait une
+// couleur muette pendant huit tirages.
+#define SIMON_SILENCE_BONUS 24
+
 // Jeu collaboratif de memoire, facon "Simon". Se joue a 2, 3 ou 4 :
 // chaque joueur tient une couleur, et la sequence n'est tiree QUE parmi les
 // couleurs en jeu (voir reset()). La machine joue une sequence de couleurs

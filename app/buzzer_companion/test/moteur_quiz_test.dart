@@ -238,6 +238,19 @@ void main() {
   group('Fin de partie', () {
     setUp(() => moteur = creer());
 
+    // LA REGLE VAUT POUR TOUS LES JEUX : une partie finie laisse les buzzers
+    // eteints. Le quiz eteint deja a chaque revelation, mais rien ne le
+    // garantissait quel que soit le chemin par lequel la partie se termine.
+    test('les buzzers finissent eteints', () {
+      moteur.demarrer(jeuChoisi: 0, limite: 1);
+      moteur.surBuzz(_bleu, 300);
+      moteur.bonneReponse();
+      moteur.continuer();
+      expect(moteur.etape, EtapeQuiz.finie);
+      expect(materiel.leds.last, 0);
+      expect(materiel.desarmements, greaterThan(0));
+    });
+
     test('la limite de questions termine la partie', () {
       moteur.demarrer(jeuChoisi: 0, limite: 2);
       moteur.surBuzz(_bleu, 300);

@@ -314,16 +314,33 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
   // se terminait avant que la deconnexion soit partie. Windows gardait alors
   // la session GATT d'un processus mort, et le demarrage suivant se
   // connectait dessus sans jamais retrouver le service de l'AT-09.
+  /// Vrai quand le voile de fermeture est affiche. Voir [onWindowClose].
+  bool _enFermeture = false;
+
   @override
   void onWindowClose() async {
-    // L'ECRAN PUBLIC PART EN PREMIER, et on l'attend.
+    // FERMER PREND JUSQU'A UNE SECONDE ET DEMIE, le temps de rendre le lien
+    // au buzzer. Sans ca, il faudrait le reconnecter a la main au prochain
+    // demarrage.
     //
-    // Il survivait a la console de quelques secondes, le temps que le
-    // processus se termine pour de bon : devant une salle, ca ressemble a un
-    // plantage. Le rendu du lien Bluetooth vient apres, parce que lui ne se
-    // voit pas.
-    await _popout.close();
+    // UNE ATTENTE SANS RETOUR SE LIT COMME UN GEL : la console restait
+    // plantee apres le clic sur la croix, sans rien dire. Mais un voile qui
+    // clignote une demi-seconde est pire que pas de voile du tout, et le
+    // menage est souvent instantane (rien a rendre quand aucun buzzer n'est
+    // connecte). Il n'apparait donc QUE si ca traine vraiment.
+    //
+    // L'ecran public, lui, part tout de suite : il n'a rien a annoncer, et il
+    // survivait a la console de quelques secondes, ce qui devant une salle
+    // ressemble a un plantage.
+    final ecranPublic = _popout.close();
+    final voile = Timer(const Duration(milliseconds: 300), () {
+      if (mounted) setState(() => _enFermeture = true);
+    });
+
+    await ecranPublic;
     await _ble.fermerProprement();
+
+    voile.cancel();
     await windowManager.destroy();
   }
 
@@ -370,26 +387,73 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
         splashFactory: NoSplash.splashFactory,
         highlightColor: Colors.transparent,
       ),
-      home: ConsoleShell(
-        ble: _ble,
-        game: _game,
-        popout: _popout,
-        sound: _sound,
-        teams: _teams,
-        logo: _logo,
-        questionnaires: _questionnaires,
-        catalogue: _catalogue,
-        actif: _actif,
-        moteur: _moteur,
-        reflexe: _reflexe,
-        chronoAveugle: _chronoAveugle,
-        neBuzzePas: _neBuzzePas,
-        simon: _simon,
-        tirageQuestions: _tirageQuestions,
-        sons: _sons,
-        tirage: _tirage,
-        version: _version,
-        simulateur: _simulateur,
+      home: Stack(
+        children: [
+          _console(),
+          if (_enFermeture)
+            const Positioned.fill(child: _VoileDeFermeture()),
+        ],
+      ),
+    );
+  }
+
+  Widget _console() {
+    return ConsoleShell(
+      ble: _ble,
+      game: _game,
+      popout: _popout,
+      sound: _sound,
+      teams: _teams,
+      logo: _logo,
+      questionnaires: _questionnaires,
+      catalogue: _catalogue,
+      actif: _actif,
+      moteur: _moteur,
+      reflexe: _reflexe,
+      chronoAveugle: _chronoAveugle,
+      neBuzzePas: _neBuzzePas,
+      simon: _simon,
+      tirageQuestions: _tirageQuestions,
+      sons: _sons,
+      tirage: _tirage,
+      version: _version,
+      simulateur: _simulateur,
+    );
+  }
+}
+
+// LE VOILE DE FERMETURE, montré seulement si le ménage traîne.
+//
+// Il ne dit pas « patientez » : il dit ce qui se passe, parce que c'est la
+// seule chose qui rende l'attente acceptable. Rendre le lien au buzzer est
+// aussi ce qui évite d'avoir à le reconnecter à la main au démarrage suivant,
+// et l'opérateur a le droit de savoir pourquoi on lui prend une seconde.
+class _VoileDeFermeture extends StatelessWidget {
+  const _VoileDeFermeture();
+
+  @override
+  Widget build(BuildContext context) {
+    // MATERIAL, et pas seulement une couleur de fond : hors de tout Material,
+    // Flutter applique son style de repli et souligne le texte en jaune fluo
+    // pour signaler qu'il n'est pas style. Le voile est un enfant direct du
+    // Stack, il n'heritait donc pas du Scaffold de la console.
+    return Material(
+      color: BSColors.bg,
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text('FERMETURE', style: BSType.sectionKicker()),
+            const SizedBox(height: BSSpace.s3),
+            Text('On rend la main au buzzer',
+                style: BSType.buzzerNameConsole(size: 28)),
+            const SizedBox(height: BSSpace.s2),
+            Text(
+              'Sans ça, il faudrait le reconnecter au prochain démarrage.',
+              style: BSType.body(size: 15, color: BSColors.neutral600),
+            ),
+          ],
+        ),
       ),
     );
   }

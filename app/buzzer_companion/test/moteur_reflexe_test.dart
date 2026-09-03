@@ -337,12 +337,19 @@ void main() {
       expect(moteur.scores[_bleu], 0);
     });
 
-    test('sa LED reste allumee : la salle voit qui reste', () {
+    // SA LED RESTAIT ALLUMEE, pour que la salle voie qui restait. La regle a
+    // change, et elle vaut maintenant pour tous les jeux : une partie finie
+    // laisse les buzzers eteints. Une LED qui survit a la partie n'appartient
+    // plus a rien, et elle brille pour le reste de la soiree. L'ecran de fin
+    // nomme deja le vainqueur, en grand.
+    test('la partie finie eteint tout, meme le survivant', () {
       moteur.demarrer();
       for (final qui in [_rouge, _jaune, _vert]) {
         moteur.surBuzz(qui, 700);
       }
-      expect(materiel.leds.last, _bit(_bleu));
+      expect(moteur.etape, EtapeReflexe.finie);
+      expect(moteur.vainqueur, _bleu);
+      expect(materiel.leds.last, 0);
     });
 
     test('le mot de la fin est tire, comme au quiz', () {
@@ -355,6 +362,20 @@ void main() {
   });
 
   group('La fin de partie', () {
+    test('les buzzers finissent eteints', () {
+      // La LED du gagnant de la derniere manche annonce son resultat ; une
+      // fois la partie finie elle n'annonce plus rien.
+      moteur = creer(manches: 1);
+      moteur.demarrer();
+      donnerLeSignal(moteur);
+      moteur.surBuzz(_bleu, 240);
+      expect(materiel.leds.last, _bit(_bleu));
+
+      moteur.continuer();
+      expect(moteur.etape, EtapeReflexe.finie);
+      expect(materiel.leds.last, 0);
+    });
+
     test('une victoire aux points tire dans la liste des victoires', () {
       moteur = creer(manches: 1);
       moteur.demarrer();

@@ -138,29 +138,58 @@ class _Lancement extends StatelessWidget {
         // QUI TIENT QUELLE COULEUR : le seul vrai préalable du jeu, et le
         // moment de le dire à voix haute. Une équipe qui se trompe de couleur
         // fait rater la partie sans jamais comprendre pourquoi.
+        //
+        // LES QUATRE SONT LISTÉS, MÊME LES ABSENTS. Les omettre les rendait
+        // invisibles : une partie s'est jouée à trois avec quelqu'un derrière
+        // le buzzer rouge, dont la couleur n'est jamais sortie, et rien à
+        // l'écran ne l'expliquait. Une absence doit se voir, surtout ici où
+        // elle veut dire « cette personne ne pèsera pas une seule fois ».
         Text('CHACUN SA COULEUR', style: BSType.sectionKicker()),
         const SizedBox(height: BSSpace.s3),
         Wrap(
           spacing: BSSpace.s4,
           runSpacing: BSSpace.s3,
           children: [
-            for (final i in joueurs)
+            for (var i = 0; i < 4; i++)
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Container(
-                      width: 28, height: 28, color: kBuzzerColors[i].fill),
+                    width: 28,
+                    height: 28,
+                    color: moteur.presentsMateriel[i]
+                        ? kBuzzerColors[i].fill
+                        : BSColors.neutral200,
+                  ),
                   const SizedBox(width: BSSpace.s2),
-                  Text(teams.nameFor(i),
-                      style: BSType.buzzerNameConsole(size: 22)),
+                  Text(
+                    moteur.presentsMateriel[i]
+                        ? teams.nameFor(i)
+                        : '${teams.nameFor(i)} (absent)',
+                    style: BSType.buzzerNameConsole(
+                      size: 22,
+                      color: moteur.presentsMateriel[i]
+                          ? BSColors.text
+                          : BSColors.neutral500,
+                    ),
+                  ),
                 ],
               ),
           ],
         ),
         const SizedBox(height: BSSpace.s3),
         Text(
-          'La séquence n\'utilise que ces couleurs.',
-          style: BSType.body(size: 15, color: BSColors.neutral600),
+          joueurs.length == 4
+              ? 'La séquence n\'utilise que ces couleurs.'
+              : 'La séquence n\'utilisera pas les couleurs absentes : elles ne '
+                  'sortiront pas une seule fois. Ça se change sur l\'écran '
+                  'Buzzers.',
+          style: BSType.body(
+            size: 15,
+            color: joueurs.length == 4
+                ? BSColors.neutral600
+                : BSColors.accent2_700,
+          ),
         ),
         const SizedBox(height: BSSpace.s6),
         BSPrimaryButton(

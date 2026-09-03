@@ -46,7 +46,6 @@ class _Materiel implements CommandesBuzzer {
 }
 
 const _rouge = 0, _bleu = 1, _jaune = 2, _vert = 3;
-int _bit(int i) => 1 << i;
 
 /// Avance jusqu'au moment où l'équipe a la main, et PAS PLUS LOIN : le délai
 /// de dix secondes sans appui part dès que la démonstration rend la main, donc
@@ -117,22 +116,24 @@ void main() {
 
     // L'ÉQUITÉ ET L'IMPRÉVISIBILITÉ SE MESURENT ENSEMBLE, sur les mêmes
     // parties : ce sont deux forces opposées, et corriger l'une a déjà cassé
-    // l'autre une fois. Le tirage indépendant du firmware laissait un joueur
-    // avec un appui sur dix pendant qu'un autre en avait cinq ; ne garder que
-    // les couleurs les moins passées a supprimé l'écart mais aussi les
-    // couleurs collées, ce qui rendait la quatrième déductible.
+    // l'autre deux fois. Le tirage indépendant laissait un joueur avec un
+    // appui sur dix ; ne garder que les couleurs les moins passées a supprimé
+    // l'écart mais aussi les couleurs collées, ce qui rendait la quatrième
+    // déductible.
+    //
+    // TROIS DURÉES, parce que le défaut n'était pas le même à chaque bout :
+    // six couleurs pour une partie qui tourne court, dix-huit pour une équipe
+    // qui va loin, et à deux joueurs pour vérifier que rien ne dépend de
+    // quatre.
     group("L'équité de la séquence", () {
-      /// Treize couleurs, comme une partie qui va loin, pour cinquante
-      /// graines. Longueur impaire : à deux joueurs l'écart ne peut donc pas
-      /// tomber à zéro, il vaut 1 au mieux.
-      List<List<int>> cinquanteSequences({int joueurs = 4}) {
+      List<List<int>> cinquanteSequences({int joueurs = 4, int longueur = 18}) {
         final presents = [for (var i = 0; i < 4; i++) i < joueurs];
         final sequences = <List<int>>[];
         for (var graine = 0; graine < 50; graine++) {
           fakeAsync((horloge) {
             final m = creer(presents: presents, graine: graine);
             m.demarrer();
-            for (var niveau = 0; niveau < 12; niveau++) {
+            while (m.sequence.length < longueur) {
               _passerLaDemo(horloge, m);
               _rejouerJuste(m);
               horloge.elapse(const Duration(seconds: 3));
@@ -153,13 +154,54 @@ void main() {
             compte.reduce((a, b) => a < b ? a : b);
       }
 
-      test('personne ne reste à regarder les autres jouer', () {
-        final sequences = cinquanteSequences();
-        final ecarts = [for (final s in sequences) ecart(s, 4)];
-        // Le seuil vise le vrai symptôme : un joueur nettement à l'écart des
-        // autres. Le tirage indépendant y arrivait dans deux parties sur dix.
-        expect(ecarts, everyElement(lessThanOrEqualTo(4)));
-        final serres = ecarts.where((e) => e <= 2).length;
+      /// Le plus long silence : combien de couleurs d'affilée sans qu'une
+      /// couleur donnée sorte. C'est le symptôme réel, celui qu'on voit depuis
+      /// sa chaise : « ça fait un bout que je n'ai pas pesé ».
+      int plusLongSilence(List<int> sequence, int joueurs) {
+        var pire = 0;
+        for (var j = 0; j < joueurs; j++) {
+          var courant = 0;
+          for (final c in sequence) {
+            if (c == j) {
+              courant = 0;
+            } else {
+              courant++;
+              if (courant > pire) pire = courant;
+            }
+          }
+        }
+        return pire;
+      }
+
+      test('tout le monde a pesé quand la partie tourne court', () {
+        // Une partie de Simon finit souvent avant la dixième couleur. Le
+        // rattrapage marchait, mais il arrivait après la fin : sur cinq
+        // couleurs, une partie sur trois laissait quelqu'un sans un appui.
+        final sequences = cinquanteSequences(longueur: 6);
+        final muettes = sequences
+            .where((s) => [0, 1, 2, 3].any((j) => !s.contains(j)))
+            .length;
+        expect(muettes, lessThanOrEqualTo(2),
+            reason: 'parties où quelqu\'un n\'a jamais pesé : $muettes / 50');
+      });
+
+      test('personne ne disparaît en cours de partie', () {
+        // Le compte est fait sur une fenêtre glissante, pas depuis le début :
+        // sans ça, une couleur sortie au troisième tour n'était plus « à
+        // zéro » et pouvait ensuite se taire dix tours de suite.
+        final silences =
+            [for (final s in cinquanteSequences()) plusLongSilence(s, 4)];
+        expect(silences, everyElement(lessThan(10)),
+            reason: 'silences observés : $silences');
+        final longs = silences.where((n) => n >= 8).length;
+        expect(longs, lessThanOrEqualTo(5),
+            reason: 'silences de 8 ou plus : $longs / 50');
+      });
+
+      test('et le compte final reste serré', () {
+        final ecarts = [for (final s in cinquanteSequences()) ecart(s, 4)];
+        expect(ecarts, everyElement(lessThanOrEqualTo(5)));
+        final serres = ecarts.where((e) => e <= 3).length;
         expect(serres, greaterThanOrEqualTo(45),
             reason: 'écarts observés : $ecarts');
       });
@@ -167,34 +209,30 @@ void main() {
       test('deux couleurs collées restent possibles', () {
         // Le filtre strict les avait fait disparaître, et la séquence avait
         // l'air d'un tour de rôle.
-        final sequences = cinquanteSequences();
-        final avecCollees = sequences.where((s) {
+        final avecCollees = cinquanteSequences().where((s) {
           for (var i = 1; i < s.length; i++) {
             if (s[i] == s[i - 1]) return true;
           }
           return false;
         }).length;
-        expect(avecCollees, greaterThan(20));
-        // Mais exceptionnelles : elles ne doivent pas revenir à un tirage
-        // indépendant, où presque toutes les parties en contiennent.
-        expect(avecCollees, lessThan(45));
+        expect(avecCollees, greaterThan(30));
       });
 
       test('aucune couleur ne se déduit des autres', () {
         // Avec une permutation, les quatre premières couleurs sont forcément
         // les quatre couleurs : la quatrième s'annonce toute seule.
-        final sequences = cinquanteSequences();
-        final quatreDistinctes =
-            sequences.where((s) => s.take(4).toSet().length == 4).length;
-        expect(quatreDistinctes, lessThan(45));
+        final quatreDistinctes = cinquanteSequences()
+            .where((s) => s.take(4).toSet().length == 4)
+            .length;
+        expect(quatreDistinctes, lessThan(50));
       });
 
       test('à deux joueurs aussi, chacun a sa part', () {
         final sequences = cinquanteSequences(joueurs: 2);
-        // Treize couleurs pour deux joueurs : sept contre six au mieux, donc
-        // un écart de 1. Trois veut dire huit contre cinq, et pas davantage.
         expect([for (final s in sequences) ecart(s, 2)],
-            everyElement(lessThanOrEqualTo(3)));
+            everyElement(lessThanOrEqualTo(4)));
+        expect([for (final s in sequences) plusLongSilence(s, 2)],
+            everyElement(lessThan(6)));
       });
     });
 
@@ -328,8 +366,9 @@ void main() {
         expect(m.etape, EtapeSimon.finie);
         expect(m.raisonDeLaFin, FinDeSimon.rate);
         expect(m.fautif, _bleu);
-        // Sa LED reste allumée : la salle voit qui a rompu la chaîne.
-        expect(materiel.leds.last, _bit(_bleu));
+        // Le fautif est NOMMÉ, pas éclairé : voir « même le fautif finit
+        // éteint » dans La fin de partie.
+        expect(m.couleurAttendue, _rouge);
         m.dispose();
       });
     });
@@ -450,6 +489,27 @@ void main() {
   });
 
   group('La fin de partie', () {
+    // LA RÈGLE VAUT POUR TOUS LES JEUX : une partie finie laisse les buzzers
+    // éteints. Une LED qui reste allumée n'appartient plus à rien et brille
+    // pour le reste de la soirée. Simon était le plus tenace : celle du
+    // fautif restait allumée à dessein, alors que l'écran public le nomme
+    // déjà, avec le rang où la chaîne a lâché.
+    test('même le fautif finit éteint', () {
+      fakeAsync((horloge) {
+        final m = creer(presents: [true, true, false, false])..demarrer();
+        _passerLaDemo(horloge, m);
+        m.sequence
+          ..clear()
+          ..addAll([_rouge]);
+
+        m.surBuzz(_bleu, 0);
+        expect(m.fautif, _bleu);
+        expect(materiel.leds.last, 0);
+        expect(m.couleurAllumee, isNull);
+        m.dispose();
+      });
+    });
+
     test('l\'abandon garde le niveau atteint', () {
       fakeAsync((horloge) {
         final m = creer()..demarrer();

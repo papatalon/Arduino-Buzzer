@@ -67,14 +67,28 @@ PhaseMode Simon::fail(const char* title) {
 // couleurs distinctes la quatrieme se deduit. Dans un jeu de memoire, c'est un
 // cadeau qu'on ne veut pas faire.
 //
-// D'ou un poids plutot qu'un filtre : 1 + retard * SIMON_CATCHUP. Une couleur
-// qui vient de sortir reste possible tout de suite apres, juste moins
-// probable. Sur dix couleurs a quatre joueurs, l'ecart tient a deux pres dans
-// 93% des parties et deux couleurs collees apparaissent dans 72% d'entre
-// elles.
+// D'ou un POIDS plutot qu'un filtre : une couleur qui vient de sortir reste
+// possible tout de suite apres, juste moins probable, et aucune ne se devine
+// jamais. Le compte se fait sur une fenetre glissante et non depuis le debut
+// de la partie, pour que l'equilibre tienne aussi bien au dix-huitieme tour
+// qu'au troisieme.
 uint8_t Simon::nextColor() {
+  // ON NE REGARDE QUE LES DERNIERS TIRAGES, pas toute la partie.
+  //
+  // Compte depuis le debut, le supplement ne servait qu'une fois : une
+  // couleur sortie au troisieme tour n'etait plus « a zero » et pouvait
+  // ensuite disparaitre dix tours sans que rien ne la rappelle. Sur dix-huit
+  // tours a quatre joueurs, une partie sur trois laissait une couleur muette
+  // huit tirages d'affilee ; avec la fenetre, 3,8%.
+  //
+  // Un de plus que le nombre de joueurs : a quatre, votre tour devrait
+  // revenir tous les quatre tirages, donc cinq sans rien est deja un oubli.
+  int window = playerCount + 1;
+  int from = length - window;
+  if (from < 0) from = 0;
+
   int counts[4] = { 0, 0, 0, 0 };
-  for (int k = 0; k < length; k++) {
+  for (int k = from; k < length; k++) {
     for (int p = 0; p < playerCount; p++) {
       if (sequence[k] == players[p]) { counts[p]++; break; }
     }
@@ -85,10 +99,20 @@ uint8_t Simon::nextColor() {
     if (counts[p] > most) most = counts[p];
   }
 
+  // LE SUPPLEMENT DES SILENCIEUSES, sans quoi le rattrapage arrive trop tard.
+  // La pente se mesure par rapport a la couleur la plus sortie : quand elles
+  // sont toutes a egalite dans la fenetre, tous les poids valent 1 et le
+  // hasard est pur. Une partie de Simon FINIT COURT, souvent avant la dixieme
+  // couleur : sur cinq couleurs a quatre joueurs, une partie sur trois
+  // laissait quelqu'un sans un seul appui.
+  //
+  // Il ne s'applique qu'a une couleur vraiment oubliee, et rien n'est jamais
+  // force : deux couleurs collees restent aussi frequentes qu'avant.
   int weights[4];
   int total = 0;
   for (int p = 0; p < playerCount; p++) {
     weights[p] = 1 + (most - counts[p]) * SIMON_CATCHUP;
+    if (counts[p] == 0) weights[p] += SIMON_SILENCE_BONUS;
     total += weights[p];
   }
 

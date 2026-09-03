@@ -222,6 +222,24 @@ void main() {
   });
 
   group('La fin de partie', () {
+    // LA RÈGLE VAUT POUR TOUS LES JEUX : une partie finie laisse les buzzers
+    // éteints. Ici c'était la LED du gagnant de la DERNIÈRE MANCHE, allumée
+    // pour annoncer son résultat, qui traînait ensuite sans plus rien vouloir
+    // dire.
+    test('les buzzers finissent éteints', () {
+      moteur = creer(manches: 1);
+      moteur.demarrer();
+      final cible = moteur.cibleMs;
+      moteur.donnerLeDepart();
+      moteur.surBuzz(_bleu, cible + 100);
+      moteur.tempsEcoule();
+      expect(materiel.leds.last, _bit(_bleu));  // la manche annonce le gagnant
+
+      moteur.continuer();
+      expect(moteur.etape, EtapeChronoAveugle.finie);
+      expect(materiel.leds.last, 0);
+    });
+
     test('le mot de la fin vient des mêmes listes que les autres jeux', () {
       moteur = creer(manches: 1);
       moteur.demarrer();

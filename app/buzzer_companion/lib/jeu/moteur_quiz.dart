@@ -533,6 +533,13 @@ class MoteurQuiz extends ChangeNotifier {
     final exaequo = [for (var i = 0; i < 4; i++) if (presents[i] && scores[i] == meilleur) i];
     egalite = trouve && exaequo.length > 1;
     gagnant = (trouve && exaequo.length == 1) ? exaequo.first : null;
+    // UNE PARTIE FINIE LAISSE LES BUZZERS ETEINTS. La regle vaut pour tous
+    // les jeux : une LED qui reste allumee n'appartient plus a rien, et elle
+    // brille pour le reste de la soiree. Le quiz eteint deja a chaque
+    // revelation, mais il n'y a qu'ici que ce soit garanti quel que soit le
+    // chemin par lequel la partie s'est terminee.
+    ble.desarmer();
+    ble.allumerLeds(0);
     etape = EtapeQuiz.finie;
     // Tire ici, une seule fois : l'ecran public le recoit dans l'instantane
     // et ne le retire pas a chaque reconstruction.

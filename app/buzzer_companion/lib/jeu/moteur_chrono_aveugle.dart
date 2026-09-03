@@ -268,6 +268,13 @@ class MoteurChronoAveugle extends ChangeNotifier {
       surNouveauRecord?.call(meilleurEcart!);
     }
 
+    // UNE PARTIE FINIE LAISSE LES BUZZERS ÉTEINTS. La règle vaut pour tous
+    // les jeux : une LED qui reste allumée n'appartient plus à rien, et elle
+    // brille pour le reste de la soirée. Ici c'était celle du gagnant de la
+    // DERNIÈRE MANCHE, allumée pour annoncer son résultat, qui traînait
+    // ensuite sur l'écran de fin sans plus rien vouloir dire.
+    ble.desarmer();
+    ble.allumerLeds(0);
     etape = EtapeChronoAveugle.finie;
     motFinal = motDeLaFin(egalite: egalite);
     if (egalite) {

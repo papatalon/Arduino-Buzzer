@@ -483,10 +483,15 @@ class MoteurReflexe extends ChangeNotifier {
       }
     }
     _arreterMinuteur();
+    // UNE PARTIE FINIE LAISSE LES BUZZERS ÉTEINTS. La règle vaut pour tous
+    // les jeux : une LED qui reste allumée n'appartient plus à rien, et elle
+    // brille pour le reste de la soirée.
+    //
+    // Celle du dernier survivant restait allumée quand tout le monde s'était
+    // fait éliminer. L'écran de fin le nomme déjà, et son buzzer continuait
+    // de briller entre deux parties comme s'il attendait quelque chose.
     ble.desarmer();
-    ble.allumerLeds(gagnantParElimination == null
-        ? 0
-        : 1 << gagnantParElimination!);
+    ble.allumerLeds(0);
     etape = EtapeReflexe.finie;
     motFinal = motDeLaFin(egalite: egalite);
     if (egalite) {

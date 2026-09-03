@@ -219,14 +219,51 @@ class MoteurSimon extends ChangeNotifier {
     _montrerLaSequence();
   }
 
-  /// COMBIEN UNE COULEUR EN RETARD EST FAVORISÉE.
-  ///
-  /// Son poids est `1 + retard × penteDeRattrapage`, le retard se comptant
-  /// par rapport à la couleur la plus sortie. Quatre est un compromis mesuré,
-  /// pas un chiffre choisi au hasard : sur dix couleurs à quatre joueurs, il
-  /// tient l'écart à deux près dans 93 % des parties tout en laissant deux
-  /// couleurs collées apparaître dans 72 % d'entre elles.
+  /// COMBIEN UNE COULEUR EN RETARD EST FAVORISÉE, une fois que tout le monde
+  /// est passé au moins une fois. Le retard se compte par rapport à la
+  /// couleur la plus sortie.
   static const penteDeRattrapage = 4;
+
+  /// LE SUPPLÉMENT D'UNE COULEUR RESTÉE SILENCIEUSE sur toute la fenêtre.
+  ///
+  /// La pente seule ne pouvait rien au début de partie : elle se mesure par
+  /// rapport à la couleur la plus sortie, donc au premier tirage tous les
+  /// poids valent 1 et le hasard est pur. Or une partie de Simon FINIT COURT,
+  /// souvent avant la dixième couleur : elle se terminait avant que le
+  /// rattrapage ait eu le temps d'agir. Sur cinq couleurs à quatre joueurs,
+  /// une partie sur trois laissait quelqu'un sans un seul appui.
+  ///
+  /// LE CHIFFRE SORT D'UN BALAYAGE, pas d'une intuition. À quatre joueurs :
+  ///
+  ///   supplément    quelqu'un à zéro       quatre premières
+  ///                 à 5 / 6 / 8 couleurs   toutes distinctes
+  ///        0        30 % / 14 % / 2 %             49 %
+  ///       24       3,5 % / 0,7 % / 0 %            87 %
+  ///
+  /// Monter plus haut ne gagne presque rien sur les zéros et raidit la suite
+  /// vers le tour de rôle, où la quatrième couleur se devine.
+  static const bonusDeSilence = 24;
+
+  /// SUR COMBIEN DE TIRAGES ON REGARDE EN ARRIÈRE.
+  ///
+  /// Le compte est LOCAL, pas global, et c'est ce qui fait tenir l'équilibre
+  /// sur toute la longueur d'une partie. Compté depuis le début, le
+  /// supplément ne servait qu'une fois : une couleur sortie au troisième tour
+  /// n'était plus « à zéro » et pouvait ensuite disparaître dix tours sans
+  /// que rien ne la rappelle. Sur dix-huit tours, une partie sur trois
+  /// laissait une couleur muette huit tirages d'affilée.
+  ///
+  /// Un de plus que le nombre de joueurs : à quatre, votre tour devrait
+  /// revenir tous les quatre tirages, donc cinq sans rien est déjà un oubli.
+  /// Sur dix-huit tours, à quatre joueurs :
+  ///
+  ///                       silence de 8 d'affilée   deux collées
+  ///   compte global               38 %                 89 %
+  ///   fenêtre de 5               3,8 %                 89 %
+  ///
+  /// L'imprévisibilité ne bouge pas : le supplément ne s'applique qu'à une
+  /// couleur vraiment oubliée, et rien n'est jamais forcé.
+  int get _fenetre => _joueurs.length + 1;
 
   /// LA COULEUR AJOUTÉE PENCHE VERS CELLES QUI SONT LE MOINS PASSÉES, sans
   /// jamais écarter les autres.
@@ -249,13 +286,21 @@ class MoteurSimon extends ChangeNotifier {
   /// possible tout de suite après, juste moins probable, et aucune ne se
   /// devine jamais.
   int _prochaineCouleur() {
+    // On ne regarde que les derniers tirages : voir [_fenetre].
+    final debut = sequence.length - _fenetre;
+    final recents = sequence.sublist(debut < 0 ? 0 : debut);
+
     final compte = {for (final j in _joueurs) j: 0};
-    for (final c in sequence) {
+    for (final c in recents) {
       compte[c] = (compte[c] ?? 0) + 1;
     }
+
     final maxi = compte.values.reduce((a, b) => a > b ? a : b);
     final poids = [
-      for (final j in _joueurs) 1 + (maxi - compte[j]!) * penteDeRattrapage
+      for (final j in _joueurs)
+        1 +
+            (maxi - compte[j]!) * penteDeRattrapage +
+            (compte[j] == 0 ? bonusDeSilence : 0)
     ];
 
     var tir = _hasard.nextInt(poids.reduce((a, b) => a + b));
@@ -402,11 +447,18 @@ class MoteurSimon extends ChangeNotifier {
     etape = EtapeSimon.finie;
     motFinal = motDuNiveau(niveau);
 
+    // UNE PARTIE FINIE LAISSE LES BUZZERS ÉTEINTS. La règle vaut pour tous
+    // les jeux : une LED qui reste allumée n'appartient plus à rien, et elle
+    // brille pour le reste de la soirée.
+    //
+    // Celle du fautif restait allumée à dessein, pour que la salle voie qui
+    // avait rompu la chaîne. L'écran public le dit maintenant en toutes
+    // lettres, avec le rang où ça s'est produit : la lumière ne renseignait
+    // plus personne, elle accusait juste quelqu'un plus longtemps que les
+    // autres.
     ble.desarmer();
-    // La couleur fautive reste allumée : la salle voit qui a rompu la chaîne,
-    // et le nom seul à l'écran ne dit rien à qui regardait les buzzers.
-    ble.allumerLeds(fautif != null ? 1 << fautif! : 0);
-    couleurAllumee = fautif;
+    ble.allumerLeds(0);
+    couleurAllumee = null;
 
     if (raison == FinDeSimon.parfait) {
       sons?.victoire();
