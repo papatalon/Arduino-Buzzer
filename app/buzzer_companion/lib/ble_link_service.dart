@@ -471,8 +471,11 @@ class BleLinkService extends ChangeNotifier implements CommandesBuzzer {
 
   // [masque] : bit 0 = rouge ... bit 3 = vert.
   @override
-  Future<void> armer(int masque) => _writeUartLine(connectedDeviceId,
-      _uartServiceId, _uartCharacteristicId, 'ARM|$masque');
+  Future<void> armer(int masque, {bool continu = false}) => _writeUartLine(
+      connectedDeviceId,
+      _uartServiceId,
+      _uartCharacteristicId,
+      continu ? 'ARM|$masque|C' : 'ARM|$masque');
 
   @override
   Future<void> desarmer() => _writeUartLine(
@@ -481,6 +484,10 @@ class BleLinkService extends ChangeNotifier implements CommandesBuzzer {
   @override
   Future<void> allumerLeds(int masque) => _writeUartLine(connectedDeviceId,
       _uartServiceId, _uartCharacteristicId, 'LED|$masque');
+
+  @override
+  Future<void> allumerSignal(int masque) => _writeUartLine(connectedDeviceId,
+      _uartServiceId, _uartCharacteristicId, 'GO|$masque');
 
   // Demande le depart au buzzer, sans le faire naviguer dans ses menus.
   //

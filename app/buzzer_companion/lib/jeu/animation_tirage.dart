@@ -56,6 +56,16 @@ class AnimationTirage extends ChangeNotifier {
   Timer? _minuteur;
   bool get enCours => _minuteur != null;
 
+  /// Un tirage par buzzer, renouvele a chaque pas.
+  ///
+  /// Sert a faire defiler les NOMS des sons pendant que la roue tourne :
+  /// l'effet machine a sous. Un grand nombre quelconque, que l'ecran ramene
+  /// a la taille de sa liste ; l'animation n'a pas a savoir combien de sons
+  /// existent, ni s'ils viennent de l'application ou de la carte SD.
+  final List<int> defilement = [0, 0, 0, 0];
+
+  final _hasard = Random();
+
   /// Le buzzer allume a cet instant, ou null si rien ne tourne.
   ///
   /// Expose pour que l'ecran puisse refleter le chenillard PHYSIQUE : les
@@ -96,6 +106,9 @@ class AnimationTirage extends ChangeNotifier {
       }
       allume = pool[index % pool.length];
       ble.allumerLeds(1 << allume!);
+      for (var i = 0; i < 4; i++) {
+        defilement[i] = _hasard.nextInt(1 << 20);
+      }
       index++;
       notifyListeners();
       // Croissance exponentielle de l'intervalle, plafonnée : la roue ralentit

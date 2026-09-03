@@ -62,7 +62,7 @@ class ReflexZone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (isPhase(snapshot.phase, 'REFLEX_OVER')) {
+    if (isPhase(snapshot.phaseAffichee, 'REFLEX_OVER')) {
       final record = snapshot.reflexRecordMs;
       final aRecord = record != null && record != 65535 && record != 0;
       return GameOverZone(
@@ -73,7 +73,7 @@ class ReflexZone extends StatelessWidget {
       );
     }
 
-    if (isPhase(snapshot.phase, 'REFLEX_RESULT')) {
+    if (isPhase(snapshot.phaseAffichee, 'REFLEX_RESULT')) {
       final winner = snapshot.reflexWinner;
       if (winner == null || winner < 0) {
         return Text(
@@ -154,13 +154,13 @@ class BlindZone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (isPhase(snapshot.phase, 'BLIND_OVER')) {
+    if (isPhase(snapshot.phaseAffichee, 'BLIND_OVER')) {
       return GameOverZone(snapshot: snapshot);
     }
 
     final cible = snapshot.blindTargetS;
 
-    if (isPhase(snapshot.phase, 'BLIND_RESULT')) {
+    if (isPhase(snapshot.phaseAffichee, 'BLIND_RESULT')) {
       final cibleMs = (cible ?? 0) * 1000;
       final enJeu = [
         for (var i = 0; i < 4; i++)
@@ -266,11 +266,11 @@ class DuelZone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (isPhase(snapshot.phase, 'DUEL_OVER')) {
+    if (isPhase(snapshot.phaseAffichee, 'DUEL_OVER')) {
       return GameOverZone(snapshot: snapshot);
     }
 
-    if (isPhase(snapshot.phase, 'DUEL_RESULT')) {
+    if (isPhase(snapshot.phaseAffichee, 'DUEL_RESULT')) {
       final fautif = snapshot.duelFalseStarter;
       final winner = snapshot.duelWinner;
       if (fautif != null && fautif >= 0 && fautif < 4) {
@@ -380,11 +380,11 @@ class SoundGameZone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (isPhase(snapshot.phase, 'SOUND_OVER')) {
+    if (isPhase(snapshot.phaseAffichee, 'SOUND_OVER')) {
       return GameOverZone(snapshot: snapshot);
     }
 
-    if (isPhase(snapshot.phase, 'SOUND_LEARN')) {
+    if (isPhase(snapshot.phaseAffichee, 'SOUND_LEARN')) {
       final qui = snapshot.soundLearning;
       if (qui == null || qui < 0) {
         return Column(

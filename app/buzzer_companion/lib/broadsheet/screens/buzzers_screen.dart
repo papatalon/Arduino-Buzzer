@@ -36,7 +36,12 @@ class BuzzersScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListenableBuilder(
-      listenable: Listenable.merge([sound, ble, teams, tirage]),
+      // [game] EN FAIT PARTIE, et son absence se voyait : la presence d'un
+      // buzzer se change ici, mais elle est confirmee par la telemetrie du
+      // Mega (PRESENT). Sans ecouter l'etat de partie, l'ecran ne se
+      // reconstruisait jamais a l'arrivee de cette confirmation, et le bouton
+      // « Present » semblait ne rien faire.
+      listenable: Listenable.merge([game, sound, ble, teams, tirage]),
       builder: (context, _) {
         return SingleChildScrollView(
           child: Align(
@@ -198,8 +203,24 @@ class _BuzzerRow extends StatelessWidget {
     // Deux sources d'assignation selon qui joue : la bibliothèque de l'app,
     // ou celle du DFPlayer telle qu'annoncée par le Mega (CFG_SOUND). En
     // afficher une pendant que l'autre sonne serait trompeur.
+    // PENDANT LE MELANGE, LE NOM DEFILE AUSSI. La roue tourne sur les LED
+    // physiques ; faire defiler les noms au meme rythme donne l'effet machine
+    // a sous, et rend visible que les sons sont bel et bien en train d'etre
+    // rebrasses. Le vrai nom n'apparait qu'a l'arret.
     final String name;
-    if (appOwnsSound) {
+    if (melange) {
+      if (appOwnsSound) {
+        final total = sound.library.count(SoundFolder.buzzer);
+        name = total == 0
+            ? '...'
+            : sound.library
+                .displayName(SoundFolder.buzzer, tirage.defilement[index] % total);
+      } else {
+        // Cote carte SD, on ne connait que des numeros : on en fait defiler
+        // un dans la meme plage que ceux qu'on affiche d'habitude.
+        name = 'Son ${tirage.defilement[index] % 30 + 1} de la carte SD';
+      }
+    } else if (appOwnsSound) {
       name = sound.library.displayName(SoundFolder.buzzer, sound.assignment[index]);
     } else {
       final megaSound = game.buzzerSound[index];

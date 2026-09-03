@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import '../jeu/moteur_quiz.dart';
+import '../jeu/moteur_reflexe.dart';
 import '../protocol.dart';
 import '../questionnaires/questionnaire.dart';
 
@@ -56,6 +57,7 @@ class PopoutSnapshot {
     this.motFinal = '',
     this.motAttention = '',
     this.motTirage = '',
+    this.phaseJeu,
     this.chronoRestant,
     this.chronoTotal = 0,
     this.logoPath,
@@ -129,6 +131,17 @@ class PopoutSnapshot {
   // place du message ordinaire, pour dire ce qui est en train de se decider.
   final String motTirage;
 
+  // LA PHASE QUE L'ECRAN DOIT RENDRE, quand elle differe de celle du buzzer.
+  //
+  // En mode autonome les deux sont la meme chose. En mode application le
+  // buzzer reste en APP_CONTROL du debut a la fin de la soiree : c'est le
+  // moteur de jeu qui sait ou on en est, et il le dicte ici. Ca permet aux
+  // ecrans des jeux (ReflexZone et compagnie) de servir dans les deux modes
+  // sans etre reecrits.
+  final int? phaseJeu;
+
+  int? get phaseAffichee => phaseJeu ?? phase;
+
   final int? chronoRestant;
   final int chronoTotal;
 
@@ -183,6 +196,51 @@ class PopoutSnapshot {
   // On remplit donc les memes champs que la telemetrie remplissait, avec les
   // valeurs du moteur, ce qui laisse la fenetre publique telle quelle : elle
   // sait deja les rendre.
+  // L'ECRAN PUBLIC PENDANT UN REFLEXE mene par l'application.
+  //
+  // Rien de nouveau n'est dessine : on remplit les memes champs que la
+  // telemetrie du Mega remplissait, et [phaseJeu] dit a ReflexZone ou on en
+  // est. L'ecran du jeu sert donc dans les deux modes sans etre reecrit.
+  factory PopoutSnapshot.duReflexe(
+    MoteurReflexe moteur, {
+    required List<String> teamNames,
+    required String? logoPath,
+  }) {
+    final phase = switch (moteur.etape) {
+      EtapeReflexe.attente => 'REFLEX_ARM',
+      EtapeReflexe.signal => 'REFLEX_GO',
+      EtapeReflexe.resultat => 'REFLEX_RESULT',
+      EtapeReflexe.finie => 'REFLEX_OVER',
+      EtapeReflexe.repos => null,
+    };
+    return PopoutSnapshot(
+      appMene: true,
+      phaseJeu: phase == null ? null : kPhaseNames.indexOf(phase),
+      // Reflexe se range dans la mise en page « manches » : ses points sont
+      // les siens, pas ceux d'un quiz precedent.
+      gameMode: 7,
+      displayGameMode: 7,
+      scores: const [0, 0, 0, 0],
+      gameScores: List<int>.of(moteur.scores),
+      present: List<bool>.of(moteur.presents),
+      flowState: QuestionFlowState.none,
+      gameRound: moteur.manche,
+      gameTotalRounds: moteur.manchesPrevues,
+      gameWinner: moteur.etape == EtapeReflexe.finie ? moteur.meneur : null,
+      gameTie: moteur.etape == EtapeReflexe.finie && moteur.egalite,
+      gameFinished: moteur.etape == EtapeReflexe.finie,
+      reflexWinner: moteur.gagnant,
+      reflexMs: moteur.tempsGagnant,
+      reflexBestMs: moteur.meilleurTemps,
+      reflexFalseStarts: [
+        for (var i = 0; i < 4; i++)
+          if (moteur.fautifs[i]) i
+      ],
+      teamNames: teamNames,
+      logoPath: logoPath,
+    );
+  }
+
   factory PopoutSnapshot.duMoteur(
     MoteurQuiz moteur,
     GameState game, {
@@ -336,6 +394,7 @@ class PopoutSnapshot {
       motFinal: json['motFinal'] as String? ?? '',
       motAttention: json['motAttention'] as String? ?? '',
       motTirage: json['motTirage'] as String? ?? '',
+      phaseJeu: json['phaseJeu'] as int?,
       chronoRestant: json['chronoRestant'] as int?,
       chronoTotal: json['chronoTotal'] as int? ?? 0,
       simonLevel: json['simonLevel'] as int?,
@@ -388,6 +447,7 @@ class PopoutSnapshot {
         'motFinal': motFinal,
         'motAttention': motAttention,
         'motTirage': motTirage,
+        'phaseJeu': phaseJeu,
         'chronoRestant': chronoRestant,
         'chronoTotal': chronoTotal,
         'simonLevel': simonLevel,

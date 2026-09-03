@@ -14,6 +14,7 @@ import 'broadsheet/tokens.dart';
 import 'event_logo.dart';
 import 'jeu/animation_tirage.dart';
 import 'jeu/moteur_quiz.dart';
+import 'jeu/moteur_reflexe.dart';
 import 'popout/popout_launcher.dart';
 import 'popout/popout_snapshot.dart';
 import 'popout/popout_window.dart';
@@ -70,6 +71,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   final _catalogue = CatalogueStore();
   late final ActiveQuestionnaire _actif;
   late final MoteurQuiz _moteur;
+  late final MoteurReflexe _reflexe;
   late final Sonorisation _sons;
   late final AnimationTirage _tirage;
   final _version = VersionCheck();
@@ -115,8 +117,23 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     // partie (voir MoteurQuiz).
     _moteur = MoteurQuiz(ble: _ble, actif: _actif, sons: _sons);
     _moteur.tirage = _tirage;
+
+    // LE REFLEXE, deuxieme jeu mene par l'application. Chaque jeu a son
+    // moteur : leurs regles n'ont rien en commun, et les melanger dans une
+    // seule classe redonnerait le fouillis qu'on vient de defaire cote
+    // firmware.
+    _reflexe = MoteurReflexe(ble: _ble, sons: _sons);
+    _reflexe.addListener(_pushSnapshotToPopout);
     _moteur.addListener(_pushSnapshotToPopout);
-    _buzzSub = _game.buzzEvents.listen((e) => _moteur.surBuzz(e.buzzer, e.ms));
+    // Un seul flux d'appuis, aiguille vers le jeu qui tourne. Le buzzer ne
+    // sait pas a quoi on joue : c'est justement le principe.
+    _buzzSub = _game.buzzEvents.listen((e) {
+      if (_reflexe.etape != EtapeReflexe.repos) {
+        _reflexe.surBuzz(e.buzzer, e.ms);
+      } else {
+        _moteur.surBuzz(e.buzzer, e.ms);
+      }
+    });
     // La présence des buzzers reste une observation du matériel : le moteur
     // ne peut pas armer un buzzer qui n'est pas là.
     _game.addListener(_suivrePresence);
@@ -138,6 +155,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     final vu = _game.present;
     if (listEquals(vu, _moteur.presents)) return;
     _moteur.presents = List<bool>.of(vu);
+    _reflexe.presents = List<bool>.of(vu);
   }
 
   void _handleSfx(SfxEvent event) {
@@ -170,6 +188,14 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
   // salle. Le lanceur DEMANDE maintenant l'instantane courant plutot qu'on le
   // lui fabrique de l'exterieur (voir PopoutLauncher.instantaneCourant).
   PopoutSnapshot _instantane() {
+    // Le Reflexe passe avant : quand il tourne, c'est lui qu'on regarde.
+    if (_reflexe.etape != EtapeReflexe.repos) {
+      return PopoutSnapshot.duReflexe(
+        _reflexe,
+        teamNames: _teams.all,
+        logoPath: _logo.path,
+      );
+    }
     // Deux sources possibles, jamais melangees : le moteur de jeu quand
     // l'application mene, la telemetrie du buzzer quand il joue seul.
     final mene = isAppControl(_game.phase) || _moteur.etape != EtapeQuiz.repos;
@@ -199,6 +225,8 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     _game.removeListener(_suivrePresence);
     _moteur.removeListener(_pushSnapshotToPopout);
     _moteur.dispose();
+    _reflexe.removeListener(_pushSnapshotToPopout);
+    _reflexe.dispose();
     _sound.removeListener(_pushSnapshotToPopout);
     _sound.dispose();
     _ble.dispose();
@@ -237,6 +265,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
         catalogue: _catalogue,
         actif: _actif,
         moteur: _moteur,
+        reflexe: _reflexe,
         sons: _sons,
         tirage: _tirage,
         version: _version,

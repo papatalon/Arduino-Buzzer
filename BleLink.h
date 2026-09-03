@@ -77,9 +77,12 @@ class BleLink {
     // Masque de buzzers a armer demande par "ARM|<masque>" ou 0 pour un
     // "DISARM", ou -1 si rien n'est en attente. Consommee une seule fois.
     int consumeArm();
+    // Vrai quand le dernier ARM consomme demandait le mode continu.
+    bool armWasContinu();
     // Masque de LED demande par "LED|<masque>", ou -1 si rien n'est en
     // attente. Consommee une seule fois.
     int consumeLeds();
+    int consumeGo();
 
     // Retourne le masque de presence demande par un "SET_PRESENT|<n>" recu
     // depuis le dernier appel (bit 0 = rouge ... bit 3 = vert), ou -1 si
@@ -123,7 +126,9 @@ class BleLink {
     int _pendingQuestionCount = -1;
     int _pendingStartGame = -1;
     int _pendingArm = -1;
+    bool _pendingArmContinu = false;
     int _pendingLeds = -1;
+    int _pendingGo = -1;
     int _pendingPresenceMask = -1;
     bool _appSoundBusy = false;
     bool _appHandlesSound = true;

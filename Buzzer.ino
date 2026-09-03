@@ -237,12 +237,18 @@ PhaseMode getCurrentMode() {
       if (arm == 0) {
         appControl.disarm();
       } else {
-        appControl.arm(arm);
+        appControl.arm(arm, BleLink::shared().armWasContinu());
       }
     }
     int leds = BleLink::shared().consumeLeds();
     if (leds >= 0) {
       appControl.setLeds(leds);
+    }
+    // Le signal de depart : allumage et remise a zero du chrono dans la meme
+    // instruction (voir AppControl::go).
+    int go = BleLink::shared().consumeGo();
+    if (go >= 0) {
+      appControl.go(go);
     }
     appControl.tick();
     return APP_CONTROL;

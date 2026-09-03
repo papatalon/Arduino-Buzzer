@@ -19,6 +19,8 @@ import '../simulation.dart';
 import 'game_consoles.dart';
 import '../jeu/animation_tirage.dart';
 import '../jeu/console_quiz.dart';
+import '../jeu/console_reflexe.dart';
+import '../jeu/moteur_reflexe.dart';
 import '../jeu/moteur_quiz.dart';
 import 'game_rules_panel.dart';
 import 'source_questions.dart';
@@ -61,6 +63,7 @@ class ConsoleShell extends StatefulWidget {
     required this.catalogue,
     required this.actif,
     required this.moteur,
+    required this.reflexe,
     required this.sons,
     required this.tirage,
     required this.simulateur,
@@ -77,6 +80,7 @@ class ConsoleShell extends StatefulWidget {
   final CatalogueStore catalogue;
   final ActiveQuestionnaire actif;
   final MoteurQuiz moteur;
+  final MoteurReflexe reflexe;
   final Sonorisation sons;
   final AnimationTirage tirage;
   final Simulateur simulateur;
@@ -175,6 +179,7 @@ class _ConsoleShellState extends State<ConsoleShell> {
                                   catalogue: widget.catalogue,
                                   actif: widget.actif,
                                   moteur: widget.moteur,
+                                  reflexe: widget.reflexe,
                                   sons: widget.sons,
                                   tirage: widget.tirage,
                                   simulateur: widget.simulateur,
@@ -369,6 +374,7 @@ class _CenterColumn extends StatelessWidget {
     required this.catalogue,
     required this.actif,
     required this.moteur,
+    required this.reflexe,
     required this.sons,
     required this.tirage,
     required this.simulateur,
@@ -384,6 +390,7 @@ class _CenterColumn extends StatelessWidget {
   final CatalogueStore catalogue;
   final ActiveQuestionnaire actif;
   final MoteurQuiz moteur;
+  final MoteurReflexe reflexe;
   final Sonorisation sons;
   final AnimationTirage tirage;
   final Simulateur simulateur;
@@ -423,6 +430,16 @@ class _CenterColumn extends StatelessWidget {
     // On garde aussi la console du moteur quand une partie y tourne déjà,
     // pour qu'un battement de coeur manqué ne fasse pas clignoter l'écran
     // en pleine question.
+    // REFLEXE : sa propre console, avec ses propres regles. Elle passe avant
+    // celle du quiz des que le jeu retenu est le sien.
+    if (reflexe.etape != EtapeReflexe.repos ||
+        (isAppControl(game.phase) && moteur.jeuChoisi == 7)) {
+      return ConsoleReflexe(
+        moteur: reflexe,
+        teams: teams,
+        onChangerDeJeu: moteur.oublierJeu,
+      );
+    }
     if (isAppControl(game.phase) || moteur.etape != EtapeQuiz.repos) {
       return ConsoleQuizApp(
         moteur: moteur,

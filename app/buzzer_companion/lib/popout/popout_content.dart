@@ -39,7 +39,9 @@ class PopoutContent extends StatelessWidget {
     // reste en APP_CONTROL du debut a la fin. C'est le moteur qui sait si une
     // partie tourne, et l'instantane le rapporte.
     final running = snapshot.appMene
-        ? snapshot.flowState != QuestionFlowState.none || snapshot.gameFinished
+        ? snapshot.flowState != QuestionFlowState.none ||
+            snapshot.gameFinished ||
+            snapshot.phaseJeu != null
         : isGameRunning(snapshot.phase);
     return SizedBox(
       width: 1440,

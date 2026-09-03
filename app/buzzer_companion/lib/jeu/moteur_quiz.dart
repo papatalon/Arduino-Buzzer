@@ -12,13 +12,26 @@ import '../questionnaires/active_questionnaire.dart';
 // Bluetooth complet rendrait les regles du jeu invérifiables.
 abstract class CommandesBuzzer {
   /// Accepte le prochain appui parmi ces buzzers (bit 0 = rouge).
-  void armer(int masque);
+  ///
+  /// En mode [continu], chaque buzzer arme rapporte son appui et sort du
+  /// masque, les autres restent en jeu. Sinon le premier appui desarme tout,
+  /// ce qui est la regle du quiz mais pas celle des autres jeux.
+  void armer(int masque, {bool continu = false});
 
   /// N'accepte plus aucun appui.
   void desarmer();
 
   /// Allume exactement ces LED.
   void allumerLeds(int masque);
+
+  /// LE SIGNAL DE DEPART du Reflexe et du Duel : allume ces LED ET repart le
+  /// chrono de reaction, dans la meme instruction cote Mega.
+  ///
+  /// Distinct de [allumerLeds] parce que la latence Bluetooth de la commande
+  /// est inconnue, de 30 a 100 ms. Si l'application allumait puis comptait de
+  /// son cote, cette latence s'ajouterait a tous les temps de reaction, qui
+  /// se jouent entre 150 et 400 ms.
+  void allumerSignal(int masque);
 }
 
 // LE MOTEUR DE JEU DE L'APPLICATION.

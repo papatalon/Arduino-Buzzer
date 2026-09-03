@@ -19,18 +19,21 @@ import 'package:buzzer_companion/questionnaires/questionnaire.dart';
 class _Materiel implements CommandesBuzzer {
   final List<int> armements = [];
   final List<int> leds = [];
+  final List<int> signaux = [];
   int desarmements = 0;
 
   int? get dernierArmement => armements.isEmpty ? null : armements.last;
 
   @override
-  void armer(int masque) => armements.add(masque);
+  void armer(int masque, {bool continu = false}) => armements.add(masque);
 
   @override
   void desarmer() => desarmements++;
 
   @override
   void allumerLeds(int masque) => leds.add(masque);
+  @override
+  void allumerSignal(int masque) => signaux.add(masque);
 }
 
 const _rouge = 0, _bleu = 1, _jaune = 2, _vert = 3;

@@ -6,8 +6,9 @@ void AppControl::enter() {
   buzzer.resetLights();
 }
 
-void AppControl::arm(int mask) {
+void AppControl::arm(int mask, bool enContinu) {
   armedMask = mask & 0x0F;
+  continu = enContinu;
   // Un bouton deja maintenu au moment de l'armement ne doit pas compter :
   // sans ca, un joueur qui garde le doigt appuye gagnerait toutes les
   // manches de Reflexe sans rien faire.
@@ -19,12 +20,21 @@ void AppControl::arm(int mask) {
 void AppControl::disarm() {
   armedMask = 0;
   fired = false;
+  continu = false;
 }
 
 void AppControl::setLeds(int mask) {
   for (int i = 0; i < 4; i++) {
     buzzer.setLed(i, (mask & (1 << i)) != 0);
   }
+}
+
+void AppControl::go(int mask) {
+  setLeds(mask);
+  // Apres l'allumage, pas avant : c'est la LED que le joueur voit.
+  armedAt = millis();
+  // Un bouton deja maintenu au moment du signal ne compte pas.
+  buzzer.armButtons();
 }
 
 void AppControl::tick() {
@@ -45,10 +55,17 @@ void AppControl::tick() {
       continue;
     }
 
-    fired = true;
-    armedMask = 0;
-    buzzer.setLed(i, true);
+    if (continu) {
+      // Ce buzzer a repondu, il sort du masque. Les autres restent en jeu.
+      // Pas de LED : l'application juge d'abord (un appui trop tot en
+      // Reflexe est un faux depart, pas une victoire).
+      armedMask &= ~(1 << i);
+    } else {
+      fired = true;
+      armedMask = 0;
+      buzzer.setLed(i, true);
+    }
     ble.send(String("BUZZ|") + i + "|" + (unsigned long)(now - armedAt));
-    return;
+    if (!continu) return;
   }
 }

@@ -94,12 +94,20 @@ char BleLink::pollKey() {
           _pendingCategoryMask = mask;
         }
       } else if (_rxBuffer.startsWith("ARM|")) {
+        // "ARM|<masque>" ou "ARM|<masque>|C" pour le mode continu, ou chaque
+        // buzzer arme rapporte son appui sans desarmer les autres.
         int m = _rxBuffer.substring(4).toInt();
         if (m >= 0 && m < 16) {
           _pendingArm = m;
+          _pendingArmContinu = _rxBuffer.endsWith("|C");
         }
       } else if (_rxBuffer == "DISARM") {
         _pendingArm = 0;
+      } else if (_rxBuffer.startsWith("GO|")) {
+        int m = _rxBuffer.substring(3).toInt();
+        if (m >= 0 && m < 16) {
+          _pendingGo = m;
+        }
       } else if (_rxBuffer.startsWith("LED|")) {
         int m = _rxBuffer.substring(4).toInt();
         if (m >= 0 && m < 16) {
@@ -163,10 +171,18 @@ int BleLink::consumeArm() {
   _pendingArm = -1;
   return v;
 }
+bool BleLink::armWasContinu() {
+  return _pendingArmContinu;
+}
 
 int BleLink::consumeLeds() {
   int v = _pendingLeds;
   _pendingLeds = -1;
+  return v;
+}
+int BleLink::consumeGo() {
+  int v = _pendingGo;
+  _pendingGo = -1;
   return v;
 }
 
