@@ -482,20 +482,38 @@ class _Sequence extends StatelessWidget {
     final atteinte = moteur.alEnvers
         ? moteur.sequence.length - 1 - moteur.saisis
         : moteur.saisis;
+    // UNE SUITE DE TEMPS, PAS UNE BARRE DE COULEURS. Collés, les carrés se
+    // lisaient comme un seul objet : rien ne disait qu'on les parcourt de
+    // gauche à droite, et le cadre du point d'arrêt n'avait aucun rang à
+    // désigner. Même traitement que sur l'écran public, pour que l'animateur
+    // et la salle comptent les mêmes cases.
     return Wrap(
-      spacing: 6,
-      runSpacing: 6,
+      spacing: 14,
+      runSpacing: 14,
       children: [
         for (var k = 0; k < moteur.sequence.length; k++)
-          Container(
-            width: 34,
-            height: 34,
-            decoration: BoxDecoration(
-              color: kBuzzerColors[moteur.sequence[k]].fill,
-              border: k == atteinte
-                  ? Border.all(color: BSColors.text, width: 3)
-                  : null,
-            ),
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                width: 34,
+                height: 34,
+                decoration: BoxDecoration(
+                  color: kBuzzerColors[moteur.sequence[k]].fill,
+                  border: k == atteinte
+                      ? Border.all(color: BSColors.text, width: 3)
+                      : null,
+                ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                '${k + 1}',
+                style: BSType.body(
+                  size: 12,
+                  color: k == atteinte ? BSColors.text : BSColors.neutral500,
+                ),
+              ),
+            ],
           ),
       ],
     );

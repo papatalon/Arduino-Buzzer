@@ -489,6 +489,7 @@ class _SimonFin extends StatelessWidget {
             : 38.0;
     final fautif = snapshot.simonFautif;
     final attendu = snapshot.simonAttendu;
+    final arret = _positionAtteinte(sequence.length);
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -500,21 +501,41 @@ class _SimonFin extends StatelessWidget {
           constraints: const BoxConstraints(maxWidth: 1180),
           child: Wrap(
             alignment: WrapAlignment.center,
-            spacing: 10,
-            runSpacing: 10,
+            // UNE SUITE DE TEMPS, PAS UNE BARRE DE COULEURS.
+            //
+            // Collés, les carrés se lisaient comme un seul objet, un drapeau :
+            // rien ne disait qu'on les parcourt de gauche à droite, et le
+            // cadre du point d'arrêt n'avait aucun rang à désigner. L'écart et
+            // le numéro les rendent aux quatre temps qu'ils sont.
+            spacing: taille * 0.42,
+            runSpacing: taille * 0.42,
             children: [
               for (var k = 0; k < sequence.length; k++)
-                Container(
-                  width: taille,
-                  height: taille,
-                  decoration: BoxDecoration(
-                    color: kBuzzerColors[sequence[k]].fill,
-                    // La case où ça s'est arrêté, encadrée : c'est le
-                    // renseignement, le reste n'est que le décompte.
-                    border: k == _positionAtteinte(sequence.length)
-                        ? Border.all(color: BSColors.text, width: 5)
-                        : null,
-                  ),
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      width: taille,
+                      height: taille,
+                      decoration: BoxDecoration(
+                        color: kBuzzerColors[sequence[k]].fill,
+                        // La case où ça s'est arrêté, encadrée : c'est le
+                        // renseignement, le reste n'est que le décompte.
+                        border: k == arret
+                            ? Border.all(color: BSColors.text, width: 5)
+                            : null,
+                      ),
+                    ),
+                    SizedBox(height: taille * 0.14),
+                    Text(
+                      '${k + 1}',
+                      style: BSType.body(
+                        size: taille * 0.34,
+                        color:
+                            k == arret ? BSColors.text : BSColors.neutral500,
+                      ),
+                    ),
+                  ],
                 ),
             ],
           ),
@@ -522,7 +543,10 @@ class _SimonFin extends StatelessWidget {
         if (fautif != null && attendu != null) ...[
           const SizedBox(height: BSSpace.s4),
           Text(
-            '${snapshot.teamName(fautif)} a pesé, '
+            // Le rang reprend LE MÊME NUMÉRO que sous les carrés : sans lui,
+            // l'encadré est une décoration que personne ne sait relier à la
+            // phrase depuis le fond de la salle.
+            'Couleur ${arret + 1} : ${snapshot.teamName(fautif)} a pesé, '
             "c'était à ${snapshot.teamName(attendu)}.",
             textAlign: TextAlign.center,
             style: BSType.body(size: 34, color: BSColors.text),

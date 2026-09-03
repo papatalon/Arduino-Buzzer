@@ -676,7 +676,15 @@ void main() {
           const MaterialApp(home: Scaffold(body: PopoutContent(snapshot: vu))));
 
       expect(find.text('LA SÉQUENCE'), findsOneWidget);
-      expect(find.text("Bleu a pesé, c'était à Rouge."), findsOneWidget);
+      // Le rang reprend le numéro affiché sous les carrés : sans lui,
+      // l'encadré ne se relie à rien depuis le fond de la salle.
+      expect(find.text("Couleur 2 : Bleu a pesé, c'était à Rouge."),
+          findsOneWidget);
+      // Une suite de temps NUMÉROTÉS, pas une barre de couleurs. Le rang 2
+      // n'est pas vérifié ici : le niveau atteint vaut 2 lui aussi, et
+      // chercher « 2 » trouverait les deux.
+      expect(find.text('1'), findsOneWidget);
+      expect(find.text('3'), findsOneWidget);
     });
 
     testWidgets('trop lent n\'accuse personne, mais montre la séquence',
