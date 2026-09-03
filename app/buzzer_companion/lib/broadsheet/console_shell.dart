@@ -21,6 +21,7 @@ import '../jeu/animation_tirage.dart';
 import '../jeu/console_quiz.dart';
 import '../jeu/console_reflexe.dart';
 import '../jeu/moteur_reflexe.dart';
+import '../questionnaires/tirage_questions.dart';
 import '../jeu/moteur_quiz.dart';
 import 'game_rules_panel.dart';
 import 'source_questions.dart';
@@ -64,6 +65,7 @@ class ConsoleShell extends StatefulWidget {
     required this.actif,
     required this.moteur,
     required this.reflexe,
+    required this.tirageQuestions,
     required this.sons,
     required this.tirage,
     required this.simulateur,
@@ -81,6 +83,7 @@ class ConsoleShell extends StatefulWidget {
   final ActiveQuestionnaire actif;
   final MoteurQuiz moteur;
   final MoteurReflexe reflexe;
+  final TirageQuestions tirageQuestions;
   final Sonorisation sons;
   final AnimationTirage tirage;
   final Simulateur simulateur;
@@ -180,6 +183,7 @@ class _ConsoleShellState extends State<ConsoleShell> {
                                   actif: widget.actif,
                                   moteur: widget.moteur,
                                   reflexe: widget.reflexe,
+                                  tirageQuestions: widget.tirageQuestions,
                                   sons: widget.sons,
                                   tirage: widget.tirage,
                                   simulateur: widget.simulateur,
@@ -375,6 +379,7 @@ class _CenterColumn extends StatelessWidget {
     required this.actif,
     required this.moteur,
     required this.reflexe,
+    required this.tirageQuestions,
     required this.sons,
     required this.tirage,
     required this.simulateur,
@@ -391,6 +396,7 @@ class _CenterColumn extends StatelessWidget {
   final ActiveQuestionnaire actif;
   final MoteurQuiz moteur;
   final MoteurReflexe reflexe;
+  final TirageQuestions tirageQuestions;
   final Sonorisation sons;
   final AnimationTirage tirage;
   final Simulateur simulateur;
@@ -449,6 +455,7 @@ class _CenterColumn extends StatelessWidget {
         game: game,
         ble: ble,
         sons: sons,
+        tirage: tirageQuestions,
       );
     }
     // Le buzzer n'a pas encore dit où il atterrit : on ne devine pas. Une

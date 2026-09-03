@@ -541,10 +541,20 @@ class MoteurQuiz extends ChangeNotifier {
     gagnant = null;
     egalite = false;
     motFinal = '';
-    questionSuivante();
+    numeroQuestion++;
+    buzzeur = null;
+    secondeChance = false;
+    tempsEcoule = false;
+    dernierJuge = null;
+    // La question du bris peut avoir ete piochee dans le perimetre par la
+    // console. Sinon on prend la suivante du questionnaire, faute de mieux :
+    // elle n'a pas encore ete posee.
+    if (!actif.questionDeBrisPosee) actif.goTo(numeroQuestion - 1);
     for (var i = 0; i < 4; i++) {
       enLice[i] = presents[i] && scores[i] == meilleur;
     }
+    etape = EtapeQuiz.attente;
+    _arreterChrono();
     _armer();
     notifyListeners();
   }

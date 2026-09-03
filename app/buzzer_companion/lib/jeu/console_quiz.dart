@@ -4,10 +4,12 @@ import '../audio/sonorisation.dart';
 import '../broadsheet/boutons.dart';
 import '../ble_link_service.dart';
 import '../broadsheet/screens/game_choice_screen.dart';
+import '../broadsheet/source_hasard.dart';
 import '../broadsheet/source_questions.dart';
 import '../broadsheet/tokens.dart';
 import '../protocol.dart';
 import '../questionnaires/active_questionnaire.dart';
+import '../questionnaires/tirage_questions.dart';
 import '../team_names.dart';
 import 'moteur_quiz.dart';
 
@@ -60,6 +62,7 @@ class ConsoleQuizApp extends StatelessWidget {
     required this.sons,
     required this.game,
     required this.ble,
+    required this.tirage,
   });
 
   final MoteurQuiz moteur;
@@ -69,6 +72,7 @@ class ConsoleQuizApp extends StatelessWidget {
   final Sonorisation sons;
   final GameState game;
   final BleLinkService ble;
+  final TirageQuestions tirage;
 
   @override
   Widget build(BuildContext context) {
@@ -85,9 +89,14 @@ class ConsoleQuizApp extends StatelessWidget {
                   game: game,
                   ble: ble,
                   onAllerAuxQuestions: onAllerAuxQuestions,
+                  tirage: tirage,
                 ),
               EtapeQuiz.intro => _Ouverture(moteur: moteur),
-              EtapeQuiz.finie => _FinDePartie(moteur: moteur, teams: teams),
+              EtapeQuiz.finie => _FinDePartie(
+                  moteur: moteur,
+                  teams: teams,
+                  actif: actif,
+                  tirage: tirage),
               _ => _EnPartie(moteur: moteur, actif: actif, teams: teams, sons: sons),
             },
           ),
@@ -106,6 +115,7 @@ class _Lancement extends StatefulWidget {
     required this.game,
     required this.ble,
     required this.onAllerAuxQuestions,
+    required this.tirage,
   });
 
   final MoteurQuiz moteur;
@@ -113,6 +123,7 @@ class _Lancement extends StatefulWidget {
   final GameState game;
   final BleLinkService ble;
   final VoidCallback onAllerAuxQuestions;
+  final TirageQuestions tirage;
 
   @override
   State<_Lancement> createState() => _LancementState();
@@ -184,6 +195,8 @@ class _LancementState extends State<_Lancement> {
                 actif: actif, onChoisir: widget.onAllerAuxQuestions),
             const SizedBox(height: BSSpace.s2),
             SourceLibre(actif: actif),
+            const SizedBox(height: BSSpace.s2),
+            SourceAuHasard(actif: actif, tirage: widget.tirage),
             if (actif.libre) ...[
               const SizedBox(height: BSSpace.s4),
               NombreLibre(actif: actif, parDefaut: kNombreLibreParDefaut),
@@ -701,9 +714,33 @@ class _TableauScores extends StatelessWidget {
 // --- Après la partie -----------------------------------------------------
 
 class _FinDePartie extends StatelessWidget {
-  const _FinDePartie({required this.moteur, required this.teams});
+  const _FinDePartie({
+    required this.moteur,
+    required this.teams,
+    required this.actif,
+    required this.tirage,
+  });
   final MoteurQuiz moteur;
   final TeamNames teams;
+  final ActiveQuestionnaire actif;
+  final TirageQuestions tirage;
+
+  // LA QUESTION DU BRIS EST PIOCHEE DANS LE PERIMETRE, pas prise dans le
+  // questionnaire : celui-ci est termine, et rejouer une de ses questions
+  // serait absurde puisque toute la salle l'a deja entendue.
+  //
+  // Le perimetre suit la manche : la collection du questionnaire choisi, ou
+  // tout le catalogue pour un questionnaire personnalise, qui n'appartient a
+  // aucune collection (voir ActiveQuestionnaire.collectionDuBris).
+  Future<void> _departager() async {
+    final question =
+        await tirage.questionDeBris(collection: actif.collectionDuBris);
+    if (question != null) actif.poserQuestionDeBris(question);
+    // Faute de tirage possible (hors ligne, rien de synchronise), le moteur
+    // prend la question suivante du questionnaire : mieux vaut departager
+    // avec une question deja vue que pas du tout.
+    moteur.lancerBrisDegalite();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -751,7 +788,7 @@ class _FinDePartie extends StatelessWidget {
             if (moteur.egalite)
               BSPrimaryButton(
                 label: 'Départager',
-                onPressed: moteur.lancerBrisDegalite,
+                onPressed: _departager,
                 grand: true,
               ),
             BSSecondaryButton(

@@ -90,10 +90,47 @@ class ActiveQuestionnaire extends ChangeNotifier {
   // dire que d'afficher un vide inexpliqué.
   bool get exhausted => active && _index >= total;
 
+  // UNE QUESTION POSEE EN PLUS, pour un bris d'egalite. Elle ne vient pas du
+  // questionnaire en cours : celui-ci est termine, et rejouer une de ses
+  // questions serait absurde puisque tout le monde l'a deja entendue.
+  QuizQuestion? _questionDeBris;
+
+  bool get questionDeBrisPosee => _questionDeBris != null;
+
+  /// LE PERIMETRE OU PIOCHER UNE QUESTION DE BRIS.
+  ///
+  /// La collection du questionnaire choisi, pour rester dans le meme esprit :
+  /// departager une manche d'histoire avec une question de cinema serait
+  /// injuste. Null veut dire « toutes les questions », ce qui est le cas d'un
+  /// questionnaire personnalise, dont la collection ne designe aucun
+  /// perimetre du catalogue.
+  String? collectionDuBris;
+
+  /// Vrai quand la manche en cours a ete TIREE AU HASARD plutot que choisie
+  /// dans la bibliotheque. Sert a l'affichage : « Au hasard : Histoire » n'est
+  /// pas un questionnaire qu'on retrouvera demain.
+  bool tireAuHasard = false;
+
+  void poserQuestionDeBris(QuizQuestion question) {
+    _questionDeBris = question;
+    _push();
+    notifyListeners();
+  }
+
   QuizQuestion? get current =>
-      active && _index >= 0 && _index < total ? _questionnaire!.questions[_index] : null;
+      _questionDeBris ??
+      (active && _index >= 0 && _index < total
+          ? _questionnaire!.questions[_index]
+          : null);
 
   void use(Questionnaire questionnaire, {required String origine}) {
+    _questionDeBris = null;
+    tireAuHasard = false;
+    // Un questionnaire personnalise n'appartient a aucune collection du
+    // catalogue : son bris se pioche alors dans tout.
+    final col = questionnaire.collection.trim();
+    collectionDuBris =
+        (col.isEmpty || col == 'Personnalisé') ? null : col;
     _questionnaire = questionnaire;
     _origine = origine;
     _index = 0;
@@ -118,6 +155,8 @@ class ActiveQuestionnaire extends ChangeNotifier {
   void previous() => goTo(_index - 1);
 
   void goTo(int i) {
+    // On revient au questionnaire : la question de bris n'a plus cours.
+    _questionDeBris = null;
     if (!active) return;
     // Borné à total, et non à total - 1 : dépasser la dernière question est
     // un état légitime (le questionnaire est épuisé), pas une erreur.
