@@ -338,4 +338,77 @@ void main() {
       expect(enLice, [m.tourVol]);
     });
   });
+
+  group("Le bris d'égalité", () {
+    setUp(() => moteur = creer());
+
+    // Jamais automatique : c'est l'animateur qui juge si la salle en a envie.
+    test('rien ne se lance tant que la partie tourne', () {
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.lancerBrisDegalite();
+      expect(moteur.brisEgalite, isFalse);
+    });
+
+    test("aucun bris quand il y a deja un gagnant", () {
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.surBuzz(_bleu, 300);
+      moteur.bonneReponse();
+      moteur.terminer();
+      moteur.lancerBrisDegalite();
+      expect(moteur.brisEgalite, isFalse);
+    });
+
+    test('seuls les ex aequo peuvent buzzer', () {
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.surBuzz(_bleu, 300);
+      moteur.bonneReponse();
+      moteur.continuer();
+      moteur.surBuzz(_rouge, 300);
+      moteur.bonneReponse();
+      moteur.terminer();
+      expect(moteur.egalite, isTrue);
+
+      moteur.lancerBrisDegalite();
+      expect(moteur.brisEgalite, isTrue);
+      expect(moteur.etape, EtapeQuiz.attente);
+      // Le jaune et le vert restent presents mais neutralises.
+      expect(materiel.dernierArmement, _bit(_rouge) | _bit(_bleu));
+    });
+
+    test('une bonne reponse emporte la partie sur-le-champ', () {
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.surBuzz(_bleu, 300);
+      moteur.bonneReponse();
+      moteur.continuer();
+      moteur.surBuzz(_rouge, 300);
+      moteur.bonneReponse();
+      moteur.terminer();
+      moteur.lancerBrisDegalite();
+
+      moteur.surBuzz(_rouge, 300);
+      moteur.bonneReponse();
+      // Pas d'ecran de scores : le bris se joue en une question.
+      expect(moteur.etape, EtapeQuiz.finie);
+      expect(moteur.gagnant, _rouge);
+      expect(moteur.egalite, isFalse);
+    });
+
+    test('une mauvaise reponse elimine du bris, le dernier l\'emporte', () {
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.surBuzz(_bleu, 300);
+      moteur.bonneReponse();
+      moteur.continuer();
+      moteur.surBuzz(_rouge, 300);
+      moteur.bonneReponse();
+      moteur.terminer();
+      moteur.lancerBrisDegalite();
+
+      moteur.surBuzz(_rouge, 300);
+      moteur.mauvaiseReponse();
+      // Le bleu reste seul : il gagne sans avoir a repondre, comme sur le
+      // buzzer.
+      expect(moteur.etape, EtapeQuiz.finie);
+      expect(moteur.gagnant, _bleu);
+    });
+  });
 }

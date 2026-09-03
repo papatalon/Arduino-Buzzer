@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:buzzer_companion/jeu/moteur_quiz.dart';
+import 'dart:math';
+
 import 'package:buzzer_companion/jeu/mots_de_la_fin.dart';
+import 'package:buzzer_companion/jeu/moteur_reflexe.dart';
 import 'package:buzzer_companion/popout/popout_content.dart';
 import 'package:buzzer_companion/popout/popout_snapshot.dart';
 import 'package:buzzer_companion/protocol.dart';
@@ -254,6 +257,88 @@ void main() {
     );
     expect(find.text('20 s'), findsOneWidget);
     expect(find.text('CHRONO NON LANCÉ'), findsNothing);
+    moteur.dispose();
+  });
+
+  // RÉFLEXE : un faux départ écarte son auteur de la manche, et la salle doit
+  // le voir dans le bandeau, exactement comme une mauvaise réponse au quiz.
+  // Sans ça, on regarde quelqu'un attendre le signal alors qu'il ne joue plus.
+  testWidgets('reflexe : un faux depart se voit dans le bandeau',
+      (tester) async {
+    final moteur = MoteurReflexe(ble: _MaterielMuet(), hasard: Random(1))
+      ..manchesPrevues = 3
+      ..regleFauxDepart = FauxDepart.ecarte;
+    moteur.demarrer();
+    moteur.surBuzz(1, 800);   // avant le signal
+    expect(moteur.enLice[1], isFalse);
+
+    PopoutSnapshot vu() => PopoutSnapshot.duReflexe(
+          moteur,
+          teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
+          logoPath: null,
+        );
+
+    await rendre(tester, vu());
+    expect(find.text('ÉCARTÉ'), findsOneWidget);
+
+    // Manche tranchee : tout le monde revient, la mention disparait.
+    moteur.donnerLeSignal();
+    moteur.surBuzz(0, 250);
+    await rendre(tester, vu());
+    expect(find.text('ÉCARTÉ'), findsNothing);
+    moteur.dispose();
+  });
+
+  // Le mode « penalite » garde le fautif en lice : rien ne doit apparaitre
+  // dans le bandeau, sinon on annoncerait une exclusion qui n'existe pas.
+  testWidgets('reflexe : en mode penalite, personne n\'est marque ecarte',
+      (tester) async {
+    final moteur = MoteurReflexe(ble: _MaterielMuet(), hasard: Random(1))
+      ..manchesPrevues = 3
+      ..regleFauxDepart = FauxDepart.penalite;
+    moteur.demarrer();
+    moteur.surBuzz(1, 800);
+
+    await rendre(
+      tester,
+      PopoutSnapshot.duReflexe(
+        moteur,
+        teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
+        logoPath: null,
+      ),
+    );
+    expect(find.text('ÉCARTÉ'), findsNothing);
+    moteur.dispose();
+  });
+
+  // Un bris se joue EN PLUS des manches prevues : la progression annoncerait
+  // « manche 3 sur 2 ». Le nom de ce qui se joue vaut mieux qu'un compte faux.
+  testWidgets('bris d\'egalite : la progression laisse sa place',
+      (tester) async {
+    final moteur = MoteurReflexe(ble: _MaterielMuet(), hasard: Random(1))
+      ..manchesPrevues = 2;
+    moteur.demarrer();
+    moteur.donnerLeSignal();
+    moteur.personneNaPese();
+    moteur.continuer();
+    moteur.donnerLeSignal();
+    moteur.personneNaPese();
+    moteur.continuer();
+    expect(moteur.egalite, isTrue);
+
+    moteur.lancerBrisDegalite();
+    expect(moteur.manche, greaterThan(moteur.manchesPrevues));
+
+    await rendre(
+      tester,
+      PopoutSnapshot.duReflexe(
+        moteur,
+        teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
+        logoPath: null,
+      ),
+    );
+    expect(find.text("BRIS D'ÉGALITÉ"), findsOneWidget);
+    expect(find.textContaining('SUR 2'), findsNothing);
     moteur.dispose();
   });
 }

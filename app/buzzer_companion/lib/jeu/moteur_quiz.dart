@@ -157,6 +157,11 @@ class MoteurQuiz extends ChangeNotifier {
   int? gagnant;
   bool egalite = false;
 
+  /// BRIS D'EGALITE en cours. Seuls les ex aequo peuvent repondre ; une
+  /// bonne reponse emporte la partie, une mauvaise elimine du bris, et le
+  /// dernier en lice l'emporte. Regle reprise du firmware.
+  bool brisEgalite = false;
+
   /// La phrase projetee sous le resultat, tiree au sort a la fin de la partie.
   String motFinal = '';
 
@@ -209,6 +214,7 @@ class MoteurQuiz extends ChangeNotifier {
     numeroQuestion = 0;
     dernierJuge = null;
     gagnant = null;
+    brisEgalite = false;
     actif.goTo(0);
     egalite = false;
     // Vol : le premier joueur est tiré au sort avant la première question.
@@ -381,6 +387,12 @@ class MoteurQuiz extends ChangeNotifier {
     dernierJuge = qui;
     derniereEtaitBonne = true;
     if (estVol) tourVol = _prochainPresent(tourVol);
+    // Un bris d'egalite se joue en une question : celui qui trouve emporte
+    // la partie, on ne repasse pas par l'ecran des scores.
+    if (brisEgalite) {
+      terminer();
+      return;
+    }
     _versScores();
   }
 
@@ -406,6 +418,25 @@ class MoteurQuiz extends ChangeNotifier {
 
     buzzeur = null;
     ble.allumerLeds(0);
+
+    // BRIS D'EGALITE : une mauvaise reponse elimine du bris. Le dernier en
+    // lice l'emporte sans avoir a repondre, comme sur le buzzer.
+    if (brisEgalite) {
+      final restants = [
+        for (var i = 0; i < 4; i++)
+          if (presents[i] && enLice[i]) i
+      ];
+      if (restants.length <= 1) {
+        if (restants.length == 1) scores[restants.first]++;
+        terminer();
+        return;
+      }
+      etape = EtapeQuiz.attente;
+      buzzeur = null;
+      _armer();
+      notifyListeners();
+      return;
+    }
 
     // Plus personne en lice : la question est close.
     if (_masqueEnLice == 0) {
@@ -486,6 +517,35 @@ class MoteurQuiz extends ChangeNotifier {
     } else if (gagnant != null) {
       sons?.victoire();
     }
+    notifyListeners();
+  }
+
+  /// LE BRIS D'EGALITE, decide par l'animateur.
+  ///
+  /// Jamais automatique : une soiree peut tres bien se terminer sur une
+  /// egalite, et forcer une question de plus a des gens qui rangent leurs
+  /// manteaux serait penible. C'est lui qui juge si la salle en a envie.
+  ///
+  /// Seuls les ex aequo y participent : les autres restent presents mais ne
+  /// peuvent plus buzzer, comme sur le buzzer.
+  void lancerBrisDegalite() {
+    if (etape != EtapeQuiz.finie || !egalite) return;
+    final meilleur = scores
+        .asMap()
+        .entries
+        .where((e) => presents[e.key])
+        .map((e) => e.value)
+        .reduce((a, b) => a > b ? a : b);
+
+    brisEgalite = true;
+    gagnant = null;
+    egalite = false;
+    motFinal = '';
+    questionSuivante();
+    for (var i = 0; i < 4; i++) {
+      enLice[i] = presents[i] && scores[i] == meilleur;
+    }
+    _armer();
     notifyListeners();
   }
 

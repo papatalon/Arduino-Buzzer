@@ -17,6 +17,15 @@ import 'popout_snapshot.dart';
 
 // Repli commun aux quatre : une fois la partie terminée, tous annoncent la
 // même chose (gagnant, égalité, ou personne).
+// L'ECRAN DE FIN, LE MEME POUR TOUS LES JEUX.
+//
+// Le quiz avait le sien, les jeux a manches un autre. Deux ecrans pour le
+// meme moment, c'etait deux occasions de diverger, et le mot de la fin
+// n'apparaissait que sur l'un des deux. Une soiree se termine de la meme
+// facon quel que soit le jeu.
+//
+// [detail] est la seule part propre au jeu : un record de reflexe, un niveau
+// atteint. Le reste (gagnant, egalite, mot de la fin) est commun.
 class GameOverZone extends StatelessWidget {
   const GameOverZone({super.key, required this.snapshot, this.detail});
 
@@ -30,6 +39,8 @@ class GameOverZone extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
+        Text('FIN DE PARTIE', style: BSType.sectionKicker()),
+        const SizedBox(height: BSSpace.s4),
         if (gagne)
           FittedBox(
             fit: BoxFit.scaleDown,
@@ -46,8 +57,19 @@ class GameOverZone extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
         if (detail != null && detail!.isNotEmpty) ...[
-          const SizedBox(height: BSSpace.s6),
+          const SizedBox(height: BSSpace.s4),
           Text(detail!, style: BSType.body(size: 32, color: BSColors.neutral700)),
+        ],
+        if (snapshot.motFinal.isNotEmpty) ...[
+          const SizedBox(height: BSSpace.s6),
+          SizedBox(
+            width: 1100,
+            child: Text(
+              snapshot.motFinal,
+              textAlign: TextAlign.center,
+              style: BSType.body(size: 34, color: BSColors.neutral700),
+            ),
+          ),
         ],
       ],
     );

@@ -58,6 +58,7 @@ class PopoutSnapshot {
     this.motAttention = '',
     this.motTirage = '',
     this.phaseJeu,
+    this.brisEgalite = false,
     this.chronoRestant,
     this.chronoTotal = 0,
     this.logoPath,
@@ -142,6 +143,28 @@ class PopoutSnapshot {
 
   int? get phaseAffichee => phaseJeu ?? phase;
 
+  // Un bris d'egalite se joue EN PLUS des manches prevues : annoncer
+  // « manche 3 sur 2 » ou « question 26 sur 25 » n'aurait aucun sens. La
+  // progression laisse donc sa place au nom de ce qui se joue.
+  final bool brisEgalite;
+
+  // VRAI TANT QUE LA MANCHE EN COURS PEUT ENCORE SE JOUER.
+  //
+  // C'est le moment ou etre ecarte veut dire quelque chose, et ou la salle
+  // doit le voir. Une fois la manche tranchee, tout le monde revient : garder
+  // la mention serait faux.
+  //
+  // Deux formes selon le jeu, parce que « une question ouverte » et « une
+  // manche de Reflexe en cours » ne se lisent pas au meme endroit.
+  bool get mancheOuverte {
+    if (flowState == QuestionFlowState.arming ||
+        flowState == QuestionFlowState.buzzed) {
+      return true;
+    }
+    return isPhase(phaseAffichee, 'REFLEX_ARM') ||
+        isPhase(phaseAffichee, 'REFLEX_GO');
+  }
+
   final int? chronoRestant;
   final int chronoTotal;
 
@@ -223,12 +246,17 @@ class PopoutSnapshot {
       scores: const [0, 0, 0, 0],
       gameScores: List<int>.of(moteur.scores),
       present: List<bool>.of(moteur.presents),
+      // Un faux depart ecarte son auteur de la manche : la salle doit le voir
+      // dans le bandeau, comme pour une mauvaise reponse au quiz.
+      enLice: List<bool>.of(moteur.enLice),
       flowState: QuestionFlowState.none,
+      brisEgalite: moteur.brisEgalite,
       gameRound: moteur.manche,
       gameTotalRounds: moteur.manchesPrevues,
-      gameWinner: moteur.etape == EtapeReflexe.finie ? moteur.meneur : null,
+      gameWinner: moteur.etape == EtapeReflexe.finie ? moteur.vainqueur : null,
       gameTie: moteur.etape == EtapeReflexe.finie && moteur.egalite,
       gameFinished: moteur.etape == EtapeReflexe.finie,
+      motFinal: moteur.motFinal,
       reflexWinner: moteur.gagnant,
       reflexMs: moteur.tempsGagnant,
       reflexBestMs: moteur.meilleurTemps,
@@ -297,6 +325,7 @@ class PopoutSnapshot {
       motFinal: moteur.motFinal,
       motAttention: moteur.motAttention,
       motTirage: moteur.motTirage,
+      brisEgalite: moteur.brisEgalite,
       chronoRestant: moteur.chronoRestant,
       chronoTotal: moteur.chronoTotal,
       recallIndex: recallIndex,
@@ -395,6 +424,7 @@ class PopoutSnapshot {
       motAttention: json['motAttention'] as String? ?? '',
       motTirage: json['motTirage'] as String? ?? '',
       phaseJeu: json['phaseJeu'] as int?,
+      brisEgalite: json['brisEgalite'] as bool? ?? false,
       chronoRestant: json['chronoRestant'] as int?,
       chronoTotal: json['chronoTotal'] as int? ?? 0,
       simonLevel: json['simonLevel'] as int?,
@@ -448,6 +478,7 @@ class PopoutSnapshot {
         'motAttention': motAttention,
         'motTirage': motTirage,
         'phaseJeu': phaseJeu,
+        'brisEgalite': brisEgalite,
         'chronoRestant': chronoRestant,
         'chronoTotal': chronoTotal,
         'simonLevel': simonLevel,

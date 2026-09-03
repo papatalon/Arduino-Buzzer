@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 
 import '../audio/sonorisation.dart';
 import 'moteur_quiz.dart' show CommandesBuzzer;
+import 'mots_de_la_fin.dart';
 
 // CE QU'ON FAIT D'UN FAUX DÉPART.
 //
@@ -28,6 +29,11 @@ enum FauxDepart {
   /// Les appuis avant le signal sont ignorés. Pour une salle qui n'a pas envie
   /// qu'on lui compte ses fautes.
   tolere,
+
+  /// ÉLIMINÉ DE LA PARTIE, pas seulement de la manche. Le plus dur : une
+  /// seule anticipation et la soirée est finie pour vous. S'il ne reste qu'un
+  /// joueur, il l'emporte sur-le-champ, sans jouer les manches restantes.
+  elimine,
 }
 
 enum EtapeReflexe {
@@ -108,6 +114,22 @@ class MoteurReflexe extends ChangeNotifier {
   /// Qui a fait un faux départ dans la manche en cours, pour l'afficher.
   final List<bool> fautifs = [false, false, false, false];
 
+  /// Qui joue encore la PARTIE. Seul le mode [FauxDepart.elimine] en retire.
+  /// Distinct de [enLice], qui ne vaut que pour la manche en cours.
+  final List<bool> dansLaPartie = [true, true, true, true];
+
+  /// Gagnant impose par elimination, quand il ne reste qu'un joueur. Il
+  /// l'emporte meme avec moins de points : les autres ne sont plus la.
+  int? gagnantParElimination;
+
+  /// La phrase projetee a la fin, tiree au sort. Partagee avec le quiz : les
+  /// jeux se terminent tous de la meme facon devant la salle.
+  String motFinal = '';
+
+  /// BRIS D'EGALITE en cours : une manche de plus entre les seuls ex aequo.
+  /// Celui qui la remporte gagne la partie.
+  bool brisEgalite = false;
+
   int manche = 0;
 
   /// Gagnant de la manche, et son temps. Null tant que rien n'est tranché.
@@ -125,7 +147,7 @@ class MoteurReflexe extends ChangeNotifier {
   int get _masqueEnLice {
     var m = 0;
     for (var i = 0; i < 4; i++) {
-      if (presents[i] && enLice[i]) m |= 1 << i;
+      if (presents[i] && enLice[i] && dansLaPartie[i]) m |= 1 << i;
     }
     return m;
   }
@@ -143,6 +165,12 @@ class MoteurReflexe extends ChangeNotifier {
     }
     manche = 0;
     meilleurTemps = null;
+    motFinal = '';
+    gagnantParElimination = null;
+    brisEgalite = false;
+    for (var i = 0; i < 4; i++) {
+      dansLaPartie[i] = true;
+    }
     mancheSuivante();
   }
 
@@ -163,7 +191,7 @@ class MoteurReflexe extends ChangeNotifier {
     tempsGagnant = null;
     personne = false;
     for (var i = 0; i < 4; i++) {
-      enLice[i] = presents[i];
+      enLice[i] = presents[i] && dansLaPartie[i];
       fautifs[i] = false;
     }
     _attendreLeSignal();
@@ -189,6 +217,10 @@ class MoteurReflexe extends ChangeNotifier {
   @visibleForTesting
   void donnerLeSignal() {
     if (etape != EtapeReflexe.attente) return;
+    // Le minuteur du delai vient de se declencher en production, mais pas
+    // quand on appelle cette methode directement : sans cette annulation, sa
+    // reference serait ecrasee et il resterait arme.
+    _arreterMinuteur();
     etape = EtapeReflexe.signal;
     // GO et non LED : le Mega allume et repart son chrono dans la même
     // instruction, donc les temps rapportés partent bien de l'allumage.
@@ -242,6 +274,26 @@ class MoteurReflexe extends ChangeNotifier {
       case FauxDepart.ecarte:
         enLice[qui] = false;
         break;
+      case FauxDepart.elimine:
+        // Hors de la PARTIE, pas seulement de la manche.
+        enLice[qui] = false;
+        dansLaPartie[qui] = false;
+        final restants = [
+          for (var i = 0; i < 4; i++)
+            if (presents[i] && dansLaPartie[i]) i
+        ];
+        // Un seul survivant : inutile de lui faire jouer les manches
+        // restantes contre personne.
+        if (restants.length == 1) {
+          gagnantParElimination = restants.first;
+          terminer();
+          return;
+        }
+        if (restants.isEmpty) {
+          terminer();
+          return;
+        }
+        break;
       case FauxDepart.tolere:
         return;
     }
@@ -277,14 +329,51 @@ class MoteurReflexe extends ChangeNotifier {
   /// Depuis le résultat : on enchaîne.
   void continuer() {
     if (etape != EtapeReflexe.resultat) return;
+    // Un bris se joue en UNE manche : celui qui l'a remportee gagne la
+    // partie, on ne relance pas.
+    if (brisEgalite) {
+      terminer();
+      return;
+    }
     mancheSuivante();
+  }
+
+  /// LE BRIS D'EGALITE, decide par l'animateur.
+  ///
+  /// Jamais automatique : une soiree peut se terminer sur une egalite, et
+  /// forcer une manche de plus a des gens qui rangent leurs manteaux serait
+  /// penible. Seuls les ex aequo y participent.
+  void lancerBrisDegalite() {
+    if (etape != EtapeReflexe.finie || !egalite) return;
+    final meilleur = scores
+        .asMap()
+        .entries
+        .where((e) => presents[e.key])
+        .map((e) => e.value)
+        .reduce((a, b) => a > b ? a : b);
+
+    brisEgalite = true;
+    motFinal = '';
+    for (var i = 0; i < 4; i++) {
+      dansLaPartie[i] = presents[i] && scores[i] == meilleur;
+    }
+    manche++;
+    _ouvrirLaManche();
   }
 
   void terminer() {
     _arreterMinuteur();
     ble.desarmer();
-    ble.allumerLeds(0);
+    ble.allumerLeds(gagnantParElimination == null
+        ? 0
+        : 1 << gagnantParElimination!);
     etape = EtapeReflexe.finie;
+    motFinal = motDeLaFin(egalite: egalite);
+    if (egalite) {
+      sons?.egalite();
+    } else if (vainqueur != null) {
+      sons?.victoire();
+    }
     notifyListeners();
   }
 
@@ -296,6 +385,10 @@ class MoteurReflexe extends ChangeNotifier {
     manche = 0;
     notifyListeners();
   }
+
+  /// Qui remporte la partie : le survivant s'il y a eu elimination, sinon
+  /// celui qui mene aux points.
+  int? get vainqueur => gagnantParElimination ?? meneur;
 
   /// Le meneur, ou null en cas d'égalité en tête.
   int? get meneur {
@@ -315,6 +408,7 @@ class MoteurReflexe extends ChangeNotifier {
   }
 
   bool get egalite {
+    if (gagnantParElimination != null) return false;
     if (!presents.any((p) => p)) return false;
     return meneur == null;
   }

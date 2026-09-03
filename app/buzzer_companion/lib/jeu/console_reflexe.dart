@@ -27,7 +27,12 @@ const _libellesFauxDepart = {
   ),
   FauxDepart.tolere: (
     nom: 'Toléré',
-    quoi: 'Les appuis avant le signal sont ignorés. Aucune faute n\'est comptée.',
+    quoi: "Les appuis avant le signal sont ignorés. Aucune faute n'est comptée.",
+  ),
+  FauxDepart.elimine: (
+    nom: 'Éliminé de la partie',
+    quoi: "Le plus dur : une seule anticipation et la soirée est finie. S'il ne "
+        "reste qu'un joueur, il gagne sur-le-champ.",
   ),
 };
 
@@ -226,10 +231,18 @@ class _EnManche extends StatelessWidget {
             Text('RÉFLEXE', style: BSType.sectionKicker()),
             const Spacer(),
             Text(
-              moteur.manchesPrevues > 0
-                  ? 'Manche ${moteur.manche} sur ${moteur.manchesPrevues}'
-                  : 'Manche ${moteur.manche}',
-              style: BSType.body(size: 13, color: BSColors.neutral600),
+              // Un bris se joue en plus des manches prevues : le compter
+              // donnerait « manche 3 sur 2 ».
+              moteur.brisEgalite
+                  ? "Bris d'égalité"
+                  : moteur.manchesPrevues > 0
+                      ? 'Manche ${moteur.manche} sur ${moteur.manchesPrevues}'
+                      : 'Manche ${moteur.manche}',
+              style: BSType.body(
+                  size: 13,
+                  color: moteur.brisEgalite
+                      ? BSColors.accent2_700
+                      : BSColors.neutral600),
             ),
           ],
         ),
@@ -402,7 +415,7 @@ class _FinDePartie extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final qui = moteur.meneur;
+    final qui = moteur.vainqueur;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
@@ -422,6 +435,22 @@ class _FinDePartie extends StatelessWidget {
         else
           Text('Plusieurs buzzers sont à égalité.',
               style: BSType.body(size: 17, color: BSColors.neutral700)),
+        if (moteur.gagnantParElimination != null) ...[
+          const SizedBox(height: BSSpace.s2),
+          Text(
+            "Il reste seul en lice : les autres se sont éliminés sur un faux "
+            "départ.",
+            style: BSType.body(size: 17, color: BSColors.accent2_700),
+          ),
+        ],
+        if (moteur.motFinal.isNotEmpty) ...[
+          const SizedBox(height: BSSpace.s3),
+          SizedBox(
+            width: 620,
+            child: Text(moteur.motFinal,
+                style: BSType.body(size: 17, color: BSColors.neutral600)),
+          ),
+        ],
         if (moteur.meilleurTemps != null) ...[
           const SizedBox(height: BSSpace.s3),
           Text('Meilleur temps de la soirée : ${moteur.meilleurTemps} ms',
@@ -430,10 +459,27 @@ class _FinDePartie extends StatelessWidget {
         const SizedBox(height: BSSpace.s6),
         _TableauScores(moteur: moteur, teams: teams),
         const SizedBox(height: BSSpace.s6),
-        BSPrimaryButton(
-            label: 'Nouvelle partie',
-            grand: true,
-            onPressed: moteur.retourAuMenu),
+        // SUR UNE EGALITE, C'EST L'ANIMATEUR QUI DECIDE. Une soiree peut tres
+        // bien se terminer a egalite ; forcer une manche de plus a des gens
+        // qui rangent deja leurs manteaux serait penible.
+        Wrap(
+          spacing: BSSpace.s4,
+          runSpacing: BSSpace.s3,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            if (moteur.egalite)
+              BSPrimaryButton(
+                label: 'Départager',
+                onPressed: moteur.lancerBrisDegalite,
+                grand: true,
+              ),
+            BSSecondaryButton(
+              label: moteur.egalite ? "Accepter l'égalité" : 'Nouvelle partie',
+              onPressed: moteur.retourAuMenu,
+              grand: true,
+            ),
+          ],
+        ),
       ],
     );
   }

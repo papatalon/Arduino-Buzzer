@@ -129,7 +129,11 @@ class PopoutContent extends StatelessWidget {
     );
   }
 
-  String _progressLabel(GameLayout layout) => switch (layout) {
+  String _progressLabel(GameLayout layout) {
+    // Un bris se joue EN PLUS : « manche 3 sur 2 » n'a aucun sens, et le nom
+    // de ce qui se joue vaut mieux qu'un compte faux.
+    if (snapshot.brisEgalite) return "BRIS D'ÉGALITÉ";
+    return switch (layout) {
         GameLayout.quiz => questionProgressLabel(snapshot.questionsAsked, snapshot.qcountValue),
         GameLayout.manches => roundProgressLabel(
             snapshot.gameRound,
@@ -139,7 +143,8 @@ class PopoutContent extends StatelessWidget {
         // Le niveau de Simon est le sujet de l'écran, pas une métadonnée de
         // coin : il est affiché en grand au centre.
         GameLayout.simon => '',
-      };
+    };
+  }
 }
 
 // Image choisie par l'opérateur (voir EventLogo). Un fichier disparu depuis
@@ -193,7 +198,9 @@ class _CenterZone extends StatelessWidget {
     // Fin de partie menée par l'application : le buzzer n'a pas d'écran de
     // fin à montrer, c'est le moteur qui désigne le gagnant.
     if (snapshot.appMene && snapshot.gameFinished) {
-      return _FinPartieZone(snapshot: snapshot);
+      // Le MEME ecran de fin que les autres jeux : une soiree se termine de la
+      // meme facon, quel que soit ce a quoi on vient de jouer.
+      return GameOverZone(snapshot: snapshot);
     }
     return switch (snapshot.flowState) {
       QuestionFlowState.arming => _ArmingZone(snapshot: snapshot),
@@ -473,9 +480,9 @@ class _Scoreboard extends StatelessWidget {
     // jeu jusqu'a la suivante. Montre seulement tant que la question est
     // ouverte : une fois tranchee, tout le monde revient, et garder la
     // mention serait faux.
-    final ouverte = snapshot.flowState == QuestionFlowState.arming ||
-        snapshot.flowState == QuestionFlowState.buzzed;
-    final ecarte = ouverte && i < snapshot.enLice.length && !snapshot.enLice[i];
+    final ecarte = snapshot.mancheOuverte &&
+        i < snapshot.enLice.length &&
+        !snapshot.enLice[i];
     final teinte = ecarte ? BSColors.neutral500 : null;
     return Container(
       color: snapshot.lastBuzz == i ? BSColors.accent100 : null,
@@ -576,53 +583,6 @@ class _SoundRecallZone extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-// Le mot de la fin devant la salle. Seule l'application peut l'afficher :
-// en mode autonome, c'est le LCD du buzzer qui l'annonce.
-class _FinPartieZone extends StatelessWidget {
-  const _FinPartieZone({required this.snapshot});
-  final PopoutSnapshot snapshot;
-
-  @override
-  Widget build(BuildContext context) {
-    final idx = snapshot.gameWinner;
-    final color = (idx != null && idx >= 0 && idx < kBuzzerColors.length)
-        ? kBuzzerColors[idx]
-        : null;
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Text('FIN DE PARTIE', style: BSType.sectionKicker()),
-        const SizedBox(height: BSSpace.s4),
-        if (color != null)
-          FittedBox(
-            fit: BoxFit.scaleDown,
-            child: Text(
-              '${snapshot.teamName(idx!).toUpperCase()} GAGNE',
-              maxLines: 1,
-              style: BSType.heroDigitPopout(size: 96, color: color.fill),
-            ),
-          )
-        else
-          Text(
-            snapshot.gameTie ? 'ÉGALITÉ' : 'AUCUN GAGNANT',
-            style: BSType.heroDigitPopout(size: 96),
-          ),
-        if (snapshot.motFinal.isNotEmpty) ...[
-          const SizedBox(height: BSSpace.s6),
-          SizedBox(
-            width: 1100,
-            child: Text(
-              snapshot.motFinal,
-              textAlign: TextAlign.center,
-              style: BSType.body(size: 34, color: BSColors.neutral700),
-            ),
-          ),
-        ],
-      ],
     );
   }
 }

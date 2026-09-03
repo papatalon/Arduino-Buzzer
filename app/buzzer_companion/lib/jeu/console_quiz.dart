@@ -407,9 +407,13 @@ class _Entete extends StatelessWidget {
       orElse: () => _jeuxQuiz.first,
     );
     final total = moteur.limiteQuestions;
-    final progression = total > 0
-        ? 'Question ${moteur.numeroQuestion} sur $total'
-        : 'Question ${moteur.numeroQuestion}';
+    // Un bris se joue en plus des questions prevues : le compter donnerait
+    // « question 26 sur 25 ».
+    final progression = moteur.brisEgalite
+        ? "Bris d'égalité"
+        : total > 0
+            ? 'Question ${moteur.numeroQuestion} sur $total'
+            : 'Question ${moteur.numeroQuestion}';
     return Row(
       children: [
         Text(jeu.nom.toUpperCase(), style: BSType.sectionKicker()),
@@ -736,10 +740,27 @@ class _FinDePartie extends StatelessWidget {
         const SizedBox(height: BSSpace.s6),
         _TableauScores(moteur: moteur, teams: teams),
         const SizedBox(height: BSSpace.s6),
-        BSPrimaryButton(
-            label: 'Nouvelle partie',
-            onPressed: moteur.retourAuMenu,
-            grand: true),
+        // SUR UNE EGALITE, C'EST L'ANIMATEUR QUI DECIDE. Une soiree peut tres
+        // bien se terminer a egalite ; forcer une manche de plus a des gens
+        // qui rangent deja leurs manteaux serait penible.
+        Wrap(
+          spacing: BSSpace.s4,
+          runSpacing: BSSpace.s3,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            if (moteur.egalite)
+              BSPrimaryButton(
+                label: 'Départager',
+                onPressed: moteur.lancerBrisDegalite,
+                grand: true,
+              ),
+            BSSecondaryButton(
+              label: moteur.egalite ? "Accepter l'égalité" : 'Nouvelle partie',
+              onPressed: moteur.retourAuMenu,
+              grand: true,
+            ),
+          ],
+        ),
       ],
     );
   }

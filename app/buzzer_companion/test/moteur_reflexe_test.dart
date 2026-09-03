@@ -4,6 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:buzzer_companion/jeu/moteur_quiz.dart' show CommandesBuzzer;
 import 'package:buzzer_companion/jeu/moteur_reflexe.dart';
+import 'package:buzzer_companion/jeu/mots_de_la_fin.dart';
 
 // LES RÈGLES DU RÉFLEXE, et surtout les quatre façons de traiter un faux
 // départ. Elles font des soirées différentes : se tromper de comportement se
@@ -290,6 +291,128 @@ void main() {
       expect(moteur.personne, isTrue);
       expect(moteur.gagnant, isNull);
       expect(materiel.desarmements, greaterThan(0));
+    });
+  });
+
+  group('Faux départ : éliminé de la partie', () {
+    setUp(() => moteur = creer(regle: FauxDepart.elimine, manches: 5));
+
+    test('le fautif ne revient pas a la manche suivante', () {
+      moteur.demarrer();
+      moteur.surBuzz(_bleu, 800);
+      expect(moteur.dansLaPartie[_bleu], isFalse);
+
+      donnerLeSignal(moteur);
+      moteur.surBuzz(_rouge, 260);
+      moteur.continuer();
+
+      // Ecarte remettait tout le monde en lice ; eliminer, non.
+      expect(moteur.enLice[_bleu], isFalse);
+      expect(materiel.dernierArmement, 0x0F & ~_bit(_bleu));
+    });
+
+    test('le dernier survivant gagne sur-le-champ', () {
+      moteur.demarrer();
+      moteur.surBuzz(_rouge, 700);
+      moteur.surBuzz(_jaune, 750);
+      expect(moteur.etape, EtapeReflexe.attente);
+
+      moteur.surBuzz(_vert, 800);
+      // Il ne reste que le bleu : inutile de lui faire jouer les manches
+      // restantes contre personne.
+      expect(moteur.etape, EtapeReflexe.finie);
+      expect(moteur.vainqueur, _bleu);
+      expect(moteur.egalite, isFalse);
+      // Il l'emporte MEME SANS POINT : les autres ne sont plus la.
+      expect(moteur.scores[_bleu], 0);
+    });
+
+    test('sa LED reste allumee : la salle voit qui reste', () {
+      moteur.demarrer();
+      for (final qui in [_rouge, _jaune, _vert]) {
+        moteur.surBuzz(qui, 700);
+      }
+      expect(materiel.leds.last, _bit(_bleu));
+    });
+
+    test('le mot de la fin est tire, comme au quiz', () {
+      moteur.demarrer();
+      for (final qui in [_rouge, _jaune, _vert]) {
+        moteur.surBuzz(qui, 700);
+      }
+      expect(moteur.motFinal, isNotEmpty);
+    });
+  });
+
+  group('La fin de partie', () {
+    test('une victoire aux points tire dans la liste des victoires', () {
+      moteur = creer(manches: 1);
+      moteur.demarrer();
+      donnerLeSignal(moteur);
+      moteur.surBuzz(_bleu, 240);
+      moteur.continuer();
+
+      expect(moteur.etape, EtapeReflexe.finie);
+      expect(moteur.vainqueur, _bleu);
+      expect(motsDeVictoire, contains(moteur.motFinal));
+    });
+
+    test('une egalite tire dans la liste des egalites', () {
+      moteur = creer(manches: 1);
+      moteur.demarrer();
+      donnerLeSignal(moteur);
+      moteur.personneNaPese();     // personne ne marque
+      moteur.continuer();
+
+      expect(moteur.etape, EtapeReflexe.finie);
+      expect(moteur.egalite, isTrue);
+      expect(motsDEgalite, contains(moteur.motFinal));
+    });
+  });
+
+  group("Le bris d'égalité", () {
+    test('seuls les ex aequo jouent la manche de depart', () {
+      moteur = creer(manches: 1);
+      moteur.demarrer();
+      donnerLeSignal(moteur);
+      moteur.personneNaPese();      // tout le monde a zero
+      moteur.continuer();
+      expect(moteur.egalite, isTrue);
+
+      moteur.lancerBrisDegalite();
+      expect(moteur.brisEgalite, isTrue);
+      expect(moteur.etape, EtapeReflexe.attente);
+      // Personne n'a marque : les quatre sont ex aequo.
+      expect(materiel.dernierArmement, 0x0F);
+      moteur.dispose();
+    });
+
+    test('celui qui remporte la manche gagne la partie', () {
+      moteur = creer(manches: 1);
+      moteur.demarrer();
+      donnerLeSignal(moteur);
+      moteur.personneNaPese();
+      moteur.continuer();
+      moteur.lancerBrisDegalite();
+
+      donnerLeSignal(moteur);
+      moteur.surBuzz(_vert, 210);
+      moteur.continuer();
+      // Un bris se joue en UNE manche : on ne relance pas.
+      expect(moteur.etape, EtapeReflexe.finie);
+      expect(moteur.vainqueur, _vert);
+      expect(moteur.egalite, isFalse);
+      moteur.dispose();
+    });
+
+    test('rien ne se lance quand il y a deja un gagnant', () {
+      moteur = creer(manches: 1);
+      moteur.demarrer();
+      donnerLeSignal(moteur);
+      moteur.surBuzz(_bleu, 240);
+      moteur.continuer();
+      moteur.lancerBrisDegalite();
+      expect(moteur.brisEgalite, isFalse);
     });
   });
 }
