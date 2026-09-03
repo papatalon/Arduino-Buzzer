@@ -78,6 +78,14 @@ class Sonorisation {
   /// gagne non plus.
   void egalite() => _jouer(locale.playBad, 'B');
 
+  /// Le signal de depart du Duel : un son de buzzer quelconque, et non celui
+  /// d'un des deux duellistes, qui donnerait un indice a son proprietaire.
+  ///
+  /// Un seul haut-parleur, donc les deux l'entendent au meme instant : la
+  /// course reste juste quel que soit le delai de demarrage reel du son, qui
+  /// touche les deux joueurs de facon identique.
+  void signalDuel() => _jouer(locale.playRandomBuzzerSound, 'Z');
+
   /// Tirage au sort animé, au départ d'une manche de Vol.
   void tirage() => _jouer(locale.playSpin, 'R');
 

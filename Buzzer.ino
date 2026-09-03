@@ -210,6 +210,11 @@ PhaseMode getCurrentMode() {
       case 'X':
         mp3.stopNow();    // l'app ecourte : on se tait
         break;
+      case 'Z':
+        // Duel : signal de depart sonore, un son de buzzer quelconque et non
+        // celui d'un des deux duellistes.
+        mp3.playRandomBuzzerSound();
+        break;
     }
   }
 
@@ -248,6 +253,16 @@ PhaseMode getCurrentMode() {
     // instruction (voir AppControl::go).
     int go = BleLink::shared().consumeGo();
     if (go >= 0) {
+      // LE SON DU DUEL PART ICI, pas depuis l'application.
+      //
+      // Quand c'est le haut-parleur du buzzer qui sonne, faire partir le son
+      // et le chrono depuis deux commandes separees ajoutait la latence
+      // Bluetooth entre les deux, inconnue et de plusieurs dizaines de ms.
+      // Ici les deux sont consecutifs, comme dans Duel::setGo du mode
+      // autonome : il ne reste que le delai de demarrage du DFPlayer.
+      if (BleLink::shared().goAvecSon()) {
+        mp3.playRandomBuzzerSound();
+      }
       appControl.go(go);
     }
     appControl.tick();

@@ -30,10 +30,34 @@ enum FauxDepart {
   /// qu'on lui compte ses fautes.
   tolere,
 
+  /// DUEL : la manche est offerte a l'adversaire, qui n'a rien besoin de
+  /// faire. N'a de sens qu'a deux : c'est la regle du Duel sur le buzzer.
+  offreLaManche,
+
   /// ÉLIMINÉ DE LA PARTIE, pas seulement de la manche. Le plus dur : une
   /// seule anticipation et la soirée est finie pour vous. S'il ne reste qu'un
   /// joueur, il l'emporte sur-le-champ, sans jouer les manches restantes.
   elimine,
+}
+
+// DEUX JEUX, UN SEUL MOTEUR.
+//
+// Le Duel est un Reflexe a trois differences pres : exactement deux joueurs,
+// un signal SONORE au lieu des LED, et un faux depart qui offre la manche a
+// l'adversaire. Tout le reste - manches, delai imprevisible, mesure du temps,
+// scores, bris d'egalite, fin de partie - est identique au mot pres.
+//
+// Les separer aurait recopie trois cents lignes pour trois reglages. C'est la
+// duplication qui a coute quatre bogues dans ce projet : deux ecrans de fin,
+// deux instantanes de l'ecran public, deux choix du jeu, deux jeux de lignes
+// de source. Ils sont nommes plutot que caches derriere des booleens.
+enum JeuDeVitesse {
+  /// Signal visuel, de deux a quatre joueurs.
+  reflexe,
+
+  /// Signal SONORE, exactement deux joueurs. Ils peuvent jouer dos a dos,
+  /// les yeux fermes.
+  duel,
 }
 
 enum EtapeReflexe {
@@ -96,6 +120,13 @@ class MoteurReflexe extends ChangeNotifier {
 
   FauxDepart regleFauxDepart = FauxDepart.ecarte;
 
+  /// Lequel des deux jeux ce moteur mene.
+  JeuDeVitesse jeu = JeuDeVitesse.reflexe;
+
+  /// Le Duel se lance au son : les duellistes n'ont pas a regarder les
+  /// boutons, ce qui est tout l'interet du jeu.
+  bool get signalSonore => jeu == JeuDeVitesse.duel;
+
   /// Zéro = sans limite, l'animateur arrête quand il veut.
   int manchesPrevues = 5;
 
@@ -103,7 +134,27 @@ class MoteurReflexe extends ChangeNotifier {
 
   EtapeReflexe etape = EtapeReflexe.repos;
 
-  List<bool> presents = [true, true, true, true];
+  // LES BUZZERS BRANCHES, tels que le materiel les rapporte. Distinct de qui
+  // JOUE cette partie : au Duel, l'animateur choisit deux duellistes parmi
+  // les buzzers presents, et ce choix ne vaut que pour la partie en cours.
+  List<bool> presentsMateriel = [true, true, true, true];
+
+  /// Les duellistes retenus pour CETTE partie, ou null pour « tous ceux qui
+  /// sont branches ». Remis a null en fin de partie : c'est un choix de
+  /// soiree, pas un reglage.
+  List<bool>? selection;
+
+  void retenirSelection(List<bool> choix) {
+    selection = List<bool>.of(choix);
+    notifyListeners();
+  }
+
+  /// Qui joue vraiment : branche ET retenu. Un buzzer debranche en cours de
+  /// partie cesse de jouer, meme s'il avait ete choisi.
+  List<bool> get presents => [
+        for (var i = 0; i < 4; i++)
+          presentsMateriel[i] && (selection == null || selection![i])
+      ];
 
   final List<int> scores = [0, 0, 0, 0];
 
@@ -155,11 +206,19 @@ class MoteurReflexe extends ChangeNotifier {
   /// Vrai quand la partie ne peut plus continuer faute de joueurs.
   bool get aucunJoueur => !presents.any((p) => p);
 
+  int get nombreDeJoueurs => presents.where((p) => p).length;
+
+  /// Le Duel exige EXACTEMENT deux duellistes, comme sur le buzzer. A trois,
+  /// « offrir la manche a l'adversaire » ne veut rien dire.
+  bool get compteDeJoueursValide =>
+      jeu == JeuDeVitesse.duel ? nombreDeJoueurs == 2 : nombreDeJoueurs >= 1;
+
   // --- Déroulement ---------------------------------------------------------
 
-  void demarrer({int? manches, FauxDepart? regle}) {
+  void demarrer({int? manches, FauxDepart? regle, JeuDeVitesse? lequel}) {
     if (manches != null) manchesPrevues = manches;
     if (regle != null) regleFauxDepart = regle;
+    if (lequel != null) jeu = lequel;
     for (var i = 0; i < 4; i++) {
       scores[i] = 0;
     }
@@ -224,7 +283,19 @@ class MoteurReflexe extends ChangeNotifier {
     etape = EtapeReflexe.signal;
     // GO et non LED : le Mega allume et repart son chrono dans la même
     // instruction, donc les temps rapportés partent bien de l'allumage.
-    ble.allumerSignal(_masqueEnLice);
+    //
+    // Au Duel, le signal est le SON : on repart le chrono sans rien allumer,
+    // sinon les duellistes verraient le depart au lieu de l'entendre.
+    //
+    // QUI JOUE LE SON CHANGE LA PRECISION. S'il sort du buzzer, on demande au
+    // Mega de le jouer LUI-MEME dans la commande de depart : lecture et
+    // chrono deviennent consecutifs, et il ne reste que le delai de
+    // demarrage du lecteur. Le faire partir d'ici ajouterait la latence
+    // Bluetooth entre les deux, inconnue et de plusieurs dizaines de ms.
+    final sonSurLeBuzzer = signalSonore && sons != null && !sons!.versLApplication;
+    ble.allumerSignal(signalSonore ? 0 : _masqueEnLice,
+        avecSonDuel: sonSurLeBuzzer);
+    if (signalSonore && !sonSurLeBuzzer) sons?.signalDuel();
     _minuteur = Timer(
         const Duration(milliseconds: delaiReponseMs), personneNaPese);
     notifyListeners();
@@ -274,6 +345,27 @@ class MoteurReflexe extends ChangeNotifier {
       case FauxDepart.ecarte:
         enLice[qui] = false;
         break;
+      case FauxDepart.offreLaManche:
+        // Le Duel se joue a deux : l'adversaire remporte la manche sans avoir
+        // a appuyer. Inutile de le faire courir seul contre personne.
+        final adversaire = [
+          for (var i = 0; i < 4; i++)
+            if (presents[i] && dansLaPartie[i] && i != qui) i
+        ];
+        _arreterMinuteur();
+        enLice[qui] = false;
+        if (adversaire.length == 1) {
+          gagnant = adversaire.first;
+          scores[gagnant!]++;
+          ble.allumerLeds(1 << gagnant!);
+        } else {
+          personne = true;
+          ble.allumerLeds(0);
+        }
+        etape = EtapeReflexe.resultat;
+        ble.desarmer();
+        notifyListeners();
+        return;
       case FauxDepart.elimine:
         // Hors de la PARTIE, pas seulement de la manche.
         enLice[qui] = false;
@@ -383,6 +475,8 @@ class MoteurReflexe extends ChangeNotifier {
     ble.allumerLeds(0);
     etape = EtapeReflexe.repos;
     manche = 0;
+    // Le choix des duellistes ne vaut que pour la partie qui vient de finir.
+    selection = null;
     notifyListeners();
   }
 

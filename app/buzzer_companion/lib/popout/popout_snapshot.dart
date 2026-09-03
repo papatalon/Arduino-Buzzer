@@ -229,20 +229,23 @@ class PopoutSnapshot {
     required List<String> teamNames,
     required String? logoPath,
   }) {
+    final duel = moteur.jeu == JeuDeVitesse.duel;
+    final mode = duel ? 10 : 7;
     final phase = switch (moteur.etape) {
-      EtapeReflexe.attente => 'REFLEX_ARM',
-      EtapeReflexe.signal => 'REFLEX_GO',
-      EtapeReflexe.resultat => 'REFLEX_RESULT',
-      EtapeReflexe.finie => 'REFLEX_OVER',
+      EtapeReflexe.attente => duel ? 'DUEL_ARM' : 'REFLEX_ARM',
+      EtapeReflexe.signal => duel ? 'DUEL_GO' : 'REFLEX_GO',
+      EtapeReflexe.resultat => duel ? 'DUEL_RESULT' : 'REFLEX_RESULT',
+      EtapeReflexe.finie => duel ? 'DUEL_OVER' : 'REFLEX_OVER',
       EtapeReflexe.repos => null,
     };
     return PopoutSnapshot(
       appMene: true,
       phaseJeu: phase == null ? null : kPhaseNames.indexOf(phase),
-      // Reflexe se range dans la mise en page « manches » : ses points sont
-      // les siens, pas ceux d'un quiz precedent.
-      gameMode: 7,
-      displayGameMode: 7,
+      // Reflexe (7) et Duel (10) se rangent tous deux dans la mise en page
+      // « manches » : leurs points sont les leurs, pas ceux d'un quiz
+      // precedent. L'ecran public a deja une zone pour chacun.
+      gameMode: mode,
+      displayGameMode: mode,
       scores: const [0, 0, 0, 0],
       gameScores: List<int>.of(moteur.scores),
       present: List<bool>.of(moteur.presents),
@@ -257,9 +260,16 @@ class PopoutSnapshot {
       gameTie: moteur.etape == EtapeReflexe.finie && moteur.egalite,
       gameFinished: moteur.etape == EtapeReflexe.finie,
       motFinal: moteur.motFinal,
-      reflexWinner: moteur.gagnant,
-      reflexMs: moteur.tempsGagnant,
-      reflexBestMs: moteur.meilleurTemps,
+      reflexWinner: duel ? null : moteur.gagnant,
+      reflexMs: duel ? null : moteur.tempsGagnant,
+      reflexBestMs: duel ? null : moteur.meilleurTemps,
+      // L'ecran du Duel a ses propres champs : il met les deux duellistes
+      // face a face, ce que la zone du Reflexe ne fait pas.
+      duelPlayerA: duel ? _premierPresent(moteur.presents) : null,
+      duelPlayerB: duel ? _dernierPresent(moteur.presents) : null,
+      duelWinner: duel ? moteur.gagnant : null,
+      duelMs: duel ? moteur.tempsGagnant : null,
+      duelFalseStarter: duel ? _premierFautif(moteur.fautifs) : null,
       reflexFalseStarts: [
         for (var i = 0; i < 4; i++)
           if (moteur.fautifs[i]) i
@@ -504,4 +514,27 @@ class PopoutSnapshot {
         'recallIndex': recallIndex,
         'logoPath': logoPath,
       });
+}
+
+// Les deux duellistes se deduisent des buzzers presents, comme le fait le
+// firmware : le jeu exige exactement deux joueurs, peu importe lesquels.
+int? _premierPresent(List<bool> presents) {
+  for (var i = 0; i < presents.length; i++) {
+    if (presents[i]) return i;
+  }
+  return null;
+}
+
+int? _dernierPresent(List<bool> presents) {
+  for (var i = presents.length - 1; i >= 0; i--) {
+    if (presents[i]) return i;
+  }
+  return null;
+}
+
+int? _premierFautif(List<bool> fautifs) {
+  for (var i = 0; i < fautifs.length; i++) {
+    if (fautifs[i]) return i;
+  }
+  return null;
 }

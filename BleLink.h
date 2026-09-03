@@ -83,6 +83,8 @@ class BleLink {
     // attente. Consommee une seule fois.
     int consumeLeds();
     int consumeGo();
+    // Vrai quand le GO consomme demandait aussi le son de depart du Duel.
+    bool goAvecSon();
 
     // Retourne le masque de presence demande par un "SET_PRESENT|<n>" recu
     // depuis le dernier appel (bit 0 = rouge ... bit 3 = vert), ou -1 si
@@ -129,6 +131,7 @@ class BleLink {
     bool _pendingArmContinu = false;
     int _pendingLeds = -1;
     int _pendingGo = -1;
+    bool _pendingGoSon = false;
     int _pendingPresenceMask = -1;
     bool _appSoundBusy = false;
     bool _appHandlesSound = true;

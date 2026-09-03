@@ -167,7 +167,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp> {
     final vu = _game.present;
     if (listEquals(vu, _moteur.presents)) return;
     _moteur.presents = List<bool>.of(vu);
-    _reflexe.presents = List<bool>.of(vu);
+    _reflexe.presentsMateriel = List<bool>.of(vu);
   }
 
   void _handleSfx(SfxEvent event) {

@@ -27,11 +27,16 @@ abstract class CommandesBuzzer {
   /// LE SIGNAL DE DEPART du Reflexe et du Duel : allume ces LED ET repart le
   /// chrono de reaction, dans la meme instruction cote Mega.
   ///
+  /// [avecSonDuel] demande au Mega de jouer AUSSI le son de depart, juste
+  /// avant de repartir le chrono. Sert quand le son sort du haut-parleur du
+  /// buzzer : le faire partir depuis l'application ajouterait la latence
+  /// Bluetooth entre le son et le chrono.
+  ///
   /// Distinct de [allumerLeds] parce que la latence Bluetooth de la commande
   /// est inconnue, de 30 a 100 ms. Si l'application allumait puis comptait de
   /// son cote, cette latence s'ajouterait a tous les temps de reaction, qui
   /// se jouent entre 150 et 400 ms.
-  void allumerSignal(int masque);
+  void allumerSignal(int masque, {bool avecSonDuel = false});
 }
 
 // LE MOTEUR DE JEU DE L'APPLICATION.

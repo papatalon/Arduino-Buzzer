@@ -33,7 +33,8 @@ class _Materiel implements CommandesBuzzer {
   @override
   void allumerLeds(int masque) => leds.add(masque);
   @override
-  void allumerSignal(int masque) => signaux.add(masque);
+  void allumerSignal(int masque, {bool avecSonDuel = false}) =>
+      signaux.add(masque);
 }
 
 const _rouge = 0, _bleu = 1, _jaune = 2, _vert = 3;

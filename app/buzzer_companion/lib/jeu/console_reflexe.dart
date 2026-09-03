@@ -29,6 +29,11 @@ const _libellesFauxDepart = {
     nom: 'Toléré',
     quoi: "Les appuis avant le signal sont ignorés. Aucune faute n'est comptée.",
   ),
+  FauxDepart.offreLaManche: (
+    nom: "La manche va à l'adversaire",
+    quoi: "La règle du Duel. Celui qui anticipe offre la manche à l'autre, "
+        "qui n'a rien besoin de faire.",
+  ),
   FauxDepart.elimine: (
     nom: 'Éliminé de la partie',
     quoi: "Le plus dur : une seule anticipation et la soirée est finie. S'il ne "
@@ -56,8 +61,10 @@ class ConsoleReflexe extends StatelessWidget {
         child: Align(
           alignment: Alignment.topLeft,
           child: switch (moteur.etape) {
-            EtapeReflexe.repos =>
-              _Lancement(moteur: moteur, onChangerDeJeu: onChangerDeJeu),
+            EtapeReflexe.repos => _Lancement(
+                moteur: moteur,
+                teams: teams,
+                onChangerDeJeu: onChangerDeJeu),
             EtapeReflexe.finie => _FinDePartie(moteur: moteur, teams: teams),
             _ => _EnManche(moteur: moteur, teams: teams),
           },
@@ -70,8 +77,13 @@ class ConsoleReflexe extends StatelessWidget {
 // --- Avant la partie -----------------------------------------------------
 
 class _Lancement extends StatefulWidget {
-  const _Lancement({required this.moteur, required this.onChangerDeJeu});
+  const _Lancement({
+    required this.moteur,
+    required this.teams,
+    required this.onChangerDeJeu,
+  });
   final MoteurReflexe moteur;
+  final TeamNames teams;
   final VoidCallback onChangerDeJeu;
 
   @override
@@ -82,17 +94,72 @@ class _LancementState extends State<_Lancement> {
   late int _manches = widget.moteur.manchesPrevues;
   late FauxDepart _regle = widget.moteur.regleFauxDepart;
 
+  /// LES DUELLISTES SE DESIGNENT, ils ne se retirent pas.
+  ///
+  /// La liste part VIDE : « Qui se bat ? » pose un choix positif, et
+  /// commencer avec tout le monde coche transformait la reponse en
+  /// elimination. Un troisieme clic remplace le plus ancien plutot que
+  /// d'etre refuse : refuser oblige a decocher d'abord, pour rien.
+  ///
+  /// Rien n'est applique au moteur avant « Lancer la partie » : cet ecran
+  /// est un formulaire, pas une telecommande.
+  final List<int> _duellistes = [];
+
+  @override
+  void initState() {
+    super.initState();
+    // Le Duel n'a qu'une regle de faux depart : la reprendre du moteur
+    // laisserait une regle de Reflexe selectionnee et invisible.
+    if (widget.moteur.jeu == JeuDeVitesse.duel) {
+      _regle = FauxDepart.offreLaManche;
+    } else if (_regle == FauxDepart.offreLaManche) {
+      _regle = FauxDepart.ecarte;
+    }
+  }
+
+  bool get _estDuel => widget.moteur.jeu == JeuDeVitesse.duel;
+
+  // Au Duel, il en faut exactement deux ; au Reflexe, au moins un buzzer
+  // branche suffit.
+  bool get _pret => _estDuel
+      ? _duellistes.length == 2
+      : widget.moteur.presentsMateriel.any((p) => p);
+
+  void _basculerDuelliste(int i) {
+    setState(() {
+      if (_duellistes.remove(i)) return;
+      // Le troisieme chasse le plus ancien : on comprend tout de suite qu'on
+      // vient de changer d'avis, sans avoir a decocher.
+      if (_duellistes.length >= 2) _duellistes.removeAt(0);
+      _duellistes.add(i);
+    });
+  }
+
+  void _lancer() {
+    if (_estDuel) {
+      widget.moteur.retenirSelection([
+        for (var i = 0; i < 4; i++) _duellistes.contains(i),
+      ]);
+    }
+    widget.moteur.demarrer(manches: _manches, regle: _regle);
+  }
+
   @override
   Widget build(BuildContext context) {
+    final duel = _estDuel;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text('Réflexe', style: BSType.questionConsole()),
+        Text(duel ? 'Duel' : 'Réflexe', style: BSType.questionConsole()),
         const SizedBox(height: BSSpace.s2),
         Text(
-          'Les boutons s\'éteignent, un délai imprévisible passe, puis tout '
-          's\'allume. Le premier à peser remporte la manche.',
+          duel
+              ? "Un son part au hasard. Le premier des deux duellistes a peser "
+                  "remporte la manche. Ils peuvent jouer dos à dos, les yeux "
+                  "fermés."
+              : "Les boutons s'éteignent, un délai imprévisible passe, puis "
+                  "tout s'allume. Le premier à peser remporte la manche.",
           style: BSType.body(size: 17, color: BSColors.neutral700),
         ),
         const SizedBox(height: BSSpace.s3),
@@ -100,6 +167,22 @@ class _LancementState extends State<_Lancement> {
         const SizedBox(height: BSSpace.s4),
         Container(height: 2, color: BSColors.text),
         const SizedBox(height: BSSpace.s4),
+
+        // LES DUELLISTES SE CHOISISSENT ICI, et pour cette partie seulement.
+        // L'ecran Buzzers dit qui est BRANCHE ; ici on dit qui joue. Passer
+        // par la-bas pour retirer deux buzzers, puis les remettre apres, serait
+        // un detour absurde pour une manche.
+        if (duel) ...[
+          Text('QUI SE BAT', style: BSType.sectionKicker()),
+          const SizedBox(height: BSSpace.s2),
+          _ChoixDuellistes(
+            moteur: widget.moteur,
+            teams: widget.teams,
+            retenus: _duellistes,
+            onBascule: _basculerDuelliste,
+          ),
+          const SizedBox(height: BSSpace.s6),
+        ],
 
         Text('COMBIEN DE MANCHES', style: BSType.sectionKicker()),
         const SizedBox(height: BSSpace.s3),
@@ -114,7 +197,13 @@ class _LancementState extends State<_Lancement> {
         // c'est la salle qui décide, pas le code.
         Text('UN APPUI AVANT LE SIGNAL', style: BSType.sectionKicker()),
         const SizedBox(height: BSSpace.s2),
-        for (final entree in _libellesFauxDepart.entries) ...[
+        // « Offre la manche » ne se propose QU'AU DUEL : a trois ou quatre,
+        // offrir la manche « a l'adversaire » ne veut rien dire. Et le Duel ne
+        // propose que celle-la : c'est sa regle sur le buzzer.
+        for (final entree in _libellesFauxDepart.entries.where((e) =>
+            duel
+                ? e.key == FauxDepart.offreLaManche
+                : e.key != FauxDepart.offreLaManche)) ...[
           _CarteRegle(
             nom: entree.value.nom,
             quoi: entree.value.quoi,
@@ -128,14 +217,16 @@ class _LancementState extends State<_Lancement> {
         BSPrimaryButton(
           label: 'Lancer la partie',
           grand: true,
-          onPressed: widget.moteur.aucunJoueur
-              ? null
-              : () => widget.moteur.demarrer(manches: _manches, regle: _regle),
+          onPressed: _pret ? _lancer : null,
         ),
-        if (widget.moteur.aucunJoueur) ...[
+        if (!_pret) ...[
           const SizedBox(height: BSSpace.s2),
-          Text('Aucun buzzer en jeu.',
-              style: BSType.body(size: 15, color: BSColors.neutral600)),
+          Text(
+            duel
+                ? 'Désignez les deux duellistes.'
+                : 'Aucun buzzer branché.',
+            style: BSType.body(size: 15, color: BSColors.neutral600),
+          ),
         ],
       ],
     );
@@ -228,7 +319,8 @@ class _EnManche extends StatelessWidget {
       children: [
         Row(
           children: [
-            Text('RÉFLEXE', style: BSType.sectionKicker()),
+            Text(moteur.jeu == JeuDeVitesse.duel ? 'DUEL' : 'RÉFLEXE',
+                style: BSType.sectionKicker()),
             const Spacer(),
             Text(
               // Un bris se joue en plus des manches prevues : le compter
@@ -480,6 +572,85 @@ class _FinDePartie extends StatelessWidget {
             ),
           ],
         ),
+      ],
+    );
+  }
+}
+
+// Les deux duellistes, choisis pour la partie en cours.
+//
+// Un buzzer débranché ne s'affiche pas : on ne peut pas faire jouer ce qui
+// n'est pas là, et l'estomper poserait une question à laquelle l'écran ne
+// répond pas. Pour le rebrancher, c'est l'écran Buzzers.
+class _ChoixDuellistes extends StatelessWidget {
+  const _ChoixDuellistes({
+    required this.moteur,
+    required this.teams,
+    required this.retenus,
+    required this.onBascule,
+  });
+
+  final MoteurReflexe moteur;
+  final TeamNames teams;
+  final List<int> retenus;
+  final ValueChanged<int> onBascule;
+
+  @override
+  Widget build(BuildContext context) {
+    final branches = [
+      for (var i = 0; i < 4; i++)
+        if (moteur.presentsMateriel[i]) i
+    ];
+    if (branches.isEmpty) {
+      return Text('Aucun buzzer branché.',
+          style: BSType.body(size: 15, color: BSColors.neutral600));
+    }
+    return Wrap(
+      spacing: BSSpace.s2,
+      runSpacing: BSSpace.s2,
+      children: [
+        for (final i in branches)
+          InkWell(
+            onTap: () => onBascule(i),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 9),
+              decoration: BoxDecoration(
+                color: retenus.contains(i)
+                    ? BSColors.accent100
+                    : Colors.transparent,
+                border: Border.all(
+                  color:
+                      retenus.contains(i) ? BSColors.accent : BSColors.divider,
+                  width: retenus.contains(i) ? 2 : 1,
+                ),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Container(
+                    width: 14,
+                    height: 14,
+                    color: retenus.contains(i)
+                        ? kBuzzerColors[i].fill
+                        : BSColors.neutral300,
+                  ),
+                  const SizedBox(width: 8),
+                  Text(
+                    teams.nameFor(i),
+                    style: BSType.body(
+                      size: 15,
+                      color: retenus.contains(i)
+                          ? BSColors.text
+                          : BSColors.neutral600,
+                    ).copyWith(
+                        fontWeight: retenus.contains(i)
+                            ? FontWeight.w600
+                            : FontWeight.normal),
+                  ),
+                ],
+              ),
+            ),
+          ),
       ],
     );
   }

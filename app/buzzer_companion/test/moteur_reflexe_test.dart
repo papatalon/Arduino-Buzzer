@@ -3,6 +3,10 @@ import 'dart:math';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:buzzer_companion/jeu/moteur_quiz.dart' show CommandesBuzzer;
+import 'package:buzzer_companion/audio/sonorisation.dart';
+import 'package:buzzer_companion/audio/sound_engine.dart';
+import 'package:buzzer_companion/audio/sound_library.dart';
+import 'package:buzzer_companion/ble_link_service.dart';
 import 'package:buzzer_companion/jeu/moteur_reflexe.dart';
 import 'package:buzzer_companion/jeu/mots_de_la_fin.dart';
 
@@ -17,6 +21,9 @@ import 'package:buzzer_companion/jeu/mots_de_la_fin.dart';
 class _Materiel implements CommandesBuzzer {
   final List<int> armements = [];
   final List<int> signaux = [];
+
+  /// Vrai quand le dernier signal demandait au Mega de jouer le son lui-meme.
+  bool dernierGoAvecSon = false;
   final List<int> leds = [];
   int desarmements = 0;
 
@@ -39,7 +46,10 @@ class _Materiel implements CommandesBuzzer {
   void allumerLeds(int masque) => leds.add(masque);
 
   @override
-  void allumerSignal(int masque) => signaux.add(masque);
+  void allumerSignal(int masque, {bool avecSonDuel = false}) {
+    signaux.add(masque);
+    dernierGoAvecSon = avecSonDuel;
+  }
 }
 
 const _rouge = 0, _bleu = 1, _jaune = 2, _vert = 3;
@@ -126,7 +136,7 @@ void main() {
 
     test('un buzzer absent ne joue pas', () {
       moteur = creer();
-      moteur.presents = [true, false, true, true];
+      moteur.presentsMateriel = [true, false, true, true];
       moteur.demarrer();
       expect(materiel.dernierArmement, 0x0F & ~_bit(_bleu));
       donnerLeSignal(moteur);
@@ -413,6 +423,139 @@ void main() {
       moteur.continuer();
       moteur.lancerBrisDegalite();
       expect(moteur.brisEgalite, isFalse);
+    });
+  });
+
+  group('Le Duel', () {
+    // Duel : meme moteur, trois differences. Deux joueurs, signal SONORE, et
+    // un faux depart qui offre la manche a l'adversaire.
+    MoteurReflexe creerDuel() {
+      materiel = _Materiel();
+      return MoteurReflexe(ble: materiel, hasard: Random(1))
+        ..presentsMateriel = [true, false, false, true]   // rouge contre vert
+        ..manchesPrevues = 3
+        ..jeu = JeuDeVitesse.duel
+        ..regleFauxDepart = FauxDepart.offreLaManche;
+    }
+
+    test("le signal n'allume RIEN : il s'entend", () {
+      moteur = creerDuel();
+      moteur.demarrer();
+      donnerLeSignal(moteur);
+      // Le chrono repart quand meme (GO), mais sans lumiere : les duellistes
+      // jouent dos a dos, les yeux fermes.
+      expect(materiel.signaux.last, 0);
+    });
+
+    test('le Reflexe, lui, allume bien ses buzzers', () {
+      moteur = creer();
+      moteur.demarrer();
+      donnerLeSignal(moteur);
+      expect(materiel.signaux.last, 0x0F);
+    });
+
+    test("un faux depart offre la manche a l'adversaire", () {
+      moteur = creerDuel();
+      moteur.demarrer();
+      moteur.surBuzz(_rouge, 700);   // avant le signal
+
+      // L'adversaire gagne sans avoir a appuyer : le faire courir seul
+      // contre personne n'aurait aucun sens.
+      expect(moteur.etape, EtapeReflexe.resultat);
+      expect(moteur.gagnant, _vert);
+      expect(moteur.scores[_vert], 1);
+      expect(moteur.scores[_rouge], 0);
+      expect(materiel.leds.last, _bit(_vert));
+    });
+
+    test('sinon, le premier a peser gagne comme au Reflexe', () {
+      moteur = creerDuel();
+      moteur.demarrer();
+      donnerLeSignal(moteur);
+      moteur.surBuzz(_vert, 230);
+      expect(moteur.gagnant, _vert);
+      expect(moteur.tempsGagnant, 230);
+    });
+
+    test('le Duel exige exactement deux duellistes', () {
+      moteur = creerDuel();
+      expect(moteur.compteDeJoueursValide, isTrue);
+
+      moteur.presentsMateriel = [true, true, false, true];
+      expect(moteur.compteDeJoueursValide, isFalse);
+
+      moteur.presentsMateriel = [true, false, false, false];
+      expect(moteur.compteDeJoueursValide, isFalse);
+    });
+
+    test('le Reflexe se contente de ce qu\'il y a', () {
+      moteur = creer();
+      moteur.presentsMateriel = [true, false, false, false];
+      expect(moteur.compteDeJoueursValide, isTrue);
+    });
+  });
+
+  group('Duel : qui joue le son de depart', () {
+    // CE CHOIX DECIDE DE LA PRECISION. Si le son sort du buzzer, le Mega doit
+    // le jouer LUI-MEME dans la commande de depart : lecture et chrono
+    // deviennent consecutifs. Le faire partir de l'application ajouterait la
+    // latence Bluetooth entre les deux, inconnue et de plusieurs dizaines de
+    // ms sur une reaction qui en fait deux cents.
+    Sonorisation creerSortie({required bool versApp}) {
+      final ble = BleLinkService()..appHandlesSound = versApp;
+      return Sonorisation(
+        locale: SoundEngine(library: SoundLibrary(), onBusyChanged: (_) {}),
+        ble: ble,
+      );
+    }
+
+    test('son sur le buzzer : le Mega le joue dans la commande de depart', () {
+      materiel = _Materiel();
+      final m = MoteurReflexe(
+        ble: materiel,
+        sons: creerSortie(versApp: false),
+        hasard: Random(1),
+      )
+        ..presentsMateriel = [true, false, false, true]
+        ..jeu = JeuDeVitesse.duel;
+      m.demarrer();
+      m.donnerLeSignal();
+
+      expect(materiel.dernierGoAvecSon, isTrue);
+      m.dispose();
+    });
+
+    test("son sur le PC : l'application le joue, le Mega ne fait que le chrono",
+        () {
+      materiel = _Materiel();
+      final m = MoteurReflexe(
+        ble: materiel,
+        sons: creerSortie(versApp: true),
+        hasard: Random(1),
+      )
+        ..presentsMateriel = [true, false, false, true]
+        ..jeu = JeuDeVitesse.duel;
+      m.demarrer();
+      m.donnerLeSignal();
+
+      expect(materiel.dernierGoAvecSon, isFalse);
+      m.dispose();
+    });
+
+    test('au Reflexe, jamais de son dans le signal', () {
+      materiel = _Materiel();
+      final m = MoteurReflexe(
+        ble: materiel,
+        sons: creerSortie(versApp: false),
+        hasard: Random(1),
+      );
+      m.demarrer();
+      m.donnerLeSignal();
+
+      expect(materiel.dernierGoAvecSon, isFalse);
+      // Et ses buzzers s'allument, eux.
+      expect(materiel.signaux.last, 0x0F);
+      m.dispose();
     });
   });
 }

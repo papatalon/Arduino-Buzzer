@@ -22,7 +22,7 @@ class _MaterielMuet implements CommandesBuzzer {
   @override
   void allumerLeds(int masque) {}
   @override
-  void allumerSignal(int masque) {}
+  void allumerSignal(int masque, {bool avecSonDuel = false}) {}
 }
 
 void main() {

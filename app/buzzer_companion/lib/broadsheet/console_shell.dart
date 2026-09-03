@@ -438,8 +438,13 @@ class _CenterColumn extends StatelessWidget {
     // en pleine question.
     // REFLEXE : sa propre console, avec ses propres regles. Elle passe avant
     // celle du quiz des que le jeu retenu est le sien.
+    // REFLEXE et DUEL : le meme moteur, la meme console. Ils passent avant
+    // celle du quiz des que le jeu retenu est l'un des deux.
+    final vitesse = moteur.jeuChoisi == 7 || moteur.jeuChoisi == 10;
     if (reflexe.etape != EtapeReflexe.repos ||
-        (isAppControl(game.phase) && moteur.jeuChoisi == 7)) {
+        (isAppControl(game.phase) && vitesse)) {
+      reflexe.jeu =
+          moteur.jeuChoisi == 10 ? JeuDeVitesse.duel : JeuDeVitesse.reflexe;
       return ConsoleReflexe(
         moteur: reflexe,
         teams: teams,

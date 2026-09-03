@@ -78,7 +78,7 @@ char BleLink::pollKey() {
         // partie mais que le son doit sortir du haut-parleur du buzzer.
         bool sansBuzzer = (action == 'S' || action == 'W' || action == 'G' ||
                            action == 'B' || action == 'R' || action == 'I' ||
-                           action == 'X');
+                           action == 'X' || action == 'Z');
         if (sansBuzzer || (who >= 0 && who < 4)) {
           _pendingSoundCommand = action;
           _pendingSoundBuzzer = who;
@@ -104,9 +104,12 @@ char BleLink::pollKey() {
       } else if (_rxBuffer == "DISARM") {
         _pendingArm = 0;
       } else if (_rxBuffer.startsWith("GO|")) {
+        // "GO|<masque>" ou "GO|<masque>|S" : le suffixe demande de jouer le son
+        // de depart du Duel ICI, juste avant de repartir le chrono.
         int m = _rxBuffer.substring(3).toInt();
         if (m >= 0 && m < 16) {
           _pendingGo = m;
+          _pendingGoSon = _rxBuffer.endsWith("|S");
         }
       } else if (_rxBuffer.startsWith("LED|")) {
         int m = _rxBuffer.substring(4).toInt();
@@ -184,6 +187,10 @@ int BleLink::consumeGo() {
   int v = _pendingGo;
   _pendingGo = -1;
   return v;
+}
+
+bool BleLink::goAvecSon() {
+  return _pendingGoSon;
 }
 
 int BleLink::consumeStartGame() {
