@@ -23,11 +23,25 @@ void LcdDisplay::clear() {
   setText(F(""), 3);
 }
 
-void LcdDisplay::setText(String text, int line) {
+// Texte en flash : recopie directe vers le tampon, sans construire de String.
+void LcdDisplay::setText(const __FlashStringHelper* text, int line) {
+  if (line < 0 || line > 3) return;
+  strncpy_P(messages[line], (PGM_P)text, LCD_MSG_MAX);
+  messages[line][LCD_MSG_MAX] = '\0';
+  storeAndPaint(line);
+}
 
-  text = removeAccents(text);
+// Texte assemble a l'execution.
+void LcdDisplay::setText(const String& text, int line) {
+  if (line < 0 || line > 3) return;
+  strncpy(messages[line], text.c_str(), LCD_MSG_MAX);
+  messages[line][LCD_MSG_MAX] = '\0';
+  storeAndPaint(line);
+}
 
-  messages[line] = text;
+void LcdDisplay::storeAndPaint(int line) {
+
+  removeAccentsInPlace(messages[line]);
   offsets[line] = 0;
 
   // Ecran fige sur l'ASCII art "controle par l'app" : on memorise quand
@@ -38,16 +52,16 @@ void LcdDisplay::setText(String text, int line) {
   // dans une phase stable (ex. WAITING_BUZZER).
   if (_controlOverrideActive) return;
 
-  displayText(text, line);
+  displayText(messages[line], line);
 
 }
 
-void LcdDisplay::displayText(String text, int line) {
+void LcdDisplay::displayText(const char* text, int line) {
 
   lcd.setCursor(0, line);
-  lcd.print("                    ");
+  lcd.print(F("                    "));
   lcd.setCursor(0, line);
-  lcd.print(text.substring(0, 20));
+  for (int i = 0; i < LCD_COLS && text[i]; i++) lcd.write(text[i]);
 
   // Repere "pas de lecteur audio" : repeint apres le texte pour survivre
   // a n'importe quel ecran de jeu (chacun redessine ses 4 lignes de zero,
@@ -78,26 +92,29 @@ void LcdDisplay::updateScrolling() {
   previousMillis = currentMillis;
 
   for(int i = 0; i < 4; i++) {
-    String message = messages[i];
-    int offset = offsets[i];
-
-    int textWidth = message.length();
-    if(textWidth <= 20) {
+    int len = strlen(messages[i]);
+    if (len <= LCD_COLS) {
       continue;
     }
 
-    message += "  ";
+    // Deux espaces separent la fin du message de son debut, sinon le texte
+    // se recolle a lui-meme et devient illisible au raccord.
+    const int total = len + 2;
 
-    // Construit la chaîne à afficher pour donner l'effet ticker
-    String messageDisplay = message.substring(offset) + 
-                          message.substring(0, offset);
-
-    displayText(messageDisplay, i);
-    offsets[i]++;
-
-    if (offsets[i] >= message.length()) {
-        offsets[i] = 0;
+    // La fenetre de 20 colonnes est composee caractere par caractere depuis
+    // le tampon, en enroulant l'index. L'ancienne version construisait la
+    // meme chose avec une copie, une concatenation et deux sous-chaines,
+    // soit quatre allocations par ligne et par tour — trois fois par
+    // seconde, indefiniment.
+    char window[LCD_COLS + 1];
+    for (int c = 0; c < LCD_COLS; c++) {
+      int idx = (offsets[i] + c) % total;
+      window[c] = (idx < len) ? messages[i][idx] : ' ';
     }
+    window[LCD_COLS] = '\0';
+
+    displayText(window, i);
+    offsets[i] = (offsets[i] + 1) % total;
 
   }
 }
@@ -192,50 +209,48 @@ void LcdDisplay::setControlOverride(bool active) {
 
   lcd.clear();
 
-  String cadre = "";
-  for (int i = 0; i < 20; i++) cadre += '#';
-
   lcd.setCursor(0, 0);
-  lcd.print(cadre);
+  lcd.print(F("####################"));
   lcd.setCursor(0, 3);
-  lcd.print(cadre);
+  lcd.print(F("####################"));
 
   // Colonne 0 et 19 : le cadre. Colonne 3 : le cadenas. Colonnes 5 a 18 :
   // quatorze caracteres de texte, la largeur de « CLAVIER BLOQUE ».
   lcd.setCursor(0, 1);
-  lcd.print("#  ");
+  lcd.print(F("#  "));
   lcd.write(byte(0));
-  lcd.print(" L'APP MENE    #");
+  lcd.print(F(" L'APP MENE    #"));
   lcd.setCursor(0, 2);
-  lcd.print("#  ");
+  lcd.print(F("#  "));
   lcd.write(byte(1));
-  lcd.print(" CLAVIER BLOQUE#");
+  lcd.print(F(" CLAVIER BLOQUE#"));
 }
 
-// Centre un texte (deja sans accents) sur 20 colonnes, tronque s'il est
-// trop long.
-String LcdDisplay::centerLine(String text) {
-  int len = text.length();
-  if (len >= 20) return text.substring(0, 20);
-  int left = (20 - len) / 2;
-  int right = 20 - len - left;
-  String out = "";
-  for (int i = 0; i < left; i++) out += ' ';
-  out += text;
-  for (int i = 0; i < right; i++) out += ' ';
-  return out;
-}
-
-String LcdDisplay::removeAccents(String text) {
-  text.replace("é", "e");
-  text.replace("è", "e");
-  text.replace("à", "a");
-  text.replace("ç", "c");
-  text.replace("ê", "e");
-  text.replace("â", "a");
-  text.replace("î", "i");
-  text.replace("ô", "o");
-  text.replace("û", "u");
-  // Ajoute d'autres remplacements selon tes besoins
-  return text;
+// Remplace sur place les lettres accentuees par leur equivalent ASCII.
+//
+// Les accents arrivent en UTF-8, donc sur DEUX octets : 0xC3 suivi d'un
+// second octet qui designe la lettre. On ecrit un seul octet a la place, ce
+// qui raccourcit la chaine — d'ou le curseur d'ecriture w distinct du
+// curseur de lecture r.
+//
+// L'ancienne version enchainait neuf String::replace, chacun reconstruisant
+// la chaine entiere sur le tas.
+void LcdDisplay::removeAccentsInPlace(char* s) {
+  char* w = s;
+  for (char* r = s; *r; ) {
+    if ((unsigned char)*r == 0xC3 && r[1]) {
+      char rep = 0;
+      switch ((unsigned char)r[1]) {
+        case 0xA0: case 0xA2: case 0xA4: rep = 'a'; break;   // a a a
+        case 0xA7:                       rep = 'c'; break;   // c
+        case 0xA8: case 0xA9: case 0xAA: case 0xAB: rep = 'e'; break;
+        case 0xAE: case 0xAF:            rep = 'i'; break;   // i i
+        case 0xB4: case 0xB6:            rep = 'o'; break;   // o o
+        case 0xB9: case 0xBB: case 0xBC: rep = 'u'; break;   // u u u
+      }
+      if (rep) { *w++ = rep; r += 2; continue; }
+    }
+    *w++ = *r++;
+  }
+  *w = '\0';
 }
