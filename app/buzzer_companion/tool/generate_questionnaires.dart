@@ -120,8 +120,14 @@ void main(List<String> args) {
   qDir.createSync(recursive: true);
 
   // Un fichier par catégorie, découpé en manches de 25.
+  //
+  // ÉTALÉ AVANT D'ÊTRE DÉCOUPÉ. La banque est écrite par grappes (les
+  // « Combien de… », puis les inventeurs, puis les peintres), et découper le
+  // fichier dans son ordre donnait des manches qui posaient trois questions
+  // sur Jules Verne d'affilée. Graine dérivée du nom : régénérer redonne les
+  // mêmes fichiers.
   for (final entry in parCategorie.entries) {
-    _writeParts(entry.key, entry.value,
+    _writeParts(entry.key, _etaler(entry.value, Random(_graine(entry.key))),
         note: 'Banque du buzzer, catégorie ${entry.key}.',
         emoji: kEmojiCategories[entry.key] ?? '');
   }
@@ -169,7 +175,7 @@ void main(List<String> args) {
   // Musique et le Grincheux dans Cinéma. Aucune catégorie du firmware ne
   // sait faire ça, c'est tout l'intérêt.
   for (final theme in kThemes) {
-    final trouvees = all.where(theme.matches).toList()..shuffle(Random(theme.name.length * 13));
+    final trouvees = _etaler(all.where(theme.matches).toList(), Random(_graine(theme.name)));
     if (trouvees.length < 12) {
       stdout.writeln('  (ignoré : ${theme.name}, seulement ${trouvees.length} questions)');
       continue;
@@ -908,12 +914,71 @@ List<List<Entry>> _equilibreSeries(
     }
     // Remélangée : sinon la ronde enchaînerait ses questions catégorie par
     // catégorie, dans le même ordre à chaque fois.
-    ronde.shuffle(rnd);
-    rondes.add(ronde);
+    rondes.add(_etaler(ronde, rnd));
     decalage = (decalage + reste) % noms.length;
   }
   return rondes;
 }
+
+// Graine reproductible tirée d'un nom. Pas la longueur du nom : « Québec »
+// et « Sports » en ont la même, et brassaient donc pareil.
+int _graine(String nom) => nom.codeUnits.fold(17, (h, c) => (h * 31 + c) & 0x7fffffff);
+
+// Brasse une liste en ÉCARTANT les questions qui se ressemblent. Un simple
+// mélange laisse passer deux questions sur Jules Verne côte à côte une fois
+// sur dix ; ici, une question qui partage un mot marquant avec l'une des
+// quatre précédentes attend son tour.
+//
+// « Marquant » se décide par la fréquence dans le lot lui-même, pas par une
+// liste de mots à ignorer : « film » revient dans la moitié des questions de
+// Cinéma et n'y distingue rien, mais dans une ronde toutes catégories il
+// signale bien deux questions de cinéma. Le seuil est relatif à la taille du
+// lot pour que la règle tienne aussi bien pour 25 questions que pour 200.
+//
+// Glouton : on prend la première candidate acceptable dans le reste brassé.
+// Faute de candidate, on accepte la voisine plutôt que de tourner en rond :
+// vers la fin d'un lot, il ne reste parfois que des questions qui se
+// ressemblent.
+const kFenetreVoisinage = 4;
+
+List<Entry> _etaler(List<Entry> entries, Random rnd) {
+  final frequence = <String, int>{};
+  final mots = <Entry, Set<String>>{};
+  for (final e in entries) {
+    final m = _motsMarquants(e);
+    mots[e] = m;
+    for (final mot in m) {
+      frequence[mot] = (frequence[mot] ?? 0) + 1;
+    }
+  }
+  final seuil = max(3, entries.length * 15 ~/ 100);
+  for (final e in entries) {
+    mots[e]!.removeWhere((mot) => frequence[mot]! >= seuil);
+  }
+
+  final reste = List<Entry>.of(entries)..shuffle(rnd);
+  final resultat = <Entry>[];
+  while (reste.isNotEmpty) {
+    final debut = max(0, resultat.length - kFenetreVoisinage);
+    final voisinage = <String>{
+      for (var i = debut; i < resultat.length; i++) ...mots[resultat[i]]!,
+    };
+    var choisi = reste.indexWhere((e) => mots[e]!.intersection(voisinage).isEmpty);
+    if (choisi < 0) choisi = 0;
+    resultat.add(reste.removeAt(choisi));
+  }
+  return resultat;
+}
+
+// Les mots d'au moins quatre lettres, sans accents ni majuscules, de l'énoncé
+// et de la réponse. Les mots-outils courts (« qui », « que », « de ») tombent
+// d'eux-mêmes ; les plus longs (« quel », « comment », « combien ») sont
+// éliminés par la fréquence dans _etaler.
+Set<String> _motsMarquants(Entry e) => _strip('${e.question} ${e.answer}')
+    .toLowerCase()
+    .split(RegExp('[^a-z0-9]+'))
+    .where((m) => m.length >= 4)
+    .toSet();
 
 // Découpe en parts aussi égales que possible. 265 questions en 11 manches
 // donne onze manches de 24, pas dix de 25 suivies d'une de 15.
