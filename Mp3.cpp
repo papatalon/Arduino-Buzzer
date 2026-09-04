@@ -136,7 +136,7 @@ void Mp3::shuffleBuzzers() {
   int buzzerCount = mp3Arrays[BUZZER_FOLDER - 1].size;
 
   if (buzzerCount < 4) {
-    Serial.println("Error: Not enough buzzers to shuffle.");
+    Serial.println(F("Error: Not enough buzzers to shuffle."));
     return;
   }
 

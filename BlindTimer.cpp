@@ -93,7 +93,7 @@ void BlindTimer::showTimes() {
     display.setText(line, row++);
   }
   while (row <= 2) {
-    display.setText("", row++);
+    display.setText(F(""), row++);
   }
 }
 
@@ -121,7 +121,7 @@ void BlindTimer::setAnnounce() {
   display.clear();
   display.setText(String("CHRONO AVEUGLE ") + round + "/" + totalRounds, 0);
   display.setText(String("Cible : ") + (targetMs / 1000) + " secondes", 1);
-  display.setText("#: depart  C: fin", 3);
+  display.setText(F("#: depart  C: fin"), 3);
 
   ble.sendGameRound(round, totalRounds);
   // La cible est annoncee a voix haute et affichee sur le buzzer : rien de
@@ -157,9 +157,9 @@ void BlindTimer::setRun() {
   startMs = millis();
 
   display.clear();
-  display.setText("CHRONO AVEUGLE", 0);
+  display.setText(F("CHRONO AVEUGLE"), 0);
   display.setText(String("Cible : ") + (targetMs / 1000) + " s", 1);
-  display.setText("Buzzez au bon moment", 2);
+  display.setText(F("Buzzez au bon moment"), 2);
 }
 
 PhaseMode BlindTimer::run(char pressedKey) {
@@ -282,11 +282,11 @@ void BlindTimer::setGameOver() {
 
   display.clear();
   if (aborted) {
-    display.setText("     ABANDON", 0);
+    display.setText(F("     ABANDON"), 0);
   } else if (!any || maxScore == 0) {
-    display.setText("  Aucun vainqueur", 0);
+    display.setText(F("  Aucun vainqueur"), 0);
   } else if (leaders > 1) {
-    display.setText("     EGALITE !", 0);
+    display.setText(F("     EGALITE !"), 0);
   } else {
     buzzer.setLed(who, true);
     display.setText(String("  ") + buzzer.colorName(who) + " GAGNE !", 0);
@@ -295,14 +295,14 @@ void BlindTimer::setGameOver() {
   display.setText(scoreLine(), 1);
 
   if (bestGapMs == BLIND_NO_RECORD) {
-    display.setText("Aucun resultat", 2);
+    display.setText(F("Aucun resultat"), 2);
   } else if (newRecord) {
     display.setText(String("RECORD ! ") + fmtGap(bestGapMs) + " s", 2);
   } else {
     display.setText(String("Vous ") + fmtGap(bestGapMs) + "  Rec " + fmtGap(record), 2);
   }
 
-  display.setText("#: rejouer  *: menu", 3);
+  display.setText(F("#: rejouer  *: menu"), 3);
 
   const bool decided = !aborted && any && maxScore > 0;
   ble.sendGameScores(scores);

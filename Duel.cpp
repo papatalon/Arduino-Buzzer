@@ -65,8 +65,8 @@ void Duel::setArm() {
   display.clear();
   display.setText(String("DUEL  Manche ") + round + "/" + totalRounds, 0);
   display.setText(String(buzzer.colorName(playerA)) + " vs " + buzzer.colorName(playerB), 1);
-  display.setText("Le son va sonner...", 2);
-  display.setText("C: terminer", 3);
+  display.setText(F("Le son va sonner..."), 2);
+  display.setText(F("C: terminer"), 3);
 
   ble.sendGameRound(round, totalRounds);
 }
@@ -122,7 +122,7 @@ void Duel::setGo() {
   goStart = millis();
 
   display.clear();
-  display.setText("      GO !", 1);
+  display.setText(F("      GO !"), 1);
 }
 
 PhaseMode Duel::go(char pressedKey) {
@@ -169,12 +169,12 @@ void Duel::setResult() {
     }
   } else {
     mp3.playBadAnswer();
-    display.setText("Personne n'a buzze!", 0);
-    display.setText("Manche nulle", 1);
+    display.setText(F("Personne n'a buzze!"), 0);
+    display.setText(F("Manche nulle"), 1);
   }
 
   display.setText(scoreLine(), 2);
-  display.setText(round >= totalRounds ? "#: resultats" : "#: manche suivante", 3);
+  display.setText(round >= totalRounds ? F("#: resultats") : F("#: manche suivante"), 3);
 
   ble.sendGameScores(scores);
   // Comme le Reflexe : envoye au RESULTAT seulement. Le signal du Duel est
@@ -201,9 +201,9 @@ void Duel::setGameOver() {
 
   bool tie = (scores[playerA] == scores[playerB]);
   if (aborted) {
-    display.setText("     ABANDON", 0);
+    display.setText(F("     ABANDON"), 0);
   } else if (tie) {
-    display.setText("     EGALITE !", 0);
+    display.setText(F("     EGALITE !"), 0);
   } else {
     int champ = (scores[playerA] > scores[playerB]) ? playerA : playerB;
     buzzer.setLed(champ, true);
@@ -211,7 +211,7 @@ void Duel::setGameOver() {
   }
 
   display.setText(scoreLine(), 1);
-  display.setText("#: rejouer  *: menu", 3);
+  display.setText(F("#: rejouer  *: menu"), 3);
 
   ble.sendGameScores(scores);
   ble.sendGameOver(

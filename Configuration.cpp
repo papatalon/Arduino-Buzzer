@@ -4,9 +4,9 @@ void Configuration::init() {
   warningShown = false;
   display.clear();
   display.setText(String("= MENU =  ") + buzzer.gameModeName(), 0);
-  display.setText("A: Config Buzzers", 1);
-  display.setText("B: Sons au hasard", 2);
-  display.setText("C:Jeu D:Volu #:Jouer", 3);
+  display.setText(F("A: Config Buzzers"), 1);
+  display.setText(F("B: Sons au hasard"), 2);
+  display.setText(F("C:Jeu D:Volu #:Jouer"), 3);
 }
 
 // Le jeu Simon a besoin d'au moins deux couleurs a memoriser : a un seul
@@ -20,10 +20,10 @@ void Configuration::showFourPlayersWarning() {
   // (min|max) permet a l'app de dire "au moins deux" plutot que "exactement".
   ble.send("WARN|PLAYERS|2|4");
   display.clear();
-  display.setText(" SIMON : 2 A 4 JOUEURS", 0);
-  display.setText("Il en faut au moins 2", 1);
-  display.setText("A: config buzzers", 2);
-  display.setText("Autre touche: menu", 3);
+  display.setText(F(" SIMON : 2 A 4 JOUEURS"), 0);
+  display.setText(F("Il en faut au moins 2"), 1);
+  display.setText(F("A: config buzzers"), 2);
+  display.setText(F("Autre touche: menu"), 3);
 }
 
 // Le jeu Duel exige EXACTEMENT 2 buzzers presents (ni 1, ni 3, ni 4) : peu
@@ -32,10 +32,10 @@ void Configuration::showTwoPlayersWarning() {
   warningShown = true;
   ble.send("WARN|PLAYERS|2|2");   // meme raison que ci-dessus, mais exactement deux
   display.clear();
-  display.setText("   DUEL : 2 JOUEURS", 0);
-  display.setText("Il en faut exactement", 1);
-  display.setText("A: config buzzers", 2);
-  display.setText("Autre touche: menu", 3);
+  display.setText(F("   DUEL : 2 JOUEURS"), 0);
+  display.setText(F("Il en faut exactement"), 1);
+  display.setText(F("A: config buzzers"), 2);
+  display.setText(F("Autre touche: menu"), 3);
 }
 
 PhaseMode Configuration::manageConfiguration(char pressedKey) {
@@ -153,13 +153,13 @@ void Configuration::showGameChoice() {
   for (int row = 0; row < GAME_LIST_VISIBLE; row++) {
     int index = gameWindowTop + row;
     if (index >= (int)GAME_LIST_COUNT) {
-      display.setText("", row);
+      display.setText(F(""), row);
       continue;
     }
     String prefix = (index == gameCursor) ? "> " : "  ";
     display.setText(prefix + GAME_LIST[index].label, row);
   }
-  display.setText("2:haut  8:bas  #:OK", 3);
+  display.setText(F("2:haut  8:bas  #:OK"), 3);
 }
 
 void Configuration::setGameChoice() {
@@ -251,7 +251,7 @@ static String buzzTimeLabel(int seconds) {
 // ("2=+  8=-").
 void Configuration::showChronoStep() {
   display.setText(buzzer.gameModeName(chronoTargetMode), 0);   // "Chrono classique"...
-  display.setText(chronoStep == CHRONO_FIRST ? "1re reponse" : "Autres reponses", 1);
+  display.setText(chronoStep == CHRONO_FIRST ? F("1re reponse") : F("Autres reponses"), 1);
   display.setText(String("> ") + buzzTimeLabel(chronoCursor), 2);
   ble.send("CHRONO_CFG|" + String((int)chronoStep) + "|" + String(chronoCursor));
 }
@@ -261,7 +261,7 @@ void Configuration::setChronoScreen() {
   chronoCursor = buzzer.getFirstBuzzTime(chronoTargetMode);
   display.clear();
   showChronoStep();
-  display.setText("2=+  8=-  #OK *:ann", 3);
+  display.setText(F("2=+  8=-  #OK *:ann"), 3);
 }
 
 PhaseMode Configuration::chronoScreen(char pressedKey) {
@@ -304,9 +304,9 @@ void Configuration::setRoundsScreen() {
   roundsCursor = buzzer.getGameRounds(roundsTargetMode);
   display.clear();
   display.setText(buzzer.gameModeName(roundsTargetMode), 0);
-  display.setText("Nombre de manches", 1);
+  display.setText(F("Nombre de manches"), 1);
   showRoundsValue();
-  display.setText("2=+  8=-  #OK *:ann", 3);
+  display.setText(F("2=+  8=-  #OK *:ann"), 3);
 }
 
 PhaseMode Configuration::roundsScreen(char pressedKey) {
@@ -338,14 +338,14 @@ PhaseMode Configuration::roundsScreen(char pressedKey) {
 // une étape à la fois, `#` valide et enchaîne, `*` annule tout.
 void Configuration::showSoundStep() {
   if (soundStep == SOUND_CFG_COUNT) {
-    display.setText("Nombre de sons", 1);
+    display.setText(F("Nombre de sons"), 1);
     display.setText(String("> ") + roundsCursor, 2);
-    display.setText("2=+  8=-  #OK *:ann", 3);
+    display.setText(F("2=+  8=-  #OK *:ann"), 3);
     ble.send("SOUND_CFG|0|" + String(roundsCursor));
   } else {
-    display.setText("Sons leurres", 1);
+    display.setText(F("Sons leurres"), 1);
     display.setText(String("> ") + (soundDecoysCursor ? "oui" : "non"), 2);
-    display.setText("2/8: changer  #OK", 3);
+    display.setText(F("2/8: changer  #OK"), 3);
     ble.send("SOUND_CFG|1|" + String(soundDecoysCursor ? 1 : 0));
   }
 }
@@ -355,7 +355,7 @@ void Configuration::setSoundSetup() {
   roundsCursor = buzzer.getGameRounds(GAME_SOUND);
   soundDecoysCursor = buzzer.getSoundDecoys();
   display.clear();
-  display.setText("NE BUZZE PAS", 0);
+  display.setText(F("NE BUZZE PAS"), 0);
   showSoundStep();
 }
 
@@ -428,13 +428,13 @@ void Configuration::showQuizCats() {
   for (int rowOnScreen = 0; rowOnScreen < QCAT_VISIBLE; rowOnScreen++) {
     int row = qcatTop + rowOnScreen;
     if (row >= QCAT_ROWS) {
-      display.setText("", rowOnScreen);
+      display.setText(F(""), rowOnScreen);
       continue;
     }
     String prefix = (row == qcatCursor) ? "> " : "  ";
     display.setText(prefix + qcatLabel(row), rowOnScreen);
   }
-  display.setText("2/8 5:cocher #:OK", 3);
+  display.setText(F("2/8 5:cocher #:OK"), 3);
   ble.send("QCAT_CFG|" + String(qcatMask));
 }
 
@@ -498,10 +498,10 @@ void Configuration::showQuizCount() {
 
 void Configuration::setQuizCount() {
   display.clear();
-  display.setText("NB DE QUESTIONS", 0);
+  display.setText(F("NB DE QUESTIONS"), 0);
   showQuizCount();
-  display.setText("Ouvert = C pour finir", 2);
-  display.setText("2=+  8=-  #:OK *:ret", 3);
+  display.setText(F("Ouvert = C pour finir"), 2);
+  display.setText(F("2=+  8=-  #:OK *:ret"), 3);
 }
 
 PhaseMode Configuration::quizCount(char pressedKey) {
@@ -589,10 +589,10 @@ void Configuration::setShuffleBuzzers() {
   // d'écraser une configuration faite via l'assistant.
   shufStep = SHUF_CONFIRM;
   display.clear();
-  display.setText("SONS AU HASARD", 0);
-  display.setText("Ecrase la config !", 1);
-  display.setText("# confirmer", 2);
-  display.setText("* annuler", 3);
+  display.setText(F("SONS AU HASARD"), 0);
+  display.setText(F("Ecrase la config !"), 1);
+  display.setText(F("# confirmer"), 2);
+  display.setText(F("* annuler"), 3);
 }
 
 PhaseMode Configuration::shuffleBuzzer(char pressedKey) {
@@ -606,8 +606,8 @@ PhaseMode Configuration::shuffleBuzzer(char pressedKey) {
       buzzer.startSpinAnimation();
       shufStep = SHUF_SPINNING;
       display.clear();
-      display.setText("  MELANGE DES SONS", 0);
-      display.setText("   Ecoute bien...", 1);
+      display.setText(F("  MELANGE DES SONS"), 0);
+      display.setText(F("   Ecoute bien..."), 1);
     }
     return SHUFFLE_BUZZER;
   }
@@ -619,8 +619,8 @@ PhaseMode Configuration::shuffleBuzzer(char pressedKey) {
       mp3.shuffleBuzzers();          // on re-tire les sons
       shufStep = SHUF_DONE;
       display.clear();
-      display.setText("Nouveaux sons OK", 0);
-      display.setText("# retour au menu", 3);
+      display.setText(F("Nouveaux sons OK"), 0);
+      display.setText(F("# retour au menu"), 3);
     }
     return SHUFFLE_BUZZER;
   }
@@ -638,10 +638,10 @@ void Configuration::setVolumeScreen() {
     buzzer.wasPressed(i);
   }
   display.clear();
-  display.setText("      VOLUME", 0);
+  display.setText(F("      VOLUME"), 0);
   display.setText(String("    Vol: ") + mp3.getVolume() + " / 30", 1);
-  display.setText("2=+  8=-  Buzz=test", 2);
-  display.setText("# : retour", 3);
+  display.setText(F("2=+  8=-  Buzz=test"), 2);
+  display.setText(F("# : retour"), 3);
 }
 
 PhaseMode Configuration::volumeScreen(char pressedKey) {
@@ -679,17 +679,17 @@ const char* Configuration::colorName(int i) {
 void Configuration::showConfigPrompt() {
   display.clear();
   display.setText(String("CONFIG ") + colorName(cfgIndex), 0);
-  display.setText("Appuie sur le buzzer", 1);
-  display.setText("* = absent", 2);
-  display.setText("# = terminer", 3);
+  display.setText(F("Appuie sur le buzzer"), 1);
+  display.setText(F("* = absent"), 2);
+  display.setText(F("# = terminer"), 3);
 }
 
 void Configuration::showConfigChoice() {
   display.clear();
   display.setText(String(colorName(cfgIndex)) + " - son " + String(mp3.getSound(cfgIndex) + 1), 0);
-  display.setText("A=valider  *=absent", 1);
-  display.setText("B = son suivant", 2);
-  display.setText("C = son precedent", 3);
+  display.setText(F("A=valider  *=absent"), 1);
+  display.setText(F("B = son suivant"), 2);
+  display.setText(F("C = son precedent"), 3);
 }
 
 PhaseMode Configuration::advanceConfig() {

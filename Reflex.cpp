@@ -77,8 +77,8 @@ void Reflex::setArm() {
   // Une seule espace apres REFLEXE : au pire ("20/20") la ligne fait pile les
   // 20 colonnes du LCD, donc elle ne se met jamais a defiler.
   display.setText(String("REFLEXE Manche ") + round + "/" + totalRounds, 0);
-  display.setText("Attendez le signal..", 1);
-  display.setText("C: terminer", 3);
+  display.setText(F("Attendez le signal.."), 1);
+  display.setText(F("C: terminer"), 3);
 
   ble.sendGameRound(round, totalRounds);
 }
@@ -132,7 +132,7 @@ void Reflex::setGo() {
   goStart = millis();
 
   display.clear();
-  display.setText("   MAINTENANT !", 1);
+  display.setText(F("   MAINTENANT !"), 1);
 }
 
 PhaseMode Reflex::go(char pressedKey) {
@@ -180,12 +180,12 @@ void Reflex::setResult() {
     mp3.playBadAnswer();
     // Manche nulle pour deux raisons distinctes : tout le monde elimine avant
     // le signal, ou signal donne mais personne n'a buzze a temps.
-    display.setText(activePlayers() == 0 ? "Tous faux depart !" : "Personne n'a buzze!", 0);
-    display.setText("Manche nulle", 1);
+    display.setText(activePlayers() == 0 ? F("Tous faux depart !") : F("Personne n'a buzze!"), 0);
+    display.setText(F("Manche nulle"), 1);
   }
 
   display.setText(scoreLine(), 2);
-  display.setText(round >= totalRounds ? "#: resultats" : "#: manche suivante", 3);
+  display.setText(round >= totalRounds ? F("#: resultats") : F("#: manche suivante"), 3);
 
   ble.sendGameScores(scores);
   // Envoye seulement ICI, jamais pendant l'attente ni au signal : un message
@@ -242,11 +242,11 @@ void Reflex::setGameOver() {
 
   display.clear();
   if (aborted) {
-    display.setText("     ABANDON", 0);
+    display.setText(F("     ABANDON"), 0);
   } else if (!any || maxScore == 0) {
-    display.setText("  Aucun vainqueur", 0);
+    display.setText(F("  Aucun vainqueur"), 0);
   } else if (leaders > 1) {
-    display.setText("     EGALITE !", 0);
+    display.setText(F("     EGALITE !"), 0);
   } else {
     buzzer.setLed(who, true);
     display.setText(String("  ") + buzzer.colorName(who) + " GAGNE !", 0);
@@ -255,7 +255,7 @@ void Reflex::setGameOver() {
   display.setText(scoreLine(), 1);
 
   if (bestMs == 0) {
-    display.setText("Aucun temps", 2);
+    display.setText(F("Aucun temps"), 2);
   } else if (newRecord) {
     display.setText(String("RECORD BATTU ! ") + bestMs, 2);
   } else {
@@ -263,7 +263,7 @@ void Reflex::setGameOver() {
     display.setText(String("Vous: ") + bestMs + " Rec: " + record, 2);
   }
 
-  display.setText("#: rejouer  *: menu", 3);
+  display.setText(F("#: rejouer  *: menu"), 3);
 
   const bool decided = !aborted && any && maxScore > 0;
   ble.sendGameScores(scores);

@@ -143,8 +143,8 @@ void Simon::setShowSequence() {
   buzzer.resetLights();
   display.clear();
   showTitle();
-  display.setText("Observez la sequence", 1);
-  display.setText("Chacun sa couleur !", 3);
+  display.setText(F("Observez la sequence"), 1);
+  display.setText(F("Chacun sa couleur !"), 3);
   sendTelemetry();
 }
 
@@ -196,9 +196,9 @@ void Simon::setPlaySequence() {
 
   display.clear();
   showTitle();
-  display.setText(reverse ? "Repetez a l'envers!" : "A vous de repeter !", 1);
+  display.setText(reverse ? F("Repetez a l'envers!") : F("A vous de repeter !"), 1);
   showProgress();
-  display.setText("C: abandon", 3);
+  display.setText(F("C: abandon"), 3);
 }
 
 PhaseMode Simon::playSequence(char pressedKey) {
@@ -262,9 +262,9 @@ PhaseMode Simon::playSequence(char pressedKey) {
     roundDone = true;
     stepStart = now;
     mp3.playGoodAnswer();
-    display.setText("      BRAVO !", 1);
+    display.setText(F("      BRAVO !"), 1);
     display.setText(String("  Niveau ") + level + " reussi", 2);
-    display.setText("", 3);
+    display.setText(F(""), 3);
     return SIMON_PLAY;
   }
 
@@ -300,7 +300,7 @@ void Simon::setGameOver() {
   }
   display.setText(String("Niveau atteint : ") + level, 1);
   display.setText(comment, 2);
-  display.setText("#: rejouer   *: menu", 3);
+  display.setText(F("#: rejouer   *: menu"), 3);
   sendTelemetry();
   // Jeu collaboratif : jamais de gagnant individuel, mais l'app doit savoir
   // que la partie est finie pour afficher le niveau atteint plutot que le

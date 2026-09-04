@@ -49,7 +49,7 @@ void setup() {
   randomSeed(analogRead(0));
 
   if(!display.init()) {
-    Serial.println("INIT FAIL");
+    Serial.println(F("INIT FAIL"));
   }
 
   buzzer.init();
@@ -64,10 +64,10 @@ void setup() {
   // caractere serait cryptique si on ne l'a jamais vu explique).
   if (mp3.isSimulation()) {
     display.clear();
-    display.setText("PAS DE LECTEUR AUDIO", 0);
-    display.setText("Verifie le DFPlayer", 1);
-    display.setText("et la carte SD.", 2);
-    display.setText("Repere : X en haut", 3);
+    display.setText(F("PAS DE LECTEUR AUDIO"), 0);
+    display.setText(F("Verifie le DFPlayer"), 1);
+    display.setText(F("et la carte SD."), 2);
+    display.setText(F("Repere : X en haut"), 3);
     delay(3000);
   }
   display.setAudioWarning(mp3.isSimulation());

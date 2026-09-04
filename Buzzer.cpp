@@ -168,10 +168,10 @@ void Buzzer::setLedTest() {
     setLed(i, true);
   }
   display.clear();
-  display.setText("Test LED + boutons", 0);
-  display.setText("Touche: tout on/off", 1);
-  display.setText("Bouton: sa LED", 2);
-  display.setText("**  = retour config", 3);
+  display.setText(F("Test LED + boutons"), 0);
+  display.setText(F("Touche: tout on/off"), 1);
+  display.setText(F("Bouton: sa LED"), 2);
+  display.setText(F("**  = retour config"), 3);
 }
 
 PhaseMode Buzzer::ledTest(char pressedKey) {
@@ -182,7 +182,7 @@ PhaseMode Buzzer::ledTest(char pressedKey) {
       ledTestOn[i] = ledTestMaster;
       setLed(i, ledTestMaster);
     }
-    display.setText(ledTestMaster ? "Tout: ON" : "Tout: OFF", 3);
+    display.setText(ledTestMaster ? F("Tout: ON") : F("Tout: OFF"), 3);
 
     Serial.print(F("[LED_TEST] Touche '"));
     Serial.print(pressedKey);
@@ -284,7 +284,7 @@ void Buzzer::setWaitingForBuzzer() {
     }
 
     if (bankOn) {
-      display.setText("EGALITE - Buzzez !", 0);
+      display.setText(F("EGALITE - Buzzez !"), 0);
       wrapText(bank.questionText(), 1, 3);
       return;
     }
@@ -299,10 +299,10 @@ void Buzzer::setWaitingForBuzzer() {
         parts += colorName(i);
       }
     }
-    display.setText("  BRIS D'EGALITE", 0);
-    display.setText("   Buzzez vite !", 1);
+    display.setText(F("  BRIS D'EGALITE"), 0);
+    display.setText(F("   Buzzez vite !"), 1);
     display.setText(parts, 2);
-    display.setText("#:son d'ambiance", 3);
+    display.setText(F("#:son d'ambiance"), 3);
     return;
   }
 
@@ -332,8 +332,8 @@ void Buzzer::setWaitingForBuzzer() {
     if (bankOn) {
       wrapText(bank.questionText(), 2, 3);
     } else {
-      display.setText("#:son d'ambiance", 2);
-      display.setText("0:passer    C:fin", 3);
+      display.setText(F("#:son d'ambiance"), 2);
+      display.setText(F("0:passer    C:fin"), 3);
     }
     return;
   }
@@ -362,16 +362,16 @@ void Buzzer::setWaitingForBuzzer() {
   // donc les rappels de touches.
   display.setText(String("Question ") + questionNumber, 0);
   // Chrono armé : il attend le « top » de l'animateur (question à lire).
-  display.setText(timerLimit > 0 ? "  D = top chrono" : "   EN ATTENTE...", 1);
+  display.setText(timerLimit > 0 ? F("  D = top chrono") : F("   EN ATTENTE..."), 1);
   if (gameMode == GAME_VOL && !secondaryRound) {
     display.setText(String("Tour: ") + colorName(volTurn), 2);
   } else if (lastJudgedBuzzer >= 0) {
     // "B:corriger" n'a de sens que si une décision a déjà été prise.
-    display.setText("#:son   B:corriger", 2);
+    display.setText(F("#:son   B:corriger"), 2);
   } else {
-    display.setText("#:son d'ambiance", 2);
+    display.setText(F("#:son d'ambiance"), 2);
   }
-  display.setText("0:passer    C:fin", 3);
+  display.setText(F("0:passer    C:fin"), 3);
 }
 
 // Répartit `text` sur les lignes `from` à `to` de l'écran, en coupant aux
@@ -379,7 +379,7 @@ void Buzzer::setWaitingForBuzzer() {
 void Buzzer::wrapText(String text, int from, int to) {
   for (int line = from; line <= to; line++) {
     if (text.length() == 0) {
-      display.setText("", line);
+      display.setText(F(""), line);
       continue;
     }
     if (text.length() <= 20 || line == to) {
@@ -406,12 +406,12 @@ void Buzzer::setBuzzerPressed() {
       // préfixe « Rep: », la quasi-totalité des réponses tient sans
       // défilement, donc l'animateur la lit d'un coup d'oeil.
       display.setText(bank.answerText(), 1);
-      display.setText("A:Bonne  D:Mauvaise", 2);
+      display.setText(F("A:Bonne  D:Mauvaise"), 2);
     } else {
-      display.setText("A: Bonne reponse", 1);
-      display.setText("D: Mauvaise reponse", 2);
+      display.setText(F("A: Bonne reponse"), 1);
+      display.setText(F("D: Mauvaise reponse"), 2);
     }
-    display.setText("0 = passer", 3);
+    display.setText(F("0 = passer"), 3);
     ble.send("BUZZ|" + String(currentBuzzerId));
     int ledPin = buzzers[currentBuzzerId][0];
     digitalWrite(ledPin, HIGH);
@@ -474,28 +474,28 @@ PhaseMode Buzzer::buzzerIsPressed(PhaseMode currentMode, char pressedKey) {
 void Buzzer::setIntro() {
   introStart = millis();
   display.clear();
-  display.setText("   C'EST PARTI !", 0);
+  display.setText(F("   C'EST PARTI !"), 0);
   if (gameMode == GAME_SIMON_REVERSE) {
-    display.setText("   Memoire a 4 :", 1);
-    display.setText(" a l'envers, gare !", 2);
+    display.setText(F("   Memoire a 4 :"), 1);
+    display.setText(F(" a l'envers, gare !"), 2);
   } else if (gameMode == GAME_SIMON) {
-    display.setText("   Memoire a 4 :", 1);
-    display.setText("  tous ensemble !", 2);
+    display.setText(F("   Memoire a 4 :"), 1);
+    display.setText(F("  tous ensemble !"), 2);
   } else if (gameMode == GAME_REFLEX) {
-    display.setText("     Reflexes :", 1);
-    display.setText("  le plus rapide !", 2);
+    display.setText(F("     Reflexes :"), 1);
+    display.setText(F("  le plus rapide !"), 2);
   } else if (gameMode == GAME_BLIND) {
-    display.setText("  Chrono aveugle :", 1);
-    display.setText("  fiez-vous a vous", 2);
+    display.setText(F("  Chrono aveugle :"), 1);
+    display.setText(F("  fiez-vous a vous"), 2);
   } else if (gameMode == GAME_SOUND) {
-    display.setText("   Ne buzze pas :", 1);
-    display.setText("  ouvrez l'oreille", 2);
+    display.setText(F("   Ne buzze pas :"), 1);
+    display.setText(F("  ouvrez l'oreille"), 2);
   } else if (gameMode == GAME_DUEL) {
-    display.setText("     Duel au son :", 1);
-    display.setText("  fermez les yeux !", 2);
+    display.setText(F("     Duel au son :"), 1);
+    display.setText(F("  fermez les yeux !"), 2);
   } else {
-    display.setText("  Que le meilleur", 1);
-    display.setText("     gagne !", 2);
+    display.setText(F("  Que le meilleur"), 1);
+    display.setText(F("     gagne !"), 2);
   }
 }
 
@@ -536,8 +536,8 @@ void Buzzer::setVolSpin() {
   volTurn = randomEnabledBuzzer();
   startSpinAnimation();
   display.clear();
-  display.setText("  TIRAGE AU SORT", 0);
-  display.setText(" Qui va repondre ?", 1);
+  display.setText(F("  TIRAGE AU SORT"), 0);
+  display.setText(F(" Qui va repondre ?"), 1);
 }
 
 PhaseMode Buzzer::volSpin(char pressedKey) {
@@ -621,9 +621,9 @@ PhaseMode Buzzer::skipQuestion() {
 // === Question passée sans réponse : révèle la réponse (banque) ===
 void Buzzer::setAnswerReveal() {
   display.clear();
-  display.setText("Personne n'a repondu", 0);
+  display.setText(F("Personne n'a repondu"), 0);
   wrapText(String("Rep: ") + QuestionBank::shared().answerText(), 1, 2);
-  display.setText("        # : suite", 3);
+  display.setText(F("        # : suite"), 3);
 }
 
 PhaseMode Buzzer::answerReveal(char pressedKey) {
@@ -1119,9 +1119,9 @@ PhaseMode Buzzer::showScores(char pressedKey) {
 
 void Buzzer::setEndConfirm() {
   display.clear();
-  display.setText("TERMINER LA PARTIE ?", 0);
-  display.setText("# = oui", 2);
-  display.setText("* = non (continuer)", 3);
+  display.setText(F("TERMINER LA PARTIE ?"), 0);
+  display.setText(F("# = oui"), 2);
+  display.setText(F("* = non (continuer)"), 3);
 }
 
 PhaseMode Buzzer::endConfirm(char pressedKey) {
@@ -1160,9 +1160,9 @@ void Buzzer::setEndGame() {
 
   String prompt;
   if (!any) {
-    prompt = "Aucun buzzer #menu";
+    prompt = F("Aucun buzzer #menu");
   } else if (endTie) {
-    prompt = "#=bris   *=menu";    // égalité : proposer un bris d'égalité
+    prompt = F("#=bris   *=menu");    // égalité : proposer un bris d'égalité
   } else {
     prompt = String("Gagne:") + colorName(winner) + " #menu";
   }

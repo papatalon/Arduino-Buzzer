@@ -55,9 +55,9 @@ void SoundGame::setLearn() {
 
   buzzer.resetLights();
   display.clear();
-  display.setText("NE BUZZE PAS", 0);
-  display.setText("Apprenez les sons", 1);
-  display.setText("C: retour au menu", 3);
+  display.setText(F("NE BUZZE PAS"), 0);
+  display.setText(F("Apprenez les sons"), 1);
+  display.setText(F("C: retour au menu"), 3);
 }
 
 PhaseMode SoundGame::learn(char pressedKey) {
@@ -88,8 +88,8 @@ PhaseMode SoundGame::learn(char pressedKey) {
 
   if (next < 0) {
     learnDone = true;
-    display.setText("", 2);
-    display.setText("#: c'est parti", 3);
+    display.setText(F(""), 2);
+    display.setText(F("#: c'est parti"), 3);
     ble.send("SNDL|-1");     // apprentissage termine
     return SOUND_LEARN;
   }
@@ -325,7 +325,7 @@ void SoundGame::judgeCurrent() {
       return;
     }
   }
-  display.setText("Leurre evite !", 1);
+  display.setText(F("Leurre evite !"), 1);
 }
 
 void SoundGame::setPlay() {
@@ -404,11 +404,11 @@ void SoundGame::setGameOver() {
 
   display.clear();
   if (aborted) {
-    display.setText("     ABANDON", 0);
+    display.setText(F("     ABANDON"), 0);
   } else if (!any) {
-    display.setText("  Aucun joueur", 0);
+    display.setText(F("  Aucun joueur"), 0);
   } else if (leaders > 1) {
-    display.setText("     EGALITE !", 0);
+    display.setText(F("     EGALITE !"), 0);
   } else {
     buzzer.setLed(who, true);
     display.setText(String("  ") + buzzer.colorName(who) + " GAGNE !", 0);
@@ -416,7 +416,7 @@ void SoundGame::setGameOver() {
 
   display.setText(scoreLine(), 1);
   display.setText(String(played) + " sons" + (decoys ? ", leurres" : ""), 2);
-  display.setText("#: rejouer  *: menu", 3);
+  display.setText(F("#: rejouer  *: menu"), 3);
 
   const bool decided = !aborted && any;
   ble.sendGameScores(scores);

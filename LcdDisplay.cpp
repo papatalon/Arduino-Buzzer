@@ -17,10 +17,10 @@ bool LcdDisplay::init() {
 
 void LcdDisplay::clear() {
 
-  setText("", 0);
-  setText("", 1);
-  setText("", 2);
-  setText("", 3);
+  setText(F(""), 0);
+  setText(F(""), 1);
+  setText(F(""), 2);
+  setText(F(""), 3);
 }
 
 void LcdDisplay::setText(String text, int line) {
