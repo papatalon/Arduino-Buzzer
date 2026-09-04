@@ -174,7 +174,8 @@ void main(List<String> args) {
       stdout.writeln('  (ignoré : ${theme.name}, seulement ${trouvees.length} questions)');
       continue;
     }
-    _writeParts(theme.name, trouvees, note: theme.note, emoji: theme.emoji);
+    _writeParts(theme.name, trouvees,
+        note: theme.note, emoji: theme.emoji, collection: theme.collection);
   }
 
   // Volontairement pas de fichier « Banque complète » : 2000 questions dans un
@@ -200,8 +201,19 @@ void _writeCatalogue() {
   final collections = <String, Map<String, dynamic>>{};
   for (final entree in _catalogue) {
     final nom = entree['collection'] as String;
+    // Le pictogramme de la TUILE, qui n'est plus forcément celui de ses
+    // fichiers : une thématique rangée sous une catégorie garde le sien. La
+    // table tranche donc en premier, sinon la tuile hériterait du picto du
+    // premier fichier écrit, et changerait de tête au moindre changement
+    // d'ordre d'écriture.
     final vue = collections.putIfAbsent(
-        nom, () => {'nom': nom, 'emoji': entree['emoji'], 'questionnaires': 0, 'questions': 0});
+        nom,
+        () => {
+              'nom': nom,
+              'emoji': kEmojiCategories[nom] ?? entree['emoji'],
+              'questionnaires': 0,
+              'questions': 0,
+            });
     vue['questionnaires'] = (vue['questionnaires'] as int) + 1;
     vue['questions'] = (vue['questions'] as int) + (entree['questions'] as int);
   }
@@ -678,7 +690,9 @@ String _strip(String s) {
 // sinon « os » attraperait « chose » et « ski » attraperait « whisky ».
 class Theme {
   const Theme(this.name, this.emoji, this.note, this.keywords,
-      {this.exclude = const [], this.excludeCategories = const []});
+      {this.exclude = const [],
+      this.excludeCategories = const [],
+      this.collection});
 
   final String name;
   final String emoji;
@@ -698,6 +712,18 @@ class Theme {
   // la categorie, la thematique ne garde que ce que la categorie n'a PAS :
   // le Quebec dispersé dans Musique, Bouffe, Cinema, Sports.
   final List<String> excludeCategories;
+
+  // Sous quelle tuile ranger la thematique, quand ce n'est pas la sienne.
+  // Exclure une categorie regle le fond (aucune question en double) mais pas
+  // la forme : la bibliotheque se lit en survolant des tuiles, et deux tuiles
+  // voisines qui portent le meme sujet donnent l'impression d'un doublon,
+  // meme quand il n'y en a pas. La thematique se range donc DANS la tuile de
+  // la categorie dont elle est le complement, ou son titre suffit a la
+  // distinguer des manches ordinaires.
+  //
+  // Null pour une thematique qui traverse les categories sans en doubler
+  // aucune : elle merite sa propre tuile.
+  final String? collection;
 
   bool matches(Entry e) {
     if (excludeCategories.contains(e.category)) return false;
@@ -735,8 +761,13 @@ const kThemes = <Theme>[
   // dans Cinéma, la poutine râpée dans Bouffe, les rigodons dans Musique.
   // Jouer la catégorie puis celle-ci ne repose aucune question.
   //
-  // Pas de feuille d'érable : c'est l'emblème du Canada. La fleur de lys va
-  // à la catégorie Québec.
+  // Rangée sous la tuile « Québec » et non à côté : deux tuiles québécoises
+  // voisines dans la bibliothèque se lisaient comme un doublon, alors que la
+  // distinction ne se voit qu'en ouvrant les fichiers. Le titre des manches
+  // la porte très bien à l'intérieur de la tuile.
+  //
+  // Son sapin lui reste : dans une tuile à fleur de lys, il signale d'un coup
+  // d'œil les cinq manches qui ne sont pas la catégorie.
   Theme('Le Québec ailleurs', '🌲',
       'Le Québec caché dans les neuf autres catégories.', [
     'quebec', 'quebecois', 'quebecoise', 'quebecoises', 'montreal',
@@ -756,7 +787,7 @@ const kThemes = <Theme>[
     'louis cyr', 'bombardier', 'levesque', 'duplessis', 'legault',
     'loi 101', 'oqlf', 'verglas', 'hurons-wendat', 'madelinots',
     'saguenéen', 'trifluvien', 'terre-neuvien',
-  ], excludeCategories: ['Québec']),
+  ], excludeCategories: ['Québec'], collection: 'Québec'),
   Theme('Le règne animal', '🐾', 'Bêtes à poil, à plume et à écailles.', [
     'animal', 'animaux', 'oiseau', 'oiseaux', 'poisson', 'poissons',
     'insecte', 'insectes', 'mammifere', 'mammiferes', 'reptile', 'reptiles',
