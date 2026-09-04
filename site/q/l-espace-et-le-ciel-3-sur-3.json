@@ -7,109 +7,148 @@
   "emoji": "🪐",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quelle région québécoise occupe un cratère de météorite ?",
-      "reponse": "Charlevoix"
+      "categorie": "Géographie",
+      "question": "De quel côté se couche le soleil ?",
+      "reponse": "À l'ouest",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel événement cache le Soleil derrière la Lune ?",
-      "reponse": "Une éclipse"
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "De quelle planète vient Superman ?",
-      "reponse": "Krypton"
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami étoile de mer accompagne Bob l'éponge ?",
-      "reponse": "Patrick"
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la planète la plus éloignée du Soleil ?",
-      "reponse": "Neptune"
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle galaxie abrite notre système solaire ?",
-      "reponse": "La Voie lactée"
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle vitamine fabrique la peau au soleil ?",
-      "reponse": "La vitamine D"
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel métal est liquide à température ambiante ?",
-      "reponse": "Le mercure"
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel caillou céleste brille en traversant l'atmosphère ?",
-      "reponse": "L'étoile filante"
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel patrouilleur de l'espace dit Vers l'infini et plus loin ?",
-      "reponse": "Buzz"
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année l'homme a-t-il marché sur la Lune ?",
-      "reponse": "1969"
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal fut le premier en orbite ?",
-      "reponse": "La chienne Laïka"
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel cirque québécois est connu mondialement ?",
-      "reponse": "Cirque du Soleil"
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel astronome a placé le Soleil au centre de l'univers ?",
-      "reponse": "Copernic"
+      "question": "Quelle fleur suit le Soleil ?",
+      "reponse": "Le tournesol",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
       "question": "Quelle est la planète la plus proche du Soleil ?",
-      "reponse": "Mercure"
+      "reponse": "Mercure",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel mois vient après mars ?",
+      "reponse": "Avril",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Qui fut la première femme dans l'espace ?",
-      "reponse": "Valentina Terechkova"
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel fut le premier satellite artificiel ?",
-      "reponse": "Spoutnik"
+      "question": "Quel animal fut le premier en orbite ?",
+      "reponse": "La chienne Laïka",
+      "niveau": 2
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel astre supermassif avale même la lumière ?",
-      "reponse": "Le trou noir"
+      "question": "Comment nomme-t-on une roche tombée de l'espace ?",
+      "reponse": "Une météorite",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a un drapeau avec une étoile de David ?",
+      "reponse": "Israël",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film de 1977 s'ouvre sur « Il y a bien longtemps, dans une galaxie lointaine » ?",
+      "reponse": "La Guerre des étoiles",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel effet atmosphérique réchauffe la planète ?",
-      "reponse": "L'effet de serre"
+      "question": "Quel astre provoque les marées ?",
+      "reponse": "La Lune",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
       "question": "Combien de lunes possède la Terre ?",
-      "reponse": "Une"
+      "reponse": "Une",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la plus grosse planète du système solaire ?",
-      "reponse": "Jupiter"
+      "question": "Quelle planète est surnommée la planète rouge ?",
+      "reponse": "Mars",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ligne imaginaire sépare les deux hémisphères ?",
+      "reponse": "L'équateur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel patrouilleur de l'espace dit Vers l'infini et plus loin ?",
+      "reponse": "Buzz",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel astre supermassif avale même la lumière ?",
+      "reponse": "Le trou noir",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle vitamine fabrique la peau au soleil ?",
+      "reponse": "La vitamine D",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de planètes dans le système solaire ?",
+      "reponse": "Huit",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel astronome a placé le Soleil au centre de l'univers ?",
+      "reponse": "Copernic",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le deuxième homme à marcher sur la Lune ?",
+      "reponse": "Buzz Aldrin",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami étoile de mer accompagne Bob l'éponge ?",
+      "reponse": "Patrick",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus grande lune de Saturne ?",
+      "reponse": "Titan",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir les yeux dans la graisse de bines ?",
+      "reponse": "Être dans la lune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle station spatiale russe a précédé l'ISS ?",
+      "reponse": "Mir",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Sur quelle planète habitons-nous ?",
+      "reponse": "La Terre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le premier homme dans l'espace ?",
+      "reponse": "Youri Gagarine",
+      "niveau": 2
     }
   ]
 }

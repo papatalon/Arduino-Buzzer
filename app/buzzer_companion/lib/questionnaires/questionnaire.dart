@@ -16,23 +16,61 @@ import 'dart:convert';
 const kFormat = 'buzzer-questionnaire';
 const kVersion = 1;
 
+// Les trois niveaux d'une question, et le mot qu'on affiche pour chacun.
+// 1 : un enfant de huit ans répond. 2 : culture générale ordinaire.
+// 3 : connaisseur.
+const kNomsNiveaux = {1: 'facile', 2: 'moyen', 3: 'difficile'};
+
+// Combien de questions de chaque niveau, en ignorant celles qui n'en ont pas.
+Map<int, int> compterNiveaux(Iterable<int?> niveaux) {
+  final comptes = <int, int>{};
+  for (final n in niveaux) {
+    if (n != null) comptes[n] = (comptes[n] ?? 0) + 1;
+  }
+  return comptes;
+}
+
+// LE MOT QUI RÉSUME UN QUESTIONNAIRE. La moyenne des niveaux, ramenée aux
+// trois mêmes mots que les questions : une manche toute au niveau 1 est
+// « facile », une manche qui mélange les trois est « moyen », et une manche
+// de connaisseurs est « difficile ». Null quand rien n'est coté : mieux vaut
+// ne rien dire qu'inventer.
+String? etiquetteDesNiveaux(Map<int, int> comptes) {
+  var n = 0;
+  var somme = 0;
+  comptes.forEach((niveau, c) {
+    n += c;
+    somme += niveau * c;
+  });
+  if (n == 0) return null;
+  final moyenne = somme / n;
+  if (moyenne < 1.5) return kNomsNiveaux[1];
+  if (moyenne < 2.4) return kNomsNiveaux[2];
+  return kNomsNiveaux[3];
+}
+
 class QuizQuestion {
-  QuizQuestion({this.category = '', this.question = '', this.answer = ''});
+  QuizQuestion({this.category = '', this.question = '', this.answer = '', this.niveau});
 
   String category;
   String question;
   String answer;
+  // Voir [kNomsNiveaux]. Null quand personne ne l'a coté : un questionnaire
+  // écrit à la main n'a pas à se prononcer, et l'app n'affiche alors rien.
+  int? niveau;
 
   // Une question sans énoncé n'est pas jouable ; la réponse peut rester vide
   // (l'animateur la connaît, ou la juge lui-même).
   bool get isUsable => question.trim().isNotEmpty;
 
-  QuizQuestion copy() => QuizQuestion(category: category, question: question, answer: answer);
+  QuizQuestion copy() =>
+      QuizQuestion(category: category, question: question, answer: answer, niveau: niveau);
 
   Map<String, dynamic> toJson() => {
         'categorie': category,
         'question': question,
         'reponse': answer,
+        if (niveau != null) 'niveau': niveau,
       };
 
   // Tolérant à dessein : un fichier écrit à la main peut omettre la
@@ -41,7 +79,15 @@ class QuizQuestion {
         category: (json['categorie'] as String?)?.trim() ?? '',
         question: (json['question'] as String?)?.trim() ?? '',
         answer: (json['reponse'] as String?)?.trim() ?? '',
+        niveau: niveauDepuisJson(json['niveau']),
       );
+}
+
+// Un niveau écrit à la main peut arriver en nombre ou en texte ; tout ce qui
+// n'est pas 1, 2 ou 3 vaut « pas coté » plutôt qu'une erreur.
+int? niveauDepuisJson(Object? brut) {
+  final n = brut is num ? brut.toInt() : int.tryParse('$brut');
+  return n != null && kNomsNiveaux.containsKey(n) ? n : null;
 }
 
 class Questionnaire {
@@ -73,6 +119,9 @@ class Questionnaire {
   final List<QuizQuestion> questions;
 
   int get usableCount => questions.where((q) => q.isUsable).length;
+
+  Map<int, int> get niveaux => compterNiveaux(questions.map((q) => q.niveau));
+  String? get etiquetteNiveau => etiquetteDesNiveaux(niveaux);
 
   Questionnaire copy() => Questionnaire(
         title: title,

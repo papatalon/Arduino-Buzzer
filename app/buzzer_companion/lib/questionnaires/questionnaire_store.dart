@@ -18,11 +18,15 @@ class QuestionnaireFile {
     required this.title,
     required this.questionCount,
     required this.valid,
+    this.niveaux = const {},
   });
 
   final String path;
   final String name;      // nom du fichier sans .json
   final DateTime modified;
+  // Combien de questions de chaque niveau, lu dans le fichier comme le titre.
+  final Map<int, int> niveaux;
+  String? get etiquetteNiveau => etiquetteDesNiveaux(niveaux);
   // Titre et compte lus DANS le fichier : choisir entre « Noel.json » et
   // « Noel2.json » sans les ouvrir est impossible, alors qu'entre « Spécial
   // Noël, 24 questions » et « Noël, brouillon, 3 questions » c'est immédiat.
@@ -141,10 +145,12 @@ class QuestionnaireStore extends ChangeNotifier {
         String title = '';
         int count = 0;
         bool valid = true;
+        var niveaux = const <int, int>{};
         try {
           final parsed = Questionnaire.decode(entity.readAsStringSync());
           title = parsed.title;
           count = parsed.questions.length;
+          niveaux = parsed.niveaux;
         } catch (_) {
           valid = false;
         }
@@ -155,6 +161,7 @@ class QuestionnaireStore extends ChangeNotifier {
           title: title,
           questionCount: count,
           valid: valid,
+          niveaux: niveaux,
         ));
       }
       // Le plus récemment retouché en premier : c'est presque toujours celui

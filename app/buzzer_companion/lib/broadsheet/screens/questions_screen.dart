@@ -884,7 +884,7 @@ class _CatalogueCard extends StatelessWidget {
           ),
           const SizedBox(height: BSSpace.s1),
           Text(
-            '${entry.questionCount} question${entry.questionCount > 1 ? 's' : ''}',
+            _compteEtNiveau(entry.questionCount, entry.etiquetteNiveau),
             style: BSType.body(
               size: 15,
               color: local ? BSColors.accent700 : BSColors.neutral600,
@@ -1084,7 +1084,7 @@ class _QuestionnaireCard extends StatelessWidget {
           const SizedBox(height: BSSpace.s1),
           Text(
             file.valid
-                ? '${file.questionCount} question${file.questionCount > 1 ? 's' : ''}'
+                ? _compteEtNiveau(file.questionCount, file.etiquetteNiveau)
                 : 'Fichier illisible',
             style: BSType.body(
               size: 15,
@@ -1105,6 +1105,30 @@ class _QuestionnaireCard extends StatelessWidget {
     String deux(int n) => n.toString().padLeft(2, '0');
     return 'Modifié le ${deux(d.day)}/${deux(d.month)}/${d.year} à ${deux(d.hour)}:${deux(d.minute)}';
   }
+}
+
+// « 25 questions · facile ». Le niveau suit le compte sur la même ligne : c'est
+// la deuxième chose qu'on veut savoir d'un questionnaire avant de l'ouvrir,
+// et une ligne de plus par carte alourdirait toute la grille.
+String _compteEtNiveau(int compte, String? niveau) {
+  final base = '$compte question${compte > 1 ? 's' : ''}';
+  return niveau == null ? base : '$base · $niveau';
+}
+
+// L'en-tête de l'éditeur détaille ce que la carte résume : « 25 questions ·
+// 12 faciles, 10 moyennes, 3 difficiles ». Les questions vides restent
+// signalées comme avant, et les niveaux ne s'affichent que s'il y en a.
+String _resumeQuestions(int total, int utiles, Map<int, int> niveaux) {
+  final compte = utiles == total
+      ? '$total question${total > 1 ? 's' : ''}'
+      : '$utiles question${utiles > 1 ? 's' : ''} sur $total (les autres sont vides)';
+  if (niveaux.isEmpty) return compte;
+  const pluriels = {1: 'faciles', 2: 'moyennes', 3: 'difficiles'};
+  final parts = [
+    for (final n in [1, 2, 3])
+      if ((niveaux[n] ?? 0) > 0) '${niveaux[n]} ${pluriels[n]}',
+  ];
+  return '$compte · ${parts.join(', ')}';
 }
 
 // -------------------------------------------------------------------- Éditeur
@@ -1320,9 +1344,7 @@ class _Editor extends StatelessWidget {
             children: [
               Expanded(
                 child: Text(
-                  utiles == total
-                      ? '$total question${total > 1 ? 's' : ''}'
-                      : '$utiles question${utiles > 1 ? 's' : ''} sur $total (les autres sont vides)',
+                  _resumeQuestions(total, utiles, questionnaire.niveaux),
                   style: BSType.sectionKicker(),
                 ),
               ),
@@ -1452,13 +1474,26 @@ class _QuestionRow extends StatelessWidget {
             // (« Films de Noël »), mais autant ne pas retaper « Histoire ».
             SizedBox(
               width: 240,
-              child: _CategoryField(
-                value: question.category,
-                readOnly: readOnly,
-                onChanged: (v) {
-                  question.category = v;
-                  onChanged();
-                },
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  _CategoryField(
+                    value: question.category,
+                    readOnly: readOnly,
+                    onChanged: (v) {
+                      question.category = v;
+                      onChanged();
+                    },
+                  ),
+                  _NiveauField(
+                    value: question.niveau,
+                    readOnly: readOnly,
+                    onChanged: (v) {
+                      question.niveau = v;
+                      onChanged();
+                    },
+                  ),
+                ],
               ),
             ),
             // La largeur reste réservée même en consultation : les lignes
@@ -1478,6 +1513,56 @@ class _QuestionRow extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+// Le niveau d'une question, sous sa catégorie. En consultation, un mot, ou
+// rien si personne ne l'a coté. En édition, les trois mots côte à côte, celui
+// qui est retenu souligné, et un second clic le retire : trois options ne
+// méritent ni menu ni boîte.
+class _NiveauField extends StatelessWidget {
+  const _NiveauField(
+      {required this.value, required this.readOnly, required this.onChanged});
+
+  final int? value;
+  final bool readOnly;
+  final ValueChanged<int?> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    if (readOnly) {
+      final nom = kNomsNiveaux[value];
+      if (nom == null) return const SizedBox.shrink();
+      return Padding(
+        padding: const EdgeInsets.only(top: BSSpace.s1),
+        child: Text(nom, style: BSType.body(size: 13, color: BSColors.neutral600)),
+      );
+    }
+    return Padding(
+      padding: const EdgeInsets.only(top: BSSpace.s1),
+      child: Row(
+        children: [
+          for (final entry in kNomsNiveaux.entries) ...[
+            InkWell(
+              onTap: () => onChanged(value == entry.key ? null : entry.key),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 2),
+                child: Text(
+                  entry.value,
+                  style: BSType.body(
+                    size: 13,
+                    color: value == entry.key ? BSColors.text : BSColors.neutral500,
+                  ).copyWith(
+                    decoration: value == entry.key ? TextDecoration.underline : null,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(width: BSSpace.s3),
+          ],
+        ],
       ),
     );
   }

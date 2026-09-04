@@ -1,203 +1,213 @@
-# Culture generale, accentuee. Meme ordre que Questions.cpp.
+# Culture generale, accentuee et cotee. Meme ordre que Questions.cpp.
+# Format : Question|Réponse|niveau. Niveau 1 : un enfant de huit ans répond ;
+# 2 : culture générale ordinaire ; 3 : connaisseur.
 # Verifie par le generateur : retirer les accents d'une ligne doit redonner
 # exactement la ligne d'origine (voir generate_questionnaires.dart).
-Combien de côtés a un hexagone ?|Six
-Combien de jours dans une année bissextile ?|366
-Combien de couleurs dans un arc-en-ciel ?|Sept
-Combien de cartes dans un jeu standard sans jokers ?|52
-Combien de cases sur un échiquier ?|64
-Quelle pièce d'échecs ne peut jamais reculer ?|Le pion
-Combien de lettres dans l'alphabet français ?|26
-Combien de sens possède l'être humain ?|Cinq
-Combien d'années dans un siècle ?|100
-Combien d'années dans un millénaire ?|1000
-Combien d'unités dans une douzaine ?|Douze
-Quelle est la valeur approximative de pi ?|3,14
-Combien de côtés a un triangle ?|Trois
-Combien de zéros dans un million ?|Six
-Qui a inventé le téléphone ?|Graham Bell
-Qui a inventé l'ampoule électrique ?|Thomas Edison
-Quels frères ont inventé l'avion ?|Les frères Wright
-Qui a inventé la dynamite ?|Alfred Nobel
-Quel prix célèbre porte le nom d'Alfred Nobel ?|Le prix Nobel
-Où est exposée la Joconde ?|Au Louvre
-Qui a peint la Joconde ?|Léonard de Vinci
-Quel peintre s'est coupé une oreille ?|Van Gogh
-Qui a peint Guernica ?|Picasso
-De quel pays viennent les blocs Lego ?|Le Danemark
-De quelle couleur sont les Schtroumpfs ?|Bleus
-Quel reporter a un chien nommé Milou ?|Tintin
-Quel Gaulois est l'ami d'Obélix ?|Astérix
-Combien de dalmatiens dans le film de Disney ?|101
-Quel signal international signale une détresse ?|SOS
-Quel numéro d'urgence compose-t-on en Amérique du Nord ?|911
-Quelle direction indique l'aiguille d'une boussole ?|Le nord
-Quel jeu consiste à placer les chiffres 1 à 9 ?|Le sudoku
-Dans quel jeu forme-t-on des mots avec des lettres ?|Le Scrabble
-Quel art japonais consiste à plier du papier ?|L'origami
-Pays d'origine du yoga ?|L'Inde
-Combien font les faces opposées d'un dé ?|Sept
-Monnaie du Japon ?|Le yen
-Quel métal est liquide à température ambiante ?|Le mercure
-Combien de dents possède un adulte en général ?|32
-Quel est le livre le plus vendu au monde ?|La Bible
-Combien de faces a un cube ?|Six
-Combien d'océans sur Terre ?|Cinq
-Combien de mois ont 31 jours ?|Sept
-Quel est le plus petit nombre premier ?|Deux
-Combien de millimètres dans un centimètre ?|Dix
-Combien de grammes dans un kilogramme ?|1000
-Quel instrument mesure la température ?|Le thermomètre
-Combien de roues a un tricycle ?|Trois
-Quel oiseau figure sur la pièce de un dollar canadien ?|Le huard
-Quel animal figure sur la pièce de 5 cents canadienne ?|Le castor
-Qui a écrit Les Misérables ?|Victor Hugo
-Qui a écrit Roméo et Juliette ?|Shakespeare
-Qui a écrit Le Petit Prince ?|Saint-Exupéry
-Quel auteur a créé Sherlock Holmes ?|Conan Doyle
-Combien d'étoiles sur le drapeau américain ?|50
-Combien de bandes sur le drapeau américain ?|13
-De quelle couleur est la boîte noire d'un avion ?|Orange
-Quelle pierre précieuse est rouge ?|Le rubis
-Quelle pierre précieuse est verte ?|L'émeraude
-De quel côté de la route conduit-on au Royaume-Uni ?|À gauche
-Combien d'années dure un lustre ?|Cinq
-Quel philosophe grec fut le maître d'Alexandre ?|Aristote
-Aux échecs, combien de dames au départ par joueur ?|Une
-Combien de lettres dans l'alphabet grec ?|24
-Monnaie utilisée en Europe ?|L'euro
-Monnaie utilisée au Royaume-Uni ?|Livre sterling
-Combien font XII en chiffres romains ?|Douze
-Combien font L en chiffres romains ?|50
-Quel professionnel défend les accusés ?|L'avocat
-Quelle science étudie les astres ?|L'astronomie
-Quelle science étudie les vestiges anciens ?|L'archéologie
-Quelle science étudie les animaux ?|La zoologie
-Quelle science étudie les plantes ?|La botanique
-Quel arbre produit des glands ?|Le chêne
-Quelle fleur offre-t-on à la Saint-Valentin ?|La rose
-Quel événement célèbre-t-on le 25 décembre ?|Noël
-Quelle fête des déguisements a lieu le 31 octobre ?|L'Halloween
-Quel animal cache des œufs à Pâques ?|Le lapin
-Quel musée parisien abrite la Vénus de Milo ?|Le Louvre
-Quel jeu de cartes se joue avec 78 cartes et des atouts ?|Le tarot
-Qui soigne les dents ?|Le dentiste
-Quel dieu grec règne sur l'Olympe ?|Zeus
-Quel dieu grec règne sur les mers ?|Poséidon
-Quel dieu grec règne sur les enfers ?|Hadès
-Quelle déesse grecque est née de l'écume ?|Aphrodite
-Quel héros grec a accompli douze travaux ?|Hercule
-Quel monstre grec pétrifie du regard ?|Méduse
-Quel cheval mythologique a des ailes ?|Pégase
-Quel oiseau mythique renaît de ses cendres ?|Le phénix
-Quelle créature est mi-homme mi-cheval ?|Le centaure
-Quel géant mythologique n'a qu'un seul œil ?|Le cyclope
-Qui a écrit L'Odyssée ?|Homère
-Quel héros de Jules Verne fait le tour du monde en 80 jours ?|Phileas Fogg
-Qui a écrit Vingt mille lieues sous les mers ?|Jules Verne
-Quel capitaine commande le sous-marin Nautilus ?|Nemo
-Quel bossu sonne les cloches de Notre-Dame ?|Quasimodo
-Quelle orpheline rousse vit aux Pignons verts ?|Anne
-Qui a écrit Les Trois Mousquetaires ?|Alexandre Dumas
-Quel écrivain russe a écrit Guerre et Paix ?|Tolstoï
-Quelle romancière a créé Hercule Poirot ?|Agatha Christie
-Quel auteur américain a créé Tom Sawyer ?|Mark Twain
-Quelle autrice a écrit Harry Potter ?|J.K. Rowling
-Quel peintre espagnol peignait des montres molles ?|Dalí
-Quel artiste a peint le plafond de la chapelle Sixtine ?|Michel-Ange
-Quelle statue de Michel-Ange représente un roi biblique ?|David
-Quel peintre français a peint des nénuphars à Giverny ?|Monet
-Quel sculpteur a créé Le Penseur ?|Rodin
-Combien de couleurs sur le drapeau français ?|Trois
-Quelles sont les couleurs du drapeau italien ?|Vert blanc rouge
-Quel pays a un cercle rouge sur fond blanc ?|Le Japon
-Quel pays a un drapeau non rectangulaire ?|Le Népal
-Quel instrument d'écriture contient du graphite ?|Le crayon
-Quel système de lecture pour aveugles porte le nom de son inventeur ?|Le braille
-Qui a inventé le World Wide Web ?|Tim Berners-Lee
-Quelle entreprise a créé l'iPhone ?|Apple
-Qui a cofondé Microsoft ?|Bill Gates
-Quel moteur de recherche est le plus utilisé au monde ?|Google
-Combien de bits dans un octet ?|Huit
-Quel jeu vidéo met en scène un plombier moustachu ?|Mario
-Quel hérisson bleu court très vite en jeu vidéo ?|Sonic
-Quel jeu vidéo consiste à empiler des blocs qui tombent ?|Tetris
-Quel jeu vidéo se joue avec des cubes à construire ?|Minecraft
-Quel jeu de société fait acheter des rues ?|Monopoly
-Dans quel jeu doit-on deviner un mot dessiné ?|Pictionary
-Quel jeu consiste à couler des navires adverses ?|Bataille navale
-Quel jeu se joue avec cinq dés et des combinaisons ?|Le Yum (Yahtzee)
-Combien de dominos dans un jeu standard ?|28
-Combien de pièces dans un jeu d'échecs complet ?|32
-Quel casse-tête cubique a six couleurs ?|Le cube Rubik
-Quel métier répare les tuyaux ?|Le plombier
-Quel métier éteint les incendies ?|Le pompier
-Quel métier fabrique le pain ?|Le boulanger
-Quel métier ferre les chevaux ?|Le maréchal-ferrant
-Quel médecin opère les patients ?|Le chirurgien
-Combien de minutes dans une journée ?|1440
-Combien de secondes dans une heure ?|3600
-Combien de jours dans un mois de février normal ?|28
-Quel mois porte le nom de Jules César ?|Juillet
-Quel mois porte le nom de l'empereur Auguste ?|Août
-Quel jour de la semaine porte le nom de la Lune ?|Lundi
-Quelle est la quatrième lettre de l'alphabet grec ?|Delta
-Combien de degrés dans un angle droit ?|90
-Combien de degrés dans un cercle complet ?|360
-Combien de faces a une pyramide à base carrée ?|Cinq
-Comment nomme-t-on un 1 suivi de neuf zéros ?|Un milliard
-Quel symbole mathématique ressemble à un 8 couché ?|L'infini
-Quelle opération est l'inverse de la multiplication ?|La division
-Quelle carte est la plus forte au poker ?|L'as
-Combien de jokers dans un paquet de cartes ?|Deux
-Combien d'enseignes dans un jeu de cartes ?|Quatre
-Quel animal est surnommé le roi de la jungle ?|Le lion
-Quel oiseau est le symbole de la paix ?|La colombe
-Quel rameau symbolise la paix ?|L'olivier
-Quelle plante à quatre feuilles porte chance ?|Le trèfle
-Quel chiffre porte malheur en Occident ?|13
-Quel objet cassé porte sept ans de malheur ?|Le miroir
-Sous quel objet ne faut-il pas passer selon la superstition ?|Une échelle
-Quel animal noir porterait malheur ?|Le chat noir
-Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?|Un chaudron d'or
-Quelle créature irlandaise garde un trésor ?|Le farfadet
-Quel renne du père Noël a le nez rouge ?|Rudolphe
-Quelle fête célèbre l'amour le 14 février ?|La Saint-Valentin
-Quel monument de Pise est célèbre pour son inclinaison ?|La tour de Pise
-Quel mausolée indien est tout de marbre blanc ?|Le Taj Mahal
-Quelle merveille antique se trouvait à Babylone ?|Jardins suspendus
-Quelle merveille antique gardait le port de Rhodes ?|Le colosse
-Quelle grande horloge domine Londres ?|Big Ben
-Quel palais habite le président français ?|L'Élysée
-Quelle maison habite le président américain ?|La Maison-Blanche
-Dans quel palais londonien vit le roi d'Angleterre ?|Buckingham
-Quel géant de bois cache des soldats grecs ?|Le cheval de Troie
-Quel roi légendaire cherchait le Graal ?|Le roi Arthur
-Quelle épée légendaire appartenait au roi Arthur ?|Excalibur
-Quel magicien conseillait le roi Arthur ?|Merlin
-Quel hors-la-loi anglais volait aux riches pour les pauvres ?|Robin des Bois
-Dans quelle forêt vivait Robin des Bois ?|Sherwood
-Quel marin de conte a fait sept voyages ?|Sinbad
-Quel personnage de conte a une lampe magique ?|Aladin
-Combien de vœux accorde le génie de la lampe ?|Trois
-Qui apporte une galette à sa grand-mère malade ?|Chaperon rouge
-Combien de côtés a un octogone ?|Huit
-Combien de côtés a un pentagone ?|Cinq
-Combien font X en chiffres romains ?|Dix
-Combien font C en chiffres romains ?|100
-Quel objet indique l'heure grâce à une ombre ?|Cadran solaire
-Quel instrument mesure le temps avec du sable ?|Le sablier
-Quelle déesse grecque a donné son nom à Athènes ?|Athéna
-Quel dieu grec messager porte des sandales ailées ?|Hermès
-Quel titan grec porte le ciel sur ses épaules ?|Atlas
-Quel roi mythique change en or tout ce qu'il touche ?|Midas
-Qui a ouvert la boîte qui libérait tous les maux ?|Pandore
-Quel chien a trois têtes garde les enfers ?|Cerbère
-Quel pantin de bois voit son nez s'allonger ?|Pinocchio
-Quelle fillette de roman visite le pays des merveilles ?|Alice
-Quel écrivain anglais a créé Oliver Twist ?|Charles Dickens
-Quel dessinateur belge a créé Tintin ?|Hergé
-Quel chien accompagne Astérix et Obélix ?|Idéfix
-Quel druide prépare la potion magique des Gaulois ?|Panoramix
-Combien de cases compte une grille de tic-tac-toe ?|Neuf
-Aux échecs, quelle pièce se déplace en L ?|Le cavalier
+# Une ligne « > Question|Réponse » retouche la question juste au-dessus dans
+# les fichiers générés, sans toucher au firmware.
+Combien de côtés a un hexagone ?|Six|1
+Combien de jours dans une année bissextile ?|366|1
+Combien de couleurs dans un arc-en-ciel ?|Sept|1
+Combien de cartes dans un jeu standard sans jokers ?|52|1
+Combien de cases sur un échiquier ?|64|2
+Quelle pièce d'échecs ne peut jamais reculer ?|Le pion|2
+Combien de lettres dans l'alphabet français ?|26|1
+Combien de sens possède l'être humain ?|Cinq|1
+Combien d'années dans un siècle ?|100|1
+Combien d'années dans un millénaire ?|1000|1
+Combien d'unités dans une douzaine ?|Douze|1
+Quelle est la valeur approximative de pi ?|3,14|2
+Combien de côtés a un triangle ?|Trois|1
+Combien de zéros dans un million ?|Six|1
+Qui a inventé le téléphone ?|Graham Bell|2
+Qui a inventé l'ampoule électrique ?|Thomas Edison|2
+Quels frères ont inventé l'avion ?|Les frères Wright|2
+Qui a inventé la dynamite ?|Alfred Nobel|2
+Quel prix célèbre porte le nom d'Alfred Nobel ?|Le prix Nobel|1
+Où est exposée la Joconde ?|Au Louvre|2
+Qui a peint la Joconde ?|Léonard de Vinci|1
+Quel peintre s'est coupé une oreille ?|Van Gogh|2
+Qui a peint Guernica ?|Picasso|2
+De quel pays viennent les blocs Lego ?|Le Danemark|2
+De quelle couleur sont les Schtroumpfs ?|Bleus|1
+Quel reporter a un chien nommé Milou ?|Tintin|1
+Quel Gaulois est l'ami d'Obélix ?|Astérix|1
+Combien de dalmatiens dans le film de Disney ?|101|1
+Quel signal international signale une détresse ?|SOS|1
+Quel numéro d'urgence compose-t-on en Amérique du Nord ?|911|1
+Quelle direction indique l'aiguille d'une boussole ?|Le nord|1
+Quel jeu consiste à placer les chiffres 1 à 9 ?|Le sudoku|1
+Dans quel jeu forme-t-on des mots avec des lettres ?|Le Scrabble|1
+Quel art japonais consiste à plier du papier ?|L'origami|1
+Pays d'origine du yoga ?|L'Inde|2
+Combien font les faces opposées d'un dé ?|Sept|2
+Monnaie du Japon ?|Le yen|2
+Quel métal est liquide à température ambiante ?|Le mercure|2
+Combien de dents possède un adulte en général ?|32|2
+Quel est le livre le plus vendu au monde ?|La Bible|2
+Combien de faces a un cube ?|Six|1
+# Ambigu : bien du monde a appris quatre océans à l'école.
+Combien d'océans sur Terre ?|Cinq|2
+> Combien d'océans compte-t-on aujourd'hui, en incluant l'océan Austral ?|Cinq
+Combien de mois ont 31 jours ?|Sept|2
+Quel est le plus petit nombre premier ?|Deux|2
+Combien de millimètres dans un centimètre ?|Dix|1
+Combien de grammes dans un kilogramme ?|1000|1
+Quel instrument mesure la température ?|Le thermomètre|1
+Combien de roues a un tricycle ?|Trois|1
+Quel oiseau figure sur la pièce de un dollar canadien ?|Le huard|1
+Quel animal figure sur la pièce de 5 cents canadienne ?|Le castor|1
+Qui a écrit Les Misérables ?|Victor Hugo|2
+Qui a écrit Roméo et Juliette ?|Shakespeare|2
+Qui a écrit Le Petit Prince ?|Saint-Exupéry|2
+Quel auteur a créé Sherlock Holmes ?|Conan Doyle|2
+Combien d'étoiles sur le drapeau américain ?|50|1
+Combien de bandes sur le drapeau américain ?|13|2
+De quelle couleur est la boîte noire d'un avion ?|Orange|2
+Quelle pierre précieuse est rouge ?|Le rubis|1
+Quelle pierre précieuse est verte ?|L'émeraude|1
+De quel côté de la route conduit-on au Royaume-Uni ?|À gauche|1
+Combien d'années dure un lustre ?|Cinq|3
+Quel philosophe grec fut le maître d'Alexandre ?|Aristote|3
+Aux échecs, combien de dames au départ par joueur ?|Une|1
+Combien de lettres dans l'alphabet grec ?|24|3
+Monnaie utilisée en Europe ?|L'euro|1
+Monnaie utilisée au Royaume-Uni ?|Livre sterling|1
+Combien font XII en chiffres romains ?|Douze|1
+Combien font L en chiffres romains ?|50|2
+Quel professionnel défend les accusés ?|L'avocat|1
+Quelle science étudie les astres ?|L'astronomie|1
+Quelle science étudie les vestiges anciens ?|L'archéologie|1
+Quelle science étudie les animaux ?|La zoologie|1
+Quelle science étudie les plantes ?|La botanique|1
+Quel arbre produit des glands ?|Le chêne|1
+Quelle fleur offre-t-on à la Saint-Valentin ?|La rose|1
+Quel événement célèbre-t-on le 25 décembre ?|Noël|1
+Quelle fête des déguisements a lieu le 31 octobre ?|L'Halloween|1
+Quel animal cache des œufs à Pâques ?|Le lapin|1
+Quel musée parisien abrite la Vénus de Milo ?|Le Louvre|2
+Quel jeu de cartes se joue avec 78 cartes et des atouts ?|Le tarot|3
+Qui soigne les dents ?|Le dentiste|1
+Quel dieu grec règne sur l'Olympe ?|Zeus|1
+Quel dieu grec règne sur les mers ?|Poséidon|1
+Quel dieu grec règne sur les enfers ?|Hadès|2
+Quelle déesse grecque est née de l'écume ?|Aphrodite|2
+Quel héros grec a accompli douze travaux ?|Hercule|1
+Quel monstre grec pétrifie du regard ?|Méduse|1
+Quel cheval mythologique a des ailes ?|Pégase|1
+Quel oiseau mythique renaît de ses cendres ?|Le phénix|1
+Quelle créature est mi-homme mi-cheval ?|Le centaure|1
+Quel géant mythologique n'a qu'un seul œil ?|Le cyclope|1
+Qui a écrit L'Odyssée ?|Homère|2
+Quel héros de Jules Verne fait le tour du monde en 80 jours ?|Phileas Fogg|2
+Qui a écrit Vingt mille lieues sous les mers ?|Jules Verne|2
+Quel capitaine commande le sous-marin Nautilus ?|Nemo|2
+Quel bossu sonne les cloches de Notre-Dame ?|Quasimodo|1
+Quelle orpheline rousse vit aux Pignons verts ?|Anne|1
+Qui a écrit Les Trois Mousquetaires ?|Alexandre Dumas|2
+Quel écrivain russe a écrit Guerre et Paix ?|Tolstoï|3
+Quelle romancière a créé Hercule Poirot ?|Agatha Christie|2
+Quel auteur américain a créé Tom Sawyer ?|Mark Twain|2
+Quelle autrice a écrit Harry Potter ?|J.K. Rowling|1
+Quel peintre espagnol peignait des montres molles ?|Dalí|2
+Quel artiste a peint le plafond de la chapelle Sixtine ?|Michel-Ange|2
+Quelle statue de Michel-Ange représente un roi biblique ?|David|2
+Quel peintre français a peint des nénuphars à Giverny ?|Monet|2
+Quel sculpteur a créé Le Penseur ?|Rodin|2
+Combien de couleurs sur le drapeau français ?|Trois|1
+Quelles sont les couleurs du drapeau italien ?|Vert blanc rouge|1
+Quel pays a un cercle rouge sur fond blanc ?|Le Japon|1
+Quel pays a un drapeau non rectangulaire ?|Le Népal|3
+Quel instrument d'écriture contient du graphite ?|Le crayon|1
+Quel système de lecture pour aveugles porte le nom de son inventeur ?|Le braille|1
+Qui a inventé le World Wide Web ?|Tim Berners-Lee|3
+Quelle entreprise a créé l'iPhone ?|Apple|1
+# Ambigu : Paul Allen aussi.
+Qui a cofondé Microsoft ?|Bill Gates|1
+> Quel milliardaire a cofondé Microsoft avec Paul Allen ?|Bill Gates
+Quel moteur de recherche est le plus utilisé au monde ?|Google|1
+Combien de bits dans un octet ?|Huit|2
+Quel jeu vidéo met en scène un plombier moustachu ?|Mario|1
+Quel hérisson bleu court très vite en jeu vidéo ?|Sonic|1
+Quel jeu vidéo consiste à empiler des blocs qui tombent ?|Tetris|1
+Quel jeu vidéo se joue avec des cubes à construire ?|Minecraft|1
+Quel jeu de société fait acheter des rues ?|Monopoly|1
+Dans quel jeu doit-on deviner un mot dessiné ?|Pictionary|1
+Quel jeu consiste à couler des navires adverses ?|Bataille navale|1
+Quel jeu se joue avec cinq dés et des combinaisons ?|Le Yum (Yahtzee)|1
+Combien de dominos dans un jeu standard ?|28|2
+Combien de pièces dans un jeu d'échecs complet ?|32|2
+Quel casse-tête cubique a six couleurs ?|Le cube Rubik|1
+Quel métier répare les tuyaux ?|Le plombier|1
+Quel métier éteint les incendies ?|Le pompier|1
+Quel métier fabrique le pain ?|Le boulanger|1
+Quel métier ferre les chevaux ?|Le maréchal-ferrant|2
+Quel médecin opère les patients ?|Le chirurgien|1
+Combien de minutes dans une journée ?|1440|2
+Combien de secondes dans une heure ?|3600|2
+Combien de jours dans un mois de février normal ?|28|1
+Quel mois porte le nom de Jules César ?|Juillet|2
+Quel mois porte le nom de l'empereur Auguste ?|Août|2
+Quel jour de la semaine porte le nom de la Lune ?|Lundi|2
+Quelle est la quatrième lettre de l'alphabet grec ?|Delta|2
+Combien de degrés dans un angle droit ?|90|1
+Combien de degrés dans un cercle complet ?|360|1
+Combien de faces a une pyramide à base carrée ?|Cinq|2
+Comment nomme-t-on un 1 suivi de neuf zéros ?|Un milliard|1
+Quel symbole mathématique ressemble à un 8 couché ?|L'infini|1
+Quelle opération est l'inverse de la multiplication ?|La division|1
+Quelle carte est la plus forte au poker ?|L'as|1
+Combien de jokers dans un paquet de cartes ?|Deux|1
+Combien d'enseignes dans un jeu de cartes ?|Quatre|1
+Quel animal est surnommé le roi de la jungle ?|Le lion|1
+Quel oiseau est le symbole de la paix ?|La colombe|1
+Quel rameau symbolise la paix ?|L'olivier|2
+Quelle plante à quatre feuilles porte chance ?|Le trèfle|1
+Quel chiffre porte malheur en Occident ?|13|1
+Quel objet cassé porte sept ans de malheur ?|Le miroir|1
+Sous quel objet ne faut-il pas passer selon la superstition ?|Une échelle|1
+Quel animal noir porterait malheur ?|Le chat noir|1
+Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?|Un chaudron d'or|1
+# Le mot anglais est celui que la salle va crier.
+Quelle créature irlandaise garde un trésor ?|Le farfadet|2
+> Quelle créature irlandaise garde un trésor ?|Le farfadet (leprechaun)
+Quel renne du père Noël a le nez rouge ?|Rudolphe|1
+Quelle fête célèbre l'amour le 14 février ?|La Saint-Valentin|1
+Quel monument de Pise est célèbre pour son inclinaison ?|La tour de Pise|1
+Quel mausolée indien est tout de marbre blanc ?|Le Taj Mahal|2
+Quelle merveille antique se trouvait à Babylone ?|Jardins suspendus|3
+Quelle merveille antique gardait le port de Rhodes ?|Le colosse|3
+Quelle grande horloge domine Londres ?|Big Ben|1
+Quel palais habite le président français ?|L'Élysée|2
+Quelle maison habite le président américain ?|La Maison-Blanche|1
+Dans quel palais londonien vit le roi d'Angleterre ?|Buckingham|1
+Quel géant de bois cache des soldats grecs ?|Le cheval de Troie|1
+Quel roi légendaire cherchait le Graal ?|Le roi Arthur|1
+Quelle épée légendaire appartenait au roi Arthur ?|Excalibur|1
+Quel magicien conseillait le roi Arthur ?|Merlin|1
+Quel hors-la-loi anglais volait aux riches pour les pauvres ?|Robin des Bois|1
+Dans quelle forêt vivait Robin des Bois ?|Sherwood|2
+Quel marin de conte a fait sept voyages ?|Sinbad|2
+Quel personnage de conte a une lampe magique ?|Aladin|1
+Combien de vœux accorde le génie de la lampe ?|Trois|1
+Qui apporte une galette à sa grand-mère malade ?|Chaperon rouge|1
+Combien de côtés a un octogone ?|Huit|1
+Combien de côtés a un pentagone ?|Cinq|1
+Combien font X en chiffres romains ?|Dix|1
+Combien font C en chiffres romains ?|100|2
+Quel objet indique l'heure grâce à une ombre ?|Cadran solaire|1
+Quel instrument mesure le temps avec du sable ?|Le sablier|1
+Quelle déesse grecque a donné son nom à Athènes ?|Athéna|1
+Quel dieu grec messager porte des sandales ailées ?|Hermès|2
+Quel titan grec porte le ciel sur ses épaules ?|Atlas|2
+Quel roi mythique change en or tout ce qu'il touche ?|Midas|2
+Qui a ouvert la boîte qui libérait tous les maux ?|Pandore|1
+Quel chien a trois têtes garde les enfers ?|Cerbère|2
+Quel pantin de bois voit son nez s'allonger ?|Pinocchio|1
+Quelle fillette de roman visite le pays des merveilles ?|Alice|1
+Quel écrivain anglais a créé Oliver Twist ?|Charles Dickens|2
+Quel dessinateur belge a créé Tintin ?|Hergé|2
+Quel chien accompagne Astérix et Obélix ?|Idéfix|1
+Quel druide prépare la potion magique des Gaulois ?|Panoramix|1
+Combien de cases compte une grille de tic-tac-toe ?|Neuf|1
+Aux échecs, quelle pièce se déplace en L ?|Le cavalier|1

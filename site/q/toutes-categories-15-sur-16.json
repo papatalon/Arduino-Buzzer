@@ -8,128 +8,153 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la paella ?",
-      "reponse": "L'Espagne"
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe britannique a chanté Viva la Vida ?",
-      "reponse": "Coldplay"
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quel élément le diamant est-il composé ?",
-      "reponse": "Le carbone"
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pays a accueilli la Coupe du monde 2022 ?",
-      "reponse": "Le Qatar"
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel médecin grincheux de série boite avec une canne ?",
-      "reponse": "Dr House"
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Pays d'origine du yoga ?",
-      "reponse": "L'Inde"
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur français a chanté La Bohème ?",
-      "reponse": "Charles Aznavour"
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel félin de dessin animé est né d'un générique de film ?",
-      "reponse": "La Panthère rose"
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle mission a posé les premiers hommes sur la Lune ?",
-      "reponse": "Apollo 11"
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle force nous retient au sol ?",
-      "reponse": "La gravité"
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Montréal ?",
-      "reponse": "Un Montréalais"
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
-      "reponse": "Pizarro"
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport surfe sur la neige ?",
-      "reponse": "La planche à neige"
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal a la langue la plus longue par rapport au corps ?",
-      "reponse": "Le caméléon"
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de côtés a un hexagone ?",
-      "reponse": "Six"
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Terre-Neuve ?",
-      "reponse": "Un Terre-Neuvien"
+      "question": "Quel légume violet et allongé gratine la moussaka ?",
+      "reponse": "L'aubergine",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle boisson alcoolisée réchauffe le Carnaval de Québec ?",
-      "reponse": "Le caribou"
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année a pris fin la Première Guerre mondiale ?",
-      "reponse": "1918"
+      "question": "Combien de référendums sur la souveraineté a connus le Québec ?",
+      "reponse": "Deux",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Écosse ?",
-      "reponse": "Édimbourg"
+      "question": "Capitale de Terre-Neuve ?",
+      "reponse": "Saint-Jean",
+      "niveau": 2
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport combine ski de fond et tir ?",
-      "reponse": "Le biathlon"
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle l'école de Harry Potter ?",
+      "reponse": "Poudlard",
+      "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel jeu de société fait acheter des rues ?",
-      "reponse": "Monopoly"
+      "categorie": "Sciences et nature",
+      "question": "Quel félin est le plus gros du monde ?",
+      "reponse": "Le tigre",
+      "niveau": 2
     },
     {
-      "categorie": "Québec",
-      "question": "Quel est l'oiseau emblème du Québec ?",
-      "reponse": "Harfang des neiges"
+      "categorie": "Musique",
+      "question": "Comment nomme-t-on une chanson sans instruments ?",
+      "reponse": "A cappella",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels organes nous permettent de voir ?",
+      "reponse": "Les yeux",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume violet et allongé gratine la moussaka ?",
-      "reponse": "L'aubergine"
+      "question": "Quelle confiture d'agrumes est amère ?",
+      "reponse": "La marmelade",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de points vaut un panier de loin au basketball ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel savant italien a braqué une lunette vers le ciel ?",
+      "reponse": "Galilée",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de degrés dans un angle droit ?",
+      "reponse": "90",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Argentine ?",
-      "reponse": "Buenos Aires"
+      "question": "Quelle rivière célèbre coule à Ottawa ?",
+      "reponse": "L'Outaouais",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Le pluriel de festival se termine en « als » ou en « aux » ?",
+      "reponse": "En « als » (festivals)",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle activité consiste à marcher longtemps sur des sentiers en forêt ou en montagne ?",
+      "reponse": "La randonnée",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays les vaches sont-elles sacrées ?",
-      "reponse": "L'Inde"
+      "question": "Dans quel pays se trouve Tombouctou ?",
+      "reponse": "Le Mali",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quel amphithéâtre combattaient les gladiateurs ?",
+      "reponse": "Le Colisée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel objet ouvre-t-on pour se protéger de la pluie ?",
+      "reponse": "Un parapluie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de cases sur un échiquier ?",
+      "reponse": "64",
+      "niveau": 2
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel temps du passé décrit une action habituelle ?",
+      "reponse": "L'imparfait",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel mammifère australien a un bec de canard ?",
+      "reponse": "L'ornithorynque",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel vaisseau pilote Han Solo ?",
+      "reponse": "Faucon Millénium",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment nomme-t-on un circuit avec les buts remplis ?",
+      "reponse": "Grand chelem",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel rappeur américain a joué dans 8 Mile ?",
+      "reponse": "Eminem",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle pyramide d'Égypte est la plus grande ?",
+      "reponse": "Khéops",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel chanteur québécois a chanté Le Blues du businessman ?",
+      "reponse": "Claude Dubois",
+      "niveau": 2
     }
   ]
 }

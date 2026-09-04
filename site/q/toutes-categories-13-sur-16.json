@@ -8,128 +8,153 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film de Disney suit un éléphant aux grandes oreilles ?",
-      "reponse": "Dumbo"
+      "question": "Comment s'appelle le bonhomme de neige de La Reine des neiges ?",
+      "reponse": "Olaf",
+      "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel pourcentage de la Terre est couvert d'eau ?",
-      "reponse": "71 pour cent"
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle galaxie abrite notre système solaire ?",
-      "reponse": "La Voie lactée"
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle forme donne-t-on au poisson pané pour les enfants ?",
-      "reponse": "Des bâtonnets"
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur des Capitals a marqué plus de 900 buts ?",
-      "reponse": "Ovechkin"
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
-      "reponse": "Rio de Janeiro"
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel symbole lumineux surplombe le mont Royal ?",
-      "reponse": "La croix"
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment s'appelait le village iroquois devenu Québec ?",
-      "reponse": "Stadaconé"
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel long instrument suisse s'étire au sol ?",
-      "reponse": "Le cor des Alpes"
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "De quel côté de la route conduit-on au Royaume-Uni ?",
-      "reponse": "À gauche"
+      "categorie": "Mots et langue",
+      "question": "Que veut dire être soupe au lait ?",
+      "reponse": "Se fâcher vite",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel roi de France fut surnommé le Roi-Soleil ?",
-      "reponse": "Louis XIV"
+      "question": "Sur quel navire Darwin a-t-il navigué ?",
+      "reponse": "Le Beagle",
+      "niveau": 3
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel monument de Pise est célèbre pour son inclinaison ?",
-      "reponse": "La tour de Pise"
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel groupe sanguin est donneur universel ?",
-      "reponse": "O négatif"
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel Suisse élégant a gagné 20 titres du grand chelem ?",
-      "reponse": "Roger Federer"
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle huile méditerranéenne est pressée d'un fruit ?",
+      "reponse": "Huile d'olive",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de la Colombie-Britannique ?",
-      "reponse": "Victoria"
+      "question": "Quelle baie géante borde le nord du Québec ?",
+      "reponse": "Baie d'Hudson",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel zoo québécois est dédié à la faune nordique ?",
+      "reponse": "Saint-Félicien",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de temps la Terre met-elle à tourner sur elle-même ?",
+      "reponse": "24 heures",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment s'appelle le centre de la cible aux fléchettes ?",
+      "reponse": "Le bullseye",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel jour de la semaine vient après vendredi ?",
+      "reponse": "Samedi",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel détroit sépare la Russie de l'Alaska ?",
+      "reponse": "Bering",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelles sont les couleurs du drapeau italien ?",
+      "reponse": "Vert blanc rouge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
+      "reponse": "Tessa Virtue",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment mesure-t-on la force des ouragans ?",
+      "reponse": "Saffir-Simpson",
+      "niveau": 3
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle amazone a un lasso de vérité ?",
-      "reponse": "Wonder Woman"
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel accompagnement de Noël est une purée blanche ?",
-      "reponse": "Patates pilées"
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe québécois chante Toune d'automne ?",
-      "reponse": "Cowboys Fringants"
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle reine anglaise fut surnommée la Reine vierge ?",
-      "reponse": "Elizabeth Ire"
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot formé des lettres d'un autre ?",
-      "reponse": "Une anagramme"
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle fleur offre-t-on à la Saint-Valentin ?",
-      "reponse": "La rose"
+      "question": "Quelle arme lumineuse utilisent les Jedi ?",
+      "reponse": "Le sabre laser",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel petit pays est enclavé entre France et Espagne ?",
-      "reponse": "Andorre"
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Masculin de poule ?",
-      "reponse": "Le coq"
+      "question": "Quel état américain est le plus grand ?",
+      "reponse": "L'Alaska",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quel objet frappe-t-on au hockey ?",
-      "reponse": "La rondelle"
+      "question": "Dans quel sport utilise-t-on un fer et un vert ?",
+      "reponse": "Le golf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse canadienne a chanté Call Me Maybe ?",
+      "reponse": "Carly Rae Jepsen",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Combien de ponts mènent à l'île d'Orléans ?",
+      "reponse": "Un seul",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle pyramide d'Égypte est la plus grande ?",
-      "reponse": "Khéops"
+      "question": "Quelle grande bibliothèque antique a brûlé ?",
+      "reponse": "Alexandrie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est l'os le plus long du corps humain ?",
+      "reponse": "Le fémur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Combien de lettres dans le mot anticonstitutionnellement ?",
+      "reponse": "25",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel ballet met en scène des cygnes ?",
+      "reponse": "Le Lac des cygnes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel art japonais consiste à plier du papier ?",
+      "reponse": "L'origami",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle militante pakistanaise a reçu le Nobel de la paix ?",
+      "reponse": "Malala",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Avec quel lait fait-on la feta traditionnelle ?",
+      "reponse": "Lait de brebis",
+      "niveau": 3
     }
   ]
 }

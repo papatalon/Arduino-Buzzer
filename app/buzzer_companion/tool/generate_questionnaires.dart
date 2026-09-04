@@ -66,15 +66,21 @@ const kDepotGitHubCourt = 'papatalon/Arduino-Buzzer';
 const kTailleTelechargement = '18 Mo';
 
 class Entry {
-  Entry(this.category, this.question, this.answer);
+  Entry(this.category, this.question, this.answer, {this.niveau});
   final String category;
   final String question;
   final String answer;
+  // 1 facile (un enfant de huit ans repond), 2 moyen (culture generale
+  // ordinaire), 3 difficile (connaisseur). Null tant que la question n'a pas
+  // ete cotee : le fichier generé ne porte alors pas la cle, et l'app n'affiche
+  // rien plutot qu'un niveau invente.
+  final int? niveau;
 
   Map<String, dynamic> toJson() => {
         'categorie': category,
         'question': question,
         'reponse': answer,
+        if (niveau != null) 'niveau': niveau,
       };
 }
 
@@ -111,6 +117,39 @@ void main(List<String> args) {
   stdout.writeln('${all.length} questions, ${categories.length} catégories '
       '($accentues accentuées, ${categories.length - accentues} en attente).');
 
+  // LES INÉDITES : des questions qui n'existent que dans le catalogue, jamais
+  // dans le firmware. Elles rejoignent leur catégorie (la tuile grossit
+  // d'autant), les Mélanges, les thématiques et les collections par niveau,
+  // exactement comme celles de la banque : une question n'a pas à savoir
+  // d'où elle vient.
+  final inedites = _readInedites(parCategorie.keys.toSet());
+  for (final e in inedites) {
+    parCategorie.putIfAbsent(e.category, () => []).add(e);
+    all.add(e);
+  }
+  stdout.writeln('${inedites.length} questions inédites, hors firmware.');
+
+  // Pas deux fois la même question, d'où qu'elle vienne. Une inédite qui
+  // reprend une question de la banque ne sert à rien ; deux questions de la
+  // banque qui se répètent méritent une retouche.
+  final vues = <String, Entry>{};
+  for (final e in all) {
+    final k = _cle(e);
+    final deja = vues[k];
+    if (deja != null) {
+      stderr.writeln('Question en double : « ${e.question} » (${e.category}) '
+          'et « ${deja.question} » (${deja.category}).');
+      exit(1);
+    }
+    vues[k] = e;
+  }
+
+  final sansNiveau = all.where((e) => e.niveau == null).length;
+  final retouchees = categories.fold<int>(
+      0, (n, c) => n + (c.accented?.where((l) => l.retouche != null).length ?? 0));
+  stdout.writeln('${all.length - sansNiveau} questions cotées, '
+      '$sansNiveau sans niveau, $retouchees retouchées.');
+
   final out = Directory(_outputDir);
   // Le dossier q/ est vidé avant d'écrire : sans ça, un questionnaire
   // renommé (ou une thématique retirée) laisserait son ancien fichier en
@@ -128,9 +167,34 @@ void main(List<String> args) {
   // mêmes fichiers.
   for (final entry in parCategorie.entries) {
     _writeParts(entry.key, _etaler(entry.value, Random(_graine(entry.key))),
-        note: 'Banque du buzzer, catégorie ${entry.key}.',
-        emoji: kEmojiCategories[entry.key] ?? '');
+        note: 'Catégorie ${entry.key}.', emoji: _emojiDe(entry.key));
   }
+
+  // PAR NIVEAU. Les catégories et les Mélanges brassent les trois niveaux,
+  // ce qui donne des soirées où un enfant de huit ans attend son tour entre
+  // deux questions sur Hammurabi. Ces deux collections trient : « 7 à 77
+  // ans » ne garde que le niveau 1, celui où tout le monde dans la salle
+  // peut répondre ; « Connaisseurs » ne garde que le niveau 3, pour que ces
+  // questions restent jouables au lieu de disparaître du paysage.
+  //
+  // Le niveau 2 n'a pas de collection à lui : c'est le tout-venant, il est
+  // partout ailleurs.
+  const kPourTous = '7 à 77 ans';
+  final faciles =
+      _etaler(all.where((e) => e.niveau == 1).toList(), Random(_graine(kPourTous)));
+  _writeParts(kPourTous, faciles,
+      note: 'Des questions auxquelles tout le monde peut répondre, '
+          'de 7 à 77 ans, toutes catégories confondues.',
+      emoji: '🎈',
+      collection: kPourTous);
+
+  const kConnaisseurs = 'Connaisseurs';
+  final costauds =
+      _etaler(all.where((e) => e.niveau == 3).toList(), Random(_graine(kConnaisseurs)));
+  _writeParts(kConnaisseurs, costauds,
+      note: 'Les questions les plus dures de la banque, toutes catégories confondues.',
+      emoji: '🎓',
+      collection: kConnaisseurs);
 
   // Le mélange, c'est le format principal : seize rondes de 25, toutes
   // catégories confondues, TIRÉES SANS AUCUN RECOUPEMENT. Les seize
@@ -216,7 +280,7 @@ void _writeCatalogue() {
         nom,
         () => {
               'nom': nom,
-              'emoji': kEmojiCategories[nom] ?? entree['emoji'],
+              'emoji': kEmojiCategories[nom] ?? _emojiInedites[nom] ?? entree['emoji'],
               'questionnaires': 0,
               'questions': 0,
             });
@@ -514,7 +578,26 @@ class _Category {
   _Category(this.name, this.lines, this.accented);
   final String name;
   final List<String> lines;        // "Question|Reponse", sans accents
-  final List<String>? accented;    // même ordre, accentué, ou null
+  final List<_Ligne>? accented;    // même ordre, accentué et coté, ou null
+}
+
+// Une ligne du fichier accentué. Le fichier porte plus que les accents,
+// maintenant : le niveau de la question, et au besoin une RETOUCHE.
+//
+// La retouche est la seule façon de corriger une question sans toucher au
+// firmware. L'invariant (dépouillée de ses accents, la ligne redonne la
+// source) interdit de reformuler dans la ligne elle-même, et c'est voulu :
+// c'est lui qui prouve que rien n'a dérivé. Une question ambiguë (« Qui a
+// cofondé Microsoft ? », Gates ou Allen) reçoit donc une ligne « > » juste
+// dessous, avec l'énoncé et la réponse qui la remplacent dans les fichiers
+// générés. La source reste intacte, l'invariant tient, et le buzzer autonome
+// continue de poser l'ancienne question jusqu'à ce qu'on décide de le
+// reflasher.
+class _Ligne {
+  _Ligne(this.texte, this.niveau);
+  final String texte;      // "Question|Réponse", aligné sur la source
+  final int? niveau;       // 1, 2, 3, ou null tant que non coté
+  String? retouche;        // "Question|Réponse" servi à la place, ou null
 }
 
 List<_Category> _parseCategories(String raw) {
@@ -569,22 +652,124 @@ String? _literalsAfter(String raw, String marker) {
   return buffer.toString();
 }
 
+// --- Inédites ------------------------------------------------------------
+
+// Un fichier par lot dans tool/inedites/, au même format que les accentués
+// (« Question|Réponse|niveau »), avec deux lignes d'en-tête :
+//
+//   # Catégorie : Cinéma et télé
+//   # Emoji : 🎬        (seulement pour une catégorie que la banque n'a pas)
+//
+// Le niveau est OBLIGATOIRE ici : on écrit ces questions en connaissant
+// leur cible, il n'y a pas de cotation à rattraper. Une catégorie inconnue
+// crée une tuile, à condition d'apporter son pictogramme.
+const _ineditesDir = 'tool/inedites';
+final _emojiInedites = <String, String>{};
+
+String _emojiDe(String categorie) =>
+    kEmojiCategories[categorie] ?? _emojiInedites[categorie] ?? '';
+
+List<Entry> _readInedites(Set<String> categoriesConnues) {
+  final dir = Directory(_ineditesDir);
+  if (!dir.existsSync()) return [];
+  final entries = <Entry>[];
+  final fichiers = dir.listSync().whereType<File>().where((f) => f.path.endsWith('.txt')).toList()
+    ..sort((a, b) => a.path.compareTo(b.path));
+  for (final f in fichiers) {
+    final nom = f.uri.pathSegments.last;
+    String? categorie;
+    var numero = 0;
+    for (final brute in f.readAsLinesSync()) {
+      numero++;
+      final l = brute.trim();
+      if (l.isEmpty) continue;
+      if (l.startsWith('#')) {
+        final m = RegExp(r'^#\s*(Catégorie|Emoji)\s*:\s*(.+)$').firstMatch(l);
+        if (m == null) continue;
+        if (m.group(1) == 'Catégorie') {
+          categorie = m.group(2)!.trim();
+        } else if (categorie != null) {
+          _emojiInedites[categorie] = m.group(2)!.trim();
+        }
+        continue;
+      }
+      if (categorie == null) {
+        stderr.writeln('$nom, ligne $numero : « # Catégorie : ... » attendu avant la première question.');
+        exit(1);
+      }
+      final champs = l.split('|');
+      final niveau = champs.length == 3 ? int.tryParse(champs[2].trim()) : null;
+      if (niveau == null || niveau < 1 || niveau > 3) {
+        stderr.writeln('$nom, ligne $numero : attendu « Question|Réponse|niveau » avec un niveau de 1 à 3.');
+        exit(1);
+      }
+      entries.add(Entry(categorie, champs[0].trim(), champs[1].trim(), niveau: niveau));
+    }
+    if (categorie != null &&
+        !categoriesConnues.contains(categorie) &&
+        !_emojiInedites.containsKey(categorie)) {
+      stderr.writeln('$nom : la catégorie « $categorie » est nouvelle, il lui faut un « # Emoji : ... ».');
+      exit(1);
+    }
+  }
+  return entries;
+}
+
 // --- Accents -------------------------------------------------------------
 
-List<String>? _readAccents(int index, int expected) {
+// Format d'une ligne : « Question|Réponse|niveau ». Le niveau est un chiffre
+// de 1 à 3, facultatif tant que la cotation n'est pas finie. Une ligne qui
+// commence par « > » retouche la question juste au-dessus (voir _Ligne). Les
+// lignes vides et les « # » sont des commentaires.
+List<_Ligne>? _readAccents(int index, int expected) {
   final file = File('$_accentsDir/cat$index.txt');
   if (!file.existsSync()) return null;
-  final lines = file
-      .readAsLinesSync()
-      .map((l) => l.trim())
-      .where((l) => l.isNotEmpty && !l.startsWith('#'))
-      .toList();
-  if (lines.length != expected) {
-    stderr.writeln('cat$index.txt : ${lines.length} lignes pour $expected '
+  final lignes = <_Ligne>[];
+  var numero = 0;
+  for (final brute in file.readAsLinesSync()) {
+    numero++;
+    final l = brute.trim();
+    if (l.isEmpty || l.startsWith('#')) continue;
+
+    if (l.startsWith('>')) {
+      if (lignes.isEmpty || lignes.last.retouche != null) {
+        stderr.writeln('cat$index.txt, ligne $numero : retouche sans question '
+            'à retoucher, ou deuxième retouche pour la même question.');
+        exit(1);
+      }
+      final r = l.substring(1).trim();
+      if (r.split('|').length != 2) {
+        stderr.writeln('cat$index.txt, ligne $numero : une retouche s\'écrit '
+            '« > Question|Réponse ».');
+        exit(1);
+      }
+      lignes.last.retouche = r;
+      continue;
+    }
+
+    final champs = l.split('|');
+    if (champs.length < 2 || champs.length > 3) {
+      stderr.writeln('cat$index.txt, ligne $numero : attendu '
+          '« Question|Réponse|niveau », lu « $l ».');
+      exit(1);
+    }
+    int? niveau;
+    if (champs.length == 3) {
+      niveau = int.tryParse(champs[2].trim());
+      if (niveau == null || niveau < 1 || niveau > 3) {
+        stderr.writeln('cat$index.txt, ligne $numero : le niveau doit être '
+            '1, 2 ou 3, lu « ${champs[2]} ».');
+        exit(1);
+      }
+    }
+    lignes.add(_Ligne('${champs[0]}|${champs[1]}', niveau));
+  }
+  if (lignes.length != expected) {
+    stderr.writeln('cat$index.txt : ${lignes.length} lignes pour $expected '
         'questions attendues. Fichier ignoré.');
     return null;
   }
-  return lines;
+  return lignes;
 }
 
 List<Entry> _applyAccents(_Category cat) {
@@ -593,11 +778,13 @@ List<Entry> _applyAccents(_Category cat) {
   final categoryName = accented == null ? cat.name : _accentedName(cat.name);
 
   for (var i = 0; i < cat.lines.length; i++) {
-    final ligne = accented == null ? cat.lines[i] : accented[i];
+    final cotee = accented?[i];
+    final ligne = cotee?.texte ?? cat.lines[i];
 
     // L'invariant : sans ses accents, la ligne accentuée DOIT redonner la
     // source au caractère près. C'est ce qui garantit qu'on n'a fait
-    // qu'accentuer.
+    // qu'accentuer. La retouche, elle, n'y est pas soumise : c'est justement
+    // la ligne qui a le droit de dire autre chose que la source.
     if (accented != null && _strip(ligne) != cat.lines[i]) {
       stderr.writeln('${cat.name}, ligne ${i + 1} : la version accentuée ne '
           "correspond pas à la source.");
@@ -607,11 +794,13 @@ List<Entry> _applyAccents(_Category cat) {
       exit(1);
     }
 
-    final sep = ligne.indexOf('|');
+    final servie = cotee?.retouche ?? ligne;
+    final sep = servie.indexOf('|');
     entries.add(Entry(
       categoryName,
-      ligne.substring(0, sep).trim(),
-      ligne.substring(sep + 1).trim(),
+      servie.substring(0, sep).trim(),
+      servie.substring(sep + 1).trim(),
+      niveau: cotee?.niveau,
     ));
   }
   return entries;
@@ -974,11 +1163,27 @@ List<Entry> _etaler(List<Entry> entries, Random rnd) {
 // et de la réponse. Les mots-outils courts (« qui », « que », « de ») tombent
 // d'eux-mêmes ; les plus longs (« quel », « comment », « combien ») sont
 // éliminés par la fréquence dans _etaler.
-Set<String> _motsMarquants(Entry e) => _strip('${e.question} ${e.answer}')
+//
+// La catégorie compte comme un mot marquant : dans une ronde toutes
+// catégories, deux questions de cinéma d'affilée se remarquent autant que
+// deux questions sur Jules Verne. Dans une manche de catégorie, où toutes
+// les questions la partagent, la fréquence l'élimine d'elle-même.
+Set<String> _motsMarquants(Entry e) => {
+      'categorie:${e.category}',
+      ..._strip('${e.question} ${e.answer}')
+          .toLowerCase()
+          .split(RegExp('[^a-z0-9]+'))
+          .where((m) => m.length >= 4),
+    };
+
+// La clé d'unicité d'une question : l'énoncé sans accents, sans casse, sans
+// ponctuation finale. La même règle que l'app applique pour ne pas reposer
+// deux fois la même question dans une soirée.
+String _cle(Entry e) => _strip(e.question)
     .toLowerCase()
-    .split(RegExp('[^a-z0-9]+'))
-    .where((m) => m.length >= 4)
-    .toSet();
+    .replaceAll(RegExp(r'\s+'), ' ')
+    .replaceAll(RegExp(r'[?!.\s]+$'), '')
+    .trim();
 
 // Découpe en parts aussi égales que possible. 265 questions en 11 manches
 // donne onze manches de 24, pas dix de 25 suivies d'une de 15.
@@ -1054,6 +1259,16 @@ void _write(String titre, List<Entry> entries,
   final octets = utf8.encode(contenu);
   File('$_outputDir/q/$id.json').writeAsStringSync(contenu);
 
+  // Combien de questions de chaque niveau. C'est ce qui permet à l'app
+  // d'annoncer la difficulté d'un questionnaire sur sa fiche, avant même de
+  // l'avoir téléchargé. Absent tant qu'aucune question n'est cotée.
+  final niveaux = <String, int>{};
+  for (final e in entries) {
+    if (e.niveau != null) {
+      niveaux['${e.niveau}'] = (niveaux['${e.niveau}'] ?? 0) + 1;
+    }
+  }
+
   _catalogue.add({
     'id': id,
     'titre': titre,
@@ -1061,6 +1276,7 @@ void _write(String titre, List<Entry> entries,
     'collection': collection,
     'emoji': emoji,
     'questions': entries.length,
+    if (niveaux.isNotEmpty) 'niveaux': niveaux,
     'octets': octets.length,
     // Empreinte du contenu : c'est ce qui permet à l'application de savoir
     // qu'une copie locale est périmée après une régénération, au lieu de

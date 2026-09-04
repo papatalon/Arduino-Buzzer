@@ -48,6 +48,7 @@ class CatalogueEntry {
     required this.questionCount,
     required this.bytes,
     required this.fingerprint,
+    this.niveaux = const {},
   });
 
   final String id;
@@ -56,22 +57,36 @@ class CatalogueEntry {
   final String collection;
   final String emoji;
   final int questionCount;
+  // Combien de questions de chaque niveau, tel que l'index l'annonce : la
+  // fiche dit « facile » ou « difficile » sans avoir téléchargé le fichier.
+  final Map<int, int> niveaux;
   final int bytes;
   // Empreinte du contenu publié. Comparée à celle enregistrée au moment du
   // téléchargement : c'est ce qui distingue « j'ai ce questionnaire » de
   // « j'ai une VIEILLE version de ce questionnaire ».
   final String fingerprint;
 
-  factory CatalogueEntry.fromJson(Map<String, dynamic> json) => CatalogueEntry(
-        id: (json['id'] as String?)?.trim() ?? '',
-        title: (json['titre'] as String?)?.trim() ?? '',
-        note: (json['note'] as String?)?.trim() ?? '',
-        collection: (json['collection'] as String?)?.trim() ?? '',
-        emoji: (json['emoji'] as String?)?.trim() ?? '',
-        questionCount: (json['questions'] as num?)?.toInt() ?? 0,
-        bytes: (json['octets'] as num?)?.toInt() ?? 0,
-        fingerprint: (json['empreinte'] as String?)?.trim() ?? '',
-      );
+  String? get etiquetteNiveau => etiquetteDesNiveaux(niveaux);
+
+  factory CatalogueEntry.fromJson(Map<String, dynamic> json) {
+    final rawNiveaux = json['niveaux'];
+    return CatalogueEntry(
+      id: (json['id'] as String?)?.trim() ?? '',
+      title: (json['titre'] as String?)?.trim() ?? '',
+      note: (json['note'] as String?)?.trim() ?? '',
+      collection: (json['collection'] as String?)?.trim() ?? '',
+      emoji: (json['emoji'] as String?)?.trim() ?? '',
+      questionCount: (json['questions'] as num?)?.toInt() ?? 0,
+      niveaux: {
+        if (rawNiveaux is Map)
+          for (final e in rawNiveaux.entries)
+            if (niveauDepuisJson(e.key) != null && e.value is num)
+              niveauDepuisJson(e.key)!: (e.value as num).toInt(),
+      },
+      bytes: (json['octets'] as num?)?.toInt() ?? 0,
+      fingerprint: (json['empreinte'] as String?)?.trim() ?? '',
+    );
+  }
 }
 
 class CatalogueCollection {
