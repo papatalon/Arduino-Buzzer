@@ -65,11 +65,18 @@ const kDepotGitHubCourt = 'papatalon/Arduino-Buzzer';
 // casse rien.
 const kTailleTelechargement = '18 Mo';
 
+// D'où sort une question. Ne voyage pas dans les questionnaires (une question
+// n'a pas à dire d'où elle vient à l'animateur), seulement dans la page de
+// revue, où c'est justement ce qu'on veut savoir en relisant.
+enum Origine { banque, retouchee, inedite }
+
 class Entry {
-  Entry(this.category, this.question, this.answer, {this.niveau});
+  Entry(this.category, this.question, this.answer,
+      {this.niveau, this.origine = Origine.banque});
   final String category;
   final String question;
   final String answer;
+  final Origine origine;
   // 1 facile (un enfant de huit ans repond), 2 moyen (culture generale
   // ordinaire), 3 difficile (connaisseur). Null tant que la question n'a pas
   // ete cotee : le fichier generé ne porte alors pas la cle, et l'app n'affiche
@@ -179,22 +186,19 @@ void main(List<String> args) {
   //
   // Le niveau 2 n'a pas de collection à lui : c'est le tout-venant, il est
   // partout ailleurs.
-  const kPourTous = '7 à 77 ans';
-  final faciles =
-      _etaler(all.where((e) => e.niveau == 1).toList(), Random(_graine(kPourTous)));
-  _writeParts(kPourTous, faciles,
-      note: 'Des questions auxquelles tout le monde peut répondre, '
-          'de 7 à 77 ans, toutes catégories confondues.',
-      emoji: '🎈',
-      collection: kPourTous);
-
-  const kConnaisseurs = 'Connaisseurs';
-  final costauds =
-      _etaler(all.where((e) => e.niveau == 3).toList(), Random(_graine(kConnaisseurs)));
-  _writeParts(kConnaisseurs, costauds,
-      note: 'Les questions les plus dures de la banque, toutes catégories confondues.',
-      emoji: '🎓',
-      collection: kConnaisseurs);
+  _writeManches(
+    '7 à 77 ans',
+    all.where((e) => e.niveau == 1).toList(),
+    note: 'Des questions auxquelles tout le monde peut répondre, '
+        'de 7 à 77 ans, toutes catégories confondues.',
+    emoji: '🎈',
+  );
+  _writeManches(
+    'Connaisseurs',
+    all.where((e) => e.niveau == 3).toList(),
+    note: 'Les questions les plus dures de la banque, toutes catégories confondues.',
+    emoji: '🎓',
+  );
 
   // Le mélange, c'est le format principal : seize rondes de 25, toutes
   // catégories confondues, TIRÉES SANS AUCUN RECOUPEMENT. Les seize
@@ -254,6 +258,7 @@ void main(List<String> args) {
 
   _writeCatalogue();
   _writeVersion();
+  _writeRevue(all);
   _writeAccueil();
   _writeIntrouvable();
   _writeEntetes();
@@ -431,6 +436,241 @@ void _writeVersion() {
 // version à l'autre : chaque livraison resterait stockée en entier, pour
 // toujours. Il vit dans les versions publiées de GitHub, et cette page y
 // renvoie.
+// --- La page de revue -----------------------------------------------------
+
+// TOUTES les questions sur une seule page, par catégorie, avec leur niveau.
+//
+// Pourquoi une page et pas l'application : l'app montre les questionnaires,
+// c'est-à-dire des manches de 25 découpées et brassées. Pour RELIRE une
+// catégorie (repérer une question mal cotée, une ambiguïté, un trou), il faut
+// la voir en entier, d'un coup, et pouvoir chercher un mot dedans.
+//
+// Générée avec le reste du site : elle ne peut pas décrire une banque
+// différente de celle qui est publiée, ce qu'un fichier exporté à la main
+// finirait toujours par faire.
+//
+// Les lignes sont écrites en dur dans le HTML plutôt que rendues par du
+// script : la page se lit même si le script ne tourne pas, et le navigateur
+// n'a rien à construire au chargement. Le script ne fait que filtrer.
+// Les guillemets droits sont échappés aussi : ces chaînes servent autant de
+// texte que de valeur d'attribut (data-k, data-cat), et un seul guillemet non
+// échappé dans une question casserait la balise.
+String _echappe(String s) => s
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;');
+
+const _motsNiveaux = {1: 'facile', 2: 'moyen', 3: 'difficile'};
+
+void _writeRevue(List<Entry> all) {
+  final parCategorie = <String, List<Entry>>{};
+  for (final e in all) {
+    parCategorie.putIfAbsent(e.category, () => []).add(e);
+  }
+
+  int compte(Iterable<Entry> es, int niveau) =>
+      es.where((e) => e.niveau == niveau).length;
+
+  final sections = StringBuffer();
+  final sommaire = StringBuffer();
+  for (final nom in parCategorie.keys) {
+    final es = parCategorie[nom]!;
+    final id = _identifiant(nom);
+    final emoji = _emojiDe(nom);
+    sommaire.write('<a href="#$id" data-cat="${_echappe(nom)}">'
+        '$emoji ${_echappe(nom)} <b>${es.length}</b></a>');
+
+    final lignes = StringBuffer();
+    for (var i = 0; i < es.length; i++) {
+      final e = es[i];
+      final n = e.niveau ?? 0;
+      final marque = switch (e.origine) {
+        Origine.inedite => '<i class="marque inedite">inédite</i>',
+        Origine.retouchee => '<i class="marque retouchee">retouchée</i>',
+        Origine.banque => '',
+      };
+      lignes.write('<div class="ligne" data-n="$n" data-o="${e.origine.name}" '
+          'data-k="${_echappe(_strip('${e.question} ${e.answer}').toLowerCase())}">'
+          '<span class="num">${i + 1}</span>'
+          '<span class="q">${_echappe(e.question)}</span>'
+          '<span class="r">${_echappe(e.answer)}</span>'
+          '<span class="niv niv$n">${_motsNiveaux[n] ?? '?'}</span>'
+          '<span class="marques">$marque</span>'
+          '</div>');
+    }
+
+    sections.write('''
+  <section id="$id" data-cat="${_echappe(nom)}">
+    <h2>$emoji ${_echappe(nom)}</h2>
+    <p class="compte">${es.length} questions · ${compte(es, 1)} faciles,
+       ${compte(es, 2)} moyennes, ${compte(es, 3)} difficiles ·
+       ${es.where((e) => e.origine == Origine.inedite).length} inédites</p>
+    <div class="lignes">$lignes</div>
+    <p class="vide">Aucune question ne correspond au filtre.</p>
+  </section>
+''');
+  }
+
+  final total = all.length;
+  File('$_outputDir/revue.html').writeAsStringSync('''
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revue des questions</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    color-scheme: light dark;
+    --texte: #201e1d;
+    --gris: #605d5d;
+    --filet: rgba(32,30,29,.16);
+    --accent: #006786;
+    --magenta: #a8005c;
+    --fond: #f3f2f2;
+    --bande: #f3f2f2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --texte: #ece9e9; --gris: #a8a4a4; --filet: rgba(236,233,233,.18);
+            --accent: #62c5ee; --magenta: #ef8fc4; --fond: #1a1918;
+            --bande: #1a1918; }
+  }
+  * { box-sizing: border-box; }
+  body { font-family: Georgia, "Times New Roman", serif; max-width: 62rem;
+         margin: 0 auto; padding: 2.5rem 1.5rem 6rem; line-height: 1.5;
+         color: var(--texte); background: var(--fond); }
+  h1 { font-size: 2.4rem; line-height: 1.1; margin: 0 0 .4rem; }
+  .chapeau { color: var(--gris); margin: 0 0 1.5rem; }
+  h2 { font-size: 1.5rem; margin: 0 0 .2rem; }
+  .compte { color: var(--gris); font-size: .92rem; margin: 0 0 .8rem; }
+  section { margin: 3rem 0 0; border-top: 2px solid var(--texte);
+            padding-top: 1rem; }
+
+  /* La barre de filtres suit le défilement : relire 246 questions veut dire
+     défiler longtemps, et devoir remonter pour changer de filtre ferait
+     perdre sa place à chaque fois. */
+  .barre { position: sticky; top: 0; z-index: 2; background: var(--bande);
+           border-bottom: 1px solid var(--filet); padding: .8rem 0;
+           display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+  .barre input[type=search] { font: inherit; font-size: 1rem; padding: .45rem .7rem;
+           border: 1px solid var(--filet); background: transparent;
+           color: var(--texte); min-width: 15rem; flex: 1; }
+  .barre label { font-size: .95rem; color: var(--gris); display: inline-flex;
+                 align-items: center; gap: .3rem; cursor: pointer; }
+  .barre select { font: inherit; font-size: .95rem; padding: .4rem;
+                  border: 1px solid var(--filet); background: transparent;
+                  color: var(--texte); }
+  #resultat { color: var(--gris); font-size: .92rem; }
+
+  nav { display: flex; flex-wrap: wrap; gap: .1rem 1.1rem; margin: 0 0 .5rem; }
+  nav a { color: var(--accent); text-decoration: none; font-size: .95rem; }
+  nav a:hover { text-decoration: underline; }
+  nav b { font-weight: normal; color: var(--gris); }
+
+  .ligne { display: grid;
+           grid-template-columns: 2.6rem minmax(0,1fr) 12rem 4.6rem 5rem;
+           gap: .6rem; align-items: baseline; padding: .45rem 0;
+           border-bottom: 1px solid var(--filet); }
+  .num { color: var(--gris); font-size: .85rem; text-align: right; }
+  .r { color: var(--magenta); font-style: italic; }
+  .niv { font-size: .82rem; color: var(--gris); }
+  .niv1 { color: #2e7d32; }
+  .niv3 { color: #b35300; }
+  @media (prefers-color-scheme: dark) {
+    .niv1 { color: #7bc47f; } .niv3 { color: #e0a05a; }
+  }
+  .marque { font-size: .78rem; font-style: normal; color: var(--gris);
+            border: 1px solid var(--filet); padding: .05rem .35rem; }
+  .vide { display: none; color: var(--gris); font-style: italic; }
+  section.rien .vide { display: block; }
+  section.rien { opacity: .55; }
+  .ligne.cache, section.cache { display: none; }
+
+  @media (max-width: 46rem) {
+    .ligne { grid-template-columns: 2.2rem minmax(0,1fr); }
+    .r { grid-column: 2; } .niv, .marques { grid-column: 2; }
+  }
+  a.retour { color: var(--accent); }
+</style>
+</head>
+<body>
+  <h1>Revue des questions</h1>
+  <p class="chapeau">Les $total questions de la banque, par catégorie, avec leur
+     niveau. Cette page suit exactement ce qui est publié : elle est écrite en
+     même temps que le catalogue. <a class="retour" href="/">Retour au site</a></p>
+
+  <div class="barre">
+    <input type="search" id="q" placeholder="Chercher dans les questions et les réponses"
+           autocomplete="off">
+    <label><input type="checkbox" class="niv-f" value="1" checked> facile</label>
+    <label><input type="checkbox" class="niv-f" value="2" checked> moyen</label>
+    <label><input type="checkbox" class="niv-f" value="3" checked> difficile</label>
+    <select id="origine">
+      <option value="">Toutes provenances</option>
+      <option value="banque">Banque du buzzer</option>
+      <option value="inedite">Inédites</option>
+      <option value="retouchee">Retouchées</option>
+    </select>
+    <span id="resultat"></span>
+  </div>
+
+  <nav>$sommaire</nav>
+
+$sections
+<script>
+(function () {
+  var champ = document.getElementById('q');
+  var origine = document.getElementById('origine');
+  var cases = [].slice.call(document.querySelectorAll('.niv-f'));
+  var resultat = document.getElementById('resultat');
+  var lignes = [].slice.call(document.querySelectorAll('.ligne'));
+  var sections = [].slice.call(document.querySelectorAll('section'));
+
+  function sansAccents(s) {
+    return s.normalize('NFD').replace(/[\\u0300-\\u036f]/g, '').toLowerCase();
+  }
+
+  function filtrer() {
+    var mot = sansAccents(champ.value.trim());
+    var niveaux = {};
+    cases.forEach(function (c) { if (c.checked) niveaux[c.value] = true; });
+    var prov = origine.value;
+    var visibles = 0;
+
+    sections.forEach(function (section) {
+      var compte = 0;
+      var enfants = section.querySelectorAll('.ligne');
+      for (var i = 0; i < enfants.length; i++) {
+        var l = enfants[i];
+        var ok = niveaux[l.dataset.n] === true &&
+                 (prov === '' || l.dataset.o === prov) &&
+                 (mot === '' || l.dataset.k.indexOf(mot) !== -1);
+        l.classList.toggle('cache', !ok);
+        if (ok) compte++;
+      }
+      section.classList.toggle('rien', compte === 0);
+      visibles += compte;
+    });
+
+    resultat.textContent = visibles === $total
+      ? '$total questions'
+      : visibles + ' question' + (visibles > 1 ? 's' : '') + ' sur $total';
+  }
+
+  champ.addEventListener('input', filtrer);
+  origine.addEventListener('change', filtrer);
+  cases.forEach(function (c) { c.addEventListener('change', filtrer); });
+  filtrer();
+})();
+</script>
+</body>
+</html>
+''');
+  stdout.writeln('revue.html : $total questions relisibles sur une page.');
+}
+
 void _writeAccueil() {
   final collections = <String, int>{};
   for (final entree in _catalogue) {
@@ -530,6 +770,8 @@ void _writeAccueil() {
 
   <footer>
     Les questionnaires sont téléchargés par l'application depuis ce même site.
+    Toutes les questions se relisent sur une page :
+    <a href="/revue.html">la revue des questions</a>.
     Le code est ouvert : <a href="$kDepotGitHub">$kDepotGitHubCourt</a>.
   </footer>
 </body>
@@ -703,7 +945,8 @@ List<Entry> _readInedites(Set<String> categoriesConnues) {
         stderr.writeln('$nom, ligne $numero : attendu « Question|Réponse|niveau » avec un niveau de 1 à 3.');
         exit(1);
       }
-      entries.add(Entry(categorie, champs[0].trim(), champs[1].trim(), niveau: niveau));
+      entries.add(Entry(categorie, champs[0].trim(), champs[1].trim(),
+          niveau: niveau, origine: Origine.inedite));
     }
     if (categorie != null &&
         !categoriesConnues.contains(categorie) &&
@@ -801,6 +1044,7 @@ List<Entry> _applyAccents(_Category cat) {
       servie.substring(0, sep).trim(),
       servie.substring(sep + 1).trim(),
       niveau: cotee?.niveau,
+      origine: cotee?.retouche != null ? Origine.retouchee : Origine.banque,
     ));
   }
   return entries;
@@ -1109,6 +1353,63 @@ List<List<Entry>> _equilibreSeries(
   return rondes;
 }
 
+// Découpe un lot en manches où CHAQUE MANCHE A LA MÊME COMPOSITION.
+//
+// Le problème que ça règle : « 7 à 77 ans » puise dans un lot où le cinéma
+// pèse 203 questions et l'histoire 67. Brassé puis découpé, ça donnait une
+// ronde à cinq questions de cinéma et une seule d'histoire, et la suivante
+// sans aucune histoire ni musique. Sur une manche de 25, un tirage au sort
+// n'a aucune raison de tomber juste : c'est la loi des petits nombres, pas
+// un défaut de la graine.
+//
+// La règle est celle des plus forts quotients : à chaque place, la catégorie
+// qui maximise « ce qui lui reste, divisé par ce qu'elle a déjà pris dans
+// cette manche ». Une catégorie deux fois plus fournie prend deux fois plus
+// de places, mais elle ne peut pas rafler toute la manche, et une petite
+// catégorie garde toujours la sienne.
+//
+// PROPORTIONNEL, ET NON À PARTS ÉGALES comme les Mélanges. Des parts égales
+// videraient l'histoire (67 questions faciles) après 26 manches et
+// laisseraient 779 questions inutilisées. Le jour où les catégories faibles
+// seront étoffées, passer à parts égales ne coûtera plus rien.
+List<List<Entry>> _manchesProportionnelles(List<Entry> lot, int taille, Random rnd) {
+  final restant = <String, List<Entry>>{};
+  for (final e in lot) {
+    restant.putIfAbsent(e.category, () => []).add(e);
+  }
+  for (final l in restant.values) {
+    l.shuffle(rnd);
+  }
+
+  final manches = <List<Entry>>[];
+  var total = lot.length;
+  while (total > 0) {
+    final combien = min(taille, total);
+    final pris = <String, int>{};
+    final manche = <Entry>[];
+    for (var i = 0; i < combien; i++) {
+      String? choix;
+      var meilleur = 0.0;
+      for (final nom in restant.keys) {
+        if (restant[nom]!.isEmpty) continue;
+        final quotient = restant[nom]!.length / ((pris[nom] ?? 0) + 1);
+        if (choix == null || quotient > meilleur) {
+          choix = nom;
+          meilleur = quotient;
+        }
+      }
+      pris[choix!] = (pris[choix] ?? 0) + 1;
+      manche.add(restant[choix]!.removeLast());
+    }
+    total -= combien;
+    // Étalée à l'intérieur : la répartition dit COMBIEN de chaque catégorie,
+    // pas dans quel ordre, et deux questions voisines du même sujet se
+    // remarquent autant ici qu'ailleurs.
+    manches.add(_etaler(manche, rnd));
+  }
+  return manches;
+}
+
 // Graine reproductible tirée d'un nom. Pas la longueur du nom : « Québec »
 // et « Sports » en ont la même, et brassaient donc pareil.
 int _graine(String nom) => nom.codeUnits.fold(17, (h, c) => (h * 31 + c) & 0x7fffffff);
@@ -1184,6 +1485,23 @@ String _cle(Entry e) => _strip(e.question)
     .replaceAll(RegExp(r'\s+'), ' ')
     .replaceAll(RegExp(r'[?!.\s]+$'), '')
     .trim();
+
+// Écrit une collection dont chaque manche a la même composition par
+// catégorie. Contrairement à _writeParts, qui découpe une liste déjà ordonnée,
+// celle-ci compose chaque manche à partir du lot entier.
+void _writeManches(String titre, List<Entry> lot,
+    {required String note, required String emoji}) {
+  final manches = _manchesProportionnelles(lot, kMaxQuestions, Random(_graine(titre)));
+  for (var i = 0; i < manches.length; i++) {
+    _write(
+      '$titre ${_numero(i + 1, manches.length)} sur ${manches.length}',
+      manches[i],
+      note: '$note Manche ${i + 1} sur ${manches.length}.',
+      collection: titre,
+      emoji: emoji,
+    );
+  }
+}
 
 // Découpe en parts aussi égales que possible. 265 questions en 11 manches
 // donne onze manches de 24, pas dix de 25 suivies d'une de 15.
