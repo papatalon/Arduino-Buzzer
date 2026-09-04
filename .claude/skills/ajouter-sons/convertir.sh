@@ -53,6 +53,12 @@ rm -rf "$W" "$C"; mkdir -p "$W" "$C"
 TRIM="silenceremove=start_periods=1:start_duration=0:start_threshold=-50dB:detection=peak"
 AF="aformat=channel_layouts=mono,$TRIM,areverse,$TRIM,afade=t=in:st=0:d=0.005,areverse,afade=t=in:st=0:d=0.005,aresample=44100"
 
+# Plafond de duree des buzzers. BUZZ_MAX_MS vaut 2000 dans Mp3.h ; la marge
+# couvre le delai entre playFolder() et le premier echantillon sorti par le
+# DFPlayer, pendant lequel le minuteur du firmware tourne deja.
+BUZZ_CAP_S=1.90
+BUZZ_FADE_S=0.030
+
 printf "%-38s %8s %8s %9s %10s\n" "fichier" "avant" "apres" "rogne" "loudness"
 printf '%.0s-' {1..78}; echo
 
@@ -69,6 +75,30 @@ for p in "${CIBLES[@]}"; do
   if ! "$FF" -hide_banner -loglevel error -y -i "$src" -map 0:a:0 -vn -af "$AF" \
        -c:a pcm_s16le -ar 44100 -ac 1 "$W/$d/$b.wav"; then
     echo "ECHEC passe A : $p"; continue
+  fi
+
+  # Plafond des buzzers. Le firmware coupe a BUZZ_MAX_MS avec un mp3.stop()
+  # SEC, en plein milieu de la forme d'onde : sur un son soutenu ca claque.
+  # On coupe donc ici, avec un fondu de sortie, pour que le fichier se termine
+  # tout seul avant que le firmware n'ait a intervenir.
+  #
+  # La marge n'est pas cosmetique : le minuteur du firmware demarre a l'appel
+  # de playFolder(), alors que le DFPlayer met quelques dizaines de ms a
+  # sortir le premier echantillon. Sans marge, la fin du fichier tomberait
+  # quand meme sous le stop().
+  # Duree apres rognage mais avant plafonnement : c'est elle qui donne la
+  # colonne « rogne », qu'il ne faut pas melanger avec la coupe a 2 s.
+  dpre=$("$FP" -v error -show_entries format=duration -of csv=p=0 "$W/$d/$b.wav")
+  cap=""
+  if [ "$d" = "02_Buzzer" ]; then
+    if awk -v x="$dpre" -v c="$BUZZ_CAP_S" 'BEGIN{exit !(x>c)}'; then
+      fst=$(awk -v c="$BUZZ_CAP_S" -v f="$BUZZ_FADE_S" 'BEGIN{printf "%.3f", c-f}')
+      "$FF" -hide_banner -loglevel error -y -i "$W/$d/$b.wav" \
+        -af "atrim=0:$BUZZ_CAP_S,asetpts=N/SR/TB,afade=t=out:st=$fst:d=$BUZZ_FADE_S" \
+        -c:a pcm_s16le -ar 44100 -ac 1 "$W/$d/$b.capped.wav" \
+        && mv "$W/$d/$b.capped.wav" "$W/$d/$b.wav"
+      cap=" plafonne ${BUZZ_CAP_S}s"
+    fi
   fi
 
   # 05_Waiting joue en fond pendant que les equipes reflechissent : l'aligner
@@ -98,8 +128,7 @@ for p in "${CIBLES[@]}"; do
 
   da=$("$FP" -v error -show_entries format=duration -of csv=p=0 "$src")
   db=$("$FP" -v error -show_entries format=duration -of csv=p=0 "$C/$d/$b.mp3")
-  dw=$("$FP" -v error -show_entries format=duration -of csv=p=0 "$W/$d/$b.wav")
-  printf "%-38s %7.2fs %7.2fs %8.3fs %10s\n" "$b" "$da" "$db" "$(awk "BEGIN{print $da-$dw}")" "$note"
+  printf "%-38s %7.2fs %7.2fs %8.3fs %10s%s\n" "$b" "$da" "$db" "$(awk "BEGIN{print $da-$dpre}")" "$note" "$cap"
 done
 
 echo

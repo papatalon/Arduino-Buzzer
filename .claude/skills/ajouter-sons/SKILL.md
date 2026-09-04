@@ -53,6 +53,19 @@ MP3 **CBR 128 kbps, mono, 44,1 kHz**, aucune métadonnée ID3 ni pochette,
 silences rognés aux deux bouts avec fondu de 5 ms, normalisation EBU R128 à
 **-16 LUFS** — sauf `05_Waiting` à **-20 LUFS**.
 
+`02_Buzzer` a en plus un **plafond de durée à 1,90 s**, avec un fondu de
+sortie de 30 ms. Le firmware coupe les buzzers à `BUZZ_MAX_MS` (2000 ms)
+par un `mp3.stop()` **sec**, en plein milieu de la forme d'onde : sur un son
+soutenu comme un klaxon, ça claque. Plafonner à la conversion fait que le
+fichier se termine tout seul, proprement, avant que le firmware n'ait à
+intervenir.
+
+Les 100 ms de marge ne sont pas cosmétiques : le minuteur du firmware part à
+l'appel de `playFolder()`, alors que le DFPlayer met quelques dizaines de ms
+à sortir son premier échantillon. Sans marge, la fin du fichier retomberait
+quand même sous le `stop()`. Si `BUZZ_MAX_MS` change dans `Mp3.h`, ajuster
+`BUZZ_CAP_S` dans le script en gardant l'écart.
+
 Prérequis : `winget install Gyan.FFmpeg`.
 
 ## 1. Prendre l'état de départ
@@ -123,8 +136,12 @@ chercher :
 - Un **rognage anormalement gros** sur un son minuté : vérifier d'où il
   vient avec le filtre de rognage appliqué au début seul, et comparer les
   durées.
-- Un **buzzer qui dépasse 2 s** : `BUZZ_MAX_MS` le coupera en plein son. Ce
-  n'est pas une erreur, mais sa fin ne s'entendra jamais.
+- La mention **`plafonne 1.90s`** sur un buzzer : le son était plus long que
+  ce que le firmware laisse jouer, il a été coupé avec un fondu. Normal, mais
+  vérifier qu'on ne perd pas la chute du gag. Un `goat-1` de 20,9 s ramené à
+  1,9 s, personne ne s'en plaindra ; une réplique dont la fin porte le sens,
+  oui. Dans ce cas, choisir un autre extrait plutôt que de relever le
+  plafond.
 - Une **loudness de départ extrême** (au-delà de -8 LUFS) : le fichier
   écrasait tout et va beaucoup descendre. Normal, mais s'en assurer à
   l'oreille.
