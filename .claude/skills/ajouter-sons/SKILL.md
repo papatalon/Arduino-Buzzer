@@ -128,6 +128,31 @@ chercher :
 - Une **loudness de départ extrême** (au-delà de -8 LUFS) : le fichier
   écrasait tout et va beaucoup descendre. Normal, mais s'en assurer à
   l'oreille.
+- Un fichier **qui n'atteint pas sa cible** de plus de 2 dB. Voir juste
+  en dessous.
+
+### Quand loudnorm rate sa cible
+
+`linear=true` n'est pas une garantie. Sur un fichier dont les crêtes sont
+déjà hautes, atteindre la cible ferait dépasser le plafond de -1,5 dBTP :
+loudnorm abandonne alors le mode linéaire et bascule en **Dynamic**, qui
+compresse et atterrit où il peut. C'est le bon arbitrage — on ne peut pas
+à la fois monter le niveau et garder les crêtes basses — mais le résultat
+dévie.
+
+Le vérifier quand un écart dépasse 2 dB :
+
+```bash
+"$FF" -hide_banner -i "$W/$d/$b.wav" -af "loudnorm=I=$I:TP=-1.5:LRA=11:measured_I=…:linear=true:print_format=summary" -f null - 2>&1 | grep -E 'Output Integrated|Normalization Type'
+```
+
+`Normalization Type: Dynamic` confirme la bascule. La correction, si l'écart
+gêne : ajouter un `volume=<delta>dB` **après** le loudnorm et réencoder. Une
+réduction ne peut pas écrêter, donc c'est sans risque et ça tombe pile.
+
+Ça compte surtout dans `05_Waiting`, dont l'intérêt est justement d'être en
+retrait : un fichier 2,4 dB au-dessus de ses voisins y défait l'intention.
+C'est arrivé au `20-sec-countdown` le 4 septembre 2026.
 
 Déposer la sortie à côté de la bibliothèque pour écoute si l'ajout est
 important. Retirer ce dossier temporaire ensuite, il fait doublon.

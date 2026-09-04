@@ -6,3 +6,6 @@ build/
 Thumbs.db
 .vscode/*
 !.vscode/tasks.json
+
+# Artefacts de navigation Playwright
+.playwright-mcp/
