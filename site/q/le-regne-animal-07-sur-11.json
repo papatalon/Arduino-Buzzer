@@ -8,38 +8,137 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle exploratrice a un singe nommé Babouche ?",
-      "reponse": "Dora",
+      "question": "Quel félin de dessin animé est né d'un générique de film ?",
+      "reponse": "La Panthère rose",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle volaille laquée est le classique de la capitale chinoise ?",
+      "reponse": "Canard de Pékin",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel petit oiseau jaune échappe toujours au chat Grosminet ?",
+      "reponse": "Titi",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin géant souffle un jet d'eau par le dos ?",
+      "reponse": "La baleine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chien accompagne Dorothy dans le Magicien d'Oz ?",
+      "reponse": "Toto",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que dessinaient les hommes préhistoriques sur les murs des grottes ?",
+      "reponse": "Des animaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel grand reptile du Nil était sacré en Égypte ?",
+      "reponse": "Le crocodile",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit ours de dessin animé porte un chandail et un prénom de couleur ?",
+      "reponse": "Petit Ours Brun",
+      "niveau": 2,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle cabane à sucre célèbre appartient à un chef renommé ?",
+      "reponse": "Au Pied de Cochon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel disque de plastique lance-t-on à un ami ou à un chien au parc ?",
+      "reponse": "Le frisbee",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel géant de bois cache des soldats grecs ?",
-      "reponse": "Le cheval de Troie",
+      "question": "Quel animal figure sur la pièce de 5 cents canadienne ?",
+      "reponse": "Le castor",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson salé est le plat national du Portugal ?",
-      "reponse": "La morue",
-      "niveau": 2
+      "categorie": "Sciences et nature",
+      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
+      "reponse": "L'autruche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit de l'ours ?",
+      "reponse": "L'ourson",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de pattes possède une araignée ?",
+      "reponse": "Huit",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel style de nage porte le nom d'un insecte ?",
+      "reponse": "Le papillon",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel oiseau de dessin animé file à toute vitesse en faisant « bip bip » ?",
-      "reponse": "Bip Bip",
+      "question": "Quel canard noir est le rival de Bugs Bunny ?",
+      "reponse": "Daffy Duck",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du coq ?",
-      "reponse": "Cocorico",
+      "categorie": "Sciences et nature",
+      "question": "Quel dinosaure a trois cornes sur la tête ?",
+      "reponse": "Le tricératops",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la peur des araignées ?",
-      "reponse": "L'arachnophobie",
+      "categorie": "Cinéma et télé",
+      "question": "Quel ours du Livre de la jungle chante Il en faut peu ?",
+      "reponse": "Baloo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelait-on les combats à cheval où deux chevaliers se chargeaient avec des lances ?",
+      "reponse": "Les joutes",
       "niveau": 1
     },
     {
@@ -50,98 +149,37 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel mammifère australien a un bec de canard ?",
-      "reponse": "L'ornithorynque",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
-      "reponse": "Bugs Bunny",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Masculin d'abeille ?",
-      "reponse": "Le faux bourdon",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on le médecin des animaux ?",
-      "reponse": "Le vétérinaire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat botté a de grands yeux attendrissants ?",
-      "reponse": "Chat Potté",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel petit animal à coquille rampe lentement en laissant une trace ?",
-      "reponse": "L'escargot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est l'animal le plus haut du monde ?",
+      "question": "Quel animal a le cou le plus long ?",
       "reponse": "La girafe",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie poser un lapin ?",
-      "reponse": "Ne pas venir",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture générale",
-      "question": "Quel reporter a un chien nommé Milou ?",
-      "reponse": "Tintin",
-      "niveau": 1
+      "question": "Quel chien à trois têtes garde les enfers ?",
+      "reponse": "Cerbère",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le lionceau du Roi Lion ?",
-      "reponse": "Simba",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Pascal, l'ami de Raiponce ?",
-      "reponse": "Un caméléon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal domestique les Égyptiens adoraient-ils au point de le momifier ?",
-      "reponse": "Le chat",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de bosses a un dromadaire ?",
-      "reponse": "Une",
+      "question": "Quel ogre a un ami âne très bavard ?",
+      "reponse": "Shrek",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Petit de la vache ?",
-      "reponse": "Le veau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du serpent ?",
-      "reponse": "Le sifflement",
+      "question": "Comment nomme-t-on la femelle du canard ?",
+      "reponse": "La cane",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel oiseau répète ce qu'on lui dit ?",
-      "reponse": "Le perroquet",
+      "question": "Quel insecte est le principal pollinisateur ?",
+      "reponse": "L'abeille",
       "niveau": 1
     }
   ]

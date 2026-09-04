@@ -10,7 +10,12 @@
       "categorie": "Cinéma et télé",
       "question": "Quel est le matricule de James Bond ?",
       "reponse": "007",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -22,19 +27,32 @@
       "categorie": "Cinéma et télé",
       "question": "Quel Pokémon jaune lance des éclairs ?",
       "reponse": "Pikachu",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel jeune partenaire aide Walter White ?",
       "reponse": "Jesse Pinkman",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quelle sitcom suit des physiciens et leur voisine Penny ?",
       "reponse": "Big Bang Theory",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -56,38 +74,55 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel monstre bleu de Sesame Street dévore des biscuits ?",
-      "reponse": "Le Monstre des biscuits",
-      "niveau": 1
+      "question": "Quel petit robot orange et blanc roule en forme de boule dans Star Wars ?",
+      "reponse": "BB-8",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quelle série animée suit Stewie et Peter Griffin ?",
       "reponse": "Family Guy",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel studio japonais a créé Mon voisin Totoro ?",
       "reponse": "Ghibli",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel chien de dessin animé est le compagnon de Charlie Brown ?",
       "reponse": "Snoopy",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel coyote n'arrive jamais à attraper Bip Bip ?",
+      "reponse": "Vil Coyote",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel petit oiseau jaune échappe toujours au chat Grosminet ?",
       "reponse": "Titi",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel coyote n'arrive jamais à attraper Bip Bip ?",
-      "reponse": "Vil Coyote",
       "niveau": 1
     },
     {
@@ -112,13 +147,21 @@
       "categorie": "Cinéma et télé",
       "question": "Quel acteur incarne Iron Man au cinéma ?",
       "reponse": "Robert Downey Jr",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel avare célèbre du terroir québécois aime son argent ?",
       "reponse": "Séraphin",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -154,7 +197,10 @@
       "categorie": "Cinéma et télé",
       "question": "Quel réalisateur a fait Psychose et Les Oiseaux ?",
       "reponse": "Hitchcock",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
     }
   ]
 }

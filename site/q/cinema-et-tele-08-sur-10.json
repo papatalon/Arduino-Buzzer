@@ -22,7 +22,12 @@
       "categorie": "Cinéma et télé",
       "question": "Quel film d'animation met en scène Dracula et sa famille de monstres dans un hôtel ?",
       "reponse": "Hôtel Transylvanie",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -46,7 +51,11 @@
       "categorie": "Cinéma et télé",
       "question": "Quelle série espagnole suit des braqueurs en combinaison rouge ?",
       "reponse": "La casa de papel",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -64,7 +73,11 @@
       "categorie": "Cinéma et télé",
       "question": "Quel film d'animation organise un grand concours de chant entre animaux ?",
       "reponse": "Tous en scène",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -88,7 +101,11 @@
       "categorie": "Cinéma et télé",
       "question": "Quel ninja blond rêve de devenir Hokage ?",
       "reponse": "Naruto",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -112,7 +129,12 @@
       "categorie": "Cinéma et télé",
       "question": "Quelle série suit six amis dans un café new-yorkais ?",
       "reponse": "Friends",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -124,7 +146,11 @@
       "categorie": "Cinéma et télé",
       "question": "Quel duo formaient Claude Meunier et Serge Thériault ?",
       "reponse": "Ding et Dong",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -136,19 +162,31 @@
       "categorie": "Cinéma et télé",
       "question": "Quel escargot de course devient ultra rapide au cinéma ?",
       "reponse": "Turbo",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel personnage jeunesse parlait à sa marionnette Bobinette ?",
       "reponse": "Bobino",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel film d'animation raconte une princesse écossaise aux cheveux roux qui tire à l'arc ?",
       "reponse": "Rebelle",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     }
   ]
 }

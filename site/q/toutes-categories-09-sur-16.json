@@ -7,154 +7,220 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "En quelle année l'homme a-t-il marché sur la Lune ?",
-      "reponse": "1969",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel gala québécois récompense le cinéma ?",
-      "reponse": "Les Iris",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de points vaut un lancer franc au basketball ?",
-      "reponse": "Un",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Qui a créé Mickey Mouse ?",
-      "reponse": "Walt Disney",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel Argentin a soulevé la Coupe du monde 2022 ?",
-      "reponse": "Lionel Messi",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année a débuté la Révolution française ?",
-      "reponse": "1789",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel album de Michael Jackson est le plus vendu ?",
-      "reponse": "Thriller",
-      "niveau": 2
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quel animal polaire a la peau noire sous son pelage blanc ?",
-      "reponse": "L'ours polaire",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel dieu nordique manie un marteau chez Marvel ?",
-      "reponse": "Thor",
+      "question": "Quelle onde invisible réchauffe les aliments au four ?",
+      "reponse": "Les micro-ondes",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment dit-on « merci » en espagnol ?",
-      "reponse": "Gracias",
-      "niveau": 1
+      "categorie": "Sports",
+      "question": "Dans quel sport parle-t-on de peloton ?",
+      "reponse": "Le cyclisme",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelles tours new-yorkaises sont tombées le 11 septembre 2001 ?",
-      "reponse": "World Trade Center",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Manitoba ?",
-      "reponse": "Winnipeg",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle statue de Michel-Ange représente un roi biblique ?",
-      "reponse": "David",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel outil racle la neige des pare-brise ?",
-      "reponse": "Un gratteux",
+      "categorie": "Sports",
+      "question": "Comment s'appelle le joueur qui garde le filet au hockey ?",
+      "reponse": "Le gardien de but",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat français mijote du bœuf au vin rouge ?",
-      "reponse": "Bœuf bourguignon",
+      "question": "Quel légume vert et allongé croque-t-on en salade et transforme-t-on en cornichon ?",
+      "reponse": "Le concombre",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Combien de planètes dans le système solaire ?",
-      "reponse": "Huit",
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le père des Simpson ?",
+      "reponse": "Homer",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel est le plus long fleuve du Canada ?",
-      "reponse": "Le Mackenzie",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel objet porté au poignet donne l'heure ?",
-      "reponse": "Une montre",
-      "niveau": 1
+      "categorie": "Histoire",
+      "question": "Qui était le dernier tsar de Russie ?",
+      "reponse": "Nicolas II",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle clé musicale ressemble à une esperluette ?",
-      "reponse": "Clé de sol",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pomme de terre frite est en spirale ?",
-      "reponse": "Frite tornade",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Où vivent les ours polaires ?",
-      "reponse": "En Arctique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Qui a inventé le basketball ?",
-      "reponse": "James Naismith",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le pôle Sud ?",
-      "reponse": "L'Antarctique",
+      "question": "Quel petit instrument à quatre cordes vient d'Hawaï ?",
+      "reponse": "Le ukulélé",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Contraire de majuscule ?",
-      "reponse": "Minuscule",
+      "question": "Quel signe termine une question ?",
+      "reponse": "Interrogation",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel jour de la semaine porte le nom de la Lune ?",
-      "reponse": "Lundi",
-      "niveau": 2
+      "question": "Comment appelle-t-on le grand navire qui emmène des passagers en croisière ?",
+      "reponse": "Un paquebot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle tablette de chocolat est pleine de bulles d'air ?",
+      "reponse": "Le Aero",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel boxeur de cinéma monte les marches de Philadelphie ?",
+      "reponse": "Rocky",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus petite province canadienne ?",
+      "reponse": "Prince-Édouard",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on un mot formé des lettres d'un autre ?",
+      "reponse": "Une anagramme",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel marché public borde le canal de Lachine ?",
+      "reponse": "Atwater",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chienne bleue australienne joue avec sa sœur Bingo dans une série ?",
+      "reponse": "Bluey",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle lumière invisible bronze la peau ?",
+      "reponse": "Les ultraviolets",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve américain se jette à La Nouvelle-Orléans ?",
+      "reponse": "Le Mississippi",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel navigateur a traversé l'Atlantique en 1492 et atteint l'Amérique ?",
+      "reponse": "Christophe Colomb",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de Cuba ?",
+      "reponse": "La Havane",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel mammifère australien a un bec de canard ?",
+      "reponse": "L'ornithorynque",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel est le plus petit nombre premier ?",
+      "reponse": "Deux",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage italien garnit la pizza ?",
+      "reponse": "La mozzarella",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de joueurs par équipe au soccer ?",
+      "reponse": "Onze",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle série de romans suit Émilie Bordeleau ?",
+      "reponse": "Les Filles de Caleb",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel gros instrument à vent en cuivre fait les sons graves ?",
+      "reponse": "Le tuba",
+      "niveau": 1
     }
   ]
 }

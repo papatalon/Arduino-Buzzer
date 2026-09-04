@@ -8,27 +8,44 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quel instrument accompagne le flamenco ?",
+      "question": "Quel instrument à cordes pincées accompagne le flamenco ?",
       "reponse": "La guitare",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Quel opéra de Bizet se déroule en Espagne ?",
       "reponse": "Carmen",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Quel groupe a chanté Sweet Child O' Mine ?",
       "reponse": "Guns N' Roses",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Quel chanteur est surnommé The Boss ?",
       "reponse": "Bruce Springsteen",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -40,7 +57,12 @@
       "categorie": "Musique",
       "question": "Quel instrument électronique remplace un orchestre ?",
       "reponse": "Le synthétiseur",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -52,19 +74,31 @@
       "categorie": "Musique",
       "question": "Quel groupe britannique a chanté Viva la Vida ?",
       "reponse": "Coldplay",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Quel ténor italien a chanté avec les Trois Ténors ?",
       "reponse": "Pavarotti",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Combien de cordes a un violoncelle ?",
       "reponse": "Quatre",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -76,13 +110,22 @@
       "categorie": "Musique",
       "question": "Quel style musical est né à la Nouvelle-Orléans ?",
       "reponse": "Le jazz",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Quel groupe britannique a chanté Satisfaction ?",
       "reponse": "Rolling Stones",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -94,7 +137,10 @@
       "categorie": "Musique",
       "question": "Quelle chanteuse folk canadienne a écrit Big Yellow Taxi ?",
       "reponse": "Joni Mitchell",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -106,13 +152,21 @@
       "categorie": "Musique",
       "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
       "reponse": "Nézet-Séguin",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Quel xylophone africain a des calebasses ?",
       "reponse": "Le balafon",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -124,25 +178,43 @@
       "categorie": "Musique",
       "question": "Quelle chanteuse country a chanté Jolene ?",
       "reponse": "Dolly Parton",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Quelle danse des années 90 se fait en groupe, bras tendus, avec un quart de tour à la fin ?",
       "reponse": "La Macarena",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Quel gros instrument à cordes se joue debout ?",
       "reponse": "La contrebasse",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Quel rappeur canadien vient de Toronto ?",
       "reponse": "Drake",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     }
   ]
 }

@@ -8,68 +8,67 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel monstre géant venu du Japon écrase des villes au cinéma ?",
-      "reponse": "Godzilla",
+      "question": "Quel film de 1975 a vidé les plages avec son requin géant ?",
+      "reponse": "Les Dents de la mer",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle fée accompagne Peter Pan ?",
+      "reponse": "Clochette",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel dieu grec règne sur les mers ?",
-      "reponse": "Poséidon",
+      "question": "Quel titan grec porte le ciel sur ses épaules ?",
+      "reponse": "Atlas",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit orange se sculpte à l'Halloween ?",
+      "reponse": "La citrouille",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Dans quel conte Disney une rose est-elle sous cloche ?",
-      "reponse": "La Belle et la Bête",
-      "niveau": 1
+      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
+      "reponse": "Arthur Laroche",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel géant mythologique n'a qu'un seul œil ?",
-      "reponse": "Le cyclope",
+      "categorie": "Cinéma et télé",
+      "question": "Quel ogre a un ami âne très bavard ?",
+      "reponse": "Shrek",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
       "question": "Quelle créature est mi-homme mi-cheval ?",
       "reponse": "Le centaure",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée japonaise suit Son Goku ?",
-      "reponse": "Dragon Ball",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel monstre grec pétrifie du regard ?",
-      "reponse": "Méduse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel dieu nordique manie un marteau chez Marvel ?",
-      "reponse": "Thor",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on une histoire de fées, de princes et de sorcières ?",
-      "reponse": "Un conte",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Qui laisse de l'argent sous l'oreiller en échange d'une dent ?",
-      "reponse": "La fée des dents",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle fée accompagne Peter Pan ?",
-      "reponse": "Clochette",
+      "categorie": "Histoire",
+      "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
+      "reponse": "Le mammouth",
       "niveau": 1
     },
     {
@@ -79,58 +78,125 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quelle créature irlandaise garde un trésor ?",
-      "reponse": "Le farfadet (leprechaun)",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel personnage de conte a une lampe magique ?",
-      "reponse": "Aladin",
+      "categorie": "Cinéma et télé",
+      "question": "Quel monstre bleu et poilu travaille avec Mike ?",
+      "reponse": "Sulley",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel dieu grec règne sur l'Olympe ?",
-      "reponse": "Zeus",
-      "niveau": 1
+      "question": "Sous quel objet ne faut-il pas passer selon la superstition ?",
+      "reponse": "Une échelle",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel objet cassé porte sept ans de malheur ?",
-      "reponse": "Le miroir",
-      "niveau": 1
+      "question": "Quel magicien conseillait le roi Arthur ?",
+      "reponse": "Merlin",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit orange se sculpte à l'Halloween ?",
-      "reponse": "La citrouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel lac des Cantons-de-l'Est cacherait un monstre ?",
-      "reponse": "Memphrémagog",
-      "niveau": 2
+      "categorie": "Cinéma et télé",
+      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
+      "reponse": "King Kong",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
-      "question": "Quelle fillette de conte entre chez trois ours et goûte leur gruau ?",
-      "reponse": "Boucle d'or",
+      "question": "Quel frère et quelle sœur de conte sèment des miettes de pain dans la forêt ?",
+      "reponse": "Hansel et Gretel",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel Argentin a marqué le but de la main de Dieu ?",
-      "reponse": "Maradona",
-      "niveau": 2
+      "categorie": "Cinéma et télé",
+      "question": "Quel monstre menace les enfants de Stranger Things ?",
+      "reponse": "Le Démogorgon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel méchant sorcier des Schtroumpfs a un chat ?",
+      "reponse": "Gargamel",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel animal a allaité Romulus et Rémus ?",
-      "reponse": "Une louve",
-      "niveau": 2
+      "question": "Autour de quelle table siégeaient les chevaliers d'Arthur ?",
+      "reponse": "La Table ronde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Sébastien dans La Petite Sirène ?",
+      "reponse": "Un crabe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel dieu grec messager porte des sandales ailées ?",
+      "reponse": "Hermès",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel monstre géant venu du Japon écrase des villes au cinéma ?",
+      "reponse": "Godzilla",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel oiseau mythique renaît de ses cendres ?",
+      "reponse": "Le phénix",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel roi légendaire cherchait le Graal ?",
+      "reponse": "Le roi Arthur",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

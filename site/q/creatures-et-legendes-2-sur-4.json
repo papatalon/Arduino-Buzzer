@@ -7,10 +7,72 @@
   "emoji": "🐉",
   "questions": [
     {
+      "categorie": "Culture pop",
+      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
+      "reponse": "Dans l'œil du dragon",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal a allaité Romulus et Rémus ?",
+      "reponse": "Une louve",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture générale",
-      "question": "Quelle déesse grecque a donné son nom à Athènes ?",
-      "reponse": "Athéna",
+      "question": "Quel monstre vert explose à côté du joueur dans Minecraft ?",
+      "reponse": "Le creeper",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante compose le menu du panda géant ?",
+      "reponse": "Le bambou",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel cheval mythologique a des ailes ?",
+      "reponse": "Pégase",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature bleue de Disney, échappée de l'espace, s'appelle l'expérience 626 ?",
+      "reponse": "Stitch",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel Argentin a marqué le but de la main de Dieu ?",
+      "reponse": "Maradona",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -19,39 +81,82 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel vilain petit oiseau de conte devient un beau cygne ?",
-      "reponse": "Le vilain petit canard",
+      "categorie": "Sciences et nature",
+      "question": "Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?",
+      "reponse": "Le tyrannosaure",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quelle épée légendaire appartenait au roi Arthur ?",
-      "reponse": "Excalibur",
+      "question": "Quelle romancière a créé Hercule Poirot ?",
+      "reponse": "Agatha Christie",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pomme enrobée est une friandise d'Halloween ?",
+      "reponse": "Pomme au caramel",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?",
-      "reponse": "Jeanne Mance",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle sirène Disney rêve de vivre sur terre ?",
-      "reponse": "Ariel",
+      "categorie": "Mots et langue",
+      "question": "Féminin de dieu ?",
+      "reponse": "Déesse",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel chanteur des Colocs est une légende ?",
-      "reponse": "Dédé Fortin",
-      "niveau": 2
+      "question": "Quelles montagnes russes en bois de La Ronde sont célèbres ?",
+      "reponse": "Le Monstre",
+      "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle plante compose le menu du panda géant ?",
-      "reponse": "Le bambou",
+      "categorie": "Culture générale",
+      "question": "Quel personnage de conte a une lampe magique ?",
+      "reponse": "Aladin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle créature verte vit dans un marais ?",
+      "reponse": "Shrek",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel basketteur légendaire portait le 23 des Bulls ?",
+      "reponse": "Michael Jordan",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel dieu nordique manie un marteau chez Marvel ?",
+      "reponse": "Thor",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel lac des Cantons-de-l'Est cacherait un monstre ?",
+      "reponse": "Memphrémagog",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on une histoire de fées, de princes et de sorcières ?",
+      "reponse": "Un conte",
       "niveau": 1
     },
     {
@@ -62,75 +167,25 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel dieu grec règne sur les enfers ?",
-      "reponse": "Hadès",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel ballon géant à panier et à air chaud a été le premier engin à transporter des humains dans le ciel ?",
-      "reponse": "La montgolfière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel barrage géant porte le numéro 5 sur la Manicouagan ?",
-      "reponse": "Manic-5",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelles petites créatures jaunes adorent les bananes ?",
-      "reponse": "Les Minions",
-      "niveau": 1
+      "question": "Quelle déesse grecque a donné son nom à Athènes ?",
+      "reponse": "Athéna",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel cheval mythologique a des ailes ?",
-      "reponse": "Pégase",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel marin de conte a fait sept voyages ?",
-      "reponse": "Sinbad",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle créature verte vit dans un marais ?",
-      "reponse": "Shrek",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel dieu grec messager porte des sandales ailées ?",
-      "reponse": "Hermès",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle fête des déguisements a lieu le 31 octobre ?",
-      "reponse": "L'Halloween",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel arbre géant de Californie est le plus gros du monde ?",
-      "reponse": "Le séquoia",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel roi légendaire cherchait le Graal ?",
-      "reponse": "Le roi Arthur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle jeune fille a dansé avec le diable dans la légende ?",
-      "reponse": "Rose Latulippe",
-      "niveau": 2
+      "question": "Quel géant de bois cache des soldats grecs ?",
+      "reponse": "Le cheval de Troie",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

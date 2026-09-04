@@ -8,21 +8,31 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Où pêche-t-on la célèbre crevette nordique québécoise ?",
-      "reponse": "À Matane",
+      "question": "Quel jus boit-on le plus souvent au déjeuner ?",
+      "reponse": "Le jus d'orange",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit séché donne le pruneau ?",
-      "reponse": "La prune",
-      "niveau": 1
+      "question": "Quel plat espagnol froid est une soupe de tomates ?",
+      "reponse": "Le gaspacho",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich vietnamien se sert dans une baguette ?",
-      "reponse": "Le banh mi",
-      "niveau": 2
+      "question": "Dans quel pays grille-t-on soi-même sa viande sur un gril au centre de la table ?",
+      "reponse": "La Corée",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -32,63 +42,77 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle soupe japonaise est à base de pâte de soja ?",
-      "reponse": "La soupe miso",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel jus boit-on le plus souvent au déjeuner ?",
-      "reponse": "Le jus d'orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du kimchi ?",
-      "reponse": "La Corée",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel pain plat indien cuit dans un four tandoor ?",
-      "reponse": "Le naan",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich club a trois étages ?",
-      "reponse": "Le club sandwich",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle soupe russe est rouge betterave ?",
-      "reponse": "Le bortsch",
-      "niveau": 3
+      "question": "Quelle pâte à tartiner australienne est très salée ?",
+      "reponse": "La Vegemite",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
       "question": "Quelle épice est la plus chère au monde ?",
       "reponse": "Le safran",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
-      "reponse": "La granita",
-      "niveau": 3
+      "question": "Quelle soupe russe est rouge betterave ?",
+      "reponse": "Le bortsch",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
-      "reponse": "Le pain doré",
-      "niveau": 1
+      "question": "Quel sandwich vietnamien se sert dans une baguette ?",
+      "reponse": "Le banh mi",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine du kimchi ?",
+      "reponse": "La Corée",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
       "question": "Quel plat japonais est une brochette de poulet grillée ?",
       "reponse": "Le yakitori",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
+      "reponse": "La granita",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -98,9 +122,42 @@
     },
     {
       "categorie": "Bouffe et cuisine",
+      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
+      "reponse": "Le pain doré",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
+      "reponse": "Le club sandwich",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel alcool japonais est fait de riz fermenté ?",
+      "reponse": "Le saké",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
       "question": "Quelle boulette frite du Moyen-Orient est aux pois chiches ?",
       "reponse": "Le falafel",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -110,14 +167,19 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit orange se sculpte à l'Halloween ?",
-      "reponse": "La citrouille",
-      "niveau": 1
+      "question": "Quel pain plat indien cuit dans un four tandoor ?",
+      "reponse": "Le naan",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel alcool japonais est fait de riz fermenté ?",
-      "reponse": "Le saké",
+      "question": "Quel fruit orange se sculpte à l'Halloween ?",
+      "reponse": "La citrouille",
       "niveau": 1
     },
     {
@@ -130,13 +192,23 @@
       "categorie": "Bouffe et cuisine",
       "question": "Quelle pomme de terre frite est en spirale ?",
       "reponse": "Frite tornade",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
       "question": "Quelle glace italienne est plus dense que la crème glacée ?",
       "reponse": "Le gelato",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -146,15 +218,25 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel ragoût des fêtes québécoises mijote des pattes de porc ?",
-      "reponse": "Ragoût de pattes",
-      "niveau": 1
+      "question": "Quel ragoût du temps des fêtes se sert avec des boulettes, dans une sauce épaissie à la farine grillée ?",
+      "reponse": "Le ragoût de pattes",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
       "question": "Quel plat de pâtes au fromage orange en boîte est célèbre au Canada ?",
       "reponse": "Le Kraft Dinner",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     }
   ]
 }

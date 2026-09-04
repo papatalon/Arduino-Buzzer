@@ -16,13 +16,23 @@
       "categorie": "Bouffe et cuisine",
       "question": "Pays d'origine de la paella ?",
       "reponse": "L'Espagne",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
       "question": "Quelle sauce blanche accompagne le sandwich shawarma ?",
       "reponse": "Sauce à l'ail",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -34,7 +44,11 @@
       "categorie": "Bouffe et cuisine",
       "question": "Quelle boisson indienne mélange yogourt et mangue ?",
       "reponse": "Le lassi",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -64,13 +78,22 @@
       "categorie": "Bouffe et cuisine",
       "question": "Quelle omelette espagnole contient des pommes de terre ?",
       "reponse": "La tortilla",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
       "question": "Quel plat libanais est une purée d'aubergines fumées ?",
       "reponse": "Baba ganouj",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -98,27 +121,14 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel barbecue coréen grille la viande à table ?",
-      "reponse": "BBQ coréen",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
       "question": "Quelle célèbre soupe française est gratinée ?",
       "reponse": "Soupe à l'oignon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles noix entrent dans le pesto génois ?",
-      "reponse": "Les pignons",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat suisse racle du fromage fondu ?",
-      "reponse": "La raclette",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -128,9 +138,36 @@
     },
     {
       "categorie": "Bouffe et cuisine",
+      "question": "Quelles noix entrent dans le pesto génois ?",
+      "reponse": "Les pignons",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat suisse racle du fromage fondu ?",
+      "reponse": "La raclette",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
       "question": "Quel sandwich grec est garni de viande à la broche ?",
       "reponse": "Le pita (gyros)",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -140,21 +177,47 @@
     },
     {
       "categorie": "Bouffe et cuisine",
+      "question": "Quelle soupe japonaise est à base de pâte de soja ?",
+      "reponse": "La soupe miso",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
       "question": "Quel biscuit italien se trempe dans le café ?",
       "reponse": "Le biscotti",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat espagnol froid est une soupe de tomates ?",
-      "reponse": "Le gaspacho",
-      "niveau": 2
+      "question": "Où pêche-t-on la célèbre crevette nordique québécoise ?",
+      "reponse": "À Matane",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à tartiner australienne est très salée ?",
-      "reponse": "La Vegemite",
-      "niveau": 3
+      "question": "Quel fruit violet à noyau, une fois séché, aide à la digestion ?",
+      "reponse": "La prune",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

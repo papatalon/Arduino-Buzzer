@@ -7,154 +7,226 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quelle indication musicale signifie jouer doucement ?",
-      "reponse": "Piano",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne le vélo ?",
-      "reponse": "Un bicycle",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la chouette de Harry Potter ?",
-      "reponse": "Hedwige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue à Wimbledon ?",
-      "reponse": "Le tennis",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson chaude est faite de grains torréfiés ?",
-      "reponse": "Le café",
-      "niveau": 1
+      "question": "De quelle couleur sont les habitants de Pandora ?",
+      "reponse": "Bleus",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe canadien a chanté American Woman ?",
-      "reponse": "The Guess Who",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir de l'eau dans la cave ?",
-      "reponse": "Pantalon trop court",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "De quelle langue vient le mot pyjama ?",
-      "reponse": "Le persan",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quoi sont faites les dunes du désert ?",
-      "reponse": "De sable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel philosophe grec fut condamné à boire la ciguë ?",
-      "reponse": "Socrate",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson chante-t-on aux anniversaires ?",
-      "reponse": "Bonne fête",
-      "niveau": 1
+      "question": "Quelle comédie musicale suit une famille autrichienne ?",
+      "reponse": "Mélodie du bonheur",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel pain plat indien cuit dans un four tandoor ?",
-      "reponse": "Le naan",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel premier ministre a tenu le référendum de 1980 ?",
-      "reponse": "René Lévesque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel palais habite le président français ?",
-      "reponse": "L'Élysée",
-      "niveau": 2
+      "question": "Dans quel pays grille-t-on soi-même sa viande sur un gril au centre de la table ?",
+      "reponse": "La Corée",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel désert couvre le sud-ouest africain ?",
-      "reponse": "Le Kalahari",
-      "niveau": 3
+      "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+      "reponse": "Les Pyrénées",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel tournoi de tennis se joue sur terre battue à Paris ?",
-      "reponse": "Roland-Garros",
-      "niveau": 2
+      "question": "Tous les combien d'années a lieu la Coupe du monde de soccer ?",
+      "reponse": "Quatre ans",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment ovale pondu par la poule mange-t-on brouillé ?",
-      "reponse": "L'œuf",
+      "categorie": "Sciences et nature",
+      "question": "Quel instrument sert à observer les étoiles ?",
+      "reponse": "Le télescope",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne la pièce de 25 cents ?",
+      "reponse": "Un trente sous",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Qui était le chanteur de Queen ?",
+      "reponse": "Freddie Mercury",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Comment appelle-t-on une image drôle qui circule et se décline sur internet ?",
+      "reponse": "Un mème",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment s'appelle le petit de l'éléphant ?",
+      "reponse": "L'éléphanteau",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle vitamine fabrique la peau au soleil ?",
-      "reponse": "La vitamine D",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment se nomme la Belle au bois dormant chez Disney ?",
-      "reponse": "Aurore",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle pierre précieuse est rouge ?",
-      "reponse": "Le rubis",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle langue parle-t-on au Québec ?",
-      "reponse": "Le français",
+      "question": "Quelle fleur jaune devient une boule de duvet qu'on souffle ?",
+      "reponse": "Le pissenlit",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel animal des Andes crache quand il est fâché ?",
-      "reponse": "Le lama",
+      "question": "Dans quel pays vivent les kangourous ?",
+      "reponse": "L'Australie",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel astronome a placé le Soleil au centre de l'univers ?",
-      "reponse": "Copernic",
-      "niveau": 2
+      "question": "Quel jour célèbre-t-on l'Armistice de 1918 ?",
+      "reponse": "Le 11 novembre",
+      "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit des détenues ?",
-      "reponse": "Unité 9",
-      "niveau": 1
+      "categorie": "Culture générale",
+      "question": "Combien de pièces dans un jeu d'échecs complet ?",
+      "reponse": "32",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quel est le cri du cochon ?",
-      "reponse": "Le grognement",
+      "question": "Que signifie « être têtu comme une mule » ?",
+      "reponse": "Être très têtu",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
+      "reponse": "Le club sandwich",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle légende québécoise fait voler un canot ?",
+      "reponse": "La chasse-galerie",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel tambour à main vient d'Irlande ?",
+      "reponse": "Le bodhrán",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on un corps embaumé et enveloppé de bandelettes ?",
+      "reponse": "Une momie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel extraterrestre veut téléphoner à la maison ?",
+      "reponse": "E.T.",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel garçon dirige la Pat' Patrouille ?",
+      "reponse": "Ryder",
+      "niveau": 1,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel repas de fête se prend après la messe de minuit, la nuit du 24 décembre ?",
+      "reponse": "Le réveillon",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de hockey joue à Edmonton ?",
+      "reponse": "Les Oilers",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel est l'arbre emblème du Québec ?",
+      "reponse": "Le bouleau jaune",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle boisson pour sportifs a un éclair dans son logo ?",
+      "reponse": "Le Gatorade",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     }
   ]
 }

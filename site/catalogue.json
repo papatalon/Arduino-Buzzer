@@ -3,38 +3,68 @@
   "version": 1,
   "questionnaires": [
     {
-      "id": "culture-generale-01-sur-10",
-      "titre": "Culture générale 01 sur 10",
-      "note": "Catégorie Culture générale. Manche 1 sur 10.",
+      "id": "culture-generale-01-sur-11",
+      "titre": "Culture générale 01 sur 11",
+      "note": "Catégorie Culture générale. Manche 1 sur 11.",
       "collection": "Culture générale",
       "emoji": "💡",
       "questions": 25,
       "niveaux": {
-        "1": 15,
-        "2": 10
-      },
-      "octets": 4374,
-      "empreinte": "344f95deaba7314bc74dbaadfc9aa7bfa1fa2272"
-    },
-    {
-      "id": "culture-generale-02-sur-10",
-      "titre": "Culture générale 02 sur 10",
-      "note": "Catégorie Culture générale. Manche 2 sur 10.",
-      "collection": "Culture générale",
-      "emoji": "💡",
-      "questions": 25,
-      "niveaux": {
-        "2": 4,
         "1": 19,
-        "3": 2
+        "2": 5,
+        "3": 1
       },
-      "octets": 4498,
-      "empreinte": "4bde13dee4b7efd79f18afc641dfddd17d521f7c"
+      "octets": 5615,
+      "empreinte": "69ddeceea194743e3ae1f320049a73e2c64de34f"
     },
     {
-      "id": "culture-generale-03-sur-10",
-      "titre": "Culture générale 03 sur 10",
-      "note": "Catégorie Culture générale. Manche 3 sur 10.",
+      "id": "culture-generale-02-sur-11",
+      "titre": "Culture générale 02 sur 11",
+      "note": "Catégorie Culture générale. Manche 2 sur 11.",
+      "collection": "Culture générale",
+      "emoji": "💡",
+      "questions": 25,
+      "niveaux": {
+        "1": 21,
+        "2": 4
+      },
+      "octets": 5682,
+      "empreinte": "0c8388e04c2ce591af21874ebfe0b26abf07c3cb"
+    },
+    {
+      "id": "culture-generale-03-sur-11",
+      "titre": "Culture générale 03 sur 11",
+      "note": "Catégorie Culture générale. Manche 3 sur 11.",
+      "collection": "Culture générale",
+      "emoji": "💡",
+      "questions": 25,
+      "niveaux": {
+        "1": 17,
+        "2": 7,
+        "3": 1
+      },
+      "octets": 5415,
+      "empreinte": "1a8352eefd9a3f919ff45b948df8df2fc087e0a2"
+    },
+    {
+      "id": "culture-generale-04-sur-11",
+      "titre": "Culture générale 04 sur 11",
+      "note": "Catégorie Culture générale. Manche 4 sur 11.",
+      "collection": "Culture générale",
+      "emoji": "💡",
+      "questions": 25,
+      "niveaux": {
+        "1": 18,
+        "2": 6,
+        "3": 1
+      },
+      "octets": 5618,
+      "empreinte": "173787f1fb38aee9ef4fe9f8bcfae64f051756df"
+    },
+    {
+      "id": "culture-generale-05-sur-11",
+      "titre": "Culture générale 05 sur 11",
+      "note": "Catégorie Culture générale. Manche 5 sur 11.",
       "collection": "Culture générale",
       "emoji": "💡",
       "questions": 25,
@@ -42,70 +72,57 @@
         "1": 20,
         "2": 5
       },
-      "octets": 4604,
-      "empreinte": "4c876527b3ef139b047145f966b3b0302c297cce"
+      "octets": 5184,
+      "empreinte": "7ee611ff1cc34948d537c4298494a9422e85ee5e"
     },
     {
-      "id": "culture-generale-04-sur-10",
-      "titre": "Culture générale 04 sur 10",
-      "note": "Catégorie Culture générale. Manche 4 sur 10.",
-      "collection": "Culture générale",
-      "emoji": "💡",
-      "questions": 25,
-      "niveaux": {
-        "2": 9,
-        "1": 16
-      },
-      "octets": 4375,
-      "empreinte": "aadafc8d32650f92944427f16b1b8f1a8679a8c3"
-    },
-    {
-      "id": "culture-generale-05-sur-10",
-      "titre": "Culture générale 05 sur 10",
-      "note": "Catégorie Culture générale. Manche 5 sur 10.",
-      "collection": "Culture générale",
-      "emoji": "💡",
-      "questions": 25,
-      "niveaux": {
-        "1": 23,
-        "2": 2
-      },
-      "octets": 4459,
-      "empreinte": "7600eb8a8b56efc7f6b278c157da21c2380cfc35"
-    },
-    {
-      "id": "culture-generale-06-sur-10",
-      "titre": "Culture générale 06 sur 10",
-      "note": "Catégorie Culture générale. Manche 6 sur 10.",
-      "collection": "Culture générale",
-      "emoji": "💡",
-      "questions": 25,
-      "niveaux": {
-        "2": 7,
-        "1": 18
-      },
-      "octets": 4488,
-      "empreinte": "229b364d9be7dc0a45d5ecd7209150a1c3f9a486"
-    },
-    {
-      "id": "culture-generale-07-sur-10",
-      "titre": "Culture générale 07 sur 10",
-      "note": "Catégorie Culture générale. Manche 7 sur 10.",
+      "id": "culture-generale-06-sur-11",
+      "titre": "Culture générale 06 sur 11",
+      "note": "Catégorie Culture générale. Manche 6 sur 11.",
       "collection": "Culture générale",
       "emoji": "💡",
       "questions": 24,
       "niveaux": {
-        "2": 9,
-        "1": 13,
-        "3": 2
+        "1": 19,
+        "2": 5
       },
-      "octets": 4165,
-      "empreinte": "52f233e5bf1c8ffbd054a06e43666bdce310ca56"
+      "octets": 4899,
+      "empreinte": "955a33a52c0aa2aaa73a5ee58d66c0a00592f4e8"
     },
     {
-      "id": "culture-generale-08-sur-10",
-      "titre": "Culture générale 08 sur 10",
-      "note": "Catégorie Culture générale. Manche 8 sur 10.",
+      "id": "culture-generale-07-sur-11",
+      "titre": "Culture générale 07 sur 11",
+      "note": "Catégorie Culture générale. Manche 7 sur 11.",
+      "collection": "Culture générale",
+      "emoji": "💡",
+      "questions": 24,
+      "niveaux": {
+        "2": 7,
+        "1": 16,
+        "3": 1
+      },
+      "octets": 5515,
+      "empreinte": "8ac6637f4a2039c344f9c8271a0f7261f8449195"
+    },
+    {
+      "id": "culture-generale-08-sur-11",
+      "titre": "Culture générale 08 sur 11",
+      "note": "Catégorie Culture générale. Manche 8 sur 11.",
+      "collection": "Culture générale",
+      "emoji": "💡",
+      "questions": 24,
+      "niveaux": {
+        "1": 18,
+        "2": 5,
+        "3": 1
+      },
+      "octets": 5119,
+      "empreinte": "731f5a513876e6d78f3f76b5eb82ec0e467efc9f"
+    },
+    {
+      "id": "culture-generale-09-sur-11",
+      "titre": "Culture générale 09 sur 11",
+      "note": "Catégorie Culture générale. Manche 9 sur 11.",
       "collection": "Culture générale",
       "emoji": "💡",
       "questions": 24,
@@ -114,187 +131,172 @@
         "2": 7,
         "3": 1
       },
-      "octets": 4218,
-      "empreinte": "ea692f4f9c2ac8fb41d63303b5995aff9be6e3a6"
+      "octets": 5379,
+      "empreinte": "b481049c0c5e8a91d6dc75072a9510fb17a2e422"
     },
     {
-      "id": "culture-generale-09-sur-10",
-      "titre": "Culture générale 09 sur 10",
-      "note": "Catégorie Culture générale. Manche 9 sur 10.",
+      "id": "culture-generale-10-sur-11",
+      "titre": "Culture générale 10 sur 11",
+      "note": "Catégorie Culture générale. Manche 10 sur 11.",
       "collection": "Culture générale",
       "emoji": "💡",
       "questions": 24,
       "niveaux": {
-        "1": 13,
-        "2": 7,
+        "2": 9,
+        "1": 15
+      },
+      "octets": 5474,
+      "empreinte": "3a5ca1b7ed2736efed4b8d3f2e3e2cb3df291728"
+    },
+    {
+      "id": "culture-generale-11-sur-11",
+      "titre": "Culture générale 11 sur 11",
+      "note": "Catégorie Culture générale. Manche 11 sur 11.",
+      "collection": "Culture générale",
+      "emoji": "💡",
+      "questions": 24,
+      "niveaux": {
+        "1": 12,
+        "2": 11,
+        "3": 1
+      },
+      "octets": 5401,
+      "empreinte": "ae09e10118ac2dc9e7bca274543bd73f91211da9"
+    },
+    {
+      "id": "histoire-1-sur-9",
+      "titre": "Histoire 1 sur 9",
+      "note": "Catégorie Histoire. Manche 1 sur 9.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 25,
+      "niveaux": {
+        "2": 12,
+        "3": 5,
+        "1": 8
+      },
+      "octets": 5828,
+      "empreinte": "50e9ebfbd063db41527cad59a1d124351a7102fe"
+    },
+    {
+      "id": "histoire-2-sur-9",
+      "titre": "Histoire 2 sur 9",
+      "note": "Catégorie Histoire. Manche 2 sur 9.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 25,
+      "niveaux": {
+        "1": 8,
+        "2": 13,
         "3": 4
       },
-      "octets": 4350,
-      "empreinte": "728d2c3c7fba1aebc8452f792fef55d02a9aa0b5"
+      "octets": 5823,
+      "empreinte": "7c80d753f8514d7063e4fb82235113fd834ec0b6"
     },
     {
-      "id": "culture-generale-10-sur-10",
-      "titre": "Culture générale 10 sur 10",
-      "note": "Catégorie Culture générale. Manche 10 sur 10.",
-      "collection": "Culture générale",
-      "emoji": "💡",
+      "id": "histoire-3-sur-9",
+      "titre": "Histoire 3 sur 9",
+      "note": "Catégorie Histoire. Manche 3 sur 9.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
       "questions": 24,
-      "niveaux": {
-        "1": 18,
-        "2": 6
-      },
-      "octets": 4196,
-      "empreinte": "29a6998bd81e57e13108d83038ca1e1149412e11"
-    },
-    {
-      "id": "histoire-01-sur-10",
-      "titre": "Histoire 01 sur 10",
-      "note": "Catégorie Histoire. Manche 1 sur 10.",
-      "collection": "Histoire",
-      "emoji": "🏛️",
-      "questions": 23,
-      "niveaux": {
-        "1": 7,
-        "3": 8,
-        "2": 8
-      },
-      "octets": 4077,
-      "empreinte": "56d5efa21a4c1c64e11e08c3e87ff604d299d243"
-    },
-    {
-      "id": "histoire-02-sur-10",
-      "titre": "Histoire 02 sur 10",
-      "note": "Catégorie Histoire. Manche 2 sur 10.",
-      "collection": "Histoire",
-      "emoji": "🏛️",
-      "questions": 23,
       "niveaux": {
         "2": 12,
         "1": 9,
-        "3": 2
+        "3": 3
       },
-      "octets": 4128,
-      "empreinte": "766b5b0e769914aca21e05c80cf473584ea70ded"
+      "octets": 5578,
+      "empreinte": "5231cdc0cbe6c835882b4a09e327e6b21eb021ee"
     },
     {
-      "id": "histoire-03-sur-10",
-      "titre": "Histoire 03 sur 10",
-      "note": "Catégorie Histoire. Manche 3 sur 10.",
+      "id": "histoire-4-sur-9",
+      "titre": "Histoire 4 sur 9",
+      "note": "Catégorie Histoire. Manche 4 sur 9.",
       "collection": "Histoire",
       "emoji": "🏛️",
-      "questions": 23,
+      "questions": 24,
       "niveaux": {
-        "3": 4,
-        "2": 13,
-        "1": 6
-      },
-      "octets": 4050,
-      "empreinte": "d92786c48ba145b5c23c40b5eaf89642bee7bfde"
-    },
-    {
-      "id": "histoire-04-sur-10",
-      "titre": "Histoire 04 sur 10",
-      "note": "Catégorie Histoire. Manche 4 sur 10.",
-      "collection": "Histoire",
-      "emoji": "🏛️",
-      "questions": 23,
-      "niveaux": {
-        "3": 4,
-        "1": 9,
-        "2": 10
-      },
-      "octets": 4157,
-      "empreinte": "c5680e975ee26d46a59f2a8de6b050b94210c9d3"
-    },
-    {
-      "id": "histoire-05-sur-10",
-      "titre": "Histoire 05 sur 10",
-      "note": "Catégorie Histoire. Manche 5 sur 10.",
-      "collection": "Histoire",
-      "emoji": "🏛️",
-      "questions": 23,
-      "niveaux": {
-        "1": 4,
         "2": 14,
-        "3": 5
-      },
-      "octets": 3963,
-      "empreinte": "bfbb964398da36df1ed108be48b7e16254092e39"
-    },
-    {
-      "id": "histoire-06-sur-10",
-      "titre": "Histoire 06 sur 10",
-      "note": "Catégorie Histoire. Manche 6 sur 10.",
-      "collection": "Histoire",
-      "emoji": "🏛️",
-      "questions": 23,
-      "niveaux": {
-        "3": 5,
         "1": 6,
-        "2": 12
-      },
-      "octets": 4115,
-      "empreinte": "429aa461710ffa12566e47481d1cf50dc8b2d3b9"
-    },
-    {
-      "id": "histoire-07-sur-10",
-      "titre": "Histoire 07 sur 10",
-      "note": "Catégorie Histoire. Manche 7 sur 10.",
-      "collection": "Histoire",
-      "emoji": "🏛️",
-      "questions": 23,
-      "niveaux": {
-        "3": 5,
-        "1": 8,
-        "2": 10
-      },
-      "octets": 4187,
-      "empreinte": "d7b2758e53cf8a9852667d531b11364c235f53a1"
-    },
-    {
-      "id": "histoire-08-sur-10",
-      "titre": "Histoire 08 sur 10",
-      "note": "Catégorie Histoire. Manche 8 sur 10.",
-      "collection": "Histoire",
-      "emoji": "🏛️",
-      "questions": 23,
-      "niveaux": {
-        "1": 8,
-        "2": 11,
         "3": 4
       },
-      "octets": 4159,
-      "empreinte": "d9b8179370ef8354449e7c0978e837509cc63862"
+      "octets": 5450,
+      "empreinte": "5cb2b496c4dcbdf19f5d45827d5b8af4da1f466e"
     },
     {
-      "id": "histoire-09-sur-10",
-      "titre": "Histoire 09 sur 10",
-      "note": "Catégorie Histoire. Manche 9 sur 10.",
+      "id": "histoire-5-sur-9",
+      "titre": "Histoire 5 sur 9",
+      "note": "Catégorie Histoire. Manche 5 sur 9.",
       "collection": "Histoire",
       "emoji": "🏛️",
-      "questions": 23,
+      "questions": 24,
       "niveaux": {
-        "2": 16,
-        "3": 2,
-        "1": 5
+        "1": 7,
+        "2": 12,
+        "3": 5
       },
-      "octets": 4065,
-      "empreinte": "5f0a51cc22eb5202057ccce9b8f9ea2959301e16"
+      "octets": 5491,
+      "empreinte": "bc6450c330b450e266ec1431dc7b9866b006988c"
     },
     {
-      "id": "histoire-10-sur-10",
-      "titre": "Histoire 10 sur 10",
-      "note": "Catégorie Histoire. Manche 10 sur 10.",
+      "id": "histoire-6-sur-9",
+      "titre": "Histoire 6 sur 9",
+      "note": "Catégorie Histoire. Manche 6 sur 9.",
       "collection": "Histoire",
       "emoji": "🏛️",
-      "questions": 22,
+      "questions": 24,
       "niveaux": {
-        "1": 5,
+        "2": 14,
         "3": 4,
-        "2": 13
+        "1": 6
       },
-      "octets": 3956,
-      "empreinte": "907feaf078357dd0c519b822266f13893f203110"
+      "octets": 5747,
+      "empreinte": "50fa21cabb74a9feb7b1350da1b0ade2088703bd"
+    },
+    {
+      "id": "histoire-7-sur-9",
+      "titre": "Histoire 7 sur 9",
+      "note": "Catégorie Histoire. Manche 7 sur 9.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 24,
+      "niveaux": {
+        "2": 11,
+        "3": 6,
+        "1": 7
+      },
+      "octets": 5655,
+      "empreinte": "73e1402282d02ffa949670b1a048b0b2d1996f76"
+    },
+    {
+      "id": "histoire-8-sur-9",
+      "titre": "Histoire 8 sur 9",
+      "note": "Catégorie Histoire. Manche 8 sur 9.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 24,
+      "niveaux": {
+        "2": 12,
+        "3": 5,
+        "1": 7
+      },
+      "octets": 5617,
+      "empreinte": "b0cfa7fbbb3b5567747d4a78bdef0c2a10e09a8b"
+    },
+    {
+      "id": "histoire-9-sur-9",
+      "titre": "Histoire 9 sur 9",
+      "note": "Catégorie Histoire. Manche 9 sur 9.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 24,
+      "niveaux": {
+        "2": 12,
+        "1": 6,
+        "3": 6
+      },
+      "octets": 5814,
+      "empreinte": "a9e383f00624aca8e29bb248754d45963a9d3f63"
     },
     {
       "id": "geographie-01-sur-10",
@@ -308,8 +310,8 @@
         "2": 8,
         "3": 2
       },
-      "octets": 3860,
-      "empreinte": "421270afceca502131ea27c4a6d65b0e99e2433c"
+      "octets": 5044,
+      "empreinte": "7069ff11730c77a4cf38379004093b8e94882dff"
     },
     {
       "id": "geographie-02-sur-10",
@@ -323,8 +325,8 @@
         "1": 11,
         "3": 1
       },
-      "octets": 3986,
-      "empreinte": "cce4207146043ac0e97aceece91289eb4908e530"
+      "octets": 5110,
+      "empreinte": "202b84603b1f6e5e12b40e897288e582a4d54d9b"
     },
     {
       "id": "geographie-03-sur-10",
@@ -338,8 +340,8 @@
         "3": 3,
         "2": 4
       },
-      "octets": 3913,
-      "empreinte": "458a4035cca019ceeefb1bfbae08165b8fb873c3"
+      "octets": 4796,
+      "empreinte": "9a3903f144a02acfacf02b9ba1ab49a9809f6fdf"
     },
     {
       "id": "geographie-04-sur-10",
@@ -353,8 +355,8 @@
         "2": 7,
         "3": 2
       },
-      "octets": 3757,
-      "empreinte": "2d5e5782cfef6c9f5914a7f68bdf11384252ea8d"
+      "octets": 5169,
+      "empreinte": "c093608051aee6c4df1f264c762314f4e55ca2a5"
     },
     {
       "id": "geographie-05-sur-10",
@@ -368,8 +370,8 @@
         "1": 11,
         "3": 1
       },
-      "octets": 3784,
-      "empreinte": "a1ceaed6f2754acc45f99ce0e2f6b04f78dbade4"
+      "octets": 5060,
+      "empreinte": "9464c9cd344f31101ea0c164e7b9e4ba021373c0"
     },
     {
       "id": "geographie-06-sur-10",
@@ -383,8 +385,8 @@
         "1": 10,
         "3": 3
       },
-      "octets": 3835,
-      "empreinte": "cf797ebbe71d9d84e3ce85a3bc6432a4bb816513"
+      "octets": 5323,
+      "empreinte": "bf0730195ad05c7a4a58cedae604c3383ac1b2c9"
     },
     {
       "id": "geographie-07-sur-10",
@@ -398,8 +400,8 @@
         "1": 10,
         "2": 9
       },
-      "octets": 3749,
-      "empreinte": "07500c7f23f5e95bfe5a362640726aaa9fa65698"
+      "octets": 4993,
+      "empreinte": "d300972fbf72999b2e652d8979ca15225a2acb72"
     },
     {
       "id": "geographie-08-sur-10",
@@ -413,8 +415,8 @@
         "2": 13,
         "1": 5
       },
-      "octets": 3711,
-      "empreinte": "0ba2bea9f06b2ec9f6a1b0fcb419a37ed01997f5"
+      "octets": 5243,
+      "empreinte": "f4749aa807ece2cd3a483844d77582fec57662e8"
     },
     {
       "id": "geographie-09-sur-10",
@@ -428,8 +430,8 @@
         "2": 5,
         "3": 3
       },
-      "octets": 3752,
-      "empreinte": "41df8df625c86697dd99c308a9fdcf380f54ae9e"
+      "octets": 4758,
+      "empreinte": "688857910394feb65fa1892ae7b33a70a4943fe4"
     },
     {
       "id": "geographie-10-sur-10",
@@ -439,12 +441,12 @@
       "emoji": "🌍",
       "questions": 22,
       "niveaux": {
-        "2": 10,
         "1": 8,
+        "2": 10,
         "3": 4
       },
-      "octets": 3689,
-      "empreinte": "f8f7f0bfbbba3c6223ec691862107051fa59290f"
+      "octets": 5000,
+      "empreinte": "9c20cdef6b6d8f38d3c54de116f63b90b8804cd5"
     },
     {
       "id": "sciences-et-nature-01-sur-10",
@@ -458,8 +460,8 @@
         "2": 6,
         "3": 2
       },
-      "octets": 4334,
-      "empreinte": "465125f9cd366654acf23418928b5fedc0f43da2"
+      "octets": 5214,
+      "empreinte": "188d2166448d2b1684a47ec9ebedae536408178a"
     },
     {
       "id": "sciences-et-nature-02-sur-10",
@@ -473,8 +475,8 @@
         "2": 5,
         "3": 1
       },
-      "octets": 4353,
-      "empreinte": "14e09ba3b20bcaaae4c3ea92c2456b5cd3d12cd9"
+      "octets": 5001,
+      "empreinte": "c6dff5a840986344222c08a84916b4dadacff02a"
     },
     {
       "id": "sciences-et-nature-03-sur-10",
@@ -487,8 +489,8 @@
         "1": 20,
         "2": 4
       },
-      "octets": 4290,
-      "empreinte": "f8f1408993aafd8edd3647a05bfef535a3062c86"
+      "octets": 4829,
+      "empreinte": "513f22e1bb1b57a165a543176782f69bad8a3381"
     },
     {
       "id": "sciences-et-nature-04-sur-10",
@@ -501,8 +503,8 @@
         "1": 20,
         "2": 4
       },
-      "octets": 4277,
-      "empreinte": "e2295e94d5ddb84e72f735510a82a737a0e24e5a"
+      "octets": 4734,
+      "empreinte": "4ec7dbe8c0a22b2e213b4e1432840c5e38131e81"
     },
     {
       "id": "sciences-et-nature-05-sur-10",
@@ -516,8 +518,8 @@
         "3": 2,
         "2": 7
       },
-      "octets": 4337,
-      "empreinte": "b1d5beeecc53a5fa5c9f895c6a6725bc1a0e8fb3"
+      "octets": 5097,
+      "empreinte": "4493816ae4699b87ede2d871dce77d06a8f49c6c"
     },
     {
       "id": "sciences-et-nature-06-sur-10",
@@ -531,8 +533,8 @@
         "3": 1,
         "2": 6
       },
-      "octets": 4317,
-      "empreinte": "863e8f7194e7bbfa760f56a5d1be7aa9c95f63ac"
+      "octets": 4998,
+      "empreinte": "1da973512e8a722a1ac241f3f1a483f851725b7c"
     },
     {
       "id": "sciences-et-nature-07-sur-10",
@@ -546,8 +548,8 @@
         "2": 6,
         "3": 2
       },
-      "octets": 4275,
-      "empreinte": "b05d31259b1125f35facf465ee53ae47e9eaeb4a"
+      "octets": 5001,
+      "empreinte": "1be31d5b71090f4f518831d3ea4a9fb376f48e17"
     },
     {
       "id": "sciences-et-nature-08-sur-10",
@@ -561,8 +563,8 @@
         "1": 15,
         "3": 2
       },
-      "octets": 4333,
-      "empreinte": "5d78aae9a32d4a873e981315a2c9006478554b30"
+      "octets": 5213,
+      "empreinte": "d28c3cf5cd3895f68d66a10b130c8296b4debb00"
     },
     {
       "id": "sciences-et-nature-09-sur-10",
@@ -576,8 +578,8 @@
         "3": 3,
         "2": 6
       },
-      "octets": 4369,
-      "empreinte": "11a91590ecb2fef7e83d5452cffd7f5b4d6d4497"
+      "octets": 5133,
+      "empreinte": "6772332117d91bb373e5fe25995b84a82aaab964"
     },
     {
       "id": "sciences-et-nature-10-sur-10",
@@ -590,8 +592,8 @@
         "1": 19,
         "2": 5
       },
-      "octets": 4374,
-      "empreinte": "c3104929ec7cf118d8b9ff4b4e92d1fd717bc2e8"
+      "octets": 4920,
+      "empreinte": "dd048b4efa7993c072ffb495991a2f22d1586f1c"
     },
     {
       "id": "sports-01-sur-10",
@@ -605,8 +607,8 @@
         "1": 10,
         "3": 2
       },
-      "octets": 3938,
-      "empreinte": "bc403a65879f37231357bc0abbdc4b26fd22301d"
+      "octets": 5167,
+      "empreinte": "82fe8dfed98b7d5f56201a0962af8268875ab121"
     },
     {
       "id": "sports-02-sur-10",
@@ -620,8 +622,8 @@
         "2": 9,
         "3": 2
       },
-      "octets": 3950,
-      "empreinte": "f85c528e678ad1fb85dab91a0af4902a56a06eee"
+      "octets": 5255,
+      "empreinte": "44e7cb66d2a4cb0d073710f5b1fa684fac73fee6"
     },
     {
       "id": "sports-03-sur-10",
@@ -635,8 +637,8 @@
         "1": 13,
         "3": 1
       },
-      "octets": 4056,
-      "empreinte": "ae388492d34cc8a295557d7c0b68ad54cd2b3fbe"
+      "octets": 5268,
+      "empreinte": "640217555ce462adbe39efe7e9a5f14882368c35"
     },
     {
       "id": "sports-04-sur-10",
@@ -649,8 +651,8 @@
         "1": 16,
         "2": 7
       },
-      "octets": 4050,
-      "empreinte": "33d8f596a81ca1f355c3e6770126c1dc8f36423e"
+      "octets": 5311,
+      "empreinte": "540d1a187584ac8c9bd485e09b80295dd6de533e"
     },
     {
       "id": "sports-05-sur-10",
@@ -663,8 +665,8 @@
         "2": 5,
         "1": 18
       },
-      "octets": 4004,
-      "empreinte": "d7be28d4d2da84dfd8dcfb74d7a64b0589d0ae72"
+      "octets": 5081,
+      "empreinte": "d743cb03e85b202041d5bd3419285e05cdb6f098"
     },
     {
       "id": "sports-06-sur-10",
@@ -674,12 +676,12 @@
       "emoji": "🏅",
       "questions": 23,
       "niveaux": {
-        "2": 9,
         "1": 12,
+        "2": 9,
         "3": 2
       },
-      "octets": 4061,
-      "empreinte": "e505512414f6a10c7f9555b8ec114a975d9070ad"
+      "octets": 5055,
+      "empreinte": "f8d550c3bd679a565a171af6709919e389a31874"
     },
     {
       "id": "sports-07-sur-10",
@@ -689,12 +691,12 @@
       "emoji": "🏅",
       "questions": 23,
       "niveaux": {
-        "3": 3,
         "1": 15,
+        "3": 3,
         "2": 5
       },
-      "octets": 4151,
-      "empreinte": "e16d1d5f37303b1c44c703f8dbf4b085578c314f"
+      "octets": 5127,
+      "empreinte": "d86ec0e4beba97c3efd252b9ba3a05fcfca14838"
     },
     {
       "id": "sports-08-sur-10",
@@ -708,8 +710,8 @@
         "2": 10,
         "3": 2
       },
-      "octets": 3910,
-      "empreinte": "5dcdce33e0870849d14a4fa1449f994054444203"
+      "octets": 4995,
+      "empreinte": "7e47cc27e3f40947b148f93a807a0acac170c132"
     },
     {
       "id": "sports-09-sur-10",
@@ -723,8 +725,8 @@
         "3": 2,
         "2": 6
       },
-      "octets": 4015,
-      "empreinte": "09e69ba4ef7a49d6c45e74964e96d880e33cc891"
+      "octets": 4862,
+      "empreinte": "2a666edd4d21464399299904a359db9d06e74aa0"
     },
     {
       "id": "sports-10-sur-10",
@@ -738,8 +740,8 @@
         "1": 15,
         "3": 1
       },
-      "octets": 4074,
-      "empreinte": "d8d05e4be461fa48027e229d61e048930a974665"
+      "octets": 4923,
+      "empreinte": "0e9f8b94a772d3d0a98306fc1102b63cfeac52e9"
     },
     {
       "id": "musique-01-sur-10",
@@ -753,8 +755,8 @@
         "3": 2,
         "1": 13
       },
-      "octets": 4263,
-      "empreinte": "40874fc44a5d2e048686b451ccae92bb08b1c874"
+      "octets": 5519,
+      "empreinte": "f31ef07f22d47a16fda3cfa789124fc499e04fee"
     },
     {
       "id": "musique-02-sur-10",
@@ -764,12 +766,12 @@
       "emoji": "🎵",
       "questions": 24,
       "niveaux": {
-        "1": 10,
-        "3": 4,
-        "2": 10
+        "1": 8,
+        "3": 5,
+        "2": 11
       },
-      "octets": 4165,
-      "empreinte": "152612fa18a536ce2f88e3b8f09521a81f5659d0"
+      "octets": 5466,
+      "empreinte": "739e687abba1e2848a155e6a642f047dbddbcf29"
     },
     {
       "id": "musique-03-sur-10",
@@ -779,12 +781,12 @@
       "emoji": "🎵",
       "questions": 23,
       "niveaux": {
-        "1": 9,
-        "3": 5,
-        "2": 9
+        "1": 11,
+        "2": 8,
+        "3": 4
       },
-      "octets": 4013,
-      "empreinte": "44bfb8a6499174a03c75813ad0f086fa3b13fc06"
+      "octets": 5293,
+      "empreinte": "9ee457719500094910d1b50c2769fe1e4aed93a6"
     },
     {
       "id": "musique-04-sur-10",
@@ -794,12 +796,12 @@
       "emoji": "🎵",
       "questions": 23,
       "niveaux": {
-        "1": 11,
-        "2": 8,
-        "3": 4
+        "3": 4,
+        "2": 9,
+        "1": 10
       },
-      "octets": 4088,
-      "empreinte": "2c122ebcfa6a3bf40926dcc9d99de5e93c29281a"
+      "octets": 5142,
+      "empreinte": "37db05931981e732916b1b2d97cf7f0d810cafbb"
     },
     {
       "id": "musique-05-sur-10",
@@ -812,8 +814,8 @@
         "2": 13,
         "1": 10
       },
-      "octets": 4025,
-      "empreinte": "7437c3d44fd6158866a42bf28ea338892413b91b"
+      "octets": 5361,
+      "empreinte": "16611c581ef3071624f9134a4aa2a82923140212"
     },
     {
       "id": "musique-06-sur-10",
@@ -827,8 +829,8 @@
         "1": 6,
         "3": 2
       },
-      "octets": 3985,
-      "empreinte": "4216dc3cc98c83c4d9dca9cd89f8f21262d46413"
+      "octets": 5229,
+      "empreinte": "a077bb6e1a3ce34aab84f46d41a4df3d365d7fd0"
     },
     {
       "id": "musique-07-sur-10",
@@ -842,8 +844,8 @@
         "3": 5,
         "2": 7
       },
-      "octets": 4067,
-      "empreinte": "f4728b94f372781cac93963b7a87b5fb1538d117"
+      "octets": 5168,
+      "empreinte": "93b98040c6e8dc125a942e4491e9f753d8e594ec"
     },
     {
       "id": "musique-08-sur-10",
@@ -857,8 +859,8 @@
         "1": 8,
         "3": 5
       },
-      "octets": 3963,
-      "empreinte": "9daacbd4b82fdfcda194971ce175db9f03f68dc6"
+      "octets": 5286,
+      "empreinte": "70074e3444ce3b8b2e11a85a6dbe0920e49f2476"
     },
     {
       "id": "musique-09-sur-10",
@@ -869,11 +871,11 @@
       "questions": 23,
       "niveaux": {
         "2": 8,
-        "1": 11,
-        "3": 4
+        "1": 10,
+        "3": 5
       },
-      "octets": 4126,
-      "empreinte": "1e2f8b972327df3548c3d76f273c8c0c4021dc45"
+      "octets": 5242,
+      "empreinte": "69d74647e1ff23a48c8e92a10cb1c8e1b5898568"
     },
     {
       "id": "musique-10-sur-10",
@@ -887,8 +889,8 @@
         "2": 7,
         "3": 2
       },
-      "octets": 3977,
-      "empreinte": "8c6ed603bd9cc61909fabe2f0f99b371bb0decb9"
+      "octets": 5041,
+      "empreinte": "08a37a4d4dfc64a052460502140d24b6693461db"
     },
     {
       "id": "cinema-et-tele-01-sur-10",
@@ -902,8 +904,8 @@
         "2": 4,
         "3": 1
       },
-      "octets": 4635,
-      "empreinte": "dab591839aa0718a906f4e976701f02905b69e16"
+      "octets": 5320,
+      "empreinte": "e61288c51f7a3cc615a5a1bf4316be6586dd4a17"
     },
     {
       "id": "cinema-et-tele-02-sur-10",
@@ -916,8 +918,8 @@
         "1": 24,
         "2": 1
       },
-      "octets": 4608,
-      "empreinte": "cb7b7150f13596382529ac9f3ca33d144edaad54"
+      "octets": 5281,
+      "empreinte": "f2ee805d3d0af18564017bdf8dc30aa7cb8a9aee"
     },
     {
       "id": "cinema-et-tele-03-sur-10",
@@ -931,8 +933,8 @@
         "2": 4,
         "3": 1
       },
-      "octets": 4567,
-      "empreinte": "90fecfd31492a2e0244585d5ec2ab9016e4925ba"
+      "octets": 5270,
+      "empreinte": "7d15845bb6cfed7beecf53d860285cd73ac151ea"
     },
     {
       "id": "cinema-et-tele-04-sur-10",
@@ -945,8 +947,8 @@
         "2": 5,
         "1": 19
       },
-      "octets": 4422,
-      "empreinte": "3a8e82bc10681d960db21c66aa26c36669e50321"
+      "octets": 5109,
+      "empreinte": "3d93f6bc981557b354e3143d797df399b6ee37d3"
     },
     {
       "id": "cinema-et-tele-05-sur-10",
@@ -959,8 +961,8 @@
         "1": 21,
         "2": 3
       },
-      "octets": 4431,
-      "empreinte": "ae374047da1ccfafab0c67eebd94d6683b04a4c9"
+      "octets": 4909,
+      "empreinte": "c9374fe558ada499c3a738cbb84209f4f9f936e5"
     },
     {
       "id": "cinema-et-tele-06-sur-10",
@@ -973,8 +975,8 @@
         "1": 20,
         "2": 4
       },
-      "octets": 4396,
-      "empreinte": "9bc2606f034e27f1790bdeec4f2e1b15021c4c25"
+      "octets": 4924,
+      "empreinte": "f8be685a32d73cba3e6ef3dcc42b77e387851938"
     },
     {
       "id": "cinema-et-tele-07-sur-10",
@@ -988,8 +990,8 @@
         "1": 19,
         "3": 1
       },
-      "octets": 4374,
-      "empreinte": "ea55c415ff961a3ac34734811323e5a0d3e9574d"
+      "octets": 5030,
+      "empreinte": "d152b52715e98ab771f4d663eedabacdc7f5aa71"
     },
     {
       "id": "cinema-et-tele-08-sur-10",
@@ -1002,8 +1004,8 @@
         "1": 20,
         "2": 4
       },
-      "octets": 4456,
-      "empreinte": "a030024e5e9c22c3b993770733b4f17e6fb40285"
+      "octets": 5025,
+      "empreinte": "14a295152909b2898f88e5453325b7c627a8e1e5"
     },
     {
       "id": "cinema-et-tele-09-sur-10",
@@ -1016,8 +1018,8 @@
         "1": 20,
         "2": 4
       },
-      "octets": 4446,
-      "empreinte": "ef8a5eda67aa72bf032e6f443a2d93659df3ceb9"
+      "octets": 4992,
+      "empreinte": "a5a9494e2e05477e01e2583df6a0bc4d15fd2025"
     },
     {
       "id": "cinema-et-tele-10-sur-10",
@@ -1030,8 +1032,8 @@
         "1": 20,
         "2": 4
       },
-      "octets": 4548,
-      "empreinte": "95b7e524d2b63397785d1ec4096f8b4ff39888c5"
+      "octets": 5117,
+      "empreinte": "7e7cb762b01d1230c00ee1666bc3369b284d2646"
     },
     {
       "id": "quebec-1-sur-9",
@@ -1045,8 +1047,8 @@
         "3": 1,
         "2": 6
       },
-      "octets": 4266,
-      "empreinte": "6a8a566a2a8b91c921f28cadbc1abc17ebfb6ea0"
+      "octets": 5581,
+      "empreinte": "fde88daf6b06386371138c6264d55640165e582c"
     },
     {
       "id": "quebec-2-sur-9",
@@ -1060,8 +1062,8 @@
         "2": 7,
         "3": 1
       },
-      "octets": 4316,
-      "empreinte": "f18bf333e2d2841f66f429b1d41d5d032f5b8251"
+      "octets": 5509,
+      "empreinte": "0ef3497fec8b2f7108601755af3586c7bb3c200f"
     },
     {
       "id": "quebec-3-sur-9",
@@ -1074,8 +1076,8 @@
         "2": 12,
         "1": 12
       },
-      "octets": 4290,
-      "empreinte": "36b7c39bc3deb2df126aca8ddfcfcf5d7ef7e415"
+      "octets": 5734,
+      "empreinte": "97704e97bbeaa95707ac7941ab11ec240e1e3fc3"
     },
     {
       "id": "quebec-4-sur-9",
@@ -1089,8 +1091,8 @@
         "1": 15,
         "3": 3
       },
-      "octets": 4287,
-      "empreinte": "bbe4ae402118d064d4187af76d6b308f3a368fc5"
+      "octets": 5515,
+      "empreinte": "18349797df4de9616502b26de9f56929f1d1ec47"
     },
     {
       "id": "quebec-5-sur-9",
@@ -1104,8 +1106,8 @@
         "2": 8,
         "3": 1
       },
-      "octets": 4148,
-      "empreinte": "4a1992d1034b32bdc9e157890ac3eb406fb33d82"
+      "octets": 5249,
+      "empreinte": "8c4b66f65dbecfae70eef4a0253bc6be51602395"
     },
     {
       "id": "quebec-6-sur-9",
@@ -1119,8 +1121,8 @@
         "2": 7,
         "3": 3
       },
-      "octets": 4079,
-      "empreinte": "12ed322d4c05c0811a95f3905e37d9708f782dcb"
+      "octets": 5373,
+      "empreinte": "4f028fefb4391f50b3f44288b13a36839e1c3e3a"
     },
     {
       "id": "quebec-7-sur-9",
@@ -1134,8 +1136,8 @@
         "1": 12,
         "3": 4
       },
-      "octets": 4120,
-      "empreinte": "55d77f5fd0b1df17b74982c09556b61d0aef8fee"
+      "octets": 5378,
+      "empreinte": "2789e41f26d2bb05482dc0d966fb5d0086389901"
     },
     {
       "id": "quebec-8-sur-9",
@@ -1149,8 +1151,8 @@
         "3": 2,
         "2": 6
       },
-      "octets": 4081,
-      "empreinte": "32c9c1736b15cea2705ae9d68aeaa8d637d08b9f"
+      "octets": 5191,
+      "empreinte": "f41f8846674131e9c295d90978dd06df4e13122e"
     },
     {
       "id": "quebec-9-sur-9",
@@ -1164,8 +1166,8 @@
         "2": 7,
         "3": 2
       },
-      "octets": 4143,
-      "empreinte": "ae02d63e1c27c57a653aabf88bd850128117d860"
+      "octets": 5398,
+      "empreinte": "dfa9968f833b191412d577f50a8c5b739c5ba849"
     },
     {
       "id": "bouffe-et-cuisine-1-sur-9",
@@ -1179,8 +1181,8 @@
         "3": 1,
         "2": 3
       },
-      "octets": 4718,
-      "empreinte": "21e620ad997f161f5964f5c3b5d36f78f7dd0b2a"
+      "octets": 5692,
+      "empreinte": "78e60e4f549a1845e10796cc2c05af558d763409"
     },
     {
       "id": "bouffe-et-cuisine-2-sur-9",
@@ -1194,8 +1196,8 @@
         "3": 1,
         "2": 3
       },
-      "octets": 4663,
-      "empreinte": "1390eb27fcde8100197324743d0f5b486e8dab68"
+      "octets": 5639,
+      "empreinte": "17ca3209a466d1084469f2e72bd4568174afb9da"
     },
     {
       "id": "bouffe-et-cuisine-3-sur-9",
@@ -1209,8 +1211,8 @@
         "3": 2,
         "2": 4
       },
-      "octets": 4584,
-      "empreinte": "a0ec5d65b8ab51ab4a6d9fa0fdf41e173ae61616"
+      "octets": 5539,
+      "empreinte": "9ebfc37d44d5e1b2ecabeb60f3e82ff7043a5689"
     },
     {
       "id": "bouffe-et-cuisine-4-sur-9",
@@ -1220,12 +1222,12 @@
       "emoji": "🍲",
       "questions": 25,
       "niveaux": {
-        "2": 6,
-        "1": 15,
+        "2": 7,
+        "1": 14,
         "3": 4
       },
-      "octets": 4513,
-      "empreinte": "ae86725a6ab034bfd7ca109d88f47131cfcfe728"
+      "octets": 5589,
+      "empreinte": "cc28f22cdc3243e596255d526e4e23204a690ad1"
     },
     {
       "id": "bouffe-et-cuisine-5-sur-9",
@@ -1235,12 +1237,12 @@
       "emoji": "🍲",
       "questions": 25,
       "niveaux": {
-        "1": 17,
-        "3": 3,
-        "2": 5
+        "1": 19,
+        "3": 2,
+        "2": 4
       },
-      "octets": 4600,
-      "empreinte": "b1c4a026063ed736eeeee1442401c9116e4fca6f"
+      "octets": 5579,
+      "empreinte": "fe884468b9c9c710510433ff67cbaa83d30256e2"
     },
     {
       "id": "bouffe-et-cuisine-6-sur-9",
@@ -1250,12 +1252,12 @@
       "emoji": "🍲",
       "questions": 25,
       "niveaux": {
-        "1": 18,
-        "2": 5,
-        "3": 2
+        "1": 16,
+        "2": 6,
+        "3": 3
       },
-      "octets": 4618,
-      "empreinte": "847b89c0ebc33db442929278403c71dde06f13bd"
+      "octets": 5993,
+      "empreinte": "889499e7fce386c907937d5045ba694daa33f7dc"
     },
     {
       "id": "bouffe-et-cuisine-7-sur-9",
@@ -1269,8 +1271,8 @@
         "3": 3,
         "2": 3
       },
-      "octets": 4568,
-      "empreinte": "9bbad5cdef6f59b34cec764f9df628068eda16e2"
+      "octets": 5466,
+      "empreinte": "4ed88c540a80199794811bd7508e0d114c809613"
     },
     {
       "id": "bouffe-et-cuisine-8-sur-9",
@@ -1284,8 +1286,8 @@
         "2": 3,
         "3": 2
       },
-      "octets": 4557,
-      "empreinte": "21f9b08d57cad3f9149340c0bc0be5d508c6073d"
+      "octets": 5664,
+      "empreinte": "8cb9d7fe9ee1d33856f0716088e5771072b80833"
     },
     {
       "id": "bouffe-et-cuisine-9-sur-9",
@@ -1298,8 +1300,8 @@
         "2": 6,
         "1": 18
       },
-      "octets": 4403,
-      "empreinte": "78a0b658d65d9b0c5f500899148d6fb34e9273e3"
+      "octets": 5315,
+      "empreinte": "75408dd5c60271cd4abb82a61bb6ba77c8cb8f6f"
     },
     {
       "id": "mots-et-langue-01-sur-10",
@@ -1313,8 +1315,8 @@
         "1": 19,
         "2": 5
       },
-      "octets": 4408,
-      "empreinte": "55fac995abc18c3c73fa26ce80dd928fe43dc7d9"
+      "octets": 5380,
+      "empreinte": "9354905209556409fe1f4ec6efd1582068755aff"
     },
     {
       "id": "mots-et-langue-02-sur-10",
@@ -1328,8 +1330,8 @@
         "1": 20,
         "2": 4
       },
-      "octets": 4196,
-      "empreinte": "e39d204358a5bfc48ab9a67d22c39cad3e53fc3a"
+      "octets": 4940,
+      "empreinte": "65c4f67502742a4b232f0fb6e4af15a8ed64e384"
     },
     {
       "id": "mots-et-langue-03-sur-10",
@@ -1342,8 +1344,8 @@
         "1": 20,
         "2": 4
       },
-      "octets": 4029,
-      "empreinte": "73fe15557cb1e1e6e723aea551914d636c21d047"
+      "octets": 4941,
+      "empreinte": "b751c74719dcb4d6ea7bfac58a9623c26a91f4c7"
     },
     {
       "id": "mots-et-langue-04-sur-10",
@@ -1357,8 +1359,8 @@
         "3": 2,
         "2": 1
       },
-      "octets": 4091,
-      "empreinte": "c9670ee7463668d5a8cb551f87192bc7fa40d6b5"
+      "octets": 4971,
+      "empreinte": "5281054fc3d237a7b8a0f6ced8426d511da9b562"
     },
     {
       "id": "mots-et-langue-05-sur-10",
@@ -1372,8 +1374,8 @@
         "3": 4,
         "2": 6
       },
-      "octets": 4046,
-      "empreinte": "b7efb1e7d4f19913c4b7dc735ad198e96a8e9296"
+      "octets": 5030,
+      "empreinte": "953c1c24c9907a6e30e6cf5a4d6688964a333f92"
     },
     {
       "id": "mots-et-langue-06-sur-10",
@@ -1386,8 +1388,8 @@
         "1": 19,
         "2": 5
       },
-      "octets": 3931,
-      "empreinte": "87d08e2f291c95b8e6791e895a5045c8d1060d0a"
+      "octets": 4675,
+      "empreinte": "413e98959e039fd4056df5af71c42c930d816906"
     },
     {
       "id": "mots-et-langue-07-sur-10",
@@ -1401,8 +1403,8 @@
         "2": 5,
         "3": 1
       },
-      "octets": 4110,
-      "empreinte": "8cf08594185e20704e8d1447d3a0921bf3be47cd"
+      "octets": 4930,
+      "empreinte": "bfef9d5aec279f7d8af8324add4b3b6a9a139643"
     },
     {
       "id": "mots-et-langue-08-sur-10",
@@ -1413,11 +1415,11 @@
       "questions": 24,
       "niveaux": {
         "3": 1,
-        "2": 5,
-        "1": 18
+        "2": 6,
+        "1": 17
       },
-      "octets": 4265,
-      "empreinte": "ff2442c3a616359ea4aefa75bf5c7afc57dd4dd1"
+      "octets": 5463,
+      "empreinte": "98b6ab8564934b568f58a8754f0781502f928dbd"
     },
     {
       "id": "mots-et-langue-09-sur-10",
@@ -1431,8 +1433,8 @@
         "2": 4,
         "3": 1
       },
-      "octets": 4051,
-      "empreinte": "63336a7fe581a1dcfa2503282935916e3265d435"
+      "octets": 5007,
+      "empreinte": "79d23f5e044faf3d638ad5c28cd3277f62f7aea6"
     },
     {
       "id": "mots-et-langue-10-sur-10",
@@ -1446,866 +1448,821 @@
         "2": 3,
         "3": 1
       },
-      "octets": 4085,
-      "empreinte": "b7088946bf903463312274792857ea19abb22aba"
+      "octets": 5015,
+      "empreinte": "74d8e8b0be49ea4bd90d4304add3cf3917ba3c31"
     },
     {
-      "id": "7-a-77-ans-01-sur-58",
-      "titre": "7 à 77 ans 01 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 1 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
+      "id": "culture-pop-01-sur-10",
+      "titre": "Culture pop 01 sur 10",
+      "note": "Catégorie Culture pop. Manche 1 sur 10.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
       "niveaux": {
-        "1": 25
+        "3": 10,
+        "2": 7,
+        "1": 7
       },
-      "octets": 4359,
-      "empreinte": "efd2267990fa8795690f97a1cc8a10cddadba322"
+      "octets": 6062,
+      "empreinte": "eaa0902821e24af7662e1f8584df12f4fe51839c"
     },
     {
-      "id": "7-a-77-ans-02-sur-58",
-      "titre": "7 à 77 ans 02 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 2 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
+      "id": "culture-pop-02-sur-10",
+      "titre": "Culture pop 02 sur 10",
+      "note": "Catégorie Culture pop. Manche 2 sur 10.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
       "niveaux": {
-        "1": 25
+        "3": 7,
+        "1": 6,
+        "2": 11
       },
-      "octets": 4489,
-      "empreinte": "ec8586902e723d68aecdf950944c7d8ab8f84045"
+      "octets": 6208,
+      "empreinte": "036664a9314e2386f98f35ca3f48de130abb1bfa"
     },
     {
-      "id": "7-a-77-ans-03-sur-58",
-      "titre": "7 à 77 ans 03 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 3 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
+      "id": "culture-pop-03-sur-10",
+      "titre": "Culture pop 03 sur 10",
+      "note": "Catégorie Culture pop. Manche 3 sur 10.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
       "niveaux": {
-        "1": 25
+        "2": 11,
+        "3": 8,
+        "1": 5
       },
-      "octets": 4456,
-      "empreinte": "8db25f6f18a0948beaad9769ffa92aea1d7d305e"
+      "octets": 6257,
+      "empreinte": "50225174b03da4d3b431831d8200f1b4ef18f164"
     },
     {
-      "id": "7-a-77-ans-04-sur-58",
-      "titre": "7 à 77 ans 04 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 4 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
+      "id": "culture-pop-04-sur-10",
+      "titre": "Culture pop 04 sur 10",
+      "note": "Catégorie Culture pop. Manche 4 sur 10.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
       "niveaux": {
-        "1": 25
+        "2": 10,
+        "1": 8,
+        "3": 6
       },
-      "octets": 4531,
-      "empreinte": "10bcf4ddd7a67aed37ef3811b7b072d10d27d939"
+      "octets": 6057,
+      "empreinte": "8aff22374c5fae4d52a0e3a7cee2950cf656202e"
     },
     {
-      "id": "7-a-77-ans-05-sur-58",
-      "titre": "7 à 77 ans 05 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 5 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
+      "id": "culture-pop-05-sur-10",
+      "titre": "Culture pop 05 sur 10",
+      "note": "Catégorie Culture pop. Manche 5 sur 10.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
       "niveaux": {
-        "1": 25
+        "2": 14,
+        "1": 4,
+        "3": 6
       },
-      "octets": 4558,
-      "empreinte": "87c6ab94c97e71055053fb92ef9349ab3febb318"
+      "octets": 6061,
+      "empreinte": "640d1d92bd67052e2689d91c54e50ce3aa8c7016"
     },
     {
-      "id": "7-a-77-ans-06-sur-58",
-      "titre": "7 à 77 ans 06 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 6 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
+      "id": "culture-pop-06-sur-10",
+      "titre": "Culture pop 06 sur 10",
+      "note": "Catégorie Culture pop. Manche 6 sur 10.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
       "niveaux": {
-        "1": 25
+        "1": 8,
+        "2": 12,
+        "3": 4
       },
-      "octets": 4628,
-      "empreinte": "75d8c35e01daf0fd5d06d86e57de751462636d55"
+      "octets": 6381,
+      "empreinte": "829c9d0e63b4ff0a9804404e3a65723385be336d"
     },
     {
-      "id": "7-a-77-ans-07-sur-58",
-      "titre": "7 à 77 ans 07 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 7 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
+      "id": "culture-pop-07-sur-10",
+      "titre": "Culture pop 07 sur 10",
+      "note": "Catégorie Culture pop. Manche 7 sur 10.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
       "niveaux": {
-        "1": 25
+        "3": 8,
+        "1": 6,
+        "2": 10
       },
-      "octets": 4545,
-      "empreinte": "692e216716ad0c18b7fc46b0d17a4af1fbc15899"
+      "octets": 6252,
+      "empreinte": "09824622520e89b90503fee59cedd880527e4cf9"
     },
     {
-      "id": "7-a-77-ans-08-sur-58",
-      "titre": "7 à 77 ans 08 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 8 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
+      "id": "culture-pop-08-sur-10",
+      "titre": "Culture pop 08 sur 10",
+      "note": "Catégorie Culture pop. Manche 8 sur 10.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
       "niveaux": {
-        "1": 25
+        "2": 7,
+        "1": 6,
+        "3": 11
       },
-      "octets": 4524,
-      "empreinte": "b62a9f8ad1121e7931c42c5f76ee67f27da1cb33"
+      "octets": 6205,
+      "empreinte": "6e65ab4eac28fafc6a5590ec4fccc58bac53f463"
     },
     {
-      "id": "7-a-77-ans-09-sur-58",
-      "titre": "7 à 77 ans 09 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 9 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4653,
-      "empreinte": "4ef20fdc466f8f7fee0ec4e4984cc891b4df7803"
-    },
-    {
-      "id": "7-a-77-ans-10-sur-58",
-      "titre": "7 à 77 ans 10 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 10 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4525,
-      "empreinte": "5210ab529ca5bd86044923ec004dda4000a753f7"
-    },
-    {
-      "id": "7-a-77-ans-11-sur-58",
-      "titre": "7 à 77 ans 11 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 11 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4599,
-      "empreinte": "8c9b76dcfb60ad2de2ae1846c69530179e062884"
-    },
-    {
-      "id": "7-a-77-ans-12-sur-58",
-      "titre": "7 à 77 ans 12 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 12 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4449,
-      "empreinte": "83284bfa66a319ed02fce513342b87035e83dcd3"
-    },
-    {
-      "id": "7-a-77-ans-13-sur-58",
-      "titre": "7 à 77 ans 13 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 13 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4485,
-      "empreinte": "044cc7b55e31b8933a381b0592676b08ddd0e75d"
-    },
-    {
-      "id": "7-a-77-ans-14-sur-58",
-      "titre": "7 à 77 ans 14 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 14 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4479,
-      "empreinte": "3a086b63164811071e94c7518e3e7d6f768a3a43"
-    },
-    {
-      "id": "7-a-77-ans-15-sur-58",
-      "titre": "7 à 77 ans 15 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 15 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4552,
-      "empreinte": "e5c54c9246e82d841acdb61fb7d19c50ad851c3c"
-    },
-    {
-      "id": "7-a-77-ans-16-sur-58",
-      "titre": "7 à 77 ans 16 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 16 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4613,
-      "empreinte": "8fc9e9cbb71fc638e8d5db9c062d339fde1ba8b9"
-    },
-    {
-      "id": "7-a-77-ans-17-sur-58",
-      "titre": "7 à 77 ans 17 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 17 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4567,
-      "empreinte": "caaa07fd2103c389a48139b5d48250212daf6f7a"
-    },
-    {
-      "id": "7-a-77-ans-18-sur-58",
-      "titre": "7 à 77 ans 18 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 18 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4566,
-      "empreinte": "bde76541f98b68b93ae3527f5e0b0b0d67f50e5c"
-    },
-    {
-      "id": "7-a-77-ans-19-sur-58",
-      "titre": "7 à 77 ans 19 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 19 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4559,
-      "empreinte": "6c9431c24079066053186b83553976decce6a0f2"
-    },
-    {
-      "id": "7-a-77-ans-20-sur-58",
-      "titre": "7 à 77 ans 20 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 20 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4570,
-      "empreinte": "9483892aa251affe4550a8a11cd9e0d6773296cc"
-    },
-    {
-      "id": "7-a-77-ans-21-sur-58",
-      "titre": "7 à 77 ans 21 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 21 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4477,
-      "empreinte": "1d9e782b58a6b1a36598d223faeca96b596f0124"
-    },
-    {
-      "id": "7-a-77-ans-22-sur-58",
-      "titre": "7 à 77 ans 22 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 22 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4495,
-      "empreinte": "60f92db695ac96dab9c4f28b45bfba2dd525a979"
-    },
-    {
-      "id": "7-a-77-ans-23-sur-58",
-      "titre": "7 à 77 ans 23 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 23 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4491,
-      "empreinte": "55f82dcb7aac36b3973bac2e304fabe2d9e054ef"
-    },
-    {
-      "id": "7-a-77-ans-24-sur-58",
-      "titre": "7 à 77 ans 24 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 24 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4486,
-      "empreinte": "ed1e49639feb2c5b576707c162f99a9232419ce3"
-    },
-    {
-      "id": "7-a-77-ans-25-sur-58",
-      "titre": "7 à 77 ans 25 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 25 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4574,
-      "empreinte": "2395c9fa58fdc98557f7327f01fa0a8b9b269565"
-    },
-    {
-      "id": "7-a-77-ans-26-sur-58",
-      "titre": "7 à 77 ans 26 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 26 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4411,
-      "empreinte": "1e1b6fe0a1b67de38dc8efa95285cfb314160051"
-    },
-    {
-      "id": "7-a-77-ans-27-sur-58",
-      "titre": "7 à 77 ans 27 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 27 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4525,
-      "empreinte": "e73987a096da441bb60c129eeb6c9613e93d1e6f"
-    },
-    {
-      "id": "7-a-77-ans-28-sur-58",
-      "titre": "7 à 77 ans 28 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 28 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4451,
-      "empreinte": "9bad5526065e6c72b08d26d573e2fcc3ee8c0438"
-    },
-    {
-      "id": "7-a-77-ans-29-sur-58",
-      "titre": "7 à 77 ans 29 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 29 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4557,
-      "empreinte": "20524d7863428d1b51c49de738989f930cfbee64"
-    },
-    {
-      "id": "7-a-77-ans-30-sur-58",
-      "titre": "7 à 77 ans 30 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 30 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4565,
-      "empreinte": "3ae24d63782049d792772106f25dbb40512bc005"
-    },
-    {
-      "id": "7-a-77-ans-31-sur-58",
-      "titre": "7 à 77 ans 31 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 31 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4463,
-      "empreinte": "2c3ef56cc7514f9b5293367efe7acace77e0db35"
-    },
-    {
-      "id": "7-a-77-ans-32-sur-58",
-      "titre": "7 à 77 ans 32 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 32 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4497,
-      "empreinte": "cdea12cf3f64861ff67723bce3e33ed7aa9f53cf"
-    },
-    {
-      "id": "7-a-77-ans-33-sur-58",
-      "titre": "7 à 77 ans 33 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 33 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4503,
-      "empreinte": "ec494bb339af92b91a4e8aadd6cc34651fdb1c24"
-    },
-    {
-      "id": "7-a-77-ans-34-sur-58",
-      "titre": "7 à 77 ans 34 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 34 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4547,
-      "empreinte": "a664bdfd9478399838a65562b9884329a1042ae3"
-    },
-    {
-      "id": "7-a-77-ans-35-sur-58",
-      "titre": "7 à 77 ans 35 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 35 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4490,
-      "empreinte": "19fbe5dc6577dc704963109475b0cf083597b5ac"
-    },
-    {
-      "id": "7-a-77-ans-36-sur-58",
-      "titre": "7 à 77 ans 36 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 36 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4693,
-      "empreinte": "0b57a8dfb81a60dc975068f85d480e64f3492043"
-    },
-    {
-      "id": "7-a-77-ans-37-sur-58",
-      "titre": "7 à 77 ans 37 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 37 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4446,
-      "empreinte": "fc52fc11524d6ceb0a802758074e541b19a812c1"
-    },
-    {
-      "id": "7-a-77-ans-38-sur-58",
-      "titre": "7 à 77 ans 38 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 38 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4513,
-      "empreinte": "3c8d5a1fa3974e37ab541bba86fd9e4b041755e8"
-    },
-    {
-      "id": "7-a-77-ans-39-sur-58",
-      "titre": "7 à 77 ans 39 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 39 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4500,
-      "empreinte": "c1bf211e944035521173d78f271370d7ac20f966"
-    },
-    {
-      "id": "7-a-77-ans-40-sur-58",
-      "titre": "7 à 77 ans 40 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 40 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4617,
-      "empreinte": "72ec588c205eb6fa60d2e15348122c1c2c7c90a4"
-    },
-    {
-      "id": "7-a-77-ans-41-sur-58",
-      "titre": "7 à 77 ans 41 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 41 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4561,
-      "empreinte": "b515449d9e5f84881b3b50e8a0527f52c91ad930"
-    },
-    {
-      "id": "7-a-77-ans-42-sur-58",
-      "titre": "7 à 77 ans 42 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 42 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4478,
-      "empreinte": "bf30b2af0fd3d6480b11456d8b5d93e6df95155f"
-    },
-    {
-      "id": "7-a-77-ans-43-sur-58",
-      "titre": "7 à 77 ans 43 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 43 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4593,
-      "empreinte": "a15ed5d019e3e4969b951d17207fbf8ce59a72f1"
-    },
-    {
-      "id": "7-a-77-ans-44-sur-58",
-      "titre": "7 à 77 ans 44 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 44 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4500,
-      "empreinte": "4a6831ccc2bdb63bcffcc9a39bb78fb19ce59a6f"
-    },
-    {
-      "id": "7-a-77-ans-45-sur-58",
-      "titre": "7 à 77 ans 45 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 45 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4538,
-      "empreinte": "4d8a51eaf6e92ca44a240b8cb9031b74819aa62c"
-    },
-    {
-      "id": "7-a-77-ans-46-sur-58",
-      "titre": "7 à 77 ans 46 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 46 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4484,
-      "empreinte": "819dad92101da17ef56e69d93e923d7648068ffa"
-    },
-    {
-      "id": "7-a-77-ans-47-sur-58",
-      "titre": "7 à 77 ans 47 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 47 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4528,
-      "empreinte": "8c7c30cb7f1a98a6679f4ed51f72fb468d81593e"
-    },
-    {
-      "id": "7-a-77-ans-48-sur-58",
-      "titre": "7 à 77 ans 48 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 48 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4565,
-      "empreinte": "d75390d9205c3a5aa97e2d2be8d9c9c90b722a3c"
-    },
-    {
-      "id": "7-a-77-ans-49-sur-58",
-      "titre": "7 à 77 ans 49 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 49 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4483,
-      "empreinte": "37c0b37068224cc6521e5dc524c29b609e77c2c6"
-    },
-    {
-      "id": "7-a-77-ans-50-sur-58",
-      "titre": "7 à 77 ans 50 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 50 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4501,
-      "empreinte": "531d3102e8ec5a5f7db3e9e66e05677826500d43"
-    },
-    {
-      "id": "7-a-77-ans-51-sur-58",
-      "titre": "7 à 77 ans 51 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 51 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4553,
-      "empreinte": "fcfda010933f20d3f4e6ebce6e9c8945cac7eb80"
-    },
-    {
-      "id": "7-a-77-ans-52-sur-58",
-      "titre": "7 à 77 ans 52 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 52 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4614,
-      "empreinte": "0aaf3be4dfd05fdba8142eab70347678ca223ae7"
-    },
-    {
-      "id": "7-a-77-ans-53-sur-58",
-      "titre": "7 à 77 ans 53 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 53 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4463,
-      "empreinte": "9d7c3f038ad63d1314abfebe12b74a6a09aa4e51"
-    },
-    {
-      "id": "7-a-77-ans-54-sur-58",
-      "titre": "7 à 77 ans 54 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 54 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4437,
-      "empreinte": "34fadb054fea7070d5806a751998abd5253fae06"
-    },
-    {
-      "id": "7-a-77-ans-55-sur-58",
-      "titre": "7 à 77 ans 55 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 55 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4423,
-      "empreinte": "33d7941ed910d405f430211d8a5d9d259c97ad3f"
-    },
-    {
-      "id": "7-a-77-ans-56-sur-58",
-      "titre": "7 à 77 ans 56 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 56 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4522,
-      "empreinte": "a8fbb0ca21e3de46739f372e854c8b10a5a63a37"
-    },
-    {
-      "id": "7-a-77-ans-57-sur-58",
-      "titre": "7 à 77 ans 57 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 57 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
-      "questions": 25,
-      "niveaux": {
-        "1": 25
-      },
-      "octets": 4537,
-      "empreinte": "f0e2ffa4f22749ad79843e36957a54a123ea96f5"
-    },
-    {
-      "id": "7-a-77-ans-58-sur-58",
-      "titre": "7 à 77 ans 58 sur 58",
-      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 58 sur 58.",
-      "collection": "7 à 77 ans",
-      "emoji": "🎈",
+      "id": "culture-pop-09-sur-10",
+      "titre": "Culture pop 09 sur 10",
+      "note": "Catégorie Culture pop. Manche 9 sur 10.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
       "questions": 23,
       "niveaux": {
-        "1": 23
+        "2": 12,
+        "3": 6,
+        "1": 5
       },
-      "octets": 4222,
-      "empreinte": "e5bd9873e7413f02662d9cc4ad8ff68f6daa5610"
+      "octets": 5788,
+      "empreinte": "4acdcbeb91598969e8cf7d75363f4bb46f8b9406"
     },
     {
-      "id": "connaisseurs-1-sur-8",
-      "titre": "Connaisseurs 1 sur 8",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 1 sur 8.",
+      "id": "culture-pop-10-sur-10",
+      "titre": "Culture pop 10 sur 10",
+      "note": "Catégorie Culture pop. Manche 10 sur 10.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 23,
+      "niveaux": {
+        "1": 6,
+        "2": 14,
+        "3": 3
+      },
+      "octets": 5690,
+      "empreinte": "e926435463dbed9b145a042f029abb5486742d54"
+    },
+    {
+      "id": "7-a-77-ans-01-sur-40",
+      "titre": "7 à 77 ans 01 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 1 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5539,
+      "empreinte": "0c56334311597010c2017e075f30ecadd03a8d3c"
+    },
+    {
+      "id": "7-a-77-ans-02-sur-40",
+      "titre": "7 à 77 ans 02 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 2 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5288,
+      "empreinte": "2a299c4471fbd524654ee4aba64c398c68dfb554"
+    },
+    {
+      "id": "7-a-77-ans-03-sur-40",
+      "titre": "7 à 77 ans 03 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 3 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5288,
+      "empreinte": "a3868ec5f7e8571b970b6cae509fd17b73fc53d6"
+    },
+    {
+      "id": "7-a-77-ans-04-sur-40",
+      "titre": "7 à 77 ans 04 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 4 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5129,
+      "empreinte": "dc99f04f90c5c67a74678814b89ab46052c965c0"
+    },
+    {
+      "id": "7-a-77-ans-05-sur-40",
+      "titre": "7 à 77 ans 05 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 5 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5080,
+      "empreinte": "8a1e2c088d044e998e28abfbe66acdae97cecbee"
+    },
+    {
+      "id": "7-a-77-ans-06-sur-40",
+      "titre": "7 à 77 ans 06 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 6 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5278,
+      "empreinte": "14045b8655bb10fd2e02a32c4f964821b913321b"
+    },
+    {
+      "id": "7-a-77-ans-07-sur-40",
+      "titre": "7 à 77 ans 07 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 7 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5020,
+      "empreinte": "a67d2ad171e65786a04a1b66bca6d76214f59a05"
+    },
+    {
+      "id": "7-a-77-ans-08-sur-40",
+      "titre": "7 à 77 ans 08 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 8 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5075,
+      "empreinte": "2bcb843a7e78819c08599cba09f10bfd4198b6d4"
+    },
+    {
+      "id": "7-a-77-ans-09-sur-40",
+      "titre": "7 à 77 ans 09 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 9 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5310,
+      "empreinte": "c9f9262a3211db153b753980b4cfc7e16edc07c0"
+    },
+    {
+      "id": "7-a-77-ans-10-sur-40",
+      "titre": "7 à 77 ans 10 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 10 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5061,
+      "empreinte": "dc982f53826f57b022c2233ca4dcb5300da967d0"
+    },
+    {
+      "id": "7-a-77-ans-11-sur-40",
+      "titre": "7 à 77 ans 11 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 11 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5113,
+      "empreinte": "933a3fc7d0d3ef1988a932ea75049d44b2708604"
+    },
+    {
+      "id": "7-a-77-ans-12-sur-40",
+      "titre": "7 à 77 ans 12 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 12 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5442,
+      "empreinte": "bc3b161f7c323fd1bef6edaffd4c7f6b8a765a3c"
+    },
+    {
+      "id": "7-a-77-ans-13-sur-40",
+      "titre": "7 à 77 ans 13 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 13 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5344,
+      "empreinte": "64f617a9e795ae982e9b54ca321320b9ee16387f"
+    },
+    {
+      "id": "7-a-77-ans-14-sur-40",
+      "titre": "7 à 77 ans 14 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 14 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5448,
+      "empreinte": "1afaa3311d000cea79ac43ab5db98a4071a066b7"
+    },
+    {
+      "id": "7-a-77-ans-15-sur-40",
+      "titre": "7 à 77 ans 15 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 15 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5224,
+      "empreinte": "ce1cbeaffe3669cfd694abbdf7c83e74199d38b3"
+    },
+    {
+      "id": "7-a-77-ans-16-sur-40",
+      "titre": "7 à 77 ans 16 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 16 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5353,
+      "empreinte": "4e6e71b7f401cd3e1f4e78822798931bcbed6e5a"
+    },
+    {
+      "id": "7-a-77-ans-17-sur-40",
+      "titre": "7 à 77 ans 17 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 17 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5237,
+      "empreinte": "32f4ae89fb20e42d772f5915391f2831329b5e0c"
+    },
+    {
+      "id": "7-a-77-ans-18-sur-40",
+      "titre": "7 à 77 ans 18 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 18 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5164,
+      "empreinte": "2cb96a1b8cdf59fc4c0df193b366afb4cf74d52c"
+    },
+    {
+      "id": "7-a-77-ans-19-sur-40",
+      "titre": "7 à 77 ans 19 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 19 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5347,
+      "empreinte": "dc74a622c9a6beb990fbbccd109e74c9d30e0f20"
+    },
+    {
+      "id": "7-a-77-ans-20-sur-40",
+      "titre": "7 à 77 ans 20 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 20 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5290,
+      "empreinte": "a2032bbade4263dc73639e5eecfe3d462edfe828"
+    },
+    {
+      "id": "7-a-77-ans-21-sur-40",
+      "titre": "7 à 77 ans 21 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 21 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5273,
+      "empreinte": "159314d3443ff99b8b7a4016c9fd86170fdff133"
+    },
+    {
+      "id": "7-a-77-ans-22-sur-40",
+      "titre": "7 à 77 ans 22 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 22 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 4909,
+      "empreinte": "0932edc37063f1e47692d0690c84d0cfb1789398"
+    },
+    {
+      "id": "7-a-77-ans-23-sur-40",
+      "titre": "7 à 77 ans 23 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 23 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5184,
+      "empreinte": "4e34eb358d1d802573d420057829e7315147c4a7"
+    },
+    {
+      "id": "7-a-77-ans-24-sur-40",
+      "titre": "7 à 77 ans 24 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 24 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5197,
+      "empreinte": "1a30c9c85edd877edb78a731954c58d0f6ae16c4"
+    },
+    {
+      "id": "7-a-77-ans-25-sur-40",
+      "titre": "7 à 77 ans 25 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 25 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5286,
+      "empreinte": "c7e1031d2874102b6da73752d63b67cfa9127ca5"
+    },
+    {
+      "id": "7-a-77-ans-26-sur-40",
+      "titre": "7 à 77 ans 26 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 26 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5200,
+      "empreinte": "1b7587ea111dfca74e2b6ee6dc0fadd795faa4d8"
+    },
+    {
+      "id": "7-a-77-ans-27-sur-40",
+      "titre": "7 à 77 ans 27 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 27 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5287,
+      "empreinte": "2c88029f6c3f7ac20290aa8c7332450b49ee7dee"
+    },
+    {
+      "id": "7-a-77-ans-28-sur-40",
+      "titre": "7 à 77 ans 28 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 28 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5446,
+      "empreinte": "b3e6d5f2d56f4d69e458eb35dea198f08222e733"
+    },
+    {
+      "id": "7-a-77-ans-29-sur-40",
+      "titre": "7 à 77 ans 29 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 29 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5151,
+      "empreinte": "410bf0b3142a563ef96e91a7c2d0c305d3e08df1"
+    },
+    {
+      "id": "7-a-77-ans-30-sur-40",
+      "titre": "7 à 77 ans 30 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 30 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5285,
+      "empreinte": "0ed4cbc2e964e54829996aa3761f0b6cb0b974a7"
+    },
+    {
+      "id": "7-a-77-ans-31-sur-40",
+      "titre": "7 à 77 ans 31 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 31 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5365,
+      "empreinte": "dbcd9b29c3f70d2e809586e5710f3257e1f87373"
+    },
+    {
+      "id": "7-a-77-ans-32-sur-40",
+      "titre": "7 à 77 ans 32 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 32 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5713,
+      "empreinte": "686a6cd880724d0cfa8c6b833eb0bebd75502ac4"
+    },
+    {
+      "id": "7-a-77-ans-33-sur-40",
+      "titre": "7 à 77 ans 33 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 33 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5620,
+      "empreinte": "a29e4cbd62fed43238fc76213aa7418e46f81a0a"
+    },
+    {
+      "id": "7-a-77-ans-34-sur-40",
+      "titre": "7 à 77 ans 34 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 34 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5462,
+      "empreinte": "5adc517cb5c89f4fc3bcf8739e5b954af3a6a987"
+    },
+    {
+      "id": "7-a-77-ans-35-sur-40",
+      "titre": "7 à 77 ans 35 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 35 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5344,
+      "empreinte": "f7c3c8212d55c23f99803dff0bb37f3d571496aa"
+    },
+    {
+      "id": "7-a-77-ans-36-sur-40",
+      "titre": "7 à 77 ans 36 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 36 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5051,
+      "empreinte": "f3824a2bf2bb7d9665b0df4714b3fc3a983bec63"
+    },
+    {
+      "id": "7-a-77-ans-37-sur-40",
+      "titre": "7 à 77 ans 37 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 37 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5046,
+      "empreinte": "da99715f57e4db72f232f85740cb87c74d083d6b"
+    },
+    {
+      "id": "7-a-77-ans-38-sur-40",
+      "titre": "7 à 77 ans 38 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 38 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 4928,
+      "empreinte": "c03307204f5affe8ac22a19e1c81445a85dca8dd"
+    },
+    {
+      "id": "7-a-77-ans-39-sur-40",
+      "titre": "7 à 77 ans 39 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 39 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5308,
+      "empreinte": "0c8a32b1f47cfb7bdaf582ce194c1f19b75d4669"
+    },
+    {
+      "id": "7-a-77-ans-40-sur-40",
+      "titre": "7 à 77 ans 40 sur 40",
+      "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 40 sur 40.",
+      "collection": "7 à 77 ans",
+      "emoji": "🎈",
+      "questions": 25,
+      "niveaux": {
+        "1": 25
+      },
+      "octets": 5194,
+      "empreinte": "1ed09c618e77e1b86ac36d7b2163c00fe84744fe"
+    },
+    {
+      "id": "connaisseurs-01-sur-11",
+      "titre": "Connaisseurs 01 sur 11",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 1 sur 11.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 4403,
-      "empreinte": "52b726f542961c2228131da266f7cfdb4ae954d5"
+      "octets": 6225,
+      "empreinte": "1d956aeea94902735d42a1cc3266252882a9ea29"
     },
     {
-      "id": "connaisseurs-2-sur-8",
-      "titre": "Connaisseurs 2 sur 8",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 2 sur 8.",
+      "id": "connaisseurs-02-sur-11",
+      "titre": "Connaisseurs 02 sur 11",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 2 sur 11.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 4442,
-      "empreinte": "a91bac92f52645d178ed723d2009d69f585a84e3"
+      "octets": 6082,
+      "empreinte": "9e2bab802648123538cc4c988980aa59feb30682"
     },
     {
-      "id": "connaisseurs-3-sur-8",
-      "titre": "Connaisseurs 3 sur 8",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 3 sur 8.",
+      "id": "connaisseurs-03-sur-11",
+      "titre": "Connaisseurs 03 sur 11",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 3 sur 11.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 4448,
-      "empreinte": "be13ea6a972393ae098a55cfe6f933d27706f15f"
+      "octets": 6214,
+      "empreinte": "e655b6bfe222ea4c017b4afb6b2b4f58c77059e9"
     },
     {
-      "id": "connaisseurs-4-sur-8",
-      "titre": "Connaisseurs 4 sur 8",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 4 sur 8.",
+      "id": "connaisseurs-04-sur-11",
+      "titre": "Connaisseurs 04 sur 11",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 4 sur 11.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 4345,
-      "empreinte": "1d5490b1adbe06e2c46585c56826742f82c0258d"
+      "octets": 6150,
+      "empreinte": "10874d501faa970aacb9f0491c953b35592ae4ce"
     },
     {
-      "id": "connaisseurs-5-sur-8",
-      "titre": "Connaisseurs 5 sur 8",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 5 sur 8.",
+      "id": "connaisseurs-05-sur-11",
+      "titre": "Connaisseurs 05 sur 11",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 5 sur 11.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 4429,
-      "empreinte": "e59f7f13704a263b8802cf5c7080ec5bf158bf07"
+      "octets": 6119,
+      "empreinte": "5d400cb67e6ef2e7fed90bb10b0d954a47384dce"
     },
     {
-      "id": "connaisseurs-6-sur-8",
-      "titre": "Connaisseurs 6 sur 8",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 6 sur 8.",
+      "id": "connaisseurs-06-sur-11",
+      "titre": "Connaisseurs 06 sur 11",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 6 sur 11.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 4455,
-      "empreinte": "c0056caba534d472a86a248b8d8a3993c4d18e90"
+      "octets": 6007,
+      "empreinte": "33312f04847cd25ec8cbbecee90f93759bc7ed7f"
     },
     {
-      "id": "connaisseurs-7-sur-8",
-      "titre": "Connaisseurs 7 sur 8",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 7 sur 8.",
+      "id": "connaisseurs-07-sur-11",
+      "titre": "Connaisseurs 07 sur 11",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 7 sur 11.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 4451,
-      "empreinte": "ef7714f5a820f0b2ba6fcb03bf21f065810d72a5"
+      "octets": 6147,
+      "empreinte": "b0e182a6415f6128d05774d0d5868a852a23eebc"
     },
     {
-      "id": "connaisseurs-8-sur-8",
-      "titre": "Connaisseurs 8 sur 8",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 8 sur 8.",
+      "id": "connaisseurs-08-sur-11",
+      "titre": "Connaisseurs 08 sur 11",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 8 sur 11.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
-      "questions": 14,
+      "questions": 25,
       "niveaux": {
-        "3": 14
+        "3": 25
       },
-      "octets": 2612,
-      "empreinte": "810fe0fc36a823e755189261bc0f23822e93287b"
+      "octets": 5980,
+      "empreinte": "38e5fd79f3a10726a6b2a1eb281cd23a784974d0"
+    },
+    {
+      "id": "connaisseurs-09-sur-11",
+      "titre": "Connaisseurs 09 sur 11",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 9 sur 11.",
+      "collection": "Connaisseurs",
+      "emoji": "🎓",
+      "questions": 25,
+      "niveaux": {
+        "3": 25
+      },
+      "octets": 6150,
+      "empreinte": "a952a97ed8333e1faaf611428e90a10bd0704d02"
+    },
+    {
+      "id": "connaisseurs-10-sur-11",
+      "titre": "Connaisseurs 10 sur 11",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 10 sur 11.",
+      "collection": "Connaisseurs",
+      "emoji": "🎓",
+      "questions": 25,
+      "niveaux": {
+        "3": 25
+      },
+      "octets": 6156,
+      "empreinte": "845991aaa2b0effb7fbb4e622bbd79711cff3a8c"
+    },
+    {
+      "id": "connaisseurs-11-sur-11",
+      "titre": "Connaisseurs 11 sur 11",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 11 sur 11.",
+      "collection": "Connaisseurs",
+      "emoji": "🎓",
+      "questions": 6,
+      "niveaux": {
+        "3": 6
+      },
+      "octets": 1647,
+      "empreinte": "ea7889a42f0f3cba3ab9a03d5f3a0a826182cf9b"
     },
     {
       "id": "toutes-categories-01-sur-16",
@@ -2315,12 +2272,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "2": 5,
-        "1": 17,
-        "3": 3
+        "2": 8,
+        "3": 5,
+        "1": 12
       },
-      "octets": 4456,
-      "empreinte": "1cf449e23016a96b55da6f185d73d662f76e2f48"
+      "octets": 5805,
+      "empreinte": "2ba020b1ada8b29b5249b922484f82f5bf74b796"
     },
     {
       "id": "toutes-categories-02-sur-16",
@@ -2330,12 +2287,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "2": 7,
-        "1": 16,
-        "3": 2
+        "1": 15,
+        "3": 1,
+        "2": 9
       },
-      "octets": 4376,
-      "empreinte": "7df432866f6de1472fddb081d56536887c71e55a"
+      "octets": 5578,
+      "empreinte": "4f852a3f238ebdc141c9835975c5bca78eef8da2"
     },
     {
       "id": "toutes-categories-03-sur-16",
@@ -2345,12 +2302,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 18,
-        "3": 2,
-        "2": 5
+        "1": 16,
+        "2": 7,
+        "3": 2
       },
-      "octets": 4463,
-      "empreinte": "c2e39535c87067f08a3ea99a6e6cb0678eb6fe90"
+      "octets": 5570,
+      "empreinte": "84df5e53e5aa1243fda6b1c0c1a9d3e9747193c1"
     },
     {
       "id": "toutes-categories-04-sur-16",
@@ -2360,12 +2317,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 12,
-        "2": 10,
-        "3": 3
+        "3": 5,
+        "1": 14,
+        "2": 6
       },
-      "octets": 4527,
-      "empreinte": "7bdfc56b252de9f12fa34a7e7cde1ec17008b157"
+      "octets": 5605,
+      "empreinte": "6a8105250634aa5b5fad9635036eff110e49754d"
     },
     {
       "id": "toutes-categories-05-sur-16",
@@ -2375,11 +2332,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 15,
+        "1": 12,
+        "3": 3,
         "2": 10
       },
-      "octets": 4475,
-      "empreinte": "34c254d36137d8fa3c20ef57e06e101f98876991"
+      "octets": 5885,
+      "empreinte": "335f22ecbb26a45bbcc43ee5eb350a67c17c0137"
     },
     {
       "id": "toutes-categories-06-sur-16",
@@ -2390,11 +2348,11 @@
       "questions": 25,
       "niveaux": {
         "2": 8,
-        "1": 15,
-        "3": 2
+        "1": 16,
+        "3": 1
       },
-      "octets": 4477,
-      "empreinte": "b6674ce6a356517b88a61353e320514621f8d7d7"
+      "octets": 5663,
+      "empreinte": "6cc4babd2cfaff868896a1110d3057ebcfb8b1bc"
     },
     {
       "id": "toutes-categories-07-sur-16",
@@ -2404,12 +2362,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 15,
-        "2": 8,
-        "3": 2
+        "1": 11,
+        "2": 10,
+        "3": 4
       },
-      "octets": 4498,
-      "empreinte": "379060b7575454e0fabdda1e447dff8c96b1da50"
+      "octets": 5861,
+      "empreinte": "f16b68be2f5be2d46d9570296d32dec94e347d58"
     },
     {
       "id": "toutes-categories-08-sur-16",
@@ -2419,12 +2377,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 16,
-        "2": 8,
-        "3": 1
+        "1": 12,
+        "2": 9,
+        "3": 4
       },
-      "octets": 4524,
-      "empreinte": "97ca82594e32147d916314cb50146bd6f21fe935"
+      "octets": 5968,
+      "empreinte": "fa37bad9d84ef984ec1a839def779cec093e43ec"
     },
     {
       "id": "toutes-categories-09-sur-16",
@@ -2434,12 +2392,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "2": 10,
-        "1": 13,
-        "3": 2
+        "1": 17,
+        "3": 1,
+        "2": 7
       },
-      "octets": 4348,
-      "empreinte": "09160f6c7d77cfe4a518a02ddba8c1719f57f211"
+      "octets": 5552,
+      "empreinte": "0e10f756d2624df9ab32581981caf328beaa5dbe"
     },
     {
       "id": "toutes-categories-10-sur-16",
@@ -2449,12 +2407,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "2": 7,
-        "1": 15,
-        "3": 3
+        "1": 18,
+        "2": 5,
+        "3": 2
       },
-      "octets": 4406,
-      "empreinte": "813694ee04425d9e3e198f454a67d5b48b4ae4df"
+      "octets": 5721,
+      "empreinte": "934d7c1b5f59e1d31e561b0be5bada2b1049c797"
     },
     {
       "id": "toutes-categories-11-sur-16",
@@ -2464,12 +2422,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "2": 10,
-        "1": 13,
-        "3": 2
+        "3": 5,
+        "2": 8,
+        "1": 12
       },
-      "octets": 4409,
-      "empreinte": "1682390f0cd9784eb315bdcce3edfc866c7d892b"
+      "octets": 5878,
+      "empreinte": "c44522393166fee6e8c4cb94361612329b485399"
     },
     {
       "id": "toutes-categories-12-sur-16",
@@ -2479,12 +2437,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 15,
-        "3": 7,
-        "2": 3
+        "2": 9,
+        "1": 13,
+        "3": 3
       },
-      "octets": 4467,
-      "empreinte": "9df45a4630559e7761d3f35423818b1f079c4dd7"
+      "octets": 5594,
+      "empreinte": "2759196ea833969a1df595f8cc214c64f8710e40"
     },
     {
       "id": "toutes-categories-13-sur-16",
@@ -2494,12 +2452,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 13,
-        "2": 8,
+        "1": 16,
+        "2": 5,
         "3": 4
       },
-      "octets": 4483,
-      "empreinte": "952959b157639bdb2146d3fb2d4195c9ade05571"
+      "octets": 5517,
+      "empreinte": "2da95fb35072ced0417a2cc864380fc2d302ef4f"
     },
     {
       "id": "toutes-categories-14-sur-16",
@@ -2509,12 +2467,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 15,
-        "2": 7,
-        "3": 3
+        "2": 9,
+        "1": 11,
+        "3": 5
       },
-      "octets": 4444,
-      "empreinte": "a86f26b6b24c8d53a193ebf1cbc8df44d5954f10"
+      "octets": 5829,
+      "empreinte": "d3e603933b92532565e32ab76bc809fb908754e2"
     },
     {
       "id": "toutes-categories-15-sur-16",
@@ -2524,12 +2482,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
+        "2": 9,
         "1": 14,
-        "2": 10,
-        "3": 1
+        "3": 2
       },
-      "octets": 4462,
-      "empreinte": "5a42a8ed464984b61ef661274beb6c244626d68d"
+      "octets": 5800,
+      "empreinte": "9aa9910560ee81fb3e659f427f2c8ee85eb20e60"
     },
     {
       "id": "toutes-categories-16-sur-16",
@@ -2539,12 +2497,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 16,
-        "2": 8,
-        "3": 1
+        "1": 14,
+        "3": 4,
+        "2": 7
       },
-      "octets": 4483,
-      "empreinte": "770e5d215cc20aac0c1d60737f17ef638cdb909c"
+      "octets": 5564,
+      "empreinte": "f022aa8b03422fb58e7820f2b43b3c72fb188dc9"
     },
     {
       "id": "manche-eclair",
@@ -2554,11 +2512,11 @@
       "emoji": "🎲",
       "questions": 10,
       "niveaux": {
-        "1": 8,
-        "2": 2
+        "1": 6,
+        "2": 4
       },
-      "octets": 1903,
-      "empreinte": "d994e4c902296c6bbef545fe5bdbc7d21ed2cd82"
+      "octets": 2259,
+      "empreinte": "72665ee023213027ab118d4a9677fc5f907a1e92"
     },
     {
       "id": "special-noel-1-sur-2",
@@ -2566,13 +2524,14 @@
       "note": "Le temps des fêtes, toutes catégories confondues. Manche 1 sur 2.",
       "collection": "Spécial Noël",
       "emoji": "🎄",
-      "questions": 15,
+      "questions": 17,
       "niveaux": {
         "1": 14,
-        "2": 1
+        "3": 1,
+        "2": 2
       },
-      "octets": 2921,
-      "empreinte": "6f0f647b5c0e59d3960b4bd0efddf05a6f8da4af"
+      "octets": 3689,
+      "empreinte": "03adf3b8f64cb6e0d1b54e97c680c5515f3a2ac1"
     },
     {
       "id": "special-noel-2-sur-2",
@@ -2580,87 +2539,119 @@
       "note": "Le temps des fêtes, toutes catégories confondues. Manche 2 sur 2.",
       "collection": "Spécial Noël",
       "emoji": "🎄",
-      "questions": 15,
+      "questions": 16,
       "niveaux": {
         "1": 14,
+        "3": 1,
         "2": 1
       },
-      "octets": 2981,
-      "empreinte": "2864b62c12b4fdc53eed926eaff69b31320d2d8a"
+      "octets": 3583,
+      "empreinte": "0ace561bffe1a5ef0be3d3efee9f84d9c86ac096"
     },
     {
-      "id": "le-quebec-ailleurs-1-sur-5",
-      "titre": "Le Québec ailleurs 1 sur 5",
-      "note": "Le Québec caché dans les neuf autres catégories. Manche 1 sur 5.",
+      "id": "le-quebec-ailleurs-1-sur-7",
+      "titre": "Le Québec ailleurs 1 sur 7",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 1 sur 7.",
       "collection": "Québec",
       "emoji": "🌲",
-      "questions": 23,
+      "questions": 25,
       "niveaux": {
-        "2": 11,
-        "1": 12
-      },
-      "octets": 4433,
-      "empreinte": "5d1888c1baf5c06682d947a636951e8c11f73ac9"
-    },
-    {
-      "id": "le-quebec-ailleurs-2-sur-5",
-      "titre": "Le Québec ailleurs 2 sur 5",
-      "note": "Le Québec caché dans les neuf autres catégories. Manche 2 sur 5.",
-      "collection": "Québec",
-      "emoji": "🌲",
-      "questions": 23,
-      "niveaux": {
-        "1": 16,
-        "3": 2,
-        "2": 5
-      },
-      "octets": 4206,
-      "empreinte": "be7a098ccd039511d6ee8643d5209aa94705160b"
-    },
-    {
-      "id": "le-quebec-ailleurs-3-sur-5",
-      "titre": "Le Québec ailleurs 3 sur 5",
-      "note": "Le Québec caché dans les neuf autres catégories. Manche 3 sur 5.",
-      "collection": "Québec",
-      "emoji": "🌲",
-      "questions": 22,
-      "niveaux": {
-        "2": 7,
-        "1": 14,
+        "1": 11,
+        "2": 13,
         "3": 1
       },
-      "octets": 4138,
-      "empreinte": "37b19d3d70886e447315e468c9f202517e7e78f9"
+      "octets": 6056,
+      "empreinte": "5e22d844e0b59a52933ea9d949d875acfc94dba3"
     },
     {
-      "id": "le-quebec-ailleurs-4-sur-5",
-      "titre": "Le Québec ailleurs 4 sur 5",
-      "note": "Le Québec caché dans les neuf autres catégories. Manche 4 sur 5.",
+      "id": "le-quebec-ailleurs-2-sur-7",
+      "titre": "Le Québec ailleurs 2 sur 7",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 2 sur 7.",
       "collection": "Québec",
       "emoji": "🌲",
-      "questions": 22,
+      "questions": 25,
       "niveaux": {
-        "1": 13,
+        "1": 11,
         "2": 7,
+        "3": 7
+      },
+      "octets": 6214,
+      "empreinte": "f12266a5b9c9acb306818fc42957e769965c0044"
+    },
+    {
+      "id": "le-quebec-ailleurs-3-sur-7",
+      "titre": "Le Québec ailleurs 3 sur 7",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 3 sur 7.",
+      "collection": "Québec",
+      "emoji": "🌲",
+      "questions": 25,
+      "niveaux": {
+        "2": 9,
+        "1": 12,
+        "3": 4
+      },
+      "octets": 5973,
+      "empreinte": "da1c55f732118d9c413d6aa4b5e88f51167f0558"
+    },
+    {
+      "id": "le-quebec-ailleurs-4-sur-7",
+      "titre": "Le Québec ailleurs 4 sur 7",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 4 sur 7.",
+      "collection": "Québec",
+      "emoji": "🌲",
+      "questions": 25,
+      "niveaux": {
+        "2": 7,
+        "1": 13,
+        "3": 5
+      },
+      "octets": 5980,
+      "empreinte": "add0b00e565da603bbff88746ef2761514c49f0c"
+    },
+    {
+      "id": "le-quebec-ailleurs-5-sur-7",
+      "titre": "Le Québec ailleurs 5 sur 7",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 5 sur 7.",
+      "collection": "Québec",
+      "emoji": "🌲",
+      "questions": 24,
+      "niveaux": {
+        "3": 6,
+        "1": 12,
+        "2": 6
+      },
+      "octets": 5612,
+      "empreinte": "7d1a0caedb7ad3e7e761de88d4e2055ca0ad7960"
+    },
+    {
+      "id": "le-quebec-ailleurs-6-sur-7",
+      "titre": "Le Québec ailleurs 6 sur 7",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 6 sur 7.",
+      "collection": "Québec",
+      "emoji": "🌲",
+      "questions": 24,
+      "niveaux": {
+        "1": 7,
+        "2": 10,
+        "3": 7
+      },
+      "octets": 5929,
+      "empreinte": "c2620b398ca53cff4ff1cc91f890fb17e3b8fb13"
+    },
+    {
+      "id": "le-quebec-ailleurs-7-sur-7",
+      "titre": "Le Québec ailleurs 7 sur 7",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 7 sur 7.",
+      "collection": "Québec",
+      "emoji": "🌲",
+      "questions": 24,
+      "niveaux": {
+        "2": 13,
+        "1": 9,
         "3": 2
       },
-      "octets": 4024,
-      "empreinte": "74ad093beaa1462b2a80b08656b17b483cba5abd"
-    },
-    {
-      "id": "le-quebec-ailleurs-5-sur-5",
-      "titre": "Le Québec ailleurs 5 sur 5",
-      "note": "Le Québec caché dans les neuf autres catégories. Manche 5 sur 5.",
-      "collection": "Québec",
-      "emoji": "🌲",
-      "questions": 22,
-      "niveaux": {
-        "1": 15,
-        "3": 2,
-        "2": 5
-      },
-      "octets": 4033,
-      "empreinte": "134d808a09edb015988f0934bcc4efff0132eaba"
+      "octets": 5773,
+      "empreinte": "0e2d474e5cb52cfb92ef376922295342d09a4a85"
     },
     {
       "id": "le-regne-animal-01-sur-11",
@@ -2668,14 +2659,14 @@
       "note": "Bêtes à poil, à plume et à écailles. Manche 1 sur 11.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
+      "questions": 25,
       "niveaux": {
-        "1": 18,
-        "2": 3,
-        "3": 2
+        "1": 17,
+        "2": 5,
+        "3": 3
       },
-      "octets": 4125,
-      "empreinte": "9cc1a256585613fdb0471704a242ed3c254786f5"
+      "octets": 5231,
+      "empreinte": "0beb581b947b8754f6d10041d51a2090bb946806"
     },
     {
       "id": "le-regne-animal-02-sur-11",
@@ -2683,13 +2674,13 @@
       "note": "Bêtes à poil, à plume et à écailles. Manche 2 sur 11.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
+      "questions": 25,
       "niveaux": {
-        "1": 16,
-        "2": 7
+        "1": 19,
+        "2": 6
       },
-      "octets": 4083,
-      "empreinte": "2f31fe652bc2f9d30a568759a36dc17b66472621"
+      "octets": 5251,
+      "empreinte": "48ab4f8599c0a52d5aeacf7c26b17f44d1925100"
     },
     {
       "id": "le-regne-animal-03-sur-11",
@@ -2697,13 +2688,14 @@
       "note": "Bêtes à poil, à plume et à écailles. Manche 3 sur 11.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
+      "questions": 25,
       "niveaux": {
-        "1": 18,
-        "2": 5
+        "1": 20,
+        "3": 2,
+        "2": 3
       },
-      "octets": 4271,
-      "empreinte": "487d0b695b3d256bfb6e5c96f65096a2e7c1962d"
+      "octets": 4883,
+      "empreinte": "832daf3d21b8e8832e53fb6d1ca5de6a6a2e9da6"
     },
     {
       "id": "le-regne-animal-04-sur-11",
@@ -2711,13 +2703,13 @@
       "note": "Bêtes à poil, à plume et à écailles. Manche 4 sur 11.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
+      "questions": 25,
       "niveaux": {
-        "2": 3,
-        "1": 20
+        "1": 15,
+        "2": 10
       },
-      "octets": 4183,
-      "empreinte": "ca9596d01078fc259f8e1359e744d676cf7c2f8c"
+      "octets": 5454,
+      "empreinte": "5a1a00f44d081828724e7c313712e60a5524deef"
     },
     {
       "id": "le-regne-animal-05-sur-11",
@@ -2725,14 +2717,14 @@
       "note": "Bêtes à poil, à plume et à écailles. Manche 5 sur 11.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
+      "questions": 25,
       "niveaux": {
-        "1": 19,
-        "2": 3,
+        "1": 22,
+        "2": 2,
         "3": 1
       },
-      "octets": 4042,
-      "empreinte": "a9975215c5c398a50b7f8f9ad0346b2c71d63f26"
+      "octets": 4957,
+      "empreinte": "af60dd012f5db7bfe0ed8a29c7e348b7687ddb5d"
     },
     {
       "id": "le-regne-animal-06-sur-11",
@@ -2740,14 +2732,14 @@
       "note": "Bêtes à poil, à plume et à écailles. Manche 6 sur 11.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
+      "questions": 25,
       "niveaux": {
-        "1": 17,
-        "3": 1,
-        "2": 5
+        "1": 18,
+        "2": 5,
+        "3": 2
       },
-      "octets": 4198,
-      "empreinte": "3c1e218359e666184d4fd84e6f68bc5cd562c1a7"
+      "octets": 5142,
+      "empreinte": "fdcd97b7c91a2bb16b8ff032db1ad1a05fff397f"
     },
     {
       "id": "le-regne-animal-07-sur-11",
@@ -2755,14 +2747,13 @@
       "note": "Bêtes à poil, à plume et à écailles. Manche 7 sur 11.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
+      "questions": 25,
       "niveaux": {
-        "1": 20,
-        "2": 2,
-        "3": 1
+        "2": 5,
+        "1": 20
       },
-      "octets": 4137,
-      "empreinte": "465100ed46f16063516490797141e7f2fe0bbf6e"
+      "octets": 5034,
+      "empreinte": "f620149e9684dadb9b141a0bbf27de57491951d5"
     },
     {
       "id": "le-regne-animal-08-sur-11",
@@ -2770,14 +2761,14 @@
       "note": "Bêtes à poil, à plume et à écailles. Manche 8 sur 11.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
+      "questions": 25,
       "niveaux": {
-        "1": 19,
-        "2": 3,
-        "3": 1
+        "3": 1,
+        "1": 21,
+        "2": 3
       },
-      "octets": 4107,
-      "empreinte": "e55245dc9d0f28d07d54ea27cdb3900ec42246ae"
+      "octets": 5162,
+      "empreinte": "ed41f09d8fadab3bbd3b41e4db613d2f2c27346d"
     },
     {
       "id": "le-regne-animal-09-sur-11",
@@ -2785,14 +2776,14 @@
       "note": "Bêtes à poil, à plume et à écailles. Manche 9 sur 11.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
+      "questions": 25,
       "niveaux": {
-        "1": 17,
-        "2": 5,
-        "3": 1
+        "1": 20,
+        "3": 2,
+        "2": 3
       },
-      "octets": 4009,
-      "empreinte": "74e86b07af84b76ed73087eb2699baf59bbc0011"
+      "octets": 5085,
+      "empreinte": "de81d283a18669aefb82bf9150048ab1ab5b81eb"
     },
     {
       "id": "le-regne-animal-10-sur-11",
@@ -2800,14 +2791,14 @@
       "note": "Bêtes à poil, à plume et à écailles. Manche 10 sur 11.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
+      "questions": 25,
       "niveaux": {
-        "1": 17,
-        "3": 1,
-        "2": 5
+        "1": 16,
+        "2": 7,
+        "3": 2
       },
-      "octets": 4196,
-      "empreinte": "06394bf43df2d044f22e1daa35429d263eefe815"
+      "octets": 5414,
+      "empreinte": "64d169da0ed994ba4cce1bb0a4ca7642e6a6dad7"
     },
     {
       "id": "le-regne-animal-11-sur-11",
@@ -2815,59 +2806,74 @@
       "note": "Bêtes à poil, à plume et à écailles. Manche 11 sur 11.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
+      "questions": 25,
       "niveaux": {
-        "1": 19,
-        "2": 2,
-        "3": 2
+        "1": 22,
+        "3": 1,
+        "2": 2
       },
-      "octets": 4024,
-      "empreinte": "7b9080c00584c9df55e5464b49f55ab391213473"
+      "octets": 5018,
+      "empreinte": "e2ab4603cfb7a7d351a405371a1d991b223eb1c3"
     },
     {
-      "id": "l-espace-et-le-ciel-1-sur-3",
-      "titre": "L'espace et le ciel 1 sur 3",
-      "note": "Planètes, étoiles et conquête spatiale. Manche 1 sur 3.",
+      "id": "l-espace-et-le-ciel-1-sur-4",
+      "titre": "L'espace et le ciel 1 sur 4",
+      "note": "Planètes, étoiles et conquête spatiale. Manche 1 sur 4.",
       "collection": "L'espace et le ciel",
       "emoji": "🪐",
-      "questions": 24,
+      "questions": 20,
       "niveaux": {
-        "2": 5,
-        "1": 17,
-        "3": 2
+        "1": 10,
+        "3": 3,
+        "2": 7
       },
-      "octets": 4372,
-      "empreinte": "eb37d6265712f7cdb99e90d48a0b784e905dc21e"
+      "octets": 4717,
+      "empreinte": "b83c08fc98a1d50f1e7a0f3dacaeffa977dd26ba"
     },
     {
-      "id": "l-espace-et-le-ciel-2-sur-3",
-      "titre": "L'espace et le ciel 2 sur 3",
-      "note": "Planètes, étoiles et conquête spatiale. Manche 2 sur 3.",
+      "id": "l-espace-et-le-ciel-2-sur-4",
+      "titre": "L'espace et le ciel 2 sur 4",
+      "note": "Planètes, étoiles et conquête spatiale. Manche 2 sur 4.",
       "collection": "L'espace et le ciel",
       "emoji": "🪐",
-      "questions": 24,
+      "questions": 19,
       "niveaux": {
-        "1": 12,
-        "2": 8,
-        "3": 4
+        "1": 15,
+        "2": 3,
+        "3": 1
       },
-      "octets": 4303,
-      "empreinte": "401ad6c628d732d34ed7dfaa0a9323e2ad1f63b0"
+      "octets": 4116,
+      "empreinte": "1d70b987310bc6183688ed9cc4ab27b8ba865b58"
     },
     {
-      "id": "l-espace-et-le-ciel-3-sur-3",
-      "titre": "L'espace et le ciel 3 sur 3",
-      "note": "Planètes, étoiles et conquête spatiale. Manche 3 sur 3.",
+      "id": "l-espace-et-le-ciel-3-sur-4",
+      "titre": "L'espace et le ciel 3 sur 4",
+      "note": "Planètes, étoiles et conquête spatiale. Manche 3 sur 4.",
       "collection": "L'espace et le ciel",
       "emoji": "🪐",
-      "questions": 24,
+      "questions": 19,
       "niveaux": {
-        "1": 16,
-        "2": 6,
+        "1": 10,
+        "2": 7,
         "3": 2
       },
-      "octets": 4282,
-      "empreinte": "e4a6d878c614f04b7ba74e4352799ea581647031"
+      "octets": 4104,
+      "empreinte": "a05c732eac9f84406ee80a1031d18dd2f81cd97d"
+    },
+    {
+      "id": "l-espace-et-le-ciel-4-sur-4",
+      "titre": "L'espace et le ciel 4 sur 4",
+      "note": "Planètes, étoiles et conquête spatiale. Manche 4 sur 4.",
+      "collection": "L'espace et le ciel",
+      "emoji": "🪐",
+      "questions": 19,
+      "niveaux": {
+        "1": 13,
+        "3": 3,
+        "2": 3
+      },
+      "octets": 3987,
+      "empreinte": "e3fc31542a5df13f826a1c4cd9bf830e3ae9e9fc"
     },
     {
       "id": "le-corps-humain-1-sur-3",
@@ -2875,14 +2881,14 @@
       "note": "Os, organes et petites mécaniques internes. Manche 1 sur 3.",
       "collection": "Le corps humain",
       "emoji": "🧠",
-      "questions": 22,
+      "questions": 24,
       "niveaux": {
-        "2": 8,
-        "1": 11,
-        "3": 3
+        "2": 9,
+        "3": 3,
+        "1": 12
       },
-      "octets": 3972,
-      "empreinte": "e7a6654f4fc64de48e83a9d51e0ff48814ecb613"
+      "octets": 5241,
+      "empreinte": "3fea56f14b43e0eb3e4700178631e2377e126fb2"
     },
     {
       "id": "le-corps-humain-2-sur-3",
@@ -2890,14 +2896,14 @@
       "note": "Os, organes et petites mécaniques internes. Manche 2 sur 3.",
       "collection": "Le corps humain",
       "emoji": "🧠",
-      "questions": 21,
+      "questions": 23,
       "niveaux": {
         "1": 15,
-        "2": 5,
+        "2": 7,
         "3": 1
       },
-      "octets": 3803,
-      "empreinte": "9894512cfbaa9770ec006d3ef166bea61cd16240"
+      "octets": 5024,
+      "empreinte": "8b05b16fd2b523bcff6224c8958453137c0b65d0"
     },
     {
       "id": "le-corps-humain-3-sur-3",
@@ -2905,13 +2911,14 @@
       "note": "Os, organes et petites mécaniques internes. Manche 3 sur 3.",
       "collection": "Le corps humain",
       "emoji": "🧠",
-      "questions": 21,
+      "questions": 23,
       "niveaux": {
         "1": 14,
-        "2": 7
+        "2": 7,
+        "3": 2
       },
-      "octets": 3743,
-      "empreinte": "b6ce669511a712fc8ac6168e5767900ee65dd03a"
+      "octets": 4990,
+      "empreinte": "e1f938046f3edc34e106566cddd1e466ce53226d"
     },
     {
       "id": "super-heros-et-bd-1-sur-2",
@@ -2921,11 +2928,12 @@
       "emoji": "🦸",
       "questions": 22,
       "niveaux": {
-        "1": 19,
-        "2": 3
+        "1": 16,
+        "2": 5,
+        "3": 1
       },
-      "octets": 4017,
-      "empreinte": "8716bd390021a7a952acd5c90256882bcba8b47a"
+      "octets": 4619,
+      "empreinte": "a5411f2c6d621afa24e0f64386ece7a23af16f50"
     },
     {
       "id": "super-heros-et-bd-2-sur-2",
@@ -2935,11 +2943,11 @@
       "emoji": "🦸",
       "questions": 21,
       "niveaux": {
-        "1": 17,
-        "2": 4
+        "1": 19,
+        "2": 2
       },
-      "octets": 3732,
-      "empreinte": "ba66b7c6199124f27e979f3b4de8e8152d44778a"
+      "octets": 4393,
+      "empreinte": "1d30e3ae0760f41a3cc70b8918af240245f8c234"
     },
     {
       "id": "creatures-et-legendes-1-sur-4",
@@ -2947,13 +2955,13 @@
       "note": "Monstres, dieux et histoires qu'on se raconte. Manche 1 sur 4.",
       "collection": "Créatures et légendes",
       "emoji": "🐉",
-      "questions": 21,
+      "questions": 22,
       "niveaux": {
-        "1": 17,
-        "2": 4
+        "2": 5,
+        "1": 17
       },
-      "octets": 3882,
-      "empreinte": "49e5e90f4184c17d7291d002c483b7413f7ce020"
+      "octets": 5050,
+      "empreinte": "2d4ecd84c28d3a1da37d1408c8519712cc701c3e"
     },
     {
       "id": "creatures-et-legendes-2-sur-4",
@@ -2961,13 +2969,14 @@
       "note": "Monstres, dieux et histoires qu'on se raconte. Manche 2 sur 4.",
       "collection": "Créatures et légendes",
       "emoji": "🐉",
-      "questions": 21,
+      "questions": 22,
       "niveaux": {
-        "1": 13,
-        "2": 8
+        "3": 1,
+        "2": 4,
+        "1": 17
       },
-      "octets": 3911,
-      "empreinte": "d5413c48ab01f11d82fe6c3d3ac96e7d81087017"
+      "octets": 4847,
+      "empreinte": "05b412d15be8fcf0468f2e83fc0ce488c3355d00"
     },
     {
       "id": "creatures-et-legendes-3-sur-4",
@@ -2975,13 +2984,13 @@
       "note": "Monstres, dieux et histoires qu'on se raconte. Manche 3 sur 4.",
       "collection": "Créatures et légendes",
       "emoji": "🐉",
-      "questions": 20,
+      "questions": 22,
       "niveaux": {
-        "2": 5,
-        "1": 15
+        "1": 15,
+        "2": 7
       },
-      "octets": 3765,
-      "empreinte": "98121b46e0383c151f471587af23356dd705ad0f"
+      "octets": 5212,
+      "empreinte": "110b0e6f6cec0454904fc0cbc5966fab1e245d56"
     },
     {
       "id": "creatures-et-legendes-4-sur-4",
@@ -2989,13 +2998,13 @@
       "note": "Monstres, dieux et histoires qu'on se raconte. Manche 4 sur 4.",
       "collection": "Créatures et légendes",
       "emoji": "🐉",
-      "questions": 20,
+      "questions": 22,
       "niveaux": {
-        "1": 17,
-        "2": 3
+        "2": 4,
+        "1": 18
       },
-      "octets": 3840,
-      "empreinte": "12598e3b5192620fd5d10abe65359e8b88141ac3"
+      "octets": 4956,
+      "empreinte": "ac4e242fdda7eff5c069a773704a166045cc1a33"
     },
     {
       "id": "sports-d-hiver-1-sur-4",
@@ -3003,14 +3012,13 @@
       "note": "Tout ce qui se joue sur la glace ou la neige. Manche 1 sur 4.",
       "collection": "Sports d'hiver",
       "emoji": "⛷️",
-      "questions": 20,
+      "questions": 21,
       "niveaux": {
-        "1": 13,
-        "2": 5,
-        "3": 2
+        "1": 12,
+        "2": 9
       },
-      "octets": 3756,
-      "empreinte": "919b191929090f9214996cd3b11bf3033e8ee33f"
+      "octets": 4814,
+      "empreinte": "da6d6332d3a768633ca59d05fba4a2e361841ccd"
     },
     {
       "id": "sports-d-hiver-2-sur-4",
@@ -3018,14 +3026,13 @@
       "note": "Tout ce qui se joue sur la glace ou la neige. Manche 2 sur 4.",
       "collection": "Sports d'hiver",
       "emoji": "⛷️",
-      "questions": 20,
+      "questions": 21,
       "niveaux": {
-        "1": 14,
-        "2": 5,
-        "3": 1
+        "1": 12,
+        "2": 9
       },
-      "octets": 3638,
-      "empreinte": "ad193407f1cd25d42053370712ce1c1c1667ef23"
+      "octets": 4602,
+      "empreinte": "ee19352e328f76a8c69270f697917ef0961c7350"
     },
     {
       "id": "sports-d-hiver-3-sur-4",
@@ -3033,13 +3040,14 @@
       "note": "Tout ce qui se joue sur la glace ou la neige. Manche 3 sur 4.",
       "collection": "Sports d'hiver",
       "emoji": "⛷️",
-      "questions": 20,
+      "questions": 21,
       "niveaux": {
-        "1": 15,
+        "3": 3,
+        "1": 13,
         "2": 5
       },
-      "octets": 3604,
-      "empreinte": "891f65262cac921a764a3ed2436b67d51e7d014a"
+      "octets": 4599,
+      "empreinte": "a1de91f721ca592dee231b9508554a006fc3f1e2"
     },
     {
       "id": "sports-d-hiver-4-sur-4",
@@ -3047,22 +3055,22 @@
       "note": "Tout ce qui se joue sur la glace ou la neige. Manche 4 sur 4.",
       "collection": "Sports d'hiver",
       "emoji": "⛷️",
-      "questions": 19,
+      "questions": 21,
       "niveaux": {
-        "1": 11,
-        "2": 7,
-        "3": 1
+        "1": 17,
+        "3": 1,
+        "2": 3
       },
-      "octets": 3563,
-      "empreinte": "dcbce1b78cddfedd8c796895b79f22c8c8064ba9"
+      "octets": 4448,
+      "empreinte": "af1f9d2cdd5ff9a3a5d9c0bbd41e7392638a7ca6"
     }
   ],
   "collections": [
     {
       "nom": "7 à 77 ans",
       "emoji": "🎈",
-      "questionnaires": 58,
-      "questions": 1448
+      "questionnaires": 40,
+      "questions": 1000
     },
     {
       "nom": "Bouffe et cuisine",
@@ -3079,20 +3087,26 @@
     {
       "nom": "Connaisseurs",
       "emoji": "🎓",
-      "questionnaires": 8,
-      "questions": 189
+      "questionnaires": 11,
+      "questions": 256
     },
     {
       "nom": "Créatures et légendes",
       "emoji": "🐉",
       "questionnaires": 4,
-      "questions": 82
+      "questions": 88
     },
     {
       "nom": "Culture générale",
       "emoji": "💡",
+      "questionnaires": 11,
+      "questions": 269
+    },
+    {
+      "nom": "Culture pop",
+      "emoji": "🌟",
       "questionnaires": 10,
-      "questions": 246
+      "questions": 238
     },
     {
       "nom": "Géographie",
@@ -3103,26 +3117,26 @@
     {
       "nom": "Histoire",
       "emoji": "🏛️",
-      "questionnaires": 10,
-      "questions": 229
+      "questionnaires": 9,
+      "questions": 218
     },
     {
       "nom": "L'espace et le ciel",
       "emoji": "🪐",
-      "questionnaires": 3,
-      "questions": 72
+      "questionnaires": 4,
+      "questions": 77
     },
     {
       "nom": "Le corps humain",
       "emoji": "🧠",
       "questionnaires": 3,
-      "questions": 64
+      "questions": 70
     },
     {
       "nom": "Le règne animal",
       "emoji": "🐾",
       "questionnaires": 11,
-      "questions": 253
+      "questions": 275
     },
     {
       "nom": "Mots et langue",
@@ -3145,8 +3159,8 @@
     {
       "nom": "Québec",
       "emoji": "⚜️",
-      "questionnaires": 14,
-      "questions": 323
+      "questionnaires": 16,
+      "questions": 383
     },
     {
       "nom": "Sciences et nature",
@@ -3164,13 +3178,13 @@
       "nom": "Sports d'hiver",
       "emoji": "⛷️",
       "questionnaires": 4,
-      "questions": 79
+      "questions": 84
     },
     {
       "nom": "Spécial Noël",
       "emoji": "🎄",
       "questionnaires": 2,
-      "questions": 30
+      "questions": 33
     },
     {
       "nom": "Super-héros et BD",

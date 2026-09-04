@@ -7,154 +7,239 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quelle chanson de Vigneault sert d'hymne populaire ?",
-      "reponse": "Gens du pays",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Quelle langue est l'ancêtre du français ?",
-      "reponse": "Le latin",
+      "question": "Petit de la chèvre ?",
+      "reponse": "Le chevreau",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle voiture voyage dans le temps dans Retour vers le futur ?",
-      "reponse": "La DeLorean",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Monnaie utilisée en Suisse ?",
-      "reponse": "Le franc suisse",
-      "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Où Napoléon a-t-il subi sa dernière défaite ?",
-      "reponse": "Waterloo",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel parc d'attractions se trouve à Montréal ?",
-      "reponse": "La Ronde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel duo français portait des casques de robots ?",
-      "reponse": "Daft Punk",
-      "niveau": 2
+      "question": "Quel explorateur a cherché la fontaine de Jouvence en Floride ?",
+      "reponse": "Ponce de León",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel cousin rayé du cheval vit en Afrique ?",
-      "reponse": "Le zèbre",
-      "niveau": 1
+      "question": "Comment s'appellent les anneaux du tronc d'un arbre ?",
+      "reponse": "Les cernes",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel champignon blanc est le plus cultivé au monde ?",
+      "reponse": "Champignon de Paris",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pont relie l'Île-du-Prince-Édouard au continent ?",
-      "reponse": "Confédération",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de lettres dans l'alphabet français ?",
-      "reponse": "26",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Dans quoi la chenille se transforme-t-elle ?",
-      "reponse": "La chrysalide",
-      "niveau": 1
+      "question": "Capitale du Chili ?",
+      "reponse": "Santiago",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse a chanté Rolling in the Deep ?",
-      "reponse": "Adele",
-      "niveau": 2
+      "question": "Quel objet tient le chanteur pour que sa voix porte dans toute la salle ?",
+      "reponse": "Le micro",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
+      "reponse": "Pierre de Rosette",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de couleurs dans un arc-en-ciel ?",
+      "reponse": "Sept",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle viande fumée est associée à Montréal ?",
+      "reponse": "Le smoked meat",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel lutteur québécois était surnommé Mad Dog ?",
-      "reponse": "Maurice Vachon",
-      "niveau": 2
+      "question": "Quel club de soccer espagnol joue au Camp Nou ?",
+      "reponse": "FC Barcelone",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on une personne parlant plusieurs langues ?",
-      "reponse": "Un polyglotte",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin géant souffle un jet d'eau par le dos ?",
-      "reponse": "La baleine",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quelle tablette de chocolat porte un nom qui évoque le café ?",
+      "reponse": "Le Coffee Crisp",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel robot nettoyeur tombe amoureux d'EVE ?",
-      "reponse": "WALL-E",
-      "niveau": 1
+      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
+      "reponse": "Arthur Laroche",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien font dix fois dix ?",
-      "reponse": "100",
-      "niveau": 1
+      "categorie": "Géographie",
+      "question": "Quel territoire canadien a Iqaluit pour capitale ?",
+      "reponse": "Le Nunavut",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle soupe jaune est un classique québécois ?",
+      "reponse": "Soupe aux pois",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Combien de minutes dure un quart au football américain ?",
-      "reponse": "Quinze",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Tous les combien d'années a lieu la Coupe du monde de soccer ?",
-      "reponse": "Quatre ans",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel véhicule vole grâce à une grande hélice sur le toit ?",
-      "reponse": "L'hélicoptère",
+      "question": "Quel jeu de force oppose deux équipes de chaque côté d'un même câble ?",
+      "reponse": "Le tir à la corde",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel mollusque mange-t-on avec du beurre à l'ail ?",
-      "reponse": "L'escargot",
-      "niveau": 1
+      "question": "Quelle boisson chaude est faite de grains torréfiés ?",
+      "reponse": "Le café",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel physicien a formulé E=mc2 ?",
-      "reponse": "Einstein",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quel accessoire rembourré élargissait les épaules des vestons dans les années 80 ?",
+      "reponse": "L'épaulette",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel fleuve américain se jette à La Nouvelle-Orléans ?",
-      "reponse": "Le Mississippi",
-      "niveau": 2
+      "question": "Quelle ville est surnommée la Ville éternelle ?",
+      "reponse": "Rome",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle forme a une pièce de monnaie ?",
+      "reponse": "Ronde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel monstre géant venu du Japon écrase des villes au cinéma ?",
+      "reponse": "Godzilla",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la température du corps humain en santé ?",
+      "reponse": "37 degrés C",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle superstar américaine a nommé sa tournée Eras ?",
+      "reponse": "Taylor Swift",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est l'étoile la plus proche de la Terre ?",
+      "reponse": "Le Soleil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Vert, verre et vers sont des exemples de quoi ?",
+      "reponse": "Homophones",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle muraille célèbre protège la Chine ?",
-      "reponse": "La Grande Muraille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit rouge à noyau couronne un sundae ?",
-      "reponse": "La cerise",
-      "niveau": 1
+      "question": "Quel navigateur a mené la première expédition autour du monde ?",
+      "reponse": "Magellan",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

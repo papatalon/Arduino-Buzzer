@@ -7,52 +7,20 @@
   "emoji": "🐾",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel grand singe est le plus proche de l'homme ?",
-      "reponse": "Le chimpanzé",
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat botté a de grands yeux attendrissants ?",
+      "reponse": "Chat Potté",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle chienne partage un spaghetti avec un clochard ?",
-      "reponse": "Lady",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
-      "reponse": "Le homard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Sébastien dans La Petite Sirène ?",
-      "reponse": "Un crabe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit de l'aigle ?",
-      "reponse": "L'aiglon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel grand félin a des rayures orange et noires ?",
-      "reponse": "Le tigre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel réalisateur a fait Psychose et Les Oiseaux ?",
-      "reponse": "Hitchcock",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ogre a un ami âne très bavard ?",
-      "reponse": "Shrek",
-      "niveau": 1
+      "question": "Quel film d'animation organise un grand concours de chant entre animaux ?",
+      "reponse": "Tous en scène",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -62,33 +30,48 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Petit du chat ?",
-      "reponse": "Le chaton",
+      "question": "Comment nomme-t-on la femelle du singe ?",
+      "reponse": "La guenon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte soulève 50 fois son poids ?",
+      "reponse": "La fourmi",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle héroïne à pois rouges combat le crime à Paris avec Chat Noir ?",
+      "reponse": "Ladybug",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du cochon ?",
+      "reponse": "Le grognement",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel cheval mythologique a des ailes ?",
-      "reponse": "Pégase",
+      "question": "Quel animal cache des œufs à Pâques ?",
+      "reponse": "Le lapin",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel minuscule oiseau peut voler en arrière ?",
-      "reponse": "Le colibri",
+      "categorie": "Mots et langue",
+      "question": "Comment s'appelle le petit du lion ?",
+      "reponse": "Le lionceau",
       "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel grand reptile du Nil était sacré en Égypte ?",
-      "reponse": "Le crocodile",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans Pierre et le loup, quel instrument joue le loup ?",
-      "reponse": "Le cor",
-      "niveau": 3
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -97,51 +80,106 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel animal noir porterait malheur ?",
-      "reponse": "Le chat noir",
+      "categorie": "Québec",
+      "question": "Dans quelle ville l'aquarium présente-t-il des ours blancs ?",
+      "reponse": "Québec",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment s'appelle le petit de l'éléphant ?",
-      "reponse": "L'éléphanteau",
+      "categorie": "Histoire",
+      "question": "Quel animal domestique les Égyptiens adoraient-ils au point de le momifier ?",
+      "reponse": "Le chat",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel animal est Abu, l'ami d'Aladin ?",
-      "reponse": "Un singe",
+      "question": "Quel ami de Winnie l'ourson est un âne toujours triste ?",
+      "reponse": "Bourriquet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du serpent ?",
+      "reponse": "Le sifflement",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "De quel arbre le koala mange-t-il les feuilles ?",
-      "reponse": "L'eucalyptus",
+      "question": "Que devient un têtard ?",
+      "reponse": "Une grenouille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gros animal d'Afrique passe ses journées dans l'eau, la gueule grande ouverte ?",
+      "reponse": "L'hippopotame",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
+      "reponse": "Les oreilles de lapin",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ours brun de dessin animé vole des paniers de pique-nique ?",
+      "reponse": "Yogi",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat péruvien est du poisson cru mariné ?",
+      "reponse": "Le ceviche",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le féminin de lion ?",
+      "reponse": "Lionne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du loup ?",
+      "reponse": "Le louveteau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal est le meilleur ami de l'homme ?",
+      "reponse": "Le chien",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal noir et blanc dégage une odeur terrible quand il a peur ?",
+      "reponse": "La mouffette",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage bleu français au lait de brebis est le plus célèbre ?",
-      "reponse": "Le roquefort",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle science étudie les animaux ?",
-      "reponse": "La zoologie",
+      "question": "Quelle forme donne-t-on au poisson pané pour les enfants ?",
+      "reponse": "Des bâtonnets",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du canard ?",
-      "reponse": "La cane",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Masculin de poule ?",
-      "reponse": "Le coq",
+      "categorie": "Sciences et nature",
+      "question": "Quel minuscule oiseau peut voler en arrière ?",
+      "reponse": "Le colibri",
       "niveau": 1
     }
   ]

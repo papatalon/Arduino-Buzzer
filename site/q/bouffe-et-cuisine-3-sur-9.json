@@ -10,7 +10,12 @@
       "categorie": "Bouffe et cuisine",
       "question": "Quel élément croquant garnit la salade César ?",
       "reponse": "Des croûtons",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -34,13 +39,22 @@
       "categorie": "Bouffe et cuisine",
       "question": "Quelle sauce verte argentine accompagne les grillades ?",
       "reponse": "Le chimichurri",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
       "question": "Quel thé japonais en poudre est vert vif ?",
       "reponse": "Le matcha",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -52,7 +66,12 @@
       "categorie": "Bouffe et cuisine",
       "question": "De quelle légumineuse est fait le houmous ?",
       "reponse": "Pois chiches",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -64,13 +83,23 @@
       "categorie": "Bouffe et cuisine",
       "question": "Quel plat péruvien est du poisson cru mariné ?",
       "reponse": "Le ceviche",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
       "question": "Quel déjeuner anglais complet est copieux ?",
       "reponse": "English breakfast",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -88,17 +117,27 @@
       "categorie": "Bouffe et cuisine",
       "question": "Pays d'origine du parmesan ?",
       "reponse": "L'Italie",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
       "question": "Quel champignon de luxe est déterré par des chiens ?",
       "reponse": "La truffe",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à frire enrobe le poisson anglais ?",
+      "question": "Quel plat anglais sert du poisson frit avec des frites ?",
       "reponse": "Fish and chips",
       "niveau": 1
     },
@@ -106,19 +145,22 @@
       "categorie": "Bouffe et cuisine",
       "question": "Quel café italien très court se boit d'un trait ?",
       "reponse": "L'espresso",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
       "question": "Quelle boisson brésilienne mélange lime et cachaça ?",
       "reponse": "La caipirinha",
-      "niveau": 3
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat hongrois est un ragoût au paprika ?",
-      "reponse": "Le goulasch",
-      "niveau": 2
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -134,6 +176,17 @@
     },
     {
       "categorie": "Bouffe et cuisine",
+      "question": "Quel plat hongrois est un ragoût au paprika ?",
+      "reponse": "Le goulasch",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
       "question": "Quel repas québécois se mange le midi ?",
       "reponse": "Le dîner",
       "niveau": 1
@@ -142,19 +195,29 @@
       "categorie": "Bouffe et cuisine",
       "question": "Quelle pâte verte piquante accompagne les sushis ?",
       "reponse": "Le wasabi",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la petite bille de chocolat qu'on met dans les biscuits ?",
+      "reponse": "Une pépite",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
       "question": "Quel champignon blanc est le plus cultivé au monde ?",
       "reponse": "Champignon de Paris",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel biscuit rond et plat est parsemé de pépites de chocolat ?",
-      "reponse": "Le biscuit aux pépites de chocolat",
-      "niveau": 1
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

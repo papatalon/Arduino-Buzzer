@@ -8,27 +8,53 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Quel pays est surnommé l'île d'émeraude ?",
-      "reponse": "L'Irlande",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays se trouve juste au nord des États-Unis ?",
-      "reponse": "Le Canada",
+      "question": "Quel pays est célèbre pour ses tacos et ses sombreros ?",
+      "reponse": "Le Mexique",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
       "question": "Quel fleuve traverse Vienne et Budapest ?",
       "reponse": "Le Danube",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays vivent les kangourous ?",
-      "reponse": "L'Australie",
-      "niveau": 1
+      "question": "Capitale de la Norvège ?",
+      "reponse": "Oslo",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays est surnommé l'île d'émeraude ?",
+      "reponse": "L'Irlande",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve le Machu Picchu ?",
+      "reponse": "Le Pérou",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -38,15 +64,13 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de la Norvège ?",
-      "reponse": "Oslo",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
       "question": "Quel désert chilien est le plus aride du monde ?",
       "reponse": "L'Atacama",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -56,87 +80,149 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Machu Picchu ?",
-      "reponse": "Le Pérou",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a pour emblème le coq ?",
-      "reponse": "La France",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve russe est le plus long d'Europe ?",
-      "reponse": "La Volga",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
       "question": "Quel est le continent le plus peuplé ?",
       "reponse": "L'Asie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
-      "reponse": "Le maelstrom",
-      "niveau": 3
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Dans quel pays se trouve le Kilimandjaro ?",
       "reponse": "La Tanzanie",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a pour emblème le coq ?",
+      "reponse": "La France",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve russe est le plus long d'Europe ?",
+      "reponse": "La Volga",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
+      "reponse": "Le maelstrom",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Quel passage maritime arctique relie deux océans ?",
       "reponse": "Nord-Ouest",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel fleuve sacré traverse l'Inde ?",
-      "reponse": "Le Gange",
-      "niveau": 2
+      "question": "Dans quel pays vivent les kangourous ?",
+      "reponse": "L'Australie",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
       "question": "Capitale de la Russie ?",
       "reponse": "Moscou",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve sacré traverse l'Inde ?",
+      "reponse": "Le Gange",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Combien de territoires compte le Canada ?",
       "reponse": "Trois",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Capitale du Danemark ?",
       "reponse": "Copenhague",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Quel petit pays est enclavé entre France et Espagne ?",
       "reponse": "Andorre",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Inde ?",
-      "reponse": "New Delhi",
-      "niveau": 2
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Quel désert froid couvre une partie de la Mongolie ?",
       "reponse": "Le Gobi",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Inde ?",
+      "reponse": "New Delhi",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

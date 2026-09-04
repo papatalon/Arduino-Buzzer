@@ -8,140 +8,199 @@
   "questions": [
     {
       "categorie": "Mots et langue",
-      "question": "Quel est le féminin de lion ?",
-      "reponse": "Lionne",
+      "question": "Comment s'appelle le petit du cochon ?",
+      "reponse": "Le porcelet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Le dauphin est-il un poisson ou un mammifère ?",
+      "reponse": "Un mammifère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de poche en noir et blanc faisait vivre un animal virtuel ?",
+      "reponse": "Le Tamagotchi",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle chienne partage un spaghetti avec un clochard ?",
+      "reponse": "Lady",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel animal emblème figure sur les armoiries de Montréal ?",
+      "reponse": "Le castor",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel oiseau déploie sa queue en éventail coloré pour parader ?",
+      "reponse": "Le paon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat orange déteste les lundis et adore la lasagne ?",
+      "reponse": "Garfield",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
+      "reponse": "L'étoile de mer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle œuvre de Prokofiev raconte un garçon et un loup ?",
+      "reponse": "Pierre et le loup",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel animal rugit ?",
+      "reponse": "Le lion",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gros animal brun dort tout l'hiver dans sa tanière ?",
+      "reponse": "L'ours",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le pluriel de « un animal » ?",
+      "reponse": "Des animaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le féminin de chien ?",
+      "reponse": "Chienne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel général carthaginois a traversé les Alpes à dos d'éléphant ?",
+      "reponse": "Hannibal",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la peur des araignées ?",
+      "reponse": "L'arachnophobie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film d'animation un mammouth, un paresseux et un tigre à dents de sabre voyagent-ils ensemble ?",
+      "reponse": "L'Ère de glace",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte transmet la malaria ?",
+      "reponse": "Le moustique",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Pluriel de cheval ?",
+      "reponse": "Chevaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri de la vache ?",
+      "reponse": "Le meuglement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du loup ?",
+      "reponse": "Le hurlement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film de Disney suit un éléphant aux grandes oreilles ?",
+      "reponse": "Dumbo",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
       "question": "Quel oiseau est le plus rapide en piqué ?",
       "reponse": "Le faucon pèlerin",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle œuvre de Prokofiev raconte un garçon et un loup ?",
-      "reponse": "Pierre et le loup",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin a trois cœurs ?",
-      "reponse": "La pieuvre",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du mouton ?",
-      "reponse": "Le bêlement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat de dessin animé court après la souris Jerry ?",
-      "reponse": "Tom",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel oiseau est le symbole de la paix ?",
-      "reponse": "La colombe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle épice se râpe sur le lait de poule ?",
-      "reponse": "La muscade",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment s'appelle le petit du lion ?",
-      "reponse": "Le lionceau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri de l'âne ?",
-      "reponse": "Le braiment",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation organise un grand concours de chant entre animaux ?",
-      "reponse": "Tous en scène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Que devient un têtard ?",
-      "reponse": "Une grenouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle cabane à sucre célèbre appartient à un chef renommé ?",
-      "reponse": "Au Pied de Cochon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la maison des abeilles ?",
-      "reponse": "La ruche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Sven dans La Reine des neiges ?",
-      "reponse": "Un renne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien d'ailes possède une abeille ?",
-      "reponse": "Quatre",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Féminin de tigre ?",
-      "reponse": "Tigresse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel oiseau mythique renaît de ses cendres ?",
-      "reponse": "Le phénix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la transformation de la chenille ?",
-      "reponse": "La métamorphose",
-      "niveau": 1
+      "categorie": "Sports",
+      "question": "Dans quel sport utilise-t-on un maillet à cheval ?",
+      "reponse": "Le polo",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel chien de dessin animé est le compagnon de Charlie Brown ?",
       "reponse": "Snoopy",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel insecte produit le miel ?",
-      "reponse": "L'abeille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
-      "reponse": "Les branchies",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel poisson-clown cherche son fils dans l'océan ?",
-      "reponse": "Marin",
+      "question": "Quel animal produit les œufs qu'on mange au déjeuner ?",
+      "reponse": "La poule",
       "niveau": 1
     }
   ]

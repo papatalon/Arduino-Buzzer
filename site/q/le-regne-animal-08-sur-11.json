@@ -7,39 +7,80 @@
   "emoji": "🐾",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Quels animaux géants ont disparu bien avant l'apparition des humains ?",
-      "reponse": "Les dinosaures",
+      "categorie": "Sciences et nature",
+      "question": "Combien de vertèbres a le cou d'une girafe ?",
+      "reponse": "Sept",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat anglais sert du poisson frit avec des frites ?",
+      "reponse": "Fish and chips",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel cheval mythologique a des ailes ?",
+      "reponse": "Pégase",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment s'appelle le petit du canard ?",
+      "reponse": "Le caneton",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal marin peut régénérer ses bras ?",
-      "reponse": "L'étoile de mer",
+      "question": "Quel dinosaure a des plaques osseuses sur le dos ?",
+      "reponse": "Le stégosaure",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "De quel arbre le koala mange-t-il les feuilles ?",
+      "reponse": "L'eucalyptus",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle épice se râpe sur le lait de poule ?",
+      "reponse": "La muscade",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel gros chien rouge de livres pour enfants est devenu un film ?",
+      "reponse": "Clifford",
+      "niveau": 1,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Dans quel conte un oisillon rejeté par les siens devient un magnifique cygne ?",
+      "reponse": "Le vilain petit canard",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quel est le cri du chien ?",
-      "reponse": "L'aboiement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte transmet la malaria ?",
-      "reponse": "Le moustique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage de Sesame Street est un grand oiseau jaune ?",
-      "reponse": "Big Bird",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel arachnide a une queue munie d'un dard ?",
-      "reponse": "Le scorpion",
+      "question": "Quel est le cri du coq ?",
+      "reponse": "Cocorico",
       "niveau": 1
     },
     {
@@ -49,100 +90,107 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que doit savoir faire le chasseur sans son chien ?",
-      "reponse": "Chasser",
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante compose le menu du panda géant ?",
+      "reponse": "Le bambou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Pascal, l'ami de Raiponce ?",
+      "reponse": "Un caméléon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Sven dans La Reine des neiges ?",
+      "reponse": "Un renne",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Où vivent les ours polaires ?",
-      "reponse": "En Arctique",
+      "question": "Quel animal marin ressemble à un cheval miniature ?",
+      "reponse": "L'hippocampe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel guépard en lunettes fumées vend des croustilles au fromage ?",
+      "reponse": "Chester Cheetah",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle fillette de conte entre chez trois ours et goûte leur gruau ?",
+      "reponse": "Boucle d'or",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel est le plus grand cervidé du Québec ?",
-      "reponse": "L'orignal",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le pluriel de « un animal » ?",
-      "reponse": "Des animaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on les combats à cheval où deux chevaliers se chargeaient avec des lances ?",
-      "reponse": "Les joutes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel animal de la ferme caquette ?",
-      "reponse": "La poule",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel félin de dessin animé est né d'un générique de film ?",
-      "reponse": "La Panthère rose",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros a été piqué par une araignée ?",
-      "reponse": "Spider-Man",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du corbeau ?",
-      "reponse": "Le croassement",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel cheval célèbre a gagné la Triple Couronne en 1973 ?",
-      "reponse": "Secretariat",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment s'appelle le petit du canard ?",
-      "reponse": "Le caneton",
+      "question": "Quel ancien vélodrome de Montréal abrite des animaux ?",
+      "reponse": "Le Biodôme",
       "niveau": 1
     },
     {
       "categorie": "Musique",
       "question": "Dans Pierre et le loup, quel instrument joue l'oiseau ?",
       "reponse": "La flûte",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte rouge à points noirs porte bonheur ?",
-      "reponse": "La coccinelle",
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat de dessin animé court après la souris Jerry ?",
+      "reponse": "Tom",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal rampe sans pattes ?",
-      "reponse": "Le serpent",
+      "question": "Quel insecte produit le miel ?",
+      "reponse": "L'abeille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a pour emblème le panda ?",
+      "reponse": "La Chine",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Pluriel de cheval ?",
-      "reponse": "Chevaux",
+      "question": "Comment s'appelle le petit de l'éléphant ?",
+      "reponse": "L'éléphanteau",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un petit cochon rose ?",
-      "reponse": "Porcinet",
-      "niveau": 1
+      "categorie": "Musique",
+      "question": "Quel ballet de Tchaïkovski met en scène une princesse changée en oiseau blanc ?",
+      "reponse": "Le Lac des cygnes",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Dans quel jeu vidéo aménage-t-on une île en remboursant un raton laveur ?",
+      "reponse": "Animal Crossing",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     }
   ]
 }

@@ -7,105 +7,9 @@
   "emoji": "⛷️",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel trophée remporte le champion de la LNH ?",
-      "reponse": "La coupe Stanley",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on au Québec la neige mouillée et boueuse du printemps ?",
-      "reponse": "La slush",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel numéro portait Wayne Gretzky ?",
-      "reponse": "99",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport olympique mélange saut à ski et ski de fond ?",
-      "reponse": "Combiné nordique",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport surfe sur la neige ?",
-      "reponse": "La planche à neige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel joueur des Canadiens fut surnommé le Démon blond ?",
-      "reponse": "Guy Lafleur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de montagne grimpe des parois gelées à crampons ?",
-      "reponse": "L'alpinisme",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Que devient l'eau quand elle gèle ?",
-      "reponse": "De la glace",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel gardien détient le record de victoires en carrière ?",
-      "reponse": "Martin Brodeur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel hébergement québécois est rebâti chaque hiver ?",
-      "reponse": "Hôtel de glace",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glisse se pratique à plat ventre ?",
-      "reponse": "Le skeleton",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs sur la glace par équipe au hockey ?",
-      "reponse": "Six",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Comment s'appelle une maison faite de blocs de neige ?",
-      "reponse": "Un igloo",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
-      "reponse": "La granita",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle activité d'hiver marche sur la neige avec de grandes raquettes aux pieds ?",
-      "reponse": "La raquette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne une tempête de neige ?",
-      "reponse": "Une bordée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Toronto ?",
-      "reponse": "Les Maple Leafs",
+      "question": "Quel dessert glacé mange-t-on en cornet l'été ?",
+      "reponse": "La crème glacée",
       "niveau": 1
     },
     {
@@ -116,15 +20,166 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel hockeyeur a battu le record de buts de Gretzky en 2025 ?",
-      "reponse": "Ovechkin",
-      "niveau": 2
+      "question": "Quel capitaine des Penguins est surnommé Sid the Kid ?",
+      "reponse": "Sidney Crosby",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
-      "reponse": "Quatre ans",
+      "question": "Combien de coupes Stanley pour les Canadiens de Montréal ?",
+      "reponse": "24",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
+      "reponse": "Le ballon-balai",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
+      "reponse": "Alexandre Bilodeau",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de glisse se pratique à plat ventre ?",
+      "reponse": "Le skeleton",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel petit poisson pêche-t-on sous la glace à La Pérade ?",
+      "reponse": "Le poulamon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel pays est le berceau du hockey sur glace ?",
+      "reponse": "Le Canada",
       "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
+      "reponse": "Les Boys",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gardien des Canadiens a porté le premier masque ?",
+      "reponse": "Jacques Plante",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Comment s'appelle une maison faite de blocs de neige ?",
+      "reponse": "Un igloo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle ville canadienne a reçu les JO d'hiver de 1988 ?",
+      "reponse": "Calgary",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Que devient l'eau quand elle gèle ?",
+      "reponse": "De la glace",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle reine a des pouvoirs de glace chez Disney ?",
+      "reponse": "Elsa",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel gardien détient le record de victoires en carrière ?",
+      "reponse": "Martin Brodeur",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée récompense le meilleur marqueur de la LNH ?",
+      "reponse": "Art Ross",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle station de ski célèbre est dans les Laurentides ?",
+      "reponse": "Tremblant",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de joueurs sur la glace par équipe au hockey ?",
+      "reponse": "Six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le bonhomme de neige de La Reine des neiges ?",
+      "reponse": "Olaf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel joueur des Canadiens fut surnommé le Démon blond ?",
+      "reponse": "Guy Lafleur",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

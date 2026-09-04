@@ -7,154 +7,229 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel cowboy de BD tire plus vite que son ombre ?",
-      "reponse": "Lucky Luke",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit rond porte le nom de sa couleur ?",
-      "reponse": "L'orange",
-      "niveau": 1
+      "question": "Quel plat espagnol froid est une soupe de tomates ?",
+      "reponse": "Le gaspacho",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelles plaines célèbres bordent le Vieux-Québec ?",
-      "reponse": "Plaines d'Abraham",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat provençal mijote des légumes et aubergines ?",
-      "reponse": "La ratatouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jeu télévisé fait tourner une grande roue ?",
-      "reponse": "La Roue de fortune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de mois dure la gestation de l'éléphant ?",
-      "reponse": "22",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur des Oilers porte le numéro 97 ?",
-      "reponse": "Connor McDavid",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel papillon est l'insecte emblème du Québec ?",
-      "reponse": "L'amiral",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année les Canadiennes ont-elles voté au fédéral ?",
-      "reponse": "1918",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Kilimandjaro ?",
-      "reponse": "La Tanzanie",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel signe musical monte une note d'un demi-ton ?",
-      "reponse": "Le dièse",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe de Seattle a popularisé le grunge ?",
-      "reponse": "Nirvana",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de pattes possède une araignée ?",
-      "reponse": "Huit",
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on une photo qu'on prend de soi-même à bout de bras ?",
+      "reponse": "Un égoportrait (selfie)",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle épreuve féminine combine sept disciplines ?",
-      "reponse": "L'heptathlon",
-      "niveau": 2
+      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
+      "reponse": "Quatre ans",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel lac canadien est le plus profond ?",
-      "reponse": "Lac des Esclaves",
-      "niveau": 3
+      "question": "Capitale de l'Alberta ?",
+      "reponse": "Edmonton",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel petit disque optique a remplacé la cassette ?",
-      "reponse": "Le CD",
-      "niveau": 1
+      "question": "Quel compositeur français a écrit le Boléro ?",
+      "reponse": "Ravel",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle galette de maïs enroule les fajitas ?",
+      "reponse": "La tortilla",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on celui qui écrit des romans ?",
-      "reponse": "Un romancier",
+      "question": "Le pluriel de caillou prend un S ou un X ?",
+      "reponse": "Un X",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel oratoire montréalais fut fondé par le frère André ?",
-      "reponse": "Saint-Joseph",
+      "categorie": "Géographie",
+      "question": "Quel pays a un drapeau bleu, blanc et rouge à trois bandes verticales ?",
+      "reponse": "La France",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle ardoise à deux boutons dessine des traits et s'efface en la secouant ?",
+      "reponse": "Le Télécran",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
-      "reponse": "Le mammouth",
+      "question": "Quelle militante pakistanaise a reçu le Nobel de la paix ?",
+      "reponse": "Malala",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel groupe québécois a parodié les années 80 à la télé ?",
+      "reponse": "RBO",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel magicien conseillait le roi Arthur ?",
+      "reponse": "Merlin",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle station spatiale russe a précédé l'ISS ?",
+      "reponse": "Mir",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que veut dire N.B. ?",
+      "reponse": "Notez bien",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?",
+      "reponse": "Un chaudron d'or",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel chat robot bleu vient du futur ?",
-      "reponse": "Doraemon",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel signe de ponctuation sépare deux idées dans une phrase ?",
-      "reponse": "La virgule",
+      "question": "Quelle fée accompagne Peter Pan ?",
+      "reponse": "Clochette",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Petit de la chèvre ?",
-      "reponse": "Le chevreau",
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne des chaussures de sport ?",
+      "reponse": "Des espadrilles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Mexique ?",
+      "reponse": "Mexico",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe produit l'insuline ?",
+      "reponse": "Le pancréas",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Dans « Au clair de la lune », à quel ami demande-t-on de prêter sa plume ?",
+      "reponse": "Pierrot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple a construit Chichén Itzá ?",
+      "reponse": "Les Mayas",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle tourte de viandes vient du Lac-Saint-Jean ?",
+      "reponse": "Le cipaille",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de joueurs par équipe au baseball ?",
+      "reponse": "Neuf",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel philosophe grec fut le maître d'Alexandre ?",
-      "reponse": "Aristote",
-      "niveau": 3
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat suisse racle du fromage fondu ?",
-      "reponse": "La raclette",
+      "question": "Quel véhicule vole grâce à une grande hélice sur le toit ?",
+      "reponse": "L'hélicoptère",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien de degrés dans un cercle complet ?",
-      "reponse": "360",
-      "niveau": 1
+      "categorie": "Sciences et nature",
+      "question": "Quel est le plus petit os du corps ?",
+      "reponse": "L'étrier",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

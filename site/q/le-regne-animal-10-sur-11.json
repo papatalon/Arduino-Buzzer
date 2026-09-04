@@ -7,142 +7,210 @@
   "emoji": "🐾",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Quelle statue égyptienne a un corps de lion ?",
-      "reponse": "Le Sphinx",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de mois dure la gestation de l'éléphant ?",
-      "reponse": "22",
-      "niveau": 3
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on le mâle de la vache, celui qui charge dans l'arène ?",
-      "reponse": "Le taureau",
+      "question": "Que signifie donner sa langue au chat ?",
+      "reponse": "Renoncer à deviner",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel insecte soulève 50 fois son poids ?",
-      "reponse": "La fourmi",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Que tisse l'araignée pour attraper les insectes ?",
-      "reponse": "Une toile",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel disque de plastique lance-t-on à un ami ou à un chien au parc ?",
-      "reponse": "Le frisbee",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri de l'éléphant ?",
-      "reponse": "Le barrissement",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel félin est le plus gros du monde ?",
-      "reponse": "Le tigre",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Chez quel animal le mâle porte-t-il les bébés ?",
-      "reponse": "L'hippocampe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ours brun de dessin animé vole des paniers de pique-nique ?",
-      "reponse": "Yogi",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le féminin de chien ?",
-      "reponse": "Chienne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel petit oiseau jaune échappe toujours au chat Grosminet ?",
-      "reponse": "Titi",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel gardien québécois a popularisé le style papillon ?",
-      "reponse": "Patrick Roy",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film d'animation un lion, une girafe, un zèbre et un hippopotame s'échappent-ils d'un zoo de New York ?",
-      "reponse": "Madagascar",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel animal nous donne la laine ?",
-      "reponse": "Le mouton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin ressemble à un cheval miniature ?",
-      "reponse": "L'hippocampe",
-      "niveau": 1
+      "question": "Quel mammifère marin chante des mélodies ?",
+      "reponse": "La baleine à bosse",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel petit poisson pêche-t-on sous la glace à La Pérade ?",
-      "reponse": "Le poulamon",
-      "niveau": 2
+      "question": "Quel est l'oiseau emblème du Québec ?",
+      "reponse": "Harfang des neiges",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri de la grenouille ?",
-      "reponse": "Le coassement",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Dans quoi la chenille se transforme-t-elle ?",
-      "reponse": "La chrysalide",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du chat ?",
-      "reponse": "Le miaulement",
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Sébastien dans La Petite Sirène ?",
+      "reponse": "Un crabe",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel cousin rayé du cheval vit en Afrique ?",
-      "reponse": "Le zèbre",
+      "question": "Quel est l'animal terrestre le plus rapide ?",
+      "reponse": "Le guépard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat robot bleu vient du futur ?",
+      "reponse": "Doraemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel animal est surnommé le roi de la jungle ?",
+      "reponse": "Le lion",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami de Winnie l'ourson est un tigre qui bondit sur sa queue ?",
+      "reponse": "Tigrou",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de pattes possède un insecte ?",
-      "reponse": "Six",
+      "question": "Quel animal saute et transporte son bébé dans une poche ?",
+      "reponse": "Le kangourou",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie « avoir une faim de loup » ?",
-      "reponse": "Avoir très faim",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal terrestre est le plus lourd ?",
+      "reponse": "L'éléphant",
       "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal à coquille rampe lentement en laissant une trace ?",
+      "reponse": "L'escargot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel dinosaure vert sert de monture à Mario ?",
+      "reponse": "Yoshi",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le mâle de la brebis ?",
+      "reponse": "Le bélier",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mammifère marin blanc remonte le Saguenay ?",
+      "reponse": "Le béluga",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal les chevaliers montaient-ils pour aller au combat ?",
+      "reponse": "Le cheval",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami de Winnie l'ourson est un petit cochon rose ?",
+      "reponse": "Porcinet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel métier ferre les chevaux ?",
+      "reponse": "Le maréchal-ferrant",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Dans quelle comptine un fermier a-t-il des animaux qui font chacun leur cri ?",
+      "reponse": "Dans la ferme de Mathurin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film de 1975 a vidé les plages avec son requin géant ?",
+      "reponse": "Les Dents de la mer",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel personnage de Sesame Street est un grand oiseau jaune ?",
+      "reponse": "Big Bird",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien d'ailes possède une abeille ?",
+      "reponse": "Quatre",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du cheval ?",
+      "reponse": "Le poulain",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal a la langue la plus longue par rapport au corps ?",
+      "reponse": "Le caméléon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel papillon est l'insecte emblème du Québec ?",
+      "reponse": "L'amiral",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on celui qui étudie les oiseaux ?",
+      "reponse": "Un ornithologue",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

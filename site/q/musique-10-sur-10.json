@@ -10,7 +10,11 @@
       "categorie": "Musique",
       "question": "Quelle chanson des Beatles parle d'un sous-marin ?",
       "reponse": "Yellow Submarine",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -26,15 +30,19 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument à lamelles de bois frappe-t-on avec des maillets ?",
-      "reponse": "Le xylophone",
-      "niveau": 1
+      "question": "Quel chanteur français a chanté La Bohème ?",
+      "reponse": "Charles Aznavour",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel chanteur aveugle joue du piano depuis l'enfance ?",
-      "reponse": "Stevie Wonder",
-      "niveau": 2
+      "question": "Quel instrument à lamelles de bois frappe-t-on avec des maillets ?",
+      "reponse": "Le xylophone",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
@@ -46,25 +54,43 @@
       "categorie": "Musique",
       "question": "Quelle est la voix féminine la plus grave ?",
       "reponse": "L'alto (contralto)",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel spectacle mêle chant, orchestre et théâtre ?",
+      "question": "Quel spectacle italien fait chanter toute l'histoire, sans dialogues parlés ?",
       "reponse": "L'opéra",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur aveugle joue du piano depuis l'enfance ?",
+      "reponse": "Stevie Wonder",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Qui est surnommé le roi de la pop ?",
       "reponse": "Michael Jackson",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur français a chanté La Bohème ?",
-      "reponse": "Charles Aznavour",
-      "niveau": 2
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -74,33 +100,65 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment nomme-t-on une chanson sans instruments ?",
-      "reponse": "A cappella",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
       "question": "Quelle chanteuse française chantait La Vie en rose ?",
       "reponse": "Édith Piaf",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe de Montréal a gagné un Grammy pour The Suburbs ?",
-      "reponse": "Arcade Fire",
-      "niveau": 2
+      "question": "Comment nomme-t-on une chanson sans instruments ?",
+      "reponse": "A cappella",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Qui était le chanteur de Queen ?",
       "reponse": "Freddie Mercury",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe de Montréal a gagné un Grammy pour The Suburbs ?",
+      "reponse": "Arcade Fire",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Combien de demi-tons dans une octave ?",
       "reponse": "Douze",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse a chanté Like a Virgin ?",
+      "reponse": "Madonna",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -110,39 +168,50 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse a chanté Like a Virgin ?",
-      "reponse": "Madonna",
-      "niveau": 2
+      "question": "Quel chanteur est surnommé le King ?",
+      "reponse": "Elvis Presley",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Quel groupe a sorti l'album au prisme en 1973 ?",
       "reponse": "Pink Floyd",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur est surnommé le King ?",
-      "reponse": "Elvis Presley",
-      "niveau": 1
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Quel style musical vient de la Jamaïque ?",
       "reponse": "Le reggae",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse canadienne a chanté Complicated ?",
+      "reponse": "Avril Lavigne",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Musique",
       "question": "Quel objet tient le chanteur pour que sa voix porte dans toute la salle ?",
       "reponse": "Le micro",
       "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse canadienne a chanté Complicated ?",
-      "reponse": "Avril Lavigne",
-      "niveau": 2
     }
   ]
 }

@@ -7,17 +7,21 @@
 // questions sont ajoutées au firmware, on régénère au lieu de tout refaire
 // à la main.
 //
+// LES QUESTIONS VIVENT DANS tool/questions/, un fichier par catégorie. La
+// première moitié de chaque fichier reflète Questions.cpp ligne pour ligne ;
+// après le séparateur « === hors firmware === », c'est libre. Voir
+// [_questionsDir] pour le détail du format et pourquoi les deux cohabitent.
+//
 // LES ACCENTS. Le firmware écrit sans accents, parce que l'écran LCD du
 // buzzer ne sait pas les afficher. Les fichiers générés, eux, sont lus par
 // des humains sur un écran d'ordinateur : « Genereux depute quebecois »
-// n'est pas du français. Le texte accentué vit donc dans tool/accents/,
-// un fichier par catégorie, dans le MÊME ordre que la source.
+// n'est pas du français. Le miroir porte donc le texte accentué.
 //
-// Un garde-fou vérifie que retirer les accents d'une ligne accentuée
-// redonne EXACTEMENT la ligne d'origine. Si l'invariant tient, la
-// réécriture n'a fait qu'ajouter des accents : elle n'a pas reformulé, ni
-// sauté une question, ni interverti une réponse. Toute dérive échoue
-// bruyamment au lieu de passer inaperçue.
+// Un garde-fou vérifie que retirer les accents d'une ligne du miroir redonne
+// EXACTEMENT la ligne d'origine. Si l'invariant tient, la réécriture n'a fait
+// qu'ajouter des accents : elle n'a pas reformulé, ni sauté une question, ni
+// interverti une réponse. Toute dérive échoue bruyamment au lieu de passer
+// inaperçue.
 
 import 'dart:convert';
 import 'dart:io';
@@ -26,7 +30,100 @@ import 'dart:math';
 import 'package:crypto/crypto.dart';
 
 const _sourcePath = '../../Questions.cpp';
-const _accentsDir = 'tool/accents';
+
+// UN SEUL FICHIER PAR CATÉGORIE.
+//
+// Il y en a eu deux dossiers : l'un alignait le firmware ligne pour ligne,
+// l'autre portait les questions qui n'existent que dans l'application. Leurs
+// formats ont fini par converger, et la séparation ne servait plus qu'à une
+// chose — la vérification d'alignement — tout en obligeant, pour chaque
+// question ajoutée, à choisir entre vingt-huit fichiers. J'y ai écrit mes
+// propres doublons.
+//
+// Un fichier porte donc les deux :
+//
+//   # Catégorie : Culture générale
+//   # Emoji : 💡
+//   # Firmware : 0            (absent si la catégorie n'est pas au firmware)
+//   ... le miroir, vérifié contre Questions.cpp ...
+//   === hors firmware ===
+//   ... les questions libres ...
+//
+// L'invariant survit : il ne s'applique qu'aux lignes d'avant le séparateur.
+const _questionsDir = 'tool/questions';
+const _separateur = '=== hors firmware ===';
+
+class _Fichier {
+  _Fichier(this.nom, this.categorie, this.emoji, this.firmware, this.miroir, this.libres);
+  final String nom;
+  final String categorie;
+  final String emoji;
+  final int? firmware;      // index CATn_DATA, ou null
+  final List<String> miroir;
+  final List<String> libres;
+}
+
+List<_Fichier>? _cacheFichiers;
+
+// Lu une seule fois : le miroir et les libres sortent du même fichier, et
+// deux lectures séparées les feraient diverger au moindre changement.
+List<_Fichier> _fichiersQuestions() {
+  if (_cacheFichiers != null) return _cacheFichiers!;
+  final dir = Directory(_questionsDir);
+  if (!dir.existsSync()) {
+    stderr.writeln('Introuvable : ${dir.absolute.path}');
+    exit(1);
+  }
+  final fichiers = <_Fichier>[];
+  final trouves = dir.listSync().whereType<File>().where((f) => f.path.endsWith('.txt')).toList()
+    ..sort((a, b) => a.path.compareTo(b.path));
+  for (final f in trouves) {
+    final nom = f.uri.pathSegments.last;
+    String? categorie;
+    String? emoji;
+    int? firmware;
+    final miroir = <String>[];
+    final libres = <String>[];
+    var apresSeparateur = false;
+    for (final brute in f.readAsLinesSync()) {
+      final l = brute.trim();
+      if (l.isEmpty) continue;
+      if (l == _separateur) {
+        apresSeparateur = true;
+        continue;
+      }
+      if (l.startsWith('#')) {
+        final m = RegExp(r'^#\s*(Catégorie|Emoji|Firmware)\s*:\s*(.+)$').firstMatch(l);
+        if (m == null) continue;
+        switch (m.group(1)) {
+          case 'Catégorie':
+            categorie = m.group(2)!.trim();
+          case 'Emoji':
+            emoji = m.group(2)!.trim();
+          case 'Firmware':
+            firmware = int.tryParse(m.group(2)!.trim());
+        }
+        continue;
+      }
+      (apresSeparateur ? libres : miroir).add(l);
+    }
+    if (categorie == null || emoji == null) {
+      stderr.writeln('$nom : « # Catégorie : ... » et « # Emoji : ... » sont obligatoires.');
+      exit(1);
+    }
+    // SANS « # Firmware », TOUT EST LIBRE. Une catégorie que le firmware ne
+    // connaît pas n'a pas de séparateur, donc ses questions se retrouveraient
+    // toutes du côté miroir — et un miroir sans firmware à refléter n'est
+    // jamais lu. C'est exactement ce qui a fait disparaître Culture pop au
+    // premier essai.
+    if (firmware == null && miroir.isNotEmpty) {
+      libres.insertAll(0, miroir);
+      miroir.clear();
+    }
+    fichiers.add(_Fichier(nom, categorie, emoji, firmware, miroir, libres));
+  }
+  return _cacheFichiers = fichiers;
+}
 
 // Plafond ferme : une soiree n'est pas un marathon. Passe une vingtaine de
 // questions, les invites decrochent et ne redemandent pas la soiree suivante.
@@ -70,24 +167,92 @@ const kTailleTelechargement = '18 Mo';
 // revue, où c'est justement ce qu'on veut savoir en relisant.
 enum Origine { banque, retouchee, inedite }
 
+// À QUI UNE QUESTION APPARTIENT.
+//
+// Deuxième axe, indépendant du niveau, et il a fallu se tromper pour le voir.
+// Le niveau dit si c'est difficile ; la tranche dit DANS QUEL MONDE la question
+// se trouve. « Quel Pokémon jaune lance des éclairs » est évident à quinze ans
+// et opaque à soixante-quinze ; « Qui a chanté My Way » fait l'inverse. Sur un
+// seul axe, une soirée « 7 à 77 ans » laissait les ados regarder passer
+// vingt-cinq questions sans en posséder une seule.
+//
+// LES DEUX AXES NE SE REMPLACENT PAS. Le niveau se lit À L'INTÉRIEUR de la
+// tranche : une question d'enfants peut être difficile (le nom du phacochère
+// qui accompagne Timon), une question d'aînés peut être facile (Piaf).
+//
+// UNE QUESTION COUVRE PLUSIEURS TRANCHES, presque toujours. Minecraft
+// appartient aux enfants ET aux ados ; Aznavour aux adultes ET aux aînés. Une
+// seule tranche par question serait faux partout, d'où l'ensemble.
+enum Tranche { enfants, ados, adultes, aines }
+
+// Le cas de loin le plus fréquent : personne ne possède cette question plus
+// qu'un autre. Le cri du chat, le nombre de côtés d'un carré, la couleur des
+// Schtroumpfs. On ne marque donc QUE les exceptions.
+const kToutesTranches = <Tranche>{
+  Tranche.enfants,
+  Tranche.ados,
+  Tranche.adultes,
+  Tranche.aines,
+};
+
+// AUCUNE TRANCHE N'EST DÉDUITE. Chaque question porte les siennes, écrites
+// dans son fichier, et il n'existe pas de valeur par défaut.
+//
+// J'avais d'abord dérivé les tranches du niveau : « moyen » sortait les
+// enfants, « difficile » sortait aussi les ados. La règle était juste dans la
+// plupart des cas, et c'est exactement ce qui la rendait dangereuse — elle
+// avait l'air de marcher, donc personne n'allait vérifier les cas où elle se
+// trompait. Le gant de Thanos est coté moyen et appartient aux enfants ;
+// « Combien de cases sur un échiquier » est coté moyen et un enfant qui joue
+// répond. Une règle implicite décide pour ces questions-là sans le dire.
+//
+// Le coût : quatre mots de plus par ligne. Le gain : le fichier dit tout ce
+// qu'il fait, et une question mal classée se voit en la lisant.
+
+Set<Tranche> _tranchesDepuis(String mots, String ou) {
+  final trouvees = <Tranche>{};
+  for (final mot in mots.split(RegExp(r'[\s,]+'))) {
+    if (mot.isEmpty) continue;
+    final t = Tranche.values.where((v) => v.name == mot.toLowerCase());
+    if (t.isEmpty) {
+      stderr.writeln("$ou : tranche inconnue « $mot ». Attendu "
+          '${Tranche.values.map((v) => v.name).join(', ')}.');
+      exit(1);
+    }
+    trouvees.add(t.first);
+  }
+  if (trouvees.isEmpty) {
+    stderr.writeln('$ou : aucune tranche nommée.');
+    exit(1);
+  }
+  return trouvees;
+}
+
 class Entry {
   Entry(this.category, this.question, this.answer,
-      {this.niveau, this.origine = Origine.banque});
+      {this.niveau, this.origine = Origine.banque, required this.tranches});
   final String category;
   final String question;
   final String answer;
   final Origine origine;
+  final Set<Tranche> tranches;
+
+  bool get pourTous => tranches.length == kToutesTranches.length;
   // 1 facile (un enfant de huit ans repond), 2 moyen (culture generale
   // ordinaire), 3 difficile (connaisseur). Null tant que la question n'a pas
   // ete cotee : le fichier generé ne porte alors pas la cle, et l'app n'affiche
   // rien plutot qu'un niveau invente.
   final int? niveau;
 
+  // « ages » n'est écrit que pour les questions qui appartiennent à certaines
+  // tranches : l'absence de la clé veut dire « tout le monde », ce qui est le
+  // cas de la grande majorité et garde les fichiers lisibles.
   Map<String, dynamic> toJson() => {
         'categorie': category,
         'question': question,
         'reponse': answer,
         if (niveau != null) 'niveau': niveau,
+        if (!pourTous) 'ages': [for (final t in Tranche.values) if (tranches.contains(t)) t.name],
       };
 }
 
@@ -154,8 +319,10 @@ void main(List<String> args) {
   final sansNiveau = all.where((e) => e.niveau == null).length;
   final retouchees = categories.fold<int>(
       0, (n, c) => n + (c.accented?.where((l) => l.retouche != null).length ?? 0));
+  final retirees = categories.fold<int>(
+      0, (n, c) => n + (c.accented?.where((l) => l.retiree != null).length ?? 0));
   stdout.writeln('${all.length - sansNiveau} questions cotées, '
-      '$sansNiveau sans niveau, $retouchees retouchées.');
+      '$sansNiveau sans niveau, $retouchees retouchées, $retirees retirées.');
 
   final out = Directory(_outputDir);
   // Le dossier q/ est vidé avant d'écrire : sans ça, un questionnaire
@@ -186,13 +353,39 @@ void main(List<String> args) {
   //
   // Le niveau 2 n'a pas de collection à lui : c'est le tout-venant, il est
   // partout ailleurs.
-  _writeManches(
-    '7 à 77 ans',
+  // 7 À 77 ANS : QUARANTE MANCHES, PAS TOUT LE LOT FACILE.
+  //
+  // Le lot facile ferait cinquante-huit manches, mais les dernières seraient
+  // forcément les moins bonnes : à la fin, il ne reste que ce que les
+  // premières n'ont pas voulu. Quarante soirées suffisent largement, et
+  // s'arrêter là garde le meilleur.
+  //
+  // LE MÉLANGE DES GÉNÉRATIONS NE SE FAIT PLUS ICI. J'avais écrit des quotas
+  // par tranche d'âge pour composer ces manches ; ils sont partis. La tranche
+  // qu'il faut servir dépend de qui est dans la salle CE SOIR-LÀ, et le
+  // générateur ne peut pas le savoir. Chaque question porte donc ses tranches
+  // dans le JSON (clé « ages »), et c'est l'application qui compose au
+  // lancement de la partie, quand l'opérateur a la salle devant lui.
+  //
+  // Ce qui reste ici est un préréglage tout fait, pour qui ne veut rien
+  // régler : le niveau facile, équilibré par catégorie, en quarante manches.
+  const kPourTous = '7 à 77 ans';
+  const kRondes7a77 = 40;
+  final manches7a77 = _manchesProportionnelles(
     all.where((e) => e.niveau == 1).toList(),
-    note: 'Des questions auxquelles tout le monde peut répondre, '
-        'de 7 à 77 ans, toutes catégories confondues.',
-    emoji: '🎈',
-  );
+    kMaxQuestions,
+    Random(_graine(kPourTous)),
+  ).take(kRondes7a77).toList();
+  for (var i = 0; i < manches7a77.length; i++) {
+    _write(
+      '$kPourTous ${_numero(i + 1, manches7a77.length)} sur ${manches7a77.length}',
+      manches7a77[i],
+      note: 'Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, '
+          'toutes catégories confondues. Manche ${i + 1} sur ${manches7a77.length}.',
+      collection: kPourTous,
+      emoji: '🎈',
+    );
+  }
   _writeManches(
     'Connaisseurs',
     all.where((e) => e.niveau == 3).toList(),
@@ -463,6 +656,13 @@ String _echappe(String s) => s
 
 const _motsNiveaux = {1: 'facile', 2: 'moyen', 3: 'difficile'};
 
+const _motsTranches = {
+  Tranche.enfants: 'enfants',
+  Tranche.ados: 'ados',
+  Tranche.adultes: 'adultes',
+  Tranche.aines: 'aînés',
+};
+
 void _writeRevue(List<Entry> all) {
   final parCategorie = <String, List<Entry>>{};
   for (final e in all) {
@@ -490,12 +690,21 @@ void _writeRevue(List<Entry> all) {
         Origine.retouchee => '<i class="marque retouchee">retouchée</i>',
         Origine.banque => '',
       };
+      // « tous » plutôt que les quatre mots : c'est le cas le plus fréquent,
+      // et l'écrire en entier sur mille lignes cacherait les restrictions,
+      // qui sont justement ce qu'on vient relire.
+      final ages = e.tranches.map((t) => t.name).join(' ');
+      final agesVus = e.pourTous
+          ? 'tous'
+          : [for (final t in Tranche.values) if (e.tranches.contains(t)) _motsTranches[t]!].join(', ');
       lignes.write('<div class="ligne" data-n="$n" data-o="${e.origine.name}" '
+          'data-a="$ages" '
           'data-k="${_echappe(_strip('${e.question} ${e.answer}').toLowerCase())}">'
           '<span class="num">${i + 1}</span>'
           '<span class="q">${_echappe(e.question)}</span>'
           '<span class="r">${_echappe(e.answer)}</span>'
           '<span class="niv niv$n">${_motsNiveaux[n] ?? '?'}</span>'
+          '<span class="ages">$agesVus</span>'
           '<span class="marques">$marque</span>'
           '</div>');
     }
@@ -563,6 +772,7 @@ void _writeRevue(List<Entry> all) {
                   border: 1px solid var(--filet); background: transparent;
                   color: var(--texte); }
   #resultat { color: var(--gris); font-size: .92rem; }
+  .sep { border-left: 1px solid var(--filet); align-self: stretch; }
 
   nav { display: flex; flex-wrap: wrap; gap: .1rem 1.1rem; margin: 0 0 .5rem; }
   nav a { color: var(--accent); text-decoration: none; font-size: .95rem; }
@@ -570,9 +780,10 @@ void _writeRevue(List<Entry> all) {
   nav b { font-weight: normal; color: var(--gris); }
 
   .ligne { display: grid;
-           grid-template-columns: 2.6rem minmax(0,1fr) 12rem 4.6rem 5rem;
+           grid-template-columns: 2.6rem minmax(0,1fr) 11rem 4.6rem 9rem 5rem;
            gap: .6rem; align-items: baseline; padding: .45rem 0;
            border-bottom: 1px solid var(--filet); }
+  .ages { font-size: .8rem; color: var(--gris); }
   .num { color: var(--gris); font-size: .85rem; text-align: right; }
   .r { color: var(--magenta); font-style: italic; }
   .niv { font-size: .82rem; color: var(--gris); }
@@ -590,7 +801,7 @@ void _writeRevue(List<Entry> all) {
 
   @media (max-width: 46rem) {
     .ligne { grid-template-columns: 2.2rem minmax(0,1fr); }
-    .r { grid-column: 2; } .niv, .marques { grid-column: 2; }
+    .r { grid-column: 2; } .niv, .ages, .marques { grid-column: 2; }
   }
   a.retour { color: var(--accent); }
 </style>
@@ -607,6 +818,11 @@ void _writeRevue(List<Entry> all) {
     <label><input type="checkbox" class="niv-f" value="1" checked> facile</label>
     <label><input type="checkbox" class="niv-f" value="2" checked> moyen</label>
     <label><input type="checkbox" class="niv-f" value="3" checked> difficile</label>
+    <span class="sep"></span>
+    <label><input type="checkbox" class="age-f" value="enfants" checked> enfants</label>
+    <label><input type="checkbox" class="age-f" value="ados" checked> ados</label>
+    <label><input type="checkbox" class="age-f" value="adultes" checked> adultes</label>
+    <label><input type="checkbox" class="age-f" value="aines" checked> aînés</label>
     <select id="origine">
       <option value="">Toutes provenances</option>
       <option value="banque">Banque du buzzer</option>
@@ -624,6 +840,7 @@ $sections
   var champ = document.getElementById('q');
   var origine = document.getElementById('origine');
   var cases = [].slice.call(document.querySelectorAll('.niv-f'));
+  var casesAge = [].slice.call(document.querySelectorAll('.age-f'));
   var resultat = document.getElementById('resultat');
   var lignes = [].slice.call(document.querySelectorAll('.ligne'));
   var sections = [].slice.call(document.querySelectorAll('section'));
@@ -636,6 +853,11 @@ $sections
     var mot = sansAccents(champ.value.trim());
     var niveaux = {};
     cases.forEach(function (c) { if (c.checked) niveaux[c.value] = true; });
+    // Une question passe si UNE de ses tranches est cochée. Celles qui
+    // appartiennent à tout le monde portent les quatre, donc elles passent
+    // toujours : décocher « aînés » ne cache que ce qui est propre aux aînés.
+    var ages = {};
+    casesAge.forEach(function (c) { if (c.checked) ages[c.value] = true; });
     var prov = origine.value;
     var visibles = 0;
 
@@ -644,7 +866,12 @@ $sections
       var enfants = section.querySelectorAll('.ligne');
       for (var i = 0; i < enfants.length; i++) {
         var l = enfants[i];
-        var ok = niveaux[l.dataset.n] === true &&
+        var sesAges = l.dataset.a.split(' ');
+        var ageOk = false;
+        for (var j = 0; j < sesAges.length; j++) {
+          if (ages[sesAges[j]] === true) { ageOk = true; break; }
+        }
+        var ok = niveaux[l.dataset.n] === true && ageOk &&
                  (prov === '' || l.dataset.o === prov) &&
                  (mot === '' || l.dataset.k.indexOf(mot) !== -1);
         l.classList.toggle('cache', !ok);
@@ -662,6 +889,7 @@ $sections
   champ.addEventListener('input', filtrer);
   origine.addEventListener('change', filtrer);
   cases.forEach(function (c) { c.addEventListener('change', filtrer); });
+  casesAge.forEach(function (c) { c.addEventListener('change', filtrer); });
   filtrer();
 })();
 </script>
@@ -840,6 +1068,13 @@ class _Ligne {
   final String texte;      // "Question|Réponse", aligné sur la source
   final int? niveau;       // 1, 2, 3, ou null tant que non coté
   String? retouche;        // "Question|Réponse" servi à la place, ou null
+  // Raison du retrait, ou null. Une question retirée reste DANS le fichier,
+  // à sa place, avec le motif écrit à côté : le fichier doit garder une ligne
+  // par question de la source, et le motif se relit quand on se demande, dans
+  // deux ans, pourquoi elle n'est plus jouée.
+  String? retiree;
+  // Voir [Tranche]. Marqué par une ligne « ~ enfants ados », par exemple.
+  Set<Tranche>? tranches;
 }
 
 List<_Category> _parseCategories(String raw) {
@@ -896,63 +1131,36 @@ String? _literalsAfter(String raw, String marker) {
 
 // --- Inédites ------------------------------------------------------------
 
-// Un fichier par lot dans tool/inedites/, au même format que les accentués
-// (« Question|Réponse|niveau »), avec deux lignes d'en-tête :
+// Les questions d'après le séparateur : celles qui n'existent que dans
+// l'application. Aucun alignement à respecter, mais exactement la même
+// syntaxe — c'est tout l'intérêt d'avoir fusionné les deux dossiers.
 //
-//   # Catégorie : Cinéma et télé
-//   # Emoji : 🎬        (seulement pour une catégorie que la banque n'a pas)
-//
-// Le niveau est OBLIGATOIRE ici : on écrit ces questions en connaissant
-// leur cible, il n'y a pas de cotation à rattraper. Une catégorie inconnue
-// crée une tuile, à condition d'apporter son pictogramme.
-const _ineditesDir = 'tool/inedites';
+// Pas d'en-tête qui vaudrait pour tout le fichier : ce serait une règle
+// implicite de plus, et l'exception y passerait inaperçue. Chaque question
+// écrit son niveau et ses tranches.
 final _emojiInedites = <String, String>{};
 
 String _emojiDe(String categorie) =>
     kEmojiCategories[categorie] ?? _emojiInedites[categorie] ?? '';
 
 List<Entry> _readInedites(Set<String> categoriesConnues) {
-  final dir = Directory(_ineditesDir);
-  if (!dir.existsSync()) return [];
   final entries = <Entry>[];
-  final fichiers = dir.listSync().whereType<File>().where((f) => f.path.endsWith('.txt')).toList()
-    ..sort((a, b) => a.path.compareTo(b.path));
-  for (final f in fichiers) {
-    final nom = f.uri.pathSegments.last;
-    String? categorie;
-    var numero = 0;
-    for (final brute in f.readAsLinesSync()) {
-      numero++;
-      final l = brute.trim();
-      if (l.isEmpty) continue;
-      if (l.startsWith('#')) {
-        final m = RegExp(r'^#\s*(Catégorie|Emoji)\s*:\s*(.+)$').firstMatch(l);
-        if (m == null) continue;
-        if (m.group(1) == 'Catégorie') {
-          categorie = m.group(2)!.trim();
-        } else if (categorie != null) {
-          _emojiInedites[categorie] = m.group(2)!.trim();
-        }
-        continue;
-      }
-      if (categorie == null) {
-        stderr.writeln('$nom, ligne $numero : « # Catégorie : ... » attendu avant la première question.');
-        exit(1);
-      }
-      final champs = l.split('|');
-      final niveau = champs.length == 3 ? int.tryParse(champs[2].trim()) : null;
-      if (niveau == null || niveau < 1 || niveau > 3) {
-        stderr.writeln('$nom, ligne $numero : attendu « Question|Réponse|niveau » avec un niveau de 1 à 3.');
-        exit(1);
-      }
-      entries.add(Entry(categorie, champs[0].trim(), champs[1].trim(),
-          niveau: niveau, origine: Origine.inedite));
-    }
-    if (categorie != null &&
-        !categoriesConnues.contains(categorie) &&
-        !_emojiInedites.containsKey(categorie)) {
-      stderr.writeln('$nom : la catégorie « $categorie » est nouvelle, il lui faut un « # Emoji : ... ».');
-      exit(1);
+  for (final fichier in _fichiersQuestions()) {
+    // Le pictogramme du fichier fait foi pour une catégorie que le firmware
+    // ne connaît pas : sans lui, sa tuile n'aurait pas d'image.
+    _emojiInedites[fichier.categorie] = fichier.emoji;
+    for (final ligne in _lireBloc(fichier.libres, fichier.nom)) {
+      if (ligne.retiree != null) continue;
+      final servie = ligne.retouche ?? ligne.texte;
+      final sep = servie.indexOf('|');
+      entries.add(Entry(
+        fichier.categorie,
+        servie.substring(0, sep).trim(),
+        servie.substring(sep + 1).trim(),
+        niveau: ligne.niveau,
+        origine: Origine.inedite,
+        tranches: ligne.tranches ?? kToutesTranches,
+      ));
     }
   }
   return entries;
@@ -960,57 +1168,71 @@ List<Entry> _readInedites(Set<String> categoriesConnues) {
 
 // --- Accents -------------------------------------------------------------
 
-// Format d'une ligne : « Question|Réponse|niveau ». Le niveau est un chiffre
-// de 1 à 3, facultatif tant que la cotation n'est pas finie. Une ligne qui
-// commence par « > » retouche la question juste au-dessus (voir _Ligne). Les
-// lignes vides et les « # » sont des commentaires.
-List<_Ligne>? _readAccents(int index, int expected) {
-  final file = File('$_accentsDir/cat$index.txt');
-  if (!file.existsSync()) return null;
-  final lignes = <_Ligne>[];
-  var numero = 0;
-  for (final brute in file.readAsLinesSync()) {
-    numero++;
-    final l = brute.trim();
-    if (l.isEmpty || l.startsWith('#')) continue;
+// Format d'une ligne : « Question|Réponse|niveau|tranches ». Les quatre champs
+// sont obligatoires : le niveau (1 à 3) et les tranches d'âge, séparées par
+// des espaces. Une ligne qui commence par « > » retouche la question
+// juste au-dessus, « - » la retire. Les lignes vides et les « # » sont des
+// commentaires.
+// Le même bloc de lignes se lit des deux côtés du séparateur : c'est ce qui
+// permet aux deux moitiés d'un fichier de catégorie d'avoir exactement la
+// même syntaxe, retouches et retraits compris.
+List<_Ligne> _lireBloc(List<String> lignes, String nom) {
+  final lues = <_Ligne>[];
+  for (final l in lignes) {
+    final ou = '$nom, question ${lues.length + 1}';
+
+    // Retrait : la question reste dans le fichier et dans le firmware, mais
+    // ne sort plus dans les questionnaires. Sert quand une question n'a pas
+    // sa place dans une soirée, plutôt qu'elle soit fausse ou mal posée.
+    if (l.startsWith('-')) {
+      if (lues.isEmpty) {
+        stderr.writeln('$ou : retrait sans question à retirer.');
+        exit(1);
+      }
+      lues.last.retiree = l.substring(1).trim();
+      continue;
+    }
 
     if (l.startsWith('>')) {
-      if (lignes.isEmpty || lignes.last.retouche != null) {
-        stderr.writeln('cat$index.txt, ligne $numero : retouche sans question '
-            'à retoucher, ou deuxième retouche pour la même question.');
+      if (lues.isEmpty || lues.last.retouche != null) {
+        stderr.writeln('$ou : retouche sans question à retoucher, ou deuxième '
+            'retouche pour la même question.');
         exit(1);
       }
       final r = l.substring(1).trim();
       if (r.split('|').length != 2) {
-        stderr.writeln('cat$index.txt, ligne $numero : une retouche s\'écrit '
-            '« > Question|Réponse ».');
+        stderr.writeln('$ou : une retouche s\'écrit « > Question|Réponse ».');
         exit(1);
       }
-      lignes.last.retouche = r;
+      lues.last.retouche = r;
       continue;
     }
 
     final champs = l.split('|');
-    if (champs.length < 2 || champs.length > 3) {
-      stderr.writeln('cat$index.txt, ligne $numero : attendu '
-          '« Question|Réponse|niveau », lu « $l ».');
+    if (champs.length != 4) {
+      stderr.writeln('$ou : attendu « Question|Réponse|niveau|tranches », lu « $l ».');
       exit(1);
     }
-    int? niveau;
-    if (champs.length == 3) {
-      niveau = int.tryParse(champs[2].trim());
-      if (niveau == null || niveau < 1 || niveau > 3) {
-        stderr.writeln('cat$index.txt, ligne $numero : le niveau doit être '
-            '1, 2 ou 3, lu « ${champs[2]} ».');
-        exit(1);
-      }
+    final niveau = int.tryParse(champs[2].trim());
+    if (niveau == null || niveau < 1 || niveau > 3) {
+      stderr.writeln('$ou : le niveau doit être 1, 2 ou 3, lu « ${champs[2]} ».');
+      exit(1);
     }
-    lignes.add(_Ligne('${champs[0]}|${champs[1]}', niveau));
+    lues.add(_Ligne('${champs[0]}|${champs[1]}', niveau)
+      ..tranches = _tranchesDepuis(champs[3], ou));
   }
+  return lues;
+}
+
+// Le miroir de la catégorie [index] du firmware, s'il existe.
+List<_Ligne>? _readAccents(int index, int expected) {
+  final fichier = _fichiersQuestions().where((f) => f.firmware == index).firstOrNull;
+  if (fichier == null) return null;
+  final lignes = _lireBloc(fichier.miroir, fichier.nom);
   if (lignes.length != expected) {
-    stderr.writeln('cat$index.txt : ${lignes.length} lignes pour $expected '
-        'questions attendues. Fichier ignoré.');
-    return null;
+    stderr.writeln('${fichier.nom} : ${lignes.length} lignes avant le séparateur '
+        'pour $expected questions dans Questions.cpp. Le miroir a dérivé.');
+    exit(1);
   }
   return lignes;
 }
@@ -1037,6 +1259,10 @@ List<Entry> _applyAccents(_Category cat) {
       exit(1);
     }
 
+    // Retirée : l'invariant a été vérifié juste au-dessus (le fichier reste
+    // aligné sur la source), mais la question ne descend pas dans le catalogue.
+    if (cotee?.retiree != null) continue;
+
     final servie = cotee?.retouche ?? ligne;
     final sep = servie.indexOf('|');
     entries.add(Entry(
@@ -1045,6 +1271,7 @@ List<Entry> _applyAccents(_Category cat) {
       servie.substring(sep + 1).trim(),
       niveau: cotee?.niveau,
       origine: cotee?.retouche != null ? Origine.retouchee : Origine.banque,
+      tranches: cotee?.tranches ?? kToutesTranches,
     ));
   }
   return entries;

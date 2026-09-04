@@ -10,7 +10,12 @@
       "categorie": "Géographie",
       "question": "Quelle province canadienne borde le Pacifique ?",
       "reponse": "Colombie-Britannique",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -22,13 +27,23 @@
       "categorie": "Géographie",
       "question": "Quelle chaîne de montagnes traverse la Suisse ?",
       "reponse": "Les Alpes",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Quelle est la plus grande ville d'Australie ?",
       "reponse": "Sydney",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -38,51 +53,84 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel océan est le plus froid ?",
-      "reponse": "L'Arctique",
+      "question": "Quel océan entoure le pôle Nord ?",
+      "reponse": "L'océan Arctique",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
       "question": "Capitale du Maroc ?",
       "reponse": "Rabat",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Quel pays produit le plus de café ?",
       "reponse": "Le Brésil",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Dans quelle ville trouve-t-on la basilique Saint-Pierre ?",
       "reponse": "Rome (Vatican)",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Quel massif abrite l'Everest ?",
       "reponse": "L'Himalaya",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Capitale de l'Islande ?",
       "reponse": "Reykjavik",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Capitale du Nouveau-Brunswick ?",
       "reponse": "Fredericton",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Quelle province canadienne produit le plus de pétrole ?",
       "reponse": "L'Alberta",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -98,21 +146,30 @@
     },
     {
       "categorie": "Géographie",
+      "question": "Combien y a-t-il de continents sur Terre ?",
+      "reponse": "Sept",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
       "question": "Quel état américain est un archipel volcanique ?",
       "reponse": "Hawaï",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
       "reponse": "La Finlande",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays est surnommé la botte de l'Europe ?",
-      "reponse": "L'Italie",
-      "niveau": 1
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -124,18 +181,28 @@
       "categorie": "Géographie",
       "question": "Quelle ville est surnommée la Ville éternelle ?",
       "reponse": "Rome",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays est surnommé la botte de l'Europe ?",
+      "reponse": "L'Italie",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Dans quel pays se tient le grand carnaval de Rio ?",
       "reponse": "Le Brésil",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays est célèbre pour ses tacos et ses sombreros ?",
-      "reponse": "Le Mexique",
       "niveau": 1
     }
   ]

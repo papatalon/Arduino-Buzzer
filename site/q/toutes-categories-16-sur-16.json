@@ -7,16 +7,20 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie en faire tout un fromage ?",
-      "reponse": "Exagérer",
+      "categorie": "Sports",
+      "question": "Quelle activité consiste à marcher longtemps sur des sentiers en forêt ou en montagne ?",
+      "reponse": "La randonnée",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Le dauphin est-il un poisson ou un mammifère ?",
-      "reponse": "Un mammifère",
-      "niveau": 1
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle tartelette portugaise est à la crème ?",
+      "reponse": "Pastel de nata",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -25,136 +29,203 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles pâtes en forme de papillon existent ?",
-      "reponse": "Les farfalles",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur a popularisé le twist ?",
-      "reponse": "Chubby Checker",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Féminin de dieu ?",
-      "reponse": "Déesse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson gazeuse au gingembre est célèbre au Canada ?",
-      "reponse": "Le ginger ale (Canada Dry)",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport lance-t-on un javelot ?",
-      "reponse": "L'athlétisme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "De quelle couleur est le drapeau du Québec ?",
-      "reponse": "Bleu et blanc",
+      "categorie": "Sciences et nature",
+      "question": "Quelle force nous retient au sol ?",
+      "reponse": "La gravité",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle grande ville américaine abrite la statue de la Liberté ?",
-      "reponse": "New York",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelles petites créatures jaunes adorent les bananes ?",
-      "reponse": "Les Minions",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel mot québécois désigne les bonbons ?",
-      "reponse": "Des nananes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel milliardaire Marvel a un réacteur dans la poitrine ?",
-      "reponse": "Tony Stark",
-      "niveau": 1
+      "question": "Quelle chaîne sépare l'Europe de l'Asie ?",
+      "reponse": "L'Oural",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel vent tourbillonnant forme un entonnoir ?",
-      "reponse": "La tornade",
+      "question": "Quel animal terrestre est le plus lourd ?",
+      "reponse": "L'éléphant",
       "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien d'anneaux sur le drapeau olympique ?",
-      "reponse": "Cinq",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels deux blocs s'opposaient durant la guerre froide ?",
-      "reponse": "USA et URSS",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fête du 1er juillet fait déménager les Québécois ?",
-      "reponse": "Jour du déménagement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle est la quatrième lettre de l'alphabet grec ?",
-      "reponse": "Delta",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande île du golfe Saint-Laurent ?",
-      "reponse": "Anticosti",
-      "niveau": 2
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle soupe vietnamienne parfumée contient du bœuf ?",
-      "reponse": "Le pho",
+      "question": "Quel aliment orange est riche en carotène ?",
+      "reponse": "La carotte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle première ministre fut surnommée la Dame de fer ?",
+      "reponse": "Thatcher",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle héroïne chinoise se déguise en soldat ?",
+      "reponse": "Mulan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle bombe a frappé Hiroshima en 1945 ?",
+      "reponse": "La bombe atomique",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui a fondé Facebook en 2004 ?",
+      "reponse": "Mark Zuckerberg",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "En quelle année Montréal a-t-elle été fondée ?",
+      "reponse": "1642",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de combat olympique a un style gréco-romain ?",
+      "reponse": "La lutte",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a peint Guernica ?",
+      "reponse": "Picasso",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle unité mesure la fréquence ?",
+      "reponse": "Le hertz",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de héros ?",
+      "reponse": "Héroïne",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on un groupe de personnes qui chantent ensemble ?",
+      "reponse": "Une chorale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelles chutes africaines portent le nom d'une reine ?",
+      "reponse": "Victoria",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel point le plus au nord de la Terre est le domicile du père Noël ?",
+      "reponse": "Le pôle Nord",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans Pokémon, dans quel objet enferme-t-on les créatures capturées ?",
+      "reponse": "Une Poké Ball",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel grand danois froussard résout des mystères ?",
+      "reponse": "Scooby-Doo",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle cabane à sucre célèbre appartient à un chef renommé ?",
-      "reponse": "Au Pied de Cochon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la statuette du cinéma américain ?",
-      "reponse": "L'Oscar",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe a chanté Hotel California ?",
-      "reponse": "Les Eagles",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle base américaine fut attaquée en décembre 1941 ?",
-      "reponse": "Pearl Harbor",
-      "niveau": 2
+      "question": "Quel film de Denys Arcand a gagné un Oscar ?",
+      "reponse": "Invasions barbares",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe a sorti l'album au prisme en 1973 ?",
-      "reponse": "Pink Floyd",
-      "niveau": 2
+      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
+      "reponse": "Nézet-Séguin",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel signe marque l'élision dans le mot l'arbre ?",
+      "reponse": "L'apostrophe",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magazine hebdomadaire publiait les horaires de télévision au Québec ?",
+      "reponse": "Le TV Hebdo",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     }
   ]
 }

@@ -7,154 +7,246 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Autour de quelle table siégeaient les chevaliers d'Arthur ?",
-      "reponse": "La Table ronde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat français gratine bœuf haché et purée ?",
-      "reponse": "Hachis Parmentier",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve La Mecque ?",
-      "reponse": "Arabie saoudite",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Montréal ?",
-      "reponse": "Un Montréalais",
-      "niveau": 1
+      "categorie": "Cinéma et télé",
+      "question": "Quel petit robot orange et blanc roule en forme de boule dans Star Wars ?",
+      "reponse": "BB-8",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel Gaulois est l'ami d'Obélix ?",
-      "reponse": "Astérix",
-      "niveau": 1
+      "question": "Quel dessinateur belge a créé Tintin ?",
+      "reponse": "Hergé",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle comédie musicale utilise les chansons d'ABBA ?",
-      "reponse": "Mamma Mia",
+      "categorie": "Sports",
+      "question": "Quel jeu de cour d'école saute sur des cases numérotées dessinées à la craie ?",
+      "reponse": "La marelle",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Par quelle lettre muette commence le mot haricot ?",
-      "reponse": "Le H",
-      "niveau": 1
+      "question": "Quel dictionnaire français célèbre est illustré ?",
+      "reponse": "Le Petit Larousse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel pays a Kaboul pour capitale ?",
-      "reponse": "L'Afghanistan",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui écrit la musique d'une chanson ?",
-      "reponse": "Le compositeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle langue ancienne a donné alpha et oméga ?",
-      "reponse": "Le grec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
-      "reponse": "Bob l'éponge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée récompense le joueur le plus utile de la LNH ?",
-      "reponse": "Hart",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation met en scène Dracula et sa famille de monstres dans un hôtel ?",
-      "reponse": "Hôtel Transylvanie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de zéros dans un million ?",
-      "reponse": "Six",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat orange déteste les lundis et adore la lasagne ?",
-      "reponse": "Garfield",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel parti a fondé François Legault ?",
-      "reponse": "La CAQ",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle région québécoise est la plus au nord ?",
-      "reponse": "Nord-du-Québec",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel champignon de luxe est déterré par des chiens ?",
-      "reponse": "La truffe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel arbre géant de Californie est le plus gros du monde ?",
-      "reponse": "Le séquoia",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de combat n'utilise que les poings ?",
-      "reponse": "La boxe",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quels écouteurs sans fil blancs se rangent dans un petit boîtier ?",
+      "reponse": "Les AirPods",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel compositeur a écrit la Lettre à Élise ?",
-      "reponse": "Beethoven",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Combien de régions administratives compte le Québec ?",
-      "reponse": "17",
-      "niveau": 3
+      "question": "Quel rappeur américain a joué dans 8 Mile ?",
+      "reponse": "Eminem",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle rébellion québécoise eut lieu en 1837 ?",
-      "reponse": "Les Patriotes",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient des barrages ?",
-      "reponse": "L'hydroélectricité",
-      "niveau": 1
+      "question": "En quelle année les Canadiennes ont-elles voté au fédéral ?",
+      "reponse": "1918",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à frire enrobe le poisson anglais ?",
-      "reponse": "Fish and chips",
+      "question": "Quel plat libanais est une purée d'aubergines fumées ?",
+      "reponse": "Baba ganouj",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on celui qui fabrique des gâteaux ?",
+      "reponse": "Le pâtissier",
       "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le premier homme sur la Lune ?",
+      "reponse": "Neil Armstrong",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel stade montréalais a un mât incliné ?",
+      "reponse": "Stade olympique",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gros animal brun dort tout l'hiver dans sa tanière ?",
+      "reponse": "L'ours",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
+      "reponse": "Les Gardiens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on l'argent qu'on met de côté pour les mauvais jours ?",
+      "reponse": "Un bas de laine",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle friandise glacée se vend en tube de plastique à congeler ?",
+      "reponse": "Le Mr. Freeze",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel organisme veille sur la langue française au Québec ?",
+      "reponse": "L'OQLF",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus grand des Grands Lacs ?",
+      "reponse": "Le lac Supérieur",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Avec quelle farine fait-on le pain traditionnel ?",
+      "reponse": "La farine de blé",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le premier homme dans l'espace ?",
+      "reponse": "Youri Gagarine",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Qui a inventé le basketball ?",
+      "reponse": "James Naismith",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz compose 78 pour cent de l'air ?",
+      "reponse": "L'azote",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Belgique ?",
+      "reponse": "Bruxelles",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel héros de Jules Verne fait le tour du monde en 80 jours ?",
+      "reponse": "Phileas Fogg",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle est la voix féminine la plus grave ?",
+      "reponse": "L'alto (contralto)",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a inventé la dynamite ?",
+      "reponse": "Alfred Nobel",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

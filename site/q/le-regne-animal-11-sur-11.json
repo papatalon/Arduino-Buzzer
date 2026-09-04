@@ -7,69 +7,167 @@
   "emoji": "🐾",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le seul mammifère volant ?",
-      "reponse": "La chauve-souris",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a pour emblème le coq ?",
-      "reponse": "La France",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du cheval ?",
-      "reponse": "Le hennissement",
+      "categorie": "Cinéma et télé",
+      "question": "Quel est le chien de compagnie de Mickey ?",
+      "reponse": "Pluto",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel insecte fabrique le miel ?",
-      "reponse": "L'abeille",
+      "question": "Quel animal est Tony, la mascotte des céréales Frosted Flakes ?",
+      "reponse": "Un tigre",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile change de couleur pour se camoufler ?",
+      "reponse": "Le caméléon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que colle-t-on dans le dos des gens le 1er avril ?",
+      "reponse": "Un poisson d'avril",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel géant de bois cache des soldats grecs ?",
+      "reponse": "Le cheval de Troie",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de pattes a un oiseau ?",
+      "reponse": "Deux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
+      "reponse": "Les branchies",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie poser un lapin ?",
+      "reponse": "Ne pas venir",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel poisson fumé garnit le bagel classique ?",
+      "reponse": "Le saumon fumé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle exploratrice a un singe nommé Babouche ?",
+      "reponse": "Dora",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du chat ?",
+      "reponse": "Le miaulement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles équipes de sous-marins explorent les océans en secourant les animaux marins ?",
+      "reponse": "Les Octonauts",
+      "niveau": 3,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel est le plus grand cervidé du Québec ?",
+      "reponse": "L'orignal",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de pattes possède un crabe ?",
+      "reponse": "Dix",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel poisson bleu perd la mémoire dans Nemo ?",
+      "reponse": "Dory",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel agrume jaune très acide accompagne les poissons ?",
+      "reponse": "Le citron",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel animal a allaité Romulus et Rémus ?",
-      "reponse": "Une louve",
-      "niveau": 2
+      "question": "Quels animaux géants ont disparu bien avant l'apparition des humains ?",
+      "reponse": "Les dinosaures",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel héros Marvel rétrécit à la taille d'une fourmi ?",
-      "reponse": "Ant-Man",
+      "question": "Quel animal est Abu, l'ami d'Aladin ?",
+      "reponse": "Un singe",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel dinosaure a trois cornes sur la tête ?",
-      "reponse": "Le tricératops",
+      "question": "Quel insecte rouge à points noirs porte bonheur ?",
+      "reponse": "La coccinelle",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Dans quel sport utilise-t-on un maillet à cheval ?",
-      "reponse": "Le polo",
+      "categorie": "Culture générale",
+      "question": "Dans quel conte un loup souffle-t-il sur des maisons de paille, de bois et de briques ?",
+      "reponse": "Les Trois Petits Cochons",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel poisson à voile est le plus rapide des mers ?",
-      "reponse": "Le voilier",
-      "niveau": 3
+      "categorie": "Mots et langue",
+      "question": "Petit de l'aigle ?",
+      "reponse": "L'aiglon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel mammifère marin blanc remonte le Saguenay ?",
-      "reponse": "Le béluga",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal à huit pattes tisse une toile ?",
-      "reponse": "L'araignée",
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on le médecin des animaux ?",
+      "reponse": "Le vétérinaire",
       "niveau": 1
     },
     {
@@ -80,68 +178,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gros animal brun dort tout l'hiver dans sa tanière ?",
-      "reponse": "L'ours",
+      "question": "Quel reptile porte une carapace sur son dos ?",
+      "reponse": "La tortue",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal terrestre est le plus lourd ?",
-      "reponse": "L'éléphant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel animal est surnommé le roi de la jungle ?",
-      "reponse": "Le lion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du sanglier ?",
-      "reponse": "La laie",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel est l'oiseau emblème du Québec ?",
-      "reponse": "Harfang des neiges",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal saute et transporte son bébé dans une poche ?",
-      "reponse": "Le kangourou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal a une trompe ?",
-      "reponse": "L'éléphant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du loup ?",
-      "reponse": "Le hurlement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un tigre qui bondit sur sa queue ?",
-      "reponse": "Tigrou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand oiseau du monde ?",
-      "reponse": "L'autruche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Féminin de loup ?",
-      "reponse": "Louve",
+      "question": "Quel animal construit des barrages dans les rivières ?",
+      "reponse": "Le castor",
       "niveau": 1
     }
   ]

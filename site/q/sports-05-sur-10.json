@@ -10,13 +10,22 @@
       "categorie": "Sports",
       "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
       "reponse": "Gary Carter",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Quel objet lourd lance-t-on en le faisant tournoyer ?",
       "reponse": "Le marteau",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -28,37 +37,66 @@
       "categorie": "Sports",
       "question": "Combien de coureurs dans un relais 4x100 ?",
       "reponse": "Quatre",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Comment nomme-t-on un circuit avec les buts remplis ?",
       "reponse": "Grand chelem",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Quel sport pratique Tiger Woods ?",
       "reponse": "Le golf",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Quelle ville canadienne a reçu les JO d'hiver de 1988 ?",
       "reponse": "Calgary",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Combien de points vaut un lancer franc au basketball ?",
       "reponse": "Un",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Dans quel sport parle-t-on de peloton ?",
       "reponse": "Le cyclisme",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -70,11 +108,16 @@
       "categorie": "Sports",
       "question": "Quel joueur de hockey est surnommé La Merveille ?",
       "reponse": "Wayne Gretzky",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle discipline de ski slalome entre des piquets ?",
+      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
       "reponse": "Le slalom",
       "niveau": 1
     },
@@ -88,19 +131,34 @@
       "categorie": "Sports",
       "question": "Combien de minutes dure un match de soccer ?",
       "reponse": "90",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Quel pilote québécois a donné son nom au circuit de Montréal ?",
       "reponse": "Gilles Villeneuve",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Combien de styles de nage existe-t-il en compétition ?",
       "reponse": "Quatre",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -110,9 +168,30 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport d'hiver canadien se joue avec un ballon et des balais ?",
+      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
       "reponse": "Le ballon-balai",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de table imite le soccer avec des joueurs fixés sur des tiges ?",
+      "reponse": "Le babyfoot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
+      "reponse": "Georges St-Pierre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Sports",
@@ -122,26 +201,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
-      "reponse": "Georges St-Pierre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport équestre saute des obstacles ?",
-      "reponse": "Saut d'obstacles",
+      "question": "Quelle discipline équestre fait franchir au cheval des barres à ne pas faire tomber ?",
+      "reponse": "Le saut d'obstacles",
       "niveau": 1
     },
     {
       "categorie": "Sports",
       "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
       "reponse": "Le surf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu de table imite le soccer avec des joueurs fixés sur des tiges ?",
-      "reponse": "Le babyfoot",
       "niveau": 1
     }
   ]

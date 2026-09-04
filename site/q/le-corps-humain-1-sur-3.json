@@ -7,46 +7,102 @@
   "emoji": "🧠",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel requin a terrorisé les plages en 1975 ?",
-      "reponse": "Les Dents de la mer",
-      "niveau": 2
+      "categorie": "Sciences et nature",
+      "question": "Quelle protéine transporte l'oxygène dans le sang ?",
+      "reponse": "L'hémoglobine",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit orange à peau veloutée cache un gros noyau ?",
-      "reponse": "La pêche",
+      "categorie": "Sciences et nature",
+      "question": "Combien de paires de côtes avons-nous ?",
+      "reponse": "Douze",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gala québécois récompense le cinéma ?",
+      "reponse": "Les Iris",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle peluche électronique aux grands yeux parlait toute seule en 1998 ?",
+      "reponse": "Le Furby",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel peintre s'est coupé une oreille ?",
+      "reponse": "Van Gogh",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel sucre trouve-t-on dans le sang ?",
+      "reponse": "Le glucose",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels os protègent les poumons ?",
+      "reponse": "Les côtes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel fromage frais grince sous la dent ?",
+      "reponse": "Fromage en grains",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie coûter les yeux de la tête ?",
+      "reponse": "Coûter très cher",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est le plus petit os du corps ?",
-      "reponse": "L'étrier",
-      "niveau": 2
+      "question": "Quelle partie de l'œil donne sa couleur ?",
+      "reponse": "L'iris",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel organe produit l'insuline ?",
-      "reponse": "Le pancréas",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de vertèbres a le cou d'une girafe ?",
-      "reponse": "Sept",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de dents de lait a un enfant ?",
-      "reponse": "20",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle est la fleur emblème du Québec ?",
-      "reponse": "Iris versicolore",
-      "niveau": 3
+      "question": "Quelles cellules du sang combattent les infections ?",
+      "reponse": "Globules blancs",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -56,87 +112,107 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal polaire a la peau noire sous son pelage blanc ?",
-      "reponse": "L'ours polaire",
-      "niveau": 2
+      "question": "Quel groupe sanguin est donneur universel ?",
+      "reponse": "O négatif",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat botté a de grands yeux attendrissants ?",
-      "reponse": "Chat Potté",
+      "categorie": "Sciences et nature",
+      "question": "Quels organes nous permettent de voir ?",
+      "reponse": "Les yeux",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien de côtés a un carré ?",
-      "reponse": "Quatre",
+      "categorie": "Québec",
+      "question": "Quelle est la fleur emblème du Québec ?",
+      "reponse": "Iris versicolore",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe pompe le sang ?",
+      "reponse": "Le cœur",
       "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie de la cellule contient l'ADN ?",
+      "reponse": "Le noyau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle vitamine fabrique la peau au soleil ?",
+      "reponse": "La vitamine D",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Pluriel de œil ?",
+      "reponse": "Yeux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel tube relie la bouche à l'estomac ?",
+      "reponse": "L'œsophage",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
       "question": "Quel liquide produit par le foie digère les graisses ?",
       "reponse": "La bile",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel organe contrôle tout le corps ?",
-      "reponse": "Le cerveau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus petite unité du vivant ?",
-      "reponse": "La cellule",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel gala québécois récompense le cinéma ?",
-      "reponse": "Les Iris",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Qui laisse de l'argent sous l'oreiller en échange d'une dent ?",
-      "reponse": "La fée des dents",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel chirurgien a réalisé la première greffe du cœur ?",
-      "reponse": "Christiaan Barnard",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quels organes nous permettent d'entendre ?",
-      "reponse": "Les oreilles",
+      "question": "Quel os protège le cerveau ?",
+      "reponse": "Le crâne",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est l'os le plus long du corps humain ?",
-      "reponse": "Le fémur",
-      "niveau": 1
+      "question": "Combien de chromosomes possède l'humain ?",
+      "reponse": "46",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle articulation relie la cuisse à la jambe ?",
-      "reponse": "Le genou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel peintre s'est coupé une oreille ?",
-      "reponse": "Van Gogh",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel muscle bat sans jamais se reposer ?",
-      "reponse": "Le cœur",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
+      "reponse": "Dans l'œil du dragon",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
     }
   ]
 }

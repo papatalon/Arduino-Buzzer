@@ -8,8 +8,8 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la plus petite unité du vivant ?",
-      "reponse": "La cellule",
+      "question": "Quel gaz les plantes absorbent-elles ?",
+      "reponse": "Le gaz carbonique",
       "niveau": 1
     },
     {
@@ -28,13 +28,12 @@
       "categorie": "Sciences et nature",
       "question": "Quel phénomène fait flotter les bateaux ?",
       "reponse": "Poussée d'Archimède",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle couche de gaz protège la Terre des UV ?",
-      "reponse": "La couche d'ozone",
-      "niveau": 1
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -44,9 +43,20 @@
     },
     {
       "categorie": "Sciences et nature",
+      "question": "Quelle couche de gaz protège la Terre des UV ?",
+      "reponse": "La couche d'ozone",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
       "question": "Quel est le symbole chimique du sodium ?",
       "reponse": "Na",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -62,14 +72,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel os protège le cerveau ?",
-      "reponse": "Le crâne",
+      "question": "Combien de poumons possède l'humain ?",
+      "reponse": "Deux",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de poumons possède l'humain ?",
-      "reponse": "Deux",
+      "question": "Quel os protège le cerveau ?",
+      "reponse": "Le crâne",
       "niveau": 1
     },
     {
@@ -88,19 +98,34 @@
       "categorie": "Sciences et nature",
       "question": "Quelle est la planète la plus proche du Soleil ?",
       "reponse": "Mercure",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient des barrages ?",
-      "reponse": "L'hydroélectricité",
-      "niveau": 1
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
       "question": "Combien de dents de lait a un enfant ?",
       "reponse": "20",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle énergie vient des barrages ?",
+      "reponse": "L'hydroélectricité",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -136,7 +161,12 @@
       "categorie": "Sciences et nature",
       "question": "Quel est le symbole chimique de l'hydrogène ?",
       "reponse": "H",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",

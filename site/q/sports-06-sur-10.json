@@ -8,33 +8,30 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quelle équipe canadienne a gagné la Série mondiale en 1992 ?",
-      "reponse": "Blue Jays",
-      "niveau": 2
+      "question": "Quel sport se joue avec un ballon qu'on frappe des mains par-dessus un filet ?",
+      "reponse": "Le volleyball",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel lanceur québécois a gagné un Cy Young ?",
+      "reponse": "Éric Gagné",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Quel sport combine natation, vélo et course ?",
       "reponse": "Le triathlon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel gardien québécois a popularisé le style papillon ?",
-      "reponse": "Patrick Roy",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de trous compte un parcours de golf complet ?",
-      "reponse": "18",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec un ballon qu'on frappe des mains par-dessus un filet ?",
-      "reponse": "Le volleyball",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -44,26 +41,45 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel quart-arrière a gagné sept Super Bowls ?",
-      "reponse": "Tom Brady",
+      "question": "Combien de trous compte un parcours de golf complet ?",
+      "reponse": "18",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
+      "reponse": "Orange",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "De quelle couleur est la veste du champion du Masters ?",
-      "reponse": "Verte",
-      "niveau": 2
+      "question": "Quel gardien québécois a popularisé le style papillon ?",
+      "reponse": "Patrick Roy",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel quart-arrière a gagné sept Super Bowls ?",
+      "reponse": "Tom Brady",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Quelle discipline olympique note des figures sur glace ?",
       "reponse": "Patinage artistique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport joue-t-on dans la rue avec une balle orange et des bâtons de hockey ?",
-      "reponse": "Le hockey de rue",
       "niveau": 1
     },
     {
@@ -74,39 +90,56 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel lanceur québécois a gagné un Cy Young ?",
-      "reponse": "Éric Gagné",
-      "niveau": 2
+      "question": "De quelle couleur est la veste du champion du Masters ?",
+      "reponse": "Verte",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel joueur brésilien est surnommé le Roi du soccer ?",
-      "reponse": "Pelé",
-      "niveau": 1
+      "question": "Quel sport mélange soccer et voiture dans un jeu vidéo ?",
+      "reponse": "Rocket League",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Où ont eu lieu les premiers Jeux olympiques modernes ?",
-      "reponse": "Athènes",
-      "niveau": 2
+      "question": "Quelle équipe canadienne a gagné la Série mondiale en 1992 ?",
+      "reponse": "Blue Jays",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Quel tournoi de tennis se joue sur terre battue à Paris ?",
       "reponse": "Roland-Garros",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport se pratique dans une piscine ?",
-      "reponse": "La natation",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
-      "reponse": "Tessa Virtue",
-      "niveau": 3
+      "question": "Où ont eu lieu les premiers Jeux olympiques modernes ?",
+      "reponse": "Athènes",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -116,9 +149,39 @@
     },
     {
       "categorie": "Sports",
+      "question": "Quel joueur brésilien est surnommé le Roi du soccer ?",
+      "reponse": "Pelé",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
+      "reponse": "Tessa Virtue",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se pratique dans une piscine ?",
+      "reponse": "La natation",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
       "question": "Combien de kilomètres fait un triathlon olympique à vélo ?",
       "reponse": "40",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -128,21 +191,25 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport mélange soccer et voiture dans un jeu vidéo ?",
-      "reponse": "Rocket League",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel maillot porte le meilleur grimpeur du Tour de France ?",
       "reponse": "À pois",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Quel tournoi de tennis se joue sur gazon à Londres ?",
       "reponse": "Wimbledon",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

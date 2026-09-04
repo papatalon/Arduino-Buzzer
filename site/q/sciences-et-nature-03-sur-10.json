@@ -10,7 +10,12 @@
       "categorie": "Sciences et nature",
       "question": "Quel naturaliste a proposé la théorie de l'évolution ?",
       "reponse": "Darwin",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -28,7 +33,12 @@
       "categorie": "Sciences et nature",
       "question": "Combien de paires de côtes avons-nous ?",
       "reponse": "Douze",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -62,27 +72,26 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel phénomène dessine sept couleurs dans le ciel après la pluie ?",
-      "reponse": "L'arc-en-ciel",
-      "niveau": 1
+      "question": "Combien de chromosomes possède l'humain ?",
+      "reponse": "46",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle vitamine fabrique la peau au soleil ?",
-      "reponse": "La vitamine D",
-      "niveau": 2
+      "question": "Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?",
+      "reponse": "L'arc-en-ciel",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
       "question": "Quel effet atmosphérique réchauffe la planète ?",
       "reponse": "L'effet de serre",
       "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de chromosomes possède l'humain ?",
-      "reponse": "46",
-      "niveau": 2
     },
     {
       "categorie": "Sciences et nature",
@@ -94,19 +103,34 @@
       "categorie": "Sciences et nature",
       "question": "Quel félin est le plus gros du monde ?",
       "reponse": "Le tigre",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
       "question": "De quel métal est principalement fait l'acier ?",
       "reponse": "Le fer",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel appareil transforme le vent en électricité ?",
-      "reponse": "L'éolienne",
-      "niveau": 1
+      "question": "Quelle vitamine fabrique la peau au soleil ?",
+      "reponse": "La vitamine D",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -116,8 +140,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel événement cache le Soleil derrière la Lune ?",
-      "reponse": "Une éclipse",
+      "question": "Quel appareil transforme le vent en électricité ?",
+      "reponse": "L'éolienne",
       "niveau": 1
     },
     {
@@ -130,6 +154,17 @@
       "categorie": "Sciences et nature",
       "question": "Quel insecte transmet la malaria ?",
       "reponse": "Le moustique",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel événement cache le Soleil derrière la Lune ?",
+      "reponse": "Une éclipse",
       "niveau": 1
     },
     {
@@ -146,8 +181,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gaz les plantes absorbent-elles ?",
-      "reponse": "Le gaz carbonique",
+      "question": "Quelle est la plus petite unité du vivant ?",
+      "reponse": "La cellule",
       "niveau": 1
     }
   ]

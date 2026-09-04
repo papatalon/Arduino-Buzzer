@@ -8,21 +8,34 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle voiture emblématique conduit James Bond ?",
-      "reponse": "Aston Martin",
-      "niveau": 2
+      "question": "Quel film de 1975 a vidé les plages avec son requin géant ?",
+      "reponse": "Les Dents de la mer",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel canard milliardaire plonge dans ses pièces d'or ?",
       "reponse": "Picsou",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Combien de pierres d'infinité orne le gant de Thanos ?",
       "reponse": "Six",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -32,14 +45,18 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Dans quel film Pixar une maison vole-t-elle avec des ballons ?",
-      "reponse": "Là-haut",
-      "niveau": 1
+      "question": "Quel boxeur de cinéma monte les marches de Philadelphie ?",
+      "reponse": "Rocky",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
-      "reponse": "King Kong",
+      "question": "Dans quel film Pixar une maison vole-t-elle avec des ballons ?",
+      "reponse": "Là-haut",
       "niveau": 1
     },
     {
@@ -58,19 +75,29 @@
       "categorie": "Cinéma et télé",
       "question": "Quel personnage de Sesame Street est un grand oiseau jaune ?",
       "reponse": "Big Bird",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
+      "reponse": "King Kong",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel film Pixar suit une voiture de course rouge ?",
       "reponse": "Les Bagnoles",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel boxeur de cinéma monte les marches de Philadelphie ?",
-      "reponse": "Rocky",
-      "niveau": 2
     },
     {
       "categorie": "Cinéma et télé",
@@ -82,7 +109,11 @@
       "categorie": "Cinéma et télé",
       "question": "Quel robot dit Hasta la vista, baby ?",
       "reponse": "Terminator",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -112,7 +143,11 @@
       "categorie": "Cinéma et télé",
       "question": "Quelle famille du futur a un robot ménagère nommée Rosie ?",
       "reponse": "Les Jetson",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -136,7 +171,11 @@
       "categorie": "Cinéma et télé",
       "question": "Quelle exploratrice a un singe nommé Babouche ?",
       "reponse": "Dora",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -148,7 +187,12 @@
       "categorie": "Cinéma et télé",
       "question": "Quel film d'animation raconte un garçon qui rejoint le pays des morts avec sa guitare ?",
       "reponse": "Coco",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     }
   ]
 }

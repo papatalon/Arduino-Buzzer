@@ -7,154 +7,228 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "En quelle année le Titanic a-t-il coulé ?",
-      "reponse": "1912",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Masculin de poule ?",
-      "reponse": "Le coq",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quels quatre frères bandits affrontent Lucky Luke ?",
-      "reponse": "Les Dalton",
+      "question": "Quel cochon de cinéma veut devenir chien de berger ?",
+      "reponse": "Babe",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est l'os le plus long du corps humain ?",
+      "reponse": "Le fémur",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes traverse la Suisse ?",
+      "reponse": "Les Alpes",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
+      "reponse": "Michel Louvain",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
-      "question": "Quelle orpheline rousse vit aux Pignons verts ?",
-      "reponse": "Anne",
+      "question": "Quelle science étudie les vestiges anciens ?",
+      "reponse": "L'archéologie",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie lâcher son fou ?",
-      "reponse": "S'amuser follement",
+      "question": "Quel est le contraire de haut ?",
+      "reponse": "Bas",
       "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle date exacte est le jour J ?",
+      "reponse": "Le 6 juin 1944",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne la pièce de 25 cents ?",
-      "reponse": "Un trente sous",
-      "niveau": 2
+      "question": "Quel petit poisson pêche-t-on sous la glace à La Pérade ?",
+      "reponse": "Le poulamon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "À quelle famille d'instruments appartient la flûte ?",
-      "reponse": "Les bois",
-      "niveau": 3
+      "question": "Quelle chanteuse canadienne a chanté Call Me Maybe ?",
+      "reponse": "Carly Rae Jepsen",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson pétillante est du thé fermenté ?",
-      "reponse": "Le kombucha",
-      "niveau": 1
+      "question": "Quelle pomme de terre frite est en spirale ?",
+      "reponse": "Frite tornade",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel chanteur belge a chanté Ne me quitte pas ?",
-      "reponse": "Jacques Brel",
-      "niveau": 2
+      "categorie": "Cinéma et télé",
+      "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
+      "reponse": "Le Banquier",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse est surnommée Queen B ?",
-      "reponse": "Beyoncé",
+      "categorie": "Sports",
+      "question": "Quel club anglais est surnommé les Diables rouges ?",
+      "reponse": "Manchester United",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment nomme-t-on un hot-dog cuit à la vapeur au Québec ?",
+      "reponse": "Un steamé",
       "niveau": 1
     },
     {
       "categorie": "Sports",
       "question": "Quelle ligne rouge coupe la patinoire en deux ?",
       "reponse": "Ligne centrale",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal marin peut régénérer ses bras ?",
-      "reponse": "L'étoile de mer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot nouveau ?",
-      "reponse": "Un néologisme",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mont de l'Estrie abrite un observatoire célèbre ?",
-      "reponse": "Le mont Mégantic",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle politique canadienne date de la loi de 1969 ?",
-      "reponse": "Le bilinguisme",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle déesse grecque a donné son nom à Athènes ?",
-      "reponse": "Athéna",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Ontario ?",
-      "reponse": "Toronto",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon a une casquette rouge et chasse des Pokémon ?",
-      "reponse": "Sacha",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui a fondé la ville de Québec en 1608 ?",
-      "reponse": "Champlain",
+      "question": "Quelle est la durée d'une année sur Terre ?",
+      "reponse": "365 jours",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boulette de poulpe japonaise est une collation ?",
-      "reponse": "Le takoyaki",
-      "niveau": 3
+      "question": "Pays d'origine du croissant ?",
+      "reponse": "La France",
+      "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle amie brillante accompagne Harry et Ron ?",
-      "reponse": "Hermione",
+      "categorie": "Culture pop",
+      "question": "Quelle marque de bonbons colorés fond dans la bouche, pas dans la main ?",
+      "reponse": "Les M&M's",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Dans quel sport utilise-t-on un maillet à cheval ?",
-      "reponse": "Le polo",
+      "question": "Quel sport de combat n'utilise que les poings ?",
+      "reponse": "La boxe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style musical est né à la Nouvelle-Orléans ?",
+      "reponse": "Le jazz",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel empire avait Rome pour capitale ?",
+      "reponse": "L'Empire romain",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient du Soleil ?",
-      "reponse": "L'énergie solaire",
-      "niveau": 1
+      "question": "Quel est le symbole chimique de l'oxygène ?",
+      "reponse": "O",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat hongrois est un ragoût au paprika ?",
-      "reponse": "Le goulasch",
-      "niveau": 2
+      "categorie": "Musique",
+      "question": "Quelle ville américaine est la capitale du country ?",
+      "reponse": "Nashville",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie tourner autour du pot ?",
+      "reponse": "Hésiter à parler",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel dieu grec messager porte des sandales ailées ?",
+      "reponse": "Hermès",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Colisée ?",
-      "reponse": "L'Italie",
-      "niveau": 1
+      "question": "Capitale de la Colombie-Britannique ?",
+      "reponse": "Victoria",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

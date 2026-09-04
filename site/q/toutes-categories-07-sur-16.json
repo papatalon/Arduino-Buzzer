@@ -7,153 +7,248 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'ensemble des histoires des dieux et des héros grecs ?",
-      "reponse": "La mythologie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment dit-on « bonjour » en anglais ?",
-      "reponse": "Hello",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
-      "question": "Quel comédien incarne Elvis Gratton ?",
-      "reponse": "Julien Poulin",
-      "niveau": 2
+      "question": "Où fabrique-t-on le sirop d'érable ?",
+      "reponse": "À la cabane à sucre",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de raquette au nom de cornichon est en plein essor ?",
-      "reponse": "Le pickleball",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville des États-Unis ?",
-      "reponse": "New York",
-      "niveau": 1
+      "question": "Quel maillot porte le meneur du Tour de France ?",
+      "reponse": "Le maillot jaune",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel empereur romain a légalisé le christianisme ?",
-      "reponse": "Constantin",
-      "niveau": 3
+      "question": "Quel animal a allaité Romulus et Rémus ?",
+      "reponse": "Une louve",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle céréale est la base de l'alimentation en Asie ?",
-      "reponse": "Le riz",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays d'Europe est célèbre pour ses montres, son chocolat et ses Alpes ?",
-      "reponse": "La Suisse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle station spatiale russe a précédé l'ISS ?",
-      "reponse": "Mir",
-      "niveau": 3
+      "categorie": "Culture pop",
+      "question": "Quel appareil branché à la ligne téléphonique faisait des bruits stridents pour se connecter ?",
+      "reponse": "Le modem",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal marin a trois cœurs ?",
-      "reponse": "La pieuvre",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de cartes dans un jeu standard sans jokers ?",
-      "reponse": "52",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de montagne grimpe des parois gelées à crampons ?",
-      "reponse": "L'alpinisme",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel poète-chanteur canadien a écrit Hallelujah ?",
-      "reponse": "Leonard Cohen",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on au Québec la maison de vacances au bord d'un lac ?",
-      "reponse": "Le chalet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport olympique mélange saut à ski et ski de fond ?",
-      "reponse": "Combiné nordique",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel magicien conseillait le roi Arthur ?",
-      "reponse": "Merlin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson orange est populaire en sushi ?",
-      "reponse": "Le saumon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel objet empoisonné croque Blanche-Neige ?",
-      "reponse": "Une pomme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle fleur jaune devient une boule de duvet qu'on souffle ?",
-      "reponse": "Le pissenlit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel océan borde la côte est du Canada ?",
-      "reponse": "L'Atlantique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de dents de lait a un enfant ?",
-      "reponse": "20",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri de l'éléphant ?",
-      "reponse": "Le barrissement",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel est le matricule de James Bond ?",
-      "reponse": "007",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Dans quel palais londonien vit le roi d'Angleterre ?",
-      "reponse": "Buckingham",
+      "question": "Comment s'appelle le centre de la Terre ?",
+      "reponse": "Le noyau",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse de la Barbade a chanté Umbrella ?",
-      "reponse": "Rihanna",
+      "question": "Quel duo français portait des casques de robots ?",
+      "reponse": "Daft Punk",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Combien de régions administratives compte le Québec ?",
+      "reponse": "17",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Suède ?",
+      "reponse": "Stockholm",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir de l'eau dans la cave ?",
+      "reponse": "Pantalon trop court",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quels frères ont inventé le cinématographe ?",
+      "reponse": "Les frères Lumière",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel pichet souriant défonce les murs en criant « Oh yeah » ?",
+      "reponse": "Le pichet Kool-Aid",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel petit disque optique a remplacé la cassette ?",
+      "reponse": "Le CD",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel acteur joue Jack dans Titanic ?",
+      "reponse": "Leonardo DiCaprio",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle péninsule abrite Espagne et Portugal ?",
+      "reponse": "Ibérique",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la femelle du singe ?",
+      "reponse": "La guenon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle autrice a écrit Harry Potter ?",
+      "reponse": "J.K. Rowling",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel nom porte le jalapeño fumé ?",
+      "reponse": "Chipotle",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal est le plus gros rongeur du monde ?",
+      "reponse": "Le capybara",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine du pad thaï ?",
+      "reponse": "La Thaïlande",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle fleur figure sur le drapeau de Montréal ?",
+      "reponse": "Fleur de lys",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel jeu mobile fait attraper des créatures en marchant dans la vraie ville ?",
+      "reponse": "Pokémon GO",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit des détenues ?",
+      "reponse": "Unité 9",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle algue enroule les makis ?",
+      "reponse": "Le nori",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du corbeau ?",
+      "reponse": "Le croassement",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport dit-on échec et mat ?",
+      "reponse": "Les échecs",
       "niveau": 1
     }
   ]

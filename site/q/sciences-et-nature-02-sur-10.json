@@ -46,24 +46,34 @@
       "categorie": "Sciences et nature",
       "question": "Qui a développé la théorie de la relativité ?",
       "reponse": "Einstein",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle chenille fabrique un fil précieux en tissant son cocon ?",
+      "reponse": "Le ver à soie",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
       "question": "Quelle est la vitesse approximative de la lumière ?",
       "reponse": "300 000 km/s",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
       "question": "Quelle est la température du corps humain en santé ?",
       "reponse": "37 degrés C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal produit de la soie ?",
-      "reponse": "Le ver à soie",
       "niveau": 1
     },
     {
@@ -76,7 +86,12 @@
       "categorie": "Sciences et nature",
       "question": "Quelle scientifique a étudié la radioactivité ?",
       "reponse": "Marie Curie",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -88,7 +103,12 @@
       "categorie": "Sciences et nature",
       "question": "Contre quelle maladie Pasteur a-t-il créé un vaccin ?",
       "reponse": "La rage",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -100,7 +120,11 @@
       "categorie": "Sciences et nature",
       "question": "Quelle est la plus grande lune de Saturne ?",
       "reponse": "Titan",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -130,11 +154,16 @@
       "categorie": "Sciences et nature",
       "question": "Quelle unité mesure la fréquence ?",
       "reponse": "Le hertz",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "De quel arbre tire-t-on le sirop d'érable ?",
+      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
       "reponse": "L'érable",
       "niveau": 1
     },
@@ -142,13 +171,23 @@
       "categorie": "Sciences et nature",
       "question": "Comment s'appelle le passage de gaz à liquide ?",
       "reponse": "La condensation",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
       "question": "Quel est le plus petit os du corps ?",
       "reponse": "L'étrier",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

@@ -10,7 +10,11 @@
       "categorie": "Cinéma et télé",
       "question": "Quelle série coréenne met en scène des jeux mortels ?",
       "reponse": "Squid Game",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -38,15 +42,19 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel animal est l'Âne dans Shrek ?",
-      "reponse": "Un âne",
+      "question": "Quel animal de ferme, très bavard, accompagne Shrek partout ?",
+      "reponse": "L'âne",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quelle série américaine suit un bureau de vente de papier ?",
       "reponse": "The Office",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -70,7 +78,11 @@
       "categorie": "Cinéma et télé",
       "question": "Quelle nounou anglaise vole avec un parapluie ?",
       "reponse": "Mary Poppins",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -88,13 +100,21 @@
       "categorie": "Cinéma et télé",
       "question": "Quelle famille préhistorique conduit une voiture à pédales ?",
       "reponse": "Les Pierrafeu",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel acteur écossais fut le premier James Bond ?",
       "reponse": "Sean Connery",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -106,19 +126,29 @@
       "categorie": "Cinéma et télé",
       "question": "Quel médecin grincheux de série boite avec une canne ?",
       "reponse": "Dr House",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel chiot dalmatien de la Pat' Patrouille est pompier ?",
       "reponse": "Marcus",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "enfants"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
       "reponse": "Les Plouffe",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -134,27 +164,43 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel requin a terrorisé les plages en 1975 ?",
-      "reponse": "Les Dents de la mer",
-      "niveau": 2
+      "question": "Quel chien accompagne Dorothy dans le Magicien d'Oz ?",
+      "reponse": "Toto",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel garçon dirige la Pat' Patrouille ?",
       "reponse": "Ryder",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "enfants"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quelle série animée japonaise suit Son Goku ?",
       "reponse": "Dragon Ball",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel chien accompagne Dorothy dans le Magicien d'Oz ?",
-      "reponse": "Toto",
-      "niveau": 2
+      "question": "Quelle voiture emblématique conduit James Bond ?",
+      "reponse": "Aston Martin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

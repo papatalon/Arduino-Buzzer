@@ -7,154 +7,235 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Géographie",
-      "question": "Quel volcan célèbre domine le Japon ?",
-      "reponse": "Le mont Fuji",
-      "niveau": 2
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on celui qui écrit des poèmes ?",
-      "reponse": "Un poète",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel tournoi du grand chelem se joue à New York ?",
-      "reponse": "Le US Open",
-      "niveau": 2
+      "question": "Combien de pays ont le français comme langue officielle : 9, 29 ou 59 ?",
+      "reponse": "29",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelles îles québécoises sont au milieu du golfe ?",
-      "reponse": "Îles de la Madeleine",
-      "niveau": 1
+      "question": "Quel pont cantilever centenaire relie Québec et Lévis ?",
+      "reponse": "Le pont de Québec",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel événement montréalais ferme des rues chaque été pour des spectacles gratuits ?",
+      "reponse": "Le Festival de jazz",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel philosophe fut l'élève de Socrate ?",
-      "reponse": "Platon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
-      "reponse": "La Finlande",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Comment nomme-t-on un 1 suivi de neuf zéros ?",
-      "reponse": "Un milliard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Nouveau-Brunswick ?",
-      "reponse": "Fredericton",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel trophée remporte le champion de la LCF ?",
-      "reponse": "La coupe Grey",
-      "niveau": 1
+      "question": "Quelle cité antique a été détruite par le Vésuve ?",
+      "reponse": "Pompéi",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel acteur joue Jack dans Titanic ?",
-      "reponse": "Leonardo DiCaprio",
+      "question": "Dans quel film de Noël un garçon oublié à la maison piège deux cambrioleurs ?",
+      "reponse": "Maman, j'ai raté l'avion",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel équipement protège la tête à vélo et au hockey ?",
-      "reponse": "Le casque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quels frères ont inventé l'avion ?",
-      "reponse": "Les frères Wright",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle protéine transporte l'oxygène dans le sang ?",
-      "reponse": "L'hémoglobine",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle entrée italienne est du pain grillé garni ?",
-      "reponse": "La bruschetta",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle famille préhistorique conduit une voiture à pédales ?",
-      "reponse": "Les Pierrafeu",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle centrale nucléaire a explosé en 1986 ?",
-      "reponse": "Tchernobyl",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport marque-t-on des essais ?",
-      "reponse": "Le rugby",
-      "niveau": 2
+      "question": "Combien de billes rouges au snooker ?",
+      "reponse": "Quinze",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Combien de touches sur un piano standard ?",
-      "reponse": "88",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle fête des déguisements a lieu le 31 octobre ?",
-      "reponse": "L'Halloween",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la moussaka ?",
-      "reponse": "La Grèce",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a fondé Facebook en 2004 ?",
-      "reponse": "Mark Zuckerberg",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel grand félin a des rayures orange et noires ?",
-      "reponse": "Le tigre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de membres comptaient les Beatles ?",
-      "reponse": "Quatre",
-      "niveau": 1
+      "question": "Quel compositeur allemand est devenu sourd ?",
+      "reponse": "Beethoven",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie « être rouge comme une tomate » ?",
-      "reponse": "Être gêné",
+      "question": "Le pluriel de bijou prend un S ou un X ?",
+      "reponse": "Un X",
       "niveau": 1
     },
     {
+      "categorie": "Histoire",
+      "question": "Quelle crise économique a suivi le krach de 1929 ?",
+      "reponse": "La Grande Dépression",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel soldat Marvel porte un bouclier étoilé ?",
+      "reponse": "Captain America",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de glisse se pratique à plat ventre ?",
+      "reponse": "Le skeleton",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir un chat dans la gorge ?",
+      "reponse": "Être enroué",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel programme de récompenses accumule des points bleus chez plusieurs commerçants ?",
+      "reponse": "Air Miles",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte russe est un petit chausson farci ?",
+      "reponse": "Le pirojki",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle fillette rousse aux nattes tressées est la plus forte du monde ?",
+      "reponse": "Fifi Brindacier",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson gazeuse au gingembre est célèbre au Canada ?",
+      "reponse": "Le ginger ale (Canada Dry)",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel immense pays occupe la moitié de l'Amérique du Sud ?",
+      "reponse": "Le Brésil",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel chiffre porte malheur en Occident ?",
+      "reponse": "13",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel format de disque tourne à 33 tours ?",
+      "reponse": "Le vinyle",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle est la fleur emblème du Québec ?",
+      "reponse": "Iris versicolore",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Sciences et nature",
-      "question": "Combien de cœurs possède un ver de terre ?",
-      "reponse": "Cinq",
-      "niveau": 3
+      "question": "Quel oiseau noir et blanc de l'Antarctique ne sait pas voler ?",
+      "reponse": "Le manchot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays est surnommé la botte de l'Europe ?",
+      "reponse": "L'Italie",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a écrit Les Misérables ?",
+      "reponse": "Victor Hugo",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sandwich grec est garni de viande à la broche ?",
+      "reponse": "Le pita (gyros)",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel grand singe est le plus proche de l'homme ?",
+      "reponse": "Le chimpanzé",
+      "niveau": 1
     }
   ]
 }

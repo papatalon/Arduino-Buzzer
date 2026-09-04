@@ -1,0 +1,205 @@
+{
+  "format": "buzzer-questionnaire",
+  "version": 1,
+  "titre": "7 à 77 ans 15 sur 40",
+  "note": "Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, toutes catégories confondues. Manche 15 sur 40.",
+  "collection": "7 à 77 ans",
+  "emoji": "🎈",
+  "questions": [
+    {
+      "categorie": "Musique",
+      "question": "Quelle note vient après le fa ?",
+      "reponse": "Le sol",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quel continent se trouve le pôle Sud ?",
+      "reponse": "L'Antarctique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
+      "reponse": "Le Banquier",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel acteur incarne Rocky Balboa ?",
+      "reponse": "Stallone",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle vague géante suit parfois un séisme ?",
+      "reponse": "Le tsunami",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel objet lance-t-on sur la glace après un tour du chapeau ?",
+      "reponse": "Des chapeaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Comment appelle-t-on les jeux vidéo joués en compétition professionnelle ?",
+      "reponse": "L'esport",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle entreprise japonaise a créé Mario et Zelda ?",
+      "reponse": "Nintendo",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mois de 1970 a connu l'enlèvement de Pierre Laporte ?",
+      "reponse": "Octobre",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel champignon de luxe est déterré par des chiens ?",
+      "reponse": "La truffe",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel rat cuisine dans un grand restaurant parisien ?",
+      "reponse": "Rémy",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle mer sépare l'Europe de l'Afrique ?",
+      "reponse": "La Méditerranée",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le seul mammifère volant ?",
+      "reponse": "La chauve-souris",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle science étudie les plantes ?",
+      "reponse": "La botanique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie prendre ses jambes à son cou ?",
+      "reponse": "S'enfuir vite",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel palindrome de trois lettres exprime un refus ?",
+      "reponse": "Non",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple de l'Antiquité a inventé les Jeux olympiques ?",
+      "reponse": "Les Grecs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "De quoi est fait le tofu ?",
+      "reponse": "Du soja",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel film culte parle d'une guerre de balles de neige ?",
+      "reponse": "La Guerre des tuques",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du chat ?",
+      "reponse": "Le chaton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment nomme-t-on une roche tombée de l'espace ?",
+      "reponse": "Une météorite",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel hymne national commence par les mots « terre de nos aïeux » ?",
+      "reponse": "Ô Canada",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel objet rond et gonflé frappe-t-on à la volée sur la plage ?",
+      "reponse": "Le ballon de plage",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de dalmatiens dans le film de Disney ?",
+      "reponse": "101",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boulette frite du Moyen-Orient est aux pois chiches ?",
+      "reponse": "Le falafel",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    }
+  ]
+}

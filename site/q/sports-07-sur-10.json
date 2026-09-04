@@ -8,21 +8,30 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel sport pratique la famille Hart de Calgary ?",
-      "reponse": "La lutte",
-      "niveau": 3
+      "question": "Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?",
+      "reponse": "Le football",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel saut utilise une longue perche ?",
-      "reponse": "Saut à la perche",
-      "niveau": 1
+      "question": "Quel sport pratique la famille Hart de Calgary ?",
+      "reponse": "La lutte",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Tous les combien d'années a lieu la Coupe du monde de soccer ?",
       "reponse": "Quatre ans",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -32,32 +41,59 @@
     },
     {
       "categorie": "Sports",
-      "question": "Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?",
-      "reponse": "Le football",
+      "question": "Quelle épreuve d'athlétisme fait franchir une barre très haute à l'aide d'une longue tige souple ?",
+      "reponse": "Le saut à la perche",
       "niveau": 1
     },
     {
       "categorie": "Sports",
       "question": "Quelle course olympique est la plus courte ?",
       "reponse": "Le 100 mètres",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de joueurs par équipe au basketball ?",
+      "reponse": "Cinq",
       "niveau": 1
     },
     {
       "categorie": "Sports",
       "question": "Quel art martial coréen privilégie les coups de pied ?",
       "reponse": "Le taekwondo",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de touches maximum par équipe au volleyball ?",
-      "reponse": "Trois",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Quel jeu de cour d'école consiste à courir après les autres pour les toucher ?",
       "reponse": "La tag",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle ligne rouge coupe la patinoire en deux ?",
+      "reponse": "Ligne centrale",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport olympique descend un couloir de glace sur le dos ?",
+      "reponse": "La luge",
       "niveau": 1
     },
     {
@@ -68,15 +104,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport olympique descend un couloir de glace sur le dos ?",
-      "reponse": "La luge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle ligne rouge coupe la patinoire en deux ?",
-      "reponse": "Ligne centrale",
-      "niveau": 1
+      "question": "Combien de touches maximum par équipe au volleyball ?",
+      "reponse": "Trois",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -92,33 +127,45 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au basketball ?",
-      "reponse": "Cinq",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel coureur canadien a perdu son titre olympique en 1988 ?",
       "reponse": "Ben Johnson",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Quel comité organise les Jeux olympiques ?",
       "reponse": "Le CIO",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Quel basketteur légendaire portait le 23 des Bulls ?",
       "reponse": "Michael Jordan",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Quel sport de raquette utilise une petite balle noire ?",
       "reponse": "Le squash",
-      "niveau": 2
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -130,19 +177,32 @@
       "categorie": "Sports",
       "question": "Dans quel sport porte-t-on un fleuret et un masque ?",
       "reponse": "L'escrime",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Quelle gymnaste a obtenu le premier 10 parfait ?",
       "reponse": "Nadia Comăneci",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Combien de joueurs par équipe au water-polo ?",
       "reponse": "Sept",
-      "niveau": 3
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }
