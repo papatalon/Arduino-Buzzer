@@ -87,10 +87,12 @@ void Mp3::initializeMP3Arrays(void)
   for (int i = 0; i < FOLDER_COUNT; i++)
   {
     int folderId = i + 1;
-    int count = getFileCount(folderId);   // valeur de repli (#define)
+    int count = getFileCount(folderId);   // #define : en pratique, LA valeur retenue
 
-    // Sur le vrai matériel, on demande au DFPlayer le nombre réel de
-    // fichiers présents dans le dossier de la carte SD.
+    // On demande quand même au DFPlayer le nombre réel de fichiers, au cas
+    // où le module serait un jour remplacé par un qui répond. Celui qui est
+    // installé renvoie toujours -1, comme beaucoup de clones : c'est donc le
+    // #define ci-dessus qui sert, et lui qu'il faut monter à chaque ajout.
     if (!simulation) {
       int detected = mp3.readFileCountsInFolder(folderId);
       if (detected > 0) {

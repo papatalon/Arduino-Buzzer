@@ -43,9 +43,15 @@ voulue : vérifier **d'où vient le rognage** avant de l'accepter. Couper
 que l'animateur annonce par-dessus.
 
 **Les compteurs du firmware.** `Mp3.h` ne connaît la banque que par ses
-`*_FILE_COUNT`. L'app, elle, compte ses assets à l'exécution via le
-manifeste : elle n'a besoin que d'un rebuild. Oublier les `#define` fait
-tirer au Mega un fichier qui n'existe pas.
+`*_FILE_COUNT`. Le firmware demande bien au démarrage combien de fichiers
+contient chaque dossier, mais le module DFPlayer installé ne répond jamais
+à cette requête : ces `#define` ne sont donc PAS des valeurs de repli, ce
+sont les seuls nombres qui comptent. Trop hauts, ils font tirer au Mega un
+fichier qui n'existe pas ; trop bas, ils rendent les nouveaux sons
+inatteignables, sans erreur ni trace au journal. Dans les deux cas il faut
+**reflasher** : un ajout de sons n'est pas livré tant que le Mega n'a pas
+reçu le nouveau firmware. L'app, elle, compte ses assets à l'exécution via
+le manifeste : elle n'a besoin que d'un rebuild.
 
 ## Le standard de la banque
 
