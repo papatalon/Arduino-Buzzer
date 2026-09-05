@@ -14,9 +14,9 @@
 # thématique est un jugement sur le sujet de la question, du même ordre que sa
 # catégorie, et la catégorie n'a jamais été devinée.
 #
-# Les treize slugs : noel, quebec-ailleurs, regne-animal, espace,
-# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
-# transports, disney, nostalgie. Un slug inconnu arrête la génération.
+# Les douze slugs : noel, regne-animal, espace, corps-humain, super-heros,
+# creatures, sports-hiver, regne-vegetal, mer, transports, disney,
+# nostalgie. Un slug inconnu arrête la génération.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -50,22 +50,17 @@ Quel concours de Tim Hortons fait dérouler le rebord d'un gobelet ?|Roll Up the
 Quel programme de récompenses accumule des points bleus chez plusieurs commerçants ?|Air Miles|3|adultes aines
 Quelle friperie à grande surface porte un nom qui parle de valeurs ?|Le Village des Valeurs|2|adultes aines
 Quelle carte à puce sert à payer le métro et l'autobus à Montréal ?|La carte Opus|2|ados adultes aines
-@ quebec-ailleurs
 @ transports
 Quel service de vélos en libre-service porte un nom né de bicyclette et de taxi ?|Bixi|2|ados adultes
 @ transports
 Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?|Le REM|3|ados adultes aines
-@ quebec-ailleurs
 @ transports
 Quel organisme québécois délivre les permis de conduire et les plaques ?|La SAAQ|2|adultes aines
-@ quebec-ailleurs
 @ transports
 #
 # --- La route et les vacances ---
 Quel objet orange envahit les rues de Montréal chaque été ?|Le cône|2|ados adultes aines
-@ quebec-ailleurs
 Quelle plage du Maine est la destination classique des vacances québécoises ?|Old Orchard|2|adultes aines
-@ quebec-ailleurs
 Quel engin motorisé souffle la neige des entrées de garage l'hiver ?|La souffleuse|2|adultes aines
 Quel type de piscine se monte dans la cour sans creuser le sol ?|La piscine hors terre|2|adultes aines
 Quelle petite maison de jardin range les outils et la tondeuse ?|Le cabanon|2|adultes aines
@@ -74,39 +69,25 @@ Quel véhicule récréatif se tire derrière l'auto pour camper ?|La roulotte|2|
 #
 # --- Médias écrits et radio ---
 Quel quotidien montréalais a imprimé sa dernière édition en 2017 pour passer à la tablette ?|La Presse|3|adultes aines
-@ quebec-ailleurs
 Quel quotidien québécois porte le nom d'une obligation morale ?|Le Devoir|3|adultes aines
-@ quebec-ailleurs
 Quel magazine québécois publie chaque semaine les potins des vedettes ?|Le 7 Jours|3|adultes aines
-@ quebec-ailleurs
 Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?|Coup de Pouce|3|adultes aines
-@ quebec-ailleurs
 #
 # --- Vedettes d'ici ---
 Quel chef québécois donne son prénom à un magazine, une émission et une gamme de produits ?|Ricardo|2|adultes aines
-@ quebec-ailleurs
 Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?|Josée di Stasio|3|adultes aines
-@ quebec-ailleurs
 Quelle autrice et animatrice québécoise a abordé les tabous à la télé pendant des décennies ?|Janette Bertrand|3|aines
-@ quebec-ailleurs
 @ nostalgie
 Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?|Michel Louvain|3|aines
-@ quebec-ailleurs
 @ nostalgie
 Qui était le gérant et le mari de Céline Dion ?|René Angélil|2|adultes aines
-@ quebec-ailleurs
 Quel animateur québécois mène une émission de musique en direct avec un band maison ?|Normand Brathwaite|3|adultes aines
-@ quebec-ailleurs
 Quel humoriste québécois d'origine marocaine raconte sa famille sur scène ?|Rachid Badouri|3|ados adultes
-@ quebec-ailleurs
 Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?|Mariana Mazza|3|ados adultes
-@ quebec-ailleurs
 Quel duo d'humoristes québécois joue de la guitare en habit brun ?|Les Denis Drolet|3|adultes
-@ quebec-ailleurs
 #
 # --- Modes et décennies ---
 Comment appelle-t-on au Québec la coupe de cheveux courte devant et longue derrière ?|La coupe Longueuil|2|ados adultes aines
-@ quebec-ailleurs
 Quelle danse des années 70 se pratiquait sous une boule miroir, en pantalon patte d'éléphant ?|Le disco|2|adultes aines
 Quel accessoire rembourré élargissait les épaules des vestons dans les années 80 ?|L'épaulette|3|adultes aines
 Quel traitement de coiffure des années 80 frisait les cheveux pour des mois ?|La permanente|3|adultes aines
@@ -119,11 +100,8 @@ Quel meuble de salon se déplie en lit pour la visite ?|Le divan-lit|2|adultes a
 # --- Habitudes et traditions ---
 Quel appareil au propane sort sur le balcon dès les premiers beaux jours ?|Le barbecue|1|enfants ados adultes aines
 Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?|La fin de semaine des Patriotes|3|adultes aines
-@ quebec-ailleurs
 Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?|La tire sur la neige|1|enfants ados adultes aines
-@ quebec-ailleurs
 Quel événement montréalais ferme des rues chaque été pour des spectacles gratuits ?|Le Festival de jazz|2|ados adultes aines
-@ quebec-ailleurs
 Quel rassemblement de percussionnistes a lieu au pied du mont Royal le dimanche ?|Les tam-tams|3|ados adultes
 #
 # --- Argent et petites habitudes ---
@@ -184,9 +162,7 @@ Quel camion de course rouge et bleu affronte Crusher dans une série pour enfant
 @ transports
 Quels ninjas de Lego portent chacun une couleur et un élément ?|Ninjago|2|enfants ados
 Quelle émission jeunesse québécoise est revenue à la télé en 2019, trente ans après ?|Passe-Partout|2|enfants ados adultes
-@ quebec-ailleurs
 Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?|Cracké|3|enfants ados
-@ quebec-ailleurs
 @ regne-animal
 #
 # --- Jeux et internet des enfants ---
@@ -257,20 +233,14 @@ Quelle entreprise japonaise a créé Mario et Zelda ?|Nintendo|1|enfants ados ad
 #
 # --- Slogans et enseignes d'ici ---
 Quelle pharmacie québécoise promet qu'on y trouve de tout, même un ami ?|Jean Coutu|2|adultes aines
-@ quebec-ailleurs
 Quel chocolat garde un secret que sa publicité refuse de dévoiler ?|Le Caramilk|2|ados adultes aines
 Quel magasin canadien remet à ses clients une fausse monnaie imprimée ?|Canadian Tire|2|ados adultes aines
 Quelle chaîne de restaurants québécoise s'est bâtie sur le déjeuner ?|Cora|2|adultes aines
-@ quebec-ailleurs
 Quelle société d'État a le monopole de la vente d'alcool au Québec ?|La SAQ|1|ados adultes aines
-@ quebec-ailleurs
 Quelle société d'État tire les loteries au Québec ?|Loto-Québec|1|ados adultes aines
-@ quebec-ailleurs
 Quel magasin à un dollar a été fondé à Matane en 1992 ?|Dollarama|3|adultes aines
 Quel grand magasin de vêtements québécois porte un nom de famille ?|Simons|2|adultes aines
-@ quebec-ailleurs
 Quelle chaîne de café québécoise porte le nom de son fondateur ?|Van Houtte|3|adultes aines
-@ quebec-ailleurs
 #
 # --- Mascottes de publicité ---
 Quel homme chauve à boucle d'oreille nettoie tout dans les publicités ?|Monsieur Net|2|adultes aines
@@ -296,7 +266,6 @@ Quelle marque de slush colorée se vend chez Couche-Tard ?|Sloche|2|ados adultes
 Quelle boisson en poudre se mélange à l'eau et se boit très sucrée ?|Le Kool-Aid|2|enfants ados adultes aines
 Quelle boisson pour sportifs a un éclair dans son logo ?|Le Gatorade|1|enfants ados adultes
 Quelle marque de croustilles québécoise répète deux fois la même syllabe ?|Yum Yum|2|ados adultes aines
-@ quebec-ailleurs
 #
 # --- Restaurants ---
 Quelle chaîne de sandwichs fait choisir son pain et ses garnitures au comptoir ?|Subway|1|enfants ados adultes aines
@@ -321,7 +290,6 @@ Quelles chaussures de caoutchouc percées de trous divisent la planète ?|Les Cr
 Quelles espadrilles de toile montantes portent une étoile sur la cheville ?|Les Converse|2|ados adultes aines
 Quelles bottes anglaises à coutures jaunes sont un classique punk ?|Les Doc Martens|3|ados adultes aines
 Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?|Quétaine|2|ados adultes aines
-@ quebec-ailleurs
 #
 # ─── culture-pop-quotidien ───
 #
@@ -352,16 +320,13 @@ Quel jeu retire une chaise à chaque tour pendant que la musique joue ?|La chais
 Quelle boule couverte de miroirs tourne au plafond des soirées dansantes ?|La boule disco|2|ados adultes aines
 Quel jeu de hasard fait cocher des cases en écoutant des numéros criés ?|Le bingo|1|enfants ados adultes aines
 Quelle activité québécoise du printemps se fait dans une érablière, avec un repas ?|La cabane à sucre|1|enfants ados adultes aines
-@ quebec-ailleurs
 Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?|La guignolée|3|adultes aines
 @ noel
-@ quebec-ailleurs
 Quel repas de fête se prend après la messe de minuit, la nuit du 24 décembre ?|Le réveillon|2|adultes aines
 @ noel
 #
 # --- Gâteaux et collations d'ici ---
 Quelle marque québécoise fabrique les Jos Louis et les May West ?|Vachon|2|ados adultes aines
-@ quebec-ailleurs
 Quel petit gâteau rond de Vachon porte un prénom masculin ?|Le Jos Louis|2|ados adultes aines
 Quel gâteau blanc et rond de Vachon porte un prénom féminin ?|Le May West|3|adultes aines
 Quelle pâte à tartiner orange se vend en pot et se met sur les rôties ?|Le Cheez Whiz|3|adultes aines
@@ -387,52 +352,35 @@ Quel jeu de cordelette passe de mains en mains en formant des figures géométri
 #
 # --- Séries et émissions québécoises ---
 Quelle série québécoise suivait une famille qui vivait de combines et d'aide sociale ?|Les Bougon|2|adultes aines
-@ quebec-ailleurs
 Quelle série mettait en scène un couple joué par Guy A. Lepage et Sylvie Léonard ?|Un gars, une fille|2|adultes aines
 Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?|Dans une galaxie près de chez vous|3|adultes
-@ quebec-ailleurs
 Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?|Radio Enfer|3|adultes
-@ quebec-ailleurs
 Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?|Watatatow|3|adultes
-@ quebec-ailleurs
 Quelle série policière québécoise porte le numéro d'un poste de police ?|District 31|2|adultes aines
-@ quebec-ailleurs
 Quelle série québécoise d'Anne Dorval et Daniel Brière suivait une famille de trois garçons ?|Les Parent|2|ados adultes
-@ quebec-ailleurs
 Quelle émission de Radio-Canada enquête sur ce qu'on met dans notre assiette ?|L'épicerie|3|adultes aines
 Quelle émission de Radio-Canada vulgarise la science le dimanche soir ?|Découverte|3|adultes aines
 Quelle émission matinale de TVA réveille le Québec en semaine ?|Salut Bonjour|2|adultes aines
-@ quebec-ailleurs
 Comment s'appelle le grand bulletin de nouvelles de Radio-Canada ?|Le Téléjournal|2|adultes aines
 Quel concours de chant québécois lance des carrières depuis 2003 ?|Star Académie|2|ados adultes aines
-@ quebec-ailleurs
 Quelle émission de variétés pour adolescents Véronique Cloutier a-t-elle animée ?|La Fureur|3|adultes
 #
 # --- Vedettes et humoristes ---
 Quel monologuiste québécois a écrit « Les unions, qu'ossa donne ? »|Yvon Deschamps|3|adultes aines
-@ quebec-ailleurs
 Quel humoriste québécois au débit très rapide a animé de nombreux galas ?|Louis-José Houde|2|ados adultes aines
-@ quebec-ailleurs
 Quel humoriste québécois a créé la série Les Beaux Malaises ?|Martin Matte|2|ados adultes
-@ quebec-ailleurs
 Quel imitateur québécois a chanté en enchaînant des dizaines de voix célèbres ?|André-Philippe Gagnon|3|adultes aines
-@ quebec-ailleurs
 Quelle animatrice québécoise est surnommée Véro ?|Véronique Cloutier|2|ados adultes aines
-@ quebec-ailleurs
 #
 # --- Chaînes et médias ---
 Quelle société d'État diffuse la télévision publique en français au Canada ?|Radio-Canada|2|adultes aines
 Quelle chaîne éducative appartient au gouvernement du Québec ?|Télé-Québec|2|adultes aines
-@ quebec-ailleurs
 Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?|MusiquePlus|3|adultes
-@ quebec-ailleurs
 Quel magazine hebdomadaire publiait les horaires de télévision au Québec ?|Le TV Hebdo|3|aines
-@ quebec-ailleurs
 @ nostalgie
 #
 # --- Mascotte ---
 Quelle mascotte orange et poilue est passée des Expos aux Canadiens ?|Youppi|2|ados adultes aines
-@ quebec-ailleurs
 #
 # --- Télévision d'ailleurs, vue ici ---
 Quelle téléréalité fait survivre des candidats sur une île en votant leur élimination ?|Survivor|2|ados adultes
@@ -453,7 +401,6 @@ Quelle émission fait présenter des projets d'affaires à des investisseurs pou
 # --- Marques et logos ---
 Quelle plateforme de diffusion a un grand N rouge pour logo ?|Netflix|1|enfants ados adultes aines
 Quelle marque de motoneige est née au Québec ?|Ski-Doo|2|ados adultes aines
-@ quebec-ailleurs
 @ transports
 Quelle marque de crayons de cire remplit les boîtes d'école ?|Crayola|1|enfants ados adultes aines
 Quelle marque de bonbons colorés fond dans la bouche, pas dans la main ?|Les M&M's|1|enfants ados adultes aines
@@ -489,15 +436,10 @@ Quel jouet de plastique danois s'assemble par petits picots ?|Le Lego|1|enfants 
 #
 # --- Télévision québécoise ---
 Quelle téléréalité québécoise fait cohabiter des célibataires devant les caméras ?|Occupation Double|2|ados adultes
-@ quebec-ailleurs
 Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?|Loft Story|3|adultes
-@ quebec-ailleurs
 Quelle émission de cuisine québécoise oppose des candidats devant un jury de chefs ?|Les Chefs|2|adultes aines
-@ quebec-ailleurs
 Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?|Pierre Falardeau|3|adultes aines
-@ quebec-ailleurs
 Quel prix récompense les artistes québécois au gala de l'ADISQ ?|Le Félix|2|adultes aines
-@ quebec-ailleurs
 #
 # --- Internet et réseaux ---
 Comment appelle-t-on une photo qu'on prend de soi-même à bout de bras ?|Un égoportrait (selfie)|1|enfants ados adultes aines
@@ -521,19 +463,14 @@ Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa
 Quel capitaine de la télé jeunesse racontait des histoires invraisemblables avec ses invisibles ?|Le Capitaine Bonhomme|3|aines
 @ nostalgie
 Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?|Olivier Guimond|3|aines
-@ quebec-ailleurs
 @ nostalgie
 Quel humoriste québécois jouait le concierge Symphorien ?|Gilles Latulippe|3|aines
-@ quebec-ailleurs
 @ nostalgie
 Quel duo d'actrices québécoises menait la série Moi et l'autre ?|Dominique Michel et Denise Filiatrault|3|aines
-@ quebec-ailleurs
 @ nostalgie
 Quelle série québécoise se déroulait dans Charlevoix après la Première Guerre ?|Le temps d'une paix|3|aines
-@ quebec-ailleurs
 @ nostalgie
 Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?|Rue des Pignons|3|aines
-@ quebec-ailleurs
 @ nostalgie
 Quel jeu télévisé opposait des équipes d'élèves du secondaire ?|Génies en herbe|3|adultes aines
 Quelle case horaire de Radio-Canada présentait des grands spectacles le dimanche ?|Les Beaux Dimanches|3|aines
@@ -543,21 +480,16 @@ Quelle prière se récitait en famille à la radio, chaque soir, dans les année
 #
 # --- Vedettes d'avant ---
 Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?|Alys Robi|3|aines
-@ quebec-ailleurs
 @ nostalgie
 Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?|La Bolduc|3|aines
-@ quebec-ailleurs
 @ nostalgie
 Quel chanteur country québécois a chanté Mille après mille ?|Willie Lamothe|3|aines
-@ quebec-ailleurs
 @ nostalgie
 Quel groupe québécois des années 60 se produisait tout habillé de blanc ?|Les Classels|3|aines
-@ quebec-ailleurs
 @ nostalgie
 #
 # --- Magasins disparus ---
 Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?|Steinberg|3|aines
-@ quebec-ailleurs
 @ nostalgie
 Quel grand magasin canadien publiait un catalogue attendu chaque année ?|Eaton|3|aines
 @ nostalgie
@@ -566,7 +498,6 @@ Quel magasin à rayons offrait un comptoir-lunch où manger un hot-dog ?|Woolwor
 Quel magasin se visitait catalogue en main, avant que la marchandise sorte de l'entrepôt ?|Distribution aux consommateurs|3|aines
 @ nostalgie
 Quelle quincaillerie québécoise portait un prénom dans son enseigne ?|Pascal|3|aines
-@ quebec-ailleurs
 @ nostalgie
 #
 # --- Objets du quotidien d'avant ---
@@ -599,13 +530,11 @@ Quel panier passait dans les rangs pendant la messe du dimanche ?|La quête|3|ai
 Où logeait le curé de la paroisse ?|Au presbytère|3|aines
 @ nostalgie
 Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?|Le tramway|3|aines
-@ quebec-ailleurs
 @ transports
 @ nostalgie
 Quelle confiserie maison se fait avec de la crème et de la cassonade ?|Le sucre à la crème|1|enfants ados adultes aines
 Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?|Le Forum|3|adultes aines
 @ sports-hiver
-@ quebec-ailleurs
 Quelle émission du samedi soir diffusait le hockey à Radio-Canada ?|La Soirée du hockey|3|aines
 @ nostalgie
 Quel descripteur de hockey a marqué des générations par son français impeccable ?|René Lecavalier|3|aines
@@ -621,19 +550,14 @@ Quelle petite radio portative à pile a libéré la musique des salons ?|Le tran
 @ nostalgie
 Quel vêtement des années 60 a scandalisé en raccourcissant brusquement ?|La minijupe|3|adultes aines
 Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?|Le yéyé|3|aines
-@ quebec-ailleurs
 @ nostalgie
 Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?|Les Baronets|3|aines
-@ quebec-ailleurs
 @ nostalgie
 Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?|La ceinture fléchée|3|adultes aines
-@ quebec-ailleurs
 Quel commerce de village vendait autrefois aussi bien le clou que la farine ?|Le magasin général|3|aines
 @ nostalgie
 Quel gratte-ciel de Montréal, en forme de croix, a ouvert en 1962 ?|La Place Ville-Marie|3|adultes aines
-@ quebec-ailleurs
 Quelle boisson gazeuse a longtemps servi de surnom moqueur aux Québécois ?|Le Pepsi|3|adultes aines
-@ quebec-ailleurs
 Sur quelle application les joueurs se parlent-ils dans des salons vocaux ?|Discord|2|ados adultes
 Comment appelle-t-on une personne qui suit un compte sur les réseaux sociaux ?|Un abonné|1|enfants ados adultes aines
 Comment appelle-t-on les petits visages jaunes qu'on glisse dans un message ?|Un émoji|1|enfants ados adultes aines
@@ -648,7 +572,6 @@ Quelle application de navigation prévient des bouchons et des radars ?|Waze|2|a
 Comment appelle-t-on la publication qui s'efface au bout de vingt-quatre heures ?|Une story|2|ados adultes
 Quel accessoire redonne de l'énergie à un téléphone à plat ?|Un chargeur|1|enfants ados adultes aines
 Quel mot québécois remplace « chat » pour une conversation écrite en ligne ?|Le clavardage|3|ados adultes aines
-@ quebec-ailleurs
 Quelle application d'appels vidéo est devenue incontournable pendant la pandémie ?|Zoom|2|ados adultes aines
 Quelle application commande une voiture avec chauffeur depuis un téléphone ?|Uber|2|ados adultes aines
 @ transports
@@ -668,7 +591,6 @@ Quelle plateforme diffuse les films de Marvel et de Pixar ?|Disney+|1|enfants ad
 @ disney
 Comment appelle-t-on une bande dessinée japonaise ?|Un manga|2|enfants ados adultes
 Quel mot québécois désigne celui qui dévoile la fin d'un film ?|Un divulgâcheur|3|ados adultes aines
-@ quebec-ailleurs
 Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?|L'écoute en rafale|3|ados adultes aines
 Comment appelle-t-on une émission audio qu'on écoute quand on veut ?|Un balado|2|ados adultes aines
 Quel effet corrige et robotise la voix d'un chanteur en studio ?|L'autotune|3|ados adultes
@@ -691,15 +613,10 @@ Quel endroit permet de sauter d'un mur à l'autre sur des toiles tendues ?|Un pa
 Quel jeu oppose des équipes armées de pistolets lumineux dans le noir ?|Le laser tag|2|ados adultes
 Quelle attraction de parc aquatique fait descendre un long tube en spirale ?|La glissade d'eau|1|enfants ados adultes aines
 Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?|Le Village Vacances Valcartier|3|ados adultes aines
-@ quebec-ailleurs
 Quel jeu télévisé québécois demande de repérer celui qui ment ?|Le Tricheur|3|ados adultes aines
-@ quebec-ailleurs
 Dans quelle émission québécoise des vedettes chantent-elles cachées dans des costumes géants ?|Chanteurs masqués|2|ados adultes aines
-@ quebec-ailleurs
 Quelle émission québécoise fait juger des numéros de danse par des maîtres ?|Révolution|3|ados adultes aines
-@ quebec-ailleurs
 Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?|Big Brother Célébrités|3|ados adultes
-@ quebec-ailleurs
 Quel engin à deux roues se pousse d'un pied en tenant un guidon ?|La trottinette|1|enfants ados adultes aines
 @ transports
 Quel jouet à figure humaine s'habille et se coiffe ?|Une poupée|1|enfants ados adultes aines
@@ -757,7 +674,6 @@ Comment appelle-t-on le séjour d'été où l'on dort en cabane avec d'autres je
 Où va-t-on voir des lions et des girafes en enclos ?|Au zoo|1|enfants ados adultes aines
 Que met-on sur le dos pour transporter ses cahiers à l'école ?|Un sac à dos|1|enfants ados adultes aines
 Quel objet québécois fait disparaître les traits de crayon sur le papier ?|Une efface|1|enfants ados adultes aines
-@ quebec-ailleurs
 Dans quel petit objet enfonce-t-on un crayon de bois pour l'aiguiser ?|Un taille-crayon|1|enfants ados adultes aines
 Quel cahier à anneaux range les feuilles de chaque matière ?|Un cartable|2|enfants ados adultes aines
 Quel meuble de la classe range les effets de l'élève ?|Un pupitre|1|enfants ados adultes aines

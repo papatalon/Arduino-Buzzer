@@ -299,6 +299,11 @@ void main(List<String> args) {
   // etiquetees, une par ligne avec son fichier et son rang. C'est la liste
   // qu'on relit pour decider, et le moyen de ne pas relire trois mille
   // questions a chaque thematique.
+  final iRetirer = args.indexOf('--retirer');
+  if (iRetirer >= 0) {
+    _retirer(iRetirer + 1 < args.length ? args[iRetirer + 1] : '');
+    return;
+  }
   final iEtiqueter = args.indexOf('--etiqueter');
   if (iEtiqueter >= 0) {
     _etiqueter(args.sublist(iEtiqueter + 1));
@@ -1538,38 +1543,25 @@ const kThemes = <Theme>[
   ], exclude: [
     'chaise',   // « se tirer une buche » : la buche est un siege, ici
   ]),
-  // Complémentaire de la catégorie « Québec », pas concurrente : elle ramasse
-  // le Québec qui vit AILLEURS, Maurice Richard dans Sports, La Petite Vie
-  // dans Cinéma, la poutine râpée dans Bouffe, les rigodons dans Musique.
-  // Jouer la catégorie puis celle-ci ne repose aucune question.
+  // PAS DE THÉMATIQUE QUÉBÉCOISE, et c'est une décision, pas un oubli.
   //
-  // Rangée sous la tuile « Québec » et non à côté : deux tuiles québécoises
-  // voisines dans la bibliothèque se lisaient comme un doublon, alors que la
-  // distinction ne se voit qu'en ouvrant les fichiers. Le titre des manches
-  // la porte très bien à l'intérieur de la tuile.
+  // Il y en a eu une, « Le Québec ailleurs », qui ramassait les 221 questions
+  // québécoises vivant dans les neuf autres catégories : Maurice Richard dans
+  // Sports, La Petite Vie dans Cinéma, les rigodons dans Musique. Elle
+  // excluait la catégorie Québec pour ne rien reposer, et se rangeait sous sa
+  // tuile pour ne pas ressembler à un doublon.
   //
-  // Son sapin lui reste : dans une tuile à fleur de lys, il signale d'un coup
-  // d'œil les cinq manches qui ne sont pas la catégorie.
-  Theme('quebec-ailleurs', 'Le Québec ailleurs', '🌲',
-      'Le Québec caché dans les neuf autres catégories.', [
-    'quebec', 'quebecois', 'quebecoise', 'quebecoises', 'montreal',
-    'montrealais', 'montrealaise', 'saint-laurent', 'erable', 'poutine',
-    'celine', 'canadiens', 'expos', 'gaspesie', 'gaspesienne', 'saguenay',
-    'laurentides', 'charlevoix', 'outaouais', 'acadien', 'acadienne',
-    'hydro-quebec', 'fleurdelise', 'tuque', 'maringouins', 'beluga',
-    'belugas', 'orignal', 'st-hubert', 'schwartz', 'bagel', 'smoked meat',
-    'feves au lard', 'pate chinois', 'pouding chomeur', 'steame', 'caribou',
-    'bleuet', 'trois-rivieres', 'sherbrooke', 'gatineau', 'tadoussac',
-    'nouvelle-france', 'patriotes', 'champlain', 'jacques cartier',
-    'maurice richard', 'lafleur', 'beliveau', 'lemieux', 'les boys',
-    'la petite vie', 'passe-partout', 'caillou', 'unite 9', 'infoman',
-    'harmonium', 'offenbach', 'beau dommage', 'colocs', 'vigneault',
-    'leclerc', 'charlebois', 'ginette reno', 'marjo', 'nelligan',
-    'gabrielle roy', 'tremblay', 'villeneuve', 'arcand', 'cirque du soleil',
-    'louis cyr', 'bombardier', 'levesque', 'duplessis', 'legault',
-    'loi 101', 'oqlf', 'verglas', 'hurons-wendat', 'madelinots',
-    'saguenéen', 'trifluvien', 'terre-neuvien',
-  ], excludeCategories: ['Québec'], collection: 'Québec'),
+  // LES DEUX RAISONS SONT MORTES AVEC LES TUILES. Il n'y a plus de
+  // bibliothèque de questionnaires à ranger, et dans une colonne de facettes
+  // « Québec 368 » au-dessus de « Le Québec ailleurs 221 » ne s'explique plus
+  // tout seul : ailleurs qu'où ? Rien ne distinguait les deux du siège du
+  // joueur, la séparation ne tenait qu'au fichier où la question avait été
+  // écrite.
+  //
+  // Ce que ça coûte, et qui est assumé : les 221 questions restent dans la
+  // banque et se jouent dans leur catégorie, mais on ne peut plus composer
+  // une manche québécoise qui les rassemble. Une soirée « Québec » tire dans
+  // les 368 de la catégorie.
   Theme('regne-animal', 'Le règne animal', '🐾', 'Bêtes à poil, à plume et à écailles.', [
     'animal', 'animaux', 'oiseau', 'oiseaux', 'poisson', 'poissons',
     'insecte', 'insectes', 'mammifere', 'mammiferes', 'reptile', 'reptiles',
@@ -2083,4 +2075,57 @@ void _etiqueter(List<String> args) {
   fichier.writeAsStringSync('${sortie.join('\n')}\n');
   stdout.writeln('$nom / $bloc : $poses étiquettes « $slug » posées'
       '${deja > 0 ? ', $deja déjà là' : ''}.');
+}
+
+// Retire une étiquette de tous les fichiers.
+//
+//   dart run tool/generate_questionnaires.dart --retirer quebec-ailleurs
+//
+// À FAIRE AVANT de sortir la thématique de kThemes : le lecteur refuse un
+// slug inconnu et s'arrête, donc l'ordre inverse laisse un dépôt qui ne se
+// génère plus.
+//
+// La ligne « @ » ne disparaît que si elle ne portait que ce slug. Une
+// question étiquetée « @ noel creatures » à qui l'on retire Noël garde sa
+// ligne, allégée.
+void _retirer(String slug) {
+  if (!kThemes.any((t) => t.slug == slug)) {
+    stderr.writeln('Thématique inconnue « $slug ». '
+        'Connues : ${kThemes.map((t) => t.slug).join(', ')}.');
+    exit(1);
+  }
+  var total = 0;
+  for (final f in Directory(_questionsDir)
+      .listSync()
+      .whereType<File>()
+      .where((f) => f.path.endsWith('.txt'))) {
+    final sortie = <String>[];
+    var retires = 0;
+    for (final brute in f.readAsLinesSync()) {
+      final l = brute.trim();
+      if (!l.startsWith('@')) {
+        sortie.add(brute);
+        continue;
+      }
+      final restants = l
+          .substring(1)
+          .trim()
+          .split(RegExp(r'\s+'))
+          .where((s) => s.isNotEmpty && s != slug)
+          .toList();
+      if (restants.length ==
+          l.substring(1).trim().split(RegExp(r'\s+')).where((s) => s.isNotEmpty).length) {
+        sortie.add(brute); // Rien à retirer sur cette ligne.
+        continue;
+      }
+      retires++;
+      if (restants.isNotEmpty) sortie.add('@ ${restants.join(' ')}');
+    }
+    if (retires == 0) continue;
+    f.writeAsStringSync('${sortie.join('\n')}\n');
+    stdout.writeln('${f.uri.pathSegments.last} : $retires retirées.');
+    total += retires;
+  }
+  stdout.writeln('$total étiquettes « $slug » retirées. '
+      'La thématique peut maintenant sortir de kThemes.');
 }

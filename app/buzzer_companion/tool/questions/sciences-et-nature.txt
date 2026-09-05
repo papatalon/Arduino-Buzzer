@@ -20,9 +20,9 @@
 # thématique est un jugement sur le sujet de la question, du même ordre que sa
 # catégorie, et la catégorie n'a jamais été devinée.
 #
-# Les treize slugs : noel, quebec-ailleurs, regne-animal, espace,
-# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
-# transports, disney, nostalgie. Un slug inconnu arrête la génération.
+# Les douze slugs : noel, regne-animal, espace, corps-humain, super-heros,
+# creatures, sports-hiver, regne-vegetal, mer, transports, disney,
+# nostalgie. Un slug inconnu arrête la génération.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -428,7 +428,6 @@ En quelle saison les feuilles des arbres tombent-elles ?|L'automne|1|enfants ado
 Que devient l'eau quand elle gèle ?|De la glace|1|enfants ados adultes aines
 De quoi sont faites les dunes du désert ?|De sable|1|enfants ados adultes aines
 De quel arbre tire-t-on la sève qui devient du sirop au printemps ?|L'érable|1|enfants ados adultes aines
-@ quebec-ailleurs
 @ regne-vegetal
 Quelle fleur jaune devient une boule de duvet qu'on souffle ?|Le pissenlit|1|enfants ados adultes aines
 @ regne-vegetal

@@ -20,9 +20,9 @@
 # thématique est un jugement sur le sujet de la question, du même ordre que sa
 # catégorie, et la catégorie n'a jamais été devinée.
 #
-# Les treize slugs : noel, quebec-ailleurs, regne-animal, espace,
-# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
-# transports, disney, nostalgie. Un slug inconnu arrête la génération.
+# Les douze slugs : noel, regne-animal, espace, corps-humain, super-heros,
+# creatures, sports-hiver, regne-vegetal, mer, transports, disney,
+# nostalgie. Un slug inconnu arrête la génération.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
