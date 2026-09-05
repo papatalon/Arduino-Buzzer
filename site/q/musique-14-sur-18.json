@@ -8,14 +8,50 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quelle comptine réveille un meunier dont le moulin va trop vite ?",
-      "reponse": "Meunier tu dors",
-      "niveau": 2
+      "question": "Quelle chanteuse de jazz était surnommée Lady Day ?",
+      "reponse": "Billie Holiday",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel chanteur britannique roux a chanté Shape of You ?",
-      "reponse": "Ed Sheeran",
+      "question": "Quel instrument à dents pincées accompagne le folklore ?",
+      "reponse": "La guimbarde",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le son qui revient quand on crie dans une vallée ?",
+      "reponse": "Un écho",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la pulsation régulière sur laquelle on tape du pied ?",
+      "reponse": "Le rythme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel objet à ressort le professeur de musique frappe-t-il pour donner le la ?",
+      "reponse": "Un diapason",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse britannique a chanté Levitating et Don't Start Now ?",
+      "reponse": "Dua Lipa",
       "niveau": 2,
       "ages": [
         "ados",
@@ -24,9 +60,50 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse néo-zélandaise a chanté Royals à seize ans ?",
-      "reponse": "Lorde",
-      "niveau": 3,
+      "question": "Quel trompettiste a chanté What a Wonderful World ?",
+      "reponse": "Louis Armstrong",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Sur quelle estrade les artistes se produisent-ils ?",
+      "reponse": "La scène",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le musicien qui joue de la flûte ?",
+      "reponse": "Un flûtiste",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel crooner a chanté My Way ?",
+      "reponse": "Frank Sinatra",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse country a chanté Jolene ?",
+      "reponse": "Dolly Parton",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur britannique a quitté One Direction pour chanter As It Was ?",
+      "reponse": "Harry Styles",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes"
@@ -34,9 +111,101 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel objet de bois et de métal se secoue pour marquer le rythme dans une classe ?",
-      "reponse": "Des maracas",
-      "niveau": 2
+      "question": "Quel compositeur russe a écrit Casse-Noisette ?",
+      "reponse": "Tchaïkovski",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style musical coréen a conquis la planète ?",
+      "reponse": "La K-pop",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel petit instrument à vent apprend-on à jouer à l'école primaire ?",
+      "reponse": "La flûte à bec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Stromae parle d'un père absent ?",
+      "reponse": "Papaoutai",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur a popularisé le twist ?",
+      "reponse": "Chubby Checker",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel compositeur baroque a écrit les Concertos brandebourgeois ?",
+      "reponse": "Bach",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui installe les micros avant un concert ?",
+      "reponse": "Un technicien de son",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel petit objet de métal en forme de fourche donne le la aux musiciens ?",
+      "reponse": "Un diapason",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à vent se joue en soufflant dans une anche double, au son nasillard ?",
+      "reponse": "Le hautbois",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la petite pièce de plastique qui gratte les cordes ?",
+      "reponse": "Le médiator",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -50,160 +219,9 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanson du crabe Sébastien vante la vie sous les vagues ?",
-      "reponse": "Sous l'océan",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument principal joue un batteur ?",
-      "reponse": "La batterie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la grande toile de tissu qui s'ouvre au début d'un spectacle ?",
-      "reponse": "Le rideau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel appareil enregistrait la musique sur une bande dans les années 80 ?",
-      "reponse": "Une cassette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse a chanté Like a Virgin ?",
-      "reponse": "Madonna",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson Blanche-Neige chante-t-elle près du puits en attendant l'amour ?",
-      "reponse": "Un jour mon prince viendra",
+      "question": "Comment appelle-t-on les chaussons rigides qui permettent de danser sur le bout des orteils ?",
+      "reponse": "Des pointes",
       "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël québécois reprend l'air de Jingle Bells ?",
-      "reponse": "Vive le vent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la répétition complète faite la veille d'un spectacle ?",
-      "reponse": "La générale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur français moustachu chantait Les Champs-Élysées ?",
-      "reponse": "Joe Dassin",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel artiste portoricain est devenu l'artiste le plus écouté au monde en reggaeton ?",
-      "reponse": "Bad Bunny",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel signe musical monte une note d'un demi-ton ?",
-      "reponse": "Le dièse",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'écran qui affiche les paroles pendant un karaoké ?",
-      "reponse": "Le téléprompteur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Gloria Gaynor est devenue l'hymne des cœurs brisés ?",
-      "reponse": "I Will Survive",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument d'église a des tuyaux ?",
-      "reponse": "L'orgue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans quoi range-t-on son violon pour le transporter ?",
-      "reponse": "Un étui",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse argentine se danse joue contre joue avec une rose ?",
-      "reponse": "Le tango",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel spectacle musical français raconte Quasimodo ?",
-      "reponse": "Notre-Dame de Paris",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui chante une chanson ?",
-      "reponse": "Un chanteur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel petit instrument à vent apprend-on à jouer à l'école primaire ?",
-      "reponse": "La flûte à bec",
-      "niveau": 1
     }
   ]
 }

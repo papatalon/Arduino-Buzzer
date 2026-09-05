@@ -8,25 +8,41 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quel bâton le magicien agite-t-il en disant sa formule ?",
-      "reponse": "Une baguette magique",
+      "question": "Que rapportait-on à l'épicerie pour récupérer quelques sous ?",
+      "reponse": "Les bouteilles vides",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la suite secrète de caractères qui protège un compte ?",
+      "reponse": "Un mot de passe",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel montagnard accompagne Anna avec son renne dans La Reine des neiges ?",
-      "reponse": "Kristoff",
-      "niveau": 1,
+      "question": "Quelle marque de bonbons colorés fond dans la bouche, pas dans la main ?",
+      "reponse": "Les M&M's",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles cigarettes de bonbon blanches portaient le nom d'un marin costaud ?",
+      "reponse": "Les Popeye",
+      "niveau": 3,
       "ages": [
-        "enfants",
-        "ados"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel humoriste québécois au débit très rapide a animé de nombreux galas ?",
-      "reponse": "Louis-José Houde",
-      "niveau": 2,
+      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
+      "reponse": "Le Village Vacances Valcartier",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -35,14 +51,62 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Que glisse-t-on dans une enveloppe pour souhaiter joyeux Noël à quelqu'un ?",
-      "reponse": "Une carte de souhaits",
+      "question": "Quelle plateforme de diffusion a un grand N rouge pour logo ?",
+      "reponse": "Netflix",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jouet tourne longtemps entre deux doigts et fut la mode de 2017 ?",
+      "reponse": "Le fidget spinner",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel organisme québécois délivre les permis de conduire et les plaques ?",
+      "reponse": "La SAAQ",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel cahier à anneaux range les feuilles de chaque matière ?",
+      "reponse": "Un cartable",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle console de jeu vidéo est fabriquée par Microsoft ?",
-      "reponse": "La Xbox",
+      "question": "Quelle boisson énergisante promet de donner des ailes ?",
+      "reponse": "Red Bull",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Où étendait-on le linge pour le faire sécher au vent ?",
+      "reponse": "Sur la corde à linge",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de gymnase élimine les joueurs touchés par le ballon ?",
+      "reponse": "Le ballon-chasseur",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -52,49 +116,50 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu fait deviner des mots à son équipe en trois manches, de plus en plus serrées ?",
-      "reponse": "Le Time's Up",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "question": "Quel objet québécois fait disparaître les traits de crayon sur le papier ?",
+      "reponse": "Une efface",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Dans Minecraft, quelle pierre bleue sert à fabriquer les meilleurs outils ?",
-      "reponse": "Le diamant",
+      "question": "Quel jouet à figure humaine s'habille et se coiffe ?",
+      "reponse": "Une poupée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle société d'État a le monopole de la vente d'alcool au Québec ?",
+      "reponse": "La SAQ",
       "niveau": 1,
       "ages": [
-        "enfants",
-        "ados"
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu électronique rond répète une suite de couleurs et de sons à imiter ?",
-      "reponse": "Le Simon",
+      "question": "Que met-on sur le dos pour transporter ses cahiers à l'école ?",
+      "reponse": "Un sac à dos",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de voitures allemande a quatre anneaux entrelacés ?",
+      "reponse": "Audi",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu télévisé québécois demande de repérer celui qui ment ?",
+      "reponse": "Le Tricheur",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit ours de dessin animé porte un chandail et un prénom de couleur ?",
-      "reponse": "Petit Ours Brun",
-      "niveau": 2,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle application d'appels vidéo est devenue incontournable pendant la pandémie ?",
-      "reponse": "Zoom",
-      "niveau": 2,
-      "ages": [
         "ados",
         "adultes",
         "aines"
@@ -102,53 +167,13 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
-      "reponse": "Steinberg",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle carte à puce sert à payer le métro et l'autobus à Montréal ?",
-      "reponse": "La carte Opus",
+      "question": "Dans quelle émission québécoise des vedettes chantent-elles cachées dans des costumes géants ?",
+      "reponse": "Chanteurs masqués",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel concours de chant québécois lance des carrières depuis 2003 ?",
-      "reponse": "Star Académie",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de simulation fait bâtir des maisons et diriger la vie de personnages ?",
-      "reponse": "Les Sims",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu oppose des équipes armées de pistolets lumineux dans le noir ?",
-      "reponse": "Le laser tag",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
       ]
     },
     {
@@ -164,20 +189,9 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque de motoneige est née au Québec ?",
-      "reponse": "Ski-Doo",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne de restaurants québécoise s'est bâtie sur le déjeuner ?",
-      "reponse": "Cora",
-      "niveau": 2,
+      "question": "Quel appareil fallait-il installer sur le toit pour capter les chaînes de télé ?",
+      "reponse": "L'antenne",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
@@ -185,48 +199,18 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu vidéo fait danser devant la télé en imitant un avatar à l'écran ?",
-      "reponse": "Just Dance",
-      "niveau": 1,
+      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
+      "reponse": "La fin de semaine des Patriotes",
+      "niveau": 3,
       "ages": [
-        "enfants",
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel carré noir et blanc se scanne avec la caméra du téléphone ?",
-      "reponse": "Un code QR",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jouet d'été arrose les amis d'un jet d'eau ?",
-      "reponse": "Un pistolet à eau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle console de Nintendo se joue autant sur le téléviseur qu'en mode portable ?",
-      "reponse": "La Nintendo Switch",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel ressort de métal descend les escaliers tout seul ?",
-      "reponse": "Le Slinky",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit boîtier rond de poche contient une maison miniature ?",
-      "reponse": "Le Polly Pocket",
+      "question": "Quel humoriste québécois d'origine marocaine raconte sa famille sur scène ?",
+      "reponse": "Rachid Badouri",
       "niveau": 3,
       "ages": [
         "ados",
@@ -235,9 +219,23 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle activité québécoise du printemps se fait dans une érablière, avec un repas ?",
-      "reponse": "La cabane à sucre",
-      "niveau": 1
+      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
+      "reponse": "Rue des Pignons",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles chaussures de caoutchouc percées de trous divisent la planète ?",
+      "reponse": "Les Crocs",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     }
   ]
 }

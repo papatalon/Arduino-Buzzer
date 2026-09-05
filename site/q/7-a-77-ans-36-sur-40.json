@@ -7,21 +7,71 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Géographie",
-      "question": "Quel pays a pour emblème le coq ?",
-      "reponse": "La France",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat fait-on en battant des œufs à la poêle ?",
+      "reponse": "L'omelette",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quels organes filtrent le sang ?",
-      "reponse": "Les reins",
+      "categorie": "Sports",
+      "question": "Quel joueur de la NBA est surnommé King James ?",
+      "reponse": "LeBron James",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Synonyme de docteur ?",
+      "reponse": "Médecin",
       "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Pluriel de monsieur ?",
+      "reponse": "Messieurs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quel film d'animation une famille colombienne vit-elle dans une maison magique ?",
+      "reponse": "Encanto",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil lave les assiettes à notre place ?",
+      "reponse": "Le lave-vaisselle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle nounou anglaise vole avec un parapluie ?",
+      "reponse": "Mary Poppins",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel jour d'octobre les enfants passent-ils de porte en porte ?",
-      "reponse": "L'Halloween",
+      "question": "Quelle langue parle-t-on au Québec ?",
+      "reponse": "Le français",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
+      "reponse": "La poutine",
       "niveau": 1
     },
     {
@@ -32,72 +82,38 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
-      "reponse": "Le raton laveur",
+      "question": "Quels organes filtrent le sang ?",
+      "reponse": "Les reins",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Combien de lettres muettes dans le mot loup ?",
-      "reponse": "Une",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage rouge et blanc à tuque se cache dans des foules dessinées ?",
-      "reponse": "Charlie",
+      "question": "Que signifie lâcher son fou ?",
+      "reponse": "S'amuser follement",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle chanson de Vigneault sert d'hymne populaire ?",
-      "reponse": "Gens du pays",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel grand bâtiment rouge de la ferme abrite les animaux et le foin ?",
+      "reponse": "La grange",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la petite sœur d'Elsa ?",
-      "reponse": "Anna",
+      "question": "Quel canard noir est le rival de Bugs Bunny ?",
+      "reponse": "Daffy Duck",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel jeu de table imite le soccer avec des joueurs fixés sur des tiges ?",
-      "reponse": "Le babyfoot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle entrée italienne est du pain grillé garni ?",
-      "reponse": "La bruschetta",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel cheval blanc porte une corne unique sur le front ?",
-      "reponse": "Une licorne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment dit-on « oui » en espagnol ?",
-      "reponse": "Sí",
+      "categorie": "Géographie",
+      "question": "Quel pays a pour emblème le coq ?",
+      "reponse": "La France",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on le son qui revient quand on crie dans une vallée ?",
-      "reponse": "Un écho",
+      "question": "Quel instrument rempli de graines produit un son quand on le secoue ?",
+      "reponse": "Les maracas",
       "niveau": 1
     },
     {
@@ -107,15 +123,34 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel pain plat indien cuit dans un four tandoor ?",
-      "reponse": "Le naan",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Histoire",
+      "question": "En quel siècle vivons-nous ?",
+      "reponse": "Le 21e siècle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal est le meilleur ami de l'homme ?",
+      "reponse": "Le chien",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on l'habit qu'on enfile pour se transformer en personnage ?",
+      "reponse": "Un déguisement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de table imite le soccer avec des joueurs fixés sur des tiges ?",
+      "reponse": "Le babyfoot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "De quelle couleur est le feu de circulation qui dit d'arrêter ?",
+      "reponse": "Rouge",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -130,66 +165,15 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal est le meilleur ami de l'homme ?",
-      "reponse": "Le chien",
+      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
+      "reponse": "Le raton laveur",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Comment nomme-t-on une chanson sans instruments ?",
-      "reponse": "A cappella",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série suit six amis dans un café new-yorkais ?",
-      "reponse": "Friends",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quel siècle vivons-nous ?",
-      "reponse": "Le 21e siècle",
+      "question": "Que fait le public avec ses mains à la fin d'un spectacle ?",
+      "reponse": "Il applaudit",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Comment appelle-t-on le grand navire qui emmène des passagers en croisière ?",
-      "reponse": "Un paquebot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "De quelle couleur est le feu de circulation qui dit d'arrêter ?",
-      "reponse": "Rouge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel élément croquant garnit la salade César ?",
-      "reponse": "Des croûtons",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que veut dire P.S. à la fin d'une lettre ?",
-      "reponse": "Post-scriptum",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

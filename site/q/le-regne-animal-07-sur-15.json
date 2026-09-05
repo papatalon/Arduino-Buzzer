@@ -8,20 +8,20 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quel oiseau portait les messages avant le télégraphe ?",
-      "reponse": "Le pigeon voyageur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
-      "reponse": "Une sirène",
-      "niveau": 1
+      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
+      "reponse": "Une diligence",
+      "niveau": 3
     },
     {
       "categorie": "Sciences et nature",
       "question": "Quel animal construit des barrages dans les rivières ?",
       "reponse": "Le castor",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du serpent ?",
+      "reponse": "Le sifflement",
       "niveau": 1
     },
     {
@@ -32,38 +32,31 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quel est le cri du serpent ?",
-      "reponse": "Le sifflement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
       "question": "Comment s'appelle le petit du cochon ?",
       "reponse": "Le porcelet",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat anglais sert du poisson frit avec des frites ?",
-      "reponse": "Fish and chips",
+      "categorie": "Culture pop",
+      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
+      "reponse": "Une sirène",
       "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson du crabe Sébastien vante la vie sous les vagues ?",
-      "reponse": "Sous l'océan",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
     },
     {
       "categorie": "Histoire",
       "question": "Quel véhicule à moteur a remplacé le cheval sur les routes ?",
       "reponse": "L'automobile",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Avec quel lait fait-on la feta traditionnelle ?",
+      "reponse": "Lait de brebis",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -78,29 +71,26 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Avec quel lait fait-on la feta traditionnelle ?",
-      "reponse": "Lait de brebis",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
-      "reponse": "Cracké",
-      "niveau": 3,
+      "categorie": "Musique",
+      "question": "Quelle expression du Roi Lion signifie « sans souci » en swahili ?",
+      "reponse": "Hakuna Matata",
+      "niveau": 1,
       "ages": [
         "enfants",
-        "ados"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Mots et langue",
       "question": "Quel est le cri du cheval ?",
       "reponse": "Le hennissement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat anglais sert du poisson frit avec des frites ?",
+      "reponse": "Fish and chips",
       "niveau": 1
     },
     {
@@ -116,16 +106,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le mâle de la brebis ?",
-      "reponse": "Le bélier",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle chienne bleue australienne joue avec sa sœur Bingo dans une série ?",
-      "reponse": "Bluey",
-      "niveau": 1,
+      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
+      "reponse": "Cracké",
+      "niveau": 3,
       "ages": [
         "enfants",
         "ados"
@@ -138,10 +122,28 @@
       "niveau": 1
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Quel est le mâle de la brebis ?",
+      "reponse": "Le bélier",
+      "niveau": 1
+    },
+    {
       "categorie": "Sciences et nature",
       "question": "Quel insecte rouge à points noirs porte bonheur ?",
       "reponse": "La coccinelle",
       "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Dans quoi la chenille se transforme-t-elle ?",
+      "reponse": "La chrysalide",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle attraction de Sainte-Foy présente des morses et des ours blancs ?",
+      "reponse": "L'Aquarium du Québec",
+      "niveau": 2
     },
     {
       "categorie": "Mots et langue",
@@ -162,15 +164,9 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Dans quoi la chenille se transforme-t-elle ?",
-      "reponse": "La chrysalide",
+      "question": "Quel gros oiseau entièrement noir croasse ?",
+      "reponse": "Le corbeau",
       "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle attraction de Sainte-Foy présente des morses et des ours blancs ?",
-      "reponse": "L'Aquarium du Québec",
-      "niveau": 2
     }
   ]
 }

@@ -8,8 +8,8 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Capitale de Terre-Neuve ?",
-      "reponse": "Saint-Jean",
+      "question": "Quel fleuve sacré traverse l'Inde ?",
+      "reponse": "Le Gange",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,60 +19,125 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Colisée ?",
-      "reponse": "L'Italie",
+      "question": "Quelle ligne imaginaire sépare l'hémisphère nord de l'hémisphère sud ?",
+      "reponse": "L'équateur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Australie ?",
+      "reponse": "Canberra",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Nouveau-Brunswick ?",
+      "reponse": "Fredericton",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien de temps la Terre met-elle pour faire un tour sur elle-même ?",
+      "reponse": "Un jour",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve le Taj Mahal ?",
+      "reponse": "L'Inde",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle baie géante borde le nord du Québec ?",
+      "reponse": "Baie d'Hudson",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Angleterre ?",
+      "reponse": "Londres",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve traverse Paris ?",
+      "reponse": "La Seine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une immense étendue de sable sans eau ?",
+      "reponse": "Un désert",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une langue de terre qui s'avance dans la mer ?",
+      "reponse": "Une péninsule",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quel continent se trouve l'Australie ?",
+      "reponse": "L'Océanie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
+      "reponse": "L'Alberta",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays est surnommé l'île d'émeraude ?",
+      "reponse": "L'Irlande",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'eau salée qu'on ne peut pas boire ?",
+      "reponse": "L'eau de mer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel massif abrite l'Everest ?",
+      "reponse": "L'Himalaya",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
+      "reponse": "La Norvège",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle rivière célèbre coule à Ottawa ?",
+      "reponse": "L'Outaouais",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle mer sépare l'Europe de l'Afrique ?",
-      "reponse": "La Méditerranée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus grand océan ?",
-      "reponse": "Le Pacifique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel état américain est surnommé le Golden State ?",
-      "reponse": "La Californie",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien y a-t-il de continents sur Terre ?",
-      "reponse": "Sept",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve La Mecque ?",
-      "reponse": "Arabie saoudite",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel animal est l'emblème des États-Unis ?",
-      "reponse": "L'aigle",
-      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -82,8 +147,31 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel lac est le plus profond du monde ?",
-      "reponse": "Le Baïkal",
+      "question": "Quelle province canadienne parle surtout français ?",
+      "reponse": "Le Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Brésil ?",
+      "reponse": "Brasilia",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve la ville de Venise et ses canaux ?",
+      "reponse": "L'Italie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Maroc ?",
+      "reponse": "Rabat",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -92,111 +180,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on une terre entièrement entourée d'eau ?",
-      "reponse": "Une île",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouvent le Brésil et l'Argentine ?",
-      "reponse": "L'Amérique du Sud",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "De quelle couleur les océans sont-ils dessinés sur une carte ?",
-      "reponse": "Bleus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel golfe borde le Texas et la Floride ?",
-      "reponse": "Golfe du Mexique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on les chutes situées juste à côté de la ville de Québec ?",
-      "reponse": "Les chutes Montmorency",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la secousse qui fait trembler le sol ?",
-      "reponse": "Un tremblement de terre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
-      "reponse": "La Finlande",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a pour emblème le coq ?",
-      "reponse": "La France",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Colombie-Britannique ?",
-      "reponse": "Victoria",
+      "question": "Quelle cordillère longe l'Amérique du Sud ?",
+      "reponse": "Les Andes",
       "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le Canada ?",
-      "reponse": "L'Amérique du Nord",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel État américain chaud accueille Disney World ?",
-      "reponse": "La Floride",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée en Autriche ?",
-      "reponse": "L'allemand",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel territoire canadien a Iqaluit pour capitale ?",
-      "reponse": "Le Nunavut",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a un drapeau avec une étoile de David ?",
-      "reponse": "Israël",
-      "niveau": 1,
       "ages": [
         "ados",
         "adultes",

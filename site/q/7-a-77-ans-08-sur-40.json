@@ -7,10 +7,44 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel muscle bat sans jamais se reposer ?",
-      "reponse": "Le cœur",
+      "categorie": "Culture pop",
+      "question": "Quel jouet à trois roues précède le vélo chez les tout-petits ?",
+      "reponse": "Un tricycle",
       "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel auxiliaire s'emploie avec le verbe aller ?",
+      "reponse": "Être",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle crise de janvier 1998 a privé le Québec de courant ?",
+      "reponse": "Le verglas",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du cheval ?",
+      "reponse": "Le poulain",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel café italien très court se boit d'un trait ?",
+      "reponse": "L'espresso",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -25,25 +59,72 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film de 1977 s'ouvre sur « Il y a bien longtemps, dans une galaxie lointaine » ?",
-      "reponse": "La Guerre des étoiles",
+      "question": "Dans quel film Pixar une maison vole-t-elle avec des ballons ?",
+      "reponse": "Là-haut",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jouet à figure humaine s'habille et se coiffe ?",
-      "reponse": "Une poupée",
+      "categorie": "Québec",
+      "question": "Quel sirop est une spécialité du Québec ?",
+      "reponse": "Le sirop d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel jour de la semaine vient après vendredi ?",
+      "reponse": "Samedi",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport lance-t-on un javelot ?",
+      "reponse": "L'athlétisme",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle famille préhistorique conduit une voiture à pédales ?",
-      "reponse": "Les Pierrafeu",
+      "question": "Quel animateur québécois a longtemps animé Tout le monde en parle ?",
+      "reponse": "Guy A. Lepage",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat indien s'appelle butter chicken en anglais ?",
+      "reponse": "Poulet au beurre",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série coréenne met en scène des jeux mortels ?",
+      "reponse": "Squid Game",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien d'enseignes dans un jeu de cartes ?",
+      "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays produit le plus de sirop d'érable ?",
+      "reponse": "Le Canada",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson chante-t-on aux anniversaires ?",
+      "reponse": "Bonne fête",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -57,111 +138,9 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel condiment jaune accompagne le hot-dog ?",
-      "reponse": "La moutarde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel nouveau pont montréalais a ouvert en 2019 ?",
-      "reponse": "Samuel-De Champlain",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
-      "reponse": "Le homard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport lance-t-on un javelot ?",
-      "reponse": "L'athlétisme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse de la Barbade a chanté Umbrella ?",
-      "reponse": "Rihanna",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays produit le plus de sirop d'érable ?",
-      "reponse": "Le Canada",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois magasiner ?",
-      "reponse": "Faire des achats",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ninja blond rêve de devenir Hokage ?",
-      "reponse": "Naruto",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri de la vache ?",
-      "reponse": "Le meuglement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien d'enseignes dans un jeu de cartes ?",
-      "reponse": "Quatre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Qui est surnommé le roi de la pop ?",
-      "reponse": "Michael Jackson",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert québécois est un gâteau arrosé de sauce sucrée ?",
-      "reponse": "Pouding chômeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel jour de la semaine vient après vendredi ?",
-      "reponse": "Samedi",
-      "niveau": 1
-    },
-    {
       "categorie": "Histoire",
       "question": "Quel peuple a construit le Colisée et les aqueducs ?",
       "reponse": "Les Romains",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de points vaut un panier de loin au basketball ?",
-      "reponse": "Trois",
       "niveau": 1
     },
     {
@@ -176,26 +155,50 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel montagnard accompagne Anna avec son renne dans La Reine des neiges ?",
-      "reponse": "Kristoff",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
+      "categorie": "Sports",
+      "question": "Combien de points vaut un panier de loin au basketball ?",
+      "reponse": "Trois",
+      "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Comment nomme-t-on la période des sucres ?",
-      "reponse": "Le temps des sucres",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sirop noir parfume les galettes québécoises ?",
+      "reponse": "La mélasse",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quel est le contraire de gagner ?",
-      "reponse": "Perdre",
+      "question": "Comment nomme-t-on la peur des espaces clos ?",
+      "reponse": "La claustrophobie",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel muscle bat sans jamais se reposer ?",
+      "reponse": "Le cœur",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chocolat creux se déballe le matin de Pâques ?",
+      "reponse": "Un œuf en chocolat",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Qui est surnommé le roi de la pop ?",
+      "reponse": "Michael Jackson",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

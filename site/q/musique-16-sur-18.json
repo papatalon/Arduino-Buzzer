@@ -8,21 +8,9 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on le signe rond ou ovale posé sur la portée ?",
-      "reponse": "Une note de musique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël anglais souhaite un joyeux Noël en le répétant trois fois ?",
-      "reponse": "We Wish You a Merry Christmas",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le groupe de chanteurs qui répond au soliste dans une chanson ?",
-      "reponse": "Le chœur",
-      "niveau": 3,
+      "question": "Quelle danse latine endiablée vient de Cuba ?",
+      "reponse": "La salsa",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -31,8 +19,56 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on le retour sur scène après les applaudissements ?",
-      "reponse": "Le rappel",
+      "question": "Quelle chanson Blanche-Neige chante-t-elle près du puits en attendant l'amour ?",
+      "reponse": "Un jour mon prince viendra",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine demande Dormez-vous ?",
+      "reponse": "Frère Jacques",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse québécoise a une voix puissante et chante Un peu plus haut ?",
+      "reponse": "Ginette Reno",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe québécois a chanté La complainte du phoque en Alaska ?",
+      "reponse": "Beau Dommage",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur est surnommé The Boss ?",
+      "reponse": "Bruce Springsteen",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel compositeur a écrit la Lettre à Élise ?",
+      "reponse": "Beethoven",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle petite flûte traversière est très aiguë ?",
+      "reponse": "Le piccolo",
       "niveau": 2,
       "ages": [
         "ados",
@@ -42,15 +78,9 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument espagnol se claque entre les doigts pendant le flamenco ?",
-      "reponse": "Les castagnettes",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel objet à ressort le professeur de musique frappe-t-il pour donner le la ?",
-      "reponse": "Un diapason",
-      "niveau": 3,
+      "question": "Quelle chanteuse québécoise a chanté pour Titanic ?",
+      "reponse": "Céline Dion",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -59,25 +89,85 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse américaine a chanté Espresso en 2024 ?",
-      "reponse": "Sabrina Carpenter",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
+      "question": "Quelle comptine fait répondre le hibou au coucou, du haut de son grand chêne ?",
+      "reponse": "Dans la forêt lointaine",
+      "niveau": 3
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe a chanté Hey Jude et Let It Be ?",
-      "reponse": "Les Beatles",
+      "question": "Comment appelle-t-on la rangée de touches noires et blanches du piano ?",
+      "reponse": "Le clavier",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
-      "reponse": "Klô Pelgag",
+      "question": "Comment appelle-t-on la voix qui accompagne la voix principale en harmonie ?",
+      "reponse": "Les chœurs",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel festival célèbre a eu lieu en 1969 près de New York ?",
+      "reponse": "Woodstock",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse acadienne a popularisé Évangéline ?",
+      "reponse": "Annie Blanchard",
       "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse à trois temps fait tourner les couples dans les bals ?",
+      "reponse": "La valse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le musicien qui joue de la trompette ?",
+      "reponse": "Un trompettiste",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe rock québécois était mené par Gerry Boulet ?",
+      "reponse": "Offenbach",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment s'appelle l'hymne national de la France ?",
+      "reponse": "La Marseillaise",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse canadienne a chanté Complicated ?",
+      "reponse": "Avril Lavigne",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes"
@@ -85,46 +175,20 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument électronique se joue en frappant des pastilles sensibles ?",
-      "reponse": "Le pad",
-      "niveau": 3,
-      "ages": [
-        "ados"
-      ]
+      "question": "Comment appelle-t-on les chanteurs qui accompagnent la vedette en arrière ?",
+      "reponse": "Les choristes",
+      "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "Quel genre de musique douce et répétitive sert de fond sonore pour étudier ?",
-      "reponse": "Le lo-fi",
-      "niveau": 3,
-      "ages": [
-        "ados"
-      ]
+      "question": "Quel objet le chef d'orchestre tient-il ?",
+      "reponse": "La baguette",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Sur quelle clé lit-on les notes graves ?",
-      "reponse": "Clé de fa",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe canadien a chanté American Woman ?",
-      "reponse": "The Guess Who",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle ville américaine est la capitale du country ?",
-      "reponse": "Nashville",
+      "question": "Quel groupe a sorti l'album au prisme en 1973 ?",
+      "reponse": "Pink Floyd",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -139,75 +203,11 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle musique électronique fait sauter les foules avec ses montées et ses chutes ?",
-      "reponse": "L'électro",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel duo américain à la batterie et au clavier a chanté Stressed Out ?",
-      "reponse": "Twenty One Pilots",
+      "question": "Quelle chanteuse folk canadienne a écrit Big Yellow Taxi ?",
+      "reponse": "Joni Mitchell",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on un son très bas, comme celui d'un gros tambour ?",
-      "reponse": "Un son grave",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel grand disque de métal se frappe pour un son profond qui résonne longtemps ?",
-      "reponse": "Le gong",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel sous-genre du rap se reconnaît à ses charlestons rapides et ses basses lourdes ?",
-      "reponse": "La trap",
-      "niveau": 3,
-      "ages": [
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à cordes et à long manche donne son son à la musique country ?",
-      "reponse": "Le banjo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse américaine a percé à 17 ans avec drivers license ?",
-      "reponse": "Olivia Rodrigo",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment s'appelle le plus gros tambour d'une fanfare ?",
-      "reponse": "La grosse caisse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui règle le son pendant un spectacle ?",
-      "reponse": "Le sonorisateur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
+        "aines"
       ]
     }
   ]

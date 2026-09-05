@@ -7,27 +7,9 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle forme donne-t-on au poisson pané pour les enfants ?",
-      "reponse": "Des bâtonnets",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel dimanche de mai célèbre-t-on les mamans ?",
-      "reponse": "La fête des Mères",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
-      "reponse": "Un sauveteur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel géant mythologique n'a qu'un seul œil ?",
-      "reponse": "Le cyclope",
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une bande de sable au bord de la mer ?",
+      "reponse": "Une plage",
       "niveau": 1
     },
     {
@@ -37,34 +19,32 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Que construit-on avec un seau et une pelle au bord de l'eau ?",
-      "reponse": "Un château de sable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film Pixar une maison vole-t-elle avec des ballons ?",
-      "reponse": "Là-haut",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
       "question": "Quel jeu de cour d'école fait sauter par-dessus une corde qui tourne ?",
       "reponse": "La corde à danser",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel petit animal à coquille rampe lentement en laissant une trace ?",
-      "reponse": "L'escargot",
-      "niveau": 1
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation raconte une princesse écossaise aux cheveux roux qui tire à l'arc ?",
+      "reponse": "Rebelle",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon est élevé par les loups dans la jungle ?",
-      "reponse": "Mowgli",
-      "niveau": 1
+      "categorie": "Musique",
+      "question": "Comment nomme-t-on une chanson sans instruments ?",
+      "reponse": "A cappella",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -73,21 +53,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "De quelle couleur est le feu de circulation qui dit d'avancer ?",
-      "reponse": "Vert",
+      "categorie": "Cinéma et télé",
+      "question": "Quels animaux revivent dans Jurassic Park ?",
+      "reponse": "Les dinosaures",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Que souffle-t-on sur le gâteau de fête après avoir fait un vœu ?",
-      "reponse": "Les bougies",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal noir et blanc dégage une odeur terrible quand il a peur ?",
-      "reponse": "La mouffette",
+      "categorie": "Culture générale",
+      "question": "Quel sac chaud sert à dormir en camping ?",
+      "reponse": "Un sac de couchage",
       "niveau": 1
     },
     {
@@ -102,50 +76,44 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat japonais est une soupe de nouilles ?",
-      "reponse": "Le ramen",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans « Savez-vous planter les choux », avec quoi les plante-t-on en premier ?",
-      "reponse": "Le doigt",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Comment dit-on « merci » en espagnol ?",
-      "reponse": "Gracias",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on une bande de sable au bord de la mer ?",
-      "reponse": "Une plage",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel sac chaud sert à dormir en camping ?",
-      "reponse": "Un sac de couchage",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film d'animation un lion, une girafe, un zèbre et un hippopotame s'échappent-ils d'un zoo de New York ?",
-      "reponse": "Madagascar",
+      "question": "Comment nomme-t-on un mot de sens contraire ?",
+      "reponse": "Un antonyme",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel objet le chef d'orchestre tient-il ?",
-      "reponse": "La baguette",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal noir et blanc dégage une odeur terrible quand il a peur ?",
+      "reponse": "La mouffette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Sur quel objet de ménage les sorcières se déplacent-elles dans le ciel ?",
+      "reponse": "Un balai",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment s'appelle le parlement du Québec ?",
+      "reponse": "Assemblée nationale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
+      "reponse": "Un sauveteur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit jaune les singes adorent-ils ?",
+      "reponse": "La banane",
       "niveau": 1
     },
     {
@@ -155,15 +123,67 @@
       "niveau": 1
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel bonbon rond se tient au bout d'un bâton ?",
+      "reponse": "Un suçon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal à coquille rampe lentement en laissant une trace ?",
+      "reponse": "L'escargot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui joue d'un instrument ?",
+      "reponse": "Un musicien",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel roi des mers parle aux poissons ?",
+      "reponse": "Aquaman",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel géant mythologique n'a qu'un seul œil ?",
+      "reponse": "Le cyclope",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume violet et allongé gratine la moussaka ?",
+      "reponse": "L'aubergine",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel restaurant montréalais est célèbre pour son smoked meat ?",
+      "reponse": "Schwartz",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Combien de syllabes compte le mot « chocolat » ?",
-      "reponse": "Trois",
+      "question": "Quel est le contraire de rire ?",
+      "reponse": "Pleurer",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie dormir sur ses deux oreilles ?",
-      "reponse": "Dormir tranquille",
+      "question": "Que signifie les carottes sont cuites ?",
+      "reponse": "C'est fini",
       "niveau": 1
     }
   ]

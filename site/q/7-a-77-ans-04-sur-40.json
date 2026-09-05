@@ -7,41 +7,93 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Espagne ?",
+      "reponse": "Madrid",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte rouge à points noirs porte bonheur ?",
+      "reponse": "La coccinelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment appelle-t-on les amas blancs qui flottent dans le ciel ?",
+      "reponse": "Un nuage",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel hôtel célèbre domine le Vieux-Québec ?",
+      "reponse": "Château Frontenac",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle héroïne à pois rouges combat le crime à Paris avec Chat Noir ?",
-      "reponse": "Ladybug",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
+      "question": "Quel accessoire redonne de l'énergie à un téléphone à plat ?",
+      "reponse": "Un chargeur",
+      "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat suisse racle du fromage fondu ?",
-      "reponse": "La raclette",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Géographie",
+      "question": "Quelle ville est surnommée la Ville lumière ?",
+      "reponse": "Paris",
+      "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quelle organisation regroupe les pays francophones ?",
-      "reponse": "La Francophonie",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Quelle méchante veut un manteau en dalmatiens ?",
+      "reponse": "Cruella",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine demande si le loup y est pendant qu'il s'habille ?",
+      "reponse": "Promenons-nous dans les bois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel appareil sèche les vêtements après le lavage ?",
+      "reponse": "La sécheuse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel moteur de recherche est le plus utilisé au monde ?",
+      "reponse": "Google",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
+      "reponse": "Quatre ans",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel animal, s'il croise votre chemin, porterait malheur ?",
+      "reponse": "Le chat noir",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
       "question": "Quel jouet monte et descend au bout d'une ficelle ?",
       "reponse": "Le yo-yo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Contraire de majuscule ?",
+      "reponse": "Minuscule",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple scandinave naviguait sur des drakkars ?",
+      "reponse": "Les Vikings",
       "niveau": 1
     },
     {
@@ -62,130 +114,56 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle comptine ajoute un éléphant de plus sur une toile d'araignée ?",
-      "reponse": "Un éléphant qui se balançait",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelles croustilles de maïs accompagnent la salsa ?",
-      "reponse": "Les nachos",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on les amas blancs qui flottent dans le ciel ?",
-      "reponse": "Un nuage",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel premier ministre a tenu le référendum de 1980 ?",
-      "reponse": "René Lévesque",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Espagne ?",
-      "reponse": "Madrid",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel moteur de recherche est le plus utilisé au monde ?",
-      "reponse": "Google",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel gala récompense la musique québécoise ?",
-      "reponse": "L'ADISQ",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quels animaux revivent dans Jurassic Park ?",
-      "reponse": "Les dinosaures",
+      "question": "Quel légume en longues tiges vertes croque avec du beurre d'arachide ?",
+      "reponse": "Le céleri",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie dormir comme une bûche ?",
-      "reponse": "Dormir profondément",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville est surnommée la Ville lumière ?",
-      "reponse": "Paris",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte rouge à points noirs porte bonheur ?",
-      "reponse": "La coccinelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la personne qui coupe les cheveux ?",
-      "reponse": "Un coiffeur",
+      "question": "Contraire de léger ?",
+      "reponse": "Lourd",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel ogre vert a une femme nommée Fiona ?",
-      "reponse": "Shrek",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel père de famille travaille dans une centrale nucléaire ?",
-      "reponse": "Homer Simpson",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
-      "reponse": "Quatre ans",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple scandinave naviguait sur des drakkars ?",
-      "reponse": "Les Vikings",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel animal, s'il croise votre chemin, porterait malheur ?",
-      "reponse": "Le chat noir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle émission satirique anime Jean-René Dufort ?",
-      "reponse": "Infoman",
+      "question": "Quel garçon au chandail à zigzag est le maître de Snoopy ?",
+      "reponse": "Charlie Brown",
       "niveau": 1,
       "ages": [
+        "enfants",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume jaune se mange en épi, au beurre et au sel ?",
-      "reponse": "Le maïs",
+      "question": "Quel fruit orange se sculpte à l'Halloween ?",
+      "reponse": "La citrouille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à archet se joue assis, entre les genoux ?",
+      "reponse": "Le violoncelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ustensile à quatre dents pique les aliments ?",
+      "reponse": "La fourchette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de tigre ?",
+      "reponse": "Tigresse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel superhéros enfile son costume dans une cabine téléphonique ?",
+      "reponse": "Superman",
       "niveau": 1
     }
   ]

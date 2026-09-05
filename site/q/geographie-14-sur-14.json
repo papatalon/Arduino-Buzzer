@@ -8,8 +8,20 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Autriche ?",
-      "reponse": "Vienne",
+      "question": "Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?",
+      "reponse": "La ville de Québec",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une des sept grandes masses de terre du globe ?",
+      "reponse": "Un continent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Irlande ?",
+      "reponse": "Dublin",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,8 +31,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel fleuve traverse l'Allemagne et se jette à Rotterdam ?",
-      "reponse": "Le Rhin",
+      "question": "Quelle étendue d'eau salée immense sépare les continents ?",
+      "reponse": "L'océan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande île de la Méditerranée ?",
+      "reponse": "La Sicile",
       "niveau": 2,
       "ages": [
         "ados",
@@ -30,84 +48,21 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le grand bâtiment d'où décollent les avions ?",
-      "reponse": "Un aéroport",
+      "question": "Dans quelle ville se dresse la statue de la Liberté ?",
+      "reponse": "New York",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la grande étendue de terre où le fermier sème son blé ?",
-      "reponse": "Un champ",
+      "question": "Sur quel continent se trouve le pôle Sud ?",
+      "reponse": "L'Antarctique",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
-      "reponse": "La Norvège",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est voisine du Québec, à l'est, avec Fredericton pour capitale ?",
-      "reponse": "Le Nouveau-Brunswick",
+      "question": "Quel animal géant et blanc est le symbole du Grand Nord canadien ?",
+      "reponse": "L'ours polaire",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Ontario ?",
-      "reponse": "Toronto",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel grand pont relie l'île de Montréal à la Rive-Sud près du fleuve ?",
-      "reponse": "Le pont Champlain",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel récif corallien longe l'Australie ?",
-      "reponse": "Grande Barrière",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on la savane, les lions et les girafes en liberté ?",
-      "reponse": "Le Kenya",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Grèce ?",
-      "reponse": "Athènes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Corée du Sud ?",
-      "reponse": "Séoul",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve traverse Londres ?",
-      "reponse": "La Tamise",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Géographie",
@@ -122,27 +77,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Machu Picchu, cité perdue des Incas ?",
-      "reponse": "Le Pérou",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel état américain est un archipel volcanique ?",
-      "reponse": "Hawaï",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville du Canada ?",
-      "reponse": "Toronto",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle tour de fer domine Paris ?",
-      "reponse": "La tour Eiffel",
-      "niveau": 1
+      "question": "Quelle île canadienne est la plus grande ?",
+      "reponse": "Île de Baffin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -152,9 +94,21 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays a une croix blanche sur fond rouge ?",
-      "reponse": "La Suisse",
-      "niveau": 1,
+      "question": "Quelle ville italienne est célèbre pour ses canaux ?",
+      "reponse": "Venise",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le grand bâtiment d'où décollent les avions ?",
+      "reponse": "Un aéroport",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle péninsule abrite Espagne et Portugal ?",
+      "reponse": "Ibérique",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -163,11 +117,47 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel désert froid couvre une partie de la Mongolie ?",
-      "reponse": "Le Gobi",
+      "question": "Quelle est la plus haute montagne d'Amérique du Nord ?",
+      "reponse": "Le Denali",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve Petra, la cité rose ?",
+      "reponse": "La Jordanie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Hongrie ?",
+      "reponse": "Budapest",
       "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays d'Europe est célèbre pour ses moulins à vent et ses tulipes ?",
+      "reponse": "Les Pays-Bas",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel petit pays est enclavé entre France et Espagne ?",
+      "reponse": "Andorre",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -180,15 +170,37 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle ville se trouve la tour Eiffel ?",
-      "reponse": "Paris",
-      "niveau": 1
+      "question": "Dans quelle ville trouve-t-on la place Tiananmen ?",
+      "reponse": "Pékin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le décalage d'heure entre Montréal et Paris ?",
-      "reponse": "Le décalage horaire",
-      "niveau": 3
+      "question": "Dans quel pays d'Europe trouve-t-on le chocolat, les montres et les Alpes ?",
+      "reponse": "La Suisse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Kremlin ?",
+      "reponse": "Moscou",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve la majorité de l'Amazonie ?",
+      "reponse": "Le Brésil",
+      "niveau": 1
     }
   ]
 }

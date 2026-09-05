@@ -7,6 +7,12 @@
   "emoji": "🐾",
   "questions": [
     {
+      "categorie": "Sciences et nature",
+      "question": "Combien de pattes possède une araignée ?",
+      "reponse": "Huit",
+      "niveau": 1
+    },
+    {
       "categorie": "Bouffe et cuisine",
       "question": "Quel poisson fumé garnit le bagel classique ?",
       "reponse": "Le saumon fumé",
@@ -59,10 +65,14 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel poisson bleu perd la mémoire dans Nemo ?",
-      "reponse": "Dory",
-      "niveau": 1
+      "categorie": "Culture générale",
+      "question": "Dans quel jeu vidéo aménage-t-on une île en remboursant un raton laveur ?",
+      "reponse": "Animal Crossing",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -89,19 +99,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Dans quel jeu vidéo aménage-t-on une île en remboursant un raton laveur ?",
-      "reponse": "Animal Crossing",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
       "categorie": "Cinéma et télé",
       "question": "Quel ami de Winnie l'ourson est un âne toujours triste ?",
       "reponse": "Bourriquet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la trace d'un animal préhistorique conservée dans la pierre ?",
+      "reponse": "Un fossile",
       "niveau": 1
     },
     {
@@ -110,23 +116,6 @@
       "reponse": "Le disco",
       "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on l'abri où dort l'ours pendant l'hiver ?",
-      "reponse": "Une tanière",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel oiseau blanc envahit les champs du Québec au printemps et à l'automne ?",
-      "reponse": "L'oie blanche",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -143,10 +132,22 @@
       ]
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel oiseau de dessin animé file à toute vitesse en faisant « bip bip » ?",
+      "reponse": "Bip Bip",
+      "niveau": 1
+    },
+    {
       "categorie": "Sciences et nature",
       "question": "Quel grand singe est le plus proche de l'homme ?",
       "reponse": "Le chimpanzé",
       "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on l'abri où dort l'ours pendant l'hiver ?",
+      "reponse": "Une tanière",
+      "niveau": 2
     },
     {
       "categorie": "Culture pop",
@@ -165,16 +166,10 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel oiseau de dessin animé file à toute vitesse en faisant « bip bip » ?",
-      "reponse": "Bip Bip",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
+      "reponse": "L'étoile de mer",
       "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel musée montréalais expose des insectes vivants et naturalisés ?",
-      "reponse": "L'Insectarium",
-      "niveau": 2
     },
     {
       "categorie": "Cinéma et télé",

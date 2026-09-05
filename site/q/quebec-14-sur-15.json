@@ -8,14 +8,141 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Quel quartier historique de Québec est fortifié ?",
-      "reponse": "Le Vieux-Québec",
+      "question": "Combien de députés siègent à l'Assemblée nationale ?",
+      "reponse": "125",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel capitaine des Canadiens a soulevé la coupe en 1993 ?",
+      "reponse": "Guy Carbonneau",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel animateur québécois a animé La Poule aux œufs d'or ?",
+      "reponse": "Guy Mongrain",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne des chaussures de sport ?",
+      "reponse": "Des espadrilles",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle fête de juin invite les gens d'une même rue à se rassembler ?",
-      "reponse": "La fête des voisins",
+      "question": "Quel est l'oiseau emblème du Québec ?",
+      "reponse": "Harfang des neiges",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel plat québécois combine frites, fromage et sauce ?",
+      "reponse": "La poutine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle péninsule québécoise s'avance dans le golfe ?",
+      "reponse": "La Gaspésie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel pont cantilever centenaire relie Québec et Lévis ?",
+      "reponse": "Le pont de Québec",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle île gaspésienne abrite des fous de Bassan ?",
+      "reponse": "Bonaventure",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment nomme-t-on un hot-dog cuit à la vapeur au Québec ?",
+      "reponse": "Un steamé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel joueur des Canadiens fut surnommé le Démon blond ?",
+      "reponse": "Guy Lafleur",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne l'aspirateur qu'on passe dans la maison ?",
+      "reponse": "La balayeuse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
+      "reponse": "L'autoroute 40",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel rocher troué est l'emblème de la Gaspésie ?",
+      "reponse": "Le rocher Percé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle chaîne de dépanneurs québécoise a un hibou ?",
+      "reponse": "Couche-Tard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel grand feu s'allume le soir de la Saint-Jean ?",
+      "reponse": "Un feu de joie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quels canots géants transportaient les fourrures ?",
+      "reponse": "Canots de maître",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -24,8 +151,18 @@
     },
     {
       "categorie": "Québec",
-      "question": "De quel village vient le conteur Fred Pellerin ?",
-      "reponse": "Saint-Élie-de-Caxton",
+      "question": "Quelle grande salle montréalaise accueille l'orchestre symphonique et l'opéra ?",
+      "reponse": "La Place des Arts",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle ville de l'Estrie abrite l'Université Bishop's ?",
+      "reponse": "Sherbrooke",
       "niveau": 2,
       "ages": [
         "ados",
@@ -35,80 +172,30 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle station de ski des Laurentides attire les skieurs de partout ?",
-      "reponse": "Le mont Tremblant",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que chausse-t-on par-dessus ses souliers pour marcher dans la neige ?",
-      "reponse": "Des bottes",
+      "question": "Comment appelle-t-on au Québec la maison de vacances au bord d'un lac ?",
+      "reponse": "Le chalet",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel parc national de la Gaspésie s'avance au bout de la péninsule ?",
-      "reponse": "Forillon",
+      "question": "Quel est le plus grand cervidé du Québec ?",
+      "reponse": "L'orignal",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle compagnie de fourrures rivalisait avec la Baie d'Hudson ?",
+      "reponse": "Nord-Ouest",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel hockeyeur était surnommé le Rocket ?",
-      "reponse": "Maurice Richard",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit rongeur rayé du Québec remplit ses joues de graines ?",
-      "reponse": "Le suisse",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel film de Denys Arcand a gagné un Oscar ?",
-      "reponse": "Invasions barbares",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que met-on sur sa tête pour aller jouer dehors l'hiver au Québec ?",
-      "reponse": "Une tuque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle chaîne québécoise vend équipement de sport et vêtements de plein air ?",
-      "reponse": "Sports Experts",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel style musical a son grand festival à Montréal en juillet ?",
-      "reponse": "Le jazz",
+      "question": "Quel lard frit croustillant sert-on à la cabane ?",
+      "reponse": "Oreilles de crisse",
       "niveau": 1,
       "ages": [
         "ados",
@@ -118,101 +205,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel congé du début septembre marque la fin de l'été au Québec ?",
-      "reponse": "La fête du Travail",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel film culte parle d'une guerre de balles de neige ?",
-      "reponse": "La Guerre des tuques",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelles chutes près de Québec sont plus hautes que Niagara ?",
-      "reponse": "Montmorency",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle université montréalaise porte quatre lettres commençant par UQ ?",
-      "reponse": "L'UQAM",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui appelle-t-on au 911 quand quelqu'un est blessé ?",
-      "reponse": "L'ambulance",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle ville québécoise est surnommée la ville aux cent clochers ?",
-      "reponse": "Montréal",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle grosse machine tire la charrue dans les champs ?",
-      "reponse": "Un tracteur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel réalisateur québécois a tourné Dune ?",
-      "reponse": "Denis Villeneuve",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle plaque de métal à l'arrière de l'auto porte « Je me souviens » ?",
-      "reponse": "La plaque d'immatriculation",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle période sombre est associée à Duplessis ?",
-      "reponse": "La Grande Noirceur",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui a fondé la ville de Québec en 1608 ?",
-      "reponse": "Champlain",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel poisson moucheté se pêche dans les lacs du Québec ?",
-      "reponse": "La truite",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne l'argent, familièrement ?",
-      "reponse": "Du cash",
+      "question": "En quelle année Montréal a-t-elle été fondée ?",
+      "reponse": "1642",
       "niveau": 2,
       "ages": [
         "ados",

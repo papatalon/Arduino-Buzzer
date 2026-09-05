@@ -8,14 +8,25 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Quel lac immense borde Roberval et Alma ?",
-      "reponse": "Lac Saint-Jean",
-      "niveau": 1
+      "question": "Quel bateau relie Québec et Lévis toute l'année ?",
+      "reponse": "Le traversier",
+      "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quel organisme veille sur la langue française au Québec ?",
-      "reponse": "L'OQLF",
+      "question": "Comment s'appelait le village iroquois devenu Québec ?",
+      "reponse": "Stadaconé",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle rue étroite du Vieux-Québec est très photographiée ?",
+      "reponse": "Petit-Champlain",
       "niveau": 1,
       "ages": [
         "ados",
@@ -25,24 +36,35 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel gardien des Canadiens a porté le premier masque ?",
-      "reponse": "Jacques Plante",
+      "question": "Quelle plaque de métal à l'arrière de l'auto porte « Je me souviens » ?",
+      "reponse": "La plaque d'immatriculation",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel parc montréalais fut dessiné par Frederick Olmsted ?",
+      "reponse": "Le mont Royal",
       "niveau": 2,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel traîneau de bois aux lattes recourbées glisse sur la neige au Québec ?",
-      "reponse": "La traîne sauvage",
-      "niveau": 1
+      "question": "Quel poète québécois a écrit Le Vaisseau d'or ?",
+      "reponse": "Émile Nelligan",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne une automobile ?",
-      "reponse": "Un char",
-      "niveau": 1
+      "question": "Quel arbre blanc à écorce qui pèle sert à faire les canots d'écorce ?",
+      "reponse": "Le bouleau",
+      "niveau": 2
     },
     {
       "categorie": "Québec",
@@ -56,20 +78,64 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle bibliothèque nationale ouverte en 2005 se dresse près de Berri-UQAM ?",
-      "reponse": "La Grande Bibliothèque",
-      "niveau": 3,
+      "question": "Comment appelle-t-on l'étage sous le rez-de-chaussée où l'on range et où l'on joue ?",
+      "reponse": "Le sous-sol",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "De quelle couleur est le bac de recyclage au Québec ?",
+      "reponse": "Bleu",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle auteure a écrit Les Filles de Caleb ?",
+      "reponse": "Arlette Cousture",
+      "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelle chanson de Félix Leclerc célèbre une île ?",
-      "reponse": "Le tour de l'île",
-      "niveau": 2,
+      "question": "Quelle est la fleur emblème du Québec ?",
+      "reponse": "Iris versicolore",
+      "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel restaurant montréalais est célèbre pour son smoked meat ?",
+      "reponse": "Schwartz",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la couche de glace qui se forme au bord des toits ?",
+      "reponse": "Une barrière de glace",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle légende québécoise fait voler un canot ?",
+      "reponse": "La chasse-galerie",
+      "niveau": 1,
+      "ages": [
+        "enfants",
         "adultes",
         "aines"
       ]
@@ -82,14 +148,47 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel jardin montréalais est parmi les plus grands au monde ?",
-      "reponse": "Jardin botanique",
+      "question": "Quelle soirée habillée clôt les cinq années du secondaire en juin ?",
+      "reponse": "Le bal des finissants",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on le trou creusé dans l'asphalte par le gel et le dégel ?",
-      "reponse": "Un nid-de-poule",
+      "question": "Que chausse-t-on par-dessus ses souliers pour marcher dans la neige ?",
+      "reponse": "Des bottes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "De quelle couleur est le fond du drapeau du Québec ?",
+      "reponse": "Bleu",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que veut dire « il fait frette » ?",
+      "reponse": "Il fait très froid",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le premier jour de classe après les vacances d'été ?",
+      "reponse": "La rentrée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel chansonnier a écrit Quand les hommes vivront d'amour ?",
+      "reponse": "Raymond Lévesque",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne le manteau et la salopette d'hiver des enfants ?",
+      "reponse": "L'habit de neige",
       "niveau": 1
     },
     {
@@ -105,112 +204,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle cabane à sucre célèbre appartient à un chef renommé ?",
-      "reponse": "Au Pied de Cochon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fête hivernale illumine le Vieux-Port de Montréal ?",
-      "reponse": "Igloofest",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Combien de fleurs de lys sur le drapeau du Québec ?",
-      "reponse": "Quatre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la fin de semaine du 1er juillet où tout le monde déménage ?",
-      "reponse": "Le jour du déménagement",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit fruit rouge se cueille dans les tourbières du Québec l'automne ?",
-      "reponse": "La canneberge",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle île gaspésienne abrite des fous de Bassan ?",
-      "reponse": "Bonaventure",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle île du Saint-Laurent fut une station de quarantaine ?",
-      "reponse": "Grosse-Île",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Combien de régions administratives compte le Québec ?",
-      "reponse": "17",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le document qui rapporte les notes d'un élève à ses parents ?",
-      "reponse": "Le bulletin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "En quelle année le métro de Montréal a-t-il ouvert ?",
-      "reponse": "1966",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Où fabrique-t-on le sirop d'érable ?",
-      "reponse": "À la cabane à sucre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que veut dire l'expression québécoise « c'est plate » ?",
-      "reponse": "C'est ennuyant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fête marque la fin du secondaire pour les finissants, en juin ?",
-      "reponse": "Le bal des finissants",
+      "question": "Quelle grosse machine tire la charrue dans les champs ?",
+      "reponse": "Un tracteur",
       "niveau": 1
     }
   ]

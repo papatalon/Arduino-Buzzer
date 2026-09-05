@@ -7,24 +7,10 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Combien de demi-tons dans une octave ?",
-      "reponse": "Douze",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel site de mode en ligne inonde le marché de vêtements à très bas prix ?",
-      "reponse": "Shein",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
+      "reponse": "L'Alberta",
+      "niveau": 3
     },
     {
       "categorie": "Sports",
@@ -37,24 +23,30 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel capitaine de la télé jeunesse racontait des histoires invraisemblables avec ses invisibles ?",
-      "reponse": "Le Capitaine Bonhomme",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle infusion sud-africaine est naturellement rouge ?",
+      "reponse": "Le rooibos",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles cigarettes de bonbon blanches portaient le nom d'un marin costaud ?",
+      "reponse": "Les Popeye",
+      "niveau": 3,
+      "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelle équipe de hockey junior joue au Centre Vidéotron de Québec ?",
-      "reponse": "Les Remparts",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel biscuit québécois à la mélasse se trempe dans le lait ?",
+      "reponse": "La galette à la mélasse",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
@@ -65,6 +57,70 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel petit objet de métal en forme de fourche donne le la aux musiciens ?",
+      "reponse": "Un diapason",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui écrit les paroles d'une chanson ?",
+      "reponse": "Un parolier",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle pâte à tartiner orange se vend en pot et se met sur les rôties ?",
+      "reponse": "Le Cheez Whiz",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Sur quelle bande magnétique écoutait-on la musique avant le disque compact ?",
+      "reponse": "Une cassette",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument de flûtes de longueurs différentes se joue en soufflant à leur bord ?",
+      "reponse": "La flûte de Pan",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle bibliothèque nationale ouverte en 2005 se dresse près de Berri-UQAM ?",
+      "reponse": "La Grande Bibliothèque",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle plateforme les pirates faisaient-ils parcourir aux prisonniers au-dessus de l'eau ?",
+      "reponse": "La planche",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
@@ -78,140 +134,39 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
-      "reponse": "Grand Theft Auto",
+      "question": "Quelle petite radio portative à pile a libéré la musique des salons ?",
+      "reponse": "Le transistor",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles équipes de sous-marins explorent les océans en secourant les animaux marins ?",
+      "reponse": "Les Octonauts",
+      "niveau": 3,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu télévisé québécois demande de repérer celui qui ment ?",
+      "reponse": "Le Tricheur",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
-      "reponse": "La Finlande",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel est l'arbre emblème du Québec ?",
-      "reponse": "Le bouleau jaune",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les cent ans d'un événement qu'on souligne par une fête ?",
-      "reponse": "Un centenaire",
-      "niveau": 3
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
-      "reponse": "La granita",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à vent en bois donne les sons les plus graves de l'orchestre ?",
-      "reponse": "Le basson",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
-      "reponse": "L'Alberta",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel champignon rouge à pois blancs des contes pousse dans les forêts ?",
-      "reponse": "L'amanite tue-mouches",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel commerce de village vendait autrefois aussi bien le clou que la farine ?",
-      "reponse": "Le magasin général",
+      "question": "Quelle série québécoise se déroulait dans Charlevoix après la Première Guerre ?",
+      "reponse": "Le temps d'une paix",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle plateforme les pirates faisaient-ils parcourir aux prisonniers au-dessus de l'eau ?",
-      "reponse": "La planche",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à soufflet accompagne le tango ?",
-      "reponse": "Le bandonéon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mot québécois remplace « chat » pour une conversation écrite en ligne ?",
-      "reponse": "Le clavardage",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur écossais a chanté Someone You Loved ?",
-      "reponse": "Lewis Capaldi",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission du samedi soir diffusait le hockey à Radio-Canada ?",
-      "reponse": "La Soirée du hockey",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse traditionnelle québécoise se danse à quatre couples sur les appels d'un câlleur ?",
-      "reponse": "Le set carré",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     },
@@ -226,22 +181,59 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle carte de plastique rigide permettait de louer des films au club vidéo ?",
-      "reponse": "La carte de membre",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Quel groupe américain a chanté Mr. Brightside ?",
-      "reponse": "The Killers",
+      "question": "Quel rappeur québécois signe ses chansons d'un mot qui rime avec Zay ?",
+      "reponse": "FouKi",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les cent ans d'un événement qu'on souligne par une fête ?",
+      "reponse": "Un centenaire",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
+      "reponse": "L'escalier Casse-Cou",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on plusieurs notes jouées en même temps ?",
+      "reponse": "Un accord",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
+      "reponse": "La Finlande",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelait-on le téléphone que plusieurs foyers du village devaient se partager ?",
+      "reponse": "La ligne partagée",
+      "niveau": 3,
+      "ages": [
+        "aines"
       ]
     }
   ]

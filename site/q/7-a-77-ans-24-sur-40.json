@@ -7,39 +7,36 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel sprinteur détient le record du 100 mètres ?",
-      "reponse": "Usain Bolt",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Où va-t-on voir des lions et des girafes en enclos ?",
-      "reponse": "Au zoo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les humains qui vivaient dans des grottes ?",
-      "reponse": "Les hommes des cavernes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la transformation de la chenille ?",
-      "reponse": "La métamorphose",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle confiserie blanche flotte sur le chocolat chaud ?",
-      "reponse": "La guimauve",
+      "categorie": "Géographie",
+      "question": "Sur quel continent se trouvent la France et l'Italie ?",
+      "reponse": "L'Europe",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie se lever du mauvais pied ?",
-      "reponse": "Être de mauvaise humeur",
+      "question": "Que signifie avoir de la broue dans le toupet ?",
+      "reponse": "Être débordé",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson anglaise fait toucher la tête, les épaules, les genoux et les orteils ?",
+      "reponse": "Head and Shoulders",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle reine a des pouvoirs de glace chez Disney ?",
+      "reponse": "Elsa",
       "niveau": 1
     },
     {
@@ -49,44 +46,33 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouvent la France et l'Italie ?",
-      "reponse": "L'Europe",
+      "categorie": "Culture pop",
+      "question": "Quel arbre décoré trône dans le salon en décembre ?",
+      "reponse": "Un sapin de Noël",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Dans quelle ville l'aquarium présente-t-il des ours blancs ?",
-      "reponse": "Québec",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
+      "reponse": "Le club sandwich",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel mage noir est l'ennemi de Harry Potter ?",
-      "reponse": "Voldemort",
+      "categorie": "Musique",
+      "question": "Quelle jupe courte et bouffante portent les danseuses de ballet ?",
+      "reponse": "Le tutu",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quel est le cri du cochon ?",
-      "reponse": "Le grognement",
+      "question": "Comment appelle-t-on la personne assise aux commandes d'un avion ?",
+      "reponse": "Un pilote",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle galette de maïs enroule les fajitas ?",
-      "reponse": "La tortilla",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit est l'ingrédient principal du cidre ?",
-      "reponse": "La pomme",
+      "categorie": "Sports",
+      "question": "Quel sprinteur détient le record du 100 mètres ?",
+      "reponse": "Usain Bolt",
       "niveau": 1
     },
     {
@@ -97,13 +83,37 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel jouet cosmonaute de Toy Story crie « Vers l'infini et au-delà » ?",
-      "reponse": "Buzz Lightyear",
+      "question": "Quel est le chien de compagnie de Mickey ?",
+      "reponse": "Pluto",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel appareil lave les vêtements dans le sous-sol ?",
+      "reponse": "La laveuse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les humains qui vivaient dans des grottes ?",
+      "reponse": "Les hommes des cavernes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle confiserie blanche flotte sur le chocolat chaud ?",
+      "reponse": "La guimauve",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel naturaliste a proposé la théorie de l'évolution ?",
+      "reponse": "Darwin",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -113,9 +123,21 @@
       "niveau": 1
     },
     {
+      "categorie": "Québec",
+      "question": "Quel dessert de la cabane à sucre se roule sur la neige avec un bâton ?",
+      "reponse": "La tire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle la transformation de la chenille ?",
+      "reponse": "La métamorphose",
+      "niveau": 1
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Synonyme de content, commençant par H ?",
-      "reponse": "Heureux",
+      "question": "Comment appelle-t-on le livre qui explique le sens des mots ?",
+      "reponse": "Un dictionnaire",
       "niveau": 1
     },
     {
@@ -125,55 +147,27 @@
       "niveau": 1
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit vert ou jaune a la forme d'une goutte ?",
+      "reponse": "La poire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel journaliste est l'identité secrète de Superman ?",
+      "reponse": "Clark Kent",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture générale",
       "question": "Quelle direction indique l'aiguille d'une boussole ?",
       "reponse": "Le nord",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel gros instrument à cordes se joue debout ?",
-      "reponse": "La contrebasse",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle pâte gluante et étirable se fabrique à la maison avec de la colle ?",
-      "reponse": "La slime",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle famille de super-héros Pixar porte du rouge ?",
-      "reponse": "Les Incroyables",
-      "niveau": 1
-    },
-    {
       "categorie": "Géographie",
       "question": "Comment appelle-t-on la grande route à plusieurs voies entre deux villes ?",
       "reponse": "Une autoroute",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la longue plateforme de bois devant la maison, avec sa balançoire ?",
-      "reponse": "La galerie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on les mots d'une chanson ?",
-      "reponse": "Les paroles",
       "niveau": 1
     }
   ]

@@ -7,6 +7,35 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Culture pop",
+      "question": "Quelles billes de plastique s'ouvrent en figurine au contact d'une carte ?",
+      "reponse": "Les Bakugan",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la longue lettre gravée dans la pierre pour raconter un règne ?",
+      "reponse": "Une inscription",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de cour d'école fait sauter en tapant dans les mains d'un partenaire ?",
+      "reponse": "La tape-tape",
+      "niveau": 3,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
       "categorie": "Sports",
       "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
       "reponse": "Tessa Virtue",
@@ -17,21 +46,9 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on les grandes îles du golfe où l'on va en traversier l'été ?",
-      "reponse": "Les Îles-de-la-Madeleine",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
-      "reponse": "Une joute",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
-      "reponse": "Loud",
+      "categorie": "Culture pop",
+      "question": "Quelle activité enferme un groupe devant des énigmes à résoudre avant la fin du temps ?",
+      "reponse": "Un jeu d'évasion",
       "niveau": 3,
       "ages": [
         "ados",
@@ -49,13 +66,43 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat robot bleu vient du futur ?",
-      "reponse": "Doraemon",
+      "categorie": "Culture générale",
+      "question": "Quel pays a un drapeau non rectangulaire ?",
+      "reponse": "Le Népal",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat brésilien est un ragoût de haricots noirs ?",
+      "reponse": "La feijoada",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel vêtement des années 60 a scandalisé en raccourcissant brusquement ?",
+      "reponse": "La minijupe",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quelle figure de style exagère volontairement ?",
+      "reponse": "L'hyperbole",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -65,34 +112,16 @@
       "niveau": 3
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelles cigarettes de bonbon blanches portaient le nom d'un marin costaud ?",
-      "reponse": "Les Popeye",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Musique",
+      "question": "Quel chant de Noël fait résonner un long « Gloria » repris par tout le monde ?",
+      "reponse": "Les anges dans nos campagnes",
+      "niveau": 3
     },
     {
-      "categorie": "Québec",
-      "question": "Quel secteur de Montréal regroupe salles de spectacle et festivals au centre-ville ?",
-      "reponse": "Le Quartier des spectacles",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel papillon est l'insecte emblème du Québec ?",
-      "reponse": "L'amiral",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
+      "reponse": "Une joute",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
@@ -106,12 +135,6 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
-      "reponse": "Le smoked meat",
-      "niveau": 3
-    },
-    {
       "categorie": "Musique",
       "question": "Quelle chanteuse acadienne chante en français avec un banjo ?",
       "reponse": "Lisa LeBlanc",
@@ -122,21 +145,34 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport pratique la famille Hart de Calgary ?",
-      "reponse": "La lutte",
+      "categorie": "Musique",
+      "question": "Quelle danse traditionnelle québécoise se danse à quatre couples sur les appels d'un câlleur ?",
+      "reponse": "Le set carré",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel appareil de poche vibrait pour dire de rappeler quelqu'un, avant le cellulaire ?",
-      "reponse": "Le téléavertisseur",
+      "categorie": "Québec",
+      "question": "Quel sanctuaire au dôme vert domine le flanc du mont Royal ?",
+      "reponse": "L'Oratoire Saint-Joseph",
       "niveau": 3,
       "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la partie creuse de la guitare qui fait résonner le son ?",
+      "reponse": "La caisse",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -152,78 +188,31 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Où regardait-on un film assis dans son auto, l'été ?",
-      "reponse": "Au ciné-parc",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on les grandes îles du golfe où l'on va en traversier l'été ?",
+      "reponse": "Les Îles-de-la-Madeleine",
+      "niveau": 3
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel défi a fait verser des seaux d'eau glacée sur des têtes en 2014 ?",
-      "reponse": "Le Ice Bucket Challenge",
+      "categorie": "Musique",
+      "question": "Quelle figure de note vaut quatre temps, la plus longue de toutes ?",
+      "reponse": "La ronde",
+      "niveau": 3
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel studio japonais a créé Mon voisin Totoro ?",
+      "reponse": "Ghibli",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel guitariste de Queen a un doctorat en astrophysique ?",
-      "reponse": "Brian May",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel explorateur portugais a contourné l'Afrique en 1498 ?",
-      "reponse": "Vasco de Gama",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel pays a un drapeau non rectangulaire ?",
-      "reponse": "Le Népal",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle pédale déforme le son de la guitare pour le rendre saturé ?",
-      "reponse": "La distorsion",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
-      "reponse": "Les Baronets",
-      "niveau": 3,
-      "ages": [
-        "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel salon annuel de Montréal fait découvrir les livres québécois ?",
-      "reponse": "Le Salon du livre",
+      "question": "Comment appelle-t-on celui qui exploite une érablière ?",
+      "reponse": "Un acériculteur",
       "niveau": 3,
       "ages": [
         "ados",
@@ -232,12 +221,21 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Combien de pays ont le français comme langue officielle : 9, 29 ou 59 ?",
-      "reponse": "29",
+      "categorie": "Sports",
+      "question": "Quel sport pratique la famille Hart de Calgary ?",
+      "reponse": "La lutte",
       "niveau": 3,
       "ages": [
         "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle quincaillerie québécoise portait un prénom dans son enseigne ?",
+      "reponse": "Pascal",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     }

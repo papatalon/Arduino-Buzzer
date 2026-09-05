@@ -7,9 +7,66 @@
   "emoji": "🎲",
   "questions": [
     {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de fermer ?",
+      "reponse": "Ouvrir",
+      "niveau": 1
+    },
+    {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la fin de semaine du 1er juillet où tout le monde déménage ?",
-      "reponse": "Le jour du déménagement",
+      "question": "Quel musée montréalais expose des insectes vivants et naturalisés ?",
+      "reponse": "L'Insectarium",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le chemin de terre battue dans le bois ?",
+      "reponse": "Un sentier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel animal le clown tord-il dans un long ballon pour les enfants ?",
+      "reponse": "Un chien en ballon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que veut dire etc. ?",
+      "reponse": "Et le reste",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat de longues pâtes se sert avec une sauce à la viande ?",
+      "reponse": "Les spaghettis",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel musicien voyageur chantait des poèmes de château en château ?",
+      "reponse": "Un troubadour",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel acteur incarne Iron Man au cinéma ?",
+      "reponse": "Robert Downey Jr",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque québécoise fabrique les Jos Louis et les May West ?",
+      "reponse": "Vachon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,8 +76,63 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat de longues pâtes se sert avec une sauce à la viande ?",
-      "reponse": "Les spaghettis",
+      "question": "Quel animal est Tony, la mascotte des céréales Frosted Flakes ?",
+      "reponse": "Un tigre",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport utilise-t-on un fer et un vert ?",
+      "reponse": "Le golf",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelles expéditions religieuses visaient Jérusalem ?",
+      "reponse": "Les croisades",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse colombienne a chanté Provenza ?",
+      "reponse": "Karol G",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle particule négative tourne autour du noyau ?",
+      "reponse": "L'électron",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne une fête ?",
+      "reponse": "Un party",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel canard Disney porte un costume marin ?",
+      "reponse": "Donald",
       "niveau": 1
     },
     {
@@ -35,83 +147,9 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel chanteur américain a chanté Uptown Funk et Just the Way You Are ?",
-      "reponse": "Bruno Mars",
+      "question": "De quelle ville viennent les Beatles ?",
+      "reponse": "Liverpool",
       "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient du vent ?",
-      "reponse": "L'énergie éolienne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "De quelle couleur est le feu de circulation qui dit d'avancer ?",
-      "reponse": "Vert",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelles expéditions religieuses visaient Jérusalem ?",
-      "reponse": "Les croisades",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel chocolat creux se déballe le matin de Pâques ?",
-      "reponse": "Un œuf en chocolat",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Combien reçoit-on en rapportant une canette consignée ?",
-      "reponse": "Cinq sous",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel instrument d'écriture contient du graphite ?",
-      "reponse": "Le crayon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel mot québécois désigne une fête ?",
-      "reponse": "Un party",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée japonaise suit Son Goku ?",
-      "reponse": "Dragon Ball",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de dents de lait a un enfant ?",
-      "reponse": "20",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport utilise-t-on un fer et un vert ?",
-      "reponse": "Le golf",
-      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -129,72 +167,15 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle tablette de chocolat est pleine de bulles d'air ?",
-      "reponse": "Le Aero",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel prix récompense la musique aux États-Unis ?",
-      "reponse": "Le Grammy",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que veut dire etc. ?",
-      "reponse": "Et le reste",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle île de Montréal accueille le parc d'attractions La Ronde ?",
-      "reponse": "L'île Sainte-Hélène",
-      "niveau": 3
-    },
-    {
       "categorie": "Culture générale",
       "question": "Combien de doigts a-t-on sur une main ?",
       "reponse": "Cinq",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de fermer ?",
-      "reponse": "Ouvrir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel animal est Tony, la mascotte des céréales Frosted Flakes ?",
-      "reponse": "Un tigre",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelles petites créatures jaunes adorent les bananes ?",
-      "reponse": "Les Minions",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel musicien voyageur chantait des poèmes de château en château ?",
-      "reponse": "Un troubadour",
+      "categorie": "Sciences et nature",
+      "question": "Quel métal précieux conduit le mieux l'électricité ?",
+      "reponse": "L'argent",
       "niveau": 3,
       "ages": [
         "ados",
@@ -203,10 +184,32 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Quel liquide met-on dans le réservoir de l'auto à la station-service ?",
+      "reponse": "L'essence",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel numéro compose-t-on au Québec pour joindre un service non urgent de la ville ?",
+      "reponse": "Le 311",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel instrument d'écriture contient du graphite ?",
+      "reponse": "Le crayon",
+      "niveau": 1
+    },
+    {
       "categorie": "Géographie",
-      "question": "Quelle mer borde la Côte d'Azur ?",
-      "reponse": "La Méditerranée",
-      "niveau": 1,
+      "question": "Combien de fuseaux horaires couvre le Canada ?",
+      "reponse": "Six",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",

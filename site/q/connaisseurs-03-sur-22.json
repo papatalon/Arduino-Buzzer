@@ -7,20 +7,41 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel sport de cirque marche sur un fil tendu en hauteur ?",
-      "reponse": "Le funambulisme",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui dirige une chorale ?",
+      "reponse": "Un chef de chœur",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
+      "reponse": "Le parchemin",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel artiste a mêlé country et rap dans Old Town Road ?",
+      "reponse": "Lil Nas X",
       "niveau": 3,
       "ages": [
-        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse québécoise a raflé les Junos avec l'album Phoenix ?",
+      "reponse": "Charlotte Cardin",
+      "niveau": 3,
+      "ages": [
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Où logeait le curé de la paroisse ?",
-      "reponse": "Au presbytère",
+      "question": "Quel petit disque contenait une chanson de chaque côté ?",
+      "reponse": "Le 45 tours",
       "niveau": 3,
       "ages": [
         "aines"
@@ -28,30 +49,20 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle série québécoise se déroulait dans Charlevoix après la Première Guerre ?",
-      "reponse": "Le temps d'une paix",
+      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
+      "reponse": "Mariana Mazza",
       "niveau": 3,
       "ages": [
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel petit pays est enclavé entre France et Espagne ?",
-      "reponse": "Andorre",
+      "categorie": "Culture pop",
+      "question": "Quelle émission jeunesse de Radio-Canada ouvrait sur un coffre plein d'histoires ?",
+      "reponse": "La Boîte à surprise",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "À quelle famille d'instruments appartient la flûte ?",
-      "reponse": "Les bois",
-      "niveau": 3,
-      "ages": [
-        "adultes",
         "aines"
       ]
     },
@@ -66,39 +77,25 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle gomme rose se vendait avec une petite bande dessinée dans l'emballage ?",
-      "reponse": "La Bazooka",
+      "categorie": "Sports",
+      "question": "Quel sport de cirque marche sur un fil tendu en hauteur ?",
+      "reponse": "Le funambulisme",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel xylophone africain a des calebasses ?",
-      "reponse": "Le balafon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit âne de dessin animé français est très curieux ?",
-      "reponse": "Trotro",
-      "niveau": 3,
-      "ages": [
-        "enfants"
+        "enfants",
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?",
-      "reponse": "Une corde de bois",
-      "niveau": 3
+      "question": "Quel est l'arbre emblème du Québec ?",
+      "reponse": "Le bouleau jaune",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -117,28 +114,9 @@
       "niveau": 3
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?",
-      "reponse": "Le yéyé",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel sirop doré anglais vient de la canne ?",
-      "reponse": "Golden syrup",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse colombienne a chanté Provenza ?",
-      "reponse": "Karol G",
+      "question": "Quel nom porte le jalapeño fumé ?",
+      "reponse": "Chipotle",
       "niveau": 3,
       "ages": [
         "ados",
@@ -146,17 +124,33 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Machu Picchu, cité perdue des Incas ?",
-      "reponse": "Le Pérou",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui a composé la musique de l'hymne O Canada ?",
-      "reponse": "Calixa Lavallée",
+      "categorie": "Culture pop",
+      "question": "Quel jeu télévisé opposait des équipes d'élèves du secondaire ?",
+      "reponse": "Génies en herbe",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission québécoise fait juger des numéros de danse par des maîtres ?",
+      "reponse": "Révolution",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
+      "reponse": "Pierre de Rosette",
+      "niveau": 3,
+      "ages": [
+        "adultes",
         "aines"
       ]
     },
@@ -171,19 +165,29 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Journey encourage à ne jamais cesser d'y croire ?",
-      "reponse": "Don't Stop Believin'",
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de café québécoise porte le nom de son fondateur ?",
+      "reponse": "Van Houtte",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
-      "reponse": "Pierre de Rosette",
+      "categorie": "Géographie",
+      "question": "Quel petit pays est enclavé entre France et Espagne ?",
+      "reponse": "Andorre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel monologuiste québécois a écrit « Les unions, qu'ossa donne ? »",
+      "reponse": "Yvon Deschamps",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -192,33 +196,28 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle plante grimpante rougit les murs des maisons à l'automne ?",
-      "reponse": "La vigne vierge",
+      "question": "Quel grand musée du Vieux-Port de Québec a ouvert ses portes en 1988 ?",
+      "reponse": "Le Musée de la civilisation",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle peluche électronique aux grands yeux parlait toute seule en 1998 ?",
-      "reponse": "Le Furby",
+      "categorie": "Musique",
+      "question": "Quel trompettiste avait les joues gonflées célèbres ?",
+      "reponse": "Dizzy Gillespie",
       "niveau": 3,
       "ages": [
-        "adultes"
+        "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
-      "reponse": "Le parchemin",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
-      "reponse": "Le Forum",
+      "categorie": "Québec",
+      "question": "Quel bâtiment incliné de Montréal permet de voir la ville d'en haut ?",
+      "reponse": "La tour de Montréal",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -227,12 +226,20 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument électronique se joue en frappant des pastilles sensibles ?",
-      "reponse": "Le pad",
+      "question": "Quel instrument à cordes indien a un très long manche ?",
+      "reponse": "Le sitar",
       "niveau": 3,
       "ages": [
-        "ados"
+        "ados",
+        "adultes",
+        "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve le Machu Picchu, cité perdue des Incas ?",
+      "reponse": "Le Pérou",
+      "niveau": 3
     }
   ]
 }

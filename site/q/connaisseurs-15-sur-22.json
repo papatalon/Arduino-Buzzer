@@ -7,65 +7,39 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quel parc national de la Gaspésie s'avance au bout de la péninsule ?",
-      "reponse": "Forillon",
+      "categorie": "Musique",
+      "question": "Quel groupe progressif québécois a fait L'Heptade ?",
+      "reponse": "Harmonium",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la répétition complète faite la veille d'un spectacle ?",
+      "reponse": "La générale",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année les Canadiennes ont-elles voté au fédéral ?",
-      "reponse": "1918",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle est la voix féminine la plus grave ?",
-      "reponse": "L'alto (contralto)",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Bon Jovi raconte Tommy et Gina à mi-chemin ?",
-      "reponse": "Livin' on a Prayer",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne borde le Québec à l'est, avec Moncton ?",
-      "reponse": "Le Nouveau-Brunswick",
-      "niveau": 3
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission jeunesse de Radio-Canada ouvrait sur un coffre plein d'histoires ?",
-      "reponse": "La Boîte à surprise",
+      "question": "Quelle émission de Radio-Canada enquête sur ce qu'on met dans notre assiette ?",
+      "reponse": "L'épicerie",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?",
-      "reponse": "Un tir de barrage",
+      "categorie": "Sciences et nature",
+      "question": "Quel métal précieux conduit le mieux l'électricité ?",
+      "reponse": "L'argent",
       "niveau": 3,
       "ages": [
         "ados",
@@ -85,6 +59,83 @@
       ]
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
+      "reponse": "Le 7 Jours",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert meringué porte le nom d'une ballerine ?",
+      "reponse": "La pavlova",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle bataille de 1066 a livré l'Angleterre aux Normands ?",
+      "reponse": "Hastings",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel petit rongeur rayé du Québec remplit ses joues de graines ?",
+      "reponse": "Le suisse",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Journey encourage à ne jamais cesser d'y croire ?",
+      "reponse": "Don't Stop Believin'",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle baie nordique québécoise parfume gins et confitures ?",
+      "reponse": "La chicoutai",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année les Canadiennes ont-elles voté au fédéral ?",
+      "reponse": "1918",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?",
+      "reponse": "Un tir de barrage",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Cinéma et télé",
       "question": "Quel film coréen de 2019 est devenu le premier film non anglophone à gagner l'Oscar du meilleur film ?",
       "reponse": "Parasite",
@@ -95,28 +146,9 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Avec quel lait fait-on la feta traditionnelle ?",
-      "reponse": "Lait de brebis",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle émission de variétés québécoise des années 70 portait un nom de tannants ?",
-      "reponse": "Les Tannants",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
-      "reponse": "Willie Lamothe",
+      "question": "Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?",
+      "reponse": "Fanfreluche",
       "niveau": 3,
       "ages": [
         "aines"
@@ -124,14 +156,28 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument à vent se joue en soufflant dans une anche double, au son nasillard ?",
-      "reponse": "Le hautbois",
+      "question": "Quel instrument électronique se joue en frappant des pastilles sensibles ?",
+      "reponse": "Le pad",
       "niveau": 3,
       "ages": [
-        "ados",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Combien de temps principaux a l'indicatif ?",
+      "reponse": "Huit",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne borde le Québec à l'est, avec Moncton ?",
+      "reponse": "Le Nouveau-Brunswick",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
@@ -146,40 +192,30 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?",
-      "reponse": "La lessiveuse à tordeur",
+      "question": "Quelle autrice et animatrice québécoise a abordé les tabous à la télé pendant des décennies ?",
+      "reponse": "Janette Bertrand",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel métal précieux conduit le mieux l'électricité ?",
-      "reponse": "L'argent",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Combien de temps principaux a l'indicatif ?",
-      "reponse": "Huit",
-      "niveau": 3,
-      "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel compositeur baroque a écrit les Concertos brandebourgeois ?",
-      "reponse": "Bach",
+      "question": "Quel instrument de rue se joue en tournant une manivelle ?",
+      "reponse": "Un orgue de Barbarie",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles bottes anglaises à coutures jaunes sont un classique punk ?",
+      "reponse": "Les Doc Martens",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -206,52 +242,14 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus haute montagne d'Amérique du Nord ?",
-      "reponse": "Le Denali",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel roi du blues appelait sa guitare Lucille ?",
-      "reponse": "B.B. King",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel musicien voyageur chantait des poèmes de château en château ?",
-      "reponse": "Un troubadour",
+      "categorie": "Culture pop",
+      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
+      "reponse": "Le Wordle",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil de chauffage exigeait qu'on remplisse la boîte à bois ?",
-      "reponse": "Le poêle à bois",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série de HBO suit une famille qui se déchire pour un empire médiatique ?",
-      "reponse": "Succession",
-      "niveau": 3,
-      "ages": [
-        "adultes"
       ]
     }
   ]

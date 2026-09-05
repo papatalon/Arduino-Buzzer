@@ -7,38 +7,9 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal rampe sans pattes ?",
-      "reponse": "Le serpent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville du Québec ?",
-      "reponse": "Montréal",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne produit le plus de pétrole ?",
-      "reponse": "L'Alberta",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on l'ensemble des os du corps ?",
-      "reponse": "Le squelette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la maison de bois du chien dans la cour ?",
-      "reponse": "Une niche",
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on les bandes blanches où l'on traverse la rue ?",
+      "reponse": "Un passage piéton",
       "niveau": 1
     },
     {
@@ -52,12 +23,40 @@
       ]
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Le dauphin est-il un poisson ou un mammifère ?",
+      "reponse": "Un mammifère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la passe qui mène directement à un but ?",
+      "reponse": "Une passe décisive",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin ressemble à un cheval miniature ?",
+      "reponse": "L'hippocampe",
+      "niveau": 1
+    },
+    {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la banque coopérative très répandue au Québec ?",
-      "reponse": "La caisse populaire",
-      "niveau": 3,
+      "question": "Quelle université francophone montréalaise est la plus grande ?",
+      "reponse": "UdeM",
+      "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
+      "reponse": "La dionée",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -69,15 +68,68 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quelle science étudie les plantes ?",
-      "reponse": "La botanique",
+      "categorie": "Sports",
+      "question": "Quel sport de force soulève une barre chargée de disques ?",
+      "reponse": "L'haltérophilie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel youtubeur américain organise des défis à des millions de dollars ?",
+      "reponse": "MrBeast",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Le pluriel de caillou prend un S ou un X ?",
+      "reponse": "Un X",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Qui a découvert la gravitation ?",
-      "reponse": "Newton",
+      "categorie": "Sports",
+      "question": "Quel trophée récompense le joueur le plus utile de la LNH ?",
+      "reponse": "Hart",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle voiture voyage dans le temps dans Retour vers le futur ?",
+      "reponse": "La DeLorean",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se tient le grand carnaval de Rio ?",
+      "reponse": "Le Brésil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Qui était le gérant et le mari de Céline Dion ?",
+      "reponse": "René Angélil",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la maison de bois du chien dans la cour ?",
+      "reponse": "Une niche",
       "niveau": 1
     },
     {
@@ -92,10 +144,15 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
-      "reponse": "Les Gardiens",
-      "niveau": 1
+      "categorie": "Géographie",
+      "question": "Quel volcan sicilien est le plus actif d'Europe ?",
+      "reponse": "L'Etna",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -119,15 +176,9 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la faute qui envoie un joueur de hockey au banc deux minutes ?",
-      "reponse": "Une punition",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu télévisé québécois demande de repérer celui qui ment ?",
-      "reponse": "Le Tricheur",
+      "categorie": "Musique",
+      "question": "Quel instrument à vent en bois donne les sons les plus graves de l'orchestre ?",
+      "reponse": "Le basson",
       "niveau": 3,
       "ages": [
         "ados",
@@ -136,78 +187,43 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle note vient juste après le ré ?",
-      "reponse": "Le mi",
-      "niveau": 1
-    },
-    {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la carte du monde en forme de boule qui tourne sur un pied ?",
-      "reponse": "Un globe terrestre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de danse acrobatique se pratique au sol avec de la musique ?",
-      "reponse": "Le breakdance",
+      "question": "Capitale du Pérou ?",
+      "reponse": "Lima",
       "niveau": 2,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel superhéros enfile son costume dans une cabine téléphonique ?",
-      "reponse": "Superman",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle université francophone montréalaise est la plus grande ?",
-      "reponse": "UdeM",
-      "niveau": 2,
+      "question": "Quel chien de dessin animé est le compagnon de Charlie Brown ?",
+      "reponse": "Snoopy",
+      "niveau": 1,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée récompense le joueur le plus utile de la LNH ?",
-      "reponse": "Hart",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Le pluriel de caillou prend un S ou un X ?",
-      "reponse": "Un X",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel disque argenté a remplacé la cassette pour la musique, puis a été remplacé à son tour ?",
-      "reponse": "Le disque compact",
-      "niveau": 2,
-      "ages": [
-        "ados",
+        "enfants",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle comptine fait entendre le coucou dans une forêt lointaine ?",
-      "reponse": "Dans la forêt lointaine",
-      "niveau": 3
+      "question": "Quel style triste est né dans le delta du Mississippi ?",
+      "reponse": "Le blues",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle science étudie les plantes ?",
+      "reponse": "La botanique",
+      "niveau": 1
     }
   ]
 }

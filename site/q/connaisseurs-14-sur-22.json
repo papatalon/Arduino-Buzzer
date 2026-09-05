@@ -7,14 +7,65 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la voix masculine aiguë des grands airs d'opéra ?",
-      "reponse": "Le ténor",
+      "categorie": "Géographie",
+      "question": "Quel désert chilien est le plus aride du monde ?",
+      "reponse": "L'Atacama",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel musicien voyageur chantait des poèmes de château en château ?",
+      "reponse": "Un troubadour",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle région québécoise occupe un cratère de météorite ?",
+      "reponse": "Charlevoix",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
+      "reponse": "Le REM",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magasin à un dollar a été fondé à Matane en 1992 ?",
+      "reponse": "Dollarama",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse américaine a chanté Kill Bill en 2022 ?",
+      "reponse": "SZA",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     },
     {
@@ -24,20 +75,62 @@
       "niveau": 3
     },
     {
-      "categorie": "Musique",
-      "question": "Quel groupe progressif québécois a fait L'Heptade ?",
-      "reponse": "Harmonium",
+      "categorie": "Histoire",
+      "question": "Qui fut la première femme première ministre du Canada ?",
+      "reponse": "Kim Campbell",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel philosophe grec fut le maître d'Alexandre ?",
+      "reponse": "Aristote",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot pyjama ?",
+      "reponse": "Le persan",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de cordes a un violoncelle ?",
+      "reponse": "Quatre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel appareil du restaurant jouait une chanson contre une pièce de monnaie ?",
-      "reponse": "Le juke-box",
+      "question": "Quel programme de récompenses accumule des points bleus chez plusieurs commerçants ?",
+      "reponse": "Air Miles",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus haute montagne d'Amérique du Nord ?",
+      "reponse": "Le Denali",
+      "niveau": 3,
+      "ages": [
+        "adultes",
         "aines"
       ]
     },
@@ -45,6 +138,55 @@
       "categorie": "Histoire",
       "question": "Comment appelle-t-on les longues bandes de terre perpendiculaires au fleuve ?",
       "reponse": "Les rangs",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle construction de béton a coupé une capitale allemande en deux jusqu'en 1989 ?",
+      "reponse": "Le mur de Berlin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce verte argentine accompagne les grillades ?",
+      "reponse": "Le chimichurri",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine fait répondre le hibou au coucou, du haut de son grand chêne ?",
+      "reponse": "Dans la forêt lointaine",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument de cuivre sonne le réveil dans les camps militaires ?",
+      "reponse": "Le clairon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les longues routes pavées construites par les Romains ?",
+      "reponse": "Les voies romaines",
       "niveau": 3,
       "ages": [
         "ados",
@@ -64,38 +206,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle ardoise à deux boutons dessine des traits et s'efface en la secouant ?",
-      "reponse": "Le Télécran",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du sanglier ?",
-      "reponse": "La laie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui fut la première femme première ministre du Canada ?",
-      "reponse": "Kim Campbell",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
-      "reponse": "Mariana Mazza",
+      "question": "Quel manga suit Luffy et son équipage de pirates ?",
+      "reponse": "One Piece",
       "niveau": 3,
       "ages": [
         "ados",
@@ -103,153 +215,38 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel désert chilien est le plus aride du monde ?",
-      "reponse": "L'Atacama",
+      "categorie": "Culture pop",
+      "question": "Quel carré de plastique de trois pouces et demi stockait des fichiers d'ordinateur ?",
+      "reponse": "La disquette",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Combien de régions administratives compte le Québec ?",
-      "reponse": "17",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les longues routes pavées construites par les Romains ?",
-      "reponse": "Les voies romaines",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de ficelle se tend entre les doigts de deux joueurs pour faire des figures ?",
-      "reponse": "Le jeu de la ficelle",
+      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
+      "reponse": "Olivier Guimond",
       "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel tambour métallique vient de Trinité ?",
-      "reponse": "Le steel drum",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël fait résonner un long « Gloria » repris par tout le monde ?",
-      "reponse": "Les anges dans nos campagnes",
+      "categorie": "Québec",
+      "question": "Quel parc animalier du Lac-Saint-Jean se visite à bord d'un train grillagé ?",
+      "reponse": "Le zoo de Saint-Félicien",
       "niveau": 3
     },
     {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le réseau de tuyaux qui recueille l'eau d'érable ?",
-      "reponse": "La tubulure",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Quel petit instrument à cordes italien se pince avec un médiator ?",
-      "reponse": "La mandoline",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu télévisé opposait des équipes d'élèves du secondaire ?",
-      "reponse": "Génies en herbe",
+      "question": "Combien de demi-tons dans une octave ?",
+      "reponse": "Douze",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel philosophe grec fut le maître d'Alexandre ?",
-      "reponse": "Aristote",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel mur séparait Berlin en deux jusqu'en 1989 ?",
-      "reponse": "Le mur de Berlin",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert meringué porte le nom d'une ballerine ?",
-      "reponse": "La pavlova",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel club-école des Canadiens joue à Laval ?",
-      "reponse": "Le Rocket",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série de films enferme des jeunes dans un immense labyrinthe mouvant ?",
-      "reponse": "Le Labyrinthe",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles poupées à grosse tête et lèvres pulpeuses ont concurrencé Barbie ?",
-      "reponse": "Les Bratz",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
       ]
     }
   ]

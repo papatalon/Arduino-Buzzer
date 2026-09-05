@@ -7,31 +7,24 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Qui a créé le tableau périodique ?",
-      "reponse": "Mendeleïev",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on les cinq lignes sur lesquelles on écrit les notes ?",
+      "reponse": "La portée",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Qui livrait les bouteilles de lait à la porte des maisons ?",
+      "reponse": "Le laitier",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel objet à ressort le professeur de musique frappe-t-il pour donner le la ?",
-      "reponse": "Un diapason",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays d'Amérique du Sud danse-t-on le tango ?",
-      "reponse": "L'Argentine",
+      "question": "Comment appelle-t-on les chansons anciennes transmises de génération en génération ?",
+      "reponse": "Le folklore",
       "niveau": 3
     },
     {
@@ -46,20 +39,29 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
-      "reponse": "Le Wordle",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'écran qui affiche les paroles pendant un karaoké ?",
+      "reponse": "Le téléprompteur",
       "niveau": 3,
       "ages": [
         "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sirop doré anglais vient de la canne ?",
+      "reponse": "Golden syrup",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel traité de 1992 a créé l'Union européenne ?",
-      "reponse": "Maastricht",
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la répétition d'un son au début des mots ?",
+      "reponse": "Une allitération",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -68,18 +70,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
-      "reponse": "La ceinture fléchée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année le drapeau rouge et blanc du Canada a-t-il été adopté ?",
-      "reponse": "1965",
+      "question": "Quel mot québécois remplace « chat » pour une conversation écrite en ligne ?",
+      "reponse": "Le clavardage",
       "niveau": 3,
       "ages": [
         "ados",
@@ -99,19 +91,37 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse américaine a chanté Espresso en 2024 ?",
-      "reponse": "Sabrina Carpenter",
+      "categorie": "Culture pop",
+      "question": "Quel magasin à rayons offrait un comptoir-lunch où manger un hot-dog ?",
+      "reponse": "Woolworth",
       "niveau": 3,
       "ages": [
-        "enfants",
-        "ados"
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
-      "reponse": "Un divulgâcheur",
+      "question": "Quelle case horaire de Radio-Canada présentait des grands spectacles le dimanche ?",
+      "reponse": "Les Beaux Dimanches",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel traité de 1992 a créé l'Union européenne ?",
+      "reponse": "Maastricht",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année le drapeau rouge et blanc du Canada a-t-il été adopté ?",
+      "reponse": "1965",
       "niveau": 3,
       "ages": [
         "ados",
@@ -120,9 +130,9 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson brésilienne mélange lime et cachaça ?",
-      "reponse": "La caipirinha",
+      "categorie": "Culture pop",
+      "question": "Quelle gomme rose se vendait avec une petite bande dessinée dans l'emballage ?",
+      "reponse": "La Bazooka",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -130,15 +140,61 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
-      "reponse": "Le cardinal",
-      "niveau": 3
+      "categorie": "Musique",
+      "question": "Quel groupe américain a chanté Mr. Brightside ?",
+      "reponse": "The Killers",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel concours de chant européen réunit les pays chaque printemps ?",
+      "reponse": "L'Eurovision",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel arbre est l'emblème du Québec ?",
-      "reponse": "Le bouleau jaune",
+      "question": "Quelle ligue de hockey junior regroupe les équipes du Québec et des Maritimes ?",
+      "reponse": "La LHJMQ",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quel jeu de société conquiert-on des territoires sur une carte du monde ?",
+      "reponse": "Le Risk",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Daft Punk répète qu'on est plus fort, meilleur et plus rapide ?",
+      "reponse": "Harder, Better, Faster, Stronger",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qui a créé le tableau périodique ?",
+      "reponse": "Mendeleïev",
       "niveau": 3,
       "ages": [
         "ados",
@@ -148,8 +204,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel peuple antique a inventé l'écriture cunéiforme ?",
-      "reponse": "Les Sumériens",
+      "question": "Quel long chemin de fer a relié l'est et l'ouest du Canada en 1885 ?",
+      "reponse": "Le chemin de fer transcontinental",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -157,48 +213,12 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel instrument de cuivre sonne le réveil dans les camps militaires ?",
-      "reponse": "Le clairon",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'écran qui affiche les paroles pendant un karaoké ?",
-      "reponse": "Le téléprompteur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comptine fait entendre le coucou dans une forêt lointaine ?",
-      "reponse": "Dans la forêt lointaine",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "De quelle langue vient le mot robot ?",
-      "reponse": "Le tchèque",
+      "categorie": "Québec",
+      "question": "Quel numéro compose-t-on au Québec pour joindre un service non urgent de la ville ?",
+      "reponse": "Le 311",
       "niveau": 3,
       "ages": [
         "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
-      "reponse": "Olivier Guimond",
-      "niveau": 3,
-      "ages": [
         "aines"
       ]
     },
@@ -213,38 +233,20 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quels petits élastiques colorés se tressent en bracelets sur un métier ?",
-      "reponse": "Les Rainbow Loom",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
       "categorie": "Géographie",
-      "question": "Quelle île de Montréal accueille le parc d'attractions La Ronde ?",
-      "reponse": "L'île Sainte-Hélène",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel auteur québécois a écrit Le Matou ?",
-      "reponse": "Yves Beauchemin",
+      "question": "Dans quel pays se trouve Tombouctou ?",
+      "reponse": "Le Mali",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
-      "reponse": "Loft Story",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
+      "categorie": "Géographie",
+      "question": "Dans quel pays d'Amérique du Sud danse-t-on le tango ?",
+      "reponse": "L'Argentine",
+      "niveau": 3
     }
   ]
 }

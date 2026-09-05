@@ -8,8 +8,26 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Quel micro-État borde Nice et la Méditerranée ?",
-      "reponse": "Monaco",
+      "question": "Comment appelle-t-on le mur de béton qui retient l'eau d'une rivière ?",
+      "reponse": "Un barrage",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quel continent se trouvent la France et l'Italie ?",
+      "reponse": "L'Europe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Golden Gate ?",
+      "reponse": "San Francisco",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel volcan célèbre domine le Japon ?",
+      "reponse": "Le mont Fuji",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,38 +37,107 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne parle surtout français ?",
-      "reponse": "Le Québec",
+      "question": "Quelle province canadienne borde le Pacifique ?",
+      "reponse": "Colombie-Britannique",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle ville italienne est célèbre pour ses canaux ?",
-      "reponse": "Venise",
+      "question": "Comment appelle-t-on la grande étendue de terre où le fermier sème son blé ?",
+      "reponse": "Un champ",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la tour de Pise ?",
-      "reponse": "L'Italie",
+      "question": "Comment appelle-t-on le passage creusé sous une montagne ou sous l'eau ?",
+      "reponse": "Un tunnel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel animal des Andes crache quand il est fâché ?",
+      "reponse": "Le lama",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'eau qui tombe du haut d'une falaise dans une rivière ?",
+      "reponse": "Une chute",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel océan sépare le Québec de l'Europe ?",
+      "reponse": "L'océan Atlantique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle grande ville des États-Unis abrite Hollywood ?",
+      "reponse": "Los Angeles",
       "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Quel est le plus grand désert chaud du monde ?",
-      "reponse": "Le Sahara",
+      "question": "Combien y a-t-il de pôles sur la Terre ?",
+      "reponse": "Deux",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
-      "reponse": "Le Japon",
+      "question": "Quel est le plus grand pays du monde ?",
+      "reponse": "La Russie",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de la Suède ?",
-      "reponse": "Stockholm",
+      "question": "Quel énorme bloc de calcaire troué se dresse dans la mer en Gaspésie ?",
+      "reponse": "Le rocher Percé",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quel continent vivent les girafes en liberté ?",
+      "reponse": "L'Afrique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle grande ville canadienne se trouve juste à l'ouest du Québec, en Ontario ?",
+      "reponse": "Toronto",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays est surnommé la botte de l'Europe ?",
+      "reponse": "L'Italie",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a pour emblème le panda ?",
+      "reponse": "La Chine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Kenya ?",
+      "reponse": "Nairobi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Finlande ?",
+      "reponse": "Helsinki",
       "niveau": 2,
       "ages": [
         "ados",
@@ -66,128 +153,26 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays voisin de la France et de l'Italie parle-t-on quatre langues officielles ?",
-      "reponse": "La Suisse",
+      "question": "Quelle est la plus grande île du golfe Saint-Laurent ?",
+      "reponse": "Anticosti",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve la tour de Pise ?",
+      "reponse": "L'Italie",
       "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus haute montagne d'Amérique du Nord ?",
-      "reponse": "Le Denali",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le désert du Sahara ?",
-      "reponse": "L'Afrique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel énorme rocher percé d'un trou se dresse dans la mer en Gaspésie ?",
-      "reponse": "Le rocher Percé",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel archipel équatorien a inspiré Darwin ?",
-      "reponse": "Les Galápagos",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Thaïlande ?",
-      "reponse": "Bangkok",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays produit le plus de café ?",
-      "reponse": "Le Brésil",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays d'Europe trouve-t-on le chocolat, les montres et les Alpes ?",
-      "reponse": "La Suisse",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a la forme d'une longue bande le long de l'océan Pacifique ?",
-      "reponse": "Le Chili",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Inde ?",
-      "reponse": "New Delhi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel état américain touche le Québec et le Nouveau-Brunswick ?",
-      "reponse": "Le Maine",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Géographie",
       "question": "Quel grand fleuve traverse l'Amazonie ?",
       "reponse": "L'Amazone",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la ville de Venise et ses canaux ?",
-      "reponse": "L'Italie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Allemagne ?",
-      "reponse": "Berlin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays les vaches sont-elles sacrées ?",
-      "reponse": "L'Inde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes du Québec attire les skieurs au nord de Montréal ?",
-      "reponse": "Les Laurentides",
-      "niveau": 2
     }
   ]
 }

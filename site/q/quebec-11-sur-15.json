@@ -8,33 +8,9 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Quel outil racle la neige des pare-brise ?",
-      "reponse": "Un gratteux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel établissement d'enseignement, entre le secondaire et l'université, n'existe qu'au Québec ?",
-      "reponse": "Le cégep",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?",
-      "reponse": "Une corde de bois",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel grand oiseau blanc s'arrête par milliers près de Québec au printemps ?",
-      "reponse": "L'oie blanche",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle émission culte met en scène Popa et Moman ?",
-      "reponse": "La Petite Vie",
-      "niveau": 1,
+      "question": "Quel arbre fut ajouté au drapeau de Montréal en 2017 ?",
+      "reponse": "Le pin blanc",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
@@ -42,8 +18,26 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel gros camion dégage la neige des rues après une tempête ?",
-      "reponse": "Une charrue",
+      "question": "Quelle station de ski célèbre est dans les Laurentides ?",
+      "reponse": "Tremblant",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelles montagnes russes en bois de La Ronde sont célèbres ?",
+      "reponse": "Le Monstre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel stade montréalais a un mât incliné ?",
+      "reponse": "Stade olympique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel sirop est une spécialité du Québec ?",
+      "reponse": "Le sirop d'érable",
       "niveau": 1
     },
     {
@@ -59,21 +53,9 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on l'école qui suit le primaire, pendant cinq ans ?",
-      "reponse": "Le secondaire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mammifère marin blanc remonte le Saguenay ?",
-      "reponse": "Le béluga",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que veut dire l'expression « c'est écœurant », quand c'est un compliment ?",
-      "reponse": "C'est excellent",
-      "niveau": 2,
+      "question": "Quelle ville québécoise est célèbre pour son festival western ?",
+      "reponse": "Saint-Tite",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -82,14 +64,90 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel bonnet d'hiver porte un nom bien québécois ?",
-      "reponse": "La tuque",
+      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
+      "reponse": "Le cardinal",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel outil sert à enlever la glace sur le pare-brise de l'auto ?",
+      "reponse": "Un gratte-glace",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle basilique du Vieux-Montréal a un plafond bleu étoilé ?",
+      "reponse": "Notre-Dame",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle loi québécoise protège la langue française ?",
-      "reponse": "La loi 101",
+      "question": "Quelle fête de juin invite les gens d'une même rue à se rassembler ?",
+      "reponse": "La fête des voisins",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel congé de mai précède la saison du jardinage au Québec ?",
+      "reponse": "La journée nationale des patriotes",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel oiseau blanc envahit les champs du Québec au printemps et à l'automne ?",
+      "reponse": "L'oie blanche",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel liquide met-on dans le réservoir de l'auto à la station-service ?",
+      "reponse": "L'essence",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel outil racle la neige des pare-brise ?",
+      "reponse": "Un gratteux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Qui a composé la musique de l'hymne O Canada ?",
+      "reponse": "Calixa Lavallée",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle créature légendaire fait peur aux enfants ?",
+      "reponse": "Bonhomme Sept-Heures",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel cirque québécois est connu mondialement ?",
+      "reponse": "Cirque du Soleil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle émission culte met en scène Popa et Moman ?",
+      "reponse": "La Petite Vie",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -98,35 +156,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel véhicule à chenilles emmène les motoneigistes sur les sentiers ?",
-      "reponse": "La motoneige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la longue route de campagne bordée de fermes au Québec ?",
-      "reponse": "Un rang",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne l'aspirateur qu'on passe dans la maison ?",
-      "reponse": "La balayeuse",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle émeute de 1955 porte le nom d'un joueur ?",
-      "reponse": "Émeute Richard",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle région québécoise est surnommée le Royaume ?",
-      "reponse": "Saguenay",
+      "question": "Quelle université montréalaise porte quatre lettres commençant par UQ ?",
+      "reponse": "L'UQAM",
       "niveau": 2,
       "ages": [
         "ados",
@@ -136,72 +167,48 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle équipe de hockey joue au Centre Bell ?",
-      "reponse": "Les Canadiens",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel arbre fut ajouté au drapeau de Montréal en 2017 ?",
-      "reponse": "Le pin blanc",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne une tempête de neige ?",
-      "reponse": "Une bordée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la longue plateforme de bois devant la maison, avec sa balançoire ?",
-      "reponse": "La galerie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel auteur québécois a écrit Le Matou ?",
-      "reponse": "Yves Beauchemin",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle équipe de hockey junior joue au Centre Vidéotron de Québec ?",
-      "reponse": "Les Remparts",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle plante grimpante rougit les murs des maisons à l'automne ?",
-      "reponse": "La vigne vierge",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois, emprunté à l'anglais, désigne un embouteillage ?",
-      "reponse": "Le trafic",
+      "question": "Comment appelle-t-on l'emploi temporaire qu'un étudiant occupe l'été ?",
+      "reponse": "Une job d'été",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle attraction du Vieux-Port de Montréal fait monter ses cabines dans les airs depuis 2017 ?",
+      "reponse": "La grande roue",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel parti a fondé François Legault ?",
+      "reponse": "La CAQ",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle est la devise du Québec ?",
+      "reponse": "Je me souviens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel établissement d'enseignement, entre le secondaire et l'université, n'existe qu'au Québec ?",
+      "reponse": "Le cégep",
+      "niveau": 1
     }
   ]
 }

@@ -8,53 +8,15 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Quel point le plus au sud de la Terre est couvert de glace ?",
-      "reponse": "Le pôle Sud",
+      "question": "Comment appelle-t-on le village où l'on cultive la terre et élève des animaux ?",
+      "reponse": "Une ferme",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve Tombouctou ?",
-      "reponse": "Le Mali",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pont relie l'Île-du-Prince-Édouard au continent ?",
-      "reponse": "Confédération",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Hongrie ?",
-      "reponse": "Budapest",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelles chutes célèbres sont à la frontière canado-américaine ?",
-      "reponse": "Niagara",
+      "question": "Quel État américain chaud accueille Disney World ?",
+      "reponse": "La Floride",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la terre gelée sans arbres du Grand Nord ?",
-      "reponse": "La toundra",
-      "niveau": 3
     },
     {
       "categorie": "Géographie",
@@ -64,8 +26,46 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Égypte ?",
-      "reponse": "Le Caire",
+      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
+      "reponse": "La Finlande",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a dépassé la Chine en population en 2023 ?",
+      "reponse": "L'Inde",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le chemin de terre battue dans le bois ?",
+      "reponse": "Un sentier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel golfe borde le Texas et la Floride ?",
+      "reponse": "Golfe du Mexique",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve russe est le plus long d'Europe ?",
+      "reponse": "La Volga",
       "niveau": 2,
       "ages": [
         "ados",
@@ -81,8 +81,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel détroit sépare l'Europe de l'Afrique ?",
-      "reponse": "Gibraltar",
+      "question": "Capitale de la Corée du Sud ?",
+      "reponse": "Séoul",
       "niveau": 2,
       "ages": [
         "ados",
@@ -92,32 +92,66 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays a Bagdad pour capitale ?",
-      "reponse": "L'Irak",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
-      "reponse": "L'hémisphère nord",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle montagne se dresse au milieu de Montréal ?",
-      "reponse": "Le mont Royal",
+      "question": "Quelle chaîne de montagnes traverse l'ouest canadien ?",
+      "reponse": "Les Rocheuses",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel état américain se trouvent les plages et les alligators ?",
-      "reponse": "La Floride",
+      "question": "Monnaie utilisée aux États-Unis ?",
+      "reponse": "Le dollar",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve américain se jette à La Nouvelle-Orléans ?",
+      "reponse": "Le Mississippi",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a une croix blanche sur fond rouge ?",
+      "reponse": "La Suisse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Langue parlée au Brésil ?",
+      "reponse": "Le portugais",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays trouve-t-on les gondoles et les gladiateurs de l'histoire ?",
+      "reponse": "L'Italie",
       "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel animal figure sur la pièce d'un dollar canadien ?",
+      "reponse": "Le huard",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville des États-Unis ?",
+      "reponse": "New York",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -131,66 +165,38 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de la Turquie ?",
-      "reponse": "Ankara",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville américaine se trouve Disney World ?",
-      "reponse": "Orlando",
+      "question": "Comment appelle-t-on la terre gelée sans arbres du Grand Nord ?",
+      "reponse": "La toundra",
       "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le chemin de terre battue dans le bois ?",
-      "reponse": "Un sentier",
+      "question": "Dans quel pays vivent les pandas géants ?",
+      "reponse": "La Chine",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle langue parle-t-on aux États-Unis ?",
-      "reponse": "L'anglais",
-      "niveau": 1
+      "question": "Comment appelle-t-on la haute paroi de roche au bord de la mer ?",
+      "reponse": "Une falaise",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Sur quel continent se dresse le Kilimandjaro ?",
-      "reponse": "L'Afrique",
-      "niveau": 1
+      "question": "Quel animal est l'emblème des États-Unis ?",
+      "reponse": "L'aigle",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle feuille rouge orne le drapeau du Canada ?",
-      "reponse": "La feuille d'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle île de Montréal accueille le parc d'attractions La Ronde ?",
-      "reponse": "L'île Sainte-Hélène",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle péninsule abrite Espagne et Portugal ?",
-      "reponse": "Ibérique",
-      "niveau": 2,
+      "question": "Quelle province canadienne produit le plus de pétrole ?",
+      "reponse": "L'Alberta",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays voisin du Québec se trouve juste au sud ?",
-      "reponse": "Les États-Unis",
-      "niveau": 1
     }
   ]
 }

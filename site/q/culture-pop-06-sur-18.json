@@ -8,14 +8,45 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la petite lumière laissée allumée pour la nuit ?",
-      "reponse": "Une veilleuse",
+      "question": "Quel appareil au propane sort sur le balcon dès les premiers beaux jours ?",
+      "reponse": "Le barbecue",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel imitateur québécois a chanté en enchaînant des dizaines de voix célèbres ?",
-      "reponse": "André-Philippe Gagnon",
+      "question": "Quel jeu de la Wii proposait bowling, tennis et boxe avec la télécommande ?",
+      "reponse": "Wii Sports",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jouet de plastique danois s'assemble par petits picots ?",
+      "reponse": "Le Lego",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
+      "reponse": "La Bolduc",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel cheval blanc porte une corne unique sur le front ?",
+      "reponse": "Une licorne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil photo de carton s'achetait plein et se rapportait complet à développer ?",
+      "reponse": "L'appareil jetable",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -24,39 +55,26 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jouet à trois roues précède le vélo chez les tout-petits ?",
-      "reponse": "Un tricycle",
+      "question": "Sur quel objet de ménage les sorcières se déplacent-elles dans le ciel ?",
+      "reponse": "Un balai",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel manège fait tourner des chevaux de bois en musique ?",
-      "reponse": "Un carrousel",
+      "question": "Quel bâton le magicien agite-t-il en disant sa formule ?",
+      "reponse": "Une baguette magique",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission jeunesse de Radio-Canada ouvrait sur un coffre plein d'histoires ?",
-      "reponse": "La Boîte à surprise",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
+      "question": "Quels petits papiers colorés se lancent en l'air pour fêter ?",
+      "reponse": "Des confettis",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel film Pixar de 2022 met en scène une fille qui se change en panda roux ?",
-      "reponse": "Alerte rouge",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel effet corrige et robotise la voix d'un chanteur en studio ?",
-      "reponse": "L'autotune",
+      "question": "Quel jeu fait bâtir routes et villages en échangeant bois, blé et minerai ?",
+      "reponse": "Les Colons de Catane",
       "niveau": 3,
       "ages": [
         "ados",
@@ -65,157 +83,125 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel est le slogan de Nike, en trois mots anglais ?",
-      "reponse": "Just Do It",
+      "question": "Quel appareil faisait le café en le faisant remonter dans un petit dôme de verre ?",
+      "reponse": "Le percolateur",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission du samedi soir diffusait le hockey à Radio-Canada ?",
+      "reponse": "La Soirée du hockey",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque allemande vend des oursons de gélatine dans le monde entier ?",
+      "reponse": "Haribo",
       "niveau": 2,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
-      "reponse": "Les Baronets",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle petite radio portative à pile a libéré la musique des salons ?",
-      "reponse": "Le transistor",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel engin motorisé souffle la neige des entrées de garage l'hiver ?",
-      "reponse": "La souffleuse",
+      "question": "Quelles peluches rondes et pastel portent un prénom et une histoire sur l'étiquette ?",
+      "reponse": "Les Squishmallows",
       "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle quincaillerie québécoise portait un prénom dans son enseigne ?",
-      "reponse": "Pascal",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jouet surgit d'une boîte quand la manivelle s'arrête de jouer ?",
-      "reponse": "Le diable à ressort",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
-      "reponse": "La ceinture fléchée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel événement montréalais ferme des rues chaque été pour des spectacles gratuits ?",
-      "reponse": "Le Festival de jazz",
+      "question": "Quel film Pixar de 2023 fait vivre ensemble le feu, l'eau, la terre et l'air ?",
+      "reponse": "Élémentaire",
       "niveau": 2,
       "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil de poche vibrait pour dire de rappeler quelqu'un, avant le cellulaire ?",
+      "reponse": "Le téléavertisseur",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle fillette en cape rouge apporte une galette à sa grand-mère ?",
+      "reponse": "Le Petit Chaperon rouge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
+      "reponse": "Les Denis Drolet",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles croustilles de maïs triangulaires se trempent dans la salsa ?",
+      "reponse": "Les Doritos",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?",
+      "reponse": "La tire sur la neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil branché à la ligne téléphonique faisait des bruits stridents pour se connecter ?",
+      "reponse": "Le modem",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quels écouteurs sans fil blancs se rangent dans un petit boîtier ?",
+      "reponse": "Les AirPods",
+      "niveau": 1,
+      "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel panier passait dans les rangs pendant la messe du dimanche ?",
-      "reponse": "La quête",
-      "niveau": 3,
+      "question": "Quel montagnard accompagne Anna avec son renne dans La Reine des neiges ?",
+      "reponse": "Kristoff",
+      "niveau": 1,
       "ages": [
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
-      "reponse": "Les oreilles de lapin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
-      "reponse": "Dominique Michel et Denise Filiatrault",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel objet de plastique se lance et revient parfois à son lanceur ?",
-      "reponse": "Un boomerang",
+      "question": "Quel personnage viendrait jeter du sable dans les yeux des enfants le soir ?",
+      "reponse": "Le marchand de sable",
       "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
-      "reponse": "La fin de semaine des Patriotes",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil du restaurant jouait une chanson contre une pièce de monnaie ?",
-      "reponse": "Le juke-box",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel cahier à anneaux range les feuilles de chaque matière ?",
-      "reponse": "Un cartable",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chatte rose ouvre une maison de poupées dans une série de Netflix ?",
-      "reponse": "Gabby",
-      "niveau": 2,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans quel jeu faut-il aligner des bonbons de même couleur ?",
-      "reponse": "Candy Crush",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

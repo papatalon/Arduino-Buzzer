@@ -8,41 +8,37 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quel drap blanc troué de deux yeux fait un costume d'Halloween facile ?",
-      "reponse": "Un fantôme",
+      "question": "Dans quel jeu abaisse-t-on des visages pour deviner le personnage de l'adversaire ?",
+      "reponse": "Qui est-ce ?",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque québécoise fabrique les Jos Louis et les May West ?",
-      "reponse": "Vachon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Où va-t-on voir des lions et des girafes en enclos ?",
-      "reponse": "Au zoo",
+      "question": "Quelle chaîne de sandwichs fait choisir son pain et ses garnitures au comptoir ?",
+      "reponse": "Subway",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment s'appelle le royaume d'Elsa et d'Anna ?",
-      "reponse": "Arendelle",
+      "question": "Comment appelle-t-on une personne qui suit un compte sur les réseaux sociaux ?",
+      "reponse": "Un abonné",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle entreprise japonaise a créé Mario et Zelda ?",
+      "reponse": "Nintendo",
       "niveau": 1,
       "ages": [
         "enfants",
-        "ados"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel appareil de poche vibrait pour dire de rappeler quelqu'un, avant le cellulaire ?",
-      "reponse": "Le téléavertisseur",
+      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
+      "reponse": "La ceinture fléchée",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -51,9 +47,25 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
-      "reponse": "Grand Theft Auto",
-      "niveau": 3,
+      "question": "Quel petit personnage en habit vert aide le père Noël à l'atelier ?",
+      "reponse": "Un lutin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle friperie à grande surface porte un nom qui parle de valeurs ?",
+      "reponse": "Le Village des Valeurs",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la publication qui s'efface au bout de vingt-quatre heures ?",
+      "reponse": "Une story",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes"
@@ -61,51 +73,14 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel objet de papier mâché rempli de bonbons se frappe les yeux bandés ?",
-      "reponse": "La piñata",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage de conte chaussé de bottes parle au nom de son maître ?",
-      "reponse": "Le Chat botté",
+      "question": "Quel jeu fait passer sous une barre de plus en plus basse en se penchant vers l'arrière ?",
+      "reponse": "Le limbo",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel engin à deux roues se pousse d'un pied en tenant un guidon ?",
-      "reponse": "La trottinette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil au propane sort sur le balcon dès les premiers beaux jours ?",
-      "reponse": "Le barbecue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de table fait glisser un palet sur un coussin d'air ?",
-      "reponse": "Le air hockey",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
-      "reponse": "Watatatow",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle fillette rousse aux nattes tressées est la plus forte du monde ?",
-      "reponse": "Fifi Brindacier",
+      "question": "Quelle chaîne éducative appartient au gouvernement du Québec ?",
+      "reponse": "Télé-Québec",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -114,44 +89,71 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu oppose deux équipes qui se tirent des billes de peinture ?",
-      "reponse": "Le paintball",
-      "niveau": 2,
+      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
+      "reponse": "Les oreilles de lapin",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quel jeu de société conquiert-on des territoires sur une carte du monde ?",
+      "reponse": "Le Risk",
+      "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel arbre décoré trône dans le salon en décembre ?",
-      "reponse": "Un sapin de Noël",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel artiste fait disparaître des objets devant un public ébahi ?",
-      "reponse": "Un magicien",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chienne bleue australienne joue avec sa sœur Bingo dans une série ?",
-      "reponse": "Bluey",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel descripteur de hockey a marqué des générations par son français impeccable ?",
-      "reponse": "René Lecavalier",
+      "question": "Comment appelait-on le téléphone que plusieurs foyers du village devaient se partager ?",
+      "reponse": "La ligne partagée",
       "niveau": 3,
       "ages": [
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magasin canadien remet à ses clients une fausse monnaie imprimée ?",
+      "reponse": "Canadian Tire",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu électronique rond répète une suite de couleurs et de sons à imiter ?",
+      "reponse": "Le Simon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
+      "reponse": "Le Wordle",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles pastilles de chocolat colorées se vendent en boîte cylindrique ?",
+      "reponse": "Les Smarties",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -166,50 +168,53 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel gâteau blanc et rond de Vachon porte un prénom féminin ?",
-      "reponse": "Le May West",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle créature de la nuit dort dans un cercueil et craint l'ail ?",
+      "reponse": "Un vampire",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission de cuisine québécoise oppose des candidats devant un jury de chefs ?",
-      "reponse": "Les Chefs",
+      "question": "Quel bonbon dur se porte au doigt comme une bague ?",
+      "reponse": "Le Ring Pop",
       "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série mettait en scène un couple joué par Guy A. Lepage et Sylvie Léonard ?",
-      "reponse": "Un gars, une fille",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles poupées à grosse tête et lèvres pulpeuses ont concurrencé Barbie ?",
-      "reponse": "Les Bratz",
-      "niveau": 3,
-      "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle ligne téléphonique se partageait entre plusieurs foyers du village ?",
-      "reponse": "La ligne partagée",
+      "question": "Quelle série québécoise suivait une famille qui vivait de combines et d'aide sociale ?",
+      "reponse": "Les Bougon",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chocolat creux se déballe le matin de Pâques ?",
+      "reponse": "Un œuf en chocolat",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?",
+      "reponse": "Fanfreluche",
       "niveau": 3,
       "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil photo sortait la photo aussitôt, qu'on agitait pour la révéler ?",
+      "reponse": "Le Polaroid",
+      "niveau": 2,
+      "ages": [
+        "adultes",
         "aines"
       ]
     }

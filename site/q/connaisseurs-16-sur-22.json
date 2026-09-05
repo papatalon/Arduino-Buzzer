@@ -7,6 +7,12 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Musique",
+      "question": "Quelle danse argentine se danse joue contre joue avec une rose ?",
+      "reponse": "Le tango",
+      "niveau": 3
+    },
+    {
       "categorie": "Sciences et nature",
       "question": "Combien de cœurs possède un ver de terre ?",
       "reponse": "Cinq",
@@ -17,9 +23,29 @@
       ]
     },
     {
+      "categorie": "Sports",
+      "question": "Quel coureur éthiopien a gagné le marathon pieds nus ?",
+      "reponse": "Abebe Bikila",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel quotidien montréalais a cessé son édition papier en 2018 pour passer à la tablette ?",
-      "reponse": "La Presse",
+      "question": "Quel effet corrige et robotise la voix d'un chanteur en studio ?",
+      "reponse": "L'autotune",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
+      "reponse": "La granita",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -28,12 +54,95 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel rappeur québécois signe ses chansons d'un mot qui rime avec Zay ?",
-      "reponse": "FouKi",
+      "question": "Quelle chanson des Cowboys Fringants raconte un homme qui revient en 2050 ?",
+      "reponse": "Plus rien",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle ville canadienne fut dévastée par une explosion en 1917 ?",
+      "reponse": "Halifax",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur a popularisé le twist ?",
+      "reponse": "Chubby Checker",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
+      "reponse": "Lululemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
+      "reponse": "Les Denis Drolet",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?",
+      "reponse": "Le sextant",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
+      "reponse": "Une diligence",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu électronique rond répète une suite de couleurs et de sons à imiter ?",
+      "reponse": "Le Simon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui installe les micros avant un concert ?",
+      "reponse": "Un technicien de son",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
+      "reponse": "Michel Louvain",
+      "niveau": 3,
+      "ages": [
+        "aines"
       ]
     },
     {
@@ -48,70 +157,40 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle ville canadienne fut dévastée par une explosion en 1917 ?",
-      "reponse": "Halifax",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat brésilien est un ragoût de haricots noirs ?",
-      "reponse": "La feijoada",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
-      "reponse": "Une diligence",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel coureur éthiopien a gagné le marathon pieds nus ?",
-      "reponse": "Abebe Bikila",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Québec",
-      "question": "Quel gros oiseau noir et blanc plonge dans les lacs du Québec en poussant un cri plaintif ?",
-      "reponse": "Le huard",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle figure de style exagère volontairement ?",
-      "reponse": "L'hyperbole",
+      "question": "Quel club-école des Canadiens joue à Laval ?",
+      "reponse": "Le Rocket",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
-      "reponse": "MusiquePlus",
-      "niveau": 3,
-      "ages": [
+        "ados",
         "adultes"
       ]
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quel quotidien québécois porte le nom d'une obligation morale ?",
+      "reponse": "Le Devoir",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Musique",
-      "question": "Quel tambour à main vient d'Irlande ?",
-      "reponse": "Le bodhrán",
+      "question": "Quel objet à ressort le professeur de musique frappe-t-il pour donner le la ?",
+      "reponse": "Un diapason",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Masculin d'abeille ?",
+      "reponse": "Le faux bourdon",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -119,29 +198,24 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
-      "reponse": "Coup de Pouce",
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat robot bleu vient du futur ?",
+      "reponse": "Doraemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle plante grimpante rougit les murs des maisons à l'automne ?",
+      "reponse": "La vigne vierge",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magasin à rayons offrait un comptoir-lunch où manger un hot-dog ?",
-      "reponse": "Woolworth",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on une langue de terre qui s'avance dans la mer ?",
-      "reponse": "Une péninsule",
-      "niveau": 3
     },
     {
       "categorie": "Histoire",
@@ -164,74 +238,10 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel gros instrument à vent se porte enroulé autour du corps dans les fanfares ?",
-      "reponse": "Le soubassophone",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel ensemble de cloches sonne dans le clocher d'une église ?",
-      "reponse": "Le carillon",
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une langue de terre qui s'avance dans la mer ?",
+      "reponse": "Une péninsule",
       "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on les chansons anciennes transmises de génération en génération ?",
-      "reponse": "Le folklore",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on celui qui exploite une érablière ?",
-      "reponse": "Un acériculteur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle bataille de 1066 a livré l'Angleterre aux Normands ?",
-      "reponse": "Hastings",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
-      "reponse": "Dominique Michel et Denise Filiatrault",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
-      "reponse": "Les Plouffe",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de cour d'école fait sauter en tapant dans les mains d'un partenaire ?",
-      "reponse": "La tape-tape",
-      "niveau": 3,
-      "ages": [
-        "enfants"
-      ]
     }
   ]
 }

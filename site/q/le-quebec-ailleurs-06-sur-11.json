@@ -8,30 +8,36 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel repas se prend le midi au Québec ?",
+      "question": "Quel repas québécois se mange le midi ?",
       "reponse": "Le dîner",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
-      "reponse": "Caillou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois d'origine marocaine raconte sa famille sur scène ?",
-      "reponse": "Rachid Badouri",
+      "categorie": "Musique",
+      "question": "Quelle chanteuse acadienne a popularisé Évangéline ?",
+      "reponse": "Annie Blanchard",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a chanté pour Titanic ?",
-      "reponse": "Céline Dion",
+      "categorie": "Cinéma et télé",
+      "question": "Quel animateur québécois a longtemps animé Tout le monde en parle ?",
+      "reponse": "Guy A. Lepage",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois barrer la porte ?",
+      "reponse": "Verrouiller",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
+      "reponse": "Trudeau",
       "niveau": 1,
       "ages": [
         "ados",
@@ -40,161 +46,11 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Qui a fondé Ville-Marie, la future Montréal ?",
-      "reponse": "Maisonneuve",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
-      "reponse": "Le smoked meat",
-      "niveau": 3
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel groupe québécois a parodié les années 80 à la télé ?",
-      "reponse": "RBO",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
-      "reponse": "Olivier Guimond",
+      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
+      "reponse": "La ceinture fléchée",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
-      "reponse": "Le 7 Jours",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi de France régnait quand la Nouvelle-France s'est développée ?",
-      "reponse": "Louis XIV",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle confiserie d'érable se roule sur la neige ?",
-      "reponse": "La tire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission de variétés québécoise des années 70 portait un nom de tannants ?",
-      "reponse": "Les Tannants",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quels tambours se frappent en cercle dans les parcs de Montréal le dimanche ?",
-      "reponse": "Les tam-tams",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois magasiner ?",
-      "reponse": "Faire des achats",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
-      "reponse": "L'hémisphère nord",
-      "niveau": 3
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat québécois superpose patates pilées, blé d'Inde et viande hachée ?",
-      "reponse": "Le pâté chinois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle plongeuse québécoise a gagné l'argent à Tokyo ?",
-      "reponse": "Jennifer Abel",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
-      "reponse": "Big Brother Célébrités",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comptine québécoise plume un oiseau, la tête, le bec et les ailes ?",
-      "reponse": "Alouette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel grand parc de Montréal entoure le Biodôme et le Stade olympique ?",
-      "reponse": "Le parc Maisonneuve",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
-      "reponse": "La tire d'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Trois-Rivières ?",
-      "reponse": "Un Trifluvien",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans quelle émission québécoise des vedettes chantent-elles cachées dans des costumes géants ?",
-      "reponse": "Chanteurs masqués",
-      "niveau": 2,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -205,6 +61,154 @@
       "reponse": "Gilles Vigneault",
       "niveau": 2,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
+      "reponse": "Mariana Mazza",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel gardien québécois a popularisé le style papillon ?",
+      "reponse": "Patrick Roy",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet orange envahit les rues de Montréal chaque été ?",
+      "reponse": "Le cône",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
+      "reponse": "Le Banquier",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur québécois a chanté Le petit roi ?",
+      "reponse": "Jean-Pierre Ferland",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission matinale de TVA réveille le Québec en semaine ?",
+      "reponse": "Salut Bonjour",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plage du Maine est la destination classique des vacances québécoises ?",
+      "reponse": "Old Orchard",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
+      "reponse": "L'Ontario",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
+      "reponse": "Steinberg",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelles pièces de bois claque-t-on entre les doigts au Québec ?",
+      "reponse": "Les cuillères",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
+      "reponse": "Expo 67",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie l'interjection québécoise tiguidou ?",
+      "reponse": "C'est parfait",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays produit le plus de sirop d'érable ?",
+      "reponse": "Le Canada",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série policière québécoise porte le numéro d'un poste de police ?",
+      "reponse": "District 31",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel personnage rouge et blanc à tuque se cache dans des foules dessinées ?",
+      "reponse": "Charlie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle viande hachée garnit le pâté chinois ?",
+      "reponse": "Le bœuf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on les habitants des Îles-de-la-Madeleine ?",
+      "reponse": "Les Madelinots",
+      "niveau": 2,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]

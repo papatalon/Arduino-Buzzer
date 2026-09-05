@@ -7,28 +7,11 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
-      "reponse": "Challenger",
+      "categorie": "Cinéma et télé",
+      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
+      "reponse": "Sol",
       "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'ensemble des spectateurs assis devant la scène ?",
-      "reponse": "Le public",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur de hockey est surnommé La Merveille ?",
-      "reponse": "Wayne Gretzky",
-      "niveau": 1,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -45,15 +28,9 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel océan entoure le pôle Nord ?",
-      "reponse": "L'océan Arctique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
-      "reponse": "Mariana Mazza",
+      "categorie": "Musique",
+      "question": "Quel chanteur écossais a chanté Someone You Loved ?",
+      "reponse": "Lewis Capaldi",
       "niveau": 3,
       "ages": [
         "ados",
@@ -61,10 +38,30 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le cinéma de l'Inde ?",
-      "reponse": "Bollywood",
+      "categorie": "Québec",
+      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
+      "reponse": "L'escalier Casse-Cou",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
+      "reponse": "Challenger",
       "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel joueur de hockey est surnommé La Merveille ?",
+      "reponse": "Wayne Gretzky",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -78,13 +75,13 @@
       "niveau": 2
     },
     {
-      "categorie": "Québec",
-      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
-      "reponse": "L'escalier Casse-Cou",
-      "niveau": 3,
+      "categorie": "Culture pop",
+      "question": "Quelles toupies de plastique s'affrontent dans une arène en criant leur nom ?",
+      "reponse": "Les Beyblade",
+      "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
@@ -92,6 +89,12 @@
       "question": "Citez un palindrome de cinq lettres qui flotte.",
       "reponse": "Kayak",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une langue de terre qui s'avance dans la mer ?",
+      "reponse": "Une péninsule",
+      "niveau": 3
     }
   ]
 }

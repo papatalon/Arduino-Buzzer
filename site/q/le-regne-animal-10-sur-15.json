@@ -8,13 +8,9 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel chien accompagne Dorothy dans le Magicien d'Oz ?",
-      "reponse": "Toto",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel roi des mers parle aux poissons ?",
+      "reponse": "Aquaman",
+      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
@@ -23,10 +19,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Petit du mouton ?",
-      "reponse": "L'agneau",
-      "niveau": 1
+      "categorie": "Histoire",
+      "question": "Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?",
+      "reponse": "Le cheval de Troie",
+      "niveau": 2
     },
     {
       "categorie": "Sciences et nature",
@@ -35,21 +31,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les dessins d'animaux tracés sur les parois des grottes ?",
-      "reponse": "Les peintures rupestres",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
-      "reponse": "Le cardinal",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal produit les œufs qu'on mange au déjeuner ?",
-      "reponse": "La poule",
+      "categorie": "Mots et langue",
+      "question": "Petit du mouton ?",
+      "reponse": "L'agneau",
       "niveau": 1
     },
     {
@@ -60,26 +44,32 @@
     },
     {
       "categorie": "Sciences et nature",
+      "question": "Quel animal produit les œufs qu'on mange au déjeuner ?",
+      "reponse": "La poule",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
+      "reponse": "Le cardinal",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les dessins d'animaux tracés sur les parois des grottes ?",
+      "reponse": "Les peintures rupestres",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
       "question": "Quel animal marin géant souffle un jet d'eau par le dos ?",
       "reponse": "La baleine",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport fait sauter un cheval par-dessus des obstacles ?",
+      "question": "Quelle discipline équestre fait franchir au cheval une série de barres sans les faire tomber ?",
       "reponse": "Le saut d'obstacles",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte brille dans la nuit d'été ?",
-      "reponse": "La luciole",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel oiseau déploie sa queue en éventail coloré pour parader ?",
-      "reponse": "Le paon",
       "niveau": 2
     },
     {
@@ -90,8 +80,30 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle baleine blanche du Saint-Laurent est protégée ?",
-      "reponse": "Le béluga",
+      "question": "Quel mot québécois désigne un petit trou dans l'asphalte après l'hiver ?",
+      "reponse": "Un nid-de-poule",
+      "niveau": 2
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel oiseau déploie sa queue en éventail coloré pour parader ?",
+      "reponse": "Le paon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation organise un grand concours de chant entre animaux ?",
+      "reponse": "Tous en scène",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante compose le menu du panda géant ?",
+      "reponse": "Le bambou",
       "niveau": 1
     },
     {
@@ -101,9 +113,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Petit du chien ?",
-      "reponse": "Le chiot",
+      "categorie": "Québec",
+      "question": "Quel musée montréalais expose des insectes vivants et naturalisés ?",
+      "reponse": "L'Insectarium",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte brille dans la nuit d'été ?",
+      "reponse": "La luciole",
       "niveau": 1
     },
     {
@@ -118,13 +136,20 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation organise un grand concours de chant entre animaux ?",
-      "reponse": "Tous en scène",
-      "niveau": 1,
+      "categorie": "Mots et langue",
+      "question": "Petit du chien ?",
+      "reponse": "Le chiot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel poisson salé est le plat national du Portugal ?",
+      "reponse": "La morue",
+      "niveau": 2,
       "ages": [
-        "enfants",
-        "ados"
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -139,38 +164,9 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?",
-      "reponse": "Le cheval de Troie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson salé est le plat national du Portugal ?",
-      "reponse": "La morue",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quel oiseau revenu du Sud annonce le printemps ?",
-      "reponse": "L'hirondelle",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel canard Disney porte un costume marin ?",
-      "reponse": "Donald",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit de l'ours ?",
-      "reponse": "L'ourson",
+      "question": "Quel gros animal d'Afrique passe ses journées dans l'eau, la gueule grande ouverte ?",
+      "reponse": "L'hippopotame",
       "niveau": 1
     }
   ]

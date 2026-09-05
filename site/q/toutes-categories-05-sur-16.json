@@ -7,40 +7,15 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie dormir sur ses deux oreilles ?",
-      "reponse": "Dormir tranquille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi de France fut surnommé le Roi-Soleil ?",
-      "reponse": "Louis XIV",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal les Autochtones des plaines chassaient-ils pour se nourrir et se vêtir ?",
-      "reponse": "Le bison",
-      "niveau": 2
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quelle exclamation lance Homer Simpson ?",
-      "reponse": "D'oh",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle embarcation traverse le fleuve gelé au Carnaval ?",
-      "reponse": "Le canot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la grande salle de l'école où se donne l'éducation physique ?",
-      "reponse": "Le gymnase",
-      "niveau": 1
+      "question": "Quel personnage bleu sort de la lampe d'Aladdin ?",
+      "reponse": "Le génie",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -49,27 +24,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Qui a remporté la bataille des plaines d'Abraham ?",
-      "reponse": "Les Britanniques",
-      "niveau": 1
-    },
-    {
       "categorie": "Géographie",
-      "question": "Dans quel pays vivent les kangourous ?",
-      "reponse": "L'Australie",
+      "question": "Quel est le plus grand désert chaud du monde ?",
+      "reponse": "Le Sahara",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui fait tourner les éoliennes et voler les cerfs-volants ?",
-      "reponse": "Le vent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'énorme masse de glace qui flotte sur la mer ?",
-      "reponse": "Un iceberg",
+      "categorie": "Mots et langue",
+      "question": "Féminin de loup ?",
+      "reponse": "Louve",
       "niveau": 1
     },
     {
@@ -83,6 +46,16 @@
       ]
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète tourne couchée sur le côté ?",
+      "reponse": "Uranus",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Bouffe et cuisine",
       "question": "Quel repas se glisse entre deux tranches de pain pour la boîte à lunch ?",
       "reponse": "Un sandwich",
@@ -90,78 +63,33 @@
     },
     {
       "categorie": "Musique",
-      "question": "Combien de musiciens jouent dans un duo ?",
-      "reponse": "Deux",
+      "question": "Quelle note dure deux fois moins longtemps qu'une blanche ?",
+      "reponse": "La noire",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie dormir sur ses deux oreilles ?",
+      "reponse": "Dormir tranquille",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel os protège le cerveau ?",
-      "reponse": "Le crâne",
+      "question": "Quel métal les aimants attirent-ils ?",
+      "reponse": "Le fer",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel programme de récompenses accumule des points bleus chez plusieurs commerçants ?",
-      "reponse": "Air Miles",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel objet empoisonné croque Blanche-Neige ?",
-      "reponse": "Une pomme",
+      "categorie": "Histoire",
+      "question": "Qui a remporté la bataille des plaines d'Abraham ?",
+      "reponse": "Les Britanniques",
       "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Féminin de loup ?",
-      "reponse": "Louve",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
-      "reponse": "Loud",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ligne imaginaire sépare l'hémisphère nord de l'hémisphère sud ?",
-      "reponse": "L'équateur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
-      "reponse": "Rue des Pignons",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
     },
     {
       "categorie": "Bouffe et cuisine",
       "question": "Quelle pâtisserie ronde se décore de glaçage pour une fête ?",
       "reponse": "Le gâteau",
       "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel numéro compose-t-on au Québec pour joindre un service non urgent de la ville ?",
-      "reponse": "Le 311",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Culture générale",
@@ -175,15 +103,99 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel liquide produit par le foie digère les graisses ?",
-      "reponse": "La bile",
+      "categorie": "Géographie",
+      "question": "Capitale de l'Écosse ?",
+      "reponse": "Édimbourg",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu télévisé opposait des équipes d'élèves du secondaire ?",
+      "reponse": "Génies en herbe",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
+      "reponse": "L'autoroute 40",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel roi de France fut surnommé le Roi-Soleil ?",
+      "reponse": "Louis XIV",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'absence de son ?",
+      "reponse": "Le silence",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de Terre-Neuve ?",
+      "reponse": "Saint-Jean",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal les Autochtones des plaines chassaient-ils pour se nourrir et se vêtir ?",
+      "reponse": "Le bison",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle embarcation traverse le fleuve gelé au Carnaval ?",
+      "reponse": "Le canot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle marionnette verte du Muppet Show anime le spectacle ?",
+      "reponse": "Kermit",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la grande salle de l'école où se donne l'éducation physique ?",
+      "reponse": "Le gymnase",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
+      "reponse": "Grand Theft Auto",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
+      "reponse": "Le raton laveur",
+      "niveau": 1
     }
   ]
 }

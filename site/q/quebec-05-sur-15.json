@@ -8,18 +8,9 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Qui a composé la musique de l'hymne O Canada ?",
-      "reponse": "Calixa Lavallée",
+      "question": "Quel club-école des Canadiens joue à Laval ?",
+      "reponse": "Le Rocket",
       "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "À quel âge peut-on obtenir un permis d'apprenti conducteur au Québec ?",
-      "reponse": "16 ans",
-      "niveau": 2,
       "ages": [
         "ados",
         "adultes"
@@ -27,9 +18,9 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle expression québécoise signifie c'est correct ?",
-      "reponse": "C'est beau",
-      "niveau": 1,
+      "question": "Quelle région québécoise est surnommée le Royaume ?",
+      "reponse": "Saguenay",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -38,15 +29,20 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois familier remplace « très froid » ?",
-      "reponse": "Frette",
-      "niveau": 1
+      "question": "Quelle île du Saint-Laurent fut une station de quarantaine ?",
+      "reponse": "Grosse-Île",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quels canots géants transportaient les fourrures ?",
-      "reponse": "Canots de maître",
-      "niveau": 3,
+      "question": "Quel joueur québécois des Penguins était surnommé le Magnifique ?",
+      "reponse": "Mario Lemieux",
+      "niveau": 1,
       "ages": [
         "adultes",
         "aines"
@@ -65,8 +61,14 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel quartier montréalais aux escaliers extérieurs est un symbole de la ville ?",
-      "reponse": "Le Plateau",
+      "question": "Que colle-t-on dans le dos des gens le 1er avril ?",
+      "reponse": "Un poisson d'avril",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel animal emblème figure sur les armoiries de Montréal ?",
+      "reponse": "Le castor",
       "niveau": 2,
       "ages": [
         "ados",
@@ -76,8 +78,18 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel musée de Québec raconte l'histoire de la civilisation ?",
-      "reponse": "Le Musée de la civilisation",
+      "question": "Combien de référendums sur la souveraineté a connus le Québec ?",
+      "reponse": "Deux",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle taxe québécoise s'ajoute à la taxe fédérale sur les achats ?",
+      "reponse": "La TVQ",
       "niveau": 3,
       "ages": [
         "ados",
@@ -87,51 +99,96 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel parc national québécois porte le nom d'un explorateur, au nord de Québec ?",
-      "reponse": "Le parc de la Jacques-Cartier",
+      "question": "Comment appelle-t-on au Québec la neige mouillée et boueuse du printemps ?",
+      "reponse": "La slush",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel barrage de la Côte-Nord est devenu le symbole d'Hydro-Québec dans les années 1960 ?",
+      "reponse": "Manic-5",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mois de 1970 a connu l'enlèvement de Pierre Laporte ?",
+      "reponse": "Octobre",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "De quelle couleur est le feu de circulation qui dit d'avancer ?",
+      "reponse": "Vert",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle loi québécoise protège la langue française ?",
+      "reponse": "La loi 101",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Qui appelle-t-on au 911 quand quelqu'un est blessé ?",
+      "reponse": "L'ambulance",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Dans quelle ville est née Céline Dion ?",
+      "reponse": "Charlemagne",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gros camion dégage la neige des rues après une tempête ?",
+      "reponse": "Une charrue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle fleur bleue à trois pétales est l'emblème floral du Québec ?",
+      "reponse": "L'iris versicolore",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel grand marché public borde la Petite Italie ?",
-      "reponse": "Jean-Talon",
-      "niveau": 1,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel cidre québécois est pressé après les gelées ?",
-      "reponse": "Cidre de glace",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Que veut dire « c'est plate » ?",
+      "reponse": "C'est ennuyant",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle ville québécoise est célèbre pour son festival western ?",
-      "reponse": "Saint-Tite",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle mascotte blanche à ceinture fléchée accueille les visiteurs du Carnaval ?",
+      "reponse": "Bonhomme",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel poète québécois a écrit Le Vaisseau d'or ?",
-      "reponse": "Émile Nelligan",
+      "question": "Quel premier ministre a fondé le Parti québécois ?",
+      "reponse": "René Lévesque",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -140,45 +197,15 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la personne qui surveille la cour d'école à la récréation ?",
-      "reponse": "Un surveillant",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle langue parle-t-on au Québec ?",
-      "reponse": "Le français",
+      "question": "Quel dimanche de juin célèbre-t-on les papas ?",
+      "reponse": "La fête des Pères",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle île montréalaise accueille La Ronde ?",
-      "reponse": "Île Sainte-Hélène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Sur quoi marche-t-on le long de la rue pour rester en sécurité ?",
-      "reponse": "Le trottoir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel biscuit québécois à la mélasse se trempe dans le lait ?",
-      "reponse": "La galette à la mélasse",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le grand édifice qui réunit des dizaines de boutiques sous un même toit ?",
-      "reponse": "Un centre commercial",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle est la fleur emblème du Québec ?",
-      "reponse": "Iris versicolore",
-      "niveau": 3,
+      "question": "Quel homme fort québécois du 19e siècle est réputé le plus fort de l'histoire ?",
+      "reponse": "Louis Cyr",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -186,43 +213,18 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel trophée remporte le champion de la LCF ?",
-      "reponse": "La coupe Grey",
+      "question": "Quel fleuve traverse le Québec ?",
+      "reponse": "Le Saint-Laurent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle boisson alcoolisée réchauffe le Carnaval de Québec ?",
+      "reponse": "Le caribou",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel chanteur des Colocs est une légende ?",
-      "reponse": "Dédé Fortin",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelles îles québécoises sont au milieu du golfe ?",
-      "reponse": "Îles de la Madeleine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne la voiture ?",
-      "reponse": "Un char",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel premier ministre québécois a lancé la Révolution tranquille ?",
-      "reponse": "Jean Lesage",
-      "niveau": 2,
-      "ages": [
         "aines"
       ]
     }

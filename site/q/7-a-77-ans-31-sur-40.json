@@ -7,37 +7,38 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle marionnette verte du Muppet Show anime le spectacle ?",
-      "reponse": "Kermit",
+      "categorie": "Culture générale",
+      "question": "Quel dieu grec règne sur les mers ?",
+      "reponse": "Poséidon",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel sport sorcier se joue sur des balais ?",
-      "reponse": "Le quidditch",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on l'habit qu'on enfile pour se transformer en personnage ?",
-      "reponse": "Un déguisement",
+      "categorie": "Québec",
+      "question": "Quelle machine bruyante lance la neige de côté dans l'entrée ?",
+      "reponse": "Une souffleuse",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse française chantait La Vie en rose ?",
-      "reponse": "Édith Piaf",
+      "question": "Quel style musical est né dans les églises noires américaines ?",
+      "reponse": "Le gospel",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle arme de bois courbé propulsait des flèches avant les armes à feu ?",
-      "reponse": "Un arc",
+      "categorie": "Culture générale",
+      "question": "Quel animal figure sur la pièce de 5 cents canadienne ?",
+      "reponse": "Le castor",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle équipe de hockey joue au Centre Bell ?",
+      "reponse": "Les Canadiens",
       "niveau": 1
     },
     {
@@ -53,26 +54,60 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel récipient plat sert à faire revenir les œufs ?",
-      "reponse": "Une poêle",
+      "question": "Quelle volaille laquée est le classique de la capitale chinoise ?",
+      "reponse": "Canard de Pékin",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle arme de bois courbé propulsait des flèches avant les armes à feu ?",
+      "reponse": "Un arc",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel animal figure sur la pièce de 5 cents canadienne ?",
-      "reponse": "Le castor",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel biscuit au chocolat cache une guimauve ?",
+      "reponse": "Le Whippet",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel appareil fait sortir le son fort dans une salle ?",
-      "reponse": "Un haut-parleur",
+      "categorie": "Sports",
+      "question": "Combien de trous compte un parcours de golf complet ?",
+      "reponse": "18",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne qui fait le pain ?",
+      "reponse": "Un boulanger",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le pluriel de « un animal » ?",
+      "reponse": "Des animaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle attraction de parc aquatique fait descendre un long tube en spirale ?",
+      "reponse": "La glissade d'eau",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel est le plus grand désert chaud du monde ?",
-      "reponse": "Le Sahara",
+      "question": "De quel côté se couche le soleil ?",
+      "reponse": "À l'ouest",
       "niveau": 1
     },
     {
@@ -83,8 +118,8 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie passer un savon ?",
-      "reponse": "Réprimander",
+      "question": "Petit du loup ?",
+      "reponse": "Le louveteau",
       "niveau": 1
     },
     {
@@ -100,14 +135,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on l'étage sous le rez-de-chaussée où l'on range et où l'on joue ?",
-      "reponse": "Le sous-sol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel trophée remporte le champion de la LCF ?",
-      "reponse": "La coupe Grey",
+      "question": "Quel marché public borde le canal de Lachine ?",
+      "reponse": "Atwater",
       "niveau": 1,
       "ages": [
         "ados",
@@ -116,56 +145,21 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de dur ?",
-      "reponse": "Mou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie être dans la lune ?",
-      "reponse": "Être distrait",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros a été piqué par une araignée ?",
-      "reponse": "Spider-Man",
+      "categorie": "Géographie",
+      "question": "Quel est le plus grand désert chaud du monde ?",
+      "reponse": "Le Sahara",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel personnage au nez rouge et aux souliers immenses fait rire les enfants ?",
-      "reponse": "Un clown",
+      "question": "Comment appelle-t-on la petite lumière laissée allumée pour la nuit ?",
+      "reponse": "Une veilleuse",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume en tiges rouges garnit des tartes ?",
-      "reponse": "La rhubarbe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "De quel côté se couche le soleil ?",
-      "reponse": "À l'ouest",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de trous compte un parcours de golf complet ?",
-      "reponse": "18",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui appelle-t-on au 911 quand quelqu'un est blessé ?",
-      "reponse": "L'ambulance",
+      "question": "Quel petit légume vert et rond roule dans l'assiette ?",
+      "reponse": "Le petit pois",
       "niveau": 1
     },
     {
@@ -175,9 +169,21 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume en longues tiges vertes croque avec du beurre d'arachide ?",
-      "reponse": "Le céleri",
+      "categorie": "Cinéma et télé",
+      "question": "Quel film Pixar se passe dans la tête de Riley ?",
+      "reponse": "Sans dessus dessous",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le signe rond ou ovale posé sur la portée ?",
+      "reponse": "Une note de musique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quels sont les deux héros de Toy Story ?",
+      "reponse": "Woody et Buzz",
       "niveau": 1
     }
   ]

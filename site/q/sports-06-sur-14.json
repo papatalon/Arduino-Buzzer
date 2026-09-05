@@ -8,26 +8,23 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?",
-      "reponse": "Le football",
+      "question": "Quel sport de glace utilise des pierres et des balais ?",
+      "reponse": "Le curling",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Que porte-t-on pour se baigner ?",
-      "reponse": "Un maillot de bain",
-      "niveau": 1
+      "question": "Quel cheval célèbre a gagné la Triple Couronne en 1973 ?",
+      "reponse": "Secretariat",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle nage s'effectue sur le dos ?",
-      "reponse": "Le dos crawlé",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel est le sport national d'été du Canada ?",
-      "reponse": "La crosse",
+      "question": "Comment nomme-t-on un trou d'un coup au golf ?",
+      "reponse": "Un as",
       "niveau": 2,
       "ages": [
         "ados",
@@ -37,106 +34,15 @@
     },
     {
       "categorie": "Sports",
-      "question": "Sur quelle estrade à trois marches montent les médaillés ?",
-      "reponse": "Le podium",
+      "question": "Quelle équipe de hockey joue à Edmonton ?",
+      "reponse": "Les Oilers",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la bouteille dans laquelle un joueur boit sur le banc ?",
-      "reponse": "Une gourde",
+      "question": "Quel jeu de gymnase oppose deux équipes qui se lancent des ballons pour éliminer les autres ?",
+      "reponse": "Le ballon chasseur",
       "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de points vaut un touché au football ?",
-      "reponse": "Six",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle activité se pratique avec une canne et un hameçon ?",
-      "reponse": "La pêche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle médaille reçoit le deuxième aux Jeux olympiques ?",
-      "reponse": "La médaille d'argent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport fait sauter un cheval par-dessus des obstacles ?",
-      "reponse": "Le saut d'obstacles",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel équipement large attaché aux pieds empêche de caler dans la neige épaisse ?",
-      "reponse": "Les raquettes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
-      "reponse": "Alexandre Bilodeau",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu de table imite le soccer avec des joueurs fixés sur des tiges ?",
-      "reponse": "Le babyfoot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le match qui décide du championnat ?",
-      "reponse": "La finale",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle activité d'été fait dormir sous une tente ?",
-      "reponse": "Le camping",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport glisse sur les vagues debout sur une planche ?",
-      "reponse": "Le surf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Sur quel engin descend-on une côte enneigée en position assise ?",
-      "reponse": "Un traîneau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport court dans les bois avec une carte et une boussole ?",
-      "reponse": "La course d'orientation",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pilote allemand a aussi gagné 7 titres de F1 ?",
-      "reponse": "Michael Schumacher",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Sports",
@@ -150,26 +56,141 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le coup de pied accordé devant le filet après une faute au soccer ?",
-      "reponse": "Un tir de pénalité",
+      "question": "Dans quel sport utilise-t-on un maillet à cheval ?",
+      "reponse": "Le polo",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
+      "reponse": "Un sauveteur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Sur quelle surface glacée se joue le hockey ?",
+      "reponse": "La patinoire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Que chausse-t-on aux pieds pour aller sur la glace ?",
+      "reponse": "Des patins",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de minutes dure un quart au football américain ?",
+      "reponse": "Quinze",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée est remis au champion du Super Bowl ?",
+      "reponse": "Trophée Lombardi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport évolue-t-on sur une poutre ?",
+      "reponse": "La gymnastique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de baseball a joué à Montréal ?",
+      "reponse": "Les Expos",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelles chaussures à roulettes se lacent aux pieds pour rouler sur l'asphalte ?",
+      "reponse": "Des patins à roues alignées",
       "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
-      "reponse": "Le slalom",
+      "question": "Quel sprinteur canadien a gagné le 100 m aux JO de 1996 ?",
+      "reponse": "Donovan Bailey",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel patineur de vitesse québécois a plusieurs ors olympiques ?",
+      "reponse": "Charles Hamelin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la période supplémentaire quand le match est nul ?",
+      "reponse": "La prolongation",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport d'équipe se joue avec un bâton à filet au bout et une petite balle dure ?",
+      "reponse": "La crosse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle carte l'arbitre de soccer montre-t-il pour avertir un joueur ?",
+      "reponse": "Un carton jaune",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel appareil mesure le temps d'une course à la seconde près ?",
-      "reponse": "Un chronomètre",
+      "question": "Combien de roues a une planche à roulettes ?",
+      "reponse": "Quatre",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel autre nom donne-t-on au ping-pong ?",
-      "reponse": "Tennis de table",
+      "question": "Quel numéro portait Maurice Richard ?",
+      "reponse": "9",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée remporte le champion de la LNH ?",
+      "reponse": "La coupe Stanley",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un volant ?",
+      "reponse": "Le badminton",
       "niveau": 1
     }
   ]

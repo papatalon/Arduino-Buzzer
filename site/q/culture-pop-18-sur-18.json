@@ -8,8 +8,8 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quelle boule couverte de miroirs tourne au plafond des soirées dansantes ?",
-      "reponse": "La boule disco",
+      "question": "Quelle carte à puce sert à payer le métro et l'autobus à Montréal ?",
+      "reponse": "La carte Opus",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,125 +19,169 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel film Pixar de 2023 fait vivre ensemble le feu, l'eau, la terre et l'air ?",
-      "reponse": "Élémentaire",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans Roblox, comment appelle-t-on la monnaie qu'on achète avec de l'argent réel ?",
-      "reponse": "Les Robux",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois d'origine marocaine raconte sa famille sur scène ?",
-      "reponse": "Rachid Badouri",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Sur quelle application les joueurs se parlent-ils dans des salons vocaux ?",
-      "reponse": "Discord",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jouet tourne longtemps entre deux doigts et fut la mode de 2017 ?",
-      "reponse": "Le fidget spinner",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu fait deviner un mot lettre par lettre en dessinant un bonhomme ?",
-      "reponse": "Le pendu",
+      "question": "Comment appelle-t-on la petite monnaie qu'on laisse au serveur au restaurant ?",
+      "reponse": "Le pourboire",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel cahier propose des dessins à remplir sans dépasser ?",
-      "reponse": "Un livre à colorier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
-      "reponse": "Willie Lamothe",
-      "niveau": 3,
+      "question": "Quelle série policière québécoise porte le numéro d'un poste de police ?",
+      "reponse": "District 31",
+      "niveau": 2,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Dans quoi les paroles d’un personnage de bande dessinée sont-elles écrites ?",
-      "reponse": "Une bulle",
+      "question": "Quel véhicule récréatif se tire derrière l'auto pour camper ?",
+      "reponse": "La roulotte",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel engin motorisé souffle la neige des entrées de garage l'hiver ?",
+      "reponse": "La souffleuse",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel est le slogan de Nike, en trois mots anglais ?",
+      "reponse": "Just Do It",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quels livres illustrés faut-il repérer un personnage à rayures rouges et blanches ?",
+      "reponse": "Où est Charlie",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle console de Sony est la grande rivale de la Xbox ?",
-      "reponse": "La PlayStation",
+      "question": "Quel monologuiste québécois a écrit « Les unions, qu'ossa donne ? »",
+      "reponse": "Yvon Deschamps",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magasin se visitait catalogue en main, avant que la marchandise sorte de l'entrepôt ?",
+      "reponse": "Distribution aux consommateurs",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?",
+      "reponse": "La lessiveuse à tordeur",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la scène de la Nativité qu'on installait sous le sapin ?",
+      "reponse": "La crèche",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel personnage au chapeau pointu vole sur un balai ?",
+      "reponse": "Une sorcière",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
+      "reponse": "Un divulgâcheur",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel revêtement de sol en rouleau couvrait les cuisines avant le plancher flottant ?",
+      "reponse": "Le prélart",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que glisse-t-on dans une enveloppe pour souhaiter joyeux Noël à quelqu'un ?",
+      "reponse": "Une carte de souhaits",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle danse des années 70 se pratiquait sous une boule miroir, en pantalon patte d'éléphant ?",
+      "reponse": "Le disco",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de véhicules tout-terrain a une calandre à sept fentes ?",
+      "reponse": "Jeep",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chienne bleue australienne joue avec sa sœur Bingo dans une série ?",
+      "reponse": "Bluey",
       "niveau": 1,
       "ages": [
         "enfants",
-        "ados",
-        "adultes"
+        "ados"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?",
-      "reponse": "L'écoute en rafale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu retire une chaise à chaque tour pendant que la musique joue ?",
-      "reponse": "La chaise musicale",
+      "question": "Quel jeu de tour en bois s'effondre quand on retire la mauvaise pièce ?",
+      "reponse": "Jenga",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel appareil photo de carton s'achetait plein et se rapportait complet à développer ?",
-      "reponse": "L'appareil jetable",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage rouge et blanc à tuque se cache dans des foules dessinées ?",
-      "reponse": "Charlie",
-      "niveau": 1
+      "question": "Quel animal le clown tord-il dans un long ballon pour les enfants ?",
+      "reponse": "Un chien en ballon",
+      "niveau": 2
     },
     {
       "categorie": "Culture pop",
@@ -151,68 +195,20 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu fait poser mains et pieds sur des pastilles de couleur ?",
-      "reponse": "Le Twister",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "question": "Quelle marque de café a une sirène verte dans son logo ?",
+      "reponse": "Starbucks",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle formule ouvre la caverne au trésor dans le conte d'Ali Baba ?",
-      "reponse": "Sésame ouvre-toi",
+      "question": "Quel objet de plastique se glisse sous les pieds pour glisser sur la neige ?",
+      "reponse": "La soucoupe",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle corde tourne pendant qu'on saute par-dessus dans la cour ?",
-      "reponse": "Une corde à sauter",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle tablette de chocolat est pleine de bulles d'air ?",
-      "reponse": "Le Aero",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la vidéo qui montre étape par étape comment faire quelque chose ?",
-      "reponse": "Un tutoriel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
-      "reponse": "Lululemon",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Où étendait-on le linge pour le faire sécher au vent ?",
-      "reponse": "Sur la corde à linge",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de café a une sirène verte dans son logo ?",
-      "reponse": "Starbucks",
+      "question": "Quel animal porte malheur s'il croise notre chemin, selon la superstition ?",
+      "reponse": "Un chat noir",
       "niveau": 1
     }
   ]

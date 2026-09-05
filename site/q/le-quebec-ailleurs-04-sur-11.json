@@ -7,16 +7,110 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
-      "reponse": "La poutine",
+      "categorie": "Culture pop",
+      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
+      "reponse": "Willie Lamothe",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
+      "reponse": "Watatatow",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument est roi dans les rigodons québécois ?",
+      "reponse": "Le violon",
       "niveau": 1
     },
     {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville du Québec ?",
+      "reponse": "Montréal",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Qui était le gérant et le mari de Céline Dion ?",
+      "reponse": "René Angélil",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Terre-Neuve ?",
-      "reponse": "Un Terre-Neuvien",
-      "niveau": 1,
+      "question": "Quel mot québécois désigne un enfant ?",
+      "reponse": "Un flo",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
+      "reponse": "Dominique Michel et Denise Filiatrault",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle pianiste et chanteuse québécoise se fait appeler Cœur de pirate ?",
+      "reponse": "Béatrice Martin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?",
+      "reponse": "La ville de Québec",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sucre du terroir remplace la cassonade ?",
+      "reponse": "Sucre d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle boisson gazeuse a longtemps servi de surnom moqueur aux Québécois ?",
+      "reponse": "Le Pepsi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
+      "reponse": "Michel Louvain",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Céline Dion ouvre par une flûte irlandaise ?",
+      "reponse": "My Heart Will Go On",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -24,10 +118,41 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
-      "reponse": "Le raton laveur",
+      "categorie": "Géographie",
+      "question": "Quelle région du Québec est célèbre pour ses bleuets ?",
+      "reponse": "Le Lac-Saint-Jean",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle bataille de 1759 a fait passer Québec aux mains des Britanniques ?",
+      "reponse": "La bataille des plaines d'Abraham",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle émission jeunesse québécoise a Passe-Montagne ?",
+      "reponse": "Passe-Partout",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
+      "reponse": "Olivier Guimond",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
+      "reponse": "Bleu Jeans Bleu",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Sports",
@@ -41,177 +166,43 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
-      "reponse": "Mariana Mazza",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle émission québécoise du jour de l'An revoit l'année ?",
-      "reponse": "Bye Bye",
+      "categorie": "Mots et langue",
+      "question": "Que signifie niaiser quelqu'un, au Québec ?",
+      "reponse": "Le taquiner",
       "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on la colonie française en Amérique du Nord ?",
-      "reponse": "La Nouvelle-France",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
-      "reponse": "Radio Enfer",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel circuit montréalais accueille le Grand Prix ?",
-      "reponse": "Gilles-Villeneuve",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
-      "reponse": "La fin de semaine des Patriotes",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
-      "reponse": "Quétaine",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle baie géante borde le nord du Québec ?",
-      "reponse": "Baie d'Hudson",
-      "niveau": 1
+      "question": "Quel état américain touche le Québec et le Nouveau-Brunswick ?",
+      "reponse": "Le Maine",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission de cuisine québécoise oppose des candidats devant un jury de chefs ?",
+      "reponse": "Les Chefs",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel sucre du terroir remplace la cassonade ?",
-      "reponse": "Sucre d'érable",
+      "question": "Quel petit fruit bleu garnit les muffins et les tartes au Québec ?",
+      "reponse": "Le bleuet",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Combien de coupes Stanley pour les Canadiens de Montréal ?",
-      "reponse": "24",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission québécoise fait juger des numéros de danse par des maîtres ?",
-      "reponse": "Révolution",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel prix récompense les artistes québécois au gala de l'ADISQ ?",
-      "reponse": "Le Félix",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle société d'État a le monopole de la vente d'alcool au Québec ?",
-      "reponse": "La SAQ",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles galettes du déjeuner arrose-t-on de sirop d'érable ?",
-      "reponse": "Les crêpes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel duo de La Petite Vie dort debout ?",
-      "reponse": "Popa et Moman",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle ville a été fondée en 1642 sous le nom de Ville-Marie ?",
+      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
       "reponse": "Montréal",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle grande baie d'eau salée s'ouvre au nord-ouest du Québec ?",
-      "reponse": "La baie James",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
-      "reponse": "Loft Story",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Où pêche-t-on la célèbre crevette nordique québécoise ?",
-      "reponse": "À Matane",
       "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
-      "reponse": "Coup de Pouce",
-      "niveau": 3,
       "ages": [
         "adultes",
         "aines"

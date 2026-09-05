@@ -8,19 +8,20 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quel appareil blanc d'Apple faisait tourner la musique avec une molette ?",
-      "reponse": "Le iPod",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel lapin rose à lunettes fumées bat du tambour pour vendre des piles ?",
+      "reponse": "Le lapin Energizer",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Que rapportait-on à l'épicerie pour récupérer quelques sous ?",
-      "reponse": "Les bouteilles vides",
+      "question": "Comment appelle-t-on un être venu d'une autre planète ?",
+      "reponse": "Un extraterrestre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel animateur québécois mène une émission de musique en direct avec un band maison ?",
+      "reponse": "Normand Brathwaite",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -29,36 +30,38 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque allemande vend des oursons de gélatine dans le monde entier ?",
-      "reponse": "Haribo",
+      "question": "Quelle marque de pneus a un bonhomme tout rond fait de bourrelets ?",
+      "reponse": "Michelin",
       "niveau": 2,
       "ages": [
-        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles espadrilles de planchistes affichent un damier noir et blanc ?",
+      "reponse": "Les Vans",
+      "niveau": 2,
+      "ages": [
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel bonbon dur se porte au doigt comme une bague ?",
-      "reponse": "Le Ring Pop",
-      "niveau": 2,
+      "question": "Dans Encanto, de qui la famille refuse-t-elle de parler ?",
+      "reponse": "Bruno",
+      "niveau": 1,
       "ages": [
         "enfants",
-        "ados",
-        "adultes"
+        "ados"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on les petits visages jaunes qu'on glisse dans un message ?",
-      "reponse": "Un émoji",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel concours de Tim Hortons fait dérouler le rebord d'un gobelet ?",
-      "reponse": "Roll Up the Rim",
+      "question": "Quelle animatrice québécoise est surnommée Véro ?",
+      "reponse": "Véronique Cloutier",
       "niveau": 2,
       "ages": [
         "ados",
@@ -68,19 +71,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle mascotte orange et poilue est passée des Expos aux Canadiens ?",
-      "reponse": "Youppi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel grand magasin canadien publiait un catalogue attendu chaque année ?",
-      "reponse": "Eaton",
+      "question": "Quel humoriste québécois jouait le concierge Symphorien ?",
+      "reponse": "Gilles Latulippe",
       "niveau": 3,
       "ages": [
         "aines"
@@ -88,20 +80,14 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Que porte-t-on sur le visage pour ne pas être reconnu à l'Halloween ?",
-      "reponse": "Un masque",
+      "question": "Quelle marque de crayons de cire remplit les boîtes d'école ?",
+      "reponse": "Crayola",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle boisson en poudre se mélange à l'eau et se boit très sucrée ?",
-      "reponse": "Le Kool-Aid",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle friandise glacée se vend en tube de plastique à congeler ?",
-      "reponse": "Le Mr. Freeze",
+      "question": "Quelles figurines allemandes à mains rondes peuplent des châteaux et des fermes ?",
+      "reponse": "Les Playmobil",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -111,50 +97,117 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de combat de Nintendo réunit ses personnages sur une même scène ?",
-      "reponse": "Super Smash Bros",
+      "question": "Quel gratte-ciel de Montréal, en forme de croix, a ouvert en 1962 ?",
+      "reponse": "La Place Ville-Marie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil de salon lisait les 33 tours avec un bras et une aiguille ?",
+      "reponse": "Le tourne-disque",
       "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jouet de peluche brune se serre pour s'endormir ?",
+      "reponse": "Un ourson en peluche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
+      "reponse": "Les Baronets",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles équipes de sous-marins explorent les océans en secourant les animaux marins ?",
+      "reponse": "Les Octonauts",
+      "niveau": 3,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on une émission audio qu'on écoute quand on veut ?",
+      "reponse": "Un balado",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel carré de plastique de trois pouces et demi stockait des fichiers d'ordinateur ?",
+      "reponse": "La disquette",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série de HBO suit une famille qui se déchire pour un empire médiatique ?",
+      "reponse": "Succession",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mort-vivant marche les bras tendus dans les films d'horreur ?",
+      "reponse": "Un zombie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu télévisé opposait des équipes d'élèves du secondaire ?",
+      "reponse": "Génies en herbe",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magasin à rayons offrait un comptoir-lunch où manger un hot-dog ?",
+      "reponse": "Woolworth",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles billes de plastique s'ouvrent en figurine au contact d'une carte ?",
+      "reponse": "Les Bakugan",
+      "niveau": 3,
       "ages": [
         "enfants",
-        "ados",
-        "adultes"
+        "ados"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle prière se récitait en famille à la radio, chaque soir, dans les années 50 ?",
-      "reponse": "Le chapelet",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle technologie sans fil relie des écouteurs à un téléphone à quelques mètres ?",
-      "reponse": "Le Bluetooth",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
-      "reponse": "Quétaine",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle application verte fait apprendre les langues avec un hibou insistant ?",
-      "reponse": "Duolingo",
+      "question": "Quel appareil se met sur les yeux pour entrer dans un monde en trois dimensions ?",
+      "reponse": "Un casque de réalité virtuelle",
       "niveau": 2,
       "ages": [
         "ados",
@@ -163,72 +216,12 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle ardoise à deux boutons dessine des traits et s'efface en la secouant ?",
-      "reponse": "Le Télécran",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle société d'État diffuse la télévision publique en français au Canada ?",
-      "reponse": "Radio-Canada",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de slush colorée se vend chez Couche-Tard ?",
-      "reponse": "Sloche",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
-      "reponse": "Les Classels",
+      "question": "Quelle cartouche de musique se glissait dans le tableau de bord des autos des années 70 ?",
+      "reponse": "Le huit-pistes",
       "niveau": 3,
       "ages": [
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission de variétés pour adolescents Véronique Cloutier a-t-elle animée ?",
-      "reponse": "La Fureur",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on une histoire racontée en cases dessinées ?",
-      "reponse": "Une bande dessinée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel meuble gardait les aliments au froid avec un bloc de glace ?",
-      "reponse": "La glacière",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel animal porte malheur s'il croise notre chemin, selon la superstition ?",
-      "reponse": "Un chat noir",
-      "niveau": 1
     }
   ]
 }

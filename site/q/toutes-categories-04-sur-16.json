@@ -8,9 +8,53 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Sur combien de lignes écrit-on la musique ?",
-      "reponse": "Cinq",
-      "niveau": 2
+      "question": "Quel instrument a des touches noires et blanches ?",
+      "reponse": "Le piano",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de cases compte une grille de tic-tac-toe ?",
+      "reponse": "Neuf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film de Pixar les émotions vivent-elles dans la tête d'une fillette ?",
+      "reponse": "Vice-versa",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle chaîne québécoise vend équipement de sport et vêtements de plein air ?",
+      "reponse": "Sports Experts",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel dieu grec règne sur l'Olympe ?",
+      "reponse": "Zeus",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles cigarettes de bonbon blanches portaient le nom d'un marin costaud ?",
+      "reponse": "Les Popeye",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -24,15 +68,20 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Capitale de la Pologne ?",
-      "reponse": "Varsovie",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée japonaise suit un garçon qui pourfend des démons au sabre ?",
+      "reponse": "Demon Slayer",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson chaude se prépare en faisant infuser des herbes ?",
+      "reponse": "Une tisane",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
@@ -41,142 +90,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel poisson à l'aileron pointu fait fuir les baigneurs ?",
-      "reponse": "Le requin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
-      "reponse": "Nézet-Séguin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel art martial signifie voie de la souplesse ?",
-      "reponse": "Le judo",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Mots et langue",
       "question": "Quel oiseau déploie sa queue en éventail coloré pour parader ?",
       "reponse": "Le paon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chien accompagne Dorothy dans le Magicien d'Oz ?",
-      "reponse": "Toto",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle friperie à grande surface porte un nom qui parle de valeurs ?",
-      "reponse": "Le Village des Valeurs",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de cases compte une grille de tic-tac-toe ?",
-      "reponse": "Neuf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel tapis à longs poils habillait les salons des années 70 ?",
-      "reponse": "Le shag",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel dieu grec règne sur l'Olympe ?",
-      "reponse": "Zeus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film de 1975 a vidé les plages avec son requin géant ?",
-      "reponse": "Les Dents de la mer",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel accessoire redonne de l'énergie à un téléphone à plat ?",
-      "reponse": "Un chargeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle entrée italienne est du pain grillé garni ?",
-      "reponse": "La bruschetta",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien de temps la Terre met-elle pour faire un tour sur elle-même ?",
-      "reponse": "Un jour",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel dieu grec messager porte des sandales ailées ?",
-      "reponse": "Hermès",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle émission culte met en scène Popa et Moman ?",
-      "reponse": "La Petite Vie",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle partie de la plante relie la racine à la fleur ?",
-      "reponse": "La tige",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson chaude se prépare en faisant infuser des herbes ?",
-      "reponse": "Une tisane",
       "niveau": 2
     },
     {
@@ -191,12 +107,70 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "De quelle langue vient le mot igloo ?",
-      "reponse": "L'inuktitut",
+      "categorie": "Musique",
+      "question": "Quel instrument australien est un long tube en bois ?",
+      "reponse": "Le didgeridoo",
       "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle entrée italienne est du pain grillé garni ?",
+      "reponse": "La bruschetta",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel dieu grec messager porte des sandales ailées ?",
+      "reponse": "Hermès",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Que faut-il mettre en terre pour faire pousser une plante ?",
+      "reponse": "Une graine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle émission culte met en scène Popa et Moman ?",
+      "reponse": "La Petite Vie",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
+      "reponse": "Big Brother Célébrités",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel lac canadien est le plus profond ?",
+      "reponse": "Lac des Esclaves",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -213,10 +187,51 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel service de traversier relie les deux rives à Québec ?",
-      "reponse": "Le traversier",
-      "niveau": 2
+      "categorie": "Sports",
+      "question": "Quel art martial signifie voie de la souplesse ?",
+      "reponse": "Le judo",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot igloo ?",
+      "reponse": "L'inuktitut",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
+      "reponse": "Le Forum",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Sur quelle planète habitons-nous ?",
+      "reponse": "La Terre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel long fleuve traverse la Chine ?",
+      "reponse": "Le Yangtsé",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

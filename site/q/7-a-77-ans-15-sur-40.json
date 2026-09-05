@@ -7,40 +7,15 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne une tempête de neige ?",
-      "reponse": "Une bordée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien d'états composent les États-Unis ?",
-      "reponse": "50",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel dinosaure a trois cornes sur la tête ?",
-      "reponse": "Le tricératops",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile à quatre dents pique les aliments ?",
-      "reponse": "La fourchette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal de la ferme nous donne le lait ?",
-      "reponse": "La vache",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Féminin de tigre ?",
-      "reponse": "Tigresse",
-      "niveau": 1
+      "question": "De quel pays vient le champagne ?",
+      "reponse": "La France",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -59,21 +34,68 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël célèbre un arbre dont le feuillage reste vert tout l'hiver ?",
-      "reponse": "Mon beau sapin",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal de la ferme nous donne le lait ?",
+      "reponse": "La vache",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quelle est la première personne du pluriel ?",
-      "reponse": "Nous",
+      "question": "Que signifie poser un lapin ?",
+      "reponse": "Ne pas venir",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
+      "reponse": "Une sirène",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte brille dans la nuit d'été ?",
-      "reponse": "La luciole",
+      "categorie": "Géographie",
+      "question": "Combien d'états composent les États-Unis ?",
+      "reponse": "50",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Dans quelle ville l'aquarium présente-t-il des ours blancs ?",
+      "reponse": "Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel navigateur italien croyait avoir atteint les Indes en 1492 ?",
+      "reponse": "Christophe Colomb",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à lamelles de bois frappe-t-on avec des maillets ?",
+      "reponse": "Le xylophone",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que porte-t-on sur le visage pour ne pas être reconnu à l'Halloween ?",
+      "reponse": "Un masque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne qui conduit un autobus scolaire ?",
+      "reponse": "Un chauffeur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie l'interjection québécoise tiguidou ?",
+      "reponse": "C'est parfait",
       "niveau": 1
     },
     {
@@ -83,15 +105,22 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelles figurines allemandes à mains rondes peuplent des châteaux et des fermes ?",
-      "reponse": "Les Playmobil",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
+      "reponse": "Bob l'éponge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film Disney de 2013 chante Libérée, délivrée ?",
+      "reponse": "La Reine des neiges",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la série de spectacles qu'un artiste donne de ville en ville ?",
+      "reponse": "Une tournée",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -105,82 +134,45 @@
       ]
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle créature de Tolkien dit mon précieux ?",
+      "reponse": "Gollum",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson gazeuse brune est née à Atlanta ?",
+      "reponse": "Le Coca-Cola",
+      "niveau": 1
+    },
+    {
       "categorie": "Géographie",
       "question": "Quel pays a la feuille d'érable sur son drapeau ?",
       "reponse": "Le Canada",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle petite cochonne rose de la télé adore sauter dans les flaques de boue ?",
-      "reponse": "Peppa Pig",
-      "niveau": 1,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
       "categorie": "Québec",
-      "question": "Quelle viande fumée est associée à Montréal ?",
-      "reponse": "Le smoked meat",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel navigateur italien croyait avoir atteint les Indes en 1492 ?",
-      "reponse": "Christophe Colomb",
+      "question": "Quel mot québécois désigne une automobile ?",
+      "reponse": "Un char",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Que fait le public avec ses mains à la fin d'un spectacle ?",
-      "reponse": "Il applaudit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse amérindienne chante L'air du vent ?",
-      "reponse": "Pocahontas",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la petite monnaie qu'on laisse au serveur au restaurant ?",
-      "reponse": "Le pourboire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du loup ?",
-      "reponse": "Le hurlement",
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte brille dans la nuit d'été ?",
+      "reponse": "La luciole",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel café italien est couronné de mousse de lait ?",
-      "reponse": "Le cappuccino",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle noix compose le beurre le plus vendu ?",
-      "reponse": "L'arachide",
+      "question": "Quel fruit est l'ingrédient principal du cidre ?",
+      "reponse": "La pomme",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse perd sa pantoufle de verre ?",
-      "reponse": "Cendrillon",
+      "categorie": "Sciences et nature",
+      "question": "Quel dinosaure a trois cornes sur la tête ?",
+      "reponse": "Le tricératops",
       "niveau": 1
     }
   ]

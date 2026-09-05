@@ -7,9 +7,9 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
-      "reponse": "L'autoroute 40",
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
+      "reponse": "Un divulgâcheur",
       "niveau": 3,
       "ages": [
         "ados",
@@ -18,9 +18,15 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle crêpe japonaise salée vient d'Osaka ?",
-      "reponse": "L'okonomiyaki",
+      "categorie": "Histoire",
+      "question": "Quelle longue habitation abritait plusieurs familles chez les Iroquoiens ?",
+      "reponse": "La maison longue",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus long fleuve du Canada ?",
+      "reponse": "Le Mackenzie",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -28,25 +34,45 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
-      "reponse": "Dans l'œil du dragon",
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on l'échange de fourrures contre des marchandises européennes ?",
+      "reponse": "La traite des fourrures",
       "niveau": 3,
       "ages": [
-        "adultes"
+        "ados",
+        "adultes",
+        "aines"
       ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
-      "reponse": "La Grande Ourse",
-      "niveau": 3
     },
     {
       "categorie": "Histoire",
       "question": "Comment appelle-t-on l'ensemble des nobles qui entouraient le roi ?",
       "reponse": "La cour",
       "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel oiseau bleu et blanc est très commun dans les cours du Québec l'hiver ?",
+      "reponse": "La mésange",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel genre de musique douce et répétitive sert de fond sonore pour étudier ?",
+      "reponse": "Le lo-fi",
+      "niveau": 3,
+      "ages": [
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
+      "reponse": "Rue des Pignons",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -59,93 +85,11 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "En quelle année le métro de Montréal a-t-il ouvert ?",
-      "reponse": "1966",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat libanais est une purée d'aubergines fumées ?",
+      "reponse": "Baba ganouj",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel camion de course rouge et bleu affronte Crusher dans une série pour enfants ?",
-      "reponse": "Blaze",
-      "niveau": 3,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse argentine se danse joue contre joue avec une rose ?",
-      "reponse": "Le tango",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Kilimandjaro ?",
-      "reponse": "La Tanzanie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport oppose deux nageurs qui se poussent un ballon dans une piscine ?",
-      "reponse": "Le water-polo",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle cantatrice grecque fut surnommée la Divina ?",
-      "reponse": "Maria Callas",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission de Radio-Canada vulgarise la science le dimanche soir ?",
-      "reponse": "Découverte",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
-      "reponse": "L'escalier Casse-Cou",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
-      "reponse": "Josée di Stasio",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel ancêtre du piano pince ses cordes au lieu de les frapper ?",
-      "reponse": "Le clavecin",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -163,8 +107,23 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel opéra de Bizet se déroule en Espagne ?",
-      "reponse": "Carmen",
+      "question": "Comment appelle-t-on les chaussons rigides qui permettent de danser sur le bout des orteils ?",
+      "reponse": "Des pointes",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série de HBO suit une famille qui se déchire pour un empire médiatique ?",
+      "reponse": "Succession",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de symphonies Beethoven a-t-il composées ?",
+      "reponse": "Neuf",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -172,69 +131,99 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle longue habitation abritait plusieurs familles chez les Iroquoiens ?",
-      "reponse": "La maison longue",
+      "categorie": "Sciences et nature",
+      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
+      "reponse": "La Grande Ourse",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
+      "reponse": "L'autoroute 40",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport oppose deux nageurs qui se poussent un ballon dans une piscine ?",
+      "reponse": "Le water-polo",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel gros livre illustré arrivait par la poste et faisait rêver avant Noël ?",
+      "reponse": "Le catalogue",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
+      "reponse": "La Bolduc",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur écossais a chanté Someone You Loved ?",
+      "reponse": "Lewis Capaldi",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil photo de carton s'achetait plein et se rapportait complet à développer ?",
+      "reponse": "L'appareil jetable",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
+      "reponse": "Les oreilles de lapin",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gros oiseau noir et blanc plonge dans les lacs du Québec en poussant un cri plaintif ?",
+      "reponse": "Le huard",
       "niveau": 3
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la répétition complète faite la veille d'un spectacle ?",
-      "reponse": "La générale",
+      "question": "Quelle chanson de Nirvana commence par un riff de guitare devenu emblème du grunge ?",
+      "reponse": "Smells Like Teen Spirit",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'échange de fourrures contre des marchandises européennes ?",
-      "reponse": "La traite des fourrures",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle petite radio portative à pile a libéré la musique des salons ?",
-      "reponse": "Le transistor",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel monologuiste québécois a écrit « Les unions, qu'ossa donne ? »",
-      "reponse": "Yvon Deschamps",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel est le plus long fleuve du Canada ?",
-      "reponse": "Le Mackenzie",
+      "question": "Dans quel pays se trouve le Kilimandjaro ?",
+      "reponse": "La Tanzanie",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?",
-      "reponse": "L'écoute en rafale",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]

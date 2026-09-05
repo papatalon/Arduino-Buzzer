@@ -7,9 +7,9 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
-      "reponse": "Le CF Montréal",
+      "categorie": "Géographie",
+      "question": "Quelle rivière célèbre coule à Ottawa ?",
+      "reponse": "L'Outaouais",
       "niveau": 1,
       "ages": [
         "ados",
@@ -18,64 +18,21 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle région du Québec est célèbre pour ses bleuets ?",
-      "reponse": "Le Lac-Saint-Jean",
-      "niveau": 2
+      "categorie": "Culture pop",
+      "question": "Quel événement montréalais ferme des rues chaque été pour des spectacles gratuits ?",
+      "reponse": "Le Festival de jazz",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois pantoute ?",
-      "reponse": "Pas du tout",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel duo québécois de dessins animés met en scène un chien et son chat ?",
-      "reponse": "Toupie et Binou",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
-      "reponse": "Cracké",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
-      "reponse": "Le tramway",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a la feuille d'érable sur son drapeau ?",
-      "reponse": "Le Canada",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quels trois étages composent le pâté chinois ?",
-      "reponse": "Bœuf maïs patates",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelles jeunes filles furent envoyées peupler la Nouvelle-France ?",
-      "reponse": "Filles du Roy",
-      "niveau": 2,
+      "question": "Comment nomme-t-on l'habitant de Terre-Neuve ?",
+      "reponse": "Un Terre-Neuvien",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -83,47 +40,53 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel objet québécois fait disparaître les traits de crayon sur le papier ?",
-      "reponse": "Une efface",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
-      "reponse": "Sol",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel grand pont relie l'île de Montréal à la Rive-Sud près du fleuve ?",
-      "reponse": "Le pont Champlain",
-      "niveau": 3
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel repas québécois se mange le midi ?",
-      "reponse": "Le dîner",
-      "niveau": 1
-    },
-    {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?",
-      "reponse": "La Révolution tranquille",
+      "question": "Quel roi de France régnait quand la Nouvelle-France s'est développée ?",
+      "reponse": "Louis XIV",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse acadienne chante en français avec un banjo ?",
-      "reponse": "Lisa LeBlanc",
+      "question": "Quelle chanteuse québécoise a raflé les Junos avec l'album Phoenix ?",
+      "reponse": "Charlotte Cardin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle province se trouve Montréal ?",
+      "reponse": "Le Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel poisson fumé garnit le bagel classique ?",
+      "reponse": "Le saumon fumé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant du Saguenay ?",
+      "reponse": "Un Saguenéen",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple autochtone a accueilli Jacques Cartier à son arrivée ?",
+      "reponse": "Les Iroquoiens",
       "niveau": 3,
       "ages": [
         "ados",
@@ -132,12 +95,91 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
-      "reponse": "Steinberg",
+      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
+      "reponse": "La Bolduc",
       "niveau": 3,
       "ages": [
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle feuille rouge orne le drapeau du Canada ?",
+      "reponse": "La feuille d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel stade accueillait les Expos ?",
+      "reponse": "Stade olympique",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois jaser ?",
+      "reponse": "Bavarder",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel intendant a développé la Nouvelle-France ?",
+      "reponse": "Jean Talon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse québécoise a gagné Eurovision pour la Suisse en 1988 ?",
+      "reponse": "Céline Dion",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
+      "reponse": "Le Grand Nord",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle société d'État tire les loteries au Québec ?",
+      "reponse": "Loto-Québec",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat québécois cuit des haricots blancs au four ?",
+      "reponse": "Fèves au lard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle embarcation d'écorce servait aux déplacements en Nouvelle-France ?",
+      "reponse": "Le canot d'écorce",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel animal figure sur la pièce de 25 cents canadienne ?",
+      "reponse": "Le caribou",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -147,29 +189,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle mascotte orange et poilue est passée des Expos aux Canadiens ?",
-      "reponse": "Youppi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
-      "reponse": "Georges St-Pierre",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
-      "reponse": "Nézet-Séguin",
+      "question": "Quel quotidien montréalais a cessé son édition papier en 2018 pour passer à la tablette ?",
+      "reponse": "La Presse",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -178,41 +199,19 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle animatrice québécoise est surnommée Véro ?",
-      "reponse": "Véronique Cloutier",
+      "question": "Quel organisme québécois délivre les permis de conduire et les plaques ?",
+      "reponse": "La SAAQ",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville du Québec ?",
-      "reponse": "Montréal",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit des détenues ?",
+      "reponse": "Unité 9",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu télévisé québécois demande de repérer celui qui ment ?",
-      "reponse": "Le Tricheur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel gardien québécois a popularisé le style papillon ?",
-      "reponse": "Patrick Roy",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

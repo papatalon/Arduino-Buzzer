@@ -7,9 +7,40 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quel roman de Gabrielle Roy se passe à Saint-Henri ?",
-      "reponse": "Bonheur d'occasion",
+      "categorie": "Histoire",
+      "question": "Quel grand navire de guerre espagnol transportait l'or des Amériques ?",
+      "reponse": "Le galion",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Gloria Gaynor est devenue l'hymne des cœurs brisés ?",
+      "reponse": "I Will Survive",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle cantatrice grecque fut surnommée la Divina ?",
+      "reponse": "Maria Callas",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année le Canada a-t-il adopté son drapeau actuel ?",
+      "reponse": "1965",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -27,77 +58,53 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat argentin grille des viandes au feu de bois ?",
-      "reponse": "L'asado",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "De quelle langue vient le mot pyjama ?",
-      "reponse": "Le persan",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
-      "reponse": "Nézet-Séguin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
-      "reponse": "Pierre Falardeau",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle note dure deux fois moins longtemps qu'une blanche ?",
-      "reponse": "La noire",
-      "niveau": 3
-    },
-    {
       "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on la savane, les lions et les girafes en liberté ?",
-      "reponse": "Le Kenya",
+      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
+      "reponse": "L'hémisphère nord",
       "niveau": 3
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel appareil fallait-il installer sur le toit pour capter les chaînes de télé ?",
-      "reponse": "L'antenne",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel grand navire de guerre espagnol transportait l'or des Amériques ?",
-      "reponse": "Le galion",
+      "categorie": "Sports",
+      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
+      "reponse": "Le kitesurf",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel sous-genre du rap se reconnaît à ses charlestons rapides et ses basses lourdes ?",
+      "reponse": "La trap",
+      "niveau": 3,
+      "ages": [
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel auteur québécois a écrit Le Matou ?",
+      "reponse": "Yves Beauchemin",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?",
+      "reponse": "Alys Robi",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la petite colline de sable poussée par le vent au bord de la mer ?",
+      "reponse": "Une dune",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
@@ -110,13 +117,62 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel poète québécois a écrit L'homme rapaillé ?",
-      "reponse": "Gaston Miron",
+      "categorie": "Culture pop",
+      "question": "Quel accessoire rembourré élargissait les épaules des vestons dans les années 80 ?",
+      "reponse": "L'épaulette",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle tartelette portugaise est à la crème ?",
+      "reponse": "Pastel de nata",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel petit instrument à cordes italien se pince avec un médiator ?",
+      "reponse": "La mandoline",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de véhicules tout-terrain a une calandre à sept fentes ?",
+      "reponse": "Jeep",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de cordelette passe de mains en mains en formant des figures géométriques ?",
+      "reponse": "Le jeu de la ficelle",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
+      "reponse": "Le cardinal",
+      "niveau": 3
     },
     {
       "categorie": "Sciences et nature",
@@ -130,54 +186,42 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel petit objet de métal en forme de fourche donne le la aux musiciens ?",
-      "reponse": "Un diapason",
+      "categorie": "Culture pop",
+      "question": "Quel meuble gardait les aliments au froid avec un bloc de glace ?",
+      "reponse": "La glacière",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la petite colline de sable poussée par le vent au bord de la mer ?",
-      "reponse": "Une dune",
+      "question": "Dans quel pays trouve-t-on la savane, les lions et les girafes en liberté ?",
+      "reponse": "Le Kenya",
       "niveau": 3
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui dirige une chorale ?",
-      "reponse": "Un chef de chœur",
+      "question": "Quelle percussion se joue à mains nues sur deux petits tambours accolés ?",
+      "reponse": "Les bongos",
       "niveau": 3
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel panier passait dans les rangs pendant la messe du dimanche ?",
-      "reponse": "La quête",
+      "question": "Quel traitement de coiffure des années 80 frisait les cheveux pour des mois ?",
+      "reponse": "La permanente",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
-      "reponse": "Le kitesurf",
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la peur des hauteurs ?",
+      "reponse": "L'acrophobie",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on les sentiers balisés où circulent les motoneiges ?",
-      "reponse": "Les sentiers de motoneige",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -186,55 +230,6 @@
       "categorie": "Histoire",
       "question": "Quel empire d'Amérique a été conquis par Cortés ?",
       "reponse": "Les Aztèques",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel gros livre illustré arrivait par la poste et faisait rêver avant Noël ?",
-      "reponse": "Le catalogue",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui règle le son pendant un spectacle ?",
-      "reponse": "Le sonorisateur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
-      "reponse": "Watatatow",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magasin à un dollar a été fondé à Matane en 1992 ?",
-      "reponse": "Dollarama",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays entoure complètement le Lesotho ?",
-      "reponse": "Afrique du Sud",
       "niveau": 3,
       "ages": [
         "adultes",

@@ -8,8 +8,70 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Quel bâtiment abrite une patinoire intérieure dans la plupart des villes du Québec ?",
-      "reponse": "Un aréna",
+      "question": "Quelle fête du 1er juillet fait déménager les Québécois ?",
+      "reponse": "Jour du déménagement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel petit véhicule tout-terrain se conduit à califourchon dans les sentiers l'été ?",
+      "reponse": "Un quatre-roues",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel poète a chanté Le P'tit Bonheur ?",
+      "reponse": "Félix Leclerc",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel fromage frais grince sous la dent ?",
+      "reponse": "Fromage en grains",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle chanson de Vigneault sert d'hymne populaire ?",
+      "reponse": "Gens du pays",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment surnomme-t-on la fête du 24 juin ?",
+      "reponse": "La Saint-Jean",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle station de ski domine le fleuve dans Charlevoix ?",
+      "reponse": "Le Massif",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne une petite amie ?",
+      "reponse": "Une blonde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle langue parle-t-on au Québec ?",
+      "reponse": "Le français",
       "niveau": 1
     },
     {
@@ -25,88 +87,14 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on le petit jardin où l'on fait pousser ses légumes ?",
-      "reponse": "Un potager",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel premier ministre libéral a gouverné de 2003 à 2012 ?",
-      "reponse": "Jean Charest",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel oiseau blanc envahit les champs du Québec au printemps et à l'automne ?",
-      "reponse": "L'oie blanche",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel sanctuaire au dôme vert domine le flanc du mont Royal ?",
-      "reponse": "L'Oratoire Saint-Joseph",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel animateur québécois a animé La Poule aux œufs d'or ?",
-      "reponse": "Guy Mongrain",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel humoriste montréalais fait des spectacles bilingues ?",
-      "reponse": "Sugar Sammy",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la matière où l'on apprend à compter ?",
-      "reponse": "Les mathématiques",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel oiseau bleu et blanc est très commun dans les cours du Québec l'hiver ?",
-      "reponse": "La mésange",
+      "question": "Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?",
+      "reponse": "Une corde de bois",
       "niveau": 3
     },
     {
       "categorie": "Québec",
-      "question": "Quel papillon est l'insecte emblème du Québec ?",
-      "reponse": "L'amiral",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fleur figure sur le drapeau de Montréal ?",
-      "reponse": "Fleur de lys",
+      "question": "Quelle station de ski domine Stoneham et Québec ?",
+      "reponse": "Mont-Sainte-Anne",
       "niveau": 2,
       "ages": [
         "ados",
@@ -116,8 +104,20 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle légende québécoise fait voler un canot ?",
-      "reponse": "La chasse-galerie",
+      "question": "Combien de lignes compte le métro de Montréal ?",
+      "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel zoo québécois est dédié à la faune nordique ?",
+      "reponse": "Saint-Félicien",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel hockeyeur était surnommé le Rocket ?",
+      "reponse": "Maurice Richard",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -127,25 +127,52 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on celui qui exploite une érablière ?",
-      "reponse": "Un acériculteur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Où va-t-on chercher un médicament sur ordonnance ?",
-      "reponse": "À la pharmacie",
+      "question": "Quel vêtement long et épais protège du froid de janvier ?",
+      "reponse": "Un manteau d'hiver",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel arbre est l'emblème du Québec ?",
-      "reponse": "Le bouleau jaune",
+      "question": "Comment appelle-t-on l'école qui suit le primaire, pendant cinq ans ?",
+      "reponse": "Le secondaire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle fête hivernale illumine le Vieux-Port de Montréal ?",
+      "reponse": "Igloofest",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Combien de ponts mènent à l'île d'Orléans ?",
+      "reponse": "Un seul",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle tourte de viandes vient du Lac-Saint-Jean ?",
+      "reponse": "Le cipaille",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne une soirée où l'on boit entre amis ?",
+      "reponse": "Un 5 à 7",
       "niveau": 3,
       "ages": [
         "ados",
@@ -155,15 +182,26 @@
     },
     {
       "categorie": "Québec",
-      "question": "Que veut dire « embarque dans l'auto » ?",
-      "reponse": "Monte dans l'auto",
+      "question": "Comment appelle-t-on une grande école secondaire publique au Québec ?",
+      "reponse": "Une polyvalente",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle salle de Montréal projette le ciel étoilé sur un dôme au-dessus des spectateurs ?",
+      "reponse": "Le Planétarium",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quelle taxe québécoise s'ajoute à la taxe fédérale sur les achats ?",
-      "reponse": "La TVQ",
-      "niveau": 3,
+      "question": "Quel quartier montréalais a une porte paifang ?",
+      "reponse": "Quartier chinois",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -172,55 +210,14 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on les sentiers balisés où circulent les motoneiges ?",
-      "reponse": "Les sentiers de motoneige",
-      "niveau": 3,
+      "question": "Qui a planté une croix à Gaspé en 1534 ?",
+      "reponse": "Jacques Cartier",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel fromage frais grince sous la dent ?",
-      "reponse": "Fromage en grains",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
-      "reponse": "L'autoroute 40",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel siège spécial protège un jeune enfant dans une auto ?",
-      "reponse": "Un siège d'auto",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle date est la Fête nationale du Québec ?",
-      "reponse": "Le 24 juin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la neige poussée par le vent qui empêche de voir la route ?",
-      "reponse": "La poudrerie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel rocher troué est l'emblème de la Gaspésie ?",
-      "reponse": "Le rocher Percé",
-      "niveau": 1
     }
   ]
 }

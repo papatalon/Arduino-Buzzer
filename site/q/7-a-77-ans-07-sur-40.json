@@ -8,117 +8,26 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la chouette de Harry Potter ?",
-      "reponse": "Hedwige",
+      "question": "Comment s'appelle le petit chien blanc de Tintin ?",
+      "reponse": "Milou",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel repas québécois se mange le midi ?",
-      "reponse": "Le dîner",
+      "categorie": "Culture pop",
+      "question": "Quel meuble de la classe range les effets de l'élève ?",
+      "reponse": "Un pupitre",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Féminin de roi ?",
-      "reponse": "La reine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a un drapeau avec une étoile de David ?",
-      "reponse": "Israël",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Féminin de loup ?",
-      "reponse": "Louve",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel sucre trouve-t-on dans le sang ?",
-      "reponse": "Le glucose",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel épi grillé se mange au beurre en août ?",
-      "reponse": "Le blé d'Inde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel gala québécois récompense la télévision ?",
-      "reponse": "Les Gémeaux",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Féminin d'empereur ?",
-      "reponse": "Impératrice",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle reine a des pouvoirs de glace chez Disney ?",
-      "reponse": "Elsa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays voisin du Québec se trouve juste au sud ?",
-      "reponse": "Les États-Unis",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle galaxie abrite notre système solaire ?",
-      "reponse": "La Voie lactée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel jour célèbre-t-on l'Armistice de 1918 ?",
-      "reponse": "Le 11 novembre",
+      "categorie": "Sports",
+      "question": "Quel sport de glace utilise des pierres et des balais ?",
+      "reponse": "Le curling",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la liste de chansons qu'on se prépare pour une occasion ?",
-      "reponse": "Une liste de lecture",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel chou fermenté accompagne les saucisses en Alsace ?",
-      "reponse": "La choucroute",
+      "question": "Quelle danse brésilienne anime le carnaval ?",
+      "reponse": "La samba",
       "niveau": 1,
       "ages": [
         "ados",
@@ -127,15 +36,15 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète a été rétrogradée en planète naine ?",
-      "reponse": "Pluton",
+      "categorie": "Mots et langue",
+      "question": "Quel animal rugit ?",
+      "reponse": "Le lion",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film de Noël un train magique emmène-t-il des enfants au pôle Nord ?",
-      "reponse": "Le Pôle Express",
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on celui qui coupe les cheveux ?",
+      "reponse": "Le coiffeur",
       "niveau": 1
     },
     {
@@ -150,21 +59,20 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'absence de son ?",
-      "reponse": "Le silence",
-      "niveau": 1
+      "categorie": "Sciences et nature",
+      "question": "Quel sucre trouve-t-on dans le sang ?",
+      "reponse": "Le glucose",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport de glace utilise des pierres et des balais ?",
-      "reponse": "Le curling",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle série de romans suit Émilie Bordeleau ?",
-      "reponse": "Les Filles de Caleb",
+      "categorie": "Cinéma et télé",
+      "question": "Quel canard milliardaire plonge dans ses pièces d'or ?",
+      "reponse": "Picsou",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -172,14 +80,16 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quels trois héros en pyjama se transforment la nuit pour affronter des méchants ?",
-      "reponse": "Les Pyjamasques",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
+      "categorie": "Sciences et nature",
+      "question": "Quelle galaxie abrite notre système solaire ?",
+      "reponse": "La Voie lactée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel dieu nordique manie un marteau chez Marvel ?",
+      "reponse": "Thor",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -188,15 +98,91 @@
       "niveau": 1
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel riz crémeux italien cuit au bouillon ?",
+      "reponse": "Le risotto",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'espace sous le toit où s'entassent les vieilles boîtes ?",
+      "reponse": "Le grenier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a un drapeau avec une étoile de David ?",
+      "reponse": "Israël",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle activité de party fait chanter sur une musique en lisant les paroles à l'écran ?",
-      "reponse": "Le karaoké",
+      "question": "Comment appelle-t-on un être venu d'une autre planète ?",
+      "reponse": "Un extraterrestre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel jour célèbre-t-on l'Armistice de 1918 ?",
+      "reponse": "Le 11 novembre",
       "niveau": 1
     },
     {
       "categorie": "Sports",
       "question": "Comment appelle-t-on la pause au milieu d'un match de soccer ?",
       "reponse": "La mi-temps",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle créature légendaire fait peur aux enfants ?",
+      "reponse": "Bonhomme Sept-Heures",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain rond avec un trou se mange à Montréal ?",
+      "reponse": "Le bagel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays voisin du Québec se trouve juste au sud ?",
+      "reponse": "Les États-Unis",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument de cuivre se joue en soufflant dans une embouchure et en pressant trois pistons ?",
+      "reponse": "La trompette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète a été rétrogradée en planète naine ?",
+      "reponse": "Pluton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la peur des araignées ?",
+      "reponse": "L'arachnophobie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas se prend le midi au Québec ?",
+      "reponse": "Le dîner",
       "niveau": 1
     }
   ]

@@ -7,21 +7,159 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel groupe a chanté Hey Jude et Let It Be ?",
-      "reponse": "Les Beatles",
-      "niveau": 1
-    },
-    {
       "categorie": "Géographie",
       "question": "Sur quel continent se trouve le Canada ?",
       "reponse": "L'Amérique du Nord",
       "niveau": 1
     },
     {
+      "categorie": "Musique",
+      "question": "Quelle danse des années 90 se fait en groupe, bras tendus, avec un quart de tour à la fin ?",
+      "reponse": "La Macarena",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "À quelle température l'eau bout-elle ?",
+      "reponse": "100 degrés C",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir du pain sur la planche ?",
+      "reponse": "Beaucoup de travail",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle fête hivernale illumine le Vieux-Port de Montréal ?",
+      "reponse": "Igloofest",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat français mijote du bœuf au vin rouge ?",
+      "reponse": "Bœuf bourguignon",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel objet tient le chanteur pour que sa voix porte dans toute la salle ?",
+      "reponse": "Le micro",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien de temps la Terre met-elle pour faire le tour du Soleil ?",
+      "reponse": "Un an",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle chienne partage un spaghetti avec un clochard ?",
+      "reponse": "Lady",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention permet de voir des images animées chez soi depuis les années 1950 ?",
+      "reponse": "La télévision",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir des papillons dans le ventre ?",
+      "reponse": "Être nerveux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle rue commerciale célèbre traverse Montréal ?",
+      "reponse": "Sainte-Catherine",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse amérindienne chante L'air du vent ?",
+      "reponse": "Pocahontas",
+      "niveau": 1
+    },
+    {
       "categorie": "Sciences et nature",
       "question": "Quel petit animal à grosse queue touffue cache des noix pour l'hiver ?",
       "reponse": "L'écureuil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie niaiser quelqu'un, au Québec ?",
+      "reponse": "Le taquiner",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel clown est l'ennemi juré de Batman ?",
+      "reponse": "Le Joker",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle pierre précieuse est rouge ?",
+      "reponse": "Le rubis",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle écurie italienne de F1 est rouge ?",
+      "reponse": "Ferrari",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel gros véhicule jaune ramasse les enfants le matin ?",
+      "reponse": "L'autobus scolaire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
+      "reponse": "Le pain doré",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle laitue compose la salade César ?",
+      "reponse": "La romaine",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel casse-tête cubique a six couleurs ?",
+      "reponse": "Le cube Rubik",
       "niveau": 1
     },
     {
@@ -36,158 +174,15 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir du pain sur la planche ?",
-      "reponse": "Beaucoup de travail",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle entreprise japonaise a créé Mario et Zelda ?",
-      "reponse": "Nintendo",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle vitamine trouve-t-on dans les oranges ?",
-      "reponse": "La vitamine C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "À quelle température l'eau bout-elle ?",
-      "reponse": "100 degrés C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel casse-tête cubique a six couleurs ?",
-      "reponse": "Le cube Rubik",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle loi québécoise protège la langue française ?",
-      "reponse": "La loi 101",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle fée accompagne Peter Pan ?",
-      "reponse": "Clochette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation raconte un garçon qui rejoint le pays des morts avec sa guitare ?",
-      "reponse": "Coco",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien de temps la Terre met-elle pour faire le tour du Soleil ?",
-      "reponse": "Un an",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le père des Simpson ?",
-      "reponse": "Homer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel style musical a son grand festival à Montréal en juillet ?",
-      "reponse": "Le jazz",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle écurie italienne de F1 est rouge ?",
-      "reponse": "Ferrari",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel engin à deux roues se pousse d'un pied en tenant un guidon ?",
-      "reponse": "La trottinette",
+      "question": "Quel appareil à deux boutons permet de se parler à distance en disant « à toi » ?",
+      "reponse": "Le walkie-talkie",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
       "question": "Combien de jours dans un mois de février normal ?",
       "reponse": "28",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson anglaise fait toucher la tête, les épaules, les genoux et les orteils ?",
-      "reponse": "Head and Shoulders",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de jour ?",
-      "reponse": "Nuit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention permet de voir des images animées chez soi depuis les années 1950 ?",
-      "reponse": "La télévision",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie tomber dans les pommes ?",
-      "reponse": "S'évanouir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle pierre précieuse est rouge ?",
-      "reponse": "Le rubis",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume violet et allongé gratine la moussaka ?",
-      "reponse": "L'aubergine",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel pain sucré en anneau se glace et se saupoudre ?",
-      "reponse": "Le beigne",
       "niveau": 1
     }
   ]

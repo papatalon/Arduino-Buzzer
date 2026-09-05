@@ -7,63 +7,9 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel instrument à dents pincées accompagne le folklore ?",
-      "reponse": "La guimbarde",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle plongeuse québécoise a gagné l'argent à Tokyo ?",
-      "reponse": "Jennifer Abel",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel genre de musique douce et répétitive sert de fond sonore pour étudier ?",
-      "reponse": "Le lo-fi",
-      "niveau": 3,
-      "ages": [
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel grand pont relie l'île de Montréal à la Rive-Sud près du fleuve ?",
-      "reponse": "Le pont Champlain",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel lac est le plus profond du monde ?",
-      "reponse": "Le Baïkal",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle ligne téléphonique se partageait entre plusieurs foyers du village ?",
-      "reponse": "La ligne partagée",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la peur des hauteurs ?",
-      "reponse": "L'acrophobie",
+      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
+      "reponse": "Coup de Pouce",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -71,40 +17,19 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel petit navire rapide Christophe Colomb utilisait-il pour ses voyages ?",
-      "reponse": "Une caravelle",
-      "niveau": 3
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
+      "reponse": "La dionée",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on les cinq lignes sur lesquelles on écrit les notes ?",
-      "reponse": "La portée",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel traitement de coiffure des années 80 frisait les cheveux pour des mois ?",
-      "reponse": "La permanente",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel descripteur de hockey a marqué des générations par son français impeccable ?",
-      "reponse": "René Lecavalier",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel premier ministre canadien a dirigé pendant la Seconde Guerre ?",
-      "reponse": "Mackenzie King",
+      "question": "Quel compositeur français a écrit le Boléro ?",
+      "reponse": "Ravel",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -113,8 +38,69 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle région québécoise occupe un cratère de météorite ?",
-      "reponse": "Charlevoix",
+      "question": "Quel secteur de Montréal regroupe salles de spectacle et festivals au centre-ville ?",
+      "reponse": "Le Quartier des spectacles",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Bon Jovi raconte Tommy et Gina à mi-chemin ?",
+      "reponse": "Livin' on a Prayer",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?",
+      "reponse": "L'écoute en rafale",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel gâteau blanc et rond de Vachon porte un prénom féminin ?",
+      "reponse": "Le May West",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel écrivain russe a écrit Guerre et Paix ?",
+      "reponse": "Tolstoï",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel xylophone africain a des calebasses ?",
+      "reponse": "Le balafon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle boisson gazeuse a longtemps servi de surnom moqueur aux Québécois ?",
+      "reponse": "Le Pepsi",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -132,9 +118,48 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Quel arbre fut ajouté au drapeau de Montréal en 2017 ?",
+      "reponse": "Le pin blanc",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
-      "reponse": "Big Brother Célébrités",
+      "question": "Quel capitaine de la télé jeunesse racontait des histoires invraisemblables avec ses invisibles ?",
+      "reponse": "Le Capitaine Bonhomme",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année l'URSS a-t-elle disparu ?",
+      "reponse": "1991",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe féminin sud-coréen a chanté Kill This Love ?",
+      "reponse": "Blackpink",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle plongeuse québécoise a gagné l'argent à Tokyo ?",
+      "reponse": "Jennifer Abel",
       "niveau": 3,
       "ages": [
         "ados",
@@ -143,64 +168,36 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la partie creuse de la guitare qui fait résonner le son ?",
-      "reponse": "La caisse",
+      "question": "Quelle pédale du piano prolonge les notes après qu'on a levé les doigts ?",
+      "reponse": "La pédale forte",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel écrivain russe a écrit Guerre et Paix ?",
-      "reponse": "Tolstoï",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle bibliothèque nationale ouverte en 2005 se dresse près de Berri-UQAM ?",
-      "reponse": "La Grande Bibliothèque",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle autrice et animatrice québécoise a abordé les tabous à la télé pendant des décennies ?",
-      "reponse": "Janette Bertrand",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel animateur québécois mène une émission de musique en direct avec un band maison ?",
-      "reponse": "Normand Brathwaite",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
-      "reponse": "L'épinette",
+      "question": "Quel grand pont relie l'île de Montréal à la Rive-Sud près du fleuve ?",
+      "reponse": "Le pont Champlain",
       "niveau": 3
     },
     {
-      "categorie": "Histoire",
-      "question": "En quelle année l'URSS a-t-elle disparu ?",
-      "reponse": "1991",
+      "categorie": "Cinéma et télé",
+      "question": "Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?",
+      "reponse": "Le Bossu de Notre-Dame",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel lac est le plus profond du monde ?",
+      "reponse": "Le Baïkal",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -214,20 +211,35 @@
       "niveau": 3
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
-      "reponse": "La dionée",
+      "categorie": "Géographie",
+      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
+      "reponse": "L'épinette",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel petit navire rapide Christophe Colomb utilisait-il pour ses voyages ?",
+      "reponse": "Une caravelle",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
+      "reponse": "Big Brother Célébrités",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel instrument de flûtes de longueurs différentes se joue en soufflant à leur bord ?",
-      "reponse": "La flûte de Pan",
-      "niveau": 3
+      "categorie": "Québec",
+      "question": "Quel chansonnier a écrit Quand les hommes vivront d'amour ?",
+      "reponse": "Raymond Lévesque",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     }
   ]
 }

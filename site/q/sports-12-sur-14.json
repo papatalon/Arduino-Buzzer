@@ -8,76 +8,8 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quelle est la nage la plus rapide ?",
-      "reponse": "Le crawl",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment s'appelle le grand tour cycliste d'Italie ?",
-      "reponse": "Le Giro",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de danse acrobatique se pratique au sol avec de la musique ?",
-      "reponse": "Le breakdance",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au football canadien ?",
-      "reponse": "Douze",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport oppose deux nageurs qui se poussent un ballon dans une piscine ?",
-      "reponse": "Le water-polo",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle médaille reçoit le champion olympique ?",
-      "reponse": "La médaille d'or",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel événement sportif américain a lieu un dimanche de février ?",
-      "reponse": "Le Super Bowl",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu provençal lance des boules vers un cochonnet ?",
-      "reponse": "La pétanque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de trous compte un parcours de golf complet ?",
-      "reponse": "18",
+      "question": "Combien de tournois composent le grand chelem de tennis ?",
+      "reponse": "Quatre",
       "niveau": 1,
       "ages": [
         "ados",
@@ -93,41 +25,24 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport olympique de précision se pratique avec des flèches ?",
-      "reponse": "Le tir à l'arc",
+      "question": "Quel maillot porte le meneur du Tour de France ?",
+      "reponse": "Le maillot jaune",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel cheval célèbre a gagné la Triple Couronne en 1973 ?",
-      "reponse": "Secretariat",
+      "question": "Quelle gymnaste a obtenu le premier 10 parfait ?",
+      "reponse": "Nadia Comăneci",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport d'hiver glisse une pierre vers une cible en balayant la glace ?",
-      "reponse": "Le curling",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel cerceau fait-on tourner autour de la taille ?",
-      "reponse": "Le hula hoop",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel équipement protège la tête à vélo et au hockey ?",
-      "reponse": "Le casque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec un disque volant en équipe ?",
-      "reponse": "L'ultimate",
+      "question": "Quel sport combine ski de fond et tir ?",
+      "reponse": "Le biathlon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -137,8 +52,30 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sprinteur canadien a gagné le 100 m aux JO de 1996 ?",
-      "reponse": "Donovan Bailey",
+      "question": "Comment appelle-t-on les quatre coins que le coureur doit toucher au baseball ?",
+      "reponse": "Les buts",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de points vaut la bille noire au snooker ?",
+      "reponse": "Sept",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un ballon qu'on frappe des mains par-dessus un filet ?",
+      "reponse": "Le volleyball",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel gardien détient le record de victoires en carrière ?",
+      "reponse": "Martin Brodeur",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -147,48 +84,111 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport mélange soccer et voiture dans un jeu vidéo ?",
-      "reponse": "Rocket League",
-      "niveau": 2,
+      "question": "Quelle écurie italienne de F1 est rouge ?",
+      "reponse": "Ferrari",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le service réussi que l'adversaire ne touche pas au tennis ?",
+      "reponse": "Un as",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de médailles d'or olympiques a Michael Phelps ?",
+      "reponse": "23",
+      "niveau": 3,
       "ages": [
-        "enfants",
-        "ados"
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le premier match de la saison ?",
-      "reponse": "Le match d'ouverture",
+      "question": "Quel tournoi du grand chelem se joue à New York ?",
+      "reponse": "Le US Open",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle épreuve d'athlétisme lance une boule de métal le plus loin possible ?",
+      "reponse": "Le lancer du poids",
       "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quelle médaille récompense la troisième place ?",
-      "reponse": "Le bronze",
+      "question": "Depuis quelle planche élastique s'élance le plongeur ?",
+      "reponse": "Un tremplin",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de combat n'utilise que les poings ?",
+      "reponse": "La boxe",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport se joue sur une table avec une petite balle et deux palettes ?",
-      "reponse": "Le ping-pong",
+      "question": "Qui a inventé le basketball ?",
+      "reponse": "James Naismith",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de cour d'école saute sur des cases numérotées dessinées à la craie ?",
+      "reponse": "La marelle",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sprinteur détient le record du 100 mètres ?",
-      "reponse": "Usain Bolt",
+      "question": "Combien vaut un placement au football ?",
+      "reponse": "Trois points",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment s'appelle le joueur qui garde le filet au hockey ?",
+      "reponse": "Le gardien de but",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Combien de coureurs dans un relais 4x100 ?",
-      "reponse": "Quatre",
+      "question": "Quel trophée les équipes de la Ligue nationale se disputent-elles au printemps ?",
+      "reponse": "La coupe Stanley",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le banc où le joueur puni doit s'asseoir ?",
-      "reponse": "Le banc des punitions",
+      "question": "Quel sport surfe sur la neige ?",
+      "reponse": "La planche à neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle épreuve d'athlétisme saute le plus loin possible dans un carré de sable ?",
+      "reponse": "Le saut en longueur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de cour d'école fait sauter par-dessus une corde qui tourne ?",
+      "reponse": "La corde à danser",
       "niveau": 1
     }
   ]

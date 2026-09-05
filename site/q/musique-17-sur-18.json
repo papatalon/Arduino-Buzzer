@@ -8,79 +8,65 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la rangée de touches noires et blanches du piano ?",
-      "reponse": "Le clavier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Que met-on sur les oreilles pour écouter de la musique sans déranger ?",
-      "reponse": "Des écouteurs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument écossais fonctionne avec un sac d'air ?",
-      "reponse": "La cornemuse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse a chanté Bad Romance ?",
-      "reponse": "Lady Gaga",
-      "niveau": 2,
+      "question": "Quel genre de musique douce et répétitive sert de fond sonore pour étudier ?",
+      "reponse": "Le lo-fi",
+      "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle note ronde et blanche dure le plus longtemps ?",
-      "reponse": "La ronde",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur country était surnommé l'Homme en noir ?",
-      "reponse": "Johnny Cash",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel Beatle gaucher jouait de la basse ?",
-      "reponse": "Paul McCartney",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël demande de descendre du ciel avec des jouets par milliers ?",
-      "reponse": "Petit papa Noël",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle jeune chanteuse a chanté Bad Guy ?",
-      "reponse": "Billie Eilish",
-      "niveau": 2,
-      "ages": [
-        "enfants",
         "ados"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle danse fait avancer tout le monde sur les mêmes pas, en rangées ?",
-      "reponse": "La danse en ligne",
+      "question": "Quel chanteur incarnait Danny dans Grease ?",
+      "reponse": "John Travolta",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle voix masculine est la plus grave ?",
+      "reponse": "La basse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le musicien qui joue du saxophone ?",
+      "reponse": "Un saxophoniste",
       "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse française chantait La Vie en rose ?",
+      "reponse": "Édith Piaf",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel compositeur allemand est devenu sourd ?",
+      "reponse": "Beethoven",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel gros instrument à vent se porte enroulé autour du corps dans les fanfares ?",
+      "reponse": "Le soubassophone",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Musique",
@@ -94,8 +80,14 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe folklorique québécois a une bottine dans son nom ?",
-      "reponse": "La Bottine Souriante",
+      "question": "Combien de musiciens forment un trio ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe a chanté Sweet Child O' Mine ?",
+      "reponse": "Guns N' Roses",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -104,9 +96,9 @@
     },
     {
       "categorie": "Musique",
-      "question": "Combien de membres comptaient les Beatles ?",
-      "reponse": "Quatre",
-      "niveau": 1,
+      "question": "Quelle voix féminine est la plus aiguë ?",
+      "reponse": "La soprano",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -115,26 +107,40 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a gagné Eurovision pour la Suisse en 1988 ?",
-      "reponse": "Céline Dion",
+      "question": "Quel instrument à cordes et à long manche donne son son à la musique country ?",
+      "reponse": "Le banjo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle œuvre de Prokofiev raconte un garçon et un loup ?",
+      "reponse": "Pierre et le loup",
       "niveau": 2,
       "ages": [
-        "enfants",
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on le bruit d'une porte qui grince ?",
-      "reponse": "Un grincement",
-      "niveau": 2
+      "question": "Combien de demi-tons dans une octave ?",
+      "reponse": "Douze",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on le musicien qui joue de la trompette ?",
-      "reponse": "Un trompettiste",
-      "niveau": 2
+      "question": "Quelle chanteuse canadienne a chanté Call Me Maybe ?",
+      "reponse": "Carly Rae Jepsen",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Musique",
@@ -149,8 +155,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe a chanté Sweet Child O' Mine ?",
-      "reponse": "Guns N' Roses",
+      "question": "Quel groupe a chanté Hotel California ?",
+      "reponse": "Les Eagles",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -159,36 +165,14 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle diva a chanté My Heart Will Go On ?",
-      "reponse": "Céline Dion",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur canadien a percé adolescent avec Stitches ?",
-      "reponse": "Shawn Mendes",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui joue du violon ?",
-      "reponse": "Un violoniste",
+      "question": "Quel petit instrument à quatre cordes vient d'Hawaï ?",
+      "reponse": "Le ukulélé",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a une voix puissante et chante Un peu plus haut ?",
-      "reponse": "Ginette Reno",
+      "question": "Quel guitariste gaucher a joué Purple Haze ?",
+      "reponse": "Jimi Hendrix",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -197,8 +181,42 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel compositeur autrichien est le roi de la valse ?",
-      "reponse": "Strauss",
+      "question": "Comment appelle-t-on l'artiste qui monte sur scène juste avant la vedette ?",
+      "reponse": "La première partie",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel objet tient le chanteur pour que sa voix porte dans toute la salle ?",
+      "reponse": "Le micro",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle indication musicale signifie jouer fort ?",
+      "reponse": "Forte",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson enfantine parle d'un petit navire qui n'avait jamais navigué ?",
+      "reponse": "Il était un petit navire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe irlandais est mené par Bono ?",
+      "reponse": "U2",
       "niveau": 2,
       "ages": [
         "adultes",

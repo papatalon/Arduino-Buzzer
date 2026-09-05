@@ -8,20 +8,37 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quelle confiserie maison se fait avec de la crème et de la cassonade ?",
-      "reponse": "Le sucre à la crème",
+      "question": "Quelle poupée blonde de Mattel a un ami nommé Ken ?",
+      "reponse": "Barbie",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle fillette en cape rouge apporte une galette à sa grand-mère ?",
-      "reponse": "Le Petit Chaperon rouge",
+      "question": "Quel objet noir et plat, gravé de sillons, tourne sur une table tournante ?",
+      "reponse": "Le disque vinyle",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel bassin de plastique se gonfle dans la cour l'été ?",
+      "reponse": "Une piscine gonflable",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle carte de plastique rigide permettait de louer des films au club vidéo ?",
-      "reponse": "La carte de membre",
+      "question": "Quel artiste fait disparaître des objets devant un public ébahi ?",
+      "reponse": "Un magicien",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
+      "reponse": "Loft Story",
       "niveau": 3,
       "ages": [
         "adultes"
@@ -29,14 +46,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel personnage au chapeau pointu vole sur un balai ?",
-      "reponse": "Une sorcière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle danse des années 70 se pratiquait sous une boule miroir, en pantalon patte d'éléphant ?",
-      "reponse": "Le disco",
+      "question": "Quel repas de fête se prend après la messe de minuit, la nuit du 24 décembre ?",
+      "reponse": "Le réveillon",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -45,8 +56,14 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
-      "reponse": "Le 7 Jours",
+      "question": "Quel cahier propose des dessins à remplir sans dépasser ?",
+      "reponse": "Un livre à colorier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
+      "reponse": "Pierre Falardeau",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -55,9 +72,26 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jouet se presse et se repousse en faisant des petits pops de silicone ?",
-      "reponse": "Le pop-it",
+      "question": "Quelle machine d'arcade vitrée fait descendre une griffe sur des peluches ?",
+      "reponse": "La machine à pinces",
       "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on une histoire racontée en cases dessinées ?",
+      "reponse": "Une bande dessinée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quels trois héros en pyjama se transforment la nuit pour affronter des méchants ?",
+      "reponse": "Les Pyjamasques",
+      "niveau": 1,
       "ages": [
         "enfants",
         "ados"
@@ -65,61 +99,56 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Dans Pokémon, dans quel objet enferme-t-on les créatures capturées ?",
-      "reponse": "Une Poké Ball",
-      "niveau": 1,
+      "question": "Quelle boisson chaude sucrée réchauffe après une glissade en traîneau ?",
+      "reponse": "Un chocolat chaud",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
+      "reponse": "Michel Louvain",
+      "niveau": 3,
       "ages": [
-        "enfants",
-        "ados",
-        "adultes"
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu se joue à deux avec des pions noirs et blancs qu'on saute pour les prendre ?",
-      "reponse": "Les dames",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
-      "reponse": "Le Village Vacances Valcartier",
+      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
+      "reponse": "Josée di Stasio",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de poche en noir et blanc faisait vivre un animal virtuel ?",
-      "reponse": "Le Tamagotchi",
+      "question": "Quel jeu de hasard fait cocher des cases en écoutant des numéros criés ?",
+      "reponse": "Le bingo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil à deux boutons permet de se parler à distance en disant « à toi » ?",
+      "reponse": "Le walkie-talkie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chocolat garde un secret que sa publicité refuse de dévoiler ?",
+      "reponse": "Le Caramilk",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Sous quel grand chapiteau se donnent les numéros d'acrobates ?",
-      "reponse": "Le cirque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle bénédiction le père de famille donnait-il aux siens le matin du 1er janvier ?",
-      "reponse": "La bénédiction paternelle",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle boisson pour sportifs a un éclair dans son logo ?",
-      "reponse": "Le Gatorade",
+      "question": "Quelle pâte gluante et étirable se fabrique à la maison avec de la colle ?",
+      "reponse": "La slime",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -129,8 +158,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Qui livrait les bouteilles de lait à la porte des maisons ?",
-      "reponse": "Le laitier",
+      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
+      "reponse": "Willie Lamothe",
       "niveau": 3,
       "ages": [
         "aines"
@@ -138,38 +167,17 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Que construit-on avec un seau et une pelle au bord de l'eau ?",
-      "reponse": "Un château de sable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil faisait le café en le faisant remonter dans un petit dôme de verre ?",
-      "reponse": "Le percolateur",
+      "question": "Quel jeu de cour d'école fait sauter en tapant dans les mains d'un partenaire ?",
+      "reponse": "La tape-tape",
       "niveau": 3,
       "ages": [
-        "aines"
+        "enfants"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Que repartent les invités d'une fête d'enfants, rempli de bonbons ?",
-      "reponse": "Un sac surprise",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission du samedi soir diffusait le hockey à Radio-Canada ?",
-      "reponse": "La Soirée du hockey",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Où regardait-on un film assis dans son auto, l'été ?",
-      "reponse": "Au ciné-parc",
+      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
+      "reponse": "La guignolée",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -178,9 +186,13 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne de sandwichs fait choisir son pain et ses garnitures au comptoir ?",
-      "reponse": "Subway",
-      "niveau": 1
+      "question": "Quel jeu oppose deux équipes qui se tirent des billes de peinture ?",
+      "reponse": "Le paintball",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Culture pop",
@@ -193,18 +205,13 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel camion de course rouge et bleu affronte Crusher dans une série pour enfants ?",
-      "reponse": "Blaze",
+      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
+      "reponse": "Coup de Pouce",
       "niveau": 3,
       "ages": [
-        "enfants"
+        "adultes",
+        "aines"
       ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel manège file à toute vitesse en montant et descendant sur des rails ?",
-      "reponse": "Les montagnes russes",
-      "niveau": 1
     }
   ]
 }

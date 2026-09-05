@@ -8,9 +8,18 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
-      "reponse": "Le REM",
+      "question": "Quelle petite radio portative à pile a libéré la musique des salons ?",
+      "reponse": "Le transistor",
       "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle boule couverte de miroirs tourne au plafond des soirées dansantes ?",
+      "reponse": "La boule disco",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -19,40 +28,58 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel gros livre illustré arrivait par la poste et faisait rêver avant Noël ?",
-      "reponse": "Le catalogue",
+      "question": "Quel jeu fait deviner des mots à son équipe en trois manches, de plus en plus serrées ?",
+      "reponse": "Le Time's Up",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment s'appelle le grand bulletin de nouvelles de Radio-Canada ?",
-      "reponse": "Le Téléjournal",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Où les enfants passent-ils leurs journées d'été avec des moniteurs ?",
-      "reponse": "Au camp de jour",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel oiseau apporterait les bébés selon la légende ?",
-      "reponse": "La cigogne",
+      "question": "Quel jeu se joue à deux avec des pions noirs et blancs qu'on saute pour les prendre ?",
+      "reponse": "Les dames",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel pichet souriant défonce les murs en criant « Oh yeah » ?",
-      "reponse": "Le pichet Kool-Aid",
+      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
+      "reponse": "Dominique Michel et Denise Filiatrault",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magazine hebdomadaire publiait les horaires de télévision au Québec ?",
+      "reponse": "Le TV Hebdo",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel ballon rempli d'hélium s'envole si on lâche la ficelle ?",
+      "reponse": "Un ballon gonflable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle fillette rousse aux nattes tressées est la plus forte du monde ?",
+      "reponse": "Fifi Brindacier",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel quotidien montréalais a cessé son édition papier en 2018 pour passer à la tablette ?",
+      "reponse": "La Presse",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -61,12 +88,96 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque de voitures électriques porte le nom d'un inventeur serbe ?",
-      "reponse": "Tesla",
+      "question": "Quel trèfle rare porte chance quand on le trouve ?",
+      "reponse": "Le trèfle à quatre feuilles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?",
+      "reponse": "Luca",
       "niveau": 2,
       "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle friandise glacée se vend en tube de plastique à congeler ?",
+      "reponse": "Le Mr. Freeze",
+      "niveau": 1,
+      "ages": [
+        "enfants",
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle activité de party fait chanter sur une musique en lisant les paroles à l'écran ?",
+      "reponse": "Le karaoké",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de jeans a été créée pour les chercheurs d'or ?",
+      "reponse": "Levi's",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quel jeu lance-t-on des oiseaux sur des cochons avec un lance-pierre ?",
+      "reponse": "Angry Birds",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle pharmacie québécoise promet qu'on y trouve de tout, même un ami ?",
+      "reponse": "Jean Coutu",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission matinale de TVA réveille le Québec en semaine ?",
+      "reponse": "Salut Bonjour",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel panier passait dans les rangs pendant la messe du dimanche ?",
+      "reponse": "La quête",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plateforme loue le logement d'un particulier pour des vacances ?",
+      "reponse": "Airbnb",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -77,137 +188,31 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu se joue à deux avec le pouce pour immobiliser celui de l'autre ?",
-      "reponse": "La lutte de pouces",
+      "question": "Quel jouet roule sur des rails miniatures autour du sapin ?",
+      "reponse": "Un train électrique",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
-      "reponse": "Une sirène",
+      "question": "Quel petit être ailé exauce parfois des vœux dans les contes ?",
+      "reponse": "Une fée",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Dans quel film d'animation une famille colombienne vit-elle dans une maison magique ?",
-      "reponse": "Encanto",
-      "niveau": 1,
+      "question": "Quel rassemblement de percussionnistes a lieu au pied du mont Royal le dimanche ?",
+      "reponse": "Les tam-tams",
+      "niveau": 3,
       "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque de pneus a un bonhomme tout rond fait de bourrelets ?",
-      "reponse": "Michelin",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel animal cache les chocolats dans le jardin à Pâques ?",
-      "reponse": "Le lapin de Pâques",
+      "question": "Comment appelle-t-on une photo qu'on prend de soi-même à bout de bras ?",
+      "reponse": "Un égoportrait (selfie)",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle héroïne à pois rouges combat le crime à Paris avec Chat Noir ?",
-      "reponse": "Ladybug",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?",
-      "reponse": "La lessiveuse à tordeur",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel traitement de coiffure des années 80 frisait les cheveux pour des mois ?",
-      "reponse": "La permanente",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit personnage en habit vert aide le père Noël à l'atelier ?",
-      "reponse": "Un lutin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle petite maison de jardin range les outils et la tondeuse ?",
-      "reponse": "Le cabanon",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?",
-      "reponse": "Alys Robi",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel objet rond et plat se lance entre deux joueurs et revient parfois tout seul ?",
-      "reponse": "Le boomerang",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle pâte à tartiner orange se vend en pot et se met sur les rôties ?",
-      "reponse": "Le Cheez Whiz",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de tour en bois s'effondre quand on retire la mauvaise pièce ?",
-      "reponse": "Jenga",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de cour d'école fait sauter en tapant dans les mains d'un partenaire ?",
-      "reponse": "La tape-tape",
-      "niveau": 3,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de la Wii proposait bowling, tennis et boxe avec la télécommande ?",
-      "reponse": "Wii Sports",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
     }
   ]
 }

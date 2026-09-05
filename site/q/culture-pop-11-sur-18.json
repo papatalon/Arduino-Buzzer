@@ -8,30 +8,29 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de ficelle se tend entre les doigts de deux joueurs pour faire des figures ?",
-      "reponse": "Le jeu de la ficelle",
+      "question": "Quelle créature poilue laisserait des empreintes géantes dans la neige des montagnes ?",
+      "reponse": "Le yéti",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel arbre décoré trône dans le salon en décembre ?",
+      "reponse": "Un sapin de Noël",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit disque contenait une chanson de chaque côté ?",
+      "reponse": "Le 45 tours",
       "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne de crème glacée molle trempe ses cornets dans le chocolat ?",
-      "reponse": "Dairy Queen",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Sur quel objet de ménage les sorcières se déplacent-elles dans le ciel ?",
-      "reponse": "Un balai",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
-      "reponse": "Radio Enfer",
+      "question": "Quelle peluche électronique aux grands yeux parlait toute seule en 1998 ?",
+      "reponse": "Le Furby",
       "niveau": 3,
       "ages": [
         "adultes"
@@ -39,9 +38,15 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on une bande dessinée japonaise ?",
-      "reponse": "Un manga",
-      "niveau": 2,
+      "question": "Comment appelle-t-on la longue file de chars et de fanfares qui traverse la ville ?",
+      "reponse": "Une parade",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle console de Nintendo se joue autant sur le téléviseur qu'en mode portable ?",
+      "reponse": "La Nintendo Switch",
+      "niveau": 1,
       "ages": [
         "enfants",
         "ados",
@@ -50,57 +55,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission matinale de TVA réveille le Québec en semaine ?",
-      "reponse": "Salut Bonjour",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de bonbons colorés fond dans la bouche, pas dans la main ?",
-      "reponse": "Les M&M's",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit gâteau rond de Vachon porte un prénom masculin ?",
-      "reponse": "Le Jos Louis",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil envoyait une feuille de papier par la ligne téléphonique ?",
-      "reponse": "Le fax",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on l'objet qu'on tient à deux mains pour jouer à une console ?",
-      "reponse": "La manette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles croustilles de maïs triangulaires se trempent dans la salsa ?",
-      "reponse": "Les Doritos",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel revêtement de sol en rouleau couvrait les cuisines avant le plancher flottant ?",
-      "reponse": "Le prélart",
+      "question": "Quelle autrice et animatrice québécoise a abordé les tabous à la télé pendant des décennies ?",
+      "reponse": "Janette Bertrand",
       "niveau": 3,
       "ages": [
         "aines"
@@ -108,20 +64,17 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne de hamburgers porte un titre royal dans son nom ?",
-      "reponse": "Burger King",
-      "niveau": 1
+      "question": "Quelle bénédiction le père de famille donnait-il aux siens le matin du 1er janvier ?",
+      "reponse": "La bénédiction paternelle",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle activité de party fait chanter sur une musique en lisant les paroles à l'écran ?",
-      "reponse": "Le karaoké",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on au Québec la coupe de cheveux courte devant et longue derrière ?",
-      "reponse": "La coupe Longueuil",
+      "question": "Quel concours de Tim Hortons fait dérouler le rebord d'un gobelet ?",
+      "reponse": "Roll Up the Rim",
       "niveau": 2,
       "ages": [
         "ados",
@@ -131,8 +84,20 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque de jeans a été créée pour les chercheurs d'or ?",
-      "reponse": "Levi's",
+      "question": "Comment appelle-t-on le séjour d'été où l'on dort en cabane avec d'autres jeunes ?",
+      "reponse": "Une colonie de vacances",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet de papier mâché rempli de bonbons se frappe les yeux bandés ?",
+      "reponse": "La piñata",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle poudre au chocolat se mélange au lait froid en le brassant ?",
+      "reponse": "Le Quik",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -141,8 +106,70 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles peluches rondes et pastel portent un prénom et une histoire sur l'étiquette ?",
-      "reponse": "Les Squishmallows",
+      "question": "Quel meuble de la classe range les effets de l'élève ?",
+      "reponse": "Un pupitre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel défi a fait verser des seaux d'eau glacée sur des têtes en 2014 ?",
+      "reponse": "Le Ice Bucket Challenge",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chatte rose ouvre une maison de poupées dans une série de Netflix ?",
+      "reponse": "Gabby",
+      "niveau": 2,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle société d'État diffuse la télévision publique en français au Canada ?",
+      "reponse": "Radio-Canada",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle boisson en poudre se mélange à l'eau et se boit très sucrée ?",
+      "reponse": "Le Kool-Aid",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la fête où les enfants dorment chez un ami ?",
+      "reponse": "Une soirée pyjama",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel gâteau blanc et rond de Vachon porte un prénom féminin ?",
+      "reponse": "Le May West",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel youtubeur américain organise des défis à des millions de dollars ?",
+      "reponse": "MrBeast",
       "niveau": 2,
       "ages": [
         "enfants",
@@ -151,44 +178,9 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel mot qualifie une vidéo qui explose en popularité en quelques heures ?",
-      "reponse": "Virale",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel logiciel de clavardage faisait vibrer l'écran du contact avec un wizz ?",
-      "reponse": "MSN Messenger",
+      "question": "Quel objet orange envahit les rues de Montréal chaque été ?",
+      "reponse": "Le cône",
       "niveau": 2,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil à deux boutons permet de se parler à distance en disant « à toi » ?",
-      "reponse": "Le walkie-talkie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
-      "reponse": "La guignolée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans quel jeu de société conquiert-on des territoires sur une carte du monde ?",
-      "reponse": "Le Risk",
-      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -197,21 +189,30 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles chaussures de caoutchouc percées de trous divisent la planète ?",
-      "reponse": "Les Crocs",
-      "niveau": 1,
+      "question": "Quelle application reconnaît une chanson après l'avoir écoutée quelques secondes ?",
+      "reponse": "Shazam",
+      "niveau": 2,
       "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle série québécoise suivait une famille qui vivait de combines et d'aide sociale ?",
-      "reponse": "Les Bougon",
-      "niveau": 2,
+      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
+      "reponse": "Steinberg",
+      "niveau": 3,
       "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles bottes anglaises à coutures jaunes sont un classique punk ?",
+      "reponse": "Les Doc Martens",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
