@@ -7,27 +7,98 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quel appareil branché à la ligne téléphonique faisait des bruits stridents pour se connecter ?",
-      "reponse": "Le modem",
+      "categorie": "Géographie",
+      "question": "Quel lac canadien est le plus profond ?",
+      "reponse": "Lac des Esclaves",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les tablettes d'argile sur lesquelles écrivaient les Mésopotamiens ?",
+      "reponse": "Les tablettes d'argile",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Qui a composé la musique de l'hymne O Canada ?",
-      "reponse": "Calixa Lavallée",
+      "categorie": "Musique",
+      "question": "Quel compositeur baroque a écrit les Concertos brandebourgeois ?",
+      "reponse": "Bach",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission jeunesse de Radio-Canada ouvrait sur un coffre plein d'histoires ?",
+      "reponse": "La Boîte à surprise",
       "niveau": 3,
       "ages": [
         "aines"
       ]
     },
     {
+      "categorie": "Sports",
+      "question": "Quel sport fait glisser un lugeur tête première sur la glace ?",
+      "reponse": "Le skeleton",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui a atteint le pôle Sud en premier ?",
+      "reponse": "Amundsen",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel poète québécois a écrit L'homme rapaillé ?",
+      "reponse": "Gaston Miron",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle méthode permet de dater un vestige grâce à un isotope ?",
+      "reponse": "Le carbone 14",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce verte argentine accompagne les grillades ?",
+      "reponse": "Le chimichurri",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel humoriste québécois jouait le concierge Symphorien ?",
-      "reponse": "Gilles Latulippe",
+      "question": "Quelle petite radio portative à pile a libéré la musique des salons ?",
+      "reponse": "Le transistor",
       "niveau": 3,
       "ages": [
         "aines"
@@ -44,13 +115,52 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle méthode permet de dater un vestige grâce à un isotope ?",
-      "reponse": "Le carbone 14",
+      "categorie": "Québec",
+      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
+      "reponse": "L'escalier Casse-Cou",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment mesure-t-on la force des ouragans ?",
+      "reponse": "Saffir-Simpson",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil de chauffage exigeait qu'on remplisse la boîte à bois ?",
+      "reponse": "Le poêle à bois",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quelle science étudie l'origine et l'histoire des mots ?",
+      "reponse": "L'étymologie",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
+      "reponse": "Olivier Guimond",
+      "niveau": 3,
+      "ages": [
+        "aines"
       ]
     },
     {
@@ -64,82 +174,13 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Gloria Gaynor est devenue l'hymne des cœurs brisés ?",
-      "reponse": "I Will Survive",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel lac canadien est le plus profond ?",
-      "reponse": "Lac des Esclaves",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de symphonies Beethoven a-t-il composées ?",
-      "reponse": "Neuf",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle émission du samedi soir diffusait le hockey à Radio-Canada ?",
-      "reponse": "La Soirée du hockey",
+      "question": "Quels petits élastiques colorés se tressent en bracelets sur un métier ?",
+      "reponse": "Les Rainbow Loom",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
-      "reponse": "Un divulgâcheur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel papillon est l'insecte emblème du Québec ?",
-      "reponse": "L'amiral",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
-      "reponse": "Watatatow",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil fallait-il installer sur le toit pour capter les chaînes de télé ?",
-      "reponse": "L'antenne",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
@@ -154,8 +195,37 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel genre de musique douce et répétitive sert de fond sonore pour étudier ?",
-      "reponse": "Le lo-fi",
+      "question": "Quel instrument électronique se joue en frappant des pastilles sensibles ?",
+      "reponse": "Le pad",
+      "niveau": 3,
+      "ages": [
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel compositeur français a écrit le Boléro ?",
+      "reponse": "Ravel",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel site de mode en ligne inonde le marché de vêtements à très bas prix ?",
+      "reponse": "Shein",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel sous-genre du rap se reconnaît à ses charlestons rapides et ses basses lourdes ?",
+      "reponse": "La trap",
       "niveau": 3,
       "ages": [
         "ados"
@@ -163,28 +233,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
-      "reponse": "La fin de semaine des Patriotes",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
-      "reponse": "Loud",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat argentin grille des viandes au feu de bois ?",
-      "reponse": "L'asado",
+      "question": "Quel jeu de ficelle se tend entre les doigts de deux joueurs pour faire des figures ?",
+      "reponse": "Le jeu de la ficelle",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -193,63 +243,11 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles bottes anglaises à coutures jaunes sont un classique punk ?",
-      "reponse": "Les Doc Martens",
+      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
+      "reponse": "Dans l'œil du dragon",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel art martial signifie voie de la souplesse ?",
-      "reponse": "Le judo",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Toto porte le nom d'un continent ?",
-      "reponse": "Africa",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle figure de style exagère volontairement ?",
-      "reponse": "L'hyperbole",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète tourne couchée sur le côté ?",
-      "reponse": "Uranus",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a atteint le pôle Sud en premier ?",
-      "reponse": "Amundsen",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
       ]
     }
   ]

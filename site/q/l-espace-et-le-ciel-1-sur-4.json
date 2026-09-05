@@ -7,21 +7,38 @@
   "emoji": "🪐",
   "questions": [
     {
-      "categorie": "Culture générale",
-      "question": "Quelle science étudie les astres ?",
-      "reponse": "L'astronomie",
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène lumineux colore le ciel polaire ?",
+      "reponse": "Aurore boréale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie être dans la lune ?",
+      "reponse": "Être distrait",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel astre change de forme dans le ciel au fil des nuits ?",
-      "reponse": "La Lune",
+      "question": "Quel animal hurle à la lune et chasse en meute ?",
+      "reponse": "Le loup",
       "niveau": 1
     },
     {
+      "categorie": "Histoire",
+      "question": "Quel fut le premier satellite artificiel ?",
+      "reponse": "Spoutnik",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient du Soleil ?",
-      "reponse": "L'énergie solaire",
+      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
+      "reponse": "Une fusée",
       "niveau": 1
     },
     {
@@ -35,15 +52,10 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelles chaussures de caoutchouc percées de trous divisent la planète ?",
-      "reponse": "Les Crocs",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète a été rétrogradée en planète naine ?",
+      "reponse": "Pluton",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -56,31 +68,15 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel trompettiste a chanté What a Wonderful World ?",
-      "reponse": "Louis Armstrong",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sciences et nature",
+      "question": "Quel astre traverse le ciel en traînant une longue queue lumineuse ?",
+      "reponse": "Une comète",
+      "niveau": 2
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Le Soleil est-il une planète ou une étoile ?",
-      "reponse": "Une étoile",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre supermassif avale même la lumière ?",
-      "reponse": "Le trou noir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète tourne couchée sur le côté ?",
-      "reponse": "Uranus",
+      "categorie": "Histoire",
+      "question": "Qui fut la première femme dans l'espace ?",
+      "reponse": "Valentina Terechkova",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -88,36 +84,9 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la planète la plus proche du Soleil ?",
-      "reponse": "Mercure",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style musical coréen a conquis la planète ?",
-      "reponse": "La K-pop",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel soldat Marvel porte un bouclier étoilé ?",
-      "reponse": "Captain America",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui fut le premier homme dans l'espace ?",
-      "reponse": "Youri Gagarine",
+      "categorie": "Québec",
+      "question": "Quelle carte donne accès aux soins de santé gratuits au Québec ?",
+      "reponse": "La carte soleil",
       "niveau": 2,
       "ages": [
         "ados",
@@ -127,8 +96,8 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel musée parisien abrite la Vénus de Milo ?",
-      "reponse": "Le Louvre",
+      "question": "Quel métal est liquide à température ambiante ?",
+      "reponse": "Le mercure",
       "niveau": 2,
       "ages": [
         "ados",
@@ -138,8 +107,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de lunes possède Mars ?",
-      "reponse": "Deux",
+      "question": "Quelle planète est la plus chaude du système solaire ?",
+      "reponse": "Vénus",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -147,26 +116,37 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre provoque les marées ?",
-      "reponse": "La Lune",
+      "categorie": "Cinéma et télé",
+      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
+      "reponse": "Les Gardiens",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelles espadrilles de toile montantes portent une étoile sur la cheville ?",
-      "reponse": "Les Converse",
+      "categorie": "Musique",
+      "question": "Quel chanteur américain a chanté Uptown Funk et Just the Way You Are ?",
+      "reponse": "Bruno Mars",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "De quelle planète vient Superman ?",
-      "reponse": "Krypton",
+      "categorie": "Géographie",
+      "question": "De quel côté se lève le soleil ?",
+      "reponse": "À l'est",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Le Soleil est-il une planète ou une étoile ?",
+      "reponse": "Une étoile",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus grosse planète du système solaire ?",
+      "reponse": "Jupiter",
       "niveau": 1
     },
     {
@@ -181,15 +161,37 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle vitamine fabrique la peau au soleil ?",
-      "reponse": "La vitamine D",
+      "categorie": "Histoire",
+      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
+      "reponse": "Challenger",
       "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Sur quelle planète habitons-nous ?",
+      "reponse": "La Terre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle basilique du Vieux-Montréal a un plafond bleu étoilé ?",
+      "reponse": "Notre-Dame",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?",
+      "reponse": "L'arc-en-ciel",
+      "niveau": 1
     }
   ]
 }

@@ -7,9 +7,40 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
-      "reponse": "La podorythmie",
+      "categorie": "Géographie",
+      "question": "Quel désert couvre le sud-ouest africain ?",
+      "reponse": "Le Kalahari",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel vêtement des années 60 a scandalisé en raccourcissant brusquement ?",
+      "reponse": "La minijupe",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plateforme loue le logement d'un particulier pour des vacances ?",
+      "reponse": "Airbnb",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
+      "reponse": "Pierre de Rosette",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -27,16 +58,6 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelles sondes jumelles ont été lancées en 1977 ?",
-      "reponse": "Voyager",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Géographie",
       "question": "Capitale de la Turquie ?",
       "reponse": "Ankara",
@@ -47,19 +68,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel défi a fait verser des seaux d'eau glacée sur des têtes en 2014 ?",
-      "reponse": "Le Ice Bucket Challenge",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "De quelle langue vient le mot robot ?",
-      "reponse": "Le tchèque",
+      "categorie": "Musique",
+      "question": "Combien de demi-tons dans une octave ?",
+      "reponse": "Douze",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -68,39 +79,18 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission québécoise fait juger des numéros de danse par des maîtres ?",
-      "reponse": "Révolution",
+      "question": "Quel magasin à un dollar a été fondé à Matane en 1992 ?",
+      "reponse": "Dollarama",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle cantatrice grecque fut surnommée la Divina ?",
-      "reponse": "Maria Callas",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de points vaut la bille noire au snooker ?",
-      "reponse": "Sept",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
-      "reponse": "Pierre de Rosette",
+      "question": "Quel xylophone africain a des calebasses ?",
+      "reponse": "Le balafon",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -109,78 +99,18 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel sirop doré anglais vient de la canne ?",
-      "reponse": "Golden syrup",
+      "question": "Avec quel lait fait-on la feta traditionnelle ?",
+      "reponse": "Lait de brebis",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style jamaïcain a précédé le reggae ?",
-      "reponse": "Le ska",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
-      "reponse": "Nézet-Séguin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel panier passait dans les rangs pendant la messe du dimanche ?",
-      "reponse": "La quête",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle prière se récitait en famille à la radio, chaque soir, dans les années 50 ?",
-      "reponse": "Le chapelet",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel métal précieux conduit le mieux l'électricité ?",
-      "reponse": "L'argent",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on le réseau de tuyaux qui recueille l'eau d'érable ?",
-      "reponse": "La tubulure",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année l'Allemagne s'est-elle réunifiée ?",
-      "reponse": "1990",
+      "question": "Quelle ville se proclame capitale mondiale de l'érable ?",
+      "reponse": "Plessisville",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -199,41 +129,31 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
-      "reponse": "Dans l'œil du dragon",
+      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
+      "reponse": "Dans une galaxie près de chez vous",
       "niveau": 3,
       "ages": [
         "adultes"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle petite radio portative à pile a libéré la musique des salons ?",
-      "reponse": "Le transistor",
+      "categorie": "Histoire",
+      "question": "En quelle année l'Allemagne s'est-elle réunifiée ?",
+      "reponse": "1990",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle autoroute mène de Montréal vers les Laurentides ?",
-      "reponse": "La 15",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
-      "reponse": "Grand Theft Auto",
+      "question": "Quel carré de plastique de trois pouces et demi stockait des fichiers d'ordinateur ?",
+      "reponse": "La disquette",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -247,12 +167,91 @@
       ]
     },
     {
+      "categorie": "Sports",
+      "question": "Qui a inventé le basketball ?",
+      "reponse": "James Naismith",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle ardoise à deux boutons dessine des traits et s'efface en la secouant ?",
+      "reponse": "Le Télécran",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Qui collectionne les pièces de monnaie ?",
+      "reponse": "Un numismate",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Musique",
-      "question": "Quel instrument à percussion se joue avec les mains sur deux tambours accolés ?",
-      "reponse": "Les bongos",
+      "question": "Quel concours de chant européen réunit les pays chaque printemps ?",
+      "reponse": "L'Eurovision",
       "niveau": 3,
       "ages": [
         "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Qui a composé la musique de l'hymne O Canada ?",
+      "reponse": "Calixa Lavallée",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
+      "reponse": "La fin de semaine des Patriotes",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qui a créé le tableau périodique ?",
+      "reponse": "Mendeleïev",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel opéra de Bizet se déroule en Espagne ?",
+      "reponse": "Carmen",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelles sondes jumelles ont été lancées en 1977 ?",
+      "reponse": "Voyager",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]

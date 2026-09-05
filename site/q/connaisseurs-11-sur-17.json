@@ -7,9 +7,56 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Musique",
+      "question": "Quel genre musical africain aux rythmes chaloupés s'est imposé mondialement ?",
+      "reponse": "L'afrobeat",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on l'écriture des Vikings, gravée dans la pierre ?",
+      "reponse": "Les runes",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel poisson à voile est le plus rapide des mers ?",
+      "reponse": "Le voilier",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat robot bleu vient du futur ?",
+      "reponse": "Doraemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport oppose deux nageurs qui se poussent un ballon dans une piscine ?",
+      "reponse": "Le water-polo",
+      "niveau": 3
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel tapis à longs poils habillait les salons des années 70 ?",
-      "reponse": "Le shag",
+      "question": "Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?",
+      "reponse": "Le yéyé",
       "niveau": 3,
       "ages": [
         "aines"
@@ -17,10 +64,38 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel commerce de village vendait autrefois aussi bien le clou que la farine ?",
-      "reponse": "Le magasin général",
+      "question": "Quel grand magasin canadien publiait un catalogue attendu chaque année ?",
+      "reponse": "Eaton",
       "niveau": 3,
       "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
+      "reponse": "Loft Story",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
+      "reponse": "Steinberg",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de points vaut la bille noire au snooker ?",
+      "reponse": "Sept",
+      "niveau": 3,
+      "ages": [
+        "adultes",
         "aines"
       ]
     },
@@ -35,19 +110,88 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de ficelle se tend entre les doigts de deux joueurs pour faire des figures ?",
-      "reponse": "Le jeu de la ficelle",
+      "categorie": "Géographie",
+      "question": "Quel pays d'Asie compte plus de 17000 îles ?",
+      "reponse": "L'Indonésie",
       "niveau": 3,
       "ages": [
         "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel compositeur russe a écrit Casse-Noisette ?",
+      "reponse": "Tchaïkovski",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle pédale déforme le son de la guitare pour le rendre saturé ?",
+      "reponse": "La distorsion",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui a traversé l'Atlantique en avion solo en 1927 ?",
+      "reponse": "Lindbergh",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel accessoire rembourré élargissait les épaules des vestons dans les années 80 ?",
+      "reponse": "L'épaulette",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de touches noires compte un piano ?",
+      "reponse": "36",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle plante grimpante rougit les murs des maisons à l'automne ?",
+      "reponse": "La vigne vierge",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission de variétés québécoise des années 70 portait un nom de tannants ?",
+      "reponse": "Les Tannants",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle femme pharaon portait une fausse barbe cérémoniale ?",
-      "reponse": "Hatchepsout",
+      "question": "Quel inventeur italien est considéré comme le père de la radio ?",
+      "reponse": "Marconi",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -55,9 +199,9 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète est la plus chaude du système solaire ?",
-      "reponse": "Vénus",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson indienne mélange yogourt et mangue ?",
+      "reponse": "Le lassi",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -76,148 +220,11 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
-      "reponse": "La ceinture fléchée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur a popularisé le twist ?",
-      "reponse": "Chubby Checker",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel sous-genre du rap se reconnaît à ses charlestons rapides et ses basses lourdes ?",
-      "reponse": "La trap",
-      "niveau": 3,
-      "ages": [
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport pratique la famille Hart de Calgary ?",
-      "reponse": "La lutte",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel gratte-ciel de Montréal, en forme de croix, a ouvert en 1962 ?",
-      "reponse": "La Place Ville-Marie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel site de mode en ligne inonde le marché de vêtements à très bas prix ?",
-      "reponse": "Shein",
+      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
+      "reponse": "Le Wordle",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles rondelles de carton s'empilaient et se retournaient dans les cours d'école des années 90 ?",
-      "reponse": "Les Pogs",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
-      "reponse": "L'autoroute 40",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "À quelle famille d'instruments appartient la flûte ?",
-      "reponse": "Les bois",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Maroc ?",
-      "reponse": "Rabat",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel carré de plastique de trois pouces et demi stockait des fichiers d'ordinateur ?",
-      "reponse": "La disquette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'écriture des Vikings, gravée dans la pierre ?",
-      "reponse": "Les runes",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson indienne mélange yogourt et mangue ?",
-      "reponse": "Le lassi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel secteur de Montréal regroupe salles de spectacle et festivals au centre-ville ?",
-      "reponse": "Le Quartier des spectacles",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à soufflet accompagne le tango ?",
-      "reponse": "Le bandonéon",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
@@ -233,21 +240,12 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel studio japonais a créé Mon voisin Totoro ?",
-      "reponse": "Ghibli",
+      "categorie": "Québec",
+      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
+      "reponse": "L'autoroute 40",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel inventeur italien est considéré comme le père de la radio ?",
-      "reponse": "Marconi",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]

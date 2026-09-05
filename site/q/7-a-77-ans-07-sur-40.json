@@ -7,32 +7,57 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie les carottes sont cuites ?",
-      "reponse": "C'est fini",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Culture générale",
+      "question": "Combien d'enseignes dans un jeu de cartes ?",
+      "reponse": "Quatre",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel minuscule oiseau peut voler en arrière ?",
-      "reponse": "Le colibri",
+      "question": "Quel animal a le cou le plus long ?",
+      "reponse": "La girafe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
+      "reponse": "Les Gardiens",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quel est le cri du mouton ?",
-      "reponse": "Le bêlement",
+      "question": "Que signifie être sage comme une image ?",
+      "reponse": "Être très tranquille",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel gala québécois récompense la télévision ?",
-      "reponse": "Les Gémeaux",
+      "categorie": "Cinéma et télé",
+      "question": "Quel dragon noir accompagne Harold ?",
+      "reponse": "Krokmou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de temps dure une punition mineure au hockey ?",
+      "reponse": "Deux minutes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël québécois reprend l'air de Jingle Bells ?",
+      "reponse": "Vive le vent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de crème glacée molle trempe ses cornets dans le chocolat ?",
+      "reponse": "Dairy Queen",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Dans quel palais londonien vit le roi d'Angleterre ?",
+      "reponse": "Buckingham",
       "niveau": 1,
       "ages": [
         "ados",
@@ -42,59 +67,32 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage italien râpe les pâtes ?",
-      "reponse": "Le parmesan",
+      "question": "Quel oignon frit en anneaux accompagne le burger ?",
+      "reponse": "Rondelles d'oignon",
       "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le symbole chimique de l'oxygène ?",
-      "reponse": "O",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
-      "reponse": "King Kong",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu de cour d'école fait sauter par-dessus une corde qui tourne ?",
-      "reponse": "La corde à danser",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a une croix blanche sur fond rouge ?",
-      "reponse": "La Suisse",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel établissement d'enseignement, entre le secondaire et l'université, n'existe qu'au Québec ?",
-      "reponse": "Le cégep",
+      "question": "Comment nomme-t-on la période des sucres ?",
+      "reponse": "Le temps des sucres",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel poste lance le ballon au football ?",
+      "reponse": "Le quart-arrière",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle racine piquante parfume les biscuits de Noël ?",
+      "reponse": "Le gingembre",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -103,97 +101,79 @@
       "niveau": 1
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Qu'est-ce qui est le plus rapide : le son ou la lumière ?",
+      "reponse": "La lumière",
+      "niveau": 1
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Contraire de bruyant, commençant par S ?",
-      "reponse": "Silencieux",
+      "question": "Comment s'appelle le petit du cochon ?",
+      "reponse": "Le porcelet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse polynésienne navigue avec Maui ?",
+      "reponse": "Moana",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel jeu de table fait glisser une rondelle sur un coussin d'air ?",
-      "reponse": "Le hockey sur air",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat suisse racle du fromage fondu ?",
-      "reponse": "La raclette",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel roi légendaire cherchait le Graal ?",
-      "reponse": "Le roi Arthur",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument rempli de graines produit un son quand on le secoue ?",
-      "reponse": "Les maracas",
+      "question": "Quel sport de glisse descend les pentes enneigées sur deux planches étroites ?",
+      "reponse": "Le ski",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Où se trouvent les pyramides de Gizeh ?",
-      "reponse": "En Égypte",
+      "question": "Quelle mer sépare l'Europe de l'Afrique ?",
+      "reponse": "La Méditerranée",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel jardin montréalais est parmi les plus grands au monde ?",
+      "reponse": "Jardin botanique",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roi lion est le père de Simba ?",
-      "reponse": "Mufasa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle maladie a confiné la planète entière au printemps 2020 ?",
-      "reponse": "La COVID-19",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit principal compose le ketchup ?",
-      "reponse": "La tomate",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ours du Livre de la jungle chante Il en faut peu ?",
-      "reponse": "Baloo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la reprise d'une chanson par un autre artiste ?",
-      "reponse": "Une reprise",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel personnage descend par la cheminée pour laisser des cadeaux ?",
-      "reponse": "Le père Noël",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne de hamburgers porte un titre royal dans son nom ?",
-      "reponse": "Burger King",
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri de la vache ?",
+      "reponse": "Le meuglement",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel instrument sert à observer les microbes ?",
-      "reponse": "Le microscope",
+      "question": "Quel phénomène lumineux accompagne le tonnerre ?",
+      "reponse": "L'éclair",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle arme les chevaliers portaient-ils au côté ?",
+      "reponse": "L'épée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de cartes à collectionner fait évoluer des créatures de poche ?",
+      "reponse": "Pokémon",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel gâteau roulé au chocolat se sert au réveillon de Noël ?",
+      "reponse": "La bûche de Noël",
       "niveau": 1
     }
   ]

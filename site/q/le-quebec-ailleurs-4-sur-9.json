@@ -7,24 +7,10 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel gala récompense la musique québécoise ?",
-      "reponse": "L'ADISQ",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel lutteur québécois était surnommé Mad Dog ?",
-      "reponse": "Maurice Vachon",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Quel duo de La Petite Vie dort debout ?",
+      "reponse": "Popa et Moman",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
@@ -37,22 +23,41 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit des détenues ?",
-      "reponse": "Unité 9",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quelle série policière québécoise porte le numéro d'un poste de police ?",
+      "reponse": "District 31",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
-      "reponse": "Le homard",
+      "question": "Quelle fête québécoise célèbre le blé d'Inde ?",
+      "reponse": "L'épluchette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle province se trouve Montréal ?",
+      "reponse": "Le Québec",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
-      "reponse": "Le Forum",
+      "question": "Quelle autrice et animatrice québécoise a abordé les tabous à la télé pendant des décennies ?",
+      "reponse": "Janette Bertrand",
       "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chansonnier a écrit Mon pays ?",
+      "reponse": "Gilles Vigneault",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -70,42 +75,6 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel artiste québécois a fait sensation avec l'album Darlène ?",
-      "reponse": "Hubert Lenoir",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel chef québécois donne son prénom à un magazine, une émission et une gamme de produits ?",
-      "reponse": "Ricardo",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat québécois cuit des haricots blancs au four ?",
-      "reponse": "Fèves au lard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne éducative appartient au gouvernement du Québec ?",
-      "reponse": "Télé-Québec",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
       "question": "Quel organisme québécois délivre les permis de conduire et les plaques ?",
       "reponse": "La SAAQ",
@@ -117,66 +86,25 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel concours de chant québécois lance des carrières depuis 2003 ?",
-      "reponse": "Star Académie",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
-      "reponse": "Coup de Pouce",
+      "question": "Quel jeu télévisé québécois demande de repérer celui qui ment ?",
+      "reponse": "Le Tricheur",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle rébellion québécoise eut lieu en 1837 ?",
-      "reponse": "Les Patriotes",
-      "niveau": 2,
-      "ages": [
         "ados",
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel grand festival de musique se tient sur les plaines d'Abraham en juillet ?",
-      "reponse": "Le Festival d'été de Québec",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Comment appelle-t-on la sève recueillie au printemps pour faire le sirop ?",
-      "reponse": "L'eau d'érable",
+      "question": "Quel plat québécois superpose patates pilées, blé d'Inde et viande hachée ?",
+      "reponse": "Le pâté chinois",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle boisson gazeuse a longtemps servi de surnom moqueur aux Québécois ?",
-      "reponse": "Le Pepsi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Quel groupe folklorique québécois a une bottine dans son nom ?",
-      "reponse": "La Bottine Souriante",
+      "question": "Quelle chanteuse québécoise a une voix puissante et chante Un peu plus haut ?",
+      "reponse": "Ginette Reno",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -185,12 +113,13 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel peuple autochtone a accueilli Jacques Cartier à son arrivée ?",
-      "reponse": "Les Iroquoiens",
-      "niveau": 3,
+      "question": "Quel intendant a développé la Nouvelle-France ?",
+      "reponse": "Jean Talon",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -203,9 +132,51 @@
       ]
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
+      "reponse": "La guignolée",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
+      "reponse": "Georges St-Pierre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain rond avec un trou se mange à Montréal ?",
+      "reponse": "Le bagel",
+      "niveau": 1
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Trois-Rivières ?",
-      "reponse": "Un Trifluvien",
+      "question": "Que signifie attache ta tuque ?",
+      "reponse": "Prépare-toi",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel humoriste québécois a créé la série Les Beaux Malaises ?",
+      "reponse": "Martin Matte",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel pont s'est effondré deux fois pendant sa construction, en 1907 et en 1916 ?",
+      "reponse": "Le pont de Québec",
       "niveau": 2,
       "ages": [
         "ados",
@@ -215,22 +186,46 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel gardien québécois a popularisé le style papillon ?",
-      "reponse": "Patrick Roy",
+      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
+      "reponse": "Alexandre Bilodeau",
       "niveau": 2,
       "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
+      "reponse": "Le smoked meat",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois barrer la porte ?",
+      "reponse": "Verrouiller",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
+      "reponse": "Quétaine",
+      "niveau": 2,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
-      "reponse": "Big Brother Célébrités",
-      "niveau": 3,
+      "categorie": "Histoire",
+      "question": "Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?",
+      "reponse": "Jeanne Mance",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     }
   ]

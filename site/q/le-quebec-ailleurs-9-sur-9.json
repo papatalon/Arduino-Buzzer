@@ -7,101 +7,49 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a chanté pour Titanic ?",
-      "reponse": "Céline Dion",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
-      "reponse": "La podorythmie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne de restaurants québécoise s'est bâtie sur le déjeuner ?",
-      "reponse": "Cora",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
-      "reponse": "Watatatow",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Que signifie attache ta tuque ?",
-      "reponse": "Prépare-toi",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Que signifie le mot québécois jaser ?",
+      "reponse": "Bavarder",
+      "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
-      "reponse": "La Bolduc",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit des détenues ?",
+      "reponse": "Unité 9",
+      "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle émission matinale de TVA réveille le Québec en semaine ?",
-      "reponse": "Salut Bonjour",
+      "categorie": "Géographie",
+      "question": "Quel état américain touche le Québec et le Nouveau-Brunswick ?",
+      "reponse": "Le Maine",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
-      "reponse": "Bleu Jeans Bleu",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
-      "reponse": "Le pain doré",
-      "niveau": 1
+      "question": "Quel pain rond troué se mange grillé avec du fromage à la crème ?",
+      "reponse": "Le bagel",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de coupes Stanley pour les Canadiens de Montréal ?",
+      "reponse": "24",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Montréal ?",
-      "reponse": "Un Montréalais",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
-      "reponse": "Quétaine",
+      "question": "Comment nomme-t-on l'habitant de Trois-Rivières ?",
+      "reponse": "Un Trifluvien",
       "niveau": 2,
       "ages": [
         "ados",
@@ -111,23 +59,52 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle société d'État tire les loteries au Québec ?",
-      "reponse": "Loto-Québec",
-      "niveau": 1,
+      "question": "Quelle quincaillerie québécoise portait un prénom dans son enseigne ?",
+      "reponse": "Pascal",
+      "niveau": 3,
       "ages": [
-        "ados",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
+      "reponse": "La fin de semaine des Patriotes",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
+      "reponse": "Le fromage en grains",
+      "niveau": 1
+    },
+    {
       "categorie": "Musique",
-      "question": "Quelle pianiste et chanteuse québécoise se fait appeler Cœur de pirate ?",
-      "reponse": "Béatrice Martin",
+      "question": "Quel chant de Noël québécois reprend l'air de Jingle Bells ?",
+      "reponse": "Vive le vent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
+      "reponse": "Le Forum",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
+      "reponse": "Les Baronets",
+      "niveau": 3,
+      "ages": [
+        "aines"
       ]
     },
     {
@@ -141,85 +118,92 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant du Saguenay ?",
-      "reponse": "Un Saguenéen",
-      "niveau": 2,
+      "categorie": "Culture pop",
+      "question": "Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?",
+      "reponse": "La tire sur la neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert québécois est un gâteau arrosé de sauce sucrée ?",
+      "reponse": "Pouding chômeur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
+      "reponse": "Cracké",
+      "niveau": 3,
       "ages": [
-        "ados",
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
+      "reponse": "Josée di Stasio",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quels trois étages composent le pâté chinois ?",
-      "reponse": "Bœuf maïs patates",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville du Québec ?",
-      "reponse": "Montréal",
+      "categorie": "Culture générale",
+      "question": "Quel animal figure sur la pièce de 25 cents canadienne ?",
+      "reponse": "Le caribou",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
-      "reponse": "Nézet-Séguin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission québécoise fait juger des numéros de danse par des maîtres ?",
-      "reponse": "Révolution",
+      "question": "Quel artiste québécois a fait sensation avec l'album Darlène ?",
+      "reponse": "Hubert Lenoir",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
-      "reponse": "Les Plouffe",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
+      "categorie": "Sciences et nature",
+      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
+      "reponse": "La Grande Ourse",
+      "niveau": 3
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande hachée garnit le pâté chinois ?",
-      "reponse": "Le bœuf",
+      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
+      "reponse": "La tire d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
+      "reponse": "Le raton laveur",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on au Québec la coupe de cheveux courte devant et longue derrière ?",
-      "reponse": "La coupe Longueuil",
-      "niveau": 2,
+      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
+      "reponse": "Big Brother Célébrités",
+      "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle société d'État a le monopole de la vente d'alcool au Québec ?",
-      "reponse": "La SAQ",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel personnage rouge et blanc à tuque se cache dans des foules dessinées ?",
+      "reponse": "Charlie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit bleu foncé se cueille dans les bois du Lac-Saint-Jean ?",
+      "reponse": "Le bleuet sauvage",
+      "niveau": 2
     }
   ]
 }

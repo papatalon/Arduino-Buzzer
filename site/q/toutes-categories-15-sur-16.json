@@ -7,32 +7,67 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Quelle organisation regroupe les pays francophones ?",
-      "reponse": "La Francophonie",
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la personne qui dirige une équipe depuis le banc ?",
+      "reponse": "L'entraîneur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de côtés a un pentagone ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la feuille qui donne les ingrédients et les étapes d'un plat ?",
+      "reponse": "Une recette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle basilique du Vieux-Montréal a un plafond bleu étoilé ?",
+      "reponse": "Notre-Dame",
       "niveau": 1,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Dans la comptine, de quelle couleur est la souris qui courait dans l'herbe ?",
+      "reponse": "Verte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série policière québécoise porte le numéro d'un poste de police ?",
+      "reponse": "District 31",
+      "niveau": 2,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport pratiquait Michael Phelps ?",
-      "reponse": "La natation",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel sport de glace utilise des pierres et des balais ?",
+      "reponse": "Le curling",
+      "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat provençal mijote des légumes et aubergines ?",
-      "reponse": "La ratatouille",
-      "niveau": 1,
+      "categorie": "Cinéma et télé",
+      "question": "Quelle amazone a un lasso de vérité ?",
+      "reponse": "Wonder Woman",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel scientifique a inventé le paratonnerre ?",
+      "reponse": "Benjamin Franklin",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -41,88 +76,69 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu oppose des équipes armées de pistolets lumineux dans le noir ?",
-      "reponse": "Le laser tag",
+      "question": "Quels ninjas de Lego portent chacun une couleur et un élément ?",
+      "reponse": "Ninjago",
       "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de lettres compte l'alphabet français ?",
+      "reponse": "Vingt-six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot toboggan ?",
+      "reponse": "Langues autochtones",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel territoire canadien a Iqaluit pour capitale ?",
+      "reponse": "Le Nunavut",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Daft Punk répète qu'on est plus fort, meilleur et plus rapide ?",
+      "reponse": "Harder, Better, Faster, Stronger",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel jour de la semaine porte le nom de la Lune ?",
-      "reponse": "Lundi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel petit disque optique a remplacé la cassette ?",
-      "reponse": "Le CD",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel monument italien penche dangereusement depuis des siècles ?",
-      "reponse": "La tour de Pise",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
-      "reponse": "Le Japon",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Que veut dire Hakuna Matata ?",
-      "reponse": "Pas de souci",
+      "categorie": "Mots et langue",
+      "question": "Que signifie les carottes sont cuites ?",
+      "reponse": "C'est fini",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel appareil blanc d'Apple faisait tourner la musique avec une molette ?",
-      "reponse": "Le iPod",
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle l'école de Harry Potter ?",
+      "reponse": "Poudlard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle reine d'Égypte a séduit César et Antoine ?",
+      "reponse": "Cléopâtre",
       "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse de jazz était surnommée Lady Day ?",
-      "reponse": "Billie Holiday",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle course cycliste est la plus célèbre au monde ?",
-      "reponse": "Le Tour de France",
-      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -131,42 +147,20 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel colonel a fondé la chaîne de poulet PFK ?",
-      "reponse": "Sanders",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel petit légume rond, rouge dehors et blanc dedans, pique la langue ?",
+      "reponse": "Le radis",
+      "niveau": 2
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros mutant a des griffes en adamantium ?",
-      "reponse": "Wolverine",
+      "categorie": "Culture générale",
+      "question": "Quel hors-la-loi anglais volait aux riches pour les pauvres ?",
+      "reponse": "Robin des Bois",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Qui a composé la musique de l'hymne O Canada ?",
-      "reponse": "Calixa Lavallée",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission de variétés québécoise des années 70 portait un nom de tannants ?",
-      "reponse": "Les Tannants",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel pays a un cercle rouge sur fond blanc ?",
-      "reponse": "Le Japon",
+      "question": "Quel rocher troué est l'emblème de la Gaspésie ?",
+      "reponse": "Le rocher Percé",
       "niveau": 1,
       "ages": [
         "ados",
@@ -176,8 +170,31 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "De quel métal est principalement fait l'acier ?",
-      "reponse": "Le fer",
+      "question": "Que devient un têtard ?",
+      "reponse": "Une grenouille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle crise de 1962 concernait des missiles ?",
+      "reponse": "Crise de Cuba",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel cahier à anneaux range les feuilles de chaque matière ?",
+      "reponse": "Un cartable",
+      "niveau": 2
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie se serrer la ceinture ?",
+      "reponse": "Se priver",
       "niveau": 1,
       "ages": [
         "ados",
@@ -187,74 +204,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la plus haute montagne d'Afrique ?",
-      "reponse": "Le Kilimandjaro",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la fin de semaine du 1er juillet où tout le monde déménage ?",
-      "reponse": "Le jour du déménagement",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
-      "reponse": "Pizarro",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir le cœur sur la main ?",
-      "reponse": "Être généreux",
+      "question": "Quelle chaîne de montagnes traverse la Suisse ?",
+      "reponse": "Les Alpes",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle unité mesure le courant électrique ?",
-      "reponse": "L'ampère",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel dictateur soviétique a succédé à Lénine ?",
-      "reponse": "Staline",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on le médecin des animaux ?",
-      "reponse": "Le vétérinaire",
-      "niveau": 1
     }
   ]
 }

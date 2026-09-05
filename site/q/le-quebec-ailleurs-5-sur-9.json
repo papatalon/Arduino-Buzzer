@@ -7,69 +7,10 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
-      "reponse": "Le REM",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
-      "reponse": "La ceinture fléchée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle fête québécoise célèbre le blé d'Inde ?",
-      "reponse": "L'épluchette",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mot québécois remplace « chat » pour une conversation écrite en ligne ?",
-      "reponse": "Le clavardage",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
-      "reponse": "Josée di Stasio",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quelle émission jeunesse québécoise a Passe-Montagne ?",
-      "reponse": "Passe-Partout",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
-      "reponse": "Pierre Falardeau",
-      "niveau": 3,
+      "question": "Quel groupe québécois a parodié les années 80 à la télé ?",
+      "reponse": "RBO",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -77,57 +18,90 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel repas québécois se mange le midi ?",
-      "reponse": "Le dîner",
+      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
+      "reponse": "La poutine",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
-      "reponse": "Trudeau",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
-      "reponse": "Dans une galaxie près de chez vous",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel animal figure sur la pièce de 25 cents canadienne ?",
-      "reponse": "Le caribou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
-      "reponse": "L'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise fait cohabiter des célibataires devant les caméras ?",
-      "reponse": "Occupation Double",
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant du Saguenay ?",
+      "reponse": "Un Saguenéen",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de motoneige est née au Québec ?",
+      "reponse": "Ski-Doo",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel pilote québécois a donné son nom au circuit de Montréal ?",
+      "reponse": "Gilles Villeneuve",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel festival de musique se tient chaque été au parc Jean-Drapeau à Montréal ?",
-      "reponse": "Osheaga",
-      "niveau": 2,
+      "question": "Quelle chanteuse acadienne chante en français avec un banjo ?",
+      "reponse": "Lisa LeBlanc",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
+      "reponse": "Le homard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
+      "reponse": "Caillou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
+      "reponse": "Mariana Mazza",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
+      "reponse": "Montréal",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
+      "reponse": "Loud",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes"
@@ -140,9 +114,61 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Céline Dion ouvre par une flûte irlandaise ?",
-      "reponse": "My Heart Will Go On",
+      "categorie": "Culture pop",
+      "question": "Quelle série québécoise d'Anne Dorval et Daniel Brière suivait une famille de trois garçons ?",
+      "reponse": "Les Parent",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle émission québécoise a des fauteuils qui pivotent ?",
+      "reponse": "La Voix",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet orange envahit les rues de Montréal chaque été ?",
+      "reponse": "Le cône",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Qui était le gérant et le mari de Céline Dion ?",
+      "reponse": "René Angélil",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
+      "reponse": "Le pain doré",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
+      "reponse": "Dominique Michel et Denise Filiatrault",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve forme la frontière Ontario-Québec au sud ?",
+      "reponse": "L'Outaouais",
       "niveau": 2,
       "ages": [
         "ados",
@@ -152,29 +178,15 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel numéro portait Maurice Richard ?",
-      "reponse": "9",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?",
+      "reponse": "Le Canadien",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel imitateur québécois a chanté en enchaînant des dizaines de voix célèbres ?",
-      "reponse": "André-Philippe Gagnon",
+      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
+      "reponse": "Le 7 Jours",
       "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel mot québécois désigne un enfant ?",
-      "reponse": "Un flo",
-      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -182,33 +194,34 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel pain rond avec un trou se mange à Montréal ?",
-      "reponse": "Le bagel",
+      "question": "Quelle confiserie d'érable se roule sur la neige ?",
+      "reponse": "La tire",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
-      "reponse": "Cracké",
-      "niveau": 3,
+      "question": "Quelle série québécoise suivait une famille qui vivait de combines et d'aide sociale ?",
+      "reponse": "Les Bougon",
+      "niveau": 2,
       "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle quincaillerie québécoise portait un prénom dans son enseigne ?",
-      "reponse": "Pascal",
-      "niveau": 3,
-      "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelles pièces de bois claque-t-on entre les doigts au Québec ?",
-      "reponse": "Les cuillères",
+      "question": "Quel groupe rock québécois était mené par Gerry Boulet ?",
+      "reponse": "Offenbach",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
+      "reponse": "Trudeau",
       "niveau": 1,
       "ages": [
         "ados",

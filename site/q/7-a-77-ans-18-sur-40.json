@@ -7,122 +7,61 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel oiseau répète ce qu'on lui dit ?",
-      "reponse": "Le perroquet",
+      "categorie": "Sports",
+      "question": "Quel sport de table se joue avec des queues et des billes ?",
+      "reponse": "Le billard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle l'école de Harry Potter ?",
+      "reponse": "Poudlard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne les gants où les doigts sont ensemble ?",
+      "reponse": "Les mitaines",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle chaîne canadienne vend du café, des beignes et des Timbits ?",
+      "reponse": "Tim Hortons",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle boisson pour sportifs a un éclair dans son logo ?",
-      "reponse": "Le Gatorade",
+      "question": "Quelle chienne bleue australienne joue avec sa sœur Bingo dans une série ?",
+      "reponse": "Bluey",
       "niveau": 1,
       "ages": [
         "enfants",
-        "ados",
-        "adultes"
+        "ados"
       ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Féminin d'empereur ?",
-      "reponse": "Impératrice",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel magicien conseillait le roi Arthur ?",
-      "reponse": "Merlin",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du chien ?",
-      "reponse": "L'aboiement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel oignon frit en anneaux accompagne le burger ?",
-      "reponse": "Rondelles d'oignon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle souris Disney est l'amoureuse de Mickey ?",
-      "reponse": "Minnie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Féminin de dieu ?",
-      "reponse": "Déesse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mois de 1970 a connu l'enlèvement de Pierre Laporte ?",
-      "reponse": "Octobre",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon a une casquette rouge et chasse des Pokémon ?",
-      "reponse": "Sacha",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel déjeuner anglais complet est copieux ?",
-      "reponse": "English breakfast",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de prises pour retirer un frappeur ?",
-      "reponse": "Trois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal à longues oreilles adore les carottes ?",
-      "reponse": "Le lapin",
-      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "De quoi étaient faits les premiers outils des hommes préhistoriques ?",
-      "reponse": "De pierre",
+      "question": "Quel ancien téléphone fallait-il tourner avec le doigt pour composer un numéro ?",
+      "reponse": "Le téléphone à cadran",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel frère québécois guérisseur est devenu saint ?",
-      "reponse": "Frère André",
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film de Noël un train magique emmène-t-il des enfants au pôle Nord ?",
+      "reponse": "Le Pôle Express",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas québécois se mange le midi ?",
+      "reponse": "Le dîner",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle carte est la plus forte au poker ?",
+      "reponse": "L'as",
       "niveau": 1,
       "ages": [
         "ados",
@@ -132,8 +71,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle voix masculine est la plus grave ?",
-      "reponse": "La basse",
+      "question": "Quel chant alpin alterne voix de tête et de poitrine ?",
+      "reponse": "Le yodel",
       "niveau": 1,
       "ages": [
         "ados",
@@ -142,20 +81,37 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Aux échecs, combien de dames au départ par joueur ?",
-      "reponse": "Une",
+      "categorie": "Sciences et nature",
+      "question": "Quelle particule négative tourne autour du noyau ?",
+      "reponse": "L'électron",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie se tirer une bûche ?",
+      "reponse": "Prendre une chaise",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle petite marque au milieu du ventre reste du cordon ombilical ?",
+      "reponse": "Le nombril",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Langue parlée au Mexique ?",
-      "reponse": "L'espagnol",
+      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
+      "reponse": "Le Japon",
       "niveau": 1,
       "ages": [
         "ados",
@@ -170,44 +126,83 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel petit maître Jedi vert parle à l'envers ?",
-      "reponse": "Yoda",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel hérisson bleu court très vite en jeu vidéo ?",
-      "reponse": "Sonic",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat provençal mijote des légumes et aubergines ?",
+      "reponse": "La ratatouille",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film de Noël un garçon oublié à la maison piège deux cambrioleurs ?",
+      "reponse": "Maman, j'ai raté l'avion",
+      "niveau": 1
+    },
+    {
       "categorie": "Sports",
-      "question": "Quel sport de table se joue avec des queues et des billes ?",
-      "reponse": "Le billard",
+      "question": "Quel sport de glace utilise des pierres et des balais ?",
+      "reponse": "Le curling",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays vivent les kangourous ?",
-      "reponse": "L'Australie",
+      "question": "Sur quel continent se trouve le Canada ?",
+      "reponse": "L'Amérique du Nord",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit brun et poilu vient de Nouvelle-Zélande ?",
-      "reponse": "Le kiwi",
+      "categorie": "Sports",
+      "question": "Quel sport pratiquait Michael Phelps ?",
+      "reponse": "La natation",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie jeter l'éponge ?",
+      "reponse": "Abandonner",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle créature est mi-homme mi-cheval ?",
+      "reponse": "Le centaure",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel dinosaure vert craintif vit dans Toy Story ?",
-      "reponse": "Rex",
+      "categorie": "Québec",
+      "question": "Quelle équipe de football joue à Montréal ?",
+      "reponse": "Les Alouettes",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel objet ouvre-t-on pour se protéger de la pluie ?",
+      "reponse": "Un parapluie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Pluriel de cheval ?",
+      "reponse": "Chevaux",
       "niveau": 1
     }
   ]

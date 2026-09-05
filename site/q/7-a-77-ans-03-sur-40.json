@@ -7,193 +7,98 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Culture générale",
-      "question": "Quelle couleur obtient-on en mélangeant du rouge et du jaune ?",
-      "reponse": "Orange",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit rond porte le nom de sa couleur ?",
+      "reponse": "L'orange",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport descend des rivières en radeau pneumatique ?",
+      "reponse": "Le rafting",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel drapeau agite-t-on à la fin d'une course auto ?",
+      "reponse": "Drapeau à damier",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Sous quelle lettre place-t-on la cédille ?",
-      "reponse": "Le C",
+      "question": "Contraire de rapide ?",
+      "reponse": "Lent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel arbre produit des glands ?",
+      "reponse": "Le chêne",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Sur quel continent vivent les girafes en liberté ?",
-      "reponse": "L'Afrique",
+      "question": "Quelle langue parle-t-on aux États-Unis ?",
+      "reponse": "L'anglais",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle opération municipale suit chaque bordée de neige dans les rues ?",
+      "reponse": "Le déneigement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la vidéo qui montre étape par étape comment faire quelque chose ?",
+      "reponse": "Un tutoriel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien d'anneaux sur le drapeau olympique ?",
+      "reponse": "Cinq",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quel signe marque l'élision dans le mot l'arbre ?",
-      "reponse": "L'apostrophe",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien vaut un converti de deux points ?",
-      "reponse": "Deux",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle soupe vietnamienne parfumée contient du bœuf ?",
-      "reponse": "Le pho",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "À quelle température l'eau gèle-t-elle ?",
-      "reponse": "0 degré C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe a chanté Hey Jude et Let It Be ?",
-      "reponse": "Les Beatles",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
-      "reponse": "L'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel numéro portait Wayne Gretzky ?",
-      "reponse": "99",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert italien contient du café et du mascarpone ?",
-      "reponse": "Le tiramisu",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel pain plat indien cuit dans un four tandoor ?",
-      "reponse": "Le naan",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle exposition universelle a eu lieu à Montréal ?",
-      "reponse": "Expo 67",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon au chandail à zigzag est le maître de Snoopy ?",
-      "reponse": "Charlie Brown",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la maison des abeilles ?",
-      "reponse": "La ruche",
+      "question": "Pluriel de monsieur ?",
+      "reponse": "Messieurs",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel peuple de l'Antiquité a inventé les Jeux olympiques ?",
-      "reponse": "Les Grecs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
-      "reponse": "Rio de Janeiro",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de cordes sur une guitare classique ?",
-      "reponse": "Six",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel style musical a son grand festival à Montréal en juillet ?",
-      "reponse": "Le jazz",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Masculin de jument ?",
-      "reponse": "L'étalon",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de sport allemande a trois bandes parallèles ?",
-      "reponse": "Adidas",
+      "question": "Comment appelait-on les rois de l'Égypte ancienne ?",
+      "reponse": "Les pharaons",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation met en scène Dracula et sa famille de monstres dans un hôtel ?",
-      "reponse": "Hôtel Transylvanie",
+      "question": "Quelle suite de Nemo suit la mémoire de Dory ?",
+      "reponse": "Trouver Doris",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel moteur de recherche est le plus utilisé au monde ?",
+      "reponse": "Google",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle énergie est produite à partir d'uranium ?",
+      "reponse": "Le nucléaire",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel écureuil de L'Ère de glace court sans cesse après son gland ?",
+      "reponse": "Scrat",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -202,19 +107,51 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Dans quel jeu vidéo cent joueurs s'affrontent-ils jusqu'au dernier survivant en construisant des murs ?",
-      "reponse": "Fortnite",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
+      "categorie": "Musique",
+      "question": "Quelle percussion ronde a des cymbalettes ?",
+      "reponse": "Le tambourin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz les plantes rejettent-elles le jour ?",
+      "reponse": "L'oxygène",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quelles sont les couleurs du drapeau italien ?",
-      "reponse": "Vert blanc rouge",
+      "question": "Quelle entreprise a créé l'iPhone ?",
+      "reponse": "Apple",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le petit chien blanc de Tintin ?",
+      "reponse": "Milou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage italien râpe les pâtes ?",
+      "reponse": "Le parmesan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel bassin de plastique se gonfle dans la cour l'été ?",
+      "reponse": "Une piscine gonflable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil garde la crème glacée bien dure ?",
+      "reponse": "Le congélateur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle fête du 1er juillet fait déménager les Québécois ?",
+      "reponse": "Jour du déménagement",
       "niveau": 1,
       "ages": [
         "ados",
@@ -223,9 +160,20 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami étoile de mer accompagne Bob l'éponge ?",
-      "reponse": "Patrick",
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant de Terre-Neuve ?",
+      "reponse": "Un Terre-Neuvien",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment appelle-t-on la grosse partie de l'arbre qui porte les branches ?",
+      "reponse": "Le tronc",
       "niveau": 1
     }
   ]

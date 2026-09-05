@@ -7,49 +7,9 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quelle épreuve combine dix disciplines ?",
-      "reponse": "Le décathlon",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant alpin alterne voix de tête et de poitrine ?",
-      "reponse": "Le yodel",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Combien de syllabes compte le mot « chocolat » ?",
-      "reponse": "Trois",
-      "niveau": 1
-    },
-    {
       "categorie": "Histoire",
-      "question": "Quelle machine de siège lançait des pierres par-dessus les murailles ?",
-      "reponse": "La catapulte",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
-      "reponse": "Les Boys",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de points vaut un touché au football ?",
-      "reponse": "Six",
+      "question": "Quel pont s'est effondré deux fois pendant sa construction, en 1907 et en 1916 ?",
+      "reponse": "Le pont de Québec",
       "niveau": 2,
       "ages": [
         "ados",
@@ -58,9 +18,19 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel rocher troué est l'emblème de la Gaspésie ?",
-      "reponse": "Le rocher Percé",
+      "categorie": "Musique",
+      "question": "Quelle est la voix féminine la plus grave ?",
+      "reponse": "L'alto (contralto)",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle rivière célèbre coule à Ottawa ?",
+      "reponse": "L'Outaouais",
       "niveau": 1,
       "ages": [
         "ados",
@@ -69,47 +39,49 @@
       ]
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Comment appelle-t-on l'ensemble formé par le Soleil et ses planètes ?",
+      "reponse": "Le système solaire",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel grand bassin apprend-on à nager ?",
+      "reponse": "Une piscine",
+      "niveau": 1
+    },
+    {
       "categorie": "Cinéma et télé",
-      "question": "Quel jeu télévisé fait tourner une grande roue ?",
-      "reponse": "La Roue de fortune",
+      "question": "Quel est le matricule de James Bond ?",
+      "reponse": "007",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel animal figure sur la pièce de 25 cents canadienne ?",
-      "reponse": "Le caribou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le féminin de lion ?",
-      "reponse": "Lionne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de vertèbres a le cou d'une girafe ?",
-      "reponse": "Sept",
-      "niveau": 3,
+      "categorie": "Québec",
+      "question": "Que veut dire l'expression « c'est écœurant », quand c'est un compliment ?",
+      "reponse": "C'est excellent",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jeu retire une chaise à chaque tour pendant que la musique joue ?",
-      "reponse": "La chaise musicale",
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami de Winnie l'ourson est un tigre qui bondit sur sa queue ?",
+      "reponse": "Tigrou",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel thé japonais en poudre est vert vif ?",
-      "reponse": "Le matcha",
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation met en scène Dracula et sa famille de monstres dans un hôtel ?",
+      "reponse": "Hôtel Transylvanie",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -118,16 +90,10 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien d'unités dans une douzaine ?",
-      "reponse": "Douze",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel jambon italien se mange en tranches fines ?",
-      "reponse": "Le prosciutto",
-      "niveau": 1,
+      "categorie": "Sports",
+      "question": "Quel Serbe détient le record de titres du grand chelem ?",
+      "reponse": "Novak Djokovic",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -135,96 +101,110 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Qui était le dernier tsar de Russie ?",
-      "reponse": "Nicolas II",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel compositeur autrichien est le roi de la valse ?",
-      "reponse": "Strauss",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson orange est populaire en sushi ?",
-      "reponse": "Le saumon",
+      "categorie": "Culture générale",
+      "question": "Comment appelle-t-on le grand navire qui emmène des passagers en croisière ?",
+      "reponse": "Un paquebot",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le meilleur ami roux de Harry Potter ?",
-      "reponse": "Ron Weasley",
+      "categorie": "Histoire",
+      "question": "Quel jour célèbre-t-on l'Armistice de 1918 ?",
+      "reponse": "Le 11 novembre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal à grosse queue touffue cache des noix pour l'hiver ?",
+      "reponse": "L'écureuil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel film musical met en scène Danny et Sandy ?",
+      "reponse": "Grease",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on le mâle de la vache, celui qui charge dans l'arène ?",
+      "reponse": "Le taureau",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel gala québécois récompense le cinéma ?",
-      "reponse": "Les Iris",
-      "niveau": 2,
+      "question": "Quel joueur québécois des Penguins était surnommé le Magnifique ?",
+      "reponse": "Mario Lemieux",
+      "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal est le plus gros rongeur du monde ?",
-      "reponse": "Le capybara",
-      "niveau": 2,
+      "categorie": "Culture pop",
+      "question": "Quelles rondelles de carton s'empilaient et se retournaient dans les cours d'école des années 90 ?",
+      "reponse": "Les Pogs",
+      "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le désert du Sahara ?",
-      "reponse": "L'Afrique",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit bleu foncé se cueille dans les bois du Lac-Saint-Jean ?",
+      "reponse": "Le bleuet sauvage",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel filet suspendu entre deux arbres sert à se bercer ?",
+      "reponse": "Un hamac",
+      "niveau": 2
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Complétez : les chaussettes de l'archiduchesse sont-elles...",
+      "reponse": "Sèches archi-sèches",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne le vélo ?",
+      "reponse": "Un bicycle",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle société d'État diffuse la télévision publique en français au Canada ?",
-      "reponse": "Radio-Canada",
+      "question": "Quelle émission jeunesse québécoise est revenue à la télé en 2019, trente ans après ?",
+      "reponse": "Passe-Partout",
       "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados",
+        "adultes"
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle taxe québécoise s'ajoute à la taxe fédérale sur les achats ?",
-      "reponse": "La TVQ",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit orange à peau veloutée cache un gros noyau ?",
+      "reponse": "La pêche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel condiment crémeux se fait d'œufs et d'huile ?",
+      "reponse": "La mayonnaise",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Ontario ?",
-      "reponse": "Toronto",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
+      "reponse": "L'Ontario",
+      "niveau": 1
     }
   ]
 }

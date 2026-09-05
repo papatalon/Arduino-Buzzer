@@ -7,9 +7,15 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Combien de minutes dure un quart au football américain ?",
-      "reponse": "Quinze",
+      "categorie": "Sciences et nature",
+      "question": "Quel est l'os le plus long du corps humain ?",
+      "reponse": "Le fémur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal fut le premier en orbite ?",
+      "reponse": "La chienne Laïka",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,9 +25,9 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "De quel pays vient la tequila ?",
-      "reponse": "Le Mexique",
-      "niveau": 1,
+      "question": "Quel plat espagnol froid est une soupe de tomates ?",
+      "reponse": "Le gaspacho",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -29,19 +35,9 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle militante pakistanaise a reçu le Nobel de la paix ?",
-      "reponse": "Malala",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle protéine transporte l'oxygène dans le sang ?",
-      "reponse": "L'hémoglobine",
+      "categorie": "Géographie",
+      "question": "Capitale de la Norvège ?",
+      "reponse": "Oslo",
       "niveau": 2,
       "ages": [
         "ados",
@@ -51,38 +47,69 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel escargot de course devient ultra rapide au cinéma ?",
-      "reponse": "Turbo",
+      "question": "Quel magicien gris guide la Communauté de l'anneau ?",
+      "reponse": "Gandalf",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel prix récompense chaque année la paix, la médecine et la littérature ?",
+      "reponse": "Le prix Nobel",
       "niveau": 2,
       "ages": [
-        "enfants",
-        "ados"
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles espadrilles portent le nom d'une vedette du basketball et un logo de sauteur ?",
-      "reponse": "Les Air Jordan",
-      "niveau": 2,
+      "question": "Quel jouet d'été arrose les amis d'un jet d'eau ?",
+      "reponse": "Un pistolet à eau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de joueurs par équipe au water-polo ?",
+      "reponse": "Sept",
+      "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle tartelette portugaise est à la crème ?",
-      "reponse": "Pastel de nata",
-      "niveau": 3,
+      "question": "Quel fromage italien garnit la pizza ?",
+      "reponse": "La mozzarella",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel capitaine anglais a cartographié le Pacifique ?",
+      "reponse": "James Cook",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur muet portait un chapeau melon et une canne ?",
-      "reponse": "Charlie Chaplin",
+      "categorie": "Mots et langue",
+      "question": "Que signifie coûter les yeux de la tête ?",
+      "reponse": "Coûter très cher",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle jeune fille a dansé avec le diable dans la légende ?",
+      "reponse": "Rose Latulippe",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -91,8 +118,25 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel groupe québécois a chanté Dehors novembre ?",
-      "reponse": "Les Colocs",
+      "question": "Quel cirque québécois est connu mondialement ?",
+      "reponse": "Cirque du Soleil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Dans Pierre et le loup, quel instrument joue l'oiseau ?",
+      "reponse": "La flûte",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel acteur écossais fut le premier James Bond ?",
+      "reponse": "Sean Connery",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -100,29 +144,30 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
-      "reponse": "La Finlande",
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film de Pixar les émotions vivent-elles dans la tête d'une fillette ?",
+      "reponse": "Vice-versa",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson des Cowboys Fringants raconte un homme qui revient en 2050 ?",
+      "reponse": "Plus rien",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel véhicule récréatif se tire derrière l'auto pour camper ?",
-      "reponse": "La roulotte",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Culture générale",
-      "question": "Comment appelle-t-on une image drôle qui circule et se décline sur internet ?",
-      "reponse": "Un mème",
+      "question": "Quel jeu mobile fait attraper des créatures en marchant dans la vraie ville ?",
+      "reponse": "Pokémon GO",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -130,84 +175,21 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri de l'âne ?",
-      "reponse": "Le braiment",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe britannique a chanté Bohemian Rhapsody ?",
-      "reponse": "Queen",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on les mots d'une chanson ?",
-      "reponse": "Les paroles",
+      "categorie": "Sciences et nature",
+      "question": "Qu'est-ce qui fait tourner les éoliennes et voler les cerfs-volants ?",
+      "reponse": "Le vent",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel restaurant montréalais est célèbre pour son smoked meat ?",
-      "reponse": "Schwartz",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel lac est le plus profond du monde ?",
-      "reponse": "Le Baïkal",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on une personne qui parle deux langues ?",
-      "reponse": "Bilingue",
+      "question": "Quel signe exprime la surprise ?",
+      "reponse": "Point d'exclamation",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
-      "reponse": "Le Banquier",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Dans quelle ville Jeanne d'Arc fut-elle brûlée ?",
-      "reponse": "Rouen",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de pièces dans un jeu d'échecs complet ?",
-      "reponse": "32",
+      "categorie": "Culture pop",
+      "question": "Quel jeu de plateau fait résoudre un meurtre commis dans un manoir ?",
+      "reponse": "Le Clue",
       "niveau": 2,
       "ages": [
         "ados",
@@ -217,25 +199,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Dans quel sport marque-t-on des essais ?",
-      "reponse": "Le rugby",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans quelle comptine un fermier a-t-il des animaux qui font chacun leur cri ?",
-      "reponse": "Dans la ferme de Mathurin",
+      "question": "Quel objet lance-t-on sur la glace après un tour du chapeau ?",
+      "reponse": "Des chapeaux",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Qui a développé la théorie de la relativité ?",
-      "reponse": "Einstein",
+      "categorie": "Géographie",
+      "question": "Quelle ville est surnommée la Ville lumière ?",
+      "reponse": "Paris",
       "niveau": 1,
       "ages": [
         "ados",
@@ -245,11 +216,21 @@
     },
     {
       "categorie": "Québec",
-      "question": "Combien de ponts mènent à l'île d'Orléans ?",
-      "reponse": "Un seul",
+      "question": "Quel quartier montréalais a une porte paifang ?",
+      "reponse": "Quartier chinois",
       "niveau": 1,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel format de disque tourne à 33 tours ?",
+      "reponse": "Le vinyle",
+      "niveau": 1,
+      "ages": [
         "adultes",
         "aines"
       ]

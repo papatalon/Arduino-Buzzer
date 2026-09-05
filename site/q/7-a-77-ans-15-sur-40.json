@@ -7,99 +7,84 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson gazeuse brune est née à Atlanta ?",
-      "reponse": "Le Coca-Cola",
+      "categorie": "Mots et langue",
+      "question": "Combien de voyelles dans l'alphabet français ?",
+      "reponse": "Six",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du jars ?",
-      "reponse": "L'oie",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quelle particule négative tourne autour du noyau ?",
-      "reponse": "L'électron",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment nomme-t-on un arbre qui garde ses aiguilles ?",
+      "reponse": "Un conifère",
+      "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Dans quel film d'animation une famille colombienne vit-elle dans une maison magique ?",
-      "reponse": "Encanto",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Musique",
+      "question": "Quel petit instrument à vent apprend-on à jouer à l'école primaire ?",
+      "reponse": "La flûte à bec",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Qui est le père de Luke Skywalker ?",
-      "reponse": "Dark Vador",
+      "question": "Quel héros devient vert quand il se fâche ?",
+      "reponse": "Hulk",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle intelligence artificielle répond en conversation depuis la fin de 2022 ?",
+      "reponse": "ChatGPT",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle gousse noire parfume la crème glacée ?",
+      "reponse": "La vanille",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel Québécois a inventé la motoneige ?",
-      "reponse": "J.-A. Bombardier",
+      "question": "Quelle crise de janvier 1998 a privé le Québec de courant ?",
+      "reponse": "Le verglas",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel superhéros enfile son costume dans une cabine téléphonique ?",
-      "reponse": "Superman",
-      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie se serrer la ceinture ?",
-      "reponse": "Se priver",
+      "question": "Comment s'appelle le petit du lion ?",
+      "reponse": "Le lionceau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte verte piquante accompagne les sushis ?",
+      "reponse": "Le wasabi",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ogre a un ami âne très bavard ?",
-      "reponse": "Shrek",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle ville canadienne abrite la Tour CN ?",
-      "reponse": "Toronto",
+      "question": "Quel pays se trouve juste au sud du Canada ?",
+      "reponse": "Les États-Unis",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle est la nage la plus rapide ?",
-      "reponse": "Le crawl",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Culture générale",
+      "question": "Sous quel objet ne faut-il pas passer selon la superstition ?",
+      "reponse": "Une échelle",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
@@ -108,21 +93,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle le centre de la Terre ?",
-      "reponse": "Le noyau",
+      "categorie": "Culture générale",
+      "question": "Combien de jours dans une semaine ?",
+      "reponse": "Sept",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle céréale compose le gruau ?",
-      "reponse": "L'avoine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Chine ?",
-      "reponse": "Pékin",
+      "question": "Quel déjeuner anglais complet est copieux ?",
+      "reponse": "English breakfast",
       "niveau": 1,
       "ages": [
         "ados",
@@ -131,82 +110,84 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle mission a posé les premiers hommes sur la Lune ?",
-      "reponse": "Apollo 11",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film Disney de 2013 chante Libérée, délivrée ?",
-      "reponse": "La Reine des neiges",
+      "categorie": "Sports",
+      "question": "Quelle course olympique est la plus courte ?",
+      "reponse": "Le 100 mètres",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie être au bout du rouleau ?",
-      "reponse": "Être épuisé",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle herbe verte garnit la pizza margherita ?",
-      "reponse": "Le basilic",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle science étudie les plantes ?",
-      "reponse": "La botanique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport pratique Tiger Woods ?",
-      "reponse": "Le golf",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de dalmatiens dans le film de Disney ?",
-      "reponse": "101",
+      "question": "Que signifie « être rouge comme une tomate » ?",
+      "reponse": "Être gêné",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quels organes nous servent à respirer ?",
-      "reponse": "Les poumons",
+      "question": "Quelle énergie vient du vent ?",
+      "reponse": "L'énergie éolienne",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Comment appelle-t-on les jeux vidéo joués en compétition professionnelle ?",
-      "reponse": "L'esport",
+      "categorie": "Culture pop",
+      "question": "Que met-on sur le dos pour transporter ses cahiers à l'école ?",
+      "reponse": "Un sac à dos",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel poisson bleu perd la mémoire dans Nemo ?",
+      "reponse": "Dory",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui a remporté la bataille des plaines d'Abraham ?",
+      "reponse": "Les Britanniques",
       "niveau": 1,
       "ages": [
-        "enfants",
-        "ados"
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel hymne national commence par les mots « terre de nos aïeux » ?",
-      "reponse": "Ô Canada",
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie de l'œil donne sa couleur ?",
+      "reponse": "L'iris",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de joueurs par équipe au basketball ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle boisson énergisante promet de donner des ailes ?",
+      "reponse": "Red Bull",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle dépanneuse rouillée est l'amie de Flash McQueen ?",
+      "reponse": "Mater",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport dit-on échec et mat ?",
+      "reponse": "Les échecs",
       "niveau": 1
     }
   ]

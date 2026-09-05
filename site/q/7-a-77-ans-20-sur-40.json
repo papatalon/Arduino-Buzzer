@@ -7,170 +7,97 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Comment s'appelle le petit du canard ?",
-      "reponse": "Le caneton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Italie ?",
-      "reponse": "Rome",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quel métal les aimants attirent-ils ?",
-      "reponse": "Le fer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel jardin montréalais est parmi les plus grands au monde ?",
-      "reponse": "Jardin botanique",
+      "question": "De quel arbre le koala mange-t-il les feuilles ?",
+      "reponse": "L'eucalyptus",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel clou parfume le jambon de Noël ?",
-      "reponse": "Clou de girofle",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle barbe sucrée se vend dans les fêtes foraines ?",
+      "reponse": "Barbe à papa",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qu'est-ce qui pousse sur la tête et qu'on va faire couper chez le coiffeur ?",
+      "reponse": "Les cheveux",
+      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Terre-Neuve ?",
-      "reponse": "Un Terre-Neuvien",
+      "question": "Quel est le cri du serpent ?",
+      "reponse": "Le sifflement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel état américain est un archipel volcanique ?",
+      "reponse": "Hawaï",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel métier répare les tuyaux ?",
-      "reponse": "Le plombier",
-      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel héros grec avait un talon vulnérable ?",
-      "reponse": "Achille",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel parti a fondé François Legault ?",
-      "reponse": "La CAQ",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle fleur rouge porte-t-on en novembre en souvenir des soldats ?",
+      "reponse": "Le coquelicot",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu fait deviner un mot lettre par lettre en dessinant un bonhomme ?",
-      "reponse": "Le pendu",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien y a-t-il de pôles sur la Terre ?",
-      "reponse": "Deux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit rond porte le nom de sa couleur ?",
-      "reponse": "L'orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui écrit la musique d'une chanson ?",
-      "reponse": "Le compositeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal terrestre est le plus lourd ?",
-      "reponse": "L'éléphant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte est le principal pollinisateur ?",
-      "reponse": "L'abeille",
+      "question": "Quel meuble de la classe range les effets de l'élève ?",
+      "reponse": "Un pupitre",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle ligne rouge coupe la patinoire en deux ?",
-      "reponse": "Ligne centrale",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Combien de joueurs sur la glace par équipe au hockey ?",
+      "reponse": "Six",
+      "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quelle fête célèbre l'amour le 14 février ?",
-      "reponse": "La Saint-Valentin",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal produit les œufs qu'on mange au déjeuner ?",
+      "reponse": "La poule",
       "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film d'animation un mammouth, un paresseux et un tigre à dents de sabre voyagent-ils ensemble ?",
+      "reponse": "L'Ère de glace",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "À quelle famille d'instruments appartient le violon ?",
-      "reponse": "Les cordes",
+      "question": "Quel instrument à lamelles de bois frappe-t-on avec des maillets ?",
+      "reponse": "Le xylophone",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage vert déteste Noël ?",
-      "reponse": "Le Grincheux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boulette frite du Moyen-Orient est aux pois chiches ?",
-      "reponse": "Le falafel",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film Pixar un rat devient-il chef cuisinier à Paris ?",
-      "reponse": "Ratatouille",
+      "categorie": "Québec",
+      "question": "Quel bonnet d'hiver porte un nom bien québécois ?",
+      "reponse": "La tuque",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on le signe formé de trois points ?",
-      "reponse": "Points de suspension",
+      "question": "Quel est le cri du chien ?",
+      "reponse": "L'aboiement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série suit six amis dans un café new-yorkais ?",
+      "reponse": "Friends",
       "niveau": 1,
       "ages": [
         "ados",
@@ -179,25 +106,84 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse perd sa pantoufle de verre ?",
-      "reponse": "Cendrillon",
+      "categorie": "Sports",
+      "question": "Quelle activité d'hiver descend une pente sur un traîneau ou une chambre à air ?",
+      "reponse": "La glissade",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel joueur brésilien est surnommé le Roi du soccer ?",
-      "reponse": "Pelé",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle écorce parfume les brioches roulées ?",
+      "reponse": "La cannelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel hébergement québécois est rebâti chaque hiver ?",
+      "reponse": "Hôtel de glace",
       "niveau": 1,
       "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel canal traverse l'Amérique centrale ?",
+      "reponse": "Panama",
+      "niveau": 1,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture générale",
-      "question": "Aux échecs, quelle pièce se déplace en L ?",
-      "reponse": "Le cavalier",
+      "question": "Quelle direction indique l'aiguille d'une boussole ?",
+      "reponse": "Le nord",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie être tanné ?",
+      "reponse": "En avoir assez",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle souris Disney est l'amoureuse de Mickey ?",
+      "reponse": "Minnie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle science étudie les plantes ?",
+      "reponse": "La botanique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâtisserie colorée a deux coques et une ganache ?",
+      "reponse": "Le macaron",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle pierre précieuse est verte ?",
+      "reponse": "L'émeraude",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport pratiquait Serena Williams ?",
+      "reponse": "Le tennis",
       "niveau": 1,
       "ages": [
         "ados",

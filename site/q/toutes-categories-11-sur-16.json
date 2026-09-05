@@ -8,24 +8,41 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quels ninjas de Lego portent chacun une couleur et un élément ?",
-      "reponse": "Ninjago",
-      "niveau": 2,
+      "question": "Quelle marque de vêtements de sport a une virgule pour logo ?",
+      "reponse": "Nike",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission de Radio-Canada enquête sur ce qu'on met dans notre assiette ?",
+      "reponse": "L'épicerie",
+      "niveau": 3,
       "ages": [
-        "enfants",
-        "ados"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson chaude réconforte avec du cacao ?",
-      "reponse": "Chocolat chaud",
+      "question": "Quel repas tardif combine déjeuner et dîner ?",
+      "reponse": "Le brunch",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Par quelle lettre muette commence le mot haricot ?",
+      "reponse": "Le H",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel petit pays est enclavé entre France et Espagne ?",
-      "reponse": "Andorre",
+      "question": "Dans quel pays se trouve Tombouctou ?",
+      "reponse": "Le Mali",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -34,148 +51,32 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Qui a écrit Les Misérables ?",
-      "reponse": "Victor Hugo",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel site de vente en ligne a une flèche souriante dans son logo ?",
-      "reponse": "Amazon",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roi lion est le père de Simba ?",
-      "reponse": "Mufasa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Contraire de dedans ?",
-      "reponse": "Dehors",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit de la poule ?",
-      "reponse": "Le poussin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à percussion se joue avec les mains sur deux tambours accolés ?",
-      "reponse": "Les bongos",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel carré noir et blanc se scanne avec la caméra du téléphone ?",
-      "reponse": "Un code QR",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert coloré tremble dans son bol et se prépare avec de la poudre ?",
-      "reponse": "Le Jell-O",
+      "question": "Quel oiseau figure sur la pièce de un dollar canadien ?",
+      "reponse": "Le huard",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel cousin rayé du cheval vit en Afrique ?",
-      "reponse": "Le zèbre",
+      "question": "Quelles gouttes d'eau tombent des nuages ?",
+      "reponse": "La pluie",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Qui a fondé Facebook en 2004 ?",
-      "reponse": "Mark Zuckerberg",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "question": "Quel ballon géant à panier et à air chaud a été le premier engin à transporter des humains dans le ciel ?",
+      "reponse": "La montgolfière",
+      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on une histoire de fées, de princes et de sorcières ?",
-      "reponse": "Un conte",
+      "question": "Quel est le cri du mouton ?",
+      "reponse": "Le bêlement",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport descend des rivières en radeau pneumatique ?",
-      "reponse": "Le rafting",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel chiffre porte malheur en Occident ?",
-      "reponse": "13",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros devient vert quand il se fâche ?",
-      "reponse": "Hulk",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle plateforme suédoise diffuse de la musique en continu ?",
-      "reponse": "Spotify",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on les sentiers balisés où circulent les motoneiges ?",
-      "reponse": "Les sentiers de motoneige",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel beurre de noix est interdit dans les écoles ?",
-      "reponse": "Beurre d'arachide",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle ruée vers l'or a attiré des milliers de gens au Yukon ?",
-      "reponse": "Klondike",
+      "categorie": "Géographie",
+      "question": "Capitale du Nouveau-Brunswick ?",
+      "reponse": "Fredericton",
       "niveau": 2,
       "ages": [
         "ados",
@@ -184,15 +85,26 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport japonais oppose deux colosses dans un cercle ?",
-      "reponse": "Le sumo",
+      "categorie": "Culture générale",
+      "question": "Quel métal est liquide à température ambiante ?",
+      "reponse": "Le mercure",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit bleu garnit les muffins et les tartes au Québec ?",
+      "reponse": "Le bleuet",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Inde ?",
-      "reponse": "New Delhi",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle céréale maltée est la base de la bière ?",
+      "reponse": "L'orge",
       "niveau": 2,
       "ages": [
         "ados",
@@ -202,8 +114,20 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel pont cantilever centenaire relie Québec et Lévis ?",
-      "reponse": "Le pont de Québec",
+      "question": "Quelle sortie familiale attire les Québécois dans les vergers en septembre ?",
+      "reponse": "L'autocueillette",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le voisin trop gentil des Simpson ?",
+      "reponse": "Ned Flanders",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de minutes met la lumière du Soleil à nous parvenir ?",
+      "reponse": "Huit",
       "niveau": 2,
       "ages": [
         "ados",
@@ -212,10 +136,85 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal terrestre est le plus lourd ?",
-      "reponse": "L'éléphant",
+      "categorie": "Histoire",
+      "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
+      "reponse": "Le mammouth",
       "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle nage avance en poussant les deux bras en même temps, comme une grenouille ?",
+      "reponse": "La brasse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel meuble gardait les aliments au froid avec un bloc de glace ?",
+      "reponse": "La glacière",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel prix récompense la musique aux États-Unis ?",
+      "reponse": "Le Grammy",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne le fait de se tromper complètement ?",
+      "reponse": "Se planter",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle la petite souris grise que le chat Tom n'attrape jamais ?",
+      "reponse": "Jerry",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport olympique mélange saut à ski et ski de fond ?",
+      "reponse": "Combiné nordique",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Contraire d'avare, commençant par G ?",
+      "reponse": "Généreux",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on un extrait de chanson repris dans une autre chanson ?",
+      "reponse": "Un échantillon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     }
   ]
 }

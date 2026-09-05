@@ -7,52 +7,32 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
-      "reponse": "Big Brother Célébrités",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert meringué porte le nom d'une ballerine ?",
+      "reponse": "La pavlova",
       "niveau": 3,
       "ages": [
-        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission de variétés pour adolescents Véronique Cloutier a-t-elle animée ?",
+      "reponse": "La Fureur",
+      "niveau": 3,
+      "ages": [
         "adultes"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel grand navire de guerre espagnol transportait l'or des Amériques ?",
-      "reponse": "Le galion",
+      "categorie": "Musique",
+      "question": "Quel groupe italien a gagné l'Eurovision en 2021 en jouant du rock ?",
+      "reponse": "Måneskin",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
-      "reponse": "La Bolduc",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel auteur québécois a écrit Le Matou ?",
-      "reponse": "Yves Beauchemin",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel pichet souriant défonce les murs en criant « Oh yeah » ?",
-      "reponse": "Le pichet Kool-Aid",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
@@ -67,46 +47,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
-      "reponse": "Tessa Virtue",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel camion de course rouge et bleu affronte Crusher dans une série pour enfants ?",
-      "reponse": "Blaze",
-      "niveau": 3,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission de variétés québécoise des années 70 portait un nom de tannants ?",
-      "reponse": "Les Tannants",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel club-école des Canadiens joue à Laval ?",
-      "reponse": "Le Rocket",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de cordes a un violoncelle ?",
-      "reponse": "Quatre",
+      "question": "Combien de joueurs par équipe au water-polo ?",
+      "reponse": "Sept",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -124,18 +66,19 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?",
-      "reponse": "La lessiveuse à tordeur",
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète est la plus chaude du système solaire ?",
+      "reponse": "Vénus",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
-      "reponse": "L'escalier Casse-Cou",
+      "question": "Quelle compagnie de fourrures rivalisait avec la Baie d'Hudson ?",
+      "reponse": "Nord-Ouest",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -144,46 +87,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
-      "reponse": "Les Denis Drolet",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe de Birmingham a lancé le heavy metal ?",
-      "reponse": "Black Sabbath",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse de jazz était surnommée Lady Day ?",
-      "reponse": "Billie Holiday",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte russe est un petit chausson farci ?",
-      "reponse": "Le pirojki",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de véhicules tout-terrain a une calandre à sept fentes ?",
-      "reponse": "Jeep",
+      "question": "Quelles bottes anglaises à coutures jaunes sont un classique punk ?",
+      "reponse": "Les Doc Martens",
       "niveau": 3,
       "ages": [
         "ados",
@@ -193,10 +98,127 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse folk canadienne a écrit Big Yellow Taxi ?",
-      "reponse": "Joni Mitchell",
+      "question": "Quel trompettiste avait les joues gonflées célèbres ?",
+      "reponse": "Dizzy Gillespie",
       "niveau": 3,
       "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de cordes a un violoncelle ?",
+      "reponse": "Quatre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu fait bâtir routes et villages en échangeant bois, blé et minerai ?",
+      "reponse": "Les Colons de Catane",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle autrice et animatrice québécoise a abordé les tabous à la télé pendant des décennies ?",
+      "reponse": "Janette Bertrand",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magazine hebdomadaire publiait les horaires de télévision au Québec ?",
+      "reponse": "Le TV Hebdo",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel commerce de village vendait autrefois aussi bien le clou que la farine ?",
+      "reponse": "Le magasin général",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Islande ?",
+      "reponse": "Reykjavik",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel quotidien montréalais a cessé son édition papier en 2018 pour passer à la tablette ?",
+      "reponse": "La Presse",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil de poche vibrait pour dire de rappeler quelqu'un, avant le cellulaire ?",
+      "reponse": "Le téléavertisseur",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la peur des hauteurs ?",
+      "reponse": "L'acrophobie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style jamaïcain a précédé le reggae ?",
+      "reponse": "Le ska",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée est remis au champion du Super Bowl ?",
+      "reponse": "Trophée Lombardi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel traité de 1992 a créé l'Union européenne ?",
+      "reponse": "Maastricht",
+      "niveau": 3,
+      "ages": [
+        "adultes",
         "aines"
       ]
     },
@@ -211,42 +233,23 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Masculin d'abeille ?",
-      "reponse": "Le faux bourdon",
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'aide financière que l'État avance aux étudiants ?",
+      "reponse": "Les prêts et bourses",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel philosophe grec fut le maître d'Alexandre ?",
-      "reponse": "Aristote",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série de films enferme des jeunes dans un immense labyrinthe mouvant ?",
+      "reponse": "Le Labyrinthe",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
-      "reponse": "Les Classels",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel traité de 1992 a créé l'Union européenne ?",
-      "reponse": "Maastricht",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     }
   ]

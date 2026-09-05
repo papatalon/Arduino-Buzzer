@@ -7,100 +7,51 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Angleterre ?",
-      "reponse": "Londres",
+      "categorie": "Mots et langue",
+      "question": "Comment s'appelle le petit de l'éléphant ?",
+      "reponse": "L'éléphanteau",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel personnage jaune et rond avale des points en fuyant des fantômes ?",
-      "reponse": "Pac-Man",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit tropical porte une couronne ?",
-      "reponse": "L'ananas",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel savant grec a donné son nom à la poussée qui fait flotter les bateaux ?",
-      "reponse": "Archimède",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel conflit a duré de 1939 à 1945 ?",
-      "reponse": "2e Guerre mondiale",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Canada ?",
-      "reponse": "Ottawa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle est la dernière lettre de l'alphabet ?",
-      "reponse": "Z",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on un groupe de personnes qui chantent ensemble ?",
-      "reponse": "Une chorale",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel milliardaire Marvel a un réacteur dans la poitrine ?",
-      "reponse": "Tony Stark",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel objet ouvre-t-on pour se protéger de la pluie ?",
-      "reponse": "Un parapluie",
+      "question": "Quel métier répare les tuyaux ?",
+      "reponse": "Le plombier",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie poser un lapin ?",
-      "reponse": "Ne pas venir",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel est le pluriel de « un animal » ?",
+      "reponse": "Des animaux",
+      "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
-      "reponse": "L'autruche",
+      "categorie": "Québec",
+      "question": "Quelle date est la Fête nationale du Québec ?",
+      "reponse": "Le 24 juin",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle boisson énergisante promet de donner des ailes ?",
-      "reponse": "Red Bull",
+      "question": "Quel arbre décoré trône dans le salon en décembre ?",
+      "reponse": "Un sapin de Noël",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel anneau gonflable aide les petits à flotter ?",
+      "reponse": "Une bouée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle activité consiste à marcher longtemps sur des sentiers en forêt ou en montagne ?",
+      "reponse": "La randonnée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel général français s'est couronné empereur en 1804 ?",
+      "reponse": "Napoléon",
       "niveau": 1,
       "ages": [
         "ados",
@@ -109,93 +60,121 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle laitue compose la salade César ?",
-      "reponse": "La romaine",
+      "categorie": "Québec",
+      "question": "Quelle légende québécoise fait voler un canot ?",
+      "reponse": "La chasse-galerie",
       "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois pantoute ?",
+      "reponse": "Pas du tout",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport lance-t-on un javelot ?",
+      "reponse": "L'athlétisme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui laisse de l'argent sous l'oreiller en échange d'une dent ?",
+      "reponse": "La fée des dents",
+      "niveau": 1
+    },
+    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle volaille trône au repas de Noël ?",
-      "reponse": "La dinde",
+      "question": "Quel pain français long et croustillant est emblématique ?",
+      "reponse": "La baguette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comédie musicale utilise les chansons d'ABBA ?",
+      "reponse": "Mamma Mia",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel événement célèbre-t-on le 25 décembre ?",
+      "reponse": "Noël",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel garçon dirige la Pat' Patrouille ?",
-      "reponse": "Ryder",
+      "question": "Quel monstre géant venu du Japon écrase des villes au cinéma ?",
+      "reponse": "Godzilla",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
+      "reponse": "Le fromage en grains",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Chine ?",
+      "reponse": "Pékin",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel canard noir est le rival de Bugs Bunny ?",
+      "reponse": "Daffy Duck",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment appelle-t-on une personne qui voyage dans l'espace ?",
+      "reponse": "Un astronaute",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène lumineux colore le ciel polaire ?",
+      "reponse": "Aurore boréale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée suit des chiots sauveteurs ?",
+      "reponse": "Pat' Patrouille",
       "niveau": 1,
       "ages": [
         "enfants"
       ]
     },
     {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville se trouve la tour Eiffel ?",
+      "reponse": "Paris",
+      "niveau": 1
+    },
+    {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la température du corps humain en santé ?",
-      "reponse": "37 degrés C",
+      "question": "Quelle articulation plie le bras en son milieu ?",
+      "reponse": "Le coude",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle chaîne québécoise sert de la poutine 24 heures ?",
-      "reponse": "La Belle Province",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pays a gagné le plus de médailles olympiques au total ?",
-      "reponse": "Les États-Unis",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Disney a de très longs cheveux magiques ?",
-      "reponse": "Raiponce",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la partie d'une chanson qui revient entre les couplets ?",
-      "reponse": "Le refrain",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Le pluriel de bijou prend un S ou un X ?",
-      "reponse": "Un X",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que veut dire l'expression québécoise « c'est plate » ?",
-      "reponse": "C'est ennuyant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle discipline olympique note des figures sur glace ?",
-      "reponse": "Patinage artistique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Le pluriel de pneu prend un S ou un X ?",
-      "reponse": "Un S",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain rond avec un trou se mange à Montréal ?",
+      "reponse": "Le bagel",
       "niveau": 1
     }
   ]

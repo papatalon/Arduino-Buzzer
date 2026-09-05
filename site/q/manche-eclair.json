@@ -7,64 +7,9 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quels quatre frères bandits affrontent Lucky Luke ?",
-      "reponse": "Les Dalton",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?",
-      "reponse": "La tire sur la neige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
-      "reponse": "Rio de Janeiro",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel festival de musique se tient chaque été au parc Jean-Drapeau à Montréal ?",
-      "reponse": "Osheaga",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle activité d'été fait dormir sous une tente ?",
-      "reponse": "Le camping",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quel fruit fait-on le vin ?",
-      "reponse": "Le raisin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de jour ?",
-      "reponse": "Nuit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle plante grimpante rougit les murs des maisons à l'automne ?",
-      "reponse": "La vigne vierge",
+      "categorie": "Histoire",
+      "question": "Quelle fut la première île d'exil de Napoléon ?",
+      "reponse": "L'île d'Elbe",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -72,9 +17,54 @@
       ]
     },
     {
+      "categorie": "Géographie",
+      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
+      "reponse": "Le maelstrom",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat botté a de grands yeux attendrissants ?",
+      "reponse": "Chat Potté",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture générale",
-      "question": "Quelle statue de Michel-Ange représente un roi biblique ?",
-      "reponse": "David",
+      "question": "Monnaie utilisée en Europe ?",
+      "reponse": "L'euro",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de combat n'utilise que les poings ?",
+      "reponse": "La boxe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de sale ?",
+      "reponse": "Propre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle saucisse chaude se glisse dans un pain allongé ?",
+      "reponse": "Le hot-dog",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel premier ministre libéral a gouverné de 2003 à 2012 ?",
+      "reponse": "Jean Charest",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -82,15 +72,20 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel peuple a construit Chichén Itzá ?",
-      "reponse": "Les Mayas",
+      "categorie": "Musique",
+      "question": "Quel duo français portait des casques de robots ?",
+      "reponse": "Daft Punk",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle corde tourne pendant qu'on saute par-dessus dans la cour ?",
+      "reponse": "Une corde à sauter",
+      "niveau": 1
     }
   ]
 }

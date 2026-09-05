@@ -7,60 +7,27 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film Pixar suit une voiture de course rouge ?",
-      "reponse": "Les Bagnoles",
+      "categorie": "Musique",
+      "question": "Quelle chanson enfantine parle d'un petit navire qui n'avait jamais navigué ?",
+      "reponse": "Il était un petit navire",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie avoir un chat dans la gorge ?",
-      "reponse": "Être enroué",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel est le cri du mouton ?",
+      "reponse": "Le bêlement",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle couleur de carton avertit un joueur au soccer ?",
-      "reponse": "Jaune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle date redoutaient les informaticiens en 1999 ?",
-      "reponse": "Le 1er janvier 2000",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de côtés a un octogone ?",
-      "reponse": "Huit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quel arbre le koala mange-t-il les feuilles ?",
-      "reponse": "L'eucalyptus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel mot québécois désigne les bonbons ?",
-      "reponse": "Des nananes",
+      "question": "Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?",
+      "reponse": "Le Canadien",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson chaude est faite de grains torréfiés ?",
-      "reponse": "Le café",
+      "question": "Quel plat suisse racle du fromage fondu ?",
+      "reponse": "La raclette",
       "niveau": 1,
       "ages": [
         "ados",
@@ -69,126 +36,15 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel légume la marraine de Cendrillon transforme-t-elle en carrosse ?",
-      "reponse": "La citrouille",
+      "categorie": "Géographie",
+      "question": "Combien de provinces compte le Canada ?",
+      "reponse": "Dix",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
-      "reponse": "Les Boys",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Monnaie utilisée au Royaume-Uni ?",
-      "reponse": "Livre sterling",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel format de disque tourne à 33 tours ?",
-      "reponse": "Le vinyle",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "De quelle couleur sont les Simpson ?",
-      "reponse": "Jaunes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel arachnide a une queue munie d'un dard ?",
-      "reponse": "Le scorpion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve l'Acropole ?",
-      "reponse": "La Grèce",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle barbe sucrée se vend dans les fêtes foraines ?",
-      "reponse": "Barbe à papa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle nage s'effectue sur le dos ?",
-      "reponse": "Le dos crawlé",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle pierre précieuse est verte ?",
-      "reponse": "L'émeraude",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel symbole lumineux surplombe le mont Royal ?",
-      "reponse": "La croix",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville italienne est célèbre pour ses canaux ?",
-      "reponse": "Venise",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
-      "reponse": "Le club sandwich",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quels bonbons durs multicolores promettent de goûter l'arc-en-ciel ?",
-      "reponse": "Les Skittles",
+      "question": "Comment appelle-t-on la liste de chansons qu'on se prépare pour une occasion ?",
+      "reponse": "Une liste de lecture",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -197,15 +53,26 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie « dormir comme une marmotte » ?",
-      "reponse": "Dormir profondément",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat japonais est une soupe de nouilles ?",
+      "reponse": "Le ramen",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel dôme géodésique brille sur l'île Sainte-Hélène ?",
-      "reponse": "La Biosphère",
+      "categorie": "Culture générale",
+      "question": "Quelles sont les couleurs du drapeau italien ?",
+      "reponse": "Vert blanc rouge",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle confiture d'agrumes est amère ?",
+      "reponse": "La marmelade",
       "niveau": 1,
       "ages": [
         "ados",
@@ -215,8 +82,108 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de planètes dans le système solaire ?",
-      "reponse": "Huit",
+      "question": "Quelle lumière invisible bronze la peau ?",
+      "reponse": "Les ultraviolets",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel jeu vidéo consiste à empiler des blocs qui tombent ?",
+      "reponse": "Tetris",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?",
+      "reponse": "Un chaudron d'or",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ogre vert a une femme nommée Fiona ?",
+      "reponse": "Shrek",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville du Canada ?",
+      "reponse": "Toronto",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel plat québécois combine frites, fromage et sauce ?",
+      "reponse": "La poutine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de chaud ?",
+      "reponse": "Froid",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel joueur de la NBA est surnommé King James ?",
+      "reponse": "LeBron James",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple de l'Antiquité construisait des pyramides et embaumait ses morts ?",
+      "reponse": "Les Égyptiens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel astre provoque les marées ?",
+      "reponse": "La Lune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chocolat creux se déballe le matin de Pâques ?",
+      "reponse": "Un œuf en chocolat",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel journaliste est l'identité secrète de Superman ?",
+      "reponse": "Clark Kent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Synonyme de bicyclette ?",
+      "reponse": "Vélo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne la voiture ?",
+      "reponse": "Un char",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel coyote n'arrive jamais à attraper Bip Bip ?",
+      "reponse": "Vil Coyote",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel oiseau au long cou noir migre en formant un V dans le ciel ?",
+      "reponse": "La bernache (outarde)",
       "niveau": 1
     }
   ]

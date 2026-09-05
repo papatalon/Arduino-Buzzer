@@ -7,10 +7,35 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle vinaigrette porte le nom d'un archipel ?",
-      "reponse": "Mille-Îles",
-      "niveau": 1,
+      "categorie": "Culture générale",
+      "question": "Quelle forme n'a ni coin ni côté ?",
+      "reponse": "Le cercle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel espion maladroit est l'agent 86 ?",
+      "reponse": "Maxwell Smart",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse canadienne a chanté Complicated ?",
+      "reponse": "Avril Lavigne",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la petite pièce de plastique qui gratte les cordes ?",
+      "reponse": "Le médiator",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -19,74 +44,67 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel peuple scandinave naviguait sur des drakkars ?",
-      "reponse": "Les Vikings",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel animal rugit ?",
-      "reponse": "Le lion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chienne bleue australienne joue avec sa sœur Bingo dans une série ?",
-      "reponse": "Bluey",
-      "niveau": 1,
+      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
+      "reponse": "Traité de Paris",
+      "niveau": 3,
       "ages": [
-        "enfants",
-        "ados"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel mont de l'Estrie abrite un observatoire célèbre ?",
-      "reponse": "Le mont Mégantic",
-      "niveau": 2,
+      "categorie": "Culture pop",
+      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
+      "reponse": "Les oreilles de lapin",
+      "niveau": 3,
       "ages": [
-        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Combien de temps principaux a l'indicatif ?",
+      "reponse": "Huit",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel reptile peut vivre plus de 150 ans ?",
-      "reponse": "La tortue géante",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple autochtone a accueilli Jacques Cartier à son arrivée ?",
-      "reponse": "Les Iroquoiens",
-      "niveau": 3,
+      "question": "Quel arbre géant de Californie est le plus gros du monde ?",
+      "reponse": "Le séquoia",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir de l'eau dans la cave ?",
-      "reponse": "Pantalon trop court",
-      "niveau": 1,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport se joue avec un volant ?",
-      "reponse": "Le badminton",
+      "question": "Avec quel objet frappe-t-on la balle au baseball ?",
+      "reponse": "Le bâton",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel tournoi de tennis se joue sur gazon à Londres ?",
-      "reponse": "Wimbledon",
+      "categorie": "Histoire",
+      "question": "Quelle reine de France fut guillotinée en 1793 ?",
+      "reponse": "Marie-Antoinette",
       "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport olympique mélange danse et piscine ?",
+      "reponse": "Natation artistique",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -95,60 +113,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Combien de fleurs de lys sur le drapeau du Québec ?",
-      "reponse": "Quatre",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Danemark ?",
-      "reponse": "Copenhague",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
-      "reponse": "Loud",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel inspecteur maladroit poursuit la Panthère rose ?",
-      "reponse": "Clouseau",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle console de Nintendo se joue en portable et se branche aussi à la télé ?",
-      "reponse": "La Switch",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit garnit la tarte Tatin ?",
-      "reponse": "La pomme",
+      "question": "Quelle tourte de viandes vient du Lac-Saint-Jean ?",
+      "reponse": "Le cipaille",
       "niveau": 2,
       "ages": [
         "ados",
@@ -158,8 +124,24 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel golfe borde le Texas et la Floride ?",
-      "reponse": "Golfe du Mexique",
+      "question": "Quelles chutes célèbres sont à la frontière canado-américaine ?",
+      "reponse": "Niagara",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a inventé le World Wide Web ?",
+      "reponse": "Tim Berners-Lee",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style triste est né dans le delta du Mississippi ?",
+      "reponse": "Le blues",
       "niveau": 1,
       "ages": [
         "ados",
@@ -169,67 +151,89 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien vaut un placement au football ?",
-      "reponse": "Trois points",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel sport de combat japonais se pratique pieds nus en kimono blanc ?",
+      "reponse": "Le karaté",
+      "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Nirvana commence par un riff de guitare devenu emblème du grunge ?",
-      "reponse": "Smells Like Teen Spirit",
-      "niveau": 3,
+      "categorie": "Québec",
+      "question": "Quelle fête hivernale illumine le Vieux-Port de Montréal ?",
+      "reponse": "Igloofest",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle dépanneuse rouillée est l'amie de Flash McQueen ?",
-      "reponse": "Mater",
+      "categorie": "Géographie",
+      "question": "Quel volcan sicilien est le plus actif d'Europe ?",
+      "reponse": "L'Etna",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quelle est la première personne du pluriel ?",
+      "reponse": "Nous",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "À quelle famille d'instruments appartient la flûte ?",
-      "reponse": "Les bois",
-      "niveau": 3,
+      "categorie": "Cinéma et télé",
+      "question": "Quelle sirène Disney rêve de vivre sur terre ?",
+      "reponse": "Ariel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle salade libanaise contient persil et boulgour ?",
+      "reponse": "Le taboulé",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal a la langue la plus longue par rapport au corps ?",
+      "reponse": "Le caméléon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat robot bleu vient du futur ?",
+      "reponse": "Doraemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
-      "reponse": "Grand Theft Auto",
+      "question": "Quelle gomme rose se vendait avec une petite bande dessinée dans l'emballage ?",
+      "reponse": "La Bazooka",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quelle couleur obtient-on en mélangeant du rouge et du jaune ?",
-      "reponse": "Orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film de Disney suit un éléphant aux grandes oreilles ?",
-      "reponse": "Dumbo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est l'os le plus long du corps humain ?",
-      "reponse": "Le fémur",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume en longues tiges vertes croque avec du beurre d'arachide ?",
+      "reponse": "Le céleri",
       "niveau": 1
     }
   ]
