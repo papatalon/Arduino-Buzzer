@@ -7,19 +7,9 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat robot bleu vient du futur ?",
-      "reponse": "Doraemon",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
-      "reponse": "Pizarro",
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la peur des hauteurs ?",
+      "reponse": "L'acrophobie",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -27,68 +17,9 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel amphithéâtre de Québec a ouvert ses portes en 2015 ?",
-      "reponse": "Le Centre Vidéotron",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse acadienne chante en français avec un banjo ?",
-      "reponse": "Lisa LeBlanc",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle ville canadienne fut dévastée par une explosion en 1917 ?",
-      "reponse": "Halifax",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
-      "reponse": "Les Denis Drolet",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle carte de plastique rigide permettait de louer des films au club vidéo ?",
-      "reponse": "La carte de membre",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel traitement de coiffure des années 80 frisait les cheveux pour des mois ?",
-      "reponse": "La permanente",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel empereur romain a légalisé le christianisme ?",
-      "reponse": "Constantin",
+      "categorie": "Culture générale",
+      "question": "Quel pays a un drapeau non rectangulaire ?",
+      "reponse": "Le Népal",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -97,8 +28,44 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport fait glisser un lugeur tête première sur la glace ?",
-      "reponse": "Le skeleton",
+      "question": "Quel coureur éthiopien a gagné le marathon pieds nus ?",
+      "reponse": "Abebe Bikila",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne sépare l'Europe de l'Asie ?",
+      "reponse": "L'Oural",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël fait résonner un long « Gloria » repris par tout le monde ?",
+      "reponse": "Les anges dans nos campagnes",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année l'Allemagne s'est-elle réunifiée ?",
+      "reponse": "1990",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission québécoise fait juger des numéros de danse par des maîtres ?",
+      "reponse": "Révolution",
       "niveau": 3,
       "ages": [
         "ados",
@@ -107,13 +74,62 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle pédale déforme le son de la guitare pour le rendre saturé ?",
-      "reponse": "La distorsion",
+      "categorie": "Sports",
+      "question": "Quel attaquant norvégien enfile les buts à Manchester City ?",
+      "reponse": "Haaland",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel tapis à longs poils habillait les salons des années 70 ?",
+      "reponse": "Le shag",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus long fleuve du Canada ?",
+      "reponse": "Le Mackenzie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "En quelle année le métro de Montréal a-t-il ouvert ?",
+      "reponse": "1966",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple autochtone habitait Stadaconé et Hochelaga à l'arrivée des Français ?",
+      "reponse": "Les Iroquoiens",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de café québécoise porte le nom de son fondateur ?",
+      "reponse": "Van Houtte",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -127,9 +143,30 @@
       ]
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quelle pâte à tartiner orange se vend en pot et se met sur les rôties ?",
+      "reponse": "Le Cheez Whiz",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Québec",
-      "question": "Quel arbre fut ajouté au drapeau de Montréal en 2017 ?",
-      "reponse": "Le pin blanc",
+      "question": "Quel sanctuaire au dôme vert domine le flanc du mont Royal ?",
+      "reponse": "L'Oratoire Saint-Joseph",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de demi-tons dans une octave ?",
+      "reponse": "Douze",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -138,38 +175,8 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat argentin grille des viandes au feu de bois ?",
-      "reponse": "L'asado",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel art martial signifie voie de la souplesse ?",
-      "reponse": "Le judo",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel genre musical africain aux rythmes chaloupés s'est imposé mondialement ?",
-      "reponse": "L'afrobeat",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus haute montagne d'Amérique du Nord ?",
-      "reponse": "Le Denali",
+      "question": "Quel dessert meringué porte le nom d'une ballerine ?",
+      "reponse": "La pavlova",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -178,8 +185,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment mesure-t-on la force des ouragans ?",
-      "reponse": "Saffir-Simpson",
+      "question": "Quelle planète tourne couchée sur le côté ?",
+      "reponse": "Uranus",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -187,9 +194,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
-      "reponse": "Lululemon",
+      "categorie": "Cinéma et télé",
+      "question": "Quel studio japonais a créé Mon voisin Totoro ?",
+      "reponse": "Ghibli",
       "niveau": 3,
       "ages": [
         "ados",
@@ -197,29 +204,35 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot qui a plusieurs sens ?",
-      "reponse": "Polysémique",
+      "categorie": "Histoire",
+      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
+      "reponse": "Une diligence",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe progressif québécois a fait L'Heptade ?",
+      "reponse": "Harmonium",
       "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle invention chinoise a permis d'imprimer avant Gutenberg ?",
-      "reponse": "Le papier",
+      "question": "Quel drapeau les astronautes ont-ils planté sur la Lune en 1969 ?",
+      "reponse": "Le drapeau américain",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel grand parc de Montréal entoure le Biodôme et le Stade olympique ?",
-      "reponse": "Le parc Maisonneuve",
+      "question": "Quelle est la plus haute montagne du Canada ?",
+      "reponse": "Le mont Logan",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -227,25 +240,14 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?",
-      "reponse": "Une corde de bois",
-      "niveau": 3
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel panier passait dans les rangs pendant la messe du dimanche ?",
-      "reponse": "La quête",
+      "question": "Quel magasin à un dollar a été fondé à Matane en 1992 ?",
+      "reponse": "Dollarama",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on les grandes îles du golfe où l'on va en traversier l'été ?",
-      "reponse": "Les Îles-de-la-Madeleine",
-      "niveau": 3
     }
   ]
 }

@@ -52,7 +52,7 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel duo québécois de dessins animés met en scène un chien et son chat ?",
+      "question": "Quel duo québécois de dessins animés met en scène une souris et son chat en peluche ?",
       "reponse": "Toupie et Binou",
       "niveau": 2,
       "ages": [
@@ -68,12 +68,14 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelles équipes de sous-marins explorent les océans en secourant les animaux marins ?",
-      "reponse": "Les Octonauts",
-      "niveau": 3,
+      "categorie": "Cinéma et télé",
+      "question": "Quel chien de dessin animé est le compagnon de Charlie Brown ?",
+      "reponse": "Snoopy",
+      "niveau": 1,
       "ages": [
-        "enfants"
+        "enfants",
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -90,23 +92,21 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel chien de dessin animé est le compagnon de Charlie Brown ?",
-      "reponse": "Snoopy",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
       "question": "Quel chat robot bleu vient du futur ?",
       "reponse": "Doraemon",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles équipes de sous-marins explorent les océans en secourant les animaux marins ?",
+      "reponse": "Les Octonauts",
+      "niveau": 3,
+      "ages": [
+        "enfants"
       ]
     },
     {
@@ -132,12 +132,6 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on des koalas et des kangourous ?",
-      "reponse": "L'Australie",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture générale",
       "question": "Quel chien accompagne Astérix et Obélix ?",
       "reponse": "Idéfix",
@@ -147,6 +141,12 @@
       "categorie": "Cinéma et télé",
       "question": "Quel petit oiseau jaune échappe toujours au chat Grosminet ?",
       "reponse": "Titi",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays trouve-t-on des koalas et des kangourous ?",
+      "reponse": "L'Australie",
       "niveau": 1
     },
     {
@@ -172,15 +172,15 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
-      "reponse": "Les branchies",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
       "question": "Que signifie donner sa langue au chat ?",
       "reponse": "Renoncer à deviner",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
+      "reponse": "Les branchies",
       "niveau": 1
     },
     {

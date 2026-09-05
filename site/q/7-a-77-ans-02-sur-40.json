@@ -8,9 +8,14 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal hurle à la lune et chasse en meute ?",
-      "reponse": "Le loup",
-      "niveau": 1
+      "question": "Quelle échelle mesure les séismes ?",
+      "reponse": "Richter",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Mots et langue",
@@ -25,8 +30,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?",
-      "reponse": "L'arc-en-ciel",
+      "question": "Quelles cellules du sang combattent les infections ?",
+      "reponse": "Globules blancs",
       "niveau": 1
     },
     {
@@ -37,14 +42,9 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel chanteur jamaïcain a popularisé le reggae ?",
-      "reponse": "Bob Marley",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel style musical parle-chante sur des rythmes ?",
+      "reponse": "Le rap",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -60,8 +60,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel canal traverse l'Amérique centrale ?",
-      "reponse": "Panama",
+      "question": "Quelle rivière célèbre coule à Ottawa ?",
+      "reponse": "L'Outaouais",
       "niveau": 1,
       "ages": [
         "ados",
@@ -77,8 +77,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Dans quel bâtiment fortifié vivaient les rois et les reines du Moyen Âge ?",
-      "reponse": "Un château",
+      "question": "Quelle invention permet de parler à quelqu'un qui est loin ?",
+      "reponse": "Le téléphone",
       "niveau": 1
     },
     {
@@ -88,9 +88,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel appareil diffuse de la musique et des nouvelles dans l'auto ?",
-      "reponse": "La radio",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel poisson orange est populaire en sushi ?",
+      "reponse": "Le saumon",
       "niveau": 1
     },
     {
@@ -106,15 +106,20 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?",
-      "reponse": "Le tyrannosaure",
+      "question": "Quel animal à huit pattes tisse une toile ?",
+      "reponse": "L'araignée",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson orange est populaire en sushi ?",
-      "reponse": "Le saumon",
-      "niveau": 1
+      "categorie": "Musique",
+      "question": "Quel chanteur jamaïcain a popularisé le reggae ?",
+      "reponse": "Bob Marley",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -123,15 +128,16 @@
       "niveau": 1
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quelles petites autos de métal roulent sur des pistes de plastique orange ?",
+      "reponse": "Les Hot Wheels",
+      "niveau": 1
+    },
+    {
       "categorie": "Sports",
-      "question": "Quel événement sportif américain a lieu un dimanche de février ?",
-      "reponse": "Le Super Bowl",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?",
+      "reponse": "Le football",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -146,27 +152,26 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelles petites autos de métal roulent sur des pistes de plastique orange ?",
-      "reponse": "Les Hot Wheels",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
       "question": "Quel rocher troué est l'emblème de la Gaspésie ?",
       "reponse": "Le rocher Percé",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport se pratique dans une piscine ?",
-      "reponse": "La natation",
-      "niveau": 1
+      "categorie": "Géographie",
+      "question": "Quel pays a un drapeau avec une étoile de David ?",
+      "reponse": "Israël",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel continent n'a aucun pays ?",
-      "reponse": "L'Antarctique",
+      "categorie": "Sports",
+      "question": "Quel sport de table se joue avec des queues et des billes ?",
+      "reponse": "Le billard",
       "niveau": 1
     },
     {

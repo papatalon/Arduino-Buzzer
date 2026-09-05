@@ -7,15 +7,109 @@
   "emoji": "🌲",
   "questions": [
     {
+      "categorie": "Culture pop",
+      "question": "Quelle marque québécoise fabrique les Jos Louis et les May West ?",
+      "reponse": "Vachon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
+      "reponse": "Le REM",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel quotidien québécois porte le nom d'une obligation morale ?",
+      "reponse": "Le Devoir",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse québécoise a chanté pour Titanic ?",
+      "reponse": "Céline Dion",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de restaurants québécoise s'est bâtie sur le déjeuner ?",
+      "reponse": "Cora",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle activité québécoise du printemps se fait dans une érablière, avec un repas ?",
+      "reponse": "La cabane à sucre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?",
+      "reponse": "Le pont Champlain",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel organisme québécois délivre les permis de conduire et les plaques ?",
+      "reponse": "La SAAQ",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe québécois a chanté La complainte du phoque en Alaska ?",
+      "reponse": "Beau Dommage",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
+      "reponse": "Steinberg",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
-      "reponse": "La tire d'érable",
+      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
+      "reponse": "Le pain doré",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel quotidien montréalais a cessé son édition papier en 2018 pour passer à la tablette ?",
-      "reponse": "La Presse",
+      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
+      "reponse": "Le Forum",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -24,48 +118,18 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
-      "reponse": "Le tramway",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel océan sépare le Québec de l'Europe ?",
-      "reponse": "L'océan Atlantique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
-      "reponse": "Arthur Laroche",
+      "question": "Quelle téléréalité québécoise fait cohabiter des célibataires devant les caméras ?",
+      "reponse": "Occupation Double",
       "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel rappeur québécois signe ses chansons d'un mot qui rime avec Zay ?",
-      "reponse": "FouKi",
-      "niveau": 3,
       "ages": [
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel animal figure sur la pièce de 25 cents canadienne ?",
-      "reponse": "Le caribou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série policière québécoise porte le numéro d'un poste de police ?",
-      "reponse": "District 31",
+      "categorie": "Musique",
+      "question": "Quel chanteur québécois a chanté Lindberg avec Louise Forestier ?",
+      "reponse": "Robert Charlebois",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -73,22 +137,35 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel grand parc de Montréal entoure le Biodôme et le Stade olympique ?",
-      "reponse": "Le parc Maisonneuve",
-      "niveau": 3,
+      "categorie": "Culture pop",
+      "question": "Quel chef québécois donne son prénom à un magazine, une émission et une gamme de produits ?",
+      "reponse": "Ricardo",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
       ]
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Que signifie l'interjection québécoise tiguidou ?",
+      "reponse": "C'est parfait",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle province se trouve Montréal ?",
+      "reponse": "Le Québec",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
-      "reponse": "Les Denis Drolet",
-      "niveau": 3,
+      "question": "Quel grand magasin de vêtements québécois porte un nom de famille ?",
+      "reponse": "Simons",
+      "niveau": 2,
       "ages": [
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -99,15 +176,25 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel repas québécois se mange le midi ?",
-      "reponse": "Le dîner",
+      "question": "Quel sucre du terroir remplace la cassonade ?",
+      "reponse": "Sucre d'érable",
       "niveau": 1
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne un enfant ?",
+      "reponse": "Un flo",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel mot québécois remplace « chat » pour une conversation écrite en ligne ?",
-      "reponse": "Le clavardage",
-      "niveau": 3,
+      "question": "Dans quelle émission québécoise des vedettes chantent-elles cachées dans des costumes géants ?",
+      "reponse": "Chanteurs masqués",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -116,100 +203,19 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel grand pont relie l'île de Montréal à la Rive-Sud près du fleuve ?",
-      "reponse": "Le pont Champlain",
-      "niveau": 3
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
-      "reponse": "Caillou",
-      "niveau": 1
+      "question": "Quelle région du Québec est célèbre pour ses bleuets ?",
+      "reponse": "Le Lac-Saint-Jean",
+      "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
-      "reponse": "Klô Pelgag",
+      "question": "Quel artiste québécois a fait sensation avec l'album Darlène ?",
+      "reponse": "Hubert Lenoir",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
       ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel animateur québécois mène une émission de musique en direct avec un band maison ?",
-      "reponse": "Normand Brathwaite",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle rébellion québécoise eut lieu en 1837 ?",
-      "reponse": "Les Patriotes",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage rouge et blanc à tuque se cache dans des foules dessinées ?",
-      "reponse": "Charlie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel groupe québécois a parodié les années 80 à la télé ?",
-      "reponse": "RBO",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse acadienne a popularisé Évangéline ?",
-      "reponse": "Annie Blanchard",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
-      "reponse": "Le CF Montréal",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel pont s'est effondré deux fois pendant sa construction, en 1907 et en 1916 ?",
-      "reponse": "Le pont de Québec",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie attache ta tuque ?",
-      "reponse": "Prépare-toi",
-      "niveau": 1
     }
   ]
 }

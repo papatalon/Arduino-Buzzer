@@ -7,61 +7,28 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quelle danse des années 70 se pratiquait sous une boule miroir, en pantalon patte d'éléphant ?",
-      "reponse": "Le disco",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile change de couleur pour se camoufler ?",
+      "reponse": "Le caméléon",
+      "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
-      "reponse": "Le Jolly Roger",
-      "niveau": 3,
+      "categorie": "Culture pop",
+      "question": "Quel jeu vidéo fait danser devant la télé en imitant un avatar à l'écran ?",
+      "reponse": "Just Dance",
+      "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel pirate est l'ennemi juré de Peter Pan ?",
-      "reponse": "Capitaine Crochet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la voix qui accompagne la voix principale en harmonie ?",
-      "reponse": "Les chœurs",
+      "categorie": "Histoire",
+      "question": "Quel premier ministre britannique fumait le cigare pendant la guerre ?",
+      "reponse": "Churchill",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
-      "reponse": "Le cardinal",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de grand ?",
-      "reponse": "Petit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve traverse Londres ?",
-      "reponse": "La Tamise",
-      "niveau": 2,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -83,9 +50,25 @@
       "niveau": 1
     },
     {
+      "categorie": "Histoire",
+      "question": "En quelle année les Jeux olympiques ont-ils été reportés d'un an pour la première fois ?",
+      "reponse": "2020",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport d'hiver glisse une pierre vers une cible en balayant la glace ?",
+      "reponse": "Le curling",
+      "niveau": 2
+    },
+    {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la répétition complète faite la veille d'un spectacle ?",
-      "reponse": "La générale",
+      "question": "Quel instrument de cuivre sonne le réveil dans les camps militaires ?",
+      "reponse": "Le clairon",
       "niveau": 3,
       "ages": [
         "ados",
@@ -95,21 +78,41 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est l'os le plus long du corps humain ?",
-      "reponse": "Le fémur",
+      "question": "Combien de lunes possède Mars ?",
+      "reponse": "Deux",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel pirate est l'ennemi juré de Peter Pan ?",
+      "reponse": "Capitaine Crochet",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport pousse un canot avec une pagaie à deux palettes ?",
-      "reponse": "Le kayak",
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on un dessin qui représente un pays ou une ville vus d'en haut ?",
+      "reponse": "Une carte",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Pluriel de madame ?",
-      "reponse": "Mesdames",
-      "niveau": 1
+      "categorie": "Histoire",
+      "question": "Quelle journée du 11 novembre honore la mémoire des soldats ?",
+      "reponse": "Le jour du Souvenir",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays entoure complètement le Lesotho ?",
+      "reponse": "Afrique du Sud",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -129,28 +132,38 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on la colonie française en Amérique du Nord ?",
-      "reponse": "La Nouvelle-France",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'artiste qui monte sur scène juste avant la vedette ?",
+      "reponse": "La première partie",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
+      "reponse": "Le cardinal",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de grand ?",
+      "reponse": "Petit",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel explorateur vénitien a décrit la Chine ?",
-      "reponse": "Marco Polo",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de planètes dans le système solaire ?",
-      "reponse": "Huit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée remporte le champion de la LNH ?",
-      "reponse": "La coupe Stanley",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quelle console de Nintendo se joue autant sur le téléviseur qu'en mode portable ?",
+      "reponse": "La Nintendo Switch",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -159,27 +172,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel objet rond et plat se lance à deux dans un parc l'été ?",
-      "reponse": "Un frisbee",
-      "niveau": 1
-    },
-    {
       "categorie": "Géographie",
-      "question": "Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?",
-      "reponse": "La ville de Québec",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle partie de l'œil donne sa couleur ?",
-      "reponse": "L'iris",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Dans quel pays se trouve le Taj Mahal ?",
+      "reponse": "L'Inde",
+      "niveau": 3
     },
     {
       "categorie": "Québec",
@@ -193,14 +189,30 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Kremlin ?",
-      "reponse": "Moscou",
+      "categorie": "Mots et langue",
+      "question": "Pluriel de madame ?",
+      "reponse": "Mesdames",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le symbole chimique de l'hydrogène ?",
+      "reponse": "H",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel pays a accueilli la Coupe du monde 2022 ?",
+      "reponse": "Le Qatar",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     }
   ]

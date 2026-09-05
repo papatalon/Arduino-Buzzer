@@ -8,8 +8,8 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Combien de quilles dans un jeu de bowling ?",
-      "reponse": "Dix",
+      "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
+      "reponse": "Le surf",
       "niveau": 1
     },
     {
@@ -20,15 +20,19 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on la grosse partie de l'arbre qui porte les branches ?",
-      "reponse": "Le tronc",
+      "question": "Quelle fleur suit le Soleil ?",
+      "reponse": "Le tournesol",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le fossé rempli d'eau qui entoure un château fort ?",
-      "reponse": "Les douves",
-      "niveau": 1
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série suit un professeur de chimie nommé Walter White ?",
+      "reponse": "Breaking Bad",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Mots et langue",
@@ -38,15 +42,20 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de périodes dans un match de hockey ?",
-      "reponse": "Trois",
+      "question": "Quel sport de combat n'utilise que les poings ?",
+      "reponse": "La boxe",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel maïs éclate au cinéma ?",
-      "reponse": "Le popcorn",
-      "niveau": 1
+      "categorie": "Musique",
+      "question": "Comment s'appelle un groupe de quatre musiciens ?",
+      "reponse": "Un quatuor",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -70,15 +79,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel instrument à cordes pincées accompagne le flamenco ?",
-      "reponse": "La guitare",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel maïs éclate au cinéma ?",
+      "reponse": "Le popcorn",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -98,6 +102,12 @@
       ]
     },
     {
+      "categorie": "Musique",
+      "question": "Quel instrument a des touches noires et blanches ?",
+      "reponse": "Le piano",
+      "niveau": 1
+    },
+    {
       "categorie": "Mots et langue",
       "question": "Que signifie attache ta tuque ?",
       "reponse": "Prépare-toi",
@@ -105,20 +115,9 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
-      "reponse": "L'érable",
+      "question": "Combien de bosses a un chameau ?",
+      "reponse": "Deux",
       "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment s'appelle un groupe de quatre musiciens ?",
-      "reponse": "Un quatuor",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Culture pop",
@@ -143,14 +142,10 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série suit un professeur de chimie nommé Walter White ?",
-      "reponse": "Breaking Bad",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Histoire",
+      "question": "Dans quel amphithéâtre combattaient les gladiateurs ?",
+      "reponse": "Le Colisée",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
@@ -160,9 +155,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la majorité de l'Amazonie ?",
-      "reponse": "Le Brésil",
-      "niveau": 1
+      "question": "Dans quel état américain se trouve Las Vegas ?",
+      "reponse": "Le Nevada",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Mots et langue",
@@ -172,8 +172,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de pattes a un oiseau ?",
-      "reponse": "Deux",
+      "question": "Quel insecte rouge à points noirs porte bonheur ?",
+      "reponse": "La coccinelle",
       "niveau": 1
     },
     {
@@ -184,8 +184,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel est le continent le plus peuplé ?",
-      "reponse": "L'Asie",
+      "question": "Capitale de l'Angleterre ?",
+      "reponse": "Londres",
       "niveau": 1
     }
   ]

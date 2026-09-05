@@ -8,9 +8,65 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?",
-      "reponse": "La ville de Québec",
+      "question": "Quel animal géant et blanc est le symbole du Grand Nord canadien ?",
+      "reponse": "L'ours polaire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle grande ville des États-Unis abrite Hollywood ?",
+      "reponse": "Los Angeles",
       "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne produit le plus de pétrole ?",
+      "reponse": "L'Alberta",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le chemin de terre battue dans le bois ?",
+      "reponse": "Un sentier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'endroit où les bateaux accostent ?",
+      "reponse": "Un port",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Portugal ?",
+      "reponse": "Lisbonne",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le décalage d'heure entre Montréal et Paris ?",
+      "reponse": "Le décalage horaire",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus haute montagne d'Amérique du Nord ?",
+      "reponse": "Le Denali",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -20,8 +76,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Irlande ?",
-      "reponse": "Dublin",
+      "question": "Dans quel pays se trouve la Grande Muraille ?",
+      "reponse": "La Chine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ville italienne est célèbre pour ses canaux ?",
+      "reponse": "Venise",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle péninsule abrite Espagne et Portugal ?",
+      "reponse": "Ibérique",
       "niveau": 2,
       "ages": [
         "ados",
@@ -31,43 +99,51 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle étendue d'eau salée immense sépare les continents ?",
-      "reponse": "L'océan",
+      "question": "Quel pays produit le plus de sirop d'érable ?",
+      "reponse": "Le Canada",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Hongrie ?",
+      "reponse": "Budapest",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve Petra, la cité rose ?",
+      "reponse": "La Jordanie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien de temps la Terre met-elle pour faire un tour sur elle-même ?",
+      "reponse": "Un jour",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel petit pays est enclavé entre France et Espagne ?",
+      "reponse": "Andorre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
       "question": "Quelle est la plus grande île de la Méditerranée ?",
       "reponse": "La Sicile",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville se dresse la statue de la Liberté ?",
-      "reponse": "New York",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le pôle Sud ?",
-      "reponse": "L'Antarctique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel animal géant et blanc est le symbole du Grand Nord canadien ?",
-      "reponse": "L'ours polaire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Portugal ?",
-      "reponse": "Lisbonne",
       "niveau": 2,
       "ages": [
         "ados",
@@ -88,85 +164,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle direction le soleil se couche-t-il ?",
-      "reponse": "À l'ouest",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville italienne est célèbre pour ses canaux ?",
-      "reponse": "Venise",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le grand bâtiment d'où décollent les avions ?",
-      "reponse": "Un aéroport",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle péninsule abrite Espagne et Portugal ?",
-      "reponse": "Ibérique",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus haute montagne d'Amérique du Nord ?",
-      "reponse": "Le Denali",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve Petra, la cité rose ?",
-      "reponse": "La Jordanie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Hongrie ?",
-      "reponse": "Budapest",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays d'Europe est célèbre pour ses moulins à vent et ses tulipes ?",
-      "reponse": "Les Pays-Bas",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel petit pays est enclavé entre France et Espagne ?",
-      "reponse": "Andorre",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays produit le plus de sirop d'érable ?",
-      "reponse": "Le Canada",
-      "niveau": 1
+      "question": "Dans quel pays d'Europe trouve-t-on le chocolat, les montres et les Alpes ?",
+      "reponse": "La Suisse",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -181,12 +181,6 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays d'Europe trouve-t-on le chocolat, les montres et les Alpes ?",
-      "reponse": "La Suisse",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
       "question": "Dans quelle ville trouve-t-on le Kremlin ?",
       "reponse": "Moscou",
       "niveau": 1,
@@ -195,6 +189,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays d'Europe est célèbre pour ses moulins à vent et ses tulipes ?",
+      "reponse": "Les Pays-Bas",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",

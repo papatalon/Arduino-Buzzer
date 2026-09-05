@@ -8,62 +8,28 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quelle comptine québécoise plume un oiseau, la tête, le bec et les ailes ?",
-      "reponse": "Alouette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle figure de note vaut quatre temps, la plus longue de toutes ?",
-      "reponse": "La ronde",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel hymne européen vient de la 9e de Beethoven ?",
-      "reponse": "L'Ode à la joie",
-      "niveau": 2,
+      "question": "Quel chanteur canadien a été découvert sur YouTube ?",
+      "reponse": "Justin Bieber",
+      "niveau": 1,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui règle le son pendant un spectacle ?",
-      "reponse": "Le sonorisateur",
-      "niveau": 3,
-      "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel ancêtre du piano pince ses cordes au lieu de les frapper ?",
-      "reponse": "Le clavecin",
+      "question": "Quel sous-genre du rap se reconnaît à ses charlestons rapides et ses basses lourdes ?",
+      "reponse": "La trap",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
+        "ados"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel rappeur américain a joué dans 8 Mile ?",
-      "reponse": "Eminem",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel gala récompense la musique québécoise ?",
-      "reponse": "L'ADISQ",
+      "question": "Quelle chanteuse québécoise a chanté pour Titanic ?",
+      "reponse": "Céline Dion",
       "niveau": 1,
       "ages": [
         "ados",
@@ -73,85 +39,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument rempli de graines produit un son quand on le secoue ?",
-      "reponse": "Les maracas",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle est la voix féminine la plus grave ?",
-      "reponse": "L'alto (contralto)",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "À quelle famille d'instruments appartient le violon ?",
-      "reponse": "Les cordes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Sur quel pont danse-t-on tous en rond dans la chanson ?",
-      "reponse": "Le pont d'Avignon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe britannique a chanté Bohemian Rhapsody ?",
-      "reponse": "Queen",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument principal joue un batteur ?",
-      "reponse": "La batterie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel tambour métallique vient de Trinité ?",
-      "reponse": "Le steel drum",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel Beatle gaucher jouait de la basse ?",
-      "reponse": "Paul McCartney",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel appareil diffuse de la musique et des nouvelles dans l'auto ?",
-      "reponse": "La radio",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la version d'une chanson enregistrée par quelqu'un d'autre que l'original ?",
-      "reponse": "Une reprise",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à vent en bois donne les sons les plus graves de l'orchestre ?",
-      "reponse": "Le basson",
+      "question": "Comment appelle-t-on la personne qui écrit les paroles d'une chanson ?",
+      "reponse": "Un parolier",
       "niveau": 3,
       "ages": [
         "ados",
@@ -161,25 +50,15 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel compositeur autrichien est le roi de la valse ?",
-      "reponse": "Strauss",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le spectacle où un artiste chante devant une foule ?",
-      "reponse": "Un concert",
+      "question": "Quelle danse se pratique en tutu et sur la pointe des pieds ?",
+      "reponse": "Le ballet",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel style musical est né dans les églises noires américaines ?",
-      "reponse": "Le gospel",
-      "niveau": 1,
+      "question": "Quelle indication musicale signifie jouer doucement ?",
+      "reponse": "Piano",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -188,25 +67,162 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanson des Beatles parle d'un sous-marin ?",
-      "reponse": "Yellow Submarine",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument en cuivre déplié mesure près de trois mètres et se joue avec une coulisse ?",
-      "reponse": "Le trombone",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de touches sur un piano standard ?",
-      "reponse": "88",
+      "question": "Combien de cordes sur un violon ?",
+      "reponse": "Quatre",
       "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse de la Barbade a chanté Umbrella ?",
+      "reponse": "Rihanna",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on un extrait de chanson repris dans une autre chanson ?",
+      "reponse": "Un échantillon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style de musique passe le plus souvent à la radio et fait danser tout le monde ?",
+      "reponse": "La pop",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment s'appelle l'hymne national de la France ?",
+      "reponse": "La Marseillaise",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Qui a composé Les Quatre Saisons ?",
+      "reponse": "Vivaldi",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse américaine a chanté Espresso en 2024 ?",
+      "reponse": "Sabrina Carpenter",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la douce chanson qu'on chante pour endormir un bébé ?",
+      "reponse": "Une berceuse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël anglais souhaite un joyeux Noël en le répétant trois fois ?",
+      "reponse": "We Wish You a Merry Christmas",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
+      "reponse": "Bleu Jeans Bleu",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur est surnommé The Boss ?",
+      "reponse": "Bruce Springsteen",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse acadienne s'est fait connaître au banjo, en français ?",
+      "reponse": "Lisa LeBlanc",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel appareil branche la guitare électrique pour faire sortir le son ?",
+      "reponse": "L'amplificateur",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment nomme-t-on une chanson sans instruments ?",
+      "reponse": "A cappella",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Pays d'origine du groupe ABBA ?",
+      "reponse": "La Suède",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la feuille où les notes sont écrites ?",
+      "reponse": "Une partition",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse folk canadienne a écrit Big Yellow Taxi ?",
+      "reponse": "Joni Mitchell",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël raconte un renne moqué pour son nez lumineux ?",
+      "reponse": "Le petit renne au nez rouge",
+      "niveau": 1
     }
   ]
 }

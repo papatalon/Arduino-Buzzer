@@ -7,28 +7,134 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Musique",
+      "question": "Quelle chanson des Cowboys Fringants raconte un homme qui revient en 2050 ?",
+      "reponse": "Plus rien",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de lettres dans l'alphabet grec ?",
+      "reponse": "24",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel capitaine de la télé jeunesse racontait des histoires invraisemblables avec ses invisibles ?",
-      "reponse": "Le Capitaine Bonhomme",
+      "question": "Quelle bénédiction le père de famille donnait-il aux siens le matin du 1er janvier ?",
+      "reponse": "La bénédiction paternelle",
       "niveau": 3,
       "ages": [
         "aines"
       ]
     },
     {
+      "categorie": "Histoire",
+      "question": "Quel roi babylonien a gravé un célèbre code de lois ?",
+      "reponse": "Hammurabi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel petit pays est enclavé entre France et Espagne ?",
+      "reponse": "Andorre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus haute montagne d'Amérique du Nord ?",
+      "reponse": "Le Denali",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelles poupées à grosse tête et lèvres pulpeuses ont concurrencé Barbie ?",
-      "reponse": "Les Bratz",
+      "question": "Quel carré de plastique de trois pouces et demi stockait des fichiers d'ordinateur ?",
+      "reponse": "La disquette",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de mois dure la gestation de l'éléphant ?",
+      "reponse": "22",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot robot ?",
+      "reponse": "Le tchèque",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel petit navire rapide Christophe Colomb utilisait-il pour ses voyages ?",
+      "reponse": "Une caravelle",
+      "niveau": 3
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Avec quel lait fait-on la feta traditionnelle ?",
+      "reponse": "Lait de brebis",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne une soirée où l'on boit entre amis ?",
+      "reponse": "Un 5 à 7",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle petite radio portative à pile a libéré la musique des salons ?",
+      "reponse": "Le transistor",
+      "niveau": 3,
+      "ages": [
+        "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel duo américain à la batterie et au clavier a chanté Stressed Out ?",
-      "reponse": "Twenty One Pilots",
+      "question": "Quelle pédale déforme le son de la guitare pour le rendre saturé ?",
+      "reponse": "La distorsion",
       "niveau": 3,
       "ages": [
         "ados",
@@ -37,8 +143,59 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle boisson gazeuse a longtemps servi de surnom moqueur aux Québécois ?",
-      "reponse": "Le Pepsi",
+      "question": "Quel magasin se visitait catalogue en main, avant que la marchandise sorte de l'entrepôt ?",
+      "reponse": "Distribution aux consommateurs",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les longues routes pavées construites par les Romains ?",
+      "reponse": "Les voies romaines",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on plusieurs notes jouées en même temps ?",
+      "reponse": "Un accord",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil fallait-il installer sur le toit pour capter les chaînes de télé ?",
+      "reponse": "L'antenne",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année les Jeux olympiques ont-ils été reportés d'un an pour la première fois ?",
+      "reponse": "2020",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve le Kilimandjaro ?",
+      "reponse": "La Tanzanie",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -56,186 +213,28 @@
     },
     {
       "categorie": "Musique",
-      "question": "Combien de touches noires compte un piano ?",
-      "reponse": "36",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le paysan qui travaillait la terre du seigneur ?",
-      "reponse": "Un serf",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle méthode permet de dater un vestige grâce à un isotope ?",
-      "reponse": "Le carbone 14",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la répétition d'un son au début des mots ?",
-      "reponse": "Une allitération",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel manga suit Luffy et son équipage de pirates ?",
-      "reponse": "One Piece",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve traverse Rome ?",
-      "reponse": "Le Tibre",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne sépare l'Europe de l'Asie ?",
-      "reponse": "L'Oural",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
-      "reponse": "Une diligence",
+      "question": "Comment appelle-t-on la distance entre un do et le do suivant ?",
+      "reponse": "Une octave",
       "niveau": 3
     },
     {
       "categorie": "Musique",
-      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
-      "reponse": "Klô Pelgag",
+      "question": "Comment appelle-t-on le bruit désagréable d'un micro trop près d'un haut-parleur ?",
+      "reponse": "Le larsen",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
+      "reponse": "Lululemon",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
-      "reponse": "La podorythmie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus long fleuve du Canada ?",
-      "reponse": "Le Mackenzie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle course de traîneaux à chiens traverse l'Alaska ?",
-      "reponse": "L'Iditarod",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de lettres dans l'alphabet grec ?",
-      "reponse": "24",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel savant a découvert le vaccin contre la rage ?",
-      "reponse": "Pasteur",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel roman de Gabrielle Roy se passe à Saint-Henri ?",
-      "reponse": "Bonheur d'occasion",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel poisson à voile est le plus rapide des mers ?",
-      "reponse": "Le voilier",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu électronique rond répète une suite de couleurs et de sons à imiter ?",
-      "reponse": "Le Simon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans quel jeu de société conquiert-on des territoires sur une carte du monde ?",
-      "reponse": "Le Risk",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse de jazz était surnommée Lady Day ?",
-      "reponse": "Billie Holiday",
-      "niveau": 3,
-      "ages": [
-        "aines"
       ]
     },
     {

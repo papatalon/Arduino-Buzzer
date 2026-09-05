@@ -14,9 +14,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle planète est surnommée la planète rouge ?",
-      "reponse": "Mars",
-      "niveau": 1
+      "question": "Quelle partie de l'œil donne sa couleur ?",
+      "reponse": "L'iris",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Mots et langue",
@@ -31,14 +36,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle ville canadienne abrite la Tour CN ?",
-      "reponse": "Toronto",
+      "question": "Capitale du Japon ?",
+      "reponse": "Tokyo",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle statue égyptienne a un corps de lion ?",
-      "reponse": "Le Sphinx",
+      "question": "Quels animaux géants ont disparu bien avant l'apparition des humains ?",
+      "reponse": "Les dinosaures",
       "niveau": 1
     },
     {
@@ -60,9 +65,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel bonbon dur se lèche au bout d'un bâton ?",
-      "reponse": "Un suçon (une sucette)",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'ensemble des chansons réunies sur un même enregistrement ?",
+      "reponse": "Un album",
       "niveau": 1
     },
     {
@@ -79,8 +84,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel océan sépare le Québec de l'Europe ?",
-      "reponse": "L'océan Atlantique",
+      "question": "Comment appelle-t-on une grande étendue d'eau douce entourée de terre ?",
+      "reponse": "Un lac",
       "niveau": 1
     },
     {
@@ -90,26 +95,39 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle danse glissée a rendu célèbre Michael Jackson ?",
-      "reponse": "Le moonwalk",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel bonbon dur se lèche au bout d'un bâton ?",
+      "reponse": "Un suçon (une sucette)",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Dans quel sport utilise-t-on un maillet à cheval ?",
-      "reponse": "Le polo",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel jeu de force oppose deux équipes de chaque côté d'un même câble ?",
+      "reponse": "Le tir à la corde",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
       "question": "Quelle tartinade blanche accompagne le bagel ?",
       "reponse": "Fromage à la crème",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel grand danois froussard résout des mystères ?",
+      "reponse": "Scooby-Doo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse se pratique en tutu et sur la pointe des pieds ?",
+      "reponse": "Le ballet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels organes filtrent le sang ?",
+      "reponse": "Les reins",
       "niveau": 1
     },
     {
@@ -123,39 +141,26 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel grand danois froussard résout des mystères ?",
-      "reponse": "Scooby-Doo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'ensemble des chansons réunies sur un même enregistrement ?",
-      "reponse": "Un album",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
-      "question": "Quelle ville canadienne a reçu les JO d'hiver de 2010 ?",
-      "reponse": "Vancouver",
+      "question": "Quel anneau de plastique se fait tourner autour de la taille en dansant ?",
+      "reponse": "Un cerceau",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle chenille fabrique un fil précieux en tissant son cocon ?",
-      "reponse": "Le ver à soie",
-      "niveau": 1
+      "question": "Quel naturaliste a proposé la théorie de l'évolution ?",
+      "reponse": "Darwin",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
       "question": "Quel monstre grec pétrifie du regard ?",
       "reponse": "Méduse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois familier désigne un ami proche ?",
-      "reponse": "Un chum",
       "niveau": 1
     },
     {
@@ -165,9 +170,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Que tombe-t-il du ciel en flocons blancs l'hiver ?",
-      "reponse": "La neige",
+      "categorie": "Québec",
+      "question": "Quel mot québécois familier désigne un ami proche ?",
+      "reponse": "Un chum",
       "niveau": 1
     }
   ]

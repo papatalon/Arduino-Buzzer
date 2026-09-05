@@ -8,24 +8,15 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque de sport allemande a trois bandes parallèles ?",
-      "reponse": "Adidas",
+      "question": "Quelle activité de party fait chanter sur une musique en lisant les paroles à l'écran ?",
+      "reponse": "Le karaoké",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
-      "reponse": "Dans l'œil du dragon",
+      "question": "Quel traitement de coiffure des années 80 frisait les cheveux pour des mois ?",
+      "reponse": "La permanente",
       "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle console portable grise de Nintendo se jouait à quatre piles ?",
-      "reponse": "Le Game Boy",
-      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -33,18 +24,15 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel commerce de village vendait autrefois aussi bien le clou que la farine ?",
-      "reponse": "Le magasin général",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
+      "question": "Quel mort-vivant marche les bras tendus dans les films d'horreur ?",
+      "reponse": "Un zombie",
+      "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel petit boîtier rond de poche contient une maison miniature ?",
-      "reponse": "Le Polly Pocket",
-      "niveau": 3,
+      "question": "Quelle série médicale suit des internes dans un hôpital de Seattle depuis 2005 ?",
+      "reponse": "Grey's Anatomy",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes"
@@ -52,26 +40,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jouet à trois roues précède le vélo chez les tout-petits ?",
-      "reponse": "Un tricycle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel château de plastique se gonfle pour que les enfants sautent dedans ?",
-      "reponse": "Un jeu gonflable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de cartes fait réunir des familles complètes en les demandant aux autres ?",
-      "reponse": "Le jeu des sept familles",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Sur quelle machine tapait-on une lettre avant l'ordinateur ?",
-      "reponse": "La machine à écrire",
+      "question": "Quel type de piscine se monte dans la cour sans creuser le sol ?",
+      "reponse": "La piscine hors terre",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -80,24 +50,44 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel accessoire rembourré élargissait les épaules des vestons dans les années 80 ?",
-      "reponse": "L'épaulette",
+      "question": "Quel objet québécois fait disparaître les traits de crayon sur le papier ?",
+      "reponse": "Une efface",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que porte-t-on sur le visage pour ne pas être reconnu à l'Halloween ?",
+      "reponse": "Un masque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle peluche électronique aux grands yeux parlait toute seule en 1998 ?",
+      "reponse": "Le Furby",
       "niveau": 3,
       "ages": [
-        "adultes",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
+      "reponse": "Rue des Pignons",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel objet rond et plat se lance entre deux joueurs et revient parfois tout seul ?",
-      "reponse": "Le boomerang",
+      "question": "Quelle créature des contes nordiques vit sous les ponts ?",
+      "reponse": "Un troll",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle boisson pour sportifs a un éclair dans son logo ?",
-      "reponse": "Le Gatorade",
+      "question": "Dans Pokémon, dans quel objet enferme-t-on les créatures capturées ?",
+      "reponse": "Une Poké Ball",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -107,19 +97,14 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu fait poser mains et pieds sur des pastilles de couleur ?",
-      "reponse": "Le Twister",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "question": "Quels petits papiers colorés se lancent en l'air pour fêter ?",
+      "reponse": "Des confettis",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quels bonbons durs multicolores promettent de goûter l'arc-en-ciel ?",
-      "reponse": "Les Skittles",
+      "question": "Quel jeu de gymnase élimine les joueurs touchés par le ballon ?",
+      "reponse": "Le ballon-chasseur",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -129,91 +114,101 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Que fallait-il faire à un film loué avant de le rapporter au club vidéo ?",
-      "reponse": "Le rembobiner",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil du restaurant jouait une chanson contre une pièce de monnaie ?",
-      "reponse": "Le juke-box",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel meuble de salon se déplie en lit pour la visite ?",
-      "reponse": "Le divan-lit",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
-      "reponse": "Watatatow",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu retire une chaise à chaque tour pendant que la musique joue ?",
-      "reponse": "La chaise musicale",
+      "question": "Quelle activité québécoise du printemps se fait dans une érablière, avec un repas ?",
+      "reponse": "La cabane à sucre",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Sous quel grand chapiteau se donnent les numéros d'acrobates ?",
-      "reponse": "Le cirque",
+      "question": "Quelles explosions de couleurs illuminent le ciel les soirs de fête ?",
+      "reponse": "Un feu d'artifice",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel manga suit Luffy et son équipage de pirates ?",
-      "reponse": "One Piece",
-      "niveau": 3,
+      "question": "Quel endroit permet de sauter d'un mur à l'autre sur des toiles tendues ?",
+      "reponse": "Un parc de trampolines",
+      "niveau": 2,
       "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel appareil enregistrait les émissions de télé sur une cassette ?",
-      "reponse": "Le magnétoscope",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel camion de course rouge et bleu affronte Crusher dans une série pour enfants ?",
-      "reponse": "Blaze",
+      "question": "Quelle série de HBO suit une famille qui se déchire pour un empire médiatique ?",
+      "reponse": "Succession",
       "niveau": 3,
       "ages": [
-        "enfants"
+        "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Qui était le gérant et le mari de Céline Dion ?",
-      "reponse": "René Angélil",
+      "question": "Quel jouet se presse et se repousse en faisant des petits pops de silicone ?",
+      "reponse": "Le pop-it",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel manège fait tourner des chevaux de bois en musique ?",
+      "reponse": "Un carrousel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles chaussures de caoutchouc percées de trous divisent la planète ?",
+      "reponse": "Les Crocs",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quel jeu un personnage fuit sans arrêt sur des rails de métro ?",
+      "reponse": "Subway Surfers",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série policière québécoise porte le numéro d'un poste de police ?",
+      "reponse": "District 31",
       "niveau": 2,
       "ages": [
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?",
+      "reponse": "Luca",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel défi a fait verser des seaux d'eau glacée sur des têtes en 2014 ?",
+      "reponse": "Le Ice Bucket Challenge",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     }
   ]

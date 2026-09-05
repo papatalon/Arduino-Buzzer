@@ -7,18 +7,9 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quelle série québécoise se déroulait dans Charlevoix après la Première Guerre ?",
-      "reponse": "Le temps d'une paix",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "De quelle langue vient le mot pyjama ?",
-      "reponse": "Le persan",
+      "categorie": "Histoire",
+      "question": "Quel amiral anglais a gagné Trafalgar ?",
+      "reponse": "Nelson",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -27,70 +18,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel savant italien a affirmé que la Terre tourne autour du Soleil ?",
-      "reponse": "Galilée",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
-      "reponse": "Nézet-Séguin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit rongeur rayé du Québec remplit ses joues de graines ?",
-      "reponse": "Le suisse",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel poète québécois a écrit L'homme rapaillé ?",
-      "reponse": "Gaston Miron",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?",
-      "reponse": "L'écoute en rafale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui était le dernier tsar de Russie ?",
-      "reponse": "Nicolas II",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle baie nordique québécoise parfume gins et confitures ?",
-      "reponse": "La chicoutai",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'écriture des Vikings, gravée dans la pierre ?",
-      "reponse": "Les runes",
+      "question": "Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?",
+      "reponse": "Le télescope James Webb",
       "niveau": 3,
       "ages": [
         "ados",
@@ -98,9 +27,100 @@
       ]
     },
     {
+      "categorie": "Musique",
+      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
+      "reponse": "Klô Pelgag",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse acadienne s'est fait connaître au banjo, en français ?",
+      "reponse": "Lisa LeBlanc",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
+      "reponse": "Pierre Falardeau",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Sciences et nature",
-      "question": "Quelle planète est la plus chaude du système solaire ?",
-      "reponse": "Vénus",
+      "question": "Quel poisson à voile est le plus rapide des mers ?",
+      "reponse": "Le voilier",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style jamaïcain a précédé le reggae ?",
+      "reponse": "Le ska",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magasin à rayons offrait un comptoir-lunch où manger un hot-dog ?",
+      "reponse": "Woolworth",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les dessins d'animaux tracés sur les parois des grottes ?",
+      "reponse": "Les peintures rupestres",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Islande ?",
+      "reponse": "Reykjavik",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles rondelles de carton s'empilaient et se retournaient dans les cours d'école des années 90 ?",
+      "reponse": "Les Pogs",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel parc animalier du Lac-Saint-Jean se visite à bord d'un train grillagé ?",
+      "reponse": "Le zoo de Saint-Félicien",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Combien de temps principaux a l'indicatif ?",
+      "reponse": "Huit",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -109,20 +129,55 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Que porte un astronaute pour survivre dans l'espace ?",
-      "reponse": "Un scaphandre",
-      "niveau": 3
+      "question": "Comment appelle-t-on les grandes pierres dressées et posées à plat par les hommes préhistoriques ?",
+      "reponse": "Un dolmen",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle île de Montréal accueille le parc d'attractions La Ronde ?",
-      "reponse": "L'île Sainte-Hélène",
+      "question": "Quelle mer intérieure borde le Kazakhstan et l'Iran ?",
+      "reponse": "La Caspienne",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel ensemble de cloches sonne dans le clocher d'une église ?",
+      "reponse": "Le carillon",
       "niveau": 3
     },
     {
+      "categorie": "Québec",
+      "question": "Quel papillon est l'insecte emblème du Québec ?",
+      "reponse": "L'amiral",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle bataille de 1066 a livré l'Angleterre aux Normands ?",
+      "reponse": "Hastings",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
-      "reponse": "La ceinture fléchée",
+      "question": "Quel programme de récompenses accumule des points bleus chez plusieurs commerçants ?",
+      "reponse": "Air Miles",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -131,61 +186,40 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson brésilienne mélange lime et cachaça ?",
-      "reponse": "La caipirinha",
+      "question": "Quel plat brésilien est un ragoût de haricots noirs ?",
+      "reponse": "La feijoada",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle cartouche de musique se glissait dans le tableau de bord des autos des années 70 ?",
-      "reponse": "Le huit-pistes",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui dirige une chorale ?",
-      "reponse": "Un chef de chœur",
-      "niveau": 3
     },
     {
       "categorie": "Sports",
-      "question": "Combien de médailles d'or olympiques a Michael Phelps ?",
-      "reponse": "23",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Taj Mahal ?",
-      "reponse": "L'Inde",
+      "question": "Quel sport court dans les bois avec une carte et une boussole ?",
+      "reponse": "La course d'orientation",
       "niveau": 3
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel grand navire de guerre espagnol transportait l'or des Amériques ?",
-      "reponse": "Le galion",
+      "categorie": "Québec",
+      "question": "Quel petit oiseau à calotte noire fréquente les mangeoires du Québec tout l'hiver ?",
+      "reponse": "La mésange",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel vêtement des années 60 a scandalisé en raccourcissant brusquement ?",
+      "reponse": "La minijupe",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle activité enferme un groupe devant des énigmes à résoudre avant la fin du temps ?",
-      "reponse": "Un jeu d'évasion",
+      "question": "Quel humoriste québécois d'origine marocaine raconte sa famille sur scène ?",
+      "reponse": "Rachid Badouri",
       "niveau": 3,
       "ages": [
         "ados",
@@ -194,40 +228,13 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui règle le son pendant un spectacle ?",
-      "reponse": "Le sonorisateur",
+      "question": "Quelle chanteuse néo-zélandaise a chanté Royals à seize ans ?",
+      "reponse": "Lorde",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
       ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel petit objet de métal en forme de fourche donne le la aux musiciens ?",
-      "reponse": "Un diapason",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel gâteau blanc et rond de Vachon porte un prénom féminin ?",
-      "reponse": "Le May West",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle note dure deux fois moins longtemps qu'une blanche ?",
-      "reponse": "La noire",
-      "niveau": 3
     }
   ]
 }

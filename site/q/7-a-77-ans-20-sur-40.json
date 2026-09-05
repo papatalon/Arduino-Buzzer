@@ -8,14 +8,14 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays les vaches sont-elles sacrées ?",
-      "reponse": "L'Inde",
+      "question": "Dans quelle ville se dresse la statue de la Liberté ?",
+      "reponse": "New York",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle ligne les coureurs doivent-ils franchir pour terminer une course ?",
-      "reponse": "La ligne d'arrivée",
+      "question": "Comment appelle-t-on la grande surface de jeu du soccer ?",
+      "reponse": "Le terrain",
       "niveau": 1
     },
     {
@@ -43,8 +43,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on un cours d'eau qui se jette dans un fleuve ?",
-      "reponse": "Une rivière",
+      "question": "Quel océan sépare le Québec de l'Europe ?",
+      "reponse": "L'océan Atlantique",
       "niveau": 1
     },
     {
@@ -67,8 +67,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on les premiers habitants de l'Amérique, ici avant les Européens ?",
-      "reponse": "Les Autochtones",
+      "question": "Comment appelle-t-on le combattant qui affrontait des bêtes devant la foule romaine ?",
+      "reponse": "Un gladiateur",
       "niveau": 1
     },
     {
@@ -85,14 +85,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel équipement protège la tête à vélo et au hockey ?",
-      "reponse": "Le casque",
+      "question": "Comment appelle-t-on le trait blanc où les coureurs s'alignent avant le coup de pistolet ?",
+      "reponse": "La ligne de départ",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle force nous retient au sol ?",
-      "reponse": "La gravité",
+      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
+      "reponse": "L'érable",
       "niveau": 1
     },
     {
@@ -102,14 +102,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse de la Barbade a chanté Umbrella ?",
-      "reponse": "Rihanna",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle plante aromatique garnit le mojito ?",
+      "reponse": "La menthe",
+      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
@@ -130,6 +126,12 @@
       "niveau": 1
     },
     {
+      "categorie": "Musique",
+      "question": "Quelle comptine demande à Pierrot de prêter sa plume pour écrire un mot ?",
+      "reponse": "Au clair de la lune",
+      "niveau": 1
+    },
+    {
       "categorie": "Bouffe et cuisine",
       "question": "Quel repas mange-t-on traditionnellement le matin ?",
       "reponse": "Le déjeuner",
@@ -137,8 +139,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel liquide rouge circule dans nos veines ?",
-      "reponse": "Le sang",
+      "question": "Quel vent tourbillonnant forme un entonnoir ?",
+      "reponse": "La tornade",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film de 1977 s'ouvre sur « Il y a bien longtemps, dans une galaxie lointaine » ?",
+      "reponse": "La Guerre des étoiles",
       "niveau": 1
     },
     {
@@ -152,21 +160,9 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film de 1977 s'ouvre sur « Il y a bien longtemps, dans une galaxie lointaine » ?",
-      "reponse": "La Guerre des étoiles",
-      "niveau": 1
-    },
-    {
       "categorie": "Musique",
       "question": "Quel petit instrument de métal, suspendu à un fil, tinte quand on le frappe avec une tige ?",
       "reponse": "Le triangle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle plante aromatique garnit le mojito ?",
-      "reponse": "La menthe",
       "niveau": 1
     }
   ]

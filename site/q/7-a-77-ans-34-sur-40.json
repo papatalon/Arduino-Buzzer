@@ -20,44 +20,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport glisse sur les vagues debout sur une planche ?",
-      "reponse": "Le surf",
+      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
+      "reponse": "Le patinage artistique",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument d'église a des tuyaux ?",
-      "reponse": "L'orgue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle mer sépare l'Europe de l'Afrique ?",
-      "reponse": "La Méditerranée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que veut dire « il fait frette » ?",
-      "reponse": "Il fait très froid",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée remporte le champion de la LNH ?",
-      "reponse": "La coupe Stanley",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
-      "reponse": "Bob l'éponge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse brésilienne anime le carnaval ?",
-      "reponse": "La samba",
+      "question": "Quelle comédie musicale met en scène des chats ?",
+      "reponse": "Cats",
       "niveau": 1,
       "ages": [
         "ados",
@@ -66,9 +36,15 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ours du Livre de la jungle chante Il en faut peu ?",
-      "reponse": "Baloo",
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on un très grand bâtiment de plusieurs dizaines d'étages ?",
+      "reponse": "Un gratte-ciel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Sur quelle estrade à trois marches montent les médaillés ?",
+      "reponse": "Le podium",
       "niveau": 1
     },
     {
@@ -78,27 +54,44 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
-      "reponse": "L'autruche",
-      "niveau": 1
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle herbe verte garnit la pizza margherita ?",
+      "reponse": "Le basilic",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouvent les pyramides et le Sphinx ?",
-      "reponse": "L'Égypte",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la toile tendue sur laquelle on rebondit très haut ?",
-      "reponse": "Un trampoline",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
+      "reponse": "Bob l'éponge",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film Disney de 2013 chante Libérée, délivrée ?",
-      "reponse": "La Reine des neiges",
+      "question": "Quel ours du Livre de la jungle chante Il en faut peu ?",
+      "reponse": "Baloo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz les plantes rejettent-elles le jour ?",
+      "reponse": "L'oxygène",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que veut dire « il fait frette » ?",
+      "reponse": "Il fait très froid",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays est célèbre pour ses tacos et ses sombreros ?",
+      "reponse": "Le Mexique",
       "niveau": 1
     },
     {
@@ -113,6 +106,12 @@
       ]
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film Disney de 2013 chante Libérée, délivrée ?",
+      "reponse": "La Reine des neiges",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture générale",
       "question": "Comment appelle-t-on le mot-clic précédé du signe dièse ?",
       "reponse": "Un hashtag",
@@ -124,20 +123,21 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la trace d'un animal préhistorique conservée dans la pierre ?",
-      "reponse": "Un fossile",
+      "question": "Comment appelait-on la colonie française en Amérique du Nord ?",
+      "reponse": "La Nouvelle-France",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle herbe verte garnit la pizza margherita ?",
-      "reponse": "Le basilic",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sports",
+      "question": "Quel équipement de cuir le joueur de baseball enfile-t-il pour attraper la balle ?",
+      "reponse": "Un gant de baseball",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument d'église a des tuyaux ?",
+      "reponse": "L'orgue",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -175,14 +175,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gaz expirons-nous ?",
-      "reponse": "Le gaz carbonique",
+      "question": "Combien de temps la Terre met-elle à tourner sur elle-même ?",
+      "reponse": "24 heures",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Chez quel animal le mâle porte-t-il les bébés ?",
-      "reponse": "L'hippocampe",
+      "question": "Quel animal hurle à la lune et chasse en meute ?",
+      "reponse": "Le loup",
       "niveau": 1
     }
   ]

@@ -8,8 +8,8 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le village où l'on cultive la terre et élève des animaux ?",
-      "reponse": "Une ferme",
+      "question": "Quel grand fleuve traverse l'Amazonie ?",
+      "reponse": "L'Amazone",
       "niveau": 1
     },
     {
@@ -17,22 +17,6 @@
       "question": "Quel État américain chaud accueille Disney World ?",
       "reponse": "La Floride",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville du Québec ?",
-      "reponse": "Montréal",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
-      "reponse": "La Finlande",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Géographie",
@@ -47,15 +31,25 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le chemin de terre battue dans le bois ?",
-      "reponse": "Un sentier",
+      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
+      "reponse": "La Finlande",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la grande étendue de terre où le fermier sème son blé ?",
+      "reponse": "Un champ",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel golfe borde le Texas et la Floride ?",
-      "reponse": "Golfe du Mexique",
-      "niveau": 1,
+      "question": "Quel fleuve russe est le plus long d'Europe ?",
+      "reponse": "La Volga",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -64,9 +58,15 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel fleuve russe est le plus long d'Europe ?",
-      "reponse": "La Volga",
-      "niveau": 2,
+      "question": "Comment appelle-t-on la ville où siège le gouvernement d'un pays ?",
+      "reponse": "La capitale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel golfe borde le Texas et la Floride ?",
+      "reponse": "Golfe du Mexique",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -92,6 +92,17 @@
     },
     {
       "categorie": "Géographie",
+      "question": "Quel fleuve américain se jette à La Nouvelle-Orléans ?",
+      "reponse": "Le Mississippi",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
       "question": "Quelle chaîne de montagnes traverse l'ouest canadien ?",
       "reponse": "Les Rocheuses",
       "niveau": 1
@@ -101,17 +112,6 @@
       "question": "Monnaie utilisée aux États-Unis ?",
       "reponse": "Le dollar",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve américain se jette à La Nouvelle-Orléans ?",
-      "reponse": "Le Mississippi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Géographie",
@@ -137,20 +137,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on les gondoles et les gladiateurs de l'histoire ?",
-      "reponse": "L'Italie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel animal figure sur la pièce d'un dollar canadien ?",
-      "reponse": "Le huard",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville des États-Unis ?",
-      "reponse": "New York",
+      "question": "Quelle est la capitale de la province de Québec ?",
+      "reponse": "La ville de Québec",
       "niveau": 1
     },
     {
@@ -165,38 +153,50 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la terre gelée sans arbres du Grand Nord ?",
-      "reponse": "La toundra",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
       "question": "Dans quel pays vivent les pandas géants ?",
       "reponse": "La Chine",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la haute paroi de roche au bord de la mer ?",
-      "reponse": "Une falaise",
-      "niveau": 2
+      "question": "Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?",
+      "reponse": "Le pont Champlain",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Quel animal est l'emblème des États-Unis ?",
-      "reponse": "L'aigle",
-      "niveau": 2
+      "question": "Comment appelle-t-on la terre gelée sans arbres du Grand Nord ?",
+      "reponse": "La toundra",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne produit le plus de pétrole ?",
-      "reponse": "L'Alberta",
-      "niveau": 1,
+      "question": "Quelle est la plus grande ville des États-Unis ?",
+      "reponse": "New York",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Irlande ?",
+      "reponse": "Dublin",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle étendue d'eau salée immense sépare les continents ?",
+      "reponse": "L'océan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quel continent se trouve le pôle Sud ?",
+      "reponse": "L'Antarctique",
+      "niveau": 1
     }
   ]
 }

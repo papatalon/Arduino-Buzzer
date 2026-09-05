@@ -8,20 +8,15 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Capitale de la Chine ?",
-      "reponse": "Pékin",
+      "question": "Quelle est la capitale de la province de Québec ?",
+      "reponse": "La ville de Québec",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle célèbre soupe française est gratinée ?",
-      "reponse": "Soupe à l'oignon",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on une chanson enregistrée avec deux artistes vedettes ?",
+      "reponse": "Un duo",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -37,8 +32,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel grand reptile du Nil était sacré en Égypte ?",
-      "reponse": "Le crocodile",
+      "question": "Quelle plante piquante pousse dans le désert ?",
+      "reponse": "Le cactus",
       "niveau": 1
     },
     {
@@ -65,20 +60,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Sur quel continent se trouvent le Brésil et l'Argentine ?",
-      "reponse": "L'Amérique du Sud",
+      "question": "De quelle couleur les océans sont-ils dessinés sur une carte ?",
+      "reponse": "Bleus",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
       "question": "Comment appelle-t-on le grand navire qui emmène des passagers en croisière ?",
       "reponse": "Un paquebot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
-      "reponse": "Un sauveteur",
       "niveau": 1
     },
     {
@@ -92,9 +81,9 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quelle couleur obtient-on en mélangeant du bleu et du jaune ?",
-      "reponse": "Vert",
+      "categorie": "Sports",
+      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
+      "reponse": "Le slalom",
       "niveau": 1
     },
     {
@@ -104,15 +93,32 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Combien de bosses a un chameau ?",
-      "reponse": "Deux",
+      "categorie": "Culture générale",
+      "question": "Quelle couleur obtient-on en mélangeant du bleu et du jaune ?",
+      "reponse": "Vert",
       "niveau": 1
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
+      "reponse": "Le raton laveur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse brésilienne anime le carnaval ?",
+      "reponse": "La samba",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Sports",
-      "question": "Quel style de nage porte le nom d'un insecte ?",
-      "reponse": "Le papillon",
+      "question": "Quel jeu de cour d'école consiste à courir après les autres pour les toucher ?",
+      "reponse": "La tag",
       "niveau": 1
     },
     {
@@ -123,9 +129,13 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle arme les chevaliers portaient-ils au côté ?",
-      "reponse": "L'épée",
-      "niveau": 1
+      "question": "Quelle crise économique a suivi le krach de 1929 ?",
+      "reponse": "La Grande Dépression",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -139,10 +149,15 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on une chanson enregistrée avec deux artistes vedettes ?",
-      "reponse": "Un duo",
-      "niveau": 1
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle célèbre soupe française est gratinée ?",
+      "reponse": "Soupe à l'oignon",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Mots et langue",
@@ -167,17 +182,6 @@
       "question": "Quelle forme creusée dans la neige sert de cachette aux enfants ?",
       "reponse": "Un fort de neige",
       "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse latine endiablée vient de Cuba ?",
-      "reponse": "La salsa",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

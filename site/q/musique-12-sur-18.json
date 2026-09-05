@@ -8,21 +8,136 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quel concours de chant européen réunit les pays chaque printemps ?",
-      "reponse": "L'Eurovision",
+      "question": "Comment appelle-t-on le bruit d'une porte qui grince ?",
+      "reponse": "Un grincement",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur menait Nirvana ?",
+      "reponse": "Kurt Cobain",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe québécois a chanté La complainte du phoque en Alaska ?",
+      "reponse": "Beau Dommage",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel hymne européen vient de la 9e de Beethoven ?",
+      "reponse": "L'Ode à la joie",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument de rue se joue en tournant une manivelle ?",
+      "reponse": "Un orgue de Barbarie",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'absence de son ?",
+      "reponse": "Le silence",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur américain a chanté Purple Rain ?",
+      "reponse": "Prince",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Sur quel support incliné le musicien pose-t-il sa partition ?",
+      "reponse": "Un lutrin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on une chanson enregistrée avec deux artistes vedettes ?",
+      "reponse": "Un duo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel gros instrument à vent en cuivre fait les sons graves ?",
+      "reponse": "Le tuba",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment nomme-t-on la vitesse d'un morceau ?",
+      "reponse": "Le tempo",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'ensemble des spectateurs assis devant la scène ?",
+      "reponse": "Le public",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on plusieurs notes jouées en même temps ?",
+      "reponse": "Un accord",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson d'Elsa parle de laisser aller le froid et de ne plus se cacher ?",
+      "reponse": "Libérée délivrée",
+      "niveau": 1,
+      "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanson des Village People s'épelle avec les bras ?",
-      "reponse": "YMCA",
-      "niveau": 2,
+      "question": "Quelle danse des années 90 se fait en groupe, bras tendus, avec un quart de tour à la fin ?",
+      "reponse": "La Macarena",
+      "niveau": 1,
       "ages": [
-        "ados",
+        "enfants",
         "adultes",
         "aines"
       ]
@@ -40,115 +155,14 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle danse fait claquer des souliers ferrés sur le plancher ?",
-      "reponse": "La claquette",
+      "question": "Comment appelle-t-on un spectacle où les acteurs chantent et dansent leur histoire ?",
+      "reponse": "Une comédie musicale",
       "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "Dans Pierre et le loup, quel instrument joue le loup ?",
-      "reponse": "Le cor",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël anglais souhaite un joyeux Noël en le répétant trois fois ?",
-      "reponse": "We Wish You a Merry Christmas",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de touches noires compte un piano ?",
-      "reponse": "36",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style de musique américain chante les cow-boys avec une guitare ?",
-      "reponse": "Le country",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on la vitesse d'un morceau ?",
-      "reponse": "Le tempo",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle percussion se joue à mains nues sur deux petits tambours accolés ?",
-      "reponse": "Les bongos",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Toto porte le nom d'un continent ?",
-      "reponse": "Africa",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel xylophone africain a des calebasses ?",
-      "reponse": "Le balafon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur menait Nirvana ?",
-      "reponse": "Kurt Cobain",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel grand disque de métal se frappe pour un son profond qui résonne longtemps ?",
-      "reponse": "Le gong",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument a des touches noires et blanches ?",
-      "reponse": "Le piano",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe sud-coréen a chanté Dynamite ?",
-      "reponse": "BTS",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle superstar américaine a nommé sa tournée Eras ?",
-      "reponse": "Taylor Swift",
+      "question": "Quel rappeur canadien vient de Toronto ?",
+      "reponse": "Drake",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -158,36 +172,9 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel style de musique de festival se construit sur des montées et des chutes synthétiques ?",
-      "reponse": "L'électro",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelles pièces de bois claque-t-on entre les doigts au Québec ?",
-      "reponse": "Les cuillères",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le retour sur scène après les applaudissements ?",
-      "reponse": "Le rappel",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe folklorique québécois a une bottine dans son nom ?",
-      "reponse": "La Bottine Souriante",
-      "niveau": 2,
+      "question": "Quelle chanson des Beatles parle d'un sous-marin ?",
+      "reponse": "Yellow Submarine",
+      "niveau": 1,
       "ages": [
         "adultes",
         "aines"
@@ -195,21 +182,41 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle famille d'instruments frappe-t-on ?",
-      "reponse": "Les percussions",
+      "question": "Comment appelle-t-on la personne qui joue d'un instrument ?",
+      "reponse": "Un musicien",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Que fait le public avec ses mains à la fin d'un spectacle ?",
-      "reponse": "Il applaudit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel tube rempli de graines imite la pluie quand on le retourne ?",
-      "reponse": "Un bâton de pluie",
+      "question": "Quel compositeur enfant prodige a écrit La Flûte enchantée ?",
+      "reponse": "Mozart",
       "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la rangée de touches noires et blanches du piano ?",
+      "reponse": "Le clavier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel trompettiste a chanté What a Wonderful World ?",
+      "reponse": "Louis Armstrong",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Gloria Gaynor est devenue l'hymne des cœurs brisés ?",
+      "reponse": "I Will Survive",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

@@ -8,9 +8,19 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le mur de béton qui retient l'eau d'une rivière ?",
-      "reponse": "Un barrage",
-      "niveau": 2
+      "question": "Capitale de la Turquie ?",
+      "reponse": "Ankara",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Golden Gate ?",
+      "reponse": "San Francisco",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -20,8 +30,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Golden Gate ?",
-      "reponse": "San Francisco",
+      "question": "Quelle province canadienne borde le Pacifique ?",
+      "reponse": "Colombie-Britannique",
       "niveau": 1
     },
     {
@@ -37,20 +47,37 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne borde le Pacifique ?",
-      "reponse": "Colombie-Britannique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la grande étendue de terre où le fermier sème son blé ?",
-      "reponse": "Un champ",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
       "question": "Comment appelle-t-on le passage creusé sous une montagne ou sous l'eau ?",
       "reponse": "Un tunnel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le terrain planté de pommiers ?",
+      "reponse": "Un verger",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville américaine se trouve Disney World ?",
+      "reponse": "Orlando",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande île du golfe Saint-Laurent ?",
+      "reponse": "Anticosti",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien y a-t-il de pôles sur la Terre ?",
+      "reponse": "Deux",
       "niveau": 1
     },
     {
@@ -61,26 +88,26 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'eau qui tombe du haut d'une falaise dans une rivière ?",
-      "reponse": "Une chute",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
       "question": "Quel océan sépare le Québec de l'Europe ?",
       "reponse": "L'océan Atlantique",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle grande ville des États-Unis abrite Hollywood ?",
-      "reponse": "Los Angeles",
-      "niveau": 2
+      "question": "Comment appelle-t-on le train qui circule sous la ville ?",
+      "reponse": "Le métro",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Combien y a-t-il de pôles sur la Terre ?",
-      "reponse": "Deux",
+      "question": "Comment appelle-t-on l'eau qui tombe du haut d'une falaise dans une rivière ?",
+      "reponse": "Une chute",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la grande route à plusieurs voies entre deux villes ?",
+      "reponse": "Une autoroute",
       "niveau": 1
     },
     {
@@ -91,9 +118,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel énorme bloc de calcaire troué se dresse dans la mer en Gaspésie ?",
-      "reponse": "Le rocher Percé",
-      "niveau": 2
+      "question": "Quelle montagne se dresse au milieu de Montréal ?",
+      "reponse": "Le mont Royal",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -103,9 +130,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle grande ville canadienne se trouve juste à l'ouest du Québec, en Ontario ?",
-      "reponse": "Toronto",
-      "niveau": 2
+      "question": "Dans quel pays se trouve le Machu Picchu, cité perdue des Incas ?",
+      "reponse": "Le Pérou",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
@@ -147,31 +174,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le train qui circule sous la ville ?",
-      "reponse": "Le métro",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande île du golfe Saint-Laurent ?",
-      "reponse": "Anticosti",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la tour de Pise ?",
-      "reponse": "L'Italie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel grand fleuve traverse l'Amazonie ?",
-      "reponse": "L'Amazone",
+      "question": "Quelle est la plus grande ville du Québec ?",
+      "reponse": "Montréal",
       "niveau": 1
     }
   ]

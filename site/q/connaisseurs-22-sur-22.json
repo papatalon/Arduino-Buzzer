@@ -8,18 +8,45 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?",
-      "reponse": "Fanfreluche",
+      "question": "Quelles bottes anglaises à coutures jaunes sont un classique punk ?",
+      "reponse": "Les Doc Martens",
       "niveau": 3,
       "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel amphithéâtre de Québec a ouvert ses portes en 2015 ?",
+      "reponse": "Le Centre Vidéotron",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument espagnol se claque entre les doigts pendant le flamenco ?",
-      "reponse": "Les castagnettes",
-      "niveau": 3
+      "question": "Quel xylophone africain a des calebasses ?",
+      "reponse": "Le balafon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel inventeur italien est considéré comme le père de la radio ?",
+      "reponse": "Marconi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

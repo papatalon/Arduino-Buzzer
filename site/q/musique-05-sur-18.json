@@ -8,8 +8,42 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui écrit les paroles d'une chanson ?",
-      "reponse": "Un parolier",
+      "question": "Comment appelle-t-on la partie d'une chanson qui change à chaque fois ?",
+      "reponse": "Le couplet",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le retour sur scène après les applaudissements ?",
+      "reponse": "Le rappel",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Dans Pierre et le loup, quel instrument joue l'oiseau ?",
+      "reponse": "La flûte",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'applaudissement debout d'une salle entière ?",
+      "reponse": "Une ovation",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la répétition complète faite la veille d'un spectacle ?",
+      "reponse": "La générale",
       "niveau": 3,
       "ages": [
         "ados",
@@ -19,9 +53,43 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel prix récompense la musique aux États-Unis ?",
-      "reponse": "Le Grammy",
-      "niveau": 1,
+      "question": "Quelle chanson de Queen fait taper des pieds et des mains sur « We will, we will... » ?",
+      "reponse": "We Will Rock You",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on les chanteurs qui accompagnent la vedette en arrière ?",
+      "reponse": "Les choristes",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le son qui revient quand on crie dans une vallée ?",
+      "reponse": "Un écho",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la salle où un artiste enregistre sa musique ?",
+      "reponse": "Un studio",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelles percussions cubaines se jouent par paire à main nue ?",
+      "reponse": "Les congas",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Qui était le chanteur de Queen ?",
+      "reponse": "Freddie Mercury",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -30,9 +98,32 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel style triste est né dans le delta du Mississippi ?",
-      "reponse": "Le blues",
-      "niveau": 1,
+      "question": "Comment appelle-t-on un son très bas, comme celui d'un gros tambour ?",
+      "reponse": "Un son grave",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le groupe de chanteurs qui répond au soliste dans une chanson ?",
+      "reponse": "Le chœur",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on les cinq lignes sur lesquelles on écrit les notes ?",
+      "reponse": "La portée",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la petite pièce de plastique qui gratte les cordes ?",
+      "reponse": "Le médiator",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -51,65 +142,9 @@
     },
     {
       "categorie": "Musique",
-      "question": "À quelle famille d'instruments appartient la flûte ?",
-      "reponse": "Les bois",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Noël parle d'un bonhomme de neige ?",
-      "reponse": "Frosty",
+      "question": "Quel chant de Noël anglais fait tinter les grelots du traîneau ?",
+      "reponse": "Jingle Bells",
       "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on, en musique, un silence qui dure un temps ?",
-      "reponse": "Le soupir",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument est roi dans les rigodons québécois ?",
-      "reponse": "Le violon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'essai d'un groupe avant un spectacle ?",
-      "reponse": "La répétition",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel objet rond et noir tourne sur une table tournante ?",
-      "reponse": "Un disque",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle note vient juste après le mi ?",
-      "reponse": "Le fa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson du crabe Sébastien vante la vie sous les vagues ?",
-      "reponse": "Sous l'océan",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
     },
     {
       "categorie": "Musique",
@@ -119,35 +154,24 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle percussion ronde a des cymbalettes ?",
-      "reponse": "Le tambourin",
+      "question": "Quelle chanson de Daft Punk répète qu'on est plus fort, meilleur et plus rapide ?",
+      "reponse": "Harder, Better, Faster, Stronger",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la pulsation régulière sur laquelle on tape du pied ?",
+      "reponse": "Le rythme",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument à cordes indien a un très long manche ?",
-      "reponse": "Le sitar",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de symphonies Beethoven a-t-il composées ?",
-      "reponse": "Neuf",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur britannique roux a chanté Shape of You ?",
-      "reponse": "Ed Sheeran",
+      "question": "Quel chanteur canadien masqué de bandages a chanté Blinding Lights ?",
+      "reponse": "The Weeknd",
       "niveau": 2,
       "ages": [
         "ados",
@@ -156,58 +180,25 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on le groupe de chanteurs qui répond au soliste dans une chanson ?",
-      "reponse": "Le chœur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Combien de musiciens forment un trio ?",
+      "reponse": "Trois",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel artiste québécois a fait sensation avec l'album Darlène ?",
-      "reponse": "Hubert Lenoir",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument a 47 cordes et se joue assis ?",
-      "reponse": "La harpe",
+      "question": "Quelle comptine fait choisir une femme, puis un enfant, dans une ronde ?",
+      "reponse": "Le fermier dans son pré",
       "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "Quelle note vient juste après le ré ?",
-      "reponse": "Le mi",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur américain a chanté Uptown Funk et Just the Way You Are ?",
-      "reponse": "Bruno Mars",
+      "question": "Quel artiste portoricain est devenu l'artiste le plus écouté au monde en reggaeton ?",
+      "reponse": "Bad Bunny",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes"
       ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on un groupe de personnes qui chantent ensemble ?",
-      "reponse": "Une chorale",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel appareil fait sortir le son fort dans une salle ?",
-      "reponse": "Un haut-parleur",
-      "niveau": 1
     }
   ]
 }

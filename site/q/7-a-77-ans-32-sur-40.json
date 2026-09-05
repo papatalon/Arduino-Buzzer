@@ -24,21 +24,20 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel repas se prend le midi au Québec ?",
-      "reponse": "Le dîner",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel champignon fait lever le pain ?",
-      "reponse": "La levure",
+      "categorie": "Musique",
+      "question": "Quelle comédie musicale utilise les chansons d'ABBA ?",
+      "reponse": "Mamma Mia",
       "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz expirons-nous ?",
+      "reponse": "Le gaz carbonique",
+      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
@@ -54,14 +53,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel lac écossais abriterait un monstre ?",
-      "reponse": "Le Loch Ness",
+      "question": "Capitale de l'Espagne ?",
+      "reponse": "Madrid",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
       "question": "Comment appelle-t-on un grand groupe de moutons ?",
       "reponse": "Un troupeau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle grande statue verte tient une torche à l'entrée de New York ?",
+      "reponse": "La statue de la Liberté",
       "niveau": 1
     },
     {
@@ -72,25 +77,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment nomme-t-on un arbre à feuilles, par opposition à un conifère ?",
-      "reponse": "Un feuillu",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Que fabriquaient les hommes préhistoriques en frottant deux pierres ?",
-      "reponse": "Le feu",
+      "question": "Qu'est-ce qui est le plus rapide : le son ou la lumière ?",
+      "reponse": "La lumière",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on l'opéra aux voiles blanches ?",
-      "reponse": "Sydney",
+      "question": "Quel golfe borde le Texas et la Floride ?",
+      "reponse": "Golfe du Mexique",
       "niveau": 1,
       "ages": [
         "ados",
@@ -99,26 +93,21 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Combien de notes dans la gamme de do majeur ?",
-      "reponse": "Sept",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas se prend le midi au Québec ?",
+      "reponse": "Le dîner",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la pause au milieu d'un match de soccer ?",
-      "reponse": "La mi-temps",
+      "question": "Combien de points vaut un panier de loin au basketball ?",
+      "reponse": "Trois",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gaz les plantes absorbent-elles ?",
-      "reponse": "Le gaz carbonique",
+      "question": "Quel petit animal à coquille rampe lentement en laissant une trace ?",
+      "reponse": "L'escargot",
       "niveau": 1
     },
     {
@@ -135,13 +124,9 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle comédie musicale utilise les chansons d'ABBA ?",
-      "reponse": "Mamma Mia",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle note vient juste après le sol ?",
+      "reponse": "Le la",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
@@ -153,6 +138,12 @@
       "categorie": "Culture pop",
       "question": "Quel jouet à figure humaine s'habille et se coiffe ?",
       "reponse": "Une poupée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport descend des rivières en radeau pneumatique ?",
+      "reponse": "Le rafting",
       "niveau": 1
     },
     {
@@ -168,12 +159,6 @@
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au soccer ?",
-      "reponse": "Onze",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
       "question": "Où emprunte-t-on gratuitement des livres dans son quartier ?",
       "reponse": "À la bibliothèque",
@@ -181,8 +166,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
-      "reponse": "Le CF Montréal",
+      "question": "Quel événement sportif américain a lieu un dimanche de février ?",
+      "reponse": "Le Super Bowl",
       "niveau": 1,
       "ages": [
         "ados",

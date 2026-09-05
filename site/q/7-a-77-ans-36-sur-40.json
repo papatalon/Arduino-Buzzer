@@ -8,8 +8,8 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle vitesse ne peut jamais être dépassée ?",
-      "reponse": "Celle de la lumière",
+      "question": "Quel doigt de la main est le plus court et le plus épais ?",
+      "reponse": "Le pouce",
       "niveau": 1
     },
     {
@@ -38,14 +38,19 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle petite fenêtre de l'œil laisse entrer la lumière ?",
-      "reponse": "La pupille",
-      "niveau": 1
+      "question": "Quel acide donne son goût au citron ?",
+      "reponse": "L'acide citrique",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle couleur de carton expulse un joueur au soccer ?",
-      "reponse": "Rouge",
+      "question": "Dans quoi faut-il envoyer la rondelle pour compter ?",
+      "reponse": "Le filet",
       "niveau": 1
     },
     {
@@ -61,16 +66,6 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel colonel a fondé la chaîne de poulet PFK ?",
-      "reponse": "Sanders",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
       "question": "Quelle chanson de Noël parle d'un bonhomme de neige ?",
       "reponse": "Frosty",
@@ -84,48 +79,19 @@
     },
     {
       "categorie": "Sports",
-      "question": "Dans quoi faut-il faire entrer le ballon pour marquer au basketball ?",
-      "reponse": "Le panier",
+      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
+      "reponse": "Un sauveteur",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel métal les aimants attirent-ils ?",
-      "reponse": "Le fer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
-      "reponse": "Georges St-Pierre",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel colonel a fondé la chaîne de poulet PFK ?",
+      "reponse": "Sanders",
       "niveau": 1,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on une chanson sans instruments ?",
-      "reponse": "A cappella",
-      "niveau": 1,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "De quelle couleur est le feu de circulation qui dit d'arrêter ?",
-      "reponse": "Rouge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage vert déteste Noël ?",
-      "reponse": "Le Grincheux",
-      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -139,27 +105,61 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Dans quelle ville l'aquarium présente-t-il des ours blancs ?",
-      "reponse": "Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel paquebot réputé insubmersible a heurté un iceberg lors de son premier voyage ?",
-      "reponse": "Le Titanic",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée en Égypte ?",
-      "reponse": "L'arabe",
+      "categorie": "Musique",
+      "question": "Quelle danse latine endiablée vient de Cuba ?",
+      "reponse": "La salsa",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Que tombe-t-il du ciel en flocons blancs l'hiver ?",
+      "reponse": "La neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport monte des parois avec des prises de couleur et un baudrier ?",
+      "reponse": "L'escalade",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel personnage vert déteste Noël ?",
+      "reponse": "Le Grincheux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel constructeur a lancé la Ford T ?",
+      "reponse": "Henry Ford",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'énorme masse de glace qui flotte sur la mer ?",
+      "reponse": "Un iceberg",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Dans quelle ville l'aquarium présente-t-il des ours blancs ?",
+      "reponse": "Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "De quelle couleur est le feu de circulation qui dit d'arrêter ?",
+      "reponse": "Rouge",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -175,8 +175,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve Londres ?",
-      "reponse": "L'Angleterre",
+      "question": "Sur quel continent se trouve le pôle Sud ?",
+      "reponse": "L'Antarctique",
       "niveau": 1
     }
   ]

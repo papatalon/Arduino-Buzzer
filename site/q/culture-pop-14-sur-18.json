@@ -8,14 +8,88 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Que repartent les invités d'une fête d'enfants, rempli de bonbons ?",
-      "reponse": "Un sac surprise",
+      "question": "Quel site de vente en ligne a une flèche souriante dans son logo ?",
+      "reponse": "Amazon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu fait poser mains et pieds sur des pastilles de couleur ?",
+      "reponse": "Le Twister",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
+      "reponse": "Loft Story",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel animal cache les chocolats dans le jardin à Pâques ?",
+      "reponse": "Le lapin de Pâques",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel logiciel de clavardage faisait vibrer l'écran du contact avec un wizz ?",
+      "reponse": "MSN Messenger",
+      "niveau": 2,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel cahier à anneaux range les feuilles de chaque matière ?",
+      "reponse": "Un cartable",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel petit gâteau rond de Vachon porte un prénom masculin ?",
-      "reponse": "Le Jos Louis",
+      "question": "Quel objet de plastique se glisse sous les pieds pour glisser sur la neige ?",
+      "reponse": "La soucoupe",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel site de mode en ligne inonde le marché de vêtements à très bas prix ?",
+      "reponse": "Shein",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de combat de Nintendo réunit ses personnages sur une même scène ?",
+      "reponse": "Super Smash Bros",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel bâton le magicien agite-t-il en disant sa formule ?",
+      "reponse": "Une baguette magique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magasin canadien remet à ses clients une fausse monnaie imprimée ?",
+      "reponse": "Canadian Tire",
       "niveau": 2,
       "ages": [
         "ados",
@@ -25,18 +99,28 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel objet de plastique se lance et revient parfois à son lanceur ?",
-      "reponse": "Un boomerang",
+      "question": "Quel petit personnage de conte sème des cailloux pour retrouver son chemin ?",
+      "reponse": "Le Petit Poucet",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle héroïne à pois rouges combat le crime à Paris avec Chat Noir ?",
-      "reponse": "Ladybug",
-      "niveau": 1,
+      "question": "Que fallait-il faire à un film loué avant de le rapporter au club vidéo ?",
+      "reponse": "Le rembobiner",
+      "niveau": 2,
       "ages": [
-        "enfants",
-        "ados"
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu télévisé opposait des équipes d'élèves du secondaire ?",
+      "reponse": "Génies en herbe",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -51,15 +135,39 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle créature des contes nordiques vit sous les ponts ?",
-      "reponse": "Un troll",
+      "question": "Quel objet de plastique se lance et revient parfois à son lanceur ?",
+      "reponse": "Un boomerang",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel traitement de coiffure des années 80 frisait les cheveux pour des mois ?",
-      "reponse": "La permanente",
+      "question": "Quel appareil branché à la ligne téléphonique faisait des bruits stridents pour se connecter ?",
+      "reponse": "Le modem",
       "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?",
+      "reponse": "Fanfreluche",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on les petits visages jaunes qu'on glisse dans un message ?",
+      "reponse": "Un émoji",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission matinale de TVA réveille le Québec en semaine ?",
+      "reponse": "Salut Bonjour",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -67,99 +175,23 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles petites boules de verre s'entrechoquent dans un jeu de cour d'école ?",
-      "reponse": "Des billes",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu vidéo se joue avec une guitare de plastique à cinq boutons ?",
-      "reponse": "Guitar Hero",
+      "question": "Quel grand magasin de vêtements québécois porte un nom de famille ?",
+      "reponse": "Simons",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel descripteur de hockey a marqué des générations par son français impeccable ?",
-      "reponse": "René Lecavalier",
-      "niveau": 3,
-      "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
-      "reponse": "Dans une galaxie près de chez vous",
-      "niveau": 3,
+      "question": "Quels trois héros en pyjama se transforment la nuit pour affronter des méchants ?",
+      "reponse": "Les Pyjamasques",
+      "niveau": 1,
       "ages": [
-        "adultes"
+        "enfants",
+        "ados"
       ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la petite lumière laissée allumée pour la nuit ?",
-      "reponse": "Une veilleuse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel manège file à toute vitesse en montant et descendant sur des rails ?",
-      "reponse": "Les montagnes russes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle application verte fait apprendre les langues avec un hibou insistant ?",
-      "reponse": "Duolingo",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
-      "reponse": "Olivier Guimond",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de slush colorée se vend chez Couche-Tard ?",
-      "reponse": "Sloche",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
-      "reponse": "MusiquePlus",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel oiseau apporterait les bébés selon la légende ?",
-      "reponse": "La cigogne",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Que construit-on avec un seau et une pelle au bord de l'eau ?",
-      "reponse": "Un château de sable",
-      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -174,35 +206,12 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles figurines surprises se déballent couche par couche dans une boule ?",
-      "reponse": "Les LOL Surprise",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de vêtements de sport a une virgule pour logo ?",
-      "reponse": "Nike",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
-      "reponse": "Le Forum",
+      "question": "Quel appareil du restaurant jouait une chanson contre une pièce de monnaie ?",
+      "reponse": "Le juke-box",
       "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Où les enfants passent-ils leurs journées d'été avec des moniteurs ?",
-      "reponse": "Au camp de jour",
-      "niveau": 1
     }
   ]
 }

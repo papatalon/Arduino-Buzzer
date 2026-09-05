@@ -19,12 +19,6 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle ligne imaginaire sépare l'hémisphère nord de l'hémisphère sud ?",
-      "reponse": "L'équateur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
       "question": "Capitale de l'Australie ?",
       "reponse": "Canberra",
       "niveau": 2,
@@ -33,6 +27,24 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quel continent se dresse le Kilimandjaro ?",
+      "reponse": "L'Afrique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville se trouve la tour Eiffel ?",
+      "reponse": "Paris",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle baie géante borde le nord du Québec ?",
+      "reponse": "Baie d'Hudson",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -47,32 +59,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Combien de temps la Terre met-elle pour faire un tour sur elle-même ?",
-      "reponse": "Un jour",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Taj Mahal ?",
-      "reponse": "L'Inde",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle baie géante borde le nord du Québec ?",
-      "reponse": "Baie d'Hudson",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
       "question": "Capitale de l'Angleterre ?",
       "reponse": "Londres",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve traverse Paris ?",
-      "reponse": "La Seine",
       "niveau": 1
     },
     {
@@ -83,9 +71,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on une langue de terre qui s'avance dans la mer ?",
-      "reponse": "Une péninsule",
-      "niveau": 3
+      "question": "Combien de temps la Terre met-elle pour faire le tour du Soleil ?",
+      "reponse": "Un an",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -95,8 +83,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
-      "reponse": "L'Alberta",
+      "question": "Quel fleuve traverse Paris ?",
+      "reponse": "La Seine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne borde le Québec à l'est, avec Moncton ?",
+      "reponse": "Le Nouveau-Brunswick",
       "niveau": 3
     },
     {
@@ -112,21 +106,21 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'eau salée qu'on ne peut pas boire ?",
-      "reponse": "L'eau de mer",
-      "niveau": 1
+      "question": "Comment appelle-t-on une langue de terre qui s'avance dans la mer ?",
+      "reponse": "Une péninsule",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le mouvement de la mer qui monte et descend chaque jour ?",
+      "reponse": "La marée",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
       "question": "Quel massif abrite l'Everest ?",
       "reponse": "L'Himalaya",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
-      "reponse": "La Norvège",
-      "niveau": 3
     },
     {
       "categorie": "Géographie",
@@ -147,6 +141,12 @@
     },
     {
       "categorie": "Géographie",
+      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
+      "reponse": "La Norvège",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
       "question": "Quelle province canadienne parle surtout français ?",
       "reponse": "Le Québec",
       "niveau": 1
@@ -161,12 +161,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la ville de Venise et ses canaux ?",
-      "reponse": "L'Italie",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -188,6 +182,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve la ville de Venise et ses canaux ?",
+      "reponse": "L'Italie",
+      "niveau": 1
     }
   ]
 }

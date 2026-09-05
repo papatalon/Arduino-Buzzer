@@ -7,144 +7,10 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "En quelle année le Titanic a-t-il coulé ?",
-      "reponse": "1912",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Edmonton ?",
-      "reponse": "Les Oilers",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal hurle à la lune et chasse en meute ?",
-      "reponse": "Le loup",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Sur quelle plateforme les jeunes jouent-ils à des millions de jeux créés par d'autres joueurs ?",
-      "reponse": "Roblox",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de Terre-Neuve ?",
-      "reponse": "Saint-Jean",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel dessert de la cabane à sucre se roule sur la neige avec un bâton ?",
-      "reponse": "La tire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel superhéros enfile son costume dans une cabine téléphonique ?",
-      "reponse": "Superman",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de hasard fait cocher des cases en écoutant des numéros criés ?",
-      "reponse": "Le bingo",
-      "niveau": 1
-    },
-    {
       "categorie": "Musique",
-      "question": "Quelle comptine fait répondre le hibou au coucou, du haut de son grand chêne ?",
-      "reponse": "Dans la forêt lointaine",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme fait franchir une barre très haute à l'aide d'une longue tige souple ?",
-      "reponse": "Le saut à la perche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Angleterre ?",
-      "reponse": "Londres",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel parc montréalais fut dessiné par Frederick Olmsted ?",
-      "reponse": "Le mont Royal",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle tablette de chocolat porte un nom qui évoque le café ?",
-      "reponse": "Le Coffee Crisp",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel ordre de moines soldats gardait les pèlerins ?",
-      "reponse": "Les Templiers",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel organe contrôle tout le corps ?",
-      "reponse": "Le cerveau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel quart-arrière a gagné sept Super Bowls ?",
-      "reponse": "Tom Brady",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
-      "reponse": "Les Gardiens",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de litres de sang contient un adulte ?",
-      "reponse": "Cinq",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle comptine parle d'un homme à la maison de carton dont l'escalier se casse ?",
+      "reponse": "Pirouette cacahuète",
+      "niveau": 2
     },
     {
       "categorie": "Mots et langue",
@@ -164,21 +30,141 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouvent les pyramides et le Sphinx ?",
-      "reponse": "L'Égypte",
+      "categorie": "Québec",
+      "question": "Quel dessert de la cabane à sucre se roule sur la neige avec un bâton ?",
+      "reponse": "La tire",
       "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Le dauphin est-il un poisson ou un mammifère ?",
+      "reponse": "Un mammifère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la passe qui mène directement à un but ?",
+      "reponse": "Une passe décisive",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel gâteau blanc et rond de Vachon porte un prénom féminin ?",
+      "reponse": "Le May West",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel superhéros enfile son costume dans une cabine téléphonique ?",
+      "reponse": "Superman",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel parc montréalais fut dessiné par Frederick Olmsted ?",
+      "reponse": "Le mont Royal",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Pérou ?",
+      "reponse": "Lima",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle note vient juste après le mi ?",
-      "reponse": "Le fa",
+      "question": "Comment appelle-t-on la suite des sept notes de do à si ?",
+      "reponse": "La gamme",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel volcan sicilien est le plus actif d'Europe ?",
+      "reponse": "L'Etna",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
+      "reponse": "La dionée",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin ressemble à un cheval miniature ?",
+      "reponse": "L'hippocampe",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quelle science étudie les plantes ?",
-      "reponse": "La botanique",
+      "categorie": "Culture pop",
+      "question": "Quel jeu fait poser mains et pieds sur des pastilles de couleur ?",
+      "reponse": "Le Twister",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de force soulève une barre chargée de disques ?",
+      "reponse": "L'haltérophilie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée récompense le joueur le plus utile de la LNH ?",
+      "reponse": "Hart",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
+      "reponse": "Le Jolly Roger",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit légume rond, rouge dehors et blanc dedans, pique la langue ?",
+      "reponse": "Le radis",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
+      "reponse": "Les Gardiens",
       "niveau": 1
     },
     {
@@ -193,10 +179,32 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit légume rond, rouge dehors et blanc dedans, pique la langue ?",
-      "reponse": "Le radis",
+      "categorie": "Culture générale",
+      "question": "Quelle science étudie les plantes ?",
+      "reponse": "La botanique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle statue les Français ont-ils offerte aux Américains en 1886 ?",
+      "reponse": "La statue de la Liberté",
       "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se tient le grand carnaval de Rio ?",
+      "reponse": "Le Brésil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Sur quelle plateforme les jeunes jouent-ils à des millions de jeux créés par d'autres joueurs ?",
+      "reponse": "Roblox",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     }
   ]
 }

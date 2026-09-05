@@ -25,15 +25,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanson enfantine parle d'un petit navire qui n'avait jamais navigué ?",
-      "reponse": "Il était un petit navire",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel biscuit au chocolat cache une guimauve ?",
+      "reponse": "Le Whippet",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "En quel siècle vivons-nous ?",
-      "reponse": "Le 21e siècle",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel aliment blanc, fait de lait, mange-t-on avec des fruits au déjeuner ?",
+      "reponse": "Le yogourt",
       "niveau": 1
     },
     {
@@ -48,9 +48,9 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment blanc, fait de lait, mange-t-on avec des fruits au déjeuner ?",
-      "reponse": "Le yogourt",
+      "categorie": "Histoire",
+      "question": "Quel physicien a formulé E=mc2 ?",
+      "reponse": "Einstein",
       "niveau": 1
     },
     {
@@ -66,8 +66,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
-      "reponse": "Le patinage artistique",
+      "question": "Quel sport se joue avec un ballon rond qu'on frappe du pied dans un but ?",
+      "reponse": "Le soccer",
       "niveau": 1
     },
     {
@@ -99,25 +99,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle province se trouve Montréal ?",
-      "reponse": "Le Québec",
+      "question": "Monnaie utilisée aux États-Unis ?",
+      "reponse": "Le dollar",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment nomme-t-on un circuit avec les buts remplis ?",
-      "reponse": "Grand chelem",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle équipe de hockey joue à Edmonton ?",
+      "reponse": "Les Oilers",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gaz de l'air respirons-nous pour vivre ?",
-      "reponse": "L'oxygène",
+      "question": "Quelle articulation relie la cuisse à la jambe ?",
+      "reponse": "Le genou",
       "niveau": 1
     },
     {
@@ -148,14 +143,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel phénomène lumineux colore le ciel polaire ?",
-      "reponse": "Aurore boréale",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel biscuit au chocolat cache une guimauve ?",
-      "reponse": "Le Whippet",
+      "question": "Quel pigment rend les plantes vertes ?",
+      "reponse": "La chlorophylle",
       "niveau": 1
     },
     {
@@ -165,27 +154,33 @@
       "niveau": 1
     },
     {
+      "categorie": "Géographie",
+      "question": "Où se trouvent les pyramides de Gizeh ?",
+      "reponse": "En Égypte",
+      "niveau": 1
+    },
+    {
       "categorie": "Québec",
       "question": "Quel parc d'attractions se trouve à Montréal ?",
       "reponse": "La Ronde",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne borde le Pacifique ?",
-      "reponse": "Colombie-Britannique",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Combien de temps la Terre met-elle à tourner sur elle-même ?",
-      "reponse": "24 heures",
+      "question": "Comment s'appelle la maison des abeilles ?",
+      "reponse": "La ruche",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Comment s'appelle la voiture de course des Bagnoles ?",
       "reponse": "Flash McQueen",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le musicien assis derrière ses caisses et ses cymbales ?",
+      "reponse": "Un batteur",
       "niveau": 1
     }
   ]

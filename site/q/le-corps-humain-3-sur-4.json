@@ -7,21 +7,16 @@
   "emoji": "🧠",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quels os protègent les poumons ?",
-      "reponse": "Les côtes",
+      "categorie": "Québec",
+      "question": "Quelle fête du 14 février fait échanger des cartes en forme de cœur ?",
+      "reponse": "La Saint-Valentin",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien d'os dans le squelette humain adulte ?",
-      "reponse": "206",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Combien de poumons possède l'humain ?",
+      "reponse": "Deux",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -38,6 +33,17 @@
       "question": "Quelle petite fenêtre de l'œil laisse entrer la lumière ?",
       "reponse": "La pupille",
       "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
+      "reponse": "La tradition orale",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
@@ -68,15 +74,15 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel organe de la bouche permet de goûter ?",
-      "reponse": "La langue",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture générale",
       "question": "Quel géant mythologique n'a qu'un seul œil ?",
       "reponse": "Le cyclope",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe de la bouche permet de goûter ?",
+      "reponse": "La langue",
       "niveau": 1
     },
     {
@@ -102,39 +108,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
-      "reponse": "Le parchemin",
-      "niveau": 3
-    },
-    {
       "categorie": "Culture générale",
       "question": "Combien de sens possède l'être humain ?",
       "reponse": "Cinq",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle partie de la cellule contient l'ADN ?",
-      "reponse": "Le noyau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile à quatre dents pique les aliments ?",
-      "reponse": "La fourchette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
-      "reponse": "Les branchies",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels marins portaient un bandeau sur l'œil et cherchaient des trésors ?",
-      "reponse": "Les pirates",
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne qui soigne les dents ?",
+      "reponse": "Un dentiste",
       "niveau": 1
     },
     {
@@ -150,14 +132,41 @@
     },
     {
       "categorie": "Sciences et nature",
+      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
+      "reponse": "Les branchies",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie de la cellule contient l'ADN ?",
+      "reponse": "Le noyau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
+      "reponse": "Dans l'œil du dragon",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ustensile à quatre dents pique les aliments ?",
+      "reponse": "La fourchette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
       "question": "Quelle est la température du corps humain en santé ?",
       "reponse": "37 degrés C",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien de dents possède un adulte en général ?",
-      "reponse": "32",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal polaire a la peau noire sous son pelage blanc ?",
+      "reponse": "L'ours polaire",
       "niveau": 2,
       "ages": [
         "ados",
@@ -170,15 +179,6 @@
       "question": "Quelle articulation plie le bras en son milieu ?",
       "reponse": "Le coude",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
-      "reponse": "Dans l'œil du dragon",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
     }
   ]
 }

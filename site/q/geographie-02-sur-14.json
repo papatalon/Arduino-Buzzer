@@ -8,6 +8,12 @@
   "questions": [
     {
       "categorie": "Géographie",
+      "question": "Quel animal est l'emblème des États-Unis ?",
+      "reponse": "L'aigle",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
       "question": "Quel est le plus grand océan ?",
       "reponse": "Le Pacifique",
       "niveau": 1
@@ -26,14 +32,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de la Chine ?",
-      "reponse": "Pékin",
+      "question": "Sur quel continent se trouve le Canada ?",
+      "reponse": "L'Amérique du Nord",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le Canada ?",
-      "reponse": "L'Amérique du Nord",
+      "question": "Capitale de la Chine ?",
+      "reponse": "Pékin",
       "niveau": 1
     },
     {
@@ -49,18 +55,6 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays voisin de la France et de l'Italie parle-t-on quatre langues officielles ?",
-      "reponse": "La Suisse",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle tempête tropicale géante porte un nom de personne ?",
-      "reponse": "Un ouragan",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
       "question": "Langue parlée en Argentine ?",
       "reponse": "L'espagnol",
       "niveau": 1,
@@ -69,6 +63,18 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la vague géante déclenchée par un tremblement de terre ?",
+      "reponse": "Un tsunami",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays trouve-t-on les gondoles et les gladiateurs de l'histoire ?",
+      "reponse": "L'Italie",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -81,16 +87,6 @@
       "question": "Quel est le plus haut sommet du monde ?",
       "reponse": "L'Everest",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve Tombouctou ?",
-      "reponse": "Le Mali",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Géographie",
@@ -111,31 +107,27 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel grand parc de Montréal entoure le Biodôme et le Stade olympique ?",
-      "reponse": "Le parc Maisonneuve",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Dans quel pays se trouve la tour de Pise ?",
+      "reponse": "L'Italie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays insulaire du nord de l'Atlantique compte des volcans et des geysers ?",
+      "reponse": "L'Islande",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus grand désert chaud du monde ?",
+      "reponse": "Le Sahara",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
       "question": "Quel pays a la forme d'une longue bande le long de l'océan Pacifique ?",
       "reponse": "Le Chili",
       "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la Grande Muraille ?",
-      "reponse": "La Chine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la ville où siège le gouvernement d'un pays ?",
-      "reponse": "La capitale",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -147,12 +139,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus grand désert chaud du monde ?",
-      "reponse": "Le Sahara",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -179,6 +165,12 @@
     },
     {
       "categorie": "Géographie",
+      "question": "Comment appelle-t-on la carte du monde en forme de boule qui tourne sur un pied ?",
+      "reponse": "Un globe terrestre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
       "question": "Quel territoire canadien a Iqaluit pour capitale ?",
       "reponse": "Le Nunavut",
       "niveau": 2,
@@ -190,9 +182,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel grand pont relie l'île de Montréal à la Rive-Sud près du fleuve ?",
-      "reponse": "Le pont Champlain",
-      "niveau": 3
+      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
+      "reponse": "Le Grand Nord",
+      "niveau": 2
     }
   ]
 }

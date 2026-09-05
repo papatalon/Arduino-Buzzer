@@ -7,16 +7,33 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on la peau rugueuse qui recouvre le tronc ?",
-      "reponse": "L'écorce",
-      "niveau": 2
+      "categorie": "Sports",
+      "question": "Quelle écurie italienne de F1 est rouge ?",
+      "reponse": "Ferrari",
+      "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne produit le plus de pétrole ?",
-      "reponse": "L'Alberta",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série de science-fiction se passe à Hawkins ?",
+      "reponse": "Stranger Things",
       "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel parc d'attractions se trouve à Montréal ?",
+      "reponse": "La Ronde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles pâtes en forme de papillon existent ?",
+      "reponse": "Les farfalles",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -24,18 +41,11 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle comptine réveille un meunier dont le moulin va trop vite ?",
-      "reponse": "Meunier tu dors",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel prix récompense chaque année la paix, la médecine et la littérature ?",
-      "reponse": "Le prix Nobel",
+      "categorie": "Cinéma et télé",
+      "question": "Quel duo formaient Claude Meunier et Serge Thériault ?",
+      "reponse": "Ding et Dong",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -48,51 +58,25 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gaz rend les ballons de fête flottants ?",
-      "reponse": "L'hélium",
+      "question": "Quel os protège le cerveau ?",
+      "reponse": "Le crâne",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel camion de course rouge et bleu affronte Crusher dans une série pour enfants ?",
-      "reponse": "Blaze",
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?",
+      "reponse": "La Révolution tranquille",
       "niveau": 3,
       "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de baseball a joué à Montréal ?",
-      "reponse": "Les Expos",
-      "niveau": 1,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel jeu mobile fait attraper des créatures en marchant dans la vraie ville ?",
-      "reponse": "Pokémon GO",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel empire avait Rome pour capitale ?",
-      "reponse": "L'Empire romain",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel duo formaient Claude Meunier et Serge Thériault ?",
-      "reponse": "Ding et Dong",
-      "niveau": 2,
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve Petra, la cité rose ?",
+      "reponse": "La Jordanie",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
@@ -109,64 +93,6 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie dormir comme une bûche ?",
-      "reponse": "Dormir profondément",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles pâtes en forme de papillon existent ?",
-      "reponse": "Les farfalles",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays d'Amérique du Sud danse-t-on le tango ?",
-      "reponse": "L'Argentine",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel parc d'attractions se trouve à Montréal ?",
-      "reponse": "La Ronde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série de science-fiction se passe à Hawkins ?",
-      "reponse": "Stranger Things",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel anneau gonflable aide les petits à flotter ?",
-      "reponse": "Une bouée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit rouge pousse dans les tourbières ?",
-      "reponse": "La canneberge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le roi de l'Égypte ancienne ?",
-      "reponse": "Un pharaon",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
       "question": "Quelle taxe québécoise s'ajoute à la taxe fédérale sur les achats ?",
       "reponse": "La TVQ",
@@ -179,15 +105,67 @@
     },
     {
       "categorie": "Musique",
+      "question": "Quelle comptine fait répondre le hibou au coucou, du haut de son grand chêne ?",
+      "reponse": "Dans la forêt lointaine",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année a eu lieu la Confédération canadienne ?",
+      "reponse": "1867",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit rouge pousse dans les tourbières ?",
+      "reponse": "La canneberge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle saison amène la neige au Québec ?",
+      "reponse": "L'hiver",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie dormir comme une bûche ?",
+      "reponse": "Dormir profondément",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle le voyage du pollen ?",
+      "reponse": "La pollinisation",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel manège fait tourner des chevaux de bois en musique ?",
+      "reponse": "Un carrousel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel jeu mobile fait attraper des créatures en marchant dans la vraie ville ?",
+      "reponse": "Pokémon GO",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Musique",
       "question": "Comment appelle-t-on un groupe de personnes qui chantent ensemble ?",
       "reponse": "Une chorale",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel château de plastique se gonfle pour que les enfants sautent dedans ?",
-      "reponse": "Un jeu gonflable",
-      "niveau": 1
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le tableau qui affiche le pointage pendant un match ?",
+      "reponse": "Le tableau indicateur",
+      "niveau": 2
     },
     {
       "categorie": "Mots et langue",
@@ -196,9 +174,30 @@
       "niveau": 1
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quel manga suit Luffy et son équipage de pirates ?",
+      "reponse": "One Piece",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel prix récompense chaque année la paix, la médecine et la littérature ?",
+      "reponse": "Le prix Nobel",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Musique",
-      "question": "Sur quelle estrade les artistes se produisent-ils ?",
-      "reponse": "La scène",
+      "question": "Que met-on sur les oreilles pour écouter de la musique sans déranger ?",
+      "reponse": "Des écouteurs",
       "niveau": 1
     }
   ]

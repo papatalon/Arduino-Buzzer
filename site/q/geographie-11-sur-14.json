@@ -20,15 +20,21 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le mouvement de la mer qui monte et descend chaque jour ?",
-      "reponse": "La marée",
-      "niveau": 2
+      "question": "Comment appelle-t-on la petite colline de sable poussée par le vent au bord de la mer ?",
+      "reponse": "Une dune",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
       "question": "Sur quel continent se trouvent le Brésil et l'Argentine ?",
       "reponse": "L'Amérique du Sud",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la rive du fleuve où se trouve Longueuil ?",
+      "reponse": "La Rive-Sud",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -49,15 +55,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
-      "reponse": "Rio de Janeiro",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
-      "reponse": "Le Grand Nord",
-      "niveau": 2
+      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
+      "reponse": "L'épinette",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
@@ -69,6 +69,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
+      "reponse": "Rio de Janeiro",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -94,6 +100,18 @@
     },
     {
       "categorie": "Géographie",
+      "question": "Quel lac écossais abriterait un monstre ?",
+      "reponse": "Le Loch Ness",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le continent le plus peuplé ?",
+      "reponse": "L'Asie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
       "question": "Dans quelle ville trouve-t-on la basilique Saint-Pierre ?",
       "reponse": "Rome (Vatican)",
       "niveau": 2,
@@ -105,54 +123,15 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on un très grand bâtiment de plusieurs dizaines d'étages ?",
-      "reponse": "Un gratte-ciel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le continent le plus peuplé ?",
-      "reponse": "L'Asie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
       "question": "Quel pays est célèbre pour ses tacos et ses sombreros ?",
       "reponse": "Le Mexique",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel lac écossais abriterait un monstre ?",
-      "reponse": "Le Loch Ness",
+      "question": "Comment appelle-t-on le grand bâtiment d'où décollent les avions ?",
+      "reponse": "Un aéroport",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville du Québec accueille chaque été le Festival de la poutine ?",
-      "reponse": "Drummondville",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Machu Picchu, cité perdue des Incas ?",
-      "reponse": "Le Pérou",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel lac canadien est le plus profond ?",
-      "reponse": "Lac des Esclaves",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Géographie",
@@ -167,13 +146,19 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel fleuve traverse Rome ?",
-      "reponse": "Le Tibre",
+      "question": "Quel lac canadien est le plus profond ?",
+      "reponse": "Lac des Esclaves",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve le Taj Mahal ?",
+      "reponse": "L'Inde",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
@@ -188,19 +173,25 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on une montagne qui crache de la lave ?",
-      "reponse": "Un volcan",
-      "niveau": 1
+      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
+      "reponse": "L'Alberta",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de la Turquie ?",
-      "reponse": "Ankara",
+      "question": "Quel fleuve traverse Rome ?",
+      "reponse": "Le Tibre",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une montagne qui crache de la lave ?",
+      "reponse": "Un volcan",
+      "niveau": 1
     }
   ]
 }

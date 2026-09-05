@@ -7,116 +7,21 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Culture générale",
-      "question": "Quel sculpteur a créé Le Penseur ?",
-      "reponse": "Rodin",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument de flûtes de longueurs différentes se joue en soufflant à leur bord ?",
-      "reponse": "La flûte de Pan",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on l'objet doré remis à l'équipe championne ?",
-      "reponse": "Un trophée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle grande horloge domine Londres ?",
-      "reponse": "Big Ben",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de côtés a un triangle ?",
-      "reponse": "Trois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel abri de toile monté chaque automne protège l'entrée de garage ?",
-      "reponse": "Un abri Tempo",
+      "categorie": "Histoire",
+      "question": "Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?",
+      "reponse": "Le cheval de Troie",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel amuseur en habit à grelots faisait rire le roi ?",
-      "reponse": "Un bouffon",
+      "question": "Quel conquérant macédonien atteignit l'Inde ?",
+      "reponse": "Alexandre le Grand",
       "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Qui est surnommé le roi de la pop ?",
-      "reponse": "Michael Jackson",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel accessoire redonne de l'énergie à un téléphone à plat ?",
-      "reponse": "Un chargeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel meuble de la classe range les effets de l'élève ?",
-      "reponse": "Un pupitre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel sucre trouve-t-on dans le sang ?",
-      "reponse": "Le glucose",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du croissant ?",
-      "reponse": "La France",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
-      "reponse": "Willie Lamothe",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie en faire tout un fromage ?",
-      "reponse": "Exagérer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel vêtement long et épais protège du froid de janvier ?",
-      "reponse": "Un manteau d'hiver",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle cité grecque était célèbre pour ses guerriers ?",
-      "reponse": "Sparte",
+      "question": "Quel ustensile troué égoutte les pâtes ?",
+      "reponse": "La passoire",
       "niveau": 2
     },
     {
@@ -131,9 +36,62 @@
       ]
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de haut ?",
+      "reponse": "Bas",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'air d'une chanson, celui qu'on fredonne ?",
+      "reponse": "La mélodie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel géant des contes crie qu'il sent la chair fraîche ?",
+      "reponse": "L'ogre",
+      "niveau": 2
+    },
+    {
       "categorie": "Sports",
-      "question": "Quel pays a gagné le plus de médailles olympiques au total ?",
-      "reponse": "Les États-Unis",
+      "question": "Combien de styles de nage existe-t-il en compétition ?",
+      "reponse": "Quatre",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de côtés a un triangle ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie en faire tout un fromage ?",
+      "reponse": "Exagérer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle poupée blonde de Mattel a un ami nommé Ken ?",
+      "reponse": "Barbie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel vêtement long et épais protège du froid de janvier ?",
+      "reponse": "Un manteau d'hiver",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle particule positive loge dans le noyau ?",
+      "reponse": "Le proton",
       "niveau": 1,
       "ages": [
         "ados",
@@ -142,21 +100,64 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de haut ?",
-      "reponse": "Bas",
-      "niveau": 1
+      "categorie": "Culture générale",
+      "question": "Quel sculpteur a créé Le Penseur ?",
+      "reponse": "Rodin",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile troué égoutte les pâtes ?",
-      "reponse": "La passoire",
+      "categorie": "Sports",
+      "question": "Combien de joueurs par équipe au volleyball ?",
+      "reponse": "Six",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Qui est surnommé le roi de la pop ?",
+      "reponse": "Michael Jackson",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel abri de toile monté chaque automne protège l'entrée de garage ?",
+      "reponse": "Un abri Tempo",
       "niveau": 2
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel bâtiment à grandes ailes tournait au vent pour moudre le blé ?",
-      "reponse": "Un moulin à vent",
+      "categorie": "Sciences et nature",
+      "question": "Quelle énergie vient des barrages ?",
+      "reponse": "L'hydroélectricité",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on une photo qu'on prend de soi-même à bout de bras ?",
+      "reponse": "Un égoportrait (selfie)",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle grande horloge domine Londres ?",
+      "reponse": "Big Ben",
       "niveau": 1
     },
     {
@@ -167,30 +168,31 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Langue parlée au Mexique ?",
-      "reponse": "L'espagnol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel mammifère australien a un bec de canard ?",
-      "reponse": "L'ornithorynque",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Kenya ?",
-      "reponse": "Nairobi",
+      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
+      "reponse": "Le maelstrom",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle cité antique a été détruite par le Vésuve ?",
+      "reponse": "Pompéi",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine du croissant ?",
+      "reponse": "La France",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville des États-Unis ?",
+      "reponse": "New York",
+      "niveau": 1
     }
   ]
 }

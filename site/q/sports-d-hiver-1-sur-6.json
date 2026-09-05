@@ -127,13 +127,13 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
-      "reponse": "Lululemon",
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
+      "reponse": "L'inlandsis",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -154,10 +154,14 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel chant patriotique ouvre les matchs de hockey au Canada ?",
-      "reponse": "L'hymne national",
-      "niveau": 2
+      "categorie": "Culture pop",
+      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
+      "reponse": "Lululemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Québec",
@@ -172,15 +176,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
-      "reponse": "Le ballon-balai",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la neige soulevée par le vent qui coupe la visibilité ?",
+      "reponse": "La poudrerie",
+      "niveau": 2
     }
   ]
 }

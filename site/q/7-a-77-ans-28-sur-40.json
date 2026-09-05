@@ -8,8 +8,8 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "À quelle température l'eau gèle-t-elle ?",
-      "reponse": "0 degré C",
+      "question": "Le Soleil est-il une planète ou une étoile ?",
+      "reponse": "Une étoile",
       "niveau": 1
     },
     {
@@ -24,24 +24,15 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel chanteur incarnait Danny dans Grease ?",
-      "reponse": "John Travolta",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle danse glissée a rendu célèbre Michael Jackson ?",
+      "reponse": "Le moonwalk",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays a un drapeau avec une étoile de David ?",
-      "reponse": "Israël",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Capitale de la Chine ?",
+      "reponse": "Pékin",
+      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
@@ -83,9 +74,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel petit instrument à vent se souffle avec la bouche dans le blues et le folk ?",
-      "reponse": "L'harmonica",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quels trois étages composent le pâté chinois ?",
+      "reponse": "Bœuf maïs patates",
       "niveau": 1
     },
     {
@@ -96,9 +87,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
-      "reponse": "Quatre ans",
-      "niveau": 1
+      "question": "Dans quelle cage combattent les athlètes de l'UFC ?",
+      "reponse": "L'octogone",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Mots et langue",
@@ -108,20 +104,24 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel roi anglais légendaire aurait retiré une épée d'un rocher ?",
-      "reponse": "Le roi Arthur",
+      "question": "Quelle maladie a confiné la planète entière au printemps 2020 ?",
+      "reponse": "La COVID-19",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel objet frappe-t-on au hockey ?",
-      "reponse": "La rondelle",
-      "niveau": 1
+      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
+      "reponse": "Montréal",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal à huit pattes tisse une toile ?",
-      "reponse": "L'araignée",
+      "question": "Combien de pattes a un oiseau ?",
+      "reponse": "Deux",
       "niveau": 1
     },
     {
@@ -138,8 +138,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la secousse qui fait trembler le sol ?",
-      "reponse": "Un tremblement de terre",
+      "question": "Quel pays voisin du Québec se trouve juste au sud ?",
+      "reponse": "Les États-Unis",
       "niveau": 1
     },
     {
@@ -161,14 +161,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle nage s'effectue sur le dos ?",
-      "reponse": "Le dos crawlé",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?",
-      "reponse": "Un chaudron d'or",
+      "question": "Combien de joueurs par équipe au soccer ?",
+      "reponse": "Onze",
       "niveau": 1
     },
     {
@@ -178,10 +172,20 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quels trois étages composent le pâté chinois ?",
-      "reponse": "Bœuf maïs patates",
+      "categorie": "Culture générale",
+      "question": "Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?",
+      "reponse": "Un chaudron d'or",
       "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur incarnait Danny dans Grease ?",
+      "reponse": "John Travolta",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",

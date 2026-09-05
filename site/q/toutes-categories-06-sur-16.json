@@ -7,64 +7,9 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel espion maladroit est l'agent 86 ?",
-      "reponse": "Maxwell Smart",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel cantique de Noël d'origine autrichienne est le plus traduit au monde ?",
-      "reponse": "Douce nuit",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel océan gelé entoure le pôle Nord ?",
-      "reponse": "L'océan Arctique",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot qui a plusieurs sens ?",
-      "reponse": "Polysémique",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quels sont les deux héros de Toy Story ?",
-      "reponse": "Woody et Buzz",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel reptile porte une carapace sur son dos ?",
-      "reponse": "La tortue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs sur la glace par équipe au hockey ?",
-      "reponse": "Six",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se tient le grand carnaval de Rio ?",
-      "reponse": "Le Brésil",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle arme de bois courbé propulsait des flèches avant les armes à feu ?",
-      "reponse": "Un arc",
+      "categorie": "Culture pop",
+      "question": "Quel jeu de tour en bois s'effondre quand on retire la mauvaise pièce ?",
+      "reponse": "Jenga",
       "niveau": 1
     },
     {
@@ -79,21 +24,15 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quelle forme n'a ni coin ni côté ?",
-      "reponse": "Le cercle",
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la construction qui permet de traverser une rivière ?",
+      "reponse": "Un pont",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la chouette de Harry Potter ?",
-      "reponse": "Hedwige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur de hockey est surnommé La Merveille ?",
-      "reponse": "Wayne Gretzky",
+      "categorie": "Mots et langue",
+      "question": "Quelle organisation regroupe les pays francophones ?",
+      "reponse": "La Francophonie",
       "niveau": 1,
       "ages": [
         "ados",
@@ -102,9 +41,48 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle bombe a frappé Hiroshima en 1945 ?",
-      "reponse": "La bombe atomique",
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
+      "reponse": "Un sauveteur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on l'objet qu'on tient à deux mains pour jouer à une console ?",
+      "reponse": "La manette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat péruvien est du poisson cru mariné ?",
+      "reponse": "Le ceviche",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la saison qui suit la saison régulière au hockey ?",
+      "reponse": "Les séries éliminatoires",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a inventé le World Wide Web ?",
+      "reponse": "Tim Berners-Lee",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Tous les combien d'années a lieu la Coupe du monde de soccer ?",
+      "reponse": "Quatre ans",
       "niveau": 1,
       "ages": [
         "ados",
@@ -119,10 +97,47 @@
       "niveau": 1
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Quelle petite marque au milieu du ventre reste du cordon ombilical ?",
+      "reponse": "Le nombril",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel espion maladroit est l'agent 86 ?",
+      "reponse": "Maxwell Smart",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture générale",
-      "question": "Qui a inventé le World Wide Web ?",
-      "reponse": "Tim Berners-Lee",
+      "question": "Quelle forme n'a ni coin ni côté ?",
+      "reponse": "Le cercle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on un mot qui a plusieurs sens ?",
+      "reponse": "Polysémique",
       "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quels carrés croustillants se versent dans un bol avec du lait le matin ?",
+      "reponse": "Les céréales",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel musicien aveugle a chanté Georgia on My Mind ?",
+      "reponse": "Ray Charles",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -139,78 +154,60 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on au Québec la coupe de cheveux courte devant et longue derrière ?",
-      "reponse": "La coupe Longueuil",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle organisation regroupe les pays francophones ?",
-      "reponse": "La Francophonie",
+      "categorie": "Musique",
+      "question": "Quelle expression du Roi Lion signifie « sans souci » en swahili ?",
+      "reponse": "Hakuna Matata",
       "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat péruvien est du poisson cru mariné ?",
-      "reponse": "Le ceviche",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quel élément le diamant est-il composé ?",
-      "reponse": "Le carbone",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel musicien aveugle a chanté Georgia on My Mind ?",
-      "reponse": "Ray Charles",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
-      "reponse": "Quatre ans",
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on l'ensemble des histoires des dieux et des héros grecs ?",
+      "reponse": "La mythologie",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel petit pingouin de dessin animé porte une salopette et va à la garderie ?",
-      "reponse": "T'choupi",
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne borde le Pacifique ?",
+      "reponse": "Colombie-Britannique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la planète la plus éloignée du Soleil ?",
+      "reponse": "Neptune",
       "niveau": 2,
       "ages": [
-        "enfants"
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quels carrés croustillants se versent dans un bol avec du lait le matin ?",
-      "reponse": "Les céréales",
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle la chouette de Harry Potter ?",
+      "reponse": "Hedwige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le deuxième homme à marcher sur la Lune ?",
+      "reponse": "Buzz Aldrin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quels sont les deux héros de Toy Story ?",
+      "reponse": "Woody et Buzz",
       "niveau": 1
     }
   ]

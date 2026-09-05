@@ -8,9 +8,9 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?",
-      "reponse": "Jeanne Mance",
-      "niveau": 2,
+      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
+      "reponse": "Trudeau",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -19,46 +19,98 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
-      "reponse": "Radio Enfer",
+      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
+      "reponse": "La fin de semaine des Patriotes",
       "niveau": 3,
       "ages": [
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne parle surtout français ?",
-      "reponse": "Le Québec",
+      "question": "Quel pays a la feuille d'érable sur son drapeau ?",
+      "reponse": "Le Canada",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
-      "reponse": "Le smoked meat",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant du Saguenay ?",
-      "reponse": "Un Saguenéen",
-      "niveau": 2,
+      "categorie": "Musique",
+      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
+      "reponse": "La podorythmie",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle émission québécoise a des fauteuils qui pivotent ?",
+      "reponse": "La Voix",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
-      "reponse": "Le REM",
+      "question": "Quel monologuiste québécois a écrit « Les unions, qu'ossa donne ? »",
+      "reponse": "Yvon Deschamps",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
+      "reponse": "Montréal",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne est voisine du Québec, à l'est, avec Fredericton pour capitale ?",
+      "reponse": "Le Nouveau-Brunswick",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
+      "reponse": "Rue des Pignons",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
+      "reponse": "Les Boys",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois jaser ?",
+      "reponse": "Bavarder",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
+      "reponse": "Josée di Stasio",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes du Québec attire les skieurs au nord de Montréal ?",
+      "reponse": "Les Laurentides",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -70,139 +122,78 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle rivière célèbre coule à Ottawa ?",
-      "reponse": "L'Outaouais",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat québécois cuit des haricots blancs au four ?",
-      "reponse": "Fèves au lard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la longue période où d'immenses glaciers recouvraient le Québec ?",
-      "reponse": "La période glaciaire",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel mot québécois désigne les bonbons ?",
-      "reponse": "Des nananes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
-      "reponse": "Watatatow",
+      "categorie": "Musique",
+      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
+      "reponse": "Bleu Jeans Bleu",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?",
-      "reponse": "Le Canadien",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles galettes du déjeuner arrose-t-on de sirop d'érable ?",
-      "reponse": "Les crêpes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on les chutes situées juste à côté de la ville de Québec ?",
-      "reponse": "Les chutes Montmorency",
-      "niveau": 2
-    },
-    {
       "categorie": "Histoire",
-      "question": "Quelle embarcation d'écorce servait aux déplacements en Nouvelle-France ?",
-      "reponse": "Le canot d'écorce",
+      "question": "Quelle bataille de 1759 a fait passer Québec aux mains des Britanniques ?",
+      "reponse": "La bataille des plaines d'Abraham",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
-      "reponse": "Cracké",
-      "niveau": 3,
+      "question": "Quel personnage rouge et blanc à tuque se cache dans des foules dessinées ?",
+      "reponse": "Charlie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant de Montréal ?",
+      "reponse": "Un Montréalais",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boulette de patates est un plat acadien ?",
+      "reponse": "Poutine râpée",
+      "niveau": 2,
       "ages": [
-        "enfants",
-        "ados"
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel festival de musique se tient chaque été au parc Jean-Drapeau à Montréal ?",
-      "reponse": "Osheaga",
+      "question": "Quel groupe québécois chante Toune d'automne ?",
+      "reponse": "Cowboys Fringants",
       "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
+      "reponse": "Michel Louvain",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle feuille rouge orne le drapeau du Canada ?",
+      "reponse": "La feuille d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
+      "reponse": "Radio Enfer",
+      "niveau": 3,
+      "ages": [
         "adultes"
       ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel pain rond troué se mange grillé avec du fromage à la crème ?",
-      "reponse": "Le bagel",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on au Québec la coupe de cheveux courte devant et longue derrière ?",
-      "reponse": "La coupe Longueuil",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
-      "reponse": "Les Plouffe",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel quotidien québécois porte le nom d'une obligation morale ?",
-      "reponse": "Le Devoir",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pilote québécois a donné son nom au circuit de Montréal ?",
-      "reponse": "Gilles Villeneuve",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu garnit les muffins et les tartes au Québec ?",
-      "reponse": "Le bleuet",
-      "niveau": 1
     }
   ]
 }

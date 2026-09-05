@@ -30,21 +30,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
-      "reponse": "L'épinette",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
       "question": "Dans quel pays vivent les kangourous ?",
       "reponse": "L'Australie",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la plus petite province canadienne ?",
-      "reponse": "Prince-Édouard",
-      "niveau": 1
+      "question": "Quelle est la plus grande île du monde ?",
+      "reponse": "Le Groenland",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -70,14 +69,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel objet en forme de boule qui tourne montre tous les pays du monde ?",
-      "reponse": "Le globe terrestre",
-      "niveau": 1
+      "question": "Comment appelle-t-on la vaste plaine d'herbe où broutent les bisons ?",
+      "reponse": "La prairie",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouvent les pyramides et le Sphinx ?",
-      "reponse": "L'Égypte",
+      "question": "Dans quelle province se trouve Montréal ?",
+      "reponse": "Le Québec",
       "niveau": 1
     },
     {
@@ -99,15 +98,59 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la vaste plaine d'herbe où broutent les bisons ?",
-      "reponse": "La prairie",
-      "niveau": 2
+      "question": "Quel objet en forme de boule qui tourne montre tous les pays du monde ?",
+      "reponse": "Le globe terrestre",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
       "question": "Capitale des États-Unis ?",
       "reponse": "Washington",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouvent les pyramides et le Sphinx ?",
+      "reponse": "L'Égypte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville d'Australie ?",
+      "reponse": "Sydney",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Vietnam ?",
+      "reponse": "Hanoï",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le village où l'on cultive la terre et élève des animaux ?",
+      "reponse": "Une ferme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne sépare l'Europe de l'Asie ?",
+      "reponse": "L'Oural",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -133,39 +176,6 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale du Vietnam ?",
-      "reponse": "Hanoï",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la grande route à plusieurs voies entre deux villes ?",
-      "reponse": "Une autoroute",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne sépare l'Europe de l'Asie ?",
-      "reponse": "L'Oural",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on la savane, les lions et les girafes en liberté ?",
-      "reponse": "Le Kenya",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
       "question": "Langue parlée au Mexique ?",
       "reponse": "L'espagnol",
       "niveau": 1
@@ -174,17 +184,6 @@
       "categorie": "Géographie",
       "question": "Quelle île française a vu naître Napoléon ?",
       "reponse": "La Corse",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville d'Australie ?",
-      "reponse": "Sydney",
       "niveau": 2,
       "ages": [
         "ados",
@@ -205,14 +204,15 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve l'Acropole ?",
-      "reponse": "La Grèce",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Dans quel pays d'Afrique se trouve la grande réserve du Masai Mara ?",
+      "reponse": "Le Kenya",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel point le plus au sud de la Terre est couvert de glace ?",
+      "reponse": "Le pôle Sud",
+      "niveau": 1
     }
   ]
 }

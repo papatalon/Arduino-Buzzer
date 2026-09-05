@@ -8,8 +8,65 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quelle petite radio portative à pile a libéré la musique des salons ?",
-      "reponse": "Le transistor",
+      "question": "Quelle héroïne à pois rouges combat le crime à Paris avec Chat Noir ?",
+      "reponse": "Ladybug",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
+      "reponse": "Les oreilles de lapin",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
+      "reponse": "Radio Enfer",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on le petit film tourné pour accompagner une chanson ?",
+      "reponse": "Un vidéoclip",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle machine d'arcade vitrée fait descendre une griffe sur des peluches ?",
+      "reponse": "La machine à pinces",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet de papier mâché rempli de bonbons se frappe les yeux bandés ?",
+      "reponse": "La piñata",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
+      "reponse": "Michel Louvain",
       "niveau": 3,
       "ages": [
         "aines"
@@ -17,14 +74,95 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle boule couverte de miroirs tourne au plafond des soirées dansantes ?",
-      "reponse": "La boule disco",
+      "question": "Quelle marque québécoise fabrique les Jos Louis et les May West ?",
+      "reponse": "Vachon",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel trèfle rare porte chance quand on le trouve ?",
+      "reponse": "Le trèfle à quatre feuilles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Sur quelle machine tapait-on une lettre avant l'ordinateur ?",
+      "reponse": "La machine à écrire",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quels écouteurs sans fil blancs se rangent dans un petit boîtier ?",
+      "reponse": "Les AirPods",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles espadrilles de toile montantes portent une étoile sur la cheville ?",
+      "reponse": "Les Converse",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
+      "reponse": "Watatatow",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de voitures allemande a quatre anneaux entrelacés ?",
+      "reponse": "Audi",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on le collant coloré donné en récompense dans un cahier ?",
+      "reponse": "Un autocollant",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel bonbon acidulé se vend en poudre avec un petit bâton à tremper ?",
+      "reponse": "Le Fun Dip",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles pastilles de chocolat colorées se vendent en boîte cylindrique ?",
+      "reponse": "Les Smarties",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -38,180 +176,51 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu se joue à deux avec des pions noirs et blancs qu'on saute pour les prendre ?",
-      "reponse": "Les dames",
+      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
+      "reponse": "Lululemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission jeunesse québécoise est revenue à la télé en 2019, trente ans après ?",
+      "reponse": "Passe-Partout",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu se joue à deux avec le pouce pour immobiliser celui de l'autre ?",
+      "reponse": "La lutte de pouces",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
-      "reponse": "Dominique Michel et Denise Filiatrault",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magazine hebdomadaire publiait les horaires de télévision au Québec ?",
-      "reponse": "Le TV Hebdo",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel ballon rempli d'hélium s'envole si on lâche la ficelle ?",
-      "reponse": "Un ballon gonflable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle fillette rousse aux nattes tressées est la plus forte du monde ?",
-      "reponse": "Fifi Brindacier",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel quotidien montréalais a cessé son édition papier en 2018 pour passer à la tablette ?",
-      "reponse": "La Presse",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel trèfle rare porte chance quand on le trouve ?",
-      "reponse": "Le trèfle à quatre feuilles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?",
-      "reponse": "Luca",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle friandise glacée se vend en tube de plastique à congeler ?",
-      "reponse": "Le Mr. Freeze",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle activité de party fait chanter sur une musique en lisant les paroles à l'écran ?",
-      "reponse": "Le karaoké",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de jeans a été créée pour les chercheurs d'or ?",
-      "reponse": "Levi's",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans quel jeu lance-t-on des oiseaux sur des cochons avec un lance-pierre ?",
-      "reponse": "Angry Birds",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle pharmacie québécoise promet qu'on y trouve de tout, même un ami ?",
-      "reponse": "Jean Coutu",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission matinale de TVA réveille le Québec en semaine ?",
-      "reponse": "Salut Bonjour",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel panier passait dans les rangs pendant la messe du dimanche ?",
-      "reponse": "La quête",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle plateforme loue le logement d'un particulier pour des vacances ?",
-      "reponse": "Airbnb",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel casse-tête coloré à six faces se replace en tournant ses rangées ?",
-      "reponse": "Le Rubik's Cube",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jouet roule sur des rails miniatures autour du sapin ?",
-      "reponse": "Un train électrique",
+      "question": "Quelle boisson en poudre se mélange à l'eau et se boit très sucrée ?",
+      "reponse": "Le Kool-Aid",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel petit être ailé exauce parfois des vœux dans les contes ?",
-      "reponse": "Une fée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel rassemblement de percussionnistes a lieu au pied du mont Royal le dimanche ?",
-      "reponse": "Les tam-tams",
-      "niveau": 3,
+      "question": "Quel jeu de poche en noir et blanc faisait vivre un animal virtuel ?",
+      "reponse": "Le Tamagotchi",
+      "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on une photo qu'on prend de soi-même à bout de bras ?",
-      "reponse": "Un égoportrait (selfie)",
+      "question": "Quel cahier propose des dessins à remplir sans dépasser ?",
+      "reponse": "Un livre à colorier",
       "niveau": 1
     }
   ]

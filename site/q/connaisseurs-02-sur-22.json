@@ -7,15 +7,46 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Que fait un musicien qui règle son instrument avant de jouer ?",
-      "reponse": "Accorder",
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
+      "reponse": "Un divulgâcheur",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays d'Afrique se trouve la grande réserve du Masai Mara ?",
+      "reponse": "Le Kenya",
       "niveau": 3
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle émission de Radio-Canada vulgarise la science le dimanche soir ?",
-      "reponse": "Découverte",
+      "categorie": "Québec",
+      "question": "Quelle ville se proclame capitale mondiale de l'érable ?",
+      "reponse": "Plessisville",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle est la voix féminine la plus grave ?",
+      "reponse": "L'alto (contralto)",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel roi du blues appelait sa guitare Lucille ?",
+      "reponse": "B.B. King",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -24,24 +55,77 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
-      "reponse": "Une joute",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel champignon rouge à pois blancs des contes pousse dans les forêts ?",
-      "reponse": "L'amanite tue-mouches",
+      "question": "Qui fut la première femme dans l'espace ?",
+      "reponse": "Valentina Terechkova",
       "niveau": 3,
       "ages": [
         "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle île de Montréal accueille le parc d'attractions La Ronde ?",
+      "reponse": "L'île Sainte-Hélène",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel savant italien a affirmé que la Terre tourne autour du Soleil ?",
+      "reponse": "Galilée",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de cour d'école fait sauter en tapant dans les mains d'un partenaire ?",
+      "reponse": "La tape-tape",
+      "niveau": 3,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson brésilienne mélange lime et cachaça ?",
+      "reponse": "La caipirinha",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
+      "reponse": "Le Jolly Roger",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Qui livrait les bouteilles de lait à la porte des maisons ?",
+      "reponse": "Le laitier",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?",
+      "reponse": "La lessiveuse à tordeur",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Combien de kilomètres fait un triathlon olympique à vélo ?",
-      "reponse": "40",
+      "question": "Quel sport pratique la famille Hart de Calgary ?",
+      "reponse": "La lutte",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -50,8 +134,57 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe féminin sud-coréen a chanté Kill This Love ?",
-      "reponse": "Blackpink",
+      "question": "Quelle chanteuse folk canadienne a écrit Big Yellow Taxi ?",
+      "reponse": "Joni Mitchell",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Où logeait le curé de la paroisse ?",
+      "reponse": "Au presbytère",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
+      "reponse": "L'escalier Casse-Cou",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel ancêtre du piano pince ses cordes au lieu de les frapper ?",
+      "reponse": "Le clavecin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu électronique rond répète une suite de couleurs et de sons à imiter ?",
+      "reponse": "Le Simon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse américaine a chanté Espresso en 2024 ?",
+      "reponse": "Sabrina Carpenter",
       "niveau": 3,
       "ages": [
         "enfants",
@@ -59,173 +192,54 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel parc animalier du Lac-Saint-Jean se visite à bord d'un train grillagé ?",
-      "reponse": "Le zoo de Saint-Félicien",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on un extrait de chanson repris dans une autre chanson ?",
-      "reponse": "Un échantillon",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Histoire",
-      "question": "Quel siège de trois cents Spartiates a eu lieu dans un défilé étroit ?",
-      "reponse": "Les Thermopyles",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel casque de métal protégeait la tête du chevalier ?",
-      "reponse": "Un heaume",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel grand magasin canadien publiait un catalogue attendu chaque année ?",
-      "reponse": "Eaton",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
-      "reponse": "Le smoked meat",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel site de mode en ligne inonde le marché de vêtements à très bas prix ?",
-      "reponse": "Shein",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
-      "reponse": "L'épinette",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel compositeur russe a écrit Casse-Noisette ?",
-      "reponse": "Tchaïkovski",
+      "question": "Quelle ville canadienne fut dévastée par une explosion en 1917 ?",
+      "reponse": "Halifax",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel bâton orné le roi tient-il en main comme signe de son pouvoir ?",
-      "reponse": "Le sceptre",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de cordelette passe de mains en mains en formant des figures géométriques ?",
-      "reponse": "Le jeu de la ficelle",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à cordes indien a un très long manche ?",
-      "reponse": "Le sitar",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles billes de plastique s'ouvrent en figurine au contact d'une carte ?",
-      "reponse": "Les Bakugan",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
-      "reponse": "Loft Story",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil de chauffage exigeait qu'on remplisse la boîte à bois ?",
-      "reponse": "Le poêle à bois",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson Blanche-Neige chante-t-elle près du puits en attendant l'amour ?",
-      "reponse": "Un jour mon prince viendra",
-      "niveau": 3
     },
     {
       "categorie": "Québec",
-      "question": "Quelle équipe de hockey junior joue au Centre Vidéotron de Québec ?",
-      "reponse": "Les Remparts",
+      "question": "Quel congé de mai précède la saison du jardinage au Québec ?",
+      "reponse": "La journée nationale des patriotes",
       "niveau": 3,
       "ages": [
-        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle gomme rose se vendait avec une petite bande dessinée dans l'emballage ?",
+      "reponse": "La Bazooka",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle armée de statues garde le tombeau du premier empereur chinois ?",
-      "reponse": "L'armée de terre cuite",
+      "question": "Quelle jeune fille a écrit un journal en se cachant à Amsterdam pendant la guerre ?",
+      "reponse": "Anne Frank",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe américain a chanté Mr. Brightside ?",
+      "reponse": "The Killers",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Suisse ?",
-      "reponse": "Berne",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
       ]
     }
   ]

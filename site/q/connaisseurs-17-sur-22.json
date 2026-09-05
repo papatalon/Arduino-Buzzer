@@ -8,46 +8,11 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quelle figure de note vaut quatre temps, la plus longue de toutes ?",
-      "reponse": "La ronde",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de billes rouges au snooker ?",
-      "reponse": "Quinze",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Sur quel support les Mésopotamiens gravaient-ils leur écriture avec un roseau ?",
-      "reponse": "Les tablettes d'argile",
+      "question": "Quel instrument à cordes indien a un très long manche ?",
+      "reponse": "Le sitar",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel nom porte le jalapeño fumé ?",
-      "reponse": "Chipotle",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style jamaïcain a précédé le reggae ?",
-      "reponse": "Le ska",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
@@ -63,40 +28,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
-      "reponse": "Le Village Vacances Valcartier",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel artiste québécois a fait sensation avec l'album Darlène ?",
-      "reponse": "Hubert Lenoir",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Toto porte le nom d'un continent ?",
-      "reponse": "Africa",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel long fleuve traverse la Chine ?",
-      "reponse": "Le Yangtsé",
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
+      "reponse": "La dionée",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -105,58 +39,27 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
-      "reponse": "Traité de Paris",
+      "question": "En quelle année l'euro est-il entré en circulation ?",
+      "reponse": "2002",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne de café québécoise porte le nom de son fondateur ?",
-      "reponse": "Van Houtte",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?",
-      "reponse": "Le yéyé",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle échelle mesure la dureté des minéraux ?",
-      "reponse": "Mohs",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation japonais suit une fillette prisonnière d'un bain public d'esprits ?",
-      "reponse": "Le Voyage de Chihiro",
+      "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
+      "reponse": "Les Plouffe",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "aines"
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel papillon est l'insecte emblème du Québec ?",
-      "reponse": "L'amiral",
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve Petra, la cité rose ?",
+      "reponse": "La Jordanie",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -165,17 +68,47 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
-      "reponse": "Watatatow",
+      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
+      "reponse": "Les oreilles de lapin",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
+      "reponse": "Les Classels",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit âne de dessin animé français est très curieux ?",
+      "reponse": "Trotro",
+      "niveau": 3,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de cirque marche sur un fil tendu en hauteur ?",
+      "reponse": "Le funambulisme",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel pays entoure complètement le Lesotho ?",
-      "reponse": "Afrique du Sud",
+      "categorie": "Histoire",
+      "question": "Quel traité de 1992 a créé l'Union européenne ?",
+      "reponse": "Maastricht",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -184,8 +117,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel rappeur américain a reçu un prix Pulitzer pour un album ?",
-      "reponse": "Kendrick Lamar",
+      "question": "Quelle chanson de Daft Punk répète qu'on est plus fort, meilleur et plus rapide ?",
+      "reponse": "Harder, Better, Faster, Stronger",
       "niveau": 3,
       "ages": [
         "ados",
@@ -193,9 +126,28 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle femme pharaon portait une fausse barbe cérémoniale ?",
-      "reponse": "Hatchepsout",
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
+      "reponse": "Loft Story",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
+      "reponse": "Nézet-Séguin",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de symphonies Beethoven a-t-il composées ?",
+      "reponse": "Neuf",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -204,26 +156,45 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel chansonnier a écrit Quand les hommes vivront d'amour ?",
-      "reponse": "Raymond Lévesque",
+      "question": "Comment appelle-t-on la longue route de campagne bordée de fermes au Québec ?",
+      "reponse": "Un rang",
+      "niveau": 3
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat libanais est une purée d'aubergines fumées ?",
+      "reponse": "Baba ganouj",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel magasin à rayons offrait un comptoir-lunch où manger un hot-dog ?",
-      "reponse": "Woolworth",
+      "question": "Dans quel jeu de société conquiert-on des territoires sur une carte du monde ?",
+      "reponse": "Le Risk",
       "niveau": 3,
       "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel mur antique protégeait l'Angleterre romaine ?",
-      "reponse": "Mur d'Hadrien",
+      "question": "Sur quel support les Mésopotamiens gravaient-ils leur écriture avec un roseau ?",
+      "reponse": "Les tablettes d'argile",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la répétition d'un son au début des mots ?",
+      "reponse": "Une allitération",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -231,21 +202,43 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
-      "reponse": "Dans l'œil du dragon",
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les cent ans d'un événement qu'on souligne par une fête ?",
+      "reponse": "Un centenaire",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
+      "reponse": "La Norvège",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel duo américain à la batterie et au clavier a chanté Stressed Out ?",
+      "reponse": "Twenty One Pilots",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Combien de pays ont le français comme langue officielle : 9, 29 ou 59 ?",
-      "reponse": "29",
+      "categorie": "Culture pop",
+      "question": "Quel effet corrige et robotise la voix d'un chanteur en studio ?",
+      "reponse": "L'autotune",
       "niveau": 3,
       "ages": [
-        "adultes",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel poète québécois a écrit L'homme rapaillé ?",
+      "reponse": "Gaston Miron",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     }

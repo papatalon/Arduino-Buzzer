@@ -18,9 +18,14 @@
     },
     {
       "categorie": "Musique",
-      "question": "Sur quel pont danse-t-on tous en rond dans la chanson ?",
-      "reponse": "Le pont d'Avignon",
-      "niveau": 1
+      "question": "Quelle chanson anglaise fait toucher la tête, les épaules, les genoux et les orteils ?",
+      "reponse": "Head and Shoulders",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Québec",
@@ -54,32 +59,21 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport fait rouler une planche sur des rampes dans un parc ?",
-      "reponse": "La planche à roulettes",
+      "question": "Quelle carte l'arbitre de soccer montre-t-il pour avertir un joueur ?",
+      "reponse": "Un carton jaune",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la construction qui permet de traverser une rivière ?",
-      "reponse": "Un pont",
+      "question": "Quel fleuve traverse Paris ?",
+      "reponse": "La Seine",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Que portaient les chevaliers pour protéger leur corps au combat ?",
-      "reponse": "Une armure",
+      "categorie": "Mots et langue",
+      "question": "Petit du mouton ?",
+      "reponse": "L'agneau",
       "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel festival d'humour a lieu à Montréal ?",
-      "reponse": "Juste pour rire",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -93,15 +87,31 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Petit du mouton ?",
-      "reponse": "L'agneau",
-      "niveau": 1
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle semoule accompagne les plats du Maghreb ?",
+      "reponse": "Le couscous",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment s'appelle le plus gros tambour d'une fanfare ?",
-      "reponse": "La grosse caisse",
+      "categorie": "Québec",
+      "question": "Quel festival d'humour a lieu à Montréal ?",
+      "reponse": "Juste pour rire",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple scandinave naviguait sur des drakkars ?",
+      "reponse": "Les Vikings",
       "niveau": 1
     },
     {
@@ -112,20 +122,25 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel jeu de gymnase oppose deux équipes qui se lancent des ballons pour éliminer les autres ?",
-      "reponse": "Le ballon chasseur",
+      "question": "Quel sport de combat japonais se pratique pieds nus en kimono blanc ?",
+      "reponse": "Le karaté",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la capitale de la province de Québec ?",
-      "reponse": "La ville de Québec",
-      "niveau": 1
+      "question": "Quelle île canadienne a inspiré Anne aux pignons verts ?",
+      "reponse": "Prince-Édouard",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel mammifère marin sauteur siffle et vit en groupe ?",
-      "reponse": "Le dauphin",
+      "question": "Quel instrument grossit les objets proches ?",
+      "reponse": "La loupe",
       "niveau": 1
     },
     {
@@ -152,15 +167,10 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle semoule accompagne les plats du Maghreb ?",
-      "reponse": "Le couscous",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Musique",
+      "question": "Sur quel pont danse-t-on tous en rond dans la chanson ?",
+      "reponse": "Le pont d'Avignon",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
@@ -176,8 +186,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelles parties de l'arbre changent de couleur en automne ?",
-      "reponse": "Les feuilles",
+      "question": "Quel grand singe est le plus proche de l'homme ?",
+      "reponse": "Le chimpanzé",
       "niveau": 1
     }
   ]

@@ -7,6 +7,66 @@
   "emoji": "🎲",
   "questions": [
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
+      "reponse": "Bugs Bunny",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Que pleut-il sur la patinoire quand un joueur compte trois buts dans le même match ?",
+      "reponse": "Des chapeaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel outil de fer servait à abattre les arbres pour défricher la terre ?",
+      "reponse": "La hache",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel symbole lumineux surplombe le mont Royal ?",
+      "reponse": "La croix",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir un chat dans la gorge ?",
+      "reponse": "Être enroué",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel site de vente en ligne a une flèche souriante dans son logo ?",
+      "reponse": "Amazon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien de provinces compte le Canada ?",
+      "reponse": "Dix",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve le Machu Picchu, cité perdue des Incas ?",
+      "reponse": "Le Pérou",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus petite unité du vivant ?",
+      "reponse": "La cellule",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois jaser ?",
+      "reponse": "Bavarder",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture générale",
       "question": "Quelle romancière a créé Hercule Poirot ?",
       "reponse": "Agatha Christie",
@@ -17,125 +77,32 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
-      "reponse": "Bugs Bunny",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil garde la crème glacée bien dure ?",
+      "reponse": "Le congélateur",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel métal précieux conduit le mieux l'électricité ?",
-      "reponse": "L'argent",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus long fleuve du Canada ?",
-      "reponse": "Le Mackenzie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal fut le premier en orbite ?",
-      "reponse": "La chienne Laïka",
-      "niveau": 2
+      "categorie": "Culture générale",
+      "question": "Combien font deux plus deux ?",
+      "reponse": "Quatre",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel appareil branche la guitare électrique pour faire sortir le son ?",
-      "reponse": "L'amplificateur",
+      "question": "Comment appelle-t-on la petite pièce de plastique qui gratte les cordes ?",
+      "reponse": "Le médiator",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?",
-      "reponse": "Le Bossu de Notre-Dame",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la peluche dont un enfant ne se sépare jamais ?",
-      "reponse": "Une doudou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Dans quel bâtiment fortifié vivaient les rois et les reines du Moyen Âge ?",
-      "reponse": "Un château",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel symbole lumineux surplombe le mont Royal ?",
-      "reponse": "La croix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel premier ministre britannique fumait le cigare pendant la guerre ?",
-      "reponse": "Churchill",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois jaser ?",
-      "reponse": "Bavarder",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
-      "reponse": "Lululemon",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
-      "reponse": "Une fusée",
-      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
-      "reponse": "Le CF Montréal",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
-      "reponse": "Le club sandwich",
+      "question": "Quel sport se joue avec un ballon rond qu'on frappe du pied dans un but ?",
+      "reponse": "Le soccer",
       "niveau": 1
     },
     {
@@ -150,19 +117,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Langue parlée en Égypte ?",
-      "reponse": "L'arabe",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?",
+      "reponse": "Le pont Champlain",
+      "niveau": 3
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle comptine raconte un reptile qui part à la guerre en disant au revoir à ses enfants ?",
-      "reponse": "Ah! les crocodiles",
+      "categorie": "Histoire",
+      "question": "Quel bâtiment de bois entouré d'une palissade protégeait les postes de traite ?",
+      "reponse": "Le fort",
       "niveau": 2
     },
     {
@@ -172,38 +134,45 @@
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
-      "reponse": "Le kitesurf",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir un chat dans la gorge ?",
-      "reponse": "Être enroué",
+      "categorie": "Culture pop",
+      "question": "Quel jouet de plastique danois s'assemble par petits picots ?",
+      "reponse": "Le Lego",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle tour de fer domine Paris ?",
-      "reponse": "La tour Eiffel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien font deux plus deux ?",
-      "reponse": "Quatre",
+      "categorie": "Musique",
+      "question": "Quelle comptine ajoute un éléphant de plus sur une toile d'araignée ?",
+      "reponse": "Un éléphant qui se balançait",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel appareil garde la crème glacée bien dure ?",
-      "reponse": "Le congélateur",
+      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
+      "reponse": "Le club sandwich",
       "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène lumineux accompagne le tonnerre ?",
+      "reponse": "L'éclair",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que porte un astronaute pour survivre dans l'espace ?",
+      "reponse": "Un scaphandre",
+      "niveau": 3
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?",
+      "reponse": "Le Bossu de Notre-Dame",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     }
   ]
 }

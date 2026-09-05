@@ -8,8 +8,48 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Quel désert couvre le sud-ouest africain ?",
-      "reponse": "Le Kalahari",
+      "question": "Comment appelle-t-on la terre gelée sans arbres du Grand Nord ?",
+      "reponse": "La toundra",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que porte un astronaute pour survivre dans l'espace ?",
+      "reponse": "Un scaphandre",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?",
+      "reponse": "La Station spatiale internationale",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
+      "reponse": "Le kitesurf",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
+      "reponse": "Le smoked meat",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on les grandes îles du golfe où l'on va en traversier l'été ?",
+      "reponse": "Les Îles-de-la-Madeleine",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel gros livre illustré arrivait par la poste et faisait rêver avant Noël ?",
+      "reponse": "Le catalogue",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -18,44 +58,18 @@
     },
     {
       "categorie": "Musique",
-      "question": "Sur quel support incliné le musicien pose-t-il sa partition ?",
-      "reponse": "Un lutrin",
+      "question": "Comment appelle-t-on un extrait de chanson repris dans une autre chanson ?",
+      "reponse": "Un échantillon",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année l'euro est-il entré en circulation ?",
-      "reponse": "2002",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument de bois à trous se joue en travers des lèvres ?",
-      "reponse": "La flûte traversière",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse folk canadienne a écrit Big Yellow Taxi ?",
-      "reponse": "Joni Mitchell",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle pédale du piano prolonge les notes après qu'on a levé les doigts ?",
-      "reponse": "La pédale forte",
+      "question": "Quel instrument de navigation mesurait la hauteur des astres sur l'horizon ?",
+      "reponse": "Le sextant",
       "niveau": 3,
       "ages": [
         "ados",
@@ -64,122 +78,144 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel grand musée du Vieux-Port de Québec a ouvert ses portes en 1988 ?",
-      "reponse": "Le Musée de la civilisation",
+      "categorie": "Culture pop",
+      "question": "Quel bonbon acidulé se vend en poudre avec un petit bâton à tremper ?",
+      "reponse": "Le Fun Dip",
       "niveau": 3,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle ville se proclame capitale mondiale de l'érable ?",
-      "reponse": "Plessisville",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
-      "reponse": "La guignolée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel pays a un drapeau non rectangulaire ?",
-      "reponse": "Le Népal",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
-      "reponse": "Radio Enfer",
+      "question": "Quelle peluche électronique aux grands yeux parlait toute seule en 1998 ?",
+      "reponse": "Le Furby",
       "niveau": 3,
       "ages": [
         "adultes"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jeu télévisé opposait des équipes d'élèves du secondaire ?",
-      "reponse": "Génies en herbe",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle bénédiction le père de famille donnait-il aux siens le matin du 1er janvier ?",
-      "reponse": "La bénédiction paternelle",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?",
-      "reponse": "Le sextant",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Que rapportait-on à l'épicerie pour récupérer quelques sous ?",
-      "reponse": "Les bouteilles vides",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel accessoire rembourré élargissait les épaules des vestons dans les années 80 ?",
-      "reponse": "L'épaulette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'Égyptien qui savait écrire, un métier rare et respecté ?",
-      "reponse": "Un scribe",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel petit navire rapide Christophe Colomb utilisait-il pour ses voyages ?",
-      "reponse": "Une caravelle",
-      "niveau": 3
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Qui collectionne les pièces de monnaie ?",
-      "reponse": "Un numismate",
+      "question": "Masculin d'abeille ?",
+      "reponse": "Le faux bourdon",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
+      "reponse": "La podorythmie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Qui a inventé le basketball ?",
+      "reponse": "James Naismith",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on celui qui exploite une érablière ?",
+      "reponse": "Un acériculteur",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel panier passait dans les rangs pendant la messe du dimanche ?",
+      "reponse": "La quête",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel artiste a mêlé country et rap dans Old Town Road ?",
+      "reponse": "Lil Nas X",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
+      "reponse": "L'autoroute 40",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?",
+      "reponse": "Le Bossu de Notre-Dame",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel chansonnier a écrit Quand les hommes vivront d'amour ?",
+      "reponse": "Raymond Lévesque",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année le Canada a-t-il adopté son drapeau actuel ?",
+      "reponse": "1965",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à percussion se joue avec les mains sur deux tambours accolés ?",
+      "reponse": "Les bongos",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?",
+      "reponse": "L'écoute en rafale",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -195,49 +231,11 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sirop doré anglais vient de la canne ?",
-      "reponse": "Golden syrup",
+      "categorie": "Culture pop",
+      "question": "Quel capitaine de la télé jeunesse racontait des histoires invraisemblables avec ses invisibles ?",
+      "reponse": "Le Capitaine Bonhomme",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la couche de glace qui se forme au bord des toits ?",
-      "reponse": "Une barrière de glace",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne borde le Québec à l'est, avec Moncton ?",
-      "reponse": "Le Nouveau-Brunswick",
-      "niveau": 3
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?",
-      "reponse": "Le Bossu de Notre-Dame",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle gymnaste a obtenu le premier 10 parfait ?",
-      "reponse": "Nadia Comăneci",
-      "niveau": 3,
-      "ages": [
-        "adultes",
         "aines"
       ]
     }

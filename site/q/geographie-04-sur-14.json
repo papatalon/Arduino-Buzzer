@@ -8,21 +8,9 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Dans quel sens le soleil se lève-t-il ?",
-      "reponse": "À l'est",
+      "question": "Dans quelle direction le soleil se couche-t-il ?",
+      "reponse": "À l'ouest",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle région du Québec est célèbre pour ses bleuets ?",
-      "reponse": "Le Lac-Saint-Jean",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le décalage d'heure entre Montréal et Paris ?",
-      "reponse": "Le décalage horaire",
-      "niveau": 3
     },
     {
       "categorie": "Géographie",
@@ -37,14 +25,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle saison fait fleurir les arbres et fondre la neige ?",
-      "reponse": "Le printemps",
-      "niveau": 1
+      "question": "Comment appelle-t-on les régions chaudes situées près de l'équateur ?",
+      "reponse": "Les tropiques",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays les vaches sont-elles sacrées ?",
-      "reponse": "L'Inde",
+      "question": "Comment appelle-t-on un très grand bâtiment de plusieurs dizaines d'étages ?",
+      "reponse": "Un gratte-ciel",
       "niveau": 1
     },
     {
@@ -60,14 +48,20 @@
     },
     {
       "categorie": "Géographie",
+      "question": "Quel énorme bloc de calcaire troué se dresse dans la mer en Gaspésie ?",
+      "reponse": "Le rocher Percé",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
       "question": "Quel océan borde la côte ouest du Canada ?",
       "reponse": "Le Pacifique",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'endroit où les bateaux accostent ?",
-      "reponse": "Un port",
+      "question": "Comment appelle-t-on la construction qui permet de traverser une rivière ?",
+      "reponse": "Un pont",
       "niveau": 1
     },
     {
@@ -94,6 +88,18 @@
     },
     {
       "categorie": "Géographie",
+      "question": "Dans quel pays les vaches sont-elles sacrées ?",
+      "reponse": "L'Inde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
+      "reponse": "L'Ontario",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
       "question": "Capitale de la Nouvelle-Écosse ?",
       "reponse": "Halifax",
       "niveau": 2,
@@ -102,12 +108,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
-      "reponse": "L'Ontario",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -128,8 +128,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la carte du monde en forme de boule qui tourne sur un pied ?",
-      "reponse": "Un globe terrestre",
+      "question": "Comment appelle-t-on l'eau salée qu'on ne peut pas boire ?",
+      "reponse": "L'eau de mer",
       "niveau": 1
     },
     {
@@ -178,25 +178,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle grande baie d'eau salée s'ouvre au nord-ouest du Québec ?",
-      "reponse": "La baie James",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se dresse le Kilimandjaro ?",
-      "reponse": "L'Afrique",
+      "question": "Quelle tour de fer domine Paris ?",
+      "reponse": "La tour Eiffel",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle ville se trouve la tour Eiffel ?",
-      "reponse": "Paris",
+      "question": "Dans quelle ville se dresse la statue de la Liberté ?",
+      "reponse": "New York",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ligne imaginaire sépare l'hémisphère nord de l'hémisphère sud ?",
+      "reponse": "L'équateur",
       "niveau": 1
     },
     {

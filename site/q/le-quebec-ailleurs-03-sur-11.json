@@ -7,20 +7,43 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
-      "reponse": "Loud",
-      "niveau": 3,
+      "categorie": "Culture pop",
+      "question": "Quelle émission jeunesse québécoise est revenue à la télé en 2019, trente ans après ?",
+      "reponse": "Passe-Partout",
+      "niveau": 2,
       "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle fleur bleue orne le drapeau du Québec ?",
-      "reponse": "La fleur de lys",
+      "categorie": "Culture pop",
+      "question": "Quelle série policière québécoise porte le numéro d'un poste de police ?",
+      "reponse": "District 31",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel repas québécois correspond au dîner français ?",
+      "reponse": "Le souper",
       "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël québécois reprend l'air de Jingle Bells ?",
+      "reponse": "Vive le vent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
+      "reponse": "L'hémisphère nord",
+      "niveau": 3
     },
     {
       "categorie": "Culture pop",
@@ -33,16 +56,26 @@
       ]
     },
     {
+      "categorie": "Sports",
+      "question": "Quel numéro portait Maurice Richard ?",
+      "reponse": "9",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas québécois se mange le midi ?",
+      "reponse": "Le dîner",
+      "niveau": 1
+    },
+    {
       "categorie": "Histoire",
-      "question": "Quelle bataille de 1759 a fait passer Québec aux mains des Britanniques ?",
-      "reponse": "La bataille des plaines d'Abraham",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de croustilles québécoise répète deux fois la même syllabe ?",
-      "reponse": "Yum Yum",
-      "niveau": 2,
+      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
+      "reponse": "Un missionnaire",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -50,168 +83,150 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quels tambours se frappent en cercle dans les parcs de Montréal le dimanche ?",
-      "reponse": "Les tam-tams",
-      "niveau": 2
-    },
-    {
       "categorie": "Géographie",
-      "question": "Quel pays a la feuille d'érable sur son drapeau ?",
-      "reponse": "Le Canada",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission jeunesse québécoise est revenue à la télé en 2019, trente ans après ?",
-      "reponse": "Passe-Partout",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle animatrice québécoise animait Le Banquier ?",
-      "reponse": "Julie Snyder",
+      "question": "Quelle rivière célèbre coule à Ottawa ?",
+      "reponse": "L'Outaouais",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Qui était le gérant et le mari de Céline Dion ?",
-      "reponse": "René Angélil",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
-      "reponse": "Dans une galaxie près de chez vous",
+      "question": "Quelle émission québécoise fait juger des numéros de danse par des maîtres ?",
+      "reponse": "Révolution",
       "niveau": 3,
       "ages": [
-        "adultes"
+        "ados",
+        "adultes",
+        "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle montagne se dresse au milieu de Montréal ?",
-      "reponse": "Le mont Royal",
-      "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a une voix puissante et chante Un peu plus haut ?",
-      "reponse": "Ginette Reno",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
-      "reponse": "Steinberg",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel gardien québécois a popularisé le style papillon ?",
-      "reponse": "Patrick Roy",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
-      "reponse": "Loft Story",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle baie géante borde le nord du Québec ?",
-      "reponse": "Baie d'Hudson",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel grand festival de musique se tient sur les plaines d'Abraham en juillet ?",
-      "reponse": "Le Festival d'été de Québec",
+      "question": "Quelle chanson de Céline Dion ouvre par une flûte irlandaise ?",
+      "reponse": "My Heart Will Go On",
       "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
+      "reponse": "Olivier Guimond",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel poisson fumé garnit le bagel classique ?",
+      "reponse": "Le saumon fumé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
+      "reponse": "Caillou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle carte à puce sert à payer le métro et l'autobus à Montréal ?",
+      "reponse": "La carte Opus",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
+      "reponse": "Klô Pelgag",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle animatrice québécoise est surnommée Véro ?",
+      "reponse": "Véronique Cloutier",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois remplace « chat » pour une conversation écrite en ligne ?",
+      "reponse": "Le clavardage",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
+      "reponse": "Watatatow",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet orange envahit les rues de Montréal chaque été ?",
+      "reponse": "Le cône",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de café québécoise porte le nom de son fondateur ?",
+      "reponse": "Van Houtte",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chansonnier a écrit Mon pays ?",
+      "reponse": "Gilles Vigneault",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
-      "reponse": "Le Banquier",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle plongeuse québécoise a gagné l'argent à Tokyo ?",
-      "reponse": "Jennifer Abel",
+      "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
+      "reponse": "Les Plouffe",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise fait cohabiter des célibataires devant les caméras ?",
-      "reponse": "Occupation Double",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle province se trouve Montréal ?",
-      "reponse": "Le Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur québécois a chanté Le petit roi ?",
-      "reponse": "Jean-Pierre Ferland",
-      "niveau": 2,
-      "ages": [
-        "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel duo de La Petite Vie dort debout ?",
-      "reponse": "Popa et Moman",
-      "niveau": 1
     }
   ]
 }

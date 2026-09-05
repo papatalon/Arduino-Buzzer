@@ -14,20 +14,25 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle vague géante suit parfois un séisme ?",
-      "reponse": "Le tsunami",
+      "question": "Quel organe contrôle tout le corps ?",
+      "reponse": "Le cerveau",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel chant de Noël québécois reprend l'air de Jingle Bells ?",
-      "reponse": "Vive le vent",
-      "niveau": 1
+      "question": "Comment nomme-t-on la vitesse d'un morceau ?",
+      "reponse": "Le tempo",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel document marqué d'un X indique où le trésor est enterré ?",
-      "reponse": "Une carte au trésor",
+      "question": "Quel gros reptile a disparu de la Terre il y a des millions d'années ?",
+      "reponse": "Un dinosaure",
       "niveau": 1
     },
     {
@@ -43,15 +48,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel jouet tourne sur lui-même quand on le lance ?",
-      "reponse": "La toupie",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit rouge se cueille sur un buisson piquant et se coiffe au bout du doigt ?",
+      "reponse": "La framboise",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Combien de cordes sur une guitare classique ?",
-      "reponse": "Six",
+      "categorie": "Culture générale",
+      "question": "Quel jouet tourne sur lui-même quand on le lance ?",
+      "reponse": "La toupie",
       "niveau": 1
     },
     {
@@ -62,8 +67,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays d'Europe est célèbre pour ses montres, son chocolat et ses Alpes ?",
-      "reponse": "La Suisse",
+      "question": "Quelle montagne se dresse au milieu de Montréal ?",
+      "reponse": "Le mont Royal",
       "niveau": 1
     },
     {
@@ -74,31 +79,26 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle activité consiste à marcher longtemps sur des sentiers en forêt ou en montagne ?",
-      "reponse": "La randonnée",
+      "question": "Quel équipement large attaché aux pieds empêche de caler dans la neige épaisse ?",
+      "reponse": "Les raquettes",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel appareil transforme le vent en électricité ?",
-      "reponse": "L'éolienne",
+      "question": "Quel est le seul mammifère volant ?",
+      "reponse": "La chauve-souris",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Combien de trous compte un parcours de golf complet ?",
-      "reponse": "18",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel sport frappe une petite balle blanche vers un trou avec un drapeau ?",
+      "reponse": "Le golf",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le train qui circule sous la ville ?",
-      "reponse": "Le métro",
+      "question": "Comment appelle-t-on la grande route à plusieurs voies entre deux villes ?",
+      "reponse": "Une autoroute",
       "niveau": 1
     },
     {
@@ -119,21 +119,21 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit rouge se cueille sur un buisson piquant et se coiffe au bout du doigt ?",
-      "reponse": "La framboise",
+      "categorie": "Culture générale",
+      "question": "Quel véhicule roule sur des rails ?",
+      "reponse": "Le train",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël québécois reprend l'air de Jingle Bells ?",
+      "reponse": "Vive le vent",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
       "question": "Que signifie coûter les yeux de la tête ?",
       "reponse": "Coûter très cher",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel véhicule roule sur des rails ?",
-      "reponse": "Le train",
       "niveau": 1
     },
     {
@@ -154,14 +154,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle activité d'hiver descend une pente sur un traîneau ou une chambre à air ?",
-      "reponse": "La glissade",
+      "question": "Comment nomme-t-on trois buts d'un même joueur ?",
+      "reponse": "Un tour du chapeau",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est l'animal terrestre le plus rapide ?",
-      "reponse": "Le guépard",
+      "question": "Quel reptile peut vivre plus de 150 ans ?",
+      "reponse": "La tortue géante",
       "niveau": 1
     },
     {

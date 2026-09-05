@@ -7,9 +7,44 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Histoire",
+      "question": "Quel explorateur portugais a contourné l'Afrique en 1498 ?",
+      "reponse": "Vasco de Gama",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle quincaillerie québécoise portait un prénom dans son enseigne ?",
+      "reponse": "Pascal",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le service réussi que l'adversaire ne touche pas au tennis ?",
+      "reponse": "Un as",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année eut lieu la bataille de Waterloo ?",
+      "reponse": "1815",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Musique",
-      "question": "Quel instrument à vent se joue en soufflant dans une anche double, au son nasillard ?",
-      "reponse": "Le hautbois",
+      "question": "Sur quel support incliné le musicien pose-t-il sa partition ?",
+      "reponse": "Un lutrin",
       "niveau": 3,
       "ages": [
         "ados",
@@ -19,14 +54,18 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel chant de Noël fait résonner un long « Gloria » repris par tout le monde ?",
-      "reponse": "Les anges dans nos campagnes",
-      "niveau": 3
+      "question": "Quelle chanteuse acadienne a popularisé Évangéline ?",
+      "reponse": "Annie Blanchard",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Capitale de la Turquie ?",
-      "reponse": "Ankara",
+      "categorie": "Musique",
+      "question": "Quel compositeur baroque a écrit les Concertos brandebourgeois ?",
+      "reponse": "Bach",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -44,36 +83,70 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel groupe progressif québécois a fait L'Heptade ?",
-      "reponse": "Harmonium",
+      "categorie": "Histoire",
+      "question": "Quelle construction de béton a coupé une capitale allemande en deux jusqu'en 1989 ?",
+      "reponse": "Le mur de Berlin",
       "niveau": 3,
       "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
-      "reponse": "Steinberg",
+      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
+      "reponse": "Le Village Vacances Valcartier",
       "niveau": 3,
       "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport combine le ski de fond et le tir à la carabine ?",
-      "reponse": "Le biathlon",
-      "niveau": 3
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la femelle du sanglier ?",
+      "reponse": "La laie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la voix masculine aiguë des grands airs d'opéra ?",
-      "reponse": "Le ténor",
+      "categorie": "Histoire",
+      "question": "Quel bâton orné le roi tient-il en main comme signe de son pouvoir ?",
+      "reponse": "Le sceptre",
       "niveau": 3,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Dans Pierre et le loup, quel instrument joue le loup ?",
+      "reponse": "Le cor",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?",
+      "reponse": "Une corde de bois",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus grande lune de Saturne ?",
+      "reponse": "Titan",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -85,69 +158,42 @@
       "niveau": 3
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?",
-      "reponse": "Le télescope James Webb",
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le décalage d'heure entre Montréal et Paris ?",
+      "reponse": "Le décalage horaire",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quels petits élastiques colorés se tressent en bracelets sur un métier ?",
+      "reponse": "Les Rainbow Loom",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "enfants",
+        "ados"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
-      "reponse": "Les Baronets",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les grandes pierres dressées et posées à plat par les hommes préhistoriques ?",
-      "reponse": "Un dolmen",
+      "question": "Quelle plateforme loue le logement d'un particulier pour des vacances ?",
+      "reponse": "Airbnb",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles cigarettes de bonbon blanches portaient le nom d'un marin costaud ?",
-      "reponse": "Les Popeye",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle bataille de 1066 a livré l'Angleterre aux Normands ?",
-      "reponse": "Hastings",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel secteur de Montréal regroupe salles de spectacle et festivals au centre-ville ?",
-      "reponse": "Le Quartier des spectacles",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "question": "Quel biscuit québécois à la mélasse se trempe dans le lait ?",
+      "reponse": "La galette à la mélasse",
+      "niveau": 3
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film coréen de 2019 est devenu le premier film non anglophone à gagner l'Oscar du meilleur film ?",
-      "reponse": "Parasite",
+      "categorie": "Histoire",
+      "question": "Quelle armée de statues garde le tombeau du premier empereur chinois ?",
+      "reponse": "L'armée de terre cuite",
       "niveau": 3,
       "ages": [
         "ados",
@@ -156,46 +202,18 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle fosse océanique est la plus profonde ?",
-      "reponse": "Les Mariannes",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
-      "reponse": "Le Wordle",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a traversé l'Atlantique en avion solo en 1927 ?",
-      "reponse": "Lindbergh",
+      "question": "Quel désert couvre le sud-ouest africain ?",
+      "reponse": "Le Kalahari",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit oiseau à calotte noire fréquente les mangeoires du Québec tout l'hiver ?",
-      "reponse": "La mésange",
-      "niveau": 3
     },
     {
       "categorie": "Musique",
-      "question": "Quel tambour métallique vient de Trinité ?",
-      "reponse": "Le steel drum",
+      "question": "Quel appareil enregistrait la musique sur une bande dans les années 80 ?",
+      "reponse": "Une cassette",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -204,39 +222,17 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
-      "reponse": "Josée di Stasio",
+      "question": "Quel petit disque contenait une chanson de chaque côté ?",
+      "reponse": "Le 45 tours",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de cœurs possède un ver de terre ?",
-      "reponse": "Cinq",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'échange de fourrures contre des marchandises européennes ?",
-      "reponse": "La traite des fourrures",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
-      "reponse": "La fin de semaine des Patriotes",
+      "question": "Quel jeu télévisé opposait des équipes d'élèves du secondaire ?",
+      "reponse": "Génies en herbe",
       "niveau": 3,
       "ages": [
         "adultes",

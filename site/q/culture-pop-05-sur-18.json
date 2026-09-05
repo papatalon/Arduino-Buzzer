@@ -8,20 +8,44 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quel manège fait tourner des chevaux de bois en musique ?",
-      "reponse": "Un carrousel",
+      "question": "Quelle chaîne de hamburgers porte un titre royal dans son nom ?",
+      "reponse": "Burger King",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jouet de cour d'école tourne pendant qu'on bondit par-dessus ?",
-      "reponse": "Une corde à sauter",
-      "niveau": 1
+      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
+      "reponse": "Cracké",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle ardoise à deux boutons dessine des traits et s'efface en la secouant ?",
-      "reponse": "Le Télécran",
+      "question": "Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?",
+      "reponse": "L'écoute en rafale",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel descripteur de hockey a marqué des générations par son français impeccable ?",
+      "reponse": "René Lecavalier",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission de Radio-Canada vulgarise la science le dimanche soir ?",
+      "reponse": "Découverte",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -30,45 +54,29 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel carré noir et blanc se scanne avec la caméra du téléphone ?",
-      "reponse": "Un code QR",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle activité enferme un groupe devant des énigmes à résoudre avant la fin du temps ?",
-      "reponse": "Un jeu d'évasion",
-      "niveau": 3,
+      "question": "Quel petit pingouin de dessin animé porte une salopette et va à la garderie ?",
+      "reponse": "T'choupi",
+      "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
+        "enfants"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle attraction de parc aquatique fait descendre un long tube en spirale ?",
-      "reponse": "La glissade d'eau",
+      "question": "Quel appareil à deux boutons permet de se parler à distance en disant « à toi » ?",
+      "reponse": "Le walkie-talkie",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel véhicule tiré par des rennes livre les cadeaux ?",
-      "reponse": "Un traîneau",
+      "question": "Quel jouet à figure humaine s'habille et se coiffe ?",
+      "reponse": "Une poupée",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle prière se récitait en famille à la radio, chaque soir, dans les années 50 ?",
-      "reponse": "Le chapelet",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil blanc d'Apple faisait tourner la musique avec une molette ?",
-      "reponse": "Le iPod",
+      "question": "Quelle marque de motoneige est née au Québec ?",
+      "reponse": "Ski-Doo",
       "niveau": 2,
       "ages": [
         "ados",
@@ -78,15 +86,9 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
-      "reponse": "Une sirène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel endroit permet de sauter d'un mur à l'autre sur des toiles tendues ?",
-      "reponse": "Un parc de trampolines",
-      "niveau": 2,
+      "question": "Quelle console de jeu vidéo est fabriquée par Microsoft ?",
+      "reponse": "La Xbox",
+      "niveau": 1,
       "ages": [
         "enfants",
         "ados",
@@ -95,71 +97,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission québécoise fait juger des numéros de danse par des maîtres ?",
-      "reponse": "Révolution",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle tablette de chocolat porte un nom qui évoque le café ?",
-      "reponse": "Le Coffee Crisp",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la photo prise chaque année avec tous les élèves d'un groupe ?",
-      "reponse": "La photo de classe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature à écailles crache du feu et garde un trésor ?",
-      "reponse": "Un dragon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jouet d'été arrose les amis d'un jet d'eau ?",
-      "reponse": "Un pistolet à eau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage au nez rouge et aux souliers immenses fait rire les enfants ?",
-      "reponse": "Un clown",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Que porte-t-on sur le visage pour ne pas être reconnu à l'Halloween ?",
-      "reponse": "Un masque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de chocolat suisse a la forme d'une montagne ?",
-      "reponse": "Toblerone",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil de chauffage exigeait qu'on remplisse la boîte à bois ?",
-      "reponse": "Le poêle à bois",
+      "question": "Quelle cartouche de musique se glissait dans le tableau de bord des autos des années 70 ?",
+      "reponse": "Le huit-pistes",
       "niveau": 3,
       "ages": [
         "aines"
@@ -167,20 +106,82 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel guépard en lunettes fumées vend des croustilles au fromage ?",
-      "reponse": "Chester Cheetah",
+      "question": "Quelle technologie sans fil relie des écouteurs à un téléphone à quelques mètres ?",
+      "reponse": "Le Bluetooth",
       "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
+      "reponse": "La ceinture fléchée",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magasin à un dollar a été fondé à Matane en 1992 ?",
+      "reponse": "Dollarama",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
+      "reponse": "Le Forum",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel lapin rose à lunettes fumées bat du tambour pour vendre des piles ?",
+      "reponse": "Le lapin Energizer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de hamburgers canadienne garnit le pain devant le client ?",
+      "reponse": "Harvey's",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans Encanto, de qui la famille refuse-t-elle de parler ?",
+      "reponse": "Bruno",
+      "niveau": 1,
       "ages": [
         "enfants",
-        "ados",
-        "adultes"
+        "ados"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de poche en noir et blanc faisait vivre un animal virtuel ?",
-      "reponse": "Le Tamagotchi",
-      "niveau": 2,
+      "question": "Quel jeu de cartes fait réunir des familles complètes en les demandant aux autres ?",
+      "reponse": "Le jeu des sept familles",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
+      "reponse": "Josée di Stasio",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
@@ -188,19 +189,30 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on l'habit qu'on enfile pour se transformer en personnage ?",
-      "reponse": "Un déguisement",
+      "question": "Quelle chatte rose ouvre une maison de poupées dans une série de Netflix ?",
+      "reponse": "Gabby",
+      "niveau": 2,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de vêtements de sport a une virgule pour logo ?",
+      "reponse": "Nike",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel service de vélos en libre-service porte un nom de trois lettres à Montréal ?",
-      "reponse": "Bixi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "question": "Quelle chaîne de crème glacée molle trempe ses cornets dans le chocolat ?",
+      "reponse": "Dairy Queen",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu fait deviner un mot lettre par lettre en dessinant un bonhomme ?",
+      "reponse": "Le pendu",
+      "niveau": 1
     }
   ]
 }

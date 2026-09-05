@@ -7,9 +7,18 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel appareil enregistrait la musique sur une bande dans les années 80 ?",
-      "reponse": "Une cassette",
+      "categorie": "Culture pop",
+      "question": "Quel revêtement de sol en rouleau couvrait les cuisines avant le plancher flottant ?",
+      "reponse": "Le prélart",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
+      "reponse": "Le maelstrom",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -18,8 +27,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Qui fut la première femme première ministre du Canada ?",
-      "reponse": "Kim Campbell",
+      "question": "Sur quelle île Napoléon est-il mort ?",
+      "reponse": "Sainte-Hélène",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -27,9 +36,9 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel grand rendez-vous de novembre réunit éditeurs et auteurs au Palais des congrès de Montréal ?",
-      "reponse": "Le Salon du livre",
+      "categorie": "Mots et langue",
+      "question": "Quelle science étudie l'origine et l'histoire des mots ?",
+      "reponse": "L'étymologie",
       "niveau": 3,
       "ages": [
         "ados",
@@ -38,10 +47,94 @@
       ]
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Quel métal précieux conduit le mieux l'électricité ?",
+      "reponse": "L'argent",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle cantatrice grecque fut surnommée la Divina ?",
+      "reponse": "Maria Callas",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle fête de juin invite les gens d'une même rue à se rassembler ?",
+      "reponse": "La fête des voisins",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
+      "reponse": "Le 7 Jours",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
+      "reponse": "Bleu Jeans Bleu",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel est l'arbre emblème du Québec ?",
+      "reponse": "Le bouleau jaune",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur a popularisé le twist ?",
+      "reponse": "Chubby Checker",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte russe est un petit chausson farci ?",
+      "reponse": "Le pirojki",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
-      "reponse": "La Norvège",
-      "niveau": 3
+      "question": "Quel fleuve traverse Rome ?",
+      "reponse": "Le Tibre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
@@ -53,15 +146,45 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on un groupe d'abeilles qui se déplace en nuage ?",
-      "reponse": "Un essaim",
-      "niveau": 3
+      "categorie": "Culture pop",
+      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
+      "reponse": "La fin de semaine des Patriotes",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le marin posté en haut du mât pour surveiller l'horizon ?",
+      "reponse": "La vigie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument de cuivre sonne le réveil dans les camps militaires ?",
-      "reponse": "Le clairon",
+      "question": "Quelle danse argentine se danse joue contre joue avec une rose ?",
+      "reponse": "Le tango",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel fleuve César a-t-il franchi en disant le sort en est jeté ?",
+      "reponse": "Le Rubicon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année le drapeau rouge et blanc du Canada a-t-il été adopté ?",
+      "reponse": "1965",
       "niveau": 3,
       "ages": [
         "ados",
@@ -71,155 +194,18 @@
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année l'URSS a-t-elle disparu ?",
-      "reponse": "1991",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel objet à ressort le professeur de musique frappe-t-il pour donner le la ?",
-      "reponse": "Un diapason",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse américaine a chanté Espresso en 2024 ?",
-      "reponse": "Sabrina Carpenter",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel explorateur a cherché la fontaine de Jouvence en Floride ?",
-      "reponse": "Ponce de León",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel quotidien québécois porte le nom d'une obligation morale ?",
-      "reponse": "Le Devoir",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil fallait-il installer sur le toit pour capter les chaînes de télé ?",
-      "reponse": "L'antenne",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle longue habitation abritait plusieurs familles chez les Iroquoiens ?",
-      "reponse": "La maison longue",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
-      "reponse": "La Bolduc",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Islande ?",
-      "reponse": "Reykjavik",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois jouait le concierge Symphorien ?",
-      "reponse": "Gilles Latulippe",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus grande lune de Saturne ?",
-      "reponse": "Titan",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comptine fait répondre le hibou au coucou, du haut de son grand chêne ?",
-      "reponse": "Dans la forêt lointaine",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'écran qui affiche les paroles pendant un karaoké ?",
-      "reponse": "Le téléprompteur",
+      "question": "Quel rover s'est posé sur Mars en 2012 ?",
+      "reponse": "Curiosity",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quels canots géants transportaient les fourrures ?",
-      "reponse": "Canots de maître",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle infusion sud-africaine est naturellement rouge ?",
-      "reponse": "Le rooibos",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport court dans les bois avec une carte et une boussole ?",
-      "reponse": "La course d'orientation",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu fait deviner des mots à son équipe en trois manches, de plus en plus serrées ?",
-      "reponse": "Le Time's Up",
+      "question": "Quelle plongeuse québécoise a gagné l'argent à Tokyo ?",
+      "reponse": "Jennifer Abel",
       "niveau": 3,
       "ages": [
         "ados",
@@ -227,9 +213,33 @@
       ]
     },
     {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on les cinq lignes sur lesquelles on écrit les notes ?",
+      "reponse": "La portée",
+      "niveau": 3
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle émission du samedi soir diffusait le hockey à Radio-Canada ?",
-      "reponse": "La Soirée du hockey",
+      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
+      "reponse": "Les Denis Drolet",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?",
+      "reponse": "Fanfreluche",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle prière se récitait en famille à la radio, chaque soir, dans les années 50 ?",
+      "reponse": "Le chapelet",
       "niveau": 3,
       "ages": [
         "aines"

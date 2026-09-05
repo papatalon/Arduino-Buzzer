@@ -8,19 +8,14 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quelle danse traditionnelle québécoise se danse à quatre couples sur les appels d'un câlleur ?",
-      "reponse": "Le set carré",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle percussion se joue à mains nues sur deux petits tambours accolés ?",
+      "reponse": "Les bongos",
+      "niveau": 3
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jeu fait bâtir routes et villages en échangeant bois, blé et minerai ?",
-      "reponse": "Les Colons de Catane",
+      "categorie": "Musique",
+      "question": "Quel concours de chant européen réunit les pays chaque printemps ?",
+      "reponse": "L'Eurovision",
       "niveau": 3,
       "ages": [
         "ados",
@@ -28,9 +23,59 @@
       ]
     },
     {
+      "categorie": "Sports",
+      "question": "Combien de billes rouges au snooker ?",
+      "reponse": "Quinze",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
-      "reponse": "Un divulgâcheur",
+      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
+      "reponse": "La ceinture fléchée",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel quotidien montréalais a cessé son édition papier en 2018 pour passer à la tablette ?",
+      "reponse": "La Presse",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre canadien a dirigé pendant la Seconde Guerre ?",
+      "reponse": "Mackenzie King",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quels canots géants transportaient les fourrures ?",
+      "reponse": "Canots de maître",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de véhicules tout-terrain a une calandre à sept fentes ?",
+      "reponse": "Jeep",
       "niveau": 3,
       "ages": [
         "ados",
@@ -50,18 +95,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?",
-      "reponse": "La capitale du royaume",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?",
-      "reponse": "Un tir de barrage",
+      "question": "Quel musicien voyageur chantait des poèmes de château en château ?",
+      "reponse": "Un troubadour",
       "niveau": 3,
       "ages": [
         "ados",
@@ -70,9 +105,38 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle merveille du monde antique éclairait l'entrée d'un port égyptien ?",
-      "reponse": "Le phare d'Alexandrie",
+      "categorie": "Musique",
+      "question": "Quel trompettiste avait les joues gonflées célèbres ?",
+      "reponse": "Dizzy Gillespie",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel compositeur français a écrit le Boléro ?",
+      "reponse": "Ravel",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel gratte-ciel de Montréal, en forme de croix, a ouvert en 1962 ?",
+      "reponse": "La Place Ville-Marie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?",
+      "reponse": "La baie James",
       "niveau": 3,
       "ages": [
         "ados",
@@ -82,57 +146,74 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel gros livre illustré arrivait par la poste et faisait rêver avant Noël ?",
-      "reponse": "Le catalogue",
+      "question": "Quelles équipes de sous-marins explorent les océans en secourant les animaux marins ?",
+      "reponse": "Les Octonauts",
+      "niveau": 3,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
+      "reponse": "Pizarro",
       "niveau": 3,
       "ages": [
         "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil de poche vibrait pour dire de rappeler quelqu'un, avant le cellulaire ?",
+      "reponse": "Le téléavertisseur",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on l'ensemble des nobles qui entouraient le roi ?",
+      "reponse": "La cour",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Bon Jovi raconte Tommy et Gina à mi-chemin ?",
+      "reponse": "Livin' on a Prayer",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
+      "reponse": "L'Alberta",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve le Machu Picchu, cité perdue des Incas ?",
+      "reponse": "Le Pérou",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe a chanté Smoke on the Water ?",
+      "reponse": "Deep Purple",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "En quelle année le métro de Montréal a-t-il ouvert ?",
-      "reponse": "1966",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
-      "reponse": "Le maelstrom",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe américain a chanté Mr. Brightside ?",
-      "reponse": "The Killers",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission jeunesse de Radio-Canada ouvrait sur un coffre plein d'histoires ?",
-      "reponse": "La Boîte à surprise",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit boîtier rond de poche contient une maison miniature ?",
-      "reponse": "Le Polly Pocket",
+      "question": "Quelle bibliothèque nationale ouverte en 2005 se dresse près de Berri-UQAM ?",
+      "reponse": "La Grande Bibliothèque",
       "niveau": 3,
       "ages": [
         "ados",
@@ -141,111 +222,21 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel appareil envoyait des messages en points et en traits sur des fils ?",
-      "reponse": "Le télégraphe",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Sur quelle île Napoléon est-il mort ?",
-      "reponse": "Sainte-Hélène",
+      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
+      "reponse": "Traité de Paris",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à vent en bois donne les sons les plus graves de l'orchestre ?",
-      "reponse": "Le basson",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Journey encourage à ne jamais cesser d'y croire ?",
-      "reponse": "Don't Stop Believin'",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle jeune fille a écrit un journal en se cachant à Amsterdam pendant la guerre ?",
-      "reponse": "Anne Frank",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle petite radio portative à pile a libéré la musique des salons ?",
-      "reponse": "Le transistor",
+      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
+      "reponse": "Radio Enfer",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de demi-tons dans une octave ?",
-      "reponse": "Douze",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à soufflet accompagne le tango ?",
-      "reponse": "Le bandonéon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la longue route de campagne bordée de fermes au Québec ?",
-      "reponse": "Un rang",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
-      "reponse": "Mariana Mazza",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la petite colline de sable poussée par le vent au bord de la mer ?",
-      "reponse": "Une dune",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve Petra, la cité rose ?",
-      "reponse": "La Jordanie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
       ]
     }
   ]

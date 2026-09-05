@@ -7,15 +7,16 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert italien contient du café et du mascarpone ?",
-      "reponse": "Le tiramisu",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Musique",
+      "question": "Quel style de musique passe le plus souvent à la radio et fait danser tout le monde ?",
+      "reponse": "La pop",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel dessert de la cabane à sucre se roule sur la neige avec un bâton ?",
+      "reponse": "La tire",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
@@ -25,14 +26,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la formule chimique de l'eau ?",
-      "reponse": "H2O",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style de musique passe le plus souvent à la radio et fait danser tout le monde ?",
-      "reponse": "La pop",
+      "question": "Quel minuscule oiseau peut voler en arrière ?",
+      "reponse": "Le colibri",
       "niveau": 1
     },
     {
@@ -47,27 +42,32 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel dessert de la cabane à sucre se roule sur la neige avec un bâton ?",
-      "reponse": "La tire",
+      "categorie": "Musique",
+      "question": "Quel instrument à soufflet et à touches anime les fêtes de famille ?",
+      "reponse": "L'accordéon",
       "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de glisse se pratique sur une piste avec des bâtons dans les mains ?",
+      "reponse": "Le ski alpin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert italien contient du café et du mascarpone ?",
+      "reponse": "Le tiramisu",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
       "question": "Quel oiseau figure sur la pièce de un dollar canadien ?",
       "reponse": "Le huard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel officiel siffle les punitions ?",
-      "reponse": "L'arbitre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse se pratique en tutu et sur la pointe des pieds ?",
-      "reponse": "Le ballet",
       "niveau": 1
     },
     {
@@ -83,15 +83,21 @@
       "niveau": 1
     },
     {
+      "categorie": "Sports",
+      "question": "Quelle est la nage la plus rapide ?",
+      "reponse": "Le crawl",
+      "niveau": 1
+    },
+    {
       "categorie": "Bouffe et cuisine",
       "question": "Quelle boisson gazeuse brune est née à Atlanta ?",
       "reponse": "Le Coca-Cola",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Combien de roues a une planche à roulettes ?",
-      "reponse": "Quatre",
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir du pain sur la planche ?",
+      "reponse": "Beaucoup de travail",
       "niveau": 1
     },
     {
@@ -117,8 +123,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle rivière célèbre coule à Ottawa ?",
-      "reponse": "L'Outaouais",
+      "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+      "reponse": "Les Pyrénées",
       "niveau": 1,
       "ages": [
         "ados",
@@ -128,19 +134,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle énergie est produite à partir d'uranium ?",
-      "reponse": "Le nucléaire",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir du pain sur la planche ?",
-      "reponse": "Beaucoup de travail",
+      "question": "Qu'est-ce qui fait tourner les éoliennes et voler les cerfs-volants ?",
+      "reponse": "Le vent",
       "niveau": 1
     },
     {
@@ -160,33 +155,33 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le pôle Sud ?",
-      "reponse": "L'Antarctique",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
       "question": "Quel insecte fabrique le miel ?",
       "reponse": "L'abeille",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Combien de lettres muettes dans le mot loup ?",
-      "reponse": "Une",
+      "categorie": "Géographie",
+      "question": "Combien de provinces compte le Canada ?",
+      "reponse": "Dix",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le bandit des mers qui attaquait les navires ?",
-      "reponse": "Un pirate",
+      "question": "Quel empire avait Rome pour capitale ?",
+      "reponse": "L'Empire romain",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
       "question": "Comment appelle-t-on la peluche dont un enfant ne se sépare jamais ?",
       "reponse": "Une doudou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Combien de lettres muettes dans le mot loup ?",
+      "reponse": "Une",
       "niveau": 1
     }
   ]

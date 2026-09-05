@@ -8,8 +8,8 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Que transporte le relais avant les Jeux ?",
-      "reponse": "La flamme olympique",
+      "question": "Quel sport se pratique dans une piscine ?",
+      "reponse": "La natation",
       "niveau": 1
     },
     {
@@ -31,8 +31,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le grand bâtiment d'où décollent les avions ?",
-      "reponse": "Un aéroport",
+      "question": "Quelle baie géante borde le nord du Québec ?",
+      "reponse": "Baie d'Hudson",
       "niveau": 1
     },
     {
@@ -53,9 +53,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit principal compose le ketchup ?",
-      "reponse": "La tomate",
+      "categorie": "Musique",
+      "question": "Quel groupe a chanté Hey Jude et Let It Be ?",
+      "reponse": "Les Beatles",
       "niveau": 1
     },
     {
@@ -66,20 +66,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle ligne imaginaire sépare l'hémisphère nord de l'hémisphère sud ?",
-      "reponse": "L'équateur",
+      "question": "Quel pays a pour emblème le panda ?",
+      "reponse": "La Chine",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel oncle jaloux trahit Mufasa ?",
       "reponse": "Scar",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle forme donne-t-on au poisson pané pour les enfants ?",
-      "reponse": "Des bâtonnets",
       "niveau": 1
     },
     {
@@ -90,8 +84,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le match qui décide du championnat ?",
-      "reponse": "La finale",
+      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
+      "reponse": "Orange",
       "niveau": 1
     },
     {
@@ -101,9 +95,15 @@
       "niveau": 1
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle forme donne-t-on au poisson pané pour les enfants ?",
+      "reponse": "Des bâtonnets",
+      "niveau": 1
+    },
+    {
       "categorie": "Musique",
-      "question": "Quel groupe a chanté Hey Jude et Let It Be ?",
-      "reponse": "Les Beatles",
+      "question": "Quel appareil diffuse de la musique et des nouvelles dans l'auto ?",
+      "reponse": "La radio",
       "niveau": 1
     },
     {
@@ -120,19 +120,20 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel instrument grossit les objets proches ?",
-      "reponse": "La loupe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel constructeur a lancé la Ford T ?",
-      "reponse": "Henry Ford",
+      "question": "Quelle énergie vient des barrages ?",
+      "reponse": "L'hydroélectricité",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on celui qui garde un troupeau de moutons dans les champs ?",
+      "reponse": "Un berger",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -159,20 +160,20 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de bosses a un dromadaire ?",
-      "reponse": "Une",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Queen fait taper des pieds et des mains sur « We will, we will... » ?",
-      "reponse": "We Will Rock You",
+      "question": "Quelle vague géante suit parfois un séisme ?",
+      "reponse": "Le tsunami",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelles gouttes d'eau tombent des nuages ?",
-      "reponse": "La pluie",
+      "question": "Quelle saison vient après l'hiver ?",
+      "reponse": "Le printemps",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit principal compose le ketchup ?",
+      "reponse": "La tomate",
       "niveau": 1
     }
   ]

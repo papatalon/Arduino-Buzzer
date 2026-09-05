@@ -7,9 +7,47 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Quel empire d'Amérique a été conquis par Cortés ?",
-      "reponse": "Les Aztèques",
+      "categorie": "Culture pop",
+      "question": "Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?",
+      "reponse": "Alys Robi",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Maroc ?",
+      "reponse": "Rabat",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument de rue se joue en tournant une manivelle ?",
+      "reponse": "Un orgue de Barbarie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel sous-genre du rap se reconnaît à ses charlestons rapides et ses basses lourdes ?",
+      "reponse": "La trap",
+      "niveau": 3,
+      "ages": [
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
+      "reponse": "Coup de Pouce",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -28,9 +66,15 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle gomme rose se vendait avec une petite bande dessinée dans l'emballage ?",
-      "reponse": "La Bazooka",
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on l'Égyptien qui savait écrire, un métier rare et respecté ?",
+      "reponse": "Un scribe",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui était le dernier tsar de Russie ?",
+      "reponse": "Nicolas II",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -38,8 +82,95 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au water-polo ?",
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les grands ponts qui amenaient l'eau jusqu'aux villes romaines ?",
+      "reponse": "Un aqueduc",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel quotidien québécois porte le nom d'une obligation morale ?",
+      "reponse": "Le Devoir",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
+      "reponse": "Steinberg",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui installe les micros avant un concert ?",
+      "reponse": "Un technicien de son",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel pichet souriant défonce les murs en criant « Oh yeah » ?",
+      "reponse": "Le pichet Kool-Aid",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'aide financière que l'État avance aux étudiants ?",
+      "reponse": "Les prêts et bourses",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'encadré qui explique les symboles d'une carte ?",
+      "reponse": "La légende",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission de Radio-Canada enquête sur ce qu'on met dans notre assiette ?",
+      "reponse": "L'épicerie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel appareil envoyait des messages en points et en traits sur des fils ?",
+      "reponse": "Le télégraphe",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot pyjama ?",
+      "reponse": "Le persan",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de vertèbres a le cou d'une girafe ?",
       "reponse": "Sept",
       "niveau": 3,
       "ages": [
@@ -48,9 +179,9 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel inventeur italien est considéré comme le père de la radio ?",
-      "reponse": "Marconi",
+      "categorie": "Musique",
+      "question": "Sur quelle bande magnétique écoutait-on la musique avant le disque compact ?",
+      "reponse": "Une cassette",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -58,52 +189,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
-      "reponse": "Le tramway",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Machu Picchu, cité perdue des Incas ?",
-      "reponse": "Le Pérou",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a raflé les Junos avec l'album Phoenix ?",
-      "reponse": "Charlotte Cardin",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles rondelles de carton s'empilaient et se retournaient dans les cours d'école des années 90 ?",
-      "reponse": "Les Pogs",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil du restaurant jouait une chanson contre une pièce de monnaie ?",
-      "reponse": "Le juke-box",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
       "categorie": "Histoire",
-      "question": "Quel traité de 1992 a créé l'Union européenne ?",
-      "reponse": "Maastricht",
+      "question": "Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?",
+      "reponse": "La Révolution tranquille",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -112,19 +200,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on le réseau de tuyaux qui recueille l'eau d'érable ?",
-      "reponse": "La tubulure",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse néo-zélandaise a chanté Royals à seize ans ?",
-      "reponse": "Lorde",
+      "question": "Quel secteur de Montréal regroupe salles de spectacle et festivals au centre-ville ?",
+      "reponse": "Le Quartier des spectacles",
       "niveau": 3,
       "ages": [
         "ados",
@@ -132,100 +209,9 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
-      "reponse": "L'hémisphère nord",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a déchiffré les hiéroglyphes ?",
-      "reponse": "Champollion",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel chirurgien a réalisé la première greffe du cœur ?",
-      "reponse": "Christiaan Barnard",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Combien de symphonies Beethoven a-t-il composées ?",
-      "reponse": "Neuf",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe canadien a chanté American Woman ?",
-      "reponse": "The Guess Who",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de mois dure la gestation de l'éléphant ?",
-      "reponse": "22",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil branché à la ligne téléphonique faisait des bruits stridents pour se connecter ?",
-      "reponse": "Le modem",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Combien de temps principaux a l'indicatif ?",
-      "reponse": "Huit",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la distance entre un do et le do suivant ?",
-      "reponse": "Une octave",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle ligue de hockey junior regroupe les équipes du Québec et des Maritimes ?",
-      "reponse": "La LHJMQ",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel imitateur québécois a chanté en enchaînant des dizaines de voix célèbres ?",
-      "reponse": "André-Philippe Gagnon",
+      "question": "Quel tambour à main vient d'Irlande ?",
+      "reponse": "Le bodhrán",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -234,10 +220,21 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
-      "reponse": "La Finlande",
+      "question": "Capitale du Kenya ?",
+      "reponse": "Nairobi",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport fait glisser un lugeur tête première sur la glace ?",
+      "reponse": "Le skeleton",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]

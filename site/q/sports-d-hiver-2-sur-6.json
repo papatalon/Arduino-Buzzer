@@ -8,15 +8,20 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la neige soulevée par le vent qui coupe la visibilité ?",
-      "reponse": "La poudrerie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
       "question": "Quel véhicule d'hiver file sur la neige avec des chenilles et des skis ?",
       "reponse": "Une motoneige",
       "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
+      "reponse": "Le ballon-balai",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
@@ -46,14 +51,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport olympique descend un couloir de glace sur le dos ?",
-      "reponse": "La luge",
+      "question": "Quel trophée les équipes de la Ligue nationale se disputent-elles au printemps ?",
+      "reponse": "La coupe Stanley",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel trophée les équipes de la Ligue nationale se disputent-elles au printemps ?",
-      "reponse": "La coupe Stanley",
+      "question": "Quel sport olympique descend un couloir de glace sur le dos ?",
+      "reponse": "La luge",
       "niveau": 1
     },
     {

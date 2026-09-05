@@ -85,8 +85,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle tour de fer domine Paris ?",
-      "reponse": "La tour Eiffel",
+      "question": "Quelle saison amène la neige au Québec ?",
+      "reponse": "L'hiver",
       "niveau": 1
     },
     {
@@ -119,6 +119,12 @@
     },
     {
       "categorie": "Géographie",
+      "question": "Comment appelle-t-on une grande étendue d'eau douce entourée de terre ?",
+      "reponse": "Un lac",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
       "question": "Quel fleuve forme la frontière Ontario-Québec au sud ?",
       "reponse": "L'Outaouais",
       "niveau": 2,
@@ -127,12 +133,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on une grande étendue d'eau douce entourée de terre ?",
-      "reponse": "Un lac",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -158,15 +158,21 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel état américain se trouvent les plages et les alligators ?",
-      "reponse": "La Floride",
+      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
+      "reponse": "Le Japon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays sont nés les Jeux olympiques ?",
+      "reponse": "La Grèce",
       "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
-      "reponse": "Le Japon",
-      "niveau": 1
+      "question": "Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?",
+      "reponse": "La ville de Québec",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -176,9 +182,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes du Québec attire les skieurs au nord de Montréal ?",
-      "reponse": "Les Laurentides",
-      "niveau": 2
+      "question": "Comment appelle-t-on les grandes îles du golfe où l'on va en traversier l'été ?",
+      "reponse": "Les Îles-de-la-Madeleine",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
@@ -192,21 +198,13 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays sont nés les Jeux olympiques ?",
-      "reponse": "La Grèce",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'encadré qui explique les symboles d'une carte ?",
-      "reponse": "La légende",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "De quelles couleurs est le drapeau de la France ?",
-      "reponse": "Bleu blanc rouge",
-      "niveau": 1
+      "question": "Dans quel pays se trouve Tombouctou ?",
+      "reponse": "Le Mali",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -218,6 +216,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'encadré qui explique les symboles d'une carte ?",
+      "reponse": "La légende",
+      "niveau": 3
     }
   ]
 }

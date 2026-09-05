@@ -8,91 +8,93 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelle encyclopédie en ligne, lancée en 2001, est écrite par ses lecteurs ?",
-      "reponse": "Wikipédia",
+      "question": "Autour de quelle table siégeaient les chevaliers d'Arthur ?",
+      "reponse": "La Table ronde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le long bateau à rames des Grecs et des Romains ?",
+      "reponse": "Une galère",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle pyramide d'Égypte est la plus grande ?",
+      "reponse": "Khéops",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année l'homme a-t-il marché sur la Lune ?",
-      "reponse": "1969",
+      "question": "Quel outil de bois et de fer les paysans utilisaient-ils pour retourner la terre ?",
+      "reponse": "La charrue",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel tombeau égyptien fut découvert en 1922 ?",
-      "reponse": "Toutankhamon",
-      "niveau": 2
+      "question": "Quelle maladie a confiné la planète entière au printemps 2020 ?",
+      "reponse": "La COVID-19",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle station spatiale russe a précédé l'ISS ?",
-      "reponse": "Mir",
+      "question": "En quelle année a débuté la Seconde Guerre mondiale ?",
+      "reponse": "1939",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
+      "reponse": "La tradition orale",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quels peuples vivaient déjà en Amérique quand les Européens sont arrivés ?",
-      "reponse": "Les Autochtones",
+      "question": "Quelle arme les chevaliers portaient-ils au côté ?",
+      "reponse": "L'épée",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle habitation autochtone en forme de cône était faite de peaux et de perches ?",
-      "reponse": "Un tipi",
+      "question": "Comment appelait-on la colonie française en Amérique du Nord ?",
+      "reponse": "La Nouvelle-France",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal a allaité Romulus et Rémus ?",
+      "reponse": "Une louve",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel pont s'est effondré deux fois pendant sa construction, en 1907 et en 1916 ?",
-      "reponse": "Le pont de Québec",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel physicien a formulé E=mc2 ?",
-      "reponse": "Einstein",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année a débuté la Révolution française ?",
-      "reponse": "1789",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel dictateur dirigeait l'Allemagne nazie ?",
-      "reponse": "Hitler",
+      "question": "Quelle princesse anglaise est morte à Paris en 1997 ?",
+      "reponse": "Diana",
       "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel explorateur a cherché la fontaine de Jouvence en Floride ?",
-      "reponse": "Ponce de León",
+      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
+      "reponse": "L'inlandsis",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -107,25 +109,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel avion supersonique reliait Paris et New York ?",
-      "reponse": "Le Concorde",
+      "question": "Qui a gravi l'Everest en premier en 1953 ?",
+      "reponse": "Hillary et Norgay",
       "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal servait de moyen de transport principal avant l'automobile ?",
-      "reponse": "Le cheval",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi de France régnait quand la Nouvelle-France s'est développée ?",
-      "reponse": "Louis XIV",
-      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -134,74 +120,22 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle date redoutaient les informaticiens en 1999 ?",
-      "reponse": "Le 1er janvier 2000",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a atteint le pôle Sud en premier ?",
-      "reponse": "Amundsen",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel amuseur en habit à grelots faisait rire le roi ?",
-      "reponse": "Un bouffon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le cahier où l'on note ce qui se passe jour après jour ?",
-      "reponse": "Un journal",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle machine à vapeur tirait les premiers trains ?",
-      "reponse": "La locomotive",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel leader pacifiste a libéré l'Inde ?",
-      "reponse": "Gandhi",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels dirigeables allemands portaient un nom de comte ?",
-      "reponse": "Les zeppelins",
+      "question": "Quelle ruée vers l'or a attiré des milliers de gens au Yukon ?",
+      "reponse": "Klondike",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année l'URSS a-t-elle disparu ?",
-      "reponse": "1991",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle politique canadienne date de la loi de 1969 ?",
-      "reponse": "Le bilinguisme",
+      "question": "Quelle reine anglaise fut surnommée la Reine vierge ?",
+      "reponse": "Elizabeth Ire",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -215,6 +149,68 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle machine de siège lançait des pierres par-dessus les murailles ?",
+      "reponse": "La catapulte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quelle région de France a eu lieu le débarquement du 6 juin 1944 ?",
+      "reponse": "La Normandie",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?",
+      "reponse": "Le télescope James Webb",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quelle plante les Égyptiens écrivaient-ils ?",
+      "reponse": "Le papyrus",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel philosophe fut l'élève de Socrate ?",
+      "reponse": "Platon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quel grand siège le roi s'assoit-il pour recevoir ses sujets ?",
+      "reponse": "Un trône",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel château fut la résidence de Louis XIV ?",
+      "reponse": "Versailles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle bataille grecque a donné son nom à une course ?",
+      "reponse": "Marathon",
+      "niveau": 2
     }
   ]
 }

@@ -7,14 +7,69 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse a chanté Rolling in the Deep ?",
-      "reponse": "Adele",
-      "niveau": 2,
+      "categorie": "Sports",
+      "question": "Quelle discipline équestre fait franchir au cheval une série de barres sans les faire tomber ?",
+      "reponse": "Le saut d'obstacles",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu télévisé opposait des équipes d'élèves du secondaire ?",
+      "reponse": "Génies en herbe",
+      "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de gymnase élimine les joueurs touchés par le ballon ?",
+      "reponse": "Le ballon-chasseur",
+      "niveau": 1,
+      "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la voix masculine aiguë des grands airs d'opéra ?",
+      "reponse": "Le ténor",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Contraire de courageux, en cinq lettres ?",
+      "reponse": "Lâche",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle centrale nucléaire a explosé en 1986 ?",
+      "reponse": "Tchernobyl",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel hors-la-loi anglais volait aux riches pour les pauvres ?",
+      "reponse": "Robin des Bois",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
@@ -28,11 +83,28 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Alberta ?",
-      "reponse": "Edmonton",
-      "niveau": 2,
+      "question": "Quel est le plus grand océan ?",
+      "reponse": "Le Pacifique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de lettres compte l'alphabet français ?",
+      "reponse": "Vingt-six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qu'est-ce qui pousse sur la tête et qu'on va faire couper chez le coiffeur ?",
+      "reponse": "Les cheveux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la peur des hauteurs ?",
+      "reponse": "L'acrophobie",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -48,53 +120,16 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle plateforme les pirates faisaient-ils parcourir aux prisonniers au-dessus de l'eau ?",
-      "reponse": "La planche",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël anglais souhaite un joyeux Noël en le répétant trois fois ?",
-      "reponse": "We Wish You a Merry Christmas",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel réalisateur québécois a tourné Dune ?",
-      "reponse": "Denis Villeneuve",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel attaquant norvégien enfile les buts à Manchester City ?",
-      "reponse": "Haaland",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quel arbre le koala mange-t-il les feuilles ?",
-      "reponse": "L'eucalyptus",
+      "categorie": "Culture pop",
+      "question": "Quel appareil à deux boutons permet de se parler à distance en disant « à toi » ?",
+      "reponse": "Le walkie-talkie",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
-      "reponse": "La tradition orale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
+      "reponse": "Bob l'éponge",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -108,21 +143,25 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel bassin de plastique se gonfle dans la cour l'été ?",
-      "reponse": "Une piscine gonflable",
-      "niveau": 1
+      "categorie": "Musique",
+      "question": "Quelle chanteuse a chanté Rolling in the Deep ?",
+      "reponse": "Adele",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel site de vente en ligne a une flèche souriante dans son logo ?",
-      "reponse": "Amazon",
-      "niveau": 1
+      "categorie": "Sciences et nature",
+      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
+      "reponse": "La Grande Ourse",
+      "niveau": 3
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
-      "reponse": "Quétaine",
+      "categorie": "Histoire",
+      "question": "Quel dictateur soviétique a succédé à Lénine ?",
+      "reponse": "Staline",
       "niveau": 2,
       "ages": [
         "ados",
@@ -131,21 +170,14 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Écosse ?",
-      "reponse": "Édimbourg",
+      "categorie": "Cinéma et télé",
+      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
+      "reponse": "Sol",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de lettres compte l'alphabet français ?",
-      "reponse": "Vingt-six",
-      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -159,10 +191,10 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "De quel métal est principalement fait l'acier ?",
-      "reponse": "Le fer",
-      "niveau": 1,
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve le Machu Picchu ?",
+      "reponse": "Le Pérou",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -171,45 +203,18 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel boxeur se surnommait The Greatest ?",
-      "reponse": "Muhammad Ali",
+      "question": "Comment appelle-t-on le joueur du baseball qui envoie la balle au frappeur ?",
+      "reponse": "Le lanceur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel réalisateur québécois a tourné Dune ?",
+      "reponse": "Denis Villeneuve",
       "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
-      "reponse": "Bob l'éponge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Contraire de courageux, en cinq lettres ?",
-      "reponse": "Lâche",
-      "niveau": 1,
-      "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel hors-la-loi anglais volait aux riches pour les pauvres ?",
-      "reponse": "Robin des Bois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la peur des hauteurs ?",
-      "reponse": "L'acrophobie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
@@ -217,16 +222,6 @@
       "question": "Combien de côtés a un pentagone ?",
       "reponse": "Cinq",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
-      "reponse": "Sol",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

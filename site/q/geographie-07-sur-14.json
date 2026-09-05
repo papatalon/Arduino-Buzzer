@@ -8,6 +8,12 @@
   "questions": [
     {
       "categorie": "Géographie",
+      "question": "Combien de continents compte la Terre ?",
+      "reponse": "Sept",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
       "question": "Dans quel pays se trouve le Colisée ?",
       "reponse": "L'Italie",
       "niveau": 1,
@@ -16,12 +22,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien de continents compte la Terre ?",
-      "reponse": "Sept",
-      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -48,14 +48,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Ontario ?",
-      "reponse": "Toronto",
+      "question": "Combien de provinces compte le Canada ?",
+      "reponse": "Dix",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Combien de provinces compte le Canada ?",
-      "reponse": "Dix",
+      "question": "Capitale de l'Ontario ?",
+      "reponse": "Toronto",
       "niveau": 1
     },
     {
@@ -83,8 +83,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel désert chilien est le plus aride du monde ?",
-      "reponse": "L'Atacama",
+      "question": "Combien de points cardinaux la rose des vents compte-t-elle ?",
+      "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus haute montagne du Canada ?",
+      "reponse": "Le mont Logan",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -93,14 +99,37 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Combien de points cardinaux la rose des vents compte-t-elle ?",
-      "reponse": "Quatre",
+      "question": "Sur quel continent se trouve le désert du Sahara ?",
+      "reponse": "L'Afrique",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays voisin du Québec se trouve juste au sud ?",
-      "reponse": "Les États-Unis",
+      "question": "Quelle île de Montréal accueille le parc d'attractions La Ronde ?",
+      "reponse": "L'île Sainte-Hélène",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Langue parlée en Égypte ?",
+      "reponse": "L'arabe",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays voisin de la France et de l'Italie parle-t-on quatre langues officielles ?",
+      "reponse": "La Suisse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville du Canada ?",
+      "reponse": "Toronto",
       "niveau": 1
     },
     {
@@ -116,14 +145,26 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le terrain planté de pommiers ?",
-      "reponse": "Un verger",
+      "question": "Comment appelle-t-on la haute paroi de roche au bord de la mer ?",
+      "reponse": "Une falaise",
       "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la plus haute montagne du Canada ?",
-      "reponse": "Le mont Logan",
+      "question": "Capitale du Japon ?",
+      "reponse": "Tokyo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays voisin du Québec se trouve juste au sud ?",
+      "reponse": "Les États-Unis",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel désert chilien est le plus aride du monde ?",
+      "reponse": "L'Atacama",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -132,43 +173,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le trou d'eau au milieu du désert avec des palmiers ?",
-      "reponse": "Une oasis",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la capitale de la province de Québec ?",
-      "reponse": "La ville de Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel état américain se trouve Las Vegas ?",
-      "reponse": "Le Nevada",
-      "niveau": 1,
+      "question": "Quelle province des Prairies a Regina pour capitale ?",
+      "reponse": "La Saskatchewan",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée en Égypte ?",
-      "reponse": "L'arabe",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Japon ?",
-      "reponse": "Tokyo",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -180,18 +192,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville du Canada ?",
-      "reponse": "Toronto",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le désert du Sahara ?",
-      "reponse": "L'Afrique",
-      "niveau": 1
     }
   ]
 }

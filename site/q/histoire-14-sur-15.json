@@ -8,79 +8,45 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Dans quel pays vivaient les samouraïs ?",
-      "reponse": "Le Japon",
-      "niveau": 1
+      "question": "Quel peintre italien a peint la Joconde ?",
+      "reponse": "Léonard de Vinci",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le fossé rempli d'eau qui entoure un château fort ?",
-      "reponse": "Les douves",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année les Jeux olympiques ont-ils été reportés d'un an pour la première fois ?",
-      "reponse": "2020",
+      "question": "Quel mur antique protégeait l'Angleterre romaine ?",
+      "reponse": "Mur d'Hadrien",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle infirmière anglaise a soigné les soldats à la lampe pendant la guerre de Crimée ?",
+      "reponse": "Florence Nightingale",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel site de vidéos a été lancé en 2005 et racheté par Google un an plus tard ?",
+      "reponse": "YouTube",
+      "niveau": 2,
+      "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel casque de métal protégeait la tête du chevalier ?",
-      "reponse": "Un heaume",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle guerre d'Asie a pris fin en 1975 ?",
-      "reponse": "Vietnam",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on les Français qui partaient troquer des fourrures dans les bois ?",
-      "reponse": "Les coureurs des bois",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande maison fortifiée d'un seigneur, avec ses tours ?",
-      "reponse": "Un château fort",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
-      "reponse": "Challenger",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui fut le premier premier ministre du Canada ?",
-      "reponse": "John A. Macdonald",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année a eu lieu la Confédération canadienne ?",
-      "reponse": "1867",
+      "question": "Quel vêtement de tissu drapé portaient les citoyens romains ?",
+      "reponse": "Une toge",
       "niveau": 2
     },
     {
@@ -95,85 +61,17 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le pont qui se relève pour fermer l'entrée d'un château ?",
-      "reponse": "Le pont-levis",
-      "niveau": 1
+      "question": "Quelle bataille de 1759 a fait passer Québec aux mains des Britanniques ?",
+      "reponse": "La bataille des plaines d'Abraham",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle crise économique a suivi le krach de 1929 ?",
-      "reponse": "La Grande Dépression",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel chirurgien a réalisé la première greffe du cœur ?",
-      "reponse": "Christiaan Barnard",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels monuments abritent les pharaons d'Égypte ?",
-      "reponse": "Les pyramides",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention à deux roues se propulse avec des pédales ?",
-      "reponse": "La bicyclette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
-      "reponse": "La tradition orale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel téléphone présenté en 2007 a bouleversé la téléphonie ?",
-      "reponse": "Le iPhone",
+      "question": "Quels deux blocs s'opposaient durant la guerre froide ?",
+      "reponse": "USA et URSS",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel savant a découvert le vaccin contre la rage ?",
-      "reponse": "Pasteur",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année l'Allemagne s'est-elle réunifiée ?",
-      "reponse": "1990",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Sur quelle île Napoléon est-il mort ?",
-      "reponse": "Sainte-Hélène",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
@@ -186,19 +84,137 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel gros reptile a disparu de la Terre il y a des millions d'années ?",
-      "reponse": "Un dinosaure",
+      "question": "En quel siècle vivons-nous ?",
+      "reponse": "Le 21e siècle",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle pyramide d'Égypte est la plus grande ?",
-      "reponse": "Khéops",
+      "question": "Quel explorateur a cherché la fontaine de Jouvence en Floride ?",
+      "reponse": "Ponce de León",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel cercle de pierres dressées se dresse dans une plaine anglaise ?",
+      "reponse": "Stonehenge",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle militante pakistanaise a reçu le Nobel de la paix ?",
+      "reponse": "Malala",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelait-on les combats à cheval où deux chevaliers se chargeaient avec des lances ?",
+      "reponse": "Les joutes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les premiers habitants de l'Amérique, ici avant les Européens ?",
+      "reponse": "Les Autochtones",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel calendrier, adopté en 1582, utilisons-nous ?",
+      "reponse": "Le grégorien",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle révolution a renversé le tsar en 1917 ?",
+      "reponse": "La révolution russe",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel intendant a développé la Nouvelle-France ?",
+      "reponse": "Jean Talon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel ancien téléphone fallait-il tourner avec le doigt pour composer un numéro ?",
+      "reponse": "Le téléphone à cadran",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les longues routes pavées construites par les Romains ?",
+      "reponse": "Les voies romaines",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel monument de pierre à quatre faces triangulaires abritait un tombeau égyptien ?",
+      "reponse": "Une pyramide",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
+      "reponse": "Pizarro",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année l'euro est-il entré en circulation ?",
+      "reponse": "2002",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention chinoise a remplacé le parchemin pour écrire ?",
+      "reponse": "Le papier",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     }
   ]

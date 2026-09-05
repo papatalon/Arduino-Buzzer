@@ -8,14 +8,8 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quel drap blanc troué de deux yeux fait un costume d'Halloween facile ?",
-      "reponse": "Un fantôme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série médicale suit des internes dans un hôpital de Seattle depuis 2005 ?",
-      "reponse": "Grey's Anatomy",
+      "question": "Sur quelle application les joueurs se parlent-ils dans des salons vocaux ?",
+      "reponse": "Discord",
       "niveau": 2,
       "ages": [
         "ados",
@@ -24,9 +18,9 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission de Radio-Canada enquête sur ce qu'on met dans notre assiette ?",
-      "reponse": "L'épicerie",
-      "niveau": 3,
+      "question": "Quelle poudre au chocolat se mélange au lait froid en le brassant ?",
+      "reponse": "Le Quik",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -34,8 +28,14 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel humoriste québécois au débit très rapide a animé de nombreux galas ?",
-      "reponse": "Louis-José Houde",
+      "question": "Quel jeu se joue à deux avec des pions noirs et blancs qu'on saute pour les prendre ?",
+      "reponse": "Les dames",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de restaurants sert sa root beer dans une chope givrée ?",
+      "reponse": "A&W",
       "niveau": 2,
       "ages": [
         "ados",
@@ -45,53 +45,139 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel accessoire redonne de l'énergie à un téléphone à plat ?",
-      "reponse": "Un chargeur",
-      "niveau": 1
+      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
+      "reponse": "La fin de semaine des Patriotes",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel grand défilé de chars annonce Noël dans les rues des villes ?",
-      "reponse": "Le défilé du père Noël",
+      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
+      "reponse": "Le Wordle",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel engin motorisé souffle la neige des entrées de garage l'hiver ?",
+      "reponse": "La souffleuse",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet de métal en forme de U se cloue au-dessus d'une porte pour attirer la chance ?",
+      "reponse": "Un fer à cheval",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel personnage rouge et blanc à tuque se cache dans des foules dessinées ?",
-      "reponse": "Charlie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil envoyait une feuille de papier par la ligne téléphonique ?",
-      "reponse": "Le fax",
+      "question": "Quel appareil blanc d'Apple faisait tourner la musique avec une molette ?",
+      "reponse": "Le iPod",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le collant coloré donné en récompense dans un cahier ?",
-      "reponse": "Un autocollant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission de cuisine québécoise oppose des candidats devant un jury de chefs ?",
-      "reponse": "Les Chefs",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans Minecraft, quelle pierre bleue sert à fabriquer les meilleurs outils ?",
-      "reponse": "Le diamant",
+      "question": "Quelle console de Sony est la grande rivale de la Xbox ?",
+      "reponse": "La PlayStation",
       "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu fait passer sous une barre de plus en plus basse en se penchant vers l'arrière ?",
+      "reponse": "Le limbo",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jouet roule sur des rails miniatures autour du sapin ?",
+      "reponse": "Un train électrique",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que glisse-t-on dans une enveloppe pour souhaiter joyeux Noël à quelqu'un ?",
+      "reponse": "Une carte de souhaits",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil enregistrait les émissions de télé sur une cassette ?",
+      "reponse": "Le magnétoscope",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quels bonbons durs multicolores promettent de goûter l'arc-en-ciel ?",
+      "reponse": "Les Skittles",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de sandwichs fait choisir son pain et ses garnitures au comptoir ?",
+      "reponse": "Subway",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la scène de la Nativité qu'on installait sous le sapin ?",
+      "reponse": "La crèche",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jouet de peluche brune se serre pour s'endormir ?",
+      "reponse": "Un ourson en peluche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil photo de carton s'achetait plein et se rapportait complet à développer ?",
+      "reponse": "L'appareil jetable",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles toupies de plastique s'affrontent dans une arène en criant leur nom ?",
+      "reponse": "Les Beyblade",
+      "niveau": 2,
       "ages": [
         "enfants",
         "ados"
@@ -99,34 +185,14 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
-      "reponse": "Les Classels",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel animal cache les chocolats dans le jardin à Pâques ?",
-      "reponse": "Le lapin de Pâques",
+      "question": "Quel engin à deux roues se pousse d'un pied en tenant un guidon ?",
+      "reponse": "La trottinette",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?",
-      "reponse": "L'écoute en rafale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission jeunesse de Radio-Canada ouvrait sur un coffre plein d'histoires ?",
-      "reponse": "La Boîte à surprise",
+      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
+      "reponse": "Dominique Michel et Denise Filiatrault",
       "niveau": 3,
       "ages": [
         "aines"
@@ -134,83 +200,15 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque de voitures électriques porte le nom d'un inventeur serbe ?",
-      "reponse": "Tesla",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles petites autos de métal roulent sur des pistes de plastique orange ?",
-      "reponse": "Les Hot Wheels",
+      "question": "Comment appelle-t-on la petite lumière laissée allumée pour la nuit ?",
+      "reponse": "Une veilleuse",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel disque argenté a remplacé la cassette pour la musique, puis a été remplacé à son tour ?",
-      "reponse": "Le disque compact",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la vidéo qui montre étape par étape comment faire quelque chose ?",
-      "reponse": "Un tutoriel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle case horaire de Radio-Canada présentait des grands spectacles le dimanche ?",
-      "reponse": "Les Beaux Dimanches",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel quotidien québécois porte le nom d'une obligation morale ?",
-      "reponse": "Le Devoir",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel réglage du téléphone coupe toutes les communications pendant un vol ?",
-      "reponse": "Le mode avion",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de combat de Nintendo réunit ses personnages sur une même scène ?",
-      "reponse": "Super Smash Bros",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Que bâtit-on avec trois boules de neige, une carotte et des boutons ?",
-      "reponse": "Un bonhomme de neige",
-      "niveau": 1
+      "question": "Quel jouet surgit d'une boîte quand la manivelle s'arrête de jouer ?",
+      "reponse": "Le diable à ressort",
+      "niveau": 2
     }
   ]
 }

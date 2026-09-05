@@ -8,15 +8,24 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quelle poupée blonde de Mattel a un ami nommé Ken ?",
-      "reponse": "Barbie",
+      "question": "Quel cheval blanc porte une corne unique sur le front ?",
+      "reponse": "Une licorne",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel objet noir et plat, gravé de sillons, tourne sur une table tournante ?",
-      "reponse": "Le disque vinyle",
-      "niveau": 2,
+      "question": "Quel meuble gardait les aliments au froid avec un bloc de glace ?",
+      "reponse": "La glacière",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
+      "reponse": "Le Village Vacances Valcartier",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -25,97 +34,27 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel bassin de plastique se gonfle dans la cour l'été ?",
-      "reponse": "Une piscine gonflable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel artiste fait disparaître des objets devant un public ébahi ?",
-      "reponse": "Un magicien",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
-      "reponse": "Loft Story",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel repas de fête se prend après la messe de minuit, la nuit du 24 décembre ?",
-      "reponse": "Le réveillon",
+      "question": "Quel humoriste québécois a créé la série Les Beaux Malaises ?",
+      "reponse": "Martin Matte",
       "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel cahier propose des dessins à remplir sans dépasser ?",
-      "reponse": "Un livre à colorier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
-      "reponse": "Pierre Falardeau",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle machine d'arcade vitrée fait descendre une griffe sur des peluches ?",
-      "reponse": "La machine à pinces",
-      "niveau": 2,
-      "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on une histoire racontée en cases dessinées ?",
-      "reponse": "Une bande dessinée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quels trois héros en pyjama se transforment la nuit pour affronter des méchants ?",
-      "reponse": "Les Pyjamasques",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle boisson chaude sucrée réchauffe après une glissade en traîneau ?",
-      "reponse": "Un chocolat chaud",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
-      "reponse": "Michel Louvain",
+      "question": "Quel jeu de cour d'école fait sauter en tapant dans les mains d'un partenaire ?",
+      "reponse": "La tape-tape",
       "niveau": 3,
       "ages": [
-        "aines"
+        "enfants"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
-      "reponse": "Josée di Stasio",
+      "question": "Quel appareil de poche vibrait pour dire de rappeler quelqu'un, avant le cellulaire ?",
+      "reponse": "Le téléavertisseur",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -124,15 +63,13 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de hasard fait cocher des cases en écoutant des numéros criés ?",
-      "reponse": "Le bingo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil à deux boutons permet de se parler à distance en disant « à toi » ?",
-      "reponse": "Le walkie-talkie",
-      "niveau": 1
+      "question": "Quelles cigarettes de bonbon blanches portaient le nom d'un marin costaud ?",
+      "reponse": "Les Popeye",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
@@ -147,38 +84,24 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle pâte gluante et étirable se fabrique à la maison avec de la colle ?",
-      "reponse": "La slime",
-      "niveau": 1,
+      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
+      "reponse": "Les Denis Drolet",
+      "niveau": 3,
       "ages": [
-        "enfants",
-        "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
-      "reponse": "Willie Lamothe",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
+      "question": "Quel meuble de la classe range les effets de l'élève ?",
+      "reponse": "Un pupitre",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de cour d'école fait sauter en tapant dans les mains d'un partenaire ?",
-      "reponse": "La tape-tape",
-      "niveau": 3,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
-      "reponse": "La guignolée",
-      "niveau": 3,
+      "question": "Quel véhicule récréatif se tire derrière l'auto pour camper ?",
+      "reponse": "La roulotte",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -186,8 +109,77 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu oppose deux équipes qui se tirent des billes de peinture ?",
-      "reponse": "Le paintball",
+      "question": "Quelle activité enferme un groupe devant des énigmes à résoudre avant la fin du temps ?",
+      "reponse": "Un jeu d'évasion",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle grande chaussette suspend-on à la cheminée en attendant le père Noël ?",
+      "reponse": "Un bas de Noël",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel prix récompense les artistes québécois au gala de l'ADISQ ?",
+      "reponse": "Le Félix",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment s'appelle le royaume d'Elsa et d'Anna ?",
+      "reponse": "Arendelle",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de jeans a été créée pour les chercheurs d'or ?",
+      "reponse": "Levi's",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu retire une chaise à chaque tour pendant que la musique joue ?",
+      "reponse": "La chaise musicale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Sous quel grand chapiteau se donnent les numéros d'acrobates ?",
+      "reponse": "Le cirque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
+      "reponse": "Quétaine",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu oppose des équipes armées de pistolets lumineux dans le noir ?",
+      "reponse": "Le laser tag",
       "niveau": 2,
       "ages": [
         "ados",
@@ -196,17 +188,35 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel capitaine de la télé jeunesse racontait des histoires invraisemblables avec ses invisibles ?",
-      "reponse": "Le Capitaine Bonhomme",
+      "question": "Quelle plateforme loue le logement d'un particulier pour des vacances ?",
+      "reponse": "Airbnb",
       "niveau": 3,
       "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
-      "reponse": "Coup de Pouce",
+      "question": "Comment appelle-t-on la photo prise chaque année avec tous les élèves d'un groupe ?",
+      "reponse": "La photo de classe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle application reconnaît une chanson après l'avoir écoutée quelques secondes ?",
+      "reponse": "Shazam",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel vêtement des années 60 a scandalisé en raccourcissant brusquement ?",
+      "reponse": "La minijupe",
       "niveau": 3,
       "ages": [
         "adultes",

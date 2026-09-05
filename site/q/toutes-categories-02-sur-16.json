@@ -7,9 +7,97 @@
   "emoji": "🎲",
   "questions": [
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat coréen mélange riz, légumes et œuf ?",
+      "reponse": "Le bibimbap",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province des Prairies a Regina pour capitale ?",
+      "reponse": "La Saskatchewan",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel objet indique l'heure grâce à une ombre ?",
+      "reponse": "Cadran solaire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle plongeuse québécoise a gagné l'argent à Tokyo ?",
+      "reponse": "Jennifer Abel",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument de cuivre se joue en soufflant dans une embouchure et en pressant trois pistons ?",
+      "reponse": "La trompette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série américaine suit un bureau de vente de papier ?",
+      "reponse": "The Office",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on un très grand bâtiment de plusieurs dizaines d'étages ?",
+      "reponse": "Un gratte-ciel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle ville canadienne fut dévastée par une explosion en 1917 ?",
+      "reponse": "Halifax",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle la maison des fourmis ?",
+      "reponse": "La fourmilière",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel appareil blanc d'Apple faisait tourner la musique avec une molette ?",
-      "reponse": "Le iPod",
+      "question": "Quel jeu se joue à deux avec le pouce pour immobiliser celui de l'autre ?",
+      "reponse": "La lutte de pouces",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal terrestre est le plus lourd ?",
+      "reponse": "L'éléphant",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant du Saguenay ?",
+      "reponse": "Un Saguenéen",
       "niveau": 2,
       "ages": [
         "ados",
@@ -24,43 +112,26 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat coréen mélange riz, légumes et œuf ?",
-      "reponse": "Le bibimbap",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série américaine suit un bureau de vente de papier ?",
-      "reponse": "The Office",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu oppose deux équipes qui tirent chacune un bout du même câble ?",
-      "reponse": "Le tir à la corde",
+      "categorie": "Musique",
+      "question": "Quelle comptine demande à Pierrot de prêter sa plume pour écrire un mot ?",
+      "reponse": "Au clair de la lune",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle comptine québécoise plume un oiseau, la tête, le bec et les ailes ?",
-      "reponse": "Alouette",
+      "question": "Comment appelle-t-on l'ensemble des chansons réunies sur un même disque ?",
+      "reponse": "Un album",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Sur quel engin descend-on une côte enneigée en position assise ?",
-      "reponse": "Un traîneau",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quel gratte-ciel de Montréal, en forme de croix, a ouvert en 1962 ?",
+      "reponse": "La Place Ville-Marie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
@@ -72,21 +143,15 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel grand reptile du Nil était sacré en Égypte ?",
-      "reponse": "Le crocodile",
-      "niveau": 1
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit bleu foncé se cueille dans les bois du Lac-Saint-Jean ?",
+      "reponse": "Le bleuet sauvage",
+      "niveau": 2
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on les chaussons rigides qui permettent de danser sur le bout des orteils ?",
-      "reponse": "Des pointes",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel groupe sanguin est donneur universel ?",
-      "reponse": "O négatif",
+      "categorie": "Sports",
+      "question": "Combien de haies compte le 110 mètres haies ?",
+      "reponse": "Dix",
       "niveau": 2,
       "ages": [
         "ados",
@@ -95,9 +160,15 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on une bande dessinée japonaise ?",
-      "reponse": "Un manga",
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de jeune ?",
+      "reponse": "Vieux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel site de vidéos a été lancé en 2005 et racheté par Google un an plus tard ?",
+      "reponse": "YouTube",
       "niveau": 2,
       "ages": [
         "enfants",
@@ -112,50 +183,16 @@
       "niveau": 3
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanson du crabe Sébastien vante la vie sous les vagues ?",
-      "reponse": "Sous l'océan",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la grande vallée creusée par une rivière entre deux parois ?",
-      "reponse": "Un canyon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel objet indique l'heure grâce à une ombre ?",
-      "reponse": "Cadran solaire",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
-      "reponse": "L'autruche",
+      "question": "Quel organe pompe le sang ?",
+      "reponse": "Le cœur",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle organisation internationale, fondée en 1945, a son siège à New York ?",
-      "reponse": "L'ONU",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu foncé se cueille dans les bois du Lac-Saint-Jean ?",
-      "reponse": "Le bleuet sauvage",
-      "niveau": 2
+      "categorie": "Sports",
+      "question": "Quelle couleur de carton expulse un joueur au soccer ?",
+      "reponse": "Rouge",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
@@ -166,50 +203,6 @@
         "ados",
         "adultes"
       ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant du Saguenay ?",
-      "reponse": "Un Saguenéen",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport pratiquait Michael Phelps ?",
-      "reponse": "La natation",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple scandinave naviguait sur des drakkars ?",
-      "reponse": "Les Vikings",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Nouvelle-Zélande ?",
-      "reponse": "Wellington",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de jeune ?",
-      "reponse": "Vieux",
-      "niveau": 1
     }
   ]
 }
