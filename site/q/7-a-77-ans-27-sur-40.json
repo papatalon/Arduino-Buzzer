@@ -7,144 +7,131 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on l'ensemble des os du corps ?",
-      "reponse": "Le squelette",
+      "categorie": "Culture générale",
+      "question": "Aux échecs, combien de dames au départ par joueur ?",
+      "reponse": "Une",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Edmonton ?",
-      "reponse": "Les Oilers",
+      "categorie": "Québec",
+      "question": "Quelle expression québécoise signifie c'est correct ?",
+      "reponse": "C'est beau",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays vivent les kangourous ?",
+      "reponse": "L'Australie",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ourson jaune raffole du miel ?",
-      "reponse": "Winnie l'ourson",
+      "categorie": "Culture pop",
+      "question": "Quelle fillette en cape rouge apporte une galette à sa grand-mère ?",
+      "reponse": "Le Petit Chaperon rouge",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte est le principal pollinisateur ?",
-      "reponse": "L'abeille",
+      "categorie": "Culture générale",
+      "question": "Quel instrument mesure le temps avec du sable ?",
+      "reponse": "Le sablier",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie ronde se décore de glaçage pour une fête ?",
-      "reponse": "Le gâteau",
+      "question": "Quelle sauce brune très salée accompagne les sushis ?",
+      "reponse": "Sauce soya",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel monstre grec pétrifie du regard ?",
+      "reponse": "Méduse",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "De quel côté se couche le soleil ?",
-      "reponse": "À l'ouest",
+      "question": "Capitale de l'Ontario ?",
+      "reponse": "Toronto",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel cerceau fait-on tourner autour de la taille ?",
-      "reponse": "Le hula hoop",
+      "categorie": "Sciences et nature",
+      "question": "Quelle vitesse ne peut jamais être dépassée ?",
+      "reponse": "Celle de la lumière",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un tigre qui bondit sur sa queue ?",
-      "reponse": "Tigrou",
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de matin ?",
+      "reponse": "Soir",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu garnit les muffins et les tartes au Québec ?",
-      "reponse": "Le bleuet",
+      "question": "Quel plat provençal mijote des légumes et aubergines ?",
+      "reponse": "La ratatouille",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature de la nuit dort dans un cercueil et craint l'ail ?",
+      "reponse": "Un vampire",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanson chante-t-on aux anniversaires ?",
-      "reponse": "Bonne fête",
+      "question": "Quel instrument d'église a des tuyaux ?",
+      "reponse": "L'orgue",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel océan entoure le pôle Nord ?",
-      "reponse": "L'océan Arctique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel oratoire montréalais fut fondé par le frère André ?",
-      "reponse": "Saint-Joseph",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la suite secrète de caractères qui protège un compte ?",
-      "reponse": "Un mot de passe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel physicien a formulé E=mc2 ?",
-      "reponse": "Einstein",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie lâcher son fou ?",
-      "reponse": "S'amuser follement",
+      "categorie": "Sports",
+      "question": "Quel équipement protège la tête à vélo et au hockey ?",
+      "reponse": "Le casque",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Disney a de très longs cheveux magiques ?",
-      "reponse": "Raiponce",
-      "niveau": 1
+      "question": "Quel chat orange déteste les lundis et adore la lasagne ?",
+      "reponse": "Garfield",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle ville québécoise est célèbre pour son festival western ?",
-      "reponse": "Saint-Tite",
+      "categorie": "Cinéma et télé",
+      "question": "Quel magicien gris guide la Communauté de l'anneau ?",
+      "reponse": "Gandalf",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel grand singe est le plus proche de l'homme ?",
-      "reponse": "Le chimpanzé",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment blanc, fait de lait, mange-t-on avec des fruits au déjeuner ?",
-      "reponse": "Le yogourt",
-      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie avoir le bras long ?",
-      "reponse": "Avoir de l'influence",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Que signifie le mot québécois pantoute ?",
+      "reponse": "Pas du tout",
+      "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quels écouteurs sans fil blancs se rangent dans un petit boîtier ?",
-      "reponse": "Les AirPods",
+      "categorie": "Musique",
+      "question": "Quelle expression du Roi Lion signifie « sans souci » en swahili ?",
+      "reponse": "Hakuna Matata",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -153,28 +140,60 @@
       ]
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte farcie italienne forme des coussins ?",
+      "reponse": "Les raviolis",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de temps la Terre met-elle à tourner sur elle-même ?",
+      "reponse": "24 heures",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel arbre des Gardiens ne dit que trois mots ?",
+      "reponse": "Groot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel parti a fondé François Legault ?",
+      "reponse": "La CAQ",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel constructeur a lancé la Ford T ?",
+      "reponse": "Henry Ford",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle ligne les coureurs doivent-ils franchir pour terminer une course ?",
+      "reponse": "La ligne d'arrivée",
+      "niveau": 1
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Quel animal rugit ?",
-      "reponse": "Le lion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel magicien conseillait le roi Arthur ?",
-      "reponse": "Merlin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel chien accompagne Astérix et Obélix ?",
-      "reponse": "Idéfix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Dans quel jeu de société faut-il aligner quatre jetons de sa couleur ?",
-      "reponse": "Puissance 4",
-      "niveau": 1
+      "question": "Que signifie tourner autour du pot ?",
+      "reponse": "Hésiter à parler",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

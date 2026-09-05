@@ -7,151 +7,144 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quelle comptine demande Dormez-vous ?",
-      "reponse": "Frère Jacques",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle confiture d'agrumes est amère ?",
+      "reponse": "La marmelade",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
+      "reponse": "Rio de Janeiro",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel dieu grec règne sur les mers ?",
-      "reponse": "Poséidon",
+      "categorie": "Québec",
+      "question": "Quelle est la capitale nationale du Québec ?",
+      "reponse": "Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel vaisseau pilote Han Solo ?",
+      "reponse": "Faucon Millénium",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle semaine de congé coupe l'hiver scolaire au début de mars ?",
+      "reponse": "La semaine de relâche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'école qui suit le primaire, pendant cinq ans ?",
+      "reponse": "Le secondaire",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve l'Acropole ?",
-      "reponse": "La Grèce",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel champignon fait lever le pain ?",
-      "reponse": "La levure",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment orange est riche en carotène ?",
-      "reponse": "La carotte",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel drapeau québécois fut adopté en 1948 ?",
-      "reponse": "Le fleurdelisé",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel objet le chef d'orchestre tient-il ?",
-      "reponse": "La baguette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie mettre son grain de sel ?",
-      "reponse": "Se mêler de tout",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse de Star Wars est la sœur de Luke ?",
-      "reponse": "Leia",
+      "question": "Dans quel pays se tient le grand carnaval de Rio ?",
+      "reponse": "Le Brésil",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume orange se creuse et se sculpte à l'Halloween ?",
-      "reponse": "La citrouille d'Halloween",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du chien ?",
-      "reponse": "Le chiot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel clou parfume le jambon de Noël ?",
-      "reponse": "Clou de girofle",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
-      "reponse": "Une sirène",
+      "question": "Quel accompagnement de Noël est une purée blanche ?",
+      "reponse": "Patates pilées",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel pirate est joué par Johnny Depp ?",
-      "reponse": "Jack Sparrow",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle créature de Tolkien dit mon précieux ?",
+      "reponse": "Gollum",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne les bonbons ?",
+      "reponse": "Des nananes",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel jeu vidéo met en scène un plombier moustachu ?",
-      "reponse": "Mario",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
-      "reponse": "Le slalom",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne les moustiques ?",
-      "reponse": "Les maringouins",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de poumons possède l'humain ?",
-      "reponse": "Deux",
+      "question": "Quel oiseau figure sur la pièce de un dollar canadien ?",
+      "reponse": "Le huard",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel conflit a duré de 1939 à 1945 ?",
-      "reponse": "2e Guerre mondiale",
+      "question": "Comment appelait-on les rois de l'Égypte ancienne ?",
+      "reponse": "Les pharaons",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la bouteille dans laquelle un joueur boit sur le banc ?",
+      "reponse": "Une gourde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Noël parle d'un bonhomme de neige ?",
+      "reponse": "Frosty",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois barrer la porte ?",
+      "reponse": "Verrouiller",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Sur quelle plateforme les jeunes jouent-ils à des millions de jeux créés par d'autres joueurs ?",
+      "reponse": "Roblox",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel grondement suit l'éclair pendant un orage ?",
+      "reponse": "Le tonnerre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de vêtements de sport a une virgule pour logo ?",
+      "reponse": "Nike",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Pluriel de travail ?",
+      "reponse": "Travaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quels carrés croustillants se versent dans un bol avec du lait le matin ?",
+      "reponse": "Les céréales",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de joueurs sur la glace par équipe au hockey ?",
+      "reponse": "Six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument a inventé Adolphe Sax ?",
+      "reponse": "Le saxophone",
       "niveau": 1,
       "ages": [
         "ados",
@@ -160,39 +153,21 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jouet de Toy Story est une patate avec des pièces à enlever ?",
-      "reponse": "Monsieur Patate",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel animal figure sur la pièce de 5 cents canadienne ?",
-      "reponse": "Le castor",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de gauche ?",
-      "reponse": "Droite",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on un dessin qui représente un pays ou une ville vus d'en haut ?",
-      "reponse": "Une carte",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
-      "question": "Quel jeu de table fait glisser une rondelle sur un coussin d'air ?",
-      "reponse": "Le hockey sur air",
+      "question": "Quel sport surfe sur la neige ?",
+      "reponse": "La planche à neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel patrouilleur de l'espace dit Vers l'infini et plus loin ?",
+      "reponse": "Buzz",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gros animal gris d'Afrique porte une corne sur le nez ?",
-      "reponse": "Le rhinocéros",
+      "question": "Comment appelle-t-on une personne qui voyage dans l'espace ?",
+      "reponse": "Un astronaute",
       "niveau": 1
     }
   ]

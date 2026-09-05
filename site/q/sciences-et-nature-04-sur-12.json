@@ -8,9 +8,21 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "De quel métal est principalement fait l'acier ?",
-      "reponse": "Le fer",
-      "niveau": 1,
+      "question": "Quel doigt de la main est le plus court et le plus épais ?",
+      "reponse": "Le pouce",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel caillou céleste brille en traversant l'atmosphère ?",
+      "reponse": "L'étoile filante",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel métal précieux conduit le mieux l'électricité ?",
+      "reponse": "L'argent",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -19,33 +31,26 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle couche de gaz protège la Terre des UV ?",
-      "reponse": "La couche d'ozone",
+      "question": "En quelle saison les feuilles des arbres tombent-elles ?",
+      "reponse": "L'automne",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel instrument sert à observer les microbes ?",
-      "reponse": "Le microscope",
-      "niveau": 1
+      "question": "Quel animal d'Australie dort presque toute la journée dans un eucalyptus ?",
+      "reponse": "Le koala",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel cousin rayé du cheval vit en Afrique ?",
-      "reponse": "Le zèbre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel grand oiseau rose se tient souvent sur une seule patte ?",
-      "reponse": "Le flamant rose",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel savant grec a donné son nom à la poussée qui fait flotter les bateaux ?",
-      "reponse": "Archimède",
-      "niveau": 1,
+      "question": "Qui a créé le tableau périodique ?",
+      "reponse": "Mendeleïev",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -54,14 +59,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?",
-      "reponse": "Le tyrannosaure",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien d'ailes possède une abeille ?",
-      "reponse": "Quatre",
+      "question": "Quel est le plus grand organe du corps humain ?",
+      "reponse": "La peau",
       "niveau": 2,
       "ages": [
         "ados",
@@ -71,9 +70,9 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est le symbole chimique de l'hydrogène ?",
-      "reponse": "H",
-      "niveau": 1,
+      "question": "Quel tube relie la bouche à l'estomac ?",
+      "reponse": "L'œsophage",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -82,78 +81,101 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui se contracte pour faire bouger les os ?",
-      "reponse": "Les muscles",
+      "question": "Combien de lunes possède la Terre ?",
+      "reponse": "Une",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin ressemble à un cheval miniature ?",
+      "reponse": "L'hippocampe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment appelle-t-on les amas blancs qui flottent dans le ciel ?",
+      "reponse": "Un nuage",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Contre quelle maladie Pasteur a-t-il créé un vaccin ?",
+      "reponse": "La rage",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel astre supermassif avale même la lumière ?",
+      "reponse": "Le trou noir",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de bosses a un dromadaire ?",
+      "reponse": "Une",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz léger gonflait les dirigeables ?",
+      "reponse": "L'hydrogène",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal sans pattes creuse des galeries dans la terre du jardin ?",
+      "reponse": "Le ver de terre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels organes nous servent à respirer ?",
+      "reponse": "Les poumons",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie de la plante relie la racine à la fleur ?",
+      "reponse": "La tige",
       "niveau": 2
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal de la ferme nous donne le lait ?",
-      "reponse": "La vache",
+      "question": "Le dauphin est-il un poisson ou un mammifère ?",
+      "reponse": "Un mammifère",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
-      "reponse": "L'autruche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel dinosaure a trois cornes sur la tête ?",
-      "reponse": "Le tricératops",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel grondement suit l'éclair pendant un orage ?",
-      "reponse": "Le tonnerre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète tourne couchée sur le côté ?",
-      "reponse": "Uranus",
-      "niveau": 3,
+      "question": "Quelle lumière invisible bronze la peau ?",
+      "reponse": "Les ultraviolets",
+      "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal marin géant souffle un jet d'eau par le dos ?",
-      "reponse": "La baleine",
+      "question": "Quel insecte brille dans la nuit d'été ?",
+      "reponse": "La luciole",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle est l'étoile la plus proche de la Terre ?",
-      "reponse": "Le Soleil",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle molécule porte notre code génétique ?",
-      "reponse": "L'ADN",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel phénomène lumineux accompagne le tonnerre ?",
-      "reponse": "L'éclair",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel oiseau de nuit tourne la tête presque tout le tour ?",
-      "reponse": "Le hibou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle unité mesure le courant électrique ?",
-      "reponse": "L'ampère",
+      "question": "Quel élément chimique a le symbole N ?",
+      "reponse": "L'azote",
       "niveau": 2,
       "ages": [
         "ados",
@@ -163,26 +185,15 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel sens est associé au nez ?",
-      "reponse": "L'odorat",
+      "question": "Quelle fleur suit le Soleil ?",
+      "reponse": "Le tournesol",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "De quoi sont faites les dunes du désert ?",
-      "reponse": "De sable",
+      "question": "Quel mammifère marin sauteur siffle et vit en groupe ?",
+      "reponse": "Le dauphin",
       "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel nuage annonce l'orage ?",
-      "reponse": "Le cumulonimbus",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

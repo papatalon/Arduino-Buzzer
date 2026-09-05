@@ -7,59 +7,28 @@
   "emoji": "🧠",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quel fromage frais grince sous la dent ?",
-      "reponse": "Fromage en grains",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
+      "reponse": "Le fromage en grains",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Dans quel organe la nourriture arrive-t-elle une fois avalée ?",
+      "reponse": "L'estomac",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
-      "reponse": "Dans l'œil du dragon",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de sens possède l'être humain ?",
-      "reponse": "Cinq",
+      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
+      "reponse": "Une sirène",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quels organes filtrent le sang ?",
-      "reponse": "Les reins",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle partie de la cellule contient l'ADN ?",
-      "reponse": "Le noyau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à dents pincées accompagne le folklore ?",
-      "reponse": "La guimbarde",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage viendrait jeter du sable dans les yeux des enfants le soir ?",
-      "reponse": "Le marchand de sable",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien d'os dans le squelette humain adulte ?",
-      "reponse": "206",
-      "niveau": 2,
+      "question": "Quelle partie de l'œil donne sa couleur ?",
+      "reponse": "L'iris",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -68,75 +37,115 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quels organes nous servent à respirer ?",
-      "reponse": "Les poumons",
+      "question": "Quelles parties blanches de la bouche servent à mâcher ?",
+      "reponse": "Les dents",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir le cœur sur la main ?",
-      "reponse": "Être généreux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Qui laisse de l'argent sous l'oreiller en échange d'une dent ?",
-      "reponse": "La fée des dents",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui se contracte pour faire bouger les os ?",
-      "reponse": "Les muscles",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de vertèbres a le cou d'une girafe ?",
-      "reponse": "Sept",
+      "categorie": "Musique",
+      "question": "Quelle pianiste et chanteuse québécoise se fait appeler Cœur de pirate ?",
+      "reponse": "Béatrice Martin",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est l'os le plus long du corps humain ?",
-      "reponse": "Le fémur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quels organes nous permettent d'entendre ?",
-      "reponse": "Les oreilles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
-      "reponse": "Les branchies",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel casque de réalité virtuelle se porte sur les yeux pour entrer dans le jeu ?",
-      "reponse": "Un casque VR",
+      "question": "Quel groupe sanguin est donneur universel ?",
+      "reponse": "O négatif",
       "niveau": 2,
       "ages": [
-        "enfants",
-        "ados"
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel homme chauve à boucle d'oreille nettoie tout dans les publicités ?",
-      "reponse": "Monsieur Net",
+      "question": "Quel appareil se met sur les yeux pour entrer dans un monde en trois dimensions ?",
+      "reponse": "Un casque de réalité virtuelle",
       "niveau": 2,
       "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de poumons possède l'humain ?",
+      "reponse": "Deux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel tube relie la bouche à l'estomac ?",
+      "reponse": "L'œsophage",
+      "niveau": 2,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne qui soigne les dents ?",
+      "reponse": "Un dentiste",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle lumière invisible bronze la peau ?",
+      "reponse": "Les ultraviolets",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet de papier mâché rempli de bonbons se frappe les yeux bandés ?",
+      "reponse": "La piñata",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la température du corps humain en santé ?",
+      "reponse": "37 degrés C",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelles cellules du sang combattent les infections ?",
+      "reponse": "Globules blancs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Le pluriel de genou prend un S ou un X ?",
+      "reponse": "Un X",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
+      "reponse": "La tradition orale",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel drap blanc troué de deux yeux fait un costume d'Halloween facile ?",
+      "reponse": "Un fantôme",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -150,15 +159,30 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quels bonbons mous et colorés collent aux dents ?",
-      "reponse": "Les jujubes",
+      "categorie": "Sciences et nature",
+      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
+      "reponse": "Les branchies",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quels os protègent les poumons ?",
-      "reponse": "Les côtes",
+      "question": "Quels organes nous servent à respirer ?",
+      "reponse": "Les poumons",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle peluche électronique aux grands yeux parlait toute seule en 1998 ?",
+      "reponse": "Le Furby",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie coûter les yeux de la tête ?",
+      "reponse": "Coûter très cher",
       "niveau": 1
     }
   ]

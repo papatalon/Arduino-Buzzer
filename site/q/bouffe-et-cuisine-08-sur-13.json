@@ -8,38 +8,101 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle tarte épicée se mange à l'Action de grâce ?",
-      "reponse": "À la citrouille",
+      "question": "Quel plat japonais est une soupe de nouilles ?",
+      "reponse": "Le ramen",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
-      "reponse": "La poutine",
+      "question": "Quel récipient à queue sert à faire bouillir de l'eau sur le rond ?",
+      "reponse": "Une casserole",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande hachée garnit le pâté chinois ?",
-      "reponse": "Le bœuf",
+      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
+      "reponse": "La granita",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert sicilien est un rouleau fourré à la ricotta ?",
+      "reponse": "Le cannoli",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume mariné accompagne le burger ?",
+      "reponse": "Le cornichon",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel condiment jaune accompagne le hot-dog ?",
-      "reponse": "La moutarde",
+      "question": "Quel plat fait-on en battant des œufs à la poêle ?",
+      "reponse": "L'omelette",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel pain français long et croustillant est emblématique ?",
-      "reponse": "La baguette",
+      "question": "Quelle boulette de poulpe japonaise est une collation ?",
+      "reponse": "Le takoyaki",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine de la paella ?",
+      "reponse": "L'Espagne",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Que mâche-t-on longtemps sans jamais l'avaler ?",
+      "reponse": "De la gomme",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel gros fruit vert à chair rouge et à pépins noirs se mange en tranches l'été ?",
-      "reponse": "La pastèque",
+      "question": "Quelle boisson indienne mélange yogourt et mangue ?",
+      "reponse": "Le lassi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain plat indien cuit dans un four tandoor ?",
+      "reponse": "Le naan",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
+      "reponse": "Le fromage en grains",
       "niveau": 1
     },
     {
@@ -50,77 +113,32 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat anglais sert du poisson frit avec des frites ?",
-      "reponse": "Fish and chips",
+      "question": "Quel jus boit-on le plus souvent au déjeuner ?",
+      "reponse": "Le jus d'orange",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel chou fermenté accompagne les saucisses en Alsace ?",
-      "reponse": "La choucroute",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quel pays viennent les sushis ?",
-      "reponse": "Le Japon",
+      "question": "Quel bonbon dur se lèche au bout d'un bâton ?",
+      "reponse": "Un suçon (une sucette)",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie a une croûte et une garniture aux pommes ou aux fraises ?",
-      "reponse": "La tarte",
+      "question": "Quelle grosse volaille rôtit au four pour l'Action de grâce ?",
+      "reponse": "La dinde",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu garnit les muffins et les tartes au Québec ?",
-      "reponse": "Le bleuet",
+      "question": "Quel maïs éclate au cinéma ?",
+      "reponse": "Le popcorn",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume racine devient des frites une fois coupé ?",
-      "reponse": "La pomme de terre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel liquide jaune sert à faire cuire dans la poêle ?",
-      "reponse": "L'huile",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sucre brun humide parfume les biscuits ?",
-      "reponse": "La cassonade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la pizza ?",
-      "reponse": "L'Italie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson brésilienne mélange lime et cachaça ?",
-      "reponse": "La caipirinha",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles bouchées chinoises se servent à la vapeur ?",
-      "reponse": "Les dim sums",
+      "question": "Quel plat coréen mélange riz, légumes et œuf ?",
+      "reponse": "Le bibimbap",
       "niveau": 2,
       "ages": [
         "ados",
@@ -130,14 +148,8 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
-      "reponse": "Le pain doré",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boulette de patates est un plat acadien ?",
-      "reponse": "Poutine râpée",
+      "question": "Pays d'origine de la moussaka ?",
+      "reponse": "La Grèce",
       "niveau": 2,
       "ages": [
         "ados",
@@ -147,20 +159,32 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit brun et poilu vient de Nouvelle-Zélande ?",
-      "reponse": "Le kiwi",
+      "question": "Quel ustensile tranchant coupe la viande ?",
+      "reponse": "Le couteau",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile en fils de métal bat les œufs en mousse ?",
-      "reponse": "Le fouet",
-      "niveau": 2
+      "question": "Quel appareil chaud fait cuire les gâteaux ?",
+      "reponse": "Le four",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelles croustilles de maïs accompagnent la salsa ?",
-      "reponse": "Les nachos",
+      "question": "Quel fruit jaune les singes adorent-ils ?",
+      "reponse": "La banane",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
+      "reponse": "La poutine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quels bonbons mous et colorés collent aux dents ?",
+      "reponse": "Les jujubes",
       "niveau": 1
     }
   ]

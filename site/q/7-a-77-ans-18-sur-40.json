@@ -7,33 +7,128 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel sport de table se joue avec des queues et des billes ?",
-      "reponse": "Le billard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle l'école de Harry Potter ?",
-      "reponse": "Poudlard",
+      "categorie": "Mots et langue",
+      "question": "Que signifie être blanc comme un drap ?",
+      "reponse": "Être très pâle",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne les gants où les doigts sont ensemble ?",
-      "reponse": "Les mitaines",
+      "question": "Quelle émission culte met en scène Popa et Moman ?",
+      "reponse": "La Petite Vie",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel minuscule oiseau peut voler en arrière ?",
+      "reponse": "Le colibri",
       "niveau": 1
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle souris aux grandes oreilles rondes est la mascotte de Disney ?",
+      "reponse": "Mickey Mouse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée suit des chiots sauveteurs ?",
+      "reponse": "Pat' Patrouille",
+      "niveau": 1,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle chaîne canadienne vend du café, des beignes et des Timbits ?",
-      "reponse": "Tim Hortons",
+      "question": "Quel légume vert ressemble à un petit arbre ?",
+      "reponse": "Le brocoli",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chienne bleue australienne joue avec sa sœur Bingo dans une série ?",
-      "reponse": "Bluey",
+      "question": "Comment appelle-t-on la vidéo qui montre étape par étape comment faire quelque chose ?",
+      "reponse": "Un tutoriel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple de l'Antiquité construisait des pyramides et embaumait ses morts ?",
+      "reponse": "Les Égyptiens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de temps dure une punition mineure au hockey ?",
+      "reponse": "Deux minutes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie casser du sucre sur le dos ?",
+      "reponse": "Dire du mal",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle embarcation traverse le fleuve gelé au Carnaval ?",
+      "reponse": "Le canot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le premier jour de classe après les vacances d'été ?",
+      "reponse": "La rentrée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas mange-t-on traditionnellement le matin ?",
+      "reponse": "Le déjeuner",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de fermer ?",
+      "reponse": "Ouvrir",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style de musique se joue fort avec guitares électriques et batterie ?",
+      "reponse": "Le rock",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve traverse Paris ?",
+      "reponse": "La Seine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel circuit montréalais accueille le Grand Prix ?",
+      "reponse": "Gilles-Villeneuve",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle exploratrice a un singe nommé Babouche ?",
+      "reponse": "Dora",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -41,168 +136,45 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel ancien téléphone fallait-il tourner avec le doigt pour composer un numéro ?",
-      "reponse": "Le téléphone à cadran",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film de Noël un train magique emmène-t-il des enfants au pôle Nord ?",
-      "reponse": "Le Pôle Express",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel repas québécois se mange le midi ?",
-      "reponse": "Le dîner",
+      "categorie": "Culture pop",
+      "question": "Dans quel jeu de cartes doit-on annoncer qu'il ne reste qu'une seule carte en main ?",
+      "reponse": "Uno",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quelle carte est la plus forte au poker ?",
-      "reponse": "L'as",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Sous quel objet ne faut-il pas passer selon la superstition ?",
+      "reponse": "Une échelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel aliment orange est riche en carotène ?",
+      "reponse": "La carotte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays d'Europe est célèbre pour ses montres, son chocolat et ses Alpes ?",
+      "reponse": "La Suisse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment nomme-t-on un arbre qui garde ses aiguilles ?",
+      "reponse": "Un conifère",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel chant alpin alterne voix de tête et de poitrine ?",
-      "reponse": "Le yodel",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle particule négative tourne autour du noyau ?",
-      "reponse": "L'électron",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie se tirer une bûche ?",
-      "reponse": "Prendre une chaise",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle petite marque au milieu du ventre reste du cordon ombilical ?",
-      "reponse": "Le nombril",
+      "question": "Quelle comptine parle d'une souris qui courait dans l'herbe ?",
+      "reponse": "Une souris verte",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
-      "reponse": "Le Japon",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel dinosaure a trois cornes sur la tête ?",
-      "reponse": "Le tricératops",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat provençal mijote des légumes et aubergines ?",
-      "reponse": "La ratatouille",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film de Noël un garçon oublié à la maison piège deux cambrioleurs ?",
-      "reponse": "Maman, j'ai raté l'avion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glace utilise des pierres et des balais ?",
-      "reponse": "Le curling",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le Canada ?",
-      "reponse": "L'Amérique du Nord",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport pratiquait Michael Phelps ?",
-      "reponse": "La natation",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie jeter l'éponge ?",
-      "reponse": "Abandonner",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Culture générale",
-      "question": "Quelle créature est mi-homme mi-cheval ?",
-      "reponse": "Le centaure",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle équipe de football joue à Montréal ?",
-      "reponse": "Les Alouettes",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel objet ouvre-t-on pour se protéger de la pluie ?",
-      "reponse": "Un parapluie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Pluriel de cheval ?",
-      "reponse": "Chevaux",
+      "question": "De quelle couleur sont les Schtroumpfs ?",
+      "reponse": "Bleus",
       "niveau": 1
     }
   ]

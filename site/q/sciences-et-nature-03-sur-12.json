@@ -8,83 +8,20 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal saute et transporte son bébé dans une poche ?",
-      "reponse": "Le kangourou",
+      "question": "Comment s'appelle la maison des fourmis ?",
+      "reponse": "La fourmilière",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment nomme-t-on un arbre qui garde ses aiguilles ?",
-      "reponse": "Un conifère",
+      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
+      "reponse": "Les branchies",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle particule négative tourne autour du noyau ?",
-      "reponse": "L'électron",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel appareil enregistre les tremblements de terre ?",
-      "reponse": "Le sismographe",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelles cellules du sang combattent les infections ?",
-      "reponse": "Globules blancs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien d'os dans le squelette humain adulte ?",
-      "reponse": "206",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus petite unité du vivant ?",
-      "reponse": "La cellule",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui pousse au bout des doigts et qu'il faut couper ?",
-      "reponse": "Les ongles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle vitesse ne peut jamais être dépassée ?",
-      "reponse": "Celle de la lumière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel organe contrôle tout le corps ?",
-      "reponse": "Le cerveau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de vertèbres a le cou d'une girafe ?",
-      "reponse": "Sept",
+      "question": "Combien de cœurs possède un ver de terre ?",
+      "reponse": "Cinq",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -93,26 +30,27 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
-      "reponse": "La Grande Ourse",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand animal du monde ?",
-      "reponse": "La baleine bleue",
+      "question": "Qu'est-ce qui est le plus rapide : le son ou la lumière ?",
+      "reponse": "La lumière",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle unité mesure la force ?",
-      "reponse": "Le newton",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel poisson à l'aileron pointu fait fuir les baigneurs ?",
+      "reponse": "Le requin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel nuage collé au sol empêche de voir loin ?",
+      "reponse": "Le brouillard",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
+      "reponse": "La Grande Ourse",
+      "niveau": 3
     },
     {
       "categorie": "Sciences et nature",
@@ -127,29 +65,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de cœurs possède un ver de terre ?",
-      "reponse": "Cinq",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
+      "reponse": "L'autruche",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel élément chimique a le symbole C ?",
-      "reponse": "Le carbone",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la planète la plus proche du Soleil ?",
-      "reponse": "Mercure",
+      "question": "Quel animal marin a trois cœurs ?",
+      "reponse": "La pieuvre",
       "niveau": 2,
       "ages": [
         "ados",
@@ -159,8 +82,94 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel insecte brille dans la nuit d'été ?",
-      "reponse": "La luciole",
+      "question": "Quelle unité mesure la fréquence ?",
+      "reponse": "Le hertz",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle particule négative tourne autour du noyau ?",
+      "reponse": "L'électron",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle énergie vient du vent ?",
+      "reponse": "L'énergie éolienne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel oiseau de l'étang fait « coin-coin » ?",
+      "reponse": "Le canard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal terrestre est le plus lourd ?",
+      "reponse": "L'éléphant",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle force nous retient au sol ?",
+      "reponse": "La gravité",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle le centre de la Terre ?",
+      "reponse": "Le noyau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte est le principal pollinisateur ?",
+      "reponse": "L'abeille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel champignon fait lever le pain ?",
+      "reponse": "La levure",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal polaire a la peau noire sous son pelage blanc ?",
+      "reponse": "L'ours polaire",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels organes nous permettent de voir ?",
+      "reponse": "Les yeux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel os protège le cerveau ?",
+      "reponse": "Le crâne",
       "niveau": 1
     },
     {
@@ -171,26 +180,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel organe pompe le sang ?",
-      "reponse": "Le cœur",
+      "question": "Qu'est-ce qui fait tourner les éoliennes et voler les cerfs-volants ?",
+      "reponse": "Le vent",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel dinosaure a des plaques osseuses sur le dos ?",
-      "reponse": "Le stégosaure",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal à huit pattes tisse une toile ?",
-      "reponse": "L'araignée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel oiseau au long cou noir migre en formant un V dans le ciel ?",
-      "reponse": "La bernache (outarde)",
+      "question": "Quel animal produit les œufs qu'on mange au déjeuner ?",
+      "reponse": "La poule",
       "niveau": 1
     }
   ]

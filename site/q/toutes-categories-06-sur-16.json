@@ -7,6 +7,65 @@
   "emoji": "🎲",
   "questions": [
     {
+      "categorie": "Mots et langue",
+      "question": "Contraire de bruyant, commençant par S ?",
+      "reponse": "Silencieux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a inventé le World Wide Web ?",
+      "reponse": "Tim Berners-Lee",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin a trois cœurs ?",
+      "reponse": "La pieuvre",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve traverse Rome ?",
+      "reponse": "Le Tibre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel clou parfume le jambon de Noël ?",
+      "reponse": "Clou de girofle",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le deuxième homme à marcher sur la Lune ?",
+      "reponse": "Buzz Aldrin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture générale",
       "question": "Quelle forme n'a ni coin ni côté ?",
       "reponse": "Le cercle",
@@ -22,19 +81,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse canadienne a chanté Complicated ?",
-      "reponse": "Avril Lavigne",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la petite pièce de plastique qui gratte les cordes ?",
-      "reponse": "Le médiator",
+      "categorie": "Géographie",
+      "question": "Quel fleuve sacré traverse l'Inde ?",
+      "reponse": "Le Gange",
       "niveau": 2,
       "ages": [
         "ados",
@@ -43,39 +92,38 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
-      "reponse": "Traité de Paris",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on l'ensemble des équipes qui s'affrontent toute une saison ?",
+      "reponse": "Une ligue",
+      "niveau": 2
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
-      "reponse": "Les oreilles de lapin",
-      "niveau": 3,
+      "categorie": "Cinéma et télé",
+      "question": "Quels sont les deux héros de Toy Story ?",
+      "reponse": "Woody et Buzz",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël très doux commence par « Douce nuit, sainte nuit » ?",
+      "reponse": "Douce nuit",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle particule positive loge dans le noyau ?",
+      "reponse": "Le proton",
+      "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Combien de temps principaux a l'indicatif ?",
-      "reponse": "Huit",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel arbre géant de Californie est le plus gros du monde ?",
-      "reponse": "Le séquoia",
+      "question": "Quelle est la dernière lettre de l'alphabet grec ?",
+      "reponse": "Oméga",
       "niveau": 2,
       "ages": [
         "ados",
@@ -85,25 +133,57 @@
     },
     {
       "categorie": "Sports",
-      "question": "Avec quel objet frappe-t-on la balle au baseball ?",
-      "reponse": "Le bâton",
+      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
+      "reponse": "Un sauveteur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel musicien aveugle a chanté Georgia on My Mind ?",
+      "reponse": "Ray Charles",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle rue étroite du Vieux-Québec est très photographiée ?",
+      "reponse": "Petit-Champlain",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles peluches rondes et pastel portent un prénom et une histoire sur l'étiquette ?",
+      "reponse": "Les Squishmallows",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle la chouette de Harry Potter ?",
+      "reponse": "Hedwige",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle reine de France fut guillotinée en 1793 ?",
-      "reponse": "Marie-Antoinette",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on l'ensemble des histoires des dieux et des héros grecs ?",
+      "reponse": "La mythologie",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport olympique mélange danse et piscine ?",
-      "reponse": "Natation artistique",
+      "question": "Tous les combien d'années a lieu la Coupe du monde de soccer ?",
+      "reponse": "Quatre ans",
       "niveau": 1,
       "ages": [
         "ados",
@@ -113,108 +193,26 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle tourte de viandes vient du Lac-Saint-Jean ?",
-      "reponse": "Le cipaille",
+      "question": "Comment appelle-t-on la personne qui surveille la cour d'école à la récréation ?",
+      "reponse": "Un surveillant",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert sicilien est un rouleau fourré à la ricotta ?",
+      "reponse": "Le cannoli",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelles chutes célèbres sont à la frontière canado-américaine ?",
-      "reponse": "Niagara",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Qui a inventé le World Wide Web ?",
-      "reponse": "Tim Berners-Lee",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel style triste est né dans le delta du Mississippi ?",
-      "reponse": "Le blues",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de combat japonais se pratique pieds nus en kimono blanc ?",
-      "reponse": "Le karaté",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fête hivernale illumine le Vieux-Port de Montréal ?",
-      "reponse": "Igloofest",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel volcan sicilien est le plus actif d'Europe ?",
-      "reponse": "L'Etna",
+      "question": "Quel rappeur américain a joué dans 8 Mile ?",
+      "reponse": "Eminem",
       "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle est la première personne du pluriel ?",
-      "reponse": "Nous",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle sirène Disney rêve de vivre sur terre ?",
-      "reponse": "Ariel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle salade libanaise contient persil et boulgour ?",
-      "reponse": "Le taboulé",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal a la langue la plus longue par rapport au corps ?",
-      "reponse": "Le caméléon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat robot bleu vient du futur ?",
-      "reponse": "Doraemon",
-      "niveau": 3,
       "ages": [
         "ados",
         "adultes"
@@ -222,18 +220,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle gomme rose se vendait avec une petite bande dessinée dans l'emballage ?",
-      "reponse": "La Bazooka",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume en longues tiges vertes croque avec du beurre d'arachide ?",
-      "reponse": "Le céleri",
+      "question": "Quel cheval blanc porte une corne unique sur le front ?",
+      "reponse": "Une licorne",
       "niveau": 1
     }
   ]

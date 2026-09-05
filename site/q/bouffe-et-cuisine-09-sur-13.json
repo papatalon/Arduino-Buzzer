@@ -8,14 +8,8 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel grain blanc met-on dans la salière ?",
-      "reponse": "Le sel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat coréen mélange riz, légumes et œuf ?",
-      "reponse": "Le bibimbap",
+      "question": "Quelles noix entrent dans le pesto génois ?",
+      "reponse": "Les pignons",
       "niveau": 2,
       "ages": [
         "ados",
@@ -25,25 +19,31 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit garnit la tarte Tatin ?",
-      "reponse": "La pomme",
-      "niveau": 2,
+      "question": "Quel thé japonais en poudre est vert vif ?",
+      "reponse": "Le matcha",
+      "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle épice noire moulue accompagne le sel sur la table ?",
-      "reponse": "Le poivre",
+      "question": "Quel condiment jaune accompagne le hot-dog ?",
+      "reponse": "La moutarde",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle entrée italienne est du pain grillé garni ?",
-      "reponse": "La bruschetta",
+      "question": "Quel plat mexicain plie une tortilla garnie de viande et de fromage ?",
+      "reponse": "Le taco",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel champignon de luxe est déterré par des chiens ?",
+      "reponse": "La truffe",
       "niveau": 1,
       "ages": [
         "ados",
@@ -53,8 +53,65 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle crêpe française est flambée à l'orange ?",
-      "reponse": "Crêpe Suzette",
+      "question": "Quelle boisson chaude est faite de grains torréfiés ?",
+      "reponse": "Le café",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel poisson orange est populaire en sushi ?",
+      "reponse": "Le saumon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel condiment rouge accompagne les frites et le pâté chinois ?",
+      "reponse": "Le ketchup",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel récipient plat sert à faire revenir les œufs ?",
+      "reponse": "Une poêle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel liquide acide, tiré du vin, se mélange à l'huile sur la salade ?",
+      "reponse": "Le vinaigre",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson pétillante est du thé fermenté ?",
+      "reponse": "Le kombucha",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle volaille trône au repas de Noël ?",
+      "reponse": "La dinde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle épice noire moulue accompagne le sel sur la table ?",
+      "reponse": "Le poivre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat espagnol froid est une soupe de tomates ?",
+      "reponse": "Le gaspacho",
       "niveau": 2,
       "ages": [
         "ados",
@@ -64,47 +121,43 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel accompagnement de Noël est une purée blanche ?",
-      "reponse": "Patates pilées",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Dans quel objet à anse boit-on un café chaud ?",
-      "reponse": "Une tasse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume vert en feuilles rendait Popeye très fort ?",
-      "reponse": "L'épinard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle noix compose le beurre le plus vendu ?",
-      "reponse": "L'arachide",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel gros fruit orangé à noyau plat vient des pays chauds ?",
-      "reponse": "La mangue",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel oignon frit en anneaux accompagne le burger ?",
-      "reponse": "Rondelles d'oignon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel biscuit italien se trempe dans le café ?",
-      "reponse": "Le biscotti",
+      "question": "Comment s'appelle le sel récolté à la surface des marais ?",
+      "reponse": "Fleur de sel",
       "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit principal compose le ketchup ?",
+      "reponse": "La tomate",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume rouge, jaune ou vert se coupe en lanières croquantes ?",
+      "reponse": "Le poivron",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce verte argentine accompagne les grillades ?",
+      "reponse": "Le chimichurri",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat brésilien est un ragoût de haricots noirs ?",
+      "reponse": "La feijoada",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -117,14 +170,8 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel petit légume rond, rouge dehors et blanc dedans, pique la langue ?",
-      "reponse": "Le radis",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat français gratine bœuf haché et purée ?",
-      "reponse": "Hachis Parmentier",
+      "question": "Quelle épice orange colore le curry ?",
+      "reponse": "Le curcuma",
       "niveau": 2,
       "ages": [
         "ados",
@@ -134,59 +181,20 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle semoule accompagne les plats du Maghreb ?",
-      "reponse": "Le couscous",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle galette de maïs enroule les fajitas ?",
-      "reponse": "La tortilla",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel clou parfume le jambon de Noël ?",
-      "reponse": "Clou de girofle",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Dans quel contenant rond et creux verse-t-on les céréales ?",
-      "reponse": "Le bol",
+      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
+      "reponse": "Le homard",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à base de tomates nappe les pizzas ?",
-      "reponse": "La sauce tomate",
+      "question": "Quelle pâte italienne en petits tubes courbés se mange au fromage ?",
+      "reponse": "Le macaroni",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment blanc, fait de lait, mange-t-on avec des fruits au déjeuner ?",
-      "reponse": "Le yogourt",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sucre du terroir remplace la cassonade ?",
-      "reponse": "Sucre d'érable",
+      "question": "Quel légume racine devient des frites une fois coupé ?",
+      "reponse": "La pomme de terre",
       "niveau": 1
     }
   ]

@@ -8,6 +8,29 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
+      "question": "Quelle saison vient après l'hiver ?",
+      "reponse": "Le printemps",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal rayé remplit ses joues de noix ?",
+      "reponse": "Le tamia (suisse)",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qui a développé la théorie de la relativité ?",
+      "reponse": "Einstein",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
       "question": "Quelle unité mesure la puissance ?",
       "reponse": "Le watt",
       "niveau": 2,
@@ -16,6 +39,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle petite fenêtre de l'œil laisse entrer la lumière ?",
+      "reponse": "La pupille",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -30,27 +59,85 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal noir et blanc dégage une odeur terrible quand il a peur ?",
-      "reponse": "La mouffette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui fait tourner les éoliennes et voler les cerfs-volants ?",
-      "reponse": "Le vent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle partie de la plante s'enfonce dans la terre ?",
-      "reponse": "La racine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel instrument mesure la pression atmosphérique ?",
-      "reponse": "Le baromètre",
+      "question": "Quel animal est le plus gros rongeur du monde ?",
+      "reponse": "Le capybara",
       "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie colorée de la fleur attire les abeilles ?",
+      "reponse": "Les pétales",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qu'est-ce qui se contracte pour faire bouger les os ?",
+      "reponse": "Les muscles",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle le passage de gaz à liquide ?",
+      "reponse": "La condensation",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel sens est associé au nez ?",
+      "reponse": "L'odorat",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gros animal noir et blanc de Chine se nourrit de bambou ?",
+      "reponse": "Le panda",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile peut vivre plus de 150 ans ?",
+      "reponse": "La tortue géante",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène lumineux colore le ciel polaire ?",
+      "reponse": "Aurore boréale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle articulation plie le bras en son milieu ?",
+      "reponse": "Le coude",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment nomme-t-on un arbre qui garde ses aiguilles ?",
+      "reponse": "Un conifère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin géant souffle un jet d'eau par le dos ?",
+      "reponse": "La baleine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel élément chimique a le symbole C ?",
+      "reponse": "Le carbone",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -70,14 +157,20 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle saison vient après l'hiver ?",
-      "reponse": "Le printemps",
+      "question": "Quelle est la plus petite unité de la matière ?",
+      "reponse": "L'atome",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gros fruit d'été est fait d'eau à plus de 90 pour cent ?",
-      "reponse": "Le melon d'eau",
+      "question": "Comment appelle-t-on la grosse partie de l'arbre qui porte les branches ?",
+      "reponse": "Le tronc",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de cavités possède le cœur humain ?",
+      "reponse": "Quatre",
       "niveau": 2,
       "ages": [
         "ados",
@@ -87,103 +180,15 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
-      "reponse": "Le raton laveur",
+      "question": "Que devient l'eau quand elle gèle ?",
+      "reponse": "De la glace",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel oiseau noir et blanc de l'Antarctique ne sait pas voler ?",
-      "reponse": "Le manchot",
+      "question": "Le Soleil est-il une planète ou une étoile ?",
+      "reponse": "Une étoile",
       "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la formule chimique de l'eau ?",
-      "reponse": "H2O",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle onde invisible réchauffe les aliments au four ?",
-      "reponse": "Les micro-ondes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est l'os le plus long du corps humain ?",
-      "reponse": "Le fémur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal construit des barrages dans les rivières ?",
-      "reponse": "Le castor",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle vitamine fabrique la peau au soleil ?",
-      "reponse": "La vitamine D",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de lunes possède la Terre ?",
-      "reponse": "Une",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel gaz les plantes rejettent-elles le jour ?",
-      "reponse": "L'oxygène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui est le plus rapide : le son ou la lumière ?",
-      "reponse": "La lumière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quels points brillants voit-on dans le ciel par une nuit claire ?",
-      "reponse": "Les étoiles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal produit les œufs qu'on mange au déjeuner ?",
-      "reponse": "La poule",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel événement cache le Soleil derrière la Lune ?",
-      "reponse": "Une éclipse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on l'ensemble des os du corps ?",
-      "reponse": "Le squelette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel scientifique a inventé le paratonnerre ?",
-      "reponse": "Benjamin Franklin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

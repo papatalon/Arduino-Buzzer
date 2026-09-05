@@ -7,106 +7,49 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Sur quel pont danse-t-on tous en rond dans la chanson ?",
-      "reponse": "Le pont d'Avignon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel code de points et de traits date de 1838 ?",
-      "reponse": "Le morse",
+      "categorie": "Culture générale",
+      "question": "Dans quel jeu vidéo aménage-t-on une île en remboursant un raton laveur ?",
+      "reponse": "Animal Crossing",
       "niveau": 1,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel organisme veille sur la langue française au Québec ?",
-      "reponse": "L'OQLF",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle médaille reçoit le troisième aux Jeux olympiques ?",
-      "reponse": "La médaille de bronze",
+      "question": "Comment appelle-t-on la ligne blanche que le coureur ne doit pas dépasser au départ ?",
+      "reponse": "La ligne de départ",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel père de famille travaille dans une centrale nucléaire ?",
-      "reponse": "Homer Simpson",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de roues a un tricycle ?",
-      "reponse": "Trois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de pattes a un oiseau ?",
-      "reponse": "Deux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ogre a un ami âne très bavard ?",
-      "reponse": "Shrek",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie appuyer sur le champignon ?",
-      "reponse": "Accélérer",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Belgique ?",
-      "reponse": "Bruxelles",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle vinaigrette porte le nom d'un archipel ?",
-      "reponse": "Mille-Îles",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de lettres dans l'alphabet français ?",
-      "reponse": "26",
+      "question": "Quelle boule de pâte frite est saupoudrée de sucre ?",
+      "reponse": "Le beigne",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle console de jeu vidéo est fabriquée par Microsoft ?",
-      "reponse": "La Xbox",
+      "question": "Quelle boisson chaude sucrée réchauffe après une glissade en traîneau ?",
+      "reponse": "Un chocolat chaud",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus haut sommet du monde ?",
+      "reponse": "L'Everest",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le petit chien blanc de Tintin ?",
+      "reponse": "Milou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse est surnommée Queen B ?",
+      "reponse": "Beyoncé",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -115,93 +58,130 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir les yeux dans la graisse de bines ?",
-      "reponse": "Être dans la lune",
+      "categorie": "Sports",
+      "question": "Quel poste lance le ballon au football ?",
+      "reponse": "Le quart-arrière",
       "niveau": 1,
       "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de monter ?",
+      "reponse": "Descendre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal terrestre est le plus lourd ?",
+      "reponse": "L'éléphant",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle fleur rouge porte-t-on en novembre en souvenir des soldats ?",
+      "reponse": "Le coquelicot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle rôtisserie québécoise est célèbre pour son poulet BBQ ?",
+      "reponse": "St-Hubert",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Sven dans La Reine des neiges ?",
+      "reponse": "Un renne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jouet d'été arrose les amis d'un jet d'eau ?",
+      "reponse": "Un pistolet à eau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel dinosaure a des plaques osseuses sur le dos ?",
+      "reponse": "Le stégosaure",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Combien de lignes compte le métro de Montréal ?",
+      "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat indien s'appelle butter chicken en anglais ?",
+      "reponse": "Poulet au beurre",
+      "niveau": 1,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne produit le plus de pétrole ?",
-      "reponse": "L'Alberta",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle molécule porte notre code génétique ?",
-      "reponse": "L'ADN",
+      "question": "Quel est le plus grand océan ?",
+      "reponse": "Le Pacifique",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel style musical vient de la Jamaïque ?",
-      "reponse": "Le reggae",
+      "question": "Quel chanteur est surnommé le King ?",
+      "reponse": "Elvis Presley",
       "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel mammifère marin blanc remonte le Saguenay ?",
-      "reponse": "Le béluga",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Où vivent les ours polaires ?",
-      "reponse": "En Arctique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel cowboy jouet a un serpent dans sa botte ?",
-      "reponse": "Woody",
+      "question": "Quel mot québécois désigne des chaussures de sport ?",
+      "reponse": "Des espadrilles",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Sur quoi dépose-t-on son repas à table ?",
-      "reponse": "Une assiette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
-      "reponse": "Le club sandwich",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Dans quel jeu faut-il démasquer l'imposteur à bord d'un vaisseau spatial ?",
-      "reponse": "Among Us",
+      "question": "Quelle célèbre soupe française est gratinée ?",
+      "reponse": "Soupe à l'oignon",
       "niveau": 1,
       "ages": [
-        "enfants",
-        "ados"
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que veut dire SVP ?",
-      "reponse": "S'il vous plaît",
+      "question": "Comment appelle-t-on la personne qui répare la tuyauterie ?",
+      "reponse": "Un plombier",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport se joue sur une table avec une petite balle et deux palettes ?",
-      "reponse": "Le ping-pong",
+      "categorie": "Culture générale",
+      "question": "Quelle couleur obtient-on en mélangeant du bleu et du jaune ?",
+      "reponse": "Vert",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quelle lettre vient après le M dans l'alphabet ?",
+      "reponse": "N",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel petit oiseau jaune échappe toujours au chat Grosminet ?",
+      "reponse": "Titi",
       "niveau": 1
     }
   ]

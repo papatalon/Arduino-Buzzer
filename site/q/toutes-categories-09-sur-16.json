@@ -8,9 +8,21 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quel organe produit l'insuline ?",
-      "reponse": "Le pancréas",
-      "niveau": 2,
+      "question": "Quel animal rampe sans pattes ?",
+      "reponse": "Le serpent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville du Québec ?",
+      "reponse": "Montréal",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne produit le plus de pétrole ?",
+      "reponse": "L'Alberta",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -18,28 +30,32 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel lac écossais abriterait un monstre ?",
-      "reponse": "Le Loch Ness",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel manège fait tourner des chevaux de bois en musique ?",
-      "reponse": "Un carrousel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel clown est l'ennemi juré de Batman ?",
-      "reponse": "Le Joker",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quelle échelle mesure les séismes ?",
-      "reponse": "Richter",
-      "niveau": 1,
+      "question": "Comment appelle-t-on l'ensemble des os du corps ?",
+      "reponse": "Le squelette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la maison de bois du chien dans la cour ?",
+      "reponse": "Une niche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
+      "reponse": "Le Jolly Roger",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la banque coopérative très répandue au Québec ?",
+      "reponse": "La caisse populaire",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -48,35 +64,9 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit vert ou jaune a la forme d'une goutte ?",
-      "reponse": "La poire",
+      "question": "Quelle chaîne canadienne vend du café, des beignes et des Timbits ?",
+      "reponse": "Tim Hortons",
       "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel hockeyeur était surnommé le Rocket ?",
-      "reponse": "Maurice Richard",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le pôle Sud ?",
-      "reponse": "L'Antarctique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
-      "reponse": "Sol",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Culture générale",
@@ -85,16 +75,16 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel signe de ponctuation sépare deux idées dans une phrase ?",
-      "reponse": "La virgule",
+      "categorie": "Sciences et nature",
+      "question": "Qui a découvert la gravitation ?",
+      "reponse": "Newton",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on une émission audio qu'on écoute quand on veut ?",
-      "reponse": "Un balado",
-      "niveau": 2,
+      "categorie": "Histoire",
+      "question": "Quel drapeau les astronautes ont-ils planté sur la Lune en 1969 ?",
+      "reponse": "Le drapeau américain",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -102,43 +92,18 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle crise économique a suivi le krach de 1929 ?",
-      "reponse": "La Grande Dépression",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel tambour à main vient d'Irlande ?",
-      "reponse": "Le bodhrán",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
+      "reponse": "Les Gardiens",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle confiserie d'érable se roule sur la neige ?",
-      "reponse": "La tire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
-      "reponse": "L'étoile de mer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la couche de glace qui se forme au bord des toits ?",
-      "reponse": "Une barrière de glace",
-      "niveau": 3,
+      "question": "Quel fromage bleu français au lait de brebis est le plus célèbre ?",
+      "reponse": "Le roquefort",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -155,29 +120,66 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel numéro portait Maurice Richard ?",
-      "reponse": "9",
-      "niveau": 1,
+      "question": "Comment appelle-t-on la faute qui envoie un joueur de hockey au banc deux minutes ?",
+      "reponse": "Une punition",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu télévisé québécois demande de repérer celui qui ment ?",
+      "reponse": "Le Tricheur",
+      "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse a chanté Rolling in the Deep ?",
-      "reponse": "Adele",
+      "question": "Quelle note vient juste après le ré ?",
+      "reponse": "Le mi",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la carte du monde en forme de boule qui tourne sur un pied ?",
+      "reponse": "Un globe terrestre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de danse acrobatique se pratique au sol avec de la musique ?",
+      "reponse": "Le breakdance",
       "niveau": 2,
       "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Capitale du Japon ?",
-      "reponse": "Tokyo",
-      "niveau": 1,
+      "categorie": "Cinéma et télé",
+      "question": "Quel superhéros enfile son costume dans une cabine téléphonique ?",
+      "reponse": "Superman",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle université francophone montréalaise est la plus grande ?",
+      "reponse": "UdeM",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée récompense le joueur le plus utile de la LNH ?",
+      "reponse": "Hart",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -186,8 +188,14 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Petit du lapin ?",
-      "reponse": "Le lapereau",
+      "question": "Le pluriel de caillou prend un S ou un X ?",
+      "reponse": "Un X",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel disque argenté a remplacé la cassette pour la musique, puis a été remplacé à son tour ?",
+      "reponse": "Le disque compact",
       "niveau": 2,
       "ages": [
         "ados",
@@ -196,36 +204,10 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Combien de billes rouges au snooker ?",
-      "reponse": "Quinze",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur de hockey est surnommé La Merveille ?",
-      "reponse": "Wayne Gretzky",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel chef mongol a fondé un immense empire ?",
-      "reponse": "Gengis Khan",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Musique",
+      "question": "Quelle comptine fait entendre le coucou dans une forêt lointaine ?",
+      "reponse": "Dans la forêt lointaine",
+      "niveau": 3
     }
   ]
 }

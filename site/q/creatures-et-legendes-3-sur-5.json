@@ -7,40 +7,21 @@
   "emoji": "🐉",
   "questions": [
     {
-      "categorie": "Culture générale",
-      "question": "Quel dieu grec règne sur les mers ?",
-      "reponse": "Poséidon",
+      "categorie": "Cinéma et télé",
+      "question": "Quel ogre a un ami âne très bavard ?",
+      "reponse": "Shrek",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Dans quel conte Disney une rose est-elle sous cloche ?",
-      "reponse": "La Belle et la Bête",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel lac écossais abriterait un monstre ?",
-      "reponse": "Le Loch Ness",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel roi légendaire cherchait le Graal ?",
-      "reponse": "Le roi Arthur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle friandise d'Halloween est une pomme enrobée de caramel rouge ?",
-      "reponse": "La pomme de tire",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
-      "reponse": "King Kong",
-      "niveau": 1
+      "question": "Quel méchant sorcier des Schtroumpfs a un chat ?",
+      "reponse": "Gargamel",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -49,39 +30,18 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Dans quel conte un loup souffle-t-il sur des maisons de paille, de bois et de briques ?",
-      "reponse": "Les Trois Petits Cochons",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle épée légendaire appartenait au roi Arthur ?",
-      "reponse": "Excalibur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle déesse grecque a donné son nom à Athènes ?",
-      "reponse": "Athéna",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quelles petites créatures jaunes adorent les bananes ?",
-      "reponse": "Les Minions",
-      "niveau": 1
+      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
+      "reponse": "Arthur Laroche",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
-      "question": "Sous quel objet ne faut-il pas passer selon la superstition ?",
-      "reponse": "Une échelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel chien à trois têtes garde les enfers ?",
-      "reponse": "Cerbère",
+      "question": "Quel dieu grec messager porte des sandales ailées ?",
+      "reponse": "Hermès",
       "niveau": 2,
       "ages": [
         "ados",
@@ -90,27 +50,54 @@
       ]
     },
     {
+      "categorie": "Musique",
+      "question": "Quelle comédie musicale raconte un fantôme masqué ?",
+      "reponse": "Fantôme de l'Opéra",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture générale",
-      "question": "Quel magicien conseillait le roi Arthur ?",
-      "reponse": "Merlin",
+      "question": "Quelle créature est mi-homme mi-cheval ?",
+      "reponse": "Le centaure",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel ballon géant à panier et à air chaud a été le premier engin à transporter des humains dans le ciel ?",
-      "reponse": "La montgolfière",
+      "categorie": "Québec",
+      "question": "Quel chanteur des Colocs est une légende ?",
+      "reponse": "Dédé Fortin",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Dans quel conte un loup souffle-t-il sur des maisons de paille, de bois et de briques ?",
+      "reponse": "Les Trois Petits Cochons",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on une histoire de fées, de princes et de sorcières ?",
-      "reponse": "Un conte",
+      "categorie": "Culture pop",
+      "question": "Quel géant des contes crie qu'il sent la chair fraîche ?",
+      "reponse": "L'ogre",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel objet cassé porte sept ans de malheur ?",
+      "reponse": "Le miroir",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle série animée japonaise suit Son Goku ?",
-      "reponse": "Dragon Ball",
+      "question": "Quelle créature verte et grincheuse veut voler le Noël des Chou ?",
+      "reponse": "Le Grinch",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -120,26 +107,82 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle créature légendaire fait peur aux enfants ?",
-      "reponse": "Bonhomme Sept-Heures",
+      "question": "Quelle jeune fille a dansé avec le diable dans la légende ?",
+      "reponse": "Rose Latulippe",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit orange se sculpte à l'Halloween ?",
+      "reponse": "La citrouille",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel oiseau mythique renaît de ses cendres ?",
-      "reponse": "Le phénix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Autour de quelle table siégeaient les chevaliers d'Arthur ?",
-      "reponse": "La Table ronde",
+      "question": "Quelle déesse grecque a donné son nom à Athènes ?",
+      "reponse": "Athéna",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel frère et quelle sœur de conte sèment des miettes de pain dans la forêt ?",
-      "reponse": "Hansel et Gretel",
+      "question": "Quelle fillette de conte entre chez trois ours et goûte leur gruau ?",
+      "reponse": "Boucle d'or",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle créature irlandaise garde un trésor ?",
+      "reponse": "Le farfadet (leprechaun)",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelles petites créatures jaunes adorent les bananes ?",
+      "reponse": "Les Minions",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel bonhomme de biscuit court dans les contes ?",
+      "reponse": "Pain d'épice",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle déesse grecque est née de l'écume ?",
+      "reponse": "Aphrodite",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel animal, s'il croise votre chemin, porterait malheur ?",
+      "reponse": "Le chat noir",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
+      "reponse": "Une sirène",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel sport sorcier se joue sur des balais ?",
+      "reponse": "Le quidditch",
       "niveau": 1
     }
   ]

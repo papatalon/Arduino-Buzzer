@@ -7,15 +7,65 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Sports",
+      "question": "Combien de minutes dure un match de soccer ?",
+      "reponse": "90",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture générale",
-      "question": "Combien de côtés a un pentagone ?",
-      "reponse": "Cinq",
+      "question": "Quel animal nous donne la laine ?",
+      "reponse": "Le mouton",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel thé japonais en poudre est vert vif ?",
-      "reponse": "Le matcha",
+      "categorie": "Cinéma et télé",
+      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
+      "reponse": "King Kong",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel duo de La Petite Vie dort debout ?",
+      "reponse": "Popa et Moman",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel artiste fait disparaître des objets devant un public ébahi ?",
+      "reponse": "Un magicien",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle rue commerciale célèbre traverse Montréal ?",
+      "reponse": "Sainte-Catherine",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle nounou anglaise vole avec un parapluie ?",
+      "reponse": "Mary Poppins",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel joueur de la NBA est surnommé King James ?",
+      "reponse": "LeBron James",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -24,159 +74,119 @@
       ]
     },
     {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne borde le Pacifique ?",
+      "reponse": "Colombie-Britannique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel outil racle la neige des pare-brise ?",
+      "reponse": "Un gratteux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel poisson à l'aileron pointu fait fuir les baigneurs ?",
+      "reponse": "Le requin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle équipe de hockey joue au Centre Bell ?",
+      "reponse": "Les Canadiens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de minutes dans une heure ?",
+      "reponse": "60",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui chante une chanson ?",
+      "reponse": "Un chanteur",
+      "niveau": 1
+    },
+    {
       "categorie": "Histoire",
-      "question": "Qui a fondé Facebook en 2004 ?",
-      "reponse": "Mark Zuckerberg",
+      "question": "Comment appelait-on la colonie française en Amérique du Nord ?",
+      "reponse": "La Nouvelle-France",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie mettre la table ?",
+      "reponse": "Préparer le repas",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quels trois étages composent le pâté chinois ?",
+      "reponse": "Bœuf maïs patates",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert coloré tremble dans son bol et se prépare avec de la poudre ?",
+      "reponse": "Le Jell-O",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne assise aux commandes d'un avion ?",
+      "reponse": "Un pilote",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle particule négative tourne autour du noyau ?",
+      "reponse": "L'électron",
       "niveau": 1,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir les yeux dans la graisse de bines ?",
+      "reponse": "Être dans la lune",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à cordes se joue debout, coincé sous le menton ?",
+      "reponse": "Le violon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle couleur de carton avertit un joueur au soccer ?",
+      "reponse": "Jaune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel café italien très court se boit d'un trait ?",
+      "reponse": "L'espresso",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays est surnommé la botte de l'Europe ?",
-      "reponse": "L'Italie",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on au Québec les boissons gazeuses ?",
-      "reponse": "La liqueur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle reine a des pouvoirs de glace chez Disney ?",
-      "reponse": "Elsa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros mutant a des griffes en adamantium ?",
-      "reponse": "Wolverine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel signe encadre les paroles rapportées ?",
-      "reponse": "Les guillemets",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient du Soleil ?",
-      "reponse": "L'énergie solaire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage au chapeau pointu vole sur un balai ?",
-      "reponse": "Une sorcière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle fleur offre-t-on à la Saint-Valentin ?",
-      "reponse": "La rose",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel accompagnement de Noël est une purée blanche ?",
-      "reponse": "Patates pilées",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel fromage frais grince sous la dent ?",
-      "reponse": "Fromage en grains",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel appareil mesure le temps d'une course à la seconde près ?",
-      "reponse": "Un chronomètre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle plante compose le menu du panda géant ?",
-      "reponse": "Le bambou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel petit disque optique a remplacé la cassette ?",
-      "reponse": "Le CD",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat indien s'appelle butter chicken en anglais ?",
-      "reponse": "Poulet au beurre",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage au nez rouge et aux souliers immenses fait rire les enfants ?",
-      "reponse": "Un clown",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Que chausse-t-on aux pieds pour aller sur la glace ?",
-      "reponse": "Des patins",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle est la première personne du pluriel ?",
-      "reponse": "Nous",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit de la chèvre ?",
-      "reponse": "Le chevreau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la larve du papillon ?",
-      "reponse": "La chenille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel milliardaire Marvel a un réacteur dans la poitrine ?",
-      "reponse": "Tony Stark",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment s'appelle le plus gros tambour d'une fanfare ?",
-      "reponse": "La grosse caisse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de dalmatiens dans le film de Disney ?",
-      "reponse": "101",
+      "question": "Comment appelle-t-on une immense étendue de sable sans eau ?",
+      "reponse": "Un désert",
       "niveau": 1
     }
   ]

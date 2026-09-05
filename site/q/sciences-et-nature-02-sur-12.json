@@ -8,59 +8,80 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Le dauphin est-il un poisson ou un mammifère ?",
-      "reponse": "Un mammifère",
+      "question": "Combien de planètes dans le système solaire ?",
+      "reponse": "Huit",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel phénomène fait flotter les bateaux ?",
-      "reponse": "Poussée d'Archimède",
+      "question": "Comment s'appelle la transformation de la chenille ?",
+      "reponse": "La métamorphose",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal hurle à la lune et chasse en meute ?",
+      "reponse": "Le loup",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?",
+      "reponse": "Le tyrannosaure",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle vitesse ne peut jamais être dépassée ?",
+      "reponse": "Celle de la lumière",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de pattes possède un insecte ?",
+      "reponse": "Six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel grand oiseau rose se tient souvent sur une seule patte ?",
+      "reponse": "Le flamant rose",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal d'Amérique du Sud se déplace très lentement, suspendu aux branches ?",
+      "reponse": "Le paresseux",
       "niveau": 2,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est l'animal terrestre le plus rapide ?",
-      "reponse": "Le guépard",
+      "question": "Comment s'appelle la maison des abeilles ?",
+      "reponse": "La ruche",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle planète est surnommée la planète rouge ?",
-      "reponse": "Mars",
+      "question": "Quels petits grains de glace tombent parfois pendant un orage d'été ?",
+      "reponse": "La grêle",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte produit le miel ?",
+      "reponse": "L'abeille",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment mesure-t-on la force des ouragans ?",
-      "reponse": "Saffir-Simpson",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelles gouttes d'eau tombent des nuages ?",
-      "reponse": "La pluie",
+      "question": "Quel instrument sert à observer les étoiles ?",
+      "reponse": "Le télescope",
       "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle partie de l'œil donne sa couleur ?",
-      "reponse": "L'iris",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -75,14 +96,43 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel appareil transforme le vent en électricité ?",
-      "reponse": "L'éolienne",
+      "question": "Quel est le symbole chimique de l'oxygène ?",
+      "reponse": "O",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle la roche fondue sous terre ?",
+      "reponse": "Le magma",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appellent les anneaux du tronc d'un arbre ?",
-      "reponse": "Les cernes",
+      "question": "Quel insecte rouge à points noirs porte bonheur ?",
+      "reponse": "La coccinelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qu'est-ce qui pousse au bout des doigts et qu'il faut couper ?",
+      "reponse": "Les ongles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal roux au museau pointu passe pour rusé dans les fables ?",
+      "reponse": "Le renard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la planète la plus éloignée du Soleil ?",
+      "reponse": "Neptune",
       "niveau": 2,
       "ages": [
         "ados",
@@ -92,8 +142,26 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de dents de lait a un enfant ?",
-      "reponse": "20",
+      "question": "Quelle est la durée d'une année sur Terre ?",
+      "reponse": "365 jours",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment appelle-t-on la peau rugueuse qui recouvre le tronc ?",
+      "reponse": "L'écorce",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz rend les ballons de fête flottants ?",
+      "reponse": "L'hélium",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel groupe sanguin est donneur universel ?",
+      "reponse": "O négatif",
       "niveau": 2,
       "ages": [
         "ados",
@@ -103,14 +171,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle partie de la plante absorbe l'eau ?",
-      "reponse": "Les racines",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand organe du corps humain ?",
-      "reponse": "La peau",
+      "question": "Quel arbre géant de Californie est le plus gros du monde ?",
+      "reponse": "Le séquoia",
       "niveau": 2,
       "ages": [
         "ados",
@@ -120,91 +182,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel petit animal à coquille rampe lentement en laissant une trace ?",
-      "reponse": "L'escargot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel reptile change de couleur pour se camoufler ?",
-      "reponse": "Le caméléon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
-      "reponse": "L'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
-      "reponse": "La dionée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel grand singe est le plus proche de l'homme ?",
-      "reponse": "Le chimpanzé",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle unité mesure la fréquence ?",
-      "reponse": "Le hertz",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel tube relie la bouche à l'estomac ?",
-      "reponse": "L'œsophage",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelles parties de l'arbre changent de couleur en automne ?",
-      "reponse": "Les feuilles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de lunes possède Mars ?",
-      "reponse": "Deux",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le plus petit os du corps ?",
-      "reponse": "L'étrier",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Que tombe-t-il du ciel en flocons blancs l'hiver ?",
-      "reponse": "La neige",
+      "question": "Quelle énergie vient du Soleil ?",
+      "reponse": "L'énergie solaire",
       "niveau": 1
     }
   ]

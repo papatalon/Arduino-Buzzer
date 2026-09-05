@@ -8,29 +8,30 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelle fut la première île d'exil de Napoléon ?",
-      "reponse": "L'île d'Elbe",
-      "niveau": 3,
+      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
+      "reponse": "Challenger",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
-      "reponse": "Le maelstrom",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat botté a de grands yeux attendrissants ?",
-      "reponse": "Chat Potté",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'ensemble des spectateurs assis devant la scène ?",
+      "reponse": "Le public",
       "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel joueur de hockey est surnommé La Merveille ?",
+      "reponse": "Wayne Gretzky",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -44,47 +45,52 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport de combat n'utilise que les poings ?",
-      "reponse": "La boxe",
+      "categorie": "Géographie",
+      "question": "Quel océan entoure le pôle Nord ?",
+      "reponse": "L'océan Arctique",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de sale ?",
-      "reponse": "Propre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle saucisse chaude se glisse dans un pain allongé ?",
-      "reponse": "Le hot-dog",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel premier ministre libéral a gouverné de 2003 à 2012 ?",
-      "reponse": "Jean Charest",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel duo français portait des casques de robots ?",
-      "reponse": "Daft Punk",
-      "niveau": 2,
+      "categorie": "Culture pop",
+      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
+      "reponse": "Mariana Mazza",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle corde tourne pendant qu'on saute par-dessus dans la cour ?",
-      "reponse": "Une corde à sauter",
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le cinéma de l'Inde ?",
+      "reponse": "Bollywood",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume blanc en bouquets ressemble à un brocoli pâle ?",
+      "reponse": "Le chou-fleur",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
+      "reponse": "L'escalier Casse-Cou",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Citez un palindrome de cinq lettres qui flotte.",
+      "reponse": "Kayak",
       "niveau": 1
     }
   ]

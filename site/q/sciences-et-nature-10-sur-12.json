@@ -8,20 +8,14 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quel phénomène lumineux colore le ciel polaire ?",
-      "reponse": "Aurore boréale",
+      "question": "Qui a découvert la gravitation ?",
+      "reponse": "Newton",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la roche fondue sous terre ?",
-      "reponse": "Le magma",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la vitesse approximative de la lumière ?",
-      "reponse": "300 000 km/s",
+      "question": "Combien d'os dans le squelette humain adulte ?",
+      "reponse": "206",
       "niveau": 2,
       "ages": [
         "ados",
@@ -31,115 +25,32 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel organe de la bouche permet de goûter ?",
-      "reponse": "La langue",
+      "question": "Quel oiseau revenu du Sud annonce le printemps ?",
+      "reponse": "L'hirondelle",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile porte une carapace sur son dos ?",
+      "reponse": "La tortue",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de paires de côtes avons-nous ?",
-      "reponse": "Douze",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre change de forme dans le ciel au fil des nuits ?",
-      "reponse": "La Lune",
+      "question": "Quel animal est le meilleur ami de l'homme ?",
+      "reponse": "Le chien",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gaz léger gonflait les dirigeables ?",
-      "reponse": "L'hydrogène",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel arbre géant de Californie est le plus gros du monde ?",
-      "reponse": "Le séquoia",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Où vivent les ours polaires ?",
-      "reponse": "En Arctique",
+      "question": "Quel minéral renforce les os ?",
+      "reponse": "Le calcium",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de mois dure la gestation de l'éléphant ?",
-      "reponse": "22",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "En quelle saison les feuilles des arbres tombent-elles ?",
-      "reponse": "L'automne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Dans quel organe la nourriture arrive-t-elle une fois avalée ?",
-      "reponse": "L'estomac",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel élément chimique a le symbole N ?",
-      "reponse": "L'azote",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel gaz de l'air respirons-nous pour vivre ?",
-      "reponse": "L'oxygène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel métal précieux conduit le mieux l'électricité ?",
-      "reponse": "L'argent",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus petite unité de la matière ?",
-      "reponse": "L'atome",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel oiseau de l'étang fait « coin-coin » ?",
-      "reponse": "Le canard",
+      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
+      "reponse": "Une fusée",
       "niveau": 1
     },
     {
@@ -150,8 +61,76 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle planète a été rétrogradée en planète naine ?",
-      "reponse": "Pluton",
+      "question": "Quelles gouttes d'eau tombent des nuages ?",
+      "reponse": "La pluie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel grand singe est le plus proche de l'homme ?",
+      "reponse": "Le chimpanzé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Où vivent les ours polaires ?",
+      "reponse": "En Arctique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal saute et transporte son bébé dans une poche ?",
+      "reponse": "Le kangourou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de chromosomes possède l'humain ?",
+      "reponse": "46",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle vitamine fabrique la peau au soleil ?",
+      "reponse": "La vitamine D",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus grande lune de Saturne ?",
+      "reponse": "Titan",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qu'est-ce qui pousse sur la tête et qu'on va faire couper chez le coiffeur ?",
+      "reponse": "Les cheveux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel oiseau au long cou noir migre en formant un V dans le ciel ?",
+      "reponse": "La bernache (outarde)",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe de la bouche permet de goûter ?",
+      "reponse": "La langue",
       "niveau": 1
     },
     {
@@ -162,8 +141,18 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Où se trouve le plus petit os du corps ?",
-      "reponse": "Dans l'oreille",
+      "question": "Combien de vertèbres a le cou d'une girafe ?",
+      "reponse": "Sept",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel instrument mesure la pression atmosphérique ?",
+      "reponse": "Le baromètre",
       "niveau": 2,
       "ages": [
         "ados",
@@ -173,25 +162,20 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel instrument sert à observer les étoiles ?",
-      "reponse": "Le télescope",
+      "question": "Quelle plante piquante pousse dans le désert ?",
+      "reponse": "Le cactus",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal polaire a la peau noire sous son pelage blanc ?",
-      "reponse": "L'ours polaire",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel gaz les plantes absorbent-elles ?",
+      "reponse": "Le gaz carbonique",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel effet atmosphérique réchauffe la planète ?",
-      "reponse": "L'effet de serre",
+      "question": "Comment appelle-t-on l'ensemble des os du corps ?",
+      "reponse": "Le squelette",
       "niveau": 1
     }
   ]

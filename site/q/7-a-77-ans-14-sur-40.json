@@ -7,51 +7,112 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Musique",
+      "question": "Quel groupe a chanté Hey Jude et Let It Be ?",
+      "reponse": "Les Beatles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quel continent se trouve le Canada ?",
+      "reponse": "L'Amérique du Nord",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal à grosse queue touffue cache des noix pour l'hiver ?",
+      "reponse": "L'écureuil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quelle cage combattent les athlètes de l'UFC ?",
+      "reponse": "L'octogone",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Comment s'appelle le petit de l'éléphant ?",
-      "reponse": "L'éléphanteau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel métier répare les tuyaux ?",
-      "reponse": "Le plombier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le pluriel de « un animal » ?",
-      "reponse": "Des animaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle date est la Fête nationale du Québec ?",
-      "reponse": "Le 24 juin",
+      "question": "Que signifie avoir du pain sur la planche ?",
+      "reponse": "Beaucoup de travail",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel arbre décoré trône dans le salon en décembre ?",
-      "reponse": "Un sapin de Noël",
+      "question": "Quelle entreprise japonaise a créé Mario et Zelda ?",
+      "reponse": "Nintendo",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle vitamine trouve-t-on dans les oranges ?",
+      "reponse": "La vitamine C",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel anneau gonflable aide les petits à flotter ?",
-      "reponse": "Une bouée",
+      "categorie": "Sciences et nature",
+      "question": "À quelle température l'eau bout-elle ?",
+      "reponse": "100 degrés C",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle activité consiste à marcher longtemps sur des sentiers en forêt ou en montagne ?",
-      "reponse": "La randonnée",
+      "categorie": "Culture générale",
+      "question": "Quel casse-tête cubique a six couleurs ?",
+      "reponse": "Le cube Rubik",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel général français s'est couronné empereur en 1804 ?",
-      "reponse": "Napoléon",
+      "categorie": "Québec",
+      "question": "Quelle loi québécoise protège la langue française ?",
+      "reponse": "La loi 101",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle fée accompagne Peter Pan ?",
+      "reponse": "Clochette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation raconte un garçon qui rejoint le pays des morts avec sa guitare ?",
+      "reponse": "Coco",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien de temps la Terre met-elle pour faire le tour du Soleil ?",
+      "reponse": "Un an",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le père des Simpson ?",
+      "reponse": "Homer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel style musical a son grand festival à Montréal en juillet ?",
+      "reponse": "Le jazz",
       "niveau": 1,
       "ages": [
         "ados",
@@ -60,71 +121,62 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle légende québécoise fait voler un canot ?",
-      "reponse": "La chasse-galerie",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois pantoute ?",
-      "reponse": "Pas du tout",
+      "categorie": "Sports",
+      "question": "Quelle écurie italienne de F1 est rouge ?",
+      "reponse": "Ferrari",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Dans quel sport lance-t-on un javelot ?",
-      "reponse": "L'athlétisme",
+      "categorie": "Culture pop",
+      "question": "Quel engin à deux roues se pousse d'un pied en tenant un guidon ?",
+      "reponse": "La trottinette",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Qui laisse de l'argent sous l'oreiller en échange d'une dent ?",
-      "reponse": "La fée des dents",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel pain français long et croustillant est emblématique ?",
-      "reponse": "La baguette",
+      "question": "Combien de jours dans un mois de février normal ?",
+      "reponse": "28",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle comédie musicale utilise les chansons d'ABBA ?",
-      "reponse": "Mamma Mia",
+      "question": "Quelle chanson anglaise fait toucher la tête, les épaules, les genoux et les orteils ?",
+      "reponse": "Head and Shoulders",
       "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados",
+        "adultes"
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel événement célèbre-t-on le 25 décembre ?",
-      "reponse": "Noël",
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de jour ?",
+      "reponse": "Nuit",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel monstre géant venu du Japon écrase des villes au cinéma ?",
-      "reponse": "Godzilla",
+      "categorie": "Histoire",
+      "question": "Quelle invention permet de voir des images animées chez soi depuis les années 1950 ?",
+      "reponse": "La télévision",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie tomber dans les pommes ?",
+      "reponse": "S'évanouir",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle pierre précieuse est rouge ?",
+      "reponse": "Le rubis",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
-      "reponse": "Le fromage en grains",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Chine ?",
-      "reponse": "Pékin",
+      "question": "Quel légume violet et allongé gratine la moussaka ?",
+      "reponse": "L'aubergine",
       "niveau": 1,
       "ages": [
         "ados",
@@ -133,48 +185,9 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel canard noir est le rival de Bugs Bunny ?",
-      "reponse": "Daffy Duck",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on une personne qui voyage dans l'espace ?",
-      "reponse": "Un astronaute",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel phénomène lumineux colore le ciel polaire ?",
-      "reponse": "Aurore boréale",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée suit des chiots sauveteurs ?",
-      "reponse": "Pat' Patrouille",
-      "niveau": 1,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville se trouve la tour Eiffel ?",
-      "reponse": "Paris",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle articulation plie le bras en son milieu ?",
-      "reponse": "Le coude",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel pain rond avec un trou se mange à Montréal ?",
-      "reponse": "Le bagel",
+      "question": "Quel pain sucré en anneau se glace et se saupoudre ?",
+      "reponse": "Le beigne",
       "niveau": 1
     }
   ]

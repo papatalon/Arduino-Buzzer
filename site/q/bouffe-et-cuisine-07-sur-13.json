@@ -8,59 +8,8 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel alcool japonais est fait de riz fermenté ?",
-      "reponse": "Le saké",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile tranchant coupe la viande ?",
-      "reponse": "Le couteau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles galettes à petits carreaux se mangent avec du sirop ?",
-      "reponse": "Les gaufres",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle poudre blanche tirée du blé sert à faire le pain et les gâteaux ?",
-      "reponse": "La farine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boulette de poulpe japonaise est une collation ?",
-      "reponse": "Le takoyaki",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert québécois est un gâteau arrosé de sauce sucrée ?",
-      "reponse": "Pouding chômeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit violet à noyau, une fois séché, aide à la digestion ?",
-      "reponse": "La prune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel pays a inventé les oursons gélifiés ?",
-      "reponse": "L'Allemagne",
+      "question": "Avec quelle farine fait-on le pain traditionnel ?",
+      "reponse": "La farine de blé",
       "niveau": 2,
       "ages": [
         "ados",
@@ -70,117 +19,184 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle tranche de pain grillée se beurre le matin ?",
-      "reponse": "Une rôtie",
+      "question": "Quelle fête québécoise célèbre le blé d'Inde ?",
+      "reponse": "L'épluchette",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel appareil garde la crème glacée bien dure ?",
-      "reponse": "Le congélateur",
+      "question": "Quelles bouchées chinoises se servent à la vapeur ?",
+      "reponse": "Les dim sums",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pomme enrobée est une friandise d'Halloween ?",
+      "reponse": "Pomme au caramel",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boule de viande hachée se sert dans la sauce à spaghetti ?",
-      "reponse": "Une boulette",
+      "question": "Quel plat québécois cuit des haricots blancs au four ?",
+      "reponse": "Fèves au lard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte longue et fine mange-t-on avec des boulettes ?",
+      "reponse": "Le spaghetti",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Dans quel contenant rond et creux verse-t-on les céréales ?",
+      "reponse": "Le bol",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel champignon blanc est le plus cultivé au monde ?",
+      "reponse": "Champignon de Paris",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel déjeuner anglais complet est copieux ?",
+      "reponse": "English breakfast",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat hongrois est un ragoût au paprika ?",
+      "reponse": "Le goulasch",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel aliment ovale pondu par la poule mange-t-on brouillé ?",
+      "reponse": "L'œuf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle laitue compose la salade César ?",
+      "reponse": "La romaine",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce blanche accompagne le sandwich shawarma ?",
+      "reponse": "Sauce à l'ail",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle soupe vietnamienne parfumée contient du bœuf ?",
+      "reponse": "Le pho",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat anglais sert du poisson frit avec des frites ?",
+      "reponse": "Fish and chips",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
+      "reponse": "Le pain doré",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage italien râpe les pâtes ?",
+      "reponse": "Le parmesan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle semoule accompagne les plats du Maghreb ?",
+      "reponse": "Le couscous",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "De quel fruit fait-on le vin ?",
+      "reponse": "Le raisin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat libanais est une purée d'aubergines fumées ?",
+      "reponse": "Baba ganouj",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel liquide jaune sert à faire cuire dans la poêle ?",
+      "reponse": "L'huile",
       "niveau": 2
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert sicilien est un rouleau fourré à la ricotta ?",
-      "reponse": "Le cannoli",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à tartiner aux noisettes est adorée ?",
-      "reponse": "Le Nutella",
+      "question": "Quelles galettes du déjeuner arrose-t-on de sirop d'érable ?",
+      "reponse": "Les crêpes",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel épi grillé se mange au beurre en août ?",
-      "reponse": "Le blé d'Inde",
+      "question": "De quel pays viennent les sushis ?",
+      "reponse": "Le Japon",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat chinois est un pain farci cuit vapeur ?",
-      "reponse": "Le bao",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
-      "reponse": "Le fromage en grains",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel vinaigre noir italien vient de Modène ?",
-      "reponse": "Le balsamique",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à tartiner australienne est très salée ?",
-      "reponse": "La Vegemite",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert glacé mange-t-on en cornet l'été ?",
-      "reponse": "La crème glacée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat de longues pâtes se sert avec une sauce à la viande ?",
-      "reponse": "Les spaghettis",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
-      "reponse": "Le homard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel animal est Tony, la mascotte des céréales Frosted Flakes ?",
-      "reponse": "Un tigre",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel bonbon dur se lèche au bout d'un bâton ?",
-      "reponse": "Un suçon (une sucette)",
+      "question": "Quel légume fait pleurer quand on le coupe ?",
+      "reponse": "L'oignon",
       "niveau": 1
     }
   ]

@@ -8,8 +8,8 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle scientifique a étudié la radioactivité ?",
-      "reponse": "Marie Curie",
+      "question": "Quelle est la planète la plus proche du Soleil ?",
+      "reponse": "Mercure",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,21 +19,33 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel reptile peut vivre plus de 150 ans ?",
-      "reponse": "La tortue géante",
+      "question": "Quel oiseau noir et blanc de l'Antarctique ne sait pas voler ?",
+      "reponse": "Le manchot",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de bosses a un chameau ?",
+      "question": "De quel arbre le koala mange-t-il les feuilles ?",
+      "reponse": "L'eucalyptus",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante compose le menu du panda géant ?",
+      "reponse": "Le bambou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de poumons possède l'humain ?",
       "reponse": "Deux",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appelle le sonar naturel des chauves-souris ?",
-      "reponse": "L'écholocation",
-      "niveau": 2,
+      "question": "Quel poisson à voile est le plus rapide des mers ?",
+      "reponse": "Le voilier",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -42,8 +54,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Qui a développé la théorie de la relativité ?",
-      "reponse": "Einstein",
+      "question": "Quel oiseau frappe le tronc des arbres à coups de bec ?",
+      "reponse": "Le pic-bois",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment nomme-t-on un arbre à feuilles, par opposition à un conifère ?",
+      "reponse": "Un feuillu",
       "niveau": 1,
       "ages": [
         "ados",
@@ -53,27 +71,66 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel insecte soulève 50 fois son poids ?",
-      "reponse": "La fourmi",
+      "question": "Quel organe contrôle tout le corps ?",
+      "reponse": "Le cerveau",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel mammifère marin sauteur siffle et vit en groupe ?",
-      "reponse": "Le dauphin",
+      "question": "Quel arachnide a une queue munie d'un dard ?",
+      "reponse": "Le scorpion",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quels organes nous servent à respirer ?",
-      "reponse": "Les poumons",
+      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
+      "reponse": "Le raton laveur",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on la peau rugueuse qui recouvre le tronc ?",
-      "reponse": "L'écorce",
-      "niveau": 2
+      "question": "Quelle articulation relie la cuisse à la jambe ?",
+      "reponse": "Le genou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelles parties blanches de la bouche servent à mâcher ?",
+      "reponse": "Les dents",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le symbole chimique de l'argent ?",
+      "reponse": "Ag",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle comète célèbre revient tous les 76 ans ?",
+      "reponse": "Halley",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle protéine transporte l'oxygène dans le sang ?",
+      "reponse": "L'hémoglobine",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -88,54 +145,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel astre provoque les marées ?",
-      "reponse": "La Lune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel petit animal à grosse queue touffue cache des noix pour l'hiver ?",
-      "reponse": "L'écureuil",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Le Soleil est-il une planète ou une étoile ?",
-      "reponse": "Une étoile",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel gaz les plantes absorbent-elles ?",
-      "reponse": "Le gaz carbonique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle partie de la plante relie la racine à la fleur ?",
-      "reponse": "La tige",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus grande lune de Saturne ?",
-      "reponse": "Titan",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
-      "reponse": "Une fusée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel groupe sanguin est donneur universel ?",
-      "reponse": "O négatif",
+      "question": "Quel oiseau est le plus rapide en piqué ?",
+      "reponse": "Le faucon pèlerin",
       "niveau": 2,
       "ages": [
         "ados",
@@ -145,20 +156,32 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal à longues oreilles adore les carottes ?",
-      "reponse": "Le lapin",
+      "question": "Quel animal de la ferme donne le lait qu'on boit ?",
+      "reponse": "La vache",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?",
-      "reponse": "L'arc-en-ciel",
+      "question": "Quel effet atmosphérique réchauffe la planète ?",
+      "reponse": "L'effet de serre",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel tableau classe tous les éléments chimiques ?",
-      "reponse": "Tableau périodique",
+      "question": "Dans quoi la chenille se transforme-t-elle ?",
+      "reponse": "La chrysalide",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle le voyage du pollen ?",
+      "reponse": "La pollinisation",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le symbole chimique de l'hydrogène ?",
+      "reponse": "H",
       "niveau": 1,
       "ages": [
         "ados",
@@ -168,20 +191,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Qui a découvert la gravitation ?",
-      "reponse": "Newton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel muscle bat sans jamais se reposer ?",
-      "reponse": "Le cœur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel gros animal d'Afrique passe ses journées dans l'eau, la gueule grande ouverte ?",
-      "reponse": "L'hippopotame",
+      "question": "Quels organes filtrent le sang ?",
+      "reponse": "Les reins",
       "niveau": 1
     }
   ]

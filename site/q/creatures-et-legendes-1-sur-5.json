@@ -7,32 +7,71 @@
   "emoji": "🐉",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel arbre géant de Californie est le plus gros du monde ?",
-      "reponse": "Le séquoia",
+      "categorie": "Culture pop",
+      "question": "Quel animal porte malheur s'il croise notre chemin, selon la superstition ?",
+      "reponse": "Un chat noir",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel roi mythique change en or tout ce qu'il touche ?",
+      "reponse": "Midas",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Dans quel conte une princesse s'endort cent ans après s'être piqué le doigt ?",
-      "reponse": "La Belle au bois dormant",
+      "categorie": "Culture pop",
+      "question": "Quelle créature de la nuit dort dans un cercueil et craint l'ail ?",
+      "reponse": "Un vampire",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel magicien conseillait le roi Arthur ?",
+      "reponse": "Merlin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel marin de conte a fait sept voyages ?",
+      "reponse": "Sinbad",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle sirène Disney rêve de vivre sur terre ?",
-      "reponse": "Ariel",
+      "question": "Quelle petite fée accompagne Peter Pan au Pays imaginaire ?",
+      "reponse": "La fée Clochette",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Qui a ouvert la boîte qui libérait tous les maux ?",
-      "reponse": "Pandore",
+      "question": "Quel héros grec a accompli douze travaux ?",
+      "reponse": "Hercule",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature poilue laisserait des empreintes géantes dans la neige des montagnes ?",
+      "reponse": "Le yéti",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel roi anglais légendaire aurait retiré une épée d'un rocher ?",
+      "reponse": "Le roi Arthur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle légende québécoise fait voler un canot ?",
+      "reponse": "La chasse-galerie",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -41,24 +80,79 @@
       ]
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel monstre bleu et poilu travaille avec Mike ?",
+      "reponse": "Sulley",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?",
-      "reponse": "Fanfreluche",
-      "niveau": 3,
+      "question": "Quel personnage de conte chaussé de bottes parle au nom de son maître ?",
+      "reponse": "Le Chat botté",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel géant de bois cache des soldats grecs ?",
+      "reponse": "Le cheval de Troie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature à écailles crache du feu et garde un trésor ?",
+      "reponse": "Un dragon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'encadré qui explique les symboles d'une carte ?",
+      "reponse": "La légende",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel monstre vert explose à côté du joueur dans Minecraft ?",
+      "reponse": "Le creeper",
+      "niveau": 1,
       "ages": [
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
-      "reponse": "Le mammouth",
+      "categorie": "Culture pop",
+      "question": "Quel drap blanc troué de deux yeux fait un costume d'Halloween facile ?",
+      "reponse": "Un fantôme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
+      "reponse": "King Kong",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel titan grec porte le ciel sur ses épaules ?",
-      "reponse": "Atlas",
+      "question": "Dans quel conte un oisillon rejeté par les siens devient un magnifique cygne ?",
+      "reponse": "Le vilain petit canard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel oiseau apporterait les bébés selon la légende ?",
+      "reponse": "La cigogne",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel personnage au chapeau pointu vole sur un balai ?",
+      "reponse": "Une sorcière",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?",
+      "reponse": "Jeanne Mance",
       "niveau": 2,
       "ages": [
         "ados",
@@ -67,107 +161,16 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de café a une sirène verte dans son logo ?",
-      "reponse": "Starbucks",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quel sport sorcier se joue sur des balais ?",
-      "reponse": "Le quidditch",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comédie musicale raconte un fantôme masqué ?",
-      "reponse": "Fantôme de l'Opéra",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle créature est mi-homme mi-cheval ?",
-      "reponse": "Le centaure",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel chiffre porte malheur en Occident ?",
-      "reponse": "13",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Sébastien dans La Petite Sirène ?",
-      "reponse": "Un crabe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ogre vert a une femme nommée Fiona ?",
+      "question": "Quelle créature verte vit dans un marais ?",
       "reponse": "Shrek",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel monstre géant venu du Japon écrase des villes au cinéma ?",
-      "reponse": "Godzilla",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle créature irlandaise garde un trésor ?",
-      "reponse": "Le farfadet (leprechaun)",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
-      "reponse": "Arthur Laroche",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel dragon noir accompagne Harold ?",
-      "reponse": "Krokmou",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit orange se sculpte à l'Halloween ?",
-      "reponse": "La citrouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin géant souffle un jet d'eau par le dos ?",
-      "reponse": "La baleine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
-      "reponse": "Une sirène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel personnage de conte a une lampe magique ?",
-      "reponse": "Aladin",
-      "niveau": 1
+      "question": "Quelle friandise d'Halloween est une pomme enrobée de caramel rouge ?",
+      "reponse": "La pomme de tire",
+      "niveau": 2
     }
   ]
 }

@@ -7,53 +7,173 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel est l'os le plus long du corps humain ?",
-      "reponse": "Le fémur",
+      "categorie": "Québec",
+      "question": "Quelle boisson alcoolisée réchauffe le Carnaval de Québec ?",
+      "reponse": "Le caribou",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle quincaillerie québécoise portait un prénom dans son enseigne ?",
+      "reponse": "Pascal",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel poète a chanté Le P'tit Bonheur ?",
+      "reponse": "Félix Leclerc",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel jeu mobile fait attraper des créatures en marchant dans la vraie ville ?",
+      "reponse": "Pokémon GO",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on un groupe de personnes qui chantent ensemble ?",
+      "reponse": "Une chorale",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel animal fut le premier en orbite ?",
-      "reponse": "La chienne Laïka",
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile porte une carapace sur son dos ?",
+      "reponse": "La tortue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série québécoise se déroulait dans Charlevoix après la Première Guerre ?",
+      "reponse": "Le temps d'une paix",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel désert froid couvre une partie de la Mongolie ?",
+      "reponse": "Le Gobi",
       "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le spectacle où un artiste chante devant une foule ?",
+      "reponse": "Un concert",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel duo formaient Claude Meunier et Serge Thériault ?",
+      "reponse": "Ding et Dong",
+      "niveau": 2,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat espagnol froid est une soupe de tomates ?",
-      "reponse": "Le gaspacho",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
+      "reponse": "La tire d'érable",
+      "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Capitale de la Norvège ?",
-      "reponse": "Oslo",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Histoire",
+      "question": "Quelle statue les Français ont-ils offerte aux Américains en 1886 ?",
+      "reponse": "La statue de la Liberté",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le joueur qui remplace un blessé en cours de match ?",
+      "reponse": "Un remplaçant",
+      "niveau": 2
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel magicien gris guide la Communauté de l'anneau ?",
-      "reponse": "Gandalf",
-      "niveau": 1,
+      "question": "Quel mage noir est l'ennemi de Harry Potter ?",
+      "reponse": "Voldemort",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine réveille un meunier dont le moulin va trop vite ?",
+      "reponse": "Meunier tu dors",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle région administrative couvre à elle seule plus de la moitié du Québec ?",
+      "reponse": "Le Nord-du-Québec",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année a eu lieu la Confédération canadienne ?",
+      "reponse": "1867",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle écurie italienne de F1 est rouge ?",
+      "reponse": "Ferrari",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de roi ?",
+      "reponse": "La reine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'eau salée qu'on ne peut pas boire ?",
+      "reponse": "L'eau de mer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume vert et long se mange en cosse ou en conserve ?",
+      "reponse": "Le haricot",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série de science-fiction se passe à Hawkins ?",
+      "reponse": "Stranger Things",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
       ]
     },
     {
@@ -68,169 +188,18 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jouet d'été arrose les amis d'un jet d'eau ?",
-      "reponse": "Un pistolet à eau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au water-polo ?",
-      "reponse": "Sept",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage italien garnit la pizza ?",
-      "reponse": "La mozzarella",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel capitaine anglais a cartographié le Pacifique ?",
-      "reponse": "James Cook",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Que signifie coûter les yeux de la tête ?",
-      "reponse": "Coûter très cher",
+      "question": "Comment nomme-t-on celui qui écrit des romans ?",
+      "reponse": "Un romancier",
       "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle jeune fille a dansé avec le diable dans la légende ?",
-      "reponse": "Rose Latulippe",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel cirque québécois est connu mondialement ?",
-      "reponse": "Cirque du Soleil",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans Pierre et le loup, quel instrument joue l'oiseau ?",
-      "reponse": "La flûte",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur écossais fut le premier James Bond ?",
-      "reponse": "Sean Connery",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film de Pixar les émotions vivent-elles dans la tête d'une fillette ?",
-      "reponse": "Vice-versa",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson des Cowboys Fringants raconte un homme qui revient en 2050 ?",
-      "reponse": "Plus rien",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel jeu mobile fait attraper des créatures en marchant dans la vraie ville ?",
-      "reponse": "Pokémon GO",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui fait tourner les éoliennes et voler les cerfs-volants ?",
-      "reponse": "Le vent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel signe exprime la surprise ?",
-      "reponse": "Point d'exclamation",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de plateau fait résoudre un meurtre commis dans un manoir ?",
-      "reponse": "Le Clue",
+      "question": "Quel instrument mesure la pression atmosphérique ?",
+      "reponse": "Le baromètre",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel objet lance-t-on sur la glace après un tour du chapeau ?",
-      "reponse": "Des chapeaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville est surnommée la Ville lumière ?",
-      "reponse": "Paris",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel quartier montréalais a une porte paifang ?",
-      "reponse": "Quartier chinois",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel format de disque tourne à 33 tours ?",
-      "reponse": "Le vinyle",
-      "niveau": 1,
-      "ages": [
         "adultes",
         "aines"
       ]

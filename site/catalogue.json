@@ -176,319 +176,439 @@
       "empreinte": "1a7337706663db458407b132c1d1d78085d4ed97"
     },
     {
-      "id": "histoire-01-sur-11",
-      "titre": "Histoire 01 sur 11",
-      "note": "Catégorie Histoire. Manche 1 sur 11.",
+      "id": "histoire-01-sur-15",
+      "titre": "Histoire 01 sur 15",
+      "note": "Catégorie Histoire. Manche 1 sur 15.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 25,
+      "niveaux": {
+        "2": 13,
+        "1": 5,
+        "3": 7
+      },
+      "octets": 5506,
+      "empreinte": "8a8307b68ee766af934ac6a2eb4947336e741a94"
+    },
+    {
+      "id": "histoire-02-sur-15",
+      "titre": "Histoire 02 sur 15",
+      "note": "Catégorie Histoire. Manche 2 sur 15.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 25,
+      "niveaux": {
+        "1": 12,
+        "3": 4,
+        "2": 9
+      },
+      "octets": 5304,
+      "empreinte": "48f77f25608f7752ef30d123cbc4c791541e6161"
+    },
+    {
+      "id": "histoire-03-sur-15",
+      "titre": "Histoire 03 sur 15",
+      "note": "Catégorie Histoire. Manche 3 sur 15.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 25,
+      "niveaux": {
+        "2": 14,
+        "1": 6,
+        "3": 5
+      },
+      "octets": 5881,
+      "empreinte": "4e64b2a1cd6438a9e64ba4aad503b2a82429a3c1"
+    },
+    {
+      "id": "histoire-04-sur-15",
+      "titre": "Histoire 04 sur 15",
+      "note": "Catégorie Histoire. Manche 4 sur 15.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 25,
+      "niveaux": {
+        "2": 13,
+        "1": 8,
+        "3": 4
+      },
+      "octets": 5415,
+      "empreinte": "38969414c8b32edbd93413bd1d2c22d979cb7b9a"
+    },
+    {
+      "id": "histoire-05-sur-15",
+      "titre": "Histoire 05 sur 15",
+      "note": "Catégorie Histoire. Manche 5 sur 15.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 25,
+      "niveaux": {
+        "2": 10,
+        "1": 9,
+        "3": 6
+      },
+      "octets": 5564,
+      "empreinte": "4dd7dca2b6a27b15646a18a05b55378aae9efaf5"
+    },
+    {
+      "id": "histoire-06-sur-15",
+      "titre": "Histoire 06 sur 15",
+      "note": "Catégorie Histoire. Manche 6 sur 15.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 25,
+      "niveaux": {
+        "3": 9,
+        "2": 9,
+        "1": 7
+      },
+      "octets": 5419,
+      "empreinte": "6f88bb3c43f3de2ecc047bafd58725c113760f5d"
+    },
+    {
+      "id": "histoire-07-sur-15",
+      "titre": "Histoire 07 sur 15",
+      "note": "Catégorie Histoire. Manche 7 sur 15.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 25,
+      "niveaux": {
+        "3": 5,
+        "2": 13,
+        "1": 7
+      },
+      "octets": 5213,
+      "empreinte": "a0a3bd09b0755d6f6bafacdd4e500cd309ddc35b"
+    },
+    {
+      "id": "histoire-08-sur-15",
+      "titre": "Histoire 08 sur 15",
+      "note": "Catégorie Histoire. Manche 8 sur 15.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 25,
+      "niveaux": {
+        "1": 6,
+        "3": 12,
+        "2": 7
+      },
+      "octets": 5605,
+      "empreinte": "ef4cdac813ffc059d3bacd75d76801ad604a3aa0"
+    },
+    {
+      "id": "histoire-09-sur-15",
+      "titre": "Histoire 09 sur 15",
+      "note": "Catégorie Histoire. Manche 9 sur 15.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 25,
+      "niveaux": {
+        "2": 13,
+        "3": 5,
+        "1": 7
+      },
+      "octets": 5614,
+      "empreinte": "b9decf5a9189707a0ce9e8202eb2e26e9001c34e"
+    },
+    {
+      "id": "histoire-10-sur-15",
+      "titre": "Histoire 10 sur 15",
+      "note": "Catégorie Histoire. Manche 10 sur 15.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 25,
+      "niveaux": {
+        "3": 7,
+        "1": 9,
+        "2": 9
+      },
+      "octets": 5434,
+      "empreinte": "e709b78cc1ca71ac26e1f40596919c8973153525"
+    },
+    {
+      "id": "histoire-11-sur-15",
+      "titre": "Histoire 11 sur 15",
+      "note": "Catégorie Histoire. Manche 11 sur 15.",
       "collection": "Histoire",
       "emoji": "🏛️",
       "questions": 24,
       "niveaux": {
-        "2": 11,
-        "1": 8,
-        "3": 5
+        "2": 12,
+        "1": 9,
+        "3": 3
       },
-      "octets": 5513,
-      "empreinte": "6126185f9932d73970e78b05f6a99b0cf612bb82"
+      "octets": 5111,
+      "empreinte": "5d13e8109c4bb713dbf8ed6a9b663c9ece1f5404"
     },
     {
-      "id": "histoire-02-sur-11",
-      "titre": "Histoire 02 sur 11",
-      "note": "Catégorie Histoire. Manche 2 sur 11.",
+      "id": "histoire-12-sur-15",
+      "titre": "Histoire 12 sur 15",
+      "note": "Catégorie Histoire. Manche 12 sur 15.",
       "collection": "Histoire",
       "emoji": "🏛️",
-      "questions": 23,
+      "questions": 24,
       "niveaux": {
-        "2": 4,
-        "3": 13,
+        "2": 10,
+        "3": 8,
         "1": 6
       },
-      "octets": 5429,
-      "empreinte": "e2deaf896358fd4abb8428b25c976a397fa4138a"
+      "octets": 5314,
+      "empreinte": "abe7fa6ead08896723d7ee4bb3163b6df2ed467d"
     },
     {
-      "id": "histoire-03-sur-11",
-      "titre": "Histoire 03 sur 11",
-      "note": "Catégorie Histoire. Manche 3 sur 11.",
+      "id": "histoire-13-sur-15",
+      "titre": "Histoire 13 sur 15",
+      "note": "Catégorie Histoire. Manche 13 sur 15.",
       "collection": "Histoire",
       "emoji": "🏛️",
-      "questions": 23,
-      "niveaux": {
-        "2": 11,
-        "3": 2,
-        "1": 10
-      },
-      "octets": 5359,
-      "empreinte": "b51a9a2d8f57955df4b3a315d1e034cf58617857"
-    },
-    {
-      "id": "histoire-04-sur-11",
-      "titre": "Histoire 04 sur 11",
-      "note": "Catégorie Histoire. Manche 4 sur 11.",
-      "collection": "Histoire",
-      "emoji": "🏛️",
-      "questions": 23,
-      "niveaux": {
-        "1": 5,
-        "3": 5,
-        "2": 13
-      },
-      "octets": 5397,
-      "empreinte": "3324cc37fdaaf89f0cd38453639577d92929980d"
-    },
-    {
-      "id": "histoire-05-sur-11",
-      "titre": "Histoire 05 sur 11",
-      "note": "Catégorie Histoire. Manche 5 sur 11.",
-      "collection": "Histoire",
-      "emoji": "🏛️",
-      "questions": 23,
-      "niveaux": {
-        "1": 4,
-        "2": 15,
-        "3": 4
-      },
-      "octets": 5496,
-      "empreinte": "2bc1fb93faee25585551a5aa7e190ea0ac19c317"
-    },
-    {
-      "id": "histoire-06-sur-11",
-      "titre": "Histoire 06 sur 11",
-      "note": "Catégorie Histoire. Manche 6 sur 11.",
-      "collection": "Histoire",
-      "emoji": "🏛️",
-      "questions": 23,
-      "niveaux": {
-        "2": 13,
-        "1": 4,
-        "3": 6
-      },
-      "octets": 5594,
-      "empreinte": "e4d6c9eb1e7cf8d27241f6d8fa2ede5f34e18bca"
-    },
-    {
-      "id": "histoire-07-sur-11",
-      "titre": "Histoire 07 sur 11",
-      "note": "Catégorie Histoire. Manche 7 sur 11.",
-      "collection": "Histoire",
-      "emoji": "🏛️",
-      "questions": 23,
-      "niveaux": {
-        "1": 9,
-        "3": 3,
-        "2": 11
-      },
-      "octets": 5453,
-      "empreinte": "4eec55c21339c68fe01adf2e756cca6e10421fc5"
-    },
-    {
-      "id": "histoire-08-sur-11",
-      "titre": "Histoire 08 sur 11",
-      "note": "Catégorie Histoire. Manche 8 sur 11.",
-      "collection": "Histoire",
-      "emoji": "🏛️",
-      "questions": 23,
-      "niveaux": {
-        "2": 12,
-        "1": 8,
-        "3": 3
-      },
-      "octets": 5398,
-      "empreinte": "943a91a350d68a34ba8a9d2df205d73f7cd39393"
-    },
-    {
-      "id": "histoire-09-sur-11",
-      "titre": "Histoire 09 sur 11",
-      "note": "Catégorie Histoire. Manche 9 sur 11.",
-      "collection": "Histoire",
-      "emoji": "🏛️",
-      "questions": 23,
-      "niveaux": {
-        "2": 11,
-        "1": 5,
-        "3": 7
-      },
-      "octets": 5341,
-      "empreinte": "55ffe9ce5c4bf735465fd438fbf58da8e8e30d4b"
-    },
-    {
-      "id": "histoire-10-sur-11",
-      "titre": "Histoire 10 sur 11",
-      "note": "Catégorie Histoire. Manche 10 sur 11.",
-      "collection": "Histoire",
-      "emoji": "🏛️",
-      "questions": 23,
+      "questions": 24,
       "niveaux": {
         "1": 6,
-        "2": 15,
-        "3": 2
+        "3": 8,
+        "2": 10
       },
-      "octets": 5387,
-      "empreinte": "09f8242d75ad72797c12ab2fd6a1eb9d89804af8"
+      "octets": 5001,
+      "empreinte": "35e442470dd5bf138ee6b02b5c6ae23d25628c74"
     },
     {
-      "id": "histoire-11-sur-11",
-      "titre": "Histoire 11 sur 11",
-      "note": "Catégorie Histoire. Manche 11 sur 11.",
+      "id": "histoire-14-sur-15",
+      "titre": "Histoire 14 sur 15",
+      "note": "Catégorie Histoire. Manche 14 sur 15.",
       "collection": "Histoire",
       "emoji": "🏛️",
-      "questions": 23,
+      "questions": 24,
       "niveaux": {
-        "3": 8,
-        "2": 12,
-        "1": 3
+        "3": 7,
+        "1": 6,
+        "2": 11
       },
-      "octets": 5586,
-      "empreinte": "12dc8e436882d736ddd7b9cd9a7c68bf06688e83"
+      "octets": 5551,
+      "empreinte": "1e4ed6fb84ea1b331fbda7a2b5957ab1c88b7045"
     },
     {
-      "id": "geographie-01-sur-10",
-      "titre": "Géographie 01 sur 10",
-      "note": "Catégorie Géographie. Manche 1 sur 10.",
+      "id": "histoire-15-sur-15",
+      "titre": "Histoire 15 sur 15",
+      "note": "Catégorie Histoire. Manche 15 sur 15.",
+      "collection": "Histoire",
+      "emoji": "🏛️",
+      "questions": 24,
+      "niveaux": {
+        "2": 13,
+        "1": 4,
+        "3": 7
+      },
+      "octets": 5541,
+      "empreinte": "56eed618aa20f04a11788dbbfd0abe8e499dcb26"
+    },
+    {
+      "id": "geographie-01-sur-14",
+      "titre": "Géographie 01 sur 14",
+      "note": "Catégorie Géographie. Manche 1 sur 14.",
       "collection": "Géographie",
       "emoji": "🌍",
-      "questions": 23,
+      "questions": 25,
+      "niveaux": {
+        "1": 12,
+        "3": 5,
+        "2": 8
+      },
+      "octets": 5275,
+      "empreinte": "fff183d78817bf109bd443e7ab79c89f1ac3ccfe"
+    },
+    {
+      "id": "geographie-02-sur-14",
+      "titre": "Géographie 02 sur 14",
+      "note": "Catégorie Géographie. Manche 2 sur 14.",
+      "collection": "Géographie",
+      "emoji": "🌍",
+      "questions": 25,
+      "niveaux": {
+        "2": 12,
+        "1": 11,
+        "3": 2
+      },
+      "octets": 5228,
+      "empreinte": "6d6b8b8a74ebd25724b70ed5620e7cb6fadb2893"
+    },
+    {
+      "id": "geographie-03-sur-14",
+      "titre": "Géographie 03 sur 14",
+      "note": "Catégorie Géographie. Manche 3 sur 14.",
+      "collection": "Géographie",
+      "emoji": "🌍",
+      "questions": 25,
       "niveaux": {
         "1": 13,
-        "2": 8,
-        "3": 2
+        "2": 7,
+        "3": 5
       },
-      "octets": 5044,
-      "empreinte": "7069ff11730c77a4cf38379004093b8e94882dff"
+      "octets": 4992,
+      "empreinte": "997fdab1fd24493d4d7f2693493f3161e1e74a4b"
     },
     {
-      "id": "geographie-02-sur-10",
-      "titre": "Géographie 02 sur 10",
-      "note": "Catégorie Géographie. Manche 2 sur 10.",
+      "id": "geographie-04-sur-14",
+      "titre": "Géographie 04 sur 14",
+      "note": "Catégorie Géographie. Manche 4 sur 14.",
       "collection": "Géographie",
       "emoji": "🌍",
-      "questions": 23,
-      "niveaux": {
-        "2": 11,
-        "1": 11,
-        "3": 1
-      },
-      "octets": 5110,
-      "empreinte": "202b84603b1f6e5e12b40e897288e582a4d54d9b"
-    },
-    {
-      "id": "geographie-03-sur-10",
-      "titre": "Géographie 03 sur 10",
-      "note": "Catégorie Géographie. Manche 3 sur 10.",
-      "collection": "Géographie",
-      "emoji": "🌍",
-      "questions": 23,
-      "niveaux": {
-        "1": 16,
-        "3": 3,
-        "2": 4
-      },
-      "octets": 4796,
-      "empreinte": "9a3903f144a02acfacf02b9ba1ab49a9809f6fdf"
-    },
-    {
-      "id": "geographie-04-sur-10",
-      "titre": "Géographie 04 sur 10",
-      "note": "Catégorie Géographie. Manche 4 sur 10.",
-      "collection": "Géographie",
-      "emoji": "🌍",
-      "questions": 23,
+      "questions": 24,
       "niveaux": {
         "1": 14,
-        "2": 7,
+        "3": 3,
+        "2": 7
+      },
+      "octets": 4715,
+      "empreinte": "0a2d9e2fef771c7c2e6fd29127b00034eeb0d88e"
+    },
+    {
+      "id": "geographie-05-sur-14",
+      "titre": "Géographie 05 sur 14",
+      "note": "Catégorie Géographie. Manche 5 sur 14.",
+      "collection": "Géographie",
+      "emoji": "🌍",
+      "questions": 24,
+      "niveaux": {
+        "2": 8,
+        "1": 14,
         "3": 2
       },
-      "octets": 5169,
-      "empreinte": "c093608051aee6c4df1f264c762314f4e55ca2a5"
+      "octets": 5026,
+      "empreinte": "9e997598725715f31850c8ed34ac505687ca3593"
     },
     {
-      "id": "geographie-05-sur-10",
-      "titre": "Géographie 05 sur 10",
-      "note": "Catégorie Géographie. Manche 5 sur 10.",
+      "id": "geographie-06-sur-14",
+      "titre": "Géographie 06 sur 14",
+      "note": "Catégorie Géographie. Manche 6 sur 14.",
       "collection": "Géographie",
       "emoji": "🌍",
-      "questions": 23,
+      "questions": 24,
       "niveaux": {
-        "2": 11,
-        "1": 11,
-        "3": 1
-      },
-      "octets": 5060,
-      "empreinte": "9464c9cd344f31101ea0c164e7b9e4ba021373c0"
-    },
-    {
-      "id": "geographie-06-sur-10",
-      "titre": "Géographie 06 sur 10",
-      "note": "Catégorie Géographie. Manche 6 sur 10.",
-      "collection": "Géographie",
-      "emoji": "🌍",
-      "questions": 23,
-      "niveaux": {
+        "1": 12,
         "2": 10,
-        "1": 10,
+        "3": 2
+      },
+      "octets": 5029,
+      "empreinte": "716ba8902851928fa668114b19bcf027e4351ba5"
+    },
+    {
+      "id": "geographie-07-sur-14",
+      "titre": "Géographie 07 sur 14",
+      "note": "Catégorie Géographie. Manche 7 sur 14.",
+      "collection": "Géographie",
+      "emoji": "🌍",
+      "questions": 24,
+      "niveaux": {
+        "2": 12,
+        "1": 9,
         "3": 3
       },
-      "octets": 5323,
-      "empreinte": "bf0730195ad05c7a4a58cedae604c3383ac1b2c9"
+      "octets": 4931,
+      "empreinte": "e16ebda93f1130375821b0f609c3d576391b51b2"
     },
     {
-      "id": "geographie-07-sur-10",
-      "titre": "Géographie 07 sur 10",
-      "note": "Catégorie Géographie. Manche 7 sur 10.",
+      "id": "geographie-08-sur-14",
+      "titre": "Géographie 08 sur 14",
+      "note": "Catégorie Géographie. Manche 8 sur 14.",
       "collection": "Géographie",
       "emoji": "🌍",
-      "questions": 22,
+      "questions": 24,
       "niveaux": {
+        "1": 12,
         "3": 3,
-        "1": 10,
         "2": 9
       },
-      "octets": 4993,
-      "empreinte": "d300972fbf72999b2e652d8979ca15225a2acb72"
+      "octets": 4904,
+      "empreinte": "19af1cdbfb8b5f788d807cef67283df31e7eba9a"
     },
     {
-      "id": "geographie-08-sur-10",
-      "titre": "Géographie 08 sur 10",
-      "note": "Catégorie Géographie. Manche 8 sur 10.",
+      "id": "geographie-09-sur-14",
+      "titre": "Géographie 09 sur 14",
+      "note": "Catégorie Géographie. Manche 9 sur 14.",
       "collection": "Géographie",
       "emoji": "🌍",
-      "questions": 22,
-      "niveaux": {
-        "3": 4,
-        "2": 13,
-        "1": 5
-      },
-      "octets": 5243,
-      "empreinte": "f4749aa807ece2cd3a483844d77582fec57662e8"
-    },
-    {
-      "id": "geographie-09-sur-10",
-      "titre": "Géographie 09 sur 10",
-      "note": "Catégorie Géographie. Manche 9 sur 10.",
-      "collection": "Géographie",
-      "emoji": "🌍",
-      "questions": 22,
+      "questions": 24,
       "niveaux": {
         "1": 14,
-        "2": 5,
-        "3": 3
-      },
-      "octets": 4758,
-      "empreinte": "688857910394feb65fa1892ae7b33a70a4943fe4"
-    },
-    {
-      "id": "geographie-10-sur-10",
-      "titre": "Géographie 10 sur 10",
-      "note": "Catégorie Géographie. Manche 10 sur 10.",
-      "collection": "Géographie",
-      "emoji": "🌍",
-      "questions": 22,
-      "niveaux": {
-        "1": 8,
-        "2": 10,
+        "2": 6,
         "3": 4
       },
-      "octets": 5000,
-      "empreinte": "9c20cdef6b6d8f38d3c54de116f63b90b8804cd5"
+      "octets": 4953,
+      "empreinte": "00b17429d8b505e3c26fac2b32292369048999f1"
+    },
+    {
+      "id": "geographie-10-sur-14",
+      "titre": "Géographie 10 sur 14",
+      "note": "Catégorie Géographie. Manche 10 sur 14.",
+      "collection": "Géographie",
+      "emoji": "🌍",
+      "questions": 24,
+      "niveaux": {
+        "2": 7,
+        "1": 12,
+        "3": 5
+      },
+      "octets": 4693,
+      "empreinte": "00935f5ef714ef0946da0b66548a34421ef5b0fa"
+    },
+    {
+      "id": "geographie-11-sur-14",
+      "titre": "Géographie 11 sur 14",
+      "note": "Catégorie Géographie. Manche 11 sur 14.",
+      "collection": "Géographie",
+      "emoji": "🌍",
+      "questions": 24,
+      "niveaux": {
+        "2": 11,
+        "1": 10,
+        "3": 3
+      },
+      "octets": 5318,
+      "empreinte": "f1a188d00eef48d758a90e3079774040880d4fb7"
+    },
+    {
+      "id": "geographie-12-sur-14",
+      "titre": "Géographie 12 sur 14",
+      "note": "Catégorie Géographie. Manche 12 sur 14.",
+      "collection": "Géographie",
+      "emoji": "🌍",
+      "questions": 24,
+      "niveaux": {
+        "2": 12,
+        "1": 10,
+        "3": 2
+      },
+      "octets": 4850,
+      "empreinte": "16448d0fcea3e662831773f50eecf7998c2183b1"
+    },
+    {
+      "id": "geographie-13-sur-14",
+      "titre": "Géographie 13 sur 14",
+      "note": "Catégorie Géographie. Manche 13 sur 14.",
+      "collection": "Géographie",
+      "emoji": "🌍",
+      "questions": 24,
+      "niveaux": {
+        "1": 10,
+        "3": 7,
+        "2": 7
+      },
+      "octets": 4908,
+      "empreinte": "157e0bd524bec3e92a56ab3cf488e03b0be31e19"
+    },
+    {
+      "id": "geographie-14-sur-14",
+      "titre": "Géographie 14 sur 14",
+      "note": "Catégorie Géographie. Manche 14 sur 14.",
+      "collection": "Géographie",
+      "emoji": "🌍",
+      "questions": 24,
+      "niveaux": {
+        "2": 7,
+        "1": 12,
+        "3": 5
+      },
+      "octets": 4851,
+      "empreinte": "0111c539b1f191e4199f999bcb8faffee7da789e"
     },
     {
       "id": "sciences-et-nature-01-sur-12",
@@ -496,13 +616,13 @@
       "note": "Catégorie Sciences et nature. Manche 1 sur 12.",
       "collection": "Sciences et nature",
       "emoji": "🔬",
-      "questions": 24,
+      "questions": 25,
       "niveaux": {
-        "1": 19,
+        "1": 20,
         "2": 5
       },
-      "octets": 4724,
-      "empreinte": "115e205dd8b3b7f2cd7210b77f37f8497880dda2"
+      "octets": 5028,
+      "empreinte": "9459228153f7db8b4ec3bf2a648d552bf91fce8b"
     },
     {
       "id": "sciences-et-nature-02-sur-12",
@@ -510,14 +630,13 @@
       "note": "Catégorie Sciences et nature. Manche 2 sur 12.",
       "collection": "Sciences et nature",
       "emoji": "🔬",
-      "questions": 24,
+      "questions": 25,
       "niveaux": {
-        "1": 13,
-        "2": 8,
-        "3": 3
+        "1": 18,
+        "2": 7
       },
-      "octets": 5254,
-      "empreinte": "a096fe92fb5a35cd442c070424519c612044b655"
+      "octets": 5141,
+      "empreinte": "1eefeb06623c1690477c3c0338289b664e562d8b"
     },
     {
       "id": "sciences-et-nature-03-sur-12",
@@ -525,14 +644,14 @@
       "note": "Catégorie Sciences et nature. Manche 3 sur 12.",
       "collection": "Sciences et nature",
       "emoji": "🔬",
-      "questions": 24,
+      "questions": 25,
       "niveaux": {
-        "1": 16,
-        "2": 5,
-        "3": 3
+        "1": 18,
+        "3": 2,
+        "2": 5
       },
-      "octets": 5051,
-      "empreinte": "9d1c6a1600d23cf730ebb004723211709df55089"
+      "octets": 5059,
+      "empreinte": "b96eff5cfec950d0a766147aa447284230ba301e"
     },
     {
       "id": "sciences-et-nature-04-sur-12",
@@ -542,12 +661,12 @@
       "emoji": "🔬",
       "questions": 24,
       "niveaux": {
-        "1": 19,
-        "2": 4,
-        "3": 1
+        "1": 15,
+        "3": 2,
+        "2": 7
       },
-      "octets": 4935,
-      "empreinte": "ea253defd2cbbf2a045ac0fd103db76fe157ee58"
+      "octets": 5106,
+      "empreinte": "73506572710bb4f1419a62abbd679418702d44f3"
     },
     {
       "id": "sciences-et-nature-05-sur-12",
@@ -557,12 +676,12 @@
       "emoji": "🔬",
       "questions": 24,
       "niveaux": {
-        "2": 8,
-        "1": 15,
-        "3": 1
+        "3": 4,
+        "1": 14,
+        "2": 6
       },
-      "octets": 5207,
-      "empreinte": "9487685ba895d431c7ea0486021a35d9517c85bb"
+      "octets": 5231,
+      "empreinte": "eae7c377286d19686f25c5597d9e2f7ea384f06f"
     },
     {
       "id": "sciences-et-nature-06-sur-12",
@@ -572,11 +691,11 @@
       "emoji": "🔬",
       "questions": 24,
       "niveaux": {
-        "1": 19,
-        "2": 5
+        "2": 6,
+        "1": 18
       },
-      "octets": 4889,
-      "empreinte": "9a2125c380d4c2e1595e4dcd519e25cbb1c38ca3"
+      "octets": 4854,
+      "empreinte": "ba17a45330c323019808f1d39650a66ad3cfa905"
     },
     {
       "id": "sciences-et-nature-07-sur-12",
@@ -586,11 +705,11 @@
       "emoji": "🔬",
       "questions": 24,
       "niveaux": {
-        "2": 5,
-        "1": 19
+        "1": 19,
+        "2": 5
       },
-      "octets": 5016,
-      "empreinte": "bf2021e34731ebae4a1cc81b6df7435f111d9f49"
+      "octets": 5007,
+      "empreinte": "2b2c762529d37d0b337d451aec6f939b1f3b0ae9"
     },
     {
       "id": "sciences-et-nature-08-sur-12",
@@ -601,10 +720,11 @@
       "questions": 24,
       "niveaux": {
         "1": 16,
-        "2": 8
+        "2": 7,
+        "3": 1
       },
-      "octets": 4937,
-      "empreinte": "54a5154727d7e0a750776dc33b802c01de1b2fe9"
+      "octets": 5103,
+      "empreinte": "4ee7d60e875452db97c93d743094ed2a07a85ed0"
     },
     {
       "id": "sciences-et-nature-09-sur-12",
@@ -614,12 +734,12 @@
       "emoji": "🔬",
       "questions": 24,
       "niveaux": {
-        "2": 5,
-        "1": 18,
+        "2": 6,
+        "1": 17,
         "3": 1
       },
-      "octets": 4964,
-      "empreinte": "33ab7af383c40d9655124dfe5609c0b434526eec"
+      "octets": 5100,
+      "empreinte": "ca05aa4293e2c90dbe086b9f3be72fd4440ddc41"
     },
     {
       "id": "sciences-et-nature-10-sur-12",
@@ -629,12 +749,12 @@
       "emoji": "🔬",
       "questions": 24,
       "niveaux": {
-        "1": 15,
-        "2": 7,
+        "1": 17,
+        "2": 5,
         "3": 2
       },
-      "octets": 5068,
-      "empreinte": "dd289cde3988e31a51f3e67ce3d956c08b48a7c1"
+      "octets": 4775,
+      "empreinte": "c6fa928969aeedfe59d4812ddba8d657f79e6937"
     },
     {
       "id": "sciences-et-nature-11-sur-12",
@@ -644,11 +764,12 @@
       "emoji": "🔬",
       "questions": 24,
       "niveaux": {
-        "1": 17,
-        "2": 7
+        "2": 5,
+        "1": 18,
+        "3": 1
       },
-      "octets": 5018,
-      "empreinte": "6c886191167a291e8c384038e4a96a2f5314f592"
+      "octets": 4852,
+      "empreinte": "5e0b53da36f3228cb7c32b05badc72eef276b730"
     },
     {
       "id": "sciences-et-nature-12-sur-12",
@@ -658,384 +779,490 @@
       "emoji": "🔬",
       "questions": 24,
       "niveaux": {
-        "1": 19,
-        "3": 3,
-        "2": 2
-      },
-      "octets": 4608,
-      "empreinte": "8d6344d38675590015b36a54427df7c8d3142ef2"
-    },
-    {
-      "id": "sports-01-sur-13",
-      "titre": "Sports 01 sur 13",
-      "note": "Catégorie Sports. Manche 1 sur 13.",
-      "collection": "Sports",
-      "emoji": "🏅",
-      "questions": 25,
-      "niveaux": {
-        "1": 12,
-        "3": 3,
-        "2": 10
-      },
-      "octets": 5292,
-      "empreinte": "0edb02e307e56d55ee5350060e370d4e2d6e5716"
-    },
-    {
-      "id": "sports-02-sur-13",
-      "titre": "Sports 02 sur 13",
-      "note": "Catégorie Sports. Manche 2 sur 13.",
-      "collection": "Sports",
-      "emoji": "🏅",
-      "questions": 25,
-      "niveaux": {
-        "1": 14,
-        "2": 8,
-        "3": 3
-      },
-      "octets": 5342,
-      "empreinte": "82f9bb1e8f56f1b1845dc7fe5d8f7c73fd0e81da"
-    },
-    {
-      "id": "sports-03-sur-13",
-      "titre": "Sports 03 sur 13",
-      "note": "Catégorie Sports. Manche 3 sur 13.",
-      "collection": "Sports",
-      "emoji": "🏅",
-      "questions": 25,
-      "niveaux": {
-        "1": 15,
-        "3": 2,
-        "2": 8
-      },
-      "octets": 5359,
-      "empreinte": "d73e7676234c39851e08f2614fa9bc1fb01530a0"
-    },
-    {
-      "id": "sports-04-sur-13",
-      "titre": "Sports 04 sur 13",
-      "note": "Catégorie Sports. Manche 4 sur 13.",
-      "collection": "Sports",
-      "emoji": "🏅",
-      "questions": 25,
-      "niveaux": {
-        "2": 5,
         "1": 17,
-        "3": 3
-      },
-      "octets": 5305,
-      "empreinte": "3d18df8aa13eca2cdbe6734b410a9303a6755f55"
-    },
-    {
-      "id": "sports-05-sur-13",
-      "titre": "Sports 05 sur 13",
-      "note": "Catégorie Sports. Manche 5 sur 13.",
-      "collection": "Sports",
-      "emoji": "🏅",
-      "questions": 25,
-      "niveaux": {
-        "3": 3,
-        "1": 13,
-        "2": 9
-      },
-      "octets": 5206,
-      "empreinte": "dc0b23fad2b01f562ddc8820f5af06fea95d074c"
-    },
-    {
-      "id": "sports-06-sur-13",
-      "titre": "Sports 06 sur 13",
-      "note": "Catégorie Sports. Manche 6 sur 13.",
-      "collection": "Sports",
-      "emoji": "🏅",
-      "questions": 25,
-      "niveaux": {
-        "1": 18,
         "2": 6,
         "3": 1
       },
-      "octets": 5123,
-      "empreinte": "c7c3868ea5398ef5c5faac3c51d0ce44f16209e8"
+      "octets": 4969,
+      "empreinte": "315fc6f9caa2d78302df83f97463c9bd97fa32a8"
     },
     {
-      "id": "sports-07-sur-13",
-      "titre": "Sports 07 sur 13",
-      "note": "Catégorie Sports. Manche 7 sur 13.",
+      "id": "sports-01-sur-14",
+      "titre": "Sports 01 sur 14",
+      "note": "Catégorie Sports. Manche 1 sur 14.",
       "collection": "Sports",
       "emoji": "🏅",
-      "questions": 25,
+      "questions": 24,
       "niveaux": {
-        "1": 16,
-        "3": 4,
-        "2": 5
+        "2": 9,
+        "1": 15
       },
-      "octets": 5132,
-      "empreinte": "1bda9c8b06da71ad765f0dd65c622a0e97c899dd"
+      "octets": 4977,
+      "empreinte": "947c7314146d9263c004a1b46f3c778f00a60c33"
     },
     {
-      "id": "sports-08-sur-13",
-      "titre": "Sports 08 sur 13",
-      "note": "Catégorie Sports. Manche 8 sur 13.",
+      "id": "sports-02-sur-14",
+      "titre": "Sports 02 sur 14",
+      "note": "Catégorie Sports. Manche 2 sur 14.",
       "collection": "Sports",
       "emoji": "🏅",
-      "questions": 25,
+      "questions": 24,
       "niveaux": {
+        "1": 14,
+        "2": 6,
+        "3": 4
+      },
+      "octets": 5080,
+      "empreinte": "ce44ee10ae33b58b690bd58dc2c3fe8c8cc4d189"
+    },
+    {
+      "id": "sports-03-sur-14",
+      "titre": "Sports 03 sur 14",
+      "note": "Catégorie Sports. Manche 3 sur 14.",
+      "collection": "Sports",
+      "emoji": "🏅",
+      "questions": 24,
+      "niveaux": {
+        "1": 9,
         "2": 12,
-        "1": 13
+        "3": 3
       },
-      "octets": 5419,
-      "empreinte": "53768ffc7313ae10fb1b3d56a8688fe0fde8ca02"
+      "octets": 5348,
+      "empreinte": "5c2f74ff1f556fbd4dcd7419aff9ddc01b4c5ee8"
     },
     {
-      "id": "sports-09-sur-13",
-      "titre": "Sports 09 sur 13",
-      "note": "Catégorie Sports. Manche 9 sur 13.",
+      "id": "sports-04-sur-14",
+      "titre": "Sports 04 sur 14",
+      "note": "Catégorie Sports. Manche 4 sur 14.",
       "collection": "Sports",
       "emoji": "🏅",
-      "questions": 25,
+      "questions": 24,
       "niveaux": {
         "1": 17,
-        "2": 8
-      },
-      "octets": 5197,
-      "empreinte": "cf487cedbee7f3bc590d3f9ec136d6204f44c7f1"
-    },
-    {
-      "id": "sports-10-sur-13",
-      "titre": "Sports 10 sur 13",
-      "note": "Catégorie Sports. Manche 10 sur 13.",
-      "collection": "Sports",
-      "emoji": "🏅",
-      "questions": 25,
-      "niveaux": {
-        "2": 12,
-        "1": 11,
-        "3": 2
-      },
-      "octets": 5257,
-      "empreinte": "887fe5ad8cbb1fcc08b933cae04d159a4d6fbb75"
-    },
-    {
-      "id": "sports-11-sur-13",
-      "titre": "Sports 11 sur 13",
-      "note": "Catégorie Sports. Manche 11 sur 13.",
-      "collection": "Sports",
-      "emoji": "🏅",
-      "questions": 25,
-      "niveaux": {
-        "2": 10,
-        "1": 14,
+        "2": 6,
         "3": 1
       },
-      "octets": 5309,
-      "empreinte": "6e2f5a2b0cb64c8d41135a00216507c3402b07f4"
+      "octets": 5031,
+      "empreinte": "cc98e251b34088d262470c946a4639cb62e63fb5"
     },
     {
-      "id": "sports-12-sur-13",
-      "titre": "Sports 12 sur 13",
-      "note": "Catégorie Sports. Manche 12 sur 13.",
+      "id": "sports-05-sur-14",
+      "titre": "Sports 05 sur 14",
+      "note": "Catégorie Sports. Manche 5 sur 14.",
       "collection": "Sports",
       "emoji": "🏅",
-      "questions": 25,
+      "questions": 24,
       "niveaux": {
-        "1": 17,
-        "2": 8
+        "1": 14,
+        "2": 9,
+        "3": 1
       },
-      "octets": 5108,
-      "empreinte": "52a7848a6bec07fd2585b17f33af1ec9820b54a3"
+      "octets": 4937,
+      "empreinte": "7d2e3bdc79653f0baa68d4d863682efa6b5d22dc"
     },
     {
-      "id": "sports-13-sur-13",
-      "titre": "Sports 13 sur 13",
-      "note": "Catégorie Sports. Manche 13 sur 13.",
+      "id": "sports-06-sur-14",
+      "titre": "Sports 06 sur 14",
+      "note": "Catégorie Sports. Manche 6 sur 14.",
       "collection": "Sports",
       "emoji": "🏅",
-      "questions": 25,
+      "questions": 24,
+      "niveaux": {
+        "1": 16,
+        "2": 6,
+        "3": 2
+      },
+      "octets": 4781,
+      "empreinte": "bb29dc34c952fa294e47e1d056b0ad6ef1bd6e63"
+    },
+    {
+      "id": "sports-07-sur-14",
+      "titre": "Sports 07 sur 14",
+      "note": "Catégorie Sports. Manche 7 sur 14.",
+      "collection": "Sports",
+      "emoji": "🏅",
+      "questions": 24,
+      "niveaux": {
+        "3": 2,
+        "1": 11,
+        "2": 11
+      },
+      "octets": 5050,
+      "empreinte": "641eb5babd9ae06bbb02066e8e7c2a8050c3ab0b"
+    },
+    {
+      "id": "sports-08-sur-14",
+      "titre": "Sports 08 sur 14",
+      "note": "Catégorie Sports. Manche 8 sur 14.",
+      "collection": "Sports",
+      "emoji": "🏅",
+      "questions": 24,
+      "niveaux": {
+        "1": 15,
+        "2": 9
+      },
+      "octets": 5208,
+      "empreinte": "b3df825fb2c3c4865c414cc0dc221d714bbe9a75"
+    },
+    {
+      "id": "sports-09-sur-14",
+      "titre": "Sports 09 sur 14",
+      "note": "Catégorie Sports. Manche 9 sur 14.",
+      "collection": "Sports",
+      "emoji": "🏅",
+      "questions": 24,
+      "niveaux": {
+        "1": 11,
+        "2": 10,
+        "3": 3
+      },
+      "octets": 5196,
+      "empreinte": "002139129c8874d8f5044f0e3f5bd774f48e16bd"
+    },
+    {
+      "id": "sports-10-sur-14",
+      "titre": "Sports 10 sur 14",
+      "note": "Catégorie Sports. Manche 10 sur 14.",
+      "collection": "Sports",
+      "emoji": "🏅",
+      "questions": 24,
+      "niveaux": {
+        "1": 15,
+        "2": 7,
+        "3": 2
+      },
+      "octets": 5099,
+      "empreinte": "94171b746f58910278b3537db9c0e99b9f418aac"
+    },
+    {
+      "id": "sports-11-sur-14",
+      "titre": "Sports 11 sur 14",
+      "note": "Catégorie Sports. Manche 11 sur 14.",
+      "collection": "Sports",
+      "emoji": "🏅",
+      "questions": 24,
       "niveaux": {
         "1": 14,
         "3": 1,
-        "2": 10
+        "2": 9
       },
-      "octets": 5542,
-      "empreinte": "a404f263a7d56b17761db8ba7c536d0d3ab83d65"
+      "octets": 4935,
+      "empreinte": "75346957ec9fa6017bf85c89ca1ca51e911b5f59"
     },
     {
-      "id": "musique-01-sur-12",
-      "titre": "Musique 01 sur 12",
-      "note": "Catégorie Musique. Manche 1 sur 12.",
-      "collection": "Musique",
-      "emoji": "🎵",
-      "questions": 25,
+      "id": "sports-12-sur-14",
+      "titre": "Sports 12 sur 14",
+      "note": "Catégorie Sports. Manche 12 sur 14.",
+      "collection": "Sports",
+      "emoji": "🏅",
+      "questions": 24,
       "niveaux": {
-        "2": 9,
-        "1": 9,
-        "3": 7
+        "1": 14,
+        "2": 8,
+        "3": 2
       },
-      "octets": 5818,
-      "empreinte": "53dcc039bdcef99a421e1028590e64a0b23976f3"
+      "octets": 4928,
+      "empreinte": "b0afb2c49a3c4701b3d268ce6e2ab43b7369c07c"
     },
     {
-      "id": "musique-02-sur-12",
-      "titre": "Musique 02 sur 12",
-      "note": "Catégorie Musique. Manche 2 sur 12.",
+      "id": "sports-13-sur-14",
+      "titre": "Sports 13 sur 14",
+      "note": "Catégorie Sports. Manche 13 sur 14.",
+      "collection": "Sports",
+      "emoji": "🏅",
+      "questions": 24,
+      "niveaux": {
+        "3": 2,
+        "1": 17,
+        "2": 5
+      },
+      "octets": 5211,
+      "empreinte": "c685032cd081bf40660b80e2fad0974199febb80"
+    },
+    {
+      "id": "sports-14-sur-14",
+      "titre": "Sports 14 sur 14",
+      "note": "Catégorie Sports. Manche 14 sur 14.",
+      "collection": "Sports",
+      "emoji": "🏅",
+      "questions": 24,
+      "niveaux": {
+        "2": 10,
+        "1": 13,
+        "3": 1
+      },
+      "octets": 5273,
+      "empreinte": "03d34ab5b7817e04d78b13f95015340c30bfe6c8"
+    },
+    {
+      "id": "musique-01-sur-18",
+      "titre": "Musique 01 sur 18",
+      "note": "Catégorie Musique. Manche 1 sur 18.",
       "collection": "Musique",
       "emoji": "🎵",
-      "questions": 25,
+      "questions": 24,
+      "niveaux": {
+        "2": 5,
+        "3": 7,
+        "1": 12
+      },
+      "octets": 5341,
+      "empreinte": "a49accd0a72ad390e186e6b405b134bbf37bf3ed"
+    },
+    {
+      "id": "musique-02-sur-18",
+      "titre": "Musique 02 sur 18",
+      "note": "Catégorie Musique. Manche 2 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 24,
+      "niveaux": {
+        "3": 3,
+        "2": 11,
+        "1": 10
+      },
+      "octets": 5426,
+      "empreinte": "1317d310d04a0940993992366d5fcd13fd7f2cf0"
+    },
+    {
+      "id": "musique-03-sur-18",
+      "titre": "Musique 03 sur 18",
+      "note": "Catégorie Musique. Manche 3 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 24,
+      "niveaux": {
+        "3": 7,
+        "1": 8,
+        "2": 9
+      },
+      "octets": 5467,
+      "empreinte": "030e404062a3dc7e1e9adb39c7fd9d870e1e26ca"
+    },
+    {
+      "id": "musique-04-sur-18",
+      "titre": "Musique 04 sur 18",
+      "note": "Catégorie Musique. Manche 4 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 24,
+      "niveaux": {
+        "3": 6,
+        "1": 11,
+        "2": 7
+      },
+      "octets": 5213,
+      "empreinte": "5973bf3271ca1853b56336edeaa684af123df4ff"
+    },
+    {
+      "id": "musique-05-sur-18",
+      "titre": "Musique 05 sur 18",
+      "note": "Catégorie Musique. Manche 5 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 24,
       "niveaux": {
         "2": 12,
+        "1": 10,
+        "3": 2
+      },
+      "octets": 5113,
+      "empreinte": "32e0b421871de91e8c15c0332f6288a22bdfecda"
+    },
+    {
+      "id": "musique-06-sur-18",
+      "titre": "Musique 06 sur 18",
+      "note": "Catégorie Musique. Manche 6 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 24,
+      "niveaux": {
+        "3": 6,
+        "2": 11,
+        "1": 7
+      },
+      "octets": 5566,
+      "empreinte": "85f7422116db7e3664f1a9b928505d901e8d4082"
+    },
+    {
+      "id": "musique-07-sur-18",
+      "titre": "Musique 07 sur 18",
+      "note": "Catégorie Musique. Manche 7 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 24,
+      "niveaux": {
+        "3": 5,
+        "2": 8,
+        "1": 11
+      },
+      "octets": 5133,
+      "empreinte": "95652060981cf6caf5398fbbcf1b153740ae9be0"
+    },
+    {
+      "id": "musique-08-sur-18",
+      "titre": "Musique 08 sur 18",
+      "note": "Catégorie Musique. Manche 8 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 24,
+      "niveaux": {
+        "2": 7,
+        "3": 8,
+        "1": 9
+      },
+      "octets": 4994,
+      "empreinte": "30bdc370786da295e9d1db2efbcab77c5c496e94"
+    },
+    {
+      "id": "musique-09-sur-18",
+      "titre": "Musique 09 sur 18",
+      "note": "Catégorie Musique. Manche 9 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 24,
+      "niveaux": {
+        "2": 12,
+        "1": 4,
+        "3": 8
+      },
+      "octets": 5420,
+      "empreinte": "f1a865f747dd4b96a265eb90171b656083f8f4b5"
+    },
+    {
+      "id": "musique-10-sur-18",
+      "titre": "Musique 10 sur 18",
+      "note": "Catégorie Musique. Manche 10 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 24,
+      "niveaux": {
+        "1": 9,
+        "3": 7,
+        "2": 8
+      },
+      "octets": 5270,
+      "empreinte": "8547dca6c7cb10dd625ef6b781ac2bf74fd9ac63"
+    },
+    {
+      "id": "musique-11-sur-18",
+      "titre": "Musique 11 sur 18",
+      "note": "Catégorie Musique. Manche 11 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 24,
+      "niveaux": {
+        "2": 13,
+        "3": 6,
+        "1": 5
+      },
+      "octets": 5699,
+      "empreinte": "131a8d70d3ab0eb232905ba0891c89de27217d33"
+    },
+    {
+      "id": "musique-12-sur-18",
+      "titre": "Musique 12 sur 18",
+      "note": "Catégorie Musique. Manche 12 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 24,
+      "niveaux": {
+        "2": 9,
+        "1": 10,
+        "3": 5
+      },
+      "octets": 5293,
+      "empreinte": "48da0fbd361247f178ce85d73c8835725fbc02e0"
+    },
+    {
+      "id": "musique-13-sur-18",
+      "titre": "Musique 13 sur 18",
+      "note": "Catégorie Musique. Manche 13 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 24,
+      "niveaux": {
+        "3": 7,
+        "1": 15,
+        "2": 2
+      },
+      "octets": 5168,
+      "empreinte": "c71d432226279c3e1097d7ae5f14b4fd9d63a4cb"
+    },
+    {
+      "id": "musique-14-sur-18",
+      "titre": "Musique 14 sur 18",
+      "note": "Catégorie Musique. Manche 14 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 24,
+      "niveaux": {
+        "2": 10,
+        "3": 8,
+        "1": 6
+      },
+      "octets": 5348,
+      "empreinte": "298e2cdc6d43d794e13f3898faa83523bfb6456c"
+    },
+    {
+      "id": "musique-15-sur-18",
+      "titre": "Musique 15 sur 18",
+      "note": "Catégorie Musique. Manche 15 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 24,
+      "niveaux": {
+        "2": 11,
         "1": 5,
         "3": 8
       },
-      "octets": 5850,
-      "empreinte": "8c6dade1902286fd37c039e748d6204818e6efcb"
+      "octets": 5240,
+      "empreinte": "1f1783f9ddc4e9bf6603fc772b640d7dd9900c00"
     },
     {
-      "id": "musique-03-sur-12",
-      "titre": "Musique 03 sur 12",
-      "note": "Catégorie Musique. Manche 3 sur 12.",
-      "collection": "Musique",
-      "emoji": "🎵",
-      "questions": 25,
-      "niveaux": {
-        "1": 12,
-        "2": 7,
-        "3": 6
-      },
-      "octets": 5742,
-      "empreinte": "99c25325a2a06cee8c5aec6e17534d39ba3658b7"
-    },
-    {
-      "id": "musique-04-sur-12",
-      "titre": "Musique 04 sur 12",
-      "note": "Catégorie Musique. Manche 4 sur 12.",
-      "collection": "Musique",
-      "emoji": "🎵",
-      "questions": 25,
-      "niveaux": {
-        "1": 7,
-        "2": 13,
-        "3": 5
-      },
-      "octets": 5784,
-      "empreinte": "fd4115e6d330f71de16796c2f253f191e77d429b"
-    },
-    {
-      "id": "musique-05-sur-12",
-      "titre": "Musique 05 sur 12",
-      "note": "Catégorie Musique. Manche 5 sur 12.",
-      "collection": "Musique",
-      "emoji": "🎵",
-      "questions": 25,
-      "niveaux": {
-        "1": 8,
-        "3": 7,
-        "2": 10
-      },
-      "octets": 5750,
-      "empreinte": "076fee6f8cd9413d6deb7c6c4133c59518d9ce97"
-    },
-    {
-      "id": "musique-06-sur-12",
-      "titre": "Musique 06 sur 12",
-      "note": "Catégorie Musique. Manche 6 sur 12.",
-      "collection": "Musique",
-      "emoji": "🎵",
-      "questions": 25,
-      "niveaux": {
-        "2": 9,
-        "3": 8,
-        "1": 8
-      },
-      "octets": 5808,
-      "empreinte": "4b79d130c6996df6ea1b7b1fa99e04da1e5937bd"
-    },
-    {
-      "id": "musique-07-sur-12",
-      "titre": "Musique 07 sur 12",
-      "note": "Catégorie Musique. Manche 7 sur 12.",
-      "collection": "Musique",
-      "emoji": "🎵",
-      "questions": 25,
-      "niveaux": {
-        "2": 12,
-        "3": 7,
-        "1": 6
-      },
-      "octets": 5849,
-      "empreinte": "e8782218f08d0988f505adbe5bcfe24d2543775a"
-    },
-    {
-      "id": "musique-08-sur-12",
-      "titre": "Musique 08 sur 12",
-      "note": "Catégorie Musique. Manche 8 sur 12.",
-      "collection": "Musique",
-      "emoji": "🎵",
-      "questions": 25,
-      "niveaux": {
-        "3": 5,
-        "2": 9,
-        "1": 11
-      },
-      "octets": 5911,
-      "empreinte": "84f8e0a6d701b16c2b6f065a67dcddddb010ca10"
-    },
-    {
-      "id": "musique-09-sur-12",
-      "titre": "Musique 09 sur 12",
-      "note": "Catégorie Musique. Manche 9 sur 12.",
-      "collection": "Musique",
-      "emoji": "🎵",
-      "questions": 25,
-      "niveaux": {
-        "1": 13,
-        "2": 9,
-        "3": 3
-      },
-      "octets": 5848,
-      "empreinte": "fec7b366c86c61652bddfcfc929d823136e86e8c"
-    },
-    {
-      "id": "musique-10-sur-12",
-      "titre": "Musique 10 sur 12",
-      "note": "Catégorie Musique. Manche 10 sur 12.",
+      "id": "musique-16-sur-18",
+      "titre": "Musique 16 sur 18",
+      "note": "Catégorie Musique. Manche 16 sur 18.",
       "collection": "Musique",
       "emoji": "🎵",
       "questions": 24,
       "niveaux": {
-        "1": 7,
+        "1": 5,
         "2": 8,
-        "3": 9
+        "3": 11
       },
-      "octets": 5470,
-      "empreinte": "1d255169107a967cb255ff6bc7425e889ca14b7b"
+      "octets": 5547,
+      "empreinte": "183deb3d8e4ee720326b0d5e515cb85abcebcaaa"
     },
     {
-      "id": "musique-11-sur-12",
-      "titre": "Musique 11 sur 12",
-      "note": "Catégorie Musique. Manche 11 sur 12.",
+      "id": "musique-17-sur-18",
+      "titre": "Musique 17 sur 18",
+      "note": "Catégorie Musique. Manche 17 sur 18.",
       "collection": "Musique",
       "emoji": "🎵",
-      "questions": 24,
+      "questions": 23,
       "niveaux": {
-        "1": 9,
+        "1": 7,
+        "2": 14,
+        "3": 2
+      },
+      "octets": 5127,
+      "empreinte": "17a26afe3179b79034ed65af6ec597d058df6d65"
+    },
+    {
+      "id": "musique-18-sur-18",
+      "titre": "Musique 18 sur 18",
+      "note": "Catégorie Musique. Manche 18 sur 18.",
+      "collection": "Musique",
+      "emoji": "🎵",
+      "questions": 23,
+      "niveaux": {
         "2": 12,
-        "3": 3
+        "3": 4,
+        "1": 7
       },
-      "octets": 5723,
-      "empreinte": "5153417e700b9c310460b6159d6ceda22fa3e7bc"
-    },
-    {
-      "id": "musique-12-sur-12",
-      "titre": "Musique 12 sur 12",
-      "note": "Catégorie Musique. Manche 12 sur 12.",
-      "collection": "Musique",
-      "emoji": "🎵",
-      "questions": 24,
-      "niveaux": {
-        "1": 11,
-        "2": 9,
-        "3": 4
-      },
-      "octets": 5479,
-      "empreinte": "dfb009a9510488ab3663fd376b1a0eb6d9e2a448"
+      "octets": 5374,
+      "empreinte": "e88d25680ddf00d7833b93d91bcfaf0c151d48d0"
     },
     {
       "id": "cinema-et-tele-01-sur-12",
@@ -1212,159 +1439,219 @@
       "empreinte": "109a98135a5058986e81c40a75c66f5c91cc5478"
     },
     {
-      "id": "quebec-01-sur-11",
-      "titre": "Québec 01 sur 11",
-      "note": "Catégorie Québec. Manche 1 sur 11.",
+      "id": "quebec-01-sur-15",
+      "titre": "Québec 01 sur 15",
+      "note": "Catégorie Québec. Manche 1 sur 15.",
       "collection": "Québec",
       "emoji": "⚜️",
       "questions": 25,
       "niveaux": {
-        "1": 11,
-        "2": 10,
-        "3": 4
-      },
-      "octets": 6091,
-      "empreinte": "d8c6ce0280c9f8649e74a266631cefbe4e6e6380"
-    },
-    {
-      "id": "quebec-02-sur-11",
-      "titre": "Québec 02 sur 11",
-      "note": "Catégorie Québec. Manche 2 sur 11.",
-      "collection": "Québec",
-      "emoji": "⚜️",
-      "questions": 25,
-      "niveaux": {
-        "2": 11,
-        "1": 11,
-        "3": 3
-      },
-      "octets": 5920,
-      "empreinte": "9b6fe75d715d649421744e61d2d20a91e87c8018"
-    },
-    {
-      "id": "quebec-03-sur-11",
-      "titre": "Québec 03 sur 11",
-      "note": "Catégorie Québec. Manche 3 sur 11.",
-      "collection": "Québec",
-      "emoji": "⚜️",
-      "questions": 25,
-      "niveaux": {
-        "3": 5,
-        "1": 12,
-        "2": 8
-      },
-      "octets": 5766,
-      "empreinte": "57dc965763d30a9a375a4b52dabfebf0aba72924"
-    },
-    {
-      "id": "quebec-04-sur-11",
-      "titre": "Québec 04 sur 11",
-      "note": "Catégorie Québec. Manche 4 sur 11.",
-      "collection": "Québec",
-      "emoji": "⚜️",
-      "questions": 25,
-      "niveaux": {
-        "1": 14,
         "2": 8,
-        "3": 3
+        "3": 3,
+        "1": 14
       },
-      "octets": 5863,
-      "empreinte": "4da8d988827cdc5655ef22ea1b0438c323e6643f"
+      "octets": 5347,
+      "empreinte": "876b1546e4d7fb9d7e1df680735cc3823fadd69f"
     },
     {
-      "id": "quebec-05-sur-11",
-      "titre": "Québec 05 sur 11",
-      "note": "Catégorie Québec. Manche 5 sur 11.",
+      "id": "quebec-02-sur-15",
+      "titre": "Québec 02 sur 15",
+      "note": "Catégorie Québec. Manche 2 sur 15.",
       "collection": "Québec",
       "emoji": "⚜️",
       "questions": 25,
       "niveaux": {
-        "1": 13,
-        "3": 6,
-        "2": 6
+        "1": 17,
+        "2": 6,
+        "3": 2
       },
-      "octets": 6189,
-      "empreinte": "e611befd3abb21f25c384656de8bbf91755f6b22"
+      "octets": 5343,
+      "empreinte": "fd99cd77666e47576d80d0d9db1a83043413bf99"
     },
     {
-      "id": "quebec-06-sur-11",
-      "titre": "Québec 06 sur 11",
-      "note": "Catégorie Québec. Manche 6 sur 11.",
+      "id": "quebec-03-sur-15",
+      "titre": "Québec 03 sur 15",
+      "note": "Catégorie Québec. Manche 3 sur 15.",
+      "collection": "Québec",
+      "emoji": "⚜️",
+      "questions": 25,
+      "niveaux": {
+        "3": 4,
+        "2": 9,
+        "1": 12
+      },
+      "octets": 5564,
+      "empreinte": "ab3a4d8a9edc887454301bc0b993a629b495139a"
+    },
+    {
+      "id": "quebec-04-sur-15",
+      "titre": "Québec 04 sur 15",
+      "note": "Catégorie Québec. Manche 4 sur 15.",
+      "collection": "Québec",
+      "emoji": "⚜️",
+      "questions": 25,
+      "niveaux": {
+        "1": 17,
+        "2": 5,
+        "3": 3
+      },
+      "octets": 5454,
+      "empreinte": "13c9facafa8e0a1493b922cf881567fab53a4bc3"
+    },
+    {
+      "id": "quebec-05-sur-15",
+      "titre": "Québec 05 sur 15",
+      "note": "Catégorie Québec. Manche 5 sur 15.",
       "collection": "Québec",
       "emoji": "⚜️",
       "questions": 25,
       "niveaux": {
         "3": 7,
-        "2": 5,
-        "1": 13
+        "2": 6,
+        "1": 12
       },
-      "octets": 5812,
-      "empreinte": "fc79b606f1741828e332906cba00a1bcab223972"
+      "octets": 5713,
+      "empreinte": "4b48b07623112d3a09557594535d3c9ce465715c"
     },
     {
-      "id": "quebec-07-sur-11",
-      "titre": "Québec 07 sur 11",
-      "note": "Catégorie Québec. Manche 7 sur 11.",
+      "id": "quebec-06-sur-15",
+      "titre": "Québec 06 sur 15",
+      "note": "Catégorie Québec. Manche 6 sur 15.",
+      "collection": "Québec",
+      "emoji": "⚜️",
+      "questions": 25,
+      "niveaux": {
+        "1": 15,
+        "3": 3,
+        "2": 7
+      },
+      "octets": 5193,
+      "empreinte": "80df6f6b7d7bd8e6748c6dc7ee6c5aeb5dd8c884"
+    },
+    {
+      "id": "quebec-07-sur-15",
+      "titre": "Québec 07 sur 15",
+      "note": "Catégorie Québec. Manche 7 sur 15.",
+      "collection": "Québec",
+      "emoji": "⚜️",
+      "questions": 25,
+      "niveaux": {
+        "1": 9,
+        "2": 7,
+        "3": 9
+      },
+      "octets": 5663,
+      "empreinte": "25586785cffcf51ee40a5a208f2c24e9203669a7"
+    },
+    {
+      "id": "quebec-08-sur-15",
+      "titre": "Québec 08 sur 15",
+      "note": "Catégorie Québec. Manche 8 sur 15.",
+      "collection": "Québec",
+      "emoji": "⚜️",
+      "questions": 25,
+      "niveaux": {
+        "1": 13,
+        "2": 7,
+        "3": 5
+      },
+      "octets": 5532,
+      "empreinte": "0edc195ddb170d892b4b9f8132086ba5999c9708"
+    },
+    {
+      "id": "quebec-09-sur-15",
+      "titre": "Québec 09 sur 15",
+      "note": "Catégorie Québec. Manche 9 sur 15.",
+      "collection": "Québec",
+      "emoji": "⚜️",
+      "questions": 25,
+      "niveaux": {
+        "1": 16,
+        "2": 7,
+        "3": 2
+      },
+      "octets": 5268,
+      "empreinte": "95ec772b33b9e164420e7108743679edd2fd13ab"
+    },
+    {
+      "id": "quebec-10-sur-15",
+      "titre": "Québec 10 sur 15",
+      "note": "Catégorie Québec. Manche 10 sur 15.",
+      "collection": "Québec",
+      "emoji": "⚜️",
+      "questions": 25,
+      "niveaux": {
+        "1": 11,
+        "2": 10,
+        "3": 4
+      },
+      "octets": 5666,
+      "empreinte": "3fefef9aaab22a552e747d90d2075d6a7a8b465d"
+    },
+    {
+      "id": "quebec-11-sur-15",
+      "titre": "Québec 11 sur 15",
+      "note": "Catégorie Québec. Manche 11 sur 15.",
+      "collection": "Québec",
+      "emoji": "⚜️",
+      "questions": 25,
+      "niveaux": {
+        "1": 13,
+        "3": 7,
+        "2": 5
+      },
+      "octets": 5385,
+      "empreinte": "a894c54a9e786a2bcc450b8e3c8ea7680323934f"
+    },
+    {
+      "id": "quebec-12-sur-15",
+      "titre": "Québec 12 sur 15",
+      "note": "Catégorie Québec. Manche 12 sur 15.",
       "collection": "Québec",
       "emoji": "⚜️",
       "questions": 25,
       "niveaux": {
         "2": 11,
+        "3": 1,
+        "1": 13
+      },
+      "octets": 5237,
+      "empreinte": "6f76f803ea06910f822a46cdf26d3dc6e416431d"
+    },
+    {
+      "id": "quebec-13-sur-15",
+      "titre": "Québec 13 sur 15",
+      "note": "Catégorie Québec. Manche 13 sur 15.",
+      "collection": "Québec",
+      "emoji": "⚜️",
+      "questions": 25,
+      "niveaux": {
         "1": 10,
-        "3": 4
+        "3": 4,
+        "2": 11
       },
-      "octets": 5744,
-      "empreinte": "5d9015870322b56548e8d3d3b3453e53b20314f6"
+      "octets": 5614,
+      "empreinte": "dbfc8499a6dd4443a56ca78be9625648093339c7"
     },
     {
-      "id": "quebec-08-sur-11",
-      "titre": "Québec 08 sur 11",
-      "note": "Catégorie Québec. Manche 8 sur 11.",
+      "id": "quebec-14-sur-15",
+      "titre": "Québec 14 sur 15",
+      "note": "Catégorie Québec. Manche 14 sur 15.",
       "collection": "Québec",
       "emoji": "⚜️",
-      "questions": 24,
+      "questions": 25,
       "niveaux": {
-        "1": 17,
-        "2": 4,
-        "3": 3
-      },
-      "octets": 5325,
-      "empreinte": "44246aa8970879db935fc31bc18914b80ba6fb13"
-    },
-    {
-      "id": "quebec-09-sur-11",
-      "titre": "Québec 09 sur 11",
-      "note": "Catégorie Québec. Manche 9 sur 11.",
-      "collection": "Québec",
-      "emoji": "⚜️",
-      "questions": 24,
-      "niveaux": {
-        "2": 10,
-        "1": 13,
-        "3": 1
-      },
-      "octets": 5750,
-      "empreinte": "8fb0c5b87b4399d0f81a84d408141395f07c5beb"
-    },
-    {
-      "id": "quebec-10-sur-11",
-      "titre": "Québec 10 sur 11",
-      "note": "Catégorie Québec. Manche 10 sur 11.",
-      "collection": "Québec",
-      "emoji": "⚜️",
-      "questions": 24,
-      "niveaux": {
+        "1": 10,
         "3": 3,
-        "1": 13,
-        "2": 8
+        "2": 12
       },
-      "octets": 5597,
-      "empreinte": "131e45897567d9b85b5762f8a67a92d43717964c"
+      "octets": 5625,
+      "empreinte": "2f6003388b94c6ca91dfbb732fe2e7366500c275"
     },
     {
-      "id": "quebec-11-sur-11",
-      "titre": "Québec 11 sur 11",
-      "note": "Catégorie Québec. Manche 11 sur 11.",
+      "id": "quebec-15-sur-15",
+      "titre": "Québec 15 sur 15",
+      "note": "Catégorie Québec. Manche 15 sur 15.",
       "collection": "Québec",
       "emoji": "⚜️",
       "questions": 24,
@@ -1373,8 +1660,8 @@
         "2": 9,
         "3": 2
       },
-      "octets": 5683,
-      "empreinte": "6a6840f23a9f9652815db333436b44d5b3ba0a26"
+      "octets": 5177,
+      "empreinte": "47e872bd51190d2c547c4850eaea158efde99b73"
     },
     {
       "id": "bouffe-et-cuisine-01-sur-13",
@@ -1384,12 +1671,11 @@
       "emoji": "🍲",
       "questions": 24,
       "niveaux": {
-        "3": 3,
-        "1": 19,
-        "2": 2
+        "1": 18,
+        "2": 6
       },
-      "octets": 5363,
-      "empreinte": "b77ef1c6cafdb343193114e70d5ab8eeee48ee53"
+      "octets": 5269,
+      "empreinte": "9641c55dc5654af5d2dfb52239f84982657abadd"
     },
     {
       "id": "bouffe-et-cuisine-02-sur-13",
@@ -1399,12 +1685,11 @@
       "emoji": "🍲",
       "questions": 24,
       "niveaux": {
-        "3": 2,
-        "2": 3,
-        "1": 19
+        "1": 21,
+        "2": 3
       },
-      "octets": 5315,
-      "empreinte": "015f0545d3ba38cb8b4c6322ab3b575d5f7a224a"
+      "octets": 5178,
+      "empreinte": "48308945784be7e2f78234d3b06a0ac9f8d5a2ce"
     },
     {
       "id": "bouffe-et-cuisine-03-sur-13",
@@ -1414,12 +1699,12 @@
       "emoji": "🍲",
       "questions": 24,
       "niveaux": {
-        "1": 19,
-        "2": 4,
-        "3": 1
+        "3": 1,
+        "1": 17,
+        "2": 6
       },
-      "octets": 4848,
-      "empreinte": "33d0a48796f1e435f5d7381407b431ab8a12a318"
+      "octets": 5139,
+      "empreinte": "13f35d366ee6e6b6cc233b713cf849308fb869da"
     },
     {
       "id": "bouffe-et-cuisine-04-sur-13",
@@ -1429,12 +1714,12 @@
       "emoji": "🍲",
       "questions": 24,
       "niveaux": {
-        "1": 17,
-        "2": 6,
-        "3": 1
+        "1": 16,
+        "2": 5,
+        "3": 3
       },
-      "octets": 5165,
-      "empreinte": "5c2259884bcc16896882b7aa725cf5e855c378f9"
+      "octets": 4933,
+      "empreinte": "357dfbe53600fea24339977508053090f15748b5"
     },
     {
       "id": "bouffe-et-cuisine-05-sur-13",
@@ -1444,12 +1729,11 @@
       "emoji": "🍲",
       "questions": 24,
       "niveaux": {
-        "1": 16,
-        "2": 6,
-        "3": 2
+        "1": 19,
+        "2": 5
       },
-      "octets": 5371,
-      "empreinte": "6fb6cb02c8eb56c9ed29a601a261b724820794af"
+      "octets": 4940,
+      "empreinte": "381ed37f5ab642da3cce61564b6fb5ca2afd4cfa"
     },
     {
       "id": "bouffe-et-cuisine-06-sur-13",
@@ -1457,14 +1741,14 @@
       "note": "Catégorie Bouffe et cuisine. Manche 6 sur 13.",
       "collection": "Bouffe et cuisine",
       "emoji": "🍲",
-      "questions": 23,
+      "questions": 24,
       "niveaux": {
-        "1": 18,
-        "2": 4,
-        "3": 1
+        "3": 2,
+        "1": 17,
+        "2": 5
       },
-      "octets": 5223,
-      "empreinte": "c812bb8ceb09c5cce01a61966518dfb3d3b28ace"
+      "octets": 5334,
+      "empreinte": "4e2b5b1696a7ade02f2ce1f1071c1fb37085d821"
     },
     {
       "id": "bouffe-et-cuisine-07-sur-13",
@@ -1472,14 +1756,14 @@
       "note": "Catégorie Bouffe et cuisine. Manche 7 sur 13.",
       "collection": "Bouffe et cuisine",
       "emoji": "🍲",
-      "questions": 23,
+      "questions": 24,
       "niveaux": {
-        "1": 16,
-        "3": 2,
-        "2": 5
+        "2": 5,
+        "1": 18,
+        "3": 1
       },
-      "octets": 5009,
-      "empreinte": "038e6b18577fbdbb10412bceec383e5f87406df7"
+      "octets": 5225,
+      "empreinte": "f7c50e785c34aaecfaf9c730e8d0838922d88d37"
     },
     {
       "id": "bouffe-et-cuisine-08-sur-13",
@@ -1487,14 +1771,14 @@
       "note": "Catégorie Bouffe et cuisine. Manche 8 sur 13.",
       "collection": "Bouffe et cuisine",
       "emoji": "🍲",
-      "questions": 23,
+      "questions": 24,
       "niveaux": {
         "1": 18,
-        "2": 4,
-        "3": 1
+        "3": 3,
+        "2": 3
       },
-      "octets": 4684,
-      "empreinte": "a7f7a86db87df0a7fa0db86a4acb34a0b5e341c7"
+      "octets": 4991,
+      "empreinte": "0877f5bee96daa30e2cfa4721434bc59296c6bff"
     },
     {
       "id": "bouffe-et-cuisine-09-sur-13",
@@ -1502,13 +1786,14 @@
       "note": "Catégorie Bouffe et cuisine. Manche 9 sur 13.",
       "collection": "Bouffe et cuisine",
       "emoji": "🍲",
-      "questions": 23,
+      "questions": 24,
       "niveaux": {
-        "1": 16,
-        "2": 7
+        "2": 5,
+        "1": 17,
+        "3": 2
       },
-      "octets": 4982,
-      "empreinte": "fbd3549ae361442f68fb79a55cc8efdff1a005a9"
+      "octets": 5219,
+      "empreinte": "472d6740e65a3b8d410fe17048d8f15d87e4d143"
     },
     {
       "id": "bouffe-et-cuisine-10-sur-13",
@@ -1518,12 +1803,12 @@
       "emoji": "🍲",
       "questions": 23,
       "niveaux": {
-        "1": 12,
-        "2": 8,
+        "1": 18,
+        "2": 2,
         "3": 3
       },
-      "octets": 5221,
-      "empreinte": "44de0f0a4619301cc9a2e4ace688021b8aa0d86a"
+      "octets": 4794,
+      "empreinte": "d8ac610edb8974c42659a38fac3685c7b2fb42be"
     },
     {
       "id": "bouffe-et-cuisine-11-sur-13",
@@ -1533,12 +1818,11 @@
       "emoji": "🍲",
       "questions": 23,
       "niveaux": {
-        "1": 14,
-        "3": 2,
-        "2": 7
+        "1": 13,
+        "2": 10
       },
-      "octets": 4666,
-      "empreinte": "4963d0960033929cbd37b2fc1ca387bd0003f0e6"
+      "octets": 5073,
+      "empreinte": "bad30f286ebd2a577c0c18a64d1cb02386c8c04d"
     },
     {
       "id": "bouffe-et-cuisine-12-sur-13",
@@ -1548,11 +1832,12 @@
       "emoji": "🍲",
       "questions": 23,
       "niveaux": {
-        "1": 19,
-        "2": 4
+        "1": 17,
+        "3": 1,
+        "2": 5
       },
-      "octets": 4934,
-      "empreinte": "3661cc2ff3d1cfc9e15c2c19b46108190a34cb60"
+      "octets": 4918,
+      "empreinte": "70c872dcbb1d565e44454fd33c193fbacabcf3df"
     },
     {
       "id": "bouffe-et-cuisine-13-sur-13",
@@ -1562,12 +1847,12 @@
       "emoji": "🍲",
       "questions": 23,
       "niveaux": {
+        "1": 18,
         "2": 2,
-        "1": 20,
-        "3": 1
+        "3": 3
       },
-      "octets": 4740,
-      "empreinte": "bb3aba7fe2912406eaaa7cafeed30ecac940a62f"
+      "octets": 5234,
+      "empreinte": "9777ad8aafb8b3abefc73d14b8a3a6feb3c24bd1"
     },
     {
       "id": "mots-et-langue-01-sur-12",
@@ -1713,8 +1998,8 @@
         "1": 19,
         "2": 5
       },
-      "octets": 5060,
-      "empreinte": "dac011396c3da1526ab41a138713fa99a962f18c"
+      "octets": 5072,
+      "empreinte": "015124b5d7670b6b9a363c2e5c0af54144421a6b"
     },
     {
       "id": "mots-et-langue-11-sur-12",
@@ -1746,259 +2031,274 @@
       "empreinte": "672d38b13338ccbecd2da35de0ea7cd950e09a35"
     },
     {
-      "id": "culture-pop-01-sur-17",
-      "titre": "Culture pop 01 sur 17",
-      "note": "Catégorie Culture pop. Manche 1 sur 17.",
+      "id": "culture-pop-01-sur-18",
+      "titre": "Culture pop 01 sur 18",
+      "note": "Catégorie Culture pop. Manche 1 sur 18.",
       "collection": "Culture pop",
       "emoji": "🌟",
       "questions": 25,
       "niveaux": {
-        "3": 7,
-        "1": 8,
-        "2": 10
-      },
-      "octets": 6322,
-      "empreinte": "2b098f3e01027127145f227fa44ebc6bdaa37767"
-    },
-    {
-      "id": "culture-pop-02-sur-17",
-      "titre": "Culture pop 02 sur 17",
-      "note": "Catégorie Culture pop. Manche 2 sur 17.",
-      "collection": "Culture pop",
-      "emoji": "🌟",
-      "questions": 25,
-      "niveaux": {
-        "3": 8,
-        "2": 6,
-        "1": 11
-      },
-      "octets": 6093,
-      "empreinte": "20d2f2108ae54d942d88038d005954b4e1173894"
-    },
-    {
-      "id": "culture-pop-03-sur-17",
-      "titre": "Culture pop 03 sur 17",
-      "note": "Catégorie Culture pop. Manche 3 sur 17.",
-      "collection": "Culture pop",
-      "emoji": "🌟",
-      "questions": 25,
-      "niveaux": {
+        "1": 7,
         "2": 9,
-        "1": 11,
-        "3": 5
+        "3": 9
       },
-      "octets": 5843,
-      "empreinte": "f2088f45c9890f24f8c0a9ab484d2258834a19ec"
+      "octets": 5950,
+      "empreinte": "b4cf10dca3a2ff9ea10c2a2ef1aadf65d97aaf4f"
     },
     {
-      "id": "culture-pop-04-sur-17",
-      "titre": "Culture pop 04 sur 17",
-      "note": "Catégorie Culture pop. Manche 4 sur 17.",
+      "id": "culture-pop-02-sur-18",
+      "titre": "Culture pop 02 sur 18",
+      "note": "Catégorie Culture pop. Manche 2 sur 18.",
       "collection": "Culture pop",
       "emoji": "🌟",
       "questions": 25,
       "niveaux": {
-        "1": 5,
-        "3": 12,
-        "2": 8
-      },
-      "octets": 6167,
-      "empreinte": "f4d9714bd72b44c2d45e336eeaf0b8693b4d0367"
-    },
-    {
-      "id": "culture-pop-05-sur-17",
-      "titre": "Culture pop 05 sur 17",
-      "note": "Catégorie Culture pop. Manche 5 sur 17.",
-      "collection": "Culture pop",
-      "emoji": "🌟",
-      "questions": 25,
-      "niveaux": {
-        "1": 7,
-        "2": 8,
-        "3": 10
-      },
-      "octets": 6258,
-      "empreinte": "41bc0ebd4ba1dc414fafed8f508ef79c92296611"
-    },
-    {
-      "id": "culture-pop-06-sur-17",
-      "titre": "Culture pop 06 sur 17",
-      "note": "Catégorie Culture pop. Manche 6 sur 17.",
-      "collection": "Culture pop",
-      "emoji": "🌟",
-      "questions": 25,
-      "niveaux": {
-        "2": 7,
         "1": 10,
-        "3": 8
+        "2": 11,
+        "3": 4
       },
-      "octets": 6029,
-      "empreinte": "3179ad2f2dc9b0fbbb50323cd388308c8b623fcb"
+      "octets": 6274,
+      "empreinte": "a84c4b7661ff00486544e22eb9d6801cef9969ed"
     },
     {
-      "id": "culture-pop-07-sur-17",
-      "titre": "Culture pop 07 sur 17",
-      "note": "Catégorie Culture pop. Manche 7 sur 17.",
+      "id": "culture-pop-03-sur-18",
+      "titre": "Culture pop 03 sur 18",
+      "note": "Catégorie Culture pop. Manche 3 sur 18.",
       "collection": "Culture pop",
       "emoji": "🌟",
       "questions": 25,
       "niveaux": {
-        "3": 8,
-        "1": 8,
-        "2": 9
-      },
-      "octets": 6117,
-      "empreinte": "3385efc37f41948e70632407535d923cc98cf70e"
-    },
-    {
-      "id": "culture-pop-08-sur-17",
-      "titre": "Culture pop 08 sur 17",
-      "note": "Catégorie Culture pop. Manche 8 sur 17.",
-      "collection": "Culture pop",
-      "emoji": "🌟",
-      "questions": 24,
-      "niveaux": {
-        "3": 9,
-        "1": 5,
-        "2": 10
-      },
-      "octets": 5903,
-      "empreinte": "4828f4da1cefae6937e87352840b7722f557e059"
-    },
-    {
-      "id": "culture-pop-09-sur-17",
-      "titre": "Culture pop 09 sur 17",
-      "note": "Catégorie Culture pop. Manche 9 sur 17.",
-      "collection": "Culture pop",
-      "emoji": "🌟",
-      "questions": 24,
-      "niveaux": {
-        "2": 10,
+        "3": 5,
         "1": 9,
-        "3": 5
+        "2": 11
       },
-      "octets": 6058,
-      "empreinte": "b00d3bae7e398b09b4b48321ee58b2ee9db2aebc"
+      "octets": 6139,
+      "empreinte": "dfd602826488e62c8348744111ffbb3eab2549b4"
     },
     {
-      "id": "culture-pop-10-sur-17",
-      "titre": "Culture pop 10 sur 17",
-      "note": "Catégorie Culture pop. Manche 10 sur 17.",
+      "id": "culture-pop-04-sur-18",
+      "titre": "Culture pop 04 sur 18",
+      "note": "Catégorie Culture pop. Manche 4 sur 18.",
       "collection": "Culture pop",
       "emoji": "🌟",
       "questions": 24,
       "niveaux": {
-        "2": 10,
-        "1": 6,
-        "3": 8
+        "1": 9,
+        "3": 10,
+        "2": 5
       },
-      "octets": 5895,
-      "empreinte": "6c50ff6642c02e0b545d35b6164e97a7d5817030"
+      "octets": 5758,
+      "empreinte": "e060a80bc2a4f8f334db712a23add504833d6cbf"
     },
     {
-      "id": "culture-pop-11-sur-17",
-      "titre": "Culture pop 11 sur 17",
-      "note": "Catégorie Culture pop. Manche 11 sur 17.",
-      "collection": "Culture pop",
-      "emoji": "🌟",
-      "questions": 24,
-      "niveaux": {
-        "2": 12,
-        "1": 7,
-        "3": 5
-      },
-      "octets": 5740,
-      "empreinte": "9dd6fd63a934534558d3c6cb0fe3e74c348897e6"
-    },
-    {
-      "id": "culture-pop-12-sur-17",
-      "titre": "Culture pop 12 sur 17",
-      "note": "Catégorie Culture pop. Manche 12 sur 17.",
+      "id": "culture-pop-05-sur-18",
+      "titre": "Culture pop 05 sur 18",
+      "note": "Catégorie Culture pop. Manche 5 sur 18.",
       "collection": "Culture pop",
       "emoji": "🌟",
       "questions": 24,
       "niveaux": {
         "2": 14,
-        "1": 7,
-        "3": 3
-      },
-      "octets": 5903,
-      "empreinte": "960207ebcbaa2b2a11017ea4f16dce8192d07467"
-    },
-    {
-      "id": "culture-pop-13-sur-17",
-      "titre": "Culture pop 13 sur 17",
-      "note": "Catégorie Culture pop. Manche 13 sur 17.",
-      "collection": "Culture pop",
-      "emoji": "🌟",
-      "questions": 24,
-      "niveaux": {
-        "2": 9,
-        "1": 5,
-        "3": 10
-      },
-      "octets": 6069,
-      "empreinte": "9bf74ea7e3de1b5494600d11ae56d550f1d253a0"
-    },
-    {
-      "id": "culture-pop-14-sur-17",
-      "titre": "Culture pop 14 sur 17",
-      "note": "Catégorie Culture pop. Manche 14 sur 17.",
-      "collection": "Culture pop",
-      "emoji": "🌟",
-      "questions": 24,
-      "niveaux": {
-        "2": 11,
-        "3": 8,
-        "1": 5
-      },
-      "octets": 5951,
-      "empreinte": "5675496c7408df8c7506abed35f5a129d910e4eb"
-    },
-    {
-      "id": "culture-pop-15-sur-17",
-      "titre": "Culture pop 15 sur 17",
-      "note": "Catégorie Culture pop. Manche 15 sur 17.",
-      "collection": "Culture pop",
-      "emoji": "🌟",
-      "questions": 24,
-      "niveaux": {
-        "2": 10,
-        "1": 6,
-        "3": 8
+        "3": 4,
+        "1": 6
       },
       "octets": 5915,
-      "empreinte": "0a37ad33f6d4863f6482750284d87df4c0cbec7a"
+      "empreinte": "6fc51b00528b69928dd6fef18e3bbeb9bc7af0e0"
     },
     {
-      "id": "culture-pop-16-sur-17",
-      "titre": "Culture pop 16 sur 17",
-      "note": "Catégorie Culture pop. Manche 16 sur 17.",
+      "id": "culture-pop-06-sur-18",
+      "titre": "Culture pop 06 sur 18",
+      "note": "Catégorie Culture pop. Manche 6 sur 18.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
+      "niveaux": {
+        "1": 3,
+        "3": 12,
+        "2": 9
+      },
+      "octets": 5880,
+      "empreinte": "71415a4d6351eb5884e292988e52cdbebf45a5dc"
+    },
+    {
+      "id": "culture-pop-07-sur-18",
+      "titre": "Culture pop 07 sur 18",
+      "note": "Catégorie Culture pop. Manche 7 sur 18.",
       "collection": "Culture pop",
       "emoji": "🌟",
       "questions": 24,
       "niveaux": {
         "3": 9,
-        "2": 12,
-        "1": 3
+        "2": 11,
+        "1": 4
       },
-      "octets": 6150,
-      "empreinte": "8be9e29e6ae296bdc2f416363d8a6b48b78ebae8"
+      "octets": 6119,
+      "empreinte": "a55f57ea4f300113aa168d15e14a79e74ba2bca6"
     },
     {
-      "id": "culture-pop-17-sur-17",
-      "titre": "Culture pop 17 sur 17",
-      "note": "Catégorie Culture pop. Manche 17 sur 17.",
+      "id": "culture-pop-08-sur-18",
+      "titre": "Culture pop 08 sur 18",
+      "note": "Catégorie Culture pop. Manche 8 sur 18.",
       "collection": "Culture pop",
       "emoji": "🌟",
       "questions": 24,
       "niveaux": {
-        "2": 7,
-        "1": 8,
+        "2": 10,
+        "3": 11,
+        "1": 3
+      },
+      "octets": 5913,
+      "empreinte": "d11b4ece25f6114ae646b461f869188b84d17df8"
+    },
+    {
+      "id": "culture-pop-09-sur-18",
+      "titre": "Culture pop 09 sur 18",
+      "note": "Catégorie Culture pop. Manche 9 sur 18.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
+      "niveaux": {
+        "1": 5,
+        "2": 10,
         "3": 9
       },
-      "octets": 5942,
-      "empreinte": "8f2f50e8e325b090cd936096b13ddc7409f0bd71"
+      "octets": 5979,
+      "empreinte": "46892b2ba0e42025bc261241b92e5bf9f6019aaa"
+    },
+    {
+      "id": "culture-pop-10-sur-18",
+      "titre": "Culture pop 10 sur 18",
+      "note": "Catégorie Culture pop. Manche 10 sur 18.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
+      "niveaux": {
+        "3": 8,
+        "2": 8,
+        "1": 8
+      },
+      "octets": 5723,
+      "empreinte": "67daceb4a528c75bb470de5ecde7d6bbb19fe6da"
+    },
+    {
+      "id": "culture-pop-11-sur-18",
+      "titre": "Culture pop 11 sur 18",
+      "note": "Catégorie Culture pop. Manche 11 sur 18.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
+      "niveaux": {
+        "3": 5,
+        "1": 10,
+        "2": 9
+      },
+      "octets": 5906,
+      "empreinte": "2862db2015759598c17d3685839520e1c0949616"
+    },
+    {
+      "id": "culture-pop-12-sur-18",
+      "titre": "Culture pop 12 sur 18",
+      "note": "Catégorie Culture pop. Manche 12 sur 18.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
+      "niveaux": {
+        "2": 12,
+        "3": 7,
+        "1": 5
+      },
+      "octets": 6020,
+      "empreinte": "2274b6dfb444e0858e89e8c1b53fa473154afa59"
+    },
+    {
+      "id": "culture-pop-13-sur-18",
+      "titre": "Culture pop 13 sur 18",
+      "note": "Catégorie Culture pop. Manche 13 sur 18.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
+      "niveaux": {
+        "3": 6,
+        "2": 9,
+        "1": 9
+      },
+      "octets": 5925,
+      "empreinte": "24594847a285fe9885bce3dd2df42336c39dd3e1"
+    },
+    {
+      "id": "culture-pop-14-sur-18",
+      "titre": "Culture pop 14 sur 18",
+      "note": "Catégorie Culture pop. Manche 14 sur 18.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
+      "niveaux": {
+        "1": 10,
+        "2": 7,
+        "3": 7
+      },
+      "octets": 5844,
+      "empreinte": "9099403e4dd4c2b542565059cb134e4d5891cbb7"
+    },
+    {
+      "id": "culture-pop-15-sur-18",
+      "titre": "Culture pop 15 sur 18",
+      "note": "Catégorie Culture pop. Manche 15 sur 18.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
+      "niveaux": {
+        "3": 6,
+        "2": 11,
+        "1": 7
+      },
+      "octets": 5980,
+      "empreinte": "a0d24b8eaa893b38395498eacb3a6f99cd1573ee"
+    },
+    {
+      "id": "culture-pop-16-sur-18",
+      "titre": "Culture pop 16 sur 18",
+      "note": "Catégorie Culture pop. Manche 16 sur 18.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
+      "niveaux": {
+        "1": 9,
+        "2": 7,
+        "3": 8
+      },
+      "octets": 5763,
+      "empreinte": "f9fb86303f1c247f42b20603bb715353f1321bad"
+    },
+    {
+      "id": "culture-pop-17-sur-18",
+      "titre": "Culture pop 17 sur 18",
+      "note": "Catégorie Culture pop. Manche 17 sur 18.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
+      "niveaux": {
+        "3": 6,
+        "2": 6,
+        "1": 12
+      },
+      "octets": 5605,
+      "empreinte": "f23a2d9998985fc73e78c23103341b3a989169cb"
+    },
+    {
+      "id": "culture-pop-18-sur-18",
+      "titre": "Culture pop 18 sur 18",
+      "note": "Catégorie Culture pop. Manche 18 sur 18.",
+      "collection": "Culture pop",
+      "emoji": "🌟",
+      "questions": 24,
+      "niveaux": {
+        "2": 10,
+        "3": 6,
+        "1": 8
+      },
+      "octets": 5808,
+      "empreinte": "c6a47353ec94baf7b05cd4bda6e535215ce6dfbf"
     },
     {
       "id": "7-a-77-ans-01-sur-40",
@@ -2010,8 +2310,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 4965,
-      "empreinte": "cf73fa611a4f0ccce3dff52166e455b8ff69f795"
+      "octets": 4962,
+      "empreinte": "fe32f23713402ddd4ccd9df9e4cb571981582221"
     },
     {
       "id": "7-a-77-ans-02-sur-40",
@@ -2023,8 +2323,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5015,
-      "empreinte": "684f39b641e07fed47c975f16a1b7ee77be77854"
+      "octets": 5022,
+      "empreinte": "408e3d417310fe1a89489cc731c19b7e2d232bdd"
     },
     {
       "id": "7-a-77-ans-03-sur-40",
@@ -2036,8 +2336,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 4877,
-      "empreinte": "afe7186cb50ca52af4fe87eb8b3de4cce56e8a04"
+      "octets": 4854,
+      "empreinte": "14d61d61bded4a778ff013b788c310e8d7e6b767"
     },
     {
       "id": "7-a-77-ans-04-sur-40",
@@ -2049,8 +2349,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5125,
-      "empreinte": "f7f3f48aa6fc32579af9c5879dcc3e5f9697ae26"
+      "octets": 5104,
+      "empreinte": "7fea0150a556b811a13f7ac996cfe6ca3bb8de25"
     },
     {
       "id": "7-a-77-ans-05-sur-40",
@@ -2062,8 +2362,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5088,
-      "empreinte": "6261f97f7323942d1ece58f6c416d7a94f559ef4"
+      "octets": 4926,
+      "empreinte": "5a7a927cc9f8d849e916e6de38e5d56588daeff3"
     },
     {
       "id": "7-a-77-ans-06-sur-40",
@@ -2075,8 +2375,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5407,
-      "empreinte": "5072b117888490fe6d9773788b02453d0703df5a"
+      "octets": 4924,
+      "empreinte": "6a4c9520f9edba044d9e8891c752ee99969ea0a1"
     },
     {
       "id": "7-a-77-ans-07-sur-40",
@@ -2088,8 +2388,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 4948,
-      "empreinte": "1aec1865c5976934ac4584c1ef83362550a9ecfb"
+      "octets": 5250,
+      "empreinte": "2de0ea9e40bc4db42d913ba8ce1103b7192ea536"
     },
     {
       "id": "7-a-77-ans-08-sur-40",
@@ -2101,8 +2401,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5217,
-      "empreinte": "3ff2b01ee9ad73d12063a27800b04b5dd1545d6c"
+      "octets": 5191,
+      "empreinte": "b0bbe82b72058b0f85faa7cecf2b738b89ff8c52"
     },
     {
       "id": "7-a-77-ans-09-sur-40",
@@ -2114,8 +2414,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5024,
-      "empreinte": "88e9292c87dbe38ca770eb43c84237508dcf0c4f"
+      "octets": 4937,
+      "empreinte": "8e2c7ab17b767d26c03b23ccd90fa47d92434162"
     },
     {
       "id": "7-a-77-ans-10-sur-40",
@@ -2127,8 +2427,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5085,
-      "empreinte": "735d1dba70649f7493bb9c125bf0e5805283127f"
+      "octets": 5054,
+      "empreinte": "9d6903c00abcd425a62cb23b76d5525e7b8297cd"
     },
     {
       "id": "7-a-77-ans-11-sur-40",
@@ -2140,8 +2440,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5256,
-      "empreinte": "3cdb10304ad88b8c5e0cef08852c3c2fd60b6742"
+      "octets": 5190,
+      "empreinte": "2748db19388ebd45240ad32f09b71da6ace1bc61"
     },
     {
       "id": "7-a-77-ans-12-sur-40",
@@ -2153,8 +2453,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5039,
-      "empreinte": "36efe52dc7caf49ec956a9084ba17d0810c5e4ba"
+      "octets": 5196,
+      "empreinte": "1837176ceec9487859540c439a79be0cc1012a39"
     },
     {
       "id": "7-a-77-ans-13-sur-40",
@@ -2166,8 +2466,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5428,
-      "empreinte": "adc3b91e4a51352796e79b8933cc7333f15d5dea"
+      "octets": 4812,
+      "empreinte": "2860af9bed2acc581e504018d7f313f9812e82bf"
     },
     {
       "id": "7-a-77-ans-14-sur-40",
@@ -2179,8 +2479,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 4928,
-      "empreinte": "15692f8a5477ae224de63b294c73bd6c9c237e8b"
+      "octets": 5144,
+      "empreinte": "438d5723c3dd158d810b7fc296fc5976d083bdf0"
     },
     {
       "id": "7-a-77-ans-15-sur-40",
@@ -2192,8 +2492,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5073,
-      "empreinte": "47e08056be87b91e83a9b5eebf7ba11c5b6605a5"
+      "octets": 5057,
+      "empreinte": "12a978b664df128151349c81a6e16ca781a1477f"
     },
     {
       "id": "7-a-77-ans-16-sur-40",
@@ -2205,8 +2505,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5314,
-      "empreinte": "83c0986db1800916d643ae3c75b07bbfb2364f6b"
+      "octets": 4928,
+      "empreinte": "f72d3fb57656ad87c08cdc7c645a19d995368fab"
     },
     {
       "id": "7-a-77-ans-17-sur-40",
@@ -2218,8 +2518,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5012,
-      "empreinte": "680c7ea4030545fe7aa4363118e63659e2899ae4"
+      "octets": 5075,
+      "empreinte": "600b693877632d7ff7252c0fe0d9781a71687c96"
     },
     {
       "id": "7-a-77-ans-18-sur-40",
@@ -2231,8 +2531,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5422,
-      "empreinte": "b7058e796c6e6fbf2870b4b4c269ef176191e56f"
+      "octets": 5021,
+      "empreinte": "8c9023ed642675cdc926c8a7398563f10b67fda8"
     },
     {
       "id": "7-a-77-ans-19-sur-40",
@@ -2244,8 +2544,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5265,
-      "empreinte": "e18fb0b9cb6fda46e659e3267efd33b08f55ad06"
+      "octets": 5067,
+      "empreinte": "5a45121c06e618b7372b95435a8c9fabe4936582"
     },
     {
       "id": "7-a-77-ans-20-sur-40",
@@ -2257,8 +2557,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5160,
-      "empreinte": "e518780fedff6a1b7c72fdacb1bd82d4185d72f4"
+      "octets": 4959,
+      "empreinte": "42cb28f5c7ee433ff0410ee5e74ecb20a6ea19b7"
     },
     {
       "id": "7-a-77-ans-21-sur-40",
@@ -2270,8 +2570,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 4895,
-      "empreinte": "beae5df8caa709022f30c36520a65db6a8502204"
+      "octets": 5058,
+      "empreinte": "221b5fa1737bd8a19579b169d59ad9d09b7ec1b6"
     },
     {
       "id": "7-a-77-ans-22-sur-40",
@@ -2283,8 +2583,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5200,
-      "empreinte": "ec2e0134b6b4ca666426311343439e2100e83289"
+      "octets": 5345,
+      "empreinte": "425e8ac7585a782651bf342377f9d84d97491a47"
     },
     {
       "id": "7-a-77-ans-23-sur-40",
@@ -2296,8 +2596,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5107,
-      "empreinte": "0b5d99c0e60d719550d1de9920c445a5b90bed06"
+      "octets": 4810,
+      "empreinte": "5f3b4e854f3fddcbf3a0ddc8ed6637c20102aa64"
     },
     {
       "id": "7-a-77-ans-24-sur-40",
@@ -2309,8 +2609,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5045,
-      "empreinte": "353ba2fa7c978b9221ef6a9aa7b983a4dc561e35"
+      "octets": 5022,
+      "empreinte": "7090be710a83824ffdbf41c3595ecba40a69636a"
     },
     {
       "id": "7-a-77-ans-25-sur-40",
@@ -2322,8 +2622,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 4938,
-      "empreinte": "b1f3d36929c640d4e42bb8a775e99c9c033da20b"
+      "octets": 5032,
+      "empreinte": "ec33d2eef58fe24194d6f24f5d81beecf78bf21b"
     },
     {
       "id": "7-a-77-ans-26-sur-40",
@@ -2335,8 +2635,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5127,
-      "empreinte": "e84d46e1d730abef37f579d53dc562935ab60c0e"
+      "octets": 4844,
+      "empreinte": "c2faf59fd85cec9daaa57de8e1bb84d3c93360f7"
     },
     {
       "id": "7-a-77-ans-27-sur-40",
@@ -2348,8 +2648,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 4902,
-      "empreinte": "24816fd0038296d4987e0f2e0f3e6560a589a245"
+      "octets": 5152,
+      "empreinte": "ec119ea4dfca24704647b4d24d44efc570c37d42"
     },
     {
       "id": "7-a-77-ans-28-sur-40",
@@ -2361,8 +2661,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5155,
-      "empreinte": "7b19c9d3d2277310731d30fc135e9e99098ace60"
+      "octets": 5110,
+      "empreinte": "9875ade5a074bc70cdab014bffb06ce013f7ce47"
     },
     {
       "id": "7-a-77-ans-29-sur-40",
@@ -2374,8 +2674,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5214,
-      "empreinte": "953f8a9d19cd7b034bbe0725c0d76e2adbd139ff"
+      "octets": 5216,
+      "empreinte": "e29213795197d3c24b963bc25a7d7fd7c49b0804"
     },
     {
       "id": "7-a-77-ans-30-sur-40",
@@ -2387,8 +2687,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5142,
-      "empreinte": "1c7ab892f897a6cfbf0dc1576840bc2f4e330d04"
+      "octets": 4635,
+      "empreinte": "bc51b74a4b0abb76eef3c91f8faad5ff89ab24d1"
     },
     {
       "id": "7-a-77-ans-31-sur-40",
@@ -2400,8 +2700,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 4966,
-      "empreinte": "ee6caa618c53082300274c70a9bfab6b9f54b86d"
+      "octets": 4955,
+      "empreinte": "6d5dabd82e6d10e01834e14099a7ed62033edf0b"
     },
     {
       "id": "7-a-77-ans-32-sur-40",
@@ -2413,8 +2713,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 4861,
-      "empreinte": "9e72e9bcbc9b6990e32f93754e37339c3d596f92"
+      "octets": 4896,
+      "empreinte": "37098084b0797bd04bdc39a817155c305f84ebd6"
     },
     {
       "id": "7-a-77-ans-33-sur-40",
@@ -2426,8 +2726,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 4991,
-      "empreinte": "d94edacd9521a5d65c3144c259fba5e5ca807e68"
+      "octets": 4898,
+      "empreinte": "7a3a186173b91bdbff6053a6f84c65ed0e3f4d3f"
     },
     {
       "id": "7-a-77-ans-34-sur-40",
@@ -2439,8 +2739,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5089,
-      "empreinte": "4d62350bab3dce034fb89489303c108469cb5e34"
+      "octets": 4968,
+      "empreinte": "dfd536b676db7a27737f15dfd33db9200077c383"
     },
     {
       "id": "7-a-77-ans-35-sur-40",
@@ -2452,8 +2752,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5248,
-      "empreinte": "421feb95a66600701197e3446427026f10f7a2d8"
+      "octets": 5066,
+      "empreinte": "cf5d4f9f665607b36f9eec6775305da19f6e6e47"
     },
     {
       "id": "7-a-77-ans-36-sur-40",
@@ -2465,8 +2765,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5033,
-      "empreinte": "aaede726ddd06fd7d57af597ed3a2a43efc58faf"
+      "octets": 5124,
+      "empreinte": "6597ad5f3a06b9ef84d5dae417fe2f463256bb13"
     },
     {
       "id": "7-a-77-ans-37-sur-40",
@@ -2478,8 +2778,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 4849,
-      "empreinte": "0c2334766e50028190f55ae76325379cd6d494cc"
+      "octets": 5119,
+      "empreinte": "cfd996cf99f7d8621d008dde1add44cc56ff3a1b"
     },
     {
       "id": "7-a-77-ans-38-sur-40",
@@ -2491,8 +2791,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5131,
-      "empreinte": "9f5165a7c38a870ac7855401d652fdf5cd33f786"
+      "octets": 5097,
+      "empreinte": "feeb7bce55d887ac97022ed2e09cdb04afccf6be"
     },
     {
       "id": "7-a-77-ans-39-sur-40",
@@ -2504,8 +2804,8 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5161,
-      "empreinte": "5f2bafbcdee4eeca97622c0c2ad878f49730614e"
+      "octets": 4961,
+      "empreinte": "109a5cf478aaab8bb89ee177f05ed7ad9931a25e"
     },
     {
       "id": "7-a-77-ans-40-sur-40",
@@ -2517,229 +2817,294 @@
       "niveaux": {
         "1": 25
       },
-      "octets": 5154,
-      "empreinte": "51458979deedf33cb84b87e1eafb08968893c317"
+      "octets": 4859,
+      "empreinte": "22a8276b106dd5ff0ffbb7339876f7dace5ae724"
     },
     {
-      "id": "connaisseurs-01-sur-17",
-      "titre": "Connaisseurs 01 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 1 sur 17.",
+      "id": "connaisseurs-01-sur-22",
+      "titre": "Connaisseurs 01 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 1 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6286,
-      "empreinte": "c29ed699fa913f7d94b60a1cf022dc0ec7c3dab2"
+      "octets": 6332,
+      "empreinte": "288d702bfdb8fa7faeeed111c778fa2f53f3bf45"
     },
     {
-      "id": "connaisseurs-02-sur-17",
-      "titre": "Connaisseurs 02 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 2 sur 17.",
+      "id": "connaisseurs-02-sur-22",
+      "titre": "Connaisseurs 02 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 2 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6171,
-      "empreinte": "167cd6690ef64b10903a15ea08f5163015f7c197"
+      "octets": 6194,
+      "empreinte": "dc2da6d8f81b41b81f5097499104fc71d7dcac57"
     },
     {
-      "id": "connaisseurs-03-sur-17",
-      "titre": "Connaisseurs 03 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 3 sur 17.",
+      "id": "connaisseurs-03-sur-22",
+      "titre": "Connaisseurs 03 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 3 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6214,
-      "empreinte": "7dd18d4bb76f2eb100fb7da8a1a9f9c84281c7d3"
+      "octets": 5850,
+      "empreinte": "dd503115c9edc63298f71219f658b172a8c44e71"
     },
     {
-      "id": "connaisseurs-04-sur-17",
-      "titre": "Connaisseurs 04 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 4 sur 17.",
+      "id": "connaisseurs-04-sur-22",
+      "titre": "Connaisseurs 04 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 4 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6180,
-      "empreinte": "e446d25697e2a5c405ab7a703e00cfe5fd66d8b5"
+      "octets": 6241,
+      "empreinte": "afc959c8f04b392dd53af422becee711ea408fb4"
     },
     {
-      "id": "connaisseurs-05-sur-17",
-      "titre": "Connaisseurs 05 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 5 sur 17.",
+      "id": "connaisseurs-05-sur-22",
+      "titre": "Connaisseurs 05 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 5 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6302,
-      "empreinte": "caa50ff14b3ca1710aca9e52d9657dd7c3c7f170"
+      "octets": 6196,
+      "empreinte": "c7e42de9ab8f9214f811f3df266c7127c4551cbc"
     },
     {
-      "id": "connaisseurs-06-sur-17",
-      "titre": "Connaisseurs 06 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 6 sur 17.",
+      "id": "connaisseurs-06-sur-22",
+      "titre": "Connaisseurs 06 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 6 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6335,
-      "empreinte": "86f40e66f873ce3788b7548c53bdc13893919294"
+      "octets": 6190,
+      "empreinte": "e19336ca6eafbd99ca489fce4ed05307119758d7"
     },
     {
-      "id": "connaisseurs-07-sur-17",
-      "titre": "Connaisseurs 07 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 7 sur 17.",
+      "id": "connaisseurs-07-sur-22",
+      "titre": "Connaisseurs 07 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 7 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6272,
-      "empreinte": "3029b2f38722ebf4699ee556209ade5b782282bb"
+      "octets": 6014,
+      "empreinte": "841064cdc3ccea26ad8fc204f598e2a7c01009a8"
     },
     {
-      "id": "connaisseurs-08-sur-17",
-      "titre": "Connaisseurs 08 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 8 sur 17.",
+      "id": "connaisseurs-08-sur-22",
+      "titre": "Connaisseurs 08 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 8 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6358,
-      "empreinte": "cbdc96850b500f72ffeb3a4e35a71a130b007485"
+      "octets": 6250,
+      "empreinte": "34ec3b89bf289b38c166d342969a0800ec80fcf6"
     },
     {
-      "id": "connaisseurs-09-sur-17",
-      "titre": "Connaisseurs 09 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 9 sur 17.",
+      "id": "connaisseurs-09-sur-22",
+      "titre": "Connaisseurs 09 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 9 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6212,
-      "empreinte": "faa440c42385ca47346147aecfb20c0411635522"
+      "octets": 6098,
+      "empreinte": "f0cdd4e24857bcf57fefb4daa454fbdfa17b1e7c"
     },
     {
-      "id": "connaisseurs-10-sur-17",
-      "titre": "Connaisseurs 10 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 10 sur 17.",
+      "id": "connaisseurs-10-sur-22",
+      "titre": "Connaisseurs 10 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 10 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6257,
-      "empreinte": "1da3689c928b0eda7952b201eaacd82dddcef658"
+      "octets": 6096,
+      "empreinte": "1c570b78922a0a4989ea71d4fda570eea792ff97"
     },
     {
-      "id": "connaisseurs-11-sur-17",
-      "titre": "Connaisseurs 11 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 11 sur 17.",
+      "id": "connaisseurs-11-sur-22",
+      "titre": "Connaisseurs 11 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 11 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6145,
-      "empreinte": "edb39227127af32492516be863d66399f46a17b8"
+      "octets": 6140,
+      "empreinte": "5b9ce563acd7244e5c91dfdf4a0981e7ee2aff58"
     },
     {
-      "id": "connaisseurs-12-sur-17",
-      "titre": "Connaisseurs 12 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 12 sur 17.",
+      "id": "connaisseurs-12-sur-22",
+      "titre": "Connaisseurs 12 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 12 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6247,
-      "empreinte": "0ae6c18e13677740084dee10ca8bb1a0bcd05cea"
+      "octets": 6250,
+      "empreinte": "128b99a456ae25e658ea4b8be15b3a4bd8313a04"
     },
     {
-      "id": "connaisseurs-13-sur-17",
-      "titre": "Connaisseurs 13 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 13 sur 17.",
+      "id": "connaisseurs-13-sur-22",
+      "titre": "Connaisseurs 13 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 13 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6153,
-      "empreinte": "a5bd3da19feb2f08c88a8c01a5b998c69334b474"
+      "octets": 6074,
+      "empreinte": "5a5a7e4cdedf57f67db33e158f0525d1e304f358"
     },
     {
-      "id": "connaisseurs-14-sur-17",
-      "titre": "Connaisseurs 14 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 14 sur 17.",
+      "id": "connaisseurs-14-sur-22",
+      "titre": "Connaisseurs 14 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 14 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6394,
-      "empreinte": "4b121bffdb71a79bffb75319deb879fe328776ca"
+      "octets": 6288,
+      "empreinte": "7e47d8ec2880d52a952835623c920e3dce5e1eca"
     },
     {
-      "id": "connaisseurs-15-sur-17",
-      "titre": "Connaisseurs 15 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 15 sur 17.",
+      "id": "connaisseurs-15-sur-22",
+      "titre": "Connaisseurs 15 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 15 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6318,
-      "empreinte": "dfcfc1a9d97d437281e32b64c5e638eaea63d081"
+      "octets": 6383,
+      "empreinte": "8c3882e744faabf66bf6258e947dec23009bc502"
     },
     {
-      "id": "connaisseurs-16-sur-17",
-      "titre": "Connaisseurs 16 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 16 sur 17.",
+      "id": "connaisseurs-16-sur-22",
+      "titre": "Connaisseurs 16 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 16 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
       "questions": 25,
       "niveaux": {
         "3": 25
       },
-      "octets": 6218,
-      "empreinte": "8152969e20f52dfcee9dcd2f83e36f6c8edce247"
+      "octets": 6059,
+      "empreinte": "dbf6a50a0e5fab90e08591d9231ebaa49c5b8893"
     },
     {
-      "id": "connaisseurs-17-sur-17",
-      "titre": "Connaisseurs 17 sur 17",
-      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 17 sur 17.",
+      "id": "connaisseurs-17-sur-22",
+      "titre": "Connaisseurs 17 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 17 sur 22.",
       "collection": "Connaisseurs",
       "emoji": "🎓",
-      "questions": 12,
+      "questions": 25,
       "niveaux": {
-        "3": 12
+        "3": 25
       },
-      "octets": 3115,
-      "empreinte": "4e68037bb8685923db895fc2a2fbd7d939b1df65"
+      "octets": 6343,
+      "empreinte": "c78f47cc4ffb9af41df5ae0027501aaaf68ac665"
+    },
+    {
+      "id": "connaisseurs-18-sur-22",
+      "titre": "Connaisseurs 18 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 18 sur 22.",
+      "collection": "Connaisseurs",
+      "emoji": "🎓",
+      "questions": 25,
+      "niveaux": {
+        "3": 25
+      },
+      "octets": 5969,
+      "empreinte": "55cb189ef16e48a01fded7ba37ad692af57c11e2"
+    },
+    {
+      "id": "connaisseurs-19-sur-22",
+      "titre": "Connaisseurs 19 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 19 sur 22.",
+      "collection": "Connaisseurs",
+      "emoji": "🎓",
+      "questions": 25,
+      "niveaux": {
+        "3": 25
+      },
+      "octets": 6080,
+      "empreinte": "060b3035a1ccc4be4c49e4854697bff853ed8d79"
+    },
+    {
+      "id": "connaisseurs-20-sur-22",
+      "titre": "Connaisseurs 20 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 20 sur 22.",
+      "collection": "Connaisseurs",
+      "emoji": "🎓",
+      "questions": 25,
+      "niveaux": {
+        "3": 25
+      },
+      "octets": 6123,
+      "empreinte": "722b99e15d40589af531aaa50c02dcd531ae7795"
+    },
+    {
+      "id": "connaisseurs-21-sur-22",
+      "titre": "Connaisseurs 21 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 21 sur 22.",
+      "collection": "Connaisseurs",
+      "emoji": "🎓",
+      "questions": 25,
+      "niveaux": {
+        "3": 25
+      },
+      "octets": 6149,
+      "empreinte": "f5cb7a23ae737dd03311d09c5e843e5fde4e6bba"
+    },
+    {
+      "id": "connaisseurs-22-sur-22",
+      "titre": "Connaisseurs 22 sur 22",
+      "note": "Les questions les plus dures de la banque, toutes catégories confondues. Manche 22 sur 22.",
+      "collection": "Connaisseurs",
+      "emoji": "🎓",
+      "questions": 8,
+      "niveaux": {
+        "3": 8
+      },
+      "octets": 2194,
+      "empreinte": "df35e30ca719572c77ef4180b9aea9578872eb6e"
     },
     {
       "id": "toutes-categories-01-sur-16",
@@ -2750,11 +3115,11 @@
       "questions": 25,
       "niveaux": {
         "2": 8,
-        "1": 15,
-        "3": 2
+        "3": 2,
+        "1": 15
       },
-      "octets": 5463,
-      "empreinte": "ff218f589fc8a91e79eb09cb5c78808b9a889a9f"
+      "octets": 5107,
+      "empreinte": "b1fb0b280d868af2a78e25b14a04898620102c4f"
     },
     {
       "id": "toutes-categories-02-sur-16",
@@ -2764,12 +3129,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
+        "1": 16,
         "2": 7,
-        "1": 15,
-        "3": 3
+        "3": 2
       },
-      "octets": 5697,
-      "empreinte": "8a095e995f82a3c0d055c86eded8d8e6fd4b7646"
+      "octets": 5584,
+      "empreinte": "c4a6565a5eb3760d4659e97834d1dbaf813ab5e8"
     },
     {
       "id": "toutes-categories-03-sur-16",
@@ -2779,12 +3144,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 15,
-        "2": 8,
-        "3": 2
+        "1": 16,
+        "2": 5,
+        "3": 4
       },
-      "octets": 5697,
-      "empreinte": "98c190d6542b6721cb33d639129d5b534829d853"
+      "octets": 5133,
+      "empreinte": "ff7271466561a4be3ef81a541c1f1c0e83d6128f"
     },
     {
       "id": "toutes-categories-04-sur-16",
@@ -2794,12 +3159,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 15,
-        "2": 8,
-        "3": 2
+        "2": 11,
+        "1": 11,
+        "3": 3
       },
-      "octets": 5389,
-      "empreinte": "0374a73df75208f02f158b9cc0f40e8a3f9ac725"
+      "octets": 5492,
+      "empreinte": "248f3c864df43e66459e007b40a31e3fc1d03a57"
     },
     {
       "id": "toutes-categories-05-sur-16",
@@ -2809,12 +3174,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "2": 10,
-        "1": 13,
-        "3": 2
+        "1": 16,
+        "2": 5,
+        "3": 4
       },
-      "octets": 5872,
-      "empreinte": "3fc7b080b46f8fd462ff3112e068f6b3f147d5b3"
+      "octets": 5090,
+      "empreinte": "937f89ed7af91f1afaf91c3364f78d45b5ca40ae"
     },
     {
       "id": "toutes-categories-06-sur-16",
@@ -2824,12 +3189,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 10,
-        "2": 9,
-        "3": 6
+        "1": 11,
+        "3": 2,
+        "2": 12
       },
-      "octets": 5829,
-      "empreinte": "3e1248e8663605712bc099c4e800871ebf8559f4"
+      "octets": 5617,
+      "empreinte": "cab0d07b50c5d184423d7210a972f9465228d566"
     },
     {
       "id": "toutes-categories-07-sur-16",
@@ -2839,12 +3204,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 14,
-        "2": 8,
+        "2": 6,
+        "1": 16,
         "3": 3
       },
-      "octets": 5586,
-      "empreinte": "6129e5a3c5c4a37bc749fd1cf37d3653d35cfdf9"
+      "octets": 5438,
+      "empreinte": "7965eefb4bb67f51d94a9d43c3ce0f3403e30cc5"
     },
     {
       "id": "toutes-categories-08-sur-16",
@@ -2854,12 +3219,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "2": 6,
-        "1": 16,
-        "3": 3
+        "3": 4,
+        "2": 8,
+        "1": 13
       },
-      "octets": 5645,
-      "empreinte": "f8fc2e61efe7812377114fb3021bb6a270d529d6"
+      "octets": 5540,
+      "empreinte": "05947d4147a09a2ba1380eb593833ab130aedd5e"
     },
     {
       "id": "toutes-categories-09-sur-16",
@@ -2869,12 +3234,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "2": 6,
-        "1": 16,
-        "3": 3
+        "1": 15,
+        "3": 5,
+        "2": 5
       },
-      "octets": 5517,
-      "empreinte": "59ac0cff8463b8dc6383f785a637c59ebfa4dca2"
+      "octets": 5630,
+      "empreinte": "fd6b173765c596681296fefe4f9be03d059c52ff"
     },
     {
       "id": "toutes-categories-10-sur-16",
@@ -2884,12 +3249,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 13,
-        "2": 10,
-        "3": 2
+        "1": 12,
+        "3": 2,
+        "2": 11
       },
-      "octets": 5800,
-      "empreinte": "e16c7d315bef1aadb03b10dd82111cf88fe3821f"
+      "octets": 5521,
+      "empreinte": "8e0bfef8f890a863b1d45187c7398abcf967f3bb"
     },
     {
       "id": "toutes-categories-11-sur-16",
@@ -2899,12 +3264,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 13,
-        "3": 4,
-        "2": 8
+        "2": 7,
+        "1": 17,
+        "3": 1
       },
-      "octets": 5644,
-      "empreinte": "e88447293cb788d385c7e1086c85f780b7a26891"
+      "octets": 5218,
+      "empreinte": "3e68ee41c36c13805d14e261046d17c6076f3455"
     },
     {
       "id": "toutes-categories-12-sur-16",
@@ -2914,12 +3279,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "2": 7,
-        "1": 16,
+        "2": 9,
+        "1": 14,
         "3": 2
       },
-      "octets": 5318,
-      "empreinte": "dca5acad388405b8e26694d76777c1b352e52f43"
+      "octets": 5582,
+      "empreinte": "60f36d47b62d62e6a37e3a3b3bb51cca089ccb44"
     },
     {
       "id": "toutes-categories-13-sur-16",
@@ -2929,11 +3294,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 18,
-        "2": 7
+        "1": 14,
+        "3": 5,
+        "2": 6
       },
-      "octets": 5505,
-      "empreinte": "a9963f2f3b73a37106f4323f8797f87725af132c"
+      "octets": 5609,
+      "empreinte": "15b4c1fbfa06ffb29fff313b1fba1a17841ba4bd"
     },
     {
       "id": "toutes-categories-14-sur-16",
@@ -2943,12 +3309,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "2": 7,
-        "3": 2,
-        "1": 16
+        "1": 12,
+        "2": 9,
+        "3": 4
       },
-      "octets": 5652,
-      "empreinte": "d85943c2ea5be0f371d5fe830afee313b378ed7b"
+      "octets": 5567,
+      "empreinte": "250fe39da94dac8b3c114e54f5326b6102b92a7b"
     },
     {
       "id": "toutes-categories-15-sur-16",
@@ -2958,12 +3324,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 15,
-        "2": 9,
-        "3": 1
+        "1": 16,
+        "2": 6,
+        "3": 3
       },
-      "octets": 5524,
-      "empreinte": "8c384b06cb3856e23ddbab7068e2ca3731e4848d"
+      "octets": 5299,
+      "empreinte": "9625080006624ed466412c16c6e6b92f97f1d434"
     },
     {
       "id": "toutes-categories-16-sur-16",
@@ -2973,12 +3339,12 @@
       "emoji": "🎲",
       "questions": 25,
       "niveaux": {
-        "1": 15,
-        "2": 8,
-        "3": 2
+        "2": 9,
+        "3": 4,
+        "1": 12
       },
-      "octets": 5521,
-      "empreinte": "61756d42815781a22ec091d548726a9a0f99d5bd"
+      "octets": 5314,
+      "empreinte": "de40487337320338c747cbf43e7d6fdfcadd50cb"
     },
     {
       "id": "manche-eclair",
@@ -2988,442 +3354,519 @@
       "emoji": "🎲",
       "questions": 10,
       "niveaux": {
-        "3": 2,
-        "1": 6,
-        "2": 2
+        "2": 3,
+        "1": 5,
+        "3": 2
       },
-      "octets": 2200,
-      "empreinte": "3550d755377fdc3a8a178f9935e44283039ef314"
+      "octets": 2354,
+      "empreinte": "98791c48c2d9cb7eb47e044ada0d6534b601c18e"
     },
     {
-      "id": "special-noel-1-sur-2",
-      "titre": "Spécial Noël 1 sur 2",
-      "note": "Le temps des fêtes, toutes catégories confondues. Manche 1 sur 2.",
+      "id": "special-noel-1-sur-3",
+      "titre": "Spécial Noël 1 sur 3",
+      "note": "Le temps des fêtes, toutes catégories confondues. Manche 1 sur 3.",
       "collection": "Spécial Noël",
       "emoji": "🎄",
-      "questions": 23,
+      "questions": 19,
       "niveaux": {
-        "1": 18,
+        "1": 17,
         "3": 1,
-        "2": 4
+        "2": 1
       },
-      "octets": 4721,
-      "empreinte": "27ca975b7aa4501382f914dcd1cd5bfe9be7b65f"
+      "octets": 4077,
+      "empreinte": "77108bc3d50494fa0d4bacd25bf6ae1cb9b89dba"
     },
     {
-      "id": "special-noel-2-sur-2",
-      "titre": "Spécial Noël 2 sur 2",
-      "note": "Le temps des fêtes, toutes catégories confondues. Manche 2 sur 2.",
+      "id": "special-noel-2-sur-3",
+      "titre": "Spécial Noël 2 sur 3",
+      "note": "Le temps des fêtes, toutes catégories confondues. Manche 2 sur 3.",
       "collection": "Spécial Noël",
       "emoji": "🎄",
-      "questions": 23,
+      "questions": 18,
       "niveaux": {
-        "1": 19,
-        "3": 1,
-        "2": 3
+        "2": 5,
+        "1": 11,
+        "3": 2
       },
-      "octets": 5045,
-      "empreinte": "6c114e894d1c9d0d9ac504423173619db1707588"
+      "octets": 3924,
+      "empreinte": "f425055d243ec09ab5d286126ec279af880e5e1c"
     },
     {
-      "id": "le-quebec-ailleurs-1-sur-9",
-      "titre": "Le Québec ailleurs 1 sur 9",
-      "note": "Le Québec caché dans les neuf autres catégories. Manche 1 sur 9.",
+      "id": "special-noel-3-sur-3",
+      "titre": "Spécial Noël 3 sur 3",
+      "note": "Le temps des fêtes, toutes catégories confondues. Manche 3 sur 3.",
+      "collection": "Spécial Noël",
+      "emoji": "🎄",
+      "questions": 18,
+      "niveaux": {
+        "1": 12,
+        "2": 5,
+        "3": 1
+      },
+      "octets": 3744,
+      "empreinte": "590130aa76f2e0f9f52522459372e2d6f8ccf39a"
+    },
+    {
+      "id": "le-quebec-ailleurs-01-sur-11",
+      "titre": "Le Québec ailleurs 01 sur 11",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 1 sur 11.",
       "collection": "Québec",
       "emoji": "🌲",
       "questions": 25,
+      "niveaux": {
+        "2": 7,
+        "3": 8,
+        "1": 10
+      },
+      "octets": 5665,
+      "empreinte": "2e12c86ee7cde478a5de2aa67dd8760b4a65dfc0"
+    },
+    {
+      "id": "le-quebec-ailleurs-02-sur-11",
+      "titre": "Le Québec ailleurs 02 sur 11",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 2 sur 11.",
+      "collection": "Québec",
+      "emoji": "🌲",
+      "questions": 24,
       "niveaux": {
         "1": 10,
-        "3": 10,
-        "2": 5
-      },
-      "octets": 5766,
-      "empreinte": "549216878011b65ee19e34cc4f26fbfdb34768e3"
-    },
-    {
-      "id": "le-quebec-ailleurs-2-sur-9",
-      "titre": "Le Québec ailleurs 2 sur 9",
-      "note": "Le Québec caché dans les neuf autres catégories. Manche 2 sur 9.",
-      "collection": "Québec",
-      "emoji": "🌲",
-      "questions": 25,
-      "niveaux": {
-        "3": 8,
-        "2": 7,
-        "1": 10
-      },
-      "octets": 6156,
-      "empreinte": "01679fedd9f5ae5cc37f1894dc7efe9287f5776d"
-    },
-    {
-      "id": "le-quebec-ailleurs-3-sur-9",
-      "titre": "Le Québec ailleurs 3 sur 9",
-      "note": "Le Québec caché dans les neuf autres catégories. Manche 3 sur 9.",
-      "collection": "Québec",
-      "emoji": "🌲",
-      "questions": 25,
-      "niveaux": {
-        "2": 8,
-        "3": 7,
-        "1": 10
-      },
-      "octets": 6143,
-      "empreinte": "57a1e877398e80b5c9a58823f4f1f8453ddeaf75"
-    },
-    {
-      "id": "le-quebec-ailleurs-4-sur-9",
-      "titre": "Le Québec ailleurs 4 sur 9",
-      "note": "Le Québec caché dans les neuf autres catégories. Manche 4 sur 9.",
-      "collection": "Québec",
-      "emoji": "🌲",
-      "questions": 25,
-      "niveaux": {
-        "1": 8,
-        "2": 13,
-        "3": 4
-      },
-      "octets": 5948,
-      "empreinte": "c55f2176259cf85d6fd22e1d0654bab9c26826a1"
-    },
-    {
-      "id": "le-quebec-ailleurs-5-sur-9",
-      "titre": "Le Québec ailleurs 5 sur 9",
-      "note": "Le Québec caché dans les neuf autres catégories. Manche 5 sur 9.",
-      "collection": "Québec",
-      "emoji": "🌲",
-      "questions": 25,
-      "niveaux": {
         "2": 9,
-        "1": 11,
         "3": 5
       },
-      "octets": 5943,
-      "empreinte": "0041564b78a468f4ea435139e35b5d0db6fe5d23"
+      "octets": 5588,
+      "empreinte": "78aea6bd77734a277baacc356a975882edfa3d9d"
     },
     {
-      "id": "le-quebec-ailleurs-6-sur-9",
-      "titre": "Le Québec ailleurs 6 sur 9",
-      "note": "Le Québec caché dans les neuf autres catégories. Manche 6 sur 9.",
+      "id": "le-quebec-ailleurs-03-sur-11",
+      "titre": "Le Québec ailleurs 03 sur 11",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 3 sur 11.",
       "collection": "Québec",
       "emoji": "🌲",
-      "questions": 25,
+      "questions": 24,
       "niveaux": {
-        "3": 9,
-        "1": 7,
-        "2": 9
+        "3": 11,
+        "1": 6,
+        "2": 7
       },
-      "octets": 6286,
-      "empreinte": "b02a37966ce7552e35caabbe45176671451ec960"
+      "octets": 6005,
+      "empreinte": "92b8df6faae6da7f03bd53b0dfc593eca6b9878a"
     },
     {
-      "id": "le-quebec-ailleurs-7-sur-9",
-      "titre": "Le Québec ailleurs 7 sur 9",
-      "note": "Le Québec caché dans les neuf autres catégories. Manche 7 sur 9.",
+      "id": "le-quebec-ailleurs-04-sur-11",
+      "titre": "Le Québec ailleurs 04 sur 11",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 4 sur 11.",
       "collection": "Québec",
       "emoji": "🌲",
-      "questions": 25,
+      "questions": 24,
       "niveaux": {
-        "3": 6,
-        "2": 10,
-        "1": 9
+        "1": 13,
+        "3": 7,
+        "2": 4
       },
-      "octets": 5919,
-      "empreinte": "2bbb9edaebffc5a167a85bc4d560683f0cc83c1e"
+      "octets": 5728,
+      "empreinte": "b14ec814a7548dd3dc883e0dda79e94eae9e729c"
     },
     {
-      "id": "le-quebec-ailleurs-8-sur-9",
-      "titre": "Le Québec ailleurs 8 sur 9",
-      "note": "Le Québec caché dans les neuf autres catégories. Manche 8 sur 9.",
+      "id": "le-quebec-ailleurs-05-sur-11",
+      "titre": "Le Québec ailleurs 05 sur 11",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 5 sur 11.",
       "collection": "Québec",
       "emoji": "🌲",
-      "questions": 25,
+      "questions": 24,
       "niveaux": {
         "3": 10,
         "1": 8,
-        "2": 7
+        "2": 6
       },
-      "octets": 6100,
-      "empreinte": "16bc827fe10f7af7ccaa5a0b7538f0f5a8163e00"
+      "octets": 5719,
+      "empreinte": "c4110dec5cfd319ac25f2d5e26f82f58ea54ce9e"
     },
     {
-      "id": "le-quebec-ailleurs-9-sur-9",
-      "titre": "Le Québec ailleurs 9 sur 9",
-      "note": "Le Québec caché dans les neuf autres catégories. Manche 9 sur 9.",
+      "id": "le-quebec-ailleurs-06-sur-11",
+      "titre": "Le Québec ailleurs 06 sur 11",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 6 sur 11.",
       "collection": "Québec",
       "emoji": "🌲",
+      "questions": 24,
+      "niveaux": {
+        "1": 8,
+        "3": 10,
+        "2": 6
+      },
+      "octets": 5677,
+      "empreinte": "751b12599bc82738e29425894b74e582ad9f6bf9"
+    },
+    {
+      "id": "le-quebec-ailleurs-07-sur-11",
+      "titre": "Le Québec ailleurs 07 sur 11",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 7 sur 11.",
+      "collection": "Québec",
+      "emoji": "🌲",
+      "questions": 24,
+      "niveaux": {
+        "1": 8,
+        "2": 12,
+        "3": 4
+      },
+      "octets": 5617,
+      "empreinte": "c6dec676de3888736d91a11f5d4fa71f088d538a"
+    },
+    {
+      "id": "le-quebec-ailleurs-08-sur-11",
+      "titre": "Le Québec ailleurs 08 sur 11",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 8 sur 11.",
+      "collection": "Québec",
+      "emoji": "🌲",
+      "questions": 24,
+      "niveaux": {
+        "1": 9,
+        "2": 7,
+        "3": 8
+      },
+      "octets": 5646,
+      "empreinte": "e6dd3ca39d2ba7990e479a4959fe59d4b2f38ab7"
+    },
+    {
+      "id": "le-quebec-ailleurs-09-sur-11",
+      "titre": "Le Québec ailleurs 09 sur 11",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 9 sur 11.",
+      "collection": "Québec",
+      "emoji": "🌲",
+      "questions": 24,
+      "niveaux": {
+        "2": 10,
+        "1": 9,
+        "3": 5
+      },
+      "octets": 5407,
+      "empreinte": "fa6c01162f26535e2f190a478862365e85462afe"
+    },
+    {
+      "id": "le-quebec-ailleurs-10-sur-11",
+      "titre": "Le Québec ailleurs 10 sur 11",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 10 sur 11.",
+      "collection": "Québec",
+      "emoji": "🌲",
+      "questions": 24,
+      "niveaux": {
+        "1": 9,
+        "2": 8,
+        "3": 7
+      },
+      "octets": 5573,
+      "empreinte": "1eb973b87a9e3c75364a48e609792bca47ab4e22"
+    },
+    {
+      "id": "le-quebec-ailleurs-11-sur-11",
+      "titre": "Le Québec ailleurs 11 sur 11",
+      "note": "Le Québec caché dans les neuf autres catégories. Manche 11 sur 11.",
+      "collection": "Québec",
+      "emoji": "🌲",
+      "questions": 24,
+      "niveaux": {
+        "3": 7,
+        "2": 9,
+        "1": 8
+      },
+      "octets": 5842,
+      "empreinte": "b3ac9a16d5c3596b37ac5f42ceee3c1ad575a977"
+    },
+    {
+      "id": "le-regne-animal-01-sur-15",
+      "titre": "Le règne animal 01 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 1 sur 15.",
+      "collection": "Le règne animal",
+      "emoji": "🐾",
       "questions": 25,
       "niveaux": {
-        "1": 11,
-        "2": 5,
-        "3": 9
-      },
-      "octets": 5795,
-      "empreinte": "837a6a47367454970ef99d8475e7994be5b1ed48"
-    },
-    {
-      "id": "le-regne-animal-01-sur-14",
-      "titre": "Le règne animal 01 sur 14",
-      "note": "Bêtes à poil, à plume et à écailles. Manche 1 sur 14.",
-      "collection": "Le règne animal",
-      "emoji": "🐾",
-      "questions": 24,
-      "niveaux": {
-        "2": 6,
-        "1": 18
-      },
-      "octets": 4794,
-      "empreinte": "2c8c05f3c116ca0fe6d7e2e3275408dc4b8ed66a"
-    },
-    {
-      "id": "le-regne-animal-02-sur-14",
-      "titre": "Le règne animal 02 sur 14",
-      "note": "Bêtes à poil, à plume et à écailles. Manche 2 sur 14.",
-      "collection": "Le règne animal",
-      "emoji": "🐾",
-      "questions": 24,
-      "niveaux": {
-        "1": 18,
-        "2": 5,
-        "3": 1
-      },
-      "octets": 5056,
-      "empreinte": "753327c895be82d730b3135e56ed89bdef314365"
-    },
-    {
-      "id": "le-regne-animal-03-sur-14",
-      "titre": "Le règne animal 03 sur 14",
-      "note": "Bêtes à poil, à plume et à écailles. Manche 3 sur 14.",
-      "collection": "Le règne animal",
-      "emoji": "🐾",
-      "questions": 24,
-      "niveaux": {
         "1": 20,
-        "2": 4
+        "2": 5
       },
-      "octets": 5017,
-      "empreinte": "54156cb28c83d960c3f936200f90d09cda67aa03"
+      "octets": 4971,
+      "empreinte": "8012ec124456f7096aaf8e2e01a2e421aeeeba09"
     },
     {
-      "id": "le-regne-animal-04-sur-14",
-      "titre": "Le règne animal 04 sur 14",
-      "note": "Bêtes à poil, à plume et à écailles. Manche 4 sur 14.",
+      "id": "le-regne-animal-02-sur-15",
+      "titre": "Le règne animal 02 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 2 sur 15.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 24,
+      "questions": 25,
       "niveaux": {
-        "1": 16,
-        "3": 1,
-        "2": 7
-      },
-      "octets": 5111,
-      "empreinte": "febe30e093c5c121056de9f683915d0c384840ba"
-    },
-    {
-      "id": "le-regne-animal-05-sur-14",
-      "titre": "Le règne animal 05 sur 14",
-      "note": "Bêtes à poil, à plume et à écailles. Manche 5 sur 14.",
-      "collection": "Le règne animal",
-      "emoji": "🐾",
-      "questions": 23,
-      "niveaux": {
+        "3": 3,
         "1": 19,
-        "2": 4
-      },
-      "octets": 4727,
-      "empreinte": "f83281220c16703f6434238ff3a87b09ac2d8ca8"
-    },
-    {
-      "id": "le-regne-animal-06-sur-14",
-      "titre": "Le règne animal 06 sur 14",
-      "note": "Bêtes à poil, à plume et à écailles. Manche 6 sur 14.",
-      "collection": "Le règne animal",
-      "emoji": "🐾",
-      "questions": 23,
-      "niveaux": {
-        "2": 5,
-        "1": 18
-      },
-      "octets": 4635,
-      "empreinte": "cf328a8a7eeb239508de18493b3abbe9f9235267"
-    },
-    {
-      "id": "le-regne-animal-07-sur-14",
-      "titre": "Le règne animal 07 sur 14",
-      "note": "Bêtes à poil, à plume et à écailles. Manche 7 sur 14.",
-      "collection": "Le règne animal",
-      "emoji": "🐾",
-      "questions": 23,
-      "niveaux": {
-        "1": 16,
-        "2": 6,
-        "3": 1
-      },
-      "octets": 4814,
-      "empreinte": "39dd683330182763ab9ded8eca845d5d34af6283"
-    },
-    {
-      "id": "le-regne-animal-08-sur-14",
-      "titre": "Le règne animal 08 sur 14",
-      "note": "Bêtes à poil, à plume et à écailles. Manche 8 sur 14.",
-      "collection": "Le règne animal",
-      "emoji": "🐾",
-      "questions": 23,
-      "niveaux": {
-        "1": 20,
         "2": 3
       },
-      "octets": 4431,
-      "empreinte": "b07a57369d75ad6b0d6d183033beb6797d6d97b8"
+      "octets": 4985,
+      "empreinte": "a55e673441e444b0ea28536c232854674666e0a9"
     },
     {
-      "id": "le-regne-animal-09-sur-14",
-      "titre": "Le règne animal 09 sur 14",
-      "note": "Bêtes à poil, à plume et à écailles. Manche 9 sur 14.",
+      "id": "le-regne-animal-03-sur-15",
+      "titre": "Le règne animal 03 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 3 sur 15.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
+      "questions": 25,
       "niveaux": {
+        "2": 5,
         "1": 16,
-        "2": 5,
-        "3": 2
+        "3": 4
       },
-      "octets": 4844,
-      "empreinte": "57523f018912f3feca9cb3ad4a906f3e3df49c7f"
+      "octets": 5312,
+      "empreinte": "5fcd8a02d6420e605e7f1dfb954e75dfddcc0834"
     },
     {
-      "id": "le-regne-animal-10-sur-14",
-      "titre": "Le règne animal 10 sur 14",
-      "note": "Bêtes à poil, à plume et à écailles. Manche 10 sur 14.",
+      "id": "le-regne-animal-04-sur-15",
+      "titre": "Le règne animal 04 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 4 sur 15.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
+      "questions": 24,
       "niveaux": {
-        "2": 7,
-        "3": 2,
-        "1": 14
-      },
-      "octets": 4558,
-      "empreinte": "a747197165644dd7d6db0b134d6c8c3b0d4010d5"
-    },
-    {
-      "id": "le-regne-animal-11-sur-14",
-      "titre": "Le règne animal 11 sur 14",
-      "note": "Bêtes à poil, à plume et à écailles. Manche 11 sur 14.",
-      "collection": "Le règne animal",
-      "emoji": "🐾",
-      "questions": 23,
-      "niveaux": {
-        "2": 5,
-        "1": 15,
-        "3": 3
-      },
-      "octets": 4660,
-      "empreinte": "4aa8fec60f4511c7f2fe61c28ea77f6980cd59b6"
-    },
-    {
-      "id": "le-regne-animal-12-sur-14",
-      "titre": "Le règne animal 12 sur 14",
-      "note": "Bêtes à poil, à plume et à écailles. Manche 12 sur 14.",
-      "collection": "Le règne animal",
-      "emoji": "🐾",
-      "questions": 23,
-      "niveaux": {
-        "1": 12,
         "2": 8,
-        "3": 3
+        "1": 16
       },
-      "octets": 4824,
-      "empreinte": "21c30756a175ed10583bc4815dd88eefea6a7496"
+      "octets": 5238,
+      "empreinte": "d589a38ed631fdac8fc6ac27e30fc2e69191dd04"
     },
     {
-      "id": "le-regne-animal-13-sur-14",
-      "titre": "Le règne animal 13 sur 14",
-      "note": "Bêtes à poil, à plume et à écailles. Manche 13 sur 14.",
+      "id": "le-regne-animal-05-sur-15",
+      "titre": "Le règne animal 05 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 5 sur 15.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
+      "questions": 24,
       "niveaux": {
-        "2": 5,
-        "1": 17,
+        "2": 4,
+        "1": 19,
         "3": 1
       },
-      "octets": 4891,
-      "empreinte": "6608513f5b2944a3e871ae83a0ebe063f5b2d3d3"
+      "octets": 4807,
+      "empreinte": "baed43c9f753f9bb251fafad40cd09be19814005"
     },
     {
-      "id": "le-regne-animal-14-sur-14",
-      "titre": "Le règne animal 14 sur 14",
-      "note": "Bêtes à poil, à plume et à écailles. Manche 14 sur 14.",
+      "id": "le-regne-animal-06-sur-15",
+      "titre": "Le règne animal 06 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 6 sur 15.",
       "collection": "Le règne animal",
       "emoji": "🐾",
-      "questions": 23,
-      "niveaux": {
-        "2": 3,
-        "1": 16,
-        "3": 4
-      },
-      "octets": 4632,
-      "empreinte": "5f14e4972df62879e52a333fe11bd3c28eb855ce"
-    },
-    {
-      "id": "l-espace-et-le-ciel-1-sur-4",
-      "titre": "L'espace et le ciel 1 sur 4",
-      "note": "Planètes, étoiles et conquête spatiale. Manche 1 sur 4.",
-      "collection": "L'espace et le ciel",
-      "emoji": "🪐",
-      "questions": 23,
-      "niveaux": {
-        "1": 12,
-        "2": 7,
-        "3": 4
-      },
-      "octets": 5033,
-      "empreinte": "f2b97f98b8eebe663f15006b9271bef48f7349cb"
-    },
-    {
-      "id": "l-espace-et-le-ciel-2-sur-4",
-      "titre": "L'espace et le ciel 2 sur 4",
-      "note": "Planètes, étoiles et conquête spatiale. Manche 2 sur 4.",
-      "collection": "L'espace et le ciel",
-      "emoji": "🪐",
-      "questions": 23,
-      "niveaux": {
-        "1": 16,
-        "2": 5,
-        "3": 2
-      },
-      "octets": 4958,
-      "empreinte": "7328b5e5306f1809e8ac11c979b7a438156c8e9f"
-    },
-    {
-      "id": "l-espace-et-le-ciel-3-sur-4",
-      "titre": "L'espace et le ciel 3 sur 4",
-      "note": "Planètes, étoiles et conquête spatiale. Manche 3 sur 4.",
-      "collection": "L'espace et le ciel",
-      "emoji": "🪐",
-      "questions": 22,
+      "questions": 24,
       "niveaux": {
         "1": 14,
         "2": 6,
-        "3": 2
+        "3": 4
       },
-      "octets": 4838,
-      "empreinte": "54d901fc83325d286ec977b58d93fbacb4cc82a3"
+      "octets": 4777,
+      "empreinte": "a5541bf9ff53bdbd4ae90169981330295b266f01"
     },
     {
-      "id": "l-espace-et-le-ciel-4-sur-4",
-      "titre": "L'espace et le ciel 4 sur 4",
-      "note": "Planètes, étoiles et conquête spatiale. Manche 4 sur 4.",
+      "id": "le-regne-animal-07-sur-15",
+      "titre": "Le règne animal 07 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 7 sur 15.",
+      "collection": "Le règne animal",
+      "emoji": "🐾",
+      "questions": 24,
+      "niveaux": {
+        "2": 4,
+        "1": 18,
+        "3": 2
+      },
+      "octets": 4775,
+      "empreinte": "b845f10e63c5ce9b74d426110098cb21accd1af9"
+    },
+    {
+      "id": "le-regne-animal-08-sur-15",
+      "titre": "Le règne animal 08 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 8 sur 15.",
+      "collection": "Le règne animal",
+      "emoji": "🐾",
+      "questions": 24,
+      "niveaux": {
+        "1": 18,
+        "2": 5,
+        "3": 1
+      },
+      "octets": 4827,
+      "empreinte": "d30006bcd1b640d00cc196fb3c90cb09a090be16"
+    },
+    {
+      "id": "le-regne-animal-09-sur-15",
+      "titre": "Le règne animal 09 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 9 sur 15.",
+      "collection": "Le règne animal",
+      "emoji": "🐾",
+      "questions": 24,
+      "niveaux": {
+        "1": 16,
+        "3": 4,
+        "2": 4
+      },
+      "octets": 5088,
+      "empreinte": "5a16236fea219ff167273dd1882df8677a5d95dc"
+    },
+    {
+      "id": "le-regne-animal-10-sur-15",
+      "titre": "Le règne animal 10 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 10 sur 15.",
+      "collection": "Le règne animal",
+      "emoji": "🐾",
+      "questions": 24,
+      "niveaux": {
+        "2": 8,
+        "1": 14,
+        "3": 2
+      },
+      "octets": 4741,
+      "empreinte": "9baf6a41f3f5c28c8e59c738332d8e58855f6db7"
+    },
+    {
+      "id": "le-regne-animal-11-sur-15",
+      "titre": "Le règne animal 11 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 11 sur 15.",
+      "collection": "Le règne animal",
+      "emoji": "🐾",
+      "questions": 24,
+      "niveaux": {
+        "1": 18,
+        "2": 4,
+        "3": 2
+      },
+      "octets": 4916,
+      "empreinte": "1ab1bf20567c982ea7283d2dde4e157979ac5343"
+    },
+    {
+      "id": "le-regne-animal-12-sur-15",
+      "titre": "Le règne animal 12 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 12 sur 15.",
+      "collection": "Le règne animal",
+      "emoji": "🐾",
+      "questions": 24,
+      "niveaux": {
+        "1": 18,
+        "2": 6
+      },
+      "octets": 4804,
+      "empreinte": "363d2b7511490f01b4af27bc8c18491216dfaae5"
+    },
+    {
+      "id": "le-regne-animal-13-sur-15",
+      "titre": "Le règne animal 13 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 13 sur 15.",
+      "collection": "Le règne animal",
+      "emoji": "🐾",
+      "questions": 24,
+      "niveaux": {
+        "1": 14,
+        "2": 8,
+        "3": 2
+      },
+      "octets": 5167,
+      "empreinte": "ff6cc8d0444a2a4ae3c8800a5114c27c5bca51aa"
+    },
+    {
+      "id": "le-regne-animal-14-sur-15",
+      "titre": "Le règne animal 14 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 14 sur 15.",
+      "collection": "Le règne animal",
+      "emoji": "🐾",
+      "questions": 24,
+      "niveaux": {
+        "1": 17,
+        "2": 6,
+        "3": 1
+      },
+      "octets": 5006,
+      "empreinte": "cc45f4b472139042702b493c11218335a5f02b19"
+    },
+    {
+      "id": "le-regne-animal-15-sur-15",
+      "titre": "Le règne animal 15 sur 15",
+      "note": "Bêtes à poil, à plume et à écailles. Manche 15 sur 15.",
+      "collection": "Le règne animal",
+      "emoji": "🐾",
+      "questions": 24,
+      "niveaux": {
+        "2": 7,
+        "1": 16,
+        "3": 1
+      },
+      "octets": 4787,
+      "empreinte": "49833e95ab59bcee8ed09f7450160d2c0769173c"
+    },
+    {
+      "id": "l-espace-et-le-ciel-1-sur-5",
+      "titre": "L'espace et le ciel 1 sur 5",
+      "note": "Planètes, étoiles et conquête spatiale. Manche 1 sur 5.",
       "collection": "L'espace et le ciel",
       "emoji": "🪐",
       "questions": 22,
       "niveaux": {
-        "2": 6,
         "1": 13,
-        "3": 3
+        "2": 5,
+        "3": 4
       },
-      "octets": 4819,
-      "empreinte": "dcf4211f51d1108a880216b87cb5218f7c5a8532"
+      "octets": 4802,
+      "empreinte": "6b7701e2b7054581873ab9ce68c715360dc94d6d"
+    },
+    {
+      "id": "l-espace-et-le-ciel-2-sur-5",
+      "titre": "L'espace et le ciel 2 sur 5",
+      "note": "Planètes, étoiles et conquête spatiale. Manche 2 sur 5.",
+      "collection": "L'espace et le ciel",
+      "emoji": "🪐",
+      "questions": 21,
+      "niveaux": {
+        "3": 4,
+        "1": 11,
+        "2": 6
+      },
+      "octets": 4443,
+      "empreinte": "acc3a56d7297411f9fbefb9d24a3a39fc80a8fb6"
+    },
+    {
+      "id": "l-espace-et-le-ciel-3-sur-5",
+      "titre": "L'espace et le ciel 3 sur 5",
+      "note": "Planètes, étoiles et conquête spatiale. Manche 3 sur 5.",
+      "collection": "L'espace et le ciel",
+      "emoji": "🪐",
+      "questions": 21,
+      "niveaux": {
+        "1": 13,
+        "3": 3,
+        "2": 5
+      },
+      "octets": 4485,
+      "empreinte": "dbd5d32f0f8abd32c3b5aea6b4dc1b7e5c867bb6"
+    },
+    {
+      "id": "l-espace-et-le-ciel-4-sur-5",
+      "titre": "L'espace et le ciel 4 sur 5",
+      "note": "Planètes, étoiles et conquête spatiale. Manche 4 sur 5.",
+      "collection": "L'espace et le ciel",
+      "emoji": "🪐",
+      "questions": 21,
+      "niveaux": {
+        "1": 13,
+        "2": 6,
+        "3": 2
+      },
+      "octets": 4402,
+      "empreinte": "21cd551cb3665a42e3d59e7f31fd2f789e663299"
+    },
+    {
+      "id": "l-espace-et-le-ciel-5-sur-5",
+      "titre": "L'espace et le ciel 5 sur 5",
+      "note": "Planètes, étoiles et conquête spatiale. Manche 5 sur 5.",
+      "collection": "L'espace et le ciel",
+      "emoji": "🪐",
+      "questions": 21,
+      "niveaux": {
+        "1": 12,
+        "2": 5,
+        "3": 4
+      },
+      "octets": 4232,
+      "empreinte": "c0b97bd61c35a12c4f77f295864aa7a7166311de"
     },
     {
       "id": "le-corps-humain-1-sur-4",
@@ -3431,14 +3874,14 @@
       "note": "Os, organes et petites mécaniques internes. Manche 1 sur 4.",
       "collection": "Le corps humain",
       "emoji": "🧠",
-      "questions": 22,
+      "questions": 24,
       "niveaux": {
-        "1": 15,
-        "2": 6,
-        "3": 1
+        "2": 7,
+        "1": 14,
+        "3": 3
       },
-      "octets": 4732,
-      "empreinte": "9051b054d03c9d35c6af4b05311652018cc80195"
+      "octets": 5176,
+      "empreinte": "9db8508e3419e5fc185a584a861198904c97c2d0"
     },
     {
       "id": "le-corps-humain-2-sur-4",
@@ -3446,14 +3889,14 @@
       "note": "Os, organes et petites mécaniques internes. Manche 2 sur 4.",
       "collection": "Le corps humain",
       "emoji": "🧠",
-      "questions": 22,
+      "questions": 23,
       "niveaux": {
-        "2": 6,
-        "1": 14,
+        "2": 9,
+        "1": 12,
         "3": 2
       },
-      "octets": 4588,
-      "empreinte": "e527c034674b8ed8484b83bb1594a1125ed134fa"
+      "octets": 5007,
+      "empreinte": "5adadd4c2cad266325237cf925b3cc5eedd32a92"
     },
     {
       "id": "le-corps-humain-3-sur-4",
@@ -3461,14 +3904,14 @@
       "note": "Os, organes et petites mécaniques internes. Manche 3 sur 4.",
       "collection": "Le corps humain",
       "emoji": "🧠",
-      "questions": 22,
+      "questions": 23,
       "niveaux": {
-        "1": 12,
-        "2": 9,
-        "3": 1
+        "3": 2,
+        "1": 14,
+        "2": 7
       },
-      "octets": 5015,
-      "empreinte": "504ff613699d563498f9f706bdf1f644a1159589"
+      "octets": 4812,
+      "empreinte": "b3d1faac246e01395c12b710489b818641d9a218"
     },
     {
       "id": "le-corps-humain-4-sur-4",
@@ -3476,14 +3919,14 @@
       "note": "Os, organes et petites mécaniques internes. Manche 4 sur 4.",
       "collection": "Le corps humain",
       "emoji": "🧠",
-      "questions": 21,
+      "questions": 23,
       "niveaux": {
-        "1": 12,
+        "1": 16,
         "3": 3,
-        "2": 6
+        "2": 4
       },
-      "octets": 4392,
-      "empreinte": "875b119daf926ef21398a8256c7f3dd44215d38c"
+      "octets": 5010,
+      "empreinte": "5a861bb1116912a5f02167c449ea03e65025e3b4"
     },
     {
       "id": "super-heros-et-bd-1-sur-2",
@@ -3520,14 +3963,14 @@
       "note": "Monstres, dieux et histoires qu'on se raconte. Manche 1 sur 5.",
       "collection": "Créatures et légendes",
       "emoji": "🐉",
-      "questions": 22,
+      "questions": 24,
       "niveaux": {
-        "2": 4,
-        "1": 17,
+        "1": 16,
+        "2": 7,
         "3": 1
       },
-      "octets": 4640,
-      "empreinte": "c288e2c6bc605754a4095d136c20f63be791239b"
+      "octets": 4963,
+      "empreinte": "23bcfaffb5772b0906591b9abc51542043068fce"
     },
     {
       "id": "creatures-et-legendes-2-sur-5",
@@ -3535,14 +3978,13 @@
       "note": "Monstres, dieux et histoires qu'on se raconte. Manche 2 sur 5.",
       "collection": "Créatures et légendes",
       "emoji": "🐉",
-      "questions": 22,
+      "questions": 24,
       "niveaux": {
-        "1": 14,
-        "2": 7,
-        "3": 1
+        "1": 15,
+        "2": 9
       },
-      "octets": 4757,
-      "empreinte": "227b995862b7292ac5925daab3f779c2e37adbbd"
+      "octets": 4982,
+      "empreinte": "46adcb13bf64d8fbf25b55a4a12384b1828c673d"
     },
     {
       "id": "creatures-et-legendes-3-sur-5",
@@ -3550,13 +3992,13 @@
       "note": "Monstres, dieux et histoires qu'on se raconte. Manche 3 sur 5.",
       "collection": "Créatures et légendes",
       "emoji": "🐉",
-      "questions": 21,
+      "questions": 23,
       "niveaux": {
-        "1": 19,
-        "2": 2
+        "1": 16,
+        "2": 7
       },
-      "octets": 4279,
-      "empreinte": "88692752925ca884faaac9661cdf1e1bf07fd1ab"
+      "octets": 4986,
+      "empreinte": "81cd895336ae208b1e9ab930af9c7f54c49dcd1f"
     },
     {
       "id": "creatures-et-legendes-4-sur-5",
@@ -3564,13 +4006,14 @@
       "note": "Monstres, dieux et histoires qu'on se raconte. Manche 4 sur 5.",
       "collection": "Créatures et légendes",
       "emoji": "🐉",
-      "questions": 21,
+      "questions": 23,
       "niveaux": {
-        "1": 13,
-        "2": 8
+        "1": 18,
+        "2": 4,
+        "3": 1
       },
-      "octets": 4438,
-      "empreinte": "350addaa0e9c29e0dfd3c0c25f08ee872bd4ee35"
+      "octets": 4843,
+      "empreinte": "6af4e7f00e9b2d57f8dab8e1d7ffd9910ee0ee2b"
     },
     {
       "id": "creatures-et-legendes-5-sur-5",
@@ -3578,88 +4021,103 @@
       "note": "Monstres, dieux et histoires qu'on se raconte. Manche 5 sur 5.",
       "collection": "Créatures et légendes",
       "emoji": "🐉",
-      "questions": 21,
+      "questions": 23,
       "niveaux": {
-        "1": 15,
-        "2": 6
-      },
-      "octets": 4733,
-      "empreinte": "98e09d0ad8fb4b6a43644656d8ff68cff4de5387"
-    },
-    {
-      "id": "sports-d-hiver-1-sur-5",
-      "titre": "Sports d'hiver 1 sur 5",
-      "note": "Tout ce qui se joue sur la glace ou la neige. Manche 1 sur 5.",
-      "collection": "Sports d'hiver",
-      "emoji": "⛷️",
-      "questions": 24,
-      "niveaux": {
-        "1": 13,
-        "2": 9,
+        "2": 4,
+        "1": 17,
         "3": 2
       },
-      "octets": 5455,
-      "empreinte": "f8d55619cb4d7c0efd46a82ca4bae026b07e3a9a"
+      "octets": 4956,
+      "empreinte": "8ebc04a8c5a6cbc95eec197e1629e2f9350ca794"
     },
     {
-      "id": "sports-d-hiver-2-sur-5",
-      "titre": "Sports d'hiver 2 sur 5",
-      "note": "Tout ce qui se joue sur la glace ou la neige. Manche 2 sur 5.",
-      "collection": "Sports d'hiver",
-      "emoji": "⛷️",
-      "questions": 24,
-      "niveaux": {
-        "3": 7,
-        "1": 11,
-        "2": 6
-      },
-      "octets": 5383,
-      "empreinte": "d29ee6089bb39eaa1f409ae9e1d176794f513193"
-    },
-    {
-      "id": "sports-d-hiver-3-sur-5",
-      "titre": "Sports d'hiver 3 sur 5",
-      "note": "Tout ce qui se joue sur la glace ou la neige. Manche 3 sur 5.",
+      "id": "sports-d-hiver-1-sur-6",
+      "titre": "Sports d'hiver 1 sur 6",
+      "note": "Tout ce qui se joue sur la glace ou la neige. Manche 1 sur 6.",
       "collection": "Sports d'hiver",
       "emoji": "⛷️",
       "questions": 24,
       "niveaux": {
         "1": 17,
-        "2": 6,
-        "3": 1
+        "2": 5,
+        "3": 2
       },
-      "octets": 4974,
-      "empreinte": "50076959b99ea87c43c513f2c0149adaa49ce675"
+      "octets": 4843,
+      "empreinte": "998210c76ff26458d7ab7a0c52e97b60532072ef"
     },
     {
-      "id": "sports-d-hiver-4-sur-5",
-      "titre": "Sports d'hiver 4 sur 5",
-      "note": "Tout ce qui se joue sur la glace ou la neige. Manche 4 sur 5.",
+      "id": "sports-d-hiver-2-sur-6",
+      "titre": "Sports d'hiver 2 sur 6",
+      "note": "Tout ce qui se joue sur la glace ou la neige. Manche 2 sur 6.",
       "collection": "Sports d'hiver",
       "emoji": "⛷️",
       "questions": 24,
       "niveaux": {
-        "1": 13,
         "2": 9,
-        "3": 2
+        "1": 12,
+        "3": 3
       },
-      "octets": 5020,
-      "empreinte": "9d8fccfde05574ad4a5215ac8c5e410802e945c5"
+      "octets": 4994,
+      "empreinte": "19d31e3471e2e603626a104d4401fcf5037ed4b5"
     },
     {
-      "id": "sports-d-hiver-5-sur-5",
-      "titre": "Sports d'hiver 5 sur 5",
-      "note": "Tout ce qui se joue sur la glace ou la neige. Manche 5 sur 5.",
+      "id": "sports-d-hiver-3-sur-6",
+      "titre": "Sports d'hiver 3 sur 6",
+      "note": "Tout ce qui se joue sur la glace ou la neige. Manche 3 sur 6.",
       "collection": "Sports d'hiver",
       "emoji": "⛷️",
       "questions": 24,
+      "niveaux": {
+        "1": 15,
+        "2": 5,
+        "3": 4
+      },
+      "octets": 4971,
+      "empreinte": "27c019185ffe677a9f3e597c8a134740a1a124dd"
+    },
+    {
+      "id": "sports-d-hiver-4-sur-6",
+      "titre": "Sports d'hiver 4 sur 6",
+      "note": "Tout ce qui se joue sur la glace ou la neige. Manche 4 sur 6.",
+      "collection": "Sports d'hiver",
+      "emoji": "⛷️",
+      "questions": 24,
+      "niveaux": {
+        "1": 15,
+        "2": 9
+      },
+      "octets": 5293,
+      "empreinte": "903c8eecb8b83fd2291fd8d06a4b0a477c0a71bb"
+    },
+    {
+      "id": "sports-d-hiver-5-sur-6",
+      "titre": "Sports d'hiver 5 sur 6",
+      "note": "Tout ce qui se joue sur la glace ou la neige. Manche 5 sur 6.",
+      "collection": "Sports d'hiver",
+      "emoji": "⛷️",
+      "questions": 24,
+      "niveaux": {
+        "1": 9,
+        "3": 5,
+        "2": 10
+      },
+      "octets": 5382,
+      "empreinte": "112bfb932e5507bde3f7084f7628032dfdb52302"
+    },
+    {
+      "id": "sports-d-hiver-6-sur-6",
+      "titre": "Sports d'hiver 6 sur 6",
+      "note": "Tout ce qui se joue sur la glace ou la neige. Manche 6 sur 6.",
+      "collection": "Sports d'hiver",
+      "emoji": "⛷️",
+      "questions": 23,
       "niveaux": {
         "1": 14,
         "2": 7,
-        "3": 3
+        "3": 2
       },
-      "octets": 5194,
-      "empreinte": "3bfc88f716c4a078fc5c836a7ff09b629714694b"
+      "octets": 5006,
+      "empreinte": "c82cc602bc196a5368e1bf8386e908dc24e982f3"
     }
   ],
   "collections": [
@@ -3673,7 +4131,7 @@
       "nom": "Bouffe et cuisine",
       "emoji": "🍲",
       "questionnaires": 13,
-      "questions": 304
+      "questions": 308
     },
     {
       "nom": "Cinéma et télé",
@@ -3684,14 +4142,14 @@
     {
       "nom": "Connaisseurs",
       "emoji": "🎓",
-      "questionnaires": 17,
-      "questions": 412
+      "questionnaires": 22,
+      "questions": 533
     },
     {
       "nom": "Créatures et légendes",
       "emoji": "🐉",
       "questionnaires": 5,
-      "questions": 107
+      "questions": 117
     },
     {
       "nom": "Culture générale",
@@ -3702,38 +4160,38 @@
     {
       "nom": "Culture pop",
       "emoji": "🌟",
-      "questionnaires": 17,
-      "questions": 415
+      "questionnaires": 18,
+      "questions": 435
     },
     {
       "nom": "Géographie",
       "emoji": "🌍",
-      "questionnaires": 10,
-      "questions": 226
+      "questionnaires": 14,
+      "questions": 339
     },
     {
       "nom": "Histoire",
       "emoji": "🏛️",
-      "questionnaires": 11,
-      "questions": 254
+      "questionnaires": 15,
+      "questions": 370
     },
     {
       "nom": "L'espace et le ciel",
       "emoji": "🪐",
-      "questionnaires": 4,
-      "questions": 90
+      "questionnaires": 5,
+      "questions": 106
     },
     {
       "nom": "Le corps humain",
       "emoji": "🧠",
       "questionnaires": 4,
-      "questions": 87
+      "questions": 93
     },
     {
       "nom": "Le règne animal",
       "emoji": "🐾",
-      "questionnaires": 14,
-      "questions": 326
+      "questionnaires": 15,
+      "questions": 363
     },
     {
       "nom": "Mots et langue",
@@ -3744,8 +4202,8 @@
     {
       "nom": "Musique",
       "emoji": "🎵",
-      "questionnaires": 12,
-      "questions": 297
+      "questionnaires": 18,
+      "questions": 430
     },
     {
       "nom": "Mélanges",
@@ -3756,32 +4214,32 @@
     {
       "nom": "Québec",
       "emoji": "⚜️",
-      "questionnaires": 20,
-      "questions": 496
+      "questionnaires": 26,
+      "questions": 639
     },
     {
       "nom": "Sciences et nature",
       "emoji": "🔬",
       "questionnaires": 12,
-      "questions": 288
+      "questions": 291
     },
     {
       "nom": "Sports",
       "emoji": "🏅",
-      "questionnaires": 13,
-      "questions": 325
+      "questionnaires": 14,
+      "questions": 336
     },
     {
       "nom": "Sports d'hiver",
       "emoji": "⛷️",
-      "questionnaires": 5,
-      "questions": 120
+      "questionnaires": 6,
+      "questions": 143
     },
     {
       "nom": "Spécial Noël",
       "emoji": "🎄",
-      "questionnaires": 2,
-      "questions": 46
+      "questionnaires": 3,
+      "questions": 55
     },
     {
       "nom": "Super-héros et BD",

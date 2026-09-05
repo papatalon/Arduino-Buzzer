@@ -7,87 +7,136 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit rond porte le nom de sa couleur ?",
-      "reponse": "L'orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport descend des rivières en radeau pneumatique ?",
-      "reponse": "Le rafting",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel drapeau agite-t-on à la fin d'une course auto ?",
-      "reponse": "Drapeau à damier",
+      "categorie": "Musique",
+      "question": "Quelle danse se pratique en tutu et sur la pointe des pieds ?",
+      "reponse": "Le ballet",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Contraire de rapide ?",
-      "reponse": "Lent",
+      "question": "Que signifie avoir un poil dans la main ?",
+      "reponse": "Être paresseux",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel arbre produit des glands ?",
-      "reponse": "Le chêne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle langue parle-t-on aux États-Unis ?",
-      "reponse": "L'anglais",
-      "niveau": 1
+      "categorie": "Sports",
+      "question": "Quel joueur brésilien est surnommé le Roi du soccer ?",
+      "reponse": "Pelé",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelle opération municipale suit chaque bordée de neige dans les rues ?",
-      "reponse": "Le déneigement",
+      "question": "Combien de référendums sur la souveraineté a connus le Québec ?",
+      "reponse": "Deux",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "De quel fruit fait-on le vin ?",
+      "reponse": "Le raisin",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la vidéo qui montre étape par étape comment faire quelque chose ?",
-      "reponse": "Un tutoriel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien d'anneaux sur le drapeau olympique ?",
-      "reponse": "Cinq",
+      "categorie": "Musique",
+      "question": "Quelle comptine demande si le loup y est pendant qu'il s'habille ?",
+      "reponse": "Promenons-nous dans les bois",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Pluriel de monsieur ?",
-      "reponse": "Messieurs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on les rois de l'Égypte ancienne ?",
-      "reponse": "Les pharaons",
+      "question": "Que signifie être fort comme un bœuf ?",
+      "reponse": "Être très fort",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle suite de Nemo suit la mémoire de Dory ?",
-      "reponse": "Trouver Doris",
+      "question": "Quel ami de Winnie l'ourson est un âne toujours triste ?",
+      "reponse": "Bourriquet",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel moteur de recherche est le plus utilisé au monde ?",
-      "reponse": "Google",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ustensile creux sert à manger la soupe ?",
+      "reponse": "La cuillère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel jambon italien se mange en tranches fines ?",
+      "reponse": "Le prosciutto",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle attraction de parc aquatique fait descendre un long tube en spirale ?",
+      "reponse": "La glissade d'eau",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle énergie est produite à partir d'uranium ?",
-      "reponse": "Le nucléaire",
+      "question": "Quel astre provoque les marées ?",
+      "reponse": "La Lune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la ville où siège le gouvernement d'un pays ?",
+      "reponse": "La capitale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la durée d'une année sur Terre ?",
+      "reponse": "365 jours",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel appareil lave les vêtements dans le sous-sol ?",
+      "reponse": "La laveuse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel soldat Marvel porte un bouclier étoilé ?",
+      "reponse": "Captain America",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle carte l'arbitre de soccer montre-t-il pour avertir un joueur ?",
+      "reponse": "Un carton jaune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus petite province canadienne ?",
+      "reponse": "Prince-Édouard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Synonyme de docteur ?",
+      "reponse": "Médecin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
+      "reponse": "Trudeau",
       "niveau": 1,
       "ages": [
         "ados",
@@ -97,25 +146,20 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel écureuil de L'Ère de glace court sans cesse après son gland ?",
-      "reponse": "Scrat",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "question": "Quel canard Disney porte un costume marin ?",
+      "reponse": "Donald",
+      "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle percussion ronde a des cymbalettes ?",
-      "reponse": "Le tambourin",
+      "categorie": "Culture pop",
+      "question": "Quel manège fait tourner des chevaux de bois en musique ?",
+      "reponse": "Un carrousel",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gaz les plantes rejettent-elles le jour ?",
-      "reponse": "L'oxygène",
+      "question": "Quelle est la plus grosse planète du système solaire ?",
+      "reponse": "Jupiter",
       "niveau": 1
     },
     {
@@ -125,55 +169,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le petit chien blanc de Tintin ?",
-      "reponse": "Milou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage italien râpe les pâtes ?",
-      "reponse": "Le parmesan",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel bassin de plastique se gonfle dans la cour l'été ?",
-      "reponse": "Une piscine gonflable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel appareil garde la crème glacée bien dure ?",
-      "reponse": "Le congélateur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fête du 1er juillet fait déménager les Québécois ?",
-      "reponse": "Jour du déménagement",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Terre-Neuve ?",
-      "reponse": "Un Terre-Neuvien",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on la grosse partie de l'arbre qui porte les branches ?",
-      "reponse": "Le tronc",
+      "categorie": "Culture générale",
+      "question": "Quel arbre produit des glands ?",
+      "reponse": "Le chêne",
       "niveau": 1
     }
   ]

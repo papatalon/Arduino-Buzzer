@@ -7,81 +7,32 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la personne qui dirige une équipe depuis le banc ?",
-      "reponse": "L'entraîneur",
+      "categorie": "Québec",
+      "question": "Qui appelle-t-on au 911 quand quelqu'un est blessé ?",
+      "reponse": "L'ambulance",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien de côtés a un pentagone ?",
-      "reponse": "Cinq",
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de rire ?",
+      "reponse": "Pleurer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
+      "reponse": "Bob l'éponge",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Comment appelle-t-on la feuille qui donne les ingrédients et les étapes d'un plat ?",
-      "reponse": "Une recette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle basilique du Vieux-Montréal a un plafond bleu étoilé ?",
-      "reponse": "Notre-Dame",
+      "question": "Pays d'origine de la fondue au fromage ?",
+      "reponse": "La Suisse",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans la comptine, de quelle couleur est la souris qui courait dans l'herbe ?",
-      "reponse": "Verte",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série policière québécoise porte le numéro d'un poste de police ?",
-      "reponse": "District 31",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glace utilise des pierres et des balais ?",
-      "reponse": "Le curling",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle amazone a un lasso de vérité ?",
-      "reponse": "Wonder Woman",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel scientifique a inventé le paratonnerre ?",
-      "reponse": "Benjamin Franklin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quels ninjas de Lego portent chacun une couleur et un élément ?",
-      "reponse": "Ninjago",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
       ]
     },
     {
@@ -91,53 +42,29 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "De quelle langue vient le mot toboggan ?",
-      "reponse": "Langues autochtones",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel territoire canadien a Iqaluit pour capitale ?",
-      "reponse": "Le Nunavut",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Daft Punk répète qu'on est plus fort, meilleur et plus rapide ?",
-      "reponse": "Harder, Better, Faster, Stronger",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie les carottes sont cuites ?",
-      "reponse": "C'est fini",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle l'école de Harry Potter ?",
-      "reponse": "Poudlard",
-      "niveau": 1
-    },
-    {
       "categorie": "Histoire",
-      "question": "Quelle reine d'Égypte a séduit César et Antoine ?",
-      "reponse": "Cléopâtre",
+      "question": "Quelle centrale nucléaire a explosé en 1986 ?",
+      "reponse": "Tchernobyl",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série mettait en scène un couple joué par Guy A. Lepage et Sylvie Léonard ?",
+      "reponse": "Un gars, une fille",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle route ceinture la péninsule gaspésienne ?",
+      "reponse": "La 132",
       "niveau": 2,
       "ages": [
         "ados",
@@ -147,9 +74,78 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel petit légume rond, rouge dehors et blanc dedans, pique la langue ?",
-      "reponse": "Le radis",
-      "niveau": 2
+      "question": "Quelle viande hachée garnit le pâté chinois ?",
+      "reponse": "Le bœuf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de côtés a un pentagone ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le joueur du baseball qui envoie la balle au frappeur ?",
+      "reponse": "Le lanceur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel sens est associé à la langue ?",
+      "reponse": "Le goût",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie se lever du mauvais pied ?",
+      "reponse": "Être de mauvaise humeur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël fait résonner un long « Gloria » repris par tout le monde ?",
+      "reponse": "Les anges dans nos campagnes",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quel jeu de cartes doit-on annoncer qu'il ne reste qu'une seule carte en main ?",
+      "reponse": "Uno",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de cirque marche sur un fil tendu en hauteur ?",
+      "reponse": "Le funambulisme",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la construction qui permet de traverser une rivière ?",
+      "reponse": "Un pont",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel instrument grossit les objets proches ?",
+      "reponse": "La loupe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
+      "reponse": "Sol",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -158,26 +154,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel rocher troué est l'emblème de la Gaspésie ?",
-      "reponse": "Le rocher Percé",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Que devient un têtard ?",
-      "reponse": "Une grenouille",
-      "niveau": 1
-    },
-    {
       "categorie": "Histoire",
-      "question": "Quelle crise de 1962 concernait des missiles ?",
-      "reponse": "Crise de Cuba",
+      "question": "Quel dictateur soviétique a succédé à Lénine ?",
+      "reponse": "Staline",
       "niveau": 2,
       "ages": [
         "ados",
@@ -186,15 +165,15 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel cahier à anneaux range les feuilles de chaque matière ?",
-      "reponse": "Un cartable",
-      "niveau": 2
+      "categorie": "Mots et langue",
+      "question": "Sous quelle lettre place-t-on la cédille ?",
+      "reponse": "Le C",
+      "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie se serrer la ceinture ?",
-      "reponse": "Se priver",
+      "categorie": "Géographie",
+      "question": "Quel pays possède le mont Fuji ?",
+      "reponse": "Le Japon",
       "niveau": 1,
       "ages": [
         "ados",
@@ -203,10 +182,20 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes traverse la Suisse ?",
-      "reponse": "Les Alpes",
-      "niveau": 1,
+      "categorie": "Musique",
+      "question": "Quelle chanteuse a chanté Rolling in the Deep ?",
+      "reponse": "Adele",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
+      "reponse": "Le Wordle",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",

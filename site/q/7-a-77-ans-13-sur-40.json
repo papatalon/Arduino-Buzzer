@@ -7,90 +7,59 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel équipement large attaché aux pieds empêche de caler dans la neige épaisse ?",
-      "reponse": "Les raquettes",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume principal compose le guacamole ?",
+      "reponse": "L'avocat",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle épice noire moulue accompagne le sel sur la table ?",
-      "reponse": "Le poivre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel homme élevé par les singes se balance de liane en liane ?",
-      "reponse": "Tarzan",
+      "question": "Quelle boisson gazeuse au gingembre est célèbre au Canada ?",
+      "reponse": "Le ginger ale (Canada Dry)",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle tarte du terroir québécois se fait avec de la cassonade et de la crème ?",
-      "reponse": "La tarte au sucre",
+      "question": "Quelle fête hivernale illumine le Vieux-Port de Montréal ?",
+      "reponse": "Igloofest",
       "niveau": 1,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de bosses a un dromadaire ?",
-      "reponse": "Une",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir la langue à terre ?",
-      "reponse": "Être très fatigué",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel chou fermenté accompagne les saucisses en Alsace ?",
-      "reponse": "La choucroute",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation raconte un garçon qui rejoint le pays des morts avec sa guitare ?",
-      "reponse": "Coco",
-      "niveau": 1,
-      "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel arachnide a une queue munie d'un dard ?",
-      "reponse": "Le scorpion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de périodes dans un match de hockey ?",
-      "reponse": "Trois",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'ensemble des chansons réunies sur un même enregistrement ?",
+      "reponse": "Un album",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quelle pierre précieuse est rouge ?",
-      "reponse": "Le rubis",
-      "niveau": 1
+      "question": "Quel personnage habillé en vert est le frère de Mario ?",
+      "reponse": "Luigi",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Féminin d'empereur ?",
-      "reponse": "Impératrice",
+      "question": "Quelle est la lettre la plus utilisée en français ?",
+      "reponse": "Le E",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel instrument d'écriture contient du graphite ?",
+      "reponse": "Le crayon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel cidre québécois est pressé après les gelées ?",
+      "reponse": "Cidre de glace",
       "niveau": 1,
       "ages": [
         "ados",
@@ -100,104 +69,104 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on une chanson enregistrée avec deux artistes vedettes ?",
-      "reponse": "Un duo",
+      "question": "Dans la comptine, de quelle couleur est la souris qui courait dans l'herbe ?",
+      "reponse": "Verte",
       "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie vendre la mèche ?",
-      "reponse": "Révéler un secret",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel archéologue porte un fouet et un chapeau ?",
-      "reponse": "Indiana Jones",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel gros véhicule jaune ramasse les enfants le matin ?",
-      "reponse": "L'autobus scolaire",
+      "question": "Quel animal est Sébastien dans La Petite Sirène ?",
+      "reponse": "Un crabe",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "De quel côté de la route conduit-on au Royaume-Uni ?",
-      "reponse": "À gauche",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le bonhomme de neige de La Reine des neiges ?",
+      "reponse": "Olaf",
+      "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on les combats à cheval où deux chevaliers se chargeaient avec des lances ?",
-      "reponse": "Les joutes",
+      "categorie": "Cinéma et télé",
+      "question": "Dans quelle ville vivent les Simpson ?",
+      "reponse": "Springfield",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le personnage costumé qui amuse la foule pendant un match ?",
-      "reponse": "La mascotte",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel réseau social publie des photos et des stories, avec un appareil photo comme logo ?",
-      "reponse": "Instagram",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel casse-tête coloré à six faces se replace en tournant ses rangées ?",
-      "reponse": "Le Rubik's Cube",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle île montréalaise accueille La Ronde ?",
-      "reponse": "Île Sainte-Hélène",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit jaune les singes adorent-ils ?",
-      "reponse": "La banane",
+      "question": "Quel jeu consiste à se cacher pendant qu'un joueur compte les yeux fermés ?",
+      "reponse": "La cachette",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quels organes filtrent le sang ?",
-      "reponse": "Les reins",
+      "question": "Dans quel organe la nourriture arrive-t-elle une fois avalée ?",
+      "reponse": "L'estomac",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel bouton bleu approuve une publication sur Facebook ?",
+      "reponse": "J'aime",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la ville de New York ?",
-      "reponse": "Les États-Unis",
+      "question": "Quel grand fleuve traverse l'Amazonie ?",
+      "reponse": "L'Amazone",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène lumineux accompagne le tonnerre ?",
+      "reponse": "L'éclair",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
+      "reponse": "Orange",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Dans quoi la chenille se transforme-t-elle ?",
+      "reponse": "La chrysalide",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le féminin de chien ?",
+      "reponse": "Chienne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel pays a un cercle rouge sur fond blanc ?",
+      "reponse": "Le Japon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit tropical porte une couronne ?",
+      "reponse": "L'ananas",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel animal des Andes crache quand il est fâché ?",
+      "reponse": "Le lama",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel engin a emmené les premiers hommes jusqu'à la Lune ?",
+      "reponse": "Une fusée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de héros ?",
+      "reponse": "Héroïne",
       "niveau": 1
     }
   ]

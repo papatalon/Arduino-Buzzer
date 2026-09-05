@@ -7,54 +7,40 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "En quelle année le mur de Berlin est-il tombé ?",
-      "reponse": "1989",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois barrer la porte ?",
-      "reponse": "Verrouiller",
+      "question": "Que signifie dormir sur ses deux oreilles ?",
+      "reponse": "Dormir tranquille",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel condiment rouge accompagne les frites et le pâté chinois ?",
-      "reponse": "Le ketchup",
+      "categorie": "Histoire",
+      "question": "Quel roi de France fut surnommé le Roi-Soleil ?",
+      "reponse": "Louis XIV",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal les Autochtones des plaines chassaient-ils pour se nourrir et se vêtir ?",
+      "reponse": "Le bison",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle exclamation lance Homer Simpson ?",
+      "reponse": "D'oh",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on la place Tiananmen ?",
-      "reponse": "Pékin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Québec",
+      "question": "Quelle embarcation traverse le fleuve gelé au Carnaval ?",
+      "reponse": "Le canot",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
-      "reponse": "Un sauveteur",
+      "question": "Comment appelle-t-on la grande salle de l'école où se donne l'éducation physique ?",
+      "reponse": "Le gymnase",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel accessoire rembourré élargissait les épaules des vestons dans les années 80 ?",
-      "reponse": "L'épaulette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Culture générale",
@@ -63,140 +49,83 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui pousse sur la tête et qu'on va faire couper chez le coiffeur ?",
-      "reponse": "Les cheveux",
+      "categorie": "Histoire",
+      "question": "Qui a remporté la bataille des plaines d'Abraham ?",
+      "reponse": "Les Britanniques",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle fleur figure sur le drapeau de Montréal ?",
-      "reponse": "Fleur de lys",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Géographie",
+      "question": "Dans quel pays vivent les kangourous ?",
+      "reponse": "L'Australie",
+      "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot imitant un son ?",
-      "reponse": "Une onomatopée",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à archet se joue assis, entre les genoux ?",
-      "reponse": "Le violoncelle",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sciences et nature",
+      "question": "Qu'est-ce qui fait tourner les éoliennes et voler les cerfs-volants ?",
+      "reponse": "Le vent",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
-      "reponse": "Rio de Janeiro",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on l'énorme masse de glace qui flotte sur la mer ?",
+      "reponse": "Un iceberg",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle épreuve combine dix disciplines ?",
-      "reponse": "Le décathlon",
-      "niveau": 1,
+      "question": "Quel boxeur s'appelait Cassius Clay ?",
+      "reponse": "Muhammad Ali",
+      "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boulette frite du Moyen-Orient est aux pois chiches ?",
-      "reponse": "Le falafel",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?",
-      "reponse": "Luca",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?",
-      "reponse": "L'arc-en-ciel",
+      "question": "Quel repas se glisse entre deux tranches de pain pour la boîte à lunch ?",
+      "reponse": "Un sandwich",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel récif corallien longe l'Australie ?",
-      "reponse": "Grande Barrière",
-      "niveau": 2,
+      "categorie": "Musique",
+      "question": "Combien de musiciens jouent dans un duo ?",
+      "reponse": "Deux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel os protège le cerveau ?",
+      "reponse": "Le crâne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel programme de récompenses accumule des points bleus chez plusieurs commerçants ?",
+      "reponse": "Air Miles",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel robot dit Hasta la vista, baby ?",
-      "reponse": "Terminator",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel objet empoisonné croque Blanche-Neige ?",
+      "reponse": "Une pomme",
+      "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Qui fut le premier premier ministre du Canada ?",
-      "reponse": "John A. Macdonald",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle île du Saint-Laurent fut une station de quarantaine ?",
-      "reponse": "Grosse-Île",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Mots et langue",
+      "question": "Féminin de loup ?",
+      "reponse": "Louve",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe italien a gagné l'Eurovision en 2021 en jouant du rock ?",
-      "reponse": "Måneskin",
+      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
+      "reponse": "Loud",
       "niveau": 3,
       "ages": [
         "ados",
@@ -204,16 +133,35 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel arbre décore-t-on avec des boules et des lumières en décembre ?",
-      "reponse": "Le sapin",
+      "categorie": "Géographie",
+      "question": "Quelle ligne imaginaire sépare l'hémisphère nord de l'hémisphère sud ?",
+      "reponse": "L'équateur",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit des détenues ?",
-      "reponse": "Unité 9",
+      "categorie": "Culture pop",
+      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
+      "reponse": "Rue des Pignons",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâtisserie ronde se décore de glaçage pour une fête ?",
+      "reponse": "Le gâteau",
       "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel numéro compose-t-on au Québec pour joindre un service non urgent de la ville ?",
+      "reponse": "Le 311",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -227,10 +175,15 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle grande statue verte tient une torche à l'entrée de New York ?",
-      "reponse": "La statue de la Liberté",
-      "niveau": 1
+      "categorie": "Sciences et nature",
+      "question": "Quel liquide produit par le foie digère les graisses ?",
+      "reponse": "La bile",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

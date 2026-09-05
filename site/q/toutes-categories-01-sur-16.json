@@ -7,32 +7,16 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Géographie",
-      "question": "Langue parlée au Brésil ?",
-      "reponse": "Le portugais",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Histoire",
+      "question": "Quel outil de fer servait à abattre les arbres pour défricher la terre ?",
+      "reponse": "La hache",
+      "niveau": 2
     },
     {
-      "categorie": "Sports",
-      "question": "Dans quelle cage combattent les athlètes de l'UFC ?",
-      "reponse": "L'octogone",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel film de 2023 a porté le plombier moustachu de Nintendo au cinéma ?",
-      "reponse": "Super Mario Bros, le film",
-      "niveau": 1,
+      "categorie": "Cinéma et télé",
+      "question": "Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?",
+      "reponse": "Le Bossu de Notre-Dame",
+      "niveau": 3,
       "ages": [
         "enfants",
         "ados",
@@ -40,60 +24,10 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "En quelle année a débuté la Seconde Guerre mondiale ?",
-      "reponse": "1939",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel est le plus grand cervidé du Québec ?",
-      "reponse": "L'orignal",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie lâcher son fou ?",
-      "reponse": "S'amuser follement",
-      "niveau": 1
-    },
-    {
       "categorie": "Musique",
-      "question": "Quel long instrument suisse s'étire au sol ?",
-      "reponse": "Le cor des Alpes",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
-      "reponse": "King Kong",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume principal compose le guacamole ?",
-      "reponse": "L'avocat",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel film de Denys Arcand a gagné un Oscar ?",
-      "reponse": "Invasions barbares",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle comptine fait descendre des crocodiles au bord du Nil ?",
+      "reponse": "Ah! les crocodiles",
+      "niveau": 2
     },
     {
       "categorie": "Culture générale",
@@ -106,60 +40,28 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel gaz léger gonflait les dirigeables ?",
-      "reponse": "L'hydrogène",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage rouge et blanc à tuque se cache dans des foules dessinées ?",
-      "reponse": "Charlie",
+      "categorie": "Histoire",
+      "question": "Quel véhicule à moteur a remplacé le cheval sur les routes ?",
+      "reponse": "L'automobile",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle muraille célèbre protège la Chine ?",
-      "reponse": "La Grande Muraille",
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville du Canada ?",
+      "reponse": "Toronto",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois familier désigne un ami proche ?",
+      "reponse": "Un chum",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Dans un orchestre, quel instrument donne le la aux autres avant le concert ?",
-      "reponse": "Le hautbois",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien font deux plus deux ?",
-      "reponse": "Quatre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel instrument mesure la vitesse du vent ?",
-      "reponse": "L'anémomètre",
+      "question": "Quel appareil branche la guitare électrique pour faire sortir le son ?",
+      "reponse": "L'amplificateur",
       "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Espagne ?",
-      "reponse": "Madrid",
-      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -168,40 +70,61 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de gymnase grimpe des murs à prises ?",
-      "reponse": "L'escalade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année eut lieu le grand krach boursier ?",
-      "reponse": "1929",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien y a-t-il de pôles sur la Terre ?",
-      "reponse": "Deux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Que souffle-t-on sur le gâteau de fête après avoir fait un vœu ?",
-      "reponse": "Les bougies",
+      "question": "Quel objet lance-t-on sur la glace après un tour du chapeau ?",
+      "reponse": "Des chapeaux",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la répétition d'un son au début des mots ?",
-      "reponse": "Une allitération",
-      "niveau": 3,
+      "question": "Pluriel de œil ?",
+      "reponse": "Yeux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien font deux plus deux ?",
+      "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes traverse l'ouest canadien ?",
+      "reponse": "Les Rocheuses",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
+      "reponse": "Bugs Bunny",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle fleur suit le Soleil ?",
+      "reponse": "Le tournesol",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la femelle du canard ?",
+      "reponse": "La cane",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un ballon rond qu'on frappe du pied dans un but ?",
+      "reponse": "Le soccer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle tartelette se fait griller au grille-pain pour le déjeuner ?",
+      "reponse": "La Pop-Tart",
+      "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados",
+        "adultes"
       ]
     },
     {
@@ -211,10 +134,55 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Comment appelle-t-on les petits personnages bleus qui vivent dans des champignons ?",
-      "reponse": "Les Schtroumpfs",
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine du croissant ?",
+      "reponse": "La France",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Angleterre ?",
+      "reponse": "Londres",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle salle de Montréal projette le ciel étoilé sur un dôme au-dessus des spectateurs ?",
+      "reponse": "Le Planétarium",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on le petit film tourné pour accompagner une chanson ?",
+      "reponse": "Un vidéoclip",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante piquante pousse dans le désert ?",
+      "reponse": "Le cactus",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat libanais est une purée d'aubergines fumées ?",
+      "reponse": "Baba ganouj",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle embarcation d'écorce servait aux déplacements en Nouvelle-France ?",
+      "reponse": "Le canot d'écorce",
+      "niveau": 2
     }
   ]
 }

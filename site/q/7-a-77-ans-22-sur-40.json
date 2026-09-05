@@ -7,85 +7,97 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel jeu de cour d'école saute sur des cases numérotées dessinées à la craie ?",
-      "reponse": "La marelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Citez un palindrome de cinq lettres qui flotte.",
-      "reponse": "Kayak",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appellent les trois neveux de Donald ?",
-      "reponse": "Riri, Fifi et Loulou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson se prépare avec du citron, de l'eau et du sucre ?",
-      "reponse": "La limonade",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Qui a développé la théorie de la relativité ?",
-      "reponse": "Einstein",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film Disney suit 101 chiens tachés ?",
-      "reponse": "Les 101 Dalmatiens",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Dans quel stade le CF Montréal joue-t-il ses matchs ?",
-      "reponse": "Le Stade Saputo",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la personne qui vend des fleurs ?",
-      "reponse": "Un fleuriste",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel animal cache les chocolats dans le jardin à Pâques ?",
-      "reponse": "Le lapin de Pâques",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel oiseau figure sur la pièce de un dollar canadien ?",
-      "reponse": "Le huard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel faon Disney perd sa mère dans la forêt ?",
-      "reponse": "Bambi",
+      "question": "Quel phénomène lumineux colore le ciel polaire ?",
+      "reponse": "Aurore boréale",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Sur quel continent se dresse le Kilimandjaro ?",
-      "reponse": "L'Afrique",
+      "question": "Comment appelle-t-on une terre entièrement entourée d'eau ?",
+      "reponse": "Une île",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelles parties blanches de la bouche servent à mâcher ?",
+      "reponse": "Les dents",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel acide donne son goût au citron ?",
+      "reponse": "L'acide citrique",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation met en scène Dracula et sa famille de monstres dans un hôtel ?",
+      "reponse": "Hôtel Transylvanie",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animateur québécois a longtemps animé Tout le monde en parle ?",
+      "reponse": "Guy A. Lepage",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de cour d'école consiste à courir après les autres pour les toucher ?",
+      "reponse": "La tag",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel arbre décoré trône dans le salon en décembre ?",
+      "reponse": "Un sapin de Noël",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel grain blanc met-on dans la salière ?",
+      "reponse": "Le sel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la trace d'un animal préhistorique conservée dans la pierre ?",
+      "reponse": "Un fossile",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte longue et fine mange-t-on avec des boulettes ?",
+      "reponse": "Le spaghetti",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport fait tourner des voitures très rapides sur un circuit ?",
+      "reponse": "La course automobile",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel objet ouvre-t-on pour se protéger de la pluie ?",
+      "reponse": "Un parapluie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel fjord spectaculaire abrite des bélugas ?",
+      "reponse": "Fjord du Saguenay",
       "niveau": 1,
       "ages": [
         "ados",
@@ -95,14 +107,42 @@
     },
     {
       "categorie": "Musique",
-      "question": "Dans la comptine, de quelle couleur est la souris qui courait dans l'herbe ?",
-      "reponse": "Verte",
+      "question": "Comment appelle-t-on l'ensemble de musiciens que dirige un chef ?",
+      "reponse": "Un orchestre",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle volaille laquée est le classique de la capitale chinoise ?",
-      "reponse": "Canard de Pékin",
+      "categorie": "Culture générale",
+      "question": "Qui a ouvert la boîte qui libérait tous les maux ?",
+      "reponse": "Pandore",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel point le plus au nord de la Terre est le domicile du père Noël ?",
+      "reponse": "Le pôle Nord",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse en robe rose Mario doit-il sans cesse secourir ?",
+      "reponse": "La princesse Peach",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Contraire de transparent ?",
+      "reponse": "Opaque",
       "niveau": 1,
       "ages": [
         "ados",
@@ -111,77 +151,48 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte longue et fine mange-t-on avec des boulettes ?",
-      "reponse": "Le spaghetti",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
-      "reponse": "L'érable",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture générale",
-      "question": "Quel instrument mesure le temps avec du sable ?",
-      "reponse": "Le sablier",
+      "question": "Quel objet porté au poignet donne l'heure ?",
+      "reponse": "Une montre",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est l'étoile la plus proche de la Terre ?",
-      "reponse": "Le Soleil",
+      "categorie": "Mots et langue",
+      "question": "Quel signe marque l'élision dans le mot l'arbre ?",
+      "reponse": "L'apostrophe",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel mois de 1970 a connu l'enlèvement de Pierre Laporte ?",
-      "reponse": "Octobre",
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la peur des araignées ?",
+      "reponse": "L'arachnophobie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine du pad thaï ?",
+      "reponse": "La Thaïlande",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la personne qui dirige une équipe depuis le banc ?",
-      "reponse": "L'entraîneur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle activité d'été fait dormir sous une tente ?",
-      "reponse": "Le camping",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Sur quelle plateforme les jeunes jouent-ils à des millions de jeux créés par d'autres joueurs ?",
-      "reponse": "Roblox",
+      "categorie": "Québec",
+      "question": "Quel humoriste montréalais fait des spectacles bilingues ?",
+      "reponse": "Sugar Sammy",
       "niveau": 1,
       "ages": [
-        "enfants",
-        "ados"
+        "ados",
+        "adultes"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel objet les premiers explorateurs utilisaient-ils pour trouver le nord ?",
-      "reponse": "Une boussole",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent vivent les girafes en liberté ?",
-      "reponse": "L'Afrique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Le pluriel de bijou prend un S ou un X ?",
-      "reponse": "Un X",
+      "categorie": "Musique",
+      "question": "Combien de musiciens forment un trio ?",
+      "reponse": "Trois",
       "niveau": 1
     }
   ]
