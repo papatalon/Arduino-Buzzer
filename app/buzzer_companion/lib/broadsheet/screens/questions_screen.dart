@@ -62,7 +62,13 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   bool _dirty = false;
   // Gardée ici, et non dans la bibliothèque : refermer l'éditeur doit
   // ramener dans la collection d'où on venait, pas à la case départ.
-  _Selection _selection = const _Selection.grille();
+  // Arrivé depuis le lancement d'une partie, on ouvre DIRECTEMENT sur
+  // « Personnalisé » : c'est la seule provenance qu'on met encore en jeu
+  // fichier par fichier. Le catalogue se pioche par le tirage, pas en
+  // choisissant « Histoire 07 sur 11 » dans une grille de vingt tuiles.
+  late _Selection _selection = widget.pourLaPartie
+      ? const _Selection.de(kPersonnalise)
+      : const _Selection.grille();
 
   @override
   void initState() {
@@ -459,8 +465,9 @@ class _Library extends StatelessWidget {
           children: [
             Expanded(
               child: Text(
-                'Choisissez un questionnaire, puis « Utiliser pour la partie ». '
-                'Vous reviendrez ici automatiquement.',
+                'Choisissez un de vos questionnaires, puis « Utiliser pour la '
+                'partie ». Pour une manche tirée dans la banque, revenez à '
+                'Partie et utilisez « Questions au hasard ».',
                 style: BSType.body(size: 16, color: BSColors.accent900),
               ),
             ),
@@ -496,10 +503,12 @@ class _Library extends StatelessWidget {
       SizedBox(
         width: 820,
         child: Text(
-          'Le catalogue est publié en ligne et se consulte en entier, même sans '
-          'rien avoir téléchargé. Le nuage de chaque questionnaire le garde sur '
-          'ce poste, ou le retire. Ce que vous écrivez vous-même vit dans '
-          '« $kPersonnalise » et ne part jamais en ligne.',
+          'Le catalogue est la banque dans laquelle « Questions au hasard » '
+          'pioche pendant une partie. Il se consulte en entier sans rien avoir '
+          'téléchargé, et le nuage de chaque questionnaire le garde sur ce '
+          'poste pour jouer sans réseau. Ce que vous écrivez vous-même vit '
+          'dans « $kPersonnalise », ne part jamais en ligne, et reste le seul '
+          'questionnaire qu\'on met en jeu tel quel.',
           style: BSType.body(size: 17, color: BSColors.neutral700),
         ),
       ),
@@ -606,15 +615,20 @@ class _Library extends StatelessWidget {
       ..._bandeauPartie(),
       Row(
         children: [
-          TextButton(
-            onPressed: () => onSelect(const _Selection.grille()),
-            style: TextButton.styleFrom(
-              foregroundColor: BSColors.neutral700,
-              padding: const EdgeInsets.only(right: BSSpace.s2),
+          // Pas de retour aux collections quand on choisit pour une partie :
+          // la grille mène au catalogue, qui n'est plus une source de jeu.
+          // Le bandeau au-dessus offre déjà la seule sortie qui a du sens.
+          if (!pourLaPartie) ...[
+            TextButton(
+              onPressed: () => onSelect(const _Selection.grille()),
+              style: TextButton.styleFrom(
+                foregroundColor: BSColors.neutral700,
+                padding: const EdgeInsets.only(right: BSSpace.s2),
+              ),
+              child: const Text('‹ Collections'),
             ),
-            child: const Text('‹ Collections'),
-          ),
-          const SizedBox(width: BSSpace.s2),
+            const SizedBox(width: BSSpace.s2),
+          ],
           // Flexible : une collection peut avoir un nom long, et le titre ne
           // doit pas pousser les boutons hors écran.
           Flexible(

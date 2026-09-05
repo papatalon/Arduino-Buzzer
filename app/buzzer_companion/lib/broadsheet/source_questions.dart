@@ -5,17 +5,26 @@ import 'tokens.dart';
 
 // D'OU VIENNENT LES QUESTIONS D'UNE PARTIE.
 //
-// Deux sources, et le choix se pose de la meme facon partout : dans l'ecran
+// Trois sources, et le choix se pose de la meme facon partout : dans l'ecran
 // de lancement du moteur de jeu quand l'application mene, et dans le repli
 // « Partie » quand c'est le buzzer qui mene.
 //
-//   Un QUESTIONNAIRE de l'application : les questions s'affichent sur la
-//   console et sur l'ecran public.
+//   Un questionnaire PERSONNALISE : celui que l'operateur a ecrit lui-meme.
+//   C'est la seule chose qu'on choisit encore fichier par fichier.
+//
+//   Un TIRAGE : une manche composee sur place dans la banque, selon un
+//   perimetre, une tranche d'age et un niveau. Voir source_hasard.dart.
 //
 //   Un questionnaire LIBRE : l'animateur pose ses propres questions, a voix
 //   haute, et l'application ne fait que tenir les points. C'est le mode
-//   d'origine du buzzer, celui d'avant l'application, et il reste le plus
-//   souple pour une soiree improvisee.
+//   d'origine du buzzer, celui d'avant l'application.
+//
+// LE CATALOGUE N'EST PLUS UN MENU. Ses 283 questionnaires prefaits existaient
+// pour etre choisis un par un ; le tirage fait mieux, en composant une manche
+// selon la piece qu'on a devant soi. Ils restent la banque dans laquelle le
+// tirage pioche, et se consultent depuis l'ecran Questions, mais on ne les
+// met plus en jeu tels quels : choisir « Histoire 07 sur 11 » ne veut rien
+// dire pour personne.
 //
 // Choisir « libre » N'OUBLIE PAS le questionnaire deja choisi : on peut
 // glisser une manche improvisee entre deux manches d'un questionnaire sans
@@ -128,10 +137,11 @@ class SourceQuestionnaire extends StatelessWidget {
       choisi: !actif.libre && aUnQuestionnaire,
       titre: aUnQuestionnaire
           ? '« ${actif.title} », ${actif.total} questions'
-          : "Un questionnaire de l'application",
+          : 'Un questionnaire que vous avez écrit',
       detail: aUnQuestionnaire
           ? actif.origine
-          : "Les questions s'affichent sur la console et sur l'écran public.",
+          : 'Ceux de votre dossier « Personnalisé ». Pour une manche prise '
+              'dans la banque, utilisez le tirage ci-dessous.',
       // Sans questionnaire choisi, cliquer la LIGNE ne fait rien : elle
       // n'aurait rien à cocher. Elle menait à la bibliothèque, et changer
       // d'écran quand on croit cocher une option est déroutant. Seul le
@@ -140,7 +150,7 @@ class SourceQuestionnaire extends StatelessWidget {
       action: TextButton(
         onPressed: onChoisir,
         style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
-        child: Text(aUnQuestionnaire ? 'Changer' : 'Choisir un questionnaire'),
+        child: Text(aUnQuestionnaire ? 'Changer' : 'Choisir'),
       ),
     );
   }
