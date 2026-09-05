@@ -48,6 +48,9 @@ Repères, à mettre à jour après chaque lot :
 |---|---:|---:|---:|---:|---:|
 | 4 septembre 2026 | 53 | 258 | — | — | — |
 | 5 septembre 2026 | 54 | 215 | 0 | 14 | 0 |
+| 5 septembre 2026, musique par décennies (+57) | 54 | 215 | 0 | 14 | 0 |
+| 5 septembre 2026, musique par décennies, 2e passe (+82) | 54 | 216 | 0 | 14 | 0 |
+| 5 septembre 2026, musique 2010-2020 pour les enfants (+7, 4 recotées) | 54 | 216 | 0 | 14 | 0 |
 
 ## Ce qui n'est pas contrôlé
 
