@@ -196,6 +196,9 @@ Trois formes ont déjà mordu, à chercher activement :
    d'organisme. L'autoroute 720 est devenue la route 136 en 2021.
 3. **La date approchée.** Cartier atteint le golfe en 1534 et remonte le
    fleuve en 1535. « Environ » ne se joue pas au buzzer.
+4. **Le titre d'une œuvre, en version québécoise.** Un titre EST un fait, et
+   il se vérifie ici comme les autres, pas dans une passe de finition à la
+   fin. Voir l'étape 6 pour ce qu'il faut chercher.
 
 **Ce qui ne se vérifie pas ne s'écrit pas.** Une bonne question qu'on
 n'arrive pas à confirmer se jette ; il en reste des milliers d'autres.
@@ -205,11 +208,31 @@ demandent rien : « Que signifie magasiner ? » n'a pas besoin de source.
 
 ## 6. Adapter au Québec
 
-- **Les titres de films et d'émissions se vérifient en version québécoise.**
-  Le doublage québécois et celui de France diffèrent, et c'est le québécois
-  qui joue. Déjà dans la banque : **Les Bagnoles**, **Sens dessus dessous**,
-  **Trouver Doris**, **Là-haut**, **Les Incroyables**. Dans le doute,
-  chercher « titre québécois <film> ».
+### Le titre d'une œuvre, c'est celui qu'on crie ici
+
+**La réponse attendue est le nom que le joueur va dire dans le salon**, pas
+la traduction la plus correcte. Le doublage québécois et celui de France
+diffèrent, et c'est le québécois qui joue.
+
+Déjà dans la banque, tous vérifiés : *Cars* est **Les Bagnoles**,
+*Inside Out* est **Sens dessus dessous**, *Finding Dory* est **Trouver
+Doris**, *Up* est **Là-haut**, *The Incredibles* est **Les Incroyables**.
+
+- **Ça vaut pour tout ce qui porte un titre** : films, séries, dessins
+  animés, livres, jeux vidéo, chansons. Pas seulement le cinéma.
+- **Chercher `titre québécois <œuvre>`**, jamais se fier au titre français
+  qui vient en tête : c'est presque toujours celui de France.
+- **Souvent les deux titres sont identiques**, et il n'y a rien à faire.
+  C'est la vérification qui le dit, pas l'intuition.
+- **Parfois c'est le titre anglais qui est en usage ici.** Alors c'est lui
+  la réponse. « Le bon français » n'est pas le critère ; ce que la salle va
+  crier l'est.
+
+**Si DEUX noms sont réellement en usage au Québec, la question est
+ambiguë** : un joueur qui donne l'autre se fait refuser alors qu'il a
+raison. C'est exactement ce que compte le compteur « variantes de nom » de
+l'étape 7, et il ne doit pas augmenter. Deux sorties : verrouiller l'énoncé
+pour n'en rendre qu'un possible, ou changer de question.
 - **Le vocabulaire est d'ici.** Dîner le midi, souper le soir, magasiner,
   char, tuque, mitaines. Éviter les tournures de France même correctes.
 - **Les unités sont métriques**, la monnaie en dollars.
