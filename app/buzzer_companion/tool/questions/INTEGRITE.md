@@ -12,17 +12,34 @@ Le générateur refuse de produire le site si :
 - une question est posée deux fois, d'où qu'elle vienne ;
 - une ligne miroir ne redonne pas `Questions.cpp` au caractère près une fois
   ses accents retirés ;
-- une ligne n'a pas ses quatre champs, ou un niveau et des tranches valides.
+- une ligne n'a pas ses quatre champs, ou un niveau et des tranches valides ;
+- une thématique `@` porte un slug qui n'existe pas.
 
-Il affiche aussi, sans bloquer, deux comptes sur les versions servies :
+Il affiche aussi, sans bloquer, quatre comptes sur les versions servies :
 
-- les réponses déjà contenues dans leur énoncé ;
-- les réponses partagées par plusieurs questions.
+| compteur | portée | ce qu'il doit faire |
+|---|---|---|
+| réponses déjà dans leur question | toute la banque | monter peu, et chaque hausse s'explique |
+| réponses partagées par plusieurs questions | toute la banque | idem |
+| quasi-doublons | même catégorie seulement | **rester à 0**, aucun cas légitime |
+| variantes de nom | toute la banque | **ne pas augmenter** |
 
-Ces deux-là ne bloquent pas parce que les cas légitimes existent : « la
+Les deux premiers ne bloquent pas parce que les cas légitimes existent : « la
 vitamine C » quand la question dit vitamine, « Quatre » qui répond à vingt
-questions sans rapport. **Une hausse du compte veut dire qu'un lot est entré
-sans contrôle.** Repères au 4 septembre 2026 : 53 et 258.
+questions sans rapport. **Une hausse non expliquée veut dire qu'un lot est
+entré sans contrôle.**
+
+Le quasi-doublon ne regarde qu'à l'intérieur d'une catégorie : une redite
+entre Québec et Bouffe lui échappe, et seule la recherche préalable
+(`--chercher`) la voit. La procédure complète est dans le skill
+`ecrire-des-questions`.
+
+Repères, à mettre à jour après chaque lot :
+
+| date | échos | partagées | quasi-doublons | variantes |
+|---|---:|---:|---:|---:|
+| 4 septembre 2026 | 53 | 258 | — | — |
+| 5 septembre 2026 | 54 | 215 | 0 | 14 |
 
 ## Ce qui n'est pas contrôlé
 

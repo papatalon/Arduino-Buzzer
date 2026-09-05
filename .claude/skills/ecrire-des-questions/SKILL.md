@@ -1,17 +1,21 @@
 ---
 name: ecrire-des-questions
-description: Écrire de nouvelles questions pour la banque du Buzzer, sans doublon, avec les faits vérifiés à l'extérieur et l'adaptation québécoise. À utiliser quand on demande d'ajouter, d'écrire, de créer ou de compléter des questions, un lot de questions, une catégorie ou une thématique du jeu-questionnaire.
+description: Écrire de nouvelles questions pour la banque du Buzzer, sans doublon, avec chaque fait vérifié à l'extérieur et consigné, et la réponse telle qu'on la dit au Québec. À utiliser quand on demande d'ajouter, d'écrire, de créer ou de compléter des questions, un lot de questions, une catégorie ou une thématique du jeu-questionnaire.
 ---
 
 # Écrire des questions
 
-La banque compte 3684 questions relues une par une. Un lot écrit vite y
-laisse des traces qui ne se voient qu'en soirée, devant du monde. Cette
-procédure existe pour que ça n'arrive pas.
+La banque compte 3684 questions relues une par une. Une seule affirmation
+fausse fait perdre au jeu son autorité : quelqu'un dans le salon va le
+savoir, et à partir de là il doute de tout le reste. Cette procédure existe
+pour qu'aucun lot n'entre sans avoir passé les mêmes barrières que les 3684.
+
+**Une question qui n'a pas franchi toutes les étapes n'entre pas.** Il n'y a
+pas de « presque ».
 
 ## Pourquoi c'est fragile, avec les preuves
 
-Quatre choses ratent en silence. Chacune a déjà mordu ici.
+Cinq choses ratent en silence. Chacune a déjà mordu ici.
 
 **1. Ma mémoire EST la source des erreurs.** Se relire ne détecte rien,
 parce que le souvenir que je crois sûr est justement ce qui est faux. Sur
@@ -19,22 +23,48 @@ parce que le souvenir que je crois sûr est justement ce qui est faux. Sur
 treize faits faux. Passe-Montagne décrit comme barbu, Bluey dite beagle, la
 mésange dite bleue, la mouffette qui « fait le mort » (c'est l'opossum),
 BIXI qui compterait cinq lettres, Cartier qui remonterait le fleuve en 1534.
+**Tous étaient des attributs** collés à une entité réelle. L'entité
+existait ; le détail était inventé.
 
 **2. Écrire pour atteindre un nombre fabrique des doublons.** Chaque fois
 qu'un lot a été écrit pour compléter une catégorie à 200, il a produit des
-quasi-doublons : 45 variantes de nom en un seul commit. **Le nombre demandé
-est un plafond, jamais une cible.** Rendre 22 bonnes questions sur 30
-demandées est un succès ; en rendre 30 dont 8 redites est un échec qui se
-paiera en soirée.
+redites : 45 variantes de nom en un seul commit. **Le nombre demandé est un
+plafond, jamais une cible.** Rendre 22 bonnes questions sur 30 demandées est
+un succès ; en rendre 30 dont 8 redites est un échec qui se paiera en soirée.
 
 **3. Le doublon ne se voit pas en se relisant.** Deux questions au texte
-différent qui attendent la même réponse passent la relecture sans broncher
-et se posent deux fois dans la même manche. Seul le générateur les voit.
+différent qui attendent la même réponse passent la relecture et se posent
+deux fois dans la même manche. Et le compteur qui les attrape **ne regarde
+qu'à l'intérieur d'une catégorie** : « Quel plat québécois combine frites,
+fromage et sauce ? » dans Québec et « Quel plat de frites disparaît sous le
+fromage et la sauce brune ? » dans Bouffe donnent tous deux *La poutine*, et
+il ne le voit pas. Seule la recherche préalable le voit.
 
 **4. Un titre de France passe pour du français.** *Cars* s'appelle **Les
 Bagnoles** ici, *Inside Out* **Sens dessus dessous**, *Finding Dory*
-**Trouver Doris**. Écrire le titre français de France dans un jeu québécois,
-c'est poser une question dont personne dans le salon ne connaît la réponse.
+**Trouver Doris**. Le titre français qui vient en tête est presque toujours
+celui de France.
+
+**5. Ce qui est vrai aujourd'hui.** Une autoroute renumérotée, un commerce
+fermé, un record battu. L'autoroute 720 est devenue la route 136 en 2021 et
+la question l'affirmait encore.
+
+## Ce qu'est une bonne question
+
+Le jeu se joue dans un salon, à l'oral, entre 7 et 77 ans. Le test : **au
+moins une personne dans la pièce sait, et les autres se disent « ah oui ! »
+en entendant la réponse.** Pas « qui aurait pu savoir ça », pas « c'est
+évident ».
+
+Ce qui n'en est pas, et qu'on appelle ici de la scrap :
+
+- Le détail que personne n'a jamais retenu (le deuxième prénom, l'année
+  exacte d'un fait mineur, le nombre d'épisodes).
+- La question dont la forme donne la réponse (« Quel insecte à miel fabrique
+  le miel ? »).
+- La reformulation d'une question qui existe déjà, sous d'autres mots.
+- La devinette à réponse ouverte, qu'on ne peut juger ni au son ni au sens.
+- La question écrite pour arriver au compte.
 
 ## Où ça vit
 
@@ -46,8 +76,8 @@ a deux blocs séparés par `=== hors firmware ===` :
   source du firmware au caractère près, et s'arrête sinon. **On n'y ajoute
   jamais rien.** Une question du firmware se corrige avec un `>` en dessous,
   jamais en réécrivant sa ligne.
-- **Après le séparateur, le bloc LIBRE.** C'est là que vont les nouvelles
-  questions.
+- **Après le séparateur, le bloc LIBRE.** Les nouvelles questions vont
+  **à la fin** de ce bloc.
 
 Format d'une ligne, des deux côtés :
 
@@ -58,54 +88,57 @@ Question|Réponse|niveau|tranches
 @ noel creatures       ses thématiques
 ```
 
-`niveau` vaut 1 (facile), 2 (moyen) ou 3 (difficile), **lu à l'intérieur de
-la tranche** : un enfant niveau 3 existe, un aîné niveau 1 aussi.
-`tranches` est une liste parmi `enfants ados adultes aines`, séparée par des
-espaces. Les quatre veulent dire « tout le monde », et c'est le cas courant.
+### Niveau, tranches, thématiques : trois jugements, tous écrits
 
-Les douze slugs de thématique : `noel regne-animal espace corps-humain
-super-heros creatures sports-hiver regne-vegetal mer transports disney
-nostalgie`. Un slug inconnu arrête la génération.
+**Rien n'est déduit.** Les thématiques l'ont été par mots-clés, et « neige »
+rangeait Blanche-Neige dans Sports d'hiver. Chaque question porte les trois,
+écrits par quelqu'un qui a décidé.
 
-**Rien n'est déduit.** Le niveau, les tranches et les thématiques s'écrivent
-sur chaque question. Les thématiques l'ont été par mots-clés, et « neige »
-rangeait Blanche-Neige dans Sports d'hiver.
+- **`tranches`** dit **de quel monde vient la question**, pas qui peut y
+  répondre. Minecraft vient du monde des enfants et des ados ; Steinberg du
+  monde des aînés ; la capitale du Québec, de tout le monde. Liste parmi
+  `enfants ados adultes aines`, séparée par des espaces. **Les quatre est le
+  cas courant**, et on ne marque que les exceptions.
+- **`niveau`** dit la difficulté **à l'intérieur de ce monde** : 1 si
+  quelqu'un qui vit dans ce monde répond sans effort, 2 pour la culture
+  générale ordinaire, 3 pour le connaisseur. Les deux axes sont
+  indépendants : « Quel petit âne de dessin animé français est très
+  curieux ? → Trotro » est coté **enfants, niveau 3** — leur monde à eux,
+  et pourtant peu le savent ; « La Vie en rose → Édith Piaf » est coté
+  **adultes et aînés, niveau 1**.
+
+Ces quatre exemples viennent de la banque, relus avec `--chercher`. Le
+précédent brouillon de ce skill en citait un de mémoire, et il était faux.
+- **`@ slug`** pour chaque thématique dont la question relève. Les douze :
+  `noel regne-animal espace corps-humain super-heros creatures sports-hiver
+  regne-vegetal mer transports disney nostalgie`. Un slug inconnu arrête la
+  génération. Le critère est le SUJET de la question, pas un mot qu'elle
+  contient : une question sur Blanche-Neige n'est pas un sport d'hiver.
 
 ### La question s'écrit en français soigné
 
-Elle est lue à voix haute et s'affiche sur l'écran public : elle se compose
-comme une phrase de journal, pas comme une note.
-
-Les conventions ci-dessous ne sont pas des préférences : elles ont été
-relevées dans les 3684 questions de la banque, et les chiffres sont là pour
+Elle est lue à voix haute et s'affiche sur l'écran public. Les conventions
+ci-dessous ont été **relevées dans la banque**, chiffres à l'appui, pour
 qu'on puisse les revérifier au lieu de me croire.
 
-- **Tous les accents, majuscules comprises.** `À`, `Ê`, `Ç`. Le seul endroit
-  du projet qui s'en passe est le firmware, et le bloc miroir le reflète
-  déjà : le générateur vérifie que la version accentuée redonne la source
-  une fois dépouillée, et s'arrête sinon.
+- **Tous les accents, majuscules comprises.** `À`, `Ê`, `Ç`.
 - **Espace ORDINAIRE avant le `?`**, pas insécable. `Quelle est la capitale
-  du Québec ?` — 3681 questions sur 3684, zéro insécable. Un `?` collé au
-  mot n'existe nulle part.
-- **Une majuscule au début, un `?` à la fin.** Trois exceptions dans toute
-  la banque, toutes voulues : `Citez un palindrome de cinq lettres qui
-  flotte.`, `Complétez : ...`, et une citation dont le `?` est dans les
-  guillemets.
+  du Québec ?` : 3681 questions sur 3684, zéro insécable, zéro `?` collé.
+- **Une majuscule au début, un `?` à la fin.** Trois exceptions voulues dans
+  toute la banque : `Citez un palindrome de cinq lettres qui flotte.`,
+  `Complétez : ...`, et une citation dont le `?` est dans les guillemets.
 - **La réponse ne prend pas de point final.** `La poutine`, pas `La
-  poutine.` La seule qui en porte est `E.T.`, où le point fait partie du nom.
+  poutine.` Seule exception : `E.T.`, où le point fait partie du nom.
 - **La réponse porte son article** quand on le dirait à l'oral : `Le
   castor`, `Les Patriotes`, `Six`.
-- **Guillemets français** « comme ceci », 41 fois dans la banque. Aucun
-  guillemet droit.
-- **Apostrophe droite `'`**, jamais la typographique `’`. 954 contre 0. Le
-  bloc miroir l'exige — l'invariant des accents ne convertit pas `’` en `'`
-  et s'arrêterait — et le bloc libre suit, pour que les deux se cherchent
-  pareil.
-- **Pas de barre verticale dans le texte** : `|` sépare les champs et
-  couperait la ligne en deux.
+- **Guillemets français** « comme ceci ». 41 dans la banque, aucun droit.
+- **Apostrophe droite `'`**, jamais `’`. 954 contre 0. L'invariant des
+  accents du bloc miroir ne convertit pas `’` et s'arrêterait ; le bloc libre
+  suit, pour que les deux se cherchent pareil.
+- **Pas de `|` dans le texte** : c'est le séparateur de champs.
 
 Le doute se lève en regardant les voisines : `--chercher` sort les questions
-existantes telles qu'elles sont écrites, et elles ont toutes été relues.
+existantes telles qu'elles sont écrites.
 
 ## 1. Cadrer, et le dire
 
@@ -123,88 +156,137 @@ après.
 cd app/buzzer_companion && dart run tool/generate_questionnaires.dart
 ```
 
-La dernière ligne du contrôle donne quatre nombres. Les noter :
+La dernière ligne du contrôle donne quatre nombres. Les noter tels quels :
 
 ```
 Contrôle : N réponses déjà dans leur question, N réponses partagées par
 plusieurs questions, N quasi-doublons, N variantes de nom.
 ```
 
-Repère au 5 septembre 2026 : **54, 215, 0, 14**. Ce sont eux qui serviront
-de preuve à l'étape 7. Sans le relevé d'avant, l'après ne prouve rien.
+Ce relevé est la moitié de la preuve de l'étape 8. Les repères historiques
+sont dans `tool/questions/INTEGRITE.md`, pas ici : ils changent à chaque lot.
 
 ## 3. Reconnaître le terrain
 
-**Le geste qui évite le plus de dégâts.** Avant d'écrire une question,
-chercher son sujet dans la banque :
+**Le geste qui évite le plus de dégâts**, et le seul qui voie les redites
+entre catégories. Avant d'écrire une question, chercher son sujet :
 
 ```bash
 cd app/buzzer_companion && dart run tool/generate_questionnaires.dart --chercher "coupe stanley"
 ```
 
-Les mots cherchés se tapent comme on veut : `quebecoise` trouve
-`québécoise`. C'est la RECHERCHE qui ignore les accents et la casse, pas les
-questions, qui ressortent telles qu'elles sont écrites. Chaque résultat
-donne la catégorie, le niveau, les tranches et les thématiques.
+Les mots se tapent comme on veut : `quebecoise` trouve `québécoise`. C'est la
+RECHERCHE qui ignore accents et casse ; les questions ressortent telles
+qu'écrites, avec catégorie, niveau, tranches et thématiques.
 
-Chercher **au moins deux mots par question** : la réponse, et le nom
-principal de l'énoncé. « rondelle » ne trouve pas « puck », « érable » ne
-trouve pas « acériculteur ». Une recherche qui ne rend rien ne prouve pas
-que le terrain est libre, elle prouve que ce mot-là n'y est pas.
+Trois recherches par question, pas une :
 
-Sur un gros lot, commencer par balayer la catégorie entière : la revue
-publiée (`site/revue.html`) montre les 3684 questions par catégorie sur une
-page, filtrables.
+1. **La réponse.** Si elle existe déjà, la nouvelle question la partagera,
+   et il faut que ce soit voulu.
+2. **Le sujet de l'énoncé**, par son nom principal. « rondelle » ne trouve
+   pas « puck », « érable » ne trouve pas « acériculteur » : chercher aussi
+   le synonyme.
+3. **La forme de la réponse.** Si la banque dit `Le pont Jacques-Cartier`,
+   ne pas écrire `Jacques-Cartier` : deux noms pour la même chose font
+   refuser un joueur qui a raison, et c'est un compteur qui monte.
+
+Une recherche vide ne prouve pas que le terrain est libre. Elle prouve que
+ce mot-là n'y est pas.
+
+Sur un gros lot, **lire d'abord le fichier de la catégorie** en entier,
+`tool/questions/<categorie>.txt`, les deux blocs. C'est la source, à jour,
+retouches comprises.
 
 **Attention au premier résultat.** Le préfixe `Running build hooks...` n'a
 pas de saut de ligne et colle la première ligne de sortie. Ne jamais filtrer
 avec `grep -v "^Running"` : ça mange un résultat.
 
-## 4. Écrire, par lots courts
+## 4. Rédiger le lot, dans la réponse et pas dans le fichier
 
-Dix à quinze questions à la fois, pas davantage. La qualité tombe dans la
-longueur, et c'est en fin de lot que naissent les redites.
+Dix à quinze questions à la fois. La qualité tombe dans la longueur, et c'est
+en fin de lot que naissent les redites.
+
+**Rien ne s'écrit dans le fichier avant la fin de l'étape 6.** On rédige
+ici, on vérifie, on adapte, et seulement ensuite on écrit ce qui a survécu.
 
 Les règles de contenu, toutes tirées de remarques du client :
 
-- **La réponse doit s'entendre.** Le jeu se joue à l'oral : l'animateur lit,
-  le joueur crie. « Pluriel de bijou ? Bijoux » ne se juge pas à l'oreille.
-  Une question d'orthographe se reformule (« prend un S ou un X ? »).
+- **La réponse doit s'entendre.** L'animateur lit, le joueur crie. « Pluriel
+  de bijou ? Bijoux » ne se juge pas à l'oreille. Une question d'orthographe
+  se reformule (« prend un S ou un X ? »).
 - **Une seule réponse possible.** « Qui a cofondé Microsoft ? » accepte
   Gates ou Allen : verrouiller l'énoncé plutôt que d'accepter les deux.
-- **La réponse n'est pas dans la question.** « Quel insecte à miel fabrique
-  le miel ? » se répond sans savoir.
+- **La réponse n'est pas dans la question**, ni en entier ni par sa racine.
 - **Rien de périssable.** Un record qu'on va battre, un joueur qui change
-  d'équipe, « l'actuel premier ministre », « le plus récent film de ». La
-  question doit être aussi vraie dans cinq ans.
+  d'équipe, « l'actuel », « le plus récent ». La question doit être aussi
+  vraie dans cinq ans, sans retouche.
 - **Pas de politique américaine** ni rien de proche : présidents,
   Maison-Blanche, drapeau, droits civiques, OTAN, 11 septembre. La culture
-  américaine reste entière (cinéma, musique, sport).
+  américaine reste entière : cinéma, musique, sport.
 - **Viser 7 à 77 ans.** Culture générale de jeu de société.
 
-## 5. Vérifier les faits, à l'extérieur
+Pour chaque question rédigée, décider et noter niveau, tranches et
+thématiques **maintenant**, pendant qu'on sait pourquoi on l'a écrite.
 
-**Ce qui porte un nom propre, une date, un record ou une mesure passe par
-WebSearch. Sans exception, et jamais par ma mémoire.**
+## 5. Vérifier chaque fait, à l'extérieur, et le consigner
 
-Trois formes ont déjà mordu, à chercher activement :
+**Ce qui porte un nom propre, une date, un nombre, un record, un superlatif
+ou un attribut passe par WebSearch. Sans exception, et jamais par ma
+mémoire.** Ma mémoire est ce qui a produit les treize faits faux.
 
-1. **Le détail attribué à une entité réelle.** La couleur d'un oiseau, la
-   race d'un chien de dessin animé, la barbe d'un personnage. Ne jamais
-   décrire de mémoire : demander plutôt un nom, une relation, un usage.
+### Ce que « vérifié » veut dire
+
+- **La source sait.** Site officiel, encyclopédie, fiche de l'œuvre, organe
+  de presse établi, texte de loi ou de règlement. Pas un forum, pas un
+  extrait de recherche, pas une page qui cite « certains disent ».
+- **La page est ouverte**, pas seulement l'extrait du moteur de recherche.
+  Les extraits tronquent et mélangent. Pour tout ce qui compte, `WebFetch`.
+- **C'est l'AFFIRMATION qu'on vérifie, pas l'entité.** Trouver que
+  Passe-Montagne existe ne vérifie pas qu'il est barbu. Trouver que Bluey
+  est une chienne ne vérifie pas sa race. La question affirme un attribut ;
+  c'est cet attribut-là qu'il faut lire noir sur blanc.
+- **Les superlatifs exigent une source qui dise exactement ça.** « Le plus
+  grand », « le premier », « le seul », « le plus long ». Ce sont les
+  affirmations les plus souvent fausses de la banque, et les plus
+  contestées en soirée.
+- **Deux sources qui se contredisent : la question se jette.** On ne
+  tranche pas, on ne prend pas la majorité. Il en reste des milliers.
+
+### Les formes qui ont déjà mordu, à chercher activement
+
+1. **L'attribut collé à une entité réelle.** La couleur d'un oiseau, la
+   race d'un chien de dessin animé, la barbe d'un personnage. Quand on ne
+   peut pas le lire noir sur blanc, changer la question : demander un nom,
+   une relation, un usage, jamais une description.
 2. **La donnée périmée.** Adresse, nom de commerce, numéro de route, nom
-   d'organisme. L'autoroute 720 est devenue la route 136 en 2021.
-3. **La date approchée.** Cartier atteint le golfe en 1534 et remonte le
-   fleuve en 1535. « Environ » ne se joue pas au buzzer.
-4. **Le titre d'une œuvre, en version québécoise.** Un titre EST un fait, et
-   il se vérifie ici comme les autres, pas dans une passe de finition à la
-   fin. Voir l'étape 6 pour ce qu'il faut chercher.
+   d'organisme, composition d'une équipe. Vérifier que c'est encore vrai, et
+   se demander si ça le sera dans cinq ans.
+3. **La date ou le nombre approché.** Cartier atteint le golfe en 1534 et
+   remonte le fleuve en 1535. « Environ » ne se joue pas au buzzer.
+4. **Le titre d'une œuvre, en version québécoise.** Un titre EST un fait.
+   Voir l'étape 6 pour ce qu'il faut chercher.
 
-**Ce qui ne se vérifie pas ne s'écrit pas.** Une bonne question qu'on
-n'arrive pas à confirmer se jette ; il en reste des milliers d'autres.
+**Ce qui ne se vérifie pas ne s'écrit pas.**
 
-Le vocabulaire, les définitions et les usages ne peuvent pas être faux et ne
-demandent rien : « Que signifie magasiner ? » n'a pas besoin de source.
+Le vocabulaire courant et les usages (« Que signifie magasiner ? ») ne
+demandent pas de source externe, mais la réponse doit être **le** sens
+courant et un seul. Une définition à deux lectures est une ambiguïté, pas un
+fait.
+
+### Le journal de vérification
+
+**Chaque fait vérifié laisse une ligne**, dans la réponse au client :
+
+```
+Q : Quel renne du père Noël a le nez rouge ? → Rudolphe
+    ✔ attribut « nez rouge » — <source, page ouverte>
+```
+
+Une question à trois faits a trois lignes. Une question sans fait vérifiable
+le dit : `— vocabulaire, aucune source requise`.
+
+Sans journal, la vérification n'a pas eu lieu. « J'ai vérifié » sans source
+nommée ne vaut rien, pour le client comme pour celui qui relira dans un an.
 
 ## 6. Adapter au Québec
 
@@ -219,27 +301,44 @@ Déjà dans la banque, tous vérifiés : *Cars* est **Les Bagnoles**,
 Doris**, *Up* est **Là-haut**, *The Incredibles* est **Les Incroyables**.
 
 - **Ça vaut pour tout ce qui porte un titre** : films, séries, dessins
-  animés, livres, jeux vidéo, chansons. Pas seulement le cinéma.
+  animés, livres, jeux vidéo, chansons.
 - **Chercher `titre québécois <œuvre>`**, jamais se fier au titre français
   qui vient en tête : c'est presque toujours celui de France.
 - **Souvent les deux titres sont identiques**, et il n'y a rien à faire.
   C'est la vérification qui le dit, pas l'intuition.
 - **Parfois c'est le titre anglais qui est en usage ici.** Alors c'est lui
-  la réponse. « Le bon français » n'est pas le critère ; ce que la salle va
-  crier l'est.
+  la réponse. « Le bon français » n'est pas le critère ; ce que la salle
+  crie l'est.
 
 **Si DEUX noms sont réellement en usage au Québec, la question est
 ambiguë** : un joueur qui donne l'autre se fait refuser alors qu'il a
-raison. C'est exactement ce que compte le compteur « variantes de nom » de
-l'étape 7, et il ne doit pas augmenter. Deux sorties : verrouiller l'énoncé
-pour n'en rendre qu'un possible, ou changer de question.
+raison. C'est ce que compte le compteur « variantes de nom », qui ne doit
+pas augmenter. Deux sorties : verrouiller l'énoncé pour n'en rendre qu'un
+possible, ou changer de question.
+
+### Le reste
+
 - **Le vocabulaire est d'ici.** Dîner le midi, souper le soir, magasiner,
   char, tuque, mitaines. Éviter les tournures de France même correctes.
 - **Les unités sont métriques**, la monnaie en dollars.
-- **Les distances et les repères partent d'ici.** « À quelle distance de
-  Montréal » plutôt que de Paris.
+- **Les repères partent d'ici.** « À quelle distance de Montréal » plutôt
+  que de Paris.
 
-## 7. Repasser les compteurs, et comparer
+## 7. Écrire dans le fichier
+
+Seulement ce qui a survécu aux étapes 4, 5 et 6. À la fin du bloc libre du
+bon fichier, une ligne par question, ses `@` en dessous :
+
+```
+Quel renne du père Noël a le nez rouge ?|Rudolphe|1|enfants ados adultes aines
+@ noel
+```
+
+Relire le fichier après écriture : un `|` de trop ou une tranche mal
+orthographiée arrête le générateur avec la ligne fautive, et c'est mieux
+maintenant que dans le commit.
+
+## 8. Repasser les compteurs, et comparer
 
 ```bash
 cd app/buzzer_companion && dart run tool/generate_questionnaires.dart
@@ -247,42 +346,50 @@ cd app/buzzer_companion && dart run tool/generate_questionnaires.dart
 
 **Quatre barrières. Aucune ne se franchit en expliquant.**
 
-| compteur | règle |
-|---|---|
-| le générateur | doit sortir en **code 0**. Un doublon exact ou un miroir cassé l'arrête. |
-| **quasi-doublons** | doit rester à **0**. Il n'a aucun cas légitime : quand il en sort un, une des deux lignes est de trop. Le générateur les affiche en détail. |
-| **variantes de nom** | ne doit **pas augmenter**. Deux réponses qui désignent la même chose font refuser un joueur qui a raison. |
-| échos et réponses partagées | peuvent monter un peu. Pour **chaque** unité de hausse, nommer la question responsable et dire pourquoi elle est légitime. Une hausse non expliquée veut dire qu'un lot est entré sans contrôle. |
+| compteur | portée | règle |
+|---|---|---|
+| le générateur | tout | doit sortir en **code 0**. Un doublon exact ou un miroir cassé l'arrête. |
+| **quasi-doublons** | même catégorie | doit rester à **0**. Aucun cas légitime : quand il en sort un, une des deux lignes est de trop. Le générateur les affiche en détail. |
+| **variantes de nom** | toute la banque | ne doit **pas augmenter**. Deux réponses pour la même chose font refuser un joueur qui a raison. |
+| échos et réponses partagées | toute la banque | peuvent monter un peu. Pour **chaque** unité de hausse, nommer la question responsable et dire pourquoi c'est légitime (« Quatre » répond à vingt questions sans rapport). Une hausse non expliquée veut dire qu'un lot est entré sans contrôle. |
 
-Sur les échos, un second avis :
+Un second avis sur les échos, avec une règle un peu plus large :
 
 ```bash
 node app/buzzer_companion/tool/antiscrap.js
 ```
 
-Il compte la même chose que le premier compteur du générateur, avec une
-règle un peu plus large : **55 contre 54** au 5 septembre 2026. L'écart est
-normal ; c'est le mouvement des deux qui compte, pas leur égalité.
+Il ne donne pas le même nombre que le générateur, et c'est normal. C'est le
+mouvement des deux qui compte.
 
 Si une barrière tombe, **retirer des lignes**. Ne jamais garder une question
 en se disant que le compteur exagère.
 
-## 8. Fermer
+## 9. Fermer
 
 ```bash
 cd app/buzzer_companion && flutter analyze && flutter test
 ```
 
-Puis, si le lot touche à ce que suit `tool/questions/INTEGRITE.md` (les
-repères de compteurs, l'état des chantiers), le mettre à jour.
+Puis mettre à jour les repères dans `tool/questions/INTEGRITE.md` avec les
+quatre compteurs d'après et la date.
 
-Le commit dit **combien de questions demandées, combien écrites, et
-pourquoi l'écart**. Un lot rendu court est une information, pas une excuse.
+Le commit et la réponse au client disent, dans cet ordre :
+
+1. combien de questions demandées, combien écrites, et pourquoi l'écart ;
+2. les quatre compteurs avant et après, et l'explication de chaque hausse ;
+3. le journal de vérification, une ligne par fait.
+
+Un lot rendu court est une information, pas une excuse. Un lot rendu sans
+journal n'est pas rendu.
 
 ## Ce qu'on ne fait jamais
 
 - Toucher `Questions.cpp` ou une ligne du bloc miroir.
-- Écrire une question sans niveau ni tranches explicites.
-- Compléter un lot avec du remplissage pour atteindre le nombre demandé.
-- Affirmer un fait vérifiable sans l'avoir vérifié à l'extérieur.
-- Annoncer un lot conforme sans montrer les quatre compteurs avant et après.
+- Écrire dans le fichier une question qui n'a pas encore été vérifiée.
+- Affirmer un fait vérifiable sans avoir ouvert une source qui le dit.
+- Décrire une entité réelle de mémoire : sa couleur, sa race, son aspect.
+- Trancher entre deux sources qui se contredisent.
+- Écrire une question sans niveau, sans tranches ou sans ses thématiques.
+- Compléter un lot pour atteindre le nombre demandé.
+- Annoncer un lot conforme sans les compteurs avant et après, ni le journal.
