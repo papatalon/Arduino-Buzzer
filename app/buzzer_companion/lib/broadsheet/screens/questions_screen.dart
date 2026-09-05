@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../protocol.dart';
 import '../../questionnaires/active_questionnaire.dart';
-import '../../questionnaires/catalogue.dart';
+import '../../questionnaires/banque.dart';
 import '../../questionnaires/questionnaire.dart';
 import '../../questionnaires/questionnaire_store.dart';
 import '../tokens.dart';
@@ -10,35 +10,34 @@ import '../tokens.dart';
 // Écran "Questions" : la bibliothèque de questionnaires, et l'atelier pour
 // en écrire.
 //
-// DEUX PROVENANCES, et c'est ce qui structure tout l'écran.
+// UN SEUL TYPE DE FICHIER, depuis qu'il n'y a plus de questionnaires
+// prédécoupés. Les 283 fichiers publiés en ligne ont laissé la place à une
+// banque unique dans laquelle l'écran Partie compose une manche au moment de
+// jouer, selon la catégorie, la tranche d'âge et le niveau demandés. Un
+// fichier figé ne servait plus qu'à répéter, en moins souple, un tirage qui
+// sait déjà le faire.
 //
-// Le CATALOGUE est publié en ligne (buzzer.sd6tools.net) et se consulte en
-// entier sans rien avoir téléchargé. Il est en lecture seule : personne ne
-// modifie sur son poste un fichier que tout le monde reçoit. Le nuage de
-// chaque carte garde une copie locale, ou la retire.
-//
-// « Personnalisé » est le dossier de l'opérateur, sur son disque, modifiable
-// et jamais publié. C'est le seul endroit où il peut perdre du travail.
-//
-// Le classement se fait donc par provenance et non par métadonnée : un
-// questionnaire personnel n'a pas de collection à lui, l'éditeur n'en demande
-// plus.
+// Restent donc les questionnaires que l'opérateur écrit lui-même : sur son
+// disque, modifiables, jamais publiés, et le seul endroit où il peut perdre
+// du travail. La banque, elle, se lit ici mais ne se joue pas : le fureteur
+// est en lecture seule et n'a aucun bouton pour mettre une liste en jeu.
 //
 // Deux moments successifs, pas deux volets : la bibliothèque prend tout
 // l'écran pour choisir, l'éditeur prend tout l'écran pour écrire. Garder la
 // liste visible pendant la saisie volait sa largeur à la seule chose qu'on
 // fait à ce moment-là.
 class QuestionsScreen extends StatefulWidget {
-  const QuestionsScreen(
-      {super.key,
-      required this.store,
-      required this.catalogue,
-      required this.actif,
-      required this.pourLaPartie,
-      required this.onRetourPartie});
+  const QuestionsScreen({
+    super.key,
+    required this.store,
+    required this.banque,
+    required this.actif,
+    required this.pourLaPartie,
+    required this.onRetourPartie,
+  });
 
   final QuestionnaireStore store;
-  final CatalogueStore catalogue;
+  final BanqueStore banque;
   final ActiveQuestionnaire actif;
   // Vrai quand on est arrive ici DEPUIS le lancement d'une partie. L'ecran
   // dit alors pourquoi, et comment revenir.
@@ -56,25 +55,11 @@ class QuestionsScreen extends StatefulWidget {
 class _QuestionsScreenState extends State<QuestionsScreen> {
   Questionnaire? _open;
   String? _openPath;
-  // Renseigné quand ce qui est ouvert vient du catalogue : l'éditeur passe
-  // alors en consultation, et « Dupliquer » remplace « Enregistrer ».
-  CatalogueEntry? _openEntry;
   bool _dirty = false;
-  // Gardée ici, et non dans la bibliothèque : refermer l'éditeur doit
-  // ramener dans la collection d'où on venait, pas à la case départ.
-  // Arrivé depuis le lancement d'une partie, on ouvre DIRECTEMENT sur
-  // « Personnalisé » : c'est la seule provenance qu'on met encore en jeu
-  // fichier par fichier. Le catalogue se pioche par le tirage, pas en
-  // choisissant « Histoire 07 sur 11 » dans une grille de vingt tuiles.
-  late _Selection _selection = widget.pourLaPartie
-      ? const _Selection.de(kPersonnalise)
-      : const _Selection.grille();
-
   @override
   void initState() {
     super.initState();
     widget.store.loadPreferences();
-    widget.catalogue.init();
   }
 
   void _touch() => setState(() => _dirty = true);
@@ -83,7 +68,6 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     setState(() {
       _open = Questionnaire(questions: [QuizQuestion()]);
       _openPath = null;
-      _openEntry = null;
       _dirty = false;
     });
   }
@@ -95,49 +79,8 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     setState(() {
       _open = loaded;
       _openPath = file.path;
-      _openEntry = null;
       _dirty = false;
     });
-  }
-
-  Future<void> _openCatalogueEntry(CatalogueEntry entry) async {
-    if (!await _confirmDiscard()) return;
-    final loaded = await widget.catalogue.load(entry);
-    if (!mounted) return;
-    if (loaded == null) {
-      _tell(widget.catalogue.lastError ??
-          "« ${entry.title} » n'a pas pu être lu.");
-      return;
-    }
-    setState(() {
-      _open = loaded;
-      _openPath = null;
-      _openEntry = entry;
-      _dirty = false;
-    });
-  }
-
-  // Repart d'un questionnaire du catalogue pour en faire un à soi. Sans ça,
-  // adapter une manche existante obligerait à la retaper.
-  Future<void> _duplicateOpen() async {
-    final open = _open;
-    if (open == null) return;
-    final path = await widget.store.duplicate(open);
-    if (!mounted) return;
-    if (path == null) {
-      _tell(widget.store.lastError ?? 'Duplication impossible.');
-      return;
-    }
-    final copie = await widget.store.load(path);
-    if (!mounted || copie == null) return;
-    setState(() {
-      _open = copie;
-      _openPath = path;
-      _openEntry = null;
-      _dirty = false;
-      _selection = const _Selection.de(kPersonnalise);
-    });
-    _tell('Copie créée dans $kPersonnalise. Elle est modifiable.');
   }
 
   // Met le questionnaire ouvert en jeu. À partir de là, c'est l'application
@@ -149,15 +92,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
       _tell("Ce questionnaire n'a aucune question à poser.");
       return;
     }
-    final entry = _openEntry;
-    widget.actif.use(
-      open.copy(),
-      origine: entry == null
-          ? kPersonnalise
-          : entry.collection.isEmpty
-              ? 'Catalogue'
-              : 'Catalogue · ${entry.collection}',
-    );
+    widget.actif.use(open.copy(), origine: kPersonnalise);
     // Une copie, pas l'objet ouvert : sinon continuer à écrire dans
     // l'éditeur modifierait la partie en cours sous les pieds de l'animateur.
     //
@@ -216,7 +151,10 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
       builder: (context) => AlertDialog(
         backgroundColor: BSColors.bg,
         shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-        title: Text('Abandonner les modifications ?', style: BSType.buzzerNameConsole(size: 22)),
+        title: Text(
+          'Abandonner les modifications ?',
+          style: BSType.buzzerNameConsole(size: 22),
+        ),
         content: Text(
           'Le questionnaire ouvert a été modifié et son enregistrement est en attente.',
           style: BSType.body(size: 16, color: BSColors.neutral700),
@@ -232,7 +170,9 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             style: FilledButton.styleFrom(
               backgroundColor: BSColors.accent2,
               foregroundColor: BSColors.bg,
-              shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.zero,
+              ),
             ),
             child: const Text('Abandonner'),
           ),
@@ -248,7 +188,10 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
         backgroundColor: BSColors.text,
         behavior: SnackBarBehavior.floating,
         shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-        content: Text(message, style: BSType.body(size: 15, color: BSColors.bg)),
+        content: Text(
+          message,
+          style: BSType.body(size: 15, color: BSColors.bg),
+        ),
       ),
     );
   }
@@ -260,7 +203,6 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     setState(() {
       _open = null;
       _openPath = null;
-      _openEntry = null;
       _dirty = false;
     });
   }
@@ -273,23 +215,19 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   @override
   Widget build(BuildContext context) {
     return ListenableBuilder(
-      // Les deux sources sont écoutées ensemble : un nuage cliqué change le
-      // catalogue, un enregistrement change le dossier, et la bibliothèque
-      // doit se redessiner dans les deux cas.
-      listenable: Listenable.merge([widget.store, widget.catalogue]),
+      // Les deux sources sont écoutées ensemble : la banque arrive du réseau,
+      // un enregistrement change le dossier, et l'écran doit se redessiner
+      // dans les deux cas.
+      listenable: Listenable.merge([widget.store, widget.banque]),
       builder: (context, _) {
         if (_open == null) {
           return _Library(
             store: widget.store,
+            banque: widget.banque,
             pourLaPartie: widget.pourLaPartie,
             onRetourPartie: widget.onRetourPartie,
-            catalogue: widget.catalogue,
-            selection: _selection,
-            onSelect: (s) => setState(() => _selection = s),
             onNew: _newQuestionnaire,
             onOpen: _openFile,
-            onOpenEntry: _openCatalogueEntry,
-
             onImport: () async {
               final path = await widget.store.import();
               if (!mounted) return;
@@ -299,21 +237,15 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             },
           );
         }
-        final entry = _openEntry;
         return _Editor(
           questionnaire: _open!,
           dirty: _dirty,
           saved: _openPath != null,
-          // Lecture seule : ce qui vient du catalogue appartient à tout le
-          // monde, le modifier sur un poste n'aurait aucun sens.
-          readOnly: entry != null,
-          origine: entry?.collection,
           pourLaPartie: widget.pourLaPartie,
           onBack: _close,
           onChanged: _touch,
           onSave: _save,
           onRename: _saveAsNewName,
-          onDuplicate: _duplicateOpen,
           onUseForGame: _useForGame,
           onExport: () => widget.store.export(_open!),
           onDelete: _openPath == null ? null : _deleteOpen,
@@ -330,7 +262,10 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
       builder: (context) => AlertDialog(
         backgroundColor: BSColors.bg,
         shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-        title: Text('Supprimer ce questionnaire ?', style: BSType.buzzerNameConsole(size: 22)),
+        title: Text(
+          'Supprimer ce questionnaire ?',
+          style: BSType.buzzerNameConsole(size: 22),
+        ),
         content: Text(
           'Le fichier sera effacé du dossier. Cette action ne se défait pas.',
           style: BSType.body(size: 16, color: BSColors.neutral700),
@@ -346,7 +281,9 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             style: FilledButton.styleFrom(
               backgroundColor: BSColors.accent2,
               foregroundColor: BSColors.bg,
-              shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.zero,
+              ),
             ),
             child: const Text('Supprimer'),
           ),
@@ -359,7 +296,6 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     setState(() {
       _open = null;
       _openPath = null;
-      _openEntry = null;
       _dirty = false;
     });
   }
@@ -367,69 +303,40 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
 
 // --------------------------------------------------------------- Bibliothèque
 
-// Où en est la bibliothèque : la grille des collections, une collection
-// précise, ou tout d'un coup.
+// L'écran a maintenant DEUX PARTIES, et non plus deux provenances de
+// questionnaires.
 //
-// Un seul objet plutôt que deux champs (« quelle collection » et « est-ce
-// qu'on montre tout »), qui pourraient se contredire.
-class _Selection {
-  const _Selection.grille()
-      : collection = null,
-        toutes = false;
-  const _Selection.tout()
-      : collection = null,
-        toutes = true;
-  const _Selection.de(String this.collection) : toutes = false;
-
-  final String? collection;
-  final bool toutes;
-
-  bool get estGrille => collection == null && !toutes;
-  bool get estPersonnalise => collection == kPersonnalise;
-}
-
-// L'heure seule quand c'est aujourd'hui, la date en plus sinon : une copie
-// hors ligne peut remonter à des semaines, et « lue à 10:39 » laisserait
-// croire à ce matin.
-String _quand(DateTime? moment) {
-  if (moment == null) return 'à une date inconnue';
-  String deux(int n) => n.toString().padLeft(2, '0');
-  final heure = 'à ${deux(moment.hour)}:${deux(moment.minute)}';
-  final maintenant = DateTime.now();
-  final memeJour = moment.year == maintenant.year &&
-      moment.month == maintenant.month &&
-      moment.day == maintenant.day;
-  return memeJour ? heure : 'le ${deux(moment.day)}/${deux(moment.month)} $heure';
-}
-
+// « Personnalisé » est le dossier de l'opérateur : ses questionnaires à lui,
+// modifiables, jamais publiés, et les seuls qu'on mette en jeu tels quels.
+// C'est aussi le seul endroit où il peut perdre du travail, donc il passe en
+// premier.
+//
+// LA BANQUE se consulte, ne se joue pas fichier par fichier. Elle a remplacé
+// les 283 questionnaires prédécoupés : on compose sa manche au moment de
+// jouer, dans l'écran Partie. Ce qu'on vient chercher ici, c'est vérifier une
+// question, voir ce qu'une catégorie contient avant une soirée, ou juste
+// lire. Le fureteur est donc en lecture seule et n'a aucun bouton « jouer » :
+// il n'aurait aucun sens de mettre en jeu une liste filtrée depuis une
+// bibliothèque alors que le tirage fait exactement cela, en mieux.
 class _Library extends StatelessWidget {
   const _Library({
     required this.store,
+    required this.banque,
     required this.pourLaPartie,
     required this.onRetourPartie,
-    required this.catalogue,
-    required this.selection,
-    required this.onSelect,
     required this.onNew,
     required this.onOpen,
-    required this.onOpenEntry,
     required this.onImport,
   });
 
   final QuestionnaireStore store;
+  final BanqueStore banque;
   final bool pourLaPartie;
   final VoidCallback onRetourPartie;
-  final CatalogueStore catalogue;
-  final _Selection selection;
-  final ValueChanged<_Selection> onSelect;
   final VoidCallback onNew;
   final ValueChanged<QuestionnaireFile> onOpen;
-  final ValueChanged<CatalogueEntry> onOpenEntry;
   final VoidCallback onImport;
 
-  // Deux niveaux : on choisit une collection, PUIS un questionnaire. Cent
-  // vingt-cinq cartes d'un seul tenant, c'est un mur où plus rien ne se
-  // trouve ; une vingtaine de tuiles, ça se lit d'un coup d'œil.
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -438,13 +345,45 @@ class _Library extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
-          children: selection.estGrille ? _grille() : _liste(),
+          children: [
+            ..._bandeauPartie(),
+            Row(
+              children: [
+                Text('Questions', style: BSType.buzzerNameConsole(size: 26)),
+                const SizedBox(width: BSSpace.s4),
+                _boutonPlein('Nouveau', onNew),
+                const SizedBox(width: BSSpace.s2),
+                _boutonContour('Importer', onImport),
+              ],
+            ),
+            const SizedBox(height: BSSpace.s2),
+            SizedBox(
+              width: 820,
+              child: Text(
+                'Ce que vous écrivez vous-même vit dans « $kPersonnalise », ne '
+                'part jamais en ligne, et se met en jeu tel quel. La banque, '
+                'elle, se consulte ici et se joue depuis l\'écran Partie : '
+                '« Questions au hasard » y compose une manche selon la '
+                'catégorie, la tranche d\'âge et le niveau que vous choisissez.',
+                style: BSType.body(size: 17, color: BSColors.neutral700),
+              ),
+            ),
+            const SizedBox(height: BSSpace.s6),
+            ..._mesQuestionnaires(),
+            // Le fureteur ne s'affiche pas quand on vient chercher un
+            // questionnaire pour une partie : on est là pour choisir un
+            // fichier, pas pour lire la banque.
+            if (!pourLaPartie) ...[
+              const SizedBox(height: BSSpace.s8),
+              _FureteurBanque(banque: banque),
+            ],
+            const SizedBox(height: BSSpace.s8),
+            ..._reglages(),
+          ],
         ),
       ),
     );
   }
-
-  // --- Premier niveau : les collections
 
   // Bandeau montré quand on est arrivé ici depuis le lancement d'une partie.
   // Il répond aux deux questions qu'on se pose alors : pourquoi suis-je ici,
@@ -456,7 +395,12 @@ class _Library extends StatelessWidget {
     return [
       Container(
         margin: const EdgeInsets.only(bottom: BSSpace.s4),
-        padding: const EdgeInsets.fromLTRB(BSSpace.s3, BSSpace.s2, BSSpace.s2, BSSpace.s2),
+        padding: const EdgeInsets.fromLTRB(
+          BSSpace.s3,
+          BSSpace.s2,
+          BSSpace.s2,
+          BSSpace.s2,
+        ),
         decoration: const BoxDecoration(
           color: BSColors.accent100,
           border: Border(top: BorderSide(color: BSColors.accent, width: 3)),
@@ -483,237 +427,45 @@ class _Library extends StatelessWidget {
     ];
   }
 
-  List<Widget> _grille() {
-    final entrees = catalogue.catalogue.entries;
-    final questionsCatalogue =
-        entrees.fold<int>(0, (somme, e) => somme + e.questionCount);
-
+  List<Widget> _mesQuestionnaires() {
+    final fichiers = store.files;
     return [
-      ..._bandeauPartie(),
       Row(
         children: [
-          Text('Questionnaires', style: BSType.buzzerNameConsole(size: 26)),
-          const SizedBox(width: BSSpace.s4),
-          _boutonPlein('Nouveau', onNew),
-          const SizedBox(width: BSSpace.s2),
-          _boutonContour('Importer', onImport),
-        ],
-      ),
-      const SizedBox(height: BSSpace.s2),
-      SizedBox(
-        width: 820,
-        child: Text(
-          'Le catalogue est la banque dans laquelle « Questions au hasard » '
-          'pioche pendant une partie. Il se consulte en entier sans rien avoir '
-          'téléchargé, et le nuage de chaque questionnaire le garde sur ce '
-          'poste pour jouer sans réseau. Ce que vous écrivez vous-même vit '
-          'dans « $kPersonnalise », ne part jamais en ligne, et reste le seul '
-          'questionnaire qu\'on met en jeu tel quel.',
-          style: BSType.body(size: 17, color: BSColors.neutral700),
-        ),
-      ),
-      const SizedBox(height: BSSpace.s6),
-      Row(
-        children: [
-          Text('COLLECTIONS', style: BSType.sectionKicker()),
+          Text(kPersonnalise.toUpperCase(), style: BSType.sectionKicker()),
           const SizedBox(width: BSSpace.s3),
-          // D'où vient cette liste, dit en clair. « Rien ne signale un
-          // problème » est une preuve trop faible : sans cette ligne, la
-          // seule façon de savoir que le catalogue vient du réseau était de
-          // remarquer l'ABSENCE d'un avertissement.
-          if (catalogue.loading)
-            Text('Lecture du catalogue...',
-                style: BSType.body(size: 14, color: BSColors.neutral600))
-          // Trois provenances, pas deux. La copie livrée avec l'application a
-          // l'âge de l'installation, ce qui n'est pas la même chose qu'un
-          // cache vieux de trois jours : dire « hors ligne » pour les deux
-          // laisserait croire qu'un rafraîchissement récent a eu lieu.
-          else if (catalogue.depuisLeBuild)
-            Text(
-              'Hors ligne. Questions livrées avec l\'application, '
-              'à rafraîchir dès que le réseau revient',
-              style: BSType.body(size: 14, color: BSColors.accent2_800),
-            )
-          else if (catalogue.horsLigne)
-            Text(
-              'Hors ligne. Copie du poste, lue ${_quand(catalogue.lastFetch)}',
-              style: BSType.body(size: 14, color: BSColors.accent2_800),
-            )
-          else if (entrees.isNotEmpty)
-            Text(
-              'Lu en ligne ${_quand(catalogue.lastFetch)} · '
-              '${entrees.length} questionnaires, ${catalogue.localCount} sur ce poste',
-              style: BSType.body(size: 14, color: BSColors.accent700),
-            ),
-          const SizedBox(width: BSSpace.s2),
-          TextButton(
-            onPressed: catalogue.loading ? null : catalogue.refresh,
-            style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
-            child: const Text('Rafraîchir'),
+          Text(
+            fichiers.isEmpty
+                ? 'aucun pour le moment'
+                : '${fichiers.length} questionnaire${fichiers.length > 1 ? 's' : ''}',
+            style: BSType.body(size: 14, color: BSColors.neutral600),
           ),
         ],
       ),
-      const SizedBox(height: BSSpace.s2),
-      Wrap(
-        spacing: BSSpace.s4,
-        runSpacing: BSSpace.s4,
-        children: [
-          // La tuile qui ne filtre rien, en tête : c'est le repli quand on ne
-          // sait pas dans quelle collection chercher.
-          _CollectionCard(
-            titre: 'Tous les questionnaires',
-            emoji: '📚',
-            fichiers: entrees.length + store.files.length,
-            questions: questionsCatalogue + store.questionCount,
-            vedette: true,
-            onTap: () => onSelect(const _Selection.tout()),
-          ),
-          // Ce que l'opérateur a écrit passe avant le catalogue : c'est le
-          // seul endroit où il peut perdre quelque chose.
-          _CollectionCard(
-            titre: kPersonnalise,
-            emoji: kEmojiPersonnalise,
-            fichiers: store.files.length,
-            questions: store.questionCount,
-            vedette: false,
-            onTap: () => onSelect(const _Selection.de(kPersonnalise)),
-          ),
-          for (final collection in catalogue.catalogue.collections)
-            _CollectionCard(
-              titre: collection.name,
-              emoji: collection.emoji,
-              fichiers: collection.fileCount,
-              questions: collection.questionCount,
-              vedette: false,
-              nuage: _NuageCollection(catalogue: catalogue, collection: collection),
-              onTap: () => onSelect(_Selection.de(collection.name)),
-            ),
-        ],
-      ),
-      if (catalogue.catalogue.isEmpty && !catalogue.loading) ...[
-        const SizedBox(height: BSSpace.s4),
+      const SizedBox(height: BSSpace.s3),
+      if (fichiers.isEmpty)
         SizedBox(
           width: 820,
           child: Text(
-            catalogue.lastError ??
-                "Aucun catalogue pour le moment. Vérifiez l'adresse ci-dessous.",
-            style: BSType.body(size: 15, color: BSColors.accent2_800),
+            'Rien ici encore. « Nouveau » ouvre un questionnaire vide, '
+            '« Importer » reprend un fichier reçu de quelqu\'un d\'autre.',
+            style: BSType.body(size: 16, color: BSColors.neutral600),
           ),
-        ),
-      ],
-      const SizedBox(height: BSSpace.s8),
-      ..._reglages(),
-    ];
-  }
-
-  // --- Second niveau : les questionnaires
-
-  List<Widget> _liste() {
-    final titre = selection.toutes ? 'Tous les questionnaires' : selection.collection!;
-
-    // Les deux provenances ne donnent pas la même carte : l'une se modifie et
-    // s'efface, l'autre se télécharge et se consulte.
-    final perso = (selection.toutes || selection.estPersonnalise) ? store.files : const [];
-    final entrees = selection.estPersonnalise
-        ? const <CatalogueEntry>[]
-        : selection.toutes
-            ? catalogue.catalogue.entries
-            : catalogue.entriesOf(titre);
-    final total = perso.length + entrees.length;
-
-    return [
-      ..._bandeauPartie(),
-      Row(
-        children: [
-          // Pas de retour aux collections quand on choisit pour une partie :
-          // la grille mène au catalogue, qui n'est plus une source de jeu.
-          // Le bandeau au-dessus offre déjà la seule sortie qui a du sens.
-          if (!pourLaPartie) ...[
-            TextButton(
-              onPressed: () => onSelect(const _Selection.grille()),
-              style: TextButton.styleFrom(
-                foregroundColor: BSColors.neutral700,
-                padding: const EdgeInsets.only(right: BSSpace.s2),
-              ),
-              child: const Text('‹ Collections'),
-            ),
-            const SizedBox(width: BSSpace.s2),
-          ],
-          // Flexible : une collection peut avoir un nom long, et le titre ne
-          // doit pas pousser les boutons hors écran.
-          Flexible(
-            child: Text(
-              titre,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: BSType.buzzerNameConsole(size: 26),
-            ),
-          ),
-          const SizedBox(width: BSSpace.s4),
-          _boutonPlein('Nouveau', onNew),
-          const SizedBox(width: BSSpace.s2),
-          _boutonContour('Importer', onImport),
-        ],
-      ),
-      const SizedBox(height: BSSpace.s1),
-      Row(
-        children: [
-          Text(
-            '$total questionnaire${total > 1 ? 's' : ''}',
-            style: BSType.body(size: 15, color: BSColors.accent700),
-          ),
-          if (entrees.isNotEmpty) ...[
-            const SizedBox(width: BSSpace.s3),
-            Text(
-              '${entrees.where((e) => catalogue.estLocal(e.id)).length} sur ce poste',
-              style: BSType.body(size: 15, color: BSColors.neutral600),
-            ),
-          ],
-        ],
-      ),
-      const SizedBox(height: BSSpace.s6),
-      if (total == 0)
-        Text(
-          selection.estPersonnalise
-              ? "Aucun questionnaire à vous pour le moment. « Nouveau » en crée un, "
-                  "et un questionnaire du catalogue peut être dupliqué ici."
-              : 'Cette collection est vide.',
-          style: BSType.body(size: 17, color: BSColors.neutral600),
         )
       else
         Wrap(
-          spacing: BSSpace.s4,
-          runSpacing: BSSpace.s4,
+          spacing: BSSpace.s6,
+          runSpacing: BSSpace.s6,
           children: [
-            for (final file in perso)
-              _QuestionnaireCard(file: file, onTap: () => onOpen(file)),
-            for (final entry in entrees)
-              _CatalogueCard(
-                entry: entry,
-                catalogue: catalogue,
-                onTap: () => onOpenEntry(entry),
-              ),
+            for (final f in fichiers)
+              _QuestionnaireCard(file: f, onTap: () => onOpen(f)),
           ],
         ),
-      if (catalogue.lastError != null) ...[
-        const SizedBox(height: BSSpace.s4),
-        SizedBox(
-          width: 900,
-          child: Text(catalogue.lastError!,
-              style: BSType.body(size: 15, color: BSColors.accent2_800)),
-        ),
-      ],
     ];
   }
 
-  // --- Les réglages, montrés au premier niveau seulement : au second, on est
-  // venu chercher un questionnaire, pas régler un chemin.
-
   List<Widget> _reglages() {
     return [
-      // Pas de bloc « catalogue en ligne » : son adresse est interne, il n'y
-      // a rien à régler. Quand quelque chose échoue, le message d'erreur la
-      // nomme, et c'est le seul moment où elle compte.
       Container(height: 1, color: BSColors.divider),
       const SizedBox(height: BSSpace.s4),
       Text('MES QUESTIONNAIRES', style: BSType.sectionKicker()),
@@ -741,7 +493,9 @@ class _Library extends StatelessWidget {
             if (store.usesCustomFolder)
               TextButton(
                 onPressed: store.useDefaultFolder,
-                style: TextButton.styleFrom(foregroundColor: BSColors.neutral600),
+                style: TextButton.styleFrom(
+                  foregroundColor: BSColors.neutral600,
+                ),
                 child: const Text('Par défaut'),
               ),
           ],
@@ -761,17 +515,18 @@ class _Library extends StatelessWidget {
   }
 
   static Widget _boutonPlein(String texte, VoidCallback onTap) => FilledButton(
-        onPressed: onTap,
-        style: FilledButton.styleFrom(
-          backgroundColor: BSColors.accent,
-          foregroundColor: BSColors.bg,
-          shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-        ),
-        child: Text(texte),
-      );
+    onPressed: onTap,
+    style: FilledButton.styleFrom(
+      backgroundColor: BSColors.accent,
+      foregroundColor: BSColors.bg,
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+    ),
+    child: Text(texte),
+  );
 
-  static Widget _boutonContour(String texte, VoidCallback onTap) => OutlinedButton(
+  static Widget _boutonContour(String texte, VoidCallback onTap) =>
+      OutlinedButton(
         onPressed: onTap,
         style: OutlinedButton.styleFrom(
           foregroundColor: BSColors.text,
@@ -783,296 +538,431 @@ class _Library extends StatelessWidget {
       );
 }
 
-// Une tuile de collection. Même grammaire que les cartes de questionnaire, en
-// filet plus épais : c'est le niveau au-dessus.
-class _CollectionCard extends StatelessWidget {
-  const _CollectionCard({
-    required this.titre,
-    required this.emoji,
-    required this.fichiers,
-    required this.questions,
-    required this.vedette,
-    required this.onTap,
-    this.nuage,
-  });
+// ---------------------------------------------------------- Fureteur de banque
 
-  final String titre;
-  final String emoji;
-  final int fichiers;
-  final int questions;
-  // La tuile « Tous les questionnaires » : même forme, couleur d'accent, pour
-  // qu'elle se distingue des collections sans être un autre objet.
-  final bool vedette;
-  // Absent pour « Tous » et « Personnalisé », qui ne se synchronisent pas.
-  final Widget? nuage;
-  final VoidCallback onTap;
+// LIRE LA BANQUE, sans la jouer.
+//
+// Trois usages, et un seul écran suffit pour les trois : vérifier une
+// question dont on doute, voir ce qu'une catégorie contient avant une soirée,
+// et compter ce qu'un filtre laisse. Les mêmes critères que le tirage, dans
+// le même ordre, pour que ce qu'on lit ici corresponde à ce qu'on jouera.
+//
+// LES RÉPONSES SONT VISIBLES. C'est une bibliothèque, pas une partie : les
+// cacher obligerait à cliquer 3684 fois pour vérifier une seule chose.
+//
+// LA LISTE EST PLAFONNÉE. Afficher 3684 lignes d'un coup fige la fenêtre
+// plusieurs secondes pour un résultat que personne ne lit jusqu'au bout ; le
+// compte total reste annoncé, et affiner le filtre est de toute façon le
+// geste utile.
+class _FureteurBanque extends StatefulWidget {
+  const _FureteurBanque({required this.banque});
+
+  final BanqueStore banque;
+
+  @override
+  State<_FureteurBanque> createState() => _FureteurBanqueState();
+}
+
+class _FureteurBanqueState extends State<_FureteurBanque> {
+  static const _plafond = 60;
+
+  final Set<String> _categories = {};
+  final Set<String> _themes = {};
+  final Set<Tranche> _tranches = {};
+  final Set<int> _niveaux = {};
+  String _recherche = '';
+
+  // Sans accents et sans casse : on tape « quebec » et on trouve « Québec ».
+  static String _plat(String s) => s
+      .toLowerCase()
+      .replaceAll(RegExp('[àâä]'), 'a')
+      .replaceAll(RegExp('[éèêë]'), 'e')
+      .replaceAll(RegExp('[îï]'), 'i')
+      .replaceAll(RegExp('[ôö]'), 'o')
+      .replaceAll(RegExp('[ùûü]'), 'u')
+      .replaceAll('ç', 'c');
+
+  bool _retenue(QuizQuestion q) {
+    if (_categories.isNotEmpty || _themes.isNotEmpty) {
+      final parCategorie = _categories.contains(q.category);
+      final parTheme = q.themes.any(_themes.contains);
+      if (!parCategorie && !parTheme) return false;
+    }
+    if (_niveaux.isNotEmpty &&
+        q.niveau != null &&
+        !_niveaux.contains(q.niveau)) {
+      return false;
+    }
+    if (_tranches.isNotEmpty &&
+        q.ages.isNotEmpty &&
+        q.ages.intersection(_tranches).isEmpty) {
+      return false;
+    }
+    if (_recherche.isNotEmpty) {
+      final texte = _plat('${q.question} ${q.answer}');
+      if (!texte.contains(_plat(_recherche))) return false;
+    }
+    return true;
+  }
 
   @override
   Widget build(BuildContext context) {
-    final couleur = vedette ? BSColors.accent : BSColors.text;
-    final card = Container(
-      width: 260,
+    final b = widget.banque;
+    final trouvees = b.banque.questions.where(_retenue).toList();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Row(
+          children: [
+            Text('LA BANQUE', style: BSType.sectionKicker()),
+            const SizedBox(width: BSSpace.s3),
+            // D'où vient cette liste, dit en clair. « Rien ne signale un
+            // problème » est une preuve trop faible : sans cette ligne, la
+            // seule façon de savoir que la banque vient du réseau était de
+            // remarquer l'ABSENCE d'un avertissement.
+            if (b.loading)
+              Text(
+                'Lecture de la banque...',
+                style: BSType.body(size: 14, color: BSColors.neutral600),
+              )
+            else if (b.depuisLeBuild)
+              Text(
+                "Hors ligne. Questions livrées avec l'application, "
+                'à rafraîchir dès que le réseau revient',
+                style: BSType.body(size: 14, color: BSColors.accent2_800),
+              )
+            else if (b.horsLigne)
+              Text(
+                'Hors ligne. Copie du poste, lue ${_quand(b.lastFetch)}',
+                style: BSType.body(size: 14, color: BSColors.accent2_800),
+              )
+            else if (b.total > 0)
+              Text(
+                'Lue en ligne ${_quand(b.lastFetch)} · ${b.total} questions',
+                style: BSType.body(size: 14, color: BSColors.accent700),
+              ),
+            const SizedBox(width: BSSpace.s2),
+            TextButton(
+              onPressed: b.loading ? null : b.refresh,
+              style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
+              child: const Text('Rafraîchir'),
+            ),
+          ],
+        ),
+        const SizedBox(height: BSSpace.s3),
+        if (b.banque.isEmpty)
+          SizedBox(
+            width: 820,
+            child: Text(
+              b.lastError ?? 'Aucune question pour le moment.',
+              style: BSType.body(size: 15, color: BSColors.accent2_800),
+            ),
+          )
+        else ...[
+          _FiltreBanque(
+            titre: 'Dans quoi',
+            vide: _categories.isEmpty && _themes.isEmpty,
+            quandVide: 'toute la banque',
+            options: [
+              for (final f in b.banque.categories)
+                _OptionFiltre(
+                  label: '${f.emoji} ${f.nom}'.trim(),
+                  coche: _categories.contains(f.nom),
+                  onTap: () => setState(
+                    () => _categories.contains(f.nom)
+                        ? _categories.remove(f.nom)
+                        : _categories.add(f.nom),
+                  ),
+                ),
+              for (final f in b.banque.themes)
+                _OptionFiltre(
+                  label: '${f.emoji} ${f.nom}'.trim(),
+                  coche: _themes.contains(f.nom),
+                  traversant: true,
+                  onTap: () => setState(
+                    () => _themes.contains(f.nom)
+                        ? _themes.remove(f.nom)
+                        : _themes.add(f.nom),
+                  ),
+                ),
+            ],
+          ),
+          const SizedBox(height: BSSpace.s2),
+          _FiltreBanque(
+            titre: 'Pour qui',
+            vide: _tranches.isEmpty,
+            quandVide: 'tout le monde',
+            options: [
+              for (final t in Tranche.values)
+                _OptionFiltre(
+                  label: kNomsTranches[t]!,
+                  coche: _tranches.contains(t),
+                  onTap: () => setState(
+                    () => _tranches.contains(t)
+                        ? _tranches.remove(t)
+                        : _tranches.add(t),
+                  ),
+                ),
+            ],
+          ),
+          const SizedBox(height: BSSpace.s2),
+          _FiltreBanque(
+            titre: 'Difficulté',
+            vide: _niveaux.isEmpty,
+            quandVide: 'tous les niveaux',
+            options: [
+              for (final n in kNomsNiveaux.keys)
+                _OptionFiltre(
+                  label: kNomsNiveaux[n]!,
+                  coche: _niveaux.contains(n),
+                  onTap: () => setState(
+                    () => _niveaux.contains(n)
+                        ? _niveaux.remove(n)
+                        : _niveaux.add(n),
+                  ),
+                ),
+            ],
+          ),
+          const SizedBox(height: BSSpace.s3),
+          Row(
+            children: [
+              SizedBox(
+                width: 84,
+                child: Text(
+                  'Contient',
+                  style: BSType.body(size: 14, color: BSColors.neutral600),
+                ),
+              ),
+              SizedBox(
+                width: 320,
+                child: TextField(
+                  onChanged: (v) => setState(() => _recherche = v.trim()),
+                  style: BSType.body(size: 15, color: BSColors.text),
+                  decoration: InputDecoration(
+                    isDense: true,
+                    hintText: 'un mot de la question ou de la réponse',
+                    hintStyle: BSType.body(
+                      size: 14,
+                      color: BSColors.neutral500,
+                    ),
+                    border: const OutlineInputBorder(
+                      borderRadius: BorderRadius.zero,
+                      borderSide: BorderSide(color: BSColors.divider),
+                    ),
+                    enabledBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.zero,
+                      borderSide: BorderSide(color: BSColors.divider),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(width: BSSpace.s3),
+              Text(
+                '${trouvees.length} question${trouvees.length > 1 ? 's' : ''}',
+                style: BSType.body(
+                  size: 15,
+                  color: BSColors.text,
+                ).copyWith(fontWeight: FontWeight.w600),
+              ),
+            ],
+          ),
+          const SizedBox(height: BSSpace.s4),
+          if (trouvees.isEmpty)
+            Text(
+              'Aucune question ne répond à ces critères.',
+              style: BSType.body(size: 15, color: BSColors.neutral600),
+            )
+          else ...[
+            for (final q in trouvees.take(_plafond)) _LigneBanque(q),
+            if (trouvees.length > _plafond) ...[
+              const SizedBox(height: BSSpace.s2),
+              Text(
+                'et ${trouvees.length - _plafond} autres. Affinez les critères '
+                'pour les voir.',
+                style: BSType.body(
+                  size: 14,
+                  color: BSColors.neutral600,
+                ).copyWith(fontStyle: FontStyle.italic),
+              ),
+            ],
+          ],
+        ],
+      ],
+    );
+  }
+}
+
+// Une question de la banque, en lecture. L'énoncé et la réponse d'abord,
+// parce que c'est ce qu'on vient vérifier ; le classement en petit à côté,
+// parce qu'on le consulte plus rarement.
+class _LigneBanque extends StatelessWidget {
+  const _LigneBanque(this.q);
+
+  final QuizQuestion q;
+
+  @override
+  Widget build(BuildContext context) {
+    final marques = [
+      q.category,
+      if (q.niveau != null) kNomsNiveaux[q.niveau]!,
+      for (final t in Tranche.values)
+        if (q.ages.contains(t)) kNomsTranches[t]!,
+      ...q.themes,
+    ];
+    return Container(
+      width: 900,
+      margin: const EdgeInsets.only(bottom: BSSpace.s3),
       padding: const EdgeInsets.only(top: BSSpace.s2),
-      decoration: BoxDecoration(
-        border: Border(top: BorderSide(color: couleur, width: 4)),
+      decoration: const BoxDecoration(
+        border: Border(top: BorderSide(color: BSColors.divider)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Sur sa propre ligne, pas devant le titre : les noms de collection
-          // vont sur deux lignes, et un emoji collé au début du texte pousse
-          // le retour à la ligne à un endroit différent pour chaque tuile.
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(emoji, style: const TextStyle(fontSize: 26, height: 1.2)),
-              const Spacer(),
-              ?nuage,
-            ],
+          SelectableText(
+            q.question,
+            style: BSType.body(size: 16, color: BSColors.text),
           ),
-          const SizedBox(height: BSSpace.s1),
-          Text(
-            titre,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: BSType.buzzerNameConsole(size: 22, color: couleur),
+          const SizedBox(height: 2),
+          SelectableText(
+            q.answer,
+            style: BSType.body(
+              size: 16,
+              color: BSColors.accent700,
+            ).copyWith(fontWeight: FontWeight.w600),
           ),
-          const SizedBox(height: BSSpace.s1),
+          const SizedBox(height: 2),
           Text(
-            '$fichiers questionnaire${fichiers > 1 ? 's' : ''}',
-            style: BSType.body(size: 15, color: BSColors.accent700),
-          ),
-          Text(
-            '$questions question${questions > 1 ? 's' : ''}',
+            marques.join(' · '),
             style: BSType.body(size: 13, color: BSColors.neutral600),
           ),
         ],
       ),
     );
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      child: GestureDetector(onTap: onTap, child: card),
-    );
   }
 }
 
-// Une carte de questionnaire du catalogue. Le titre ouvre en consultation, le
-// nuage rapatrie ou retire. Deux zones cliquables distinctes sur la même
-// carte, donc le nuage arrête la propagation du geste.
-class _CatalogueCard extends StatelessWidget {
-  const _CatalogueCard({
-    required this.entry,
-    required this.catalogue,
+// Les mêmes pastilles que dans l'écran Partie, pour que le fureteur et le
+// tirage se lisent pareil. Dupliquées plutôt que partagées : les deux écrans
+// n'ont pas le même propriétaire, et un widget commun les aurait couplés pour
+// économiser trente lignes.
+class _OptionFiltre {
+  const _OptionFiltre({
+    required this.label,
+    required this.coche,
     required this.onTap,
+    this.traversant = false,
+  });
+  final String label;
+  final bool coche;
+  final VoidCallback onTap;
+  final bool traversant;
+}
+
+class _FiltreBanque extends StatelessWidget {
+  const _FiltreBanque({
+    required this.titre,
+    required this.options,
+    required this.vide,
+    required this.quandVide,
   });
 
-  final CatalogueEntry entry;
-  final CatalogueStore catalogue;
-  final VoidCallback onTap;
+  final String titre;
+  final List<_OptionFiltre> options;
+  final bool vide;
+  final String quandVide;
 
   @override
   Widget build(BuildContext context) {
-    final local = catalogue.estLocal(entry.id);
-    final perime = catalogue.estPerime(entry);
-
-    final card = Container(
-      width: 320,
-      padding: const EdgeInsets.only(top: BSSpace.s2),
-      decoration: BoxDecoration(
-        border: Border(
-          // Filet plein quand le questionnaire est là, en pointillé de gris
-          // quand il n'est qu'annoncé : l'état se voit sans lire le nuage.
-          top: BorderSide(color: local ? BSColors.text : BSColors.neutral400, width: 2),
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(top: 7),
+          child: SizedBox(
+            width: 84,
+            child: Text(
+              titre,
+              style: BSType.body(size: 14, color: BSColors.neutral600),
+            ),
+          ),
         ),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+        Expanded(
+          child: Wrap(
+            spacing: BSSpace.s2,
+            runSpacing: BSSpace.s2,
+            crossAxisAlignment: WrapCrossAlignment.center,
             children: [
-              Expanded(
-                child: Text(
-                  entry.title,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: BSType.buzzerNameConsole(
-                    size: 23,
-                    color: local ? BSColors.text : BSColors.neutral600,
+              for (final o in options)
+                InkWell(
+                  onTap: o.onTap,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 7,
+                    ),
+                    decoration: BoxDecoration(
+                      color: o.coche
+                          ? (o.traversant ? BSColors.accent2 : BSColors.accent)
+                          : Colors.transparent,
+                      border: Border.all(
+                        color: o.coche
+                            ? (o.traversant
+                                  ? BSColors.accent2
+                                  : BSColors.accent)
+                            : BSColors.divider,
+                        width: o.coche ? 2 : 1,
+                      ),
+                    ),
+                    child: Text(
+                      o.label,
+                      style:
+                          BSType.body(
+                            size: 14,
+                            color: o.coche ? BSColors.bg : BSColors.text,
+                          ).copyWith(
+                            fontWeight: o.coche
+                                ? FontWeight.w600
+                                : FontWeight.w400,
+                          ),
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(width: BSSpace.s2),
-              _NuageQuestionnaire(catalogue: catalogue, entry: entry),
+              if (vide)
+                Padding(
+                  padding: const EdgeInsets.only(left: BSSpace.s2, top: 7),
+                  child: Text(
+                    quandVide,
+                    style: BSType.body(
+                      size: 13,
+                      color: BSColors.neutral500,
+                    ).copyWith(fontStyle: FontStyle.italic),
+                  ),
+                ),
             ],
           ),
-          const SizedBox(height: BSSpace.s1),
-          Text(
-            _compteEtNiveau(entry.questionCount, entry.etiquetteNiveau),
-            style: BSType.body(
-              size: 15,
-              color: local ? BSColors.accent700 : BSColors.neutral600,
-            ),
-          ),
-          Text(
-            perime
-                ? 'Une version plus récente est en ligne'
-                : local
-                    ? 'Sur ce poste, en lecture seule'
-                    : 'En ligne, en lecture seule',
-            style: BSType.body(
-              size: 13,
-              color: perime ? BSColors.accent2_800 : BSColors.neutral600,
-            ),
-          ),
-        ],
-      ),
-    );
-
-    // Tout le catalogue se lit, rapatrié ou non : le nuage commande la copie
-    // hors ligne, pas le droit de lire. Une carte non locale se télécharge le
-    // temps de l'ouvrir et ne laisse rien derrière elle.
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      child: GestureDetector(onTap: onTap, child: card),
+        ),
+      ],
     );
   }
 }
 
-// Le nuage d'un questionnaire : un interrupteur. Un clic rapatrie, un clic
-// retire. Quatre états, parce que « en cours » et « périmé » ne peuvent pas
-// se confondre avec les deux autres sans mentir.
-class _NuageQuestionnaire extends StatelessWidget {
-  const _NuageQuestionnaire({required this.catalogue, required this.entry});
-
-  final CatalogueStore catalogue;
-  final CatalogueEntry entry;
-
-  @override
-  Widget build(BuildContext context) {
-    // Même fileur pour le rapatriement et pour une lecture en ligne : dans
-    // les deux cas quelque chose est en train d'arriver du réseau pour ce
-    // questionnaire, et c'est ce que l'opérateur a besoin de savoir.
-    if (catalogue.estEnCours(entry.id) || catalogue.estEnOuverture(entry.id)) {
-      return const SizedBox(
-        width: 22,
-        height: 22,
-        child: CircularProgressIndicator(strokeWidth: 2, color: BSColors.accent),
-      );
-    }
-
-    final local = catalogue.estLocal(entry.id);
-    final perime = catalogue.estPerime(entry);
-
-    final IconData icone;
-    final Color couleur;
-    final String infobulle;
-    if (perime) {
-      icone = Icons.cloud_sync;
-      couleur = BSColors.accent2;
-      infobulle = 'Mettre à jour depuis le catalogue';
-    } else if (local) {
-      icone = Icons.cloud_done;
-      couleur = BSColors.accent;
-      infobulle = 'Sur ce poste. Cliquez pour retirer la copie locale.';
-    } else {
-      icone = Icons.cloud_outlined;
-      couleur = BSColors.neutral500;
-      infobulle = 'En ligne seulement. Cliquez pour garder sur ce poste.';
-    }
-
-    return Tooltip(
-      message: infobulle,
-      child: MouseRegion(
-        cursor: SystemMouseCursors.click,
-        child: GestureDetector(
-          // Sans ce garde, le clic sur le nuage ouvrirait aussi le
-          // questionnaire, la carte entière étant cliquable.
-          behavior: HitTestBehavior.opaque,
-          onTap: () =>
-              local && !perime ? catalogue.unsync(entry) : catalogue.sync(entry),
-          child: Padding(
-            padding: const EdgeInsets.only(left: 4, bottom: 4),
-            child: Icon(icone, size: 22, color: couleur),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-// Le nuage d'une collection. Trois états : rien, une partie, tout. La
-// fraction est écrite en clair quand c'est partiel, parce qu'aucune nuance
-// d'icône ne dit « trois manches sur huit » aussi bien qu'un chiffre.
-class _NuageCollection extends StatelessWidget {
-  const _NuageCollection({required this.catalogue, required this.collection});
-
-  final CatalogueStore catalogue;
-  final CatalogueCollection collection;
-
-  @override
-  Widget build(BuildContext context) {
-    final entrees = catalogue.entriesOf(collection.name);
-    final locales = entrees.where((e) => catalogue.estLocal(e.id)).length;
-    final etat = catalogue.stateOf(collection.name);
-    final occupe = entrees.any((e) => catalogue.estEnCours(e.id));
-
-    if (occupe) {
-      return const SizedBox(
-        width: 22,
-        height: 22,
-        child: CircularProgressIndicator(strokeWidth: 2, color: BSColors.accent),
-      );
-    }
-
-    final complet = etat == SyncState.complet;
-    final IconData icone;
-    final Color couleur;
-    final String infobulle;
-    switch (etat) {
-      case SyncState.complet:
-        icone = Icons.cloud_done;
-        couleur = BSColors.accent;
-        infobulle = 'Toute la collection est sur ce poste. '
-            'Cliquez pour retirer les copies locales.';
-      case SyncState.partiel:
-        icone = Icons.cloud_download;
-        couleur = BSColors.accent600;
-        infobulle = '$locales sur ${entrees.length} sur ce poste. '
-            'Cliquez pour rapatrier le reste.';
-      case SyncState.absent:
-        icone = Icons.cloud_outlined;
-        couleur = BSColors.neutral500;
-        infobulle = 'Cliquez pour rapatrier les ${entrees.length} questionnaires.';
-    }
-
-    return Tooltip(
-      message: infobulle,
-      child: MouseRegion(
-        cursor: SystemMouseCursors.click,
-        child: GestureDetector(
-          behavior: HitTestBehavior.opaque,
-          onTap: () => complet
-              ? catalogue.unsyncCollection(collection.name)
-              : catalogue.syncCollection(collection.name),
-          child: Padding(
-            padding: const EdgeInsets.only(left: 4, bottom: 4),
-            child: Row(
-              children: [
-                if (etat == SyncState.partiel)
-                  Padding(
-                    padding: const EdgeInsets.only(right: 4),
-                    child: Text('$locales/${entrees.length}',
-                        style: BSType.body(size: 13, color: BSColors.accent700)),
-                  ),
-                Icon(icone, size: 22, color: couleur),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-  }
+// L'heure seule quand c'est aujourd'hui, la date en plus sinon : une copie
+// hors ligne peut remonter à des semaines, et « lue à 10:39 » laisserait
+// croire à ce matin.
+String _quand(DateTime? moment) {
+  if (moment == null) return 'à une date inconnue';
+  String deux(int n) => n.toString().padLeft(2, '0');
+  final heure = 'à ${deux(moment.hour)}:${deux(moment.minute)}';
+  final maintenant = DateTime.now();
+  final memeJour =
+      moment.year == maintenant.year &&
+      moment.month == maintenant.month &&
+      moment.day == maintenant.day;
+  return memeJour
+      ? heure
+      : 'le ${deux(moment.day)}/${deux(moment.month)} $heure';
 }
 
 // Même grammaire que les cartes de « Jeu actif » : un filet épais en tête,
@@ -1090,7 +980,10 @@ class _QuestionnaireCard extends StatelessWidget {
       padding: const EdgeInsets.only(top: BSSpace.s2),
       decoration: BoxDecoration(
         border: Border(
-          top: BorderSide(color: file.valid ? BSColors.text : BSColors.neutral400, width: 2),
+          top: BorderSide(
+            color: file.valid ? BSColors.text : BSColors.neutral400,
+            width: 2,
+          ),
         ),
       ),
       child: Column(
@@ -1115,7 +1008,10 @@ class _QuestionnaireCard extends StatelessWidget {
               color: file.valid ? BSColors.accent700 : BSColors.accent2_800,
             ),
           ),
-          Text(_dateLabel(file.modified), style: BSType.body(size: 13, color: BSColors.neutral600)),
+          Text(
+            _dateLabel(file.modified),
+            style: BSType.body(size: 13, color: BSColors.neutral600),
+          ),
         ],
       ),
     );
@@ -1166,12 +1062,9 @@ class _Editor extends StatelessWidget {
     required this.onChanged,
     required this.onSave,
     required this.onRename,
-    required this.onDuplicate,
     required this.onUseForGame,
     required this.onExport,
     required this.onDelete,
-    required this.readOnly,
-    required this.origine,
     required this.pourLaPartie,
   });
 
@@ -1182,7 +1075,6 @@ class _Editor extends StatelessWidget {
   final VoidCallback onChanged;
   final VoidCallback onSave;
   final VoidCallback onRename;
-  final VoidCallback onDuplicate;
   final VoidCallback onUseForGame;
   final VoidCallback onExport;
   final VoidCallback? onDelete;
@@ -1191,12 +1083,6 @@ class _Editor extends StatelessWidget {
   // fichiers (dupliquer, exporter, supprimer) est du bruit a ce moment-la,
   // et « Utiliser pour la partie » devient l'action principale.
   final bool pourLaPartie;
-  // Consultation : le questionnaire vient du catalogue. Les champs sont figés
-  // et il n'y a ni Enregistrer, ni Renommer, ni Supprimer.
-  final bool readOnly;
-  // La collection d'origine, montrée en consultation pour qu'on sache d'où
-  // sort ce qu'on lit.
-  final String? origine;
 
   @override
   Widget build(BuildContext context) {
@@ -1217,165 +1103,173 @@ class _Editor extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-          Row(
-            children: [
-              // Retour à la bibliothèque : seule sortie de l'éditeur, donc
-              // toujours au même endroit, en tête de page.
-              TextButton(
-                onPressed: onBack,
-                style: TextButton.styleFrom(
-                  foregroundColor: BSColors.neutral700,
-                  padding: const EdgeInsets.only(right: BSSpace.s2),
-                ),
-                child: const Text('‹ Questionnaires'),
-              ),
-              const SizedBox(width: BSSpace.s2),
-              Expanded(
-                child: _Field(
-                  // Clé sur l'identité du questionnaire : sans elle, ouvrir
-                  // un autre fichier réutiliserait le champ existant et
-                  // garderait l'ancien texte à l'écran.
-                  key: ValueKey(questionnaire),
-                  value: questionnaire.title,
-                  hint: 'Titre du questionnaire',
-                  readOnly: readOnly,
-                  style: BSType.buzzerNameConsole(size: 26),
-                  onChanged: (v) {
-                    questionnaire.title = v;
-                    onChanged();
-                  },
-                ),
-              ),
-              const SizedBox(width: BSSpace.s3),
-              // ARRIVE DEPUIS LE LANCEMENT D'UNE PARTIE : une seule action.
-              //
-              // L'animateur est venu chercher un questionnaire, pas gerer ses
-              // fichiers. Dupliquer, exporter et supprimer n'ont rien a faire
-              // la, et « Utiliser pour la partie » prend l'habit du bouton
-              // principal parce que c'est la seule chose a faire ici.
-              if (pourLaPartie)
-                FilledButton(
-                  onPressed: onUseForGame,
-                  style: FilledButton.styleFrom(
-                    backgroundColor: BSColors.accent,
-                    foregroundColor: BSColors.bg,
-                    shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-                    padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-                  ),
-                  child: const Text('Utiliser pour la partie'),
-                )
-              else ...[
-              if (readOnly) ...[
-                Padding(
-                  padding: const EdgeInsets.only(right: BSSpace.s2),
-                  child: Text(
-                    origine == null ? 'Catalogue' : 'Catalogue · $origine',
-                    style: BSType.body(size: 14, color: BSColors.neutral600),
-                  ),
-                ),
-                FilledButton(
-                  onPressed: onDuplicate,
-                  style: FilledButton.styleFrom(
-                    backgroundColor: BSColors.accent,
-                    foregroundColor: BSColors.bg,
-                    shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-                    padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-                  ),
-                  child: const Text('Dupliquer dans Personnalisé'),
-                ),
-              ] else ...[
-                if (dirty)
-                  Padding(
-                    padding: const EdgeInsets.only(right: BSSpace.s2),
-                    child: Text('Non enregistré',
-                        style: BSType.body(size: 14, color: BSColors.accent2_800)),
-                  ),
-                FilledButton(
-                  onPressed: onSave,
-                  style: FilledButton.styleFrom(
-                    backgroundColor: BSColors.accent,
-                    foregroundColor: BSColors.bg,
-                    shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-                    padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-                  ),
-                  child: const Text('Enregistrer'),
-                ),
-                if (saved) ...[
-                  const SizedBox(width: BSSpace.s2),
+              Row(
+                children: [
+                  // Retour à la bibliothèque : seule sortie de l'éditeur, donc
+                  // toujours au même endroit, en tête de page.
                   TextButton(
-                    onPressed: onRename,
-                    style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
-                    child: const Text('Renommer le fichier'),
+                    onPressed: onBack,
+                    style: TextButton.styleFrom(
+                      foregroundColor: BSColors.neutral700,
+                      padding: const EdgeInsets.only(right: BSSpace.s2),
+                    ),
+                    child: const Text('‹ Questionnaires'),
+                  ),
+                  const SizedBox(width: BSSpace.s2),
+                  Expanded(
+                    child: _Field(
+                      // Clé sur l'identité du questionnaire : sans elle, ouvrir
+                      // un autre fichier réutiliserait le champ existant et
+                      // garderait l'ancien texte à l'écran.
+                      key: ValueKey(questionnaire),
+                      value: questionnaire.title,
+                      hint: 'Titre du questionnaire',
+                      style: BSType.buzzerNameConsole(size: 26),
+                      onChanged: (v) {
+                        questionnaire.title = v;
+                        onChanged();
+                      },
+                    ),
+                  ),
+                  const SizedBox(width: BSSpace.s3),
+                  // ARRIVE DEPUIS LE LANCEMENT D'UNE PARTIE : une seule action.
+                  //
+                  // L'animateur est venu chercher un questionnaire, pas gerer ses
+                  // fichiers. Dupliquer, exporter et supprimer n'ont rien a faire
+                  // la, et « Utiliser pour la partie » prend l'habit du bouton
+                  // principal parce que c'est la seule chose a faire ici.
+                  if (pourLaPartie)
+                    FilledButton(
+                      onPressed: onUseForGame,
+                      style: FilledButton.styleFrom(
+                        backgroundColor: BSColors.accent,
+                        foregroundColor: BSColors.bg,
+                        shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.zero,
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 18,
+                          vertical: 12,
+                        ),
+                      ),
+                      child: const Text('Utiliser pour la partie'),
+                    )
+                  else ...[
+                    if (dirty)
+                      Padding(
+                        padding: const EdgeInsets.only(right: BSSpace.s2),
+                        child: Text(
+                          'Non enregistré',
+                          style: BSType.body(
+                            size: 14,
+                            color: BSColors.accent2_800,
+                          ),
+                        ),
+                      ),
+                    FilledButton(
+                      onPressed: onSave,
+                      style: FilledButton.styleFrom(
+                        backgroundColor: BSColors.accent,
+                        foregroundColor: BSColors.bg,
+                        shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.zero,
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 18,
+                          vertical: 12,
+                        ),
+                      ),
+                      child: const Text('Enregistrer'),
+                    ),
+                    if (saved) ...[
+                      const SizedBox(width: BSSpace.s2),
+                      TextButton(
+                        onPressed: onRename,
+                        style: TextButton.styleFrom(
+                          foregroundColor: BSColors.accent700,
+                        ),
+                        child: const Text('Renommer le fichier'),
+                      ),
+                    ],
+                    const SizedBox(width: BSSpace.s2),
+                    // Mettre en jeu reste possible sans enregistrer : on retouche
+                    // souvent une question deux minutes avant de lancer la manche,
+                    // et exiger un Enregistrer d'abord ferait perdre ce temps-là
+                    // pour rien.
+                    OutlinedButton(
+                      onPressed: onUseForGame,
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: BSColors.text,
+                        side: const BorderSide(color: BSColors.divider),
+                        shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.zero,
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 18,
+                          vertical: 12,
+                        ),
+                      ),
+                      child: const Text('Utiliser pour la partie'),
+                    ),
+                    const SizedBox(width: BSSpace.s2),
+                    TextButton(
+                      onPressed: onExport,
+                      style: TextButton.styleFrom(
+                        foregroundColor: BSColors.accent700,
+                      ),
+                      child: const Text('Exporter'),
+                    ),
+                    if (onDelete != null)
+                      TextButton(
+                        onPressed: onDelete,
+                        style: TextButton.styleFrom(
+                          foregroundColor: BSColors.neutral600,
+                        ),
+                        child: const Text('Supprimer'),
+                      ),
+                  ],
+                ],
+              ),
+              const SizedBox(height: BSSpace.s2),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Plus de champ Collection ni Emoji : la bibliothèque range
+                  // par provenance, et tout ce qui vient de ce dossier va sous
+                  // « Personnalisé ». Deux champs qui ne changent plus rien.
+                  Expanded(
+                    child: _Field(
+                      key: ValueKey('note-${identityHashCode(questionnaire)}'),
+                      value: questionnaire.note,
+                      hint: "Note pour l'animateur (facultative)",
+                      style: BSType.body(size: 16, color: BSColors.neutral700),
+                      onChanged: (v) {
+                        questionnaire.note = v;
+                        onChanged();
+                      },
+                    ),
                   ),
                 ],
-              ],
-              const SizedBox(width: BSSpace.s2),
-              // Disponible dans les deux modes : un questionnaire du
-              // catalogue se joue tel quel, il n'y a aucune raison
-              // d'obliger à le dupliquer d'abord.
-              OutlinedButton(
-                onPressed: onUseForGame,
-                style: OutlinedButton.styleFrom(
-                  foregroundColor: BSColors.text,
-                  side: const BorderSide(color: BSColors.divider),
-                  shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-                  padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-                ),
-                child: const Text('Utiliser pour la partie'),
               ),
-              const SizedBox(width: BSSpace.s2),
-              TextButton(
-                onPressed: onExport,
-                style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
-                child: const Text('Exporter'),
+              const SizedBox(height: BSSpace.s4),
+              // En-têtes de colonnes : inutiles avec une question, précieux avec
+              // trente, quand la catégorie n'est plus qu'une colonne de texte
+              // gris parmi d'autres.
+              Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      _resumeQuestions(total, utiles, questionnaire.niveaux),
+                      style: BSType.sectionKicker(),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 240,
+                    child: Text('CATÉGORIE', style: BSType.sectionKicker()),
+                  ),
+                  const SizedBox(width: 44),
+                ],
               ),
-              if (onDelete != null)
-                TextButton(
-                  onPressed: onDelete,
-                  style: TextButton.styleFrom(foregroundColor: BSColors.neutral600),
-                  child: const Text('Supprimer'),
-                ),
-              ],
-            ],
-          ),
-          const SizedBox(height: BSSpace.s2),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Plus de champ Collection ni Emoji : la bibliothèque range
-              // par provenance, et tout ce qui vient de ce dossier va sous
-              // « Personnalisé ». Deux champs qui ne changent plus rien.
-              Expanded(
-                child: _Field(
-                  key: ValueKey('note-${identityHashCode(questionnaire)}'),
-                  value: questionnaire.note,
-                  hint: "Note pour l'animateur (facultative)",
-                  readOnly: readOnly,
-                  style: BSType.body(size: 16, color: BSColors.neutral700),
-                  onChanged: (v) {
-                    questionnaire.note = v;
-                    onChanged();
-                  },
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: BSSpace.s4),
-          // En-têtes de colonnes : inutiles avec une question, précieux avec
-          // trente, quand la catégorie n'est plus qu'une colonne de texte
-          // gris parmi d'autres.
-          Row(
-            children: [
-              Expanded(
-                child: Text(
-                  _resumeQuestions(total, utiles, questionnaire.niveaux),
-                  style: BSType.sectionKicker(),
-                ),
-              ),
-              SizedBox(width: 240, child: Text('CATÉGORIE', style: BSType.sectionKicker())),
-              const SizedBox(width: 44),
-            ],
-          ),
               const SizedBox(height: BSSpace.s2),
               Container(height: 1, color: BSColors.text),
             ],
@@ -1384,14 +1278,15 @@ class _Editor extends StatelessWidget {
         SliverList.builder(
           itemCount: questionnaire.questions.length,
           itemBuilder: (context, i) => _QuestionRow(
-            key: ValueKey('${identityHashCode(questionnaire)}-${identityHashCode(questionnaire.questions[i])}'),
+            key: ValueKey(
+              '${identityHashCode(questionnaire)}-${identityHashCode(questionnaire.questions[i])}',
+            ),
             index: i,
             question: questionnaire.questions[i],
-            readOnly: readOnly,
             onChanged: onChanged,
             // Jamais moins d'une ligne : un questionnaire sans aucune
             // ligne n'offrirait plus rien où écrire.
-            onDelete: readOnly || questionnaire.questions.length <= 1
+            onDelete: questionnaire.questions.length <= 1
                 ? null
                 : () {
                     questionnaire.questions.removeAt(i);
@@ -1404,20 +1299,24 @@ class _Editor extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: BSSpace.s4),
-              if (!readOnly)
-                OutlinedButton(
-                  onPressed: () {
-                    questionnaire.questions.add(QuizQuestion());
-                    onChanged();
-                  },
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: BSColors.text,
-                    side: const BorderSide(color: BSColors.divider),
-                    shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-                    padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+              OutlinedButton(
+                onPressed: () {
+                  questionnaire.questions.add(QuizQuestion());
+                  onChanged();
+                },
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: BSColors.text,
+                  side: const BorderSide(color: BSColors.divider),
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.zero,
                   ),
-                  child: const Text('Ajouter une question'),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 18,
+                    vertical: 12,
+                  ),
                 ),
+                child: const Text('Ajouter une question'),
+              ),
               const SizedBox(height: BSSpace.s8),
             ],
           ),
@@ -1432,14 +1331,12 @@ class _QuestionRow extends StatelessWidget {
     super.key,
     required this.index,
     required this.question,
-    required this.readOnly,
     required this.onChanged,
     required this.onDelete,
   });
 
   final int index;
   final QuizQuestion question;
-  final bool readOnly;
   final VoidCallback onChanged;
   final VoidCallback? onDelete;
 
@@ -1471,7 +1368,6 @@ class _QuestionRow extends StatelessWidget {
                   _Field(
                     value: question.question,
                     hint: 'Question',
-                    readOnly: readOnly,
                     style: BSType.body(size: 19, color: BSColors.text),
                     onChanged: (v) {
                       question.question = v;
@@ -1482,7 +1378,6 @@ class _QuestionRow extends StatelessWidget {
                   _Field(
                     value: question.answer,
                     hint: 'Réponse',
-                    readOnly: readOnly,
                     style: BSType.answerConsole().copyWith(fontSize: 17),
                     onChanged: (v) {
                       question.answer = v;
@@ -1503,7 +1398,6 @@ class _QuestionRow extends StatelessWidget {
                 children: [
                   _CategoryField(
                     value: question.category,
-                    readOnly: readOnly,
                     onChanged: (v) {
                       question.category = v;
                       onChanged();
@@ -1511,7 +1405,6 @@ class _QuestionRow extends StatelessWidget {
                   ),
                   _NiveauField(
                     value: question.niveau,
-                    readOnly: readOnly,
                     onChanged: (v) {
                       question.niveau = v;
                       onChanged();
@@ -1520,20 +1413,16 @@ class _QuestionRow extends StatelessWidget {
                 ],
               ),
             ),
-            // La largeur reste réservée même en consultation : les lignes
-            // gardent l'alignement de l'en-tête de colonnes. Mais la croix
-            // disparaît au lieu d'être grisée, sinon la colonne se remplit
-            // de boutons morts.
+            // La largeur reste réservée même quand la croix est absente :
+            // les lignes gardent l'alignement de l'en-tête de colonnes.
             SizedBox(
               width: 44,
-              child: readOnly
-                  ? null
-                  : IconButton(
-                      tooltip: onDelete == null ? null : 'Retirer cette question',
-                      onPressed: onDelete,
-                      color: BSColors.neutral500,
-                      icon: const Icon(Icons.close, size: 18),
-                    ),
+              child: IconButton(
+                tooltip: onDelete == null ? null : 'Retirer cette question',
+                onPressed: onDelete,
+                color: BSColors.neutral500,
+                icon: const Icon(Icons.close, size: 18),
+              ),
             ),
           ],
         ),
@@ -1542,28 +1431,17 @@ class _QuestionRow extends StatelessWidget {
   }
 }
 
-// Le niveau d'une question, sous sa catégorie. En consultation, un mot, ou
-// rien si personne ne l'a coté. En édition, les trois mots côte à côte, celui
-// qui est retenu souligné, et un second clic le retire : trois options ne
-// méritent ni menu ni boîte.
+// Le niveau d'une question, sous sa catégorie : les trois mots côte à
+// côte, celui qui est retenu souligné, et un second clic le retire. Trois
+// options ne méritent ni menu ni boîte.
 class _NiveauField extends StatelessWidget {
-  const _NiveauField(
-      {required this.value, required this.readOnly, required this.onChanged});
+  const _NiveauField({required this.value, required this.onChanged});
 
   final int? value;
-  final bool readOnly;
   final ValueChanged<int?> onChanged;
 
   @override
   Widget build(BuildContext context) {
-    if (readOnly) {
-      final nom = kNomsNiveaux[value];
-      if (nom == null) return const SizedBox.shrink();
-      return Padding(
-        padding: const EdgeInsets.only(top: BSSpace.s1),
-        child: Text(nom, style: BSType.body(size: 13, color: BSColors.neutral600)),
-      );
-    }
     return Padding(
       padding: const EdgeInsets.only(top: BSSpace.s1),
       child: Row(
@@ -1575,12 +1453,17 @@ class _NiveauField extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 2),
                 child: Text(
                   entry.value,
-                  style: BSType.body(
-                    size: 13,
-                    color: value == entry.key ? BSColors.text : BSColors.neutral500,
-                  ).copyWith(
-                    decoration: value == entry.key ? TextDecoration.underline : null,
-                  ),
+                  style:
+                      BSType.body(
+                        size: 13,
+                        color: value == entry.key
+                            ? BSColors.text
+                            : BSColors.neutral500,
+                      ).copyWith(
+                        decoration: value == entry.key
+                            ? TextDecoration.underline
+                            : null,
+                      ),
                 ),
               ),
             ),
@@ -1593,11 +1476,9 @@ class _NiveauField extends StatelessWidget {
 }
 
 class _CategoryField extends StatelessWidget {
-  const _CategoryField(
-      {required this.value, required this.readOnly, required this.onChanged});
+  const _CategoryField({required this.value, required this.onChanged});
 
   final String value;
-  final bool readOnly;
   final ValueChanged<String> onChanged;
 
   @override
@@ -1608,28 +1489,31 @@ class _CategoryField extends StatelessWidget {
           child: _Field(
             value: value,
             hint: 'Catégorie',
-            readOnly: readOnly,
             style: BSType.body(size: 15, color: BSColors.neutral700),
             onChanged: onChanged,
           ),
         ),
-        // Pas de menu en consultation : il n'y a rien à choisir, et une
-        // flèche de menu suffit à faire croire le contraire.
-        if (!readOnly)
-          PopupMenuButton<String>(
-            tooltip: 'Catégories courantes',
-            color: BSColors.bg,
-            shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-            onSelected: onChanged,
-            itemBuilder: (context) => [
-              for (final name in kCategoryNames)
-                PopupMenuItem(
-                  value: name,
-                  child: Text(name, style: BSType.body(size: 15, color: BSColors.text)),
+        PopupMenuButton<String>(
+          tooltip: 'Catégories courantes',
+          color: BSColors.bg,
+          shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+          onSelected: onChanged,
+          itemBuilder: (context) => [
+            for (final name in kCategoryNames)
+              PopupMenuItem(
+                value: name,
+                child: Text(
+                  name,
+                  style: BSType.body(size: 15, color: BSColors.text),
                 ),
-            ],
-            icon: const Icon(Icons.arrow_drop_down, size: 20, color: BSColors.neutral500),
+              ),
+          ],
+          icon: const Icon(
+            Icons.arrow_drop_down,
+            size: 20,
+            color: BSColors.neutral500,
           ),
+        ),
       ],
     );
   }
@@ -1645,25 +1529,21 @@ class _Field extends StatefulWidget {
     required this.hint,
     required this.style,
     required this.onChanged,
-    this.readOnly = false,
   });
 
   final String value;
   final String hint;
   final TextStyle style;
   final ValueChanged<String> onChanged;
-  // En consultation, le champ garde exactement les mêmes mesures mais perd
-  // son filet, son curseur et le droit d'écrire. Un TextField figé plutôt
-  // qu'un Text : les lignes gardent leur hauteur au pixel près, et le texte
-  // reste sélectionnable, donc copiable.
-  final bool readOnly;
 
   @override
   State<_Field> createState() => _FieldState();
 }
 
 class _FieldState extends State<_Field> {
-  late final TextEditingController _controller = TextEditingController(text: widget.value);
+  late final TextEditingController _controller = TextEditingController(
+    text: widget.value,
+  );
 
   @override
   void dispose() {
@@ -1673,30 +1553,23 @@ class _FieldState extends State<_Field> {
 
   @override
   Widget build(BuildContext context) {
-    final sansFilet = widget.readOnly;
     return TextField(
       controller: _controller,
       style: widget.style,
       minLines: 1,
       maxLines: 4,
-      readOnly: widget.readOnly,
-      showCursor: !widget.readOnly,
       cursorColor: BSColors.accent,
       decoration: InputDecoration(
         isDense: true,
-        hintText: widget.readOnly ? null : widget.hint,
+        hintText: widget.hint,
         hintStyle: widget.style.copyWith(color: BSColors.neutral400),
         contentPadding: const EdgeInsets.symmetric(vertical: 6),
-        enabledBorder: sansFilet
-            ? InputBorder.none
-            : const UnderlineInputBorder(
-                borderSide: BorderSide(color: BSColors.divider),
-              ),
-        focusedBorder: sansFilet
-            ? InputBorder.none
-            : const UnderlineInputBorder(
-                borderSide: BorderSide(color: BSColors.accent, width: 2),
-              ),
+        enabledBorder: const UnderlineInputBorder(
+          borderSide: BorderSide(color: BSColors.divider),
+        ),
+        focusedBorder: const UnderlineInputBorder(
+          borderSide: BorderSide(color: BSColors.accent, width: 2),
+        ),
       ),
       onChanged: widget.onChanged,
     );

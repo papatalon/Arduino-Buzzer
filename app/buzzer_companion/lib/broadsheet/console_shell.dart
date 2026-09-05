@@ -11,7 +11,7 @@ import '../questionnaires/active_questionnaire.dart';
 import 'active_questionnaire_bar.dart';
 import '../version_check.dart';
 import 'version_banner.dart';
-import '../questionnaires/catalogue.dart';
+import '../questionnaires/banque.dart';
 import '../questionnaires/questionnaire_store.dart';
 import '../team_names.dart';
 import '../protocol.dart';
@@ -67,7 +67,7 @@ class ConsoleShell extends StatefulWidget {
     required this.teams,
     required this.logo,
     required this.questionnaires,
-    required this.catalogue,
+    required this.banque,
     required this.actif,
     required this.moteur,
     required this.reflexe,
@@ -88,7 +88,7 @@ class ConsoleShell extends StatefulWidget {
   final TeamNames teams;
   final EventLogo logo;
   final QuestionnaireStore questionnaires;
-  final CatalogueStore catalogue;
+  final BanqueStore banque;
   final ActiveQuestionnaire actif;
   final MoteurQuiz moteur;
   final MoteurReflexe reflexe;
@@ -191,7 +191,7 @@ class _ConsoleShellState extends State<ConsoleShell> {
                                   teams: widget.teams,
                                   logo: widget.logo,
                                   questionnaires: widget.questionnaires,
-                                  catalogue: widget.catalogue,
+                                  banque: widget.banque,
                                   actif: widget.actif,
                                   moteur: widget.moteur,
                                   reflexe: widget.reflexe,
@@ -390,7 +390,7 @@ class _CenterColumn extends StatelessWidget {
     required this.teams,
     required this.logo,
     required this.questionnaires,
-    required this.catalogue,
+    required this.banque,
     required this.actif,
     required this.moteur,
     required this.reflexe,
@@ -410,7 +410,7 @@ class _CenterColumn extends StatelessWidget {
   final TeamNames teams;
   final EventLogo logo;
   final QuestionnaireStore questionnaires;
-  final CatalogueStore catalogue;
+  final BanqueStore banque;
   final ActiveQuestionnaire actif;
   final MoteurQuiz moteur;
   final MoteurReflexe reflexe;
@@ -438,7 +438,7 @@ class _CenterColumn extends StatelessWidget {
       case ConsoleSection.questions:
         return QuestionsScreen(
             store: questionnaires,
-            catalogue: catalogue,
+            banque: banque,
             actif: actif,
             pourLaPartie: pourLaPartie,
             onRetourPartie: () => onNavigate(ConsoleSection.partie));

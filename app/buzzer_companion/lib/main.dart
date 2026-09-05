@@ -27,7 +27,6 @@ import 'questionnaires/active_questionnaire.dart';
 import 'simulation.dart';
 import 'version_check.dart';
 import 'questionnaires/banque.dart';
-import 'questionnaires/catalogue.dart';
 import 'questionnaires/questionnaire_store.dart';
 import 'questionnaires/tirage_questions.dart';
 import 'team_names.dart';
@@ -80,7 +79,6 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
   final _teams = TeamNames();
   final _logo = EventLogo();
   final _questionnaires = QuestionnaireStore();
-  final _catalogue = CatalogueStore();
   final _banque = BanqueStore();
   late final TirageQuestions _tirageQuestions;
   late final ActiveQuestionnaire _actif;
@@ -112,16 +110,12 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
     _game.listenTo(_ble.messages);
     _game.addListener(_pushSnapshotToPopout);
     _actif = ActiveQuestionnaire(_game);
-    // LE CATALOGUE EST CHARGE ICI, pas par l'ecran Questions.
+    // LA BANQUE EST CHARGEE ICI, pas par l'ecran Questions.
     //
-    // Il l'etait, et le tirage au hasard depuis l'ecran de lancement annoncait
-    // « le catalogue est vide » tant qu'on n'etait pas passe par la
+    // Elle l'etait, et le tirage au hasard depuis l'ecran de lancement
+    // annoncait n'avoir aucune question tant qu'on n'etait pas passe par la
     // bibliotheque. C'est un etat de l'application, pas la propriete d'un
-    // ecran. Il lit le disque avant le reseau : immediat, et hors ligne.
-    _catalogue.init();
-    // LA BANQUE AUSSI, et pour la meme raison : le tirage y pioche depuis
-    // l'ecran de lancement, sans qu'on soit passe par l'ecran Questions.
-    // Un seul fichier, lu une fois, qui tient toutes les questions.
+    // ecran. Elle lit le disque avant le reseau : immediat, et hors ligne.
     _banque.init();
     _tirageQuestions = TirageQuestions(banque: _banque);
     _simulateur = Simulateur(_game);
@@ -410,7 +404,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
       teams: _teams,
       logo: _logo,
       questionnaires: _questionnaires,
-      catalogue: _catalogue,
+      banque: _banque,
       actif: _actif,
       moteur: _moteur,
       reflexe: _reflexe,

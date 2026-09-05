@@ -27,7 +27,6 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 
-import 'package:crypto/crypto.dart';
 
 const _sourcePath = '../../Questions.cpp';
 
@@ -125,27 +124,25 @@ List<_Fichier> _fichiersQuestions() {
   return _cacheFichiers = fichiers;
 }
 
-// Plafond ferme : une soiree n'est pas un marathon. Passe une vingtaine de
-// questions, les invites decrochent et ne redemandent pas la soiree suivante.
-// Tout ce qui depasse est donc decoupe en manches de cette taille plutot que
-// livre en un seul bloc : les 200 questions d'une categorie restent toutes
-// accessibles, mais en huit manches qu'on enchaine (ou pas) selon l'ambiance
-// de la salle.
-const kMaxQuestions = 25;
-
 // Le generateur ecrit un SITE, pas un dossier de travail. Ce site est publie
 // par Cloudflare Pages sur buzzer.sd6tools.net, et l'application va y
-// chercher son catalogue :
+// chercher sa banque :
 //
 //   site/
-//     index.html          page d'accueil, pour l'humain qui tombe sur l'URL
-//     catalogue.json      l'index : un enregistrement par questionnaire
-//     q/<id>.json         les questionnaires eux-memes
+//     index.html          page de telechargement, pour l'humain
+//     banque.json         toutes les questions, une seule fois chacune
+//     revue.html          les memes questions a relire, par categorie
+//     version.json        de quoi savoir si l'application est perimee
 //
-// Les questionnaires ne sont plus lus depuis le depot par l'application. Elle
-// les telecharge et les garde dans son dossier de donnees ; le dossier
-// configure dans l'application ne contient plus que les questionnaires
-// PERSONNELS de l'operateur.
+// IL N'Y A PLUS DE QUESTIONNAIRES SUR LE SITE. Il y en a eu 283, decoupes en
+// manches de 25 : un plafond pose parce qu'une soiree n'est pas un marathon,
+// et qu'au-dela d'une vingtaine de questions les invites decrochent. Le
+// plafond avait raison, mais le decoupage figeait a la generation ce qui doit
+// se decider devant la salle. C'est l'application qui compose sa manche
+// maintenant, a partir de cette banque et des criteres choisis au lancement.
+//
+// Le dossier configure dans l'application ne contient donc plus que les
+// questionnaires PERSONNELS de l'operateur.
 //
 // Le chemin est relatif a app/buzzer_companion, d'ou le script se lance.
 var _outputDir = '../../site';
@@ -352,187 +349,46 @@ void main(List<String> args) {
       '$perissables à revoir une fois l\'an.');
 
   final out = Directory(_outputDir);
-  // Le dossier q/ est vidé avant d'écrire : sans ça, un questionnaire
-  // renommé (ou une thématique retirée) laisserait son ancien fichier en
-  // place, publié et invisible dans le catalogue.
+  out.createSync(recursive: true);
+  // LE DOSSIER q/ EST EFFACÉ, PAS SEULEMENT DÉLAISSÉ. Il tenait les 283
+  // questionnaires prédécoupés ; ne plus les écrire ne les enlève pas du
+  // site, et Cloudflare continuerait à servir la dernière version publiée à
+  // toute application encore configurée pour aller la chercher. Même chose
+  // pour catalogue.json, qui les indexait.
   final qDir = Directory('$_outputDir/q');
   if (qDir.existsSync()) qDir.deleteSync(recursive: true);
-  qDir.createSync(recursive: true);
+  final ancienCatalogue = File('$_outputDir/catalogue.json');
+  if (ancienCatalogue.existsSync()) ancienCatalogue.deleteSync();
 
-  // Un fichier par catégorie, découpé en manches de 25.
+  // PLUS AUCUN QUESTIONNAIRE PRÉDÉCOUPÉ ICI.
   //
-  // ÉTALÉ AVANT D'ÊTRE DÉCOUPÉ. La banque est écrite par grappes (les
-  // « Combien de… », puis les inventeurs, puis les peintres), et découper le
-  // fichier dans son ordre donnait des manches qui posaient trois questions
-  // sur Jules Verne d'affilée. Graine dérivée du nom : régénérer redonne les
-  // mêmes fichiers.
-  for (final entry in parCategorie.entries) {
-    _writeParts(entry.key, _etaler(entry.value, Random(_graine(entry.key))),
-        note: 'Catégorie ${entry.key}.', emoji: _emojiDe(entry.key));
-  }
-
-  // PAR NIVEAU. Les catégories et les Mélanges brassent les trois niveaux,
-  // ce qui donne des soirées où un enfant de huit ans attend son tour entre
-  // deux questions sur Hammurabi. Ces deux collections trient : « 7 à 77
-  // ans » ne garde que le niveau 1, celui où tout le monde dans la salle
-  // peut répondre ; « Connaisseurs » ne garde que le niveau 3, pour que ces
-  // questions restent jouables au lieu de disparaître du paysage.
+  // Il y en avait 283 : un par catégorie découpée en manches de 25, seize
+  // rondes toutes catégories, « 7 à 77 ans », « Connaisseurs », les
+  // thématiques. Chacun était un choix figé au moment de la génération —
+  // combien de questions, quel niveau, quelle tranche d'âge — pris des mois
+  // avant la soirée, par un script qui ne savait pas qui serait dans la
+  // pièce.
   //
-  // Le niveau 2 n'a pas de collection à lui : c'est le tout-venant, il est
-  // partout ailleurs.
-  // 7 À 77 ANS : QUARANTE MANCHES, PAS TOUT LE LOT FACILE.
+  // L'application compose maintenant la manche au lancement de la partie, à
+  // partir de la banque et des critères que l'opérateur coche devant sa
+  // salle. Les fichiers ne servaient plus qu'à répéter, en moins souple, ce
+  // que le tirage fait mieux, et ils coûtaient 283 lignes de diff à chaque
+  // question corrigée.
   //
-  // Le lot facile ferait cinquante-huit manches, mais les dernières seraient
-  // forcément les moins bonnes : à la fin, il ne reste que ce que les
-  // premières n'ont pas voulu. Quarante soirées suffisent largement, et
-  // s'arrêter là garde le meilleur.
-  //
-  // LE MÉLANGE DES GÉNÉRATIONS NE SE FAIT PLUS ICI. J'avais écrit des quotas
-  // par tranche d'âge pour composer ces manches ; ils sont partis. La tranche
-  // qu'il faut servir dépend de qui est dans la salle CE SOIR-LÀ, et le
-  // générateur ne peut pas le savoir. Chaque question porte donc ses tranches
-  // dans le JSON (clé « ages »), et c'est l'application qui compose au
-  // lancement de la partie, quand l'opérateur a la salle devant lui.
-  //
-  // Ce qui reste ici est un préréglage tout fait, pour qui ne veut rien
-  // régler : le niveau facile, équilibré par catégorie, en quarante manches.
-  const kPourTous = '7 à 77 ans';
-  const kRondes7a77 = 40;
-  final manches7a77 = _manchesProportionnelles(
-    all.where((e) => e.niveau == 1).toList(),
-    kMaxQuestions,
-    Random(_graine(kPourTous)),
-  ).take(kRondes7a77).toList();
-  for (var i = 0; i < manches7a77.length; i++) {
-    _write(
-      '$kPourTous ${_numero(i + 1, manches7a77.length)} sur ${manches7a77.length}',
-      manches7a77[i],
-      note: 'Des questions auxquelles tout le monde peut répondre, de 7 à 77 ans, '
-          'toutes catégories confondues. Manche ${i + 1} sur ${manches7a77.length}.',
-      collection: kPourTous,
-      emoji: '🎈',
-    );
-  }
-  _writeManches(
-    'Connaisseurs',
-    all.where((e) => e.niveau == 3).toList(),
-    note: 'Les questions les plus dures de la banque, toutes catégories confondues.',
-    emoji: '🎓',
-  );
-
-  // Le mélange, c'est le format principal : seize rondes de 25, toutes
-  // catégories confondues, TIRÉES SANS AUCUN RECOUPEMENT. Les seize
-  // s'enchaînent d'une soirée à l'autre sans jamais reposer une question déjà
-  // posée, et chaque ronde sert autant de chaque catégorie : personne n'est
-  // avantagé parce qu'il connaît le sport.
-  //
-  // Graine fixe : régénérer redonne exactement les mêmes fichiers, donc ils
-  // sont reproductibles et comparables d'une version à l'autre.
-  //
-  // La dernière taille de la liste est la manche éclair : elle est tirée dans
-  // la même série, donc elle ne recoupe pas non plus les seize rondes.
-  const kRondes = 16;
-  final series = _equilibreSeries(
-    parCategorie,
-    [...List.filled(kRondes, kMaxQuestions), 10],
-    Random(7),
-  );
-  const kMelanges = 'Mélanges';
-  const kEmojiMelanges = '🎲';
-  for (var i = 0; i < kRondes; i++) {
-    _write(
-      'Toutes catégories ${_numero(i + 1, kRondes)} sur $kRondes',
-      series[i],
-      note: 'Toutes catégories, autant de chacune. '
-          'Ronde ${i + 1} sur $kRondes, aucune question en double.',
-      collection: kMelanges,
-      emoji: kEmojiMelanges,
-    );
-  }
-
-  // Format court : de quoi réchauffer la salle avant le vrai jeu, ou remplir
-  // un creux, sans engager la soirée. Rangée avec les mélanges, dont elle est
-  // tirée.
-  _write('Manche éclair', series.last,
-      note: 'Dix questions, une de chaque catégorie.',
-      collection: kMelanges,
-      emoji: kEmojiMelanges);
-
-  // Découpes thématiques : elles traversent les catégories. « Noël » pioche
-  // le renne dans Culture générale, la bûche dans Bouffe, les chants dans
-  // Musique et le Grincheux dans Cinéma. Aucune catégorie du firmware ne
-  // sait faire ça, c'est tout l'intérêt.
-  for (final theme in kThemes) {
-    final trouvees = _etaler(all.where(theme.matches).toList(), Random(_graine(theme.name)));
-    if (trouvees.length < 12) {
-      stdout.writeln('  (ignoré : ${theme.name}, seulement ${trouvees.length} questions)');
-      continue;
-    }
-    _writeParts(theme.name, trouvees,
-        note: theme.note, emoji: theme.emoji, collection: theme.collection);
-  }
-
-  // Volontairement pas de fichier « Banque complète » : 2000 questions dans un
-  // seul questionnaire, c'est exactement ce que le plafond interdit. Les 2000
-  // sont là quand même, réparties dans les manches par catégorie.
-
+  // Ce que le générateur publie tient maintenant en un fichier.
   _controleQualite(all);
 
   _writeBanqueQuestions(all);
-  _writeCatalogue();
   _writeVersion();
   _writeRevue(all);
-  _writeAccueil();
+  _writeAccueil(all);
   _writeIntrouvable();
   _writeEntetes();
 
   stdout.writeln('Écrit dans ${out.absolute.path}');
 }
 
-// --- Le catalogue et la page d'accueil -----------------------------------
-
-// L'index que l'application télécharge en premier. Il porte tout ce qu'il
-// faut pour DESSINER la bibliothèque (titres, collections, emoji, nombre de
-// questions) sans télécharger un seul questionnaire. C'est ce qui permet
-// d'afficher les 125 fiches, dont celles qu'on n'a pas encore rapatriées.
-void _writeCatalogue() {
-  final collections = <String, Map<String, dynamic>>{};
-  for (final entree in _catalogue) {
-    final nom = entree['collection'] as String;
-    // Le pictogramme de la TUILE, qui n'est plus forcément celui de ses
-    // fichiers : une thématique rangée sous une catégorie garde le sien. La
-    // table tranche donc en premier, sinon la tuile hériterait du picto du
-    // premier fichier écrit, et changerait de tête au moindre changement
-    // d'ordre d'écriture.
-    final vue = collections.putIfAbsent(
-        nom,
-        () => {
-              'nom': nom,
-              'emoji': kEmojiCategories[nom] ?? _emojiInedites[nom] ?? entree['emoji'],
-              'questionnaires': 0,
-              'questions': 0,
-            });
-    vue['questionnaires'] = (vue['questionnaires'] as int) + 1;
-    vue['questions'] = (vue['questions'] as int) + (entree['questions'] as int);
-  }
-
-  final json = const JsonEncoder.withIndent('  ').convert({
-    'format': 'buzzer-catalogue',
-    'version': 1,
-    'questionnaires': _catalogue,
-    // Les collections sont déductibles des questionnaires, mais les
-    // pré-calculer évite à l'application de refaire le regroupement au
-    // démarrage, et fixe leur ordre une fois pour toutes.
-    'collections': collections.values.toList()
-      ..sort((a, b) => (a['nom'] as String).compareTo(b['nom'] as String)),
-  });
-  File('$_outputDir/catalogue.json').writeAsStringSync('$json\n');
-
-  final questions = _catalogue.fold<int>(0, (s, e) => s + (e['questions'] as int));
-  stdout.writeln('catalogue.json : ${_catalogue.length} questionnaires, '
-      '${collections.length} collections, $questions questions.');
-
-}
+// --- Ce que le site publie ------------------------------------------------
 
 // LA BANQUE : chaque question UNE FOIS, avec de quoi la retrouver.
 //
@@ -620,37 +476,31 @@ void _writeBanqueQuestions(List<Entry> all) {
 
 // Cloudflare Pages sert ses fichiers avec « max-age=0, must-revalidate »,
 // donc rien n'est garde au bord du reseau : chaque requete traverse jusqu'a
-// l'origine Pages, qui a sa propre limite de debit. Rapatrier une collection
-// de seize questionnaires se faisait ainsi refuser en 429, et la
-// verification du catalogue (126 requetes d'affilee) signalait une vingtaine
-// de faux problemes.
+// l'origine Pages, qui a sa propre limite de debit. C'est ce qui refusait en
+// 429 le rapatriement d'une collection du temps des 283 questionnaires.
 //
 // Ce n'etait pas un reglage de securite de la zone : l'en-tete cf-mitigated
 // etait vide et cf-cache-status disait DYNAMIC a chaque appel.
 //
-// CES EN-TETES NE SUFFISENT PAS A EUX SEULS. Le cache de Cloudflare ne
-// s'applique d'office qu'a une liste d'extensions statiques, dont .json ne
-// fait pas partie : s-maxage etait ecrit et ignore. Il a fallu une regle de
-// cache sur la zone sd6tools.net (Caching > Cache Rules), « Eligible for
-// cache » sur le hostname buzzer.sd6tools.net, en mode « use cache-control
-// header » pour que ce fichier reste la seule source des durees.
+// LA RAFALE A DISPARU AVEC LES 283 FICHIERS : la banque est un seul fichier,
+// demande une fois par lancement. L'en-tete reste quand meme, et pour une
+// raison qui n'est plus la meme : ce fichier fait plus d'un demi-mega, et le
+// faire traverser jusqu'a l'origine a chaque demarrage d'application n'a
+// aucun interet quand il ne change qu'a une publication.
 //
-// LES DEUX DUREES DOIVENT RESTER EGALES, et c'est contre-intuitif.
+// CET EN-TETE NE SUFFIT PAS A LUI SEUL. Le cache de Cloudflare ne s'applique
+// d'office qu'a une liste d'extensions statiques, dont .json ne fait pas
+// partie : s-maxage etait ecrit et ignore. Il a fallu une regle de cache sur
+// la zone sd6tools.net (Caching > Cache Rules), « Eligible for cache » sur le
+// hostname buzzer.sd6tools.net, en mode « use cache-control header » pour que
+// ce fichier reste la seule source des durees.
 //
 // Un deploiement Pages NE PURGE PAS ce cache : mesure le 1er septembre 2026,
-// un objet mis en cache avant un push etait toujours servi apres, avec un
-// age qui montait. Les anciennes valeurs (une heure pour les questionnaires,
-// cinq minutes pour l'index) creaient donc une fenetre ou l'index annoncait
-// une nouvelle empreinte pendant que le bord servait encore l'ancien
-// fichier. Le controle d'empreinte de l'app refusait alors le
-// telechargement, a juste titre, pendant pres d'une heure.
-//
-// Garder l'index plus frais que ce qu'il decrit est un piege : il decrit des
-// fichiers par leur empreinte, donc il ne peut pas etre en avance sur eux.
-// Cinq minutes des deux cotes laissent une fenetre de cinq minutes apres une
-// publication, et suffisent amplement a absorber la rafale que le cache
-// existe pour absorber : rapatrier une collection de seize questionnaires
-// prend quelques secondes.
+// un objet mis en cache avant un push etait toujours servi apres, avec un age
+// qui montait. Cinq minutes laissent donc une fenetre de cinq minutes apres
+// une publication pendant laquelle une application peut encore recevoir
+// l'ancienne banque. C'est sans consequence : elle la garde en cache disque,
+// et le lancement suivant prendra la neuve.
 //
 // s-maxage vise le cache de Cloudflare, max-age le poste client.
 void _writeEntetes() {
@@ -661,10 +511,7 @@ void _writeEntetes() {
   // minutes de plus. Il tombait deja sur le defaut de Pages, mais par oubli
   // plutot que par decision ; c'est ecrit maintenant.
   File('$_outputDir/_headers').writeAsStringSync('''
-/q/*
-  Cache-Control: public, max-age=300, s-maxage=300
-
-/catalogue.json
+/banque.json
   Cache-Control: public, max-age=300, s-maxage=300
 
 /version.json
@@ -674,7 +521,7 @@ void _writeEntetes() {
 
 // Sans ce fichier, Cloudflare Pages sert la page d'accueil AVEC un code 200
 // pour n'importe quelle adresse inconnue. Un client qui demande
-// /q/inexistant.json recevrait donc du HTML en croyant recevoir du JSON, et
+// /banque.jsno recevrait donc du HTML en croyant recevoir du JSON, et
 // un coup d'œil au code de retour laisserait croire que tout va bien. Pire :
 // on a bien cru un instant que tout le dépôt était publié, parce que
 // /Questions.cpp et /.git/config repondaient 200.
@@ -695,9 +542,9 @@ void _writeIntrouvable() {
 </head>
 <body>
   <h1>Introuvable</h1>
-  <p>Ce site ne publie que le catalogue de questionnaires du Buzzer :
-     <code>/catalogue.json</code> et les questionnaires dans <code>/q/</code>.</p>
-  <p><a href="/">Retour au catalogue</a></p>
+  <p>Ce site publie la console de l'animateur du Buzzer et sa banque de
+     questions : <code>/banque.json</code>.</p>
+  <p><a href="/">Retour à l'accueil</a></p>
 </body>
 </html>
 ''');
@@ -1014,13 +861,9 @@ $sections
   stdout.writeln('revue.html : $total questions relisibles sur une page.');
 }
 
-void _writeAccueil() {
-  final collections = <String, int>{};
-  for (final entree in _catalogue) {
-    final nom = entree['collection'] as String;
-    collections[nom] = (collections[nom] ?? 0) + 1;
-  }
-  final questions = _catalogue.fold<int>(0, (s, e) => s + (e['questions'] as int));
+void _writeAccueil(List<Entry> all) {
+  final questions = all.length;
+  final categories = all.map((e) => e.category).toSet().length;
   final version = _versionApp();
   final lien = '$kDepotGitHub/releases/download/v$version/'
       'buzzer-console-$version-windows.zip';
@@ -1088,9 +931,10 @@ void _writeAccueil() {
     <li>Joue les sons par les haut-parleurs de l'ordinateur plutôt que par le
         petit haut-parleur du buzzer, et retombe sur ce dernier si le lien
         Bluetooth tombe.</li>
-    <li>Apporte <strong>$questions questions</strong> en
-        ${_catalogue.length} questionnaires, aucun ne dépassant 25 questions.
-        Vous pouvez aussi écrire les vôtres.</li>
+    <li>Apporte <strong>$questions questions</strong> en $categories
+        catégories, cotées par difficulté et par tranche d'âge. Vous choisissez
+        vos critères avant chaque manche et l'application la compose sur le
+        champ. Vous pouvez aussi écrire vos propres questionnaires.</li>
   </ul>
 
   <h2>Installation</h2>
@@ -1112,7 +956,7 @@ void _writeAccueil() {
   </ul>
 
   <footer>
-    Les questionnaires sont téléchargés par l'application depuis ce même site.
+    La banque de questions est téléchargée par l'application depuis ce même site.
     Toutes les questions se relisent sur une page :
     <a href="/revue.html">la revue des questions</a>.
     Le code est ouvert : <a href="$kDepotGitHub">$kDepotGitHubCourt</a>.
@@ -1695,184 +1539,6 @@ const kThemes = <Theme>[
   ]),
 ];
 
-// --- Tirages -------------------------------------------------------------
-
-// Une série de rondes équilibrées, sans jamais repiocher la même question :
-// chaque catégorie garde son propre curseur, qui avance de ronde en ronde.
-// Les tailles peuvent varier, ce qui permet de tirer la manche éclair dans la
-// même série que les grosses rondes, donc sans recoupement avec elles.
-//
-// 25 ne se divise pas par 10, donc cinq catégories reçoivent une question de
-// plus. Ce surplus TOURNE d'une ronde à l'autre : sinon les cinq mêmes
-// catégories seraient avantagées les seize rondes durant.
-List<List<Entry>> _equilibreSeries(
-    Map<String, List<Entry>> parCategorie, List<int> tailles, Random rnd) {
-  final noms = parCategorie.keys.toList();
-  final pools = <String, List<Entry>>{
-    for (final nom in noms) nom: List<Entry>.from(parCategorie[nom]!)..shuffle(rnd),
-  };
-  final curseurs = <String, int>{for (final nom in noms) nom: 0};
-
-  final rondes = <List<Entry>>[];
-  var decalage = 0;
-  for (final taille in tailles) {
-    final base = taille ~/ noms.length;
-    final reste = taille % noms.length;
-    final ronde = <Entry>[];
-    for (var i = 0; i < noms.length; i++) {
-      // Le modulo de Dart suit le signe du diviseur : (i - decalage) % 10 est
-      // toujours dans 0..9, même quand le décalage dépasse i.
-      final rang = (i - decalage) % noms.length;
-      final combien = base + (rang < reste ? 1 : 0);
-      final nom = noms[i];
-      final depart = curseurs[nom]!;
-      if (depart + combien > pools[nom]!.length) {
-        stderr.writeln('$nom : la série demande plus de questions que la '
-            'catégorie n\'en contient (${pools[nom]!.length}).');
-        exit(1);
-      }
-      ronde.addAll(pools[nom]!.sublist(depart, depart + combien));
-      curseurs[nom] = depart + combien;
-    }
-    // Remélangée : sinon la ronde enchaînerait ses questions catégorie par
-    // catégorie, dans le même ordre à chaque fois.
-    rondes.add(_etaler(ronde, rnd));
-    decalage = (decalage + reste) % noms.length;
-  }
-  return rondes;
-}
-
-// Découpe un lot en manches où CHAQUE MANCHE A LA MÊME COMPOSITION.
-//
-// Le problème que ça règle : « 7 à 77 ans » puise dans un lot où le cinéma
-// pèse 203 questions et l'histoire 67. Brassé puis découpé, ça donnait une
-// ronde à cinq questions de cinéma et une seule d'histoire, et la suivante
-// sans aucune histoire ni musique. Sur une manche de 25, un tirage au sort
-// n'a aucune raison de tomber juste : c'est la loi des petits nombres, pas
-// un défaut de la graine.
-//
-// La règle est celle des plus forts quotients : à chaque place, la catégorie
-// qui maximise « ce qui lui reste, divisé par ce qu'elle a déjà pris dans
-// cette manche ». Une catégorie deux fois plus fournie prend deux fois plus
-// de places, mais elle ne peut pas rafler toute la manche, et une petite
-// catégorie garde toujours la sienne.
-//
-// PROPORTIONNEL, ET NON À PARTS ÉGALES comme les Mélanges. Des parts égales
-// videraient l'histoire (67 questions faciles) après 26 manches et
-// laisseraient 779 questions inutilisées. Le jour où les catégories faibles
-// seront étoffées, passer à parts égales ne coûtera plus rien.
-List<List<Entry>> _manchesProportionnelles(List<Entry> lot, int taille, Random rnd) {
-  final restant = <String, List<Entry>>{};
-  for (final e in lot) {
-    restant.putIfAbsent(e.category, () => []).add(e);
-  }
-  for (final l in restant.values) {
-    l.shuffle(rnd);
-  }
-
-  final manches = <List<Entry>>[];
-  var total = lot.length;
-  while (total > 0) {
-    final combien = min(taille, total);
-    final pris = <String, int>{};
-    final manche = <Entry>[];
-    for (var i = 0; i < combien; i++) {
-      String? choix;
-      var meilleur = 0.0;
-      for (final nom in restant.keys) {
-        if (restant[nom]!.isEmpty) continue;
-        final quotient = restant[nom]!.length / ((pris[nom] ?? 0) + 1);
-        if (choix == null || quotient > meilleur) {
-          choix = nom;
-          meilleur = quotient;
-        }
-      }
-      pris[choix!] = (pris[choix] ?? 0) + 1;
-      manche.add(restant[choix]!.removeLast());
-    }
-    total -= combien;
-    // Étalée à l'intérieur : la répartition dit COMBIEN de chaque catégorie,
-    // pas dans quel ordre, et deux questions voisines du même sujet se
-    // remarquent autant ici qu'ailleurs.
-    manches.add(_etaler(manche, rnd));
-  }
-  return manches;
-}
-
-// Graine reproductible tirée d'un nom. Pas la longueur du nom : « Québec »
-// et « Sports » en ont la même, et brassaient donc pareil.
-int _graine(String nom) => nom.codeUnits.fold(17, (h, c) => (h * 31 + c) & 0x7fffffff);
-
-// Brasse une liste en ÉCARTANT les questions qui se ressemblent. Un simple
-// mélange laisse passer deux questions sur Jules Verne côte à côte une fois
-// sur dix ; ici, une question qui partage un mot marquant avec l'une des
-// quatre précédentes attend son tour.
-//
-// « Marquant » se décide par la fréquence dans le lot lui-même, pas par une
-// liste de mots à ignorer : « film » revient dans la moitié des questions de
-// Cinéma et n'y distingue rien, mais dans une ronde toutes catégories il
-// signale bien deux questions de cinéma. Le seuil est relatif à la taille du
-// lot pour que la règle tienne aussi bien pour 25 questions que pour 200.
-//
-// Glouton : on prend la première candidate acceptable dans le reste brassé.
-// Faute de candidate, on accepte la voisine plutôt que de tourner en rond :
-// vers la fin d'un lot, il ne reste parfois que des questions qui se
-// ressemblent.
-const kFenetreVoisinage = 4;
-
-List<Entry> _etaler(List<Entry> entries, Random rnd) {
-  final frequence = <String, int>{};
-  final mots = <Entry, Set<String>>{};
-  for (final e in entries) {
-    final m = _motsMarquants(e);
-    mots[e] = m;
-    for (final mot in m) {
-      frequence[mot] = (frequence[mot] ?? 0) + 1;
-    }
-  }
-  final seuil = max(3, entries.length * 15 ~/ 100);
-  for (final e in entries) {
-    mots[e]!.removeWhere((mot) => frequence[mot]! >= seuil);
-  }
-
-  final reste = List<Entry>.of(entries)..shuffle(rnd);
-  final resultat = <Entry>[];
-  while (reste.isNotEmpty) {
-    final debut = max(0, resultat.length - kFenetreVoisinage);
-    final voisinage = <String>{
-      for (var i = debut; i < resultat.length; i++) ...mots[resultat[i]]!,
-    };
-    var choisi = reste.indexWhere((e) => mots[e]!.intersection(voisinage).isEmpty);
-    if (choisi < 0) choisi = 0;
-    resultat.add(reste.removeAt(choisi));
-  }
-  return resultat;
-}
-
-// Les mots d'au moins quatre lettres, sans accents ni majuscules, de l'énoncé
-// et de la réponse. Les mots-outils courts (« qui », « que », « de ») tombent
-// d'eux-mêmes ; les plus longs (« quel », « comment », « combien ») sont
-// éliminés par la fréquence dans _etaler.
-//
-// La catégorie compte comme un mot marquant : dans une ronde toutes
-// catégories, deux questions de cinéma d'affilée se remarquent autant que
-// deux questions sur Jules Verne. Dans une manche de catégorie, où toutes
-// les questions la partagent, la fréquence l'élimine d'elle-même.
-Set<String> _motsMarquants(Entry e) => {
-      'categorie:${e.category}',
-      ..._strip('${e.question} ${e.answer}')
-          .toLowerCase()
-          .split(RegExp('[^a-z0-9]+'))
-          .where((m) => m.length >= 4),
-    };
-
-// Deux défauts que la relecture ne voit pas mais qu'une machine attrape, sur
-// les versions SERVIES : la réponse déjà donnée dans l'énoncé, et deux
-// questions différentes qui attendent la même réponse. Ni l'un ni l'autre
-// n'arrête la génération : les cas légitimes existent (« la vitamine C »
-// quand la question dit vitamine, « Quatre » qui répond à vingt questions
-// sans rapport). Mais le compte s'affiche à chaque passage, et une hausse
-// veut dire qu'un lot est entré sans être contrôlé.
 void _controleQualite(List<Entry> all) {
   // Les mots outils ne comptent pas : « appelle-t-on » se retrouve partout.
   const vides = {
@@ -1983,131 +1649,12 @@ String _cle(Entry e) => _strip(e.question)
     .replaceAll(RegExp(r'[?!.\s]+$'), '')
     .trim();
 
-// Écrit une collection dont chaque manche a la même composition par
-// catégorie. Contrairement à _writeParts, qui découpe une liste déjà ordonnée,
-// celle-ci compose chaque manche à partir du lot entier.
-void _writeManches(String titre, List<Entry> lot,
-    {required String note, required String emoji}) {
-  final manches = _manchesProportionnelles(lot, kMaxQuestions, Random(_graine(titre)));
-  for (var i = 0; i < manches.length; i++) {
-    _write(
-      '$titre ${_numero(i + 1, manches.length)} sur ${manches.length}',
-      manches[i],
-      note: '$note Manche ${i + 1} sur ${manches.length}.',
-      collection: titre,
-      emoji: emoji,
-    );
-  }
-}
 
-// Découpe en parts aussi égales que possible. 265 questions en 11 manches
-// donne onze manches de 24, pas dix de 25 suivies d'une de 15.
-List<List<Entry>> _decoupe(List<Entry> entries, int nbParts) {
-  final base = entries.length ~/ nbParts;
-  final reste = entries.length % nbParts;
-  final parts = <List<Entry>>[];
-  var curseur = 0;
-  for (var i = 0; i < nbParts; i++) {
-    final combien = base + (i < reste ? 1 : 0);
-    parts.add(entries.sublist(curseur, curseur + combien));
-    curseur += combien;
-  }
-  return parts;
-}
-
-// --- Écriture ------------------------------------------------------------
-
-// Écrit un questionnaire, ou plusieurs manches si le lot dépasse le plafond.
-// Faute de collection explicite, le titre fait office : les huit manches
-// d'« Histoire » se retrouvent ensemble sous « Histoire ».
-void _writeParts(String titre, List<Entry> entries,
-    {required String note, required String emoji, String? collection}) {
-  final nbParts = (entries.length + kMaxQuestions - 1) ~/ kMaxQuestions;
-  if (nbParts <= 1) {
-    _write(titre, entries, note: note, collection: collection ?? titre, emoji: emoji);
-    return;
-  }
-  final parts = _decoupe(entries, nbParts);
-  for (var i = 0; i < parts.length; i++) {
-    _write(
-      '$titre ${_numero(i + 1, nbParts)} sur $nbParts',
-      parts[i],
-      note: '$note Manche ${i + 1} sur $nbParts.',
-      collection: collection ?? titre,
-      emoji: emoji,
-    );
-  }
-}
-
-// Au-dela de neuf manches, les numeros portent un zero devant : sans ca, la
-// bibliotheque triee par nom placerait « 10 sur 16 » juste apres « 1 sur 16 »,
-// avant « 2 sur 16 ».
-String _numero(int n, int total) => total >= 10 ? '$n'.padLeft(2, '0') : '$n';
-
-// Ce que le catalogue publiera, rempli au fil des écritures.
-final _catalogue = <Map<String, dynamic>>[];
-final _idsVus = <String, String>{};
-
-void _write(String titre, List<Entry> entries,
-    {required String note, required String collection, required String emoji}) {
-  final corps = {
-    'format': 'buzzer-questionnaire',
-    'version': 1,
-    'titre': titre,
-    'note': note,
-    // Range le fichier sous sa tuile dans la bibliothèque de l'app. Sans
-    // elle, les 125 fichiers arrivent en un seul tas.
-    'collection': collection,
-    'emoji': emoji,
-    'questions': entries.map((e) => e.toJson()).toList(),
-  };
-  final contenu = '${const JsonEncoder.withIndent('  ').convert(corps)}\n';
-
-  final id = _identifiant(titre);
-  final deja = _idsVus[id];
-  if (deja != null) {
-    stderr.writeln('Collision d\'identifiant « $id » : « $deja » et « $titre » '
-        'produisent le même nom de fichier.');
-    exit(1);
-  }
-  _idsVus[id] = titre;
-
-  final octets = utf8.encode(contenu);
-  File('$_outputDir/q/$id.json').writeAsStringSync(contenu);
-
-  // Combien de questions de chaque niveau. C'est ce qui permet à l'app
-  // d'annoncer la difficulté d'un questionnaire sur sa fiche, avant même de
-  // l'avoir téléchargé. Absent tant qu'aucune question n'est cotée.
-  final niveaux = <String, int>{};
-  for (final e in entries) {
-    if (e.niveau != null) {
-      niveaux['${e.niveau}'] = (niveaux['${e.niveau}'] ?? 0) + 1;
-    }
-  }
-
-  _catalogue.add({
-    'id': id,
-    'titre': titre,
-    'note': note,
-    'collection': collection,
-    'emoji': emoji,
-    'questions': entries.length,
-    if (niveaux.isNotEmpty) 'niveaux': niveaux,
-    'octets': octets.length,
-    // Empreinte du contenu : c'est ce qui permet à l'application de savoir
-    // qu'une copie locale est périmée après une régénération, au lieu de
-    // garder indéfiniment une vieille version sans le dire.
-    'empreinte': sha1.convert(octets).toString(),
-  });
-
-  stdout.writeln('  q/$id.json  (${entries.length})');
-}
-
-// Identifiant stable, sûr dans une URL. Les titres portent des accents, des
-// apostrophes et des espaces : « L'espace et le ciel 1 sur 3 » deviendrait
-// « L%27espace%20et%20le%20ciel... » dans une adresse, illisible et sensible
-// aux différences d'encodage entre Windows, Cloudflare et Dart. Le titre
-// lisible vit dans le JSON, pas dans le nom du fichier.
+// Ancre stable et sure dans une URL. Les noms de categorie portent des
+// accents, des apostrophes et des espaces : « Mots et langue » deviendrait
+// « Mots%20et%20langue » dans un href, illisible et sensible aux differences
+// d'encodage entre Windows, Cloudflare et Dart. Le nom lisible reste dans le
+// texte du lien.
 String _identifiant(String titre) => _strip(titre)
     .toLowerCase()
     .replaceAll(RegExp('[^a-z0-9]+'), '-')

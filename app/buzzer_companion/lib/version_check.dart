@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'questionnaires/catalogue.dart';
+import 'questionnaires/banque.dart';
 
 // Sait si une version plus récente de l'application est publiée.
 //
@@ -88,7 +88,7 @@ class VersionCheck extends ChangeNotifier {
 
     try {
       final reponse = await http
-          .get(Uri.parse('$kCatalogueUrl/version.json'))
+          .get(Uri.parse('$kSiteUrl/version.json'))
           .timeout(const Duration(seconds: 10));
       if (reponse.statusCode != 200) return;
       final parsed = jsonDecode(utf8.decode(reponse.bodyBytes));

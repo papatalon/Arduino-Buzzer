@@ -19,7 +19,7 @@ n'annonce rien quand les deux sont égaux. Rien ne le signalera.
 
 **L'adresse visée par le binaire.** Une version compilée pendant un essai
 local peut viser `localhost`. Elle s'installe, se lance, et ne trouve aucun
-questionnaire chez l'utilisateur. Vérification obligatoire à l'étape 4.
+banque de questions chez l'utilisateur. Vérification obligatoire à l'étape 4.
 
 **Les notes de version.** Elles sont la seule chose que l'utilisateur lit
 avant de télécharger, et le bandeau y renvoie par « Nouveautés ». Une
@@ -69,6 +69,12 @@ déduit le lien de téléchargement : rien à recopier à la main.
 
 Vérifier que `site/version.json` porte bien le nouveau numéro de build.
 
+**Cet ordre n'est pas négociable :** le générateur écrit aussi
+`assets/questions/banque.json`, la copie embarquée qui sert quand il n'y a pas
+de réseau. Construire le binaire avant de régénérer y enferme la banque de la
+version précédente, et rien ne le signale : l'écran se remplit, avec les
+questions d'avant. C'est ce que l'étape 7 vérifie.
+
 ## 4. Construire et vérifier le binaire
 
 ```bash
@@ -85,9 +91,8 @@ grep -ao "https://[a-z0-9.-]*/" app/buzzer_companion/build/windows/x64/runner/Re
 ```
 
 Doit contenir `https://buzzer.sd6tools.net`. Si on y voit `localhost` ou une
-adresse d'essai, la constante `kCatalogueUrl` de
-`lib/questionnaires/catalogue.dart` a été laissée de travers : corriger et
-reconstruire.
+adresse d'essai, la constante `kSiteUrl` de `lib/questionnaires/banque.dart`
+a été laissée de travers : corriger et reconstruire.
 
 ## 5. Empaqueter
 
@@ -178,12 +183,12 @@ Cloudflare Pages redéploie tout seul. Attendre, puis **vérifier pour de
 vrai** :
 
 ```bash
-cd app/buzzer_companion && dart run tool/verify_catalogue.dart
+cd app/buzzer_companion && dart run tool/verify_banque.dart
 curl -s https://buzzer.sd6tools.net/version.json
 curl -sIL -o /dev/null -w "%{http_code}\n" <lien de telechargement de la page>
 ```
 
-Les trois doivent passer : catalogue cohérent, `version.json` au nouveau
+Les trois doivent passer : banque cohérente, `version.json` au nouveau
 build, lien de téléchargement qui répond 200.
 
 ## Vérifier le bandeau, si on veut en être sûr

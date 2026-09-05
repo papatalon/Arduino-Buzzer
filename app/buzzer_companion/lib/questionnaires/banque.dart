@@ -30,7 +30,10 @@ import 'questionnaire.dart';
 // qui permet au tirage de filtrer sur n'importe quelle combinaison de
 // critères sans se demander quels fichiers aller chercher.
 
-const kBanqueUrl = 'https://buzzer.sd6tools.net';
+// Le site qui publie la banque, et où la vérification de version va lire son
+// version.json. Une seule constante pour les deux : c'est le même site, et le
+// jour où il déménage, un seul endroit doit changer.
+const kSiteUrl = 'https://buzzer.sd6tools.net';
 const kFormatBanque = 'buzzer-banque';
 const kAssetBanque = 'assets/questions/banque.json';
 
@@ -113,7 +116,7 @@ class Banque {
 class BanqueStore extends ChangeNotifier {
   Banque banque = Banque.vide;
 
-  static const baseUrl = kBanqueUrl;
+  static const baseUrl = kSiteUrl;
 
   bool loading = false;
   String? lastError;

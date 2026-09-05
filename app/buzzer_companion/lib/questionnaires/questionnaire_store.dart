@@ -40,10 +40,11 @@ class QuestionnaireFile {
   String get displayTitle => title.isNotEmpty ? title : name;
 }
 
-// La tuile qui regroupe tout ce dossier. Le classement de la bibliothèque se
-// fait désormais par PROVENANCE : le catalogue en lecture seule d'un côté, ce
-// que l'opérateur a écrit lui-même de l'autre. Un questionnaire personnel n'a
-// donc plus de collection à lui, et l'éditeur n'en demande plus.
+// Le nom sous lequel la bibliothèque regroupe ce dossier, et l'origine
+// inscrite sur un questionnaire mis en jeu. Depuis que les questionnaires
+// prédécoupés ont laissé la place à la banque, c'est la seule provenance
+// possible pour un fichier : un questionnaire n'a donc plus de collection à
+// lui, et l'éditeur n'en demande plus.
 const kPersonnalise = 'Personnalisé';
 const kEmojiPersonnalise = '✏️';
 
@@ -165,8 +166,8 @@ class QuestionnaireStore extends ChangeNotifier {
         ));
       }
       // Le plus récemment retouché en premier : c'est presque toujours celui
-      // qu'on rouvre. Ce dossier ne contient plus que du travail en cours,
-      // le catalogue vit ailleurs, alors la date reprend tout son sens.
+      // qu'on rouvre. Ce dossier ne contient que du travail de l'opérateur,
+      // alors la date de modification reprend tout son sens.
       found.sort((a, b) => b.modified.compareTo(a.modified));
       files = found;
       lastError = null;
@@ -216,10 +217,9 @@ class QuestionnaireStore extends ChangeNotifier {
     }
   }
 
-  // Copie un questionnaire du catalogue dans le dossier personnel, où il
-  // devient modifiable. Le nom est rendu unique au lieu d'écraser : dupliquer
-  // deux fois « Histoire 1 sur 8 » doit donner deux fichiers, pas un seul
-  // écrasé sans avertissement.
+  // Écrit une copie d'un questionnaire à côté de l'original. Le nom est rendu
+  // unique au lieu d'écraser : dupliquer deux fois « Party de Noël » doit
+  // donner deux fichiers, pas un seul écrasé sans avertissement.
   Future<String?> duplicate(Questionnaire source) async {
     try {
       final dir = await _ensureDir();
