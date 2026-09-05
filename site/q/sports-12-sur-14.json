@@ -8,19 +8,18 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Combien de tournois composent le grand chelem de tennis ?",
-      "reponse": "Quatre",
-      "niveau": 1,
+      "question": "Combien de points vaut la bille noire au snooker ?",
+      "reponse": "Sept",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Toronto ?",
-      "reponse": "Les Maple Leafs",
+      "question": "Dans quel objet l'arbitre souffle-t-il pour arrêter le jeu ?",
+      "reponse": "Un sifflet",
       "niveau": 1
     },
     {
@@ -31,35 +30,14 @@
     },
     {
       "categorie": "Sports",
+      "question": "Comment appelle-t-on le service réussi que l'adversaire ne touche pas au tennis ?",
+      "reponse": "Un as",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sports",
       "question": "Quelle gymnaste a obtenu le premier 10 parfait ?",
       "reponse": "Nadia Comăneci",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport combine ski de fond et tir ?",
-      "reponse": "Le biathlon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on les quatre coins que le coureur doit toucher au baseball ?",
-      "reponse": "Les buts",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de points vaut la bille noire au snooker ?",
-      "reponse": "Sept",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -74,6 +52,17 @@
     },
     {
       "categorie": "Sports",
+      "question": "Quel sport combine ski de fond et tir ?",
+      "reponse": "Le biathlon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
       "question": "Quel gardien détient le record de victoires en carrière ?",
       "reponse": "Martin Brodeur",
       "niveau": 2,
@@ -84,15 +73,38 @@
     },
     {
       "categorie": "Sports",
+      "question": "Combien de tournois composent le grand chelem de tennis ?",
+      "reponse": "Quatre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le coup qui renverse toutes les quilles d'un seul lancer ?",
+      "reponse": "Un abat",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
       "question": "Quelle écurie italienne de F1 est rouge ?",
       "reponse": "Ferrari",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le service réussi que l'adversaire ne touche pas au tennis ?",
-      "reponse": "Un as",
-      "niveau": 3
+      "question": "Sur quoi fait-on des culbutes au cours d'éducation physique ?",
+      "reponse": "Un tapis",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de combat n'utilise que les poings ?",
+      "reponse": "La boxe",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -118,20 +130,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme lance une boule de métal le plus loin possible ?",
-      "reponse": "Le lancer du poids",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Depuis quelle planche élastique s'élance le plongeur ?",
-      "reponse": "Un tremplin",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de combat n'utilise que les poings ?",
-      "reponse": "La boxe",
+      "question": "Comment appelle-t-on le match qui décide du championnat ?",
+      "reponse": "La finale",
       "niveau": 1
     },
     {
@@ -163,32 +163,37 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment s'appelle le joueur qui garde le filet au hockey ?",
-      "reponse": "Le gardien de but",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée les équipes de la Ligue nationale se disputent-elles au printemps ?",
-      "reponse": "La coupe Stanley",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel sport surfe sur la neige ?",
       "reponse": "La planche à neige",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme saute le plus loin possible dans un carré de sable ?",
-      "reponse": "Le saut en longueur",
+      "question": "Comment appelle-t-on les gradins remplis de partisans ?",
+      "reponse": "Les estrades",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée récompense le meilleur marqueur de la LNH ?",
+      "reponse": "Art Ross",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu consiste à se cacher pendant qu'un joueur compte les yeux fermés ?",
+      "reponse": "La cachette",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel jeu de cour d'école fait sauter par-dessus une corde qui tourne ?",
-      "reponse": "La corde à danser",
+      "question": "Dans quel grand bassin apprend-on à nager ?",
+      "reponse": "Une piscine",
       "niveau": 1
     }
   ]

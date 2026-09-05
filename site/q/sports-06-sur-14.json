@@ -8,8 +8,8 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel sport de glace utilise des pierres et des balais ?",
-      "reponse": "Le curling",
+      "question": "Quel jeu de gymnase oppose deux équipes qui se lancent des ballons pour éliminer les autres ?",
+      "reponse": "Le ballon chasseur",
       "niveau": 1
     },
     {
@@ -18,6 +18,46 @@
       "reponse": "Secretariat",
       "niveau": 3,
       "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le trait blanc où les coureurs s'alignent avant le coup de pistolet ?",
+      "reponse": "La ligne de départ",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport d'équipe se joue avec un bâton à filet au bout et une petite balle dure ?",
+      "reponse": "La crosse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport fait glisser un lugeur tête première sur la glace ?",
+      "reponse": "Le skeleton",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien d'anneaux entrelacés forment le symbole olympique ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport utilise-t-on un maillet à cheval ?",
+      "reponse": "Le polo",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
@@ -34,45 +74,6 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Edmonton ?",
-      "reponse": "Les Oilers",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu de gymnase oppose deux équipes qui se lancent des ballons pour éliminer les autres ?",
-      "reponse": "Le ballon chasseur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de kilomètres fait un triathlon olympique à vélo ?",
-      "reponse": "40",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport utilise-t-on un maillet à cheval ?",
-      "reponse": "Le polo",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
-      "reponse": "Un sauveteur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
       "question": "Sur quelle surface glacée se joue le hockey ?",
       "reponse": "La patinoire",
       "niveau": 1
@@ -85,11 +86,10 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de minutes dure un quart au football américain ?",
-      "reponse": "Quinze",
-      "niveau": 2,
+      "question": "Combien de kilomètres fait un triathlon olympique à vélo ?",
+      "reponse": "40",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -123,12 +123,6 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelles chaussures à roulettes se lacent aux pieds pour rouler sur l'asphalte ?",
-      "reponse": "Des patins à roues alignées",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel sprinteur canadien a gagné le 100 m aux JO de 1996 ?",
       "reponse": "Donovan Bailey",
       "niveau": 2,
@@ -136,6 +130,23 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de minutes dure un quart au football américain ?",
+      "reponse": "Quinze",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel anneau de plastique se fait tourner autour de la taille en dansant ?",
+      "reponse": "Un cerceau",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -149,26 +160,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la période supplémentaire quand le match est nul ?",
-      "reponse": "La prolongation",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport d'équipe se joue avec un bâton à filet au bout et une petite balle dure ?",
-      "reponse": "La crosse",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle carte l'arbitre de soccer montre-t-il pour avertir un joueur ?",
-      "reponse": "Un carton jaune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de roues a une planche à roulettes ?",
-      "reponse": "Quatre",
+      "question": "Quel équipement de cuir le joueur de baseball enfile-t-il pour attraper la balle ?",
+      "reponse": "Un gant de baseball",
       "niveau": 1
     },
     {
@@ -183,6 +176,12 @@
     },
     {
       "categorie": "Sports",
+      "question": "Combien de roues a une planche à roulettes ?",
+      "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
       "question": "Quel trophée remporte le champion de la LNH ?",
       "reponse": "La coupe Stanley",
       "niveau": 1
@@ -191,6 +190,12 @@
       "categorie": "Sports",
       "question": "Quel sport se joue avec un volant ?",
       "reponse": "Le badminton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le banc où le joueur puni doit s'asseoir ?",
+      "reponse": "Le banc des punitions",
       "niveau": 1
     }
   ]

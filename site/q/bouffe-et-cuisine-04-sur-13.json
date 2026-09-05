@@ -8,72 +8,48 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson fumé garnit le bagel classique ?",
-      "reponse": "Le saumon fumé",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle saucisse chaude se glisse dans un pain allongé ?",
-      "reponse": "Le hot-dog",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile troué égoutte les pâtes ?",
-      "reponse": "La passoire",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel liquide chaud et salé se mange à la cuillère avant le plat principal ?",
-      "reponse": "La soupe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle céréale est la base de l'alimentation en Asie ?",
-      "reponse": "Le riz",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel nom porte le jalapeño fumé ?",
-      "reponse": "Chipotle",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume à chapeau pousse dans le noir et se met sur la pizza ?",
-      "reponse": "Le champignon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande hachée garnit le pâté chinois ?",
-      "reponse": "Le bœuf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson chaude réconforte avec du cacao ?",
-      "reponse": "Chocolat chaud",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
       "question": "Quelle friandise glacée se tient par un bâton de bois ?",
       "reponse": "Un popsicle",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pomme de terre frite est en spirale ?",
-      "reponse": "Frite tornade",
+      "question": "Quel repas tardif combine déjeuner et dîner ?",
+      "reponse": "Le brunch",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit est l'ingrédient principal du cidre ?",
+      "reponse": "La pomme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain plat indien cuit dans un four tandoor ?",
+      "reponse": "Le naan",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la couche sucrée et colorée qui recouvre un gâteau ?",
+      "reponse": "Le glaçage",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert sicilien est un rouleau fourré à la ricotta ?",
+      "reponse": "Le cannoli",
       "niveau": 2,
       "ages": [
         "ados",
@@ -83,8 +59,14 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle sauce brune très salée accompagne les sushis ?",
-      "reponse": "Sauce soya",
+      "question": "Quel repas se mange dehors, assis sur une couverture ?",
+      "reponse": "Un pique-nique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit rouge garnit le shortcake ?",
+      "reponse": "La fraise",
       "niveau": 1
     },
     {
@@ -95,69 +77,14 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel condiment vert fait de cornichons hachés garnit le hot-dog ?",
-      "reponse": "La relish",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel bonbon rond se tient au bout d'un bâton ?",
-      "reponse": "Un suçon",
+      "question": "Quel sandwich fondant au fromage est grillé ?",
+      "reponse": "Le grilled cheese",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie ronde se décore de glaçage pour une fête ?",
-      "reponse": "Le gâteau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert meringué porte le nom d'une ballerine ?",
-      "reponse": "La pavlova",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel bonhomme de biscuit court dans les contes ?",
-      "reponse": "Pain d'épice",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Avec quel lait fait-on la feta traditionnelle ?",
-      "reponse": "Lait de brebis",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat provençal mijote des légumes et aubergines ?",
-      "reponse": "La ratatouille",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle racine piquante parfume les biscuits de Noël ?",
-      "reponse": "Le gingembre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel élément croquant garnit la salade César ?",
-      "reponse": "Des croûtons",
+      "question": "Quel légume orange se creuse et se sculpte à l'Halloween ?",
+      "reponse": "La citrouille d'Halloween",
       "niveau": 1
     },
     {
@@ -173,9 +100,87 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel pain rond troué se mange grillé avec du fromage à la crème ?",
-      "reponse": "Le bagel",
+      "question": "Quelle boisson chaude réconforte avec du cacao ?",
+      "reponse": "Chocolat chaud",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat brésilien est un ragoût de haricots noirs ?",
+      "reponse": "La feijoada",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil garde le lait et les légumes au froid ?",
+      "reponse": "Le réfrigérateur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume principal compose le guacamole ?",
+      "reponse": "L'avocat",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle collation salée et croquante a la forme d'un nœud ?",
+      "reponse": "Le bretzel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson indienne mélange yogourt et mangue ?",
+      "reponse": "Le lassi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle volaille trône au repas de Noël ?",
+      "reponse": "La dinde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel maïs éclate au cinéma ?",
+      "reponse": "Le popcorn",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume blanc en bouquets ressemble à un brocoli pâle ?",
+      "reponse": "Le chou-fleur",
       "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte à base de tomates nappe les pizzas ?",
+      "reponse": "La sauce tomate",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel colonel a fondé la chaîne de poulet PFK ?",
+      "reponse": "Sanders",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
+      "reponse": "Le smoked meat",
+      "niveau": 3
     }
   ]
 }

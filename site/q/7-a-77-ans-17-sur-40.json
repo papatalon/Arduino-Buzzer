@@ -7,26 +7,9 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle soupe japonaise est à base de pâte de soja ?",
-      "reponse": "La soupe miso",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la matière où l'on apprend à compter ?",
-      "reponse": "Les mathématiques",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon a une casquette rouge et chasse des Pokémon ?",
-      "reponse": "Sacha",
+      "categorie": "Culture pop",
+      "question": "Dans quel film d'animation une famille colombienne vit-elle dans une maison magique ?",
+      "reponse": "Encanto",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -35,16 +18,15 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville se trouve la tour Eiffel ?",
-      "reponse": "Paris",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Le dauphin est-il un poisson ou un mammifère ?",
-      "reponse": "Un mammifère",
-      "niveau": 1
+      "categorie": "Musique",
+      "question": "Quel style musical vient de la Jamaïque ?",
+      "reponse": "Le reggae",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -57,9 +39,97 @@
       ]
     },
     {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville se trouve la tour Eiffel ?",
+      "reponse": "Paris",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri de la vache ?",
+      "reponse": "Le meuglement",
+      "niveau": 1
+    },
+    {
       "categorie": "Sciences et nature",
-      "question": "Combien de planètes dans le système solaire ?",
-      "reponse": "Huit",
+      "question": "En quelle saison les feuilles des arbres tombent-elles ?",
+      "reponse": "L'automne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le père des Simpson ?",
+      "reponse": "Homer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Queen fait taper des pieds et des mains sur « We will, we will... » ?",
+      "reponse": "We Will Rock You",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport utilise-t-on un fer et un vert ?",
+      "reponse": "Le golf",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du cheval ?",
+      "reponse": "Le poulain",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle langue parle-t-on au Québec ?",
+      "reponse": "Le français",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas tardif combine déjeuner et dîner ?",
+      "reponse": "Le brunch",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de jours dans une semaine ?",
+      "reponse": "Sept",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle épreuve d'athlétisme saute le plus loin possible dans un carré de sable ?",
+      "reponse": "Le saut en longueur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Sous quel objet ne faut-il pas passer selon la superstition ?",
+      "reponse": "Une échelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de sandwichs fait choisir son pain et ses garnitures au comptoir ?",
+      "reponse": "Subway",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel traîneau de bois aux lattes recourbées glisse sur la neige au Québec ?",
+      "reponse": "La traîne sauvage",
       "niveau": 1
     },
     {
@@ -75,125 +145,45 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie être sage comme une image ?",
-      "reponse": "Être très tranquille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'eau salée qu'on ne peut pas boire ?",
-      "reponse": "L'eau de mer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne des chaussures de sport ?",
-      "reponse": "Des espadrilles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle épreuve combine dix disciplines ?",
-      "reponse": "Le décathlon",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel signe de ponctuation termine une phrase ordinaire ?",
-      "reponse": "Le point",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson chante-t-on en frappant des mains autour d'un gâteau à bougies ?",
-      "reponse": "Bonne fête",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu provençal lance des boules vers un cochonnet ?",
-      "reponse": "La pétanque",
+      "question": "Quel est le contraire de chaud ?",
+      "reponse": "Froid",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel repas québécois se mange le midi ?",
-      "reponse": "Le dîner",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles chaussures de caoutchouc percées de trous divisent la planète ?",
-      "reponse": "Les Crocs",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Combien de voyelles dans l'alphabet français ?",
-      "reponse": "Six",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon est élevé par les loups dans la jungle ?",
-      "reponse": "Mowgli",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit des détenues ?",
-      "reponse": "Unité 9",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel liquide chaud et salé se mange à la cuillère avant le plat principal ?",
-      "reponse": "La soupe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport utilise-t-on un maillet à cheval ?",
-      "reponse": "Le polo",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de jours dans une semaine ?",
-      "reponse": "Sept",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la douce chanson qu'on chante pour endormir un bébé ?",
-      "reponse": "Une berceuse",
+      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
+      "reponse": "Le club sandwich",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Qui a développé la théorie de la relativité ?",
-      "reponse": "Einstein",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel animal roux au museau pointu passe pour rusé dans les fables ?",
+      "reponse": "Le renard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse Disney vit avec sept nains ?",
+      "reponse": "Blanche-Neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit jaune les singes adorent-ils ?",
+      "reponse": "La banane",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la voie bordée de maisons où l'on habite en ville ?",
+      "reponse": "Une rue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film Pixar une maison vole-t-elle avec des ballons ?",
+      "reponse": "Là-haut",
+      "niveau": 1
     }
   ]
 }

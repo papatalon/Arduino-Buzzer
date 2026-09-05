@@ -7,39 +7,37 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on une œuvre écrite pour un soliste accompagné d'un orchestre ?",
+      "reponse": "Un concerto",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Géographie",
-      "question": "Quel lac est le plus profond du monde ?",
-      "reponse": "Le Baïkal",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel moine a affiché 95 thèses en 1517 ?",
-      "reponse": "Luther",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson indienne mélange yogourt et mangue ?",
-      "reponse": "Le lassi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Dans quel pays d'Afrique se trouve la grande réserve du Masai Mara ?",
+      "reponse": "Le Kenya",
+      "niveau": 3
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
-      "reponse": "La dionée",
+      "question": "Quel métal précieux conduit le mieux l'électricité ?",
+      "reponse": "L'argent",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel tambour à main vient d'Irlande ?",
+      "reponse": "Le bodhrán",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -47,39 +45,19 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle infirmière anglaise a soigné les soldats à la lampe pendant la guerre de Crimée ?",
-      "reponse": "Florence Nightingale",
+      "categorie": "Musique",
+      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
+      "reponse": "Klô Pelgag",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?",
-      "reponse": "Le Bossu de Notre-Dame",
-      "niveau": 3,
-      "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle bénédiction le père de famille donnait-il aux siens le matin du 1er janvier ?",
-      "reponse": "La bénédiction paternelle",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel programme de récompenses accumule des points bleus chez plusieurs commerçants ?",
-      "reponse": "Air Miles",
+      "categorie": "Mots et langue",
+      "question": "Combien de pays ont le français comme langue officielle : 9, 29 ou 59 ?",
+      "reponse": "29",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -87,9 +65,34 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle ville du Québec accueille chaque été le Festival de la poutine ?",
-      "reponse": "Drummondville",
+      "categorie": "Culture pop",
+      "question": "Quelle petite radio portative à pile a libéré la musique des salons ?",
+      "reponse": "Le transistor",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style jamaïcain a précédé le reggae ?",
+      "reponse": "Le ska",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la longue route de campagne bordée de fermes au Québec ?",
+      "reponse": "Un rang",
+      "niveau": 3
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte à tartiner australienne est très salée ?",
+      "reponse": "La Vegemite",
       "niveau": 3,
       "ages": [
         "ados",
@@ -98,93 +101,126 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel écrivain russe a écrit Guerre et Paix ?",
-      "reponse": "Tolstoï",
+      "categorie": "Géographie",
+      "question": "Quel pays insulaire du nord de l'Atlantique compte des volcans et des geysers ?",
+      "reponse": "L'Islande",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit disque contenait une chanson de chaque côté ?",
+      "reponse": "Le 45 tours",
       "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle plongeuse de Laval a gagné l'argent en tremplin synchro à Tokyo ?",
-      "reponse": "Jennifer Abel",
+      "question": "Combien de kilomètres fait un triathlon olympique à vélo ?",
+      "reponse": "40",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Qui livrait les bouteilles de lait à la porte des maisons ?",
-      "reponse": "Le laitier",
-      "niveau": 3,
-      "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse colombienne a chanté Provenza ?",
-      "reponse": "Karol G",
+      "categorie": "Culture pop",
+      "question": "Quelle émission de variétés pour adolescents Véronique Cloutier a-t-elle animée ?",
+      "reponse": "La Fureur",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel empereur romain a légalisé le christianisme ?",
+      "reponse": "Constantin",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel secteur de Montréal regroupe salles de spectacle et festivals au centre-ville ?",
-      "reponse": "Le Quartier des spectacles",
+      "question": "Quel grand musée du Vieux-Port de Québec a ouvert ses portes en 1988 ?",
+      "reponse": "Le Musée de la civilisation",
       "niveau": 3,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les longues routes pavées construites par les Romains ?",
+      "reponse": "Les voies romaines",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?",
+      "reponse": "Le yéyé",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année l'URSS a-t-elle disparu ?",
+      "reponse": "1991",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe a chanté Smoke on the Water ?",
+      "reponse": "Deep Purple",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle arme se tendait avec une manivelle et tirait un carreau ?",
+      "reponse": "L'arbalète",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?",
+      "reponse": "La lessiveuse à tordeur",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
+      "reponse": "MusiquePlus",
+      "niveau": 3,
+      "ages": [
         "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel compositeur français a écrit le Boléro ?",
-      "reponse": "Ravel",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la peur qui saisit un artiste juste avant d'entrer en scène ?",
-      "reponse": "Le trac",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Que rapportait-on à l'épicerie pour récupérer quelques sous ?",
-      "reponse": "Les bouteilles vides",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel accessoire rembourré élargissait les épaules des vestons dans les années 80 ?",
-      "reponse": "L'épaulette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
       ]
     },
     {
@@ -198,62 +234,11 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel rappeur américain a reçu un prix Pulitzer pour un album ?",
-      "reponse": "Kendrick Lamar",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles billes de plastique s'ouvrent en figurine au contact d'une carte ?",
-      "reponse": "Les Bakugan",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle bataille vit trois cents Spartiates tenir un défilé étroit ?",
-      "reponse": "Les Thermopyles",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la longue lettre gravée dans la pierre pour raconter un règne ?",
-      "reponse": "Une inscription",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Québec",
-      "question": "Quels canots géants transportaient les fourrures ?",
-      "reponse": "Canots de maître",
+      "question": "Quelle barrière de longues pièces de bois croisées entourait les vieilles fermes d'ici ?",
+      "reponse": "Une clôture de perches",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne une soirée où l'on boit entre amis ?",
-      "reponse": "Un 5 à 7",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]

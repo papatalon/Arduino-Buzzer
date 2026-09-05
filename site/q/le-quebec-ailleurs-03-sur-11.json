@@ -7,113 +7,70 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Céline Dion ouvre par une flûte irlandaise ?",
-      "reponse": "My Heart Will Go On",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
-      "reponse": "La guignolée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
-      "reponse": "Pierre Falardeau",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel lanceur québécois a gagné un Cy Young ?",
-      "reponse": "Éric Gagné",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois jouait le concierge Symphorien ?",
-      "reponse": "Gilles Latulippe",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse traditionnelle québécoise se danse à quatre couples sur les appels d'un câlleur ?",
-      "reponse": "Le set carré",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel repas se prend le midi au Québec ?",
-      "reponse": "Le dîner",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Montréal ?",
-      "reponse": "Un Montréalais",
+      "question": "Que signifie niaiser quelqu'un, au Québec ?",
+      "reponse": "Le taquiner",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle montagne se dresse au milieu de Montréal ?",
+      "reponse": "Le mont Royal",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
-      "reponse": "La Bolduc",
+      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
+      "reponse": "Le 7 Jours",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel caillou céleste brille en traversant l'atmosphère ?",
-      "reponse": "L'étoile filante",
-      "niveau": 1
+      "categorie": "Musique",
+      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
+      "reponse": "La podorythmie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
-      "reponse": "Bleu Jeans Bleu",
-      "niveau": 3,
+      "categorie": "Culture pop",
+      "question": "Quelle série québécoise d'Anne Dorval et Daniel Brière suivait une famille de trois garçons ?",
+      "reponse": "Les Parent",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert québécois est un gâteau arrosé de sauce sucrée ?",
-      "reponse": "Pouding chômeur",
-      "niveau": 1
+      "categorie": "Cinéma et télé",
+      "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
+      "reponse": "Le Banquier",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel objet orange envahit les rues de Montréal chaque été ?",
-      "reponse": "Le cône",
+      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
+      "reponse": "Les Denis Drolet",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de coupes Stanley pour les Canadiens de Montréal ?",
+      "reponse": "24",
       "niveau": 2,
       "ages": [
         "ados",
@@ -122,12 +79,23 @@
       ]
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
+      "reponse": "Le pain doré",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois pantoute ?",
+      "reponse": "Pas du tout",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne éducative appartient au gouvernement du Québec ?",
-      "reponse": "Télé-Québec",
-      "niveau": 2,
+      "question": "Quelle autrice et animatrice québécoise a abordé les tabous à la télé pendant des décennies ?",
+      "reponse": "Janette Bertrand",
+      "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
@@ -144,8 +112,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel grand festival de musique se tient sur les plaines d'Abraham en juillet ?",
-      "reponse": "Le Festival d'été de Québec",
+      "question": "Quel festival de musique se tient chaque été au parc Jean-Drapeau à Montréal ?",
+      "reponse": "Osheaga",
       "niveau": 2,
       "ages": [
         "ados",
@@ -153,9 +121,34 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande île du golfe Saint-Laurent ?",
-      "reponse": "Anticosti",
+      "categorie": "Culture pop",
+      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
+      "reponse": "Les Baronets",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
+      "reponse": "La guignolée",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?",
+      "reponse": "La tire sur la neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel humoriste québécois au débit très rapide a animé de nombreux galas ?",
+      "reponse": "Louis-José Houde",
       "niveau": 2,
       "ages": [
         "ados",
@@ -165,29 +158,19 @@
     },
     {
       "categorie": "Sports",
-      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
-      "reponse": "Montréal",
+      "question": "Quelle équipe de baseball a joué à Montréal ?",
+      "reponse": "Les Expos",
       "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission jeunesse québécoise est revenue à la télé en 2019, trente ans après ?",
-      "reponse": "Passe-Partout",
-      "niveau": 2,
-      "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle plage du Maine est la destination classique des vacances québécoises ?",
-      "reponse": "Old Orchard",
+      "categorie": "Cinéma et télé",
+      "question": "Quel groupe québécois a parodié les années 80 à la télé ?",
+      "reponse": "RBO",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -195,30 +178,35 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
-      "reponse": "Nézet-Séguin",
+      "categorie": "Culture pop",
+      "question": "Quel imitateur québécois a chanté en enchaînant des dizaines de voix célèbres ?",
+      "reponse": "André-Philippe Gagnon",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
+      "reponse": "Le smoked meat",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
-      "reponse": "L'Ontario",
+      "question": "Quelle baie géante borde le nord du Québec ?",
+      "reponse": "Baie d'Hudson",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
-      "reponse": "Expo 67",
-      "niveau": 3,
+      "categorie": "Sports",
+      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
+      "reponse": "Alexandre Bilodeau",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     }
   ]

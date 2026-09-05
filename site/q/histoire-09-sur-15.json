@@ -8,20 +8,34 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'ensemble des nobles qui entouraient le roi ?",
-      "reponse": "La cour",
-      "niveau": 3
+      "question": "Quel rover s'est posé sur Mars en 2012 ?",
+      "reponse": "Curiosity",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel fleuve faisait pousser les récoltes des Égyptiens en débordant chaque année ?",
-      "reponse": "Le Nil",
+      "question": "Quel animal a allaité Romulus et Rémus ?",
+      "reponse": "Une louve",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle construction de béton a coupé une capitale allemande en deux jusqu'en 1989 ?",
-      "reponse": "Le mur de Berlin",
+      "question": "Quelle armée de statues garde le tombeau du premier empereur chinois ?",
+      "reponse": "L'armée de terre cuite",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel musicien voyageur chantait des poèmes de château en château ?",
+      "reponse": "Un troubadour",
       "niveau": 3,
       "ages": [
         "ados",
@@ -31,36 +45,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel roi de France a été guillotiné en 1793 ?",
-      "reponse": "Louis XVI",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle date exacte est le jour J ?",
-      "reponse": "Le 6 juin 1944",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Que hisse-t-on sur les mâts pour que le vent pousse un navire ancien ?",
-      "reponse": "Les voiles",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année le Canada a-t-il adopté son drapeau actuel ?",
-      "reponse": "1965",
+      "question": "Quelle fut la première île d'exil de Napoléon ?",
+      "reponse": "L'île d'Elbe",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -69,9 +55,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel mathématicien anglais a cassé le code Enigma ?",
-      "reponse": "Alan Turing",
-      "niveau": 2,
+      "question": "Quel grand navire de guerre espagnol transportait l'or des Amériques ?",
+      "reponse": "Le galion",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -80,124 +66,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Dans quelle ville est née la démocratie ?",
-      "reponse": "Athènes",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle date redoutaient les informaticiens en 1999 ?",
-      "reponse": "Le 1er janvier 2000",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention permet de voir des images animées chez soi depuis les années 1950 ?",
-      "reponse": "La télévision",
+      "question": "Quelle mission a posé les premiers hommes sur la Lune ?",
+      "reponse": "Apollo 11",
       "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année a débuté la Révolution française ?",
-      "reponse": "1789",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel drapeau les astronautes ont-ils planté sur la Lune en 1969 ?",
-      "reponse": "Le drapeau américain",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Où se tenaient les courses de chars à Rome ?",
-      "reponse": "Le Circus Maximus",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel objet les premiers explorateurs utilisaient-ils pour trouver le nord ?",
-      "reponse": "Une boussole",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel appareil garde les aliments au froid depuis un siècle, remplaçant la glacière ?",
-      "reponse": "Le réfrigérateur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle base américaine fut attaquée en décembre 1941 ?",
-      "reponse": "Pearl Harbor",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle guerre opposa France et Angleterre pendant 116 ans ?",
-      "reponse": "Guerre de Cent Ans",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le chef qui régnait sur tout l'Empire romain ?",
-      "reponse": "Un empereur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle femme pharaon portait une fausse barbe cérémoniale ?",
-      "reponse": "Hatchepsout",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on les rois de l'Égypte ancienne ?",
-      "reponse": "Les pharaons",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle crise de 1962 concernait des missiles ?",
-      "reponse": "Crise de Cuba",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Histoire",
@@ -212,8 +83,20 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la longue lettre gravée dans la pierre pour raconter un règne ?",
-      "reponse": "Une inscription",
+      "question": "Comment appelle-t-on le bandit des mers qui attaquait les navires ?",
+      "reponse": "Un pirate",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel empereur fut couronné à Rome en l'an 800 ?",
+      "reponse": "Charlemagne",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quel navire Darwin a-t-il navigué ?",
+      "reponse": "Le Beagle",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -222,8 +105,110 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Qui fut le premier homme sur la Lune ?",
-      "reponse": "Neil Armstrong",
+      "question": "Quelle première ministre fut surnommée la Dame de fer ?",
+      "reponse": "Thatcher",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle roue à aubes servait à moudre le grain au bord d'une rivière ?",
+      "reponse": "Le moulin à eau",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la grande demeure luxueuse d'un roi ?",
+      "reponse": "Un palais",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle guerre d'Asie a pris fin en 1975 ?",
+      "reponse": "Vietnam",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le premier homme dans l'espace ?",
+      "reponse": "Youri Gagarine",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel chirurgien a réalisé la première greffe du cœur ?",
+      "reponse": "Christiaan Barnard",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quel support les Mésopotamiens gravaient-ils leur écriture avec un roseau ?",
+      "reponse": "Les tablettes d'argile",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle machine allemande codait les messages nazis ?",
+      "reponse": "Enigma",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel leader pacifiste a libéré l'Inde ?",
+      "reponse": "Gandhi",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le paysan qui travaillait la terre du seigneur ?",
+      "reponse": "Un serf",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre canadien a dirigé pendant la Seconde Guerre ?",
+      "reponse": "Mackenzie King",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel physicien a formulé E=mc2 ?",
+      "reponse": "Einstein",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle machine de siège lançait des pierres par-dessus les murailles ?",
+      "reponse": "La catapulte",
       "niveau": 1
     }
   ]

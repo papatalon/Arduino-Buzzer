@@ -7,9 +7,9 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quelle ligue de hockey junior regroupe les équipes du Québec et des Maritimes ?",
-      "reponse": "La LHJMQ",
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?",
+      "reponse": "L'écoute en rafale",
       "niveau": 3,
       "ages": [
         "ados",
@@ -18,15 +18,72 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
-      "reponse": "L'Alberta",
-      "niveau": 3
+      "categorie": "Histoire",
+      "question": "Quel explorateur portugais a contourné l'Afrique en 1498 ?",
+      "reponse": "Vasco de Gama",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle tartelette portugaise est à la crème ?",
+      "reponse": "Pastel de nata",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle autoroute mène de Montréal vers les Laurentides ?",
+      "reponse": "La 15",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel bonbon acidulé se vend en poudre avec un petit bâton à tremper ?",
+      "reponse": "Le Fun Dip",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
+      "reponse": "Le Wordle",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel explorateur a cherché la fontaine de Jouvence en Floride ?",
+      "reponse": "Ponce de León",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a raflé les Junos avec l'album Phoenix ?",
-      "reponse": "Charlotte Cardin",
+      "question": "Quelle pédale déforme le son de la guitare pour le rendre saturé ?",
+      "reponse": "La distorsion",
       "niveau": 3,
       "ages": [
         "ados",
@@ -35,18 +92,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Dans Pierre et le loup, quel instrument joue le loup ?",
-      "reponse": "Le cor",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le paysan qui travaillait la terre du seigneur ?",
-      "reponse": "Un serf",
+      "question": "Quelle danse traditionnelle québécoise se danse à quatre couples sur les appels d'un câlleur ?",
+      "reponse": "Le set carré",
       "niveau": 3,
       "ages": [
         "ados",
@@ -55,45 +102,18 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la couche de glace qui se forme au bord des toits ?",
-      "reponse": "Une barrière de glace",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
-      "reponse": "Coup de Pouce",
+      "question": "Quel descripteur de hockey a marqué des générations par son français impeccable ?",
+      "reponse": "René Lecavalier",
       "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Taj Mahal ?",
-      "reponse": "L'Inde",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle région québécoise occupe un cratère de météorite ?",
-      "reponse": "Charlevoix",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelles sondes jumelles ont été lancées en 1977 ?",
-      "reponse": "Voyager",
+      "categorie": "Sports",
+      "question": "Qui a inventé le basketball ?",
+      "reponse": "James Naismith",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -102,8 +122,54 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la voix masculine aiguë des grands airs d'opéra ?",
-      "reponse": "Le ténor",
+      "question": "Quel artiste québécois a fait sensation avec l'album Darlène ?",
+      "reponse": "Hubert Lenoir",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quelle ville Jeanne d'Arc fut-elle brûlée ?",
+      "reponse": "Rouen",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve Petra, la cité rose ?",
+      "reponse": "La Jordanie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument de flûtes de longueurs différentes se joue en soufflant à leur bord ?",
+      "reponse": "La flûte de Pan",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel compositeur russe a écrit Casse-Noisette ?",
+      "reponse": "Tchaïkovski",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu télévisé québécois demande de repérer celui qui ment ?",
+      "reponse": "Le Tricheur",
       "niveau": 3,
       "ages": [
         "ados",
@@ -112,13 +178,29 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne de café québécoise porte le nom de son fondateur ?",
-      "reponse": "Van Houtte",
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?",
+      "reponse": "Une corde de bois",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Maroc ?",
+      "reponse": "Rabat",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
+      "reponse": "Grand Theft Auto",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     },
     {
@@ -131,37 +213,25 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel petit instrument à cordes italien se pince avec un médiator ?",
-      "reponse": "La mandoline",
+      "categorie": "Histoire",
+      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
+      "reponse": "Traité de Paris",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
-      "reponse": "Un missionnaire",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel savant a découvert le vaccin contre la rage ?",
-      "reponse": "Pasteur",
+      "question": "Quelle longue habitation abritait plusieurs familles chez les Iroquoiens ?",
+      "reponse": "La maison longue",
       "niveau": 3
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à tartiner australienne est très salée ?",
-      "reponse": "La Vegemite",
+      "categorie": "Musique",
+      "question": "Quel objet à ressort le professeur de musique frappe-t-il pour donner le la ?",
+      "reponse": "Un diapason",
       "niveau": 3,
       "ages": [
         "ados",
@@ -170,73 +240,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel trompettiste avait les joues gonflées célèbres ?",
-      "reponse": "Dizzy Gillespie",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit boîtier rond de poche contient une maison miniature ?",
-      "reponse": "Le Polly Pocket",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Où logeait le curé de la paroisse ?",
-      "reponse": "Au presbytère",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de cirque marche sur un fil tendu en hauteur ?",
-      "reponse": "Le funambulisme",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle plateforme les pirates faisaient-ils parcourir aux prisonniers au-dessus de l'eau ?",
-      "reponse": "La planche",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
-      "reponse": "Les Baronets",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel animateur québécois mène une émission de musique en direct avec un band maison ?",
-      "reponse": "Normand Brathwaite",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel artiste a mêlé country et rap dans Old Town Road ?",
-      "reponse": "Lil Nas X",
+      "categorie": "Québec",
+      "question": "Quelle bibliothèque nationale ouverte en 2005 se dresse près de Berri-UQAM ?",
+      "reponse": "La Grande Bibliothèque",
       "niveau": 3,
       "ages": [
         "ados",

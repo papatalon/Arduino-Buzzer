@@ -8,26 +8,20 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Combien de temps dure une punition mineure au hockey ?",
-      "reponse": "Deux minutes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la faute du joueur de soccer parti trop tôt derrière la défense ?",
-      "reponse": "Le hors-jeu",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel jeu de cour d'école consiste à courir après les autres pour les toucher ?",
       "reponse": "La tag",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle activité se pratique avec une canne et un hameçon ?",
-      "reponse": "La pêche",
+      "question": "Quel sport de glisse se pratique sur une piste avec des bâtons dans les mains ?",
+      "reponse": "Le ski alpin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de temps dure une punition mineure au hockey ?",
+      "reponse": "Deux minutes",
       "niveau": 1
     },
     {
@@ -42,12 +36,45 @@
     },
     {
       "categorie": "Sports",
+      "question": "Comment s'appelle le centre de la cible aux fléchettes ?",
+      "reponse": "Le bullseye",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel numéro de tissu le coureur épingle-t-il sur sa poitrine ?",
+      "reponse": "Un dossard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle activité se pratique avec une canne et un hameçon ?",
+      "reponse": "La pêche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
       "question": "Quel gardien québécois a popularisé le style papillon ?",
       "reponse": "Patrick Roy",
       "niveau": 2,
       "ages": [
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel quart-arrière a gagné sept Super Bowls ?",
+      "reponse": "Tom Brady",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     },
     {
@@ -64,19 +91,20 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel anneau gonflable aide les petits à flotter ?",
-      "reponse": "Une bouée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel quart-arrière a gagné sept Super Bowls ?",
-      "reponse": "Tom Brady",
-      "niveau": 1,
+      "question": "Quel sport enchaîne obstacles, murs et sauts en pleine ville ?",
+      "reponse": "Le parkour",
+      "niveau": 2,
       "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Depuis quelle planche élastique s'élance le plongeur ?",
+      "reponse": "Un tremplin",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -90,14 +118,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment s'appelle le centre de la cible aux fléchettes ?",
-      "reponse": "Le bullseye",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on la pause au milieu d'un match de soccer ?",
+      "reponse": "La mi-temps",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -123,9 +146,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport fait rouler une planche sur des rampes dans un parc ?",
-      "reponse": "La planche à roulettes",
-      "niveau": 1
+      "question": "Dans quel sport marque-t-on des essais ?",
+      "reponse": "Le rugby",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -135,8 +163,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la personne qui dirige une équipe depuis le banc ?",
-      "reponse": "L'entraîneur",
+      "question": "Comment appelle-t-on l'exercice qu'une équipe fait avant le match pour se réchauffer ?",
+      "reponse": "L'échauffement",
       "niveau": 1
     },
     {
@@ -158,12 +186,6 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de glisse se pratique sur une piste avec des bâtons dans les mains ?",
-      "reponse": "Le ski alpin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel numéro portait Wayne Gretzky ?",
       "reponse": "99",
       "niveau": 1,
@@ -175,25 +197,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le trait blanc où les coureurs s'alignent avant le coup de pistolet ?",
-      "reponse": "La ligne de départ",
+      "question": "Quel objet rond et gonflé frappe-t-on à la volée sur la plage ?",
+      "reponse": "Le ballon de plage",
       "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au basketball ?",
-      "reponse": "Cinq",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
-      "reponse": "Georges St-Pierre",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
     }
   ]
 }

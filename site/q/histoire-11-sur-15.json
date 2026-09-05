@@ -8,8 +8,36 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quel chemin de fer a uni le Canada en 1885 ?",
-      "reponse": "Canadien Pacifique",
+      "question": "Comment appelait-on les rois de l'Égypte ancienne ?",
+      "reponse": "Les pharaons",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle ville a été fondée en 1642 sous le nom de Ville-Marie ?",
+      "reponse": "Montréal",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel empire avait Rome pour capitale ?",
+      "reponse": "L'Empire romain",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année le Canada a-t-il adopté son drapeau actuel ?",
+      "reponse": "1965",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel cercle de pierres dressées se dresse dans une plaine anglaise ?",
+      "reponse": "Stonehenge",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,8 +47,111 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Dans quel cercueil décoré déposait-on la momie d'un pharaon ?",
-      "reponse": "Un sarcophage",
+      "question": "Comment appelle-t-on la période qui suit l'Antiquité, celle des châteaux forts ?",
+      "reponse": "Le Moyen Âge",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel tunnel sous la mer a ouvert en 1994 ?",
+      "reponse": "Sous la Manche",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel avion supersonique reliait Paris et New York ?",
+      "reponse": "Le Concorde",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle grande bibliothèque antique a brûlé ?",
+      "reponse": "Alexandrie",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "De quoi étaient faits les premiers outils des hommes préhistoriques ?",
+      "reponse": "De pierre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année a eu lieu la Confédération canadienne ?",
+      "reponse": "1867",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel tissu précieux venait de Chine par une longue route caravanière ?",
+      "reponse": "La soie",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quelle ville Jeanne d'Arc fut-elle brûlée ?",
+      "reponse": "Rouen",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel pharaon bâtisseur a régné 66 ans ?",
+      "reponse": "Ramsès II",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle arme de jet permettait aux chasseurs préhistoriques d'atteindre les bêtes de loin ?",
+      "reponse": "Une lance",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel petit navire rapide Christophe Colomb utilisait-il pour ses voyages ?",
+      "reponse": "Une caravelle",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
+      "reponse": "Pizarro",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention fixe une image sur du papier depuis le 19e siècle ?",
+      "reponse": "La photographie",
       "niveau": 2
     },
     {
@@ -31,45 +162,20 @@
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année le Titanic a-t-il coulé ?",
-      "reponse": "1912",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle encyclopédie en ligne, lancée en 2001, est écrite par ses lecteurs ?",
-      "reponse": "Wikipédia",
+      "question": "Quels dirigeables allemands portaient un nom de comte ?",
+      "reponse": "Les zeppelins",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel coureur unijambiste a traversé une partie du Canada pour la recherche sur le cancer ?",
-      "reponse": "Terry Fox",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la trace d'un animal préhistorique conservée dans la pierre ?",
-      "reponse": "Un fossile",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel tombeau égyptien fut découvert en 1922 ?",
-      "reponse": "Toutankhamon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année a pris fin la Première Guerre mondiale ?",
-      "reponse": "1918",
-      "niveau": 2,
+      "question": "Comment appelle-t-on la longue lettre gravée dans la pierre pour raconter un règne ?",
+      "reponse": "Une inscription",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -82,116 +188,19 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Qui a couru le Marathon de l'espoir en 1980 ?",
-      "reponse": "Terry Fox",
+      "question": "Quel navigateur a mené la première expédition autour du monde ?",
+      "reponse": "Magellan",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel navigateur a traversé l'Atlantique en 1492 et atteint l'Amérique ?",
-      "reponse": "Christophe Colomb",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Dans quel bâtiment fortifié vivaient les rois et les reines du Moyen Âge ?",
-      "reponse": "Un château",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année le drapeau rouge et blanc du Canada a-t-il été adopté ?",
-      "reponse": "1965",
+      "question": "Quelle station spatiale russe a précédé l'ISS ?",
+      "reponse": "Mir",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle grippe a fait des millions de morts en 1918 ?",
-      "reponse": "Grippe espagnole",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Que portaient les chevaliers pour protéger leur corps au combat ?",
-      "reponse": "Une armure",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les longues bandes de terre perpendiculaires au fleuve ?",
-      "reponse": "Les rangs",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?",
-      "reponse": "Jeanne Mance",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle bombe a frappé Hiroshima en 1945 ?",
-      "reponse": "La bombe atomique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle plateforme les pirates faisaient-ils parcourir aux prisonniers au-dessus de l'eau ?",
-      "reponse": "La planche",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel astronaute canadien a chanté dans l'espace ?",
-      "reponse": "Chris Hadfield",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle arme de jet permettait aux chasseurs préhistoriques d'atteindre les bêtes de loin ?",
-      "reponse": "Une lance",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle mission a posé les premiers hommes sur la Lune ?",
-      "reponse": "Apollo 11",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle reine d'Égypte a séduit César et Antoine ?",
-      "reponse": "Cléopâtre",
-      "niveau": 2
     }
   ]
 }

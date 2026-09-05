@@ -8,26 +8,25 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelle embarcation d'écorce les Autochtones et les coureurs des bois utilisaient-ils ?",
-      "reponse": "Le canot d'écorce",
+      "question": "Quel drapeau les astronautes ont-ils planté sur la Lune en 1969 ?",
+      "reponse": "Le drapeau américain",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel conquérant macédonien atteignit l'Inde ?",
+      "reponse": "Alexandre le Grand",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le pont qui se relève pour fermer l'entrée d'un château ?",
-      "reponse": "Le pont-levis",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi figure sur les nouvelles pièces de monnaie canadiennes depuis 2023 ?",
-      "reponse": "Charles III",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel empire d'Amérique a été conquis par Cortés ?",
-      "reponse": "Les Aztèques",
+      "question": "En quelle année l'URSS a-t-elle disparu ?",
+      "reponse": "1991",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -36,14 +35,86 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel général carthaginois a traversé les Alpes à dos d'éléphant ?",
-      "reponse": "Hannibal",
+      "question": "Comment appelle-t-on le bateau viking à proue sculptée ?",
+      "reponse": "Le drakkar",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel conflit a duré de 1939 à 1945 ?",
+      "reponse": "2e Guerre mondiale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quelle plante les Égyptiens écrivaient-ils ?",
+      "reponse": "Le papyrus",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre a rapatrié la Constitution en 1982 ?",
+      "reponse": "Pierre E. Trudeau",
       "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année l'euro est-il entré en circulation ?",
+      "reponse": "2002",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
+      "reponse": "La tradition orale",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention éclaire une pièce sans flamme depuis la fin du 19e siècle ?",
+      "reponse": "L'ampoule électrique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel gros reptile a disparu de la Terre il y a des millions d'années ?",
+      "reponse": "Un dinosaure",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut la première femme dans l'espace ?",
+      "reponse": "Valentina Terechkova",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quels marins portaient un bandeau sur l'œil et cherchaient des trésors ?",
+      "reponse": "Les pirates",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel coureur unijambiste a traversé une partie du Canada pour la recherche sur le cancer ?",
+      "reponse": "Terry Fox",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
@@ -58,8 +129,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Pour quelle exposition la tour Eiffel fut-elle construite ?",
-      "reponse": "Expo de 1889",
+      "question": "En quelle année l'Allemagne s'est-elle réunifiée ?",
+      "reponse": "1990",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -68,139 +139,76 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel chirurgien a réalisé la première greffe du cœur ?",
-      "reponse": "Christiaan Barnard",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel héros grec avait un talon vulnérable ?",
-      "reponse": "Achille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les dessins d'animaux tracés sur les parois des grottes ?",
-      "reponse": "Les peintures rupestres",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a atteint le pôle Sud en premier ?",
-      "reponse": "Amundsen",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel savant a découvert le vaccin contre la rage ?",
-      "reponse": "Pasteur",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel avion supersonique reliait Paris et New York ?",
-      "reponse": "Le Concorde",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel télescope spatial a été lancé en 1990 ?",
-      "reponse": "Hubble",
+      "question": "Comment appelle-t-on le procédé égyptien de conservation des corps ?",
+      "reponse": "La momification",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
-      "reponse": "Le parchemin",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple scandinave naviguait sur des drakkars ?",
-      "reponse": "Les Vikings",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention permet de parler à quelqu'un qui est loin ?",
-      "reponse": "Le téléphone",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle station spatiale russe a précédé l'ISS ?",
-      "reponse": "Mir",
-      "niveau": 3,
+      "question": "Quelle reine a régné 70 ans sur le Royaume-Uni ?",
+      "reponse": "Elizabeth II",
+      "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
-      "reponse": "Pierre de Rosette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle machine volante a été mise au point par les frères Wright ?",
-      "reponse": "L'avion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel fleuve César a-t-il franchi en disant le sort en est jeté ?",
-      "reponse": "Le Rubicon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel téléphone présenté en 2007 a bouleversé la téléphonie ?",
-      "reponse": "Le iPhone",
+      "question": "Quel révolutionnaire russe a fondé l'URSS ?",
+      "reponse": "Lénine",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Qui fut le premier homme dans l'espace ?",
-      "reponse": "Youri Gagarine",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande maison fortifiée d'un seigneur, avec ses tours ?",
-      "reponse": "Un château fort",
+      "question": "Quel document marqué d'un X indique où le trésor est enterré ?",
+      "reponse": "Une carte au trésor",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel président sud-africain fut libéré en 1990 ?",
-      "reponse": "Nelson Mandela",
-      "niveau": 2
+      "question": "Quel dictateur dirigeait l'Allemagne nazie ?",
+      "reponse": "Hitler",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que portaient les chevaliers pour protéger leur corps au combat ?",
+      "reponse": "Une armure",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel Trudeau est devenu premier ministre en 2015 ?",
+      "reponse": "Justin Trudeau",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
+      "reponse": "Expo 67",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

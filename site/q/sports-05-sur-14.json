@@ -8,25 +8,30 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Dans quel sport marque-t-on des essais ?",
-      "reponse": "Le rugby",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel objet rond et gonflé frappe-t-on à la volée sur la plage ?",
-      "reponse": "Le ballon de plage",
+      "question": "Comment appelle-t-on la grande salle de l'école où se donne l'éducation physique ?",
+      "reponse": "Le gymnase",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le joueur qui porte le C sur son chandail ?",
-      "reponse": "Le capitaine",
+      "question": "Combien de joueurs par équipe au basketball ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
+      "reponse": "Georges St-Pierre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Que porte-t-on pour se baigner ?",
+      "reponse": "Un maillot de bain",
       "niveau": 1
     },
     {
@@ -41,8 +46,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport d'hiver glisse une pierre vers une cible en balayant la glace ?",
-      "reponse": "Le curling",
+      "question": "Comment appelle-t-on la faute du joueur de soccer parti trop tôt derrière la défense ?",
+      "reponse": "Le hors-jeu",
       "niveau": 2
     },
     {
@@ -64,23 +69,6 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le joueur qui remplace un blessé en cours de match ?",
-      "reponse": "Un remplaçant",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
-      "reponse": "Le CF Montréal",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel est le sport national d'hiver du Canada ?",
       "reponse": "Le hockey",
       "niveau": 1
@@ -98,15 +86,25 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme franchit une barre très haute en prenant appui sur une tige souple ?",
-      "reponse": "Le saut à la perche",
-      "niveau": 2
+      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
+      "reponse": "Le CF Montréal",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la course d'un joueur qui file seul vers le gardien ?",
-      "reponse": "Une échappée",
-      "niveau": 2
+      "question": "Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?",
+      "reponse": "Un tir de barrage",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -121,6 +119,22 @@
     },
     {
       "categorie": "Sports",
+      "question": "Quel sport fait tourner des athlètes en combinaison moulante sur un anneau glacé ?",
+      "reponse": "Le patin de vitesse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel coureur canadien a perdu son titre olympique en 1988 ?",
+      "reponse": "Ben Johnson",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
       "question": "Combien de coupes Stanley pour les Canadiens de Montréal ?",
       "reponse": "24",
       "niveau": 2,
@@ -129,6 +143,24 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on l'ensemble des équipes qui s'affrontent toute une saison ?",
+      "reponse": "Une ligue",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un ballon rond qu'on frappe du pied dans un but ?",
+      "reponse": "Le soccer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelles grosses protections le gardien porte-t-il sur les jambes ?",
+      "reponse": "Des jambières",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -153,54 +185,21 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport court dans les bois avec une carte et une boussole ?",
-      "reponse": "La course d'orientation",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelles grosses protections le gardien porte-t-il sur les jambes ?",
-      "reponse": "Des jambières",
+      "question": "Comment appelle-t-on un match qui se termine à égalité ?",
+      "reponse": "Une nulle",
       "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la passe qui mène directement à un but ?",
-      "reponse": "Une passe décisive",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport fait descendre un skieur derrière un bateau ?",
-      "reponse": "Le ski nautique",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel coureur canadien a perdu son titre olympique en 1988 ?",
-      "reponse": "Ben Johnson",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec un ballon rond qu'on frappe du pied dans un but ?",
-      "reponse": "Le soccer",
+      "question": "Quelle équipe de hockey joue à Edmonton ?",
+      "reponse": "Les Oilers",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de cirque marche sur un fil tendu en hauteur ?",
-      "reponse": "Le funambulisme",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "question": "Quel sport de glace utilise des pierres et des balais ?",
+      "reponse": "Le curling",
+      "niveau": 1
     }
   ]
 }

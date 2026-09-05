@@ -8,31 +8,54 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle saison vient après l'hiver ?",
-      "reponse": "Le printemps",
+      "question": "Quel organe contrôle tout le corps ?",
+      "reponse": "Le cerveau",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel petit animal rayé remplit ses joues de noix ?",
-      "reponse": "Le tamia (suisse)",
+      "question": "Quelle articulation relie la cuisse à la jambe ?",
+      "reponse": "Le genou",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Qui a développé la théorie de la relativité ?",
-      "reponse": "Einstein",
-      "niveau": 1,
+      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
+      "reponse": "L'autruche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle le centre de la Terre ?",
+      "reponse": "Le noyau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?",
+      "reponse": "L'arc-en-ciel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte piqueur bourdonne autour des campeurs les soirs d'été ?",
+      "reponse": "Le maringouin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
+      "reponse": "La dionée",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle unité mesure la puissance ?",
-      "reponse": "Le watt",
+      "question": "Quel arbre géant de Californie est le plus gros du monde ?",
+      "reponse": "Le séquoia",
       "niveau": 2,
       "ages": [
         "ados",
@@ -42,25 +65,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle petite fenêtre de l'œil laisse entrer la lumière ?",
-      "reponse": "La pupille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel acide donne son goût au citron ?",
-      "reponse": "L'acide citrique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal est le plus gros rongeur du monde ?",
-      "reponse": "Le capybara",
+      "question": "Quelle unité mesure la force ?",
+      "reponse": "Le newton",
       "niveau": 2,
       "ages": [
         "ados",
@@ -70,23 +76,33 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle partie colorée de la fleur attire les abeilles ?",
-      "reponse": "Les pétales",
-      "niveau": 2
+      "question": "Quel grondement suit l'éclair pendant un orage ?",
+      "reponse": "Le tonnerre",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui se contracte pour faire bouger les os ?",
-      "reponse": "Les muscles",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle le passage de gaz à liquide ?",
-      "reponse": "La condensation",
-      "niveau": 1,
+      "question": "Quel est le symbole chimique de l'argent ?",
+      "reponse": "Ag",
+      "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie de la plante s'enfonce dans la terre ?",
+      "reponse": "La racine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de lunes possède Mars ?",
+      "reponse": "Deux",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -99,26 +115,43 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gros animal noir et blanc de Chine se nourrit de bambou ?",
-      "reponse": "Le panda",
+      "question": "Quels os protègent les poumons ?",
+      "reponse": "Les côtes",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel reptile peut vivre plus de 150 ans ?",
-      "reponse": "La tortue géante",
+      "question": "Comment appelle-t-on l'ensemble des os du corps ?",
+      "reponse": "Le squelette",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel phénomène lumineux colore le ciel polaire ?",
-      "reponse": "Aurore boréale",
+      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
+      "reponse": "Le raton laveur",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle articulation plie le bras en son milieu ?",
-      "reponse": "Le coude",
+      "question": "Combien de bosses a un chameau ?",
+      "reponse": "Deux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qui a créé le tableau périodique ?",
+      "reponse": "Mendeleïev",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "De quoi sont faites les dunes du désert ?",
+      "reponse": "De sable",
       "niveau": 1
     },
     {
@@ -129,14 +162,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal marin géant souffle un jet d'eau par le dos ?",
-      "reponse": "La baleine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel élément chimique a le symbole C ?",
-      "reponse": "Le carbone",
+      "question": "Quel savant grec a donné son nom à la poussée qui fait flotter les bateaux ?",
+      "reponse": "Archimède",
       "niveau": 1,
       "ages": [
         "ados",
@@ -146,31 +173,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel insecte transmet la malaria ?",
-      "reponse": "Le moustique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus petite unité de la matière ?",
-      "reponse": "L'atome",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on la grosse partie de l'arbre qui porte les branches ?",
-      "reponse": "Le tronc",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de cavités possède le cœur humain ?",
-      "reponse": "Quatre",
+      "question": "Quelle est la planète la plus éloignée du Soleil ?",
+      "reponse": "Neptune",
       "niveau": 2,
       "ages": [
         "ados",
@@ -180,15 +184,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Que devient l'eau quand elle gèle ?",
-      "reponse": "De la glace",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Le Soleil est-il une planète ou une étoile ?",
-      "reponse": "Une étoile",
-      "niveau": 1
+      "question": "Quel appareil enregistre les tremblements de terre ?",
+      "reponse": "Le sismographe",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

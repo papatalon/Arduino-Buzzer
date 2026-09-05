@@ -7,32 +7,104 @@
   "emoji": "🐾",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quelle cabane à sucre célèbre appartient à un chef renommé ?",
-      "reponse": "Au Pied de Cochon",
-      "niveau": 2,
+      "categorie": "Mots et langue",
+      "question": "Comment s'appelle le petit du canard ?",
+      "reponse": "Le caneton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat orange déteste les lundis et adore la lasagne ?",
+      "reponse": "Garfield",
+      "niveau": 1,
       "ages": [
-        "ados",
+        "enfants",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel oiseau bâtit son nid de boue sous les avant-toits des granges ?",
-      "reponse": "L'hirondelle",
+      "categorie": "Histoire",
+      "question": "Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?",
+      "reponse": "Le cheval de Troie",
       "niveau": 2
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gros animal d'Afrique passe ses journées dans l'eau, la gueule grande ouverte ?",
-      "reponse": "L'hippopotame",
+      "question": "Combien de bosses a un dromadaire ?",
+      "reponse": "Une",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie « avoir une faim de loup » ?",
+      "reponse": "Avoir très faim",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson salé est le plat national du Portugal ?",
-      "reponse": "La morue",
+      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
+      "reponse": "Le homard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle nage avance en poussant les deux bras en même temps, comme une grenouille ?",
+      "reponse": "La brasse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les dessins d'animaux tracés sur les parois des grottes ?",
+      "reponse": "Les peintures rupestres",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel géant de bois cache des soldats grecs ?",
+      "reponse": "Le cheval de Troie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de pattes possède une araignée ?",
+      "reponse": "Huit",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel insecte fabrique le miel ?",
+      "reponse": "L'abeille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du chien ?",
+      "reponse": "Le chiot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
+      "reponse": "Une diligence",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?",
+      "reponse": "Le tyrannosaure",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Que devient un têtard ?",
+      "reponse": "Une grenouille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du corbeau ?",
+      "reponse": "Le croassement",
       "niveau": 2,
       "ages": [
         "ados",
@@ -41,9 +113,9 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri de la vache ?",
-      "reponse": "Le meuglement",
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Abu, l'ami d'Aladin ?",
+      "reponse": "Un singe",
       "niveau": 1
     },
     {
@@ -57,119 +129,33 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand animal du monde ?",
-      "reponse": "La baleine bleue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel dinosaure vert craintif vit dans Toy Story ?",
-      "reponse": "Rex",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie être malade comme un chien ?",
-      "reponse": "Être très malade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit de la vache ?",
-      "reponse": "Le veau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel oiseau mythique renaît de ses cendres ?",
-      "reponse": "Le phénix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
-      "reponse": "Le parchemin",
+      "categorie": "Québec",
+      "question": "Quel poisson à moustaches se pêche au fond des rivières du Québec ?",
+      "reponse": "La barbotte",
       "niveau": 3
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quels animaux revivent dans Jurassic Park ?",
-      "reponse": "Les dinosaures",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ogre a un ami âne très bavard ?",
-      "reponse": "Shrek",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson orange est populaire en sushi ?",
-      "reponse": "Le saumon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage de Sesame Street est un grand oiseau jaune ?",
-      "reponse": "Big Bird",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le guerrier à cheval qui servait son seigneur ?",
-      "reponse": "Un chevalier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Dans quelle ville l'aquarium présente-t-il des ours blancs ?",
-      "reponse": "Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal d'Amérique du Sud se déplace très lentement, suspendu aux branches ?",
-      "reponse": "Le paresseux",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel insecte fabrique le miel ?",
-      "reponse": "L'abeille",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Que signifie poser un lapin ?",
-      "reponse": "Ne pas venir",
+      "question": "Que signifie être rusé comme un renard ?",
+      "reponse": "Être très malin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chien de dessin animé est le compagnon de Charlie Brown ?",
+      "reponse": "Snoopy",
       "niveau": 1,
       "ages": [
-        "ados",
+        "enfants",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel félin de dessin animé est né d'un générique de film ?",
-      "reponse": "La Panthère rose",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Géographie",
+      "question": "Quel animal géant et blanc est le symbole du Grand Nord canadien ?",
+      "reponse": "L'ours polaire",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
@@ -178,9 +164,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel est le plus grand cervidé du Québec ?",
-      "reponse": "L'orignal",
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal à coquille rampe lentement en laissant une trace ?",
+      "reponse": "L'escargot",
       "niveau": 1
     }
   ]

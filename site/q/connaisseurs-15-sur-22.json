@@ -7,9 +7,47 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Québec",
+      "question": "Quel roman de Gabrielle Roy se passe à Saint-Henri ?",
+      "reponse": "Bonheur d'occasion",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la terre gelée sans arbres du Grand Nord ?",
+      "reponse": "La toundra",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu fait deviner des mots à son équipe en trois manches, de plus en plus serrées ?",
+      "reponse": "Le Time's Up",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
+      "reponse": "Le parchemin",
+      "niveau": 3
+    },
+    {
       "categorie": "Musique",
-      "question": "Quel instrument de cuivre sonne le réveil dans les camps militaires ?",
-      "reponse": "Le clairon",
+      "question": "Quelle figure de note vaut quatre temps, la plus longue de toutes ?",
+      "reponse": "La ronde",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne une soirée où l'on boit entre amis ?",
+      "reponse": "Un 5 à 7",
       "niveau": 3,
       "ages": [
         "ados",
@@ -18,9 +56,19 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel est l'arbre emblème du Québec ?",
-      "reponse": "Le bouleau jaune",
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?",
+      "reponse": "La Révolution tranquille",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
+      "reponse": "Le maelstrom",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -29,8 +77,8 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Quelle merveille antique se trouvait à Babylone ?",
-      "reponse": "Jardins suspendus",
+      "question": "Quel philosophe grec fut le maître d'Alexandre ?",
+      "reponse": "Aristote",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -38,92 +86,29 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel gros oiseau noir et blanc plonge dans les lacs du Québec en poussant un cri plaintif ?",
-      "reponse": "Le huard",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les longues bandes de terre perpendiculaires au fleuve ?",
-      "reponse": "Les rangs",
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète est la plus chaude du système solaire ?",
+      "reponse": "Vénus",
       "niveau": 3,
       "ages": [
-        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de points vaut la bille noire au snooker ?",
+      "reponse": "Sept",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle série québécoise se déroulait dans Charlevoix après la Première Guerre ?",
-      "reponse": "Le temps d'une paix",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel grand magasin canadien publiait un catalogue attendu chaque année ?",
-      "reponse": "Eaton",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'écran qui affiche les paroles pendant un karaoké ?",
-      "reponse": "Le téléprompteur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quels petits élastiques colorés se tressent en bracelets sur un métier ?",
-      "reponse": "Les Rainbow Loom",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois d'origine marocaine raconte sa famille sur scène ?",
-      "reponse": "Rachid Badouri",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?",
-      "reponse": "Alys Robi",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit disque contenait une chanson de chaque côté ?",
-      "reponse": "Le 45 tours",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle plante grimpante rougit les murs des maisons à l'automne ?",
-      "reponse": "La vigne vierge",
+      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
+      "reponse": "La guignolée",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -132,79 +117,39 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle pédale déforme le son de la guitare pour le rendre saturé ?",
-      "reponse": "La distorsion",
+      "question": "Quelle pédale du piano prolonge les notes après qu'on a levé les doigts ?",
+      "reponse": "La pédale forte",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle merveille du monde antique éclairait l'entrée d'un port égyptien ?",
-      "reponse": "Le phare d'Alexandrie",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel long fleuve traverse la Chine ?",
-      "reponse": "Le Yangtsé",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Gloria Gaynor est devenue l'hymne des cœurs brisés ?",
-      "reponse": "I Will Survive",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte russe est un petit chausson farci ?",
-      "reponse": "Le pirojki",
+      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
+      "reponse": "La granita",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle méthode permet de dater un vestige grâce à un isotope ?",
-      "reponse": "Le carbone 14",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film coréen de 2019 est devenu le premier film non anglophone à gagner l'Oscar du meilleur film ?",
-      "reponse": "Parasite",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la partie creuse de la guitare qui fait résonner le son ?",
-      "reponse": "La caisse",
+      "question": "Quel chanteur écossais a chanté Someone You Loved ?",
+      "reponse": "Lewis Capaldi",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
+      "reponse": "Un divulgâcheur",
       "niveau": 3,
       "ages": [
         "ados",
@@ -213,26 +158,38 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne borde le Québec à l'est, avec Moncton ?",
-      "reponse": "Le Nouveau-Brunswick",
-      "niveau": 3
+      "categorie": "Cinéma et télé",
+      "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
+      "reponse": "Les Plouffe",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     },
     {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?",
-      "reponse": "Un tir de barrage",
+      "categorie": "Musique",
+      "question": "Quel concours de chant européen réunit les pays chaque printemps ?",
+      "reponse": "L'Eurovision",
       "niveau": 3,
       "ages": [
         "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
+      "reponse": "Les oreilles de lapin",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la peur des hauteurs ?",
-      "reponse": "L'acrophobie",
+      "categorie": "Culture pop",
+      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
+      "reponse": "La fin de semaine des Patriotes",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -241,11 +198,42 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Qui a atteint le pôle Sud en premier ?",
-      "reponse": "Amundsen",
+      "question": "Quelle ville canadienne fut dévastée par une explosion en 1917 ?",
+      "reponse": "Halifax",
       "niveau": 3,
       "ages": [
         "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
+      "reponse": "Une diligence",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse argentine se danse joue contre joue avec une rose ?",
+      "reponse": "Le tango",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quelle figure de style exagère volontairement ?",
+      "reponse": "L'hyperbole",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil du restaurant jouait une chanson contre une pièce de monnaie ?",
+      "reponse": "Le juke-box",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     }

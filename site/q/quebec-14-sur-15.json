@@ -8,6 +8,24 @@
   "questions": [
     {
       "categorie": "Québec",
+      "question": "Quel quartier historique de Québec est fortifié ?",
+      "reponse": "Le Vieux-Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que met-on sur sa tête pour aller jouer dehors l'hiver au Québec ?",
+      "reponse": "Une tuque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel outil sert à enlever la glace sur le pare-brise de l'auto ?",
+      "reponse": "Un gratte-glace",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
       "question": "Quelle chanteuse rock québécoise a chanté Provocante ?",
       "reponse": "Marjo",
       "niveau": 2,
@@ -18,8 +36,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Combien de députés siègent à l'Assemblée nationale ?",
-      "reponse": "125",
+      "question": "De quel village vient le conteur Fred Pellerin ?",
+      "reponse": "Saint-Élie-de-Caxton",
       "niveau": 2,
       "ages": [
         "ados",
@@ -29,29 +47,73 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle créature légendaire fait peur aux enfants ?",
-      "reponse": "Bonhomme Sept-Heures",
+      "question": "Quelle équipe de hockey junior joue au Centre Vidéotron de Québec ?",
+      "reponse": "Les Remparts",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel film culte parle d'une guerre de balles de neige ?",
+      "reponse": "La Guerre des tuques",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel hockeyeur était surnommé le Rocket ?",
+      "reponse": "Maurice Richard",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel vêtement long et épais protège du froid de janvier ?",
+      "reponse": "Un manteau d'hiver",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel premier ministre québécois fut surnommé le Cheuf ?",
-      "reponse": "Duplessis",
+      "question": "Quel congé tombe le lendemain de la Saint-Sylvestre ?",
+      "reponse": "Le jour de l'An",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on celui qui exploite une érablière ?",
+      "reponse": "Un acériculteur",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel film de Denys Arcand a gagné un Oscar ?",
+      "reponse": "Invasions barbares",
       "niveau": 2,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on l'herbe coupée et séchée qu'on donne aux vaches l'hiver ?",
-      "reponse": "Le foin",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle ville québécoise est célèbre pour son festival western ?",
-      "reponse": "Saint-Tite",
+      "question": "Quel style musical a son grand festival à Montréal en juillet ?",
+      "reponse": "Le jazz",
       "niveau": 1,
       "ages": [
         "ados",
@@ -61,30 +123,15 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle station de métro montréalaise dessert trois lignes ?",
-      "reponse": "Berri-UQAM",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelles chutes près de Québec sont plus hautes que Niagara ?",
+      "reponse": "Montmorency",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quels canots géants transportaient les fourrures ?",
-      "reponse": "Canots de maître",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel club-école des Canadiens joue à Laval ?",
-      "reponse": "Le Rocket",
-      "niveau": 3,
+      "question": "Quel réalisateur québécois a tourné Dune ?",
+      "reponse": "Denis Villeneuve",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes"
@@ -92,8 +139,24 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne l'argent, familièrement ?",
-      "reponse": "Du cash",
+      "question": "Comment appelle-t-on celui qui conduit une motoneige sur les sentiers ?",
+      "reponse": "Un motoneigiste",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel champignon rouge à pois blancs des contes pousse dans les forêts ?",
+      "reponse": "L'amanite tue-mouches",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle université du réseau de l'Université du Québec se trouve à Montréal ?",
+      "reponse": "L'UQAM",
       "niveau": 2,
       "ages": [
         "ados",
@@ -103,122 +166,65 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle ville est la capitale de l'Outaouais ?",
-      "reponse": "Gatineau",
+      "question": "Quelle chaîne canadienne exploite le plus de salles de cinéma au pays ?",
+      "reponse": "Cineplex",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle période sombre est associée à Duplessis ?",
+      "reponse": "La Grande Noirceur",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la banque coopérative très répandue au Québec ?",
+      "reponse": "La caisse populaire",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Qui a fondé la ville de Québec en 1608 ?",
+      "reponse": "Champlain",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle carte donne accès aux soins de santé gratuits au Québec ?",
+      "reponse": "La carte soleil",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Où dépose-t-on une lettre pour qu'elle parte par la poste ?",
+      "reponse": "Au bureau de poste",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel marché public borde le canal de Lachine ?",
+      "reponse": "Atwater",
       "niveau": 1,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel grand feu s'allume le soir de la Saint-Jean ?",
-      "reponse": "Un feu de joie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que met-on aux mains pour ne pas avoir froid, avec un seul compartiment pour les doigts ?",
-      "reponse": "Des mitaines",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on une grande école secondaire publique au Québec ?",
-      "reponse": "Une polyvalente",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel est l'arbre emblème du Québec ?",
-      "reponse": "Le bouleau jaune",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel bâtiment incliné de Montréal permet de voir la ville d'en haut ?",
-      "reponse": "La tour de Montréal",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle station de ski des Laurentides attire les skieurs de partout ?",
-      "reponse": "Le mont Tremblant",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que veut dire « embarque dans l'auto » ?",
-      "reponse": "Monte dans l'auto",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel chansonnier a écrit Quand les hommes vivront d'amour ?",
-      "reponse": "Raymond Lévesque",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle est la fleur emblème du Québec ?",
-      "reponse": "Iris versicolore",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fête nationale du Québec se célèbre le 24 juin ?",
-      "reponse": "La Saint-Jean",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "En quelle année le métro de Montréal a-t-il ouvert ?",
-      "reponse": "1966",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel abri de toile monté chaque automne protège l'entrée de garage ?",
-      "reponse": "Un abri Tempo",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel comédien incarne Elvis Gratton ?",
-      "reponse": "Julien Poulin",
-      "niveau": 2,
-      "ages": [
         "adultes",
         "aines"
       ]

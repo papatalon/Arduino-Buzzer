@@ -8,6 +8,16 @@
   "questions": [
     {
       "categorie": "Sports",
+      "question": "Combien de billes rouges au snooker ?",
+      "reponse": "Quinze",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
       "question": "Quel jeu provençal lance des boules vers un cochonnet ?",
       "reponse": "La pétanque",
       "niveau": 1
@@ -25,9 +35,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la toile tendue sur laquelle on rebondit très haut ?",
-      "reponse": "Un trampoline",
-      "niveau": 1
+      "question": "Quel Argentin a soulevé la Coupe du monde 2022 ?",
+      "reponse": "Lionel Messi",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Sports",
@@ -70,12 +85,6 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la grande salle de l'école où se donne l'éducation physique ?",
-      "reponse": "Le gymnase",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel Argentin a marqué le but de la main de Dieu ?",
       "reponse": "Maradona",
       "niveau": 2,
@@ -86,14 +95,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel disque de plastique lance-t-on à un ami ou à un chien au parc ?",
-      "reponse": "Le frisbee",
+      "question": "Quelle carte l'arbitre de soccer montre-t-il pour avertir un joueur ?",
+      "reponse": "Un carton jaune",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Combien de périodes compte un match de hockey ?",
-      "reponse": "Trois",
+      "question": "Quel disque de plastique lance-t-on à un ami ou à un chien au parc ?",
+      "reponse": "Le frisbee",
       "niveau": 1
     },
     {
@@ -109,15 +118,27 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la grande surface de jeu du soccer ?",
-      "reponse": "Le terrain",
+      "question": "Quel objet se passent les coureurs de relais ?",
+      "reponse": "Le témoin",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel objet se passent les coureurs de relais ?",
-      "reponse": "Le témoin",
+      "question": "Quel sport de plage frappe un ballon par-dessus un filet, pieds dans le sable ?",
+      "reponse": "Le volleyball de plage",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport monte des parois avec des prises de couleur et un baudrier ?",
+      "reponse": "L'escalade",
       "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle épreuve d'athlétisme lance une boule de métal le plus loin possible ?",
+      "reponse": "Le lancer du poids",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -131,20 +152,20 @@
     },
     {
       "categorie": "Sports",
-      "question": "Sur quelle estrade à trois marches montent les médaillés ?",
-      "reponse": "Le podium",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
       "question": "Quelle activité consiste à marcher longtemps sur des sentiers en forêt ou en montagne ?",
       "reponse": "La randonnée",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on l'exercice qu'une équipe fait avant le match pour se réchauffer ?",
-      "reponse": "L'échauffement",
+      "question": "Dans quoi faut-il faire entrer le ballon pour marquer au basketball ?",
+      "reponse": "Le panier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la faute qui envoie un joueur de hockey au banc deux minutes ?",
+      "reponse": "Une punition",
       "niveau": 1
     },
     {
@@ -170,30 +191,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelles petites roues aident un enfant à apprendre le vélo ?",
-      "reponse": "Des roues d'entraînement",
+      "question": "Sur quelle estrade à trois marches montent les médaillés ?",
+      "reponse": "Le podium",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel basketteur légendaire portait le 23 des Bulls ?",
-      "reponse": "Michael Jordan",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la pause au milieu d'un match de soccer ?",
-      "reponse": "La mi-temps",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs sur la glace par équipe au hockey ?",
-      "reponse": "Six",
+      "question": "Combien de joueurs par équipe au baseball ?",
+      "reponse": "Neuf",
       "niveau": 1
     }
   ]

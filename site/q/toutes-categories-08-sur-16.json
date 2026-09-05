@@ -7,15 +7,27 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?",
-      "reponse": "Le cheval de Troie",
-      "niveau": 2
+      "categorie": "Sports",
+      "question": "Quel équipement protège la tête à vélo et au hockey ?",
+      "reponse": "Le casque",
+      "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
-      "reponse": "La ceinture fléchée",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal hurle à la lune et chasse en meute ?",
+      "reponse": "Le loup",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "De quel fruit fait-on le vin ?",
+      "reponse": "Le raisin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quel navire Darwin a-t-il navigué ?",
+      "reponse": "Le Beagle",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -23,31 +35,146 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie se lever du mauvais pied ?",
-      "reponse": "Être de mauvaise humeur",
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
+      "reponse": "Steinberg",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel vêtement long et épais protège du froid de janvier ?",
+      "reponse": "Un manteau d'hiver",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport descend des rivières en radeau pneumatique ?",
+      "reponse": "Le rafting",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle cité antique a été détruite par le Vésuve ?",
-      "reponse": "Pompéi",
+      "question": "Quel navigateur a mené la première expédition autour du monde ?",
+      "reponse": "Magellan",
       "niveau": 2
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chiot dalmatien de la Pat' Patrouille est pompier ?",
-      "reponse": "Marcus",
+      "categorie": "Géographie",
+      "question": "Quelle mer intérieure borde le Kazakhstan et l'Iran ?",
+      "reponse": "La Caspienne",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse américaine a chanté Espresso en 2024 ?",
+      "reponse": "Sabrina Carpenter",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la grosse chute qui blanchit tout en une nuit ?",
+      "reponse": "Une bordée de neige",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel grand magasin canadien publiait un catalogue attendu chaque année ?",
+      "reponse": "Eaton",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de tour en bois s'effondre quand on retire la mauvaise pièce ?",
+      "reponse": "Jenga",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Brésil ?",
+      "reponse": "Brasilia",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson d'Elsa parle de laisser aller le froid et de ne plus se cacher ?",
+      "reponse": "Libérée délivrée",
       "niveau": 1,
       "ages": [
-        "enfants"
+        "enfants",
+        "ados",
+        "adultes"
       ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel héros a été piqué par une araignée ?",
+      "reponse": "Spider-Man",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
       "question": "Combien de côtés a un triangle ?",
       "reponse": "Trois",
       "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que doit savoir faire le chasseur sans son chien ?",
+      "reponse": "Chasser",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le symbole chimique de l'hydrogène ?",
+      "reponse": "H",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel moine a affiché 95 thèses en 1517 ?",
+      "reponse": "Luther",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise raconte Séraphin Poudrier ?",
+      "reponse": "Les Belles Histoires",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -60,115 +187,15 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel repas se prend le soir au Québec ?",
-      "reponse": "Le souper",
+      "categorie": "Mots et langue",
+      "question": "Que signifie être tanné ?",
+      "reponse": "En avoir assez",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans quel jeu faut-il aligner des bonbons de même couleur ?",
-      "reponse": "Candy Crush",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
-      "reponse": "Sol",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel long instrument suisse s'étire au sol ?",
-      "reponse": "Le cor des Alpes",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel outil racle la neige des pare-brise ?",
-      "reponse": "Un gratteux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Kenya ?",
-      "reponse": "Nairobi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel bonbon rond se tient au bout d'un bâton ?",
-      "reponse": "Un suçon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel mammifère australien a un bec de canard ?",
-      "reponse": "L'ornithorynque",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on les cinq lignes sur lesquelles on écrit les notes ?",
-      "reponse": "La portée",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature des contes nordiques vit sous les ponts ?",
-      "reponse": "Un troll",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée au Mexique ?",
-      "reponse": "L'espagnol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel conquérant macédonien atteignit l'Inde ?",
-      "reponse": "Alexandre le Grand",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel sucre trouve-t-on dans le sang ?",
-      "reponse": "Le glucose",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on l'objet doré remis à l'équipe championne ?",
-      "reponse": "Un trophée",
+      "question": "Quel fruit orange à peau veloutée cache un gros noyau ?",
+      "reponse": "La pêche",
       "niveau": 1
     },
     {
@@ -176,29 +203,6 @@
       "question": "Quelle grande horloge domine Londres ?",
       "reponse": "Big Ben",
       "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment dit-on « oui » en espagnol ?",
-      "reponse": "Sí",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle salle de Montréal projette le ciel étoilé sur un dôme au-dessus des spectateurs ?",
-      "reponse": "Le Planétarium",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pays a gagné le plus de médailles olympiques au total ?",
-      "reponse": "Les États-Unis",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

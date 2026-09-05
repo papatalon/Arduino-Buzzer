@@ -8,18 +8,6 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Combien de manches dans un match de baseball ?",
-      "reponse": "Neuf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel coup de tennis se frappe bras en travers du corps, dos de la main devant ?",
-      "reponse": "Un revers",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel objet lourd lance-t-on en le faisant tournoyer ?",
       "reponse": "Le marteau",
       "niveau": 2,
@@ -28,23 +16,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport pratique Tiger Woods ?",
-      "reponse": "Le golf",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment nomme-t-on trois buts d'un même joueur ?",
-      "reponse": "Un tour du chapeau",
-      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -59,6 +30,12 @@
     },
     {
       "categorie": "Sports",
+      "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
+      "reponse": "Le surf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
       "question": "Quel sport de raquette utilise une petite balle noire ?",
       "reponse": "Le squash",
       "niveau": 2,
@@ -70,26 +47,50 @@
     },
     {
       "categorie": "Sports",
-      "question": "Que porte-t-on pour se baigner ?",
-      "reponse": "Un maillot de bain",
+      "question": "Que doit-on porter sur la tête avant de partir à vélo ?",
+      "reponse": "Un casque de vélo",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport combine le ski de fond et le tir à la carabine ?",
-      "reponse": "Le biathlon",
-      "niveau": 3
+      "question": "Comment nomme-t-on trois buts d'un même joueur ?",
+      "reponse": "Un tour du chapeau",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?",
-      "reponse": "Un tir de barrage",
-      "niveau": 3,
+      "question": "Quel anneau gonflable aide les petits à flotter ?",
+      "reponse": "Une bouée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport pratique Tiger Woods ?",
+      "reponse": "Le golf",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de rue se joue en espadrilles, bâton en main, avec une balle orange ?",
+      "reponse": "Le hockey-balle",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de points vaut un lancer franc au basketball ?",
+      "reponse": "Un",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle nage avance en poussant les deux bras en même temps, comme une grenouille ?",
+      "reponse": "La brasse",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -103,19 +104,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
-      "reponse": "Le kitesurf",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle ceinture couronne le plus haut niveau des arts martiaux ?",
-      "reponse": "La ceinture noire",
-      "niveau": 1
+      "question": "Comment appelle-t-on la course d'un joueur qui file seul vers le gardien ?",
+      "reponse": "Une échappée",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -130,8 +121,42 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de points vaut un lancer franc au basketball ?",
-      "reponse": "Un",
+      "question": "Quelle médaille reçoit le deuxième aux Jeux olympiques ?",
+      "reponse": "La médaille d'argent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel golfeur canadien a gagné le Masters en 2003 ?",
+      "reponse": "Mike Weir",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de gymnase grimpe des murs à prises ?",
+      "reponse": "L'escalade",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on les quatre coins que le coureur doit toucher au baseball ?",
+      "reponse": "Les buts",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de minutes dure une période de hockey ?",
+      "reponse": "20",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport combine natation, vélo et course ?",
+      "reponse": "Le triathlon",
       "niveau": 1
     },
     {
@@ -146,8 +171,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de gymnase grimpe des murs à prises ?",
-      "reponse": "L'escalade",
+      "question": "Quelle nage s'effectue sur le dos ?",
+      "reponse": "Le dos crawlé",
       "niveau": 1
     },
     {
@@ -163,42 +188,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport combine natation, vélo et course ?",
-      "reponse": "Le triathlon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de minutes dure une période de hockey ?",
-      "reponse": "20",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel golfeur canadien a gagné le Masters en 2003 ?",
-      "reponse": "Mike Weir",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle nage s'effectue sur le dos ?",
-      "reponse": "Le dos crawlé",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le joueur du baseball qui envoie la balle au frappeur ?",
-      "reponse": "Le lanceur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel objet l'arbitre souffle-t-il pour arrêter le jeu ?",
-      "reponse": "Un sifflet",
+      "question": "Quelle équipe de hockey joue à Toronto ?",
+      "reponse": "Les Maple Leafs",
       "niveau": 1
     }
   ]

@@ -7,9 +7,9 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quel bâtiment incliné de Montréal permet de voir la ville d'en haut ?",
-      "reponse": "La tour de Montréal",
+      "categorie": "Géographie",
+      "question": "Quelle mer sépare la péninsule coréenne de l'archipel nippon ?",
+      "reponse": "La mer du Japon",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -18,12 +18,101 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanson de Nirvana commence par un riff de guitare devenu emblème du grunge ?",
-      "reponse": "Smells Like Teen Spirit",
+      "question": "Quel compositeur français a écrit le Boléro ?",
+      "reponse": "Ravel",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut la première femme dans l'espace ?",
+      "reponse": "Valentina Terechkova",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
+      "reponse": "Le 7 Jours",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve traverse Rome ?",
+      "reponse": "Le Tibre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe progressif québécois a fait L'Heptade ?",
+      "reponse": "Harmonium",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel tapis à longs poils habillait les salons des années 70 ?",
+      "reponse": "Le shag",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays d'Europe a la forme d'une main et borde la mer Baltique ?",
+      "reponse": "La Pologne",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
+      "reponse": "Le Jolly Roger",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
+      "reponse": "Pizarro",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "À quelle famille d'instruments appartient la flûte ?",
+      "reponse": "Les bois",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -36,19 +125,9 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel peuple antique a inventé l'écriture cunéiforme ?",
-      "reponse": "Les Sumériens",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on les jeunes femmes envoyées de France pour peupler la colonie ?",
-      "reponse": "Les filles du Roy",
+      "categorie": "Québec",
+      "question": "Quelle taxe québécoise s'ajoute à la taxe fédérale sur les achats ?",
+      "reponse": "La TVQ",
       "niveau": 3,
       "ages": [
         "ados",
@@ -57,58 +136,30 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jeu fait deviner des mots à son équipe en trois manches, de plus en plus serrées ?",
-      "reponse": "Le Time's Up",
+      "categorie": "Québec",
+      "question": "Quel oiseau blanc envahit les champs du Québec au printemps et à l'automne ?",
+      "reponse": "L'oie blanche",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil de chauffage exigeait qu'on remplisse la boîte à bois ?",
-      "reponse": "Le poêle à bois",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle pâte à tartiner orange se vend en pot et se met sur les rôties ?",
-      "reponse": "Le Cheez Whiz",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel attaquant norvégien enfile les buts à Manchester City ?",
-      "reponse": "Haaland",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel traitement de coiffure des années 80 frisait les cheveux pour des mois ?",
-      "reponse": "La permanente",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe féminin sud-coréen a chanté Kill This Love ?",
-      "reponse": "Blackpink",
+      "question": "Quelle cantatrice grecque fut surnommée la Divina ?",
+      "reponse": "Maria Callas",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles billes de plastique s'ouvrent en figurine au contact d'une carte ?",
+      "reponse": "Les Bakugan",
       "niveau": 3,
       "ages": [
         "enfants",
@@ -117,8 +168,8 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot qui a plusieurs sens ?",
-      "reponse": "Polysémique",
+      "question": "De quelle langue vient le mot pyjama ?",
+      "reponse": "Le persan",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -127,8 +178,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel grand navire de guerre espagnol transportait l'or des Amériques ?",
-      "reponse": "Le galion",
+      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
+      "reponse": "La tradition orale",
       "niveau": 3,
       "ages": [
         "ados",
@@ -137,29 +188,9 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Qui fut la première femme première ministre du Canada ?",
-      "reponse": "Kim Campbell",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle ardoise à deux boutons dessine des traits et s'efface en la secouant ?",
-      "reponse": "Le Télécran",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Turquie ?",
-      "reponse": "Ankara",
+      "question": "Quelle émission de Radio-Canada enquête sur ce qu'on met dans notre assiette ?",
+      "reponse": "L'épicerie",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -168,80 +199,45 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel parc animalier du Lac-Saint-Jean se visite à bord d'un train grillagé ?",
-      "reponse": "Le zoo de Saint-Félicien",
+      "question": "Quel auteur québécois a écrit Le Matou ?",
+      "reponse": "Yves Beauchemin",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël fait résonner un long « Gloria » repris par tout le monde ?",
+      "reponse": "Les anges dans nos campagnes",
       "niveau": 3
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète est la plus chaude du système solaire ?",
-      "reponse": "Vénus",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel guitariste de Queen a un doctorat en astrophysique ?",
-      "reponse": "Brian May",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne sépare l'Europe de l'Asie ?",
-      "reponse": "L'Oural",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de touches noires compte un piano ?",
-      "reponse": "36",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à dents pincées accompagne le folklore ?",
-      "reponse": "La guimbarde",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat brésilien est un ragoût de haricots noirs ?",
-      "reponse": "La feijoada",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
-      "reponse": "L'épinette",
+      "categorie": "Sports",
+      "question": "Quel sport oppose deux nageurs qui se poussent un ballon dans une piscine ?",
+      "reponse": "Le water-polo",
       "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
+      "reponse": "Coup de Pouce",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Dans quelle ville Jeanne d'Arc fut-elle brûlée ?",
-      "reponse": "Rouen",
+      "question": "Comment appelle-t-on l'Égyptien qui savait écrire, un métier rare et respecté ?",
+      "reponse": "Un scribe",
+      "niveau": 3
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert meringué porte le nom d'une ballerine ?",
+      "reponse": "La pavlova",
       "niveau": 3,
       "ages": [
         "adultes",

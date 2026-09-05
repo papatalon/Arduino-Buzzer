@@ -7,133 +7,150 @@
   "emoji": "🐾",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roi des mers parle aux poissons ?",
-      "reponse": "Aquaman",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Masculin de poule ?",
-      "reponse": "Le coq",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?",
-      "reponse": "Le cheval de Troie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du mouton ?",
-      "reponse": "L'agneau",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quelles sont les deux couleurs du zèbre ?",
-      "reponse": "Noir et blanc",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel reporter a un chien nommé Milou ?",
-      "reponse": "Tintin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal produit les œufs qu'on mange au déjeuner ?",
-      "reponse": "La poule",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les dessins d'animaux tracés sur les parois des grottes ?",
-      "reponse": "Les peintures rupestres",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit oiseau à calotte noire fréquente les mangeoires du Québec tout l'hiver ?",
-      "reponse": "La mésange",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte brille dans la nuit d'été ?",
-      "reponse": "La luciole",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin géant souffle un jet d'eau par le dos ?",
-      "reponse": "La baleine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du chien ?",
-      "reponse": "L'aboiement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle discipline équestre fait franchir au cheval une série de barres sans les faire tomber ?",
-      "reponse": "Le saut d'obstacles",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel animal figure sur la pièce de 5 cents canadienne ?",
-      "reponse": "Le castor",
+      "question": "Quel animal a le cou le plus long ?",
+      "reponse": "La girafe",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel gros oiseau noir et blanc plonge dans les lacs du Québec en poussant un cri plaintif ?",
-      "reponse": "Le huard",
-      "niveau": 3
+      "question": "Quel oiseau blanc envahit les champs du Québec au printemps et à l'automne ?",
+      "reponse": "L'oie blanche",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Dans quel conte un loup souffle-t-il sur des maisons de paille, de bois et de briques ?",
+      "reponse": "Les Trois Petits Cochons",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a pour emblème le panda ?",
+      "reponse": "La Chine",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation organise un grand concours de chant entre animaux ?",
-      "reponse": "Tous en scène",
-      "niveau": 1,
+      "question": "Quel chat robot bleu vient du futur ?",
+      "reponse": "Doraemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?",
+      "reponse": "Luca",
+      "niveau": 2,
       "ages": [
         "enfants",
         "ados"
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Petit du chien ?",
-      "reponse": "Le chiot",
+      "categorie": "Histoire",
+      "question": "Quelle statue égyptienne a un corps de lion ?",
+      "reponse": "Le Sphinx",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel aliment ovale pondu par la poule mange-t-on brouillé ?",
+      "reponse": "L'œuf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays vivent les kangourous ?",
+      "reponse": "L'Australie",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle plante compose le menu du panda géant ?",
-      "reponse": "Le bambou",
+      "question": "Quel est le seul mammifère volant ?",
+      "reponse": "La chauve-souris",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on les combats à cheval où deux chevaliers se chargeaient avec des lances ?",
-      "reponse": "Les joutes",
+      "categorie": "Mots et langue",
+      "question": "Masculin d'abeille ?",
+      "reponse": "Le faux bourdon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que doit savoir faire le chasseur sans son chien ?",
+      "reponse": "Chasser",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel poisson moucheté se pêche dans les lacs du Québec ?",
-      "reponse": "La truite",
+      "categorie": "Sciences et nature",
+      "question": "Quel cousin rayé du cheval vit en Afrique ?",
+      "reponse": "Le zèbre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir un chat dans la gorge ?",
+      "reponse": "Être enroué",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de pattes possède un insecte ?",
+      "reponse": "Six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami de Winnie l'ourson est un petit cochon rose ?",
+      "reponse": "Porcinet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
+      "reponse": "Cracké",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel oiseau est le symbole de la paix ?",
+      "reponse": "La colombe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Sven dans La Reine des neiges ?",
+      "reponse": "Un renne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on un groupe de poissons qui nagent ensemble ?",
+      "reponse": "Un banc",
       "niveau": 2
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel oiseau est le plus rapide en piqué ?",
-      "reponse": "Le faucon pèlerin",
+      "question": "Sur quel continent vivent les manchots empereurs ?",
+      "reponse": "L'Antarctique",
       "niveau": 2,
       "ages": [
         "ados",
@@ -142,27 +159,27 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel canard Disney porte un costume marin ?",
-      "reponse": "Donald",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quel objet de métal en forme de U se cloue au-dessus d'une porte pour attirer la chance ?",
+      "reponse": "Un fer à cheval",
+      "niveau": 2
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Petit de l'ours ?",
-      "reponse": "L'ourson",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel général carthaginois a traversé les Alpes à dos d'éléphant ?",
-      "reponse": "Hannibal",
+      "categorie": "Québec",
+      "question": "Quelle cabane à sucre célèbre appartient à un chef renommé ?",
+      "reponse": "Au Pied de Cochon",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "De quel arbre le koala mange-t-il les feuilles ?",
+      "reponse": "L'eucalyptus",
+      "niveau": 1
     }
   ]
 }

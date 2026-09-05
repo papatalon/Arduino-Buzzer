@@ -8,30 +8,8 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Qui a fondé Ville-Marie, la future Montréal ?",
-      "reponse": "Maisonneuve",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle rébellion québécoise eut lieu en 1837 ?",
-      "reponse": "Les Patriotes",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle infirmière célèbre soignait pendant la guerre de Crimée ?",
-      "reponse": "Florence Nightingale",
+      "question": "Quel traité de 1992 a créé l'Union européenne ?",
+      "reponse": "Maastricht",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -40,20 +18,46 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?",
-      "reponse": "La Station spatiale internationale",
-      "niveau": 3
+      "question": "Comment appelle-t-on le pont qui se relève pour fermer l'entrée d'un château ?",
+      "reponse": "Le pont-levis",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel conquérant macédonien atteignit l'Inde ?",
-      "reponse": "Alexandre le Grand",
+      "question": "Quel premier ministre britannique fumait le cigare pendant la guerre ?",
+      "reponse": "Churchill",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année le Titanic a-t-il coulé ?",
+      "reponse": "1912",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle ville fut la capitale de l'Empire byzantin ?",
-      "reponse": "Constantinople",
+      "question": "Quelle politique canadienne date de la loi de 1969 ?",
+      "reponse": "Le bilinguisme",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Autour de quelle table siégeaient les chevaliers d'Arthur ?",
+      "reponse": "La Table ronde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la route commerciale qui reliait la Chine à l'Europe ?",
+      "reponse": "La route de la soie",
       "niveau": 2,
       "ages": [
         "ados",
@@ -63,14 +67,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel peuple a construit le Colisée et les aqueducs ?",
-      "reponse": "Les Romains",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année a débuté la Première Guerre mondiale ?",
-      "reponse": "1914",
+      "question": "Quel bateau amena les pèlerins en Amérique en 1620 ?",
+      "reponse": "Le Mayflower",
       "niveau": 2,
       "ages": [
         "ados",
@@ -80,58 +78,64 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le bandit des mers qui attaquait les navires ?",
-      "reponse": "Un pirate",
+      "question": "Quelle plaque de métal ou de bois le chevalier tenait-il pour parer les coups ?",
+      "reponse": "Un bouclier",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle grande tour de fer a été bâtie à Paris pour une exposition en 1889 ?",
-      "reponse": "La tour Eiffel",
+      "question": "Quelle invention permet de parler à quelqu'un qui est loin ?",
+      "reponse": "Le téléphone",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle femme pharaon portait une fausse barbe cérémoniale ?",
+      "reponse": "Hatchepsout",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les longues routes pavées construites par les Romains ?",
+      "reponse": "Les voies romaines",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année Colomb a-t-il atteint l'Amérique ?",
+      "reponse": "1492",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
-      "reponse": "Le Jolly Roger",
-      "niveau": 3,
+      "question": "Quel scientifique fouille la terre pour trouver des objets anciens ?",
+      "reponse": "Un archéologue",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le premier premier ministre du Canada ?",
+      "reponse": "John A. Macdonald",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Dans quelle matière les tout premiers outils de l'humanité étaient-ils taillés ?",
-      "reponse": "La pierre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a remporté la bataille des plaines d'Abraham ?",
-      "reponse": "Les Britanniques",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Sur quel navire Darwin a-t-il navigué ?",
-      "reponse": "Le Beagle",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Que dessinaient les hommes préhistoriques sur les murs des grottes ?",
-      "reponse": "Des animaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle fourrure les Européens recherchaient-ils le plus en Nouvelle-France ?",
-      "reponse": "Le castor",
+      "question": "Quelle arme les chevaliers portaient-ils au côté ?",
+      "reponse": "L'épée",
       "niveau": 1
     },
     {
@@ -142,66 +146,55 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle reine a régné 70 ans sur le Royaume-Uni ?",
-      "reponse": "Elizabeth II",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel navigateur a traversé l'Atlantique en 1492 et atteint l'Amérique ?",
+      "reponse": "Christophe Colomb",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle jeune fille a écrit un journal en se cachant à Amsterdam pendant la guerre ?",
-      "reponse": "Anne Frank",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle cité antique a été détruite par le Vésuve ?",
-      "reponse": "Pompéi",
+      "question": "Quel général romain a été assassiné en -44 ?",
+      "reponse": "Jules César",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel animal servait de moyen de transport principal avant l'automobile ?",
+      "question": "Quelle reine britannique a régné pendant presque tout le 19e siècle ?",
+      "reponse": "Victoria",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal les chevaliers montaient-ils pour aller au combat ?",
       "reponse": "Le cheval",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Dans quel amphithéâtre combattaient les gladiateurs ?",
-      "reponse": "Le Colisée",
-      "niveau": 1
+      "question": "Quel président sud-africain fut libéré en 1990 ?",
+      "reponse": "Nelson Mandela",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la chemise de mailles métalliques que portait le chevalier ?",
-      "reponse": "La cotte de mailles",
+      "question": "Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?",
+      "reponse": "La Station spatiale internationale",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel astronaute canadien a chanté dans l'espace ?",
+      "reponse": "Chris Hadfield",
       "niveau": 2,
       "ages": [
         "enfants",
         "ados",
         "adultes"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année a eu lieu la Confédération canadienne ?",
-      "reponse": "1867",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelles expéditions religieuses visaient Jérusalem ?",
-      "reponse": "Les croisades",
-      "niveau": 2
     }
   ]
 }

@@ -8,70 +8,43 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quel peintre italien a peint la Joconde ?",
-      "reponse": "Léonard de Vinci",
+      "question": "Comment appelle-t-on la grande statue ou la stèle élevée en mémoire de quelqu'un ?",
+      "reponse": "Un monument",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel mur antique protégeait l'Angleterre romaine ?",
-      "reponse": "Mur d'Hadrien",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Que porte un astronaute pour survivre dans l'espace ?",
+      "reponse": "Un scaphandre",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle infirmière anglaise a soigné les soldats à la lampe pendant la guerre de Crimée ?",
-      "reponse": "Florence Nightingale",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel site de vidéos a été lancé en 2005 et racheté par Google un an plus tard ?",
-      "reponse": "YouTube",
+      "question": "En quelle année a débuté la Révolution française ?",
+      "reponse": "1789",
       "niveau": 2,
       "ages": [
-        "enfants",
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple autochtone habitait Stadaconé et Hochelaga à l'arrivée des Français ?",
+      "reponse": "Les Iroquoiens",
+      "niveau": 3,
+      "ages": [
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel vêtement de tissu drapé portaient les citoyens romains ?",
-      "reponse": "Une toge",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel moine a affiché 95 thèses en 1517 ?",
-      "reponse": "Luther",
+      "question": "Quel roi babylonien a gravé un célèbre code de lois ?",
+      "reponse": "Hammurabi",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle bataille de 1759 a fait passer Québec aux mains des Britanniques ?",
-      "reponse": "La bataille des plaines d'Abraham",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels deux blocs s'opposaient durant la guerre froide ?",
-      "reponse": "USA et URSS",
-      "niveau": 2,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -84,15 +57,27 @@
     },
     {
       "categorie": "Histoire",
-      "question": "En quel siècle vivons-nous ?",
-      "reponse": "Le 21e siècle",
+      "question": "Que hisse-t-on sur les mâts pour que le vent pousse un navire ancien ?",
+      "reponse": "Les voiles",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel héros grec avait un talon vulnérable ?",
+      "reponse": "Achille",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel explorateur a cherché la fontaine de Jouvence en Floride ?",
-      "reponse": "Ponce de León",
-      "niveau": 3,
+      "question": "Quel animal domestique les Égyptiens adoraient-ils au point de le momifier ?",
+      "reponse": "Le chat",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
+      "reponse": "Challenger",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -100,36 +85,15 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel cercle de pierres dressées se dresse dans une plaine anglaise ?",
-      "reponse": "Stonehenge",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?",
+      "reponse": "Le cheval de Troie",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle militante pakistanaise a reçu le Nobel de la paix ?",
-      "reponse": "Malala",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on les combats à cheval où deux chevaliers se chargeaient avec des lances ?",
-      "reponse": "Les joutes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les premiers habitants de l'Amérique, ici avant les Européens ?",
-      "reponse": "Les Autochtones",
-      "niveau": 1
+      "question": "Comment appelle-t-on l'Égyptien qui savait écrire, un métier rare et respecté ?",
+      "reponse": "Un scribe",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
@@ -144,37 +108,25 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle révolution a renversé le tsar en 1917 ?",
-      "reponse": "La révolution russe",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel animal fut le premier en orbite ?",
+      "reponse": "La chienne Laïka",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel intendant a développé la Nouvelle-France ?",
-      "reponse": "Jean Talon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel ancien téléphone fallait-il tourner avec le doigt pour composer un numéro ?",
-      "reponse": "Le téléphone à cadran",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les longues routes pavées construites par les Romains ?",
-      "reponse": "Les voies romaines",
+      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
+      "reponse": "Traité de Paris",
       "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel astronome a placé le Soleil au centre de l'univers ?",
+      "reponse": "Copernic",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -189,32 +141,67 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
-      "reponse": "Pizarro",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel chef des Huns a terrorisé l'Europe ?",
+      "reponse": "Attila",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année l'euro est-il entré en circulation ?",
-      "reponse": "2002",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention chinoise a remplacé le parchemin pour écrire ?",
-      "reponse": "Le papier",
-      "niveau": 3,
+      "question": "Quel général carthaginois a traversé les Alpes à dos d'éléphant ?",
+      "reponse": "Hannibal",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel philosophe grec fut condamné à boire la ciguë ?",
+      "reponse": "Socrate",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?",
+      "reponse": "Le sextant",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quelle matière les tout premiers outils de l'humanité étaient-ils taillés ?",
+      "reponse": "La pierre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle reine de France fut guillotinée en 1793 ?",
+      "reponse": "Marie-Antoinette",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quelle île Napoléon est-il mort ?",
+      "reponse": "Sainte-Hélène",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     }
   ]

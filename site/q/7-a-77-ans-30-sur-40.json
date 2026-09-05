@@ -7,44 +7,15 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quelle plateforme suédoise diffuse de la musique en continu ?",
-      "reponse": "Spotify",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Quel est le cri du coq ?",
-      "reponse": "Cocorico",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du canard ?",
-      "reponse": "La cane",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel animal figure sur la pièce de 5 cents canadienne ?",
-      "reponse": "Le castor",
+      "question": "Quel est le contraire de plein ?",
+      "reponse": "Vide",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel grain blanc met-on dans la salière ?",
-      "reponse": "Le sel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
-      "reponse": "L'autruche",
+      "question": "Quelle confiserie blanche flotte sur le chocolat chaud ?",
+      "reponse": "La guimauve",
       "niveau": 1
     },
     {
@@ -54,33 +25,56 @@
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le placard où l'on suspend ses manteaux au Québec ?",
-      "reponse": "Le garde-robe",
+      "categorie": "Cinéma et télé",
+      "question": "Quel majordome sert Bruce Wayne ?",
+      "reponse": "Alfred",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jouet de Toy Story est une patate avec des pièces à enlever ?",
-      "reponse": "Monsieur Patate",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle amazone a un lasso de vérité ?",
-      "reponse": "Wonder Woman",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel agent secret britannique aime les martinis ?",
-      "reponse": "James Bond",
+      "categorie": "Culture générale",
+      "question": "Quel animal figure sur la pièce de 5 cents canadienne ?",
+      "reponse": "Le castor",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle force nous retient au sol ?",
-      "reponse": "La gravité",
+      "question": "Qui a découvert la gravitation ?",
+      "reponse": "Newton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel jeu vidéo met en scène un plombier moustachu ?",
+      "reponse": "Mario",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la femelle du canard ?",
+      "reponse": "La cane",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel accessoire redonne de l'énergie à un téléphone à plat ?",
+      "reponse": "Un chargeur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
+      "reponse": "L'étoile de mer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport porte-t-on un fleuret et un masque ?",
+      "reponse": "L'escrime",
       "niveau": 1
     },
     {
@@ -91,39 +85,72 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de points vaut un lancer franc au basketball ?",
-      "reponse": "Un",
+      "question": "Comment appelle-t-on la toile tendue sur laquelle on rebondit très haut ?",
+      "reponse": "Un trampoline",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle sitcom suit quatre physiciens et leur voisine serveuse ?",
+      "reponse": "Big Bang Theory",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu consiste à se cacher pendant qu'un joueur compte les yeux fermés ?",
+      "reponse": "La cachette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "De quelle couleur est le bac de recyclage au Québec ?",
+      "reponse": "Bleu",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le train qui circule sous la ville ?",
-      "reponse": "Le métro",
+      "question": "Comment appelle-t-on l'endroit où les bateaux accostent ?",
+      "reponse": "Un port",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil de comptoir fait dorer deux tranches de pain à la fois ?",
+      "reponse": "Le grille-pain",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel hymne national commence par les mots « terre de nos aïeux » ?",
-      "reponse": "Ô Canada",
+      "question": "Quelle note vient après le fa ?",
+      "reponse": "Le sol",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel meuble de la classe range les effets de l'élève ?",
-      "reponse": "Un pupitre",
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du cheval ?",
+      "reponse": "Le hennissement",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport combine natation, vélo et course ?",
-      "reponse": "Le triathlon",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume vert en feuilles rendait Popeye très fort ?",
+      "reponse": "L'épinard",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au basketball ?",
-      "reponse": "Cinq",
-      "niveau": 1
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle le passage de gaz à liquide ?",
+      "reponse": "La condensation",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -132,33 +159,20 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles tranches de pommes de terre frites et salées se vendent en sac ?",
-      "reponse": "Les croustilles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat mexicain plie une tortilla garnie de viande et de fromage ?",
-      "reponse": "Le taco",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal a le cou le plus long ?",
-      "reponse": "La girafe",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
-      "question": "Quelle équipe de hockey joue au Centre Bell ?",
-      "reponse": "Les Canadiens",
-      "niveau": 1
+      "question": "Quel cidre québécois est pressé après les gelées ?",
+      "reponse": "Cidre de glace",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le féminin de chien ?",
-      "reponse": "Chienne",
+      "categorie": "Musique",
+      "question": "Quel instrument à lamelles de bois frappe-t-on avec des maillets ?",
+      "reponse": "Le xylophone",
       "niveau": 1
     }
   ]

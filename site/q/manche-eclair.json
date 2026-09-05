@@ -7,10 +7,15 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes traverse l'ouest canadien ?",
-      "reponse": "Les Rocheuses",
-      "niveau": 1
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
+      "reponse": "La tradition orale",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -24,16 +29,21 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
-      "reponse": "Le surf",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quelles chaussures de caoutchouc percées de trous divisent la planète ?",
+      "reponse": "Les Crocs",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle danse traditionnelle québécoise se danse à quatre couples sur les appels d'un câlleur ?",
-      "reponse": "Le set carré",
-      "niveau": 3,
+      "categorie": "Sports",
+      "question": "Dans quel sport utilise-t-on un fer et un vert ?",
+      "reponse": "Le golf",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -41,43 +51,49 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le pluriel de « un animal » ?",
-      "reponse": "Des animaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu garnit les muffins et les tartes au Québec ?",
-      "reponse": "Le bleuet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage au nez rouge et aux souliers immenses fait rire les enfants ?",
-      "reponse": "Un clown",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quel ours du Livre de la jungle chante Il en faut peu ?",
-      "reponse": "Baloo",
-      "niveau": 1
+      "question": "Quel film d'animation raconte un garçon qui rejoint le pays des morts avec sa guitare ?",
+      "reponse": "Coco",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
-      "reponse": "Challenger",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la distance entre un do et le do suivant ?",
+      "reponse": "Une octave",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot algèbre ?",
+      "reponse": "L'arabe",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on un cours d'eau qui se jette dans un fleuve ?",
+      "reponse": "Une rivière",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel aliment blanc, fait de lait, mange-t-on avec des fruits au déjeuner ?",
+      "reponse": "Le yogourt",
+      "niveau": 1
+    },
+    {
       "categorie": "Québec",
-      "question": "Quel ancien vélodrome de Montréal abrite des animaux ?",
-      "reponse": "Le Biodôme",
+      "question": "Quelle baleine blanche du Saint-Laurent est protégée ?",
+      "reponse": "Le béluga",
       "niveau": 1
     }
   ]

@@ -7,42 +7,15 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel acide donne son goût au citron ?",
-      "reponse": "L'acide citrique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Dans quel jeu vidéo aménage-t-on une île en remboursant un raton laveur ?",
-      "reponse": "Animal Crossing",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "De quelle couleur les océans sont-ils dessinés sur une carte ?",
-      "reponse": "Bleus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on une chanson enregistrée avec deux artistes vedettes ?",
-      "reponse": "Un duo",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Que signifie se serrer la ceinture ?",
-      "reponse": "Se priver",
+      "question": "Que signifie être sage comme une image ?",
+      "reponse": "Être très tranquille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel poste lance le ballon au football ?",
+      "reponse": "Le quart-arrière",
       "niveau": 1,
       "ages": [
         "ados",
@@ -52,8 +25,20 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel carré noir et blanc se scanne avec la caméra du téléphone ?",
-      "reponse": "Un code QR",
+      "question": "Quel manège file à toute vitesse en montant et descendant sur des rails ?",
+      "reponse": "Les montagnes russes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel liquide chaud et salé se mange à la cuillère avant le plat principal ?",
+      "reponse": "La soupe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de roi ?",
+      "reponse": "La reine",
       "niveau": 1
     },
     {
@@ -63,27 +48,92 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle est la capitale de la province de Québec ?",
-      "reponse": "La ville de Québec",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne les gants où les doigts sont ensemble ?",
-      "reponse": "Les mitaines",
+      "question": "Quelle embarcation traverse le fleuve gelé au Carnaval ?",
+      "reponse": "Le canot",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie dormir sur ses deux oreilles ?",
-      "reponse": "Dormir tranquille",
+      "categorie": "Musique",
+      "question": "Quel objet tient le chanteur pour que sa voix porte dans toute la salle ?",
+      "reponse": "Le micro",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel arbre des Gardiens ne dit que trois mots ?",
-      "reponse": "Groot",
+      "question": "Quel type de poisson est Nemo ?",
+      "reponse": "Un poisson-clown",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "De quelle couleur les océans sont-ils dessinés sur une carte ?",
+      "reponse": "Bleus",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Qui appelle-t-on au 911 quand quelqu'un est blessé ?",
+      "reponse": "L'ambulance",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelles petites roues aident un enfant à apprendre le vélo ?",
+      "reponse": "Des roues d'entraînement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Qui porte l'uniforme et fait respecter la loi dans la rue ?",
+      "reponse": "La police",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle voix masculine est la plus grave ?",
+      "reponse": "La basse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle émission québécoise du jour de l'An revoit l'année ?",
+      "reponse": "Bye Bye",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle montagne se dresse au milieu de Montréal ?",
+      "reponse": "Le mont Royal",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas mange-t-on traditionnellement le matin ?",
+      "reponse": "Le déjeuner",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel monstre géant venu du Japon écrase des villes au cinéma ?",
+      "reponse": "Godzilla",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels sont les trois états de l'eau ?",
+      "reponse": "Solide liquide gaz",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on l'exercice qu'une équipe fait avant le match pour se réchauffer ?",
+      "reponse": "L'échauffement",
       "niveau": 1
     },
     {
@@ -97,15 +147,9 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la personne qui conduit un autobus scolaire ?",
-      "reponse": "Un chauffeur",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle célèbre soupe française est gratinée ?",
-      "reponse": "Soupe à l'oignon",
+      "question": "Quel jambon italien se mange en tranches fines ?",
+      "reponse": "Le prosciutto",
       "niveau": 1,
       "ages": [
         "ados",
@@ -114,74 +158,21 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
-      "reponse": "Le slalom",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "De quelle couleur est le drapeau du Québec ?",
-      "reponse": "Bleu et blanc",
+      "categorie": "Culture générale",
+      "question": "De quelle couleur est le feu de circulation qui dit d'arrêter ?",
+      "reponse": "Rouge",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle plante piquante pousse dans le désert ?",
-      "reponse": "Le cactus",
+      "question": "Combien de pattes a un oiseau ?",
+      "reponse": "Deux",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande hachée garnit le pâté chinois ?",
-      "reponse": "Le bœuf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelait-on les traiteurs de fourrures en forêt ?",
-      "reponse": "Coureurs des bois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
-      "reponse": "Le fromage en grains",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport monte des parois avec des prises de couleur et un baudrier ?",
-      "reponse": "L'escalade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel objet rond et plat se lance à deux dans un parc l'été ?",
-      "reponse": "Un frisbee",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel est le chien de compagnie de Mickey ?",
-      "reponse": "Pluto",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse brésilienne anime le carnaval ?",
-      "reponse": "La samba",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel soldat Marvel porte un bouclier étoilé ?",
-      "reponse": "Captain America",
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de gagner ?",
+      "reponse": "Perdre",
       "niveau": 1
     }
   ]

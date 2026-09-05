@@ -8,66 +8,9 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quel compositeur autrichien est le roi de la valse ?",
-      "reponse": "Strauss",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur belge a chanté Alors on danse ?",
-      "reponse": "Stromae",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe britannique a chanté Bohemian Rhapsody ?",
-      "reponse": "Queen",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de notes dans la gamme de do majeur ?",
-      "reponse": "Sept",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a raflé les Junos avec l'album Phoenix ?",
-      "reponse": "Charlotte Cardin",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel long instrument suisse s'étire au sol ?",
-      "reponse": "Le cor des Alpes",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on le musicien assis derrière ses caisses et ses cymbales ?",
+      "reponse": "Un batteur",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
@@ -82,33 +25,32 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle superstar américaine a nommé sa tournée Eras ?",
-      "reponse": "Taylor Swift",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "question": "Comment appelle-t-on le son qui revient quand on crie dans une vallée ?",
+      "reponse": "Un écho",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel appareil enregistrait la musique sur une bande dans les années 80 ?",
-      "reponse": "Une cassette",
-      "niveau": 3,
+      "question": "Quelle chanteuse québécoise a gagné Eurovision pour la Suisse en 1988 ?",
+      "reponse": "Céline Dion",
+      "niveau": 2,
       "ages": [
+        "enfants",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse de jazz était surnommée Lady Day ?",
-      "reponse": "Billie Holiday",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
+      "question": "Quel instrument à lamelles de bois frappe-t-on avec des maillets ?",
+      "reponse": "Le xylophone",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël célèbre un arbre dont le feuillage reste vert tout l'hiver ?",
+      "reponse": "Mon beau sapin",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
@@ -121,105 +63,150 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel chanteur des Rolling Stones a de grandes lèvres célèbres ?",
-      "reponse": "Mick Jagger",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on la musique jouée au début d'une émission de télé ?",
+      "reponse": "Le générique",
+      "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "Quel format de disque tourne à 33 tours ?",
-      "reponse": "Le vinyle",
+      "question": "Quelle chanteuse est surnommée Queen B ?",
+      "reponse": "Beyoncé",
       "niveau": 1,
       "ages": [
         "enfants",
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel style de musique se joue avec un orchestre symphonique et une partition ?",
-      "reponse": "La musique classique",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël célèbre un arbre dont le feuillage reste vert tout l'hiver ?",
-      "reponse": "Mon beau sapin",
+      "question": "Quel petit instrument à vent se souffle avec la bouche dans le blues et le folk ?",
+      "reponse": "L'harmonica",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe a chanté Hotel California ?",
-      "reponse": "Les Eagles",
+      "question": "Quel style musical est né à la Nouvelle-Orléans ?",
+      "reponse": "Le jazz",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel poète-chanteur canadien a écrit Hallelujah ?",
-      "reponse": "Leonard Cohen",
+      "question": "Quel groupe américain a chanté Believer et Radioactive ?",
+      "reponse": "Imagine Dragons",
       "niveau": 2,
       "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel objet à ressort le professeur de musique frappe-t-il pour donner le la ?",
+      "reponse": "Un diapason",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quels deux disques de métal s'entrechoquent dans un orchestre ?",
-      "reponse": "Les cymbales",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le moment où un seul musicien joue devant les autres ?",
-      "reponse": "Un solo",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur québécois a chanté Lindberg avec Louise Forestier ?",
-      "reponse": "Robert Charlebois",
+      "question": "Quelle jeune chanteuse a chanté Bad Guy ?",
+      "reponse": "Billie Eilish",
       "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe irlandais est mené par Bono ?",
-      "reponse": "U2",
-      "niveau": 2,
+      "question": "Quel instrument de bois à trous se joue en travers des lèvres ?",
+      "reponse": "La flûte traversière",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson d'Elsa parle de laisser aller le froid et de ne plus se cacher ?",
+      "reponse": "Libérée délivrée",
+      "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel objet tient le chanteur pour que sa voix porte dans toute la salle ?",
-      "reponse": "Le micro",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument électronique remplace un orchestre ?",
-      "reponse": "Le synthétiseur",
+      "question": "Quel ballet de Tchaïkovski met en scène une princesse changée en oiseau blanc ?",
+      "reponse": "Le Lac des cygnes",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de cordes a un violoncelle ?",
+      "reponse": "Quatre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse a chanté Bad Romance ?",
+      "reponse": "Lady Gaga",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse argentine se danse joue contre joue avec une rose ?",
+      "reponse": "Le tango",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui dirige une chorale ?",
+      "reponse": "Un chef de chœur",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument espagnol se claque entre les doigts pendant le flamenco ?",
+      "reponse": "Les castagnettes",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle pédale déforme le son de la guitare pour le rendre saturé ?",
+      "reponse": "La distorsion",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument principal joue un batteur ?",
+      "reponse": "La batterie",
+      "niveau": 1
     }
   ]
 }

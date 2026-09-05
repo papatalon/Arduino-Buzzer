@@ -8,95 +8,35 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne un épi de maïs ?",
-      "reponse": "Un blé d'Inde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la neige poussée par le vent qui empêche de voir la route ?",
-      "reponse": "La poudrerie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel village d'attractions de Québec devient un parc aquatique l'été ?",
-      "reponse": "Valcartier",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel secteur riverain de Montréal accueille patinoire, plage et grande roue ?",
-      "reponse": "Le Vieux-Port",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel hébergement québécois est rebâti chaque hiver ?",
-      "reponse": "Hôtel de glace",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel fromage frais grince sous la dent ?",
-      "reponse": "Fromage en grains",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel établissement d'enseignement, entre le secondaire et l'université, n'existe qu'au Québec ?",
-      "reponse": "Le cégep",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel stade montréalais a un mât incliné ?",
-      "reponse": "Stade olympique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fleur figure sur le drapeau de Montréal ?",
-      "reponse": "Fleur de lys",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui appelle-t-on au 911 quand quelqu'un est blessé ?",
-      "reponse": "L'ambulance",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Combien de référendums sur la souveraineté a connus le Québec ?",
-      "reponse": "Deux",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne une soirée où l'on boit entre amis ?",
-      "reponse": "Un 5 à 7",
+      "question": "Quel parc national québécois porte le nom d'un explorateur, au nord de Québec ?",
+      "reponse": "Le parc de la Jacques-Cartier",
       "niveau": 3,
       "ages": [
         "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel village québécois reconstitue la vie de 1900 ?",
+      "reponse": "Val-Jalbert",
+      "niveau": 2,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel quartier montréalais borde le parc La Fontaine et l'avenue du Mont-Royal ?",
-      "reponse": "Le Plateau",
-      "niveau": 2,
+      "question": "Quel véhicule d'hiver file sur la neige avec des chenilles et des skis ?",
+      "reponse": "Une motoneige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Dans quel stade le CF Montréal joue-t-il ses matchs ?",
+      "reponse": "Le Stade Saputo",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -105,15 +45,41 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel vêtement long et épais protège du froid de janvier ?",
-      "reponse": "Un manteau d'hiver",
+      "question": "Quel chansonnier a écrit Quand les hommes vivront d'amour ?",
+      "reponse": "Raymond Lévesque",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle mascotte blanche à ceinture fléchée accueille les visiteurs du Carnaval ?",
+      "reponse": "Bonhomme",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on le document qui rapporte les notes d'un élève à ses parents ?",
-      "reponse": "Le bulletin",
+      "question": "Quelle fête d'octobre réunit la famille autour d'une dinde au Canada ?",
+      "reponse": "L'Action de grâce",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne des chaussures de sport ?",
+      "reponse": "Des espadrilles",
       "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle exposition universelle a eu lieu à Montréal ?",
+      "reponse": "Expo 67",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
@@ -123,45 +89,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle plante grimpante rougit les murs des maisons à l'automne ?",
-      "reponse": "La vigne vierge",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel grand bâtiment rouge de la ferme abrite les animaux et le foin ?",
-      "reponse": "La grange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel poète québécois a écrit L'homme rapaillé ?",
-      "reponse": "Gaston Miron",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mammifère marin blanc remonte le Saguenay ?",
-      "reponse": "Le béluga",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que doit-on attacher en s'assoyant dans une auto ?",
-      "reponse": "La ceinture de sécurité",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel musée montréalais borde la rue Sherbrooke ouest ?",
-      "reponse": "Beaux-arts",
+      "question": "Quelle tourte à plusieurs étages de pâte vient de la Gaspésie ?",
+      "reponse": "Le cipaille",
       "niveau": 2,
       "ages": [
         "ados",
@@ -171,17 +100,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel premier ministre québécois a lancé la Révolution tranquille ?",
-      "reponse": "Jean Lesage",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel roman de Gabrielle Roy se passe à Saint-Henri ?",
-      "reponse": "Bonheur d'occasion",
+      "question": "Quel oiseau noir aux reflets bleus envahit les champs du Québec en bandes bruyantes ?",
+      "reponse": "L'étourneau",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -190,14 +110,96 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel parti a fondé François Legault ?",
-      "reponse": "La CAQ",
+      "question": "Quelle station de métro montréalaise dessert trois lignes ?",
+      "reponse": "Berri-UQAM",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on les longs cônes de glace qui pendent des toits ?",
+      "reponse": "Des glaçons",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Dans quelle ville l'aquarium présente-t-il des ours blancs ?",
+      "reponse": "Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel parc national québécois protège des caribous ?",
+      "reponse": "La Gaspésie",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel poisson à moustaches se pêche au fond des rivières du Québec ?",
+      "reponse": "La barbotte",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelles montagnes russes en bois de La Ronde sont célèbres ?",
+      "reponse": "Le Monstre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on au Québec les boissons gazeuses ?",
+      "reponse": "La liqueur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel petit fruit noir se cueille dans les fossés du Québec en août ?",
+      "reponse": "La mûre",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle tour cylindrique de la ferme conserve la nourriture des vaches ?",
+      "reponse": "Un silo",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel restaurant montréalais est célèbre pour son smoked meat ?",
+      "reponse": "Schwartz",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "De quelle couleur est le feu de circulation qui dit d'avancer ?",
+      "reponse": "Vert",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on les bandes blanches où l'on traverse la rue ?",
+      "reponse": "Un passage piéton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle chaîne de casse-croûte québécoise sert de la poutine tard dans la nuit ?",
+      "reponse": "La Belle Province",
+      "niveau": 1
     }
   ]
 }

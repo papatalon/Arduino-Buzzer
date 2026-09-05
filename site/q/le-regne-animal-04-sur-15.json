@@ -7,19 +7,137 @@
   "emoji": "🐾",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel cochon de cinéma veut devenir chien de berger ?",
-      "reponse": "Babe",
-      "niveau": 1,
+      "categorie": "Mots et langue",
+      "question": "Petit de l'ours ?",
+      "reponse": "L'ourson",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
+      "reponse": "Le kitesurf",
+      "niveau": 3,
       "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Sébastien dans La Petite Sirène ?",
+      "reponse": "Un crabe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on celui qui étudie les oiseaux ?",
+      "reponse": "Un ornithologue",
+      "niveau": 2,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal terrestre est le plus lourd ?",
+      "reponse": "L'éléphant",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle volaille laquée est le classique de la capitale chinoise ?",
+      "reponse": "Canard de Pékin",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
+      "reponse": "L'étoile de mer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal rampe sans pattes ?",
+      "reponse": "Le serpent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le trou creusé dans l'asphalte par le gel et le dégel ?",
+      "reponse": "Un nid-de-poule",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel héros Marvel rétrécit à la taille d'une fourmi ?",
+      "reponse": "Ant-Man",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel guépard en lunettes fumées vend des croustilles au fromage ?",
-      "reponse": "Chester Cheetah",
+      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
+      "reponse": "Une sirène",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Pluriel de cheval ?",
+      "reponse": "Chevaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du mouton ?",
+      "reponse": "Le bêlement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on un groupe d'abeilles qui se déplace en nuage ?",
+      "reponse": "Un essaim",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le mâle de la brebis ?",
+      "reponse": "Le bélier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel animal cache les chocolats dans le jardin à Pâques ?",
+      "reponse": "Le lapin de Pâques",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel reporter a un chien nommé Milou ?",
+      "reponse": "Tintin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel oiseau noir et blanc de l'Antarctique ne sait pas voler ?",
+      "reponse": "Le manchot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel animal est l'emblème des États-Unis ?",
+      "reponse": "L'aigle",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel duo québécois de dessins animés met en scène une souris et son chat en peluche ?",
+      "reponse": "Toupie et Binou",
       "niveau": 2,
       "ages": [
         "enfants",
@@ -28,133 +146,16 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "De quel arbre le koala mange-t-il les feuilles ?",
-      "reponse": "L'eucalyptus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin ressemble à un cheval miniature ?",
-      "reponse": "L'hippocampe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Sur quel continent vivent les manchots empereurs ?",
-      "reponse": "L'Antarctique",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal est le meilleur ami de l'homme ?",
-      "reponse": "Le chien",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle héroïne à pois rouges combat le crime à Paris avec Chat Noir ?",
-      "reponse": "Ladybug",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel agrume jaune très acide accompagne les poissons ?",
-      "reponse": "Le citron",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel mammifère marin chante des mélodies ?",
-      "reponse": "La baleine à bosse",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Comment s'appelle la maison de brindilles que construit un oiseau ?",
-      "reponse": "Un nid",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel petit animal rayé remplit ses joues de noix ?",
-      "reponse": "Le tamia (suisse)",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle petite fille russe vit des aventures avec un ours dans un dessin animé ?",
-      "reponse": "Macha",
-      "niveau": 2,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
       "categorie": "Histoire",
-      "question": "Quel gros reptile a disparu de la Terre il y a des millions d'années ?",
-      "reponse": "Un dinosaure",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin a trois cœurs ?",
-      "reponse": "La pieuvre",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la larve du papillon ?",
-      "reponse": "La chenille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit poisson pêche-t-on sous la glace à La Pérade ?",
-      "reponse": "Le poulamon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Sven dans La Reine des neiges ?",
-      "reponse": "Un renne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle partie colorée de la fleur attire les abeilles ?",
-      "reponse": "Les pétales",
+      "question": "Comment appelait-on les soldats montés à cheval dans les armées d'autrefois ?",
+      "reponse": "La cavalerie",
       "niveau": 2
     },
     {
-      "categorie": "Musique",
-      "question": "Quel ballet de Tchaïkovski met en scène une princesse changée en oiseau blanc ?",
-      "reponse": "Le Lac des cygnes",
-      "niveau": 1,
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri de l'éléphant ?",
+      "reponse": "Le barrissement",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -163,41 +164,14 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel est le chien de compagnie de Mickey ?",
-      "reponse": "Pluto",
+      "question": "Quel animal de ferme, très bavard, accompagne Shrek partout ?",
+      "reponse": "L'âne",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Petit du sanglier ?",
-      "reponse": "Le marcassin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel canard milliardaire plonge dans ses pièces d'or ?",
-      "reponse": "Picsou",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Que dessinaient les hommes préhistoriques sur les murs des grottes ?",
-      "reponse": "Des animaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel oiseau est le symbole de la paix ?",
-      "reponse": "La colombe",
+      "question": "Quel est le cri du loup ?",
+      "reponse": "Le hurlement",
       "niveau": 1
     }
   ]

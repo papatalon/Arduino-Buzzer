@@ -8,24 +8,100 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Quel désert couvre le sud-ouest africain ?",
-      "reponse": "Le Kalahari",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande île du golfe Saint-Laurent ?",
-      "reponse": "Anticosti",
+      "question": "Capitale de l'Australie ?",
+      "reponse": "Canberra",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+      "reponse": "Les Pyrénées",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande île de la Méditerranée ?",
+      "reponse": "La Sicile",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle direction le soleil se couche-t-il ?",
+      "reponse": "À l'ouest",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le passage étroit d'eau entre deux terres ?",
+      "reponse": "Un détroit",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays se trouve juste au sud du Canada ?",
+      "reponse": "Les États-Unis",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quel continent vivent les girafes en liberté ?",
+      "reponse": "L'Afrique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel récif corallien longe l'Australie ?",
+      "reponse": "Grande Barrière",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus petit pays du monde ?",
+      "reponse": "Le Vatican",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays nordique le père Noël a-t-il son village officiel, à Rovaniemi ?",
+      "reponse": "La Finlande",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'eau salée qu'on ne peut pas boire ?",
+      "reponse": "L'eau de mer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quel continent se trouve le désert du Sahara ?",
+      "reponse": "L'Afrique",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -39,38 +115,19 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on les gondoles et les gladiateurs de l'histoire ?",
-      "reponse": "L'Italie",
-      "niveau": 2
+      "question": "Quel état américain est le plus grand ?",
+      "reponse": "L'Alaska",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle ville est surnommée la Grosse Pomme ?",
-      "reponse": "New York",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
-      "reponse": "L'Ontario",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée au Mexique ?",
-      "reponse": "L'espagnol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "De quelle couleur les océans sont-ils dessinés sur une carte ?",
-      "reponse": "Bleus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel petit pays est enclavé entre France et Espagne ?",
-      "reponse": "Andorre",
+      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
+      "reponse": "La Finlande",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -79,32 +136,65 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel point le plus au sud de la Terre est couvert de glace ?",
-      "reponse": "Le pôle Sud",
+      "question": "Quel courant marin réchauffe l'Europe ?",
+      "reponse": "Le Gulf Stream",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
+      "reponse": "La Norvège",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ville sainte est commune à trois religions ?",
+      "reponse": "Jérusalem",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle grande étendue d'eau salée sépare l'Angleterre de la France ?",
+      "reponse": "La Manche",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Langue parlée en Autriche ?",
+      "reponse": "L'allemand",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien de points cardinaux la rose des vents compte-t-elle ?",
+      "reponse": "Quatre",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle ville est surnommée la Ville lumière ?",
-      "reponse": "Paris",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays est célèbre pour ses tacos et ses sombreros ?",
-      "reponse": "Le Mexique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays les vaches sont-elles sacrées ?",
+      "question": "Dans quel pays se trouve le Taj Mahal ?",
       "reponse": "L'Inde",
-      "niveau": 1
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de la Suède ?",
-      "reponse": "Stockholm",
+      "question": "Quelle ville est surnommée la Ville éternelle ?",
+      "reponse": "Rome",
       "niveau": 2,
       "ages": [
         "ados",
@@ -114,77 +204,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Ontario ?",
-      "reponse": "Toronto",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le pôle Sud ?",
-      "reponse": "L'Antarctique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le passage creusé sous une montagne ou sous l'eau ?",
-      "reponse": "Un tunnel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville se dresse la statue de la Liberté ?",
-      "reponse": "New York",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel état américain est un archipel volcanique ?",
-      "reponse": "Hawaï",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve forme la frontière Ontario-Québec au sud ?",
-      "reponse": "L'Outaouais",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Monnaie utilisée en Suisse ?",
-      "reponse": "Le franc suisse",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle île canadienne a inspiré Anne aux pignons verts ?",
-      "reponse": "Prince-Édouard",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
-      "reponse": "Rio de Janeiro",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus petit pays du monde ?",
-      "reponse": "Le Vatican",
+      "question": "Quel détroit sépare la Russie de l'Alaska ?",
+      "reponse": "Bering",
       "niveau": 2,
       "ages": [
         "ados",

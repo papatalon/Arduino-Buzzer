@@ -1744,16 +1744,41 @@ void _controleQualite(List<Entry> all) {
     if (donnes == mots.length) echos++;
   }
 
-  final parReponse = <String, int>{};
+  final parReponse = <String, List<Entry>>{};
   for (final e in all) {
     final k = plat(e.answer)
         .replaceFirst(RegExp(r'^(le|la|les|un|une|des|du|de la) '), '');
-    parReponse[k] = (parReponse[k] ?? 0) + 1;
+    (parReponse[k] ??= []).add(e);
   }
-  final collisions = parReponse.values.where((n) => n > 1).length;
+  final collisions = parReponse.values.where((v) => v.length > 1).length;
+
+  // Le quasi-doublon : deux questions de la même catégorie qui attendent la
+  // même réponse et partagent au moins trois mots porteurs. Le contrôle des
+  // doublons ne les voit pas, leur texte diffère ; au jeu, c'est deux fois la
+  // même question. Celui-là s'affiche en détail, parce qu'il n'a pas de cas
+  // légitime : quand il en sort un, une des deux lignes est de trop.
+  var jumelles = 0;
+  Set<String> porteurs(String s) => plat(s)
+      .split(' ')
+      .where((m) => m.length > 2 && !vides.contains(m))
+      .toSet();
+  for (final v in parReponse.values) {
+    for (var i = 0; i < v.length; i++) {
+      for (var j = i + 1; j < v.length; j++) {
+        if (v[i].category != v[j].category) continue;
+        final communs = porteurs(v[i].question).intersection(porteurs(v[j].question));
+        if (communs.length < 3) continue;
+        jumelles++;
+        stderr.writeln('Quasi-doublon (${v[i].category}) « ${v[i].answer} » :');
+        stderr.writeln('   ${v[i].question}');
+        stderr.writeln('   ${v[j].question}');
+      }
+    }
+  }
 
   stdout.writeln('Contrôle : $echos réponses déjà dans leur question, '
-      '$collisions réponses partagées par plusieurs questions.');
+      '$collisions réponses partagées par plusieurs questions, '
+      '$jumelles quasi-doublons.');
 }
 
 // La clé d'unicité d'une question : l'énoncé sans accents, sans casse, sans

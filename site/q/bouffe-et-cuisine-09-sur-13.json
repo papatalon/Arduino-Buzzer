@@ -8,8 +8,8 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelles noix entrent dans le pesto génois ?",
-      "reponse": "Les pignons",
+      "question": "Quel poisson salé est le plat national du Portugal ?",
+      "reponse": "La morue",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,19 +19,70 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel thé japonais en poudre est vert vif ?",
-      "reponse": "Le matcha",
+      "question": "Quel jus boit-on le plus souvent au déjeuner ?",
+      "reponse": "Le jus d'orange",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert coloré tremble dans son bol et se prépare avec de la poudre ?",
+      "reponse": "Le Jell-O",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce brune très salée accompagne les sushis ?",
+      "reponse": "Sauce soya",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas québécois se mange le midi ?",
+      "reponse": "Le dîner",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat indien s'appelle butter chicken en anglais ?",
+      "reponse": "Poulet au beurre",
       "niveau": 1,
       "ages": [
-        "enfants",
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel poisson fumé garnit le bagel classique ?",
+      "reponse": "Le saumon fumé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sandwich vietnamien se sert dans une baguette ?",
+      "reponse": "Le banh mi",
+      "niveau": 2,
+      "ages": [
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel condiment jaune accompagne le hot-dog ?",
-      "reponse": "La moutarde",
+      "question": "Pays d'origine du pad thaï ?",
+      "reponse": "La Thaïlande",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle tarte épicée se mange à l'Action de grâce ?",
+      "reponse": "À la citrouille",
       "niveau": 1
     },
     {
@@ -42,8 +93,14 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel champignon de luxe est déterré par des chiens ?",
-      "reponse": "La truffe",
+      "question": "Quel légume vert ressemble à un petit arbre ?",
+      "reponse": "Le brocoli",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boulette frite du Moyen-Orient est aux pois chiches ?",
+      "reponse": "Le falafel",
       "niveau": 1,
       "ages": [
         "ados",
@@ -53,9 +110,31 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson chaude est faite de grains torréfiés ?",
-      "reponse": "Le café",
-      "niveau": 1,
+      "question": "Avec quel lait fait-on la feta traditionnelle ?",
+      "reponse": "Lait de brebis",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel épi grillé se mange au beurre en août ?",
+      "reponse": "Le blé d'Inde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la feuille qui donne les ingrédients et les étapes d'un plat ?",
+      "reponse": "Une recette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle crêpe française est flambée à l'orange ?",
+      "reponse": "Crêpe Suzette",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -64,109 +143,36 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson orange est populaire en sushi ?",
-      "reponse": "Le saumon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel condiment rouge accompagne les frites et le pâté chinois ?",
-      "reponse": "Le ketchup",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel récipient plat sert à faire revenir les œufs ?",
-      "reponse": "Une poêle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel liquide acide, tiré du vin, se mélange à l'huile sur la salade ?",
-      "reponse": "Le vinaigre",
+      "question": "Quelle boule de viande hachée se sert dans la sauce à spaghetti ?",
+      "reponse": "Une boulette",
       "niveau": 2
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson pétillante est du thé fermenté ?",
-      "reponse": "Le kombucha",
+      "question": "Quel condiment vert fait de cornichons hachés garnit le hot-dog ?",
+      "reponse": "La relish",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sirop doré anglais vient de la canne ?",
+      "reponse": "Golden syrup",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel mollusque mange-t-on avec du beurre à l'ail ?",
+      "reponse": "L'escargot",
       "niveau": 1,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle volaille trône au repas de Noël ?",
-      "reponse": "La dinde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle épice noire moulue accompagne le sel sur la table ?",
-      "reponse": "Le poivre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat espagnol froid est une soupe de tomates ?",
-      "reponse": "Le gaspacho",
-      "niveau": 2,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Comment s'appelle le sel récolté à la surface des marais ?",
-      "reponse": "Fleur de sel",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit principal compose le ketchup ?",
-      "reponse": "La tomate",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume rouge, jaune ou vert se coupe en lanières croquantes ?",
-      "reponse": "Le poivron",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle sauce verte argentine accompagne les grillades ?",
-      "reponse": "Le chimichurri",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat brésilien est un ragoût de haricots noirs ?",
-      "reponse": "La feijoada",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle gousse noire parfume la crème glacée ?",
-      "reponse": "La vanille",
-      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -181,20 +187,8 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
-      "reponse": "Le homard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte italienne en petits tubes courbés se mange au fromage ?",
-      "reponse": "Le macaroni",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume racine devient des frites une fois coupé ?",
-      "reponse": "La pomme de terre",
+      "question": "Quel repas se prend le midi au Québec ?",
+      "reponse": "Le dîner",
       "niveau": 1
     }
   ]

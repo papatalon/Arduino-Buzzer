@@ -8,28 +8,15 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quel crooner a chanté My Way ?",
-      "reponse": "Frank Sinatra",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
+      "question": "Quelle comptine demande à Pierrot de prêter sa plume pour écrire un mot ?",
+      "reponse": "Au clair de la lune",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel Beatle a chanté Imagine en solo ?",
-      "reponse": "John Lennon",
+      "question": "Quel instrument australien est un long tube en bois ?",
+      "reponse": "Le didgeridoo",
       "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument a inventé Adolphe Sax ?",
-      "reponse": "Le saxophone",
-      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -38,8 +25,130 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel style musical est né dans les églises noires américaines ?",
-      "reponse": "Le gospel",
+      "question": "Quelle chanteuse britannique a chanté Levitating et Don't Start Now ?",
+      "reponse": "Dua Lipa",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur canadien a été découvert sur YouTube ?",
+      "reponse": "Justin Bieber",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe a chanté Stairway to Heaven ?",
+      "reponse": "Led Zeppelin",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle cantatrice grecque fut surnommée la Divina ?",
+      "reponse": "Maria Callas",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument électronique se joue en frappant des pastilles sensibles ?",
+      "reponse": "Le pad",
+      "niveau": 3,
+      "ages": [
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel meuble de bois abrite les tuyaux et les claviers dans une église ?",
+      "reponse": "Le buffet d'orgue",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel objet le chef d'orchestre tient-il ?",
+      "reponse": "La baguette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle indication musicale signifie jouer doucement ?",
+      "reponse": "Piano",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style musical parle-chante sur des rythmes ?",
+      "reponse": "Le rap",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel petit instrument à quatre cordes vient d'Hawaï ?",
+      "reponse": "Le ukulélé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la version d'une chanson enregistrée par quelqu'un d'autre que l'original ?",
+      "reponse": "Une reprise",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe québécois chante Toune d'automne ?",
+      "reponse": "Cowboys Fringants",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Dans « Savez-vous planter les choux », avec quoi les plante-t-on en premier ?",
+      "reponse": "Le doigt",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel film musical met en scène Danny et Sandy ?",
+      "reponse": "Grease",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse québécoise a chanté pour Titanic ?",
+      "reponse": "Céline Dion",
       "niveau": 1,
       "ages": [
         "ados",
@@ -55,100 +164,21 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe britannique a chanté Wonderwall ?",
-      "reponse": "Oasis",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le musicien assis derrière ses caisses et ses cymbales ?",
-      "reponse": "Un batteur",
+      "question": "Quel hymne national commence par les mots « terre de nos aïeux » ?",
+      "reponse": "Ô Canada",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument à soufflet et à touches anime les fêtes de famille ?",
-      "reponse": "L'accordéon",
+      "question": "Quelle note suit le si dans la gamme ?",
+      "reponse": "Le do",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel style musical mêle rap, danse et graffitis depuis New York ?",
-      "reponse": "Le hip-hop",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de symphonies Beethoven a-t-il composées ?",
-      "reponse": "Neuf",
+      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
+      "reponse": "Bleu Jeans Bleu",
       "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe féminin sud-coréen a chanté Kill This Love ?",
-      "reponse": "Blackpink",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel objet de bois et de métal se secoue pour marquer le rythme dans une classe ?",
-      "reponse": "Des maracas",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel opéra de Bizet se déroule en Espagne ?",
-      "reponse": "Carmen",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse argentine se danse joue contre joue avec une rose ?",
-      "reponse": "Le tango",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
-      "reponse": "Nézet-Séguin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Sur quelle estrade les artistes se produisent-ils ?",
-      "reponse": "La scène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel duo français portait des casques de robots ?",
-      "reponse": "Daft Punk",
-      "niveau": 2,
       "ages": [
         "ados",
         "adultes"
@@ -156,48 +186,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument à dents pincées accompagne le folklore ?",
-      "reponse": "La guimbarde",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel rappeur américain a joué dans 8 Mile ?",
-      "reponse": "Eminem",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur québécois a chanté Le petit roi ?",
-      "reponse": "Jean-Pierre Ferland",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe sud-coréen a chanté Dynamite ?",
-      "reponse": "BTS",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse latine endiablée vient de Cuba ?",
-      "reponse": "La salsa",
+      "question": "Quel style musical vient de la Jamaïque ?",
+      "reponse": "Le reggae",
       "niveau": 1,
       "ages": [
         "ados",
@@ -207,24 +197,20 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel compositeur français a écrit le Boléro ?",
-      "reponse": "Ravel",
-      "niveau": 3,
+      "question": "Quel instrument à vent en bois a une anche simple et un pavillon évasé ?",
+      "reponse": "La clarinette",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle expression du Roi Lion signifie « sans souci » en swahili ?",
-      "reponse": "Hakuna Matata",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "question": "Quelle chanson enfantine parle d'un petit navire qui n'avait jamais navigué ?",
+      "reponse": "Il était un petit navire",
+      "niveau": 1
     }
   ]
 }

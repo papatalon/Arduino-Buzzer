@@ -8,6 +8,27 @@
   "questions": [
     {
       "categorie": "Sports",
+      "question": "Comment appelle-t-on la balle de golf entrée dans la coupe dès le départ ?",
+      "reponse": "Un trou d'un coup",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel basketteur légendaire portait le 23 des Bulls ?",
+      "reponse": "Michael Jordan",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
       "question": "Quel lanceur québécois a gagné un Cy Young ?",
       "reponse": "Éric Gagné",
       "niveau": 2,
@@ -29,89 +50,32 @@
     },
     {
       "categorie": "Sports",
+      "question": "Combien de joueurs sur la glace par équipe au hockey ?",
+      "reponse": "Six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quoi le joueur transporte-t-il ses bâtons d'un trou à l'autre ?",
+      "reponse": "Le sac de golf",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le tableau qui affiche le pointage pendant un match ?",
+      "reponse": "Le tableau indicateur",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
       "question": "Quelle activité d'été fait dormir sous une tente ?",
       "reponse": "Le camping",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle carte l'arbitre de soccer montre-t-il pour expulser un joueur ?",
-      "reponse": "Un carton rouge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on l'objet doré remis à l'équipe championne ?",
-      "reponse": "Un trophée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
-      "reponse": "Orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel sprinteur détient le record du 100 mètres ?",
       "reponse": "Usain Bolt",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport fait glisser un lugeur tête première sur la glace ?",
-      "reponse": "Le skeleton",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de force soulève une barre chargée de disques ?",
-      "reponse": "L'haltérophilie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au baseball ?",
-      "reponse": "Neuf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la faute qui envoie un joueur de hockey au banc deux minutes ?",
-      "reponse": "Une punition",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quelle cage combattent les athlètes de l'UFC ?",
-      "reponse": "L'octogone",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel Serbe détient le record de titres du grand chelem ?",
-      "reponse": "Novak Djokovic",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
-      "reponse": "Le patinage artistique",
       "niveau": 1
     },
     {
@@ -127,9 +91,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le premier match de la saison ?",
-      "reponse": "Le match d'ouverture",
-      "niveau": 2
+      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
+      "reponse": "Orange",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -144,8 +108,42 @@
     },
     {
       "categorie": "Sports",
-      "question": "Que doit-on porter sur la tête avant de partir à vélo ?",
-      "reponse": "Un casque de vélo",
+      "question": "Quel sport fait descendre un skieur derrière un bateau ?",
+      "reponse": "Le ski nautique",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la passe qui mène directement à un but ?",
+      "reponse": "Une passe décisive",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel Serbe détient le record de titres du grand chelem ?",
+      "reponse": "Novak Djokovic",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quelle cage combattent les athlètes de l'UFC ?",
+      "reponse": "L'octogone",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle médaille reçoit le troisième aux Jeux olympiques ?",
+      "reponse": "La médaille de bronze",
       "niveau": 1
     },
     {
@@ -160,20 +158,20 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de coureurs dans un relais 4x100 ?",
-      "reponse": "Quatre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le match qui décide du championnat ?",
-      "reponse": "La finale",
+      "question": "Comment appelle-t-on le joueur du baseball qui envoie la balle au frappeur ?",
+      "reponse": "Le lanceur",
       "niveau": 1
     },
     {
       "categorie": "Sports",
       "question": "Quel sport de table se joue avec des queues et des billes ?",
       "reponse": "Le billard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de coureurs dans un relais 4x100 ?",
+      "reponse": "Quatre",
       "niveau": 1
     },
     {
@@ -196,6 +194,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le premier match de la saison ?",
+      "reponse": "Le match d'ouverture",
+      "niveau": 2
     }
   ]
 }

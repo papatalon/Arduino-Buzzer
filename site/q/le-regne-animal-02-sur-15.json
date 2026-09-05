@@ -7,33 +7,15 @@
   "emoji": "🐾",
   "questions": [
     {
-      "categorie": "Culture générale",
-      "question": "Dans quel conte un oisillon rejeté par les siens devient un magnifique cygne ?",
-      "reponse": "Le vilain petit canard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal rampe sans pattes ?",
-      "reponse": "Le serpent",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
-      "question": "Quel style de nage porte le nom d'un insecte ?",
-      "reponse": "Le papillon",
-      "niveau": 1
+      "question": "Quel sport fait courir des chevaux montés par des jockeys ?",
+      "reponse": "Les courses de chevaux",
+      "niveau": 2
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on un groupe d'abeilles qui se déplace en nuage ?",
-      "reponse": "Un essaim",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri de la grenouille ?",
-      "reponse": "Le coassement",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle épice se râpe sur le lait de poule ?",
+      "reponse": "La muscade",
       "niveau": 2,
       "ages": [
         "ados",
@@ -42,21 +24,39 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
-      "reponse": "Le cardinal",
-      "niveau": 3
+      "categorie": "Sciences et nature",
+      "question": "Quel grand reptile du Nil était sacré en Égypte ?",
+      "reponse": "Le crocodile",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal sans pattes creuse des galeries dans la terre du jardin ?",
+      "reponse": "Le ver de terre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le guerrier à cheval qui servait son seigneur ?",
+      "reponse": "Un chevalier",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel cheval mythologique a des ailes ?",
-      "reponse": "Pégase",
+      "question": "Quel animal figure sur la pièce de 25 cents canadienne ?",
+      "reponse": "Le caribou",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle volaille laquée est le classique de la capitale chinoise ?",
-      "reponse": "Canard de Pékin",
+      "question": "Quelle forme donne-t-on au poisson pané pour les enfants ?",
+      "reponse": "Des bâtonnets",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel ballet de Tchaïkovski met en scène une princesse changée en oiseau blanc ?",
+      "reponse": "Le Lac des cygnes",
       "niveau": 1,
       "ages": [
         "ados",
@@ -65,107 +65,19 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du cerf ?",
-      "reponse": "La biche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mot québécois remplace « chat » pour une conversation écrite en ligne ?",
-      "reponse": "Le clavardage",
-      "niveau": 3,
+      "categorie": "Cinéma et télé",
+      "question": "Quel canard milliardaire plonge dans ses pièces d'or ?",
+      "reponse": "Picsou",
+      "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel disque de plastique lance-t-on à un ami ou à un chien au parc ?",
-      "reponse": "Le frisbee",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel oiseau figure sur la pièce de un dollar canadien ?",
-      "reponse": "Le huard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel canard noir est le rival de Bugs Bunny ?",
-      "reponse": "Daffy Duck",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle fourrure les Européens recherchaient-ils le plus en Nouvelle-France ?",
-      "reponse": "Le castor",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quel cousin rayé du cheval vit en Afrique ?",
-      "reponse": "Le zèbre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit âne de dessin animé français est très curieux ?",
-      "reponse": "Trotro",
-      "niveau": 3,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Féminin de loup ?",
-      "reponse": "Louve",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du cochon ?",
-      "reponse": "Le grognement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels animaux géants ont disparu bien avant l'apparition des humains ?",
-      "reponse": "Les dinosaures",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel arachnide a une queue munie d'un dard ?",
-      "reponse": "Le scorpion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel oiseau apporterait les bébés selon la légende ?",
-      "reponse": "La cigogne",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte soulève 50 fois son poids ?",
-      "reponse": "La fourmi",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Dans quel conte un loup souffle-t-il sur des maisons de paille, de bois et de briques ?",
-      "reponse": "Les Trois Petits Cochons",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de pattes possède un crabe ?",
-      "reponse": "Dix",
+      "question": "Quel félin est le plus gros du monde ?",
+      "reponse": "Le tigre",
       "niveau": 2,
       "ages": [
         "ados",
@@ -174,10 +86,107 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le petit chien blanc de Tintin ?",
-      "reponse": "Milou",
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal rayé remplit ses joues de noix ?",
+      "reponse": "Le tamia (suisse)",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle fillette de conte entre chez trois ours et goûte leur gruau ?",
+      "reponse": "Boucle d'or",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal à huit pattes tisse une toile ?",
+      "reponse": "L'araignée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on le mâle de la vache, celui qui charge dans l'arène ?",
+      "reponse": "Le taureau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal les Autochtones des plaines chassaient-ils pour se nourrir et se vêtir ?",
+      "reponse": "Le bison",
+      "niveau": 2
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit de l'aigle ?",
+      "reponse": "L'aiglon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle science étudie les animaux ?",
+      "reponse": "La zoologie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel dinosaure a trois cornes sur la tête ?",
+      "reponse": "Le tricératops",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gros animal brun dort tout l'hiver dans sa tanière ?",
+      "reponse": "L'ours",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
+      "reponse": "Une joute",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de loup ?",
+      "reponse": "Louve",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel animal est surnommé le roi de la jungle ?",
+      "reponse": "Le lion",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de poche en noir et blanc faisait vivre un animal virtuel ?",
+      "reponse": "Le Tamagotchi",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne un petit trou dans l'asphalte après l'hiver ?",
+      "reponse": "Un nid-de-poule",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle exploratrice a un singe nommé Babouche ?",
+      "reponse": "Dora",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     }
   ]
 }

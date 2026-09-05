@@ -8,209 +8,186 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Autour de quelle table siégeaient les chevaliers d'Arthur ?",
-      "reponse": "La Table ronde",
+      "question": "Quelles sondes jumelles ont été lancées en 1977 ?",
+      "reponse": "Voyager",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la personne dont le métier est d'étudier le passé ?",
+      "reponse": "Un historien",
       "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que cherchent les pirates en creusant sur une île déserte ?",
+      "reponse": "Un trésor",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple a construit le Colisée et les aqueducs ?",
+      "reponse": "Les Romains",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle embarcation d'écorce les Autochtones et les coureurs des bois utilisaient-ils ?",
+      "reponse": "Le canot d'écorce",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel astronaute américain a posé le pied sur la Lune le premier ?",
+      "reponse": "Neil Armstrong",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la grille de fer qui descend pour bloquer l'entrée d'un château ?",
+      "reponse": "La herse",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
+      "reponse": "Pierre de Rosette",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle chaussure ouverte, faite de lanières de cuir, portaient les Romains ?",
+      "reponse": "Une sandale",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel navire océanographique commandait Cousteau ?",
+      "reponse": "La Calypso",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel paquebot réputé insubmersible a heurté un iceberg lors de son premier voyage ?",
+      "reponse": "Le Titanic",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on un conflit où presque tous les pays du monde se battent ?",
+      "reponse": "Une guerre mondiale",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal les Autochtones des plaines chassaient-ils pour se nourrir et se vêtir ?",
+      "reponse": "Le bison",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quel bâtiment expose-t-on les objets et les squelettes du passé ?",
+      "reponse": "Un musée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle centrale nucléaire a explosé en 1986 ?",
+      "reponse": "Tchernobyl",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
+      "reponse": "Trudeau",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le combattant qui affrontait des bêtes devant la foule romaine ?",
+      "reponse": "Un gladiateur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel objet les premiers explorateurs utilisaient-ils pour trouver le nord ?",
+      "reponse": "Une boussole",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention à deux roues se propulse avec des pédales ?",
+      "reponse": "La bicyclette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal servait de moyen de transport principal avant l'automobile ?",
+      "reponse": "Le cheval",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel moine a affiché 95 thèses en 1517 ?",
+      "reponse": "Luther",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année eut lieu le grand krach boursier ?",
+      "reponse": "1929",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Pour quelle exposition la tour Eiffel fut-elle construite ?",
+      "reponse": "Expo de 1889",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel télescope spatial a été lancé en 1990 ?",
+      "reponse": "Hubble",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
       "question": "Comment appelle-t-on le long bateau à rames des Grecs et des Romains ?",
       "reponse": "Une galère",
       "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle pyramide d'Égypte est la plus grande ?",
-      "reponse": "Khéops",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel outil de bois et de fer les paysans utilisaient-ils pour retourner la terre ?",
-      "reponse": "La charrue",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle maladie a confiné la planète entière au printemps 2020 ?",
-      "reponse": "La COVID-19",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année a débuté la Seconde Guerre mondiale ?",
-      "reponse": "1939",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
-      "reponse": "La tradition orale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle arme les chevaliers portaient-ils au côté ?",
-      "reponse": "L'épée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on la colonie française en Amérique du Nord ?",
-      "reponse": "La Nouvelle-France",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal a allaité Romulus et Rémus ?",
-      "reponse": "Une louve",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle princesse anglaise est morte à Paris en 1997 ?",
-      "reponse": "Diana",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
-      "reponse": "L'inlandsis",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle statue égyptienne a un corps de lion ?",
-      "reponse": "Le Sphinx",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a gravi l'Everest en premier en 1953 ?",
-      "reponse": "Hillary et Norgay",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle ruée vers l'or a attiré des milliers de gens au Yukon ?",
-      "reponse": "Klondike",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle reine anglaise fut surnommée la Reine vierge ?",
-      "reponse": "Elizabeth Ire",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle bataille de 1066 a livré l'Angleterre aux Normands ?",
-      "reponse": "Hastings",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle machine de siège lançait des pierres par-dessus les murailles ?",
-      "reponse": "La catapulte",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Dans quelle région de France a eu lieu le débarquement du 6 juin 1944 ?",
-      "reponse": "La Normandie",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?",
-      "reponse": "Le télescope James Webb",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Sur quelle plante les Égyptiens écrivaient-ils ?",
-      "reponse": "Le papyrus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel philosophe fut l'élève de Socrate ?",
-      "reponse": "Platon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Sur quel grand siège le roi s'assoit-il pour recevoir ses sujets ?",
-      "reponse": "Un trône",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel château fut la résidence de Louis XIV ?",
-      "reponse": "Versailles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle bataille grecque a donné son nom à une course ?",
-      "reponse": "Marathon",
-      "niveau": 2
     }
   ]
 }

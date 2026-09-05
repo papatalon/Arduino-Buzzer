@@ -7,95 +7,15 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
-      "reponse": "Caillou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise fait cohabiter des célibataires devant les caméras ?",
-      "reponse": "Occupation Double",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
-      "reponse": "Le Grand Nord",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelles pièces de bois claque-t-on entre les doigts au Québec ?",
-      "reponse": "Les cuillères",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel repas québécois correspond au dîner français ?",
-      "reponse": "Le souper",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magazine hebdomadaire publiait les horaires de télévision au Québec ?",
-      "reponse": "Le TV Hebdo",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois a créé la série Les Beaux Malaises ?",
-      "reponse": "Martin Matte",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne borde le Québec à l'est, avec Moncton ?",
-      "reponse": "Le Nouveau-Brunswick",
-      "niveau": 3
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
-      "reponse": "Arthur Laroche",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel repas québécois se mange le midi ?",
-      "reponse": "Le dîner",
-      "niveau": 1
-    },
-    {
       "categorie": "Histoire",
-      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
-      "reponse": "Trudeau",
-      "niveau": 1,
+      "question": "Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?",
+      "reponse": "Jeanne Mance",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel mot québécois désigne les bonbons ?",
-      "reponse": "Des nananes",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -109,9 +29,51 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel groupe québécois a parodié les années 80 à la télé ?",
-      "reponse": "RBO",
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise fait cohabiter des célibataires devant les caméras ?",
+      "reponse": "Occupation Double",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois barrer la porte ?",
+      "reponse": "Verrouiller",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe québécois chante Toune d'automne ?",
+      "reponse": "Cowboys Fringants",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
+      "reponse": "La Bolduc",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel océan sépare le Québec de l'Europe ?",
+      "reponse": "L'océan Atlantique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission matinale de TVA réveille le Québec en semaine ?",
+      "reponse": "Salut Bonjour",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -119,26 +81,22 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
-      "reponse": "La podorythmie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Bouffe et cuisine",
+      "question": "Quels trois étages composent le pâté chinois ?",
+      "reponse": "Bœuf maïs patates",
+      "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu foncé se cueille dans les bois du Lac-Saint-Jean ?",
-      "reponse": "Le bleuet sauvage",
-      "niveau": 2
+      "categorie": "Musique",
+      "question": "Quelles pièces de bois claque-t-on entre les doigts au Québec ?",
+      "reponse": "Les cuillères",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu télévisé québécois demande de repérer celui qui ment ?",
-      "reponse": "Le Tricheur",
-      "niveau": 3,
+      "question": "Quelle marque de croustilles québécoise répète deux fois la même syllabe ?",
+      "reponse": "Yum Yum",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -147,26 +105,15 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle fleur bleue orne le drapeau du Québec ?",
-      "reponse": "La fleur de lys",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animateur québécois a longtemps animé Tout le monde en parle ?",
-      "reponse": "Guy A. Lepage",
+      "question": "Quelle saison amène la neige au Québec ?",
+      "reponse": "L'hiver",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
-      "reponse": "Quétaine",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel objet québécois fait disparaître les traits de crayon sur le papier ?",
+      "reponse": "Une efface",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -175,26 +122,75 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel grand magasin de vêtements québécois porte un nom de famille ?",
-      "reponse": "Simons",
-      "niveau": 2,
+      "categorie": "Musique",
+      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
+      "reponse": "Nézet-Séguin",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quelle province se trouve Montréal ?",
-      "reponse": "Le Québec",
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne une fête ?",
+      "reponse": "Un party",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
-      "reponse": "L'inlandsis",
+      "categorie": "Géographie",
+      "question": "Quel fleuve forme la frontière Ontario-Québec au sud ?",
+      "reponse": "L'Outaouais",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
+      "reponse": "Georges St-Pierre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel poisson fumé garnit le bagel classique ?",
+      "reponse": "Le saumon fumé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine québécoise plume un oiseau, la tête, le bec et les ailes ?",
+      "reponse": "Alouette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel humoriste québécois d'origine marocaine raconte sa famille sur scène ?",
+      "reponse": "Rachid Badouri",
       "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?",
+      "reponse": "La ville de Québec",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
+      "reponse": "Gary Carter",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"

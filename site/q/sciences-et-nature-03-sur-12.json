@@ -8,175 +8,43 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la maison des fourmis ?",
-      "reponse": "La fourmilière",
+      "question": "Quelle planète a les anneaux les plus spectaculaires ?",
+      "reponse": "Saturne",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
-      "reponse": "Les branchies",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de cœurs possède un ver de terre ?",
-      "reponse": "Cinq",
-      "niveau": 3,
+      "question": "Quel nuage annonce l'orage ?",
+      "reponse": "Le cumulonimbus",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui est le plus rapide : le son ou la lumière ?",
-      "reponse": "La lumière",
+      "question": "Quelle énergie vient des barrages ?",
+      "reponse": "L'hydroélectricité",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte brille dans la nuit d'été ?",
+      "reponse": "La luciole",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel poisson à l'aileron pointu fait fuir les baigneurs ?",
-      "reponse": "Le requin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel nuage collé au sol empêche de voir loin ?",
-      "reponse": "Le brouillard",
+      "question": "Quel oiseau bâtit son nid de boue sous les avant-toits des granges ?",
+      "reponse": "L'hirondelle",
       "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
-      "reponse": "La Grande Ourse",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel organe produit l'insuline ?",
-      "reponse": "Le pancréas",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
-      "reponse": "L'autruche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin a trois cœurs ?",
-      "reponse": "La pieuvre",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle unité mesure la fréquence ?",
-      "reponse": "Le hertz",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle particule négative tourne autour du noyau ?",
-      "reponse": "L'électron",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient du vent ?",
-      "reponse": "L'énergie éolienne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel oiseau de l'étang fait « coin-coin » ?",
-      "reponse": "Le canard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal terrestre est le plus lourd ?",
-      "reponse": "L'éléphant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle force nous retient au sol ?",
-      "reponse": "La gravité",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle le centre de la Terre ?",
-      "reponse": "Le noyau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte est le principal pollinisateur ?",
-      "reponse": "L'abeille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel champignon fait lever le pain ?",
-      "reponse": "La levure",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal polaire a la peau noire sous son pelage blanc ?",
-      "reponse": "L'ours polaire",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quels organes nous permettent de voir ?",
-      "reponse": "Les yeux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel os protège le cerveau ?",
-      "reponse": "Le crâne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel instrument grossit les objets proches ?",
-      "reponse": "La loupe",
-      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -186,8 +54,145 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal produit les œufs qu'on mange au déjeuner ?",
-      "reponse": "La poule",
+      "question": "Quelle partie de la plante absorbe l'eau ?",
+      "reponse": "Les racines",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal à grosse queue touffue cache des noix pour l'hiver ?",
+      "reponse": "L'écureuil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel caillou céleste brille en traversant l'atmosphère ?",
+      "reponse": "L'étoile filante",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le symbole chimique de l'hydrogène ?",
+      "reponse": "H",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte transmet la malaria ?",
+      "reponse": "Le moustique",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel oiseau de l'étang fait « coin-coin » ?",
+      "reponse": "Le canard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie de la cellule contient l'ADN ?",
+      "reponse": "Le noyau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la planète la plus proche du Soleil ?",
+      "reponse": "Mercure",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le symbole chimique du sodium ?",
+      "reponse": "Na",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gros animal d'Afrique passe ses journées dans l'eau, la gueule grande ouverte ?",
+      "reponse": "L'hippopotame",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène lumineux colore le ciel polaire ?",
+      "reponse": "Aurore boréale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle le sonar naturel des chauves-souris ?",
+      "reponse": "L'écholocation",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus petite unité de la matière ?",
+      "reponse": "L'atome",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel scientifique a inventé le paratonnerre ?",
+      "reponse": "Benjamin Franklin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel liquide rouge circule dans nos veines ?",
+      "reponse": "Le sang",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de minutes met la lumière du Soleil à nous parvenir ?",
+      "reponse": "Huit",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle galaxie abrite notre système solaire ?",
+      "reponse": "La Voie lactée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "À quelle température l'eau bout-elle ?",
+      "reponse": "100 degrés C",
       "niveau": 1
     }
   ]

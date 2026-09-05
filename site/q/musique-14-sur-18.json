@@ -8,15 +8,9 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quel bâton tendu de crin frotte les cordes du violon ?",
-      "reponse": "Un archet",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse a chanté Like a Virgin ?",
-      "reponse": "Madonna",
-      "niveau": 2,
+      "question": "Comment appelle-t-on le bruit désagréable d'un micro trop près d'un haut-parleur ?",
+      "reponse": "Le larsen",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
@@ -24,27 +18,25 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument de bois à trous se joue en travers des lèvres ?",
-      "reponse": "La flûte traversière",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël fait résonner un long « Gloria » repris par tout le monde ?",
-      "reponse": "Les anges dans nos campagnes",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la petite vidéo tournée pour illustrer une chanson ?",
-      "reponse": "Un clip",
+      "question": "Quel instrument à quatre grosses cordes donne les notes graves d'un groupe rock ?",
+      "reponse": "La basse électrique",
       "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "Quel chanteur canadien a percé adolescent avec Stitches ?",
-      "reponse": "Shawn Mendes",
+      "question": "Quel artiste portoricain est devenu l'artiste le plus écouté au monde en reggaeton ?",
+      "reponse": "Bad Bunny",
       "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle expression du Roi Lion signifie « sans souci » en swahili ?",
+      "reponse": "Hakuna Matata",
+      "niveau": 1,
       "ages": [
         "enfants",
         "ados",
@@ -53,47 +45,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel signe musical monte une note d'un demi-ton ?",
-      "reponse": "Le dièse",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument d'église a des tuyaux ?",
-      "reponse": "L'orgue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comptine fait répondre le hibou au coucou, du haut de son grand chêne ?",
-      "reponse": "Dans la forêt lointaine",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël québécois reprend l'air de Jingle Bells ?",
-      "reponse": "Vive le vent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur français moustachu chantait Les Champs-Élysées ?",
-      "reponse": "Joe Dassin",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Nirvana commence par un riff de guitare devenu emblème du grunge ?",
-      "reponse": "Smells Like Teen Spirit",
+      "question": "Comment appelle-t-on la personne qui règle le son pendant un spectacle ?",
+      "reponse": "Le sonorisateur",
       "niveau": 3,
       "ages": [
         "ados",
@@ -102,65 +55,152 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument se frappe avec deux baguettes sur une peau tendue ?",
-      "reponse": "Le tambour",
+      "question": "Quel signe musical baisse une note d'un demi-ton ?",
+      "reponse": "Le bémol",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument en cuivre déplié mesure près de trois mètres et se joue avec une coulisse ?",
+      "reponse": "Le trombone",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui joue du piano ?",
-      "reponse": "Un pianiste",
+      "question": "Quel groupe britannique a chanté Bohemian Rhapsody ?",
+      "reponse": "Queen",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel trompettiste avait les joues gonflées célèbres ?",
+      "reponse": "Dizzy Gillespie",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse est surnommée la Reine de la soul ?",
+      "reponse": "Aretha Franklin",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur américain a chanté Purple Rain ?",
+      "reponse": "Prince",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument écossais fonctionne avec un sac d'air ?",
+      "reponse": "La cornemuse",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle danse fait avancer tout le monde sur les mêmes pas, en rangées ?",
-      "reponse": "La danse en ligne",
+      "question": "Quel compositeur russe a écrit Casse-Noisette ?",
+      "reponse": "Tchaïkovski",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Dans « Au clair de la lune », à quel ami demande-t-on de prêter sa plume ?",
+      "reponse": "Pierrot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Céline Dion ouvre par une flûte irlandaise ?",
+      "reponse": "My Heart Will Go On",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle valse célèbre évoque un fleuve autrichien ?",
+      "reponse": "Le Beau Danube bleu",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à peau, porté en bandoulière, rythme le pas des soldats ?",
+      "reponse": "Un tambour militaire",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on les cinq lignes sur lesquelles on écrit les notes ?",
+      "reponse": "La portée",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse néo-zélandaise a chanté Royals à seize ans ?",
+      "reponse": "Lorde",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine raconte un reptile qui part à la guerre en disant au revoir à ses enfants ?",
+      "reponse": "Ah! les crocodiles",
       "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "Quel chanteur américain a chanté Uptown Funk et Just the Way You Are ?",
-      "reponse": "Bruno Mars",
+      "question": "Quel chanteur québécois a chanté Le petit roi ?",
+      "reponse": "Jean-Pierre Ferland",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on une petite chanson simple que les enfants apprennent par cœur ?",
-      "reponse": "Une comptine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans « Savez-vous planter les choux », avec quoi les plante-t-on en premier ?",
-      "reponse": "Le doigt",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on les chansons anciennes transmises de génération en génération ?",
-      "reponse": "Le folklore",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle pédale du piano prolonge les notes après qu'on a levé les doigts ?",
-      "reponse": "La pédale forte",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel chanteur écossais a chanté Someone You Loved ?",
-      "reponse": "Lewis Capaldi",
+      "question": "Quel instrument à archet se joue assis, entre les genoux ?",
+      "reponse": "Le violoncelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Journey encourage à ne jamais cesser d'y croire ?",
+      "reponse": "Don't Stop Believin'",
       "niveau": 3,
       "ages": [
         "ados",
@@ -169,28 +209,12 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanson de Stromae parle d'un père absent ?",
-      "reponse": "Papaoutai",
+      "question": "Quel groupe australien a chanté Highway to Hell ?",
+      "reponse": "AC/DC",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument de cuivre se joue en soufflant dans une embouchure et en pressant trois pistons ?",
-      "reponse": "La trompette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel genre musical latino fait danser sur un rythme venu de Porto Rico ?",
-      "reponse": "Le reggaeton",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     }
   ]

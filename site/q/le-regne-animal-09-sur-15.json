@@ -7,31 +7,78 @@
   "emoji": "🐾",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Dans Pierre et le loup, quel instrument joue le loup ?",
-      "reponse": "Le cor",
-      "niveau": 3,
+      "categorie": "Sciences et nature",
+      "question": "Quel animal d'Amérique du Sud se déplace très lentement, suspendu aux branches ?",
+      "reponse": "Le paresseux",
+      "niveau": 2,
       "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du cheval ?",
+      "reponse": "Le poulain",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
+      "reponse": "Le raton laveur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte transmet la malaria ?",
+      "reponse": "Le moustique",
+      "niveau": 1,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quel est le féminin de lion ?",
-      "reponse": "Lionne",
+      "question": "Quel est le cri du cochon ?",
+      "reponse": "Le grognement",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Disney se transforme en grenouille ?",
-      "reponse": "Tiana",
+      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
+      "reponse": "Bugs Bunny",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat péruvien est du poisson cru mariné ?",
+      "reponse": "Le ceviche",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle expression du Roi Lion signifie « sans souci » en swahili ?",
+      "reponse": "Hakuna Matata",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment s'appelle le petit de l'éléphant ?",
+      "reponse": "L'éléphanteau",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
@@ -44,60 +91,79 @@
       ]
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Quel oiseau déploie sa queue en éventail coloré pour parader ?",
+      "reponse": "Le paon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel cheval mythologique a des ailes ?",
+      "reponse": "Pégase",
+      "niveau": 1
+    },
+    {
       "categorie": "Cinéma et télé",
-      "question": "Quel chat orange déteste les lundis et adore la lasagne ?",
-      "reponse": "Garfield",
-      "niveau": 1,
+      "question": "Quel réalisateur a fait Psychose et Les Oiseaux ?",
+      "reponse": "Hitchcock",
+      "niveau": 2,
       "ages": [
-        "enfants",
-        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel animal cache les chocolats dans le jardin à Pâques ?",
-      "reponse": "Le lapin de Pâques",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
-      "reponse": "Le kitesurf",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un petit cochon rose ?",
-      "reponse": "Porcinet",
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la femelle du canard ?",
+      "reponse": "La cane",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel animal emblème figure sur les armoiries de Montréal ?",
-      "reponse": "Le castor",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel musée montréalais expose des insectes vivants et naturalisés ?",
+      "reponse": "L'Insectarium",
+      "niveau": 2
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de tigre ?",
+      "reponse": "Tigresse",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel oiseau de nuit tourne la tête presque tout le tour ?",
-      "reponse": "Le hibou",
+      "question": "Chez quel animal le mâle porte-t-il les bébés ?",
+      "reponse": "L'hippocampe",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Dans quel film d'animation un lion, une girafe, un zèbre et un hippopotame s'échappent-ils d'un zoo de New York ?",
-      "reponse": "Madagascar",
-      "niveau": 1,
+      "question": "Quel type de poisson est Nemo ?",
+      "reponse": "Un poisson-clown",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la trace d'un animal préhistorique conservée dans la pierre ?",
+      "reponse": "Un fossile",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a pour emblème le coq ?",
+      "reponse": "La France",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel oiseau répète ce qu'on lui dit ?",
+      "reponse": "Le perroquet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel guépard en lunettes fumées vend des croustilles au fromage ?",
+      "reponse": "Chester Cheetah",
+      "niveau": 2,
       "ages": [
         "enfants",
         "ados",
@@ -105,104 +171,19 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
-      "reponse": "Les oreilles de lapin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit de la chèvre ?",
-      "reponse": "Le chevreau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri de l'âne ?",
-      "reponse": "Le braiment",
+      "categorie": "Sports",
+      "question": "Quel gardien québécois a popularisé le style papillon ?",
+      "reponse": "Patrick Roy",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel animal géant et blanc est le symbole du Grand Nord canadien ?",
-      "reponse": "L'ours polaire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on le mâle de la vache, celui qui charge dans l'arène ?",
-      "reponse": "Le taureau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Le dauphin est-il un poisson ou un mammifère ?",
-      "reponse": "Un mammifère",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du chat ?",
-      "reponse": "Le chaton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel métier ferre les chevaux ?",
-      "reponse": "Le maréchal-ferrant",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a pour emblème le panda ?",
-      "reponse": "La Chine",
-      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel chien accompagne Dorothy dans le Magicien d'Oz ?",
-      "reponse": "Toto",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel cheval blanc porte une corne unique sur le front ?",
-      "reponse": "Une licorne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du lapin ?",
-      "reponse": "Le lapereau",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel animal, s'il croise votre chemin, porterait malheur ?",
-      "reponse": "Le chat noir",
+      "question": "Comment s'appelle la petite souris grise que le chat Tom n'attrape jamais ?",
+      "reponse": "Jerry",
       "niveau": 1
     }
   ]

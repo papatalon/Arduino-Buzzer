@@ -8,14 +8,25 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Sur quoi fait-on des culbutes au cours d'éducation physique ?",
-      "reponse": "Un tapis",
-      "niveau": 1
+      "question": "Quel joueur de soccer est surnommé CR7 ?",
+      "reponse": "Cristiano Ronaldo",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Que transporte le relais avant les Jeux ?",
       "reponse": "La flamme olympique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel objet frappe-t-on au hockey ?",
+      "reponse": "La rondelle",
       "niveau": 1
     },
     {
@@ -36,30 +47,24 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel joueur de soccer est surnommé CR7 ?",
-      "reponse": "Cristiano Ronaldo",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "question": "Quel sport fait tourner des voitures très rapides sur un circuit ?",
+      "reponse": "La course automobile",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport enchaîne obstacles, murs et sauts en pleine ville ?",
-      "reponse": "Le parkour",
+      "question": "Quel hockeyeur a battu le record de buts de Gretzky en 2025 ?",
+      "reponse": "Ovechkin",
       "niveau": 2,
       "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on les gradins remplis de partisans ?",
-      "reponse": "Les estrades",
+      "question": "Comment appelle-t-on la saison qui suit la saison régulière au hockey ?",
+      "reponse": "Les séries éliminatoires",
       "niveau": 2
     },
     {
@@ -67,16 +72,6 @@
       "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
       "reponse": "Tessa Virtue",
       "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel hockeyeur a battu le record de buts de Gretzky en 2025 ?",
-      "reponse": "Ovechkin",
-      "niveau": 2,
       "ages": [
         "ados",
         "adultes"
@@ -118,41 +113,6 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel équipement de cuir le joueur de baseball enfile-t-il pour attraper la balle ?",
-      "reponse": "Un gant de baseball",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de haies compte le 110 mètres haies ?",
-      "reponse": "Dix",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
-      "reponse": "Le surf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle est la nage la plus rapide ?",
-      "reponse": "Le crawl",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le coup qui renverse toutes les quilles d'un seul lancer ?",
-      "reponse": "Un abat",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel attaquant norvégien enfile les buts à Manchester City ?",
       "reponse": "Haaland",
       "niveau": 3,
@@ -163,9 +123,27 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien d'anneaux entrelacés forment le symbole olympique ?",
-      "reponse": "Cinq",
+      "question": "Quel sport se joue sur une table avec une petite balle et deux palettes ?",
+      "reponse": "Le ping-pong",
       "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de manches dans un match de baseball ?",
+      "reponse": "Neuf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle est la nage la plus rapide ?",
+      "reponse": "Le crawl",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelles larges semelles permettent de marcher sur la neige sans caler ?",
+      "reponse": "Des raquettes",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -180,21 +158,42 @@
     },
     {
       "categorie": "Sports",
+      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
+      "reponse": "Le kitesurf",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de haies compte le 110 mètres haies ?",
+      "reponse": "Dix",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle épreuve d'athlétisme saute le plus loin possible dans un carré de sable ?",
+      "reponse": "Le saut en longueur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
       "question": "Quel style de nage porte le nom d'un insecte ?",
       "reponse": "Le papillon",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport glisse sur les vagues debout sur une planche ?",
-      "reponse": "Le surf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu oppose deux équipes qui tirent chacune un bout du même câble ?",
-      "reponse": "Le tir à la corde",
-      "niveau": 1
+      "question": "Quelle pièce d'équipement le joueur de baseball met-il sur la tête au bâton ?",
+      "reponse": "Un casque protecteur",
+      "niveau": 2
     }
   ]
 }

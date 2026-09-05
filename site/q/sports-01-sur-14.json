@@ -14,43 +14,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on trois buts comptés par le même joueur dans un match ?",
-      "reponse": "Un tour du chapeau",
+      "question": "Comment appelle-t-on la période supplémentaire quand le match est nul ?",
+      "reponse": "La prolongation",
       "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quel jeu de table fait glisser une rondelle sur un coussin d'air ?",
-      "reponse": "Le hockey sur air",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel officiel siffle les punitions ?",
-      "reponse": "L'arbitre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport frappe une petite balle blanche vers un trou avec un drapeau ?",
-      "reponse": "Le golf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pays a remporté le plus de Coupes du monde de soccer ?",
-      "reponse": "Le Brésil",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le tableau qui affiche le pointage pendant un match ?",
-      "reponse": "Le tableau indicateur",
+      "question": "Quel coup de tennis se frappe bras en travers du corps, dos de la main devant ?",
+      "reponse": "Un revers",
       "niveau": 2
     },
     {
@@ -66,9 +37,72 @@
     },
     {
       "categorie": "Sports",
+      "question": "Quel jeu de table fait glisser une rondelle sur un coussin d'air ?",
+      "reponse": "Le hockey sur air",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel officiel siffle les punitions ?",
+      "reponse": "L'arbitre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Sur quel engin descend-on une côte enneigée en position assise ?",
+      "reponse": "Un traîneau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la remise en jeu accordée quand la défense sort le ballon derrière sa ligne ?",
+      "reponse": "Un coup de pied de coin",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport mélange soccer et voiture dans un jeu vidéo ?",
+      "reponse": "Rocket League",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
+      "reponse": "Le patinage artistique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
       "question": "Quel pilote québécois a donné son nom au circuit de Montréal ?",
       "reponse": "Gilles Villeneuve",
       "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelles chaussures à roulettes se lacent aux pieds pour rouler sur l'asphalte ?",
+      "reponse": "Des patins à roues alignées",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le personnage costumé qui amuse la foule pendant un match ?",
+      "reponse": "La mascotte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel pays a remporté le plus de Coupes du monde de soccer ?",
+      "reponse": "Le Brésil",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -83,22 +117,6 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel joueur français a marqué trois buts en finale de la Coupe du monde 2022 ?",
-      "reponse": "Mbappé",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le coup de pied accordé devant le filet après une faute au soccer ?",
-      "reponse": "Un tir de pénalité",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
       "question": "Quelle gymnaste américaine a des figures qui portent son nom au code de pointage ?",
       "reponse": "Simone Biles",
       "niveau": 2,
@@ -109,9 +127,25 @@
     },
     {
       "categorie": "Sports",
+      "question": "Quel sport de combat japonais se pratique pieds nus en kimono blanc ?",
+      "reponse": "Le karaté",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
       "question": "Quel sport de glisse descend les pentes enneigées sur deux planches étroites ?",
       "reponse": "Le ski",
       "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel joueur français a marqué trois buts en finale de la Coupe du monde 2022 ?",
+      "reponse": "Mbappé",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Sports",
@@ -126,48 +160,11 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel Argentin a soulevé la Coupe du monde 2022 ?",
-      "reponse": "Lionel Messi",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport mélange soccer et voiture dans un jeu vidéo ?",
-      "reponse": "Rocket League",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on chacune des dix pièces de bois que la boule renverse au bowling ?",
-      "reponse": "Une quille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
       "reponse": "Le ballon-balai",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de billes rouges au snooker ?",
-      "reponse": "Quinze",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
@@ -184,6 +181,12 @@
     },
     {
       "categorie": "Sports",
+      "question": "Quel sport olympique de précision se pratique avec des flèches ?",
+      "reponse": "Le tir à l'arc",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
       "question": "Quelle fédération organise la Coupe du monde de soccer ?",
       "reponse": "La FIFA",
       "niveau": 1,
@@ -195,21 +198,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on les barrières que les coureurs doivent sauter sur la piste ?",
-      "reponse": "Des haies",
+      "question": "Comment appelle-t-on le joueur qui remplace un blessé en cours de match ?",
+      "reponse": "Un remplaçant",
       "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport oppose deux nageurs qui se poussent un ballon dans une piscine ?",
-      "reponse": "Le water-polo",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport olympique de précision se pratique avec des flèches ?",
-      "reponse": "Le tir à l'arc",
-      "niveau": 1
     }
   ]
 }

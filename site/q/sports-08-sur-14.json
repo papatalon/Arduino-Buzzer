@@ -8,15 +8,14 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel sport fait courir des chevaux montés par des jockeys ?",
-      "reponse": "Les courses de chevaux",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la remise en jeu accordée quand la défense sort le ballon derrière sa ligne ?",
-      "reponse": "Un coup de pied de coin",
-      "niveau": 2
+      "question": "Quel sport de cirque marche sur un fil tendu en hauteur ?",
+      "reponse": "Le funambulisme",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Sports",
@@ -27,6 +26,18 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle embarcation étroite se dirige avec une pagaie à deux pales ?",
+      "reponse": "Le kayak",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de prises retirent un frappeur au baseball ?",
+      "reponse": "Trois",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -53,9 +64,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de plage frappe un ballon par-dessus un filet, pieds dans le sable ?",
-      "reponse": "Le volleyball de plage",
-      "niveau": 2
+      "question": "Quel sport de danse acrobatique se pratique au sol avec de la musique ?",
+      "reponse": "Le breakdance",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Sports",
@@ -76,32 +92,20 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle médaille reçoit le troisième aux Jeux olympiques ?",
-      "reponse": "La médaille de bronze",
+      "question": "Comment appelle-t-on chacune des dix pièces de bois que la boule renverse au bowling ?",
+      "reponse": "Une quille",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport fait tourner des voitures très rapides sur un circuit ?",
-      "reponse": "La course automobile",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec un ballon orange qu'on lance dans un panier ?",
-      "reponse": "Le basketball",
+      "question": "Quel sport fait rouler une planche sur des rampes dans un parc ?",
+      "reponse": "La planche à roulettes",
       "niveau": 1
     },
     {
       "categorie": "Sports",
       "question": "Quelle discipline olympique note des figures sur glace ?",
       "reponse": "Patinage artistique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel objet à manche et à cordes frappe la balle au tennis ?",
-      "reponse": "Une raquette",
       "niveau": 1
     },
     {
@@ -128,14 +132,20 @@
     },
     {
       "categorie": "Sports",
+      "question": "Comment appelle-t-on les barrières que les coureurs doivent sauter sur la piste ?",
+      "reponse": "Des haies",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
       "question": "Combien de périodes dans un match de hockey ?",
       "reponse": "Trois",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport pousse un canot avec une pagaie à deux palettes ?",
-      "reponse": "Le kayak",
+      "question": "Quel trophée les équipes de la Ligue nationale se disputent-elles au printemps ?",
+      "reponse": "La coupe Stanley",
       "niveau": 1
     },
     {
@@ -151,20 +161,20 @@
     },
     {
       "categorie": "Sports",
+      "question": "Avec quel objet frappe-t-on la balle au baseball ?",
+      "reponse": "Le bâton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
       "question": "Quelle couleur de carton avertit un joueur au soccer ?",
       "reponse": "Jaune",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la pièce où les joueurs enfilent leur équipement ?",
-      "reponse": "Le vestiaire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de styles de nage existe-t-il en compétition ?",
-      "reponse": "Quatre",
+      "question": "Combien de joueurs par équipe au rugby à XV ?",
+      "reponse": "Quinze",
       "niveau": 2,
       "ages": [
         "ados",
@@ -174,14 +184,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Avec quel objet frappe-t-on la balle au baseball ?",
-      "reponse": "Le bâton",
-      "niveau": 1
+      "question": "Quel sport oppose deux nageurs qui se poussent un ballon dans une piscine ?",
+      "reponse": "Le water-polo",
+      "niveau": 3
     },
     {
       "categorie": "Sports",
-      "question": "Quelle médaille reçoit le champion olympique ?",
-      "reponse": "La médaille d'or",
+      "question": "Quel appareil mesure le temps d'une course à la seconde près ?",
+      "reponse": "Un chronomètre",
       "niveau": 1
     }
   ]

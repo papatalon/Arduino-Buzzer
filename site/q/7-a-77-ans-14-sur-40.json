@@ -7,98 +7,80 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Combien de syllabes compte le mot « chocolat » ?",
-      "reponse": "Trois",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quels bonbons durs multicolores promettent de goûter l'arc-en-ciel ?",
+      "reponse": "Les Skittles",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel coyote n'arrive jamais à attraper Bip Bip ?",
-      "reponse": "Vil Coyote",
+      "categorie": "Sports",
+      "question": "Quel équipement large attaché aux pieds empêche de caler dans la neige épaisse ?",
+      "reponse": "Les raquettes",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on les amas blancs qui flottent dans le ciel ?",
-      "reponse": "Un nuage",
+      "question": "Quelles sont les deux couleurs du zèbre ?",
+      "reponse": "Noir et blanc",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel bâton le magicien agite-t-il en disant sa formule ?",
-      "reponse": "Une baguette magique",
+      "categorie": "Musique",
+      "question": "Sur quelle estrade les artistes se produisent-ils ?",
+      "reponse": "La scène",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quelle langue est l'ancêtre du français ?",
-      "reponse": "Le latin",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le spectacle où un artiste chante devant une foule ?",
-      "reponse": "Un concert",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel récipient à queue sert à faire bouillir de l'eau sur le rond ?",
-      "reponse": "Une casserole",
+      "question": "Le pluriel de pneu prend un S ou un X ?",
+      "reponse": "Un S",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle partie de l'église pointe vers le ciel et se voit de loin dans un village ?",
-      "reponse": "Le clocher",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Contraire de rapide ?",
-      "reponse": "Lent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle confiserie maison se fait avec de la crème et de la cassonade ?",
-      "reponse": "Le sucre à la crème",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel rat cuisine dans un grand restaurant parisien ?",
-      "reponse": "Rémy",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la transformation de la chenille ?",
-      "reponse": "La métamorphose",
+      "question": "Quelle soirée habillée clôt les cinq années du secondaire en juin ?",
+      "reponse": "Le bal des finissants",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville du Québec ?",
-      "reponse": "Montréal",
+      "question": "Quel océan traverse-t-on en avion pour aller du Canada à la France ?",
+      "reponse": "L'Atlantique",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
-      "reponse": "La poutine",
+      "question": "Quelle pâtisserie a une croûte et une garniture aux pommes ou aux fraises ?",
+      "reponse": "La tarte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel petit instrument à vent se souffle avec la bouche dans le blues et le folk ?",
+      "reponse": "L'harmonica",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de jours dans un mois de février normal ?",
+      "reponse": "28",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel casse-tête cubique a six couleurs ?",
+      "reponse": "Le cube Rubik",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel lard frit croustillant sert-on à la cabane ?",
-      "reponse": "Oreilles de crisse",
+      "question": "Quel festival d'humour a lieu à Montréal ?",
+      "reponse": "Juste pour rire",
       "niveau": 1,
       "ages": [
         "ados",
@@ -113,50 +95,41 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel casse-tête cubique a six couleurs ?",
-      "reponse": "Le cube Rubik",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelles pièces de bois claque-t-on entre les doigts au Québec ?",
-      "reponse": "Les cuillères",
-      "niveau": 1
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série américaine suit un bureau de vente de papier ?",
+      "reponse": "The Office",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "De quel pays viennent les sushis ?",
-      "reponse": "Le Japon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de jours dans un mois de février normal ?",
-      "reponse": "28",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Toronto ?",
-      "reponse": "Les Maple Leafs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage de Sesame Street est un grand oiseau jaune ?",
-      "reponse": "Big Bird",
+      "question": "Quel chou fermenté accompagne les saucisses en Alsace ?",
+      "reponse": "La choucroute",
       "niveau": 1,
       "ages": [
-        "enfants",
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel océan traverse-t-on en avion pour aller du Canada à la France ?",
-      "reponse": "L'Atlantique",
+      "categorie": "Mots et langue",
+      "question": "Quel dictionnaire français célèbre est illustré ?",
+      "reponse": "Le Petit Larousse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Qui a créé Mickey Mouse ?",
+      "reponse": "Walt Disney",
       "niveau": 1
     },
     {
@@ -166,15 +139,51 @@
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Combien vaut un converti de deux points ?",
-      "reponse": "Deux",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série de science-fiction se passe à Hawkins ?",
+      "reponse": "Stranger Things",
       "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel sens est associé à la langue ?",
+      "reponse": "Le goût",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel accent a la forme d'un chapeau ?",
+      "reponse": "Le circonflexe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel bonbon rond se tient au bout d'un bâton ?",
+      "reponse": "Un suçon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville du Québec ?",
+      "reponse": "Montréal",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de cour d'école fait sauter par-dessus une corde qui tourne ?",
+      "reponse": "La corde à danser",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile porte une carapace sur son dos ?",
+      "reponse": "La tortue",
+      "niveau": 1
     }
   ]
 }

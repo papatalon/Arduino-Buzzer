@@ -8,8 +8,64 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quel bilan personnel Spotify publie-t-il à ses abonnés à la fin de chaque année ?",
-      "reponse": "Le Wrapped",
+      "question": "Quelle comptine parle d'une souris qui courait dans l'herbe ?",
+      "reponse": "Une souris verte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la voix masculine aiguë des grands airs d'opéra ?",
+      "reponse": "Le ténor",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle diva a chanté My Heart Will Go On ?",
+      "reponse": "Céline Dion",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Sur quel support incliné le musicien pose-t-il sa partition ?",
+      "reponse": "Un lutrin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson des Village People s'épelle avec les bras ?",
+      "reponse": "YMCA",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel appareil fait sortir le son fort dans une salle ?",
+      "reponse": "Un haut-parleur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style de musique de festival se construit sur des montées et des chutes synthétiques ?",
+      "reponse": "L'électro",
       "niveau": 2,
       "ages": [
         "ados",
@@ -18,55 +74,25 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle est la voix féminine la plus grave ?",
-      "reponse": "L'alto (contralto)",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans Pierre et le loup, quel instrument joue le loup ?",
-      "reponse": "Le cor",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Bon Jovi raconte Tommy et Gina à mi-chemin ?",
-      "reponse": "Livin' on a Prayer",
+      "question": "Quel petit objet de métal en forme de fourche donne le la aux musiciens ?",
+      "reponse": "Un diapason",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on un groupe de personnes qui chantent ensemble ?",
-      "reponse": "Une chorale",
+      "question": "Comment appelle-t-on la personne qui joue de la guitare ?",
+      "reponse": "Un guitariste",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Qui est surnommé le roi de la pop ?",
-      "reponse": "Michael Jackson",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel tambour métallique vient de Trinité ?",
-      "reponse": "Le steel drum",
+      "question": "Combien de symphonies Beethoven a-t-il composées ?",
+      "reponse": "Neuf",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -75,41 +101,15 @@
     },
     {
       "categorie": "Musique",
-      "question": "Dans un orchestre, quel instrument donne le la aux autres avant le concert ?",
-      "reponse": "Le hautbois",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel compositeur autrichien fut un enfant prodige ?",
-      "reponse": "Mozart",
+      "question": "Quel appareil à pendule bat la mesure ?",
+      "reponse": "Le métronome",
       "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "Quel genre musical africain aux rythmes chaloupés s'est imposé mondialement ?",
-      "reponse": "L'afrobeat",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comptine raconte un reptile qui part à la guerre en disant au revoir à ses enfants ?",
-      "reponse": "Ah! les crocodiles",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur est surnommé le King ?",
-      "reponse": "Elvis Presley",
-      "niveau": 1,
+      "question": "Quel spectacle musical français raconte Quasimodo ?",
+      "reponse": "Notre-Dame de Paris",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -123,31 +123,9 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel petit instrument à vent se souffle avec la bouche dans le blues et le folk ?",
-      "reponse": "L'harmonica",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel xylophone africain a des calebasses ?",
-      "reponse": "Le balafon",
+      "question": "Quel instrument à vent se joue en soufflant dans une anche double, au son nasillard ?",
+      "reponse": "Le hautbois",
       "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Noël parle d'un bonhomme de neige ?",
-      "reponse": "Frosty",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel spectacle italien fait chanter toute l'histoire, sans dialogues parlés ?",
-      "reponse": "L'opéra",
-      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -156,8 +134,57 @@
     },
     {
       "categorie": "Musique",
-      "question": "Combien de cordes a un violoncelle ?",
+      "question": "Combien de membres comptaient les Beatles ?",
       "reponse": "Quatre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le bruit d'une porte qui grince ?",
+      "reponse": "Un grincement",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'applaudissement debout d'une salle entière ?",
+      "reponse": "Une ovation",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe de Montréal a gagné un Grammy pour The Suburbs ?",
+      "reponse": "Arcade Fire",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel guitariste gaucher a joué Purple Haze ?",
+      "reponse": "Jimi Hendrix",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel compositeur allemand est devenu sourd ?",
+      "reponse": "Beethoven",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
+      "reponse": "Nézet-Séguin",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -166,58 +193,37 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel appareil mélange les disques en soirée ?",
-      "reponse": "Table tournante",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comptine demande si le loup y est pendant qu'il s'habille ?",
-      "reponse": "Promenons-nous dans les bois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comédie musicale met en scène des chats ?",
-      "reponse": "Cats",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle voix masculine est la plus grave ?",
-      "reponse": "La basse",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle note vient juste après le do ?",
-      "reponse": "Le ré",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel compositeur baroque a écrit les Concertos brandebourgeois ?",
-      "reponse": "Bach",
+      "question": "Comment appelle-t-on plusieurs notes jouées en même temps ?",
+      "reponse": "Un accord",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle famille d'instruments frappe-t-on ?",
+      "reponse": "Les percussions",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel gros instrument à cordes se joue debout ?",
+      "reponse": "La contrebasse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse colombienne a chanté Waka Waka ?",
+      "reponse": "Shakira",
+      "niveau": 1
     }
   ]
 }

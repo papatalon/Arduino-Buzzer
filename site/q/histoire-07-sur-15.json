@@ -8,14 +8,20 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quel outil de fer servait à abattre les arbres pour défricher la terre ?",
-      "reponse": "La hache",
+      "question": "Comment appelait-on le soldat armé d'un arc dans les armées d'autrefois ?",
+      "reponse": "Un archer",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Qui fut la première femme première ministre du Canada ?",
-      "reponse": "Kim Campbell",
+      "question": "Quel peuple de l'Antiquité construisait des pyramides et embaumait ses morts ?",
+      "reponse": "Les Égyptiens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel amiral anglais a gagné Trafalgar ?",
+      "reponse": "Nelson",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -24,8 +30,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel savant italien a braqué une lunette vers le ciel ?",
-      "reponse": "Galilée",
+      "question": "Quel empereur romain aurait incendié Rome ?",
+      "reponse": "Néron",
       "niveau": 2,
       "ages": [
         "ados",
@@ -35,21 +41,96 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on les humains qui vivaient dans des grottes ?",
-      "reponse": "Les hommes des cavernes",
-      "niveau": 1
+      "question": "Quelle construction de béton a coupé une capitale allemande en deux jusqu'en 1989 ?",
+      "reponse": "Le mur de Berlin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle épidémie a ravagé l'Europe au 14e siècle ?",
-      "reponse": "La peste noire",
+      "question": "Quel tombeau égyptien fut découvert en 1922 ?",
+      "reponse": "Toutankhamon",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Qui a fondé Facebook en 2004 ?",
-      "reponse": "Mark Zuckerberg",
-      "niveau": 1,
+      "question": "Qui a traversé l'Atlantique en avion solo en 1927 ?",
+      "reponse": "Lindbergh",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle jeune fille a mené les armées françaises en 1429 ?",
+      "reponse": "Jeanne d'Arc",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Où se tenaient les courses de chars à Rome ?",
+      "reponse": "Le Circus Maximus",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le deuxième homme à marcher sur la Lune ?",
+      "reponse": "Buzz Aldrin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année le mur de Berlin est-il tombé ?",
+      "reponse": "1989",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?",
+      "reponse": "La capitale du royaume",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
+      "reponse": "Le mammouth",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel amuseur en habit à grelots faisait rire le roi ?",
+      "reponse": "Un bouffon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention chinoise a remplacé le parchemin pour écrire ?",
+      "reponse": "Le papier",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes"
@@ -57,69 +138,15 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel premier ministre britannique fumait le cigare pendant la guerre ?",
-      "reponse": "Churchill",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel scientifique fouille la terre pour trouver des objets anciens ?",
-      "reponse": "Un archéologue",
+      "question": "Quelle journée du 11 novembre honore la mémoire des soldats ?",
+      "reponse": "Le jour du Souvenir",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le roi de l'Égypte ancienne ?",
-      "reponse": "Un pharaon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a déchiffré les hiéroglyphes ?",
-      "reponse": "Champollion",
+      "question": "Quelle fondatrice a ouvert la première école de Ville-Marie ?",
+      "reponse": "Marguerite Bourgeoys",
       "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel oiseau portait les messages avant le télégraphe ?",
-      "reponse": "Le pigeon voyageur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Que fabriquaient les hommes préhistoriques en frottant deux pierres ?",
-      "reponse": "Le feu",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle centrale nucléaire a explosé en 1986 ?",
-      "reponse": "Tchernobyl",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la période qui suit l'Antiquité, celle des châteaux forts ?",
-      "reponse": "Le Moyen Âge",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi anglais a eu six épouses ?",
-      "reponse": "Henri VIII",
-      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -128,14 +155,19 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle machine à vapeur tirait les premiers trains ?",
-      "reponse": "La locomotive",
-      "niveau": 2
+      "question": "Quel site de vidéos a été lancé en 2005 et racheté par Google un an plus tard ?",
+      "reponse": "YouTube",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année eut lieu la bataille de Waterloo ?",
-      "reponse": "1815",
+      "question": "Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?",
+      "reponse": "La Révolution tranquille",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -144,56 +176,37 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelait-on les soldats montés à cheval dans les armées d'autrefois ?",
-      "reponse": "La cavalerie",
+      "question": "Quel appareil garde les aliments au froid depuis un siècle, remplaçant la glacière ?",
+      "reponse": "Le réfrigérateur",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le bateau viking à proue sculptée ?",
-      "reponse": "Le drakkar",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention à deux roues se propulse avec des pédales ?",
-      "reponse": "La bicyclette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel engin a emmené les premiers hommes jusqu'à la Lune ?",
-      "reponse": "Une fusée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année eut lieu la bataille des plaines d'Abraham ?",
-      "reponse": "1759",
+      "question": "Quelle encyclopédie en ligne, lancée en 2001, est écrite par ses lecteurs ?",
+      "reponse": "Wikipédia",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Dans quelle ville se tenaient les Jeux olympiques antiques ?",
-      "reponse": "Olympie",
+      "question": "Quelle femme a reçu deux prix Nobel ?",
+      "reponse": "Marie Curie",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande demeure luxueuse d'un roi ?",
-      "reponse": "Un palais",
-      "niveau": 1
+      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
+      "reponse": "Le parchemin",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle arme de bois courbé propulsait des flèches avant les armes à feu ?",
-      "reponse": "Un arc",
-      "niveau": 1
+      "question": "Qui a couru le Marathon de l'espoir en 1980 ?",
+      "reponse": "Terry Fox",
+      "niveau": 2
     }
   ]
 }

@@ -8,39 +8,23 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu fait bâtir routes et villages en échangeant bois, blé et minerai ?",
-      "reponse": "Les Colons de Catane",
+      "question": "Comment appelait-on le téléphone que plusieurs foyers du village devaient se partager ?",
+      "reponse": "La ligne partagée",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "aines"
       ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
+      "reponse": "Le smoked meat",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'échange de fourrures contre des marchandises européennes ?",
-      "reponse": "La traite des fourrures",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse américaine a chanté Espresso en 2024 ?",
-      "reponse": "Sabrina Carpenter",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil fallait-il installer sur le toit pour capter les chaînes de télé ?",
-      "reponse": "L'antenne",
+      "question": "Quelle infirmière célèbre soignait pendant la guerre de Crimée ?",
+      "reponse": "Florence Nightingale",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -49,8 +33,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle quincaillerie québécoise portait un prénom dans son enseigne ?",
-      "reponse": "Pascal",
+      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
+      "reponse": "Le tramway",
       "niveau": 3,
       "ages": [
         "aines"
@@ -58,74 +42,40 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport oppose deux nageurs qui se poussent un ballon dans une piscine ?",
-      "reponse": "Le water-polo",
-      "niveau": 3
+      "question": "Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?",
+      "reponse": "Un tir de barrage",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Que fait un musicien qui règle son instrument avant de jouer ?",
-      "reponse": "Accorder",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel commerce de village vendait autrefois aussi bien le clou que la farine ?",
-      "reponse": "Le magasin général",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle boisson gazeuse a longtemps servi de surnom moqueur aux Québécois ?",
-      "reponse": "Le Pepsi",
+      "question": "Quel roi du blues appelait sa guitare Lucille ?",
+      "reponse": "B.B. King",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
-      "reponse": "La Grande Ourse",
-      "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle mer intérieure borde le Kazakhstan et l'Iran ?",
-      "reponse": "La Caspienne",
+      "question": "Quelle grande île de l'Atlantique, au large de Terre-Neuve, appartient à la France ?",
+      "reponse": "Saint-Pierre-et-Miquelon",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
-      "reponse": "La granita",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
-      "reponse": "Steinberg",
-      "niveau": 3,
-      "ages": [
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?",
-      "reponse": "La capitale du royaume",
+      "question": "En quelle année le Canada a-t-il adopté son drapeau actuel ?",
+      "reponse": "1965",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -134,23 +84,117 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel petit oiseau à calotte noire fréquente les mangeoires du Québec tout l'hiver ?",
-      "reponse": "La mésange",
-      "niveau": 3
+      "question": "Quel tunnel fait passer l'autoroute sous le centre-ville de Montréal ?",
+      "reponse": "Le tunnel Ville-Marie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel casque de métal protégeait la tête du chevalier ?",
-      "reponse": "Un heaume",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui écrit les paroles d'une chanson ?",
-      "reponse": "Un parolier",
+      "categorie": "Culture pop",
+      "question": "Quel manga suit Luffy et son équipage de pirates ?",
+      "reponse": "One Piece",
       "niveau": 3,
       "ages": [
         "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel rappeur américain tatoué au visage a chanté Circles ?",
+      "reponse": "Post Malone",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre canadien a dirigé pendant la Seconde Guerre ?",
+      "reponse": "Mackenzie King",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année les Canadiennes ont-elles voté au fédéral ?",
+      "reponse": "1918",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
+      "reponse": "L'hémisphère nord",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
+      "reponse": "Les Baronets",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à cordes indien a un très long manche ?",
+      "reponse": "Le sitar",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles bottes anglaises à coutures jaunes sont un classique punk ?",
+      "reponse": "Les Doc Martens",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
+      "reponse": "Lululemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Combien de régions administratives compte le Québec ?",
+      "reponse": "17",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple antique a inventé l'écriture cunéiforme ?",
+      "reponse": "Les Sumériens",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -166,71 +210,44 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Sur quel navire Darwin a-t-il navigué ?",
-      "reponse": "Le Beagle",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Combien de symphonies Beethoven a-t-il composées ?",
-      "reponse": "Neuf",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel sous-genre du rap se reconnaît à ses charlestons rapides et ses basses lourdes ?",
-      "reponse": "La trap",
-      "niveau": 3,
-      "ages": [
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
-      "reponse": "Le tramway",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Daft Punk répète qu'on est plus fort, meilleur et plus rapide ?",
-      "reponse": "Harder, Better, Faster, Stronger",
+      "question": "Comment appelle-t-on la personne qui écrit les paroles d'une chanson ?",
+      "reponse": "Un parolier",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle station spatiale russe a précédé l'ISS ?",
-      "reponse": "Mir",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Combien de régions administratives compte le Québec ?",
-      "reponse": "17",
+      "question": "Quelle fête de juin invite les gens d'une même rue à se rassembler ?",
+      "reponse": "La fête des voisins",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de cordes a un violoncelle ?",
+      "reponse": "Quatre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel artiste a mêlé country et rap dans Old Town Road ?",
+      "reponse": "Lil Nas X",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     }
   ]

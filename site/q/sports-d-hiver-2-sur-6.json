@@ -7,6 +7,12 @@
   "emoji": "⛷️",
   "questions": [
     {
+      "categorie": "Sports",
+      "question": "Que pleut-il sur la patinoire quand un joueur compte trois buts dans le même match ?",
+      "reponse": "Des chapeaux",
+      "niveau": 1
+    },
+    {
       "categorie": "Québec",
       "question": "Quel véhicule d'hiver file sur la neige avec des chenilles et des skis ?",
       "reponse": "Une motoneige",
@@ -14,14 +20,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
-      "reponse": "Le ballon-balai",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel sport olympique descend un couloir de glace sur le dos ?",
+      "reponse": "La luge",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -32,34 +33,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Que pleut-il sur la patinoire quand un joueur compte trois buts dans le même match ?",
-      "reponse": "Des chapeaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel film culte parle d'une guerre de balles de neige ?",
-      "reponse": "La Guerre des tuques",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée les équipes de la Ligue nationale se disputent-elles au printemps ?",
-      "reponse": "La coupe Stanley",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport olympique descend un couloir de glace sur le dos ?",
-      "reponse": "La luge",
-      "niveau": 1
     },
     {
       "categorie": "Québec",
@@ -73,6 +46,12 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Quelle machine bruyante lance la neige de côté dans l'entrée ?",
+      "reponse": "Une souffleuse",
+      "niveau": 1
+    },
+    {
       "categorie": "Sports",
       "question": "Quel joueur des Capitals a marqué plus de 900 buts ?",
       "reponse": "Ovechkin",
@@ -80,6 +59,17 @@
       "ages": [
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
+      "reponse": "Le ballon-balai",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -100,21 +90,10 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport de glace utilise des pierres et des balais ?",
-      "reponse": "Le curling",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
-      "question": "Quelle équipe de hockey junior joue au Centre Vidéotron de Québec ?",
-      "reponse": "Les Remparts",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel outil racle la neige des pare-brise ?",
+      "reponse": "Un gratteux",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -125,6 +104,12 @@
         "ados",
         "adultes"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
+      "reponse": "Le patinage artistique",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -139,9 +124,14 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel outil racle la neige des pare-brise ?",
-      "reponse": "Un gratteux",
-      "niveau": 1
+      "question": "Quelle équipe de hockey junior joue au Centre Vidéotron de Québec ?",
+      "reponse": "Les Remparts",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -157,9 +147,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelles larges semelles permettent de marcher sur la neige sans caler ?",
-      "reponse": "Des raquettes",
-      "niveau": 2
+      "question": "Quel sport de glace utilise des pierres et des balais ?",
+      "reponse": "Le curling",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
@@ -182,12 +172,6 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Combien de joueurs une équipe de hockey compte-t-elle sur la glace ?",
-      "reponse": "Six",
-      "niveau": 2
-    },
-    {
       "categorie": "Culture pop",
       "question": "Quelle marque de motoneige est née au Québec ?",
       "reponse": "Ski-Doo",
@@ -202,6 +186,18 @@
       "categorie": "Cinéma et télé",
       "question": "Quelle princesse Disney vit avec sept nains ?",
       "reponse": "Blanche-Neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport d'hiver glisse une pierre vers une cible en balayant la glace ?",
+      "reponse": "Le curling",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle saison fait fleurir les arbres et fondre la neige ?",
+      "reponse": "Le printemps",
       "niveau": 1
     }
   ]

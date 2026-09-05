@@ -8,8 +8,8 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "De quel pays vient la tequila ?",
-      "reponse": "Le Mexique",
+      "question": "Quelle sauce blanche accompagne le sandwich shawarma ?",
+      "reponse": "Sauce à l'ail",
       "niveau": 1,
       "ages": [
         "ados",
@@ -19,31 +19,26 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel gâteau roulé imite un morceau de bois à Noël ?",
-      "reponse": "Bûche de Noël",
+      "question": "Quel liquide sans couleur ni goût faut-il boire tous les jours ?",
+      "reponse": "L'eau",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle célèbre soupe française est gratinée ?",
-      "reponse": "Soupe à l'oignon",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel pain rond avec un trou se mange à Montréal ?",
-      "reponse": "Le bagel",
+      "question": "Quel aliment ovale pondu par la poule mange-t-on brouillé ?",
+      "reponse": "L'œuf",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit tropical porte une couronne ?",
-      "reponse": "L'ananas",
+      "question": "Quel outil de bois aplatit la pâte à tarte ?",
+      "reponse": "Le rouleau à pâte",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sucre brun humide parfume les biscuits ?",
+      "reponse": "La cassonade",
       "niveau": 1
     },
     {
@@ -54,14 +49,77 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle forme donne-t-on au poisson pané pour les enfants ?",
-      "reponse": "Des bâtonnets",
+      "question": "Quel ustensile à quatre dents pique les aliments ?",
+      "reponse": "La fourchette",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à tartiner aux noisettes est adorée ?",
-      "reponse": "Le Nutella",
+      "question": "Quelle friandise d'Halloween est une pomme enrobée de caramel rouge ?",
+      "reponse": "La pomme de tire",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâtisserie a une croûte et une garniture aux pommes ou aux fraises ?",
+      "reponse": "La tarte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Que souffle-t-on sur le gâteau de fête après avoir fait un vœu ?",
+      "reponse": "Les bougies",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle épice noire moulue accompagne le sel sur la table ?",
+      "reponse": "Le poivre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte à tartiner australienne est très salée ?",
+      "reponse": "La Vegemite",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Dans quel contenant rond et creux verse-t-on les céréales ?",
+      "reponse": "Le bol",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "De quelle couleur est la chair de l'avocat ?",
+      "reponse": "Verte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson pétillante est du thé fermenté ?",
+      "reponse": "Le kombucha",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle tartinade blanche accompagne le bagel ?",
+      "reponse": "Fromage à la crème",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte farcie italienne forme des coussins ?",
+      "reponse": "Les raviolis",
       "niveau": 1
     },
     {
@@ -72,107 +130,35 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel gros fruit orangé à noyau plat vient des pays chauds ?",
-      "reponse": "La mangue",
+      "question": "Quel liquide jaune sert à faire cuire dans la poêle ?",
+      "reponse": "L'huile",
       "niveau": 2
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert glacé mange-t-on en cornet l'été ?",
-      "reponse": "La crème glacée",
+      "question": "Quelle boisson chaude se prépare en faisant infuser des herbes ?",
+      "reponse": "Une tisane",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "De quelle fève fait-on le chocolat ?",
+      "reponse": "Le cacao",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel repas se prend le midi au Québec ?",
-      "reponse": "Le dîner",
+      "question": "Quel fruit principal compose le ketchup ?",
+      "reponse": "La tomate",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
-      "reponse": "Le smoked meat",
-      "niveau": 3
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment blanc en grains adoucit le café et entre dans tous les gâteaux ?",
-      "reponse": "Le sucre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle huile méditerranéenne est pressée d'un fruit ?",
-      "reponse": "Huile d'olive",
-      "niveau": 1,
+      "question": "Quelles pâtes en forme de papillon existent ?",
+      "reponse": "Les farfalles",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle glace italienne est plus dense que la crème glacée ?",
-      "reponse": "Le gelato",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du parmesan ?",
-      "reponse": "L'Italie",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat argentin grille des viandes au feu de bois ?",
-      "reponse": "L'asado",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boule de pâte frite est saupoudrée de sucre ?",
-      "reponse": "Le beigne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit vert ou jaune a la forme d'une goutte ?",
-      "reponse": "La poire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile à quatre dents pique les aliments ?",
-      "reponse": "La fourchette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la pizza ?",
-      "reponse": "L'Italie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle soupe russe est rouge betterave ?",
-      "reponse": "Le bortsch",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]

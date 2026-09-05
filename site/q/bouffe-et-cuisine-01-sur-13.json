@@ -8,9 +8,20 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle barbe sucrée se vend dans les fêtes foraines ?",
-      "reponse": "Barbe à papa",
+      "question": "Quel petit légume vert et rond roule dans l'assiette ?",
+      "reponse": "Le petit pois",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle salade libanaise contient persil et boulgour ?",
+      "reponse": "Le taboulé",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -25,8 +36,8 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle galette de maïs enroule les fajitas ?",
-      "reponse": "La tortilla",
+      "question": "De quel pays vient la tequila ?",
+      "reponse": "Le Mexique",
       "niveau": 1,
       "ages": [
         "ados",
@@ -36,37 +47,20 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle volaille laquée est le classique de la capitale chinoise ?",
-      "reponse": "Canard de Pékin",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle tranche de pain grillée se beurre le matin ?",
-      "reponse": "Une rôtie",
+      "question": "Quel sirop noir parfume les galettes québécoises ?",
+      "reponse": "La mélasse",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit rouge pousse dans les tourbières ?",
-      "reponse": "La canneberge",
+      "question": "Quel bonbon rond se tient au bout d'un bâton ?",
+      "reponse": "Un suçon",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle chaîne canadienne vend du café, des beignes et des Timbits ?",
-      "reponse": "Tim Hortons",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle épice se râpe sur le lait de poule ?",
-      "reponse": "La muscade",
+      "question": "Quel plat marocain cuit dans un plat conique ?",
+      "reponse": "Le tajine",
       "niveau": 2,
       "ages": [
         "ados",
@@ -82,38 +76,84 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume jaune se mange en épi, au beurre et au sel ?",
-      "reponse": "Le maïs",
+      "question": "Quel pain français long et croustillant est emblématique ?",
+      "reponse": "La baguette",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel animal est Tony, la mascotte des céréales Frosted Flakes ?",
-      "reponse": "Un tigre",
-      "niveau": 1,
+      "question": "Quelle écorce parfume les brioches roulées ?",
+      "reponse": "La cannelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle omelette espagnole contient des pommes de terre ?",
+      "reponse": "La tortilla",
+      "niveau": 2,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boule de viande hachée se sert dans la sauce à spaghetti ?",
-      "reponse": "Une boulette",
+      "question": "Quel fruit rouge trempe-t-on dans le chocolat fondu ?",
+      "reponse": "La fraise au chocolat",
       "niveau": 2
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert froid mélange crème glacée et lait au mélangeur ?",
-      "reponse": "Un lait frappé",
-      "niveau": 2
+      "question": "Quel plat espagnol froid est une soupe de tomates ?",
+      "reponse": "Le gaspacho",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle confiserie d'érable se roule sur la neige ?",
-      "reponse": "La tire",
+      "question": "Quelle tranche de pain grillée se beurre le matin ?",
+      "reponse": "Une rôtie",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "De quel pays viennent les tacos ?",
+      "reponse": "Le Mexique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles tranches de pommes de terre frites et salées se vendent en sac ?",
+      "reponse": "Les croustilles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel aliment blanc en grains adoucit le café et entre dans tous les gâteaux ?",
+      "reponse": "Le sucre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ustensile tranchant coupe la viande ?",
+      "reponse": "Le couteau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat suisse racle du fromage fondu ?",
+      "reponse": "La raclette",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -128,48 +168,20 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle plante donne le thé ?",
-      "reponse": "Le théier",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à base de tomates nappe les pizzas ?",
-      "reponse": "La sauce tomate",
+      "question": "De quel pays viennent les sushis ?",
+      "reponse": "Le Japon",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit brun et poilu vient de Nouvelle-Zélande ?",
-      "reponse": "Le kiwi",
+      "question": "Quel grain blanc met-on dans la salière ?",
+      "reponse": "Le sel",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle friandise d'Halloween est une pomme enrobée de caramel rouge ?",
-      "reponse": "La pomme de tire",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat marocain cuit dans un plat conique ?",
-      "reponse": "Le tajine",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel jambon italien se mange en tranches fines ?",
-      "reponse": "Le prosciutto",
+      "question": "Quelle huile méditerranéenne est pressée d'un fruit ?",
+      "reponse": "Huile d'olive",
       "niveau": 1,
       "ages": [
         "ados",
@@ -179,26 +191,14 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel appareil lave les assiettes à notre place ?",
-      "reponse": "Le lave-vaisselle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quoi est fait le tofu ?",
-      "reponse": "Du soja",
-      "niveau": 1,
+      "question": "Quel fromage bleu français au lait de brebis est le plus célèbre ?",
+      "reponse": "Le roquefort",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Comment appelle-t-on la couche sucrée et colorée qui recouvre un gâteau ?",
-      "reponse": "Le glaçage",
-      "niveau": 1
     }
   ]
 }

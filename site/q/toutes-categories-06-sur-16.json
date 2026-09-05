@@ -7,48 +7,95 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel instrument à dents pincées accompagne le folklore ?",
-      "reponse": "La guimbarde",
-      "niveau": 3,
+      "categorie": "Géographie",
+      "question": "Capitale de l'Irlande ?",
+      "reponse": "Dublin",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle sauce sucrée et brune coule sur les crêpes du Québec ?",
-      "reponse": "Le sirop d'érable",
+      "categorie": "Cinéma et télé",
+      "question": "Quel personnage vert déteste Noël ?",
+      "reponse": "Le Grincheux",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant du Saguenay ?",
-      "reponse": "Un Saguenéen",
+      "categorie": "Sports",
+      "question": "Combien de rondes maximum en boxe professionnelle ?",
+      "reponse": "Douze",
       "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel acteur incarne Iron Man au cinéma ?",
+      "reponse": "Robert Downey Jr",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel bâton tendu de crin frotte les cordes du violon ?",
+      "reponse": "Un archet",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a dépassé la Chine en population en 2023 ?",
+      "reponse": "L'Inde",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on un mot comme mais ou donc ?",
+      "reponse": "Une conjonction",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel Beatle a chanté Imagine en solo ?",
+      "reponse": "John Lennon",
+      "niveau": 2,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de gymnase élimine les joueurs touchés par le ballon ?",
-      "reponse": "Le ballon-chasseur",
-      "niveau": 1,
+      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
+      "reponse": "Dans une galaxie près de chez vous",
+      "niveau": 3,
       "ages": [
-        "enfants",
-        "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel appareil branche la guitare électrique pour faire sortir le son ?",
-      "reponse": "L'amplificateur",
-      "niveau": 2,
+      "question": "Quel instrument à cordes pincées, plus petit qu'un piano droit, symbolise l'Irlande ?",
+      "reponse": "La harpe celtique",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -57,54 +104,27 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Qui fut le deuxième homme à marcher sur la Lune ?",
-      "reponse": "Buzz Aldrin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel humoriste montréalais fait des spectacles bilingues ?",
-      "reponse": "Sugar Sammy",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle forme n'a ni coin ni côté ?",
-      "reponse": "Le cercle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs sur la glace par équipe au hockey ?",
-      "reponse": "Six",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle boîte à haut-parleurs se branche derrière une guitare électrique sur scène ?",
-      "reponse": "Un ampli",
+      "question": "Quel outil de fer servait à abattre les arbres pour défricher la terre ?",
+      "reponse": "La hache",
       "niveau": 2
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'ensemble des histoires des dieux et des héros grecs ?",
-      "reponse": "La mythologie",
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on un groupe de loups qui chassent ensemble ?",
+      "reponse": "Une meute",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle activité d'hiver descend une pente sur un traîneau ou une chambre à air ?",
+      "reponse": "La glissade",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle île du Saint-Laurent fut une station de quarantaine ?",
-      "reponse": "Grosse-Île",
-      "niveau": 2,
+      "categorie": "Culture pop",
+      "question": "Dans quel jeu de société conquiert-on des territoires sur une carte du monde ?",
+      "reponse": "Le Risk",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -113,21 +133,26 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel reptile porte une carapace sur son dos ?",
-      "reponse": "La tortue",
+      "question": "Quel animal marin a trois cœurs ?",
+      "reponse": "La pieuvre",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quoi faut-il faire entrer le ballon pour marquer au basketball ?",
+      "reponse": "Le panier",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ogre vert a une femme nommée Fiona ?",
-      "reponse": "Shrek",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du loup ?",
-      "reponse": "Le louveteau",
-      "niveau": 1
+      "categorie": "Québec",
+      "question": "Quel petit rongeur rayé du Québec remplit ses joues de graines ?",
+      "reponse": "Le suisse",
+      "niveau": 3
     },
     {
       "categorie": "Culture générale",
@@ -141,19 +166,20 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle série de science-fiction se passe à Hawkins ?",
-      "reponse": "Stranger Things",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "question": "Quel roi lion est le père de Simba ?",
+      "reponse": "Mufasa",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "De quel élément le diamant est-il composé ?",
-      "reponse": "Le carbone",
+      "question": "Quelle est la durée d'une année sur Terre ?",
+      "reponse": "365 jours",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles noix entrent dans le pesto génois ?",
+      "reponse": "Les pignons",
       "niveau": 2,
       "ages": [
         "ados",
@@ -162,22 +188,10 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Que souffle-t-on sur le gâteau de fête après avoir fait un vœu ?",
-      "reponse": "Les bougies",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se tient le grand carnaval de Rio ?",
-      "reponse": "Le Brésil",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur de hockey est surnommé La Merveille ?",
-      "reponse": "Wayne Gretzky",
-      "niveau": 1,
+      "categorie": "Histoire",
+      "question": "Quel savant italien a braqué une lunette vers le ciel ?",
+      "reponse": "Galilée",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -185,28 +199,27 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on une photo qu'on prend de soi-même à bout de bras ?",
-      "reponse": "Un égoportrait (selfie)",
+      "categorie": "Culture générale",
+      "question": "Quelle forme n'a ni coin ni côté ?",
+      "reponse": "Le cercle",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
-      "reponse": "Quatre ans",
-      "niveau": 1
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le réseau de tuyaux qui recueille l'eau d'érable ?",
+      "reponse": "La tubulure",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel pirate est l'ennemi juré de Peter Pan ?",
-      "reponse": "Capitaine Crochet",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle confiserie d'érable se roule sur la neige ?",
+      "reponse": "La tire",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel océan gelé entoure le pôle Nord ?",
-      "reponse": "L'océan Arctique",
-      "niveau": 2
     }
   ]
 }

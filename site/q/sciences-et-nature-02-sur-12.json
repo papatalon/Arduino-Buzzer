@@ -8,14 +8,139 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de planètes dans le système solaire ?",
-      "reponse": "Huit",
+      "question": "Quel gros animal gris d'Afrique porte une corne sur le nez ?",
+      "reponse": "Le rhinocéros",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la transformation de la chenille ?",
-      "reponse": "La métamorphose",
+      "question": "Dans quelle partie du corps loge l'os appelé enclume ?",
+      "reponse": "Dans l'oreille",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de pattes possède un crabe ?",
+      "reponse": "Dix",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz les plantes absorbent-elles ?",
+      "reponse": "Le gaz carbonique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus grosse planète du système solaire ?",
+      "reponse": "Jupiter",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment appelle-t-on le bébé de la grenouille, qui a encore une queue ?",
+      "reponse": "Le têtard",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie de l'œil donne sa couleur ?",
+      "reponse": "L'iris",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de vertèbres a le cou d'une girafe ?",
+      "reponse": "Sept",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle chenille fabrique un fil précieux en tissant son cocon ?",
+      "reponse": "Le ver à soie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle énergie vient du Soleil ?",
+      "reponse": "L'énergie solaire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la température du corps humain en santé ?",
+      "reponse": "37 degrés C",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel pourcentage de la Terre est couvert d'eau ?",
+      "reponse": "71 pour cent",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe de la bouche permet de goûter ?",
+      "reponse": "La langue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelles gouttes d'eau tombent des nuages ?",
+      "reponse": "La pluie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de pattes a un oiseau ?",
+      "reponse": "Deux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante piquante pousse dans le désert ?",
+      "reponse": "Le cactus",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz léger gonflait les dirigeables ?",
+      "reponse": "L'hydrogène",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz expirons-nous ?",
+      "reponse": "Le gaz carbonique",
       "niveau": 1
     },
     {
@@ -26,67 +151,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?",
-      "reponse": "Le tyrannosaure",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle vitesse ne peut jamais être dépassée ?",
-      "reponse": "Celle de la lumière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de pattes possède un insecte ?",
-      "reponse": "Six",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel grand oiseau rose se tient souvent sur une seule patte ?",
-      "reponse": "Le flamant rose",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal d'Amérique du Sud se déplace très lentement, suspendu aux branches ?",
-      "reponse": "Le paresseux",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la maison des abeilles ?",
-      "reponse": "La ruche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quels petits grains de glace tombent parfois pendant un orage d'été ?",
-      "reponse": "La grêle",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte produit le miel ?",
-      "reponse": "L'abeille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel instrument sert à observer les étoiles ?",
-      "reponse": "Le télescope",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal a la langue la plus longue par rapport au corps ?",
-      "reponse": "Le caméléon",
+      "question": "Combien de chromosomes possède l'humain ?",
+      "reponse": "46",
       "niveau": 2,
       "ages": [
         "ados",
@@ -96,94 +162,32 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est le symbole chimique de l'oxygène ?",
-      "reponse": "O",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la roche fondue sous terre ?",
-      "reponse": "Le magma",
+      "question": "Quel arachnide a une queue munie d'un dard ?",
+      "reponse": "Le scorpion",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel insecte rouge à points noirs porte bonheur ?",
-      "reponse": "La coccinelle",
+      "question": "Comment appelle-t-on la grosse partie de l'arbre qui porte les branches ?",
+      "reponse": "Le tronc",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui pousse au bout des doigts et qu'il faut couper ?",
-      "reponse": "Les ongles",
+      "question": "Que devient un têtard ?",
+      "reponse": "Une grenouille",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal roux au museau pointu passe pour rusé dans les fables ?",
-      "reponse": "Le renard",
+      "question": "Quel animal à longues oreilles adore les carottes ?",
+      "reponse": "Le lapin",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la planète la plus éloignée du Soleil ?",
-      "reponse": "Neptune",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la durée d'une année sur Terre ?",
-      "reponse": "365 jours",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on la peau rugueuse qui recouvre le tronc ?",
-      "reponse": "L'écorce",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel gaz rend les ballons de fête flottants ?",
-      "reponse": "L'hélium",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel groupe sanguin est donneur universel ?",
-      "reponse": "O négatif",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel arbre géant de Californie est le plus gros du monde ?",
-      "reponse": "Le séquoia",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient du Soleil ?",
-      "reponse": "L'énergie solaire",
+      "question": "Quel oiseau noir et blanc de l'Antarctique ne sait pas voler ?",
+      "reponse": "Le manchot",
       "niveau": 1
     }
   ]

@@ -8,9 +8,9 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
-      "reponse": "Le patinage artistique",
-      "niveau": 1
+      "question": "Quelles larges semelles permettent de marcher sur la neige sans caler ?",
+      "reponse": "Des raquettes",
+      "niveau": 2
     },
     {
       "categorie": "Québec",
@@ -35,15 +35,10 @@
       "niveau": 2
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film d'animation un mammouth, un paresseux et un tigre à dents de sabre voyagent-ils ensemble ?",
-      "reponse": "L'Ère de glace",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Québec",
+      "question": "Quel dessin fait-on en s'allongeant dans la neige et en bougeant les bras ?",
+      "reponse": "Un ange dans la neige",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -75,16 +70,15 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel dessin fait-on en s'allongeant dans la neige et en bougeant les bras ?",
-      "reponse": "Un ange dans la neige",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport d'hiver glisse une pierre vers une cible en balayant la glace ?",
-      "reponse": "Le curling",
-      "niveau": 2
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film d'animation un mammouth, un paresseux et un tigre à dents de sabre voyagent-ils ensemble ?",
+      "reponse": "L'Ère de glace",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Québec",
@@ -98,8 +92,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Que chausse-t-on aux pieds pour aller sur la glace ?",
-      "reponse": "Des patins",
+      "question": "Sur quelle surface glacée se joue le hockey ?",
+      "reponse": "La patinoire",
       "niveau": 1
     },
     {
@@ -110,20 +104,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de périodes dans un match de hockey ?",
-      "reponse": "Trois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel pays est le berceau du hockey sur glace ?",
       "reponse": "Le Canada",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
-      "reponse": "La tire d'érable",
+      "categorie": "Sports",
+      "question": "Quel sport de glisse se pratique sur une piste avec des bâtons dans les mains ?",
+      "reponse": "Le ski alpin",
       "niveau": 1
     },
     {
@@ -135,6 +123,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel secteur riverain de Montréal accueille patinoire, plage et grande roue ?",
+      "reponse": "Le Vieux-Port",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -149,8 +143,24 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle machine bruyante lance la neige de côté dans l'entrée ?",
-      "reponse": "Une souffleuse",
+      "question": "Quel film culte parle d'une guerre de balles de neige ?",
+      "reponse": "La Guerre des tuques",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de périodes dans un match de hockey ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
+      "reponse": "La tire d'érable",
       "niveau": 1
     },
     {
@@ -164,15 +174,9 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel secteur riverain de Montréal accueille patinoire, plage et grande roue ?",
-      "reponse": "Le Vieux-Port",
-      "niveau": 2
-    },
-    {
       "categorie": "Sports",
-      "question": "Combien de périodes compte un match de hockey ?",
-      "reponse": "Trois",
+      "question": "Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?",
+      "reponse": "Le Canadien",
       "niveau": 1
     },
     {

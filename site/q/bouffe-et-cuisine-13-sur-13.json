@@ -8,9 +8,26 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel mollusque mange-t-on avec du beurre à l'ail ?",
-      "reponse": "L'escargot",
+      "question": "Quels biscuits noirs à la crème blanche trempe-t-on dans le lait ?",
+      "reponse": "Les Oreo",
       "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage italien garnit la pizza ?",
+      "reponse": "La mozzarella",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat péruvien est du poisson cru mariné ?",
+      "reponse": "Le ceviche",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -19,20 +36,48 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Comment nomme-t-on un œuf cuit 3 minutes en coquille ?",
-      "reponse": "À la coque",
+      "question": "Quel légume fait pleurer quand on le coupe ?",
+      "reponse": "L'oignon",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume blanc en bouquets ressemble à un brocoli pâle ?",
-      "reponse": "Le chou-fleur",
-      "niveau": 2
+      "question": "Quelle céréale maltée est la base de la bière ?",
+      "reponse": "L'orge",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel sirop doré anglais vient de la canne ?",
-      "reponse": "Golden syrup",
+      "question": "Quel bonhomme de biscuit court dans les contes ?",
+      "reponse": "Pain d'épice",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit garnit la tarte Tatin ?",
+      "reponse": "La pomme",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson gazeuse au gingembre est célèbre au Canada ?",
+      "reponse": "Le ginger ale (Canada Dry)",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat libanais est une purée d'aubergines fumées ?",
+      "reponse": "Baba ganouj",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -41,8 +86,20 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit est l'ingrédient principal du cidre ?",
-      "reponse": "La pomme",
+      "question": "Quel légume en feuilles vertes est la base d'une salade ?",
+      "reponse": "La laitue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit agrume orangé se pèle en quartiers dans la boîte à lunch ?",
+      "reponse": "La clémentine",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit violet à noyau, une fois séché, aide à la digestion ?",
+      "reponse": "La prune",
       "niveau": 1
     },
     {
@@ -58,14 +115,8 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle tarte épicée se mange à l'Action de grâce ?",
-      "reponse": "À la citrouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Dans quel pays grille-t-on soi-même sa viande sur un gril au centre de la table ?",
-      "reponse": "La Corée",
+      "question": "Quel plat français mijote du bœuf au vin rouge ?",
+      "reponse": "Bœuf bourguignon",
       "niveau": 1,
       "ages": [
         "ados",
@@ -75,8 +126,30 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat indien s'appelle butter chicken en anglais ?",
-      "reponse": "Poulet au beurre",
+      "question": "Quel légume vert et allongé croque-t-on en salade et transforme-t-on en cornichon ?",
+      "reponse": "Le concombre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la petite bille de chocolat qu'on met dans les biscuits ?",
+      "reponse": "Une pépite",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte russe est un petit chausson farci ?",
+      "reponse": "Le pirojki",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine de la paella ?",
+      "reponse": "L'Espagne",
       "niveau": 1,
       "ages": [
         "ados",
@@ -86,115 +159,38 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle tartinade blanche accompagne le bagel ?",
-      "reponse": "Fromage à la crème",
+      "question": "Quel condiment jaune accompagne le hot-dog ?",
+      "reponse": "La moutarde",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel repas tardif combine déjeuner et dîner ?",
-      "reponse": "Le brunch",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel gros fruit vert à chair rouge et à pépins noirs se mange en tranches l'été ?",
-      "reponse": "La pastèque",
+      "question": "Quel petit fruit rouge pousse dans les tourbières ?",
+      "reponse": "La canneberge",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
-      "reponse": "Le club sandwich",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile plat retourne les crêpes dans la poêle ?",
-      "reponse": "La spatule",
+      "question": "Quelle bouchée de riz japonaise enroule du poisson dans une algue ?",
+      "reponse": "Le sushi",
       "niveau": 2
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel colonel a fondé la chaîne de poulet PFK ?",
-      "reponse": "Sanders",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle tartelette portugaise est à la crème ?",
-      "reponse": "Pastel de nata",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel repas mange-t-on traditionnellement le matin ?",
-      "reponse": "Le déjeuner",
+      "question": "Quelle viande hachée garnit le pâté chinois ?",
+      "reponse": "Le bœuf",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich fondant au fromage est grillé ?",
-      "reponse": "Le grilled cheese",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit orange à peau veloutée cache un gros noyau ?",
-      "reponse": "La pêche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie allongée est glacée au chocolat ?",
-      "reponse": "L'éclair",
+      "question": "De quel pays vient le champagne ?",
+      "reponse": "La France",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume violet et allongé gratine la moussaka ?",
-      "reponse": "L'aubergine",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à tartiner australienne est très salée ?",
-      "reponse": "La Vegemite",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles tranches de pommes de terre frites et salées se vendent en sac ?",
-      "reponse": "Les croustilles",
-      "niveau": 1
     }
   ]
 }

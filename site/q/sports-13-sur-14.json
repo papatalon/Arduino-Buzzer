@@ -8,8 +8,20 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le personnage costumé qui amuse la foule pendant un match ?",
-      "reponse": "La mascotte",
+      "question": "Quel jeu de cour d'école fait sauter par-dessus une corde qui tourne ?",
+      "reponse": "La corde à danser",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la pratique où l'entraîneur choisit son équipe ?",
+      "reponse": "Un camp d'entraînement",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport olympique descend un couloir de glace sur le dos ?",
+      "reponse": "La luge",
       "niveau": 1
     },
     {
@@ -25,26 +37,15 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?",
-      "reponse": "Le Canadien",
+      "question": "Dans quoi faut-il envoyer la rondelle pour compter ?",
+      "reponse": "Le filet",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel trophée récompense le meilleur marqueur de la LNH ?",
-      "reponse": "Art Ross",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelles larges semelles permettent de marcher sur la neige sans caler ?",
-      "reponse": "Des raquettes",
-      "niveau": 2
+      "question": "Quelle couleur de carton expulse un joueur au soccer ?",
+      "reponse": "Rouge",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -59,12 +60,6 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel jeu consiste à se cacher pendant qu'un joueur compte les yeux fermés ?",
-      "reponse": "La cachette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
       "question": "Quelle longueur fait une piscine olympique ?",
       "reponse": "50 mètres",
       "niveau": 2,
@@ -76,77 +71,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Dans quoi faut-il envoyer la rondelle pour compter ?",
-      "reponse": "Le filet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
       "question": "Quelle épreuve combine dix disciplines ?",
       "reponse": "Le décathlon",
       "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on l'ensemble des équipes qui s'affrontent toute une saison ?",
-      "reponse": "Une ligue",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle couleur de carton expulse un joueur au soccer ?",
-      "reponse": "Rouge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport olympique descend un couloir de glace sur le dos ?",
-      "reponse": "La luge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle joueuse de tennis a gagné 23 titres du grand chelem ?",
-      "reponse": "Serena Williams",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
-      "reponse": "Montréal",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel drapeau agite-t-on à la fin d'une course auto ?",
-      "reponse": "Drapeau à damier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu de table imite le soccer avec des joueurs fixés sur des tiges ?",
-      "reponse": "Le babyfoot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel est le sport national d'été du Canada ?",
-      "reponse": "La crosse",
-      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -166,14 +93,59 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de balles mènent à un but sur balles au baseball ?",
-      "reponse": "Quatre",
+      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
+      "reponse": "Montréal",
       "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment s'appelle le joueur qui garde le filet au hockey ?",
+      "reponse": "Le gardien de but",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien d'anneaux sur le drapeau olympique ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de table imite le soccer avec des joueurs fixés sur des tiges ?",
+      "reponse": "Le babyfoot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle joueuse de tennis a gagné 23 titres du grand chelem ?",
+      "reponse": "Serena Williams",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel est le sport national d'été du Canada ?",
+      "reponse": "La crosse",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on chacune des bandes tracées sur une piste d'athlétisme ?",
+      "reponse": "Un couloir",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -183,14 +155,19 @@
     },
     {
       "categorie": "Sports",
-      "question": "Dans quel sport dit-on échec et mat ?",
-      "reponse": "Les échecs",
-      "niveau": 1
+      "question": "Combien de joueurs par équipe au football américain ?",
+      "reponse": "Onze",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de combat japonais se pratique pieds nus en kimono blanc ?",
-      "reponse": "Le karaté",
+      "question": "Dans quel sport dit-on échec et mat ?",
+      "reponse": "Les échecs",
       "niveau": 1
     },
     {
@@ -198,6 +175,29 @@
       "question": "Quel autre nom donne-t-on au ping-pong ?",
       "reponse": "Tennis de table",
       "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le coup de pied accordé devant le filet après une faute au soccer ?",
+      "reponse": "Un tir de pénalité",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel drapeau agite-t-on à la fin d'une course auto ?",
+      "reponse": "Drapeau à damier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de balles mènent à un but sur balles au baseball ?",
+      "reponse": "Quatre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

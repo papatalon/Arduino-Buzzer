@@ -8,20 +8,20 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat japonais est une soupe de nouilles ?",
-      "reponse": "Le ramen",
+      "question": "Quelle confiserie d'érable se roule sur la neige ?",
+      "reponse": "La tire",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel récipient à queue sert à faire bouillir de l'eau sur le rond ?",
-      "reponse": "Une casserole",
+      "question": "Quel récipient plat sert à faire revenir les œufs ?",
+      "reponse": "Une poêle",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
-      "reponse": "La granita",
+      "question": "Quelle soupe russe est rouge betterave ?",
+      "reponse": "Le bortsch",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -30,8 +30,25 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert sicilien est un rouleau fourré à la ricotta ?",
-      "reponse": "Le cannoli",
+      "question": "Quel pain rond avec un trou se mange à Montréal ?",
+      "reponse": "Le bagel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel alcool japonais est fait de riz fermenté ?",
+      "reponse": "Le saké",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle épice se râpe sur le lait de poule ?",
+      "reponse": "La muscade",
       "niveau": 2,
       "ages": [
         "ados",
@@ -41,30 +58,37 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume mariné accompagne le burger ?",
-      "reponse": "Le cornichon",
+      "question": "Quel ustensile en fils de métal bat les œufs en mousse ?",
+      "reponse": "Le fouet",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
+      "reponse": "Le homard",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat fait-on en battant des œufs à la poêle ?",
-      "reponse": "L'omelette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boulette de poulpe japonaise est une collation ?",
-      "reponse": "Le takoyaki",
-      "niveau": 3,
+      "question": "Quel plat chinois est un pain farci cuit vapeur ?",
+      "reponse": "Le bao",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la paella ?",
-      "reponse": "L'Espagne",
+      "question": "Quel biscuit au chocolat cache une guimauve ?",
+      "reponse": "Le Whippet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte verte piquante accompagne les sushis ?",
+      "reponse": "Le wasabi",
       "niveau": 1,
       "ages": [
         "ados",
@@ -74,25 +98,9 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Que mâche-t-on longtemps sans jamais l'avaler ?",
-      "reponse": "De la gomme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson indienne mélange yogourt et mangue ?",
-      "reponse": "Le lassi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel pain plat indien cuit dans un four tandoor ?",
-      "reponse": "Le naan",
-      "niveau": 1,
+      "question": "Pays d'origine du fromage gouda ?",
+      "reponse": "Les Pays-Bas",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -101,26 +109,14 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
-      "reponse": "Le fromage en grains",
-      "niveau": 1
+      "question": "Quel ustensile troué égoutte les pâtes ?",
+      "reponse": "La passoire",
+      "niveau": 2
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel appareil garde le lait et les légumes au froid ?",
-      "reponse": "Le réfrigérateur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel jus boit-on le plus souvent au déjeuner ?",
-      "reponse": "Le jus d'orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel bonbon dur se lèche au bout d'un bâton ?",
-      "reponse": "Un suçon (une sucette)",
+      "question": "Quel liquide chaud et salé se mange à la cuillère avant le plat principal ?",
+      "reponse": "La soupe",
       "niveau": 1
     },
     {
@@ -131,14 +127,8 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel maïs éclate au cinéma ?",
-      "reponse": "Le popcorn",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat coréen mélange riz, légumes et œuf ?",
-      "reponse": "Le bibimbap",
+      "question": "Quelle pomme de terre frite est en spirale ?",
+      "reponse": "Frite tornade",
       "niveau": 2,
       "ages": [
         "ados",
@@ -148,9 +138,39 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la moussaka ?",
-      "reponse": "La Grèce",
-      "niveau": 2,
+      "question": "Comment nomme-t-on un œuf cuit 3 minutes en coquille ?",
+      "reponse": "À la coque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit rouge se cueille sur un buisson piquant et se coiffe au bout du doigt ?",
+      "reponse": "La framboise",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte italienne en petits tubes courbés se mange au fromage ?",
+      "reponse": "Le macaroni",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil lave les assiettes à notre place ?",
+      "reponse": "Le lave-vaisselle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle vitamine trouve-t-on dans les oranges ?",
+      "reponse": "La vitamine C",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel clou parfume le jambon de Noël ?",
+      "reponse": "Clou de girofle",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -159,33 +179,15 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile tranchant coupe la viande ?",
-      "reponse": "Le couteau",
+      "question": "Quelle sauce rouge accompagne la dinde ?",
+      "reponse": "Aux canneberges",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel appareil chaud fait cuire les gâteaux ?",
-      "reponse": "Le four",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit jaune les singes adorent-ils ?",
-      "reponse": "La banane",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
-      "reponse": "La poutine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quels bonbons mous et colorés collent aux dents ?",
-      "reponse": "Les jujubes",
-      "niveau": 1
+      "question": "Quel légume vert et long se mange en cosse ou en conserve ?",
+      "reponse": "Le haricot",
+      "niveau": 2
     }
   ]
 }

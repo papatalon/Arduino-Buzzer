@@ -8,14 +8,36 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle écorce parfume les brioches roulées ?",
-      "reponse": "La cannelle",
+      "question": "Quel ragoût du temps des fêtes se sert avec des boulettes, dans une sauce épaissie à la farine grillée ?",
+      "reponse": "Le ragoût de pattes",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle soupe japonaise est à base de pâte de soja ?",
+      "reponse": "La soupe miso",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle racine piquante parfume les biscuits de Noël ?",
+      "reponse": "Le gingembre",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit garnit la tarte Tatin ?",
-      "reponse": "La pomme",
+      "question": "Quel vinaigre noir italien vient de Modène ?",
+      "reponse": "Le balsamique",
       "niveau": 2,
       "ages": [
         "ados",
@@ -25,9 +47,9 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich vietnamien se sert dans une baguette ?",
-      "reponse": "Le banh mi",
-      "niveau": 2,
+      "question": "Quel nom porte le jalapeño fumé ?",
+      "reponse": "Chipotle",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes"
@@ -35,48 +57,20 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle crêpe française est flambée à l'orange ?",
-      "reponse": "Crêpe Suzette",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte farcie italienne forme des coussins ?",
-      "reponse": "Les raviolis",
+      "question": "Quel légume rouge, jaune ou vert se coupe en lanières croquantes ?",
+      "reponse": "Le poivron",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du fromage gouda ?",
-      "reponse": "Les Pays-Bas",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit rouge à noyau couronne un sundae ?",
-      "reponse": "La cerise",
+      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
+      "reponse": "Le club sandwich",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson se prépare avec du citron, de l'eau et du sucre ?",
-      "reponse": "La limonade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel alcool japonais est fait de riz fermenté ?",
-      "reponse": "Le saké",
+      "question": "Pays d'origine de la fondue au fromage ?",
+      "reponse": "La Suisse",
       "niveau": 1,
       "ages": [
         "ados",
@@ -86,14 +80,14 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle poudre blanche tirée du blé sert à faire le pain et les gâteaux ?",
-      "reponse": "La farine",
+      "question": "De quel fruit fait-on le vin ?",
+      "reponse": "Le raisin",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du pad thaï ?",
-      "reponse": "La Thaïlande",
+      "question": "Quelle entrée italienne est du pain grillé garni ?",
+      "reponse": "La bruschetta",
       "niveau": 1,
       "ages": [
         "ados",
@@ -103,51 +97,59 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit rouge trempe-t-on dans le chocolat fondu ?",
-      "reponse": "La fraise au chocolat",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
-      "reponse": "La tire d'érable",
+      "question": "Quel légume à chapeau pousse dans le noir et se met sur la pizza ?",
+      "reponse": "Le champignon",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson chaude se prépare en faisant infuser des herbes ?",
-      "reponse": "Une tisane",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quoi est fait le fromage ?",
-      "reponse": "Du lait",
+      "question": "Quels trois étages composent le pâté chinois ?",
+      "reponse": "Bœuf maïs patates",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Comment appelle-t-on la boîte où l'on met son repas pour l'école ?",
-      "reponse": "La boîte à lunch",
+      "question": "Quelle céréale est la base de l'alimentation en Asie ?",
+      "reponse": "Le riz",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu garnit les muffins et les tartes au Québec ?",
-      "reponse": "Le bleuet",
+      "question": "Quelle tartelette portugaise est à la crème ?",
+      "reponse": "Pastel de nata",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat argentin grille des viandes au feu de bois ?",
+      "reponse": "L'asado",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle saucisse chaude se glisse dans un pain allongé ?",
+      "reponse": "Le hot-dog",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle confiserie blanche flotte sur le chocolat chaud ?",
-      "reponse": "La guimauve",
+      "question": "Quel condiment rouge accompagne les frites et le pâté chinois ?",
+      "reponse": "Le ketchup",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel pays a inventé les oursons gélifiés ?",
-      "reponse": "L'Allemagne",
-      "niveau": 2,
+      "question": "Quel dessert italien contient du café et du mascarpone ?",
+      "reponse": "Le tiramisu",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -156,9 +158,21 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "De quelle légumineuse est fait le houmous ?",
-      "reponse": "Pois chiches",
-      "niveau": 2,
+      "question": "Quel vêtement protège les habits quand on cuisine ?",
+      "reponse": "Un tablier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle gomme permet de faire des bulles ?",
+      "reponse": "Gomme balloune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle laitue compose la salade César ?",
+      "reponse": "La romaine",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -178,15 +192,9 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel beurre de noix est interdit dans les écoles ?",
-      "reponse": "Beurre d'arachide",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel vinaigre noir italien vient de Modène ?",
-      "reponse": "Le balsamique",
-      "niveau": 2,
+      "question": "Quelles petites portions espagnoles se partagent ?",
+      "reponse": "Les tapas",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",

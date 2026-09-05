@@ -8,15 +8,33 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand animal du monde ?",
-      "reponse": "La baleine bleue",
+      "question": "Quels sont les trois états de l'eau ?",
+      "reponse": "Solide liquide gaz",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on le bébé de la grenouille, qui a encore une queue ?",
-      "reponse": "Le têtard",
-      "niveau": 2
+      "question": "Quel gaz les plantes rejettent-elles le jour ?",
+      "reponse": "L'oxygène",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte soulève 50 fois son poids ?",
+      "reponse": "La fourmi",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle la maison des fourmis ?",
+      "reponse": "La fourmilière",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel poisson à l'aileron pointu fait fuir les baigneurs ?",
+      "reponse": "Le requin",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -27,6 +45,41 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel sucre trouve-t-on dans le sang ?",
+      "reponse": "Le glucose",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel muscle bat sans jamais se reposer ?",
+      "reponse": "Le cœur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle petite fenêtre de l'œil laisse entrer la lumière ?",
+      "reponse": "La pupille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal produit les œufs qu'on mange au déjeuner ?",
+      "reponse": "La poule",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle énergie vient du vent ?",
+      "reponse": "L'énergie éolienne",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -41,76 +94,38 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel appareil enregistre les tremblements de terre ?",
-      "reponse": "Le sismographe",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est l'animal le plus haut du monde ?",
-      "reponse": "La girafe",
+      "question": "Qu'est-ce qui pousse sur la tête et qu'on va faire couper chez le coiffeur ?",
+      "reponse": "Les cheveux",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appelle le sonar naturel des chauves-souris ?",
-      "reponse": "L'écholocation",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel gros oiseau entièrement noir croasse ?",
-      "reponse": "Le corbeau",
+      "question": "Quelle est la plus petite unité du vivant ?",
+      "reponse": "La cellule",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "De quoi sont faits les nuages ?",
-      "reponse": "Gouttelettes d'eau",
+      "question": "Quel gros animal brun dort tout l'hiver dans sa tanière ?",
+      "reponse": "L'ours",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle partie de la plante s'enfonce dans la terre ?",
-      "reponse": "La racine",
+      "question": "Comment s'appelle le passage de liquide à gaz ?",
+      "reponse": "L'évaporation",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel mammifère australien a un bec de canard ?",
-      "reponse": "L'ornithorynque",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel grand oiseau rose se tient souvent sur une seule patte ?",
+      "reponse": "Le flamant rose",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de paires de côtes avons-nous ?",
-      "reponse": "Douze",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle échelle mesure les séismes ?",
-      "reponse": "Richter",
+      "question": "Quel naturaliste a proposé la théorie de l'évolution ?",
+      "reponse": "Darwin",
       "niveau": 1,
       "ages": [
         "ados",
@@ -120,14 +135,24 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel appareil transforme le vent en électricité ?",
-      "reponse": "L'éolienne",
+      "question": "Quelle est la plus grande lune de Saturne ?",
+      "reponse": "Titan",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal est le meilleur ami de l'homme ?",
+      "reponse": "Le chien",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appellent les anneaux du tronc d'un arbre ?",
-      "reponse": "Les cernes",
+      "question": "Quelle unité mesure le courant électrique ?",
+      "reponse": "L'ampère",
       "niveau": 2,
       "ages": [
         "ados",
@@ -137,61 +162,20 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "À quelle température l'eau gèle-t-elle ?",
-      "reponse": "0 degré C",
+      "question": "Quelle saison vient après l'hiver ?",
+      "reponse": "Le printemps",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de litres de sang contient un adulte ?",
-      "reponse": "Cinq",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle onde invisible réchauffe les aliments au four ?",
-      "reponse": "Les micro-ondes",
+      "question": "Le Soleil est-il une planète ou une étoile ?",
+      "reponse": "Une étoile",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gros animal d'Afrique passe ses journées dans l'eau, la gueule grande ouverte ?",
-      "reponse": "L'hippopotame",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelles parties de l'arbre changent de couleur en automne ?",
-      "reponse": "Les feuilles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le seul mammifère volant ?",
-      "reponse": "La chauve-souris",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de temps la Terre met-elle à tourner sur elle-même ?",
-      "reponse": "24 heures",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel organe pompe le sang ?",
-      "reponse": "Le cœur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte soulève 50 fois son poids ?",
-      "reponse": "La fourmi",
+      "question": "Qui a découvert la gravitation ?",
+      "reponse": "Newton",
       "niveau": 1
     }
   ]

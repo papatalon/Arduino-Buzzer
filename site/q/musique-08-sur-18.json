@@ -8,14 +8,90 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse colombienne a chanté Waka Waka ?",
-      "reponse": "Shakira",
+      "question": "Quel spectacle italien fait chanter toute l'histoire, sans dialogues parlés ?",
+      "reponse": "L'opéra",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse brésilienne anime le carnaval ?",
+      "reponse": "La samba",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle percussion ronde a des cymbalettes ?",
+      "reponse": "Le tambourin",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe américain a chanté Mr. Brightside ?",
-      "reponse": "The Killers",
+      "question": "Quel instrument à cordes pincées, plus petit qu'un piano droit, symbolise l'Irlande ?",
+      "reponse": "La harpe celtique",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur canadien masqué de bandages a chanté Blinding Lights ?",
+      "reponse": "The Weeknd",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël fait résonner un long « Gloria » repris par tout le monde ?",
+      "reponse": "Les anges dans nos campagnes",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style musical mêle rap, danse et graffitis depuis New York ?",
+      "reponse": "Le hip-hop",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on celui qui mène les danses traditionnelles à l'archet ?",
+      "reponse": "Un violoneux",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel petit instrument de métal, suspendu à un fil, tinte quand on le frappe avec une tige ?",
+      "reponse": "Le triangle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
+      "reponse": "Loud",
       "niveau": 3,
       "ages": [
         "ados",
@@ -24,8 +100,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle petite flûte traversière est très aiguë ?",
-      "reponse": "Le piccolo",
+      "question": "Comment appelle-t-on l'artiste qui monte sur scène juste avant la vedette ?",
+      "reponse": "La première partie",
       "niveau": 2,
       "ages": [
         "ados",
@@ -35,21 +111,66 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel style de musique se joue fort avec guitares électriques et batterie ?",
-      "reponse": "Le rock",
+      "question": "Sur quel pont danse-t-on tous en rond dans la chanson ?",
+      "reponse": "Le pont d'Avignon",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument a des touches noires et blanches ?",
-      "reponse": "Le piano",
+      "question": "Sur quelle clé lit-on les notes graves ?",
+      "reponse": "Clé de fa",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe féminin sud-coréen a chanté Kill This Love ?",
+      "reponse": "Blackpink",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse de la Barbade a chanté Umbrella ?",
+      "reponse": "Rihanna",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'ensemble des chansons réunies sur un même disque ?",
+      "reponse": "Un album",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Comment nomme-t-on l'artiste qui anime les platines ?",
-      "reponse": "Le DJ",
-      "niveau": 1
+      "question": "Dans Pierre et le loup, quel instrument joue le loup ?",
+      "reponse": "Le cor",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle est la voix féminine la plus grave ?",
+      "reponse": "L'alto (contralto)",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -62,18 +183,14 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel tambour à main vient d'Irlande ?",
-      "reponse": "Le bodhrán",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on la petite vidéo tournée pour illustrer une chanson ?",
+      "reponse": "Un clip",
+      "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "Quelle indication musicale signifie jouer fort ?",
-      "reponse": "Forte",
+      "question": "Comment s'appelle un chant de Noël traditionnel ?",
+      "reponse": "Un cantique",
       "niveau": 2,
       "ages": [
         "ados",
@@ -83,118 +200,28 @@
     },
     {
       "categorie": "Musique",
-      "question": "Sur combien de lignes écrit-on la musique ?",
-      "reponse": "Cinq",
-      "niveau": 2
+      "question": "Comment appelle-t-on la personne qui joue du violon ?",
+      "reponse": "Un violoniste",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle cantatrice grecque fut surnommée la Divina ?",
-      "reponse": "Maria Callas",
+      "question": "Quel chanteur a popularisé le twist ?",
+      "reponse": "Chubby Checker",
       "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel chanteur incarnait Danny dans Grease ?",
-      "reponse": "John Travolta",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style musical coréen a conquis la planète ?",
-      "reponse": "La K-pop",
-      "niveau": 1,
+      "question": "Quel groupe sud-coréen a chanté Dynamite ?",
+      "reponse": "BTS",
+      "niveau": 2,
       "ages": [
         "enfants",
         "ados"
       ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Que fait un musicien qui règle son instrument avant de jouer ?",
-      "reponse": "Accorder",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comptine plante des choux à la mode de chez nous ?",
-      "reponse": "Savez-vous planter des choux",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on, en musique, un silence qui dure un temps ?",
-      "reponse": "Le soupir",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de touches noires compte un piano ?",
-      "reponse": "36",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel cantique de Noël d'origine autrichienne est le plus traduit au monde ?",
-      "reponse": "Douce nuit",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument en cuivre déplié mesure près de trois mètres et se joue avec une coulisse ?",
-      "reponse": "Le trombone",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Qui dirige un orchestre ?",
-      "reponse": "Le chef d'orchestre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse néo-zélandaise a chanté Royals à seize ans ?",
-      "reponse": "Lorde",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle note vient juste après le ré ?",
-      "reponse": "Le mi",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "À quelle famille d'instruments appartient la trompette ?",
-      "reponse": "Les cuivres",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel compositeur a écrit la Lettre à Élise ?",
-      "reponse": "Beethoven",
-      "niveau": 2
     }
   ]
 }

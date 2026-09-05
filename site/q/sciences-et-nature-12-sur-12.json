@@ -8,48 +8,8 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quel dinosaure a trois cornes sur la tête ?",
-      "reponse": "Le tricératops",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est l'animal terrestre le plus rapide ?",
-      "reponse": "Le guépard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel liquide rouge circule dans nos veines ?",
-      "reponse": "Le sang",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel mammifère marin chante des mélodies ?",
-      "reponse": "La baleine à bosse",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de minutes met la lumière du Soleil à nous parvenir ?",
-      "reponse": "Huit",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel naturaliste a proposé la théorie de l'évolution ?",
-      "reponse": "Darwin",
+      "question": "Quel est le symbole chimique de l'oxygène ?",
+      "reponse": "O",
       "niveau": 1,
       "ages": [
         "ados",
@@ -59,26 +19,20 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle planète a les anneaux les plus spectaculaires ?",
-      "reponse": "Saturne",
+      "question": "Quel oiseau répète ce qu'on lui dit ?",
+      "reponse": "Le perroquet",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle couche de gaz protège la Terre des UV ?",
-      "reponse": "La couche d'ozone",
+      "question": "Quelle roche liquide sort des volcans ?",
+      "reponse": "La lave",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
-      "reponse": "L'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Dans quelle partie du corps loge l'os appelé enclume ?",
-      "reponse": "Dans l'oreille",
+      "question": "Quel animal polaire a la peau noire sous son pelage blanc ?",
+      "reponse": "L'ours polaire",
       "niveau": 2,
       "ages": [
         "ados",
@@ -88,9 +42,55 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?",
-      "reponse": "L'arc-en-ciel",
+      "question": "Le dauphin est-il un poisson ou un mammifère ?",
+      "reponse": "Un mammifère",
       "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le symbole chimique du fer ?",
+      "reponse": "Fe",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz de l'air respirons-nous pour vivre ?",
+      "reponse": "L'oxygène",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie de la plante relie la racine à la fleur ?",
+      "reponse": "La tige",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est l'animal terrestre le plus rapide ?",
+      "reponse": "Le guépard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
+      "reponse": "Les branchies",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment nomme-t-on un arbre à feuilles, par opposition à un conifère ?",
+      "reponse": "Un feuillu",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -105,78 +105,84 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel astre provoque les marées ?",
-      "reponse": "La Lune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète a été rétrogradée en planète naine ?",
-      "reponse": "Pluton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal rampe sans pattes ?",
-      "reponse": "Le serpent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte piqueur bourdonne autour des campeurs les soirs d'été ?",
-      "reponse": "Le maringouin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle vague géante suit parfois un séisme ?",
-      "reponse": "Le tsunami",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la température du corps humain en santé ?",
-      "reponse": "37 degrés C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre traverse le ciel en traînant une longue queue lumineuse ?",
-      "reponse": "Une comète",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal de la ferme nous donne le lait ?",
-      "reponse": "La vache",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel événement cache le Soleil derrière la Lune ?",
-      "reponse": "Une éclipse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment mesure-t-on la force des ouragans ?",
-      "reponse": "Saffir-Simpson",
-      "niveau": 3,
+      "question": "Quel est le symbole chimique de l'or ?",
+      "reponse": "Au",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel pigment rend les plantes vertes ?",
-      "reponse": "La chlorophylle",
+      "question": "Quel est le plus grand animal du monde ?",
+      "reponse": "La baleine bleue",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle unité mesure le courant électrique ?",
-      "reponse": "L'ampère",
+      "question": "Dans quoi la chenille se transforme-t-elle ?",
+      "reponse": "La chrysalide",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "En quelle saison les feuilles des arbres tombent-elles ?",
+      "reponse": "L'automne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel instrument sert à observer les étoiles ?",
+      "reponse": "Le télescope",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la formule chimique de l'eau ?",
+      "reponse": "H2O",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile peut vivre plus de 150 ans ?",
+      "reponse": "La tortue géante",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de temps la Terre met-elle à tourner sur elle-même ?",
+      "reponse": "24 heures",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin a trois cœurs ?",
+      "reponse": "La pieuvre",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Que tombe-t-il du ciel en flocons blancs l'hiver ?",
+      "reponse": "La neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel oiseau frappe le tronc des arbres à coups de bec ?",
+      "reponse": "Le pic-bois",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien d'os dans le squelette humain adulte ?",
+      "reponse": "206",
       "niveau": 2,
       "ages": [
         "ados",

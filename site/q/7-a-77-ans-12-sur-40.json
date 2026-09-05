@@ -7,27 +7,27 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la température du corps humain en santé ?",
-      "reponse": "37 degrés C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels peuples vivaient déjà en Amérique quand les Européens sont arrivés ?",
-      "reponse": "Les Autochtones",
+      "categorie": "Québec",
+      "question": "De quelle couleur est le fond du drapeau du Québec ?",
+      "reponse": "Bleu",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle princesse de Star Wars est la sœur de Luke ?",
-      "reponse": "Leia",
+      "question": "Quelle princesse perd sa pantoufle de verre ?",
+      "reponse": "Cendrillon",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel ballet de Tchaïkovski met en scène une princesse changée en oiseau blanc ?",
-      "reponse": "Le Lac des cygnes",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle gousse noire parfume la crème glacée ?",
+      "reponse": "La vanille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel tableau classe tous les éléments chimiques ?",
+      "reponse": "Tableau périodique",
       "niveau": 1,
       "ages": [
         "ados",
@@ -36,62 +36,104 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la peur des araignées ?",
-      "reponse": "L'arachnophobie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
-      "reponse": "Une fusée",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
-      "reponse": "Le pain doré",
+      "question": "Quelle grosse volaille rôtit au four pour l'Action de grâce ?",
+      "reponse": "La dinde",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Que veut dire l'abréviation DM sur les réseaux sociaux ?",
-      "reponse": "Un message privé",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une des sept grandes masses de terre du globe ?",
+      "reponse": "Un continent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de quilles dans un jeu de bowling ?",
+      "reponse": "Dix",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel ogre a un ami âne très bavard ?",
-      "reponse": "Shrek",
+      "question": "Quel méchant Marvel claque des doigts avec un gant ?",
+      "reponse": "Thanos",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quel jeu de cartes doit-on annoncer qu'il ne reste qu'une seule carte en main ?",
+      "reponse": "Uno",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal de ferme, très bavard, accompagne Shrek partout ?",
+      "reponse": "L'âne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la peur des espaces clos ?",
+      "reponse": "La claustrophobie",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel pays a un cercle rouge sur fond blanc ?",
+      "reponse": "Le Japon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument en cuivre déplié mesure près de trois mètres et se joue avec une coulisse ?",
+      "reponse": "Le trombone",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel site de vente en ligne a une flèche souriante dans son logo ?",
+      "reponse": "Amazon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du chien ?",
+      "reponse": "Le chiot",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "De quelle couleur est le fond du drapeau du Québec ?",
-      "reponse": "Bleu",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment dit-on « oui » en espagnol ?",
-      "reponse": "Sí",
+      "question": "Où dépose-t-on une lettre pour qu'elle parte par la poste ?",
+      "reponse": "Au bureau de poste",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson orange est populaire en sushi ?",
-      "reponse": "Le saumon",
+      "question": "Quelle saucisse chaude se glisse dans un pain allongé ?",
+      "reponse": "Le hot-dog",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel dinosaure a trois cornes sur la tête ?",
-      "reponse": "Le tricératops",
+      "question": "Quel liquide rouge circule dans nos veines ?",
+      "reponse": "Le sang",
       "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot kimono ?",
+      "reponse": "Le japonais",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -105,84 +147,37 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel drapeau agite-t-on à la fin d'une course auto ?",
-      "reponse": "Drapeau à damier",
+      "categorie": "Histoire",
+      "question": "Quels peuples vivaient déjà en Amérique quand les Européens sont arrivés ?",
+      "reponse": "Les Autochtones",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle console de Nintendo se joue autant sur le téléviseur qu'en mode portable ?",
-      "reponse": "La Nintendo Switch",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel bonbon dur se lèche au bout d'un bâton ?",
-      "reponse": "Un suçon (une sucette)",
+      "categorie": "Sports",
+      "question": "Combien de points vaut un panier de loin au basketball ?",
+      "reponse": "Trois",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle danse des années 90 se fait en groupe, bras tendus, avec un quart de tour à la fin ?",
-      "reponse": "La Macarena",
+      "question": "Quel style de musique passe le plus souvent à la radio et fait danser tout le monde ?",
+      "reponse": "La pop",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Que veut dire l'abréviation DM sur les réseaux sociaux ?",
+      "reponse": "Un message privé",
       "niveau": 1,
       "ages": [
         "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir un chat dans la gorge ?",
-      "reponse": "Être enroué",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel oratoire montréalais fut fondé par le frère André ?",
-      "reponse": "Saint-Joseph",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le collant coloré donné en récompense dans un cahier ?",
-      "reponse": "Un autocollant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu oppose deux équipes qui tirent chacune un bout du même câble ?",
-      "reponse": "Le tir à la corde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "De quelle couleur sont les habitants de Pandora ?",
-      "reponse": "Bleus",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
+        "ados"
       ]
     },
     {
       "categorie": "Culture générale",
       "question": "Dans quel conte une princesse s'endort cent ans après s'être piqué le doigt ?",
       "reponse": "La Belle au bois dormant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on une des sept grandes masses de terre du globe ?",
-      "reponse": "Un continent",
       "niveau": 1
     }
   ]

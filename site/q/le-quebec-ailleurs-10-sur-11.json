@@ -7,44 +7,14 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
-      "reponse": "L'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est voisine du Québec, à l'est, avec Fredericton pour capitale ?",
-      "reponse": "Le Nouveau-Brunswick",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
-      "reponse": "Cracké",
+      "categorie": "Musique",
+      "question": "Quelle pianiste et chanteuse québécoise se fait appeler Cœur de pirate ?",
+      "reponse": "Béatrice Martin",
       "niveau": 3,
       "ages": [
-        "enfants",
-        "ados"
+        "ados",
+        "adultes"
       ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat québécois cuit des haricots blancs au four ?",
-      "reponse": "Fèves au lard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quels tambours se frappent en cercle dans les parcs de Montréal le dimanche ?",
-      "reponse": "Les tam-tams",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie niaiser quelqu'un, au Québec ?",
-      "reponse": "Le taquiner",
-      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -58,9 +28,77 @@
       ]
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel condiment rouge accompagne les frites et le pâté chinois ?",
+      "reponse": "Le ketchup",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant de Montréal ?",
+      "reponse": "Un Montréalais",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel événement montréalais ferme des rues chaque été pour des spectacles gratuits ?",
-      "reponse": "Le Festival de jazz",
+      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
+      "reponse": "Loft Story",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?",
+      "reponse": "Alys Robi",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
+      "reponse": "L'Ontario",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sucre du terroir remplace la cassonade ?",
+      "reponse": "Sucre d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe de Montréal a gagné un Grammy pour The Suburbs ?",
+      "reponse": "Arcade Fire",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel repas québécois correspond au dîner français ?",
+      "reponse": "Le souper",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
+      "reponse": "Sol",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel intendant a développé la Nouvelle-France ?",
+      "reponse": "Jean Talon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -70,30 +108,53 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson fumé garnit le bagel classique ?",
-      "reponse": "Le saumon fumé",
+      "question": "Quel plat québécois superpose patates pilées, blé d'Inde et viande hachée ?",
+      "reponse": "Le pâté chinois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle province se trouve Montréal ?",
+      "reponse": "Le Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie attache ta tuque ?",
+      "reponse": "Prépare-toi",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a raflé les Junos avec l'album Phoenix ?",
-      "reponse": "Charlotte Cardin",
+      "question": "Quelle danse québécoise fait taper les pieds au son du violon ?",
+      "reponse": "La gigue",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
+      "reponse": "Le Village Vacances Valcartier",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?",
-      "reponse": "Le Canadien",
-      "niveau": 1
+      "question": "Quel numéro portait Maurice Richard ?",
+      "reponse": "9",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle société d'État tire les loteries au Québec ?",
-      "reponse": "Loto-Québec",
+      "categorie": "Histoire",
+      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
+      "reponse": "Trudeau",
       "niveau": 1,
       "ages": [
         "ados",
@@ -103,101 +164,27 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?",
-      "reponse": "La baie James",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on les habitants des Îles-de-la-Madeleine ?",
-      "reponse": "Les Madelinots",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle animatrice québécoise animait Le Banquier ?",
-      "reponse": "Julie Snyder",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
-      "reponse": "Le REM",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel animateur québécois mène une émission de musique en direct avec un band maison ?",
-      "reponse": "Normand Brathwaite",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles galettes du déjeuner arrose-t-on de sirop d'érable ?",
-      "reponse": "Les crêpes",
+      "question": "Quel pays produit le plus de sirop d'érable ?",
+      "reponse": "Le Canada",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie l'interjection québécoise tiguidou ?",
-      "reponse": "C'est parfait",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
-      "reponse": "Radio Enfer",
+      "categorie": "Musique",
+      "question": "Quelle chanteuse acadienne a popularisé Évangéline ?",
+      "reponse": "Annie Blanchard",
       "niveau": 3,
       "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
-      "reponse": "Le CF Montréal",
-      "niveau": 1,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle émission québécoise a des fauteuils qui pivotent ?",
-      "reponse": "La Voix",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?",
-      "reponse": "Alys Robi",
+      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
+      "reponse": "Coup de Pouce",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     }

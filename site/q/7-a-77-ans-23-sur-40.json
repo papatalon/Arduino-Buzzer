@@ -7,45 +7,92 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Quel navigateur italien croyait avoir atteint les Indes en 1492 ?",
-      "reponse": "Christophe Colomb",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de temps dure une punition mineure au hockey ?",
-      "reponse": "Deux minutes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel épi grillé se mange au beurre en août ?",
-      "reponse": "Le blé d'Inde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien d'états composent les États-Unis ?",
-      "reponse": "50",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle science étudie les plantes ?",
-      "reponse": "La botanique",
+      "categorie": "Cinéma et télé",
+      "question": "Quel méchant des Minions veut voler la Lune ?",
+      "reponse": "Gru",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel chant de Noël demande de descendre du ciel avec des jouets par milliers ?",
-      "reponse": "Petit papa Noël",
+      "question": "Quel instrument se frappe avec deux baguettes sur une peau tendue ?",
+      "reponse": "Le tambour",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chocolat creux se déballe le matin de Pâques ?",
+      "reponse": "Un œuf en chocolat",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la grande demeure luxueuse d'un roi ?",
+      "reponse": "Un palais",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle pierre précieuse est verte ?",
+      "reponse": "L'émeraude",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Combien de voyelles dans l'alphabet français ?",
+      "reponse": "Six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel dieu nordique manie un marteau chez Marvel ?",
+      "reponse": "Thor",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de bosses a un chameau ?",
+      "reponse": "Deux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle note vient juste après le mi ?",
+      "reponse": "Le fa",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment s'appelait le village iroquois devenu Montréal ?",
+      "reponse": "Hochelaga",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on l'abri grillagé où vivent les poules ?",
+      "reponse": "Le poulailler",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ustensile tranchant coupe la viande ?",
+      "reponse": "Le couteau",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?",
-      "reponse": "Le Canadien",
+      "question": "Quel équipement protège la tête à vélo et au hockey ?",
+      "reponse": "Le casque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel drap blanc troué de deux yeux fait un costume d'Halloween facile ?",
+      "reponse": "Un fantôme",
       "niveau": 1
     },
     {
@@ -55,55 +102,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle volaille laquée est le classique de la capitale chinoise ?",
-      "reponse": "Canard de Pékin",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Pluriel de madame ?",
-      "reponse": "Mesdames",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel organe de la bouche permet de goûter ?",
-      "reponse": "La langue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel bouton bleu approuve une publication sur Facebook ?",
-      "reponse": "J'aime",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle légende québécoise fait voler un canot ?",
-      "reponse": "La chasse-galerie",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Géographie",
       "question": "Quelle province canadienne est voisine du Québec, à l'est, avec Fredericton pour capitale ?",
       "reponse": "Le Nouveau-Brunswick",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte transmet la malaria ?",
-      "reponse": "Le moustique",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâtisserie colorée a deux coques et une ganache ?",
+      "reponse": "Le macaron",
       "niveau": 1,
       "ages": [
         "ados",
@@ -112,77 +119,51 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois chialer ?",
-      "reponse": "Se plaindre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature bleue de Disney, échappée de l'espace, s'appelle l'expérience 626 ?",
-      "reponse": "Stitch",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de musiciens forment un trio ?",
-      "reponse": "Trois",
+      "categorie": "Québec",
+      "question": "Quel grand bâtiment rouge de la ferme abrite les animaux et le foin ?",
+      "reponse": "La grange",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle ville québécoise est célèbre pour son festival western ?",
-      "reponse": "Saint-Tite",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel outil sert à planter un clou ?",
-      "reponse": "Le marteau",
+      "question": "Que veut dire « il fait frette » ?",
+      "reponse": "Il fait très froid",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
-      "reponse": "Le Banquier",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient du vent ?",
-      "reponse": "L'énergie éolienne",
+      "question": "Quel vent tourbillonnant forme un entonnoir ?",
+      "reponse": "La tornade",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie « avoir une faim de loup » ?",
-      "reponse": "Avoir très faim",
+      "categorie": "Géographie",
+      "question": "Combien d'états composent les États-Unis ?",
+      "reponse": "50",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
+      "reponse": "Le surf",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel jus boit-on le plus souvent au déjeuner ?",
-      "reponse": "Le jus d'orange",
+      "question": "Quel aliment orange est riche en carotène ?",
+      "reponse": "La carotte",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat de dessin animé court après la souris Jerry ?",
-      "reponse": "Tom",
+      "categorie": "Mots et langue",
+      "question": "Que signifie il pleut des cordes ?",
+      "reponse": "Il pleut très fort",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle science étudie les plantes ?",
+      "reponse": "La botanique",
       "niveau": 1
     }
   ]

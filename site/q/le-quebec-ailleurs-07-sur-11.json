@@ -7,31 +7,92 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel groupe folklorique québécois a une bottine dans son nom ?",
-      "reponse": "La Bottine Souriante",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
+      "reponse": "Caillou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit bleu foncé se cueille dans les bois du Lac-Saint-Jean ?",
+      "reponse": "Le bleuet sauvage",
+      "niveau": 2
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant du Saguenay ?",
+      "reponse": "Un Saguenéen",
       "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel événement montréalais ferme des rues chaque été pour des spectacles gratuits ?",
+      "reponse": "Le Festival de jazz",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
+      "reponse": "Le Forum",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois magasiner ?",
-      "reponse": "Faire des achats",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
+      "reponse": "Les Boys",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
+      "reponse": "La ceinture fléchée",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle fête québécoise célèbre le blé d'Inde ?",
-      "reponse": "L'épluchette",
+      "question": "Quelle viande hachée garnit le pâté chinois ?",
+      "reponse": "Le bœuf",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel stade accueillait les Expos ?",
-      "reponse": "Stade olympique",
+      "categorie": "Géographie",
+      "question": "Quelle feuille rouge orne le drapeau du Canada ?",
+      "reponse": "La feuille d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
+      "reponse": "Quétaine",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel avare célèbre du terroir québécois aime son argent ?",
+      "reponse": "Séraphin",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -39,27 +100,51 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?",
-      "reponse": "La tire sur la neige",
+      "categorie": "Sports",
+      "question": "Quel pilote québécois a donné son nom au circuit de Montréal ?",
+      "reponse": "Gilles Villeneuve",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas se prend le midi au Québec ?",
+      "reponse": "Le dîner",
       "niveau": 1
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne les bonbons ?",
+      "reponse": "Des nananes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
+      "reponse": "L'hémisphère nord",
+      "niveau": 3
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
-      "reponse": "Loft Story",
-      "niveau": 3,
+      "question": "Quelle société d'État a le monopole de la vente d'alcool au Québec ?",
+      "reponse": "La SAQ",
+      "niveau": 1,
       "ages": [
-        "adultes"
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel humoriste québécois au débit très rapide a animé de nombreux galas ?",
-      "reponse": "Louis-José Houde",
+      "question": "Quel chef québécois donne son prénom à un magazine, une émission et une gamme de produits ?",
+      "reponse": "Ricardo",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -71,139 +156,39 @@
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
-      "reponse": "Un missionnaire",
+      "categorie": "Sciences et nature",
+      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
+      "reponse": "La Grande Ourse",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
+      "reponse": "Les Classels",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle pianiste et chanteuse québécoise se fait appeler Cœur de pirate ?",
-      "reponse": "Béatrice Martin",
+      "categorie": "Culture pop",
+      "question": "Quel humoriste québécois jouait le concierge Symphorien ?",
+      "reponse": "Gilles Latulippe",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "aines"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel duo québécois de dessins animés met en scène une souris et son chat en peluche ?",
-      "reponse": "Toupie et Binou",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville du Québec accueille chaque été le Festival de la poutine ?",
-      "reponse": "Drummondville",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu garnit les muffins et les tartes au Québec ?",
-      "reponse": "Le bleuet",
+      "question": "Quelle émission jeunesse québécoise a Passe-Montagne ?",
+      "reponse": "Passe-Partout",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
-      "reponse": "Big Brother Célébrités",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chansonnier a écrit Mon pays ?",
-      "reponse": "Gilles Vigneault",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois d'origine marocaine raconte sa famille sur scène ?",
-      "reponse": "Rachid Badouri",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
-      "reponse": "Willie Lamothe",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Où pêche-t-on la célèbre crevette nordique québécoise ?",
-      "reponse": "À Matane",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle baie géante borde le nord du Québec ?",
-      "reponse": "Baie d'Hudson",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël québécois reprend l'air de Jingle Bells ?",
-      "reponse": "Vive le vent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel quotidien montréalais a imprimé sa dernière édition en 2017 pour passer à la tablette ?",
-      "reponse": "La Presse",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?",
-      "reponse": "Le yéyé",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel pain rond troué se mange grillé avec du fromage à la crème ?",
-      "reponse": "Le bagel",
+      "categorie": "Histoire",
+      "question": "Quelle ville a été fondée en 1642 sous le nom de Ville-Marie ?",
+      "reponse": "Montréal",
       "niveau": 2
     }
   ]

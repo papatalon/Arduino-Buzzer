@@ -7,9 +7,25 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Quelle reine britannique a régné pendant presque tout le 19e siècle ?",
-      "reponse": "Victoria",
+      "categorie": "Musique",
+      "question": "Quel instrument à dents pincées accompagne le folklore ?",
+      "reponse": "La guimbarde",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas se prend le soir au Québec ?",
+      "reponse": "Le souper",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment nomme-t-on trois abats de suite au bowling ?",
+      "reponse": "Un dindon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,9 +35,54 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel mot qualifie une vidéo qui explose en popularité en quelques heures ?",
-      "reponse": "Virale",
-      "niveau": 1,
+      "question": "Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?",
+      "reponse": "Luca",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle étendue d'eau salée immense sépare les continents ?",
+      "reponse": "L'océan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le symbole chimique du fer ?",
+      "reponse": "Fe",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de touches sur un piano standard ?",
+      "reponse": "88",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année le Titanic a-t-il coulé ?",
+      "reponse": "1912",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film de Noël un train magique emmène-t-il des enfants au pôle Nord ?",
+      "reponse": "Le Pôle Express",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel manga suit Luffy et son équipage de pirates ?",
+      "reponse": "One Piece",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes"
@@ -39,125 +100,31 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel minuscule oiseau peut voler en arrière ?",
-      "reponse": "Le colibri",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la douce chanson qu'on chante pour endormir un bébé ?",
-      "reponse": "Une berceuse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du croissant ?",
-      "reponse": "La France",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série coréenne met en scène des jeux mortels ?",
-      "reponse": "Squid Game",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment dit-on « merci » en espagnol ?",
-      "reponse": "Gracias",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre traverse le ciel en traînant une longue queue lumineuse ?",
-      "reponse": "Une comète",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel spectacle musical français raconte Quasimodo ?",
-      "reponse": "Notre-Dame de Paris",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment dit-on « bonjour » en anglais ?",
-      "reponse": "Hello",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle viande fumée est associée à Montréal ?",
-      "reponse": "Le smoked meat",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel dragon noir accompagne Harold ?",
-      "reponse": "Krokmou",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
-      "question": "Quel tournoi du grand chelem se joue à New York ?",
-      "reponse": "Le US Open",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
+      "reponse": "Le patinage artistique",
+      "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle infusion sud-africaine est naturellement rouge ?",
-      "reponse": "Le rooibos",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sciences et nature",
+      "question": "Quel instrument sert à observer les étoiles ?",
+      "reponse": "Le télescope",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle friperie à grande surface porte un nom qui parle de valeurs ?",
-      "reponse": "Le Village des Valeurs",
+      "question": "Quelle petite fille russe vit des aventures avec un ours dans un dessin animé ?",
+      "reponse": "Macha",
       "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants"
       ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Le pluriel de genou prend un S ou un X ?",
-      "reponse": "Un X",
+      "question": "Féminin de roi ?",
+      "reponse": "La reine",
       "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle cabane à sucre célèbre appartient à un chef renommé ?",
-      "reponse": "Au Pied de Cochon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Culture générale",
@@ -166,15 +133,55 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelles croustilles de maïs triangulaires se trempent dans la salsa ?",
-      "reponse": "Les Doritos",
+      "categorie": "Histoire",
+      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
+      "reponse": "Un missionnaire",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte à base de tomates nappe les pizzas ?",
+      "reponse": "La sauce tomate",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel dictionnaire français célèbre est illustré ?",
+      "reponse": "Le Petit Larousse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel repas de fête se prend après la messe de minuit ?",
+      "reponse": "Le réveillon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le quartier bâti pour loger les athlètes pendant les Jeux ?",
+      "reponse": "Le village olympique",
+      "niveau": 3
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Qui a créé Mickey Mouse ?",
+      "reponse": "Walt Disney",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boulette de poulpe japonaise est une collation ?",
-      "reponse": "Le takoyaki",
+      "question": "Quelle sauce verte argentine accompagne les grillades ?",
+      "reponse": "Le chimichurri",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -182,9 +189,9 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Égypte ?",
-      "reponse": "Le Caire",
+      "categorie": "Mots et langue",
+      "question": "Petit de l'aigle ?",
+      "reponse": "L'aiglon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -193,31 +200,10 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quels frères ont inventé le cinématographe ?",
-      "reponse": "Les frères Lumière",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel officiel siffle les punitions ?",
-      "reponse": "L'arbitre",
+      "categorie": "Québec",
+      "question": "Qui a fondé la ville de Québec en 1608 ?",
+      "reponse": "Champlain",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve l'Acropole ?",
-      "reponse": "La Grèce",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

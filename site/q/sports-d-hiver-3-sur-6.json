@@ -7,10 +7,10 @@
   "emoji": "⛷️",
   "questions": [
     {
-      "categorie": "Géographie",
-      "question": "Quelle saison fait fleurir les arbres et fondre la neige ?",
-      "reponse": "Le printemps",
-      "niveau": 1
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le moment où l'arbitre laisse tomber la rondelle entre deux joueurs ?",
+      "reponse": "La mise au jeu",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -37,9 +37,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport combine le ski de fond et le tir à la carabine ?",
-      "reponse": "Le biathlon",
-      "niveau": 3
+      "question": "Quel sport fait descendre un skieur derrière un bateau ?",
+      "reponse": "Le ski nautique",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -65,15 +65,15 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?",
-      "reponse": "La tire sur la neige",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
       "question": "Quelle équipe de hockey joue à Toronto ?",
       "reponse": "Les Maple Leafs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?",
+      "reponse": "La tire sur la neige",
       "niveau": 1
     },
     {
@@ -99,12 +99,6 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle créature poilue laisserait des empreintes géantes dans la neige des montagnes ?",
-      "reponse": "Le yéti",
-      "niveau": 2
-    },
-    {
       "categorie": "Québec",
       "question": "Quelle station de ski des Laurentides attire les skieurs de partout ?",
       "reponse": "Le mont Tremblant",
@@ -114,6 +108,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature poilue laisserait des empreintes géantes dans la neige des montagnes ?",
+      "reponse": "Le yéti",
+      "niveau": 2
     },
     {
       "categorie": "Québec",
@@ -134,25 +134,21 @@
       "niveau": 1
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Quels petits grains de glace tombent parfois pendant un orage d'été ?",
+      "reponse": "La grêle",
+      "niveau": 2
+    },
+    {
       "categorie": "Sports",
-      "question": "Sur quelle surface glacée se joue le hockey ?",
-      "reponse": "La patinoire",
+      "question": "Quel équipement large attaché aux pieds empêche de caler dans la neige épaisse ?",
+      "reponse": "Les raquettes",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel patineur de vitesse québécois a plusieurs ors olympiques ?",
-      "reponse": "Charles Hamelin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment s'appelle le joueur qui garde le filet au hockey ?",
-      "reponse": "Le gardien de but",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert glacé mange-t-on en cornet l'été ?",
+      "reponse": "La crème glacée",
       "niveau": 1
     },
     {

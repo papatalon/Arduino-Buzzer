@@ -8,9 +8,32 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quel piano à pouces africain vibre sous les doigts ?",
-      "reponse": "La kalimba",
-      "niveau": 3,
+      "question": "Comment appelle-t-on les mots d'une chanson ?",
+      "reponse": "Les paroles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la petite pièce de plastique qui gratte les cordes ?",
+      "reponse": "Le médiator",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Dans la comptine, de quelle couleur est la souris qui courait dans l'herbe ?",
+      "reponse": "Verte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe suédois a chanté Dancing Queen ?",
+      "reponse": "ABBA",
+      "niveau": 1,
       "ages": [
         "adultes",
         "aines"
@@ -18,158 +41,112 @@
     },
     {
       "categorie": "Musique",
-      "question": "Combien de demi-tons dans une octave ?",
-      "reponse": "Douze",
-      "niveau": 3,
+      "question": "Quel long instrument suisse s'étire au sol ?",
+      "reponse": "Le cor des Alpes",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument à cordes et à long manche donne son son à la musique country ?",
-      "reponse": "Le banjo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comptine ajoute un éléphant de plus sur une toile d'araignée ?",
-      "reponse": "Un éléphant qui se balançait",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle petite boule de métal creuse tinte quand on la secoue, au cou des rennes ?",
-      "reponse": "Un grelot",
+      "question": "Sur combien de lignes écrit-on la musique ?",
+      "reponse": "Cinq",
       "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe a chanté Hey Jude et Let It Be ?",
-      "reponse": "Les Beatles",
+      "question": "Quelle note vient juste après le mi ?",
+      "reponse": "Le fa",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle pédale déforme le son de la guitare pour le rendre saturé ?",
-      "reponse": "La distorsion",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la série de spectacles qu'un artiste donne de ville en ville ?",
-      "reponse": "Une tournée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel festival de musique se tient chaque été au parc Jean-Drapeau à Montréal ?",
-      "reponse": "Osheaga",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Sur quelle clé lit-on les notes graves ?",
-      "reponse": "Clé de fa",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe canadien a chanté American Woman ?",
-      "reponse": "The Guess Who",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel rappeur américain a reçu un prix Pulitzer pour un album ?",
-      "reponse": "Kendrick Lamar",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle ville américaine est la capitale du country ?",
-      "reponse": "Nashville",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style de musique de festival se construit sur des montées et des chutes synthétiques ?",
-      "reponse": "L'électro",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le spectacle où un artiste chante devant une foule ?",
-      "reponse": "Un concert",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à quatre grosses cordes donne les notes graves d'un groupe rock ?",
-      "reponse": "La basse électrique",
+      "question": "Quelle comptine parle d'un homme à la maison de carton dont l'escalier se casse ?",
+      "reponse": "Pirouette cacahuète",
       "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "Quel objet rond et noir tourne sur une table tournante ?",
-      "reponse": "Un disque",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel ensemble de cloches sonne dans le clocher d'une église ?",
-      "reponse": "Le carillon",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse américaine a percé à 17 ans avec drivers license ?",
-      "reponse": "Olivia Rodrigo",
+      "question": "Quel groupe folklorique québécois a une bottine dans son nom ?",
+      "reponse": "La Bottine Souriante",
       "niveau": 2,
       "ages": [
-        "enfants",
-        "ados"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on le bouton qui rend la musique plus forte ?",
-      "reponse": "Le volume",
+      "question": "Quel petit instrument à vent en plastique bourdonne quand on chante dedans ?",
+      "reponse": "Le kazoo",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de cordes sur un violon ?",
+      "reponse": "Quatre",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Gloria Gaynor est devenue l'hymne des cœurs brisés ?",
+      "reponse": "I Will Survive",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine demande Dormez-vous ?",
+      "reponse": "Frère Jacques",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument à vent en bois a une anche simple et un pavillon évasé ?",
-      "reponse": "La clarinette",
+      "question": "Quel chanteur canadien a chanté Summer of 69 ?",
+      "reponse": "Bryan Adams",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument a inventé Adolphe Sax ?",
+      "reponse": "Le saxophone",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style de musique passe le plus souvent à la radio et fait danser tout le monde ?",
+      "reponse": "La pop",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe américain a chanté Mr. Brightside ?",
+      "reponse": "The Killers",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle petite flûte traversière est très aiguë ?",
+      "reponse": "Le piccolo",
       "niveau": 2,
       "ages": [
         "ados",
@@ -179,32 +156,58 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanson de Toto porte le nom d'un continent ?",
-      "reponse": "Africa",
+      "question": "Quelle chanteuse de jazz était surnommée Lady Day ?",
+      "reponse": "Billie Holiday",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel artiste a mêlé country et rap dans Old Town Road ?",
-      "reponse": "Lil Nas X",
-      "niveau": 3,
+      "question": "Quel instrument à cordes pincées accompagne le flamenco ?",
+      "reponse": "La guitare",
+      "niveau": 1,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse a chanté Bad Romance ?",
-      "reponse": "Lady Gaga",
+      "question": "Quelle chanson des Beatles parle d'un sous-marin ?",
+      "reponse": "Yellow Submarine",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de musiciens jouent dans un duo ?",
+      "reponse": "Deux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel grand festival de musique se tient sur les plaines d'Abraham en juillet ?",
+      "reponse": "Le Festival d'été de Québec",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel compositeur français a écrit le Boléro ?",
+      "reponse": "Ravel",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     }
   ]

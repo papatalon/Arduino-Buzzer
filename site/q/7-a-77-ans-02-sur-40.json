@@ -7,90 +7,64 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Culture générale",
-      "question": "Combien de jokers dans un paquet de cartes ?",
-      "reponse": "Deux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Sur quel objet de ménage les sorcières se déplacent-elles dans le ciel ?",
-      "reponse": "Un balai",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quels biscuits noirs à la crème blanche trempe-t-on dans le lait ?",
-      "reponse": "Les Oreo",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention permet de parler à quelqu'un qui est loin ?",
-      "reponse": "Le téléphone",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle organisation regroupe les pays francophones ?",
-      "reponse": "La Francophonie",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Combien de lettres muettes dans le mot loup ?",
-      "reponse": "Une",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style musical parle-chante sur des rythmes ?",
-      "reponse": "Le rap",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
-      "question": "Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?",
-      "reponse": "Le football",
+      "question": "Quelle couleur de carton avertit un joueur au soccer ?",
+      "reponse": "Jaune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir un chat dans la gorge ?",
+      "reponse": "Être enroué",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que met-on sur sa tête pour aller jouer dehors l'hiver au Québec ?",
+      "reponse": "Une tuque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a peint la Joconde ?",
+      "reponse": "Léonard de Vinci",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle échelle mesure les séismes ?",
-      "reponse": "Richter",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel gaz expirons-nous ?",
+      "reponse": "Le gaz carbonique",
+      "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle machine bruyante lance la neige de côté dans l'entrée ?",
-      "reponse": "Une souffleuse",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle créature verte vit dans un marais ?",
+      "reponse": "Shrek",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat botté a de grands yeux attendrissants ?",
+      "reponse": "Chat Potté",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelles petites portions espagnoles se partagent ?",
-      "reponse": "Les tapas",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel plat québécois cuit des haricots blancs au four ?",
+      "reponse": "Fèves au lard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel cousin rayé du cheval vit en Afrique ?",
+      "reponse": "Le zèbre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel astre change de forme dans le ciel au fil des nuits ?",
+      "reponse": "La Lune",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -104,33 +78,9 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jouet cosmonaute de Toy Story crie « Vers l'infini et au-delà » ?",
-      "reponse": "Buzz Lightyear",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri de la vache ?",
-      "reponse": "Le meuglement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fête nationale du Québec se célèbre le 24 juin ?",
-      "reponse": "La Saint-Jean",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelles cellules du sang combattent les infections ?",
-      "reponse": "Globules blancs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel clou parfume le jambon de Noël ?",
-      "reponse": "Clou de girofle",
+      "categorie": "Sports",
+      "question": "Combien vaut un placement au football ?",
+      "reponse": "Trois points",
       "niveau": 1,
       "ages": [
         "ados",
@@ -139,15 +89,21 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal à huit pattes tisse une toile ?",
-      "reponse": "L'araignée",
+      "categorie": "Québec",
+      "question": "Quel ancien vélodrome de Montréal abrite des animaux ?",
+      "reponse": "Le Biodôme",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel directeur de Poudlard a une longue barbe blanche ?",
-      "reponse": "Dumbledore",
+      "categorie": "Culture générale",
+      "question": "Quel véhicule vole grâce à une grande hélice sur le toit ?",
+      "reponse": "L'hélicoptère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'essai d'un groupe avant un spectacle ?",
+      "reponse": "La répétition",
       "niveau": 1
     },
     {
@@ -163,32 +119,65 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel véhicule vole grâce à une grande hélice sur le toit ?",
-      "reponse": "L'hélicoptère",
+      "question": "Combien de jokers dans un paquet de cartes ?",
+      "reponse": "Deux",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel milliardaire Marvel a un réacteur dans la poitrine ?",
-      "reponse": "Tony Stark",
-      "niveau": 1
+      "categorie": "Bouffe et cuisine",
+      "question": "De quoi est fait le tofu ?",
+      "reponse": "Du soja",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport de table se joue avec des queues et des billes ?",
-      "reponse": "Le billard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Qui a peint la Joconde ?",
-      "reponse": "Léonard de Vinci",
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la maison de bois du chien dans la cour ?",
+      "reponse": "Une niche",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel chanteur jamaïcain a popularisé le reggae ?",
-      "reponse": "Bob Marley",
+      "question": "Comment appelle-t-on la pulsation régulière sur laquelle on tape du pied ?",
+      "reponse": "Le rythme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le pluriel de « un animal » ?",
+      "reponse": "Des animaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation organise un grand concours de chant entre animaux ?",
+      "reponse": "Tous en scène",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de bonbons colorés fond dans la bouche, pas dans la main ?",
+      "reponse": "Les M&M's",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention permet de parler à quelqu'un qui est loin ?",
+      "reponse": "Le téléphone",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine du pad thaï ?",
+      "reponse": "La Thaïlande",
       "niveau": 1,
       "ages": [
         "ados",

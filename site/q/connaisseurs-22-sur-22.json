@@ -7,15 +7,86 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quelle note dure deux fois moins longtemps qu'une blanche ?",
-      "reponse": "La noire",
+      "categorie": "Histoire",
+      "question": "Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?",
+      "reponse": "Le sextant",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle plateforme les pirates faisaient-ils parcourir aux prisonniers au-dessus de l'eau ?",
+      "reponse": "La planche",
       "niveau": 3
     },
     {
+      "categorie": "Histoire",
+      "question": "Que porte un astronaute pour survivre dans l'espace ?",
+      "reponse": "Un scaphandre",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe italien a gagné l'Eurovision en 2021 en jouant du rock ?",
+      "reponse": "Måneskin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel biscuit québécois à la mélasse se trempe dans le lait ?",
+      "reponse": "La galette à la mélasse",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel genre musical africain aux rythmes chaloupés s'est imposé mondialement ?",
+      "reponse": "L'afrobeat",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on celui qui mène les danses traditionnelles à l'archet ?",
+      "reponse": "Un violoneux",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
-      "reponse": "Le Village Vacances Valcartier",
+      "question": "Quel appareil fallait-il installer sur le toit pour capter les chaînes de télé ?",
+      "reponse": "L'antenne",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
+      "reponse": "Dans une galaxie près de chez vous",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
+      "reponse": "Le REM",
       "niveau": 3,
       "ages": [
         "ados",
@@ -24,13 +95,37 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel inventeur italien est considéré comme le père de la radio ?",
-      "reponse": "Marconi",
+      "categorie": "Géographie",
+      "question": "Quel pays d'Asie compte plus de 17000 îles ?",
+      "reponse": "L'Indonésie",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel cheval célèbre a gagné la Triple Couronne en 1973 ?",
+      "reponse": "Secretariat",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel poisson à moustaches se pêche au fond des rivières du Québec ?",
+      "reponse": "La barbotte",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle carte de plastique rigide permettait de louer des films au club vidéo ?",
+      "reponse": "La carte de membre",
+      "niveau": 3,
+      "ages": [
+        "adultes"
       ]
     }
   ]

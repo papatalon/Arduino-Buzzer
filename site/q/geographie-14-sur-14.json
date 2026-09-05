@@ -8,9 +8,15 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays voisin de la France et de l'Italie parle-t-on quatre langues officielles ?",
-      "reponse": "La Suisse",
-      "niveau": 2
+      "question": "Quel grand fleuve traverse l'Amazonie ?",
+      "reponse": "L'Amazone",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays insulaire du nord de l'Atlantique compte des volcans et des geysers ?",
+      "reponse": "L'Islande",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
@@ -20,58 +26,38 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel lac est le plus profond du monde ?",
-      "reponse": "Le Baïkal",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?",
-      "reponse": "La ville de Québec",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelles chutes africaines portent le nom d'une reine ?",
-      "reponse": "Victoria",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a une croix blanche sur fond rouge ?",
-      "reponse": "La Suisse",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la grande route à plusieurs voies entre deux villes ?",
-      "reponse": "Une autoroute",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays nordique le père Noël a-t-il son village officiel, à Rovaniemi ?",
-      "reponse": "La Finlande",
+      "question": "Dans quel pays d'Amérique du Sud danse-t-on le tango ?",
+      "reponse": "L'Argentine",
       "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays a Kaboul pour capitale ?",
-      "reponse": "L'Afghanistan",
+      "question": "Quelle tour de fer domine Paris ?",
+      "reponse": "La tour Eiffel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le mur de béton qui retient l'eau d'une rivière ?",
+      "reponse": "Un barrage",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel état américain est un archipel volcanique ?",
+      "reponse": "Hawaï",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle baie géante borde le nord du Québec ?",
+      "reponse": "Baie d'Hudson",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Hongrie ?",
+      "reponse": "Budapest",
       "niveau": 2,
       "ages": [
         "ados",
@@ -81,24 +67,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Italie ?",
-      "reponse": "Rome",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel désert chilien est le plus aride du monde ?",
-      "reponse": "L'Atacama",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on un très grand bâtiment de plusieurs dizaines d'étages ?",
-      "reponse": "Un gratte-ciel",
+      "question": "Combien de temps la Terre met-elle pour faire le tour du Soleil ?",
+      "reponse": "Un an",
       "niveau": 1
     },
     {
@@ -113,30 +83,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel océan traverse-t-on en avion pour aller du Canada à la France ?",
-      "reponse": "L'Atlantique",
+      "question": "Quel fleuve traverse l'Égypte ?",
+      "reponse": "Le Nil",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel lac écossais abriterait un monstre ?",
-      "reponse": "Le Loch Ness",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays entoure complètement le Lesotho ?",
-      "reponse": "Afrique du Sud",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus grand des Grands Lacs ?",
-      "reponse": "Le lac Supérieur",
+      "question": "Monnaie utilisée en Suisse ?",
+      "reponse": "Le franc suisse",
       "niveau": 2,
       "ages": [
         "ados",
@@ -146,25 +100,31 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel état américain se trouvent les Everglades et la ville de Miami ?",
-      "reponse": "La Floride",
+      "question": "Quel désert chilien est le plus aride du monde ?",
+      "reponse": "L'Atacama",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "De quelles couleurs est le drapeau de la France ?",
+      "reponse": "Bleu blanc rouge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le mouvement de la mer qui monte et descend chaque jour ?",
+      "reponse": "La marée",
       "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Quel long fleuve traverse la Chine ?",
-      "reponse": "Le Yangtsé",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?",
-      "reponse": "La baie James",
-      "niveau": 3,
+      "question": "Langue parlée au Brésil ?",
+      "reponse": "Le portugais",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -173,20 +133,31 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le désert du Sahara ?",
-      "reponse": "L'Afrique",
+      "question": "Capitale de la Grèce ?",
+      "reponse": "Athènes",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel animal est l'emblème des États-Unis ?",
-      "reponse": "L'aigle",
-      "niveau": 2
+      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
+      "reponse": "Le Japon",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel récif corallien longe l'Australie ?",
-      "reponse": "Grande Barrière",
+      "question": "Quelle grande île de l'Atlantique, au large de Terre-Neuve, appartient à la France ?",
+      "reponse": "Saint-Pierre-et-Miquelon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Autriche ?",
+      "reponse": "Vienne",
       "niveau": 2,
       "ages": [
         "ados",
@@ -196,14 +167,21 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel est le plus grand lac d'Afrique ?",
-      "reponse": "Le lac Victoria",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on la construction qui permet de traverser une rivière ?",
+      "reponse": "Un pont",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve la ville de Venise et ses canaux ?",
+      "reponse": "L'Italie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville du Québec ?",
+      "reponse": "Montréal",
+      "niveau": 1
     }
   ]
 }

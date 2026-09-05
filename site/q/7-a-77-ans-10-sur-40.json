@@ -8,38 +8,108 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Dans quoi la chenille se transforme-t-elle ?",
-      "reponse": "La chrysalide",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume principal compose le guacamole ?",
-      "reponse": "L'avocat",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle fillette en cape rouge apporte une galette à sa grand-mère ?",
-      "reponse": "Le Petit Chaperon rouge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage vert déteste Noël ?",
-      "reponse": "Le Grincheux",
+      "question": "Comment s'appelle la roche fondue sous terre ?",
+      "reponse": "Le magma",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que veut dire etc. ?",
-      "reponse": "Et le reste",
+      "question": "Contraire de rapide ?",
+      "reponse": "Lent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "De quelles couleurs est le drapeau du Canada ?",
+      "reponse": "Rouge et blanc",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le féminin de prince ?",
+      "reponse": "Princesse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment s'appelle le parlement du Québec ?",
+      "reponse": "Assemblée nationale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel héros grec avait un talon vulnérable ?",
+      "reponse": "Achille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle la petite sœur d'Elsa ?",
+      "reponse": "Anna",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Synonyme de docteur ?",
+      "reponse": "Médecin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Noël parle d'un bonhomme de neige ?",
+      "reponse": "Frosty",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Que pleut-il sur la patinoire quand un joueur compte trois buts dans le même match ?",
+      "reponse": "Des chapeaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle console de Sony est la grande rivale de la Xbox ?",
+      "reponse": "La PlayStation",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume violet et allongé gratine la moussaka ?",
+      "reponse": "L'aubergine",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit rond porte le nom de sa couleur ?",
+      "reponse": "L'orange",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
-      "reponse": "Rio de Janeiro",
+      "question": "Quelle saison amène la neige au Québec ?",
+      "reponse": "L'hiver",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelles trois lettres forment le signal de détresse en morse ?",
+      "reponse": "SOS",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle est la nage la plus rapide ?",
+      "reponse": "Le crawl",
       "niveau": 1
     },
     {
@@ -54,116 +124,60 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Comment appelle-t-on une image drôle qui circule et se décline sur internet ?",
-      "reponse": "Un mème",
+      "categorie": "Sciences et nature",
+      "question": "Quel arbre décore-t-on avec des boules et des lumières en décembre ?",
+      "reponse": "Le sapin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment nomme-t-on une roche tombée de l'espace ?",
+      "reponse": "Une météorite",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le spectacle où un artiste chante devant une foule ?",
+      "reponse": "Un concert",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel joueur des Canadiens fut surnommé le Démon blond ?",
+      "reponse": "Guy Lafleur",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
+      "reponse": "Rio de Janeiro",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel conte Disney une rose est-elle sous cloche ?",
+      "reponse": "La Belle et la Bête",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit violet à noyau, une fois séché, aide à la digestion ?",
+      "reponse": "La prune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans Minecraft, quelle pierre bleue sert à fabriquer les meilleurs outils ?",
+      "reponse": "Le diamant",
       "niveau": 1,
       "ages": [
         "enfants",
         "ados"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel héros grec avait un talon vulnérable ?",
-      "reponse": "Achille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelles trois lettres forment le signal de détresse en morse ?",
-      "reponse": "SOS",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre provoque les marées ?",
-      "reponse": "La Lune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Sur quel engin descend-on une côte enneigée en position assise ?",
-      "reponse": "Un traîneau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de poumons possède l'humain ?",
-      "reponse": "Deux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui joue du violon ?",
-      "reponse": "Un violoniste",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment brun se casse en carrés et fond dans la main ?",
-      "reponse": "Le chocolat",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie raconter des salades ?",
-      "reponse": "Mentir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la Grande Muraille ?",
-      "reponse": "La Chine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "De quelles couleurs est le drapeau du Canada ?",
-      "reponse": "Rouge et blanc",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le joueur qui porte le C sur son chandail ?",
-      "reponse": "Le capitaine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle langue parle-t-on au Québec ?",
-      "reponse": "Le français",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile tranchant coupe la viande ?",
-      "reponse": "Le couteau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Que met-on sur les oreilles pour écouter de la musique sans déranger ?",
-      "reponse": "Des écouteurs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie être blanc comme un drap ?",
-      "reponse": "Être très pâle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le premier jour de classe après les vacances d'été ?",
-      "reponse": "La rentrée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roi des mers parle aux poissons ?",
-      "reponse": "Aquaman",
-      "niveau": 1
     }
   ]
 }

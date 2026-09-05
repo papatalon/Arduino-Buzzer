@@ -8,8 +8,32 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Écosse ?",
-      "reponse": "Édimbourg",
+      "question": "Comment appelle-t-on la grande route à plusieurs voies entre deux villes ?",
+      "reponse": "Une autoroute",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le chemin de terre battue dans le bois ?",
+      "reponse": "Un sentier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus petite province canadienne ?",
+      "reponse": "Prince-Édouard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes du Québec attire les skieurs au nord de Montréal ?",
+      "reponse": "Les Laurentides",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel territoire canadien a Whitehorse pour capitale ?",
+      "reponse": "Le Yukon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,14 +43,30 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Taj Mahal ?",
-      "reponse": "L'Inde",
-      "niveau": 3
+      "question": "Quel détroit sépare l'Europe de l'Afrique ?",
+      "reponse": "Gibraltar",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel fleuve traverse Rome ?",
-      "reponse": "Le Tibre",
+      "question": "Dans quel pays se trouve le Machu Picchu ?",
+      "reponse": "Le Pérou",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays d'Asie compte plus de 17000 îles ?",
+      "reponse": "L'Indonésie",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -35,9 +75,76 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays a pour emblème le coq ?",
-      "reponse": "La France",
+      "question": "Comment appelle-t-on le livre rempli de cartes de tous les pays ?",
+      "reponse": "Un atlas",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province des Prairies a Regina pour capitale ?",
+      "reponse": "La Saskatchewan",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la haute paroi de roche au bord de la mer ?",
+      "reponse": "Une falaise",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a la forme d'une longue bande le long de l'océan Pacifique ?",
+      "reponse": "Le Chili",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays entoure complètement le Lesotho ?",
+      "reponse": "Afrique du Sud",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a une croix blanche sur fond rouge ?",
+      "reponse": "La Suisse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien d'états composent les États-Unis ?",
+      "reponse": "50",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Russie ?",
+      "reponse": "Moscou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve russe est le plus long d'Europe ?",
+      "reponse": "La Volga",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -47,9 +154,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Combien d'états composent les États-Unis ?",
-      "reponse": "50",
+      "question": "Où se trouvent les pyramides de Gizeh ?",
+      "reponse": "En Égypte",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle péninsule abrite la Mecque ?",
+      "reponse": "L'Arabie",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -64,124 +182,21 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le terrain planté de pommiers ?",
-      "reponse": "Un verger",
+      "question": "Quel est le plus haut sommet du monde ?",
+      "reponse": "L'Everest",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel énorme bloc de calcaire troué se dresse dans la mer en Gaspésie ?",
+      "reponse": "Le rocher Percé",
       "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle direction le soleil se couche-t-il ?",
-      "reponse": "À l'ouest",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la petite colline de sable poussée par le vent au bord de la mer ?",
-      "reponse": "Une dune",
+      "question": "Comment appelle-t-on les grandes îles du golfe où l'on va en traversier l'été ?",
+      "reponse": "Les Îles-de-la-Madeleine",
       "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a un drapeau bleu, blanc et rouge à trois bandes verticales ?",
-      "reponse": "La France",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Russie ?",
-      "reponse": "Moscou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes du Québec attire les skieurs au nord de Montréal ?",
-      "reponse": "Les Laurentides",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
-      "reponse": "La Norvège",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel désert froid couvre une partie de la Mongolie ?",
-      "reponse": "Le Gobi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quelle côte d'Australie se trouvent Sydney et Melbourne ?",
-      "reponse": "La côte est",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne borde le Pacifique ?",
-      "reponse": "Colombie-Britannique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Mexique ?",
-      "reponse": "Mexico",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la ville de Venise et ses canaux ?",
-      "reponse": "L'Italie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on une immense étendue de sable sans eau ?",
-      "reponse": "Un désert",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Norvège ?",
-      "reponse": "Oslo",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a la forme d'une longue bande le long de l'océan Pacifique ?",
-      "reponse": "Le Chili",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Nouvelle-Zélande ?",
-      "reponse": "Wellington",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve l'Australie ?",
-      "reponse": "L'Océanie",
-      "niveau": 2
     }
   ]
 }

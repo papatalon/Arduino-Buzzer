@@ -7,10 +7,14 @@
   "emoji": "⛷️",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert glacé mange-t-on en cornet l'été ?",
-      "reponse": "La crème glacée",
-      "niveau": 1
+      "categorie": "Sports",
+      "question": "Quel patineur de vitesse québécois a plusieurs ors olympiques ?",
+      "reponse": "Charles Hamelin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Culture pop",
@@ -108,13 +112,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle course de traîneaux à chiens traverse l'Alaska ?",
-      "reponse": "L'Iditarod",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel équipement protège la tête à vélo et au hockey ?",
+      "reponse": "Le casque",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
@@ -128,8 +128,24 @@
     },
     {
       "categorie": "Sports",
-      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
-      "reponse": "Orange",
+      "question": "Quelle course de traîneaux à chiens traverse l'Alaska ?",
+      "reponse": "L'Iditarod",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel bâtiment abrite une patinoire intérieure dans la plupart des villes du Québec ?",
+      "reponse": "Un aréna",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle confiserie d'érable se roule sur la neige ?",
+      "reponse": "La tire",
       "niveau": 1
     },
     {
@@ -141,12 +157,6 @@
         "ados",
         "adultes"
       ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle confiserie d'érable se roule sur la neige ?",
-      "reponse": "La tire",
-      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -162,14 +172,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel bâtiment abrite une patinoire intérieure dans la plupart des villes du Québec ?",
-      "reponse": "Un aréna",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Que bâtit-on avec trois boules de neige, une carotte et des boutons ?",
-      "reponse": "Un bonhomme de neige",
+      "question": "Quelle opération municipale suit chaque bordée de neige dans les rues ?",
+      "reponse": "Le déneigement",
       "niveau": 1
     },
     {
@@ -179,9 +183,9 @@
       "niveau": 2
     },
     {
-      "categorie": "Sports",
-      "question": "Quel équipement protège la tête à vélo et au hockey ?",
-      "reponse": "Le casque",
+      "categorie": "Culture pop",
+      "question": "Que bâtit-on avec trois boules de neige, une carotte et des boutons ?",
+      "reponse": "Un bonhomme de neige",
       "niveau": 1
     }
   ]

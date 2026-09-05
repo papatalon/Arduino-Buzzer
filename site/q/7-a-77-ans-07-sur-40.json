@@ -7,6 +7,76 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Culture générale",
+      "question": "Quel jeu de papier fait aligner trois X ou trois O ?",
+      "reponse": "Le tic-tac-toe",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à cordes se joue debout, coincé sous le menton ?",
+      "reponse": "Le violon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de manches dans un match de baseball ?",
+      "reponse": "Neuf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne une fête ?",
+      "reponse": "Un party",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain rond avec un trou se mange à Montréal ?",
+      "reponse": "Le bagel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle souris aux grandes oreilles rondes est la mascotte de Disney ?",
+      "reponse": "Mickey Mouse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du serpent ?",
+      "reponse": "Le sifflement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel garçon ne veut jamais grandir ?",
+      "reponse": "Peter Pan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles pastilles de chocolat colorées se vendent en boîte cylindrique ?",
+      "reponse": "Les Smarties",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le symbole chimique de l'hydrogène ?",
+      "reponse": "H",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Géographie",
       "question": "Dans quel état américain se trouve Las Vegas ?",
       "reponse": "Le Nevada",
@@ -24,142 +94,39 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel jeu de papier fait aligner trois X ou trois O ?",
-      "reponse": "Le tic-tac-toe",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle héroïne à pois rouges combat le crime à Paris avec Chat Noir ?",
-      "reponse": "Ladybug",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Pascal, l'ami de Raiponce ?",
-      "reponse": "Un caméléon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Féminin de tigre ?",
-      "reponse": "Tigresse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle herbe verte garnit la pizza margherita ?",
-      "reponse": "Le basilic",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de millimètres dans un centimètre ?",
-      "reponse": "Dix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de combat n'utilise que les poings ?",
-      "reponse": "La boxe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Abu, l'ami d'Aladin ?",
-      "reponse": "Un singe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment s'appelle un groupe de quatre musiciens ?",
-      "reponse": "Un quatuor",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie il pleut des cordes ?",
-      "reponse": "Il pleut très fort",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte rouge à points noirs porte bonheur ?",
-      "reponse": "La coccinelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que veut dire SVP ?",
-      "reponse": "S'il vous plaît",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle fleur suit le Soleil ?",
-      "reponse": "Le tournesol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel méchant Marvel claque des doigts avec un gant ?",
-      "reponse": "Thanos",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
-      "reponse": "Le surf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument a des touches noires et blanches ?",
-      "reponse": "Le piano",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
-      "question": "Quelle société d'État produit l'électricité au Québec ?",
-      "reponse": "Hydro-Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle poupée blonde de Mattel a un ami nommé Ken ?",
-      "reponse": "Barbie",
+      "question": "Quelle est la capitale nationale du Québec ?",
+      "reponse": "Québec",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel pain plat indien cuit dans un four tandoor ?",
-      "reponse": "Le naan",
+      "question": "Quel légume vert ressemble à un petit arbre ?",
+      "reponse": "Le brocoli",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment nomme-t-on un œuf cuit 3 minutes en coquille ?",
+      "reponse": "À la coque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel pirate est joué par Johnny Depp ?",
+      "reponse": "Jack Sparrow",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel jour de la semaine vient après vendredi ?",
+      "reponse": "Samedi",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -168,25 +135,50 @@
       "niveau": 1
     },
     {
+      "categorie": "Sports",
+      "question": "Quel sport pratique Tiger Woods ?",
+      "reponse": "Le golf",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le musicien assis derrière ses caisses et ses cymbales ?",
+      "reponse": "Un batteur",
+      "niveau": 1
+    },
+    {
       "categorie": "Sciences et nature",
-      "question": "Combien de bosses a un chameau ?",
-      "reponse": "Deux",
+      "question": "Le Soleil est-il une planète ou une étoile ?",
+      "reponse": "Une étoile",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle fête hivernale illumine le Vieux-Port de Montréal ?",
-      "reponse": "Igloofest",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "question": "Quel dimanche de mai célèbre-t-on les mamans ?",
+      "reponse": "La fête des Mères",
+      "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle saucisse chaude se glisse dans un pain allongé ?",
-      "reponse": "Le hot-dog",
+      "categorie": "Culture générale",
+      "question": "Combien de millimètres dans un centimètre ?",
+      "reponse": "Dix",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles explosions de couleurs illuminent le ciel les soirs de fête ?",
+      "reponse": "Un feu d'artifice",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment s'appellent les signes ( et ) ?",
+      "reponse": "Les parenthèses",
       "niveau": 1
     }
   ]

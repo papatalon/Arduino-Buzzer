@@ -8,58 +8,56 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte russe est un petit chausson farci ?",
-      "reponse": "Le pirojki",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile creux sert à manger la soupe ?",
-      "reponse": "La cuillère",
+      "question": "De quoi est fait le fromage ?",
+      "reponse": "Du lait",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelles croustilles de maïs accompagnent la salsa ?",
-      "reponse": "Les nachos",
+      "question": "Quel agrume vert et acide parfume la limonade ?",
+      "reponse": "La lime",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil garde la crème glacée bien dure ?",
+      "reponse": "Le congélateur",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle omelette espagnole contient des pommes de terre ?",
-      "reponse": "La tortilla",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boulette de patates est un plat acadien ?",
-      "reponse": "Poutine râpée",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quelle couleur est la chair de l'avocat ?",
-      "reponse": "Verte",
+      "question": "Quel repas se glisse entre deux tranches de pain pour la boîte à lunch ?",
+      "reponse": "Un sandwich",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel clou parfume le jambon de Noël ?",
-      "reponse": "Clou de girofle",
+      "question": "Quel légume en longues tiges vertes croque avec du beurre d'arachide ?",
+      "reponse": "Le céleri",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage italien râpe les pâtes ?",
+      "reponse": "Le parmesan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel accompagnement de Noël est une purée blanche ?",
+      "reponse": "Patates pilées",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle chaîne canadienne vend du café, des beignes et des Timbits ?",
+      "reponse": "Tim Hortons",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle célèbre soupe française est gratinée ?",
+      "reponse": "Soupe à l'oignon",
       "niveau": 1,
       "ages": [
         "ados",
@@ -69,8 +67,26 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelles petites portions espagnoles se partagent ?",
-      "reponse": "Les tapas",
+      "question": "Quel fruit orange se sculpte à l'Halloween ?",
+      "reponse": "La citrouille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
+      "reponse": "La poutine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel beurre de noix est interdit dans les écoles ?",
+      "reponse": "Beurre d'arachide",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel café italien très court se boit d'un trait ?",
+      "reponse": "L'espresso",
       "niveau": 1,
       "ages": [
         "ados",
@@ -80,9 +96,50 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit rouge garnit le shortcake ?",
-      "reponse": "La fraise",
+      "question": "Sur quoi dépose-t-on son repas à table ?",
+      "reponse": "Une assiette",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles galettes du déjeuner arrose-t-on de sirop d'érable ?",
+      "reponse": "Les crêpes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat québécois superpose patates pilées, blé d'Inde et viande hachée ?",
+      "reponse": "Le pâté chinois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain plus foncé garde l'enveloppe et le germe du grain ?",
+      "reponse": "Le pain de blé entier",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit rouge à noyau couronne un sundae ?",
+      "reponse": "La cerise",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine de la pizza ?",
+      "reponse": "L'Italie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume violet et allongé gratine la moussaka ?",
+      "reponse": "L'aubergine",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -97,96 +154,20 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "De quel pays viennent les tacos ?",
-      "reponse": "Le Mexique",
+      "question": "Quelle fête québécoise célèbre le blé d'Inde ?",
+      "reponse": "L'épluchette",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Sur quoi dépose-t-on son repas à table ?",
-      "reponse": "Une assiette",
+      "question": "Comment appelle-t-on la partie dure et dorée qui entoure la mie du pain ?",
+      "reponse": "La croûte",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume vert et long se mange en cosse ou en conserve ?",
-      "reponse": "Le haricot",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel biscuit au chocolat cache une guimauve ?",
-      "reponse": "Le Whippet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles pâtes en forme de tubes rayés existent ?",
-      "reponse": "Les penne",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quels carrés croustillants se versent dans un bol avec du lait le matin ?",
-      "reponse": "Les céréales",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage italien garnit la pizza ?",
-      "reponse": "La mozzarella",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume vert et allongé croque-t-on en salade et transforme-t-on en cornichon ?",
-      "reponse": "Le concombre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel gâteau roulé au chocolat se sert au réveillon de Noël ?",
-      "reponse": "La bûche de Noël",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat chinois est un pain farci cuit vapeur ?",
-      "reponse": "Le bao",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle vitamine trouve-t-on dans les oranges ?",
-      "reponse": "La vitamine C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel lait fouetté avec crème glacée est un dessert à boire ?",
-      "reponse": "Le lait frappé",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume vert ressemble à un petit arbre ?",
-      "reponse": "Le brocoli",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie colorée a deux coques et une ganache ?",
-      "reponse": "Le macaron",
+      "question": "Pays d'origine du parmesan ?",
+      "reponse": "L'Italie",
       "niveau": 1,
       "ages": [
         "ados",

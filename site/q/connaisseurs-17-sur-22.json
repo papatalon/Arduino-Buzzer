@@ -7,9 +7,27 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Musique",
+      "question": "Quel trompettiste avait les joues gonflées célèbres ?",
+      "reponse": "Dizzy Gillespie",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe canadien a chanté American Woman ?",
+      "reponse": "The Guess Who",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
       "categorie": "Géographie",
-      "question": "Quelle est la plus haute montagne du Canada ?",
-      "reponse": "Le mont Logan",
+      "question": "Quelle chaîne sépare l'Europe de l'Asie ?",
+      "reponse": "L'Oural",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -17,19 +35,44 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Avec quel lait fait-on la feta traditionnelle ?",
-      "reponse": "Lait de brebis",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le musicien qui mène une section d'instruments dans un orchestre ?",
+      "reponse": "Le chef de pupitre",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelles sondes jumelles ont été lancées en 1977 ?",
+      "reponse": "Voyager",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série de HBO suit une famille qui se déchire pour un empire médiatique ?",
+      "reponse": "Succession",
+      "niveau": 3,
+      "ages": [
+        "adultes"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
-      "reponse": "L'autoroute 40",
+      "question": "Quel petit oiseau à calotte noire fréquente les mangeoires du Québec tout l'hiver ?",
+      "reponse": "La mésange",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle échelle mesure la dureté des minéraux ?",
+      "reponse": "Mohs",
       "niveau": 3,
       "ages": [
         "ados",
@@ -38,109 +81,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
-      "reponse": "Le Forum",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Quelle chanteuse acadienne a popularisé Évangéline ?",
-      "reponse": "Annie Blanchard",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel compositeur baroque a écrit les Concertos brandebourgeois ?",
-      "reponse": "Bach",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle fosse océanique est la plus profonde ?",
-      "reponse": "Les Mariannes",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
-      "reponse": "Les Plouffe",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
-      "reponse": "Willie Lamothe",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "De quelle langue vient le mot pyjama ?",
-      "reponse": "Le persan",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la répétition complète faite la veille d'un spectacle ?",
-      "reponse": "La générale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel traité de 1992 a créé l'Union européenne ?",
-      "reponse": "Maastricht",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année l'euro est-il entré en circulation ?",
-      "reponse": "2002",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
-      "reponse": "Bleu Jeans Bleu",
+      "question": "Comment appelle-t-on la personne qui règle le son pendant un spectacle ?",
+      "reponse": "Le sonorisateur",
       "niveau": 3,
       "ages": [
         "ados",
@@ -148,9 +91,20 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète tourne couchée sur le côté ?",
-      "reponse": "Uranus",
+      "categorie": "Histoire",
+      "question": "Quel musicien voyageur chantait des poèmes de château en château ?",
+      "reponse": "Un troubadour",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Sur quelle bande magnétique écoutait-on la musique avant le disque compact ?",
+      "reponse": "Une cassette",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -158,10 +112,24 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les cent ans d'un événement qu'on souligne par une fête ?",
-      "reponse": "Un centenaire",
-      "niveau": 3
+      "categorie": "Culture pop",
+      "question": "Quelle pâte à tartiner orange se vend en pot et se met sur les rôties ?",
+      "reponse": "Le Cheez Whiz",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel pichet souriant défonce les murs en criant « Oh yeah » ?",
+      "reponse": "Le pichet Kool-Aid",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -174,9 +142,15 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
+      "reponse": "Le cardinal",
+      "niveau": 3
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
-      "reponse": "Grand Theft Auto",
+      "question": "Quelles poupées à grosse tête et lèvres pulpeuses ont concurrencé Barbie ?",
+      "reponse": "Les Bratz",
       "niveau": 3,
       "ages": [
         "ados",
@@ -184,49 +158,44 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "À quelle famille d'instruments appartient la flûte ?",
-      "reponse": "Les bois",
+      "categorie": "Histoire",
+      "question": "Pour quelle exposition la tour Eiffel fut-elle construite ?",
+      "reponse": "Expo de 1889",
       "niveau": 3,
       "ages": [
         "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au water-polo ?",
-      "reponse": "Sept",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle autoroute mène de Montréal vers les Laurentides ?",
-      "reponse": "La 15",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magasin se visitait catalogue en main, avant que la marchandise sorte de l'entrepôt ?",
-      "reponse": "Distribution aux consommateurs",
-      "niveau": 3,
-      "ages": [
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Sur quel support les Mésopotamiens gravaient-ils leur écriture avec un roseau ?",
-      "reponse": "Les tablettes d'argile",
+      "question": "Quel empire d'Amérique a été conquis par Cortés ?",
+      "reponse": "Les Aztèques",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
+      "reponse": "La Norvège",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel camion de course rouge et bleu affronte Crusher dans une série pour enfants ?",
+      "reponse": "Blaze",
+      "niveau": 3,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle plongeuse de Laval a gagné l'argent en tremplin synchro à Tokyo ?",
+      "reponse": "Jennifer Abel",
       "niveau": 3,
       "ages": [
         "ados",
@@ -234,24 +203,41 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
-      "reponse": "Le REM",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson brésilienne mélange lime et cachaça ?",
+      "reponse": "La caipirinha",
       "niveau": 3,
       "ages": [
-        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la femelle du sanglier ?",
+      "reponse": "La laie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel petit pays est enclavé entre France et Espagne ?",
+      "reponse": "Andorre",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque de véhicules tout-terrain a une calandre à sept fentes ?",
-      "reponse": "Jeep",
+      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
+      "reponse": "Rue des Pignons",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     }

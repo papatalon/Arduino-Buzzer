@@ -7,9 +7,207 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète tourne couchée sur le côté ?",
+      "reponse": "Uranus",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
+      "reponse": "Expo 67",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel effet corrige et robotise la voix d'un chanteur en studio ?",
-      "reponse": "L'autotune",
+      "question": "Quels petits élastiques colorés se tressent en bracelets sur un métier ?",
+      "reponse": "Les Rainbow Loom",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle station spatiale russe a précédé l'ISS ?",
+      "reponse": "Mir",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de lettres dans l'alphabet grec ?",
+      "reponse": "24",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve le Taj Mahal ?",
+      "reponse": "L'Inde",
+      "niveau": 3
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat libanais est une purée d'aubergines fumées ?",
+      "reponse": "Baba ganouj",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle est la fleur emblème du Québec ?",
+      "reponse": "Iris versicolore",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel meuble de bois abrite les tuyaux et les claviers dans une église ?",
+      "reponse": "Le buffet d'orgue",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission jeunesse de Radio-Canada, animée par Monsieur Surprise, a lancé Fanfreluche et Sol ?",
+      "reponse": "La Boîte à surprise",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel site de mode en ligne inonde le marché de vêtements à très bas prix ?",
+      "reponse": "Shein",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle pianiste et chanteuse québécoise se fait appeler Cœur de pirate ?",
+      "reponse": "Béatrice Martin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que rapportait-on à l'épicerie pour récupérer quelques sous ?",
+      "reponse": "Les bouteilles vides",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel studio japonais a créé Mon voisin Totoro ?",
+      "reponse": "Ghibli",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'air de danse traditionnel joué au violon dans les veillées d'ici ?",
+      "reponse": "Un rigodon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quelle science étudie l'origine et l'histoire des mots ?",
+      "reponse": "L'étymologie",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse acadienne a popularisé Évangéline ?",
+      "reponse": "Annie Blanchard",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil branché à la ligne téléphonique faisait des bruits stridents pour se connecter ?",
+      "reponse": "Le modem",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel casque de métal protégeait la tête du chevalier ?",
+      "reponse": "Un heaume",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a la forme d'une longue bande le long de l'océan Pacifique ?",
+      "reponse": "Le Chili",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
+      "reponse": "La podorythmie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel gros instrument à vent se porte enroulé autour du corps dans les fanfares ?",
+      "reponse": "Le soubassophone",
       "niveau": 3,
       "ages": [
         "ados",
@@ -18,35 +216,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel trophée est remis au champion du Super Bowl ?",
-      "reponse": "Trophée Lombardi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel instrument de navigation mesurait la hauteur des astres sur l'horizon ?",
-      "reponse": "Le sextant",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Que porte un astronaute pour survivre dans l'espace ?",
-      "reponse": "Un scaphandre",
-      "niveau": 3
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle tartelette portugaise est à la crème ?",
-      "reponse": "Pastel de nata",
+      "question": "Quel sport pratique la famille Hart de Calgary ?",
+      "reponse": "La lutte",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -55,187 +226,19 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel roman de Gabrielle Roy se passe à Saint-Henri ?",
-      "reponse": "Bonheur d'occasion",
+      "question": "Quel grand rendez-vous de novembre réunit éditeurs et auteurs au Palais des congrès de Montréal ?",
+      "reponse": "Le Salon du livre",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année le Canada a-t-il adopté son drapeau actuel ?",
-      "reponse": "1965",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la banque coopérative très répandue au Québec ?",
-      "reponse": "La caisse populaire",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
-      "reponse": "Klô Pelgag",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse de jazz était surnommée Lady Day ?",
-      "reponse": "Billie Holiday",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel tambour à main vient d'Irlande ?",
-      "reponse": "Le bodhrán",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fête de juin invite les gens d'une même rue à se rassembler ?",
-      "reponse": "La fête des voisins",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à vent se joue en soufflant dans une anche double, au son nasillard ?",
-      "reponse": "Le hautbois",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel carré de plastique de trois pouces et demi stockait des fichiers d'ordinateur ?",
-      "reponse": "La disquette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission du samedi soir diffusait le hockey à Radio-Canada ?",
-      "reponse": "La Soirée du hockey",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Combien de temps principaux a l'indicatif ?",
-      "reponse": "Huit",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel tapis à longs poils habillait les salons des années 70 ?",
-      "reponse": "Le shag",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel désert couvre le sud-ouest africain ?",
-      "reponse": "Le Kalahari",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel revêtement de sol en rouleau couvrait les cuisines avant le plancher flottant ?",
-      "reponse": "Le prélart",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
-      "reponse": "Les Denis Drolet",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?",
-      "reponse": "La Station spatiale internationale",
-      "niveau": 3
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation japonais suit une fillette prisonnière d'un bain public d'esprits ?",
-      "reponse": "Le Voyage de Chihiro",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays insulaire du nord de l'Atlantique compte des volcans et des geysers ?",
-      "reponse": "L'Islande",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel genre musical africain aux rythmes chaloupés s'est imposé mondialement ?",
-      "reponse": "L'afrobeat",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel pays a un drapeau non rectangulaire ?",
-      "reponse": "Le Népal",
+      "question": "Quel moine a affiché 95 thèses en 1517 ?",
+      "reponse": "Luther",
       "niveau": 3,
       "ages": [
         "adultes",

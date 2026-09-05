@@ -7,93 +7,44 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quelle ville de l'Estrie abrite l'Université Bishop's ?",
-      "reponse": "Sherbrooke",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays d'Afrique se trouve la grande réserve du Masai Mara ?",
-      "reponse": "Le Kenya",
-      "niveau": 3
-    },
-    {
       "categorie": "Sports",
-      "question": "Combien de haies compte le 110 mètres haies ?",
-      "reponse": "Dix",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle activité se pratique avec une canne et un hameçon ?",
+      "reponse": "La pêche",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel est le plus grand des Grands Lacs ?",
-      "reponse": "Le lac Supérieur",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de degrés dans un cercle complet ?",
-      "reponse": "360",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la petite monnaie qu'on laisse au serveur au restaurant ?",
-      "reponse": "Le pourboire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de bosses a un dromadaire ?",
-      "reponse": "Une",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel rocher troué est l'emblème de la Gaspésie ?",
-      "reponse": "Le rocher Percé",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle actrice joue Rose dans Titanic ?",
-      "reponse": "Kate Winslet",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Sur quel continent se trouve l'Australie ?",
+      "reponse": "L'Océanie",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel constructeur a lancé la Ford T ?",
-      "reponse": "Henry Ford",
-      "niveau": 1,
+      "question": "Qui fut la première femme première ministre du Canada ?",
+      "reponse": "Kim Campbell",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Dans quelle émission québécoise des vedettes chantent-elles cachées dans des costumes géants ?",
-      "reponse": "Chanteurs masqués",
-      "niveau": 2,
+      "categorie": "Cinéma et télé",
+      "question": "Quelle souris Disney est l'amoureuse de Mickey ?",
+      "reponse": "Minnie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du coq ?",
+      "reponse": "Cocorico",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel chou fermenté accompagne les saucisses en Alsace ?",
+      "reponse": "La choucroute",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -101,9 +52,31 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle saison vient après l'hiver ?",
-      "reponse": "Le printemps",
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la faute qui envoie un joueur de hockey au banc deux minutes ?",
+      "reponse": "Une punition",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quels peuples vivaient déjà en Amérique quand les Européens sont arrivés ?",
+      "reponse": "Les Autochtones",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur des Rolling Stones a de grandes lèvres célèbres ?",
+      "reponse": "Mick Jagger",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plateforme diffuse les films de Marvel et de Pixar ?",
+      "reponse": "Disney+",
       "niveau": 1
     },
     {
@@ -118,25 +91,40 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'écran qui affiche les paroles pendant un karaoké ?",
-      "reponse": "Le téléprompteur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Quel héros court plus vite que tout le monde en rouge ?",
+      "reponse": "Flash",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel druide prépare la potion magique des Gaulois ?",
+      "reponse": "Panoramix",
+      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on les mots qui se prononcent pareil ?",
-      "reponse": "Des homophones",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Que signifie se lever du mauvais pied ?",
+      "reponse": "Être de mauvaise humeur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte produit le miel ?",
+      "reponse": "L'abeille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de degrés dans un cercle complet ?",
+      "reponse": "360",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le trou creusé dans l'asphalte par le gel et le dégel ?",
+      "reponse": "Un nid-de-poule",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -149,21 +137,9 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande maison fortifiée d'un seigneur, avec ses tours ?",
-      "reponse": "Un château fort",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel jour célèbre-t-on l'Armistice de 1918 ?",
-      "reponse": "Le 11 novembre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel tournoi de tennis se joue sur gazon à Londres ?",
-      "reponse": "Wimbledon",
+      "categorie": "Géographie",
+      "question": "Capitale de l'Égypte ?",
+      "reponse": "Le Caire",
       "niveau": 2,
       "ages": [
         "ados",
@@ -172,38 +148,22 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Qui collectionne les pièces de monnaie ?",
-      "reponse": "Un numismate",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument espagnol se claque entre les doigts pendant le flamenco ?",
-      "reponse": "Les castagnettes",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel druide prépare la potion magique des Gaulois ?",
-      "reponse": "Panoramix",
+      "categorie": "Sciences et nature",
+      "question": "Comment appelle-t-on l'ensemble des os du corps ?",
+      "reponse": "Le squelette",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle fête québécoise célèbre le blé d'Inde ?",
-      "reponse": "L'épluchette",
+      "categorie": "Musique",
+      "question": "Quelle chanson de Noël parle d'un bonhomme de neige ?",
+      "reponse": "Frosty",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel fleuve traverse l'Allemagne et se jette à Rotterdam ?",
-      "reponse": "Le Rhin",
-      "niveau": 2,
+      "question": "Quelle fosse océanique est la plus profonde ?",
+      "reponse": "Les Mariannes",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -211,9 +171,21 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle l'école de Harry Potter ?",
-      "reponse": "Poudlard",
+      "categorie": "Histoire",
+      "question": "Quelle tour éclairée guidait les bateaux vers la côte bien avant les radars ?",
+      "reponse": "Un phare",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature de la nuit dort dans un cercueil et craint l'ail ?",
+      "reponse": "Un vampire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel véhicule d'hiver file sur la neige avec des chenilles et des skis ?",
+      "reponse": "Une motoneige",
       "niveau": 1
     }
   ]
