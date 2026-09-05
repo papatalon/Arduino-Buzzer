@@ -7,14 +7,56 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Québec",
+      "question": "Quel plat québécois combine frites, fromage et sauce ?",
+      "reponse": "La poutine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel instrument grossit les objets proches ?",
+      "reponse": "La loupe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chocolat creux se déballe le matin de Pâques ?",
+      "reponse": "Un œuf en chocolat",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui soigne les dents ?",
+      "reponse": "Le dentiste",
+      "niveau": 1
+    },
+    {
       "categorie": "Cinéma et télé",
-      "question": "Quel ours brun de dessin animé vole des paniers de pique-nique ?",
-      "reponse": "Yogi",
+      "question": "Quel film d'animation raconte un garçon qui rejoint le pays des morts avec sa guitare ?",
+      "reponse": "Coco",
       "niveau": 1,
       "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle exposition universelle a eu lieu à Montréal ?",
+      "reponse": "Expo 67",
+      "niveau": 1,
+      "ages": [
+        "enfants",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Sous quel objet ne faut-il pas passer selon la superstition ?",
+      "reponse": "Une échelle",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
@@ -28,33 +70,33 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel plat québécois combine frites, fromage et sauce ?",
-      "reponse": "La poutine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Qui soigne les dents ?",
-      "reponse": "Le dentiste",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "De quelle couleur sont les Schtroumpfs ?",
-      "reponse": "Bleus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Sous quel objet ne faut-il pas passer selon la superstition ?",
-      "reponse": "Une échelle",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Où va-t-on voir des lions et des girafes en enclos ?",
-      "reponse": "Au zoo",
+      "question": "Quel accessoire redonne de l'énergie à un téléphone à plat ?",
+      "reponse": "Un chargeur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle méchante veut un manteau en dalmatiens ?",
+      "reponse": "Cruella",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume vert ressemble à un petit arbre ?",
+      "reponse": "Le brocoli",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel sport sorcier se joue sur des balais ?",
+      "reponse": "Le quidditch",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil lave les assiettes à notre place ?",
+      "reponse": "Le lave-vaisselle",
       "niveau": 1
     },
     {
@@ -64,49 +106,21 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel fleuve traverse Paris ?",
-      "reponse": "La Seine",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Petit du mouton ?",
-      "reponse": "L'agneau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle créature verte et mal lunée veut voler le Noël des Chou ?",
-      "reponse": "Le Grinch",
+      "question": "Comment nomme-t-on un mot de sens contraire ?",
+      "reponse": "Un antonyme",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle semoule accompagne les plats du Maghreb ?",
-      "reponse": "Le couscous",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel festival d'humour a lieu à Montréal ?",
-      "reponse": "Juste pour rire",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel pain français long et croustillant est emblématique ?",
+      "reponse": "La baguette",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -115,15 +129,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume vert en feuilles rendait Popeye très fort ?",
-      "reponse": "L'épinard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de combat japonais se pratique pieds nus en kimono blanc ?",
-      "reponse": "Le karaté",
+      "categorie": "Musique",
+      "question": "Sur quel pont danse-t-on tous en rond dans la chanson ?",
+      "reponse": "Le pont d'Avignon",
       "niveau": 1
     },
     {
@@ -138,56 +146,39 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel instrument grossit les objets proches ?",
-      "reponse": "La loupe",
+      "categorie": "Mots et langue",
+      "question": "Pluriel de madame ?",
+      "reponse": "Mesdames",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "De quelle couleur sont les Schtroumpfs ?",
+      "reponse": "Bleus",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie dormir comme une bûche ?",
-      "reponse": "Dormir profondément",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel appareil lave les assiettes à notre place ?",
-      "reponse": "Le lave-vaisselle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle entreprise japonaise a créé Mario et Zelda ?",
-      "reponse": "Nintendo",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Sur quel pont danse-t-on tous en rond dans la chanson ?",
-      "reponse": "Le pont d'Avignon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
-      "reponse": "Bugs Bunny",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel mot québécois désigne une fête ?",
-      "reponse": "Un party",
+      "question": "Quel est le féminin de lion ?",
+      "reponse": "Lionne",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
       "question": "Quel grand singe est le plus proche de l'homme ?",
       "reponse": "Le chimpanzé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve traverse Paris ?",
+      "reponse": "La Seine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de combat japonais se pratique pieds nus en kimono blanc ?",
+      "reponse": "Le karaté",
       "niveau": 1
     }
   ]

@@ -7,21 +7,20 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Quels peuples vivaient déjà en Amérique quand les Européens sont arrivés ?",
-      "reponse": "Les Autochtones",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Que signifie avoir la langue à terre ?",
-      "reponse": "Être très fatigué",
-      "niveau": 1
+      "question": "Contraire de généreux, commençant par A ?",
+      "reponse": "Avare",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel dinosaure a trois cornes sur la tête ?",
-      "reponse": "Le tricératops",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse amérindienne chante L'air du vent ?",
+      "reponse": "Pocahontas",
       "niveau": 1
     },
     {
@@ -31,38 +30,20 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de hasard fait cocher des cases en écoutant des numéros criés ?",
-      "reponse": "Le bingo",
+      "categorie": "Histoire",
+      "question": "Quels peuples vivaient déjà en Amérique quand les Européens sont arrivés ?",
+      "reponse": "Les Autochtones",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie ronde se décore de glaçage pour une fête ?",
-      "reponse": "Le gâteau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on une des sept grandes masses de terre du globe ?",
-      "reponse": "Un continent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu oppose deux équipes qui tirent chacune un bout du même câble ?",
-      "reponse": "Le tir à la corde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel pain plat indien cuit dans un four tandoor ?",
-      "reponse": "Le naan",
+      "categorie": "Cinéma et télé",
+      "question": "Quel petit robot orange et blanc roule en forme de boule dans Star Wars ?",
+      "reponse": "BB-8",
       "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
@@ -77,51 +58,33 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
-      "reponse": "Une fusée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel bâton le magicien agite-t-il en disant sa formule ?",
-      "reponse": "Une baguette magique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle émission québécoise du jour de l'An revoit l'année ?",
-      "reponse": "Bye Bye",
+      "categorie": "Culture générale",
+      "question": "Dans quel conte une princesse s'endort cent ans après s'être piqué le doigt ?",
+      "reponse": "La Belle au bois dormant",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle crise de janvier 1998 a privé le Québec de courant ?",
-      "reponse": "Le verglas",
+      "question": "Quel mot québécois désigne les moustiques ?",
+      "reponse": "Les maringouins",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle entrée italienne est du pain grillé garni ?",
-      "reponse": "La bruschetta",
+      "categorie": "Sports",
+      "question": "Quel jeu oppose deux équipes qui tirent chacune un bout du même câble ?",
+      "reponse": "Le tir à la corde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie mettre son grain de sel ?",
+      "reponse": "Se mêler de tout",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel sport sorcier se joue sur des balais ?",
-      "reponse": "Le quidditch",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Dans quel conte une princesse s'endort cent ans après s'être piqué le doigt ?",
-      "reponse": "La Belle au bois dormant",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -135,21 +98,9 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Que veut dire « c'est plate » ?",
-      "reponse": "C'est ennuyant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel drapeau agite-t-on à la fin d'une course auto ?",
-      "reponse": "Drapeau à damier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle méchante veut un manteau en dalmatiens ?",
-      "reponse": "Cruella",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sandwich fondant au fromage est grillé ?",
+      "reponse": "Le grilled cheese",
       "niveau": 1
     },
     {
@@ -163,9 +114,44 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Citez un palindrome de cinq lettres qui flotte.",
-      "reponse": "Kayak",
+      "categorie": "Québec",
+      "question": "Quelle est la devise du Québec ?",
+      "reponse": "Je me souviens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle plante aromatique garnit le mojito ?",
+      "reponse": "La menthe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
+      "reponse": "Une fusée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle console de Nintendo se joue autant sur le téléviseur qu'en mode portable ?",
+      "reponse": "La Nintendo Switch",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel drapeau agite-t-on à la fin d'une course auto ?",
+      "reponse": "Drapeau à damier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel dinosaure a trois cornes sur la tête ?",
+      "reponse": "Le tricératops",
       "niveau": 1
     },
     {
@@ -180,15 +166,39 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que veut dire P.S. à la fin d'une lettre ?",
-      "reponse": "Post-scriptum",
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une des sept grandes masses de terre du globe ?",
+      "reponse": "Un continent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle friandise glacée se tient par un bâton de bois ?",
+      "reponse": "Un popsicle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle pâte gluante et étirable se fabrique à la maison avec de la colle ?",
+      "reponse": "La slime",
       "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du cheval ?",
+      "reponse": "Le poulain",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel oiseau de dessin animé file à toute vitesse en faisant « bip bip » ?",
+      "reponse": "Bip Bip",
+      "niveau": 1
     }
   ]
 }

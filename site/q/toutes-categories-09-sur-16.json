@@ -7,67 +7,15 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel quart-arrière a gagné sept Super Bowls ?",
-      "reponse": "Tom Brady",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle bibliothèque nationale ouverte en 2005 se dresse près de Berri-UQAM ?",
-      "reponse": "La Grande Bibliothèque",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
-      "reponse": "Le Jolly Roger",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de litres de sang contient un adulte ?",
-      "reponse": "Cinq",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Edmonton ?",
-      "reponse": "Les Oilers",
+      "categorie": "Culture pop",
+      "question": "Que construit-on avec un seau et une pelle au bord de l'eau ?",
+      "reponse": "Un château de sable",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle algue enroule les makis ?",
-      "reponse": "Le nori",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme fait franchir une barre très haute à l'aide d'une longue tige souple ?",
-      "reponse": "Le saut à la perche",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle méchante veut un manteau en dalmatiens ?",
+      "reponse": "Cruella",
       "niveau": 1
     },
     {
@@ -81,27 +29,39 @@
       ]
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal hurle à la lune et chasse en meute ?",
+      "reponse": "Le loup",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouvent les pyramides et le Sphinx ?",
+      "reponse": "L'Égypte",
+      "niveau": 1
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Féminin de acteur ?",
-      "reponse": "Actrice",
+      "question": "Que signifie tomber dans les pommes ?",
+      "reponse": "S'évanouir",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros devient vert quand il se fâche ?",
-      "reponse": "Hulk",
+      "categorie": "Sports",
+      "question": "Quelle épreuve d'athlétisme fait franchir une barre très haute à l'aide d'une longue tige souple ?",
+      "reponse": "Le saut à la perche",
       "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle statue les Français ont-ils offerte aux Américains en 1886 ?",
-      "reponse": "La statue de la Liberté",
-      "niveau": 2
     },
     {
       "categorie": "Géographie",
       "question": "Capitale de l'Angleterre ?",
       "reponse": "Londres",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gros camion dégage la neige des rues après une tempête ?",
+      "reponse": "Une charrue",
       "niveau": 1
     },
     {
@@ -111,24 +71,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal hurle à la lune et chasse en meute ?",
-      "reponse": "Le loup",
-      "niveau": 1
+      "categorie": "Histoire",
+      "question": "Quelle statue les Français ont-ils offerte aux Américains en 1886 ?",
+      "reponse": "La statue de la Liberté",
+      "niveau": 2
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chiot berger allemand de la Pat' Patrouille est policier ?",
-      "reponse": "Chase",
-      "niveau": 1,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel ballon rempli d'hélium s'envole si on lâche la ficelle ?",
-      "reponse": "Un ballon gonflable",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel liquide chaud et salé se mange à la cuillère avant le plat principal ?",
+      "reponse": "La soupe",
       "niveau": 1
     },
     {
@@ -141,12 +92,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouvent les pyramides et le Sphinx ?",
-      "reponse": "L'Égypte",
-      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -165,21 +110,59 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois achaler ?",
-      "reponse": "Déranger",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la photo prise chaque année avec tous les élèves d'un groupe ?",
-      "reponse": "La photo de classe",
-      "niveau": 1
+      "categorie": "Sciences et nature",
+      "question": "Combien de litres de sang contient un adulte ?",
+      "reponse": "Cinq",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit violet à noyau, une fois séché, aide à la digestion ?",
-      "reponse": "La prune",
+      "question": "Quelle barbe sucrée se vend dans les fêtes foraines ?",
+      "reponse": "Barbe à papa",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel quart-arrière a gagné sept Super Bowls ?",
+      "reponse": "Tom Brady",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de hockey joue à Edmonton ?",
+      "reponse": "Les Oilers",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel canard Disney porte un costume marin ?",
+      "reponse": "Donald",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel grand rendez-vous de novembre réunit éditeurs et auteurs au Palais des congrès de Montréal ?",
+      "reponse": "Le Salon du livre",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Contraire de rapide ?",
+      "reponse": "Lent",
       "niveau": 1
     },
     {
@@ -189,13 +172,24 @@
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel groupe québécois a chanté Dehors novembre ?",
-      "reponse": "Les Colocs",
-      "niveau": 2,
+      "categorie": "Culture pop",
+      "question": "Quelle console de Nintendo se joue autant sur le téléviseur qu'en mode portable ?",
+      "reponse": "La Nintendo Switch",
+      "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
+      "reponse": "Le Jolly Roger",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     }
   ]

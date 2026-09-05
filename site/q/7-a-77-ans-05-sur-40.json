@@ -7,15 +7,27 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quel fromage frais grince sous la dent ?",
-      "reponse": "Fromage en grains",
+      "categorie": "Culture générale",
+      "question": "Quelle couleur obtient-on en mélangeant du rouge et du jaune ?",
+      "reponse": "Orange",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jeu retire une chaise à chaque tour pendant que la musique joue ?",
-      "reponse": "La chaise musicale",
+      "categorie": "Musique",
+      "question": "Dans quelle comptine un fermier a-t-il des animaux qui font chacun leur cri ?",
+      "reponse": "Dans la ferme de Mathurin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel signe marque l'élision dans le mot l'arbre ?",
+      "reponse": "L'apostrophe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel dragon noir accompagne Harold ?",
+      "reponse": "Krokmou",
       "niveau": 1
     },
     {
@@ -25,9 +37,113 @@
       "niveau": 1
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Que souffle-t-on sur le gâteau de fête après avoir fait un vœu ?",
+      "reponse": "Les bougies",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le village où l'on cultive la terre et élève des animaux ?",
+      "reponse": "Une ferme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on l'habit qu'on enfile pour se transformer en personnage ?",
+      "reponse": "Un déguisement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel maïs éclate au cinéma ?",
+      "reponse": "Le popcorn",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle île montréalaise accueille La Ronde ?",
+      "reponse": "Île Sainte-Hélène",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert italien contient du café et du mascarpone ?",
+      "reponse": "Le tiramisu",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film Pixar se passe dans la tête de Riley ?",
+      "reponse": "Sans dessus dessous",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle boisson chaude sucrée réchauffe après une glissade en traîneau ?",
+      "reponse": "Un chocolat chaud",
+      "niveau": 1
+    },
+    {
       "categorie": "Géographie",
       "question": "Quel vent tournant très violent creuse un entonnoir jusqu'au sol ?",
       "reponse": "Une tornade",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le premier homme sur la Lune ?",
+      "reponse": "Neil Armstrong",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de grand ?",
+      "reponse": "Petit",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel gros chien rouge de livres pour enfants est devenu un film ?",
+      "reponse": "Clifford",
+      "niveau": 1,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel objet tient le chanteur pour que sa voix porte dans toute la salle ?",
+      "reponse": "Le micro",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qu'est-ce qui pousse au bout des doigts et qu'il faut couper ?",
+      "reponse": "Les ongles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel animal rugit ?",
+      "reponse": "Le lion",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Où va-t-on chercher un médicament sur ordonnance ?",
+      "reponse": "À la pharmacie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de grammes dans un kilogramme ?",
+      "reponse": "1000",
       "niveau": 1
     },
     {
@@ -43,132 +159,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Féminin de acteur ?",
-      "reponse": "Actrice",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle tarte épicée se mange à l'Action de grâce ?",
-      "reponse": "À la citrouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le village où l'on cultive la terre et élève des animaux ?",
-      "reponse": "Une ferme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel objet tient le chanteur pour que sa voix porte dans toute la salle ?",
-      "reponse": "Le micro",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Comment nomme-t-on un œuf cuit 3 minutes en coquille ?",
-      "reponse": "À la coque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui fut le premier homme sur la Lune ?",
-      "reponse": "Neil Armstrong",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui pousse au bout des doigts et qu'il faut couper ?",
-      "reponse": "Les ongles",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
       "question": "Quelles petites roues aident un enfant à apprendre le vélo ?",
       "reponse": "Des roues d'entraînement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans quelle comptine un fermier a-t-il des animaux qui font chacun leur cri ?",
-      "reponse": "Dans la ferme de Mathurin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on celui qui écrit des romans ?",
-      "reponse": "Un romancier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ogre a un ami âne très bavard ?",
-      "reponse": "Shrek",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série de science-fiction se passe à Hawkins ?",
-      "reponse": "Stranger Things",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quels bonbons durs multicolores promettent de goûter l'arc-en-ciel ?",
-      "reponse": "Les Skittles",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle couleur obtient-on en mélangeant du rouge et du jaune ?",
-      "reponse": "Orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du croissant ?",
-      "reponse": "La France",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "De quelle langue vient le mot kimono ?",
-      "reponse": "Le japonais",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel congé tombe le lendemain de la Saint-Sylvestre ?",
-      "reponse": "Le jour de l'An",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le meilleur ami roux de Harry Potter ?",
-      "reponse": "Ron Weasley",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de grammes dans un kilogramme ?",
-      "reponse": "1000",
       "niveau": 1
     }
   ]

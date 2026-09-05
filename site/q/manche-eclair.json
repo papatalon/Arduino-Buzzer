@@ -7,56 +7,16 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
-      "reponse": "Arthur Laroche",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment blanc, fait de lait, mange-t-on avec des fruits au déjeuner ?",
-      "reponse": "Le yogourt",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes traverse l'ouest canadien ?",
-      "reponse": "Les Rocheuses",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
-      "question": "Quel comédien incarne Elvis Gratton ?",
-      "reponse": "Julien Poulin",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel vêtement long et épais protège du froid de janvier ?",
+      "reponse": "Un manteau d'hiver",
+      "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du corbeau ?",
-      "reponse": "Le croassement",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
-      "reponse": "Challenger",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Culture pop",
+      "question": "Quel mort-vivant marche les bras tendus dans les films d'horreur ?",
+      "reponse": "Un zombie",
+      "niveau": 2
     },
     {
       "categorie": "Culture générale",
@@ -70,17 +30,46 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
-      "reponse": "Le surf",
+      "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes traverse l'ouest canadien ?",
+      "reponse": "Les Rocheuses",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel commerce de village vendait autrefois aussi bien le clou que la farine ?",
-      "reponse": "Le magasin général",
-      "niveau": 3,
+      "categorie": "Histoire",
+      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
+      "reponse": "Challenger",
+      "niveau": 2,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle herbe verte garnit la pizza margherita ?",
+      "reponse": "Le basilic",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel dinosaure vert craintif vit dans Toy Story ?",
+      "reponse": "Rex",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot algèbre ?",
+      "reponse": "L'arabe",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
@@ -94,6 +83,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
+      "reponse": "Le surf",
+      "niveau": 1
     }
   ]
 }

@@ -8,6 +8,18 @@
   "questions": [
     {
       "categorie": "Géographie",
+      "question": "Dans quel pays voisin de la France et de l'Italie parle-t-on quatre langues officielles ?",
+      "reponse": "La Suisse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays d'Europe est célèbre pour ses moulins à vent et ses tulipes ?",
+      "reponse": "Les Pays-Bas",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
       "question": "Quel lac est le plus profond du monde ?",
       "reponse": "Le Baïkal",
       "niveau": 3,
@@ -15,18 +27,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve l'Australie ?",
-      "reponse": "L'Océanie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays voisin de la France et de l'Italie parle-t-on quatre langues officielles ?",
-      "reponse": "La Suisse",
-      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -47,9 +47,26 @@
     },
     {
       "categorie": "Géographie",
+      "question": "Quel pays a une croix blanche sur fond rouge ?",
+      "reponse": "La Suisse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
       "question": "Comment appelle-t-on la grande route à plusieurs voies entre deux villes ?",
       "reponse": "Une autoroute",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays nordique le père Noël a-t-il son village officiel, à Rovaniemi ?",
+      "reponse": "La Finlande",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
@@ -64,37 +81,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays a une croix blanche sur fond rouge ?",
-      "reponse": "La Suisse",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays nordique le père Noël a-t-il son village officiel, à Rovaniemi ?",
-      "reponse": "La Finlande",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
       "question": "Capitale de l'Italie ?",
       "reponse": "Rome",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on un très grand bâtiment de plusieurs dizaines d'étages ?",
-      "reponse": "Un gratte-ciel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel océan traverse-t-on en avion pour aller du Canada à la France ?",
-      "reponse": "L'Atlantique",
       "niveau": 1
     },
     {
@@ -109,6 +97,12 @@
     },
     {
       "categorie": "Géographie",
+      "question": "Comment appelle-t-on un très grand bâtiment de plusieurs dizaines d'étages ?",
+      "reponse": "Un gratte-ciel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
       "question": "Dans quel pays se trouve Tombouctou ?",
       "reponse": "Le Mali",
       "niveau": 3,
@@ -116,6 +110,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel océan traverse-t-on en avion pour aller du Canada à la France ?",
+      "reponse": "L'Atlantique",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -127,16 +127,6 @@
       "categorie": "Géographie",
       "question": "Quel pays entoure complètement le Lesotho ?",
       "reponse": "Afrique du Sud",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel long fleuve traverse la Chine ?",
-      "reponse": "Le Yangtsé",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -159,6 +149,16 @@
       "question": "Dans quel état américain se trouvent les Everglades et la ville de Miami ?",
       "reponse": "La Floride",
       "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel long fleuve traverse la Chine ?",
+      "reponse": "Le Yangtsé",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",

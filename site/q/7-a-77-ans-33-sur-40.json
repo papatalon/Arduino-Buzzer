@@ -7,12 +7,6 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quel appareil lave les vêtements dans le sous-sol ?",
-      "reponse": "La laveuse",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
       "question": "Quel quart-arrière a gagné sept Super Bowls ?",
       "reponse": "Tom Brady",
@@ -23,33 +17,37 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel chien accompagne Astérix et Obélix ?",
-      "reponse": "Idéfix",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle exploratrice a un singe nommé Babouche ?",
+      "reponse": "Dora",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu retire une chaise à chaque tour pendant que la musique joue ?",
+      "reponse": "La chaise musicale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle forme donne-t-on au poisson pané pour les enfants ?",
+      "reponse": "Des bâtonnets",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel petit animal à grosse queue touffue cache des noix pour l'hiver ?",
-      "reponse": "L'écureuil",
+      "question": "Quel animal roux au museau pointu passe pour rusé dans les fables ?",
+      "reponse": "Le renard",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel pantin de bois voit son nez s'allonger ?",
-      "reponse": "Pinocchio",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel conte Disney une rose est-elle sous cloche ?",
-      "reponse": "La Belle et la Bête",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel signe relie les mots composés ?",
-      "reponse": "Le trait d'union",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal hurle à la lune et chasse en meute ?",
+      "reponse": "Le loup",
       "niveau": 1
     },
     {
@@ -58,6 +56,58 @@
       "reponse": "Grease",
       "niveau": 1,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit brun et poilu vient de Nouvelle-Zélande ?",
+      "reponse": "Le kiwi",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel hors-la-loi anglais volait aux riches pour les pauvres ?",
+      "reponse": "Robin des Bois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de sale ?",
+      "reponse": "Propre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet rond et plat se lance à deux dans un parc l'été ?",
+      "reponse": "Un frisbee",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que chausse-t-on par-dessus ses souliers pour marcher dans la neige ?",
+      "reponse": "Des bottes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a une croix blanche sur fond rouge ?",
+      "reponse": "La Suisse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel garçon au chandail à zigzag est le maître de Snoopy ?",
+      "reponse": "Charlie Brown",
+      "niveau": 1,
+      "ages": [
+        "enfants",
         "adultes",
         "aines"
       ]
@@ -72,30 +122,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel hors-la-loi anglais volait aux riches pour les pauvres ?",
-      "reponse": "Robin des Bois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le continent le plus peuplé ?",
-      "reponse": "L'Asie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Par quelle lettre muette commence le mot haricot ?",
-      "reponse": "Le H",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal roux au museau pointu passe pour rusé dans les fables ?",
-      "reponse": "Le renard",
-      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -115,9 +141,33 @@
       ]
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Petit du cerf ?",
+      "reponse": "Le faon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume racine devient des frites une fois coupé ?",
+      "reponse": "La pomme de terre",
+      "niveau": 1
+    },
+    {
       "categorie": "Géographie",
-      "question": "Quel pays a une croix blanche sur fond rouge ?",
-      "reponse": "La Suisse",
+      "question": "Quel est le continent le plus peuplé ?",
+      "reponse": "L'Asie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment surnomme-t-on la fête du 24 juin ?",
+      "reponse": "La Saint-Jean",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie tourner autour du pot ?",
+      "reponse": "Hésiter à parler",
       "niveau": 1,
       "ages": [
         "ados",
@@ -126,66 +176,21 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le féminin de prince ?",
-      "reponse": "Princesse",
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal à grosse queue touffue cache des noix pour l'hiver ?",
+      "reponse": "L'écureuil",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation suit une lapine policière et un renard rusé dans une ville d'animaux ?",
-      "reponse": "Zootopia",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle céréale est la base de l'alimentation en Asie ?",
-      "reponse": "Le riz",
+      "categorie": "Culture générale",
+      "question": "Quel pantin de bois voit son nez s'allonger ?",
+      "reponse": "Pinocchio",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle fête du 1er juillet fait déménager les Québécois ?",
-      "reponse": "Jour du déménagement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel liquide chaud et salé se mange à la cuillère avant le plat principal ?",
-      "reponse": "La soupe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle héroïne à pois rouges combat le crime à Paris avec Chat Noir ?",
-      "reponse": "Ladybug",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Comment appelle-t-on la petite bille de chocolat qu'on met dans les biscuits ?",
-      "reponse": "Une pépite",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelles îles québécoises sont au milieu du golfe ?",
-      "reponse": "Îles de la Madeleine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil à deux boutons permet de se parler à distance en disant « à toi » ?",
-      "reponse": "Le walkie-talkie",
+      "categorie": "Culture générale",
+      "question": "Quel chien accompagne Astérix et Obélix ?",
+      "reponse": "Idéfix",
       "niveau": 1
     }
   ]

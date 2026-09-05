@@ -7,20 +7,44 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quel fjord spectaculaire abrite des bélugas ?",
-      "reponse": "Fjord du Saguenay",
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus grosse planète du système solaire ?",
+      "reponse": "Jupiter",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel animal nous donne la laine ?",
+      "reponse": "Le mouton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle autrice a écrit Harry Potter ?",
+      "reponse": "J.K. Rowling",
       "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film Pixar suit une voiture de course rouge ?",
-      "reponse": "Les Bagnoles",
+      "categorie": "Sports",
+      "question": "Quel sport olympique de précision se pratique avec des flèches ?",
+      "reponse": "Le tir à l'arc",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plateforme de diffusion a un grand N rouge pour logo ?",
+      "reponse": "Netflix",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelles chutes près de Québec sont plus hautes que Niagara ?",
+      "reponse": "Montmorency",
       "niveau": 1
     },
     {
@@ -35,56 +59,15 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel animal nous donne la laine ?",
-      "reponse": "Le mouton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros devient vert quand il se fâche ?",
-      "reponse": "Hulk",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la personne qui dirige une équipe depuis le banc ?",
-      "reponse": "L'entraîneur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel appareil transforme le vent en électricité ?",
-      "reponse": "L'éolienne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle sauce rouge accompagne la dinde ?",
-      "reponse": "Aux canneberges",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de minutes dans une heure ?",
-      "reponse": "60",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel thé japonais en poudre est vert vif ?",
-      "reponse": "Le matcha",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Contraire de rigide, en six lettres ?",
-      "reponse": "Souple",
+      "question": "Sous quelle lettre place-t-on la cédille ?",
+      "reponse": "Le C",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel café italien très court se boit d'un trait ?",
+      "reponse": "L'espresso",
       "niveau": 1,
       "ages": [
         "ados",
@@ -93,33 +76,48 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel navire insubmersible a coulé en 1912 ?",
-      "reponse": "Le Titanic",
+      "categorie": "Culture pop",
+      "question": "Quels petits êtres colorés aux cheveux dressés chantent dans leurs films ?",
+      "reponse": "Les Trolls",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Qui a fondé la ville de Québec en 1608 ?",
+      "reponse": "Champlain",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus grosse planète du système solaire ?",
-      "reponse": "Jupiter",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle galette de maïs enroule les fajitas ?",
+      "reponse": "La tortilla",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit de la poule ?",
+      "reponse": "Le poussin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays vivent les pandas géants ?",
+      "reponse": "La Chine",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel animal est Abu, l'ami d'Aladin ?",
-      "reponse": "Un singe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle machine bruyante lance la neige de côté dans l'entrée ?",
-      "reponse": "Une souffleuse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport olympique de précision se pratique avec des flèches ?",
-      "reponse": "Le tir à l'arc",
+      "question": "Quelle héroïne chinoise se déguise en soldat ?",
+      "reponse": "Mulan",
       "niveau": 1
     },
     {
@@ -134,27 +132,49 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Quel marché public borde le canal de Lachine ?",
+      "reponse": "Atwater",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on celui qui joue un rôle dans un film ?",
-      "reponse": "Un acteur",
+      "question": "Que signifie jeter l'éponge ?",
+      "reponse": "Abandonner",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel appareil transforme le vent en électricité ?",
+      "reponse": "L'éolienne",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel élément croquant garnit la salade César ?",
-      "reponse": "Des croûtons",
+      "categorie": "Cinéma et télé",
+      "question": "Quel film Disney suit 101 chiens tachés ?",
+      "reponse": "Les 101 Dalmatiens",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quel pays vivent les pandas géants ?",
-      "reponse": "La Chine",
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la personne qui dirige une équipe depuis le banc ?",
+      "reponse": "L'entraîneur",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de vêtements de sport a une virgule pour logo ?",
-      "reponse": "Nike",
+      "categorie": "Histoire",
+      "question": "Quel navire insubmersible a coulé en 1912 ?",
+      "reponse": "Le Titanic",
       "niveau": 1
     },
     {
@@ -164,26 +184,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel auxiliaire s'emploie avec le verbe aller ?",
-      "reponse": "Être",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jouet d'été arrose les amis d'un jet d'eau ?",
-      "reponse": "Un pistolet à eau",
+      "categorie": "Culture générale",
+      "question": "Combien de minutes dans une heure ?",
+      "reponse": "60",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Que met-on sur sa tête pour aller jouer dehors l'hiver au Québec ?",
-      "reponse": "Une tuque",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel gros fruit vert à chair rouge et à pépins noirs se mange en tranches l'été ?",
+      "reponse": "La pastèque",
       "niveau": 1
     }
   ]

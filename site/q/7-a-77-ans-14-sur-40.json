@@ -7,19 +7,21 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jeu télévisé fait tourner une grande roue ?",
-      "reponse": "La Roue de fortune",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir des papillons dans le ventre ?",
+      "reponse": "Être nerveux",
+      "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle basilique du Vieux-Montréal a un plafond bleu étoilé ?",
-      "reponse": "Notre-Dame",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ustensile à quatre dents pique les aliments ?",
+      "reponse": "La fourchette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle pierre précieuse est rouge ?",
+      "reponse": "Le rubis",
       "niveau": 1
     },
     {
@@ -30,38 +32,26 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la transformation de la chenille ?",
-      "reponse": "La métamorphose",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel casse-tête cubique a six couleurs ?",
-      "reponse": "Le cube Rubik",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel océan traverse-t-on en avion pour aller du Canada à la France ?",
-      "reponse": "L'Atlantique",
+      "question": "Comment appelle-t-on les amas blancs qui flottent dans le ciel ?",
+      "reponse": "Un nuage",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile à quatre dents pique les aliments ?",
-      "reponse": "La fourchette",
+      "question": "Comment appelle-t-on la feuille qui donne les ingrédients et les étapes d'un plat ?",
+      "reponse": "Une recette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Qui est la mascotte du Carnaval de Québec ?",
+      "reponse": "Bonhomme Carnaval",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Dans quel film de Noël un train magique emmène-t-il des enfants au pôle Nord ?",
-      "reponse": "Le Pôle Express",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Pluriel de cheval ?",
-      "reponse": "Chevaux",
+      "question": "Quelle princesse Disney vit avec sept nains ?",
+      "reponse": "Blanche-Neige",
       "niveau": 1
     },
     {
@@ -71,38 +61,97 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on une histoire de fées, de princes et de sorcières ?",
-      "reponse": "Un conte",
+      "categorie": "Sports",
+      "question": "Quelle équipe de hockey joue à Toronto ?",
+      "reponse": "Les Maple Leafs",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume orange se creuse et se sculpte à l'Halloween ?",
-      "reponse": "La citrouille d'Halloween",
+      "categorie": "Histoire",
+      "question": "Qui a remporté la bataille des plaines d'Abraham ?",
+      "reponse": "Les Britanniques",
       "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel lard frit croustillant sert-on à la cabane ?",
-      "reponse": "Oreilles de crisse",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel carré noir et blanc se scanne avec la caméra du téléphone ?",
-      "reponse": "Un code QR",
+      "question": "Quelle attraction de parc aquatique fait descendre un long tube en spirale ?",
+      "reponse": "La glissade d'eau",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
       "question": "Quelle est la plus grande ville du Québec ?",
       "reponse": "Montréal",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de proche ?",
+      "reponse": "Loin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de duc ?",
+      "reponse": "Duchesse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ninja blond rêve de devenir Hokage ?",
+      "reponse": "Naruto",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de crayons de cire remplit les boîtes d'école ?",
+      "reponse": "Crayola",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel océan traverse-t-on en avion pour aller du Canada à la France ?",
+      "reponse": "L'Atlantique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel quartier historique de Québec est fortifié ?",
+      "reponse": "Le Vieux-Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel homme élevé par les singes se balance de liane en liane ?",
+      "reponse": "Tarzan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle la transformation de la chenille ?",
+      "reponse": "La métamorphose",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de jours dans un mois de février normal ?",
+      "reponse": "28",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
+      "reponse": "Le club sandwich",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel casse-tête cubique a six couleurs ?",
+      "reponse": "Le cube Rubik",
       "niveau": 1
     },
     {
@@ -114,73 +163,6 @@
         "ados",
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation met en scène Dracula et sa famille de monstres dans un hôtel ?",
-      "reponse": "Hôtel Transylvanie",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on les amas blancs qui flottent dans le ciel ?",
-      "reponse": "Un nuage",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir les yeux dans la graisse de bines ?",
-      "reponse": "Être dans la lune",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a remporté la bataille des plaines d'Abraham ?",
-      "reponse": "Les Britanniques",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de jours dans un mois de février normal ?",
-      "reponse": "28",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Toronto ?",
-      "reponse": "Les Maple Leafs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit légume vert et rond roule dans l'assiette ?",
-      "reponse": "Le petit pois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle pierre précieuse est rouge ?",
-      "reponse": "Le rubis",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans La Reine des neiges, de quoi rêve Olaf qu'il n'a jamais connu ?",
-      "reponse": "L'été",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
       ]
     }
   ]

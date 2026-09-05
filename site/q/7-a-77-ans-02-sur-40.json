@@ -7,55 +7,9 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle échelle mesure les séismes ?",
-      "reponse": "Richter",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel autre dictionnaire français célèbre existe ?",
-      "reponse": "Le Robert",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelles cellules du sang combattent les infections ?",
-      "reponse": "Globules blancs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que doit-on attacher en s'assoyant dans une auto ?",
-      "reponse": "La ceinture de sécurité",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style musical parle-chante sur des rythmes ?",
-      "reponse": "Le rap",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume en feuilles vertes est la base d'une salade ?",
-      "reponse": "La laitue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir un chat dans la gorge ?",
-      "reponse": "Être enroué",
+      "question": "Quel grain blanc met-on dans la salière ?",
+      "reponse": "Le sel",
       "niveau": 1
     },
     {
@@ -70,39 +24,16 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel est le chien de compagnie de Mickey ?",
-      "reponse": "Pluto",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention permet de parler à quelqu'un qui est loin ?",
-      "reponse": "Le téléphone",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture générale",
-      "question": "Quel véhicule vole grâce à une grande hélice sur le toit ?",
-      "reponse": "L'hélicoptère",
+      "question": "Qui a peint la Joconde ?",
+      "reponse": "Léonard de Vinci",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson orange est populaire en sushi ?",
-      "reponse": "Le saumon",
+      "categorie": "Musique",
+      "question": "Quel style musical parle-chante sur des rythmes ?",
+      "reponse": "Le rap",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jouet cosmonaute de Toy Story crie « Vers l'infini et au-delà » ?",
-      "reponse": "Buzz Lightyear",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -111,9 +42,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel chanteur jamaïcain a popularisé le reggae ?",
-      "reponse": "Bob Marley",
+      "categorie": "Québec",
+      "question": "Quel oratoire montréalais fut fondé par le frère André ?",
+      "reponse": "Saint-Joseph",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel autre dictionnaire français célèbre existe ?",
+      "reponse": "Le Robert",
       "niveau": 1,
       "ages": [
         "ados",
@@ -122,16 +59,15 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
-      "reponse": "Le fromage en grains",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelles petites autos de métal roulent sur des pistes de plastique orange ?",
-      "reponse": "Les Hot Wheels",
-      "niveau": 1
+      "question": "Quel film de 2023 a porté le plombier moustachu de Nintendo au cinéma ?",
+      "reponse": "Super Mario Bros, le film",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Sports",
@@ -146,16 +82,26 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Qui a peint la Joconde ?",
-      "reponse": "Léonard de Vinci",
-      "niveau": 1
+      "categorie": "Québec",
+      "question": "Quelle boisson alcoolisée réchauffe le Carnaval de Québec ?",
+      "reponse": "Le caribou",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel rocher troué est l'emblème de la Gaspésie ?",
-      "reponse": "Le rocher Percé",
-      "niveau": 1
+      "categorie": "Musique",
+      "question": "Quel chanteur jamaïcain a popularisé le reggae ?",
+      "reponse": "Bob Marley",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -169,15 +115,43 @@
       ]
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir les yeux dans la graisse de bines ?",
+      "reponse": "Être dans la lune",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention permet de parler à quelqu'un qui est loin ?",
+      "reponse": "Le téléphone",
+      "niveau": 1
+    },
+    {
       "categorie": "Sports",
       "question": "Quel sport de table se joue avec des queues et des billes ?",
       "reponse": "Le billard",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Contraire d'avare, commençant par G ?",
-      "reponse": "Généreux",
+      "categorie": "Culture générale",
+      "question": "Quel véhicule vole grâce à une grande hélice sur le toit ?",
+      "reponse": "L'hélicoptère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâtisserie ronde se décore de glaçage pour une fête ?",
+      "reponse": "Le gâteau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle échelle mesure les séismes ?",
+      "reponse": "Richter",
       "niveau": 1,
       "ages": [
         "ados",
@@ -187,8 +161,43 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Dans quel film de Noël un garçon oublié à la maison piège deux cambrioleurs ?",
-      "reponse": "Maman, j'ai raté l'avion",
+      "question": "Quel journaliste est l'identité secrète de Superman ?",
+      "reponse": "Clark Kent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée japonaise suit Son Goku ?",
+      "reponse": "Dragon Ball",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume en longues tiges vertes croque avec du beurre d'arachide ?",
+      "reponse": "Le céleri",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelles cellules du sang combattent les infections ?",
+      "reponse": "Globules blancs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle émission fait courir des duos autour du monde ?",
+      "reponse": "Amazing Race",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du mouton ?",
+      "reponse": "Le bêlement",
       "niveau": 1
     }
   ]

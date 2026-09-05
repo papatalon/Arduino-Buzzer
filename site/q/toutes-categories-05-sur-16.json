@@ -7,6 +7,59 @@
   "emoji": "🎲",
   "questions": [
     {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de haut ?",
+      "reponse": "Bas",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Golden Gate ?",
+      "reponse": "San Francisco",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami de Winnie l'ourson est un petit cochon rose ?",
+      "reponse": "Porcinet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui a remporté la bataille des plaines d'Abraham ?",
+      "reponse": "Les Britanniques",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on l'objet qu'on tient à deux mains pour jouer à une console ?",
+      "reponse": "La manette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que veut dire « embarque dans l'auto » ?",
+      "reponse": "Monte dans l'auto",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine québécoise plume un oiseau, la tête, le bec et les ailes ?",
+      "reponse": "Alouette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation met en scène Dracula et sa famille de monstres dans un hôtel ?",
+      "reponse": "Hôtel Transylvanie",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
       "categorie": "Géographie",
       "question": "Capitale de l'Islande ?",
       "reponse": "Reykjavik",
@@ -17,10 +70,66 @@
       ]
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Comment s'appellent les signes ( et ) ?",
+      "reponse": "Les parenthèses",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus grand désert chaud du monde ?",
+      "reponse": "Le Sahara",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à cordes indien a un très long manche ?",
+      "reponse": "Le sitar",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle jeune fille a dansé avec le diable dans la légende ?",
+      "reponse": "Rose Latulippe",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle opération est l'inverse de la multiplication ?",
+      "reponse": "La division",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat français gratine bœuf haché et purée ?",
+      "reponse": "Hachis Parmentier",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Histoire",
       "question": "Quelle ville a été fondée en 1642 sous le nom de Ville-Marie ?",
       "reponse": "Montréal",
       "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle ligne les coureurs doivent-ils franchir pour terminer une course ?",
+      "reponse": "La ligne d'arrivée",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -40,74 +149,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Dans quel jeu de cartes doit-on annoncer qu'il ne reste qu'une seule carte en main ?",
-      "reponse": "Uno",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi de France fut surnommé le Roi-Soleil ?",
-      "reponse": "Louis XIV",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel ancien vélodrome de Montréal abrite des animaux ?",
-      "reponse": "Le Biodôme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus grand désert chaud du monde ?",
-      "reponse": "Le Sahara",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle sauce rouge accompagne la dinde ?",
-      "reponse": "Aux canneberges",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à cordes indien a un très long manche ?",
-      "reponse": "Le sitar",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a remporté la bataille des plaines d'Abraham ?",
-      "reponse": "Les Britanniques",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la longue plateforme de bois devant la maison, avec sa balançoire ?",
-      "reponse": "La galerie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle ligne les coureurs doivent-ils franchir pour terminer une course ?",
-      "reponse": "La ligne d'arrivée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Qui est le père de Luke Skywalker ?",
-      "reponse": "Dark Vador",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle est la première lettre de l'alphabet grec ?",
-      "reponse": "Alpha",
+      "question": "Quel plat français mijote du bœuf au vin rouge ?",
+      "reponse": "Bœuf bourguignon",
       "niveau": 1,
       "ages": [
         "ados",
@@ -117,32 +161,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gaz expirons-nous ?",
-      "reponse": "Le gaz carbonique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle opération est l'inverse de la multiplication ?",
-      "reponse": "La division",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comptine québécoise plume un oiseau, la tête, le bec et les ailes ?",
-      "reponse": "Alouette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle chienne partage un spaghetti avec un clochard ?",
-      "reponse": "Lady",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la personne qui soigne les dents ?",
-      "reponse": "Un dentiste",
+      "question": "Quel oiseau noir et blanc de l'Antarctique ne sait pas voler ?",
+      "reponse": "Le manchot",
       "niveau": 1
     },
     {
@@ -156,32 +176,25 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Golden Gate ?",
-      "reponse": "San Francisco",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel oiseau noir et blanc de l'Antarctique ne sait pas voler ?",
-      "reponse": "Le manchot",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel jouet se presse et se repousse en faisant des petits pops de silicone ?",
-      "reponse": "Le pop-it",
-      "niveau": 2,
+      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
+      "reponse": "MusiquePlus",
+      "niveau": 3,
       "ages": [
-        "enfants",
-        "ados"
+        "adultes"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à tartiner aux noisettes est adorée ?",
-      "reponse": "Le Nutella",
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz expirons-nous ?",
+      "reponse": "Le gaz carbonique",
       "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel roi de France fut surnommé le Roi-Soleil ?",
+      "reponse": "Louis XIV",
+      "niveau": 2
     }
   ]
 }

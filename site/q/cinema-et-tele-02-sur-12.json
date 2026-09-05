@@ -8,8 +8,92 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel chat robot bleu vient du futur ?",
-      "reponse": "Doraemon",
+      "question": "Quelle souris Disney est l'amoureuse de Mickey ?",
+      "reponse": "Minnie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle héroïne chinoise se déguise en soldat ?",
+      "reponse": "Mulan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse en robe rose Mario doit-il sans cesse secourir ?",
+      "reponse": "La princesse Peach",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
+      "reponse": "Caillou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel avare célèbre du terroir québécois aime son argent ?",
+      "reponse": "Séraphin",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quelle ville sous-marine habitent Bob l'éponge et Patrick ?",
+      "reponse": "Bikini Bottom",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel méchant Marvel claque des doigts avec un gant ?",
+      "reponse": "Thanos",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel marin devient fort en mangeant des épinards ?",
+      "reponse": "Popeye",
+      "niveau": 1,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle boule rose de Nintendo avale ses ennemis pour voler leurs pouvoirs ?",
+      "reponse": "Kirby",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel duo formaient Claude Meunier et Serge Thériault ?",
+      "reponse": "Ding et Dong",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation japonais suit une fillette prisonnière d'un bain public d'esprits ?",
+      "reponse": "Le Voyage de Chihiro",
       "niveau": 3,
       "ages": [
         "ados",
@@ -18,9 +102,9 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel groupe québécois a parodié les années 80 à la télé ?",
-      "reponse": "RBO",
-      "niveau": 2,
+      "question": "Quel acteur incarne Rocky Balboa ?",
+      "reponse": "Stallone",
+      "niveau": 1,
       "ages": [
         "adultes",
         "aines"
@@ -28,24 +112,26 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel cowboy jouet a un serpent dans sa botte ?",
-      "reponse": "Woody",
+      "question": "Quelle créature verte vit dans un marais ?",
+      "reponse": "Shrek",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel boxeur de cinéma monte les marches de Philadelphie ?",
-      "reponse": "Rocky",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel panda pratique le kung-fu au cinéma ?",
+      "reponse": "Po",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Que veut dire Hakuna Matata ?",
-      "reponse": "Pas de souci",
+      "question": "Comment s'appelle la petite sœur d'Elsa ?",
+      "reponse": "Anna",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film Pixar une maison vole-t-elle avec des ballons ?",
+      "reponse": "Là-haut",
       "niveau": 1
     },
     {
@@ -60,50 +146,31 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le petit chien blanc de Tintin ?",
-      "reponse": "Milou",
+      "question": "Quels sont les deux héros de Toy Story ?",
+      "reponse": "Woody et Buzz",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel wookiee copilote le Faucon Millénium ?",
-      "reponse": "Chewbacca",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel est le matricule de James Bond ?",
-      "reponse": "007",
+      "question": "Quel ninja blond rêve de devenir Hokage ?",
+      "reponse": "Naruto",
       "niveau": 1,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel méchant des Minions veut voler la Lune ?",
-      "reponse": "Gru",
+      "question": "Quel petit maître Jedi vert parle à l'envers ?",
+      "reponse": "Yoda",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Dans quel film Pixar un rat devient-il chef cuisinier à Paris ?",
-      "reponse": "Ratatouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat botté a de grands yeux attendrissants ?",
-      "reponse": "Chat Potté",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal du désert poursuit sans succès l'oiseau Bip Bip ?",
-      "reponse": "Le coyote",
-      "niveau": 2,
+      "question": "Quel film d'animation suit un mammouth, un paresseux et un tigre à dents de sabre ?",
+      "reponse": "L'Âge de glace",
+      "niveau": 1,
       "ages": [
         "enfants",
         "ados",
@@ -112,35 +179,9 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle série coréenne met en scène des jeux mortels ?",
-      "reponse": "Squid Game",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel phacochère accompagne Timon ?",
-      "reponse": "Pumbaa",
+      "question": "Dans quel conte Disney une rose est-elle sous cloche ?",
+      "reponse": "La Belle et la Bête",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage vert déteste Noël ?",
-      "reponse": "Le Grincheux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur incarne Iron Man au cinéma ?",
-      "reponse": "Robert Downey Jr",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -150,49 +191,9 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel petit oiseau jaune échappe toujours au chat Grosminet ?",
-      "reponse": "Titi",
+      "question": "Quel soldat Marvel porte un bouclier étoilé ?",
+      "reponse": "Captain America",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle fée accompagne Peter Pan ?",
-      "reponse": "Clochette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle émission jeunesse québécoise a Passe-Montagne ?",
-      "reponse": "Passe-Partout",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle arme lumineuse utilisent les Jedi ?",
-      "reponse": "Le sabre laser",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel archéologue porte un fouet et un chapeau ?",
-      "reponse": "Indiana Jones",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel magicien gris guide la Communauté de l'anneau ?",
-      "reponse": "Gandalf",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

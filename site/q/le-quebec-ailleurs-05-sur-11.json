@@ -7,17 +7,104 @@
   "emoji": "🌲",
   "questions": [
     {
+      "categorie": "Histoire",
+      "question": "Quel intendant a développé la Nouvelle-France ?",
+      "reponse": "Jean Talon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
+      "reponse": "Caillou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant de Montréal ?",
+      "reponse": "Un Montréalais",
+      "niveau": 1
+    },
+    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
-      "reponse": "Le fromage en grains",
+      "question": "Quel sirop noir parfume les galettes québécoises ?",
+      "reponse": "La mélasse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
+      "reponse": "Olivier Guimond",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?",
+      "reponse": "Alys Robi",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
+      "reponse": "L'Ontario",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?",
+      "reponse": "Jeanne Mance",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne les bonbons ?",
+      "reponse": "Des nananes",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise raconte Séraphin Poudrier ?",
-      "reponse": "Les Belles Histoires",
+      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
+      "reponse": "Sol",
       "niveau": 2,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain rond troué se mange grillé avec du fromage à la crème ?",
+      "reponse": "Le bagel",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse québécoise fait taper les pieds au son du violon ?",
+      "reponse": "La gigue",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
+      "reponse": "L'inlandsis",
+      "niveau": 3,
+      "ages": [
+        "adultes",
         "aines"
       ]
     },
@@ -32,133 +119,9 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
-      "reponse": "L'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelles pièces de bois claque-t-on entre les doigts au Québec ?",
-      "reponse": "Les cuillères",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne éducative appartient au gouvernement du Québec ?",
-      "reponse": "Télé-Québec",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
-      "reponse": "Caillou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
-      "reponse": "Un divulgâcheur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
-      "reponse": "La poutine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le décalage d'heure entre Montréal et Paris ?",
-      "reponse": "Le décalage horaire",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
-      "reponse": "Klô Pelgag",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel groupe québécois a parodié les années 80 à la télé ?",
-      "reponse": "RBO",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu télévisé québécois demande de repérer celui qui ment ?",
-      "reponse": "Le Tricheur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois jaser ?",
-      "reponse": "Bavarder",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on au Québec la coupe de cheveux courte devant et longue derrière ?",
-      "reponse": "La coupe Longueuil",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
-      "reponse": "Coup de Pouce",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
-      "reponse": "La Bolduc",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quels trois étages composent le pâté chinois ?",
-      "reponse": "Bœuf maïs patates",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel stade accueillait les Expos ?",
-      "reponse": "Stade olympique",
+      "question": "Quelle animatrice québécoise animait Le Banquier ?",
+      "reponse": "Julie Snyder",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -166,15 +129,21 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel océan sépare le Québec de l'Europe ?",
-      "reponse": "L'océan Atlantique",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas québécois se mange le midi ?",
+      "reponse": "Le dîner",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie niaiser quelqu'un, au Québec ?",
+      "reponse": "Le taquiner",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanson de Céline Dion ouvre par une flûte irlandaise ?",
-      "reponse": "My Heart Will Go On",
+      "question": "Quel groupe québécois chante Toune d'automne ?",
+      "reponse": "Cowboys Fringants",
       "niveau": 2,
       "ages": [
         "ados",
@@ -184,8 +153,24 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque de croustilles québécoise répète deux fois la même syllabe ?",
-      "reponse": "Yum Yum",
+      "question": "Quel prix récompense les artistes québécois au gala de l'ADISQ ?",
+      "reponse": "Le Félix",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit des détenues ?",
+      "reponse": "Unité 9",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle animatrice québécoise est surnommée Véro ?",
+      "reponse": "Véronique Cloutier",
       "niveau": 2,
       "ages": [
         "ados",
@@ -195,9 +180,15 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel repas se prend le soir au Québec ?",
-      "reponse": "Le souper",
+      "question": "Quelles galettes du déjeuner arrose-t-on de sirop d'érable ?",
+      "reponse": "Les crêpes",
       "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quels tambours se frappent en cercle dans les parcs de Montréal le dimanche ?",
+      "reponse": "Les tam-tams",
+      "niveau": 2
     }
   ]
 }

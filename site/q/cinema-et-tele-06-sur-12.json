@@ -8,50 +8,73 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle souris Disney est l'amoureuse de Mickey ?",
-      "reponse": "Minnie",
+      "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
+      "reponse": "Le Banquier",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel canard Disney porte un costume marin ?",
+      "reponse": "Donald",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel robot nettoyeur tombe amoureux d'EVE ?",
-      "reponse": "WALL-E",
+      "question": "Quel ours brun de dessin animé vole des paniers de pique-nique ?",
+      "reponse": "Yogi",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle méchante veut un manteau en dalmatiens ?",
+      "reponse": "Cruella",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel objet empoisonné croque Blanche-Neige ?",
-      "reponse": "Une pomme",
+      "question": "Quelle série animée japonaise oppose l'humanité à des géants derrière de hauts murs ?",
+      "reponse": "L'Attaque des Titans",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel personnage bleu sort de la lampe d'Aladdin ?",
+      "reponse": "Le génie",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel dinosaure vert craintif vit dans Toy Story ?",
+      "reponse": "Rex",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle dépanneuse rouillée est l'amie de Flash McQueen ?",
-      "reponse": "Mater",
+      "question": "Quelle princesse Mario doit-il sauver ?",
+      "reponse": "Peach",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film de 1977 s'ouvre sur « Il y a bien longtemps, dans une galaxie lointaine » ?",
-      "reponse": "La Guerre des étoiles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle souris aux grandes oreilles rondes est la mascotte de Disney ?",
-      "reponse": "Mickey Mouse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
-      "reponse": "Bob l'éponge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel poisson-clown cherche son fils dans l'océan ?",
-      "reponse": "Marin",
+      "question": "Quel homme élevé par les singes se balance de liane en liane ?",
+      "reponse": "Tarzan",
       "niveau": 1
     },
     {
@@ -62,38 +85,43 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle héroïne chinoise se déguise en soldat ?",
-      "reponse": "Mulan",
+      "question": "Quel cowboy jouet a un serpent dans sa botte ?",
+      "reponse": "Woody",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel vaisseau pilote Han Solo ?",
-      "reponse": "Faucon Millénium",
+      "question": "Quel objet empoisonné croque Blanche-Neige ?",
+      "reponse": "Une pomme",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle princesse polynésienne navigue avec Maui ?",
-      "reponse": "Moana",
+      "question": "Quel animal est Sven dans La Reine des neiges ?",
+      "reponse": "Un renne",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quels sont les deux héros de Toy Story ?",
-      "reponse": "Woody et Buzz",
+      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
+      "reponse": "Bob l'éponge",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
-      "reponse": "Caillou",
-      "niveau": 1
+      "question": "Quelle créature verte et mal lunée veut voler le Noël des Chou ?",
+      "reponse": "Le Grinch",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle famille du futur a un robot ménagère nommée Rosie ?",
-      "reponse": "Les Jetson",
+      "question": "Quel félin de dessin animé est né d'un générique de film ?",
+      "reponse": "La Panthère rose",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -102,46 +130,21 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel canard noir est le rival de Bugs Bunny ?",
-      "reponse": "Daffy Duck",
+      "question": "Quel ami de Winnie l'ourson est un tigre qui bondit sur sa queue ?",
+      "reponse": "Tigrou",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel gros chien rouge de livres pour enfants est devenu un film ?",
-      "reponse": "Clifford",
-      "niveau": 1,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Mario doit-il sauver ?",
-      "reponse": "Peach",
+      "question": "Quel acolyte de Batman porte un costume rouge et vert ?",
+      "reponse": "Robin",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quels quatre frères bandits affrontent Lucky Luke ?",
-      "reponse": "Les Dalton",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage de Sesame Street est un grand oiseau jaune ?",
-      "reponse": "Big Bird",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment s'appelle la chouette de Harry Potter ?",
+      "reponse": "Hedwige",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
@@ -151,19 +154,26 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film de 1975 a vidé les plages avec son requin géant ?",
-      "reponse": "Les Dents de la mer",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle émission fait courir des duos autour du monde ?",
+      "reponse": "Amazing Race",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel poisson bleu perd la mémoire dans Nemo ?",
-      "reponse": "Dory",
+      "question": "Quelle créature de Tolkien dit mon précieux ?",
+      "reponse": "Gollum",
       "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel magicien gris guide la Communauté de l'anneau ?",
+      "reponse": "Gandalf",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

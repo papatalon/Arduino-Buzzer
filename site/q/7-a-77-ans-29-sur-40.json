@@ -8,50 +8,31 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Combien de territoires compte le Canada ?",
-      "reponse": "Trois",
+      "question": "Comment appelle-t-on le passage creusé sous une montagne ou sous l'eau ?",
+      "reponse": "Un tunnel",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie en faire tout un fromage ?",
-      "reponse": "Exagérer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit rouge à noyau couronne un sundae ?",
-      "reponse": "La cerise",
-      "niveau": 1
+      "categorie": "Québec",
+      "question": "Quel lard frit croustillant sert-on à la cabane ?",
+      "reponse": "Oreilles de crisse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Où les enfants passent-ils leurs journées d'été avec des moniteurs ?",
-      "reponse": "Au camp de jour",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel jeu vidéo consiste à empiler des blocs qui tombent ?",
-      "reponse": "Tetris",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Que devient l'eau quand elle gèle ?",
-      "reponse": "De la glace",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport dit-on échec et mat ?",
-      "reponse": "Les échecs",
+      "question": "Quel appareil à deux boutons permet de se parler à distance en disant « à toi » ?",
+      "reponse": "Le walkie-talkie",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel repas se prend le soir au Québec ?",
-      "reponse": "Le souper",
+      "question": "Quelle confiserie d'érable se roule sur la neige ?",
+      "reponse": "La tire",
       "niveau": 1
     },
     {
@@ -61,79 +42,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel humoriste montréalais fait des spectacles bilingues ?",
-      "reponse": "Sugar Sammy",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle chenille fabrique un fil précieux en tissant son cocon ?",
-      "reponse": "Le ver à soie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on un être venu d'une autre planète ?",
-      "reponse": "Un extraterrestre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la trace d'un animal préhistorique conservée dans la pierre ?",
-      "reponse": "Un fossile",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quelle héroïne chinoise se déguise en soldat ?",
-      "reponse": "Mulan",
+      "question": "Quel petit robot rond accompagne C-3PO ?",
+      "reponse": "R2-D2",
       "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quoi est fait le fromage ?",
-      "reponse": "Du lait",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie les carottes sont cuites ?",
-      "reponse": "C'est fini",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel frère et quelle sœur de conte sèment des miettes de pain dans la forêt ?",
-      "reponse": "Hansel et Gretel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte soulève 50 fois son poids ?",
-      "reponse": "La fourmi",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glisse descend les pentes enneigées sur deux planches étroites ?",
-      "reponse": "Le ski",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie se tirer une bûche ?",
-      "reponse": "Prendre une chaise",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Culture générale",
@@ -147,16 +59,92 @@
       ]
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Que signifie se lever du mauvais pied ?",
+      "reponse": "Être de mauvaise humeur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel jeu vidéo consiste à empiler des blocs qui tombent ?",
+      "reponse": "Tetris",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la trace d'un animal préhistorique conservée dans la pierre ?",
+      "reponse": "Un fossile",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle chenille fabrique un fil précieux en tissant son cocon ?",
+      "reponse": "Le ver à soie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport dit-on échec et mat ?",
+      "reponse": "Les échecs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie mettre la table ?",
+      "reponse": "Préparer le repas",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quels carrés croustillants se versent dans un bol avec du lait le matin ?",
+      "reponse": "Les céréales",
+      "niveau": 1
+    },
+    {
       "categorie": "Québec",
-      "question": "Quel est le plus grand cervidé du Québec ?",
-      "reponse": "L'orignal",
+      "question": "Quelle soupe jaune est un classique québécois ?",
+      "reponse": "Soupe aux pois",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien de territoires compte le Canada ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte soulève 50 fois son poids ?",
+      "reponse": "La fourmi",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel mode exprime un ordre ?",
+      "reponse": "L'impératif",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel agent secret britannique aime les martinis ?",
-      "reponse": "James Bond",
+      "question": "Quel mage noir est l'ennemi de Harry Potter ?",
+      "reponse": "Voldemort",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boulette frite du Moyen-Orient est aux pois chiches ?",
+      "reponse": "Le falafel",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -165,9 +153,27 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le passage creusé sous une montagne ou sous l'eau ?",
-      "reponse": "Un tunnel",
+      "categorie": "Sports",
+      "question": "Quel pays a inventé le judo ?",
+      "reponse": "Le Japon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de glisse descend les pentes enneigées sur deux planches étroites ?",
+      "reponse": "Le ski",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel frère et quelle sœur de conte sèment des miettes de pain dans la forêt ?",
+      "reponse": "Hansel et Gretel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Que devient l'eau quand elle gèle ?",
+      "reponse": "De la glace",
       "niveau": 1
     }
   ]

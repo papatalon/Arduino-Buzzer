@@ -8,32 +8,95 @@
   "questions": [
     {
       "categorie": "Mots et langue",
-      "question": "Quel est le contraire de commencer ?",
-      "reponse": "Finir",
+      "question": "Que signifie les carottes sont cuites ?",
+      "reponse": "C'est fini",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel physicien a formulé E=mc2 ?",
+      "reponse": "Einstein",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Où se trouvent les pyramides de Gizeh ?",
+      "reponse": "En Égypte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Dans quel contenant rond et creux verse-t-on les céréales ?",
+      "reponse": "Le bol",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel réseau social publie des photos et des stories, avec un appareil photo comme logo ?",
+      "reponse": "Instagram",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel village de la Côte-Nord est réputé pour les baleines ?",
+      "reponse": "Tadoussac",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois barrer la porte ?",
-      "reponse": "Verrouiller",
+      "question": "Contraire d'avare, commençant par G ?",
+      "reponse": "Généreux",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Monnaie utilisée aux États-Unis ?",
+      "reponse": "Le dollar",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel véhicule tiré par des rennes livre les cadeaux ?",
-      "reponse": "Un traîneau",
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un ballon rond qu'on frappe du pied dans un but ?",
+      "reponse": "Le soccer",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel biscuit au chocolat cache une guimauve ?",
-      "reponse": "Le Whippet",
+      "categorie": "Cinéma et télé",
+      "question": "Quel monstre bleu et poilu travaille avec Mike ?",
+      "reponse": "Sulley",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment blanc, fait de lait, mange-t-on avec des fruits au déjeuner ?",
-      "reponse": "Le yogourt",
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du chien ?",
+      "reponse": "L'aboiement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami de Winnie l'ourson est un tigre qui bondit sur sa queue ?",
+      "reponse": "Tigrou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quelle ville vit Batman ?",
+      "reponse": "Gotham",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de hockey joue à Edmonton ?",
+      "reponse": "Les Oilers",
       "niveau": 1
     },
     {
@@ -48,65 +111,9 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel physicien a formulé E=mc2 ?",
-      "reponse": "Einstein",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle huile méditerranéenne est pressée d'un fruit ?",
-      "reponse": "Huile d'olive",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec un ballon rond qu'on frappe du pied dans un but ?",
-      "reponse": "Le soccer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Pluriel de travail ?",
-      "reponse": "Travaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel réseau social publie des photos et des stories, avec un appareil photo comme logo ?",
-      "reponse": "Instagram",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de cartes à collectionner fait évoluer des créatures de poche ?",
-      "reponse": "Pokémon",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Monnaie utilisée aux États-Unis ?",
-      "reponse": "Le dollar",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Edmonton ?",
-      "reponse": "Les Oilers",
+      "categorie": "Sciences et nature",
+      "question": "Quel pigment rend les plantes vertes ?",
+      "reponse": "La chlorophylle",
       "niveau": 1
     },
     {
@@ -116,35 +123,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée suit des chiots sauveteurs ?",
-      "reponse": "Pat' Patrouille",
-      "niveau": 1,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment s'appelait le village iroquois devenu Montréal ?",
-      "reponse": "Hochelaga",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel journaliste est l'identité secrète de Superman ?",
-      "reponse": "Clark Kent",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume jaune se mange en épi, au beurre et au sel ?",
+      "reponse": "Le maïs",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel pigment rend les plantes vertes ?",
-      "reponse": "La chlorophylle",
+      "categorie": "Culture pop",
+      "question": "Quel site de vente en ligne a une flèche souriante dans son logo ?",
+      "reponse": "Amazon",
       "niveau": 1
     },
     {
@@ -154,15 +141,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Où se trouvent les pyramides de Gizeh ?",
-      "reponse": "En Égypte",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel parc d'attractions se trouve à Montréal ?",
-      "reponse": "La Ronde",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat mexicain plie une tortilla garnie de viande et de fromage ?",
+      "reponse": "Le taco",
       "niveau": 1
     },
     {
@@ -172,15 +153,21 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la voiture de course des Bagnoles ?",
-      "reponse": "Flash McQueen",
-      "niveau": 1
-    },
-    {
       "categorie": "Musique",
       "question": "Comment appelle-t-on le musicien assis derrière ses caisses et ses cymbales ?",
       "reponse": "Un batteur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Sous quel grand chapiteau se donnent les numéros d'acrobates ?",
+      "reponse": "Le cirque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel pâté à la viande mange-t-on dans le temps des fêtes ?",
+      "reponse": "La tourtière",
       "niveau": 1
     }
   ]

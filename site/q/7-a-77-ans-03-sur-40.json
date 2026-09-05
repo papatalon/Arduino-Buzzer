@@ -7,115 +7,9 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel sport se pratique dans une piscine ?",
-      "reponse": "La natation",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit être ailé exauce parfois des vœux dans les contes ?",
-      "reponse": "Une fée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle exposition universelle a eu lieu à Montréal ?",
-      "reponse": "Expo 67",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle baie géante borde le nord du Québec ?",
-      "reponse": "Baie d'Hudson",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat de pâtes au fromage orange en boîte est célèbre au Canada ?",
-      "reponse": "Le Kraft Dinner",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel arbre produit des glands ?",
-      "reponse": "Le chêne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe a chanté Hey Jude et Let It Be ?",
-      "reponse": "Les Beatles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Sébastien dans La Petite Sirène ?",
-      "reponse": "Un crabe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a pour emblème le panda ?",
-      "reponse": "La Chine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel oncle jaloux trahit Mufasa ?",
-      "reponse": "Scar",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Masculin de poule ?",
-      "reponse": "Le coq",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
-      "reponse": "Orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle entreprise a créé l'iPhone ?",
-      "reponse": "Apple",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle forme donne-t-on au poisson pané pour les enfants ?",
-      "reponse": "Des bâtonnets",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel appareil diffuse de la musique et des nouvelles dans l'auto ?",
-      "reponse": "La radio",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel outil de plastique sert à dégager la neige de l'entrée ?",
-      "reponse": "Une pelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie « être têtu comme une mule » ?",
-      "reponse": "Être très têtu",
+      "question": "De quoi est fait le fromage ?",
+      "reponse": "Du lait",
       "niveau": 1
     },
     {
@@ -130,38 +24,33 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on celui qui garde un troupeau de moutons dans les champs ?",
-      "reponse": "Un berger",
+      "categorie": "Québec",
+      "question": "Quelle est la capitale nationale du Québec ?",
+      "reponse": "Québec",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelles chaussures de caoutchouc percées de trous divisent la planète ?",
-      "reponse": "Les Crocs",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Musique",
+      "question": "Quel appareil diffuse de la musique et des nouvelles dans l'auto ?",
+      "reponse": "La radio",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce brune très salée accompagne les sushis ?",
+      "reponse": "Sauce soya",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel héros court plus vite que tout le monde en rouge ?",
-      "reponse": "Flash",
+      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
+      "reponse": "Bugs Bunny",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie il pleut des cordes ?",
-      "reponse": "Il pleut très fort",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle vague géante suit parfois un séisme ?",
-      "reponse": "Le tsunami",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel bonbon rond se tient au bout d'un bâton ?",
+      "reponse": "Un suçon",
       "niveau": 1
     },
     {
@@ -171,9 +60,115 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit principal compose le ketchup ?",
-      "reponse": "La tomate",
+      "categorie": "Musique",
+      "question": "Quel groupe a chanté Hey Jude et Let It Be ?",
+      "reponse": "Les Beatles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le père des Simpson ?",
+      "reponse": "Homer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie poser un lapin ?",
+      "reponse": "Ne pas venir",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que porte-t-on sur le visage pour ne pas être reconnu à l'Halloween ?",
+      "reponse": "Un masque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a pour emblème le panda ?",
+      "reponse": "La Chine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de monter ?",
+      "reponse": "Descendre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on celui qui garde un troupeau de moutons dans les champs ?",
+      "reponse": "Un berger",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Sven dans La Reine des neiges ?",
+      "reponse": "Un renne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle boisson pour sportifs a un éclair dans son logo ?",
+      "reponse": "Le Gatorade",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se pratique dans une piscine ?",
+      "reponse": "La natation",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de haut ?",
+      "reponse": "Bas",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle entreprise a créé l'iPhone ?",
+      "reponse": "Apple",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle vague géante suit parfois un séisme ?",
+      "reponse": "Le tsunami",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel jardin montréalais est parmi les plus grands au monde ?",
+      "reponse": "Jardin botanique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
+      "reponse": "Orange",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel arbre produit des glands ?",
+      "reponse": "Le chêne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle baie géante borde le nord du Québec ?",
+      "reponse": "Baie d'Hudson",
       "niveau": 1
     }
   ]

@@ -7,44 +7,61 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel style de musique passe le plus souvent à la radio et fait danser tout le monde ?",
-      "reponse": "La pop",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
-      "question": "Quel dessert de la cabane à sucre se roule sur la neige avec un bâton ?",
-      "reponse": "La tire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
-      "reponse": "Les Boys",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel minuscule oiseau peut voler en arrière ?",
-      "reponse": "Le colibri",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel est le matricule de James Bond ?",
-      "reponse": "007",
+      "question": "Quelle émission satirique anime Jean-René Dufort ?",
+      "reponse": "Infoman",
       "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on les longs cônes de glace qui pendent des toits ?",
+      "reponse": "Des glaçons",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien de provinces compte le Canada ?",
+      "reponse": "Dix",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine de la pizza ?",
+      "reponse": "L'Italie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel beurre de noix est interdit dans les écoles ?",
+      "reponse": "Beurre d'arachide",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson gazeuse brune est née à Atlanta ?",
+      "reponse": "Le Coca-Cola",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel appareil sèche les vêtements après le lavage ?",
+      "reponse": "La sécheuse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle marionnette verte du Muppet Show anime le spectacle ?",
+      "reponse": "Kermit",
+      "niveau": 1
+    },
+    {
       "categorie": "Musique",
-      "question": "Quel instrument à soufflet et à touches anime les fêtes de famille ?",
-      "reponse": "L'accordéon",
+      "question": "Quel style de musique passe le plus souvent à la radio et fait danser tout le monde ?",
+      "reponse": "La pop",
       "niveau": 1
     },
     {
@@ -54,9 +71,20 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert italien contient du café et du mascarpone ?",
-      "reponse": "Le tiramisu",
+      "categorie": "Mots et langue",
+      "question": "Que signifie être au bout du rouleau ?",
+      "reponse": "Être épuisé",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel pirate est joué par Johnny Depp ?",
+      "reponse": "Jack Sparrow",
       "niveau": 1,
       "ages": [
         "ados",
@@ -71,15 +99,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Pluriel de œil ?",
-      "reponse": "Yeux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment surnomme-t-on la fête du 24 juin ?",
-      "reponse": "La Saint-Jean",
+      "categorie": "Cinéma et télé",
+      "question": "Quel animateur québécois a longtemps animé Tout le monde en parle ?",
+      "reponse": "Guy A. Lepage",
       "niveau": 1
     },
     {
@@ -87,39 +109,6 @@
       "question": "Quelle est la nage la plus rapide ?",
       "reponse": "Le crawl",
       "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson gazeuse brune est née à Atlanta ?",
-      "reponse": "Le Coca-Cola",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir du pain sur la planche ?",
-      "reponse": "Beaucoup de travail",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel pouvoir Elsa doit-elle cacher au début de La Reine des neiges ?",
-      "reponse": "La glace",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Sur quelle plateforme les jeunes jouent-ils à des millions de jeux créés par d'autres joueurs ?",
-      "reponse": "Roblox",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
     },
     {
       "categorie": "Géographie",
@@ -139,9 +128,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle équipe de chiots secouristes intervient à la Grande Vallée ?",
-      "reponse": "La Pat' Patrouille",
+      "categorie": "Culture générale",
+      "question": "Sur quelle plateforme les jeunes jouent-ils à des millions de jeux créés par d'autres joueurs ?",
+      "reponse": "Roblox",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -149,21 +138,9 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne une tempête de neige ?",
-      "reponse": "Une bordée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel insecte fabrique le miel ?",
-      "reponse": "L'abeille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien de provinces compte le Canada ?",
-      "reponse": "Dix",
+      "categorie": "Musique",
+      "question": "Quel instrument à soufflet et à touches anime les fêtes de famille ?",
+      "reponse": "L'accordéon",
       "niveau": 1
     },
     {
@@ -174,15 +151,38 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la peluche dont un enfant ne se sépare jamais ?",
-      "reponse": "Une doudou",
+      "question": "Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?",
+      "reponse": "La tire sur la neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel minuscule oiseau peut voler en arrière ?",
+      "reponse": "Le colibri",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Combien de lettres muettes dans le mot loup ?",
-      "reponse": "Une",
+      "question": "Comment s'appelle le petit du canard ?",
+      "reponse": "Le caneton",
       "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel signe de ponctuation termine une phrase ordinaire ?",
+      "reponse": "Le point",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quel film d'animation une famille colombienne vit-elle dans une maison magique ?",
+      "reponse": "Encanto",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     }
   ]
 }

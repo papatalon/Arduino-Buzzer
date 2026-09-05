@@ -7,31 +7,9 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quel hébergement québécois est rebâti chaque hiver ?",
-      "reponse": "Hôtel de glace",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel mot répète Sheldon en cognant à la porte ?",
-      "reponse": "Penny",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la pizza ?",
-      "reponse": "L'Italie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle mer sépare l'Europe de l'Afrique ?",
-      "reponse": "La Méditerranée",
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois magasiner ?",
+      "reponse": "Faire des achats",
       "niveau": 1
     },
     {
@@ -41,34 +19,44 @@
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on l'école qui suit le primaire, pendant cinq ans ?",
-      "reponse": "Le secondaire",
+      "categorie": "Culture pop",
+      "question": "Quelle entreprise japonaise a créé Mario et Zelda ?",
+      "reponse": "Nintendo",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quelle ville vivent les Simpson ?",
+      "reponse": "Springfield",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel métal les aimants attirent-ils ?",
+      "reponse": "Le fer",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume en longues tiges vertes croque avec du beurre d'arachide ?",
-      "reponse": "Le céleri",
+      "question": "Sur quoi dépose-t-on son repas à table ?",
+      "reponse": "Une assiette",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle créature à écailles crache du feu et garde un trésor ?",
-      "reponse": "Un dragon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Golden Gate ?",
-      "reponse": "San Francisco",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le signe rond ou ovale posé sur la portée ?",
-      "reponse": "Une note de musique",
-      "niveau": 1
+      "categorie": "Québec",
+      "question": "Comment s'appelait le village iroquois devenu Montréal ?",
+      "reponse": "Hochelaga",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -83,8 +71,8 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle l'école de Harry Potter ?",
-      "reponse": "Poudlard",
+      "question": "De quelle couleur sont les Simpson ?",
+      "reponse": "Jaunes",
       "niveau": 1
     },
     {
@@ -94,54 +82,21 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Dans Minecraft, quelle pierre bleue sert à fabriquer les meilleurs outils ?",
-      "reponse": "Le diamant",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon au chandail à zigzag est le maître de Snoopy ?",
-      "reponse": "Charlie Brown",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie « être rouge comme une tomate » ?",
-      "reponse": "Être gêné",
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la petite bille de chocolat qu'on met dans les biscuits ?",
+      "reponse": "Une pépite",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien de couleurs sur le drapeau français ?",
-      "reponse": "Trois",
+      "categorie": "Géographie",
+      "question": "Quelle mer sépare l'Europe de l'Afrique ?",
+      "reponse": "La Méditerranée",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Le pluriel de pneu prend un S ou un X ?",
-      "reponse": "Un S",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Que doit-on porter sur la tête avant de partir à vélo ?",
-      "reponse": "Un casque de vélo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel métal les aimants attirent-ils ?",
-      "reponse": "Le fer",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le signe rond ou ovale posé sur la portée ?",
+      "reponse": "Une note de musique",
       "niveau": 1
     },
     {
@@ -151,15 +106,33 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle chaîne de restaurants a des arches dorées ?",
-      "reponse": "McDonald's",
+      "categorie": "Sports",
+      "question": "Que doit-on porter sur la tête avant de partir à vélo ?",
+      "reponse": "Un casque de vélo",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel navigateur a traversé l'Atlantique en 1492 et atteint l'Amérique ?",
-      "reponse": "Christophe Colomb",
+      "categorie": "Culture pop",
+      "question": "Quel jeu de tour en bois s'effondre quand on retire la mauvaise pièce ?",
+      "reponse": "Jenga",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment s'appelle le petit de l'éléphant ?",
+      "reponse": "L'éléphanteau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Golden Gate ?",
+      "reponse": "San Francisco",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de couleurs sur le drapeau français ?",
+      "reponse": "Trois",
       "niveau": 1
     },
     {
@@ -169,9 +142,33 @@
       "niveau": 1
     },
     {
+      "categorie": "Histoire",
+      "question": "Quel navigateur a traversé l'Atlantique en 1492 et atteint l'Amérique ?",
+      "reponse": "Christophe Colomb",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel pirate est l'ennemi juré de Peter Pan ?",
+      "reponse": "Capitaine Crochet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel condiment jaune accompagne le hot-dog ?",
+      "reponse": "La moutarde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le relevé de notes remis trois fois par année aux parents ?",
+      "reponse": "Le bulletin",
+      "niveau": 1
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Que signifie avoir des papillons dans le ventre ?",
-      "reponse": "Être nerveux",
+      "question": "Comment appelle-t-on la personne qui enseigne dans une classe ?",
+      "reponse": "L'enseignant",
       "niveau": 1
     }
   ]

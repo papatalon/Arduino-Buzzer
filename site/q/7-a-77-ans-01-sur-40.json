@@ -7,85 +7,26 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Culture générale",
-      "question": "Quel cheval mythologique a des ailes ?",
-      "reponse": "Pégase",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
-      "reponse": "L'étoile de mer",
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le petit chien blanc de Tintin ?",
+      "reponse": "Milou",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel agrume jaune très acide accompagne les poissons ?",
-      "reponse": "Le citron",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel objet à manche et à cordes frappe la balle au tennis ?",
-      "reponse": "Une raquette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles petites portions espagnoles se partagent ?",
-      "reponse": "Les tapas",
+      "question": "Quel plat de pâtes au fromage orange en boîte est célèbre au Canada ?",
+      "reponse": "Le Kraft Dinner",
       "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style musical est né dans les églises noires américaines ?",
-      "reponse": "Le gospel",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on au Québec la maison de vacances au bord d'un lac ?",
-      "reponse": "Le chalet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du cerf ?",
-      "reponse": "Le faon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel personnage de conte a une lampe magique ?",
-      "reponse": "Aladin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le match qui décide du championnat ?",
-      "reponse": "La finale",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on un groupe de personnes qui chantent ensemble ?",
-      "reponse": "Une chorale",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne parle surtout français ?",
-      "reponse": "Le Québec",
+      "question": "Quelle ville canadienne abrite la Tour CN ?",
+      "reponse": "Toronto",
       "niveau": 1
     },
     {
@@ -95,39 +36,32 @@
       "niveau": 1
     },
     {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le match qui décide du championnat ?",
+      "reponse": "La finale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel écureuil de L'Ère de glace court sans cesse après son gland ?",
+      "reponse": "Scrat",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
       "categorie": "Québec",
-      "question": "Dans quel stade le CF Montréal joue-t-il ses matchs ?",
-      "reponse": "Le Stade Saputo",
+      "question": "Quel restaurant montréalais est célèbre pour son smoked meat ?",
+      "reponse": "Schwartz",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie donner sa langue au chat ?",
-      "reponse": "Renoncer à deviner",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Qui est le père de Luke Skywalker ?",
-      "reponse": "Dark Vador",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment s'appelle le petit du lion ?",
-      "reponse": "Le lionceau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville canadienne abrite la Tour CN ?",
-      "reponse": "Toronto",
-      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -141,15 +75,50 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
-      "reponse": "Une sirène",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on un groupe de personnes qui chantent ensemble ?",
+      "reponse": "Une chorale",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel père de famille travaille dans une centrale nucléaire ?",
-      "reponse": "Homer Simpson",
+      "categorie": "Culture générale",
+      "question": "Quel cheval mythologique a des ailes ?",
+      "reponse": "Pégase",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil garde le lait et les légumes au froid ?",
+      "reponse": "Le réfrigérateur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que veut dire « embarquer » dans une auto, au Québec ?",
+      "reponse": "Monter dedans",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment dit-on « merci » en espagnol ?",
+      "reponse": "Gracias",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style musical est né dans les églises noires américaines ?",
+      "reponse": "Le gospel",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
+      "reponse": "L'étoile de mer",
       "niveau": 1
     },
     {
@@ -159,21 +128,57 @@
       "niveau": 1
     },
     {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne parle surtout français ?",
+      "reponse": "Le Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Contraire de bruyant, commençant par S ?",
+      "reponse": "Silencieux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel objet à manche et à cordes frappe la balle au tennis ?",
+      "reponse": "Une raquette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel personnage de conte a une lampe magique ?",
+      "reponse": "Aladin",
+      "niveau": 1
+    },
+    {
       "categorie": "Bouffe et cuisine",
-      "question": "Dans quel contenant rond et creux verse-t-on les céréales ?",
-      "reponse": "Le bol",
+      "question": "Quel fruit rond porte le nom de sa couleur ?",
+      "reponse": "L'orange",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel pirate est l'ennemi juré de Peter Pan ?",
-      "reponse": "Capitaine Crochet",
+      "question": "Quelle amie brillante accompagne Harry et Ron ?",
+      "reponse": "Hermione",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
       "question": "Quel muscle bat sans jamais se reposer ?",
       "reponse": "Le cœur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel carré noir et blanc se scanne avec la caméra du téléphone ?",
+      "reponse": "Un code QR",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir une faim de loup ?",
+      "reponse": "Avoir très faim",
       "niveau": 1
     }
   ]

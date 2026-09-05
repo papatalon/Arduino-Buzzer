@@ -7,154 +7,9 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel trophée remporte le champion de la LNH ?",
-      "reponse": "La coupe Stanley",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle confiserie blanche flotte sur le chocolat chaud ?",
-      "reponse": "La guimauve",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
-      "reponse": "Le Grand Nord",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve traverse Londres ?",
-      "reponse": "La Tamise",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la petite fille hawaïenne qui adopte Stitch ?",
-      "reponse": "Lilo",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport pousse un canot avec une pagaie à deux palettes ?",
-      "reponse": "Le kayak",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du croissant ?",
-      "reponse": "La France",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle partie de l'œil donne sa couleur ?",
-      "reponse": "L'iris",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle est la capitale nationale du Québec ?",
-      "reponse": "Québec",
-      "niveau": 1
-    },
-    {
       "categorie": "Histoire",
       "question": "Quelle journée du 11 novembre honore la mémoire des soldats ?",
       "reponse": "Le jour du Souvenir",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission de Radio-Canada enquête sur ce qu'on met dans notre assiette ?",
-      "reponse": "L'épicerie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel premier ministre britannique fumait le cigare pendant la guerre ?",
-      "reponse": "Churchill",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment dit-on « merci » en espagnol ?",
-      "reponse": "Gracias",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la banque coopérative très répandue au Québec ?",
-      "reponse": "La caisse populaire",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe canadien a chanté American Woman ?",
-      "reponse": "The Guess Who",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle fleur offre-t-on à la Saint-Valentin ?",
-      "reponse": "La rose",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est l'os le plus long du corps humain ?",
-      "reponse": "Le fémur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film de Noël un train magique emmène-t-il des enfants au pôle Nord ?",
-      "reponse": "Le Pôle Express",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de planètes dans le système solaire ?",
-      "reponse": "Huit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'orchestre qui défile en jouant dans une parade ?",
-      "reponse": "Une fanfare",
       "niveau": 2
     },
     {
@@ -178,10 +33,149 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel mot québécois désigne une fête ?",
-      "reponse": "Un party",
+      "categorie": "Québec",
+      "question": "Quel grand marché public borde la Petite Italie ?",
+      "reponse": "Jean-Talon",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est l'os le plus long du corps humain ?",
+      "reponse": "Le fémur",
       "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre britannique fumait le cigare pendant la guerre ?",
+      "reponse": "Churchill",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle fleur offre-t-on à la Saint-Valentin ?",
+      "reponse": "La rose",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil de poche vibrait pour dire de rappeler quelqu'un, avant le cellulaire ?",
+      "reponse": "Le téléavertisseur",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
+      "reponse": "Le Grand Nord",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel acteur canadien incarne Deadpool au cinéma ?",
+      "reponse": "Ryan Reynolds",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte jaune tirée de la crème se tartine sur le pain ?",
+      "reponse": "Le beurre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel musée montréalais expose des insectes vivants et naturalisés ?",
+      "reponse": "L'Insectarium",
+      "niveau": 2
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on un mot lisible dans les deux sens ?",
+      "reponse": "Un palindrome",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'orchestre qui défile en jouant dans une parade ?",
+      "reponse": "Une fanfare",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle créature verte vit dans un marais ?",
+      "reponse": "Shrek",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle technologie sans fil relie des écouteurs à un téléphone à quelques mètres ?",
+      "reponse": "Le Bluetooth",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de planètes dans le système solaire ?",
+      "reponse": "Huit",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie « être rouge comme une tomate » ?",
+      "reponse": "Être gêné",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée remporte le champion de la LNH ?",
+      "reponse": "La coupe Stanley",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve traverse Londres ?",
+      "reponse": "La Tamise",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie de l'œil donne sa couleur ?",
+      "reponse": "L'iris",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -195,9 +189,29 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel objet rond et plat se lance à deux dans un parc l'été ?",
-      "reponse": "Un frisbee",
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine du fromage gouda ?",
+      "reponse": "Les Pays-Bas",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe canadien a chanté American Woman ?",
+      "reponse": "The Guess Who",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport pousse un canot avec une pagaie à deux palettes ?",
+      "reponse": "Le kayak",
       "niveau": 1
     }
   ]

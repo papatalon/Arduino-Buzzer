@@ -7,102 +7,14 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Géographie",
-      "question": "Quelle est la capitale de la province de Québec ?",
-      "reponse": "La ville de Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on une chanson enregistrée avec deux artistes vedettes ?",
-      "reponse": "Un duo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel objet québécois fait disparaître les traits de crayon sur le papier ?",
-      "reponse": "Une efface",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment dit-on « merci » en anglais ?",
-      "reponse": "Thank you",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle plante piquante pousse dans le désert ?",
-      "reponse": "Le cactus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel condiment crémeux se fait d'œufs et d'huile ?",
-      "reponse": "La mayonnaise",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Dans quel jeu vidéo aménage-t-on une île en remboursant un raton laveur ?",
-      "reponse": "Animal Crossing",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on l'habit qu'on enfile pour se transformer en personnage ?",
-      "reponse": "Un déguisement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "De quelle couleur les océans sont-ils dessinés sur une carte ?",
-      "reponse": "Bleus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Comment appelle-t-on le grand navire qui emmène des passagers en croisière ?",
-      "reponse": "Un paquebot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur incarne Rocky Balboa ?",
-      "reponse": "Stallone",
+      "categorie": "Histoire",
+      "question": "Quelle crise économique a suivi le krach de 1929 ?",
+      "reponse": "La Grande Dépression",
       "niveau": 1,
       "ages": [
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
-      "reponse": "Le slalom",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot de même sens ?",
-      "reponse": "Un synonyme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle couleur obtient-on en mélangeant du bleu et du jaune ?",
-      "reponse": "Vert",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
-      "reponse": "Le raton laveur",
-      "niveau": 1
     },
     {
       "categorie": "Musique",
@@ -116,42 +28,21 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel jeu de cour d'école consiste à courir après les autres pour les toucher ?",
-      "reponse": "La tag",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quels bonbons mous et colorés collent aux dents ?",
+      "reponse": "Les jujubes",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
-      "reponse": "La tire d'érable",
+      "categorie": "Culture générale",
+      "question": "Comment appelle-t-on le grand navire qui emmène des passagers en croisière ?",
+      "reponse": "Un paquebot",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle crise économique a suivi le krach de 1929 ?",
-      "reponse": "La Grande Dépression",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage de Sesame Street est un grand oiseau jaune ?",
-      "reponse": "Big Bird",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle célèbre soupe française est gratinée ?",
-      "reponse": "Soupe à l'oignon",
+      "categorie": "Sciences et nature",
+      "question": "Quel acide donne son goût au citron ?",
+      "reponse": "L'acide citrique",
       "niveau": 1,
       "ages": [
         "ados",
@@ -161,26 +52,143 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment dit-on « oui » en espagnol ?",
-      "reponse": "Sí",
+      "question": "Que signifie manger comme un cochon ?",
+      "reponse": "Manger salement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature à écailles crache du feu et garde un trésor ?",
+      "reponse": "Un dragon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chiot dalmatien de la Pat' Patrouille est pompier ?",
+      "reponse": "Marcus",
+      "niveau": 1,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de cour d'école consiste à courir après les autres pour les toucher ?",
+      "reponse": "La tag",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel chou fermenté accompagne les saucisses en Alsace ?",
+      "reponse": "La choucroute",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Dans quel jeu vidéo aménage-t-on une île en remboursant un raton laveur ?",
+      "reponse": "Animal Crossing",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on une chanson enregistrée avec deux artistes vedettes ?",
+      "reponse": "Un duo",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle tarte du terroir québécois se fait avec de la cassonade et de la crème ?",
-      "reponse": "La tarte au sucre",
+      "question": "Quel sirop est une spécialité du Québec ?",
+      "reponse": "Le sirop d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir un coup de foudre ?",
+      "reponse": "Tomber amoureux",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Complétez : les chaussettes de l'archiduchesse sont-elles...",
+      "reponse": "Sèches archi-sèches",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante piquante pousse dans le désert ?",
+      "reponse": "Le cactus",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la capitale de la province de Québec ?",
+      "reponse": "La ville de Québec",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois familier remplace « très froid » ?",
-      "reponse": "Frette",
+      "question": "Quel traîneau de bois aux lattes recourbées glisse sur la neige au Québec ?",
+      "reponse": "La traîne sauvage",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle forme creusée dans la neige sert de cachette aux enfants ?",
-      "reponse": "Un fort de neige",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
+      "reponse": "Le raton laveur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
+      "reponse": "Le slalom",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel montagnard accompagne Anna avec son renne dans La Reine des neiges ?",
+      "reponse": "Kristoff",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "De quelle couleur les océans sont-ils dessinés sur une carte ?",
+      "reponse": "Bleus",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Sébastien dans La Petite Sirène ?",
+      "reponse": "Un crabe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel vêtement protège les habits quand on cuisine ?",
+      "reponse": "Un tablier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle couleur obtient-on en mélangeant du bleu et du jaune ?",
+      "reponse": "Vert",
       "niveau": 1
     }
   ]

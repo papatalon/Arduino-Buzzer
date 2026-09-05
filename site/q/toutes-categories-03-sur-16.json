@@ -7,10 +7,43 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Culture générale",
-      "question": "Combien de côtés a un carré ?",
-      "reponse": "Quatre",
+      "categorie": "Cinéma et télé",
+      "question": "Quel animateur québécois a longtemps animé Tout le monde en parle ?",
+      "reponse": "Guy A. Lepage",
       "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Combien de députés siègent à l'Assemblée nationale ?",
+      "reponse": "125",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle semoule accompagne les plats du Maghreb ?",
+      "reponse": "Le couscous",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot toboggan ?",
+      "reponse": "Langues autochtones",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -24,25 +57,9 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel phénomène lumineux colore le ciel polaire ?",
-      "reponse": "Aurore boréale",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel secteur de Montréal regroupe salles de spectacle et festivals au centre-ville ?",
-      "reponse": "Le Quartier des spectacles",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie il pleut des cordes ?",
-      "reponse": "Il pleut très fort",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil lave les assiettes à notre place ?",
+      "reponse": "Le lave-vaisselle",
       "niveau": 1
     },
     {
@@ -50,22 +67,6 @@
       "question": "Comment appelle-t-on un ensemble de deux souliers ou de deux bas ?",
       "reponse": "Une paire",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays voisin de la France et de l'Italie parle-t-on quatre langues officielles ?",
-      "reponse": "La Suisse",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich vietnamien se sert dans une baguette ?",
-      "reponse": "Le banh mi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
     },
     {
       "categorie": "Histoire",
@@ -76,46 +77,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Qui était le chanteur de Queen ?",
-      "reponse": "Freddie Mercury",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel cahier à anneaux range les feuilles de chaque matière ?",
-      "reponse": "Un cartable",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal de ferme, très bavard, accompagne Shrek partout ?",
-      "reponse": "L'âne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?",
-      "reponse": "Le Bossu de Notre-Dame",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on un conflit où presque tous les pays du monde se battent ?",
-      "reponse": "Une guerre mondiale",
-      "niveau": 2
     },
     {
       "categorie": "Musique",
@@ -135,59 +96,10 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel défi a fait verser des seaux d'eau glacée sur des têtes en 2014 ?",
-      "reponse": "Le Ice Bucket Challenge",
+      "question": "Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?",
+      "reponse": "Alys Robi",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chien accompagne Dorothy dans le Magicien d'Oz ?",
-      "reponse": "Toto",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel instrument sert à observer les étoiles ?",
-      "reponse": "Le télescope",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat marocain cuit dans un plat conique ?",
-      "reponse": "Le tajine",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle île au milieu du Saint-Laurent est célèbre pour ses produits ?",
-      "reponse": "Île d'Orléans",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle compagnie de fourrures rivalisait avec la Baie d'Hudson ?",
-      "reponse": "Nord-Ouest",
-      "niveau": 3,
-      "ages": [
-        "adultes",
         "aines"
       ]
     },
@@ -203,21 +115,104 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on celui qui fabrique des gâteaux ?",
-      "reponse": "Le pâtissier",
-      "niveau": 1
+      "categorie": "Québec",
+      "question": "Quelle rue étroite du Vieux-Québec est très photographiée ?",
+      "reponse": "Petit-Champlain",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat hongrois est un ragoût au paprika ?",
-      "reponse": "Le goulasch",
+      "categorie": "Musique",
+      "question": "Qui était le chanteur de Queen ?",
+      "reponse": "Freddie Mercury",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie « dormir comme une marmotte » ?",
+      "reponse": "Dormir profondément",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de côtés a un carré ?",
+      "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on un conflit où presque tous les pays du monde se battent ?",
+      "reponse": "Une guerre mondiale",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel secteur de Montréal regroupe salles de spectacle et festivals au centre-ville ?",
+      "reponse": "Le Quartier des spectacles",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel héros a été piqué par une araignée ?",
+      "reponse": "Spider-Man",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel instrument sert à observer les étoiles ?",
+      "reponse": "Le télescope",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel mot répète Sheldon en cognant à la porte ?",
+      "reponse": "Penny",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays voisin de la France et de l'Italie parle-t-on quatre langues officielles ?",
+      "reponse": "La Suisse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
+      "reponse": "Le pain doré",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chef québécois donne son prénom à un magazine, une émission et une gamme de produits ?",
+      "reponse": "Ricardo",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène lumineux colore le ciel polaire ?",
+      "reponse": "Aurore boréale",
+      "niveau": 1
     }
   ]
 }

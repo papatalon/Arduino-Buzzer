@@ -18,16 +18,6 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu vidéo se joue avec une guitare de plastique à cinq boutons ?",
-      "reponse": "Guitar Hero",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
       "question": "Quel mot québécois remplace « chat » pour une conversation écrite en ligne ?",
       "reponse": "Le clavardage",
       "niveau": 3,
@@ -39,21 +29,30 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque de café a une sirène verte dans son logo ?",
-      "reponse": "Starbucks",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle attraction de parc aquatique fait descendre un long tube en spirale ?",
-      "reponse": "La glissade d'eau",
-      "niveau": 1
+      "question": "Quelle friandise glacée se vend en tube de plastique à congeler ?",
+      "reponse": "Le Mr. Freeze",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Culture pop",
       "question": "Quel jouet d'été arrose les amis d'un jet d'eau ?",
       "reponse": "Un pistolet à eau",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de pneus a un bonhomme tout rond fait de bourrelets ?",
+      "reponse": "Michelin",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
@@ -67,9 +66,34 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on l'habit qu'on enfile pour se transformer en personnage ?",
-      "reponse": "Un déguisement",
-      "niveau": 1
+      "question": "Quelle boisson pour sportifs a un éclair dans son logo ?",
+      "reponse": "Le Gatorade",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu vidéo se joue avec une guitare de plastique à cinq boutons ?",
+      "reponse": "Guitar Hero",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jouet tire des fléchettes de mousse ?",
+      "reponse": "Les Nerf",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Culture pop",
@@ -83,22 +107,24 @@
     },
     {
       "categorie": "Culture pop",
+      "question": "Quelle attraction de parc aquatique fait descendre un long tube en spirale ?",
+      "reponse": "La glissade d'eau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on l'habit qu'on enfile pour se transformer en personnage ?",
+      "reponse": "Un déguisement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
       "question": "Quelle boisson gazeuse a longtemps servi de surnom moqueur aux Québécois ?",
       "reponse": "Le Pepsi",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jouet tire des fléchettes de mousse ?",
-      "reponse": "Les Nerf",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
       ]
     },
     {
@@ -124,35 +150,18 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque de pneus a un bonhomme tout rond fait de bourrelets ?",
-      "reponse": "Michelin",
-      "niveau": 2,
+      "question": "Quel panier passait dans les rangs pendant la messe du dimanche ?",
+      "reponse": "La quête",
+      "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle boisson pour sportifs a un éclair dans son logo ?",
-      "reponse": "Le Gatorade",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle friandise glacée se vend en tube de plastique à congeler ?",
-      "reponse": "Le Mr. Freeze",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "question": "Quelle marque de vêtements de sport a une virgule pour logo ?",
+      "reponse": "Nike",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -162,15 +171,6 @@
       "ages": [
         "ados",
         "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel panier passait dans les rangs pendant la messe du dimanche ?",
-      "reponse": "La quête",
-      "niveau": 3,
-      "ages": [
         "aines"
       ]
     },

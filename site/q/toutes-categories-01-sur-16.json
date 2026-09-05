@@ -8,14 +8,138 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson gazeuse au gingembre est célèbre au Canada ?",
-      "reponse": "Le ginger ale (Canada Dry)",
+      "question": "Pays d'origine de la pizza ?",
+      "reponse": "L'Italie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que porte un astronaute pour survivre dans l'espace ?",
+      "reponse": "Un scaphandre",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
+      "reponse": "Le kitesurf",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus long fleuve du Canada ?",
+      "reponse": "Le Mackenzie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel bâtiment de bois entouré d'une palissade protégeait les postes de traite ?",
+      "reponse": "Le fort",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel dramaturge québécois a écrit Les Belles-Sœurs ?",
+      "reponse": "Michel Tremblay",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le petit chien blanc de Tintin ?",
+      "reponse": "Milou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle ardoise à deux boutons dessine des traits et s'efface en la secouant ?",
+      "reponse": "Le Télécran",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel outil de fer servait à abattre les arbres pour défricher la terre ?",
+      "reponse": "La hache",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur américain a chanté Uptown Funk et Just the Way You Are ?",
+      "reponse": "Bruno Mars",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
+      "reponse": "Le CF Montréal",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment appelle-t-on les petits personnages bleus qui vivent dans des champignons ?",
+      "reponse": "Les Schtroumpfs",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
       "question": "Combien font deux plus deux ?",
       "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
+      "reponse": "Une fusée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Langue parlée en Égypte ?",
+      "reponse": "L'arabe",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle romancière a créé Hercule Poirot ?",
+      "reponse": "Agatha Christie",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle saison fait tomber les feuilles des arbres ?",
+      "reponse": "L'automne",
       "niveau": 1
     },
     {
@@ -31,162 +155,6 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quels animaux revivent dans Jurassic Park ?",
-      "reponse": "Les dinosaures",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée en Égypte ?",
-      "reponse": "L'arabe",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus long fleuve du Canada ?",
-      "reponse": "Le Mackenzie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle saison fait tomber les feuilles des arbres ?",
-      "reponse": "L'automne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle application d'appels vidéo est devenue incontournable pendant la pandémie ?",
-      "reponse": "Zoom",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur américain a chanté Uptown Funk et Just the Way You Are ?",
-      "reponse": "Bruno Mars",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
-      "reponse": "Une fusée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir les yeux dans la graisse de bines ?",
-      "reponse": "Être dans la lune",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que veut dire l'expression québécoise « c'est plate » ?",
-      "reponse": "C'est ennuyant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel outil de fer servait à abattre les arbres pour défricher la terre ?",
-      "reponse": "La hache",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle romancière a créé Hercule Poirot ?",
-      "reponse": "Agatha Christie",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Que porte un astronaute pour survivre dans l'espace ?",
-      "reponse": "Un scaphandre",
-      "niveau": 3
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée japonaise suit un garçon qui pourfend des démons au sabre ?",
-      "reponse": "Demon Slayer",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Où pêche-t-on la célèbre crevette nordique québécoise ?",
-      "reponse": "À Matane",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fête de juin invite les gens d'une même rue à se rassembler ?",
-      "reponse": "La fête des voisins",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Vert, verre et vers sont des exemples de quoi ?",
-      "reponse": "Homophones",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel animateur québécois mène une émission de musique en direct avec un band maison ?",
-      "reponse": "Normand Brathwaite",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel bâtiment de bois entouré d'une palissade protégeait les postes de traite ?",
-      "reponse": "Le fort",
-      "niveau": 2
-    },
-    {
       "categorie": "Sciences et nature",
       "question": "Quel métal précieux conduit le mieux l'électricité ?",
       "reponse": "L'argent",
@@ -198,20 +166,51 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
-      "reponse": "Le kitesurf",
-      "niveau": 3,
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'emploi temporaire qu'un étudiant occupe l'été ?",
+      "reponse": "Une job d'été",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
-      "reponse": "Le CF Montréal",
-      "niveau": 1,
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la femelle du sanglier ?",
+      "reponse": "La laie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit pingouin de dessin animé porte une salopette et va à la garderie ?",
+      "reponse": "T'choupi",
+      "niveau": 2,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert sicilien est un rouleau fourré à la ricotta ?",
+      "reponse": "Le cannoli",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quelle figure de style compare sans mot de comparaison ?",
+      "reponse": "La métaphore",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",

@@ -8,49 +8,47 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel héros Marvel rétrécit à la taille d'une fourmi ?",
-      "reponse": "Ant-Man",
+      "question": "Quel réalisateur canadien a fait Titanic et Avatar ?",
+      "reponse": "James Cameron",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel marin barbu et grognon accompagne Tintin dans ses aventures ?",
+      "reponse": "Le capitaine Haddock",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel journaliste est l'identité secrète de Superman ?",
+      "reponse": "Clark Kent",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel canard Disney porte un costume marin ?",
-      "reponse": "Donald",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel écureuil de L'Ère de glace court sans cesse après son gland ?",
-      "reponse": "Scrat",
+      "question": "Quel mot répète Sheldon en cognant à la porte ?",
+      "reponse": "Penny",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle l'école de Harry Potter ?",
-      "reponse": "Poudlard",
+      "question": "Dans quel film de Noël un garçon oublié à la maison piège deux cambrioleurs ?",
+      "reponse": "Maman, j'ai raté l'avion",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel garçon a une casquette rouge et chasse des Pokémon ?",
-      "reponse": "Sacha",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "De quelle couleur sont les habitants de Pandora ?",
-      "reponse": "Bleus",
-      "niveau": 1,
+      "question": "Quelle voiture emblématique conduit James Bond ?",
+      "reponse": "Aston Martin",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -59,37 +57,44 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "De quelle planète vient Superman ?",
-      "reponse": "Krypton",
+      "question": "Quel ami étoile de mer accompagne Bob l'éponge ?",
+      "reponse": "Patrick",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel animal est Sven dans La Reine des neiges ?",
-      "reponse": "Un renne",
+      "question": "Comment s'appelle le lionceau du Roi Lion ?",
+      "reponse": "Simba",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un tigre qui bondit sur sa queue ?",
-      "reponse": "Tigrou",
+      "question": "Quelle reine a des pouvoirs de glace chez Disney ?",
+      "reponse": "Elsa",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle famille de super-héros Pixar porte du rouge ?",
-      "reponse": "Les Incroyables",
+      "question": "Quel majordome sert Bruce Wayne ?",
+      "reponse": "Alfred",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation japonais suit une fillette prisonnière d'un bain public d'esprits ?",
-      "reponse": "Le Voyage de Chihiro",
-      "niveau": 3,
+      "question": "Dans quel film de Pixar les émotions vivent-elles dans la tête d'une fillette ?",
+      "reponse": "Vice-versa",
+      "niveau": 2,
       "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel agent secret britannique aime les martinis ?",
+      "reponse": "James Bond",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
@@ -104,89 +109,83 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel acteur joue Jack dans Titanic ?",
-      "reponse": "Leonardo DiCaprio",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel duo formaient Claude Meunier et Serge Thériault ?",
-      "reponse": "Ding et Dong",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat de dessin animé court après la souris Jerry ?",
-      "reponse": "Tom",
+      "question": "Quelle marionnette verte du Muppet Show anime le spectacle ?",
+      "reponse": "Kermit",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle série espagnole suit des braqueurs en combinaison rouge ?",
-      "reponse": "La casa de papel",
+      "question": "Quel duo québécois de dessins animés met en scène une souris et son chat en peluche ?",
+      "reponse": "Toupie et Binou",
       "niveau": 2,
       "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation organise un grand concours de chant entre animaux ?",
-      "reponse": "Tous en scène",
+      "question": "Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?",
+      "reponse": "Le Bossu de Notre-Dame",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
+      "reponse": "Les Boys",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel oncle jaloux trahit Mufasa ?",
+      "reponse": "Scar",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel personnage jeunesse parlait à sa marionnette Bobinette ?",
+      "reponse": "Bobino",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quelle ville vivent les Simpson ?",
+      "reponse": "Springfield",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel cowboy de BD tire plus vite que son ombre ?",
+      "reponse": "Lucky Luke",
       "niveau": 1,
       "ages": [
         "enfants",
-        "ados"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel sport sorcier se joue sur des balais ?",
-      "reponse": "Le quidditch",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment appelle-t-on les petits personnages bleus qui vivent dans des champignons ?",
-      "reponse": "Les Schtroumpfs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros devient vert quand il se fâche ?",
-      "reponse": "Hulk",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit des détenues ?",
-      "reponse": "Unité 9",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film coréen de 2019 est devenu le premier film non anglophone à gagner l'Oscar du meilleur film ?",
-      "reponse": "Parasite",
-      "niveau": 3,
+      "question": "Quelle série animée suit des chiots sauveteurs ?",
+      "reponse": "Pat' Patrouille",
+      "niveau": 1,
       "ages": [
-        "ados",
-        "adultes"
+        "enfants"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel animal est Pascal, l'ami de Raiponce ?",
-      "reponse": "Un caméléon",
+      "question": "Quel canard noir est le rival de Bugs Bunny ?",
+      "reponse": "Daffy Duck",
       "niveau": 1
     }
   ]

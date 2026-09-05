@@ -8,8 +8,41 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle famille préhistorique conduit une voiture à pédales ?",
-      "reponse": "Les Pierrafeu",
+      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
+      "reponse": "Les Gardiens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel archéologue porte un fouet et un chapeau ?",
+      "reponse": "Indiana Jones",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation organise un grand concours de chant entre animaux ?",
+      "reponse": "Tous en scène",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée suit une famille jaune de Springfield ?",
+      "reponse": "Les Simpson",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel cochon de cinéma veut devenir chien de berger ?",
+      "reponse": "Babe",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -18,21 +51,25 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Disney vit avec sept nains ?",
-      "reponse": "Blanche-Neige",
+      "question": "Quel héros a été piqué par une araignée ?",
+      "reponse": "Spider-Man",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel patrouilleur de l'espace dit Vers l'infini et plus loin ?",
-      "reponse": "Buzz",
-      "niveau": 1
+      "question": "Quel petit champignon à chapeau blanc taché de rouge sert de messager chez Mario ?",
+      "reponse": "Toad",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle animatrice québécoise animait Le Banquier ?",
-      "reponse": "Julie Snyder",
-      "niveau": 1,
+      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
+      "reponse": "Sol",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -40,19 +77,73 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel duo de La Petite Vie dort debout ?",
-      "reponse": "Popa et Moman",
+      "question": "De quelle planète vient Superman ?",
+      "reponse": "Krypton",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle série américaine suit un bureau de vente de papier ?",
-      "reponse": "The Office",
+      "question": "Quel roi lion est le père de Simba ?",
+      "reponse": "Mufasa",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle la petite fille hawaïenne qui adopte Stitch ?",
+      "reponse": "Lilo",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel espion maladroit est l'agent 86 ?",
+      "reponse": "Maxwell Smart",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film de Noël un train magique emmène-t-il des enfants au pôle Nord ?",
+      "reponse": "Le Pôle Express",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel directeur de Poudlard a une longue barbe blanche ?",
+      "reponse": "Dumbledore",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat robot bleu vient du futur ?",
+      "reponse": "Doraemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle sitcom suit des physiciens et leur voisine Penny ?",
+      "reponse": "Big Bang Theory",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes"
       ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ours du Livre de la jungle chante Il en faut peu ?",
+      "reponse": "Baloo",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
@@ -67,139 +158,44 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel jouet cowboy appartient à Andy ?",
-      "reponse": "Woody",
+      "question": "Quel dieu nordique manie un marteau chez Marvel ?",
+      "reponse": "Thor",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle princesse perd sa pantoufle de verre ?",
-      "reponse": "Cendrillon",
+      "question": "Quel faon Disney perd sa mère dans la forêt ?",
+      "reponse": "Bambi",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle exploratrice a un singe nommé Babouche ?",
-      "reponse": "Dora",
+      "question": "Quelle substance affaiblit Superman ?",
+      "reponse": "La kryptonite",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel rat cuisine dans un grand restaurant parisien ?",
+      "reponse": "Rémy",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle journaliste aime Clark Kent ?",
+      "reponse": "Lois Lane",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle la statuette du cinéma américain ?",
+      "reponse": "L'Oscar",
       "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série de films enferme des adolescents dans un dédale aux murs mouvants ?",
-      "reponse": "Le Labyrinthe",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film de Pixar les émotions vivent-elles dans la tête d'une fillette ?",
-      "reponse": "Vice-versa",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel milliardaire Marvel a un réacteur dans la poitrine ?",
-      "reponse": "Tony Stark",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chiot berger allemand de la Pat' Patrouille est policier ?",
-      "reponse": "Chase",
-      "niveau": 1,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel dragon noir accompagne Harold ?",
-      "reponse": "Krokmou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Disney se transforme en grenouille ?",
-      "reponse": "Tiana",
-      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
-      "reponse": "Les Boys",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel escargot de course devient ultra rapide au cinéma ?",
-      "reponse": "Turbo",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle nounou anglaise vole avec un parapluie ?",
-      "reponse": "Mary Poppins",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle créature verte vit dans un marais ?",
-      "reponse": "Shrek",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le voisin trop gentil des Simpson ?",
-      "reponse": "Ned Flanders",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation suit un mammouth, un paresseux et un tigre à dents de sabre ?",
-      "reponse": "L'Âge de glace",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel hobbit doit détruire l'anneau unique ?",
-      "reponse": "Frodon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un petit cochon rose ?",
-      "reponse": "Porcinet",
-      "niveau": 1
     }
   ]
 }

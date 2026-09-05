@@ -8,24 +8,54 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
-      "reponse": "Dans une galaxie près de chez vous",
-      "niveau": 3,
+      "question": "Quel humoriste québécois a créé la série Les Beaux Malaises ?",
+      "reponse": "Martin Matte",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu garnit les muffins et les tartes au Québec ?",
-      "reponse": "Le bleuet",
+      "categorie": "Musique",
+      "question": "Quel chant de Noël québécois reprend l'air de Jingle Bells ?",
+      "reponse": "Vive le vent",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel numéro portait Maurice Richard ?",
-      "reponse": "9",
-      "niveau": 1,
+      "categorie": "Histoire",
+      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
+      "reponse": "Expo 67",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
+      "reponse": "Les Boys",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet québécois fait disparaître les traits de crayon sur le papier ?",
+      "reponse": "Une efface",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie l'interjection québécoise tiguidou ?",
+      "reponse": "C'est parfait",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur québécois a chanté Lindberg avec Louise Forestier ?",
+      "reponse": "Robert Charlebois",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -43,114 +73,22 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant du Saguenay ?",
-      "reponse": "Un Saguenéen",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quels tambours se frappent en cercle dans les parcs de Montréal le dimanche ?",
-      "reponse": "Les tam-tams",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
-      "reponse": "Steinberg",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
       "categorie": "Sports",
-      "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
-      "reponse": "Gary Carter",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois a créé la série Les Beaux Malaises ?",
-      "reponse": "Martin Matte",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de motoneige est née au Québec ?",
-      "reponse": "Ski-Doo",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
-      "reponse": "Trudeau",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse québécoise fait taper les pieds au son du violon ?",
-      "reponse": "La gigue",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
-      "reponse": "Olivier Guimond",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays voisin du Québec se trouve juste au sud ?",
-      "reponse": "Les États-Unis",
+      "question": "Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?",
+      "reponse": "Le Canadien",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
-      "reponse": "Pierre Falardeau",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Quelle émission jeunesse québécoise a Passe-Montagne ?",
+      "reponse": "Passe-Partout",
+      "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
-      "reponse": "Le REM",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert québécois est un gâteau arrosé de sauce sucrée ?",
+      "reponse": "Pouding chômeur",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
@@ -163,56 +101,104 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle série québécoise se déroulait dans Charlevoix après la Première Guerre ?",
-      "reponse": "Le temps d'une paix",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
+      "categorie": "Histoire",
+      "question": "Quelle fourrure les Européens recherchaient-ils le plus en Nouvelle-France ?",
+      "reponse": "Le castor",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission de cuisine québécoise oppose des candidats devant un jury de chefs ?",
-      "reponse": "Les Chefs",
-      "niveau": 2,
+      "question": "Quelle société d'État tire les loteries au Québec ?",
+      "reponse": "Loto-Québec",
+      "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
-      "reponse": "La guignolée",
-      "niveau": 3,
-      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?",
-      "reponse": "Le Canadien",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a raflé les Junos avec l'album Phoenix ?",
-      "reponse": "Charlotte Cardin",
-      "niveau": 3,
+      "question": "Quel stade accueillait les Expos ?",
+      "reponse": "Stade olympique",
+      "niveau": 1,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
-      "reponse": "Dominique Michel et Denise Filiatrault",
+      "question": "Quel gratte-ciel de Montréal, en forme de croix, a ouvert en 1962 ?",
+      "reponse": "La Place Ville-Marie",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument est roi dans les rigodons québécois ?",
+      "reponse": "Le violon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
+      "reponse": "Arthur Laroche",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel pont s'est effondré deux fois pendant sa construction, en 1907 et en 1916 ?",
+      "reponse": "Le pont de Québec",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel état américain touche le Québec et le Nouveau-Brunswick ?",
+      "reponse": "Le Maine",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de coupes Stanley pour les Canadiens de Montréal ?",
+      "reponse": "24",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
+      "reponse": "Le pain doré",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
+      "reponse": "Quétaine",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     }

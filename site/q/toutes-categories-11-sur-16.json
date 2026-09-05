@@ -7,21 +7,27 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel officiel siffle les punitions ?",
-      "reponse": "L'arbitre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle langue ancienne a donné alpha et oméga ?",
-      "reponse": "Le grec",
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve l'Acropole ?",
+      "reponse": "La Grèce",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel bassin de plastique se gonfle dans la cour l'été ?",
+      "reponse": "Une piscine gonflable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel manège file à toute vitesse en montant et descendant sur des rails ?",
+      "reponse": "Les montagnes russes",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -36,14 +42,29 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Pluriel de cheval ?",
-      "reponse": "Chevaux",
-      "niveau": 1
+      "question": "Petit de l'aigle ?",
+      "reponse": "L'aiglon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve l'Acropole ?",
-      "reponse": "La Grèce",
+      "categorie": "Cinéma et télé",
+      "question": "Quel duo formaient Claude Meunier et Serge Thériault ?",
+      "reponse": "Ding et Dong",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel alcool japonais est fait de riz fermenté ?",
+      "reponse": "Le saké",
       "niveau": 1,
       "ages": [
         "ados",
@@ -52,32 +73,14 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la douce chanson qu'on chante pour endormir un bébé ?",
-      "reponse": "Une berceuse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel minuscule oiseau peut voler en arrière ?",
-      "reponse": "Le colibri",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle émission matinale de TVA réveille le Québec en semaine ?",
-      "reponse": "Salut Bonjour",
+      "question": "Quel meuble de salon se déplie en lit pour la visite ?",
+      "reponse": "Le divan-lit",
       "niveau": 2,
       "ages": [
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel petit maître Jedi vert parle à l'envers ?",
-      "reponse": "Yoda",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -86,6 +89,33 @@
       "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel dictionnaire français célèbre est illustré ?",
+      "reponse": "Le Petit Larousse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel astre traverse le ciel en traînant une longue queue lumineuse ?",
+      "reponse": "Une comète",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quels frères ont inventé le cinématographe ?",
+      "reponse": "Les frères Lumière",
+      "niveau": 2,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -101,39 +131,6 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel oiseau figure sur la pièce de un dollar canadien ?",
-      "reponse": "Le huard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel congé de mai précède la saison du jardinage au Québec ?",
-      "reponse": "La journée nationale des patriotes",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois au débit très rapide a animé de nombreux galas ?",
-      "reponse": "Louis-José Houde",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
-      "reponse": "Caillou",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
       "question": "Quel tournoi du grand chelem se joue à New York ?",
       "reponse": "Le US Open",
@@ -143,6 +140,23 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel explorateur a hiverné à Stadaconé en 1535 ?",
+      "reponse": "Jacques Cartier",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel minuscule oiseau peut voler en arrière ?",
+      "reponse": "Le colibri",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -156,65 +170,64 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelles chutes près de Québec sont plus hautes que Niagara ?",
-      "reponse": "Montmorency",
+      "categorie": "Cinéma et télé",
+      "question": "Quel garçon est élevé par les loups dans la jungle ?",
+      "reponse": "Mowgli",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel officiel siffle les punitions ?",
+      "reponse": "L'arbitre",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle sauce verte argentine accompagne les grillades ?",
-      "reponse": "Le chimichurri",
-      "niveau": 3,
+      "question": "Quel fromage bleu français au lait de brebis est le plus célèbre ?",
+      "reponse": "Le roquefort",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit rouge trempe-t-on dans le chocolat fondu ?",
-      "reponse": "La fraise au chocolat",
-      "niveau": 2
+      "question": "Quelles pâtes en forme de papillon existent ?",
+      "reponse": "Les farfalles",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre traverse le ciel en traînant une longue queue lumineuse ?",
-      "reponse": "Une comète",
-      "niveau": 2
+      "categorie": "Culture générale",
+      "question": "Quel oiseau figure sur la pièce de un dollar canadien ?",
+      "reponse": "Le huard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la douce chanson qu'on chante pour endormir un bébé ?",
+      "reponse": "Une berceuse",
+      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment surnomme-t-on les membres de l'Académie ?",
-      "reponse": "Les Immortels",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles figurines surprises se déballent couche par couche dans une boule ?",
-      "reponse": "Les LOL Surprise",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à base de tomates nappe les pizzas ?",
-      "reponse": "La sauce tomate",
+      "question": "Féminin de roi ?",
+      "reponse": "La reine",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quels frères ont inventé le cinématographe ?",
-      "reponse": "Les frères Lumière",
+      "categorie": "Québec",
+      "question": "Quel musée montréalais borde la rue Sherbrooke ouest ?",
+      "reponse": "Beaux-arts",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]

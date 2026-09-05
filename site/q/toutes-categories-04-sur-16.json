@@ -7,6 +7,90 @@
   "emoji": "🎲",
   "questions": [
     {
+      "categorie": "Géographie",
+      "question": "Sur quel continent se trouvent le Brésil et l'Argentine ?",
+      "reponse": "L'Amérique du Sud",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne qui distribue le courrier ?",
+      "reponse": "Un facteur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle émission jeunesse québécoise a Passe-Montagne ?",
+      "reponse": "Passe-Partout",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle bombe a frappé Hiroshima en 1945 ?",
+      "reponse": "La bombe atomique",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel commerce vend des outils, de la peinture et des clous ?",
+      "reponse": "Une quincaillerie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil du restaurant jouait une chanson contre une pièce de monnaie ?",
+      "reponse": "Le juke-box",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant de Montréal ?",
+      "reponse": "Un Montréalais",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jouet surgit d'une boîte quand la manivelle s'arrête de jouer ?",
+      "reponse": "Le diable à ressort",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de cases compte une grille de tic-tac-toe ?",
+      "reponse": "Neuf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète tourne couchée sur le côté ?",
+      "reponse": "Uranus",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel méchant des Minions veut voler la Lune ?",
+      "reponse": "Gru",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'essai d'un groupe avant un spectacle ?",
+      "reponse": "La répétition",
+      "niveau": 1
+    },
+    {
       "categorie": "Sports",
       "question": "Quel joueur des Capitals a marqué plus de 900 buts ?",
       "reponse": "Ovechkin",
@@ -23,14 +107,16 @@
       "niveau": 1
     },
     {
+      "categorie": "Culture générale",
+      "question": "Quel dieu grec règne sur l'Olympe ?",
+      "reponse": "Zeus",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel petit boîtier rond de poche contient une maison miniature ?",
-      "reponse": "Le Polly Pocket",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "question": "Quel artiste fait disparaître des objets devant un public ébahi ?",
+      "reponse": "Un magicien",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
@@ -43,48 +129,15 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel thé japonais en poudre est vert vif ?",
-      "reponse": "Le matcha",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de minutes dure un match de soccer ?",
-      "reponse": "90",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle bombe a frappé Hiroshima en 1945 ?",
-      "reponse": "La bombe atomique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne une fête ?",
+      "reponse": "Un party",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
       "question": "Sur quel continent se trouve le Canada ?",
       "reponse": "L'Amérique du Nord",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'essai d'un groupe avant un spectacle ?",
-      "reponse": "La répétition",
       "niveau": 1
     },
     {
@@ -99,37 +152,20 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Le pluriel de hibou prend un S ou un X ?",
-      "reponse": "Un X",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle épice noire moulue accompagne le sel sur la table ?",
-      "reponse": "Le poivre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on l'argent qu'on met de côté pour les mauvais jours ?",
-      "reponse": "Un bas de laine",
-      "niveau": 2,
+      "categorie": "Sports",
+      "question": "Combien de minutes dure un match de soccer ?",
+      "reponse": "90",
+      "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Synonyme de bicyclette ?",
-      "reponse": "Vélo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel concours de Tim Hortons fait dérouler le rebord d'un gobelet ?",
-      "reponse": "Roll Up the Rim",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel vinaigre noir italien vient de Modène ?",
+      "reponse": "Le balsamique",
       "niveau": 2,
       "ages": [
         "ados",
@@ -139,53 +175,9 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment nomme-t-on la période des sucres ?",
-      "reponse": "Le temps des sucres",
+      "question": "Quel mot québécois familier désigne un ami proche ?",
+      "reponse": "Un chum",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film Pixar une maison vole-t-elle avec des ballons ?",
-      "reponse": "Là-haut",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète tourne couchée sur le côté ?",
-      "reponse": "Uranus",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouvent le Brésil et l'Argentine ?",
-      "reponse": "L'Amérique du Sud",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de cases compte une grille de tic-tac-toe ?",
-      "reponse": "Neuf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le congé imprévu que la neige offre aux élèves ?",
-      "reponse": "Une journée de tempête",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel demi-dieu tatoué accompagne Vaiana avec un hameçon magique ?",
-      "reponse": "Maui",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -194,21 +186,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel dieu grec règne sur l'Olympe ?",
-      "reponse": "Zeus",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle vitamine trouve-t-on dans les oranges ?",
+      "reponse": "La vitamine C",
       "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri de l'éléphant ?",
-      "reponse": "Le barrissement",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }
