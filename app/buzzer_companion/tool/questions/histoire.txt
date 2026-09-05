@@ -20,8 +20,9 @@
 # thématique est un jugement sur le sujet de la question, du même ordre que sa
 # catégorie, et la catégorie n'a jamais été devinée.
 #
-# Les huit slugs : noel, quebec-ailleurs, regne-animal, espace, corps-humain,
-# super-heros, creatures, sports-hiver. Un slug inconnu arrête la génération.
+# Les treize slugs : noel, quebec-ailleurs, regne-animal, espace,
+# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
+# transports, disney, nostalgie. Un slug inconnu arrête la génération.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -45,6 +46,7 @@ En quelle année l'homme a-t-il marché sur la Lune ?|1969|2|enfants ados adulte
 Qui fut le premier homme sur la Lune ?|Neil Armstrong|1|enfants ados adultes aines
 @ espace
 En quelle année le Titanic a-t-il coulé ?|1912|2|enfants ados adultes aines
+@ mer
 En quelle année le mur de Berlin est-il tombé ?|1989|2|ados adultes aines
 En quelle année a débuté la Révolution française ?|1789|2|ados adultes aines
 En quelle année a débuté la Première Guerre mondiale ?|1914|2|ados adultes aines
@@ -65,11 +67,13 @@ Quels monuments abritent les pharaons d'Égypte ?|Les pyramides|1|enfants ados a
 Dans quel amphithéâtre combattaient les gladiateurs ?|Le Colisée|1|enfants ados adultes aines
 Quel explorateur vénitien a décrit la Chine ?|Marco Polo|2|enfants ados adultes aines
 Qui a traversé l'Atlantique en avion solo en 1927 ?|Lindbergh|3|adultes aines
+@ transports
 Quel jour célèbre-t-on l'Armistice de 1918 ?|Le 11 novembre|1|enfants ados adultes aines
 Quel tombeau égyptien fut découvert en 1922 ?|Toutankhamon|2|enfants ados adultes aines
 Quelle femme a reçu deux prix Nobel ?|Marie Curie|2|enfants ados adultes aines
 Quel physicien a formulé E=mc2 ?|Einstein|1|enfants ados adultes aines
 Quel navire insubmersible a coulé en 1912 ?|Le Titanic|1|enfants ados adultes aines
+@ mer
 Quelle guerre a opposé le Nord et le Sud américains ?|Guerre de Sécession|2|ados adultes aines
 - Politique américaine : guerre civile et esclavage.
 Quel roi de France fut surnommé le Roi-Soleil ?|Louis XIV|2|enfants ados adultes aines
@@ -98,6 +102,7 @@ En quelle année le Canada a-t-il adopté son drapeau actuel ?|1965|3|adultes ai
 Qui fut la première femme première ministre du Canada ?|Kim Campbell|3|adultes aines
 En quelle année les Canadiennes ont-elles voté au fédéral ?|1918|3|adultes aines
 Quel bateau amena les pèlerins en Amérique en 1620 ?|Le Mayflower|2|ados adultes aines
+@ mer
 Quelle révolution a renversé le tsar en 1917 ?|La révolution russe|2|ados adultes aines
 Qui était le dernier tsar de Russie ?|Nicolas II|3|adultes aines
 Quel premier ministre britannique fumait le cigare pendant la guerre ?|Churchill|2|adultes aines
@@ -117,6 +122,7 @@ Quelle reine a régné 70 ans sur le Royaume-Uni ?|Elizabeth II|1|ados adultes a
 Quel roi anglais a eu six épouses ?|Henri VIII|2|ados adultes aines
 Pour quelle exposition la tour Eiffel fut-elle construite ?|Expo de 1889|3|adultes aines
 Quel canal relie la Méditerranée à la mer Rouge ?|Suez|2|ados adultes aines
+@ mer
 Quelle grande bibliothèque antique a brûlé ?|Alexandrie|2|ados adultes aines
 Quel navigateur a donné son prénom à l'Amérique ?|Amerigo Vespucci|2|ados adultes aines
 En quelle année eut lieu la bataille des plaines d'Abraham ?|1759|2|ados adultes aines
@@ -138,6 +144,7 @@ Quel télescope spatial a été lancé en 1990 ?|Hubble|2|enfants ados adultes a
 Quelle pyramide d'Égypte est la plus grande ?|Khéops|2|ados adultes aines
 Quelle statue égyptienne a un corps de lion ?|Le Sphinx|1|enfants ados adultes aines
 Sur quelle plante les Égyptiens écrivaient-ils ?|Le papyrus|1|enfants ados adultes aines
+@ regne-vegetal
 Comment s'appelle l'écriture des Égyptiens ?|Les hiéroglyphes|1|enfants ados adultes aines
 Qui a déchiffré les hiéroglyphes ?|Champollion|3|adultes aines
 Quelle pierre a permis de déchiffrer les hiéroglyphes ?|Pierre de Rosette|3|adultes aines
@@ -170,12 +177,15 @@ Quel château fut la résidence de Louis XIV ?|Versailles|1|enfants ados adultes
 Quelle reine de France fut guillotinée en 1793 ?|Marie-Antoinette|2|ados adultes aines
 Quelle prison parisienne fut prise le 14 juillet 1789 ?|La Bastille|2|ados adultes aines
 Sur quelle île Napoléon est-il mort ?|Sainte-Hélène|3|adultes aines
+@ mer
 Quelle fut la première île d'exil de Napoléon ?|L'île d'Elbe|3|adultes aines
+@ mer
 Quel territoire Napoléon a-t-il vendu aux États-Unis ?|La Louisiane|2|ados adultes aines
 Quel amiral anglais a gagné Trafalgar ?|Nelson|3|adultes aines
 En quelle année eut lieu la bataille de Waterloo ?|1815|3|adultes aines
 Quelle infirmière célèbre soignait pendant la guerre de Crimée ?|Florence Nightingale|3|adultes aines
 Sur quel navire Darwin a-t-il navigué ?|Le Beagle|3|adultes aines
+@ mer
 Quel code de points et de traits date de 1838 ?|Le morse|1|ados adultes aines
 Quel constructeur a lancé la Ford T ?|Henry Ford|1|adultes aines
 Quels frères ont inventé le cinématographe ?|Les frères Lumière|2|adultes aines
@@ -206,6 +216,7 @@ Quel premier ministre canadien a dirigé pendant la Seconde Guerre ?|Mackenzie K
 Quel chirurgien a réalisé la première greffe du cœur ?|Christiaan Barnard|3|adultes aines
 @ corps-humain
 Quel avion supersonique reliait Paris et New York ?|Le Concorde|2|adultes aines
+@ transports
 Quelle guerre d'Asie a pris fin en 1975 ?|Vietnam|2|adultes aines
 Quelles sondes jumelles ont été lancées en 1977 ?|Voyager|3|adultes aines
 Quelle centrale nucléaire a explosé en 1986 ?|Tchernobyl|2|adultes aines
@@ -213,6 +224,8 @@ En quelle année l'Allemagne s'est-elle réunifiée ?|1990|3|adultes aines
 En quelle année l'URSS a-t-elle disparu ?|1991|3|adultes aines
 Quel traité de 1992 a créé l'Union européenne ?|Maastricht|3|adultes aines
 Quel tunnel sous la mer a ouvert en 1994 ?|Sous la Manche|1|adultes aines
+@ mer
+@ transports
 Quelle brebis clonée est née en 1996 ?|Dolly|2|adultes aines
 @ regne-animal
 Quelle date redoutaient les informaticiens en 1999 ?|Le 1er janvier 2000|1|adultes aines
@@ -227,9 +240,11 @@ Quel rover s'est posé sur Mars en 2012 ?|Curiosity|3|ados adultes
 Quel physicien en fauteuil roulant a étudié les trous noirs ?|Stephen Hawking|2|ados adultes aines
 Quelle militante pakistanaise a reçu le Nobel de la paix ?|Malala|2|ados adultes
 Quel capitaine anglais a cartographié le Pacifique ?|James Cook|2|ados adultes aines
+@ mer
 Qui a atteint le pôle Sud en premier ?|Amundsen|3|adultes aines
 Qui a gravi l'Everest en premier en 1953 ?|Hillary et Norgay|2|ados adultes aines
 Quel navire océanographique commandait Cousteau ?|La Calypso|2|adultes aines
+@ mer
 Quel empereur romain aurait incendié Rome ?|Néron|2|ados adultes aines
 Quel général carthaginois a traversé les Alpes à dos d'éléphant ?|Hannibal|2|ados adultes aines
 Quel explorateur a cherché la fontaine de Jouvence en Floride ?|Ponce de León|3|adultes aines
@@ -325,20 +340,26 @@ Comment appelait-on les combats à cheval où deux chevaliers se chargeaient ave
 Quel navigateur a traversé l'Atlantique en 1492 et atteint l'Amérique ?|Christophe Colomb|1|enfants ados adultes aines
 Quels peuples vivaient déjà en Amérique quand les Européens sont arrivés ?|Les Autochtones|1|enfants ados adultes aines
 Quels marins portaient un bandeau sur l'œil et cherchaient des trésors ?|Les pirates|1|enfants ados adultes aines
+@ mer
 Quelle grande statue verte tient une torche à l'entrée d'un port américain ?|La statue de la Liberté|1|enfants ados adultes aines
 Quel véhicule à vapeur roulait sur des rails au 19e siècle ?|La locomotive|1|enfants ados adultes aines
+@ transports
 Quel peuple a construit le Colisée et les aqueducs ?|Les Romains|1|enfants ados adultes aines
 Quel peuple de l'Antiquité a inventé les Jeux olympiques ?|Les Grecs|1|enfants ados adultes aines
 Quel ancien téléphone fallait-il tourner avec le doigt pour composer un numéro ?|Le téléphone à cadran|1|enfants ados adultes aines
+@ nostalgie
 Avec quoi écrivait-on avant le stylo, en la trempant dans l'encre ?|Une plume|1|enfants ados adultes aines
 Comment appelle-t-on l'ensemble des histoires des dieux et des héros grecs ?|La mythologie|1|enfants ados adultes aines
 Quel roi figure sur les nouvelles pièces de monnaie canadiennes depuis 2023 ?|Charles III|1|enfants ados adultes aines
 En quel siècle vivons-nous ?|Le 21e siècle|1|enfants ados adultes aines
 Quelle fleur rouge porte-t-on en novembre en souvenir des soldats ?|Le coquelicot|1|enfants ados adultes aines
+@ regne-vegetal
 Quel ballon géant à panier et à air chaud a été le premier engin à transporter des humains dans le ciel ?|La montgolfière|1|enfants ados adultes aines
+@ transports
 Quel animal les chevaliers montaient-ils pour aller au combat ?|Le cheval|1|enfants ados adultes aines
 @ regne-animal
 Quel objet les premiers explorateurs utilisaient-ils pour trouver le nord ?|Une boussole|1|enfants ados adultes aines
+@ mer
 #
 # ─── pour les ados ───
 #
@@ -352,21 +373,28 @@ Quelle machine de siège lançait des pierres par-dessus les murailles ?|La cata
 Comment appelle-t-on la chemise de mailles métalliques que portait le chevalier ?|La cotte de mailles|2|enfants ados adultes
 Quelle arme se tendait avec une manivelle et tirait un carreau ?|L'arbalète|3|ados adultes aines
 Comment appelle-t-on le pont qui se relève pour fermer l'entrée d'un château ?|Le pont-levis|1|enfants ados adultes aines
+@ transports
 #
 # --- Vikings et navigateurs ---
 Comment appelle-t-on le bateau viking à proue sculptée ?|Le drakkar|2|enfants ados adultes aines
+@ mer
 Comment appelle-t-on l'écriture des Vikings, gravée dans la pierre ?|Les runes|3|ados adultes
 Quel grand navire de guerre espagnol transportait l'or des Amériques ?|Le galion|3|ados adultes aines
+@ mer
 Quel drapeau noir à tête de mort les pirates hissaient-ils ?|Le Jolly Roger|3|ados adultes
+@ mer
 Comment appelle-t-on la longue route caravanière qui reliait l'Asie à l'Europe ?|La route de la soie|2|ados adultes aines
 > Quel chemin marchand les caravanes suivaient-elles de Chang'an jusqu'à la Méditerranée ?|La route de la soie
+@ transports
 #
 # --- Antiquité ---
 Comment appelle-t-on le procédé égyptien de conservation des corps ?|La momification|2|enfants ados adultes aines
 Quelle merveille du monde antique éclairait l'entrée d'un port égyptien ?|Le phare d'Alexandrie|3|ados adultes aines
+@ mer
 Quelle armée de statues garde le tombeau du premier empereur chinois ?|L'armée de terre cuite|3|ados adultes
 Quel cercle de pierres dressées se dresse dans une plaine anglaise ?|Stonehenge|2|ados adultes aines
 Quelle île engloutie Platon a-t-il décrite dans ses textes ?|L'Atlantide|2|enfants ados adultes
+@ mer
 Sur quel support les Mésopotamiens gravaient-ils leur écriture avec un roseau ?|Les tablettes d'argile|3|ados adultes
 Quelle bataille vit trois cents Spartiates tenir un défilé étroit ?|Les Thermopyles|3|ados adultes
 #
@@ -375,6 +403,7 @@ Quel oiseau portait les messages avant le télégraphe ?|Le pigeon voyageur|2|en
 @ regne-animal
 Quelle méthode permet de dater un vestige grâce à un isotope ?|Le carbone 14|3|ados adultes
 Quel instrument de navigation mesurait la hauteur des astres sur l'horizon ?|Le sextant|3|ados adultes aines
+@ mer
 Quelle roue à aubes servait à moudre le grain au bord d'une rivière ?|Le moulin à eau|2|enfants ados adultes aines
 Quelle invention chinoise a remplacé le parchemin pour écrire ?|Le papier|3|ados adultes
 Quel outil de pierre taillée servait à couper et à gratter à la préhistoire ?|Le silex|2|enfants ados adultes
@@ -397,6 +426,7 @@ Quel bâtiment de bois entouré d'une palissade protégeait les postes de traite
 Comment appelle-t-on la très longue période d'avant l'écriture ?|La préhistoire|2|enfants ados adultes aines
 Comment appelle-t-on les humains qui vivaient dans des grottes ?|Les hommes des cavernes|1|enfants ados adultes aines
 Quelle invention ronde a permis de transporter de lourdes charges ?|La roue|1|enfants ados adultes aines
+@ transports
 Comment appelle-t-on les dessins d'animaux tracés sur les parois des grottes ?|Les peintures rupestres|3|enfants ados adultes aines
 Comment appelle-t-on la trace d'un animal préhistorique conservée dans la pierre ?|Un fossile|1|enfants ados adultes aines
 Quel scientifique fouille la terre pour trouver des objets anciens ?|Un archéologue|2|enfants ados adultes aines
@@ -415,6 +445,7 @@ Comment appelle-t-on le chef qui régnait sur tout l'Empire romain ?|Un empereur
 Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?|Le cheval de Troie|2|enfants ados adultes aines
 Quelle chaussure ouverte, faite de lanières de cuir, portaient les Romains ?|Une sandale|2|enfants ados adultes aines
 Comment appelle-t-on les longues routes pavées construites par les Romains ?|Les voies romaines|3|ados adultes aines
+@ transports
 Comment appelle-t-on les grands ponts qui amenaient l'eau jusqu'aux villes romaines ?|Un aqueduc|3|enfants ados adultes aines
 Comment appelle-t-on la période qui suit l'Antiquité, celle des châteaux forts ?|Le Moyen Âge|2|enfants ados adultes aines
 Comment appelle-t-on le guerrier à cheval qui servait son seigneur ?|Un chevalier|1|enfants ados adultes aines
@@ -427,18 +458,24 @@ Comment appelle-t-on le paysan qui travaillait la terre du seigneur ?|Un serf|3|
 Quel amuseur en habit à grelots faisait rire le roi ?|Un bouffon|2|enfants ados adultes aines
 Quel musicien voyageur chantait des poèmes de château en château ?|Un troubadour|3|ados adultes aines
 Comment appelle-t-on le bandit des mers qui attaquait les navires ?|Un pirate|1|enfants ados adultes aines
+@ mer
 Que cherchent les pirates en creusant sur une île déserte ?|Un trésor|1|enfants ados adultes aines
+@ mer
 Quel document marqué d'un X indique où le trésor est enterré ?|Une carte au trésor|1|enfants ados adultes aines
 Quelle plateforme les pirates faisaient-ils parcourir aux prisonniers au-dessus de l'eau ?|La planche|3|enfants ados adultes aines
+@ mer
 Que hisse-t-on sur les mâts pour que le vent pousse un navire ancien ?|Les voiles|2|enfants ados adultes aines
+@ mer
 Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?|Le sextant|3|adultes aines
 Comment appelle-t-on le marin posté en haut du mât pour surveiller l'horizon ?|La vigie|3|adultes aines
+@ mer
 Comment appelait-on la colonie française en Amérique du Nord ?|La Nouvelle-France|1|enfants ados adultes aines
 @ quebec-ailleurs
 Quelle fourrure les Européens recherchaient-ils le plus en Nouvelle-France ?|Le castor|1|enfants ados adultes aines
 @ quebec-ailleurs
 @ regne-animal
 Quelle embarcation d'écorce les Autochtones et les coureurs des bois utilisaient-ils ?|Le canot d'écorce|2|enfants ados adultes aines
+@ mer
 Comment appelle-t-on les premiers habitants de l'Amérique, ici avant les Européens ?|Les Autochtones|1|enfants ados adultes aines
 Quelle habitation autochtone en forme de cône était faite de peaux et de perches ?|Un tipi|2|enfants ados adultes aines
 Quelle longue habitation abritait plusieurs familles chez les Iroquoiens ?|La maison longue|3|enfants ados adultes aines
@@ -454,14 +491,19 @@ Quelle invention du 15e siècle a permis de produire des livres en série ?|L'im
 Quelle invention éclaire une pièce sans flamme depuis la fin du 19e siècle ?|L'ampoule électrique|1|enfants ados adultes aines
 Quelle invention permet de parler à quelqu'un qui est loin ?|Le téléphone|1|enfants ados adultes aines
 Quelle machine volante a été mise au point par les frères Wright ?|L'avion|1|enfants ados adultes aines
+@ transports
 Quelle machine à vapeur tirait les premiers trains ?|La locomotive|2|enfants ados adultes aines
 Quelle invention permet de voir des images animées chez soi depuis les années 1950 ?|La télévision|1|enfants ados adultes aines
 Quelle invention fixe une image sur du papier depuis le 19e siècle ?|La photographie|2|enfants ados adultes aines
 Quelle invention à deux roues se propulse avec des pédales ?|La bicyclette|1|enfants ados adultes aines
+@ transports
 Quel appareil garde les aliments au froid depuis un siècle, remplaçant la glacière ?|Le réfrigérateur|2|enfants ados adultes aines
+@ nostalgie
 Quel véhicule à moteur a remplacé le cheval sur les routes ?|L'automobile|1|enfants ados adultes aines
+@ transports
 Quel engin a emmené les premiers hommes jusqu'à la Lune ?|Une fusée|1|enfants ados adultes aines
 @ espace
+@ transports
 Quel astronaute américain a posé le pied sur la Lune le premier ?|Neil Armstrong|2|enfants ados adultes aines
 @ espace
 Que porte un astronaute pour survivre dans l'espace ?|Un scaphandre|3|enfants ados adultes aines
@@ -500,10 +542,13 @@ Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?|Le parchemin|3|
 Quel casque de métal protégeait la tête du chevalier ?|Un heaume|3|enfants ados adultes aines
 Quel bâton orné le roi tient-il en main comme signe de son pouvoir ?|Le sceptre|3|ados adultes aines
 Quel petit navire rapide Christophe Colomb utilisait-il pour ses voyages ?|Une caravelle|3|enfants ados adultes aines
+@ mer
 Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?|La capitale du royaume|3|adultes aines
 Quel animal servait de moyen de transport principal avant l'automobile ?|Le cheval|1|enfants ados adultes aines
 @ regne-animal
+@ transports
 Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?|Une diligence|3|enfants ados adultes aines
+@ transports
 Quel outil de bois et de fer les paysans utilisaient-ils pour retourner la terre ?|La charrue|2|enfants ados adultes aines
 Quel bâtiment à grandes ailes tournait au vent pour moudre le blé ?|Un moulin à vent|1|enfants ados adultes aines
 Comment appelle-t-on la longue lettre gravée dans la pierre pour raconter un règne ?|Une inscription|3|adultes aines
@@ -515,9 +560,12 @@ Comment appelle-t-on les grandes pierres dressées et posées à plat par les ho
 Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?|L'inlandsis|3|adultes aines
 Comment appelait-on les soldats montés à cheval dans les armées d'autrefois ?|La cavalerie|2|enfants ados adultes aines
 Comment appelle-t-on le long bateau à rames des Grecs et des Romains ?|Une galère|3|enfants ados adultes aines
+@ mer
 Comment appelle-t-on la grille de fer qui descend pour bloquer l'entrée d'un château ?|La herse|3|enfants ados adultes aines
 Comment appelait-on le soldat armé d'un arc dans les armées d'autrefois ?|Un archer|2|enfants ados adultes aines
 Quelle tour éclairée guidait les bateaux vers la côte bien avant les radars ?|Un phare|2|enfants ados adultes aines
+@ mer
 Sur quoi le maître écrivait-il à la craie devant sa classe, autrefois ?|Le tableau noir|1|enfants ados adultes aines
+@ nostalgie
 
 Quel document de peau ou de papier, écrit à la main, se copiait dans les monastères ?|Un manuscrit|3|enfants ados adultes aines

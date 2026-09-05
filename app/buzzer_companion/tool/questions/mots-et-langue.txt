@@ -20,8 +20,9 @@
 # thématique est un jugement sur le sujet de la question, du même ordre que sa
 # catégorie, et la catégorie n'a jamais été devinée.
 #
-# Les huit slugs : noel, quebec-ailleurs, regne-animal, espace, corps-humain,
-# super-heros, creatures, sports-hiver. Un slug inconnu arrête la génération.
+# Les treize slugs : noel, quebec-ailleurs, regne-animal, espace,
+# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
+# transports, disney, nostalgie. Un slug inconnu arrête la génération.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 # LE QUIZ SE JOUE À L'ORAL. Un pluriel qui s'entend comme le singulier
@@ -426,5 +427,7 @@ Quel est le contraire de proche ?|Loin|1|enfants ados adultes aines
 Quel est le contraire de jeune ?|Vieux|1|enfants ados adultes aines
 Que signifie être blanc comme un drap ?|Être très pâle|1|enfants ados adultes aines
 Comment appelle-t-on la personne qui conduit un autobus scolaire ?|Un chauffeur|1|enfants ados adultes aines
+@ transports
 Comment appelle-t-on la personne qui répare les autos au garage ?|Un mécanicien|1|enfants ados adultes aines
+@ transports
 Quel bâton blanc servait à écrire au tableau avant les crayons-feutres ?|La craie|1|enfants ados adultes aines

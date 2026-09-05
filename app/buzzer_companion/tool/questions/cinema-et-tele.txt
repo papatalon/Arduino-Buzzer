@@ -20,8 +20,9 @@
 # thématique est un jugement sur le sujet de la question, du même ordre que sa
 # catégorie, et la catégorie n'a jamais été devinée.
 #
-# Les huit slugs : noel, quebec-ailleurs, regne-animal, espace, corps-humain,
-# super-heros, creatures, sports-hiver. Un slug inconnu arrête la génération.
+# Les treize slugs : noel, quebec-ailleurs, regne-animal, espace,
+# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
+# transports, disney, nostalgie. Un slug inconnu arrête la génération.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -43,8 +44,10 @@ Qui est le père de Luke Skywalker ?|Dark Vador|1|enfants ados adultes aines
 Quel extraterrestre veut téléphoner à la maison ?|E.T.|1|enfants ados adultes aines
 Comment s'appelle le lionceau du Roi Lion ?|Simba|1|enfants ados adultes aines
 @ regne-animal
+@ disney
 Quel type de poisson est Nemo ?|Un poisson-clown|1|enfants ados adultes aines
 @ regne-animal
+@ disney
 Quelle créature verte vit dans un marais ?|Shrek|1|enfants ados adultes aines
 @ creatures
 Comment s'appelle l'école de Harry Potter ?|Poudlard|1|enfants ados adultes aines
@@ -59,10 +62,13 @@ Quelle substance affaiblit Superman ?|La kryptonite|1|enfants ados adultes aines
 Quel héros a été piqué par une araignée ?|Spider-Man|1|enfants ados adultes aines
 @ super-heros
 Qui a créé Mickey Mouse ?|Walt Disney|1|enfants ados adultes aines
+@ disney
 Dans quelle ville vivent les Simpson ?|Springfield|1|enfants ados adultes aines
 De quelle couleur sont les Simpson ?|Jaunes|1|enfants ados adultes aines
 Quels sont les deux héros de Toy Story ?|Woody et Buzz|1|enfants ados adultes aines
+@ disney
 Quelle reine a des pouvoirs de glace chez Disney ?|Elsa|1|enfants ados adultes aines
+@ disney
 Quel acteur muet portait un chapeau melon et une canne ?|Charlie Chaplin|2|adultes aines
 Quel acteur joue Jack dans Titanic ?|Leonardo DiCaprio|1|ados adultes aines
 Quels animaux revivent dans Jurassic Park ?|Les dinosaures|1|enfants ados adultes aines
@@ -76,9 +82,12 @@ Comment s'appelle le cinéma de l'Inde ?|Bollywood|2|ados adultes aines
 Quel ogre a un ami âne très bavard ?|Shrek|1|enfants ados adultes aines
 @ creatures
 Quel pirate est joué par Johnny Depp ?|Jack Sparrow|1|ados adultes aines
+@ mer
 Quel magicien gris guide la Communauté de l'anneau ?|Gandalf|1|ados adultes aines
 Quelle voiture voyage dans le temps dans Retour vers le futur ?|La DeLorean|2|adultes aines
+@ transports
 Quel jouet cowboy appartient à Andy ?|Woody|1|enfants ados adultes aines
+@ disney
 Quel personnage vert déteste Noël ?|Le Grincheux|1|enfants ados adultes aines
 @ noel
 # La question demandait un requin, la réponse est un titre de film.
@@ -88,6 +97,7 @@ Quel robot dit Hasta la vista, baby ?|Terminator|2|adultes aines
 # Erreur dans la source (c'est un rat), et doublon avec la question sur Rémy plus bas.
 Quelle souris cuisine dans Ratatouille ?|Rémy (un rat)|1|enfants ados adultes aines
 > Dans quel film Pixar un rat devient-il chef cuisinier à Paris ?|Ratatouille
+@ disney
 Quel héros devient vert quand il se fâche ?|Hulk|1|enfants ados adultes aines
 @ super-heros
 Quel milliardaire porte une armure rouge et or ?|Iron Man|1|enfants ados adultes aines
@@ -95,17 +105,23 @@ Quel milliardaire porte une armure rouge et or ?|Iron Man|1|enfants ados adultes
 Quel dieu nordique manie un marteau chez Marvel ?|Thor|1|enfants ados adultes aines
 @ super-heros
 Comment s'appelle le bonhomme de neige de La Reine des neiges ?|Olaf|1|enfants ados adultes aines
+@ disney
 Quelle émission jeunesse québécoise a Passe-Montagne ?|Passe-Partout|1|enfants ados adultes aines
 @ quebec-ailleurs
 Quel poisson bleu perd la mémoire dans Nemo ?|Dory|1|enfants ados adultes aines
 @ regne-animal
+@ disney
 Quel patrouilleur de l'espace dit Vers l'infini et plus loin ?|Buzz|1|enfants ados adultes aines
 > Quel jouet cosmonaute de Toy Story crie « Vers l'infini et au-delà » ?|Buzz Lightyear
+@ disney
 Quelle famille de super-héros Pixar porte du rouge ?|Les Incroyables|1|enfants ados adultes aines
 @ super-heros
+@ disney
 Quel monstre bleu et poilu travaille avec Mike ?|Sulley|1|enfants ados adultes aines
 @ creatures
+@ disney
 Dans quel film Pixar une maison vole-t-elle avec des ballons ?|Là-haut|1|enfants ados adultes aines
+@ disney
 Quelles petites créatures jaunes adorent les bananes ?|Les Minions|1|enfants ados adultes aines
 @ creatures
 Quel méchant des Minions veut voler la Lune ?|Gru|1|enfants ados adultes aines
@@ -114,17 +130,26 @@ Quel panda pratique le kung-fu au cinéma ?|Po|1|enfants ados adultes aines
 Quel dragon noir accompagne Harold ?|Krokmou|1|enfants ados adultes aines
 @ creatures
 Quelle princesse Disney a de très longs cheveux magiques ?|Raiponce|1|enfants ados adultes aines
+@ disney
 Quelle sirène Disney rêve de vivre sur terre ?|Ariel|1|enfants ados adultes aines
 @ creatures
+@ disney
 Quelle princesse perd sa pantoufle de verre ?|Cendrillon|1|enfants ados adultes aines
+@ disney
 Comment se nomme la Belle au bois dormant chez Disney ?|Aurore|2|ados adultes aines
+@ disney
 Dans quel conte Disney une rose est-elle sous cloche ?|La Belle et la Bête|1|enfants ados adultes aines
 @ creatures
+@ disney
 Quelle nounou anglaise vole avec un parapluie ?|Mary Poppins|1|adultes aines
 Quel garçon ne veut jamais grandir ?|Peter Pan|1|enfants ados adultes aines
+@ disney
 Quelle fée accompagne Peter Pan ?|Clochette|1|enfants ados adultes aines
 @ creatures
+@ disney
 Quel pirate est l'ennemi juré de Peter Pan ?|Capitaine Crochet|1|enfants ados adultes aines
+@ mer
+@ disney
 Quelle série suit six amis dans un café new-yorkais ?|Friends|1|ados adultes aines
 Comment s'appelle le café de Friends ?|Central Perk|2|ados adultes
 Quelle série fantastique a des dragons et un trône de fer ?|Game of Thrones|1|ados adultes
@@ -147,8 +172,10 @@ Quelle marionnette verte du Muppet Show anime le spectacle ?|Kermit|1|enfants ad
 Quel canard milliardaire plonge dans ses pièces d'or ?|Picsou|1|adultes aines
 @ super-heros
 @ regne-animal
+@ disney
 Quel marin devient fort en mangeant des épinards ?|Popeye|1|aines
 @ super-heros
+@ mer
 Quel chat orange déteste les lundis et adore la lasagne ?|Garfield|1|enfants adultes aines
 @ super-heros
 @ regne-animal
@@ -161,40 +188,65 @@ Quel réalisateur canadien a fait Titanic et Avatar ?|James Cameron|2|adultes ai
 Quel réalisateur a fait Psychose et Les Oiseaux ?|Hitchcock|2|aines
 Quel film de Disney suit un éléphant aux grandes oreilles ?|Dumbo|1|enfants ados adultes aines
 @ regne-animal
+@ disney
 Quel faon Disney perd sa mère dans la forêt ?|Bambi|1|enfants ados adultes aines
+@ disney
 Quelle chienne partage un spaghetti avec un clochard ?|Lady|1|enfants ados adultes aines
 @ regne-animal
 Quel film Disney suit 101 chiens tachés ?|Les 101 Dalmatiens|1|enfants ados adultes aines
+@ disney
 Quelle méchante veut un manteau en dalmatiens ?|Cruella|1|enfants ados adultes aines
 Quel ours du Livre de la jungle chante Il en faut peu ?|Baloo|1|enfants ados adultes aines
 @ regne-animal
+@ disney
 Quel garçon est élevé par les loups dans la jungle ?|Mowgli|1|enfants ados adultes aines
+@ disney
 Quelle panthère noire protège Mowgli ?|Bagheera|1|enfants ados adultes aines
+@ disney
 Quel roi lion est le père de Simba ?|Mufasa|1|enfants ados adultes aines
 @ regne-animal
+@ disney
 Quel oncle jaloux trahit Mufasa ?|Scar|1|enfants ados adultes aines
+@ disney
 Quel phacochère accompagne Timon ?|Pumbaa|1|enfants ados adultes aines
+@ disney
 Que veut dire Hakuna Matata ?|Pas de souci|1|enfants ados adultes aines
 Quelle princesse Disney vit avec sept nains ?|Blanche-Neige|1|enfants ados adultes aines
+@ disney
 Quel objet empoisonné croque Blanche-Neige ?|Une pomme|1|enfants ados adultes aines
+@ disney
 Quelle princesse amérindienne chante L'air du vent ?|Pocahontas|1|enfants ados adultes aines
+@ disney
 Quelle héroïne chinoise se déguise en soldat ?|Mulan|1|enfants ados adultes aines
+@ disney
 Quelle princesse polynésienne navigue avec Maui ?|Moana|1|enfants ados adultes aines
+@ disney
 Quelle princesse Disney se transforme en grenouille ?|Tiana|2|ados adultes aines
 @ regne-animal
+@ disney
 Quel cowboy jouet a un serpent dans sa botte ?|Woody|1|enfants ados adultes aines
 Quel dinosaure vert craintif vit dans Toy Story ?|Rex|1|enfants ados adultes aines
 @ regne-animal
+@ disney
 Quel poisson-clown cherche son fils dans l'océan ?|Marin|1|enfants ados adultes aines
 @ regne-animal
 Quel rat cuisine dans un grand restaurant parisien ?|Rémy|1|enfants ados adultes aines
+@ disney
 Quel robot nettoyeur tombe amoureux d'EVE ?|WALL-E|1|enfants ados adultes aines
+@ disney
 Quel film Pixar se passe dans la tête de Riley ?|Sans dessus dessous|1|enfants ados adultes aines
 > Quel film Pixar se passe dans la tête de la jeune Riley ?|Sens dessus dessous
+@ disney
 Quel film Pixar suit une voiture de course rouge ?|Les Bagnoles|1|enfants ados adultes aines
+@ transports
+@ disney
 Comment s'appelle la voiture de course des Bagnoles ?|Flash McQueen|1|enfants ados adultes aines
+@ transports
+@ disney
 Quelle dépanneuse rouillée est l'amie de Flash McQueen ?|Mater|1|enfants ados adultes aines
+@ disney
 Quelle suite de Nemo suit la mémoire de Dory ?|Trouver Doris|1|enfants ados adultes aines
+@ disney
 Quel escargot de course devient ultra rapide au cinéma ?|Turbo|2|enfants ados
 Quel ogre vert a une femme nommée Fiona ?|Shrek|1|enfants ados adultes aines
 @ creatures
@@ -207,10 +259,12 @@ Quel chat botté a de grands yeux attendrissants ?|Chat Potté|1|enfants ados ad
 Quel duo formaient Claude Meunier et Serge Thériault ?|Ding et Dong|2|adultes aines
 Quelle télésérie québécoise raconte Séraphin Poudrier ?|Les Belles Histoires|2|aines
 @ quebec-ailleurs
+@ nostalgie
 Quel avare célèbre du terroir québécois aime son argent ?|Séraphin|1|adultes aines
 @ quebec-ailleurs
 Quel roman de Roger Lemelin suit une famille de Québec ?|Les Plouffe|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Quelle émission québécoise a des fauteuils qui pivotent ?|La Voix|1|enfants ados adultes aines
 @ quebec-ailleurs
 Quel animateur québécois a longtemps animé Tout le monde en parle ?|Guy A. Lepage|1|enfants ados adultes aines
@@ -226,6 +280,7 @@ Quelle télésérie québécoise suit une équipe de hockey de garage ?|Les Boys
 Quel duo de La Petite Vie dort debout ?|Popa et Moman|1|enfants ados adultes aines
 @ quebec-ailleurs
 Quel personnage jeunesse parlait à sa marionnette Bobinette ?|Bobino|2|aines
+@ nostalgie
 Quel clown poète québécois avait un complice nommé Gobelet ?|Sol|2|adultes aines
 @ quebec-ailleurs
 Quelle émission fait courir des duos autour du monde ?|Amazing Race|1|enfants ados adultes aines
@@ -252,12 +307,14 @@ Comment s'appelle le voisin trop gentil des Simpson ?|Ned Flanders|1|enfants ado
 Quelle série animée suit Stewie et Peter Griffin ?|Family Guy|2|ados adultes
 Quel père de famille travaille dans une centrale nucléaire ?|Homer Simpson|1|enfants ados adultes aines
 Quelle éponge jaune vit dans un ananas sous la mer ?|Bob l'éponge|1|enfants ados adultes aines
+@ mer
 Quel ami étoile de mer accompagne Bob l'éponge ?|Patrick|1|enfants ados adultes aines
 Quel garçon a une casquette rouge et chasse des Pokémon ?|Sacha|1|enfants ados adultes
 Quel Pokémon jaune lance des éclairs ?|Pikachu|1|enfants ados adultes
 Quel chat robot bleu vient du futur ?|Doraemon|3|ados adultes
 @ regne-animal
 Quelle famille préhistorique conduit une voiture à pédales ?|Les Pierrafeu|1|adultes aines
+@ transports
 Comment s'appelle le meilleur ami de Fred Caillou ?|Arthur Laroche|2|aines
 Quelle famille du futur a un robot ménagère nommée Rosie ?|Les Jetson|2|adultes aines
 Quel superhéros enfile son costume dans une cabine téléphonique ?|Superman|1|enfants ados adultes aines
@@ -277,6 +334,7 @@ Quelle amazone a un lasso de vérité ?|Wonder Woman|1|enfants ados adultes aine
 Quel héros court plus vite que tout le monde en rouge ?|Flash|1|enfants ados adultes aines
 Quel roi des mers parle aux poissons ?|Aquaman|1|enfants ados adultes aines
 @ super-heros
+@ mer
 Quel milliardaire Marvel a un réacteur dans la poitrine ?|Tony Stark|1|enfants ados adultes aines
 @ super-heros
 Quel soldat Marvel porte un bouclier étoilé ?|Captain America|1|enfants ados adultes aines
@@ -298,6 +356,7 @@ Quelle école accueille les jeunes mutants ?|École de Xavier|2|ados adultes ain
 Quel agent secret britannique aime les martinis ?|James Bond|1|enfants ados adultes aines
 Quel acteur écossais fut le premier James Bond ?|Sean Connery|2|adultes aines
 Quel espion maladroit est l'agent 86 ?|Maxwell Smart|2|aines
+@ nostalgie
 Quel félin de dessin animé est né d'un générique de film ?|La Panthère rose|2|adultes aines
 @ regne-animal
 Quel inspecteur maladroit poursuit la Panthère rose ?|Clouseau|2|adultes aines
@@ -315,13 +374,18 @@ Quelle série animée suit des chiots sauveteurs ?|Pat' Patrouille|1|enfants
 Quelle série animée japonaise suit Son Goku ?|Dragon Ball|1|enfants ados adultes
 Quel ninja blond rêve de devenir Hokage ?|Naruto|1|enfants ados
 Quelle souris Disney est l'amoureuse de Mickey ?|Minnie|1|enfants ados adultes aines
+@ disney
 Quel canard Disney porte un costume marin ?|Donald|1|enfants ados adultes aines
 @ regne-animal
+@ disney
 Quel est le chien de compagnie de Mickey ?|Pluto|1|enfants ados adultes aines
 @ regne-animal
+@ disney
 Quel film Disney de 2013 chante Libérée, délivrée ?|La Reine des neiges|1|enfants ados adultes aines
+@ disney
 Quel médecin grincheux de série boite avec une canne ?|Dr House|2|adultes aines
 Quelle voiture emblématique conduit James Bond ?|Aston Martin|2|ados adultes aines
+@ transports
 Quel studio japonais a créé Mon voisin Totoro ?|Ghibli|3|ados adultes
 Quel cowboy de BD tire plus vite que son ombre ?|Lucky Luke|1|enfants adultes aines
 @ super-heros
@@ -340,6 +404,7 @@ Quel méchant sorcier des Schtroumpfs a un chat ?|Gargamel|1|enfants adultes ain
 # se joue à l'oral : la réponse doit s'entendre sans équivoque, et une seule
 # réponse doit être possible. Format : Question|Réponse|niveau.
 Quel jouet de Toy Story est une patate avec des pièces à enlever ?|Monsieur Patate|1|enfants ados adultes aines
+@ disney
 Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?|Bugs Bunny|1|enfants ados adultes aines
 @ regne-animal
 Quel canard noir est le rival de Bugs Bunny ?|Daffy Duck|1|enfants ados adultes aines
@@ -374,15 +439,21 @@ Quel gorille géant grimpe l'Empire State Building au cinéma ?|King Kong|1|enfa
 Quel monstre géant venu du Japon écrase des villes au cinéma ?|Godzilla|1|enfants ados adultes aines
 @ creatures
 Quel légume la marraine de Cendrillon transforme-t-elle en carrosse ?|La citrouille|1|enfants ados adultes aines
+@ disney
 Quel animal est Abu, l'ami d'Aladin ?|Un singe|1|enfants ados adultes aines
 @ regne-animal
+@ disney
 Quel animal est Pascal, l'ami de Raiponce ?|Un caméléon|1|enfants ados adultes aines
 @ regne-animal
+@ disney
 Quel animal est Sven dans La Reine des neiges ?|Un renne|1|enfants ados adultes aines
 @ regne-animal
+@ disney
 Comment s'appelle la petite sœur d'Elsa ?|Anna|1|enfants ados adultes aines
+@ disney
 Quel animal est Sébastien dans La Petite Sirène ?|Un crabe|1|enfants ados adultes aines
 @ regne-animal
+@ disney
 Quel chiot dalmatien de la Pat' Patrouille est pompier ?|Marcus|1|enfants
 Quel chiot berger allemand de la Pat' Patrouille est policier ?|Chase|1|enfants
 Quel garçon dirige la Pat' Patrouille ?|Ryder|1|enfants
@@ -390,12 +461,14 @@ Dans quel film de Noël un garçon oublié à la maison piège deux cambrioleurs
 @ noel
 Dans quel film de Noël un train magique emmène-t-il des enfants au pôle Nord ?|Le Pôle Express|1|enfants ados adultes aines
 @ noel
+@ transports
 Quel film d'animation organise un grand concours de chant entre animaux ?|Tous en scène|1|enfants ados
 Quel chien de dessin animé est le compagnon de Charlie Brown ?|Snoopy|1|enfants adultes aines
 @ regne-animal
 Quel garçon au chandail à zigzag est le maître de Snoopy ?|Charlie Brown|1|enfants adultes aines
 Quel film d'animation raconte une princesse écossaise aux cheveux roux qui tire à l'arc ?|Rebelle|1|enfants ados adultes
 Quel film d'animation raconte un garçon qui rejoint le pays des morts avec sa guitare ?|Coco|1|enfants ados adultes
+@ disney
 Quel film d'animation suit une lapine policière et un renard rusé dans une ville d'animaux ?|Zootopia|1|enfants ados adultes
 Quel film d'animation met en scène Dracula et sa famille de monstres dans un hôtel ?|Hôtel Transylvanie|1|enfants ados adultes
 Quel cochon de cinéma veut devenir chien de berger ?|Babe|1|adultes aines
@@ -403,6 +476,7 @@ Quel cochon de cinéma veut devenir chien de berger ?|Babe|1|adultes aines
 Quel gros chien rouge de livres pour enfants est devenu un film ?|Clifford|1|enfants
 @ regne-animal
 Comment s'appellent les trois neveux de Donald ?|Riri, Fifi et Loulou|1|enfants ados adultes aines
+@ disney
 #
 # ─── pour les ados ───
 #
@@ -412,13 +486,18 @@ Quelle série de films enferme des adolescents dans un dédale aux murs mouvants
 Quel film d'animation japonais suit une fillette prisonnière d'un bain public d'esprits ?|Le Voyage de Chihiro|3|ados adultes
 Quelle série animée japonaise oppose l'humanité à des géants derrière de hauts murs ?|L'Attaque des Titans|2|ados adultes
 Quel héros de manga au chapeau de paille veut devenir le roi des pirates ?|Luffy|2|enfants ados
+@ mer
 Quelle série animée japonaise suit un garçon qui pourfend des démons au sabre ?|Demon Slayer|2|enfants ados
 Quel acteur canadien incarne Deadpool au cinéma ?|Ryan Reynolds|2|ados adultes
 Quel jeune voleur de Disney trouve une lampe magique à Agrabah ?|Aladdin|1|enfants ados adultes
+@ disney
 Quel personnage bleu sort de la lampe d'Aladdin ?|Le génie|1|enfants ados adultes
+@ disney
 Quelle souris aux grandes oreilles rondes est la mascotte de Disney ?|Mickey Mouse|1|enfants ados adultes aines
+@ disney
 Quel grand chien maladroit en chapeau est l'ami de Mickey et de Donald ?|Dingo|2|enfants ados adultes
 @ regne-animal
+@ disney
 Quel gros chat court sans arrêt après le petit oiseau Titi ?|Grosminet|2|enfants ados adultes aines
 @ regne-animal
 Quel animal du désert poursuit sans succès l'oiseau Bip Bip ?|Le coyote|2|enfants ados adultes
@@ -434,9 +513,12 @@ Comment s'appelle le petit chien blanc de Tintin ?|Milou|1|enfants ados adultes 
 @ regne-animal
 Quel marin barbu et grognon accompagne Tintin dans ses aventures ?|Le capitaine Haddock|2|enfants ados adultes aines
 @ super-heros
+@ mer
 Quel demi-dieu tatoué accompagne Moana avec un hameçon magique ?|Maui|2|enfants ados
 @ creatures
+@ disney
 Comment s'appelle la petite fille hawaïenne qui adopte Stitch ?|Lilo|2|enfants ados adultes
+@ disney
 Quelle boule rose de Nintendo avale ses ennemis pour voler leurs pouvoirs ?|Kirby|2|enfants ados
 Quel duo québécois de dessins animés met en scène une souris et son chat en peluche ?|Toupie et Binou|2|enfants ados adultes
 @ quebec-ailleurs
@@ -448,3 +530,4 @@ Quelle créature verte et mal lunée veut voler le Noël des Chou ?|Le Grinch|1|
 Dans quelle ville sous-marine habitent Bob l'éponge et Patrick ?|Bikini Bottom|2|enfants ados
 Quel petit champignon à chapeau blanc taché de rouge sert de messager chez Mario ?|Toad|2|enfants ados
 Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?|Le Bossu de Notre-Dame|3|enfants ados adultes
+@ disney

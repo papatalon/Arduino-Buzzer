@@ -1441,6 +1441,7 @@ class Theme {
   const Theme(this.slug, this.name, this.emoji, this.note, this.keywords,
       {this.exclude = const [],
       this.excludeCategories = const [],
+      this.proposeAges = const [],
       this.collection});
 
   // Ce qu'on écrit dans les fichiers de questions, sous la ligne : « @ noel ».
@@ -1480,6 +1481,19 @@ class Theme {
   // la categorie, la thematique ne garde que ce que la categorie n'a PAS :
   // le Quebec dispersé dans Musique, Bouffe, Cinema, Sports.
   final List<String> excludeCategories;
+
+  // UN FILET QUI NE PASSE PAS PAR LES MOTS, pour « --proposer » seulement.
+  //
+  // Aucun mot-clé ne sait repérer un souvenir : rien dans « Quelle chaîne
+  // d'épicerie québécoise a fermé ses portes en 1992 ? » ne dit qu'elle
+  // appartient à un monde révolu, sinon le fait qu'on ait coté la question
+  // pour les aînés. La banque porte donc déjà l'information, sur l'autre axe.
+  //
+  // Une question devient candidate quand toutes ses tranches déclarées
+  // tiennent dans cette liste : « aînés » attrape ce qui ne vise qu'eux, et
+  // laisse dehors ce qui vise aussi les ados. N'a AUCUN effet sur ce qui est
+  // publié, comme le reste : seule l'étiquette écrite compte.
+  final List<String> proposeAges;
 
   // Sous quelle tuile ranger la thematique, quand ce n'est pas la sienne.
   // Exclure une categorie regle le fond (aucune question en double) mais pas
@@ -1633,6 +1647,94 @@ const kThemes = <Theme>[
     // « glace » attrapait le gelato italien, « neige » un chant de Noel.
     'gelato', 'chanson',
   ]),
+  // Le pendant du règne animal, et le mieux réparti de tous : l'érable et la
+  // tubulure côté Québec, la photosynthèse côté Sciences, l'épinard côté
+  // Bouffe, le pin blanc du drapeau de Montréal au passage.
+  Theme('regne-vegetal', 'Le règne végétal', '🌿',
+      'Arbres, fleurs, et tout ce qui pousse.', [
+    'arbre', 'arbres', 'fleur', 'fleurs', 'plante', 'plantes', 'feuille',
+    'feuilles', 'racine', 'racines', 'graine', 'graines', 'foret', 'forets',
+    'erable', 'erables', 'erabliere', 'chene', 'sapin', 'epinette', 'pin',
+    'bouleau', 'saule', 'peuplier', 'sequoia', 'bambou', 'eucalyptus',
+    'cactus', 'champignon', 'champignons', 'mousse', 'algue', 'algues',
+    'herbe', 'gazon', 'jardin', 'potager', 'legume', 'legumes', 'tige',
+    'petale', 'petales', 'pollen', 'photosynthese', 'seve', 'tronc',
+    'branche', 'branches', 'ecorce', 'bourgeon', 'tulipe', 'marguerite',
+    'tournesol', 'orchidee', 'nenuphar', 'lilas', 'pissenlit', 'fougere',
+    'bonsai', 'semer', 'germer', 'botanique', 'bleuet', 'bleuets',
+  ]),
+  Theme('mer', 'La mer et les bateaux', '⚓',
+      'Océans, navigation, et ce qui se passe au large.', [
+    'mer', 'mers', 'ocean', 'oceans', 'bateau', 'bateaux', 'navire',
+    'navires', 'marin', 'marins', 'voilier', 'traversier', 'ferry',
+    'paquebot', 'chaloupe', 'canot', 'kayak', 'radeau', 'sous-marin',
+    'port', 'quai', 'phare', 'ancre', 'voile', 'voiles', 'coque',
+    'proue', 'equipage', 'capitaine', 'matelot', 'naufrage',
+    'pirate', 'pirates', 'corsaire', 'ile', 'iles', 'archipel', 'plage',
+    'vague', 'vagues', 'maree', 'marees', 'recif', 'lagon', 'baie',
+    'golfe', 'detroit', 'fleuve', 'estuaire', 'coquillage', 'titanic',
+    'croisiere', 'boussole', 'sextant', 'gouvernail', 'nautique',
+  ]),
+  Theme('transports', 'Les transports', '🚗',
+      'Autos, trains, avions, ponts et tunnels.', [
+    'auto', 'autos', 'automobile', 'voiture', 'voitures', 'camion',
+    'camions', 'autobus', 'autocar', 'moto', 'motocyclette', 'scooter',
+    'velo', 'bicyclette', 'trottinette', 'train', 'trains', 'locomotive',
+    'wagon', 'rails', 'tramway', 'metro', 'avion', 'avions', 'helicoptere',
+    'fusee', 'montgolfiere', 'route', 'routes', 'autoroute',
+    'pont', 'ponts', 'tunnel', 'tunnels', 'viaduc', 'permis', 'conduire',
+    'conducteur', 'chauffeur', 'pneu', 'pneus', 'volant', 'freins',
+    'moteur', 'essence', 'klaxon', 'pare-brise', 'ceinture de securite',
+    'stationnement', 'circulation', 'peage', 'roue', 'roues', 'diligence',
+    'traineau', 'charrue', 'souffleuse', 'motoneige',
+  ]),
+  // DEMANDÉE MALGRÉ SA CONCENTRATION. Les trois quarts de ses prises viennent
+  // de Cinéma et télé, ce qui en fait presque une sous-catégorie du même
+  // ordre que Le corps humain ; le client la veut quand même, et une manche
+  // Disney se demande vraiment un soir de party avec des enfants.
+  //
+  // PIXAR EN EST, DREAMWORKS N'EN EST PAS. Shrek, Kung Fu Panda, Dragons et
+  // Madagascar sortent de DreamWorks, les Minions et le Grinch
+  // d'Illumination. Ils se ressemblent tous à l'écran et la confusion est
+  // facile, mais une manche Disney qui pose Shrek se fait reprendre par le
+  // premier enfant venu.
+  Theme('disney', 'Disney', '🏰', 'Le royaume de Mickey, Pixar compris.', [
+    'disney', 'pixar', 'mickey', 'minnie', 'donald', 'dingo', 'pluto',
+    'picsou', 'walt', 'simba', 'mufasa', 'nala', 'timon', 'pumbaa',
+    'ariel', 'ursula', 'aladin', 'jasmine', 'abu', 'genie',
+    'raiponce', 'elsa', 'anna', 'olaf', 'sven', 'kristoff',
+    'moana', 'vaiana', 'maui', 'tiana', 'mulan', 'pocahontas', 'cendrillon',
+    'blanche-neige', 'clochette', 'peter pan', 'crochet',
+    'dumbo', 'bambi', 'baloo', 'mowgli', 'stitch', 'lilo', 'nemo', 'dory',
+    'woody', 'buzz', 'sulley', 'wall-e', 'remy',
+    'ratatouille', 'toy story', 'roi lion', 'reine des neiges',
+    'petite sirene', 'livre de la jungle', 'incroyables', 'coco', 'luca',
+    'vice-versa', 'monstres inc', 'flash mcqueen', 'nains',
+  ], exclude: [
+    // DreamWorks et Illumination, que le filet attrape par ressemblance.
+    'shrek', 'fiona', 'krokmou', 'harold', 'minions', 'gru', 'grinch',
+    'madagascar', 'chat potte',
+  ]),
+  // CE QUI A DISPARU DU QUOTIDIEN, et non « ce qui est vieux ». Le tramway de
+  // Montréal, le catalogue qui arrivait par la poste, Steinberg, le TV Hebdo.
+  //
+  // AUCUN MOT-CLÉ NE SAIT REPÉRER UN SOUVENIR. Le filet ci-dessous ramasse les
+  // marques et les objets nommément disparus, mais l'essentiel se trouve
+  // autrement : par les tranches d'âge, puisque la banque cote déjà « aînés »
+  // les questions qui appartiennent à un monde révolu. C'est à quoi sert
+  // proposeAges.
+  Theme('nostalgie', 'Dans l\'temps', '📻',
+      'Ce qui a disparu du quotidien : marques, émissions, objets.', [
+    'autrefois', 'jadis', 'antan', 'ancien', 'ancienne', 'anciens',
+    'disparu', 'disparue', 'epoque',
+    'tramway', 'catalogue', 'walkman', 'baladeur', 'cassette', 'cassettes',
+    'vinyle', 'tourne-disque', 'disquette',
+    'magnetoscope', 'vhs', 'polaroid', 'diapositive',
+    'telegramme', 'annuaire', 'bottin', 'laitier', 'glaciere',
+    'steinberg', 'eaton', 'woolworth', 'kresge',
+    'tv hebdo', 'cre basile', 'symphorien', 'yeye', 'discotheque',
+    'club video', 'transistor', 'sears', 'lessiveuse', 'tordeur',
+  ], proposeAges: ['aines']),
 ];
 
 void _controleQualite(List<Entry> all) {
@@ -1847,7 +1949,12 @@ void _proposer(String slug) {
           niveau: ligne.niveau,
           tranches: ligne.tranches ?? kToutesTranches,
         );
-        if (!theme.matches(e)) continue;
+        // Les mots-clés OU les tranches : deux filets pour la même liste à
+        // relire, et un thème comme « Dans l'temps » ne vit que du second.
+        final parAges = theme.proposeAges.isNotEmpty &&
+            !e.pourTous &&
+            e.tranches.every((t) => theme.proposeAges.contains(t.name));
+        if (!theme.matches(e) && !parAges) continue;
         proposees++;
         lignes.add('  ${bloc.nom} #${i + 1}  ${e.question}  →  ${e.answer}');
       }

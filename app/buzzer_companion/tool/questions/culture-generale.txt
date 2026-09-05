@@ -20,8 +20,9 @@
 # thématique est un jugement sur le sujet de la question, du même ordre que sa
 # catégorie, et la catégorie n'a jamais été devinée.
 #
-# Les huit slugs : noel, quebec-ailleurs, regne-animal, espace, corps-humain,
-# super-heros, creatures, sports-hiver. Un slug inconnu arrête la génération.
+# Les treize slugs : noel, quebec-ailleurs, regne-animal, espace,
+# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
+# transports, disney, nostalgie. Un slug inconnu arrête la génération.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -57,6 +58,7 @@ Combien de zéros dans un million ?|Six|1|enfants ados adultes aines
 Qui a inventé le téléphone ?|Graham Bell|2|ados adultes aines
 Qui a inventé l'ampoule électrique ?|Thomas Edison|2|ados adultes aines
 Quels frères ont inventé l'avion ?|Les frères Wright|2|ados adultes aines
+@ transports
 Qui a inventé la dynamite ?|Alfred Nobel|2|ados adultes aines
 # La réponse était dans la question. Reformulée pour qu'il reste à trouver.
 Quel prix célèbre porte le nom d'Alfred Nobel ?|Le prix Nobel|2|ados adultes aines
@@ -73,12 +75,14 @@ Quel reporter a un chien nommé Milou ?|Tintin|1|enfants ados adultes aines
 Quel Gaulois est l'ami d'Obélix ?|Astérix|1|enfants ados adultes aines
 @ super-heros
 Combien de dalmatiens dans le film de Disney ?|101|1|enfants ados adultes aines
+@ disney
 # « Mayday » est tout aussi juste pour un signal de détresse international.
 # Le morse ne laisse plus qu'une réponse. (Et « signal/signale » se répétait.)
 Quel signal international signale une détresse ?|SOS|1|enfants ados adultes aines
 > Quelles trois lettres forment le signal de détresse en morse ?|SOS
 Quel numéro d'urgence compose-t-on en Amérique du Nord ?|911|1|enfants ados adultes aines
 Quelle direction indique l'aiguille d'une boussole ?|Le nord|1|enfants ados adultes aines
+@ mer
 Quel jeu consiste à placer les chiffres 1 à 9 ?|Le sudoku|1|enfants ados adultes aines
 # Boggle, les mots croisés et Lettres et chiffres répondaient aussi bien.
 # « Mot compte triple » n'existe qu'au Scrabble.
@@ -96,12 +100,14 @@ Combien de faces a un cube ?|Six|1|enfants ados adultes aines
 # Ambigu : bien du monde a appris quatre océans à l'école.
 Combien d'océans sur Terre ?|Cinq|2|ados adultes aines
 > Combien d'océans compte-t-on aujourd'hui, en incluant l'océan Austral ?|Cinq
+@ mer
 Combien de mois ont 31 jours ?|Sept|2|ados adultes aines
 Quel est le plus petit nombre premier ?|Deux|2|ados adultes aines
 Combien de millimètres dans un centimètre ?|Dix|1|enfants ados adultes aines
 Combien de grammes dans un kilogramme ?|1000|1|enfants ados adultes aines
 Quel instrument mesure la température ?|Le thermomètre|1|enfants ados adultes aines
 Combien de roues a un tricycle ?|Trois|1|enfants ados adultes aines
+@ transports
 Quel oiseau figure sur la pièce de un dollar canadien ?|Le huard|1|enfants ados adultes aines
 @ regne-animal
 Quel animal figure sur la pièce de 5 cents canadienne ?|Le castor|1|enfants ados adultes aines
@@ -115,9 +121,11 @@ Combien d'étoiles sur le drapeau américain ?|50|1|enfants ados adultes aines
 Combien de bandes sur le drapeau américain ?|13|2|ados adultes aines
 - Politique américaine : symbole national.
 De quelle couleur est la boîte noire d'un avion ?|Orange|2|ados adultes aines
+@ transports
 Quelle pierre précieuse est rouge ?|Le rubis|1|enfants ados adultes aines
 Quelle pierre précieuse est verte ?|L'émeraude|1|enfants ados adultes aines
 De quel côté de la route conduit-on au Royaume-Uni ?|À gauche|1|ados adultes aines
+@ transports
 # « Lustre » pour cinq ans n'a aucun usage ici. Ce n'est pas une question
 # difficile, c'est une question sans répondant possible dans la salle.
 Combien d'années dure un lustre ?|Cinq|3|adultes aines
@@ -136,9 +144,12 @@ Quelle science étudie les vestiges anciens ?|L'archéologie|1|enfants ados adul
 Quelle science étudie les animaux ?|La zoologie|1|enfants ados adultes aines
 @ regne-animal
 Quelle science étudie les plantes ?|La botanique|1|enfants ados adultes aines
+@ regne-vegetal
 Quel arbre produit des glands ?|Le chêne|1|enfants ados adultes aines
+@ regne-vegetal
 Quelle fleur offre-t-on à la Saint-Valentin ?|La rose|1|enfants ados adultes aines
 > Quelle fleur rouge s'offre en bouquet le 14 février ?|La rose
+@ regne-vegetal
 Quel événement célèbre-t-on le 25 décembre ?|Noël|1|enfants ados adultes aines
 @ noel
 Quelle fête des déguisements a lieu le 31 octobre ?|L'Halloween|1|enfants ados adultes aines
@@ -156,6 +167,7 @@ Quel dieu grec règne sur l'Olympe ?|Zeus|1|enfants ados adultes aines
 @ creatures
 Quel dieu grec règne sur les mers ?|Poséidon|1|enfants ados adultes aines
 @ creatures
+@ mer
 Quel dieu grec règne sur les enfers ?|Hadès|2|ados adultes aines
 @ creatures
 Quelle déesse grecque est née de l'écume ?|Aphrodite|2|ados adultes aines
@@ -175,7 +187,9 @@ Quel géant mythologique n'a qu'un seul œil ?|Le cyclope|1|enfants ados adultes
 Qui a écrit L'Odyssée ?|Homère|2|adultes aines
 Quel héros de Jules Verne fait le tour du monde en 80 jours ?|Phileas Fogg|2|adultes aines
 Qui a écrit Vingt mille lieues sous les mers ?|Jules Verne|2|adultes aines
+@ mer
 Quel capitaine commande le sous-marin Nautilus ?|Nemo|2|adultes aines
+@ mer
 Quel bossu sonne les cloches de Notre-Dame ?|Quasimodo|1|enfants ados adultes aines
 Quelle orpheline rousse vit aux Pignons verts ?|Anne|1|adultes aines
 Qui a écrit Les Trois Mousquetaires ?|Alexandre Dumas|2|adultes aines
@@ -208,6 +222,7 @@ Quel jeu vidéo se joue avec des cubes à construire ?|Minecraft|1|enfants ados
 Quel jeu de société fait acheter des rues ?|Monopoly|1|enfants ados adultes aines
 Dans quel jeu doit-on deviner un mot dessiné ?|Pictionary|1|enfants ados adultes aines
 Quel jeu consiste à couler des navires adverses ?|Bataille navale|1|enfants ados adultes aines
+@ mer
 Quel jeu se joue avec cinq dés et des combinaisons ?|Le Yum (Yahtzee)|1|enfants ados adultes aines
 Combien de dominos dans un jeu standard ?|28|2|ados adultes aines
 Combien de pièces dans un jeu d'échecs complet ?|32|2|ados adultes aines
@@ -239,6 +254,7 @@ Quel oiseau est le symbole de la paix ?|La colombe|1|enfants ados adultes aines
 @ regne-animal
 Quel rameau symbolise la paix ?|L'olivier|2|ados adultes aines
 Quelle plante à quatre feuilles porte chance ?|Le trèfle|1|enfants ados adultes aines
+@ regne-vegetal
 Quel chiffre porte malheur en Occident ?|13|1|enfants ados adultes aines
 @ creatures
 Quel objet cassé porte sept ans de malheur ?|Le miroir|1|enfants ados adultes aines
@@ -265,6 +281,7 @@ Quel monument de Pise est célèbre pour son inclinaison ?|La tour de Pise|1|enf
 Quel mausolée indien est tout de marbre blanc ?|Le Taj Mahal|2|ados adultes aines
 Quelle merveille antique se trouvait à Babylone ?|Jardins suspendus|3|adultes aines
 Quelle merveille antique gardait le port de Rhodes ?|Le colosse|3|adultes aines
+@ mer
 Quelle grande horloge domine Londres ?|Big Ben|1|enfants ados adultes aines
 Quel palais habite le président français ?|L'Élysée|2|adultes aines
 Quelle maison habite le président américain ?|La Maison-Blanche|1|enfants ados adultes aines
@@ -282,6 +299,7 @@ Quel hors-la-loi anglais volait aux riches pour les pauvres ?|Robin des Bois|1|e
 Dans quelle forêt vivait Robin des Bois ?|Sherwood|2|adultes aines
 Quel marin de conte a fait sept voyages ?|Sinbad|2|adultes aines
 @ creatures
+@ mer
 Quel personnage de conte a une lampe magique ?|Aladin|1|enfants ados adultes aines
 @ creatures
 Combien de vœux accorde le génie de la lampe ?|Trois|1|enfants ados adultes aines
@@ -338,12 +356,14 @@ Quel jour de la semaine vient après vendredi ?|Samedi|1|enfants ados adultes ai
 Quel mois vient après mars ?|Avril|1|enfants ados adultes aines
 Combien de saisons compte une année ?|Quatre|1|enfants ados adultes aines
 De quelle couleur est le feu de circulation qui dit d'arrêter ?|Rouge|1|enfants ados adultes aines
+@ transports
 Quel personnage descend par la cheminée pour laisser des cadeaux ?|Le père Noël|1|enfants ados adultes aines
 @ noel
 Qui laisse de l'argent sous l'oreiller en échange d'une dent ?|La fée des dents|1|enfants ados adultes aines
 @ creatures
 Quel objet ouvre-t-on pour se protéger de la pluie ?|Un parapluie|1|enfants ados adultes aines
 Combien de roues a une bicyclette ?|Deux|1|enfants ados adultes aines
+@ transports
 Quel objet porté au poignet donne l'heure ?|Une montre|1|enfants ados adultes aines
 Que colle-t-on sur une enveloppe avant de la poster ?|Un timbre|1|enfants ados adultes aines
 Aux échecs, quelle pièce faut-il mettre échec et mat pour gagner ?|Le roi|1|enfants ados adultes aines
@@ -355,9 +375,13 @@ Comment s'appelle la maison de brindilles que construit un oiseau ?|Un nid|1|enf
 @ regne-animal
 Comment s'appelle une maison faite de blocs de neige ?|Un igloo|1|enfants ados adultes aines
 Comment appelle-t-on le grand navire qui emmène des passagers en croisière ?|Un paquebot|1|enfants ados adultes aines
+@ mer
 Quel véhicule vole grâce à une grande hélice sur le toit ?|L'hélicoptère|1|enfants ados adultes aines
+@ transports
 Quel véhicule roule sur des rails ?|Le train|1|enfants ados adultes aines
+@ transports
 Comment s'appelle la personne qui conduit un avion ?|Le pilote|1|enfants ados adultes aines
+@ transports
 Quel animal figure sur la pièce de 25 cents canadienne ?|Le caribou|1|enfants ados adultes aines
 @ regne-animal
 Quel outil sert à planter un clou ?|Le marteau|1|enfants ados adultes aines

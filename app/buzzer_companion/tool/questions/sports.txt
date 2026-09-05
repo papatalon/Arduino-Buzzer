@@ -20,8 +20,9 @@
 # thématique est un jugement sur le sujet de la question, du même ordre que sa
 # catégorie, et la catégorie n'a jamais été devinée.
 #
-# Les huit slugs : noel, quebec-ailleurs, regne-animal, espace, corps-humain,
-# super-heros, creatures, sports-hiver. Un slug inconnu arrête la génération.
+# Les treize slugs : noel, quebec-ailleurs, regne-animal, espace,
+# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
+# transports, disney, nostalgie. Un slug inconnu arrête la génération.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -80,6 +81,7 @@ Dans quel sport marque-t-on des essais ?|Le rugby|2|ados adultes aines
 Quel sport de glace utilise des pierres et des balais ?|Le curling|1|enfants ados adultes aines
 @ sports-hiver
 Quel sport pratique-t-on sur une planche dans les vagues ?|Le surf|1|enfants ados adultes aines
+@ mer
 Combien de quilles dans un jeu de bowling ?|Dix|1|enfants ados adultes aines
 Quel sport combine ski de fond et tir ?|Le biathlon|2|ados adultes aines
 @ sports-hiver
@@ -159,6 +161,7 @@ Quelle est la nage la plus rapide ?|Le crawl|1|enfants ados adultes aines
 Combien de styles de nage existe-t-il en compétition ?|Quatre|2|ados adultes aines
 Quelle longueur fait une piscine olympique ?|50 mètres|2|ados adultes aines
 Combien de kilomètres fait un triathlon olympique à vélo ?|40|3|adultes aines
+@ transports
 Quel coureur canadien a perdu son titre olympique en 1988 ?|Ben Johnson|2|adultes aines
 Quel sprinteur canadien a gagné le 100 m aux JO de 1996 ?|Donovan Bailey|2|adultes aines
 Quel joueur de tennis canadien a atteint la finale de Wimbledon ?|Milos Raonic|2|ados adultes
@@ -228,6 +231,7 @@ Quel sport de montagne descend des pentes gelées à crampons ?|L'alpinisme|2|ad
 @ sports-hiver
 Quel sport descend des rivières en radeau pneumatique ?|Le rafting|1|enfants ados adultes aines
 Quel sport glisse sur l'eau tiré par un bateau ?|Le ski nautique|1|enfants ados adultes aines
+@ mer
 Quel sport surfe sur la neige ?|La planche à neige|1|enfants ados adultes aines
 @ sports-hiver
 Quel sport de raquette au nom de cornichon est en plein essor ?|Le pickleball|2|adultes aines
@@ -244,6 +248,7 @@ Quel pilote allemand a aussi gagné 7 titres de F1 ?|Michael Schumacher|2|adulte
 Quelle écurie italienne de F1 est rouge ?|Ferrari|1|enfants ados adultes aines
 Quelle course américaine tourne en ovale 500 milles ?|Indianapolis 500|2|ados adultes aines
 Quel drapeau agite-t-on à la fin d'une course auto ?|Drapeau à damier|1|enfants ados adultes aines
+@ transports
 Quel cheval célèbre a gagné la Triple Couronne en 1973 ?|Secretariat|3|aines
 @ regne-animal
 # Réponse dans la question.
@@ -344,8 +349,10 @@ Quel sport de glisse descend les pentes enneigées sur deux planches étroites ?
 Quel sport se joue avec un ballon rond qu'on frappe du pied dans un but ?|Le soccer|1|enfants ados adultes aines
 Quel sport se joue avec un ballon orange qu'on lance dans un panier ?|Le basketball|1|enfants ados adultes aines
 Combien de roues a une planche à roulettes ?|Quatre|1|enfants ados adultes aines
+@ transports
 Quel équipement protège la tête à vélo et au hockey ?|Le casque|1|enfants ados adultes aines
 @ sports-hiver
+@ transports
 Quel sport se joue avec un ballon qu'on frappe des mains par-dessus un filet ?|Le volleyball|1|enfants ados adultes aines
 Quel jeu de cour d'école consiste à courir après les autres pour les toucher ?|La tag|1|enfants ados adultes aines
 Quel jeu de cour d'école saute sur des cases numérotées dessinées à la craie ?|La marelle|1|enfants ados adultes aines
@@ -367,7 +374,9 @@ Quel sport aquatique saute d'un tremplin dans une piscine ?|Le plongeon|1|enfant
 Quel cerceau fait-on tourner autour de la taille ?|Le hula hoop|1|enfants ados adultes aines
 Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?|Le football|1|enfants ados adultes aines
 Quelle embarcation étroite se dirige avec une pagaie à deux pales ?|Le kayak|1|enfants ados adultes aines
+@ mer
 Quel objet rond et gonflé frappe-t-on à la volée sur la plage ?|Le ballon de plage|1|enfants ados adultes aines
+@ mer
 #
 # ─── pour les ados ───
 #
@@ -421,7 +430,9 @@ Comment appelle-t-on la toile tendue sur laquelle on rebondit très haut ?|Un tr
 Quel sport de combat japonais se pratique pieds nus en kimono blanc ?|Le karaté|1|enfants ados adultes aines
 Quelle ceinture couronne le plus haut niveau des arts martiaux ?|La ceinture noire|1|enfants ados adultes aines
 Quelles petites roues aident un enfant à apprendre le vélo ?|Des roues d'entraînement|1|enfants ados adultes aines
+@ transports
 Quelles chaussures à roulettes se lacent aux pieds pour rouler sur l'asphalte ?|Des patins à roues alignées|2|enfants ados adultes aines
+@ transports
 Quelle médaille reçoit le champion olympique ?|La médaille d'or|1|enfants ados adultes aines
 Quelle médaille reçoit le deuxième aux Jeux olympiques ?|La médaille d'argent|1|enfants ados adultes aines
 Sur quelle estrade à trois marches montent les médaillés ?|Le podium|1|enfants ados adultes aines
@@ -443,7 +454,9 @@ Comment appelle-t-on la pratique où l'entraîneur choisit son équipe ?|Un camp
 Comment appelle-t-on le premier match de la saison ?|Le match d'ouverture|2|enfants ados adultes aines
 Quel sport fait courir des chevaux montés par des jockeys ?|Les courses de chevaux|2|enfants ados adultes aines
 Quel sport fait tourner des voitures très rapides sur un circuit ?|La course automobile|1|enfants ados adultes aines
+@ transports
 Quel sport de plage frappe un ballon par-dessus un filet, pieds dans le sable ?|Le volleyball de plage|2|enfants ados adultes aines
+@ mer
 Quel sport monte des parois avec des prises de couleur et un baudrier ?|L'escalade|1|enfants ados adultes aines
 Quel sport pousse un canot avec une pagaie à deux palettes ?|Le kayak|1|enfants ados adultes aines
 Quel sport fait descendre un skieur derrière un bateau ?|Le ski nautique|2|enfants ados adultes aines

@@ -20,8 +20,9 @@
 # thématique est un jugement sur le sujet de la question, du même ordre que sa
 # catégorie, et la catégorie n'a jamais été devinée.
 #
-# Les huit slugs : noel, quebec-ailleurs, regne-animal, espace, corps-humain,
-# super-heros, creatures, sports-hiver. Un slug inconnu arrête la génération.
+# Les treize slugs : noel, quebec-ailleurs, regne-animal, espace,
+# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
+# transports, disney, nostalgie. Un slug inconnu arrête la génération.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -56,6 +57,7 @@ Quel est le plus grand pays du monde ?|La Russie|1|enfants ados adultes aines
 Quel est le plus petit pays du monde ?|Le Vatican|2|ados adultes aines
 Quel est le continent le plus peuplé ?|L'Asie|1|enfants ados adultes aines
 Quel est le plus grand océan ?|Le Pacifique|1|enfants ados adultes aines
+@ mer
 Dans quel pays vivent les kangourous ?|L'Australie|1|enfants ados adultes aines
 @ regne-animal
 Quel volcan célèbre domine le Japon ?|Le mont Fuji|2|ados adultes aines
@@ -68,20 +70,24 @@ Quelle est la plus petite province canadienne ?|Prince-Édouard|1|enfants ados a
 Combien y a-t-il de Grands Lacs ?|Cinq|1|enfants ados adultes aines
 Quel est le plus grand des Grands Lacs ?|Le lac Supérieur|2|ados adultes aines
 Quelle mer sépare l'Europe de l'Afrique ?|La Méditerranée|1|enfants ados adultes aines
+@ mer
 Quelle chaîne de montagnes traverse la Suisse ?|Les Alpes|1|enfants ados adultes aines
 Quelle ville italienne est célèbre pour ses canaux ?|Venise|1|enfants ados adultes aines
 Où se trouvent les pyramides de Gizeh ?|En Égypte|1|enfants ados adultes aines
 Quel pays a offert la statue de la Liberté ?|La France|2|ados adultes aines
 Dans quelle ville se trouve la tour Eiffel ?|Paris|1|enfants ados adultes aines
 Quel détroit sépare l'Europe de l'Afrique ?|Gibraltar|2|ados adultes aines
+@ mer
 Quel pays a la feuille d'érable sur son drapeau ?|Le Canada|1|enfants ados adultes aines
 Quel océan borde la côte ouest du Canada ?|Le Pacifique|1|enfants ados adultes aines
+@ mer
 Quel est le plus long fleuve du Canada ?|Le Mackenzie|3|adultes aines
 Sur quel continent se trouve le pôle Sud ?|L'Antarctique|1|enfants ados adultes aines
 # La réponse a changé en 2023 ; bien du monde répond encore la Chine.
 Quel pays compte le plus d'habitants ?|L'Inde|2|ados adultes aines
 > Quel pays a dépassé la Chine en population en 2023 ?|L'Inde
 Quelle île française a vu naître Napoléon ?|La Corse|2|ados adultes aines
+@ mer
 Capitale de la Chine ?|Pékin|1|enfants ados adultes aines
 Capitale de l'Inde ?|New Delhi|2|ados adultes aines
 Capitale du Brésil ?|Brasilia|2|ados adultes aines
@@ -129,17 +135,22 @@ Quelles chutes africaines portent le nom d'une reine ?|Victoria|2|ados adultes a
 Quel désert froid couvre une partie de la Mongolie ?|Le Gobi|2|ados adultes aines
 Quel désert couvre le sud-ouest africain ?|Le Kalahari|3|adultes aines
 Quelle est la plus grande île du monde ?|Le Groenland|2|ados adultes aines
+@ mer
 Quelle mer est si salée qu'on y flotte ?|La mer Morte|1|ados adultes aines
+@ mer
 Quel lac écossais abriterait un monstre ?|Le Loch Ness|1|enfants ados adultes aines
 @ creatures
 Quel archipel équatorien a inspiré Darwin ?|Les Galápagos|2|ados adultes aines
+@ mer
 Quel pays a la forme d'une botte ?|L'Italie|1|ados adultes aines
 Quel pays d'Asie compte plus de 17000 îles ?|L'Indonésie|3|adultes aines
+@ mer
 Quel pays scandinave est célèbre pour ses fjords ?|La Norvège|2|ados adultes aines
 Quel volcan sicilien est le plus actif d'Europe ?|L'Etna|2|ados adultes aines
 Sur quel continent se dresse le Kilimandjaro ?|L'Afrique|1|enfants ados adultes aines
 Quelle rivière a creusé le Grand Canyon ?|Le Colorado|2|ados adultes aines
 Quel état américain est un archipel volcanique ?|Hawaï|1|enfants ados adultes aines
+@ mer
 Quel état américain est le plus grand ?|L'Alaska|2|ados adultes aines
 Quel pays entoure complètement le Lesotho ?|Afrique du Sud|3|adultes aines
 # Le méridien de Greenwich sépare aussi deux hémisphères, est et ouest.
@@ -147,10 +158,13 @@ Quelle ligne imaginaire sépare les deux hémisphères ?|L'équateur|1|enfants a
 > Quelle ligne imaginaire sépare l'hémisphère nord de l'hémisphère sud ?|L'équateur
 Combien de fuseaux horaires couvre le Canada ?|Six|2|ados adultes aines
 Quelle mer borde la Côte d'Azur ?|La Méditerranée|1|ados adultes aines
+@ mer
 Quel océan borde la côte est du Canada ?|L'Atlantique|1|enfants ados adultes aines
+@ mer
 # L'océan Austral est plus froid encore : « le plus froid » ne tranche pas.
 Quel océan est le plus froid ?|L'Arctique|1|enfants ados adultes aines
 > Quel océan entoure le pôle Nord ?|L'océan Arctique
+@ mer
 Quelle est la plus haute montagne d'Afrique ?|Le Kilimandjaro|2|ados adultes aines
 Quelle est la plus haute montagne d'Amérique du Nord ?|Le Denali|3|adultes aines
 Quelle est la plus haute montagne du Canada ?|Le mont Logan|3|adultes aines
@@ -160,6 +174,7 @@ Quel massif abrite l'Everest ?|L'Himalaya|1|enfants ados adultes aines
 Quel pays possède le mont Fuji ?|Le Japon|1|ados adultes aines
 - le volcan du Japon est déjà posé plus haut, et les deux se donnaient la réponse
 Quel détroit sépare la Russie de l'Alaska ?|Bering|2|ados adultes aines
+@ mer
 Quel canal traverse l'Amérique centrale ?|Panama|1|ados adultes aines
 Langue parlée en Argentine ?|L'espagnol|1|ados adultes aines
 Langue parlée en Autriche ?|L'allemand|2|ados adultes aines
@@ -176,6 +191,7 @@ Quel micro-État borde Nice et la Méditerranée ?|Monaco|2|ados adultes aines
 Quel pays est surnommé le pays du Soleil-Levant ?|Le Japon|1|enfants ados adultes aines
 Quel pays est surnommé la botte de l'Europe ?|L'Italie|1|ados adultes aines
 Quel pays est surnommé l'île d'émeraude ?|L'Irlande|2|ados adultes aines
+@ mer
 Quelle ville est surnommée la Grosse Pomme ?|New York|1|enfants ados adultes aines
 Quelle ville est surnommée la Ville lumière ?|Paris|1|enfants ados adultes aines
 Quelle ville est surnommée la Ville éternelle ?|Rome|2|ados adultes aines
@@ -199,15 +215,24 @@ Quel état américain touche le Québec et le Nouveau-Brunswick ?|Le Maine|2|ado
 Quelle péninsule abrite Espagne et Portugal ?|Ibérique|2|ados adultes aines
 Quelle péninsule abrite la Mecque ?|L'Arabie|2|ados adultes aines
 Quelle mer intérieure borde le Kazakhstan et l'Iran ?|La Caspienne|3|adultes aines
+@ mer
 Quel golfe borde le Texas et la Floride ?|Golfe du Mexique|1|ados adultes aines
+@ mer
 Quelle est la plus grande île du golfe Saint-Laurent ?|Anticosti|2|ados adultes aines
+@ mer
 Quelle baie géante borde le nord du Québec ?|Baie d'Hudson|1|enfants ados adultes aines
+@ mer
 Quelle île canadienne est la plus grande ?|Île de Baffin|2|ados adultes aines
+@ mer
 Quel passage maritime arctique relie deux océans ?|Nord-Ouest|2|ados adultes aines
+@ mer
 Quel courant marin réchauffe l'Europe ?|Le Gulf Stream|2|ados adultes aines
+@ mer
 Quel phénomène marin fait tourbillonner l'eau ?|Le maelstrom|3|adultes aines
+@ mer
 Quelle fosse océanique est la plus profonde ?|Les Mariannes|3|ados adultes aines
 Quel récif corallien longe l'Australie ?|Grande Barrière|2|ados adultes aines
+@ mer
 Quel pays a pour emblème le kiwi ?|Nouvelle-Zélande|2|ados adultes aines
 Quel pays a pour emblème le panda ?|La Chine|1|enfants ados adultes aines
 @ regne-animal
@@ -229,7 +254,10 @@ Quel fleuve forme la frontière Ontario-Québec au sud ?|L'Outaouais|2|ados adul
 Quelle province des Prairies a Regina pour capitale ?|La Saskatchewan|2|ados adultes aines
 Quelle province canadienne produit le plus de pétrole ?|L'Alberta|1|ados adultes aines
 Quelle île canadienne a inspiré Anne aux pignons verts ?|Prince-Édouard|1|ados adultes aines
+@ mer
 Quel pont relie l'Île-du-Prince-Édouard au continent ?|Confédération|2|ados adultes aines
+@ mer
+@ transports
 Quelle ville canadienne abrite la Tour CN ?|Toronto|1|enfants ados adultes aines
 Quel lac canadien est le plus profond ?|Lac des Esclaves|3|adultes aines
 Quelle rivière célèbre coule à Ottawa ?|L'Outaouais|1|ados adultes aines
@@ -242,6 +270,7 @@ Capitale du Chili ?|Santiago|2|ados adultes aines
 Capitale de la Nouvelle-Zélande ?|Wellington|3|adultes aines
 Quel désert chilien est le plus aride du monde ?|L'Atacama|3|adultes aines
 Quelle est la plus grande île de la Méditerranée ?|La Sicile|2|ados adultes aines
+@ mer
 Quel état américain est surnommé le Golden State ?|La Californie|2|ados adultes aines
 Dans quel état américain se trouve Las Vegas ?|Le Nevada|1|ados adultes aines
 Dans quel pays se trouve le Kilimandjaro ?|La Tanzanie|3|adultes aines
@@ -252,6 +281,7 @@ Quel pays a Kaboul pour capitale ?|L'Afghanistan|2|ados adultes aines
 Quel pays a Bagdad pour capitale ?|L'Irak|2|ados adultes aines
 Quelle province canadienne borde le Pacifique ?|Colombie-Britannique|1|enfants ados adultes aines
 Quel archipel espagnol se trouve au large du Maroc ?|Les Canaries|2|ados adultes aines
+@ mer
 Quel est le plus grand lac d'Afrique ?|Le lac Victoria|2|ados adultes aines
 Quel fleuve traverse l'Allemagne et se jette à Rotterdam ?|Le Rhin|2|ados adultes aines
 
@@ -269,6 +299,7 @@ Combien y a-t-il de continents sur Terre ?|Sept|1|enfants ados adultes aines
 Dans quelle province se trouve Montréal ?|Le Québec|1|enfants ados adultes aines
 @ quebec-ailleurs
 Quel océan traverse-t-on en avion pour aller du Canada à la France ?|L'Atlantique|1|enfants ados adultes aines
+@ mer
 Dans quel pays se trouve la ville de New York ?|Les États-Unis|1|enfants ados adultes aines
 Quelle langue parle-t-on aux États-Unis ?|L'anglais|1|enfants ados adultes aines
 Quel pays est célèbre pour ses tacos et ses sombreros ?|Le Mexique|1|enfants ados adultes aines
@@ -281,6 +312,7 @@ Comment appelle-t-on un dessin qui représente un pays ou une ville vus d'en hau
 Quelle est la plus grande ville du Québec ?|Montréal|1|enfants ados adultes aines
 @ quebec-ailleurs
 Quel État américain chaud accueille Disney World ?|La Floride|1|enfants ados adultes aines
+@ disney
 Quelle province canadienne est voisine du Québec, à l'ouest ?|L'Ontario|1|enfants ados adultes aines
 @ quebec-ailleurs
 Quelle province canadienne est voisine du Québec, à l'est, avec Fredericton pour capitale ?|Le Nouveau-Brunswick|1|enfants ados adultes aines
@@ -294,31 +326,43 @@ Quelle grande ville américaine abrite la statue de la Liberté ?|New York|1|enf
 Quel pays a un drapeau bleu, blanc et rouge à trois bandes verticales ?|La France|1|enfants ados adultes aines
 Combien y a-t-il de pôles sur la Terre ?|Deux|1|enfants ados adultes aines
 Quelle étendue d'eau salée immense sépare les continents ?|L'océan|1|enfants ados adultes aines
+@ mer
 Sur quel continent se trouvent la France et l'Italie ?|L'Europe|1|enfants ados adultes aines
 Sur quel continent se trouvent le Brésil et l'Argentine ?|L'Amérique du Sud|1|enfants ados adultes aines
 Sur quel continent se trouve l'Australie ?|L'Océanie|2|enfants ados adultes aines
 Quel océan sépare le Québec de l'Europe ?|L'océan Atlantique|1|enfants ados adultes aines
+@ mer
 Combien de continents compte la Terre ?|Sept|2|enfants ados adultes aines
 Quel point le plus au sud de la Terre est couvert de glace ?|Le pôle Sud|1|enfants ados adultes aines
 Comment appelle-t-on une terre entièrement entourée d'eau ?|Une île|1|enfants ados adultes aines
+@ mer
 Comment appelle-t-on un relief très haut qu'on gravit à pied ?|Une montagne|1|enfants ados adultes aines
 Comment appelle-t-on une grande étendue d'eau douce entourée de terre ?|Un lac|1|enfants ados adultes aines
 Comment appelle-t-on un cours d'eau qui se jette dans un fleuve ?|Une rivière|1|enfants ados adultes aines
 Comment appelle-t-on une montagne qui crache de la lave ?|Un volcan|1|enfants ados adultes aines
 Comment appelle-t-on une immense étendue de sable sans eau ?|Un désert|1|enfants ados adultes aines
 Comment appelle-t-on une bande de sable au bord de la mer ?|Une plage|1|enfants ados adultes aines
+@ mer
 Comment appelle-t-on une des sept grandes masses de terre du globe ?|Un continent|1|enfants ados adultes aines
 Comment appelle-t-on une langue de terre qui s'avance dans la mer ?|Une péninsule|3|enfants ados adultes aines
+@ mer
 Comment appelle-t-on la ligne où le ciel semble toucher la mer ?|L'horizon|2|enfants ados adultes aines
+@ mer
 Comment appelle-t-on l'eau qui tombe du haut d'une falaise dans une rivière ?|Une chute|1|enfants ados adultes aines
 Comment appelle-t-on la grande vallée creusée par une rivière entre deux parois ?|Un canyon|2|enfants ados adultes aines
 Comment appelle-t-on l'énorme masse de glace qui flotte sur la mer ?|Un iceberg|1|enfants ados adultes aines
+@ mer
 Comment appelle-t-on la rivière de glace qui descend lentement d'une montagne ?|Un glacier|2|enfants ados adultes aines
 Comment appelle-t-on la grande forêt humide et chaude de l'Amazonie ?|La forêt tropicale|2|enfants ados adultes aines
+@ regne-vegetal
 Comment appelle-t-on la vaste plaine d'herbe où broutent les bisons ?|La prairie|2|enfants ados adultes aines
+@ regne-vegetal
 Comment appelle-t-on la terre gelée sans arbres du Grand Nord ?|La toundra|3|enfants ados adultes aines
+@ regne-vegetal
 Comment appelle-t-on le passage étroit d'eau entre deux terres ?|Un détroit|3|enfants ados adultes aines
+@ mer
 Comment appelle-t-on la partie de la mer qui rentre dans les terres ?|Une baie|2|enfants ados adultes aines
+@ mer
 Combien de points cardinaux la rose des vents compte-t-elle ?|Quatre|1|enfants ados adultes aines
 Comment appelle-t-on le livre rempli de cartes de tous les pays ?|Un atlas|2|enfants ados adultes aines
 Comment appelle-t-on l'encadré qui explique les symboles d'une carte ?|La légende|3|enfants ados adultes aines
@@ -343,12 +387,14 @@ Quelle région du Québec est célèbre pour ses bleuets ?|Le Lac-Saint-Jean|2|e
 @ quebec-ailleurs
 Quel énorme bloc de calcaire troué se dresse dans la mer en Gaspésie ?|Le rocher Percé|2|enfants ados adultes aines
 @ quebec-ailleurs
+@ mer
 Quelle montagne se dresse au milieu de Montréal ?|Le mont Royal|1|enfants ados adultes aines
 @ quebec-ailleurs
 Quelle chaîne de montagnes du Québec attire les skieurs au nord de Montréal ?|Les Laurentides|2|enfants ados adultes aines
 @ quebec-ailleurs
 Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?|La baie James|3|ados adultes aines
 @ quebec-ailleurs
+@ mer
 Dans quel pays se trouve la Grande Muraille ?|La Chine|1|enfants ados adultes aines
 Dans quel pays se trouve la tour de Pise ?|L'Italie|2|enfants ados adultes aines
 Dans quel pays se trouve le Taj Mahal ?|L'Inde|3|enfants ados adultes aines
@@ -362,8 +408,10 @@ Quelle tempête tropicale géante porte un nom de personne ?|Un ouragan|2|enfant
 Comment appelle-t-on la vague géante déclenchée par un tremblement de terre ?|Un tsunami|2|enfants ados adultes aines
 Comment appelle-t-on la secousse qui fait trembler le sol ?|Un tremblement de terre|1|enfants ados adultes aines
 Quelle feuille rouge orne le drapeau du Canada ?|La feuille d'érable|1|enfants ados adultes aines
+@ regne-vegetal
 Quelle fleur bleue orne le drapeau du Québec ?|La fleur de lys|1|enfants ados adultes aines
 @ quebec-ailleurs
+@ regne-vegetal
 De quelles couleurs est le drapeau de la France ?|Bleu blanc rouge|1|enfants ados adultes aines
 Quel animal est l'emblème des États-Unis ?|L'aigle|2|enfants ados adultes aines
 @ regne-animal
@@ -375,35 +423,49 @@ Dans quelle direction le soleil se couche-t-il ?|À l'ouest|1|enfants ados adult
 Comment appelle-t-on le décalage d'heure entre Montréal et Paris ?|Le décalage horaire|3|enfants ados adultes aines
 Comment appelle-t-on un très grand bâtiment de plusieurs dizaines d'étages ?|Un gratte-ciel|1|enfants ados adultes aines
 Comment appelle-t-on le train qui circule sous la ville ?|Le métro|1|enfants ados adultes aines
+@ transports
 Comment appelle-t-on le grand bâtiment d'où décollent les avions ?|Un aéroport|1|enfants ados adultes aines
+@ transports
 Comment appelle-t-on l'endroit où les bateaux accostent ?|Un port|1|enfants ados adultes aines
+@ mer
 Comment appelle-t-on la construction qui permet de traverser une rivière ?|Un pont|1|enfants ados adultes aines
+@ transports
 Comment appelle-t-on le mur de béton qui retient l'eau d'une rivière ?|Un barrage|2|enfants ados adultes aines
 Comment appelle-t-on le passage creusé sous une montagne ou sous l'eau ?|Un tunnel|1|enfants ados adultes aines
+@ transports
 Comment appelle-t-on la grande route à plusieurs voies entre deux villes ?|Une autoroute|1|enfants ados adultes aines
+@ transports
 Comment appelle-t-on le village où l'on cultive la terre et élève des animaux ?|Une ferme|1|enfants ados adultes aines
 Comment appelle-t-on la ville où siège le gouvernement d'un pays ?|La capitale|1|enfants ados adultes aines
 Comment appelle-t-on l'eau salée qu'on ne peut pas boire ?|L'eau de mer|1|enfants ados adultes aines
+@ mer
 Comment appelle-t-on le mouvement de la mer qui monte et descend chaque jour ?|La marée|2|enfants ados adultes aines
+@ mer
 Comment appelle-t-on la petite colline de sable poussée par le vent au bord de la mer ?|Une dune|3|enfants ados adultes aines
+@ mer
 Comment appelle-t-on le trou d'eau au milieu du désert avec des palmiers ?|Une oasis|2|enfants ados adultes aines
 Comment appelle-t-on la haute paroi de roche au bord de la mer ?|Une falaise|2|enfants ados adultes aines
+@ mer
 Comment appelle-t-on le chemin de terre battue dans le bois ?|Un sentier|1|enfants ados adultes aines
 Comment appelle-t-on la grande étendue de terre où le fermier sème son blé ?|Un champ|1|enfants ados adultes aines
 Comment appelle-t-on le terrain planté de pommiers ?|Un verger|2|enfants ados adultes aines
+@ regne-vegetal
 Dans quel pays voisin de la France et de l'Italie parle-t-on quatre langues officielles ?|La Suisse|2|enfants ados adultes aines
 Dans quel pays trouve-t-on les gondoles et les gladiateurs de l'histoire ?|L'Italie|2|enfants ados adultes aines
 Quelle grande ville des États-Unis abrite Hollywood ?|Los Angeles|2|enfants ados adultes aines
 Dans quelle ville américaine se trouve Disney World ?|Orlando|3|enfants ados adultes aines
+@ disney
 Dans quel état américain se trouvent les Everglades et la ville de Miami ?|La Floride|2|enfants ados adultes aines
 Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?|La ville de Québec|2|enfants ados adultes aines
 @ quebec-ailleurs
 Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?|Le pont Champlain|3|enfants ados adultes aines
 @ quebec-ailleurs
+@ transports
 Comment appelle-t-on le nord du Québec, immense et presque sans routes ?|Le Grand Nord|2|enfants ados adultes aines
 @ quebec-ailleurs
 Quel arbre couvre les immenses forêts du nord du Québec ?|L'épinette|3|enfants ados adultes aines
 @ quebec-ailleurs
+@ regne-vegetal
 Quelle ville du Québec accueille chaque été le Festival de la poutine ?|Drummondville|3|ados adultes aines
 @ quebec-ailleurs
 Comment appelle-t-on la rive du fleuve où se trouve Longueuil ?|La Rive-Sud|2|enfants ados adultes aines
@@ -414,8 +476,10 @@ Comment appelle-t-on la voie bordée de maisons où l'on habite en ville ?|Une r
 Quelle plaque plantée au bord du chemin indique la direction à suivre ?|Un panneau|1|enfants ados adultes aines
 Comment appelle-t-on le quartier bâti pour loger les athlètes pendant les Jeux ?|Le village olympique|3|enfants ados adultes aines
 Quelle grande île de l'Atlantique, au large de Terre-Neuve, appartient à la France ?|Saint-Pierre-et-Miquelon|3|ados adultes aines
+@ mer
 Quel petit pays d'Amérique centrale est réputé pour sa forêt tropicale et sa faune ?|Le Costa Rica|2|enfants ados adultes aines
 Quelle mer sépare la péninsule coréenne de l'archipel nippon ?|La mer du Japon|3|adultes aines
+@ mer
 Quel pays d'Europe a la forme d'une main et borde la mer Baltique ?|La Pologne|3|ados adultes aines
 Quelle grande étendue d'eau salée sépare l'Angleterre de la France ?|La Manche|2|enfants ados adultes aines
 Comment appelle-t-on la ligne qui sépare deux pays sur une carte ?|Une frontière|1|enfants ados adultes aines
@@ -423,4 +487,5 @@ Quel grand pays d'Asie du Sud a plus d'un milliard d'habitants et borde l'océan
 
 Comment appelle-t-on la carte qui montre le relief avec des couleurs et des courbes ?|Une carte topographique|3|ados adultes aines
 Quelle grande forêt de conifères ceinture le nord de l'hémisphère ?|La forêt boréale|3|enfants ados adultes aines
+@ regne-vegetal
 Comment appelle-t-on le petit cours d'eau où l'on peut marcher les pieds dedans ?|Un ruisseau|1|enfants ados adultes aines

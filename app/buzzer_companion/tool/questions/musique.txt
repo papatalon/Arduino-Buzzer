@@ -20,8 +20,9 @@
 # thématique est un jugement sur le sujet de la question, du même ordre que sa
 # catégorie, et la catégorie n'a jamais été devinée.
 #
-# Les huit slugs : noel, quebec-ailleurs, regne-animal, espace, corps-humain,
-# super-heros, creatures, sports-hiver. Un slug inconnu arrête la génération.
+# Les treize slugs : noel, quebec-ailleurs, regne-animal, espace,
+# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
+# transports, disney, nostalgie. Un slug inconnu arrête la génération.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -133,6 +134,7 @@ Quel groupe québécois a chanté La complainte du phoque en Alaska ?|Beau Domma
 @ quebec-ailleurs
 Quel groupe progressif québécois a fait L'Heptade ?|Harmonium|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Quel groupe rock québécois était mené par Gerry Boulet ?|Offenbach|2|adultes aines
 @ quebec-ailleurs
 Quelle chanteuse québécoise a une voix puissante et chante Un peu plus haut ?|Ginette Reno|2|adultes aines
@@ -196,6 +198,7 @@ Quel chanteur britannique roux a chanté Shape of You ?|Ed Sheeran|2|ados adulte
 Quel groupe sud-coréen a chanté Dynamite ?|BTS|2|enfants ados
 Quel style musical coréen a conquis la planète ?|La K-pop|1|enfants ados
 Quel chanteur a popularisé le twist ?|Chubby Checker|3|aines
+@ nostalgie
 Quelle danse latine endiablée vient de Cuba ?|La salsa|1|ados adultes aines
 Quelle danse brésilienne anime le carnaval ?|La samba|1|ados adultes aines
 Quel style jamaïcain a précédé le reggae ?|Le ska|3|adultes aines
@@ -221,6 +224,7 @@ Comment nomme-t-on l'artiste qui anime les platines ?|Le DJ|1|enfants ados adult
 Quel format de disque tourne à 33 tours ?|Le vinyle|1|enfants adultes aines
 Quel petit disque optique a remplacé la cassette ?|Le CD|1|enfants adultes aines
 Quel baladeur de Sony a révolutionné les années 80 ?|Le Walkman|2|adultes aines
+@ nostalgie
 Quelle note suit le si dans la gamme ?|Le do|1|enfants ados adultes aines
 Combien de demi-tons dans une octave ?|Douze|3|adultes aines
 Quel signe musical monte une note d'un demi-ton ?|Le dièse|2|ados adultes aines
@@ -434,9 +438,12 @@ Quel chant de Noël raconte un renne moqué pour son nez lumineux ?|Le petit ren
 Quel cantique de Noël d'origine autrichienne est le plus traduit au monde ?|Douce nuit|2|enfants ados adultes aines
 @ noel
 Quelle chanson d'Elsa parle de laisser aller le froid et de ne plus se cacher ?|Libérée délivrée|1|enfants ados adultes
+@ disney
 Quelle expression du Roi Lion signifie « sans souci » en swahili ?|Hakuna Matata|1|enfants ados adultes
+@ disney
 Quelle chanson du crabe Sébastien vante la vie sous les vagues ?|Sous l'océan|2|enfants ados adultes
 Quelle chanson Blanche-Neige chante-t-elle près du puits en attendant l'amour ?|Un jour mon prince viendra|3|enfants ados adultes aines
+@ disney
 Quel instrument de cuivre se joue en soufflant dans une embouchure et en pressant trois pistons ?|La trompette|1|enfants ados adultes aines
 Quel instrument se frappe avec deux baguettes sur une peau tendue ?|Le tambour|1|enfants ados adultes aines
 Quels deux disques de métal s'entrechoquent dans un orchestre ?|Les cymbales|2|enfants ados adultes aines
@@ -504,6 +511,7 @@ Comment appelle-t-on le bruit désagréable d'un micro trop près d'un haut-parl
 Comment appelle-t-on un son très bas, comme celui d'un gros tambour ?|Un son grave|2|enfants ados adultes aines
 Quel objet à ressort le professeur de musique frappe-t-il pour donner le la ?|Un diapason|3|ados adultes aines
 Quel appareil enregistrait la musique sur une bande dans les années 80 ?|Une cassette|3|adultes aines
+@ nostalgie
 Comment appelle-t-on l'ensemble de musiciens que dirige un chef ?|Un orchestre|1|enfants ados adultes aines
 Quel bâton tendu de crin frotte les cordes du violon ?|Un archet|2|enfants ados adultes aines
 Dans quoi range-t-on son violon pour le transporter ?|Un étui|2|enfants ados adultes aines

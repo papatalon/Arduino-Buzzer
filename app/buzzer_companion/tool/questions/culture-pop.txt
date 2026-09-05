@@ -14,8 +14,9 @@
 # thématique est un jugement sur le sujet de la question, du même ordre que sa
 # catégorie, et la catégorie n'a jamais été devinée.
 #
-# Les huit slugs : noel, quebec-ailleurs, regne-animal, espace, corps-humain,
-# super-heros, creatures, sports-hiver. Un slug inconnu arrête la génération.
+# Les treize slugs : noel, quebec-ailleurs, regne-animal, espace,
+# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
+# transports, disney, nostalgie. Un slug inconnu arrête la génération.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -50,11 +51,15 @@ Quel programme de récompenses accumule des points bleus chez plusieurs commerç
 Quelle friperie à grande surface porte un nom qui parle de valeurs ?|Le Village des Valeurs|2|adultes aines
 Quelle carte à puce sert à payer le métro et l'autobus à Montréal ?|La carte Opus|2|ados adultes aines
 @ quebec-ailleurs
+@ transports
 Quel service de vélos en libre-service porte un nom né de bicyclette et de taxi ?|Bixi|2|ados adultes
+@ transports
 Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?|Le REM|3|ados adultes aines
 @ quebec-ailleurs
+@ transports
 Quel organisme québécois délivre les permis de conduire et les plaques ?|La SAAQ|2|adultes aines
 @ quebec-ailleurs
+@ transports
 #
 # --- La route et les vacances ---
 Quel objet orange envahit les rues de Montréal chaque été ?|Le cône|2|ados adultes aines
@@ -65,6 +70,7 @@ Quel engin motorisé souffle la neige des entrées de garage l'hiver ?|La souffl
 Quel type de piscine se monte dans la cour sans creuser le sol ?|La piscine hors terre|2|adultes aines
 Quelle petite maison de jardin range les outils et la tondeuse ?|Le cabanon|2|adultes aines
 Quel véhicule récréatif se tire derrière l'auto pour camper ?|La roulotte|2|adultes aines
+@ transports
 #
 # --- Médias écrits et radio ---
 Quel quotidien montréalais a imprimé sa dernière édition en 2017 pour passer à la tablette ?|La Presse|3|adultes aines
@@ -83,8 +89,10 @@ Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Qué
 @ quebec-ailleurs
 Quelle autrice et animatrice québécoise a abordé les tabous à la télé pendant des décennies ?|Janette Bertrand|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?|Michel Louvain|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Qui était le gérant et le mari de Céline Dion ?|René Angélil|2|adultes aines
 @ quebec-ailleurs
 Quel animateur québécois mène une émission de musique en direct avec un band maison ?|Normand Brathwaite|3|adultes aines
@@ -103,7 +111,9 @@ Quelle danse des années 70 se pratiquait sous une boule miroir, en pantalon pat
 Quel accessoire rembourré élargissait les épaules des vestons dans les années 80 ?|L'épaulette|3|adultes aines
 Quel traitement de coiffure des années 80 frisait les cheveux pour des mois ?|La permanente|3|adultes aines
 Quel revêtement de sol en rouleau couvrait les cuisines avant le plancher flottant ?|Le prélart|3|aines
+@ nostalgie
 Quel tapis à longs poils habillait les salons des années 70 ?|Le shag|3|aines
+@ nostalgie
 Quel meuble de salon se déplie en lit pour la visite ?|Le divan-lit|2|adultes aines
 #
 # --- Habitudes et traditions ---
@@ -133,19 +143,27 @@ Comment appelle-t-on l'argent qu'on met de côté pour les mauvais jours ?|Un ba
 #
 # --- La Reine des neiges ---
 Comment s'appelle le royaume d'Elsa et d'Anna ?|Arendelle|1|enfants ados
+@ disney
 Quel montagnard accompagne Anna avec son renne dans La Reine des neiges ?|Kristoff|1|enfants ados
+@ disney
 Dans La Reine des neiges, de quoi rêve Olaf qu'il n'a jamais connu ?|L'été|1|enfants ados
+@ disney
 Quel pouvoir Elsa doit-elle cacher au début de La Reine des neiges ?|La glace|1|enfants ados adultes
+@ disney
 #
 # --- Films d'animation récents ---
 Dans quel film d'animation une famille colombienne vit-elle dans une maison magique ?|Encanto|1|enfants ados adultes
 Dans Encanto, de qui la famille refuse-t-elle de parler ?|Bruno|1|enfants ados
 Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?|Luca|2|enfants ados
+@ disney
 Quel film Pixar de 2022 met en scène une fille qui se change en panda roux ?|Alerte rouge|2|enfants ados
+@ disney
 Quel film Pixar de 2023 fait vivre ensemble le feu, l'eau, la terre et l'air ?|Élémentaire|2|enfants ados
+@ disney
 Quel film de 2023 a porté le plombier moustachu de Nintendo au cinéma ?|Super Mario Bros, le film|1|enfants ados adultes
 Quelle créature bleue de Disney, échappée de l'espace, s'appelle l'expérience 626 ?|Stitch|1|enfants ados adultes
 @ creatures
+@ disney
 Quels petits êtres colorés aux cheveux dressés chantent dans leurs films ?|Les Trolls|1|enfants ados
 #
 # --- Émissions et séries pour enfants ---
@@ -161,7 +179,9 @@ Quel petit ours de dessin animé porte un chandail et un prénom de couleur ?|Pe
 Quel petit âne de dessin animé français est très curieux ?|Trotro|3|enfants
 @ regne-animal
 Quelles équipes de sous-marins explorent les océans en secourant les animaux marins ?|Les Octonauts|3|enfants
+@ mer
 Quel camion de course rouge et bleu affronte Crusher dans une série pour enfants ?|Blaze|3|enfants
+@ transports
 Quels ninjas de Lego portent chacun une couleur et un élément ?|Ninjago|2|enfants ados
 Quelle émission jeunesse québécoise est revenue à la télé en 2019, trente ans après ?|Passe-Partout|2|enfants ados adultes
 @ quebec-ailleurs
@@ -193,6 +213,7 @@ Quel ressort de métal descend les escaliers tout seul ?|Le Slinky|2|enfants ado
 Quelle ardoise à deux boutons dessine des traits et s'efface en la secouant ?|Le Télécran|3|adultes aines
 Quel jeu électronique rond répète une suite de couleurs et de sons à imiter ?|Le Simon|3|adultes aines
 Quelles petites autos de métal roulent sur des pistes de plastique orange ?|Les Hot Wheels|1|enfants ados adultes aines
+@ transports
 Quelles figurines allemandes à mains rondes peuplent des châteaux et des fermes ?|Les Playmobil|1|enfants ados adultes
 Quel jouet surgit d'une boîte quand la manivelle s'arrête de jouer ?|Le diable à ressort|2|enfants ados adultes aines
 #
@@ -260,6 +281,7 @@ Quelle mascotte de pâte à biscuits rit quand on lui touche le ventre ?|Le bonh
 Quel lapin rose à lunettes fumées bat du tambour pour vendre des piles ?|Le lapin Energizer|1|enfants ados adultes aines
 @ regne-animal
 Quelle marque de pneus a un bonhomme tout rond fait de bourrelets ?|Michelin|2|adultes aines
+@ transports
 #
 # --- Friandises et boissons ---
 Quelle tablette de chocolat porte un nom qui évoque le café ?|Le Coffee Crisp|2|ados adultes aines
@@ -289,8 +311,10 @@ Quelle marque de vêtements de sport a une virgule pour logo ?|Nike|1|enfants ad
 Quel est le slogan de Nike, en trois mots anglais ?|Just Do It|2|ados adultes aines
 Quelle marque de sport allemande a trois bandes parallèles ?|Adidas|1|enfants ados adultes aines
 Quelle marque de voitures allemande a quatre anneaux entrelacés ?|Audi|2|ados adultes aines
+@ transports
 Quelle marque de véhicules tout-terrain a une calandre à sept fentes ?|Jeep|3|ados adultes aines
 Quelle marque de voitures électriques porte le nom d'un inventeur serbe ?|Tesla|2|ados adultes
+@ transports
 Quelle marque de jeans a été créée pour les chercheurs d'or ?|Levi's|2|adultes aines
 Quel site de vente en ligne a une flèche souriante dans son logo ?|Amazon|1|enfants ados adultes aines
 Quelles chaussures de caoutchouc percées de trous divisent la planète ?|Les Crocs|1|enfants ados adultes
@@ -309,12 +333,16 @@ Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?|Quét
 Quel appareil de poche vibrait pour dire de rappeler quelqu'un, avant le cellulaire ?|Le téléavertisseur|3|adultes aines
 Quel appareil envoyait une feuille de papier par la ligne téléphonique ?|Le fax|2|adultes aines
 Quel appareil enregistrait les messages sur une petite cassette quand on était absent ?|Le répondeur|2|adultes aines
+@ nostalgie
 Quel carré de plastique de trois pouces et demi stockait des fichiers d'ordinateur ?|La disquette|3|adultes aines
+@ nostalgie
 Quel appareil branché à la ligne téléphonique faisait des bruits stridents pour se connecter ?|Le modem|3|adultes
 Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?|Les oreilles de lapin|3|adultes aines
 Quel appareil enregistrait les émissions de télé sur une cassette ?|Le magnétoscope|2|adultes aines
+@ nostalgie
 Quel appareil photo de carton s'achetait plein et se rapportait complet à développer ?|L'appareil jetable|3|adultes aines
 Quel disque argenté a remplacé la cassette pour la musique, puis a été remplacé à son tour ?|Le disque compact|2|ados adultes aines
+@ nostalgie
 #
 # --- Party et rassemblements ---
 Quelle activité de party fait chanter sur une musique en lisant les paroles à l'écran ?|Le karaoké|1|enfants ados adultes aines
@@ -343,10 +371,12 @@ Quelle tartelette se fait griller au grille-pain pour le déjeuner ?|La Pop-Tart
 # --- Objets et habitudes ---
 Quel gros livre illustré arrivait par la poste et faisait rêver avant Noël ?|Le catalogue|3|adultes aines
 @ noel
+@ nostalgie
 Quel appareil à deux boutons permet de se parler à distance en disant « à toi » ?|Le walkie-talkie|1|enfants ados adultes aines
 Quel objet de plastique se glisse sous les pieds pour glisser sur la neige ?|La soucoupe|2|enfants ados adultes aines
 @ sports-hiver
 Quelle carte de plastique rigide permettait de louer des films au club vidéo ?|La carte de membre|3|adultes
+@ nostalgie
 Quel objet rond et plat se lance entre deux joueurs et revient parfois tout seul ?|Le boomerang|2|enfants ados adultes aines
 Quel jeu de cordelette passe de mains en mains en formant des figures géométriques ?|Le jeu de la ficelle|3|adultes aines
 #
@@ -398,6 +428,7 @@ Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 
 @ quebec-ailleurs
 Quel magazine hebdomadaire publiait les horaires de télévision au Québec ?|Le TV Hebdo|3|aines
 @ quebec-ailleurs
+@ nostalgie
 #
 # --- Mascotte ---
 Quelle mascotte orange et poilue est passée des Expos aux Canadiens ?|Youppi|2|ados adultes aines
@@ -423,6 +454,7 @@ Quelle émission fait présenter des projets d'affaires à des investisseurs pou
 Quelle plateforme de diffusion a un grand N rouge pour logo ?|Netflix|1|enfants ados adultes aines
 Quelle marque de motoneige est née au Québec ?|Ski-Doo|2|ados adultes aines
 @ quebec-ailleurs
+@ transports
 Quelle marque de crayons de cire remplit les boîtes d'école ?|Crayola|1|enfants ados adultes aines
 Quelle marque de bonbons colorés fond dans la bouche, pas dans la main ?|Les M&M's|1|enfants ados adultes aines
 Quelle marque de chocolat suisse a la forme d'une montagne ?|Toblerone|2|ados adultes aines
@@ -437,11 +469,14 @@ Quelle poupée blonde de Mattel a un ami nommé Ken ?|Barbie|1|enfants ados adul
 # --- Objets cultes et modes ---
 Quel jeu de poche en noir et blanc faisait vivre un animal virtuel ?|Le Tamagotchi|2|adultes aines
 Quel appareil photo sortait la photo aussitôt, qu'on agitait pour la révéler ?|Le Polaroid|2|adultes aines
+@ nostalgie
 Quel appareil blanc d'Apple faisait tourner la musique avec une molette ?|Le iPod|2|ados adultes aines
 Quels écouteurs sans fil blancs se rangent dans un petit boîtier ?|Les AirPods|1|enfants ados adultes
 Que fallait-il faire à un film loué avant de le rapporter au club vidéo ?|Le rembobiner|2|adultes aines
+@ nostalgie
 Quel logiciel de clavardage faisait vibrer l'écran du contact avec un wizz ?|MSN Messenger|2|adultes
 Quel objet noir et plat, gravé de sillons, tourne sur une table tournante ?|Le disque vinyle|2|ados adultes aines
+@ nostalgie
 #
 # --- Jeux ---
 Quelle console portable grise de Nintendo se jouait à quatre piles ?|Le Game Boy|2|adultes aines
@@ -480,81 +515,121 @@ Quel défi a fait verser des seaux d'eau glacée sur des têtes en 2014 ?|Le Ice
 #
 # --- Télévision et radio d'antan ---
 Quelle émission jeunesse de Radio-Canada, animée par Monsieur Surprise, a lancé Fanfreluche et Sol ?|La Boîte à surprise|3|aines
+@ nostalgie
 Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?|Fanfreluche|3|aines
+@ nostalgie
 Quel capitaine de la télé jeunesse racontait des histoires invraisemblables avec ses invisibles ?|Le Capitaine Bonhomme|3|aines
+@ nostalgie
 Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?|Olivier Guimond|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Quel humoriste québécois jouait le concierge Symphorien ?|Gilles Latulippe|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Quel duo d'actrices québécoises menait la série Moi et l'autre ?|Dominique Michel et Denise Filiatrault|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Quelle série québécoise se déroulait dans Charlevoix après la Première Guerre ?|Le temps d'une paix|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?|Rue des Pignons|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Quel jeu télévisé opposait des équipes d'élèves du secondaire ?|Génies en herbe|3|adultes aines
 Quelle case horaire de Radio-Canada présentait des grands spectacles le dimanche ?|Les Beaux Dimanches|3|aines
+@ nostalgie
 Quelle prière se récitait en famille à la radio, chaque soir, dans les années 50 ?|Le chapelet|3|aines
+@ nostalgie
 #
 # --- Vedettes d'avant ---
 Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?|Alys Robi|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?|La Bolduc|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Quel chanteur country québécois a chanté Mille après mille ?|Willie Lamothe|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Quel groupe québécois des années 60 se produisait tout habillé de blanc ?|Les Classels|3|aines
 @ quebec-ailleurs
+@ nostalgie
 #
 # --- Magasins disparus ---
 Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?|Steinberg|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Quel grand magasin canadien publiait un catalogue attendu chaque année ?|Eaton|3|aines
+@ nostalgie
 Quel magasin à rayons offrait un comptoir-lunch où manger un hot-dog ?|Woolworth|3|aines
+@ nostalgie
 Quel magasin se visitait catalogue en main, avant que la marchandise sorte de l'entrepôt ?|Distribution aux consommateurs|3|aines
+@ nostalgie
 Quelle quincaillerie québécoise portait un prénom dans son enseigne ?|Pascal|3|aines
 @ quebec-ailleurs
+@ nostalgie
 #
 # --- Objets du quotidien d'avant ---
 Qui livrait les bouteilles de lait à la porte des maisons ?|Le laitier|3|aines
+@ nostalgie
 Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?|La lessiveuse à tordeur|3|aines
+@ nostalgie
 Quel appareil faisait le café en le faisant remonter dans un petit dôme de verre ?|Le percolateur|3|aines
+@ nostalgie
 Sur quelle machine tapait-on une lettre avant l'ordinateur ?|La machine à écrire|2|adultes aines
 Quel appareil de salon lisait les 33 tours avec un bras et une aiguille ?|Le tourne-disque|2|adultes aines
+@ nostalgie
 Que rapportait-on à l'épicerie pour récupérer quelques sous ?|Les bouteilles vides|3|adultes aines
 Quel appareil de chauffage exigeait qu'on remplisse la boîte à bois ?|Le poêle à bois|3|aines
+@ nostalgie
 Quel meuble gardait les aliments au froid avec un bloc de glace ?|La glacière|3|aines
+@ nostalgie
 Où étendait-on le linge pour le faire sécher au vent ?|Sur la corde à linge|2|adultes aines
 Comment appelait-on le téléphone que plusieurs foyers du village devaient se partager ?|La ligne partagée|3|aines
+@ nostalgie
 Quel appareil fallait-il installer sur le toit pour capter les chaînes de télé ?|L'antenne|3|adultes aines
 #
 # --- Traditions d'avant ---
 Quelle bénédiction le père de famille donnait-il aux siens le matin du 1er janvier ?|La bénédiction paternelle|3|aines
+@ nostalgie
 Comment appelle-t-on la scène de la Nativité qu'on installait sous le sapin ?|La crèche|2|adultes aines
 @ noel
 Quel panier passait dans les rangs pendant la messe du dimanche ?|La quête|3|aines
+@ nostalgie
 Où logeait le curé de la paroisse ?|Au presbytère|3|aines
+@ nostalgie
 Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?|Le tramway|3|aines
 @ quebec-ailleurs
+@ transports
+@ nostalgie
 Quelle confiserie maison se fait avec de la crème et de la cassonade ?|Le sucre à la crème|1|enfants ados adultes aines
 Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?|Le Forum|3|adultes aines
 @ sports-hiver
 @ quebec-ailleurs
 Quelle émission du samedi soir diffusait le hockey à Radio-Canada ?|La Soirée du hockey|3|aines
+@ nostalgie
 Quel descripteur de hockey a marqué des générations par son français impeccable ?|René Lecavalier|3|aines
+@ nostalgie
 Où regardait-on un film assis dans son auto, l'été ?|Au ciné-parc|3|adultes aines
 Quel appareil du restaurant jouait une chanson contre une pièce de monnaie ?|Le juke-box|3|aines
+@ nostalgie
 Quel petit disque contenait une chanson de chaque côté ?|Le 45 tours|3|aines
+@ nostalgie
 Quelle cartouche de musique se glissait dans le tableau de bord des autos des années 70 ?|Le huit-pistes|3|aines
+@ nostalgie
 Quelle petite radio portative à pile a libéré la musique des salons ?|Le transistor|3|aines
+@ nostalgie
 Quel vêtement des années 60 a scandalisé en raccourcissant brusquement ?|La minijupe|3|adultes aines
 Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?|Le yéyé|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?|Les Baronets|3|aines
 @ quebec-ailleurs
+@ nostalgie
 Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?|La ceinture fléchée|3|adultes aines
 @ quebec-ailleurs
 Quel commerce de village vendait autrefois aussi bien le clou que la farine ?|Le magasin général|3|aines
+@ nostalgie
 Quel gratte-ciel de Montréal, en forme de croix, a ouvert en 1962 ?|La Place Ville-Marie|3|adultes aines
 @ quebec-ailleurs
 Quelle boisson gazeuse a longtemps servi de surnom moqueur aux Québécois ?|Le Pepsi|3|adultes aines
@@ -576,6 +651,7 @@ Quel mot québécois remplace « chat » pour une conversation écrite en ligne 
 @ quebec-ailleurs
 Quelle application d'appels vidéo est devenue incontournable pendant la pandémie ?|Zoom|2|ados adultes aines
 Quelle application commande une voiture avec chauffeur depuis un téléphone ?|Uber|2|ados adultes aines
+@ transports
 Quelle plateforme loue le logement d'un particulier pour des vacances ?|Airbnb|3|ados adultes aines
 Quelle console de Nintendo se joue autant sur le téléviseur qu'en mode portable ?|La Nintendo Switch|1|enfants ados adultes
 Quelle console de jeu vidéo est fabriquée par Microsoft ?|La Xbox|1|enfants ados adultes
@@ -587,7 +663,9 @@ Quel jeu de la Wii proposait bowling, tennis et boxe avec la télécommande ?|Wi
 Quel casse-tête coloré à six faces se replace en tournant ses rangées ?|Le Rubik's Cube|1|enfants ados adultes aines
 Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?|Le Wordle|3|ados adultes aines
 Quel manga suit Luffy et son équipage de pirates ?|One Piece|3|ados adultes
+@ mer
 Quelle plateforme diffuse les films de Marvel et de Pixar ?|Disney+|1|enfants ados adultes aines
+@ disney
 Comment appelle-t-on une bande dessinée japonaise ?|Un manga|2|enfants ados adultes
 Quel mot québécois désigne celui qui dévoile la fin d'un film ?|Un divulgâcheur|3|ados adultes aines
 @ quebec-ailleurs
@@ -623,13 +701,16 @@ Quelle émission québécoise fait juger des numéros de danse par des maîtres 
 Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?|Big Brother Célébrités|3|ados adultes
 @ quebec-ailleurs
 Quel engin à deux roues se pousse d'un pied en tenant un guidon ?|La trottinette|1|enfants ados adultes aines
+@ transports
 Quel jouet à figure humaine s'habille et se coiffe ?|Une poupée|1|enfants ados adultes aines
 Quel jouet de peluche brune se serre pour s'endormir ?|Un ourson en peluche|1|enfants ados adultes aines
 Quel jouet à trois roues précède le vélo chez les tout-petits ?|Un tricycle|1|enfants ados adultes aines
+@ transports
 Quelles petites boules de verre s'entrechoquent dans un jeu de cour d'école ?|Des billes|2|enfants ados adultes aines
 Quel jouet d'été arrose les amis d'un jet d'eau ?|Un pistolet à eau|1|enfants ados adultes aines
 Quel jouet roule sur des rails miniatures autour du sapin ?|Un train électrique|2|enfants ados adultes aines
 @ noel
+@ transports
 Que construit-on avec un seau et une pelle au bord de l'eau ?|Un château de sable|1|enfants ados adultes aines
 Quel bassin de plastique se gonfle dans la cour l'été ?|Une piscine gonflable|1|enfants ados adultes aines
 Quel jouet de cour d'école tourne pendant qu'on bondit par-dessus ?|Une corde à sauter|1|enfants ados adultes aines
@@ -654,6 +735,7 @@ Que porte-t-on sur le visage pour ne pas être reconnu à l'Halloween ?|Un masqu
 Comment appelle-t-on l'habit qu'on enfile pour se transformer en personnage ?|Un déguisement|1|enfants ados adultes aines
 Quel arbre décoré trône dans le salon en décembre ?|Un sapin de Noël|1|enfants ados adultes aines
 @ noel
+@ regne-vegetal
 Quelle grande chaussette suspend-on à la cheminée en attendant le père Noël ?|Un bas de Noël|1|enfants ados adultes aines
 @ noel
 Quel véhicule tiré par des rennes livre les cadeaux ?|Un traîneau|1|enfants ados adultes aines
@@ -680,6 +762,7 @@ Dans quel petit objet enfonce-t-on un crayon de bois pour l'aiguiser ?|Un taille
 Quel cahier à anneaux range les feuilles de chaque matière ?|Un cartable|2|enfants ados adultes aines
 Quel meuble de la classe range les effets de l'élève ?|Un pupitre|1|enfants ados adultes aines
 Quel gros véhicule jaune ramasse les enfants le matin ?|L'autobus scolaire|1|enfants ados adultes aines
+@ transports
 Quelle créature poilue laisserait des empreintes géantes dans la neige des montagnes ?|Le yéti|2|enfants ados adultes aines
 @ creatures
 Comment appelle-t-on un être venu d'une autre planète ?|Un extraterrestre|1|enfants ados adultes aines

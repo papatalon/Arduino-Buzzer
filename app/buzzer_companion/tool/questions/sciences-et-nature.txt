@@ -20,8 +20,9 @@
 # thématique est un jugement sur le sujet de la question, du même ordre que sa
 # catégorie, et la catégorie n'a jamais été devinée.
 #
-# Les huit slugs : noel, quebec-ailleurs, regne-animal, espace, corps-humain,
-# super-heros, creatures, sports-hiver. Un slug inconnu arrête la génération.
+# Les treize slugs : noel, quebec-ailleurs, regne-animal, espace,
+# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
+# transports, disney, nostalgie. Un slug inconnu arrête la génération.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -72,6 +73,7 @@ Qui a découvert la gravitation ?|Newton|1|enfants ados adultes aines
 Qui a développé la théorie de la relativité ?|Einstein|1|ados adultes aines
 Quelle scientifique a étudié la radioactivité ?|Marie Curie|2|ados adultes aines
 Quel gaz les plantes rejettent-elles le jour ?|L'oxygène|1|enfants ados adultes aines
+@ regne-vegetal
 Comment s'appelle la transformation de la chenille ?|La métamorphose|1|enfants ados adultes aines
 @ regne-animal
 Que devient un têtard ?|Une grenouille|1|enfants ados adultes aines
@@ -100,6 +102,7 @@ Quel phénomène lumineux accompagne le tonnerre ?|L'éclair|1|enfants ados adul
 Combien de temps la Terre met-elle à tourner sur elle-même ?|24 heures|1|enfants ados adultes aines
 Quel astre provoque les marées ?|La Lune|1|enfants ados adultes aines
 @ espace
+@ mer
 Quel reptile change de couleur pour se camoufler ?|Le caméléon|1|enfants ados adultes aines
 @ regne-animal
 Quel gaz compose 78 pour cent de l'air ?|L'azote|2|ados adultes aines
@@ -130,10 +133,12 @@ Quel cousin rayé du cheval vit en Afrique ?|Le zèbre|1|enfants ados adultes ai
 @ regne-animal
 Quel animal marin a trois cœurs ?|La pieuvre|2|ados adultes aines
 @ regne-animal
+@ mer
 # La pieuvre régénère aussi ses bras. Les cinq branches tranchent.
 Quel animal marin peut régénérer ses bras ?|L'étoile de mer|1|enfants ados adultes aines
 > Quel animal marin à cinq bras peut en faire repousser un ?|L'étoile de mer
 @ regne-animal
+@ mer
 # « Le plus grand » : l'albatros gagne en envergure, le condor aussi.
 Quel est le plus grand oiseau du monde ?|L'autruche|1|enfants ados adultes aines
 > Quel est le plus grand oiseau du monde, incapable de voler ?|L'autruche
@@ -155,7 +160,9 @@ Quel insecte soulève 50 fois son poids ?|La fourmi|1|enfants ados adultes aines
 Combien d'ailes possède une abeille ?|Quatre|2|ados adultes aines
 @ regne-animal
 Quel arbre géant de Californie est le plus gros du monde ?|Le séquoia|2|ados adultes aines
+@ regne-vegetal
 Quelle plante carnivore referme ses mâchoires sur les mouches ?|La dionée|3|adultes aines
+@ regne-vegetal
 Quel phénomène lumineux colore le ciel polaire ?|Aurore boréale|1|enfants ados adultes aines
 @ espace
 Quel instrument mesure la pression atmosphérique ?|Le baromètre|2|ados adultes aines
@@ -196,6 +203,7 @@ Quelle roche liquide sort des volcans ?|La lave|1|enfants ados adultes aines
 Comment s'appelle la roche fondue sous terre ?|Le magma|1|enfants ados adultes aines
 Quel appareil enregistre les tremblements de terre ?|Le sismographe|2|ados adultes aines
 Quelle vague géante suit parfois un séisme ?|Le tsunami|1|enfants ados adultes aines
+@ mer
 Quel vent tourbillonnant forme un entonnoir ?|La tornade|1|enfants ados adultes aines
 Comment mesure-t-on la force des ouragans ?|Saffir-Simpson|3|adultes aines
 De quoi sont faits les nuages ?|Gouttelettes d'eau|1|enfants ados adultes aines
@@ -242,6 +250,7 @@ Quel oiseau est le plus rapide en piqué ?|Le faucon pèlerin|2|ados adultes ain
 @ regne-animal
 Quel poisson à voile est le plus rapide des mers ?|Le voilier|3|ados adultes aines
 @ regne-animal
+@ mer
 Quel félin est le plus gros du monde ?|Le tigre|2|ados adultes aines
 @ regne-animal
 Quel animal a la langue la plus longue par rapport au corps ?|Le caméléon|2|ados adultes aines
@@ -269,10 +278,12 @@ Quel animal produit de la soie ?|Le ver à soie|1|enfants ados adultes aines
 @ regne-animal
 Quel animal marin ressemble à un cheval miniature ?|L'hippocampe|1|enfants ados adultes aines
 @ regne-animal
+@ mer
 Chez quel animal le mâle porte-t-il les bébés ?|L'hippocampe|1|enfants ados adultes aines
 @ regne-animal
 Quel mammifère marin chante des mélodies ?|La baleine à bosse|2|ados adultes aines
 @ regne-animal
+@ mer
 Quel animal polaire a la peau noire sous son pelage blanc ?|L'ours polaire|2|ados adultes aines
 @ regne-animal
 Quel grand singe est le plus proche de l'homme ?|Le chimpanzé|1|enfants ados adultes aines
@@ -280,19 +291,28 @@ Quel grand singe est le plus proche de l'homme ?|Le chimpanzé|1|enfants ados ad
 # « À feuilles caduques » répondait tout aussi bien.
 Comment nomme-t-on un arbre qui perd ses feuilles l'hiver ?|Un feuillu|1|ados adultes aines
 > Comment nomme-t-on un arbre à feuilles, par opposition à un conifère ?|Un feuillu
+@ regne-vegetal
 Comment nomme-t-on un arbre qui garde ses aiguilles ?|Un conifère|1|enfants ados adultes aines
+@ regne-vegetal
 Quelle partie de la plante absorbe l'eau ?|Les racines|1|enfants ados adultes aines
+@ regne-vegetal
 Quel pigment rend les plantes vertes ?|La chlorophylle|1|enfants ados adultes aines
+@ regne-vegetal
 Quel gaz les plantes absorbent-elles ?|Le gaz carbonique|1|enfants ados adultes aines
+@ regne-vegetal
 Comment s'appelle le voyage du pollen ?|La pollinisation|1|enfants ados adultes aines
+@ regne-vegetal
 Quel insecte est le principal pollinisateur ?|L'abeille|1|enfants ados adultes aines
 @ regne-animal
 Quelle fleur suit le Soleil ?|Le tournesol|1|enfants ados adultes aines
+@ regne-vegetal
 # Ambigu : le concombre est un fruit et bat le melon. On décrit celui qu'on veut.
 Quel fruit contient le plus d'eau ?|Le melon d'eau|2|ados adultes aines
 > Quel gros fruit d'été est fait d'eau à plus de 90 pour cent ?|Le melon d'eau
 Comment s'appellent les anneaux du tronc d'un arbre ?|Les cernes|2|ados adultes aines
+@ regne-vegetal
 Quel champignon fait lever le pain ?|La levure|1|ados adultes aines
+@ regne-vegetal
 Quelle énergie vient du Soleil ?|L'énergie solaire|1|enfants ados adultes aines
 Quelle énergie vient des barrages ?|L'hydroélectricité|1|ados adultes aines
 Quelle énergie vient du vent ?|L'énergie éolienne|1|enfants ados adultes aines
@@ -306,6 +326,7 @@ Quels sont les trois états de l'eau ?|Solide liquide gaz|1|enfants ados adultes
 Comment s'appelle le passage de liquide à gaz ?|L'évaporation|1|enfants ados adultes aines
 Comment s'appelle le passage de gaz à liquide ?|La condensation|1|ados adultes aines
 Quel phénomène fait flotter les bateaux ?|Poussée d'Archimède|2|ados adultes aines
+@ mer
 # « Cette poussée » renvoyait à la question précédente : brassée, elle ne suit plus.
 Quel savant a donné son nom à cette poussée ?|Archimède|1|ados adultes aines
 > Quel savant grec aurait crié « Eurêka » en sortant de son bain ?|Archimède
@@ -341,7 +362,9 @@ Quel arachnide a une queue munie d'un dard ?|Le scorpion|1|enfants ados adultes 
 Combien de pattes possède un crabe ?|Dix|2|ados adultes aines
 @ regne-animal
 Quelle plante compose le menu du panda géant ?|Le bambou|1|enfants ados adultes aines
+@ regne-vegetal
 De quel arbre le koala mange-t-il les feuilles ?|L'eucalyptus|1|enfants ados adultes aines
+@ regne-vegetal
 Combien de bosses a un dromadaire ?|Une|1|enfants ados adultes aines
 @ regne-animal
 Combien de bosses a un chameau ?|Deux|1|enfants ados adultes aines
@@ -406,8 +429,11 @@ Que devient l'eau quand elle gèle ?|De la glace|1|enfants ados adultes aines
 De quoi sont faites les dunes du désert ?|De sable|1|enfants ados adultes aines
 De quel arbre tire-t-on la sève qui devient du sirop au printemps ?|L'érable|1|enfants ados adultes aines
 @ quebec-ailleurs
+@ regne-vegetal
 Quelle fleur jaune devient une boule de duvet qu'on souffle ?|Le pissenlit|1|enfants ados adultes aines
+@ regne-vegetal
 Quelle plante piquante pousse dans le désert ?|Le cactus|1|enfants ados adultes aines
+@ regne-vegetal
 Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?|Le tyrannosaure|1|enfants ados adultes aines
 @ regne-animal
 Sur quelle planète habitons-nous ?|La Terre|1|enfants ados adultes aines
@@ -416,6 +442,7 @@ Combien de pattes a un oiseau ?|Deux|1|enfants ados adultes aines
 @ regne-animal
 Quel animal marin géant souffle un jet d'eau par le dos ?|La baleine|1|enfants ados adultes aines
 @ regne-animal
+@ mer
 Quel animal à longues oreilles adore les carottes ?|Le lapin|1|enfants ados adultes aines
 @ regne-animal
 Quel animal rampe sans pattes ?|Le serpent|1|enfants ados adultes aines
@@ -478,12 +505,18 @@ Quelle constellation en forme de casserole se repère dans le ciel du Québec ?|
 Comment appelle-t-on l'ensemble formé par le Soleil et ses planètes ?|Le système solaire|2|enfants ados adultes aines
 @ espace
 Quelles parties de l'arbre changent de couleur en automne ?|Les feuilles|1|enfants ados adultes aines
+@ regne-vegetal
 Quelle partie de la plante relie la racine à la fleur ?|La tige|2|enfants ados adultes aines
+@ regne-vegetal
 Que faut-il mettre en terre pour faire pousser une plante ?|Une graine|1|enfants ados adultes aines
+@ regne-vegetal
 Comment appelle-t-on la grosse partie de l'arbre qui porte les branches ?|Le tronc|1|enfants ados adultes aines
+@ regne-vegetal
 Comment appelle-t-on la peau rugueuse qui recouvre le tronc ?|L'écorce|2|enfants ados adultes aines
+@ regne-vegetal
 Quel mammifère marin sauteur siffle et vit en groupe ?|Le dauphin|1|enfants ados adultes aines
 @ regne-animal
+@ mer
 Quel poisson à l'aileron pointu fait fuir les baigneurs ?|Le requin|1|enfants ados adultes aines
 @ regne-animal
 Comment appelle-t-on le bébé de la grenouille, qui a encore une queue ?|Le têtard|2|enfants ados adultes aines
@@ -517,3 +550,4 @@ Quel oiseau de l'étang fait « coin-coin » ?|Le canard|1|enfants ados adultes 
 Quel insecte piqueur bourdonne autour des campeurs les soirs d'été ?|Le maringouin|1|enfants ados adultes aines
 @ regne-animal
 Quelle partie colorée de la fleur attire les abeilles ?|Les pétales|2|enfants ados adultes aines
+@ regne-vegetal
