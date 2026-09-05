@@ -41,9 +41,15 @@ class _CatalogueSimule extends CatalogueStore {
   /// tirage par questionnaires plutôt que par chargement complet.
   int lectures = 0;
 
+  /// Ce que l'appelant a demandé de garder en cache. Le tirage doit le
+  /// demander, sinon une soirée jouée en ligne ne laisse rien pour la
+  /// suivante et on rejoue les questions du build.
+  final List<bool> gardes = [];
+
   @override
-  Future<Questionnaire?> load(CatalogueEntry entry) async {
+  Future<Questionnaire?> load(CatalogueEntry entry, {bool garder = false}) async {
     lectures++;
+    gardes.add(garder);
     final enonces = _contenus[entry.id];
     if (enonces == null) return null;
     return Questionnaire(
@@ -128,6 +134,16 @@ void main() {
     // Trois questions tiennent dans un seul fichier : en lire quatre serait
     // trois requetes de trop dans une salle sans wifi.
     expect(cat.lectures, 1);
+  });
+
+  test('ce qui sert à jouer est gardé pour la prochaine fois', () async {
+    final cat = creerCatalogue();
+    final tirage = TirageQuestions(catalogue: cat, hasard: Random(23));
+    await tirage.composer(nombre: 8);
+    // Sans ce drapeau, une soirée jouée avec du réseau ne laisse rien : au
+    // redémarrage sans wifi, on retombe sur les questions du build.
+    expect(cat.gardes, isNotEmpty);
+    expect(cat.gardes.every((g) => g), isTrue);
   });
 
   test('un périmètre inconnu ne fait pas planter', () async {
@@ -248,7 +264,7 @@ class _CatalogueCote extends CatalogueStore {
   final List<QuizQuestion> _questions;
 
   @override
-  Future<Questionnaire?> load(CatalogueEntry entry) async => Questionnaire(
+  Future<Questionnaire?> load(CatalogueEntry entry, {bool garder = false}) async => Questionnaire(
         title: entry.title,
         collection: entry.collection,
         questions: [for (final q in _questions) q.copy()],

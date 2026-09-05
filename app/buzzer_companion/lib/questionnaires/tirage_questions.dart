@@ -170,7 +170,11 @@ class TirageQuestions {
   Future<Questionnaire?> _lire(CatalogueEntry entree) async {
     final connu = _lus[entree.id];
     if (connu != null) return connu;
-    final charge = await catalogue.load(entree);
+    // « garder » : ce qui sert à jouer est mis en cache, ce qu'on ouvre pour
+    // regarder ne l'est pas. Une soirée jouée avec du réseau laisse donc de
+    // quoi rejouer la même sans, avec les questions à jour plutôt que celles
+    // du build.
+    final charge = await catalogue.load(entree, garder: true);
     if (charge != null) _lus[entree.id] = charge;
     return charge;
   }

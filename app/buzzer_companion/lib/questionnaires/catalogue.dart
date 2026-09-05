@@ -247,6 +247,27 @@ class CatalogueStore extends ChangeNotifier {
     return _banque;
   }
 
+  // Écrire le cache ne doit jamais faire échouer une lecture réussie : le
+  // questionnaire est déjà en main, un disque plein ne doit pas priver
+  // l'animateur de sa manche.
+  Future<void> _garderEnCache(Directory dir, String id, String contenu) async {
+    try {
+      final fichier = _fichierCache(dir, id);
+      await fichier.parent.create(recursive: true);
+      await fichier.writeAsString(contenu);
+    } catch (_) {}
+  }
+
+  Future<Questionnaire?> _lireCache(Directory dir, String id) async {
+    try {
+      final fichier = _fichierCache(dir, id);
+      if (!fichier.existsSync()) return null;
+      return Questionnaire.decode(await fichier.readAsString());
+    } catch (_) {
+      return null;
+    }
+  }
+
   Future<Questionnaire?> _questionnaireEmbarque(String id) async {
     final banque = await _lireBanque();
     final tous = banque?['questionnaires'];
@@ -319,6 +340,19 @@ class CatalogueStore extends ChangeNotifier {
 
   File _fichierLocal(Directory dir, String id) =>
       File('${dir.path}${Platform.pathSeparator}q${Platform.pathSeparator}$id.json');
+
+  // LE CACHE OPPORTUNISTE, dans un dossier à part.
+  //
+  // Ce que le réseau a servi pendant une partie est gardé ici, pour qu'un
+  // redémarrage sans wifi retrouve la DERNIÈRE version des questions plutôt
+  // que celle du build. Séparé de « q/ » à dessein : « q/ » est ce que
+  // l'opérateur a délibérément mis de côté, et c'est ce que les nuages de la
+  // bibliothèque montrent. Mélanger les deux ferait grimper le compteur
+  // « sur ce poste » tout seul, et l'opérateur ne saurait plus ce qu'il a
+  // choisi de garder. Le cache, lui, ne se montre pas : c'est un cache.
+  File _fichierCache(Directory dir, String id) =>
+      File('${dir.path}${Platform.pathSeparator}cache'
+          '${Platform.pathSeparator}$id.json');
 
   File _fichierEtat(Directory dir) =>
       File('${dir.path}${Platform.pathSeparator}local.json');
@@ -490,10 +524,18 @@ class CatalogueStore extends ChangeNotifier {
   // catalogue se lit, et l'opérateur choisit ensuite ce qu'il veut garder
   // sous la main pour une salle sans wifi.
   //
-  // Une lecture en ligne ne laisse rien derrière elle : le questionnaire
-  // n'apparaît pas comme local, sinon un simple coup d'œil remplirait le
-  // disque et brouillerait l'état des nuages.
-  Future<Questionnaire?> load(CatalogueEntry entry) async {
+  // Une lecture en ligne n'apparaît PAS comme locale : un simple coup d'œil
+  // dans la bibliothèque ne doit pas faire grimper le compteur « sur ce
+  // poste » ni remplir un nuage que l'opérateur n'a pas cliqué. Elle est en
+  // revanche gardée dans un cache invisible quand [garder] le demande, pour
+  // qu'un redémarrage sans wifi retrouve la dernière version reçue.
+  //
+  // L'ORDRE : ce que l'opérateur a synchronisé, puis le réseau, puis le cache
+  // de la dernière partie, puis la copie livrée avec l'application. Le réseau
+  // passe avant les deux caches parce qu'il est le seul à pouvoir être plus
+  // récent ; les deux caches se departagent par leur âge, celui d'une partie
+  // jouée valant toujours mieux que celui du build.
+  Future<Questionnaire?> load(CatalogueEntry entry, {bool garder = false}) async {
     try {
       final dir = await _ensureDir();
       final fichier = _fichierLocal(dir, entry.id);
@@ -510,17 +552,21 @@ class CatalogueStore extends ChangeNotifier {
         if (reponse.statusCode != 200) {
           throw HttpException('Le serveur a répondu ${reponse.statusCode}.');
         }
-        final charge = Questionnaire.decode(utf8.decode(reponse.bodyBytes));
+        final contenu = utf8.decode(reponse.bodyBytes);
+        final charge = Questionnaire.decode(contenu);
+        if (garder) await _garderEnCache(dir, entry.id, contenu);
         lastError = null;
         return charge;
       } on Object {
-        // Le réseau a échoué : la copie livrée avec l'application prend le
-        // relais. C'est ce qui fait tenir le tirage dans un sous-sol sans
-        // wifi, sur un poste où rien n'a été synchronisé à l'avance.
-        final embarque = await _questionnaireEmbarque(entry.id);
-        if (embarque != null) {
+        // Le réseau a échoué. Le cache de la dernière partie d'abord, puis la
+        // copie livrée avec l'application : c'est ce qui fait tenir le tirage
+        // dans un sous-sol sans wifi, sur un poste où rien n'a été
+        // synchronisé à l'avance.
+        final repli = await _lireCache(dir, entry.id) ??
+            await _questionnaireEmbarque(entry.id);
+        if (repli != null) {
           lastError = null;
-          return embarque;
+          return repli;
         }
         rethrow;
       } finally {
