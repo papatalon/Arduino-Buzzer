@@ -71,6 +71,42 @@ nostalgie`. Un slug inconnu arrête la génération.
 sur chaque question. Les thématiques l'ont été par mots-clés, et « neige »
 rangeait Blanche-Neige dans Sports d'hiver.
 
+### La question s'écrit en français soigné
+
+Elle est lue à voix haute et s'affiche sur l'écran public : elle se compose
+comme une phrase de journal, pas comme une note.
+
+Les conventions ci-dessous ne sont pas des préférences : elles ont été
+relevées dans les 3684 questions de la banque, et les chiffres sont là pour
+qu'on puisse les revérifier au lieu de me croire.
+
+- **Tous les accents, majuscules comprises.** `À`, `Ê`, `Ç`. Le seul endroit
+  du projet qui s'en passe est le firmware, et le bloc miroir le reflète
+  déjà : le générateur vérifie que la version accentuée redonne la source
+  une fois dépouillée, et s'arrête sinon.
+- **Espace ORDINAIRE avant le `?`**, pas insécable. `Quelle est la capitale
+  du Québec ?` — 3681 questions sur 3684, zéro insécable. Un `?` collé au
+  mot n'existe nulle part.
+- **Une majuscule au début, un `?` à la fin.** Trois exceptions dans toute
+  la banque, toutes voulues : `Citez un palindrome de cinq lettres qui
+  flotte.`, `Complétez : ...`, et une citation dont le `?` est dans les
+  guillemets.
+- **La réponse ne prend pas de point final.** `La poutine`, pas `La
+  poutine.` La seule qui en porte est `E.T.`, où le point fait partie du nom.
+- **La réponse porte son article** quand on le dirait à l'oral : `Le
+  castor`, `Les Patriotes`, `Six`.
+- **Guillemets français** « comme ceci », 41 fois dans la banque. Aucun
+  guillemet droit.
+- **Apostrophe droite `'`**, jamais la typographique `’`. 954 contre 0. Le
+  bloc miroir l'exige — l'invariant des accents ne convertit pas `’` en `'`
+  et s'arrêterait — et le bloc libre suit, pour que les deux se cherchent
+  pareil.
+- **Pas de barre verticale dans le texte** : `|` sépare les champs et
+  couperait la ligne en deux.
+
+Le doute se lève en regardant les voisines : `--chercher` sort les questions
+existantes telles qu'elles sont écrites, et elles ont toutes été relues.
+
 ## 1. Cadrer, et le dire
 
 Avant d'écrire une ligne, fixer et annoncer : **quelle catégorie**, **combien
@@ -106,8 +142,10 @@ chercher son sujet dans la banque :
 cd app/buzzer_companion && dart run tool/generate_questionnaires.dart --chercher "coupe stanley"
 ```
 
-Sans accents ni casse. Affiche la catégorie, le niveau, les tranches et les
-thématiques de chaque question trouvée.
+Les mots cherchés se tapent comme on veut : `quebecoise` trouve
+`québécoise`. C'est la RECHERCHE qui ignore les accents et la casse, pas les
+questions, qui ressortent telles qu'elles sont écrites. Chaque résultat
+donne la catégorie, le niveau, les tranches et les thématiques.
 
 Chercher **au moins deux mots par question** : la réponse, et le nom
 principal de l'énoncé. « rondelle » ne trouve pas « puck », « érable » ne
