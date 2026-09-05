@@ -51,6 +51,7 @@ Repères, à mettre à jour après chaque lot :
 | 5 septembre 2026, musique par décennies (+57) | 54 | 215 | 0 | 14 | 0 |
 | 5 septembre 2026, musique par décennies, 2e passe (+82) | 54 | 216 | 0 | 14 | 0 |
 | 5 septembre 2026, musique 2010-2020 pour les enfants (+7, 4 recotées) | 54 | 216 | 0 | 14 | 0 |
+| 5 septembre 2026, thématique Disney et les parcs (+18, 24 étiquetées) | 54 | 217 | 0 | 14 | 0 |
 
 ## Ce qui n'est pas contrôlé
 
