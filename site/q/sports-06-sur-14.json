@@ -8,139 +8,31 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel jeu de gymnase oppose deux équipes qui se lancent des ballons pour éliminer les autres ?",
-      "reponse": "Le ballon chasseur",
+      "question": "Comment appelle-t-on chacune des dix pièces de bois que la boule renverse au bowling ?",
+      "reponse": "Une quille",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel cheval célèbre a gagné la Triple Couronne en 1973 ?",
-      "reponse": "Secretariat",
-      "niveau": 3,
+      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
+      "reponse": "Le slalom",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel hockeyeur a battu le record de buts de Gretzky en 2025 ?",
+      "reponse": "Ovechkin",
+      "niveau": 2,
       "ages": [
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le trait blanc où les coureurs s'alignent avant le coup de pistolet ?",
-      "reponse": "La ligne de départ",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport d'équipe se joue avec un bâton à filet au bout et une petite balle dure ?",
-      "reponse": "La crosse",
+      "question": "Quel sport de force soulève une barre chargée de disques ?",
+      "reponse": "L'haltérophilie",
       "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport fait glisser un lugeur tête première sur la glace ?",
-      "reponse": "Le skeleton",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien d'anneaux entrelacés forment le symbole olympique ?",
-      "reponse": "Cinq",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport utilise-t-on un maillet à cheval ?",
-      "reponse": "Le polo",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment nomme-t-on un trou d'un coup au golf ?",
-      "reponse": "Un as",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Sur quelle surface glacée se joue le hockey ?",
-      "reponse": "La patinoire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Que chausse-t-on aux pieds pour aller sur la glace ?",
-      "reponse": "Des patins",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de kilomètres fait un triathlon olympique à vélo ?",
-      "reponse": "40",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée est remis au champion du Super Bowl ?",
-      "reponse": "Trophée Lombardi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport évolue-t-on sur une poutre ?",
-      "reponse": "La gymnastique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de baseball a joué à Montréal ?",
-      "reponse": "Les Expos",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sprinteur canadien a gagné le 100 m aux JO de 1996 ?",
-      "reponse": "Donovan Bailey",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de minutes dure un quart au football américain ?",
-      "reponse": "Quinze",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Sports",
@@ -150,8 +42,36 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel patineur québécois a remporté quatre médailles d'or olympiques en courte piste ?",
-      "reponse": "Charles Hamelin",
+      "question": "Comment appelle-t-on la période supplémentaire quand le match est nul ?",
+      "reponse": "La prolongation",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel coureur canadien a perdu son titre olympique en 1988 ?",
+      "reponse": "Ben Johnson",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle couleur de carton expulse un joueur au soccer ?",
+      "reponse": "Rouge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel pays est le berceau du hockey sur glace ?",
+      "reponse": "Le Canada",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle Canadienne a gagné les Internationaux des USA en 2019 ?",
+      "reponse": "Bianca Andreescu",
       "niveau": 2,
       "ages": [
         "ados",
@@ -160,14 +80,70 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel équipement de cuir le joueur de baseball enfile-t-il pour attraper la balle ?",
-      "reponse": "Un gant de baseball",
+      "question": "Que porte-t-on pour se baigner ?",
+      "reponse": "Un maillot de bain",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel numéro portait Maurice Richard ?",
-      "reponse": "9",
+      "question": "Quel sport de combat japonais se pratique pieds nus en kimono blanc ?",
+      "reponse": "Le karaté",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel club de soccer espagnol joue au Camp Nou ?",
+      "reponse": "FC Barcelone",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la faute qui envoie un joueur de hockey au banc deux minutes ?",
+      "reponse": "Une punition",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle gymnaste a obtenu le premier 10 parfait ?",
+      "reponse": "Nadia Comăneci",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle épreuve d'athlétisme fait franchir une barre très haute à l'aide d'une longue tige souple ?",
+      "reponse": "Le saut à la perche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien vaut un placement au football ?",
+      "reponse": "Trois points",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel objet à manche et à cordes frappe la balle au tennis ?",
+      "reponse": "Une raquette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel basketteur légendaire portait le 23 des Bulls ?",
+      "reponse": "Michael Jordan",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -176,27 +152,53 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport se joue avec un volant ?",
-      "reponse": "Le badminton",
+      "question": "Dans quel sport parle-t-on de peloton ?",
+      "reponse": "Le cyclisme",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel joueur a été repêché premier au total par Edmonton en 2015 ?",
+      "reponse": "Connor McDavid",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Sur quelle estrade à trois marches montent les médaillés ?",
+      "reponse": "Le podium",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme projette une longue tige pointue le plus loin possible ?",
-      "reponse": "Le lancer du javelot",
-      "niveau": 2
+      "question": "Quel mot anglais désigne zéro au tennis ?",
+      "reponse": "Love",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Combien de roues a une planche à roulettes ?",
-      "reponse": "Quatre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le banc où le joueur puni doit s'asseoir ?",
-      "reponse": "Le banc des punitions",
-      "niveau": 1
+      "question": "Quel Suisse élégant a gagné 20 titres du grand chelem ?",
+      "reponse": "Roger Federer",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

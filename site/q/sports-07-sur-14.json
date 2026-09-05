@@ -8,15 +8,9 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel trophée remporte le champion de la LNH ?",
-      "reponse": "La coupe Stanley",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?",
-      "reponse": "Le football",
-      "niveau": 1
+      "question": "Quel sport oppose deux nageurs qui se poussent un ballon dans une piscine ?",
+      "reponse": "Le water-polo",
+      "niveau": 3
     },
     {
       "categorie": "Sports",
@@ -26,9 +20,85 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de quarts compte un match de la NBA ?",
-      "reponse": "Quatre",
-      "niveau": 1,
+      "question": "Quel joueur français a marqué trois buts en finale de la Coupe du monde 2022 ?",
+      "reponse": "Mbappé",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée est remis au champion du Super Bowl ?",
+      "reponse": "Trophée Lombardi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel gardien du New Jersey a gagné 691 matchs en carrière ?",
+      "reponse": "Martin Brodeur",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel équipement large attaché aux pieds empêche de caler dans la neige épaisse ?",
+      "reponse": "Les raquettes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle nage avance en poussant les deux bras en même temps, comme une grenouille ?",
+      "reponse": "La brasse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de prises retirent un frappeur au baseball ?",
+      "reponse": "Trois",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle couleur de carton avertit un joueur au soccer ?",
+      "reponse": "Jaune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
+      "reponse": "Tessa Virtue",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle médaille reçoit le deuxième aux Jeux olympiques ?",
+      "reponse": "La médaille d'argent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport aquatique saute d'un tremplin dans une piscine ?",
+      "reponse": "Le plongeon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de sets gagnants pour un match de tennis masculin en grand chelem ?",
+      "reponse": "Trois",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -37,10 +107,32 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel lutteur québécois était surnommé Mad Dog ?",
-      "reponse": "Maurice Vachon",
+      "question": "Quel trophée récompense le joueur le plus utile de la LNH ?",
+      "reponse": "Hart",
       "niveau": 2,
       "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
+      "reponse": "Alexandre Bilodeau",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel numéro portait Maurice Richard ?",
+      "reponse": "9",
+      "niveau": 1,
+      "ages": [
+        "adultes",
         "aines"
       ]
     },
@@ -56,147 +148,38 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport frappe une petite balle blanche vers un trou avec un drapeau ?",
-      "reponse": "Le golf",
+      "question": "Combien de coureurs dans un relais 4x100 ?",
+      "reponse": "Quatre",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel maillot porte le meilleur grimpeur du Tour de France ?",
-      "reponse": "À pois",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelles petites roues aident un enfant à apprendre le vélo ?",
-      "reponse": "Des roues d'entraînement",
+      "question": "Quelle ceinture couronne le plus haut niveau des arts martiaux ?",
+      "reponse": "La ceinture noire",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel joueur de la NBA est surnommé King James ?",
-      "reponse": "LeBron James",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pays est le berceau du hockey sur glace ?",
-      "reponse": "Le Canada",
+      "question": "Comment appelle-t-on le personnage costumé qui amuse la foule pendant un match ?",
+      "reponse": "La mascotte",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport se joue avec un disque volant en équipe ?",
-      "reponse": "L'ultimate",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel équipement large attaché aux pieds empêche de caler dans la neige épaisse ?",
-      "reponse": "Les raquettes",
+      "question": "Quel objet frappe-t-on au hockey ?",
+      "reponse": "La rondelle",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Combien de trous compte un parcours de golf complet ?",
-      "reponse": "18",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle carte l'arbitre de soccer montre-t-il pour expulser un joueur ?",
-      "reponse": "Un carton rouge",
+      "question": "Quel trophée les équipes de la Ligue nationale se disputent-elles au printemps ?",
+      "reponse": "La coupe Stanley",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel cerceau fait-on tourner autour de la taille ?",
-      "reponse": "Le hula hoop",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel Espagnol a gagné Roland-Garros quatorze fois ?",
-      "reponse": "Rafael Nadal",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec un ballon orange qu'on lance dans un panier ?",
-      "reponse": "Le basketball",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au water-polo ?",
-      "reponse": "Sept",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur de hockey est surnommé La Merveille ?",
-      "reponse": "Wayne Gretzky",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel stade accueillait les Expos ?",
-      "reponse": "Stade olympique",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "De quelle couleur est la veste du champion du Masters ?",
-      "reponse": "Verte",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle embarcation étroite se dirige avec une pagaie à deux pales ?",
-      "reponse": "Le kayak",
+      "question": "Dans quel sport dit-on échec et mat ?",
+      "reponse": "Les échecs",
       "niveau": 1
     },
     {

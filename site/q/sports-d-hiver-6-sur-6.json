@@ -8,25 +8,14 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Que chausse-t-on par-dessus ses souliers pour marcher dans la neige ?",
-      "reponse": "Des bottes",
-      "niveau": 1
+      "question": "Quel secteur riverain de Montréal accueille patinoire, plage et grande roue ?",
+      "reponse": "Le Vieux-Port",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quel numéro portait Wayne Gretzky ?",
-      "reponse": "99",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le congé imprévu que la neige offre aux élèves ?",
-      "reponse": "Une journée de tempête",
+      "question": "Quelle équipe de hockey joue à Toronto ?",
+      "reponse": "Les Maple Leafs",
       "niveau": 1
     },
     {
@@ -42,12 +31,19 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
-      "reponse": "Tessa Virtue",
-      "niveau": 3,
+      "question": "Quel pays est le berceau du hockey sur glace ?",
+      "reponse": "Le Canada",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel petit poisson pêche-t-on sous la glace à La Pérade ?",
+      "reponse": "Le poulamon",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -58,10 +54,91 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel gardien des Canadiens a porté le premier masque ?",
-      "reponse": "Jacques Plante",
+      "question": "Quelle équipe de la Ligue nationale joue ses matchs locaux à Montréal ?",
+      "reponse": "Les Canadiens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport d'hiver glisse une pierre vers une cible en balayant la glace ?",
+      "reponse": "Le curling",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la couche de glace qui se forme au bord des toits ?",
+      "reponse": "Une barrière de glace",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de table fait glisser une rondelle sur un coussin d'air ?",
+      "reponse": "Le hockey sur air",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Que devient l'eau quand elle gèle ?",
+      "reponse": "De la glace",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel objet empoisonné croque Blanche-Neige ?",
+      "reponse": "Une pomme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de glace utilise des pierres et des balais ?",
+      "reponse": "Le curling",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la rivière de glace qui descend lentement d'une montagne ?",
+      "reponse": "Un glacier",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel joueur des Canadiens fut surnommé le Gros Bill ?",
+      "reponse": "Jean Béliveau",
       "niveau": 2,
       "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne une tempête de neige ?",
+      "reponse": "Une bordée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel bâtiment abrite une patinoire intérieure dans la plupart des villes du Québec ?",
+      "reponse": "Un aréna",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport fait tourner des athlètes en combinaison moulante sur un anneau glacé ?",
+      "reponse": "Le patin de vitesse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de glisse se pratique à plat ventre ?",
+      "reponse": "Le skeleton",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
@@ -69,6 +146,12 @@
       "categorie": "Sports",
       "question": "Comment appelle-t-on la faute qui envoie un joueur de hockey au banc deux minutes ?",
       "reponse": "Une punition",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel est le sport national d'hiver du Canada ?",
+      "reponse": "Le hockey",
       "niveau": 1
     },
     {
@@ -84,114 +167,13 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission du samedi soir diffusait le hockey à Radio-Canada ?",
-      "reponse": "La Soirée du hockey",
+      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
+      "reponse": "Lululemon",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Que chausse-t-on aux pieds pour aller sur la glace ?",
-      "reponse": "Des patins",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel capitaine des Canadiens a soulevé la coupe en 1993 ?",
-      "reponse": "Guy Carbonneau",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur de hockey est surnommé La Merveille ?",
-      "reponse": "Wayne Gretzky",
-      "niveau": 1,
-      "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel gardien détient le record de victoires en carrière ?",
-      "reponse": "Martin Brodeur",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien d'équipes compte la LNH aujourd'hui ?",
-      "reponse": "32",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
-      "reponse": "Orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la saison qui suit la saison régulière au hockey ?",
-      "reponse": "Les séries éliminatoires",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne le manteau et la salopette d'hiver des enfants ?",
-      "reponse": "L'habit de neige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment s'appelle le joueur qui garde le filet au hockey ?",
-      "reponse": "Le gardien de but",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée les équipes de la Ligue nationale se disputent-elles au printemps ?",
-      "reponse": "La coupe Stanley",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle équipe de hockey joue au Centre Bell ?",
-      "reponse": "Les Canadiens",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
-      "reponse": "Le cardinal",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de temps dure une punition mineure au hockey ?",
-      "reponse": "Deux minutes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quoi faut-il envoyer la rondelle pour compter ?",
-      "reponse": "Le filet",
-      "niveau": 1
     }
   ]
 }

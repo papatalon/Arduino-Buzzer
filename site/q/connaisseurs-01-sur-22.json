@@ -7,21 +7,9 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on les chaussons rigides qui permettent de danser sur le bout des orteils ?",
-      "reponse": "Des pointes",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'encadré qui explique les symboles d'une carte ?",
-      "reponse": "La légende",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel moine a affiché 95 thèses en 1517 ?",
-      "reponse": "Luther",
+      "categorie": "Culture pop",
+      "question": "Quel quotidien montréalais a imprimé sa dernière édition en 2017 pour passer à la tablette ?",
+      "reponse": "La Presse",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -29,28 +17,43 @@
       ]
     },
     {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le long bateau à rames des Grecs et des Romains ?",
+      "reponse": "Une galère",
+      "niveau": 3
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
-      "reponse": "Dans l'œil du dragon",
+      "question": "Quel appareil faisait le café en le faisant remonter dans un petit dôme de verre ?",
+      "reponse": "Le percolateur",
       "niveau": 3,
       "ages": [
-        "adultes"
+        "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse américaine a chanté Kill Bill en 2022 ?",
-      "reponse": "SZA",
+      "categorie": "Culture pop",
+      "question": "Quel jeu fait bâtir routes et villages en échangeant bois, blé et minerai ?",
+      "reponse": "Les Colons de Catane",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission jeunesse de Radio-Canada, animée par Monsieur Surprise, a lancé Fanfreluche et Sol ?",
+      "reponse": "La Boîte à surprise",
+      "niveau": 3,
+      "ages": [
+        "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat brésilien est un ragoût de haricots noirs ?",
-      "reponse": "La feijoada",
+      "question": "Quelle sauce verte argentine accompagne les grillades ?",
+      "reponse": "Le chimichurri",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -58,19 +61,20 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne de café québécoise porte le nom de son fondateur ?",
-      "reponse": "Van Houtte",
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne une soirée où l'on boit entre amis ?",
+      "reponse": "Un 5 à 7",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel rover s'est posé sur Mars en 2012 ?",
-      "reponse": "Curiosity",
+      "categorie": "Québec",
+      "question": "Quel secteur de Montréal regroupe salles de spectacle et festivals au centre-ville ?",
+      "reponse": "Le Quartier des spectacles",
       "niveau": 3,
       "ages": [
         "ados",
@@ -79,32 +83,19 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
-      "reponse": "Le Wordle",
+      "question": "Quel humoriste québécois jouait le concierge Symphorien ?",
+      "reponse": "Gilles Latulippe",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on un extrait de chanson repris dans une autre chanson ?",
-      "reponse": "Un échantillon",
+      "question": "Quel roi du blues appelait sa guitare Lucille ?",
+      "reponse": "B.B. King",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans quel jeu de société conquiert-on des territoires sur une carte du monde ?",
-      "reponse": "Le Risk",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -121,14 +112,9 @@
     },
     {
       "categorie": "Musique",
-      "question": "Sur quel support incliné le musicien pose-t-il sa partition ?",
-      "reponse": "Un lutrin",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle comptine fait répondre le hibou au coucou, du haut de son grand chêne ?",
+      "reponse": "Dans la forêt lointaine",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
@@ -137,49 +123,52 @@
       "niveau": 3
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
-      "reponse": "Une joute",
-      "niveau": 3
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle plateforme loue le logement d'un particulier pour des vacances ?",
-      "reponse": "Airbnb",
+      "question": "Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?",
+      "reponse": "L'écoute en rafale",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel bonbon acidulé se vend en poudre avec un petit bâton à tremper ?",
-      "reponse": "Le Fun Dip",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le long bateau à rames des Grecs et des Romains ?",
-      "reponse": "Une galère",
-      "niveau": 3
     },
     {
       "categorie": "Québec",
-      "question": "Quel parc national de la Gaspésie s'avance au bout de la péninsule ?",
-      "reponse": "Forillon",
+      "question": "Quelle autoroute mène de Montréal vers les Laurentides ?",
+      "reponse": "La 15",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel moine a affiché 95 thèses en 1517 ?",
+      "reponse": "Luther",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel opéra de Bizet se déroule en Espagne ?",
+      "reponse": "Carmen",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'encadré qui explique les symboles d'une carte ?",
+      "reponse": "La légende",
+      "niveau": 3
     },
     {
       "categorie": "Musique",
@@ -192,19 +181,25 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle région québécoise occupe un cratère de météorite ?",
-      "reponse": "Charlevoix",
+      "categorie": "Histoire",
+      "question": "Quel rover s'est posé sur Mars en 2012 ?",
+      "reponse": "Curiosity",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
-      "reponse": "L'autoroute 40",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on les cinq lignes sur lesquelles on écrit les notes ?",
+      "reponse": "La portée",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la voix masculine aiguë des grands airs d'opéra ?",
+      "reponse": "Le ténor",
       "niveau": 3,
       "ages": [
         "ados",
@@ -214,27 +209,23 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel magasin se visitait catalogue en main, avant que la marchandise sorte de l'entrepôt ?",
-      "reponse": "Distribution aux consommateurs",
+      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
+      "reponse": "Michel Louvain",
       "niveau": 3,
       "ages": [
         "aines"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
+      "reponse": "Une joute",
+      "niveau": 3
     },
     {
       "categorie": "Sports",
-      "question": "Quelle course de traîneaux à chiens traverse l'Alaska ?",
-      "reponse": "L'Iditarod",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument de rue se joue en tournant une manivelle ?",
-      "reponse": "Un orgue de Barbarie",
+      "question": "Combien de kilomètres fait un triathlon olympique à vélo ?",
+      "reponse": "40",
       "niveau": 3,
       "ages": [
         "adultes",

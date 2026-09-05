@@ -60,24 +60,34 @@ vingtaine trouvée en septembre l'a été à l'œil, sur un dixième de la banqu
 
 ### 3. La péremption — FAIT (septembre 2026)
 
-Une ligne `~ raison` sous une question la marque comme périssable, à côté des
-marqueurs `>` (retouche) et `-` (retrait). Le générateur les compte à chaque
-passage, et
+**Les questions doivent être pérennes.** Une banque de party n'a pas de
+mainteneur : ce qui demande une revue annuelle ne sera jamais revu, et
+vieillira en silence jusqu'à ce que quelqu'un, dans le salon, corrige le jeu.
 
-    dart run tool/generate_questionnaires.dart --perissables
+Une question n'est pas pérenne quand sa réponse peut devenir **fausse** alors
+que l'énoncé reste valable : un record qu'on bat, un joueur qui change
+d'équipe, un compte qui bouge, un amphithéâtre qui change de commanditaire.
+23 ont été trouvées et traitées, aucune n'a été gardée telle quelle :
 
-les liste avec leur raison. **C'est la commande de la revue annuelle.**
+- **neuf reformulées** pour viser un fait figé. Le record du 100 m devient
+  « qui a couru en 9 secondes 58 », le gardien aux plus de victoires devient
+  « qui a gagné 691 matchs », le numéro 97 des Oilers devient « repêché
+  premier par Edmonton en 2015 ». La performance ne bougera plus ;
+- **sept retirées**, faute de reformulation honnête : le nombre de coupes
+  Stanley des Canadiens, le nombre d'équipes de la LNH, le pays le plus
+  médaillé, le club de Haaland, le nom du Centre Vidéotron ;
+- **sept démarquées** : les dominations structurelles que rien ne conteste,
+  le café brésilien, le sirop d'érable canadien, le pétrole albertain, le 311
+  et l'autoroute 40. Ce ne sont pas des classements disputés.
 
-Le critère est étroit, et c'est voulu : on marque une question dont la
-réponse peut devenir **fausse** alors que l'énoncé reste valable. Un record
-qu'on bat, un joueur qui change d'équipe, un compte qui bouge, un
-amphithéâtre qui change de commanditaire. « Qui a fondé Québec ? » sera vrai
-dans vingt ans et ne se marque pas. Une marque qui disparaîtrait rendrait sa
-question caduque, pas fausse : elle ne se marque pas non plus.
+Une était déjà périmée quand on l'a trouvée : « Quel Espagnol règne sur
+Roland-Garros ? » se posait au présent alors que Nadal a pris sa retraite en
+novembre 2024.
 
-23 questions marquées au départ, surtout dans Sports et Québec. Une était
-déjà périmée quand on l'a trouvée : « Quel Espagnol règne sur Roland-Garros ? »
-au présent, alors que Nadal a pris sa retraite en novembre 2024.
+Le marqueur `~ raison` reste dans le format, à côté de `>` et `-`, et le
+générateur en affiche le compte à chaque passage. **Ce compte doit rester à
+zéro.** S'il monte, une question qui pourrit est entrée dans la banque.
+`--perissables` les liste.
 
 ### 4. Les niveaux et les tranches
 

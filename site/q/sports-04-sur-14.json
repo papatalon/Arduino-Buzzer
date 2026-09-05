@@ -8,25 +8,18 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel jeu de cour d'école consiste à courir après les autres pour les toucher ?",
-      "reponse": "La tag",
-      "niveau": 1
+      "question": "Dans quelle cage combattent les athlètes de l'UFC ?",
+      "reponse": "L'octogone",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de glisse se pratique sur une piste avec des bâtons dans les mains ?",
-      "reponse": "Le ski alpin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de temps dure une punition mineure au hockey ?",
-      "reponse": "Deux minutes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pilote britannique a gagné 7 titres de F1 ?",
+      "question": "Quel pilote britannique a gagné son premier championnat de F1 en 2008 ?",
       "reponse": "Lewis Hamilton",
       "niveau": 2,
       "ages": [
@@ -36,85 +29,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment s'appelle le centre de la cible aux fléchettes ?",
-      "reponse": "Le bullseye",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel numéro de tissu le coureur épingle-t-il sur sa poitrine ?",
-      "reponse": "Un dossard",
+      "question": "Quel anneau gonflable aide les petits à flotter ?",
+      "reponse": "Une bouée",
       "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle activité se pratique avec une canne et un hameçon ?",
-      "reponse": "La pêche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel gardien québécois a popularisé le style papillon ?",
-      "reponse": "Patrick Roy",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel quart-arrière a gagné sept Super Bowls ?",
-      "reponse": "Tom Brady",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la bouteille dans laquelle un joueur boit sur le banc ?",
-      "reponse": "Une gourde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de prises pour retirer un frappeur ?",
-      "reponse": "Trois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport enchaîne obstacles, murs et sauts en pleine ville ?",
-      "reponse": "Le parkour",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Depuis quelle planche élastique s'élance le plongeur ?",
-      "reponse": "Un tremplin",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle course de traîneaux à chiens traverse l'Alaska ?",
-      "reponse": "L'Iditarod",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Sports",
@@ -124,65 +41,77 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel joueur des Oilers porte le numéro 97 ?",
-      "reponse": "Connor McDavid",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de rondes maximum en boxe professionnelle ?",
-      "reponse": "Douze",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport marque-t-on des essais ?",
-      "reponse": "Le rugby",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel équipement protège la tête à vélo et au hockey ?",
       "reponse": "Le casque",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on l'exercice qu'une équipe fait avant le match pour se réchauffer ?",
-      "reponse": "L'échauffement",
+      "question": "Dans quel sport lance-t-on un javelot ?",
+      "reponse": "L'athlétisme",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel capitaine des Penguins est surnommé Sid the Kid ?",
-      "reponse": "Sidney Crosby",
+      "question": "Quelle équipe canadienne a gagné la Série mondiale en 1992 ?",
+      "reponse": "Blue Jays",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de prises pour retirer un frappeur ?",
+      "reponse": "Trois",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle est la distance d'un marathon ?",
-      "reponse": "42,2 km",
+      "question": "Quelle embarcation étroite se dirige avec une pagaie à deux pales ?",
+      "reponse": "Le kayak",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel club anglais est surnommé les Diables rouges ?",
+      "reponse": "Manchester United",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport porte-t-on un fleuret et un masque ?",
+      "reponse": "L'escrime",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel tournoi du grand chelem se joue en janvier ?",
+      "reponse": "Open d'Australie",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de joueurs sur la glace par équipe au hockey ?",
+      "reponse": "Six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le banc où le joueur puni doit s'asseoir ?",
+      "reponse": "Le banc des punitions",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -197,8 +126,66 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel objet rond et gonflé frappe-t-on à la volée sur la plage ?",
-      "reponse": "Le ballon de plage",
+      "question": "Quel sport se pratique dans une piscine ?",
+      "reponse": "La natation",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un volant ?",
+      "reponse": "Le badminton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de touches maximum par équipe au volleyball ?",
+      "reponse": "Trois",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de combat n'utilise que les poings ?",
+      "reponse": "La boxe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le joueur qui remplace un blessé en cours de match ?",
+      "reponse": "Un remplaçant",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel événement sportif américain a lieu un dimanche de février ?",
+      "reponse": "Le Super Bowl",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de table se joue avec des queues et des billes ?",
+      "reponse": "Le billard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien d'anneaux entrelacés forment le symbole olympique ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel grand bassin apprend-on à nager ?",
+      "reponse": "Une piscine",
       "niveau": 1
     }
   ]

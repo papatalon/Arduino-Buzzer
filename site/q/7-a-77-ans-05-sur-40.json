@@ -7,26 +7,9 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel Pokémon jaune lance des éclairs ?",
-      "reponse": "Pikachu",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Féminin de roi ?",
-      "reponse": "La reine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Où vivent les ours polaires ?",
-      "reponse": "En Arctique",
+      "categorie": "Sports",
+      "question": "Quel sport surfe sur la neige ?",
+      "reponse": "La planche à neige",
       "niveau": 1
     },
     {
@@ -36,43 +19,56 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série fantastique a des dragons et un trône de fer ?",
-      "reponse": "Game of Thrones",
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la boîte où l'on met son repas pour l'école ?",
+      "reponse": "La boîte à lunch",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle entreprise a créé l'iPhone ?",
+      "reponse": "Apple",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel aliment blanc en grains adoucit le café et entre dans tous les gâteaux ?",
+      "reponse": "Le sucre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Synonyme de charitable, commençant par G ?",
+      "reponse": "Généreux",
       "niveau": 1,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle amie brillante accompagne Harry et Ron ?",
-      "reponse": "Hermione",
+      "categorie": "Mots et langue",
+      "question": "Comment dit-on « merci » en espagnol ?",
+      "reponse": "Gracias",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quoi est fait le fromage ?",
-      "reponse": "Du lait",
+      "categorie": "Sciences et nature",
+      "question": "Quel est l'animal le plus haut du monde ?",
+      "reponse": "La girafe",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quels trois étages composent le pâté chinois ?",
-      "reponse": "Bœuf maïs patates",
+      "categorie": "Musique",
+      "question": "Dans « Alouette, gentille alouette », quelle partie plume-t-on en premier ?",
+      "reponse": "La tête",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la pièce où les joueurs enfilent leur équipement ?",
-      "reponse": "Le vestiaire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays d'Europe est célèbre pour ses montres, son chocolat et ses Alpes ?",
-      "reponse": "La Suisse",
+      "question": "Quel objet à manche et à cordes frappe la balle au tennis ?",
+      "reponse": "Une raquette",
       "niveau": 1
     },
     {
@@ -82,15 +78,32 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la personne qui répare les autos au garage ?",
-      "reponse": "Un mécanicien",
+      "categorie": "Géographie",
+      "question": "Quel pays d'Europe est célèbre pour ses montres, son chocolat et ses Alpes ?",
+      "reponse": "La Suisse",
       "niveau": 1
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Quel gros animal d'Afrique passe ses journées dans l'eau, la gueule grande ouverte ?",
+      "reponse": "L'hippopotame",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quels écouteurs sans fil blancs se rangent dans un petit boîtier ?",
+      "reponse": "Les AirPods",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
       "categorie": "Musique",
-      "question": "Quelle note vient juste après le ré ?",
-      "reponse": "Le mi",
+      "question": "Quel objet tient le chanteur pour que sa voix porte dans toute la salle ?",
+      "reponse": "Le micro",
       "niveau": 1
     },
     {
@@ -105,27 +118,51 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel est l'animal le plus haut du monde ?",
-      "reponse": "La girafe",
+      "categorie": "Géographie",
+      "question": "Quel est le plus grand pays du monde ?",
+      "reponse": "La Russie",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson gazeuse brune est née à Atlanta ?",
-      "reponse": "Le Coca-Cola",
+      "categorie": "Cinéma et télé",
+      "question": "Quel père de famille travaille dans une centrale nucléaire ?",
+      "reponse": "Homer Simpson",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "De quelle couleur est le fond du drapeau du Québec ?",
+      "reponse": "Bleu",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel directeur de Poudlard a une longue barbe blanche ?",
+      "reponse": "Dumbledore",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la personne qui conduit un autobus scolaire ?",
-      "reponse": "Un chauffeur",
+      "question": "Contraire de rapide ?",
+      "reponse": "Lent",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Dans quel film d'animation une famille colombienne vit-elle dans une maison magique ?",
-      "reponse": "Encanto",
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la petite bouchée prise entre deux repas ?",
+      "reponse": "Une collation",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Où vivent les ours polaires ?",
+      "reponse": "En Arctique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation suit une lapine policière et un renard rusé dans une ville d'animaux ?",
+      "reponse": "Zootopia",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -135,49 +172,14 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle loi québécoise protège la langue française ?",
-      "reponse": "La loi 101",
+      "question": "Quel lard frit croustillant sert-on à la cabane ?",
+      "reponse": "Oreilles de crisse",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle activité d'hiver descend une pente sur un traîneau ou une chambre à air ?",
-      "reponse": "La glissade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle percussion ronde a des cymbalettes ?",
-      "reponse": "Le tambourin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle entreprise a créé l'iPhone ?",
-      "reponse": "Apple",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel gros animal d'Afrique passe ses journées dans l'eau, la gueule grande ouverte ?",
-      "reponse": "L'hippopotame",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la semaine de congé scolaire du début mars ?",
-      "reponse": "La relâche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus grand pays du monde ?",
-      "reponse": "La Russie",
-      "niveau": 1
     }
   ]
 }

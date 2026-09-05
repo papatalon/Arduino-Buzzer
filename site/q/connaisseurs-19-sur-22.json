@@ -7,30 +7,9 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne une soirée où l'on boit entre amis ?",
-      "reponse": "Un 5 à 7",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de cœurs possède un ver de terre ?",
-      "reponse": "Cinq",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série de films enferme des adolescents dans un dédale aux murs mouvants ?",
-      "reponse": "Le Labyrinthe",
+      "categorie": "Musique",
+      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
+      "reponse": "Bleu Jeans Bleu",
       "niveau": 3,
       "ages": [
         "ados",
@@ -38,39 +17,48 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Combien de demi-tons dans une octave ?",
-      "reponse": "Douze",
+      "categorie": "Culture pop",
+      "question": "Quelle marque de véhicules tout-terrain a une calandre à sept fentes ?",
+      "reponse": "Jeep",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Combien de cordes a un violoncelle ?",
-      "reponse": "Quatre",
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on les grandes îles du golfe où l'on va en traversier l'été ?",
+      "reponse": "Les Îles-de-la-Madeleine",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle équipe de hockey junior de Québec a été dirigée par Patrick Roy ?",
+      "reponse": "Les Remparts",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat argentin grille des viandes au feu de bois ?",
-      "reponse": "L'asado",
+      "categorie": "Cinéma et télé",
+      "question": "Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?",
+      "reponse": "Le Bossu de Notre-Dame",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados",
+        "adultes"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel cheval célèbre a gagné la Triple Couronne en 1973 ?",
-      "reponse": "Secretariat",
+      "categorie": "Culture pop",
+      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
+      "reponse": "Les Baronets",
       "niveau": 3,
       "ages": [
         "aines"
@@ -88,74 +76,6 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on les longues routes pavées construites par les Romains ?",
-      "reponse": "Les voies romaines",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel défi a fait verser des seaux d'eau glacée sur des têtes en 2014 ?",
-      "reponse": "Le Ice Bucket Challenge",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse traditionnelle québécoise se danse à quatre couples sur les appels d'un câlleur ?",
-      "reponse": "Le set carré",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel sous-genre du rap se reconnaît à ses charlestons rapides et ses basses lourdes ?",
-      "reponse": "La trap",
-      "niveau": 3,
-      "ages": [
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
-      "reponse": "Le parchemin",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission de Radio-Canada vulgarise la science le dimanche soir ?",
-      "reponse": "Découverte",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?",
-      "reponse": "L'écoute en rafale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
       "question": "Comment appelle-t-on les grandes pierres dressées et posées à plat par les hommes préhistoriques ?",
       "reponse": "Un dolmen",
       "niveau": 3,
@@ -166,19 +86,29 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel champignon rouge à pois blancs des contes pousse dans les forêts ?",
-      "reponse": "L'amanite tue-mouches",
+      "categorie": "Musique",
+      "question": "Quelle chanson de Nirvana commence par un riff de guitare devenu emblème du grunge ?",
+      "reponse": "Smells Like Teen Spirit",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Qui collectionne les pièces de monnaie ?",
-      "reponse": "Un numismate",
+      "categorie": "Musique",
+      "question": "Quelle chanteuse acadienne s'est fait connaître au banjo, en français ?",
+      "reponse": "Lisa LeBlanc",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel petit pays est enclavé entre France et Espagne ?",
+      "reponse": "Andorre",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -198,18 +128,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse américaine a chanté Espresso en 2024 ?",
-      "reponse": "Sabrina Carpenter",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel vêtement des années 60 a scandalisé en raccourcissant brusquement ?",
-      "reponse": "La minijupe",
+      "question": "Quelles percussions cubaines se jouent par paire à main nue ?",
+      "reponse": "Les congas",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -217,15 +137,45 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on les grandes îles du golfe où l'on va en traversier l'été ?",
-      "reponse": "Les Îles-de-la-Madeleine",
+      "categorie": "Musique",
+      "question": "Quelle chanson de Journey encourage à ne jamais cesser d'y croire ?",
+      "reponse": "Don't Stop Believin'",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
+      "reponse": "Le parchemin",
       "niveau": 3
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quelle merveille antique gardait le port de Rhodes ?",
-      "reponse": "Le colosse",
+      "categorie": "Culture pop",
+      "question": "Que rapportait-on à l'épicerie pour récupérer quelques sous ?",
+      "reponse": "Les bouteilles vides",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle compagnie de fourrures rivalisait avec la Baie d'Hudson ?",
+      "reponse": "Nord-Ouest",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de cœurs possède un ver de terre ?",
+      "reponse": "Cinq",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -234,10 +184,51 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel magazine hebdomadaire publiait les horaires de télévision au Québec ?",
-      "reponse": "Le TV Hebdo",
+      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
+      "reponse": "La ceinture fléchée",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel capitaine de la télé jeunesse racontait des histoires invraisemblables avec ses invisibles ?",
+      "reponse": "Le Capitaine Bonhomme",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les longues routes pavées construites par les Romains ?",
+      "reponse": "Les voies romaines",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot pyjama ?",
+      "reponse": "Le persan",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boulette de poulpe japonaise est une collation ?",
+      "reponse": "Le takoyaki",
+      "niveau": 3,
+      "ages": [
+        "adultes",
         "aines"
       ]
     },
@@ -249,6 +240,15 @@
       "ages": [
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
+      "reponse": "Loft Story",
+      "niveau": 3,
+      "ages": [
+        "adultes"
       ]
     }
   ]

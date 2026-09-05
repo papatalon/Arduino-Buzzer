@@ -8,39 +8,14 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la balle de golf entrée dans la coupe dès le départ ?",
-      "reponse": "Un trou d'un coup",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on le moment où l'arbitre laisse tomber la rondelle entre deux joueurs ?",
+      "reponse": "La mise au jeu",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quel basketteur légendaire portait le 23 des Bulls ?",
-      "reponse": "Michael Jordan",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel lanceur québécois a gagné un Cy Young ?",
-      "reponse": "Éric Gagné",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel événement sportif américain a lieu un dimanche de février ?",
-      "reponse": "Le Super Bowl",
+      "question": "Quelle fédération organise la Coupe du monde de soccer ?",
+      "reponse": "La FIFA",
       "niveau": 1,
       "ages": [
         "ados",
@@ -50,38 +25,81 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de joueurs sur la glace par équipe au hockey ?",
-      "reponse": "Six",
+      "question": "Quel maillot porte le meilleur grimpeur du Tour de France ?",
+      "reponse": "À pois",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport enchaîne obstacles, murs et sauts en pleine ville ?",
+      "reponse": "Le parkour",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport fait rouler une planche sur des rampes dans un parc ?",
+      "reponse": "La planche à roulettes",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Dans quoi le joueur transporte-t-il ses bâtons d'un trou à l'autre ?",
-      "reponse": "Le sac de golf",
-      "niveau": 2
+      "question": "De quel plongeoir olympique saute-t-on de plus haut ?",
+      "reponse": "10 mètres",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le tableau qui affiche le pointage pendant un match ?",
-      "reponse": "Le tableau indicateur",
-      "niveau": 2
+      "question": "Comment nomme-t-on trois abats de suite au bowling ?",
+      "reponse": "Un dindon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle activité d'été fait dormir sous une tente ?",
-      "reponse": "Le camping",
+      "question": "Quel sport se joue avec un disque volant en équipe ?",
+      "reponse": "L'ultimate",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de points vaut un lancer franc au basketball ?",
+      "reponse": "Un",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sprinteur détient le record du 100 mètres ?",
-      "reponse": "Usain Bolt",
+      "question": "Dans quel objet l'arbitre souffle-t-il pour arrêter le jeu ?",
+      "reponse": "Un sifflet",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Tous les combien d'années a lieu la Coupe du monde de soccer ?",
-      "reponse": "Quatre ans",
+      "question": "Quel sport olympique mélange danse et piscine ?",
+      "reponse": "Natation artistique",
       "niveau": 1,
       "ages": [
         "ados",
@@ -91,14 +109,44 @@
     },
     {
       "categorie": "Sports",
-      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
-      "reponse": "Orange",
+      "question": "Quel sport fait tourner des voitures très rapides sur un circuit ?",
+      "reponse": "La course automobile",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel trophée récompense le joueur le plus utile de la LNH ?",
-      "reponse": "Hart",
+      "question": "Comment appelle-t-on la grande surface de jeu du soccer ?",
+      "reponse": "Le terrain",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de hockey joue à Edmonton ?",
+      "reponse": "Les Oilers",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport évolue-t-on sur une poutre ?",
+      "reponse": "La gymnastique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de cour d'école consiste à courir après les autres pour les toucher ?",
+      "reponse": "La tag",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle activité se pratique avec une canne et un hameçon ?",
+      "reponse": "La pêche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment nomme-t-on un trou d'un coup au golf ?",
+      "reponse": "Un as",
       "niveau": 2,
       "ages": [
         "ados",
@@ -108,20 +156,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport fait descendre un skieur derrière un bateau ?",
-      "reponse": "Le ski nautique",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la passe qui mène directement à un but ?",
-      "reponse": "Une passe décisive",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel Serbe détient le record de titres du grand chelem ?",
-      "reponse": "Novak Djokovic",
+      "question": "Quel tournoi du grand chelem se joue à New York ?",
+      "reponse": "Le US Open",
       "niveau": 2,
       "ages": [
         "ados",
@@ -131,53 +167,24 @@
     },
     {
       "categorie": "Sports",
-      "question": "Dans quelle cage combattent les athlètes de l'UFC ?",
-      "reponse": "L'octogone",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle médaille reçoit le troisième aux Jeux olympiques ?",
-      "reponse": "La médaille de bronze",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel boxeur se surnommait The Greatest ?",
-      "reponse": "Muhammad Ali",
+      "question": "Quel sport mélange soccer et voiture dans un jeu vidéo ?",
+      "reponse": "Rocket League",
       "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le joueur du baseball qui envoie la balle au frappeur ?",
-      "reponse": "Le lanceur",
+      "question": "Sur quoi fait-on des culbutes au cours d'éducation physique ?",
+      "reponse": "Un tapis",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de table se joue avec des queues et des billes ?",
-      "reponse": "Le billard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de coureurs dans un relais 4x100 ?",
-      "reponse": "Quatre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle course américaine tourne en ovale 500 milles ?",
-      "reponse": "Indianapolis 500",
+      "question": "Quel trophée récompense le meilleur marqueur de la LNH ?",
+      "reponse": "Art Ross",
       "niveau": 2,
       "ages": [
         "ados",
@@ -187,19 +194,15 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe canadienne a gagné la Série mondiale en 1992 ?",
-      "reponse": "Blue Jays",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment s'appelle le joueur qui garde le filet au hockey ?",
+      "reponse": "Le gardien de but",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le premier match de la saison ?",
-      "reponse": "Le match d'ouverture",
-      "niveau": 2
+      "question": "Quel sport frappe une petite balle blanche vers un trou avec un drapeau ?",
+      "reponse": "Le golf",
+      "niveau": 1
     }
   ]
 }

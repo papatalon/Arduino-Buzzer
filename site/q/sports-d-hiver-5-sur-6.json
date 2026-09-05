@@ -7,98 +7,33 @@
   "emoji": "⛷️",
   "questions": [
     {
+      "categorie": "Québec",
+      "question": "Quel traîneau de bois aux lattes recourbées glisse sur la neige au Québec ?",
+      "reponse": "La traîne sauvage",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Comment s'appelle une maison faite de blocs de neige ?",
+      "reponse": "Un igloo",
+      "niveau": 1
+    },
+    {
       "categorie": "Sports",
-      "question": "Quel sport fait glisser un lugeur tête première sur la glace ?",
-      "reponse": "Le skeleton",
-      "niveau": 3,
+      "question": "Combien de joueurs sur la glace par équipe au hockey ?",
+      "reponse": "Six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle ligne rouge coupe la patinoire en deux ?",
+      "reponse": "Ligne centrale",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Que devient l'eau quand elle gèle ?",
-      "reponse": "De la glace",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne une tempête de neige ?",
-      "reponse": "Une bordée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel outil de plastique sert à dégager la neige de l'entrée ?",
-      "reponse": "Une pelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le bonhomme de neige de La Reine des neiges ?",
-      "reponse": "Olaf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glisse descend les pentes enneigées sur deux planches étroites ?",
-      "reponse": "Le ski",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel engin motorisé souffle la neige des entrées de garage l'hiver ?",
-      "reponse": "La souffleuse",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de coupes Stanley pour les Canadiens de Montréal ?",
-      "reponse": "24",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
-      "reponse": "Alexandre Bilodeau",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la grosse chute qui blanchit tout en une nuit ?",
-      "reponse": "Une bordée de neige",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport fait tourner des athlètes en combinaison moulante sur un anneau glacé ?",
-      "reponse": "Le patin de vitesse",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Que tombe-t-il du ciel en flocons blancs l'hiver ?",
-      "reponse": "La neige",
-      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -110,14 +45,96 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel joueur des Canadiens fut surnommé le Démon blond ?",
-      "reponse": "Guy Lafleur",
-      "niveau": 1,
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle confiserie d'érable se roule sur la neige ?",
+      "reponse": "La tire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la saison qui suit la saison régulière au hockey ?",
+      "reponse": "Les séries éliminatoires",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle ville canadienne a reçu les JO d'hiver de 1988 ?",
+      "reponse": "Calgary",
+      "niveau": 2,
       "ages": [
+        "enfants",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle équipe de hockey junior de Québec a été dirigée par Patrick Roy ?",
+      "reponse": "Les Remparts",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport combine ski de fond et tir ?",
+      "reponse": "Le biathlon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel outil de plastique sert à dégager la neige de l'entrée ?",
+      "reponse": "Une pelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on les longs cônes de glace qui pendent des toits ?",
+      "reponse": "Des glaçons",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle reine a des pouvoirs de glace chez Disney ?",
+      "reponse": "Elsa",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel joueur a été repêché premier au total par Edmonton en 2015 ?",
+      "reponse": "Connor McDavid",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport surfe sur la neige ?",
+      "reponse": "La planche à neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel outil sert à enlever la glace sur le pare-brise de l'auto ?",
+      "reponse": "Un gratte-glace",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le mur de neige que la charrue laisse au bout de l'entrée ?",
+      "reponse": "Un banc de neige",
+      "niveau": 2
     },
     {
       "categorie": "Cinéma et télé",
@@ -132,37 +149,15 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de glisse se pratique à plat ventre ?",
-      "reponse": "Le skeleton",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel hébergement québécois est rebâti chaque hiver ?",
-      "reponse": "Hôtel de glace",
+      "question": "Sur quelle surface glacée se joue le hockey ?",
+      "reponse": "La patinoire",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel jeu de table fait glisser une rondelle sur un coussin d'air ?",
-      "reponse": "Le hockey sur air",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain sucré en anneau se glace et se saupoudre ?",
+      "reponse": "Le beigne",
       "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit poisson pêche-t-on sous la glace à La Pérade ?",
-      "reponse": "Le poulamon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Québec",
@@ -171,32 +166,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
-      "reponse": "Les Boys",
+      "categorie": "Géographie",
+      "question": "Quel point le plus au sud de la Terre est couvert de glace ?",
+      "reponse": "Le pôle Sud",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle ville canadienne a reçu les JO d'hiver de 1988 ?",
-      "reponse": "Calgary",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de rue se joue en espadrilles, bâton en main, avec une balle orange ?",
-      "reponse": "Le hockey-balle",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel traîneau de bois aux lattes recourbées glisse sur la neige au Québec ?",
-      "reponse": "La traîne sauvage",
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le bonhomme de neige de La Reine des neiges ?",
+      "reponse": "Olaf",
       "niveau": 1
     }
   ]

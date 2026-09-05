@@ -7,51 +7,32 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quels tambours se frappent en cercle dans les parcs de Montréal le dimanche ?",
-      "reponse": "Les tam-tams",
+      "categorie": "Histoire",
+      "question": "Comment appelait-on les soldats montés à cheval dans les armées d'autrefois ?",
+      "reponse": "La cavalerie",
       "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le Canada ?",
-      "reponse": "L'Amérique du Nord",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil au propane sort sur le balcon dès les premiers beaux jours ?",
-      "reponse": "Le barbecue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle fleur jaune devient une boule de duvet qu'on souffle ?",
-      "reponse": "Le pissenlit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport d'équipe se joue avec un bâton à filet au bout et une petite balle dure ?",
-      "reponse": "La crosse",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat de dessin animé court après la souris Jerry ?",
-      "reponse": "Tom",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Comment appelle-t-on le grand navire qui emmène des passagers en croisière ?",
-      "reponse": "Un paquebot",
-      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat suisse racle du fromage fondu ?",
-      "reponse": "La raclette",
+      "question": "Pays d'origine du kimchi ?",
+      "reponse": "La Corée",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel personnage de conte chaussé de bottes parle au nom de son maître ?",
+      "reponse": "Le Chat botté",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle soupe vietnamienne parfumée contient du bœuf ?",
+      "reponse": "Le pho",
       "niveau": 1,
       "ages": [
         "ados",
@@ -60,21 +41,10 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
-      "reponse": "Bob l'éponge",
+      "categorie": "Québec",
+      "question": "Quelle fête du 14 février fait échanger des cartes en forme de cœur ?",
+      "reponse": "La Saint-Valentin",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle application d'appels vidéo est devenue incontournable pendant la pandémie ?",
-      "reponse": "Zoom",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Histoire",
@@ -87,20 +57,43 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle rue étroite du Vieux-Québec est très photographiée ?",
-      "reponse": "Petit-Champlain",
-      "niveau": 1,
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
+      "reponse": "Caillou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel festival célèbre a eu lieu en 1969 près de New York ?",
+      "reponse": "Woodstock",
+      "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Quelle fleur jaune devient une boule de duvet qu'on souffle ?",
+      "reponse": "Le pissenlit",
+      "niveau": 1
+    },
+    {
       "categorie": "Bouffe et cuisine",
-      "question": "De quel pays vient la tequila ?",
-      "reponse": "Le Mexique",
+      "question": "Quel petit fruit bleu foncé se cueille dans les bois du Lac-Saint-Jean ?",
+      "reponse": "Le bleuet sauvage",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quel continent se trouve le Canada ?",
+      "reponse": "L'Amérique du Nord",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "De quelle couleur sont les habitants de Pandora ?",
+      "reponse": "Bleus",
       "niveau": 1,
       "ages": [
         "ados",
@@ -115,27 +108,26 @@
       "niveau": 2
     },
     {
-      "categorie": "Musique",
-      "question": "Quel format de disque tourne à 33 tours ?",
-      "reponse": "Le vinyle",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sports",
+      "question": "Quelle est la nage la plus rapide ?",
+      "reponse": "Le crawl",
+      "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on les soldats montés à cheval dans les armées d'autrefois ?",
-      "reponse": "La cavalerie",
+      "categorie": "Québec",
+      "question": "Quel petit véhicule tout-terrain se conduit à califourchon dans les sentiers l'été ?",
+      "reponse": "Un quatre-roues",
       "niveau": 2
     },
     {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
-      "reponse": "Un sauveteur",
-      "niveau": 1
+      "categorie": "Musique",
+      "question": "Quelle chanson de Toto porte le nom d'un continent ?",
+      "reponse": "Africa",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -144,15 +136,22 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boulette frite du Moyen-Orient est aux pois chiches ?",
-      "reponse": "Le falafel",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Québec",
+      "question": "Quelle est la capitale nationale du Québec ?",
+      "reponse": "Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu consiste à se cacher pendant qu'un joueur compte les yeux fermés ?",
+      "reponse": "La cachette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie l'interjection québécoise tiguidou ?",
+      "reponse": "C'est parfait",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -166,39 +165,41 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur autrichien joue Terminator ?",
-      "reponse": "Schwarzenegger",
+      "categorie": "Culture générale",
+      "question": "Comment appelle-t-on le grand navire qui emmène des passagers en croisière ?",
+      "reponse": "Un paquebot",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Combien de voyelles dans l'alphabet français ?",
-      "reponse": "Six",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que met-on aux mains pour ne pas avoir froid, avec un seul compartiment pour les doigts ?",
-      "reponse": "Des mitaines",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle ligue de hockey junior regroupe les équipes du Québec et des Maritimes ?",
-      "reponse": "La LHJMQ",
-      "niveau": 3,
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne éducative appartient au gouvernement du Québec ?",
+      "reponse": "Télé-Québec",
+      "niveau": 2,
       "ages": [
-        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel acteur incarne Rocky Balboa ?",
+      "reponse": "Stallone",
+      "niveau": 1,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on l'abri où dort l'ours pendant l'hiver ?",
-      "reponse": "Une tanière",
-      "niveau": 2
+      "question": "Contraire de rigide, en six lettres ?",
+      "reponse": "Souple",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

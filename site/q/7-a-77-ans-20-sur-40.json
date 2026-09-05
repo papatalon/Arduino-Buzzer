@@ -7,26 +7,95 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel format de disque tourne à 33 tours ?",
-      "reponse": "Le vinyle",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle épice noire moulue accompagne le sel sur la table ?",
+      "reponse": "Le poivre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Sur quelle surface glacée se joue le hockey ?",
+      "reponse": "La patinoire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "De quoi sont faits les nuages ?",
+      "reponse": "Gouttelettes d'eau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle chenille fabrique un fil précieux en tissant son cocon ?",
+      "reponse": "Le ver à soie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte à tartiner aux noisettes est adorée ?",
+      "reponse": "Le Nutella",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel cheval mythologique a des ailes ?",
+      "reponse": "Pégase",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin d'empereur ?",
+      "reponse": "Impératrice",
       "niveau": 1,
       "ages": [
-        "enfants",
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Combien de voyelles dans l'alphabet français ?",
-      "reponse": "Six",
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle la statuette du cinéma américain ?",
+      "reponse": "L'Oscar",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Dans quelle ville l'aquarium présente-t-il des ours blancs ?",
+      "reponse": "Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel roi figure sur les nouvelles pièces de monnaie canadiennes depuis 2023 ?",
+      "reponse": "Charles III",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Sur quelle estrade les artistes se produisent-ils ?",
+      "reponse": "La scène",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel monument italien penche dangereusement depuis des siècles ?",
-      "reponse": "La tour de Pise",
+      "question": "Sur quelle application les photos envoyées disparaissent-elles après quelques secondes ?",
+      "reponse": "Snapchat",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin géant souffle un jet d'eau par le dos ?",
+      "reponse": "La baleine",
       "niveau": 1
     },
     {
@@ -42,112 +111,50 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Sur quelle application les photos envoyées disparaissent-elles après quelques secondes ?",
-      "reponse": "Snapchat",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Que mâche-t-on longtemps sans jamais l'avaler ?",
-      "reponse": "De la gomme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel bonbon rond se tient au bout d'un bâton ?",
-      "reponse": "Un suçon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi figure sur les nouvelles pièces de monnaie canadiennes depuis 2023 ?",
-      "reponse": "Charles III",
+      "question": "Quel monument italien penche dangereusement depuis des siècles ?",
+      "reponse": "La tour de Pise",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quelle est la deuxième lettre de l'alphabet grec ?",
-      "reponse": "Bêta",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie raconter des salades ?",
-      "reponse": "Mentir",
+      "question": "Quel est le contraire de proche ?",
+      "reponse": "Loin",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on au Québec la neige mouillée et boueuse du printemps ?",
-      "reponse": "La slush",
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le lionceau du Roi Lion ?",
+      "reponse": "Simba",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie colorée a deux coques et une ganache ?",
-      "reponse": "Le macaron",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pays est le berceau du hockey sur glace ?",
-      "reponse": "Le Canada",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel cheval mythologique a des ailes ?",
-      "reponse": "Pégase",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse polynésienne navigue avec Maui ?",
+      "reponse": "Moana",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument d'église a des tuyaux ?",
-      "reponse": "L'orgue",
+      "question": "Quel style musical parle-chante sur des rythmes ?",
+      "reponse": "Le rap",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le bonhomme de neige de La Reine des neiges ?",
-      "reponse": "Olaf",
+      "categorie": "Mots et langue",
+      "question": "Quel est le pluriel de « un animal » ?",
+      "reponse": "Des animaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quels petits papiers colorés se lancent en l'air pour fêter ?",
+      "reponse": "Des confettis",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel pont relie Montréal à Longueuil ?",
-      "reponse": "Jacques-Cartier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle course olympique est la plus courte ?",
-      "reponse": "Le 100 mètres",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la chouette de Harry Potter ?",
-      "reponse": "Hedwige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quoi sont faits les nuages ?",
-      "reponse": "Gouttelettes d'eau",
+      "question": "Quelle partie de l'église pointe vers le ciel et se voit de loin dans un village ?",
+      "reponse": "Le clocher",
       "niveau": 1
     },
     {
@@ -157,31 +164,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la vidéo qui montre étape par étape comment faire quelque chose ?",
-      "reponse": "Un tutoriel",
+      "categorie": "Bouffe et cuisine",
+      "question": "De quoi est fait le fromage ?",
+      "reponse": "Du lait",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin géant souffle un jet d'eau par le dos ?",
-      "reponse": "La baleine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation organise un grand concours de chant entre animaux ?",
-      "reponse": "Tous en scène",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel bassin de plastique se gonfle dans la cour l'été ?",
-      "reponse": "Une piscine gonflable",
+      "categorie": "Sports",
+      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
+      "reponse": "Le slalom",
       "niveau": 1
     }
   ]

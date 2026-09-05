@@ -7,24 +7,29 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel ensemble de cloches sonne dans le clocher d'une église ?",
-      "reponse": "Le carillon",
-      "niveau": 3
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la balle de golf entrée dans la coupe dès le départ ?",
+      "reponse": "Un trou d'un coup",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de cour d'école fait sauter en tapant dans les mains d'un partenaire ?",
-      "reponse": "La tape-tape",
+      "question": "Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?",
+      "reponse": "La lessiveuse à tordeur",
       "niveau": 3,
       "ages": [
-        "enfants"
+        "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelle bibliothèque nationale ouverte en 2005 se dresse près de Berri-UQAM ?",
-      "reponse": "La Grande Bibliothèque",
+      "question": "Quel parc national québécois porte le nom d'un explorateur, au nord de Québec ?",
+      "reponse": "Le parc de la Jacques-Cartier",
       "niveau": 3,
       "ages": [
         "ados",
@@ -32,11 +37,12 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Qui livrait les bouteilles de lait à la porte des maisons ?",
-      "reponse": "Le laitier",
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?",
+      "reponse": "La capitale du royaume",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
@@ -51,19 +57,9 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?",
-      "reponse": "La capitale du royaume",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le réseau de tuyaux qui recueille l'eau d'érable ?",
-      "reponse": "La tubulure",
+      "categorie": "Musique",
+      "question": "Quel instrument de cuivre sonne le réveil dans les camps militaires ?",
+      "reponse": "Le clairon",
       "niveau": 3,
       "ages": [
         "ados",
@@ -72,45 +68,9 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel papillon est l'insecte emblème du Québec ?",
-      "reponse": "L'amiral",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Avec quel lait fait-on la feta traditionnelle ?",
-      "reponse": "Lait de brebis",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel rouleau de riz translucide se trempe dans une sauce aux arachides ?",
-      "reponse": "Le rouleau de printemps",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel lac est le plus profond du monde ?",
-      "reponse": "Le Baïkal",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur écossais a chanté Someone You Loved ?",
-      "reponse": "Lewis Capaldi",
+      "question": "Quel jeu fait deviner des mots à son équipe en trois manches, de plus en plus serrées ?",
+      "reponse": "Le Time's Up",
       "niveau": 3,
       "ages": [
         "ados",
@@ -128,24 +88,76 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport fait glisser un lugeur tête première sur la glace ?",
-      "reponse": "Le skeleton",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on les chaussons rigides qui permettent de danser sur le bout des orteils ?",
+      "reponse": "Des pointes",
+      "niveau": 3
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert meringué porte le nom d'une ballerine ?",
+      "reponse": "La pavlova",
       "niveau": 3,
       "ages": [
-        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?",
+      "reponse": "Le sextant",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument électronique se joue en frappant des pastilles sensibles ?",
-      "reponse": "Le pad",
+      "question": "Quelle chanteuse acadienne a gagné le Félix de la chanson de l'année avec Évangéline ?",
+      "reponse": "Annie Blanchard",
       "niveau": 3,
       "ages": [
-        "ados"
+        "adultes",
+        "aines"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel défi a fait verser des seaux d'eau glacée sur des têtes en 2014 ?",
+      "reponse": "Le Ice Bucket Challenge",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe américain a chanté Mr. Brightside ?",
+      "reponse": "The Killers",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel lac est le plus profond du monde ?",
+      "reponse": "Le Baïkal",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
+      "reponse": "L'épinette",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
@@ -159,61 +171,21 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
-      "reponse": "Michel Louvain",
+      "categorie": "Québec",
+      "question": "Quels canots géants transportaient les fourrures ?",
+      "reponse": "Canots de maître",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel panier passait dans les rangs pendant la messe du dimanche ?",
-      "reponse": "La quête",
+      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
+      "reponse": "Le Forum",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe canadien a chanté American Woman ?",
-      "reponse": "The Guess Who",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on les chansons anciennes transmises de génération en génération ?",
-      "reponse": "Le folklore",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu fait deviner des mots à son équipe en trois manches, de plus en plus serrées ?",
-      "reponse": "Le Time's Up",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
-      "reponse": "L'épinette",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le morceau joué par un orchestre avant le lever du rideau ?",
-      "reponse": "L'ouverture",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -229,9 +201,47 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?",
-      "reponse": "Le sextant",
+      "categorie": "Québec",
+      "question": "Quel poète québécois a écrit L'homme rapaillé ?",
+      "reponse": "Gaston Miron",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Daft Punk répète qu'on est plus fort, meilleur et plus rapide ?",
+      "reponse": "Harder, Better, Faster, Stronger",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse québécoise a raflé les Junos avec l'album Phoenix ?",
+      "reponse": "Charlotte Cardin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?",
+      "reponse": "Le yéyé",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu électronique rond répète une suite de couleurs et de sons à imiter ?",
+      "reponse": "Le Simon",
       "niveau": 3,
       "ages": [
         "adultes",

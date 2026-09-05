@@ -8,24 +8,37 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Combien de billes rouges au snooker ?",
-      "reponse": "Quinze",
-      "niveau": 3,
+      "question": "Quel sport pratiquait Serena Williams ?",
+      "reponse": "Le tennis",
+      "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel jeu provençal lance des boules vers un cochonnet ?",
-      "reponse": "La pétanque",
+      "question": "Quel jeu de table imite le soccer avec des joueurs fixés sur des tiges ?",
+      "reponse": "Le babyfoot",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Où ont eu lieu les premiers Jeux olympiques modernes ?",
-      "reponse": "Athènes",
+      "question": "Quelles larges semelles permettent de marcher sur la neige sans caler ?",
+      "reponse": "Des raquettes",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Sur quel engin descend-on une côte enneigée en position assise ?",
+      "reponse": "Un traîneau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de minutes dure un quart au football américain ?",
+      "reponse": "Quinze",
       "niveau": 2,
       "ages": [
         "ados",
@@ -35,20 +48,47 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel Argentin a soulevé la Coupe du monde 2022 ?",
-      "reponse": "Lionel Messi",
+      "question": "Quel sport fait courir des chevaux montés par des jockeys ?",
+      "reponse": "Les courses de chevaux",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle carte l'arbitre de soccer montre-t-il pour expulser un joueur ?",
+      "reponse": "Un carton rouge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport marque-t-on des essais ?",
+      "reponse": "Le rugby",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
+      "reponse": "Georges St-Pierre",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Que pleut-il sur la patinoire quand un joueur compte trois buts dans le même match ?",
-      "reponse": "Des chapeaux",
-      "niveau": 1
+      "question": "Combien de joueurs par équipe au volleyball ?",
+      "reponse": "Six",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -63,6 +103,55 @@
     },
     {
       "categorie": "Sports",
+      "question": "Que chausse-t-on aux pieds pour aller sur la glace ?",
+      "reponse": "Des patins",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle course américaine tourne en ovale 500 milles ?",
+      "reponse": "Indianapolis 500",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelles grosses protections le gardien porte-t-il sur les jambes ?",
+      "reponse": "Des jambières",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel boxeur s'appelait Cassius Clay ?",
+      "reponse": "Muhammad Ali",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Qui a inventé le basketball ?",
+      "reponse": "James Naismith",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle discipline olympique note des figures sur glace ?",
+      "reponse": "Patinage artistique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
       "question": "Quel est le score parfait d'une partie de bowling ?",
       "reponse": "300",
       "niveau": 1,
@@ -74,8 +163,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel pays a gagné le plus de médailles olympiques au total ?",
-      "reponse": "Les États-Unis",
+      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
+      "reponse": "Le CF Montréal",
       "niveau": 1,
       "ages": [
         "ados",
@@ -85,75 +174,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel Argentin a marqué le but de la main de Dieu ?",
-      "reponse": "Maradona",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle carte l'arbitre de soccer montre-t-il pour avertir un joueur ?",
-      "reponse": "Un carton jaune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel disque de plastique lance-t-on à un ami ou à un chien au parc ?",
-      "reponse": "Le frisbee",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport olympique mélange danse et piscine ?",
-      "reponse": "Natation artistique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel objet se passent les coureurs de relais ?",
-      "reponse": "Le témoin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de plage frappe un ballon par-dessus un filet, pieds dans le sable ?",
-      "reponse": "Le volleyball de plage",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport monte des parois avec des prises de couleur et un baudrier ?",
-      "reponse": "L'escalade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme lance une boule de métal le plus loin possible ?",
-      "reponse": "Le lancer du poids",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pilote allemand a aussi gagné 7 titres de F1 ?",
-      "reponse": "Michael Schumacher",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle activité consiste à marcher longtemps sur des sentiers en forêt ou en montagne ?",
-      "reponse": "La randonnée",
+      "question": "Quelles petites roues aident un enfant à apprendre le vélo ?",
+      "reponse": "Des roues d'entraînement",
       "niveau": 1
     },
     {
@@ -164,42 +186,31 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la faute qui envoie un joueur de hockey au banc deux minutes ?",
-      "reponse": "Une punition",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de raquette au nom de cornichon est en plein essor ?",
-      "reponse": "Le pickleball",
-      "niveau": 2,
+      "question": "Quel joueur de la NBA est surnommé King James ?",
+      "reponse": "LeBron James",
+      "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel tournoi de tennis se joue sur terre battue à Paris ?",
-      "reponse": "Roland-Garros",
+      "question": "Quelle épreuve d'athlétisme projette une longue tige pointue le plus loin possible ?",
+      "reponse": "Le lancer du javelot",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle longueur fait une piscine olympique ?",
+      "reponse": "50 mètres",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Sur quelle estrade à trois marches montent les médaillés ?",
-      "reponse": "Le podium",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au baseball ?",
-      "reponse": "Neuf",
-      "niveau": 1
     }
   ]
 }

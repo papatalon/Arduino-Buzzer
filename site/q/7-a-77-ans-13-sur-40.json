@@ -7,36 +7,9 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quel joueur des Canadiens fut surnommé le Démon blond ?",
-      "reponse": "Guy Lafleur",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel manège fait tourner des chevaux de bois en musique ?",
-      "reponse": "Un carrousel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel mot français est le plus long d'usage courant ?",
-      "reponse": "Anticonstitutionnellement",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un tigre qui bondit sur sa queue ?",
-      "reponse": "Tigrou",
+      "question": "Quelle attraction de parc aquatique fait descendre un long tube en spirale ?",
+      "reponse": "La glissade d'eau",
       "niveau": 1
     },
     {
@@ -46,32 +19,51 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel grand oiseau rose se tient souvent sur une seule patte ?",
-      "reponse": "Le flamant rose",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien vaut un converti de deux points ?",
-      "reponse": "Deux",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Géographie",
       "question": "Quelle montagne se dresse au milieu de Montréal ?",
       "reponse": "Le mont Royal",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quel pays vient la tequila ?",
-      "reponse": "Le Mexique",
+      "categorie": "Culture générale",
+      "question": "Quelle forme n'a ni coin ni côté ?",
+      "reponse": "Le cercle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de commencer ?",
+      "reponse": "Finir",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de roues a un tricycle ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle couleur de carton avertit un joueur au soccer ?",
+      "reponse": "Jaune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quels peuples vivaient déjà en Amérique quand les Européens sont arrivés ?",
+      "reponse": "Les Autochtones",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de sandwichs fait choisir son pain et ses garnitures au comptoir ?",
+      "reponse": "Subway",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Dans quel stade le CF Montréal joue-t-il ses matchs ?",
+      "reponse": "Le Stade Saputo",
       "niveau": 1,
       "ages": [
         "ados",
@@ -80,21 +72,21 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la version d'une chanson enregistrée par quelqu'un d'autre que l'original ?",
-      "reponse": "Une reprise",
+      "categorie": "Sciences et nature",
+      "question": "Quel grand oiseau rose se tient souvent sur une seule patte ?",
+      "reponse": "Le flamant rose",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment nomme-t-on un œuf cuit 3 minutes en coquille ?",
+      "reponse": "À la coque",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel acteur autrichien joue Terminator ?",
-      "reponse": "Schwarzenegger",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de roues a un tricycle ?",
-      "reponse": "Trois",
+      "question": "Quel roi des mers parle aux poissons ?",
+      "reponse": "Aquaman",
       "niveau": 1
     },
     {
@@ -105,68 +97,11 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie a une croûte et une garniture aux pommes ou aux fraises ?",
-      "reponse": "La tarte",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels peuples vivaient déjà en Amérique quand les Européens sont arrivés ?",
-      "reponse": "Les Autochtones",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Synonyme de content, commençant par H ?",
-      "reponse": "Heureux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle discipline équestre fait franchir au cheval des barres à ne pas faire tomber ?",
-      "reponse": "Le saut d'obstacles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle forme n'a ni coin ni côté ?",
-      "reponse": "Le cercle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la fête où les enfants dorment chez un ami ?",
-      "reponse": "Une soirée pyjama",
+      "question": "Pays d'origine de la paella ?",
+      "reponse": "L'Espagne",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment s'appelle le plus gros tambour d'une fanfare ?",
-      "reponse": "La grosse caisse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel cowboy de BD tire plus vite que son ombre ?",
-      "reponse": "Lucky Luke",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle émission culte met en scène Popa et Moman ?",
-      "reponse": "La Petite Vie",
-      "niveau": 1,
-      "ages": [
         "adultes",
         "aines"
       ]
@@ -178,15 +113,69 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Que souffle-t-on sur le gâteau de fête après avoir fait un vœu ?",
-      "reponse": "Les bougies",
+      "categorie": "Cinéma et télé",
+      "question": "Quels sont les deux héros de Toy Story ?",
+      "reponse": "Woody et Buzz",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie prendre ses jambes à son cou ?",
-      "reponse": "S'enfuir vite",
+      "question": "Petit de la chèvre ?",
+      "reponse": "Le chevreau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
+      "reponse": "Georges St-Pierre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Synonyme de bicyclette ?",
+      "reponse": "Vélo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Qui appelle-t-on au 911 quand quelqu'un est blessé ?",
+      "reponse": "L'ambulance",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à soufflet et à touches anime les fêtes de famille ?",
+      "reponse": "L'accordéon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle vinaigrette porte le nom d'un archipel ?",
+      "reponse": "Mille-Îles",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel gros chien rouge de livres pour enfants est devenu un film ?",
+      "reponse": "Clifford",
+      "niveau": 1,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Dans « Savez-vous planter les choux », avec quoi les plante-t-on en premier ?",
+      "reponse": "Le doigt",
       "niveau": 1
     }
   ]

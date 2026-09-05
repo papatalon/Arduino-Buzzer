@@ -8,8 +8,17 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Où logeait le curé de la paroisse ?",
-      "reponse": "Au presbytère",
+      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
+      "reponse": "La Bolduc",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle prière se récitait en famille à la radio, chaque soir, dans les années 50 ?",
+      "reponse": "Le chapelet",
       "niveau": 3,
       "ages": [
         "aines"
@@ -26,15 +35,125 @@
       ]
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
+      "reponse": "MusiquePlus",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de symphonies Beethoven a-t-il composées ?",
+      "reponse": "Neuf",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à soufflet accompagne le tango ?",
+      "reponse": "Le bandonéon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle quincaillerie québécoise portait un prénom dans son enseigne ?",
+      "reponse": "Pascal",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle armée de statues garde le tombeau du premier empereur chinois ?",
+      "reponse": "L'armée de terre cuite",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel genre musical africain aux rythmes chaloupés s'est imposé mondialement ?",
+      "reponse": "L'afrobeat",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
       "categorie": "Histoire",
       "question": "Comment appelle-t-on l'Égyptien qui savait écrire, un métier rare et respecté ?",
       "reponse": "Un scribe",
       "niveau": 3
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quel pichet souriant défonce les murs en criant « Oh yeah » ?",
+      "reponse": "Le pichet Kool-Aid",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Musique",
-      "question": "Quelle chanson des Cowboys Fringants raconte un homme qui revient en 2050 ?",
-      "reponse": "Plus rien",
+      "question": "Quel instrument à dents pincées accompagne le folklore ?",
+      "reponse": "La guimbarde",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
+      "reponse": "La Norvège",
+      "niveau": 3
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
+      "reponse": "La granita",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gros oiseau noir et blanc plonge dans les lacs du Québec en poussant un cri plaintif ?",
+      "reponse": "Le huard",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a inventé le World Wide Web ?",
+      "reponse": "Tim Berners-Lee",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
+      "reponse": "Le kitesurf",
       "niveau": 3,
       "ages": [
         "ados",
@@ -43,8 +162,39 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
-      "reponse": "La fin de semaine des Patriotes",
+      "question": "Quelle émission québécoise fait juger des numéros de danse par des maîtres ?",
+      "reponse": "Révolution",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel tambour à main vient d'Irlande ?",
+      "reponse": "Le bodhrán",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la grosse chute qui blanchit tout en une nuit ?",
+      "reponse": "Une bordée de neige",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
+      "reponse": "La dionée",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -62,129 +212,15 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Combien de régions administratives compte le Québec ?",
-      "reponse": "17",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
-      "reponse": "Grand Theft Auto",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Géographie",
       "question": "Comment appelle-t-on une langue de terre qui s'avance dans la mer ?",
       "reponse": "Une péninsule",
       "niveau": 3
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on les cinq lignes sur lesquelles on écrit les notes ?",
-      "reponse": "La portée",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil photo de carton s'achetait plein et se rapportait complet à développer ?",
-      "reponse": "L'appareil jetable",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle équipe de hockey junior joue au Centre Vidéotron de Québec ?",
-      "reponse": "Les Remparts",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
-      "reponse": "Rue des Pignons",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle armée de statues garde le tombeau du premier empereur chinois ?",
-      "reponse": "L'armée de terre cuite",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la répétition d'un son au début des mots ?",
-      "reponse": "Une allitération",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel trompettiste avait les joues gonflées célèbres ?",
-      "reponse": "Dizzy Gillespie",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle case horaire de Radio-Canada présentait des grands spectacles le dimanche ?",
-      "reponse": "Les Beaux Dimanches",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel empire d'Amérique a été conquis par Cortés ?",
-      "reponse": "Les Aztèques",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel opéra de Bizet se déroule en Espagne ?",
-      "reponse": "Carmen",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel tambour à main vient d'Irlande ?",
-      "reponse": "Le bodhrán",
+      "question": "Comment nomme-t-on la peur des hauteurs ?",
+      "reponse": "L'acrophobie",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -195,42 +231,6 @@
       "categorie": "Histoire",
       "question": "Sur quel support les Mésopotamiens gravaient-ils leur écriture avec un roseau ?",
       "reponse": "Les tablettes d'argile",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson indienne mélange yogourt et mangue ?",
-      "reponse": "Le lassi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Qui a inventé le World Wide Web ?",
-      "reponse": "Tim Berners-Lee",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
-      "reponse": "La Norvège",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
-      "reponse": "Le kitesurf",
       "niveau": 3,
       "ages": [
         "ados",

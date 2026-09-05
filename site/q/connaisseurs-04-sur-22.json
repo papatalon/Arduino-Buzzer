@@ -8,8 +8,88 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on le groupe de chanteurs qui répond au soliste dans une chanson ?",
-      "reponse": "Le chœur",
+      "question": "Quel instrument à vent en bois donne les sons les plus graves de l'orchestre ?",
+      "reponse": "Le basson",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil de chauffage exigeait qu'on remplisse la boîte à bois ?",
+      "reponse": "Le poêle à bois",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple autochtone habitait Stadaconé et Hochelaga à l'arrivée des Français ?",
+      "reponse": "Les Iroquoiens",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel amiral anglais a gagné Trafalgar ?",
+      "reponse": "Nelson",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle pédale déforme le son de la guitare pour le rendre saturé ?",
+      "reponse": "La distorsion",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle taxe québécoise s'ajoute à la taxe fédérale sur les achats ?",
+      "reponse": "La TVQ",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays d'Asie compte plus de 17000 îles ?",
+      "reponse": "L'Indonésie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
+      "reponse": "Le tramway",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le morceau joué par un orchestre avant le lever du rideau ?",
+      "reponse": "L'ouverture",
       "niveau": 3,
       "ages": [
         "ados",
@@ -28,9 +108,115 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Quelle baie nordique québécoise parfume gins et confitures ?",
+      "reponse": "La chicoutai",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Suisse ?",
+      "reponse": "Berne",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle ardoise à deux boutons dessine des traits et s'efface en la secouant ?",
+      "reponse": "Le Télécran",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le musicien qui mène une section d'instruments dans un orchestre ?",
+      "reponse": "Le chef de pupitre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Histoire",
       "question": "Quel peuple antique a inventé l'écriture cunéiforme ?",
       "reponse": "Les Sumériens",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport court dans les bois avec une carte et une boussole ?",
+      "reponse": "La course d'orientation",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
+      "reponse": "Le Wordle",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse colombienne a chanté Provenza ?",
+      "reponse": "Karol G",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle ville se proclame capitale mondiale de l'érable ?",
+      "reponse": "Plessisville",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
+      "reponse": "Olivier Guimond",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel nom porte le jalapeño fumé ?",
+      "reponse": "Chipotle",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Sur quelle bande magnétique écoutait-on la musique avant le disque compact ?",
+      "reponse": "Une cassette",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -49,18 +235,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
-      "reponse": "Pierre Falardeau",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Nirvana commence par un riff de guitare devenu emblème du grunge ?",
-      "reponse": "Smells Like Teen Spirit",
+      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
+      "reponse": "Grand Theft Auto",
       "niveau": 3,
       "ages": [
         "ados",
@@ -69,191 +245,12 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
-      "reponse": "Le 7 Jours",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sirop doré anglais vient de la canne ?",
-      "reponse": "Golden syrup",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
-      "reponse": "Dans une galaxie près de chez vous",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série de HBO suit une famille qui se déchire pour un empire médiatique ?",
-      "reponse": "Succession",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument de cuivre sonne le réveil dans les camps militaires ?",
-      "reponse": "Le clairon",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle cartouche de musique se glissait dans le tableau de bord des autos des années 70 ?",
-      "reponse": "Le huit-pistes",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays d'Asie compte plus de 17000 îles ?",
-      "reponse": "L'Indonésie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle est la fleur emblème du Québec ?",
-      "reponse": "Iris versicolore",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui règle le son pendant un spectacle ?",
-      "reponse": "Le sonorisateur",
+      "question": "Quelle activité enferme un groupe devant des énigmes à résoudre avant la fin du temps ?",
+      "reponse": "Un jeu d'évasion",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de billes rouges au snooker ?",
-      "reponse": "Quinze",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel appareil enregistrait la musique sur une bande dans les années 80 ?",
-      "reponse": "Une cassette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel amiral anglais a gagné Trafalgar ?",
-      "reponse": "Nelson",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel grand musée du Vieux-Port de Québec a ouvert ses portes en 1988 ?",
-      "reponse": "Le Musée de la civilisation",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Suisse ?",
-      "reponse": "Berne",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple autochtone habitait Stadaconé et Hochelaga à l'arrivée des Français ?",
-      "reponse": "Les Iroquoiens",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle boisson gazeuse a longtemps servi de surnom moqueur aux Québécois ?",
-      "reponse": "Le Pepsi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de symphonies Beethoven a-t-il composées ?",
-      "reponse": "Neuf",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Où regardait-on un film assis dans son auto, l'été ?",
-      "reponse": "Au ciné-parc",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle plante grimpante rougit les murs des maisons à l'automne ?",
-      "reponse": "La vigne vierge",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
       ]
     }
   ]

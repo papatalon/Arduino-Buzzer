@@ -8,25 +8,37 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Quelle fête du 14 février fait échanger des cartes en forme de cœur ?",
-      "reponse": "La Saint-Valentin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel dramaturge québécois a écrit Les Belles-Sœurs ?",
-      "reponse": "Michel Tremblay",
-      "niveau": 2,
+      "question": "Quelle bibliothèque nationale ouverte en 2005 se dresse près de Berri-UQAM ?",
+      "reponse": "La Grande Bibliothèque",
+      "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel mont de l'Estrie abrite un observatoire célèbre ?",
-      "reponse": "Le mont Mégantic",
-      "niveau": 2,
+      "question": "Quel cirque québécois est connu mondialement ?",
+      "reponse": "Cirque du Soleil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment nomme-t-on la période des sucres ?",
+      "reponse": "Le temps des sucres",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel rocher troué est l'emblème de la Gaspésie ?",
+      "reponse": "Le rocher Percé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel fjord spectaculaire abrite des bélugas ?",
+      "reponse": "Fjord du Saguenay",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -35,14 +47,29 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on le congé imprévu que la neige offre aux élèves ?",
-      "reponse": "Une journée de tempête",
-      "niveau": 1
+      "question": "Quel homme fort québécois du 19e siècle est réputé le plus fort de l'histoire ?",
+      "reponse": "Louis Cyr",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelle baie nordique québécoise parfume gins et confitures ?",
-      "reponse": "La chicoutai",
+      "question": "Quel marché public borde le canal de Lachine ?",
+      "reponse": "Atwater",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel congé de mai précède la saison du jardinage au Québec ?",
+      "reponse": "La journée nationale des patriotes",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -51,30 +78,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel frère québécois guérisseur est devenu saint ?",
-      "reponse": "Frère André",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel nouveau pont montréalais a ouvert en 2019 ?",
-      "reponse": "Samuel-De Champlain",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel personnage de BD de Rabagliati raconte le Québec ?",
-      "reponse": "Paul",
+      "question": "À quel âge peut-on obtenir un permis d'apprenti conducteur au Québec ?",
+      "reponse": "16 ans",
       "niveau": 2,
       "ages": [
         "ados",
@@ -83,20 +88,19 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la personne qui surveille la cour d'école à la récréation ?",
-      "reponse": "Un surveillant",
-      "niveau": 2
+      "question": "Quelle expression québécoise signifie c'est correct ?",
+      "reponse": "C'est beau",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelle machine bruyante lance la neige de côté dans l'entrée ?",
-      "reponse": "Une souffleuse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel joueur des Canadiens fut surnommé le Démon blond ?",
-      "reponse": "Guy Lafleur",
+      "question": "Quel mois de 1970 a connu l'enlèvement de Pierre Laporte ?",
+      "reponse": "Octobre",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -105,38 +109,95 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne une petite amie ?",
-      "reponse": "Une blonde",
+      "question": "Que met-on sur sa tête pour aller jouer dehors l'hiver au Québec ?",
+      "reponse": "Une tuque",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle plante à trois feuilles brillantes donne des démangeaisons en forêt ?",
-      "reponse": "L'herbe à puce",
+      "question": "Quel parc national québécois porte le nom d'un explorateur, au nord de Québec ?",
+      "reponse": "Le parc de la Jacques-Cartier",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gala québécois récompense la télévision ?",
+      "reponse": "Les Gémeaux",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle ville est la capitale de l'Outaouais ?",
+      "reponse": "Gatineau",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelles chutes près de Québec sont plus hautes que Niagara ?",
+      "reponse": "Montmorency",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel grand marché public borde la Petite Italie ?",
+      "reponse": "Jean-Talon",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel roman de Gabrielle Roy se passe à Saint-Henri ?",
+      "reponse": "Bonheur d'occasion",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle soirée habillée clôt les cinq années du secondaire en juin ?",
+      "reponse": "Le bal des finissants",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel joueur québécois des Penguins était surnommé le Magnifique ?",
+      "reponse": "Mario Lemieux",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle sortie familiale attire les Québécois dans les vergers en septembre ?",
+      "reponse": "L'autocueillette",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on au Québec le petit magasin du coin ouvert tard ?",
-      "reponse": "Le dépanneur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Où emprunte-t-on gratuitement des livres dans son quartier ?",
-      "reponse": "À la bibliothèque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel gros camion dégage la neige des rues après une tempête ?",
-      "reponse": "Une charrue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel capitaine des Canadiens a soulevé la coupe en 1993 ?",
-      "reponse": "Guy Carbonneau",
+      "question": "Quel groupe québécois a chanté Dehors novembre ?",
+      "reponse": "Les Colocs",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -156,26 +217,9 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on le grand édifice qui réunit des dizaines de boutiques sous un même toit ?",
-      "reponse": "Un centre commercial",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle rue étroite du Vieux-Québec est très photographiée ?",
-      "reponse": "Petit-Champlain",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "En quelle année eut lieu le second référendum ?",
-      "reponse": "1995",
-      "niveau": 1,
+      "question": "Quel premier ministre a fondé le Parti québécois ?",
+      "reponse": "René Lévesque",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -183,35 +227,9 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel jour d'octobre les enfants passent-ils de porte en porte ?",
-      "reponse": "L'Halloween",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel numéro compose-t-on au Québec pour joindre un service non urgent de la ville ?",
-      "reponse": "Le 311",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la grosse chute qui blanchit tout en une nuit ?",
-      "reponse": "Une bordée de neige",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel appareil lave les vêtements dans le sous-sol ?",
-      "reponse": "La laveuse",
-      "niveau": 1
+      "question": "Quel gros camion épand du sel sur les routes glacées ?",
+      "reponse": "Une saleuse",
+      "niveau": 2
     }
   ]
 }

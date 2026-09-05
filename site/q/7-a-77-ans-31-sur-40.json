@@ -7,6 +7,17 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Mots et langue",
+      "question": "Que signifie jeter l'éponge ?",
+      "reponse": "Abandonner",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture générale",
       "question": "Monnaie utilisée au Royaume-Uni ?",
       "reponse": "Livre sterling",
@@ -18,20 +29,27 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du pad thaï ?",
-      "reponse": "La Thaïlande",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Culture générale",
+      "question": "Combien de côtés a un triangle ?",
+      "reponse": "Trois",
+      "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le relevé de notes remis trois fois par année aux parents ?",
-      "reponse": "Le bulletin",
+      "categorie": "Musique",
+      "question": "À quelle famille d'instruments appartient le violon ?",
+      "reponse": "Les cordes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la couche sucrée et colorée qui recouvre un gâteau ?",
+      "reponse": "Le glaçage",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Le pluriel de genou prend un S ou un X ?",
+      "reponse": "Un X",
       "niveau": 1
     },
     {
@@ -41,9 +59,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie se serrer la ceinture ?",
-      "reponse": "Se priver",
+      "categorie": "Québec",
+      "question": "Quel gala québécois récompense la télévision ?",
+      "reponse": "Les Gémeaux",
       "niveau": 1,
       "ages": [
         "ados",
@@ -52,47 +70,15 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la série de spectacles qu'un artiste donne de ville en ville ?",
-      "reponse": "Une tournée",
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal rayé remplit ses joues de noix ?",
+      "reponse": "Le tamia (suisse)",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel pays a gagné le plus de médailles olympiques au total ?",
-      "reponse": "Les États-Unis",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat français mijote du bœuf au vin rouge ?",
-      "reponse": "Bœuf bourguignon",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Dans La Reine des neiges, de quoi rêve Olaf qu'il n'a jamais connu ?",
-      "reponse": "L'été",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois chialer ?",
-      "reponse": "Se plaindre",
+      "question": "Quel cahier propose des dessins à remplir sans dépasser ?",
+      "reponse": "Un livre à colorier",
       "niveau": 1
     },
     {
@@ -103,37 +89,20 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit violet à noyau, une fois séché, aide à la digestion ?",
-      "reponse": "La prune",
+      "question": "Quel sucre brun humide parfume les biscuits ?",
+      "reponse": "La cassonade",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel instrument à archet se joue assis, entre les genoux ?",
-      "reponse": "Le violoncelle",
+      "categorie": "Cinéma et télé",
+      "question": "Quel arbre des Gardiens ne dit que trois mots ?",
+      "reponse": "Groot",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Dans Pokémon, dans quel objet enferme-t-on les créatures capturées ?",
-      "reponse": "Une Poké Ball",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie « être têtu comme une mule » ?",
-      "reponse": "Être très têtu",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien d'états composent les États-Unis ?",
-      "reponse": "50",
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz de l'air respirons-nous pour vivre ?",
+      "reponse": "L'oxygène",
       "niveau": 1
     },
     {
@@ -143,15 +112,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros a été piqué par une araignée ?",
-      "reponse": "Spider-Man",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel organisme veille sur la langue française au Québec ?",
-      "reponse": "L'OQLF",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâtisserie allongée est glacée au chocolat ?",
+      "reponse": "L'éclair",
       "niveau": 1,
       "ages": [
         "ados",
@@ -160,21 +123,36 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Quelle série de romans suit Émilie Bordeleau ?",
+      "reponse": "Les Filles de Caleb",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel dictionnaire français porte le nom de son fondateur, Paul ?",
+      "reponse": "Le Robert",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel château de plastique se gonfle pour que les enfants sautent dedans ?",
+      "reponse": "Un jeu gonflable",
+      "niveau": 1
+    },
+    {
       "categorie": "Sports",
-      "question": "Quel anneau de plastique se fait tourner autour de la taille en dansant ?",
-      "reponse": "Un cerceau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de côtés a un triangle ?",
-      "reponse": "Trois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel gaz de l'air respirons-nous pour vivre ?",
-      "reponse": "L'oxygène",
+      "question": "Quel officiel siffle les punitions ?",
+      "reponse": "L'arbitre",
       "niveau": 1
     },
     {
@@ -185,8 +163,8 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation raconte un garçon qui rejoint le pays des morts avec sa guitare ?",
-      "reponse": "Coco",
+      "question": "Quel Pokémon jaune lance des éclairs ?",
+      "reponse": "Pikachu",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -195,9 +173,25 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on l'école qu'un enfant fréquente de la 1re à la 6e année ?",
-      "reponse": "Le primaire",
+      "categorie": "Musique",
+      "question": "Quel chanteur est surnommé le King ?",
+      "reponse": "Elvis Presley",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien d'états composent les États-Unis ?",
+      "reponse": "50",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Sur quelle estrade à trois marches montent les médaillés ?",
+      "reponse": "Le podium",
       "niveau": 1
     }
   ]

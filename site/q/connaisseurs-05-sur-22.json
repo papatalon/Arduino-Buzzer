@@ -7,52 +7,9 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boulette de poulpe japonaise est une collation ?",
-      "reponse": "Le takoyaki",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Quel chant de Noël fait résonner un long « Gloria » repris par tout le monde ?",
-      "reponse": "Les anges dans nos campagnes",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur a popularisé le twist ?",
-      "reponse": "Chubby Checker",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission jeunesse de Radio-Canada, animée par Monsieur Surprise, a lancé Fanfreluche et Sol ?",
-      "reponse": "La Boîte à surprise",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse folk canadienne a écrit Big Yellow Taxi ?",
-      "reponse": "Joni Mitchell",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la carte qui montre le relief avec des couleurs et des courbes ?",
-      "reponse": "Une carte topographique",
+      "question": "Comment appelle-t-on une œuvre écrite pour un soliste accompagné d'un orchestre ?",
+      "reponse": "Un concerto",
       "niveau": 3,
       "ages": [
         "ados",
@@ -62,57 +19,36 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de médailles d'or olympiques a Michael Phelps ?",
-      "reponse": "23",
+      "question": "Quelle course de traîneaux à chiens traverse l'Alaska ?",
+      "reponse": "L'Iditarod",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
+      "reponse": "Mariana Mazza",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
-      "reponse": "Les oreilles de lapin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit oiseau à calotte noire fréquente les mangeoires du Québec tout l'hiver ?",
-      "reponse": "La mésange",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
-      "reponse": "Cracké",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle carte de plastique rigide permettait de louer des films au club vidéo ?",
-      "reponse": "La carte de membre",
-      "niveau": 3,
-      "ages": [
         "adultes"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays d'Europe a la forme d'une main et borde la mer Baltique ?",
-      "reponse": "La Pologne",
+      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
+      "reponse": "L'hémisphère nord",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles cigarettes de bonbon blanches portaient le nom d'un marin costaud ?",
+      "reponse": "Les Popeye",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -128,9 +64,30 @@
       ]
     },
     {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'écran qui affiche les paroles pendant un karaoké ?",
+      "reponse": "Le téléprompteur",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
       "categorie": "Histoire",
-      "question": "Qui fut la première femme dans l'espace ?",
-      "reponse": "Valentina Terechkova",
+      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
+      "reponse": "Un missionnaire",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel piano à pouces africain vibre sous les doigts ?",
+      "reponse": "La kalimba",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -138,9 +95,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Dans un orchestre, quel instrument donne le la aux autres avant le concert ?",
-      "reponse": "Le hautbois",
+      "categorie": "Culture pop",
+      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
+      "reponse": "Coup de Pouce",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -154,9 +111,9 @@
       "niveau": 3
     },
     {
-      "categorie": "Québec",
-      "question": "Quel est l'arbre emblème du Québec ?",
-      "reponse": "Le bouleau jaune",
+      "categorie": "Culture pop",
+      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
+      "reponse": "La guignolée",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -164,15 +121,18 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
-      "reponse": "L'hémisphère nord",
-      "niveau": 3
+      "categorie": "Musique",
+      "question": "Quel groupe a chanté Smoke on the Water ?",
+      "reponse": "Deep Purple",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     },
     {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la couche de glace qui se forme au bord des toits ?",
-      "reponse": "Une barrière de glace",
+      "categorie": "Histoire",
+      "question": "Qui fut la première femme dans l'espace ?",
+      "reponse": "Valentina Terechkova",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -180,21 +140,13 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
-      "reponse": "MusiquePlus",
+      "categorie": "Québec",
+      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
+      "reponse": "L'escalier Casse-Cou",
       "niveau": 3,
       "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit âne de dessin animé français est très curieux ?",
-      "reponse": "Trotro",
-      "niveau": 3,
-      "ages": [
-        "enfants"
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -208,12 +160,11 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
-      "reponse": "Un missionnaire",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sirop doré anglais vient de la canne ?",
+      "reponse": "Golden syrup",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -229,13 +180,70 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'aide financière que l'État avance aux étudiants ?",
+      "reponse": "Les prêts et bourses",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit boîtier rond de poche contient une maison miniature ?",
+      "reponse": "Le Polly Pocket",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays d'Europe a la forme d'une main et borde la mer Baltique ?",
+      "reponse": "La Pologne",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Musique",
-      "question": "Dans Pierre et le loup, quel instrument joue le loup ?",
-      "reponse": "Le cor",
+      "question": "Quelle chanson Blanche-Neige chante-t-elle près du puits en attendant l'amour ?",
+      "reponse": "Un jour mon prince viendra",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la carte qui montre le relief avec des couleurs et des courbes ?",
+      "reponse": "Une carte topographique",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle est la fleur emblème du Québec ?",
+      "reponse": "Iris versicolore",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit âne de dessin animé français est très curieux ?",
+      "reponse": "Trotro",
+      "niveau": 3,
+      "ages": [
+        "enfants"
       ]
     }
   ]

@@ -7,49 +7,37 @@
   "emoji": "⛷️",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quelles larges semelles permettent de marcher sur la neige sans caler ?",
-      "reponse": "Des raquettes",
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la neige soulevée par le vent qui coupe la visibilité ?",
+      "reponse": "La poudrerie",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quel club-école des Canadiens joue à Laval ?",
-      "reponse": "Le Rocket",
-      "niveau": 3,
+      "question": "Quelle station de ski domine le fleuve dans Charlevoix ?",
+      "reponse": "Le Massif",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel trophée remporte le champion de la LNH ?",
-      "reponse": "La coupe Stanley",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel outil sert à enlever la glace sur le pare-brise de l'auto ?",
-      "reponse": "Un gratte-glace",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel dessin fait-on en s'allongeant dans la neige et en bougeant les bras ?",
-      "reponse": "Un ange dans la neige",
-      "niveau": 2
+      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
+      "reponse": "Le ballon-balai",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport glisse sur l'eau tiré par un bateau ?",
-      "reponse": "Le ski nautique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Edmonton ?",
-      "reponse": "Les Oilers",
+      "question": "Quel équipement protège la tête à vélo et au hockey ?",
+      "reponse": "Le casque",
       "niveau": 1
     },
     {
@@ -57,89 +45,6 @@
       "question": "Quel capitaine des Penguins est surnommé Sid the Kid ?",
       "reponse": "Sidney Crosby",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel pouvoir Elsa doit-elle cacher au début de La Reine des neiges ?",
-      "reponse": "La glace",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film d'animation un mammouth, un paresseux et un tigre à dents de sabre voyagent-ils ensemble ?",
-      "reponse": "L'Ère de glace",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel entraîneur légendaire des Canadiens s'appelait Scotty ?",
-      "reponse": "Scotty Bowman",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Sur quelle surface glacée se joue le hockey ?",
-      "reponse": "La patinoire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel point le plus au sud de la Terre est couvert de glace ?",
-      "reponse": "Le pôle Sud",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pays est le berceau du hockey sur glace ?",
-      "reponse": "Le Canada",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glisse se pratique sur une piste avec des bâtons dans les mains ?",
-      "reponse": "Le ski alpin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
-      "reponse": "L'inlandsis",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel secteur riverain de Montréal accueille patinoire, plage et grande roue ?",
-      "reponse": "Le Vieux-Port",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée récompense le joueur le plus utile de la LNH ?",
-      "reponse": "Hart",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Québec",
@@ -152,21 +57,32 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Quelle station de ski des Laurentides attire les skieurs de partout ?",
+      "reponse": "Le mont Tremblant",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Sports",
-      "question": "Combien de périodes dans un match de hockey ?",
-      "reponse": "Trois",
+      "question": "Quel sport glisse sur l'eau tiré par un bateau ?",
+      "reponse": "Le ski nautique",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
-      "reponse": "La tire d'érable",
+      "categorie": "Sports",
+      "question": "Que chausse-t-on aux pieds pour aller sur la glace ?",
+      "reponse": "Des patins",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
-      "reponse": "Lululemon",
+      "categorie": "Québec",
+      "question": "Quel club-école des Canadiens joue à Laval ?",
+      "reponse": "Le Rocket",
       "niveau": 3,
       "ages": [
         "ados",
@@ -174,16 +90,116 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le congé imprévu que la neige offre aux élèves ?",
+      "reponse": "Une journée de tempête",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature poilue laisserait des empreintes géantes dans la neige des montagnes ?",
+      "reponse": "Le yéti",
+      "niveau": 2
+    },
+    {
       "categorie": "Sports",
-      "question": "Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?",
-      "reponse": "Le Canadien",
+      "question": "Quelle ville canadienne a reçu les JO d'hiver de 2010 ?",
+      "reponse": "Vancouver",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle course de traîneaux à chiens traverse l'Alaska ?",
+      "reponse": "L'Iditarod",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport fait glisser un lugeur tête première sur la glace ?",
+      "reponse": "Le skeleton",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels petits grains de glace tombent parfois pendant un orage d'été ?",
+      "reponse": "La grêle",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de motoneige est née au Québec ?",
+      "reponse": "Ski-Doo",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de périodes dans un match de hockey ?",
+      "reponse": "Trois",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la neige soulevée par le vent qui coupe la visibilité ?",
-      "reponse": "La poudrerie",
+      "question": "Quel hébergement québécois est rebâti chaque hiver ?",
+      "reponse": "Hôtel de glace",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle discipline olympique note des figures sur glace ?",
+      "reponse": "Patinage artistique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel capitaine des Canadiens a soulevé la coupe en 1993 ?",
+      "reponse": "Guy Carbonneau",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet de plastique se glisse sous les pieds pour glisser sur la neige ?",
+      "reponse": "La soucoupe",
       "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle ligue de hockey junior regroupe les équipes du Québec et des Maritimes ?",
+      "reponse": "La LHJMQ",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel joueur de hockey est surnommé La Merveille ?",
+      "reponse": "Wayne Gretzky",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

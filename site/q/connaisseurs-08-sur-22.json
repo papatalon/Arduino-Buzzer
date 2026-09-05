@@ -8,8 +8,47 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui écrit les paroles d'une chanson ?",
-      "reponse": "Un parolier",
+      "question": "Quel instrument de rue se joue en tournant une manivelle ?",
+      "reponse": "Un orgue de Barbarie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle est la voix féminine la plus grave ?",
+      "reponse": "L'alto (contralto)",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel camion de course rouge et bleu affronte Crusher dans une série pour enfants ?",
+      "reponse": "Blaze",
+      "niveau": 3,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Avec quel lait fait-on la feta traditionnelle ?",
+      "reponse": "Lait de brebis",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle merveille du monde antique éclairait l'entrée d'un port égyptien ?",
+      "reponse": "Le phare d'Alexandrie",
       "niveau": 3,
       "ages": [
         "ados",
@@ -28,20 +67,118 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel poisson à moustaches se pêche au fond des rivières du Québec ?",
-      "reponse": "La barbotte",
-      "niveau": 3
+      "categorie": "Musique",
+      "question": "Quel chanteur a popularisé le twist ?",
+      "reponse": "Chubby Checker",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit disque contenait une chanson de chaque côté ?",
+      "reponse": "Le 45 tours",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle merveille du monde antique éclairait l'entrée d'un port égyptien ?",
-      "reponse": "Le phare d'Alexandrie",
+      "question": "Quelle station spatiale russe a précédé l'ISS ?",
+      "reponse": "Mir",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quelle science étudie l'origine et l'histoire des mots ?",
+      "reponse": "L'étymologie",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles billes de plastique s'ouvrent en figurine au contact d'une carte ?",
+      "reponse": "Les Bakugan",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport fait glisser un lugeur tête première sur la glace ?",
+      "reponse": "Le skeleton",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays entoure complètement le Lesotho ?",
+      "reponse": "Afrique du Sud",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on l'ensemble des nobles qui entouraient le roi ?",
+      "reponse": "La cour",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel monologuiste québécois a écrit « Les unions, qu'ossa donne ? »",
+      "reponse": "Yvon Deschamps",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel sous-genre du rap se reconnaît à ses charlestons rapides et ses basses lourdes ?",
+      "reponse": "La trap",
+      "niveau": 3,
+      "ages": [
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la peur qui saisit un artiste juste avant d'entrer en scène ?",
+      "reponse": "Le trac",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
+      "reponse": "Watatatow",
+      "niveau": 3,
+      "ages": [
+        "adultes"
       ]
     },
     {
@@ -62,6 +199,23 @@
       "niveau": 3
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quelles bottes anglaises à coutures jaunes sont un classique punk ?",
+      "reponse": "Les Doc Martens",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la petite colline de sable poussée par le vent au bord de la mer ?",
+      "reponse": "Une dune",
+      "niveau": 3
+    },
+    {
       "categorie": "Sciences et nature",
       "question": "Quelle planète est la plus chaude du système solaire ?",
       "reponse": "Vénus",
@@ -73,168 +227,18 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument à dents pincées accompagne le folklore ?",
-      "reponse": "La guimbarde",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Journey encourage à ne jamais cesser d'y croire ?",
-      "reponse": "Don't Stop Believin'",
+      "question": "Comment appelle-t-on la personne qui règle le son pendant un spectacle ?",
+      "reponse": "Le sonorisateur",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel animateur québécois mène une émission de musique en direct avec un band maison ?",
-      "reponse": "Normand Brathwaite",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel oiseau blanc envahit les champs du Québec au printemps et à l'automne ?",
-      "reponse": "L'oie blanche",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu télévisé québécois demande de repérer celui qui ment ?",
-      "reponse": "Le Tricheur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle figure de style exagère volontairement ?",
-      "reponse": "L'hyperbole",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelles percussions cubaines se jouent par paire à main nue ?",
-      "reponse": "Les congas",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel quotidien montréalais a imprimé sa dernière édition en 2017 pour passer à la tablette ?",
-      "reponse": "La Presse",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'ensemble des nobles qui entouraient le roi ?",
-      "reponse": "La cour",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la petite colline de sable poussée par le vent au bord de la mer ?",
-      "reponse": "Une dune",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle station spatiale russe a précédé l'ISS ?",
-      "reponse": "Mir",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de kilomètres fait un triathlon olympique à vélo ?",
-      "reponse": "40",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel monologuiste québécois a écrit « Les unions, qu'ossa donne ? »",
-      "reponse": "Yvon Deschamps",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
-      "reponse": "Big Brother Célébrités",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson brésilienne mélange lime et cachaça ?",
-      "reponse": "La caipirinha",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles poupées à grosse tête et lèvres pulpeuses ont concurrencé Barbie ?",
-      "reponse": "Les Bratz",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à peau, porté en bandoulière, rythme le pas des soldats ?",
-      "reponse": "Un tambour militaire",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel gros instrument à vent se porte enroulé autour du corps dans les fanfares ?",
-      "reponse": "Le soubassophone",
+      "question": "Quel club-école des Canadiens joue à Laval ?",
+      "reponse": "Le Rocket",
       "niveau": 3,
       "ages": [
         "ados",

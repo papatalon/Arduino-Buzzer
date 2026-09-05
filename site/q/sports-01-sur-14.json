@@ -8,15 +8,14 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de la NBA vient de Toronto ?",
-      "reponse": "Les Raptors",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la période supplémentaire quand le match est nul ?",
-      "reponse": "La prolongation",
-      "niveau": 2
+      "question": "Quel joueur de hockey est surnommé La Merveille ?",
+      "reponse": "Wayne Gretzky",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -26,8 +25,68 @@
     },
     {
       "categorie": "Sports",
-      "question": "Dans quel sport parle-t-on de peloton ?",
-      "reponse": "Le cyclisme",
+      "question": "Quel jeu provençal lance des boules vers un cochonnet ?",
+      "reponse": "La pétanque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel coureur éthiopien a gagné le marathon pieds nus ?",
+      "reponse": "Abebe Bikila",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de rondes maximum en boxe professionnelle ?",
+      "reponse": "Douze",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?",
+      "reponse": "Le football",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel boxeur se surnommait The Greatest ?",
+      "reponse": "Muhammad Ali",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le trait blanc où les coureurs s'alignent avant le coup de pistolet ?",
+      "reponse": "La ligne de départ",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle est la distance d'un marathon ?",
+      "reponse": "42,2 km",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de trous compte un parcours de golf complet ?",
+      "reponse": "18",
       "niveau": 1,
       "ages": [
         "ados",
@@ -37,119 +96,35 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel jeu de table fait glisser une rondelle sur un coussin d'air ?",
-      "reponse": "Le hockey sur air",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel officiel siffle les punitions ?",
-      "reponse": "L'arbitre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Sur quel engin descend-on une côte enneigée en position assise ?",
-      "reponse": "Un traîneau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la remise en jeu accordée quand la défense sort le ballon derrière sa ligne ?",
-      "reponse": "Un coup de pied de coin",
+      "question": "Quelle pièce d'équipement le joueur de baseball met-il sur la tête au bâton ?",
+      "reponse": "Un casque protecteur",
       "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport mélange soccer et voiture dans un jeu vidéo ?",
-      "reponse": "Rocket League",
+      "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
+      "reponse": "Gary Carter",
       "niveau": 2,
       "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
-      "reponse": "Le patinage artistique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pilote québécois a donné son nom au circuit de Montréal ?",
-      "reponse": "Gilles Villeneuve",
-      "niveau": 1,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelles chaussures à roulettes se lacent aux pieds pour rouler sur l'asphalte ?",
-      "reponse": "Des patins à roues alignées",
+      "question": "Comment appelle-t-on la pratique où l'entraîneur choisit son équipe ?",
+      "reponse": "Un camp d'entraînement",
       "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le personnage costumé qui amuse la foule pendant un match ?",
-      "reponse": "La mascotte",
+      "question": "Quelle activité d'hiver descend une pente sur un traîneau ou une chambre à air ?",
+      "reponse": "La glissade",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel pays a remporté le plus de Coupes du monde de soccer ?",
-      "reponse": "Le Brésil",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle ville canadienne a reçu les JO d'hiver de 2010 ?",
-      "reponse": "Vancouver",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle gymnaste américaine a des figures qui portent son nom au code de pointage ?",
-      "reponse": "Simone Biles",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de combat japonais se pratique pieds nus en kimono blanc ?",
-      "reponse": "Le karaté",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glisse descend les pentes enneigées sur deux planches étroites ?",
-      "reponse": "Le ski",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur français a marqué trois buts en finale de la Coupe du monde 2022 ?",
-      "reponse": "Mbappé",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au volleyball ?",
+      "question": "Combien de points vaut un touché au football ?",
       "reponse": "Six",
       "niveau": 2,
       "ages": [
@@ -157,6 +132,18 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle carte l'arbitre de soccer montre-t-il pour avertir un joueur ?",
+      "reponse": "Un carton jaune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel style de nage porte le nom d'un insecte ?",
+      "reponse": "Le papillon",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -171,24 +158,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel coureur éthiopien a gagné le marathon pieds nus ?",
-      "reponse": "Abebe Bikila",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport olympique de précision se pratique avec des flèches ?",
-      "reponse": "Le tir à l'arc",
+      "question": "Comment appelle-t-on le match qui décide du championnat ?",
+      "reponse": "La finale",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle fédération organise la Coupe du monde de soccer ?",
-      "reponse": "La FIFA",
+      "question": "Combien de tournois composent le grand chelem de tennis ?",
+      "reponse": "Quatre",
       "niveau": 1,
       "ages": [
         "ados",
@@ -198,8 +175,31 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le joueur qui remplace un blessé en cours de match ?",
-      "reponse": "Un remplaçant",
+      "question": "Quel pays a gagné la Coupe du monde de soccer en 1958, en 1962 et en 1970 ?",
+      "reponse": "Le Brésil",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel capitaine des Penguins est surnommé Sid the Kid ?",
+      "reponse": "Sidney Crosby",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de hockey joue à Toronto ?",
+      "reponse": "Les Maple Leafs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on un match qui se termine à égalité ?",
+      "reponse": "Une nulle",
       "niveau": 2
     }
   ]

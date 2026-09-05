@@ -8,14 +8,20 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Quel commerce vend des outils, de la peinture et des clous ?",
-      "reponse": "Une quincaillerie",
+      "question": "Quel grand bâtiment rouge de la ferme abrite les animaux et le foin ?",
+      "reponse": "La grange",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la neige poussée par le vent qui empêche de voir la route ?",
+      "reponse": "La poudrerie",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quelle nation autochtone vit à Wendake près de Québec ?",
-      "reponse": "Les Hurons-Wendat",
+      "question": "Quel mot québécois désigne l'argent, familièrement ?",
+      "reponse": "Du cash",
       "niveau": 2,
       "ages": [
         "ados",
@@ -25,14 +31,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel appareil sèche les vêtements après le lavage ?",
-      "reponse": "La sécheuse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel premier ministre libéral a gouverné de 2003 à 2012 ?",
-      "reponse": "Jean Charest",
+      "question": "Quelle jeune fille a dansé avec le diable dans la légende ?",
+      "reponse": "Rose Latulippe",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -41,46 +41,14 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel humoriste montréalais fait des spectacles bilingues ?",
-      "reponse": "Sugar Sammy",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que met-on aux mains pour ne pas avoir froid, avec un seul compartiment pour les doigts ?",
-      "reponse": "Des mitaines",
+      "question": "De quelle couleur est le drapeau du Québec ?",
+      "reponse": "Bleu et blanc",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel animateur québécois a animé La Poule aux œufs d'or ?",
-      "reponse": "Guy Mongrain",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit oiseau à calotte noire fréquente les mangeoires du Québec tout l'hiver ?",
-      "reponse": "La mésange",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le premier jour de classe après les vacances d'été ?",
-      "reponse": "La rentrée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle légende québécoise fait voler un canot ?",
-      "reponse": "La chasse-galerie",
+      "question": "Quelle exposition universelle a eu lieu à Montréal ?",
+      "reponse": "Expo 67",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -90,30 +58,14 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel grand feu s'allume le soir de la Saint-Jean ?",
-      "reponse": "Un feu de joie",
+      "question": "Comment appelle-t-on l'herbe coupée et séchée qu'on donne aux vaches l'hiver ?",
+      "reponse": "Le foin",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quel poisson moucheté se pêche dans les lacs du Québec ?",
-      "reponse": "La truite",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel papillon est l'insecte emblème du Québec ?",
-      "reponse": "L'amiral",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fleur figure sur le drapeau de Montréal ?",
-      "reponse": "Fleur de lys",
+      "question": "Quelle tourte à plusieurs étages de pâte vient de la Gaspésie ?",
+      "reponse": "Le cipaille",
       "niveau": 2,
       "ages": [
         "ados",
@@ -123,65 +75,19 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?",
-      "reponse": "Une corde de bois",
-      "niveau": 3
+      "question": "Quel dessin fait-on en s'allongeant dans la neige et en bougeant les bras ?",
+      "reponse": "Un ange dans la neige",
+      "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quel congé de mai précède la saison du jardinage au Québec ?",
-      "reponse": "La journée nationale des patriotes",
+      "question": "Quel est l'arbre emblème du Québec ?",
+      "reponse": "Le bouleau jaune",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que doit-on attacher en s'assoyant dans une auto ?",
-      "reponse": "La ceinture de sécurité",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel fromage frais grince sous la dent ?",
-      "reponse": "Fromage en grains",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel secteur de Montréal regroupe salles de spectacle et festivals au centre-ville ?",
-      "reponse": "Le Quartier des spectacles",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel rocher troué est l'emblème de la Gaspésie ?",
-      "reponse": "Le rocher Percé",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle date est la Fête nationale du Québec ?",
-      "reponse": "Le 24 juin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle forme creusée dans la neige sert de cachette aux enfants ?",
-      "reponse": "Un fort de neige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel lac immense borde Roberval et Alma ?",
-      "reponse": "Lac Saint-Jean",
-      "niveau": 1
     },
     {
       "categorie": "Québec",
@@ -191,14 +97,140 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel organisme veille sur la langue française au Québec ?",
-      "reponse": "L'OQLF",
+      "question": "Comment appelle-t-on une grande école secondaire publique au Québec ?",
+      "reponse": "Une polyvalente",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "De quel village vient le conteur Fred Pellerin ?",
+      "reponse": "Saint-Élie-de-Caxton",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel premier ministre québécois fut surnommé le Cheuf ?",
+      "reponse": "Duplessis",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel grand musée du Vieux-Port de Québec a ouvert ses portes en 1988 ?",
+      "reponse": "Le Musée de la civilisation",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel pont de Montréal illumine ses câbles de couleurs le soir ?",
+      "reponse": "Le pont Jacques-Cartier",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la banque coopérative très répandue au Québec ?",
+      "reponse": "La caisse populaire",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelles montagnes russes en bois de La Ronde sont célèbres ?",
+      "reponse": "Le Monstre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle chaîne de dépanneurs québécoise a un hibou ?",
+      "reponse": "Couche-Tard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle île gaspésienne abrite des fous de Bassan ?",
+      "reponse": "Bonaventure",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel parc national québécois protège des caribous ?",
+      "reponse": "La Gaspésie",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle boisson alcoolisée réchauffe le Carnaval de Québec ?",
+      "reponse": "Le caribou",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle autoroute mène de Montréal vers les Laurentides ?",
+      "reponse": "La 15",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel trophée remporte le champion de la LCF ?",
+      "reponse": "La coupe Grey",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel fleuve traverse le Québec ?",
+      "reponse": "Le Saint-Laurent",
+      "niveau": 1
     }
   ]
 }

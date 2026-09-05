@@ -7,141 +7,56 @@
   "emoji": "🌲",
   "questions": [
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel duo de La Petite Vie dort debout ?",
+      "reponse": "Popa et Moman",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel humoriste québécois au débit très rapide a animé de nombreux galas ?",
+      "reponse": "Louis-José Houde",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe progressif québécois a fait L'Heptade ?",
+      "reponse": "Harmonium",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas se prend le soir au Québec ?",
+      "reponse": "Le souper",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
+      "reponse": "Willie Lamothe",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
       "categorie": "Histoire",
       "question": "Quelle fourrure les Européens recherchaient-ils le plus en Nouvelle-France ?",
       "reponse": "Le castor",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
-      "reponse": "Le smoked meat",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe québécois chante Toune d'automne ?",
-      "reponse": "Cowboys Fringants",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel mot québécois désigne une fête ?",
-      "reponse": "Un party",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle baie géante borde le nord du Québec ?",
-      "reponse": "Baie d'Hudson",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle société d'État a le monopole de la vente d'alcool au Québec ?",
-      "reponse": "La SAQ",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Comment appelle-t-on la sève recueillie au printemps pour faire le sirop ?",
-      "reponse": "L'eau d'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise raconte Séraphin Poudrier ?",
-      "reponse": "Les Belles Histoires",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
-      "reponse": "Michel Louvain",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
-      "reponse": "Le CF Montréal",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
-      "reponse": "Rue des Pignons",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert québécois est un gâteau arrosé de sauce sucrée ?",
-      "reponse": "Pouding chômeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel quotidien montréalais a imprimé sa dernière édition en 2017 pour passer à la tablette ?",
-      "reponse": "La Presse",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
-      "reponse": "L'inlandsis",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
-      "reponse": "Coup de Pouce",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
-      "reponse": "Caillou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
-      "reponse": "La poutine",
+      "categorie": "Culture générale",
+      "question": "Quel animal figure sur la pièce de 25 cents canadienne ?",
+      "reponse": "Le caribou",
       "niveau": 1
     },
     {
@@ -155,15 +70,15 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
-      "reponse": "Le Grand Nord",
-      "niveau": 2
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat québécois superpose patates pilées, blé d'Inde et viande hachée ?",
+      "reponse": "Le pâté chinois",
+      "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
-      "reponse": "Traité de Paris",
+      "categorie": "Culture pop",
+      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
+      "reponse": "La ceinture fléchée",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -171,10 +86,67 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Dans quelle émission québécoise des vedettes chantent-elles cachées dans des costumes géants ?",
-      "reponse": "Chanteurs masqués",
+      "categorie": "Sports",
+      "question": "Quel gardien québécois a popularisé le style papillon ?",
+      "reponse": "Patrick Roy",
       "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle bataille de 1759 a fait passer Québec aux mains des Britanniques ?",
+      "reponse": "La bataille des plaines d'Abraham",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe folklorique québécois a une bottine dans son nom ?",
+      "reponse": "La Bottine Souriante",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
+      "reponse": "La poutine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série québécoise d'Anne Dorval et Daniel Brière suivait une famille de trois garçons ?",
+      "reponse": "Les Parent",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville du Québec ?",
+      "reponse": "Montréal",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
+      "reponse": "Les Denis Drolet",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse de Charlemagne est devenue une vedette mondiale dans les années 90 ?",
+      "reponse": "Céline Dion",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -182,11 +154,18 @@
       ]
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel condiment rouge accompagne les frites et le pâté chinois ?",
+      "reponse": "Le ketchup",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne éducative appartient au gouvernement du Québec ?",
-      "reponse": "Télé-Québec",
-      "niveau": 2,
+      "question": "Quel jeu télévisé québécois demande de repérer celui qui ment ?",
+      "reponse": "Le Tricheur",
+      "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -204,20 +183,31 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
-      "reponse": "Les Boys",
+      "question": "Quelle émission québécoise a des fauteuils qui pivotent ?",
+      "reponse": "La Voix",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on au Québec la coupe de cheveux courte devant et longue derrière ?",
-      "reponse": "La coupe Longueuil",
-      "niveau": 2,
+      "categorie": "Musique",
+      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
+      "reponse": "Loud",
+      "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sirop noir parfume les galettes québécoises ?",
+      "reponse": "La mélasse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle province se trouve Montréal ?",
+      "reponse": "Le Québec",
+      "niveau": 1
     }
   ]
 }

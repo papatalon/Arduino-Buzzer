@@ -8,6 +8,131 @@
   "questions": [
     {
       "categorie": "Culture pop",
+      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
+      "reponse": "Cracké",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Où pêche-t-on la célèbre crevette nordique québécoise ?",
+      "reponse": "À Matane",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse québécoise fait taper les pieds au son du violon ?",
+      "reponse": "La gigue",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays produit le plus de sirop d'érable ?",
+      "reponse": "Le Canada",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise raconte Séraphin Poudrier ?",
+      "reponse": "Les Belles Histoires",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie attache ta tuque ?",
+      "reponse": "Prépare-toi",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel humoriste québécois jouait le concierge Symphorien ?",
+      "reponse": "Gilles Latulippe",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
+      "reponse": "Le smoked meat",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plage du Maine est la destination classique des vacances québécoises ?",
+      "reponse": "Old Orchard",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
+      "reponse": "Le CF Montréal",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
+      "reponse": "Sol",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle société d'État a le monopole de la vente d'alcool au Québec ?",
+      "reponse": "La SAQ",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel artiste québécois a fait sensation avec l'album Darlène ?",
+      "reponse": "Hubert Lenoir",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle boisson gazeuse a longtemps servi de surnom moqueur aux Québécois ?",
+      "reponse": "Le Pepsi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
       "question": "Quelle marque québécoise fabrique les Jos Louis et les May West ?",
       "reponse": "Vachon",
       "niveau": 2,
@@ -18,10 +143,64 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
-      "reponse": "Le homard",
+      "categorie": "Culture pop",
+      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
+      "reponse": "Radio Enfer",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
+      "reponse": "Le 7 Jours",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse acadienne a gagné le Félix de la chanson de l'année avec Évangéline ?",
+      "reponse": "Annie Blanchard",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle ville a été fondée en 1642 sous le nom de Ville-Marie ?",
+      "reponse": "Montréal",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel avare célèbre du terroir québécois aime son argent ?",
+      "reponse": "Séraphin",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel personnage rouge et blanc à tuque se cache dans des foules dessinées ?",
+      "reponse": "Charlie",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magazine hebdomadaire publiait les horaires de télévision au Québec ?",
+      "reponse": "Le TV Hebdo",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
@@ -34,106 +213,9 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle région du Québec est célèbre pour ses bleuets ?",
-      "reponse": "Le Lac-Saint-Jean",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
-      "reponse": "La podorythmie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pilote québécois a donné son nom au circuit de Montréal ?",
-      "reponse": "Gilles Villeneuve",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson fumé garnit le bagel classique ?",
-      "reponse": "Le saumon fumé",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle animatrice québécoise est surnommée Véro ?",
-      "reponse": "Véronique Cloutier",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission québécoise fait juger des numéros de danse par des maîtres ?",
-      "reponse": "Révolution",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois barrer la porte ?",
-      "reponse": "Verrouiller",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
-      "reponse": "Bleu Jeans Bleu",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
-      "reponse": "L'hémisphère nord",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle société d'État tire les loteries au Québec ?",
-      "reponse": "Loto-Québec",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
-      "reponse": "Dans une galaxie près de chez vous",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel grand magasin de vêtements québécois porte un nom de famille ?",
-      "reponse": "Simons",
+      "question": "Quel prix récompense les artistes québécois au gala de l'ADISQ ?",
+      "reponse": "Le Félix",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -141,99 +223,15 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel gala récompense la musique québécoise ?",
-      "reponse": "L'ADISQ",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle pharmacie québécoise promet qu'on y trouve de tout, même un ami ?",
-      "reponse": "Jean Coutu",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelles jeunes filles furent envoyées peupler la Nouvelle-France ?",
-      "reponse": "Filles du Roy",
+      "question": "Quel objet orange envahit les rues de Montréal chaque été ?",
+      "reponse": "Le cône",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Trois-Rivières ?",
-      "reponse": "Un Trifluvien",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
-      "reponse": "Le pain doré",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel organisme québécois délivre les permis de conduire et les plaques ?",
-      "reponse": "La SAAQ",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel lutteur québécois était surnommé Mad Dog ?",
-      "reponse": "Maurice Vachon",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse acadienne s'est fait connaître au banjo, en français ?",
-      "reponse": "Lisa LeBlanc",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
-      "reponse": "Un divulgâcheur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu foncé se cueille dans les bois du Lac-Saint-Jean ?",
-      "reponse": "Le bleuet sauvage",
-      "niveau": 2
     }
   ]
 }

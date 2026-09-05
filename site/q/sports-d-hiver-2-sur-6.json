@@ -8,21 +8,19 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Que pleut-il sur la patinoire quand un joueur compte trois buts dans le même match ?",
-      "reponse": "Des chapeaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel véhicule d'hiver file sur la neige avec des chenilles et des skis ?",
-      "reponse": "Une motoneige",
-      "niveau": 1
+      "question": "Quel sport de rue se joue en espadrilles, bâton en main, avec une balle orange ?",
+      "reponse": "Le hockey-balle",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport olympique descend un couloir de glace sur le dos ?",
-      "reponse": "La luge",
-      "niveau": 1
+      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
+      "reponse": "Tessa Virtue",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Culture pop",
@@ -35,64 +33,9 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle station de ski de la région de Québec offre une vue sur le fleuve depuis ses pistes ?",
-      "reponse": "Le Mont-Sainte-Anne",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle machine bruyante lance la neige de côté dans l'entrée ?",
-      "reponse": "Une souffleuse",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
-      "question": "Quel joueur des Capitals a marqué plus de 900 buts ?",
-      "reponse": "Ovechkin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
-      "reponse": "Le ballon-balai",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel objet empoisonné croque Blanche-Neige ?",
-      "reponse": "Une pomme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel cidre québécois est pressé après les gelées ?",
-      "reponse": "Cidre de glace",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel outil racle la neige des pare-brise ?",
-      "reponse": "Un gratteux",
+      "question": "Quel objet frappe-t-on au hockey ?",
+      "reponse": "La rondelle",
       "niveau": 1
     },
     {
@@ -106,15 +49,102 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
-      "reponse": "Le patinage artistique",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse Disney vit avec sept nains ?",
+      "reponse": "Blanche-Neige",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel joueur des Oilers porte le numéro 97 ?",
-      "reponse": "Connor McDavid",
+      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
+      "reponse": "Le slalom",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gardien des Canadiens a porté le premier masque ?",
+      "reponse": "Jacques Plante",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle résidence du Bonhomme est rebâtie en blocs translucides chaque hiver ?",
+      "reponse": "Le palais de glace",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel outil racle la neige des pare-brise ?",
+      "reponse": "Un gratteux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de hockey joue à Edmonton ?",
+      "reponse": "Les Oilers",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport olympique descend un couloir de glace sur le dos ?",
+      "reponse": "La luge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
+      "reponse": "L'inlandsis",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel équipement large attaché aux pieds empêche de caler dans la neige épaisse ?",
+      "reponse": "Les raquettes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
+      "reponse": "La granita",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel entraîneur légendaire des Canadiens s'appelait Scotty ?",
+      "reponse": "Scotty Bowman",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport fait descendre un skieur derrière un bateau ?",
+      "reponse": "Le ski nautique",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel véhicule d'hiver file sur la neige avec des chenilles et des skis ?",
+      "reponse": "Une motoneige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation suit un mammouth, un paresseux et un tigre à dents de sabre ?",
+      "reponse": "L'Âge de glace",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -123,47 +153,15 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle équipe de hockey junior joue au Centre Vidéotron de Québec ?",
-      "reponse": "Les Remparts",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sports",
+      "question": "Quelles larges semelles permettent de marcher sur la neige sans caler ?",
+      "reponse": "Des raquettes",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quelle ville canadienne a reçu les JO d'hiver de 2010 ?",
-      "reponse": "Vancouver",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on les longs cônes de glace qui pendent des toits ?",
-      "reponse": "Des glaçons",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glace utilise des pierres et des balais ?",
-      "reponse": "Le curling",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel joueur des Canadiens fut surnommé le Gros Bill ?",
-      "reponse": "Jean Béliveau",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle ligne rouge coupe la patinoire en deux ?",
-      "reponse": "Ligne centrale",
+      "question": "Quel numéro portait Wayne Gretzky ?",
+      "reponse": "99",
       "niveau": 1,
       "ages": [
         "ados",
@@ -172,32 +170,25 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de motoneige est née au Québec ?",
-      "reponse": "Ski-Doo",
-      "niveau": 2,
+      "categorie": "Québec",
+      "question": "Quel joueur des Canadiens fut surnommé le Démon blond ?",
+      "reponse": "Guy Lafleur",
+      "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Disney vit avec sept nains ?",
-      "reponse": "Blanche-Neige",
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne le manteau et la salopette d'hiver des enfants ?",
+      "reponse": "L'habit de neige",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport d'hiver glisse une pierre vers une cible en balayant la glace ?",
-      "reponse": "Le curling",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle saison fait fleurir les arbres et fondre la neige ?",
-      "reponse": "Le printemps",
+      "categorie": "Québec",
+      "question": "Quelle opération municipale suit chaque bordée de neige dans les rues ?",
+      "reponse": "Le déneigement",
       "niveau": 1
     }
   ]

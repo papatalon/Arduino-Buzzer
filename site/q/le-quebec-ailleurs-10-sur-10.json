@@ -7,162 +7,42 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Culture générale",
-      "question": "Quel animal figure sur la pièce de 25 cents canadienne ?",
-      "reponse": "Le caribou",
-      "niveau": 1
+      "categorie": "Histoire",
+      "question": "Quelle rébellion québécoise eut lieu en 1837 ?",
+      "reponse": "Les Patriotes",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
+      "reponse": "Gary Carter",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel artiste québécois a fait sensation avec l'album Darlène ?",
-      "reponse": "Hubert Lenoir",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel pont s'est effondré deux fois pendant sa construction, en 1907 et en 1916 ?",
-      "reponse": "Le pont de Québec",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de baseball a joué à Montréal ?",
-      "reponse": "Les Expos",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle boisson gazeuse a longtemps servi de surnom moqueur aux Québécois ?",
-      "reponse": "Le Pepsi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois achaler ?",
-      "reponse": "Déranger",
+      "question": "Quelles pièces de bois claque-t-on entre les doigts au Québec ?",
+      "reponse": "Les cuillères",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?",
-      "reponse": "Alys Robi",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel imitateur québécois a chanté en enchaînant des dizaines de voix célèbres ?",
-      "reponse": "André-Philippe Gagnon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
-      "reponse": "Expo 67",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
-      "reponse": "Les Baronets",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle rivière célèbre coule à Ottawa ?",
-      "reponse": "L'Outaouais",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant du Saguenay ?",
-      "reponse": "Un Saguenéen",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle émission québécoise a des fauteuils qui pivotent ?",
-      "reponse": "La Voix",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas québécois se mange le midi ?",
+      "reponse": "Le dîner",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle carte à puce sert à payer le métro et l'autobus à Montréal ?",
-      "reponse": "La carte Opus",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
-      "reponse": "Georges St-Pierre",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville du Québec accueille chaque été le Festival de la poutine ?",
-      "reponse": "Drummondville",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois chialer ?",
-      "reponse": "Se plaindre",
+      "categorie": "Sciences et nature",
+      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
+      "reponse": "L'érable",
       "niveau": 1
     },
     {
@@ -177,34 +57,81 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de motoneige est née au Québec ?",
-      "reponse": "Ski-Doo",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Céline Dion ouvre par une flûte irlandaise ?",
-      "reponse": "My Heart Will Go On",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
+      "reponse": "Les Boys",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel gratte-ciel de Montréal, en forme de croix, a ouvert en 1962 ?",
-      "reponse": "La Place Ville-Marie",
+      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
+      "reponse": "La guignolée",
       "niveau": 3,
       "ages": [
         "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit bleu foncé se cueille dans les bois du Lac-Saint-Jean ?",
+      "reponse": "Le bleuet sauvage",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?",
+      "reponse": "Le pont Champlain",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
+      "reponse": "Watatatow",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne une fête ?",
+      "reponse": "Un party",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel organisme québécois délivre les permis de conduire et les plaques ?",
+      "reponse": "La SAAQ",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quelle émission québécoise des vedettes chantent-elles cachées dans des costumes géants ?",
+      "reponse": "Chanteurs masqués",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
+      "reponse": "L'épinette",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
+      "reponse": "Dominique Michel et Denise Filiatrault",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     },
@@ -215,25 +142,71 @@
       "niveau": 1
     },
     {
+      "categorie": "Sports",
+      "question": "Quel patineur québécois a remporté quatre médailles d'or olympiques en courte piste ?",
+      "reponse": "Charles Hamelin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quels tambours se frappent en cercle dans les parcs de Montréal le dimanche ?",
+      "reponse": "Les tam-tams",
+      "niveau": 2
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel magazine hebdomadaire publiait les horaires de télévision au Québec ?",
-      "reponse": "Le TV Hebdo",
+      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
+      "reponse": "Pierre Falardeau",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série policière québécoise porte le numéro d'un poste de police ?",
+      "reponse": "District 31",
+      "niveau": 2,
+      "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Montréal ?",
-      "reponse": "Un Montréalais",
-      "niveau": 1
+      "question": "Comment nomme-t-on les habitants des Îles-de-la-Madeleine ?",
+      "reponse": "Les Madelinots",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville du Québec ?",
-      "reponse": "Montréal",
-      "niveau": 1
+      "categorie": "Musique",
+      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
+      "reponse": "La podorythmie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel numéro portait Maurice Richard ?",
+      "reponse": "9",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

@@ -7,38 +7,57 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle amie brillante accompagne Harry et Ron ?",
+      "reponse": "Hermione",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle est la capitale nationale du Québec ?",
+      "reponse": "Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment nomme-t-on l'artiste qui anime les platines ?",
+      "reponse": "Le DJ",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel objet en forme de boule qui tourne montre tous les pays du monde ?",
+      "reponse": "Le globe terrestre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de côtés a un pentagone ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à base de tomates nappe les pizzas ?",
-      "reponse": "La sauce tomate",
+      "question": "Quelle écorce parfume les brioches roulées ?",
+      "reponse": "La cannelle",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Combien de pattes possède un insecte ?",
-      "reponse": "Six",
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'école qu'un enfant fréquente de la 1re à la 6e année ?",
+      "reponse": "Le primaire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle note vient juste après le mi ?",
+      "reponse": "Le fa",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la personne qui distribue le courrier ?",
-      "reponse": "Un facteur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pilote québécois a donné son nom au circuit de Montréal ?",
-      "reponse": "Gilles Villeneuve",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que veut dire SVP ?",
-      "reponse": "S'il vous plaît",
+      "question": "Que signifie tomber dans les pommes ?",
+      "reponse": "S'évanouir",
       "niveau": 1
     },
     {
@@ -53,33 +72,15 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien de côtés a un pentagone ?",
-      "reponse": "Cinq",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on l'artiste qui anime les platines ?",
-      "reponse": "Le DJ",
+      "categorie": "Culture pop",
+      "question": "Quel casse-tête coloré à six faces se replace en tournant ses rangées ?",
+      "reponse": "Le Rubik's Cube",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel pays a inventé le judo ?",
-      "reponse": "Le Japon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel reptile change de couleur pour se camoufler ?",
-      "reponse": "Le caméléon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la paella ?",
-      "reponse": "L'Espagne",
+      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
+      "reponse": "Le CF Montréal",
       "niveau": 1,
       "ages": [
         "ados",
@@ -88,15 +89,27 @@
       ]
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat fait-on en battant des œufs à la poêle ?",
+      "reponse": "L'omelette",
+      "niveau": 1
+    },
+    {
       "categorie": "Histoire",
       "question": "Dans quel amphithéâtre combattaient les gladiateurs ?",
       "reponse": "Le Colisée",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle panthère noire protège Mowgli ?",
-      "reponse": "Bagheera",
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de gagner ?",
+      "reponse": "Perdre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile change de couleur pour se camoufler ?",
+      "reponse": "Le caméléon",
       "niveau": 1
     },
     {
@@ -107,8 +120,25 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le petit chien blanc de Tintin ?",
-      "reponse": "Milou",
+      "question": "Comment s'appelle la petite souris grise que le chat Tom n'attrape jamais ?",
+      "reponse": "Jerry",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie virer une brosse ?",
+      "reponse": "Trop boire",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Que veut dire Hakuna Matata ?",
+      "reponse": "Pas de souci",
       "niveau": 1
     },
     {
@@ -118,62 +148,27 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir le bras long ?",
-      "reponse": "Avoir de l'influence",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle date est la Fête nationale du Québec ?",
-      "reponse": "Le 24 juin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la partie d'une chanson qui revient entre les couplets ?",
-      "reponse": "Le refrain",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
-      "reponse": "La poutine",
+      "question": "Quel légume jaune se mange en épi, au beurre et au sel ?",
+      "reponse": "Le maïs",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel objet en forme de boule qui tourne montre tous les pays du monde ?",
-      "reponse": "Le globe terrestre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jouet d'été arrose les amis d'un jet d'eau ?",
-      "reponse": "Un pistolet à eau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel bâtiment abrite une patinoire intérieure dans la plupart des villes du Québec ?",
-      "reponse": "Un aréna",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon au chandail à zigzag est le maître de Snoopy ?",
-      "reponse": "Charlie Brown",
+      "categorie": "Sports",
+      "question": "Quel joueur a été repêché premier au total par Edmonton en 2015 ?",
+      "reponse": "Connor McDavid",
       "niveau": 1,
       "ages": [
         "enfants",
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de pattes possède un insecte ?",
+      "reponse": "Six",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",

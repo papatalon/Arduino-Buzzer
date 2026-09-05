@@ -8,66 +8,19 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle exploratrice a un singe nommé Babouche ?",
-      "reponse": "Dora",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans Minecraft, quelle pierre bleue sert à fabriquer les meilleurs outils ?",
-      "reponse": "Le diamant",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel site de vidéos a été lancé en 2005 et racheté par Google un an plus tard ?",
-      "reponse": "YouTube",
+      "question": "Quel acteur incarne Iron Man au cinéma ?",
+      "reponse": "Robert Downey Jr",
       "niveau": 2,
       "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie colorée a deux coques et une ganache ?",
-      "reponse": "Le macaron",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel premier ministre québécois fut surnommé le Cheuf ?",
-      "reponse": "Duplessis",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir du pain sur la planche ?",
-      "reponse": "Beaucoup de travail",
-      "niveau": 1
-    },
-    {
       "categorie": "Musique",
-      "question": "Quel groupe a sorti l'album au prisme en 1973 ?",
-      "reponse": "Pink Floyd",
-      "niveau": 2,
+      "question": "Quel compositeur baroque a écrit les Concertos brandebourgeois ?",
+      "reponse": "Bach",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
@@ -80,9 +33,46 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel pantin de bois voit son nez s'allonger ?",
-      "reponse": "Pinocchio",
+      "categorie": "Musique",
+      "question": "Quel Beatle gaucher jouait de la basse ?",
+      "reponse": "Paul McCartney",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de motoneige est née au Québec ?",
+      "reponse": "Ski-Doo",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Contraire de rapide ?",
+      "reponse": "Lent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
+      "reponse": "Georges St-Pierre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain sucré en anneau se glace et se saupoudre ?",
+      "reponse": "Le beigne",
       "niveau": 1
     },
     {
@@ -92,9 +82,31 @@
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport olympique mélange danse et piscine ?",
-      "reponse": "Natation artistique",
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète a été rétrogradée en planète naine ?",
+      "reponse": "Pluton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment dit-on « merci » en espagnol ?",
+      "reponse": "Gracias",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de demi-tons dans une octave ?",
+      "reponse": "Douze",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays est surnommé la botte de l'Europe ?",
+      "reponse": "L'Italie",
       "niveau": 1,
       "ages": [
         "ados",
@@ -103,57 +115,28 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Que glisse-t-on dans une enveloppe pour souhaiter joyeux Noël à quelqu'un ?",
-      "reponse": "Une carte de souhaits",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète a été rétrogradée en planète naine ?",
-      "reponse": "Pluton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume vert et long se mange en cosse ou en conserve ?",
-      "reponse": "Le haricot",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a fondé Ville-Marie en 1642 ?",
-      "reponse": "Maisonneuve",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel grand bassin apprend-on à nager ?",
-      "reponse": "Une piscine",
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le lionceau du Roi Lion ?",
+      "reponse": "Simba",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel objet indique l'heure grâce à une ombre ?",
-      "reponse": "Cadran solaire",
+      "question": "Quel pantin de bois voit son nez s'allonger ?",
+      "reponse": "Pinocchio",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël anglais souhaite un joyeux Noël en le répétant trois fois ?",
-      "reponse": "We Wish You a Merry Christmas",
+      "categorie": "Québec",
+      "question": "Quel village d'attractions de Québec devient un parc aquatique l'été ?",
+      "reponse": "Valcartier",
       "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de glisse se pratique sur une piste avec des bâtons dans les mains ?",
-      "reponse": "Le ski alpin",
-      "niveau": 1
+      "question": "Quelles chaussures à roulettes se lacent aux pieds pour rouler sur l'asphalte ?",
+      "reponse": "Des patins à roues alignées",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -167,26 +150,33 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quelle est la dernière lettre de l'alphabet grec ?",
-      "reponse": "Oméga",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume fait pleurer quand on le coupe ?",
+      "reponse": "L'oignon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel objet indique l'heure grâce à une ombre ?",
+      "reponse": "Cadran solaire",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel biscuit québécois à la mélasse se trempe dans le lait ?",
-      "reponse": "La galette à la mélasse",
-      "niveau": 3
+      "question": "Quel liquide met-on dans le réservoir de l'auto à la station-service ?",
+      "reponse": "L'essence",
+      "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel chanteur portoricain a chanté Despacito ?",
-      "reponse": "Luis Fonsi",
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le match qui décide du championnat ?",
+      "reponse": "La finale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel site de vidéos a été lancé en 2005 et racheté par Google un an plus tard ?",
+      "reponse": "YouTube",
       "niveau": 2,
       "ages": [
         "enfants",
@@ -195,20 +185,19 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée suit Stewie et Peter Griffin ?",
-      "reponse": "Family Guy",
+      "categorie": "Culture pop",
+      "question": "Quel petit ours de dessin animé porte un chandail et un prénom de couleur ?",
+      "reponse": "Petit Ours Brun",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
+        "enfants"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel pays est surnommé la botte de l'Europe ?",
-      "reponse": "L'Italie",
-      "niveau": 1,
+      "categorie": "Histoire",
+      "question": "Qui a fondé Ville-Marie en 1642 ?",
+      "reponse": "Maisonneuve",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",

@@ -8,42 +8,26 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "De quel plongeoir olympique saute-t-on de plus haut ?",
-      "reponse": "10 mètres",
+      "question": "Quel sport de danse acrobatique se pratique au sol avec de la musique ?",
+      "reponse": "Le breakdance",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle Canadienne a gagné les Internationaux des USA en 2019 ?",
-      "reponse": "Bianca Andreescu",
-      "niveau": 2,
-      "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la grande surface de jeu du soccer ?",
-      "reponse": "Le terrain",
-      "niveau": 1
+      "question": "Comment appelle-t-on la course d'un joueur qui file seul vers le gardien ?",
+      "reponse": "Une échappée",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport glisse sur l'eau tiré par un bateau ?",
-      "reponse": "Le ski nautique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au football canadien ?",
-      "reponse": "Douze",
-      "niveau": 2,
+      "question": "Quel poste lance le ballon au football ?",
+      "reponse": "Le quart-arrière",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -52,32 +36,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle médaille reçoit le champion olympique ?",
-      "reponse": "La médaille d'or",
+      "question": "Quelle discipline équestre fait franchir au cheval des barres à ne pas faire tomber ?",
+      "reponse": "Le saut d'obstacles",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Dans quel sport porte-t-on un fleuret et un masque ?",
-      "reponse": "L'escrime",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la toile tendue sur laquelle on rebondit très haut ?",
-      "reponse": "Un trampoline",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport d'hiver glisse une pierre vers une cible en balayant la glace ?",
-      "reponse": "Le curling",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de points vaut un panier de loin au basketball ?",
-      "reponse": "Trois",
+      "question": "Combien de joueurs par équipe au baseball ?",
+      "reponse": "Neuf",
       "niveau": 1
     },
     {
@@ -88,71 +54,120 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport se pratique dans une piscine ?",
-      "reponse": "La natation",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
       "question": "Comment appelle-t-on le joueur qui porte le C sur son chandail ?",
       "reponse": "Le capitaine",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle ligne les coureurs doivent-ils franchir pour terminer une course ?",
-      "reponse": "La ligne d'arrivée",
+      "question": "Quel lutteur québécois était surnommé Mad Dog ?",
+      "reponse": "Maurice Vachon",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel cerceau fait-on tourner autour de la taille ?",
+      "reponse": "Le hula hoop",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Combien de touches maximum par équipe au volleyball ?",
+      "question": "Combien de périodes dans un match de hockey ?",
       "reponse": "Trois",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel club anglais est surnommé les Diables rouges ?",
-      "reponse": "Manchester United",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glisse se pratique à plat ventre ?",
-      "reponse": "Le skeleton",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport lance-t-on un javelot ?",
-      "reponse": "L'athlétisme",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel comité organise les Jeux olympiques ?",
-      "reponse": "Le CIO",
+      "question": "Quel sport d'équipe se joue avec un bâton à filet au bout et une petite balle dure ?",
+      "reponse": "La crosse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport olympique mélange saut à ski et ski de fond ?",
+      "reponse": "Combiné nordique",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de kilomètres fait un triathlon olympique à vélo ?",
+      "reponse": "40",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de joueurs par équipe au football américain ?",
+      "reponse": "Onze",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment nomme-t-on trois buts d'un même joueur ?",
+      "reponse": "Un tour du chapeau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport monte des parois avec des prises de couleur et un baudrier ?",
+      "reponse": "L'escalade",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle épreuve combine dix disciplines ?",
+      "reponse": "Le décathlon",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport fait tourner des athlètes en combinaison moulante sur un anneau glacé ?",
+      "reponse": "Le patin de vitesse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
+      "reponse": "Quatre ans",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la balle de golf entrée dans la coupe dès le départ ?",
+      "reponse": "Un trou d'un coup",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de points vaut un panier de loin au basketball ?",
+      "reponse": "Trois",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -162,31 +177,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de points vaut un touché au football ?",
-      "reponse": "Six",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de quilles dans un jeu de bowling ?",
-      "reponse": "Dix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme fait franchir une barre très haute à l'aide d'une longue tige souple ?",
-      "reponse": "Le saut à la perche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
-      "reponse": "Quatre ans",
+      "question": "Combien d'anneaux sur le drapeau olympique ?",
+      "reponse": "Cinq",
       "niveau": 1
     }
   ]

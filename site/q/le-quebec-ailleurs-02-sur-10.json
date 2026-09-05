@@ -7,48 +7,16 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?",
-      "reponse": "Le Canadien",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
-      "reponse": "Le Banquier",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle sauce sucrée et brune coule sur les crêpes du Québec ?",
-      "reponse": "Le sirop d'érable",
+      "question": "Quelle confiserie d'érable se roule sur la neige ?",
+      "reponse": "La tire",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?",
-      "reponse": "La ville de Québec",
+      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
+      "reponse": "Le Grand Nord",
       "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle activité québécoise du printemps se fait dans une érablière, avec un repas ?",
-      "reponse": "La cabane à sucre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
-      "reponse": "Le 7 Jours",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Culture pop",
@@ -60,63 +28,58 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
-      "reponse": "Sol",
-      "niveau": 2,
+      "categorie": "Musique",
+      "question": "Quel instrument est roi dans les rigodons québécois ?",
+      "reponse": "Le violon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel gratte-ciel de Montréal, en forme de croix, a ouvert en 1962 ?",
+      "reponse": "La Place Ville-Marie",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle tartinade blanche accompagne le bagel ?",
+      "reponse": "Fromage à la crème",
+      "niveau": 1
+    },
+    {
       "categorie": "Géographie",
-      "question": "Quel fleuve forme la frontière Ontario-Québec au sud ?",
+      "question": "Quelle rivière célèbre coule à Ottawa ?",
       "reponse": "L'Outaouais",
-      "niveau": 2,
+      "niveau": 1,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission matinale de TVA réveille le Québec en semaine ?",
+      "reponse": "Salut Bonjour",
+      "niveau": 2,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quels tambours se frappent en cercle dans les parcs de Montréal le dimanche ?",
-      "reponse": "Les tam-tams",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
-      "reponse": "La tire d'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
-      "reponse": "Mariana Mazza",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle plage du Maine est la destination classique des vacances québécoises ?",
-      "reponse": "Old Orchard",
+      "question": "Quelle chanteuse québécoise a gagné Eurovision pour la Suisse en 1988 ?",
+      "reponse": "Céline Dion",
       "niveau": 2,
       "ages": [
+        "enfants",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle émission jeunesse québécoise a Passe-Montagne ?",
-      "reponse": "Passe-Partout",
-      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -129,34 +92,32 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
-      "reponse": "Klô Pelgag",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
+      "reponse": "La tire d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel océan sépare le Québec de l'Europe ?",
+      "reponse": "L'océan Atlantique",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel humoriste québécois jouait le concierge Symphorien ?",
-      "reponse": "Gilles Latulippe",
-      "niveau": 3,
+      "question": "Quelle carte à puce sert à payer le métro et l'autobus à Montréal ?",
+      "reponse": "La carte Opus",
+      "niveau": 2,
       "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel pays a la feuille d'érable sur son drapeau ?",
-      "reponse": "Le Canada",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quel avare célèbre du terroir québécois aime son argent ?",
-      "reponse": "Séraphin",
+      "question": "Quelle animatrice québécoise animait Le Banquier ?",
+      "reponse": "Julie Snyder",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -164,18 +125,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
-      "reponse": "Le tramway",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
-      "reponse": "Nézet-Séguin",
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
+      "reponse": "L'inlandsis",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -183,35 +135,91 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?",
-      "reponse": "Le yéyé",
-      "niveau": 3,
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit bleu garnit les muffins et les tartes au Québec ?",
+      "reponse": "Le bleuet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel énorme bloc de calcaire troué se dresse dans la mer en Gaspésie ?",
+      "reponse": "Le rocher Percé",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Sur quelle île de Montréal se court le Grand Prix de Formule 1 ?",
+      "reponse": "L'île Notre-Dame",
+      "niveau": 1,
       "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle bataille de 1759 a fait passer Québec aux mains des Britanniques ?",
-      "reponse": "La bataille des plaines d'Abraham",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois a créé la série Les Beaux Malaises ?",
-      "reponse": "Martin Matte",
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne un enfant ?",
+      "reponse": "Un flo",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel objet orange envahit les rues de Montréal chaque été ?",
-      "reponse": "Le cône",
+      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
+      "reponse": "Quétaine",
       "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert québécois est un gâteau arrosé de sauce sucrée ?",
+      "reponse": "Pouding chômeur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle pharmacie québécoise promet qu'on y trouve de tout, même un ami ?",
+      "reponse": "Jean Coutu",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
+      "reponse": "Montréal",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant du Saguenay ?",
+      "reponse": "Un Saguenéen",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?",
+      "reponse": "La baie James",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",

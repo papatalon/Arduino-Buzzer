@@ -7,18 +7,61 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quelle émission du samedi soir diffusait le hockey à Radio-Canada ?",
-      "reponse": "La Soirée du hockey",
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
+      "reponse": "L'Alberta",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle bibliothèque nationale ouverte en 2005 se dresse près de Berri-UQAM ?",
+      "reponse": "La Grande Bibliothèque",
       "niveau": 3,
       "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport oppose deux nageurs qui se poussent un ballon dans une piscine ?",
+      "reponse": "Le water-polo",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre canadien a dirigé pendant la Seconde Guerre ?",
+      "reponse": "Mackenzie King",
+      "niveau": 3,
+      "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel instrument à cordes pincées, plus petit qu'un piano droit, symbolise l'Irlande ?",
-      "reponse": "La harpe celtique",
+      "categorie": "Québec",
+      "question": "Quelle barrière de longues pièces de bois croisées entourait les vieilles fermes d'ici ?",
+      "reponse": "Une clôture de perches",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
+      "reponse": "Le 7 Jours",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
+      "reponse": "Le Village Vacances Valcartier",
       "niveau": 3,
       "ages": [
         "ados",
@@ -27,9 +70,127 @@
       ]
     },
     {
+      "categorie": "Musique",
+      "question": "Quel style jamaïcain a précédé le reggae ?",
+      "reponse": "Le ska",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui dirige une chorale ?",
+      "reponse": "Un chef de chœur",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays insulaire du nord de l'Atlantique compte des volcans et des geysers ?",
+      "reponse": "L'Islande",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quels petits élastiques colorés se tressent en bracelets sur un métier ?",
+      "reponse": "Les Rainbow Loom",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel appareil envoyait des messages en points et en traits sur des fils ?",
+      "reponse": "Le télégraphe",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
+      "reponse": "Cracké",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission de Radio-Canada vulgarise la science le dimanche soir ?",
+      "reponse": "Découverte",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on un extrait de chanson repris dans une autre chanson ?",
+      "reponse": "Un échantillon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on celui qui exploite une érablière ?",
+      "reponse": "Un acériculteur",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil fallait-il installer sur le toit pour capter les chaînes de télé ?",
+      "reponse": "L'antenne",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Histoire",
       "question": "Sur quel navire Darwin a-t-il navigué ?",
       "reponse": "Le Beagle",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel descripteur de hockey a marqué des générations par son français impeccable ?",
+      "reponse": "René Lecavalier",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel rappeur américain tatoué au visage a chanté Circles ?",
+      "reponse": "Post Malone",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
+      "reponse": "Pierre de Rosette",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -47,169 +208,13 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
-      "reponse": "Josée di Stasio",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle ligue de hockey junior regroupe les équipes du Québec et des Maritimes ?",
-      "reponse": "La LHJMQ",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel nom porte le jalapeño fumé ?",
-      "reponse": "Chipotle",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel ancêtre du piano pince ses cordes au lieu de les frapper ?",
-      "reponse": "Le clavecin",
+      "question": "Quelle pâte à tartiner australienne est très salée ?",
+      "reponse": "La Vegemite",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil de chauffage exigeait qu'on remplisse la boîte à bois ?",
-      "reponse": "Le poêle à bois",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle gomme rose se vendait avec une petite bande dessinée dans l'emballage ?",
-      "reponse": "La Bazooka",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport pratique la famille Hart de Calgary ?",
-      "reponse": "La lutte",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel compositeur français a écrit le Boléro ?",
-      "reponse": "Ravel",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel xylophone africain a des calebasses ?",
-      "reponse": "Le balafon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit boîtier rond de poche contient une maison miniature ?",
-      "reponse": "Le Polly Pocket",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays insulaire du nord de l'Atlantique compte des volcans et des geysers ?",
-      "reponse": "L'Islande",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la banque coopérative très répandue au Québec ?",
-      "reponse": "La caisse populaire",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel premier ministre canadien a dirigé pendant la Seconde Guerre ?",
-      "reponse": "Mackenzie King",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel arbre fut ajouté au drapeau de Montréal en 2017 ?",
-      "reponse": "Le pin blanc",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel traitement de coiffure des années 80 frisait les cheveux pour des mois ?",
-      "reponse": "La permanente",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de touches noires compte un piano ?",
-      "reponse": "36",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel revêtement de sol en rouleau couvrait les cuisines avant le plancher flottant ?",
-      "reponse": "Le prélart",
-      "niveau": 3,
-      "ages": [
         "aines"
       ]
     },
@@ -224,25 +229,9 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel appareil envoyait des messages en points et en traits sur des fils ?",
-      "reponse": "Le télégraphe",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
-      "reponse": "Pierre de Rosette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
-      "reponse": "L'Alberta",
+      "categorie": "Musique",
+      "question": "Quelle figure de note vaut quatre temps, la plus longue de toutes ?",
+      "reponse": "La ronde",
       "niveau": 3
     }
   ]

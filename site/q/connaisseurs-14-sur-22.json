@@ -7,19 +7,15 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quels petits élastiques colorés se tressent en bracelets sur un métier ?",
-      "reponse": "Les Rainbow Loom",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le fait de jouer en inventant, sans partition ?",
+      "reponse": "L'improvisation",
+      "niveau": 3
     },
     {
-      "categorie": "Histoire",
-      "question": "En quelle année l'URSS a-t-elle disparu ?",
-      "reponse": "1991",
+      "categorie": "Mots et langue",
+      "question": "Masculin d'abeille ?",
+      "reponse": "Le faux bourdon",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -27,9 +23,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
-      "reponse": "Le Village Vacances Valcartier",
+      "categorie": "Québec",
+      "question": "Quel sanctuaire au dôme vert domine le flanc du mont Royal ?",
+      "reponse": "L'Oratoire Saint-Joseph",
       "niveau": 3,
       "ages": [
         "ados",
@@ -39,8 +35,69 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle bénédiction le père de famille donnait-il aux siens le matin du 1er janvier ?",
-      "reponse": "La bénédiction paternelle",
+      "question": "Quel jeu de cordelette passe de mains en mains en formant des figures géométriques ?",
+      "reponse": "Le jeu de la ficelle",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Où logeait le curé de la paroisse ?",
+      "reponse": "Au presbytère",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la longue lettre gravée dans la pierre pour raconter un règne ?",
+      "reponse": "Une inscription",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qui a créé le tableau périodique ?",
+      "reponse": "Mendeleïev",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel écrivain russe a écrit Guerre et Paix ?",
+      "reponse": "Tolstoï",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel grand rendez-vous de novembre réunit éditeurs et auteurs au Palais des congrès de Montréal ?",
+      "reponse": "Le Salon du livre",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
+      "reponse": "Les Plouffe",
       "niveau": 3,
       "ages": [
         "aines"
@@ -57,15 +114,9 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le service réussi que l'adversaire ne touche pas au tennis ?",
-      "reponse": "Un as",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "En quelle année le métro de Montréal a-t-il ouvert ?",
-      "reponse": "1966",
+      "categorie": "Culture pop",
+      "question": "Quel vêtement des années 60 a scandalisé en raccourcissant brusquement ?",
+      "reponse": "La minijupe",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -73,13 +124,30 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film coréen de 2019 est devenu le premier film non anglophone à gagner l'Oscar du meilleur film ?",
-      "reponse": "Parasite",
+      "categorie": "Histoire",
+      "question": "Quel savant italien a affirmé que la Terre tourne autour du Soleil ?",
+      "reponse": "Galilée",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?",
+      "reponse": "Un tir de barrage",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "À quelle famille d'instruments appartient la flûte ?",
+      "reponse": "Les bois",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -93,94 +161,9 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Capitale de la Nouvelle-Zélande ?",
-      "reponse": "Wellington",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Quel petit objet de métal en forme de fourche donne le la aux musiciens ?",
-      "reponse": "Un diapason",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui a composé la musique de l'hymne O Canada ?",
-      "reponse": "Calixa Lavallée",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
-      "reponse": "Le smoked meat",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel écrivain russe a écrit Guerre et Paix ?",
-      "reponse": "Tolstoï",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la distance entre un do et le do suivant ?",
-      "reponse": "Une octave",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Qui a créé le tableau périodique ?",
-      "reponse": "Mendeleïev",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à vent se joue en soufflant dans une anche double, au son nasillard ?",
-      "reponse": "Le hautbois",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle science étudie l'origine et l'histoire des mots ?",
-      "reponse": "L'étymologie",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle pianiste et chanteuse québécoise se fait appeler Cœur de pirate ?",
-      "reponse": "Béatrice Martin",
+      "question": "Quelle chanson de Bon Jovi raconte Tommy et Gina à mi-chemin ?",
+      "reponse": "Livin' on a Prayer",
       "niveau": 3,
       "ages": [
         "ados",
@@ -189,8 +172,18 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu électronique rond répète une suite de couleurs et de sons à imiter ?",
-      "reponse": "Le Simon",
+      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
+      "reponse": "Big Brother Célébrités",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel fleuve César a-t-il franchi en disant le sort en est jeté ?",
+      "reponse": "Le Rubicon",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -207,34 +200,48 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel artiste québécois a fait sensation avec l'album Darlène ?",
-      "reponse": "Hubert Lenoir",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle soupe russe est rouge betterave ?",
+      "reponse": "Le bortsch",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel savant italien a affirmé que la Terre tourne autour du Soleil ?",
-      "reponse": "Galilée",
-      "niveau": 3
+      "categorie": "Musique",
+      "question": "Quelle chanteuse américaine a chanté Espresso en 2024 ?",
+      "reponse": "Sabrina Carpenter",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle prière se récitait en famille à la radio, chaque soir, dans les années 50 ?",
-      "reponse": "Le chapelet",
+      "question": "Quelle série québécoise se déroulait dans Charlevoix après la Première Guerre ?",
+      "reponse": "Le temps d'une paix",
       "niveau": 3,
       "ages": [
         "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la longue lettre gravée dans la pierre pour raconter un règne ?",
-      "reponse": "Une inscription",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le bruit désagréable d'un micro trop près d'un haut-parleur ?",
+      "reponse": "Le larsen",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Nouvelle-Zélande ?",
+      "reponse": "Wellington",
       "niveau": 3,
       "ages": [
         "adultes",

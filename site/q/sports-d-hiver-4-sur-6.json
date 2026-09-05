@@ -8,38 +8,14 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel patineur québécois a remporté quatre médailles d'or olympiques en courte piste ?",
-      "reponse": "Charles Hamelin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel descripteur de hockey a marqué des générations par son français impeccable ?",
-      "reponse": "René Lecavalier",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle station de ski domine le fleuve dans Charlevoix ?",
-      "reponse": "Le Massif",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Combien de temps dure une punition mineure au hockey ?",
+      "reponse": "Deux minutes",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation suit un mammouth, un paresseux et un tigre à dents de sabre ?",
-      "reponse": "L'Âge de glace",
+      "question": "Dans quel film d'animation un mammouth, un paresseux et un tigre à dents de sabre voyagent-ils ensemble ?",
+      "reponse": "L'Ère de glace",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -48,21 +24,80 @@
       ]
     },
     {
+      "categorie": "Sports",
+      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
+      "reponse": "Le patinage artistique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle saison amène la neige au Québec ?",
+      "reponse": "L'hiver",
+      "niveau": 1
+    },
+    {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la neige poussée par le vent qui empêche de voir la route ?",
-      "reponse": "La poudrerie",
-      "niveau": 2
+      "question": "Comment appelle-t-on la grosse chute qui blanchit tout en une nuit ?",
+      "reponse": "Une bordée de neige",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
-      "reponse": "Le slalom",
+      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
+      "reponse": "Alexandre Bilodeau",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
+      "reponse": "Orange",
       "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport pratique la famille Hart de Calgary ?",
+      "reponse": "La lutte",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
       "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
       "reponse": "Quatre ans",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on au Québec la neige mouillée et boueuse du printemps ?",
+      "reponse": "La slush",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel cidre québécois est pressé après les gelées ?",
+      "reponse": "Cidre de glace",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que chausse-t-on par-dessus ses souliers pour marcher dans la neige ?",
+      "reponse": "Des bottes",
       "niveau": 1
     },
     {
@@ -78,115 +113,74 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport surfe sur la neige ?",
-      "reponse": "La planche à neige",
+      "question": "Quel trophée remporte le champion de la LNH ?",
+      "reponse": "La coupe Stanley",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Comment s'appelle une maison faite de blocs de neige ?",
-      "reponse": "Un igloo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel dessert de la cabane à sucre se roule sur la neige avec un bâton ?",
-      "reponse": "La tire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle saison amène la neige au Québec ?",
-      "reponse": "L'hiver",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
-      "reponse": "La granita",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel équipement protège la tête à vélo et au hockey ?",
-      "reponse": "Le casque",
+      "question": "Comment s'appelle le joueur qui garde le filet au hockey ?",
+      "reponse": "Le gardien de but",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la couche de glace qui se forme au bord des toits ?",
-      "reponse": "Une barrière de glace",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle course de traîneaux à chiens traverse l'Alaska ?",
-      "reponse": "L'Iditarod",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel bâtiment abrite une patinoire intérieure dans la plupart des villes du Québec ?",
-      "reponse": "Un aréna",
+      "question": "Quel gros camion dégage la neige des rues après une tempête ?",
+      "reponse": "Une charrue",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle confiserie d'érable se roule sur la neige ?",
-      "reponse": "La tire",
+      "categorie": "Québec",
+      "question": "Quelle machine bruyante lance la neige de côté dans l'entrée ?",
+      "reponse": "Une souffleuse",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de table fait glisser un palet sur un coussin d'air ?",
-      "reponse": "Le air hockey",
-      "niveau": 2,
+      "question": "Quel descripteur de hockey a marqué des générations par son français impeccable ?",
+      "reponse": "René Lecavalier",
+      "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "aines"
       ]
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
+      "reponse": "La tire d'érable",
+      "niveau": 1
+    },
+    {
       "categorie": "Sports",
-      "question": "Quel objet frappe-t-on au hockey ?",
-      "reponse": "La rondelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle reine a des pouvoirs de glace chez Disney ?",
-      "reponse": "Elsa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle opération municipale suit chaque bordée de neige dans les rues ?",
-      "reponse": "Le déneigement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le mur de neige que la charrue laisse au bout de l'entrée ?",
-      "reponse": "Un banc de neige",
+      "question": "Comment appelle-t-on le moment où l'arbitre laisse tomber la rondelle entre deux joueurs ?",
+      "reponse": "La mise au jeu",
       "niveau": 2
     },
     {
+      "categorie": "Sports",
+      "question": "Quel gardien du New Jersey a gagné 691 matchs en carrière ?",
+      "reponse": "Martin Brodeur",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
+      "reponse": "Le cardinal",
+      "niveau": 3
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Que bâtit-on avec trois boules de neige, une carotte et des boutons ?",
-      "reponse": "Un bonhomme de neige",
-      "niveau": 1
+      "question": "Quel engin motorisé souffle la neige des entrées de garage l'hiver ?",
+      "reponse": "La souffleuse",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

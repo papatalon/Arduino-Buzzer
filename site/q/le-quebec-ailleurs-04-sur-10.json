@@ -8,9 +8,119 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse de Charlemagne est devenue une vedette mondiale dans les années 90 ?",
-      "reponse": "Céline Dion",
+      "question": "Quel groupe québécois a chanté La complainte du phoque en Alaska ?",
+      "reponse": "Beau Dommage",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes du Québec attire les skieurs au nord de Montréal ?",
+      "reponse": "Les Laurentides",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
+      "reponse": "Michel Louvain",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle quincaillerie québécoise portait un prénom dans son enseigne ?",
+      "reponse": "Pascal",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
+      "reponse": "Le Banquier",
       "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chansonnier a écrit Mon pays ?",
+      "reponse": "Gilles Vigneault",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la capitale de la province de Québec ?",
+      "reponse": "La ville de Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?",
+      "reponse": "Le yéyé",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quels trois étages composent le pâté chinois ?",
+      "reponse": "Bœuf maïs patates",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
+      "reponse": "Georges St-Pierre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle pianiste et chanteuse québécoise se fait appeler Cœur de pirate ?",
+      "reponse": "Béatrice Martin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne parle surtout français ?",
+      "reponse": "Le Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
+      "reponse": "MusiquePlus",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle mascotte orange et poilue est passée des Expos aux Canadiens ?",
+      "reponse": "Youppi",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -19,57 +129,15 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
-      "reponse": "Alexandre Bilodeau",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "question": "Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?",
+      "reponse": "Le Canadien",
+      "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
-      "reponse": "Les Denis Drolet",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission matinale de TVA réveille le Québec en semaine ?",
-      "reponse": "Salut Bonjour",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
-      "reponse": "Pierre Falardeau",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe progressif québécois a fait L'Heptade ?",
-      "reponse": "Harmonium",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel concours de chant québécois lance des carrières depuis 2003 ?",
-      "reponse": "Star Académie",
-      "niveau": 2,
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant de Terre-Neuve ?",
+      "reponse": "Un Terre-Neuvien",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -78,38 +146,21 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
-      "reponse": "Cracké",
-      "niveau": 3,
+      "question": "Quel chef québécois donne son prénom à un magazine, une émission et une gamme de produits ?",
+      "reponse": "Ricardo",
+      "niveau": 2,
       "ages": [
-        "enfants",
-        "ados"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle fête québécoise célèbre le blé d'Inde ?",
-      "reponse": "L'épluchette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
-      "reponse": "L'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelles pièces de bois claque-t-on entre les doigts au Québec ?",
-      "reponse": "Les cuillères",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
-      "reponse": "Arthur Laroche",
-      "niveau": 2,
+      "categorie": "Culture pop",
+      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
+      "reponse": "La fin de semaine des Patriotes",
+      "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
@@ -126,29 +177,24 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
-      "reponse": "Josée di Stasio",
+      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
+      "reponse": "Les Classels",
       "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?",
-      "reponse": "La tire sur la neige",
-      "niveau": 1
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
+      "reponse": "L'hémisphère nord",
+      "niveau": 3
     },
     {
-      "categorie": "Musique",
-      "question": "Quel grand festival de musique se tient sur les plaines d'Abraham en juillet ?",
-      "reponse": "Le Festival d'été de Québec",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois barrer la porte ?",
+      "reponse": "Verrouiller",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
@@ -157,31 +203,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle tartinade blanche accompagne le bagel ?",
-      "reponse": "Fromage à la crème",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel mot québécois désigne les bonbons ?",
-      "reponse": "Des nananes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
-      "reponse": "La ceinture fléchée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série québécoise suivait une famille qui vivait de combines et d'aide sociale ?",
-      "reponse": "Les Bougon",
+      "categorie": "Sports",
+      "question": "Quel lanceur québécois a gagné un Cy Young ?",
+      "reponse": "Éric Gagné",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -189,32 +213,10 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle est la capitale de la province de Québec ?",
-      "reponse": "La ville de Québec",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel repas québécois se mange le midi ?",
-      "reponse": "Le dîner",
+      "question": "Quel poisson fumé garnit le bagel classique ?",
+      "reponse": "Le saumon fumé",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage rouge et blanc à tuque se cache dans des foules dessinées ?",
-      "reponse": "Charlie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
-      "reponse": "Le Forum",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

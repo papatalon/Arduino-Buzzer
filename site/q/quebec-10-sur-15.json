@@ -8,9 +8,9 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Quel gala québécois récompense la télévision ?",
-      "reponse": "Les Gémeaux",
-      "niveau": 1,
+      "question": "Quel mot québécois désigne le fait de flâner sans but ?",
+      "reponse": "Niaiser",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -19,15 +19,70 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle rôtisserie québécoise est célèbre pour son poulet BBQ ?",
-      "reponse": "St-Hubert",
+      "question": "Quel arbre du Québec donne des cocottes que les enfants ramassent ?",
+      "reponse": "Le pin",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle plantation d'érables se visite au printemps ?",
-      "reponse": "Une érablière",
+      "question": "Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?",
+      "reponse": "Une corde de bois",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle tour cylindrique de la ferme conserve la nourriture des vaches ?",
+      "reponse": "Un silo",
       "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle équipe de la Ligue nationale joue ses matchs locaux à Montréal ?",
+      "reponse": "Les Canadiens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle embarcation traverse le fleuve gelé au Carnaval ?",
+      "reponse": "Le canot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois familier remplace « très froid » ?",
+      "reponse": "Frette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le réseau de tuyaux qui recueille l'eau d'érable ?",
+      "reponse": "La tubulure",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle émission culte met en scène Popa et Moman ?",
+      "reponse": "La Petite Vie",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle chanteuse rock québécoise a chanté Provocante ?",
+      "reponse": "Marjo",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
@@ -37,26 +92,14 @@
     },
     {
       "categorie": "Québec",
-      "question": "Combien reçoit-on en rapportant une canette consignée ?",
-      "reponse": "Cinq sous",
+      "question": "Quel mot québécois désigne un petit trou dans l'asphalte après l'hiver ?",
+      "reponse": "Un nid-de-poule",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quelle plaque de métal à l'arrière de l'auto porte « Je me souviens » ?",
-      "reponse": "La plaque d'immatriculation",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quels pneus la loi québécoise impose-t-elle du 1er décembre au 15 mars ?",
-      "reponse": "Les pneus d'hiver",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel explorateur a hiverné à Stadaconé en 1535 ?",
-      "reponse": "Jacques Cartier",
+      "question": "Comment appelle-t-on la fin de semaine du 1er juillet où tout le monde déménage ?",
+      "reponse": "Le jour du déménagement",
       "niveau": 2,
       "ages": [
         "ados",
@@ -66,20 +109,48 @@
     },
     {
       "categorie": "Québec",
-      "question": "Qui est la mascotte du Carnaval de Québec ?",
-      "reponse": "Bonhomme Carnaval",
+      "question": "Que met-on aux mains pour ne pas avoir froid, avec un seul compartiment pour les doigts ?",
+      "reponse": "Des mitaines",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle sortie familiale attire les Québécois dans les vergers en septembre ?",
-      "reponse": "L'autocueillette",
+      "question": "Quelle université montréalaise fut fondée en 1821 ?",
+      "reponse": "McGill",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle carte donne accès aux soins de santé gratuits au Québec ?",
+      "reponse": "La carte soleil",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que veut dire « embarque dans l'auto » ?",
+      "reponse": "Monte dans l'auto",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quelle ville se proclame capitale mondiale de l'érable ?",
-      "reponse": "Plessisville",
+      "question": "Quel appareil sèche les vêtements après le lavage ?",
+      "reponse": "La sécheuse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la grosse chute qui blanchit tout en une nuit ?",
+      "reponse": "Une bordée de neige",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -88,15 +159,15 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la semaine de congé scolaire du début mars ?",
-      "reponse": "La relâche",
-      "niveau": 1
+      "question": "Quel musée montréalais expose des insectes vivants et naturalisés ?",
+      "reponse": "L'Insectarium",
+      "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quel fjord spectaculaire abrite des bélugas ?",
-      "reponse": "Fjord du Saguenay",
-      "niveau": 1,
+      "question": "Quel pont cantilever centenaire relie Québec et Lévis ?",
+      "reponse": "Le pont de Québec",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -105,8 +176,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel chanteur québécois a chanté Le Blues du businessman ?",
-      "reponse": "Claude Dubois",
+      "question": "Quel animateur québécois a animé La Poule aux œufs d'or ?",
+      "reponse": "Guy Mongrain",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -115,24 +186,19 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle opération municipale suit chaque bordée de neige dans les rues ?",
-      "reponse": "Le déneigement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel comédien incarne Elvis Gratton ?",
-      "reponse": "Julien Poulin",
-      "niveau": 2,
+      "question": "Quel hockeyeur était surnommé le Rocket ?",
+      "reponse": "Maurice Richard",
+      "niveau": 1,
       "ages": [
+        "enfants",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la couche de glace qui se forme au bord des toits ?",
-      "reponse": "Une barrière de glace",
+      "question": "Comment appelle-t-on l'air de danse traditionnel joué au violon dans les veillées d'ici ?",
+      "reponse": "Un rigodon",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -141,63 +207,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne le chandail chaud à capuchon ?",
-      "reponse": "Un coton ouaté",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle basilique du Vieux-Montréal a un plafond bleu étoilé ?",
-      "reponse": "Notre-Dame",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel dessert de la cabane à sucre se roule sur la neige avec un bâton ?",
-      "reponse": "La tire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel pâté à la viande mange-t-on dans le temps des fêtes ?",
-      "reponse": "La tourtière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on une grande école secondaire publique au Québec ?",
-      "reponse": "Une polyvalente",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel homme fort québécois du 19e siècle est réputé le plus fort de l'histoire ?",
-      "reponse": "Louis Cyr",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel joueur québécois des Penguins était surnommé le Magnifique ?",
-      "reponse": "Mario Lemieux",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel outil racle la neige des pare-brise ?",
-      "reponse": "Un gratteux",
+      "question": "Quel sirop est une spécialité du Québec ?",
+      "reponse": "Le sirop d'érable",
       "niveau": 1
     }
   ]

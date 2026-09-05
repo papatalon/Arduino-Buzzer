@@ -7,48 +7,50 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Irlande ?",
-      "reponse": "Dublin",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle école accueille les jeunes mutants ?",
+      "reponse": "École de Xavier",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage vert déteste Noël ?",
-      "reponse": "Le Grincheux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de rondes maximum en boxe professionnelle ?",
-      "reponse": "Douze",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur incarne Iron Man au cinéma ?",
-      "reponse": "Robert Downey Jr",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel bâton tendu de crin frotte les cordes du violon ?",
-      "reponse": "Un archet",
+      "question": "Quel compositeur allemand est devenu sourd ?",
+      "reponse": "Beethoven",
       "niveau": 2
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du chat ?",
+      "reponse": "Le miaulement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que construit-on avec un seau et une pelle au bord de l'eau ?",
+      "reponse": "Un château de sable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien d'œufs contient une douzaine ?",
+      "reponse": "Douze œufs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel savant italien a braqué une lunette vers le ciel ?",
+      "reponse": "Galilée",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -63,9 +65,9 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot comme mais ou donc ?",
-      "reponse": "Une conjonction",
-      "niveau": 2,
+      "question": "Que signifie poser un lapin ?",
+      "reponse": "Ne pas venir",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -73,31 +75,22 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel Beatle a chanté Imagine en solo ?",
-      "reponse": "John Lennon",
+      "categorie": "Québec",
+      "question": "Quelle île du Saint-Laurent fut une station de quarantaine ?",
+      "reponse": "Grosse-Île",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
-      "reponse": "Dans une galaxie près de chez vous",
-      "niveau": 3,
+      "question": "Sur quelle machine tapait-on une lettre avant l'ordinateur ?",
+      "reponse": "La machine à écrire",
+      "niveau": 2,
       "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à cordes pincées, plus petit qu'un piano droit, symbolise l'Irlande ?",
-      "reponse": "La harpe celtique",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -109,26 +102,52 @@
       "niveau": 2
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on un groupe de loups qui chassent ensemble ?",
-      "reponse": "Une meute",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle activité d'hiver descend une pente sur un traîneau ou une chambre à air ?",
-      "reponse": "La glissade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans quel jeu de société conquiert-on des territoires sur une carte du monde ?",
-      "reponse": "Le Risk",
-      "niveau": 3,
+      "categorie": "Géographie",
+      "question": "Capitale de l'Irlande ?",
+      "reponse": "Dublin",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel agent secret britannique aime les martinis ?",
+      "reponse": "James Bond",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle gomme permet de faire des bulles ?",
+      "reponse": "Gomme balloune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a inventé le World Wide Web ?",
+      "reponse": "Tim Berners-Lee",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle note suit le si dans la gamme ?",
+      "reponse": "Le do",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel humoriste montréalais fait des spectacles bilingues ?",
+      "reponse": "Sugar Sammy",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     },
     {
@@ -143,31 +162,31 @@
       ]
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel gros Gaulois livre des menhirs et déteste qu'on le traite de gros ?",
+      "reponse": "Obélix",
+      "niveau": 2
+    },
+    {
       "categorie": "Sports",
-      "question": "Dans quoi faut-il faire entrer le ballon pour marquer au basketball ?",
-      "reponse": "Le panier",
-      "niveau": 1
+      "question": "Quel sport d'hiver glisse une pierre vers une cible en balayant la glace ?",
+      "reponse": "Le curling",
+      "niveau": 2
     },
     {
-      "categorie": "Québec",
-      "question": "Quel petit rongeur rayé du Québec remplit ses joues de graines ?",
-      "reponse": "Le suisse",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Qui a inventé le World Wide Web ?",
-      "reponse": "Tim Berners-Lee",
+      "categorie": "Sports",
+      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
+      "reponse": "Tessa Virtue",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roi lion est le père de Simba ?",
-      "reponse": "Mufasa",
+      "categorie": "Sports",
+      "question": "Quelle activité se pratique avec une canne et un hameçon ?",
+      "reponse": "La pêche",
       "niveau": 1
     },
     {
@@ -177,48 +196,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles noix entrent dans le pesto génois ?",
-      "reponse": "Les pignons",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel savant italien a braqué une lunette vers le ciel ?",
-      "reponse": "Galilée",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien d'œufs contient une douzaine ?",
-      "reponse": "Douze œufs",
+      "categorie": "Musique",
+      "question": "Quel style de musique passe le plus souvent à la radio et fait danser tout le monde ?",
+      "reponse": "La pop",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le réseau de tuyaux qui recueille l'eau d'érable ?",
-      "reponse": "La tubulure",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle confiserie d'érable se roule sur la neige ?",
-      "reponse": "La tire",
+      "question": "Quel poisson fumé garnit le bagel classique ?",
+      "reponse": "Le saumon fumé",
       "niveau": 1
     }
   ]

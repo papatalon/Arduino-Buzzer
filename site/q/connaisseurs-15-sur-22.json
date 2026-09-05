@@ -7,9 +7,9 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Quel fleuve César a-t-il franchi en disant le sort en est jeté ?",
-      "reponse": "Le Rubicon",
+      "categorie": "Culture pop",
+      "question": "Quel appareil de poche vibrait pour dire de rappeler quelqu'un, avant le cellulaire ?",
+      "reponse": "Le téléavertisseur",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -17,9 +17,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Daft Punk répète qu'on est plus fort, meilleur et plus rapide ?",
-      "reponse": "Harder, Better, Faster, Stronger",
+      "categorie": "Histoire",
+      "question": "Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?",
+      "reponse": "Le télescope James Webb",
       "niveau": 3,
       "ages": [
         "ados",
@@ -27,13 +27,49 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle pâte à tartiner orange se vend en pot et se met sur les rôties ?",
-      "reponse": "Le Cheez Whiz",
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
+      "reponse": "La tradition orale",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument de flûtes de longueurs différentes se joue en soufflant à leur bord ?",
+      "reponse": "La flûte de Pan",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
+      "reponse": "Pizarro",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission de variétés pour adolescents Véronique Cloutier a-t-elle animée ?",
+      "reponse": "La Fureur",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe italien a gagné l'Eurovision en 2021 en jouant du rock ?",
+      "reponse": "Måneskin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     },
     {
@@ -47,24 +83,35 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel poète québécois a écrit L'homme rapaillé ?",
-      "reponse": "Gaston Miron",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
       "categorie": "Géographie",
       "question": "Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?",
       "reponse": "Le pont Champlain",
       "niveau": 3
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus grande lune de Saturne ?",
-      "reponse": "Titan",
+      "categorie": "Québec",
+      "question": "Quel est l'arbre emblème du Québec ?",
+      "reponse": "Le bouleau jaune",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel philosophe grec fut le maître d'Alexandre ?",
+      "reponse": "Aristote",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel coureur éthiopien a gagné le marathon pieds nus ?",
+      "reponse": "Abebe Bikila",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -73,40 +120,10 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
-      "reponse": "Steinberg",
+      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
+      "reponse": "Willie Lamothe",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
-      "reponse": "Pizarro",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à soufflet accompagne le tango ?",
-      "reponse": "Le bandonéon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du sanglier ?",
-      "reponse": "La laie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
         "aines"
       ]
     },
@@ -122,9 +139,48 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle émission québécoise fait juger des numéros de danse par des maîtres ?",
-      "reponse": "Révolution",
+      "categorie": "Cinéma et télé",
+      "question": "Quel film coréen de 2019 est devenu le premier film non anglophone à gagner l'Oscar du meilleur film ?",
+      "reponse": "Parasite",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on un mot qui a plusieurs sens ?",
+      "reponse": "Polysémique",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse de jazz était surnommée Lady Day ?",
+      "reponse": "Billie Holiday",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
+      "reponse": "Loud",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la partie creuse de la guitare qui fait résonner le son ?",
+      "reponse": "La caisse",
       "niveau": 3,
       "ages": [
         "ados",
@@ -133,15 +189,18 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle note dure deux fois moins longtemps qu'une blanche ?",
-      "reponse": "La noire",
-      "niveau": 3
+      "categorie": "Culture pop",
+      "question": "Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?",
+      "reponse": "Fanfreluche",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de cordelette passe de mains en mains en formant des figures géométriques ?",
-      "reponse": "Le jeu de la ficelle",
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus grande lune de Saturne ?",
+      "reponse": "Titan",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -149,97 +208,38 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le bruit désagréable d'un micro trop près d'un haut-parleur ?",
-      "reponse": "Le larsen",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson indienne mélange yogourt et mangue ?",
+      "reponse": "Le lassi",
       "niveau": 3,
       "ages": [
         "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel tapis à longs poils habillait les salons des années 70 ?",
+      "reponse": "Le shag",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel petit rongeur rayé du Québec remplit ses joues de graines ?",
-      "reponse": "Le suisse",
+      "question": "Quel petit fruit rouge se cueille dans les tourbières du Québec l'automne ?",
+      "reponse": "La canneberge",
       "niveau": 3
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission de variétés pour adolescents Véronique Cloutier a-t-elle animée ?",
-      "reponse": "La Fureur",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle sauce verte argentine accompagne les grillades ?",
-      "reponse": "Le chimichurri",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
-      "reponse": "Tessa Virtue",
+      "question": "Quel site de mode en ligne inonde le marché de vêtements à très bas prix ?",
+      "reponse": "Shein",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?",
-      "reponse": "Le télescope James Webb",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de véhicules tout-terrain a une calandre à sept fentes ?",
-      "reponse": "Jeep",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel genre de musique douce et répétitive sert de fond sonore pour étudier ?",
-      "reponse": "Le lo-fi",
-      "niveau": 3,
-      "ages": [
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel philosophe grec fut le maître d'Alexandre ?",
-      "reponse": "Aristote",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
-      "reponse": "Les Plouffe",
-      "niveau": 3,
-      "ages": [
-        "aines"
       ]
     }
   ]

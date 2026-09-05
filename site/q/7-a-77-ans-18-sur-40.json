@@ -7,21 +7,9 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du loup ?",
-      "reponse": "Le hurlement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Combien de syllabes compte le mot « chocolat » ?",
-      "reponse": "Trois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume en longues tiges vertes croque avec du beurre d'arachide ?",
-      "reponse": "Le céleri",
+      "categorie": "Sports",
+      "question": "Quelle ligne les coureurs doivent-ils franchir pour terminer une course ?",
+      "reponse": "La ligne d'arrivée",
       "niveau": 1
     },
     {
@@ -36,56 +24,67 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel objet québécois fait disparaître les traits de crayon sur le papier ?",
-      "reponse": "Une efface",
+      "categorie": "Mots et langue",
+      "question": "Que signifie attache ta tuque ?",
+      "reponse": "Prépare-toi",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle embarcation traverse le fleuve gelé au Carnaval ?",
-      "reponse": "Le canot",
+      "question": "Comment appelle-t-on le premier jour de classe après les vacances d'été ?",
+      "reponse": "La rentrée",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle sauce brune très salée accompagne les sushis ?",
-      "reponse": "Sauce soya",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel paquebot réputé insubmersible a heurté un iceberg lors de son premier voyage ?",
-      "reponse": "Le Titanic",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel style de nage porte le nom d'un insecte ?",
-      "reponse": "Le papillon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on l'abri grillagé où vivent les poules ?",
-      "reponse": "Le poulailler",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment s'appelle un groupe de quatre musiciens ?",
-      "reponse": "Un quatuor",
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat orange déteste les lundis et adore la lasagne ?",
+      "reponse": "Garfield",
       "niveau": 1,
       "ages": [
-        "ados",
+        "enfants",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel héros mutant a des griffes en adamantium ?",
-      "reponse": "Wolverine",
+      "question": "Quel garçon au chandail à zigzag est le maître de Snoopy ?",
+      "reponse": "Charlie Brown",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de cartes dans un jeu standard sans jokers ?",
+      "reponse": "52",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie faire la file ?",
+      "reponse": "Attendre son tour",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la petite monnaie qu'on laisse au serveur au restaurant ?",
+      "reponse": "Le pourboire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de degrés dans un angle droit ?",
+      "reponse": "90",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle activité d'hiver descend une pente sur un traîneau ou une chambre à air ?",
+      "reponse": "La glissade",
       "niveau": 1
     },
     {
@@ -95,32 +94,27 @@
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel joueur des Oilers porte le numéro 97 ?",
-      "reponse": "Connor McDavid",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la ville de Venise et ses canaux ?",
-      "reponse": "L'Italie",
+      "categorie": "Musique",
+      "question": "Quel instrument se frappe avec deux baguettes sur une peau tendue ?",
+      "reponse": "Le tambour",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel duo de La Petite Vie dort debout ?",
-      "reponse": "Popa et Moman",
+      "categorie": "Histoire",
+      "question": "Quel paquebot réputé insubmersible a heurté un iceberg lors de son premier voyage ?",
+      "reponse": "Le Titanic",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Que doit-on attacher en s'assoyant dans une auto ?",
-      "reponse": "La ceinture de sécurité",
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du mouton ?",
+      "reponse": "Le bêlement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Dans quel contenant rond et creux verse-t-on les céréales ?",
+      "reponse": "Le bol",
       "niveau": 1
     },
     {
@@ -131,9 +125,53 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la pulsation régulière sur laquelle on tape du pied ?",
-      "reponse": "Le rythme",
+      "question": "Combien de membres comptaient les Beatles ?",
+      "reponse": "Quatre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film de Disney suit un éléphant aux grandes oreilles ?",
+      "reponse": "Dumbo",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel colonel a fondé la chaîne de poulet PFK ?",
+      "reponse": "Sanders",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "De quelle couleur est le drapeau du Québec ?",
+      "reponse": "Bleu et blanc",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve la ville de Venise et ses canaux ?",
+      "reponse": "L'Italie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles figurines allemandes à mains rondes peuplent des châteaux et des fermes ?",
+      "reponse": "Les Playmobil",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -142,39 +180,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien de cartes dans un jeu standard sans jokers ?",
-      "reponse": "52",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de degrés dans un angle droit ?",
-      "reponse": "90",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel artiste fait disparaître des objets devant un public ébahi ?",
-      "reponse": "Un magicien",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle chaîne canadienne vend du café, des beignes et des Timbits ?",
-      "reponse": "Tim Hortons",
+      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
+      "reponse": "Le club sandwich",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chien de dessin animé est le compagnon de Charlie Brown ?",
-      "reponse": "Snoopy",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }
