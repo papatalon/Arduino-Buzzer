@@ -12,6 +12,18 @@
 #   Question|Réponse|niveau|tranches
 #   > Question|Réponse     retouche la question du dessus
 #   - motif                la retire du catalogue
+#   @ noel creatures       ses thématiques, écrites et jamais devinées
+#
+# LES THÉMATIQUES SONT ÉCRITES, PAS DÉDUITES. Elles l'étaient, par mots-clés,
+# et se trompaient sans le dire : « neige » rangeait Blanche-Neige dans Sports
+# d'hiver, « dents » rangeait Les Dents de la mer dans Le corps humain. Une
+# thématique est un jugement sur le sujet de la question, du même ordre que sa
+# catégorie, et la catégorie n'a jamais été devinée.
+#
+# Les huit slugs : noel, quebec-ailleurs, regne-animal, espace, corps-humain,
+# super-heros, creatures, sports-hiver. Un slug inconnu arrête la génération.
+# « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
+# <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
 # LES FAITS ENGAGENT LE JEU. Une question fausse discrédite tout le reste :
 # quelqu'un dans le salon va le savoir. Trois formes ont déjà mordu ici, et
@@ -29,7 +41,9 @@
 # l'extérieur. Ce qui ne se vérifie pas ne s'écrit pas.
 En quelle année Colomb a-t-il atteint l'Amérique ?|1492|2|enfants ados adultes aines
 En quelle année l'homme a-t-il marché sur la Lune ?|1969|2|enfants ados adultes aines
+@ espace
 Qui fut le premier homme sur la Lune ?|Neil Armstrong|1|enfants ados adultes aines
+@ espace
 En quelle année le Titanic a-t-il coulé ?|1912|2|enfants ados adultes aines
 En quelle année le mur de Berlin est-il tombé ?|1989|2|ados adultes aines
 En quelle année a débuté la Révolution française ?|1789|2|ados adultes aines
@@ -91,7 +105,9 @@ Quel général français a lancé l'appel du 18 juin 1940 ?|De Gaulle|2|adultes 
 Quelle bombe a frappé Hiroshima en 1945 ?|La bombe atomique|1|ados adultes aines
 Quels deux blocs s'opposaient durant la guerre froide ?|USA et URSS|2|ados adultes aines
 Quel astronaute canadien a chanté dans l'espace ?|Chris Hadfield|2|enfants ados adultes
+@ espace
 Quelle station spatiale russe a précédé l'ISS ?|Mir|3|adultes aines
+@ espace
 Quel président américain a aboli l'esclavage ?|Lincoln|2|ados adultes aines
 - Politique américaine : président et esclavage.
 Qui a refusé de céder sa place dans un autobus en 1955 ?|Rosa Parks|2|enfants ados adultes aines
@@ -107,11 +123,18 @@ En quelle année eut lieu la bataille des plaines d'Abraham ?|1759|2|ados adulte
 Qui a remporté la bataille des plaines d'Abraham ?|Les Britanniques|1|enfants ados adultes aines
 Quel mur antique protégeait l'Angleterre romaine ?|Mur d'Hadrien|3|adultes aines
 Quel animal fut le premier en orbite ?|La chienne Laïka|2|enfants ados adultes aines
+@ espace
+@ regne-animal
 Qui fut le premier homme dans l'espace ?|Youri Gagarine|2|enfants ados adultes aines
+@ espace
 Qui fut la première femme dans l'espace ?|Valentina Terechkova|3|adultes aines
+@ espace
 Quelle mission a posé les premiers hommes sur la Lune ?|Apollo 11|1|enfants ados adultes aines
+@ espace
 Quel fut le premier satellite artificiel ?|Spoutnik|2|enfants ados adultes aines
+@ espace
 Quel télescope spatial a été lancé en 1990 ?|Hubble|2|enfants ados adultes aines
+@ espace
 Quelle pyramide d'Égypte est la plus grande ?|Khéops|2|ados adultes aines
 Quelle statue égyptienne a un corps de lion ?|Le Sphinx|1|enfants ados adultes aines
 Sur quelle plante les Égyptiens écrivaient-ils ?|Le papyrus|1|enfants ados adultes aines
@@ -125,18 +148,22 @@ Quel philosophe grec fut condamné à boire la ciguë ?|Socrate|2|ados adultes a
 Quel philosophe fut l'élève de Socrate ?|Platon|2|ados adultes aines
 Dans quelle ville est née la démocratie ?|Athènes|2|enfants ados adultes aines
 Quel animal a allaité Romulus et Rémus ?|Une louve|2|enfants ados adultes aines
+@ creatures
+@ regne-animal
 Quel fleuve César a-t-il franchi en disant le sort en est jeté ?|Le Rubicon|3|adultes aines
 Où se tenaient les courses de chars à Rome ?|Le Circus Maximus|3|adultes aines
 Quel chef des Huns a terrorisé l'Europe ?|Attila|2|enfants ados adultes aines
 Quel empereur fut couronné à Rome en l'an 800 ?|Charlemagne|2|enfants ados adultes aines
 Quelle bataille de 1066 a livré l'Angleterre aux Normands ?|Hastings|3|adultes aines
 Autour de quelle table siégeaient les chevaliers d'Arthur ?|La Table ronde|1|enfants ados adultes aines
+@ creatures
 Quelles expéditions religieuses visaient Jérusalem ?|Les croisades|2|enfants ados adultes aines
 Quel ordre de moines soldats gardait les pèlerins ?|Les Templiers|2|ados adultes aines
 Quel chef mongol a fondé un immense empire ?|Gengis Khan|2|ados adultes aines
 Dans quelle ville Jeanne d'Arc fut-elle brûlée ?|Rouen|3|adultes aines
 Quelle guerre opposa France et Angleterre pendant 116 ans ?|Guerre de Cent Ans|2|ados adultes aines
 Quel astronome a placé le Soleil au centre de l'univers ?|Copernic|2|ados adultes aines
+@ espace
 Quel savant italien a braqué une lunette vers le ciel ?|Galilée|2|ados adultes aines
 Quel moine a affiché 95 thèses en 1517 ?|Luther|3|adultes aines
 Quel château fut la résidence de Louis XIV ?|Versailles|1|enfants ados adultes aines
@@ -177,6 +204,7 @@ Quelle guerre a divisé la Corée en 1950 ?|Guerre de Corée|1|ados adultes aine
 Quelle crise de 1962 concernait des missiles ?|Crise de Cuba|2|ados adultes aines
 Quel premier ministre canadien a dirigé pendant la Seconde Guerre ?|Mackenzie King|3|adultes aines
 Quel chirurgien a réalisé la première greffe du cœur ?|Christiaan Barnard|3|adultes aines
+@ corps-humain
 Quel avion supersonique reliait Paris et New York ?|Le Concorde|2|adultes aines
 Quelle guerre d'Asie a pris fin en 1975 ?|Vietnam|2|adultes aines
 Quelles sondes jumelles ont été lancées en 1977 ?|Voyager|3|adultes aines
@@ -186,6 +214,7 @@ En quelle année l'URSS a-t-elle disparu ?|1991|3|adultes aines
 Quel traité de 1992 a créé l'Union européenne ?|Maastricht|3|adultes aines
 Quel tunnel sous la mer a ouvert en 1994 ?|Sous la Manche|1|adultes aines
 Quelle brebis clonée est née en 1996 ?|Dolly|2|adultes aines
+@ regne-animal
 Quelle date redoutaient les informaticiens en 1999 ?|Le 1er janvier 2000|1|adultes aines
 Quelles tours new-yorkaises sont tombées le 11 septembre 2001 ?|World Trade Center|1|enfants ados adultes aines
 - Attentat : rien à faire dans une soirée de jeu.
@@ -194,6 +223,7 @@ Qui a fondé Facebook en 2004 ?|Mark Zuckerberg|1|ados adultes
 Quel fut le premier président noir des États-Unis ?|Obama|1|enfants ados adultes aines
 - Politique américaine : président.
 Quel rover s'est posé sur Mars en 2012 ?|Curiosity|3|ados adultes
+@ espace
 Quel physicien en fauteuil roulant a étudié les trous noirs ?|Stephen Hawking|2|ados adultes aines
 Quelle militante pakistanaise a reçu le Nobel de la paix ?|Malala|2|ados adultes
 Quel capitaine anglais a cartographié le Pacifique ?|James Cook|2|ados adultes aines
@@ -214,18 +244,25 @@ Quel tissu précieux voyageait sur la route de la soie ?|La soie|1|ados adultes 
 Qui a fondé Ville-Marie, la future Montréal ?|Maisonneuve|2|ados adultes aines
 > Qui a fondé Ville-Marie en 1642 ?|Maisonneuve
 Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?|Jeanne Mance|2|ados adultes aines
+@ quebec-ailleurs
 Quel intendant a développé la Nouvelle-France ?|Jean Talon|2|ados adultes aines
+@ quebec-ailleurs
 Quelles jeunes filles furent envoyées peupler la Nouvelle-France ?|Filles du Roy|2|ados adultes aines
+@ quebec-ailleurs
 Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?|Traité de Paris|3|adultes aines
+@ quebec-ailleurs
 Quelle rébellion québécoise eut lieu en 1837 ?|Les Patriotes|2|ados adultes aines
+@ quebec-ailleurs
 Quel chemin de fer a uni le Canada en 1885 ?|Canadien Pacifique|2|ados adultes aines
 Quelle ruée vers l'or a attiré des milliers de gens au Yukon ?|Klondike|2|ados adultes aines
 # Réponse dans la question : « pont québécois » donnait « pont de Québec ».
 Quel pont québécois s'est effondré en 1907 ?|Pont de Québec|2|ados adultes aines
 > Quel pont s'est effondré deux fois pendant sa construction, en 1907 et en 1916 ?|Le pont de Québec
+@ quebec-ailleurs
 Quelle ville canadienne fut dévastée par une explosion en 1917 ?|Halifax|3|adultes aines
 Quel premier ministre a donné son nom à un aéroport de Montréal ?|Trudeau|1|ados adultes aines
 > Quel premier ministre a rapatrié la Constitution et donné son nom à l'aéroport de Montréal ?|Pierre Elliott Trudeau
+@ quebec-ailleurs
 Quelle politique canadienne date de la loi de 1969 ?|Le bilinguisme|2|adultes aines
 Quel Trudeau est devenu premier ministre en 2015 ?|Justin Trudeau|1|ados adultes aines
 En quelle année a débuté la Seconde Guerre mondiale ?|1939|2|ados adultes aines
@@ -243,7 +280,9 @@ Quel révolutionnaire russe a fondé l'URSS ?|Lénine|2|ados adultes aines
 Quel premier ministre orne le billet canadien de 5 $ ?|Wilfrid Laurier|2|adultes aines
 Qui fut le premier premier ministre du Canada ?|John A. Macdonald|2|ados adultes aines
 Qui fut le deuxième homme à marcher sur la Lune ?|Buzz Aldrin|2|ados adultes aines
+@ espace
 Quelle navette spatiale a explosé au décollage en 1986 ?|Challenger|2|adultes aines
+@ espace
 Quel président américain a démissionné après le Watergate ?|Nixon|2|ados adultes aines
 - Politique américaine : président et scandale politique.
 Quel calendrier, adopté en 1582, utilisons-nous ?|Le grégorien|2|ados adultes aines
@@ -270,11 +309,15 @@ Quel peuple de l'Antiquité construisait des pyramides et embaumait ses morts ?|
 Comment appelle-t-on un corps embaumé et enveloppé de bandelettes ?|Une momie|1|enfants ados adultes aines
 Comment appelait-on les rois de l'Égypte ancienne ?|Les pharaons|1|enfants ados adultes aines
 Quel animal domestique les Égyptiens adoraient-ils au point de le momifier ?|Le chat|1|enfants ados adultes aines
+@ regne-animal
 Quels animaux géants ont disparu bien avant l'apparition des humains ?|Les dinosaures|1|enfants ados adultes aines
+@ regne-animal
 Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?|Le mammouth|1|enfants ados adultes aines
+@ regne-animal
 Que fabriquaient les hommes préhistoriques en frottant deux pierres ?|Le feu|1|enfants ados adultes aines
 De quoi étaient faits les premiers outils des hommes préhistoriques ?|De pierre|1|enfants ados adultes aines
 Que dessinaient les hommes préhistoriques sur les murs des grottes ?|Des animaux|1|enfants ados adultes aines
+@ regne-animal
 Quelle arme les chevaliers portaient-ils au côté ?|L'épée|1|enfants ados adultes aines
 Que portaient les chevaliers pour protéger leur corps au combat ?|Une armure|1|enfants ados adultes aines
 Dans quel bâtiment fortifié vivaient les rois et les reines du Moyen Âge ?|Un château|1|enfants ados adultes aines
@@ -294,6 +337,7 @@ En quel siècle vivons-nous ?|Le 21e siècle|1|enfants ados adultes aines
 Quelle fleur rouge porte-t-on en novembre en souvenir des soldats ?|Le coquelicot|1|enfants ados adultes aines
 Quel ballon géant à panier et à air chaud a été le premier engin à transporter des humains dans le ciel ?|La montgolfière|1|enfants ados adultes aines
 Quel animal les chevaliers montaient-ils pour aller au combat ?|Le cheval|1|enfants ados adultes aines
+@ regne-animal
 Quel objet les premiers explorateurs utilisaient-ils pour trouver le nord ?|Une boussole|1|enfants ados adultes aines
 #
 # ─── pour les ados ───
@@ -328,6 +372,7 @@ Quelle bataille vit trois cents Spartiates tenir un défilé étroit ?|Les Therm
 #
 # --- Objets et techniques ---
 Quel oiseau portait les messages avant le télégraphe ?|Le pigeon voyageur|2|enfants ados adultes aines
+@ regne-animal
 Quelle méthode permet de dater un vestige grâce à un isotope ?|Le carbone 14|3|ados adultes
 Quel instrument de navigation mesurait la hauteur des astres sur l'horizon ?|Le sextant|3|ados adultes aines
 Quelle roue à aubes servait à moudre le grain au bord d'une rivière ?|Le moulin à eau|2|enfants ados adultes aines
@@ -340,6 +385,7 @@ Quel téléphone présenté en 2007 a bouleversé la téléphonie ?|Le iPhone|2|
 Quelle encyclopédie en ligne, lancée en 2001, est écrite par ses lecteurs ?|Wikipédia|2|ados adultes
 Quel site de vidéos a été lancé en 2005 et racheté par Google un an plus tard ?|YouTube|2|enfants ados adultes
 Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?|Le télescope James Webb|3|ados adultes
+@ espace
 En quelle année les Jeux olympiques ont-ils été reportés d'un an pour la première fois ?|2020|3|ados adultes
 #
 # --- Nouvelle-France et Québec ---
@@ -356,6 +402,7 @@ Comment appelle-t-on la trace d'un animal préhistorique conservée dans la pier
 Quel scientifique fouille la terre pour trouver des objets anciens ?|Un archéologue|2|enfants ados adultes aines
 Dans quel bâtiment expose-t-on les objets et les squelettes du passé ?|Un musée|1|enfants ados adultes aines
 Quel gros reptile a disparu de la Terre il y a des millions d'années ?|Un dinosaure|1|enfants ados adultes aines
+@ regne-animal
 Quelle arme de jet permettait aux chasseurs préhistoriques d'atteindre les bêtes de loin ?|Une lance|2|enfants ados adultes aines
 Quel monument de pierre à quatre faces triangulaires abritait un tombeau égyptien ?|Une pyramide|1|enfants ados adultes aines
 Dans quel cercueil décoré déposait-on la momie d'un pharaon ?|Un sarcophage|2|enfants ados adultes aines
@@ -387,15 +434,21 @@ Que hisse-t-on sur les mâts pour que le vent pousse un navire ancien ?|Les voil
 Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?|Le sextant|3|adultes aines
 Comment appelle-t-on le marin posté en haut du mât pour surveiller l'horizon ?|La vigie|3|adultes aines
 Comment appelait-on la colonie française en Amérique du Nord ?|La Nouvelle-France|1|enfants ados adultes aines
+@ quebec-ailleurs
 Quelle fourrure les Européens recherchaient-ils le plus en Nouvelle-France ?|Le castor|1|enfants ados adultes aines
+@ quebec-ailleurs
+@ regne-animal
 Quelle embarcation d'écorce les Autochtones et les coureurs des bois utilisaient-ils ?|Le canot d'écorce|2|enfants ados adultes aines
 Comment appelle-t-on les premiers habitants de l'Amérique, ici avant les Européens ?|Les Autochtones|1|enfants ados adultes aines
 Quelle habitation autochtone en forme de cône était faite de peaux et de perches ?|Un tipi|2|enfants ados adultes aines
 Quelle longue habitation abritait plusieurs familles chez les Iroquoiens ?|La maison longue|3|enfants ados adultes aines
 Quel animal les Autochtones des plaines chassaient-ils pour se nourrir et se vêtir ?|Le bison|2|enfants ados adultes aines
+@ regne-animal
 Comment appelle-t-on la personne qui dirige une nation autochtone ?|Un chef|2|enfants ados adultes aines
 Quelle ville a été fondée en 1642 sous le nom de Ville-Marie ?|Montréal|2|enfants ados adultes aines
+@ quebec-ailleurs
 Quel religieux enseignait aux enfants de la Nouvelle-France ?|Un missionnaire|3|ados adultes aines
+@ quebec-ailleurs
 Quelle fondatrice a ouvert la première école de Ville-Marie ?|Marguerite Bourgeoys|3|ados adultes aines
 Quelle invention du 15e siècle a permis de produire des livres en série ?|L'imprimerie|2|enfants ados adultes aines
 Quelle invention éclaire une pièce sans flamme depuis la fin du 19e siècle ?|L'ampoule électrique|1|enfants ados adultes aines
@@ -408,18 +461,27 @@ Quelle invention à deux roues se propulse avec des pédales ?|La bicyclette|1|e
 Quel appareil garde les aliments au froid depuis un siècle, remplaçant la glacière ?|Le réfrigérateur|2|enfants ados adultes aines
 Quel véhicule à moteur a remplacé le cheval sur les routes ?|L'automobile|1|enfants ados adultes aines
 Quel engin a emmené les premiers hommes jusqu'à la Lune ?|Une fusée|1|enfants ados adultes aines
+@ espace
 Quel astronaute américain a posé le pied sur la Lune le premier ?|Neil Armstrong|2|enfants ados adultes aines
+@ espace
 Que porte un astronaute pour survivre dans l'espace ?|Un scaphandre|3|enfants ados adultes aines
+@ espace
 Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?|La Station spatiale internationale|3|enfants ados adultes aines
+@ espace
 Quel drapeau les astronautes ont-ils planté sur la Lune en 1969 ?|Le drapeau américain|3|ados adultes aines
+@ espace
 Quel paquebot réputé insubmersible a heurté un iceberg lors de son premier voyage ?|Le Titanic|1|enfants ados adultes aines
 Quelle grande tour de fer a été bâtie à Paris pour une exposition en 1889 ?|La tour Eiffel|2|enfants ados adultes aines
 Quelle construction de béton a coupé une capitale allemande en deux jusqu'en 1989 ?|Le mur de Berlin|3|ados adultes aines
 Quelle bataille de 1759 a fait passer Québec aux mains des Britanniques ?|La bataille des plaines d'Abraham|2|enfants ados adultes aines
+@ quebec-ailleurs
 Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?|La Révolution tranquille|3|adultes aines
+@ quebec-ailleurs
 Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?|Expo 67|3|ados adultes aines
+@ quebec-ailleurs
 Quel coureur unijambiste a traversé une partie du Canada pour la recherche sur le cancer ?|Terry Fox|2|enfants ados adultes aines
 Quel savant italien a affirmé que la Terre tourne autour du Soleil ?|Galilée|3|enfants ados adultes aines
+@ espace
 Quel peintre italien a peint la Joconde ?|Léonard de Vinci|2|enfants ados adultes aines
 Quel savant français a montré que les microbes causent les maladies ?|Pasteur|3|enfants ados adultes aines
 Quel savant a expliqué la gravité en voyant tomber une pomme ?|Newton|2|enfants ados adultes aines
@@ -440,6 +502,7 @@ Quel bâton orné le roi tient-il en main comme signe de son pouvoir ?|Le sceptr
 Quel petit navire rapide Christophe Colomb utilisait-il pour ses voyages ?|Une caravelle|3|enfants ados adultes aines
 Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?|La capitale du royaume|3|adultes aines
 Quel animal servait de moyen de transport principal avant l'automobile ?|Le cheval|1|enfants ados adultes aines
+@ regne-animal
 Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?|Une diligence|3|enfants ados adultes aines
 Quel outil de bois et de fer les paysans utilisaient-ils pour retourner la terre ?|La charrue|2|enfants ados adultes aines
 Quel bâtiment à grandes ailes tournait au vent pour moudre le blé ?|Un moulin à vent|1|enfants ados adultes aines

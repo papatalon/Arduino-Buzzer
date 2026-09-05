@@ -244,12 +244,18 @@ Set<Tranche> _tranchesDepuis(String mots, String ou) {
 
 class Entry {
   Entry(this.category, this.question, this.answer,
-      {this.niveau, this.origine = Origine.banque, required this.tranches});
+      {this.niveau,
+      this.origine = Origine.banque,
+      required this.tranches,
+      this.themes = const {}});
   final String category;
   final String question;
   final String answer;
   final Origine origine;
   final Set<Tranche> tranches;
+  // Les thematiques ecrites sur la question dans son fichier. Vide pour la
+  // plupart : une thematique est une exception, pas un rangement de plus.
+  final Set<String> themes;
 
   bool get pourTous => tranches.length == kToutesTranches.length;
   // 1 facile (un enfant de huit ans repond), 2 moyen (culture generale
@@ -275,6 +281,32 @@ void main(List<String> args) {
   // de générer le site : c'est la commande de la revue annuelle.
   if (args.contains('--perissables')) {
     _listerPerissables();
+    return;
+  }
+  // « --themes » montre CE QUE CHAQUE MOT-CLÉ A RAMASSÉ.
+  //
+  // Une thématique n'est pas écrite sur la question : elle est déduite d'une
+  // liste de mots-clés au moment de générer. C'est commode, et c'est
+  // exactement pour ça que ça se vérifie mal : « neige » attrape Blanche-Neige
+  // et « dents » attrape Les Dents de la mer, sans que rien ne le signale.
+  // Cette commande met chaque mot-clé en face de ses prises pour qu'on puisse
+  // couper ceux qui ratissent large.
+  if (args.contains('--themes')) {
+    _auditThemes();
+    return;
+  }
+  // « --proposer <slug> » sort les candidates d'une thematique, PAS ENCORE
+  // etiquetees, une par ligne avec son fichier et son rang. C'est la liste
+  // qu'on relit pour decider, et le moyen de ne pas relire trois mille
+  // questions a chaque thematique.
+  final iEtiqueter = args.indexOf('--etiqueter');
+  if (iEtiqueter >= 0) {
+    _etiqueter(args.sublist(iEtiqueter + 1));
+    return;
+  }
+  final iProposer = args.indexOf('--proposer');
+  if (iProposer >= 0) {
+    _proposer(iProposer + 1 < args.length ? args[iProposer + 1] : '');
     return;
   }
   if (args.isNotEmpty && args.first.trim().isNotEmpty) {
@@ -409,13 +441,25 @@ void main(List<String> args) {
 // installation neuve sans wifi ait de quoi jouer.
 void _writeBanqueQuestions(List<Entry> all) {
   // Les thématiques d'abord : une question peut en porter plusieurs.
+  //
+  // LUES SUR LA QUESTION, plus devinées : c'est le marqueur « @ » de son
+  // fichier qui fait foi. Une thématique vide ne s'annonce pas, mais elle ne
+  // s'ignore pas en silence non plus.
   final etiquettes = <Entry, List<String>>{};
   final comptesThemes = <String, int>{};
   for (final theme in kThemes) {
-    final trouvees = all.where(theme.matches).toList();
-    // Le même plancher que pour les fichiers : sous douze questions, une
-    // thématique ne remplit même pas une demi-manche et n'a pas d'intérêt.
-    if (trouvees.length < 12) continue;
+    final trouvees = all.where((e) => e.themes.contains(theme.slug)).toList();
+    // Le même plancher qu'avant : sous douze questions, une thématique ne
+    // remplit même pas une demi-manche. Elle est signalée plutôt que passée
+    // sous silence, sinon une thématique qu'on vient d'ouvrir et qu'on n'a
+    // étiquetée qu'à moitié disparaîtrait sans un mot.
+    if (trouvees.length < 12) {
+      if (trouvees.isNotEmpty) {
+        stdout.writeln('  (${theme.name} : ${trouvees.length} questions '
+            'étiquetées, il en faut 12 pour la publier)');
+      }
+      continue;
+    }
     comptesThemes[theme.name] = trouvees.length;
     for (final e in trouvees) {
       (etiquettes[e] ??= []).add(theme.name);
@@ -1040,6 +1084,14 @@ class _Ligne {
   // question caduque, pas fausse : elle ne se marque pas non plus.
   String? perissable;
   Set<Tranche>? tranches;
+  // Les thématiques auxquelles la question appartient, écrites en toutes
+  // lettres sous elle : « @ noel creatures ». Vide par défaut.
+  //
+  // ÉCRITES, ET NON DÉDUITES. Elles l'étaient, par mots-clés, et se
+  // trompaient sans le dire : « neige » mettait Blanche-Neige dans Sports
+  // d'hiver. Une thématique est un jugement sur le sujet de la question, du
+  // même ordre que sa catégorie, et la catégorie n'a jamais été devinée.
+  final Set<String> themes = {};
 }
 
 List<_Category> _parseCategories(String raw) {
@@ -1153,6 +1205,7 @@ List<Entry> _readInedites(Set<String> categoriesConnues) {
         niveau: ligne.niveau,
         origine: Origine.inedite,
         tranches: ligne.tranches ?? kToutesTranches,
+        themes: ligne.themes,
       ));
     }
   }
@@ -1196,6 +1249,29 @@ List<_Ligne> _lireBloc(List<String> lignes, String nom) {
         exit(1);
       }
       lues.last.perissable = l.substring(1).trim();
+      continue;
+    }
+
+    // Thématiques : « @ noel creatures ». Une question peut en porter
+    // plusieurs, une thématique traverse les catégories.
+    if (l.startsWith('@')) {
+      if (lues.isEmpty) {
+        stderr.writeln('$ou : thématique sans question à étiqueter.');
+        exit(1);
+      }
+      for (final slug in l.substring(1).trim().split(RegExp(r'\s+'))) {
+        if (slug.isEmpty) continue;
+        // UN SLUG INCONNU ARRÊTE LA GÉNÉRATION. Une faute de frappe
+        // produirait sinon une étiquette qui n'existe nulle part : la
+        // question disparaîtrait de sa thématique sans que rien ne le dise,
+        // ce qui est exactement le défaut qu'on vient de corriger.
+        if (!kThemes.any((t) => t.slug == slug)) {
+          stderr.writeln('$ou : thématique inconnue « $slug ». '
+              'Connues : ${kThemes.map((t) => t.slug).join(', ')}.');
+          exit(1);
+        }
+        lues.last.themes.add(slug);
+      }
       continue;
     }
 
@@ -1278,6 +1354,7 @@ List<Entry> _applyAccents(_Category cat) {
       niveau: cotee?.niveau,
       origine: cotee?.retouche != null ? Origine.retouchee : Origine.banque,
       tranches: cotee?.tranches ?? kToutesTranches,
+      themes: cotee?.themes ?? const {},
     ));
   }
   return entries;
@@ -1361,14 +1438,33 @@ String _strip(String s) {
 // simplement, et « Noel » attrape « Noël ». Bornes de mots obligatoires,
 // sinon « os » attraperait « chose » et « ski » attraperait « whisky ».
 class Theme {
-  const Theme(this.name, this.emoji, this.note, this.keywords,
+  const Theme(this.slug, this.name, this.emoji, this.note, this.keywords,
       {this.exclude = const [],
       this.excludeCategories = const [],
       this.collection});
 
+  // Ce qu'on écrit dans les fichiers de questions, sous la ligne : « @ noel ».
+  // Sans accents ni espaces, parce qu'un nom accentué dans un fichier soumis
+  // à l'invariant des accents serait une invitation au dégât.
+  final String slug;
   final String name;
   final String emoji;
   final String note;
+
+  // LES MOTS-CLÉS NE CLASSENT PLUS RIEN. Ils ne servent qu'à PROPOSER des
+  // candidates à la relecture (« --themes » et « --proposer »), et l'étiquette
+  // n'existe que si quelqu'un l'a écrite dans le fichier.
+  //
+  // Ils ont classé, et mal. Un audit des prises l'a montré : « neige »
+  // ramassait Olaf et Blanche-Neige dans Sports d'hiver, « dents » ramassait
+  // Les Dents de la mer dans Le corps humain, et « cotes » y ramassait « Combien
+  // de côtés a un carré ? » parce que l'invariant sans accents transforme
+  // côtés en cotes. Environ soixante des cent trente-sept questions de Sports
+  // d'hiver n'étaient pas des sports. Rien ne le signalait : une déduction ne
+  // se trompe jamais bruyamment.
+  //
+  // Comme pour la catégorie et les tranches d'âge, une question ne porte
+  // désormais que ce qu'on a écrit sur elle.
   final List<String> keywords;
 
   // Des mots-cles ne suffisent pas toujours : « cotes » attrape autant les
@@ -1416,7 +1512,7 @@ class Theme {
 }
 
 const kThemes = <Theme>[
-  Theme('Spécial Noël', '🎄', 'Le temps des fêtes, toutes catégories confondues.', [
+  Theme('noel', 'Spécial Noël', '🎄', 'Le temps des fêtes, toutes catégories confondues.', [
     'noel', 'renne', 'rudolphe', 'sapin', 'buche', 'dinde',
     'reveillon', 'tourtiere', 'canneberge', 'canneberges', 'cannelle',
     'muscade', 'girofle', 'guimauve', "pain d'epice", 'patates pilees',
@@ -1440,7 +1536,7 @@ const kThemes = <Theme>[
   //
   // Son sapin lui reste : dans une tuile à fleur de lys, il signale d'un coup
   // d'œil les cinq manches qui ne sont pas la catégorie.
-  Theme('Le Québec ailleurs', '🌲',
+  Theme('quebec-ailleurs', 'Le Québec ailleurs', '🌲',
       'Le Québec caché dans les neuf autres catégories.', [
     'quebec', 'quebecois', 'quebecoise', 'quebecoises', 'montreal',
     'montrealais', 'montrealaise', 'saint-laurent', 'erable', 'poutine',
@@ -1460,7 +1556,7 @@ const kThemes = <Theme>[
     'loi 101', 'oqlf', 'verglas', 'hurons-wendat', 'madelinots',
     'saguenéen', 'trifluvien', 'terre-neuvien',
   ], excludeCategories: ['Québec'], collection: 'Québec'),
-  Theme('Le règne animal', '🐾', 'Bêtes à poil, à plume et à écailles.', [
+  Theme('regne-animal', 'Le règne animal', '🐾', 'Bêtes à poil, à plume et à écailles.', [
     'animal', 'animaux', 'oiseau', 'oiseaux', 'poisson', 'poissons',
     'insecte', 'insectes', 'mammifere', 'mammiferes', 'reptile', 'reptiles',
     'chien', 'chienne', 'chat', 'cheval', 'chevaux', 'lion', 'lionceau',
@@ -1479,7 +1575,7 @@ const kThemes = <Theme>[
     // à frire pour le poisson, une question de grammaire sur le mot loup.
     'pates', 'pate', 'frire', 'muettes', 'palindrome',
   ]),
-  Theme("L'espace et le ciel", '🪐', 'Planètes, étoiles et conquête spatiale.', [
+  Theme('espace', "L'espace et le ciel", '🪐', 'Planètes, étoiles et conquête spatiale.', [
     'planete', 'planetes', 'soleil', 'lune', 'lunes', 'etoile', 'etoiles',
     'galaxie', 'espace', 'astronaute', 'satellite', 'telescope', 'orbite',
     'comete', 'meteorite', 'eclipse', 'mars', 'jupiter', 'saturne', 'venus',
@@ -1488,7 +1584,7 @@ const kThemes = <Theme>[
     'astre', 'astres', 'astronomie', 'astronome', 'spatiale', 'spatial',
     'aurore boreale', 'equateur', 'hemispheres', 'marees', 'atmosphere',
   ]),
-  Theme('Le corps humain', '🧠', 'Os, organes et petites mécaniques internes.', [
+  Theme('corps-humain', 'Le corps humain', '🧠', 'Os, organes et petites mécaniques internes.', [
     'os', 'sang', 'coeur', 'cerveau', 'poumon', 'poumons', 'muscle',
     'organe', 'organes', 'dent', 'dents', 'oeil', 'yeux', 'oreille',
     'peau', 'vitamine', 'cellule', 'cellules', 'chromosomes', 'estomac',
@@ -1504,7 +1600,7 @@ const kThemes = <Theme>[
     // fois les accents retirés.
     'hexagone', 'triangle', 'octogone', 'pentagone', 'cube', 'statue',
   ]),
-  Theme('Super-héros et BD', '🦸', 'Capes, masques et bulles.', [
+  Theme('super-heros', 'Super-héros et BD', '🦸', 'Capes, masques et bulles.', [
     'super-heros', 'superheros', 'marvel', 'batman', 'superman',
     'spider-man', 'hulk', 'iron man', 'thor', 'wonder woman', 'aquaman',
     'wolverine', 'ant-man', 'thanos', 'captain america', 'joker', 'robin',
@@ -1514,7 +1610,7 @@ const kThemes = <Theme>[
     'schtroumpfs', 'gargamel', 'lucky luke', 'dalton', 'picsou', 'popeye',
     'garfield', 'bd',
   ]),
-  Theme('Créatures et légendes', '🐉', 'Monstres, dieux et histoires qu\'on se raconte.', [
+  Theme('creatures', 'Créatures et légendes', '🐉', 'Monstres, dieux et histoires qu\'on se raconte.', [
     'monstre', 'creature', 'creatures', 'dragon', 'fantome', 'sorcier',
     'sorciere', 'vampire', 'geant', 'legende', 'legendaire', 'mythologique',
     'mythique', 'dieu', 'deesse', 'zeus', 'poseidon', 'hades', 'aphrodite',
@@ -1525,7 +1621,7 @@ const kThemes = <Theme>[
     'merlin', 'arthur', 'romulus', 'remus', 'pandore', 'midas', 'troie',
     'halloween', 'superstition', 'malheur', 'chaudron',
   ]),
-  Theme("Sports d'hiver", '⛷️', 'Tout ce qui se joue sur la glace ou la neige.', [
+  Theme('sports-hiver', "Sports d'hiver", '⛷️', 'Tout ce qui se joue sur la glace ou la neige.', [
     'hockey', 'patinage', 'patineur', 'patineuse', 'patinoire', 'ski',
     'skieur', 'curling', 'luge', 'skeleton', 'biathlon', 'slalom',
     'ballon-balai', 'rondelle', 'glace', 'neige', 'planche a neige',
@@ -1659,3 +1755,225 @@ String _identifiant(String titre) => _strip(titre)
     .toLowerCase()
     .replaceAll(RegExp('[^a-z0-9]+'), '-')
     .replaceAll(RegExp(r'^-+|-+$'), '');
+
+// Ce que chaque mot-clé de chaque thématique a réellement ramassé.
+//
+// La sortie est faite pour être LUE, pas pour passer un test : c'est un
+// jugement humain qui décide si « Les Dents de la mer » a sa place dans « Le
+// corps humain ». Les mots-clés sont donc classés du plus gourmand au moins
+// gourmand, avec deux prises en exemple pour chacun : un mot qui ramasse
+// quarante questions et dont les deux exemples sont hors sujet se repère en
+// une seconde.
+void _auditThemes() {
+  final categories = _parseCategories(File(_sourcePath).readAsStringSync());
+  final all = <Entry>[];
+  final parCategorie = <String, List<Entry>>{};
+  for (final cat in categories) {
+    final entries = _applyAccents(cat);
+    parCategorie[entries.first.category] = entries;
+    all.addAll(entries);
+  }
+  all.addAll(_readInedites(parCategorie.keys.toSet()));
+
+  for (final theme in kThemes) {
+    final prises = all.where(theme.matches).toList();
+    stdout.writeln('\n=== ${theme.name} : ${prises.length} questions');
+    // Une question peut répondre à plusieurs mots-clés ; on la compte pour le
+    // PREMIER qui la retient, celui dont la suppression la libérerait.
+    final parMot = <String, List<Entry>>{};
+    for (final e in prises) {
+      final texte = _strip('${e.question} ${e.answer}').toLowerCase();
+      final mot = theme.keywords.firstWhere(
+          (m) => Theme._motPresent(texte, m),
+          orElse: () => '?');
+      (parMot[mot] ??= []).add(e);
+    }
+    final mots = parMot.keys.toList()
+      ..sort((a, b) => parMot[b]!.length.compareTo(parMot[a]!.length));
+    for (final mot in mots) {
+      final lot = parMot[mot]!;
+      stdout.writeln('  ${lot.length.toString().padLeft(4)}  « $mot »');
+      for (final e in lot.take(2)) {
+        stdout.writeln('        ${e.question}  →  ${e.answer}');
+      }
+    }
+    final jamais =
+        theme.keywords.where((m) => !parMot.containsKey(m)).toList();
+    if (jamais.isNotEmpty) {
+      stdout.writeln('     0  jamais seuls : ${jamais.join(', ')}');
+    }
+  }
+}
+
+// Les candidates d'une thématique qui ne portent pas encore son étiquette.
+//
+// C'est l'outil de l'étiquetage, et il ne décide rien : il ramasse large avec
+// les mots-clés et rend une liste à lire. Chaque ligne dit où écrire le
+// marqueur, parce que retrouver à la main la bonne ligne dans onze fichiers
+// de deux cents questions est le vrai coût de l'exercice.
+void _proposer(String slug) {
+  if (!kThemes.any((t) => t.slug == slug)) {
+    stderr.writeln('Thématique inconnue « $slug ». '
+        'Connues : ${kThemes.map((t) => t.slug).join(', ')}.');
+    exit(1);
+  }
+  final theme = kThemes.firstWhere((t) => t.slug == slug);
+  var deja = 0;
+  var proposees = 0;
+
+  for (final fichier in _fichiersQuestions()) {
+    final lignes = <String>[];
+    // Les deux blocs se relisent : une question du firmware et une inédite
+    // s'étiquettent pareil, et rien ne dit qu'une thématique ne vit que d'un
+    // côté.
+    for (final bloc in [
+      (nom: 'miroir', contenu: fichier.miroir),
+      (nom: 'libres', contenu: fichier.libres),
+    ]) {
+      final lues = _lireBloc(bloc.contenu, fichier.nom);
+      for (var i = 0; i < lues.length; i++) {
+        final ligne = lues[i];
+        if (ligne.retiree != null) continue;
+        if (ligne.themes.contains(slug)) {
+          deja++;
+          continue;
+        }
+        final servie = ligne.retouche ?? ligne.texte;
+        final sep = servie.indexOf('|');
+        final e = Entry(
+          fichier.categorie,
+          servie.substring(0, sep).trim(),
+          servie.substring(sep + 1).trim(),
+          niveau: ligne.niveau,
+          tranches: ligne.tranches ?? kToutesTranches,
+        );
+        if (!theme.matches(e)) continue;
+        proposees++;
+        lignes.add('  ${bloc.nom} #${i + 1}  ${e.question}  →  ${e.answer}');
+      }
+    }
+    if (lignes.isEmpty) continue;
+    stdout.writeln('\n--- ${fichier.nom}  (${lignes.length})');
+    lignes.forEach(stdout.writeln);
+  }
+
+  stdout.writeln('\n« ${theme.name} » : $deja déjà étiquetées, '
+      '$proposees candidates à relire.');
+  stdout.writeln('Les mots-clés ne servent qu\'à proposer : rien n\'est '
+      'étiqueté tant qu\'un « @ $slug » n\'est pas écrit sous la question.');
+}
+
+// Écrit le marqueur « @ <slug> » sous les questions désignées.
+//
+//   dart run tool/generate_questionnaires.dart --etiqueter noel bouffe-et-cuisine.txt miroir 12,40,77
+//
+// À LA MAIN, C'EST LA MAUVAISE LIGNE. Les rangs comptent les questions, pas
+// les lignes du fichier : entre la question 40 et la question 41 se glissent
+// les retouches, les retraits et les autres thématiques, et le décalage
+// s'accumule à chaque insertion. Cette commande compte comme le lecteur du
+// fichier compte, et insère au bon endroit même quand elle en insère trente.
+//
+// Un rang déjà porteur de l'étiquette est ignoré sans bruit : relancer la
+// même commande deux fois ne double rien.
+void _etiqueter(List<String> args) {
+  if (args.length < 4) {
+    stderr.writeln('Usage : --etiqueter <slug> <fichier.txt> <miroir|libres> '
+        '<rangs séparés par des virgules>');
+    exit(1);
+  }
+  final slug = args[0];
+  if (!kThemes.any((t) => t.slug == slug)) {
+    stderr.writeln('Thématique inconnue « $slug ». '
+        'Connues : ${kThemes.map((t) => t.slug).join(', ')}.');
+    exit(1);
+  }
+  final nom = args[1];
+  final bloc = args[2];
+  if (bloc != 'miroir' && bloc != 'libres') {
+    stderr.writeln('Le bloc est « miroir » ou « libres », lu « $bloc ».');
+    exit(1);
+  }
+  final rangs = args[3]
+      .split(',')
+      .map((s) => int.tryParse(s.trim()))
+      .whereType<int>()
+      .toSet();
+  if (rangs.isEmpty) {
+    stderr.writeln('Aucun rang lisible dans « ${args[3]} ».');
+    exit(1);
+  }
+
+  final fichier = File('$_questionsDir/$nom');
+  if (!fichier.existsSync()) {
+    stderr.writeln('Introuvable : ${fichier.absolute.path}');
+    exit(1);
+  }
+  final lignes = fichier.readAsLinesSync();
+  // LA MÊME RÈGLE QUE LE LECTEUR, sinon les deux ne parlent pas des mêmes
+  // questions. Sans « # Firmware », un fichier n'a rien à refléter et TOUT y
+  // est libre, séparateur ou pas (voir _fichiersQuestions). Culture pop est
+  // dans ce cas : « --proposer » y annonçait des rangs « libres » que
+  // « --etiqueter » cherchait dans un bloc miroir vide.
+  final toutLibre = !lignes.any((l) => l.trim().startsWith('# Firmware'));
+  final sortie = <String>[];
+  var apresSeparateur = toutLibre;
+  var rang = 0;
+  var attente = false; // Une question vient d'être vue ; ses marqueurs suivent.
+  var poses = 0;
+  var deja = 0;
+
+  // Le marqueur se pose APRÈS les marqueurs existants de la même question,
+  // pour que le fichier garde un ordre stable et se relise sans surprise.
+  void vider() {
+    if (!attente) return;
+    attente = false;
+    if (rangs.contains(rang)) {
+      sortie.add('@ $slug');
+      poses++;
+    }
+  }
+
+  for (final brute in lignes) {
+    final l = brute.trim();
+    if (l.isEmpty || l.startsWith('#') || l == _separateur) {
+      vider();
+      if (l == _separateur) apresSeparateur = true;
+      sortie.add(brute);
+      continue;
+    }
+    final estMarqueur = l.startsWith('>') ||
+        l.startsWith('-') ||
+        l.startsWith('~') ||
+        l.startsWith('@');
+    if (estMarqueur) {
+      // Déjà étiquetée : on note, et « vider » ne repassera pas dessus.
+      if (l.startsWith('@') &&
+          l.substring(1).trim().split(RegExp(r'\s+')).contains(slug) &&
+          rangs.contains(rang)) {
+        deja++;
+        rangs.remove(rang);
+      }
+      sortie.add(brute);
+      continue;
+    }
+    vider();
+    final dansLeBloc = apresSeparateur ? bloc == 'libres' : bloc == 'miroir';
+    if (dansLeBloc) {
+      rang++;
+      attente = true;
+    }
+    sortie.add(brute);
+  }
+  vider();
+
+  final manquants = rangs.where((r) => r > rang).toList()..sort();
+  if (manquants.isNotEmpty) {
+    stderr.writeln('$nom / $bloc ne compte que $rang questions : '
+        'rangs hors bornes ${manquants.join(', ')}.');
+    exit(1);
+  }
+
+  fichier.writeAsStringSync('${sortie.join('\n')}\n');
+  stdout.writeln('$nom / $bloc : $poses étiquettes « $slug » posées'
+      '${deja > 0 ? ', $deja déjà là' : ''}.');
+}

@@ -12,6 +12,18 @@
 #   Question|Réponse|niveau|tranches
 #   > Question|Réponse     retouche la question du dessus
 #   - motif                la retire du catalogue
+#   @ noel creatures       ses thématiques, écrites et jamais devinées
+#
+# LES THÉMATIQUES SONT ÉCRITES, PAS DÉDUITES. Elles l'étaient, par mots-clés,
+# et se trompaient sans le dire : « neige » rangeait Blanche-Neige dans Sports
+# d'hiver, « dents » rangeait Les Dents de la mer dans Le corps humain. Une
+# thématique est un jugement sur le sujet de la question, du même ordre que sa
+# catégorie, et la catégorie n'a jamais été devinée.
+#
+# Les huit slugs : noel, quebec-ailleurs, regne-animal, espace, corps-humain,
+# super-heros, creatures, sports-hiver. Un slug inconnu arrête la génération.
+# « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
+# <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
 # LES FAITS ENGAGENT LE JEU. Une question fausse discrédite tout le reste :
 # quelqu'un dans le salon va le savoir. Trois formes ont déjà mordu ici, et
@@ -35,6 +47,7 @@ Combien de cases sur un échiquier ?|64|2|ados adultes aines
 Quelle pièce d'échecs ne peut jamais reculer ?|Le pion|2|ados adultes aines
 Combien de lettres dans l'alphabet français ?|26|1|enfants ados adultes aines
 Combien de sens possède l'être humain ?|Cinq|1|enfants ados adultes aines
+@ corps-humain
 Combien d'années dans un siècle ?|100|1|enfants ados adultes aines
 Combien d'années dans un millénaire ?|1000|1|enfants ados adultes aines
 Combien d'unités dans une douzaine ?|Douze|1|enfants ados adultes aines
@@ -54,8 +67,11 @@ Quel peintre s'est coupé une oreille ?|Van Gogh|2|adultes aines
 Qui a peint Guernica ?|Picasso|2|adultes aines
 De quel pays viennent les blocs Lego ?|Le Danemark|2|ados adultes aines
 De quelle couleur sont les Schtroumpfs ?|Bleus|1|enfants ados adultes aines
+@ super-heros
 Quel reporter a un chien nommé Milou ?|Tintin|1|enfants ados adultes aines
+@ super-heros
 Quel Gaulois est l'ami d'Obélix ?|Astérix|1|enfants ados adultes aines
+@ super-heros
 Combien de dalmatiens dans le film de Disney ?|101|1|enfants ados adultes aines
 # « Mayday » est tout aussi juste pour un signal de détresse international.
 # Le morse ne laisse plus qu'une réponse. (Et « signal/signale » se répétait.)
@@ -74,6 +90,7 @@ Combien font les faces opposées d'un dé ?|Sept|2|ados adultes aines
 Monnaie du Japon ?|Le yen|2|ados adultes aines
 Quel métal est liquide à température ambiante ?|Le mercure|2|ados adultes aines
 Combien de dents possède un adulte en général ?|32|2|ados adultes aines
+@ corps-humain
 Quel est le livre le plus vendu au monde ?|La Bible|2|ados adultes aines
 Combien de faces a un cube ?|Six|1|enfants ados adultes aines
 # Ambigu : bien du monde a appris quatre océans à l'école.
@@ -86,7 +103,9 @@ Combien de grammes dans un kilogramme ?|1000|1|enfants ados adultes aines
 Quel instrument mesure la température ?|Le thermomètre|1|enfants ados adultes aines
 Combien de roues a un tricycle ?|Trois|1|enfants ados adultes aines
 Quel oiseau figure sur la pièce de un dollar canadien ?|Le huard|1|enfants ados adultes aines
+@ regne-animal
 Quel animal figure sur la pièce de 5 cents canadienne ?|Le castor|1|enfants ados adultes aines
+@ regne-animal
 Qui a écrit Les Misérables ?|Victor Hugo|2|adultes aines
 Qui a écrit Roméo et Juliette ?|Shakespeare|2|adultes aines
 Qui a écrit Le Petit Prince ?|Saint-Exupéry|2|ados adultes aines
@@ -112,31 +131,47 @@ Combien font XII en chiffres romains ?|Douze|1|enfants ados adultes aines
 Combien font L en chiffres romains ?|50|2|ados adultes aines
 Quel professionnel défend les accusés ?|L'avocat|1|enfants ados adultes aines
 Quelle science étudie les astres ?|L'astronomie|1|enfants ados adultes aines
+@ espace
 Quelle science étudie les vestiges anciens ?|L'archéologie|1|enfants ados adultes aines
 Quelle science étudie les animaux ?|La zoologie|1|enfants ados adultes aines
+@ regne-animal
 Quelle science étudie les plantes ?|La botanique|1|enfants ados adultes aines
 Quel arbre produit des glands ?|Le chêne|1|enfants ados adultes aines
 Quelle fleur offre-t-on à la Saint-Valentin ?|La rose|1|enfants ados adultes aines
 > Quelle fleur rouge s'offre en bouquet le 14 février ?|La rose
 Quel événement célèbre-t-on le 25 décembre ?|Noël|1|enfants ados adultes aines
+@ noel
 Quelle fête des déguisements a lieu le 31 octobre ?|L'Halloween|1|enfants ados adultes aines
+@ creatures
 Quel animal cache des œufs à Pâques ?|Le lapin|1|enfants ados adultes aines
+@ regne-animal
 Quel musée parisien abrite la Vénus de Milo ?|Le Louvre|2|ados adultes aines
 # Le jeu de tarot ne se joue pas ici, et « tarot » y désigne les cartes de
 # voyance : la réponse attendue est fausse pour la salle.
 Quel jeu de cartes se joue avec 78 cartes et des atouts ?|Le tarot|3|adultes aines
 - Jeu inconnu au Québec, et le mot y désigne autre chose.
 Qui soigne les dents ?|Le dentiste|1|enfants ados adultes aines
+@ corps-humain
 Quel dieu grec règne sur l'Olympe ?|Zeus|1|enfants ados adultes aines
+@ creatures
 Quel dieu grec règne sur les mers ?|Poséidon|1|enfants ados adultes aines
+@ creatures
 Quel dieu grec règne sur les enfers ?|Hadès|2|ados adultes aines
+@ creatures
 Quelle déesse grecque est née de l'écume ?|Aphrodite|2|ados adultes aines
+@ creatures
 Quel héros grec a accompli douze travaux ?|Hercule|1|enfants ados adultes aines
+@ creatures
 Quel monstre grec pétrifie du regard ?|Méduse|1|enfants ados adultes aines
+@ creatures
 Quel cheval mythologique a des ailes ?|Pégase|1|enfants ados adultes aines
+@ creatures
 Quel oiseau mythique renaît de ses cendres ?|Le phénix|1|enfants ados adultes aines
+@ creatures
 Quelle créature est mi-homme mi-cheval ?|Le centaure|1|enfants ados adultes aines
+@ creatures
 Quel géant mythologique n'a qu'un seul œil ?|Le cyclope|1|enfants ados adultes aines
+@ creatures
 Qui a écrit L'Odyssée ?|Homère|2|adultes aines
 Quel héros de Jules Verne fait le tour du monde en 80 jours ?|Phileas Fogg|2|adultes aines
 Qui a écrit Vingt mille lieues sous les mers ?|Jules Verne|2|adultes aines
@@ -199,20 +234,30 @@ Quelle carte est la plus forte au poker ?|L'as|1|ados adultes aines
 Combien de jokers dans un paquet de cartes ?|Deux|1|enfants ados adultes aines
 Combien d'enseignes dans un jeu de cartes ?|Quatre|1|enfants ados adultes aines
 Quel animal est surnommé le roi de la jungle ?|Le lion|1|enfants ados adultes aines
+@ regne-animal
 Quel oiseau est le symbole de la paix ?|La colombe|1|enfants ados adultes aines
+@ regne-animal
 Quel rameau symbolise la paix ?|L'olivier|2|ados adultes aines
 Quelle plante à quatre feuilles porte chance ?|Le trèfle|1|enfants ados adultes aines
 Quel chiffre porte malheur en Occident ?|13|1|enfants ados adultes aines
+@ creatures
 Quel objet cassé porte sept ans de malheur ?|Le miroir|1|enfants ados adultes aines
+@ creatures
 Sous quel objet ne faut-il pas passer selon la superstition ?|Une échelle|1|enfants ados adultes aines
+@ creatures
 # « Noir » était donné ; il ne restait que l'animal à trouver.
 Quel animal noir porterait malheur ?|Le chat noir|1|enfants ados adultes aines
 > Quel animal, s'il croise votre chemin, porterait malheur ?|Le chat noir
+@ creatures
+@ regne-animal
 Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?|Un chaudron d'or|1|enfants ados adultes aines
+@ creatures
 # Le mot anglais est celui que la salle va crier.
 Quelle créature irlandaise garde un trésor ?|Le farfadet|2|ados adultes aines
 > Quelle créature irlandaise garde un trésor ?|Le farfadet (leprechaun)
+@ creatures
 Quel renne du père Noël a le nez rouge ?|Rudolphe|1|enfants ados adultes aines
+@ noel
 Quelle fête célèbre l'amour le 14 février ?|La Saint-Valentin|1|enfants ados adultes aines
 # La question nommait Pise, la réponse était « la tour de Pise ».
 Quel monument de Pise est célèbre pour son inclinaison ?|La tour de Pise|1|enfants ados adultes aines
@@ -226,13 +271,19 @@ Quelle maison habite le président américain ?|La Maison-Blanche|1|enfants ados
 - Politique américaine : siège du gouvernement.
 Dans quel palais londonien vit le roi d'Angleterre ?|Buckingham|1|ados adultes aines
 Quel géant de bois cache des soldats grecs ?|Le cheval de Troie|1|enfants ados adultes aines
+@ creatures
 Quel roi légendaire cherchait le Graal ?|Le roi Arthur|1|enfants ados adultes aines
+@ creatures
 Quelle épée légendaire appartenait au roi Arthur ?|Excalibur|1|enfants ados adultes aines
+@ creatures
 Quel magicien conseillait le roi Arthur ?|Merlin|1|enfants ados adultes aines
+@ creatures
 Quel hors-la-loi anglais volait aux riches pour les pauvres ?|Robin des Bois|1|enfants ados adultes aines
 Dans quelle forêt vivait Robin des Bois ?|Sherwood|2|adultes aines
 Quel marin de conte a fait sept voyages ?|Sinbad|2|adultes aines
+@ creatures
 Quel personnage de conte a une lampe magique ?|Aladin|1|enfants ados adultes aines
+@ creatures
 Combien de vœux accorde le génie de la lampe ?|Trois|1|enfants ados adultes aines
 Qui apporte une galette à sa grand-mère malade ?|Chaperon rouge|1|enfants ados adultes aines
 Combien de côtés a un octogone ?|Huit|1|enfants ados adultes aines
@@ -242,17 +293,27 @@ Combien font C en chiffres romains ?|100|2|ados adultes aines
 Quel objet indique l'heure grâce à une ombre ?|Cadran solaire|1|enfants ados adultes aines
 Quel instrument mesure le temps avec du sable ?|Le sablier|1|enfants ados adultes aines
 Quelle déesse grecque a donné son nom à Athènes ?|Athéna|1|enfants ados adultes aines
+@ creatures
 Quel dieu grec messager porte des sandales ailées ?|Hermès|2|ados adultes aines
+@ creatures
 Quel titan grec porte le ciel sur ses épaules ?|Atlas|2|ados adultes aines
+@ creatures
 Quel roi mythique change en or tout ce qu'il touche ?|Midas|2|adultes aines
+@ creatures
 Qui a ouvert la boîte qui libérait tous les maux ?|Pandore|1|enfants adultes aines
+@ creatures
 Quel chien à trois têtes garde les enfers ?|Cerbère|2|ados adultes aines
+@ creatures
 Quel pantin de bois voit son nez s'allonger ?|Pinocchio|1|enfants ados adultes aines
 Quelle fillette de roman visite le pays des merveilles ?|Alice|1|enfants ados adultes aines
 Quel écrivain anglais a créé Oliver Twist ?|Charles Dickens|2|adultes aines
 Quel dessinateur belge a créé Tintin ?|Hergé|2|adultes aines
+@ super-heros
 Quel chien accompagne Astérix et Obélix ?|Idéfix|1|enfants ados adultes aines
+@ super-heros
+@ regne-animal
 Quel druide prépare la potion magique des Gaulois ?|Panoramix|1|enfants ados adultes aines
+@ super-heros
 Combien de cases compte une grille de tic-tac-toe ?|Neuf|1|enfants ados adultes aines
 Aux échecs, quelle pièce se déplace en L ?|Le cavalier|1|enfants ados adultes aines
 
@@ -278,7 +339,9 @@ Quel mois vient après mars ?|Avril|1|enfants ados adultes aines
 Combien de saisons compte une année ?|Quatre|1|enfants ados adultes aines
 De quelle couleur est le feu de circulation qui dit d'arrêter ?|Rouge|1|enfants ados adultes aines
 Quel personnage descend par la cheminée pour laisser des cadeaux ?|Le père Noël|1|enfants ados adultes aines
+@ noel
 Qui laisse de l'argent sous l'oreiller en échange d'une dent ?|La fée des dents|1|enfants ados adultes aines
+@ creatures
 Quel objet ouvre-t-on pour se protéger de la pluie ?|Un parapluie|1|enfants ados adultes aines
 Combien de roues a une bicyclette ?|Deux|1|enfants ados adultes aines
 Quel objet porté au poignet donne l'heure ?|Une montre|1|enfants ados adultes aines
@@ -289,24 +352,33 @@ Quel jouet tourne sur lui-même quand on le lance ?|La toupie|1|enfants ados adu
 Quel jouet monte et descend au bout d'une ficelle ?|Le yo-yo|1|enfants ados adultes aines
 Quelle est la dernière lettre de l'alphabet ?|Z|1|enfants ados adultes aines
 Comment s'appelle la maison de brindilles que construit un oiseau ?|Un nid|1|enfants ados adultes aines
+@ regne-animal
 Comment s'appelle une maison faite de blocs de neige ?|Un igloo|1|enfants ados adultes aines
 Comment appelle-t-on le grand navire qui emmène des passagers en croisière ?|Un paquebot|1|enfants ados adultes aines
 Quel véhicule vole grâce à une grande hélice sur le toit ?|L'hélicoptère|1|enfants ados adultes aines
 Quel véhicule roule sur des rails ?|Le train|1|enfants ados adultes aines
 Comment s'appelle la personne qui conduit un avion ?|Le pilote|1|enfants ados adultes aines
 Quel animal figure sur la pièce de 25 cents canadienne ?|Le caribou|1|enfants ados adultes aines
+@ regne-animal
 Quel outil sert à planter un clou ?|Le marteau|1|enfants ados adultes aines
 Quel outil sert à visser une vis ?|Le tournevis|1|enfants ados adultes aines
 Comment surnomme-t-on la pièce canadienne de deux dollars ?|Le toonie|1|enfants ados adultes aines
 Combien de cents y a-t-il dans un dollar ?|100|1|enfants ados adultes aines
 De quelles couleurs est le drapeau du Canada ?|Rouge et blanc|1|enfants ados adultes aines
 Dans quel conte un loup souffle-t-il sur des maisons de paille, de bois et de briques ?|Les Trois Petits Cochons|1|enfants ados adultes aines
+@ creatures
 Dans quel conte une princesse s'endort cent ans après s'être piqué le doigt ?|La Belle au bois dormant|1|enfants ados adultes aines
+@ creatures
 Quelle fillette de conte entre chez trois ours et goûte leur gruau ?|Boucle d'or|1|enfants ados adultes aines
+@ creatures
 Quel frère et quelle sœur de conte sèment des miettes de pain dans la forêt ?|Hansel et Gretel|1|enfants ados adultes aines
+@ creatures
 Dans quel conte un oisillon rejeté par les siens devient un magnifique cygne ?|Le vilain petit canard|1|enfants ados adultes aines
+@ creatures
 Quel animal nous donne la laine ?|Le mouton|1|enfants ados adultes aines
+@ regne-animal
 Que tisse l'araignée pour attraper les insectes ?|Une toile|1|enfants ados adultes aines
+@ regne-animal
 Combien font deux plus deux ?|Quatre|1|enfants ados adultes aines
 Combien font dix fois dix ?|100|1|enfants ados adultes aines
 Quelle forme a une pièce de monnaie ?|Ronde|1|enfants ados adultes aines
@@ -317,13 +389,16 @@ Quelle forme a une pièce de monnaie ?|Ronde|1|enfants ados adultes aines
 # questions sont FACILES POUR EUX et souvent opaques pour la table d'à côté,
 # c'est exactement leur rôle. Format : Question|Réponse|niveau.
 Quel monstre vert explose à côté du joueur dans Minecraft ?|Le creeper|1|enfants ados
+@ creatures
 Dans quel jeu vidéo cent joueurs s'affrontent-ils jusqu'au dernier survivant en construisant des murs ?|Fortnite|1|enfants ados
 Sur quelle plateforme les jeunes jouent-ils à des millions de jeux créés par d'autres joueurs ?|Roblox|1|enfants ados
 Quel jeu mobile fait attraper des créatures en marchant dans la vraie ville ?|Pokémon GO|1|enfants ados
 Quel jeu de course de Nintendo se joue avec des carapaces et des pelures de banane ?|Mario Kart|1|enfants ados
 Quel personnage habillé en vert est le frère de Mario ?|Luigi|1|enfants ados
 Quel dinosaure vert sert de monture à Mario ?|Yoshi|1|enfants ados
+@ regne-animal
 Quelle grosse tortue à carapace épineuse enlève la princesse Peach ?|Bowser|1|enfants ados
+@ regne-animal
 Dans quel jeu faut-il démasquer l'imposteur à bord d'un vaisseau spatial ?|Among Us|1|enfants ados
 Dans la série Zelda, comment s'appelle le héros vêtu de vert ?|Link|1|enfants ados
 Dans quel jeu vidéo aménage-t-on une île en remboursant un raton laveur ?|Animal Crossing|1|enfants ados

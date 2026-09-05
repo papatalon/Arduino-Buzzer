@@ -146,70 +146,112 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
                     style: BSType.body(size: 15, color: BSColors.neutral600),
                   )
                 else ...[
-                  _LigneFiltre(
-                    titre: 'Dans quoi',
-                    vide: _categories.isEmpty && _themes.isEmpty,
-                    quandVide: 'toute la banque',
-                    options: [
+                  // LA GRILLE DE CASES À COCHER VIENT DE LA MAQUETTE
+                  // (design_handoff_buzzer_console, écran 1g) : deux colonnes,
+                  // carré de 17 px, compte à droite du nom.
+                  //
+                  // Elle avait été rendue en pastilles encadrées, dix-neuf
+                  // d'affilée qui se repliaient sur six rangées au bord droit
+                  // déchiqueté. Un bloc de boutons où rien ne distinguait
+                  // « Musique » de « Sports d'hiver », et où le regard n'avait
+                  // aucune colonne à suivre. La grille aligne les noms, aligne
+                  // les comptes, et sépare les deux natures de découpe.
+                  _GrilleFiltre(
+                    titre: 'CATÉGORIES',
+                    indice: _categories.isEmpty ? 'toutes' : null,
+                    colonnes: 2,
+                    cases: [
                       for (final f in banque.banque.categories)
-                        _Option(
-                          label: '${f.emoji} ${f.nom}'.trim(),
+                        _Case(
+                          label: f.nom,
+                          emoji: f.emoji,
+                          compte: f.questions,
                           coche: _categories.contains(f.nom),
-                          onTap: () => setState(() => _categories.contains(f.nom)
-                              ? _categories.remove(f.nom)
-                              : _categories.add(f.nom)),
+                          onTap: () => setState(
+                              () => _categories.contains(f.nom)
+                                  ? _categories.remove(f.nom)
+                                  : _categories.add(f.nom)),
                         ),
-                      // Les thématiques après les catégories, et distinguées :
-                      // elles TRAVERSENT les catégories, cocher « Spécial
-                      // Noël » n'est pas du même ordre que cocher « Musique ».
+                    ],
+                  ),
+                  const SizedBox(height: BSSpace.s4),
+                  // Les thématiques TRAVERSENT les catégories : « Spécial
+                  // Noël » pioche dans Bouffe, Musique et Cinéma à la fois.
+                  // Cocher l'une n'est pas du même ordre que cocher
+                  // « Musique », et le magenta le dit.
+                  _GrilleFiltre(
+                    titre: 'THÉMATIQUES',
+                    indice: _themes.isEmpty ? 'aucune' : null,
+                    colonnes: 2,
+                    teinte: BSColors.accent2,
+                    cases: [
                       for (final f in banque.banque.themes)
-                        _Option(
-                          label: '${f.emoji} ${f.nom}'.trim(),
+                        _Case(
+                          label: f.nom,
+                          emoji: f.emoji,
+                          compte: f.questions,
                           coche: _themes.contains(f.nom),
-                          traversant: true,
                           onTap: () => setState(() => _themes.contains(f.nom)
                               ? _themes.remove(f.nom)
                               : _themes.add(f.nom)),
                         ),
                     ],
                   ),
-                  const SizedBox(height: BSSpace.s2),
-                  _LigneFiltre(
-                    titre: 'Pour qui',
-                    vide: _tranches.isEmpty,
-                    // Ne rien cocher ne veut plus dire « peu importe ». La
-                    // manche réserve une place à chaque tranche, sans quoi
-                    // elle reprenait les proportions de la banque, où les
-                    // questions du monde des enfants sont rares.
-                    quandVide: 'tout le monde, chaque âge servi',
-                    options: [
-                      for (final t in Tranche.values)
-                        _Option(
-                          label: kNomsTranches[t]!,
-                          coche: _tranches.contains(t),
-                          onTap: () => setState(() => _tranches.contains(t)
-                              ? _tranches.remove(t)
-                              : _tranches.add(t)),
+                  const SizedBox(height: BSSpace.s4),
+                  // Quatre options et trois : une seule rangée chacune, et
+                  // les deux côte à côte. Leur donner la grille à deux
+                  // colonnes étirerait la page pour rien.
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: _GrilleFiltre(
+                          titre: 'POUR QUI',
+                          // Ne rien cocher ne veut pas dire « peu importe » :
+                          // la manche réserve une place à chaque tranche, sans
+                          // quoi elle reprenait les proportions de la banque,
+                          // où les questions du monde des enfants sont rares.
+                          indice: _tranches.isEmpty
+                              ? 'tout le monde, chaque âge servi'
+                              : null,
+                          colonnes: 1,
+                          enRangee: true,
+                          cases: [
+                            for (final t in Tranche.values)
+                              _Case(
+                                label: kNomsTranches[t]!,
+                                coche: _tranches.contains(t),
+                                onTap: () => setState(() =>
+                                    _tranches.contains(t)
+                                        ? _tranches.remove(t)
+                                        : _tranches.add(t)),
+                              ),
+                          ],
                         ),
+                      ),
+                      const SizedBox(width: BSSpace.s6),
+                      Expanded(
+                        child: _GrilleFiltre(
+                          titre: 'DIFFICULTÉ',
+                          indice: _niveaux.isEmpty ? 'tous les niveaux' : null,
+                          colonnes: 1,
+                          enRangee: true,
+                          cases: [
+                            for (final n in kNomsNiveaux.keys)
+                              _Case(
+                                label: kNomsNiveaux[n]!,
+                                coche: _niveaux.contains(n),
+                                onTap: () => setState(() =>
+                                    _niveaux.contains(n)
+                                        ? _niveaux.remove(n)
+                                        : _niveaux.add(n)),
+                              ),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
-                  const SizedBox(height: BSSpace.s2),
-                  _LigneFiltre(
-                    titre: 'Difficulté',
-                    vide: _niveaux.isEmpty,
-                    quandVide: 'tous les niveaux',
-                    options: [
-                      for (final n in kNomsNiveaux.keys)
-                        _Option(
-                          label: kNomsNiveaux[n]!,
-                          coche: _niveaux.contains(n),
-                          onTap: () => setState(() => _niveaux.contains(n)
-                              ? _niveaux.remove(n)
-                              : _niveaux.add(n)),
-                        ),
-                    ],
-                  ),
-                  const SizedBox(height: BSSpace.s3),
+                  const SizedBox(height: BSSpace.s4),
                   Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -279,98 +321,176 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
   }
 }
 
-// UNE LIGNE DE FILTRE : un titre, des pastilles, et ce que veut dire « rien
-// de coché ». Cette dernière mention est le cœur du contrôle : sans elle,
-// l'animateur qui voit des cases vides croit devoir en cocher une, alors que
-// ne rien cocher est l'état normal et le plus large.
-class _Option {
-  const _Option({
+// UN CRITÈRE À COCHER : le nom, et combien la banque en porte.
+//
+// Le compte est ce qui manquait le plus. Sans lui, « Culture pop » et
+// « Cinéma et télé » se ressemblent, alors que l'une en porte 428 et l'autre
+// 271 : l'animateur qui coche une seule catégorie pour une manche de 25 n'a
+// aucun moyen de savoir s'il vient de se peindre dans un coin.
+class _Case {
+  const _Case({
     required this.label,
     required this.coche,
     required this.onTap,
-    this.traversant = false,
+    this.emoji,
+    this.compte,
   });
   final String label;
+  final String? emoji;
+  final int? compte;
   final bool coche;
   final VoidCallback onTap;
-  // Une thématique, qui traverse les catégories. Dessinée autrement pour
-  // qu'on ne la prenne pas pour une douzième catégorie.
-  final bool traversant;
 }
 
-class _LigneFiltre extends StatelessWidget {
-  const _LigneFiltre({
+// LA GRILLE DE LA MAQUETTE : un intertitre, puis des cases en colonnes
+// alignées. Carré de 17 px, aplat d'accent et crochet blanc une fois coché,
+// filet neutral-500 sinon (design_handoff_buzzer_console/README.md, 1g).
+//
+// Ce que la grille apporte sur les pastilles qu'elle remplace : les noms
+// commencent tous au même x, les comptes finissent tous au même x, et le bord
+// droit est droit. Dix-neuf pastilles repliées ne donnaient aucune de ces
+// trois choses, et le regard n'avait aucune colonne à suivre.
+//
+// RIEN DE COCHÉ VEUT DIRE « TOUT ». L'indice ne s'affiche que dans ce cas :
+// dès qu'une case est cochée, la sélection se voit et l'indice n'a plus rien
+// à dire.
+class _GrilleFiltre extends StatelessWidget {
+  const _GrilleFiltre({
     required this.titre,
-    required this.options,
-    required this.vide,
-    required this.quandVide,
+    required this.cases,
+    required this.colonnes,
+    this.indice,
+    this.teinte = BSColors.accent,
+    this.enRangee = false,
   });
 
   final String titre;
-  final List<_Option> options;
-  final bool vide;
-  final String quandVide;
+  final List<_Case> cases;
+  final int colonnes;
+  final String? indice;
+  final Color teinte;
+  // Quatre tranches ou trois niveaux tiennent sur une ligne : leur donner des
+  // colonnes étirerait la page pour rien.
+  final bool enRangee;
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
       children: [
-        Padding(
-          padding: const EdgeInsets.only(top: 7),
-          child: SizedBox(
-            width: 84,
-            child: Text(titre,
-                style: BSType.body(size: 14, color: BSColors.neutral600)),
-          ),
+        Row(
+          children: [
+            Text(titre, style: BSType.sectionKicker()),
+            if (indice != null) ...[
+              const SizedBox(width: BSSpace.s2),
+              Flexible(
+                child: Text(
+                  indice!,
+                  overflow: TextOverflow.ellipsis,
+                  style: BSType.body(size: 13, color: BSColors.neutral500)
+                      .copyWith(fontStyle: FontStyle.italic),
+                ),
+              ),
+            ],
+          ],
         ),
-        Expanded(
-          child: Wrap(
-            spacing: BSSpace.s2,
+        const SizedBox(height: BSSpace.s1),
+        Container(height: 1, color: BSColors.divider),
+        const SizedBox(height: BSSpace.s2),
+        if (enRangee)
+          Wrap(
+            spacing: BSSpace.s4,
             runSpacing: BSSpace.s2,
-            crossAxisAlignment: WrapCrossAlignment.center,
+            children: [for (final c in cases) _CaseACocher(c, teinte)],
+          )
+        else
+          // Une colonne de Row plutôt qu'un GridView : la grille de Flutter
+          // veut une hauteur bornée, et ce bloc vit dans une colonne qui se
+          // déroule. Onze cases ne justifient pas non plus de construire à la
+          // demande.
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
             children: [
-              for (final o in options) _Pastille(o),
-              if (vide)
+              for (var i = 0; i < cases.length; i += colonnes)
                 Padding(
-                  padding: const EdgeInsets.only(left: BSSpace.s2, top: 7),
-                  child: Text(quandVide,
-                      style: BSType.body(size: 13, color: BSColors.neutral500)
-                          .copyWith(fontStyle: FontStyle.italic)),
+                  padding: const EdgeInsets.only(bottom: 9),
+                  child: Row(
+                    children: [
+                      for (var j = 0; j < colonnes; j++)
+                        Expanded(
+                          child: i + j < cases.length
+                              ? _CaseACocher(cases[i + j], teinte)
+                              : const SizedBox.shrink(),
+                        ),
+                    ],
+                  ),
                 ),
             ],
           ),
-        ),
       ],
     );
   }
 }
 
-// Cochée, la pastille se remplit : la couleur seule ne suffirait pas à qui
-// distingue mal le bleu, alors le contour s'épaissit aussi.
-class _Pastille extends StatelessWidget {
-  const _Pastille(this.o);
-  final _Option o;
+class _CaseACocher extends StatelessWidget {
+  const _CaseACocher(this.c, this.teinte);
+
+  final _Case c;
+  final Color teinte;
 
   @override
   Widget build(BuildContext context) {
-    final teinte = o.traversant ? BSColors.accent2 : BSColors.accent;
-    return InkWell(
-      onTap: o.onTap,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
-        decoration: BoxDecoration(
-          color: o.coche ? teinte : Colors.transparent,
-          border: Border.all(
-            color: o.coche ? teinte : BSColors.divider,
-            width: o.coche ? 2 : 1,
-          ),
-        ),
-        child: Text(
-          o.label,
-          style: BSType.body(
-                  size: 14, color: o.coche ? BSColors.bg : BSColors.text)
-              .copyWith(fontWeight: o.coche ? FontWeight.w600 : FontWeight.w400),
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: c.onTap,
+        // Toute la ligne est cliquable, pas seulement le carré : viser
+        // dix-sept pixels à la souris est une corvée quand le nom juste à
+        // côté fait la même chose.
+        behavior: HitTestBehavior.opaque,
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SizedBox(
+              width: 17,
+              height: 17,
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  color: c.coche ? teinte : Colors.transparent,
+                  border: c.coche
+                      ? null
+                      : Border.all(color: BSColors.neutral500),
+                ),
+                child: c.coche
+                    ? const Center(
+                        child: Text('✓',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12,
+                                height: 1)),
+                      )
+                    : null,
+              ),
+            ),
+            const SizedBox(width: 11),
+            if (c.emoji != null && c.emoji!.isNotEmpty) ...[
+              Text(c.emoji!, style: BSType.body(size: 15)),
+              const SizedBox(width: 6),
+            ],
+            Text(
+              c.label,
+              style: BSType.body(size: 16, color: BSColors.text).copyWith(
+                fontWeight: c.coche ? FontWeight.w600 : FontWeight.w400,
+              ),
+            ),
+            if (c.compte != null) ...[
+              const SizedBox(width: 8),
+              Text('${c.compte}',
+                  style: BSType.body(size: 14, color: BSColors.neutral600)),
+            ],
+          ],
         ),
       ),
     );

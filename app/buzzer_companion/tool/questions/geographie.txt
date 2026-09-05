@@ -12,6 +12,18 @@
 #   Question|Réponse|niveau|tranches
 #   > Question|Réponse     retouche la question du dessus
 #   - motif                la retire du catalogue
+#   @ noel creatures       ses thématiques, écrites et jamais devinées
+#
+# LES THÉMATIQUES SONT ÉCRITES, PAS DÉDUITES. Elles l'étaient, par mots-clés,
+# et se trompaient sans le dire : « neige » rangeait Blanche-Neige dans Sports
+# d'hiver, « dents » rangeait Les Dents de la mer dans Le corps humain. Une
+# thématique est un jugement sur le sujet de la question, du même ordre que sa
+# catégorie, et la catégorie n'a jamais été devinée.
+#
+# Les huit slugs : noel, quebec-ailleurs, regne-animal, espace, corps-humain,
+# super-heros, creatures, sports-hiver. Un slug inconnu arrête la génération.
+# « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
+# <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
 # LES FAITS ENGAGENT LE JEU. Une question fausse discrédite tout le reste :
 # quelqu'un dans le salon va le savoir. Trois formes ont déjà mordu ici, et
@@ -45,6 +57,7 @@ Quel est le plus petit pays du monde ?|Le Vatican|2|ados adultes aines
 Quel est le continent le plus peuplé ?|L'Asie|1|enfants ados adultes aines
 Quel est le plus grand océan ?|Le Pacifique|1|enfants ados adultes aines
 Dans quel pays vivent les kangourous ?|L'Australie|1|enfants ados adultes aines
+@ regne-animal
 Quel volcan célèbre domine le Japon ?|Le mont Fuji|2|ados adultes aines
 Quelle cordillère longe l'Amérique du Sud ?|Les Andes|2|ados adultes aines
 Dans quel pays se trouve la majorité de l'Amazonie ?|Le Brésil|1|enfants ados adultes aines
@@ -118,6 +131,7 @@ Quel désert couvre le sud-ouest africain ?|Le Kalahari|3|adultes aines
 Quelle est la plus grande île du monde ?|Le Groenland|2|ados adultes aines
 Quelle mer est si salée qu'on y flotte ?|La mer Morte|1|ados adultes aines
 Quel lac écossais abriterait un monstre ?|Le Loch Ness|1|enfants ados adultes aines
+@ creatures
 Quel archipel équatorien a inspiré Darwin ?|Les Galápagos|2|ados adultes aines
 Quel pays a la forme d'une botte ?|L'Italie|1|ados adultes aines
 Quel pays d'Asie compte plus de 17000 îles ?|L'Indonésie|3|adultes aines
@@ -181,6 +195,7 @@ Quelle est la plus grande ville d'Australie ?|Sydney|2|ados adultes aines
 > Sur quelle côte d'Australie se trouvent Sydney et Melbourne ?|La côte est
 Combien d'états composent les États-Unis ?|50|1|enfants ados adultes aines
 Quel état américain touche le Québec et le Nouveau-Brunswick ?|Le Maine|2|ados adultes aines
+@ quebec-ailleurs
 Quelle péninsule abrite Espagne et Portugal ?|Ibérique|2|ados adultes aines
 Quelle péninsule abrite la Mecque ?|L'Arabie|2|ados adultes aines
 Quelle mer intérieure borde le Kazakhstan et l'Iran ?|La Caspienne|3|adultes aines
@@ -195,8 +210,11 @@ Quelle fosse océanique est la plus profonde ?|Les Mariannes|3|ados adultes aine
 Quel récif corallien longe l'Australie ?|Grande Barrière|2|ados adultes aines
 Quel pays a pour emblème le kiwi ?|Nouvelle-Zélande|2|ados adultes aines
 Quel pays a pour emblème le panda ?|La Chine|1|enfants ados adultes aines
+@ regne-animal
 Quel pays a pour emblème le coq ?|La France|1|enfants ados adultes aines
+@ regne-animal
 Quel animal des Andes crache quand il est fâché ?|Le lama|1|enfants ados adultes aines
+@ regne-animal
 Sur quel continent vivent les girafes en liberté ?|L'Afrique|1|enfants ados adultes aines
 Dans quel pays les vaches sont-elles sacrées ?|L'Inde|1|enfants ados adultes aines
 Quel pays produit le plus de café ?|Le Brésil|2|ados adultes aines
@@ -215,6 +233,7 @@ Quel pont relie l'Île-du-Prince-Édouard au continent ?|Confédération|2|ados 
 Quelle ville canadienne abrite la Tour CN ?|Toronto|1|enfants ados adultes aines
 Quel lac canadien est le plus profond ?|Lac des Esclaves|3|adultes aines
 Quelle rivière célèbre coule à Ottawa ?|L'Outaouais|1|ados adultes aines
+@ quebec-ailleurs
 Capitale de la Hongrie ?|Budapest|2|ados adultes aines
 Capitale de la Thaïlande ?|Bangkok|2|ados adultes aines
 Capitale du Vietnam ?|Hanoï|2|ados adultes aines
@@ -248,6 +267,7 @@ Sur quel continent se trouve le Canada ?|L'Amérique du Nord|1|enfants ados adul
 Quel pays se trouve juste au sud du Canada ?|Les États-Unis|1|enfants ados adultes aines
 Combien y a-t-il de continents sur Terre ?|Sept|1|enfants ados adultes aines
 Dans quelle province se trouve Montréal ?|Le Québec|1|enfants ados adultes aines
+@ quebec-ailleurs
 Quel océan traverse-t-on en avion pour aller du Canada à la France ?|L'Atlantique|1|enfants ados adultes aines
 Dans quel pays se trouve la ville de New York ?|Les États-Unis|1|enfants ados adultes aines
 Quelle langue parle-t-on aux États-Unis ?|L'anglais|1|enfants ados adultes aines
@@ -255,12 +275,16 @@ Quel pays est célèbre pour ses tacos et ses sombreros ?|Le Mexique|1|enfants a
 Sur quel continent se trouve le désert du Sahara ?|L'Afrique|1|enfants ados adultes aines
 Quel pays d'Europe est célèbre pour ses montres, son chocolat et ses Alpes ?|La Suisse|1|enfants ados adultes aines
 Quel point le plus au nord de la Terre est le domicile du père Noël ?|Le pôle Nord|1|enfants ados adultes aines
+@ noel
 Quel objet en forme de boule qui tourne montre tous les pays du monde ?|Le globe terrestre|1|enfants ados adultes aines
 Comment appelle-t-on un dessin qui représente un pays ou une ville vus d'en haut ?|Une carte|1|enfants ados adultes aines
 Quelle est la plus grande ville du Québec ?|Montréal|1|enfants ados adultes aines
+@ quebec-ailleurs
 Quel État américain chaud accueille Disney World ?|La Floride|1|enfants ados adultes aines
 Quelle province canadienne est voisine du Québec, à l'ouest ?|L'Ontario|1|enfants ados adultes aines
+@ quebec-ailleurs
 Quelle province canadienne est voisine du Québec, à l'est, avec Fredericton pour capitale ?|Le Nouveau-Brunswick|1|enfants ados adultes aines
+@ quebec-ailleurs
 De quel côté se lève le soleil ?|À l'est|1|enfants ados adultes aines
 De quel côté se couche le soleil ?|À l'ouest|1|enfants ados adultes aines
 Quel pays d'Europe est célèbre pour ses moulins à vent et ses tulipes ?|Les Pays-Bas|1|enfants ados adultes aines
@@ -306,17 +330,25 @@ Dans quel pays d'Amérique du Sud danse-t-on le tango ?|L'Argentine|3|enfants ad
 Dans quel pays sont nés les Jeux olympiques ?|La Grèce|2|enfants ados adultes aines
 Dans quel pays se trouve la ville de Venise et ses canaux ?|L'Italie|1|enfants ados adultes aines
 Dans quel pays nordique le père Noël a-t-il son village officiel, à Rovaniemi ?|La Finlande|3|enfants ados adultes aines
+@ noel
 Quel pays a la forme d'une longue bande le long de l'océan Pacifique ?|Le Chili|3|enfants ados adultes aines
 Dans quel pays trouve-t-on des koalas et des kangourous ?|L'Australie|1|enfants ados adultes aines
+@ regne-animal
 Dans quel pays trouve-t-on les fjords et les Vikings ?|La Norvège|3|enfants ados adultes aines
 Quelle province canadienne parle surtout français ?|Le Québec|1|enfants ados adultes aines
+@ quebec-ailleurs
 Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?|L'Alberta|3|enfants ados adultes aines
 Quel animal figure sur la pièce d'un dollar canadien ?|Le huard|2|enfants ados adultes aines
 Quelle région du Québec est célèbre pour ses bleuets ?|Le Lac-Saint-Jean|2|enfants ados adultes aines
+@ quebec-ailleurs
 Quel énorme bloc de calcaire troué se dresse dans la mer en Gaspésie ?|Le rocher Percé|2|enfants ados adultes aines
+@ quebec-ailleurs
 Quelle montagne se dresse au milieu de Montréal ?|Le mont Royal|1|enfants ados adultes aines
+@ quebec-ailleurs
 Quelle chaîne de montagnes du Québec attire les skieurs au nord de Montréal ?|Les Laurentides|2|enfants ados adultes aines
+@ quebec-ailleurs
 Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?|La baie James|3|ados adultes aines
+@ quebec-ailleurs
 Dans quel pays se trouve la Grande Muraille ?|La Chine|1|enfants ados adultes aines
 Dans quel pays se trouve la tour de Pise ?|L'Italie|2|enfants ados adultes aines
 Dans quel pays se trouve le Taj Mahal ?|L'Inde|3|enfants ados adultes aines
@@ -331,9 +363,12 @@ Comment appelle-t-on la vague géante déclenchée par un tremblement de terre ?
 Comment appelle-t-on la secousse qui fait trembler le sol ?|Un tremblement de terre|1|enfants ados adultes aines
 Quelle feuille rouge orne le drapeau du Canada ?|La feuille d'érable|1|enfants ados adultes aines
 Quelle fleur bleue orne le drapeau du Québec ?|La fleur de lys|1|enfants ados adultes aines
+@ quebec-ailleurs
 De quelles couleurs est le drapeau de la France ?|Bleu blanc rouge|1|enfants ados adultes aines
 Quel animal est l'emblème des États-Unis ?|L'aigle|2|enfants ados adultes aines
+@ regne-animal
 Quel animal géant et blanc est le symbole du Grand Nord canadien ?|L'ours polaire|1|enfants ados adultes aines
+@ regne-animal
 Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?|L'hémisphère nord|3|enfants ados adultes aines
 Dans quel sens le soleil se lève-t-il ?|À l'est|1|enfants ados adultes aines
 Dans quelle direction le soleil se couche-t-il ?|À l'ouest|1|enfants ados adultes aines
@@ -362,10 +397,15 @@ Quelle grande ville des États-Unis abrite Hollywood ?|Los Angeles|2|enfants ado
 Dans quelle ville américaine se trouve Disney World ?|Orlando|3|enfants ados adultes aines
 Dans quel état américain se trouvent les Everglades et la ville de Miami ?|La Floride|2|enfants ados adultes aines
 Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?|La ville de Québec|2|enfants ados adultes aines
+@ quebec-ailleurs
 Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?|Le pont Champlain|3|enfants ados adultes aines
+@ quebec-ailleurs
 Comment appelle-t-on le nord du Québec, immense et presque sans routes ?|Le Grand Nord|2|enfants ados adultes aines
+@ quebec-ailleurs
 Quel arbre couvre les immenses forêts du nord du Québec ?|L'épinette|3|enfants ados adultes aines
+@ quebec-ailleurs
 Quelle ville du Québec accueille chaque été le Festival de la poutine ?|Drummondville|3|ados adultes aines
+@ quebec-ailleurs
 Comment appelle-t-on la rive du fleuve où se trouve Longueuil ?|La Rive-Sud|2|enfants ados adultes aines
 
 Quel pays insulaire du nord de l'Atlantique compte des volcans et des geysers ?|L'Islande|3|enfants ados adultes aines

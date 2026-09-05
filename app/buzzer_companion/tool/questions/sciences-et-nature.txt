@@ -12,6 +12,18 @@
 #   Question|Réponse|niveau|tranches
 #   > Question|Réponse     retouche la question du dessus
 #   - motif                la retire du catalogue
+#   @ noel creatures       ses thématiques, écrites et jamais devinées
+#
+# LES THÉMATIQUES SONT ÉCRITES, PAS DÉDUITES. Elles l'étaient, par mots-clés,
+# et se trompaient sans le dire : « neige » rangeait Blanche-Neige dans Sports
+# d'hiver, « dents » rangeait Les Dents de la mer dans Le corps humain. Une
+# thématique est un jugement sur le sujet de la question, du même ordre que sa
+# catégorie, et la catégorie n'a jamais été devinée.
+#
+# Les huit slugs : noel, quebec-ailleurs, regne-animal, espace, corps-humain,
+# super-heros, creatures, sports-hiver. Un slug inconnu arrête la génération.
+# « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
+# <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
 # LES FAITS ENGAGENT LE JEU. Une question fausse discrédite tout le reste :
 # quelqu'un dans le salon va le savoir. Trois formes ont déjà mordu ici, et
@@ -29,78 +41,123 @@
 # l'extérieur. Ce qui ne se vérifie pas ne s'écrit pas.
 Quelle est la formule chimique de l'eau ?|H2O|1|enfants ados adultes aines
 Combien de planètes dans le système solaire ?|Huit|1|enfants ados adultes aines
+@ espace
 Quelle planète est surnommée la planète rouge ?|Mars|1|enfants ados adultes aines
+@ espace
 Quelle est la planète la plus proche du Soleil ?|Mercure|2|ados adultes aines
+@ espace
 Quelle est la plus grosse planète du système solaire ?|Jupiter|1|enfants ados adultes aines
+@ espace
 Le Soleil est-il une planète ou une étoile ?|Une étoile|1|enfants ados adultes aines
+@ espace
 À quelle température l'eau bout-elle ?|100 degrés C|1|enfants ados adultes aines
 À quelle température l'eau gèle-t-elle ?|0 degré C|1|enfants ados adultes aines
 Combien d'os dans le squelette humain adulte ?|206|2|ados adultes aines
+@ corps-humain
 Combien de pattes possède une araignée ?|Huit|1|enfants ados adultes aines
+@ regne-animal
 Combien de pattes possède un insecte ?|Six|1|enfants ados adultes aines
+@ regne-animal
 Quel est le plus grand animal du monde ?|La baleine bleue|1|enfants ados adultes aines
+@ regne-animal
 Quel est l'animal terrestre le plus rapide ?|Le guépard|1|enfants ados adultes aines
+@ regne-animal
 Quel insecte produit le miel ?|L'abeille|1|enfants ados adultes aines
+@ regne-animal
 Quel est le seul mammifère volant ?|La chauve-souris|1|enfants ados adultes aines
+@ regne-animal
 Le dauphin est-il un poisson ou un mammifère ?|Un mammifère|1|enfants ados adultes aines
+@ regne-animal
 Qui a découvert la gravitation ?|Newton|1|enfants ados adultes aines
 Qui a développé la théorie de la relativité ?|Einstein|1|ados adultes aines
 Quelle scientifique a étudié la radioactivité ?|Marie Curie|2|ados adultes aines
 Quel gaz les plantes rejettent-elles le jour ?|L'oxygène|1|enfants ados adultes aines
 Comment s'appelle la transformation de la chenille ?|La métamorphose|1|enfants ados adultes aines
+@ regne-animal
 Que devient un têtard ?|Une grenouille|1|enfants ados adultes aines
+@ regne-animal
 Quelle molécule porte notre code génétique ?|L'ADN|1|enfants ados adultes aines
 De quel élément le diamant est-il composé ?|Le carbone|2|ados adultes aines
 Quel est le symbole chimique de l'or ?|Au|2|ados adultes aines
 Quel est le symbole chimique du fer ?|Fe|2|ados adultes aines
 Quelle échelle mesure les séismes ?|Richter|1|ados adultes aines
 Quel instrument sert à observer les étoiles ?|Le télescope|1|enfants ados adultes aines
+@ espace
 Quel instrument sert à observer les microbes ?|Le microscope|1|enfants ados adultes aines
 Où vivent les ours polaires ?|En Arctique|1|enfants ados adultes aines
+@ regne-animal
 Sur quel continent vivent les manchots empereurs ?|L'Antarctique|2|ados adultes aines
+@ regne-animal
 Combien de cavités possède le cœur humain ?|Quatre|2|ados adultes aines
+@ corps-humain
 Quel organe pompe le sang ?|Le cœur|1|enfants ados adultes aines
+@ corps-humain
 Quels organes nous servent à respirer ?|Les poumons|1|enfants ados adultes aines
+@ corps-humain
 Quelle est la vitesse approximative de la lumière ?|300 000 km/s|2|ados adultes aines
 Qu'est-ce qui est le plus rapide : le son ou la lumière ?|La lumière|1|enfants ados adultes aines
 Quel phénomène lumineux accompagne le tonnerre ?|L'éclair|1|enfants ados adultes aines
 Combien de temps la Terre met-elle à tourner sur elle-même ?|24 heures|1|enfants ados adultes aines
 Quel astre provoque les marées ?|La Lune|1|enfants ados adultes aines
+@ espace
 Quel reptile change de couleur pour se camoufler ?|Le caméléon|1|enfants ados adultes aines
+@ regne-animal
 Quel gaz compose 78 pour cent de l'air ?|L'azote|2|ados adultes aines
 Quelle planète a les anneaux les plus spectaculaires ?|Saturne|1|enfants ados adultes aines
+@ espace
 Quelle est l'étoile la plus proche de la Terre ?|Le Soleil|1|enfants ados adultes aines
+@ espace
 Combien de minutes met la lumière du Soleil à nous parvenir ?|Huit|2|ados adultes aines
+@ espace
 Quels organes filtrent le sang ?|Les reins|1|enfants ados adultes aines
+@ corps-humain
 Quel organe produit l'insuline ?|Le pancréas|2|ados adultes aines
+@ corps-humain
 Quel est le plus grand organe du corps humain ?|La peau|2|ados adultes aines
+@ corps-humain
 Combien de dents de lait a un enfant ?|20|2|ados adultes aines
+@ corps-humain
 Quelles cellules du sang combattent les infections ?|Globules blancs|1|enfants ados adultes aines
+@ corps-humain
 De quel métal est principalement fait l'acier ?|Le fer|1|ados adultes aines
 Quelle planète est la plus chaude du système solaire ?|Vénus|3|adultes aines
+@ espace
 Quelle unité mesure le courant électrique ?|L'ampère|2|ados adultes aines
 Quelle unité mesure la puissance ?|Le watt|2|ados adultes aines
 Quelle unité mesure la fréquence ?|Le hertz|2|ados adultes aines
 Quelle unité mesure la force ?|Le newton|2|ados adultes aines
 Quel cousin rayé du cheval vit en Afrique ?|Le zèbre|1|enfants ados adultes aines
+@ regne-animal
 Quel animal marin a trois cœurs ?|La pieuvre|2|ados adultes aines
+@ regne-animal
 # La pieuvre régénère aussi ses bras. Les cinq branches tranchent.
 Quel animal marin peut régénérer ses bras ?|L'étoile de mer|1|enfants ados adultes aines
 > Quel animal marin à cinq bras peut en faire repousser un ?|L'étoile de mer
+@ regne-animal
 # « Le plus grand » : l'albatros gagne en envergure, le condor aussi.
 Quel est le plus grand oiseau du monde ?|L'autruche|1|enfants ados adultes aines
 > Quel est le plus grand oiseau du monde, incapable de voler ?|L'autruche
+@ regne-animal
 Quel minuscule oiseau peut voler en arrière ?|Le colibri|1|enfants ados adultes aines
+@ regne-animal
 Quel est l'os le plus long du corps humain ?|Le fémur|1|enfants ados adultes aines
+@ corps-humain
 Combien de vertèbres a le cou d'une girafe ?|Sept|3|adultes aines
+@ regne-animal
 Quel grand reptile du Nil était sacré en Égypte ?|Le crocodile|1|enfants ados adultes aines
+@ regne-animal
 Quel mammifère australien a un bec de canard ?|L'ornithorynque|2|ados adultes aines
+@ regne-animal
 Combien de mois dure la gestation de l'éléphant ?|22|3|adultes aines
+@ regne-animal
 Quel insecte soulève 50 fois son poids ?|La fourmi|1|enfants ados adultes aines
+@ regne-animal
 Combien d'ailes possède une abeille ?|Quatre|2|ados adultes aines
+@ regne-animal
 Quel arbre géant de Californie est le plus gros du monde ?|Le séquoia|2|ados adultes aines
 Quelle plante carnivore referme ses mâchoires sur les mouches ?|La dionée|3|adultes aines
 Quel phénomène lumineux colore le ciel polaire ?|Aurore boréale|1|enfants ados adultes aines
+@ espace
 Quel instrument mesure la pression atmosphérique ?|Le baromètre|2|ados adultes aines
 Quelle échelle mesure la dureté des minéraux ?|Mohs|3|ados adultes aines
 Quel est le symbole chimique du sodium ?|Na|2|ados adultes aines
@@ -108,17 +165,29 @@ Quel est le symbole chimique de l'hydrogène ?|H|1|ados adultes aines
 Quel naturaliste a proposé la théorie de l'évolution ?|Darwin|1|ados adultes aines
 Contre quelle maladie Pasteur a-t-il créé un vaccin ?|La rage|2|ados adultes aines
 Combien de chromosomes possède l'humain ?|46|2|ados adultes aines
+@ corps-humain
 Quelle planète a été rétrogradée en planète naine ?|Pluton|1|enfants ados adultes aines
+@ espace
 Quelle est la plus grande lune de Saturne ?|Titan|3|adultes aines
+@ espace
 Quelle planète tourne couchée sur le côté ?|Uranus|3|adultes aines
+@ espace
 Combien de lunes possède la Terre ?|Une|1|enfants ados adultes aines
+@ espace
 Combien de lunes possède Mars ?|Deux|3|adultes aines
+@ espace
 Quelle galaxie abrite notre système solaire ?|La Voie lactée|1|enfants ados adultes aines
+@ espace
 Quel astre supermassif avale même la lumière ?|Le trou noir|1|enfants ados adultes aines
+@ espace
 Quel caillou céleste brille en traversant l'atmosphère ?|L'étoile filante|1|enfants ados adultes aines
+@ espace
 Comment nomme-t-on une roche tombée de l'espace ?|Une météorite|1|enfants ados adultes aines
+@ espace
 Quelle comète célèbre revient tous les 76 ans ?|Halley|2|ados adultes aines
+@ espace
 Quel événement cache le Soleil derrière la Lune ?|Une éclipse|1|enfants ados adultes aines
+@ espace
 Quelle est la durée d'une année sur Terre ?|365 jours|1|enfants ados adultes aines
 Quel pourcentage de la Terre est couvert d'eau ?|71 pour cent|2|ados adultes aines
 Quelle couche de gaz protège la Terre des UV ?|La couche d'ozone|1|enfants ados adultes aines
@@ -132,47 +201,82 @@ Comment mesure-t-on la force des ouragans ?|Saffir-Simpson|3|adultes aines
 De quoi sont faits les nuages ?|Gouttelettes d'eau|1|enfants ados adultes aines
 Quel nuage annonce l'orage ?|Le cumulonimbus|2|ados adultes aines
 Quelle est la température du corps humain en santé ?|37 degrés C|1|enfants ados adultes aines
+@ corps-humain
 Combien de litres de sang contient un adulte ?|Cinq|2|ados adultes aines
+@ corps-humain
 Quel organe contrôle tout le corps ?|Le cerveau|1|enfants ados adultes aines
+@ corps-humain
 Quel muscle bat sans jamais se reposer ?|Le cœur|1|enfants ados adultes aines
+@ corps-humain
 Quel sens est associé à la langue ?|Le goût|1|enfants ados adultes aines
 Quel sens est associé au nez ?|L'odorat|1|enfants ados adultes aines
 Quelle partie de l'œil donne sa couleur ?|L'iris|1|ados adultes aines
+@ corps-humain
 Quelle petite fenêtre de l'œil laisse entrer la lumière ?|La pupille|1|enfants ados adultes aines
+@ corps-humain
 Quel os protège le cerveau ?|Le crâne|1|enfants ados adultes aines
+@ corps-humain
 Quels os protègent les poumons ?|Les côtes|1|enfants ados adultes aines
+@ corps-humain
 Combien de paires de côtes avons-nous ?|Douze|2|ados adultes aines
+@ corps-humain
 Quel est le plus petit os du corps ?|L'étrier|2|ados adultes aines
+@ corps-humain
 Où se trouve le plus petit os du corps ?|Dans l'oreille|2|ados adultes aines
 > Dans quelle partie du corps loge l'os appelé enclume ?|Dans l'oreille
+@ corps-humain
 Quel liquide produit par le foie digère les graisses ?|La bile|2|ados adultes aines
+@ corps-humain
 Quel tube relie la bouche à l'estomac ?|L'œsophage|2|ados adultes aines
+@ corps-humain
 Quel gaz expirons-nous ?|Le gaz carbonique|1|enfants ados adultes aines
 Quelle vitamine fabrique la peau au soleil ?|La vitamine D|2|ados adultes aines
+@ corps-humain
 Quel minéral renforce les os ?|Le calcium|1|enfants ados adultes aines
+@ corps-humain
 Quel est l'animal le plus haut du monde ?|La girafe|1|enfants ados adultes aines
+@ regne-animal
 Quel animal terrestre est le plus lourd ?|L'éléphant|1|enfants ados adultes aines
+@ regne-animal
 Quel oiseau est le plus rapide en piqué ?|Le faucon pèlerin|2|ados adultes aines
+@ regne-animal
 Quel poisson à voile est le plus rapide des mers ?|Le voilier|3|ados adultes aines
+@ regne-animal
 Quel félin est le plus gros du monde ?|Le tigre|2|ados adultes aines
+@ regne-animal
 Quel animal a la langue la plus longue par rapport au corps ?|Le caméléon|2|ados adultes aines
+@ regne-animal
 Quel animal a le cou le plus long ?|La girafe|1|enfants ados adultes aines
+@ regne-animal
 Quel reptile peut vivre plus de 150 ans ?|La tortue géante|1|enfants ados adultes aines
+@ regne-animal
 Comment s'appelle la maison des fourmis ?|La fourmilière|1|enfants ados adultes aines
+@ regne-animal
 Comment s'appelle la maison des abeilles ?|La ruche|1|enfants ados adultes aines
+@ regne-animal
 Comment s'appelle la larve du papillon ?|La chenille|1|enfants ados adultes aines
+@ regne-animal
 Dans quoi la chenille se transforme-t-elle ?|La chrysalide|1|enfants ados adultes aines
+@ regne-animal
 Quel organe permet aux poissons de respirer sous l'eau ?|Les branchies|1|enfants ados adultes aines
+@ regne-animal
 Quel animal est le meilleur ami de l'homme ?|Le chien|1|enfants ados adultes aines
+@ regne-animal
 Combien de cœurs possède un ver de terre ?|Cinq|3|adultes aines
 # Réponse dans la question.
 Quel animal produit de la soie ?|Le ver à soie|1|enfants ados adultes aines
 > Quelle chenille fabrique un fil précieux en tissant son cocon ?|Le ver à soie
+@ regne-animal
 Quel animal marin ressemble à un cheval miniature ?|L'hippocampe|1|enfants ados adultes aines
+@ regne-animal
 Chez quel animal le mâle porte-t-il les bébés ?|L'hippocampe|1|enfants ados adultes aines
+@ regne-animal
 Quel mammifère marin chante des mélodies ?|La baleine à bosse|2|ados adultes aines
+@ regne-animal
 Quel animal polaire a la peau noire sous son pelage blanc ?|L'ours polaire|2|ados adultes aines
+@ regne-animal
 Quel grand singe est le plus proche de l'homme ?|Le chimpanzé|1|enfants ados adultes aines
+@ regne-animal
 # « À feuilles caduques » répondait tout aussi bien.
 Comment nomme-t-on un arbre qui perd ses feuilles l'hiver ?|Un feuillu|1|ados adultes aines
 > Comment nomme-t-on un arbre à feuilles, par opposition à un conifère ?|Un feuillu
@@ -182,6 +286,7 @@ Quel pigment rend les plantes vertes ?|La chlorophylle|1|enfants ados adultes ai
 Quel gaz les plantes absorbent-elles ?|Le gaz carbonique|1|enfants ados adultes aines
 Comment s'appelle le voyage du pollen ?|La pollinisation|1|enfants ados adultes aines
 Quel insecte est le principal pollinisateur ?|L'abeille|1|enfants ados adultes aines
+@ regne-animal
 Quelle fleur suit le Soleil ?|Le tournesol|1|enfants ados adultes aines
 # Ambigu : le concombre est un fruit et bat le melon. On décrit celui qu'on veut.
 Quel fruit contient le plus d'eau ?|Le melon d'eau|2|ados adultes aines
@@ -196,6 +301,7 @@ Quelle particule négative tourne autour du noyau ?|L'électron|1|ados adultes a
 Quelle particule positive loge dans le noyau ?|Le proton|1|ados adultes aines
 Quelle est la plus petite unité de la matière ?|L'atome|1|enfants ados adultes aines
 Quelle est la plus petite unité du vivant ?|La cellule|1|enfants ados adultes aines
+@ corps-humain
 Quels sont les trois états de l'eau ?|Solide liquide gaz|1|enfants ados adultes aines
 Comment s'appelle le passage de liquide à gaz ?|L'évaporation|1|enfants ados adultes aines
 Comment s'appelle le passage de gaz à liquide ?|La condensation|1|ados adultes aines
@@ -206,6 +312,7 @@ Quel savant a donné son nom à cette poussée ?|Archimède|1|ados adultes aines
 Quelle vitesse ne peut jamais être dépassée ?|Celle de la lumière|1|enfants ados adultes aines
 Quel instrument grossit les objets proches ?|La loupe|1|enfants ados adultes aines
 Quelle lumière invisible bronze la peau ?|Les ultraviolets|1|ados adultes aines
+@ corps-humain
 Quelle onde invisible réchauffe les aliments au four ?|Les micro-ondes|1|enfants ados adultes aines
 Quel métal précieux conduit le mieux l'électricité ?|L'argent|3|ados adultes aines
 Quel gaz léger gonflait les dirigeables ?|L'hydrogène|2|ados adultes aines
@@ -216,27 +323,42 @@ Quel tableau classe tous les éléments chimiques ?|Tableau périodique|1|ados a
 Qui a créé le tableau périodique ?|Mendeleïev|3|ados adultes aines
 Quel acide donne son goût au citron ?|L'acide citrique|1|ados adultes aines
 Quel sucre trouve-t-on dans le sang ?|Le glucose|1|ados adultes aines
+@ corps-humain
 Quelle protéine transporte l'oxygène dans le sang ?|L'hémoglobine|2|ados adultes aines
+@ corps-humain
 Quel groupe sanguin est donneur universel ?|O négatif|2|ados adultes aines
+@ corps-humain
 Quel est le symbole chimique de l'oxygène ?|O|1|ados adultes aines
 Quel est le symbole chimique de l'argent ?|Ag|2|ados adultes aines
 Quelle est la planète la plus éloignée du Soleil ?|Neptune|2|ados adultes aines
+@ espace
 Combien de poumons possède l'humain ?|Deux|1|enfants ados adultes aines
+@ corps-humain
 Quel insecte transmet la malaria ?|Le moustique|1|ados adultes aines
+@ regne-animal
 Quel arachnide a une queue munie d'un dard ?|Le scorpion|1|enfants ados adultes aines
+@ regne-animal
 Combien de pattes possède un crabe ?|Dix|2|ados adultes aines
+@ regne-animal
 Quelle plante compose le menu du panda géant ?|Le bambou|1|enfants ados adultes aines
 De quel arbre le koala mange-t-il les feuilles ?|L'eucalyptus|1|enfants ados adultes aines
 Combien de bosses a un dromadaire ?|Une|1|enfants ados adultes aines
+@ regne-animal
 Combien de bosses a un chameau ?|Deux|1|enfants ados adultes aines
+@ regne-animal
 Comment s'appelle le sonar naturel des chauves-souris ?|L'écholocation|2|ados adultes aines
 Quelle force nous retient au sol ?|La gravité|1|enfants ados adultes aines
 Quel scientifique a inventé le paratonnerre ?|Benjamin Franklin|2|ados adultes aines
 Quelle articulation relie la cuisse à la jambe ?|Le genou|1|enfants ados adultes aines
+@ corps-humain
 Quel animal est le plus gros rongeur du monde ?|Le capybara|2|ados adultes aines
+@ regne-animal
 Quelle partie de la cellule contient l'ADN ?|Le noyau|1|enfants ados adultes aines
+@ corps-humain
 Quel dinosaure a trois cornes sur la tête ?|Le tricératops|1|enfants ados adultes aines
+@ regne-animal
 Quel dinosaure a des plaques osseuses sur le dos ?|Le stégosaure|1|enfants ados adultes aines
+@ regne-animal
 Quel effet atmosphérique réchauffe la planète ?|L'effet de serre|1|enfants ados adultes aines
 Quelle énergie est produite à partir d'uranium ?|Le nucléaire|1|ados adultes aines
 Quel instrument mesure la vitesse du vent ?|L'anémomètre|2|ados adultes aines
@@ -250,55 +372,91 @@ Quel instrument mesure la vitesse du vent ?|L'anémomètre|2|ados adultes aines
 # se joue à l'oral : la réponse doit s'entendre sans équivoque, et une seule
 # réponse doit être possible. Format : Question|Réponse|niveau.
 Quelles sont les deux couleurs du zèbre ?|Noir et blanc|1|enfants ados adultes aines
+@ regne-animal
 Quel oiseau noir et blanc de l'Antarctique ne sait pas voler ?|Le manchot|1|enfants ados adultes aines
+@ regne-animal
 Quel animal saute et transporte son bébé dans une poche ?|Le kangourou|1|enfants ados adultes aines
+@ regne-animal
 Quel animal construit des barrages dans les rivières ?|Le castor|1|enfants ados adultes aines
+@ regne-animal
 Quel gros animal brun dort tout l'hiver dans sa tanière ?|L'ours|1|enfants ados adultes aines
+@ regne-animal
 Quel reptile porte une carapace sur son dos ?|La tortue|1|enfants ados adultes aines
+@ regne-animal
 Quel petit animal à coquille rampe lentement en laissant une trace ?|L'escargot|1|enfants ados adultes aines
+@ regne-animal
 Quel insecte rouge à points noirs porte bonheur ?|La coccinelle|1|enfants ados adultes aines
+@ regne-animal
 Quel insecte brille dans la nuit d'été ?|La luciole|1|enfants ados adultes aines
+@ regne-animal
 Quel liquide rouge circule dans nos veines ?|Le sang|1|enfants ados adultes aines
+@ corps-humain
 Quels organes nous permettent de voir ?|Les yeux|1|enfants ados adultes aines
+@ corps-humain
 Quels organes nous permettent d'entendre ?|Les oreilles|1|enfants ados adultes aines
+@ corps-humain
 Quel gaz de l'air respirons-nous pour vivre ?|L'oxygène|1|enfants ados adultes aines
 Combien d'orteils avons-nous en tout ?|Dix|1|enfants ados adultes aines
 Quel astre change de forme dans le ciel au fil des nuits ?|La Lune|1|enfants ados adultes aines
+@ espace
 Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?|L'arc-en-ciel|1|enfants ados adultes aines
 Quelle saison vient après l'hiver ?|Le printemps|1|enfants ados adultes aines
 En quelle saison les feuilles des arbres tombent-elles ?|L'automne|1|enfants ados adultes aines
 Que devient l'eau quand elle gèle ?|De la glace|1|enfants ados adultes aines
 De quoi sont faites les dunes du désert ?|De sable|1|enfants ados adultes aines
 De quel arbre tire-t-on la sève qui devient du sirop au printemps ?|L'érable|1|enfants ados adultes aines
+@ quebec-ailleurs
 Quelle fleur jaune devient une boule de duvet qu'on souffle ?|Le pissenlit|1|enfants ados adultes aines
 Quelle plante piquante pousse dans le désert ?|Le cactus|1|enfants ados adultes aines
 Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?|Le tyrannosaure|1|enfants ados adultes aines
+@ regne-animal
 Sur quelle planète habitons-nous ?|La Terre|1|enfants ados adultes aines
+@ espace
 Combien de pattes a un oiseau ?|Deux|1|enfants ados adultes aines
+@ regne-animal
 Quel animal marin géant souffle un jet d'eau par le dos ?|La baleine|1|enfants ados adultes aines
+@ regne-animal
 Quel animal à longues oreilles adore les carottes ?|Le lapin|1|enfants ados adultes aines
+@ regne-animal
 Quel animal rampe sans pattes ?|Le serpent|1|enfants ados adultes aines
+@ regne-animal
 Quel oiseau répète ce qu'on lui dit ?|Le perroquet|1|enfants ados adultes aines
+@ regne-animal
 Quel gros animal d'Afrique passe ses journées dans l'eau, la gueule grande ouverte ?|L'hippopotame|1|enfants ados adultes aines
+@ regne-animal
 Quel grand oiseau rose se tient souvent sur une seule patte ?|Le flamant rose|1|enfants ados adultes aines
+@ regne-animal
 Quel métal les aimants attirent-ils ?|Le fer|1|enfants ados adultes aines
 Quel animal à huit pattes tisse une toile ?|L'araignée|1|enfants ados adultes aines
+@ regne-animal
 Quel gros animal gris d'Afrique porte une corne sur le nez ?|Le rhinocéros|1|enfants ados adultes aines
+@ regne-animal
 Quel animal noir et blanc dégage une odeur terrible quand il a peur ?|La mouffette|1|enfants ados adultes aines
+@ regne-animal
 Quel petit animal rayé remplit ses joues de noix ?|Le tamia (suisse)|1|enfants ados adultes aines
+@ regne-animal
 Quel oiseau au long cou noir migre en formant un V dans le ciel ?|La bernache (outarde)|1|enfants ados adultes aines
+@ regne-animal
 Quel animal produit les œufs qu'on mange au déjeuner ?|La poule|1|enfants ados adultes aines
+@ regne-animal
 Quel animal de la ferme nous donne le lait ?|La vache|1|enfants ados adultes aines
+@ regne-animal
 Dans quel organe la nourriture arrive-t-elle une fois avalée ?|L'estomac|1|enfants ados adultes aines
+@ corps-humain
 Comment appelle-t-on l'ensemble des os du corps ?|Le squelette|1|enfants ados adultes aines
+@ corps-humain
 Quelles parties blanches de la bouche servent à mâcher ?|Les dents|1|enfants ados adultes aines
+@ corps-humain
 Quel organe de la bouche permet de goûter ?|La langue|1|enfants ados adultes aines
+@ corps-humain
 Quelle partie du visage sert à sentir les odeurs ?|Le nez|1|enfants ados adultes aines
 Qu'est-ce qui se contracte pour faire bouger les os ?|Les muscles|2|enfants ados adultes aines
+@ corps-humain
 Quelle petite marque au milieu du ventre reste du cordon ombilical ?|Le nombril|1|enfants ados adultes aines
 Qu'est-ce qui pousse au bout des doigts et qu'il faut couper ?|Les ongles|1|enfants ados adultes aines
 Quel doigt de la main est le plus court et le plus épais ?|Le pouce|1|enfants ados adultes aines
 Quelle articulation plie le bras en son milieu ?|Le coude|1|enfants ados adultes aines
+@ corps-humain
 Qu'est-ce qui pousse sur la tête et qu'on va faire couper chez le coiffeur ?|Les cheveux|1|enfants ados adultes aines
 Que tombe-t-il du ciel en flocons blancs l'hiver ?|La neige|1|enfants ados adultes aines
 Quelles gouttes d'eau tombent des nuages ?|La pluie|1|enfants ados adultes aines
@@ -309,31 +467,53 @@ Qu'est-ce qui fait tourner les éoliennes et voler les cerfs-volants ?|Le vent|1
 Comment appelle-t-on les amas blancs qui flottent dans le ciel ?|Un nuage|1|enfants ados adultes aines
 Quelles gouttes couvrent le gazon au petit matin ?|La rosée|2|enfants ados adultes aines
 Quels points brillants voit-on dans le ciel par une nuit claire ?|Les étoiles|1|enfants ados adultes aines
+@ espace
 Quel astre traverse le ciel en traînant une longue queue lumineuse ?|Une comète|2|enfants ados adultes aines
+@ espace
 Quel engin décolle pour emmener des gens dans l'espace ?|Une fusée|1|enfants ados adultes aines
+@ espace
 Comment appelle-t-on une personne qui voyage dans l'espace ?|Un astronaute|1|enfants ados adultes aines
+@ espace
 Quelle constellation en forme de casserole se repère dans le ciel du Québec ?|La Grande Ourse|3|enfants ados adultes aines
 Comment appelle-t-on l'ensemble formé par le Soleil et ses planètes ?|Le système solaire|2|enfants ados adultes aines
+@ espace
 Quelles parties de l'arbre changent de couleur en automne ?|Les feuilles|1|enfants ados adultes aines
 Quelle partie de la plante relie la racine à la fleur ?|La tige|2|enfants ados adultes aines
 Que faut-il mettre en terre pour faire pousser une plante ?|Une graine|1|enfants ados adultes aines
 Comment appelle-t-on la grosse partie de l'arbre qui porte les branches ?|Le tronc|1|enfants ados adultes aines
 Comment appelle-t-on la peau rugueuse qui recouvre le tronc ?|L'écorce|2|enfants ados adultes aines
 Quel mammifère marin sauteur siffle et vit en groupe ?|Le dauphin|1|enfants ados adultes aines
+@ regne-animal
 Quel poisson à l'aileron pointu fait fuir les baigneurs ?|Le requin|1|enfants ados adultes aines
+@ regne-animal
 Comment appelle-t-on le bébé de la grenouille, qui a encore une queue ?|Le têtard|2|enfants ados adultes aines
+@ regne-animal
 Quel petit animal sans pattes creuse des galeries dans la terre du jardin ?|Le ver de terre|1|enfants ados adultes aines
+@ regne-animal
 Quel oiseau de nuit tourne la tête presque tout le tour ?|Le hibou|1|enfants ados adultes aines
+@ regne-animal
 Quel petit animal à grosse queue touffue cache des noix pour l'hiver ?|L'écureuil|1|enfants ados adultes aines
+@ regne-animal
 Quel animal masqué fouille dans les poubelles la nuit au Québec ?|Le raton laveur|1|enfants ados adultes aines
+@ regne-animal
 Quel animal roux au museau pointu passe pour rusé dans les fables ?|Le renard|1|enfants ados adultes aines
+@ regne-animal
 Quel animal hurle à la lune et chasse en meute ?|Le loup|1|enfants ados adultes aines
+@ regne-animal
 Quel animal d'Amérique du Sud se déplace très lentement, suspendu aux branches ?|Le paresseux|2|enfants ados adultes
+@ regne-animal
 Quel gros animal noir et blanc de Chine se nourrit de bambou ?|Le panda|1|enfants ados adultes aines
+@ regne-animal
 Quel animal d'Australie dort presque toute la journée dans un eucalyptus ?|Le koala|2|enfants ados adultes
+@ regne-animal
 Quel oiseau frappe le tronc des arbres à coups de bec ?|Le pic-bois|2|enfants ados adultes aines
+@ regne-animal
 Quel oiseau bâtit son nid de boue sous les avant-toits des granges ?|L'hirondelle|2|enfants ados adultes aines
+@ regne-animal
 Quel gros oiseau entièrement noir croasse ?|Le corbeau|1|enfants ados adultes aines
+@ regne-animal
 Quel oiseau de l'étang fait « coin-coin » ?|Le canard|1|enfants ados adultes aines
+@ regne-animal
 Quel insecte piqueur bourdonne autour des campeurs les soirs d'été ?|Le maringouin|1|enfants ados adultes aines
+@ regne-animal
 Quelle partie colorée de la fleur attire les abeilles ?|Les pétales|2|enfants ados adultes aines

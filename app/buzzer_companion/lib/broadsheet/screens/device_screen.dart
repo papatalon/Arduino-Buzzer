@@ -254,7 +254,17 @@ class _Diagnostics extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
+        // UN WRAP ET NON UN ROW : les cinq compteurs débordaient de 57 pixels
+        // à droite, hors de la fenêtre, et le cinquième était donc invisible.
+        //
+        // Les serrer aurait été pire. Ce sont les chiffres qu'on lit quand la
+        // liaison se comporte mal, en gros caractères pour se lire de loin
+        // pendant qu'on manipule le buzzer : les rétrécir ou les tronquer
+        // enlèverait justement ce qui les rend utiles. Ils passent donc à la
+        // ligne quand la place manque.
+        Wrap(
+          spacing: BSSpace.s6,
+          runSpacing: BSSpace.s3,
           children: [
             // État en direct, calculé à partir du heartbeat plutôt que du
             // texte de statut (qui garde le dernier évènement et peut être
@@ -264,13 +274,9 @@ class _Diagnostics extends StatelessWidget {
               value: ble.linkAlive ? 'Vivante' : 'Silencieuse',
               color: ble.linkAlive ? BSColors.accent700 : BSColors.accent2_800,
             ),
-            const SizedBox(width: BSSpace.s6),
             _Stat(label: 'Messages reçus', value: '${ble.messagesReceived}'),
-            const SizedBox(width: BSSpace.s6),
             _Stat(label: 'Lignes rejetées', value: '${game.messagesRejected}'),
-            const SizedBox(width: BSSpace.s6),
             _Stat(label: 'Dernier message', value: _age()),
-            const SizedBox(width: BSSpace.s6),
             _Stat(label: 'Audio', value: _audio(), color: _audioColor()),
           ],
         ),
