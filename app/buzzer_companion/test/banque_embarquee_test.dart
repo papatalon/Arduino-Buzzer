@@ -70,6 +70,25 @@ void main() {
     expect(sansAges, isNotEmpty);
   });
 
+  // CE QUE LE MODELE PROMET DEPUIS QUE LES ONZE CATEGORIES SONT AUSSI DES
+  // THEMATIQUES : aucune question n'est hors de portee d'une facette.
+  //
+  // 2795 des 3875 questions ne portaient aucune thematique et n'etaient
+  // joignables que par leur categorie. L'axe des categories a disparu des
+  // grilles de filtres, et une question qui perdrait la thematique de sa
+  // categorie deviendrait injoignable au tirage sans qu'un ecran ne le dise.
+  // C'est exactement le genre de manque qui ne se voit qu'en soiree.
+  test('chaque question porte au moins la thématique de sa catégorie',
+      () async {
+    final b = await lire();
+    expect(b.questions.where((q) => q.themes.isEmpty), isEmpty,
+        reason: 'une question sans thématique est injoignable au tirage');
+    for (final q in b.questions) {
+      expect(q.themes, contains(q.category),
+          reason: 'la thématique « ${q.category} » manque sous « ${q.question} »');
+    }
+  });
+
   test('aucune question sans énoncé', () async {
     final b = await lire();
     expect(b.questions.where((q) => !q.isUsable), isEmpty);

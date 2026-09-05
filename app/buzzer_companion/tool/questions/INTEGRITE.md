@@ -13,7 +13,10 @@ Le générateur refuse de produire le site si :
 - une ligne miroir ne redonne pas `Questions.cpp` au caractère près une fois
   ses accents retirés ;
 - une ligne n'a pas ses quatre champs, ou un niveau et des tranches valides ;
-- une thématique `@` porte un slug qui n'existe pas.
+- une thématique `@` porte un slug qui n'existe pas ;
+- une question porte le slug de sa PROPRE catégorie, qui la prend déjà sans
+  marqueur : les onze catégories sont aussi des thématiques, et `@ quebec`
+  ne s'écrit que sur une question québécoise rangée dans un autre fichier.
 
 Il affiche aussi, sans bloquer, quatre comptes sur les versions servies :
 
@@ -53,6 +56,15 @@ Repères, à mettre à jour après chaque lot :
 | 5 septembre 2026, musique 2010-2020 pour les enfants (+7, 4 recotées) | 54 | 216 | 0 | 14 | 0 |
 | 5 septembre 2026, thématique Disney et les parcs (+18, 24 étiquetées) | 54 | 217 | 0 | 14 | 0 |
 | 5 septembre 2026, thématique Voyages (+27, 86 étiquetées) | 54 | 217 | 0 | 14 | 0 |
+| 5 septembre 2026, les 11 catégories deviennent des thématiques (0 neuve) | 54 | 217 | 0 | 14 | 0 |
+
+Ce dernier passage n'a touché aucune question : les onze catégories sont
+devenues des thématiques qui absorbent leur catégorie, ce qui donne une
+étiquette aux 2795 questions qui n'en portaient aucune. **Zéro question sans
+thématique**, et un test de `banque_embarquee_test.dart` le garde : depuis que
+les grilles de filtres n'affichent plus qu'un seul axe, une question qui
+perdrait la thématique de sa catégorie deviendrait injoignable au tirage sans
+qu'aucun écran ne le dise.
 
 ## Ce qui n'est pas contrôlé
 

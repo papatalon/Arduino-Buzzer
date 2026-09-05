@@ -20,9 +20,18 @@
 # thématique est un jugement sur le sujet de la question, du même ordre que sa
 # catégorie, et la catégorie n'a jamais été devinée.
 #
-# Les douze slugs : noel, regne-animal, espace, corps-humain, super-heros,
-# creatures, sports-hiver, regne-vegetal, mer, transports, disney,
-# nostalgie. Un slug inconnu arrête la génération.
+# LES ONZE CATÉGORIES SONT AUSSI DES THÉMATIQUES, sous le nom du fichier :
+# bouffe-et-cuisine, cinema-et-tele, culture-generale, culture-pop,
+# geographie, histoire, mots-et-langue, musique, quebec, sciences-et-nature,
+# sports. Elles ne s'écrivent PAS sous les questions de leur propre fichier,
+# qui y sont déjà par leur catégorie ; on ne les écrit que sur une question
+# d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
+# question québécoise rangée dans Culture pop.
+#
+# Les treize qui traversent la banque : noel, regne-animal, espace,
+# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
+# transports, disney, nostalgie, voyages. Un slug inconnu arrête la
+# génération.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #

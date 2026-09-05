@@ -46,7 +46,10 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
   static const _parDefaut = 20;
 
   // Vides = sans filtre. Voir l'en-tête : c'est l'état normal, pas un oubli.
-  final Set<String> _categories = {};
+  //
+  // UNE SEULE LISTE DE FACETTES depuis que les onze catégories sont aussi des
+  // thématiques : « Musique » et « Spécial Noël » se cochent dans la même
+  // grille, ce que le tirage faisait déjà en les réunissant dans un seul OU.
   final Set<String> _themes = {};
   final Set<Tranche> _tranches = {};
   final Set<int> _niveaux = {};
@@ -75,7 +78,6 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
   }
 
   int get _disponibles => widget.tirage.compter(
-        categories: _categories,
         themes: _themes,
         niveaux: _niveaux,
         tranches: _tranches,
@@ -83,7 +85,6 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
 
   void _composer() {
     final compose = widget.tirage.composer(
-      categories: _categories,
       themes: _themes,
       niveaux: _niveaux,
       tranches: _tranches,
@@ -94,7 +95,7 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
       widget.actif.use(compose, origine: 'Tirage au hasard');
       // Le périmètre du bris suit celui de la manche : départager une manche
       // d'histoire avec une question de cinéma serait injuste.
-      widget.actif.perimetreDuBris = {..._categories, ..._themes};
+      widget.actif.perimetreDuBris = {..._themes};
       widget.actif.tireAuHasard = true;
     }
   }
@@ -104,8 +105,7 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
   // niveaux » serait du bruit sur le cas le plus courant.
   String get _criteres {
     final bouts = <String>[
-      if (_categories.isNotEmpty || _themes.isNotEmpty)
-        'dans ${[..._categories, ..._themes].join(', ')}',
+      if (_themes.isNotEmpty) 'dans ${_themes.join(', ')}',
       if (_tranches.isNotEmpty)
         'pour ${[for (final t in Tranche.values) if (_tranches.contains(t)) kNomsTranches[t]!].join(', ')}',
       if (_niveaux.isNotEmpty)
@@ -154,31 +154,14 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
                   // d'affilée qui se repliaient sur six rangées au bord droit
                   // déchiqueté. Un bloc de boutons où rien ne distinguait
                   // « Musique » de « Sports d'hiver », et où le regard n'avait
-                  // aucune colonne à suivre. La grille aligne les noms, aligne
-                  // les comptes, et sépare les deux natures de découpe.
-                  _GrilleFiltre(
-                    titre: 'CATÉGORIES',
-                    indice: _categories.isEmpty ? 'toutes' : null,
-                    colonnes: 2,
-                    cases: [
-                      for (final f in banque.banque.categories)
-                        _Case(
-                          label: f.nom,
-                          emoji: f.emoji,
-                          compte: f.questions,
-                          coche: _categories.contains(f.nom),
-                          onTap: () => setState(
-                              () => _categories.contains(f.nom)
-                                  ? _categories.remove(f.nom)
-                                  : _categories.add(f.nom)),
-                        ),
-                    ],
-                  ),
-                  const SizedBox(height: BSSpace.s4),
-                  // Les thématiques TRAVERSENT les catégories : « Spécial
-                  // Noël » pioche dans Bouffe, Musique et Cinéma à la fois.
-                  // Cocher l'une n'est pas du même ordre que cocher
-                  // « Musique », et le magenta le dit.
+                  // aucune colonne à suivre. La grille aligne les noms et
+                  // aligne les comptes.
+                  //
+                  // UNE SEULE GRILLE, et non plus deux : les onze catégories
+                  // sont devenues des thématiques, alors « Musique » et
+                  // « Spécial Noël » se cochent au même endroit. Elles sont
+                  // triées comme le générateur les donne, les onze anciennes
+                  // catégories d'abord.
                   _GrilleFiltre(
                     titre: 'THÉMATIQUES',
                     indice: _themes.isEmpty ? 'aucune' : null,

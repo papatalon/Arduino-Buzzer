@@ -504,10 +504,38 @@ void _writeBanqueQuestions(List<Entry> all) {
   // LUES SUR LA QUESTION, plus devinées : c'est le marqueur « @ » de son
   // fichier qui fait foi. Une thématique vide ne s'annonce pas, mais elle ne
   // s'ignore pas en silence non plus.
+  //
+  // SAUF LA CATÉGORIE ABSORBÉE, qui entre sans marqueur : elle est écrite
+  // aussi, mais une fois pour tout le fichier au lieu d'une fois par ligne.
+  // Voir « absorbe » sur Theme.
+  // LE SLUG D'UNE CATÉGORIE NE S'ÉCRIT PAS DANS SON PROPRE FICHIER, et ça
+  // s'arrête ici plutôt que de laisser 371 lignes « @ quebec » s'accumuler
+  // sous les questions de quebec.txt, qui y sont déjà par leur catégorie.
+  // Une thématique reste une exception qu'on écrit, pas un rangement de plus.
+  final redites = <Entry>[];
+  for (final theme in kThemes) {
+    if (theme.absorbe == null) continue;
+    redites.addAll(all.where(
+        (e) => e.category == theme.absorbe && e.themes.contains(theme.slug)));
+  }
+  if (redites.isNotEmpty) {
+    stderr.writeln('${redites.length} question(s) portent le slug de leur '
+        'propre catégorie, qui les prend déjà sans marqueur :');
+    for (final e in redites.take(10)) {
+      stderr.writeln('   [${e.category}] ${e.question}');
+    }
+    stderr.writeln('Retirer ces « @ », ou utiliser « --retirer <slug> ».');
+    exit(1);
+  }
+
   final etiquettes = <Entry, List<String>>{};
   final comptesThemes = <String, int>{};
   for (final theme in kThemes) {
-    final trouvees = all.where((e) => e.themes.contains(theme.slug)).toList();
+    final trouvees = all
+        .where((e) =>
+            e.themes.contains(theme.slug) ||
+            (theme.absorbe != null && e.category == theme.absorbe))
+        .toList();
     // Le même plancher qu'avant : sous douze questions, une thématique ne
     // remplit même pas une demi-manche. Elle est signalée plutôt que passée
     // sous silence, sinon une thématique qu'on vient d'ouvrir et qu'on n'a
@@ -1515,7 +1543,8 @@ class Theme {
       {this.exclude = const [],
       this.excludeCategories = const [],
       this.proposeAges = const [],
-      this.collection});
+      this.collection,
+      this.absorbe});
 
   // Ce qu'on écrit dans les fichiers de questions, sous la ligne : « @ noel ».
   // Sans accents ni espaces, parce qu'un nom accentué dans un fichier soumis
@@ -1554,6 +1583,23 @@ class Theme {
   // la categorie, la thematique ne garde que ce que la categorie n'a PAS :
   // le Quebec dispersé dans Musique, Bouffe, Cinema, Sports.
   final List<String> excludeCategories;
+
+  // LA CATEGORIE QUE LA THEMATIQUE PREND EN ENTIER, en plus de ses marqueurs.
+  // Le contraire d'excludeCategories, et la reponse a « comment une question
+  // sans thematique en obtient une ».
+  //
+  // CE N'EST PAS UNE DEDUCTION, et c'est ce qui la distingue des mots-cles
+  // qui rangeaient Blanche-Neige dans Sports d'hiver. La categorie d'une
+  // question n'est pas devinee : c'est le FICHIER ou quelqu'un l'a ecrite,
+  // celui-la meme dont le bloc miroir est verifie caractere par caractere
+  // contre Questions.cpp. Absorber une categorie ne fait que donner un
+  // deuxieme nom a un rangement deja ecrit.
+  //
+  // Ce qui s'y ajoute a la main : les questions du meme sujet qui vivent
+  // ailleurs. « Quel objet orange envahit les rues de Montreal chaque ete ? »
+  // est rangee dans Culture pop et un « @ quebec » la fait entrer dans la
+  // thematique Quebec sans quitter son fichier.
+  final String? absorbe;
 
   // UN FILET QUI NE PASSE PAS PAR LES MOTS, pour « --proposer » seulement.
   //
@@ -1599,6 +1645,45 @@ class Theme {
 }
 
 const kThemes = <Theme>[
+  // LES ONZE CATEGORIES SONT DES THEMATIQUES, et c'est ce qui donne une
+  // etiquette aux 2795 questions qui n'en avaient aucune.
+  //
+  // POURQUOI : l'application ne fait deja aucune difference entre les deux
+  // axes, elle les reunit dans un seul OU (voir _retenue dans
+  // tirage_questions.dart). Une categorie cochee et une thematique cochee se
+  // comportaient pareil au tirage tout en s'affichant dans deux grilles
+  // separees. Une seule liste dit la verite du code.
+  //
+  // CE QUE LA CATEGORIE GARDE MALGRE TOUT : elle reste l'ADRESSE de la
+  // question, unique et obligatoire, celle du fichier et du firmware. Rien
+  // n'est deduit ici (voir « absorbe »), et aucune question ne peut devenir
+  // injoignable, ce qui serait arrive en supprimant l'axe.
+  //
+  // SANS MOTS-CLES, volontairement : il n'y a rien a proposer, tout le
+  // fichier est dedans. Les mots-cles ne servent qu'a « --proposer », et ce
+  // qu'on ajoutera a la main sera ce qui vient des AUTRES categories.
+  Theme('bouffe-et-cuisine', 'Bouffe et cuisine', '🍲',
+      'Ce qui se mange, se boit et se cuisine.', [], absorbe: 'Bouffe et cuisine'),
+  Theme('cinema-et-tele', 'Cinéma et télé', '🎬',
+      'Films, séries et vedettes de l\'écran.', [], absorbe: 'Cinéma et télé'),
+  Theme('culture-generale', 'Culture générale', '💡',
+      'Ce que tout le monde finit par savoir.', [], absorbe: 'Culture générale'),
+  Theme('culture-pop', 'Culture pop', '🌟',
+      'Marques, objets et modes du quotidien.', [], absorbe: 'Culture pop'),
+  Theme('geographie', 'Géographie', '🌍',
+      'Pays, villes, reliefs et cartes.', [], absorbe: 'Géographie'),
+  Theme('histoire', 'Histoire', '🏛️',
+      'Ce qui s\'est passé avant nous.', [], absorbe: 'Histoire'),
+  Theme('mots-et-langue', 'Mots et langue', '🔤',
+      'Orthographe, sens, pluriels et expressions.', [], absorbe: 'Mots et langue'),
+  Theme('musique', 'Musique', '🎵',
+      'Chansons, groupes et instruments.', [], absorbe: 'Musique'),
+  Theme('quebec', 'Québec', '⚜️',
+      'D\'ici : la langue, les lieux, le monde.', [], absorbe: 'Québec'),
+  Theme('sciences-et-nature', 'Sciences et nature', '🔬',
+      'Le vivant, la matière et les mécanismes.', [], absorbe: 'Sciences et nature'),
+  Theme('sports', 'Sports', '🏅',
+      'Ce qui se joue, se court et se compte en points.', [], absorbe: 'Sports'),
   Theme('noel', 'Spécial Noël', '🎄', 'Le temps des fêtes, toutes catégories confondues.', [
     'noel', 'renne', 'rudolphe', 'sapin', 'buche', 'dinde',
     'reveillon', 'tourtiere', 'canneberge', 'canneberges', 'cannelle',
@@ -2034,6 +2119,9 @@ void _proposer(String slug) {
   var proposees = 0;
 
   for (final fichier in _fichiersQuestions()) {
+    // Le fichier absorbé n'a rien à proposer : ses questions sont dans la
+    // thématique par leur catégorie, sans marqueur.
+    if (theme.absorbe == fichier.categorie) continue;
     final lignes = <String>[];
     // Les deux blocs se relisent : une question du firmware et une inédite
     // s'étiquettent pareil, et rien ne dit qu'une thématique ne vit que d'un
@@ -2074,6 +2162,11 @@ void _proposer(String slug) {
     lignes.forEach(stdout.writeln);
   }
 
+  if (theme.absorbe != null) {
+    stdout.writeln('\n« ${theme.name} » absorbe la catégorie '
+        '« ${theme.absorbe} » : ces questions y sont déjà, sans marqueur. '
+        'Ce qui suit ne vient que des AUTRES catégories.');
+  }
   stdout.writeln('\n« ${theme.name} » : $deja déjà étiquetées, '
       '$proposees candidates à relire.');
   stdout.writeln('Les mots-clés ne servent qu\'à proposer : rien n\'est '

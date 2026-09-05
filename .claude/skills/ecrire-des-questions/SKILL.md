@@ -109,11 +109,22 @@ rangeait Blanche-Neige dans Sports d'hiver. Chaque question porte les trois,
 
 Ces quatre exemples viennent de la banque, relus avec `--chercher`. Le
 précédent brouillon de ce skill en citait un de mémoire, et il était faux.
-- **`@ slug`** pour chaque thématique dont la question relève. Les douze :
-  `noel regne-animal espace corps-humain super-heros creatures sports-hiver
-  regne-vegetal mer transports disney nostalgie`. Un slug inconnu arrête la
-  génération. Le critère est le SUJET de la question, pas un mot qu'elle
-  contient : une question sur Blanche-Neige n'est pas un sport d'hiver.
+- **`@ slug`** pour chaque thématique dont la question relève. Les treize
+  qui traversent la banque : `noel regne-animal espace corps-humain
+  super-heros creatures sports-hiver regne-vegetal mer transports disney
+  nostalgie voyages`. Un slug inconnu arrête la génération. Le critère est le
+  SUJET de la question, pas un mot qu'elle contient : une question sur
+  Blanche-Neige n'est pas un sport d'hiver.
+
+  **Les onze catégories sont aussi des thématiques**, sous le nom de leur
+  fichier : `bouffe-et-cuisine cinema-et-tele culture-generale culture-pop
+  geographie histoire mots-et-langue musique quebec sciences-et-nature
+  sports`. Chaque question porte celle de son fichier SANS qu'on l'écrive —
+  la catégorie n'est pas devinée, c'est le fichier qui la déclare, et la
+  thématique l'absorbe. **Ne jamais écrire le slug de la catégorie sous une
+  question de son propre fichier** : ce serait redire ce qui est déjà là. On
+  ne l'écrit que sur une question d'un AUTRE fichier qui parle du même
+  sujet — « @ quebec » sous une question québécoise rangée dans Culture pop.
 
 ### La question s'écrit en français soigné
 

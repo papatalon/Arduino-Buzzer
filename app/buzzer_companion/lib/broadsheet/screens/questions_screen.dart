@@ -653,7 +653,8 @@ class _FureteurBanqueState extends State<_FureteurBanque> {
   static const _lCategorie = 180.0;
   static const _lClassement = 190.0;
 
-  final Set<String> _categories = {};
+  // UNE SEULE LISTE DE FACETTES : les onze catégories sont aussi des
+  // thématiques, et le furetage se filtre donc sur un seul axe.
   final Set<String> _themes = {};
   final Set<Tranche> _tranches = {};
   final Set<int> _niveaux = {};
@@ -680,14 +681,11 @@ class _FureteurBanqueState extends State<_FureteurBanque> {
       .replaceAll('ç', 'c');
 
   bool _retenue(QuizQuestion q) =>
-      _parCategorie(q) &&
       _parTheme(q) &&
       _parNiveau(q) &&
       _parTranche(q) &&
       _parMot(q);
 
-  bool _parCategorie(QuizQuestion q) =>
-      _categories.isEmpty || _categories.contains(q.category);
   bool _parTheme(QuizQuestion q) =>
       _themes.isEmpty || q.themes.any(_themes.contains);
   // Une question qui ne se prononce pas passe : un questionnaire écrit à la
@@ -705,7 +703,6 @@ class _FureteurBanqueState extends State<_FureteurBanque> {
   }
 
   void _reinitialiser() => setState(() {
-        _categories.clear();
         _themes.clear();
         _tranches.clear();
         _niveaux.clear();
@@ -713,7 +710,6 @@ class _FureteurBanqueState extends State<_FureteurBanque> {
       });
 
   bool get _filtre =>
-      _categories.isNotEmpty ||
       _themes.isNotEmpty ||
       _tranches.isNotEmpty ||
       _niveaux.isNotEmpty ||
@@ -815,27 +811,13 @@ class _FureteurBanqueState extends State<_FureteurBanque> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _SectionFacette(
-              titre: 'CATÉGORIES',
-              indice: _categories.isEmpty ? 'toutes' : null,
-              rangees: [
-                for (final f in b.banque.categories)
-                  _Facette(
-                    label: f.nom,
-                    emoji: f.emoji,
-                    compte: f.questions,
-                    coche: _categories.contains(f.nom),
-                    onTap: () => setState(() => _categories.contains(f.nom)
-                        ? _categories.remove(f.nom)
-                        : _categories.add(f.nom)),
-                  ),
-              ],
-            ),
-            _SectionFacette(
               titre: 'THÉMATIQUES',
-              indice: _themes.isEmpty ? 'aucune' : null,
-              // Une thématique traverse les catégories : « Spécial Noël »
-              // pioche dans Bouffe, Musique et Cinéma à la fois. Le magenta
-              // dit que ce n'est pas un rangement de plus.
+              indice: _themes.isEmpty ? 'toutes' : null,
+              // UNE SEULE SECTION : les onze catégories sont devenues des
+              // thématiques, elles ouvrent la liste et les treize qui
+              // traversent la banque suivent. « Musique » et « Spécial Noël »
+              // se cochent donc au même endroit, ce que le tirage faisait
+              // déjà en les réunissant dans un seul OU.
               teinte: BSColors.accent2_700,
               rangees: [
                 for (final f in b.banque.themes)
@@ -1222,9 +1204,11 @@ class _LigneBanque extends StatelessWidget {
               children: [
                 Text(q.category,
                     style: BSType.body(size: 14, color: BSColors.neutral700)),
-                if (q.themes.isNotEmpty)
+                // Sans celle qui porte le nom de la catégorie : elle est
+                // écrite juste au-dessus, et la répéter ne dit rien de plus.
+                if (q.themes.any((t) => t != q.category))
                   Text(
-                    q.themes.join(', '),
+                    q.themes.where((t) => t != q.category).join(', '),
                     style: BSType.body(size: 13, color: BSColors.accent2_700),
                   ),
               ],
