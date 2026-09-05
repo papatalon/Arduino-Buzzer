@@ -17,31 +17,22 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ninja blond rêve de devenir Hokage ?",
-      "reponse": "Naruto",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel conquérant macédonien atteignit l'Inde ?",
-      "reponse": "Alexandre le Grand",
-      "niveau": 2
+      "categorie": "Musique",
+      "question": "Quel instrument de flûtes de longueurs différentes se joue en soufflant à leur bord ?",
+      "reponse": "La flûte de Pan",
+      "niveau": 3
     },
     {
       "categorie": "Sports",
-      "question": "Combien de styles de nage existe-t-il en compétition ?",
-      "reponse": "Quatre",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on l'objet doré remis à l'équipe championne ?",
+      "reponse": "Un trophée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle grande horloge domine Londres ?",
+      "reponse": "Big Ben",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -50,10 +41,89 @@
       "niveau": 1
     },
     {
+      "categorie": "Québec",
+      "question": "Quel abri de toile monté chaque automne protège l'entrée de garage ?",
+      "reponse": "Un abri Tempo",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel amuseur en habit à grelots faisait rire le roi ?",
+      "reponse": "Un bouffon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Qui est surnommé le roi de la pop ?",
+      "reponse": "Michael Jackson",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Dans quel jeu lance-t-on des oiseaux sur des cochons avec un lance-pierre ?",
-      "reponse": "Angry Birds",
-      "niveau": 2,
+      "question": "Quel accessoire redonne de l'énergie à un téléphone à plat ?",
+      "reponse": "Un chargeur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel meuble de la classe range les effets de l'élève ?",
+      "reponse": "Un pupitre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel sucre trouve-t-on dans le sang ?",
+      "reponse": "Le glucose",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine du croissant ?",
+      "reponse": "La France",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
+      "reponse": "Willie Lamothe",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie en faire tout un fromage ?",
+      "reponse": "Exagérer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel vêtement long et épais protège du froid de janvier ?",
+      "reponse": "Un manteau d'hiver",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle cité grecque était célèbre pour ses guerriers ?",
+      "reponse": "Sparte",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film d'animation un lion, une girafe, un zèbre et un hippopotame s'échappent-ils d'un zoo de New York ?",
+      "reponse": "Madagascar",
+      "niveau": 1,
       "ages": [
         "enfants",
         "ados",
@@ -61,125 +131,50 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel groupe britannique a chanté Satisfaction ?",
-      "reponse": "Rolling Stones",
-      "niveau": 2,
+      "categorie": "Sports",
+      "question": "Quel pays a gagné le plus de médailles olympiques au total ?",
+      "reponse": "Les États-Unis",
+      "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de haut ?",
+      "reponse": "Bas",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ustensile troué égoutte les pâtes ?",
+      "reponse": "La passoire",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel bâtiment à grandes ailes tournait au vent pour moudre le blé ?",
+      "reponse": "Un moulin à vent",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel grand danois froussard résout des mystères ?",
-      "reponse": "Scooby-Doo",
+      "question": "Quel père de famille travaille dans une centrale nucléaire ?",
+      "reponse": "Homer Simpson",
       "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à base de tomates nappe les pizzas ?",
-      "reponse": "La sauce tomate",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle cité antique a été détruite par le Vésuve ?",
-      "reponse": "Pompéi",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel meuble gardait les aliments au froid avec un bloc de glace ?",
-      "reponse": "La glacière",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
-      "reponse": "Le maelstrom",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Langue parlée au Mexique ?",
+      "reponse": "L'espagnol",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient des barrages ?",
-      "reponse": "L'hydroélectricité",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle galette de maïs enroule les fajitas ?",
-      "reponse": "La tortilla",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le pluriel de « un animal » ?",
-      "reponse": "Des animaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que chausse-t-on par-dessus ses souliers pour marcher dans la neige ?",
-      "reponse": "Des bottes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument de flûtes de longueurs différentes se joue en soufflant à leur bord ?",
-      "reponse": "La flûte de Pan",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le chef qui régnait sur tout l'Empire romain ?",
-      "reponse": "Un empereur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville des États-Unis ?",
-      "reponse": "New York",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de sale ?",
-      "reponse": "Propre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel festival d'humour a lieu à Montréal ?",
-      "reponse": "Juste pour rire",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au volleyball ?",
-      "reponse": "Six",
+      "question": "Quel mammifère australien a un bec de canard ?",
+      "reponse": "L'ornithorynque",
       "niveau": 2,
       "ages": [
         "ados",
@@ -188,27 +183,14 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle particule positive loge dans le noyau ?",
-      "reponse": "Le proton",
-      "niveau": 1,
+      "categorie": "Géographie",
+      "question": "Capitale du Kenya ?",
+      "reponse": "Nairobi",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage rouge et blanc à tuque se cache dans des foules dessinées ?",
-      "reponse": "Charlie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle grande horloge domine Londres ?",
-      "reponse": "Big Ben",
-      "niveau": 1
     }
   ]
 }

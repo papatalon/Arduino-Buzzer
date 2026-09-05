@@ -7,19 +7,9 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quelle est la fleur emblème du Québec ?",
-      "reponse": "Iris versicolore",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel roi du blues appelait sa guitare Lucille ?",
-      "reponse": "B.B. King",
+      "categorie": "Culture pop",
+      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
+      "reponse": "Pierre Falardeau",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -28,18 +18,27 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
-      "reponse": "Cracké",
+      "question": "Quel petit disque contenait une chanson de chaque côté ?",
+      "reponse": "Le 45 tours",
       "niveau": 3,
       "ages": [
-        "enfants",
-        "ados"
+        "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel appareil de poche vibrait pour dire de rappeler quelqu'un, avant le cellulaire ?",
-      "reponse": "Le téléavertisseur",
+      "categorie": "Histoire",
+      "question": "Quel peuple autochtone a accueilli Jacques Cartier à son arrivée ?",
+      "reponse": "Les Iroquoiens",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Qui a inventé le basketball ?",
+      "reponse": "James Naismith",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -47,9 +46,19 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel tambour métallique vient de Trinité ?",
-      "reponse": "Le steel drum",
+      "categorie": "Culture pop",
+      "question": "Quel pichet souriant défonce les murs en criant « Oh yeah » ?",
+      "reponse": "Le pichet Kool-Aid",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle pâte à tartiner orange se vend en pot et se met sur les rôties ?",
+      "reponse": "Le Cheez Whiz",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -58,58 +67,102 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la plus haute montagne du Canada ?",
-      "reponse": "Le mont Logan",
+      "question": "Capitale de la Nouvelle-Zélande ?",
+      "reponse": "Wellington",
       "niveau": 3,
       "ages": [
         "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui installe les micros avant un concert ?",
+      "reponse": "Un technicien de son",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle fut la première île d'exil de Napoléon ?",
+      "reponse": "L'île d'Elbe",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle compagnie de fourrures rivalisait avec la Baie d'Hudson ?",
+      "reponse": "Nord-Ouest",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
+      "reponse": "MusiquePlus",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe de Birmingham a lancé le heavy metal ?",
+      "reponse": "Black Sabbath",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays d'Asie compte plus de 17000 îles ?",
+      "reponse": "L'Indonésie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle infirmière célèbre soignait pendant la guerre de Crimée ?",
+      "reponse": "Florence Nightingale",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle percussion se joue à mains nues sur deux petits tambours accolés ?",
+      "reponse": "Les bongos",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur a popularisé le twist ?",
+      "reponse": "Chubby Checker",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle soupe russe est rouge betterave ?",
-      "reponse": "Le bortsch",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe a chanté Smoke on the Water ?",
-      "reponse": "Deep Purple",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à soufflet accompagne le tango ?",
-      "reponse": "Le bandonéon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport fait glisser un lugeur tête première sur la glace ?",
-      "reponse": "Le skeleton",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
-      "reponse": "Le maelstrom",
+      "question": "Quelle crêpe japonaise salée vient d'Osaka ?",
+      "reponse": "L'okonomiyaki",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -118,8 +171,18 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Sur quel support les Mésopotamiens gravaient-ils leur écriture avec un roseau ?",
-      "reponse": "Les tablettes d'argile",
+      "question": "Qui a atteint le pôle Sud en premier ?",
+      "reponse": "Amundsen",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe italien a gagné l'Eurovision en 2021 en jouant du rock ?",
+      "reponse": "Måneskin",
       "niveau": 3,
       "ages": [
         "ados",
@@ -127,25 +190,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Où regardait-on un film assis dans son auto, l'été ?",
-      "reponse": "Au ciné-parc",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel ensemble de cloches sonne dans le clocher d'une église ?",
-      "reponse": "Le carillon",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel compositeur russe a écrit Casse-Noisette ?",
-      "reponse": "Tchaïkovski",
+      "categorie": "Québec",
+      "question": "Combien de régions administratives compte le Québec ?",
+      "reponse": "17",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -154,93 +201,53 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel gratte-ciel de Montréal, en forme de croix, a ouvert en 1962 ?",
-      "reponse": "La Place Ville-Marie",
+      "question": "Quel effet corrige et robotise la voix d'un chanteur en studio ?",
+      "reponse": "L'autotune",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel fleuve César a-t-il franchi en disant le sort en est jeté ?",
-      "reponse": "Le Rubicon",
+      "question": "Quelle station spatiale russe a précédé l'ISS ?",
+      "reponse": "Mir",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magasin à un dollar a été fondé à Matane en 1992 ?",
+      "reponse": "Dollarama",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on plusieurs notes jouées en même temps ?",
+      "reponse": "Un accord",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel champignon rouge à pois blancs des contes pousse dans les forêts ?",
-      "reponse": "L'amanite tue-mouches",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu fait deviner des mots à son équipe en trois manches, de plus en plus serrées ?",
-      "reponse": "Le Time's Up",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel appareil envoyait des messages en points et en traits sur des fils ?",
-      "reponse": "Le télégraphe",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?",
-      "reponse": "La capitale du royaume",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle peluche électronique aux grands yeux parlait toute seule en 1998 ?",
-      "reponse": "Le Furby",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel animal du Québec fait le mort quand il a peur ?",
-      "reponse": "La mouffette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
-      "reponse": "Les Classels",
+      "question": "Quel auteur québécois a écrit Le Matou ?",
+      "reponse": "Yves Beauchemin",
       "niveau": 3,
       "ages": [
         "aines"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'Égyptien qui savait écrire, un métier rare et respecté ?",
-      "reponse": "Un scribe",
-      "niveau": 3
     }
   ]
 }

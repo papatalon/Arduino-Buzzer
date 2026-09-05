@@ -7,26 +7,34 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Citez un palindrome de cinq lettres qui flotte.",
-      "reponse": "Kayak",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal saute et transporte son bébé dans une poche ?",
+      "reponse": "Le kangourou",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
-      "reponse": "Bugs Bunny",
+      "question": "Quel film Pixar se passe dans la tête de Riley ?",
+      "reponse": "Sans dessus dessous",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "En quelle année eut lieu le second référendum ?",
-      "reponse": "1995",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sports",
+      "question": "Combien d'anneaux sur le drapeau olympique ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle friandise glacée se tient par un bâton de bois ?",
+      "reponse": "Un popsicle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Synonyme de content, commençant par H ?",
+      "reponse": "Heureux",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -35,27 +43,37 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel site de vente en ligne a une flèche souriante dans son logo ?",
-      "reponse": "Amazon",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
-      "question": "Quel sport se joue avec un ballon rond qu'on frappe du pied dans un but ?",
-      "reponse": "Le soccer",
+      "question": "Quel objet rond et gonflé frappe-t-on à la volée sur la plage ?",
+      "reponse": "Le ballon de plage",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au baseball ?",
-      "reponse": "Neuf",
-      "niveau": 1
+      "categorie": "Bouffe et cuisine",
+      "question": "Où pêche-t-on la célèbre crevette nordique québécoise ?",
+      "reponse": "À Matane",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel arachnide a une queue munie d'un dard ?",
-      "reponse": "Le scorpion",
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir un coup de foudre ?",
+      "reponse": "Tomber amoureux",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gros camion dégage la neige des rues après une tempête ?",
+      "reponse": "Une charrue",
       "niveau": 1
     },
     {
@@ -65,15 +83,67 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du canard ?",
-      "reponse": "La cane",
+      "categorie": "Géographie",
+      "question": "Quel pays a pour emblème le coq ?",
+      "reponse": "La France",
       "niveau": 1
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne qui coupe les cheveux ?",
+      "reponse": "Un coiffeur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel arbre décoré trône dans le salon en décembre ?",
+      "reponse": "Un sapin de Noël",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle viande fumée est associée à Montréal ?",
+      "reponse": "Le smoked meat",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quelle ville vit Batman ?",
+      "reponse": "Gotham",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quel continent se dresse le Kilimandjaro ?",
+      "reponse": "L'Afrique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le roi de l'Égypte ancienne ?",
+      "reponse": "Un pharaon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle voix masculine est la plus grave ?",
+      "reponse": "La basse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel café italien est couronné de mousse de lait ?",
-      "reponse": "Le cappuccino",
+      "question": "Quelle volaille laquée est le classique de la capitale chinoise ?",
+      "reponse": "Canard de Pékin",
       "niveau": 1,
       "ages": [
         "ados",
@@ -83,113 +153,33 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel style de nage porte le nom d'un insecte ?",
-      "reponse": "Le papillon",
+      "question": "Combien de prises pour retirer un frappeur ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle exclamation lance Homer Simpson ?",
+      "reponse": "D'oh",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "De quoi sont faites les dunes du désert ?",
+      "reponse": "De sable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel hymne national commence par les mots « terre de nos aïeux » ?",
+      "reponse": "Ô Canada",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quels trois héros en pyjama se transforment la nuit pour affronter des méchants ?",
-      "reponse": "Les Pyjamasques",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient du Soleil ?",
-      "reponse": "L'énergie solaire",
+      "question": "Quel jouet à trois roues précède le vélo chez les tout-petits ?",
+      "reponse": "Un tricycle",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le passage creusé sous une montagne ou sous l'eau ?",
-      "reponse": "Un tunnel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur incarne Rocky Balboa ?",
-      "reponse": "Stallone",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film de Noël un garçon oublié à la maison piège deux cambrioleurs ?",
-      "reponse": "Maman, j'ai raté l'avion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Dans quel bâtiment fortifié vivaient les rois et les reines du Moyen Âge ?",
-      "reponse": "Un château",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume vert et allongé croque-t-on en salade et transforme-t-on en cornichon ?",
-      "reponse": "Le concombre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage italien garnit la pizza ?",
-      "reponse": "La mozzarella",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de membres comptaient les Beatles ?",
-      "reponse": "Quatre",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle série de romans suit Émilie Bordeleau ?",
-      "reponse": "Les Filles de Caleb",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir de l'eau dans la cave ?",
-      "reponse": "Pantalon trop court",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on un très grand bâtiment de plusieurs dizaines d'étages ?",
-      "reponse": "Un gratte-ciel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de notes dans la gamme de do majeur ?",
-      "reponse": "Sept",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

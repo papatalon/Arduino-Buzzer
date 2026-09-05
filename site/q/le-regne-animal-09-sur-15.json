@@ -7,30 +7,38 @@
   "emoji": "🐾",
   "questions": [
     {
+      "categorie": "Musique",
+      "question": "Dans Pierre et le loup, quel instrument joue le loup ?",
+      "reponse": "Le cor",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Comment s'appelle le petit du canard ?",
-      "reponse": "Le caneton",
+      "question": "Quel est le féminin de lion ?",
+      "reponse": "Lionne",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quel pays vivent les kangourous ?",
-      "reponse": "L'Australie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle statue égyptienne a un corps de lion ?",
-      "reponse": "Le Sphinx",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel animal emblème figure sur les armoiries de Montréal ?",
-      "reponse": "Le castor",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse Disney se transforme en grenouille ?",
+      "reponse": "Tiana",
       "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel papillon est l'insecte emblème du Québec ?",
+      "reponse": "L'amiral",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -47,6 +55,12 @@
       ]
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quel animal cache les chocolats dans le jardin à Pâques ?",
+      "reponse": "Le lapin de Pâques",
+      "niveau": 1
+    },
+    {
       "categorie": "Sports",
       "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
       "reponse": "Le kitesurf",
@@ -57,27 +71,21 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel animal cache les chocolats dans le jardin à Pâques ?",
-      "reponse": "Le lapin de Pâques",
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami de Winnie l'ourson est un petit cochon rose ?",
+      "reponse": "Porcinet",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Disney se transforme en grenouille ?",
-      "reponse": "Tiana",
+      "categorie": "Québec",
+      "question": "Quel animal emblème figure sur les armoiries de Montréal ?",
+      "reponse": "Le castor",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un petit cochon rose ?",
-      "reponse": "Porcinet",
-      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -86,24 +94,14 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri de l'âne ?",
-      "reponse": "Le braiment",
-      "niveau": 2,
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film d'animation un lion, une girafe, un zèbre et un hippopotame s'échappent-ils d'un zoo de New York ?",
+      "reponse": "Madagascar",
+      "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans Pierre et le loup, quel instrument joue le loup ?",
-      "reponse": "Le cor",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
@@ -123,9 +121,26 @@
       "niveau": 1
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri de l'âne ?",
+      "reponse": "Le braiment",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Géographie",
       "question": "Quel animal géant et blanc est le symbole du Grand Nord canadien ?",
       "reponse": "L'ours polaire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on le mâle de la vache, celui qui charge dans l'arène ?",
+      "reponse": "Le taureau",
       "niveau": 1
     },
     {
@@ -136,20 +151,14 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on le mâle de la vache, celui qui charge dans l'arène ?",
-      "reponse": "Le taureau",
+      "question": "Petit du chat ?",
+      "reponse": "Le chaton",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel animal, s'il croise votre chemin, porterait malheur ?",
-      "reponse": "Le chat noir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du lapin ?",
-      "reponse": "Le lapereau",
+      "question": "Quel métier ferre les chevaux ?",
+      "reponse": "Le maréchal-ferrant",
       "niveau": 2,
       "ages": [
         "ados",
@@ -164,12 +173,6 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel cheval blanc porte une corne unique sur le front ?",
-      "reponse": "Une licorne",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
       "question": "Quel chien accompagne Dorothy dans le Magicien d'Oz ?",
       "reponse": "Toto",
@@ -180,9 +183,15 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel métier ferre les chevaux ?",
-      "reponse": "Le maréchal-ferrant",
+      "categorie": "Culture pop",
+      "question": "Quel cheval blanc porte une corne unique sur le front ?",
+      "reponse": "Une licorne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du lapin ?",
+      "reponse": "Le lapereau",
       "niveau": 2,
       "ages": [
         "ados",
@@ -191,9 +200,9 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Petit du chat ?",
-      "reponse": "Le chaton",
+      "categorie": "Culture générale",
+      "question": "Quel animal, s'il croise votre chemin, porterait malheur ?",
+      "reponse": "Le chat noir",
       "niveau": 1
     }
   ]

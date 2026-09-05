@@ -7,16 +7,133 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel lait fouetté avec crème glacée est un dessert à boire ?",
-      "reponse": "Le lait frappé",
+      "categorie": "Québec",
+      "question": "Quel fromage frais grince sous la dent ?",
+      "reponse": "Fromage en grains",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu retire une chaise à chaque tour pendant que la musique joue ?",
+      "reponse": "La chaise musicale",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui est le plus rapide : le son ou la lumière ?",
-      "reponse": "La lumière",
+      "question": "Quelle partie du visage sert à sentir les odeurs ?",
+      "reponse": "Le nez",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel massif abrite l'Everest ?",
+      "reponse": "L'Himalaya",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus petite unité de la matière ?",
+      "reponse": "L'atome",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de acteur ?",
+      "reponse": "Actrice",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de force oppose deux équipes de chaque côté d'un même câble ?",
+      "reponse": "Le tir à la corde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle tarte épicée se mange à l'Action de grâce ?",
+      "reponse": "À la citrouille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
+      "reponse": "Rio de Janeiro",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment nomme-t-on un œuf cuit 3 minutes en coquille ?",
+      "reponse": "À la coque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel objet tient le chanteur pour que sa voix porte dans toute la salle ?",
+      "reponse": "Le micro",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel engin a emmené les premiers hommes jusqu'à la Lune ?",
+      "reponse": "Une fusée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Le dauphin est-il un poisson ou un mammifère ?",
+      "reponse": "Un mammifère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Tous les combien d'années a lieu la Coupe du monde de soccer ?",
+      "reponse": "Quatre ans",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on celui qui écrit des romans ?",
+      "reponse": "Un romancier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument se frappe avec deux baguettes sur une peau tendue ?",
+      "reponse": "Le tambour",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ogre a un ami âne très bavard ?",
+      "reponse": "Shrek",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série de science-fiction se passe à Hawkins ?",
+      "reponse": "Stranger Things",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quels bonbons durs multicolores promettent de goûter l'arc-en-ciel ?",
+      "reponse": "Les Skittles",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -25,165 +142,38 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse est surnommée Queen B ?",
-      "reponse": "Beyoncé",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine du croissant ?",
+      "reponse": "La France",
+      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quel est le contraire de dur ?",
-      "reponse": "Mou",
-      "niveau": 1
+      "question": "De quelle langue vient le mot kimono ?",
+      "reponse": "Le japonais",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de sport allemande a trois bandes parallèles ?",
-      "reponse": "Adidas",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle fleur suit le Soleil ?",
-      "reponse": "Le tournesol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
-      "reponse": "Le homard",
+      "categorie": "Québec",
+      "question": "Quel congé tombe le lendemain de la Saint-Sylvestre ?",
+      "reponse": "Le jour de l'An",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le voisin trop gentil des Simpson ?",
-      "reponse": "Ned Flanders",
+      "question": "Comment s'appelle le meilleur ami roux de Harry Potter ?",
+      "reponse": "Ron Weasley",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
       "question": "Combien de grammes dans un kilogramme ?",
       "reponse": "1000",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le roi de l'Égypte ancienne ?",
-      "reponse": "Un pharaon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la personne qui distribue le courrier ?",
-      "reponse": "Un facteur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Comment appelle-t-on la sève recueillie au printemps pour faire le sirop ?",
-      "reponse": "L'eau d'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage de Sesame Street est un grand oiseau jaune ?",
-      "reponse": "Big Bird",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel est le score parfait d'une partie de bowling ?",
-      "reponse": "300",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit des détenues ?",
-      "reponse": "Unité 9",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du loup ?",
-      "reponse": "Le hurlement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes traverse l'ouest canadien ?",
-      "reponse": "Les Rocheuses",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle échelle mesure les séismes ?",
-      "reponse": "Richter",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson enfantine parle d'un petit navire qui n'avait jamais navigué ?",
-      "reponse": "Il était un petit navire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel pouvoir Elsa doit-elle cacher au début de La Reine des neiges ?",
-      "reponse": "La glace",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel objet rond et gonflé frappe-t-on à la volée sur la plage ?",
-      "reponse": "Le ballon de plage",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "De quelle couleur les océans sont-ils dessinés sur une carte ?",
-      "reponse": "Bleus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle île au milieu du Saint-Laurent est célèbre pour ses produits ?",
-      "reponse": "Île d'Orléans",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle embarcation traverse le fleuve gelé au Carnaval ?",
-      "reponse": "Le canot",
       "niveau": 1
     }
   ]

@@ -8,8 +8,14 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Quel arbre fut ajouté au drapeau de Montréal en 2017 ?",
-      "reponse": "Le pin blanc",
+      "question": "Quelles chutes près de Québec sont plus hautes que Niagara ?",
+      "reponse": "Montmorency",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel papillon est l'insecte emblème du Québec ?",
+      "reponse": "L'amiral",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -18,43 +24,25 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle station de ski célèbre est dans les Laurentides ?",
-      "reponse": "Tremblant",
+      "question": "Quelle opération municipale suit chaque bordée de neige dans les rues ?",
+      "reponse": "Le déneigement",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelles montagnes russes en bois de La Ronde sont célèbres ?",
-      "reponse": "Le Monstre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel stade montréalais a un mât incliné ?",
-      "reponse": "Stade olympique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel sirop est une spécialité du Québec ?",
-      "reponse": "Le sirop d'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel drapeau québécois fut adopté en 1948 ?",
-      "reponse": "Le fleurdelisé",
-      "niveau": 1,
+      "question": "Comment appelle-t-on la banque coopérative très répandue au Québec ?",
+      "reponse": "La caisse populaire",
+      "niveau": 3,
       "ages": [
-        "enfants",
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelle ville québécoise est célèbre pour son festival western ?",
-      "reponse": "Saint-Tite",
+      "question": "Quel nouveau pont montréalais a ouvert en 2019 ?",
+      "reponse": "Samuel-De Champlain",
       "niveau": 1,
       "ages": [
         "ados",
@@ -64,100 +52,31 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
-      "reponse": "Le cardinal",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel outil sert à enlever la glace sur le pare-brise de l'auto ?",
-      "reponse": "Un gratte-glace",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle basilique du Vieux-Montréal a un plafond bleu étoilé ?",
-      "reponse": "Notre-Dame",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fête de juin invite les gens d'une même rue à se rassembler ?",
-      "reponse": "La fête des voisins",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel congé de mai précède la saison du jardinage au Québec ?",
-      "reponse": "La journée nationale des patriotes",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel oiseau blanc envahit les champs du Québec au printemps et à l'automne ?",
-      "reponse": "L'oie blanche",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel liquide met-on dans le réservoir de l'auto à la station-service ?",
-      "reponse": "L'essence",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel outil racle la neige des pare-brise ?",
-      "reponse": "Un gratteux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui a composé la musique de l'hymne O Canada ?",
-      "reponse": "Calixa Lavallée",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle créature légendaire fait peur aux enfants ?",
-      "reponse": "Bonhomme Sept-Heures",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel cirque québécois est connu mondialement ?",
-      "reponse": "Cirque du Soleil",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle émission culte met en scène Popa et Moman ?",
-      "reponse": "La Petite Vie",
+      "question": "Quelle boisson alcoolisée réchauffe le Carnaval de Québec ?",
+      "reponse": "Le caribou",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelle université montréalaise porte quatre lettres commençant par UQ ?",
-      "reponse": "L'UQAM",
+      "question": "Quelles plaines célèbres bordent le Vieux-Québec ?",
+      "reponse": "Plaines d'Abraham",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle rôtisserie québécoise est célèbre pour son poulet BBQ ?",
+      "reponse": "St-Hubert",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la fin de semaine du 1er juillet où tout le monde déménage ?",
+      "reponse": "Le jour du déménagement",
       "niveau": 2,
       "ages": [
         "ados",
@@ -167,30 +86,73 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on l'emploi temporaire qu'un étudiant occupe l'été ?",
-      "reponse": "Une job d'été",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Où emprunte-t-on gratuitement des livres dans son quartier ?",
+      "reponse": "À la bibliothèque",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle attraction du Vieux-Port de Montréal fait monter ses cabines dans les airs depuis 2017 ?",
-      "reponse": "La grande roue",
+      "question": "À quel âge peut-on obtenir un permis d'apprenti conducteur au Québec ?",
+      "reponse": "16 ans",
       "niveau": 2,
       "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel parti a fondé François Legault ?",
-      "reponse": "La CAQ",
+      "question": "Quel groupe québécois a chanté Dehors novembre ?",
+      "reponse": "Les Colocs",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel joueur québécois des Penguins était surnommé le Magnifique ?",
+      "reponse": "Mario Lemieux",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on au Québec les boissons gazeuses ?",
+      "reponse": "La liqueur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Combien de lignes compte le métro de Montréal ?",
+      "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle ville de l'Estrie abrite l'Université Bishop's ?",
+      "reponse": "Sherbrooke",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle société d'État produit l'électricité au Québec ?",
+      "reponse": "Hydro-Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel lard frit croustillant sert-on à la cabane ?",
+      "reponse": "Oreilles de crisse",
       "niveau": 1,
       "ages": [
         "ados",
@@ -200,15 +162,57 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle est la devise du Québec ?",
-      "reponse": "Je me souviens",
+      "question": "Quelle tourte de viandes vient du Lac-Saint-Jean ?",
+      "reponse": "Le cipaille",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel homme fort québécois du 19e siècle est réputé le plus fort de l'histoire ?",
+      "reponse": "Louis Cyr",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel ancien vélodrome de Montréal abrite des animaux ?",
+      "reponse": "Le Biodôme",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel établissement d'enseignement, entre le secondaire et l'université, n'existe qu'au Québec ?",
-      "reponse": "Le cégep",
+      "question": "Quel quartier montréalais a une porte paifang ?",
+      "reponse": "Quartier chinois",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Où va-t-on quand on est très malade et qu'il faut être soigné ?",
+      "reponse": "À l'hôpital",
       "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "En quelle année eut lieu le second référendum ?",
+      "reponse": "1995",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

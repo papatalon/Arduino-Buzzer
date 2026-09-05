@@ -8,29 +8,14 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelle adolescente a écrit un journal célèbre à Amsterdam ?",
-      "reponse": "Anne Frank",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on un conflit où presque tous les pays du monde se battent ?",
+      "reponse": "Une guerre mondiale",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel constructeur a lancé la Ford T ?",
-      "reponse": "Henry Ford",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple antique a inventé l'écriture cunéiforme ?",
-      "reponse": "Les Sumériens",
+      "question": "Sur quel navire Darwin a-t-il navigué ?",
+      "reponse": "Le Beagle",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -39,20 +24,33 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle loi américaine interdisait l'alcool ?",
-      "reponse": "La prohibition",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Dans quelle matière les tout premiers outils de l'humanité étaient-ils taillés ?",
+      "reponse": "La pierre",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "De quoi étaient faits les premiers outils des hommes préhistoriques ?",
-      "reponse": "De pierre",
+      "question": "Quel fut le premier satellite artificiel ?",
+      "reponse": "Spoutnik",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelait-on les rois de l'Égypte ancienne ?",
+      "reponse": "Les pharaons",
       "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?",
+      "reponse": "La Station spatiale internationale",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que hisse-t-on sur les mâts pour que le vent pousse un navire ancien ?",
+      "reponse": "Les voiles",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
@@ -66,8 +64,41 @@
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année l'URSS a-t-elle disparu ?",
-      "reponse": "1991",
+      "question": "Quel roi de France fut surnommé le Roi-Soleil ?",
+      "reponse": "Louis XIV",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle aviatrice a disparu dans le Pacifique en 1937 ?",
+      "reponse": "Amelia Earhart",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la grande demeure luxueuse d'un roi ?",
+      "reponse": "Un palais",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel savant italien a braqué une lunette vers le ciel ?",
+      "reponse": "Galilée",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle fut la première île d'exil de Napoléon ?",
+      "reponse": "L'île d'Elbe",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -76,8 +107,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle prison parisienne fut prise le 14 juillet 1789 ?",
-      "reponse": "La Bastille",
+      "question": "Quelle reine de France fut guillotinée en 1793 ?",
+      "reponse": "Marie-Antoinette",
       "niveau": 2,
       "ages": [
         "ados",
@@ -87,25 +118,38 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle reine d'Égypte a un buste célèbre à Berlin ?",
-      "reponse": "Néfertiti",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle longue habitation abritait plusieurs familles chez les Iroquoiens ?",
+      "reponse": "La maison longue",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
-      "question": "Quel savant grec a crié 'Eurêka' dans son bain ?",
-      "reponse": "Archimède",
+      "question": "Comment appelle-t-on l'ensemble des histoires des dieux et des héros grecs ?",
+      "reponse": "La mythologie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel navigateur italien croyait avoir atteint les Indes en 1492 ?",
+      "reponse": "Christophe Colomb",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
+      "reponse": "Une diligence",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel appareil garde les aliments au froid depuis un siècle, remplaçant la glacière ?",
+      "reponse": "Le réfrigérateur",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quelles jeunes filles furent envoyées peupler la Nouvelle-France ?",
-      "reponse": "Filles du Roy",
+      "question": "Quel philosophe grec fut condamné à boire la ciguë ?",
+      "reponse": "Socrate",
       "niveau": 2,
       "ages": [
         "ados",
@@ -115,9 +159,20 @@
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année l'homme a-t-il marché sur la Lune ?",
-      "reponse": "1969",
-      "niveau": 2
+      "question": "Quelle île engloutie Platon a-t-il décrite dans ses textes ?",
+      "reponse": "L'Atlantide",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle mission a posé les premiers hommes sur la Lune ?",
+      "reponse": "Apollo 11",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -132,8 +187,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel révolutionnaire russe a fondé l'URSS ?",
-      "reponse": "Lénine",
+      "question": "Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?",
+      "reponse": "Jeanne Mance",
       "niveau": 2,
       "ages": [
         "ados",
@@ -143,102 +198,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel ordre de moines soldats gardait les pèlerins ?",
-      "reponse": "Les Templiers",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel code de points et de traits date de 1838 ?",
-      "reponse": "Le morse",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel véhicule à vapeur roulait sur des rails au 19e siècle ?",
-      "reponse": "La locomotive",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peintre italien a peint la Joconde ?",
-      "reponse": "Léonard de Vinci",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel outil de pierre taillée servait à couper et à gratter à la préhistoire ?",
-      "reponse": "Le silex",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
-      "reponse": "La tradition orale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
-      "reponse": "Un missionnaire",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année a pris fin la Seconde Guerre mondiale ?",
-      "reponse": "1945",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel scientifique fouille la terre pour trouver des objets anciens ?",
-      "reponse": "Un archéologue",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel navire océanographique commandait Cousteau ?",
-      "reponse": "La Calypso",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel chef mongol a fondé un immense empire ?",
-      "reponse": "Gengis Khan",
+      "question": "Quel général carthaginois a traversé les Alpes à dos d'éléphant ?",
+      "reponse": "Hannibal",
       "niveau": 2,
       "ages": [
         "ados",

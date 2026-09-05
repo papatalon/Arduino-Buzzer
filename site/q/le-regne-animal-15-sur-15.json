@@ -7,22 +7,16 @@
   "emoji": "🐾",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
-      "reponse": "Bugs Bunny",
+      "categorie": "Histoire",
+      "question": "Quel animal servait de moyen de transport principal avant l'automobile ?",
+      "reponse": "Le cheval",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Petit du loup ?",
-      "reponse": "Le louveteau",
+      "categorie": "Culture générale",
+      "question": "Quel animal cache des œufs à Pâques ?",
+      "reponse": "Le lapin",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel animal figure sur la pièce d'un dollar canadien ?",
-      "reponse": "Le huard",
-      "niveau": 2
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -31,9 +25,9 @@
       "niveau": 2
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel animal fut le premier en orbite ?",
-      "reponse": "La chienne Laïka",
+      "categorie": "Géographie",
+      "question": "Quel animal figure sur la pièce d'un dollar canadien ?",
+      "reponse": "Le huard",
       "niveau": 2
     },
     {
@@ -41,6 +35,12 @@
       "question": "Quel animal de ferme, très bavard, accompagne Shrek partout ?",
       "reponse": "L'âne",
       "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal fut le premier en orbite ?",
+      "reponse": "La chienne Laïka",
+      "niveau": 2
     },
     {
       "categorie": "Culture pop",
@@ -52,12 +52,6 @@
       "categorie": "Sciences et nature",
       "question": "Quel dinosaure a trois cornes sur la tête ?",
       "reponse": "Le tricératops",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comptine demande si le loup y est pendant qu'il s'habille ?",
-      "reponse": "Promenons-nous dans les bois",
       "niveau": 1
     },
     {
@@ -73,12 +67,6 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel personnage de conte chaussé de bottes parle au nom de son maître ?",
-      "reponse": "Le Chat botté",
-      "niveau": 2
-    },
-    {
       "categorie": "Sports",
       "question": "Quel cheval célèbre a gagné la Triple Couronne en 1973 ?",
       "reponse": "Secretariat",
@@ -86,6 +74,12 @@
       "ages": [
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel personnage de conte chaussé de bottes parle au nom de son maître ?",
+      "reponse": "Le Chat botté",
+      "niveau": 2
     },
     {
       "categorie": "Sciences et nature",
@@ -100,15 +94,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel oiseau au long cou noir migre en formant un V dans le ciel ?",
-      "reponse": "La bernache (outarde)",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel manège fait tourner des chevaux de bois en musique ?",
-      "reponse": "Un carrousel",
+      "categorie": "Musique",
+      "question": "Quelle comptine québécoise plume un oiseau, la tête, le bec et les ailes ?",
+      "reponse": "Alouette",
       "niveau": 1
     },
     {
@@ -116,6 +104,12 @@
       "question": "Quel animal les Autochtones des plaines chassaient-ils pour se nourrir et se vêtir ?",
       "reponse": "Le bison",
       "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel manège fait tourner des chevaux de bois en musique ?",
+      "reponse": "Un carrousel",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -130,8 +124,26 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie « avoir une faim de loup » ?",
-      "reponse": "Avoir très faim",
+      "question": "Quel animal rugit ?",
+      "reponse": "Le lion",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel oiseau au long cou noir migre en formant un V dans le ciel ?",
+      "reponse": "La bernache (outarde)",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
+      "reponse": "Le mammouth",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel type de poisson est Nemo ?",
+      "reponse": "Un poisson-clown",
       "niveau": 1
     },
     {
@@ -150,18 +162,6 @@
         "ados",
         "adultes"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
-      "reponse": "Le mammouth",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel type de poisson est Nemo ?",
-      "reponse": "Un poisson-clown",
-      "niveau": 1
     }
   ]
 }

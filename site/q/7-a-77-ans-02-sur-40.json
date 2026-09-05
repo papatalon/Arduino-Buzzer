@@ -7,38 +7,15 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle racine piquante parfume les biscuits de Noël ?",
-      "reponse": "Le gingembre",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal hurle à la lune et chasse en meute ?",
+      "reponse": "Le loup",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville se dresse la statue de la Liberté ?",
-      "reponse": "New York",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle activité d'hiver descend une pente sur un traîneau ou une chambre à air ?",
-      "reponse": "La glissade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle friandise glacée se vend en tube de plastique à congeler ?",
-      "reponse": "Le Mr. Freeze",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "De quelle couleur sont les habitants de Pandora ?",
-      "reponse": "Bleus",
+      "categorie": "Mots et langue",
+      "question": "Quel autre dictionnaire français célèbre existe ?",
+      "reponse": "Le Robert",
       "niveau": 1,
       "ages": [
         "ados",
@@ -47,27 +24,61 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le mâle de la brebis ?",
-      "reponse": "Le bélier",
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?",
+      "reponse": "L'arc-en-ciel",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est voisine du Québec, à l'est, avec Fredericton pour capitale ?",
-      "reponse": "Le Nouveau-Brunswick",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le banc où le joueur puni doit s'asseoir ?",
-      "reponse": "Le banc des punitions",
+      "categorie": "Québec",
+      "question": "Que doit-on attacher en s'assoyant dans une auto ?",
+      "reponse": "La ceinture de sécurité",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel chant de Noël célèbre un arbre dont le feuillage reste vert tout l'hiver ?",
-      "reponse": "Mon beau sapin",
+      "question": "Quel chanteur jamaïcain a popularisé le reggae ?",
+      "reponse": "Bob Marley",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume en feuilles vertes est la base d'une salade ?",
+      "reponse": "La laitue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir un chat dans la gorge ?",
+      "reponse": "Être enroué",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel canal traverse l'Amérique centrale ?",
+      "reponse": "Panama",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel est le chien de compagnie de Mickey ?",
+      "reponse": "Pluto",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quel bâtiment fortifié vivaient les rois et les reines du Moyen Âge ?",
+      "reponse": "Un château",
       "niveau": 1
     },
     {
@@ -77,91 +88,50 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Qui a peint la Joconde ?",
-      "reponse": "Léonard de Vinci",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie casser du sucre sur le dos ?",
-      "reponse": "Dire du mal",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros devient vert quand il se fâche ?",
-      "reponse": "Hulk",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel quartier montréalais a une porte paifang ?",
-      "reponse": "Quartier chinois",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Sur quelle plante les Égyptiens écrivaient-ils ?",
-      "reponse": "Le papyrus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle organisation regroupe les pays francophones ?",
-      "reponse": "La Francophonie",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel événement cache le Soleil derrière la Lune ?",
-      "reponse": "Une éclipse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel agrume jaune très acide accompagne les poissons ?",
-      "reponse": "Le citron",
-      "niveau": 1
-    },
-    {
       "categorie": "Musique",
-      "question": "Quelle danse se pratique en tutu et sur la pointe des pieds ?",
-      "reponse": "Le ballet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume en feuilles vertes est la base d'une salade ?",
-      "reponse": "La laitue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel oiseau répète ce qu'on lui dit ?",
-      "reponse": "Le perroquet",
+      "question": "Quel appareil diffuse de la musique et des nouvelles dans l'auto ?",
+      "reponse": "La radio",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel petit maître Jedi vert parle à l'envers ?",
-      "reponse": "Yoda",
+      "question": "Quel jouet cosmonaute de Toy Story crie « Vers l'infini et au-delà » ?",
+      "reponse": "Buzz Lightyear",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?",
+      "reponse": "Le tyrannosaure",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel poisson orange est populaire en sushi ?",
+      "reponse": "Le saumon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
+      "reponse": "Le fromage en grains",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel événement sportif américain a lieu un dimanche de février ?",
+      "reponse": "Le Super Bowl",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -170,9 +140,39 @@
       "niveau": 1
     },
     {
+      "categorie": "Culture générale",
+      "question": "Qui a peint la Joconde ?",
+      "reponse": "Léonard de Vinci",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles petites autos de métal roulent sur des pistes de plastique orange ?",
+      "reponse": "Les Hot Wheels",
+      "niveau": 1
+    },
+    {
       "categorie": "Québec",
-      "question": "Quel cidre québécois est pressé après les gelées ?",
-      "reponse": "Cidre de glace",
+      "question": "Quel rocher troué est l'emblème de la Gaspésie ?",
+      "reponse": "Le rocher Percé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se pratique dans une piscine ?",
+      "reponse": "La natation",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel continent n'a aucun pays ?",
+      "reponse": "L'Antarctique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Contraire d'avare, commençant par G ?",
+      "reponse": "Généreux",
       "niveau": 1,
       "ages": [
         "ados",
@@ -181,9 +181,9 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel instrument sert à observer les microbes ?",
-      "reponse": "Le microscope",
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film de Noël un garçon oublié à la maison piège deux cambrioleurs ?",
+      "reponse": "Maman, j'ai raté l'avion",
       "niveau": 1
     }
   ]

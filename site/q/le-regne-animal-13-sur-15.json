@@ -7,6 +7,12 @@
   "emoji": "🐾",
   "questions": [
     {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir un chat dans la gorge ?",
+      "reponse": "Être enroué",
+      "niveau": 1
+    },
+    {
       "categorie": "Sciences et nature",
       "question": "Combien de pattes possède une araignée ?",
       "reponse": "Huit",
@@ -16,18 +22,6 @@
       "categorie": "Bouffe et cuisine",
       "question": "Quel poisson fumé garnit le bagel classique ?",
       "reponse": "Le saumon fumé",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport fait courir des chevaux montés par des jockeys ?",
-      "reponse": "Les courses de chevaux",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir un chat dans la gorge ?",
-      "reponse": "Être enroué",
       "niveau": 1
     },
     {
@@ -54,14 +48,8 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quel est le féminin de lion ?",
-      "reponse": "Lionne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel petit animal à grosse queue touffue cache des noix pour l'hiver ?",
-      "reponse": "L'écureuil",
+      "question": "Que signifie « avoir une mémoire d'éléphant » ?",
+      "reponse": "Avoir une très bonne mémoire",
       "niveau": 1
     },
     {
@@ -75,9 +63,21 @@
       ]
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal à grosse queue touffue cache des noix pour l'hiver ?",
+      "reponse": "L'écureuil",
+      "niveau": 1
+    },
+    {
       "categorie": "Cinéma et télé",
       "question": "Comment s'appelle la petite souris grise que le chat Tom n'attrape jamais ?",
       "reponse": "Jerry",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le féminin de chien ?",
+      "reponse": "Chienne",
       "niveau": 1
     },
     {
@@ -99,15 +99,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un âne toujours triste ?",
-      "reponse": "Bourriquet",
-      "niveau": 1
-    },
-    {
       "categorie": "Histoire",
       "question": "Comment appelle-t-on la trace d'un animal préhistorique conservée dans la pierre ?",
       "reponse": "Un fossile",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami de Winnie l'ourson est un âne toujours triste ?",
+      "reponse": "Bourriquet",
       "niveau": 1
     },
     {
@@ -138,22 +138,16 @@
       "niveau": 1
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la maison de bois du chien dans la cour ?",
+      "reponse": "Une niche",
+      "niveau": 1
+    },
+    {
       "categorie": "Sciences et nature",
       "question": "Quel grand singe est le plus proche de l'homme ?",
       "reponse": "Le chimpanzé",
       "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on l'abri où dort l'ours pendant l'hiver ?",
-      "reponse": "Une tanière",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel animal le clown tord-il dans un long ballon pour les enfants ?",
-      "reponse": "Un chien en ballon",
-      "niveau": 2
     },
     {
       "categorie": "Sciences et nature",
@@ -172,14 +166,21 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle exploratrice a un singe nommé Babouche ?",
-      "reponse": "Dora",
-      "niveau": 1,
+      "categorie": "Québec",
+      "question": "Quel oiseau blanc envahit les champs du Québec au printemps et à l'automne ?",
+      "reponse": "L'oie blanche",
+      "niveau": 3,
       "ages": [
-        "enfants",
-        "ados"
+        "ados",
+        "adultes",
+        "aines"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel animal le clown tord-il dans un long ballon pour les enfants ?",
+      "reponse": "Un chien en ballon",
+      "niveau": 2
     }
   ]
 }

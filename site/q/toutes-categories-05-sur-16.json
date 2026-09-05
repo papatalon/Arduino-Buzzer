@@ -7,15 +7,28 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage bleu sort de la lampe d'Aladdin ?",
-      "reponse": "Le génie",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz expirons-nous ?",
+      "reponse": "Le gaz carbonique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel oiseau noir et blanc de l'Antarctique ne sait pas voler ?",
+      "reponse": "Le manchot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on celui qui écrit des poèmes ?",
+      "reponse": "Un poète",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle ligne les coureurs doivent-ils franchir pour terminer une course ?",
+      "reponse": "La ligne d'arrivée",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -25,30 +38,31 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel est le plus grand désert chaud du monde ?",
-      "reponse": "Le Sahara",
+      "question": "Dans quelle ville trouve-t-on le Golden Gate ?",
+      "reponse": "San Francisco",
       "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
+      "reponse": "Une joute",
+      "niveau": 3
     },
     {
       "categorie": "Mots et langue",
-      "question": "Féminin de loup ?",
-      "reponse": "Louve",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel boxeur s'appelait Cassius Clay ?",
-      "reponse": "Muhammad Ali",
+      "question": "Comment nomme-t-on un mot comme mais ou donc ?",
+      "reponse": "Une conjonction",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète tourne couchée sur le côté ?",
-      "reponse": "Uranus",
+      "categorie": "Histoire",
+      "question": "Qui était le dernier tsar de Russie ?",
+      "reponse": "Nicolas II",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -56,40 +70,104 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel repas se glisse entre deux tranches de pain pour la boîte à lunch ?",
-      "reponse": "Un sandwich",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle note dure deux fois moins longtemps qu'une blanche ?",
-      "reponse": "La noire",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie dormir sur ses deux oreilles ?",
-      "reponse": "Dormir tranquille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel métal les aimants attirent-ils ?",
-      "reponse": "Le fer",
+      "categorie": "Géographie",
+      "question": "Quel est le plus grand désert chaud du monde ?",
+      "reponse": "Le Sahara",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Qui a remporté la bataille des plaines d'Abraham ?",
-      "reponse": "Les Britanniques",
+      "question": "Quel jour célèbre-t-on l'Armistice de 1918 ?",
+      "reponse": "Le 11 novembre",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie ronde se décore de glaçage pour une fête ?",
-      "reponse": "Le gâteau",
+      "question": "Quel colonel a fondé la chaîne de poulet PFK ?",
+      "reponse": "Sanders",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
+      "reponse": "Loud",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle exclamation lance Homer Simpson ?",
+      "reponse": "D'oh",
       "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
+      "reponse": "La Grande Ourse",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel traîneau de bois aux lattes recourbées glisse sur la neige au Québec ?",
+      "reponse": "La traîne sauvage",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel oiseau apporterait les bébés selon la légende ?",
+      "reponse": "La cigogne",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de musiciens jouent dans un duo ?",
+      "reponse": "Deux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la feuille qui donne les ingrédients et les étapes d'un plat ?",
+      "reponse": "Une recette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Islande ?",
+      "reponse": "Reykjavik",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel objet empoisonné croque Blanche-Neige ?",
+      "reponse": "Une pomme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gros oiseau noir et blanc plonge dans les lacs du Québec en poussant un cri plaintif ?",
+      "reponse": "Le huard",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel gardien québécois a popularisé le style papillon ?",
+      "reponse": "Patrick Roy",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -103,99 +181,15 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Écosse ?",
-      "reponse": "Édimbourg",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel jeu télévisé opposait des équipes d'élèves du secondaire ?",
-      "reponse": "Génies en herbe",
-      "niveau": 3,
+      "question": "Quels écouteurs sans fil blancs se rangent dans un petit boîtier ?",
+      "reponse": "Les AirPods",
+      "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
-      "reponse": "L'autoroute 40",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi de France fut surnommé le Roi-Soleil ?",
-      "reponse": "Louis XIV",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'absence de son ?",
-      "reponse": "Le silence",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de Terre-Neuve ?",
-      "reponse": "Saint-Jean",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal les Autochtones des plaines chassaient-ils pour se nourrir et se vêtir ?",
-      "reponse": "Le bison",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle embarcation traverse le fleuve gelé au Carnaval ?",
-      "reponse": "Le canot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle marionnette verte du Muppet Show anime le spectacle ?",
-      "reponse": "Kermit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la grande salle de l'école où se donne l'éducation physique ?",
-      "reponse": "Le gymnase",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
-      "reponse": "Grand Theft Auto",
-      "niveau": 3,
-      "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
-      "reponse": "Le raton laveur",
-      "niveau": 1
     }
   ]
 }

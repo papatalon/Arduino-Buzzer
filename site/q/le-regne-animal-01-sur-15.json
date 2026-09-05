@@ -30,12 +30,6 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le féminin de chien ?",
-      "reponse": "Chienne",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
       "question": "Quel aliment ovale pondu par la poule mange-t-on brouillé ?",
       "reponse": "L'œuf",
@@ -48,22 +42,22 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Que tisse l'araignée pour attraper les insectes ?",
-      "reponse": "Une toile",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
       "question": "Quel est le cri du loup ?",
       "reponse": "Le hurlement",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
-      "reponse": "Le raton laveur",
+      "categorie": "Culture générale",
+      "question": "Que tisse l'araignée pour attraper les insectes ?",
+      "reponse": "Une toile",
       "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelait-on les soldats montés à cheval dans les armées d'autrefois ?",
+      "reponse": "La cavalerie",
+      "niveau": 2
     },
     {
       "categorie": "Québec",
@@ -94,21 +88,26 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Dans quel conte un oisillon rejeté par les siens devient un magnifique cygne ?",
-      "reponse": "Le vilain petit canard",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
+      "reponse": "Le raton laveur",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel grand bâtiment rouge de la ferme abrite les animaux et le foin ?",
-      "reponse": "La grange",
-      "niveau": 1
+      "categorie": "Mots et langue",
+      "question": "Petit de l'aigle ?",
+      "reponse": "L'aiglon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal du désert poursuit sans succès l'oiseau Bip Bip ?",
-      "reponse": "Le coyote",
+      "categorie": "Musique",
+      "question": "Quelle chanson du crabe Sébastien vante la vie sous les vagues ?",
+      "reponse": "Sous l'océan",
       "niveau": 2,
       "ages": [
         "enfants",
@@ -123,38 +122,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal polaire a la peau noire sous son pelage blanc ?",
-      "reponse": "L'ours polaire",
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal du désert poursuit sans succès l'oiseau Bip Bip ?",
+      "reponse": "Le coyote",
       "niveau": 2,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit de l'aigle ?",
-      "reponse": "L'aiglon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que colle-t-on dans le dos des gens le 1er avril ?",
-      "reponse": "Un poisson d'avril",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel minuscule oiseau peut voler en arrière ?",
-      "reponse": "Le colibri",
-      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -169,6 +145,24 @@
       "niveau": 1
     },
     {
+      "categorie": "Québec",
+      "question": "Quelle attraction de Sainte-Foy présente des morses et des ours blancs ?",
+      "reponse": "L'Aquarium du Québec",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel poisson-clown cherche son fils dans l'océan ?",
+      "reponse": "Marin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel minuscule oiseau peut voler en arrière ?",
+      "reponse": "Le colibri",
+      "niveau": 1
+    },
+    {
       "categorie": "Sciences et nature",
       "question": "Quel animal à longues oreilles adore les carottes ?",
       "reponse": "Le lapin",
@@ -176,9 +170,20 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel poisson-clown cherche son fils dans l'océan ?",
-      "reponse": "Marin",
+      "question": "Comment s'appelle le lionceau du Roi Lion ?",
+      "reponse": "Simba",
       "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal polaire a la peau noire sous son pelage blanc ?",
+      "reponse": "L'ours polaire",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

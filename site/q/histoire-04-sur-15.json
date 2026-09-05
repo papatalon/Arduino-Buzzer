@@ -8,8 +8,134 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelle brebis clonée est née en 1996 ?",
-      "reponse": "Dolly",
+      "question": "En quelle année le Titanic a-t-il coulé ?",
+      "reponse": "1912",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel savant grec a crié 'Eurêka' dans son bain ?",
+      "reponse": "Archimède",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel grand navire de guerre espagnol transportait l'or des Amériques ?",
+      "reponse": "Le galion",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel document marqué d'un X indique où le trésor est enterré ?",
+      "reponse": "Une carte au trésor",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel scientifique fouille la terre pour trouver des objets anciens ?",
+      "reponse": "Un archéologue",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la période qui suit l'Antiquité, celle des châteaux forts ?",
+      "reponse": "Le Moyen Âge",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quelle ville Jeanne d'Arc fut-elle brûlée ?",
+      "reponse": "Rouen",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel roi de France a été guillotiné en 1793 ?",
+      "reponse": "Louis XVI",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel constructeur a lancé la Ford T ?",
+      "reponse": "Henry Ford",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel explorateur portugais a contourné l'Afrique en 1498 ?",
+      "reponse": "Vasco de Gama",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la personne dont le métier est d'étudier le passé ?",
+      "reponse": "Un historien",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Pour quelle exposition la tour Eiffel fut-elle construite ?",
+      "reponse": "Expo de 1889",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention permet de parler à quelqu'un qui est loin ?",
+      "reponse": "Le téléphone",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel empereur romain a légalisé le christianisme ?",
+      "reponse": "Constantin",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle fourrure les Européens recherchaient-ils le plus en Nouvelle-France ?",
+      "reponse": "Le castor",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel véhicule à moteur a remplacé le cheval sur les routes ?",
+      "reponse": "L'automobile",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année eut lieu le grand krach boursier ?",
+      "reponse": "1929",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -18,51 +144,13 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on un conflit où presque tous les pays du monde se battent ?",
-      "reponse": "Une guerre mondiale",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi anglais légendaire aurait retiré une épée d'un rocher ?",
-      "reponse": "Le roi Arthur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel appareil garde les aliments au froid depuis un siècle, remplaçant la glacière ?",
-      "reponse": "Le réfrigérateur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Avec quoi écrivait-on avant le stylo, en la trempant dans l'encre ?",
-      "reponse": "Une plume",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle ville a été fondée en 1642 sous le nom de Ville-Marie ?",
-      "reponse": "Montréal",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'ensemble des nobles qui entouraient le roi ?",
-      "reponse": "La cour",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
-      "reponse": "Le mammouth",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel fleuve faisait pousser les récoltes des Égyptiens en débordant chaque année ?",
-      "reponse": "Le Nil",
-      "niveau": 2
+      "question": "Quelle militante pakistanaise a reçu le Nobel de la paix ?",
+      "reponse": "Malala",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -77,33 +165,38 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle machine volante a été mise au point par les frères Wright ?",
-      "reponse": "L'avion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on les Français qui partaient troquer des fourrures dans les bois ?",
-      "reponse": "Les coureurs des bois",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle première ministre fut surnommée la Dame de fer ?",
-      "reponse": "Thatcher",
-      "niveau": 2,
+      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
+      "reponse": "Un missionnaire",
+      "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel philosophe grec fut condamné à boire la ciguë ?",
-      "reponse": "Socrate",
-      "niveau": 2,
+      "question": "Comment appelle-t-on les dessins d'animaux tracés sur les parois des grottes ?",
+      "reponse": "Les peintures rupestres",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle bombe a frappé Hiroshima en 1945 ?",
+      "reponse": "La bombe atomique",
+      "niveau": 1,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel roi babylonien a gravé un célèbre code de lois ?",
+      "reponse": "Hammurabi",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -116,84 +209,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle machine allemande codait les messages nazis ?",
-      "reponse": "Enigma",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'ensemble des histoires des dieux et des héros grecs ?",
-      "reponse": "La mythologie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel inventeur italien est considéré comme le père de la radio ?",
-      "reponse": "Marconi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année eut lieu le grand krach boursier ?",
-      "reponse": "1929",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quelle grande statue verte tient une torche à l'entrée de New York ?",
       "reponse": "La statue de la Liberté",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle politique canadienne date de la loi de 1969 ?",
-      "reponse": "Le bilinguisme",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?",
-      "reponse": "Le cheval de Troie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les grandes pierres dressées et posées à plat par les hommes préhistoriques ?",
-      "reponse": "Un dolmen",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année Colomb a-t-il atteint l'Amérique ?",
-      "reponse": "1492",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels animaux géants ont disparu bien avant l'apparition des humains ?",
-      "reponse": "Les dinosaures",
       "niveau": 1
     }
   ]

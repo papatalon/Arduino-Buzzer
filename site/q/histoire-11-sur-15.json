@@ -8,14 +8,14 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelles expéditions religieuses visaient Jérusalem ?",
-      "reponse": "Les croisades",
+      "question": "Quelle embarcation d'écorce les Autochtones et les coureurs des bois utilisaient-ils ?",
+      "reponse": "Le canot d'écorce",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel chemin de fer a uni le Canada en 1885 ?",
-      "reponse": "Canadien Pacifique",
+      "question": "Qui a gravi l'Everest en premier en 1953 ?",
+      "reponse": "Hillary et Norgay",
       "niveau": 2,
       "ages": [
         "ados",
@@ -25,32 +25,27 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Contre quoi le Titanic est-il entré en collision ?",
-      "reponse": "Un iceberg",
+      "question": "Comment appelle-t-on la longue période où d'immenses glaciers recouvraient le Québec ?",
+      "reponse": "La période glaciaire",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quel amphithéâtre combattaient les gladiateurs ?",
+      "reponse": "Le Colisée",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande statue ou la stèle élevée en mémoire de quelqu'un ?",
-      "reponse": "Un monument",
+      "question": "Quelle grande tour de fer a été bâtie à Paris pour une exposition en 1889 ?",
+      "reponse": "La tour Eiffel",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année a pris fin la Première Guerre mondiale ?",
-      "reponse": "1918",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle encyclopédie en ligne, lancée en 2001, est écrite par ses lecteurs ?",
-      "reponse": "Wikipédia",
-      "niveau": 2,
+      "question": "Quelle invention chinoise a permis d'imprimer avant Gutenberg ?",
+      "reponse": "Le papier",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes"
@@ -58,139 +53,149 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel long chemin de fer a relié l'est et l'ouest du Canada en 1885 ?",
-      "reponse": "Le chemin de fer transcontinental",
-      "niveau": 3,
+      "question": "Quelle prison parisienne fut prise le 14 juillet 1789 ?",
+      "reponse": "La Bastille",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Qui a couru le Marathon de l'espoir en 1980 ?",
-      "reponse": "Terry Fox",
+      "question": "Comment s'appelle l'écriture des Égyptiens ?",
+      "reponse": "Les hiéroglyphes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel canal relie la Méditerranée à la mer Rouge ?",
+      "reponse": "Suez",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle reine britannique a régné pendant presque tout le 19e siècle ?",
+      "reponse": "Victoria",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal les Autochtones des plaines chassaient-ils pour se nourrir et se vêtir ?",
+      "reponse": "Le bison",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on les cent ans d'un événement qu'on souligne par une fête ?",
-      "reponse": "Un centenaire",
+      "question": "Quel peuple de l'Antiquité a inventé les Jeux olympiques ?",
+      "reponse": "Les Grecs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les grands ponts qui amenaient l'eau jusqu'aux villes romaines ?",
+      "reponse": "Un aqueduc",
       "niveau": 3
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année le Titanic a-t-il coulé ?",
-      "reponse": "1912",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel navigateur a traversé l'Atlantique en 1492 et atteint l'Amérique ?",
-      "reponse": "Christophe Colomb",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Dans quel bâtiment fortifié vivaient les rois et les reines du Moyen Âge ?",
-      "reponse": "Un château",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel tombeau égyptien fut découvert en 1922 ?",
-      "reponse": "Toutankhamon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle grippe a fait des millions de morts en 1918 ?",
-      "reponse": "Grippe espagnole",
+      "question": "Quel empereur romain aurait incendié Rome ?",
+      "reponse": "Néron",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel navire insubmersible a coulé en 1912 ?",
-      "reponse": "Le Titanic",
+      "question": "Que dessinaient les hommes préhistoriques sur les murs des grottes ?",
+      "reponse": "Des animaux",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Que portaient les chevaliers pour protéger leur corps au combat ?",
-      "reponse": "Une armure",
+      "question": "Qui fut le premier homme dans l'espace ?",
+      "reponse": "Youri Gagarine",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel cercle d'or le roi porte-t-il sur la tête ?",
+      "reponse": "Une couronne",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on les longues bandes de terre perpendiculaires au fleuve ?",
-      "reponse": "Les rangs",
+      "question": "Comment appelle-t-on l'ensemble des nobles qui entouraient le roi ?",
+      "reponse": "La cour",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel objet les premiers explorateurs utilisaient-ils pour trouver le nord ?",
+      "reponse": "Une boussole",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel ordre de moines soldats gardait les pèlerins ?",
+      "reponse": "Les Templiers",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle armée de statues garde le tombeau du premier empereur chinois ?",
+      "reponse": "L'armée de terre cuite",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?",
-      "reponse": "Jeanne Mance",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle bombe a frappé Hiroshima en 1945 ?",
-      "reponse": "La bombe atomique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel document marqué d'un X indique où le trésor est enterré ?",
-      "reponse": "Une carte au trésor",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel astronaute canadien a chanté dans l'espace ?",
-      "reponse": "Chris Hadfield",
-      "niveau": 2,
-      "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel gros reptile a disparu de la Terre il y a des millions d'années ?",
-      "reponse": "Un dinosaure",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle mission a posé les premiers hommes sur la Lune ?",
-      "reponse": "Apollo 11",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle reine d'Égypte a séduit César et Antoine ?",
-      "reponse": "Cléopâtre",
+      "question": "Quel animal a allaité Romulus et Rémus ?",
+      "reponse": "Une louve",
       "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel dictateur soviétique a succédé à Lénine ?",
+      "reponse": "Staline",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?",
+      "reponse": "Le télescope James Webb",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     }
   ]
 }

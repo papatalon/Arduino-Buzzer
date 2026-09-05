@@ -7,15 +7,30 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Géographie",
-      "question": "Quelle grande ville canadienne se trouve juste à l'ouest du Québec, en Ontario ?",
-      "reponse": "Toronto",
-      "niveau": 2
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant de Trois-Rivières ?",
+      "reponse": "Un Trifluvien",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel chef québécois donne son prénom à un magazine, une émission et une gamme de produits ?",
-      "reponse": "Ricardo",
+      "categorie": "Cinéma et télé",
+      "question": "Quel avare célèbre du terroir québécois aime son argent ?",
+      "reponse": "Séraphin",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
+      "reponse": "Gary Carter",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -23,16 +38,20 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quels tambours se frappent en cercle dans les parcs de Montréal le dimanche ?",
-      "reponse": "Les tam-tams",
-      "niveau": 2
+      "categorie": "Géographie",
+      "question": "Quel pays produit le plus de sirop d'érable ?",
+      "reponse": "Le Canada",
+      "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
-      "reponse": "La tire d'érable",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
+      "reponse": "Le 7 Jours",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Mots et langue",
@@ -41,46 +60,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel pays voisin du Québec se trouve juste au sud ?",
-      "reponse": "Les États-Unis",
+      "categorie": "Histoire",
+      "question": "Comment appelait-on la colonie française en Amérique du Nord ?",
+      "reponse": "La Nouvelle-France",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel concours de chant québécois lance des carrières depuis 2003 ?",
-      "reponse": "Star Académie",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
-      "reponse": "La fin de semaine des Patriotes",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
-      "reponse": "Big Brother Célébrités",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a une voix puissante et chante Un peu plus haut ?",
-      "reponse": "Ginette Reno",
+      "question": "Quel prix récompense les artistes québécois au gala de l'ADISQ ?",
+      "reponse": "Le Félix",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -89,50 +77,37 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
-      "reponse": "Quétaine",
+      "question": "Quelle plage du Maine est la destination classique des vacances québécoises ?",
+      "reponse": "Old Orchard",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
-      "reponse": "Alexandre Bilodeau",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel condiment rouge accompagne les frites et le pâté chinois ?",
+      "reponse": "Le ketchup",
+      "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle marque québécoise fabrique les Jos Louis et les May West ?",
-      "reponse": "Vachon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
-      "reponse": "Le tramway",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
+      "categorie": "Mots et langue",
+      "question": "Le pluriel de caillou prend un S ou un X ?",
+      "reponse": "Un X",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la plus grande île du golfe Saint-Laurent ?",
-      "reponse": "Anticosti",
-      "niveau": 2,
+      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
+      "reponse": "Le Grand Nord",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
+      "reponse": "Expo 67",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -141,23 +116,75 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel humoriste québécois a créé la série Les Beaux Malaises ?",
-      "reponse": "Martin Matte",
+      "question": "Quel organisme québécois délivre les permis de conduire et les plaques ?",
+      "reponse": "La SAAQ",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle société d'État tire les loteries au Québec ?",
+      "reponse": "Loto-Québec",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois jaser ?",
+      "reponse": "Bavarder",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
+      "reponse": "L'hémisphère nord",
+      "niveau": 3
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas se prend le soir au Québec ?",
+      "reponse": "Le souper",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel événement montréalais ferme des rues chaque été pour des spectacles gratuits ?",
+      "reponse": "Le Festival de jazz",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle plongeuse québécoise a gagné l'argent à Tokyo ?",
-      "reponse": "Jennifer Abel",
-      "niveau": 3,
+      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
+      "reponse": "Montréal",
+      "niveau": 1,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois magasiner ?",
+      "reponse": "Faire des achats",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne borde le Québec à l'est, avec Moncton ?",
+      "reponse": "Le Nouveau-Brunswick",
+      "niveau": 3
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -166,58 +193,11 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
-      "reponse": "Les Baronets",
+      "categorie": "Musique",
+      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
+      "reponse": "La podorythmie",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on les chutes situées juste à côté de la ville de Québec ?",
-      "reponse": "Les chutes Montmorency",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel service de vélos en libre-service porte un nom de trois lettres à Montréal ?",
-      "reponse": "Bixi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série québécoise suivait une famille qui vivait de combines et d'aide sociale ?",
-      "reponse": "Les Bougon",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel duo québécois de dessins animés met en scène un chien et son chat ?",
-      "reponse": "Toupie et Binou",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boulette de patates est un plat acadien ?",
-      "reponse": "Poutine râpée",
-      "niveau": 2,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]

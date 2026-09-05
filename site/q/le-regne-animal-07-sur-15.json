@@ -8,9 +8,21 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
-      "reponse": "Une diligence",
-      "niveau": 3
+      "question": "Quel oiseau portait les messages avant le télégraphe ?",
+      "reponse": "Le pigeon voyageur",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel animal est surnommé le roi de la jungle ?",
+      "reponse": "Le lion",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
+      "reponse": "Une sirène",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -25,27 +37,45 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel animal est surnommé le roi de la jungle ?",
-      "reponse": "Le lion",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Comment s'appelle le petit du cochon ?",
-      "reponse": "Le porcelet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
-      "reponse": "Une sirène",
+      "question": "Comment s'appelle le petit du canard ?",
+      "reponse": "Le caneton",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
       "question": "Quel véhicule à moteur a remplacé le cheval sur les routes ?",
       "reponse": "L'automobile",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat anglais sert du poisson frit avec des frites ?",
+      "reponse": "Fish and chips",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine ajoute un éléphant de plus sur une toile d'araignée ?",
+      "reponse": "Un éléphant qui se balançait",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte est le principal pollinisateur ?",
+      "reponse": "L'abeille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel ancien vélodrome de Montréal abrite des animaux ?",
+      "reponse": "Le Biodôme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du cheval ?",
+      "reponse": "Le hennissement",
       "niveau": 1
     },
     {
@@ -59,53 +89,6 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel reptile peut vivre plus de 150 ans ?",
-      "reponse": "La tortue géante",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte est le principal pollinisateur ?",
-      "reponse": "L'abeille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle expression du Roi Lion signifie « sans souci » en swahili ?",
-      "reponse": "Hakuna Matata",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du cheval ?",
-      "reponse": "Le hennissement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat anglais sert du poisson frit avec des frites ?",
-      "reponse": "Fish and chips",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel ancien vélodrome de Montréal abrite des animaux ?",
-      "reponse": "Le Biodôme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du canard ?",
-      "reponse": "La cane",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
       "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
       "reponse": "Cracké",
@@ -114,6 +97,18 @@
         "enfants",
         "ados"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile peut vivre plus de 150 ans ?",
+      "reponse": "La tortue géante",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la femelle du canard ?",
+      "reponse": "La cane",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -128,27 +123,25 @@
       "niveau": 1
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quelle chienne bleue australienne joue avec sa sœur Bingo dans une série ?",
+      "reponse": "Bluey",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
       "categorie": "Sciences et nature",
       "question": "Quel insecte rouge à points noirs porte bonheur ?",
       "reponse": "La coccinelle",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Dans quoi la chenille se transforme-t-elle ?",
-      "reponse": "La chrysalide",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle attraction de Sainte-Foy présente des morses et des ours blancs ?",
-      "reponse": "L'Aquarium du Québec",
-      "niveau": 2
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Que signifie « avoir une mémoire d'éléphant » ?",
-      "reponse": "Avoir une très bonne mémoire",
+      "question": "Que signifie « avoir une faim de loup » ?",
+      "reponse": "Avoir très faim",
       "niveau": 1
     },
     {
@@ -166,6 +159,12 @@
       "categorie": "Sciences et nature",
       "question": "Quel gros oiseau entièrement noir croasse ?",
       "reponse": "Le corbeau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Dans quoi la chenille se transforme-t-elle ?",
+      "reponse": "La chrysalide",
       "niveau": 1
     }
   ]

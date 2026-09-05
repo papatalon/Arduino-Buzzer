@@ -7,9 +7,104 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe contrôle tout le corps ?",
+      "reponse": "Le cerveau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le féminin de chien ?",
+      "reponse": "Chienne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie donner un coup de main ?",
+      "reponse": "Aider",
+      "niveau": 1
+    },
+    {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on une bande de sable au bord de la mer ?",
-      "reponse": "Une plage",
+      "question": "Sur quel continent se trouve le désert du Sahara ?",
+      "reponse": "L'Afrique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui joue de la guitare ?",
+      "reponse": "Un guitariste",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâtisserie a une croûte et une garniture aux pommes ou aux fraises ?",
+      "reponse": "La tarte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle muraille célèbre protège la Chine ?",
+      "reponse": "La Grande Muraille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir une faim de loup ?",
+      "reponse": "Avoir très faim",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel gâteau roulé imite un morceau de bois à Noël ?",
+      "reponse": "Bûche de Noël",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un ballon qu'on frappe des mains par-dessus un filet ?",
+      "reponse": "Le volleyball",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument a des touches noires et blanches ?",
+      "reponse": "Le piano",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle amie brillante accompagne Harry et Ron ?",
+      "reponse": "Hermione",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus grand pays du monde ?",
+      "reponse": "La Russie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mot désigne une personne devenue célèbre grâce aux réseaux sociaux ?",
+      "reponse": "Un influenceur",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien d'anneaux entrelacés forment le symbole olympique ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel outil racle la neige des pare-brise ?",
+      "reponse": "Un gratteux",
       "niveau": 1
     },
     {
@@ -19,131 +114,43 @@
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel jeu de cour d'école fait sauter par-dessus une corde qui tourne ?",
-      "reponse": "La corde à danser",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation raconte une princesse écossaise aux cheveux roux qui tire à l'arc ?",
-      "reponse": "Rebelle",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on une chanson sans instruments ?",
-      "reponse": "A cappella",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Où se trouvent les pyramides de Gizeh ?",
-      "reponse": "En Égypte",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quels animaux revivent dans Jurassic Park ?",
-      "reponse": "Les dinosaures",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture générale",
       "question": "Quel sac chaud sert à dormir en camping ?",
       "reponse": "Un sac de couchage",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle reine a régné 70 ans sur le Royaume-Uni ?",
-      "reponse": "Elizabeth II",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot de sens contraire ?",
-      "reponse": "Un antonyme",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal noir et blanc dégage une odeur terrible quand il a peur ?",
-      "reponse": "La mouffette",
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal de ferme, très bavard, accompagne Shrek partout ?",
+      "reponse": "L'âne",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Sur quel objet de ménage les sorcières se déplacent-elles dans le ciel ?",
-      "reponse": "Un balai",
+      "categorie": "Sciences et nature",
+      "question": "Quelle articulation plie le bras en son milieu ?",
+      "reponse": "Le coude",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Comment s'appelle le parlement du Québec ?",
-      "reponse": "Assemblée nationale",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
-      "reponse": "Un sauveteur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit jaune les singes adorent-ils ?",
-      "reponse": "La banane",
-      "niveau": 1
+      "question": "Quel joueur des Canadiens fut surnommé le Démon blond ?",
+      "reponse": "Guy Lafleur",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "De quoi sont faits les nuages ?",
-      "reponse": "Gouttelettes d'eau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel bonbon rond se tient au bout d'un bâton ?",
-      "reponse": "Un suçon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel petit animal à coquille rampe lentement en laissant une trace ?",
-      "reponse": "L'escargot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui joue d'un instrument ?",
-      "reponse": "Un musicien",
+      "question": "Quel insecte rouge à points noirs porte bonheur ?",
+      "reponse": "La coccinelle",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel roi des mers parle aux poissons ?",
-      "reponse": "Aquaman",
+      "question": "Comment s'appelle le petit chien blanc de Tintin ?",
+      "reponse": "Milou",
       "niveau": 1
     },
     {
@@ -154,36 +161,8 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume violet et allongé gratine la moussaka ?",
-      "reponse": "L'aubergine",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel restaurant montréalais est célèbre pour son smoked meat ?",
-      "reponse": "Schwartz",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de rire ?",
-      "reponse": "Pleurer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie les carottes sont cuites ?",
-      "reponse": "C'est fini",
+      "question": "Quel fruit est l'ingrédient principal du cidre ?",
+      "reponse": "La pomme",
       "niveau": 1
     }
   ]

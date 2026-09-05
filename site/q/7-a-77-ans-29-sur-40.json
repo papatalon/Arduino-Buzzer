@@ -7,16 +7,143 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Que souffle-t-on sur le gâteau de fête après avoir fait un vœu ?",
-      "reponse": "Les bougies",
+      "categorie": "Géographie",
+      "question": "Quel océan entoure le pôle Nord ?",
+      "reponse": "L'océan Arctique",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on celui qui joue un rôle dans un film ?",
-      "reponse": "Un acteur",
+      "question": "Que signifie en faire tout un fromage ?",
+      "reponse": "Exagérer",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit rouge à noyau couronne un sundae ?",
+      "reponse": "La cerise",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Où les enfants passent-ils leurs journées d'été avec des moniteurs ?",
+      "reponse": "Au camp de jour",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel jeu vidéo consiste à empiler des blocs qui tombent ?",
+      "reponse": "Tetris",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la température du corps humain en santé ?",
+      "reponse": "37 degrés C",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel capitaine des Penguins est surnommé Sid the Kid ?",
+      "reponse": "Sidney Crosby",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle plateforme suédoise diffuse de la musique en continu ?",
+      "reponse": "Spotify",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas se prend le soir au Québec ?",
+      "reponse": "Le souper",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel humoriste montréalais fait des spectacles bilingues ?",
+      "reponse": "Sugar Sammy",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gros animal gris d'Afrique porte une corne sur le nez ?",
+      "reponse": "Le rhinocéros",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on un être venu d'une autre planète ?",
+      "reponse": "Un extraterrestre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quelle matière les tout premiers outils de l'humanité étaient-ils taillés ?",
+      "reponse": "La pierre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle héroïne chinoise se déguise en soldat ?",
+      "reponse": "Mulan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "De quoi est fait le fromage ?",
+      "reponse": "Du lait",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie les carottes sont cuites ?",
+      "reponse": "C'est fini",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel frère et quelle sœur de conte sèment des miettes de pain dans la forêt ?",
+      "reponse": "Hansel et Gretel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal à grosse queue touffue cache des noix pour l'hiver ?",
+      "reponse": "L'écureuil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien vaut un placement au football ?",
+      "reponse": "Trois points",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie se tirer une bûche ?",
+      "reponse": "Prendre une chaise",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -30,154 +157,27 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Combien de musiciens jouent dans un duo ?",
-      "reponse": "Deux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le seul mammifère volant ?",
-      "reponse": "La chauve-souris",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel frère et quelle sœur de conte sèment des miettes de pain dans la forêt ?",
-      "reponse": "Hansel et Gretel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de table se joue avec des queues et des billes ?",
-      "reponse": "Le billard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a une croix blanche sur fond rouge ?",
-      "reponse": "La Suisse",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Le pluriel de caillou prend un S ou un X ?",
-      "reponse": "Un X",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle soupe vietnamienne parfumée contient du bœuf ?",
-      "reponse": "Le pho",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Québec",
-      "question": "Quelle chaîne de dépanneurs québécoise a un hibou ?",
-      "reponse": "Couche-Tard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du chat ?",
-      "reponse": "Le chaton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle maladie a confiné la planète entière au printemps 2020 ?",
-      "reponse": "La COVID-19",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'ensemble des chansons réunies sur un même enregistrement ?",
-      "reponse": "Un album",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent vivent les girafes en liberté ?",
-      "reponse": "L'Afrique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne de crème glacée molle trempe ses cornets dans le chocolat ?",
-      "reponse": "Dairy Queen",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle date est la Fête nationale du Québec ?",
-      "reponse": "Le 24 juin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est l'animal le plus haut du monde ?",
-      "reponse": "La girafe",
+      "question": "Quel est le plus grand cervidé du Québec ?",
+      "reponse": "L'orignal",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle série américaine suit un bureau de vente de papier ?",
-      "reponse": "The Office",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur de soccer est surnommé CR7 ?",
-      "reponse": "Cristiano Ronaldo",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la photo prise chaque année avec tous les élèves d'un groupe ?",
-      "reponse": "La photo de classe",
+      "question": "Quel agent secret britannique aime les martinis ?",
+      "reponse": "James Bond",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Comment appelle-t-on la petite bille de chocolat qu'on met dans les biscuits ?",
-      "reponse": "Une pépite",
+      "categorie": "Musique",
+      "question": "Dans la comptine, de quelle couleur est la souris qui courait dans l'herbe ?",
+      "reponse": "Verte",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Que tombe-t-il du ciel en flocons blancs l'hiver ?",
-      "reponse": "La neige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal de ferme, très bavard, accompagne Shrek partout ?",
-      "reponse": "L'âne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel jeu vidéo consiste à empiler des blocs qui tombent ?",
-      "reponse": "Tetris",
+      "categorie": "Géographie",
+      "question": "Quel est le plus haut sommet du monde ?",
+      "reponse": "L'Everest",
       "niveau": 1
     }
   ]

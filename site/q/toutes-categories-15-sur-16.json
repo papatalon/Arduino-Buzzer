@@ -7,71 +7,9 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quelle attraction de parc aquatique fait descendre un long tube en spirale ?",
-      "reponse": "La glissade d'eau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui pousse sur la tête et qu'on va faire couper chez le coiffeur ?",
-      "reponse": "Les cheveux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle route ceinture la péninsule gaspésienne ?",
-      "reponse": "La 132",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de rire ?",
-      "reponse": "Pleurer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de lettres compte l'alphabet français ?",
-      "reponse": "Vingt-six",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Machu Picchu ?",
-      "reponse": "Le Pérou",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
-      "reponse": "La Grande Ourse",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel homme chauve à boucle d'oreille nettoie tout dans les publicités ?",
-      "reponse": "Monsieur Net",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Quelle chanteuse canadienne a chanté Complicated ?",
-      "reponse": "Avril Lavigne",
+      "question": "Quelle chanteuse a chanté Rolling in the Deep ?",
+      "reponse": "Adele",
       "niveau": 2,
       "ages": [
         "ados",
@@ -79,16 +17,79 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Quel papillon est l'insecte emblème du Québec ?",
+      "reponse": "L'amiral",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Alberta ?",
+      "reponse": "Edmonton",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Que signifie se lever du mauvais pied ?",
-      "reponse": "Être de mauvaise humeur",
+      "question": "Quel mot québécois désigne un enfant ?",
+      "reponse": "Un flo",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle plateforme les pirates faisaient-ils parcourir aux prisonniers au-dessus de l'eau ?",
+      "reponse": "La planche",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël anglais souhaite un joyeux Noël en le répétant trois fois ?",
+      "reponse": "We Wish You a Merry Christmas",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel réalisateur québécois a tourné Dune ?",
+      "reponse": "Denis Villeneuve",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel attaquant norvégien enfile les buts à Manchester City ?",
+      "reponse": "Haaland",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "De quel arbre le koala mange-t-il les feuilles ?",
+      "reponse": "L'eucalyptus",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel dictateur soviétique a succédé à Lénine ?",
-      "reponse": "Staline",
-      "niveau": 2,
+      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
+      "reponse": "La tradition orale",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -97,11 +98,116 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la fondue au fromage ?",
-      "reponse": "La Suisse",
+      "question": "Pays d'origine du fromage gouda ?",
+      "reponse": "Les Pays-Bas",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel bassin de plastique se gonfle dans la cour l'été ?",
+      "reponse": "Une piscine gonflable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel site de vente en ligne a une flèche souriante dans son logo ?",
+      "reponse": "Amazon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
+      "reponse": "Quétaine",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Écosse ?",
+      "reponse": "Édimbourg",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de lettres compte l'alphabet français ?",
+      "reponse": "Vingt-six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle soupe japonaise est à base de pâte de soja ?",
+      "reponse": "La soupe miso",
       "niveau": 1,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "De quel métal est principalement fait l'acier ?",
+      "reponse": "Le fer",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel boxeur se surnommait The Greatest ?",
+      "reponse": "Muhammad Ali",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
+      "reponse": "Bob l'éponge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Contraire de courageux, en cinq lettres ?",
+      "reponse": "Lâche",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel hors-la-loi anglais volait aux riches pour les pauvres ?",
+      "reponse": "Robin des Bois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la peur des hauteurs ?",
+      "reponse": "L'acrophobie",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -113,91 +219,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Sous quelle lettre place-t-on la cédille ?",
-      "reponse": "Le C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle discipline équestre fait franchir au cheval une série de barres sans les faire tomber ?",
-      "reponse": "Le saut d'obstacles",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle centrale nucléaire a explosé en 1986 ?",
-      "reponse": "Tchernobyl",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande hachée garnit le pâté chinois ?",
-      "reponse": "Le bœuf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel hors-la-loi anglais volait aux riches pour les pauvres ?",
-      "reponse": "Robin des Bois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Où emprunte-t-on gratuitement des livres dans son quartier ?",
-      "reponse": "À la bibliothèque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle pharmacie québécoise promet qu'on y trouve de tout, même un ami ?",
-      "reponse": "Jean Coutu",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus grand océan ?",
-      "reponse": "Le Pacifique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le joueur du baseball qui envoie la balle au frappeur ?",
-      "reponse": "Le lanceur",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quelle série espagnole suit des braqueurs en combinaison rouge ?",
-      "reponse": "La casa de papel",
+      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
+      "reponse": "Sol",
       "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel crooner a chanté My Way ?",
-      "reponse": "Frank Sinatra",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
-      "reponse": "Le Banquier",
-      "niveau": 1,
       "ages": [
         "adultes",
         "aines"

@@ -12,6 +12,21 @@
 #   Question|Réponse|niveau|tranches
 #   > Question|Réponse     retouche la question du dessus
 #   - motif                la retire du catalogue
+#
+# LES FAITS ENGAGENT LE JEU. Une question fausse discrédite tout le reste :
+# quelqu'un dans le salon va le savoir. Trois formes ont déjà mordu ici, et
+# chacune venait d'un souvenir que je croyais sûr :
+#   1. Le détail attribué à une entité réelle. Passe-Montagne n'a jamais été
+#      barbu, Bluey n'est pas un beagle, la mésange n'est pas bleue, et c'est
+#      l'opossum, pas la mouffette, qui fait le mort. Ne jamais décrire de
+#      mémoire : demander un nom, une relation, un usage.
+#   2. La donnée périmée. La 720 est devenue la route 136 en 2021, le Salon
+#      du livre a quitté la Place Bonaventure la même année. Une adresse, un
+#      nom de commerce ou un numéro de route se vérifie avant d'être écrit.
+#   3. La date approchée. Cartier atteint le golfe en 1534 et remonte le
+#      fleuve en 1535 : « environ » ne se joue pas au buzzer.
+# Ce qui porte un nom propre, une date, un record ou une mesure se vérifie à
+# l'extérieur. Ce qui ne se vérifie pas ne s'écrit pas.
 Quelle est la capitale nationale du Québec ?|Québec|1|enfants ados adultes aines
 Quel fleuve traverse le Québec ?|Le Saint-Laurent|1|enfants ados adultes aines
 Quelle est la devise du Québec ?|Je me souviens|1|enfants ados adultes aines
@@ -308,7 +323,7 @@ De quelle couleur est le bac de recyclage au Québec ?|Bleu|1|enfants ados adult
 Combien reçoit-on en rapportant une canette consignée ?|Cinq sous|2|enfants ados adultes aines
 Quelle taxe québécoise s'ajoute à la taxe fédérale sur les achats ?|La TVQ|3|ados adultes aines
 Quel numéro compose-t-on au Québec pour joindre un service non urgent de la ville ?|Le 311|3|adultes aines
-Quelle autoroute traverse Montréal d'est en ouest en passant sous le centre-ville ?|La 720|3|adultes aines
+Quel tunnel fait passer l'autoroute sous le centre-ville de Montréal ?|Le tunnel Ville-Marie|3|adultes aines
 Quelle autoroute relie Montréal à Québec sur la rive nord ?|L'autoroute 40|3|ados adultes aines
 Quelle autoroute mène de Montréal vers les Laurentides ?|La 15|3|ados adultes aines
 Quel pont de Montréal illumine ses câbles de couleurs le soir ?|Le pont Jacques-Cartier|2|ados adultes aines
@@ -321,13 +336,13 @@ Comment appelle-t-on celui qui exploite une érablière ?|Un acériculteur|3|ado
 Comment appelle-t-on le réseau de tuyaux qui recueille l'eau d'érable ?|La tubulure|3|ados adultes aines
 Quel poisson moucheté se pêche dans les lacs du Québec ?|La truite|2|enfants ados adultes aines
 Quelle fête de juin invite les gens d'une même rue à se rassembler ?|La fête des voisins|3|adultes aines
-Quelle chaîne de cinémas domine les écrans au Québec ?|Cineplex|2|ados adultes aines
+Quelle chaîne canadienne exploite le plus de salles de cinéma au pays ?|Cineplex|2|ados adultes aines
 Comment appelle-t-on l'emploi temporaire qu'un étudiant occupe l'été ?|Une job d'été|2|ados adultes aines
 Quelle plante grimpante rougit les murs des maisons à l'automne ?|La vigne vierge|3|adultes aines
 Quelle sortie familiale attire les Québécois dans les vergers en septembre ?|L'autocueillette|2|enfants ados adultes aines
 
 Comment appelle-t-on la fin de semaine du 1er juillet où tout le monde déménage ?|Le jour du déménagement|2|ados adultes aines
-Quel grand rendez-vous annuel réunit éditeurs et auteurs à la Place Bonaventure ?|Le Salon du livre|3|ados adultes aines
+Quel grand rendez-vous de novembre réunit éditeurs et auteurs au Palais des congrès de Montréal ?|Le Salon du livre|3|ados adultes aines
 
 
 Quel musée montréalais expose des insectes vivants et naturalisés ?|L'Insectarium|2|enfants ados adultes aines
@@ -360,7 +375,7 @@ Comment appelle-t-on la personne qui surveille la cour d'école à la récréati
 Comment appelle-t-on le relevé de notes remis trois fois par année aux parents ?|Le bulletin|1|enfants ados adultes aines
 Comment appelle-t-on la matière où l'on apprend à compter ?|Les mathématiques|1|enfants ados adultes aines
 Quelle baleine blanche du Saint-Laurent est protégée ?|Le béluga|1|enfants ados adultes aines
-Quel oiseau bleu et blanc est très commun dans les cours du Québec l'hiver ?|La mésange|3|enfants ados adultes aines
+Quel petit oiseau à calotte noire fréquente les mangeoires du Québec tout l'hiver ?|La mésange|3|enfants ados adultes aines
 Quel petit fruit rouge se cueille dans les tourbières du Québec l'automne ?|La canneberge|3|enfants ados adultes aines
 Quelle fête nationale du Québec se célèbre le 24 juin ?|La Saint-Jean|1|enfants ados adultes aines
 Quel grand feu s'allume le soir de la Saint-Jean ?|Un feu de joie|2|enfants ados adultes aines
@@ -383,8 +398,6 @@ Quel parc animalier du Lac-Saint-Jean se visite à bord d'un train grillagé ?|L
 Quel véhicule d'hiver file sur la neige avec des chenilles et des skis ?|Une motoneige|1|enfants ados adultes aines
 Quel petit véhicule tout-terrain se conduit à califourchon dans les sentiers l'été ?|Un quatre-roues|2|enfants ados adultes aines
 Quel gros camion dégage la neige des rues après une tempête ?|Une charrue|1|enfants ados adultes aines
-Quelle fleur bleue à trois pétales est l'emblème floral du Québec ?|L'iris versicolore|3|ados adultes aines
-Quel arbre est l'emblème du Québec ?|Le bouleau jaune|3|ados adultes aines
 De quelle couleur est le fond du drapeau du Québec ?|Bleu|1|enfants ados adultes aines
 Comment appelle-t-on la longue route de campagne bordée de fermes au Québec ?|Un rang|3|enfants ados adultes aines
 Quel grand bâtiment rouge de la ferme abrite les animaux et le foin ?|La grange|1|enfants ados adultes aines
@@ -423,7 +436,6 @@ Dans quoi doit-on installer un jeune enfant avant de démarrer la voiture ?|Un s
 Quel gros oiseau noir et blanc plonge dans les lacs du Québec en poussant un cri plaintif ?|Le huard|3|enfants ados adultes aines
 Quel petit rongeur rayé du Québec remplit ses joues de graines ?|Le suisse|3|enfants ados adultes aines
 Quel oiseau rouge vif est facile à repérer dans la neige ?|Le cardinal|3|enfants ados adultes aines
-Quel animal du Québec fait le mort quand il a peur ?|La mouffette|3|adultes aines
 Quelle plante à trois feuilles brillantes donne des démangeaisons en forêt ?|L'herbe à puce|2|enfants ados adultes aines
 Quel arbre blanc à écorce qui pèle sert à faire les canots d'écorce ?|Le bouleau|2|enfants ados adultes aines
 Quel champignon rouge à pois blancs des contes pousse dans les forêts ?|L'amanite tue-mouches|3|adultes aines

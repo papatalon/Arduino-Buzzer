@@ -7,6 +7,16 @@
   "emoji": "🐾",
   "questions": [
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle exploratrice a un singe nommé Babouche ?",
+      "reponse": "Dora",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
       "categorie": "Bouffe et cuisine",
       "question": "Quel fromage bleu français au lait de brebis est le plus célèbre ?",
       "reponse": "Le roquefort",
@@ -18,10 +28,10 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le trou creusé dans l'asphalte par le gel et le dégel ?",
-      "reponse": "Un nid-de-poule",
-      "niveau": 1
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
+      "reponse": "Une joute",
+      "niveau": 3
     },
     {
       "categorie": "Cinéma et télé",
@@ -30,14 +40,22 @@
       "niveau": 1
     },
     {
+      "categorie": "Québec",
+      "question": "Que colle-t-on dans le dos des gens le 1er avril ?",
+      "reponse": "Un poisson d'avril",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture générale",
-      "question": "Quel dinosaure vert sert de monture à Mario ?",
-      "reponse": "Yoshi",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
+      "question": "Quelle science étudie les animaux ?",
+      "reponse": "La zoologie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal a le cou le plus long ?",
+      "reponse": "La girafe",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -50,28 +68,36 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal a le cou le plus long ?",
-      "reponse": "La girafe",
-      "niveau": 1
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la femelle du singe ?",
+      "reponse": "La guenon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel poisson moucheté se pêche dans les lacs du Québec ?",
-      "reponse": "La truite",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
-      "reponse": "Une joute",
-      "niveau": 3
+      "categorie": "Musique",
+      "question": "Dans Pierre et le loup, quel instrument joue l'oiseau ?",
+      "reponse": "La flûte",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
-      "question": "Quelle science étudie les animaux ?",
-      "reponse": "La zoologie",
-      "niveau": 1
+      "question": "Quel dinosaure vert sert de monture à Mario ?",
+      "reponse": "Yoshi",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -90,32 +116,16 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Dans Pierre et le loup, quel instrument joue l'oiseau ?",
-      "reponse": "La flûte",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du singe ?",
-      "reponse": "La guenon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Géographie",
       "question": "Quel animal est l'emblème des États-Unis ?",
       "reponse": "L'aigle",
       "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine demande si le loup y est pendant qu'il s'habille ?",
+      "reponse": "Promenons-nous dans les bois",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -130,10 +140,16 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle comptine raconte un reptile qui part à la guerre en disant au revoir à ses enfants ?",
-      "reponse": "Ah! les crocodiles",
-      "niveau": 2
+      "categorie": "Mots et langue",
+      "question": "Quel est le pluriel de « un animal » ?",
+      "reponse": "Des animaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal terrestre est le plus lourd ?",
+      "reponse": "L'éléphant",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -147,15 +163,15 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal terrestre est le plus lourd ?",
-      "reponse": "L'éléphant",
+      "categorie": "Cinéma et télé",
+      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
+      "reponse": "Bugs Bunny",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel animal cache des œufs à Pâques ?",
-      "reponse": "Le lapin",
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile change de couleur pour se camoufler ?",
+      "reponse": "Le caméléon",
       "niveau": 1
     },
     {
@@ -170,21 +186,9 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel reptile change de couleur pour se camoufler ?",
-      "reponse": "Le caméléon",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la maison de bois du chien dans la cour ?",
-      "reponse": "Une niche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal servait de moyen de transport principal avant l'automobile ?",
-      "reponse": "Le cheval",
+      "question": "Petit du loup ?",
+      "reponse": "Le louveteau",
       "niveau": 1
     }
   ]

@@ -8,14 +8,34 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on les longs cônes de glace qui pendent des toits ?",
-      "reponse": "Des glaçons",
-      "niveau": 1
+      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
+      "reponse": "Le cardinal",
+      "niveau": 3
     },
     {
       "categorie": "Québec",
-      "question": "Quelle université francophone montréalaise est la plus grande ?",
-      "reponse": "UdeM",
+      "question": "Quelle compagnie de fourrures rivalisait avec la Baie d'Hudson ?",
+      "reponse": "Nord-Ouest",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel chanteur québécois a chanté Deux par deux rassemblés ?",
+      "reponse": "Pierre Lapointe",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel parc national québécois protège des caribous ?",
+      "reponse": "La Gaspésie",
       "niveau": 2,
       "ages": [
         "ados",
@@ -25,42 +45,14 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel mammifère marin blanc remonte le Saguenay ?",
-      "reponse": "Le béluga",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle jeune fille a dansé avec le diable dans la légende ?",
-      "reponse": "Rose Latulippe",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Où dépose-t-on une lettre pour qu'elle parte par la poste ?",
-      "reponse": "Au bureau de poste",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle plante à trois feuilles brillantes donne des démangeaisons en forêt ?",
-      "reponse": "L'herbe à puce",
+      "question": "Quels pneus la loi québécoise impose-t-elle du 1er décembre au 15 mars ?",
+      "reponse": "Les pneus d'hiver",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on celui qui conduit une motoneige sur les sentiers ?",
-      "reponse": "Un motoneigiste",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle route ceinture la péninsule gaspésienne ?",
-      "reponse": "La 132",
+      "question": "Quelle cabane à sucre célèbre appartient à un chef renommé ?",
+      "reponse": "Au Pied de Cochon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -70,14 +62,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle chaîne québécoise sert de la poutine 24 heures ?",
-      "reponse": "La Belle Province",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle soupe jaune est un classique québécois ?",
-      "reponse": "Soupe aux pois",
+      "question": "Quel trophée remporte le champion de la LCF ?",
+      "reponse": "La coupe Grey",
       "niveau": 1,
       "ages": [
         "ados",
@@ -87,31 +73,9 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel village de la Côte-Nord est réputé pour les baleines ?",
-      "reponse": "Tadoussac",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel pâté à la viande mange-t-on dans le temps des fêtes ?",
-      "reponse": "La tourtière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la semaine de congé scolaire du début mars ?",
-      "reponse": "La relâche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle baie nordique québécoise parfume gins et confitures ?",
-      "reponse": "La chicoutai",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle plantation d'érables se visite au printemps ?",
+      "reponse": "Une érablière",
+      "niveau": 2
     },
     {
       "categorie": "Québec",
@@ -126,9 +90,26 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel papillon est l'insecte emblème du Québec ?",
-      "reponse": "L'amiral",
-      "niveau": 3,
+      "question": "Quel appareil lave les vêtements dans le sous-sol ?",
+      "reponse": "La laveuse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle île au milieu du Saint-Laurent est célèbre pour ses produits ?",
+      "reponse": "Île d'Orléans",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel joueur des Canadiens fut surnommé le Démon blond ?",
+      "reponse": "Guy Lafleur",
+      "niveau": 1,
       "ages": [
         "adultes",
         "aines"
@@ -136,26 +117,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Dans quoi doit-on installer un jeune enfant avant de démarrer la voiture ?",
-      "reponse": "Un siège d'auto",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne le vélo ?",
-      "reponse": "Un bicycle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on l'espace sous le toit où s'entassent les vieilles boîtes ?",
-      "reponse": "Le grenier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle carte donne accès aux soins de santé gratuits au Québec ?",
-      "reponse": "La carte soleil",
+      "question": "Quel mot québécois désigne le fait de se tromper complètement ?",
+      "reponse": "Se planter",
       "niveau": 2,
       "ages": [
         "ados",
@@ -165,27 +128,102 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel ancien vélodrome de Montréal abrite des animaux ?",
-      "reponse": "Le Biodôme",
+      "question": "Quelle région québécoise occupe un cratère de météorite ?",
+      "reponse": "Charlevoix",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel grand rendez-vous de novembre réunit éditeurs et auteurs au Palais des congrès de Montréal ?",
+      "reponse": "Le Salon du livre",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel lac immense borde Roberval et Alma ?",
+      "reponse": "Lac Saint-Jean",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on au Québec les boissons gazeuses ?",
-      "reponse": "La liqueur",
+      "question": "Quel dimanche de juin célèbre-t-on les papas ?",
+      "reponse": "La fête des Pères",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on l'herbe coupée et séchée qu'on donne aux vaches l'hiver ?",
-      "reponse": "Le foin",
-      "niveau": 2
+      "question": "Quel gala québécois récompense la télévision ?",
+      "reponse": "Les Gémeaux",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la neige poussée par le vent qui empêche de voir la route ?",
-      "reponse": "La poudrerie",
-      "niveau": 2
+      "question": "Quel jardin montréalais est parmi les plus grands au monde ?",
+      "reponse": "Jardin botanique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle autoroute mène de Montréal vers les Laurentides ?",
+      "reponse": "La 15",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel chanteur des Colocs est une légende ?",
+      "reponse": "Dédé Fortin",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelait-on les traiteurs de fourrures en forêt ?",
+      "reponse": "Coureurs des bois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel surnom anglophone donne-t-on au Stade olympique ?",
+      "reponse": "Le Big O",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel parc national de la Gaspésie s'avance au bout de la péninsule ?",
+      "reponse": "Forillon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

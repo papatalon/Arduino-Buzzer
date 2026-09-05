@@ -8,42 +8,83 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quel animal les Autochtones des plaines chassaient-ils pour se nourrir et se vêtir ?",
-      "reponse": "Le bison",
+      "question": "Quelle ville a été fondée en 1642 sous le nom de Ville-Marie ?",
+      "reponse": "Montréal",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel grand bâtiment de pierre servait à honorer les dieux dans l'Antiquité ?",
-      "reponse": "Un temple",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année le Canada a-t-il adopté son drapeau actuel ?",
-      "reponse": "1965",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel paquebot réputé insubmersible a heurté un iceberg lors de son premier voyage ?",
-      "reponse": "Le Titanic",
+      "question": "Que cherchent les pirates en creusant sur une île déserte ?",
+      "reponse": "Un trésor",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel roi de France a été guillotiné en 1793 ?",
-      "reponse": "Louis XVI",
+      "question": "Quelles jeunes filles furent envoyées peupler la Nouvelle-France ?",
+      "reponse": "Filles du Roy",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel navigateur a traversé l'Atlantique en 1492 et atteint l'Amérique ?",
+      "reponse": "Christophe Colomb",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
+      "reponse": "Une joute",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quelle ville est née la démocratie ?",
+      "reponse": "Athènes",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel calendrier, adopté en 1582, utilisons-nous ?",
+      "reponse": "Le grégorien",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle méthode permet de dater un vestige grâce à un isotope ?",
+      "reponse": "Le carbone 14",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention du 15e siècle a permis de produire des livres en série ?",
+      "reponse": "L'imprimerie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel télescope spatial a été lancé en 1990 ?",
+      "reponse": "Hubble",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "De quoi étaient faits les premiers outils des hommes préhistoriques ?",
+      "reponse": "De pierre",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -58,81 +99,60 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle plateforme les pirates faisaient-ils parcourir aux prisonniers au-dessus de l'eau ?",
-      "reponse": "La planche",
+      "question": "Quel petit navire rapide Christophe Colomb utilisait-il pour ses voyages ?",
+      "reponse": "Une caravelle",
       "niveau": 3
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année a débuté la Révolution française ?",
-      "reponse": "1789",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel astronaute américain a posé le pied sur la Lune le premier ?",
-      "reponse": "Neil Armstrong",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel mathématicien anglais a cassé le code Enigma ?",
-      "reponse": "Alan Turing",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle date redoutaient les informaticiens en 1999 ?",
-      "reponse": "Le 1er janvier 2000",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Dans quelle ville est née la démocratie ?",
-      "reponse": "Athènes",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention permet de parler à quelqu'un qui est loin ?",
-      "reponse": "Le téléphone",
+      "question": "Quel ballon géant à panier et à air chaud a été le premier engin à transporter des humains dans le ciel ?",
+      "reponse": "La montgolfière",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Où se tenaient les courses de chars à Rome ?",
-      "reponse": "Le Circus Maximus",
+      "question": "Quel révolutionnaire russe a fondé l'URSS ?",
+      "reponse": "Lénine",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel astronome a placé le Soleil au centre de l'univers ?",
+      "reponse": "Copernic",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la route commerciale qui reliait la Chine à l'Europe ?",
+      "reponse": "La route de la soie",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel outil de fer servait à abattre les arbres pour défricher la terre ?",
+      "reponse": "La hache",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle construction de béton a coupé une capitale allemande en deux jusqu'en 1989 ?",
+      "reponse": "Le mur de Berlin",
       "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel objet les premiers explorateurs utilisaient-ils pour trouver le nord ?",
-      "reponse": "Une boussole",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle base américaine fut attaquée en décembre 1941 ?",
-      "reponse": "Pearl Harbor",
-      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -152,30 +172,20 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle invention permet de voir des images animées chez soi depuis les années 1950 ?",
-      "reponse": "La télévision",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?",
-      "reponse": "La capitale du royaume",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel vêtement de tissu drapé portaient les citoyens romains ?",
-      "reponse": "Une toge",
+      "question": "Dans quel cercueil décoré déposait-on la momie d'un pharaon ?",
+      "reponse": "Un sarcophage",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle femme pharaon portait une fausse barbe cérémoniale ?",
-      "reponse": "Hatchepsout",
+      "question": "Quels animaux géants ont disparu bien avant l'apparition des humains ?",
+      "reponse": "Les dinosaures",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le marin posté en haut du mât pour surveiller l'horizon ?",
+      "reponse": "La vigie",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -184,37 +194,15 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel engin a emmené les premiers hommes jusqu'à la Lune ?",
-      "reponse": "Une fusée",
-      "niveau": 1
+      "question": "Quelle plateforme les pirates faisaient-ils parcourir aux prisonniers au-dessus de l'eau ?",
+      "reponse": "La planche",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
-      "question": "Quel pont s'est effondré deux fois pendant sa construction, en 1907 et en 1916 ?",
-      "reponse": "Le pont de Québec",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on les rois de l'Égypte ancienne ?",
-      "reponse": "Les pharaons",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle crise de 1962 concernait des missiles ?",
-      "reponse": "Crise de Cuba",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle bataille grecque a donné son nom à une course ?",
+      "reponse": "Marathon",
+      "niveau": 2
     }
   ]
 }

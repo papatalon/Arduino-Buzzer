@@ -7,30 +7,6 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Quel outil de fer servait à abattre les arbres pour défricher la terre ?",
-      "reponse": "La hache",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du canard ?",
-      "reponse": "La cane",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel animal figure sur la pièce de 25 cents canadienne ?",
-      "reponse": "Le caribou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du croissant ?",
-      "reponse": "La France",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture générale",
       "question": "Quelle romancière a créé Hercule Poirot ?",
       "reponse": "Agatha Christie",
@@ -41,9 +17,98 @@
       ]
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
+      "reponse": "Bugs Bunny",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel métal précieux conduit le mieux l'électricité ?",
+      "reponse": "L'argent",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus long fleuve du Canada ?",
+      "reponse": "Le Mackenzie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal fut le premier en orbite ?",
+      "reponse": "La chienne Laïka",
+      "niveau": 2
+    },
+    {
       "categorie": "Musique",
-      "question": "Quel rappeur québécois signe ses chansons d'un mot qui rime avec Zay ?",
-      "reponse": "FouKi",
+      "question": "Quel appareil branche la guitare électrique pour faire sortir le son ?",
+      "reponse": "L'amplificateur",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?",
+      "reponse": "Le Bossu de Notre-Dame",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la peluche dont un enfant ne se sépare jamais ?",
+      "reponse": "Une doudou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quel bâtiment fortifié vivaient les rois et les reines du Moyen Âge ?",
+      "reponse": "Un château",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel symbole lumineux surplombe le mont Royal ?",
+      "reponse": "La croix",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre britannique fumait le cigare pendant la guerre ?",
+      "reponse": "Churchill",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois jaser ?",
+      "reponse": "Bavarder",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
+      "reponse": "Lululemon",
       "niveau": 3,
       "ages": [
         "ados",
@@ -51,14 +116,82 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel appareil photo sortait la photo aussitôt, qu'on agitait pour la révéler ?",
-      "reponse": "Le Polaroid",
+      "categorie": "Sciences et nature",
+      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
+      "reponse": "Une fusée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
+      "reponse": "Le CF Montréal",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
+      "reponse": "Le club sandwich",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel humoriste québécois a créé le personnage de Sol ?",
+      "reponse": "Marc Favreau",
       "niveau": 2,
       "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Langue parlée en Égypte ?",
+      "reponse": "L'arabe",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine raconte un reptile qui part à la guerre en disant au revoir à ses enfants ?",
+      "reponse": "Ah! les crocodiles",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel animal figure sur la pièce de 25 cents canadienne ?",
+      "reponse": "Le caribou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
+      "reponse": "Le kitesurf",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir un chat dans la gorge ?",
+      "reponse": "Être enroué",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle tour de fer domine Paris ?",
+      "reponse": "La tour Eiffel",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -67,114 +200,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel véhicule à moteur a remplacé le cheval sur les routes ?",
-      "reponse": "L'automobile",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle embarcation d'écorce servait aux déplacements en Nouvelle-France ?",
-      "reponse": "Le canot d'écorce",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le signe rond ou ovale posé sur la portée ?",
-      "reponse": "Une note de musique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?",
-      "reponse": "L'écoute en rafale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que veut dire « embarquer » dans une auto, au Québec ?",
-      "reponse": "Monter dedans",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la chouette de Harry Potter ?",
-      "reponse": "Hedwige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien de provinces compte le Canada ?",
-      "reponse": "Dix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec un ballon rond qu'on frappe du pied dans un but ?",
-      "reponse": "Le soccer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la tour de Pise ?",
-      "reponse": "L'Italie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit véhicule tout-terrain se conduit à califourchon dans les sentiers l'été ?",
-      "reponse": "Un quatre-roues",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le père des Simpson ?",
-      "reponse": "Homer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?",
-      "reponse": "La ville de Québec",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel phénomène lumineux accompagne le tonnerre ?",
-      "reponse": "L'éclair",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Que pleut-il sur la patinoire quand un joueur compte trois buts dans le même match ?",
-      "reponse": "Des chapeaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Pluriel de œil ?",
-      "reponse": "Yeux",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat libanais est une purée d'aubergines fumées ?",
-      "reponse": "Baba ganouj",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus petite unité du vivant ?",
-      "reponse": "La cellule",
+      "question": "Quel appareil garde la crème glacée bien dure ?",
+      "reponse": "Le congélateur",
       "niveau": 1
     }
   ]

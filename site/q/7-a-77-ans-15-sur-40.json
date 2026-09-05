@@ -7,119 +7,33 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quel pays vient le champagne ?",
-      "reponse": "La France",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de minutes dure une période de hockey ?",
-      "reponse": "20",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel réseau social publie des photos et des stories, avec un appareil photo comme logo ?",
-      "reponse": "Instagram",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal de la ferme nous donne le lait ?",
-      "reponse": "La vache",
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de commencer ?",
+      "reponse": "Finir",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie poser un lapin ?",
-      "reponse": "Ne pas venir",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Que signifie le mot québécois barrer la porte ?",
+      "reponse": "Verrouiller",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
-      "reponse": "Une sirène",
+      "question": "Quel véhicule tiré par des rennes livre les cadeaux ?",
+      "reponse": "Un traîneau",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Combien d'états composent les États-Unis ?",
-      "reponse": "50",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Dans quelle ville l'aquarium présente-t-il des ours blancs ?",
-      "reponse": "Québec",
+      "categorie": "Musique",
+      "question": "Quelle chanson enfantine parle d'un petit navire qui n'avait jamais navigué ?",
+      "reponse": "Il était un petit navire",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel navigateur italien croyait avoir atteint les Indes en 1492 ?",
-      "reponse": "Christophe Colomb",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à lamelles de bois frappe-t-on avec des maillets ?",
-      "reponse": "Le xylophone",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Que porte-t-on sur le visage pour ne pas être reconnu à l'Halloween ?",
-      "reponse": "Un masque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la personne qui conduit un autobus scolaire ?",
-      "reponse": "Un chauffeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie l'interjection québécoise tiguidou ?",
-      "reponse": "C'est parfait",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Toronto ?",
-      "reponse": "Les Maple Leafs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
-      "reponse": "Bob l'éponge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film Disney de 2013 chante Libérée, délivrée ?",
-      "reponse": "La Reine des neiges",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la série de spectacles qu'un artiste donne de ville en ville ?",
-      "reponse": "Une tournée",
+      "question": "En quel siècle vivons-nous ?",
+      "reponse": "Le 21e siècle",
       "niveau": 1
     },
     {
@@ -134,45 +48,144 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle créature de Tolkien dit mon précieux ?",
-      "reponse": "Gollum",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel aliment blanc, fait de lait, mange-t-on avec des fruits au déjeuner ?",
+      "reponse": "Le yogourt",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson gazeuse brune est née à Atlanta ?",
-      "reponse": "Le Coca-Cola",
+      "question": "Quelle huile méditerranéenne est pressée d'un fruit ?",
+      "reponse": "Huile d'olive",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
+      "reponse": "Le patinage artistique",
       "niveau": 1
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Pluriel de travail ?",
+      "reponse": "Travaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel réseau social publie des photos et des stories, avec un appareil photo comme logo ?",
+      "reponse": "Instagram",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de cartes à collectionner fait évoluer des créatures de poche ?",
+      "reponse": "Pokémon",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
       "categorie": "Géographie",
-      "question": "Quel pays a la feuille d'érable sur son drapeau ?",
-      "reponse": "Le Canada",
+      "question": "Dans quelle province se trouve Montréal ?",
+      "reponse": "Le Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment nomme-t-on un circuit avec les buts remplis ?",
+      "reponse": "Grand chelem",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz de l'air respirons-nous pour vivre ?",
+      "reponse": "L'oxygène",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée suit des chiots sauveteurs ?",
+      "reponse": "Pat' Patrouille",
+      "niveau": 1,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment s'appelait le village iroquois devenu Montréal ?",
+      "reponse": "Hochelaga",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel journaliste est l'identité secrète de Superman ?",
+      "reponse": "Clark Kent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène lumineux colore le ciel polaire ?",
+      "reponse": "Aurore boréale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel biscuit au chocolat cache une guimauve ?",
+      "reponse": "Le Whippet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle note vient juste après le ré ?",
+      "reponse": "Le mi",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne une automobile ?",
-      "reponse": "Un char",
+      "question": "Quel parc d'attractions se trouve à Montréal ?",
+      "reponse": "La Ronde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne borde le Pacifique ?",
+      "reponse": "Colombie-Britannique",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel insecte brille dans la nuit d'été ?",
-      "reponse": "La luciole",
+      "question": "Combien de temps la Terre met-elle à tourner sur elle-même ?",
+      "reponse": "24 heures",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit est l'ingrédient principal du cidre ?",
-      "reponse": "La pomme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel dinosaure a trois cornes sur la tête ?",
-      "reponse": "Le tricératops",
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle la voiture de course des Bagnoles ?",
+      "reponse": "Flash McQueen",
       "niveau": 1
     }
   ]

@@ -8,26 +8,63 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelle femme a reçu deux prix Nobel ?",
-      "reponse": "Marie Curie",
+      "question": "Comment appelle-t-on le bateau viking à proue sculptée ?",
+      "reponse": "Le drakkar",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel bâtiment de bois entouré d'une palissade protégeait les postes de traite ?",
-      "reponse": "Le fort",
-      "niveau": 2
+      "question": "Quel cercle de pierres dressées se dresse dans une plaine anglaise ?",
+      "reponse": "Stonehenge",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le cahier où l'on note ce qui se passe jour après jour ?",
-      "reponse": "Un journal",
+      "question": "Quel gangster régnait sur Chicago ?",
+      "reponse": "Al Capone",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel code de points et de traits date de 1838 ?",
+      "reponse": "Le morse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle muraille célèbre protège la Chine ?",
+      "reponse": "La Grande Muraille",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année les Canadiennes ont-elles voté au fédéral ?",
-      "reponse": "1918",
+      "question": "En quelle année eut lieu la bataille des plaines d'Abraham ?",
+      "reponse": "1759",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle infirmière anglaise a soigné les soldats à la lampe pendant la guerre de Crimée ?",
+      "reponse": "Florence Nightingale",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -36,8 +73,127 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel Trudeau est devenu premier ministre en 2015 ?",
-      "reponse": "Justin Trudeau",
+      "question": "Quel outil de pierre taillée servait à couper et à gratter à la préhistoire ?",
+      "reponse": "Le silex",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel empire d'Amérique a été conquis par Cortés ?",
+      "reponse": "Les Aztèques",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle femme a reçu deux prix Nobel ?",
+      "reponse": "Marie Curie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Autour de quelle table siégeaient les chevaliers d'Arthur ?",
+      "reponse": "La Table ronde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple autochtone a accueilli Jacques Cartier à son arrivée ?",
+      "reponse": "Les Iroquoiens",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quelle région de France a eu lieu le débarquement du 6 juin 1944 ?",
+      "reponse": "La Normandie",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle chaussure ouverte, faite de lanières de cuir, portaient les Romains ?",
+      "reponse": "Une sandale",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle femme pharaon portait une fausse barbe cérémoniale ?",
+      "reponse": "Hatchepsout",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle adolescente a écrit un journal célèbre à Amsterdam ?",
+      "reponse": "Anne Frank",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention permet de voir des images animées chez soi depuis les années 1950 ?",
+      "reponse": "La télévision",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que fabriquaient les hommes préhistoriques en frottant deux pierres ?",
+      "reponse": "Le feu",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle centrale nucléaire a explosé en 1986 ?",
+      "reponse": "Tchernobyl",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel fleuve César a-t-il franchi en disant le sort en est jeté ?",
+      "reponse": "Le Rubicon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel savant a expliqué la gravité en voyant tomber une pomme ?",
+      "reponse": "Newton",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
+      "reponse": "Trudeau",
       "niveau": 1,
       "ages": [
         "ados",
@@ -58,153 +214,14 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel leader pacifiste a libéré l'Inde ?",
-      "reponse": "Gandhi",
+      "question": "Quel peuple a construit le Machu Picchu ?",
+      "reponse": "Les Incas",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande maison fortifiée d'un seigneur, avec ses tours ?",
-      "reponse": "Un château fort",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année les Jeux olympiques ont-ils été reportés d'un an pour la première fois ?",
-      "reponse": "2020",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
-      "reponse": "Traité de Paris",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle construction de béton a coupé une capitale allemande en deux jusqu'en 1989 ?",
-      "reponse": "Le mur de Berlin",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel général romain a été assassiné en -44 ?",
-      "reponse": "Jules César",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la route commerciale qui reliait la Chine à l'Europe ?",
-      "reponse": "La route de la soie",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple de l'Antiquité construisait des pyramides et embaumait ses morts ?",
-      "reponse": "Les Égyptiens",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle organisation internationale, fondée en 1945, a son siège à New York ?",
-      "reponse": "L'ONU",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année le mur de Berlin est-il tombé ?",
-      "reponse": "1989",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel amiral anglais a gagné Trafalgar ?",
-      "reponse": "Nelson",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le chef qui régnait sur tout l'Empire romain ?",
-      "reponse": "Un empereur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel tissu précieux venait de Chine par une longue route caravanière ?",
-      "reponse": "La soie",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle jeune fille a mené les armées françaises en 1429 ?",
-      "reponse": "Jeanne d'Arc",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle bataille de 1759 a fait passer Québec aux mains des Britanniques ?",
-      "reponse": "La bataille des plaines d'Abraham",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle fourrure les Européens recherchaient-ils le plus en Nouvelle-France ?",
-      "reponse": "Le castor",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment s'appelle l'écriture des Égyptiens ?",
-      "reponse": "Les hiéroglyphes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi figure sur les nouvelles pièces de monnaie canadiennes depuis 2023 ?",
-      "reponse": "Charles III",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Pour quelle exposition la tour Eiffel fut-elle construite ?",
-      "reponse": "Expo de 1889",
+      "question": "En quelle année les Canadiennes ont-elles voté au fédéral ?",
+      "reponse": "1918",
       "niveau": 3,
       "ages": [
         "adultes",

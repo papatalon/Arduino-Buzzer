@@ -8,49 +8,27 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Quel roman de Gabrielle Roy se passe à Saint-Henri ?",
-      "reponse": "Bonheur d'occasion",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel personnage de BD de Rabagliati raconte le Québec ?",
-      "reponse": "Paul",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel arbre est l'emblème du Québec ?",
-      "reponse": "Le bouleau jaune",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le congé imprévu que la neige offre aux élèves ?",
-      "reponse": "Une journée de tempête",
+      "question": "Quelle baleine blanche du Saint-Laurent est protégée ?",
+      "reponse": "Le béluga",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle cabane à sucre célèbre appartient à un chef renommé ?",
-      "reponse": "Au Pied de Cochon",
-      "niveau": 2,
+      "question": "Comment appelle-t-on celui qui exploite une érablière ?",
+      "reponse": "Un acériculteur",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Qui a composé la musique de l'hymne O Canada ?",
+      "reponse": "Calixa Lavallée",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     },
@@ -62,30 +40,68 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel comédien incarne Elvis Gratton ?",
-      "reponse": "Julien Poulin",
+      "question": "Quel auteur québécois a écrit Le Matou ?",
+      "reponse": "Yves Beauchemin",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois familier remplace « très froid » ?",
+      "reponse": "Frette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'école qu'un enfant fréquente de la 1re à la 6e année ?",
+      "reponse": "Le primaire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que veut dire l'expression « c'est écœurant », quand c'est un compliment ?",
+      "reponse": "C'est excellent",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Où va-t-on chercher un médicament sur ordonnance ?",
-      "reponse": "À la pharmacie",
+      "question": "Quelle route ceinture la péninsule gaspésienne ?",
+      "reponse": "La 132",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne des chaussures de sport ?",
+      "reponse": "Des espadrilles",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on le mur de neige que la charrue laisse au bout de l'entrée ?",
-      "reponse": "Un banc de neige",
-      "niveau": 2
+      "question": "Quelle chaîne canadienne exploite le plus de salles de cinéma au pays ?",
+      "reponse": "Cineplex",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelle viande fumée est associée à Montréal ?",
-      "reponse": "Le smoked meat",
+      "question": "Dans quel stade le CF Montréal joue-t-il ses matchs ?",
+      "reponse": "Le Stade Saputo",
       "niveau": 1,
       "ages": [
         "ados",
@@ -95,51 +111,37 @@
     },
     {
       "categorie": "Québec",
-      "question": "Qui porte l'uniforme et fait respecter la loi dans la rue ?",
-      "reponse": "La police",
+      "question": "Quel parc animalier du Lac-Saint-Jean se visite à bord d'un train grillagé ?",
+      "reponse": "Le zoo de Saint-Félicien",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel seau de métal se suspend à l'érable pour recueillir l'eau ?",
+      "reponse": "Une chaudière",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
+      "reponse": "L'escalier Casse-Cou",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle date est la Fête nationale du Québec ?",
+      "reponse": "Le 24 juin",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Que veut dire l'expression québécoise « c'est plate » ?",
-      "reponse": "C'est ennuyant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle société d'État produit l'électricité au Québec ?",
-      "reponse": "Hydro-Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel traîneau de bois aux lattes recourbées glisse sur la neige au Québec ?",
-      "reponse": "La traîne sauvage",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel congé tombe le lendemain de la Saint-Sylvestre ?",
-      "reponse": "Le jour de l'An",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne un épi de maïs ?",
-      "reponse": "Un blé d'Inde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel pont relie Montréal à Longueuil ?",
-      "reponse": "Jacques-Cartier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel musée montréalais borde la rue Sherbrooke ouest ?",
-      "reponse": "Beaux-arts",
-      "niveau": 2,
+      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
+      "reponse": "L'autoroute 40",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -148,9 +150,30 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel petit rongeur rayé du Québec remplit ses joues de graines ?",
-      "reponse": "Le suisse",
-      "niveau": 3
+      "question": "Quelle plante à trois feuilles brillantes donne des démangeaisons en forêt ?",
+      "reponse": "L'herbe à puce",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle chanson de Félix Leclerc célèbre une île ?",
+      "reponse": "Le tour de l'île",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle rue étroite du Vieux-Québec est très photographiée ?",
+      "reponse": "Petit-Champlain",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
@@ -165,8 +188,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne l'argent, familièrement ?",
-      "reponse": "Du cash",
+      "question": "Quel mot québécois désigne le fait de flâner sans but ?",
+      "reponse": "Niaiser",
       "niveau": 2,
       "ages": [
         "ados",
@@ -176,39 +199,19 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel gardien des Canadiens a porté le premier masque ?",
-      "reponse": "Jacques Plante",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
+      "question": "Comment appelle-t-on l'étage sous le rez-de-chaussée où l'on range et où l'on joue ?",
+      "reponse": "Le sous-sol",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel cidre québécois est pressé après les gelées ?",
-      "reponse": "Cidre de glace",
-      "niveau": 1,
+      "question": "Quel capitaine des Canadiens a soulevé la coupe en 1993 ?",
+      "reponse": "Guy Carbonneau",
+      "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel humoriste montréalais fait des spectacles bilingues ?",
-      "reponse": "Sugar Sammy",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel secteur riverain de Montréal accueille patinoire, plage et grande roue ?",
-      "reponse": "Le Vieux-Port",
-      "niveau": 2
     }
   ]
 }

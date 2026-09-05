@@ -25,15 +25,15 @@
       "niveau": 2
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelles sont les deux couleurs du zèbre ?",
-      "reponse": "Noir et blanc",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
       "question": "Petit du mouton ?",
       "reponse": "L'agneau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelles sont les deux couleurs du zèbre ?",
+      "reponse": "Noir et blanc",
       "niveau": 1
     },
     {
@@ -49,21 +49,33 @@
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
-      "reponse": "Le cardinal",
-      "niveau": 3
-    },
-    {
       "categorie": "Histoire",
       "question": "Comment appelle-t-on les dessins d'animaux tracés sur les parois des grottes ?",
       "reponse": "Les peintures rupestres",
       "niveau": 3
     },
     {
+      "categorie": "Québec",
+      "question": "Quel petit oiseau à calotte noire fréquente les mangeoires du Québec tout l'hiver ?",
+      "reponse": "La mésange",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte brille dans la nuit d'été ?",
+      "reponse": "La luciole",
+      "niveau": 1
+    },
+    {
       "categorie": "Sciences et nature",
       "question": "Quel animal marin géant souffle un jet d'eau par le dos ?",
       "reponse": "La baleine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du chien ?",
+      "reponse": "L'aboiement",
       "niveau": 1
     },
     {
@@ -80,15 +92,9 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne un petit trou dans l'asphalte après l'hiver ?",
-      "reponse": "Un nid-de-poule",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel oiseau déploie sa queue en éventail coloré pour parader ?",
-      "reponse": "Le paon",
-      "niveau": 2
+      "question": "Quel gros oiseau noir et blanc plonge dans les lacs du Québec en poussant un cri plaintif ?",
+      "reponse": "Le huard",
+      "niveau": 3
     },
     {
       "categorie": "Cinéma et télé",
@@ -99,6 +105,12 @@
         "enfants",
         "ados"
       ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du chien ?",
+      "reponse": "Le chiot",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -114,15 +126,9 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel musée montréalais expose des insectes vivants et naturalisés ?",
-      "reponse": "L'Insectarium",
+      "question": "Quel poisson moucheté se pêche dans les lacs du Québec ?",
+      "reponse": "La truite",
       "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte brille dans la nuit d'été ?",
-      "reponse": "La luciole",
-      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -136,38 +142,27 @@
       ]
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel canard Disney porte un costume marin ?",
+      "reponse": "Donald",
+      "niveau": 1
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Petit du chien ?",
-      "reponse": "Le chiot",
+      "question": "Petit de l'ours ?",
+      "reponse": "L'ourson",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson salé est le plat national du Portugal ?",
-      "reponse": "La morue",
+      "categorie": "Histoire",
+      "question": "Quel général carthaginois a traversé les Alpes à dos d'éléphant ?",
+      "reponse": "Hannibal",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle cabane à sucre célèbre appartient à un chef renommé ?",
-      "reponse": "Au Pied de Cochon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel gros animal d'Afrique passe ses journées dans l'eau, la gueule grande ouverte ?",
-      "reponse": "L'hippopotame",
-      "niveau": 1
     }
   ]
 }

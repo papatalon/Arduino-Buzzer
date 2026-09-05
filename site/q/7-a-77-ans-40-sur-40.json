@@ -8,100 +8,66 @@
   "questions": [
     {
       "categorie": "Mots et langue",
-      "question": "Quel est le féminin de chien ?",
-      "reponse": "Chienne",
+      "question": "Quel est le contraire de dur ?",
+      "reponse": "Mou",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle activité d'été fait dormir sous une tente ?",
-      "reponse": "Le camping",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle famille de super-héros Pixar porte du rouge ?",
-      "reponse": "Les Incroyables",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle émission culte met en scène Popa et Moman ?",
-      "reponse": "La Petite Vie",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel repas se prend le soir au Québec ?",
-      "reponse": "Le souper",
+      "question": "Quel sport pousse un canot avec une pagaie à deux palettes ?",
+      "reponse": "Le kayak",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Dans « Au clair de la lune », à quel ami demande-t-on de prêter sa plume ?",
-      "reponse": "Pierrot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel Argentin a soulevé la Coupe du monde 2022 ?",
-      "reponse": "Lionel Messi",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel mot français est le plus long d'usage courant ?",
-      "reponse": "Anticonstitutionnellement",
+      "question": "Quel style triste est né dans le delta du Mississippi ?",
+      "reponse": "Le blues",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de sens possède l'être humain ?",
-      "reponse": "Cinq",
-      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la maison des fourmis ?",
-      "reponse": "La fourmilière",
+      "question": "Qu'est-ce qui est le plus rapide : le son ou la lumière ?",
+      "reponse": "La lumière",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Sur quelle estrade les artistes se produisent-ils ?",
-      "reponse": "La scène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de points vaut un lancer franc au basketball ?",
-      "reponse": "Un",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de lettres compte l'alphabet français ?",
-      "reponse": "Vingt-six",
+      "categorie": "Histoire",
+      "question": "Quel objet les premiers explorateurs utilisaient-ils pour trouver le nord ?",
+      "reponse": "Une boussole",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville du Québec ?",
-      "reponse": "Montréal",
+      "question": "Capitale de l'Angleterre ?",
+      "reponse": "Londres",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de combat japonais se pratique pieds nus en kimono blanc ?",
+      "reponse": "Le karaté",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat suisse racle du fromage fondu ?",
+      "reponse": "La raclette",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus grosse planète du système solaire ?",
+      "reponse": "Jupiter",
       "niveau": 1
     },
     {
@@ -111,43 +77,26 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume vert en feuilles rendait Popeye très fort ?",
-      "reponse": "L'épinard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Combien de référendums sur la souveraineté a connus le Québec ?",
-      "reponse": "Deux",
+      "categorie": "Sports",
+      "question": "Combien de tournois composent le grand chelem de tennis ?",
+      "reponse": "Quatre",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle petite fenêtre de l'œil laisse entrer la lumière ?",
-      "reponse": "La pupille",
+      "categorie": "Culture pop",
+      "question": "Quel cheval blanc porte une corne unique sur le front ?",
+      "reponse": "Une licorne",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment s'appelle le petit du lion ?",
-      "reponse": "Le lionceau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on une photo qu'on prend de soi-même à bout de bras ?",
-      "reponse": "Un égoportrait (selfie)",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle célèbre soupe française est gratinée ?",
-      "reponse": "Soupe à l'oignon",
+      "question": "Que signifie casser du sucre sur le dos ?",
+      "reponse": "Dire du mal",
       "niveau": 1,
       "ages": [
         "ados",
@@ -157,20 +106,38 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'eau salée qu'on ne peut pas boire ?",
-      "reponse": "L'eau de mer",
+      "question": "Quel océan borde la côte ouest du Canada ?",
+      "reponse": "Le Pacifique",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel gaz expirons-nous ?",
-      "reponse": "Le gaz carbonique",
+      "categorie": "Cinéma et télé",
+      "question": "Quel garçon ne veut jamais grandir ?",
+      "reponse": "Peter Pan",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quels marins portaient un bandeau sur l'œil et cherchaient des trésors ?",
-      "reponse": "Les pirates",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel condiment jaune accompagne le hot-dog ?",
+      "reponse": "La moutarde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson chante-t-on aux anniversaires ?",
+      "reponse": "Bonne fête",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de sens possède l'être humain ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume fait pleurer quand on le coupe ?",
+      "reponse": "L'oignon",
       "niveau": 1
     },
     {
@@ -181,6 +148,41 @@
       "ages": [
         "enfants"
       ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel nouveau pont montréalais a ouvert en 2019 ?",
+      "reponse": "Samuel-De Champlain",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de lettres compte l'alphabet français ?",
+      "reponse": "Vingt-six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle la larve du papillon ?",
+      "reponse": "La chenille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel repas québécois correspond au dîner français ?",
+      "reponse": "Le souper",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne un épi de maïs ?",
+      "reponse": "Un blé d'Inde",
+      "niveau": 1
     }
   ]
 }

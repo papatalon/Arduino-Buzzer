@@ -8,53 +8,32 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Quelle fête du 1er juillet fait déménager les Québécois ?",
-      "reponse": "Jour du déménagement",
+      "question": "Quel traîneau de bois aux lattes recourbées glisse sur la neige au Québec ?",
+      "reponse": "La traîne sauvage",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel petit véhicule tout-terrain se conduit à califourchon dans les sentiers l'été ?",
-      "reponse": "Un quatre-roues",
+      "question": "Quelle péninsule québécoise s'avance dans le golfe ?",
+      "reponse": "La Gaspésie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel zoo québécois est dédié à la faune nordique ?",
+      "reponse": "Saint-Félicien",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel commerce vend des outils, de la peinture et des clous ?",
+      "reponse": "Une quincaillerie",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quel poète a chanté Le P'tit Bonheur ?",
-      "reponse": "Félix Leclerc",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel fromage frais grince sous la dent ?",
-      "reponse": "Fromage en grains",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle chanson de Vigneault sert d'hymne populaire ?",
-      "reponse": "Gens du pays",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment surnomme-t-on la fête du 24 juin ?",
-      "reponse": "La Saint-Jean",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle station de ski domine le fleuve dans Charlevoix ?",
-      "reponse": "Le Massif",
+      "question": "En quelle année Montréal a-t-elle été fondée ?",
+      "reponse": "1642",
       "niveau": 2,
       "ages": [
         "ados",
@@ -64,15 +43,15 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne une petite amie ?",
-      "reponse": "Une blonde",
-      "niveau": 1
+      "question": "Comment appelle-t-on la neige soulevée par le vent qui coupe la visibilité ?",
+      "reponse": "La poudrerie",
+      "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quelle langue parle-t-on au Québec ?",
-      "reponse": "Le français",
-      "niveau": 1
+      "question": "Quel gros oiseau noir et blanc plonge dans les lacs du Québec en poussant un cri plaintif ?",
+      "reponse": "Le huard",
+      "niveau": 3
     },
     {
       "categorie": "Québec",
@@ -87,15 +66,15 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?",
-      "reponse": "Une corde de bois",
-      "niveau": 3
+      "question": "Que veut dire « c'est plate » ?",
+      "reponse": "C'est ennuyant",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle station de ski domine Stoneham et Québec ?",
-      "reponse": "Mont-Sainte-Anne",
-      "niveau": 2,
+      "question": "Quelle équipe de football joue à Montréal ?",
+      "reponse": "Les Alouettes",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -104,31 +83,59 @@
     },
     {
       "categorie": "Québec",
-      "question": "Combien de lignes compte le métro de Montréal ?",
-      "reponse": "Quatre",
+      "question": "Quel mot québécois désigne le manteau et la salopette d'hiver des enfants ?",
+      "reponse": "L'habit de neige",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel zoo québécois est dédié à la faune nordique ?",
-      "reponse": "Saint-Félicien",
+      "question": "Quel bâtiment abrite une patinoire intérieure dans la plupart des villes du Québec ?",
+      "reponse": "Un aréna",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel hockeyeur était surnommé le Rocket ?",
-      "reponse": "Maurice Richard",
-      "niveau": 1,
+      "question": "Quelle est la devise du Québec ?",
+      "reponse": "Je me souviens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel oiseau blanc envahit les champs du Québec au printemps et à l'automne ?",
+      "reponse": "L'oie blanche",
+      "niveau": 3,
       "ages": [
-        "enfants",
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel vêtement long et épais protège du froid de janvier ?",
-      "reponse": "Un manteau d'hiver",
+      "question": "Quelle ville de la Mauricie est à mi-chemin Québec-Montréal ?",
+      "reponse": "Trois-Rivières",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne les gants où les doigts sont ensemble ?",
+      "reponse": "Les mitaines",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle émission satirique anime Jean-René Dufort ?",
+      "reponse": "Infoman",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle est la capitale nationale du Québec ?",
+      "reponse": "Québec",
       "niveau": 1
     },
     {
@@ -139,18 +146,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle fête hivernale illumine le Vieux-Port de Montréal ?",
-      "reponse": "Igloofest",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Combien de ponts mènent à l'île d'Orléans ?",
-      "reponse": "Un seul",
+      "question": "Quelle soupe jaune est un classique québécois ?",
+      "reponse": "Soupe aux pois",
       "niveau": 1,
       "ages": [
         "ados",
@@ -160,8 +157,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle tourte de viandes vient du Lac-Saint-Jean ?",
-      "reponse": "Le cipaille",
+      "question": "Quel mot québécois, emprunté à l'anglais, désigne un embouteillage ?",
+      "reponse": "Le trafic",
       "niveau": 2,
       "ages": [
         "ados",
@@ -171,53 +168,27 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne une soirée où l'on boit entre amis ?",
-      "reponse": "Un 5 à 7",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "De quelle couleur est le fond du drapeau du Québec ?",
+      "reponse": "Bleu",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on une grande école secondaire publique au Québec ?",
-      "reponse": "Une polyvalente",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle salle de Montréal projette le ciel étoilé sur un dôme au-dessus des spectateurs ?",
-      "reponse": "Le Planétarium",
+      "question": "Quel congé du début septembre marque la fin de l'été au Québec ?",
+      "reponse": "La fête du Travail",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quel quartier montréalais a une porte paifang ?",
-      "reponse": "Quartier chinois",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on les bandes blanches où l'on traverse la rue ?",
+      "reponse": "Un passage piéton",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Qui a planté une croix à Gaspé en 1534 ?",
-      "reponse": "Jacques Cartier",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel est le plus grand cervidé du Québec ?",
+      "reponse": "L'orignal",
+      "niveau": 1
     }
   ]
 }

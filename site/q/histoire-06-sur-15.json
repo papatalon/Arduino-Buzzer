@@ -8,8 +8,20 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quel empire d'Amérique a été conquis par Cortés ?",
-      "reponse": "Les Aztèques",
+      "question": "Quelle arme de jet permettait aux chasseurs préhistoriques d'atteindre les bêtes de loin ?",
+      "reponse": "Une lance",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on un corps embaumé et enveloppé de bandelettes ?",
+      "reponse": "Une momie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre canadien a dirigé pendant la Seconde Guerre ?",
+      "reponse": "Mackenzie King",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -18,8 +30,58 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel général carthaginois a traversé les Alpes à dos d'éléphant ?",
-      "reponse": "Hannibal",
+      "question": "Sur quelle plante les Égyptiens écrivaient-ils ?",
+      "reponse": "Le papyrus",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quelle ville se tenaient les Jeux olympiques antiques ?",
+      "reponse": "Olympie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel général français a lancé l'appel du 18 juin 1940 ?",
+      "reponse": "De Gaulle",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que portaient les chevaliers pour protéger leur corps au combat ?",
+      "reponse": "Une armure",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
+      "reponse": "Pizarro",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple a construit Chichén Itzá ?",
+      "reponse": "Les Mayas",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle maladie a confiné la planète entière au printemps 2020 ?",
+      "reponse": "La COVID-19",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel philosophe fut l'élève de Socrate ?",
+      "reponse": "Platon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -29,9 +91,79 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'artisan du village qui forgeait le fer au marteau ?",
-      "reponse": "Un forgeron",
+      "question": "Quel empereur fut couronné à Rome en l'an 800 ?",
+      "reponse": "Charlemagne",
       "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le deuxième homme à marcher sur la Lune ?",
+      "reponse": "Buzz Aldrin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle reine a régné 70 ans sur le Royaume-Uni ?",
+      "reponse": "Elizabeth II",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel rover s'est posé sur Mars en 2012 ?",
+      "reponse": "Curiosity",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel navire insubmersible a coulé en 1912 ?",
+      "reponse": "Le Titanic",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel astronaute canadien a chanté dans l'espace ?",
+      "reponse": "Chris Hadfield",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?",
+      "reponse": "Le sextant",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année a débuté la Première Guerre mondiale ?",
+      "reponse": "1914",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -46,167 +178,43 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel chirurgien a réalisé la première greffe du cœur ?",
-      "reponse": "Christiaan Barnard",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel héros grec avait un talon vulnérable ?",
-      "reponse": "Achille",
+      "question": "Contre quoi le Titanic est-il entré en collision ?",
+      "reponse": "Un iceberg",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle invention ronde a permis de transporter de lourdes charges ?",
-      "reponse": "La roue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le bandit des mers qui attaquait les navires ?",
-      "reponse": "Un pirate",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a atteint le pôle Sud en premier ?",
-      "reponse": "Amundsen",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
-      "reponse": "Expo 67",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel avion supersonique reliait Paris et New York ?",
-      "reponse": "Le Concorde",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel télescope spatial a été lancé en 1990 ?",
-      "reponse": "Hubble",
+      "question": "Quelle statue les Français ont-ils offerte aux Américains en 1886 ?",
+      "reponse": "La statue de la Liberté",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'Égyptien qui savait écrire, un métier rare et respecté ?",
-      "reponse": "Un scribe",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Dans quelle matière les tout premiers outils de l'humanité étaient-ils taillés ?",
-      "reponse": "La pierre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple scandinave naviguait sur des drakkars ?",
-      "reponse": "Les Vikings",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi de France régnait quand la Nouvelle-France s'est développée ?",
-      "reponse": "Louis XIV",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle station spatiale russe a précédé l'ISS ?",
-      "reponse": "Mir",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le pont qui se relève pour fermer l'entrée d'un château ?",
-      "reponse": "Le pont-levis",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel téléphone présenté en 2007 a bouleversé la téléphonie ?",
-      "reponse": "Le iPhone",
+      "question": "Quelle machine allemande codait les messages nazis ?",
+      "reponse": "Enigma",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
-      "reponse": "Pierre de Rosette",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel fleuve César a-t-il franchi en disant le sort en est jeté ?",
-      "reponse": "Le Rubicon",
-      "niveau": 3,
+      "question": "En quelle année le mur de Berlin est-il tombé ?",
+      "reponse": "1989",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Qui fut le premier homme dans l'espace ?",
-      "reponse": "Youri Gagarine",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le guerrier à cheval qui servait son seigneur ?",
-      "reponse": "Un chevalier",
+      "question": "Quel roi figure sur les nouvelles pièces de monnaie canadiennes depuis 2023 ?",
+      "reponse": "Charles III",
       "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel président sud-africain fut libéré en 1990 ?",
-      "reponse": "Nelson Mandela",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention du 15e siècle a permis de produire des livres en série ?",
-      "reponse": "L'imprimerie",
-      "niveau": 2
     }
   ]
 }

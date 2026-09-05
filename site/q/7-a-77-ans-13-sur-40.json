@@ -7,39 +7,56 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel chanteur jamaïcain a popularisé le reggae ?",
-      "reponse": "Bob Marley",
+      "categorie": "Bouffe et cuisine",
+      "question": "Sur quoi dépose-t-on son repas à table ?",
+      "reponse": "Une assiette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel instrument d'écriture contient du graphite ?",
+      "reponse": "Le crayon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de loup ?",
+      "reponse": "Louve",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée japonaise suit Son Goku ?",
+      "reponse": "Dragon Ball",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel bâtiment abrite une patinoire intérieure dans la plupart des villes du Québec ?",
+      "reponse": "Un aréna",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile peut vivre plus de 150 ans ?",
+      "reponse": "La tortue géante",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle mer est si salée qu'on y flotte ?",
+      "reponse": "La mer Morte",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel accent a la forme d'un chapeau ?",
-      "reponse": "Le circonflexe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu consiste à se cacher pendant qu'un joueur compte les yeux fermés ?",
-      "reponse": "La cachette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle amie brillante accompagne Harry et Ron ?",
-      "reponse": "Hermione",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel engin a emmené les premiers hommes jusqu'à la Lune ?",
-      "reponse": "Une fusée",
-      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -52,21 +69,56 @@
       ]
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle la roche fondue sous terre ?",
+      "reponse": "Le magma",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Dans quel objet à anse boit-on un café chaud ?",
+      "reponse": "Une tasse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le spectacle où un artiste chante devant une foule ?",
+      "reponse": "Un concert",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport parle-t-on de peloton ?",
+      "reponse": "Le cyclisme",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la longue plateforme de bois devant la maison, avec sa balançoire ?",
-      "reponse": "La galerie",
+      "question": "Comment appelait-on les traiteurs de fourrures en forêt ?",
+      "reponse": "Coureurs des bois",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un âne toujours triste ?",
-      "reponse": "Bourriquet",
+      "question": "Quelle panthère noire protège Mowgli ?",
+      "reponse": "Bagheera",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation suit un mammouth, un paresseux et un tigre à dents de sabre ?",
-      "reponse": "L'Âge de glace",
+      "question": "Quelle sirène Disney rêve de vivre sur terre ?",
+      "reponse": "Ariel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la fête où les enfants dorment chez un ami ?",
+      "reponse": "Une soirée pyjama",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -75,15 +127,21 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel phénomène lumineux accompagne le tonnerre ?",
-      "reponse": "L'éclair",
+      "categorie": "Mots et langue",
+      "question": "Féminin de duc ?",
+      "reponse": "Duchesse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle arme de bois courbé propulsait des flèches avant les armes à feu ?",
+      "reponse": "Un arc",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Où pêche-t-on la célèbre crevette nordique québécoise ?",
-      "reponse": "À Matane",
+      "question": "Quel champignon de luxe est déterré par des chiens ?",
+      "reponse": "La truffe",
       "niveau": 1,
       "ages": [
         "ados",
@@ -92,15 +150,9 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel animal des Andes crache quand il est fâché ?",
-      "reponse": "Le lama",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la fondue au fromage ?",
-      "reponse": "La Suisse",
+      "categorie": "Mots et langue",
+      "question": "Que signifie être au bout du rouleau ?",
+      "reponse": "Être épuisé",
       "niveau": 1,
       "ages": [
         "ados",
@@ -109,75 +161,37 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel outil de plastique sert à dégager la neige de l'entrée ?",
-      "reponse": "Une pelle",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Dans quoi la chenille se transforme-t-elle ?",
-      "reponse": "La chrysalide",
+      "question": "Quel oiseau noir et blanc de l'Antarctique ne sait pas voler ?",
+      "reponse": "Le manchot",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel instrument d'écriture contient du graphite ?",
-      "reponse": "Le crayon",
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un volant ?",
+      "reponse": "Le badminton",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel grand fleuve traverse l'Amazonie ?",
-      "reponse": "L'Amazone",
+      "question": "Comment appelle-t-on l'énorme masse de glace qui flotte sur la mer ?",
+      "reponse": "Un iceberg",
       "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson des Beatles parle d'un sous-marin ?",
+      "reponse": "Yellow Submarine",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
       "question": "Quel pays a un cercle rouge sur fond blanc ?",
       "reponse": "Le Japon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
-      "reponse": "Orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de fermer ?",
-      "reponse": "Ouvrir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert coloré tremble dans son bol et se prépare avec de la poudre ?",
-      "reponse": "Le Jell-O",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature de la nuit dort dans un cercueil et craint l'ail ?",
-      "reponse": "Un vampire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Sur quel pont danse-t-on tous en rond dans la chanson ?",
-      "reponse": "Le pont d'Avignon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Dans quel organe la nourriture arrive-t-elle une fois avalée ?",
-      "reponse": "L'estomac",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de haut ?",
-      "reponse": "Bas",
       "niveau": 1
     }
   ]

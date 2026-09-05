@@ -8,8 +8,36 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Qui fut la première femme première ministre du Canada ?",
-      "reponse": "Kim Campbell",
+      "question": "Quelle révolution a renversé le tsar en 1917 ?",
+      "reponse": "La révolution russe",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les premiers habitants de l'Amérique, ici avant les Européens ?",
+      "reponse": "Les Autochtones",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle arme se tendait avec une manivelle et tirait un carreau ?",
+      "reponse": "L'arbalète",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle infirmière célèbre soignait pendant la guerre de Crimée ?",
+      "reponse": "Florence Nightingale",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -18,8 +46,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel savant italien a braqué une lunette vers le ciel ?",
-      "reponse": "Galilée",
+      "question": "Quelle crise de 1962 concernait des missiles ?",
+      "reponse": "Crise de Cuba",
       "niveau": 2,
       "ages": [
         "ados",
@@ -29,27 +57,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la très longue période d'avant l'écriture ?",
-      "reponse": "La préhistoire",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel outil de fer servait à abattre les arbres pour défricher la terre ?",
-      "reponse": "La hache",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle arme de jet permettait aux chasseurs préhistoriques d'atteindre les bêtes de loin ?",
-      "reponse": "Une lance",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel premier ministre britannique fumait le cigare pendant la guerre ?",
-      "reponse": "Churchill",
-      "niveau": 2,
+      "question": "Qui était le dernier tsar de Russie ?",
+      "reponse": "Nicolas II",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
@@ -57,25 +67,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle épidémie a ravagé l'Europe au 14e siècle ?",
-      "reponse": "La peste noire",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les grands ponts qui amenaient l'eau jusqu'aux villes romaines ?",
-      "reponse": "Un aqueduc",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a fondé Facebook en 2004 ?",
-      "reponse": "Mark Zuckerberg",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "question": "Quelle invention ronde a permis de transporter de lourdes charges ?",
+      "reponse": "La roue",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -89,26 +83,14 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel oiseau portait les messages avant le télégraphe ?",
-      "reponse": "Le pigeon voyageur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Que fabriquaient les hommes préhistoriques en frottant deux pierres ?",
-      "reponse": "Le feu",
+      "question": "Comment appelle-t-on le combattant qui affrontait des bêtes devant la foule romaine ?",
+      "reponse": "Un gladiateur",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la trace d'un animal préhistorique conservée dans la pierre ?",
-      "reponse": "Un fossile",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle centrale nucléaire a explosé en 1986 ?",
-      "reponse": "Tchernobyl",
+      "question": "Quelle grippe a fait des millions de morts en 1918 ?",
+      "reponse": "Grippe espagnole",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -117,37 +99,30 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel roi anglais a eu six épouses ?",
-      "reponse": "Henri VIII",
+      "question": "Quelle brebis clonée est née en 1996 ?",
+      "reponse": "Dolly",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle invention éclaire une pièce sans flamme depuis la fin du 19e siècle ?",
-      "reponse": "L'ampoule électrique",
+      "question": "Quelle machine de siège lançait des pierres par-dessus les murailles ?",
+      "reponse": "La catapulte",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel savant a découvert le vaccin contre la rage ?",
-      "reponse": "Pasteur",
-      "niveau": 3
+      "question": "Quel ancien téléphone fallait-il tourner avec le doigt pour composer un numéro ?",
+      "reponse": "Le téléphone à cadran",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le bateau viking à proue sculptée ?",
-      "reponse": "Le drakkar",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année eut lieu la bataille de Waterloo ?",
-      "reponse": "1815",
+      "question": "Quel mur antique protégeait l'Angleterre romaine ?",
+      "reponse": "Mur d'Hadrien",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -156,32 +131,43 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Sur quel grand siège le roi s'assoit-il pour recevoir ses sujets ?",
-      "reponse": "Un trône",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention à deux roues se propulse avec des pédales ?",
-      "reponse": "La bicyclette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle machine à vapeur tirait les premiers trains ?",
-      "reponse": "La locomotive",
+      "question": "En quelle année Colomb a-t-il atteint l'Amérique ?",
+      "reponse": "1492",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Dans quelle ville se tenaient les Jeux olympiques antiques ?",
-      "reponse": "Olympie",
+      "question": "Quelle embarcation d'écorce servait aux déplacements en Nouvelle-France ?",
+      "reponse": "Le canot d'écorce",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année eut lieu la bataille des plaines d'Abraham ?",
-      "reponse": "1759",
+      "question": "Qui a remporté la bataille des plaines d'Abraham ?",
+      "reponse": "Les Britanniques",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel engin a emmené les premiers hommes jusqu'à la Lune ?",
+      "reponse": "Une fusée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
+      "reponse": "Expo 67",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle base américaine fut attaquée en décembre 1941 ?",
+      "reponse": "Pearl Harbor",
       "niveau": 2,
       "ages": [
         "ados",
@@ -191,8 +177,45 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel animal servait de moyen de transport principal avant l'automobile ?",
-      "reponse": "Le cheval",
+      "question": "Quel tissu précieux venait de Chine par une longue route caravanière ?",
+      "reponse": "La soie",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre britannique fumait le cigare pendant la guerre ?",
+      "reponse": "Churchill",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel conquérant macédonien atteignit l'Inde ?",
+      "reponse": "Alexandre le Grand",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
+      "reponse": "Pierre de Rosette",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on celui qui garde un troupeau de moutons dans les champs ?",
+      "reponse": "Un berger",
       "niveau": 1
     }
   ]

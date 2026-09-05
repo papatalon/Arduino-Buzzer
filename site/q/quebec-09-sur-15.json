@@ -8,16 +8,197 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on l'école qu'un enfant fréquente de la 1re à la 6e année ?",
-      "reponse": "Le primaire",
+      "question": "Quel pont cantilever centenaire relie Québec et Lévis ?",
+      "reponse": "Le pont de Québec",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne la voiture ?",
+      "reponse": "Un char",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel auteur québécois a écrit Le Matou ?",
-      "reponse": "Yves Beauchemin",
+      "question": "Quel véhicule d'hiver file sur la neige avec des chenilles et des skis ?",
+      "reponse": "Une motoneige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle exposition universelle a eu lieu à Montréal ?",
+      "reponse": "Expo 67",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle station de ski célèbre est dans les Laurentides ?",
+      "reponse": "Tremblant",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Qui appelle-t-on au 911 quand une maison est en feu ?",
+      "reponse": "Les pompiers",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel congé tombe le lendemain de la Saint-Sylvestre ?",
+      "reponse": "Le jour de l'An",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel chanteur québécois a chanté Le Blues du businessman ?",
+      "reponse": "Claude Dubois",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Où dépose-t-on une lettre pour qu'elle parte par la poste ?",
+      "reponse": "Au bureau de poste",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle grosse machine tire la charrue dans les champs ?",
+      "reponse": "Un tracteur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la couche de glace qui se forme au bord des toits ?",
+      "reponse": "Une barrière de glace",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gardien des Canadiens a porté le premier masque ?",
+      "reponse": "Jacques Plante",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gala québécois récompense le cinéma ?",
+      "reponse": "Les Iris",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gros camion épand du sel sur les routes glacées ?",
+      "reponse": "Une saleuse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle ville se proclame capitale mondiale de l'érable ?",
+      "reponse": "Plessisville",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle grande salle montréalaise accueille l'orchestre symphonique et l'opéra ?",
+      "reponse": "La Place des Arts",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?",
+      "reponse": "Une corde de bois",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mont de l'Estrie abrite un observatoire célèbre ?",
+      "reponse": "Le mont Mégantic",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel amphithéâtre de Québec a ouvert ses portes en 2015 ?",
+      "reponse": "Le Centre Vidéotron",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel liquide met-on dans le réservoir de l'auto à la station-service ?",
+      "reponse": "L'essence",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mois de 1970 a connu l'enlèvement de Pierre Laporte ?",
+      "reponse": "Octobre",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'emploi temporaire qu'un étudiant occupe l'été ?",
+      "reponse": "Une job d'été",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel festival d'humour a lieu à Montréal ?",
+      "reponse": "Juste pour rire",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
@@ -34,185 +215,9 @@
     },
     {
       "categorie": "Québec",
-      "question": "Où va-t-on quand on est très malade et qu'il faut être soigné ?",
-      "reponse": "À l'hôpital",
+      "question": "Quel pâté à la viande mange-t-on dans le temps des fêtes ?",
+      "reponse": "La tourtière",
       "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle expression québécoise signifie c'est correct ?",
-      "reponse": "C'est beau",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel jour d'octobre les enfants passent-ils de porte en porte ?",
-      "reponse": "L'Halloween",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle plantation d'érables se visite au printemps ?",
-      "reponse": "Une érablière",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne la voiture ?",
-      "reponse": "Un char",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel chanteur québécois a chanté Le Blues du businessman ?",
-      "reponse": "Claude Dubois",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel grand rendez-vous annuel réunit éditeurs et auteurs à la Place Bonaventure ?",
-      "reponse": "Le Salon du livre",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel film culte parle d'une guerre de balles de neige ?",
-      "reponse": "La Guerre des tuques",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle semaine de congé coupe l'hiver scolaire au début de mars ?",
-      "reponse": "La semaine de relâche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Dans quelle ville l'aquarium présente-t-il des ours blancs ?",
-      "reponse": "Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle bibliothèque nationale ouverte en 2005 se dresse près de Berri-UQAM ?",
-      "reponse": "La Grande Bibliothèque",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle équipe de hockey joue au Centre Bell ?",
-      "reponse": "Les Canadiens",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel film de Denys Arcand a gagné un Oscar ?",
-      "reponse": "Invasions barbares",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel fjord spectaculaire abrite des bélugas ?",
-      "reponse": "Fjord du Saguenay",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la banque coopérative très répandue au Québec ?",
-      "reponse": "La caisse populaire",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel bonnet d'hiver porte un nom bien québécois ?",
-      "reponse": "La tuque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle équipe de football joue à Montréal ?",
-      "reponse": "Les Alouettes",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel congé du début septembre marque la fin de l'été au Québec ?",
-      "reponse": "La fête du Travail",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle tour cylindrique de la ferme conserve la nourriture des vaches ?",
-      "reponse": "Un silo",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle partie de l'église pointe vers le ciel et se voit de loin dans un village ?",
-      "reponse": "Le clocher",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel réalisateur québécois a tourné Dune ?",
-      "reponse": "Denis Villeneuve",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel style musical a son grand festival à Montréal en juillet ?",
-      "reponse": "Le jazz",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

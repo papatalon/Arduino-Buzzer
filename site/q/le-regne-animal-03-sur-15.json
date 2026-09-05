@@ -51,26 +51,21 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du chien ?",
-      "reponse": "L'aboiement",
-      "niveau": 1
+      "categorie": "Cinéma et télé",
+      "question": "Quel duo québécois de dessins animés met en scène un chien et son chat ?",
+      "reponse": "Toupie et Binou",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
       "question": "Quel ami de Winnie l'ourson est un tigre qui bondit sur sa queue ?",
       "reponse": "Tigrou",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat robot bleu vient du futur ?",
-      "reponse": "Doraemon",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
     },
     {
       "categorie": "Culture pop",
@@ -80,6 +75,12 @@
       "ages": [
         "enfants"
       ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment s'appelle le petit du lion ?",
+      "reponse": "Le lionceau",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -99,6 +100,16 @@
       ]
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat robot bleu vient du futur ?",
+      "reponse": "Doraemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
       "categorie": "Musique",
       "question": "Quelle œuvre de Prokofiev raconte un garçon et un loup ?",
       "reponse": "Pierre et le loup",
@@ -108,12 +119,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel petit oiseau jaune échappe toujours au chat Grosminet ?",
-      "reponse": "Titi",
-      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -139,6 +144,12 @@
       "niveau": 1
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel petit oiseau jaune échappe toujours au chat Grosminet ?",
+      "reponse": "Titi",
+      "niveau": 1
+    },
+    {
       "categorie": "Bouffe et cuisine",
       "question": "Quelle forme donne-t-on au poisson pané pour les enfants ?",
       "reponse": "Des bâtonnets",
@@ -148,12 +159,6 @@
       "categorie": "Sciences et nature",
       "question": "Quel gros animal gris d'Afrique porte une corne sur le nez ?",
       "reponse": "Le rhinocéros",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie donner sa langue au chat ?",
-      "reponse": "Renoncer à deviner",
       "niveau": 1
     },
     {
@@ -173,6 +178,12 @@
       "niveau": 1
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Que signifie donner sa langue au chat ?",
+      "reponse": "Renoncer à deviner",
+      "niveau": 1
+    },
+    {
       "categorie": "Histoire",
       "question": "Quelle brebis clonée est née en 1996 ?",
       "reponse": "Dolly",
@@ -187,17 +198,6 @@
       "question": "Quel animal est Abu, l'ami d'Aladin ?",
       "reponse": "Un singe",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel duo québécois de dessins animés met en scène un chien et son chat ?",
-      "reponse": "Toupie et Binou",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
     }
   ]
 }

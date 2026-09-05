@@ -8,8 +8,24 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelle reine britannique a régné pendant presque tout le 19e siècle ?",
-      "reponse": "Victoria",
+      "question": "Qui fut la première femme dans l'espace ?",
+      "reponse": "Valentina Terechkova",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Où Napoléon a-t-il subi sa dernière défaite ?",
+      "reponse": "Waterloo",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel navigateur a donné son prénom à l'Amérique ?",
+      "reponse": "Amerigo Vespucci",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,130 +35,25 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle grande roue de bois tournait au bord de la rivière pour moudre le grain ?",
-      "reponse": "Un moulin à eau",
-      "niveau": 2
+      "question": "Quel savant italien a affirmé que la Terre tourne autour du Soleil ?",
+      "reponse": "Galilée",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le roi de l'Égypte ancienne ?",
-      "reponse": "Un pharaon",
+      "question": "Qui a traversé l'Atlantique en avion solo en 1927 ?",
+      "reponse": "Lindbergh",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les humains qui vivaient dans des grottes ?",
+      "reponse": "Les hommes des cavernes",
       "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel empereur fut couronné à Rome en l'an 800 ?",
-      "reponse": "Charlemagne",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle ville canadienne fut dévastée par une explosion en 1917 ?",
-      "reponse": "Halifax",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel dictateur soviétique a succédé à Lénine ?",
-      "reponse": "Staline",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle grande bibliothèque antique a brûlé ?",
-      "reponse": "Alexandrie",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on les jeunes femmes envoyées de France pour peupler la colonie ?",
-      "reponse": "Les filles du Roy",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle île engloutie Platon a-t-il décrite dans ses textes ?",
-      "reponse": "L'Atlantide",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal fut le premier en orbite ?",
-      "reponse": "La chienne Laïka",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple a construit Chichén Itzá ?",
-      "reponse": "Les Mayas",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel physicien en fauteuil roulant a étudié les trous noirs ?",
-      "reponse": "Stephen Hawking",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel astronome a placé le Soleil au centre de l'univers ?",
-      "reponse": "Copernic",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'écriture des Vikings, gravée dans la pierre ?",
-      "reponse": "Les runes",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel empereur romain aurait incendié Rome ?",
-      "reponse": "Néron",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Histoire",
@@ -157,9 +68,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
-      "reponse": "Trudeau",
-      "niveau": 1,
+      "question": "En quelle année a pris fin la Seconde Guerre mondiale ?",
+      "reponse": "1945",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -168,8 +79,68 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel explorateur vénitien a décrit la Chine ?",
-      "reponse": "Marco Polo",
+      "question": "Quel physicien en fauteuil roulant a étudié les trous noirs ?",
+      "reponse": "Stephen Hawking",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle princesse anglaise est morte à Paris en 1997 ?",
+      "reponse": "Diana",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel grand bâtiment de pierre servait à honorer les dieux dans l'Antiquité ?",
+      "reponse": "Un temple",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?",
+      "reponse": "La capitale du royaume",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel général romain a été assassiné en -44 ?",
+      "reponse": "Jules César",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle arme de bois courbé propulsait des flèches avant les armes à feu ?",
+      "reponse": "Un arc",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quels deux blocs s'opposaient durant la guerre froide ?",
+      "reponse": "USA et URSS",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle roue à aubes servait à moudre le grain au bord d'une rivière ?",
+      "reponse": "Le moulin à eau",
       "niveau": 2
     },
     {
@@ -184,15 +155,15 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la personne dont le métier est d'étudier le passé ?",
-      "reponse": "Un historien",
+      "question": "Comment appelle-t-on le bandit des mers qui attaquait les navires ?",
+      "reponse": "Un pirate",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel appareil envoyait des messages en points et en traits sur des fils ?",
-      "reponse": "Le télégraphe",
-      "niveau": 3
+      "question": "Quelle cité grecque était célèbre pour ses guerriers ?",
+      "reponse": "Sparte",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
@@ -202,20 +173,31 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on celui qui fabrique des objets à la main dans son atelier ?",
-      "reponse": "Un artisan",
+      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
+      "reponse": "Traité de Paris",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelait-on les soldats montés à cheval dans les armées d'autrefois ?",
+      "reponse": "La cavalerie",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'échange de fourrures contre des marchandises européennes ?",
-      "reponse": "La traite des fourrures",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel général français s'est couronné empereur en 1804 ?",
+      "reponse": "Napoléon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel héros grec avait un talon vulnérable ?",
+      "reponse": "Achille",
+      "niveau": 1
     }
   ]
 }

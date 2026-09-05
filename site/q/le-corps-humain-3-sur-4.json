@@ -7,45 +7,59 @@
   "emoji": "🧠",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
-      "reponse": "Le parchemin",
-      "niveau": 3
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quel muscle bat sans jamais se reposer ?",
-      "reponse": "Le cœur",
+      "question": "Quels os protègent les poumons ?",
+      "reponse": "Les côtes",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel organe contrôle tout le corps ?",
-      "reponse": "Le cerveau",
-      "niveau": 1
+      "question": "Combien d'os dans le squelette humain adulte ?",
+      "reponse": "206",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
-      "question": "Qui laisse de l'argent sous l'oreiller en échange d'une dent ?",
-      "reponse": "La fée des dents",
+      "question": "Quel appareil se sangle sur les yeux pour se retrouver dans un monde en trois dimensions ?",
+      "reponse": "Un casque VR",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle petite fenêtre de l'œil laisse entrer la lumière ?",
+      "reponse": "La pupille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gala québécois récompense le cinéma ?",
+      "reponse": "Les Iris",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle vitamine trouve-t-on dans les oranges ?",
+      "reponse": "La vitamine C",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle partie de la cellule contient l'ADN ?",
-      "reponse": "Le noyau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage viendrait jeter du sable dans les yeux des enfants le soir ?",
-      "reponse": "Le marchand de sable",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de chromosomes possède l'humain ?",
-      "reponse": "46",
+      "question": "Quel liquide produit par le foie digère les graisses ?",
+      "reponse": "La bile",
       "niveau": 2,
       "ages": [
         "ados",
@@ -60,48 +74,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Où se trouve le plus petit os du corps ?",
-      "reponse": "Dans l'oreille",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film d'animation un mammouth, un paresseux et un tigre à dents de sabre voyagent-ils ensemble ?",
-      "reponse": "L'Ère de glace",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel panneau rouge à huit côtés oblige l'auto à s'immobiliser ?",
-      "reponse": "Un arrêt",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de litres de sang contient un adulte ?",
-      "reponse": "Cinq",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle petite fenêtre de l'œil laisse entrer la lumière ?",
-      "reponse": "La pupille",
+      "categorie": "Culture générale",
+      "question": "Quel géant mythologique n'a qu'un seul œil ?",
+      "reponse": "Le cyclope",
       "niveau": 1
     },
     {
@@ -115,66 +90,95 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on la peau rugueuse qui recouvre le tronc ?",
-      "reponse": "L'écorce",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle est la fleur emblème du Québec ?",
-      "reponse": "Iris versicolore",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel organe pompe le sang ?",
-      "reponse": "Le cœur",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
+      "reponse": "Le fromage en grains",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir les yeux dans la graisse de bines ?",
-      "reponse": "Être dans la lune",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sciences et nature",
+      "question": "Quelles cellules du sang combattent les infections ?",
+      "reponse": "Globules blancs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
+      "reponse": "Le parchemin",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de sens possède l'être humain ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie de la cellule contient l'ADN ?",
+      "reponse": "Le noyau",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quels bonbons mous et colorés collent aux dents ?",
-      "reponse": "Les jujubes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument se frappe avec deux baguettes sur une peau tendue ?",
-      "reponse": "Le tambour",
+      "question": "Quel ustensile à quatre dents pique les aliments ?",
+      "reponse": "La fourchette",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est l'os le plus long du corps humain ?",
-      "reponse": "Le fémur",
+      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
+      "reponse": "Les branchies",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quels marins portaient un bandeau sur l'œil et cherchaient des trésors ?",
+      "reponse": "Les pirates",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui se contracte pour faire bouger les os ?",
-      "reponse": "Les muscles",
-      "niveau": 2
+      "question": "Quelle lumière invisible bronze la peau ?",
+      "reponse": "Les ultraviolets",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat botté a de grands yeux attendrissants ?",
-      "reponse": "Chat Potté",
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la température du corps humain en santé ?",
+      "reponse": "37 degrés C",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de dents possède un adulte en général ?",
+      "reponse": "32",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle articulation plie le bras en son milieu ?",
+      "reponse": "Le coude",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
+      "reponse": "Dans l'œil du dragon",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
     }
   ]
 }

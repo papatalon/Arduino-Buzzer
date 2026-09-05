@@ -7,9 +7,9 @@
   "emoji": "🐾",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal roux au museau pointu passe pour rusé dans les fables ?",
-      "reponse": "Le renard",
+      "categorie": "Québec",
+      "question": "Quel grand bâtiment rouge de la ferme abrite les animaux et le foin ?",
+      "reponse": "La grange",
       "niveau": 1
     },
     {
@@ -40,9 +40,38 @@
       ]
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal roux au museau pointu passe pour rusé dans les fables ?",
+      "reponse": "Le renard",
+      "niveau": 1
+    },
+    {
       "categorie": "Mots et langue",
       "question": "Féminin de tigre ?",
       "reponse": "Tigresse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle expression du Roi Lion signifie « sans souci » en swahili ?",
+      "reponse": "Hakuna Matata",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel oiseau de l'étang fait « coin-coin » ?",
+      "reponse": "Le canard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du cheval ?",
+      "reponse": "Le poulain",
       "niveau": 1
     },
     {
@@ -52,16 +81,16 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle comptine ajoute un éléphant de plus sur une toile d'araignée ?",
-      "reponse": "Un éléphant qui se balançait",
-      "niveau": 1
-    },
-    {
       "categorie": "Géographie",
       "question": "Quel pays a pour emblème le coq ?",
       "reponse": "La France",
       "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine raconte un reptile qui part à la guerre en disant au revoir à ses enfants ?",
+      "reponse": "Ah! les crocodiles",
+      "niveau": 2
     },
     {
       "categorie": "Culture pop",
@@ -81,26 +110,9 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel gros oiseau noir et blanc plonge dans les lacs du Québec en poussant un cri plaintif ?",
-      "reponse": "Le huard",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson du crabe Sébastien vante la vie sous les vagues ?",
-      "reponse": "Sous l'océan",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du cheval ?",
-      "reponse": "Le poulain",
-      "niveau": 1
+      "question": "Quel mot québécois désigne un petit trou dans l'asphalte après l'hiver ?",
+      "reponse": "Un nid-de-poule",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
@@ -116,31 +128,29 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Dans quel film d'animation un lion, une girafe, un zèbre et un hippopotame s'échappent-ils d'un zoo de New York ?",
-      "reponse": "Madagascar",
+      "question": "Quel gros chien rouge de livres pour enfants est devenu un film ?",
+      "reponse": "Clifford",
       "niveau": 1,
       "ages": [
-        "enfants",
-        "ados",
-        "adultes"
+        "enfants"
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel oiseau de l'étang fait « coin-coin » ?",
-      "reponse": "Le canard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mammifère marin blanc remonte le Saguenay ?",
-      "reponse": "Le béluga",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Que signifie être rusé comme un renard ?",
-      "reponse": "Être très malin",
+      "question": "Que signifie manger comme un cochon ?",
+      "reponse": "Manger salement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays vivent les kangourous ?",
+      "reponse": "L'Australie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle statue égyptienne a un corps de lion ?",
+      "reponse": "Le Sphinx",
       "niveau": 1
     },
     {
@@ -150,33 +160,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle chienne bleue australienne joue avec sa sœur Bingo dans une série ?",
-      "reponse": "Bluey",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel gros chien rouge de livres pour enfants est devenu un film ?",
-      "reponse": "Clifford",
-      "niveau": 1,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
       "categorie": "Québec",
-      "question": "Quel papillon est l'insecte emblème du Québec ?",
-      "reponse": "L'amiral",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel mammifère marin blanc remonte le Saguenay ?",
+      "reponse": "Le béluga",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",

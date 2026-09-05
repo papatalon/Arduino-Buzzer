@@ -7,21 +7,63 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Quel monument de pierre à quatre faces triangulaires abritait un tombeau égyptien ?",
-      "reponse": "Une pyramide",
+      "categorie": "Québec",
+      "question": "Quelle société d'État produit l'électricité au Québec ?",
+      "reponse": "Hydro-Québec",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelles sont les deux couleurs du zèbre ?",
-      "reponse": "Noir et blanc",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'absence de son ?",
+      "reponse": "Le silence",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert italien contient du café et du mascarpone ?",
-      "reponse": "Le tiramisu",
+      "question": "Quelle chaîne canadienne vend du café, des beignes et des Timbits ?",
+      "reponse": "Tim Hortons",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle médaille récompense la troisième place ?",
+      "reponse": "Le bronze",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel cerceau fait-on tourner autour de la taille ?",
+      "reponse": "Le hula hoop",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit rond porte le nom de sa couleur ?",
+      "reponse": "L'orange",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une des sept grandes masses de terre du globe ?",
+      "reponse": "Un continent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle langue parle-t-on au Québec ?",
+      "reponse": "Le français",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Pluriel de madame ?",
+      "reponse": "Mesdames",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quelle est la deuxième lettre de l'alphabet grec ?",
+      "reponse": "Bêta",
       "niveau": 1,
       "ages": [
         "ados",
@@ -31,50 +73,32 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jouet de plastique danois s'assemble par petits picots ?",
-      "reponse": "Le Lego",
+      "question": "Quel gros véhicule jaune ramasse les enfants le matin ?",
+      "reponse": "L'autobus scolaire",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le chemin de terre battue dans le bois ?",
-      "reponse": "Un sentier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël raconte un renne moqué pour son nez lumineux ?",
-      "reponse": "Le petit renne au nez rouge",
+      "question": "Quelle étendue d'eau salée immense sépare les continents ?",
+      "reponse": "L'océan",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel coyote n'arrive jamais à attraper Bip Bip ?",
-      "reponse": "Vil Coyote",
+      "question": "Quel ogre vert a une femme nommée Fiona ?",
+      "reponse": "Shrek",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir le cœur sur la main ?",
-      "reponse": "Être généreux",
+      "categorie": "Histoire",
+      "question": "Que dessinaient les hommes préhistoriques sur les murs des grottes ?",
+      "reponse": "Des animaux",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Dans quel film Pixar un rat devient-il chef cuisinier à Paris ?",
-      "reponse": "Ratatouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on au Québec la neige mouillée et boueuse du printemps ?",
-      "reponse": "La slush",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans « 1, 2, 3, nous irons au bois », que va-t-on cueillir ?",
-      "reponse": "Des cerises",
+      "question": "Quel dragon noir accompagne Harold ?",
+      "reponse": "Krokmou",
       "niveau": 1
     },
     {
@@ -84,26 +108,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport combine natation, vélo et course ?",
-      "reponse": "Le triathlon",
+      "categorie": "Musique",
+      "question": "Quel instrument à soufflet et à touches anime les fêtes de famille ?",
+      "reponse": "L'accordéon",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du pad thaï ?",
-      "reponse": "La Thaïlande",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel animal est Tony, la mascotte des céréales Frosted Flakes ?",
-      "reponse": "Un tigre",
+      "categorie": "Culture pop",
+      "question": "Quelle pâte gluante et étirable se fabrique à la maison avec de la colle ?",
+      "reponse": "La slime",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -112,44 +125,15 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Combien de lignes compte le métro de Montréal ?",
-      "reponse": "Quatre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Qui a développé la théorie de la relativité ?",
-      "reponse": "Einstein",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport surfe sur la neige ?",
-      "reponse": "La planche à neige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Que met-on sur le dos pour transporter ses cahiers à l'école ?",
-      "reponse": "Un sac à dos",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel signe de ponctuation sépare deux idées dans une phrase ?",
-      "reponse": "La virgule",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quel est le matricule de James Bond ?",
-      "reponse": "007",
+      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
+      "reponse": "Caillou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Dans quel pays grille-t-on soi-même sa viande sur un gril au centre de la table ?",
+      "reponse": "La Corée",
       "niveau": 1,
       "ages": [
         "ados",
@@ -164,21 +148,27 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne parle surtout français ?",
-      "reponse": "Le Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Pluriel de journal ?",
-      "reponse": "Journaux",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal produit les œufs qu'on mange au déjeuner ?",
+      "reponse": "La poule",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Dans quoi faut-il envoyer la rondelle pour compter ?",
-      "reponse": "Le filet",
+      "question": "Quelle embarcation étroite se dirige avec une pagaie à deux pales ?",
+      "reponse": "Le kayak",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on le médecin des animaux ?",
+      "reponse": "Le vétérinaire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "De quoi sont faits les nuages ?",
+      "reponse": "Gouttelettes d'eau",
       "niveau": 1
     }
   ]

@@ -7,6 +7,111 @@
   "emoji": "🎲",
   "questions": [
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ogre vert a une femme nommée Fiona ?",
+      "reponse": "Shrek",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quelle est la première personne du pluriel ?",
+      "reponse": "Nous",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle fillette en cape rouge apporte une galette à sa grand-mère ?",
+      "reponse": "Le Petit Chaperon rouge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle percussion ronde a des cymbalettes ?",
+      "reponse": "Le tambourin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Égypte ?",
+      "reponse": "Le Caire",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel astre traverse le ciel en traînant une longue queue lumineuse ?",
+      "reponse": "Une comète",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle boisson pour sportifs a un éclair dans son logo ?",
+      "reponse": "Le Gatorade",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel tournoi du grand chelem se joue à New York ?",
+      "reponse": "Le US Open",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat québécois cuit des haricots blancs au four ?",
+      "reponse": "Fèves au lard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Qui a fondé la ville de Québec en 1608 ?",
+      "reponse": "Champlain",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui dirige une chorale ?",
+      "reponse": "Un chef de chœur",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle boisson chaude sucrée réchauffe après une glissade en traîneau ?",
+      "reponse": "Un chocolat chaud",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel officiel siffle les punitions ?",
+      "reponse": "L'arbitre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boule de pâte frite est saupoudrée de sucre ?",
+      "reponse": "Le beigne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne une fête ?",
+      "reponse": "Un party",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture générale",
       "question": "Quel métal est liquide à température ambiante ?",
       "reponse": "Le mercure",
@@ -18,59 +123,44 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle reine britannique a régné pendant presque tout le 19e siècle ?",
-      "reponse": "Victoria",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte jaune tirée de la crème se tartine sur le pain ?",
-      "reponse": "Le beurre",
+      "categorie": "Sciences et nature",
+      "question": "Quel minuscule oiseau peut voler en arrière ?",
+      "reponse": "Le colibri",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel outil racle la neige des pare-brise ?",
-      "reponse": "Un gratteux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel gardien détient le record de victoires en carrière ?",
-      "reponse": "Martin Brodeur",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse de la Barbade a chanté Umbrella ?",
-      "reponse": "Rihanna",
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve l'Acropole ?",
+      "reponse": "La Grèce",
       "niveau": 1,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie avoir un chat dans la gorge ?",
-      "reponse": "Être enroué",
+      "question": "Quel est le cri du chat ?",
+      "reponse": "Le miaulement",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel accessoire redonne de l'énergie à un téléphone à plat ?",
-      "reponse": "Un chargeur",
-      "niveau": 1
+      "categorie": "Québec",
+      "question": "Quel repas de fête se prend après la messe de minuit ?",
+      "reponse": "Le réveillon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle date exacte est le jour J ?",
+      "reponse": "Le 6 juin 1944",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -79,123 +169,22 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Féminin de acteur ?",
-      "reponse": "Actrice",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle percussion se joue à mains nues sur deux petits tambours accolés ?",
-      "reponse": "Les bongos",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du chat ?",
-      "reponse": "Le chaton",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quelle reine a des pouvoirs de glace chez Disney ?",
-      "reponse": "Elsa",
+      "question": "Quelle journaliste aime Clark Kent ?",
+      "reponse": "Lois Lane",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel bonhomme de biscuit court dans les contes ?",
+      "reponse": "Pain d'épice",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quels frères ont inventé le cinématographe ?",
-      "reponse": "Les frères Lumière",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage au chapeau pointu vole sur un balai ?",
-      "reponse": "Une sorcière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel gâteau roulé imite un morceau de bois à Noël ?",
-      "reponse": "Bûche de Noël",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Qui a créé le tableau périodique ?",
-      "reponse": "Mendeleïev",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel thé japonais en poudre est vert vif ?",
-      "reponse": "Le matcha",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel clown est l'ennemi juré de Batman ?",
-      "reponse": "Le Joker",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage viendrait jeter du sable dans les yeux des enfants le soir ?",
-      "reponse": "Le marchand de sable",
+      "question": "Quel peuple a construit Chichén Itzá ?",
+      "reponse": "Les Mayas",
       "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la ville de Venise et ses canaux ?",
-      "reponse": "L'Italie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Que porte-t-on pour se baigner ?",
-      "reponse": "Un maillot de bain",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?",
-      "reponse": "L'arc-en-ciel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fête de juin invite les gens d'une même rue à se rassembler ?",
-      "reponse": "La fête des voisins",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée en Égypte ?",
-      "reponse": "L'arabe",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

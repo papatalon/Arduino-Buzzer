@@ -7,14 +7,10 @@
   "emoji": "🐾",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quel animal du Québec fait le mort quand il a peur ?",
-      "reponse": "La mouffette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Culture générale",
+      "question": "Dans quel conte un oisillon rejeté par les siens devient un magnifique cygne ?",
+      "reponse": "Le vilain petit canard",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -23,27 +19,38 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le lionceau du Roi Lion ?",
-      "reponse": "Simba",
+      "categorie": "Sports",
+      "question": "Quel style de nage porte le nom d'un insecte ?",
+      "reponse": "Le papillon",
       "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on un groupe d'abeilles qui se déplace en nuage ?",
+      "reponse": "Un essaim",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri de la grenouille ?",
+      "reponse": "Le coassement",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
+      "reponse": "Le cardinal",
+      "niveau": 3
     },
     {
       "categorie": "Culture générale",
       "question": "Quel cheval mythologique a des ailes ?",
       "reponse": "Pégase",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie être malade comme un chien ?",
-      "reponse": "Être très malade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel style de nage porte le nom d'un insecte ?",
-      "reponse": "Le papillon",
       "niveau": 1
     },
     {
@@ -64,17 +71,6 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri de la grenouille ?",
-      "reponse": "Le coassement",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
       "question": "Quel mot québécois remplace « chat » pour une conversation écrite en ligne ?",
       "reponse": "Le clavardage",
@@ -84,6 +80,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel disque de plastique lance-t-on à un ami ou à un chien au parc ?",
+      "reponse": "Le frisbee",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -107,12 +109,6 @@
       "categorie": "Sciences et nature",
       "question": "Quel cousin rayé du cheval vit en Afrique ?",
       "reponse": "Le zèbre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel disque de plastique lance-t-on à un ami ou à un chien au parc ?",
-      "reponse": "Le frisbee",
       "niveau": 1
     },
     {

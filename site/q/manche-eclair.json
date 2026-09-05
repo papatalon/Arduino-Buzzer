@@ -7,14 +7,39 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
-      "reponse": "Sol",
+      "categorie": "Musique",
+      "question": "Quel chant patriotique ouvre les matchs de hockey au Canada ?",
+      "reponse": "L'hymne national",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle baleine blanche du Saint-Laurent est protégée ?",
+      "reponse": "Le béluga",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle mascotte orange et poilue est passée des Expos aux Canadiens ?",
+      "reponse": "Youppi",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes traverse l'ouest canadien ?",
+      "reponse": "Les Rocheuses",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
+      "reponse": "Le surf",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -28,9 +53,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel chanteur écossais a chanté Someone You Loved ?",
-      "reponse": "Lewis Capaldi",
+      "categorie": "Histoire",
+      "question": "Quelle méthode permet de dater un vestige grâce à un isotope ?",
+      "reponse": "Le carbone 14",
       "niveau": 3,
       "ages": [
         "ados",
@@ -38,63 +63,27 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
-      "reponse": "L'escalier Casse-Cou",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Mots et langue",
+      "question": "Complétez : les chaussettes de l'archiduchesse sont-elles...",
+      "reponse": "Sèches archi-sèches",
+      "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
-      "reponse": "Challenger",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel aliment ovale pondu par la poule mange-t-on brouillé ?",
+      "reponse": "L'œuf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le cinéma de l'Inde ?",
+      "reponse": "Bollywood",
       "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur de hockey est surnommé La Merveille ?",
-      "reponse": "Wayne Gretzky",
-      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume blanc en bouquets ressemble à un brocoli pâle ?",
-      "reponse": "Le chou-fleur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles toupies de plastique s'affrontent dans une arène en criant leur nom ?",
-      "reponse": "Les Beyblade",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Citez un palindrome de cinq lettres qui flotte.",
-      "reponse": "Kayak",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on une langue de terre qui s'avance dans la mer ?",
-      "reponse": "Une péninsule",
-      "niveau": 3
     }
   ]
 }

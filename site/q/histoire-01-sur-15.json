@@ -8,32 +8,36 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quel outil de bois et de fer les paysans utilisaient-ils pour retourner la terre ?",
-      "reponse": "La charrue",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels Jeux Montréal a-t-elle accueillis en 1976 ?",
-      "reponse": "Les Jeux olympiques",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel navigateur a mené la première expédition autour du monde ?",
-      "reponse": "Magellan",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on celui qui garde un troupeau de moutons dans les champs ?",
-      "reponse": "Un berger",
+      "question": "Quel paquebot réputé insubmersible a heurté un iceberg lors de son premier voyage ?",
+      "reponse": "Le Titanic",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel drapeau les astronautes ont-ils planté sur la Lune en 1969 ?",
-      "reponse": "Le drapeau américain",
+      "question": "Comment appelle-t-on le roi de l'Égypte ancienne ?",
+      "reponse": "Un pharaon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel bâtiment de bois entouré d'une palissade protégeait les postes de traite ?",
+      "reponse": "Le fort",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut la première femme première ministre du Canada ?",
+      "reponse": "Kim Campbell",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelait-on les jeunes femmes envoyées de France pour peupler la colonie ?",
+      "reponse": "Les filles du Roy",
       "niveau": 3,
       "ages": [
         "ados",
@@ -43,115 +47,14 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel premier ministre a rapatrié la Constitution en 1982 ?",
-      "reponse": "Pierre E. Trudeau",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels frères ont inventé le cinématographe ?",
-      "reponse": "Les frères Lumière",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle statue les Français ont-ils offerte aux Américains en 1886 ?",
-      "reponse": "La statue de la Liberté",
+      "question": "Quelle cité antique a été détruite par le Vésuve ?",
+      "reponse": "Pompéi",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Dans quel cercueil décoré déposait-on la momie d'un pharaon ?",
-      "reponse": "Un sarcophage",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle roue à aubes servait à moudre le grain au bord d'une rivière ?",
-      "reponse": "Le moulin à eau",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle armée de statues garde le tombeau du premier empereur chinois ?",
-      "reponse": "L'armée de terre cuite",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Que cherchent les pirates en creusant sur une île déserte ?",
-      "reponse": "Un trésor",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle fleur rouge porte-t-on en novembre en souvenir des soldats ?",
-      "reponse": "Le coquelicot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelles sondes jumelles ont été lancées en 1977 ?",
-      "reponse": "Voyager",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel rover s'est posé sur Mars en 2012 ?",
-      "reponse": "Curiosity",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel ballon géant à panier et à air chaud a été le premier engin à transporter des humains dans le ciel ?",
-      "reponse": "La montgolfière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel général français a lancé l'appel du 18 juin 1940 ?",
-      "reponse": "De Gaulle",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel canal relie la Méditerranée à la mer Rouge ?",
-      "reponse": "Suez",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel amuseur en habit à grelots faisait rire le roi ?",
-      "reponse": "Un bouffon",
+      "question": "Comment appelle-t-on l'artisan du village qui forgeait le fer au marteau ?",
+      "reponse": "Un forgeron",
       "niveau": 2
     },
     {
@@ -166,8 +69,128 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Qui fut la première femme dans l'espace ?",
-      "reponse": "Valentina Terechkova",
+      "question": "En quelle année le drapeau rouge et blanc du Canada a-t-il été adopté ?",
+      "reponse": "1965",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple de l'Antiquité construisait des pyramides et embaumait ses morts ?",
+      "reponse": "Les Égyptiens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel bateau amena les pèlerins en Amérique en 1620 ?",
+      "reponse": "Le Mayflower",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la chemise de mailles métalliques que portait le chevalier ?",
+      "reponse": "La cotte de mailles",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle fondatrice a ouvert la première école de Ville-Marie ?",
+      "reponse": "Marguerite Bourgeoys",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
+      "reponse": "Le Jolly Roger",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle reine anglaise fut surnommée la Reine vierge ?",
+      "reponse": "Elizabeth Ire",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle jeune fille a mené les armées françaises en 1429 ?",
+      "reponse": "Jeanne d'Arc",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle arme les chevaliers portaient-ils au côté ?",
+      "reponse": "L'épée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quels frères ont inventé le cinématographe ?",
+      "reponse": "Les frères Lumière",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le paysan qui travaillait la terre du seigneur ?",
+      "reponse": "Un serf",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre orne le billet canadien de 5 $ ?",
+      "reponse": "Wilfrid Laurier",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelles expéditions religieuses visaient Jérusalem ?",
+      "reponse": "Les croisades",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année eut lieu la bataille de Waterloo ?",
+      "reponse": "1815",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -176,36 +199,26 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
-      "reponse": "Une joute",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle arme de bois courbé propulsait des flèches avant les armes à feu ?",
-      "reponse": "Un arc",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels dirigeables allemands portaient un nom de comte ?",
-      "reponse": "Les zeppelins",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle reine de France fut guillotinée en 1793 ?",
-      "reponse": "Marie-Antoinette",
+      "question": "Quelle reine d'Égypte a un buste célèbre à Berlin ?",
+      "reponse": "Néfertiti",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui a inventé l'imprimerie en Europe ?",
+      "reponse": "Gutenberg",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel véhicule à vapeur roulait sur des rails au 19e siècle ?",
+      "reponse": "La locomotive",
+      "niveau": 1
     }
   ]
 }

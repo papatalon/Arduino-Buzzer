@@ -7,51 +7,51 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
-      "reponse": "L'Alberta",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel art martial signifie voie de la souplesse ?",
-      "reponse": "Le judo",
+      "categorie": "Musique",
+      "question": "Quelle danse traditionnelle québécoise se danse à quatre couples sur les appels d'un câlleur ?",
+      "reponse": "Le set carré",
       "niveau": 3,
       "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu fait bâtir routes et villages en échangeant bois, blé et minerai ?",
+      "reponse": "Les Colons de Catane",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
+      "reponse": "Un divulgâcheur",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle infusion sud-africaine est naturellement rouge ?",
-      "reponse": "Le rooibos",
+      "question": "Quelle boisson indienne mélange yogourt et mangue ?",
+      "reponse": "Le lassi",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles cigarettes de bonbon blanches portaient le nom d'un marin costaud ?",
-      "reponse": "Les Popeye",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel biscuit québécois à la mélasse se trempe dans le lait ?",
-      "reponse": "La galette à la mélasse",
-      "niveau": 3
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année eut lieu la bataille de Waterloo ?",
-      "reponse": "1815",
+      "question": "Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?",
+      "reponse": "La capitale du royaume",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -59,9 +59,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel petit objet de métal en forme de fourche donne le la aux musiciens ?",
-      "reponse": "Un diapason",
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?",
+      "reponse": "Un tir de barrage",
       "niveau": 3,
       "ages": [
         "ados",
@@ -70,9 +70,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui écrit les paroles d'une chanson ?",
-      "reponse": "Un parolier",
+      "categorie": "Histoire",
+      "question": "Quelle merveille du monde antique éclairait l'entrée d'un port égyptien ?",
+      "reponse": "Le phare d'Alexandrie",
       "niveau": 3,
       "ages": [
         "ados",
@@ -82,34 +82,57 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle pâte à tartiner orange se vend en pot et se met sur les rôties ?",
-      "reponse": "Le Cheez Whiz",
+      "question": "Quel gros livre illustré arrivait par la poste et faisait rêver avant Noël ?",
+      "reponse": "Le catalogue",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Sur quelle bande magnétique écoutait-on la musique avant le disque compact ?",
-      "reponse": "Une cassette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument de flûtes de longueurs différentes se joue en soufflant à leur bord ?",
-      "reponse": "La flûte de Pan",
-      "niveau": 3
     },
     {
       "categorie": "Québec",
-      "question": "Quelle bibliothèque nationale ouverte en 2005 se dresse près de Berri-UQAM ?",
-      "reponse": "La Grande Bibliothèque",
+      "question": "En quelle année le métro de Montréal a-t-il ouvert ?",
+      "reponse": "1966",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
+      "reponse": "Le maelstrom",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe américain a chanté Mr. Brightside ?",
+      "reponse": "The Killers",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission jeunesse de Radio-Canada ouvrait sur un coffre plein d'histoires ?",
+      "reponse": "La Boîte à surprise",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit boîtier rond de poche contient une maison miniature ?",
+      "reponse": "Le Polly Pocket",
       "niveau": 3,
       "ages": [
         "ados",
@@ -118,16 +141,48 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle plateforme les pirates faisaient-ils parcourir aux prisonniers au-dessus de l'eau ?",
-      "reponse": "La planche",
+      "question": "Quel appareil envoyait des messages en points et en traits sur des fils ?",
+      "reponse": "Le télégraphe",
       "niveau": 3
     },
     {
       "categorie": "Histoire",
-      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
-      "reponse": "Traité de Paris",
+      "question": "Sur quelle île Napoléon est-il mort ?",
+      "reponse": "Sainte-Hélène",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à vent en bois donne les sons les plus graves de l'orchestre ?",
+      "reponse": "Le basson",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Journey encourage à ne jamais cesser d'y croire ?",
+      "reponse": "Don't Stop Believin'",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle jeune fille a écrit un journal en se cachant à Amsterdam pendant la guerre ?",
+      "reponse": "Anne Frank",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -142,97 +197,54 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelles équipes de sous-marins explorent les océans en secourant les animaux marins ?",
-      "reponse": "Les Octonauts",
+      "categorie": "Musique",
+      "question": "Combien de demi-tons dans une octave ?",
+      "reponse": "Douze",
       "niveau": 3,
       "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu télévisé québécois demande de repérer celui qui ment ?",
-      "reponse": "Le Tricheur",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle série québécoise se déroulait dans Charlevoix après la Première Guerre ?",
-      "reponse": "Le temps d'une paix",
+      "categorie": "Musique",
+      "question": "Quel instrument à soufflet accompagne le tango ?",
+      "reponse": "Le bandonéon",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'écriture des Vikings, gravée dans la pierre ?",
-      "reponse": "Les runes",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel rappeur québécois signe ses chansons d'un mot qui rime avec Zay ?",
-      "reponse": "FouKi",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les cent ans d'un événement qu'on souligne par une fête ?",
-      "reponse": "Un centenaire",
-      "niveau": 3
     },
     {
       "categorie": "Québec",
-      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
-      "reponse": "L'escalier Casse-Cou",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on la longue route de campagne bordée de fermes au Québec ?",
+      "reponse": "Un rang",
+      "niveau": 3
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on plusieurs notes jouées en même temps ?",
-      "reponse": "Un accord",
+      "categorie": "Culture pop",
+      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
+      "reponse": "Mariana Mazza",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
-      "reponse": "La Finlande",
+      "question": "Comment appelle-t-on la petite colline de sable poussée par le vent au bord de la mer ?",
+      "reponse": "Une dune",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve Petra, la cité rose ?",
+      "reponse": "La Jordanie",
       "niveau": 3,
       "ages": [
         "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelait-on le téléphone que plusieurs foyers du village devaient se partager ?",
-      "reponse": "La ligne partagée",
-      "niveau": 3,
-      "ages": [
         "aines"
       ]
     }

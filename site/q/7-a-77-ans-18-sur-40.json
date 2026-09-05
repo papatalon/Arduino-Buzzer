@@ -7,91 +7,25 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on l'objet qu'on tient à deux mains pour jouer à une console ?",
-      "reponse": "La manette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "De quelle couleur sont les Schtroumpfs ?",
-      "reponse": "Bleus",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation raconte un garçon qui rejoint le pays des morts avec sa guitare ?",
-      "reponse": "Coco",
+      "question": "Quel ours brun de dessin animé vole des paniers de pique-nique ?",
+      "reponse": "Yogi",
       "niveau": 1,
       "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment dit-on « merci » en espagnol ?",
-      "reponse": "Gracias",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie tomber dans les pommes ?",
-      "reponse": "S'évanouir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de temps dure une punition mineure au hockey ?",
-      "reponse": "Deux minutes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de crayons de cire remplit les boîtes d'école ?",
-      "reponse": "Crayola",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Sous quel objet ne faut-il pas passer selon la superstition ?",
-      "reponse": "Une échelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume en tiges rouges garnit des tartes ?",
-      "reponse": "La rhubarbe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros court plus vite que tout le monde en rouge ?",
-      "reponse": "Flash",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel circuit montréalais accueille le Grand Prix ?",
-      "reponse": "Gilles-Villeneuve",
-      "niveau": 1,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel fleuve traverse Paris ?",
-      "reponse": "La Seine",
+      "categorie": "Musique",
+      "question": "Sur quel pont danse-t-on tous en rond dans la chanson ?",
+      "reponse": "Le pont d'Avignon",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit brun et poilu vient de Nouvelle-Zélande ?",
-      "reponse": "Le kiwi",
+      "categorie": "Québec",
+      "question": "Quel plat québécois combine frites, fromage et sauce ?",
+      "reponse": "La poutine",
       "niveau": 1
     },
     {
@@ -101,27 +35,56 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Petit de l'ours ?",
-      "reponse": "L'ourson",
+      "categorie": "Culture générale",
+      "question": "De quelle couleur sont les Schtroumpfs ?",
+      "reponse": "Bleus",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle île montréalaise accueille La Ronde ?",
-      "reponse": "Île Sainte-Hélène",
+      "categorie": "Culture générale",
+      "question": "Sous quel objet ne faut-il pas passer selon la superstition ?",
+      "reponse": "Une échelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Où va-t-on voir des lions et des girafes en enclos ?",
+      "reponse": "Au zoo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport fait rouler une planche sur des rampes dans un parc ?",
+      "reponse": "La planche à roulettes",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays d'Europe est célèbre pour ses montres, son chocolat et ses Alpes ?",
-      "reponse": "La Suisse",
+      "question": "Comment appelle-t-on la construction qui permet de traverser une rivière ?",
+      "reponse": "Un pont",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel rappeur canadien vient de Toronto ?",
-      "reponse": "Drake",
+      "categorie": "Histoire",
+      "question": "Que portaient les chevaliers pour protéger leur corps au combat ?",
+      "reponse": "Une armure",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel festival d'humour a lieu à Montréal ?",
+      "reponse": "Juste pour rire",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle créature verte et mal lunée veut voler le Noël des Chou ?",
+      "reponse": "Le Grinch",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -130,45 +93,91 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel peuple de l'Antiquité construisait des pyramides et embaumait ses morts ?",
-      "reponse": "Les Égyptiens",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel minuscule oiseau peut voler en arrière ?",
-      "reponse": "Le colibri",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on au Québec les boissons gazeuses ?",
-      "reponse": "La liqueur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle céréale est la base de l'alimentation en Asie ?",
-      "reponse": "Le riz",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel dragon noir accompagne Harold ?",
-      "reponse": "Krokmou",
+      "categorie": "Mots et langue",
+      "question": "Petit du mouton ?",
+      "reponse": "L'agneau",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle comptine québécoise plume un oiseau, la tête, le bec et les ailes ?",
-      "reponse": "Alouette",
+      "question": "Comment s'appelle le plus gros tambour d'une fanfare ?",
+      "reponse": "La grosse caisse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume vert en feuilles rendait Popeye très fort ?",
+      "reponse": "L'épinard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de gymnase oppose deux équipes qui se lancent des ballons pour éliminer les autres ?",
+      "reponse": "Le ballon chasseur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la capitale de la province de Québec ?",
+      "reponse": "La ville de Québec",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment nomme-t-on un arbre qui garde ses aiguilles ?",
-      "reponse": "Un conifère",
+      "question": "Quel mammifère marin sauteur siffle et vit en groupe ?",
+      "reponse": "Le dauphin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie dormir comme une bûche ?",
+      "reponse": "Dormir profondément",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil lave les assiettes à notre place ?",
+      "reponse": "Le lave-vaisselle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle entreprise japonaise a créé Mario et Zelda ?",
+      "reponse": "Nintendo",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle semoule accompagne les plats du Maghreb ?",
+      "reponse": "Le couscous",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
+      "reponse": "Bugs Bunny",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne une fête ?",
+      "reponse": "Un party",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelles parties de l'arbre changent de couleur en automne ?",
+      "reponse": "Les feuilles",
       "niveau": 1
     }
   ]

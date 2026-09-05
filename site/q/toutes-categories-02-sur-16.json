@@ -7,77 +7,15 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quelle légende québécoise fait voler un canot ?",
-      "reponse": "La chasse-galerie",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la personne qui soigne les dents ?",
-      "reponse": "Un dentiste",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de haies compte le 110 mètres haies ?",
-      "reponse": "Dix",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle émission québécoise du jour de l'An revoit l'année ?",
-      "reponse": "Bye Bye",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le décalage d'heure entre Montréal et Paris ?",
-      "reponse": "Le décalage horaire",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel lac des Cantons-de-l'Est cacherait un monstre ?",
-      "reponse": "Memphrémagog",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle plongeuse québécoise a gagné l'argent à Tokyo ?",
-      "reponse": "Jennifer Abel",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le collant coloré donné en récompense dans un cahier ?",
-      "reponse": "Un autocollant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle couleur de carton expulse un joueur au soccer ?",
-      "reponse": "Rouge",
-      "niveau": 1
+      "question": "Quel appareil blanc d'Apple faisait tourner la musique avec une molette ?",
+      "reponse": "Le iPod",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -86,9 +24,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle province des Prairies a Regina pour capitale ?",
-      "reponse": "La Saskatchewan",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat coréen mélange riz, légumes et œuf ?",
+      "reponse": "Le bibimbap",
       "niveau": 2,
       "ages": [
         "ados",
@@ -97,32 +35,98 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal terrestre est le plus lourd ?",
-      "reponse": "L'éléphant",
-      "niveau": 1
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série américaine suit un bureau de vente de papier ?",
+      "reponse": "The Office",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel organe pompe le sang ?",
-      "reponse": "Le cœur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert québécois est un gâteau arrosé de sauce sucrée ?",
-      "reponse": "Pouding chômeur",
+      "categorie": "Sports",
+      "question": "Quel jeu oppose deux équipes qui tirent chacune un bout du même câble ?",
+      "reponse": "Le tir à la corde",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "À quelle famille d'instruments appartient la flûte ?",
-      "reponse": "Les bois",
-      "niveau": 3,
+      "question": "Quelle comptine québécoise plume un oiseau, la tête, le bec et les ailes ?",
+      "reponse": "Alouette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Sur quel engin descend-on une côte enneigée en position assise ?",
+      "reponse": "Un traîneau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel premier ministre québécois fut surnommé le Cheuf ?",
+      "reponse": "Duplessis",
+      "niveau": 2,
       "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel grand reptile du Nil était sacré en Égypte ?",
+      "reponse": "Le crocodile",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on les chaussons rigides qui permettent de danser sur le bout des orteils ?",
+      "reponse": "Des pointes",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel groupe sanguin est donneur universel ?",
+      "reponse": "O négatif",
+      "niveau": 2,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on une bande dessinée japonaise ?",
+      "reponse": "Un manga",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel biscuit québécois à la mélasse se trempe dans le lait ?",
+      "reponse": "La galette à la mélasse",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson du crabe Sébastien vante la vie sous les vagues ?",
+      "reponse": "Sous l'océan",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la grande vallée creusée par une rivière entre deux parois ?",
+      "reponse": "Un canyon",
+      "niveau": 2
     },
     {
       "categorie": "Culture générale",
@@ -131,21 +135,53 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Sébastien dans La Petite Sirène ?",
-      "reponse": "Un crabe",
+      "categorie": "Sciences et nature",
+      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
+      "reponse": "L'autruche",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel oiseau apporterait les bébés selon la légende ?",
-      "reponse": "La cigogne",
+      "categorie": "Histoire",
+      "question": "Quelle organisation internationale, fondée en 1945, a son siège à New York ?",
+      "reponse": "L'ONU",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit bleu foncé se cueille dans les bois du Lac-Saint-Jean ?",
+      "reponse": "Le bleuet sauvage",
       "niveau": 2
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel jeune partenaire aide Walter White ?",
+      "reponse": "Jesse Pinkman",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Que signifie casser du sucre sur le dos ?",
-      "reponse": "Dire du mal",
+      "question": "Comment nomme-t-on l'habitant du Saguenay ?",
+      "reponse": "Un Saguenéen",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport pratiquait Michael Phelps ?",
+      "reponse": "La natation",
       "niveau": 1,
       "ages": [
         "ados",
@@ -154,57 +190,26 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel instrument de rue se joue en tournant une manivelle ?",
-      "reponse": "Un orgue de Barbarie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Histoire",
-      "question": "Quelle ville canadienne fut dévastée par une explosion en 1917 ?",
-      "reponse": "Halifax",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de cordes a un violoncelle ?",
-      "reponse": "Quatre",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
-      "reponse": "Le club sandwich",
+      "question": "Quel peuple scandinave naviguait sur des drakkars ?",
+      "reponse": "Les Vikings",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la maison des fourmis ?",
-      "reponse": "La fourmilière",
-      "niveau": 1
+      "categorie": "Géographie",
+      "question": "Capitale de la Nouvelle-Zélande ?",
+      "reponse": "Wellington",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel site de vidéos a été lancé en 2005 et racheté par Google un an plus tard ?",
-      "reponse": "YouTube",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de jeune ?",
+      "reponse": "Vieux",
+      "niveau": 1
     }
   ]
 }

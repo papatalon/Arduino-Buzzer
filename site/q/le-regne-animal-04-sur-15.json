@@ -7,6 +7,16 @@
   "emoji": "🐾",
   "questions": [
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel cochon de cinéma veut devenir chien de berger ?",
+      "reponse": "Babe",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
       "question": "Quel guépard en lunettes fumées vend des croustilles au fromage ?",
       "reponse": "Chester Cheetah",
@@ -41,14 +51,10 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel cochon de cinéma veut devenir chien de berger ?",
-      "reponse": "Babe",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sciences et nature",
+      "question": "Quel animal est le meilleur ami de l'homme ?",
+      "reponse": "Le chien",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -85,12 +91,6 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal est le meilleur ami de l'homme ?",
-      "reponse": "Le chien",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
       "question": "Quel petit animal rayé remplit ses joues de noix ?",
       "reponse": "Le tamia (suisse)",
       "niveau": 1
@@ -112,12 +112,6 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la larve du papillon ?",
-      "reponse": "La chenille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
       "question": "Quel animal marin a trois cœurs ?",
       "reponse": "La pieuvre",
       "niveau": 2,
@@ -126,6 +120,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle la larve du papillon ?",
+      "reponse": "La chenille",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
