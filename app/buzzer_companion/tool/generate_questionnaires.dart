@@ -161,6 +161,11 @@ var _outputDir = '../../site';
 // se lit d'un coup et se diffe en une ligne.
 const _assetBanque = 'assets/questions/banque.json';
 
+// Le format de la banque, verifie par l'application avant de la lire : un
+// fichier tronque ou une vieille version ne doit pas passer pour une banque
+// vide, ce qui donnerait un ecran sans questions sans dire pourquoi.
+const kFormatBanque = 'buzzer-banque';
+
 // Chaque questionnaire écrit, gardé pour la banque embarquée.
 final _banque = <String, Map<String, dynamic>>{};
 
@@ -475,6 +480,7 @@ void main(List<String> args) {
 
   _controleQualite(all);
 
+  _writeBanqueQuestions(all);
   _writeCatalogue();
   _writeVersion();
   _writeRevue(all);
@@ -529,6 +535,84 @@ void _writeCatalogue() {
       '${collections.length} collections, $questions questions.');
 
   _writeBanque(json);
+}
+
+// LA BANQUE : chaque question UNE FOIS, avec de quoi la retrouver.
+//
+// C'est le format qui remplace les questionnaires prédécoupés. Découper la
+// banque en 283 fichiers servait à choisir un questionnaire tout fait ; on
+// compose maintenant la manche au moment de jouer, selon la pièce qu'on a
+// devant soi, et une liste plate suffit.
+//
+// LES THÉMATIQUES DEVIENNENT DES ÉTIQUETTES. « Spécial Noël » ou « Créatures
+// et légendes » traversent les catégories, et c'est tout leur intérêt : aucune
+// catégorie du firmware ne sait rassembler le renne, la bûche, les chants et
+// le Grincheux. Elles étaient calculées par mots-clés pour fabriquer des
+// fichiers ; le même calcul écrit maintenant une étiquette sur la question,
+// et l'application filtre dessus. La curation survit, les fichiers non.
+//
+// Écrite à deux endroits, le même contenu : dans le site, que l'application
+// va relire pour se mettre à jour, et dans les assets, pour qu'une
+// installation neuve sans wifi ait de quoi jouer.
+void _writeBanqueQuestions(List<Entry> all) {
+  // Les thématiques d'abord : une question peut en porter plusieurs.
+  final etiquettes = <Entry, List<String>>{};
+  final comptesThemes = <String, int>{};
+  for (final theme in kThemes) {
+    final trouvees = all.where(theme.matches).toList();
+    // Le même plancher que pour les fichiers : sous douze questions, une
+    // thématique ne remplit même pas une demi-manche et n'a pas d'intérêt.
+    if (trouvees.length < 12) continue;
+    comptesThemes[theme.name] = trouvees.length;
+    for (final e in trouvees) {
+      (etiquettes[e] ??= []).add(theme.name);
+    }
+  }
+
+  final comptesCategories = <String, int>{};
+  for (final e in all) {
+    comptesCategories[e.category] = (comptesCategories[e.category] ?? 0) + 1;
+  }
+
+  final contenu = {
+    'format': kFormatBanque,
+    'version': 1,
+    'categories': [
+      for (final nom in comptesCategories.keys.toList()..sort())
+        {
+          'nom': nom,
+          'emoji': kEmojiCategories[nom] ?? _emojiInedites[nom] ?? '',
+          'questions': comptesCategories[nom],
+        },
+    ],
+    'themes': [
+      for (final theme in kThemes)
+        if (comptesThemes.containsKey(theme.name))
+          {
+            'nom': theme.name,
+            'emoji': theme.emoji,
+            'note': theme.note,
+            'questions': comptesThemes[theme.name],
+          },
+    ],
+    'questions': [
+      for (final e in all)
+        {
+          ...e.toJson(),
+          if (etiquettes[e] != null) 'themes': etiquettes[e],
+        },
+    ],
+  };
+
+  // Sans indentation : personne ne relit ce fichier, et les espaces
+  // partiraient dans chaque installation comme dans chaque téléchargement.
+  final json = '${jsonEncode(contenu)}\n';
+  File('$_outputDir/banque.json').writeAsStringSync(json);
+
+  final ko = (utf8.encode(json).length / 1024).round();
+  stdout.writeln('banque.json : ${all.length} questions, '
+      '${comptesCategories.length} catégories, ${comptesThemes.length} '
+      'thématiques, $ko ko.');
 }
 
 // La copie embarquée dans le build : le catalogue et tous les questionnaires
