@@ -7,117 +7,32 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le désert du Sahara ?",
-      "reponse": "L'Afrique",
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la formule chimique de l'eau ?",
+      "reponse": "H2O",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Que devient un têtard ?",
-      "reponse": "Une grenouille",
+      "question": "Comment s'appelle la maison des fourmis ?",
+      "reponse": "La fourmilière",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert québécois est un gâteau arrosé de sauce sucrée ?",
-      "reponse": "Pouding chômeur",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu provençal lance des boules vers un cochonnet ?",
-      "reponse": "La pétanque",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel signe marque l'élision dans le mot l'arbre ?",
-      "reponse": "L'apostrophe",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de quarts compte un match de la NBA ?",
-      "reponse": "Quatre",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle onde invisible réchauffe les aliments au four ?",
-      "reponse": "Les micro-ondes",
+      "question": "Quelle forme donne-t-on au poisson pané pour les enfants ?",
+      "reponse": "Des bâtonnets",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Dans quel sport utilise-t-on un fer et un vert ?",
-      "reponse": "Le golf",
+      "categorie": "Québec",
+      "question": "Quel hockeyeur était surnommé le Rocket ?",
+      "reponse": "Maurice Richard",
       "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on les mots d'une chanson ?",
-      "reponse": "Les paroles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve traverse Paris ?",
-      "reponse": "La Seine",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie l'interjection québécoise tiguidou ?",
-      "reponse": "C'est parfait",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle saison vient après l'hiver ?",
-      "reponse": "Le printemps",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu fait deviner un mot lettre par lettre en dessinant un bonhomme ?",
-      "reponse": "Le pendu",
-      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -126,79 +41,27 @@
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle princesse anglaise est morte à Paris en 1997 ?",
-      "reponse": "Diana",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel petit robot orange et blanc roule en forme de boule dans Star Wars ?",
-      "reponse": "BB-8",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel ancien vélodrome de Montréal abrite des animaux ?",
-      "reponse": "Le Biodôme",
+      "categorie": "Mots et langue",
+      "question": "Quel signe de ponctuation termine une phrase ordinaire ?",
+      "reponse": "Le point",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film de 1939 suit Dorothy sur une route jaune ?",
-      "reponse": "Magicien d'Oz",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse des années 90 se fait en groupe, bras tendus, avec un quart de tour à la fin ?",
-      "reponse": "La Macarena",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel pirate est l'ennemi juré de Peter Pan ?",
-      "reponse": "Capitaine Crochet",
+      "question": "Quels animaux revivent dans Jurassic Park ?",
+      "reponse": "Les dinosaures",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "De quel pays vient la tequila ?",
-      "reponse": "Le Mexique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mammifère marin blanc remonte le Saguenay ?",
-      "reponse": "Le béluga",
+      "question": "Quel plat anglais sert du poisson frit avec des frites ?",
+      "reponse": "Fish and chips",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel mois vient après mars ?",
-      "reponse": "Avril",
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle la chouette de Harry Potter ?",
+      "reponse": "Hedwige",
       "niveau": 1
     },
     {
@@ -208,10 +71,118 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de grand ?",
-      "reponse": "Petit",
+      "categorie": "Sciences et nature",
+      "question": "Combien de bosses a un chameau ?",
+      "reponse": "Deux",
       "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur incarnait Danny dans Grease ?",
+      "reponse": "John Travolta",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Synonyme de bicyclette ?",
+      "reponse": "Vélo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la vidéo qui montre étape par étape comment faire quelque chose ?",
+      "reponse": "Un tutoriel",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle activité d'hiver descend une pente sur un traîneau ou une chambre à air ?",
+      "reponse": "La glissade",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel mois vient après mars ?",
+      "reponse": "Avril",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel nouveau pont montréalais a ouvert en 2019 ?",
+      "reponse": "Samuel-De Champlain",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le document qui rapporte les notes d'un élève à ses parents ?",
+      "reponse": "Le bulletin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel directeur de Poudlard a une longue barbe blanche ?",
+      "reponse": "Dumbledore",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de temps dure une punition mineure au hockey ?",
+      "reponse": "Deux minutes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quelle langue est l'ancêtre du français ?",
+      "reponse": "Le latin",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle muraille célèbre protège la Chine ?",
+      "reponse": "La Grande Muraille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle collation salée et croquante a la forme d'un nœud ?",
+      "reponse": "Le bretzel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel objet empoisonné croque Blanche-Neige ?",
+      "reponse": "Une pomme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel massif abrite l'Everest ?",
+      "reponse": "L'Himalaya",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

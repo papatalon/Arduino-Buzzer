@@ -7,19 +7,9 @@
   "emoji": "🐉",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film de 1975 a vidé les plages avec son requin géant ?",
-      "reponse": "Les Dents de la mer",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle fée accompagne Peter Pan ?",
-      "reponse": "Clochette",
+      "categorie": "Culture générale",
+      "question": "Quel animal, s'il croise votre chemin, porterait malheur ?",
+      "reponse": "Le chat noir",
       "niveau": 1
     },
     {
@@ -34,30 +24,19 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit orange se sculpte à l'Halloween ?",
-      "reponse": "La citrouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
-      "reponse": "Arthur Laroche",
+      "categorie": "Culture générale",
+      "question": "Quel roi mythique change en or tout ce qu'il touche ?",
+      "reponse": "Midas",
       "niveau": 2,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ogre a un ami âne très bavard ?",
-      "reponse": "Shrek",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture générale",
-      "question": "Quelle créature est mi-homme mi-cheval ?",
-      "reponse": "Le centaure",
+      "question": "Sous quel objet ne faut-il pas passer selon la superstition ?",
+      "reponse": "Une échelle",
       "niveau": 1,
       "ages": [
         "ados",
@@ -66,27 +45,132 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
-      "reponse": "Le mammouth",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel bonhomme de biscuit court dans les contes ?",
-      "reponse": "Pain d'épice",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle créature de Tolkien dit mon précieux ?",
+      "reponse": "Gollum",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel monstre bleu et poilu travaille avec Mike ?",
-      "reponse": "Sulley",
+      "question": "Quel dragon noir accompagne Harold ?",
+      "reponse": "Krokmou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comédie musicale raconte un fantôme masqué ?",
+      "reponse": "Fantôme de l'Opéra",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel monstre vert explose à côté du joueur dans Minecraft ?",
+      "reponse": "Le creeper",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans Pokémon, dans quel objet enferme-t-on les créatures capturées ?",
+      "reponse": "Une Poké Ball",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?",
+      "reponse": "Un chaudron d'or",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Sous quel objet ne faut-il pas passer selon la superstition ?",
-      "reponse": "Une échelle",
+      "question": "Quelle romancière a créé Hercule Poirot ?",
+      "reponse": "Agatha Christie",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film de 1975 a vidé les plages avec son requin géant ?",
+      "reponse": "Les Dents de la mer",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel marin de conte a fait sept voyages ?",
+      "reponse": "Sinbad",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit orange se sculpte à l'Halloween ?",
+      "reponse": "La citrouille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a ouvert la boîte qui libérait tous les maux ?",
+      "reponse": "Pandore",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Autour de quelle table siégeaient les chevaliers d'Arthur ?",
+      "reponse": "La Table ronde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle fée accompagne Peter Pan ?",
+      "reponse": "Clochette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
+      "reponse": "Dans l'œil du dragon",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Dans quel conte un loup souffle-t-il sur des maisons de paille, de bois et de briques ?",
+      "reponse": "Les Trois Petits Cochons",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
+      "reponse": "King Kong",
       "niveau": 1,
       "ages": [
         "ados",
@@ -106,94 +190,17 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
-      "reponse": "King Kong",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel frère et quelle sœur de conte sèment des miettes de pain dans la forêt ?",
-      "reponse": "Hansel et Gretel",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pomme enrobée est une friandise d'Halloween ?",
+      "reponse": "Pomme au caramel",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel monstre menace les enfants de Stranger Things ?",
-      "reponse": "Le Démogorgon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel méchant sorcier des Schtroumpfs a un chat ?",
-      "reponse": "Gargamel",
+      "categorie": "Sports",
+      "question": "Quel basketteur légendaire portait le 23 des Bulls ?",
+      "reponse": "Michael Jordan",
       "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Autour de quelle table siégeaient les chevaliers d'Arthur ?",
-      "reponse": "La Table ronde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Sébastien dans La Petite Sirène ?",
-      "reponse": "Un crabe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel dieu grec messager porte des sandales ailées ?",
-      "reponse": "Hermès",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel monstre géant venu du Japon écrase des villes au cinéma ?",
-      "reponse": "Godzilla",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel oiseau mythique renaît de ses cendres ?",
-      "reponse": "Le phénix",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel roi légendaire cherchait le Graal ?",
-      "reponse": "Le roi Arthur",
-      "niveau": 1,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]

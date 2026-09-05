@@ -7,16 +7,26 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume mariné accompagne le burger ?",
-      "reponse": "Le cornichon",
+      "categorie": "Cinéma et télé",
+      "question": "Quels quatre frères bandits affrontent Lucky Luke ?",
+      "reponse": "Les Dalton",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?",
+      "reponse": "La tire sur la neige",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle prison parisienne fut prise le 14 juillet 1789 ?",
-      "reponse": "La Bastille",
-      "niveau": 2,
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
+      "reponse": "Rio de Janeiro",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -25,35 +35,41 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle comédie musicale utilise les chansons d'ABBA ?",
-      "reponse": "Mamma Mia",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat botté a de grands yeux attendrissants ?",
-      "reponse": "Chat Potté",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle auteure a écrit Les Filles de Caleb ?",
-      "reponse": "Arlette Cousture",
+      "question": "Quel festival de musique se tient chaque été au parc Jean-Drapeau à Montréal ?",
+      "reponse": "Osheaga",
       "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport olympique descend un couloir de glace sur le dos ?",
-      "reponse": "La luge",
+      "question": "Quelle activité d'été fait dormir sous une tente ?",
+      "reponse": "Le camping",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "De quel fruit fait-on le vin ?",
+      "reponse": "Le raisin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de jour ?",
+      "reponse": "Nuit",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle plante grimpante rougit les murs des maisons à l'automne ?",
+      "reponse": "La vigne vierge",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -66,27 +82,15 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel État américain chaud accueille Disney World ?",
-      "reponse": "La Floride",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on celui qui étudie les oiseaux ?",
-      "reponse": "Un ornithologue",
+      "categorie": "Histoire",
+      "question": "Quel peuple a construit Chichén Itzá ?",
+      "reponse": "Les Mayas",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de crayons de cire remplit les boîtes d'école ?",
-      "reponse": "Crayola",
-      "niveau": 1
     }
   ]
 }

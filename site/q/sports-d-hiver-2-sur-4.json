@@ -7,6 +7,23 @@
   "emoji": "⛷️",
   "questions": [
     {
+      "categorie": "Québec",
+      "question": "Quelle station de ski domine Stoneham et Québec ?",
+      "reponse": "Mont-Sainte-Anne",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport olympique descend un couloir de glace sur le dos ?",
+      "reponse": "La luge",
+      "niveau": 1
+    },
+    {
       "categorie": "Bouffe et cuisine",
       "question": "Quel dessert glacé mange-t-on en cornet l'été ?",
       "reponse": "La crème glacée",
@@ -14,9 +31,41 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel objet empoisonné croque Blanche-Neige ?",
-      "reponse": "Une pomme",
-      "niveau": 1
+      "question": "Quel écureuil de L'Ère de glace court sans cesse après son gland ?",
+      "reponse": "Scrat",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet de plastique se glisse sous les pieds pour glisser sur la neige ?",
+      "reponse": "La soucoupe",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien d'équipes compte la LNH aujourd'hui ?",
+      "reponse": "32",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport pratique la famille Hart de Calgary ?",
+      "reponse": "La lutte",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -31,9 +80,42 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de coupes Stanley pour les Canadiens de Montréal ?",
-      "reponse": "24",
-      "niveau": 2,
+      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
+      "reponse": "Le slalom",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel pouvoir Elsa doit-elle cacher au début de La Reine des neiges ?",
+      "reponse": "La glace",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
+      "reponse": "La granita",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel outil racle la neige des pare-brise ?",
+      "reponse": "Un gratteux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel numéro portait Wayne Gretzky ?",
+      "reponse": "99",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -42,19 +124,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
-      "reponse": "Le ballon-balai",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
-      "reponse": "Alexandre Bilodeau",
+      "question": "Quel patineur de vitesse québécois a plusieurs ors olympiques ?",
+      "reponse": "Charles Hamelin",
       "niveau": 2,
       "ages": [
         "ados",
@@ -62,63 +133,38 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport de glisse se pratique à plat ventre ?",
-      "reponse": "Le skeleton",
+      "categorie": "Culture pop",
+      "question": "Quelle marque de motoneige est née au Québec ?",
+      "reponse": "Ski-Doo",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit poisson pêche-t-on sous la glace à La Pérade ?",
-      "reponse": "Le poulamon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pays est le berceau du hockey sur glace ?",
-      "reponse": "Le Canada",
-      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
-      "reponse": "Les Boys",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel gardien des Canadiens a porté le premier masque ?",
-      "reponse": "Jacques Plante",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Comment s'appelle une maison faite de blocs de neige ?",
-      "reponse": "Un igloo",
+      "question": "Quel objet empoisonné croque Blanche-Neige ?",
+      "reponse": "Une pomme",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle ville canadienne a reçu les JO d'hiver de 1988 ?",
-      "reponse": "Calgary",
+      "question": "Quel trophée récompense le joueur le plus utile de la LNH ?",
+      "reponse": "Hart",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de glisse descend les pentes enneigées sur deux planches étroites ?",
+      "reponse": "Le ski",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -127,58 +173,55 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle reine a des pouvoirs de glace chez Disney ?",
-      "reponse": "Elsa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel gardien détient le record de victoires en carrière ?",
-      "reponse": "Martin Brodeur",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée récompense le meilleur marqueur de la LNH ?",
-      "reponse": "Art Ross",
+      "categorie": "Culture pop",
+      "question": "Quel jeu de table fait glisser un palet sur un coussin d'air ?",
+      "reponse": "Le air hockey",
       "niveau": 2,
       "ages": [
         "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel secteur riverain de Montréal accueille patinoire, plage et grande roue ?",
+      "reponse": "Le Vieux-Port",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la couche de glace qui se forme au bord des toits ?",
+      "reponse": "Une barrière de glace",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle station de ski célèbre est dans les Laurentides ?",
-      "reponse": "Tremblant",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
-      "question": "Combien de joueurs sur la glace par équipe au hockey ?",
-      "reponse": "Six",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le bonhomme de neige de La Reine des neiges ?",
-      "reponse": "Olaf",
+      "question": "Combien de temps dure une punition mineure au hockey ?",
+      "reponse": "Deux minutes",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel joueur des Canadiens fut surnommé le Démon blond ?",
-      "reponse": "Guy Lafleur",
-      "niveau": 1,
+      "question": "Quel club-école des Canadiens joue à Laval ?",
+      "reponse": "Le Rocket",
+      "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
+      "reponse": "Lululemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     }
   ]

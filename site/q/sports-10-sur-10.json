@@ -8,173 +8,118 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel pays a accueilli la Coupe du monde 2022 ?",
-      "reponse": "Le Qatar",
+      "question": "Combien de points vaut un panier de loin au basketball ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport dit-on échec et mat ?",
+      "reponse": "Les échecs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de roues a une planche à roulettes ?",
+      "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de rondes maximum en boxe professionnelle ?",
+      "reponse": "Douze",
       "niveau": 2,
       "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle médaille récompense la troisième place ?",
+      "reponse": "Le bronze",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle course cycliste est la plus célèbre au monde ?",
+      "reponse": "Le Tour de France",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport mélange soccer et voiture dans un jeu vidéo ?",
+      "reponse": "Rocket League",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien d'équipes compte la LNH aujourd'hui ?",
+      "reponse": "32",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel joueur des Oilers porte le numéro 97 ?",
+      "reponse": "Connor McDavid",
+      "niveau": 1,
+      "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel jeu de cour d'école saute sur des cases numérotées dessinées à la craie ?",
-      "reponse": "La marelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment s'appelle le centre de la cible aux fléchettes ?",
-      "reponse": "Le bullseye",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel autre nom donne-t-on au ping-pong ?",
-      "reponse": "Tennis de table",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
-      "reponse": "Le CF Montréal",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de minutes dure un quart au football américain ?",
-      "reponse": "Quinze",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Avec quel objet frappe-t-on la balle au baseball ?",
-      "reponse": "Le bâton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle écurie italienne de F1 est rouge ?",
-      "reponse": "Ferrari",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glisse descend les pentes enneigées sur deux planches étroites ?",
-      "reponse": "Le ski",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
-      "reponse": "Montréal",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel hockeyeur a battu le record de buts de Gretzky en 2025 ?",
-      "reponse": "Ovechkin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport pratiquait Serena Williams ?",
-      "reponse": "Le tennis",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Edmonton ?",
-      "reponse": "Les Oilers",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel capitaine des Penguins est surnommé Sid the Kid ?",
-      "reponse": "Sidney Crosby",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle embarcation étroite se dirige avec une pagaie à deux pales ?",
-      "reponse": "Le kayak",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sprinteur détient le record du 100 mètres ?",
-      "reponse": "Usain Bolt",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle plongeuse québécoise a gagné l'argent à Tokyo ?",
-      "reponse": "Jennifer Abel",
+      "question": "Quel art martial signifie voie de la souplesse ?",
+      "reponse": "Le judo",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Toronto ?",
-      "reponse": "Les Maple Leafs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel patineur de vitesse québécois a plusieurs ors olympiques ?",
-      "reponse": "Charles Hamelin",
+      "question": "Quel golfeur canadien a gagné le Masters en 2003 ?",
+      "reponse": "Mike Weir",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de gymnase grimpe des murs à prises ?",
-      "reponse": "L'escalade",
+      "question": "Combien de manches dans un match de baseball ?",
+      "reponse": "Neuf",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel Serbe détient le record de titres du grand chelem ?",
-      "reponse": "Novak Djokovic",
+      "question": "Quelle activité consiste à marcher longtemps sur des sentiers en forêt ou en montagne ?",
+      "reponse": "La randonnée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle est la distance d'un marathon ?",
+      "reponse": "42,2 km",
       "niveau": 2,
       "ages": [
         "ados",
@@ -184,20 +129,89 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle activité se pratique avec une canne et un hameçon ?",
-      "reponse": "La pêche",
-      "niveau": 1
+      "question": "Quelle gymnaste américaine a des figures qui portent son nom au code de pointage ?",
+      "reponse": "Simone Biles",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel tournoi du grand chelem se joue à New York ?",
-      "reponse": "Le US Open",
+      "question": "De quelle couleur est la veste du champion du Masters ?",
+      "reponse": "Verte",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport lance-t-on un javelot ?",
+      "reponse": "L'athlétisme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de minutes dure un match de soccer ?",
+      "reponse": "90",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle distance fait un demi-marathon ?",
+      "reponse": "21,1 km",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
+      "reponse": "Alexandre Bilodeau",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel coureur éthiopien a gagné le marathon pieds nus ?",
+      "reponse": "Abebe Bikila",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de coureurs dans un relais 4x100 ?",
+      "reponse": "Quatre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle discipline équestre fait franchir au cheval des barres à ne pas faire tomber ?",
+      "reponse": "Le saut d'obstacles",
+      "niveau": 1
     }
   ]
 }

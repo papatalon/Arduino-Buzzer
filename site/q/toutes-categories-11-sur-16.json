@@ -7,11 +7,195 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Combien de pays ont le français comme langue officielle : 9, 29 ou 59 ?",
-      "reponse": "29",
+      "categorie": "Culture pop",
+      "question": "Quels ninjas de Lego portent chacun une couleur et un élément ?",
+      "reponse": "Ninjago",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson chaude réconforte avec du cacao ?",
+      "reponse": "Chocolat chaud",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel petit pays est enclavé entre France et Espagne ?",
+      "reponse": "Andorre",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a écrit Les Misérables ?",
+      "reponse": "Victor Hugo",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel site de vente en ligne a une flèche souriante dans son logo ?",
+      "reponse": "Amazon",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel roi lion est le père de Simba ?",
+      "reponse": "Mufasa",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Contraire de dedans ?",
+      "reponse": "Dehors",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit de la poule ?",
+      "reponse": "Le poussin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à percussion se joue avec les mains sur deux tambours accolés ?",
+      "reponse": "Les bongos",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel carré noir et blanc se scanne avec la caméra du téléphone ?",
+      "reponse": "Un code QR",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert coloré tremble dans son bol et se prépare avec de la poudre ?",
+      "reponse": "Le Jell-O",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel cousin rayé du cheval vit en Afrique ?",
+      "reponse": "Le zèbre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui a fondé Facebook en 2004 ?",
+      "reponse": "Mark Zuckerberg",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on une histoire de fées, de princes et de sorcières ?",
+      "reponse": "Un conte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport descend des rivières en radeau pneumatique ?",
+      "reponse": "Le rafting",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel chiffre porte malheur en Occident ?",
+      "reponse": "13",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel héros devient vert quand il se fâche ?",
+      "reponse": "Hulk",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle plateforme suédoise diffuse de la musique en continu ?",
+      "reponse": "Spotify",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on les sentiers balisés où circulent les motoneiges ?",
+      "reponse": "Les sentiers de motoneige",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel beurre de noix est interdit dans les écoles ?",
+      "reponse": "Beurre d'arachide",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle ruée vers l'or a attiré des milliers de gens au Yukon ?",
+      "reponse": "Klondike",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport japonais oppose deux colosses dans un cercle ?",
+      "reponse": "Le sumo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Inde ?",
+      "reponse": "New Delhi",
+      "niveau": 2,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -28,213 +212,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel événement montréalais ferme des rues chaque été pour des spectacles gratuits ?",
-      "reponse": "Le Festival de jazz",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle cité antique a été détruite par le Vésuve ?",
-      "reponse": "Pompéi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film de Noël un garçon oublié à la maison piège deux cambrioleurs ?",
-      "reponse": "Maman, j'ai raté l'avion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de billes rouges au snooker ?",
-      "reponse": "Quinze",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel compositeur allemand est devenu sourd ?",
-      "reponse": "Beethoven",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Le pluriel de bijou prend un S ou un X ?",
-      "reponse": "Un X",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle crise économique a suivi le krach de 1929 ?",
-      "reponse": "La Grande Dépression",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel soldat Marvel porte un bouclier étoilé ?",
-      "reponse": "Captain America",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glisse se pratique à plat ventre ?",
-      "reponse": "Le skeleton",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir un chat dans la gorge ?",
-      "reponse": "Être enroué",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel programme de récompenses accumule des points bleus chez plusieurs commerçants ?",
-      "reponse": "Air Miles",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte russe est un petit chausson farci ?",
-      "reponse": "Le pirojki",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle fillette rousse aux nattes tressées est la plus forte du monde ?",
-      "reponse": "Fifi Brindacier",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson gazeuse au gingembre est célèbre au Canada ?",
-      "reponse": "Le ginger ale (Canada Dry)",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel immense pays occupe la moitié de l'Amérique du Sud ?",
-      "reponse": "Le Brésil",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel chiffre porte malheur en Occident ?",
-      "reponse": "13",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel format de disque tourne à 33 tours ?",
-      "reponse": "Le vinyle",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle est la fleur emblème du Québec ?",
-      "reponse": "Iris versicolore",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quel oiseau noir et blanc de l'Antarctique ne sait pas voler ?",
-      "reponse": "Le manchot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays est surnommé la botte de l'Europe ?",
-      "reponse": "L'Italie",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Qui a écrit Les Misérables ?",
-      "reponse": "Victor Hugo",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich grec est garni de viande à la broche ?",
-      "reponse": "Le pita (gyros)",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel grand singe est le plus proche de l'homme ?",
-      "reponse": "Le chimpanzé",
+      "question": "Quel animal terrestre est le plus lourd ?",
+      "reponse": "L'éléphant",
       "niveau": 1
     }
   ]

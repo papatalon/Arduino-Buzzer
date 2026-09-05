@@ -8,15 +8,96 @@
   "questions": [
     {
       "categorie": "Sports",
+      "question": "Dans quel sport évolue-t-on sur une poutre ?",
+      "reponse": "La gymnastique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de baseball a joué à Montréal ?",
+      "reponse": "Les Expos",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel basketteur légendaire portait le 23 des Bulls ?",
+      "reponse": "Michael Jordan",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de force oppose deux équipes de chaque côté d'un même câble ?",
+      "reponse": "Le tir à la corde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel objet se passent les coureurs de relais ?",
+      "reponse": "Le témoin",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de montagne grimpe des parois gelées à crampons ?",
+      "reponse": "L'alpinisme",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un ballon qu'on frappe des mains par-dessus un filet ?",
+      "reponse": "Le volleyball",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
       "question": "Combien de joueurs sur la glace par équipe au hockey ?",
       "reponse": "Six",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport olympique de précision se pratique avec des flèches ?",
-      "reponse": "Le tir à l'arc",
+      "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
+      "reponse": "Gary Carter",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de combat n'utilise que les poings ?",
+      "reponse": "La boxe",
       "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport pratique la famille Hart de Calgary ?",
+      "reponse": "La lutte",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -30,47 +111,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel club de soccer espagnol joue au Camp Nou ?",
-      "reponse": "FC Barcelone",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment nomme-t-on un trou d'un coup au golf ?",
-      "reponse": "Un as",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de temps dure une punition mineure au hockey ?",
-      "reponse": "Deux minutes",
+      "question": "Quel sport japonais oppose deux colosses dans un cercle ?",
+      "reponse": "Le sumo",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel Argentin a soulevé la Coupe du monde 2022 ?",
-      "reponse": "Lionel Messi",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle ville canadienne a reçu les JO d'hiver de 2010 ?",
-      "reponse": "Vancouver",
+      "question": "Quel événement sportif américain a lieu un dimanche de février ?",
+      "reponse": "Le Super Bowl",
       "niveau": 1,
       "ages": [
         "ados",
@@ -80,20 +128,36 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel jeu consiste à se cacher pendant qu'un joueur compte les yeux fermés ?",
-      "reponse": "La cachette",
+      "question": "Quel numéro portait Maurice Richard ?",
+      "reponse": "9",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle activité se pratique avec une canne et un hameçon ?",
+      "reponse": "La pêche",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Combien d'anneaux sur le drapeau olympique ?",
-      "reponse": "Cinq",
+      "question": "Quelle discipline olympique note des figures sur glace ?",
+      "reponse": "Patinage artistique",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle joueuse de tennis a gagné 23 titres du grand chelem ?",
-      "reponse": "Serena Williams",
+      "question": "Quel drapeau agite-t-on à la fin d'une course auto ?",
+      "reponse": "Drapeau à damier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport marque-t-on des essais ?",
+      "reponse": "Le rugby",
       "niveau": 2,
       "ages": [
         "ados",
@@ -103,25 +167,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport se joue avec un disque volant en équipe ?",
-      "reponse": "L'ultimate",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport dit-on échec et mat ?",
-      "reponse": "Les échecs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport descend des rivières en radeau pneumatique ?",
-      "reponse": "Le rafting",
+      "question": "Quel numéro portait Wayne Gretzky ?",
+      "reponse": "99",
       "niveau": 1,
       "ages": [
         "ados",
@@ -131,36 +178,19 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de roues a une planche à roulettes ?",
+      "question": "Combien de styles de nage existe-t-il en compétition ?",
       "reponse": "Quatre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel coureur éthiopien a gagné le marathon pieds nus ?",
-      "reponse": "Abebe Bikila",
-      "niveau": 3,
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel équipement protège la tête à vélo et au hockey ?",
-      "reponse": "Le casque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport glisse sur l'eau tiré par un bateau ?",
-      "reponse": "Le ski nautique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue à Wimbledon ?",
-      "reponse": "Le tennis",
+      "question": "Quel sport olympique mélange danse et piscine ?",
+      "reponse": "Natation artistique",
       "niveau": 1,
       "ages": [
         "ados",
@@ -170,36 +200,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport aquatique saute d'un tremplin dans une piscine ?",
-      "reponse": "Le plongeon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au football canadien ?",
-      "reponse": "Douze",
-      "niveau": 2,
+      "question": "Quel pays a gagné le plus de médailles olympiques au total ?",
+      "reponse": "Les États-Unis",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel boxeur s'appelait Cassius Clay ?",
-      "reponse": "Muhammad Ali",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle couleur de carton avertit un joueur au soccer ?",
-      "reponse": "Jaune",
-      "niveau": 1
     }
   ]
 }

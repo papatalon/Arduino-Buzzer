@@ -8,101 +8,24 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
-      "reponse": "Gary Carter",
+      "question": "Qui a inventé le basketball ?",
+      "reponse": "James Naismith",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel tournoi de tennis se joue sur terre battue à Paris ?",
+      "reponse": "Roland-Garros",
       "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel objet lourd lance-t-on en le faisant tournoyer ?",
-      "reponse": "Le marteau",
-      "niveau": 2,
-      "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel cerceau fait-on tourner autour de la taille ?",
-      "reponse": "Le hula hoop",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de coureurs dans un relais 4x100 ?",
-      "reponse": "Quatre",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment nomme-t-on un circuit avec les buts remplis ?",
-      "reponse": "Grand chelem",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport pratique Tiger Woods ?",
-      "reponse": "Le golf",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle ville canadienne a reçu les JO d'hiver de 1988 ?",
-      "reponse": "Calgary",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de points vaut un lancer franc au basketball ?",
-      "reponse": "Un",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport parle-t-on de peloton ?",
-      "reponse": "Le cyclisme",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Que transporte le relais avant les Jeux ?",
-      "reponse": "La flamme olympique",
-      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -117,42 +40,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
-      "reponse": "Le slalom",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glace utilise des pierres et des balais ?",
-      "reponse": "Le curling",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de minutes dure un match de soccer ?",
-      "reponse": "90",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pilote québécois a donné son nom au circuit de Montréal ?",
-      "reponse": "Gilles Villeneuve",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de styles de nage existe-t-il en compétition ?",
-      "reponse": "Quatre",
+      "question": "Combien de joueurs par équipe au volleyball ?",
+      "reponse": "Six",
       "niveau": 2,
       "ages": [
         "ados",
@@ -162,14 +51,41 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de quilles dans un jeu de bowling ?",
-      "reponse": "Dix",
+      "question": "Quel sport olympique de précision se pratique avec des flèches ?",
+      "reponse": "Le tir à l'arc",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
-      "reponse": "Le ballon-balai",
+      "question": "Quelle ville canadienne a reçu les JO d'hiver de 2010 ?",
+      "reponse": "Vancouver",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de cour d'école fait sauter par-dessus une corde qui tourne ?",
+      "reponse": "La corde à danser",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel joueur de tennis canadien a atteint la finale de Wimbledon ?",
+      "reponse": "Milos Raonic",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Où ont eu lieu les premiers Jeux olympiques modernes ?",
+      "reponse": "Athènes",
       "niveau": 2,
       "ages": [
         "ados",
@@ -185,30 +101,100 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
-      "reponse": "Georges St-Pierre",
-      "niveau": 1,
+      "question": "Quel sport surfe sur la neige ?",
+      "reponse": "La planche à neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de points vaut un touché au football ?",
+      "reponse": "Six",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Combien de minutes dure une période de hockey ?",
-      "reponse": "20",
+      "question": "Quel maillot porte le meilleur grimpeur du Tour de France ?",
+      "reponse": "À pois",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Que transporte le relais avant les Jeux ?",
+      "reponse": "La flamme olympique",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle discipline équestre fait franchir au cheval des barres à ne pas faire tomber ?",
-      "reponse": "Le saut d'obstacles",
+      "question": "Quel sport se joue avec un ballon orange qu'on lance dans un panier ?",
+      "reponse": "Le basketball",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
-      "reponse": "Le surf",
+      "question": "Combien de prises pour retirer un frappeur ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel Suisse élégant a gagné 20 titres du grand chelem ?",
+      "reponse": "Roger Federer",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel capitaine des Penguins est surnommé Sid the Kid ?",
+      "reponse": "Sidney Crosby",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport glisse sur l'eau tiré par un bateau ?",
+      "reponse": "Le ski nautique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de table fait glisser une rondelle sur un coussin d'air ?",
+      "reponse": "Le hockey sur air",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de joueurs par équipe au basketball ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel officiel siffle les punitions ?",
+      "reponse": "L'arbitre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un volant ?",
+      "reponse": "Le badminton",
       "niveau": 1
     }
   ]

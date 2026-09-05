@@ -7,9 +7,19 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quel objet noir et plat, gravé de sillons, tourne sur une table tournante ?",
-      "reponse": "Le disque vinyle",
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la couche de glace qui se forme au bord des toits ?",
+      "reponse": "Une barrière de glace",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal a allaité Romulus et Rémus ?",
+      "reponse": "Une louve",
       "niveau": 2,
       "ages": [
         "ados",
@@ -18,9 +28,59 @@
       ]
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel superhéros enfile son costume dans une cabine téléphonique ?",
+      "reponse": "Superman",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse a chanté Bad Romance ?",
+      "reponse": "Lady Gaga",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
       "categorie": "Sports",
-      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
-      "reponse": "Tessa Virtue",
+      "question": "Quel objet lance-t-on sur la glace après un tour du chapeau ?",
+      "reponse": "Des chapeaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Complétez : les chaussettes de l'archiduchesse sont-elles...",
+      "reponse": "Sèches archi-sèches",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plateforme loue le logement d'un particulier pour des vacances ?",
+      "reponse": "Airbnb",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qui a découvert la gravitation ?",
+      "reponse": "Newton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel artiste a mêlé country et rap dans Old Town Road ?",
+      "reponse": "Lil Nas X",
       "niveau": 3,
       "ages": [
         "ados",
@@ -28,73 +88,14 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel opéra rock de Plamondon met en scène un businessman ?",
-      "reponse": "Starmania",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quels sont les trois états de l'eau ?",
-      "reponse": "Solide liquide gaz",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple de l'Antiquité a inventé les Jeux olympiques ?",
-      "reponse": "Les Grecs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Autour de quelle table siégeaient les chevaliers d'Arthur ?",
-      "reponse": "La Table ronde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Qui a écrit Roméo et Juliette ?",
-      "reponse": "Shakespeare",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles billes de plastique s'ouvrent en figurine au contact d'une carte ?",
-      "reponse": "Les Bakugan",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel instrument mesure la pression atmosphérique ?",
-      "reponse": "Le baromètre",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment s'appelle le parlement du Québec ?",
-      "reponse": "Assemblée nationale",
+      "categorie": "Cinéma et télé",
+      "question": "Quel écureuil de L'Ère de glace court sans cesse après son gland ?",
+      "reponse": "Scrat",
       "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
@@ -109,9 +110,9 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "De quelle langue vient le mot kimono ?",
-      "reponse": "Le japonais",
+      "categorie": "Géographie",
+      "question": "Quelle rivière célèbre coule à Ottawa ?",
+      "reponse": "L'Outaouais",
       "niveau": 1,
       "ages": [
         "ados",
@@ -121,9 +122,104 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Où se trouvent les pyramides de Gizeh ?",
-      "reponse": "En Égypte",
+      "question": "Quelle île canadienne a inspiré Anne aux pignons verts ?",
+      "reponse": "Prince-Édouard",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel ballon géant à panier et à air chaud a été le premier engin à transporter des humains dans le ciel ?",
+      "reponse": "La montgolfière",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a écrit Roméo et Juliette ?",
+      "reponse": "Shakespeare",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année les Jeux olympiques ont-ils été reportés d'un an pour la première fois ?",
+      "reponse": "2020",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume en feuilles vertes est la base d'une salade ?",
+      "reponse": "La laitue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de magasins se consacre au maquillage et aux parfums ?",
+      "reponse": "Sephora",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de kilomètres fait un triathlon olympique à vélo ?",
+      "reponse": "40",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Manitoba ?",
+      "reponse": "Winnipeg",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de loup ?",
+      "reponse": "Louve",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mois de 1970 a connu l'enlèvement de Pierre Laporte ?",
+      "reponse": "Octobre",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat libanais est une purée d'aubergines fumées ?",
+      "reponse": "Baba ganouj",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -137,107 +233,12 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel coureur canadien a perdu son titre olympique en 1988 ?",
-      "reponse": "Ben Johnson",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quels canots géants transportaient les fourrures ?",
-      "reponse": "Canots de maître",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot qui a plusieurs sens ?",
-      "reponse": "Polysémique",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Hongrie ?",
-      "reponse": "Budapest",
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle le sonar naturel des chauves-souris ?",
+      "reponse": "L'écholocation",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse de Star Wars est la sœur de Luke ?",
-      "reponse": "Leia",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on la vitesse d'un morceau ?",
-      "reponse": "Le tempo",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Kremlin ?",
-      "reponse": "Moscou",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande hachée garnit le pâté chinois ?",
-      "reponse": "Le bœuf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur écossais fut le premier James Bond ?",
-      "reponse": "Sean Connery",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat péruvien est du poisson cru mariné ?",
-      "reponse": "Le ceviche",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle ville canadienne fut dévastée par une explosion en 1917 ?",
-      "reponse": "Halifax",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]

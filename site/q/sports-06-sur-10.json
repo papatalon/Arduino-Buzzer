@@ -8,30 +8,19 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel sport se joue avec un ballon qu'on frappe des mains par-dessus un filet ?",
-      "reponse": "Le volleyball",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel lanceur québécois a gagné un Cy Young ?",
-      "reponse": "Éric Gagné",
+      "question": "Quel pays a accueilli la Coupe du monde 2022 ?",
+      "reponse": "Le Qatar",
       "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport combine natation, vélo et course ?",
-      "reponse": "Le triathlon",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel sport de glace utilise des pierres et des balais ?",
+      "reponse": "Le curling",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -41,88 +30,58 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de trous compte un parcours de golf complet ?",
-      "reponse": "18",
+      "question": "Quelle activité d'été fait dormir sous une tente ?",
+      "reponse": "Le camping",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle course américaine tourne en ovale 500 milles ?",
+      "reponse": "Indianapolis 500",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de haies compte le 110 mètres haies ?",
+      "reponse": "Dix",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
+      "reponse": "Le ballon-balai",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel joueur de soccer est surnommé CR7 ?",
+      "reponse": "Cristiano Ronaldo",
       "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
-      "reponse": "Orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel gardien québécois a popularisé le style papillon ?",
-      "reponse": "Patrick Roy",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel quart-arrière a gagné sept Super Bowls ?",
-      "reponse": "Tom Brady",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle discipline olympique note des figures sur glace ?",
-      "reponse": "Patinage artistique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de points vaut un panier de loin au basketball ?",
-      "reponse": "Trois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "De quelle couleur est la veste du champion du Masters ?",
-      "reponse": "Verte",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport mélange soccer et voiture dans un jeu vidéo ?",
-      "reponse": "Rocket League",
-      "niveau": 2,
       "ages": [
         "enfants",
-        "ados"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe canadienne a gagné la Série mondiale en 1992 ?",
-      "reponse": "Blue Jays",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel tournoi de tennis se joue sur terre battue à Paris ?",
-      "reponse": "Roland-Garros",
+      "question": "Combien de joueurs par équipe au football américain ?",
+      "reponse": "Onze",
       "niveau": 2,
       "ages": [
         "ados",
@@ -132,8 +91,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Où ont eu lieu les premiers Jeux olympiques modernes ?",
-      "reponse": "Athènes",
+      "question": "Combien de sets gagnants pour un match de tennis masculin en grand chelem ?",
+      "reponse": "Trois",
       "niveau": 2,
       "ages": [
         "ados",
@@ -143,24 +102,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport surfe sur la neige ?",
-      "reponse": "La planche à neige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur brésilien est surnommé le Roi du soccer ?",
-      "reponse": "Pelé",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
-      "reponse": "Tessa Virtue",
+      "question": "Quelle plongeuse québécoise a gagné l'argent à Tokyo ?",
+      "reponse": "Jennifer Abel",
       "niveau": 3,
       "ages": [
         "ados",
@@ -169,30 +112,36 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport se pratique dans une piscine ?",
-      "reponse": "La natation",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de kilomètres fait un triathlon olympique à vélo ?",
-      "reponse": "40",
-      "niveau": 3,
+      "question": "Dans quel sport utilise-t-on un fer et un vert ?",
+      "reponse": "Le golf",
+      "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel trophée remporte le champion de la LNH ?",
-      "reponse": "La coupe Stanley",
+      "question": "Combien de minutes dure une période de hockey ?",
+      "reponse": "20",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel maillot porte le meilleur grimpeur du Tour de France ?",
-      "reponse": "À pois",
+      "question": "Combien de médailles d'or olympiques a Michael Phelps ?",
+      "reponse": "23",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de coupes Stanley pour les Canadiens de Montréal ?",
+      "reponse": "24",
       "niveau": 2,
       "ages": [
         "ados",
@@ -202,8 +151,74 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel tournoi de tennis se joue sur gazon à Londres ?",
-      "reponse": "Wimbledon",
+      "question": "Quel sprinteur canadien a gagné le 100 m aux JO de 1996 ?",
+      "reponse": "Donovan Bailey",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?",
+      "reponse": "Le football",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de hockey joue à Toronto ?",
+      "reponse": "Les Maple Leafs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment nomme-t-on un trou d'un coup au golf ?",
+      "reponse": "Un as",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
+      "reponse": "Quatre ans",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel pays a remporté le plus de Coupes du monde de soccer ?",
+      "reponse": "Le Brésil",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel circuit montréalais accueille le Grand Prix ?",
+      "reponse": "Gilles-Villeneuve",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de joueurs par équipe au football canadien ?",
+      "reponse": "Douze",
       "niveau": 2,
       "ages": [
         "ados",

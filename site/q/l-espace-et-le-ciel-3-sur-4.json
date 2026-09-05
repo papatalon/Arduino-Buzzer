@@ -7,64 +7,9 @@
   "emoji": "🪐",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami étoile de mer accompagne Bob l'éponge ?",
-      "reponse": "Patrick",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui fut le deuxième homme à marcher sur la Lune ?",
-      "reponse": "Buzz Aldrin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle galaxie abrite notre système solaire ?",
-      "reponse": "La Voie lactée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de lunes possède Mars ?",
-      "reponse": "Deux",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre change de forme dans le ciel au fil des nuits ?",
-      "reponse": "La Lune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
-      "reponse": "Challenger",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est l'étoile la plus proche de la Terre ?",
-      "reponse": "Le Soleil",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient du Soleil ?",
-      "reponse": "L'énergie solaire",
+      "categorie": "Mots et langue",
+      "question": "Que signifie être dans la lune ?",
+      "reponse": "Être distrait",
       "niveau": 1
     },
     {
@@ -74,42 +19,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "En quelle année l'homme a-t-il marché sur la Lune ?",
-      "reponse": "1969",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel télescope spatial a été lancé en 1990 ?",
-      "reponse": "Hubble",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sciences et nature",
+      "question": "Combien de lunes possède la Terre ?",
+      "reponse": "Une",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la planète la plus proche du Soleil ?",
-      "reponse": "Mercure",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment nomme-t-on une roche tombée de l'espace ?",
-      "reponse": "Une météorite",
+      "question": "Quel caillou céleste brille en traversant l'atmosphère ?",
+      "reponse": "L'étoile filante",
       "niveau": 1
     },
     {
@@ -124,20 +42,123 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle mission a posé les premiers hommes sur la Lune ?",
-      "reponse": "Apollo 11",
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?",
+      "reponse": "L'arc-en-ciel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ligne imaginaire sépare l'hémisphère nord de l'hémisphère sud ?",
+      "reponse": "L'équateur",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète a les anneaux les plus spectaculaires ?",
+      "reponse": "Saturne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami étoile de mer accompagne Bob l'éponge ?",
+      "reponse": "Patrick",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle planète tourne couchée sur le côté ?",
-      "reponse": "Uranus",
+      "question": "Sur quelle planète habitons-nous ?",
+      "reponse": "La Terre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle comète célèbre revient tous les 76 ans ?",
+      "reponse": "Halley",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle carte donne accès aux soins de santé gratuits au Québec ?",
+      "reponse": "La carte soleil",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète est la plus chaude du système solaire ?",
+      "reponse": "Vénus",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
+      "reponse": "Les Gardiens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel instrument sert à observer les étoiles ?",
+      "reponse": "Le télescope",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature bleue de Disney, échappée de l'espace, s'appelle l'expérience 626 ?",
+      "reponse": "Stitch",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le premier homme sur la Lune ?",
+      "reponse": "Neil Armstrong",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus grosse planète du système solaire ?",
+      "reponse": "Jupiter",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a un drapeau avec une étoile de David ?",
+      "reponse": "Israël",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Dans « Au clair de la lune », à quel ami demande-t-on de prêter sa plume ?",
+      "reponse": "Pierrot",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -149,18 +170,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel caillou céleste brille en traversant l'atmosphère ?",
-      "reponse": "L'étoile filante",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui fut le premier homme sur la Lune ?",
-      "reponse": "Neil Armstrong",
-      "niveau": 1
     }
   ]
 }

@@ -7,6 +7,12 @@
   "emoji": "🎄",
   "questions": [
     {
+      "categorie": "Culture générale",
+      "question": "Quel événement célèbre-t-on le 25 décembre ?",
+      "reponse": "Noël",
+      "niveau": 1
+    },
+    {
       "categorie": "Géographie",
       "question": "Quel point le plus au nord de la Terre est le domicile du père Noël ?",
       "reponse": "Le pôle Nord",
@@ -14,8 +20,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel gros livre illustré arrivait par la poste et faisait rêver avant Noël ?",
-      "reponse": "Le catalogue",
+      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
+      "reponse": "La guignolée",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -23,44 +29,9 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Sven dans La Reine des neiges ?",
-      "reponse": "Un renne",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle sauce rouge accompagne la dinde ?",
-      "reponse": "Aux canneberges",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel événement célèbre-t-on le 25 décembre ?",
-      "reponse": "Noël",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel accompagnement de Noël est une purée blanche ?",
-      "reponse": "Patates pilées",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage vert déteste Noël ?",
-      "reponse": "Le Grincheux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël québécois reprend l'air de Jingle Bells ?",
-      "reponse": "Vive le vent",
+      "question": "Quel biscuit au chocolat cache une guimauve ?",
+      "reponse": "Le Whippet",
       "niveau": 1
     },
     {
@@ -75,44 +46,16 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel renne du père Noël a le nez rouge ?",
-      "reponse": "Rudolphe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel ragoût du temps des fêtes se sert avec des boulettes, dans une sauce épaissie à la farine grillée ?",
-      "reponse": "Le ragoût de pattes",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Quel chant de Noël célèbre un arbre dont le feuillage reste vert tout l'hiver ?",
-      "reponse": "Mon beau sapin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film de Noël un train magique emmène-t-il des enfants au pôle Nord ?",
-      "reponse": "Le Pôle Express",
+      "question": "Quelle chanson de Noël parle d'un bonhomme de neige ?",
+      "reponse": "Frosty",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle épice se râpe sur le lait de poule ?",
-      "reponse": "La muscade",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel accompagnement de Noël est une purée blanche ?",
+      "reponse": "Patates pilées",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -121,10 +64,70 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël demande de descendre du ciel avec des jouets par milliers ?",
-      "reponse": "Petit papa Noël",
+      "categorie": "Culture pop",
+      "question": "Quel repas de fête se prend après la messe de minuit, la nuit du 24 décembre ?",
+      "reponse": "Le réveillon",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle écorce parfume les brioches roulées ?",
+      "reponse": "La cannelle",
       "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël québécois reprend l'air de Jingle Bells ?",
+      "reponse": "Vive le vent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle confiserie blanche flotte sur le chocolat chaud ?",
+      "reponse": "La guimauve",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel renne du père Noël a le nez rouge ?",
+      "reponse": "Rudolphe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la scène de la Nativité qu'on installait sous le sapin ?",
+      "reponse": "La crèche",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel personnage vert déteste Noël ?",
+      "reponse": "Le Grincheux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël célèbre un arbre dont le feuillage reste vert tout l'hiver ?",
+      "reponse": "Mon beau sapin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel montagnard accompagne Anna avec son renne dans La Reine des neiges ?",
+      "reponse": "Kristoff",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     }
   ]
 }

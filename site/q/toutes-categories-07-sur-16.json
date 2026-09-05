@@ -7,26 +7,9 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Où fabrique-t-on le sirop d'érable ?",
-      "reponse": "À la cabane à sucre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel maillot porte le meneur du Tour de France ?",
-      "reponse": "Le maillot jaune",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal a allaité Romulus et Rémus ?",
-      "reponse": "Une louve",
+      "categorie": "Géographie",
+      "question": "Quel fleuve traverse l'Allemagne et se jette à Rotterdam ?",
+      "reponse": "Le Rhin",
       "niveau": 2,
       "ages": [
         "ados",
@@ -36,65 +19,56 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel appareil branché à la ligne téléphonique faisait des bruits stridents pour se connecter ?",
-      "reponse": "Le modem",
-      "niveau": 3,
+      "question": "Qui était le gérant et le mari de Céline Dion ?",
+      "reponse": "René Angélil",
+      "niveau": 2,
       "ages": [
-        "adultes"
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel poète-chanteur canadien a écrit Hallelujah ?",
+      "reponse": "Leonard Cohen",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle exposition universelle a eu lieu à Montréal ?",
+      "reponse": "Expo 67",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année a pris fin la Seconde Guerre mondiale ?",
+      "reponse": "1945",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appelle le centre de la Terre ?",
-      "reponse": "Le noyau",
+      "question": "Quel oiseau au long cou noir migre en formant un V dans le ciel ?",
+      "reponse": "La bernache (outarde)",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel duo français portait des casques de robots ?",
-      "reponse": "Daft Punk",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Combien de régions administratives compte le Québec ?",
-      "reponse": "17",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Suède ?",
-      "reponse": "Stockholm",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Que signifie avoir de l'eau dans la cave ?",
-      "reponse": "Pantalon trop court",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels frères ont inventé le cinématographe ?",
-      "reponse": "Les frères Lumière",
-      "niveau": 2,
+      "question": "Comment nomme-t-on un mot qui a plusieurs sens ?",
+      "reponse": "Polysémique",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
@@ -102,8 +76,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel pichet souriant défonce les murs en criant « Oh yeah » ?",
-      "reponse": "Le pichet Kool-Aid",
+      "question": "Quel accessoire rembourré élargissait les épaules des vestons dans les années 80 ?",
+      "reponse": "L'épaulette",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -111,31 +85,16 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel petit disque optique a remplacé la cassette ?",
-      "reponse": "Le CD",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain rond avec un trou se mange à Montréal ?",
+      "reponse": "Le bagel",
+      "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur joue Jack dans Titanic ?",
-      "reponse": "Leonardo DiCaprio",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume en tiges rouges garnit des tartes ?",
+      "reponse": "La rhubarbe",
       "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle péninsule abrite Espagne et Portugal ?",
-      "reponse": "Ibérique",
-      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -144,20 +103,27 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du singe ?",
-      "reponse": "La guenon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Que signifie « être rouge comme une tomate » ?",
+      "reponse": "Être gêné",
+      "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quelle autrice a écrit Harry Potter ?",
-      "reponse": "J.K. Rowling",
-      "niveau": 1,
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène lumineux accompagne le tonnerre ?",
+      "reponse": "L'éclair",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles tranches de pommes de terre frites et salées se vendent en sac ?",
+      "reponse": "Les croustilles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur canadien a percé adolescent avec Stitches ?",
+      "reponse": "Shawn Mendes",
+      "niveau": 2,
       "ages": [
         "enfants",
         "ados",
@@ -165,30 +131,15 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel nom porte le jalapeño fumé ?",
-      "reponse": "Chipotle",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Québec",
+      "question": "Combien reçoit-on en rapportant une canette consignée ?",
+      "reponse": "Cinq sous",
+      "niveau": 2
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal est le plus gros rongeur du monde ?",
-      "reponse": "Le capybara",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du pad thaï ?",
-      "reponse": "La Thaïlande",
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir un coup de foudre ?",
+      "reponse": "Tomber amoureux",
       "niveau": 1,
       "ages": [
         "ados",
@@ -197,12 +148,11 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle fleur figure sur le drapeau de Montréal ?",
-      "reponse": "Fleur de lys",
+      "categorie": "Cinéma et télé",
+      "question": "Quel duo formaient Claude Meunier et Serge Thériault ?",
+      "reponse": "Ding et Dong",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -218,15 +168,19 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit des détenues ?",
-      "reponse": "Unité 9",
-      "niveau": 1
+      "categorie": "Sports",
+      "question": "Quelle course de traîneaux à chiens traverse l'Alaska ?",
+      "reponse": "L'Iditarod",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle algue enroule les makis ?",
-      "reponse": "Le nori",
+      "categorie": "Histoire",
+      "question": "Quelle pyramide d'Égypte est la plus grande ?",
+      "reponse": "Khéops",
       "niveau": 2,
       "ages": [
         "ados",
@@ -235,21 +189,52 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du corbeau ?",
-      "reponse": "Le croassement",
+      "categorie": "Québec",
+      "question": "Quelle tourte de viandes vient du Lac-Saint-Jean ?",
+      "reponse": "Le cipaille",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel personnage jeunesse parlait à sa marionnette Bobinette ?",
+      "reponse": "Bobino",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle autrice a écrit Harry Potter ?",
+      "reponse": "J.K. Rowling",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Dans quel sport dit-on échec et mat ?",
-      "reponse": "Les échecs",
+      "question": "Quel pays est le berceau du hockey sur glace ?",
+      "reponse": "Le Canada",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le continent le plus peuplé ?",
+      "reponse": "L'Asie",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

@@ -7,25 +7,21 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel cochon de cinéma veut devenir chien de berger ?",
-      "reponse": "Babe",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est l'os le plus long du corps humain ?",
-      "reponse": "Le fémur",
+      "categorie": "Géographie",
+      "question": "Monnaie utilisée aux États-Unis ?",
+      "reponse": "Le dollar",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes traverse la Suisse ?",
-      "reponse": "Les Alpes",
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le voisin trop gentil des Simpson ?",
+      "reponse": "Ned Flanders",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel chou fermenté accompagne les saucisses en Alsace ?",
+      "reponse": "La choucroute",
       "niveau": 1,
       "ages": [
         "ados",
@@ -34,11 +30,64 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
-      "reponse": "Michel Louvain",
-      "niveau": 3,
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le trou creusé dans l'asphalte par le gel et le dégel ?",
+      "reponse": "Un nid-de-poule",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit de la chèvre ?",
+      "reponse": "Le chevreau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de gymnase grimpe des murs à prises ?",
+      "reponse": "L'escalade",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Sur quelle clé lit-on les notes graves ?",
+      "reponse": "Clé de fa",
+      "niveau": 2,
       "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
+      "reponse": "L'étoile de mer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel drapeau agite-t-on à la fin d'une course auto ?",
+      "reponse": "Drapeau à damier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel pont relie Montréal à Longueuil ?",
+      "reponse": "Jacques-Cartier",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel général français a lancé l'appel du 18 juin 1940 ?",
+      "reponse": "De Gaulle",
+      "niveau": 2,
+      "ages": [
+        "adultes",
         "aines"
       ]
     },
@@ -49,85 +98,20 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de haut ?",
-      "reponse": "Bas",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle date exacte est le jour J ?",
-      "reponse": "Le 6 juin 1944",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit poisson pêche-t-on sous la glace à La Pérade ?",
-      "reponse": "Le poulamon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Quelle chanteuse canadienne a chanté Call Me Maybe ?",
-      "reponse": "Carly Rae Jepsen",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pomme de terre frite est en spirale ?",
-      "reponse": "Frite tornade",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
-      "reponse": "Le Banquier",
+      "question": "Quelle comédie musicale met en scène des chats ?",
+      "reponse": "Cats",
       "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel club anglais est surnommé les Diables rouges ?",
-      "reponse": "Manchester United",
-      "niveau": 2,
-      "ages": [
         "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Comment nomme-t-on un hot-dog cuit à la vapeur au Québec ?",
-      "reponse": "Un steamé",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
-      "question": "Quelle ligne rouge coupe la patinoire en deux ?",
-      "reponse": "Ligne centrale",
+      "question": "Quelle course olympique est la plus courte ?",
+      "reponse": "Le 100 mètres",
       "niveau": 1,
       "ages": [
         "ados",
@@ -137,76 +121,15 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la durée d'une année sur Terre ?",
-      "reponse": "365 jours",
+      "question": "Qu'est-ce qui est le plus rapide : le son ou la lumière ?",
+      "reponse": "La lumière",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du croissant ?",
-      "reponse": "La France",
+      "question": "Quel aliment orange est riche en carotène ?",
+      "reponse": "La carotte",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de bonbons colorés fond dans la bouche, pas dans la main ?",
-      "reponse": "Les M&M's",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de combat n'utilise que les poings ?",
-      "reponse": "La boxe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style musical est né à la Nouvelle-Orléans ?",
-      "reponse": "Le jazz",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel empire avait Rome pour capitale ?",
-      "reponse": "L'Empire romain",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le symbole chimique de l'oxygène ?",
-      "reponse": "O",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle ville américaine est la capitale du country ?",
-      "reponse": "Nashville",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie tourner autour du pot ?",
-      "reponse": "Hésiter à parler",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Culture générale",
@@ -220,15 +143,67 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Capitale de la Colombie-Britannique ?",
-      "reponse": "Victoria",
+      "categorie": "Culture pop",
+      "question": "Quelle marque de crayons de cire remplit les boîtes d'école ?",
+      "reponse": "Crayola",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle la maison des abeilles ?",
+      "reponse": "La ruche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la tour maîtresse, la plus haute d'un château fort ?",
+      "reponse": "Le donjon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument australien est un long tube en bois ?",
+      "reponse": "Le didgeridoo",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse de Star Wars est la sœur de Luke ?",
+      "reponse": "Leia",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir la langue à terre ?",
+      "reponse": "Être très fatigué",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle fosse océanique est la plus profonde ?",
+      "reponse": "Les Mariannes",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu fait passer sous une barre de plus en plus basse en se penchant vers l'arrière ?",
+      "reponse": "Le limbo",
+      "niveau": 2
     }
   ]
 }

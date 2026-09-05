@@ -7,19 +7,26 @@
   "emoji": "🐉",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quelle jeune fille a dansé avec le diable dans la légende ?",
-      "reponse": "Rose Latulippe",
+      "categorie": "Histoire",
+      "question": "Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?",
+      "reponse": "Jeanne Mance",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle sirène Disney rêve de vivre sur terre ?",
-      "reponse": "Ariel",
+      "categorie": "Culture générale",
+      "question": "Qui laisse de l'argent sous l'oreiller en échange d'une dent ?",
+      "reponse": "La fée des dents",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle créature légendaire fait peur aux enfants ?",
+      "reponse": "Bonhomme Sept-Heures",
       "niveau": 1
     },
     {
@@ -34,91 +41,8 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel roi mythique change en or tout ce qu'il touche ?",
-      "reponse": "Midas",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?",
-      "reponse": "Jeanne Mance",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?",
-      "reponse": "Un chaudron d'or",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comédie musicale raconte un fantôme masqué ?",
-      "reponse": "Fantôme de l'Opéra",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Qui a ouvert la boîte qui libérait tous les maux ?",
-      "reponse": "Pandore",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle créature légendaire fait peur aux enfants ?",
-      "reponse": "Bonhomme Sept-Heures",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel animal, s'il croise votre chemin, porterait malheur ?",
-      "reponse": "Le chat noir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Dans quel conte un oisillon rejeté par les siens devient un magnifique cygne ?",
-      "reponse": "Le vilain petit canard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel sport sorcier se joue sur des balais ?",
-      "reponse": "Le quidditch",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel dieu grec règne sur l'Olympe ?",
-      "reponse": "Zeus",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle créature de Tolkien dit mon précieux ?",
-      "reponse": "Gollum",
+      "question": "Quel personnage de conte a une lampe magique ?",
+      "reponse": "Aladin",
       "niveau": 1
     },
     {
@@ -129,21 +53,9 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Quelle fête des déguisements a lieu le 31 octobre ?",
-      "reponse": "L'Halloween",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel chiffre porte malheur en Occident ?",
-      "reponse": "13",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel monstre grec pétrifie du regard ?",
-      "reponse": "Méduse",
-      "niveau": 1,
+      "question": "Quel dieu grec messager porte des sandales ailées ?",
+      "reponse": "Hermès",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -151,15 +63,29 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de cartes à collectionner fait évoluer des créatures de poche ?",
-      "reponse": "Pokémon",
-      "niveau": 1,
+      "categorie": "Québec",
+      "question": "Quel entraîneur légendaire des Canadiens s'appelait Scotty ?",
+      "reponse": "Scotty Bowman",
+      "niveau": 2,
       "ages": [
-        "enfants",
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?",
+      "reponse": "Fanfreluche",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel conte Disney une rose est-elle sous cloche ?",
+      "reponse": "La Belle et la Bête",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -169,8 +95,25 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel chien à trois têtes garde les enfers ?",
-      "reponse": "Cerbère",
+      "question": "Quel dieu grec règne sur les enfers ?",
+      "reponse": "Hadès",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelles montagnes russes en bois de La Ronde sont célèbres ?",
+      "reponse": "Le Monstre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle créature irlandaise garde un trésor ?",
+      "reponse": "Le farfadet (leprechaun)",
       "niveau": 2,
       "ages": [
         "ados",
@@ -180,11 +123,66 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Quelle épée légendaire appartenait au roi Arthur ?",
-      "reponse": "Excalibur",
+      "question": "Quelle fillette de conte entre chez trois ours et goûte leur gruau ?",
+      "reponse": "Boucle d'or",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?",
+      "reponse": "Le tyrannosaure",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel dieu grec règne sur les mers ?",
+      "reponse": "Poséidon",
       "niveau": 1,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle fête des déguisements a lieu le 31 octobre ?",
+      "reponse": "L'Halloween",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle légende québécoise fait voler un canot ?",
+      "reponse": "La chasse-galerie",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Dans quel conte une princesse s'endort cent ans après s'être piqué le doigt ?",
+      "reponse": "La Belle au bois dormant",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel monstre géant venu du Japon écrase des villes au cinéma ?",
+      "reponse": "Godzilla",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel Argentin a marqué le but de la main de Dieu ?",
+      "reponse": "Maradona",
+      "niveau": 2,
+      "ages": [
         "adultes",
         "aines"
       ]

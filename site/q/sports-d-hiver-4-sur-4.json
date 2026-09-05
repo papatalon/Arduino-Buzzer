@@ -7,12 +7,6 @@
   "emoji": "⛷️",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle confiserie d'érable se roule sur la neige ?",
-      "reponse": "La tire",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
       "question": "Quelle princesse Disney vit avec sept nains ?",
       "reponse": "Blanche-Neige",
@@ -20,37 +14,91 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Toronto ?",
-      "reponse": "Les Maple Leafs",
-      "niveau": 1
+      "question": "Quel joueur de hockey est surnommé La Merveille ?",
+      "reponse": "Wayne Gretzky",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel pouvoir Elsa doit-elle cacher au début de La Reine des neiges ?",
-      "reponse": "La glace",
+      "question": "Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?",
+      "reponse": "La tire sur la neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
+      "reponse": "Quatre ans",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport olympique descend un couloir de glace sur le dos ?",
-      "reponse": "La luge",
+      "question": "Quel sport de glisse se pratique à plat ventre ?",
+      "reponse": "Le skeleton",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on au Québec la neige mouillée et boueuse du printemps ?",
+      "reponse": "La slush",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel joueur des Canadiens fut surnommé le Gros Bill ?",
+      "reponse": "Jean Béliveau",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel objet lance-t-on sur la glace après un tour du chapeau ?",
+      "reponse": "Des chapeaux",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel est le sport national d'hiver du Canada ?",
-      "reponse": "Le hockey",
-      "niveau": 1
+      "question": "Quelle ville canadienne a reçu les JO d'hiver de 2010 ?",
+      "reponse": "Vancouver",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle course de traîneaux à chiens traverse l'Alaska ?",
-      "reponse": "L'Iditarod",
+      "question": "Combien de joueurs sur la glace par équipe au hockey ?",
+      "reponse": "Six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Comment s'appelle une maison faite de blocs de neige ?",
+      "reponse": "Un igloo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
+      "reponse": "Le Forum",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -58,21 +106,42 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Quel cidre québécois est pressé après les gelées ?",
+      "reponse": "Cidre de glace",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Sports",
-      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
-      "reponse": "Orange",
+      "question": "Quel sport surfe sur la neige ?",
+      "reponse": "La planche à neige",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel objet de plastique se glisse sous les pieds pour glisser sur la neige ?",
-      "reponse": "La soucoupe",
+      "categorie": "Sports",
+      "question": "Quel hockeyeur a battu le record de buts de Gretzky en 2025 ?",
+      "reponse": "Ovechkin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la neige soulevée par le vent qui coupe la visibilité ?",
+      "reponse": "La poudrerie",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quel film culte parle d'une guerre de balles de neige ?",
-      "reponse": "La Guerre des tuques",
+      "question": "Quel joueur des Canadiens fut surnommé le Démon blond ?",
+      "reponse": "Guy Lafleur",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -81,11 +150,22 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel hébergement québécois est rebâti chaque hiver ?",
-      "reponse": "Hôtel de glace",
-      "niveau": 1,
+      "question": "Quelle station de ski célèbre est dans les Laurentides ?",
+      "reponse": "Tremblant",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle discipline olympique note des figures sur glace ?",
+      "reponse": "Patinage artistique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel gardien détient le record de victoires en carrière ?",
+      "reponse": "Martin Brodeur",
+      "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -102,9 +182,9 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle station de ski domine Stoneham et Québec ?",
-      "reponse": "Mont-Sainte-Anne",
+      "categorie": "Sports",
+      "question": "Combien de coupes Stanley pour les Canadiens de Montréal ?",
+      "reponse": "24",
       "niveau": 2,
       "ages": [
         "ados",
@@ -113,38 +193,9 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel équipement large attaché aux pieds empêche de caler dans la neige épaisse ?",
-      "reponse": "Les raquettes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel numéro portait Wayne Gretzky ?",
-      "reponse": "99",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport surfe sur la neige ?",
-      "reponse": "La planche à neige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport glisse sur l'eau tiré par un bateau ?",
-      "reponse": "Le ski nautique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport combine ski de fond et tir ?",
-      "reponse": "Le biathlon",
+      "categorie": "Québec",
+      "question": "Quelle station de ski domine le fleuve dans Charlevoix ?",
+      "reponse": "Le Massif",
       "niveau": 2,
       "ages": [
         "ados",
@@ -156,23 +207,6 @@
       "categorie": "Québec",
       "question": "Quelle équipe de hockey joue au Centre Bell ?",
       "reponse": "Les Canadiens",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
-      "reponse": "Quatre ans",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de minutes dure une période de hockey ?",
-      "reponse": "20",
       "niveau": 1
     }
   ]

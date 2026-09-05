@@ -7,10 +7,148 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage italien garnit la pizza ?",
-      "reponse": "La mozzarella",
+      "categorie": "Culture générale",
+      "question": "Quel animal est surnommé le roi de la jungle ?",
+      "reponse": "Le lion",
       "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle fleur suit le Soleil ?",
+      "reponse": "Le tournesol",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle science étudie les vestiges anciens ?",
+      "reponse": "L'archéologie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel café italien est couronné de mousse de lait ?",
+      "reponse": "Le cappuccino",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle famille préhistorique conduit une voiture à pédales ?",
+      "reponse": "Les Pierrafeu",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument a des touches noires et blanches ?",
+      "reponse": "Le piano",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?",
+      "reponse": "L'arc-en-ciel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de trous compte un parcours de golf complet ?",
+      "reponse": "18",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel ancien téléphone fallait-il tourner avec le doigt pour composer un numéro ?",
+      "reponse": "Le téléphone à cadran",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel cowboy jouet a un serpent dans sa botte ?",
+      "reponse": "Woody",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile porte une carapace sur son dos ?",
+      "reponse": "La tortue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle noix compose le beurre le plus vendu ?",
+      "reponse": "L'arachide",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Combien de syllabes compte le mot « chocolat » ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel lait fouetté avec crème glacée est un dessert à boire ?",
+      "reponse": "Le lait frappé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Kremlin ?",
+      "reponse": "Moscou",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du serpent ?",
+      "reponse": "Le sifflement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne le manteau et la salopette d'hiver des enfants ?",
+      "reponse": "L'habit de neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel équipement protège la tête à vélo et au hockey ?",
+      "reponse": "Le casque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on une histoire de fées, de princes et de sorcières ?",
+      "reponse": "Un conte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a pour emblème le coq ?",
+      "reponse": "La France",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -24,111 +162,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle friandise glacée se vend en tube de plastique à congeler ?",
-      "reponse": "Le Mr. Freeze",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel gros chien rouge de livres pour enfants est devenu un film ?",
-      "reponse": "Clifford",
-      "niveau": 1,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel minuscule oiseau peut voler en arrière ?",
-      "reponse": "Le colibri",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson fumé garnit le bagel classique ?",
-      "reponse": "Le saumon fumé",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Abu, l'ami d'Aladin ?",
-      "reponse": "Un singe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel numéro portait Wayne Gretzky ?",
-      "reponse": "99",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle science étudie les vestiges anciens ?",
-      "reponse": "L'archéologie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel conte Disney une rose est-elle sous cloche ?",
-      "reponse": "La Belle et la Bête",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles croustilles de maïs accompagnent la salsa ?",
-      "reponse": "Les nachos",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel animal est surnommé le roi de la jungle ?",
-      "reponse": "Le lion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glace utilise des pierres et des balais ?",
-      "reponse": "Le curling",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple a construit le Colisée et les aqueducs ?",
-      "reponse": "Les Romains",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus haut sommet du monde ?",
-      "reponse": "L'Everest",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage de Sesame Street est un grand oiseau jaune ?",
-      "reponse": "Big Bird",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Québec",
-      "question": "Quelle crise de janvier 1998 a privé le Québec de courant ?",
-      "reponse": "Le verglas",
+      "question": "Quel quartier historique de Québec est fortifié ?",
+      "reponse": "Le Vieux-Québec",
       "niveau": 1,
       "ages": [
         "ados",
@@ -137,20 +173,9 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel élément chimique a le symbole C ?",
-      "reponse": "Le carbone",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du chat ?",
-      "reponse": "Le miaulement",
+      "categorie": "Cinéma et télé",
+      "question": "Quel pirate est l'ennemi juré de Peter Pan ?",
+      "reponse": "Capitaine Crochet",
       "niveau": 1
     },
     {
@@ -160,42 +185,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir les yeux dans la graisse de bines ?",
-      "reponse": "Être dans la lune",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Féminin de dieu ?",
-      "reponse": "Déesse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on l'opéra aux voiles blanches ?",
-      "reponse": "Sydney",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle est la capitale nationale du Québec ?",
-      "reponse": "Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quels organes filtrent le sang ?",
-      "reponse": "Les reins",
+      "categorie": "Culture pop",
+      "question": "Quel casse-tête coloré à six faces se replace en tournant ses rangées ?",
+      "reponse": "Le Rubik's Cube",
       "niveau": 1
     }
   ]

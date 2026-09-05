@@ -7,83 +7,114 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "De quelle couleur sont les habitants de Pandora ?",
-      "reponse": "Bleus",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comédie musicale suit une famille autrichienne ?",
-      "reponse": "Mélodie du bonheur",
+      "categorie": "Sports",
+      "question": "Combien de minutes dure un quart au football américain ?",
+      "reponse": "Quinze",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Dans quel pays grille-t-on soi-même sa viande sur un gril au centre de la table ?",
-      "reponse": "La Corée",
+      "question": "De quel pays vient la tequila ?",
+      "reponse": "Le Mexique",
       "niveau": 1,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle militante pakistanaise a reçu le Nobel de la paix ?",
+      "reponse": "Malala",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle protéine transporte l'oxygène dans le sang ?",
+      "reponse": "L'hémoglobine",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel escargot de course devient ultra rapide au cinéma ?",
+      "reponse": "Turbo",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles espadrilles portent le nom d'une vedette du basketball et un logo de sauteur ?",
+      "reponse": "Les Air Jordan",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle tartelette portugaise est à la crème ?",
+      "reponse": "Pastel de nata",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel acteur muet portait un chapeau melon et une canne ?",
+      "reponse": "Charlie Chaplin",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel groupe québécois a chanté Dehors novembre ?",
+      "reponse": "Les Colocs",
+      "niveau": 2,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
-      "reponse": "Les Pyrénées",
-      "niveau": 1,
+      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
+      "reponse": "La Finlande",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Tous les combien d'années a lieu la Coupe du monde de soccer ?",
-      "reponse": "Quatre ans",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel instrument sert à observer les étoiles ?",
-      "reponse": "Le télescope",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne la pièce de 25 cents ?",
-      "reponse": "Un trente sous",
+      "categorie": "Culture pop",
+      "question": "Quel véhicule récréatif se tire derrière l'auto pour camper ?",
+      "reponse": "La roulotte",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Qui était le chanteur de Queen ?",
-      "reponse": "Freddie Mercury",
-      "niveau": 2,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -100,27 +131,78 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment s'appelle le petit de l'éléphant ?",
-      "reponse": "L'éléphanteau",
+      "question": "Quel est le cri de l'âne ?",
+      "reponse": "Le braiment",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe britannique a chanté Bohemian Rhapsody ?",
+      "reponse": "Queen",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on les mots d'une chanson ?",
+      "reponse": "Les paroles",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle fleur jaune devient une boule de duvet qu'on souffle ?",
-      "reponse": "Le pissenlit",
-      "niveau": 1
+      "categorie": "Québec",
+      "question": "Quel restaurant montréalais est célèbre pour son smoked meat ?",
+      "reponse": "Schwartz",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays vivent les kangourous ?",
-      "reponse": "L'Australie",
+      "question": "Quel lac est le plus profond du monde ?",
+      "reponse": "Le Baïkal",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on une personne qui parle deux langues ?",
+      "reponse": "Bilingue",
       "niveau": 1
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
+      "reponse": "Le Banquier",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Histoire",
-      "question": "Quel jour célèbre-t-on l'Armistice de 1918 ?",
-      "reponse": "Le 11 novembre",
-      "niveau": 1
+      "question": "Dans quelle ville Jeanne d'Arc fut-elle brûlée ?",
+      "reponse": "Rouen",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -134,98 +216,42 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie « être têtu comme une mule » ?",
-      "reponse": "Être très têtu",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
-      "reponse": "Le club sandwich",
-      "niveau": 1,
+      "categorie": "Sports",
+      "question": "Dans quel sport marque-t-on des essais ?",
+      "reponse": "Le rugby",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle légende québécoise fait voler un canot ?",
-      "reponse": "La chasse-galerie",
-      "niveau": 1,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel tambour à main vient d'Irlande ?",
-      "reponse": "Le bodhrán",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on un corps embaumé et enveloppé de bandelettes ?",
-      "reponse": "Une momie",
+      "question": "Dans quelle comptine un fermier a-t-il des animaux qui font chacun leur cri ?",
+      "reponse": "Dans la ferme de Mathurin",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel extraterrestre veut téléphoner à la maison ?",
-      "reponse": "E.T.",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon dirige la Pat' Patrouille ?",
-      "reponse": "Ryder",
+      "categorie": "Sciences et nature",
+      "question": "Qui a développé la théorie de la relativité ?",
+      "reponse": "Einstein",
       "niveau": 1,
       "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel repas de fête se prend après la messe de minuit, la nuit du 24 décembre ?",
-      "reponse": "Le réveillon",
-      "niveau": 2,
-      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Edmonton ?",
-      "reponse": "Les Oilers",
-      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel est l'arbre emblème du Québec ?",
-      "reponse": "Le bouleau jaune",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle boisson pour sportifs a un éclair dans son logo ?",
-      "reponse": "Le Gatorade",
+      "question": "Combien de ponts mènent à l'île d'Orléans ?",
+      "reponse": "Un seul",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     }
   ]

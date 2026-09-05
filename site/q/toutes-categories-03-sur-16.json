@@ -7,89 +7,10 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quel pays vient le champagne ?",
-      "reponse": "La France",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel joueur québécois des Penguins était surnommé le Magnifique ?",
-      "reponse": "Mario Lemieux",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magasin canadien remet à ses clients une fausse monnaie imprimée ?",
-      "reponse": "Canadian Tire",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de doigts a-t-on sur une main ?",
-      "reponse": "Cinq",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle panthère noire protège Mowgli ?",
+      "reponse": "Bagheera",
       "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle chaîne de dépanneurs québécoise a un hibou ?",
-      "reponse": "Couche-Tard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quel pays vient la tequila ?",
-      "reponse": "Le Mexique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel gardien des Canadiens a porté le premier masque ?",
-      "reponse": "Jacques Plante",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel groupe sanguin est donneur universel ?",
-      "reponse": "O négatif",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quels petits élastiques colorés se tressent en bracelets sur un métier ?",
-      "reponse": "Les Rainbow Loom",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
     },
     {
       "categorie": "Culture générale",
@@ -103,9 +24,48 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel chanteur incarnait Danny dans Grease ?",
-      "reponse": "John Travolta",
+      "categorie": "Québec",
+      "question": "Quel film de Denys Arcand a gagné un Oscar ?",
+      "reponse": "Invasions barbares",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel télescope spatial a été lancé en 1990 ?",
+      "reponse": "Hubble",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel officiel siffle les punitions ?",
+      "reponse": "L'arbitre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Que devient un têtard ?",
+      "reponse": "Une grenouille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel océan traverse-t-on en avion pour aller du Canada à la France ?",
+      "reponse": "L'Atlantique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle émission culte met en scène Popa et Moman ?",
+      "reponse": "La Petite Vie",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -114,25 +74,14 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un âne toujours triste ?",
-      "reponse": "Bourriquet",
+      "question": "Quel sport sorcier se joue sur des balais ?",
+      "reponse": "Le quidditch",
       "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la vitesse approximative de la lumière ?",
-      "reponse": "300 000 km/s",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle épidémie a ravagé l'Europe au 14e siècle ?",
-      "reponse": "La peste noire",
+      "question": "Comment appelle-t-on la route commerciale qui reliait la Chine à l'Europe ?",
+      "reponse": "La route de la soie",
       "niveau": 2,
       "ages": [
         "ados",
@@ -141,16 +90,59 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel océan borde la côte ouest du Canada ?",
-      "reponse": "Le Pacifique",
+      "categorie": "Mots et langue",
+      "question": "Quel dictionnaire français célèbre est illustré ?",
+      "reponse": "Le Petit Larousse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de doigts a-t-on sur une main ?",
+      "reponse": "Cinq",
       "niveau": 1
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine du pad thaï ?",
+      "reponse": "La Thaïlande",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel chanteur québécois a chanté La désise ?",
+      "reponse": "Daniel Boucher",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Sports",
-      "question": "Quel art martial signifie voie de la souplesse ?",
-      "reponse": "Le judo",
-      "niveau": 3,
+      "question": "Quel sport pratique Tiger Woods ?",
+      "reponse": "Le golf",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle famille préhistorique conduit une voiture à pédales ?",
+      "reponse": "Les Pierrafeu",
+      "niveau": 1,
       "ages": [
         "adultes",
         "aines"
@@ -158,26 +150,8 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel pain français long et croustillant est emblématique ?",
-      "reponse": "La baguette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui écrit la musique d'une chanson ?",
-      "reponse": "Le compositeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quels animaux revivent dans Jurassic Park ?",
-      "reponse": "Les dinosaures",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays possède le mont Fuji ?",
-      "reponse": "Le Japon",
+      "question": "Quel pain plat indien cuit dans un four tandoor ?",
+      "reponse": "Le naan",
       "niveau": 1,
       "ages": [
         "ados",
@@ -186,27 +160,35 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Dans quel sport évolue-t-on sur une poutre ?",
-      "reponse": "La gymnastique",
+      "categorie": "Musique",
+      "question": "Quel gros instrument à vent se porte enroulé autour du corps dans les fanfares ?",
+      "reponse": "Le soubassophone",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas mange-t-on traditionnellement le matin ?",
+      "reponse": "Le déjeuner",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel patrouilleur de l'espace dit Vers l'infini et plus loin ?",
-      "reponse": "Buzz",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Où regardait-on un film assis dans son auto, l'été ?",
+      "reponse": "Au ciné-parc",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel mot commençant par J veut dire « très content » ?",
-      "reponse": "Joyeux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle organisation internationale, fondée en 1945, a son siège à New York ?",
-      "reponse": "L'ONU",
+      "categorie": "Sciences et nature",
+      "question": "Combien de chromosomes possède l'humain ?",
+      "reponse": "46",
       "niveau": 2,
       "ages": [
         "ados",
@@ -216,13 +198,39 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Petit de l'aigle ?",
-      "reponse": "L'aiglon",
+      "question": "Que signifie le mot québécois magasiner ?",
+      "reponse": "Faire des achats",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe américain a chanté Believer et Radioactive ?",
+      "reponse": "Imagine Dragons",
       "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+      "reponse": "Les Pyrénées",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?",
+      "reponse": "Luca",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
       ]
     }
   ]

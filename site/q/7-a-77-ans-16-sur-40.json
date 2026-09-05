@@ -7,20 +7,21 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la paella ?",
-      "reponse": "L'Espagne",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Quel film de Disney suit un éléphant aux grandes oreilles ?",
+      "reponse": "Dumbo",
+      "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?",
-      "reponse": "Le football",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert coloré tremble dans son bol et se prépare avec de la poudre ?",
+      "reponse": "Le Jell-O",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz rend les ballons de fête flottants ?",
+      "reponse": "L'hélium",
       "niveau": 1
     },
     {
@@ -34,85 +35,76 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la majorité de l'Amazonie ?",
-      "reponse": "Le Brésil",
+      "categorie": "Musique",
+      "question": "Quelle chanteuse québécoise a chanté pour Titanic ?",
+      "reponse": "Céline Dion",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport glisse sur l'eau tiré par un bateau ?",
+      "reponse": "Le ski nautique",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Petit de la poule ?",
-      "reponse": "Le poussin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel grand reptile du Nil était sacré en Égypte ?",
-      "reponse": "Le crocodile",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Pluriel de cheval ?",
-      "reponse": "Chevaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle forme donne-t-on au poisson pané pour les enfants ?",
-      "reponse": "Des bâtonnets",
-      "niveau": 1
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation organise un grand concours de chant entre animaux ?",
+      "reponse": "Tous en scène",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle céréale compose le gruau ?",
-      "reponse": "L'avoine",
+      "question": "Quel sucre brun humide parfume les biscuits ?",
+      "reponse": "La cassonade",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la suite secrète de caractères qui protège un compte ?",
+      "reponse": "Un mot de passe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle créature verte vit dans un marais ?",
+      "reponse": "Shrek",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel animal domestique les Égyptiens adoraient-ils au point de le momifier ?",
-      "reponse": "Le chat",
-      "niveau": 1
+      "question": "Quel code de points et de traits date de 1838 ?",
+      "reponse": "Le morse",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Langue parlée en Égypte ?",
-      "reponse": "L'arabe",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de sens possède l'être humain ?",
-      "reponse": "Cinq",
+      "question": "Quel est le plus grand pays du monde ?",
+      "reponse": "La Russie",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel savant grec a donné son nom à la poussée qui fait flotter les bateaux ?",
-      "reponse": "Archimède",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans « Savez-vous planter les choux », avec quoi les plante-t-on en premier ?",
-      "reponse": "Le doigt",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle société d'État a le monopole de la vente d'alcool au Québec ?",
-      "reponse": "La SAQ",
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la peur des espaces clos ?",
+      "reponse": "La claustrophobie",
       "niveau": 1,
       "ages": [
         "ados",
@@ -127,9 +119,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Qui a développé la théorie de la relativité ?",
-      "reponse": "Einstein",
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on une personne qui parle deux langues ?",
+      "reponse": "Bilingue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel élément croquant garnit la salade César ?",
+      "reponse": "Des croûtons",
       "niveau": 1,
       "ages": [
         "ados",
@@ -138,68 +136,67 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel cidre québécois est pressé après les gelées ?",
-      "reponse": "Cidre de glace",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on une chanson sans instruments ?",
-      "reponse": "A cappella",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel directeur de Poudlard a une longue barbe blanche ?",
-      "reponse": "Dumbledore",
+      "categorie": "Sports",
+      "question": "Quel sprinteur détient le record du 100 mètres ?",
+      "reponse": "Usain Bolt",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quel signe de ponctuation sépare deux idées dans une phrase ?",
-      "reponse": "La virgule",
+      "question": "Pluriel de cheval ?",
+      "reponse": "Chevaux",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "De quelle planète vient Superman ?",
-      "reponse": "Krypton",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la tournée d'un artiste dans plusieurs villes ?",
+      "reponse": "Une tournée",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport se pratique dans une piscine ?",
-      "reponse": "La natation",
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle le passage de liquide à gaz ?",
+      "reponse": "L'évaporation",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle chanson de Vigneault sert d'hymne populaire ?",
-      "reponse": "Gens du pays",
+      "question": "Quel zoo québécois est dédié à la faune nordique ?",
+      "reponse": "Saint-Félicien",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel muscle bat sans jamais se reposer ?",
+      "reponse": "Le cœur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de sens possède l'être humain ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a un drapeau avec une étoile de David ?",
+      "reponse": "Israël",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chiot dalmatien de la Pat' Patrouille est pompier ?",
-      "reponse": "Marcus",
+      "categorie": "Québec",
+      "question": "Quelle soupe jaune est un classique québécois ?",
+      "reponse": "Soupe aux pois",
       "niveau": 1,
       "ages": [
-        "enfants"
+        "ados",
+        "adultes",
+        "aines"
       ]
     }
   ]

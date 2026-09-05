@@ -7,70 +7,49 @@
   "emoji": "🧠",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle vitamine trouve-t-on dans les oranges ?",
-      "reponse": "La vitamine C",
+      "categorie": "Sciences et nature",
+      "question": "Quel minéral renforce les os ?",
+      "reponse": "Le calcium",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de dents de lait a un enfant ?",
-      "reponse": "20",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir le cœur sur la main ?",
-      "reponse": "Être généreux",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle articulation relie la cuisse à la jambe ?",
+      "reponse": "Le genou",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la plus petite unité du vivant ?",
-      "reponse": "La cellule",
+      "question": "Quel organe contrôle tout le corps ?",
+      "reponse": "Le cerveau",
       "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel muscle bat sans jamais se reposer ?",
+      "reponse": "Le cœur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle est la fleur emblème du Québec ?",
+      "reponse": "Iris versicolore",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel casque de réalité virtuelle se porte sur les yeux pour entrer dans le jeu ?",
-      "reponse": "Un casque VR",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien d'os dans le squelette humain adulte ?",
-      "reponse": "206",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit orange à peau veloutée cache un gros noyau ?",
-      "reponse": "La pêche",
+      "question": "Combien de sens possède l'être humain ?",
+      "reponse": "Cinq",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Le pluriel de genou prend un S ou un X ?",
-      "reponse": "Un X",
+      "question": "Pluriel de œil ?",
+      "reponse": "Yeux",
       "niveau": 1
     },
     {
@@ -85,26 +64,15 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel géant mythologique n'a qu'un seul œil ?",
-      "reponse": "Le cyclope",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu consiste à se cacher pendant qu'un joueur compte les yeux fermés ?",
-      "reponse": "La cachette",
+      "categorie": "Sciences et nature",
+      "question": "Quel organe pompe le sang ?",
+      "reponse": "Le cœur",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de cavités possède le cœur humain ?",
-      "reponse": "Quatre",
+      "question": "Quel groupe sanguin est donneur universel ?",
+      "reponse": "O négatif",
       "niveau": 2,
       "ages": [
         "ados",
@@ -114,9 +82,59 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quels organes filtrent le sang ?",
-      "reponse": "Les reins",
+      "question": "Quel tube relie la bouche à l'estomac ?",
+      "reponse": "L'œsophage",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie coûter les yeux de la tête ?",
+      "reponse": "Coûter très cher",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?",
+      "reponse": "Luca",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quels marins portaient un bandeau sur l'œil et cherchaient des trésors ?",
+      "reponse": "Les pirates",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de côtés a un carré ?",
+      "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelles cellules du sang combattent les infections ?",
+      "reponse": "Globules blancs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle vitamine fabrique la peau au soleil ?",
+      "reponse": "La vitamine D",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
@@ -129,56 +147,15 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Qui laisse de l'argent sous l'oreiller en échange d'une dent ?",
-      "reponse": "La fée des dents",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat botté a de grands yeux attendrissants ?",
-      "reponse": "Chat Potté",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand organe du corps humain ?",
-      "reponse": "La peau",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel liquide rouge circule dans nos veines ?",
-      "reponse": "Le sang",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quels organes nous permettent d'entendre ?",
-      "reponse": "Les oreilles",
+      "question": "Quels organes nous permettent de voir ?",
+      "reponse": "Les yeux",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Combien de côtés a un carré ?",
-      "reponse": "Quatre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel objet de papier mâché rempli de bonbons se frappe les yeux bandés ?",
-      "reponse": "La piñata",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle lumière invisible bronze la peau ?",
-      "reponse": "Les ultraviolets",
+      "question": "Quel géant mythologique n'a qu'un seul œil ?",
+      "reponse": "Le cyclope",
       "niveau": 1,
       "ages": [
         "ados",
@@ -187,14 +164,32 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel chirurgien a réalisé la première greffe du cœur ?",
-      "reponse": "Christiaan Barnard",
+      "categorie": "Sciences et nature",
+      "question": "Quel os protège le cerveau ?",
+      "reponse": "Le crâne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle vitamine trouve-t-on dans les oranges ?",
+      "reponse": "La vitamine C",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à dents pincées accompagne le folklore ?",
+      "reponse": "La guimbarde",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels organes filtrent le sang ?",
+      "reponse": "Les reins",
+      "niveau": 1
     }
   ]
 }

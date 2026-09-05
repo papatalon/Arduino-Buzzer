@@ -7,9 +7,49 @@
   "emoji": "🎲",
   "questions": [
     {
+      "categorie": "Sports",
+      "question": "Quelle épreuve combine dix disciplines ?",
+      "reponse": "Le décathlon",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant alpin alterne voix de tête et de poitrine ?",
+      "reponse": "Le yodel",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Combien de syllabes compte le mot « chocolat » ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
       "categorie": "Histoire",
-      "question": "Quel savant italien a braqué une lunette vers le ciel ?",
-      "reponse": "Galilée",
+      "question": "Quelle machine de siège lançait des pierres par-dessus les murailles ?",
+      "reponse": "La catapulte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
+      "reponse": "Les Boys",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de points vaut un touché au football ?",
+      "reponse": "Six",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,9 +59,9 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel est l'oiseau emblème du Québec ?",
-      "reponse": "Harfang des neiges",
-      "niveau": 2,
+      "question": "Quel rocher troué est l'emblème de la Gaspésie ?",
+      "reponse": "Le rocher Percé",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -29,12 +69,11 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Qui a développé la théorie de la relativité ?",
-      "reponse": "Einstein",
+      "categorie": "Cinéma et télé",
+      "question": "Quel jeu télévisé fait tourner une grande roue ?",
+      "reponse": "La Roue de fortune",
       "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -47,8 +86,14 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du sanglier ?",
-      "reponse": "La laie",
+      "question": "Quel est le féminin de lion ?",
+      "reponse": "Lionne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de vertèbres a le cou d'une girafe ?",
+      "reponse": "Sept",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -56,36 +101,20 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel calendrier, adopté en 1582, utilisons-nous ?",
-      "reponse": "Le grégorien",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Culture pop",
+      "question": "Quel jeu retire une chaise à chaque tour pendant que la musique joue ?",
+      "reponse": "La chaise musicale",
+      "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville d'Australie ?",
-      "reponse": "Sydney",
-      "niveau": 2,
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel thé japonais en poudre est vert vif ?",
+      "reponse": "Le matcha",
+      "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel est le sport national d'été du Canada ?",
-      "reponse": "La crosse",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
@@ -95,10 +124,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "De quelle langue vient le mot algèbre ?",
-      "reponse": "L'arabe",
-      "niveau": 2,
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel jambon italien se mange en tranches fines ?",
+      "reponse": "Le prosciutto",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -106,9 +135,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
-      "reponse": "La podorythmie",
+      "categorie": "Histoire",
+      "question": "Qui était le dernier tsar de Russie ?",
+      "reponse": "Nicolas II",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -116,51 +145,42 @@
       ]
     },
     {
+      "categorie": "Musique",
+      "question": "Quel compositeur autrichien est le roi de la valse ?",
+      "reponse": "Strauss",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel colonel a fondé la chaîne de poulet PFK ?",
-      "reponse": "Sanders",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Vietnam ?",
-      "reponse": "Hanoï",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
-      "reponse": "Quétaine",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel poisson orange est populaire en sushi ?",
+      "reponse": "Le saumon",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel cowboy de BD tire plus vite que son ombre ?",
-      "reponse": "Lucky Luke",
-      "niveau": 1,
+      "question": "Comment s'appelle le meilleur ami roux de Harry Potter ?",
+      "reponse": "Ron Weasley",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gala québécois récompense le cinéma ?",
+      "reponse": "Les Iris",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est le symbole chimique du sodium ?",
-      "reponse": "Na",
+      "question": "Quel animal est le plus gros rongeur du monde ?",
+      "reponse": "Le capybara",
       "niveau": 2,
       "ages": [
         "ados",
@@ -169,36 +189,26 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Combien de quarts compte un match de la NBA ?",
-      "reponse": "Quatre",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle famille de super-héros Pixar porte du rouge ?",
-      "reponse": "Les Incroyables",
+      "categorie": "Géographie",
+      "question": "Sur quel continent se trouve le désert du Sahara ?",
+      "reponse": "L'Afrique",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
-      "reponse": "Dans une galaxie près de chez vous",
-      "niveau": 3,
+      "question": "Quelle société d'État diffuse la télévision publique en français au Canada ?",
+      "reponse": "Radio-Canada",
+      "niveau": 2,
       "ages": [
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel cidre québécois est pressé après les gelées ?",
-      "reponse": "Cidre de glace",
-      "niveau": 1,
+      "question": "Quelle taxe québécoise s'ajoute à la taxe fédérale sur les achats ?",
+      "reponse": "La TVQ",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -206,39 +216,12 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Que fait le public avec ses mains à la fin d'un spectacle ?",
-      "reponse": "Il applaudit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel dinosaure vert craintif vit dans Toy Story ?",
-      "reponse": "Rex",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle infusion sud-africaine est naturellement rouge ?",
-      "reponse": "Le rooibos",
-      "niveau": 3,
+      "categorie": "Géographie",
+      "question": "Capitale de l'Ontario ?",
+      "reponse": "Toronto",
+      "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte farcie italienne forme des coussins ?",
-      "reponse": "Les raviolis",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle ville se proclame capitale mondiale de l'érable ?",
-      "reponse": "Plessisville",
-      "niveau": 3,
-      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]

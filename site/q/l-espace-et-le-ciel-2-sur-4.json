@@ -7,15 +7,20 @@
   "emoji": "🪐",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quelles chaussures de caoutchouc percées de trous divisent la planète ?",
-      "reponse": "Les Crocs",
-      "niveau": 1,
+      "categorie": "Histoire",
+      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
+      "reponse": "Challenger",
+      "niveau": 2,
       "ages": [
-        "enfants",
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète a été rétrogradée en planète naine ?",
+      "reponse": "Pluton",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
@@ -24,9 +29,54 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel mois vient après mars ?",
-      "reponse": "Avril",
+      "categorie": "Sciences et nature",
+      "question": "Quel effet atmosphérique réchauffe la planète ?",
+      "reponse": "L'effet de serre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle région québécoise occupe un cratère de météorite ?",
+      "reponse": "Charlevoix",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène lumineux colore le ciel polaire ?",
+      "reponse": "Aurore boréale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle maladie a confiné la planète entière au printemps 2020 ?",
+      "reponse": "La COVID-19",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film de 1977 s'ouvre sur « Il y a bien longtemps, dans une galaxie lointaine » ?",
+      "reponse": "La Guerre des étoiles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
+      "reponse": "Le Japon",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle semaine de congé coupe l'hiver scolaire au début de mars ?",
+      "reponse": "La semaine de relâche",
       "niveau": 1
     },
     {
@@ -37,75 +87,36 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?",
-      "reponse": "L'arc-en-ciel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
-      "reponse": "L'étoile de mer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète a les anneaux les plus spectaculaires ?",
-      "reponse": "Saturne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
-      "reponse": "Les Gardiens",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel trompettiste a chanté What a Wonderful World ?",
-      "reponse": "Louis Armstrong",
+      "question": "Quelle est la planète la plus éloignée du Soleil ?",
+      "reponse": "Neptune",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie être dans la lune ?",
-      "reponse": "Être distrait",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature bleue de Disney, échappée de l'espace, s'appelle l'expérience 626 ?",
-      "reponse": "Stitch",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de planètes dans le système solaire ?",
-      "reponse": "Huit",
+      "categorie": "Cinéma et télé",
+      "question": "Quel méchant des Minions veut voler la Lune ?",
+      "reponse": "Gru",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "De quel côté se lève le soleil ?",
-      "reponse": "À l'est",
+      "question": "De quel côté se couche le soleil ?",
+      "reponse": "À l'ouest",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel style musical coréen a conquis la planète ?",
-      "reponse": "La K-pop",
-      "niveau": 1,
+      "categorie": "Culture générale",
+      "question": "Quel métal est liquide à température ambiante ?",
+      "reponse": "Le mercure",
+      "niveau": 2,
       "ages": [
-        "enfants",
-        "ados"
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -120,33 +131,44 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
-      "reponse": "Dans une galaxie près de chez vous",
+      "categorie": "Histoire",
+      "question": "En quelle année l'homme a-t-il marché sur la Lune ?",
+      "reponse": "1969",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel rover s'est posé sur Mars en 2012 ?",
+      "reponse": "Curiosity",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la plus grosse planète du système solaire ?",
-      "reponse": "Jupiter",
+      "question": "Quelle est l'étoile la plus proche de la Terre ?",
+      "reponse": "Le Soleil",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel effet atmosphérique réchauffe la planète ?",
-      "reponse": "L'effet de serre",
+      "categorie": "Québec",
+      "question": "Quel cirque québécois est connu mondialement ?",
+      "reponse": "Cirque du Soleil",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle vitamine fabrique la peau au soleil ?",
-      "reponse": "La vitamine D",
-      "niveau": 2,
+      "categorie": "Histoire",
+      "question": "Quelle station spatiale russe a précédé l'ISS ?",
+      "reponse": "Mir",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]

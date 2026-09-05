@@ -7,87 +7,16 @@
   "emoji": "⛷️",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel sport pratique la famille Hart de Calgary ?",
-      "reponse": "La lutte",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu de table fait glisser une rondelle sur un coussin d'air ?",
-      "reponse": "Le hockey sur air",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
-      "question": "Quel traîneau de bois aux lattes recourbées glisse sur la neige au Québec ?",
-      "reponse": "La traîne sauvage",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel outil racle la neige des pare-brise ?",
-      "reponse": "Un gratteux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle mascotte orange et poilue est passée des Expos aux Canadiens ?",
-      "reponse": "Youppi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur des Capitals a marqué plus de 900 buts ?",
-      "reponse": "Ovechkin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel objet frappe-t-on au hockey ?",
-      "reponse": "La rondelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on au Québec la neige mouillée et boueuse du printemps ?",
-      "reponse": "La slush",
+      "question": "Quelle opération municipale suit chaque bordée de neige dans les rues ?",
+      "reponse": "Le déneigement",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
-      "reponse": "Le slalom",
+      "question": "Quel pays est le berceau du hockey sur glace ?",
+      "reponse": "Le Canada",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?",
-      "reponse": "La tire sur la neige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
-      "reponse": "Tessa Virtue",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
     },
     {
       "categorie": "Sports",
@@ -102,59 +31,14 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel cidre québécois est pressé après les gelées ?",
-      "reponse": "Cidre de glace",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle discipline olympique note des figures sur glace ?",
-      "reponse": "Patinage artistique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de motoneige est née au Québec ?",
-      "reponse": "Ski-Doo",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
-      "reponse": "La granita",
+      "question": "Quelle équipe de hockey junior joue au Centre Vidéotron de Québec ?",
+      "reponse": "Les Remparts",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glace utilise des pierres et des balais ?",
-      "reponse": "Le curling",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de temps dure une punition mineure au hockey ?",
-      "reponse": "Deux minutes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment s'appelle le joueur qui garde le filet au hockey ?",
-      "reponse": "Le gardien de but",
-      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -168,14 +52,152 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport olympique mélange saut à ski et ski de fond ?",
-      "reponse": "Combiné nordique",
+      "question": "Combien de périodes dans un match de hockey ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne une tempête de neige ?",
+      "reponse": "Une bordée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport combine ski de fond et tir ?",
+      "reponse": "Le biathlon",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel capitaine des Canadiens a soulevé la coupe en 1993 ?",
+      "reponse": "Guy Carbonneau",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission du samedi soir diffusait le hockey à Radio-Canada ?",
+      "reponse": "La Soirée du hockey",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel équipement large attaché aux pieds empêche de caler dans la neige épaisse ?",
+      "reponse": "Les raquettes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle reine a des pouvoirs de glace chez Disney ?",
+      "reponse": "Elsa",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
+      "reponse": "Le ballon-balai",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel hébergement québécois est rebâti chaque hiver ?",
+      "reponse": "Hôtel de glace",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle mascotte orange et poilue est passée des Expos aux Canadiens ?",
+      "reponse": "Youppi",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel équipement protège la tête à vélo et au hockey ?",
+      "reponse": "Le casque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
+      "reponse": "Tessa Virtue",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport glisse sur l'eau tiré par un bateau ?",
+      "reponse": "Le ski nautique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel objet frappe-t-on au hockey ?",
+      "reponse": "La rondelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le bonhomme de neige de La Reine des neiges ?",
+      "reponse": "Olaf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de hockey joue à Toronto ?",
+      "reponse": "Les Maple Leafs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
+      "reponse": "Alexandre Bilodeau",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel est le sport national d'hiver du Canada ?",
+      "reponse": "Le hockey",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel traîneau de bois aux lattes recourbées glisse sur la neige au Québec ?",
+      "reponse": "La traîne sauvage",
+      "niveau": 1
     }
   ]
 }

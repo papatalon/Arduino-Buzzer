@@ -7,19 +7,85 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel pays a accueilli la Coupe du monde 2022 ?",
-      "reponse": "Le Qatar",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle vinaigrette porte le nom d'un archipel ?",
+      "reponse": "Mille-Îles",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple scandinave naviguait sur des drakkars ?",
+      "reponse": "Les Vikings",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel animal rugit ?",
+      "reponse": "Le lion",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chienne bleue australienne joue avec sa sœur Bingo dans une série ?",
+      "reponse": "Bluey",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mont de l'Estrie abrite un observatoire célèbre ?",
+      "reponse": "Le mont Mégantic",
       "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile peut vivre plus de 150 ans ?",
+      "reponse": "La tortue géante",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple autochtone a accueilli Jacques Cartier à son arrivée ?",
+      "reponse": "Les Iroquoiens",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Langue parlée en Autriche ?",
-      "reponse": "L'allemand",
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir de l'eau dans la cave ?",
+      "reponse": "Pantalon trop court",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un volant ?",
+      "reponse": "Le badminton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel tournoi de tennis se joue sur gazon à Londres ?",
+      "reponse": "Wimbledon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -29,14 +95,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne les moustiques ?",
-      "reponse": "Les maringouins",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel château fut la résidence de Louis XIV ?",
-      "reponse": "Versailles",
+      "question": "Combien de fleurs de lys sur le drapeau du Québec ?",
+      "reponse": "Quatre",
       "niveau": 1,
       "ages": [
         "ados",
@@ -45,9 +105,9 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel tournoi de tennis se joue sur terre battue à Paris ?",
-      "reponse": "Roland-Garros",
+      "categorie": "Géographie",
+      "question": "Capitale du Danemark ?",
+      "reponse": "Copenhague",
       "niveau": 2,
       "ages": [
         "ados",
@@ -56,47 +116,21 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel concours de Tim Hortons fait dérouler le rebord d'un gobelet ?",
-      "reponse": "Roll Up the Rim",
-      "niveau": 2,
+      "categorie": "Musique",
+      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
+      "reponse": "Loud",
+      "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle couleur obtient-on en mélangeant du rouge et du jaune ?",
-      "reponse": "Orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du serpent ?",
-      "reponse": "Le sifflement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle confiserie blanche flotte sur le chocolat chaud ?",
-      "reponse": "La guimauve",
-      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel poisson bleu perd la mémoire dans Nemo ?",
-      "reponse": "Dory",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la planète la plus éloignée du Soleil ?",
-      "reponse": "Neptune",
+      "question": "Quel inspecteur maladroit poursuit la Panthère rose ?",
+      "reponse": "Clouseau",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -112,37 +146,10 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel compositeur autrichien est le roi de la valse ?",
-      "reponse": "Strauss",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit jaune les singes adorent-ils ?",
-      "reponse": "La banane",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel capitaine des Penguins est surnommé Sid the Kid ?",
-      "reponse": "Sidney Crosby",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse colombienne a chanté Waka Waka ?",
-      "reponse": "Shakira",
-      "niveau": 1,
+      "question": "Quel fruit garnit la tarte Tatin ?",
+      "reponse": "La pomme",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -151,8 +158,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Combien de territoires compte le Canada ?",
-      "reponse": "Trois",
+      "question": "Quel golfe borde le Texas et la Floride ?",
+      "reponse": "Golfe du Mexique",
       "niveau": 1,
       "ages": [
         "ados",
@@ -161,9 +168,9 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel quartier historique de Québec est fortifié ?",
-      "reponse": "Le Vieux-Québec",
+      "categorie": "Sports",
+      "question": "Combien vaut un placement au football ?",
+      "reponse": "Trois points",
       "niveau": 1,
       "ages": [
         "ados",
@@ -173,61 +180,57 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanson enfantine parle d'un petit navire qui n'avait jamais navigué ?",
-      "reponse": "Il était un petit navire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la roche fondue sous terre ?",
-      "reponse": "Le magma",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle sitcom suit des physiciens et leur voisine Penny ?",
-      "reponse": "Big Bang Theory",
-      "niveau": 1,
+      "question": "Quelle chanson de Nirvana commence par un riff de guitare devenu emblème du grunge ?",
+      "reponse": "Smells Like Teen Spirit",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quels ninjas de Lego portent chacun une couleur et un élément ?",
-      "reponse": "Ninjago",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
-      "reponse": "Bugs Bunny",
+      "question": "Quelle dépanneuse rouillée est l'amie de Flash McQueen ?",
+      "reponse": "Mater",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle brebis clonée est née en 1996 ?",
-      "reponse": "Dolly",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "De quelle langue vient le mot pyjama ?",
-      "reponse": "Le persan",
+      "categorie": "Musique",
+      "question": "À quelle famille d'instruments appartient la flûte ?",
+      "reponse": "Les bois",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
+      "reponse": "Grand Theft Auto",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle couleur obtient-on en mélangeant du rouge et du jaune ?",
+      "reponse": "Orange",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film de Disney suit un éléphant aux grandes oreilles ?",
+      "reponse": "Dumbo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est l'os le plus long du corps humain ?",
+      "reponse": "Le fémur",
+      "niveau": 1
     }
   ]
 }

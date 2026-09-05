@@ -8,9 +8,45 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Edmonton ?",
-      "reponse": "Les Oilers",
-      "niveau": 1
+      "question": "Quel trophée récompense le meilleur marqueur de la LNH ?",
+      "reponse": "Art Ross",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel petit poisson pêche-t-on sous la glace à La Pérade ?",
+      "reponse": "Le poulamon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gardien des Canadiens a porté le premier masque ?",
+      "reponse": "Jacques Plante",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle ligue de hockey junior regroupe les équipes du Québec et des Maritimes ?",
+      "reponse": "La LHJMQ",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -24,29 +60,54 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel capitaine des Canadiens a soulevé la coupe en 1993 ?",
-      "reponse": "Guy Carbonneau",
-      "niveau": 2,
+      "categorie": "Sports",
+      "question": "Combien de minutes dure une période de hockey ?",
+      "reponse": "20",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de hockey joue à Edmonton ?",
+      "reponse": "Les Oilers",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment s'appelle le joueur qui garde le filet au hockey ?",
+      "reponse": "Le gardien de but",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle confiserie d'érable se roule sur la neige ?",
+      "reponse": "La tire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de glace utilise des pierres et des balais ?",
+      "reponse": "Le curling",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle course de traîneaux à chiens traverse l'Alaska ?",
+      "reponse": "L'Iditarod",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle ville canadienne a reçu les JO d'hiver de 2010 ?",
-      "reponse": "Vancouver",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
+      "reponse": "Les Boys",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel hockeyeur a battu le record de buts de Gretzky en 2025 ?",
+      "question": "Quel joueur des Capitals a marqué plus de 900 buts ?",
       "reponse": "Ovechkin",
       "niveau": 2,
       "ages": [
@@ -56,36 +117,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel objet lance-t-on sur la glace après un tour du chapeau ?",
-      "reponse": "Des chapeaux",
+      "question": "Quel trophée remporte le champion de la LNH ?",
+      "reponse": "La coupe Stanley",
       "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de périodes dans un match de hockey ?",
-      "reponse": "Trois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel entraîneur légendaire des Canadiens s'appelait Scotty ?",
-      "reponse": "Scotty Bowman",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée récompense le joueur le plus utile de la LNH ?",
-      "reponse": "Hart",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Québec",
@@ -94,58 +128,13 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel écureuil de L'Ère de glace court sans cesse après son gland ?",
-      "reponse": "Scrat",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Québec",
-      "question": "Quelle station de ski domine le fleuve dans Charlevoix ?",
-      "reponse": "Le Massif",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glisse descend les pentes enneigées sur deux planches étroites ?",
-      "reponse": "Le ski",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur de hockey est surnommé La Merveille ?",
-      "reponse": "Wayne Gretzky",
+      "question": "Quel film culte parle d'une guerre de balles de neige ?",
+      "reponse": "La Guerre des tuques",
       "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée remporte le champion de la LNH ?",
-      "reponse": "La coupe Stanley",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel patineur de vitesse québécois a plusieurs ors olympiques ?",
-      "reponse": "Charles Hamelin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
       ]
     },
     {
@@ -160,9 +149,18 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Combien d'équipes compte la LNH aujourd'hui ?",
-      "reponse": "32",
+      "categorie": "Culture pop",
+      "question": "Quel meuble gardait les aliments au froid avec un bloc de glace ?",
+      "reponse": "La glacière",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle station de ski des Laurentides attire les skieurs de partout ?",
+      "reponse": "Le mont Tremblant",
       "niveau": 2,
       "ages": [
         "ados",
@@ -171,24 +169,55 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel joueur des Canadiens fut surnommé le Gros Bill ?",
-      "reponse": "Jean Béliveau",
+      "categorie": "Sports",
+      "question": "Quelle ville canadienne a reçu les JO d'hiver de 1988 ?",
+      "reponse": "Calgary",
       "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel entraîneur légendaire des Canadiens s'appelait Scotty ?",
+      "reponse": "Scotty Bowman",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport olympique mélange saut à ski et ski de fond ?",
+      "reponse": "Combiné nordique",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel descripteur de hockey a marqué des générations par son français impeccable ?",
+      "reponse": "René Lecavalier",
+      "niveau": 3,
       "ages": [
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel équipement protège la tête à vélo et au hockey ?",
-      "reponse": "Le casque",
+      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
+      "reponse": "Orange",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne une tempête de neige ?",
-      "reponse": "Une bordée",
+      "categorie": "Sports",
+      "question": "Quel jeu de table fait glisser une rondelle sur un coussin d'air ?",
+      "reponse": "Le hockey sur air",
       "niveau": 1
     }
   ]

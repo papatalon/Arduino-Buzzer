@@ -8,20 +8,49 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel méchant sorcier des Schtroumpfs a un chat ?",
-      "reponse": "Gargamel",
-      "niveau": 1,
+      "question": "Dans quelle ville vit Batman ?",
+      "reponse": "Gotham",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel héros a été piqué par une araignée ?",
+      "reponse": "Spider-Man",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel dessinateur belge a créé Tintin ?",
+      "reponse": "Hergé",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Dans quelle forêt vivait Robin des Bois ?",
-      "reponse": "Sherwood",
+      "categorie": "Cinéma et télé",
+      "question": "Quel acteur incarne Iron Man au cinéma ?",
+      "reponse": "Robert Downey Jr",
       "niveau": 2,
       "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "De quelle couleur sont les Schtroumpfs ?",
+      "reponse": "Bleus",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Combien de pierres d'infinité orne le gant de Thanos ?",
+      "reponse": "Six",
+      "niveau": 2,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -37,39 +66,10 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel journaliste est l'identité secrète de Superman ?",
-      "reponse": "Clark Kent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle école accueille les jeunes mutants ?",
-      "reponse": "École de Xavier",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture générale",
-      "question": "De quelle couleur sont les Schtroumpfs ?",
-      "reponse": "Bleus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel milliardaire porte une armure rouge et or ?",
-      "reponse": "Iron Man",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Qui a inventé la dynamite ?",
-      "reponse": "Alfred Nobel",
-      "niveau": 2,
+      "question": "Quel chien accompagne Astérix et Obélix ?",
+      "reponse": "Idéfix",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -78,18 +78,51 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel dieu nordique manie un marteau chez Marvel ?",
-      "reponse": "Thor",
+      "question": "Quels quatre frères bandits affrontent Lucky Luke ?",
+      "reponse": "Les Dalton",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel méchant sorcier des Schtroumpfs a un chat ?",
+      "reponse": "Gargamel",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel roi des mers parle aux poissons ?",
+      "reponse": "Aquaman",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel personnage de BD de Rabagliati raconte le Québec ?",
-      "reponse": "Paul",
-      "niveau": 2,
+      "categorie": "Cinéma et télé",
+      "question": "Quelle substance affaiblit Superman ?",
+      "reponse": "La kryptonite",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plateforme diffuse les films de Marvel et de Pixar ?",
+      "reponse": "Disney+",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel Gaulois est l'ami d'Obélix ?",
+      "reponse": "Astérix",
+      "niveau": 1,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -100,15 +133,13 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel acolyte de Batman porte un costume rouge et vert ?",
-      "reponse": "Robin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle journaliste aime Clark Kent ?",
-      "reponse": "Lois Lane",
-      "niveau": 1
+      "question": "Quel cowboy de BD tire plus vite que son ombre ?",
+      "reponse": "Lucky Luke",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -124,50 +155,9 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel acteur incarne Iron Man au cinéma ?",
-      "reponse": "Robert Downey Jr",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle famille de super-héros Pixar porte du rouge ?",
-      "reponse": "Les Incroyables",
+      "question": "Quel milliardaire porte une armure rouge et or ?",
+      "reponse": "Iron Man",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat orange déteste les lundis et adore la lasagne ?",
-      "reponse": "Garfield",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel canard milliardaire plonge dans ses pièces d'or ?",
-      "reponse": "Picsou",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel Gaulois est l'ami d'Obélix ?",
-      "reponse": "Astérix",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -176,10 +166,26 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel soldat Marvel porte un bouclier étoilé ?",
-      "reponse": "Captain America",
-      "niveau": 1
+      "categorie": "Culture générale",
+      "question": "Qui a inventé la dynamite ?",
+      "reponse": "Alfred Nobel",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel druide prépare la potion magique des Gaulois ?",
+      "reponse": "Panoramix",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

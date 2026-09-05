@@ -7,37 +7,109 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Quel autre dictionnaire français célèbre existe ?",
-      "reponse": "Le Robert",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume violet et allongé gratine la moussaka ?",
-      "reponse": "L'aubergine",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel petit instrument à vent apprend-on à jouer à l'école primaire ?",
-      "reponse": "La flûte à bec",
+      "categorie": "Sports",
+      "question": "Combien d'anneaux sur le drapeau olympique ?",
+      "reponse": "Cinq",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel objet les premiers explorateurs utilisaient-ils pour trouver le nord ?",
-      "reponse": "Une boussole",
+      "categorie": "Musique",
+      "question": "Comment nomme-t-on l'artiste qui anime les platines ?",
+      "reponse": "Le DJ",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel agent secret britannique aime les martinis ?",
+      "reponse": "James Bond",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel épi grillé se mange au beurre en août ?",
+      "reponse": "Le blé d'Inde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a pour emblème le panda ?",
+      "reponse": "La Chine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel garçon ne veut jamais grandir ?",
+      "reponse": "Peter Pan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant de Montréal ?",
+      "reponse": "Un Montréalais",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "De quoi sont faits les nuages ?",
+      "reponse": "Gouttelettes d'eau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel condiment jaune accompagne le hot-dog ?",
+      "reponse": "La moutarde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de grand ?",
+      "reponse": "Petit",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle tarte du terroir québécois se fait avec de la cassonade et de la crème ?",
+      "reponse": "La tarte au sucre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle viande fumée est associée à Montréal ?",
+      "reponse": "Le smoked meat",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel vaisseau pilote Han Solo ?",
+      "reponse": "Faucon Millénium",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel objet frappe-t-on au hockey ?",
+      "reponse": "La rondelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel instrument mesure la température ?",
+      "reponse": "Le thermomètre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel continent n'a aucun pays ?",
+      "reponse": "L'Antarctique",
       "niveau": 1
     },
     {
@@ -52,9 +124,21 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel dôme géodésique brille sur l'île Sainte-Hélène ?",
-      "reponse": "La Biosphère",
+      "categorie": "Sciences et nature",
+      "question": "Quelles sont les deux couleurs du zèbre ?",
+      "reponse": "Noir et blanc",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle famille d'instruments frappe-t-on ?",
+      "reponse": "Les percussions",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie en faire tout un fromage ?",
+      "reponse": "Exagérer",
       "niveau": 1,
       "ages": [
         "ados",
@@ -63,15 +147,10 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sirop noir parfume les galettes québécoises ?",
-      "reponse": "La mélasse",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Québec",
+      "question": "Comment appelait-on les traiteurs de fourrures en forêt ?",
+      "reponse": "Coureurs des bois",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -84,146 +163,26 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle couleur de carton avertit un joueur au soccer ?",
-      "reponse": "Jaune",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quel organe pompe le sang ?",
-      "reponse": "Le cœur",
+      "question": "Quel cousin rayé du cheval vit en Afrique ?",
+      "reponse": "Le zèbre",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel organisme veille sur la langue française au Québec ?",
-      "reponse": "L'OQLF",
+      "categorie": "Histoire",
+      "question": "Quel constructeur a lancé la Ford T ?",
+      "reponse": "Henry Ford",
       "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel objet empoisonné croque Blanche-Neige ?",
-      "reponse": "Une pomme",
-      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu vidéo fait danser devant la télé en imitant un avatar à l'écran ?",
-      "reponse": "Just Dance",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Le dauphin est-il un poisson ou un mammifère ?",
-      "reponse": "Un mammifère",
+      "question": "Quel accessoire redonne de l'énergie à un téléphone à plat ?",
+      "reponse": "Un chargeur",
       "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
-      "reponse": "Quatre ans",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville est surnommée la Ville lumière ?",
-      "reponse": "Paris",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle chenille fabrique un fil précieux en tissant son cocon ?",
-      "reponse": "Le ver à soie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie casser du sucre sur le dos ?",
-      "reponse": "Dire du mal",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Mario doit-il sauver ?",
-      "reponse": "Peach",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel extraterrestre veut téléphoner à la maison ?",
-      "reponse": "E.T.",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve l'Acropole ?",
-      "reponse": "La Grèce",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel instrument mesure la température ?",
-      "reponse": "Le thermomètre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle voix masculine est la plus grave ?",
-      "reponse": "La basse",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport glisse sur l'eau tiré par un bateau ?",
-      "reponse": "Le ski nautique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que veut dire etc. ?",
-      "reponse": "Et le reste",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

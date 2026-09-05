@@ -8,14 +8,14 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel phacochère accompagne Timon ?",
-      "reponse": "Pumbaa",
+      "question": "Quel dragon noir accompagne Harold ?",
+      "reponse": "Krokmou",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert italien contient du café et du mascarpone ?",
-      "reponse": "Le tiramisu",
+      "categorie": "Géographie",
+      "question": "Dans quel pays les vaches sont-elles sacrées ?",
+      "reponse": "L'Inde",
       "niveau": 1,
       "ages": [
         "ados",
@@ -24,21 +24,20 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment dit-on « bonjour » en anglais ?",
-      "reponse": "Hello",
-      "niveau": 1
+      "categorie": "Cinéma et télé",
+      "question": "Quel petit robot orange et blanc roule en forme de boule dans Star Wars ?",
+      "reponse": "BB-8",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir la tête dans les nuages ?",
-      "reponse": "Être rêveur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel fjord spectaculaire abrite des bélugas ?",
-      "reponse": "Fjord du Saguenay",
+      "categorie": "Histoire",
+      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
+      "reponse": "Trudeau",
       "niveau": 1,
       "ages": [
         "ados",
@@ -48,20 +47,32 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel pain français long et croustillant est emblématique ?",
-      "reponse": "La baguette",
+      "question": "Quelle pâte à tartiner aux noisettes est adorée ?",
+      "reponse": "Le Nutella",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel signe de ponctuation sépare deux idées dans une phrase ?",
+      "reponse": "La virgule",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "De quoi sont faites les dunes du désert ?",
-      "reponse": "De sable",
+      "question": "Quelle planète a été rétrogradée en planète naine ?",
+      "reponse": "Pluton",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle racine piquante parfume les biscuits de Noël ?",
-      "reponse": "Le gingembre",
+      "categorie": "Culture générale",
+      "question": "Combien de saisons compte une année ?",
+      "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment nomme-t-on la vitesse d'un morceau ?",
+      "reponse": "Le tempo",
       "niveau": 1,
       "ages": [
         "ados",
@@ -70,18 +81,45 @@
       ]
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel personnage de Sesame Street est un grand oiseau jaune ?",
+      "reponse": "Big Bird",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans Pokémon, dans quel objet enferme-t-on les créatures capturées ?",
+      "reponse": "Une Poké Ball",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle science étudie les animaux ?",
+      "reponse": "La zoologie",
+      "niveau": 1
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois chialer ?",
-      "reponse": "Se plaindre",
+      "question": "Quel repas québécois correspond au dîner français ?",
+      "reponse": "Le souper",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle superstar américaine a nommé sa tournée Eras ?",
-      "reponse": "Taylor Swift",
+      "question": "Quelle chanteuse de la Barbade a chanté Umbrella ?",
+      "reponse": "Rihanna",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
@@ -93,9 +131,59 @@
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quels animaux géants ont disparu bien avant l'apparition des humains ?",
-      "reponse": "Les dinosaures",
+      "categorie": "Sports",
+      "question": "Quel maillot porte le meneur du Tour de France ?",
+      "reponse": "Le maillot jaune",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel pâté à la viande mange-t-on dans le temps des fêtes ?",
+      "reponse": "La tourtière",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie attache ta tuque ?",
+      "reponse": "Prépare-toi",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles petites portions espagnoles se partagent ?",
+      "reponse": "Les tapas",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine du pad thaï ?",
+      "reponse": "La Thaïlande",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gros animal gris d'Afrique porte une corne sur le nez ?",
+      "reponse": "Le rhinocéros",
       "niveau": 1
     },
     {
@@ -106,76 +194,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel phénomène lumineux colore le ciel polaire ?",
-      "reponse": "Aurore boréale",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
-      "reponse": "King Kong",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de saisons compte une année ?",
-      "reponse": "Quatre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quels trois héros en pyjama se transforment la nuit pour affronter des méchants ?",
-      "reponse": "Les Pyjamasques",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel méchant des Minions veut voler la Lune ?",
-      "reponse": "Gru",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson enfantine parle d'un petit navire qui n'avait jamais navigué ?",
-      "reponse": "Il était un petit navire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus petite unité de la matière ?",
-      "reponse": "L'atome",
+      "question": "Combien de pattes possède un insecte ?",
+      "reponse": "Six",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Kremlin ?",
-      "reponse": "Moscou",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle science étudie les animaux ?",
-      "reponse": "La zoologie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport porte-t-on un fleuret et un masque ?",
-      "reponse": "L'escrime",
+      "question": "Capitale du Mexique ?",
+      "reponse": "Mexico",
       "niveau": 1,
       "ages": [
         "ados",
@@ -185,25 +211,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport pratique Tiger Woods ?",
-      "reponse": "Le golf",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
-      "reponse": "Les Pyrénées",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle médaille récompense la troisième place ?",
+      "reponse": "Le bronze",
+      "niveau": 1
     }
   ]
 }

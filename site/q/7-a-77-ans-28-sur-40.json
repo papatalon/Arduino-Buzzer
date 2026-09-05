@@ -7,43 +7,9 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal produit les œufs qu'on mange au déjeuner ?",
-      "reponse": "La poule",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle est la deuxième lettre de l'alphabet grec ?",
-      "reponse": "Bêta",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on celui qui écrit des romans ?",
-      "reponse": "Un romancier",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de table se joue avec des queues et des billes ?",
-      "reponse": "Le billard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comédie musicale utilise les chansons d'ABBA ?",
-      "reponse": "Mamma Mia",
+      "categorie": "Québec",
+      "question": "Combien de référendums sur la souveraineté a connus le Québec ?",
+      "reponse": "Deux",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -52,14 +18,106 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle série de science-fiction se passe à Hawkins ?",
-      "reponse": "Stranger Things",
+      "question": "Quel canard milliardaire plonge dans ses pièces d'or ?",
+      "reponse": "Picsou",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse de Star Wars est la sœur de Luke ?",
+      "reponse": "Leia",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la boîte où l'on met son repas pour l'école ?",
+      "reponse": "La boîte à lunch",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle créature de Tolkien dit mon précieux ?",
+      "reponse": "Gollum",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Dans quel jeu faut-il démasquer l'imposteur à bord d'un vaisseau spatial ?",
+      "reponse": "Among Us",
       "niveau": 1,
       "ages": [
         "enfants",
-        "ados",
-        "adultes"
+        "ados"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est l'étoile la plus proche de la Terre ?",
+      "reponse": "Le Soleil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal domestique les Égyptiens adoraient-ils au point de le momifier ?",
+      "reponse": "Le chat",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelles îles québécoises sont au milieu du golfe ?",
+      "reponse": "Îles de la Madeleine",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel liquide rouge circule dans nos veines ?",
+      "reponse": "Le sang",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de périodes dans un match de hockey ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se tient le grand carnaval de Rio ?",
+      "reponse": "Le Brésil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment dit-on « merci » en anglais ?",
+      "reponse": "Thank you",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle chaîne de restaurants a des arches dorées ?",
+      "reponse": "McDonald's",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel milliardaire porte une armure rouge et or ?",
+      "reponse": "Iron Man",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du mouton ?",
+      "reponse": "L'agneau",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -73,118 +131,15 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Sur quelle plante les Égyptiens écrivaient-ils ?",
-      "reponse": "Le papyrus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle loi québécoise protège la langue française ?",
-      "reponse": "La loi 101",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel élément croquant garnit la salade César ?",
-      "reponse": "Des croûtons",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel film de 2023 a porté le plombier moustachu de Nintendo au cinéma ?",
-      "reponse": "Super Mario Bros, le film",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans la comptine, de quelle couleur est la souris qui courait dans l'herbe ?",
-      "reponse": "Verte",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jouet de Toy Story est une patate avec des pièces à enlever ?",
-      "reponse": "Monsieur Patate",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit orange se sculpte à l'Halloween ?",
-      "reponse": "La citrouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes traverse l'ouest canadien ?",
-      "reponse": "Les Rocheuses",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel tableau classe tous les éléments chimiques ?",
-      "reponse": "Tableau périodique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est l'os le plus long du corps humain ?",
-      "reponse": "Le fémur",
+      "question": "Quel objet de papier mâché rempli de bonbons se frappe les yeux bandés ?",
+      "reponse": "La piñata",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Combien d'anneaux sur le drapeau olympique ?",
-      "reponse": "Cinq",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Combien de lettres muettes dans le mot loup ?",
-      "reponse": "Une",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle province se trouve Montréal ?",
-      "reponse": "Le Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle méchante veut un manteau en dalmatiens ?",
-      "reponse": "Cruella",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne les gants où les doigts sont ensemble ?",
-      "reponse": "Les mitaines",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle herbe verte garnit la pizza margherita ?",
-      "reponse": "Le basilic",
+      "question": "Quelle fédération organise la Coupe du monde de soccer ?",
+      "reponse": "La FIFA",
       "niveau": 1,
       "ages": [
         "ados",
@@ -193,13 +148,20 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Dans quel jeu faut-il démasquer l'imposteur à bord d'un vaisseau spatial ?",
-      "reponse": "Among Us",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal de la ferme nous donne le lait ?",
+      "reponse": "La vache",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de duc ?",
+      "reponse": "Duchesse",
       "niveau": 1,
       "ages": [
-        "enfants",
-        "ados"
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -207,6 +169,29 @@
       "question": "Quel médecin opère les patients ?",
       "reponse": "Le chirurgien",
       "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle percussion ronde a des cymbalettes ?",
+      "reponse": "Le tambourin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel poisson fumé garnit le bagel classique ?",
+      "reponse": "Le saumon fumé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne produit le plus de pétrole ?",
+      "reponse": "L'Alberta",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

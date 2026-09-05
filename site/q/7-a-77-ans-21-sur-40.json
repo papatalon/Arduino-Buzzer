@@ -7,15 +7,9 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle chaîne canadienne vend du café, des beignes et des Timbits ?",
-      "reponse": "Tim Hortons",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la fondue au fromage ?",
-      "reponse": "La Suisse",
+      "categorie": "Sports",
+      "question": "Comment nomme-t-on un circuit avec les buts remplis ?",
+      "reponse": "Grand chelem",
       "niveau": 1,
       "ages": [
         "ados",
@@ -24,21 +18,21 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
-      "reponse": "L'autruche",
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la sève recueillie au printemps pour faire le sirop ?",
+      "reponse": "L'eau d'érable",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Combien de temps dure une punition mineure au hockey ?",
-      "reponse": "Deux minutes",
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri de la vache ?",
+      "reponse": "Le meuglement",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel Québécois a inventé la motoneige ?",
-      "reponse": "J.-A. Bombardier",
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat orange déteste les lundis et adore la lasagne ?",
+      "reponse": "Garfield",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -47,8 +41,26 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Complétez : les chaussettes de l'archiduchesse sont-elles...",
-      "reponse": "Sèches archi-sèches",
+      "question": "Comment dit-on « oui » en espagnol ?",
+      "reponse": "Sí",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante piquante pousse dans le désert ?",
+      "reponse": "Le cactus",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de hockey joue à Edmonton ?",
+      "reponse": "Les Oilers",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ville est surnommée la Ville lumière ?",
+      "reponse": "Paris",
       "niveau": 1,
       "ages": [
         "ados",
@@ -57,15 +69,16 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quels écouteurs sans fil blancs se rangent dans un petit boîtier ?",
-      "reponse": "Les AirPods",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Culture générale",
+      "question": "Quel véhicule vole grâce à une grande hélice sur le toit ?",
+      "reponse": "L'hélicoptère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le féminin de prince ?",
+      "reponse": "Princesse",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -74,73 +87,33 @@
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Dans quel sport lance-t-on un javelot ?",
-      "reponse": "L'athlétisme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
-      "reponse": "Caillou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Combien de syllabes compte le mot « chocolat » ?",
-      "reponse": "Trois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel petit oiseau jaune échappe toujours au chat Grosminet ?",
-      "reponse": "Titi",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle loi américaine interdisait l'alcool ?",
-      "reponse": "La prohibition",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie se serrer la ceinture ?",
-      "reponse": "Se priver",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne la voiture ?",
-      "reponse": "Un char",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "De quel côté se couche le soleil ?",
-      "reponse": "À l'ouest",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sandwich fondant au fromage est grillé ?",
+      "reponse": "Le grilled cheese",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Dans quoi la chenille se transforme-t-elle ?",
-      "reponse": "La chrysalide",
+      "question": "Quelle planète est surnommée la planète rouge ?",
+      "reponse": "Mars",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien de minutes dans une heure ?",
-      "reponse": "60",
+      "categorie": "Cinéma et télé",
+      "question": "Quel canard Disney porte un costume marin ?",
+      "reponse": "Donald",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on au Québec la maison de vacances au bord d'un lac ?",
+      "reponse": "Le chalet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle amazone a un lasso de vérité ?",
+      "reponse": "Wonder Woman",
       "niveau": 1
     },
     {
@@ -150,49 +123,51 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel pirate est joué par Johnny Depp ?",
-      "reponse": "Jack Sparrow",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Géographie",
+      "question": "Sur quel continent se trouve le désert du Sahara ?",
+      "reponse": "L'Afrique",
+      "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
-      "reponse": "Rio de Janeiro",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Histoire",
+      "question": "Quelle grande statue verte tient une torche à l'entrée de New York ?",
+      "reponse": "La statue de la Liberté",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel insecte rouge à points noirs porte bonheur ?",
-      "reponse": "La coccinelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel véhicule vole grâce à une grande hélice sur le toit ?",
-      "reponse": "L'hélicoptère",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la partie d'une chanson qui revient entre les couplets ?",
-      "reponse": "Le refrain",
+      "question": "Combien d'orteils avons-nous en tout ?",
+      "reponse": "Dix",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle laitue compose la salade César ?",
-      "reponse": "La romaine",
+      "question": "Quelle céréale est la base de l'alimentation en Asie ?",
+      "reponse": "Le riz",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel rat cuisine dans un grand restaurant parisien ?",
+      "reponse": "Rémy",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de crayons de cire remplit les boîtes d'école ?",
+      "reponse": "Crayola",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de minutes dans une heure ?",
+      "reponse": "60",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle expression québécoise signifie c'est correct ?",
+      "reponse": "C'est beau",
       "niveau": 1,
       "ages": [
         "ados",
