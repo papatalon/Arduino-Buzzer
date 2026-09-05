@@ -156,11 +156,12 @@ après.
 cd app/buzzer_companion && dart run tool/generate_questionnaires.dart
 ```
 
-La dernière ligne du contrôle donne quatre nombres. Les noter tels quels :
+Deux lignes du contrôle donnent cinq nombres. Les noter tels quels :
 
 ```
 Contrôle : N réponses déjà dans leur question, N réponses partagées par
 plusieurs questions, N quasi-doublons, N variantes de nom.
+Sources : N question exigée sans source, N orpheline, N consignée.
 ```
 
 Ce relevé est la moitié de la preuve de l'étape 8. Les repères historiques
@@ -273,19 +274,36 @@ demandent pas de source externe, mais la réponse doit être **le** sens
 courant et un seul. Une définition à deux lectures est une ambiguïté, pas un
 fait.
 
-### Le journal de vérification
+### Le journal de vérification : `SOURCES.txt`
 
-**Chaque fait vérifié laisse une ligne**, dans la réponse au client :
+**Chaque fait vérifié laisse une entrée dans
+`tool/questions/SOURCES.txt`**, et non seulement dans la réponse au client :
+la réponse disparaît avec la conversation, le fichier reste, et le générateur
+le compte.
 
 ```
-Q : Quel renne du père Noël a le nez rouge ? → Rudolphe
-    ✔ attribut « nez rouge » — <source, page ouverte>
+Quel renne du père Noël a le nez rouge ?
+  nez rouge — https://fr.wikipedia.org/wiki/Rudolphe_le_petit_renne_au_nez_rouge
 ```
 
-Une question à trois faits a trois lignes. Une question sans fait vérifiable
-le dit : `— vocabulaire, aucune source requise`.
+La question au ras de la marge, **telle qu'écrite dans son fichier** ; en
+dessous, indentée de deux espaces, une ligne par fait : l'attribut vérifié,
+un tiret, l'adresse de la page **ouverte** qui le dit. Une question à trois
+faits a trois lignes. Une question sans fait vérifiable le dit, pour qu'on
+distingue « rien à sourcer » de « oublié » :
 
-Sans journal, la vérification n'a pas eu lieu. « J'ai vérifié » sans source
+```
+Que signifie magasiner ?
+  vocabulaire
+```
+
+Le lien entre la source et la question est le TEXTE de la question,
+normalisé comme pour les doublons. Reformuler une question rompt le lien et
+le générateur le signale comme source orpheline : c'est voulu, reformuler
+peut changer ce qu'elle affirme, et le fait est à revérifier avant de remettre
+l'entrée sous le nouveau texte.
+
+Sans entrée, la vérification n'a pas eu lieu. « J'ai vérifié » sans source
 nommée ne vaut rien, pour le client comme pour celui qui relira dans un an.
 
 ## 6. Adapter au Québec
@@ -324,17 +342,24 @@ possible, ou changer de question.
 - **Les repères partent d'ici.** « À quelle distance de Montréal » plutôt
   que de Paris.
 
-## 7. Écrire dans le fichier
+## 7. Écrire dans les deux fichiers
 
-Seulement ce qui a survécu aux étapes 4, 5 et 6. À la fin du bloc libre du
-bon fichier, une ligne par question, ses `@` en dessous :
+Seulement ce qui a survécu aux étapes 4, 5 et 6.
+
+**Dans le fichier de la catégorie**, à la fin du bloc libre, **sous la ligne
+`# Sources exigées à partir d'ici`** : une ligne par question, ses `@` en
+dessous. Tout ce qui est écrit sous ce repère doit avoir sa source, et le
+générateur le compte.
 
 ```
 Quel renne du père Noël a le nez rouge ?|Rudolphe|1|enfants ados adultes aines
 @ noel
 ```
 
-Relire le fichier après écriture : un `|` de trop ou une tranche mal
+**Dans `SOURCES.txt`**, l'entrée de l'étape 5, avec la question copiée
+exactement.
+
+Relire les deux fichiers après écriture : un `|` de trop ou une tranche mal
 orthographiée arrête le générateur avec la ligne fautive, et c'est mieux
 maintenant que dans le commit.
 
@@ -344,11 +369,12 @@ maintenant que dans le commit.
 cd app/buzzer_companion && dart run tool/generate_questionnaires.dart
 ```
 
-**Quatre barrières. Aucune ne se franchit en expliquant.**
+**Cinq barrières. Aucune ne se franchit en expliquant.**
 
 | compteur | portée | règle |
 |---|---|---|
 | le générateur | tout | doit sortir en **code 0**. Un doublon exact ou un miroir cassé l'arrête. |
+| **questions exigées sans source** | bloc libre, sous le repère | doit rester à **0**. Chacune est nommée dans la sortie. Les **sources orphelines** se corrigent aussi : une question reformulée se revérifie, une question retirée libère son entrée. |
 | **quasi-doublons** | même catégorie | doit rester à **0**. Aucun cas légitime : quand il en sort un, une des deux lignes est de trop. Le générateur les affiche en détail. |
 | **variantes de nom** | toute la banque | ne doit **pas augmenter**. Deux réponses pour la même chose font refuser un joueur qui a raison. |
 | échos et réponses partagées | toute la banque | peuvent monter un peu. Pour **chaque** unité de hausse, nommer la question responsable et dire pourquoi c'est légitime (« Quatre » répond à vingt questions sans rapport). Une hausse non expliquée veut dire qu'un lot est entré sans contrôle. |
@@ -377,11 +403,12 @@ quatre compteurs d'après et la date.
 Le commit et la réponse au client disent, dans cet ordre :
 
 1. combien de questions demandées, combien écrites, et pourquoi l'écart ;
-2. les quatre compteurs avant et après, et l'explication de chaque hausse ;
-3. le journal de vérification, une ligne par fait.
+2. les cinq compteurs avant et après, et l'explication de chaque hausse ;
+3. le journal de vérification, une ligne par fait, tel qu'écrit dans
+   `SOURCES.txt`.
 
 Un lot rendu court est une information, pas une excuse. Un lot rendu sans
-journal n'est pas rendu.
+ses entrées dans `SOURCES.txt` n'est pas rendu, et le compteur le dira.
 
 ## Ce qu'on ne fait jamais
 
@@ -392,4 +419,6 @@ journal n'est pas rendu.
 - Trancher entre deux sources qui se contredisent.
 - Écrire une question sans niveau, sans tranches ou sans ses thématiques.
 - Compléter un lot pour atteindre le nombre demandé.
+- Écrire une question sous le repère des sources sans son entrée dans
+  `SOURCES.txt`, ou l'écrire au-dessus du repère pour échapper au compteur.
 - Annoncer un lot conforme sans les compteurs avant et après, ni le journal.

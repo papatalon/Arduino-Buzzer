@@ -1,0 +1,36 @@
+# Les sources des questions écrites à partir du 5 septembre 2026.
+#
+# POURQUOI CE FICHIER. Un fait faux discrédite tout le jeu, et ma relecture ne
+# détecte rien : le souvenir que je crois sûr est justement ce qui est faux.
+# Treize faits faux sur 1746, en filtrant pourtant au fil de l'écriture. La
+# vérification à l'extérieur est la seule parade, et une vérification qui ne
+# laisse pas de trace n'est pas distinguable d'une vérification qui n'a pas
+# eu lieu. Ici, la trace.
+#
+# POURQUOI À PART. Les fichiers de questions restent lisibles : une source
+# sous chaque ligne les doublerait. À part, mais reliée par le TEXTE de la
+# question, normalisé comme pour les doublons (accents, casse, espaces et
+# ponctuation finale ignorés). Reformuler une question rompt le lien, et le
+# générateur le signale : c'est voulu, reformuler peut changer ce qu'elle
+# affirme, et le fait est à revérifier.
+#
+# FORMAT. La question au ras de la marge, telle qu'écrite dans son fichier.
+# En dessous, indentée de deux espaces, une ligne par fait vérifié :
+# l'attribut vérifié, un tiret, l'adresse de la page OUVERTE qui le dit.
+#
+#   Quel renne du père Noël a le nez rouge ?
+#     nez rouge — https://fr.wikipedia.org/wiki/Rudolphe_le_petit_renne_au_nez_rouge
+#
+# Une question sans fait à vérifier le dit, pour qu'on distingue « rien à
+# sourcer » de « oublié » :
+#
+#   Que signifie magasiner ?
+#     vocabulaire
+#
+# CE QUI EST EXIGÉ. Toute question libre écrite sous le repère
+# « # Sources exigées à partir d'ici » de son fichier doit avoir une entrée.
+# Le générateur compte celles qui n'en ont pas ; ce compte doit rester à 0.
+# Les 1746 affirmations d'avant le repère ont été vérifiées en septembre 2026
+# sans conserver les sources ; elles ne sont pas réécrites ici.
+#
+# Rien de ce fichier ne sort dans banque.json.

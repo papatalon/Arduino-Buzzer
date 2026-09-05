@@ -53,13 +53,18 @@ const _questionsDir = 'tool/questions';
 const _separateur = '=== hors firmware ===';
 
 class _Fichier {
-  _Fichier(this.nom, this.categorie, this.emoji, this.firmware, this.miroir, this.libres);
+  _Fichier(this.nom, this.categorie, this.emoji, this.firmware, this.miroir, this.libres,
+      {this.sourcesDepuis});
   final String nom;
   final String categorie;
   final String emoji;
   final int? firmware;      // index CATn_DATA, ou null
   final List<String> miroir;
   final List<String> libres;
+  // Index dans `libres` de la première ligne (question ou marqueur) qui suit
+  // le repère « # Sources exigées à partir d'ici ». Null si le fichier n'en
+  // a pas : rien n'y est alors exigé.
+  final int? sourcesDepuis;
 }
 
 List<_Fichier>? _cacheFichiers;
@@ -74,7 +79,7 @@ List<_Fichier> _fichiersQuestions() {
     exit(1);
   }
   final fichiers = <_Fichier>[];
-  final trouves = dir.listSync().whereType<File>().where((f) => f.path.endsWith('.txt')).toList()
+  final trouves = dir.listSync().whereType<File>().where(_estUnFichierDeQuestions).toList()
     ..sort((a, b) => a.path.compareTo(b.path));
   for (final f in trouves) {
     final nom = f.uri.pathSegments.last;
@@ -84,6 +89,8 @@ List<_Fichier> _fichiersQuestions() {
     final miroir = <String>[];
     final libres = <String>[];
     var apresSeparateur = false;
+    int? sourcesDepuis;
+    var repereAvantSeparateur = false;
     for (final brute in f.readAsLinesSync()) {
       final l = brute.trim();
       if (l.isEmpty) continue;
@@ -92,6 +99,29 @@ List<_Fichier> _fichiersQuestions() {
         continue;
       }
       if (l.startsWith('#')) {
+        // LE REPÈRE DES SOURCES. Tout ce qui suit cette ligne dans le bloc
+        // libre doit avoir sa source dans SOURCES.txt ; tout ce qui précède
+        // a été vérifié en septembre 2026 sans que les sources soient
+        // conservées, et ne sera pas réécrit après coup.
+        if (l == _repereSources) {
+          // Position dans le bloc qu'on remplit à cet instant. Pour un
+          // fichier sans « # Firmware », tout est libre et le bloc « miroir »
+          // sera versé tel quel dans « libres » plus bas : l'index reste
+          // valable. Pour un fichier à firmware, un repère AVANT le
+          // séparateur n'a pas de sens, et c'est vérifié après la boucle.
+          // Un seul repère par fichier. Deux, et le second effacerait ce que
+          // le premier a dit : un repère mal placé se ferait masquer par un
+          // repère bien placé, et le garde-fou d'en bas se tairait. C'est
+          // arrivé au test.
+          if (sourcesDepuis != null) {
+            stderr.writeln('$nom : deux fois « $_repereSources ». '
+                'Un seul, à la fin du bloc libre.');
+            exit(1);
+          }
+          sourcesDepuis = (apresSeparateur ? libres : miroir).length;
+          repereAvantSeparateur = !apresSeparateur;
+          continue;
+        }
         final m = RegExp(r'^#\s*(Catégorie|Emoji|Firmware)\s*:\s*(.+)$').firstMatch(l);
         if (m == null) continue;
         switch (m.group(1)) {
@@ -119,10 +149,23 @@ List<_Fichier> _fichiersQuestions() {
       libres.insertAll(0, miroir);
       miroir.clear();
     }
-    fichiers.add(_Fichier(nom, categorie, emoji, firmware, miroir, libres));
+    // Dans un fichier à firmware, le repère des sources n'a de place qu'après
+    // le séparateur : le miroir ne reçoit jamais de nouvelle question, donc
+    // rien à sourcer avant. Un repère mal placé, c'est un fichier qu'on
+    // croirait couvert alors que le compteur ne regarderait rien.
+    if (firmware != null && repereAvantSeparateur) {
+      stderr.writeln('$nom : « $_repereSources » est avant le séparateur. '
+          'Il va à la fin du bloc libre.');
+      exit(1);
+    }
+    fichiers.add(_Fichier(nom, categorie, emoji, firmware, miroir, libres,
+        sourcesDepuis: sourcesDepuis));
   }
   return _cacheFichiers = fichiers;
 }
+
+const _repereSources = '# Sources exigées à partir d\'ici';
+const _fichierSources = '$_questionsDir/SOURCES.txt';
 
 // Le generateur ecrit un SITE, pas un dossier de travail. Ce site est publie
 // par Cloudflare Pages sur buzzer.sd6tools.net, et l'application va y
@@ -247,8 +290,13 @@ class Entry {
       {this.niveau,
       this.origine = Origine.banque,
       required this.tranches,
-      this.themes = const {}});
+      this.themes = const {},
+      this.sourceExigee = false});
   final String category;
+  // Vrai pour une question libre écrite après le repère des sources : sa
+  // vérification doit être consignée dans SOURCES.txt, et le générateur le
+  // compte. Ne sort jamais dans le JSON.
+  final bool sourceExigee;
   final String question;
   final String answer;
   final Origine origine;
@@ -419,6 +467,7 @@ void main(List<String> args) {
   //
   // Ce que le générateur publie tient maintenant en un fichier.
   _controleQualite(all);
+  _controleSources(all);
 
   _writeBanqueQuestions(all);
   _writeVersion();
@@ -1203,7 +1252,20 @@ List<Entry> _readInedites(Set<String> categoriesConnues) {
     // Le pictogramme du fichier fait foi pour une catégorie que le firmware
     // ne connaît pas : sans lui, sa tuile n'aurait pas d'image.
     _emojiInedites[fichier.categorie] = fichier.emoji;
+    // Le repère se compte en LIGNES du bloc, marqueurs compris, alors que
+    // _lireBloc rend des questions. On retrouve la question à partir de
+    // laquelle la source est exigée en comptant les lignes de question qui
+    // précèdent le repère.
+    final rangDepuis = fichier.sourcesDepuis == null
+        ? null
+        : fichier.libres
+            .take(fichier.sourcesDepuis!)
+            .where((l) => !RegExp(r'^[>\-~@]').hasMatch(l.trim()))
+            .length;
+    var rang = 0;
     for (final ligne in _lireBloc(fichier.libres, fichier.nom)) {
+      final exigee = rangDepuis != null && rang >= rangDepuis;
+      rang++;
       if (ligne.retiree != null) continue;
       if (ligne.perissable != null) _perissablesLibres++;
       final servie = ligne.retouche ?? ligne.texte;
@@ -1216,6 +1278,7 @@ List<Entry> _readInedites(Set<String> categoriesConnues) {
         origine: Origine.inedite,
         tranches: ligne.tranches ?? kToutesTranches,
         themes: ligne.themes,
+        sourceExigee: exigee,
       ));
     }
   }
@@ -2103,7 +2166,7 @@ void _retirer(String slug) {
   for (final f in Directory(_questionsDir)
       .listSync()
       .whereType<File>()
-      .where((f) => f.path.endsWith('.txt'))) {
+      .where(_estUnFichierDeQuestions)) {
     final sortie = <String>[];
     var retires = 0;
     for (final brute in f.readAsLinesSync()) {
@@ -2187,3 +2250,107 @@ void _chercher(String motif) {
 }
 
 const kNomsNiveaux = {1: 'facile', 2: 'moyen', 3: 'difficile'};
+
+// --- Sources ---------------------------------------------------------------
+
+// LES SOURCES VIVENT À PART, dans SOURCES.txt, et non sous chaque question.
+//
+// Le client veut les fichiers de questions lisibles, et une source sous
+// chaque ligne les doublerait de volume. À part, donc, mais RELIÉES par le
+// texte de la question, normalisé comme pour la détection des doublons :
+// même clé, même règle, pas de deuxième façon de dire « la même question ».
+//
+// Ce que la clé par texte donne de bon : une question reformulée perd sa
+// source et le générateur le dit. C'est le comportement voulu, pas un
+// défaut : reformuler peut changer ce que la question affirme, et le fait
+// est à revérifier.
+//
+// Format de SOURCES.txt, une entrée par question :
+//
+//   Quel renne du père Noël a le nez rouge ?
+//     nez rouge — https://fr.wikipedia.org/wiki/...
+//     vocabulaire                      (quand il n'y a rien à sourcer)
+//
+// Rien de tout ceci ne sort dans banque.json : l'application n'a pas à
+// savoir d'où vient un fait.
+Map<String, List<String>> _lireSources() {
+  final f = File(_fichierSources);
+  if (!f.existsSync()) return const {};
+  final sources = <String, List<String>>{};
+  String? courante;
+  var numero = 0;
+  for (final brute in f.readAsLinesSync()) {
+    numero++;
+    if (brute.trim().isEmpty || brute.trimLeft().startsWith('#')) continue;
+    // Une ligne indentée est une source de la question courante ; une ligne
+    // au ras est une question.
+    if (brute.startsWith(' ') || brute.startsWith('\t')) {
+      if (courante == null) {
+        stderr.writeln('SOURCES.txt, ligne $numero : une source sans '
+            'question au-dessus.');
+        exit(1);
+      }
+      sources[courante]!.add(brute.trim());
+      continue;
+    }
+    courante = _cleTexte(brute.trim());
+    if (sources.containsKey(courante)) {
+      stderr.writeln('SOURCES.txt, ligne $numero : la question « $brute » '
+          'apparaît deux fois.');
+      exit(1);
+    }
+    sources[courante] = [];
+  }
+  return sources;
+}
+
+// La même normalisation que _cle, mais sur un texte nu : SOURCES.txt n'a pas
+// d'Entry sous la main.
+String _cleTexte(String question) => _strip(question)
+    .toLowerCase()
+    .replaceAll(RegExp(r'\s+'), ' ')
+    .replaceAll(RegExp(r'[?!.\s]+$'), '')
+    .trim();
+
+// DEUX COMPTES, et le premier doit rester à zéro.
+//
+// Les questions libres écrites après le repère « # Sources exigées à partir
+// d'ici » sans entrée dans SOURCES.txt : c'est une vérification qui n'a pas
+// laissé de trace, donc qui, pour ce fichier, n'a pas eu lieu. Chacune est
+// nommée, parce qu'un chiffre seul ne dit pas quoi corriger.
+//
+// Les sources orphelines, dont la question n'existe plus sous ce texte :
+// signalées mais non bloquantes. Elles disent soit qu'une question a été
+// reformulée (à revérifier, puis à remettre sous son nouveau texte), soit
+// qu'elle a été retirée (l'entrée peut partir).
+void _controleSources(List<Entry> all) {
+  final sources = _lireSources();
+  final servies = <String>{};
+  var sansSource = 0;
+  for (final e in all) {
+    final k = _cle(e);
+    servies.add(k);
+    if (!e.sourceExigee) continue;
+    final s = sources[k];
+    if (s == null || s.isEmpty) {
+      sansSource++;
+      stderr.writeln('Sans source (${e.category}) : ${e.question}');
+    }
+  }
+  final orphelines = sources.keys.where((k) => !servies.contains(k)).toList();
+  for (final k in orphelines) {
+    stderr.writeln('Source orpheline, aucune question ne dit plus « $k ».');
+  }
+  stdout.writeln('Sources : $sansSource question'
+      '${sansSource > 1 ? 's' : ''} exigée${sansSource > 1 ? 's' : ''} sans '
+      'source, ${orphelines.length} orpheline${orphelines.length > 1 ? 's' : ''}, '
+      '${sources.length} consignée${sources.length > 1 ? 's' : ''}.');
+}
+
+// Le dossier tient aussi SOURCES.txt et INTEGRITE.md, qui ne sont pas des
+// catégories. Un seul endroit pour le dire, sinon le prochain fichier ajouté
+// au dossier se fait lire comme une catégorie sans en-tête et arrête tout.
+bool _estUnFichierDeQuestions(File f) {
+  final nom = f.uri.pathSegments.last;
+  return nom.endsWith('.txt') && nom != 'SOURCES.txt';
+}

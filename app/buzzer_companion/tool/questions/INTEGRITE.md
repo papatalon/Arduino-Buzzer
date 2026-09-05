@@ -23,6 +23,14 @@ Il affiche aussi, sans bloquer, quatre comptes sur les versions servies :
 | réponses partagées par plusieurs questions | toute la banque | idem |
 | quasi-doublons | même catégorie seulement | **rester à 0**, aucun cas légitime |
 | variantes de nom | toute la banque | **ne pas augmenter** |
+| questions exigées sans source | bloc libre, sous le repère | **rester à 0** |
+
+Le cinquième compte vient de `SOURCES.txt` : toute question libre écrite sous
+le repère `# Sources exigées à partir d'ici` de son fichier doit y avoir son
+entrée, question et source. Une vérification sans trace n'est pas
+distinguable d'une vérification qui n'a pas eu lieu. Le générateur signale
+aussi les sources orphelines, dont la question n'existe plus sous ce texte :
+une reformulation est à revérifier, un retrait libère l'entrée.
 
 Les deux premiers ne bloquent pas parce que les cas légitimes existent : « la
 vitamine C » quand la question dit vitamine, « Quatre » qui répond à vingt
@@ -36,10 +44,10 @@ entre Québec et Bouffe lui échappe, et seule la recherche préalable
 
 Repères, à mettre à jour après chaque lot :
 
-| date | échos | partagées | quasi-doublons | variantes |
-|---|---:|---:|---:|---:|
-| 4 septembre 2026 | 53 | 258 | — | — |
-| 5 septembre 2026 | 54 | 215 | 0 | 14 |
+| date | échos | partagées | quasi-doublons | variantes | sans source |
+|---|---:|---:|---:|---:|---:|
+| 4 septembre 2026 | 53 | 258 | — | — | — |
+| 5 septembre 2026 | 54 | 215 | 0 | 14 | 0 |
 
 ## Ce qui n'est pas contrôlé
 
