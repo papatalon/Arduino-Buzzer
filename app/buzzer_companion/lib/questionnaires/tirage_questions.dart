@@ -69,12 +69,31 @@ class TirageQuestions {
   /// rien n'a pu être lu ; retourne une manche plus courte que demandé si le
   /// périmètre est trop petit, plutôt que d'échouer : mieux vaut douze
   /// questions qu'aucune.
+  /// [niveaux] et [tranches] vides veulent dire « sans filtre ». Une question
+  /// qui ne porte pas de niveau, ou pas de tranche, passe toujours : un
+  /// questionnaire écrit à la main ne se prononce pas, et l'écarter d'un
+  /// filtre reviendrait à le punir de ne rien avoir déclaré.
   Future<Questionnaire?> composer({
     String? collection,
+    Set<int> niveaux = const {},
+    Set<Tranche> tranches = const {},
     required int nombre,
   }) async {
     derniereErreur = null;
     dernierNombreDeFichiers = 0;
+
+    bool retenue(QuizQuestion q) {
+      if (!q.isUsable) return false;
+      if (niveaux.isNotEmpty && q.niveau != null && !niveaux.contains(q.niveau)) {
+        return false;
+      }
+      if (tranches.isNotEmpty &&
+          q.ages.isNotEmpty &&
+          q.ages.intersection(tranches).isEmpty) {
+        return false;
+      }
+      return true;
+    }
 
     final pioche = _piocheMelangee(collection);
     if (pioche.isEmpty) {
@@ -95,8 +114,7 @@ class TirageQuestions {
 
       // Les questions du fichier sont mélangées aussi : sans ça, une manche
       // courte prendrait toujours les premières du questionnaire.
-      final candidates = q.questions.where((c) => c.isUsable).toList()
-        ..shuffle(_hasard);
+      final candidates = q.questions.where(retenue).toList()..shuffle(_hasard);
       for (final c in candidates) {
         if (retenues.length >= nombre) break;
         final k = cle(c);
@@ -106,9 +124,16 @@ class TirageQuestions {
       }
     }
 
+    final filtre = niveaux.isNotEmpty || tranches.isNotEmpty;
     if (retenues.isEmpty) {
-      derniereErreur = catalogue.lastError ??
-          "Aucune question n'a pu être lue dans ce périmètre.";
+      // Distinguer les deux échecs : un périmètre illisible et un filtre trop
+      // serré n'appellent pas le même geste. Le premier se règle en se
+      // connectant, le second en relâchant une case.
+      derniereErreur = filtre
+          ? 'Aucune question ne répond à ces critères. Élargissez le niveau ou '
+              "la tranche d'âge."
+          : catalogue.lastError ??
+              "Aucune question n'a pu être lue dans ce périmètre.";
       return null;
     }
 
@@ -118,7 +143,9 @@ class TirageQuestions {
           ? 'Questions au hasard'
           : 'Au hasard : $collection',
       note: retenues.length < nombre
-          ? 'Le périmètre ne contenait que ${retenues.length} questions.'
+          ? (filtre
+              ? 'Seulement ${retenues.length} questions répondaient aux critères.'
+              : 'Le périmètre ne contenait que ${retenues.length} questions.')
           : '',
       collection: collection ?? '',
       questions: retenues,

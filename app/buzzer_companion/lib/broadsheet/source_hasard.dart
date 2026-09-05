@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../questionnaires/active_questionnaire.dart';
 import '../questionnaires/catalogue.dart';
+import '../questionnaires/questionnaire.dart';
 import '../questionnaires/tirage_questions.dart';
 import 'source_questions.dart';
 import 'tokens.dart';
@@ -27,6 +28,17 @@ import 'tokens.dart';
 // vingt est exactement ce à quoi sert un menu ; des pastilles se justifient
 // quand les options sont peu nombreuses et qu'on veut les comparer d'un coup
 // d'œil, ce qui n'est pas le cas ici.
+//
+// LE NIVEAU ET LA TRANCHE D'ÂGE, eux, SONT des pastilles : trois et quatre
+// options, qu'on veut voir toutes en même temps parce qu'on en coche
+// plusieurs. Rien de coché veut dire « sans filtre », pas « rien » : c'est
+// l'état normal, et l'écran le dit plutôt que de laisser deviner.
+//
+// L'ORDRE DE LECTURE suit la phrase qu'on se dit : où piocher, pour qui,
+// à quelle difficulté, combien. La tranche d'âge vient avant le niveau parce
+// qu'elle est le choix qu'on fait en regardant la pièce, alors que le niveau
+// se lit À L'INTÉRIEUR d'une tranche : « facile » ne veut pas dire la même
+// chose pour un enfant et pour un aîné.
 class SourceAuHasard extends StatefulWidget {
   const SourceAuHasard({
     super.key,
@@ -45,6 +57,9 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
   static const _parDefaut = 20;
 
   String? _collection; // null = toutes les questions
+  // Vides = sans filtre. Voir l'en-tête : c'est l'état normal, pas un oubli.
+  final Set<Tranche> _tranches = {};
+  final Set<int> _niveaux = {};
   int _nombre = _parDefaut;
   bool _enCours = false;
   bool _deplie = false;
@@ -75,8 +90,12 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
       _enCours = true;
       _erreur = null;
     });
-    final compose =
-        await widget.tirage.composer(collection: _collection, nombre: _nombre);
+    final compose = await widget.tirage.composer(
+      collection: _collection,
+      niveaux: _niveaux,
+      tranches: _tranches,
+      nombre: _nombre,
+    );
     if (!mounted) return;
     setState(() {
       _enCours = false;
@@ -93,6 +112,19 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
 
   String get _nomDuPerimetre => _collection ?? 'Toutes les questions';
 
+  // Ce que l'animateur a demandé, en une phrase. Les critères laissés vides
+  // ne s'écrivent pas : « pour tout le monde, tous niveaux » serait du bruit
+  // sur le cas le plus courant.
+  String get _criteres {
+    final bouts = <String>[
+      if (_tranches.isNotEmpty)
+        'pour ${[for (final t in Tranche.values) if (_tranches.contains(t)) kNomsTranches[t]!].join(', ')}',
+      if (_niveaux.isNotEmpty)
+        'niveau ${[for (final n in kNomsNiveaux.keys) if (_niveaux.contains(n)) kNomsNiveaux[n]!].join(', ')}',
+    ];
+    return bouts.isEmpty ? '' : ', ${bouts.join(', ')}';
+  }
+
   @override
   Widget build(BuildContext context) {
     final ouvert = _deplie || _choisi;
@@ -104,7 +136,7 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
           choisi: _choisi,
           titre: 'Questions au hasard',
           detail: _choisi
-              ? '${widget.actif.total} questions tirées dans « $_nomDuPerimetre ».'
+              ? '${widget.actif.total} questions tirées dans « $_nomDuPerimetre »$_criteres.'
               : "Une manche composée sur place, qui n'existera qu'une fois.",
           onTap: () => setState(() => _deplie = !ouvert),
         ),
@@ -158,6 +190,39 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
                   ],
                 ),
                 const SizedBox(height: BSSpace.s3),
+                // POUR QUI, puis À QUELLE DIFFICULTÉ. La tranche d'abord :
+                // c'est ce qu'on décide en regardant la pièce, et le niveau
+                // se lit à l'intérieur d'elle.
+                _LigneFiltre(
+                  titre: 'Pour qui',
+                  vide: _tranches.isEmpty,
+                  quandVide: 'tout le monde',
+                  options: [
+                    for (final t in Tranche.values)
+                      _Option(
+                        label: kNomsTranches[t]!,
+                        coche: _tranches.contains(t),
+                        onTap: () => setState(() =>
+                            _tranches.contains(t) ? _tranches.remove(t) : _tranches.add(t)),
+                      ),
+                  ],
+                ),
+                const SizedBox(height: BSSpace.s2),
+                _LigneFiltre(
+                  titre: 'Difficulté',
+                  vide: _niveaux.isEmpty,
+                  quandVide: 'tous les niveaux',
+                  options: [
+                    for (final n in kNomsNiveaux.keys)
+                      _Option(
+                        label: kNomsNiveaux[n]!,
+                        coche: _niveaux.contains(n),
+                        onTap: () => setState(() =>
+                            _niveaux.contains(n) ? _niveaux.remove(n) : _niveaux.add(n)),
+                      ),
+                  ],
+                ),
+                const SizedBox(height: BSSpace.s3),
                 // EN DERNIER : le bouton vient après ce qu'il consomme.
                 OutlinedButton(
                   onPressed: _enCours ? null : _composer,
@@ -184,6 +249,85 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
             ),
           ),
       ],
+    );
+  }
+}
+
+// UNE LIGNE DE FILTRE : un titre, des pastilles, et ce que veut dire « rien
+// de coché ». Cette dernière mention est le cœur du contrôle : sans elle,
+// l'animateur qui voit quatre cases vides croit devoir en cocher une, alors
+// que ne rien cocher est l'état normal et le plus large.
+class _Option {
+  const _Option({required this.label, required this.coche, required this.onTap});
+  final String label;
+  final bool coche;
+  final VoidCallback onTap;
+}
+
+class _LigneFiltre extends StatelessWidget {
+  const _LigneFiltre({
+    required this.titre,
+    required this.options,
+    required this.vide,
+    required this.quandVide,
+  });
+
+  final String titre;
+  final List<_Option> options;
+  final bool vide;
+  final String quandVide;
+
+  @override
+  Widget build(BuildContext context) {
+    return Wrap(
+      spacing: BSSpace.s2,
+      runSpacing: BSSpace.s2,
+      crossAxisAlignment: WrapCrossAlignment.center,
+      children: [
+        SizedBox(
+          width: 84,
+          child: Text(titre,
+              style: BSType.body(size: 14, color: BSColors.neutral600)),
+        ),
+        for (final o in options) _Pastille(o),
+        if (vide)
+          Padding(
+            padding: const EdgeInsets.only(left: BSSpace.s2),
+            child: Text(quandVide,
+                style: BSType.body(size: 13, color: BSColors.neutral500)
+                    .copyWith(fontStyle: FontStyle.italic)),
+          ),
+      ],
+    );
+  }
+}
+
+// Cochée, la pastille se remplit : la couleur seule ne suffirait pas à qui
+// distingue mal le bleu, alors le contour s'épaissit aussi.
+class _Pastille extends StatelessWidget {
+  const _Pastille(this.o);
+  final _Option o;
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: o.onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+        decoration: BoxDecoration(
+          color: o.coche ? BSColors.accent : Colors.transparent,
+          border: Border.all(
+            color: o.coche ? BSColors.accent : BSColors.divider,
+            width: o.coche ? 2 : 1,
+          ),
+        ),
+        child: Text(
+          o.label,
+          style: BSType.body(
+                  size: 14, color: o.coche ? BSColors.bg : BSColors.text)
+              .copyWith(fontWeight: o.coche ? FontWeight.w600 : FontWeight.w400),
+        ),
+      ),
     );
   }
 }

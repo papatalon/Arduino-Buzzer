@@ -21,6 +21,39 @@ const kVersion = 1;
 // 3 : connaisseur.
 const kNomsNiveaux = {1: 'facile', 2: 'moyen', 3: 'difficile'};
 
+// LES TRANCHES D'ÂGE, le second axe. Indépendant du niveau : le niveau se lit
+// À L'INTÉRIEUR d'une tranche (« facile pour un enfant »), la tranche dit à qui
+// la question s'adresse. Une question peut viser plusieurs tranches ; aucune
+// règle implicite ne les déduit du niveau, chaque question porte les siennes.
+enum Tranche { enfants, ados, adultes, aines }
+
+const kNomsTranches = {
+  Tranche.enfants: 'enfants',
+  Tranche.ados: 'ados',
+  Tranche.adultes: 'adultes',
+  Tranche.aines: 'aînés',
+};
+
+// Ce que le fichier écrit : « aines » sans accent, pour rester lisible partout.
+const _clesTranches = {
+  'enfants': Tranche.enfants,
+  'ados': Tranche.ados,
+  'adultes': Tranche.adultes,
+  'aines': Tranche.aines,
+};
+
+String cleTranche(Tranche t) =>
+    _clesTranches.entries.firstWhere((e) => e.value == t).key;
+
+// Une question sans tranche vaut pour tout le monde : un questionnaire écrit
+// à la main n'a pas à se prononcer, et le filtre ne doit pas l'écarter.
+Set<Tranche> tranchesDepuisJson(Object? brut) {
+  if (brut is! List) return const {};
+  return {
+    for (final e in brut) ?_clesTranches['$e'.trim().toLowerCase()],
+  };
+}
+
 // Combien de questions de chaque niveau, en ignorant celles qui n'en ont pas.
 Map<int, int> compterNiveaux(Iterable<int?> niveaux) {
   final comptes = <int, int>{};
@@ -50,7 +83,13 @@ String? etiquetteDesNiveaux(Map<int, int> comptes) {
 }
 
 class QuizQuestion {
-  QuizQuestion({this.category = '', this.question = '', this.answer = '', this.niveau});
+  QuizQuestion({
+    this.category = '',
+    this.question = '',
+    this.answer = '',
+    this.niveau,
+    this.ages = const {},
+  });
 
   String category;
   String question;
@@ -58,19 +97,27 @@ class QuizQuestion {
   // Voir [kNomsNiveaux]. Null quand personne ne l'a coté : un questionnaire
   // écrit à la main n'a pas à se prononcer, et l'app n'affiche alors rien.
   int? niveau;
+  // Voir [Tranche]. Vide quand la question ne se prononce pas : elle vaut
+  // alors pour tout le monde et aucun filtre ne l'écarte.
+  Set<Tranche> ages;
 
   // Une question sans énoncé n'est pas jouable ; la réponse peut rester vide
   // (l'animateur la connaît, ou la juge lui-même).
   bool get isUsable => question.trim().isNotEmpty;
 
-  QuizQuestion copy() =>
-      QuizQuestion(category: category, question: question, answer: answer, niveau: niveau);
+  QuizQuestion copy() => QuizQuestion(
+      category: category,
+      question: question,
+      answer: answer,
+      niveau: niveau,
+      ages: {...ages});
 
   Map<String, dynamic> toJson() => {
         'categorie': category,
         'question': question,
         'reponse': answer,
         if (niveau != null) 'niveau': niveau,
+        if (ages.isNotEmpty) 'ages': [for (final t in Tranche.values) if (ages.contains(t)) cleTranche(t)],
       };
 
   // Tolérant à dessein : un fichier écrit à la main peut omettre la
@@ -80,6 +127,7 @@ class QuizQuestion {
         question: (json['question'] as String?)?.trim() ?? '',
         answer: (json['reponse'] as String?)?.trim() ?? '',
         niveau: niveauDepuisJson(json['niveau']),
+        ages: tranchesDepuisJson(json['ages']),
       );
 }
 

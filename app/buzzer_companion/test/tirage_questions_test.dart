@@ -155,4 +155,102 @@ void main() {
       TirageQuestions.cle(QuizQuestion(question: '  qui a  fondé québec')),
     );
   });
+
+  // LES DEUX FILTRES DE LA COMPOSITION À LA DEMANDE.
+  //
+  // Le classement des questions par niveau et par tranche d'âge n'a de valeur
+  // que s'il sert au moment de jouer. Ce qui se joue ici : un filtre qui
+  // écarte trop est pire qu'un filtre absent, parce que l'animateur ne voit
+  // pas ce qui manque.
+  _CatalogueCote creerCote() => _CatalogueCote([
+        QuizQuestion(question: 'E1', niveau: 1, ages: {Tranche.enfants}),
+        QuizQuestion(question: 'E2', niveau: 2, ages: {Tranche.enfants, Tranche.ados}),
+        QuizQuestion(question: 'A1', niveau: 3, ages: {Tranche.adultes, Tranche.aines}),
+        QuizQuestion(question: 'A2', niveau: 1, ages: {Tranche.aines}),
+        // Ni niveau ni tranche : une question écrite à la main, qui ne s'est
+        // pas prononcée. Aucun filtre ne doit l'écarter.
+        QuizQuestion(question: 'X1'),
+      ]);
+
+  test('le filtre de niveau ne garde que les niveaux cochés', () async {
+    final tirage = TirageQuestions(catalogue: creerCote(), hasard: Random(5));
+    final q = await tirage.composer(nombre: 10, niveaux: {1});
+    expect(q, isNotNull);
+    final enonces = q!.questions.map((e) => e.question).toSet();
+    expect(enonces, containsAll(['E1', 'A2']));
+    expect(enonces, isNot(contains('E2')));
+    expect(enonces, isNot(contains('A1')));
+  });
+
+  test('une question vaut pour chacune de ses tranches, pas seulement la première',
+      () async {
+    final tirage = TirageQuestions(catalogue: creerCote(), hasard: Random(7));
+    final q = await tirage.composer(nombre: 10, tranches: {Tranche.ados});
+    // E2 vise enfants ET ados : demander les ados doit la ramener.
+    expect(q!.questions.map((e) => e.question), contains('E2'));
+    expect(q.questions.map((e) => e.question), isNot(contains('A1')));
+  });
+
+  test('une question qui ne se prononce pas passe tous les filtres', () async {
+    final tirage = TirageQuestions(catalogue: creerCote(), hasard: Random(11));
+    final q = await tirage.composer(
+        nombre: 10, niveaux: {3}, tranches: {Tranche.enfants});
+    // Le filtre est contradictoire pour les questions cotées, mais X1 n'a
+    // rien déclaré : la punir de son silence n'aurait pas de sens.
+    expect(q!.questions.map((e) => e.question), contains('X1'));
+  });
+
+  test('les deux filtres se combinent', () async {
+    final tirage = TirageQuestions(catalogue: creerCote(), hasard: Random(13));
+    final q = await tirage.composer(
+        nombre: 10, niveaux: {1}, tranches: {Tranche.aines});
+    final enonces = q!.questions.map((e) => e.question).toSet();
+    expect(enonces, contains('A2')); // niveau 1 ET aînés
+    expect(enonces, isNot(contains('E1'))); // niveau 1, mais enfants
+    expect(enonces, isNot(contains('A1'))); // aînés, mais niveau 3
+  });
+
+  test('un filtre sans réponse le dit, au lieu de rendre une manche vide',
+      () async {
+    final tirage = TirageQuestions(
+        catalogue: _CatalogueCote([
+          QuizQuestion(question: 'A1', niveau: 3, ages: {Tranche.aines}),
+        ]),
+        hasard: Random(19));
+    final q = await tirage.composer(nombre: 5, niveaux: {1});
+    expect(q, isNull);
+    expect(tirage.derniereErreur, contains('critères'));
+  });
+}
+
+// Un catalogue d'un seul fichier, dont les questions portent leur niveau et
+// leurs tranches : ce que le vrai catalogue publie depuis que les deux axes
+// sont dans le JSON.
+class _CatalogueCote extends CatalogueStore {
+  _CatalogueCote(this._questions) {
+    catalogue = Catalogue(
+      entries: const [
+        CatalogueEntry(
+          id: 'cote-1',
+          title: 'cote-1',
+          note: '',
+          collection: 'cote',
+          emoji: '',
+          questionCount: 5,
+          bytes: 0,
+          fingerprint: 'cote-1',
+        ),
+      ],
+      collections: const [],
+    );
+  }
+
+  final List<QuizQuestion> _questions;
+
+  @override
+  Future<Questionnaire?> load(CatalogueEntry entry) async => Questionnaire(
+        title: entry.title,
+        collection: entry.collection,
+        questions: [for (final q in _questions) q.copy()],
+      );
 }
