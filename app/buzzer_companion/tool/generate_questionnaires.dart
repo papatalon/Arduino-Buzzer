@@ -299,6 +299,11 @@ void main(List<String> args) {
   // etiquetees, une par ligne avec son fichier et son rang. C'est la liste
   // qu'on relit pour decider, et le moyen de ne pas relire trois mille
   // questions a chaque thematique.
+  final iChercher = args.indexOf('--chercher');
+  if (iChercher >= 0) {
+    _chercher(args.sublist(iChercher + 1).join(' '));
+    return;
+  }
   final iRetirer = args.indexOf('--retirer');
   if (iRetirer >= 0) {
     _retirer(iRetirer + 1 < args.length ? args[iRetirer + 1] : '');
@@ -2129,3 +2134,56 @@ void _retirer(String slug) {
   stdout.writeln('$total étiquettes « $slug » retirées. '
       'La thématique peut maintenant sortir de kThemes.');
 }
+
+// Cherche des mots dans la banque, versions SERVIES, et dit où.
+//
+//   dart run tool/generate_questionnaires.dart --chercher poutine
+//   dart run tool/generate_questionnaires.dart --chercher "coupe stanley"
+//
+// LE GESTE À FAIRE AVANT D'ÉCRIRE une question. Le contrôle des doublons
+// n'attrape que le texte identique, et les quasi-doublons ne se voient qu'à
+// la génération, une fois la ligne écrite et le fichier sauvegardé. Chercher
+// d'abord coûte trois secondes et évite de reposer sous d'autres mots une
+// question qui existe déjà ailleurs dans la banque.
+//
+// Sans accents et sans casse : « quebec » trouve « Québec ».
+void _chercher(String motif) {
+  if (motif.trim().isEmpty) {
+    stderr.writeln('Usage : --chercher <mots>');
+    exit(1);
+  }
+  final cible = _strip(motif).toLowerCase();
+  final categories = _parseCategories(File(_sourcePath).readAsStringSync());
+  final all = <Entry>[];
+  final parCategorie = <String, List<Entry>>{};
+  for (final cat in categories) {
+    final entries = _applyAccents(cat);
+    parCategorie[entries.first.category] = entries;
+    all.addAll(entries);
+  }
+  all.addAll(_readInedites(parCategorie.keys.toSet()));
+
+  final trouvees = all
+      .where((e) =>
+          _strip('${e.question} ${e.answer}').toLowerCase().contains(cible))
+      .toList();
+  for (final e in trouvees) {
+    final marques = [
+      if (e.niveau != null) kNomsNiveaux[e.niveau]!,
+      if (!e.pourTous)
+        [for (final t in Tranche.values) if (e.tranches.contains(t)) t.name]
+            .join('+'),
+      ...e.themes,
+    ];
+    stdout.writeln('[${e.category}] ${e.question}  →  ${e.answer}'
+        '${marques.isEmpty ? '' : '   (${marques.join(', ')})'}');
+  }
+  stdout.writeln('\n${trouvees.length} question'
+      '${trouvees.length > 1 ? 's' : ''} contenant « $motif ».');
+  if (trouvees.isEmpty) {
+    stdout.writeln('Le terrain est libre. Vérifier quand même le SUJET avec '
+        'un autre mot : « rondelle » ne trouve pas « puck ».');
+  }
+}
+
+const kNomsNiveaux = {1: 'facile', 2: 'moyen', 3: 'difficile'};
