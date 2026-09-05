@@ -7,9 +7,27 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Quel dictateur soviétique a succédé à Lénine ?",
-      "reponse": "Staline",
+      "categorie": "Mots et langue",
+      "question": "Quel mode exprime un ordre ?",
+      "reponse": "L'impératif",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de lettres compte l'alphabet français ?",
+      "reponse": "Vingt-six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on au Québec la neige mouillée et boueuse du printemps ?",
+      "reponse": "La slush",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Écosse ?",
+      "reponse": "Édimbourg",
       "niveau": 2,
       "ages": [
         "ados",
@@ -18,15 +36,47 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel hors-la-loi anglais volait aux riches pour les pauvres ?",
-      "reponse": "Robin des Bois",
-      "niveau": 1
+      "categorie": "Sports",
+      "question": "Quel attaquant norvégien enfile les buts à Manchester City ?",
+      "reponse": "Haaland",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ragoût du temps des fêtes se sert avec des boulettes, dans une sauce épaissie à la farine grillée ?",
+      "reponse": "Le ragoût de pattes",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles explosions de couleurs illuminent le ciel les soirs de fête ?",
-      "reponse": "Un feu d'artifice",
+      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
+      "reponse": "Le REM",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle la petite sœur d'Elsa ?",
+      "reponse": "Anna",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel hors-la-loi anglais volait aux riches pour les pauvres ?",
+      "reponse": "Robin des Bois",
       "niveau": 1
     },
     {
@@ -46,21 +96,26 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien de lettres compte l'alphabet français ?",
-      "reponse": "Vingt-six",
+      "categorie": "Culture pop",
+      "question": "Quel objet orange envahit les rues de Montréal chaque été ?",
+      "reponse": "Le cône",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
+      "reponse": "Le pain doré",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle reine a des pouvoirs de glace chez Disney ?",
-      "reponse": "Elsa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle centrale nucléaire a explosé en 1986 ?",
-      "reponse": "Tchernobyl",
+      "categorie": "Culture pop",
+      "question": "Quel appareil enregistrait les messages sur une petite cassette quand on était absent ?",
+      "reponse": "Le répondeur",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -68,58 +123,13 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel attaquant norvégien enfile les buts à Manchester City ?",
-      "reponse": "Haaland",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle tarte épicée se mange à l'Action de grâce ?",
-      "reponse": "À la citrouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Citez un palindrome de cinq lettres qui flotte.",
-      "reponse": "Kayak",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle fée accompagne Peter Pan ?",
-      "reponse": "Clochette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage de conte chaussé de bottes parle au nom de son maître ?",
-      "reponse": "Le Chat botté",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie casser du sucre sur le dos ?",
-      "reponse": "Dire du mal",
+      "categorie": "Québec",
+      "question": "Quelle série de romans suit Émilie Bordeleau ?",
+      "reponse": "Les Filles de Caleb",
       "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe féminin sud-coréen a chanté Kill This Love ?",
-      "reponse": "Blackpink",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
       ]
     },
     {
@@ -134,25 +144,42 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la fondue au fromage ?",
-      "reponse": "La Suisse",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel homme fort québécois du 19e siècle est réputé le plus fort de l'histoire ?",
-      "reponse": "Louis Cyr",
+      "categorie": "Histoire",
+      "question": "Quelle centrale nucléaire a explosé en 1986 ?",
+      "reponse": "Tchernobyl",
       "niveau": 2,
       "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne un enfant ?",
+      "reponse": "Un flo",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'absence de son ?",
+      "reponse": "Le silence",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la femelle du cerf ?",
+      "reponse": "La biche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de côtés a un pentagone ?",
+      "reponse": "Cinq",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -166,50 +193,28 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'absence de son ?",
-      "reponse": "Le silence",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle sirène Disney rêve de vivre sur terre ?",
+      "reponse": "Ariel",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel programme de récompenses accumule des points bleus chez plusieurs commerçants ?",
-      "reponse": "Air Miles",
+      "categorie": "Musique",
+      "question": "Quel groupe féminin sud-coréen a chanté Kill This Love ?",
+      "reponse": "Blackpink",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien de côtés a un pentagone ?",
-      "reponse": "Cinq",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle équipe de hockey joue au Centre Bell ?",
-      "reponse": "Les Canadiens",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Écosse ?",
-      "reponse": "Édimbourg",
+      "categorie": "Histoire",
+      "question": "Quel dictateur soviétique a succédé à Lénine ?",
+      "reponse": "Staline",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir de la broue dans le toupet ?",
-      "reponse": "Être débordé",
-      "niveau": 1,
-      "ages": [
         "adultes",
         "aines"
       ]

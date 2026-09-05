@@ -7,15 +7,38 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel grain blanc met-on dans la salière ?",
-      "reponse": "Le sel",
+      "categorie": "Culture générale",
+      "question": "Combien de jokers dans un paquet de cartes ?",
+      "reponse": "Deux",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle rivière célèbre coule à Ottawa ?",
-      "reponse": "L'Outaouais",
+      "categorie": "Culture pop",
+      "question": "Sur quel objet de ménage les sorcières se déplacent-elles dans le ciel ?",
+      "reponse": "Un balai",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quels biscuits noirs à la crème blanche trempe-t-on dans le lait ?",
+      "reponse": "Les Oreo",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention permet de parler à quelqu'un qui est loin ?",
+      "reponse": "Le téléphone",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quelle organisation regroupe les pays francophones ?",
+      "reponse": "La Francophonie",
       "niveau": 1,
       "ages": [
         "ados",
@@ -24,9 +47,9 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Qui a peint la Joconde ?",
-      "reponse": "Léonard de Vinci",
+      "categorie": "Mots et langue",
+      "question": "Combien de lettres muettes dans le mot loup ?",
+      "reponse": "Une",
       "niveau": 1
     },
     {
@@ -36,55 +59,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal à huit pattes tisse une toile ?",
-      "reponse": "L'araignée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel oratoire montréalais fut fondé par le frère André ?",
-      "reponse": "Saint-Joseph",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel autre dictionnaire français célèbre existe ?",
-      "reponse": "Le Robert",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel film de 2023 a porté le plombier moustachu de Nintendo au cinéma ?",
-      "reponse": "Super Mario Bros, le film",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Sports",
       "question": "Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?",
       "reponse": "Le football",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien de jokers dans un paquet de cartes ?",
-      "reponse": "Deux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle boisson alcoolisée réchauffe le Carnaval de Québec ?",
-      "reponse": "Le caribou",
+      "categorie": "Sciences et nature",
+      "question": "Quelle échelle mesure les séismes ?",
+      "reponse": "Richter",
       "niveau": 1,
       "ages": [
         "ados",
@@ -93,9 +76,15 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel chanteur jamaïcain a popularisé le reggae ?",
-      "reponse": "Bob Marley",
+      "categorie": "Québec",
+      "question": "Quelle machine bruyante lance la neige de côté dans l'entrée ?",
+      "reponse": "Une souffleuse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles petites portions espagnoles se partagent ?",
+      "reponse": "Les tapas",
       "niveau": 1,
       "ages": [
         "ados",
@@ -115,19 +104,73 @@
       ]
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel jouet cosmonaute de Toy Story crie « Vers l'infini et au-delà » ?",
+      "reponse": "Buzz Lightyear",
+      "niveau": 1
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Que signifie avoir les yeux dans la graisse de bines ?",
-      "reponse": "Être dans la lune",
+      "question": "Quel est le cri de la vache ?",
+      "reponse": "Le meuglement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle fête nationale du Québec se célèbre le 24 juin ?",
+      "reponse": "La Saint-Jean",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelles cellules du sang combattent les infections ?",
+      "reponse": "Globules blancs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel clou parfume le jambon de Noël ?",
+      "reponse": "Clou de girofle",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle invention permet de parler à quelqu'un qui est loin ?",
-      "reponse": "Le téléphone",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal à huit pattes tisse une toile ?",
+      "reponse": "L'araignée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel directeur de Poudlard a une longue barbe blanche ?",
+      "reponse": "Dumbledore",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle rivière célèbre coule à Ottawa ?",
+      "reponse": "L'Outaouais",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel véhicule vole grâce à une grande hélice sur le toit ?",
+      "reponse": "L'hélicoptère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel milliardaire Marvel a un réacteur dans la poitrine ?",
+      "reponse": "Tony Stark",
       "niveau": 1
     },
     {
@@ -138,67 +181,20 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel véhicule vole grâce à une grande hélice sur le toit ?",
-      "reponse": "L'hélicoptère",
+      "question": "Qui a peint la Joconde ?",
+      "reponse": "Léonard de Vinci",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie ronde se décore de glaçage pour une fête ?",
-      "reponse": "Le gâteau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle échelle mesure les séismes ?",
-      "reponse": "Richter",
+      "categorie": "Musique",
+      "question": "Quel chanteur jamaïcain a popularisé le reggae ?",
+      "reponse": "Bob Marley",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel journaliste est l'identité secrète de Superman ?",
-      "reponse": "Clark Kent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée japonaise suit Son Goku ?",
-      "reponse": "Dragon Ball",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume en longues tiges vertes croque avec du beurre d'arachide ?",
-      "reponse": "Le céleri",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelles cellules du sang combattent les infections ?",
-      "reponse": "Globules blancs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle émission fait courir des duos autour du monde ?",
-      "reponse": "Amazing Race",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du mouton ?",
-      "reponse": "Le bêlement",
-      "niveau": 1
     }
   ]
 }

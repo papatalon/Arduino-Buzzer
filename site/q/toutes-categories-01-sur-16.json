@@ -7,47 +7,9 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la pizza ?",
-      "reponse": "L'Italie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Que porte un astronaute pour survivre dans l'espace ?",
-      "reponse": "Un scaphandre",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
-      "reponse": "Le kitesurf",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus long fleuve du Canada ?",
-      "reponse": "Le Mackenzie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel bâtiment de bois entouré d'une palissade protégeait les postes de traite ?",
-      "reponse": "Le fort",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel dramaturge québécois a écrit Les Belles-Sœurs ?",
-      "reponse": "Michel Tremblay",
+      "categorie": "Culture pop",
+      "question": "Quelle société d'État diffuse la télévision publique en français au Canada ?",
+      "reponse": "Radio-Canada",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -55,26 +17,15 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le petit chien blanc de Tintin ?",
-      "reponse": "Milou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle ardoise à deux boutons dessine des traits et s'efface en la secouant ?",
-      "reponse": "Le Télécran",
-      "niveau": 3,
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on celui qui étudie les oiseaux ?",
+      "reponse": "Un ornithologue",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel outil de fer servait à abattre les arbres pour défricher la terre ?",
-      "reponse": "La hache",
-      "niveau": 2
     },
     {
       "categorie": "Musique",
@@ -98,15 +49,15 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Comment appelle-t-on les petits personnages bleus qui vivent dans des champignons ?",
-      "reponse": "Les Schtroumpfs",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles croustilles de maïs accompagnent la salsa ?",
+      "reponse": "Les nachos",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien font deux plus deux ?",
-      "reponse": "Quatre",
+      "categorie": "Québec",
+      "question": "Quelle créature légendaire fait peur aux enfants ?",
+      "reponse": "Bonhomme Sept-Heures",
       "niveau": 1
     },
     {
@@ -116,9 +67,28 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Langue parlée en Égypte ?",
-      "reponse": "L'arabe",
+      "categorie": "Culture pop",
+      "question": "Quelle peluche électronique aux grands yeux parlait toute seule en 1998 ?",
+      "reponse": "Le Furby",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
+      "reponse": "Le kitesurf",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat français mijote du bœuf au vin rouge ?",
+      "reponse": "Bœuf bourguignon",
       "niveau": 1,
       "ages": [
         "ados",
@@ -128,30 +98,8 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Quelle romancière a créé Hercule Poirot ?",
-      "reponse": "Agatha Christie",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle saison fait tomber les feuilles des arbres ?",
-      "reponse": "L'automne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
       "question": "Quel animal figure sur la pièce de 25 cents canadienne ?",
       "reponse": "Le caribou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Sur quelle estrade les artistes se produisent-ils ?",
-      "reponse": "La scène",
       "niveau": 1
     },
     {
@@ -167,9 +115,39 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on l'emploi temporaire qu'un étudiant occupe l'été ?",
-      "reponse": "Une job d'été",
-      "niveau": 2,
+      "question": "Comment appelle-t-on l'espace sous le toit où s'entassent les vieilles boîtes ?",
+      "reponse": "Le grenier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel bâtiment de bois entouré d'une palissade protégeait les postes de traite ?",
+      "reponse": "Le fort",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien font deux plus deux ?",
+      "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Sur quelle estrade les artistes se produisent-ils ?",
+      "reponse": "La scène",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que porte un astronaute pour survivre dans l'espace ?",
+      "reponse": "Un scaphandre",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot kimono ?",
+      "reponse": "Le japonais",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -177,9 +155,31 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du sanglier ?",
-      "reponse": "La laie",
+      "categorie": "Histoire",
+      "question": "Quel outil de fer servait à abattre les arbres pour défricher la terre ?",
+      "reponse": "La hache",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle romancière a créé Hercule Poirot ?",
+      "reponse": "Agatha Christie",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami étoile de mer accompagne Bob l'éponge ?",
+      "reponse": "Patrick",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus long fleuve du Canada ?",
+      "reponse": "Le Mackenzie",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -187,19 +187,10 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel petit pingouin de dessin animé porte une salopette et va à la garderie ?",
-      "reponse": "T'choupi",
-      "niveau": 2,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert sicilien est un rouleau fourré à la ricotta ?",
-      "reponse": "Le cannoli",
-      "niveau": 2,
+      "categorie": "Géographie",
+      "question": "Langue parlée en Égypte ?",
+      "reponse": "L'arabe",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -207,15 +198,16 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quelle figure de style compare sans mot de comparaison ?",
-      "reponse": "La métaphore",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Géographie",
+      "question": "Quelle saison fait tomber les feuilles des arbres ?",
+      "reponse": "L'automne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle petite fée accompagne Peter Pan au Pays imaginaire ?",
+      "reponse": "La fée Clochette",
+      "niveau": 1
     }
   ]
 }

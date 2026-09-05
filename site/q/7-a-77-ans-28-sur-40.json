@@ -7,144 +7,26 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Géographie",
-      "question": "Capitale de la Chine ?",
-      "reponse": "Pékin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle partie de l'église pointe vers le ciel et se voit de loin dans un village ?",
-      "reponse": "Le clocher",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel gros camion dégage la neige des rues après une tempête ?",
-      "reponse": "Une charrue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat provençal mijote des légumes et aubergines ?",
-      "reponse": "La ratatouille",
+      "categorie": "Culture générale",
+      "question": "Quelles sont les couleurs du drapeau italien ?",
+      "reponse": "Vert blanc rouge",
       "niveau": 1,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel Pokémon jaune lance des éclairs ?",
-      "reponse": "Pikachu",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Le Soleil est-il une planète ou une étoile ?",
-      "reponse": "Une étoile",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle maladie a confiné la planète entière au printemps 2020 ?",
-      "reponse": "La COVID-19",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel premier ministre a tenu le référendum de 1980 ?",
-      "reponse": "René Lévesque",
-      "niveau": 1,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
-      "reponse": "Montréal",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse glissée a rendu célèbre Michael Jackson ?",
-      "reponse": "Le moonwalk",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel milliardaire a cofondé Microsoft avec Paul Allen ?",
-      "reponse": "Bill Gates",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle société d'État tire les loteries au Québec ?",
-      "reponse": "Loto-Québec",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "De quelle planète vient Superman ?",
-      "reponse": "Krypton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir la langue à terre ?",
-      "reponse": "Être très fatigué",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur incarnait Danny dans Grease ?",
-      "reponse": "John Travolta",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?",
-      "reponse": "Un chaudron d'or",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel artiste fait disparaître des objets devant un public ébahi ?",
-      "reponse": "Un magicien",
+      "question": "Dans quel sport dit-on échec et mat ?",
+      "reponse": "Les échecs",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de pattes a un oiseau ?",
-      "reponse": "Deux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film Disney de 2013 chante Libérée, délivrée ?",
-      "reponse": "La Reine des neiges",
+      "question": "Le Soleil est-il une planète ou une étoile ?",
+      "reponse": "Une étoile",
       "niveau": 1
     },
     {
@@ -159,15 +41,118 @@
       ]
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Comment dit-on « bonjour » en anglais ?",
+      "reponse": "Hello",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle famille de super-héros Pixar porte du rouge ?",
+      "reponse": "Les Incroyables",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?",
+      "reponse": "Un chaudron d'or",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série suit six amis dans un café new-yorkais ?",
+      "reponse": "Friends",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Bouffe et cuisine",
-      "question": "Comment nomme-t-on un œuf cuit 3 minutes en coquille ?",
-      "reponse": "À la coque",
+      "question": "Quel liquide sans couleur ni goût faut-il boire tous les jours ?",
+      "reponse": "L'eau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse glissée a rendu célèbre Michael Jackson ?",
+      "reponse": "Le moonwalk",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment blanc, fait de lait, mange-t-on avec des fruits au déjeuner ?",
-      "reponse": "Le yogourt",
+      "question": "Quelle noix compose le beurre le plus vendu ?",
+      "reponse": "L'arachide",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la sève recueillie au printemps pour faire le sirop ?",
+      "reponse": "L'eau d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film Pixar suit une voiture de course rouge ?",
+      "reponse": "Les Bagnoles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de pattes a un oiseau ?",
+      "reponse": "Deux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur incarnait Danny dans Grease ?",
+      "reponse": "John Travolta",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne qui soigne les malades à l'hôpital avec le médecin ?",
+      "reponse": "L'infirmière",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle maladie a confiné la planète entière au printemps 2020 ?",
+      "reponse": "La COVID-19",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "De quelle couleur est le feu de circulation qui dit d'avancer ?",
+      "reponse": "Vert",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
+      "reponse": "Montréal",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment dit-on « merci » en anglais ?",
+      "reponse": "Thank you",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle chenille fabrique un fil précieux en tissant son cocon ?",
+      "reponse": "Le ver à soie",
       "niveau": 1
     },
     {
@@ -177,15 +162,21 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie « avoir une faim de loup » ?",
-      "reponse": "Avoir très faim",
+      "categorie": "Culture pop",
+      "question": "Quel mot le magicien lance-t-il pour faire apparaître quelque chose ?",
+      "reponse": "Abracadabra",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie être malade comme un chien ?",
-      "reponse": "Être très malade",
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le congé imprévu que la neige offre aux élèves ?",
+      "reponse": "Une journée de tempête",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Chine ?",
+      "reponse": "Pékin",
       "niveau": 1
     }
   ]

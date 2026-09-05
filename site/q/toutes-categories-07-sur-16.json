@@ -7,51 +7,49 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
-      "reponse": "Nézet-Séguin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Culture générale",
+      "question": "Quel instrument d'écriture contient du graphite ?",
+      "reponse": "Le crayon",
+      "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
-      "reponse": "Mariana Mazza",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui pousse au bout des doigts et qu'il faut couper ?",
-      "reponse": "Les ongles",
+      "categorie": "Géographie",
+      "question": "De quelles couleurs est le drapeau de la France ?",
+      "reponse": "Bleu blanc rouge",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel poète québécois a écrit Le Vaisseau d'or ?",
-      "reponse": "Émile Nelligan",
+      "question": "Quel commerce vend des outils, de la peinture et des clous ?",
+      "reponse": "Une quincaillerie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'emploi temporaire qu'un étudiant occupe l'été ?",
+      "reponse": "Une job d'été",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie faire la file ?",
-      "reponse": "Attendre son tour",
-      "niveau": 1
+      "question": "Que signifie jeter l'éponge ?",
+      "reponse": "Abandonner",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel légume la marraine de Cendrillon transforme-t-elle en carrosse ?",
-      "reponse": "La citrouille",
+      "categorie": "Culture générale",
+      "question": "Combien de doigts a-t-on sur une main ?",
+      "reponse": "Cinq",
       "niveau": 1
     },
     {
@@ -61,9 +59,20 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Combien de poumons possède l'humain ?",
-      "reponse": "Deux",
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la femelle du singe ?",
+      "reponse": "La guenon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles galettes à petits carreaux se mangent avec du sirop ?",
+      "reponse": "Les gaufres",
       "niveau": 1
     },
     {
@@ -77,84 +86,35 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on l'abri grillagé où vivent les poules ?",
-      "reponse": "Le poulailler",
+      "categorie": "Géographie",
+      "question": "Quel État américain chaud accueille Disney World ?",
+      "reponse": "La Floride",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le bonhomme de neige de La Reine des neiges ?",
-      "reponse": "Olaf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec un volant ?",
-      "reponse": "Le badminton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "De quelle couleur est le feu de circulation qui dit d'avancer ?",
-      "reponse": "Vert",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de doigts a-t-on sur une main ?",
-      "reponse": "Cinq",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle soupe japonaise est à base de pâte de soja ?",
-      "reponse": "La soupe miso",
+      "question": "Quel film de 1939 suit Dorothy sur une route jaune ?",
+      "reponse": "Magicien d'Oz",
       "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le bandit des mers qui attaquait les navires ?",
-      "reponse": "Un pirate",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Avec quelle farine fait-on le pain traditionnel ?",
-      "reponse": "La farine de blé",
-      "niveau": 2,
+      "categorie": "Culture pop",
+      "question": "Quel traitement de coiffure des années 80 frisait les cheveux pour des mois ?",
+      "reponse": "La permanente",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel style musical a son grand festival à Montréal en juillet ?",
-      "reponse": "Le jazz",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel instrument d'écriture contient du graphite ?",
-      "reponse": "Le crayon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich fondant au fromage est grillé ?",
-      "reponse": "Le grilled cheese",
+      "categorie": "Sciences et nature",
+      "question": "Combien de poumons possède l'humain ?",
+      "reponse": "Deux",
       "niveau": 1
     },
     {
@@ -164,27 +124,79 @@
       "niveau": 2
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel État américain chaud accueille Disney World ?",
-      "reponse": "La Floride",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce rouge accompagne la dinde ?",
+      "reponse": "Aux canneberges",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
+      "reponse": "Arthur Laroche",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plage du Maine est la destination classique des vacances québécoises ?",
+      "reponse": "Old Orchard",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qu'est-ce qui pousse au bout des doigts et qu'il faut couper ?",
+      "reponse": "Les ongles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le bandit des mers qui attaquait les navires ?",
+      "reponse": "Un pirate",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois chialer ?",
-      "reponse": "Se plaindre",
+      "question": "De quelle langue vient le mot algèbre ?",
+      "reponse": "L'arabe",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
+      "reponse": "Nézet-Séguin",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un volant ?",
+      "reponse": "Le badminton",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "De quelles couleurs est le drapeau de la France ?",
-      "reponse": "Bleu blanc rouge",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles galettes du déjeuner arrose-t-on de sirop d'érable ?",
+      "reponse": "Les crêpes",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle plateforme diffuse les films de Marvel et de Pixar ?",
-      "reponse": "Disney+",
+      "categorie": "Québec",
+      "question": "Quel cirque québécois est connu mondialement ?",
+      "reponse": "Cirque du Soleil",
       "niveau": 1
     }
   ]

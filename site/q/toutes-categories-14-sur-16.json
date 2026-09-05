@@ -7,15 +7,26 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel petit instrument de métal, suspendu à un fil, tinte quand on le frappe avec une tige ?",
-      "reponse": "Le triangle",
-      "niveau": 1
+      "categorie": "Géographie",
+      "question": "Quel pays produit le plus de café ?",
+      "reponse": "Le Brésil",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel filet suspendu entre deux arbres sert à se bercer ?",
+      "reponse": "Un hamac",
+      "niveau": 2
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Dans quelle ville vit Batman ?",
-      "reponse": "Gotham",
+      "question": "Quelle émission québécoise a des fauteuils qui pivotent ?",
+      "reponse": "La Voix",
       "niveau": 1
     },
     {
@@ -29,14 +40,26 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on l'aide financière que l'État avance aux étudiants ?",
-      "reponse": "Les prêts et bourses",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le musicien qui joue de la trompette ?",
+      "reponse": "Un trompettiste",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
+      "reponse": "La granita",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel géant des contes crie qu'il sent la chair fraîche ?",
+      "reponse": "L'ogre",
+      "niveau": 2
     },
     {
       "categorie": "Sciences et nature",
@@ -46,14 +69,19 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?",
-      "reponse": "Le Bossu de Notre-Dame",
-      "niveau": 3,
+      "question": "Quelle série fantastique a des dragons et un trône de fer ?",
+      "reponse": "Game of Thrones",
+      "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle épice noire moulue accompagne le sel sur la table ?",
+      "reponse": "Le poivre",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -62,16 +90,49 @@
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle tour cylindrique de la ferme conserve la nourriture des vaches ?",
-      "reponse": "Un silo",
-      "niveau": 2
+      "categorie": "Culture pop",
+      "question": "Quel jouet se presse et se repousse en faisant des petits pops de silicone ?",
+      "reponse": "Le pop-it",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Comment appelle-t-on le grand navire qui emmène des passagers en croisière ?",
-      "reponse": "Un paquebot",
+      "categorie": "Musique",
+      "question": "Quel petit instrument de métal, suspendu à un fil, tinte quand on le frappe avec une tige ?",
+      "reponse": "Le triangle",
       "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel archéologue porte un fouet et un chapeau ?",
+      "reponse": "Indiana Jones",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du coq ?",
+      "reponse": "Cocorico",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention éclaire une pièce sans flamme depuis la fin du 19e siècle ?",
+      "reponse": "L'ampoule électrique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle attraction de Sainte-Foy présente des morses et des ours blancs ?",
+      "reponse": "L'Aquarium du Québec",
+      "niveau": 2
     },
     {
       "categorie": "Sciences et nature",
@@ -80,55 +141,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle bouillie d'avoine chaude réchauffe les matins d'hiver ?",
-      "reponse": "Le gruau",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment brun se casse en carrés et fond dans la main ?",
-      "reponse": "Le chocolat",
+      "categorie": "Québec",
+      "question": "Quel jour d'octobre les enfants passent-ils de porte en porte ?",
+      "reponse": "L'Halloween",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel oncle jaloux trahit Mufasa ?",
-      "reponse": "Scar",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel filet suspendu entre deux arbres sert à se bercer ?",
-      "reponse": "Un hamac",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
-      "reponse": "Loft Story",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se pratique dans une piscine ?",
-      "reponse": "La natation",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on l'abri où dort l'ours pendant l'hiver ?",
-      "reponse": "Une tanière",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume vert et long se mange en cosse ou en conserve ?",
-      "reponse": "Le haricot",
-      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -142,47 +158,33 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel chansonnier a écrit Quand les hommes vivront d'amour ?",
-      "reponse": "Raymond Lévesque",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le musicien qui joue de la trompette ?",
-      "reponse": "Un trompettiste",
-      "niveau": 2
+      "categorie": "Sports",
+      "question": "Quel sport se pratique dans une piscine ?",
+      "reponse": "La natation",
+      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Combien de voyelles dans l'alphabet français ?",
-      "reponse": "Six",
+      "question": "Quel est le cri du mouton ?",
+      "reponse": "Le bêlement",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jouet de cour d'école tourne pendant qu'on bondit par-dessus ?",
-      "reponse": "Une corde à sauter",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain français long et croustillant est emblématique ?",
+      "reponse": "La baguette",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel pays produit le plus de café ?",
-      "reponse": "Le Brésil",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Culture générale",
+      "question": "Comment appelle-t-on le grand navire qui emmène des passagers en croisière ?",
+      "reponse": "Un paquebot",
+      "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle invention éclaire une pièce sans flamme depuis la fin du 19e siècle ?",
-      "reponse": "L'ampoule électrique",
+      "categorie": "Québec",
+      "question": "Quelle est la capitale nationale du Québec ?",
+      "reponse": "Québec",
       "niveau": 1
     }
   ]

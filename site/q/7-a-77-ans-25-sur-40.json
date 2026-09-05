@@ -7,20 +7,16 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie attache ta tuque ?",
-      "reponse": "Prépare-toi",
+      "categorie": "Sciences et nature",
+      "question": "Quelle galaxie abrite notre système solaire ?",
+      "reponse": "La Voie lactée",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel stade accueillait les Expos ?",
-      "reponse": "Stade olympique",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville du Canada ?",
+      "reponse": "Toronto",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -29,57 +25,48 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse colombienne a chanté Waka Waka ?",
-      "reponse": "Shakira",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle saison amène la neige au Québec ?",
-      "reponse": "L'hiver",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui appelle-t-on au 911 quand quelqu'un est blessé ?",
-      "reponse": "L'ambulance",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre supermassif avale même la lumière ?",
-      "reponse": "Le trou noir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume orange se creuse et se sculpte à l'Halloween ?",
-      "reponse": "La citrouille d'Halloween",
-      "niveau": 1
+      "categorie": "Mots et langue",
+      "question": "Quelle est la première lettre de l'alphabet grec ?",
+      "reponse": "Alpha",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie il pleut à boire debout ?",
-      "reponse": "Il pleut très fort",
-      "niveau": 1
+      "question": "Que signifie avoir de l'eau dans la cave ?",
+      "reponse": "Pantalon trop court",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un petit cochon rose ?",
-      "reponse": "Porcinet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'absence de son ?",
-      "reponse": "Le silence",
+      "question": "Quelle suite de Nemo suit la mémoire de Dory ?",
+      "reponse": "Trouver Doris",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Dans quel jeu abaisse-t-on des visages pour deviner le personnage de l'adversaire ?",
-      "reponse": "Qui est-ce ?",
+      "question": "Quel jouet d'été arrose les amis d'un jet d'eau ?",
+      "reponse": "Un pistolet à eau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de chaud ?",
+      "reponse": "Froid",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel métier éteint les incendies ?",
+      "reponse": "Le pompier",
       "niveau": 1
     },
     {
@@ -94,15 +81,15 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle invention permet de voir des images animées chez soi depuis les années 1950 ?",
-      "reponse": "La télévision",
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la semaine de congé scolaire du début mars ?",
+      "reponse": "La relâche",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel tunnel relie Montréal et la Rive-Sud ?",
-      "reponse": "Louis-H.-La Fontaine",
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine de la fondue au fromage ?",
+      "reponse": "La Suisse",
       "niveau": 1,
       "ages": [
         "ados",
@@ -111,76 +98,89 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée suit des chiots sauveteurs ?",
-      "reponse": "Pat' Patrouille",
-      "niveau": 1,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville du Canada ?",
-      "reponse": "Toronto",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse en robe rose Mario doit-il sans cesse secourir ?",
-      "reponse": "La princesse Peach",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mot le magicien lance-t-il pour faire apparaître quelque chose ?",
-      "reponse": "Abracadabra",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel métier éteint les incendies ?",
-      "reponse": "Le pompier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur de soccer est surnommé CR7 ?",
-      "reponse": "Cristiano Ronaldo",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Combien de voyelles dans l'alphabet français ?",
-      "reponse": "Six",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert coloré tremble dans son bol et se prépare avec de la poudre ?",
-      "reponse": "Le Jell-O",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel agrume jaune très acide accompagne les poissons ?",
-      "reponse": "Le citron",
+      "categorie": "Histoire",
+      "question": "Quelle invention permet de voir des images animées chez soi depuis les années 1950 ?",
+      "reponse": "La télévision",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle galaxie abrite notre système solaire ?",
-      "reponse": "La Voie lactée",
+      "question": "Quel astre supermassif avale même la lumière ?",
+      "reponse": "Le trou noir",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel stade accueillait les Expos ?",
+      "reponse": "Stade olympique",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'absence de son ?",
+      "reponse": "Le silence",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine du croissant ?",
+      "reponse": "La France",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel journaliste est l'identité secrète de Superman ?",
+      "reponse": "Clark Kent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle saison amène la neige au Québec ?",
+      "reponse": "L'hiver",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que met-on sur le dos pour transporter ses cahiers à l'école ?",
+      "reponse": "Un sac à dos",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse colombienne a chanté Waka Waka ?",
+      "reponse": "Shakira",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "De quoi est fait le fromage ?",
+      "reponse": "Du lait",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Sur quelle plateforme les jeunes jouent-ils à des millions de jeux créés par d'autres joueurs ?",
+      "reponse": "Roblox",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelles plaines célèbres bordent le Vieux-Québec ?",
+      "reponse": "Plaines d'Abraham",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qu'est-ce qui fait tourner les éoliennes et voler les cerfs-volants ?",
+      "reponse": "Le vent",
       "niveau": 1
     }
   ]

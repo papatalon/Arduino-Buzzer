@@ -7,51 +7,15 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le mâle de la brebis ?",
-      "reponse": "Le bélier",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
-      "question": "Quelles montagnes russes en bois de La Ronde sont célèbres ?",
-      "reponse": "Le Monstre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel canard Disney porte un costume marin ?",
-      "reponse": "Donald",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert québécois est un gâteau arrosé de sauce sucrée ?",
-      "reponse": "Pouding chômeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on la colonie française en Amérique du Nord ?",
-      "reponse": "La Nouvelle-France",
+      "question": "Quel fromage frais grince sous la dent ?",
+      "reponse": "Fromage en grains",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel équipement de cuir le joueur de baseball enfile-t-il pour attraper la balle ?",
-      "reponse": "Un gant de baseball",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
-      "reponse": "Une sirène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel soldat Marvel porte un bouclier étoilé ?",
-      "reponse": "Captain America",
+      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
+      "reponse": "Le patinage artistique",
       "niveau": 1
     },
     {
@@ -66,33 +30,85 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quelle direction est à l'opposé du nord ?",
-      "reponse": "Le sud",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quel pays viennent les sushis ?",
-      "reponse": "Le Japon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Sur quelle estrade à trois marches montent les médaillés ?",
-      "reponse": "Le podium",
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le bonhomme de neige de La Reine des neiges ?",
+      "reponse": "Olaf",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la personne qui éteint les incendies ?",
-      "reponse": "Un pompier",
+      "question": "Contraire de courageux, en cinq lettres ?",
+      "reponse": "Lâche",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel signe relie les mots composés ?",
+      "reponse": "Le trait d'union",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on au Québec les boissons gazeuses ?",
+      "reponse": "La liqueur",
       "niveau": 1
     },
     {
       "categorie": "Musique",
       "question": "Quel instrument d'église a des tuyaux ?",
       "reponse": "L'orgue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation raconte une princesse écossaise aux cheveux roux qui tire à l'arc ?",
+      "reponse": "Rebelle",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Masculin de poule ?",
+      "reponse": "Le coq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays est célèbre pour ses tacos et ses sombreros ?",
+      "reponse": "Le Mexique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
+      "reponse": "Le raton laveur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit orange se sculpte à l'Halloween ?",
+      "reponse": "La citrouille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain sucré en anneau se glace et se saupoudre ?",
+      "reponse": "Le beigne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelait-on la colonie française en Amérique du Nord ?",
+      "reponse": "La Nouvelle-France",
       "niveau": 1
     },
     {
@@ -103,8 +119,20 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelles galettes du déjeuner arrose-t-on de sirop d'érable ?",
-      "reponse": "Les crêpes",
+      "question": "Quel légume à chapeau pousse dans le noir et se met sur la pizza ?",
+      "reponse": "Le champignon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz les plantes rejettent-elles le jour ?",
+      "reponse": "L'oxygène",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle couleur obtient-on en mélangeant du bleu et du jaune ?",
+      "reponse": "Vert",
       "niveau": 1
     },
     {
@@ -118,56 +146,33 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne le vélo ?",
-      "reponse": "Un bicycle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel gaz les plantes rejettent-elles le jour ?",
-      "reponse": "L'oxygène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays est célèbre pour ses tacos et ses sombreros ?",
-      "reponse": "Le Mexique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film de Noël un garçon oublié à la maison piège deux cambrioleurs ?",
-      "reponse": "Maman, j'ai raté l'avion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le grand édifice qui réunit des dizaines de boutiques sous un même toit ?",
-      "reponse": "Un centre commercial",
+      "categorie": "Culture pop",
+      "question": "Quelle marque de vêtements de sport a une virgule pour logo ?",
+      "reponse": "Nike",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
-      "reponse": "Le patinage artistique",
+      "question": "Sur quelle estrade à trois marches montent les médaillés ?",
+      "reponse": "Le podium",
       "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle langue est l'ancêtre du français ?",
-      "reponse": "Le latin",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Sciences et nature",
       "question": "Combien de temps la Terre met-elle à tourner sur elle-même ?",
       "reponse": "24 heures",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de cour d'école consiste à courir après les autres pour les toucher ?",
+      "reponse": "La tag",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle direction est à l'opposé du nord ?",
+      "reponse": "Le sud",
       "niveau": 1
     }
   ]

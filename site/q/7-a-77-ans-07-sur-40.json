@@ -7,68 +7,6 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Dans quel amphithéâtre combattaient les gladiateurs ?",
-      "reponse": "Le Colisée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel palindrome de trois lettres exprime un refus ?",
-      "reponse": "Non",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la semaine de congé scolaire du début mars ?",
-      "reponse": "La relâche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle activité québécoise du printemps se fait dans une érablière, avec un repas ?",
-      "reponse": "La cabane à sucre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de bosses a un chameau ?",
-      "reponse": "Deux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
-      "reponse": "Le surf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle équipe de chiots secouristes intervient à la Grande Vallée ?",
-      "reponse": "La Pat' Patrouille",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel avare célèbre du terroir québécois aime son argent ?",
-      "reponse": "Séraphin",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles petites autos de métal roulent sur des pistes de plastique orange ?",
-      "reponse": "Les Hot Wheels",
-      "niveau": 1
-    },
-    {
       "categorie": "Géographie",
       "question": "Dans quel état américain se trouve Las Vegas ?",
       "reponse": "Le Nevada",
@@ -80,9 +18,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel instrument a des touches noires et blanches ?",
-      "reponse": "Le piano",
+      "categorie": "Histoire",
+      "question": "Dans quel amphithéâtre combattaient les gladiateurs ?",
+      "reponse": "Le Colisée",
       "niveau": 1
     },
     {
@@ -97,9 +35,42 @@
       ]
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quelle héroïne à pois rouges combat le crime à Paris avec Chat Noir ?",
+      "reponse": "Ladybug",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Pascal, l'ami de Raiponce ?",
+      "reponse": "Un caméléon",
+      "niveau": 1
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois barrer la porte ?",
-      "reponse": "Verrouiller",
+      "question": "Féminin de tigre ?",
+      "reponse": "Tigresse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle herbe verte garnit la pizza margherita ?",
+      "reponse": "Le basilic",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de millimètres dans un centimètre ?",
+      "reponse": "Dix",
       "niveau": 1
     },
     {
@@ -109,33 +80,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Le pluriel de pneu prend un S ou un X ?",
-      "reponse": "Un S",
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Abu, l'ami d'Aladin ?",
+      "reponse": "Un singe",
       "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle fleur suit le Soleil ?",
-      "reponse": "Le tournesol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de millimètres dans un centimètre ?",
-      "reponse": "Dix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie allongée est glacée au chocolat ?",
-      "reponse": "L'éclair",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Musique",
@@ -149,9 +97,9 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Que veut dire l'expression québécoise « c'est plate » ?",
-      "reponse": "C'est ennuyant",
+      "categorie": "Mots et langue",
+      "question": "Que signifie il pleut des cordes ?",
+      "reponse": "Il pleut très fort",
       "niveau": 1
     },
     {
@@ -161,31 +109,84 @@
       "niveau": 1
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Que veut dire SVP ?",
+      "reponse": "S'il vous plaît",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle fleur suit le Soleil ?",
+      "reponse": "Le tournesol",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel méchant Marvel claque des doigts avec un gant ?",
+      "reponse": "Thanos",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
+      "reponse": "Le surf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument a des touches noires et blanches ?",
+      "reponse": "Le piano",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle société d'État produit l'électricité au Québec ?",
+      "reponse": "Hydro-Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle poupée blonde de Mattel a un ami nommé Ken ?",
+      "reponse": "Barbie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain plat indien cuit dans un four tandoor ?",
+      "reponse": "Le naan",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Géographie",
       "question": "Capitale de l'Angleterre ?",
       "reponse": "Londres",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ours brun de dessin animé vole des paniers de pique-nique ?",
-      "reponse": "Yogi",
+      "categorie": "Sciences et nature",
+      "question": "Combien de bosses a un chameau ?",
+      "reponse": "Deux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle fête hivernale illumine le Vieux-Port de Montréal ?",
+      "reponse": "Igloofest",
       "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Comment appelle-t-on la petite bouchée prise entre deux repas ?",
-      "reponse": "Une collation",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
-      "reponse": "Le homard",
+      "question": "Quelle saucisse chaude se glisse dans un pain allongé ?",
+      "reponse": "Le hot-dog",
       "niveau": 1
     }
   ]

@@ -8,20 +8,125 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un âne toujours triste ?",
-      "reponse": "Bourriquet",
+      "question": "Quel film de 1939 suit Dorothy sur une route jaune ?",
+      "reponse": "Magicien d'Oz",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la grande surface de jeu du soccer ?",
+      "reponse": "Le terrain",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile creux sert à manger la soupe ?",
-      "reponse": "La cuillère",
+      "categorie": "Mots et langue",
+      "question": "Quel repas québécois correspond au dîner français ?",
+      "reponse": "Le souper",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
+      "reponse": "L'érable",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel ancien vélodrome de Montréal abrite des animaux ?",
-      "reponse": "Le Biodôme",
+      "question": "Quel jour d'octobre les enfants passent-ils de porte en porte ?",
+      "reponse": "L'Halloween",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel petit instrument de métal, suspendu à un fil, tinte quand on le frappe avec une tige ?",
+      "reponse": "Le triangle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le trait blanc où les coureurs s'alignent avant le coup de pistolet ?",
+      "reponse": "La ligne de départ",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de sale ?",
+      "reponse": "Propre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel vent tourbillonnant forme un entonnoir ?",
+      "reponse": "La tornade",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le trou creusé dans l'asphalte par le gel et le dégel ?",
+      "reponse": "Un nid-de-poule",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine demande à Pierrot de prêter sa plume pour écrire un mot ?",
+      "reponse": "Au clair de la lune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle opération est l'inverse de la multiplication ?",
+      "reponse": "La division",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce sucrée et brune coule sur les crêpes du Québec ?",
+      "reponse": "Le sirop d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit rouge garnit le shortcake ?",
+      "reponse": "La fraise",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel restaurant montréalais est célèbre pour son smoked meat ?",
+      "reponse": "Schwartz",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville se dresse la statue de la Liberté ?",
+      "reponse": "New York",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la petite lumière laissée allumée pour la nuit ?",
+      "reponse": "Une veilleuse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel objet affiché au mur montre les jours et les mois de l'année ?",
+      "reponse": "Le calendrier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit brun et poilu vient de Nouvelle-Zélande ?",
+      "reponse": "Le kiwi",
       "niveau": 1
     },
     {
@@ -32,115 +137,20 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Féminin de tigre ?",
-      "reponse": "Tigresse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le trait blanc où les coureurs s'alignent avant le coup de pistolet ?",
-      "reponse": "La ligne de départ",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel objet affiché au mur montre les jours et les mois de l'année ?",
-      "reponse": "Le calendrier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel méchant Marvel claque des doigts avec un gant ?",
-      "reponse": "Thanos",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Combien de lettres muettes dans le mot loup ?",
-      "reponse": "Une",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel vent tourbillonnant forme un entonnoir ?",
-      "reponse": "La tornade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la grande surface de jeu du soccer ?",
-      "reponse": "Le terrain",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle semoule accompagne les plats du Maghreb ?",
-      "reponse": "Le couscous",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel petit instrument de métal, suspendu à un fil, tinte quand on le frappe avec une tige ?",
-      "reponse": "Le triangle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne des chaussures de sport ?",
-      "reponse": "Des espadrilles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quelle couleur est la chair de l'avocat ?",
-      "reponse": "Verte",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville se dresse la statue de la Liberté ?",
-      "reponse": "New York",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
-      "reponse": "L'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon ne veut jamais grandir ?",
-      "reponse": "Peter Pan",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne un épi de maïs ?",
-      "reponse": "Un blé d'Inde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle opération est l'inverse de la multiplication ?",
-      "reponse": "La division",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Le pluriel de bijou prend un S ou un X ?",
-      "reponse": "Un X",
+      "question": "Que signifie être têtu comme une mule ?",
+      "reponse": "Ne pas changer d'idée",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne de hamburgers porte un titre royal dans son nom ?",
-      "reponse": "Burger King",
+      "question": "Quelle marque de sport allemande a trois bandes parallèles ?",
+      "reponse": "Adidas",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel panda pratique le kung-fu au cinéma ?",
+      "reponse": "Po",
       "niveau": 1
     },
     {
@@ -150,15 +160,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle comptine demande à Pierrot de prêter sa plume pour écrire un mot ?",
-      "reponse": "Au clair de la lune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu fait deviner un mot lettre par lettre en dessinant un bonhomme ?",
-      "reponse": "Le pendu",
+      "categorie": "Cinéma et télé",
+      "question": "Quel héros mutant a des griffes en adamantium ?",
+      "reponse": "Wolverine",
       "niveau": 1
     }
   ]

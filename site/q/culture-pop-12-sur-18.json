@@ -8,14 +8,18 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Dans quels livres illustrés faut-il repérer un personnage à rayures rouges et blanches ?",
-      "reponse": "Où est Charlie",
-      "niveau": 2
+      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
+      "reponse": "Grand Theft Auto",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle tablette de chocolat porte un nom qui évoque le café ?",
-      "reponse": "Le Coffee Crisp",
+      "question": "Quelle carte à puce sert à payer le métro et l'autobus à Montréal ?",
+      "reponse": "La carte Opus",
       "niveau": 2,
       "ages": [
         "ados",
@@ -25,112 +29,47 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel effet corrige et robotise la voix d'un chanteur en studio ?",
-      "reponse": "L'autotune",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Où les enfants passent-ils leurs journées d'été avec des moniteurs ?",
-      "reponse": "Au camp de jour",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on une émission audio qu'on écoute quand on veut ?",
-      "reponse": "Un balado",
+      "question": "Quelle petite fille russe vit des aventures avec un ours dans un dessin animé ?",
+      "reponse": "Macha",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
+        "enfants"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
-      "reponse": "Les Classels",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Qui livrait les bouteilles de lait à la porte des maisons ?",
-      "reponse": "Le laitier",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle tartelette se fait griller au grille-pain pour le déjeuner ?",
-      "reponse": "La Pop-Tart",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel commerce de village vendait autrefois aussi bien le clou que la farine ?",
-      "reponse": "Le magasin général",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de tour en bois s'effondre quand on retire la mauvaise pièce ?",
-      "reponse": "Jenga",
+      "question": "Quel bâton le magicien agite-t-il en disant sa formule ?",
+      "reponse": "Une baguette magique",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles espadrilles de planchistes affichent un damier noir et blanc ?",
-      "reponse": "Les Vans",
-      "niveau": 2,
+      "question": "Quel engin à deux roues se pousse d'un pied en tenant un guidon ?",
+      "reponse": "La trottinette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de cour d'école fait sauter en tapant dans les mains d'un partenaire ?",
+      "reponse": "La tape-tape",
+      "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "enfants"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Dans quel jeu de société conquiert-on des territoires sur une carte du monde ?",
-      "reponse": "Le Risk",
+      "question": "Quel grand magasin canadien publiait un catalogue attendu chaque année ?",
+      "reponse": "Eaton",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle plateforme de diffusion a un grand N rouge pour logo ?",
-      "reponse": "Netflix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle confiserie maison se fait avec de la crème et de la cassonade ?",
-      "reponse": "Le sucre à la crème",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quels petits êtres colorés aux cheveux dressés chantent dans leurs films ?",
-      "reponse": "Les Trolls",
+      "question": "Dans Minecraft, quelle pierre bleue sert à fabriquer les meilleurs outils ?",
+      "reponse": "Le diamant",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -139,39 +78,29 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission du samedi soir diffusait le hockey à Radio-Canada ?",
-      "reponse": "La Soirée du hockey",
-      "niveau": 3,
+      "question": "Quelle chaîne de hamburgers canadienne garnit le pain devant le client ?",
+      "reponse": "Harvey's",
+      "niveau": 2,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel appareil faisait le café en le faisant remonter dans un petit dôme de verre ?",
-      "reponse": "Le percolateur",
-      "niveau": 3,
+      "question": "Quelle danse de 2012 imitait un cavalier sur une chanson coréenne ?",
+      "reponse": "Le Gangnam Style",
+      "niveau": 2,
       "ages": [
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on une photo qu'on prend de soi-même à bout de bras ?",
-      "reponse": "Un égoportrait (selfie)",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles petites autos de métal roulent sur des pistes de plastique orange ?",
-      "reponse": "Les Hot Wheels",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quels petits élastiques colorés se tressent en bracelets sur un métier ?",
-      "reponse": "Les Rainbow Loom",
-      "niveau": 3,
+      "question": "Quel film Pixar de 2023 fait vivre ensemble le feu, l'eau, la terre et l'air ?",
+      "reponse": "Élémentaire",
+      "niveau": 2,
       "ages": [
         "enfants",
         "ados"
@@ -179,8 +108,25 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de plateau fait résoudre un meurtre commis dans un manoir ?",
-      "reponse": "Le Clue",
+      "question": "Sous quel grand chapiteau se donnent les numéros d'acrobates ?",
+      "reponse": "Le cirque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque allemande vend des oursons de gélatine dans le monde entier ?",
+      "reponse": "Haribo",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on au Québec la coupe de cheveux courte devant et longue derrière ?",
+      "reponse": "La coupe Longueuil",
       "niveau": 2,
       "ages": [
         "ados",
@@ -190,8 +136,42 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
-      "reponse": "MusiquePlus",
+      "question": "Quelle émission de Radio-Canada vulgarise la science le dimanche soir ?",
+      "reponse": "Découverte",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Où va-t-on voir des lions et des girafes en enclos ?",
+      "reponse": "Au zoo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jouet roule sur des rails miniatures autour du sapin ?",
+      "reponse": "Un train électrique",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel bouton bleu approuve une publication sur Facebook ?",
+      "reponse": "J'aime",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel personnage de conte chaussé de bottes parle au nom de son maître ?",
+      "reponse": "Le Chat botté",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
+      "reponse": "Dans l'œil du dragon",
       "niveau": 3,
       "ages": [
         "adultes"
@@ -199,18 +179,39 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel magasin se visitait catalogue en main, avant que la marchandise sorte de l'entrepôt ?",
-      "reponse": "Distribution aux consommateurs",
-      "niveau": 3,
+      "question": "Quelle société d'État diffuse la télévision publique en français au Canada ?",
+      "reponse": "Radio-Canada",
+      "niveau": 2,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles petites boules de verre s'entrechoquent dans un jeu de cour d'école ?",
-      "reponse": "Des billes",
-      "niveau": 2
+      "question": "Quelle ardoise à deux boutons dessine des traits et s'efface en la secouant ?",
+      "reponse": "Le Télécran",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel vêtement des années 60 a scandalisé en raccourcissant brusquement ?",
+      "reponse": "La minijupe",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on une personne qui suit un compte sur les réseaux sociaux ?",
+      "reponse": "Un abonné",
+      "niveau": 1
     }
   ]
 }

@@ -7,19 +7,27 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quelle émission satirique anime Jean-René Dufort ?",
-      "reponse": "Infoman",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sports",
+      "question": "Quel sport de glisse se pratique sur une piste avec des bâtons dans les mains ?",
+      "reponse": "Le ski alpin",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on les longs cônes de glace qui pendent des toits ?",
-      "reponse": "Des glaçons",
+      "question": "Comment nomme-t-on un hot-dog cuit à la vapeur au Québec ?",
+      "reponse": "Un steamé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de toujours ?",
+      "reponse": "Jamais",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil de comptoir fait dorer deux tranches de pain à la fois ?",
+      "reponse": "Le grille-pain",
       "niveau": 1
     },
     {
@@ -29,33 +37,50 @@
       "niveau": 1
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel objet empoisonné croque Blanche-Neige ?",
+      "reponse": "Une pomme",
+      "niveau": 1
+    },
+    {
       "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la pizza ?",
+      "question": "Pays d'origine du parmesan ?",
       "reponse": "L'Italie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel beurre de noix est interdit dans les écoles ?",
-      "reponse": "Beurre d'arachide",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson gazeuse brune est née à Atlanta ?",
-      "reponse": "Le Coca-Cola",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel appareil sèche les vêtements après le lavage ?",
-      "reponse": "La sécheuse",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle marionnette verte du Muppet Show anime le spectacle ?",
-      "reponse": "Kermit",
+      "question": "Quel hobbit doit détruire l'anneau unique ?",
+      "reponse": "Frodon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel minuscule oiseau peut voler en arrière ?",
+      "reponse": "Le colibri",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de force oppose deux équipes de chaque côté d'un même câble ?",
+      "reponse": "Le tir à la corde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume rouge, jaune ou vert se coupe en lanières croquantes ?",
+      "reponse": "Le poivron",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on une histoire de fées, de princes et de sorcières ?",
+      "reponse": "Un conte",
       "niveau": 1
     },
     {
@@ -65,49 +90,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport de glisse se pratique sur une piste avec des bâtons dans les mains ?",
-      "reponse": "Le ski alpin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie être au bout du rouleau ?",
-      "reponse": "Être épuisé",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel pirate est joué par Johnny Depp ?",
-      "reponse": "Jack Sparrow",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture générale",
       "question": "Quel oiseau figure sur la pièce de un dollar canadien ?",
       "reponse": "Le huard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animateur québécois a longtemps animé Tout le monde en parle ?",
-      "reponse": "Guy A. Lepage",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle est la nage la plus rapide ?",
-      "reponse": "Le crawl",
       "niveau": 1
     },
     {
@@ -122,20 +107,16 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui fait tourner les éoliennes et voler les cerfs-volants ?",
-      "reponse": "Le vent",
+      "categorie": "Culture pop",
+      "question": "Quel petit personnage en habit vert aide le père Noël à l'atelier ?",
+      "reponse": "Un lutin",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Sur quelle plateforme les jeunes jouent-ils à des millions de jeux créés par d'autres joueurs ?",
-      "reponse": "Roblox",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Quelle petite fée accompagne Peter Pan au Pays imaginaire ?",
+      "reponse": "La fée Clochette",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
@@ -144,45 +125,50 @@
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel empire avait Rome pour capitale ?",
-      "reponse": "L'Empire romain",
+      "categorie": "Sports",
+      "question": "Quelle est la nage la plus rapide ?",
+      "reponse": "Le crawl",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?",
-      "reponse": "La tire sur la neige",
+      "categorie": "Mots et langue",
+      "question": "Quel est le féminin de lion ?",
+      "reponse": "Lionne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle région est la capitale du bleuet ?",
+      "reponse": "Lac-Saint-Jean",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel minuscule oiseau peut voler en arrière ?",
-      "reponse": "Le colibri",
+      "question": "Quels organes filtrent le sang ?",
+      "reponse": "Les reins",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment s'appelle le petit du canard ?",
-      "reponse": "Le caneton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel signe de ponctuation termine une phrase ordinaire ?",
-      "reponse": "Le point",
+      "categorie": "Culture générale",
+      "question": "Quel instrument mesure le temps avec du sable ?",
+      "reponse": "Le sablier",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Dans quel film d'animation une famille colombienne vit-elle dans une maison magique ?",
-      "reponse": "Encanto",
+      "question": "Dans Minecraft, quelle pierre bleue sert à fabriquer les meilleurs outils ?",
+      "reponse": "Le diamant",
       "niveau": 1,
       "ages": [
         "enfants",
-        "ados",
-        "adultes"
+        "ados"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel empire avait Rome pour capitale ?",
+      "reponse": "L'Empire romain",
+      "niveau": 1
     }
   ]
 }

@@ -7,6 +7,24 @@
   "emoji": "🎲",
   "questions": [
     {
+      "categorie": "Sports",
+      "question": "Quel sport pousse un canot avec une pagaie à deux palettes ?",
+      "reponse": "Le kayak",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la petite lumière laissée allumée pour la nuit ?",
+      "reponse": "Une veilleuse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est l'os le plus long du corps humain ?",
+      "reponse": "Le fémur",
+      "niveau": 1
+    },
+    {
       "categorie": "Histoire",
       "question": "Quelle journée du 11 novembre honore la mémoire des soldats ?",
       "reponse": "Le jour du Souvenir",
@@ -23,6 +41,12 @@
       ]
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la peur des araignées ?",
+      "reponse": "L'arachnophobie",
+      "niveau": 1
+    },
+    {
       "categorie": "Histoire",
       "question": "En quelle année les Jeux olympiques ont-ils été reportés d'un an pour la première fois ?",
       "reponse": "2020",
@@ -34,8 +58,40 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel grand marché public borde la Petite Italie ?",
-      "reponse": "Jean-Talon",
+      "question": "Quel sanctuaire au dôme vert domine le flanc du mont Royal ?",
+      "reponse": "L'Oratoire Saint-Joseph",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel clown est l'ennemi juré de Batman ?",
+      "reponse": "Le Joker",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de planètes dans le système solaire ?",
+      "reponse": "Huit",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
+      "reponse": "MusiquePlus",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Kremlin ?",
+      "reponse": "Moscou",
       "niveau": 1,
       "ages": [
         "ados",
@@ -44,10 +100,33 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel est l'os le plus long du corps humain ?",
-      "reponse": "Le fémur",
+      "categorie": "Québec",
+      "question": "Quel appareil lave les vêtements dans le sous-sol ?",
+      "reponse": "La laveuse",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel gros fruit vert à chair rouge et à pépins noirs se mange en tranches l'été ?",
+      "reponse": "La pastèque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
+      "reponse": "Le Grand Nord",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie de l'œil donne sa couleur ?",
+      "reponse": "L'iris",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -60,93 +139,18 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quelle fleur offre-t-on à la Saint-Valentin ?",
-      "reponse": "La rose",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil de poche vibrait pour dire de rappeler quelqu'un, avant le cellulaire ?",
-      "reponse": "Le téléavertisseur",
+      "categorie": "Musique",
+      "question": "Quel groupe canadien a chanté American Woman ?",
+      "reponse": "The Guess Who",
       "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
-      "reponse": "Le Grand Nord",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur canadien incarne Deadpool au cinéma ?",
-      "reponse": "Ryan Reynolds",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte jaune tirée de la crème se tartine sur le pain ?",
-      "reponse": "Le beurre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel musée montréalais expose des insectes vivants et naturalisés ?",
-      "reponse": "L'Insectarium",
-      "niveau": 2
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot lisible dans les deux sens ?",
-      "reponse": "Un palindrome",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'orchestre qui défile en jouant dans une parade ?",
-      "reponse": "Une fanfare",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle créature verte vit dans un marais ?",
-      "reponse": "Shrek",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle technologie sans fil relie des écouteurs à un téléphone à quelques mètres ?",
-      "reponse": "Le Bluetooth",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de planètes dans le système solaire ?",
-      "reponse": "Huit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie « être rouge comme une tomate » ?",
-      "reponse": "Être gêné",
+      "question": "Que signifie le mot québécois chialer ?",
+      "reponse": "Se plaindre",
       "niveau": 1
     },
     {
@@ -167,51 +171,27 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle partie de l'œil donne sa couleur ?",
-      "reponse": "L'iris",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Kremlin ?",
-      "reponse": "Moscou",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du fromage gouda ?",
-      "reponse": "Les Pays-Bas",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le lionceau du Roi Lion ?",
+      "reponse": "Simba",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe canadien a chanté American Woman ?",
-      "reponse": "The Guess Who",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
+      "question": "Comment appelle-t-on l'orchestre qui défile en jouant dans une parade ?",
+      "reponse": "Une fanfare",
+      "niveau": 2
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport pousse un canot avec une pagaie à deux palettes ?",
-      "reponse": "Le kayak",
+      "categorie": "Culture générale",
+      "question": "Quelle fleur offre-t-on à la Saint-Valentin ?",
+      "reponse": "La rose",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel lait fouetté avec crème glacée est un dessert à boire ?",
+      "reponse": "Le lait frappé",
       "niveau": 1
     }
   ]

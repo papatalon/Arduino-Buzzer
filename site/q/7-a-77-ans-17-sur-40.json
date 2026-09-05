@@ -7,20 +7,31 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quelle chanson chante-t-on en frappant des mains autour d'un gâteau à bougies ?",
-      "reponse": "Bonne fête",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle loi américaine interdisait l'alcool ?",
-      "reponse": "La prohibition",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle soupe japonaise est à base de pâte de soja ?",
+      "reponse": "La soupe miso",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la matière où l'on apprend à compter ?",
+      "reponse": "Les mathématiques",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel garçon a une casquette rouge et chasse des Pokémon ?",
+      "reponse": "Sacha",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
       ]
     },
     {
@@ -30,41 +41,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel mot répète Sheldon en cognant à la porte ?",
-      "reponse": "Penny",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel café italien est couronné de mousse de lait ?",
-      "reponse": "Le cappuccino",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu provençal lance des boules vers un cochonnet ?",
-      "reponse": "La pétanque",
+      "categorie": "Sciences et nature",
+      "question": "Le dauphin est-il un poisson ou un mammifère ?",
+      "reponse": "Un mammifère",
       "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle loi québécoise protège la langue française ?",
-      "reponse": "La loi 101",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Culture générale",
@@ -83,9 +63,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Qui a développé la théorie de la relativité ?",
-      "reponse": "Einstein",
+      "categorie": "Histoire",
+      "question": "Quelle loi américaine interdisait l'alcool ?",
+      "reponse": "La prohibition",
       "niveau": 1,
       "ages": [
         "ados",
@@ -94,9 +74,21 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel liquide sans couleur ni goût faut-il boire tous les jours ?",
-      "reponse": "L'eau",
+      "categorie": "Mots et langue",
+      "question": "Que signifie être sage comme une image ?",
+      "reponse": "Être très tranquille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'eau salée qu'on ne peut pas boire ?",
+      "reponse": "L'eau de mer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne des chaussures de sport ?",
+      "reponse": "Des espadrilles",
       "niveau": 1
     },
     {
@@ -111,6 +103,65 @@
       ]
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Quel signe de ponctuation termine une phrase ordinaire ?",
+      "reponse": "Le point",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson chante-t-on en frappant des mains autour d'un gâteau à bougies ?",
+      "reponse": "Bonne fête",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu provençal lance des boules vers un cochonnet ?",
+      "reponse": "La pétanque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas québécois se mange le midi ?",
+      "reponse": "Le dîner",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles chaussures de caoutchouc percées de trous divisent la planète ?",
+      "reponse": "Les Crocs",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Combien de voyelles dans l'alphabet français ?",
+      "reponse": "Six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel garçon est élevé par les loups dans la jungle ?",
+      "reponse": "Mowgli",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit des détenues ?",
+      "reponse": "Unité 9",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel liquide chaud et salé se mange à la cuillère avant le plat principal ?",
+      "reponse": "La soupe",
+      "niveau": 1
+    },
+    {
       "categorie": "Sports",
       "question": "Dans quel sport utilise-t-on un maillet à cheval ?",
       "reponse": "Le polo",
@@ -122,96 +173,27 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la douce chanson qu'on chante pour endormir un bébé ?",
-      "reponse": "Une berceuse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film d'animation un lion, une girafe, un zèbre et un hippopotame s'échappent-ils d'un zoo de New York ?",
-      "reponse": "Madagascar",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Contraire de rigide, en six lettres ?",
-      "reponse": "Souple",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la peluche dont un enfant ne se sépare jamais ?",
-      "reponse": "Une doudou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Le dauphin est-il un poisson ou un mammifère ?",
-      "reponse": "Un mammifère",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Pluriel de œil ?",
-      "reponse": "Yeux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le féminin de chien ?",
-      "reponse": "Chienne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon a une casquette rouge et chasse des Pokémon ?",
-      "reponse": "Sacha",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Culture générale",
       "question": "Combien de jours dans une semaine ?",
       "reponse": "Sept",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle rue étroite du Vieux-Québec est très photographiée ?",
-      "reponse": "Petit-Champlain",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la douce chanson qu'on chante pour endormir un bébé ?",
+      "reponse": "Une berceuse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qui a développé la théorie de la relativité ?",
+      "reponse": "Einstein",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle épice noire moulue accompagne le sel sur la table ?",
-      "reponse": "Le poivre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'eau salée qu'on ne peut pas boire ?",
-      "reponse": "L'eau de mer",
-      "niveau": 1
     }
   ]
 }

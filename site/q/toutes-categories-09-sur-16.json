@@ -7,61 +7,9 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Que construit-on avec un seau et une pelle au bord de l'eau ?",
-      "reponse": "Un château de sable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle méchante veut un manteau en dalmatiens ?",
-      "reponse": "Cruella",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse américaine a chanté Kill Bill en 2022 ?",
-      "reponse": "SZA",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal hurle à la lune et chasse en meute ?",
-      "reponse": "Le loup",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouvent les pyramides et le Sphinx ?",
-      "reponse": "L'Égypte",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Que signifie tomber dans les pommes ?",
-      "reponse": "S'évanouir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme fait franchir une barre très haute à l'aide d'une longue tige souple ?",
-      "reponse": "Le saut à la perche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Angleterre ?",
-      "reponse": "Londres",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel gros camion dégage la neige des rues après une tempête ?",
-      "reponse": "Une charrue",
+      "question": "Synonyme de docteur ?",
+      "reponse": "Médecin",
       "niveau": 1
     },
     {
@@ -72,15 +20,13 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle statue les Français ont-ils offerte aux Américains en 1886 ?",
-      "reponse": "La statue de la Liberté",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel liquide chaud et salé se mange à la cuillère avant le plat principal ?",
-      "reponse": "La soupe",
-      "niveau": 1
+      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
+      "reponse": "Le Jolly Roger",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -94,6 +40,33 @@
       ]
     },
     {
+      "categorie": "Sports",
+      "question": "Quelle épreuve d'athlétisme fait franchir une barre très haute à l'aide d'une longue tige souple ?",
+      "reponse": "Le saut à la perche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel mollusque mange-t-on avec du beurre à l'ail ?",
+      "reponse": "L'escargot",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel quart-arrière a gagné sept Super Bowls ?",
+      "reponse": "Tom Brady",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
       "categorie": "Culture générale",
       "question": "Sur quelle plateforme les jeunes jouent-ils à des millions de jeux créés par d'autres joueurs ?",
       "reponse": "Roblox",
@@ -104,10 +77,49 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle note vient juste après le mi ?",
-      "reponse": "Le fa",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal hurle à la lune et chasse en meute ?",
+      "reponse": "Le loup",
       "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse américaine a chanté Kill Bill en 2022 ?",
+      "reponse": "SZA",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel acteur autrichien joue Terminator ?",
+      "reponse": "Schwarzenegger",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouvent les pyramides et le Sphinx ?",
+      "reponse": "L'Égypte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume en feuilles vertes est la base d'une salade ?",
+      "reponse": "La laitue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel petit poisson pêche-t-on sous la glace à La Pérade ?",
+      "reponse": "Le poulamon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -121,16 +133,32 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle barbe sucrée se vend dans les fêtes foraines ?",
-      "reponse": "Barbe à papa",
+      "categorie": "Culture pop",
+      "question": "Comment s'appelle le royaume d'Elsa et d'Anna ?",
+      "reponse": "Arendelle",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle science étudie les plantes ?",
+      "reponse": "La botanique",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel quart-arrière a gagné sept Super Bowls ?",
-      "reponse": "Tom Brady",
-      "niveau": 1,
+      "categorie": "Histoire",
+      "question": "Quelle statue les Français ont-ils offerte aux Américains en 1886 ?",
+      "reponse": "La statue de la Liberté",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel club-école des Canadiens joue à Laval ?",
+      "reponse": "Le Rocket",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes"
@@ -143,53 +171,38 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel canard Disney porte un costume marin ?",
-      "reponse": "Donald",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel grand rendez-vous de novembre réunit éditeurs et auteurs au Palais des congrès de Montréal ?",
-      "reponse": "Le Salon du livre",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Contraire de rapide ?",
-      "reponse": "Lent",
+      "question": "Comment appelle-t-on l'abri où dort l'ours pendant l'hiver ?",
+      "reponse": "Une tanière",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami de Winnie l'ourson est un âne toujours triste ?",
+      "reponse": "Bourriquet",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quelle science étudie les plantes ?",
-      "reponse": "La botanique",
+      "categorie": "Géographie",
+      "question": "Capitale de l'Angleterre ?",
+      "reponse": "Londres",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle note vient juste après le mi ?",
+      "reponse": "Le fa",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle console de Nintendo se joue autant sur le téléviseur qu'en mode portable ?",
-      "reponse": "La Nintendo Switch",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
-      "reponse": "Le Jolly Roger",
-      "niveau": 3,
+      "question": "Quelle carte à puce sert à payer le métro et l'autobus à Montréal ?",
+      "reponse": "La carte Opus",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     }
   ]

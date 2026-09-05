@@ -7,33 +7,20 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles galettes à petits carreaux se mangent avec du sirop ?",
-      "reponse": "Les gaufres",
-      "niveau": 1
+      "categorie": "Cinéma et télé",
+      "question": "Quel pirate est joué par Johnny Depp ?",
+      "reponse": "Jack Sparrow",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte piqueur bourdonne autour des campeurs les soirs d'été ?",
-      "reponse": "Le maringouin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel événement célèbre-t-on le 25 décembre ?",
-      "reponse": "Noël",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les premiers habitants de l'Amérique, ici avant les Européens ?",
-      "reponse": "Les Autochtones",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du coq ?",
-      "reponse": "Cocorico",
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'école qu'un enfant fréquente de la 1re à la 6e année ?",
+      "reponse": "Le primaire",
       "niveau": 1
     },
     {
@@ -48,60 +35,51 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel majordome sert Bruce Wayne ?",
-      "reponse": "Alfred",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus grand océan ?",
-      "reponse": "Le Pacifique",
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les premiers habitants de l'Amérique, ici avant les Européens ?",
+      "reponse": "Les Autochtones",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel canard milliardaire plonge dans ses pièces d'or ?",
-      "reponse": "Picsou",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment s'appelle le voisin trop gentil des Simpson ?",
+      "reponse": "Ned Flanders",
+      "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel animal porte malheur s'il croise notre chemin, selon la superstition ?",
-      "reponse": "Un chat noir",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
+      "reponse": "Le club sandwich",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel pont relie Montréal à Longueuil ?",
+      "reponse": "Jacques-Cartier",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quel signe de ponctuation sépare deux idées dans une phrase ?",
-      "reponse": "La virgule",
+      "question": "Que signifie coûter les yeux de la tête ?",
+      "reponse": "Coûter très cher",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat anglais sert du poisson frit avec des frites ?",
-      "reponse": "Fish and chips",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la version d'une chanson enregistrée par quelqu'un d'autre que l'original ?",
+      "reponse": "Une reprise",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Dans quel pays grille-t-on soi-même sa viande sur un gril au centre de la table ?",
-      "reponse": "La Corée",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Culture pop",
+      "question": "Quel cheval blanc porte une corne unique sur le front ?",
+      "reponse": "Une licorne",
+      "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Où va-t-on quand on est très malade et qu'il faut être soigné ?",
-      "reponse": "À l'hôpital",
+      "categorie": "Culture générale",
+      "question": "Quel événement célèbre-t-on le 25 décembre ?",
+      "reponse": "Noël",
       "niveau": 1
     },
     {
@@ -111,16 +89,61 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle reine a des pouvoirs de glace chez Disney ?",
-      "reponse": "Elsa",
+      "categorie": "Géographie",
+      "question": "Quel est le plus grand océan ?",
+      "reponse": "Le Pacifique",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la version d'une chanson enregistrée par quelqu'un d'autre que l'original ?",
-      "reponse": "Une reprise",
+      "question": "Quelle chanson enfantine parle d'un petit navire qui n'avait jamais navigué ?",
+      "reponse": "Il était un petit navire",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas mange-t-on traditionnellement le matin ?",
+      "reponse": "Le déjeuner",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel métier répare les tuyaux ?",
+      "reponse": "Le plombier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte piqueur bourdonne autour des campeurs les soirs d'été ?",
+      "reponse": "Le maringouin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui laisse de l'argent sous l'oreiller en échange d'une dent ?",
+      "reponse": "La fée des dents",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel colonel a fondé la chaîne de poulet PFK ?",
+      "reponse": "Sanders",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie poser un lapin ?",
+      "reponse": "Ne pas venir",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -134,45 +157,32 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel dimanche de juin célèbre-t-on les papas ?",
-      "reponse": "La fête des Pères",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie être dans la lune ?",
-      "reponse": "Être distrait",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
       "question": "Quelle embarcation étroite se dirige avec une pagaie à deux pales ?",
       "reponse": "Le kayak",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel métier répare les tuyaux ?",
-      "reponse": "Le plombier",
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir du pain sur la planche ?",
+      "reponse": "Beaucoup de travail",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Qui laisse de l'argent sous l'oreiller en échange d'une dent ?",
-      "reponse": "La fée des dents",
-      "niveau": 1
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation suit une lapine policière et un renard rusé dans une ville d'animaux ?",
+      "reponse": "Zootopia",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Que fait-on peindre sur son visage dans les fêtes d’enfants ?",
-      "reponse": "Du maquillage",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson enfantine parle d'un petit navire qui n'avait jamais navigué ?",
-      "reponse": "Il était un petit navire",
+      "question": "Comment appelle-t-on l'habit qu'on enfile pour se transformer en personnage ?",
+      "reponse": "Un déguisement",
       "niveau": 1
     }
   ]

@@ -7,9 +7,49 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Musique",
+      "question": "Quelle comédie musicale utilise les chansons d'ABBA ?",
+      "reponse": "Mamma Mia",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle grande statue verte tient une torche à l'entrée de New York ?",
+      "reponse": "La statue de la Liberté",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel grand bâtiment rouge de la ferme abrite les animaux et le foin ?",
+      "reponse": "La grange",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Dans quel jeu de société faut-il aligner quatre jetons de sa couleur ?",
+      "reponse": "Puissance 4",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte longue et fine mange-t-on avec des boulettes ?",
+      "reponse": "Le spaghetti",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle activité de party fait chanter sur une musique en lisant les paroles à l'écran ?",
+      "reponse": "Le karaoké",
+      "niveau": 1
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Que signifie vendre la mèche ?",
-      "reponse": "Révéler un secret",
+      "question": "De quelle langue vient le mot kimono ?",
+      "reponse": "Le japonais",
       "niveau": 1,
       "ages": [
         "ados",
@@ -18,15 +58,33 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
-      "reponse": "Les Gardiens",
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal à coquille rampe lentement en laissant une trace ?",
+      "reponse": "L'escargot",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Comment appelle-t-on la couche sucrée et colorée qui recouvre un gâteau ?",
-      "reponse": "Le glaçage",
+      "categorie": "Mots et langue",
+      "question": "Féminin de roi ?",
+      "reponse": "La reine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie être doux comme un agneau ?",
+      "reponse": "Être très gentil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qu'est-ce qui est le plus rapide : le son ou la lumière ?",
+      "reponse": "La lumière",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Espagne ?",
+      "reponse": "Madrid",
       "niveau": 1
     },
     {
@@ -41,39 +99,21 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle grande statue verte tient une torche à l'entrée de New York ?",
-      "reponse": "La statue de la Liberté",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la chouette de Harry Potter ?",
-      "reponse": "Hedwige",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui est le plus rapide : le son ou la lumière ?",
-      "reponse": "La lumière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on les bandes blanches où l'on traverse la rue ?",
-      "reponse": "Un passage piéton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel magicien conseillait le roi Arthur ?",
-      "reponse": "Merlin",
+      "question": "Quel petit animal à grosse queue touffue cache des noix pour l'hiver ?",
+      "reponse": "L'écureuil",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel liquide chaud et salé se mange à la cuillère avant le plat principal ?",
-      "reponse": "La soupe",
+      "question": "Quel dessert glacé mange-t-on en cornet l'été ?",
+      "reponse": "La crème glacée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle héroïne chinoise se déguise en soldat ?",
+      "reponse": "Mulan",
       "niveau": 1
     },
     {
@@ -89,95 +129,54 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport descend des rivières en radeau pneumatique ?",
-      "reponse": "Le rafting",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comédie musicale utilise les chansons d'ABBA ?",
-      "reponse": "Mamma Mia",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel grand bâtiment rouge de la ferme abrite les animaux et le foin ?",
-      "reponse": "La grange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel cahier propose des dessins à remplir sans dépasser ?",
-      "reponse": "Un livre à colorier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment s'appelle le petit du lion ?",
-      "reponse": "Le lionceau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film Pixar une maison vole-t-elle avec des ballons ?",
-      "reponse": "Là-haut",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
       "question": "Combien de points vaut un panier de loin au basketball ?",
       "reponse": "Trois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Espagne ?",
-      "reponse": "Madrid",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on l'étage sous le rez-de-chaussée où l'on range et où l'on joue ?",
-      "reponse": "Le sous-sol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel petit animal à coquille rampe lentement en laissant une trace ?",
-      "reponse": "L'escargot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Dans quel jeu de société faut-il aligner quatre jetons de sa couleur ?",
-      "reponse": "Puissance 4",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles petites portions espagnoles se partagent ?",
-      "reponse": "Les tapas",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel signe encadre les paroles rapportées ?",
-      "reponse": "Les guillemets",
       "niveau": 1
     },
     {
       "categorie": "Musique",
       "question": "Quelle note vient juste après le sol ?",
       "reponse": "Le la",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit tropical porte une couronne ?",
+      "reponse": "L'ananas",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le père des Simpson ?",
+      "reponse": "Homer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jouet de plastique danois s'assemble par petits picots ?",
+      "reponse": "Le Lego",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel chien accompagne Astérix et Obélix ?",
+      "reponse": "Idéfix",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel quart-arrière a gagné sept Super Bowls ?",
+      "reponse": "Tom Brady",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel bonnet d'hiver porte un nom bien québécois ?",
+      "reponse": "La tuque",
       "niveau": 1
     }
   ]

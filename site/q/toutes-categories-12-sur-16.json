@@ -7,95 +7,14 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle confiserie blanche flotte sur le chocolat chaud ?",
-      "reponse": "La guimauve",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu se joue à deux avec le pouce pour immobiliser celui de l'autre ?",
-      "reponse": "La lutte de pouces",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve traverse l'Allemagne et se jette à Rotterdam ?",
-      "reponse": "Le Rhin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel druide prépare la potion magique des Gaulois ?",
-      "reponse": "Panoramix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de bosses a un dromadaire ?",
-      "reponse": "Une",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de degrés dans un cercle complet ?",
-      "reponse": "360",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel tournoi de tennis se joue sur gazon à Londres ?",
-      "reponse": "Wimbledon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande maison fortifiée d'un seigneur, avec ses tours ?",
-      "reponse": "Un château fort",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle boisson en poudre se mélange à l'eau et se boit très sucrée ?",
-      "reponse": "Le Kool-Aid",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle saison vient après l'hiver ?",
-      "reponse": "Le printemps",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
-      "question": "Quelle rôtisserie québécoise est célèbre pour son poulet BBQ ?",
-      "reponse": "St-Hubert",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du coq ?",
-      "reponse": "Cocorico",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'écran qui affiche les paroles pendant un karaoké ?",
-      "reponse": "Le téléprompteur",
-      "niveau": 3,
+      "question": "Quelle ville de l'Estrie abrite l'Université Bishop's ?",
+      "reponse": "Sherbrooke",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -105,22 +24,57 @@
       "niveau": 3
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel écrivain anglais a créé Oliver Twist ?",
-      "reponse": "Charles Dickens",
+      "categorie": "Sports",
+      "question": "Combien de haies compte le 110 mètres haies ?",
+      "reponse": "Dix",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle taxe québécoise s'ajoute à la taxe fédérale sur les achats ?",
-      "reponse": "La TVQ",
-      "niveau": 3,
+      "categorie": "Géographie",
+      "question": "Quel est le plus grand des Grands Lacs ?",
+      "reponse": "Le lac Supérieur",
+      "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de degrés dans un cercle complet ?",
+      "reponse": "360",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la petite monnaie qu'on laisse au serveur au restaurant ?",
+      "reponse": "Le pourboire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de bosses a un dromadaire ?",
+      "reponse": "Une",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel rocher troué est l'emblème de la Gaspésie ?",
+      "reponse": "Le rocher Percé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle actrice joue Rose dans Titanic ?",
+      "reponse": "Kate Winslet",
+      "niveau": 2,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -136,15 +90,80 @@
       ]
     },
     {
+      "categorie": "Culture pop",
+      "question": "Dans quelle émission québécoise des vedettes chantent-elles cachées dans des costumes géants ?",
+      "reponse": "Chanteurs masqués",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle saison vient après l'hiver ?",
+      "reponse": "Le printemps",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sandwich grec est garni de viande à la broche ?",
+      "reponse": "Le pita (gyros)",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Musique",
-      "question": "Quel instrument espagnol se claque entre les doigts pendant le flamenco ?",
-      "reponse": "Les castagnettes",
-      "niveau": 3
+      "question": "Comment appelle-t-on l'écran qui affiche les paroles pendant un karaoké ?",
+      "reponse": "Le téléprompteur",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on les mots qui se prononcent pareil ?",
+      "reponse": "Des homophones",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel écrivain anglais a créé Oliver Twist ?",
+      "reponse": "Charles Dickens",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la grande maison fortifiée d'un seigneur, avec ses tours ?",
+      "reponse": "Un château fort",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel jour célèbre-t-on l'Armistice de 1918 ?",
+      "reponse": "Le 11 novembre",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Combien de haies compte le 110 mètres haies ?",
-      "reponse": "Dix",
+      "question": "Quel tournoi de tennis se joue sur gazon à Londres ?",
+      "reponse": "Wimbledon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -154,37 +173,36 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie se lever du mauvais pied ?",
-      "reponse": "Être de mauvaise humeur",
-      "niveau": 1
+      "question": "Qui collectionne les pièces de monnaie ?",
+      "reponse": "Un numismate",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle émission québécoise a des fauteuils qui pivotent ?",
-      "reponse": "La Voix",
+      "categorie": "Musique",
+      "question": "Quel instrument espagnol se claque entre les doigts pendant le flamenco ?",
+      "reponse": "Les castagnettes",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel druide prépare la potion magique des Gaulois ?",
+      "reponse": "Panoramix",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle épice se râpe sur le lait de poule ?",
-      "reponse": "La muscade",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel jour célèbre-t-on l'Armistice de 1918 ?",
-      "reponse": "Le 11 novembre",
+      "question": "Quelle fête québécoise célèbre le blé d'Inde ?",
+      "reponse": "L'épluchette",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel est le plus grand des Grands Lacs ?",
-      "reponse": "Le lac Supérieur",
+      "question": "Quel fleuve traverse l'Allemagne et se jette à Rotterdam ?",
+      "reponse": "Le Rhin",
       "niveau": 2,
       "ages": [
         "ados",
@@ -194,13 +212,9 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel acteur incarne Rocky Balboa ?",
-      "reponse": "Stallone",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment s'appelle l'école de Harry Potter ?",
+      "reponse": "Poudlard",
+      "niveau": 1
     }
   ]
 }

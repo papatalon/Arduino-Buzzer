@@ -8,15 +8,58 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne de hamburgers porte un titre royal dans son nom ?",
-      "reponse": "Burger King",
+      "question": "Quel appareil du restaurant jouait une chanson contre une pièce de monnaie ?",
+      "reponse": "Le juke-box",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit personnage de conte sème des cailloux pour retrouver son chemin ?",
+      "reponse": "Le Petit Poucet",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle gomme rose se vendait avec une petite bande dessinée dans l'emballage ?",
+      "reponse": "La Bazooka",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle autrice et animatrice québécoise a abordé les tabous à la télé pendant des décennies ?",
+      "reponse": "Janette Bertrand",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de sandwichs fait choisir son pain et ses garnitures au comptoir ?",
+      "reponse": "Subway",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
-      "reponse": "Cracké",
+      "question": "Quelle case horaire de Radio-Canada présentait des grands spectacles le dimanche ?",
+      "reponse": "Les Beaux Dimanches",
       "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel film Pixar de 2022 met en scène une fille qui se change en panda roux ?",
+      "reponse": "Alerte rouge",
+      "niveau": 2,
       "ages": [
         "enfants",
         "ados"
@@ -24,70 +67,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?",
-      "reponse": "L'écoute en rafale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel descripteur de hockey a marqué des générations par son français impeccable ?",
-      "reponse": "René Lecavalier",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission de Radio-Canada vulgarise la science le dimanche soir ?",
-      "reponse": "Découverte",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit pingouin de dessin animé porte une salopette et va à la garderie ?",
-      "reponse": "T'choupi",
-      "niveau": 2,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil à deux boutons permet de se parler à distance en disant « à toi » ?",
-      "reponse": "Le walkie-talkie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jouet à figure humaine s'habille et se coiffe ?",
-      "reponse": "Une poupée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de motoneige est née au Québec ?",
-      "reponse": "Ski-Doo",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle console de jeu vidéo est fabriquée par Microsoft ?",
-      "reponse": "La Xbox",
+      "question": "Quelle pâte gluante et étirable se fabrique à la maison avec de la colle ?",
+      "reponse": "La slime",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -97,104 +78,9 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle cartouche de musique se glissait dans le tableau de bord des autos des années 70 ?",
-      "reponse": "Le huit-pistes",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle technologie sans fil relie des écouteurs à un téléphone à quelques mètres ?",
-      "reponse": "Le Bluetooth",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
-      "reponse": "La ceinture fléchée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magasin à un dollar a été fondé à Matane en 1992 ?",
-      "reponse": "Dollarama",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
-      "reponse": "Le Forum",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel lapin rose à lunettes fumées bat du tambour pour vendre des piles ?",
-      "reponse": "Le lapin Energizer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne de hamburgers canadienne garnit le pain devant le client ?",
-      "reponse": "Harvey's",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans Encanto, de qui la famille refuse-t-elle de parler ?",
-      "reponse": "Bruno",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de cartes fait réunir des familles complètes en les demandant aux autres ?",
-      "reponse": "Le jeu des sept familles",
+      "question": "Quel jouet surgit d'une boîte quand la manivelle s'arrête de jouer ?",
+      "reponse": "Le diable à ressort",
       "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
-      "reponse": "Josée di Stasio",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle fillette rapetisse pour rejoindre ses amis chats dans sa maison de poupées ?",
-      "reponse": "Gabby",
-      "niveau": 2,
-      "ages": [
-        "enfants"
-      ]
     },
     {
       "categorie": "Culture pop",
@@ -204,15 +90,137 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque de café a une sirène verte dans son logo ?",
-      "reponse": "Starbucks",
+      "question": "Quelle formule ouvre la caverne au trésor dans le conte d'Ali Baba ?",
+      "reponse": "Sésame ouvre-toi",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magasin canadien remet à ses clients une fausse monnaie imprimée ?",
+      "reponse": "Canadian Tire",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle petite maison de jardin range les outils et la tondeuse ?",
+      "reponse": "Le cabanon",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel bonbon acidulé se vend en poudre avec un petit bâton à tremper ?",
+      "reponse": "Le Fun Dip",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil branché à la ligne téléphonique faisait des bruits stridents pour se connecter ?",
+      "reponse": "Le modem",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de hasard fait cocher des cases en écoutant des numéros criés ?",
+      "reponse": "Le bingo",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu fait deviner un mot lettre par lettre en dessinant un bonhomme ?",
-      "reponse": "Le pendu",
-      "niveau": 1
+      "question": "Quel grand magasin de vêtements québécois porte un nom de famille ?",
+      "reponse": "Simons",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
+      "reponse": "Big Brother Célébrités",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel montagnard accompagne Anna avec son renne dans La Reine des neiges ?",
+      "reponse": "Kristoff",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles cigarettes de bonbon blanches portaient le nom d'un marin costaud ?",
+      "reponse": "Les Popeye",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel quotidien montréalais a imprimé sa dernière édition en 2017 pour passer à la tablette ?",
+      "reponse": "La Presse",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chocolat garde un secret que sa publicité refuse de dévoiler ?",
+      "reponse": "Le Caramilk",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
+      "reponse": "Rue des Pignons",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel pouvoir Elsa doit-elle cacher au début de La Reine des neiges ?",
+      "reponse": "La glace",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     }
   ]
 }

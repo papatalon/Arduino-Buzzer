@@ -7,27 +7,15 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel monstre géant venu du Japon écrase des villes au cinéma ?",
-      "reponse": "Godzilla",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Comment dit-on « oui » en espagnol ?",
-      "reponse": "Sí",
+      "question": "Quel est le contraire de dur ?",
+      "reponse": "Mou",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel poisson bleu perd la mémoire dans Nemo ?",
-      "reponse": "Dory",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne produit le plus de pétrole ?",
-      "reponse": "L'Alberta",
+      "categorie": "Québec",
+      "question": "Quelle station de métro montréalaise dessert trois lignes ?",
+      "reponse": "Berri-UQAM",
       "niveau": 1,
       "ages": [
         "ados",
@@ -36,19 +24,77 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel gaz rend les ballons de fête flottants ?",
-      "reponse": "L'hélium",
+      "categorie": "Cinéma et télé",
+      "question": "Quel canard noir est le rival de Bugs Bunny ?",
+      "reponse": "Daffy Duck",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?",
-      "reponse": "La Révolution tranquille",
+      "question": "En quelle année a eu lieu la Confédération canadienne ?",
+      "reponse": "1867",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film coréen de 2019 est devenu le premier film non anglophone à gagner l'Oscar du meilleur film ?",
+      "reponse": "Parasite",
       "niveau": 3,
       "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on l'habit qu'on enfile pour se transformer en personnage ?",
+      "reponse": "Un déguisement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel réalisateur québécois a tourné Dune ?",
+      "reponse": "Denis Villeneuve",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel mage noir est l'ennemi de Harry Potter ?",
+      "reponse": "Voldemort",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel auteur québécois a écrit Le Matou ?",
+      "reponse": "Yves Beauchemin",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel prix récompense chaque année la paix, la médecine et la littérature ?",
+      "reponse": "Le prix Nobel",
+      "niveau": 2,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
+      "reponse": "Klô Pelgag",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     },
     {
@@ -63,118 +109,21 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle baleine blanche du Saint-Laurent est protégée ?",
-      "reponse": "Le béluga",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que veut dire « c'est plate » ?",
-      "reponse": "C'est ennuyant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel prix récompense chaque année la paix, la médecine et la littérature ?",
-      "reponse": "Le prix Nobel",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays d'Amérique du Sud danse-t-on le tango ?",
-      "reponse": "L'Argentine",
-      "niveau": 3
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel film de 2023 a porté le plombier moustachu de Nintendo au cinéma ?",
-      "reponse": "Super Mario Bros, le film",
+      "question": "Quel meuble de la classe range les effets de l'élève ?",
+      "reponse": "Un pupitre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel riz crémeux italien cuit au bouillon ?",
+      "reponse": "Le risotto",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur joue Forrest Gump ?",
-      "reponse": "Tom Hanks",
-      "niveau": 2,
-      "ages": [
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel anneau gonflable aide les petits à flotter ?",
-      "reponse": "Une bouée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel épi grillé se mange au beurre en août ?",
-      "reponse": "Le blé d'Inde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on la peau rugueuse qui recouvre le tronc ?",
-      "reponse": "L'écorce",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
-      "reponse": "Klô Pelgag",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle poupée blonde de Mattel a un ami nommé Ken ?",
-      "reponse": "Barbie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui a fondé la ville de Québec en 1608 ?",
-      "reponse": "Champlain",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Dans quel contenant rond et creux verse-t-on les céréales ?",
-      "reponse": "Le bol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quels tambours se frappent en cercle dans les parcs de Montréal le dimanche ?",
-      "reponse": "Les tam-tams",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie être malade comme un chien ?",
-      "reponse": "Être très malade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel appareil à pendule bat la mesure ?",
-      "reponse": "Le métronome",
-      "niveau": 2
     },
     {
       "categorie": "Culture générale",
@@ -187,10 +136,73 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "En quelle année a eu lieu la Confédération canadienne ?",
-      "reponse": "1867",
+      "categorie": "Sciences et nature",
+      "question": "Comment appelle-t-on la peau rugueuse qui recouvre le tronc ?",
+      "reponse": "L'écorce",
       "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quels tambours se frappent en cercle dans les parcs de Montréal le dimanche ?",
+      "reponse": "Les tam-tams",
+      "niveau": 2
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de chaud ?",
+      "reponse": "Froid",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel anneau gonflable aide les petits à flotter ?",
+      "reponse": "Une bouée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel appareil à pendule bat la mesure ?",
+      "reponse": "Le métronome",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne produit le plus de pétrole ?",
+      "reponse": "L'Alberta",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?",
+      "reponse": "La Révolution tranquille",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle chaîne canadienne vend du café, des beignes et des Timbits ?",
+      "reponse": "Tim Hortons",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz rend les ballons de fête flottants ?",
+      "reponse": "L'hélium",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays d'Amérique du Sud danse-t-on le tango ?",
+      "reponse": "L'Argentine",
+      "niveau": 3
     }
   ]
 }

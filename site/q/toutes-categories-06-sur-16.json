@@ -7,28 +7,6 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel joueur de hockey est surnommé La Merveille ?",
-      "reponse": "Wayne Gretzky",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quel élément le diamant est-il composé ?",
-      "reponse": "Le carbone",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
       "question": "Quel instrument à dents pincées accompagne le folklore ?",
       "reponse": "La guimbarde",
@@ -39,10 +17,32 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le petit jardin où l'on fait pousser ses légumes ?",
-      "reponse": "Un potager",
-      "niveau": 2
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce sucrée et brune coule sur les crêpes du Québec ?",
+      "reponse": "Le sirop d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant du Saguenay ?",
+      "reponse": "Un Saguenéen",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de gymnase élimine les joueurs touchés par le ballon ?",
+      "reponse": "Le ballon-chasseur",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Musique",
@@ -57,46 +57,6 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'ensemble des histoires des dieux et des héros grecs ?",
-      "reponse": "La mythologie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
-      "reponse": "Quatre ans",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel avare célèbre du terroir québécois aime son argent ?",
-      "reponse": "Séraphin",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle forme n'a ni coin ni côté ?",
-      "reponse": "Le cercle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Que porte-t-on sur le visage pour ne pas être reconnu à l'Halloween ?",
-      "reponse": "Un masque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on un groupe de loups qui chassent ensemble ?",
-      "reponse": "Une meute",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
       "question": "Qui fut le deuxième homme à marcher sur la Lune ?",
       "reponse": "Buzz Aldrin",
       "niveau": 2,
@@ -107,9 +67,19 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile tranchant coupe la viande ?",
-      "reponse": "Le couteau",
+      "categorie": "Québec",
+      "question": "Quel humoriste montréalais fait des spectacles bilingues ?",
+      "reponse": "Sugar Sammy",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle forme n'a ni coin ni côté ?",
+      "reponse": "Le cercle",
       "niveau": 1
     },
     {
@@ -119,15 +89,21 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se tient le grand carnaval de Rio ?",
-      "reponse": "Le Brésil",
+      "categorie": "Musique",
+      "question": "Quelle boîte à haut-parleurs se branche derrière une guitare électrique sur scène ?",
+      "reponse": "Un ampli",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on l'ensemble des histoires des dieux et des héros grecs ?",
+      "reponse": "La mythologie",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot comme mais ou donc ?",
-      "reponse": "Une conjonction",
+      "categorie": "Québec",
+      "question": "Quelle île du Saint-Laurent fut une station de quarantaine ?",
+      "reponse": "Grosse-Île",
       "niveau": 2,
       "ages": [
         "ados",
@@ -136,26 +112,21 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon au chandail à zigzag est le maître de Snoopy ?",
-      "reponse": "Charlie Brown",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la petite monnaie qu'on laisse au serveur au restaurant ?",
-      "reponse": "Le pourboire",
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile porte une carapace sur son dos ?",
+      "reponse": "La tortue",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel rocher troué est l'emblème de la Gaspésie ?",
-      "reponse": "Le rocher Percé",
+      "categorie": "Cinéma et télé",
+      "question": "Quel ogre vert a une femme nommée Fiona ?",
+      "reponse": "Shrek",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du loup ?",
+      "reponse": "Le louveteau",
       "niveau": 1
     },
     {
@@ -169,37 +140,73 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle boîte à haut-parleurs se branche derrière une guitare électrique sur scène ?",
-      "reponse": "Un ampli",
-      "niveau": 2
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série de science-fiction se passe à Hawkins ?",
+      "reponse": "Stranger Things",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "De quel élément le diamant est-il composé ?",
+      "reponse": "Le carbone",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Comment appelle-t-on la couche sucrée et colorée qui recouvre un gâteau ?",
-      "reponse": "Le glaçage",
+      "question": "Que souffle-t-on sur le gâteau de fête après avoir fait un vœu ?",
+      "reponse": "Les bougies",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se tient le grand carnaval de Rio ?",
+      "reponse": "Le Brésil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel joueur de hockey est surnommé La Merveille ?",
+      "reponse": "Wayne Gretzky",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on une photo qu'on prend de soi-même à bout de bras ?",
+      "reponse": "Un égoportrait (selfie)",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
+      "reponse": "Quatre ans",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel chiot berger allemand de la Pat' Patrouille est policier ?",
-      "reponse": "Chase",
-      "niveau": 1,
-      "ages": [
-        "enfants"
-      ]
+      "question": "Quel pirate est l'ennemi juré de Peter Pan ?",
+      "reponse": "Capitaine Crochet",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
       "question": "Quel océan gelé entoure le pôle Nord ?",
       "reponse": "L'océan Arctique",
       "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel reptile porte une carapace sur son dos ?",
-      "reponse": "La tortue",
-      "niveau": 1
     }
   ]
 }

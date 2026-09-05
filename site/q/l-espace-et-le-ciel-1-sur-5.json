@@ -7,9 +7,41 @@
   "emoji": "🪐",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on un être venu d'une autre planète ?",
-      "reponse": "Un extraterrestre",
+      "categorie": "Cinéma et télé",
+      "question": "Quel soldat Marvel porte un bouclier étoilé ?",
+      "reponse": "Captain America",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
+      "reponse": "Challenger",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?",
+      "reponse": "Le télescope James Webb",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "De quel côté se lève le soleil ?",
+      "reponse": "À l'est",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment appelle-t-on une personne qui voyage dans l'espace ?",
+      "reponse": "Un astronaute",
       "niveau": 1
     },
     {
@@ -24,21 +56,49 @@
       ]
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Quelle énergie vient du Soleil ?",
+      "reponse": "L'énergie solaire",
+      "niveau": 1
+    },
+    {
       "categorie": "Histoire",
-      "question": "Quel astronaute canadien a chanté dans l'espace ?",
-      "reponse": "Chris Hadfield",
+      "question": "Quel astronome a placé le Soleil au centre de l'univers ?",
+      "reponse": "Copernic",
       "niveau": 2,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle vitamine fabrique la peau au soleil ?",
-      "reponse": "La vitamine D",
-      "niveau": 2,
+      "question": "Quelle planète tourne couchée sur le côté ?",
+      "reponse": "Uranus",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel astronaute américain a posé le pied sur la Lune le premier ?",
+      "reponse": "Neil Armstrong",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle science étudie les astres ?",
+      "reponse": "L'astronomie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a un drapeau avec une étoile de David ?",
+      "reponse": "Israël",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -52,10 +112,22 @@
       "niveau": 1
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
+      "reponse": "Une fusée",
+      "niveau": 1
+    },
+    {
       "categorie": "Histoire",
-      "question": "Quel instrument de navigation mesurait la hauteur des astres sur l'horizon ?",
-      "reponse": "Le sextant",
-      "niveau": 3,
+      "question": "En quelle année l'homme a-t-il marché sur la Lune ?",
+      "reponse": "1969",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle carte donne accès aux soins de santé gratuits au Québec ?",
+      "reponse": "La carte soleil",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -63,9 +135,9 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel musée parisien abrite la Vénus de Milo ?",
-      "reponse": "Le Louvre",
+      "categorie": "Culture pop",
+      "question": "Quelles espadrilles de toile montantes portent une étoile sur la cheville ?",
+      "reponse": "Les Converse",
       "niveau": 2,
       "ages": [
         "ados",
@@ -75,107 +147,33 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment nomme-t-on une roche tombée de l'espace ?",
-      "reponse": "Une météorite",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
-      "reponse": "L'étoile de mer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel événement cache le Soleil derrière la Lune ?",
-      "reponse": "Une éclipse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir les yeux dans la graisse de bines ?",
-      "reponse": "Être dans la lune",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
-      "reponse": "Les Gardiens",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on l'espace sous le toit où s'entassent les vieilles boîtes ?",
-      "reponse": "Le grenier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est l'étoile la plus proche de la Terre ?",
-      "reponse": "Le Soleil",
+      "question": "Quel astre change de forme dans le ciel au fil des nuits ?",
+      "reponse": "La Lune",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle mission a posé les premiers hommes sur la Lune ?",
-      "reponse": "Apollo 11",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ligne imaginaire sépare l'hémisphère nord de l'hémisphère sud ?",
-      "reponse": "L'équateur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle galaxie abrite notre système solaire ?",
-      "reponse": "La Voie lactée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle région québécoise occupe un cratère de météorite ?",
-      "reponse": "Charlevoix",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus grande lune de Saturne ?",
-      "reponse": "Titan",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Le Soleil est-il une planète ou une étoile ?",
-      "reponse": "Une étoile",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on les régions chaudes situées près de l'équateur ?",
-      "reponse": "Les tropiques",
+      "question": "Que porte un astronaute pour survivre dans l'espace ?",
+      "reponse": "Un scaphandre",
       "niveau": 3
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle comète célèbre revient tous les 76 ans ?",
-      "reponse": "Halley",
+      "question": "Quelle est la planète la plus éloignée du Soleil ?",
+      "reponse": "Neptune",
       "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle station spatiale russe a précédé l'ISS ?",
+      "reponse": "Mir",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]

@@ -7,98 +7,33 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel superhéros enfile son costume dans une cabine téléphonique ?",
+      "reponse": "Superman",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture générale",
       "question": "Quel pays a un cercle rouge sur fond blanc ?",
       "reponse": "Le Japon",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel caillou céleste brille en traversant l'atmosphère ?",
-      "reponse": "L'étoile filante",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
-      "question": "Quelle expression québécoise signifie c'est correct ?",
-      "reponse": "C'est beau",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel phacochère accompagne Timon ?",
-      "reponse": "Pumbaa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel instrument d'écriture contient du graphite ?",
-      "reponse": "Le crayon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel liquide rouge circule dans nos veines ?",
-      "reponse": "Le sang",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle molécule porte notre code génétique ?",
-      "reponse": "L'ADN",
+      "question": "Quel outil racle la neige des pare-brise ?",
+      "reponse": "Un gratteux",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie donner sa langue au chat ?",
-      "reponse": "Renoncer à deviner",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le placard où l'on suspend ses manteaux au Québec ?",
-      "reponse": "Le garde-robe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sirop noir parfume les galettes québécoises ?",
-      "reponse": "La mélasse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Que cherchent les pirates en creusant sur une île déserte ?",
-      "reponse": "Un trésor",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel meuble de la classe range les effets de l'élève ?",
-      "reponse": "Un pupitre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée en Égypte ?",
-      "reponse": "L'arabe",
+      "question": "Féminin d'empereur ?",
+      "reponse": "Impératrice",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle fée accompagne Peter Pan ?",
-      "reponse": "Clochette",
-      "niveau": 1
     },
     {
       "categorie": "Musique",
@@ -118,20 +53,31 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle céréale est la base de l'alimentation en Asie ?",
-      "reponse": "Le riz",
+      "question": "Quelle chaîne canadienne vend du café, des beignes et des Timbits ?",
+      "reponse": "Tim Hortons",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel point le plus au sud de la Terre est couvert de glace ?",
-      "reponse": "Le pôle Sud",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat japonais est une soupe de nouilles ?",
+      "reponse": "Le ramen",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment dit-on « merci » en italien ?",
-      "reponse": "Grazie",
+      "categorie": "Québec",
+      "question": "Quel Québécois a inventé la motoneige ?",
+      "reponse": "J.-A. Bombardier",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage italien garnit la pizza ?",
+      "reponse": "La mozzarella",
       "niveau": 1
     },
     {
@@ -142,14 +88,83 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Synonyme de docteur ?",
-      "reponse": "Médecin",
+      "question": "Quel palindrome désigne une détection par ondes ?",
+      "reponse": "Radar",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel caillou céleste brille en traversant l'atmosphère ?",
+      "reponse": "L'étoile filante",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle famille préhistorique conduit une voiture à pédales ?",
+      "reponse": "Les Pierrafeu",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de commencer ?",
+      "reponse": "Finir",
       "niveau": 1
     },
     {
       "categorie": "Sports",
       "question": "Comment appelle-t-on la bouteille dans laquelle un joueur boit sur le banc ?",
       "reponse": "Une gourde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel point le plus au sud de la Terre est couvert de glace ?",
+      "reponse": "Le pôle Sud",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel instrument d'écriture contient du graphite ?",
+      "reponse": "Le crayon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que cherchent les pirates en creusant sur une île déserte ?",
+      "reponse": "Un trésor",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles pastilles de chocolat colorées se vendent en boîte cylindrique ?",
+      "reponse": "Les Smarties",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel liquide rouge circule dans nos veines ?",
+      "reponse": "Le sang",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Langue parlée en Égypte ?",
+      "reponse": "L'arabe",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle molécule porte notre code génétique ?",
+      "reponse": "L'ADN",
       "niveau": 1
     },
     {
@@ -164,19 +179,8 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation suit une lapine policière et un renard rusé dans une ville d'animaux ?",
-      "reponse": "Zootopia",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel épi grillé se mange au beurre en août ?",
-      "reponse": "Le blé d'Inde",
+      "question": "Quelle souris Disney est l'amoureuse de Mickey ?",
+      "reponse": "Minnie",
       "niveau": 1
     }
   ]

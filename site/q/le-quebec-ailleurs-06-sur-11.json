@@ -8,26 +8,18 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
-      "reponse": "Les Classels",
-      "niveau": 3,
+      "question": "Quelle pharmacie québécoise promet qu'on y trouve de tout, même un ami ?",
+      "reponse": "Jean Coutu",
+      "niveau": 2,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
-      "reponse": "Dominique Michel et Denise Filiatrault",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle société d'État a le monopole de la vente d'alcool au Québec ?",
-      "reponse": "La SAQ",
+      "categorie": "Musique",
+      "question": "Quelle diva a chanté My Heart Will Go On ?",
+      "reponse": "Céline Dion",
       "niveau": 1,
       "ages": [
         "ados",
@@ -36,32 +28,46 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel magazine hebdomadaire publiait les horaires de télévision au Québec ?",
-      "reponse": "Le TV Hebdo",
-      "niveau": 3,
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
+      "reponse": "La poutine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
+      "reponse": "Sol",
+      "niveau": 2,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
+      "categorie": "Géographie",
+      "question": "Quelle saison amène la neige au Québec ?",
+      "reponse": "L'hiver",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise fait cohabiter des célibataires devant les caméras ?",
-      "reponse": "Occupation Double",
-      "niveau": 2,
+      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
+      "reponse": "Le Village Vacances Valcartier",
+      "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
-      "reponse": "Bleu Jeans Bleu",
-      "niveau": 3,
+      "question": "Quel groupe rock québécois était mené par Gerry Boulet ?",
+      "reponse": "Offenbach",
+      "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -75,102 +81,72 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
-      "reponse": "Steinberg",
+      "question": "Quelle émission québécoise fait juger des numéros de danse par des maîtres ?",
+      "reponse": "Révolution",
       "niveau": 3,
       "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
-      "reponse": "L'hémisphère nord",
+      "question": "Quelle est la capitale de la province de Québec ?",
+      "reponse": "La ville de Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
+      "reponse": "La Grande Ourse",
       "niveau": 3
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
-      "reponse": "Le tramway",
-      "niveau": 3,
+      "question": "Quel concours de chant québécois lance des carrières depuis 2003 ?",
+      "reponse": "Star Académie",
+      "niveau": 2,
       "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu garnit les muffins et les tartes au Québec ?",
-      "reponse": "Le bleuet",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
+      "reponse": "Le Forum",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
-      "reponse": "Georges St-Pierre",
-      "niveau": 1,
+      "categorie": "Musique",
+      "question": "Quel artiste québécois a fait sensation avec l'album Darlène ?",
+      "reponse": "Hubert Lenoir",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle comptine québécoise plume un oiseau, la tête, le bec et les ailes ?",
-      "reponse": "Alouette",
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois barrer la porte ?",
+      "reponse": "Verrouiller",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel océan sépare le Québec de l'Europe ?",
-      "reponse": "L'océan Atlantique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelles jeunes filles furent envoyées peupler la Nouvelle-France ?",
-      "reponse": "Filles du Roy",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
-      "reponse": "Michel Louvain",
+      "question": "Quelle quincaillerie québécoise portait un prénom dans son enseigne ?",
+      "reponse": "Pascal",
       "niveau": 3,
       "ages": [
         "aines"
       ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
-      "reponse": "Gary Carter",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a chanté pour Titanic ?",
-      "reponse": "Céline Dion",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a la feuille d'érable sur son drapeau ?",
-      "reponse": "Le Canada",
-      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -183,9 +159,15 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois jouait le concierge Symphorien ?",
-      "reponse": "Gilles Latulippe",
+      "categorie": "Géographie",
+      "question": "Quel pays a la feuille d'érable sur son drapeau ?",
+      "reponse": "Le Canada",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe progressif québécois a fait L'Heptade ?",
+      "reponse": "Harmonium",
       "niveau": 3,
       "ages": [
         "aines"
@@ -193,17 +175,35 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
-      "reponse": "MusiquePlus",
-      "niveau": 3,
+      "question": "Qui était le gérant et le mari de Céline Dion ?",
+      "reponse": "René Angélil",
+      "niveau": 2,
       "ages": [
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelles pièces de bois claque-t-on entre les doigts au Québec ?",
-      "reponse": "Les cuillères",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle viande hachée garnit le pâté chinois ?",
+      "reponse": "Le bœuf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de baseball a joué à Montréal ?",
+      "reponse": "Les Expos",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays produit le plus de sirop d'érable ?",
+      "reponse": "Le Canada",
       "niveau": 1
     }
   ]

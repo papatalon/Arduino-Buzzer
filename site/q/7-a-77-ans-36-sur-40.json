@@ -7,23 +7,65 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle famille de super-héros Pixar porte du rouge ?",
-      "reponse": "Les Incroyables",
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus grosse planète du système solaire ?",
+      "reponse": "Jupiter",
       "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Noël parle d'un bonhomme de neige ?",
+      "reponse": "Frosty",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel grand danois froussard résout des mystères ?",
+      "reponse": "Scooby-Doo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel jardin montréalais est parmi les plus grands au monde ?",
+      "reponse": "Jardin botanique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quoi faut-il envoyer la rondelle pour compter ?",
+      "reponse": "Le filet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel animal nous donne la laine ?",
+      "reponse": "Le mouton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel doigt de la main est le plus court et le plus épais ?",
+      "reponse": "Le pouce",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Contraire de rigide, en six lettres ?",
+      "reponse": "Souple",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel récipient plat sert à faire revenir les œufs ?",
-      "reponse": "Une poêle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel constructeur a lancé la Ford T ?",
-      "reponse": "Henry Ford",
+      "question": "Quel repas tardif combine déjeuner et dîner ?",
+      "reponse": "Le brunch",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -35,45 +77,63 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel biscuit au chocolat cache une guimauve ?",
-      "reponse": "Le Whippet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roi lion est le père de Simba ?",
-      "reponse": "Mufasa",
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'énorme masse de glace qui flotte sur la mer ?",
+      "reponse": "Un iceberg",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment s'appellent les signes ( et ) ?",
-      "reponse": "Les parenthèses",
+      "question": "Comment s'appelle le petit du canard ?",
+      "reponse": "Le caneton",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume à chapeau pousse dans le noir et se met sur la pizza ?",
-      "reponse": "Le champignon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quoi faut-il envoyer la rondelle pour compter ?",
-      "reponse": "Le filet",
+      "categorie": "Cinéma et télé",
+      "question": "Quel garçon ne veut jamais grandir ?",
+      "reponse": "Peter Pan",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel hockeyeur était surnommé le Rocket ?",
-      "reponse": "Maurice Richard",
+      "question": "Combien de ponts mènent à l'île d'Orléans ?",
+      "reponse": "Un seul",
       "niveau": 1,
       "ages": [
-        "enfants",
+        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume en tiges rouges garnit des tartes ?",
+      "reponse": "La rhubarbe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que construit-on avec un seau et une pelle au bord de l'eau ?",
+      "reponse": "Un château de sable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
+      "reponse": "Un sauveteur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport olympique de précision se pratique avec des flèches ?",
+      "reponse": "Le tir à l'arc",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Le pluriel de caillou prend un S ou un X ?",
+      "reponse": "Un X",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -93,45 +153,20 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jeu vidéo fait danser devant la télé en imitant un avatar à l'écran ?",
-      "reponse": "Just Dance",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle tartinade blanche accompagne le bagel ?",
+      "reponse": "Fromage à la crème",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel constructeur a lancé la Ford T ?",
+      "reponse": "Henry Ford",
       "niveau": 1,
       "ages": [
-        "enfants",
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel jeu se joue avec cinq dés et des combinaisons ?",
-      "reponse": "Le Yum (Yahtzee)",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel outil de plastique sert à dégager la neige de l'entrée ?",
-      "reponse": "Une pelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de matin ?",
-      "reponse": "Soir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Noël parle d'un bonhomme de neige ?",
-      "reponse": "Frosty",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel clown est l'ennemi juré de Batman ?",
-      "reponse": "Le Joker",
-      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -140,44 +175,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
-      "reponse": "Un sauveteur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel doigt de la main est le plus court et le plus épais ?",
-      "reponse": "Le pouce",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Féminin de héros ?",
-      "reponse": "Héroïne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans Pokémon, dans quel objet enferme-t-on les créatures capturées ?",
-      "reponse": "Une Poké Ball",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport monte des parois avec des prises de couleur et un baudrier ?",
-      "reponse": "L'escalade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'énorme masse de glace qui flotte sur la mer ?",
-      "reponse": "Un iceberg",
+      "categorie": "Culture générale",
+      "question": "Quel jeu se joue avec cinq dés et des combinaisons ?",
+      "reponse": "Le Yum (Yahtzee)",
       "niveau": 1
     }
   ]

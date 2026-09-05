@@ -7,27 +7,32 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel appareil de comptoir fait dorer deux tranches de pain à la fois ?",
-      "reponse": "Le grille-pain",
-      "niveau": 1
+      "categorie": "Québec",
+      "question": "Quel hockeyeur était surnommé le Rocket ?",
+      "reponse": "Maurice Richard",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelles petites créatures jaunes adorent les bananes ?",
-      "reponse": "Les Minions",
+      "question": "Quel film de Disney suit un éléphant aux grandes oreilles ?",
+      "reponse": "Dumbo",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Combien y a-t-il de Grands Lacs ?",
-      "reponse": "Cinq",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on l'essai d'un groupe avant un spectacle ?",
+      "reponse": "La répétition",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel mot désigne une personne devenue célèbre grâce aux réseaux sociaux ?",
-      "reponse": "Un influenceur",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson chaude est faite de grains torréfiés ?",
+      "reponse": "Le café",
       "niveau": 1,
       "ages": [
         "ados",
@@ -36,15 +41,26 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel petit oiseau jaune échappe toujours au chat Grosminet ?",
-      "reponse": "Titi",
+      "categorie": "Sciences et nature",
+      "question": "Quelle particule négative tourne autour du noyau ?",
+      "reponse": "L'électron",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel liquide met-on dans le réservoir de l'auto à la station-service ?",
+      "reponse": "L'essence",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel art japonais consiste à plier du papier ?",
-      "reponse": "L'origami",
+      "categorie": "Mots et langue",
+      "question": "Comment s'appelle le petit du cochon ?",
+      "reponse": "Le porcelet",
       "niveau": 1
     },
     {
@@ -59,63 +75,15 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'endroit où les bateaux accostent ?",
-      "reponse": "Un port",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle marionnette verte du Muppet Show anime le spectacle ?",
+      "reponse": "Kermit",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de hasard fait cocher des cases en écoutant des numéros criés ?",
-      "reponse": "Le bingo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir un chat dans la gorge ?",
-      "reponse": "Être enroué",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de zéros dans un million ?",
-      "reponse": "Six",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "À quelle température l'eau gèle-t-elle ?",
-      "reponse": "0 degré C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros devient vert quand il se fâche ?",
-      "reponse": "Hulk",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'essai d'un groupe avant un spectacle ?",
-      "reponse": "La répétition",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir la tête dans les nuages ?",
-      "reponse": "Être rêveur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert glacé mange-t-on en cornet l'été ?",
-      "reponse": "La crème glacée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel établissement d'enseignement, entre le secondaire et l'université, n'existe qu'au Québec ?",
-      "reponse": "Le cégep",
+      "question": "Comment appelle-t-on la petite monnaie qu'on laisse au serveur au restaurant ?",
+      "reponse": "Le pourboire",
       "niveau": 1
     },
     {
@@ -125,38 +93,58 @@
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec un ballon orange qu'on lance dans un panier ?",
-      "reponse": "Le basketball",
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'endroit où les bateaux accostent ?",
+      "reponse": "Un port",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel canard Disney porte un costume marin ?",
+      "reponse": "Donald",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel art japonais consiste à plier du papier ?",
+      "reponse": "L'origami",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel véhicule tiré par des rennes livre les cadeaux ?",
+      "reponse": "Un traîneau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du serpent ?",
+      "reponse": "Le sifflement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien y a-t-il de Grands Lacs ?",
+      "reponse": "Cinq",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle particule négative tourne autour du noyau ?",
-      "reponse": "L'électron",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie raconter des salades ?",
-      "reponse": "Mentir",
+      "question": "À quelle température l'eau gèle-t-elle ?",
+      "reponse": "0 degré C",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume violet et allongé gratine la moussaka ?",
-      "reponse": "L'aubergine",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel repas se prend le soir au Québec ?",
+      "reponse": "Le souper",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de zéros dans un million ?",
+      "reponse": "Six",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -176,15 +164,22 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel quartier montréalais a une porte paifang ?",
-      "reponse": "Quartier chinois",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume en feuilles vertes est la base d'une salade ?",
+      "reponse": "La laitue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du chat ?",
+      "reponse": "Le miaulement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un ballon orange qu'on lance dans un panier ?",
+      "reponse": "Le basketball",
+      "niveau": 1
     }
   ]
 }

@@ -8,20 +8,60 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le voisin trop gentil des Simpson ?",
-      "reponse": "Ned Flanders",
+      "question": "Quelle famille préhistorique conduit une voiture à pédales ?",
+      "reponse": "Les Pierrafeu",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
+      "reponse": "L'autruche",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle salade libanaise contient persil et boulgour ?",
-      "reponse": "Le taboulé",
+      "categorie": "Culture générale",
+      "question": "Quel pantin de bois voit son nez s'allonger ?",
+      "reponse": "Pinocchio",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jouet de peluche brune se serre pour s'endormir ?",
+      "reponse": "Un ourson en peluche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la grande vallée creusée par une rivière entre deux parois ?",
+      "reponse": "Un canyon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel groupe sanguin est donneur universel ?",
+      "reponse": "O négatif",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel grand reptile du Nil était sacré en Égypte ?",
+      "reponse": "Le crocodile",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel objet indique l'heure grâce à une ombre ?",
+      "reponse": "Cadran solaire",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -35,10 +75,10 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport pratiquait Michael Phelps ?",
-      "reponse": "La natation",
-      "niveau": 1,
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel champignon blanc est le plus cultivé au monde ?",
+      "reponse": "Champignon de Paris",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -46,39 +86,9 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Sur quel engin descend-on une côte enneigée en position assise ?",
-      "reponse": "Un traîneau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel pantin de bois voit son nez s'allonger ?",
-      "reponse": "Pinocchio",
-      "niveau": 1
-    },
-    {
       "categorie": "Québec",
-      "question": "Quelle créature légendaire fait peur aux enfants ?",
-      "reponse": "Bonhomme Sept-Heures",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
-      "reponse": "L'autruche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir du pain sur la planche ?",
-      "reponse": "Beaucoup de travail",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu oppose deux équipes qui tirent chacune un bout du même câble ?",
-      "reponse": "Le tir à la corde",
+      "question": "Que doit-on attacher en s'assoyant dans une auto ?",
+      "reponse": "La ceinture de sécurité",
       "niveau": 1
     },
     {
@@ -88,11 +98,46 @@
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel chanteur français moustachu chantait Les Champs-Élysées ?",
-      "reponse": "Joe Dassin",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse Disney a de très longs cheveux magiques ?",
+      "reponse": "Raiponce",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on un mot vieilli ?",
+      "reponse": "Un archaïsme",
       "niveau": 2,
       "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de magasins se consacre au maquillage et aux parfums ?",
+      "reponse": "Sephora",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que veut dire « embarque dans l'auto » ?",
+      "reponse": "Monte dans l'auto",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport pratiquait Michael Phelps ?",
+      "reponse": "La natation",
+      "niveau": 1,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -108,91 +153,25 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel groupe sanguin est donneur universel ?",
-      "reponse": "O négatif",
+      "categorie": "Musique",
+      "question": "Quel chanteur français moustachu chantait Les Champs-Élysées ?",
+      "reponse": "Joe Dassin",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la grande vallée creusée par une rivière entre deux parois ?",
-      "reponse": "Un canyon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel cahier à anneaux range les feuilles de chaque matière ?",
-      "reponse": "Un cartable",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel objet indique l'heure grâce à une ombre ?",
-      "reponse": "Cadran solaire",
+      "categorie": "Sports",
+      "question": "Sur quel engin descend-on une côte enneigée en position assise ?",
+      "reponse": "Un traîneau",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quelle est la dernière lettre de l'alphabet grec ?",
-      "reponse": "Oméga",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Qui a créé Mickey Mouse ?",
-      "reponse": "Walt Disney",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le réseau de tuyaux qui recueille l'eau d'érable ?",
-      "reponse": "La tubulure",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle autrice et animatrice québécoise a abordé les tabous à la télé pendant des décennies ?",
-      "reponse": "Janette Bertrand",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte russe est un petit chausson farci ?",
-      "reponse": "Le pirojki",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on une petite chanson simple que les enfants apprennent par cœur ?",
-      "reponse": "Une comptine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel grand reptile du Nil était sacré en Égypte ?",
-      "reponse": "Le crocodile",
+      "question": "Que signifie faire la file ?",
+      "reponse": "Attendre son tour",
       "niveau": 1
     },
     {
@@ -204,6 +183,24 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu oppose deux équipes qui tirent chacune un bout du même câble ?",
+      "reponse": "Le tir à la corde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ustensile creux sert à manger la soupe ?",
+      "reponse": "La cuillère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on une petite chanson simple que les enfants apprennent par cœur ?",
+      "reponse": "Une comptine",
+      "niveau": 1
     }
   ]
 }

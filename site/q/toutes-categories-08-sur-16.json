@@ -7,24 +7,146 @@
   "emoji": "🎲",
   "questions": [
     {
+      "categorie": "Histoire",
+      "question": "Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?",
+      "reponse": "Le cheval de Troie",
+      "niveau": 2
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel tapis à longs poils habillait les salons des années 70 ?",
-      "reponse": "Le shag",
+      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
+      "reponse": "La ceinture fléchée",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel pays a gagné le plus de médailles olympiques au total ?",
-      "reponse": "Les États-Unis",
+      "categorie": "Mots et langue",
+      "question": "Que signifie se lever du mauvais pied ?",
+      "reponse": "Être de mauvaise humeur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle cité antique a été détruite par le Vésuve ?",
+      "reponse": "Pompéi",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chiot dalmatien de la Pat' Patrouille est pompier ?",
+      "reponse": "Marcus",
       "niveau": 1,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de côtés a un triangle ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel sculpteur a créé Le Penseur ?",
+      "reponse": "Rodin",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas se prend le soir au Québec ?",
+      "reponse": "Le souper",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quel jeu faut-il aligner des bonbons de même couleur ?",
+      "reponse": "Candy Crush",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
+      "reponse": "Sol",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel long instrument suisse s'étire au sol ?",
+      "reponse": "Le cor des Alpes",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel outil racle la neige des pare-brise ?",
+      "reponse": "Un gratteux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Kenya ?",
+      "reponse": "Nairobi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel bonbon rond se tient au bout d'un bâton ?",
+      "reponse": "Un suçon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel mammifère australien a un bec de canard ?",
+      "reponse": "L'ornithorynque",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on les cinq lignes sur lesquelles on écrit les notes ?",
+      "reponse": "La portée",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature des contes nordiques vit sous les ponts ?",
+      "reponse": "Un troll",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Langue parlée au Mexique ?",
+      "reponse": "L'espagnol",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -44,102 +166,10 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
-      "reponse": "Les oreilles de lapin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel canard milliardaire plonge dans ses pièces d'or ?",
-      "reponse": "Picsou",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?",
-      "reponse": "Le cheval de Troie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel lait fouetté avec crème glacée est un dessert à boire ?",
-      "reponse": "Le lait frappé",
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on l'objet doré remis à l'équipe championne ?",
+      "reponse": "Un trophée",
       "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que doit savoir faire le chasseur sans son chien ?",
-      "reponse": "Chasser",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée au Mexique ?",
-      "reponse": "L'espagnol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel mammifère australien a un bec de canard ?",
-      "reponse": "L'ornithorynque",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la longue file de chars et de fanfares qui traverse la ville ?",
-      "reponse": "Une parade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel long instrument suisse s'étire au sol ?",
-      "reponse": "Le cor des Alpes",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros court plus vite que tout le monde en rouge ?",
-      "reponse": "Flash",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel sculpteur a créé Le Penseur ?",
-      "reponse": "Rodin",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Kenya ?",
-      "reponse": "Nairobi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Culture générale",
@@ -148,52 +178,27 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel pain français long et croustillant est emblématique ?",
-      "reponse": "La baguette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de côtés a un triangle ?",
-      "reponse": "Trois",
+      "categorie": "Mots et langue",
+      "question": "Comment dit-on « oui » en espagnol ?",
+      "reponse": "Sí",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel congé tombe le lendemain de la Saint-Sylvestre ?",
-      "reponse": "Le jour de l'An",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on l'objet doré remis à l'équipe championne ?",
-      "reponse": "Un trophée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle cité antique a été détruite par le Vésuve ?",
-      "reponse": "Pompéi",
+      "question": "Quelle salle de Montréal projette le ciel étoilé sur un dôme au-dessus des spectateurs ?",
+      "reponse": "Le Planétarium",
       "niveau": 2
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie être tanné ?",
-      "reponse": "En avoir assez",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on les cinq lignes sur lesquelles on écrit les notes ?",
-      "reponse": "La portée",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit rongeur rayé du Québec remplit ses joues de graines ?",
-      "reponse": "Le suisse",
-      "niveau": 3
+      "categorie": "Sports",
+      "question": "Quel pays a gagné le plus de médailles olympiques au total ?",
+      "reponse": "Les États-Unis",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

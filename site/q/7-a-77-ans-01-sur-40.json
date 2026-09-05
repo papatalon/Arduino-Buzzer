@@ -7,21 +7,38 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Sciences et nature",
+      "question": "Quel muscle bat sans jamais se reposer ?",
+      "reponse": "Le cœur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on un groupe de personnes qui chantent ensemble ?",
+      "reponse": "Une chorale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel joueur québécois des Penguins était surnommé le Magnifique ?",
+      "reponse": "Mario Lemieux",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le petit chien blanc de Tintin ?",
-      "reponse": "Milou",
+      "question": "Quelle reine a des pouvoirs de glace chez Disney ?",
+      "reponse": "Elsa",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat de pâtes au fromage orange en boîte est célèbre au Canada ?",
-      "reponse": "Le Kraft Dinner",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "question": "Pays d'origine de la pizza ?",
+      "reponse": "L'Italie",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -30,10 +47,50 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel outil sert à visser une vis ?",
-      "reponse": "Le tournevis",
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de proche ?",
+      "reponse": "Loin",
       "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
+      "reponse": "Caillou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel bonhomme de biscuit court dans les contes ?",
+      "reponse": "Pain d'épice",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
+      "reponse": "L'étoile de mer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style musical est né dans les églises noires américaines ?",
+      "reponse": "Le gospel",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "De quel pays vient le champagne ?",
+      "reponse": "La France",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -42,20 +99,32 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel écureuil de L'Ère de glace court sans cesse après son gland ?",
-      "reponse": "Scrat",
+      "categorie": "Québec",
+      "question": "Quelle expression québécoise signifie c'est correct ?",
+      "reponse": "C'est beau",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel restaurant montréalais est célèbre pour son smoked meat ?",
-      "reponse": "Schwartz",
+      "categorie": "Culture générale",
+      "question": "Quel personnage de conte a une lampe magique ?",
+      "reponse": "Aladin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Par quelle lettre muette commence le mot haricot ?",
+      "reponse": "Le H",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel magicien gris guide la Communauté de l'anneau ?",
+      "reponse": "Gandalf",
       "niveau": 1,
       "ages": [
         "ados",
@@ -75,50 +144,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on un groupe de personnes qui chantent ensemble ?",
-      "reponse": "Une chorale",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel cheval mythologique a des ailes ?",
-      "reponse": "Pégase",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel appareil garde le lait et les légumes au froid ?",
-      "reponse": "Le réfrigérateur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que veut dire « embarquer » dans une auto, au Québec ?",
-      "reponse": "Monter dedans",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment dit-on « merci » en espagnol ?",
-      "reponse": "Gracias",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style musical est né dans les églises noires américaines ?",
-      "reponse": "Le gospel",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
-      "reponse": "L'étoile de mer",
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne parle surtout français ?",
+      "reponse": "Le Québec",
       "niveau": 1
     },
     {
@@ -128,57 +156,33 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne parle surtout français ?",
-      "reponse": "Le Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Contraire de bruyant, commençant par S ?",
-      "reponse": "Silencieux",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
       "question": "Quel objet à manche et à cordes frappe la balle au tennis ?",
       "reponse": "Une raquette",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel personnage de conte a une lampe magique ?",
-      "reponse": "Aladin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit rond porte le nom de sa couleur ?",
-      "reponse": "L'orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle amie brillante accompagne Harry et Ron ?",
-      "reponse": "Hermione",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel muscle bat sans jamais se reposer ?",
-      "reponse": "Le cœur",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel carré noir et blanc se scanne avec la caméra du téléphone ?",
-      "reponse": "Un code QR",
+      "question": "Quelles explosions de couleurs illuminent le ciel les soirs de fête ?",
+      "reponse": "Un feu d'artifice",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie avoir une faim de loup ?",
-      "reponse": "Avoir très faim",
+      "question": "Quel mode exprime un ordre ?",
+      "reponse": "L'impératif",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel outil sert à visser une vis ?",
+      "reponse": "Le tournevis",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel cheval mythologique a des ailes ?",
+      "reponse": "Pégase",
       "niveau": 1
     }
   ]

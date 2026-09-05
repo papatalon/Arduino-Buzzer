@@ -7,109 +7,9 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
-      "reponse": "L'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle fête québécoise célèbre le blé d'Inde ?",
-      "reponse": "L'épluchette",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle série québécoise se déroulait dans Charlevoix après la Première Guerre ?",
-      "reponse": "Le temps d'une paix",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel concours de chant québécois lance des carrières depuis 2003 ?",
-      "reponse": "Star Académie",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois d'origine marocaine raconte sa famille sur scène ?",
-      "reponse": "Rachid Badouri",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel grand festival de musique se tient sur les plaines d'Abraham en juillet ?",
-      "reponse": "Le Festival d'été de Québec",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
-      "reponse": "Le homard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel quotidien montréalais a imprimé sa dernière édition en 2017 pour passer à la tablette ?",
-      "reponse": "La Presse",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne de café québécoise porte le nom de son fondateur ?",
-      "reponse": "Van Houtte",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
-      "reponse": "La Grande Ourse",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel numéro portait Maurice Richard ?",
-      "reponse": "9",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle feuille rouge orne le drapeau du Canada ?",
-      "reponse": "La feuille d'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de croustilles québécoise répète deux fois la même syllabe ?",
-      "reponse": "Yum Yum",
+      "question": "Quelle marque québécoise fabrique les Jos Louis et les May West ?",
+      "reponse": "Vachon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -119,7 +19,7 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle diva a chanté My Heart Will Go On ?",
+      "question": "Quelle chanteuse québécoise a chanté pour Titanic ?",
       "reponse": "Céline Dion",
       "niveau": 1,
       "ages": [
@@ -129,9 +29,90 @@
       ]
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quelle série policière québécoise porte le numéro d'un poste de police ?",
+      "reponse": "District 31",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle activité québécoise du printemps se fait dans une érablière, avec un repas ?",
+      "reponse": "La cabane à sucre",
+      "niveau": 1
+    },
+    {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?",
-      "reponse": "La Révolution tranquille",
+      "question": "Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?",
+      "reponse": "Jeanne Mance",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois achaler ?",
+      "reponse": "Déranger",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit des détenues ?",
+      "reponse": "Unité 9",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chef québécois donne son prénom à un magazine, une émission et une gamme de produits ?",
+      "reponse": "Ricardo",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument est roi dans les rigodons québécois ?",
+      "reponse": "Le violon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle confiserie d'érable se roule sur la neige ?",
+      "reponse": "La tire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel lutteur québécois était surnommé Mad Dog ?",
+      "reponse": "Maurice Vachon",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve forme la frontière Ontario-Québec au sud ?",
+      "reponse": "L'Outaouais",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel monologuiste québécois a écrit « Les unions, qu'ossa donne ? »",
+      "reponse": "Yvon Deschamps",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -139,30 +120,9 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boulette de patates est un plat acadien ?",
-      "reponse": "Poutine râpée",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel organisme québécois délivre les permis de conduire et les plaques ?",
-      "reponse": "La SAAQ",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série québécoise d'Anne Dorval et Daniel Brière suivait une famille de trois garçons ?",
-      "reponse": "Les Parent",
+      "categorie": "Musique",
+      "question": "Quel festival de musique se tient chaque été au parc Jean-Drapeau à Montréal ?",
+      "reponse": "Osheaga",
       "niveau": 2,
       "ages": [
         "ados",
@@ -170,52 +130,82 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel groupe québécois a chanté La complainte du phoque en Alaska ?",
-      "reponse": "Beau Dommage",
-      "niveau": 2,
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
+      "reponse": "MusiquePlus",
+      "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "adultes"
       ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel animal figure sur la pièce de 25 cents canadienne ?",
-      "reponse": "Le caribou",
-      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
-      "reponse": "Le smoked meat",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle province se trouve Montréal ?",
-      "reponse": "Le Québec",
+      "question": "Quelle tartinade blanche accompagne le bagel ?",
+      "reponse": "Fromage à la crème",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise raconte Séraphin Poudrier ?",
-      "reponse": "Les Belles Histoires",
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant de Trois-Rivières ?",
+      "reponse": "Un Trifluvien",
       "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel gala récompense la musique québécoise ?",
-      "reponse": "L'ADISQ",
-      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
+      "reponse": "Gary Carter",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe de Montréal a gagné un Grammy pour The Suburbs ?",
+      "reponse": "Arcade Fire",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série québécoise suivait une famille qui vivait de combines et d'aide sociale ?",
+      "reponse": "Les Bougon",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
+      "reponse": "Mariana Mazza",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
+      "reponse": "La tire d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelait-on la colonie française en Amérique du Nord ?",
+      "reponse": "La Nouvelle-France",
+      "niveau": 1
     }
   ]
 }

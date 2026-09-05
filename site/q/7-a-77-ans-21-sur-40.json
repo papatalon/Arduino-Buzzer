@@ -7,6 +7,98 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Culture pop",
+      "question": "Quels bonbons durs multicolores promettent de goûter l'arc-en-ciel ?",
+      "reponse": "Les Skittles",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel garçon au chandail à zigzag est le maître de Snoopy ?",
+      "reponse": "Charlie Brown",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la durée d'une année sur Terre ?",
+      "reponse": "365 jours",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse de la Barbade a chanté Umbrella ?",
+      "reponse": "Rihanna",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle créature est mi-homme mi-cheval ?",
+      "reponse": "Le centaure",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie « être têtu comme une mule » ?",
+      "reponse": "Être très têtu",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel oiseau de dessin animé file à toute vitesse en faisant « bip bip » ?",
+      "reponse": "Bip Bip",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'étage sous le rez-de-chaussée où l'on range et où l'on joue ?",
+      "reponse": "Le sous-sol",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles galettes du déjeuner arrose-t-on de sirop d'érable ?",
+      "reponse": "Les crêpes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil garde la crème glacée bien dure ?",
+      "reponse": "Le congélateur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie il pleut à boire debout ?",
+      "reponse": "Il pleut très fort",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels sont les trois états de l'eau ?",
+      "reponse": "Solide liquide gaz",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
+      "reponse": "L'Ontario",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture générale",
       "question": "Quelle carte est la plus forte au poker ?",
       "reponse": "L'as",
@@ -18,55 +110,32 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Que veut dire « il fait frette » ?",
-      "reponse": "Il fait très froid",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la paella ?",
-      "reponse": "L'Espagne",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur joue Jack dans Titanic ?",
-      "reponse": "Leonardo DiCaprio",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
-      "reponse": "L'Ontario",
+      "question": "Quelle forme donne-t-on au poisson pané pour les enfants ?",
+      "reponse": "Des bâtonnets",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle couleur de carton expulse un joueur au soccer ?",
-      "reponse": "Rouge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois familier remplace « très froid » ?",
-      "reponse": "Frette",
+      "categorie": "Musique",
+      "question": "Quel appareil fait sortir le son fort dans une salle ?",
+      "reponse": "Un haut-parleur",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Contraire de majuscule ?",
-      "reponse": "Minuscule",
+      "question": "Comment nomme-t-on un mot de sens contraire ?",
+      "reponse": "Un antonyme",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel véhicule à vapeur roulait sur des rails au 19e siècle ?",
+      "reponse": "La locomotive",
       "niveau": 1
     },
     {
@@ -82,49 +151,27 @@
       "niveau": 1
     },
     {
+      "categorie": "Québec",
+      "question": "Quelles îles québécoises sont au milieu du golfe ?",
+      "reponse": "Îles de la Madeleine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle couleur de carton expulse un joueur au soccer ?",
+      "reponse": "Rouge",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelles figurines allemandes à mains rondes peuplent des châteaux et des fermes ?",
-      "reponse": "Les Playmobil",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie se serrer la ceinture ?",
-      "reponse": "Se priver",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment blanc en grains adoucit le café et entre dans tous les gâteaux ?",
-      "reponse": "Le sucre",
+      "question": "Quel jouet de cour d'école tourne pendant qu'on bondit par-dessus ?",
+      "reponse": "Une corde à sauter",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quels sont les trois états de l'eau ?",
-      "reponse": "Solide liquide gaz",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ours du Livre de la jungle chante Il en faut peu ?",
-      "reponse": "Baloo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel palindrome désigne une détection par ondes ?",
-      "reponse": "Radar",
+      "categorie": "Géographie",
+      "question": "Quel lac écossais abriterait un monstre ?",
+      "reponse": "Le Loch Ness",
       "niveau": 1
     },
     {
@@ -137,68 +184,6 @@
         "ados",
         "adultes"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel lac écossais abriterait un monstre ?",
-      "reponse": "Le Loch Ness",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel véhicule à vapeur roulait sur des rails au 19e siècle ?",
-      "reponse": "La locomotive",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon est élevé par les loups dans la jungle ?",
-      "reponse": "Mowgli",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel pouvoir Elsa doit-elle cacher au début de La Reine des neiges ?",
-      "reponse": "La glace",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse de la Barbade a chanté Umbrella ?",
-      "reponse": "Rihanna",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la fondue au fromage ?",
-      "reponse": "La Suisse",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle créature est mi-homme mi-cheval ?",
-      "reponse": "Le centaure",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel appareil fait sortir le son fort dans une salle ?",
-      "reponse": "Un haut-parleur",
-      "niveau": 1
     }
   ]
 }

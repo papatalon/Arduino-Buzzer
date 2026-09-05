@@ -7,97 +7,80 @@
   "emoji": "🪐",
   "questions": [
     {
+      "categorie": "Musique",
+      "question": "Dans « Au clair de la lune », à quel ami demande-t-on de prêter sa plume ?",
+      "reponse": "Pierrot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?",
+      "reponse": "Le sextant",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Dans quel jeu faut-il démasquer l'imposteur à bord d'un vaisseau spatial ?",
+      "reponse": "Among Us",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quels pneus la loi québécoise impose-t-elle du 1er décembre au 15 mars ?",
+      "reponse": "Les pneus d'hiver",
+      "niveau": 2
+    },
+    {
       "categorie": "Sciences et nature",
-      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
+      "question": "Comment appelle-t-on l'ensemble formé par le Soleil et ses planètes ?",
+      "reponse": "Le système solaire",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel trompettiste a chanté What a Wonderful World ?",
+      "reponse": "Louis Armstrong",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel engin a emmené les premiers hommes jusqu'à la Lune ?",
       "reponse": "Une fusée",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel animal fut le premier en orbite ?",
-      "reponse": "La chienne Laïka",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel mois vient après mars ?",
-      "reponse": "Avril",
+      "categorie": "Géographie",
+      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
+      "reponse": "Le Japon",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel caillou céleste brille en traversant l'atmosphère ?",
-      "reponse": "L'étoile filante",
+      "question": "Quels points brillants voit-on dans le ciel par une nuit claire ?",
+      "reponse": "Les étoiles",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel astre supermassif avale même la lumière ?",
-      "reponse": "Le trou noir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
-      "reponse": "Dans une galaxie près de chez vous",
+      "question": "Combien de lunes possède Mars ?",
+      "reponse": "Deux",
       "niveau": 3,
       "ages": [
-        "adultes"
+        "adultes",
+        "aines"
       ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle fleur suit le Soleil ?",
-      "reponse": "Le tournesol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "De quel côté se lève le soleil ?",
-      "reponse": "À l'est",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie être dans la lune ?",
-      "reponse": "Être distrait",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre change de forme dans le ciel au fil des nuits ?",
-      "reponse": "La Lune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?",
-      "reponse": "La Station spatiale internationale",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel fut le premier satellite artificiel ?",
-      "reponse": "Spoutnik",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de lunes possède la Terre ?",
-      "reponse": "Une",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel soldat Marvel porte un bouclier étoilé ?",
-      "reponse": "Captain America",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre provoque les marées ?",
-      "reponse": "La Lune",
-      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -112,8 +95,60 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?",
-      "reponse": "Le télescope James Webb",
+      "question": "Qui fut le premier homme sur la Lune ?",
+      "reponse": "Neil Armstrong",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel effet atmosphérique réchauffe la planète ?",
+      "reponse": "L'effet de serre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style musical coréen a conquis la planète ?",
+      "reponse": "La K-pop",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel mois vient après mars ?",
+      "reponse": "Avril",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'espace sous le toit où s'entassent les vieilles boîtes ?",
+      "reponse": "Le grenier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel astre provoque les marées ?",
+      "reponse": "La Lune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète a les anneaux les plus spectaculaires ?",
+      "reponse": "Saturne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami étoile de mer accompagne Bob l'éponge ?",
+      "reponse": "Patrick",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel rover s'est posé sur Mars en 2012 ?",
+      "reponse": "Curiosity",
       "niveau": 3,
       "ages": [
         "ados",
@@ -122,36 +157,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
-      "reponse": "Challenger",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel méchant des Minions veut voler la Lune ?",
-      "reponse": "Gru",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel astronaute américain a posé le pied sur la Lune le premier ?",
-      "reponse": "Neil Armstrong",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel astronome a placé le Soleil au centre de l'univers ?",
-      "reponse": "Copernic",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel savant italien a affirmé que la Terre tourne autour du Soleil ?",
+      "reponse": "Galilée",
+      "niveau": 3
     }
   ]
 }

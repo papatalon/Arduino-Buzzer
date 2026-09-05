@@ -7,34 +7,6 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on la colonie française en Amérique du Nord ?",
-      "reponse": "La Nouvelle-France",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quels trois étages composent le pâté chinois ?",
-      "reponse": "Bœuf maïs patates",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville du Québec ?",
-      "reponse": "Montréal",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel groupe québécois a parodié les années 80 à la télé ?",
-      "reponse": "RBO",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
       "question": "Quelle chanson de Céline Dion ouvre par une flûte irlandaise ?",
       "reponse": "My Heart Will Go On",
@@ -47,47 +19,28 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on au Québec la coupe de cheveux courte devant et longue derrière ?",
-      "reponse": "La coupe Longueuil",
-      "niveau": 2,
+      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
+      "reponse": "La guignolée",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sucre du terroir remplace la cassonade ?",
-      "reponse": "Sucre d'érable",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
+      "reponse": "Pierre Falardeau",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de baseball a joué à Montréal ?",
-      "reponse": "Les Expos",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve forme la frontière Ontario-Québec au sud ?",
-      "reponse": "L'Outaouais",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe folklorique québécois a une bottine dans son nom ?",
-      "reponse": "La Bottine Souriante",
+      "question": "Quel lanceur québécois a gagné un Cy Young ?",
+      "reponse": "Éric Gagné",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -96,25 +49,18 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel quotidien québécois porte le nom d'une obligation morale ?",
-      "reponse": "Le Devoir",
+      "question": "Quel humoriste québécois jouait le concierge Symphorien ?",
+      "reponse": "Gilles Latulippe",
       "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson fumé garnit le bagel classique ?",
-      "reponse": "Le saumon fumé",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Trois-Rivières ?",
-      "reponse": "Un Trifluvien",
-      "niveau": 2,
+      "categorie": "Musique",
+      "question": "Quelle danse traditionnelle québécoise se danse à quatre couples sur les appels d'un câlleur ?",
+      "reponse": "Le set carré",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -122,58 +68,36 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne borde le Québec à l'est, avec Moncton ?",
-      "reponse": "Le Nouveau-Brunswick",
-      "niveau": 3
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas se prend le midi au Québec ?",
+      "reponse": "Le dîner",
+      "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a gagné Eurovision pour la Suisse en 1988 ?",
-      "reponse": "Céline Dion",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant de Montréal ?",
+      "reponse": "Un Montréalais",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
-      "reponse": "Rue des Pignons",
+      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
+      "reponse": "La Bolduc",
       "niveau": 3,
       "ages": [
         "aines"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu foncé se cueille dans les bois du Lac-Saint-Jean ?",
-      "reponse": "Le bleuet sauvage",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie attache ta tuque ?",
-      "reponse": "Prépare-toi",
+      "categorie": "Sciences et nature",
+      "question": "Quel caillou céleste brille en traversant l'atmosphère ?",
+      "reponse": "L'étoile filante",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?",
-      "reponse": "La baie James",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
-      "reponse": "Klô Pelgag",
+      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
+      "reponse": "Bleu Jeans Bleu",
       "niveau": 3,
       "ages": [
         "ados",
@@ -181,9 +105,57 @@
       ]
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert québécois est un gâteau arrosé de sauce sucrée ?",
+      "reponse": "Pouding chômeur",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle carte à puce sert à payer le métro et l'autobus à Montréal ?",
-      "reponse": "La carte Opus",
+      "question": "Quel objet orange envahit les rues de Montréal chaque été ?",
+      "reponse": "Le cône",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne éducative appartient au gouvernement du Québec ?",
+      "reponse": "Télé-Québec",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelles jeunes filles furent envoyées peupler la Nouvelle-France ?",
+      "reponse": "Filles du Roy",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel grand festival de musique se tient sur les plaines d'Abraham en juillet ?",
+      "reponse": "Le Festival d'été de Québec",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande île du golfe Saint-Laurent ?",
+      "reponse": "Anticosti",
       "niveau": 2,
       "ages": [
         "ados",
@@ -193,20 +165,61 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel circuit montréalais accueille le Grand Prix ?",
-      "reponse": "Gilles-Villeneuve",
+      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
+      "reponse": "Montréal",
       "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois jaser ?",
-      "reponse": "Bavarder",
+      "categorie": "Culture pop",
+      "question": "Quelle émission jeunesse québécoise est revenue à la télé en 2019, trente ans après ?",
+      "reponse": "Passe-Partout",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plage du Maine est la destination classique des vacances québécoises ?",
+      "reponse": "Old Orchard",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
+      "reponse": "Nézet-Séguin",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
+      "reponse": "L'Ontario",
       "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
+      "reponse": "Expo 67",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

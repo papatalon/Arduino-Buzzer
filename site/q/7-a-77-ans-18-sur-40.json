@@ -7,21 +7,15 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Quel plat québécois combine frites, fromage et sauce ?",
-      "reponse": "La poutine",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle journaliste aime Clark Kent ?",
+      "reponse": "Lois Lane",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel instrument grossit les objets proches ?",
-      "reponse": "La loupe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel chocolat creux se déballe le matin de Pâques ?",
-      "reponse": "Un œuf en chocolat",
+      "categorie": "Culture générale",
+      "question": "Sous quel objet ne faut-il pas passer selon la superstition ?",
+      "reponse": "Une échelle",
       "niveau": 1
     },
     {
@@ -32,107 +26,14 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation raconte un garçon qui rejoint le pays des morts avec sa guitare ?",
-      "reponse": "Coco",
+      "question": "Quel personnage bleu sort de la lampe d'Aladdin ?",
+      "reponse": "Le génie",
       "niveau": 1,
       "ages": [
         "enfants",
         "ados",
         "adultes"
       ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle exposition universelle a eu lieu à Montréal ?",
-      "reponse": "Expo 67",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Sous quel objet ne faut-il pas passer selon la superstition ?",
-      "reponse": "Une échelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson anglaise fait toucher la tête, les épaules, les genoux et les orteils ?",
-      "reponse": "Head and Shoulders",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel accessoire redonne de l'énergie à un téléphone à plat ?",
-      "reponse": "Un chargeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle méchante veut un manteau en dalmatiens ?",
-      "reponse": "Cruella",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume vert ressemble à un petit arbre ?",
-      "reponse": "Le brocoli",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel sport sorcier se joue sur des balais ?",
-      "reponse": "Le quidditch",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel appareil lave les assiettes à notre place ?",
-      "reponse": "Le lave-vaisselle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle carte l'arbitre de soccer montre-t-il pour avertir un joueur ?",
-      "reponse": "Un carton jaune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot de sens contraire ?",
-      "reponse": "Un antonyme",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel pain français long et croustillant est emblématique ?",
-      "reponse": "La baguette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple scandinave naviguait sur des drakkars ?",
-      "reponse": "Les Vikings",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Sur quel pont danse-t-on tous en rond dans la chanson ?",
-      "reponse": "Le pont d'Avignon",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -147,8 +48,42 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Pluriel de madame ?",
-      "reponse": "Mesdames",
+      "question": "Contraire de bruyant, commençant par S ?",
+      "reponse": "Silencieux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte verte piquante accompagne les sushis ?",
+      "reponse": "Le wasabi",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson anglaise fait toucher la tête, les épaules, les genoux et les orteils ?",
+      "reponse": "Head and Shoulders",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple scandinave naviguait sur des drakkars ?",
+      "reponse": "Les Vikings",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sucre du terroir remplace la cassonade ?",
+      "reponse": "Sucre d'érable",
       "niveau": 1
     },
     {
@@ -158,15 +93,67 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le féminin de lion ?",
-      "reponse": "Lionne",
+      "categorie": "Sciences et nature",
+      "question": "Quel instrument grossit les objets proches ?",
+      "reponse": "La loupe",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle laitue compose la salade César ?",
+      "reponse": "La romaine",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel outil de plastique sert à dégager la neige de l'entrée ?",
+      "reponse": "Une pelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel signe marque l'élision dans le mot l'arbre ?",
+      "reponse": "L'apostrophe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de combat japonais se pratique pieds nus en kimono blanc ?",
+      "reponse": "Le karaté",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle pâte gluante et étirable se fabrique à la maison avec de la colle ?",
+      "reponse": "La slime",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Sciences et nature",
       "question": "Quel grand singe est le plus proche de l'homme ?",
       "reponse": "Le chimpanzé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois familier remplace « très froid » ?",
+      "reponse": "Frette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Sur quel pont danse-t-on tous en rond dans la chanson ?",
+      "reponse": "Le pont d'Avignon",
       "niveau": 1
     },
     {
@@ -177,8 +164,26 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de combat japonais se pratique pieds nus en kimono blanc ?",
-      "reponse": "Le karaté",
+      "question": "Quelle carte l'arbitre de soccer montre-t-il pour avertir un joueur ?",
+      "reponse": "Un carton jaune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel petit maître Jedi vert parle à l'envers ?",
+      "reponse": "Yoda",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de rire ?",
+      "reponse": "Pleurer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que porte-t-on sur le visage pour ne pas être reconnu à l'Halloween ?",
+      "reponse": "Un masque",
       "niveau": 1
     }
   ]

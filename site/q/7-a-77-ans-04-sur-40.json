@@ -7,86 +7,9 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle créature verte vit dans un marais ?",
-      "reponse": "Shrek",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Queen fait taper des pieds et des mains sur « We will, we will... » ?",
-      "reponse": "We Will Rock You",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel gâteau roulé imite un morceau de bois à Noël ?",
-      "reponse": "Bûche de Noël",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec un volant ?",
-      "reponse": "Le badminton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle fleur bleue orne le drapeau du Québec ?",
-      "reponse": "La fleur de lys",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture générale",
       "question": "Quel jouet monte et descend au bout d'une ficelle ?",
       "reponse": "Le yo-yo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le féminin de prince ?",
-      "reponse": "Princesse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on l'école qui suit le primaire, pendant cinq ans ?",
-      "reponse": "Le secondaire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quels animaux revivent dans Jurassic Park ?",
-      "reponse": "Les dinosaures",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Que mâche-t-on longtemps sans jamais l'avaler ?",
-      "reponse": "De la gomme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel cowboy jouet a un serpent dans sa botte ?",
-      "reponse": "Woody",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Où pêche-t-on la célèbre crevette nordique québécoise ?",
-      "reponse": "À Matane",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on un dessin qui représente un pays ou une ville vus d'en haut ?",
-      "reponse": "Une carte",
       "niveau": 1
     },
     {
@@ -97,32 +20,73 @@
     },
     {
       "categorie": "Sciences et nature",
+      "question": "Que faut-il mettre en terre pour faire pousser une plante ?",
+      "reponse": "Une graine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
+      "reponse": "Bugs Bunny",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir une faim de loup ?",
+      "reponse": "Avoir très faim",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un volant ?",
+      "reponse": "Le badminton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne qui soigne les dents ?",
+      "reponse": "Un dentiste",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Queen fait taper des pieds et des mains sur « We will, we will... » ?",
+      "reponse": "We Will Rock You",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel récipient plat sert à faire revenir les œufs ?",
+      "reponse": "Une poêle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
       "question": "Quel reptile porte une carapace sur son dos ?",
       "reponse": "La tortue",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Combien de périodes dans un match de hockey ?",
-      "reponse": "Trois",
+      "categorie": "Cinéma et télé",
+      "question": "Quels quatre frères bandits affrontent Lucky Luke ?",
+      "reponse": "Les Dalton",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse Disney vit avec sept nains ?",
+      "reponse": "Blanche-Neige",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle péninsule québécoise s'avance dans le golfe ?",
-      "reponse": "La Gaspésie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel moteur de recherche est le plus utilisé au monde ?",
-      "reponse": "Google",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant alpin alterne voix de tête et de poitrine ?",
-      "reponse": "Le yodel",
+      "categorie": "Bouffe et cuisine",
+      "question": "De quoi est fait le tofu ?",
+      "reponse": "Du soja",
       "niveau": 1,
       "ages": [
         "ados",
@@ -131,20 +95,26 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel document marqué d'un X indique où le trésor est enterré ?",
-      "reponse": "Une carte au trésor",
+      "categorie": "Culture générale",
+      "question": "Quel moteur de recherche est le plus utilisé au monde ?",
+      "reponse": "Google",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle friandise glacée se vend en tube de plastique à congeler ?",
-      "reponse": "Le Mr. Freeze",
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on un dessin qui représente un pays ou une ville vus d'en haut ?",
+      "reponse": "Une carte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ragoût du temps des fêtes se sert avec des boulettes, dans une sauce épaissie à la farine grillée ?",
+      "reponse": "Le ragoût de pattes",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -159,22 +129,57 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Que faut-il mettre en terre pour faire pousser une plante ?",
-      "reponse": "Une graine",
+      "categorie": "Histoire",
+      "question": "Quel document marqué d'un X indique où le trésor est enterré ?",
+      "reponse": "Une carte au trésor",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle baleine blanche du Saint-Laurent est protégée ?",
+      "reponse": "Le béluga",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie niaiser quelqu'un, au Québec ?",
-      "reponse": "Le taquiner",
+      "question": "Que signifie être rusé comme un renard ?",
+      "reponse": "Être très malin",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie être têtu comme une mule ?",
-      "reponse": "Ne pas changer d'idée",
+      "categorie": "Sports",
+      "question": "Combien de périodes dans un match de hockey ?",
+      "reponse": "Trois",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quel jeu de cartes doit-on annoncer qu'il ne reste qu'une seule carte en main ?",
+      "reponse": "Uno",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle fleur bleue orne le drapeau du Québec ?",
+      "reponse": "La fleur de lys",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne un épi de maïs ?",
+      "reponse": "Un blé d'Inde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant alpin alterne voix de tête et de poitrine ?",
+      "reponse": "Le yodel",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

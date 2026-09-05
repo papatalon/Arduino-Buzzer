@@ -7,120 +7,17 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animateur québécois a longtemps animé Tout le monde en parle ?",
-      "reponse": "Guy A. Lepage",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Combien de députés siègent à l'Assemblée nationale ?",
-      "reponse": "125",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle semoule accompagne les plats du Maghreb ?",
-      "reponse": "Le couscous",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "De quelle langue vient le mot toboggan ?",
-      "reponse": "Langues autochtones",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport parle-t-on de peloton ?",
-      "reponse": "Le cyclisme",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel appareil lave les assiettes à notre place ?",
-      "reponse": "Le lave-vaisselle",
+      "question": "Que signifie « avoir une faim de loup » ?",
+      "reponse": "Avoir très faim",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Comment appelle-t-on un ensemble de deux souliers ou de deux bas ?",
-      "reponse": "Une paire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelles sondes jumelles ont été lancées en 1977 ?",
-      "reponse": "Voyager",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comédie musicale utilise les chansons d'ABBA ?",
-      "reponse": "Mamma Mia",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de plage frappe un ballon par-dessus un filet, pieds dans le sable ?",
-      "reponse": "Le volleyball de plage",
-      "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?",
-      "reponse": "Alys Robi",
+      "question": "Quelle émission de Radio-Canada enquête sur ce qu'on met dans notre assiette ?",
+      "reponse": "L'épicerie",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Vietnam ?",
-      "reponse": "Hanoï",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle rue étroite du Vieux-Québec est très photographiée ?",
-      "reponse": "Petit-Champlain",
-      "niveau": 1,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -137,9 +34,44 @@
       ]
     },
     {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on un conflit où presque tous les pays du monde se battent ?",
+      "reponse": "Une guerre mondiale",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Comment appelle-t-on un ensemble de deux souliers ou de deux bas ?",
+      "reponse": "Une paire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène lumineux colore le ciel polaire ?",
+      "reponse": "Aurore boréale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Vietnam ?",
+      "reponse": "Hanoï",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gros camion épand du sel sur les routes glacées ?",
+      "reponse": "Une saleuse",
+      "niveau": 2
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Que signifie « dormir comme une marmotte » ?",
-      "reponse": "Dormir profondément",
+      "question": "Quel palindrome désigne une détection par ondes ?",
+      "reponse": "Radar",
       "niveau": 1
     },
     {
@@ -149,42 +81,51 @@
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on un conflit où presque tous les pays du monde se battent ?",
-      "reponse": "Une guerre mondiale",
+      "categorie": "Culture pop",
+      "question": "Quelle marque de voitures allemande a quatre anneaux entrelacés ?",
+      "reponse": "Audi",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de plage frappe un ballon par-dessus un filet, pieds dans le sable ?",
+      "reponse": "Le volleyball de plage",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quel secteur de Montréal regroupe salles de spectacle et festivals au centre-ville ?",
-      "reponse": "Le Quartier des spectacles",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros a été piqué par une araignée ?",
-      "reponse": "Spider-Man",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel instrument sert à observer les étoiles ?",
-      "reponse": "Le télescope",
+      "question": "Que veut dire « il fait frette » ?",
+      "reponse": "Il fait très froid",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel mot répète Sheldon en cognant à la porte ?",
-      "reponse": "Penny",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "question": "Quelle suite de Nemo suit la mémoire de Dory ?",
+      "reponse": "Trouver Doris",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert glacé mange-t-on en cornet l'été ?",
+      "reponse": "La crème glacée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit rond porte le nom de sa couleur ?",
+      "reponse": "L'orange",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle la voiture de course des Bagnoles ?",
+      "reponse": "Flash McQueen",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -193,16 +134,30 @@
       "niveau": 2
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
-      "reponse": "Le pain doré",
-      "niveau": 1
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée suit Stewie et Peter Griffin ?",
+      "reponse": "Family Guy",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel chef québécois donne son prénom à un magazine, une émission et une gamme de produits ?",
-      "reponse": "Ricardo",
-      "niveau": 2,
+      "categorie": "Musique",
+      "question": "Quelle comédie musicale utilise les chansons d'ABBA ?",
+      "reponse": "Mamma Mia",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelles sondes jumelles ont été lancées en 1977 ?",
+      "reponse": "Voyager",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
@@ -210,8 +165,31 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel phénomène lumineux colore le ciel polaire ?",
-      "reponse": "Aurore boréale",
+      "question": "Quel instrument sert à observer les étoiles ?",
+      "reponse": "Le télescope",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport parle-t-on de peloton ?",
+      "reponse": "Le cyclisme",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
+      "reponse": "Le homard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne le chandail chaud à capuchon ?",
+      "reponse": "Un coton ouaté",
       "niveau": 1
     }
   ]
