@@ -26,6 +26,7 @@ import 'protocol.dart';
 import 'questionnaires/active_questionnaire.dart';
 import 'simulation.dart';
 import 'version_check.dart';
+import 'questionnaires/banque.dart';
 import 'questionnaires/catalogue.dart';
 import 'questionnaires/questionnaire_store.dart';
 import 'questionnaires/tirage_questions.dart';
@@ -80,6 +81,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
   final _logo = EventLogo();
   final _questionnaires = QuestionnaireStore();
   final _catalogue = CatalogueStore();
+  final _banque = BanqueStore();
   late final TirageQuestions _tirageQuestions;
   late final ActiveQuestionnaire _actif;
   late final MoteurQuiz _moteur;
@@ -117,9 +119,11 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
     // bibliotheque. C'est un etat de l'application, pas la propriete d'un
     // ecran. Il lit le disque avant le reseau : immediat, et hors ligne.
     _catalogue.init();
-    // Le tirage lit le catalogue au coup par coup : il ne charge jamais les
-    // 3000 questions pour en composer vingt (voir TirageQuestions).
-    _tirageQuestions = TirageQuestions(catalogue: _catalogue);
+    // LA BANQUE AUSSI, et pour la meme raison : le tirage y pioche depuis
+    // l'ecran de lancement, sans qu'on soit passe par l'ecran Questions.
+    // Un seul fichier, lu une fois, qui tient toutes les questions.
+    _banque.init();
+    _tirageQuestions = TirageQuestions(banque: _banque);
     _simulateur = Simulateur(_game);
     // Moteur de son : joue la bibliothèque embarquée à la place du DFPlayer
     // et renvoie au Mega son état de lecture, qui remplace la broche BUSY

@@ -1,44 +1,33 @@
 import 'package:flutter/material.dart';
 
 import '../questionnaires/active_questionnaire.dart';
-import '../questionnaires/catalogue.dart';
 import '../questionnaires/questionnaire.dart';
 import '../questionnaires/tirage_questions.dart';
 import 'source_questions.dart';
 import 'tokens.dart';
 
-// TROISIÈME SOURCE : une manche composée sur place.
+// LA MANCHE COMPOSÉE SUR PLACE, devenue la façon normale de jouer.
 //
-// L'animateur choisit un périmètre et un nombre, et le tirage assemble une
-// manche qui n'existera qu'une fois. C'est la source la plus souple pour une
-// soirée improvisée : personne n'a besoin d'avoir préparé quoi que ce soit,
-// et deux soirées ne se ressemblent pas.
+// L'animateur dit ce qu'il a devant lui — des enfants, un mélange, des
+// connaisseurs — et la manche se compose. Elle n'existera qu'une fois, et
+// deux soirées ne se ressemblent pas.
 //
-// TROIS CHOSES QUE CET ÉCRAN A DÛ APPRENDRE.
-//
-// Le bouton vient EN DERNIER, après les réglages qu'il consomme. Il était posé
-// sur la ligne, donc au-dessus d'eux : on demandait d'agir avant d'avoir
-// montré sur quoi.
-//
-// Les réglages restent PLIÉS tant que cette source n'est pas retenue. Les
-// dix-neuf collections déployées écrasaient les deux autres sources, alors que
-// c'est le choix le moins fréquent des trois.
-//
-// Le périmètre est un MENU, pas vingt pastilles. Choisir un élément parmi
-// vingt est exactement ce à quoi sert un menu ; des pastilles se justifient
-// quand les options sont peu nombreuses et qu'on veut les comparer d'un coup
-// d'œil, ce qui n'est pas le cas ici.
-//
-// LE NIVEAU ET LA TRANCHE D'ÂGE, eux, SONT des pastilles : trois et quatre
-// options, qu'on veut voir toutes en même temps parce qu'on en coche
-// plusieurs. Rien de coché veut dire « sans filtre », pas « rien » : c'est
-// l'état normal, et l'écran le dit plutôt que de laisser deviner.
-//
-// L'ORDRE DE LECTURE suit la phrase qu'on se dit : où piocher, pour qui,
-// à quelle difficulté, combien. La tranche d'âge vient avant le niveau parce
-// qu'elle est le choix qu'on fait en regardant la pièce, alors que le niveau
-// se lit À L'INTÉRIEUR d'une tranche : « facile » ne veut pas dire la même
+// L'ORDRE DE LECTURE suit la phrase qu'on se dit : dans quoi on pioche, pour
+// qui, à quelle difficulté, combien. La tranche d'âge vient avant le niveau
+// parce qu'elle est le choix qu'on fait en regardant la pièce, alors que le
+// niveau se lit À L'INTÉRIEUR d'elle : « facile » ne veut pas dire la même
 // chose pour un enfant et pour un aîné.
+//
+// RIEN DE COCHÉ VEUT DIRE « TOUT », pas « rien ». C'est l'état normal et le
+// plus large, et chaque ligne le dit plutôt que de laisser deviner : devant
+// quatre cases vides, on croit devoir en choisir une.
+//
+// LE COMPTE S'AFFICHE AVANT DE COMPOSER. Un filtre qui ne laisse que huit
+// questions doit se voir pendant qu'on coche, pas après avoir cliqué : sinon
+// l'animateur découvre sa manche tronquée une fois la partie lancée.
+//
+// LES RÉGLAGES RESTENT PLIÉS tant que cette source n'est pas retenue. Déployés,
+// ils écrasent les deux autres sources.
 class SourceAuHasard extends StatefulWidget {
   const SourceAuHasard({
     super.key,
@@ -56,12 +45,12 @@ class SourceAuHasard extends StatefulWidget {
 class _SourceAuHasardState extends State<SourceAuHasard> {
   static const _parDefaut = 20;
 
-  String? _collection; // null = toutes les questions
   // Vides = sans filtre. Voir l'en-tête : c'est l'état normal, pas un oubli.
+  final Set<String> _categories = {};
+  final Set<String> _themes = {};
   final Set<Tranche> _tranches = {};
   final Set<int> _niveaux = {};
   int _nombre = _parDefaut;
-  bool _enCours = false;
   bool _deplie = false;
   String? _erreur;
 
@@ -70,53 +59,53 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
   @override
   void initState() {
     super.initState();
-    widget.tirage.catalogue.addListener(_surCatalogue);
+    widget.tirage.banque.addListener(_surBanque);
   }
 
   @override
   void dispose() {
-    widget.tirage.catalogue.removeListener(_surCatalogue);
+    widget.tirage.banque.removeListener(_surBanque);
     super.dispose();
   }
 
-  // Le catalogue arrive du disque puis du réseau : sans cette écoute, les
-  // collections n'apparaîtraient qu'au prochain passage sur l'écran.
-  void _surCatalogue() {
+  // La banque arrive du disque puis du réseau : sans cette écoute, les
+  // catégories n'apparaîtraient qu'au prochain passage sur l'écran.
+  void _surBanque() {
     if (mounted) setState(() {});
   }
 
-  Future<void> _composer() async {
-    setState(() {
-      _enCours = true;
-      _erreur = null;
-    });
-    final compose = await widget.tirage.composer(
-      collection: _collection,
+  int get _disponibles => widget.tirage.compter(
+        categories: _categories,
+        themes: _themes,
+        niveaux: _niveaux,
+        tranches: _tranches,
+      );
+
+  void _composer() {
+    final compose = widget.tirage.composer(
+      categories: _categories,
+      themes: _themes,
       niveaux: _niveaux,
       tranches: _tranches,
       nombre: _nombre,
     );
-    if (!mounted) return;
-    setState(() {
-      _enCours = false;
-      _erreur = compose == null ? widget.tirage.derniereErreur : null;
-    });
+    setState(() => _erreur = compose == null ? widget.tirage.derniereErreur : null);
     if (compose != null) {
       widget.actif.use(compose, origine: 'Tirage au hasard');
       // Le périmètre du bris suit celui de la manche : départager une manche
       // d'histoire avec une question de cinéma serait injuste.
-      widget.actif.collectionDuBris = _collection;
+      widget.actif.perimetreDuBris = {..._categories, ..._themes};
       widget.actif.tireAuHasard = true;
     }
   }
 
-  String get _nomDuPerimetre => _collection ?? 'Toutes les questions';
-
   // Ce que l'animateur a demandé, en une phrase. Les critères laissés vides
-  // ne s'écrivent pas : « pour tout le monde, tous niveaux » serait du bruit
-  // sur le cas le plus courant.
+  // ne s'écrivent pas : « toutes catégories, pour tout le monde, tous
+  // niveaux » serait du bruit sur le cas le plus courant.
   String get _criteres {
     final bouts = <String>[
+      if (_categories.isNotEmpty || _themes.isNotEmpty)
+        'dans ${[..._categories, ..._themes].join(', ')}',
       if (_tranches.isNotEmpty)
         'pour ${[for (final t in Tranche.values) if (_tranches.contains(t)) kNomsTranches[t]!].join(', ')}',
       if (_niveaux.isNotEmpty)
@@ -128,6 +117,8 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
   @override
   Widget build(BuildContext context) {
     final ouvert = _deplie || _choisi;
+    final banque = widget.tirage.banque;
+    final dispo = _disponibles;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
@@ -136,7 +127,7 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
           choisi: _choisi,
           titre: 'Questions au hasard',
           detail: _choisi
-              ? '${widget.actif.total} questions tirées dans « $_nomDuPerimetre »$_criteres.'
+              ? '${widget.actif.total} questions tirées$_criteres.'
               : "Une manche composée sur place, qui n'existera qu'une fois.",
           onTap: () => setState(() => _deplie = !ouvert),
         ),
@@ -147,103 +138,134 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
-                // Les deux réglages sur une même ligne : ils se lisent
-                // ensemble, « vingt questions prises dans l'histoire ».
-                Wrap(
-                  spacing: BSSpace.s4,
-                  runSpacing: BSSpace.s3,
-                  crossAxisAlignment: WrapCrossAlignment.center,
-                  children: [
-                    _MenuPerimetre(
-                      valeur: _collection,
-                      collections: widget.tirage.collections,
-                      onChange: (v) => setState(() => _collection = v),
-                    ),
-                    Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        PetitBouton(
-                            '−',
-                            _nombre > 1
-                                ? () => setState(() => _nombre -= 1)
-                                : null),
-                        SizedBox(
-                          width: 52,
-                          child: Text(
-                            '$_nombre',
-                            textAlign: TextAlign.center,
-                            style: BSType.body(size: 20, color: BSColors.text)
-                                .copyWith(fontWeight: FontWeight.w600),
-                          ),
+                if (banque.banque.isEmpty)
+                  Text(
+                    banque.loading
+                        ? 'Lecture de la banque...'
+                        : banque.lastError ?? 'Aucune question disponible.',
+                    style: BSType.body(size: 15, color: BSColors.neutral600),
+                  )
+                else ...[
+                  _LigneFiltre(
+                    titre: 'Dans quoi',
+                    vide: _categories.isEmpty && _themes.isEmpty,
+                    quandVide: 'toute la banque',
+                    options: [
+                      for (final f in banque.banque.categories)
+                        _Option(
+                          label: '${f.emoji} ${f.nom}'.trim(),
+                          coche: _categories.contains(f.nom),
+                          onTap: () => setState(() => _categories.contains(f.nom)
+                              ? _categories.remove(f.nom)
+                              : _categories.add(f.nom)),
                         ),
-                        PetitBouton(
-                            '+',
-                            _nombre < 99
-                                ? () => setState(() => _nombre += 1)
-                                : null),
-                        const SizedBox(width: BSSpace.s2),
-                        Text('questions',
-                            style: BSType.body(
-                                size: 15, color: BSColors.neutral600)),
-                      ],
-                    ),
-                  ],
-                ),
-                const SizedBox(height: BSSpace.s3),
-                // POUR QUI, puis À QUELLE DIFFICULTÉ. La tranche d'abord :
-                // c'est ce qu'on décide en regardant la pièce, et le niveau
-                // se lit à l'intérieur d'elle.
-                _LigneFiltre(
-                  titre: 'Pour qui',
-                  vide: _tranches.isEmpty,
-                  quandVide: 'tout le monde',
-                  options: [
-                    for (final t in Tranche.values)
-                      _Option(
-                        label: kNomsTranches[t]!,
-                        coche: _tranches.contains(t),
-                        onTap: () => setState(() =>
-                            _tranches.contains(t) ? _tranches.remove(t) : _tranches.add(t)),
-                      ),
-                  ],
-                ),
-                const SizedBox(height: BSSpace.s2),
-                _LigneFiltre(
-                  titre: 'Difficulté',
-                  vide: _niveaux.isEmpty,
-                  quandVide: 'tous les niveaux',
-                  options: [
-                    for (final n in kNomsNiveaux.keys)
-                      _Option(
-                        label: kNomsNiveaux[n]!,
-                        coche: _niveaux.contains(n),
-                        onTap: () => setState(() =>
-                            _niveaux.contains(n) ? _niveaux.remove(n) : _niveaux.add(n)),
-                      ),
-                  ],
-                ),
-                const SizedBox(height: BSSpace.s3),
-                // EN DERNIER : le bouton vient après ce qu'il consomme.
-                OutlinedButton(
-                  onPressed: _enCours ? null : _composer,
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: BSColors.accent700,
-                    side: const BorderSide(color: BSColors.accent300),
-                    shape: const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.zero),
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+                      // Les thématiques après les catégories, et distinguées :
+                      // elles TRAVERSENT les catégories, cocher « Spécial
+                      // Noël » n'est pas du même ordre que cocher « Musique ».
+                      for (final f in banque.banque.themes)
+                        _Option(
+                          label: '${f.emoji} ${f.nom}'.trim(),
+                          coche: _themes.contains(f.nom),
+                          traversant: true,
+                          onTap: () => setState(() => _themes.contains(f.nom)
+                              ? _themes.remove(f.nom)
+                              : _themes.add(f.nom)),
+                        ),
+                    ],
                   ),
-                  child: Text(_enCours
-                      ? 'Tirage en cours...'
-                      : _choisi
-                          ? 'Tirer une autre manche'
-                          : 'Composer la manche'),
-                ),
-                if (_erreur != null) ...[
                   const SizedBox(height: BSSpace.s2),
-                  Text(_erreur!,
-                      style: BSType.body(size: 14, color: BSColors.accent2_800)),
+                  _LigneFiltre(
+                    titre: 'Pour qui',
+                    vide: _tranches.isEmpty,
+                    quandVide: 'tout le monde',
+                    options: [
+                      for (final t in Tranche.values)
+                        _Option(
+                          label: kNomsTranches[t]!,
+                          coche: _tranches.contains(t),
+                          onTap: () => setState(() => _tranches.contains(t)
+                              ? _tranches.remove(t)
+                              : _tranches.add(t)),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: BSSpace.s2),
+                  _LigneFiltre(
+                    titre: 'Difficulté',
+                    vide: _niveaux.isEmpty,
+                    quandVide: 'tous les niveaux',
+                    options: [
+                      for (final n in kNomsNiveaux.keys)
+                        _Option(
+                          label: kNomsNiveaux[n]!,
+                          coche: _niveaux.contains(n),
+                          onTap: () => setState(() => _niveaux.contains(n)
+                              ? _niveaux.remove(n)
+                              : _niveaux.add(n)),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: BSSpace.s3),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      SizedBox(
+                        width: 84,
+                        child: Text('Combien',
+                            style: BSType.body(
+                                size: 14, color: BSColors.neutral600)),
+                      ),
+                      PetitBouton('−',
+                          _nombre > 1 ? () => setState(() => _nombre -= 1) : null),
+                      SizedBox(
+                        width: 52,
+                        child: Text(
+                          '$_nombre',
+                          textAlign: TextAlign.center,
+                          style: BSType.body(size: 20, color: BSColors.text)
+                              .copyWith(fontWeight: FontWeight.w600),
+                        ),
+                      ),
+                      PetitBouton('+',
+                          _nombre < 99 ? () => setState(() => _nombre += 1) : null),
+                      const SizedBox(width: BSSpace.s3),
+                      // LE COMPTE, à côté du nombre demandé : c'est là qu'on
+                      // voit qu'on en demande vingt pour huit disponibles.
+                      Text(
+                        dispo >= _nombre
+                            ? '$dispo questions répondent aux critères'
+                            : 'Seulement $dispo question${dispo > 1 ? 's' : ''} '
+                                'répond${dispo > 1 ? 'ent' : ''} aux critères',
+                        style: BSType.body(
+                            size: 14,
+                            color: dispo >= _nombre
+                                ? BSColors.neutral600
+                                : BSColors.accent2_800),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: BSSpace.s3),
+                  // EN DERNIER : le bouton vient après ce qu'il consomme.
+                  OutlinedButton(
+                    onPressed: dispo == 0 ? null : _composer,
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: BSColors.accent700,
+                      side: const BorderSide(color: BSColors.accent300),
+                      shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.zero),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 18, vertical: 12),
+                    ),
+                    child: Text(_choisi
+                        ? 'Tirer une autre manche'
+                        : 'Composer la manche'),
+                  ),
+                  if (_erreur != null) ...[
+                    const SizedBox(height: BSSpace.s2),
+                    Text(_erreur!,
+                        style:
+                            BSType.body(size: 14, color: BSColors.accent2_800)),
+                  ],
                 ],
               ],
             ),
@@ -255,13 +277,21 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
 
 // UNE LIGNE DE FILTRE : un titre, des pastilles, et ce que veut dire « rien
 // de coché ». Cette dernière mention est le cœur du contrôle : sans elle,
-// l'animateur qui voit quatre cases vides croit devoir en cocher une, alors
-// que ne rien cocher est l'état normal et le plus large.
+// l'animateur qui voit des cases vides croit devoir en cocher une, alors que
+// ne rien cocher est l'état normal et le plus large.
 class _Option {
-  const _Option({required this.label, required this.coche, required this.onTap});
+  const _Option({
+    required this.label,
+    required this.coche,
+    required this.onTap,
+    this.traversant = false,
+  });
   final String label;
   final bool coche;
   final VoidCallback onTap;
+  // Une thématique, qui traverse les catégories. Dessinée autrement pour
+  // qu'on ne la prenne pas pour une douzième catégorie.
+  final bool traversant;
 }
 
 class _LigneFiltre extends StatelessWidget {
@@ -279,24 +309,34 @@ class _LigneFiltre extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Wrap(
-      spacing: BSSpace.s2,
-      runSpacing: BSSpace.s2,
-      crossAxisAlignment: WrapCrossAlignment.center,
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(
-          width: 84,
-          child: Text(titre,
-              style: BSType.body(size: 14, color: BSColors.neutral600)),
-        ),
-        for (final o in options) _Pastille(o),
-        if (vide)
-          Padding(
-            padding: const EdgeInsets.only(left: BSSpace.s2),
-            child: Text(quandVide,
-                style: BSType.body(size: 13, color: BSColors.neutral500)
-                    .copyWith(fontStyle: FontStyle.italic)),
+        Padding(
+          padding: const EdgeInsets.only(top: 7),
+          child: SizedBox(
+            width: 84,
+            child: Text(titre,
+                style: BSType.body(size: 14, color: BSColors.neutral600)),
           ),
+        ),
+        Expanded(
+          child: Wrap(
+            spacing: BSSpace.s2,
+            runSpacing: BSSpace.s2,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            children: [
+              for (final o in options) _Pastille(o),
+              if (vide)
+                Padding(
+                  padding: const EdgeInsets.only(left: BSSpace.s2, top: 7),
+                  child: Text(quandVide,
+                      style: BSType.body(size: 13, color: BSColors.neutral500)
+                          .copyWith(fontStyle: FontStyle.italic)),
+                ),
+            ],
+          ),
+        ),
       ],
     );
   }
@@ -310,14 +350,15 @@ class _Pastille extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final teinte = o.traversant ? BSColors.accent2 : BSColors.accent;
     return InkWell(
       onTap: o.onTap,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
         decoration: BoxDecoration(
-          color: o.coche ? BSColors.accent : Colors.transparent,
+          color: o.coche ? teinte : Colors.transparent,
           border: Border.all(
-            color: o.coche ? BSColors.accent : BSColors.divider,
+            color: o.coche ? teinte : BSColors.divider,
             width: o.coche ? 2 : 1,
           ),
         ),
@@ -326,59 +367,6 @@ class _Pastille extends StatelessWidget {
           style: BSType.body(
                   size: 14, color: o.coche ? BSColors.bg : BSColors.text)
               .copyWith(fontWeight: o.coche ? FontWeight.w600 : FontWeight.w400),
-        ),
-      ),
-    );
-  }
-}
-
-// Le périmètre : un élément parmi vingt, donc un menu. Dessiné à la main
-// plutôt qu'avec un DropdownButton de Material, dont les coins arrondis et
-// l'ombre jureraient avec le reste.
-class _MenuPerimetre extends StatelessWidget {
-  const _MenuPerimetre({
-    required this.valeur,
-    required this.collections,
-    required this.onChange,
-  });
-
-  final String? valeur;
-  final List<CatalogueCollection> collections;
-  final ValueChanged<String?> onChange;
-
-  @override
-  Widget build(BuildContext context) {
-    return PopupMenuButton<String?>(
-      tooltip: 'Choisir où piocher',
-      position: PopupMenuPosition.under,
-      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-      color: BSColors.bg,
-      onSelected: onChange,
-      itemBuilder: (context) => [
-        const PopupMenuItem<String?>(
-          value: null,
-          child: Text('Toutes les questions'),
-        ),
-        for (final c in collections)
-          PopupMenuItem<String?>(
-            value: c.name,
-            child: Text('${c.emoji} ${c.name}'.trim()),
-          ),
-      ],
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 11),
-        decoration: BoxDecoration(border: Border.all(color: BSColors.divider)),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              valeur ?? 'Toutes les questions',
-              style: BSType.body(size: 15, color: BSColors.text)
-                  .copyWith(fontWeight: FontWeight.w600),
-            ),
-            const SizedBox(width: BSSpace.s2),
-            const Icon(Icons.expand_more, size: 18, color: BSColors.neutral600),
-          ],
         ),
       ),
     );

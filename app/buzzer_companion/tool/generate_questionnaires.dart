@@ -166,8 +166,6 @@ const _assetBanque = 'assets/questions/banque.json';
 // vide, ce qui donnerait un ecran sans questions sans dire pourquoi.
 const kFormatBanque = 'buzzer-banque';
 
-// Chaque questionnaire écrit, gardé pour la banque embarquée.
-final _banque = <String, Map<String, dynamic>>{};
 
 // La page d'accueil renvoie vers la version publiee sur GitHub. Le binaire
 // n'entre PAS dans le depot : 18 Mo par version, dans un depot qui en fait 11
@@ -534,7 +532,6 @@ void _writeCatalogue() {
   stdout.writeln('catalogue.json : ${_catalogue.length} questionnaires, '
       '${collections.length} collections, $questions questions.');
 
-  _writeBanque(json);
 }
 
 // LA BANQUE : chaque question UNE FOIS, avec de quoi la retrouver.
@@ -608,43 +605,18 @@ void _writeBanqueQuestions(List<Entry> all) {
   // partiraient dans chaque installation comme dans chaque téléchargement.
   final json = '${jsonEncode(contenu)}\n';
   File('$_outputDir/banque.json').writeAsStringSync(json);
+  // La même matière dans les assets : une installation neuve dans une salle
+  // sans wifi doit avoir de quoi jouer.
+  final asset = File(_assetBanque);
+  asset.parent.createSync(recursive: true);
+  asset.writeAsStringSync(json);
 
   final ko = (utf8.encode(json).length / 1024).round();
   stdout.writeln('banque.json : ${all.length} questions, '
       '${comptesCategories.length} catégories, ${comptesThemes.length} '
-      'thématiques, $ko ko.');
+      'thématiques, $ko ko. Copiée dans $_assetBanque.');
 }
 
-// La copie embarquée dans le build : le catalogue et tous les questionnaires
-// dans un seul fichier.
-//
-// PAS D'HORODATAGE DEDANS, volontairement. Une date de génération ferait
-// bouger le fichier à chaque passage même sans changement, et 1,6 Mo qui
-// change pour rien à chaque commit noierait les vraies modifications.
-//
-// L'application n'a donc pas de quoi comparer les fraîcheurs, et sa règle est
-// simple : le cache disque prime s'il existe, l'asset est le plancher. Le
-// cache vient du réseau, donc du même générateur, et il est presque toujours
-// au moins aussi récent. Le seul cas où l'asset serait plus frais — une mise
-// à jour de l'app par-dessus un cache qui date — se répare tout seul à la
-// première connexion, et une soirée jouée avec des questions d'il y a un mois
-// ne dérange personne.
-void _writeBanque(String catalogueJson) {
-  final fichier = File(_assetBanque);
-  fichier.parent.createSync(recursive: true);
-  // Sans indentation : personne ne relit ce fichier, et les 400 ko d'espaces
-  // qu'elle coûterait partiraient dans chaque installation.
-  final json = jsonEncode({
-    'format': 'buzzer-banque',
-    'version': 1,
-    'catalogue': jsonDecode(catalogueJson),
-    'questionnaires': _banque,
-  });
-  fichier.writeAsStringSync('$json\n');
-  final ko = (utf8.encode(json).length / 1024).round();
-  stdout.writeln('$_assetBanque : ${_banque.length} questionnaires embarqués, '
-      '$ko ko.');
-}
 
 // Cloudflare Pages sert ses fichiers avec « max-age=0, must-revalidate »,
 // donc rien n'est garde au bord du reseau : chaque requete traverse jusqu'a
@@ -2102,7 +2074,6 @@ void _write(String titre, List<Entry> entries,
 
   final octets = utf8.encode(contenu);
   File('$_outputDir/q/$id.json').writeAsStringSync(contenu);
-  _banque[id] = corps;
 
   // Combien de questions de chaque niveau. C'est ce qui permet à l'app
   // d'annoncer la difficulté d'un questionnaire sur sa fiche, avant même de

@@ -742,12 +742,14 @@ class _FinDePartie extends StatelessWidget {
   // questionnaire : celui-ci est termine, et rejouer une de ses questions
   // serait absurde puisque toute la salle l'a deja entendue.
   //
-  // Le perimetre suit la manche : la collection du questionnaire choisi, ou
-  // tout le catalogue pour un questionnaire personnalise, qui n'appartient a
-  // aucune collection (voir ActiveQuestionnaire.collectionDuBris).
+  // Le perimetre suit la manche : les categories et thematiques de ce qui se
+  // joue, ou toute la banque pour un questionnaire personnalise, qui n'en
+  // designe aucune (voir ActiveQuestionnaire.perimetreDuBris).
   Future<void> _departager() async {
-    final question =
-        await tirage.questionDeBris(collection: actif.collectionDuBris);
+    // Le meme ensemble des deux cotes : un nom de categorie ne correspond a
+    // aucune thematique et l'inverse, et le filtre les cumule en OU.
+    final question = tirage.questionDeBris(
+        categories: actif.perimetreDuBris, themes: actif.perimetreDuBris);
     if (question != null) actif.poserQuestionDeBris(question);
     // Faute de tirage possible (hors ligne, rien de synchronise), le moteur
     // prend la question suivante du questionnaire : mieux vaut departager

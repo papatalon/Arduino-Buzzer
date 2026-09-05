@@ -2,167 +2,197 @@ import 'dart:math';
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:buzzer_companion/questionnaires/catalogue.dart';
+import 'package:buzzer_companion/questionnaires/banque.dart';
 import 'package:buzzer_companion/questionnaires/questionnaire.dart';
 import 'package:buzzer_companion/questionnaires/tirage_questions.dart';
 
-// LE TIRAGE D'UNE MANCHE AU HASARD.
+// LA MANCHE COMPOSÉE SUR PLACE.
 //
 // Ce qui doit être juste ici ne se voit pas à l'écran : une question posée
 // deux fois dans la soirée, c'est un blanc gêné et un point donné pour rien,
-// et l'animateur ne le découvre qu'en la relisant à voix haute.
-//
-// Le catalogue est simulé : ces tests portent sur les règles du tirage, pas
-// sur le réseau.
+// et l'animateur ne le découvre qu'en la relisant à voix haute. Un filtre qui
+// écarte trop est pire encore, parce que rien ne le signale.
 
-class _CatalogueSimule extends CatalogueStore {
-  _CatalogueSimule(this._contenus) {
-    catalogue = Catalogue(
-      entries: [
-        for (final e in _contenus.entries)
-          CatalogueEntry(
-            id: e.key,
-            title: e.key,
-            note: '',
-            collection: e.key.split('-').first,
-            emoji: '',
-            questionCount: e.value.length,
-            bytes: 0,
-            fingerprint: e.key,
-          ),
-      ],
-      collections: const [],
-    );
-  }
-
-  final Map<String, List<String>> _contenus;
-
-  /// Combien de fichiers ont réellement été lus : c'est tout l'enjeu du
-  /// tirage par questionnaires plutôt que par chargement complet.
-  int lectures = 0;
-
-  /// Ce que l'appelant a demandé de garder en cache. Le tirage doit le
-  /// demander, sinon une soirée jouée en ligne ne laisse rien pour la
-  /// suivante et on rejoue les questions du build.
-  final List<bool> gardes = [];
-
-  @override
-  Future<Questionnaire?> load(CatalogueEntry entry, {bool garder = false}) async {
-    lectures++;
-    gardes.add(garder);
-    final enonces = _contenus[entry.id];
-    if (enonces == null) return null;
-    return Questionnaire(
-      title: entry.title,
-      collection: entry.collection,
-      questions: [
-        for (final e in enonces) QuizQuestion(question: e, answer: 'R'),
-      ],
-    );
-  }
+// Un magasin qu'on remplit à la main : ces tests portent sur les règles du
+// tirage, pas sur la lecture du fichier.
+BanqueStore magasin(List<QuizQuestion> questions,
+    {List<Facette> categories = const [], List<Facette> themes = const []}) {
+  final store = BanqueStore();
+  store.banque = Banque(
+    questions: questions,
+    categories: categories,
+    themes: themes,
+  );
+  return store;
 }
 
 void main() {
-  // Trois collections, et des doublons VOLONTAIRES entre elles : les
-  // mélanges du vrai catalogue reprennent les questions des collections
-  // thématiques, c'est exactement le cas à ne pas rater.
-  _CatalogueSimule creerCatalogue() => _CatalogueSimule({
-        'histoire-1': ['H1', 'H2', 'H3', 'H4', 'H5'],
-        'histoire-2': ['H6', 'H7', 'H8', 'H9', 'H10'],
-        'melanges-1': ['H1', 'G1', 'G2', 'H6', 'M1'],
-        'geo-1': ['G1', 'G2', 'G3', 'G4', 'G5'],
-      });
+  // Un petit fonds représentatif : deux catégories, une thématique qui les
+  // traverse, les deux axes de classement, et une question qui ne se
+  // prononce sur rien.
+  BanqueStore fonds() => magasin(
+        [
+          QuizQuestion(
+              category: 'Histoire',
+              question: 'H1',
+              niveau: 1,
+              ages: {Tranche.enfants}),
+          QuizQuestion(
+              category: 'Histoire',
+              question: 'H2',
+              niveau: 3,
+              ages: {Tranche.adultes, Tranche.aines}),
+          QuizQuestion(
+              category: 'Musique',
+              question: 'M1',
+              niveau: 2,
+              ages: {Tranche.enfants, Tranche.ados}),
+          QuizQuestion(
+              category: 'Musique',
+              question: 'M2',
+              niveau: 1,
+              ages: {Tranche.aines},
+              themes: {'Spécial Noël'}),
+          QuizQuestion(
+              category: 'Histoire',
+              question: 'H3',
+              niveau: 2,
+              ages: {Tranche.ados},
+              themes: {'Spécial Noël'}),
+          // Ni niveau ni tranche : une question écrite à la main, qui ne
+          // s'est pas prononcée. Aucun filtre ne doit l'écarter.
+          QuizQuestion(category: 'Histoire', question: 'X1'),
+        ],
+        categories: const [
+          Facette(nom: 'Histoire', emoji: '📜', questions: 4),
+          Facette(nom: 'Musique', emoji: '🎵', questions: 2),
+        ],
+        themes: const [Facette(nom: 'Spécial Noël', emoji: '🎄', questions: 2)],
+      );
 
-  test('compose le nombre demandé', () async {
-    final cat = creerCatalogue();
-    final tirage = TirageQuestions(catalogue: cat, hasard: Random(1));
-    final q = await tirage.composer(nombre: 8);
-    expect(q, isNotNull);
-    expect(q!.questions.length, 8);
+  test('compose le nombre demandé', () {
+    final t = TirageQuestions(banque: fonds(), hasard: Random(1));
+    expect(t.composer(nombre: 4)!.questions.length, 4);
   });
 
-  test('jamais deux fois la même question dans une manche', () async {
-    final cat = creerCatalogue();
-    final tirage = TirageQuestions(catalogue: cat, hasard: Random(3));
-    // Vingt demandées pour seize distinctes : le tirage DOIT traverser les
-    // doublons entre « mélanges » et les collections thématiques.
-    final q = await tirage.composer(nombre: 20);
-    expect(q, isNotNull);
-
-    final cles = q!.questions.map(TirageQuestions.cle).toList();
+  test('jamais deux fois la même question dans une manche', () {
+    final t = TirageQuestions(banque: fonds(), hasard: Random(3));
+    final q = t.composer(nombre: 6)!;
+    final cles = q.questions.map(TirageQuestions.cle).toList();
     expect(cles.toSet().length, cles.length, reason: 'doublon dans la manche');
-    // Seize enonces distincts existent : on ne peut pas en avoir plus.
-    expect(q.questions.length, 16);
   });
 
-  test('deux manches de suite ne se recoupent pas', () async {
-    final cat = creerCatalogue();
-    final tirage = TirageQuestions(catalogue: cat, hasard: Random(5));
-    final a = await tirage.composer(nombre: 6);
-    final b = await tirage.composer(nombre: 6);
-
-    final clesA = a!.questions.map(TirageQuestions.cle).toSet();
-    final clesB = b!.questions.map(TirageQuestions.cle).toSet();
+  test('deux manches de suite ne se recoupent pas', () {
+    final t = TirageQuestions(banque: fonds(), hasard: Random(5));
+    final a = t.composer(nombre: 3)!;
+    final b = t.composer(nombre: 3)!;
+    final clesA = a.questions.map(TirageQuestions.cle).toSet();
+    final clesB = b.questions.map(TirageQuestions.cle).toSet();
     expect(clesA.intersection(clesB), isEmpty);
   });
 
-  test('le périmètre limite bien le tirage', () async {
-    final cat = creerCatalogue();
-    final tirage = TirageQuestions(catalogue: cat, hasard: Random(7));
-    final q = await tirage.composer(collection: 'geo', nombre: 5);
-    expect(q, isNotNull);
-    for (final question in q!.questions) {
-      expect(question.question, startsWith('G'));
+  test('une manche plus courte plutôt qu\'une erreur, et la note le dit', () {
+    final t = TirageQuestions(banque: fonds(), hasard: Random(9));
+    final q = t.composer(categories: {'Musique'}, nombre: 50)!;
+    expect(q.questions.length, 2);
+    expect(q.note, contains('2'));
+  });
+
+  test('la catégorie limite le tirage', () {
+    final t = TirageQuestions(banque: fonds(), hasard: Random(7));
+    final q = t.composer(categories: {'Musique'}, nombre: 5)!;
+    for (final question in q.questions) {
+      expect(question.question, startsWith('M'));
     }
   });
 
-  test('un périmètre trop petit donne une manche plus courte, pas une erreur',
-      () async {
-    final cat = creerCatalogue();
-    final tirage = TirageQuestions(catalogue: cat, hasard: Random(9));
-    final q = await tirage.composer(collection: 'geo', nombre: 50);
-    expect(q, isNotNull);
-    expect(q!.questions.length, 5);
-    // La note le dit, plutot que de laisser l'animateur compter.
-    expect(q.note, contains('5'));
+  test('une thématique traverse les catégories', () {
+    final t = TirageQuestions(banque: fonds(), hasard: Random(11));
+    final q = t.composer(themes: {'Spécial Noël'}, nombre: 5)!;
+    final enonces = q.questions.map((e) => e.question).toSet();
+    // C'est tout l'intérêt d'une thématique : M2 vient de Musique et H3 de
+    // Histoire. Aucune catégorie ne sait rassembler les deux.
+    expect(enonces, {'M2', 'H3'});
   });
 
-  test('ON NE LIT PAS TOUT LE CATALOGUE pour quelques questions', () async {
-    final cat = creerCatalogue();
-    final tirage = TirageQuestions(catalogue: cat, hasard: Random(11));
-    await tirage.composer(nombre: 3);
-    // Trois questions tiennent dans un seul fichier : en lire quatre serait
-    // trois requetes de trop dans une salle sans wifi.
-    expect(cat.lectures, 1);
+  test('catégories et thématiques se cumulent en OU, pas en ET', () {
+    final t = TirageQuestions(banque: fonds(), hasard: Random(13));
+    final q = t.composer(
+        categories: {'Musique'}, themes: {'Spécial Noël'}, nombre: 9)!;
+    final enonces = q.questions.map((e) => e.question).toSet();
+    // L'intersection serait le seul M2. L'union ramène aussi M1 et H3.
+    expect(enonces, containsAll(['M1', 'M2', 'H3']));
   });
 
-  test('ce qui sert à jouer est gardé pour la prochaine fois', () async {
-    final cat = creerCatalogue();
-    final tirage = TirageQuestions(catalogue: cat, hasard: Random(23));
-    await tirage.composer(nombre: 8);
-    // Sans ce drapeau, une soirée jouée avec du réseau ne laisse rien : au
-    // redémarrage sans wifi, on retombe sur les questions du build.
-    expect(cat.gardes, isNotEmpty);
-    expect(cat.gardes.every((g) => g), isTrue);
+  test('le filtre de niveau ne garde que les niveaux cochés', () {
+    final t = TirageQuestions(banque: fonds(), hasard: Random(5));
+    final enonces =
+        t.composer(nombre: 9, niveaux: {1})!.questions.map((e) => e.question).toSet();
+    expect(enonces, containsAll(['H1', 'M2']));
+    expect(enonces, isNot(contains('H2')));
   });
 
-  test('un périmètre inconnu ne fait pas planter', () async {
-    final cat = creerCatalogue();
-    final tirage = TirageQuestions(catalogue: cat, hasard: Random(13));
-    final q = await tirage.composer(collection: 'inexistante', nombre: 5);
-    expect(q, isNull);
-    expect(tirage.derniereErreur, isNotNull);
+  test('une question vaut pour chacune de ses tranches', () {
+    final t = TirageQuestions(banque: fonds(), hasard: Random(7));
+    final enonces = t
+        .composer(nombre: 9, tranches: {Tranche.ados})!
+        .questions
+        .map((e) => e.question)
+        .toSet();
+    // M1 vise enfants ET ados : demander les ados doit la ramener.
+    expect(enonces, containsAll(['M1', 'H3']));
+    expect(enonces, isNot(contains('H1')));
   });
 
-  test('la question de bris évite celles déjà posées', () async {
-    final cat = creerCatalogue();
-    final tirage = TirageQuestions(catalogue: cat, hasard: Random(17));
-    final manche = await tirage.composer(nombre: 14);
-    final posees = manche!.questions.map(TirageQuestions.cle).toSet();
+  test('une question qui ne se prononce pas passe tous les filtres', () {
+    final t = TirageQuestions(banque: fonds(), hasard: Random(11));
+    final q = t.composer(nombre: 9, niveaux: {3}, tranches: {Tranche.enfants})!;
+    // Le filtre est contradictoire pour les questions cotées, mais X1 n'a
+    // rien déclaré : la punir de son silence n'aurait pas de sens.
+    expect(q.questions.map((e) => e.question), contains('X1'));
+  });
 
-    final bris = await tirage.questionDeBris();
+  test('le compte annonce ce que le tirage trouvera', () {
+    final t = TirageQuestions(banque: fonds(), hasard: Random(17));
+    // Ce compte s'affiche pendant qu'on coche : s'il mentait, l'animateur
+    // découvrirait sa manche tronquée une fois la partie lancée.
+    final attendu = t.compter(categories: {'Histoire'}, niveaux: {2});
+    final obtenu =
+        t.composer(categories: {'Histoire'}, niveaux: {2}, nombre: 99)!;
+    expect(obtenu.questions.length, attendu);
+  });
+
+  test('un filtre sans réponse le dit, au lieu de rendre une manche vide', () {
+    final t = TirageQuestions(
+        banque: magasin([
+          QuizQuestion(
+              category: 'Histoire', question: 'H2', niveau: 3, ages: {Tranche.aines}),
+        ]),
+        hasard: Random(19));
+    expect(t.composer(nombre: 5, niveaux: {1}), isNull);
+    expect(t.derniereErreur, contains('critères'));
+  });
+
+  test('une banque vide le dit aussi, et autrement', () {
+    final t = TirageQuestions(banque: magasin(const []), hasard: Random(23));
+    expect(t.composer(nombre: 5), isNull);
+    expect(t.derniereErreur, contains('vide'));
+  });
+
+  test('la question de bris évite celles déjà posées', () {
+    final t = TirageQuestions(banque: fonds(), hasard: Random(17));
+    final manche = t.composer(nombre: 4)!;
+    final posees = manche.questions.map(TirageQuestions.cle).toSet();
+    final bris = t.questionDeBris();
     expect(bris, isNotNull);
     expect(posees.contains(TirageQuestions.cle(bris!)), isFalse);
+  });
+
+  test('le titre dit le périmètre, parce que la salle le lit', () {
+    final t = TirageQuestions(banque: fonds(), hasard: Random(29));
+    expect(t.composer(nombre: 2)!.title, 'Questions au hasard');
+    expect(t.composer(categories: {'Musique'}, nombre: 1)!.title,
+        contains('Musique'));
   });
 
   test('la clé ignore la casse, les espaces et la ponctuation finale', () {
@@ -171,102 +201,4 @@ void main() {
       TirageQuestions.cle(QuizQuestion(question: '  qui a  fondé québec')),
     );
   });
-
-  // LES DEUX FILTRES DE LA COMPOSITION À LA DEMANDE.
-  //
-  // Le classement des questions par niveau et par tranche d'âge n'a de valeur
-  // que s'il sert au moment de jouer. Ce qui se joue ici : un filtre qui
-  // écarte trop est pire qu'un filtre absent, parce que l'animateur ne voit
-  // pas ce qui manque.
-  _CatalogueCote creerCote() => _CatalogueCote([
-        QuizQuestion(question: 'E1', niveau: 1, ages: {Tranche.enfants}),
-        QuizQuestion(question: 'E2', niveau: 2, ages: {Tranche.enfants, Tranche.ados}),
-        QuizQuestion(question: 'A1', niveau: 3, ages: {Tranche.adultes, Tranche.aines}),
-        QuizQuestion(question: 'A2', niveau: 1, ages: {Tranche.aines}),
-        // Ni niveau ni tranche : une question écrite à la main, qui ne s'est
-        // pas prononcée. Aucun filtre ne doit l'écarter.
-        QuizQuestion(question: 'X1'),
-      ]);
-
-  test('le filtre de niveau ne garde que les niveaux cochés', () async {
-    final tirage = TirageQuestions(catalogue: creerCote(), hasard: Random(5));
-    final q = await tirage.composer(nombre: 10, niveaux: {1});
-    expect(q, isNotNull);
-    final enonces = q!.questions.map((e) => e.question).toSet();
-    expect(enonces, containsAll(['E1', 'A2']));
-    expect(enonces, isNot(contains('E2')));
-    expect(enonces, isNot(contains('A1')));
-  });
-
-  test('une question vaut pour chacune de ses tranches, pas seulement la première',
-      () async {
-    final tirage = TirageQuestions(catalogue: creerCote(), hasard: Random(7));
-    final q = await tirage.composer(nombre: 10, tranches: {Tranche.ados});
-    // E2 vise enfants ET ados : demander les ados doit la ramener.
-    expect(q!.questions.map((e) => e.question), contains('E2'));
-    expect(q.questions.map((e) => e.question), isNot(contains('A1')));
-  });
-
-  test('une question qui ne se prononce pas passe tous les filtres', () async {
-    final tirage = TirageQuestions(catalogue: creerCote(), hasard: Random(11));
-    final q = await tirage.composer(
-        nombre: 10, niveaux: {3}, tranches: {Tranche.enfants});
-    // Le filtre est contradictoire pour les questions cotées, mais X1 n'a
-    // rien déclaré : la punir de son silence n'aurait pas de sens.
-    expect(q!.questions.map((e) => e.question), contains('X1'));
-  });
-
-  test('les deux filtres se combinent', () async {
-    final tirage = TirageQuestions(catalogue: creerCote(), hasard: Random(13));
-    final q = await tirage.composer(
-        nombre: 10, niveaux: {1}, tranches: {Tranche.aines});
-    final enonces = q!.questions.map((e) => e.question).toSet();
-    expect(enonces, contains('A2')); // niveau 1 ET aînés
-    expect(enonces, isNot(contains('E1'))); // niveau 1, mais enfants
-    expect(enonces, isNot(contains('A1'))); // aînés, mais niveau 3
-  });
-
-  test('un filtre sans réponse le dit, au lieu de rendre une manche vide',
-      () async {
-    final tirage = TirageQuestions(
-        catalogue: _CatalogueCote([
-          QuizQuestion(question: 'A1', niveau: 3, ages: {Tranche.aines}),
-        ]),
-        hasard: Random(19));
-    final q = await tirage.composer(nombre: 5, niveaux: {1});
-    expect(q, isNull);
-    expect(tirage.derniereErreur, contains('critères'));
-  });
-}
-
-// Un catalogue d'un seul fichier, dont les questions portent leur niveau et
-// leurs tranches : ce que le vrai catalogue publie depuis que les deux axes
-// sont dans le JSON.
-class _CatalogueCote extends CatalogueStore {
-  _CatalogueCote(this._questions) {
-    catalogue = Catalogue(
-      entries: const [
-        CatalogueEntry(
-          id: 'cote-1',
-          title: 'cote-1',
-          note: '',
-          collection: 'cote',
-          emoji: '',
-          questionCount: 5,
-          bytes: 0,
-          fingerprint: 'cote-1',
-        ),
-      ],
-      collections: const [],
-    );
-  }
-
-  final List<QuizQuestion> _questions;
-
-  @override
-  Future<Questionnaire?> load(CatalogueEntry entry, {bool garder = false}) async => Questionnaire(
-        title: entry.title,
-        collection: entry.collection,
-        questions: [for (final q in _questions) q.copy()],
-      );
 }

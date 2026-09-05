@@ -89,6 +89,7 @@ class QuizQuestion {
     this.answer = '',
     this.niveau,
     this.ages = const {},
+    this.themes = const {},
   });
 
   String category;
@@ -100,6 +101,10 @@ class QuizQuestion {
   // Voir [Tranche]. Vide quand la question ne se prononce pas : elle vaut
   // alors pour tout le monde et aucun filtre ne l'écarte.
   Set<Tranche> ages;
+  // Les découpes qui traversent les catégories : « Spécial Noël », « Le corps
+  // humain ». Calculées par le générateur, portées par la question plutôt que
+  // par un fichier depuis que les questionnaires prédécoupés ont disparu.
+  Set<String> themes;
 
   // Une question sans énoncé n'est pas jouable ; la réponse peut rester vide
   // (l'animateur la connaît, ou la juge lui-même).
@@ -110,7 +115,8 @@ class QuizQuestion {
       question: question,
       answer: answer,
       niveau: niveau,
-      ages: {...ages});
+      ages: {...ages},
+      themes: {...themes});
 
   Map<String, dynamic> toJson() => {
         'categorie': category,
@@ -118,6 +124,7 @@ class QuizQuestion {
         'reponse': answer,
         if (niveau != null) 'niveau': niveau,
         if (ages.isNotEmpty) 'ages': [for (final t in Tranche.values) if (ages.contains(t)) cleTranche(t)],
+        if (themes.isNotEmpty) 'themes': themes.toList(),
       };
 
   // Tolérant à dessein : un fichier écrit à la main peut omettre la
@@ -128,6 +135,10 @@ class QuizQuestion {
         answer: (json['reponse'] as String?)?.trim() ?? '',
         niveau: niveauDepuisJson(json['niveau']),
         ages: tranchesDepuisJson(json['ages']),
+        themes: {
+          if (json['themes'] case final List brut)
+            for (final e in brut) '$e'.trim(),
+        },
       );
 }
 

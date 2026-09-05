@@ -99,12 +99,12 @@ class ActiveQuestionnaire extends ChangeNotifier {
 
   /// LE PERIMETRE OU PIOCHER UNE QUESTION DE BRIS.
   ///
-  /// La collection du questionnaire choisi, pour rester dans le meme esprit :
-  /// departager une manche d'histoire avec une question de cinema serait
-  /// injuste. Null veut dire « toutes les questions », ce qui est le cas d'un
-  /// questionnaire personnalise, dont la collection ne designe aucun
-  /// perimetre du catalogue.
-  String? collectionDuBris;
+  /// Les categories et thematiques de la manche en cours, pour rester dans le
+  /// meme esprit : departager une manche d'histoire avec une question de
+  /// cinema serait injuste. Vide veut dire « toutes les questions », ce qui
+  /// est le cas d'un questionnaire personnalise, qui ne designe aucun
+  /// perimetre de la banque.
+  Set<String> perimetreDuBris = const {};
 
   /// Vrai quand la manche en cours a ete TIREE AU HASARD plutot que choisie
   /// dans la bibliotheque. Sert a l'affichage : « Au hasard : Histoire » n'est
@@ -126,11 +126,11 @@ class ActiveQuestionnaire extends ChangeNotifier {
   void use(Questionnaire questionnaire, {required String origine}) {
     _questionDeBris = null;
     tireAuHasard = false;
-    // Un questionnaire personnalise n'appartient a aucune collection du
-    // catalogue : son bris se pioche alors dans tout.
+    // Un questionnaire personnalise ne designe aucun perimetre de la banque :
+    // son bris se pioche alors dans tout.
     final col = questionnaire.collection.trim();
-    collectionDuBris =
-        (col.isEmpty || col == 'Personnalisé') ? null : col;
+    perimetreDuBris =
+        (col.isEmpty || col == 'Personnalisé') ? const {} : {col};
     _questionnaire = questionnaire;
     _origine = origine;
     _index = 0;
