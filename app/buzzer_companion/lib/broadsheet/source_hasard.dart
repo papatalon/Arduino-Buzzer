@@ -177,7 +177,11 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
                   _LigneFiltre(
                     titre: 'Pour qui',
                     vide: _tranches.isEmpty,
-                    quandVide: 'tout le monde',
+                    // Ne rien cocher ne veut plus dire « peu importe ». La
+                    // manche réserve une place à chaque tranche, sans quoi
+                    // elle reprenait les proportions de la banque, où les
+                    // questions du monde des enfants sont rares.
+                    quandVide: 'tout le monde, chaque âge servi',
                     options: [
                       for (final t in Tranche.values)
                         _Option(
