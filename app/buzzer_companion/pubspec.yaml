@@ -80,6 +80,7 @@ flutter:
   # le compte réel est lu à l'exécution depuis AssetManifest, voir
   # lib/audio/sound_library.dart.
   assets:
+    - assets/questions/
     - assets/sounds/01_Intro/
     - assets/sounds/02_Buzzer/
     - assets/sounds/03_Good/

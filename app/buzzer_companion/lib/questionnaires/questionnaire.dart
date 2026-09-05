@@ -201,6 +201,12 @@ class Questionnaire {
     if (parsed is! Map<String, dynamic>) {
       throw const FormatException("Ce fichier ne contient pas un questionnaire.");
     }
+    return Questionnaire.fromMap(parsed);
+  }
+
+  // La banque embarquée porte 283 questionnaires DÉJÀ décodés dans un seul
+  // fichier : les ré-encoder un par un pour les redécoder serait absurde.
+  factory Questionnaire.fromMap(Map<String, dynamic> parsed) {
     if (parsed['format'] != kFormat) {
       throw const FormatException(
         "Ce fichier n'est pas un questionnaire de Buzzer.",

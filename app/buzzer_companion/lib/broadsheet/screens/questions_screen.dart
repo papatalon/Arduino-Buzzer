@@ -524,6 +524,16 @@ class _Library extends StatelessWidget {
           if (catalogue.loading)
             Text('Lecture du catalogue...',
                 style: BSType.body(size: 14, color: BSColors.neutral600))
+          // Trois provenances, pas deux. La copie livrée avec l'application a
+          // l'âge de l'installation, ce qui n'est pas la même chose qu'un
+          // cache vieux de trois jours : dire « hors ligne » pour les deux
+          // laisserait croire qu'un rafraîchissement récent a eu lieu.
+          else if (catalogue.depuisLeBuild)
+            Text(
+              'Hors ligne. Questions livrées avec l\'application, '
+              'à rafraîchir dès que le réseau revient',
+              style: BSType.body(size: 14, color: BSColors.accent2_800),
+            )
           else if (catalogue.horsLigne)
             Text(
               'Hors ligne. Copie du poste, lue ${_quand(catalogue.lastFetch)}',

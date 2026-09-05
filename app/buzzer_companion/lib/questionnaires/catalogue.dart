@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:crypto/crypto.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
@@ -123,6 +124,12 @@ class Catalogue {
     if (parsed is! Map<String, dynamic>) {
       throw const FormatException("Ce n'est pas un catalogue.");
     }
+    return Catalogue.fromMap(parsed);
+  }
+
+  // La copie embarquée porte le catalogue DÉJÀ décodé, à l'intérieur d'un
+  // fichier plus gros : le ré-encoder pour le redécoder serait absurde.
+  factory Catalogue.fromMap(Map<String, dynamic> parsed) {
     if (parsed['format'] != kCatalogueFormat) {
       throw const FormatException(
         "L'adresse ne renvoie pas un catalogue de questionnaires Buzzer.",
@@ -167,6 +174,13 @@ class CatalogueStore extends ChangeNotifier {
   // à l'opérateur, sinon il croit voir le catalogue à jour.
   bool horsLigne = false;
 
+  // Vrai quand ce qui est affiché vient de la copie livrée avec l'application
+  // et non du réseau ni du cache. Distinct de [horsLigne] : un cache disque
+  // date de la dernière lecture réussie, la copie embarquée date du build.
+  // L'opérateur doit pouvoir faire la différence entre « ma liste a trois
+  // jours » et « ma liste a l'âge de mon installation ».
+  bool depuisLeBuild = false;
+
   // Quand le catalogue affiché a été obtenu. Affiché en clair, parce que
   // « rien ne signale un problème » est une preuve trop faible : sans cette
   // heure, la seule façon de savoir que la liste vient bien du réseau était
@@ -204,7 +218,61 @@ class CatalogueStore extends ChangeNotifier {
     // Le disque d'abord : la bibliothèque s'affiche tout de suite, même sans
     // réseau, puis se met à jour quand la requête revient.
     await _readCachedCatalogue();
+    // Rien en cache : une installation neuve dans une salle sans wifi. La
+    // copie livrée avec l'application prend le relais, sinon l'écran serait
+    // vide et le tirage n'aurait rien où piocher.
+    if (catalogue.isEmpty) await _readCatalogueEmbarque();
     await refresh();
+  }
+
+  // --- La copie embarquée dans le build
+  //
+  // Un seul fichier d'assets porte le catalogue ET les 283 questionnaires.
+  // Il est lu PARESSEUSEMENT : 1,1 Mo de JSON à analyser au démarrage pour
+  // rien, alors que la plupart des lancements se font avec du réseau.
+  Map<String, dynamic>? _banque;
+  bool _banqueLue = false;
+
+  Future<Map<String, dynamic>?> _lireBanque() async {
+    if (_banqueLue) return _banque;
+    _banqueLue = true;
+    try {
+      final brut = await rootBundle.loadString('assets/questions/banque.json');
+      final decode = jsonDecode(brut);
+      if (decode is Map<String, dynamic>) _banque = decode;
+    } catch (_) {
+      // Pas d'asset : le build a été fait sans, ou le fichier est illisible.
+      // On continue sans plancher plutôt que d'empêcher le démarrage.
+    }
+    return _banque;
+  }
+
+  Future<Questionnaire?> _questionnaireEmbarque(String id) async {
+    final banque = await _lireBanque();
+    final tous = banque?['questionnaires'];
+    if (tous is! Map) return null;
+    final brut = tous[id];
+    if (brut is! Map<String, dynamic>) return null;
+    try {
+      return Questionnaire.fromMap(brut);
+    } catch (_) {
+      return null;
+    }
+  }
+
+  Future<void> _readCatalogueEmbarque() async {
+    final banque = await _lireBanque();
+    final brut = banque?['catalogue'];
+    if (brut is! Map<String, dynamic>) return;
+    try {
+      catalogue = Catalogue.fromMap(brut);
+      horsLigne = true;
+      depuisLeBuild = true;
+      lastFetch = null;
+      notifyListeners();
+    } catch (_) {
+      // Asset mal formé : on laisse le réseau tenter sa chance.
+    }
   }
 
   // Une requête, avec reprise sur 429 (« trop de requêtes »).
@@ -317,6 +385,7 @@ class CatalogueStore extends ChangeNotifier {
       // latin-1 et « Géographie » arriverait en « GÃ©ographie ».
       catalogue = Catalogue.decode(utf8.decode(reponse.bodyBytes));
       horsLigne = false;
+      depuisLeBuild = false;
       lastFetch = DateTime.now();
       lastError = null;
       final dir = await _ensureDir();
@@ -444,6 +513,16 @@ class CatalogueStore extends ChangeNotifier {
         final charge = Questionnaire.decode(utf8.decode(reponse.bodyBytes));
         lastError = null;
         return charge;
+      } on Object {
+        // Le réseau a échoué : la copie livrée avec l'application prend le
+        // relais. C'est ce qui fait tenir le tirage dans un sous-sol sans
+        // wifi, sur un poste où rien n'a été synchronisé à l'avance.
+        final embarque = await _questionnaireEmbarque(entry.id);
+        if (embarque != null) {
+          lastError = null;
+          return embarque;
+        }
+        rethrow;
       } finally {
         _ouvertures.remove(entry.id);
         notifyListeners();
