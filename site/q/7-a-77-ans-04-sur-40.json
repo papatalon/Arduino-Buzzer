@@ -7,32 +7,21 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Contraire de transparent ?",
-      "reponse": "Opaque",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Comment appelle-t-on les petits personnages bleus qui vivent dans des champignons ?",
-      "reponse": "Les Schtroumpfs",
+      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
+      "reponse": "King Kong",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel Gaulois est l'ami d'Obélix ?",
-      "reponse": "Astérix",
+      "question": "Quelle fillette de roman visite le pays des merveilles ?",
+      "reponse": "Alice",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle comédie musicale raconte un fantôme masqué ?",
-      "reponse": "Fantôme de l'Opéra",
+      "categorie": "Québec",
+      "question": "Quelle île au milieu du Saint-Laurent est célèbre pour ses produits ?",
+      "reponse": "Île d'Orléans",
       "niveau": 1,
       "ages": [
         "ados",
@@ -41,33 +30,85 @@
       ]
     },
     {
+      "categorie": "Musique",
+      "question": "Quel instrument à lamelles de bois frappe-t-on avec des maillets ?",
+      "reponse": "Le xylophone",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "De quelle couleur est le feu de circulation qui dit d'arrêter ?",
+      "reponse": "Rouge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal de la ferme nous donne le lait ?",
+      "reponse": "La vache",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on un relief très haut qu'on gravit à pied ?",
+      "reponse": "Une montagne",
+      "niveau": 1
+    },
+    {
       "categorie": "Sports",
-      "question": "Combien de points vaut un lancer franc au basketball ?",
-      "reponse": "Un",
+      "question": "Dans quoi faut-il envoyer la rondelle pour compter ?",
+      "reponse": "Le filet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment nomme-t-on un arbre qui garde ses aiguilles ?",
+      "reponse": "Un conifère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie les carottes sont cuites ?",
+      "reponse": "C'est fini",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Comment s'appelle l'écriture des Égyptiens ?",
-      "reponse": "Les hiéroglyphes",
-      "niveau": 1
+      "question": "Quel premier ministre a rapatrié la Constitution et donné son nom à l'aéroport de Montréal ?",
+      "reponse": "Pierre Elliott Trudeau",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit jaune les singes adorent-ils ?",
-      "reponse": "La banane",
+      "question": "Quel fromage italien garnit la pizza ?",
+      "reponse": "La mozzarella",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle tartinade blanche accompagne le bagel ?",
-      "reponse": "Fromage à la crème",
-      "niveau": 1
+      "categorie": "Sports",
+      "question": "Quelle épreuve combine dix disciplines ?",
+      "reponse": "Le décathlon",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle plateforme suédoise diffuse de la musique en continu ?",
-      "reponse": "Spotify",
+      "question": "Combien de cordes sur une guitare classique ?",
+      "reponse": "Six",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée japonaise suit Son Goku ?",
+      "reponse": "Dragon Ball",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -76,27 +117,21 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Abu, l'ami d'Aladin ?",
-      "reponse": "Un singe",
+      "categorie": "Mots et langue",
+      "question": "Que signifie attache ta tuque ?",
+      "reponse": "Prépare-toi",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus petite unité du vivant ?",
-      "reponse": "La cellule",
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne qui soigne les dents ?",
+      "reponse": "Un dentiste",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel mammifère marin sauteur siffle et vit en groupe ?",
-      "reponse": "Le dauphin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel style musical a son grand festival à Montréal en juillet ?",
-      "reponse": "Le jazz",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle glace italienne est plus dense que la crème glacée ?",
+      "reponse": "Le gelato",
       "niveau": 1,
       "ages": [
         "ados",
@@ -105,75 +140,50 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel bouton bleu approuve une publication sur Facebook ?",
-      "reponse": "J'aime",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel phénomène lumineux accompagne le tonnerre ?",
-      "reponse": "L'éclair",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle émission québécoise a des fauteuils qui pivotent ?",
-      "reponse": "La Voix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays se trouve juste au sud du Canada ?",
-      "reponse": "Les États-Unis",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle crise de janvier 1998 a privé le Québec de courant ?",
-      "reponse": "Le verglas",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois magasiner ?",
-      "reponse": "Faire des achats",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture générale",
       "question": "Quel animal cache des œufs à Pâques ?",
       "reponse": "Le lapin",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la personne qui conduit un autobus scolaire ?",
-      "reponse": "Un chauffeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel océan borde la côte est du Canada ?",
-      "reponse": "L'Atlantique",
+      "categorie": "Sciences et nature",
+      "question": "Où vivent les ours polaires ?",
+      "reponse": "En Arctique",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque de bonbons colorés fond dans la bouche, pas dans la main ?",
-      "reponse": "Les M&M's",
+      "question": "Quelle entreprise japonaise a créé Mario et Zelda ?",
+      "reponse": "Nintendo",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Combien de fleurs de lys sur le drapeau du Québec ?",
+      "reponse": "Quatre",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Dans quoi faut-il faire entrer le ballon pour marquer au basketball ?",
-      "reponse": "Le panier",
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel conte Disney une rose est-elle sous cloche ?",
+      "reponse": "La Belle et la Bête",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert québécois est un gâteau arrosé de sauce sucrée ?",
-      "reponse": "Pouding chômeur",
+      "question": "Quel repas mange-t-on traditionnellement le matin ?",
+      "reponse": "Le déjeuner",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel animal géant et blanc est le symbole du Grand Nord canadien ?",
+      "reponse": "L'ours polaire",
       "niveau": 1
     }
   ]

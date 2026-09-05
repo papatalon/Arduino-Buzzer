@@ -8,130 +8,65 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel sport pratiquait Serena Williams ?",
-      "reponse": "Le tennis",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu de table imite le soccer avec des joueurs fixés sur des tiges ?",
-      "reponse": "Le babyfoot",
+      "question": "Combien de points vaut un panier de loin au basketball ?",
+      "reponse": "Trois",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelles larges semelles permettent de marcher sur la neige sans caler ?",
-      "reponse": "Des raquettes",
+      "question": "Quelle course olympique est la plus courte ?",
+      "reponse": "Le 100 mètres",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport frappe une petite balle blanche vers un trou avec un drapeau ?",
+      "reponse": "Le golf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel équipement large attaché aux pieds empêche de caler dans la neige épaisse ?",
+      "reponse": "Les raquettes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la période supplémentaire quand le match est nul ?",
+      "reponse": "La prolongation",
       "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Sur quel engin descend-on une côte enneigée en position assise ?",
-      "reponse": "Un traîneau",
+      "question": "Combien de joueurs par équipe au football américain ?",
+      "reponse": "Onze",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Sur quoi fait-on des culbutes au cours d'éducation physique ?",
+      "reponse": "Un tapis",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Combien de minutes dure un quart au football américain ?",
-      "reponse": "Quinze",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport fait courir des chevaux montés par des jockeys ?",
-      "reponse": "Les courses de chevaux",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle carte l'arbitre de soccer montre-t-il pour expulser un joueur ?",
-      "reponse": "Un carton rouge",
+      "question": "Quel sport de table se joue avec des queues et des billes ?",
+      "reponse": "Le billard",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Dans quel sport marque-t-on des essais ?",
-      "reponse": "Le rugby",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
-      "reponse": "Georges St-Pierre",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au volleyball ?",
-      "reponse": "Six",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle ville canadienne a reçu les JO d'hiver de 1988 ?",
-      "reponse": "Calgary",
+      "question": "Quel sport mélange soccer et voiture dans un jeu vidéo ?",
+      "reponse": "Rocket League",
       "niveau": 2,
       "ages": [
         "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Que chausse-t-on aux pieds pour aller sur la glace ?",
-      "reponse": "Des patins",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle course américaine tourne en ovale 500 milles ?",
-      "reponse": "Indianapolis 500",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelles grosses protections le gardien porte-t-il sur les jambes ?",
-      "reponse": "Des jambières",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel boxeur s'appelait Cassius Clay ?",
-      "reponse": "Muhammad Ali",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
+        "ados"
       ]
     },
     {
@@ -146,49 +81,83 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle discipline olympique note des figures sur glace ?",
-      "reponse": "Patinage artistique",
+      "question": "Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?",
+      "reponse": "Le Canadien",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel est le score parfait d'une partie de bowling ?",
-      "reponse": "300",
+      "question": "Quel capitaine des Penguins est surnommé Sid the Kid ?",
+      "reponse": "Sidney Crosby",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelles chaussures à roulettes se lacent aux pieds pour rouler sur l'asphalte ?",
+      "reponse": "Des patins à roues alignées",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel numéro portait Maurice Richard ?",
+      "reponse": "9",
       "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
-      "reponse": "Le CF Montréal",
+      "question": "Combien d'anneaux entrelacés forment le symbole olympique ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle est la nage la plus rapide ?",
+      "reponse": "Le crawl",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport fait tourner des athlètes en combinaison moulante sur un anneau glacé ?",
+      "reponse": "Le patin de vitesse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de combat japonais se pratique pieds nus en kimono blanc ?",
+      "reponse": "Le karaté",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sprinteur jamaïcain a couru le 100 mètres en 9 secondes 58 ?",
+      "reponse": "Usain Bolt",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de périodes dans un match de hockey ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel quart-arrière a gagné sept Super Bowls ?",
+      "reponse": "Tom Brady",
       "niveau": 1,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelles petites roues aident un enfant à apprendre le vélo ?",
-      "reponse": "Des roues d'entraînement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quoi faut-il faire entrer le ballon pour marquer au basketball ?",
-      "reponse": "Le panier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur de la NBA est surnommé King James ?",
-      "reponse": "LeBron James",
-      "niveau": 1,
+      "question": "Quel sport enchaîne obstacles, murs et sauts en pleine ville ?",
+      "reponse": "Le parkour",
+      "niveau": 2,
       "ages": [
         "enfants",
         "ados",
@@ -197,20 +166,20 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme projette une longue tige pointue le plus loin possible ?",
-      "reponse": "Le lancer du javelot",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle longueur fait une piscine olympique ?",
-      "reponse": "50 mètres",
+      "question": "Quel tournoi de tennis se joue sur gazon à Londres ?",
+      "reponse": "Wimbledon",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Avec quel objet frappe-t-on la balle au baseball ?",
+      "reponse": "Le bâton",
+      "niveau": 1
     }
   ]
 }

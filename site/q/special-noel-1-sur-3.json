@@ -7,68 +7,16 @@
   "emoji": "🎄",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Que glisse-t-on dans une enveloppe pour souhaiter joyeux Noël à quelqu'un ?",
-      "reponse": "Une carte de souhaits",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit personnage en habit vert aide le père Noël à l'atelier ?",
-      "reponse": "Un lutin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel gros livre illustré arrivait par la poste et faisait rêver avant Noël ?",
-      "reponse": "Le catalogue",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat québécois superpose patates pilées, blé d'Inde et viande hachée ?",
-      "reponse": "Le pâté chinois",
+      "categorie": "Cinéma et télé",
+      "question": "Quel personnage vert déteste Noël ?",
+      "reponse": "Le Grincheux",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel chant de Noël anglais fait tinter les grelots du traîneau ?",
-      "reponse": "Jingle Bells",
+      "question": "Quel chant de Noël québécois reprend l'air de Jingle Bells ?",
+      "reponse": "Vive le vent",
       "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle grosse volaille rôtit au four pour l'Action de grâce ?",
-      "reponse": "La dinde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël célèbre un arbre dont le feuillage reste vert tout l'hiver ?",
-      "reponse": "Mon beau sapin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit rouge pousse dans les tourbières ?",
-      "reponse": "La canneberge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel pâté à la viande mange-t-on dans le temps des fêtes ?",
-      "reponse": "La tourtière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays nordique le père Noël a-t-il son village officiel, à Rovaniemi ?",
-      "reponse": "La Finlande",
-      "niveau": 3
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -83,14 +31,31 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel clou parfume le jambon de Noël ?",
-      "reponse": "Clou de girofle",
-      "niveau": 1,
+      "question": "Quel accompagnement de Noël est une purée blanche ?",
+      "reponse": "Patates pilées",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel gros livre illustré arrivait par la poste et faisait rêver avant Noël ?",
+      "reponse": "Le catalogue",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel personnage descend par la cheminée pour laisser des cadeaux ?",
+      "reponse": "Le père Noël",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Sven dans La Reine des neiges ?",
+      "reponse": "Un renne",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
@@ -100,31 +65,59 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle sauce rouge accompagne la dinde ?",
-      "reponse": "Aux canneberges",
+      "question": "Quelle boisson gazeuse au gingembre est célèbre au Canada ?",
+      "reponse": "Le ginger ale (Canada Dry)",
       "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel repas de fête se prend après la messe de minuit ?",
+      "reponse": "Le réveillon",
+      "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle grande chaussette suspend-on à la cheminée en attendant le père Noël ?",
-      "reponse": "Un bas de Noël",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment s'appelle un chant de Noël traditionnel ?",
-      "reponse": "Un cantique",
+      "question": "Comment appelle-t-on la scène de la Nativité qu'on installait sous le sapin ?",
+      "reponse": "La crèche",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël fait résonner un long « Gloria » repris par tout le monde ?",
-      "reponse": "Les anges dans nos campagnes",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle créature verte et mal lunée veut voler le Noël des Chou ?",
+      "reponse": "Le Grinch",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit personnage en habit vert aide le père Noël à l'atelier ?",
+      "reponse": "Un lutin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel événement célèbre-t-on le 25 décembre ?",
+      "reponse": "Noël",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que glisse-t-on dans une enveloppe pour souhaiter joyeux Noël à quelqu'un ?",
+      "reponse": "Une carte de souhaits",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays nordique le père Noël a-t-il son village officiel, à Rovaniemi ?",
+      "reponse": "La Finlande",
       "niveau": 3
     },
     {
@@ -132,6 +125,12 @@
       "question": "Quelle émission québécoise du jour de l'An revoit l'année ?",
       "reponse": "Bye Bye",
       "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël fait résonner un long « Gloria » repris par tout le monde ?",
+      "reponse": "Les anges dans nos campagnes",
+      "niveau": 3
     }
   ]
 }

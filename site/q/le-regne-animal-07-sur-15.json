@@ -8,78 +8,49 @@
   "questions": [
     {
       "categorie": "Mots et langue",
-      "question": "Quel est le cri de l'âne ?",
-      "reponse": "Le braiment",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un âne toujours triste ?",
-      "reponse": "Bourriquet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel animal emblème figure sur les armoiries de Montréal ?",
-      "reponse": "Le castor",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat botté a de grands yeux attendrissants ?",
-      "reponse": "Chat Potté",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel reptile peut vivre plus de 150 ans ?",
-      "reponse": "La tortue géante",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal saute et transporte son bébé dans une poche ?",
-      "reponse": "Le kangourou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin géant souffle un jet d'eau par le dos ?",
-      "reponse": "La baleine",
+      "question": "Que signifie « avoir une mémoire d'éléphant » ?",
+      "reponse": "Avoir une très bonne mémoire",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle comptine québécoise plume un oiseau, la tête, le bec et les ailes ?",
-      "reponse": "Alouette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel animal cache des œufs à Pâques ?",
-      "reponse": "Le lapin",
+      "question": "Quelle comptine demande si le loup y est pendant qu'il s'habille ?",
+      "reponse": "Promenons-nous dans les bois",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel animal est Pascal, l'ami de Raiponce ?",
-      "reponse": "Un caméléon",
+      "question": "Quel canard noir est le rival de Bugs Bunny ?",
+      "reponse": "Daffy Duck",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel est le plus grand cervidé du Québec ?",
-      "reponse": "L'orignal",
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle la transformation de la chenille ?",
+      "reponse": "La métamorphose",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel personnage de Sesame Street est un grand oiseau jaune ?",
+      "reponse": "Big Bird",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie être rusé comme un renard ?",
+      "reponse": "Être très malin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel mammifère marin sauteur siffle et vit en groupe ?",
+      "reponse": "Le dauphin",
       "niveau": 1
     },
     {
@@ -89,27 +60,27 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle bouchée de riz japonaise enroule du poisson dans une algue ?",
-      "reponse": "Le sushi",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel disque de plastique lance-t-on à un ami ou à un chien au parc ?",
-      "reponse": "Le frisbee",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal servait de moyen de transport principal avant l'automobile ?",
-      "reponse": "Le cheval",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la femelle du sanglier ?",
-      "reponse": "La laie",
+      "question": "Quel est le cri du coq ?",
+      "reponse": "Cocorico",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel oiseau mythique renaît de ses cendres ?",
+      "reponse": "Le phénix",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel héros Marvel rétrécit à la taille d'une fourmi ?",
+      "reponse": "Ant-Man",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel papillon est l'insecte emblème du Québec ?",
+      "reponse": "L'amiral",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -117,62 +88,91 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel petit oiseau jaune échappe toujours au chat Grosminet ?",
-      "reponse": "Titi",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal polaire a la peau noire sous son pelage blanc ?",
+      "reponse": "L'ours polaire",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel aliment ovale pondu par la poule mange-t-on brouillé ?",
+      "reponse": "L'œuf",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Que colle-t-on dans le dos des gens le 1er avril ?",
-      "reponse": "Un poisson d'avril",
+      "categorie": "Géographie",
+      "question": "Quel animal figure sur la pièce d'un dollar canadien ?",
+      "reponse": "Le huard",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie colorée de la fleur attire les abeilles ?",
+      "reponse": "Les pétales",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte produit le miel ?",
+      "reponse": "L'abeille",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel chien accompagne Astérix et Obélix ?",
-      "reponse": "Idéfix",
+      "question": "Que tisse l'araignée pour attraper les insectes ?",
+      "reponse": "Une toile",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel panda pratique le kung-fu au cinéma ?",
-      "reponse": "Po",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
+      "reponse": "L'étoile de mer",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
-      "reponse": "Le mammouth",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel animal porte malheur s'il croise notre chemin, selon la superstition ?",
-      "reponse": "Un chat noir",
-      "niveau": 1
+      "question": "Quel général carthaginois a traversé les Alpes à dos d'éléphant ?",
+      "reponse": "Hannibal",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Dans Pierre et le loup, quel instrument joue l'oiseau ?",
-      "reponse": "La flûte",
+      "question": "Quelle chanson du crabe Sébastien vante la vie sous les vagues ?",
+      "reponse": "Sous l'océan",
       "niveau": 2,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel métier ferre les chevaux ?",
-      "reponse": "Le maréchal-ferrant",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami de Winnie l'ourson est un âne toujours triste ?",
+      "reponse": "Bourriquet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gros animal brun dort tout l'hiver dans sa tanière ?",
+      "reponse": "L'ours",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on un groupe de poissons qui nagent ensemble ?",
+      "reponse": "Un banc",
+      "niveau": 2
     }
   ]
 }

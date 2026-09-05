@@ -7,60 +7,6 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle amie brillante accompagne Harry et Ron ?",
-      "reponse": "Hermione",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle est la capitale nationale du Québec ?",
-      "reponse": "Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on l'artiste qui anime les platines ?",
-      "reponse": "Le DJ",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel objet en forme de boule qui tourne montre tous les pays du monde ?",
-      "reponse": "Le globe terrestre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de côtés a un pentagone ?",
-      "reponse": "Cinq",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle écorce parfume les brioches roulées ?",
-      "reponse": "La cannelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on l'école qu'un enfant fréquente de la 1re à la 6e année ?",
-      "reponse": "Le primaire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle note vient juste après le mi ?",
-      "reponse": "Le fa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie tomber dans les pommes ?",
-      "reponse": "S'évanouir",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture générale",
       "question": "Monnaie utilisée en Europe ?",
       "reponse": "L'euro",
@@ -72,15 +18,15 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel casse-tête coloré à six faces se replace en tournant ses rangées ?",
-      "reponse": "Le Rubik's Cube",
+      "categorie": "Mots et langue",
+      "question": "Que signifie être tanné ?",
+      "reponse": "En avoir assez",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
-      "reponse": "Le CF Montréal",
+      "categorie": "Bouffe et cuisine",
+      "question": "De quoi est fait le tofu ?",
+      "reponse": "Du soja",
       "niveau": 1,
       "ages": [
         "ados",
@@ -90,44 +36,78 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat fait-on en battant des œufs à la poêle ?",
-      "reponse": "L'omelette",
+      "question": "Quelle pâte à tartiner aux noisettes est adorée ?",
+      "reponse": "Le Nutella",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de côtés a un pentagone ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'espace sous le toit où s'entassent les vieilles boîtes ?",
+      "reponse": "Le grenier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit personnage en habit vert aide le père Noël à l'atelier ?",
+      "reponse": "Un lutin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel pays est le berceau du hockey sur glace ?",
+      "reponse": "Le Canada",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel poisson-clown cherche son fils dans l'océan ?",
+      "reponse": "Marin",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Dans quel amphithéâtre combattaient les gladiateurs ?",
-      "reponse": "Le Colisée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de gagner ?",
-      "reponse": "Perdre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel reptile change de couleur pour se camoufler ?",
-      "reponse": "Le caméléon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on la grosse partie de l'arbre qui porte les branches ?",
-      "reponse": "Le tronc",
+      "question": "Sur quelle plante les Égyptiens écrivaient-ils ?",
+      "reponse": "Le papyrus",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la petite souris grise que le chat Tom n'attrape jamais ?",
-      "reponse": "Jerry",
+      "question": "Comment s'appelle le voisin trop gentil des Simpson ?",
+      "reponse": "Ned Flanders",
       "niveau": 1
     },
     {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes traverse la Suisse ?",
+      "reponse": "Les Alpes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel basketteur légendaire portait le 23 des Bulls ?",
+      "reponse": "Michael Jordan",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Que signifie virer une brosse ?",
-      "reponse": "Trop boire",
+      "question": "Comment appelle-t-on la personne qui vend des fleurs ?",
+      "reponse": "Un fleuriste",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style triste est né dans le delta du Mississippi ?",
+      "reponse": "Le blues",
       "niveau": 1,
       "ages": [
         "ados",
@@ -136,44 +116,68 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Quel village de la Côte-Nord est réputé pour les baleines ?",
+      "reponse": "Tadoussac",
+      "niveau": 1
+    },
+    {
       "categorie": "Cinéma et télé",
-      "question": "Que veut dire Hakuna Matata ?",
-      "reponse": "Pas de souci",
+      "question": "Quel acteur autrichien joue Terminator ?",
+      "reponse": "Schwarzenegger",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle grande ville américaine abrite la statue de la Liberté ?",
-      "reponse": "New York",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume jaune se mange en épi, au beurre et au sel ?",
-      "reponse": "Le maïs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur a été repêché premier au total par Edmonton en 2015 ?",
-      "reponse": "Connor McDavid",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de pattes possède un insecte ?",
-      "reponse": "Six",
+      "question": "Quel dinosaure a trois cornes sur la tête ?",
+      "reponse": "Le tricératops",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
       "question": "Quel outil sert à visser une vis ?",
       "reponse": "Le tournevis",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel mot commençant par J veut dire « très content » ?",
+      "reponse": "Joyeux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville du Canada ?",
+      "reponse": "Toronto",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel aliment blanc en grains adoucit le café et entre dans tous les gâteaux ?",
+      "reponse": "Le sucre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "De quel métal est principalement fait l'acier ?",
+      "reponse": "Le fer",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel sens est associé à la langue ?",
+      "reponse": "Le goût",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson chante-t-on aux anniversaires ?",
+      "reponse": "Bonne fête",
       "niveau": 1
     }
   ]

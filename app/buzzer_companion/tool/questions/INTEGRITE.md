@@ -52,11 +52,31 @@ Ce qui n'est toujours pas couvert ici : les titres localisés. Le même film
 porte un nom au Québec et un autre en France (Moana / Vaiana, Sens dessus
 dessous / Vice-versa), et rien ne le signale.
 
-### 2. L'ambiguïté
+### 2. L'ambiguïté — EN PARTIE (septembre 2026)
 
-Aucun outil. Une question comme « Dans quel pays trouve-t-on la savane, les
-lions et les girafes ? » a dix bonnes réponses, et rien ne la signale. La
-vingtaine trouvée en septembre l'a été à l'œil, sur un dixième de la banque.
+Une question ambiguë accepte plus d'une bonne réponse. Rien ne le prouve
+mécaniquement, mais une de ses formes se détecte, et c'est la plus injuste :
+**deux réponses de la banque nomment la même chose**, et le joueur qui donne
+l'autre nom se fait refuser alors qu'il a raison. « La tire » et « la tire
+d'érable », « L'Ère de glace » et « L'Âge de glace », « le casque » et « le
+casque de vélo », « Trudeau » pour deux premiers ministres.
+
+Le générateur affiche maintenant ce compte à côté des trois autres, avec le
+détail. Le signal : deux réponses dont l'une contient l'autre, et deux
+énoncés qui partagent au moins deux mots porteurs. 45 vraies variantes
+trouvées et corrigées. **Repère : 14 restantes, toutes vérifiées comme
+fausses alertes** (« Six » dans « Vingt-six », le ski et le ski nautique, la
+flûte et la flûte de Pan). Si le compte monte, c'est du nouveau.
+
+Ce qui n'est toujours pas détecté, et qui demande de lire : la question dont
+plusieurs entités remplissent les conditions. « Dans quel pays trouve-t-on la
+savane, les lions et les girafes ? » a dix bonnes réponses. « Quel chanteur
+aveugle joue du piano ? » en a deux. Une quarantaine de celles-là ont été
+trouvées à l'œil en relisant la banque, aucune par une machine.
+
+Un signal faible existe pour un troisième cas, l'énoncé qui ne tient que par
+un « célèbre » ou un « connu » : 35 candidats, dont deux seulement étaient de
+vraies ambiguïtés. Le mot sert le plus souvent d'ornement, pas de critère.
 
 ### 3. La péremption — FAIT (septembre 2026)
 

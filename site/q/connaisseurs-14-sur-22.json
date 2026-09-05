@@ -7,52 +7,6 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le fait de jouer en inventant, sans partition ?",
-      "reponse": "L'improvisation",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Masculin d'abeille ?",
-      "reponse": "Le faux bourdon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel sanctuaire au dôme vert domine le flanc du mont Royal ?",
-      "reponse": "L'Oratoire Saint-Joseph",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de cordelette passe de mains en mains en formant des figures géométriques ?",
-      "reponse": "Le jeu de la ficelle",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Où logeait le curé de la paroisse ?",
-      "reponse": "Au presbytère",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
       "categorie": "Histoire",
       "question": "Comment appelle-t-on la longue lettre gravée dans la pierre pour raconter un règne ?",
       "reponse": "Une inscription",
@@ -63,20 +17,19 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Qui a créé le tableau périodique ?",
-      "reponse": "Mendeleïev",
+      "categorie": "Culture pop",
+      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
+      "reponse": "Josée di Stasio",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel écrivain russe a écrit Guerre et Paix ?",
-      "reponse": "Tolstoï",
+      "categorie": "Musique",
+      "question": "Quel compositeur baroque a écrit les Concertos brandebourgeois ?",
+      "reponse": "Bach",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -85,8 +38,14 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel grand rendez-vous de novembre réunit éditeurs et auteurs au Palais des congrès de Montréal ?",
-      "reponse": "Le Salon du livre",
+      "question": "Quel biscuit québécois à la mélasse se trempe dans le lait ?",
+      "reponse": "La galette à la mélasse",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle fosse océanique est la plus profonde ?",
+      "reponse": "Les Mariannes",
       "niveau": 3,
       "ages": [
         "ados",
@@ -95,18 +54,39 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
-      "reponse": "Les Plouffe",
+      "categorie": "Culture pop",
+      "question": "Quel carré de plastique de trois pouces et demi stockait des fichiers d'ordinateur ?",
+      "reponse": "La disquette",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel désert couvre le sud-ouest africain ?",
-      "reponse": "Le Kalahari",
+      "categorie": "Musique",
+      "question": "Quel appareil enregistrait la musique sur une bande dans les années 80 ?",
+      "reponse": "Une cassette",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de points vaut la bille noire au snooker ?",
+      "reponse": "Sept",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse acadienne a gagné le Félix de la chanson de l'année avec Évangéline ?",
+      "reponse": "Annie Blanchard",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -115,8 +95,33 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel vêtement des années 60 a scandalisé en raccourcissant brusquement ?",
-      "reponse": "La minijupe",
+      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
+      "reponse": "Olivier Guimond",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays insulaire du nord de l'Atlantique compte des volcans et des geysers ?",
+      "reponse": "L'Islande",
+      "niveau": 3
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film coréen de 2019 est devenu le premier film non anglophone à gagner l'Oscar du meilleur film ?",
+      "reponse": "Parasite",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Dans Pierre et le loup, quel instrument joue le loup ?",
+      "reponse": "Le cor",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -124,15 +129,24 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel savant italien a affirmé que la Terre tourne autour du Soleil ?",
-      "reponse": "Galilée",
+      "categorie": "Musique",
+      "question": "Quelle chanson Blanche-Neige chante-t-elle près du puits en attendant l'amour ?",
+      "reponse": "Un jour mon prince viendra",
       "niveau": 3
     },
     {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?",
-      "reponse": "Un tir de barrage",
+      "categorie": "Québec",
+      "question": "Quel auteur québécois a écrit Le Matou ?",
+      "reponse": "Yves Beauchemin",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le réseau de tuyaux qui recueille l'eau d'érable ?",
+      "reponse": "La tubulure",
       "niveau": 3,
       "ages": [
         "ados",
@@ -141,9 +155,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "À quelle famille d'instruments appartient la flûte ?",
-      "reponse": "Les bois",
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot pyjama ?",
+      "reponse": "Le persan",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -162,47 +176,39 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanson de Bon Jovi raconte Tommy et Gina à mi-chemin ?",
-      "reponse": "Livin' on a Prayer",
+      "question": "Quel instrument de rue se joue en tournant une manivelle ?",
+      "reponse": "Un orgue de Barbarie",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
-      "reponse": "Big Brother Célébrités",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel fleuve César a-t-il franchi en disant le sort en est jeté ?",
-      "reponse": "Le Rubicon",
+      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
+      "reponse": "La tradition orale",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelait-on le téléphone que plusieurs foyers du village devaient se partager ?",
-      "reponse": "La ligne partagée",
+      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
+      "reponse": "Mariana Mazza",
       "niveau": 3,
       "ages": [
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle soupe russe est rouge betterave ?",
-      "reponse": "Le bortsch",
+      "question": "Quelle crêpe japonaise salée vient d'Osaka ?",
+      "reponse": "L'okonomiyaki",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -210,40 +216,31 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse américaine a chanté Espresso en 2024 ?",
-      "reponse": "Sabrina Carpenter",
+      "categorie": "Histoire",
+      "question": "Sur quel navire Darwin a-t-il navigué ?",
+      "reponse": "Le Beagle",
       "niveau": 3,
       "ages": [
-        "enfants",
-        "ados"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle série québécoise se déroulait dans Charlevoix après la Première Guerre ?",
-      "reponse": "Le temps d'une paix",
+      "question": "Quel meuble gardait les aliments au froid avec un bloc de glace ?",
+      "reponse": "La glacière",
       "niveau": 3,
       "ages": [
         "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le bruit désagréable d'un micro trop près d'un haut-parleur ?",
-      "reponse": "Le larsen",
+      "categorie": "Culture pop",
+      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
+      "reponse": "Le Wordle",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Nouvelle-Zélande ?",
-      "reponse": "Wellington",
-      "niveau": 3,
-      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]

@@ -8,15 +8,68 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quelle boîte à haut-parleurs se branche derrière une guitare électrique sur scène ?",
-      "reponse": "Un ampli",
+      "question": "Quel festival de musique se tient chaque été au parc Jean-Drapeau à Montréal ?",
+      "reponse": "Osheaga",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse fait claquer des souliers ferrés sur le plancher ?",
+      "reponse": "La claquette",
       "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument à dents pincées accompagne le folklore ?",
-      "reponse": "La guimbarde",
+      "question": "Quel instrument écossais fonctionne avec un sac d'air ?",
+      "reponse": "La cornemuse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel trompettiste avait les joues gonflées célèbres ?",
+      "reponse": "Dizzy Gillespie",
       "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Combien de touches sur un piano standard ?",
+      "reponse": "88",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Journey encourage à ne jamais cesser d'y croire ?",
+      "reponse": "Don't Stop Believin'",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine fait choisir une femme, puis un enfant, dans une ronde ?",
+      "reponse": "Le fermier dans son pré",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "À quelle famille d'instruments appartient la trompette ?",
+      "reponse": "Les cuivres",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur québécois a chanté Le petit roi ?",
+      "reponse": "Jean-Pierre Ferland",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -24,17 +77,52 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on le musicien qui joue de la trompette ?",
-      "reponse": "Un trompettiste",
+      "question": "Quel film musical met en scène Danny et Sandy ?",
+      "reponse": "Grease",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Bon Jovi raconte Tommy et Gina à mi-chemin ?",
+      "reponse": "Livin' on a Prayer",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse fait avancer tout le monde sur les mêmes pas, en rangées ?",
+      "reponse": "La danse en ligne",
       "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "Quelle voix masculine est la plus grave ?",
-      "reponse": "La basse",
-      "niveau": 1,
+      "question": "Quelle comptine demande Dormez-vous ?",
+      "reponse": "Frère Jacques",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur britannique roux a chanté Shape of You ?",
+      "reponse": "Ed Sheeran",
+      "niveau": 2,
       "ages": [
         "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe a sorti l'album au prisme en 1973 ?",
+      "reponse": "Pink Floyd",
+      "niveau": 2,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -52,53 +140,47 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel gros tambour africain se frappe à mains nues entre les genoux ?",
-      "reponse": "Le djembé",
+      "question": "Quel petit instrument à vent en plastique bourdonne quand on chante dedans ?",
+      "reponse": "Le kazoo",
       "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "Quelle note vient après le fa ?",
-      "reponse": "Le sol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe irlandais est mené par Bono ?",
-      "reponse": "U2",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel prix récompense la musique aux États-Unis ?",
-      "reponse": "Le Grammy",
+      "question": "Quelle superstar américaine a nommé sa tournée Eras ?",
+      "reponse": "Taylor Swift",
       "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse a chanté Like a Virgin ?",
+      "reponse": "Madonna",
+      "niveau": 2,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel cantique de Noël d'origine autrichienne est le plus traduit au monde ?",
-      "reponse": "Douce nuit",
+      "question": "Sur combien de lignes écrit-on la musique ?",
+      "reponse": "Cinq",
       "niveau": 2
     },
     {
       "categorie": "Musique",
-      "question": "À quelle famille d'instruments appartient le violon ?",
-      "reponse": "Les cordes",
+      "question": "Sur quel pont danse-t-on tous en rond dans la chanson ?",
+      "reponse": "Le pont d'Avignon",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel hymne européen vient de la 9e de Beethoven ?",
-      "reponse": "L'Ode à la joie",
+      "question": "Quelle indication musicale signifie jouer fort ?",
+      "reponse": "Forte",
       "niveau": 2,
       "ages": [
         "ados",
@@ -108,47 +190,9 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel chanteur américain a chanté Uptown Funk et Just the Way You Are ?",
-      "reponse": "Bruno Mars",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Queen fait taper des pieds et des mains sur « We will, we will... » ?",
-      "reponse": "We Will Rock You",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comptine ajoute un éléphant de plus sur une toile d'araignée ?",
-      "reponse": "Un éléphant qui se balançait",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "À quelle famille d'instruments appartient la flûte ?",
-      "reponse": "Les bois",
+      "question": "Quel instrument à percussion se joue avec les mains sur deux tambours accolés ?",
+      "reponse": "Les bongos",
       "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle note vient juste après le sol ?",
-      "reponse": "Le la",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel appareil branche la guitare électrique pour faire sortir le son ?",
-      "reponse": "L'amplificateur",
-      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -157,67 +201,10 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse acadienne s'est fait connaître au banjo, en français ?",
-      "reponse": "Lisa LeBlanc",
+      "question": "Quelle cantatrice grecque fut surnommée la Divina ?",
+      "reponse": "Maria Callas",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on un extrait de chanson repris dans une autre chanson ?",
-      "reponse": "Un échantillon",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Sur quelle bande magnétique écoutait-on la musique avant le disque compact ?",
-      "reponse": "Une cassette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel tambour à main vient d'Irlande ?",
-      "reponse": "Le bodhrán",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur britannique a quitté One Direction pour chanter As It Was ?",
-      "reponse": "Harry Styles",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël anglais fait tinter les grelots du traîneau ?",
-      "reponse": "Jingle Bells",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à quatre grosses cordes tient le rythme grave dans un groupe rock ?",
-      "reponse": "La guitare basse",
-      "niveau": 2,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]

@@ -8,14 +8,32 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quel peuple de l'Antiquité construisait des pyramides et embaumait ses morts ?",
-      "reponse": "Les Égyptiens",
+      "question": "Comment s'appelle l'écriture des Égyptiens ?",
+      "reponse": "Les hiéroglyphes",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel amiral anglais a gagné Trafalgar ?",
-      "reponse": "Nelson",
+      "question": "Quel peintre italien a peint la Joconde ?",
+      "reponse": "Léonard de Vinci",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel ancien téléphone fallait-il tourner avec le doigt pour composer un numéro ?",
+      "reponse": "Le téléphone à cadran",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quels animaux géants ont disparu bien avant l'apparition des humains ?",
+      "reponse": "Les dinosaures",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Où se tenaient les courses de chars à Rome ?",
+      "reponse": "Le Circus Maximus",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -24,14 +42,20 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel coureur unijambiste a traversé une partie du Canada pour la recherche sur le cancer ?",
-      "reponse": "Terry Fox",
+      "question": "Comment appelait-on la colonie française en Amérique du Nord ?",
+      "reponse": "La Nouvelle-France",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel fleuve faisait pousser les récoltes des Égyptiens en débordant chaque année ?",
+      "reponse": "Le Nil",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel empereur romain aurait incendié Rome ?",
-      "reponse": "Néron",
+      "question": "Quelle grande bibliothèque antique a brûlé ?",
+      "reponse": "Alexandrie",
       "niveau": 2,
       "ages": [
         "ados",
@@ -41,38 +65,11 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle bataille de 1759 a fait passer Québec aux mains des Britanniques ?",
-      "reponse": "La bataille des plaines d'Abraham",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel tombeau égyptien fut découvert en 1922 ?",
-      "reponse": "Toutankhamon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle jeune fille a mené les armées françaises en 1429 ?",
-      "reponse": "Jeanne d'Arc",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a traversé l'Atlantique en avion solo en 1927 ?",
-      "reponse": "Lindbergh",
-      "niveau": 3,
+      "question": "Quels deux blocs s'opposaient durant la guerre froide ?",
+      "reponse": "USA et URSS",
+      "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Où se tenaient les courses de chars à Rome ?",
-      "reponse": "Le Circus Maximus",
-      "niveau": 3,
-      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -90,8 +87,81 @@
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année le mur de Berlin est-il tombé ?",
-      "reponse": "1989",
+      "question": "Comment appelle-t-on le marin posté en haut du mât pour surveiller l'horizon ?",
+      "reponse": "La vigie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel dictateur dirigeait l'Allemagne nazie ?",
+      "reponse": "Hitler",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui a fondé Facebook en 2004 ?",
+      "reponse": "Mark Zuckerberg",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quels frères ont inventé le cinématographe ?",
+      "reponse": "Les frères Lumière",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle princesse anglaise est morte à Paris en 1997 ?",
+      "reponse": "Diana",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelait-on le soldat armé d'un arc dans les armées d'autrefois ?",
+      "reponse": "Un archer",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal les Autochtones des plaines chassaient-ils pour se nourrir et se vêtir ?",
+      "reponse": "Le bison",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel navire océanographique commandait Cousteau ?",
+      "reponse": "La Calypso",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel chemin marchand les caravanes suivaient-elles de Chang'an jusqu'à la Méditerranée ?",
+      "reponse": "La route de la soie",
       "niveau": 2,
       "ages": [
         "ados",
@@ -101,15 +171,31 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel animal servait de moyen de transport principal avant l'automobile ?",
-      "reponse": "Le cheval",
+      "question": "En quelle année a eu lieu la Confédération canadienne ?",
+      "reponse": "1867",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on l'écriture des Vikings, gravée dans la pierre ?",
+      "reponse": "Les runes",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle arme de bois courbé propulsait des flèches avant les armes à feu ?",
+      "reponse": "Un arc",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle fondatrice a ouvert la première école de Ville-Marie ?",
-      "reponse": "Marguerite Bourgeoys",
-      "niveau": 3,
+      "question": "Quelle date exacte est le jour J ?",
+      "reponse": "Le 6 juin 1944",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -118,87 +204,13 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel amuseur en habit à grelots faisait rire le roi ?",
-      "reponse": "Un bouffon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention chinoise a remplacé le parchemin pour écrire ?",
-      "reponse": "Le papier",
+      "question": "Quel empereur romain a légalisé le christianisme ?",
+      "reponse": "Constantin",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la personne dont le métier est d'étudier le passé ?",
-      "reponse": "Un historien",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
-      "reponse": "Le mammouth",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle femme a reçu deux prix Nobel ?",
-      "reponse": "Marie Curie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel site de vidéos a été lancé en 2005 et racheté par Google un an plus tard ?",
-      "reponse": "YouTube",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
-      "reponse": "Expo 67",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel appareil garde les aliments au froid depuis un siècle, remplaçant la glacière ?",
-      "reponse": "Le réfrigérateur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle encyclopédie en ligne, lancée en 2001, est écrite par ses lecteurs ?",
-      "reponse": "Wikipédia",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel casque de métal protégeait la tête du chevalier ?",
-      "reponse": "Un heaume",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a couru le Marathon de l'espoir en 1980 ?",
-      "reponse": "Terry Fox",
-      "niveau": 2
     }
   ]
 }

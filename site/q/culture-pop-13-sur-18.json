@@ -8,17 +8,133 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quel ballon rempli d'hélium s'envole si on lâche la ficelle ?",
-      "reponse": "Un ballon gonflable",
+      "question": "Quel mot québécois remplace « chat » pour une conversation écrite en ligne ?",
+      "reponse": "Le clavardage",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la suite secrète de caractères qui protège un compte ?",
+      "reponse": "Un mot de passe",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque de voitures allemande a quatre anneaux entrelacés ?",
-      "reponse": "Audi",
+      "question": "Quelles toupies de plastique s'affrontent dans une arène en criant leur nom ?",
+      "reponse": "Les Beyblade",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle activité enferme un groupe devant des énigmes à résoudre avant la fin du temps ?",
+      "reponse": "Un jeu d'évasion",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de voitures électriques porte le nom d'un inventeur serbe ?",
+      "reponse": "Tesla",
       "niveau": 2,
       "ages": [
         "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jouet tourne longtemps entre deux doigts et fut la mode de 2017 ?",
+      "reponse": "Le fidget spinner",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu électronique rond répète une suite de couleurs et de sons à imiter ?",
+      "reponse": "Le Simon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la publication qui s'efface au bout de vingt-quatre heures ?",
+      "reponse": "Une story",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de cordelette passe de mains en mains en formant des figures géométriques ?",
+      "reponse": "Le jeu de la ficelle",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu vidéo fait danser devant la télé en imitant un avatar à l'écran ?",
+      "reponse": "Just Dance",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jouet de cour d'école tourne pendant qu'on bondit par-dessus ?",
+      "reponse": "Une corde à sauter",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Où logeait le curé de la paroisse ?",
+      "reponse": "Au presbytère",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
+      "reponse": "Dans une galaxie près de chez vous",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle mascotte de pâte à biscuits rit quand on lui touche le ventre ?",
+      "reponse": "Le bonhomme Pillsbury",
+      "niveau": 2,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -35,9 +151,66 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Dans quel jeu abaisse-t-on des visages pour deviner le personnage de l'adversaire ?",
-      "reponse": "Qui est-ce ?",
+      "question": "Quel objet de métal en forme de U se cloue au-dessus d'une porte pour attirer la chance ?",
+      "reponse": "Un fer à cheval",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel défi a fait verser des seaux d'eau glacée sur des têtes en 2014 ?",
+      "reponse": "Le Ice Bucket Challenge",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
+      "reponse": "Josée di Stasio",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles croustilles de maïs triangulaires se trempent dans la salsa ?",
+      "reponse": "Les Doritos",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu retire une chaise à chaque tour pendant que la musique joue ?",
+      "reponse": "La chaise musicale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil envoyait une feuille de papier par la ligne téléphonique ?",
+      "reponse": "Le fax",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit personnage en habit vert aide le père Noël à l'atelier ?",
+      "reponse": "Un lutin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
+      "reponse": "Loft Story",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
     },
     {
       "categorie": "Culture pop",
@@ -48,164 +221,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel film de 2023 a porté le plombier moustachu de Nintendo au cinéma ?",
-      "reponse": "Super Mario Bros, le film",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel accessoire rembourré élargissait les épaules des vestons dans les années 80 ?",
-      "reponse": "L'épaulette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le jeu qui fait chercher des chocolats cachés à Pâques ?",
-      "reponse": "La chasse aux cocos",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
-      "reponse": "La guignolée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magasin à rayons offrait un comptoir-lunch où manger un hot-dog ?",
-      "reponse": "Woolworth",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de tour en bois s'effondre quand on retire la mauvaise pièce ?",
-      "reponse": "Jenga",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel objet rond et plat se lance entre deux joueurs et revient parfois tout seul ?",
-      "reponse": "Le boomerang",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel carré noir et blanc se scanne avec la caméra du téléphone ?",
-      "reponse": "Un code QR",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on l'habit qu'on enfile pour se transformer en personnage ?",
-      "reponse": "Un déguisement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois a créé la série Les Beaux Malaises ?",
-      "reponse": "Martin Matte",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité fait survivre des candidats sur une île en votant leur élimination ?",
-      "reponse": "Survivor",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
-      "reponse": "Une sirène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles espadrilles de planchistes affichent un damier noir et blanc ?",
-      "reponse": "Les Vans",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on l'objet qu'on tient à deux mains pour jouer à une console ?",
-      "reponse": "La manette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de la Wii proposait bowling, tennis et boxe avec la télécommande ?",
-      "reponse": "Wii Sports",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
-      "reponse": "Quétaine",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit pingouin de dessin animé porte une salopette et va à la garderie ?",
-      "reponse": "T'choupi",
-      "niveau": 2,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle application reconnaît une chanson après l'avoir écoutée quelques secondes ?",
-      "reponse": "Shazam",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on une histoire racontée en cases dessinées ?",
-      "reponse": "Une bande dessinée",
-      "niveau": 1
     }
   ]
 }

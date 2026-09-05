@@ -8,8 +8,18 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
-      "reponse": "Willie Lamothe",
+      "question": "Quel vêtement des années 60 a scandalisé en raccourcissant brusquement ?",
+      "reponse": "La minijupe",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
+      "reponse": "Dominique Michel et Denise Filiatrault",
       "niveau": 3,
       "ages": [
         "aines"
@@ -17,83 +27,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel cheval blanc porte une corne unique sur le front ?",
-      "reponse": "Une licorne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?",
-      "reponse": "La lessiveuse à tordeur",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit personnage en habit vert aide le père Noël à l'atelier ?",
-      "reponse": "Un lutin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quels ninjas de Lego portent chacun une couleur et un élément ?",
-      "reponse": "Ninjago",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission jeunesse québécoise est revenue à la télé en 2019, trente ans après ?",
-      "reponse": "Passe-Partout",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la petite lumière laissée allumée pour la nuit ?",
-      "reponse": "Une veilleuse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne de hamburgers porte un titre royal dans son nom ?",
-      "reponse": "Burger King",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles toupies de plastique s'affrontent dans une arène en criant leur nom ?",
-      "reponse": "Les Beyblade",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu fait poser mains et pieds sur des pastilles de couleur ?",
-      "reponse": "Le Twister",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel monologuiste québécois a écrit « Les unions, qu'ossa donne ? »",
-      "reponse": "Yvon Deschamps",
+      "question": "Quelle chaîne de café québécoise porte le nom de son fondateur ?",
+      "reponse": "Van Houtte",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -111,8 +46,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel appareil faisait le café en le faisant remonter dans un petit dôme de verre ?",
-      "reponse": "Le percolateur",
+      "question": "Quel humoriste québécois jouait le concierge Symphorien ?",
+      "reponse": "Gilles Latulippe",
       "niveau": 3,
       "ages": [
         "aines"
@@ -120,75 +55,58 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel type de piscine se monte dans la cour sans creuser le sol ?",
-      "reponse": "La piscine hors terre",
+      "question": "Quel concours de Tim Hortons fait dérouler le rebord d'un gobelet ?",
+      "reponse": "Roll Up the Rim",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel artiste fait disparaître des objets devant un public ébahi ?",
-      "reponse": "Un magicien",
-      "niveau": 1
+      "question": "Quelle application d'appels vidéo est devenue incontournable pendant la pandémie ?",
+      "reponse": "Zoom",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de combat de Nintendo réunit ses personnages sur une même scène ?",
-      "reponse": "Super Smash Bros",
+      "question": "Quel personnage de conte chaussé de bottes parle au nom de son maître ?",
+      "reponse": "Le Chat botté",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit âne de dessin animé français est très curieux ?",
+      "reponse": "Trotro",
+      "niveau": 3,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
+      "reponse": "Les Baronets",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel film Pixar de 2023 fait vivre ensemble le feu, l'eau, la terre et l'air ?",
+      "reponse": "Élémentaire",
       "niveau": 2,
       "ages": [
         "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel rouleau de riz translucide se trempe dans une sauce aux arachides ?",
-      "reponse": "Le rouleau de printemps",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
-      "reponse": "Michel Louvain",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle société d'État a le monopole de la vente d'alcool au Québec ?",
-      "reponse": "La SAQ",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise fait cohabiter des célibataires devant les caméras ?",
-      "reponse": "Occupation Double",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel pichet souriant défonce les murs en criant « Oh yeah » ?",
-      "reponse": "Le pichet Kool-Aid",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
+        "ados"
       ]
     },
     {
@@ -204,19 +122,103 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?",
-      "reponse": "Luca",
-      "niveau": 2,
+      "question": "Quel appareil du restaurant jouait une chanson contre une pièce de monnaie ?",
+      "reponse": "Le juke-box",
+      "niveau": 3,
       "ages": [
-        "enfants",
-        "ados"
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
-      "reponse": "Le Village Vacances Valcartier",
+      "question": "Quelle petite fille russe vit des aventures avec un ours dans un dessin animé ?",
+      "reponse": "Macha",
+      "niveau": 2,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de restaurants sert sa root beer dans une chope givrée ?",
+      "reponse": "A&W",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Sur quel objet de ménage les sorcières se déplacent-elles dans le ciel ?",
+      "reponse": "Un balai",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plage du Maine est la destination classique des vacances québécoises ?",
+      "reponse": "Old Orchard",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature de la nuit dort dans un cercueil et craint l'ail ?",
+      "reponse": "Un vampire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu se joue à deux avec le pouce pour immobiliser celui de l'autre ?",
+      "reponse": "La lutte de pouces",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel effet corrige et robotise la voix d'un chanteur en studio ?",
+      "reponse": "L'autotune",
       "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit gâteau rond de Vachon porte un prénom masculin ?",
+      "reponse": "Le Jos Louis",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de hamburgers canadienne garnit le pain devant le client ?",
+      "reponse": "Harvey's",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel rouleau de riz translucide se trempe dans une sauce aux arachides ?",
+      "reponse": "Le rouleau de printemps",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil blanc d'Apple faisait tourner la musique avec une molette ?",
+      "reponse": "Le iPod",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",

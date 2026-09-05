@@ -8,21 +8,61 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelle rébellion québécoise eut lieu en 1837 ?",
-      "reponse": "Les Patriotes",
-      "niveau": 2,
+      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
+      "reponse": "Traité de Paris",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
-      "reponse": "Gary Carter",
+      "categorie": "Musique",
+      "question": "Quelle danse québécoise fait taper les pieds au son du violon ?",
+      "reponse": "La gigue",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle fête québécoise célèbre le blé d'Inde ?",
+      "reponse": "L'épluchette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Le pluriel de caillou prend un S ou un X ?",
+      "reponse": "Un X",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle fleur bleue orne le drapeau du Québec ?",
+      "reponse": "La fleur de lys",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de café québécoise porte le nom de son fondateur ?",
+      "reponse": "Van Houtte",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle activité québécoise du printemps se fait dans une érablière, avec un repas ?",
+      "reponse": "La cabane à sucre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel événement montréalais ferme des rues chaque été pour des spectacles gratuits ?",
+      "reponse": "Le Festival de jazz",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -34,121 +74,75 @@
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel repas québécois se mange le midi ?",
-      "reponse": "Le dîner",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
-      "reponse": "L'érable",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle émission jeunesse québécoise est revenue à la télé en 2019, trente ans après ?",
-      "reponse": "Passe-Partout",
-      "niveau": 2,
+      "question": "Quel humoriste québécois d'origine marocaine raconte sa famille sur scène ?",
+      "reponse": "Rachid Badouri",
+      "niveau": 3,
       "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
-      "reponse": "Les Boys",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
-      "reponse": "La guignolée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu foncé se cueille dans les bois du Lac-Saint-Jean ?",
-      "reponse": "Le bleuet sauvage",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?",
-      "reponse": "Le pont Champlain",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
-      "reponse": "Watatatow",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel mot québécois désigne une fête ?",
-      "reponse": "Un party",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel organisme québécois délivre les permis de conduire et les plaques ?",
-      "reponse": "La SAAQ",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans quelle émission québécoise des vedettes chantent-elles cachées dans des costumes géants ?",
-      "reponse": "Chanteurs masqués",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
-      "reponse": "L'épinette",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
-      "reponse": "Dominique Michel et Denise Filiatrault",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie l'interjection québécoise tiguidou ?",
-      "reponse": "C'est parfait",
-      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel patineur québécois a remporté quatre médailles d'or olympiques en courte piste ?",
-      "reponse": "Charles Hamelin",
+      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
+      "reponse": "Alexandre Bilodeau",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
+      "reponse": "MusiquePlus",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on l'habitant de Trois-Rivières ?",
+      "reponse": "Un Trifluvien",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande île du golfe Saint-Laurent ?",
+      "reponse": "Anticosti",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
+      "reponse": "Nézet-Séguin",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse de Charlemagne est devenue une vedette mondiale dans les années 90 ?",
+      "reponse": "Céline Dion",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -158,35 +152,16 @@
       "niveau": 2
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
-      "reponse": "Pierre Falardeau",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série policière québécoise porte le numéro d'un poste de police ?",
-      "reponse": "District 31",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on les habitants des Îles-de-la-Madeleine ?",
-      "reponse": "Les Madelinots",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel repas québécois correspond au dîner français ?",
+      "reponse": "Le souper",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
+      "reponse": "La Grande Ourse",
+      "niveau": 3
     },
     {
       "categorie": "Musique",
@@ -199,14 +174,41 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel numéro portait Maurice Richard ?",
-      "reponse": "9",
-      "niveau": 1,
+      "categorie": "Cinéma et télé",
+      "question": "Quel groupe québécois a parodié les années 80 à la télé ?",
+      "reponse": "RBO",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur québécois a chanté Le petit roi ?",
+      "reponse": "Jean-Pierre Ferland",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
+      "reponse": "Expo 67",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville du Québec ?",
+      "reponse": "Montréal",
+      "niveau": 1
     }
   ]
 }

@@ -8,134 +8,36 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Quelle est la plus petite province canadienne ?",
-      "reponse": "Prince-Édouard",
+      "question": "Capitale de l'Écosse ?",
+      "reponse": "Édimbourg",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel animal des Andes crache quand il est fâché ?",
+      "reponse": "Le lama",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on les grandes îles du golfe où l'on va en traversier l'été ?",
-      "reponse": "Les Îles-de-la-Madeleine",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays voisin de la France et de l'Italie parle-t-on quatre langues officielles ?",
-      "reponse": "La Suisse",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel territoire canadien a Whitehorse pour capitale ?",
-      "reponse": "Le Yukon",
-      "niveau": 2,
+      "question": "Quel fleuve traverse Rome ?",
+      "reponse": "Le Tibre",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel détroit sépare l'Europe de l'Afrique ?",
-      "reponse": "Gibraltar",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne produit le plus de pétrole ?",
-      "reponse": "L'Alberta",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'encadré qui explique les symboles d'une carte ?",
-      "reponse": "La légende",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouvent les pyramides et le Sphinx ?",
-      "reponse": "L'Égypte",
+      "question": "Quel point le plus au nord de la Terre est le domicile du père Noël ?",
+      "reponse": "Le pôle Nord",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le terrain planté de pommiers ?",
-      "reponse": "Un verger",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
-      "reponse": "Les Pyrénées",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays d'Asie compte plus de 17000 îles ?",
-      "reponse": "L'Indonésie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays entoure complètement le Lesotho ?",
-      "reponse": "Afrique du Sud",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve Petra, la cité rose ?",
-      "reponse": "La Jordanie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
-      "reponse": "La Finlande",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel état américain touche le Québec et le Nouveau-Brunswick ?",
-      "reponse": "Le Maine",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Géographie",
@@ -145,22 +47,11 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de la Russie ?",
-      "reponse": "Moscou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on des koalas et des kangourous ?",
-      "reponse": "L'Australie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle mer intérieure borde le Kazakhstan et l'Iran ?",
-      "reponse": "La Caspienne",
-      "niveau": 3,
+      "question": "Quel état américain touche le Québec et le Nouveau-Brunswick ?",
+      "reponse": "Le Maine",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -178,21 +69,51 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Où se trouvent les pyramides de Gizeh ?",
-      "reponse": "En Égypte",
+      "question": "Comment appelle-t-on la ville où siège le gouvernement d'un pays ?",
+      "reponse": "La capitale",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel est le plus haut sommet du monde ?",
-      "reponse": "L'Everest",
+      "question": "Quel pays insulaire du nord de l'Atlantique compte des volcans et des geysers ?",
+      "reponse": "L'Islande",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a la forme d'une longue bande le long de l'océan Pacifique ?",
+      "reponse": "Le Chili",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?",
+      "reponse": "Le pont Champlain",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle région du Québec est célèbre pour ses bleuets ?",
+      "reponse": "Le Lac-Saint-Jean",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien y a-t-il de pôles sur la Terre ?",
+      "reponse": "Deux",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?",
-      "reponse": "La baie James",
-      "niveau": 3,
+      "question": "Capitale de la Russie ?",
+      "reponse": "Moscou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel désert froid couvre une partie de la Mongolie ?",
+      "reponse": "Le Gobi",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -201,8 +122,70 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel grand fleuve traverse l'Amazonie ?",
-      "reponse": "L'Amazone",
+      "question": "Quel archipel espagnol se trouve au large du Maroc ?",
+      "reponse": "Les Canaries",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle saison amène la neige au Québec ?",
+      "reponse": "L'hiver",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien d'états composent les États-Unis ?",
+      "reponse": "50",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Mexique ?",
+      "reponse": "Mexico",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une des sept grandes masses de terre du globe ?",
+      "reponse": "Un continent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Norvège ?",
+      "reponse": "Oslo",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel océan sépare le Québec de l'Europe ?",
+      "reponse": "L'océan Atlantique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel désert chilien est le plus aride du monde ?",
+      "reponse": "L'Atacama",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve Londres ?",
+      "reponse": "L'Angleterre",
       "niveau": 1
     }
   ]

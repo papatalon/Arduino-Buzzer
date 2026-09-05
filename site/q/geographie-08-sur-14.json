@@ -8,8 +8,35 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Inde ?",
-      "reponse": "New Delhi",
+      "question": "Quelle ville du Québec accueille chaque été le Festival de la poutine ?",
+      "reponse": "Drummondville",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Suisse ?",
+      "reponse": "Berne",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une grande étendue d'eau douce entourée de terre ?",
+      "reponse": "Un lac",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Irlande ?",
+      "reponse": "Dublin",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,26 +46,81 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle feuille rouge orne le drapeau du Canada ?",
-      "reponse": "La feuille d'érable",
+      "question": "Quelle mer intérieure borde le Kazakhstan et l'Iran ?",
+      "reponse": "La Caspienne",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?",
+      "reponse": "La ville de Québec",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Chine ?",
+      "reponse": "Pékin",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la Grande Muraille ?",
-      "reponse": "La Chine",
+      "question": "Quel continent n'a aucun pays ?",
+      "reponse": "L'Antarctique",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel volcan sicilien est le plus actif d'Europe ?",
-      "reponse": "L'Etna",
+      "question": "Capitale de Terre-Neuve ?",
+      "reponse": "Saint-Jean",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le passage étroit d'eau entre deux terres ?",
+      "reponse": "Un détroit",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ville canadienne abrite la Tour CN ?",
+      "reponse": "Toronto",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle cordillère longe l'Amérique du Sud ?",
+      "reponse": "Les Andes",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus haute montagne du Canada ?",
+      "reponse": "Le mont Logan",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
+      "reponse": "L'hémisphère nord",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
@@ -48,25 +130,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale du Nouveau-Brunswick ?",
-      "reponse": "Fredericton",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Canada ?",
-      "reponse": "Ottawa",
+      "question": "Quelle tour de fer domine Paris ?",
+      "reponse": "La tour Eiffel",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel archipel espagnol se trouve au large du Maroc ?",
-      "reponse": "Les Canaries",
+      "question": "Quelle ville sainte est commune à trois religions ?",
+      "reponse": "Jérusalem",
       "niveau": 2,
       "ages": [
         "ados",
@@ -76,26 +147,44 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel petit pays d'Amérique centrale est réputé pour sa forêt tropicale et sa faune ?",
-      "reponse": "Le Costa Rica",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale des États-Unis ?",
-      "reponse": "Washington",
+      "question": "Quel est le plus grand désert chaud du monde ?",
+      "reponse": "Le Sahara",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de la Pologne ?",
-      "reponse": "Varsovie",
+      "question": "Quelle feuille rouge orne le drapeau du Canada ?",
+      "reponse": "La feuille d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Où se trouvent les pyramides de Gizeh ?",
+      "reponse": "En Égypte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve la majorité de l'Amazonie ?",
+      "reponse": "Le Brésil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Autriche ?",
+      "reponse": "Vienne",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
+      "reponse": "L'épinette",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
@@ -107,102 +196,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la tour de Pise ?",
-      "reponse": "L'Italie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville italienne est célèbre pour ses canaux ?",
-      "reponse": "Venise",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la ligne où le ciel semble toucher la mer ?",
-      "reponse": "L'horizon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel désert couvre le sud-ouest africain ?",
-      "reponse": "Le Kalahari",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Vietnam ?",
-      "reponse": "Hanoï",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se dresse le Kilimandjaro ?",
-      "reponse": "L'Afrique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays scandinave est célèbre pour ses fjords ?",
-      "reponse": "La Norvège",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville est surnommée la Ville éternelle ?",
-      "reponse": "Rome",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays produit le plus de sirop d'érable ?",
-      "reponse": "Le Canada",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a un drapeau avec une étoile de David ?",
-      "reponse": "Israël",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve l'Australie ?",
-      "reponse": "L'Océanie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a pour emblème le panda ?",
-      "reponse": "La Chine",
-      "niveau": 1
     }
   ]
 }

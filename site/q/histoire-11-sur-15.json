@@ -8,38 +8,27 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quel astronaute canadien a chanté dans l'espace ?",
-      "reponse": "Chris Hadfield",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on les rois de l'Égypte ancienne ?",
-      "reponse": "Les pharaons",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle ville a été fondée en 1642 sous le nom de Ville-Marie ?",
-      "reponse": "Montréal",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quel empire avait Rome pour capitale ?",
       "reponse": "L'Empire romain",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année le Canada a-t-il adopté son drapeau actuel ?",
-      "reponse": "1965",
-      "niveau": 3,
+      "question": "Comment appelait-on les combats à cheval où deux chevaliers se chargeaient avec des lances ?",
+      "reponse": "Les joutes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel savant italien a affirmé que la Terre tourne autour du Soleil ?",
+      "reponse": "Galilée",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
+      "reponse": "Challenger",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -47,8 +36,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel cercle de pierres dressées se dresse dans une plaine anglaise ?",
-      "reponse": "Stonehenge",
+      "question": "Quel chemin de fer a uni le Canada en 1885 ?",
+      "reponse": "Canadien Pacifique",
       "niveau": 2,
       "ages": [
         "ados",
@@ -58,14 +47,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la période qui suit l'Antiquité, celle des châteaux forts ?",
-      "reponse": "Le Moyen Âge",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel tunnel sous la mer a ouvert en 1994 ?",
-      "reponse": "Sous la Manche",
+      "question": "Quelle date redoutaient les informaticiens en 1999 ?",
+      "reponse": "Le 1er janvier 2000",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -74,8 +57,51 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel avion supersonique reliait Paris et New York ?",
-      "reponse": "Le Concorde",
+      "question": "Quel leader pacifiste a libéré l'Inde ?",
+      "reponse": "Gandhi",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel inventeur italien est considéré comme le père de la radio ?",
+      "reponse": "Marconi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
+      "reponse": "Expo 67",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple antique a inventé l'écriture cunéiforme ?",
+      "reponse": "Les Sumériens",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle bataille grecque a donné son nom à une course ?",
+      "reponse": "Marathon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel gangster régnait sur Chicago ?",
+      "reponse": "Al Capone",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -84,8 +110,34 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle grande bibliothèque antique a brûlé ?",
-      "reponse": "Alexandrie",
+      "question": "En quelle année l'URSS a-t-elle disparu ?",
+      "reponse": "1991",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
+      "reponse": "Traité de Paris",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la grande statue ou la stèle élevée en mémoire de quelqu'un ?",
+      "reponse": "Un monument",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle ville fut la capitale de l'Empire byzantin ?",
+      "reponse": "Constantinople",
       "niveau": 2,
       "ages": [
         "ados",
@@ -95,122 +147,70 @@
     },
     {
       "categorie": "Histoire",
-      "question": "De quoi étaient faits les premiers outils des hommes préhistoriques ?",
-      "reponse": "De pierre",
+      "question": "Quelle grippe a fait des millions de morts en 1918 ?",
+      "reponse": "Grippe espagnole",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel scientifique fouille la terre pour trouver des objets anciens ?",
+      "reponse": "Un archéologue",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle ruée vers l'or a attiré des milliers de gens au Yukon ?",
+      "reponse": "Klondike",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention permet de parler à quelqu'un qui est loin ?",
+      "reponse": "Le téléphone",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année a eu lieu la Confédération canadienne ?",
-      "reponse": "1867",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel tissu précieux venait de Chine par une longue route caravanière ?",
-      "reponse": "La soie",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Dans quelle ville Jeanne d'Arc fut-elle brûlée ?",
-      "reponse": "Rouen",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel pharaon bâtisseur a régné 66 ans ?",
-      "reponse": "Ramsès II",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle arme de jet permettait aux chasseurs préhistoriques d'atteindre les bêtes de loin ?",
-      "reponse": "Une lance",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel navire insubmersible a coulé en 1912 ?",
-      "reponse": "Le Titanic",
+      "question": "Comment appelle-t-on la grande maison fortifiée d'un seigneur, avec ses tours ?",
+      "reponse": "Un château fort",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
-      "reponse": "Pizarro",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?",
-      "reponse": "La capitale du royaume",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention fixe une image sur du papier depuis le 19e siècle ?",
-      "reponse": "La photographie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels dirigeables allemands portaient un nom de comte ?",
-      "reponse": "Les zeppelins",
+      "question": "Quel roi anglais a eu six épouses ?",
+      "reponse": "Henri VIII",
       "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel navigateur a mené la première expédition autour du monde ?",
-      "reponse": "Magellan",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle station spatiale russe a précédé l'ISS ?",
-      "reponse": "Mir",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel bâton orné le roi tient-il en main comme signe de son pouvoir ?",
-      "reponse": "Le sceptre",
-      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel canal relie la Méditerranée à la mer Rouge ?",
+      "reponse": "Suez",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année Colomb a-t-il atteint l'Amérique ?",
+      "reponse": "1492",
+      "niveau": 2
     }
   ]
 }

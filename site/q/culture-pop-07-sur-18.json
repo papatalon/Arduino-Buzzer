@@ -8,14 +8,45 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quel personnage au chapeau pointu vole sur un balai ?",
-      "reponse": "Une sorcière",
+      "question": "Quel carré de plastique de trois pouces et demi stockait des fichiers d'ordinateur ?",
+      "reponse": "La disquette",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel pichet souriant défonce les murs en criant « Oh yeah » ?",
+      "reponse": "Le pichet Kool-Aid",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quels petits papiers colorés se lancent en l'air pour fêter ?",
+      "reponse": "Des confettis",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel appareil de salon lisait les 33 tours avec un bras et une aiguille ?",
-      "reponse": "Le tourne-disque",
+      "question": "Quelle machine d'arcade vitrée fait descendre une griffe sur des peluches ?",
+      "reponse": "La machine à pinces",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel grand magasin de vêtements québécois porte un nom de famille ?",
+      "reponse": "Simons",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -24,47 +55,18 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle animatrice québécoise est surnommée Véro ?",
-      "reponse": "Véronique Cloutier",
+      "question": "Quelles espadrilles de planchistes affichent un damier noir et blanc ?",
+      "reponse": "Les Vans",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle série mettait en scène un couple joué par Guy A. Lepage et Sylvie Léonard ?",
-      "reponse": "Un gars, une fille",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?",
-      "reponse": "Fanfreluche",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
-      "reponse": "Le tramway",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans Pokémon, dans quel objet enferme-t-on les créatures capturées ?",
-      "reponse": "Une Poké Ball",
+      "question": "Quelle entreprise japonaise a créé Mario et Zelda ?",
+      "reponse": "Nintendo",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -74,36 +76,60 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel est le slogan de Nike, en trois mots anglais ?",
-      "reponse": "Just Do It",
+      "question": "Quelle application reconnaît une chanson après l'avoir écoutée quelques secondes ?",
+      "reponse": "Shazam",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle fillette rousse aux nattes tressées est la plus forte du monde ?",
-      "reponse": "Fifi Brindacier",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature à écailles crache du feu et garde un trésor ?",
-      "reponse": "Un dragon",
+      "question": "Quelle tradition québécoise fait couler du sirop bouillant sur la neige ?",
+      "reponse": "La tire sur la neige",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel petit personnage barbu en bonnet rouge décore les jardins ?",
-      "reponse": "Un nain de jardin",
-      "niveau": 2
+      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
+      "reponse": "Michel Louvain",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?",
+      "reponse": "Luca",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on une bande dessinée japonaise ?",
+      "reponse": "Un manga",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quels bonbons durs multicolores promettent de goûter l'arc-en-ciel ?",
+      "reponse": "Les Skittles",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Culture pop",
@@ -117,8 +143,64 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Où regardait-on un film assis dans son auto, l'été ?",
-      "reponse": "Au ciné-parc",
+      "question": "Quelle confiserie maison se fait avec de la crème et de la cassonade ?",
+      "reponse": "Le sucre à la crème",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
+      "reponse": "Willie Lamothe",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on un être venu d'une autre planète ?",
+      "reponse": "Un extraterrestre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
+      "reponse": "Lululemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
+      "reponse": "Rue des Pignons",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel montagnard accompagne Anna avec son renne dans La Reine des neiges ?",
+      "reponse": "Kristoff",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle attraction de parc aquatique fait descendre un long tube en spirale ?",
+      "reponse": "La glissade d'eau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel monologuiste québécois a écrit « Les unions, qu'ossa donne ? »",
+      "reponse": "Yvon Deschamps",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -127,98 +209,19 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de cartes fait réunir des familles complètes en les demandant aux autres ?",
-      "reponse": "Le jeu des sept familles",
+      "question": "Quelle marque de slush colorée se vend chez Couche-Tard ?",
+      "reponse": "Sloche",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quoi les paroles d’un personnage de bande dessinée sont-elles écrites ?",
+      "reponse": "Une bulle",
       "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature bleue de Disney, échappée de l'espace, s'appelle l'expérience 626 ?",
-      "reponse": "Stitch",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle grande chaussette suspend-on à la cheminée en attendant le père Noël ?",
-      "reponse": "Un bas de Noël",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
-      "reponse": "Watatatow",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission matinale de TVA réveille le Québec en semaine ?",
-      "reponse": "Salut Bonjour",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de cartes à collectionner fait évoluer des créatures de poche ?",
-      "reponse": "Pokémon",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle boisson gazeuse a longtemps servi de surnom moqueur aux Québécois ?",
-      "reponse": "Le Pepsi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le collant coloré donné en récompense dans un cahier ?",
-      "reponse": "Un autocollant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel camion de course rouge et bleu affronte Crusher dans une série pour enfants ?",
-      "reponse": "Blaze",
-      "niveau": 3,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle technologie sans fil relie des écouteurs à un téléphone à quelques mètres ?",
-      "reponse": "Le Bluetooth",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel objet rond et plat se lance à deux dans un parc l'été ?",
-      "reponse": "Un frisbee",
-      "niveau": 1
     }
   ]
 }

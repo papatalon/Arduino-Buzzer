@@ -7,45 +7,50 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle épice noire moulue accompagne le sel sur la table ?",
-      "reponse": "Le poivre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Sur quelle surface glacée se joue le hockey ?",
-      "reponse": "La patinoire",
+      "categorie": "Sciences et nature",
+      "question": "Le dauphin est-il un poisson ou un mammifère ?",
+      "reponse": "Un mammifère",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "De quoi sont faits les nuages ?",
-      "reponse": "Gouttelettes d'eau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle chenille fabrique un fil précieux en tissant son cocon ?",
-      "reponse": "Le ver à soie",
+      "question": "Quelle fleur suit le Soleil ?",
+      "reponse": "Le tournesol",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à tartiner aux noisettes est adorée ?",
-      "reponse": "Le Nutella",
+      "question": "Quel jambon italien se mange en tranches fines ?",
+      "reponse": "Le prosciutto",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Chez quel animal le mâle porte-t-il les bébés ?",
+      "reponse": "L'hippocampe",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel cheval mythologique a des ailes ?",
-      "reponse": "Pégase",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
+      "reponse": "Bob l'éponge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que veut dire « il fait frette » ?",
+      "reponse": "Il fait très froid",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Féminin d'empereur ?",
-      "reponse": "Impératrice",
+      "question": "Comment nomme-t-on la peur des espaces clos ?",
+      "reponse": "La claustrophobie",
       "niveau": 1,
       "ages": [
         "ados",
@@ -54,54 +59,61 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la statuette du cinéma américain ?",
-      "reponse": "L'Oscar",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Dans quelle ville l'aquarium présente-t-il des ours blancs ?",
-      "reponse": "Québec",
+      "categorie": "Culture générale",
+      "question": "Combien font dix fois dix ?",
+      "reponse": "100",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel roi figure sur les nouvelles pièces de monnaie canadiennes depuis 2023 ?",
-      "reponse": "Charles III",
+      "question": "Quel peuple de l'Antiquité a inventé les Jeux olympiques ?",
+      "reponse": "Les Grecs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel artiste fait disparaître des objets devant un public ébahi ?",
+      "reponse": "Un magicien",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel cochon de cinéma veut devenir chien de berger ?",
+      "reponse": "Babe",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Que souffle-t-on sur le gâteau de fête après avoir fait un vœu ?",
+      "reponse": "Les bougies",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport frappe une petite balle blanche vers un trou avec un drapeau ?",
+      "reponse": "Le golf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ogre vert a une femme nommée Fiona ?",
+      "reponse": "Shrek",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'école qui suit le primaire, pendant cinq ans ?",
+      "reponse": "Le secondaire",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Sur quelle estrade les artistes se produisent-ils ?",
-      "reponse": "La scène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Sur quelle application les photos envoyées disparaissent-elles après quelques secondes ?",
-      "reponse": "Snapchat",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin géant souffle un jet d'eau par le dos ?",
-      "reponse": "La baleine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée en Argentine ?",
-      "reponse": "L'espagnol",
+      "question": "Quel chanteur jamaïcain a popularisé le reggae ?",
+      "reponse": "Bob Marley",
       "niveau": 1,
       "ages": [
         "ados",
@@ -110,69 +122,67 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel monument italien penche dangereusement depuis des siècles ?",
-      "reponse": "La tour de Pise",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles petites portions espagnoles se partagent ?",
+      "reponse": "Les tapas",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de force oppose deux équipes de chaque côté d'un même câble ?",
+      "reponse": "Le tir à la corde",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Quel est le contraire de proche ?",
-      "reponse": "Loin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le lionceau du Roi Lion ?",
-      "reponse": "Simba",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse polynésienne navigue avec Maui ?",
-      "reponse": "Moana",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style musical parle-chante sur des rythmes ?",
-      "reponse": "Le rap",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le pluriel de « un animal » ?",
-      "reponse": "Des animaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quels petits papiers colorés se lancent en l'air pour fêter ?",
-      "reponse": "Des confettis",
+      "question": "Que signifie avoir la tête dans les nuages ?",
+      "reponse": "Être rêveur",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle partie de l'église pointe vers le ciel et se voit de loin dans un village ?",
-      "reponse": "Le clocher",
+      "question": "Quel organisme veille sur la langue française au Québec ?",
+      "reponse": "L'OQLF",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment s'appelle le petit du cochon ?",
+      "reponse": "Le porcelet",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se tient le grand carnaval de Rio ?",
-      "reponse": "Le Brésil",
+      "question": "Dans quel pays se trouvent les pyramides et le Sphinx ?",
+      "reponse": "L'Égypte",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quoi est fait le fromage ?",
-      "reponse": "Du lait",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on une chanson enregistrée avec deux artistes vedettes ?",
+      "reponse": "Un duo",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
-      "reponse": "Le slalom",
+      "categorie": "Culture générale",
+      "question": "Combien de couleurs dans un arc-en-ciel ?",
+      "reponse": "Sept",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle fleur bleue orne le drapeau du Québec ?",
+      "reponse": "La fleur de lys",
       "niveau": 1
     }
   ]

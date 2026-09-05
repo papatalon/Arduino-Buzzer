@@ -8,25 +8,20 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel petit légume vert et rond roule dans l'assiette ?",
-      "reponse": "Le petit pois",
-      "niveau": 1
+      "question": "Quel agrume vert et acide parfume la limonade ?",
+      "reponse": "La lime",
+      "niveau": 2
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle salade libanaise contient persil et boulgour ?",
-      "reponse": "Le taboulé",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel pain plus foncé garde l'enveloppe et le germe du grain ?",
+      "reponse": "Le pain de blé entier",
+      "niveau": 2
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle herbe verte garnit la pizza margherita ?",
-      "reponse": "Le basilic",
+      "question": "Quelle semoule accompagne les plats du Maghreb ?",
+      "reponse": "Le couscous",
       "niveau": 1,
       "ages": [
         "ados",
@@ -36,31 +31,8 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "De quel pays vient la tequila ?",
-      "reponse": "Le Mexique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sirop noir parfume les galettes québécoises ?",
-      "reponse": "La mélasse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel bonbon rond se tient au bout d'un bâton ?",
-      "reponse": "Un suçon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat marocain cuit dans un plat conique ?",
-      "reponse": "Le tajine",
+      "question": "Quelles bouchées chinoises se servent à la vapeur ?",
+      "reponse": "Les dim sums",
       "niveau": 2,
       "ages": [
         "ados",
@@ -70,20 +42,38 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel repas se prend le soir au Québec ?",
-      "reponse": "Le souper",
+      "question": "Quels carrés croustillants se versent dans un bol avec du lait le matin ?",
+      "reponse": "Les céréales",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel pain français long et croustillant est emblématique ?",
-      "reponse": "La baguette",
+      "question": "Quel plat mexicain plie une tortilla garnie de viande et de fromage ?",
+      "reponse": "Le taco",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle écorce parfume les brioches roulées ?",
-      "reponse": "La cannelle",
+      "question": "Quelle pâte à base de tomates nappe les pizzas ?",
+      "reponse": "La sauce tomate",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ustensile en fils de métal bat les œufs en mousse ?",
+      "reponse": "Le fouet",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit légume rond, rouge dehors et blanc dedans, pique la langue ?",
+      "reponse": "Le radis",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Dans quel objet à anse boit-on un café chaud ?",
+      "reponse": "Une tasse",
       "niveau": 1
     },
     {
@@ -99,14 +89,53 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit rouge trempe-t-on dans le chocolat fondu ?",
-      "reponse": "La fraise au chocolat",
-      "niveau": 2
+      "question": "Quel plat brésilien est un ragoût de haricots noirs ?",
+      "reponse": "La feijoada",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat espagnol froid est une soupe de tomates ?",
-      "reponse": "Le gaspacho",
+      "question": "Pays d'origine du pad thaï ?",
+      "reponse": "La Thaïlande",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume en longues tiges vertes croque avec du beurre d'arachide ?",
+      "reponse": "Le céleri",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas se glisse entre deux tranches de pain pour la boîte à lunch ?",
+      "reponse": "Un sandwich",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit vert ou jaune a la forme d'une goutte ?",
+      "reponse": "La poire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle épice noire moulue accompagne le sel sur la table ?",
+      "reponse": "Le poivre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine du kimchi ?",
+      "reponse": "La Corée",
       "niveau": 2,
       "ages": [
         "ados",
@@ -116,38 +145,14 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle tranche de pain grillée se beurre le matin ?",
-      "reponse": "Une rôtie",
+      "question": "Quelle boisson se prépare avec du citron, de l'eau et du sucre ?",
+      "reponse": "La limonade",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "De quel pays viennent les tacos ?",
-      "reponse": "Le Mexique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles tranches de pommes de terre frites et salées se vendent en sac ?",
-      "reponse": "Les croustilles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment blanc en grains adoucit le café et entre dans tous les gâteaux ?",
-      "reponse": "Le sucre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile tranchant coupe la viande ?",
-      "reponse": "Le couteau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat suisse racle du fromage fondu ?",
-      "reponse": "La raclette",
+      "question": "Quel plat français mijote du bœuf au vin rouge ?",
+      "reponse": "Bœuf bourguignon",
       "niveau": 1,
       "ages": [
         "ados",
@@ -157,8 +162,18 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel riz crémeux italien cuit au bouillon ?",
-      "reponse": "Le risotto",
+      "question": "Quel dessert meringué porte le nom d'une ballerine ?",
+      "reponse": "La pavlova",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle soupe japonaise est à base de pâte de soja ?",
+      "reponse": "La soupe miso",
       "niveau": 1,
       "ages": [
         "ados",
@@ -168,32 +183,15 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "De quel pays viennent les sushis ?",
-      "reponse": "Le Japon",
+      "question": "Quel fruit violet à noyau, une fois séché, aide à la digestion ?",
+      "reponse": "La prune",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel grain blanc met-on dans la salière ?",
-      "reponse": "Le sel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle huile méditerranéenne est pressée d'un fruit ?",
-      "reponse": "Huile d'olive",
+      "question": "Quel ragoût du temps des fêtes se sert avec des boulettes, dans une sauce épaissie à la farine grillée ?",
+      "reponse": "Le ragoût de pattes",
       "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage bleu français au lait de brebis est le plus célèbre ?",
-      "reponse": "Le roquefort",
-      "niveau": 2,
       "ages": [
         "ados",
         "adultes",

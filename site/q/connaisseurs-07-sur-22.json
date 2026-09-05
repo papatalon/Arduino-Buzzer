@@ -7,18 +7,19 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Québec",
-      "question": "Qui a composé la musique de l'hymne O Canada ?",
-      "reponse": "Calixa Lavallée",
+      "categorie": "Histoire",
+      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
+      "reponse": "Pierre de Rosette",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "En quelle année l'euro est-il entré en circulation ?",
-      "reponse": "2002",
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
+      "reponse": "La dionée",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -27,8 +28,19 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
-      "reponse": "Les Denis Drolet",
+      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
+      "reponse": "Le Village Vacances Valcartier",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
+      "reponse": "Dans une galaxie près de chez vous",
       "niveau": 3,
       "ages": [
         "adultes"
@@ -36,8 +48,105 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanson de Toto porte le nom d'un continent ?",
-      "reponse": "Africa",
+      "question": "Combien de cordes a un violoncelle ?",
+      "reponse": "Quatre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
+      "reponse": "L'Alberta",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel amiral anglais a gagné Trafalgar ?",
+      "reponse": "Nelson",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelait-on le téléphone que plusieurs foyers du village devaient se partager ?",
+      "reponse": "La ligne partagée",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel tunnel fait passer l'autoroute sous le centre-ville de Montréal ?",
+      "reponse": "Le tunnel Ville-Marie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle pianiste et chanteuse québécoise se fait appeler Cœur de pirate ?",
+      "reponse": "Béatrice Martin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel congé de mai précède la saison du jardinage au Québec ?",
+      "reponse": "La journée nationale des patriotes",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
+      "reponse": "Le smoked meat",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel lac canadien est le plus profond ?",
+      "reponse": "Lac des Esclaves",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Où se tenaient les courses de chars à Rome ?",
+      "reponse": "Le Circus Maximus",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport oppose deux nageurs qui se poussent un ballon dans une piscine ?",
+      "reponse": "Le water-polo",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel artiste québécois a fait sensation avec l'album Darlène ?",
+      "reponse": "Hubert Lenoir",
       "niveau": 3,
       "ages": [
         "ados",
@@ -46,24 +155,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?",
-      "reponse": "La Station spatiale internationale",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil photo de carton s'achetait plein et se rapportait complet à développer ?",
-      "reponse": "L'appareil jetable",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année l'Allemagne s'est-elle réunifiée ?",
-      "reponse": "1990",
+      "question": "En quelle année eut lieu la bataille de Waterloo ?",
+      "reponse": "1815",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -80,148 +173,58 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville américaine se trouve Disney World ?",
-      "reponse": "Orlando",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
-      "reponse": "Le Jolly Roger",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la distance entre un do et le do suivant ?",
-      "reponse": "Une octave",
-      "niveau": 3
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat brésilien est un ragoût de haricots noirs ?",
-      "reponse": "La feijoada",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle pédale du piano prolonge les notes après qu'on a levé les doigts ?",
-      "reponse": "La pédale forte",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la répétition complète faite la veille d'un spectacle ?",
-      "reponse": "La générale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
-      "reponse": "La podorythmie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a la forme d'une longue bande le long de l'océan Pacifique ?",
-      "reponse": "Le Chili",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel tunnel fait passer l'autoroute sous le centre-ville de Montréal ?",
-      "reponse": "Le tunnel Ville-Marie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu télévisé opposait des équipes d'élèves du secondaire ?",
-      "reponse": "Génies en herbe",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe canadien a chanté American Woman ?",
-      "reponse": "The Guess Who",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de points vaut la bille noire au snooker ?",
-      "reponse": "Sept",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la longue route de campagne bordée de fermes au Québec ?",
-      "reponse": "Un rang",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
-      "reponse": "Dans l'œil du dragon",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
-      "reponse": "La Grande Ourse",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magasin à rayons offrait un comptoir-lunch où manger un hot-dog ?",
-      "reponse": "Woolworth",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Qui collectionne les pièces de monnaie ?",
-      "reponse": "Un numismate",
+      "question": "Quelle science étudie l'origine et l'histoire des mots ?",
+      "reponse": "L'étymologie",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on les chansons anciennes transmises de génération en génération ?",
+      "reponse": "Le folklore",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel petit rongeur rayé du Québec remplit ses joues de graines ?",
+      "reponse": "Le suisse",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel pichet souriant défonce les murs en criant « Oh yeah » ?",
+      "reponse": "Le pichet Kool-Aid",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle note dure deux fois moins longtemps qu'une blanche ?",
+      "reponse": "La noire",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel lac est le plus profond du monde ?",
+      "reponse": "Le Baïkal",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel monologuiste québécois a écrit « Les unions, qu'ossa donne ? »",
+      "reponse": "Yvon Deschamps",
       "niveau": 3,
       "ages": [
         "adultes",

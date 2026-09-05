@@ -7,9 +7,9 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Géographie",
-      "question": "Capitale du Vietnam ?",
-      "reponse": "Hanoï",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle épice est la plus chère au monde ?",
+      "reponse": "Le safran",
       "niveau": 2,
       "ages": [
         "ados",
@@ -18,9 +18,27 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Sur quelle île de Montréal se court le Grand Prix de Formule 1 ?",
-      "reponse": "L'île Notre-Dame",
+      "categorie": "Culture générale",
+      "question": "Combien de côtés a un carré ?",
+      "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "En quelle saison les feuilles des arbres tombent-elles ?",
+      "reponse": "L'automne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le guerrier à cheval qui servait son seigneur ?",
+      "reponse": "Un chevalier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel pirate est joué par Johnny Depp ?",
+      "reponse": "Jack Sparrow",
       "niveau": 1,
       "ages": [
         "ados",
@@ -29,15 +47,85 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Quel gros oiseau noir et blanc plonge dans les lacs du Québec en poussant un cri plaintif ?",
+      "reponse": "Le huard",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de médailles d'or olympiques a Michael Phelps ?",
+      "reponse": "23",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la maison des fourmis ?",
-      "reponse": "La fourmilière",
+      "question": "Comment s'appelle la larve du papillon ?",
+      "reponse": "La chenille",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on au Québec la coupe de cheveux courte devant et longue derrière ?",
-      "reponse": "La coupe Longueuil",
+      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
+      "reponse": "Steinberg",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel réalisateur a fait Psychose et Les Oiseaux ?",
+      "reponse": "Hitchcock",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne qui vend des fleurs ?",
+      "reponse": "Un fleuriste",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quoi faut-il faire entrer le ballon pour marquer au basketball ?",
+      "reponse": "Le panier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel océan entoure le pôle Nord ?",
+      "reponse": "L'océan Arctique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel jardin montréalais est parmi les plus grands au monde ?",
+      "reponse": "Jardin botanique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle reine anglaise fut surnommée la Reine vierge ?",
+      "reponse": "Elizabeth Ire",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat chinois est un pain farci cuit vapeur ?",
+      "reponse": "Le bao",
       "niveau": 2,
       "ages": [
         "ados",
@@ -52,27 +140,20 @@
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Mario doit-il sauver ?",
-      "reponse": "Peach",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel journaliste est l'identité secrète de Superman ?",
-      "reponse": "Clark Kent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot de même sens ?",
-      "reponse": "Un synonyme",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat péruvien est du poisson cru mariné ?",
-      "reponse": "Le ceviche",
+      "question": "Quel chou fermenté accompagne les saucisses en Alsace ?",
+      "reponse": "La choucroute",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle cabane à sucre appartient au chef Martin Picard ?",
+      "reponse": "Au Pied de Cochon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -81,109 +162,43 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la liste de chansons qu'on se prépare pour une occasion ?",
-      "reponse": "Une liste de lecture",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
-      "reponse": "King Kong",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle attraction de Sainte-Foy présente des morses et des ours blancs ?",
-      "reponse": "L'Aquarium du Québec",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on les longs cônes de glace qui pendent des toits ?",
-      "reponse": "Des glaçons",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne le chandail chaud à capuchon ?",
-      "reponse": "Un coton ouaté",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle carte l'arbitre de soccer montre-t-il pour avertir un joueur ?",
-      "reponse": "Un carton jaune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel appareil garde le lait et les légumes au froid ?",
-      "reponse": "Le réfrigérateur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la musique jouée au début d'une émission de télé ?",
-      "reponse": "Le générique",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel oiseau portait les messages avant le télégraphe ?",
-      "reponse": "Le pigeon voyageur",
-      "niveau": 2
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Que signifie en faire tout un fromage ?",
-      "reponse": "Exagérer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Taj Mahal ?",
-      "reponse": "L'Inde",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de côtés a un carré ?",
-      "reponse": "Quatre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume vert ressemble à un petit arbre ?",
-      "reponse": "Le brocoli",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on celui qui garde un troupeau de moutons dans les champs ?",
-      "reponse": "Un berger",
+      "question": "Que signifie être blanc comme un drap ?",
+      "reponse": "Être très pâle",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Dans quel jeu de cartes doit-on annoncer qu'il ne reste qu'une seule carte en main ?",
-      "reponse": "Uno",
+      "question": "Comment appelle-t-on les petits visages jaunes qu'on glisse dans un message ?",
+      "reponse": "Un émoji",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient des barrages ?",
-      "reponse": "L'hydroélectricité",
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
+      "reponse": "Le Grand Nord",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Queen fait taper des pieds et des mains sur « We will, we will... » ?",
+      "reponse": "We Will Rock You",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film Pixar un rat devient-il chef cuisinier à Paris ?",
+      "reponse": "Ratatouille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse de la Barbade a chanté Umbrella ?",
+      "reponse": "Rihanna",
       "niveau": 1,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     }
   ]

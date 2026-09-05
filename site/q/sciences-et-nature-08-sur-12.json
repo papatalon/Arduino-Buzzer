@@ -8,48 +8,44 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quels sont les trois états de l'eau ?",
-      "reponse": "Solide liquide gaz",
+      "question": "Comment nomme-t-on une roche tombée de l'espace ?",
+      "reponse": "Une météorite",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gaz les plantes rejettent-elles le jour ?",
-      "reponse": "L'oxygène",
+      "question": "Quel gaz rend les ballons de fête flottants ?",
+      "reponse": "L'hélium",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel insecte soulève 50 fois son poids ?",
-      "reponse": "La fourmi",
+      "question": "Quel oiseau répète ce qu'on lui dit ?",
+      "reponse": "Le perroquet",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la maison des fourmis ?",
-      "reponse": "La fourmilière",
+      "question": "Quel petit animal à grosse queue touffue cache des noix pour l'hiver ?",
+      "reponse": "L'écureuil",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel poisson à l'aileron pointu fait fuir les baigneurs ?",
-      "reponse": "Le requin",
+      "question": "Quel métal les aimants attirent-ils ?",
+      "reponse": "Le fer",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de mois dure la gestation de l'éléphant ?",
-      "reponse": "22",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Combien de pattes possède un insecte ?",
+      "reponse": "Six",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel sucre trouve-t-on dans le sang ?",
-      "reponse": "Le glucose",
+      "question": "Quel est le symbole chimique de l'oxygène ?",
+      "reponse": "O",
       "niveau": 1,
       "ages": [
         "ados",
@@ -59,8 +55,30 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel muscle bat sans jamais se reposer ?",
-      "reponse": "Le cœur",
+      "question": "Quelle particule positive loge dans le noyau ?",
+      "reponse": "Le proton",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gaz compose 78 pour cent de l'air ?",
+      "reponse": "L'azote",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel poisson à l'aileron pointu fait fuir les baigneurs ?",
+      "reponse": "Le requin",
       "niveau": 1
     },
     {
@@ -71,88 +89,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal produit les œufs qu'on mange au déjeuner ?",
-      "reponse": "La poule",
-      "niveau": 1
+      "question": "Quels petits grains de glace tombent parfois pendant un orage d'été ?",
+      "reponse": "La grêle",
+      "niveau": 2
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient du vent ?",
-      "reponse": "L'énergie éolienne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel tableau classe tous les éléments chimiques ?",
-      "reponse": "Tableau périodique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui pousse sur la tête et qu'on va faire couper chez le coiffeur ?",
-      "reponse": "Les cheveux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus petite unité du vivant ?",
-      "reponse": "La cellule",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel gros animal brun dort tout l'hiver dans sa tanière ?",
-      "reponse": "L'ours",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle le passage de liquide à gaz ?",
-      "reponse": "L'évaporation",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel grand oiseau rose se tient souvent sur une seule patte ?",
-      "reponse": "Le flamant rose",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel naturaliste a proposé la théorie de l'évolution ?",
-      "reponse": "Darwin",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus grande lune de Saturne ?",
-      "reponse": "Titan",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal est le meilleur ami de l'homme ?",
-      "reponse": "Le chien",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle unité mesure le courant électrique ?",
-      "reponse": "L'ampère",
+      "question": "Quel instrument mesure la vitesse du vent ?",
+      "reponse": "L'anémomètre",
       "niveau": 2,
       "ages": [
         "ados",
@@ -162,20 +106,83 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle saison vient après l'hiver ?",
-      "reponse": "Le printemps",
+      "question": "Quel nuage collé au sol empêche de voir loin ?",
+      "reponse": "Le brouillard",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel minuscule oiseau peut voler en arrière ?",
+      "reponse": "Le colibri",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Le Soleil est-il une planète ou une étoile ?",
-      "reponse": "Une étoile",
+      "question": "Combien de minutes met la lumière du Soleil à nous parvenir ?",
+      "reponse": "Huit",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel pigment rend les plantes vertes ?",
+      "reponse": "La chlorophylle",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Qui a découvert la gravitation ?",
-      "reponse": "Newton",
+      "question": "Que devient l'eau quand elle gèle ?",
+      "reponse": "De la glace",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Contre quelle maladie Pasteur a-t-il créé un vaccin ?",
+      "reponse": "La rage",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel astre traverse le ciel en traînant une longue queue lumineuse ?",
+      "reponse": "Une comète",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels organes nous permettent de voir ?",
+      "reponse": "Les yeux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de chromosomes possède l'humain ?",
+      "reponse": "46",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle le voyage du pollen ?",
+      "reponse": "La pollinisation",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel gros animal noir et blanc de Chine se nourrit de bambou ?",
+      "reponse": "Le panda",
       "niveau": 1
     }
   ]

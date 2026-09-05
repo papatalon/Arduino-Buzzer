@@ -8,26 +8,68 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quelle écurie italienne de F1 est rouge ?",
-      "reponse": "Ferrari",
+      "question": "Quel coureur éthiopien a gagné le marathon pieds nus ?",
+      "reponse": "Abebe Bikila",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel grand bassin apprend-on à nager ?",
+      "reponse": "Une piscine",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le service réussi que l'adversaire ne touche pas au tennis ?",
-      "reponse": "Un as",
-      "niveau": 3
+      "question": "Quel sport pratiquait Michael Phelps ?",
+      "reponse": "La natation",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de rue se joue en espadrilles, bâton en main, avec une balle orange ?",
-      "reponse": "Le hockey-balle",
-      "niveau": 2
+      "question": "Combien de joueurs par équipe au soccer ?",
+      "reponse": "Onze",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Combien de styles de nage existe-t-il en compétition ?",
-      "reponse": "Quatre",
+      "question": "Comment appelle-t-on le personnage costumé qui amuse la foule pendant un match ?",
+      "reponse": "La mascotte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport pratique la famille Hart de Calgary ?",
+      "reponse": "La lutte",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport utilise-t-on un fer et un vert ?",
+      "reponse": "Le golf",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de montagne grimpe des parois gelées à crampons ?",
+      "reponse": "L'alpinisme",
       "niveau": 2,
       "ages": [
         "ados",
@@ -37,47 +79,47 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel Argentin a soulevé la Coupe du monde 2022 ?",
-      "reponse": "Lionel Messi",
+      "question": "Quel sport se joue avec un disque volant en équipe ?",
+      "reponse": "L'ultimate",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
+      "reponse": "Un sauveteur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel numéro portait Wayne Gretzky ?",
+      "reponse": "99",
       "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de manches dans un match de baseball ?",
+      "reponse": "Neuf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de cirque marche sur un fil tendu en hauteur ?",
+      "reponse": "Le funambulisme",
+      "niveau": 3,
       "ages": [
         "enfants",
         "ados",
         "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle épreuve féminine combine sept disciplines ?",
-      "reponse": "L'heptathlon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la toile tendue sur laquelle on rebondit très haut ?",
-      "reponse": "Un trampoline",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Avec quel objet frappe-t-on la balle au baseball ?",
-      "reponse": "Le bâton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de haies compte le 110 mètres haies ?",
-      "reponse": "Dix",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
       ]
     },
     {
@@ -92,38 +134,20 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
-      "reponse": "Le patinage artistique",
+      "question": "Quel sport glisse sur l'eau tiré par un bateau ?",
+      "reponse": "Le ski nautique",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la grande salle de l'école où se donne l'éducation physique ?",
-      "reponse": "Le gymnase",
+      "question": "Quel pays est le berceau du hockey sur glace ?",
+      "reponse": "Le Canada",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport olympique de précision se pratique avec des flèches ?",
-      "reponse": "Le tir à l'arc",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de manches dans un match de baseball ?",
-      "reponse": "Neuf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée remporte le champion de la LNH ?",
-      "reponse": "La coupe Stanley",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel tournoi de tennis se joue sur terre battue à Paris ?",
-      "reponse": "Roland-Garros",
+      "question": "Quel grand prix de F1 se court dans les rues d'une principauté ?",
+      "reponse": "Monaco",
       "niveau": 2,
       "ages": [
         "ados",
@@ -133,9 +157,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport fait glisser un lugeur tête première sur la glace ?",
-      "reponse": "Le skeleton",
-      "niveau": 3,
+      "question": "Combien vaut un placement au football ?",
+      "reponse": "Trois points",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -144,68 +168,33 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport pratique la famille Hart de Calgary ?",
-      "reponse": "La lutte",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de points vaut la bille noire au snooker ?",
-      "reponse": "Sept",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la bouteille dans laquelle un joueur boit sur le banc ?",
-      "reponse": "Une gourde",
+      "question": "Quelle ligne les coureurs doivent-ils franchir pour terminer une course ?",
+      "reponse": "La ligne d'arrivée",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de baseball a joué à Montréal ?",
-      "reponse": "Les Expos",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelles petites roues aident un enfant à apprendre le vélo ?",
+      "reponse": "Des roues d'entraînement",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle ligne rouge coupe la patinoire en deux ?",
-      "reponse": "Ligne centrale",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on la pause au milieu d'un match de soccer ?",
+      "reponse": "La mi-temps",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de glisse se pratique à plat ventre ?",
-      "reponse": "Le skeleton",
+      "question": "Dans quel sport dit-on échec et mat ?",
+      "reponse": "Les échecs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
+      "reponse": "Le ballon-balai",
       "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de minutes dure un match de soccer ?",
-      "reponse": "90",
-      "niveau": 1,
       "ages": [
         "ados",
         "adultes",

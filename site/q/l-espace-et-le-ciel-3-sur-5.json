@@ -7,51 +7,80 @@
   "emoji": "🪐",
   "questions": [
     {
-      "categorie": "Culture générale",
-      "question": "Quel musée parisien abrite la Vénus de Milo ?",
-      "reponse": "Le Louvre",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sciences et nature",
+      "question": "Quel événement cache le Soleil derrière la Lune ?",
+      "reponse": "Une éclipse",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle mission a posé les premiers hommes sur la Lune ?",
-      "reponse": "Apollo 11",
+      "question": "Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?",
+      "reponse": "La Station spatiale internationale",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie être dans la lune ?",
+      "reponse": "Être distrait",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
-      "reponse": "Une fusée",
+      "question": "Quelle fleur suit le Soleil ?",
+      "reponse": "Le tournesol",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la planète la plus éloignée du Soleil ?",
-      "reponse": "Neptune",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Combien de planètes dans le système solaire ?",
+      "reponse": "Huit",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Le Soleil est-il une planète ou une étoile ?",
+      "reponse": "Une étoile",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel animal fut le premier en orbite ?",
-      "reponse": "La chienne Laïka",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?",
-      "reponse": "Le sextant",
+      "question": "Quelle station spatiale russe a précédé l'ISS ?",
+      "reponse": "Mir",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels points brillants voit-on dans le ciel par une nuit claire ?",
+      "reponse": "Les étoiles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel méchant des Minions veut voler la Lune ?",
+      "reponse": "Gru",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de lunes possède Mars ?",
+      "reponse": "Deux",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a un drapeau avec une étoile de David ?",
+      "reponse": "Israël",
+      "niveau": 1,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -63,61 +92,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel astronaute canadien a chanté dans l'espace ?",
-      "reponse": "Chris Hadfield",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est l'étoile la plus proche de la Terre ?",
-      "reponse": "Le Soleil",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?",
-      "reponse": "La Station spatiale internationale",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles chaussures de caoutchouc percées de trous divisent la planète ?",
-      "reponse": "Les Crocs",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "De quel côté se lève le soleil ?",
-      "reponse": "À l'est",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
       "question": "Quel astre provoque les marées ?",
       "reponse": "La Lune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel soldat Marvel porte un bouclier étoilé ?",
-      "reponse": "Captain America",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comptine demande à Pierrot de prêter sa plume pour écrire un mot ?",
-      "reponse": "Au clair de la lune",
       "niveau": 1
     },
     {
@@ -127,41 +104,49 @@
       "niveau": 1
     },
     {
+      "categorie": "Québec",
+      "question": "Quelle semaine de congé coupe l'hiver scolaire au début de mars ?",
+      "reponse": "La semaine de relâche",
+      "niveau": 1
+    },
+    {
       "categorie": "Histoire",
-      "question": "En quelle année l'homme a-t-il marché sur la Lune ?",
-      "reponse": "1969",
+      "question": "Quel engin a emmené les premiers hommes jusqu'à la Lune ?",
+      "reponse": "Une fusée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète est la plus chaude du système solaire ?",
+      "reponse": "Vénus",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal fut le premier en orbite ?",
+      "reponse": "La chienne Laïka",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comptine demande à Pierrot de prêter sa plume pour écrire un mot ?",
+      "reponse": "Au clair de la lune",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle salle de Montréal projette le ciel étoilé sur un dôme au-dessus des spectateurs ?",
+      "reponse": "Le Planétarium",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?",
-      "reponse": "Le télescope James Webb",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
-      "reponse": "Les Gardiens",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style musical coréen a conquis la planète ?",
-      "reponse": "La K-pop",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on l'espace sous le toit où s'entassent les vieilles boîtes ?",
-      "reponse": "Le grenier",
+      "question": "Quelle maladie a confiné la planète entière au printemps 2020 ?",
+      "reponse": "La COVID-19",
       "niveau": 1
     }
   ]

@@ -8,6 +8,23 @@
   "questions": [
     {
       "categorie": "Géographie",
+      "question": "Quel fleuve traverse Vienne et Budapest ?",
+      "reponse": "Le Danube",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel énorme bloc de calcaire troué se dresse dans la mer en Gaspésie ?",
+      "reponse": "Le rocher Percé",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
       "question": "Quel pays est surnommé l'île d'émeraude ?",
       "reponse": "L'Irlande",
       "niveau": 2,
@@ -19,25 +36,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes du Québec attire les skieurs au nord de Montréal ?",
-      "reponse": "Les Laurentides",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien de fuseaux horaires couvre le Canada ?",
-      "reponse": "Six",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle grande île de l'Atlantique, au large de Terre-Neuve, appartient à la France ?",
-      "reponse": "Saint-Pierre-et-Miquelon",
+      "question": "Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?",
+      "reponse": "La baie James",
       "niveau": 3,
       "ages": [
         "ados",
@@ -47,8 +47,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelles chutes africaines portent le nom d'une reine ?",
-      "reponse": "Victoria",
+      "question": "Comment appelle-t-on la grande route à plusieurs voies entre deux villes ?",
+      "reponse": "Une autoroute",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Brésil ?",
+      "reponse": "Brasilia",
       "niveau": 2,
       "ages": [
         "ados",
@@ -58,8 +64,60 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle mer borde la Côte d'Azur ?",
-      "reponse": "La Méditerranée",
+      "question": "Comment appelle-t-on la carte qui montre le relief avec des couleurs et des courbes ?",
+      "reponse": "Une carte topographique",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel point le plus au sud de la Terre est couvert de glace ?",
+      "reponse": "Le pôle Sud",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la partie de la mer qui rentre dans les terres ?",
+      "reponse": "Une baie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel océan borde la côte ouest du Canada ?",
+      "reponse": "Le Pacifique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel territoire canadien a Iqaluit pour capitale ?",
+      "reponse": "Le Nunavut",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ligne imaginaire sépare l'hémisphère nord de l'hémisphère sud ?",
+      "reponse": "L'équateur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel massif abrite l'Everest ?",
+      "reponse": "L'Himalaya",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a une croix blanche sur fond rouge ?",
+      "reponse": "La Suisse",
       "niveau": 1,
       "ages": [
         "ados",
@@ -69,124 +127,26 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se tient le grand carnaval de Rio ?",
-      "reponse": "Le Brésil",
+      "question": "Quel océan borde la côte est du Canada ?",
+      "reponse": "L'Atlantique",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale du Japon ?",
-      "reponse": "Tokyo",
+      "question": "Dans quelle province se trouve Montréal ?",
+      "reponse": "Le Québec",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la plus grande île du monde ?",
-      "reponse": "Le Groenland",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on une terre entièrement entourée d'eau ?",
-      "reponse": "Une île",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle saison fait fleurir les arbres et fondre la neige ?",
-      "reponse": "Le printemps",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Portugal ?",
-      "reponse": "Lisbonne",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Argentine ?",
-      "reponse": "Buenos Aires",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le continent le plus peuplé ?",
-      "reponse": "L'Asie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la grande vallée creusée par une rivière entre deux parois ?",
-      "reponse": "Un canyon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve américain se jette à La Nouvelle-Orléans ?",
-      "reponse": "Le Mississippi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle région du Québec est célèbre pour ses bleuets ?",
-      "reponse": "Le Lac-Saint-Jean",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien de territoires compte le Canada ?",
-      "reponse": "Trois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
-      "reponse": "La Norvège",
+      "question": "Comment appelle-t-on le quartier bâti pour loger les athlètes pendant les Jeux ?",
+      "reponse": "Le village olympique",
       "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le mur de béton qui retient l'eau d'une rivière ?",
-      "reponse": "Un barrage",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le décalage d'heure entre Montréal et Paris ?",
-      "reponse": "Le décalage horaire",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Espagne ?",
-      "reponse": "Madrid",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel courant marin réchauffe l'Europe ?",
-      "reponse": "Le Gulf Stream",
+      "question": "Quel pays a offert la statue de la Liberté ?",
+      "reponse": "La France",
       "niveau": 2,
       "ages": [
         "ados",
@@ -196,9 +156,58 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le pôle Sud ?",
-      "reponse": "L'Antarctique",
+      "question": "Quelle péninsule abrite Espagne et Portugal ?",
+      "reponse": "Ibérique",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quelle côte d'Australie se trouvent Sydney et Melbourne ?",
+      "reponse": "La côte est",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Monnaie utilisée aux États-Unis ?",
+      "reponse": "Le dollar",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne sépare l'Europe de l'Asie ?",
+      "reponse": "L'Oural",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ville est surnommée la Grosse Pomme ?",
+      "reponse": "New York",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Manitoba ?",
+      "reponse": "Winnipeg",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

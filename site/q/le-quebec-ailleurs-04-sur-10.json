@@ -7,25 +7,26 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel groupe québécois a chanté La complainte du phoque en Alaska ?",
-      "reponse": "Beau Dommage",
+      "categorie": "Culture pop",
+      "question": "Quelle marque québécoise fabrique les Jos Louis et les May West ?",
+      "reponse": "Vachon",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes du Québec attire les skieurs au nord de Montréal ?",
-      "reponse": "Les Laurentides",
-      "niveau": 2
+      "categorie": "Histoire",
+      "question": "Quelle fourrure les Européens recherchaient-ils le plus en Nouvelle-France ?",
+      "reponse": "Le castor",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
-      "reponse": "Michel Louvain",
+      "question": "Quel magazine hebdomadaire publiait les horaires de télévision au Québec ?",
+      "reponse": "Le TV Hebdo",
       "niveau": 3,
       "ages": [
         "aines"
@@ -33,10 +34,30 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle quincaillerie québécoise portait un prénom dans son enseigne ?",
-      "reponse": "Pascal",
+      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
+      "reponse": "Le tramway",
       "niveau": 3,
       "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
+      "reponse": "Rue des Pignons",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve forme la frontière Ontario-Québec au sud ?",
+      "reponse": "L'Outaouais",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
@@ -45,6 +66,41 @@
       "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
       "reponse": "Le Banquier",
       "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas se prend le midi au Québec ?",
+      "reponse": "Le dîner",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
+      "reponse": "Montréal",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
+      "reponse": "La Bolduc",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel grand magasin de vêtements québécois porte un nom de famille ?",
+      "reponse": "Simons",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -61,70 +117,65 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle est la capitale de la province de Québec ?",
-      "reponse": "La ville de Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?",
-      "reponse": "Le yéyé",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
       "categorie": "Bouffe et cuisine",
       "question": "Quels trois étages composent le pâté chinois ?",
       "reponse": "Bœuf maïs patates",
       "niveau": 1
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise raconte Séraphin Poudrier ?",
+      "reponse": "Les Belles Histoires",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
       "categorie": "Sports",
-      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
-      "reponse": "Georges St-Pierre",
+      "question": "Quel stade accueillait les Expos ?",
+      "reponse": "Stade olympique",
       "niveau": 1,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
+      "reponse": "La guignolée",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle pianiste et chanteuse québécoise se fait appeler Cœur de pirate ?",
-      "reponse": "Béatrice Martin",
-      "niveau": 3,
+      "question": "Quelle chanteuse québécoise a une voix puissante et chante Un peu plus haut ?",
+      "reponse": "Ginette Reno",
+      "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne parle surtout français ?",
-      "reponse": "Le Québec",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sucre du terroir remplace la cassonade ?",
+      "reponse": "Sucre d'érable",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
-      "reponse": "MusiquePlus",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle mascotte orange et poilue est passée des Expos aux Canadiens ?",
-      "reponse": "Youppi",
+      "question": "Quelle émission jeunesse québécoise est revenue à la télé en 2019, trente ans après ?",
+      "reponse": "Passe-Partout",
       "niveau": 2,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
@@ -135,88 +186,45 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Terre-Neuve ?",
-      "reponse": "Un Terre-Neuvien",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Que signifie niaiser quelqu'un, au Québec ?",
+      "reponse": "Le taquiner",
+      "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel chef québécois donne son prénom à un magazine, une émission et une gamme de produits ?",
-      "reponse": "Ricardo",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
-      "reponse": "La fin de semaine des Patriotes",
+      "categorie": "Musique",
+      "question": "Quelle chanteuse québécoise a raflé les Junos avec l'album Phoenix ?",
+      "reponse": "Charlotte Cardin",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel intendant a développé la Nouvelle-France ?",
-      "reponse": "Jean Talon",
-      "niveau": 2,
-      "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
-      "reponse": "Les Classels",
-      "niveau": 3,
-      "ages": [
-        "aines"
+        "adultes"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
-      "reponse": "L'hémisphère nord",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois barrer la porte ?",
-      "reponse": "Verrouiller",
+      "question": "Quel pays a la feuille d'érable sur son drapeau ?",
+      "reponse": "Le Canada",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle émission québécoise du jour de l'An revoit l'année ?",
-      "reponse": "Bye Bye",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel lanceur québécois a gagné un Cy Young ?",
-      "reponse": "Éric Gagné",
-      "niveau": 2,
+      "categorie": "Culture pop",
+      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
+      "reponse": "Radio Enfer",
+      "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson fumé garnit le bagel classique ?",
-      "reponse": "Le saumon fumé",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
+      "reponse": "Le Village Vacances Valcartier",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

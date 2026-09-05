@@ -7,87 +7,14 @@
   "emoji": "🪐",
   "questions": [
     {
-      "categorie": "Culture générale",
-      "question": "Quel mois vient après mars ?",
-      "reponse": "Avril",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on l'ensemble formé par le Soleil et ses planètes ?",
-      "reponse": "Le système solaire",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus grande lune de Saturne ?",
-      "reponse": "Titan",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
-      "reponse": "Dans une galaxie près de chez vous",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel instrument sert à observer les étoiles ?",
-      "reponse": "Le télescope",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
-      "reponse": "Le Japon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle semaine de congé coupe l'hiver scolaire au début de mars ?",
-      "reponse": "La semaine de relâche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel événement cache le Soleil derrière la Lune ?",
-      "reponse": "Une éclipse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète tourne couchée sur le côté ?",
-      "reponse": "Uranus",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète a les anneaux les plus spectaculaires ?",
-      "reponse": "Saturne",
-      "niveau": 1
-    },
-    {
       "categorie": "Histoire",
-      "question": "Quel télescope spatial a été lancé en 1990 ?",
-      "reponse": "Hubble",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quels pneus la loi québécoise impose-t-elle du 1er décembre au 15 mars ?",
-      "reponse": "Les pneus d'hiver",
-      "niveau": 2
+      "question": "Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?",
+      "reponse": "Le sextant",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -101,42 +28,54 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel engin a emmené les premiers hommes jusqu'à la Lune ?",
-      "reponse": "Une fusée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle station spatiale russe a précédé l'ISS ?",
-      "reponse": "Mir",
-      "niveau": 3,
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la planète la plus proche du Soleil ?",
+      "reponse": "Mercure",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir les yeux dans la graisse de bines ?",
-      "reponse": "Être dans la lune",
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'espace sous le toit où s'entassent les vieilles boîtes ?",
+      "reponse": "Le grenier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète a été rétrogradée en planète naine ?",
+      "reponse": "Pluton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "De quel côté se couche le soleil ?",
+      "reponse": "À l'ouest",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Dans quel jeu faut-il démasquer l'imposteur à bord d'un vaisseau spatial ?",
+      "reponse": "Among Us",
       "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quels points brillants voit-on dans le ciel par une nuit claire ?",
-      "reponse": "Les étoiles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel caillou céleste brille en traversant l'atmosphère ?",
-      "reponse": "L'étoile filante",
-      "niveau": 1
+      "question": "Quelle comète célèbre revient tous les 76 ans ?",
+      "reponse": "Halley",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
@@ -146,15 +85,103 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la plus grosse planète du système solaire ?",
-      "reponse": "Jupiter",
+      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
+      "reponse": "Une fusée",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on les régions chaudes situées près de l'équateur ?",
-      "reponse": "Les tropiques",
-      "niveau": 3
+      "question": "Dans quel sens le soleil se lève-t-il ?",
+      "reponse": "À l'est",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film de 1977 s'ouvre sur « Il y a bien longtemps, dans une galaxie lointaine » ?",
+      "reponse": "La Guerre des étoiles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
+      "reponse": "Challenger",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle basilique du Vieux-Montréal a un plafond bleu étoilé ?",
+      "reponse": "Notre-Dame",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène lumineux colore le ciel polaire ?",
+      "reponse": "Aurore boréale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel instrument de navigation mesurait la hauteur des astres sur l'horizon ?",
+      "reponse": "Le sextant",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel drapeau les astronautes ont-ils planté sur la Lune en 1969 ?",
+      "reponse": "Le drapeau américain",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel effet atmosphérique réchauffe la planète ?",
+      "reponse": "L'effet de serre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le deuxième homme à marcher sur la Lune ?",
+      "reponse": "Buzz Aldrin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète tourne couchée sur le côté ?",
+      "reponse": "Uranus",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la planète la plus éloignée du Soleil ?",
+      "reponse": "Neptune",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

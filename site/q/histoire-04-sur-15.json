@@ -8,59 +8,70 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelle grande statue verte tient une torche à l'entrée d'un port américain ?",
-      "reponse": "La statue de la Liberté",
+      "question": "Comment appelle-t-on les longues routes pavées construites par les Romains ?",
+      "reponse": "Les voies romaines",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel bâton orné le roi tient-il en main comme signe de son pouvoir ?",
+      "reponse": "Le sceptre",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel général carthaginois a traversé les Alpes à dos d'éléphant ?",
+      "reponse": "Hannibal",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel philosophe fut l'élève de Socrate ?",
+      "reponse": "Platon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention permet de voir des images animées chez soi depuis les années 1950 ?",
+      "reponse": "La télévision",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on les grands ponts qui amenaient l'eau jusqu'aux villes romaines ?",
-      "reponse": "Un aqueduc",
+      "question": "Que porte un astronaute pour survivre dans l'espace ?",
+      "reponse": "Un scaphandre",
       "niveau": 3
     },
     {
       "categorie": "Histoire",
-      "question": "Quel savant français a montré que les microbes causent les maladies ?",
-      "reponse": "Pasteur",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle adolescente a écrit un journal célèbre à Amsterdam ?",
-      "reponse": "Anne Frank",
-      "niveau": 2,
+      "question": "Quelle reine a régné 70 ans sur le Royaume-Uni ?",
+      "reponse": "Elizabeth II",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle prison parisienne fut prise le 14 juillet 1789 ?",
-      "reponse": "La Bastille",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle brebis clonée est née en 1996 ?",
-      "reponse": "Dolly",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la tour maîtresse, la plus haute d'un château fort ?",
-      "reponse": "Le donjon",
-      "niveau": 2
     },
     {
       "categorie": "Histoire",
@@ -70,14 +81,18 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Dans quelle matière les tout premiers outils de l'humanité étaient-ils taillés ?",
-      "reponse": "La pierre",
-      "niveau": 1
+      "question": "Quelle politique canadienne date de la loi de 1969 ?",
+      "reponse": "Le bilinguisme",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel chef mongol a fondé un immense empire ?",
-      "reponse": "Gengis Khan",
+      "question": "En quelle année le mur de Berlin est-il tombé ?",
+      "reponse": "1989",
       "niveau": 2,
       "ages": [
         "ados",
@@ -87,67 +102,20 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel peuple a construit Chichén Itzá ?",
-      "reponse": "Les Mayas",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
-      "reponse": "L'inlandsis",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
-      "reponse": "Un missionnaire",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi anglais légendaire aurait retiré une épée d'un rocher ?",
-      "reponse": "Le roi Arthur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui fut la première femme première ministre du Canada ?",
-      "reponse": "Kim Campbell",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle aviatrice a disparu dans le Pacifique en 1937 ?",
-      "reponse": "Amelia Earhart",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le long bateau à rames des Grecs et des Romains ?",
-      "reponse": "Une galère",
+      "question": "Comment appelle-t-on l'ensemble des nobles qui entouraient le roi ?",
+      "reponse": "La cour",
       "niveau": 3
     },
     {
       "categorie": "Histoire",
-      "question": "Quel ordre de moines soldats gardait les pèlerins ?",
-      "reponse": "Les Templiers",
+      "question": "Quelle habitation autochtone en forme de cône était faite de peaux et de perches ?",
+      "reponse": "Un tipi",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel mathématicien anglais a cassé le code Enigma ?",
+      "reponse": "Alan Turing",
       "niveau": 2,
       "ages": [
         "ados",
@@ -157,9 +125,26 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle bataille vit trois cents Spartiates tenir un défilé étroit ?",
-      "reponse": "Les Thermopyles",
-      "niveau": 3,
+      "question": "Quel cercle de pierres dressées se dresse dans une plaine anglaise ?",
+      "reponse": "Stonehenge",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Où Napoléon a-t-il subi sa dernière défaite ?",
+      "reponse": "Waterloo",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle encyclopédie en ligne, lancée en 2001, est écrite par ses lecteurs ?",
+      "reponse": "Wikipédia",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes"
@@ -167,25 +152,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année a pris fin la Seconde Guerre mondiale ?",
-      "reponse": "1945",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Dans quelle ville se tenaient les Jeux olympiques antiques ?",
-      "reponse": "Olympie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les longues bandes de terre perpendiculaires au fleuve ?",
-      "reponse": "Les rangs",
+      "question": "Quelle fondatrice a ouvert la première école de Ville-Marie ?",
+      "reponse": "Marguerite Bourgeoys",
       "niveau": 3,
       "ages": [
         "ados",
@@ -195,31 +163,63 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?",
-      "reponse": "Jeanne Mance",
-      "niveau": 2,
+      "question": "Quel amiral anglais a gagné Trafalgar ?",
+      "reponse": "Nelson",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Que fabriquaient les hommes préhistoriques en frottant deux pierres ?",
-      "reponse": "Le feu",
+      "question": "Dans quel bâtiment fortifié vivaient les rois et les reines du Moyen Âge ?",
+      "reponse": "Un château",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle rébellion québécoise eut lieu en 1837 ?",
-      "reponse": "Les Patriotes",
+      "question": "Quelle bombe a frappé Hiroshima en 1945 ?",
+      "reponse": "La bombe atomique",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quels dirigeables allemands portaient un nom de comte ?",
+      "reponse": "Les zeppelins",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle reine anglaise fut surnommée la Reine vierge ?",
+      "reponse": "Elizabeth Ire",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le bateau viking à proue sculptée ?",
+      "reponse": "Le drakkar",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quel pays vivaient les samouraïs ?",
+      "reponse": "Le Japon",
+      "niveau": 1
     }
   ]
 }

@@ -8,25 +8,48 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu garnit les muffins et les tartes au Québec ?",
-      "reponse": "Le bleuet",
+      "question": "Quel appareil garde la crème glacée bien dure ?",
+      "reponse": "Le congélateur",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Comment s'appelle le sel récolté à la surface des marais ?",
-      "reponse": "Fleur de sel",
-      "niveau": 2,
+      "question": "Quel colonel a fondé la chaîne de poulet PFK ?",
+      "reponse": "Sanders",
+      "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile creux sert à manger la soupe ?",
-      "reponse": "La cuillère",
+      "question": "Quels trois étages composent le pâté chinois ?",
+      "reponse": "Bœuf maïs patates",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la petite bouchée prise entre deux repas ?",
+      "reponse": "Une collation",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit agrume orangé se pèle en quartiers dans la boîte à lunch ?",
+      "reponse": "La clémentine",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel récipient à queue sert à faire bouillir de l'eau sur le rond ?",
+      "reponse": "Une casserole",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel sucre du terroir remplace la cassonade ?",
+      "reponse": "Sucre d'érable",
       "niveau": 1
     },
     {
@@ -42,8 +65,20 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "De quoi est fait le tofu ?",
-      "reponse": "Du soja",
+      "question": "Quel ustensile à quatre dents pique les aliments ?",
+      "reponse": "La fourchette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit rouge se cueille sur un buisson piquant et se coiffe au bout du doigt ?",
+      "reponse": "La framboise",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine de la paella ?",
+      "reponse": "L'Espagne",
       "niveau": 1,
       "ages": [
         "ados",
@@ -53,8 +88,48 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel chou fermenté accompagne les saucisses en Alsace ?",
-      "reponse": "La choucroute",
+      "question": "Quel sucre brun humide parfume les biscuits ?",
+      "reponse": "La cassonade",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat coréen mélange riz, légumes et œuf ?",
+      "reponse": "Le bibimbap",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle crêpe française est flambée à l'orange ?",
+      "reponse": "Crêpe Suzette",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle poudre blanche tirée du blé sert à faire le pain et les gâteaux ?",
+      "reponse": "La farine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles tranches de pommes de terre frites et salées se vendent en sac ?",
+      "reponse": "Les croustilles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel riz crémeux italien cuit au bouillon ?",
+      "reponse": "Le risotto",
       "niveau": 1,
       "ages": [
         "ados",
@@ -64,8 +139,42 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boulette de poulpe japonaise est une collation ?",
-      "reponse": "Le takoyaki",
+      "question": "Pays d'origine du fromage gouda ?",
+      "reponse": "Les Pays-Bas",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit bleu garnit les muffins et les tartes au Québec ?",
+      "reponse": "Le bleuet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel aliment blanc en grains adoucit le café et entre dans tous les gâteaux ?",
+      "reponse": "Le sucre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat japonais est une brochette de poulet grillée ?",
+      "reponse": "Le yakitori",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle tartelette portugaise est à la crème ?",
+      "reponse": "Pastel de nata",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -74,140 +183,9 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel animal est Tony, la mascotte des céréales Frosted Flakes ?",
-      "reponse": "Un tigre",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pomme enrobée est une friandise d'Halloween ?",
-      "reponse": "Pomme au caramel",
+      "question": "Quel sandwich fondant au fromage est grillé ?",
+      "reponse": "Le grilled cheese",
       "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel appareil chaud fait cuire les gâteaux ?",
-      "reponse": "Le four",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel oignon frit en anneaux accompagne le burger ?",
-      "reponse": "Rondelles d'oignon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie allongée est glacée au chocolat ?",
-      "reponse": "L'éclair",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel gâteau roulé imite un morceau de bois à Noël ?",
-      "reponse": "Bûche de Noël",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sucre du terroir remplace la cassonade ?",
-      "reponse": "Sucre d'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quelle légumineuse est fait le houmous ?",
-      "reponse": "Pois chiches",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel gros fruit orangé à noyau plat vient des pays chauds ?",
-      "reponse": "La mangue",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel café italien est couronné de mousse de lait ?",
-      "reponse": "Le cappuccino",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte longue et fine mange-t-on avec des boulettes ?",
-      "reponse": "Le spaghetti",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle bouillie d'avoine chaude réchauffe les matins d'hiver ?",
-      "reponse": "Le gruau",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle sauce sucrée et brune coule sur les crêpes du Québec ?",
-      "reponse": "Le sirop d'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat japonais est une soupe de nouilles ?",
-      "reponse": "Le ramen",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie colorée a deux coques et une ganache ?",
-      "reponse": "Le macaron",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Avec quelle farine fait-on le pain traditionnel ?",
-      "reponse": "La farine de blé",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson chaude est faite de grains torréfiés ?",
-      "reponse": "Le café",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

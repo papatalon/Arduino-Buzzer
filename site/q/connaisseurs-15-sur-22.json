@@ -7,46 +7,73 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quel appareil de poche vibrait pour dire de rappeler quelqu'un, avant le cellulaire ?",
-      "reponse": "Le téléavertisseur",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Histoire",
+      "question": "Quel casque de métal protégeait la tête du chevalier ?",
+      "reponse": "Un heaume",
+      "niveau": 3
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?",
-      "reponse": "Le télescope James Webb",
+      "categorie": "Bouffe et cuisine",
+      "question": "Avec quel lait fait-on la feta traditionnelle ?",
+      "reponse": "Lait de brebis",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
-      "reponse": "La tradition orale",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument de flûtes de longueurs différentes se joue en soufflant à leur bord ?",
-      "reponse": "La flûte de Pan",
+      "question": "Quel groupe féminin sud-coréen a chanté Kill This Love ?",
+      "reponse": "Blackpink",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le service réussi que l'adversaire ne touche pas au tennis ?",
+      "reponse": "Un as",
       "niveau": 3
     },
     {
       "categorie": "Histoire",
-      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
-      "reponse": "Pizarro",
+      "question": "Comment appelle-t-on les longues bandes de terre perpendiculaires au fleuve ?",
+      "reponse": "Les rangs",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quels petits élastiques colorés se tressent en bracelets sur un métier ?",
+      "reponse": "Les Rainbow Loom",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse traditionnelle québécoise se danse à quatre couples sur les appels d'un câlleur ?",
+      "reponse": "Le set carré",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle ville canadienne fut dévastée par une explosion en 1917 ?",
+      "reponse": "Halifax",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -54,18 +81,93 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle émission de variétés pour adolescents Véronique Cloutier a-t-elle animée ?",
-      "reponse": "La Fureur",
+      "categorie": "Musique",
+      "question": "Quel rappeur américain a reçu un prix Pulitzer pour un album ?",
+      "reponse": "Kendrick Lamar",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes"
       ]
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quelle prière se récitait en famille à la radio, chaque soir, dans les années 50 ?",
+      "reponse": "Le chapelet",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle ligue de hockey junior regroupe les équipes du Québec et des Maritimes ?",
+      "reponse": "La LHJMQ",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission québécoise fait juger des numéros de danse par des maîtres ?",
+      "reponse": "Révolution",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
+      "reponse": "Le REM",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Musique",
-      "question": "Quel groupe italien a gagné l'Eurovision en 2021 en jouant du rock ?",
-      "reponse": "Måneskin",
+      "question": "Sur quel support incliné le musicien pose-t-il sa partition ?",
+      "reponse": "Un lutrin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plateforme loue le logement d'un particulier pour des vacances ?",
+      "reponse": "Airbnb",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Turquie ?",
+      "reponse": "Ankara",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel club-école des Canadiens joue à Laval ?",
+      "reponse": "Le Rocket",
       "niveau": 3,
       "ages": [
         "ados",
@@ -74,8 +176,29 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'écriture des Vikings, gravée dans la pierre ?",
-      "reponse": "Les runes",
+      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
+      "reponse": "Expo 67",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de cœurs possède un ver de terre ?",
+      "reponse": "Cinq",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur écossais a chanté Someone You Loved ?",
+      "reponse": "Lewis Capaldi",
       "niveau": 3,
       "ages": [
         "ados",
@@ -84,14 +207,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?",
-      "reponse": "Le pont Champlain",
+      "question": "Comment appelle-t-on une langue de terre qui s'avance dans la mer ?",
+      "reponse": "Une péninsule",
       "niveau": 3
     },
     {
-      "categorie": "Québec",
-      "question": "Quel est l'arbre emblème du Québec ?",
-      "reponse": "Le bouleau jaune",
+      "categorie": "Culture pop",
+      "question": "Quelle boisson gazeuse a longtemps servi de surnom moqueur aux Québécois ?",
+      "reponse": "Le Pepsi",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -109,133 +232,19 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel coureur éthiopien a gagné le marathon pieds nus ?",
-      "reponse": "Abebe Bikila",
+      "categorie": "Mots et langue",
+      "question": "Combien de temps principaux a l'indicatif ?",
+      "reponse": "Huit",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
-      "reponse": "Willie Lamothe",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville du Québec accueille chaque été le Festival de la poutine ?",
-      "reponse": "Drummondville",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film coréen de 2019 est devenu le premier film non anglophone à gagner l'Oscar du meilleur film ?",
-      "reponse": "Parasite",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot qui a plusieurs sens ?",
-      "reponse": "Polysémique",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse de jazz était surnommée Lady Day ?",
-      "reponse": "Billie Holiday",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
-      "reponse": "Loud",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la partie creuse de la guitare qui fait résonner le son ?",
-      "reponse": "La caisse",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?",
-      "reponse": "Fanfreluche",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus grande lune de Saturne ?",
-      "reponse": "Titan",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson indienne mélange yogourt et mangue ?",
-      "reponse": "Le lassi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel tapis à longs poils habillait les salons des années 70 ?",
-      "reponse": "Le shag",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit fruit rouge se cueille dans les tourbières du Québec l'automne ?",
-      "reponse": "La canneberge",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel site de mode en ligne inonde le marché de vêtements à très bas prix ?",
-      "reponse": "Shein",
+      "question": "Quel film d'animation japonais suit une fillette prisonnière d'un bain public d'esprits ?",
+      "reponse": "Le Voyage de Chihiro",
       "niveau": 3,
       "ages": [
         "ados",

@@ -8,8 +8,132 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume en tiges rouges garnit des tartes ?",
-      "reponse": "La rhubarbe",
+      "question": "Quelle boisson chaude se prépare en faisant infuser des herbes ?",
+      "reponse": "Une tisane",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert glacé mange-t-on en cornet l'été ?",
+      "reponse": "La crème glacée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles croustilles de maïs accompagnent la salsa ?",
+      "reponse": "Les nachos",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit est l'ingrédient principal du cidre ?",
+      "reponse": "La pomme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel grain blanc met-on dans la salière ?",
+      "reponse": "Le sel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson chaude réconforte avec du cacao ?",
+      "reponse": "Chocolat chaud",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte italienne en petits tubes courbés se mange au fromage ?",
+      "reponse": "Le macaroni",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat hongrois est un ragoût au paprika ?",
+      "reponse": "Le goulasch",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boulette de poulpe japonaise est une collation ?",
+      "reponse": "Le takoyaki",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel vinaigre noir italien vient de Modène ?",
+      "reponse": "Le balsamique",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit garnit la tarte Tatin ?",
+      "reponse": "La pomme",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Dans quel pays grille-t-on soi-même sa viande sur un gril au centre de la table ?",
+      "reponse": "La Corée",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume vert en feuilles rendait Popeye très fort ?",
+      "reponse": "L'épinard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte verte piquante accompagne les sushis ?",
+      "reponse": "Le wasabi",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle galette de maïs enroule les fajitas ?",
+      "reponse": "La tortilla",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit rond porte le nom de sa couleur ?",
+      "reponse": "L'orange",
       "niveau": 1
     },
     {
@@ -25,15 +149,9 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile plat retourne les crêpes dans la poêle ?",
-      "reponse": "La spatule",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle vinaigrette porte le nom d'un archipel ?",
-      "reponse": "Mille-Îles",
-      "niveau": 1,
+      "question": "Quelle boulette de patates est un plat acadien ?",
+      "reponse": "Poutine râpée",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -42,26 +160,30 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel pain sucré en anneau se glace et se saupoudre ?",
-      "reponse": "Le beigne",
-      "niveau": 1
+      "question": "Quel pays a inventé les oursons gélifiés ?",
+      "reponse": "L'Allemagne",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume vert en feuilles rendait Popeye très fort ?",
-      "reponse": "L'épinard",
-      "niveau": 1
+      "question": "De quelle légumineuse est fait le houmous ?",
+      "reponse": "Pois chiches",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à tartiner aux noisettes est adorée ?",
-      "reponse": "Le Nutella",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle noix compose le beurre le plus vendu ?",
-      "reponse": "L'arachide",
+      "question": "Quel insecte fabrique le miel ?",
+      "reponse": "L'abeille",
       "niveau": 1
     },
     {
@@ -77,118 +199,15 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel élément croquant garnit la salade César ?",
-      "reponse": "Des croûtons",
+      "question": "Comment appelle-t-on la partie dure et dorée qui entoure la mie du pain ?",
+      "reponse": "La croûte",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit orange à peau veloutée cache un gros noyau ?",
-      "reponse": "La pêche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du croissant ?",
-      "reponse": "La France",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie ronde se décore de glaçage pour une fête ?",
-      "reponse": "Le gâteau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles bouchées chinoises se servent à la vapeur ?",
-      "reponse": "Les dim sums",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich grec est garni de viande à la broche ?",
-      "reponse": "Le pita (gyros)",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle chaîne de restaurants a des arches dorées ?",
-      "reponse": "McDonald's",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du kimchi ?",
-      "reponse": "La Corée",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment blanc, fait de lait, mange-t-on avec des fruits au déjeuner ?",
-      "reponse": "Le yogourt",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit rond porte le nom de sa couleur ?",
-      "reponse": "L'orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Comment appelle-t-on la sève recueillie au printemps pour faire le sirop ?",
-      "reponse": "L'eau d'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel liquide acide, tiré du vin, se mélange à l'huile sur la salade ?",
-      "reponse": "Le vinaigre",
+      "question": "Quel légume vert et long se mange en cosse ou en conserve ?",
+      "reponse": "Le haricot",
       "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Dans quel pays grille-t-on soi-même sa viande sur un gril au centre de la table ?",
-      "reponse": "La Corée",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel jambon italien se mange en tranches fines ?",
-      "reponse": "Le prosciutto",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit tropical porte une couronne ?",
-      "reponse": "L'ananas",
-      "niveau": 1
     }
   ]
 }

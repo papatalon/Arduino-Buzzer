@@ -8,9 +8,67 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle série suit un professeur de chimie nommé Walter White ?",
-      "reponse": "Breaking Bad",
+      "question": "Quel acteur joue Jack dans Titanic ?",
+      "reponse": "Leonardo DiCaprio",
       "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel est le matricule de James Bond ?",
+      "reponse": "007",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel canard Disney porte un costume marin ?",
+      "reponse": "Donald",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quels sont les deux héros de Toy Story ?",
+      "reponse": "Woody et Buzz",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle la petite sœur d'Elsa ?",
+      "reponse": "Anna",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle héroïne chinoise se déguise en soldat ?",
+      "reponse": "Mulan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel garçon ne veut jamais grandir ?",
+      "reponse": "Peter Pan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel sport sorcier se joue sur des balais ?",
+      "reponse": "Le quidditch",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel monstre menace les enfants de Stranger Things ?",
+      "reponse": "Le Démogorgon",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes"
@@ -18,14 +76,41 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel faon Disney perd sa mère dans la forêt ?",
-      "reponse": "Bambi",
+      "question": "Quel duo de La Petite Vie dort debout ?",
+      "reponse": "Popa et Moman",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel chien accompagne Dorothy dans le Magicien d'Oz ?",
-      "reponse": "Toto",
+      "question": "Quel canard milliardaire plonge dans ses pièces d'or ?",
+      "reponse": "Picsou",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
+      "reponse": "Caillou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel pirate est joué par Johnny Depp ?",
+      "reponse": "Jack Sparrow",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel acteur muet portait un chapeau melon et une canne ?",
+      "reponse": "Charlie Chaplin",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -34,122 +119,74 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Dans quel film d'animation un lion, une girafe, un zèbre et un hippopotame s'échappent-ils d'un zoo de New York ?",
-      "reponse": "Madagascar",
+      "question": "Comment s'appelle la petite souris grise que le chat Tom n'attrape jamais ?",
+      "reponse": "Jerry",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel milliardaire porte une armure rouge et or ?",
+      "reponse": "Iron Man",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle animatrice québécoise animait Le Banquier ?",
+      "reponse": "Julie Snyder",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série suit six amis dans un café new-yorkais ?",
+      "reponse": "Friends",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quels quatre frères bandits affrontent Lucky Luke ?",
+      "reponse": "Les Dalton",
       "niveau": 1,
       "ages": [
         "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel petit oiseau jaune échappe toujours au chat Grosminet ?",
-      "reponse": "Titi",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée suit des chiots sauveteurs ?",
-      "reponse": "Pat' Patrouille",
-      "niveau": 1,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment se nomme la Belle au bois dormant chez Disney ?",
-      "reponse": "Aurore",
-      "niveau": 2,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel jeune partenaire aide Walter White ?",
-      "reponse": "Jesse Pinkman",
+      "question": "Comment s'appelle le meilleur ami roux de Harry Potter ?",
+      "reponse": "Ron Weasley",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel milliardaire Marvel a un réacteur dans la poitrine ?",
+      "reponse": "Tony Stark",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film de 1975 a vidé les plages avec son requin géant ?",
+      "reponse": "Les Dents de la mer",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami étoile de mer accompagne Bob l'éponge ?",
-      "reponse": "Patrick",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film Pixar un rat devient-il chef cuisinier à Paris ?",
-      "reponse": "Ratatouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel vaisseau pilote Han Solo ?",
-      "reponse": "Faucon Millénium",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Disney a de très longs cheveux magiques ?",
-      "reponse": "Raiponce",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel gros chat court sans arrêt après le petit oiseau Titi ?",
-      "reponse": "Grosminet",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle marionnette verte du Muppet Show anime le spectacle ?",
-      "reponse": "Kermit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
-      "reponse": "Les Plouffe",
-      "niveau": 3,
-      "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel pirate est l'ennemi juré de Peter Pan ?",
-      "reponse": "Capitaine Crochet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Disney vit avec sept nains ?",
-      "reponse": "Blanche-Neige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat robot bleu vient du futur ?",
-      "reponse": "Doraemon",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chien de dessin animé est le compagnon de Charlie Brown ?",
-      "reponse": "Snoopy",
+      "question": "Quel garçon au chandail à zigzag est le maître de Snoopy ?",
+      "reponse": "Charlie Brown",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -159,51 +196,9 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle famille préhistorique conduit une voiture à pédales ?",
-      "reponse": "Les Pierrafeu",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel majordome sert Bruce Wayne ?",
-      "reponse": "Alfred",
+      "question": "Quel ours du Livre de la jungle chante Il en faut peu ?",
+      "reponse": "Baloo",
       "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse de Star Wars est la sœur de Luke ?",
-      "reponse": "Leia",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel méchant des Minions veut voler la Lune ?",
-      "reponse": "Gru",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ours brun de dessin animé vole des paniers de pique-nique ?",
-      "reponse": "Yogi",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle voiture voyage dans le temps dans Retour vers le futur ?",
-      "reponse": "La DeLorean",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

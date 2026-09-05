@@ -7,9 +7,36 @@
   "emoji": "🌲",
   "questions": [
     {
+      "categorie": "Histoire",
+      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
+      "reponse": "Un missionnaire",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel concours de chant québécois lance des carrières depuis 2003 ?",
-      "reponse": "Star Académie",
+      "question": "Quelle téléréalité québécoise fait cohabiter des célibataires devant les caméras ?",
+      "reponse": "Occupation Double",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
+      "reponse": "L'hémisphère nord",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle mascotte orange et poilue est passée des Expos aux Canadiens ?",
+      "reponse": "Youppi",
       "niveau": 2,
       "ages": [
         "ados",
@@ -18,9 +45,35 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel quotidien montréalais a imprimé sa dernière édition en 2017 pour passer à la tablette ?",
-      "reponse": "La Presse",
+      "categorie": "Sports",
+      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
+      "reponse": "Georges St-Pierre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe québécois a chanté La complainte du phoque en Alaska ?",
+      "reponse": "Beau Dommage",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel duo de La Petite Vie dort debout ?",
+      "reponse": "Popa et Moman",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
+      "reponse": "L'inlandsis",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -29,27 +82,18 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
-      "reponse": "Les Baronets",
+      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
+      "reponse": "Coup de Pouce",
       "niveau": 3,
       "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a raflé les Junos avec l'album Phoenix ?",
-      "reponse": "Charlotte Cardin",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
-      "reponse": "Trudeau",
+      "categorie": "Culture pop",
+      "question": "Quelle société d'État a le monopole de la vente d'alcool au Québec ?",
+      "reponse": "La SAQ",
       "niveau": 1,
       "ages": [
         "ados",
@@ -58,16 +102,10 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle sauce sucrée et brune coule sur les crêpes du Québec ?",
-      "reponse": "Le sirop d'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel état américain touche le Québec et le Nouveau-Brunswick ?",
-      "reponse": "Le Maine",
-      "niveau": 2,
+      "categorie": "Musique",
+      "question": "Quel gala récompense la musique québécoise ?",
+      "reponse": "L'ADISQ",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -76,85 +114,24 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
-      "reponse": "Un divulgâcheur",
+      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
+      "reponse": "Dominique Michel et Denise Filiatrault",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël québécois reprend l'air de Jingle Bells ?",
-      "reponse": "Vive le vent",
-      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
-      "reponse": "Traité de Paris",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
-      "reponse": "Le REM",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
-      "reponse": "Arthur Laroche",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
-      "reponse": "Steinberg",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est voisine du Québec, à l'est, avec Fredericton pour capitale ?",
-      "reponse": "Le Nouveau-Brunswick",
+      "question": "Comment appelait-on la colonie française en Amérique du Nord ?",
+      "reponse": "La Nouvelle-France",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois a créé la série Les Beaux Malaises ?",
-      "reponse": "Martin Matte",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel festival de musique se tient chaque été au parc Jean-Drapeau à Montréal ?",
-      "reponse": "Osheaga",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle viande hachée garnit le pâté chinois ?",
+      "reponse": "Le bœuf",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
@@ -168,41 +145,46 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
-      "reponse": "Olivier Guimond",
-      "niveau": 3,
+      "categorie": "Musique",
+      "question": "Quel groupe rock québécois était mené par Gerry Boulet ?",
+      "reponse": "Offenbach",
+      "niveau": 2,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série québécoise suivait une famille qui vivait de combines et d'aide sociale ?",
+      "reponse": "Les Bougon",
+      "niveau": 2,
+      "ages": [
+        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?",
-      "reponse": "La ville de Québec",
+      "question": "Quel énorme bloc de calcaire troué se dresse dans la mer en Gaspésie ?",
+      "reponse": "Le rocher Percé",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
-      "reponse": "Mariana Mazza",
-      "niveau": 3,
+      "question": "Quelle pharmacie québécoise promet qu'on y trouve de tout, même un ami ?",
+      "reponse": "Jean Coutu",
+      "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle comptine québécoise plume un oiseau, la tête, le bec et les ailes ?",
-      "reponse": "Alouette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de baseball a joué à Montréal ?",
-      "reponse": "Les Expos",
-      "niveau": 1,
+      "categorie": "Histoire",
+      "question": "Quel pont s'est effondré deux fois pendant sa construction, en 1907 et en 1916 ?",
+      "reponse": "Le pont de Québec",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -210,9 +192,9 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelles jeunes filles furent envoyées peupler la Nouvelle-France ?",
-      "reponse": "Filles du Roy",
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
+      "reponse": "Quétaine",
       "niveau": 2,
       "ages": [
         "ados",
@@ -222,15 +204,38 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat québécois cuit des haricots blancs au four ?",
-      "reponse": "Fèves au lard",
-      "niveau": 1
+      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
+      "reponse": "Le smoked meat",
+      "niveau": 3
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel caillou céleste brille en traversant l'atmosphère ?",
-      "reponse": "L'étoile filante",
-      "niveau": 1
+      "categorie": "Géographie",
+      "question": "Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?",
+      "reponse": "La baie James",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
+      "reponse": "Loft Story",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle autrice et animatrice québécoise a abordé les tabous à la télé pendant des décennies ?",
+      "reponse": "Janette Bertrand",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     }
   ]
 }

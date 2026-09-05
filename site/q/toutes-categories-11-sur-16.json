@@ -7,9 +7,155 @@
   "emoji": "🎲",
   "questions": [
     {
+      "categorie": "Musique",
+      "question": "Quel chant de Noël anglais souhaite un joyeux Noël en le répétant trois fois ?",
+      "reponse": "We Wish You a Merry Christmas",
+      "niveau": 2
+    },
+    {
       "categorie": "Bouffe et cuisine",
-      "question": "De quoi est fait le tofu ?",
-      "reponse": "Du soja",
+      "question": "Que souffle-t-on sur le gâteau de fête après avoir fait un vœu ?",
+      "reponse": "Les bougies",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle bataille grecque a donné son nom à une course ?",
+      "reponse": "Marathon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel métal les aimants attirent-ils ?",
+      "reponse": "Le fer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel est le chien de compagnie de Mickey ?",
+      "reponse": "Pluto",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument a 47 cordes et se joue assis ?",
+      "reponse": "La harpe",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle station de ski domine le fleuve dans Charlevoix ?",
+      "reponse": "Le Massif",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle carte à puce sert à payer le métro et l'autobus à Montréal ?",
+      "reponse": "La carte Opus",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel amuseur en habit à grelots faisait rire le roi ?",
+      "reponse": "Un bouffon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que doit savoir faire le chasseur sans son chien ?",
+      "reponse": "Chasser",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète est la plus chaude du système solaire ?",
+      "reponse": "Vénus",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle embarcation traverse le fleuve gelé au Carnaval ?",
+      "reponse": "Le canot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Corée du Sud ?",
+      "reponse": "Séoul",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la grande salle de l'école où se donne l'éducation physique ?",
+      "reponse": "Le gymnase",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat argentin grille des viandes au feu de bois ?",
+      "reponse": "L'asado",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plateforme diffuse les films de Marvel et de Pixar ?",
+      "reponse": "Disney+",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel oiseau figure sur la pièce de un dollar canadien ?",
+      "reponse": "Le huard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve le Kilimandjaro ?",
+      "reponse": "La Tanzanie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle joueuse de tennis a gagné 23 titres du grand chelem ?",
+      "reponse": "Serena Williams",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie tourner autour du pot ?",
+      "reponse": "Hésiter à parler",
       "niveau": 1,
       "ages": [
         "ados",
@@ -18,91 +164,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel site de vente en ligne a une flèche souriante dans son logo ?",
-      "reponse": "Amazon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle est la première personne du pluriel ?",
-      "reponse": "Nous",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
-      "reponse": "Un missionnaire",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le symbole chimique du fer ?",
-      "reponse": "Fe",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur français moustachu chantait Les Champs-Élysées ?",
-      "reponse": "Joe Dassin",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle mer sépare la péninsule coréenne de l'archipel nippon ?",
-      "reponse": "La mer du Japon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Pluriel de œil ?",
-      "reponse": "Yeux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel youtubeur américain organise des défis à des millions de dollars ?",
-      "reponse": "MrBeast",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel instrument sert à observer les étoiles ?",
-      "reponse": "Le télescope",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie être rusé comme un renard ?",
-      "reponse": "Être très malin",
-      "niveau": 1
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel repas se prend le midi au Québec ?",
-      "reponse": "Le dîner",
+      "question": "Quelle tarte épicée se mange à l'Action de grâce ?",
+      "reponse": "À la citrouille",
       "niveau": 1
     },
     {
@@ -118,104 +182,30 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel pirate est joué par Johnny Depp ?",
-      "reponse": "Jack Sparrow",
+      "question": "Quel film d'animation raconte un garçon qui rejoint le pays des morts avec sa guitare ?",
+      "reponse": "Coco",
       "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouvent la France et l'Italie ?",
-      "reponse": "L'Europe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de symphonies Beethoven a-t-il composées ?",
-      "reponse": "Neuf",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quelle cage combattent les athlètes de l'UFC ?",
-      "reponse": "L'octogone",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel oiseau figure sur la pièce de un dollar canadien ?",
-      "reponse": "Le huard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel dragon noir accompagne Harold ?",
-      "reponse": "Krokmou",
-      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle plateforme de diffusion a un grand N rouge pour logo ?",
-      "reponse": "Netflix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année le Titanic a-t-il coulé ?",
-      "reponse": "1912",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée les équipes de la Ligue nationale se disputent-elles au printemps ?",
-      "reponse": "La coupe Stanley",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle viande fumée est associée à Montréal ?",
-      "reponse": "Le smoked meat",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle laitue compose la salade César ?",
-      "reponse": "La romaine",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle cabane à sucre célèbre appartient à un chef renommé ?",
-      "reponse": "Au Pied de Cochon",
+      "question": "Quel jeu de plateau pose des questions dans six catégories de couleurs ?",
+      "reponse": "Quelques Arpents de Pièges (Trivial Pursuit)",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie « dormir comme une marmotte » ?",
+      "reponse": "Dormir profondément",
+      "niveau": 1
     }
   ]
 }

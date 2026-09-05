@@ -8,25 +8,31 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quels biscuits noirs à la crème blanche trempe-t-on dans le lait ?",
-      "reponse": "Les Oreo",
+      "question": "Quel poisson fumé garnit le bagel classique ?",
+      "reponse": "Le saumon fumé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel outil de bois aplatit la pâte à tarte ?",
+      "reponse": "Le rouleau à pâte",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel chou fermenté accompagne les saucisses en Alsace ?",
+      "reponse": "La choucroute",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage italien garnit la pizza ?",
-      "reponse": "La mozzarella",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat péruvien est du poisson cru mariné ?",
-      "reponse": "Le ceviche",
+      "question": "Quelle épice se râpe sur le lait de poule ?",
+      "reponse": "La muscade",
       "niveau": 2,
       "ages": [
         "ados",
@@ -36,14 +42,32 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume fait pleurer quand on le coupe ?",
-      "reponse": "L'oignon",
+      "question": "Quelle chaîne canadienne vend du café, des beignes et des Timbits ?",
+      "reponse": "Tim Hortons",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle céréale maltée est la base de la bière ?",
-      "reponse": "L'orge",
+      "question": "Pays d'origine du croissant ?",
+      "reponse": "La France",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte jaune tirée de la crème se tartine sur le pain ?",
+      "reponse": "Le beurre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Sur quoi dépose-t-on son repas à table ?",
+      "reponse": "Une assiette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle épice orange colore le curry ?",
+      "reponse": "Le curcuma",
       "niveau": 2,
       "ages": [
         "ados",
@@ -53,26 +77,19 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel bonhomme de biscuit court dans les contes ?",
-      "reponse": "Pain d'épice",
-      "niveau": 1
+      "question": "Quelle bouillie d'avoine chaude réchauffe les matins d'hiver ?",
+      "reponse": "Le gruau",
+      "niveau": 2
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit garnit la tarte Tatin ?",
-      "reponse": "La pomme",
-      "niveau": 2,
+      "question": "Quel sirop doré anglais vient de la canne ?",
+      "reponse": "Golden syrup",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson gazeuse au gingembre est célèbre au Canada ?",
-      "reponse": "Le ginger ale (Canada Dry)",
-      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -86,43 +103,39 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume en feuilles vertes est la base d'une salade ?",
-      "reponse": "La laitue",
+      "question": "Quel repas se prend le midi au Québec ?",
+      "reponse": "Le dîner",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel petit agrume orangé se pèle en quartiers dans la boîte à lunch ?",
-      "reponse": "La clémentine",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit violet à noyau, une fois séché, aide à la digestion ?",
-      "reponse": "La prune",
+      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
+      "reponse": "Le club sandwich",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Où pêche-t-on la célèbre crevette nordique québécoise ?",
-      "reponse": "À Matane",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle boisson gazeuse brune est née à Atlanta ?",
+      "reponse": "Le Coca-Cola",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat français mijote du bœuf au vin rouge ?",
-      "reponse": "Bœuf bourguignon",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle confiserie blanche flotte sur le chocolat chaud ?",
+      "reponse": "La guimauve",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Que souffle-t-on sur le gâteau de fête après avoir fait un vœu ?",
+      "reponse": "Les bougies",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
+      "reponse": "Le pain doré",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -132,14 +145,14 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Comment appelle-t-on la petite bille de chocolat qu'on met dans les biscuits ?",
-      "reponse": "Une pépite",
+      "question": "Quelle pomme enrobée est une friandise d'Halloween ?",
+      "reponse": "Pomme au caramel",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte russe est un petit chausson farci ?",
-      "reponse": "Le pirojki",
+      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
+      "reponse": "La granita",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -148,49 +161,15 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la paella ?",
-      "reponse": "L'Espagne",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel condiment jaune accompagne le hot-dog ?",
-      "reponse": "La moutarde",
+      "question": "Quel pain rond avec un trou se mange à Montréal ?",
+      "reponse": "Le bagel",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit rouge pousse dans les tourbières ?",
-      "reponse": "La canneberge",
+      "question": "Quel dessert coloré tremble dans son bol et se prépare avec de la poudre ?",
+      "reponse": "Le Jell-O",
       "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle bouchée de riz japonaise enroule du poisson dans une algue ?",
-      "reponse": "Le sushi",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande hachée garnit le pâté chinois ?",
-      "reponse": "Le bœuf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quel pays vient le champagne ?",
-      "reponse": "La France",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

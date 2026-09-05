@@ -8,19 +8,37 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Quelle auteure a écrit Les Filles de Caleb ?",
-      "reponse": "Arlette Cousture",
+      "question": "Quel frère québécois guérisseur est devenu saint ?",
+      "reponse": "Frère André",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle université montréalaise fut fondée en 1821 ?",
+      "reponse": "McGill",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Combien de ponts mènent à l'île d'Orléans ?",
-      "reponse": "Un seul",
-      "niveau": 1,
+      "question": "Où emprunte-t-on gratuitement des livres dans son quartier ?",
+      "reponse": "À la bibliothèque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que veut dire l'expression « c'est écœurant », quand c'est un compliment ?",
+      "reponse": "C'est excellent",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -29,24 +47,66 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne l'aspirateur qu'on passe dans la maison ?",
-      "reponse": "La balayeuse",
-      "niveau": 2
+      "question": "Quelle est la capitale nationale du Québec ?",
+      "reponse": "Québec",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la neige soulevée par le vent qui coupe la visibilité ?",
-      "reponse": "La poudrerie",
-      "niveau": 2
+      "question": "Quelle est la fleur emblème du Québec ?",
+      "reponse": "Iris versicolore",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelle équipe de football joue à Montréal ?",
-      "reponse": "Les Alouettes",
+      "question": "Quelle chanson de Vigneault sert d'hymne populaire ?",
+      "reponse": "Gens du pays",
       "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel mot québécois désigne un petit trou dans l'asphalte après l'hiver ?",
+      "reponse": "Un nid-de-poule",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel surnom anglophone donne-t-on au Stade olympique ?",
+      "reponse": "Le Big O",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle plaque de métal à l'arrière de l'auto porte « Je me souviens » ?",
+      "reponse": "La plaque d'immatriculation",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la personne qui surveille la cour d'école à la récréation ?",
+      "reponse": "Un surveillant",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel chansonnier a écrit Quand les hommes vivront d'amour ?",
+      "reponse": "Raymond Lévesque",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     },
@@ -62,143 +122,10 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel chansonnier a écrit Quand les hommes vivront d'amour ?",
-      "reponse": "Raymond Lévesque",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne le fait de se tromper complètement ?",
-      "reponse": "Se planter",
+      "question": "Quel film de Denys Arcand a gagné un Oscar ?",
+      "reponse": "Invasions barbares",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle partie de l'église pointe vers le ciel et se voit de loin dans un village ?",
-      "reponse": "Le clocher",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on l'étage sous le rez-de-chaussée où l'on range et où l'on joue ?",
-      "reponse": "Le sous-sol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quels canots géants transportaient les fourrures ?",
-      "reponse": "Canots de maître",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel hébergement québécois est rebâti chaque hiver ?",
-      "reponse": "Hôtel de glace",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Combien de lignes compte le métro de Montréal ?",
-      "reponse": "Quatre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel papillon est l'insecte emblème du Québec ?",
-      "reponse": "L'amiral",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on au Québec la maison de vacances au bord d'un lac ?",
-      "reponse": "Le chalet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle cabane à sucre célèbre appartient à un chef renommé ?",
-      "reponse": "Au Pied de Cochon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne le manteau et la salopette d'hiver des enfants ?",
-      "reponse": "L'habit de neige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel festival d'humour a lieu à Montréal ?",
-      "reponse": "Juste pour rire",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel panneau rouge à huit côtés oblige l'auto à s'immobiliser ?",
-      "reponse": "Un arrêt",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on au Québec les boissons gazeuses ?",
-      "reponse": "La liqueur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle plantation d'érables se visite au printemps ?",
-      "reponse": "Une érablière",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel vêtement long et épais protège du froid de janvier ?",
-      "reponse": "Un manteau d'hiver",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel tunnel fait passer l'autoroute sous le centre-ville de Montréal ?",
-      "reponse": "Le tunnel Ville-Marie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel cidre québécois est pressé après les gelées ?",
-      "reponse": "Cidre de glace",
-      "niveau": 1,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -208,6 +135,83 @@
       "question": "Quelle soupe jaune est un classique québécois ?",
       "reponse": "Soupe aux pois",
       "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment nomme-t-on la période des sucres ?",
+      "reponse": "Le temps des sucres",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel zoo québécois est dédié à la faune nordique ?",
+      "reponse": "Saint-Félicien",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel liquide met-on dans le réservoir de l'auto à la station-service ?",
+      "reponse": "L'essence",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel humoriste québécois a créé le personnage de Sol ?",
+      "reponse": "Marc Favreau",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel pont relie Montréal à Longueuil ?",
+      "reponse": "Jacques-Cartier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "De quelle couleur est le drapeau du Québec ?",
+      "reponse": "Bleu et blanc",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel chanteur québécois a chanté Deux par deux rassemblés ?",
+      "reponse": "Pierre Lapointe",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le trou creusé dans l'asphalte par le gel et le dégel ?",
+      "reponse": "Un nid-de-poule",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel humoriste montréalais fait des spectacles bilingues ?",
+      "reponse": "Sugar Sammy",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel est l'oiseau emblème du Québec ?",
+      "reponse": "Harfang des neiges",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",

@@ -8,19 +8,19 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quel reptile porte une carapace sur son dos ?",
-      "reponse": "La tortue",
+      "question": "Quel muscle bat sans jamais se reposer ?",
+      "reponse": "Le cœur",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal d'Australie dort presque toute la journée dans un eucalyptus ?",
-      "reponse": "Le koala",
+      "question": "Quelle est la vitesse approximative de la lumière ?",
+      "reponse": "300 000 km/s",
       "niveau": 2,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -31,66 +31,20 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel grand singe est le plus proche de l'homme ?",
-      "reponse": "Le chimpanzé",
+      "question": "Quel organe de la bouche permet de goûter ?",
+      "reponse": "La langue",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle force nous retient au sol ?",
-      "reponse": "La gravité",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle échelle mesure la dureté des minéraux ?",
-      "reponse": "Mohs",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel petit animal à coquille rampe lentement en laissant une trace ?",
-      "reponse": "L'escargot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on l'ensemble formé par le Soleil et ses planètes ?",
-      "reponse": "Le système solaire",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Que faut-il mettre en terre pour faire pousser une plante ?",
-      "reponse": "Une graine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel acide donne son goût au citron ?",
-      "reponse": "L'acide citrique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre provoque les marées ?",
+      "question": "Quel astre change de forme dans le ciel au fil des nuits ?",
       "reponse": "La Lune",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal est le plus gros rongeur du monde ?",
-      "reponse": "Le capybara",
+      "question": "Combien de paires de côtes avons-nous ?",
+      "reponse": "Douze",
       "niveau": 2,
       "ages": [
         "ados",
@@ -100,8 +54,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle protéine transporte l'oxygène dans le sang ?",
-      "reponse": "L'hémoglobine",
+      "question": "Quel gaz léger gonflait les dirigeables ?",
+      "reponse": "L'hydrogène",
       "niveau": 2,
       "ages": [
         "ados",
@@ -111,8 +65,31 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de cœurs possède un ver de terre ?",
-      "reponse": "Cinq",
+      "question": "Quel arbre géant de Californie est le plus gros du monde ?",
+      "reponse": "Le séquoia",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Où vivent les ours polaires ?",
+      "reponse": "En Arctique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "En quelle saison les feuilles des arbres tombent-elles ?",
+      "reponse": "L'automne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de mois dure la gestation de l'éléphant ?",
+      "reponse": "22",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -121,25 +98,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle échelle mesure les séismes ?",
-      "reponse": "Richter",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle fleur jaune devient une boule de duvet qu'on souffle ?",
-      "reponse": "Le pissenlit",
+      "question": "Dans quel organe la nourriture arrive-t-elle une fois avalée ?",
+      "reponse": "L'estomac",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel oiseau est le plus rapide en piqué ?",
-      "reponse": "Le faucon pèlerin",
+      "question": "Quel élément chimique a le symbole N ?",
+      "reponse": "L'azote",
       "niveau": 2,
       "ages": [
         "ados",
@@ -149,8 +115,61 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Contre quelle maladie Pasteur a-t-il créé un vaccin ?",
-      "reponse": "La rage",
+      "question": "Quel gaz de l'air respirons-nous pour vivre ?",
+      "reponse": "L'oxygène",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel métal précieux conduit le mieux l'électricité ?",
+      "reponse": "L'argent",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus petite unité de la matière ?",
+      "reponse": "L'atome",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie colorée de la fleur attire les abeilles ?",
+      "reponse": "Les pétales",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de pattes possède une araignée ?",
+      "reponse": "Huit",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète a été rétrogradée en planète naine ?",
+      "reponse": "Pluton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle galaxie abrite notre système solaire ?",
+      "reponse": "La Voie lactée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel instrument sert à observer les étoiles ?",
+      "reponse": "Le télescope",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Dans quelle partie du corps loge l'os appelé enclume ?",
+      "reponse": "Dans l'oreille",
       "niveau": 2,
       "ages": [
         "ados",
@@ -160,14 +179,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la durée d'une année sur Terre ?",
-      "reponse": "365 jours",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de litres de sang contient un adulte ?",
-      "reponse": "Cinq",
+      "question": "Quel animal polaire a la peau noire sous son pelage blanc ?",
+      "reponse": "L'ours polaire",
       "niveau": 2,
       "ages": [
         "ados",
@@ -177,26 +190,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel événement cache le Soleil derrière la Lune ?",
-      "reponse": "Une éclipse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal terrestre est le plus lourd ?",
-      "reponse": "L'éléphant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle partie du visage sert à sentir les odeurs ?",
-      "reponse": "Le nez",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte rouge à points noirs porte bonheur ?",
-      "reponse": "La coccinelle",
+      "question": "Quel effet atmosphérique réchauffe la planète ?",
+      "reponse": "L'effet de serre",
       "niveau": 1
     }
   ]

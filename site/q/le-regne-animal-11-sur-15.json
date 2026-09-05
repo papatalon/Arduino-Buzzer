@@ -7,104 +7,46 @@
   "emoji": "🐾",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Comment s'appelle le petit du canard ?",
-      "reponse": "Le caneton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat orange déteste les lundis et adore la lasagne ?",
-      "reponse": "Garfield",
-      "niveau": 1,
+      "categorie": "Culture pop",
+      "question": "Quel jeu de poche en noir et blanc faisait vivre un animal virtuel ?",
+      "reponse": "Le Tamagotchi",
+      "niveau": 2,
       "ages": [
-        "enfants",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?",
-      "reponse": "Le cheval de Troie",
-      "niveau": 2
+      "categorie": "Musique",
+      "question": "Quelle expression du Roi Lion signifie « sans souci » en swahili ?",
+      "reponse": "Hakuna Matata",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de bosses a un dromadaire ?",
-      "reponse": "Une",
+      "question": "De quel arbre le koala mange-t-il les feuilles ?",
+      "reponse": "L'eucalyptus",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie « avoir une faim de loup » ?",
-      "reponse": "Avoir très faim",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
-      "reponse": "Le homard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle nage avance en poussant les deux bras en même temps, comme une grenouille ?",
-      "reponse": "La brasse",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les dessins d'animaux tracés sur les parois des grottes ?",
-      "reponse": "Les peintures rupestres",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel géant de bois cache des soldats grecs ?",
-      "reponse": "Le cheval de Troie",
-      "niveau": 1
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat robot bleu vient du futur ?",
+      "reponse": "Doraemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de pattes possède une araignée ?",
-      "reponse": "Huit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel insecte fabrique le miel ?",
-      "reponse": "L'abeille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du chien ?",
-      "reponse": "Le chiot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
-      "reponse": "Une diligence",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?",
-      "reponse": "Le tyrannosaure",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Que devient un têtard ?",
-      "reponse": "Une grenouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du corbeau ?",
-      "reponse": "Le croassement",
+      "question": "Quel oiseau est le plus rapide en piqué ?",
+      "reponse": "Le faucon pèlerin",
       "niveau": 2,
       "ages": [
         "ados",
@@ -113,15 +55,119 @@
       ]
     },
     {
+      "categorie": "Culture générale",
+      "question": "Quel animal nous donne la laine ?",
+      "reponse": "Le mouton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal est le meilleur ami de l'homme ?",
+      "reponse": "Le chien",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?",
+      "reponse": "Le cheval de Troie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie donner sa langue au chat ?",
+      "reponse": "Renoncer à deviner",
+      "niveau": 1
+    },
+    {
       "categorie": "Cinéma et télé",
-      "question": "Quel animal est Abu, l'ami d'Aladin ?",
-      "reponse": "Un singe",
+      "question": "Quel oiseau de dessin animé file à toute vitesse en faisant « bip bip » ?",
+      "reponse": "Bip Bip",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de bosses a un dromadaire ?",
+      "reponse": "Une",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le seul mammifère volant ?",
+      "reponse": "La chauve-souris",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quelle grosse tortue à carapace épineuse enlève la princesse Peach ?",
-      "reponse": "Bowser",
+      "question": "Quel géant de bois cache des soldats grecs ?",
+      "reponse": "Le cheval de Troie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les dessins d'animaux tracés sur les parois des grottes ?",
+      "reponse": "Les peintures rupestres",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri de l'éléphant ?",
+      "reponse": "Le barrissement",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal de la ferme nous donne le lait ?",
+      "reponse": "La vache",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel arachnide a une queue munie d'un dard ?",
+      "reponse": "Le scorpion",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel oiseau figure sur la pièce de un dollar canadien ?",
+      "reponse": "Le huard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal a allaité Romulus et Rémus ?",
+      "reponse": "Une louve",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal d'Australie dort presque toute la journée dans un eucalyptus ?",
+      "reponse": "Le koala",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de vertèbres a le cou d'une girafe ?",
+      "reponse": "Sept",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle héroïne à pois rouges combat le crime à Paris avec Chat Noir ?",
+      "reponse": "Ladybug",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -129,45 +175,16 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel poisson à moustaches se pêche au fond des rivières du Québec ?",
-      "reponse": "La barbotte",
-      "niveau": 3
+      "categorie": "Culture générale",
+      "question": "Quel cheval mythologique a des ailes ?",
+      "reponse": "Pégase",
+      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie être rusé comme un renard ?",
-      "reponse": "Être très malin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chien de dessin animé est le compagnon de Charlie Brown ?",
-      "reponse": "Snoopy",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel animal géant et blanc est le symbole du Grand Nord canadien ?",
-      "reponse": "L'ours polaire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle chienne partage un spaghetti avec un clochard ?",
-      "reponse": "Lady",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel petit animal à coquille rampe lentement en laissant une trace ?",
-      "reponse": "L'escargot",
-      "niveau": 1
+      "question": "Comment appelle-t-on le trou où se cache le lapin sauvage ?",
+      "reponse": "Un terrier",
+      "niveau": 2
     }
   ]
 }

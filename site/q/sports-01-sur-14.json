@@ -8,33 +8,102 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel joueur de hockey est surnommé La Merveille ?",
-      "reponse": "Wayne Gretzky",
-      "niveau": 1,
+      "question": "Quel jeu consiste à se cacher pendant qu'un joueur compte les yeux fermés ?",
+      "reponse": "La cachette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
+      "reponse": "Quatre ans",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe canadienne a gagné la Série mondiale en 1992 ?",
+      "reponse": "Blue Jays",
+      "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel coup de tennis se frappe bras en travers du corps, dos de la main devant ?",
-      "reponse": "Un revers",
+      "question": "Comment appelle-t-on le moment où l'arbitre laisse tomber la rondelle entre deux joueurs ?",
+      "reponse": "La mise au jeu",
       "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quel jeu provençal lance des boules vers un cochonnet ?",
-      "reponse": "La pétanque",
+      "question": "Quelle épreuve d'athlétisme saute le plus loin possible dans un carré de sable ?",
+      "reponse": "Le saut en longueur",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel coureur éthiopien a gagné le marathon pieds nus ?",
-      "reponse": "Abebe Bikila",
-      "niveau": 3,
+      "question": "Quel joueur a été repêché premier au total par Edmonton en 2015 ?",
+      "reponse": "Connor McDavid",
+      "niveau": 1,
       "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel appareil mesure le temps d'une course à la seconde près ?",
+      "reponse": "Un chronomètre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sprinteur canadien a gagné le 100 m aux JO de 1996 ?",
+      "reponse": "Donovan Bailey",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de hockey joue à Toronto ?",
+      "reponse": "Les Maple Leafs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de quilles dans un jeu de bowling ?",
+      "reponse": "Dix",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le joueur qui remplace un blessé en cours de match ?",
+      "reponse": "Un remplaçant",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle embarcation étroite se dirige avec une pagaie à deux pales ?",
+      "reponse": "Le kayak",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle activité consiste à marcher longtemps sur des sentiers en forêt ou en montagne ?",
+      "reponse": "La randonnée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle joueuse de tennis a gagné 23 titres du grand chelem ?",
+      "reponse": "Serena Williams",
+      "niveau": 2,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -52,30 +121,25 @@
     },
     {
       "categorie": "Sports",
+      "question": "Comment nomme-t-on un trou d'un coup au golf ?",
+      "reponse": "Un as",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
       "question": "Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?",
       "reponse": "Le football",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel boxeur se surnommait The Greatest ?",
-      "reponse": "Muhammad Ali",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le trait blanc où les coureurs s'alignent avant le coup de pistolet ?",
-      "reponse": "La ligne de départ",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle est la distance d'un marathon ?",
-      "reponse": "42,2 km",
+      "question": "Quel objet lourd lance-t-on en le faisant tournoyer ?",
+      "reponse": "Le marteau",
       "niveau": 2,
       "ages": [
         "ados",
@@ -85,86 +149,13 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de trous compte un parcours de golf complet ?",
-      "reponse": "18",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle pièce d'équipement le joueur de baseball met-il sur la tête au bâton ?",
-      "reponse": "Un casque protecteur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
-      "reponse": "Gary Carter",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la pratique où l'entraîneur choisit son équipe ?",
-      "reponse": "Un camp d'entraînement",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle activité d'hiver descend une pente sur un traîneau ou une chambre à air ?",
-      "reponse": "La glissade",
+      "question": "Quelle équipe de la NBA vient de Toronto ?",
+      "reponse": "Les Raptors",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Combien de points vaut un touché au football ?",
-      "reponse": "Six",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle carte l'arbitre de soccer montre-t-il pour avertir un joueur ?",
-      "reponse": "Un carton jaune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel style de nage porte le nom d'un insecte ?",
-      "reponse": "Le papillon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
-      "reponse": "Le ballon-balai",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le match qui décide du championnat ?",
-      "reponse": "La finale",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de tournois composent le grand chelem de tennis ?",
+      "question": "Combien de quarts compte un match de la NBA ?",
       "reponse": "Quatre",
       "niveau": 1,
       "ages": [
@@ -175,8 +166,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel pays a gagné la Coupe du monde de soccer en 1958, en 1962 et en 1970 ?",
-      "reponse": "Le Brésil",
+      "question": "Quel Serbe a remporté son premier titre du grand chelem à Melbourne en 2008 ?",
+      "reponse": "Novak Djokovic",
       "niveau": 2,
       "ages": [
         "ados",
@@ -186,21 +177,26 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel capitaine des Penguins est surnommé Sid the Kid ?",
-      "reponse": "Sidney Crosby",
+      "question": "Quel sport se joue avec une raquette et une balle jaune par-dessus un filet ?",
+      "reponse": "Le tennis",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport porte-t-on un fleuret et un masque ?",
+      "reponse": "L'escrime",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de hockey joue à Toronto ?",
-      "reponse": "Les Maple Leafs",
+      "question": "Comment appelle-t-on la toile tendue sur laquelle on rebondit très haut ?",
+      "reponse": "Un trampoline",
       "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on un match qui se termine à égalité ?",
-      "reponse": "Une nulle",
-      "niveau": 2
     }
   ]
 }

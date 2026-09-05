@@ -8,21 +8,15 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Où va-t-on quand on est très malade et qu'il faut être soigné ?",
-      "reponse": "À l'hôpital",
+      "question": "Comment appelle-t-on le congé imprévu que la neige offre aux élèves ?",
+      "reponse": "Une journée de tempête",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel parc animalier du Lac-Saint-Jean se visite à bord d'un train grillagé ?",
-      "reponse": "Le zoo de Saint-Félicien",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle taxe québécoise s'ajoute à la taxe fédérale sur les achats ?",
-      "reponse": "La TVQ",
-      "niveau": 3,
+      "question": "Quelle université du réseau de l'Université du Québec se trouve à Montréal ?",
+      "reponse": "L'UQAM",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -31,21 +25,126 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle résidence du Bonhomme est rebâtie en blocs translucides chaque hiver ?",
-      "reponse": "Le palais de glace",
+      "question": "Quel comédien incarne Elvis Gratton ?",
+      "reponse": "Julien Poulin",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel village de la Côte-Nord est réputé pour les baleines ?",
+      "reponse": "Tadoussac",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Dans quelle ville peut-on voir des ours blancs et des morses toute l'année ?",
+      "reponse": "Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel pont cantilever centenaire relie Québec et Lévis ?",
+      "reponse": "Le pont de Québec",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelles îles québécoises sont au milieu du golfe ?",
+      "reponse": "Îles de la Madeleine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel organisme veille sur la langue française au Québec ?",
+      "reponse": "L'OQLF",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel quartier montréalais borde le parc La Fontaine et l'avenue du Mont-Royal ?",
+      "reponse": "Le Plateau",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que veut dire « embarquer » dans une auto, au Québec ?",
+      "reponse": "Monter dedans",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle légende québécoise fait voler un canot ?",
+      "reponse": "La chasse-galerie",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Qui appelle-t-on au 911 quand une maison est en feu ?",
+      "reponse": "Les pompiers",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle tourte à plusieurs étages de pâte vient de la Gaspésie ?",
+      "reponse": "Le cipaille",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel gros camion épand du sel sur les routes glacées ?",
+      "reponse": "Une saleuse",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quel ancien vélodrome de Montréal abrite des animaux ?",
-      "reponse": "Le Biodôme",
+      "question": "Quelle créature du folklore québécois porte dans son nom l'heure du coucher ?",
+      "reponse": "Bonhomme Sept-Heures",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle date est la Fête nationale du Québec ?",
-      "reponse": "Le 24 juin",
-      "niveau": 1
+      "question": "Quelle chanteuse rock québécoise a chanté Provocante ?",
+      "reponse": "Marjo",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?",
+      "reponse": "Une corde de bois",
+      "niveau": 3
     },
     {
       "categorie": "Québec",
@@ -59,54 +158,24 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel liquide met-on dans le réservoir de l'auto à la station-service ?",
-      "reponse": "L'essence",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel est l'oiseau emblème du Québec ?",
-      "reponse": "Harfang des neiges",
+      "question": "Quel entraîneur légendaire des Canadiens s'appelait Scotty ?",
+      "reponse": "Scotty Bowman",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne une petite amie ?",
-      "reponse": "Une blonde",
+      "question": "Quelle embarcation traverse le fleuve gelé au Carnaval ?",
+      "reponse": "Le canot",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel dôme géodésique brille sur l'île Sainte-Hélène ?",
-      "reponse": "La Biosphère",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel est le plus grand cervidé du Québec ?",
-      "reponse": "L'orignal",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle station de ski domine le fleuve dans Charlevoix ?",
-      "reponse": "Le Massif",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle compagnie de fourrures rivalisait avec la Baie d'Hudson ?",
-      "reponse": "Nord-Ouest",
+      "question": "Quelle fête de juin invite les gens d'une même rue à se rassembler ?",
+      "reponse": "La fête des voisins",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -115,87 +184,21 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle baleine blanche du Saint-Laurent est protégée ?",
-      "reponse": "Le béluga",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel chanteur québécois a chanté Le Blues du businessman ?",
-      "reponse": "Claude Dubois",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui appelle-t-on au 911 quand quelqu'un est blessé ?",
-      "reponse": "L'ambulance",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel gros oiseau noir et blanc plonge dans les lacs du Québec en poussant un cri plaintif ?",
-      "reponse": "Le huard",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle chaîne québécoise vend équipement de sport et vêtements de plein air ?",
-      "reponse": "Sports Experts",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel pont relie Montréal à Longueuil ?",
-      "reponse": "Jacques-Cartier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui a fondé la ville de Québec en 1608 ?",
-      "reponse": "Champlain",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la couche de glace qui se forme au bord des toits ?",
-      "reponse": "Une barrière de glace",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui porte l'uniforme et fait respecter la loi dans la rue ?",
-      "reponse": "La police",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel arbre blanc à écorce qui pèle sert à faire les canots d'écorce ?",
-      "reponse": "Le bouleau",
+      "question": "Comment appelle-t-on celui qui conduit une motoneige sur les sentiers ?",
+      "reponse": "Un motoneigiste",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quelle rue commerciale célèbre traverse Montréal ?",
-      "reponse": "Sainte-Catherine",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quels pneus la loi québécoise impose-t-elle du 1er décembre au 15 mars ?",
+      "reponse": "Les pneus d'hiver",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel village d'attractions de Québec devient un parc aquatique l'été ?",
+      "reponse": "Valcartier",
+      "niveau": 2
     }
   ]
 }

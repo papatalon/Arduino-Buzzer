@@ -8,13 +8,113 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quelle marque de pneus a un bonhomme tout rond fait de bourrelets ?",
-      "reponse": "Michelin",
+      "question": "Quelle marque de chocolat suisse a la forme d'une montagne ?",
+      "reponse": "Toblerone",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mot désigne une personne devenue célèbre grâce aux réseaux sociaux ?",
+      "reponse": "Un influenceur",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jouet tire des fléchettes de mousse ?",
+      "reponse": "Les Nerf",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel site de vente en ligne a une flèche souriante dans son logo ?",
+      "reponse": "Amazon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que rapportait-on à l'épicerie pour récupérer quelques sous ?",
+      "reponse": "Les bouteilles vides",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise fait cohabiter des célibataires devant les caméras ?",
+      "reponse": "Occupation Double",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel repas de fête se prend après la messe de minuit, la nuit du 24 décembre ?",
+      "reponse": "Le réveillon",
       "niveau": 2,
       "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
+      "reponse": "Le 7 Jours",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle poupée blonde de Mattel a un ami nommé Ken ?",
+      "reponse": "Barbie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle fillette rapetisse pour rejoindre ses amis chats dans sa maison de poupées ?",
+      "reponse": "Gabby",
+      "niveau": 2,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de cartes à collectionner fait évoluer des créatures de poche ?",
+      "reponse": "Pokémon",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel bouton bleu approuve une publication sur Facebook ?",
+      "reponse": "J'aime",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -28,190 +128,100 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles peluches rondes et pastel portent un prénom et une histoire sur l'étiquette ?",
-      "reponse": "Les Squishmallows",
-      "niveau": 2,
+      "question": "Sous quel grand chapiteau se donnent les numéros d'acrobates ?",
+      "reponse": "Le cirque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission de variétés pour adolescents Véronique Cloutier a-t-elle animée ?",
+      "reponse": "La Fureur",
+      "niveau": 3,
       "ages": [
-        "enfants",
-        "ados"
+        "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu consiste à se figer dès que la musique s'arrête ?",
-      "reponse": "Le jeu de la statue",
+      "question": "Quelles poupées à grosse tête et lèvres pulpeuses ont concurrencé Barbie ?",
+      "reponse": "Les Bratz",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit disque contenait une chanson de chaque côté ?",
+      "reponse": "Le 45 tours",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle application commande une voiture avec chauffeur depuis un téléphone ?",
+      "reponse": "Uber",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chocolat garde un secret que sa publicité refuse de dévoiler ?",
+      "reponse": "Le Caramilk",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Où étendait-on le linge pour le faire sécher au vent ?",
+      "reponse": "Sur la corde à linge",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quels livres illustrés faut-il repérer un personnage à rayures rouges et blanches ?",
+      "reponse": "Où est Charlie",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quels petits êtres colorés aux cheveux dressés chantent dans leurs films ?",
-      "reponse": "Les Trolls",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
+      "question": "Quel cheval blanc porte une corne unique sur le front ?",
+      "reponse": "Une licorne",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle application verte fait apprendre les langues avec un hibou insistant ?",
-      "reponse": "Duolingo",
-      "niveau": 2,
+      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
+      "reponse": "Radio Enfer",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel mot le magicien lance-t-il pour faire apparaître quelque chose ?",
-      "reponse": "Abracadabra",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle console portable grise de Nintendo se jouait à quatre piles ?",
-      "reponse": "Le Game Boy",
+      "question": "Quel organisme québécois délivre les permis de conduire et les plaques ?",
+      "reponse": "La SAAQ",
       "niveau": 2,
       "ages": [
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Qui était le gérant et le mari de Céline Dion ?",
-      "reponse": "René Angélil",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel véhicule tiré par des rennes livre les cadeaux ?",
-      "reponse": "Un traîneau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel défi a fait verser des seaux d'eau glacée sur des têtes en 2014 ?",
-      "reponse": "Le Ice Bucket Challenge",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel château de plastique se gonfle pour que les enfants sautent dedans ?",
-      "reponse": "Un jeu gonflable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de crayons de cire remplit les boîtes d'école ?",
-      "reponse": "Crayola",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle boisson énergisante promet de donner des ailes ?",
-      "reponse": "Red Bull",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mort-vivant marche les bras tendus dans les films d'horreur ?",
-      "reponse": "Un zombie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
-      "reponse": "Olivier Guimond",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Où les enfants passent-ils leurs journées d'été avec des moniteurs ?",
-      "reponse": "Au camp de jour",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle application de navigation prévient des bouchons et des radars ?",
-      "reponse": "Waze",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit ours de dessin animé porte un chandail et un prénom de couleur ?",
-      "reponse": "Petit Ours Brun",
-      "niveau": 2,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel site de mode en ligne inonde le marché de vêtements à très bas prix ?",
-      "reponse": "Shein",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment s'appelle le grand bulletin de nouvelles de Radio-Canada ?",
-      "reponse": "Le Téléjournal",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?",
-      "reponse": "Alys Robi",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel rassemblement de percussionnistes a lieu au pied du mont Royal le dimanche ?",
-      "reponse": "Les tam-tams",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle poupée blonde de Mattel a un ami nommé Ken ?",
-      "reponse": "Barbie",
-      "niveau": 1
     }
   ]
 }

@@ -8,8 +8,57 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grille de fer qui descend pour bloquer l'entrée d'un château ?",
-      "reponse": "La herse",
+      "question": "Comment appelle-t-on le long bateau à rames des Grecs et des Romains ?",
+      "reponse": "Une galère",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel musicien voyageur chantait des poèmes de château en château ?",
+      "reponse": "Un troubadour",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle reine de France fut guillotinée en 1793 ?",
+      "reponse": "Marie-Antoinette",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel téléphone présenté en 2007 a bouleversé la téléphonie ?",
+      "reponse": "Le iPhone",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel capitaine anglais a cartographié le Pacifique ?",
+      "reponse": "James Cook",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les cent ans d'un événement qu'on souligne par une fête ?",
+      "reponse": "Un centenaire",
       "niveau": 3
     },
     {
@@ -20,8 +69,48 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel code de points et de traits date de 1838 ?",
-      "reponse": "Le morse",
+      "question": "En quel siècle vivons-nous ?",
+      "reponse": "Le 21e siècle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quelle plante les Égyptiens écrivaient-ils ?",
+      "reponse": "Le papyrus",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel explorateur a cherché la fontaine de Jouvence en Floride ?",
+      "reponse": "Ponce de León",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le chef qui régnait sur tout l'Empire romain ?",
+      "reponse": "Un empereur",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel héros grec avait un talon vulnérable ?",
+      "reponse": "Achille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle grande tour de fer a été bâtie à Paris pour une exposition en 1889 ?",
+      "reponse": "La tour Eiffel",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle loi américaine interdisait l'alcool ?",
+      "reponse": "La prohibition",
       "niveau": 1,
       "ages": [
         "ados",
@@ -31,20 +120,32 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Qui a inventé l'imprimerie en Europe ?",
-      "reponse": "Gutenberg",
+      "question": "Quel président sud-africain fut libéré en 1990 ?",
+      "reponse": "Nelson Mandela",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel physicien en fauteuil roulant a étudié les trous noirs ?",
-      "reponse": "Stephen Hawking",
+      "question": "Quelles jeunes filles furent envoyées peupler la Nouvelle-France ?",
+      "reponse": "Filles du Roy",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel astronaute américain a posé le pied sur la Lune le premier ?",
+      "reponse": "Neil Armstrong",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la grande demeure luxueuse d'un roi ?",
+      "reponse": "Un palais",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -54,60 +155,31 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle princesse anglaise est morte à Paris en 1997 ?",
-      "reponse": "Diana",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?",
-      "reponse": "Le télescope James Webb",
+      "question": "Quelle merveille du monde antique éclairait l'entrée d'un port égyptien ?",
+      "reponse": "Le phare d'Alexandrie",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple antique a inventé l'écriture cunéiforme ?",
-      "reponse": "Les Sumériens",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on un conflit où presque tous les pays du monde se battent ?",
-      "reponse": "Une guerre mondiale",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a déchiffré les hiéroglyphes ?",
-      "reponse": "Champollion",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Avec quoi écrivait-on avant le stylo, en la trempant dans l'encre ?",
-      "reponse": "Une plume",
+      "question": "Quelle fourrure les Européens recherchaient-ils le plus en Nouvelle-France ?",
+      "reponse": "Le castor",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle crise de 1962 concernait des missiles ?",
-      "reponse": "Crise de Cuba",
+      "question": "Quel document marqué d'un X indique où le trésor est enterré ?",
+      "reponse": "Une carte au trésor",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année a débuté la Révolution française ?",
+      "reponse": "1789",
       "niveau": 2,
       "ages": [
         "ados",
@@ -117,89 +189,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel cercle d'or le roi porte-t-il sur la tête ?",
-      "reponse": "Une couronne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'artisan du village qui forgeait le fer au marteau ?",
-      "reponse": "Un forgeron",
+      "question": "Quelle invention fixe une image sur du papier depuis le 19e siècle ?",
+      "reponse": "La photographie",
       "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel engin a emmené les premiers hommes jusqu'à la Lune ?",
-      "reponse": "Une fusée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année a pris fin la Première Guerre mondiale ?",
-      "reponse": "1918",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle épidémie a ravagé l'Europe au 14e siècle ?",
-      "reponse": "La peste noire",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel fleuve César a-t-il franchi en disant le sort en est jeté ?",
-      "reponse": "Le Rubicon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'ensemble des histoires des dieux et des héros grecs ?",
-      "reponse": "La mythologie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui fut le premier homme sur la Lune ?",
-      "reponse": "Neil Armstrong",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle machine volante a été mise au point par les frères Wright ?",
-      "reponse": "L'avion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi de France a été guillotiné en 1793 ?",
-      "reponse": "Louis XVI",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle reine d'Égypte a séduit César et Antoine ?",
-      "reponse": "Cléopâtre",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Dans quel pays vivaient les samouraïs ?",
-      "reponse": "Le Japon",
-      "niveau": 1
     }
   ]
 }

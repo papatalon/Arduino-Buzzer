@@ -8,34 +8,44 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quel meuble de salon se déplie en lit pour la visite ?",
-      "reponse": "Le divan-lit",
+      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
+      "reponse": "Grand Theft Auto",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel événement montréalais ferme des rues chaque été pour des spectacles gratuits ?",
+      "reponse": "Le Festival de jazz",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jouet de plastique danois s'assemble par petits picots ?",
-      "reponse": "Le Lego",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage viendrait jeter du sable dans les yeux des enfants le soir ?",
-      "reponse": "Le marchand de sable",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle danse des années 70 se pratiquait sous une boule miroir, en pantalon patte d'éléphant ?",
-      "reponse": "Le disco",
-      "niveau": 2,
+      "question": "Quelle boisson énergisante promet de donner des ailes ?",
+      "reponse": "Red Bull",
+      "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel rassemblement de percussionnistes a lieu au pied du mont Royal le dimanche ?",
+      "reponse": "Les tam-tams",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     },
     {
@@ -51,8 +61,78 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle entreprise japonaise a créé Mario et Zelda ?",
-      "reponse": "Nintendo",
+      "question": "Quel jeu fait poser mains et pieds sur des pastilles de couleur ?",
+      "reponse": "Le Twister",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on les petits visages jaunes qu'on glisse dans un message ?",
+      "reponse": "Un émoji",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel bâton le magicien agite-t-il en disant sa formule ?",
+      "reponse": "Une baguette magique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet orange envahit les rues de Montréal chaque été ?",
+      "reponse": "Le cône",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil enregistrait les émissions de télé sur une cassette ?",
+      "reponse": "Le magnétoscope",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu se joue à deux avec des pions noirs et blancs qu'on saute pour les prendre ?",
+      "reponse": "Les dames",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Où regardait-on un film assis dans son auto, l'été ?",
+      "reponse": "Au ciné-parc",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel humoriste québécois d'origine marocaine raconte sa famille sur scène ?",
+      "reponse": "Rachid Badouri",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la fête où les enfants dorment chez un ami ?",
+      "reponse": "Une soirée pyjama",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -62,14 +142,55 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel meuble de la classe range les effets de l'élève ?",
-      "reponse": "Un pupitre",
+      "question": "Quelle marque de véhicules tout-terrain a une calandre à sept fentes ?",
+      "reponse": "Jeep",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles cigarettes de bonbon blanches portaient le nom d'un marin costaud ?",
+      "reponse": "Les Popeye",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle société d'État tire les loteries au Québec ?",
+      "reponse": "Loto-Québec",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel tapis à longs poils habillait les salons des années 70 ?",
+      "reponse": "Le shag",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet rond et plat se lance à deux dans un parc l'été ?",
+      "reponse": "Un frisbee",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Où étendait-on le linge pour le faire sécher au vent ?",
-      "reponse": "Sur la corde à linge",
+      "question": "Quelle marque de jeans a été créée pour les chercheurs d'or ?",
+      "reponse": "Levi's",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -78,34 +199,24 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle carte de plastique rigide permettait de louer des films au club vidéo ?",
-      "reponse": "La carte de membre",
+      "question": "Quel personnage rouge et blanc à tuque se cache dans des foules dessinées ?",
+      "reponse": "Charlie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu fait bâtir routes et villages en échangeant bois, blé et minerai ?",
+      "reponse": "Les Colons de Catane",
       "niveau": 3,
       "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel géant des contes crie qu'il sent la chair fraîche ?",
-      "reponse": "L'ogre",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on une bande dessinée japonaise ?",
-      "reponse": "Un manga",
-      "niveau": 2,
-      "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
-      "reponse": "Les Baronets",
+      "question": "Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?",
+      "reponse": "Le yéyé",
       "niveau": 3,
       "ages": [
         "aines"
@@ -113,101 +224,11 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission de variétés pour adolescents Véronique Cloutier a-t-elle animée ?",
-      "reponse": "La Fureur",
+      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
+      "reponse": "Watatatow",
       "niveau": 3,
       "ages": [
         "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel bassin de plastique se gonfle dans la cour l'été ?",
-      "reponse": "Une piscine gonflable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jouet se presse et se repousse en faisant des petits pops de silicone ?",
-      "reponse": "Le pop-it",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu fait passer sous une barre de plus en plus basse en se penchant vers l'arrière ?",
-      "reponse": "Le limbo",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
-      "reponse": "Le 7 Jours",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel traitement de coiffure des années 80 frisait les cheveux pour des mois ?",
-      "reponse": "La permanente",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel oiseau apporterait les bébés selon la légende ?",
-      "reponse": "La cigogne",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jouet tire des fléchettes de mousse ?",
-      "reponse": "Les Nerf",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle plateforme diffuse les films de Marvel et de Pixar ?",
-      "reponse": "Disney+",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série policière québécoise porte le numéro d'un poste de police ?",
-      "reponse": "District 31",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel objet de plastique se glisse sous les pieds pour glisser sur la neige ?",
-      "reponse": "La soucoupe",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel imitateur québécois a chanté en enchaînant des dizaines de voix célèbres ?",
-      "reponse": "André-Philippe Gagnon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
       ]
     }
   ]

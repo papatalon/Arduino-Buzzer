@@ -8,39 +8,45 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel jouet cowboy appartient à Andy ?",
-      "reponse": "Woody",
+      "question": "Comment s'appelle le voisin trop gentil des Simpson ?",
+      "reponse": "Ned Flanders",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle princesse amérindienne chante L'air du vent ?",
-      "reponse": "Pocahontas",
-      "niveau": 1
+      "question": "Quel gros chat court sans arrêt après le petit oiseau Titi ?",
+      "reponse": "Grosminet",
+      "niveau": 2
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel milliardaire Marvel a un réacteur dans la poitrine ?",
-      "reponse": "Tony Stark",
-      "niveau": 1
+      "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
+      "reponse": "Les Plouffe",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel ogre vert a une femme nommée Fiona ?",
-      "reponse": "Shrek",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel arbre des Gardiens ne dit que trois mots ?",
-      "reponse": "Groot",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel demi-dieu tatoué accompagne Moana avec un hameçon magique ?",
-      "reponse": "Maui",
+      "question": "Quel réalisateur a fait Psychose et Les Oiseaux ?",
+      "reponse": "Hitchcock",
       "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animateur québécois a longtemps animé Tout le monde en parle ?",
+      "reponse": "Guy A. Lepage",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation organise un grand concours de chant entre animaux ?",
+      "reponse": "Tous en scène",
+      "niveau": 1,
       "ages": [
         "enfants",
         "ados"
@@ -48,20 +54,14 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel est le chien de compagnie de Mickey ?",
-      "reponse": "Pluto",
+      "question": "Quel homme élevé par les singes se balance de liane en liane ?",
+      "reponse": "Tarzan",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel milliardaire porte une armure rouge et or ?",
-      "reponse": "Iron Man",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur muet portait un chapeau melon et une canne ?",
-      "reponse": "Charlie Chaplin",
+      "question": "Quel inspecteur maladroit poursuit la Panthère rose ?",
+      "reponse": "Clouseau",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -70,14 +70,67 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le père des Simpson ?",
-      "reponse": "Homer",
+      "question": "Quelle souris Disney est l'amoureuse de Mickey ?",
+      "reponse": "Minnie",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle princesse polynésienne navigue avec Maui ?",
-      "reponse": "Moana",
+      "question": "Quel ami de Winnie l'ourson est un âne toujours triste ?",
+      "reponse": "Bourriquet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quels animaux revivent dans Jurassic Park ?",
+      "reponse": "Les dinosaures",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise raconte Séraphin Poudrier ?",
+      "reponse": "Les Belles Histoires",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse de Star Wars est la sœur de Luke ?",
+      "reponse": "Leia",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel clown est l'ennemi juré de Batman ?",
+      "reponse": "Le Joker",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle saga de films met des adolescents dans une arène mortelle, avec Katniss Everdeen ?",
+      "reponse": "Hunger Games",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle famille du futur a un robot ménagère nommée Rosie ?",
+      "reponse": "Les Jetson",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Pascal, l'ami de Raiponce ?",
+      "reponse": "Un caméléon",
       "niveau": 1
     },
     {
@@ -93,111 +146,52 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle série espagnole suit des braqueurs en combinaison rouge ?",
-      "reponse": "La casa de papel",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel grand chien maladroit en chapeau est l'ami de Mickey et de Donald ?",
-      "reponse": "Dingo",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la petite sœur d'Elsa ?",
-      "reponse": "Anna",
+      "question": "Quelle amie brillante accompagne Harry et Ron ?",
+      "reponse": "Hermione",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel est le matricule de James Bond ?",
-      "reponse": "007",
+      "question": "Quel acteur canadien incarne Deadpool au cinéma ?",
+      "reponse": "Ryan Reynolds",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle famille de super-héros Pixar porte du rouge ?",
+      "reponse": "Les Incroyables",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée japonaise oppose l'humanité à des géants derrière de hauts murs ?",
+      "reponse": "L'Attaque des Titans",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel personnage de Sesame Street est un grand oiseau jaune ?",
+      "reponse": "Big Bird",
       "niveau": 1,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros Marvel rétrécit à la taille d'une fourmi ?",
-      "reponse": "Ant-Man",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film Pixar suit une voiture de course rouge ?",
-      "reponse": "Les Bagnoles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel père de famille travaille dans une centrale nucléaire ?",
-      "reponse": "Homer Simpson",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la petite fille hawaïenne qui adopte Stitch ?",
-      "reponse": "Lilo",
-      "niveau": 2,
-      "ages": [
         "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série de films enferme des adolescents dans un dédale aux murs mouvants ?",
-      "reponse": "Le Labyrinthe",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel espion maladroit est l'agent 86 ?",
-      "reponse": "Maxwell Smart",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel rat cuisine dans un grand restaurant parisien ?",
-      "reponse": "Rémy",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film Pixar une maison vole-t-elle avec des ballons ?",
-      "reponse": "Là-haut",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel duo formaient Claude Meunier et Serge Thériault ?",
-      "reponse": "Ding et Dong",
-      "niveau": 2,
-      "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel petit robot rond accompagne C-3PO ?",
+      "reponse": "R2-D2",
+      "niveau": 1
     }
   ]
 }

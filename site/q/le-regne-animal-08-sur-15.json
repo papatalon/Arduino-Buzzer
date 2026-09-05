@@ -8,66 +8,104 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quel mammifère marin sauteur siffle et vit en groupe ?",
-      "reponse": "Le dauphin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat anglais sert du poisson frit avec des frites ?",
-      "reponse": "Fish and chips",
+      "question": "Quel animal terrestre est le plus lourd ?",
+      "reponse": "L'éléphant",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gros animal gris d'Afrique porte une corne sur le nez ?",
-      "reponse": "Le rhinocéros",
+      "question": "Quel petit animal à coquille rampe lentement en laissant une trace ?",
+      "reponse": "L'escargot",
       "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri de la grenouille ?",
+      "reponse": "Le coassement",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
-      "reponse": "Le cardinal",
-      "niveau": 3
+      "question": "Quel animateur québécois a animé La Poule aux œufs d'or ?",
+      "reponse": "Guy Mongrain",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roi lion est le père de Simba ?",
-      "reponse": "Mufasa",
-      "niveau": 1
+      "categorie": "Mots et langue",
+      "question": "Que signifie poser un lapin ?",
+      "reponse": "Ne pas venir",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel petit âne de dessin animé français est très curieux ?",
-      "reponse": "Trotro",
-      "niveau": 3,
+      "question": "Quelle danse des années 70 se pratiquait sous une boule miroir, en pantalon patte d'éléphant ?",
+      "reponse": "Le disco",
+      "niveau": 2,
       "ages": [
-        "enfants"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel grand singe est le plus proche de l'homme ?",
-      "reponse": "Le chimpanzé",
+      "question": "Quel animal marin a trois cœurs ?",
+      "reponse": "La pieuvre",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du cheval ?",
+      "reponse": "Le hennissement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel chien accompagne Astérix et Obélix ?",
+      "reponse": "Idéfix",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la femelle du canard ?",
+      "reponse": "La cane",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal de la ferme nous donne le lait ?",
-      "reponse": "La vache",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel animal des Andes crache quand il est fâché ?",
-      "reponse": "Le lama",
+      "question": "Quel animal roux au museau pointu passe pour rusé dans les fables ?",
+      "reponse": "Le renard",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Dans quel film d'animation un lion, une girafe, un zèbre et un hippopotame s'échappent-ils d'un zoo de New York ?",
-      "reponse": "Madagascar",
-      "niveau": 1,
+      "question": "Quel ami de Winnie l'ourson est un petit cochon rose ?",
+      "reponse": "Porcinet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel duo québécois de dessins animés met en scène une souris et son chat en peluche ?",
+      "reponse": "Toupie et Binou",
+      "niveau": 2,
       "ages": [
         "enfants",
         "ados",
@@ -75,15 +113,67 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Petit de la poule ?",
-      "reponse": "Le poussin",
+      "categorie": "Culture générale",
+      "question": "Quelle grosse tortue à carapace épineuse enlève la princesse Peach ?",
+      "reponse": "Bowser",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de mois dure la gestation de l'éléphant ?",
+      "reponse": "22",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelait-on les soldats montés à cheval dans les armées d'autrefois ?",
+      "reponse": "La cavalerie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a pour emblème le panda ?",
+      "reponse": "La Chine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal de ferme, très bavard, accompagne Shrek partout ?",
+      "reponse": "L'âne",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel animal, s'il croise votre chemin, porterait malheur ?",
-      "reponse": "Le chat noir",
+      "question": "Quel dinosaure vert sert de monture à Mario ?",
+      "reponse": "Yoshi",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Masculin d'abeille ?",
+      "reponse": "Le faux bourdon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment s'appelle le petit du lion ?",
+      "reponse": "Le lionceau",
       "niveau": 1
     },
     {
@@ -98,81 +188,15 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du chien ?",
-      "reponse": "L'aboiement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel félin de dessin animé est né d'un générique de film ?",
-      "reponse": "La Panthère rose",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit de la chèvre ?",
-      "reponse": "Le chevreau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Dans quel jeu vidéo aménage-t-on une île en remboursant un raton laveur ?",
-      "reponse": "Animal Crossing",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Avec quel lait fait-on la feta traditionnelle ?",
-      "reponse": "Lait de brebis",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel ancien vélodrome de Montréal abrite des animaux ?",
-      "reponse": "Le Biodôme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie être malade comme un chien ?",
-      "reponse": "Être très malade",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du mouton ?",
-      "reponse": "L'agneau",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quel animal roux au museau pointu passe pour rusé dans les fables ?",
-      "reponse": "Le renard",
+      "question": "Quel gros animal d'Afrique passe ses journées dans l'eau, la gueule grande ouverte ?",
+      "reponse": "L'hippopotame",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel style de nage porte le nom d'un insecte ?",
-      "reponse": "Le papillon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel poisson fumé garnit le bagel classique ?",
-      "reponse": "Le saumon fumé",
+      "categorie": "Mots et langue",
+      "question": "Que signifie « avoir une faim de loup » ?",
+      "reponse": "Avoir très faim",
       "niveau": 1
     }
   ]

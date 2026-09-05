@@ -8,14 +8,35 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le livre rempli de cartes de tous les pays ?",
-      "reponse": "Un atlas",
+      "question": "Dans quel pays se trouve Tombouctou ?",
+      "reponse": "Le Mali",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pont relie l'Île-du-Prince-Édouard au continent ?",
+      "reponse": "Confédération",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien de continents compte la Terre ?",
+      "reponse": "Sept",
       "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Quel désert froid couvre une partie de la Mongolie ?",
-      "reponse": "Le Gobi",
+      "question": "Quel territoire canadien a Whitehorse pour capitale ?",
+      "reponse": "Le Yukon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -25,14 +46,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes traverse la Suisse ?",
-      "reponse": "Les Alpes",
+      "question": "Quelle est la plus grande ville des États-Unis ?",
+      "reponse": "New York",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de la Hongrie ?",
-      "reponse": "Budapest",
+      "question": "Dans quel pays se trouve la tour de Pise ?",
+      "reponse": "L'Italie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle rivière a creusé le Grand Canyon ?",
+      "reponse": "Le Colorado",
       "niveau": 2,
       "ages": [
         "ados",
@@ -42,8 +69,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Écosse ?",
-      "reponse": "Édimbourg",
+      "question": "Quelle province canadienne borde le Pacifique ?",
+      "reponse": "Colombie-Britannique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le village où l'on cultive la terre et élève des animaux ?",
+      "reponse": "Une ferme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus petit pays du monde ?",
+      "reponse": "Le Vatican",
       "niveau": 2,
       "ages": [
         "ados",
@@ -53,19 +92,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel micro-État borde Nice et la Méditerranée ?",
-      "reponse": "Monaco",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle rivière célèbre coule à Ottawa ?",
-      "reponse": "L'Outaouais",
+      "question": "Dans quelle ville trouve-t-on le Kremlin ?",
+      "reponse": "Moscou",
       "niveau": 1,
       "ages": [
         "ados",
@@ -75,65 +103,15 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle fosse océanique est la plus profonde ?",
-      "reponse": "Les Mariannes",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Turquie ?",
-      "reponse": "Ankara",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle grande ville des États-Unis abrite Hollywood ?",
-      "reponse": "Los Angeles",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on un relief très haut qu'on gravit à pied ?",
-      "reponse": "Une montagne",
+      "question": "Quel pays est célèbre pour ses tacos et ses sombreros ?",
+      "reponse": "Le Mexique",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on un cours d'eau qui se jette dans un fleuve ?",
-      "reponse": "Une rivière",
+      "question": "Quelle plaque plantée au bord du chemin indique la direction à suivre ?",
+      "reponse": "Un panneau",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel point le plus au nord de la Terre est le domicile du père Noël ?",
-      "reponse": "Le pôle Nord",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Chine ?",
-      "reponse": "Pékin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de Cuba ?",
-      "reponse": "La Havane",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Géographie",
@@ -148,9 +126,21 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays a Bagdad pour capitale ?",
-      "reponse": "L'Irak",
-      "niveau": 2,
+      "question": "Capitale des États-Unis ?",
+      "reponse": "Washington",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle grande ville américaine abrite la statue de la Liberté ?",
+      "reponse": "New York",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel état américain se trouve Las Vegas ?",
+      "reponse": "Le Nevada",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -159,9 +149,27 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel est le plus grand lac d'Afrique ?",
-      "reponse": "Le lac Victoria",
-      "niveau": 2,
+      "question": "Quel est le plus grand océan ?",
+      "reponse": "Le Pacifique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la rivière de glace qui descend lentement d'une montagne ?",
+      "reponse": "Un glacier",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
+      "reponse": "L'Ontario",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+      "reponse": "Les Pyrénées",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -170,15 +178,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la secousse qui fait trembler le sol ?",
-      "reponse": "Un tremblement de terre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve sacré traverse l'Inde ?",
-      "reponse": "Le Gange",
-      "niveau": 2,
+      "question": "Dans quel pays se trouve l'Acropole ?",
+      "reponse": "La Grèce",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -187,9 +189,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale du Brésil ?",
-      "reponse": "Brasilia",
-      "niveau": 2,
+      "question": "Quel pays a la forme d'une botte ?",
+      "reponse": "L'Italie",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -198,21 +200,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle province se trouve Montréal ?",
-      "reponse": "Le Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus grand pays du monde ?",
-      "reponse": "La Russie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on une des sept grandes masses de terre du globe ?",
-      "reponse": "Un continent",
-      "niveau": 1
+      "question": "Comment appelle-t-on la vaste plaine d'herbe où broutent les bisons ?",
+      "reponse": "La prairie",
+      "niveau": 2
     }
   ]
 }

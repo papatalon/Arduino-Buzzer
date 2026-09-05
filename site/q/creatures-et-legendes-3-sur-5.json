@@ -7,136 +7,32 @@
   "emoji": "🐉",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel arbre géant de Californie est le plus gros du monde ?",
-      "reponse": "Le séquoia",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans Pokémon, dans quel objet enferme-t-on les créatures capturées ?",
-      "reponse": "Une Poké Ball",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'encadré qui explique les symboles d'une carte ?",
-      "reponse": "La légende",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel jour d'octobre les enfants passent-ils de porte en porte ?",
-      "reponse": "L'Halloween",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle créature est mi-homme mi-cheval ?",
-      "reponse": "Le centaure",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel monstre géant venu du Japon écrase des villes au cinéma ?",
-      "reponse": "Godzilla",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel bonhomme de biscuit court dans les contes ?",
-      "reponse": "Pain d'épice",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel oiseau apporterait les bébés selon la légende ?",
-      "reponse": "La cigogne",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Dans quel conte un loup souffle-t-il sur des maisons de paille, de bois et de briques ?",
-      "reponse": "Les Trois Petits Cochons",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel basketteur légendaire portait le 23 des Bulls ?",
-      "reponse": "Michael Jordan",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel animal géant et blanc est le symbole du Grand Nord canadien ?",
-      "reponse": "L'ours polaire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle créature verte vit dans un marais ?",
-      "reponse": "Shrek",
+      "question": "Quel lac écossais abriterait un monstre ?",
+      "reponse": "Le Loch Ness",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel chanteur des Colocs est une légende ?",
-      "reponse": "Dédé Fortin",
-      "niveau": 2,
+      "question": "Quel champignon rouge à pois blancs des contes pousse dans les forêts ?",
+      "reponse": "L'amanite tue-mouches",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle épée légendaire appartenait au roi Arthur ?",
+      "reponse": "Excalibur",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
       "question": "Quel frère et quelle sœur de conte sèment des miettes de pain dans la forêt ?",
       "reponse": "Hansel et Gretel",
       "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi anglais légendaire aurait retiré une épée d'un rocher ?",
-      "reponse": "Le roi Arthur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel animal porte malheur s'il croise notre chemin, selon la superstition ?",
-      "reponse": "Un chat noir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature de la nuit dort dans un cercueil et craint l'ail ?",
-      "reponse": "Un vampire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle friandise d'Halloween est une pomme enrobée de caramel rouge ?",
-      "reponse": "La pomme de tire",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel géant des contes crie qu'il sent la chair fraîche ?",
-      "reponse": "L'ogre",
-      "niveau": 2
     },
     {
       "categorie": "Culture générale",
@@ -150,27 +46,143 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?",
-      "reponse": "Un chaudron d'or",
+      "categorie": "Cinéma et télé",
+      "question": "Quel monstre bleu et poilu travaille avec Mike ?",
+      "reponse": "Sulley",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle friandise d'Halloween est une pomme enrobée de caramel rouge ?",
+      "reponse": "La pomme de tire",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
+      "reponse": "Dans l'œil du dragon",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel animal, s'il croise votre chemin, porterait malheur ?",
+      "reponse": "Le chat noir",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle créature irlandaise garde un trésor ?",
+      "reponse": "Le farfadet (leprechaun)",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelle créature légendaire fait peur aux enfants ?",
-      "reponse": "Bonhomme Sept-Heures",
-      "niveau": 1
+      "question": "Quelle jeune fille a dansé avec le diable dans la légende ?",
+      "reponse": "Rose Latulippe",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle fée accompagne Peter Pan ?",
-      "reponse": "Clochette",
+      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
+      "reponse": "King Kong",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel dieu grec règne sur les mers ?",
+      "reponse": "Poséidon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de cartes à collectionner fait évoluer des créatures de poche ?",
+      "reponse": "Pokémon",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel personnage de conte chaussé de bottes parle au nom de son maître ?",
+      "reponse": "Le Chat botté",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel chiffre porte malheur en Occident ?",
+      "reponse": "13",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
       "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
       "reponse": "Le mammouth",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel dieu grec règne sur les enfers ?",
+      "reponse": "Hadès",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a ouvert la boîte qui libérait tous les maux ?",
+      "reponse": "Pandore",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel méchant sorcier des Schtroumpfs a un chat ?",
+      "reponse": "Gargamel",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que porte-t-on sur le visage pour ne pas être reconnu à l'Halloween ?",
+      "reponse": "Un masque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel géant de bois cache des soldats grecs ?",
+      "reponse": "Le cheval de Troie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de dieu ?",
+      "reponse": "Déesse",
       "niveau": 1
     }
   ]

@@ -8,15 +8,52 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne le vélo ?",
-      "reponse": "Un bicycle",
+      "question": "Où dépose-t-on une lettre pour qu'elle parte par la poste ?",
+      "reponse": "Au bureau de poste",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel outil sert à enlever la glace sur le pare-brise de l'auto ?",
-      "reponse": "Un gratte-glace",
-      "niveau": 2
+      "question": "Quelle équipe de la Ligue nationale joue ses matchs locaux à Montréal ?",
+      "reponse": "Les Canadiens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle carte donne accès aux soins de santé gratuits au Québec ?",
+      "reponse": "La carte soleil",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel animateur québécois a animé La Poule aux œufs d'or ?",
+      "reponse": "Guy Mongrain",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle auteure a écrit Les Filles de Caleb ?",
+      "reponse": "Arlette Cousture",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle fête du 1er juillet fait déménager les Québécois ?",
+      "reponse": "Jour du déménagement",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
@@ -26,76 +63,57 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel seau de métal se suspend à l'érable pour recueillir l'eau ?",
-      "reponse": "Une chaudière",
+      "question": "Quel abri de toile monté chaque automne protège l'entrée de garage ?",
+      "reponse": "Un abri Tempo",
       "niveau": 2
     },
     {
       "categorie": "Québec",
-      "question": "Quel congé tombe le lendemain de la Saint-Sylvestre ?",
-      "reponse": "Le jour de l'An",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne une soirée où l'on boit entre amis ?",
-      "reponse": "Un 5 à 7",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel outil racle la neige des pare-brise ?",
-      "reponse": "Un gratteux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "En quelle année Montréal a-t-elle été fondée ?",
-      "reponse": "1642",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel petit oiseau à calotte noire fréquente les mangeoires du Québec tout l'hiver ?",
-      "reponse": "La mésange",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel jour d'octobre les enfants passent-ils de porte en porte ?",
-      "reponse": "L'Halloween",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel humoriste montréalais fait des spectacles bilingues ?",
-      "reponse": "Sugar Sammy",
+      "question": "Quelle rue étroite du Vieux-Québec est très photographiée ?",
+      "reponse": "Petit-Champlain",
       "niveau": 1,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelle machine bruyante lance la neige de côté dans l'entrée ?",
-      "reponse": "Une souffleuse",
+      "question": "Quel premier ministre québécois fut surnommé le Cheuf ?",
+      "reponse": "Duplessis",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel cirque québécois est connu mondialement ?",
+      "reponse": "Cirque du Soleil",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle fête de juin invite les gens d'une même rue à se rassembler ?",
-      "reponse": "La fête des voisins",
+      "question": "Quelle forme creusée dans la neige sert de cachette aux enfants ?",
+      "reponse": "Un fort de neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle île du Saint-Laurent fut une station de quarantaine ?",
+      "reponse": "Grosse-Île",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle ville se proclame capitale mondiale de l'érable ?",
+      "reponse": "Plessisville",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -104,22 +122,17 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois familier désigne un ami proche ?",
-      "reponse": "Un chum",
+      "question": "De quelle couleur est le bac de recyclage au Québec ?",
+      "reponse": "Bleu",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on le premier jour de classe après les vacances d'été ?",
-      "reponse": "La rentrée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel comédien incarne Elvis Gratton ?",
-      "reponse": "Julien Poulin",
-      "niveau": 2,
+      "question": "Comment s'appelait le village iroquois devenu Montréal ?",
+      "reponse": "Hochelaga",
+      "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -132,27 +145,37 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel bateau relie Québec et Lévis toute l'année ?",
-      "reponse": "Le traversier",
-      "niveau": 2
+      "question": "Quel club-école des Canadiens joue à Laval ?",
+      "reponse": "Le Rocket",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel mot québécois désigne des chaussures de sport ?",
-      "reponse": "Des espadrilles",
+      "question": "Quel parc animalier du Lac-Saint-Jean se visite à bord d'un train grillagé ?",
+      "reponse": "Le zoo de Saint-Félicien",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle tarte du terroir québécois se fait avec de la cassonade et de la crème ?",
+      "reponse": "La tarte au sucre",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la personne qui surveille la cour d'école à la récréation ?",
-      "reponse": "Un surveillant",
-      "niveau": 2
+      "question": "Quel quartier historique de Québec est fortifié ?",
+      "reponse": "Le Vieux-Québec",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel nouveau pont montréalais a ouvert en 2019 ?",
-      "reponse": "Samuel-De Champlain",
-      "niveau": 1,
+      "question": "Quelle station de ski domine le fleuve dans Charlevoix ?",
+      "reponse": "Le Massif",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -161,30 +184,20 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel petit fruit noir se cueille dans les fossés du Québec en août ?",
-      "reponse": "La mûre",
-      "niveau": 2
+      "question": "Comment appelle-t-on au Québec le petit magasin du coin ouvert tard ?",
+      "reponse": "Le dépanneur",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quels pneus la loi québécoise impose-t-elle du 1er décembre au 15 mars ?",
-      "reponse": "Les pneus d'hiver",
-      "niveau": 2
+      "question": "Quelle société d'État produit l'électricité au Québec ?",
+      "reponse": "Hydro-Québec",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "En quelle année eut lieu le second référendum ?",
-      "reponse": "1995",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le congé imprévu que la neige offre aux élèves ?",
-      "reponse": "Une journée de tempête",
+      "question": "Où va-t-on quand on est très malade et qu'il faut être soigné ?",
+      "reponse": "À l'hôpital",
       "niveau": 1
     }
   ]

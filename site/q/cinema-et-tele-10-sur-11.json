@@ -8,106 +8,43 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le voisin trop gentil des Simpson ?",
-      "reponse": "Ned Flanders",
-      "niveau": 1
+      "question": "Quelle voiture emblématique conduit James Bond ?",
+      "reponse": "Aston Martin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel animal est Abu, l'ami d'Aladin ?",
-      "reponse": "Un singe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel wookiee copilote le Faucon Millénium ?",
-      "reponse": "Chewbacca",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation suit une lapine policière et un renard rusé dans une ville d'animaux ?",
-      "reponse": "Zootopia",
-      "niveau": 1,
+      "question": "Dans quelle ville sous-marine habitent Bob l'éponge et Patrick ?",
+      "reponse": "Bikini Bottom",
+      "niveau": 2,
       "ages": [
         "enfants",
-        "ados",
-        "adultes"
+        "ados"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel jouet cosmonaute de Toy Story crie « Vers l'infini et au-delà » ?",
-      "reponse": "Buzz Lightyear",
+      "question": "Dans quel film de Noël un train magique emmène-t-il des enfants au pôle Nord ?",
+      "reponse": "Le Pôle Express",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment appelle-t-on les petits personnages bleus qui vivent dans des champignons ?",
-      "reponse": "Les Schtroumpfs",
+      "question": "Comment s'appelle le père des Simpson ?",
+      "reponse": "Homer",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
-      "reponse": "King Kong",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel avare célèbre du terroir québécois aime son argent ?",
-      "reponse": "Séraphin",
+      "question": "Quel ours brun de dessin animé vole des paniers de pique-nique ?",
+      "reponse": "Yogi",
       "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle sirène Disney rêve de vivre sur terre ?",
-      "reponse": "Ariel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quelle ville se trouve Hollywood ?",
-      "reponse": "Los Angeles",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film de 1939 suit Dorothy sur une route jaune ?",
-      "reponse": "Magicien d'Oz",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le cinéma de l'Inde ?",
-      "reponse": "Bollywood",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Combien de pierres d'infinité orne le gant de Thanos ?",
-      "reponse": "Six",
-      "niveau": 2,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -120,78 +57,124 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel réalisateur a fait Psychose et Les Oiseaux ?",
-      "reponse": "Hitchcock",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
+      "question": "Quel agent secret britannique aime les martinis ?",
+      "reponse": "James Bond",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel félin de dessin animé est né d'un générique de film ?",
-      "reponse": "La Panthère rose",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel personnage de Sesame Street est un grand oiseau jaune ?",
-      "reponse": "Big Bird",
+      "question": "Quel film d'animation raconte un garçon qui rejoint le pays des morts avec sa guitare ?",
+      "reponse": "Coco",
       "niveau": 1,
       "ages": [
         "enfants",
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel méchant Marvel claque des doigts avec un gant ?",
-      "reponse": "Thanos",
+      "question": "Quelle série animée suit une famille jaune de Springfield ?",
+      "reponse": "Les Simpson",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle petite fée accompagne Peter Pan au Pays imaginaire ?",
-      "reponse": "La fée Clochette",
+      "question": "Quel héros court plus vite que tout le monde en rouge ?",
+      "reponse": "Flash",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel acteur incarne Rocky Balboa ?",
-      "reponse": "Stallone",
+      "question": "Quelles petites créatures jaunes adorent les bananes ?",
+      "reponse": "Les Minions",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel oiseau de dessin animé file à toute vitesse en faisant « bip bip » ?",
+      "reponse": "Bip Bip",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel personnage bleu sort de la lampe d'Aladdin ?",
+      "reponse": "Le génie",
       "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle émission québécoise du jour de l'An revoit l'année ?",
-      "reponse": "Bye Bye",
+      "question": "De quelle planète vient Superman ?",
+      "reponse": "Krypton",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel type de poisson est Nemo ?",
-      "reponse": "Un poisson-clown",
+      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
+      "reponse": "Les Gardiens",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel acolyte de Batman porte un costume rouge et vert ?",
-      "reponse": "Robin",
+      "question": "Quel studio japonais a créé Mon voisin Totoro ?",
+      "reponse": "Ghibli",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
+      "reponse": "Bugs Bunny",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel sport sorcier se joue sur des balais ?",
-      "reponse": "Le quidditch",
+      "question": "Quel film de Disney suit un éléphant aux grandes oreilles ?",
+      "reponse": "Dumbo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel wookiee copilote le Faucon Millénium ?",
+      "reponse": "Chewbacca",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel grand danois froussard résout des mystères ?",
+      "reponse": "Scooby-Doo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quelle ville vivent les Simpson ?",
+      "reponse": "Springfield",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel panda pratique le kung-fu au cinéma ?",
+      "reponse": "Po",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ogre a un ami âne très bavard ?",
+      "reponse": "Shrek",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel légume la marraine de Cendrillon transforme-t-elle en carrosse ?",
+      "reponse": "La citrouille",
       "niveau": 1
     }
   ]

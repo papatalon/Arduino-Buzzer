@@ -7,9 +7,65 @@
   "emoji": "⛷️",
   "questions": [
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain sucré en anneau se glace et se saupoudre ?",
+      "reponse": "Le beigne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel joueur des Canadiens fut surnommé le Gros Bill ?",
+      "reponse": "Jean Béliveau",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
       "categorie": "Sports",
-      "question": "Combien de temps dure une punition mineure au hockey ?",
-      "reponse": "Deux minutes",
+      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
+      "reponse": "Le ballon-balai",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée remporte le champion de la LNH ?",
+      "reponse": "La coupe Stanley",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le bonhomme de neige de La Reine des neiges ?",
+      "reponse": "Olaf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de minutes dure une période de hockey ?",
+      "reponse": "20",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels petits grains de glace tombent parfois pendant un orage d'été ?",
+      "reponse": "La grêle",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport glisse sur l'eau tiré par un bateau ?",
+      "reponse": "Le ski nautique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée les équipes de la Ligue nationale se disputent-elles au printemps ?",
+      "reponse": "La coupe Stanley",
       "niveau": 1
     },
     {
@@ -25,30 +81,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
-      "reponse": "Le patinage artistique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle saison amène la neige au Québec ?",
-      "reponse": "L'hiver",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la grosse chute qui blanchit tout en une nuit ?",
-      "reponse": "Une bordée de neige",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on le moment où l'arbitre laisse tomber la rondelle entre deux joueurs ?",
+      "reponse": "La mise au jeu",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
-      "reponse": "Alexandre Bilodeau",
+      "question": "Quel hockeyeur a battu le record de buts de Gretzky en 2025 ?",
+      "reponse": "Ovechkin",
       "niveau": 2,
       "ages": [
         "ados",
@@ -57,130 +97,87 @@
     },
     {
       "categorie": "Sports",
-      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
-      "reponse": "Orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport pratique la famille Hart de Calgary ?",
-      "reponse": "La lutte",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
-      "reponse": "Quatre ans",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on au Québec la neige mouillée et boueuse du printemps ?",
-      "reponse": "La slush",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel cidre québécois est pressé après les gelées ?",
-      "reponse": "Cidre de glace",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Que chausse-t-on par-dessus ses souliers pour marcher dans la neige ?",
-      "reponse": "Des bottes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle mascotte orange et poilue est passée des Expos aux Canadiens ?",
-      "reponse": "Youppi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée remporte le champion de la LNH ?",
-      "reponse": "La coupe Stanley",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment s'appelle le joueur qui garde le filet au hockey ?",
-      "reponse": "Le gardien de but",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel gros camion dégage la neige des rues après une tempête ?",
-      "reponse": "Une charrue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle machine bruyante lance la neige de côté dans l'entrée ?",
-      "reponse": "Une souffleuse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel descripteur de hockey a marqué des générations par son français impeccable ?",
-      "reponse": "René Lecavalier",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle gâterie de cabane à sucre se roule sur la neige avec un bâton de bois ?",
-      "reponse": "La tire d'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le moment où l'arbitre laisse tomber la rondelle entre deux joueurs ?",
-      "reponse": "La mise au jeu",
+      "question": "Quel sport de rue se joue en espadrilles, bâton en main, avec une balle orange ?",
+      "reponse": "Le hockey-balle",
       "niveau": 2
     },
     {
-      "categorie": "Sports",
-      "question": "Quel gardien du New Jersey a gagné 691 matchs en carrière ?",
-      "reponse": "Martin Brodeur",
+      "categorie": "Québec",
+      "question": "Quel traîneau de bois aux lattes recourbées glisse sur la neige au Québec ?",
+      "reponse": "La traîne sauvage",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de table fait glisser un palet sur un coussin d'air ?",
+      "reponse": "Le air hockey",
       "niveau": 2,
       "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le congé imprévu que la neige offre aux élèves ?",
+      "reponse": "Une journée de tempête",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Que tombe-t-il du ciel en flocons blancs l'hiver ?",
+      "reponse": "La neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle équipe de la Ligue nationale joue ses matchs locaux à Montréal ?",
+      "reponse": "Les Canadiens",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel patineur québécois a remporté quatre médailles d'or olympiques en courte piste ?",
+      "reponse": "Charles Hamelin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport fait glisser un lugeur tête première sur la glace ?",
+      "reponse": "Le skeleton",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel oiseau rouge vif est facile à repérer dans la neige ?",
-      "reponse": "Le cardinal",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel engin motorisé souffle la neige des entrées de garage l'hiver ?",
-      "reponse": "La souffleuse",
+      "question": "Quelle station de ski de la région de Québec offre une vue sur le fleuve depuis ses pistes ?",
+      "reponse": "Le Mont-Sainte-Anne",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de périodes dans un match de hockey ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel secteur riverain de Montréal accueille patinoire, plage et grande roue ?",
+      "reponse": "Le Vieux-Port",
+      "niveau": 2
     }
   ]
 }

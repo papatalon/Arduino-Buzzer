@@ -8,8 +8,14 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quels frères ont inventé le cinématographe ?",
-      "reponse": "Les frères Lumière",
+      "question": "Comment appelle-t-on la période qui suit l'Antiquité, celle des châteaux forts ?",
+      "reponse": "Le Moyen Âge",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle centrale nucléaire a explosé en 1986 ?",
+      "reponse": "Tchernobyl",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -18,47 +24,32 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel véhicule à moteur a remplacé le cheval sur les routes ?",
-      "reponse": "L'automobile",
+      "question": "En quelle année l'homme a-t-il marché sur la Lune ?",
+      "reponse": "1969",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal domestique les Égyptiens adoraient-ils au point de le momifier ?",
+      "reponse": "Le chat",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel oiseau portait les messages avant le télégraphe ?",
-      "reponse": "Le pigeon voyageur",
+      "question": "Quelle reine d'Égypte a séduit César et Antoine ?",
+      "reponse": "Cléopâtre",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle habitation autochtone en forme de cône était faite de peaux et de perches ?",
-      "reponse": "Un tipi",
-      "niveau": 2
+      "question": "Comment appelle-t-on le guerrier à cheval qui servait son seigneur ?",
+      "reponse": "Un chevalier",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
-      "reponse": "La tradition orale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année les Jeux olympiques ont-ils été reportés d'un an pour la première fois ?",
-      "reponse": "2020",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel dictateur soviétique a succédé à Lénine ?",
-      "reponse": "Staline",
+      "question": "Qui a gravi l'Everest en premier en 1953 ?",
+      "reponse": "Hillary et Norgay",
       "niveau": 2,
       "ages": [
         "ados",
@@ -68,62 +59,118 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel explorateur vénitien a décrit la Chine ?",
-      "reponse": "Marco Polo",
-      "niveau": 2
+      "question": "Dans quelle région de France a eu lieu le débarquement du 6 juin 1944 ?",
+      "reponse": "La Normandie",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Dans quel cercueil décoré déposait-on la momie d'un pharaon ?",
-      "reponse": "Un sarcophage",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le chef qui régnait sur tout l'Empire romain ?",
-      "reponse": "Un empereur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peintre italien a peint la Joconde ?",
-      "reponse": "Léonard de Vinci",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Sur quoi le maître écrivait-il à la craie devant sa classe, autrefois ?",
-      "reponse": "Le tableau noir",
+      "question": "Quel peuple scandinave naviguait sur des drakkars ?",
+      "reponse": "Les Vikings",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "En quel siècle vivons-nous ?",
-      "reponse": "Le 21e siècle",
+      "question": "Quelle machine volante a été mise au point par les frères Wright ?",
+      "reponse": "L'avion",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel fut le premier satellite artificiel ?",
-      "reponse": "Spoutnik",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le roi de l'Égypte ancienne ?",
-      "reponse": "Un pharaon",
+      "question": "Comment appelle-t-on le cahier où l'on note ce qui se passe jour après jour ?",
+      "reponse": "Un journal",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel savant grec a crié 'Eurêka' dans son bain ?",
-      "reponse": "Archimède",
+      "question": "Quelle crise économique a suivi le krach de 1929 ?",
+      "reponse": "La Grande Dépression",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année l'Allemagne s'est-elle réunifiée ?",
+      "reponse": "1990",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le premier homme sur la Lune ?",
+      "reponse": "Neil Armstrong",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle première ministre fut surnommée la Dame de fer ?",
+      "reponse": "Thatcher",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on celui qui garde un troupeau de moutons dans les champs ?",
+      "reponse": "Un berger",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle guerre d'Asie a pris fin en 1975 ?",
+      "reponse": "Vietnam",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle statue égyptienne a un corps de lion ?",
+      "reponse": "Le Sphinx",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel instrument de navigation mesurait la hauteur des astres sur l'horizon ?",
+      "reponse": "Le sextant",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle tour éclairée guidait les bateaux vers la côte bien avant les radars ?",
+      "reponse": "Un phare",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel château fut la résidence de Louis XIV ?",
-      "reponse": "Versailles",
+      "question": "Comment appelle-t-on le pont qui se relève pour fermer l'entrée d'un château ?",
+      "reponse": "Le pont-levis",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que fabriquaient les hommes préhistoriques en frottant deux pierres ?",
+      "reponse": "Le feu",
       "niveau": 1
     },
     {
@@ -134,53 +181,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année eut lieu la bataille des plaines d'Abraham ?",
-      "reponse": "1759",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les grandes pierres dressées et posées à plat par les hommes préhistoriques ?",
-      "reponse": "Un dolmen",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel ballon géant à panier et à air chaud a été le premier engin à transporter des humains dans le ciel ?",
-      "reponse": "La montgolfière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel empire d'Amérique a été conquis par Cortés ?",
-      "reponse": "Les Aztèques",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention permet de voir des images animées chez soi depuis les années 1950 ?",
-      "reponse": "La télévision",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
-      "reponse": "Le parchemin",
-      "niveau": 3
+      "question": "Quelle jeune fille a mené les armées françaises en 1429 ?",
+      "reponse": "Jeanne d'Arc",
+      "niveau": 2
     }
   ]
 }

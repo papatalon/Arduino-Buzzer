@@ -7,191 +7,177 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel liquide rouge circule dans nos veines ?",
-      "reponse": "Le sang",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit est l'ingrédient principal du cidre ?",
-      "reponse": "La pomme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Dans Pokémon, dans quel objet enferme-t-on les créatures capturées ?",
-      "reponse": "Une Poké Ball",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Dans quel palais londonien vit le roi d'Angleterre ?",
-      "reponse": "Buckingham",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie prendre ses jambes à son cou ?",
-      "reponse": "S'enfuir vite",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la maison des abeilles ?",
-      "reponse": "La ruche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans la comptine, de quelle couleur est la souris qui courait dans l'herbe ?",
-      "reponse": "Verte",
-      "niveau": 1
-    },
-    {
       "categorie": "Sports",
-      "question": "Combien de quarts compte un match de la NBA ?",
-      "reponse": "Quatre",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouvent le Brésil et l'Argentine ?",
-      "reponse": "L'Amérique du Sud",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois barrer la porte ?",
-      "reponse": "Verrouiller",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du pad thaï ?",
-      "reponse": "La Thaïlande",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Comment appelle-t-on une personne qui joue en direct devant un public sur internet ?",
-      "reponse": "Un streamer",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de trous compte un parcours de golf complet ?",
-      "reponse": "18",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville italienne est célèbre pour ses canaux ?",
-      "reponse": "Venise",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le bouton qui rend la musique plus forte ?",
-      "reponse": "Le volume",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson gazeuse brune est née à Atlanta ?",
-      "reponse": "Le Coca-Cola",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du mouton ?",
-      "reponse": "L'agneau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Qui a développé la théorie de la relativité ?",
-      "reponse": "Einstein",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne le vélo ?",
-      "reponse": "Un bicycle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation organise un grand concours de chant entre animaux ?",
-      "reponse": "Tous en scène",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel mage noir est l'ennemi de Harry Potter ?",
-      "reponse": "Voldemort",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
-      "reponse": "Les Boys",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel numéro de tissu le coureur épingle-t-il sur sa poitrine ?",
-      "reponse": "Un dossard",
+      "question": "Quel sport se joue avec un ballon orange qu'on lance dans un panier ?",
+      "reponse": "Le basketball",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel sirop est une spécialité du Québec ?",
-      "reponse": "Le sirop d'érable",
+      "question": "Quelle créature du folklore québécois porte dans son nom l'heure du coucher ?",
+      "reponse": "Bonhomme Sept-Heures",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel général français s'est couronné empereur en 1804 ?",
-      "reponse": "Napoléon",
+      "question": "Comment appelle-t-on le bandit des mers qui attaquait les navires ?",
+      "reponse": "Un pirate",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ustensile à quatre dents pique les aliments ?",
+      "reponse": "La fourchette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le symbole chimique de l'oxygène ?",
+      "reponse": "O",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à archet se joue assis, entre les genoux ?",
+      "reponse": "Le violoncelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir le cœur sur la main ?",
+      "reponse": "Être généreux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Que veut dire l'abréviation DM sur les réseaux sociaux ?",
+      "reponse": "Un message privé",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien d'états composent les États-Unis ?",
+      "reponse": "50",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de dieu ?",
+      "reponse": "Déesse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle attraction de parc aquatique fait descendre un long tube en spirale ?",
+      "reponse": "La glissade d'eau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas se prend le midi au Québec ?",
+      "reponse": "Le dîner",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel fjord spectaculaire abrite des bélugas ?",
+      "reponse": "Fjord du Saguenay",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le petit cours d'eau où l'on peut marcher les pieds dedans ?",
+      "reponse": "Un ruisseau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?",
+      "reponse": "Un chaudron d'or",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal construit des barrages dans les rivières ?",
+      "reponse": "Le castor",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée les équipes de la Ligue nationale se disputent-elles au printemps ?",
+      "reponse": "La coupe Stanley",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie « avoir une faim de loup » ?",
+      "reponse": "Avoir très faim",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument rempli de graines produit un son quand on le secoue ?",
+      "reponse": "Les maracas",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quelle ville se trouve Hollywood ?",
+      "reponse": "Los Angeles",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel accessoire redonne de l'énergie à un téléphone à plat ?",
+      "reponse": "Un chargeur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle huile méditerranéenne est pressée d'un fruit ?",
+      "reponse": "Huile d'olive",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel chiffre porte malheur en Occident ?",
+      "reponse": "13",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel phénomène lumineux accompagne le tonnerre ?",
+      "reponse": "L'éclair",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Qui est le père de Luke Skywalker ?",
+      "reponse": "Dark Vador",
       "niveau": 1
     }
   ]

@@ -8,8 +8,17 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quelle boule couverte de miroirs tourne au plafond des soirées dansantes ?",
-      "reponse": "La boule disco",
+      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
+      "reponse": "La Bolduc",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quel jeu faut-il aligner des bonbons de même couleur ?",
+      "reponse": "Candy Crush",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,138 +28,76 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel chocolat creux se déballe le matin de Pâques ?",
-      "reponse": "Un œuf en chocolat",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle créature de la nuit dort dans un cercueil et craint l'ail ?",
-      "reponse": "Un vampire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu vidéo fait danser devant la télé en imitant un avatar à l'écran ?",
-      "reponse": "Just Dance",
-      "niveau": 1,
+      "question": "Quel concours de chant québécois lance des carrières depuis 2003 ?",
+      "reponse": "Star Académie",
+      "niveau": 2,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel gros livre illustré arrivait par la poste et faisait rêver avant Noël ?",
-      "reponse": "Le catalogue",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu oppose des équipes armées de pistolets lumineux dans le noir ?",
-      "reponse": "Le laser tag",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "question": "Quel carré noir et blanc se scanne avec la caméra du téléphone ?",
+      "reponse": "Un code QR",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel petit boîtier rond de poche contient une maison miniature ?",
-      "reponse": "Le Polly Pocket",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le séjour d'été où l'on dort en cabane avec d'autres jeunes ?",
-      "reponse": "Une colonie de vacances",
+      "question": "Quel mort-vivant marche les bras tendus dans les films d'horreur ?",
+      "reponse": "Un zombie",
       "niveau": 2
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
-      "reponse": "Le Wordle",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
-      "reponse": "La ceinture fléchée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles espadrilles de toile montantes portent une étoile sur la cheville ?",
-      "reponse": "Les Converse",
+      "question": "Quel meuble de salon se déplie en lit pour la visite ?",
+      "reponse": "Le divan-lit",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel petit être ailé exauce parfois des vœux dans les contes ?",
-      "reponse": "Une fée",
+      "question": "Quelle prière se récitait en famille à la radio, chaque soir, dans les années 50 ?",
+      "reponse": "Le chapelet",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle activité de party fait chanter sur une musique en lisant les paroles à l'écran ?",
+      "reponse": "Le karaoké",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Que fallait-il faire à un film loué avant de le rapporter au club vidéo ?",
-      "reponse": "Le rembobiner",
-      "niveau": 2,
+      "question": "Quel descripteur de hockey a marqué des générations par son français impeccable ?",
+      "reponse": "René Lecavalier",
+      "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de plateau fait résoudre un meurtre commis dans un manoir ?",
-      "reponse": "Le Clue",
-      "niveau": 2,
+      "question": "Quels petits êtres colorés aux cheveux dressés chantent dans leurs films ?",
+      "reponse": "Les Trolls",
+      "niveau": 1,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel objet orange envahit les rues de Montréal chaque été ?",
-      "reponse": "Le cône",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel cahier propose des dessins à remplir sans dépasser ?",
-      "reponse": "Un livre à colorier",
-      "niveau": 1
+      "question": "Quel objet de plastique se glisse sous les pieds pour glisser sur la neige ?",
+      "reponse": "La soucoupe",
+      "niveau": 2
     },
     {
       "categorie": "Culture pop",
@@ -163,19 +110,14 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quels bonbons durs multicolores promettent de goûter l'arc-en-ciel ?",
-      "reponse": "Les Skittles",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "question": "Quelle créature à écailles crache du feu et garde un trésor ?",
+      "reponse": "Un dragon",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle série québécoise suivait une famille qui vivait de combines et d'aide sociale ?",
-      "reponse": "Les Bougon",
+      "question": "Quelle marque de pneus a un bonhomme tout rond fait de bourrelets ?",
+      "reponse": "Michelin",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -184,49 +126,67 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel personnage au nez rouge et aux souliers immenses fait rire les enfants ?",
-      "reponse": "Un clown",
+      "question": "Comment appelle-t-on une personne qui suit un compte sur les réseaux sociaux ?",
+      "reponse": "Un abonné",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la publication qui s'efface au bout de vingt-quatre heures ?",
-      "reponse": "Une story",
+      "question": "Quel bassin de plastique se gonfle dans la cour l'été ?",
+      "reponse": "Une piscine gonflable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quel jeu abaisse-t-on des visages pour deviner le personnage de l'adversaire ?",
+      "reponse": "Qui est-ce ?",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet noir et plat, gravé de sillons, tourne sur une table tournante ?",
+      "reponse": "Le disque vinyle",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles espadrilles portent le nom d'une vedette du basketball et un logo de sauteur ?",
-      "reponse": "Les Air Jordan",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quels petits élastiques colorés se tressent en bracelets sur un métier ?",
-      "reponse": "Les Rainbow Loom",
+      "question": "Quel panier passait dans les rangs pendant la messe du dimanche ?",
+      "reponse": "La quête",
       "niveau": 3,
       "ages": [
-        "enfants",
-        "ados"
+        "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel bonbon dur se porte au doigt comme une bague ?",
-      "reponse": "Le Ring Pop",
-      "niveau": 2,
+      "question": "Comment appelle-t-on le collant coloré donné en récompense dans un cahier ?",
+      "reponse": "Un autocollant",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de crème glacée molle trempe ses cornets dans le chocolat ?",
+      "reponse": "Dairy Queen",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle marque de crayons de cire remplit les boîtes d'école ?",
+      "reponse": "Crayola",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
+      "reponse": "Le tramway",
+      "niveau": 3,
       "ages": [
-        "enfants",
-        "ados",
-        "adultes"
+        "aines"
       ]
     }
   ]

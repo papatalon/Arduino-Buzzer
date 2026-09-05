@@ -8,26 +8,18 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quel roi de France fut surnommé le Roi-Soleil ?",
-      "reponse": "Louis XIV",
-      "niveau": 2
+      "question": "Quel constructeur a lancé la Ford T ?",
+      "reponse": "Henry Ford",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Que porte un astronaute pour survivre dans l'espace ?",
-      "reponse": "Un scaphandre",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le guerrier à cheval qui servait son seigneur ?",
-      "reponse": "Un chevalier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année a débuté la Révolution française ?",
-      "reponse": "1789",
+      "question": "Quel ordre de moines soldats gardait les pèlerins ?",
+      "reponse": "Les Templiers",
       "niveau": 2,
       "ages": [
         "ados",
@@ -37,8 +29,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel peuple autochtone habitait Stadaconé et Hochelaga à l'arrivée des Français ?",
-      "reponse": "Les Iroquoiens",
+      "question": "Quelle bataille vit trois cents Spartiates tenir un défilé étroit ?",
+      "reponse": "Les Thermopyles",
       "niveau": 3,
       "ages": [
         "ados",
@@ -47,8 +39,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel roi babylonien a gravé un célèbre code de lois ?",
-      "reponse": "Hammurabi",
+      "question": "Qui a atteint le pôle Sud en premier ?",
+      "reponse": "Amundsen",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -57,39 +49,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Que hisse-t-on sur les mâts pour que le vent pousse un navire ancien ?",
-      "reponse": "Les voiles",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?",
-      "reponse": "Le cheval de Troie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'Égyptien qui savait écrire, un métier rare et respecté ?",
-      "reponse": "Un scribe",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel héros grec avait un talon vulnérable ?",
-      "reponse": "Achille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal domestique les Égyptiens adoraient-ils au point de le momifier ?",
-      "reponse": "Le chat",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle navette spatiale a explosé au décollage en 1986 ?",
-      "reponse": "Challenger",
-      "niveau": 2,
+      "question": "Quel explorateur portugais a contourné l'Afrique en 1498 ?",
+      "reponse": "Vasco de Gama",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
@@ -97,9 +59,33 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel calendrier, adopté en 1582, utilisons-nous ?",
-      "reponse": "Le grégorien",
-      "niveau": 2,
+      "question": "Quel peuple a construit le Machu Picchu ?",
+      "reponse": "Les Incas",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel conflit a duré de 1939 à 1945 ?",
+      "reponse": "2e Guerre mondiale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle mission a posé les premiers hommes sur la Lune ?",
+      "reponse": "Apollo 11",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle arme les chevaliers portaient-ils au côté ?",
+      "reponse": "L'épée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on l'échange de fourrures contre des marchandises européennes ?",
+      "reponse": "La traite des fourrures",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -108,8 +94,14 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
-      "reponse": "Traité de Paris",
+      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
+      "reponse": "Une diligence",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre canadien a dirigé pendant la Seconde Guerre ?",
+      "reponse": "Mackenzie King",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -118,15 +110,34 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel monument de pierre à quatre faces triangulaires abritait un tombeau égyptien ?",
-      "reponse": "Une pyramide",
-      "niveau": 1
+      "question": "Quel tissu précieux venait de Chine par une longue route caravanière ?",
+      "reponse": "La soie",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel animal fut le premier en orbite ?",
-      "reponse": "La chienne Laïka",
-      "niveau": 2
+      "question": "Quel général français a lancé l'appel du 18 juin 1940 ?",
+      "reponse": "De Gaulle",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel mur antique protégeait l'Angleterre romaine ?",
+      "reponse": "Mur d'Hadrien",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -141,64 +152,65 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel chef des Huns a terrorisé l'Europe ?",
-      "reponse": "Attila",
+      "question": "Quelle reine britannique a régné pendant presque tout le 19e siècle ?",
+      "reponse": "Victoria",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal les chevaliers montaient-ils pour aller au combat ?",
+      "reponse": "Le cheval",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
+      "reponse": "Un missionnaire",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention à deux roues se propulse avec des pédales ?",
+      "reponse": "La bicyclette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle machine de siège lançait des pierres par-dessus les murailles ?",
+      "reponse": "La catapulte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut la première femme dans l'espace ?",
+      "reponse": "Valentina Terechkova",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel outil de fer servait à abattre les arbres pour défricher la terre ?",
+      "reponse": "La hache",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel général carthaginois a traversé les Alpes à dos d'éléphant ?",
-      "reponse": "Hannibal",
+      "question": "En quelle année eut lieu le grand krach boursier ?",
+      "reponse": "1929",
       "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel philosophe grec fut condamné à boire la ciguë ?",
-      "reponse": "Socrate",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les cent ans d'un événement qu'on souligne par une fête ?",
-      "reponse": "Un centenaire",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?",
-      "reponse": "Le sextant",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle reine de France fut guillotinée en 1793 ?",
-      "reponse": "Marie-Antoinette",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Sur quelle île Napoléon est-il mort ?",
-      "reponse": "Sainte-Hélène",
-      "niveau": 3,
       "ages": [
         "adultes",
         "aines"

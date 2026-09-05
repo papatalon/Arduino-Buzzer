@@ -8,14 +8,8 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gros animal gris d'Afrique porte une corne sur le nez ?",
-      "reponse": "Le rhinocéros",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Dans quelle partie du corps loge l'os appelé enclume ?",
-      "reponse": "Dans l'oreille",
+      "question": "Quel phénomène fait flotter les bateaux ?",
+      "reponse": "Poussée d'Archimède",
       "niveau": 2,
       "ages": [
         "ados",
@@ -25,32 +19,27 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de pattes possède un crabe ?",
-      "reponse": "Dix",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel gaz les plantes absorbent-elles ?",
-      "reponse": "Le gaz carbonique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus grosse planète du système solaire ?",
-      "reponse": "Jupiter",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on le bébé de la grenouille, qui a encore une queue ?",
-      "reponse": "Le têtard",
+      "question": "Comment appelle-t-on l'ensemble formé par le Soleil et ses planètes ?",
+      "reponse": "Le système solaire",
       "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est l'animal terrestre le plus rapide ?",
+      "reponse": "Le guépard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète est surnommée la planète rouge ?",
+      "reponse": "Mars",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelles gouttes d'eau tombent des nuages ?",
+      "reponse": "La pluie",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -65,8 +54,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de vertèbres a le cou d'une girafe ?",
-      "reponse": "Sept",
+      "question": "Comment mesure-t-on la force des ouragans ?",
+      "reponse": "Saffir-Simpson",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -75,26 +64,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle chenille fabrique un fil précieux en tissant son cocon ?",
-      "reponse": "Le ver à soie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient du Soleil ?",
-      "reponse": "L'énergie solaire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la température du corps humain en santé ?",
-      "reponse": "37 degrés C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel pourcentage de la Terre est couvert d'eau ?",
-      "reponse": "71 pour cent",
+      "question": "Quel animal a la langue la plus longue par rapport au corps ?",
+      "reponse": "Le caméléon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -104,32 +75,120 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel organe de la bouche permet de goûter ?",
-      "reponse": "La langue",
+      "question": "Quel appareil transforme le vent en électricité ?",
+      "reponse": "L'éolienne",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelles gouttes d'eau tombent des nuages ?",
-      "reponse": "La pluie",
+      "question": "Combien de dents de lait a un enfant ?",
+      "reponse": "20",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie de la plante absorbe l'eau ?",
+      "reponse": "Les racines",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de pattes a un oiseau ?",
+      "question": "Comment s'appellent les anneaux du tronc d'un arbre ?",
+      "reponse": "Les cernes",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le plus grand organe du corps humain ?",
+      "reponse": "La peau",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel petit animal à coquille rampe lentement en laissant une trace ?",
+      "reponse": "L'escargot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile change de couleur pour se camoufler ?",
+      "reponse": "Le caméléon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie de la plante relie la racine à la fleur ?",
+      "reponse": "La tige",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
+      "reponse": "L'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel grand singe est le plus proche de l'homme ?",
+      "reponse": "Le chimpanzé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle unité mesure la fréquence ?",
+      "reponse": "Le hertz",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de lunes possède Mars ?",
       "reponse": "Deux",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
+      "reponse": "La dionée",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment nomme-t-on un arbre qui garde ses aiguilles ?",
+      "reponse": "Un conifère",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle plante piquante pousse dans le désert ?",
-      "reponse": "Le cactus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel gaz léger gonflait les dirigeables ?",
-      "reponse": "L'hydrogène",
+      "question": "Quel est le plus petit os du corps ?",
+      "reponse": "L'étrier",
       "niveau": 2,
       "ages": [
         "ados",
@@ -139,56 +198,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gaz expirons-nous ?",
-      "reponse": "Le gaz carbonique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal hurle à la lune et chasse en meute ?",
-      "reponse": "Le loup",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de chromosomes possède l'humain ?",
-      "reponse": "46",
+      "question": "Quel tube relie la bouche à l'estomac ?",
+      "reponse": "L'œsophage",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel arachnide a une queue munie d'un dard ?",
-      "reponse": "Le scorpion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on la grosse partie de l'arbre qui porte les branches ?",
-      "reponse": "Le tronc",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Que devient un têtard ?",
-      "reponse": "Une grenouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal à longues oreilles adore les carottes ?",
-      "reponse": "Le lapin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel oiseau noir et blanc de l'Antarctique ne sait pas voler ?",
-      "reponse": "Le manchot",
-      "niveau": 1
     }
   ]
 }

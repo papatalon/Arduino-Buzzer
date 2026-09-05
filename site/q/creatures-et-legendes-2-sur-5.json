@@ -7,22 +7,51 @@
   "emoji": "🐉",
   "questions": [
     {
+      "categorie": "Culture pop",
+      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
+      "reponse": "Une sirène",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel arbre géant de Californie est le plus gros du monde ?",
+      "reponse": "Le séquoia",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel sport sorcier se joue sur des balais ?",
+      "reponse": "Le quidditch",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel cheval blanc porte une corne unique sur le front ?",
+      "reponse": "Une licorne",
+      "niveau": 1
+    },
+    {
       "categorie": "Géographie",
       "question": "Comment appelle-t-on le livre rempli de cartes de tous les pays ?",
       "reponse": "Un atlas",
       "niveau": 2
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pomme enrobée est une friandise d'Halloween ?",
-      "reponse": "Pomme au caramel",
+      "categorie": "Culture générale",
+      "question": "Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?",
+      "reponse": "Un chaudron d'or",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel personnage de conte chaussé de bottes parle au nom de son maître ?",
-      "reponse": "Le Chat botté",
-      "niveau": 2
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante compose le menu du panda géant ?",
+      "reponse": "Le bambou",
+      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
@@ -34,6 +63,81 @@
         "ados",
         "adultes"
       ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel objet cassé porte sept ans de malheur ?",
+      "reponse": "Le miroir",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
+      "reponse": "Arthur Laroche",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel monstre vert explose à côté du joueur dans Minecraft ?",
+      "reponse": "Le creeper",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel jeu mobile fait attraper des créatures en marchant dans la vraie ville ?",
+      "reponse": "Pokémon GO",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel cheval mythologique a des ailes ?",
+      "reponse": "Pégase",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle déesse grecque est née de l'écume ?",
+      "reponse": "Aphrodite",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel roi anglais légendaire aurait retiré une épée d'un rocher ?",
+      "reponse": "Le roi Arthur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature bleue de Disney, échappée de l'espace, s'appelle l'expérience 626 ?",
+      "reponse": "Stitch",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Dans quel conte un oisillon rejeté par les siens devient un magnifique cygne ?",
+      "reponse": "Le vilain petit canard",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
@@ -57,138 +161,27 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel géant de bois permit aux Grecs d'entrer dans une ville assiégée ?",
-      "reponse": "Le cheval de Troie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel roi légendaire cherchait le Graal ?",
-      "reponse": "Le roi Arthur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel chiffre porte malheur en Occident ?",
-      "reponse": "13",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pomme enrobée est une friandise d'Halloween ?",
+      "reponse": "Pomme au caramel",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel drap blanc troué de deux yeux fait un costume d'Halloween facile ?",
-      "reponse": "Un fantôme",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel conte Disney une rose est-elle sous cloche ?",
-      "reponse": "La Belle et la Bête",
+      "question": "Quelle créature de la nuit dort dans un cercueil et craint l'ail ?",
+      "reponse": "Un vampire",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Qui a ouvert la boîte qui libérait tous les maux ?",
-      "reponse": "Pandore",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?",
-      "reponse": "Le tyrannosaure",
+      "question": "Quelle fillette de conte entre chez trois ours et goûte leur gruau ?",
+      "reponse": "Boucle d'or",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel roi mythique change en or tout ce qu'il touche ?",
-      "reponse": "Midas",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel dieu grec règne sur les enfers ?",
-      "reponse": "Hadès",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Qui laisse de l'argent sous l'oreiller en échange d'une dent ?",
-      "reponse": "La fée des dents",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel monstre menace les enfants de Stranger Things ?",
-      "reponse": "Le Démogorgon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
-      "reponse": "Une sirène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel objet cassé porte sept ans de malheur ?",
-      "reponse": "Le miroir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ogre vert a une femme nommée Fiona ?",
-      "reponse": "Shrek",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Autour de quelle table siégeaient les chevaliers d'Arthur ?",
-      "reponse": "La Table ronde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle déesse grecque est née de l'écume ?",
-      "reponse": "Aphrodite",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel entraîneur légendaire des Canadiens s'appelait Scotty ?",
-      "reponse": "Scotty Bowman",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Dans quel conte une princesse s'endort cent ans après s'être piqué le doigt ?",
-      "reponse": "La Belle au bois dormant",
+      "question": "Quel animal porte malheur s'il croise notre chemin, selon la superstition ?",
+      "reponse": "Un chat noir",
       "niveau": 1
     }
   ]

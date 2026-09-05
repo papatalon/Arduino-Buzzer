@@ -8,123 +8,56 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quelle médaille reçoit le troisième aux Jeux olympiques ?",
-      "reponse": "La médaille de bronze",
+      "question": "Que pleut-il sur la patinoire quand un joueur compte trois buts dans le même match ?",
+      "reponse": "Des chapeaux",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Comment s'appelle le centre de la cible aux fléchettes ?",
-      "reponse": "Le bullseye",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle distance fait un demi-marathon ?",
-      "reponse": "21,1 km",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec un ballon orange qu'on lance dans un panier ?",
-      "reponse": "Le basketball",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de minutes dure une période de hockey ?",
-      "reponse": "20",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel quart-arrière a gagné sept Super Bowls ?",
-      "reponse": "Tom Brady",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de glace utilise des pierres et des balais ?",
-      "reponse": "Le curling",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport combine natation, vélo et course ?",
-      "reponse": "Le triathlon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme saute le plus loin possible dans un carré de sable ?",
-      "reponse": "Le saut en longueur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue sur une table avec une petite balle et deux palettes ?",
-      "reponse": "Le ping-pong",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sprinteur canadien a gagné le 100 m aux JO de 1996 ?",
-      "reponse": "Donovan Bailey",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport descend des rivières en radeau pneumatique ?",
-      "reponse": "Le rafting",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Depuis quelle planche élastique s'élance le plongeur ?",
-      "reponse": "Un tremplin",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle course olympique est la plus courte ?",
-      "reponse": "Le 100 mètres",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec une raquette et une balle jaune par-dessus un filet ?",
-      "reponse": "Le tennis",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel cheval célèbre a gagné la Triple Couronne en 1973 ?",
-      "reponse": "Secretariat",
+      "question": "Combien de joueurs par équipe au water-polo ?",
+      "reponse": "Sept",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel club de soccer espagnol joue au Camp Nou ?",
+      "reponse": "FC Barcelone",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le service réussi que l'adversaire ne touche pas au tennis ?",
+      "reponse": "Un as",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle course cycliste est la plus célèbre au monde ?",
+      "reponse": "Le Tour de France",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel joueur de hockey est surnommé La Merveille ?",
+      "reponse": "Wayne Gretzky",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
@@ -141,8 +74,24 @@
     },
     {
       "categorie": "Sports",
-      "question": "Où ont eu lieu les premiers Jeux olympiques modernes ?",
-      "reponse": "Athènes",
+      "question": "Quel sport de raquette au nom de cornichon est en plein essor ?",
+      "reponse": "Le pickleball",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la remise en jeu accordée quand la défense sort le ballon derrière sa ligne ?",
+      "reponse": "Un coup de pied de coin",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle longueur fait une piscine olympique ?",
+      "reponse": "50 mètres",
       "niveau": 2,
       "ages": [
         "ados",
@@ -152,33 +101,25 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la pièce où les joueurs enfilent leur équipement ?",
-      "reponse": "Le vestiaire",
+      "question": "De quelle couleur est la balle avec laquelle on joue au hockey dans la rue ?",
+      "reponse": "Orange",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Sur quelle surface glacée se joue le hockey ?",
-      "reponse": "La patinoire",
-      "niveau": 1
+      "question": "Quel art martial signifie voie de la souplesse ?",
+      "reponse": "Le judo",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle médaille reçoit le champion olympique ?",
-      "reponse": "La médaille d'or",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Que doit-on porter sur la tête avant de partir à vélo ?",
-      "reponse": "Un casque de vélo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de balles mènent à un but sur balles au baseball ?",
-      "reponse": "Quatre",
-      "niveau": 1,
+      "question": "Quel mot anglais désigne zéro au tennis ?",
+      "reponse": "Love",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -187,9 +128,87 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel disque de plastique lance-t-on à un ami ou à un chien au parc ?",
-      "reponse": "Le frisbee",
+      "question": "Quel trophée est remis au champion du Super Bowl ?",
+      "reponse": "Trophée Lombardi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment nomme-t-on trois abats de suite au bowling ?",
+      "reponse": "Un dindon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel Suisse élégant a gagné 20 titres du grand chelem ?",
+      "reponse": "Roger Federer",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle activité d'hiver descend une pente sur un traîneau ou une chambre à air ?",
+      "reponse": "La glissade",
       "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel objet à manche et à cordes frappe la balle au tennis ?",
+      "reponse": "Une raquette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de points vaut un touché au football ?",
+      "reponse": "Six",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment s'appelle le joueur qui garde le filet au hockey ?",
+      "reponse": "Le gardien de but",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport évolue-t-on sur une poutre ?",
+      "reponse": "La gymnastique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel tournoi du grand chelem se joue à New York ?",
+      "reponse": "Le US Open",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle épreuve d'athlétisme projette une longue tige pointue le plus loin possible ?",
+      "reponse": "Le lancer du javelot",
+      "niveau": 2
     }
   ]
 }

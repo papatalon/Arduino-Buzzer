@@ -7,9 +7,52 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Québec",
+      "question": "Quel grand rendez-vous de novembre réunit éditeurs et auteurs au Palais des congrès de Montréal ?",
+      "reponse": "Le Salon du livre",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on le groupe de chanteurs qui répond au soliste dans une chanson ?",
-      "reponse": "Le chœur",
+      "question": "Que fait un musicien qui règle son instrument avant de jouer ?",
+      "reponse": "Accorder",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que rapportait-on à l'épicerie pour récupérer quelques sous ?",
+      "reponse": "Les bouteilles vides",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel genre musical africain aux rythmes chaloupés s'est imposé mondialement ?",
+      "reponse": "L'afrobeat",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le passage étroit d'eau entre deux terres ?",
+      "reponse": "Un détroit",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qui a créé le tableau périodique ?",
+      "reponse": "Mendeleïev",
       "niveau": 3,
       "ages": [
         "ados",
@@ -19,19 +62,38 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel bâton orné le roi tient-il en main comme signe de son pouvoir ?",
-      "reponse": "Le sceptre",
+      "question": "Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?",
+      "reponse": "La Révolution tranquille",
       "niveau": 3,
       "ages": [
-        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle merveille antique se trouvait à Babylone ?",
+      "reponse": "Jardins suspendus",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel bâtiment incliné de Montréal permet de voir la ville d'en haut ?",
-      "reponse": "La tour de Montréal",
+      "question": "Quelle plante grimpante rougit les murs des maisons à l'automne ?",
+      "reponse": "La vigne vierge",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel traitement de coiffure des années 80 frisait les cheveux pour des mois ?",
+      "reponse": "La permanente",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -40,13 +102,19 @@
     },
     {
       "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au water-polo ?",
-      "reponse": "Sept",
+      "question": "Quelle plongeuse de Laval a gagné l'argent en tremplin synchro à Tokyo ?",
+      "reponse": "Jennifer Abel",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la terre gelée sans arbres du Grand Nord ?",
+      "reponse": "La toundra",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
@@ -59,25 +127,9 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le quartier bâti pour loger les athlètes pendant les Jeux ?",
-      "reponse": "Le village olympique",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on l'air de danse traditionnel joué au violon dans les veillées d'ici ?",
-      "reponse": "Un rigodon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle méthode permet de dater un vestige grâce à un isotope ?",
-      "reponse": "Le carbone 14",
+      "categorie": "Musique",
+      "question": "Quelle chanson de Toto porte le nom d'un continent ?",
+      "reponse": "Africa",
       "niveau": 3,
       "ages": [
         "ados",
@@ -86,43 +138,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe progressif québécois a fait L'Heptade ?",
-      "reponse": "Harmonium",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel papillon est l'insecte emblème du Québec ?",
-      "reponse": "L'amiral",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
-      "reponse": "Les oreilles de lapin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays d'Amérique du Sud danse-t-on le tango ?",
-      "reponse": "L'Argentine",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment mesure-t-on la force des ouragans ?",
-      "reponse": "Saffir-Simpson",
+      "question": "Quel groupe de Birmingham a lancé le heavy metal ?",
+      "reponse": "Black Sabbath",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -131,8 +148,28 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on les longues bandes de terre perpendiculaires au fleuve ?",
-      "reponse": "Les rangs",
+      "question": "Quel instrument de navigation mesurait la hauteur des astres sur l'horizon ?",
+      "reponse": "Le sextant",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument électronique se joue en frappant des pastilles sensibles ?",
+      "reponse": "Le pad",
+      "niveau": 3,
+      "ages": [
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte à tartiner australienne est très salée ?",
+      "reponse": "La Vegemite",
       "niveau": 3,
       "ages": [
         "ados",
@@ -151,43 +188,15 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le décalage d'heure entre Montréal et Paris ?",
-      "reponse": "Le décalage horaire",
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les grands ponts qui amenaient l'eau jusqu'aux villes romaines ?",
+      "reponse": "Un aqueduc",
       "niveau": 3
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?",
-      "reponse": "Alys Robi",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de demi-tons dans une octave ?",
-      "reponse": "Douze",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel genre de musique douce et répétitive sert de fond sonore pour étudier ?",
-      "reponse": "Le lo-fi",
-      "niveau": 3,
-      "ages": [
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
-      "reponse": "Josée di Stasio",
+      "question": "Quel vêtement des années 60 a scandalisé en raccourcissant brusquement ?",
+      "reponse": "La minijupe",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -196,50 +205,43 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles poupées à grosse tête et lèvres pulpeuses ont concurrencé Barbie ?",
-      "reponse": "Les Bratz",
+      "question": "Quelles bottes anglaises à coutures jaunes sont un classique punk ?",
+      "reponse": "Les Doc Martens",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
-      "reponse": "Radio Enfer",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de cordes a un violoncelle ?",
-      "reponse": "Quatre",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle merveille antique se trouvait à Babylone ?",
-      "reponse": "Jardins suspendus",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles rondelles de carton s'empilaient et se retournaient dans les cours d'école des années 90 ?",
-      "reponse": "Les Pogs",
+      "question": "Dans quel jeu de société conquiert-on des territoires sur une carte du monde ?",
+      "reponse": "Le Risk",
       "niveau": 3,
       "ages": [
-        "adultes"
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission jeunesse de Radio-Canada, animée par Monsieur Surprise, a lancé Fanfreluche et Sol ?",
+      "reponse": "La Boîte à surprise",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on un mot qui a plusieurs sens ?",
+      "reponse": "Polysémique",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     }
   ]

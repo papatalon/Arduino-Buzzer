@@ -8,32 +8,44 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
+      "question": "Quel oiseau bâtit son nid de boue sous les avant-toits des granges ?",
+      "reponse": "L'hirondelle",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle le centre de la Terre ?",
+      "reponse": "Le noyau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
       "question": "Quelles gouttes couvrent le gazon au petit matin ?",
       "reponse": "La rosée",
       "niveau": 2
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Dans quel organe la nourriture arrive-t-elle une fois avalée ?",
-      "reponse": "L'estomac",
+      "question": "Quel grand reptile du Nil était sacré en Égypte ?",
+      "reponse": "Le crocodile",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel métal les aimants attirent-ils ?",
-      "reponse": "Le fer",
+      "question": "Quelle est la température du corps humain en santé ?",
+      "reponse": "37 degrés C",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appelle le voyage du pollen ?",
-      "reponse": "La pollinisation",
+      "question": "Quel gros oiseau entièrement noir croasse ?",
+      "reponse": "Le corbeau",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Qui a développé la théorie de la relativité ?",
-      "reponse": "Einstein",
+      "question": "Comment nomme-t-on un arbre à feuilles, par opposition à un conifère ?",
+      "reponse": "Un feuillu",
       "niveau": 1,
       "ages": [
         "ados",
@@ -43,20 +55,25 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelles parties de l'arbre changent de couleur en automne ?",
-      "reponse": "Les feuilles",
+      "question": "Quelles parties blanches de la bouche servent à mâcher ?",
+      "reponse": "Les dents",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal roux au museau pointu passe pour rusé dans les fables ?",
-      "reponse": "Le renard",
-      "niveau": 1
+      "question": "De quel élément le diamant est-il composé ?",
+      "reponse": "Le carbone",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel appareil transforme le vent en électricité ?",
-      "reponse": "L'éolienne",
+      "question": "Quelle partie du visage sert à sentir les odeurs ?",
+      "reponse": "Le nez",
       "niveau": 1
     },
     {
@@ -72,14 +89,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de poumons possède l'humain ?",
-      "reponse": "Deux",
+      "question": "De quel arbre le koala mange-t-il les feuilles ?",
+      "reponse": "L'eucalyptus",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appellent les anneaux du tronc d'un arbre ?",
-      "reponse": "Les cernes",
+      "question": "Quel est le symbole chimique de l'or ?",
+      "reponse": "Au",
       "niveau": 2,
       "ages": [
         "ados",
@@ -89,32 +106,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel gros animal noir et blanc de Chine se nourrit de bambou ?",
-      "reponse": "Le panda",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre change de forme dans le ciel au fil des nuits ?",
-      "reponse": "La Lune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel minéral renforce les os ?",
-      "reponse": "Le calcium",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel phénomène lumineux accompagne le tonnerre ?",
-      "reponse": "L'éclair",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel liquide produit par le foie digère les graisses ?",
-      "reponse": "La bile",
+      "question": "Quel pourcentage de la Terre est couvert d'eau ?",
+      "reponse": "71 pour cent",
       "niveau": 2,
       "ages": [
         "ados",
@@ -124,15 +117,9 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien d'orteils avons-nous en tout ?",
-      "reponse": "Dix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle vitamine fabrique la peau au soleil ?",
-      "reponse": "La vitamine D",
-      "niveau": 2,
+      "question": "Quelle échelle mesure la dureté des minéraux ?",
+      "reponse": "Mohs",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -141,32 +128,20 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est le plus petit os du corps ?",
-      "reponse": "L'étrier",
+      "question": "Quelle articulation plie le bras en son milieu ?",
+      "reponse": "Le coude",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal d'Australie dort presque toute la journée dans un eucalyptus ?",
+      "reponse": "Le koala",
       "niveau": 2,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle plante compose le menu du panda géant ?",
-      "reponse": "Le bambou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte produit le miel ?",
-      "reponse": "L'abeille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quels organes nous permettent de voir ?",
-      "reponse": "Les yeux",
-      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -176,9 +151,44 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal a la langue la plus longue par rapport au corps ?",
-      "reponse": "Le caméléon",
+      "question": "Quels organes filtrent le sang ?",
+      "reponse": "Les reins",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle comète célèbre revient tous les 76 ans ?",
+      "reponse": "Halley",
       "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel vent tourbillonnant forme un entonnoir ?",
+      "reponse": "La tornade",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Chez quel animal le mâle porte-t-il les bébés ?",
+      "reponse": "L'hippocampe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle le passage de liquide à gaz ?",
+      "reponse": "L'évaporation",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel sucre trouve-t-on dans le sang ?",
+      "reponse": "Le glucose",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",

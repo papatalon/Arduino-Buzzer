@@ -8,21 +8,9 @@
   "questions": [
     {
       "categorie": "Québec",
-      "question": "Quel grand bâtiment rouge de la ferme abrite les animaux et le foin ?",
-      "reponse": "La grange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la neige poussée par le vent qui empêche de voir la route ?",
-      "reponse": "La poudrerie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne l'argent, familièrement ?",
-      "reponse": "Du cash",
-      "niveau": 2,
+      "question": "Quel trophée remporte le champion de la LCF ?",
+      "reponse": "La coupe Grey",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -31,42 +19,24 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle jeune fille a dansé avec le diable dans la légende ?",
-      "reponse": "Rose Latulippe",
-      "niveau": 2,
+      "question": "Quel poète québécois a écrit L'homme rapaillé ?",
+      "reponse": "Gaston Miron",
+      "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "De quelle couleur est le drapeau du Québec ?",
-      "reponse": "Bleu et blanc",
+      "question": "Comment s'appelle le parlement du Québec ?",
+      "reponse": "Assemblée nationale",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle exposition universelle a eu lieu à Montréal ?",
-      "reponse": "Expo 67",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on l'herbe coupée et séchée qu'on donne aux vaches l'hiver ?",
-      "reponse": "Le foin",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle tourte à plusieurs étages de pâte vient de la Gaspésie ?",
-      "reponse": "Le cipaille",
-      "niveau": 2,
+      "question": "Quelle taxe québécoise s'ajoute à la taxe fédérale sur les achats ?",
+      "reponse": "La TVQ",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -81,9 +51,9 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel est l'arbre emblème du Québec ?",
-      "reponse": "Le bouleau jaune",
-      "niveau": 3,
+      "question": "Quel joueur québécois des Penguins était surnommé le Magnifique ?",
+      "reponse": "Mario Lemieux",
+      "niveau": 1,
       "ages": [
         "adultes",
         "aines"
@@ -91,56 +61,78 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle salle de Montréal projette le ciel étoilé sur un dôme au-dessus des spectateurs ?",
-      "reponse": "Le Planétarium",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on une grande école secondaire publique au Québec ?",
-      "reponse": "Une polyvalente",
+      "question": "Quel chanteur des Colocs est une légende ?",
+      "reponse": "Dédé Fortin",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "De quel village vient le conteur Fred Pellerin ?",
-      "reponse": "Saint-Élie-de-Caxton",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel premier ministre québécois fut surnommé le Cheuf ?",
-      "reponse": "Duplessis",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel grand musée du Vieux-Port de Québec a ouvert ses portes en 1988 ?",
-      "reponse": "Le Musée de la civilisation",
+      "question": "Comment appelle-t-on l'aide financière que l'État avance aux étudiants ?",
+      "reponse": "Les prêts et bourses",
       "niveau": 3,
       "ages": [
         "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle cabane à sucre appartient au chef Martin Picard ?",
+      "reponse": "Au Pied de Cochon",
+      "niveau": 2,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel pont de Montréal illumine ses câbles de couleurs le soir ?",
-      "reponse": "Le pont Jacques-Cartier",
+      "question": "Quel film culte parle d'une guerre de balles de neige ?",
+      "reponse": "La Guerre des tuques",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel dôme géodésique brille sur l'île Sainte-Hélène ?",
+      "reponse": "La Biosphère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel bonnet d'hiver porte un nom bien québécois ?",
+      "reponse": "La tuque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle ligue de hockey junior regroupe les équipes du Québec et des Maritimes ?",
+      "reponse": "La LHJMQ",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle fête nationale du Québec se célèbre le 24 juin ?",
+      "reponse": "La Saint-Jean",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle ville de l'Estrie abrite l'Université Bishop's ?",
+      "reponse": "Sherbrooke",
       "niveau": 2,
       "ages": [
         "ados",
@@ -161,20 +153,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelles montagnes russes en bois de La Ronde sont célèbres ?",
-      "reponse": "Le Monstre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle chaîne de dépanneurs québécoise a un hibou ?",
-      "reponse": "Couche-Tard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle île gaspésienne abrite des fous de Bassan ?",
-      "reponse": "Bonaventure",
+      "question": "Quel mot québécois désigne le fait de se tromper complètement ?",
+      "reponse": "Se planter",
       "niveau": 2,
       "ages": [
         "ados",
@@ -184,8 +164,34 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel parc national québécois protège des caribous ?",
-      "reponse": "La Gaspésie",
+      "question": "Quelle barrière de longues pièces de bois croisées entourait les vieilles fermes d'ici ?",
+      "reponse": "Une clôture de perches",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel groupe québécois a chanté Dehors novembre ?",
+      "reponse": "Les Colocs",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel établissement d'enseignement, entre le secondaire et l'université, n'existe qu'au Québec ?",
+      "reponse": "Le cégep",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel musée montréalais borde la rue Sherbrooke ouest ?",
+      "reponse": "Beaux-arts",
       "niveau": 2,
       "ages": [
         "ados",
@@ -195,8 +201,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle boisson alcoolisée réchauffe le Carnaval de Québec ?",
-      "reponse": "Le caribou",
+      "question": "Quelle expression québécoise signifie c'est correct ?",
+      "reponse": "C'est beau",
       "niveau": 1,
       "ages": [
         "ados",
@@ -206,8 +212,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle autoroute mène de Montréal vers les Laurentides ?",
-      "reponse": "La 15",
+      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
+      "reponse": "L'autoroute 40",
       "niveau": 3,
       "ages": [
         "ados",
@@ -217,8 +223,8 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel trophée remporte le champion de la LCF ?",
-      "reponse": "La coupe Grey",
+      "question": "Quel cidre québécois est pressé après les gelées ?",
+      "reponse": "Cidre de glace",
       "niveau": 1,
       "ages": [
         "ados",
@@ -228,9 +234,13 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel fleuve traverse le Québec ?",
-      "reponse": "Le Saint-Laurent",
-      "niveau": 1
+      "question": "Quel mois de 1970 a connu l'enlèvement de Pierre Laporte ?",
+      "reponse": "Octobre",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

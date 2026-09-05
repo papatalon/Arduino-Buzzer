@@ -8,14 +8,67 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on les chutes situées juste à côté de la ville de Québec ?",
-      "reponse": "Les chutes Montmorency",
+      "question": "Combien y a-t-il de continents sur Terre ?",
+      "reponse": "Sept",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Golden Gate ?",
+      "reponse": "San Francisco",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "De quel côté se lève le soleil ?",
+      "reponse": "À l'est",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle rivière célèbre coule à Ottawa ?",
+      "reponse": "L'Outaouais",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel océan entoure le pôle Nord ?",
+      "reponse": "L'océan Arctique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle grande étendue d'eau salée sépare l'Angleterre de la France ?",
+      "reponse": "La Manche",
       "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Égypte ?",
-      "reponse": "Le Caire",
+      "question": "Dans quel pays les vaches sont-elles sacrées ?",
+      "reponse": "L'Inde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "De quel côté se couche le soleil ?",
+      "reponse": "À l'ouest",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Canada ?",
+      "reponse": "Ottawa",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Pologne ?",
+      "reponse": "Varsovie",
       "niveau": 2,
       "ages": [
         "ados",
@@ -25,21 +78,60 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Combien y a-t-il de Grands Lacs ?",
-      "reponse": "Cinq",
-      "niveau": 1
+      "question": "Capitale de la Turquie ?",
+      "reponse": "Ankara",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la grande étendue de terre où le fermier sème son blé ?",
-      "reponse": "Un champ",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
-      "reponse": "L'Alberta",
+      "question": "Dans quel pays d'Amérique du Sud danse-t-on le tango ?",
+      "reponse": "L'Argentine",
       "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle grande ville des États-Unis abrite Hollywood ?",
+      "reponse": "Los Angeles",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'encadré qui explique les symboles d'une carte ?",
+      "reponse": "La légende",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle saison fait tomber les feuilles des arbres ?",
+      "reponse": "L'automne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus grand pays du monde ?",
+      "reponse": "La Russie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
+      "reponse": "Le Japon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel passage maritime arctique relie deux océans ?",
+      "reponse": "Nord-Ouest",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -49,39 +141,11 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Sur quelle côte d'Australie se trouvent Sydney et Melbourne ?",
-      "reponse": "La côte est",
+      "question": "Quel fleuve forme la frontière Ontario-Québec au sud ?",
+      "reponse": "L'Outaouais",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus grand océan ?",
-      "reponse": "Le Pacifique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée au Mexique ?",
-      "reponse": "L'espagnol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le mouvement de la mer qui monte et descend chaque jour ?",
-      "reponse": "La marée",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve Tombouctou ?",
-      "reponse": "Le Mali",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
@@ -99,43 +163,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle île française a vu naître Napoléon ?",
-      "reponse": "La Corse",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle mer sépare l'Europe de l'Afrique ?",
-      "reponse": "La Méditerranée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la capitale de la province de Québec ?",
-      "reponse": "La ville de Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?",
-      "reponse": "Le pont Champlain",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on un très grand bâtiment de plusieurs dizaines d'étages ?",
-      "reponse": "Un gratte-ciel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle île canadienne a inspiré Anne aux pignons verts ?",
-      "reponse": "Prince-Édouard",
+      "question": "Capitale de la Belgique ?",
+      "reponse": "Bruxelles",
       "niveau": 1,
       "ages": [
         "ados",
@@ -145,49 +174,15 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel petit pays d'Europe est connu pour ses frites, ses gaufres et sa capitale Bruxelles ?",
-      "reponse": "La Belgique",
+      "question": "Comment appelle-t-on la grande vallée creusée par une rivière entre deux parois ?",
+      "reponse": "Un canyon",
       "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
-      "reponse": "Rio de Janeiro",
+      "question": "Quel pays se trouve juste au sud du Canada ?",
+      "reponse": "Les États-Unis",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel animal figure sur la pièce d'un dollar canadien ?",
-      "reponse": "Le huard",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande île du golfe Saint-Laurent ?",
-      "reponse": "Anticosti",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel océan borde la côte ouest du Canada ?",
-      "reponse": "Le Pacifique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Chili ?",
-      "reponse": "Santiago",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

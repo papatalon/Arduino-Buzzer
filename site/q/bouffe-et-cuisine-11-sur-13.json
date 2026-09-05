@@ -8,8 +8,32 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel ragoût du temps des fêtes se sert avec des boulettes, dans une sauce épaissie à la farine grillée ?",
-      "reponse": "Le ragoût de pattes",
+      "question": "Quel liquide jaune sert à faire cuire dans la poêle ?",
+      "reponse": "L'huile",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel lait fouetté avec crème glacée est un dessert à boire ?",
+      "reponse": "Le lait frappé",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume blanc en bouquets ressemble à un brocoli pâle ?",
+      "reponse": "Le chou-fleur",
+      "niveau": 2
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "De quelle fève fait-on le chocolat ?",
+      "reponse": "Le cacao",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson chaude est faite de grains torréfiés ?",
+      "reponse": "Le café",
       "niveau": 1,
       "ages": [
         "ados",
@@ -19,104 +43,8 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle soupe japonaise est à base de pâte de soja ?",
-      "reponse": "La soupe miso",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle racine piquante parfume les biscuits de Noël ?",
-      "reponse": "Le gingembre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel vinaigre noir italien vient de Modène ?",
-      "reponse": "Le balsamique",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel nom porte le jalapeño fumé ?",
-      "reponse": "Chipotle",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume rouge, jaune ou vert se coupe en lanières croquantes ?",
-      "reponse": "Le poivron",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
-      "reponse": "Le club sandwich",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la fondue au fromage ?",
-      "reponse": "La Suisse",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quel fruit fait-on le vin ?",
-      "reponse": "Le raisin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle entrée italienne est du pain grillé garni ?",
-      "reponse": "La bruschetta",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume à chapeau pousse dans le noir et se met sur la pizza ?",
-      "reponse": "Le champignon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quels trois étages composent le pâté chinois ?",
-      "reponse": "Bœuf maïs patates",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle céréale est la base de l'alimentation en Asie ?",
-      "reponse": "Le riz",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle tartelette portugaise est à la crème ?",
-      "reponse": "Pastel de nata",
+      "question": "Quelle infusion sud-africaine est naturellement rouge ?",
+      "reponse": "Le rooibos",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -125,36 +53,21 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat argentin grille des viandes au feu de bois ?",
-      "reponse": "L'asado",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle saucisse chaude se glisse dans un pain allongé ?",
-      "reponse": "Le hot-dog",
+      "question": "Quelle plante aromatique garnit le mojito ?",
+      "reponse": "La menthe",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel condiment rouge accompagne les frites et le pâté chinois ?",
-      "reponse": "Le ketchup",
+      "question": "Quel sirop noir parfume les galettes québécoises ?",
+      "reponse": "La mélasse",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert italien contient du café et du mascarpone ?",
-      "reponse": "Le tiramisu",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "De quel pays viennent les tacos ?",
+      "reponse": "Le Mexique",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -170,8 +83,8 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle laitue compose la salade César ?",
-      "reponse": "La romaine",
+      "question": "Quel plat suisse racle du fromage fondu ?",
+      "reponse": "La raclette",
       "niveau": 1,
       "ages": [
         "ados",
@@ -181,8 +94,77 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat français gratine bœuf haché et purée ?",
-      "reponse": "Hachis Parmentier",
+      "question": "Quel café italien très court se boit d'un trait ?",
+      "reponse": "L'espresso",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte farcie italienne forme des coussins ?",
+      "reponse": "Les raviolis",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle tranche de pain grillée se beurre le matin ?",
+      "reponse": "Une rôtie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume rouge, jaune ou vert se coupe en lanières croquantes ?",
+      "reponse": "Le poivron",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat anglais sert du poisson frit avec des frites ?",
+      "reponse": "Fish and chips",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle confiserie d'érable se roule sur la neige ?",
+      "reponse": "La tire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel champignon de luxe est déterré par des chiens ?",
+      "reponse": "La truffe",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel jus boit-on le plus souvent au déjeuner ?",
+      "reponse": "Le jus d'orange",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Pays d'origine du parmesan ?",
+      "reponse": "L'Italie",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat espagnol froid est une soupe de tomates ?",
+      "reponse": "Le gaspacho",
       "niveau": 2,
       "ages": [
         "ados",
@@ -192,14 +174,9 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelles petites portions espagnoles se partagent ?",
-      "reponse": "Les tapas",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel petit légume vert et rond roule dans l'assiette ?",
+      "reponse": "Le petit pois",
+      "niveau": 1
     }
   ]
 }

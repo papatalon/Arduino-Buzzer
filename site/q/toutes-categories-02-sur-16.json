@@ -7,117 +7,49 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur incarne Iron Man au cinéma ?",
-      "reponse": "Robert Downey Jr",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel compositeur baroque a écrit les Concertos brandebourgeois ?",
-      "reponse": "Bach",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Sciences et nature",
       "question": "Quel pigment rend les plantes vertes ?",
       "reponse": "La chlorophylle",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quel Beatle gaucher jouait de la basse ?",
-      "reponse": "Paul McCartney",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de motoneige est née au Québec ?",
-      "reponse": "Ski-Doo",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Mots et langue",
-      "question": "Contraire de rapide ?",
-      "reponse": "Lent",
+      "question": "Quel palindrome désigne une détection par ondes ?",
+      "reponse": "Radar",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
-      "reponse": "Georges St-Pierre",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les humains qui vivaient dans des grottes ?",
+      "reponse": "Les hommes des cavernes",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel pain sucré en anneau se glace et se saupoudre ?",
-      "reponse": "Le beigne",
+      "question": "Quelle épice noire moulue accompagne le sel sur la table ?",
+      "reponse": "Le poivre",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle le passage de liquide à gaz ?",
-      "reponse": "L'évaporation",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quelle émission de cuisine québécoise oppose des candidats devant un jury de chefs ?",
+      "reponse": "Les Chefs",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète a été rétrogradée en planète naine ?",
-      "reponse": "Pluton",
+      "categorie": "Sports",
+      "question": "Quel sport olympique descend un couloir de glace sur le dos ?",
+      "reponse": "La luge",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Comment dit-on « merci » en espagnol ?",
-      "reponse": "Gracias",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Combien de demi-tons dans une octave ?",
-      "reponse": "Douze",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays est surnommé la botte de l'Europe ?",
-      "reponse": "L'Italie",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le lionceau du Roi Lion ?",
-      "reponse": "Simba",
+      "question": "Que signifie les carottes sont cuites ?",
+      "reponse": "C'est fini",
       "niveau": 1
     },
     {
@@ -127,21 +59,60 @@
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel village d'attractions de Québec devient un parc aquatique l'été ?",
-      "reponse": "Valcartier",
-      "niveau": 2
+      "categorie": "Musique",
+      "question": "Quelle note vient juste après le do ?",
+      "reponse": "Le ré",
+      "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quelles chaussures à roulettes se lacent aux pieds pour rouler sur l'asphalte ?",
-      "reponse": "Des patins à roues alignées",
-      "niveau": 2
+      "categorie": "Cinéma et télé",
+      "question": "Quel héros court plus vite que tout le monde en rouge ?",
+      "reponse": "Flash",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel oiseau noir et blanc de l'Antarctique ne sait pas voler ?",
+      "reponse": "Le manchot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel gros livre illustré arrivait par la poste et faisait rêver avant Noël ?",
+      "reponse": "Le catalogue",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'école qui suit le primaire, pendant cinq ans ?",
+      "reponse": "Le secondaire",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel fleuve traverse l'Allemagne et se jette à Rotterdam ?",
-      "reponse": "Le Rhin",
+      "question": "Quelle rivière célèbre coule à Ottawa ?",
+      "reponse": "L'Outaouais",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Chez quel animal le mâle porte-t-il les bébés ?",
+      "reponse": "L'hippocampe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport canadien se joue sur la glace en espadrilles, sans patins ?",
+      "reponse": "Le ballon-balai",
       "niveau": 2,
       "ages": [
         "ados",
@@ -150,10 +121,37 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume fait pleurer quand on le coupe ?",
-      "reponse": "L'oignon",
+      "categorie": "Sports",
+      "question": "Combien de joueurs par équipe au baseball ?",
+      "reponse": "Neuf",
       "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Dans quel contenant rond et creux verse-t-on les céréales ?",
+      "reponse": "Le bol",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel dictateur dirigeait l'Allemagne nazie ?",
+      "reponse": "Hitler",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur québécois a chanté Lindberg avec Louise Forestier ?",
+      "reponse": "Robert Charlebois",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -162,44 +160,39 @@
       "niveau": 1
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle suite de Nemo suit la mémoire de Dory ?",
+      "reponse": "Trouver Doris",
+      "niveau": 1
+    },
+    {
       "categorie": "Québec",
-      "question": "Quel liquide met-on dans le réservoir de l'auto à la station-service ?",
-      "reponse": "L'essence",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le match qui décide du championnat ?",
-      "reponse": "La finale",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel site de vidéos a été lancé en 2005 et racheté par Google un an plus tard ?",
-      "reponse": "YouTube",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit ours de dessin animé porte un chandail et un prénom de couleur ?",
-      "reponse": "Petit Ours Brun",
-      "niveau": 2,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a fondé Ville-Marie en 1642 ?",
-      "reponse": "Maisonneuve",
+      "question": "Quel explorateur a hiverné à Stadaconé en 1535 ?",
+      "reponse": "Jacques Cartier",
       "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Monnaie utilisée en Suisse ?",
+      "reponse": "Le franc suisse",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur country était surnommé l'Homme en noir ?",
+      "reponse": "Johnny Cash",
+      "niveau": 2,
+      "ages": [
         "adultes",
         "aines"
       ]

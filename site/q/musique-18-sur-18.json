@@ -8,49 +8,72 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on le musicien assis derrière ses caisses et ses cymbales ?",
-      "reponse": "Un batteur",
+      "question": "Comment appelle-t-on la version d'une chanson enregistrée par quelqu'un d'autre que l'original ?",
+      "reponse": "Une reprise",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel chanteur portoricain a chanté Despacito ?",
-      "reponse": "Luis Fonsi",
+      "question": "Combien de temps dure une ronde ?",
+      "reponse": "Quatre temps",
       "niveau": 2,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on le son qui revient quand on crie dans une vallée ?",
-      "reponse": "Un écho",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a gagné Eurovision pour la Suisse en 1988 ?",
-      "reponse": "Céline Dion",
-      "niveau": 2,
-      "ages": [
-        "enfants",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument à lamelles de bois frappe-t-on avec des maillets ?",
-      "reponse": "Le xylophone",
+      "question": "Comment appelle-t-on la grande toile de tissu qui s'ouvre au début d'un spectacle ?",
+      "reponse": "Le rideau",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel chant de Noël célèbre un arbre dont le feuillage reste vert tout l'hiver ?",
-      "reponse": "Mon beau sapin",
+      "question": "Quel groupe canadien a chanté American Woman ?",
+      "reponse": "The Guess Who",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à vent se joue en soufflant dans une anche double, au son nasillard ?",
+      "reponse": "Le hautbois",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui écrit la musique d'une chanson ?",
+      "reponse": "Le compositeur",
       "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel album de Michael Jackson est le plus vendu ?",
+      "reponse": "Thriller",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel genre musical latino fait danser sur un rythme venu de Porto Rico ?",
+      "reponse": "Le reggaeton",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Musique",
@@ -63,74 +86,29 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la musique jouée au début d'une émission de télé ?",
-      "reponse": "Le générique",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse est surnommée Queen B ?",
-      "reponse": "Beyoncé",
+      "question": "Quelle chanteuse de la Barbade a chanté Umbrella ?",
+      "reponse": "Rihanna",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel petit instrument à vent se souffle avec la bouche dans le blues et le folk ?",
-      "reponse": "L'harmonica",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style musical est né à la Nouvelle-Orléans ?",
-      "reponse": "Le jazz",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe américain a chanté Believer et Radioactive ?",
-      "reponse": "Imagine Dragons",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel objet à ressort le professeur de musique frappe-t-il pour donner le la ?",
-      "reponse": "Un diapason",
+      "question": "Comment appelle-t-on la personne qui installe les micros avant un concert ?",
+      "reponse": "Un technicien de son",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle jeune chanteuse a chanté Bad Guy ?",
-      "reponse": "Billie Eilish",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument de bois à trous se joue en travers des lèvres ?",
-      "reponse": "La flûte traversière",
-      "niveau": 3
+      "question": "Quel style de musique se joue fort avec guitares électriques et batterie ?",
+      "reponse": "Le rock",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
@@ -145,8 +123,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel ballet de Tchaïkovski met en scène une princesse changée en oiseau blanc ?",
-      "reponse": "Le Lac des cygnes",
+      "question": "Qui est surnommé le roi de la pop ?",
+      "reponse": "Michael Jackson",
       "niveau": 1,
       "ages": [
         "ados",
@@ -156,8 +134,14 @@
     },
     {
       "categorie": "Musique",
-      "question": "Combien de cordes a un violoncelle ?",
-      "reponse": "Quatre",
+      "question": "Quelle comptine demande si le loup y est pendant qu'il s'habille ?",
+      "reponse": "Promenons-nous dans les bois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel xylophone africain a des calebasses ?",
+      "reponse": "Le balafon",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -166,47 +150,65 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse a chanté Bad Romance ?",
-      "reponse": "Lady Gaga",
+      "question": "Quelle chanteuse est surnommée la Reine de la soul ?",
+      "reponse": "Aretha Franklin",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle danse argentine se danse joue contre joue avec une rose ?",
-      "reponse": "Le tango",
-      "niveau": 3
+      "question": "Quel groupe de Seattle a popularisé le grunge ?",
+      "reponse": "Nirvana",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui dirige une chorale ?",
-      "reponse": "Un chef de chœur",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument espagnol se claque entre les doigts pendant le flamenco ?",
-      "reponse": "Les castagnettes",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle pédale déforme le son de la guitare pour le rendre saturé ?",
-      "reponse": "La distorsion",
+      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
+      "reponse": "Nézet-Séguin",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument principal joue un batteur ?",
-      "reponse": "La batterie",
+      "question": "Quel petit instrument à vent se souffle avec la bouche dans le blues et le folk ?",
+      "reponse": "L'harmonica",
       "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à soufflet accompagne le tango ?",
+      "reponse": "Le bandonéon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument a 47 cordes et se joue assis ?",
+      "reponse": "La harpe",
+      "niveau": 2
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse acadienne a gagné le Félix de la chanson de l'année avec Évangéline ?",
+      "reponse": "Annie Blanchard",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

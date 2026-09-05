@@ -7,29 +7,15 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la balle de golf entrée dans la coupe dès le départ ?",
-      "reponse": "Un trou d'un coup",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
+      "reponse": "L'hémisphère nord",
+      "niveau": 3
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?",
-      "reponse": "La lessiveuse à tordeur",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel parc national québécois porte le nom d'un explorateur, au nord de Québec ?",
-      "reponse": "Le parc de la Jacques-Cartier",
+      "question": "Quel manga suit Luffy et son équipage de pirates ?",
+      "reponse": "One Piece",
       "niveau": 3,
       "ages": [
         "ados",
@@ -37,9 +23,25 @@
       ]
     },
     {
+      "categorie": "Musique",
+      "question": "Quel instrument espagnol se claque entre les doigts pendant le flamenco ?",
+      "reponse": "Les castagnettes",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Combien de régions administratives compte le Québec ?",
+      "reponse": "17",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?",
-      "reponse": "La capitale du royaume",
+      "question": "Qui a atteint le pôle Sud en premier ?",
+      "reponse": "Amundsen",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -48,10 +50,27 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel désert chilien est le plus aride du monde ?",
-      "reponse": "L'Atacama",
+      "question": "Quelle mer sépare la péninsule coréenne de l'archipel nippon ?",
+      "reponse": "La mer du Japon",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a la forme d'une longue bande le long de l'océan Pacifique ?",
+      "reponse": "Le Chili",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle pédale du piano prolonge les notes après qu'on a levé les doigts ?",
+      "reponse": "La pédale forte",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -69,18 +88,64 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu fait deviner des mots à son équipe en trois manches, de plus en plus serrées ?",
-      "reponse": "Le Time's Up",
+      "question": "Quel petit âne de dessin animé français est très curieux ?",
+      "reponse": "Trotro",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "En quelle année le métro de Montréal a-t-il ouvert ?",
+      "reponse": "1966",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de lunes possède Mars ?",
-      "reponse": "Deux",
+      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
+      "reponse": "La Grande Ourse",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que porte un astronaute pour survivre dans l'espace ?",
+      "reponse": "Un scaphandre",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle compagnie de fourrures rivalisait avec la Baie d'Hudson ?",
+      "reponse": "Nord-Ouest",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel appareil envoyait des messages en points et en traits sur des fils ?",
+      "reponse": "Le télégraphe",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel grand magasin canadien publiait un catalogue attendu chaque année ?",
+      "reponse": "Eaton",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on celui qui mène les danses traditionnelles à l'archet ?",
+      "reponse": "Un violoneux",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -89,34 +154,33 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on les chaussons rigides qui permettent de danser sur le bout des orteils ?",
-      "reponse": "Des pointes",
+      "question": "Quel tambour métallique vient de Trinité ?",
+      "reponse": "Le steel drum",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel genre de musique douce et répétitive sert de fond sonore pour étudier ?",
+      "reponse": "Le lo-fi",
+      "niveau": 3,
+      "ages": [
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
+      "reponse": "Une diligence",
       "niveau": 3
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert meringué porte le nom d'une ballerine ?",
-      "reponse": "La pavlova",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?",
-      "reponse": "Le sextant",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse acadienne a gagné le Félix de la chanson de l'année avec Évangéline ?",
-      "reponse": "Annie Blanchard",
+      "question": "Quelle boisson brésilienne mélange lime et cachaça ?",
+      "reponse": "La caipirinha",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -125,55 +189,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel défi a fait verser des seaux d'eau glacée sur des têtes en 2014 ?",
-      "reponse": "Le Ice Bucket Challenge",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe américain a chanté Mr. Brightside ?",
-      "reponse": "The Killers",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel lac est le plus profond du monde ?",
-      "reponse": "Le Baïkal",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
-      "reponse": "L'épinette",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel musicien voyageur chantait des poèmes de château en château ?",
-      "reponse": "Un troubadour",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quels canots géants transportaient les fourrures ?",
-      "reponse": "Canots de maître",
+      "question": "Quel quotidien québécois porte le nom d'une obligation morale ?",
+      "reponse": "Le Devoir",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -182,8 +199,17 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
-      "reponse": "Le Forum",
+      "question": "Quelle case horaire de Radio-Canada présentait des grands spectacles le dimanche ?",
+      "reponse": "Les Beaux Dimanches",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de billes rouges au snooker ?",
+      "reponse": "Quinze",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -191,59 +217,12 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Qui a traversé l'Atlantique en avion solo en 1927 ?",
-      "reponse": "Lindbergh",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel poète québécois a écrit L'homme rapaillé ?",
-      "reponse": "Gaston Miron",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Daft Punk répète qu'on est plus fort, meilleur et plus rapide ?",
-      "reponse": "Harder, Better, Faster, Stronger",
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
+      "reponse": "Un divulgâcheur",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a raflé les Junos avec l'album Phoenix ?",
-      "reponse": "Charlotte Cardin",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?",
-      "reponse": "Le yéyé",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu électronique rond répète une suite de couleurs et de sons à imiter ?",
-      "reponse": "Le Simon",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]

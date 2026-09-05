@@ -8,39 +8,15 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel sport de glisse se pratique sur une piste avec des bâtons dans les mains ?",
-      "reponse": "Le ski alpin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la passe qui mène directement à un but ?",
-      "reponse": "Une passe décisive",
+      "question": "Comment appelle-t-on le coup qui renverse toutes les quilles d'un seul lancer ?",
+      "reponse": "Un abat",
       "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quel est le sport national d'hiver du Canada ?",
-      "reponse": "Le hockey",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de roues a une planche à roulettes ?",
-      "reponse": "Quatre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel objet se passent les coureurs de relais ?",
-      "reponse": "Le témoin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec un ballon rond qu'on frappe du pied dans un but ?",
-      "reponse": "Le soccer",
-      "niveau": 1
+      "question": "Quel sport d'équipe se joue avec un bâton à filet au bout et une petite balle dure ?",
+      "reponse": "La crosse",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -55,9 +31,111 @@
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la saison qui suit la saison régulière au hockey ?",
-      "reponse": "Les séries éliminatoires",
-      "niveau": 2
+      "question": "Quel pays a inventé le judo ?",
+      "reponse": "Le Japon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de points vaut la bille noire au snooker ?",
+      "reponse": "Sept",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel officiel siffle les punitions ?",
+      "reponse": "L'arbitre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel golfeur canadien a gagné le Masters en 2003 ?",
+      "reponse": "Mike Weir",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de cour d'école saute sur des cases numérotées dessinées à la craie ?",
+      "reponse": "La marelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée récompense le joueur le plus utile de la LNH ?",
+      "reponse": "Hart",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de styles de nage existe-t-il en compétition ?",
+      "reponse": "Quatre",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel est le sport national d'hiver du Canada ?",
+      "reponse": "Le hockey",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel objet l'arbitre souffle-t-il pour arrêter le jeu ?",
+      "reponse": "Un sifflet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Sur quelle estrade à trois marches montent les médaillés ?",
+      "reponse": "Le podium",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée les équipes de la Ligue nationale se disputent-elles au printemps ?",
+      "reponse": "La coupe Stanley",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le trait blanc où les coureurs s'alignent avant le coup de pistolet ?",
+      "reponse": "La ligne de départ",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel style de nage porte le nom d'un insecte ?",
+      "reponse": "Le papillon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de cour d'école consiste à courir après les autres pour les toucher ?",
+      "reponse": "La tag",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel objet frappe-t-on au hockey ?",
+      "reponse": "La rondelle",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -72,72 +150,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel jeu de cour d'école fait sauter par-dessus une corde qui tourne ?",
-      "reponse": "La corde à danser",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
-      "reponse": "Le kitesurf",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle est la nage la plus rapide ?",
-      "reponse": "Le crawl",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la faute du joueur de soccer parti trop tôt derrière la défense ?",
-      "reponse": "Le hors-jeu",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel stade accueillait les Expos ?",
-      "reponse": "Stade olympique",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport d'hiver glisse une pierre vers une cible en balayant la glace ?",
-      "reponse": "Le curling",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel art martial signifie voie de la souplesse ?",
-      "reponse": "Le judo",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au water-polo ?",
-      "reponse": "Sept",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment nomme-t-on un circuit avec les buts remplis ?",
-      "reponse": "Grand chelem",
+      "question": "Quel sport pratiquait Serena Williams ?",
+      "reponse": "Le tennis",
       "niveau": 1,
       "ages": [
         "ados",
@@ -147,43 +161,25 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelles chaussures à roulettes se lacent aux pieds pour rouler sur l'asphalte ?",
-      "reponse": "Des patins à roues alignées",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de cirque marche sur un fil tendu en hauteur ?",
-      "reponse": "Le funambulisme",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport combine ski de fond et tir ?",
-      "reponse": "Le biathlon",
+      "question": "Quel boxeur se surnommait The Greatest ?",
+      "reponse": "Muhammad Ali",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport de gymnase grimpe des murs à prises ?",
-      "reponse": "L'escalade",
-      "niveau": 1
+      "question": "Comment appelle-t-on le premier match de la saison ?",
+      "reponse": "Le match d'ouverture",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on les barrières que les coureurs doivent sauter sur la piste ?",
-      "reponse": "Des haies",
-      "niveau": 2
+      "question": "Quel sport se joue avec un ballon qu'on frappe des mains par-dessus un filet ?",
+      "reponse": "Le volleyball",
+      "niveau": 1
     }
   ]
 }

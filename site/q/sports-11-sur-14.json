@@ -8,8 +8,82 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel objet lourd lance-t-on en le faisant tournoyer ?",
-      "reponse": "Le marteau",
+      "question": "Quel sport descend des rivières en radeau pneumatique ?",
+      "reponse": "Le rafting",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport olympique mélange danse et piscine ?",
+      "reponse": "Natation artistique",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu de table imite le soccer avec des joueurs fixés sur des tiges ?",
+      "reponse": "Le babyfoot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la passe qui mène directement à un but ?",
+      "reponse": "Une passe décisive",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
+      "reponse": "Gary Carter",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle épreuve d'athlétisme fait franchir une barre très haute à l'aide d'une longue tige souple ?",
+      "reponse": "Le saut à la perche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelles larges semelles permettent de marcher sur la neige sans caler ?",
+      "reponse": "Des raquettes",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue sur une table avec une petite balle et deux palettes ?",
+      "reponse": "Le ping-pong",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la personne qui dirige une équipe depuis le banc ?",
+      "reponse": "L'entraîneur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel poste lance le ballon au football ?",
+      "reponse": "Le quart-arrière",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle épreuve féminine combine sept disciplines ?",
+      "reponse": "L'heptathlon",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,32 +93,58 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel joueur de soccer est surnommé CR7 ?",
-      "reponse": "Cristiano Ronaldo",
+      "question": "Combien de tournois composent le grand chelem de tennis ?",
+      "reponse": "Quatre",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Combien de quilles dans un jeu de bowling ?",
-      "reponse": "Dix",
+      "question": "Quelle activité se pratique avec une canne et un hameçon ?",
+      "reponse": "La pêche",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel jeu de gymnase oppose deux équipes qui se lancent des ballons pour éliminer les autres ?",
-      "reponse": "Le ballon chasseur",
-      "niveau": 1
+      "question": "Comment appelle-t-on les barrières que les coureurs doivent sauter sur la piste ?",
+      "reponse": "Des haies",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
-      "reponse": "Un sauveteur",
-      "niveau": 1
+      "question": "Quel lanceur québécois a gagné un Cy Young ?",
+      "reponse": "Éric Gagné",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport combine ski de fond et tir ?",
+      "reponse": "Le biathlon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel tournoi de tennis se joue sur terre battue à Paris ?",
+      "reponse": "Roland-Garros",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -59,59 +159,30 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel est le sport national d'été du Canada ?",
-      "reponse": "La crosse",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quoi le joueur transporte-t-il ses bâtons d'un trou à l'autre ?",
-      "reponse": "Le sac de golf",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au basketball ?",
-      "reponse": "Cinq",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
       "question": "Comment appelle-t-on chacune des bandes tracées sur une piste d'athlétisme ?",
       "reponse": "Un couloir",
       "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "De quelle couleur est la veste du champion du Masters ?",
-      "reponse": "Verte",
+      "question": "Quel objet se passent les coureurs de relais ?",
+      "reponse": "Le témoin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel pilote allemand a aussi gagné 7 titres de F1 ?",
+      "reponse": "Michael Schumacher",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle course cycliste est la plus célèbre au monde ?",
-      "reponse": "Le Tour de France",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur de tennis canadien a atteint la finale de Wimbledon ?",
-      "reponse": "Milos Raonic",
+      "question": "Quel joueur français a marqué trois buts en finale de la Coupe du monde 2022 ?",
+      "reponse": "Mbappé",
       "niveau": 2,
       "ages": [
         "ados",
@@ -120,82 +191,9 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
-      "reponse": "Le surf",
+      "question": "Quel sport fait rouler une planche sur des rampes dans un parc ?",
+      "reponse": "La planche à roulettes",
       "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on l'ensemble des équipes qui s'affrontent toute une saison ?",
-      "reponse": "Une ligue",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de montagne grimpe des parois gelées à crampons ?",
-      "reponse": "L'alpinisme",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au rugby à XV ?",
-      "reponse": "Quinze",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel gardien québécois a popularisé le style papillon ?",
-      "reponse": "Patrick Roy",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport court dans les bois avec une carte et une boussole ?",
-      "reponse": "La course d'orientation",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le coup de pied accordé devant le filet après une faute au soccer ?",
-      "reponse": "Un tir de pénalité",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu de cour d'école saute sur des cases numérotées dessinées à la craie ?",
-      "reponse": "La marelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de quarts compte un match de la NBA ?",
-      "reponse": "Quatre",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme lance une boule de métal le plus loin possible ?",
-      "reponse": "Le lancer du poids",
-      "niveau": 2
     }
   ]
 }

@@ -8,85 +8,14 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "De quoi est fait le fromage ?",
-      "reponse": "Du lait",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel agrume vert et acide parfume la limonade ?",
-      "reponse": "La lime",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel appareil garde la crème glacée bien dure ?",
-      "reponse": "Le congélateur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel repas se glisse entre deux tranches de pain pour la boîte à lunch ?",
-      "reponse": "Un sandwich",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume en longues tiges vertes croque avec du beurre d'arachide ?",
-      "reponse": "Le céleri",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage italien râpe les pâtes ?",
-      "reponse": "Le parmesan",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel accompagnement de Noël est une purée blanche ?",
-      "reponse": "Patates pilées",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle chaîne canadienne vend du café, des beignes et des Timbits ?",
-      "reponse": "Tim Hortons",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle célèbre soupe française est gratinée ?",
-      "reponse": "Soupe à l'oignon",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
       "question": "Quel fruit orange se sculpte à l'Halloween ?",
       "reponse": "La citrouille",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
-      "reponse": "La poutine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel beurre de noix est interdit dans les écoles ?",
-      "reponse": "Beurre d'arachide",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel café italien très court se boit d'un trait ?",
-      "reponse": "L'espresso",
+      "question": "Quel clou parfume le jambon de Noël ?",
+      "reponse": "Clou de girofle",
       "niveau": 1,
       "ages": [
         "ados",
@@ -96,44 +25,14 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Sur quoi dépose-t-on son repas à table ?",
-      "reponse": "Une assiette",
+      "question": "Quelle collation salée et croquante a la forme d'un nœud ?",
+      "reponse": "Le bretzel",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelles galettes du déjeuner arrose-t-on de sirop d'érable ?",
-      "reponse": "Les crêpes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat québécois superpose patates pilées, blé d'Inde et viande hachée ?",
-      "reponse": "Le pâté chinois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel pain plus foncé garde l'enveloppe et le germe du grain ?",
-      "reponse": "Le pain de blé entier",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit rouge à noyau couronne un sundae ?",
-      "reponse": "La cerise",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine de la pizza ?",
-      "reponse": "L'Italie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume violet et allongé gratine la moussaka ?",
-      "reponse": "L'aubergine",
+      "question": "Quel plat indien s'appelle butter chicken en anglais ?",
+      "reponse": "Poulet au beurre",
       "niveau": 1,
       "ages": [
         "ados",
@@ -143,8 +42,37 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat japonais est une brochette de poulet grillée ?",
-      "reponse": "Le yakitori",
+      "question": "Quel pain français long et croustillant est emblématique ?",
+      "reponse": "La baguette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit rouge pousse dans les tourbières ?",
+      "reponse": "La canneberge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ustensile creux sert à manger la soupe ?",
+      "reponse": "La cuillère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel animal est Tony, la mascotte des céréales Frosted Flakes ?",
+      "reponse": "Un tigre",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel poisson salé est le plat national du Portugal ?",
+      "reponse": "La morue",
       "niveau": 2,
       "ages": [
         "ados",
@@ -154,26 +82,107 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle fête québécoise célèbre le blé d'Inde ?",
-      "reponse": "L'épluchette",
+      "question": "Quelle céréale maltée est la base de la bière ?",
+      "reponse": "L'orge",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume fait pleurer quand on le coupe ?",
+      "reponse": "L'oignon",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Comment appelle-t-on la partie dure et dorée qui entoure la mie du pain ?",
-      "reponse": "La croûte",
+      "question": "Quel fruit rouge garnit le shortcake ?",
+      "reponse": "La fraise",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Pays d'origine du parmesan ?",
-      "reponse": "L'Italie",
+      "question": "Comment appelle-t-on la couche sucrée et colorée qui recouvre un gâteau ?",
+      "reponse": "Le glaçage",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel récipient plat sert à faire revenir les œufs ?",
+      "reponse": "Une poêle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Où pêche-t-on la célèbre crevette nordique québécoise ?",
+      "reponse": "À Matane",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume jaune se mange en épi, au beurre et au sel ?",
+      "reponse": "Le maïs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce blanche accompagne le sandwich shawarma ?",
+      "reponse": "Sauce à l'ail",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la boîte où l'on met son repas pour l'école ?",
+      "reponse": "La boîte à lunch",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat péruvien est du poisson cru mariné ?",
+      "reponse": "Le ceviche",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle boisson gazeuse au gingembre est célèbre au Canada ?",
+      "reponse": "Le ginger ale (Canada Dry)",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle écorce parfume les brioches roulées ?",
+      "reponse": "La cannelle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce sucrée et brune coule sur les crêpes du Québec ?",
+      "reponse": "Le sirop d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas se mange dehors, assis sur une couverture ?",
+      "reponse": "Un pique-nique",
+      "niveau": 1
     }
   ]
 }

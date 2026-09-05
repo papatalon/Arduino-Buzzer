@@ -7,20 +7,46 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on une œuvre écrite pour un soliste accompagné d'un orchestre ?",
-      "reponse": "Un concerto",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat brésilien est un ragoût de haricots noirs ?",
+      "reponse": "La feijoada",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle autoroute mène de Montréal vers les Laurentides ?",
+      "reponse": "La 15",
       "niveau": 3,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année le Canada a-t-il adopté son drapeau actuel ?",
+      "reponse": "1965",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quelle course de traîneaux à chiens traverse l'Alaska ?",
-      "reponse": "L'Iditarod",
+      "question": "Quel sport court dans les bois avec une carte et une boussole ?",
+      "reponse": "La course d'orientation",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel premier ministre canadien a dirigé pendant la Seconde Guerre ?",
+      "reponse": "Mackenzie King",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -29,34 +55,50 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
-      "reponse": "Mariana Mazza",
+      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
+      "reponse": "Les Denis Drolet",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel bonbon acidulé se vend en poudre avec un petit bâton à tremper ?",
+      "reponse": "Le Fun Dip",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on plusieurs notes jouées en même temps ?",
+      "reponse": "Un accord",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
-      "reponse": "L'hémisphère nord",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles cigarettes de bonbon blanches portaient le nom d'un marin costaud ?",
-      "reponse": "Les Popeye",
+      "question": "Quelle ville du Québec accueille chaque été le Festival de la poutine ?",
+      "reponse": "Drummondville",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Sur quelle île Napoléon est-il mort ?",
-      "reponse": "Sainte-Hélène",
+      "question": "Quelle infirmière célèbre soignait pendant la guerre de Crimée ?",
+      "reponse": "Florence Nightingale",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -64,9 +106,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'écran qui affiche les paroles pendant un karaoké ?",
-      "reponse": "Le téléprompteur",
+      "categorie": "Québec",
+      "question": "Quelle bibliothèque nationale ouverte en 2005 se dresse près de Berri-UQAM ?",
+      "reponse": "La Grande Bibliothèque",
       "niveau": 3,
       "ages": [
         "ados",
@@ -74,9 +116,53 @@
       ]
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quel tapis à longs poils habillait les salons des années 70 ?",
+      "reponse": "Le shag",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelles percussions cubaines se jouent par paire à main nue ?",
+      "reponse": "Les congas",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel rouleau de riz translucide se trempe dans une sauce aux arachides ?",
+      "reponse": "Le rouleau de printemps",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série de HBO suit une famille qui se déchire pour un empire médiatique ?",
+      "reponse": "Succession",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
       "categorie": "Histoire",
-      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
-      "reponse": "Un missionnaire",
+      "question": "En quelle année les Canadiennes ont-elles voté au fédéral ?",
+      "reponse": "1918",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la partie creuse de la guitare qui fait résonner le son ?",
+      "reponse": "La caisse",
       "niveau": 3,
       "ages": [
         "ados",
@@ -85,39 +171,34 @@
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Quelle équipe de hockey junior de Québec a été dirigée par Patrick Roy ?",
+      "reponse": "Les Remparts",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
+      "reponse": "Le maelstrom",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Musique",
-      "question": "Quel piano à pouces africain vibre sous les doigts ?",
-      "reponse": "La kalimba",
+      "question": "Quelle chanteuse québécoise a raflé les Junos avec l'album Phoenix ?",
+      "reponse": "Charlotte Cardin",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
-      "reponse": "Coup de Pouce",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel savant français a montré que les microbes causent les maladies ?",
-      "reponse": "Pasteur",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
-      "reponse": "La guignolée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
+        "ados",
+        "adultes"
       ]
     },
     {
@@ -130,59 +211,9 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Qui fut la première femme dans l'espace ?",
-      "reponse": "Valentina Terechkova",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
-      "reponse": "L'escalier Casse-Cou",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Quel guitariste de Queen a un doctorat en astrophysique ?",
-      "reponse": "Brian May",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sirop doré anglais vient de la canne ?",
-      "reponse": "Golden syrup",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelles sondes jumelles ont été lancées en 1977 ?",
-      "reponse": "Voyager",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on l'aide financière que l'État avance aux étudiants ?",
-      "reponse": "Les prêts et bourses",
+      "question": "Quel concours de chant européen réunit les pays chaque printemps ?",
+      "reponse": "L'Eurovision",
       "niveau": 3,
       "ages": [
         "ados",
@@ -191,8 +222,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel petit boîtier rond de poche contient une maison miniature ?",
-      "reponse": "Le Polly Pocket",
+      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
+      "reponse": "Grand Theft Auto",
       "niveau": 3,
       "ages": [
         "ados",
@@ -200,37 +231,9 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel pays d'Europe a la forme d'une main et borde la mer Baltique ?",
-      "reponse": "La Pologne",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson Blanche-Neige chante-t-elle près du puits en attendant l'amour ?",
-      "reponse": "Un jour mon prince viendra",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la carte qui montre le relief avec des couleurs et des courbes ?",
-      "reponse": "Une carte topographique",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle est la fleur emblème du Québec ?",
-      "reponse": "Iris versicolore",
+      "categorie": "Histoire",
+      "question": "Quel peuple antique a inventé l'écriture cunéiforme ?",
+      "reponse": "Les Sumériens",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -239,11 +242,12 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel petit âne de dessin animé français est très curieux ?",
-      "reponse": "Trotro",
+      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
+      "reponse": "Big Brother Célébrités",
       "niveau": 3,
       "ages": [
-        "enfants"
+        "ados",
+        "adultes"
       ]
     }
   ]

@@ -7,46 +7,64 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jeune partenaire aide Walter White ?",
-      "reponse": "Jesse Pinkman",
+      "categorie": "Sciences et nature",
+      "question": "Quel est l'os le plus long du corps humain ?",
+      "reponse": "Le fémur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle jeune fille a dansé avec le diable dans la légende ?",
+      "reponse": "Rose Latulippe",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel wookiee copilote le Faucon Millénium ?",
+      "reponse": "Chewbacca",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle gousse noire parfume la crème glacée ?",
+      "reponse": "La vanille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
+      "reponse": "La guignolée",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle plateforme les pirates faisaient-ils parcourir aux prisonniers au-dessus de l'eau ?",
-      "reponse": "La planche",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel rappeur américain a reçu un prix Pulitzer pour un album ?",
-      "reponse": "Kendrick Lamar",
-      "niveau": 3,
+      "question": "Quel capitaine anglais a cartographié le Pacifique ?",
+      "reponse": "James Cook",
+      "niveau": 2,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel club-école des Canadiens joue à Laval ?",
-      "reponse": "Le Rocket",
-      "niveau": 3,
+      "categorie": "Sciences et nature",
+      "question": "De quel métal est principalement fait l'acier ?",
+      "reponse": "Le fer",
+      "niveau": 1,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quel fruit fait-on le vin ?",
-      "reponse": "Le raisin",
-      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -55,15 +73,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel outil de bois et de fer les paysans utilisaient-ils pour retourner la terre ?",
-      "reponse": "La charrue",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel Beatle a chanté Imagine en solo ?",
-      "reponse": "John Lennon",
+      "categorie": "Sports",
+      "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
+      "reponse": "Gary Carter",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -72,31 +84,36 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel petit poisson pêche-t-on sous la glace à La Pérade ?",
-      "reponse": "Le poulamon",
-      "niveau": 2,
+      "question": "Combien de régions administratives compte le Québec ?",
+      "reponse": "17",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de pattes possède un insecte ?",
-      "reponse": "Six",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la température du corps humain en santé ?",
-      "reponse": "37 degrés C",
+      "question": "Quel animal roux au museau pointu passe pour rusé dans les fables ?",
+      "reponse": "Le renard",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Monnaie utilisée en Suisse ?",
-      "reponse": "Le franc suisse",
+      "question": "Comment appelle-t-on le grand bâtiment d'où décollent les avions ?",
+      "reponse": "Un aéroport",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie « avoir une mémoire d'éléphant » ?",
+      "reponse": "Avoir une très bonne mémoire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel désert froid couvre une partie de la Mongolie ?",
+      "reponse": "Le Gobi",
       "niveau": 2,
       "ages": [
         "ados",
@@ -106,8 +123,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel pilote québécois a donné son nom au circuit de Montréal ?",
-      "reponse": "Gilles Villeneuve",
+      "question": "Quel joueur de hockey est surnommé La Merveille ?",
+      "reponse": "Wayne Gretzky",
       "niveau": 1,
       "ages": [
         "ados",
@@ -117,20 +134,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays vivent les kangourous ?",
-      "reponse": "L'Australie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment dit-on « oui » en espagnol ?",
-      "reponse": "Sí",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville est surnommée la Ville éternelle ?",
-      "reponse": "Rome",
+      "question": "Quel détroit sépare la Russie de l'Alaska ?",
+      "reponse": "Bering",
       "niveau": 2,
       "ages": [
         "ados",
@@ -139,61 +144,41 @@
       ]
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
+      "reponse": "Cracké",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
       "categorie": "Cinéma et télé",
-      "question": "Quel méchant Marvel claque des doigts avec un gant ?",
-      "reponse": "Thanos",
+      "question": "Quel animal de ferme, très bavard, accompagne Shrek partout ?",
+      "reponse": "L'âne",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle forme donne-t-on au poisson pané pour les enfants ?",
-      "reponse": "Des bâtonnets",
+      "question": "Quels carrés croustillants se versent dans un bol avec du lait le matin ?",
+      "reponse": "Les céréales",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle marque allemande vend des oursons de gélatine dans le monde entier ?",
-      "reponse": "Haribo",
-      "niveau": 2,
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui règle le son pendant un spectacle ?",
+      "reponse": "Le sonorisateur",
+      "niveau": 3,
       "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Que transporte le relais avant les Jeux ?",
-      "reponse": "La flamme olympique",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
       "question": "Pluriel de travail ?",
       "reponse": "Travaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Dans quelle partie du corps loge l'os appelé enclume ?",
-      "reponse": "Dans l'oreille",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle ville canadienne a reçu les JO d'hiver de 2010 ?",
-      "reponse": "Vancouver",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne de sandwichs fait choisir son pain et ses garnitures au comptoir ?",
-      "reponse": "Subway",
       "niveau": 1
     },
     {
@@ -204,6 +189,38 @@
       "ages": [
         "enfants",
         "ados"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel intendant a développé la Nouvelle-France ?",
+      "reponse": "Jean Talon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel événement sportif américain a lieu un dimanche de février ?",
+      "reponse": "Le Super Bowl",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel Beatle a chanté Imagine en solo ?",
+      "reponse": "John Lennon",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     }
   ]

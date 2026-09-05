@@ -7,84 +7,86 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quel jeu de hasard fait cocher des cases en écoutant des numéros criés ?",
-      "reponse": "Le bingo",
+      "categorie": "Géographie",
+      "question": "Quelle baie géante borde le nord du Québec ?",
+      "reponse": "Baie d'Hudson",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment blanc, fait de lait, mange-t-on avec des fruits au déjeuner ?",
-      "reponse": "Le yogourt",
+      "categorie": "Culture générale",
+      "question": "Quel jeu consiste à placer les chiffres 1 à 9 ?",
+      "reponse": "Le sudoku",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quelles petites roues aident un enfant à apprendre le vélo ?",
-      "reponse": "Des roues d'entraînement",
+      "categorie": "Québec",
+      "question": "Quel congé tombe le lendemain de la Saint-Sylvestre ?",
+      "reponse": "Le jour de l'An",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on une petite chanson simple que les enfants apprennent par cœur ?",
+      "reponse": "Une comptine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle articulation plie le bras en son milieu ?",
+      "reponse": "Le coude",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Sur quel grand siège le roi s'assoit-il pour recevoir ses sujets ?",
-      "reponse": "Un trône",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie les carottes sont cuites ?",
-      "reponse": "C'est fini",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chiot dalmatien de la Pat' Patrouille est pompier ?",
-      "reponse": "Marcus",
-      "niveau": 1,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de pattes a un oiseau ?",
-      "reponse": "Deux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Que fait le public avec ses mains à la fin d'un spectacle ?",
-      "reponse": "Il applaudit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros court plus vite que tout le monde en rouge ?",
-      "reponse": "Flash",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le Canada ?",
-      "reponse": "L'Amérique du Nord",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel cowboy jouet a un serpent dans sa botte ?",
-      "reponse": "Woody",
+      "question": "Quel monument de pierre à quatre faces triangulaires abritait un tombeau égyptien ?",
+      "reponse": "Une pyramide",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel plat de longues pâtes se sert avec une sauce à la viande ?",
-      "reponse": "Les spaghettis",
+      "question": "Quelle pâte farcie italienne forme des coussins ?",
+      "reponse": "Les raviolis",
       "niveau": 1
     },
     {
+      "categorie": "Québec",
+      "question": "Quelle rue étroite du Vieux-Québec est très photographiée ?",
+      "reponse": "Petit-Champlain",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la liste de chansons qu'on se prépare pour une occasion ?",
-      "reponse": "Une liste de lecture",
+      "question": "Quel instrument d'église a des tuyaux ?",
+      "reponse": "L'orgue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment s'appelle le passage de liquide à gaz ?",
+      "reponse": "L'évaporation",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "De quelle couleur sont les Simpson ?",
+      "reponse": "Jaunes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume en tiges rouges garnit des tartes ?",
+      "reponse": "La rhubarbe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans Pokémon, dans quel objet enferme-t-on les créatures capturées ?",
+      "reponse": "Une Poké Ball",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -93,90 +95,84 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle équipe de football joue à Montréal ?",
-      "reponse": "Les Alouettes",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Sports",
+      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
+      "reponse": "Le patinage artistique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a peint la Joconde ?",
+      "reponse": "Léonard de Vinci",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel récipient à queue sert à faire bouillir de l'eau sur le rond ?",
+      "reponse": "Une casserole",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle est l'étoile la plus proche de la Terre ?",
-      "reponse": "Le Soleil",
+      "question": "En quelle saison les feuilles des arbres tombent-elles ?",
+      "reponse": "L'automne",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Que colle-t-on dans le dos des gens le 1er avril ?",
-      "reponse": "Un poisson d'avril",
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le trait blanc où les coureurs s'alignent avant le coup de pistolet ?",
+      "reponse": "La ligne de départ",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel accessoire redonne de l'énergie à un téléphone à plat ?",
-      "reponse": "Un chargeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel canal traverse l'Amérique centrale ?",
-      "reponse": "Panama",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée suit des chiots sauveteurs ?",
+      "reponse": "Pat' Patrouille",
       "niveau": 1,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
+        "enfants"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la bouteille dans laquelle un joueur boit sur le banc ?",
-      "reponse": "Une gourde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de dalmatiens dans le film de Disney ?",
-      "reponse": "101",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Où emprunte-t-on gratuitement des livres dans son quartier ?",
-      "reponse": "À la bibliothèque",
+      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
+      "reponse": "Quatre ans",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Le pluriel de bijou prend un S ou un X ?",
-      "reponse": "Un X",
+      "question": "Que signifie passer un savon ?",
+      "reponse": "Réprimander",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie avoir de la broue dans le toupet ?",
-      "reponse": "Être débordé",
+      "question": "Contraire de rapide ?",
+      "reponse": "Lent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelles chutes célèbres sont à la frontière canado-américaine ?",
+      "reponse": "Niagara",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la petite monnaie qu'on laisse au serveur au restaurant ?",
+      "reponse": "Le pourboire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie poser un lapin ?",
+      "reponse": "Ne pas venir",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte jaune tirée de la crème se tartine sur le pain ?",
-      "reponse": "Le beurre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle science étudie les plantes ?",
-      "reponse": "La botanique",
-      "niveau": 1
     }
   ]
 }

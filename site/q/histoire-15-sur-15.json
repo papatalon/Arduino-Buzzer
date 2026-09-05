@@ -8,15 +8,97 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quel peuple a construit le Machu Picchu ?",
-      "reponse": "Les Incas",
+      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
+      "reponse": "Le Jolly Roger",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel empereur fut couronné à Rome en l'an 800 ?",
+      "reponse": "Charlemagne",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on celui qui fabrique des objets à la main dans son atelier ?",
-      "reponse": "Un artisan",
+      "question": "Quel moine a affiché 95 thèses en 1517 ?",
+      "reponse": "Luther",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention chinoise a remplacé le parchemin pour écrire ?",
+      "reponse": "Le papier",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple a construit le Colisée et les aqueducs ?",
+      "reponse": "Les Romains",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les premiers habitants de l'Amérique, ici avant les Européens ?",
+      "reponse": "Les Autochtones",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui a inventé l'imprimerie en Europe ?",
+      "reponse": "Gutenberg",
       "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel calendrier, adopté en 1582, utilisons-nous ?",
+      "reponse": "Le grégorien",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel bâtiment à grandes ailes tournait au vent pour moudre le blé ?",
+      "reponse": "Un moulin à vent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle chaussure ouverte, faite de lanières de cuir, portaient les Romains ?",
+      "reponse": "Une sandale",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel engin a emmené les premiers hommes jusqu'à la Lune ?",
+      "reponse": "Une fusée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui a fondé Ville-Marie en 1642 ?",
+      "reponse": "Maisonneuve",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -30,8 +112,14 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle infirmière célèbre soignait pendant la guerre de Crimée ?",
-      "reponse": "Florence Nightingale",
+      "question": "Quelle muraille célèbre protège la Chine ?",
+      "reponse": "La Grande Muraille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quel navire Darwin a-t-il navigué ?",
+      "reponse": "Le Beagle",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -40,14 +128,14 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle fourrure les Européens recherchaient-ils le plus en Nouvelle-France ?",
-      "reponse": "Le castor",
+      "question": "Comment appelle-t-on les humains qui vivaient dans des grottes ?",
+      "reponse": "Les hommes des cavernes",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel territoire Napoléon a-t-il vendu aux États-Unis ?",
-      "reponse": "La Louisiane",
+      "question": "Quel révolutionnaire russe a fondé l'URSS ?",
+      "reponse": "Lénine",
       "niveau": 2,
       "ages": [
         "ados",
@@ -57,85 +145,14 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle machine à vapeur tirait les premiers trains ?",
-      "reponse": "La locomotive",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on un corps embaumé et enveloppé de bandelettes ?",
-      "reponse": "Une momie",
+      "question": "Quel peuple de l'Antiquité a inventé les Jeux olympiques ?",
+      "reponse": "Les Grecs",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel outil de bois et de fer les paysans utilisaient-ils pour retourner la terre ?",
-      "reponse": "La charrue",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle grippe a fait des millions de morts en 1918 ?",
-      "reponse": "Grippe espagnole",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui était le dernier tsar de Russie ?",
-      "reponse": "Nicolas II",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel mur antique protégeait l'Angleterre romaine ?",
-      "reponse": "Mur d'Hadrien",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on celui qui garde un troupeau de moutons dans les champs ?",
-      "reponse": "Un berger",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel fleuve faisait pousser les récoltes des Égyptiens en débordant chaque année ?",
-      "reponse": "Le Nil",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel jour célèbre-t-on l'Armistice de 1918 ?",
-      "reponse": "Le 11 novembre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel canal relie la Méditerranée à la mer Rouge ?",
-      "reponse": "Suez",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
-      "reponse": "Le Jolly Roger",
+      "question": "Quel rover s'est posé sur Mars en 2012 ?",
+      "reponse": "Curiosity",
       "niveau": 3,
       "ages": [
         "ados",
@@ -144,58 +161,37 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'écriture des Vikings, gravée dans la pierre ?",
-      "reponse": "Les runes",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "question": "Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?",
+      "reponse": "La Station spatiale internationale",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année eut lieu la bataille de Waterloo ?",
-      "reponse": "1815",
+      "question": "Que dessinaient les hommes préhistoriques sur les murs des grottes ?",
+      "reponse": "Des animaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la tour maîtresse, la plus haute d'un château fort ?",
+      "reponse": "Le donjon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les grands ponts qui amenaient l'eau jusqu'aux villes romaines ?",
+      "reponse": "Un aqueduc",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?",
+      "reponse": "La Révolution tranquille",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle base américaine fut attaquée en décembre 1941 ?",
-      "reponse": "Pearl Harbor",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels peuples vivaient déjà en Amérique quand les Européens sont arrivés ?",
-      "reponse": "Les Autochtones",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les premiers habitants de l'Amérique, ici avant les Européens ?",
-      "reponse": "Les Autochtones",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Où Napoléon a-t-il subi sa dernière défaite ?",
-      "reponse": "Waterloo",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année l'homme a-t-il marché sur la Lune ?",
-      "reponse": "1969",
-      "niveau": 2
     }
   ]
 }

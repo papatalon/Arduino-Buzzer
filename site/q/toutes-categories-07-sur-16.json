@@ -7,43 +7,15 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Culture générale",
-      "question": "Quel instrument d'écriture contient du graphite ?",
-      "reponse": "Le crayon",
+      "categorie": "Sciences et nature",
+      "question": "Quelles parties de l'arbre changent de couleur en automne ?",
+      "reponse": "Les feuilles",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la voix qui accompagne la voix principale en harmonie ?",
-      "reponse": "Les chœurs",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est voisine du Québec, à l'est, avec Fredericton pour capitale ?",
-      "reponse": "Le Nouveau-Brunswick",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on un mot formé des lettres d'un autre ?",
-      "reponse": "Une anagramme",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel gâteau blanc et rond de Vachon porte un prénom féminin ?",
-      "reponse": "Le May West",
+      "categorie": "Histoire",
+      "question": "Quelle fut la première île d'exil de Napoléon ?",
+      "reponse": "L'île d'Elbe",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -52,8 +24,63 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel jambon italien se mange en tranches fines ?",
-      "reponse": "Le prosciutto",
+      "question": "Quel appareil lave les assiettes à notre place ?",
+      "reponse": "Le lave-vaisselle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument australien est un long tube en bois ?",
+      "reponse": "Le didgeridoo",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel instrument d'écriture contient du graphite ?",
+      "reponse": "Le crayon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission jeunesse québécoise est revenue à la télé en 2019, trente ans après ?",
+      "reponse": "Passe-Partout",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle princesse anglaise est morte à Paris en 1997 ?",
+      "reponse": "Diana",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel courant marin réchauffe l'Europe ?",
+      "reponse": "Le Gulf Stream",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la peur des espaces clos ?",
+      "reponse": "La claustrophobie",
       "niveau": 1,
       "ages": [
         "ados",
@@ -62,28 +89,10 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien de doigts a-t-on sur une main ?",
-      "reponse": "Cinq",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un âne toujours triste ?",
-      "reponse": "Bourriquet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand animal du monde ?",
-      "reponse": "La baleine bleue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel gardien du New Jersey a gagné 691 matchs en carrière ?",
-      "reponse": "Martin Brodeur",
-      "niveau": 2,
+      "question": "Quel acteur incarne Rocky Balboa ?",
+      "reponse": "Stallone",
+      "niveau": 1,
       "ages": [
         "adultes",
         "aines"
@@ -91,14 +100,31 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boule de pâte frite est saupoudrée de sucre ?",
-      "reponse": "Le beigne",
+      "question": "Quel plat de longues pâtes se sert avec une sauce à la viande ?",
+      "reponse": "Les spaghettis",
       "niveau": 1
     },
     {
+      "categorie": "Québec",
+      "question": "Quel véhicule d'hiver file sur la neige avec des chenilles et des skis ?",
+      "reponse": "Une motoneige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Chili ?",
+      "reponse": "Santiago",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Quelle figure de style compare sans mot de comparaison ?",
-      "reponse": "La métaphore",
+      "question": "Comment nomme-t-on un mot vieilli ?",
+      "reponse": "Un archaïsme",
       "niveau": 2,
       "ages": [
         "ados",
@@ -108,25 +134,72 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel réalisateur canadien a fait Titanic et Avatar ?",
-      "reponse": "James Cameron",
+      "question": "Comment s'appelle la petite sœur d'Elsa ?",
+      "reponse": "Anna",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le moment où l'arbitre laisse tomber la rondelle entre deux joueurs ?",
+      "reponse": "La mise au jeu",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de doigts a-t-on sur une main ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la longue route de campagne bordée de fermes au Québec ?",
+      "reponse": "Un rang",
+      "niveau": 3
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Petit du lapin ?",
+      "reponse": "Le lapereau",
       "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels sont les trois états de l'eau ?",
+      "reponse": "Solide liquide gaz",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument se frappe avec deux baguettes sur une peau tendue ?",
+      "reponse": "Le tambour",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
+      "reponse": "Montréal",
+      "niveau": 1,
       "ages": [
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel gros reptile a disparu de la Terre il y a des millions d'années ?",
-      "reponse": "Un dinosaure",
+      "categorie": "Québec",
+      "question": "Quelles plaines célèbres bordent le Vieux-Québec ?",
+      "reponse": "Plaines d'Abraham",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Combien de médailles d'or olympiques a Michael Phelps ?",
-      "reponse": "23",
-      "niveau": 3,
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel clou parfume le jambon de Noël ?",
+      "reponse": "Clou de girofle",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -135,84 +208,11 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission jeunesse de Radio-Canada, animée par Monsieur Surprise, a lancé Fanfreluche et Sol ?",
-      "reponse": "La Boîte à surprise",
+      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
+      "reponse": "Loft Story",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel cirque québécois est connu mondialement ?",
-      "reponse": "Cirque du Soleil",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël célèbre un arbre dont le feuillage reste vert tout l'hiver ?",
-      "reponse": "Mon beau sapin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel jus boit-on le plus souvent au déjeuner ?",
-      "reponse": "Le jus d'orange",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel élément chimique a le symbole N ?",
-      "reponse": "L'azote",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle méthode permet de dater un vestige grâce à un isotope ?",
-      "reponse": "Le carbone 14",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on les bandes blanches où l'on traverse la rue ?",
-      "reponse": "Un passage piéton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle sortie familiale attire les Québécois dans les vergers en septembre ?",
-      "reponse": "L'autocueillette",
-      "niveau": 2
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du sanglier ?",
-      "reponse": "Le marcassin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle île canadienne est la plus grande ?",
-      "reponse": "Île de Baffin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
       ]
     }
   ]

@@ -8,9 +8,67 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel oiseau de dessin animé file à toute vitesse en faisant « bip bip » ?",
-      "reponse": "Bip Bip",
+      "question": "Quel héros devient vert quand il se fâche ?",
+      "reponse": "Hulk",
       "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel jeune partenaire aide Walter White ?",
+      "reponse": "Jesse Pinkman",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel pirate est l'ennemi juré de Peter Pan ?",
+      "reponse": "Capitaine Crochet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel journaliste est l'identité secrète de Superman ?",
+      "reponse": "Clark Kent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel film d'animation un mammouth, un paresseux et un tigre à dents de sabre voyagent-ils ensemble ?",
+      "reponse": "L'Ère de glace",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle marionnette verte du Muppet Show anime le spectacle ?",
+      "reponse": "Kermit",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel acteur incarne Rocky Balboa ?",
+      "reponse": "Stallone",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chiot dalmatien de la Pat' Patrouille est pompier ?",
+      "reponse": "Marcus",
+      "niveau": 1,
+      "ages": [
+        "enfants"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
@@ -20,35 +78,45 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Dans quelle ville sous-marine habitent Bob l'éponge et Patrick ?",
-      "reponse": "Bikini Bottom",
-      "niveau": 2,
+      "question": "Quel film coréen de 2019 est devenu le premier film non anglophone à gagner l'Oscar du meilleur film ?",
+      "reponse": "Parasite",
+      "niveau": 3,
       "ages": [
-        "enfants",
-        "ados"
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel dragon noir accompagne Harold ?",
-      "reponse": "Krokmou",
+      "question": "Quel roi des mers parle aux poissons ?",
+      "reponse": "Aquaman",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel garçon au chandail à zigzag est le maître de Snoopy ?",
-      "reponse": "Charlie Brown",
+      "question": "Quelle dépanneuse rouillée est l'amie de Flash McQueen ?",
+      "reponse": "Mater",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel garçon dirige la Pat' Patrouille ?",
+      "reponse": "Ryder",
       "niveau": 1,
       "ages": [
-        "enfants",
-        "adultes",
-        "aines"
+        "enfants"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel extraterrestre veut téléphoner à la maison ?",
-      "reponse": "E.T.",
+      "question": "Qui est le père de Luke Skywalker ?",
+      "reponse": "Dark Vador",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel acolyte de Batman porte un costume rouge et vert ?",
+      "reponse": "Robin",
       "niveau": 1
     },
     {
@@ -62,82 +130,8 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le bonhomme de neige de La Reine des neiges ?",
-      "reponse": "Olaf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ogre a un ami âne très bavard ?",
-      "reponse": "Shrek",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle substance affaiblit Superman ?",
-      "reponse": "La kryptonite",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle créature verte et mal lunée veut voler le Noël des Chou ?",
-      "reponse": "Le Grinch",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel petit robot orange et blanc roule en forme de boule dans Star Wars ?",
-      "reponse": "BB-8",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la chouette de Harry Potter ?",
-      "reponse": "Hedwige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel Pokémon jaune lance des éclairs ?",
-      "reponse": "Pikachu",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel pirate est joué par Johnny Depp ?",
-      "reponse": "Jack Sparrow",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Sébastien dans La Petite Sirène ?",
-      "reponse": "Un crabe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série fantastique a des dragons et un trône de fer ?",
-      "reponse": "Game of Thrones",
+      "question": "Quelle série américaine suit un bureau de vente de papier ?",
+      "reponse": "The Office",
       "niveau": 1,
       "ages": [
         "ados",
@@ -146,65 +140,65 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation raconte une princesse écossaise aux cheveux roux qui tire à l'arc ?",
-      "reponse": "Rebelle",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
-      "reponse": "Bob l'éponge",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur autrichien joue Terminator ?",
-      "reponse": "Schwarzenegger",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel héros a été piqué par une araignée ?",
-      "reponse": "Spider-Man",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel légume la marraine de Cendrillon transforme-t-elle en carrosse ?",
-      "reponse": "La citrouille",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle fée accompagne Peter Pan ?",
-      "reponse": "Clochette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel cowboy de BD tire plus vite que son ombre ?",
-      "reponse": "Lucky Luke",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel acteur joue Forrest Gump ?",
-      "reponse": "Tom Hanks",
+      "question": "Quelle voiture voyage dans le temps dans Retour vers le futur ?",
+      "reponse": "La DeLorean",
       "niveau": 2,
       "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel jeu télévisé québécois offrait des valises à ouvrir ?",
+      "reponse": "Le Banquier",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel gros chien rouge de livres pour enfants est devenu un film ?",
+      "reponse": "Clifford",
+      "niveau": 1,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel marin barbu et grognon accompagne Tintin dans ses aventures ?",
+      "reponse": "Le capitaine Haddock",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chiot berger allemand de la Pat' Patrouille est policier ?",
+      "reponse": "Chase",
+      "niveau": 1,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami de Winnie l'ourson est un petit cochon rose ?",
+      "reponse": "Porcinet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel garçon est élevé par les loups dans la jungle ?",
+      "reponse": "Mowgli",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film Disney suit 101 chiens tachés ?",
+      "reponse": "Les 101 Dalmatiens",
+      "niveau": 1
     }
   ]
 }

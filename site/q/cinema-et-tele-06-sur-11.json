@@ -8,9 +8,21 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle exploratrice a un singe nommé Babouche ?",
-      "reponse": "Dora",
-      "niveau": 1,
+      "question": "Quel gros Gaulois livre des menhirs et déteste qu'on le traite de gros ?",
+      "reponse": "Obélix",
+      "niveau": 2
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel cowboy jouet a un serpent dans sa botte ?",
+      "reponse": "Woody",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle boule rose de Nintendo avale ses ennemis pour voler leurs pouvoirs ?",
+      "reponse": "Kirby",
+      "niveau": 2,
       "ages": [
         "enfants",
         "ados"
@@ -18,33 +30,9 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle princesse perd sa pantoufle de verre ?",
-      "reponse": "Cendrillon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le petit chien blanc de Tintin ?",
-      "reponse": "Milou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle suite de Nemo suit la mémoire de Dory ?",
-      "reponse": "Trouver Doris",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel superhéros enfile son costume dans une cabine téléphonique ?",
-      "reponse": "Superman",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel clown poète québécois avait un complice nommé Gobelet ?",
-      "reponse": "Sol",
-      "niveau": 2,
+      "question": "Quel cochon de cinéma veut devenir chien de berger ?",
+      "reponse": "Babe",
+      "niveau": 1,
       "ages": [
         "adultes",
         "aines"
@@ -52,20 +40,24 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel mage noir est l'ennemi de Harry Potter ?",
-      "reponse": "Voldemort",
+      "question": "Quelle série coréenne met en scène des jeux mortels ?",
+      "reponse": "Squid Game",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Abu, l'ami d'Aladin ?",
+      "reponse": "Un singe",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Dans quelle ville vit Batman ?",
-      "reponse": "Gotham",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon a une casquette rouge et chasse des Pokémon ?",
-      "reponse": "Sacha",
+      "question": "Quel film d'animation raconte une princesse écossaise aux cheveux roux qui tire à l'arc ?",
+      "reponse": "Rebelle",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -75,47 +67,8 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle série de science-fiction se passe à Hawkins ?",
-      "reponse": "Stranger Things",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ninja blond rêve de devenir Hokage ?",
-      "reponse": "Naruto",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "De quelle planète vient Superman ?",
-      "reponse": "Krypton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quelle ville vivent les Simpson ?",
-      "reponse": "Springfield",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami de Winnie l'ourson est un tigre qui bondit sur sa queue ?",
-      "reponse": "Tigrou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel hobbit doit détruire l'anneau unique ?",
-      "reponse": "Frodon",
+      "question": "Quelle souris aux grandes oreilles rondes est la mascotte de Disney ?",
+      "reponse": "Mickey Mouse",
       "niveau": 1
     },
     {
@@ -130,14 +83,79 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel animal est Pascal, l'ami de Raiponce ?",
-      "reponse": "Un caméléon",
+      "question": "Quelle créature verte vit dans un marais ?",
+      "reponse": "Shrek",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel film de 1975 a vidé les plages avec son requin géant ?",
-      "reponse": "Les Dents de la mer",
+      "question": "Quel escargot de course devient ultra rapide au cinéma ?",
+      "reponse": "Turbo",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse perd sa pantoufle de verre ?",
+      "reponse": "Cendrillon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel personnage vert déteste Noël ?",
+      "reponse": "Le Grincheux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ninja blond rêve de devenir Hokage ?",
+      "reponse": "Naruto",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel archéologue porte un fouet et un chapeau ?",
+      "reponse": "Indiana Jones",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel méchant des Minions veut voler la Lune ?",
+      "reponse": "Gru",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle sitcom suit quatre physiciens et leur voisine serveuse ?",
+      "reponse": "Big Bang Theory",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel superhéros enfile son costume dans une cabine téléphonique ?",
+      "reponse": "Superman",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel félin de dessin animé est né d'un générique de film ?",
+      "reponse": "La Panthère rose",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -146,53 +164,50 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel agent secret britannique aime les martinis ?",
-      "reponse": "James Bond",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle héroïne chinoise se déguise en soldat ?",
-      "reponse": "Mulan",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série américaine suit un bureau de vente de papier ?",
-      "reponse": "The Office",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le lionceau du Roi Lion ?",
-      "reponse": "Simba",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jouet de Toy Story est une patate avec des pièces à enlever ?",
-      "reponse": "Monsieur Patate",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation met en scène Dracula et sa famille de monstres dans un hôtel ?",
-      "reponse": "Hôtel Transylvanie",
+      "question": "Quel cowboy de BD tire plus vite que son ombre ?",
+      "reponse": "Lucky Luke",
       "niveau": 1,
       "ages": [
         "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel coyote n'arrive jamais à attraper Bip Bip ?",
+      "reponse": "Vil Coyote",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série de films enferme des adolescents dans un dédale aux murs mouvants ?",
+      "reponse": "Le Labyrinthe",
+      "niveau": 3,
+      "ages": [
         "ados",
         "adultes"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel garçon est élevé par les loups dans la jungle ?",
-      "reponse": "Mowgli",
+      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
+      "reponse": "Arthur Laroche",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel monstre bleu et poilu travaille avec Mike ?",
+      "reponse": "Sulley",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle panthère noire protège Mowgli ?",
+      "reponse": "Bagheera",
       "niveau": 1
     }
   ]

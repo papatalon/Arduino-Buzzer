@@ -8,8 +8,20 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel art martial coréen privilégie les coups de pied ?",
-      "reponse": "Le taekwondo",
+      "question": "Quel équipement protège la tête à vélo et au hockey ?",
+      "reponse": "Le casque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel anneau gonflable aide les petits à flotter ?",
+      "reponse": "Une bouée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "De quelle couleur est la veste du champion du Masters ?",
+      "reponse": "Verte",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,98 +31,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle activité consiste à marcher longtemps sur des sentiers en forêt ou en montagne ?",
-      "reponse": "La randonnée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur brésilien est surnommé le Roi du soccer ?",
-      "reponse": "Pelé",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle gymnaste américaine a des figures qui portent son nom au code de pointage ?",
-      "reponse": "Simone Biles",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on l'exercice qu'une équipe fait avant le match pour se réchauffer ?",
-      "reponse": "L'échauffement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
-      "reponse": "Montréal",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pilote allemand a aussi gagné 7 titres de F1 ?",
-      "reponse": "Michael Schumacher",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de raquette au nom de cornichon est en plein essor ?",
-      "reponse": "Le pickleball",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel drapeau agite-t-on à la fin d'une course auto ?",
-      "reponse": "Drapeau à damier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le tableau qui affiche le pointage pendant un match ?",
-      "reponse": "Le tableau indicateur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport fait descendre un skieur derrière un bateau ?",
-      "reponse": "Le ski nautique",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel lanceur québécois a gagné un Cy Young ?",
-      "reponse": "Éric Gagné",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de raquette utilise une petite balle noire ?",
-      "reponse": "Le squash",
+      "question": "Combien de sets gagnants pour un match de tennis masculin en grand chelem ?",
+      "reponse": "Trois",
       "niveau": 2,
       "ages": [
         "ados",
@@ -120,72 +42,159 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle ville canadienne a reçu les JO d'hiver de 2010 ?",
-      "reponse": "Vancouver",
+      "question": "Comment appelle-t-on le banc où le joueur puni doit s'asseoir ?",
+      "reponse": "Le banc des punitions",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel jeu de force oppose deux équipes de chaque côté d'un même câble ?",
-      "reponse": "Le tir à la corde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu de table fait glisser une rondelle sur un coussin d'air ?",
-      "reponse": "Le hockey sur air",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment s'appelle le grand tour cycliste d'Italie ?",
-      "reponse": "Le Giro",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel équipement de cuir le joueur de baseball enfile-t-il pour attraper la balle ?",
-      "reponse": "Un gant de baseball",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport surfe sur la neige ?",
-      "reponse": "La planche à neige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel officiel siffle les punitions ?",
-      "reponse": "L'arbitre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de la NBA vient de Toronto ?",
-      "reponse": "Les Raptors",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle activité d'été fait dormir sous une tente ?",
-      "reponse": "Le camping",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de billes rouges au snooker ?",
-      "reponse": "Quinze",
+      "question": "Quel sport fait glisser un lugeur tête première sur la glace ?",
+      "reponse": "Le skeleton",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle nage avance en poussant les deux bras en même temps, comme une grenouille ?",
+      "reponse": "La brasse",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel comité organise les Jeux olympiques ?",
+      "reponse": "Le CIO",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de minutes dure un match de soccer ?",
+      "reponse": "90",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quoi faut-il faire entrer le ballon pour marquer au basketball ?",
+      "reponse": "Le panier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel gardien québécois a popularisé le style papillon ?",
+      "reponse": "Patrick Roy",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport fait courir des chevaux montés par des jockeys ?",
+      "reponse": "Les courses de chevaux",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle ceinture couronne le plus haut niveau des arts martiaux ?",
+      "reponse": "La ceinture noire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien vaut un converti de deux points ?",
+      "reponse": "Deux",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport court dans les bois avec une carte et une boussole ?",
+      "reponse": "La course d'orientation",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sports",
+      "question": "Sur quelle surface glacée se joue le hockey ?",
+      "reponse": "La patinoire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
+      "reponse": "Le patinage artistique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel autre nom donne-t-on au ping-pong ?",
+      "reponse": "Tennis de table",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de balles mènent à un but sur balles au baseball ?",
+      "reponse": "Quatre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la balle de golf entrée dans la coupe dès le départ ?",
+      "reponse": "Un trou d'un coup",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle est la distance d'un marathon ?",
+      "reponse": "42,2 km",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel cheval célèbre a gagné la Triple Couronne en 1973 ?",
+      "reponse": "Secretariat",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle médaille récompense la troisième place ?",
+      "reponse": "Le bronze",
+      "niveau": 1
     }
   ]
 }

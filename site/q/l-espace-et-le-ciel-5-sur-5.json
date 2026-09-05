@@ -7,31 +7,9 @@
   "emoji": "🪐",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Qui fut le deuxième homme à marcher sur la Lune ?",
-      "reponse": "Buzz Aldrin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel instrument de navigation mesurait la hauteur des astres sur l'horizon ?",
-      "reponse": "Le sextant",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quel méchant des Minions veut voler la Lune ?",
-      "reponse": "Gru",
+      "question": "Quel ami étoile de mer accompagne Bob l'éponge ?",
+      "reponse": "Patrick",
       "niveau": 1
     },
     {
@@ -46,28 +24,39 @@
       ]
     },
     {
+      "categorie": "Histoire",
+      "question": "Quel astronome a placé le Soleil au centre de l'univers ?",
+      "reponse": "Copernic",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Sciences et nature",
-      "question": "Quelle planète a été rétrogradée en planète naine ?",
-      "reponse": "Pluton",
+      "question": "Quelle galaxie abrite notre système solaire ?",
+      "reponse": "La Voie lactée",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Qui fut le premier homme dans l'espace ?",
-      "reponse": "Youri Gagarine",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre traverse le ciel en traînant une longue queue lumineuse ?",
-      "reponse": "Une comète",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel effet atmosphérique réchauffe la planète ?",
-      "reponse": "L'effet de serre",
+      "question": "Qui fut le premier homme sur la Lune ?",
+      "reponse": "Neil Armstrong",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "De quel côté se lève le soleil ?",
+      "reponse": "À l'est",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel roi de France fut surnommé le Roi-Soleil ?",
+      "reponse": "Louis XIV",
+      "niveau": 2
     },
     {
       "categorie": "Musique",
@@ -76,15 +65,62 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel pays a un drapeau avec une étoile de David ?",
-      "reponse": "Israël",
+      "categorie": "Culture pop",
+      "question": "Quelles chaussures de caoutchouc percées de trous divisent la planète ?",
+      "reponse": "Les Crocs",
       "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel fut le premier satellite artificiel ?",
+      "reponse": "Spoutnik",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on les régions chaudes situées près de l'équateur ?",
+      "reponse": "Les tropiques",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de lunes possède la Terre ?",
+      "reponse": "Une",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "De quelle planète vient Superman ?",
+      "reponse": "Krypton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel musée parisien abrite la Vénus de Milo ?",
+      "reponse": "Le Louvre",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
+      "reponse": "L'étoile de mer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle direction le soleil se couche-t-il ?",
+      "reponse": "À l'ouest",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -93,73 +129,32 @@
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?",
-      "reponse": "L'arc-en-ciel",
-      "niveau": 1
-    },
-    {
       "categorie": "Histoire",
-      "question": "Quelle maladie a confiné la planète entière au printemps 2020 ?",
-      "reponse": "La COVID-19",
-      "niveau": 1
+      "question": "Qui fut la première femme dans l'espace ?",
+      "reponse": "Valentina Terechkova",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel trompettiste a chanté What a Wonderful World ?",
-      "reponse": "Louis Armstrong",
-      "niveau": 2,
+      "question": "Quel style musical coréen a conquis la planète ?",
+      "reponse": "La K-pop",
+      "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ami étoile de mer accompagne Bob l'éponge ?",
-      "reponse": "Patrick",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Combien de planètes dans le système solaire ?",
+      "question": "Combien de minutes met la lumière du Soleil à nous parvenir ?",
       "reponse": "Huit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle comète célèbre revient tous les 76 ans ?",
-      "reponse": "Halley",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel drapeau les astronautes ont-ils planté sur la Lune en 1969 ?",
-      "reponse": "Le drapeau américain",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Le Soleil est-il une planète ou une étoile ?",
-      "reponse": "Une étoile",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de lunes possède Mars ?",
-      "reponse": "Deux",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]

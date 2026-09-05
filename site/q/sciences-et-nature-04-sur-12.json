@@ -8,8 +8,61 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quel instrument mesure la pression atmosphérique ?",
-      "reponse": "Le baromètre",
+      "question": "Quel organe pompe le sang ?",
+      "reponse": "Le cœur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle couche de gaz protège la Terre des UV ?",
+      "reponse": "La couche d'ozone",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel savant grec aurait crié « Eurêka » en sortant de son bain ?",
+      "reponse": "Archimède",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel grand oiseau rose se tient souvent sur une seule patte ?",
+      "reponse": "Le flamant rose",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel instrument sert à observer les microbes ?",
+      "reponse": "Le microscope",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel cousin rayé du cheval vit en Afrique ?",
+      "reponse": "Le zèbre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal de la ferme nous donne le lait ?",
+      "reponse": "La vache",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?",
+      "reponse": "Le tyrannosaure",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien d'ailes possède une abeille ?",
+      "reponse": "Quatre",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,21 +72,14 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
-      "reponse": "La Grande Ourse",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de bosses a un dromadaire ?",
-      "reponse": "Une",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel arbre décore-t-on avec des boules et des lumières en décembre ?",
-      "reponse": "Le sapin",
-      "niveau": 1
+      "question": "Quel est le symbole chimique de l'hydrogène ?",
+      "reponse": "H",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
@@ -43,25 +89,20 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Que devient l'eau quand elle gèle ?",
-      "reponse": "De la glace",
+      "question": "Quel grondement suit l'éclair pendant un orage ?",
+      "reponse": "Le tonnerre",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la vitesse approximative de la lumière ?",
-      "reponse": "300 000 km/s",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
+      "reponse": "L'autruche",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de pattes possède un insecte ?",
-      "reponse": "Six",
+      "question": "Quel dinosaure a trois cornes sur la tête ?",
+      "reponse": "Le tricératops",
       "niveau": 1
     },
     {
@@ -72,43 +113,42 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel champignon fait lever le pain ?",
-      "reponse": "La levure",
-      "niveau": 1,
+      "question": "Quelle planète tourne couchée sur le côté ?",
+      "reponse": "Uranus",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle partie colorée de la fleur attire les abeilles ?",
-      "reponse": "Les pétales",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelles parties blanches de la bouche servent à mâcher ?",
-      "reponse": "Les dents",
+      "question": "Quel phénomène lumineux accompagne le tonnerre ?",
+      "reponse": "L'éclair",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la transformation de la chenille ?",
-      "reponse": "La métamorphose",
+      "question": "Quelle est l'étoile la plus proche de la Terre ?",
+      "reponse": "Le Soleil",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est l'animal le plus haut du monde ?",
-      "reponse": "La girafe",
+      "question": "Quelle molécule porte notre code génétique ?",
+      "reponse": "L'ADN",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel organe produit l'insuline ?",
-      "reponse": "Le pancréas",
+      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
+      "reponse": "Le raton laveur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle unité mesure le courant électrique ?",
+      "reponse": "L'ampère",
       "niveau": 2,
       "ages": [
         "ados",
@@ -118,56 +158,20 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle vague géante suit parfois un séisme ?",
-      "reponse": "Le tsunami",
+      "question": "Quel sens est associé au nez ?",
+      "reponse": "L'odorat",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est le seul mammifère volant ?",
-      "reponse": "La chauve-souris",
+      "question": "De quoi sont faites les dunes du désert ?",
+      "reponse": "De sable",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel instrument grossit les objets proches ?",
-      "reponse": "La loupe",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal saute et transporte son bébé dans une poche ?",
-      "reponse": "Le kangourou",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel est l'os le plus long du corps humain ?",
-      "reponse": "Le fémur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "À quelle température l'eau gèle-t-elle ?",
-      "reponse": "0 degré C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de lunes possède la Terre ?",
-      "reponse": "Une",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui pousse au bout des doigts et qu'il faut couper ?",
-      "reponse": "Les ongles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle unité mesure la puissance ?",
-      "reponse": "Le watt",
+      "question": "Quel nuage annonce l'orage ?",
+      "reponse": "Le cumulonimbus",
       "niveau": 2,
       "ages": [
         "ados",

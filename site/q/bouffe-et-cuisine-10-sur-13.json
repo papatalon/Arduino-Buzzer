@@ -8,14 +8,95 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle sauce blanche accompagne le sandwich shawarma ?",
-      "reponse": "Sauce à l'ail",
-      "niveau": 1,
+      "question": "Quel légume vert ressemble à un petit arbre ?",
+      "reponse": "Le brocoli",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas se prend le soir au Québec ?",
+      "reponse": "Le souper",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage italien garnit la pizza ?",
+      "reponse": "La mozzarella",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle tarte épicée se mange à l'Action de grâce ?",
+      "reponse": "À la citrouille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel nom porte le jalapeño fumé ?",
+      "reponse": "Chipotle",
+      "niveau": 3,
       "ages": [
         "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle friandise glacée se tient par un bâton de bois ?",
+      "reponse": "Un popsicle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte à tartiner aux noisettes est adorée ?",
+      "reponse": "Le Nutella",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil garde le lait et les légumes au froid ?",
+      "reponse": "Le réfrigérateur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel repas québécois se mange le midi ?",
+      "reponse": "Le dîner",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle crêpe japonaise salée vient d'Osaka ?",
+      "reponse": "L'okonomiyaki",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quels bonbons mous et colorés collent aux dents ?",
+      "reponse": "Les jujubes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle racine piquante parfume les biscuits de Noël ?",
+      "reponse": "Le gingembre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
+      "reponse": "Le homard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel aliment orange est riche en carotène ?",
+      "reponse": "La carotte",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -25,33 +106,48 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment ovale pondu par la poule mange-t-on brouillé ?",
-      "reponse": "L'œuf",
-      "niveau": 1
+      "question": "Comment s'appelle le sel récolté à la surface des marais ?",
+      "reponse": "Fleur de sel",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel outil de bois aplatit la pâte à tarte ?",
-      "reponse": "Le rouleau à pâte",
+      "question": "Quel dessert sicilien est un rouleau fourré à la ricotta ?",
+      "reponse": "Le cannoli",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ustensile troué égoutte les pâtes ?",
+      "reponse": "La passoire",
       "niveau": 2
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel sucre brun humide parfume les biscuits ?",
-      "reponse": "La cassonade",
+      "question": "Quelle grosse volaille rôtit au four pour l'Action de grâce ?",
+      "reponse": "La dinde",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel agrume jaune très acide accompagne les poissons ?",
-      "reponse": "Le citron",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile à quatre dents pique les aliments ?",
-      "reponse": "La fourchette",
-      "niveau": 1
+      "question": "Quel café italien est couronné de mousse de lait ?",
+      "reponse": "Le cappuccino",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -61,101 +157,14 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie a une croûte et une garniture aux pommes ou aux fraises ?",
-      "reponse": "La tarte",
+      "question": "Comment nomme-t-on un œuf cuit 3 minutes en coquille ?",
+      "reponse": "À la coque",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Que souffle-t-on sur le gâteau de fête après avoir fait un vœu ?",
-      "reponse": "Les bougies",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle épice noire moulue accompagne le sel sur la table ?",
-      "reponse": "Le poivre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à tartiner australienne est très salée ?",
-      "reponse": "La Vegemite",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Dans quel contenant rond et creux verse-t-on les céréales ?",
-      "reponse": "Le bol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quelle couleur est la chair de l'avocat ?",
-      "reponse": "Verte",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson pétillante est du thé fermenté ?",
-      "reponse": "Le kombucha",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle tartinade blanche accompagne le bagel ?",
-      "reponse": "Fromage à la crème",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte farcie italienne forme des coussins ?",
-      "reponse": "Les raviolis",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit légume rond, rouge dehors et blanc dedans, pique la langue ?",
-      "reponse": "Le radis",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel liquide jaune sert à faire cuire dans la poêle ?",
-      "reponse": "L'huile",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson chaude se prépare en faisant infuser des herbes ?",
-      "reponse": "Une tisane",
-      "niveau": 2
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "De quelle fève fait-on le chocolat ?",
-      "reponse": "Le cacao",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit principal compose le ketchup ?",
-      "reponse": "La tomate",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelles pâtes en forme de papillon existent ?",
-      "reponse": "Les farfalles",
+      "question": "Quelles pâtes en forme de tubes rayés existent ?",
+      "reponse": "Les penne",
       "niveau": 2,
       "ages": [
         "ados",

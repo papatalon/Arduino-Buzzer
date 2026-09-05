@@ -8,20 +8,157 @@
   "questions": [
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel gros Gaulois livre des menhirs et déteste qu'on le traite de gros ?",
-      "reponse": "Obélix",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée suit une famille jaune de Springfield ?",
-      "reponse": "Les Simpson",
+      "question": "Dans quel film de Noël un garçon oublié à la maison piège deux cambrioleurs ?",
+      "reponse": "Maman, j'ai raté l'avion",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel chat de dessin animé court après la souris Jerry ?",
-      "reponse": "Tom",
+      "question": "Quel monstre géant venu du Japon écrase des villes au cinéma ?",
+      "reponse": "Godzilla",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel petit oiseau jaune échappe toujours au chat Grosminet ?",
+      "reponse": "Titi",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel robot nettoyeur tombe amoureux d'EVE ?",
+      "reponse": "WALL-E",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse Mario doit-il sauver ?",
+      "reponse": "Peach",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel extraterrestre veut téléphoner à la maison ?",
+      "reponse": "E.T.",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film Disney de 2013 chante Libérée, délivrée ?",
+      "reponse": "La Reine des neiges",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel Pokémon jaune lance des éclairs ?",
+      "reponse": "Pikachu",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel arbre des Gardiens ne dit que trois mots ?",
+      "reponse": "Groot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal de ferme, très bavard, accompagne Shrek partout ?",
+      "reponse": "L'âne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée japonaise suit Son Goku ?",
+      "reponse": "Dragon Ball",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment se nomme la Belle au bois dormant chez Disney ?",
+      "reponse": "Aurore",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel jouet de Toy Story est une patate avec des pièces à enlever ?",
+      "reponse": "Monsieur Patate",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel écureuil de L'Ère de glace court sans cesse après son gland ?",
+      "reponse": "Scrat",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel type de poisson est Nemo ?",
+      "reponse": "Un poisson-clown",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel avare célèbre du terroir québécois aime son argent ?",
+      "reponse": "Séraphin",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quel conte Disney une rose est-elle sous cloche ?",
+      "reponse": "La Belle et la Bête",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle la statuette du cinéma américain ?",
+      "reponse": "L'Oscar",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami de Winnie l'ourson est un tigre qui bondit sur sa queue ?",
+      "reponse": "Tigrou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel est le chien de compagnie de Mickey ?",
+      "reponse": "Pluto",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle créature de Tolkien dit mon précieux ?",
+      "reponse": "Gollum",
       "niveau": 1
     },
     {
@@ -32,155 +169,24 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel dinosaure vert craintif vit dans Toy Story ?",
-      "reponse": "Rex",
+      "question": "Quelle fée accompagne Peter Pan ?",
+      "reponse": "Clochette",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle école accueille les jeunes mutants ?",
-      "reponse": "École de Xavier",
+      "question": "Quel réalisateur a fait E.T. et Jurassic Park ?",
+      "reponse": "Spielberg",
       "niveau": 2,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle arme lumineuse utilisent les Jedi ?",
-      "reponse": "Le sabre laser",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel duo de La Petite Vie dort debout ?",
-      "reponse": "Popa et Moman",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel garçon ne veut jamais grandir ?",
-      "reponse": "Peter Pan",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel phacochère accompagne Timon ?",
-      "reponse": "Pumbaa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série suit six amis dans un café new-yorkais ?",
-      "reponse": "Friends",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le meilleur ami roux de Harry Potter ?",
-      "reponse": "Ron Weasley",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel canard Disney porte un costume marin ?",
-      "reponse": "Donald",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film de Noël un garçon oublié à la maison piège deux cambrioleurs ?",
-      "reponse": "Maman, j'ai raté l'avion",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel monstre menace les enfants de Stranger Things ?",
-      "reponse": "Le Démogorgon",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée japonaise oppose l'humanité à des géants derrière de hauts murs ?",
-      "reponse": "L'Attaque des Titans",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle amie brillante accompagne Harry et Ron ?",
-      "reponse": "Hermione",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle émission québécoise a des fauteuils qui pivotent ?",
-      "reponse": "La Voix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation raconte un garçon qui rejoint le pays des morts avec sa guitare ?",
-      "reponse": "Coco",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel animal est Sven dans La Reine des neiges ?",
-      "reponse": "Un renne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel journaliste est l'identité secrète de Superman ?",
-      "reponse": "Clark Kent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ourson jaune raffole du miel ?",
-      "reponse": "Winnie l'ourson",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel canard noir est le rival de Bugs Bunny ?",
-      "reponse": "Daffy Duck",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée japonaise suit un garçon qui pourfend des démons au sabre ?",
-      "reponse": "Demon Slayer",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film de Noël un train magique emmène-t-il des enfants au pôle Nord ?",
-      "reponse": "Le Pôle Express",
+      "question": "Dans quelle ville vit Batman ?",
+      "reponse": "Gotham",
       "niveau": 1
     }
   ]

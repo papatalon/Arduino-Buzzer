@@ -7,15 +7,30 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Quelle longue habitation abritait plusieurs familles chez les Iroquoiens ?",
-      "reponse": "La maison longue",
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
+      "reponse": "Loft Story",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on les régions chaudes situées près de l'équateur ?",
+      "reponse": "Les tropiques",
       "niveau": 3
     },
     {
-      "categorie": "Musique",
-      "question": "Quel duo américain à la batterie et au clavier a chanté Stressed Out ?",
-      "reponse": "Twenty One Pilots",
+      "categorie": "Québec",
+      "question": "Quel parc animalier du Lac-Saint-Jean se visite à bord d'un train grillagé ?",
+      "reponse": "Le zoo de Saint-Félicien",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention chinoise a remplacé le parchemin pour écrire ?",
+      "reponse": "Le papier",
       "niveau": 3,
       "ages": [
         "ados",
@@ -24,29 +39,38 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'échange de fourrures contre des marchandises européennes ?",
-      "reponse": "La traite des fourrures",
+      "question": "Sur quelle île Napoléon est-il mort ?",
+      "reponse": "Sainte-Hélène",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel concours de chant européen réunit les pays chaque printemps ?",
-      "reponse": "L'Eurovision",
+      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
+      "reponse": "Loud",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année l'euro est-il entré en circulation ?",
+      "reponse": "2002",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Combien de régions administratives compte le Québec ?",
-      "reponse": "17",
+      "question": "Quelle fête de juin invite les gens d'une même rue à se rassembler ?",
+      "reponse": "La fête des voisins",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -55,37 +79,14 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel roi babylonien a gravé un célèbre code de lois ?",
-      "reponse": "Hammurabi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?",
+      "reponse": "La Station spatiale internationale",
+      "niveau": 3
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel panier passait dans les rangs pendant la messe du dimanche ?",
-      "reponse": "La quête",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel chirurgien a réalisé la première greffe du cœur ?",
-      "reponse": "Christiaan Barnard",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on plusieurs notes jouées en même temps ?",
-      "reponse": "Un accord",
+      "categorie": "Géographie",
+      "question": "Quel pays d'Europe a la forme d'une main et borde la mer Baltique ?",
+      "reponse": "La Pologne",
       "niveau": 3,
       "ages": [
         "ados",
@@ -94,11 +95,12 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle carte de plastique rigide permettait de louer des films au club vidéo ?",
-      "reponse": "La carte de membre",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on un extrait de chanson repris dans une autre chanson ?",
+      "reponse": "Un échantillon",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes"
       ]
     },
@@ -112,9 +114,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle autrice et animatrice québécoise a abordé les tabous à la télé pendant des décennies ?",
-      "reponse": "Janette Bertrand",
+      "categorie": "Québec",
+      "question": "Quel poète québécois a écrit L'homme rapaillé ?",
+      "reponse": "Gaston Miron",
       "niveau": 3,
       "ages": [
         "aines"
@@ -122,95 +124,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle planète tourne couchée sur le côté ?",
-      "reponse": "Uranus",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle crêpe japonaise salée vient d'Osaka ?",
-      "reponse": "L'okonomiyaki",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel parc animalier du Lac-Saint-Jean se visite à bord d'un train grillagé ?",
-      "reponse": "Le zoo de Saint-Félicien",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée est remis au champion du Super Bowl ?",
-      "reponse": "Trophée Lombardi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
-      "reponse": "Klô Pelgag",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la terre gelée sans arbres du Grand Nord ?",
-      "reponse": "La toundra",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle figure de style exagère volontairement ?",
-      "reponse": "L'hyperbole",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel ensemble de cloches sonne dans le clocher d'une église ?",
-      "reponse": "Le carillon",
-      "niveau": 3
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation japonais suit une fillette prisonnière d'un bain public d'esprits ?",
-      "reponse": "Le Voyage de Chihiro",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
-      "reponse": "Dans une galaxie près de chez vous",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus long fleuve du Canada ?",
-      "reponse": "Le Mackenzie",
+      "question": "Comment mesure-t-on la force des ouragans ?",
+      "reponse": "Saffir-Simpson",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -229,10 +144,94 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport pratique la famille Hart de Calgary ?",
-      "reponse": "La lutte",
+      "question": "Quel coureur éthiopien a gagné le marathon pieds nus ?",
+      "reponse": "Abebe Bikila",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?",
+      "reponse": "Fanfreluche",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel studio japonais a créé Mon voisin Totoro ?",
+      "reponse": "Ghibli",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel site de mode en ligne inonde le marché de vêtements à très bas prix ?",
+      "reponse": "Shein",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la peur des hauteurs ?",
+      "reponse": "L'acrophobie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel cheval célèbre a gagné la Triple Couronne en 1973 ?",
+      "reponse": "Secretariat",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui dirige une chorale ?",
+      "reponse": "Un chef de chœur",
+      "niveau": 3
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
+      "reponse": "La granita",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe progressif québécois a fait L'Heptade ?",
+      "reponse": "Harmonium",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?",
+      "reponse": "L'écoute en rafale",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]

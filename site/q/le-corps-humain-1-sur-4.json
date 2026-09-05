@@ -8,60 +8,20 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
-      "reponse": "Les branchies",
+      "question": "Quel organe pompe le sang ?",
+      "reponse": "Le cœur",
       "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
-      "reponse": "Dans l'œil du dragon",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel minéral renforce les os ?",
-      "reponse": "Le calcium",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle est la fleur emblème du Québec ?",
-      "reponse": "Iris versicolore",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à peau, porté en bandoulière, rythme le pas des soldats ?",
-      "reponse": "Un tambour militaire",
-      "niveau": 3
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle vitamine trouve-t-on dans les oranges ?",
-      "reponse": "La vitamine C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle peluche électronique aux grands yeux parlait toute seule en 1998 ?",
-      "reponse": "Le Furby",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel géant mythologique n'a qu'un seul œil ?",
-      "reponse": "Le cyclope",
+      "question": "Combien de côtés a un carré ?",
+      "reponse": "Quatre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est l'os le plus long du corps humain ?",
+      "reponse": "Le fémur",
       "niveau": 1
     },
     {
@@ -76,10 +36,14 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel liquide rouge circule dans nos veines ?",
-      "reponse": "Le sang",
-      "niveau": 1
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir les yeux dans la graisse de bines ?",
+      "reponse": "Être dans la lune",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
@@ -88,28 +52,82 @@
       "niveau": 1
     },
     {
+      "categorie": "Culture générale",
+      "question": "Quel géant mythologique n'a qu'un seul œil ?",
+      "reponse": "Le cyclope",
+      "niveau": 1
+    },
+    {
       "categorie": "Sciences et nature",
-      "question": "Quels organes nous permettent d'entendre ?",
-      "reponse": "Les oreilles",
+      "question": "Combien de paires de côtes avons-nous ?",
+      "reponse": "Douze",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe contrôle tout le corps ?",
+      "reponse": "Le cerveau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels organes filtrent le sang ?",
+      "reponse": "Les reins",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus petite unité du vivant ?",
+      "reponse": "La cellule",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Le pluriel de genou prend un S ou un X ?",
+      "reponse": "Un X",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de chromosomes possède l'humain ?",
+      "reponse": "46",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Dans quelle partie du corps loge l'os appelé enclume ?",
+      "reponse": "Dans l'oreille",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
+      "reponse": "Les branchies",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
-      "reponse": "Une sirène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel fromage frais grince sous la dent ?",
-      "reponse": "Fromage en grains",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu consiste à se cacher pendant qu'un joueur compte les yeux fermés ?",
-      "reponse": "La cachette",
-      "niveau": 1
+      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
+      "reponse": "Dans l'œil du dragon",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -119,8 +137,8 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de dents de lait a un enfant ?",
-      "reponse": "20",
+      "question": "Combien de litres de sang contient un adulte ?",
+      "reponse": "Cinq",
       "niveau": 2,
       "ages": [
         "ados",
@@ -129,50 +147,39 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?",
-      "reponse": "Luca",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la plus petite unité du vivant ?",
-      "reponse": "La cellule",
+      "question": "Comment appelle-t-on l'ensemble des os du corps ?",
+      "reponse": "Le squelette",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel muscle bat sans jamais se reposer ?",
-      "reponse": "Le cœur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel document de peau ou de papier, écrit à la main, se copiait dans les monastères ?",
-      "reponse": "Un manuscrit",
-      "niveau": 3
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quels bonbons mous et colorés collent aux dents ?",
-      "reponse": "Les jujubes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de sens possède l'être humain ?",
-      "reponse": "Cinq",
+      "question": "Quels organes nous servent à respirer ?",
+      "reponse": "Les poumons",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel panneau rouge à huit côtés oblige l'auto à s'immobiliser ?",
-      "reponse": "Un arrêt",
+      "question": "Quelle fête du 14 février fait échanger des cartes en forme de cœur ?",
+      "reponse": "La Saint-Valentin",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui laisse de l'argent sous l'oreiller en échange d'une dent ?",
+      "reponse": "La fée des dents",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe produit l'insuline ?",
+      "reponse": "Le pancréas",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

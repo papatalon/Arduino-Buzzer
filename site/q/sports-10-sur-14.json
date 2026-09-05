@@ -8,30 +8,20 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quel autre nom donne-t-on au ping-pong ?",
-      "reponse": "Tennis de table",
+      "question": "Combien de prises pour retirer un frappeur ?",
+      "reponse": "Trois",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Que pleut-il sur la patinoire quand un joueur compte trois buts dans le même match ?",
-      "reponse": "Des chapeaux",
+      "question": "Quelle discipline de ski descend en zigzag entre des piquets ?",
+      "reponse": "Le slalom",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle plongeuse de Laval a gagné l'argent en tremplin synchro à Tokyo ?",
-      "reponse": "Jennifer Abel",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel Serbe a remporté son premier titre du grand chelem à Melbourne en 2008 ?",
-      "reponse": "Novak Djokovic",
+      "question": "Quelle course américaine tourne en ovale 500 milles ?",
+      "reponse": "Indianapolis 500",
       "niveau": 2,
       "ages": [
         "ados",
@@ -41,15 +31,15 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport se joue avec un ballon qu'on frappe des mains par-dessus un filet ?",
-      "reponse": "Le volleyball",
+      "question": "Quel disque de plastique lance-t-on à un ami ou à un chien au parc ?",
+      "reponse": "Le frisbee",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Combien de temps dure une punition mineure au hockey ?",
-      "reponse": "Deux minutes",
-      "niveau": 1
+      "question": "Comment appelle-t-on la pratique où l'entraîneur choisit son équipe ?",
+      "reponse": "Un camp d'entraînement",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -64,147 +54,153 @@
     },
     {
       "categorie": "Sports",
+      "question": "Quelle épreuve combine dix disciplines ?",
+      "reponse": "Le décathlon",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel coureur canadien a perdu son titre olympique en 1988 ?",
+      "reponse": "Ben Johnson",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
+      "reponse": "Georges St-Pierre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle Canadienne a gagné les Internationaux des USA en 2019 ?",
+      "reponse": "Bianca Andreescu",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de joueurs par équipe au rugby à XV ?",
+      "reponse": "Quinze",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Que porte-t-on pour se baigner ?",
+      "reponse": "Un maillot de bain",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel numéro de tissu le coureur épingle-t-il sur sa poitrine ?",
+      "reponse": "Un dossard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quoi le joueur transporte-t-il ses bâtons d'un trou à l'autre ?",
+      "reponse": "Le sac de golf",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel hockeyeur a battu le record de buts de Gretzky en 2025 ?",
+      "reponse": "Ovechkin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de minutes dure un quart au football américain ?",
+      "reponse": "Quinze",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on chacune des dix pièces de bois que la boule renverse au bowling ?",
+      "reponse": "Une quille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel Argentin a soulevé la Coupe du monde 2022 ?",
+      "reponse": "Lionel Messi",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel coup de tennis se frappe bras en travers du corps, dos de la main devant ?",
+      "reponse": "Un revers",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue à cheval sur l'eau avec un cerf-volant tirant une planche ?",
+      "reponse": "Le kitesurf",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel pilote britannique a gagné son premier championnat de F1 en 2008 ?",
+      "reponse": "Lewis Hamilton",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
       "question": "Comment appelle-t-on les quatre coins que le coureur doit toucher au baseball ?",
       "reponse": "Les buts",
       "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Quel golfeur canadien a gagné le Masters en 2003 ?",
-      "reponse": "Mike Weir",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pays a inventé le judo ?",
-      "reponse": "Le Japon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien vaut un converti de deux points ?",
-      "reponse": "Deux",
+      "question": "Quel joueur de la NBA est surnommé King James ?",
+      "reponse": "LeBron James",
       "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel grand prix de F1 se court dans les rues d'une principauté ?",
-      "reponse": "Monaco",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le premier match de la saison ?",
-      "reponse": "Le match d'ouverture",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle course de traîneaux à chiens traverse l'Alaska ?",
-      "reponse": "L'Iditarod",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport pratiquait Michael Phelps ?",
-      "reponse": "La natation",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel maillot porte le meneur du Tour de France ?",
-      "reponse": "Le maillot jaune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport japonais oppose deux colosses dans un cercle ?",
-      "reponse": "Le sumo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle nage s'effectue sur le dos ?",
-      "reponse": "Le dos crawlé",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle ligne les coureurs doivent-ils franchir pour terminer une course ?",
-      "reponse": "La ligne d'arrivée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de médailles d'or olympiques a Michael Phelps ?",
-      "reponse": "23",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?",
-      "reponse": "Un tir de barrage",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de plage frappe un ballon par-dessus un filet, pieds dans le sable ?",
-      "reponse": "Le volleyball de plage",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel Espagnol a gagné Roland-Garros quatorze fois ?",
-      "reponse": "Rafael Nadal",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de combat olympique a un style gréco-romain ?",
-      "reponse": "La lutte",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     }
   ]

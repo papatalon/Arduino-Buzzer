@@ -8,89 +8,17 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Dans quelle région de France a eu lieu le débarquement du 6 juin 1944 ?",
-      "reponse": "La Normandie",
+      "question": "Quel physicien a formulé E=mc2 ?",
+      "reponse": "Einstein",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle révolution a renversé le tsar en 1917 ?",
+      "reponse": "La révolution russe",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande statue ou la stèle élevée en mémoire de quelqu'un ?",
-      "reponse": "Un monument",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelles sondes jumelles ont été lancées en 1977 ?",
-      "reponse": "Voyager",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Que cherchent les pirates en creusant sur une île déserte ?",
-      "reponse": "Un trésor",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple a construit le Colisée et les aqueducs ?",
-      "reponse": "Les Romains",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle embarcation d'écorce les Autochtones et les coureurs des bois utilisaient-ils ?",
-      "reponse": "Le canot d'écorce",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande demeure luxueuse d'un roi ?",
-      "reponse": "Un palais",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel astronaute américain a posé le pied sur la Lune le premier ?",
-      "reponse": "Neil Armstrong",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
-      "reponse": "Pierre de Rosette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle chaussure ouverte, faite de lanières de cuir, portaient les Romains ?",
-      "reponse": "Une sandale",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal les Autochtones des plaines chassaient-ils pour se nourrir et se vêtir ?",
-      "reponse": "Le bison",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel navire océanographique commandait Cousteau ?",
-      "reponse": "La Calypso",
-      "niveau": 2,
-      "ages": [
         "adultes",
         "aines"
       ]
@@ -103,26 +31,42 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le combattant qui affrontait des bêtes devant la foule romaine ?",
-      "reponse": "Un gladiateur",
+      "question": "Quel intendant a développé la Nouvelle-France ?",
+      "reponse": "Jean Talon",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel site de vidéos a été lancé en 2005 et racheté par Google un an plus tard ?",
+      "reponse": "YouTube",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la grille de fer qui descend pour bloquer l'entrée d'un château ?",
+      "reponse": "La herse",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Autour de quelle table siégeaient les chevaliers d'Arthur ?",
+      "reponse": "La Table ronde",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Dans quel bâtiment expose-t-on les objets et les squelettes du passé ?",
-      "reponse": "Un musée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel objet les premiers explorateurs utilisaient-ils pour trouver le nord ?",
-      "reponse": "Une boussole",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle centrale nucléaire a explosé en 1986 ?",
-      "reponse": "Tchernobyl",
+      "question": "Quel premier ministre britannique fumait le cigare pendant la guerre ?",
+      "reponse": "Churchill",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -131,8 +75,104 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
-      "reponse": "Trudeau",
+      "question": "Quel territoire Napoléon a-t-il vendu aux États-Unis ?",
+      "reponse": "La Louisiane",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel astronaute canadien a chanté dans l'espace ?",
+      "reponse": "Chris Hadfield",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
+      "reponse": "Pizarro",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle brebis clonée est née en 1996 ?",
+      "reponse": "Dolly",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple autochtone habitait Stadaconé et Hochelaga à l'arrivée des Français ?",
+      "reponse": "Les Iroquoiens",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle reine d'Égypte a un buste célèbre à Berlin ?",
+      "reponse": "Néfertiti",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui fut le premier homme dans l'espace ?",
+      "reponse": "Youri Gagarine",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel tunnel sous la mer a ouvert en 1994 ?",
+      "reponse": "Sous la Manche",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel drapeau les astronautes ont-ils planté sur la Lune en 1969 ?",
+      "reponse": "Le drapeau américain",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel peuple a construit Chichén Itzá ?",
+      "reponse": "Les Mayas",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle guerre a coupé un pays d'Asie en deux à partir de 1950 ?",
+      "reponse": "La guerre de Corée",
       "niveau": 1,
       "ages": [
         "ados",
@@ -142,20 +182,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle invention à deux roues se propulse avec des pédales ?",
-      "reponse": "La bicyclette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
-      "reponse": "Une diligence",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Pour quelle exposition la tour Eiffel fut-elle construite ?",
-      "reponse": "Expo de 1889",
+      "question": "Quelle femme pharaon portait une fausse barbe cérémoniale ?",
+      "reponse": "Hatchepsout",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -164,35 +192,41 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel moine a affiché 95 thèses en 1517 ?",
-      "reponse": "Luther",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année eut lieu le grand krach boursier ?",
-      "reponse": "1929",
+      "question": "Quel dictateur soviétique a succédé à Lénine ?",
+      "reponse": "Staline",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel télescope spatial a été lancé en 1990 ?",
-      "reponse": "Hubble",
+      "question": "Qui a déchiffré les hiéroglyphes ?",
+      "reponse": "Champollion",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal fut le premier en orbite ?",
+      "reponse": "La chienne Laïka",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel savant a expliqué la gravité en voyant tomber une pomme ?",
-      "reponse": "Newton",
-      "niveau": 2
+      "question": "En quelle année a débuté la Seconde Guerre mondiale ?",
+      "reponse": "1939",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

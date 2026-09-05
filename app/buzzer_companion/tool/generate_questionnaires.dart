@@ -1833,9 +1833,42 @@ void _controleQualite(List<Entry> all) {
     }
   }
 
+  // La variante de nom : deux réponses différentes désignent la même chose,
+  // et le joueur qui donne l'autre nom se fait refuser alors qu'il a raison.
+  // « La tire » et « la tire d'érable », « L'Ère de glace » et « L'Âge de
+  // glace », « le casque » et « le casque de vélo ». Le signal : deux
+  // réponses proches à l'écrit ET deux énoncés qui parlent du même sujet.
+  // On regroupe par mot de la réponse pour ne pas comparer tout avec tout.
+  final parMot = <String, List<Entry>>{};
+  for (final e in all) {
+    for (final m in plat(e.answer).split(' ')) {
+      if (m.length > 2 && !vides.contains(m)) (parMot[m] ??= []).add(e);
+    }
+  }
+  var variantes = 0;
+  final vues = <String>{};
+  for (final v in parMot.values) {
+    if (v.length > 60) continue;   // un mot trop courant ne dit rien
+    for (var i = 0; i < v.length; i++) {
+      for (var j = i + 1; j < v.length; j++) {
+        final a = plat(v[i].answer), b = plat(v[j].answer);
+        if (a == b) continue;
+        if (!a.contains(b) && !b.contains(a)) continue;
+        if (porteurs(v[i].question).intersection(porteurs(v[j].question)).length < 2) continue;
+        final signature = a.compareTo(b) < 0 ? '$a|$b' : '$b|$a';
+        if (!vues.add(signature)) continue;
+        variantes++;
+        stderr.writeln('Deux noms pour la même chose « ${v[i].answer} » / '
+            '« ${v[j].answer} » :');
+        stderr.writeln('   ${v[i].question}');
+        stderr.writeln('   ${v[j].question}');
+      }
+    }
+  }
+
   stdout.writeln('Contrôle : $echos réponses déjà dans leur question, '
       '$collisions réponses partagées par plusieurs questions, '
-      '$jumelles quasi-doublons.');
+      '$jumelles quasi-doublons, $variantes variantes de nom.');
 }
 
 // La clé d'unicité d'une question : l'énoncé sans accents, sans casse, sans

@@ -7,22 +7,10 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de lourd ?",
-      "reponse": "Léger",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle amie brillante accompagne Harry et Ron ?",
-      "reponse": "Hermione",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle soupe japonaise est à base de pâte de soja ?",
-      "reponse": "La soupe miso",
-      "niveau": 1,
+      "categorie": "Musique",
+      "question": "Quel appareil branche la guitare électrique pour faire sortir le son ?",
+      "reponse": "L'amplificateur",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -30,20 +18,27 @@
       ]
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Pluriel de madame ?",
+      "reponse": "Mesdames",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal à longues oreilles adore les carottes ?",
+      "reponse": "Le lapin",
+      "niveau": 1
+    },
+    {
       "categorie": "Histoire",
-      "question": "Quel mur antique protégeait l'Angleterre romaine ?",
-      "reponse": "Mur d'Hadrien",
-      "niveau": 3,
+      "question": "Quelle crise de 1962 concernait des missiles ?",
+      "reponse": "Crise de Cuba",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on un spectacle où les acteurs chantent et dansent leur histoire ?",
-      "reponse": "Une comédie musicale",
-      "niveau": 2
     },
     {
       "categorie": "Culture générale",
@@ -52,51 +47,31 @@
       "niveau": 1
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de gymnase élimine les joueurs touchés par le ballon ?",
+      "reponse": "Le ballon-chasseur",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du cochon ?",
+      "reponse": "Le grognement",
+      "niveau": 1
+    },
+    {
       "categorie": "Cinéma et télé",
-      "question": "Quelle émission jeunesse québécoise a Passe-Montagne ?",
-      "reponse": "Passe-Partout",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat argentin grille des viandes au feu de bois ?",
-      "reponse": "L'asado",
-      "niveau": 3,
+      "question": "Quel film d'animation organise un grand concours de chant entre animaux ?",
+      "reponse": "Tous en scène",
+      "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?",
-      "reponse": "La lessiveuse à tordeur",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie coûter les yeux de la tête ?",
-      "reponse": "Coûter très cher",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil envoyait une feuille de papier par la ligne téléphonique ?",
-      "reponse": "Le fax",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Synonyme de bateau, commençant par N ?",
-      "reponse": "Navire",
-      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -105,16 +80,95 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Angleterre ?",
-      "reponse": "Londres",
+      "categorie": "Québec",
+      "question": "Quel arbre du Québec donne des cocottes que les enfants ramassent ?",
+      "reponse": "Le pin",
       "niveau": 1
     },
     {
+      "categorie": "Géographie",
+      "question": "Combien de territoires compte le Canada ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle plongeuse de Laval a gagné l'argent en tremplin synchro à Tokyo ?",
+      "reponse": "Jennifer Abel",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série suit la famille royale anglaise ?",
+      "reponse": "The Crown",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal construit des barrages dans les rivières ?",
+      "reponse": "Le castor",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles galettes à petits carreaux se mangent avec du sirop ?",
+      "reponse": "Les gaufres",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on la basilique Saint-Pierre ?",
+      "reponse": "Rome (Vatican)",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle bataille de 1066 a livré l'Angleterre aux Normands ?",
+      "reponse": "Hastings",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sprinteur canadien a gagné le 100 m aux JO de 1996 ?",
+      "reponse": "Donovan Bailey",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Musique",
-      "question": "Quelle comptine réveille un meunier dont le moulin va trop vite ?",
-      "reponse": "Meunier tu dors",
-      "niveau": 2
+      "question": "Quelle chanteuse québécoise a une voix puissante et chante Un peu plus haut ?",
+      "reponse": "Ginette Reno",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel dessert de la cabane à sucre se roule sur la neige avec un bâton ?",
+      "reponse": "La tire",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -123,71 +177,33 @@
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle couleur de carton avertit un joueur au soccer ?",
-      "reponse": "Jaune",
+      "categorie": "Mots et langue",
+      "question": "Que signifie attache ta tuque ?",
+      "reponse": "Prépare-toi",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on la grosse partie de l'arbre qui porte les branches ?",
-      "reponse": "Le tronc",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel objet en forme de boule qui tourne montre tous les pays du monde ?",
-      "reponse": "Le globe terrestre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle série de romans suit Émilie Bordeleau ?",
-      "reponse": "Les Filles de Caleb",
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la fête où les enfants dorment chez un ami ?",
+      "reponse": "Une soirée pyjama",
       "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a remporté la bataille des plaines d'Abraham ?",
-      "reponse": "Les Britanniques",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel pilote britannique a gagné son premier championnat de F1 en 2008 ?",
-      "reponse": "Lewis Hamilton",
-      "niveau": 2,
-      "ages": [
+        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle noix compose le beurre le plus vendu ?",
+      "reponse": "L'arachide",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle créature de la nuit dort dans un cercueil et craint l'ail ?",
-      "reponse": "Un vampire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel tableau classe tous les éléments chimiques ?",
-      "reponse": "Tableau périodique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on au Québec la neige mouillée et boueuse du printemps ?",
-      "reponse": "La slush",
-      "niveau": 1
+      "question": "Quel personnage viendrait jeter du sable dans les yeux des enfants le soir ?",
+      "reponse": "Le marchand de sable",
+      "niveau": 2
     }
   ]
 }

@@ -7,64 +7,44 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quelle carte à puce sert à payer le métro et l'autobus à Montréal ?",
-      "reponse": "La carte Opus",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film Disney suit 101 chiens tachés ?",
-      "reponse": "Les 101 Dalmatiens",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "De quelle couleur est le fond du drapeau du Québec ?",
-      "reponse": "Bleu",
+      "categorie": "Géographie",
+      "question": "Quelle ville italienne est célèbre pour ses canaux ?",
+      "reponse": "Venise",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle barbe sucrée se vend dans les fêtes foraines ?",
-      "reponse": "Barbe à papa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au water-polo ?",
-      "reponse": "Sept",
-      "niveau": 3,
+      "question": "Quelle crêpe française est flambée à l'orange ?",
+      "reponse": "Crêpe Suzette",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Sur quel navire Darwin a-t-il navigué ?",
-      "reponse": "Le Beagle",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le jeu qui fait chercher des chocolats cachés à Pâques ?",
-      "reponse": "La chasse aux cocos",
+      "question": "Comment appelle-t-on le chef qui régnait sur tout l'Empire romain ?",
+      "reponse": "Un empereur",
       "niveau": 2
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel temps du passé décrit une action habituelle ?",
-      "reponse": "L'imparfait",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le bouton qui rend la musique plus forte ?",
+      "reponse": "Le volume",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle exclamation lance Homer Simpson ?",
+      "reponse": "D'oh",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel mammifère australien a un bec de canard ?",
+      "reponse": "L'ornithorynque",
       "niveau": 2,
       "ages": [
         "ados",
@@ -73,32 +53,30 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le symbole chimique de l'hydrogène ?",
-      "reponse": "H",
-      "niveau": 1,
+      "categorie": "Mots et langue",
+      "question": "Combien de syllabes compte le mot « chocolat » ?",
+      "reponse": "Trois",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
+      "reponse": "Dans une galaxie près de chez vous",
+      "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
-      "reponse": "Quatre ans",
-      "niveau": 1
+      "categorie": "Histoire",
+      "question": "Quelle femme a reçu deux prix Nobel ?",
+      "reponse": "Marie Curie",
+      "niveau": 2
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse perd sa pantoufle de verre ?",
-      "reponse": "Cendrillon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel outil racle la neige des pare-brise ?",
-      "reponse": "Un gratteux",
+      "categorie": "Culture pop",
+      "question": "Dans quel jeu abaisse-t-on des visages pour deviner le personnage de l'adversaire ?",
+      "reponse": "Qui est-ce ?",
       "niveau": 1
     },
     {
@@ -113,80 +91,43 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel golfe borde le Texas et la Floride ?",
-      "reponse": "Golfe du Mexique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Combien y a-t-il de Grands Lacs ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelles chaussures à roulettes se lacent aux pieds pour rouler sur l'asphalte ?",
+      "reponse": "Des patins à roues alignées",
+      "niveau": 2
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de côtés a un triangle ?",
+      "reponse": "Trois",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel moine a affiché 95 thèses en 1517 ?",
-      "reponse": "Luther",
+      "question": "Quel peintre italien a peint la Joconde ?",
+      "reponse": "Léonard de Vinci",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle ligue de hockey junior regroupe les équipes du Québec et des Maritimes ?",
+      "reponse": "La LHJMQ",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel navigateur a mené la première expédition autour du monde ?",
-      "reponse": "Magellan",
-      "niveau": 2
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage au chapeau pointu vole sur un balai ?",
-      "reponse": "Une sorcière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel maïs éclate au cinéma ?",
-      "reponse": "Le popcorn",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on le bâtiment de ferme où logent les vaches ?",
-      "reponse": "L'étable",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe a chanté Stairway to Heaven ?",
-      "reponse": "Led Zeppelin",
-      "niveau": 2,
-      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal hurle à la lune et chasse en meute ?",
-      "reponse": "Le loup",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Brésil ?",
-      "reponse": "Brasilia",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de côtés a un triangle ?",
-      "reponse": "Trois",
+      "question": "Quel astre supermassif avale même la lumière ?",
+      "reponse": "Le trou noir",
       "niveau": 1
     },
     {
@@ -197,9 +138,53 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la partie d'une chanson qui change à chaque fois ?",
-      "reponse": "Le couplet",
-      "niveau": 2
+      "question": "Comment appelle-t-on une petite chanson simple que les enfants apprennent par cœur ?",
+      "reponse": "Une comptine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?",
+      "reponse": "Luca",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel inspecteur maladroit poursuit la Panthère rose ?",
+      "reponse": "Clouseau",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment nomme-t-on trois buts d'un même joueur ?",
+      "reponse": "Un tour du chapeau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel pain rond avec un trou se mange à Montréal ?",
+      "reponse": "Le bagel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne qui enseigne dans une classe ?",
+      "reponse": "L'enseignant",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelles chutes près de Québec sont plus hautes que Niagara ?",
+      "reponse": "Montmorency",
+      "niveau": 1
     }
   ]
 }

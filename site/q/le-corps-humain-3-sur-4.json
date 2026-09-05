@@ -7,47 +7,70 @@
   "emoji": "🧠",
   "questions": [
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie coûter les yeux de la tête ?",
-      "reponse": "Coûter très cher",
+      "categorie": "Histoire",
+      "question": "Quels marins portaient un bandeau sur l'œil et cherchaient des trésors ?",
+      "reponse": "Les pirates",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel organe produit l'insuline ?",
-      "reponse": "Le pancréas",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal polaire a la peau noire sous son pelage blanc ?",
-      "reponse": "L'ours polaire",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle articulation relie la cuisse à la jambe ?",
+      "reponse": "Le genou",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel peintre s'est coupé une oreille ?",
-      "reponse": "Van Gogh",
+      "question": "Quel appareil se sangle sur les yeux pour se retrouver dans un monde en trois dimensions ?",
+      "reponse": "Un casque VR",
       "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à dents pincées accompagne le folklore ?",
+      "reponse": "La guimbarde",
+      "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
+      "reponse": "Une sirène",
+      "niveau": 1
+    },
+    {
       "categorie": "Sciences et nature",
-      "question": "Combien d'os dans le squelette humain adulte ?",
-      "reponse": "206",
+      "question": "Quelle partie de l'œil donne sa couleur ?",
+      "reponse": "L'iris",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle vitamine trouve-t-on dans les oranges ?",
+      "reponse": "La vitamine C",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels organes nous permettent de voir ?",
+      "reponse": "Les yeux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de dents possède un adulte en général ?",
+      "reponse": "32",
       "niveau": 2,
       "ages": [
         "ados",
@@ -57,13 +80,34 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle protéine transporte l'oxygène dans le sang ?",
-      "reponse": "L'hémoglobine",
-      "niveau": 2,
+      "question": "Quel os protège le cerveau ?",
+      "reponse": "Le crâne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
+      "reponse": "La tradition orale",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit orange à peau veloutée cache un gros noyau ?",
+      "reponse": "La pêche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle peluche électronique aux grands yeux parlait toute seule en 1998 ?",
+      "reponse": "Le Furby",
+      "niveau": 3,
+      "ages": [
+        "adultes"
       ]
     },
     {
@@ -79,6 +123,45 @@
     },
     {
       "categorie": "Sciences et nature",
+      "question": "Quelle est la température du corps humain en santé ?",
+      "reponse": "37 degrés C",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe de la bouche permet de goûter ?",
+      "reponse": "La langue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle est la fleur emblème du Québec ?",
+      "reponse": "Iris versicolore",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Pluriel de œil ?",
+      "reponse": "Yeux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de dents de lait a un enfant ?",
+      "reponse": "20",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
       "question": "Quelle vitamine fabrique la peau au soleil ?",
       "reponse": "La vitamine D",
       "niveau": 2,
@@ -89,118 +172,25 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
-      "reponse": "La tradition orale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quels organes nous servent à respirer ?",
-      "reponse": "Les poumons",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel sucre trouve-t-on dans le sang ?",
-      "reponse": "Le glucose",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle partie de la cellule contient l'ADN ?",
-      "reponse": "Le noyau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Le pluriel de genou prend un S ou un X ?",
-      "reponse": "Un X",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la température du corps humain en santé ?",
-      "reponse": "37 degrés C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation suit un mammouth, un paresseux et un tigre à dents de sabre ?",
-      "reponse": "L'Âge de glace",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quels organes filtrent le sang ?",
-      "reponse": "Les reins",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel groupe sanguin est donneur universel ?",
-      "reponse": "O négatif",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel personnage viendrait jeter du sable dans les yeux des enfants le soir ?",
-      "reponse": "Le marchand de sable",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de poumons possède l'humain ?",
-      "reponse": "Deux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Dans quelle partie du corps loge l'os appelé enclume ?",
-      "reponse": "Dans l'oreille",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quels marins portaient un bandeau sur l'œil et cherchaient des trésors ?",
-      "reponse": "Les pirates",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
       "question": "Qu'est-ce qui se contracte pour faire bouger les os ?",
       "reponse": "Les muscles",
       "niveau": 2
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel organe de la bouche permet de goûter ?",
-      "reponse": "La langue",
+      "categorie": "Culture pop",
+      "question": "Quel homme chauve à boucle d'oreille nettoie tout dans les publicités ?",
+      "reponse": "Monsieur Net",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie coûter les yeux de la tête ?",
+      "reponse": "Coûter très cher",
       "niveau": 1
     }
   ]
