@@ -1795,6 +1795,56 @@ const kThemes = <Theme>[
     'tv hebdo', 'cre basile', 'symphorien', 'yeye', 'discotheque',
     'club video', 'transistor', 'sears', 'lessiveuse', 'tordeur',
   ], proposeAges: ['aines']),
+  // CE QU'ON FAIT EN PARTANT ET CE QU'ON VA VOIR, pas la géographie.
+  //
+  // LE PIÈGE EST « Le Québec ailleurs » : une thématique qui refait une
+  // catégorie de la banque se lit comme un doublon dans la colonne des
+  // facettes. Voyages frôle Géographie (340 questions) et doit s'en
+  // distinguer par le SUJET, pas par un excludeCategories.
+  //
+  // La frontière tenue, question par question :
+  //   DEDANS  le départ (passeport, douane, valise, aéroport, escale,
+  //           décalage horaire), le séjour (hôtel, auberge, camping,
+  //           croisière, tout-inclus) et ce qu'on visite en arrivant
+  //           (monuments, musées, parcs nationaux, ruines, plages).
+  //   DEHORS  la géographie de connaissance : capitales, frontières,
+  //           superficies, le plus long fleuve, quel océan borde quoi.
+  //           C'est le coeur de la catégorie, et l'y reprendre ferait de
+  //           Voyages son clone.
+  //   DEHORS  le véhicule comme machine (moteur, pneus, permis) : c'est
+  //           Les transports. L'avion qui emmène en vacances porte les
+  //           deux, la mécanique de l'avion n'en porte qu'une.
+  Theme('voyages', 'Voyages', '🧳',
+      'Passeports, monuments et tout ce qu\'on va voir ailleurs.', [
+    'voyage', 'voyages', 'voyageur', 'voyageurs', 'voyager',
+    'touriste', 'touristes', 'touristique', 'tourisme',
+    'vacances', 'valise', 'valises', 'bagage', 'bagages', 'malle',
+    'passeport', 'passeports', 'douane', 'douanes', 'visa', 'frontiere',
+    'aeroport', 'aeroports', 'decollage', 'atterrissage', 'escale',
+    'embarquement', 'terminal', 'piste', 'hublot', 'agent de bord',
+    'decalage horaire', 'fuseau', 'fuseaux',
+    'hotel', 'hotels', 'auberge', 'motel', 'camping', 'tente', 'roulotte',
+    'chalet', 'gite', 'reservation', 'tout-inclus', 'croisiere',
+    'monument', 'monuments', 'musee', 'musees', 'cathedrale', 'basilique',
+    'pyramide', 'pyramides', 'temple', 'palais', 'chateau', 'chateaux',
+    'statue', 'ruines', 'colisee', 'acropole', 'parthenon', 'louvre',
+    'eiffel', 'machu picchu', 'taj mahal', 'stonehenge', 'petra',
+    'muraille', 'kremlin', 'vatican', 'sagrada', 'guggenheim',
+    'parc national', 'chutes', 'geyser', 'safari', 'randonnee',
+    'souvenir', 'carte postale', 'guide', 'depaysement', 'excursion',
+    'sejour', 'destination', 'destinations', 'itineraire',
+    'plage', 'plages', 'gare', 'gares', 'billet', 'billets', 'guichet',
+    'spa', 'sentier', 'sentiers', 'belvedere', 'observatoire', 'funiculaire',
+    'gondole', 'teleferique', 'oratoire', 'biodome', 'planetarium',
+    'aquarium', 'zoo', 'jardin botanique', 'big ben', 'times square',
+    'broadway', 'las vegas', 'hawaii', 'floride', 'cuba', 'punta cana',
+    'varadero', 'cancun', 'bahamas', 'jamaique', 'venise', 'amsterdam',
+    'barcelone', 'sagrada familia', 'alhambra', 'tour cn', 'niagara',
+    'perce', 'tadoussac', 'charlevoix', 'saguenay', 'madeleine', 'gaspesie',
+    'vieux-quebec', 'frontenac', 'carnaval', 'desert', 'oasis', 'monnaie',
+    'devise', 'pourboire', 'expo 67', 'exposition universelle', 'terrasse',
+    'boulevard', 'avenue', 'quartier', 'pension', 'sac a dos',
+  ]),
 ];
 
 void _controleQualite(List<Entry> all) {
