@@ -58,12 +58,26 @@ Aucun outil. Une question comme « Dans quel pays trouve-t-on la savane, les
 lions et les girafes ? » a dix bonnes réponses, et rien ne la signale. La
 vingtaine trouvée en septembre l'a été à l'œil, sur un dixième de la banque.
 
-### 3. La péremption
+### 3. La péremption — FAIT (septembre 2026)
 
-Rien ne marque les questions qui vieillissent toutes seules : Haaland à
-Manchester City, Cineplex, Sports Experts, le Rocket à Laval, le Centre
-Vidéotron. Piste : un marqueur `# périssable` sur ces lignes, revues une fois
-l'an.
+Une ligne `~ raison` sous une question la marque comme périssable, à côté des
+marqueurs `>` (retouche) et `-` (retrait). Le générateur les compte à chaque
+passage, et
+
+    dart run tool/generate_questionnaires.dart --perissables
+
+les liste avec leur raison. **C'est la commande de la revue annuelle.**
+
+Le critère est étroit, et c'est voulu : on marque une question dont la
+réponse peut devenir **fausse** alors que l'énoncé reste valable. Un record
+qu'on bat, un joueur qui change d'équipe, un compte qui bouge, un
+amphithéâtre qui change de commanditaire. « Qui a fondé Québec ? » sera vrai
+dans vingt ans et ne se marque pas. Une marque qui disparaîtrait rendrait sa
+question caduque, pas fausse : elle ne se marque pas non plus.
+
+23 questions marquées au départ, surtout dans Sports et Québec. Une était
+déjà périmée quand on l'a trouvée : « Quel Espagnol règne sur Roland-Garros ? »
+au présent, alors que Nadal a pris sa retraite en novembre 2024.
 
 ### 4. Les niveaux et les tranches
 

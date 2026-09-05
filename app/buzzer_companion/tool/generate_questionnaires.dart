@@ -257,6 +257,12 @@ class Entry {
 }
 
 void main(List<String> args) {
+  // « --perissables » liste les questions à revoir une fois l'an plutôt que
+  // de générer le site : c'est la commande de la revue annuelle.
+  if (args.contains('--perissables')) {
+    _listerPerissables();
+    return;
+  }
   if (args.isNotEmpty && args.first.trim().isNotEmpty) {
     _outputDir = args.first.trim();
   }
@@ -321,8 +327,12 @@ void main(List<String> args) {
       0, (n, c) => n + (c.accented?.where((l) => l.retouche != null).length ?? 0));
   final retirees = categories.fold<int>(
       0, (n, c) => n + (c.accented?.where((l) => l.retiree != null).length ?? 0));
+  final perissables = _perissablesLibres +
+      categories.fold<int>(
+          0, (n, c) => n + (c.accented?.where((l) => l.perissable != null).length ?? 0));
   stdout.writeln('${all.length - sansNiveau} questions cotées, '
-      '$sansNiveau sans niveau, $retouchees retouchées, $retirees retirées.');
+      '$sansNiveau sans niveau, $retouchees retouchées, $retirees retirées, '
+      '$perissables à revoir une fois l\'an.');
 
   final out = Directory(_outputDir);
   // Le dossier q/ est vidé avant d'écrire : sans ça, un questionnaire
@@ -1075,7 +1085,13 @@ class _Ligne {
   // par question de la source, et le motif se relit quand on se demande, dans
   // deux ans, pourquoi elle n'est plus jouée.
   String? retiree;
-  // Voir [Tranche]. Marqué par une ligne « ~ enfants ados », par exemple.
+  // Ce qu'il faut revérifier, ou null. Marqué par une ligne « ~ raison ».
+  // Réservé aux questions dont la réponse peut devenir FAUSSE alors que
+  // l'énoncé reste valable : un record qu'on bat, un joueur qui change
+  // d'équipe, un compte qui bouge. « Qui a fondé Québec ? » sera vrai dans
+  // vingt ans et ne se marque pas. Une marque qui disparaîtrait rendrait sa
+  // question caduque, pas fausse : elle ne se marque pas non plus.
+  String? perissable;
   Set<Tranche>? tranches;
 }
 
@@ -1140,7 +1156,34 @@ String? _literalsAfter(String raw, String marker) {
 // Pas d'en-tête qui vaudrait pour tout le fichier : ce serait une règle
 // implicite de plus, et l'exception y passerait inaperçue. Chaque question
 // écrit son niveau et ses tranches.
+// La revue annuelle : lit les fichiers de questions et sort ce qu'il faut
+// aller revérifier, avec la raison écrite à côté du marqueur. Ne génère rien.
+void _listerPerissables() {
+  var n = 0;
+  for (final fichier in _fichiersQuestions()) {
+    final marquees = <String>[];
+    for (final bloc in [fichier.miroir, fichier.libres]) {
+      for (final ligne in _lireBloc(bloc, fichier.nom)) {
+        if (ligne.perissable == null) continue;
+        final servie = ligne.retouche ?? ligne.texte;
+        marquees.add('   ${servie.split('|').first.trim()}\n'
+            '      → ${servie.split('|').last.trim()}   (${ligne.perissable})');
+      }
+    }
+    if (marquees.isEmpty) continue;
+    stdout.writeln('${fichier.categorie} (${marquees.length})');
+    marquees.forEach(stdout.writeln);
+    n += marquees.length;
+  }
+  stdout.writeln('\n$n questions à revérifier. '
+      'Chacune reste jouable, mais sa réponse a une date de péremption.');
+}
+
 final _emojiInedites = <String, String>{};
+
+// Les questions à revoir une fois l'an qui vivent du côté libre du fichier :
+// leurs _Ligne ne survivent pas à la lecture, alors on les compte au passage.
+int _perissablesLibres = 0;
 
 String _emojiDe(String categorie) =>
     kEmojiCategories[categorie] ?? _emojiInedites[categorie] ?? '';
@@ -1153,6 +1196,7 @@ List<Entry> _readInedites(Set<String> categoriesConnues) {
     _emojiInedites[fichier.categorie] = fichier.emoji;
     for (final ligne in _lireBloc(fichier.libres, fichier.nom)) {
       if (ligne.retiree != null) continue;
+      if (ligne.perissable != null) _perissablesLibres++;
       final servie = ligne.retouche ?? ligne.texte;
       final sep = servie.indexOf('|');
       entries.add(Entry(
@@ -1192,6 +1236,19 @@ List<_Ligne> _lireBloc(List<String> lignes, String nom) {
         exit(1);
       }
       lues.last.retiree = l.substring(1).trim();
+      continue;
+    }
+
+    // Péremption : la question reste jouable, mais sa réponse a une date de
+    // péremption. Le générateur les liste à chaque passage pour qu'on les
+    // revoie une fois l'an, plutôt que de découvrir en pleine soirée que
+    // le joueur a changé d'équipe.
+    if (l.startsWith('~')) {
+      if (lues.isEmpty) {
+        stderr.writeln('$ou : péremption sans question à marquer.');
+        exit(1);
+      }
+      lues.last.perissable = l.substring(1).trim();
       continue;
     }
 
