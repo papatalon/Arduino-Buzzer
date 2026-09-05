@@ -7,62 +7,27 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Qu'est-ce qui est le plus rapide : le son ou la lumière ?",
-      "reponse": "La lumière",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir le cœur sur la main ?",
-      "reponse": "Être généreux",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit rouge à noyau couronne un sundae ?",
+      "reponse": "La cerise",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle île montréalaise accueille La Ronde ?",
-      "reponse": "Île Sainte-Hélène",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
-      "reponse": "L'Ontario",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel mammifère marin sauteur siffle et vit en groupe ?",
-      "reponse": "Le dauphin",
+      "question": "Comment appelle-t-on l'école qui suit le primaire, pendant cinq ans ?",
+      "reponse": "Le secondaire",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quelle carte est la plus forte au poker ?",
-      "reponse": "L'as",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle barbe sucrée se vend dans les fêtes foraines ?",
-      "reponse": "Barbe à papa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel fromage frais grince sous la dent ?",
-      "reponse": "Fromage en grains",
+      "question": "Combien de couleurs dans un arc-en-ciel ?",
+      "reponse": "Sept",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport pratiquait Serena Williams ?",
-      "reponse": "Le tennis",
+      "question": "Quel est le score parfait d'une partie de bowling ?",
+      "reponse": "300",
       "niveau": 1,
       "ages": [
         "ados",
@@ -71,93 +36,67 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel objet ouvre-t-on pour se protéger de la pluie ?",
-      "reponse": "Un parapluie",
+      "categorie": "Musique",
+      "question": "Dans « Alouette, gentille alouette », quelle partie plume-t-on en premier ?",
+      "reponse": "La tête",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit rouge garnit le shortcake ?",
-      "reponse": "La fraise",
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve Londres ?",
+      "reponse": "L'Angleterre",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Pluriel de cheval ?",
-      "reponse": "Chevaux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel extraterrestre veut téléphoner à la maison ?",
-      "reponse": "E.T.",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de café a une sirène verte dans son logo ?",
-      "reponse": "Starbucks",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel objet porté au poignet donne l'heure ?",
-      "reponse": "Une montre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film Pixar suit une voiture de course rouge ?",
-      "reponse": "Les Bagnoles",
+      "categorie": "Sports",
+      "question": "Quelle nage s'effectue sur le dos ?",
+      "reponse": "Le dos crawlé",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel véhicule à vapeur roulait sur des rails au 19e siècle ?",
-      "reponse": "La locomotive",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle dépanneuse rouillée est l'amie de Flash McQueen ?",
-      "reponse": "Mater",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de grand ?",
-      "reponse": "Petit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on la pièce où les joueurs enfilent leur équipement ?",
-      "reponse": "Le vestiaire",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel vêtement protège les habits quand on cuisine ?",
-      "reponse": "Un tablier",
+      "question": "Quel physicien a formulé E=mc2 ?",
+      "reponse": "Einstein",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel phénomène lumineux colore le ciel polaire ?",
-      "reponse": "Aurore boréale",
+      "question": "Quel naturaliste a proposé la théorie de l'évolution ?",
+      "reponse": "Darwin",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle note vient après le fa ?",
+      "reponse": "Le sol",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel objet frappe-t-on au hockey ?",
+      "reponse": "La rondelle",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel lac écossais abriterait un monstre ?",
-      "reponse": "Le Loch Ness",
-      "niveau": 1
+      "question": "Quel pays a la forme d'une botte ?",
+      "reponse": "L'Italie",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel rappeur canadien vient de Toronto ?",
-      "reponse": "Drake",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat de pâtes au fromage orange en boîte est célèbre au Canada ?",
+      "reponse": "Le Kraft Dinner",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -166,13 +105,89 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel style musical coréen a conquis la planète ?",
-      "reponse": "La K-pop",
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne qui enseigne dans une classe ?",
+      "reponse": "L'enseignant",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie du visage sert à sentir les odeurs ?",
+      "reponse": "Le nez",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel est le chien de compagnie de Mickey ?",
+      "reponse": "Pluto",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce rouge accompagne la dinde ?",
+      "reponse": "Aux canneberges",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle activité québécoise du printemps se fait dans une érablière, avec un repas ?",
+      "reponse": "La cabane à sucre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne assise aux commandes d'un avion ?",
+      "reponse": "Un pilote",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien font dix fois dix ?",
+      "reponse": "100",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie appuyer sur le champignon ?",
+      "reponse": "Accélérer",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Comment appelle-t-on les petits personnages bleus qui vivent dans des champignons ?",
+      "reponse": "Les Schtroumpfs",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle légende québécoise fait voler un canot ?",
+      "reponse": "La chasse-galerie",
       "niveau": 1,
       "ages": [
         "enfants",
-        "ados"
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle chenille fabrique un fil précieux en tissant son cocon ?",
+      "reponse": "Le ver à soie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel jeu télévisé fait tourner une grande roue ?",
+      "reponse": "La Roue de fortune",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     }
   ]

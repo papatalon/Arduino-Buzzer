@@ -8,9 +8,15 @@
   "questions": [
     {
       "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme projette une longue tige pointue le plus loin possible ?",
-      "reponse": "Le lancer du javelot",
-      "niveau": 2
+      "question": "Quel trophée remporte le champion de la LNH ?",
+      "reponse": "La coupe Stanley",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?",
+      "reponse": "Le football",
+      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -28,12 +34,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?",
-      "reponse": "Le football",
-      "niveau": 1
     },
     {
       "categorie": "Sports",
@@ -56,6 +56,12 @@
     },
     {
       "categorie": "Sports",
+      "question": "Quel sport frappe une petite balle blanche vers un trou avec un drapeau ?",
+      "reponse": "Le golf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
       "question": "Quel maillot porte le meilleur grimpeur du Tour de France ?",
       "reponse": "À pois",
       "niveau": 2,
@@ -70,17 +76,6 @@
       "question": "Quelles petites roues aident un enfant à apprendre le vélo ?",
       "reponse": "Des roues d'entraînement",
       "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec un disque volant en équipe ?",
-      "reponse": "L'ultimate",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Sports",
@@ -101,6 +96,17 @@
     },
     {
       "categorie": "Sports",
+      "question": "Quel sport se joue avec un disque volant en équipe ?",
+      "reponse": "L'ultimate",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
       "question": "Quel équipement large attaché aux pieds empêche de caler dans la neige épaisse ?",
       "reponse": "Les raquettes",
       "niveau": 1
@@ -118,14 +124,14 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel cerceau fait-on tourner autour de la taille ?",
-      "reponse": "Le hula hoop",
+      "question": "Quelle carte l'arbitre de soccer montre-t-il pour expulser un joueur ?",
+      "reponse": "Un carton rouge",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle carte l'arbitre de soccer montre-t-il pour expulser un joueur ?",
-      "reponse": "Un carton rouge",
+      "question": "Quel cerceau fait-on tourner autour de la taille ?",
+      "reponse": "Le hula hoop",
       "niveau": 1
     },
     {
@@ -157,21 +163,21 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel stade accueillait les Expos ?",
-      "reponse": "Stade olympique",
+      "question": "Quel joueur de hockey est surnommé La Merveille ?",
+      "reponse": "Wayne Gretzky",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel joueur de hockey est surnommé La Merveille ?",
-      "reponse": "Wayne Gretzky",
+      "question": "Quel stade accueillait les Expos ?",
+      "reponse": "Stade olympique",
       "niveau": 1,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -189,8 +195,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport frappe une petite balle blanche vers un trou avec un drapeau ?",
-      "reponse": "Le golf",
+      "question": "Quelle embarcation étroite se dirige avec une pagaie à deux pales ?",
+      "reponse": "Le kayak",
       "niveau": 1
     },
     {
@@ -198,17 +204,6 @@
       "question": "Combien de joueurs par équipe au soccer ?",
       "reponse": "Onze",
       "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de montagne grimpe des parois gelées à crampons ?",
-      "reponse": "L'alpinisme",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

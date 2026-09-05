@@ -8,9 +8,9 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes traverse la Suisse ?",
-      "reponse": "Les Alpes",
-      "niveau": 1
+      "question": "Comment appelle-t-on le livre rempli de cartes de tous les pays ?",
+      "reponse": "Un atlas",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -25,15 +25,15 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Sur quel continent se trouve l'Australie ?",
-      "reponse": "L'Océanie",
-      "niveau": 2
+      "question": "Quelle chaîne de montagnes traverse la Suisse ?",
+      "reponse": "Les Alpes",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle rivière célèbre coule à Ottawa ?",
-      "reponse": "L'Outaouais",
-      "niveau": 1,
+      "question": "Capitale de la Hongrie ?",
+      "reponse": "Budapest",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -53,36 +53,33 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel petit pays est enclavé entre France et Espagne ?",
-      "reponse": "Andorre",
-      "niveau": 3,
+      "question": "Quel micro-État borde Nice et la Méditerranée ?",
+      "reponse": "Monaco",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel lac canadien est le plus profond ?",
-      "reponse": "Lac des Esclaves",
-      "niveau": 3,
+      "question": "Quelle rivière célèbre coule à Ottawa ?",
+      "reponse": "L'Outaouais",
+      "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on une grande étendue d'eau douce entourée de terre ?",
-      "reponse": "Un lac",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
-      "reponse": "Le maelstrom",
+      "question": "Quelle fosse océanique est la plus profonde ?",
+      "reponse": "Les Mariannes",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -99,31 +96,26 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays d'Europe est célèbre pour ses montres, son chocolat et ses Alpes ?",
-      "reponse": "La Suisse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel archipel espagnol se trouve au large du Maroc ?",
-      "reponse": "Les Canaries",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le terrain planté de pommiers ?",
-      "reponse": "Un verger",
+      "question": "Quelle grande ville des États-Unis abrite Hollywood ?",
+      "reponse": "Los Angeles",
       "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on une terre entièrement entourée d'eau ?",
-      "reponse": "Une île",
+      "question": "Comment appelle-t-on un relief très haut qu'on gravit à pied ?",
+      "reponse": "Une montagne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on un cours d'eau qui se jette dans un fleuve ?",
+      "reponse": "Une rivière",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel point le plus au nord de la Terre est le domicile du père Noël ?",
+      "reponse": "Le pôle Nord",
       "niveau": 1
     },
     {
@@ -145,53 +137,47 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel est le plus grand pays du monde ?",
-      "reponse": "La Russie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée en Argentine ?",
-      "reponse": "L'espagnol",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la vague géante déclenchée par un tremblement de terre ?",
-      "reponse": "Un tsunami",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a Kaboul pour capitale ?",
-      "reponse": "L'Afghanistan",
+      "question": "Langue parlée en Autriche ?",
+      "reponse": "L'allemand",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a Bagdad pour capitale ?",
+      "reponse": "L'Irak",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus grand lac d'Afrique ?",
+      "reponse": "Le lac Victoria",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la secousse qui fait trembler le sol ?",
+      "reponse": "Un tremblement de terre",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
       "question": "Quel fleuve sacré traverse l'Inde ?",
       "reponse": "Le Gange",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel volcan sicilien est le plus actif d'Europe ?",
-      "reponse": "L'Etna",
       "niveau": 2,
       "ages": [
         "ados",
@@ -212,8 +198,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on une bande de sable au bord de la mer ?",
-      "reponse": "Une plage",
+      "question": "Dans quelle province se trouve Montréal ?",
+      "reponse": "Le Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus grand pays du monde ?",
+      "reponse": "La Russie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une des sept grandes masses de terre du globe ?",
+      "reponse": "Un continent",
       "niveau": 1
     }
   ]

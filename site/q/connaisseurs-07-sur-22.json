@@ -7,9 +7,19 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Musique",
+      "question": "Quel genre musical africain aux rythmes chaloupés s'est imposé mondialement ?",
+      "reponse": "L'afrobeat",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel appareil photo de carton s'achetait plein et se rapportait complet à développer ?",
-      "reponse": "L'appareil jetable",
+      "question": "Quel appareil de poche vibrait pour dire de rappeler quelqu'un, avant le cellulaire ?",
+      "reponse": "Le téléavertisseur",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -18,12 +28,64 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel club-école des Canadiens joue à Laval ?",
-      "reponse": "Le Rocket",
+      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
+      "reponse": "L'escalier Casse-Cou",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse néo-zélandaise a chanté Royals à seize ans ?",
+      "reponse": "Lorde",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
+      "reponse": "La Grande Ourse",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
+      "reponse": "Le Jolly Roger",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel numéro compose-t-on au Québec pour joindre un service non urgent de la ville ?",
+      "reponse": "Le 311",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la longue route de campagne bordée de fermes au Québec ?",
+      "reponse": "Un rang",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année l'euro est-il entré en circulation ?",
+      "reponse": "2002",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -38,98 +100,22 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
-      "reponse": "La ceinture fléchée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Où se tenaient les courses de chars à Rome ?",
-      "reponse": "Le Circus Maximus",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle note dure deux fois moins longtemps qu'une blanche ?",
-      "reponse": "La noire",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse américaine a chanté Espresso en 2024 ?",
-      "reponse": "Sabrina Carpenter",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de billes rouges au snooker ?",
-      "reponse": "Quinze",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
-      "reponse": "Les Classels",
+      "question": "Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?",
+      "reponse": "Fanfreluche",
       "niveau": 3,
       "ages": [
         "aines"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle ville du Québec accueille chaque été le Festival de la poutine ?",
-      "reponse": "Drummondville",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte à tartiner australienne est très salée ?",
+      "reponse": "La Vegemite",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel rappeur américain a reçu un prix Pulitzer pour un album ?",
-      "reponse": "Kendrick Lamar",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année eut lieu la bataille de Waterloo ?",
-      "reponse": "1815",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel défi a fait verser des seaux d'eau glacée sur des têtes en 2014 ?",
-      "reponse": "Le Ice Bucket Challenge",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
       ]
     },
     {
@@ -139,72 +125,29 @@
       "niveau": 3
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle ligue de hockey junior regroupe les équipes du Québec et des Maritimes ?",
-      "reponse": "La LHJMQ",
+      "categorie": "Géographie",
+      "question": "Dans quelle ville américaine se trouve Disney World ?",
+      "reponse": "Orlando",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel trophée est remis au champion du Super Bowl ?",
+      "reponse": "Trophée Lombardi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel rappeur américain tatoué au visage a chanté Circles ?",
+      "reponse": "Post Malone",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel genre de musique douce et répétitive sert de fond sonore pour étudier ?",
-      "reponse": "Le lo-fi",
-      "niveau": 3,
-      "ages": [
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel désert chilien est le plus aride du monde ?",
-      "reponse": "L'Atacama",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle pierre a permis de déchiffrer les hiéroglyphes ?",
-      "reponse": "Pierre de Rosette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelles percussions cubaines se jouent par paire à main nue ?",
-      "reponse": "Les congas",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
-      "reponse": "La dionée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel revêtement de sol en rouleau couvrait les cuisines avant le plancher flottant ?",
-      "reponse": "Le prélart",
-      "niveau": 3,
-      "ages": [
-        "aines"
+        "adultes"
       ]
     },
     {
@@ -218,9 +161,19 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson indienne mélange yogourt et mangue ?",
-      "reponse": "Le lassi",
+      "categorie": "Histoire",
+      "question": "En quelle année l'Allemagne s'est-elle réunifiée ?",
+      "reponse": "1990",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle ardoise à deux boutons dessine des traits et s'efface en la secouant ?",
+      "reponse": "Le Télécran",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -229,8 +182,24 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel amiral anglais a gagné Trafalgar ?",
-      "reponse": "Nelson",
+      "question": "Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?",
+      "reponse": "La Station spatiale internationale",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
+      "reponse": "Loud",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel compositeur baroque a écrit les Concertos brandebourgeois ?",
+      "reponse": "Bach",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -238,9 +207,24 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quels canots géants transportaient les fourrures ?",
-      "reponse": "Canots de maître",
+      "categorie": "Culture pop",
+      "question": "Quel appareil faisait le café en le faisant remonter dans un petit dôme de verre ?",
+      "reponse": "Le percolateur",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a la forme d'une longue bande le long de l'océan Pacifique ?",
+      "reponse": "Le Chili",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
+      "reponse": "Le Forum",
       "niveau": 3,
       "ages": [
         "adultes",

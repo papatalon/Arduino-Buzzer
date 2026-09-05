@@ -8,6 +8,17 @@
   "questions": [
     {
       "categorie": "Histoire",
+      "question": "Quel astronaute canadien a chanté dans l'espace ?",
+      "reponse": "Chris Hadfield",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
       "question": "Comment appelait-on les rois de l'Égypte ancienne ?",
       "reponse": "Les pharaons",
       "niveau": 1
@@ -134,14 +145,24 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel petit navire rapide Christophe Colomb utilisait-il pour ses voyages ?",
-      "reponse": "Une caravelle",
-      "niveau": 3
+      "question": "Quel navire insubmersible a coulé en 1912 ?",
+      "reponse": "Le Titanic",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
       "question": "Quel conquistador espagnol a conquis l'empire inca ?",
       "reponse": "Pizarro",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?",
+      "reponse": "La capitale du royaume",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -156,12 +177,6 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel casque de métal protégeait la tête du chevalier ?",
-      "reponse": "Un heaume",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quels dirigeables allemands portaient un nom de comte ?",
       "reponse": "Les zeppelins",
       "niveau": 2,
@@ -169,22 +184,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la longue lettre gravée dans la pierre pour raconter un règne ?",
-      "reponse": "Une inscription",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel navire insubmersible a coulé en 1912 ?",
-      "reponse": "Le Titanic",
-      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -198,6 +197,17 @@
       "reponse": "Mir",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel bâton orné le roi tient-il en main comme signe de son pouvoir ?",
+      "reponse": "Le sceptre",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]

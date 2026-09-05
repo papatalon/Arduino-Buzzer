@@ -8,12 +8,6 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quel roi figure sur les nouvelles pièces de monnaie canadiennes depuis 2023 ?",
-      "reponse": "Charles III",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quel explorateur portugais a contourné l'Afrique en 1498 ?",
       "reponse": "Vasco de Gama",
       "niveau": 3,
@@ -21,6 +15,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel roi figure sur les nouvelles pièces de monnaie canadiennes depuis 2023 ?",
+      "reponse": "Charles III",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -54,6 +54,12 @@
       "question": "Comment appelle-t-on la personne qui dirige une nation autochtone ?",
       "reponse": "Un chef",
       "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel appareil envoyait des messages en points et en traits sur des fils ?",
+      "reponse": "Le télégraphe",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
@@ -91,12 +97,6 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'ensemble des nobles qui entouraient le roi ?",
-      "reponse": "La cour",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quel explorateur a cherché la fontaine de Jouvence en Floride ?",
       "reponse": "Ponce de León",
       "niveau": 3,
@@ -104,6 +104,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment s'appelle l'écriture des Égyptiens ?",
+      "reponse": "Les hiéroglyphes",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -135,15 +141,20 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment s'appelle l'écriture des Égyptiens ?",
-      "reponse": "Les hiéroglyphes",
+      "question": "Qui a remporté la bataille des plaines d'Abraham ?",
+      "reponse": "Les Britanniques",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Qui a remporté la bataille des plaines d'Abraham ?",
-      "reponse": "Les Britanniques",
-      "niveau": 1
+      "question": "Comment appelle-t-on la chemise de mailles métalliques que portait le chevalier ?",
+      "reponse": "La cotte de mailles",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -170,17 +181,6 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la chemise de mailles métalliques que portait le chevalier ?",
-      "reponse": "La cotte de mailles",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quel empereur romain a légalisé le christianisme ?",
       "reponse": "Constantin",
       "niveau": 3,
@@ -197,9 +197,13 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle statue les Français ont-ils offerte aux Américains en 1886 ?",
-      "reponse": "La statue de la Liberté",
-      "niveau": 2
+      "question": "Quel rover s'est posé sur Mars en 2012 ?",
+      "reponse": "Curiosity",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     }
   ]
 }

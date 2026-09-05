@@ -42,16 +42,6 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Dans la série Zelda, comment s'appelle le héros vêtu de vert ?",
-      "reponse": "Link",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
       "question": "Dans quel jeu place-t-on des jetons-lettres sur un plateau, avec des cases « mot compte triple » ?",
       "reponse": "Le Scrabble",
       "niveau": 1
@@ -80,6 +70,16 @@
     },
     {
       "categorie": "Culture générale",
+      "question": "Dans quel jeu vidéo aménage-t-on une île en remboursant un raton laveur ?",
+      "reponse": "Animal Crossing",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
       "question": "Quel héros de Jules Verne fait le tour du monde en 80 jours ?",
       "reponse": "Phileas Fogg",
       "niveau": 2,
@@ -96,6 +96,22 @@
     },
     {
       "categorie": "Culture générale",
+      "question": "Qui a inventé le World Wide Web ?",
+      "reponse": "Tim Berners-Lee",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel renne du père Noël a le nez rouge ?",
+      "reponse": "Rudolphe",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
       "question": "Quel jeu vidéo met en scène un plombier moustachu ?",
       "reponse": "Mario",
       "niveau": 1,
@@ -107,24 +123,8 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Qui a inventé le World Wide Web ?",
-      "reponse": "Tim Berners-Lee",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
       "question": "Quel animal figure sur la pièce de 5 cents canadienne ?",
       "reponse": "Le castor",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel renne du père Noël a le nez rouge ?",
-      "reponse": "Rudolphe",
       "niveau": 1
     },
     {
@@ -136,12 +136,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel métier répare les tuyaux ?",
-      "reponse": "Le plombier",
-      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -158,6 +152,12 @@
       "categorie": "Culture générale",
       "question": "Quelle grande horloge domine Londres ?",
       "reponse": "Big Ben",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel métier répare les tuyaux ?",
+      "reponse": "Le plombier",
       "niveau": 1
     },
     {
@@ -186,14 +186,9 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel jeu de papier fait aligner trois X ou trois O ?",
-      "reponse": "Le tic-tac-toe",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "question": "Quel jouet de toile s'envole au bout d'une corde les jours de vent ?",
+      "reponse": "Un cerf-volant",
+      "niveau": 1
     }
   ]
 }

@@ -7,66 +7,27 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel récipient plat sert à faire revenir les œufs ?",
-      "reponse": "Une poêle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on celui qui dessine les plans des maisons ?",
-      "reponse": "Un architecte",
+      "categorie": "Sports",
+      "question": "Quelle embarcation étroite se dirige avec une pagaie à deux pales ?",
+      "reponse": "Le kayak",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel pâté à la viande mange-t-on dans le temps des fêtes ?",
-      "reponse": "La tourtière",
+      "question": "Que met-on aux mains pour ne pas avoir froid, avec un seul compartiment pour les doigts ?",
+      "reponse": "Des mitaines",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle île montréalaise accueille La Ronde ?",
+      "reponse": "Île Sainte-Hélène",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays vivent les pandas géants ?",
-      "reponse": "La Chine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on la grosse partie de l'arbre qui porte les branches ?",
-      "reponse": "Le tronc",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie donner un coup de main ?",
-      "reponse": "Aider",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle loi québécoise protège la langue française ?",
-      "reponse": "La loi 101",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle plateforme suédoise diffuse de la musique en continu ?",
-      "reponse": "Spotify",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle organisation regroupe les pays francophones ?",
-      "reponse": "La Francophonie",
+      "question": "Dans quel état américain se trouve Las Vegas ?",
+      "reponse": "Le Nevada",
       "niveau": 1,
       "ages": [
         "ados",
@@ -75,45 +36,27 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel navire insubmersible a coulé en 1912 ?",
-      "reponse": "Le Titanic",
+      "categorie": "Culture générale",
+      "question": "Quel arbre produit des glands ?",
+      "reponse": "Le chêne",
       "niveau": 1
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit rouge se cueille sur un buisson piquant et se coiffe au bout du doigt ?",
-      "reponse": "La framboise",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
-      "reponse": "Caillou",
+      "categorie": "Sports",
+      "question": "Combien de périodes dans un match de hockey ?",
+      "reponse": "Trois",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on la petite lumière laissée allumée pour la nuit ?",
-      "reponse": "Une veilleuse",
+      "question": "Dans quel petit objet enfonce-t-on un crayon de bois pour l'aiguiser ?",
+      "reponse": "Un taille-crayon",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel officiel siffle les punitions ?",
-      "reponse": "L'arbitre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sprinteur détient le record du 100 mètres ?",
-      "reponse": "Usain Bolt",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle mer borde la Côte d'Azur ?",
-      "reponse": "La Méditerranée",
+      "categorie": "Histoire",
+      "question": "Quelle guerre a coupé un pays d'Asie en deux à partir de 1950 ?",
+      "reponse": "La guerre de Corée",
       "niveau": 1,
       "ages": [
         "ados",
@@ -122,67 +65,110 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte produit le miel ?",
-      "reponse": "L'abeille",
+      "categorie": "Géographie",
+      "question": "Capitale de l'Italie ?",
+      "reponse": "Rome",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le mâle de la brebis ?",
+      "reponse": "Le bélier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel épi grillé se mange au beurre en août ?",
+      "reponse": "Le blé d'Inde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Que fait-on peindre sur son visage dans les fêtes d’enfants ?",
+      "reponse": "Du maquillage",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quels animaux revivent dans Jurassic Park ?",
-      "reponse": "Les dinosaures",
+      "question": "Quel garçon ne veut jamais grandir ?",
+      "reponse": "Peter Pan",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui joue du piano ?",
-      "reponse": "Un pianiste",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le placard où l'on suspend ses manteaux au Québec ?",
-      "reponse": "Le garde-robe",
+      "question": "Quelle note vient juste après le do ?",
+      "reponse": "Le ré",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel roi lion est le père de Simba ?",
-      "reponse": "Mufasa",
+      "question": "Quel personnage vert déteste Noël ?",
+      "reponse": "Le Grincheux",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport de glisse se pratique sur une piste avec des bâtons dans les mains ?",
-      "reponse": "Le ski alpin",
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte brille dans la nuit d'été ?",
+      "reponse": "La luciole",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quelle autrice a écrit Harry Potter ?",
-      "reponse": "J.K. Rowling",
+      "categorie": "Cinéma et télé",
+      "question": "Quel magicien gris guide la Communauté de l'anneau ?",
+      "reponse": "Gandalf",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on le grand édifice qui réunit des dizaines de boutiques sous un même toit ?",
+      "reponse": "Un centre commercial",
+      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quels biscuits noirs à la crème blanche trempe-t-on dans le lait ?",
-      "reponse": "Les Oreo",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "question": "Quelle vitamine trouve-t-on dans les oranges ?",
+      "reponse": "La vitamine C",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle confiserie d'érable se roule sur la neige ?",
+      "reponse": "La tire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle saison vient après l'hiver ?",
+      "reponse": "Le printemps",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel jouet tourne sur lui-même quand on le lance ?",
-      "reponse": "La toupie",
+      "question": "Quel animal, s'il croise votre chemin, porterait malheur ?",
+      "reponse": "Le chat noir",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on une chanson enregistrée avec deux artistes vedettes ?",
+      "reponse": "Un duo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie manger comme un cochon ?",
+      "reponse": "Manger salement",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de monter ?",
+      "reponse": "Descendre",
       "niveau": 1
     }
   ]

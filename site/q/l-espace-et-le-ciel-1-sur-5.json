@@ -7,9 +7,74 @@
   "emoji": "🪐",
   "questions": [
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel soldat Marvel porte un bouclier étoilé ?",
-      "reponse": "Captain America",
+      "categorie": "Histoire",
+      "question": "Quel savant italien a affirmé que la Terre tourne autour du Soleil ?",
+      "reponse": "Galilée",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment nomme-t-on une roche tombée de l'espace ?",
+      "reponse": "Une météorite",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la planète la plus proche du Soleil ?",
+      "reponse": "Mercure",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète est surnommée la planète rouge ?",
+      "reponse": "Mars",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
+      "reponse": "L'étoile de mer",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Sur quelle planète habitons-nous ?",
+      "reponse": "La Terre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ligne imaginaire sépare l'hémisphère nord de l'hémisphère sud ?",
+      "reponse": "L'équateur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle fleur suit le Soleil ?",
+      "reponse": "Le tournesol",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la semaine de congé scolaire du début mars ?",
+      "reponse": "La relâche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel fut le premier satellite artificiel ?",
+      "reponse": "Spoutnik",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de lunes possède la Terre ?",
+      "reponse": "Une",
       "niveau": 1
     },
     {
@@ -23,48 +88,46 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?",
-      "reponse": "Le télescope James Webb",
-      "niveau": 3,
+      "categorie": "Culture générale",
+      "question": "Quel métal est liquide à température ambiante ?",
+      "reponse": "Le mercure",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur américain a chanté Uptown Funk et Just the Way You Are ?",
+      "reponse": "Bruno Mars",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "De quel côté se lève le soleil ?",
-      "reponse": "À l'est",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on une personne qui voyage dans l'espace ?",
-      "reponse": "Un astronaute",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel jour de la semaine porte le nom de la Lune ?",
-      "reponse": "Lundi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle énergie vient du Soleil ?",
-      "reponse": "L'énergie solaire",
-      "niveau": 1
+      "categorie": "Histoire",
+      "question": "Quel roi de France fut surnommé le Roi-Soleil ?",
+      "reponse": "Louis XIV",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel astronome a placé le Soleil au centre de l'univers ?",
-      "reponse": "Copernic",
+      "question": "Qui fut la première femme dans l'espace ?",
+      "reponse": "Valentina Terechkova",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de minutes met la lumière du Soleil à nous parvenir ?",
+      "reponse": "Huit",
       "niveau": 2,
       "ages": [
         "ados",
@@ -73,9 +136,9 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète tourne couchée sur le côté ?",
-      "reponse": "Uranus",
+      "categorie": "Québec",
+      "question": "Quelle région québécoise occupe un cratère de météorite ?",
+      "reponse": "Charlevoix",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -89,94 +152,16 @@
       "niveau": 2
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quelle science étudie les astres ?",
-      "reponse": "L'astronomie",
+      "categorie": "Cinéma et télé",
+      "question": "Quel film de 1977 s'ouvre sur « Il y a bien longtemps, dans une galaxie lointaine » ?",
+      "reponse": "La Guerre des étoiles",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays a un drapeau avec une étoile de David ?",
-      "reponse": "Israël",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "De quelle planète vient Superman ?",
-      "reponse": "Krypton",
+      "question": "Dans quel sens le soleil se lève-t-il ?",
+      "reponse": "À l'est",
       "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel engin décolle pour emmener des gens dans l'espace ?",
-      "reponse": "Une fusée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année l'homme a-t-il marché sur la Lune ?",
-      "reponse": "1969",
-      "niveau": 2
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle carte donne accès aux soins de santé gratuits au Québec ?",
-      "reponse": "La carte soleil",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles espadrilles de toile montantes portent une étoile sur la cheville ?",
-      "reponse": "Les Converse",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre change de forme dans le ciel au fil des nuits ?",
-      "reponse": "La Lune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Que porte un astronaute pour survivre dans l'espace ?",
-      "reponse": "Un scaphandre",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la planète la plus éloignée du Soleil ?",
-      "reponse": "Neptune",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle station spatiale russe a précédé l'ISS ?",
-      "reponse": "Mir",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

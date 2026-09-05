@@ -8,8 +8,8 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand organe du corps humain ?",
-      "reponse": "La peau",
+      "question": "Quel liquide produit par le foie digère les graisses ?",
+      "reponse": "La bile",
       "niveau": 2,
       "ages": [
         "ados",
@@ -19,9 +19,26 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quels organes filtrent le sang ?",
-      "reponse": "Les reins",
+      "question": "Comment appelle-t-on la peau rugueuse qui recouvre le tronc ?",
+      "reponse": "L'écorce",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel os protège le cerveau ?",
+      "reponse": "Le crâne",
       "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de cavités possède le cœur humain ?",
+      "reponse": "Quatre",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -34,99 +51,42 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
-      "reponse": "La tradition orale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel fromage frais grince sous la dent ?",
-      "reponse": "Fromage en grains",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?",
-      "reponse": "Luca",
+      "question": "Quel homme chauve à boucle d'oreille nettoie tout dans les publicités ?",
+      "reponse": "Monsieur Net",
       "niveau": 2,
       "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quels os protègent les poumons ?",
-      "reponse": "Les côtes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de dents possède un adulte en général ?",
-      "reponse": "32",
-      "niveau": 2,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle vitamine fabrique la peau au soleil ?",
-      "reponse": "La vitamine D",
-      "niveau": 2,
+      "question": "Quelle lumière invisible bronze la peau ?",
+      "reponse": "Les ultraviolets",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la plus petite unité du vivant ?",
-      "reponse": "La cellule",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle protéine transporte l'oxygène dans le sang ?",
-      "reponse": "L'hémoglobine",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quels organes nous permettent d'entendre ?",
-      "reponse": "Les oreilles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de sens possède l'être humain ?",
-      "reponse": "Cinq",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit orange à peau veloutée cache un gros noyau ?",
-      "reponse": "La pêche",
-      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Pluriel de œil ?",
-      "reponse": "Yeux",
+      "question": "Comment appelle-t-on la personne qui soigne les dents ?",
+      "reponse": "Un dentiste",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe pompe le sang ?",
+      "reponse": "Le cœur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels organes nous permettent de voir ?",
+      "reponse": "Les yeux",
       "niveau": 1
     },
     {
@@ -141,14 +101,75 @@
       ]
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit orange à peau veloutée cache un gros noyau ?",
+      "reponse": "La pêche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle petite fenêtre de l'œil laisse entrer la lumière ?",
+      "reponse": "La pupille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir le cœur sur la main ?",
+      "reponse": "Être généreux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet de papier mâché rempli de bonbons se frappe les yeux bandés ?",
+      "reponse": "La piñata",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel organe contrôle tout le corps ?",
+      "reponse": "Le cerveau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels os protègent les poumons ?",
+      "reponse": "Les côtes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui laisse de l'argent sous l'oreiller en échange d'une dent ?",
+      "reponse": "La fée des dents",
+      "niveau": 1
+    },
+    {
       "categorie": "Musique",
-      "question": "Quel instrument à dents pincées accompagne le folklore ?",
-      "reponse": "La guimbarde",
-      "niveau": 3,
+      "question": "Comment appelle-t-on une petite chanson simple que les enfants apprennent par cœur ?",
+      "reponse": "Une comptine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle articulation relie la cuisse à la jambe ?",
+      "reponse": "Le genou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le plus grand organe du corps humain ?",
+      "reponse": "La peau",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelles cellules du sang combattent les infections ?",
+      "reponse": "Globules blancs",
+      "niveau": 1
     },
     {
       "categorie": "Culture générale",
@@ -165,40 +186,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel organe produit l'insuline ?",
-      "reponse": "Le pancréas",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment appelle-t-on l'ensemble des os du corps ?",
-      "reponse": "Le squelette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation suit un mammouth, un paresseux et un tigre à dents de sabre ?",
-      "reponse": "L'Âge de glace",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel minéral renforce les os ?",
-      "reponse": "Le calcium",
-      "niveau": 1
     }
   ]
 }

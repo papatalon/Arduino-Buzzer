@@ -8,14 +8,9 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
-      "reponse": "La tradition orale",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle journée du 11 novembre honore la mémoire des soldats ?",
+      "reponse": "Le jour du Souvenir",
+      "niveau": 2
     },
     {
       "categorie": "Culture générale",
@@ -51,6 +46,12 @@
       ]
     },
     {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une montagne qui crache de la lave ?",
+      "reponse": "Un volcan",
+      "niveau": 1
+    },
+    {
       "categorie": "Cinéma et télé",
       "question": "Quel film d'animation raconte un garçon qui rejoint le pays des morts avec sa guitare ?",
       "reponse": "Coco",
@@ -60,12 +61,6 @@
         "ados",
         "adultes"
       ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la distance entre un do et le do suivant ?",
-      "reponse": "Une octave",
-      "niveau": 3
     },
     {
       "categorie": "Mots et langue",
@@ -79,9 +74,9 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on un cours d'eau qui se jette dans un fleuve ?",
-      "reponse": "Une rivière",
+      "categorie": "Québec",
+      "question": "Quelle baleine blanche du Saint-Laurent est protégée ?",
+      "reponse": "Le béluga",
       "niveau": 1
     },
     {
@@ -91,10 +86,10 @@
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle baleine blanche du Saint-Laurent est protégée ?",
-      "reponse": "Le béluga",
-      "niveau": 1
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la distance entre un do et le do suivant ?",
+      "reponse": "Une octave",
+      "niveau": 3
     }
   ]
 }

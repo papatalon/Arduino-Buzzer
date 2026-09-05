@@ -14,19 +14,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle ville du Québec accueille chaque été le Festival de la poutine ?",
-      "reponse": "Drummondville",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel pays insulaire du nord de l'Atlantique compte des volcans et des geysers ?",
+      "reponse": "L'Islande",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle péninsule abrite Espagne et Portugal ?",
-      "reponse": "Ibérique",
+      "question": "Dans quel pays se trouve la ville de Venise et ses canaux ?",
+      "reponse": "L'Italie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle péninsule abrite la Mecque ?",
+      "reponse": "L'Arabie",
       "niveau": 2,
       "ages": [
         "ados",
@@ -36,14 +37,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel micro-État borde Nice et la Méditerranée ?",
-      "reponse": "Monaco",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
+      "reponse": "Le Japon",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -58,32 +54,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays sont nés les Jeux olympiques ?",
-      "reponse": "La Grèce",
-      "niveau": 2
+      "question": "Comment appelle-t-on la terre gelée sans arbres du Grand Nord ?",
+      "reponse": "La toundra",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la vaste plaine d'herbe où broutent les bisons ?",
-      "reponse": "La prairie",
-      "niveau": 2
+      "question": "Comment appelle-t-on la petite colline de sable poussée par le vent au bord de la mer ?",
+      "reponse": "Une dune",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
       "question": "Quel massif abrite l'Everest ?",
       "reponse": "L'Himalaya",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la ville où siège le gouvernement d'un pays ?",
-      "reponse": "La capitale",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel animal des Andes crache quand il est fâché ?",
-      "reponse": "Le lama",
       "niveau": 1
     },
     {
@@ -94,32 +78,32 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel fleuve traverse l'Allemagne et se jette à Rotterdam ?",
-      "reponse": "Le Rhin",
-      "niveau": 2,
+      "question": "Sur quel continent vivent les girafes en liberté ?",
+      "reponse": "L'Afrique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la vague géante déclenchée par un tremblement de terre ?",
+      "reponse": "Un tsunami",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
+      "reponse": "L'Ontario",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel état américain se trouve Las Vegas ?",
+      "reponse": "Le Nevada",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle tempête tropicale géante porte un nom de personne ?",
-      "reponse": "Un ouragan",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a un drapeau bleu, blanc et rouge à trois bandes verticales ?",
-      "reponse": "La France",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel État américain chaud accueille Disney World ?",
-      "reponse": "La Floride",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -134,9 +118,44 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel grand pays d'Asie du Sud a plus d'un milliard d'habitants et borde l'océan Indien ?",
-      "reponse": "L'Inde",
+      "question": "Comment appelle-t-on le petit cours d'eau où l'on peut marcher les pieds dedans ?",
+      "reponse": "Un ruisseau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien y a-t-il de pôles sur la Terre ?",
+      "reponse": "Deux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
+      "reponse": "Le Grand Nord",
       "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel récif corallien longe l'Australie ?",
+      "reponse": "Grande Barrière",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la rivière de glace qui descend lentement d'une montagne ?",
+      "reponse": "Un glacier",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ville est surnommée la Ville lumière ?",
+      "reponse": "Paris",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -152,48 +171,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel état américain est surnommé le Golden State ?",
-      "reponse": "La Californie",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'énorme masse de glace qui flotte sur la mer ?",
-      "reponse": "Un iceberg",
+      "question": "Quelle langue parle-t-on aux États-Unis ?",
+      "reponse": "L'anglais",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle fosse océanique est la plus profonde ?",
-      "reponse": "Les Mariannes",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville est surnommée la Grosse Pomme ?",
-      "reponse": "New York",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel animal est l'emblème des États-Unis ?",
-      "reponse": "L'aigle",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'endroit où les bateaux accostent ?",
-      "reponse": "Un port",
+      "question": "Comment appelle-t-on le passage creusé sous une montagne ou sous l'eau ?",
+      "reponse": "Un tunnel",
       "niveau": 1
     }
   ]

@@ -8,6 +8,17 @@
   "questions": [
     {
       "categorie": "Géographie",
+      "question": "Capitale du Pérou ?",
+      "reponse": "Lima",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
       "question": "Capitale de l'Alberta ?",
       "reponse": "Edmonton",
       "niveau": 2,
@@ -19,8 +30,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle île canadienne est la plus grande ?",
-      "reponse": "Île de Baffin",
+      "question": "Quel passage maritime arctique relie deux océans ?",
+      "reponse": "Nord-Ouest",
       "niveau": 2,
       "ages": [
         "ados",
@@ -30,15 +41,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
-      "reponse": "Le Grand Nord",
+      "question": "Comment appelle-t-on la rive du fleuve où se trouve Longueuil ?",
+      "reponse": "La Rive-Sud",
       "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la ligne qui sépare deux pays sur une carte ?",
-      "reponse": "Une frontière",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -47,16 +52,6 @@
       "niveau": 1,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve traverse Rome ?",
-      "reponse": "Le Tibre",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
@@ -73,30 +68,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le Canada ?",
-      "reponse": "L'Amérique du Nord",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays les vaches sont-elles sacrées ?",
-      "reponse": "L'Inde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Nouvelle-Zélande ?",
-      "reponse": "Wellington",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve traverse Londres ?",
-      "reponse": "La Tamise",
+      "question": "Quel pays produit le plus de café ?",
+      "reponse": "Le Brésil",
       "niveau": 2,
       "ages": [
         "ados",
@@ -106,9 +79,19 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le passage creusé sous une montagne ou sous l'eau ?",
-      "reponse": "Un tunnel",
-      "niveau": 1
+      "question": "Quelle grande forêt de conifères ceinture le nord de l'hémisphère ?",
+      "reponse": "La forêt boréale",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve traverse Rome ?",
+      "reponse": "Le Tibre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -123,22 +106,33 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on un dessin qui représente un pays ou une ville vus d'en haut ?",
-      "reponse": "Une carte",
+      "question": "Comment appelle-t-on la ville où siège le gouvernement d'un pays ?",
+      "reponse": "La capitale",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la ligne où le ciel semble toucher la mer ?",
-      "reponse": "L'horizon",
-      "niveau": 2
+      "question": "Quel désert chilien est le plus aride du monde ?",
+      "reponse": "L'Atacama",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve Petra, la cité rose ?",
-      "reponse": "La Jordanie",
-      "niveau": 3,
+      "question": "Comment appelle-t-on l'eau qui tombe du haut d'une falaise dans une rivière ?",
+      "reponse": "Une chute",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve traverse Londres ?",
+      "reponse": "La Tamise",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -156,14 +150,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pont relie l'Île-du-Prince-Édouard au continent ?",
-      "reponse": "Confédération",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle ville canadienne abrite la Tour CN ?",
+      "reponse": "Toronto",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -178,12 +167,6 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel océan traverse-t-on en avion pour aller du Canada à la France ?",
-      "reponse": "L'Atlantique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
       "question": "Dans quel pays se trouve l'Acropole ?",
       "reponse": "La Grèce",
       "niveau": 1,
@@ -195,18 +178,26 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle mer sépare la péninsule coréenne de l'archipel nippon ?",
-      "reponse": "La mer du Japon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on la ligne qui sépare deux pays sur une carte ?",
+      "reponse": "Une frontière",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel est le plus grand lac d'Afrique ?",
-      "reponse": "Le lac Victoria",
+      "question": "Quelle fleur bleue orne le drapeau du Québec ?",
+      "reponse": "La fleur de lys",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le quartier bâti pour loger les athlètes pendant les Jeux ?",
+      "reponse": "Le village olympique",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve traverse l'Allemagne et se jette à Rotterdam ?",
+      "reponse": "Le Rhin",
       "niveau": 2,
       "ages": [
         "ados",
@@ -216,9 +207,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel état américain touche le Québec et le Nouveau-Brunswick ?",
-      "reponse": "Le Maine",
-      "niveau": 2,
+      "question": "Dans quel pays se trouve le Colisée ?",
+      "reponse": "L'Italie",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -227,8 +218,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle feuille rouge orne le drapeau du Canada ?",
-      "reponse": "La feuille d'érable",
+      "question": "Quel océan borde la côte est du Canada ?",
+      "reponse": "L'Atlantique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville du Québec ?",
+      "reponse": "Montréal",
       "niveau": 1
     }
   ]

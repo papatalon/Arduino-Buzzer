@@ -8,21 +8,21 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelles jeunes filles furent envoyées peupler la Nouvelle-France ?",
-      "reponse": "Filles du Roy",
-      "niveau": 2,
+      "question": "Comment appelle-t-on le marin posté en haut du mât pour surveiller l'horizon ?",
+      "reponse": "La vigie",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le marin posté en haut du mât pour surveiller l'horizon ?",
-      "reponse": "La vigie",
-      "niveau": 3,
+      "question": "Quelles jeunes filles furent envoyées peupler la Nouvelle-France ?",
+      "reponse": "Filles du Roy",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -50,15 +50,19 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle bataille de 1759 a fait passer Québec aux mains des Britanniques ?",
-      "reponse": "La bataille des plaines d'Abraham",
+      "question": "Quel bâtiment de bois entouré d'une palissade protégeait les postes de traite ?",
+      "reponse": "Le fort",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quel bâtiment de bois entouré d'une palissade protégeait les postes de traite ?",
-      "reponse": "Le fort",
-      "niveau": 2
+      "question": "Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?",
+      "reponse": "La Révolution tranquille",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -78,7 +82,7 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Qui a fondé Ville-Marie, la future Montréal ?",
+      "question": "Qui a fondé Ville-Marie en 1642 ?",
       "reponse": "Maisonneuve",
       "niveau": 2,
       "ages": [
@@ -105,9 +109,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Sur quoi le maître écrivait-il à la craie devant sa classe, autrefois ?",
-      "reponse": "Le tableau noir",
-      "niveau": 1
+      "question": "Quel document de peau ou de papier, écrit à la main, se copiait dans les monastères ?",
+      "reponse": "Un manuscrit",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
@@ -124,12 +128,6 @@
       "question": "Comment appelle-t-on les dessins d'animaux tracés sur les parois des grottes ?",
       "reponse": "Les peintures rupestres",
       "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel bâtiment à grandes ailes tournait au vent pour moudre le blé ?",
-      "reponse": "Un moulin à vent",
-      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -154,6 +152,16 @@
     },
     {
       "categorie": "Histoire",
+      "question": "En quelle année les Canadiennes ont-elles voté au fédéral ?",
+      "reponse": "1918",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
       "question": "Comment appelait-on les Français qui partaient troquer des fourrures dans les bois ?",
       "reponse": "Les coureurs des bois",
       "niveau": 2
@@ -163,16 +171,6 @@
       "question": "Comment appelle-t-on la très longue période d'avant l'écriture ?",
       "reponse": "La préhistoire",
       "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année les Canadiennes ont-elles voté au fédéral ?",
-      "reponse": "1918",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Histoire",
@@ -204,9 +202,24 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on les cent ans d'un événement qu'on souligne par une fête ?",
-      "reponse": "Un centenaire",
-      "niveau": 3
+      "question": "Quelle merveille du monde antique éclairait l'entrée d'un port égyptien ?",
+      "reponse": "Le phare d'Alexandrie",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la longue lettre gravée dans la pierre pour raconter un règne ?",
+      "reponse": "Une inscription",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

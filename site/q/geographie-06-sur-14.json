@@ -8,6 +8,17 @@
   "questions": [
     {
       "categorie": "Géographie",
+      "question": "Quel état américain est surnommé le Golden State ?",
+      "reponse": "La Californie",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
       "question": "Capitale de l'Australie ?",
       "reponse": "Canberra",
       "niveau": 2,
@@ -19,19 +30,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
-      "reponse": "Les Pyrénées",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande île de la Méditerranée ?",
-      "reponse": "La Sicile",
+      "question": "Quel pays a Kaboul pour capitale ?",
+      "reponse": "L'Afghanistan",
       "niveau": 2,
       "ages": [
         "ados",
@@ -41,38 +41,45 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle direction le soleil se couche-t-il ?",
-      "reponse": "À l'ouest",
+      "question": "Comment appelle-t-on le train qui circule sous la ville ?",
+      "reponse": "Le métro",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le passage étroit d'eau entre deux terres ?",
-      "reponse": "Un détroit",
-      "niveau": 3
+      "question": "Comment appelle-t-on la grande forêt humide et chaude de l'Amazonie ?",
+      "reponse": "La forêt tropicale",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays se trouve juste au sud du Canada ?",
-      "reponse": "Les États-Unis",
+      "question": "Quelle province canadienne parle surtout français ?",
+      "reponse": "Le Québec",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Sur quel continent vivent les girafes en liberté ?",
-      "reponse": "L'Afrique",
+      "question": "Comment appelle-t-on la partie de la mer qui rentre dans les terres ?",
+      "reponse": "Une baie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle tour de fer domine Paris ?",
+      "reponse": "La tour Eiffel",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel récif corallien longe l'Australie ?",
-      "reponse": "Grande Barrière",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Combien y a-t-il de continents sur Terre ?",
+      "reponse": "Sept",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays d'Europe est célèbre pour ses montres, son chocolat et ses Alpes ?",
+      "reponse": "La Suisse",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -87,21 +94,21 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays nordique le père Noël a-t-il son village officiel, à Rovaniemi ?",
-      "reponse": "La Finlande",
+      "question": "Quel pays a la forme d'une longue bande le long de l'océan Pacifique ?",
+      "reponse": "Le Chili",
       "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'eau salée qu'on ne peut pas boire ?",
-      "reponse": "L'eau de mer",
+      "question": "Dans quel pays les vaches sont-elles sacrées ?",
+      "reponse": "L'Inde",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le désert du Sahara ?",
-      "reponse": "L'Afrique",
-      "niveau": 1
+      "question": "Comment appelle-t-on le trou d'eau au milieu du désert avec des palmiers ?",
+      "reponse": "Une oasis",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -126,8 +133,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
-      "reponse": "La Finlande",
+      "question": "Quel immense pays occupe la moitié de l'Amérique du Sud ?",
+      "reponse": "Le Brésil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
+      "reponse": "Le maelstrom",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -136,8 +149,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel courant marin réchauffe l'Europe ?",
-      "reponse": "Le Gulf Stream",
+      "question": "Dans quelle ville trouve-t-on la basilique Saint-Pierre ?",
+      "reponse": "Rome (Vatican)",
       "niveau": 2,
       "ages": [
         "ados",
@@ -147,15 +160,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
-      "reponse": "La Norvège",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville sainte est commune à trois religions ?",
-      "reponse": "Jérusalem",
-      "niveau": 2,
+      "question": "Comment appelle-t-on la carte qui montre le relief avec des couleurs et des courbes ?",
+      "reponse": "Une carte topographique",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -164,15 +171,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle grande étendue d'eau salée sépare l'Angleterre de la France ?",
-      "reponse": "La Manche",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée en Autriche ?",
-      "reponse": "L'allemand",
-      "niveau": 2,
+      "question": "Langue parlée en Égypte ?",
+      "reponse": "L'arabe",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -181,37 +182,26 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Combien de points cardinaux la rose des vents compte-t-elle ?",
-      "reponse": "Quatre",
+      "question": "Quel canal traverse l'Amérique centrale ?",
+      "reponse": "Panama",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel océan sépare le Québec de l'Europe ?",
+      "reponse": "L'océan Atlantique",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Taj Mahal ?",
-      "reponse": "L'Inde",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville est surnommée la Ville éternelle ?",
-      "reponse": "Rome",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel détroit sépare la Russie de l'Alaska ?",
-      "reponse": "Bering",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Dans quelle ville trouve-t-on le Golden Gate ?",
+      "reponse": "San Francisco",
+      "niveau": 1
     }
   ]
 }

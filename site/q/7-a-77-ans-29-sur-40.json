@@ -7,27 +7,51 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle fête québécoise célèbre le blé d'Inde ?",
-      "reponse": "L'épluchette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de monter ?",
-      "reponse": "Descendre",
+      "categorie": "Culture générale",
+      "question": "Quel jouet tourne sur lui-même quand on le lance ?",
+      "reponse": "La toupie",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la trace d'un animal préhistorique conservée dans la pierre ?",
-      "reponse": "Un fossile",
+      "question": "Quel véhicule à vapeur roulait sur des rails au 19e siècle ?",
+      "reponse": "La locomotive",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Que devient un têtard ?",
+      "reponse": "Une grenouille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de manches dans un match de baseball ?",
+      "reponse": "Neuf",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles croustilles de maïs accompagnent la salsa ?",
+      "reponse": "Les nachos",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois pantoute ?",
+      "reponse": "Pas du tout",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle viande hachée garnit le pâté chinois ?",
+      "reponse": "Le bœuf",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles figurines allemandes à mains rondes peuplent des châteaux et des fermes ?",
-      "reponse": "Les Playmobil",
+      "question": "Quels bonbons durs multicolores promettent de goûter l'arc-en-ciel ?",
+      "reponse": "Les Skittles",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -36,75 +60,89 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on l'étage sous le rez-de-chaussée où l'on range et où l'on joue ?",
-      "reponse": "Le sous-sol",
+      "categorie": "Mots et langue",
+      "question": "Quel palindrome désigne une détection par ondes ?",
+      "reponse": "Radar",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le village où l'on cultive la terre et élève des animaux ?",
-      "reponse": "Une ferme",
+      "categorie": "Québec",
+      "question": "Quelles îles québécoises sont au milieu du golfe ?",
+      "reponse": "Îles de la Madeleine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ogre vert a une femme nommée Fiona ?",
+      "reponse": "Shrek",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie donner sa langue au chat ?",
-      "reponse": "Renoncer à deviner",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne un épi de maïs ?",
-      "reponse": "Un blé d'Inde",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de crayons de cire remplit les boîtes d'école ?",
-      "reponse": "Crayola",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel lapin de dessin animé croque une carotte en disant « Quoi de neuf, docteur ? » ?",
-      "reponse": "Bugs Bunny",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien de territoires compte le Canada ?",
-      "reponse": "Trois",
+      "question": "Pluriel de œil ?",
+      "reponse": "Yeux",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Dans quel abri de toile dort-on en camping ?",
-      "reponse": "Une tente",
+      "question": "Qui a peint la Joconde ?",
+      "reponse": "Léonard de Vinci",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle équipe de la NBA vient de Toronto ?",
-      "reponse": "Les Raptors",
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le chemin de terre battue dans le bois ?",
+      "reponse": "Un sentier",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel liquide met-on dans le réservoir de l'auto à la station-service ?",
+      "reponse": "L'essence",
       "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quel milliardaire Marvel a un réacteur dans la poitrine ?",
-      "reponse": "Tony Stark",
+      "question": "Quelle série animée suit des chiots sauveteurs ?",
+      "reponse": "Pat' Patrouille",
+      "niveau": 1,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel insecte produit le miel ?",
+      "reponse": "L'abeille",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de cartes à collectionner fait évoluer des créatures de poche ?",
+      "reponse": "Pokémon",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle plaque plantée au bord du chemin indique la direction à suivre ?",
+      "reponse": "Un panneau",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument écossais fonctionne avec un sac d'air ?",
-      "reponse": "La cornemuse",
+      "question": "Sur quel pont danse-t-on tous en rond dans la chanson ?",
+      "reponse": "Le pont d'Avignon",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel alcool japonais est fait de riz fermenté ?",
-      "reponse": "Le saké",
+      "question": "Quelle boulette frite du Moyen-Orient est aux pois chiches ?",
+      "reponse": "Le falafel",
       "niveau": 1,
       "ages": [
         "ados",
@@ -113,10 +151,15 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel frère et quelle sœur de conte sèment des miettes de pain dans la forêt ?",
-      "reponse": "Hansel et Gretel",
-      "niveau": 1
+      "categorie": "Québec",
+      "question": "Quel parti a fondé François Legault ?",
+      "reponse": "La CAQ",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sports",
@@ -125,60 +168,15 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie poser un lapin ?",
-      "reponse": "Ne pas venir",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Culture générale",
+      "question": "Quel jeu consiste à placer les chiffres 1 à 9 ?",
+      "reponse": "Le sudoku",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle danse se pratique en tutu et sur la pointe des pieds ?",
-      "reponse": "Le ballet",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?",
-      "reponse": "Le tyrannosaure",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Mario doit-il sauver ?",
-      "reponse": "Peach",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle ville est la capitale de l'Outaouais ?",
-      "reponse": "Gatineau",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel déjeuner anglais complet est copieux ?",
-      "reponse": "English breakfast",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Chez quel animal le mâle porte-t-il les bébés ?",
-      "reponse": "L'hippocampe",
+      "question": "Quel instrument en cuivre déplié mesure près de trois mètres et se joue avec une coulisse ?",
+      "reponse": "Le trombone",
       "niveau": 1
     }
   ]

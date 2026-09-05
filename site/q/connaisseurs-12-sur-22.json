@@ -7,9 +7,9 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Géographie",
-      "question": "Quelle mer sépare la péninsule coréenne de l'archipel nippon ?",
-      "reponse": "La mer du Japon",
+      "categorie": "Sports",
+      "question": "Quelle gymnaste a obtenu le premier 10 parfait ?",
+      "reponse": "Nadia Comăneci",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -17,9 +17,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel compositeur français a écrit le Boléro ?",
-      "reponse": "Ravel",
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot robot ?",
+      "reponse": "Le tchèque",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -28,8 +28,14 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Qui fut la première femme dans l'espace ?",
-      "reponse": "Valentina Terechkova",
+      "question": "Quel document de peau ou de papier, écrit à la main, se copiait dans les monastères ?",
+      "reponse": "Un manuscrit",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel traité de 1992 a créé l'Union européenne ?",
+      "reponse": "Maastricht",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -38,67 +44,17 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
-      "reponse": "Le 7 Jours",
+      "question": "Quelle petite radio portative à pile a libéré la musique des salons ?",
+      "reponse": "Le transistor",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve traverse Rome ?",
-      "reponse": "Le Tibre",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe progressif québécois a fait L'Heptade ?",
-      "reponse": "Harmonium",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel tapis à longs poils habillait les salons des années 70 ?",
-      "reponse": "Le shag",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays d'Europe a la forme d'une main et borde la mer Baltique ?",
-      "reponse": "La Pologne",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
-      "reponse": "Le Jolly Roger",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
-      "reponse": "Pizarro",
+      "question": "Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?",
+      "reponse": "La Révolution tranquille",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -107,49 +63,50 @@
     },
     {
       "categorie": "Musique",
-      "question": "À quelle famille d'instruments appartient la flûte ?",
-      "reponse": "Les bois",
+      "question": "Quelle figure de note vaut quatre temps, la plus longue de toutes ?",
+      "reponse": "La ronde",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel petit instrument à cordes italien se pince avec un médiator ?",
+      "reponse": "La mandoline",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe féminin sud-coréen a chanté Kill This Love ?",
+      "reponse": "Blackpink",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle cartouche de musique se glissait dans le tableau de bord des autos des années 70 ?",
-      "reponse": "Le huit-pistes",
+      "question": "Quel commerce de village vendait autrefois aussi bien le clou que la farine ?",
+      "reponse": "Le magasin général",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle taxe québécoise s'ajoute à la taxe fédérale sur les achats ?",
-      "reponse": "La TVQ",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel oiseau blanc envahit les champs du Québec au printemps et à l'automne ?",
-      "reponse": "L'oie blanche",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle cantatrice grecque fut surnommée la Divina ?",
-      "reponse": "Maria Callas",
+      "question": "Comment appelle-t-on le fait de jouer en inventant, sans partition ?",
+      "reponse": "L'improvisation",
+      "niveau": 3
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
+      "reponse": "La granita",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -167,9 +124,29 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "De quelle langue vient le mot pyjama ?",
-      "reponse": "Le persan",
+      "categorie": "Musique",
+      "question": "Quel groupe italien a gagné l'Eurovision en 2021 en jouant du rock ?",
+      "reponse": "Måneskin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse québécoise a raflé les Junos avec l'album Phoenix ?",
+      "reponse": "Charlotte Cardin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel programme de récompenses accumule des points bleus chez plusieurs commerçants ?",
+      "reponse": "Air Miles",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -177,20 +154,34 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
-      "reponse": "La tradition orale",
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le passage étroit d'eau entre deux terres ?",
+      "reponse": "Un détroit",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles rondelles de carton s'empilaient et se retournaient dans les cours d'école des années 90 ?",
+      "reponse": "Les Pogs",
       "niveau": 3,
       "ages": [
-        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quels canots géants transportaient les fourrures ?",
+      "reponse": "Canots de maître",
+      "niveau": 3,
+      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle émission de Radio-Canada enquête sur ce qu'on met dans notre assiette ?",
-      "reponse": "L'épicerie",
+      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
+      "reponse": "La guignolée",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -199,48 +190,46 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel auteur québécois a écrit Le Matou ?",
-      "reponse": "Yves Beauchemin",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chant de Noël fait résonner un long « Gloria » repris par tout le monde ?",
-      "reponse": "Les anges dans nos campagnes",
+      "question": "Quel biscuit québécois à la mélasse se trempe dans le lait ?",
+      "reponse": "La galette à la mélasse",
       "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport oppose deux nageurs qui se poussent un ballon dans une piscine ?",
-      "reponse": "Le water-polo",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
-      "reponse": "Coup de Pouce",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'Égyptien qui savait écrire, un métier rare et respecté ?",
-      "reponse": "Un scribe",
-      "niveau": 3
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert meringué porte le nom d'une ballerine ?",
-      "reponse": "La pavlova",
+      "question": "Quelle ville canadienne fut dévastée par une explosion en 1917 ?",
+      "reponse": "Halifax",
       "niveau": 3,
       "ages": [
         "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve traverse Rome ?",
+      "reponse": "Le Tibre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel congé de mai précède la saison du jardinage au Québec ?",
+      "reponse": "La journée nationale des patriotes",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
+      "reponse": "La Bolduc",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     }

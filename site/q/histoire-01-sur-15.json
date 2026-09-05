@@ -109,9 +109,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel outil de bois et de fer les paysans utilisaient-ils pour retourner la terre ?",
-      "reponse": "La charrue",
-      "niveau": 2
+      "question": "Sur quel grand siège le roi s'assoit-il pour recevoir ses sujets ?",
+      "reponse": "Un trône",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -148,8 +148,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Sur quel grand siège le roi s'assoit-il pour recevoir ses sujets ?",
-      "reponse": "Un trône",
+      "question": "Quel bâtiment à grandes ailes tournait au vent pour moudre le blé ?",
+      "reponse": "Un moulin à vent",
       "niveau": 1
     },
     {
@@ -165,19 +165,15 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle statue égyptienne a un corps de lion ?",
-      "reponse": "Le Sphinx",
-      "niveau": 1
+      "question": "Comment appelait-on le soldat armé d'un arc dans les armées d'autrefois ?",
+      "reponse": "Un archer",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle méthode permet de dater un vestige grâce à un isotope ?",
-      "reponse": "Le carbone 14",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "question": "Quelle statue égyptienne a un corps de lion ?",
+      "reponse": "Le Sphinx",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -188,6 +184,16 @@
         "ados",
         "adultes",
         "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle méthode permet de dater un vestige grâce à un isotope ?",
+      "reponse": "Le carbone 14",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
       ]
     },
     {
@@ -204,17 +210,6 @@
       "categorie": "Histoire",
       "question": "Quel navigateur a donné son prénom à l'Amérique ?",
       "reponse": "Amerigo Vespucci",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Dans quelle région de France a eu lieu le débarquement du 6 juin 1944 ?",
-      "reponse": "La Normandie",
       "niveau": 2,
       "ages": [
         "ados",

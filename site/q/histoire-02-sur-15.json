@@ -8,6 +8,23 @@
   "questions": [
     {
       "categorie": "Histoire",
+      "question": "Dans quelle région de France a eu lieu le débarquement du 6 juin 1944 ?",
+      "reponse": "La Normandie",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la grande statue ou la stèle élevée en mémoire de quelqu'un ?",
+      "reponse": "Un monument",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
       "question": "Quelles sondes jumelles ont été lancées en 1977 ?",
       "reponse": "Voyager",
       "niveau": 3,
@@ -15,12 +32,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la personne dont le métier est d'étudier le passé ?",
-      "reponse": "Un historien",
-      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -42,15 +53,15 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel astronaute américain a posé le pied sur la Lune le premier ?",
-      "reponse": "Neil Armstrong",
-      "niveau": 2
+      "question": "Comment appelle-t-on la grande demeure luxueuse d'un roi ?",
+      "reponse": "Un palais",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grille de fer qui descend pour bloquer l'entrée d'un château ?",
-      "reponse": "La herse",
-      "niveau": 3
+      "question": "Quel astronaute américain a posé le pied sur la Lune le premier ?",
+      "reponse": "Neil Armstrong",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
@@ -66,6 +77,12 @@
       "categorie": "Histoire",
       "question": "Quelle chaussure ouverte, faite de lanières de cuir, portaient les Romains ?",
       "reponse": "Une sandale",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel animal les Autochtones des plaines chassaient-ils pour se nourrir et se vêtir ?",
+      "reponse": "Le bison",
       "niveau": 2
     },
     {
@@ -86,20 +103,20 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on un conflit où presque tous les pays du monde se battent ?",
-      "reponse": "Une guerre mondiale",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal les Autochtones des plaines chassaient-ils pour se nourrir et se vêtir ?",
-      "reponse": "Le bison",
-      "niveau": 2
+      "question": "Comment appelle-t-on le combattant qui affrontait des bêtes devant la foule romaine ?",
+      "reponse": "Un gladiateur",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
       "question": "Dans quel bâtiment expose-t-on les objets et les squelettes du passé ?",
       "reponse": "Un musée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel objet les premiers explorateurs utilisaient-ils pour trouver le nord ?",
+      "reponse": "Une boussole",
       "niveau": 1
     },
     {
@@ -125,27 +142,25 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le combattant qui affrontait des bêtes devant la foule romaine ?",
-      "reponse": "Un gladiateur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel objet les premiers explorateurs utilisaient-ils pour trouver le nord ?",
-      "reponse": "Une boussole",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quelle invention à deux roues se propulse avec des pédales ?",
       "reponse": "La bicyclette",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel animal servait de moyen de transport principal avant l'automobile ?",
-      "reponse": "Le cheval",
-      "niveau": 1
+      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
+      "reponse": "Une diligence",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Pour quelle exposition la tour Eiffel fut-elle construite ?",
+      "reponse": "Expo de 1889",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -169,25 +184,15 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Pour quelle exposition la tour Eiffel fut-elle construite ?",
-      "reponse": "Expo de 1889",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quel télescope spatial a été lancé en 1990 ?",
       "reponse": "Hubble",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le long bateau à rames des Grecs et des Romains ?",
-      "reponse": "Une galère",
-      "niveau": 3
+      "question": "Quel savant a expliqué la gravité en voyant tomber une pomme ?",
+      "reponse": "Newton",
+      "niveau": 2
     }
   ]
 }

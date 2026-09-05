@@ -7,20 +7,49 @@
   "emoji": "🎈",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Dans quel film d'animation une famille colombienne vit-elle dans une maison magique ?",
-      "reponse": "Encanto",
+      "categorie": "Cinéma et télé",
+      "question": "De quelle couleur sont les Simpson ?",
+      "reponse": "Jaunes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle nounou anglaise vole avec un parapluie ?",
+      "reponse": "Mary Poppins",
       "niveau": 1,
       "ages": [
-        "enfants",
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
+      "categorie": "Géographie",
+      "question": "Monnaie utilisée aux États-Unis ?",
+      "reponse": "Le dollar",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Féminin de dieu ?",
+      "reponse": "Déesse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Que veut dire « il fait frette » ?",
+      "reponse": "Il fait très froid",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie passer un savon ?",
+      "reponse": "Réprimander",
+      "niveau": 1
+    },
+    {
       "categorie": "Musique",
-      "question": "Quel style musical vient de la Jamaïque ?",
-      "reponse": "Le reggae",
+      "question": "Quelle chanteuse québécoise a chanté pour Titanic ?",
+      "reponse": "Céline Dion",
       "niveau": 1,
       "ages": [
         "ados",
@@ -29,9 +58,15 @@
       ]
     },
     {
+      "categorie": "Géographie",
+      "question": "Quel pays a la feuille d'érable sur son drapeau ?",
+      "reponse": "Le Canada",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture générale",
-      "question": "Quelle intelligence artificielle répond en conversation depuis la fin de 2022 ?",
-      "reponse": "ChatGPT",
+      "question": "Dans quel jeu vidéo aménage-t-on une île en remboursant un raton laveur ?",
+      "reponse": "Animal Crossing",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -39,62 +74,38 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville se trouve la tour Eiffel ?",
-      "reponse": "Paris",
-      "niveau": 1
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle volaille laquée est le classique de la capitale chinoise ?",
+      "reponse": "Canard de Pékin",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri de la vache ?",
-      "reponse": "Le meuglement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "En quelle saison les feuilles des arbres tombent-elles ?",
-      "reponse": "L'automne",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le père des Simpson ?",
-      "reponse": "Homer",
+      "categorie": "Sports",
+      "question": "Quel sport se joue sur une table avec une petite balle et deux palettes ?",
+      "reponse": "Le ping-pong",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanson de Queen fait taper des pieds et des mains sur « We will, we will... » ?",
-      "reponse": "We Will Rock You",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport utilise-t-on un fer et un vert ?",
-      "reponse": "Le golf",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Petit du cheval ?",
-      "reponse": "Le poulain",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle langue parle-t-on au Québec ?",
-      "reponse": "Le français",
+      "question": "Quel chant de Noël célèbre un arbre dont le feuillage reste vert tout l'hiver ?",
+      "reponse": "Mon beau sapin",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel repas tardif combine déjeuner et dîner ?",
-      "reponse": "Le brunch",
+      "question": "Quel poisson orange est populaire en sushi ?",
+      "reponse": "Le saumon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle carte est la plus forte au poker ?",
+      "reponse": "L'as",
       "niveau": 1,
       "ages": [
         "ados",
@@ -103,87 +114,79 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien de jours dans une semaine ?",
-      "reponse": "Sept",
+      "categorie": "Sciences et nature",
+      "question": "Quel astre change de forme dans le ciel au fil des nuits ?",
+      "reponse": "La Lune",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme saute le plus loin possible dans un carré de sable ?",
-      "reponse": "Le saut en longueur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Sous quel objet ne faut-il pas passer selon la superstition ?",
-      "reponse": "Une échelle",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne de sandwichs fait choisir son pain et ses garnitures au comptoir ?",
-      "reponse": "Subway",
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du chien ?",
+      "reponse": "L'aboiement",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quel traîneau de bois aux lattes recourbées glisse sur la neige au Québec ?",
-      "reponse": "La traîne sauvage",
+      "question": "Quel mot québécois désigne le vélo ?",
+      "reponse": "Un bicycle",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle loi américaine interdisait l'alcool ?",
-      "reponse": "La prohibition",
+      "question": "Quel constructeur a lancé la Ford T ?",
+      "reponse": "Henry Ford",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus grosse planète du système solaire ?",
+      "reponse": "Jupiter",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle substance affaiblit Superman ?",
+      "reponse": "La kryptonite",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume orange se creuse et se sculpte à l'Halloween ?",
+      "reponse": "La citrouille d'Halloween",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Tous les combien d'années ont lieu les JO d'hiver ?",
+      "reponse": "Quatre ans",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle attraction de parc aquatique fait descendre un long tube en spirale ?",
+      "reponse": "La glissade d'eau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel animal saute et transporte son bébé dans une poche ?",
+      "reponse": "Le kangourou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle boisson énergisante promet de donner des ailes ?",
+      "reponse": "Red Bull",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de chaud ?",
-      "reponse": "Froid",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel sandwich à trois étages se sert avec des frites et de la salade de chou ?",
-      "reponse": "Le club sandwich",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal roux au museau pointu passe pour rusé dans les fables ?",
-      "reponse": "Le renard",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Disney vit avec sept nains ?",
-      "reponse": "Blanche-Neige",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit jaune les singes adorent-ils ?",
-      "reponse": "La banane",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la voie bordée de maisons où l'on habite en ville ?",
-      "reponse": "Une rue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Dans quel film Pixar une maison vole-t-elle avec des ballons ?",
-      "reponse": "Là-haut",
-      "niveau": 1
     }
   ]
 }

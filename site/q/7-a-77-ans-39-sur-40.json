@@ -8,84 +8,75 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Combien de temps la Terre met-elle pour faire un tour sur elle-même ?",
-      "reponse": "Un jour",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat de pâtes au fromage orange en boîte est célèbre au Canada ?",
-      "reponse": "Le Kraft Dinner",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel joueur de la NBA est surnommé King James ?",
-      "reponse": "LeBron James",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style de musique se joue fort avec guitares électriques et batterie ?",
-      "reponse": "Le rock",
+      "question": "Quel point le plus au sud de la Terre est couvert de glace ?",
+      "reponse": "Le pôle Sud",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Combien de lettres compte l'alphabet français ?",
-      "reponse": "Vingt-six",
+      "question": "Quel chiffre porte malheur en Occident ?",
+      "reponse": "13",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quelle province se trouve Montréal ?",
-      "reponse": "Le Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel objet se passent les coureurs de relais ?",
-      "reponse": "Le témoin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel gorille géant grimpe l'Empire State Building au cinéma ?",
-      "reponse": "King Kong",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "De quel arbre le koala mange-t-il les feuilles ?",
-      "reponse": "L'eucalyptus",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle arme lumineuse utilisent les Jedi ?",
-      "reponse": "Le sabre laser",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on une personne qui parle deux langues ?",
-      "reponse": "Bilingue",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quelle société d'État tire les loteries au Québec ?",
+      "reponse": "Loto-Québec",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle danse latine endiablée vient de Cuba ?",
-      "reponse": "La salsa",
+      "question": "Comment appelle-t-on le son qui revient quand on crie dans une vallée ?",
+      "reponse": "Un écho",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle princesse anglaise est morte à Paris en 1997 ?",
+      "reponse": "Diana",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien d'anneaux entrelacés forment le symbole olympique ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel hockeyeur était surnommé le Rocket ?",
+      "reponse": "Maurice Richard",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel déjeuner anglais complet est copieux ?",
+      "reponse": "English breakfast",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse brésilienne anime le carnaval ?",
+      "reponse": "La samba",
       "niveau": 1,
       "ages": [
         "ados",
@@ -95,46 +86,85 @@
     },
     {
       "categorie": "Québec",
-      "question": "Combien de lignes compte le métro de Montréal ?",
-      "reponse": "Quatre",
+      "question": "Quelle baleine blanche du Saint-Laurent est protégée ?",
+      "reponse": "Le béluga",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir les yeux dans la graisse de bines ?",
-      "reponse": "Être dans la lune",
+      "categorie": "Cinéma et télé",
+      "question": "Quel monstre géant venu du Japon écrase des villes au cinéma ?",
+      "reponse": "Godzilla",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Dans quelle ville vivent les Simpson ?",
+      "reponse": "Springfield",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel océan traverse-t-on en avion pour aller du Canada à la France ?",
+      "reponse": "L'Atlantique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Le dauphin est-il un poisson ou un mammifère ?",
+      "reponse": "Un mammifère",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel plat québécois combine frites, fromage et sauce ?",
+      "reponse": "La poutine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle racine piquante parfume les biscuits de Noël ?",
+      "reponse": "Le gingembre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport de glace fait tourner et sauter les patineurs en musique ?",
+      "reponse": "Le patinage artistique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel engin à deux roues se pousse d'un pied en tenant un guidon ?",
+      "reponse": "La trottinette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle échelle mesure les séismes ?",
+      "reponse": "Richter",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel colonel a fondé la chaîne de poulet PFK ?",
-      "reponse": "Sanders",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on les combats à cheval où deux chevaliers se chargeaient avec des lances ?",
-      "reponse": "Les joutes",
+      "question": "Quelle céréale compose le gruau ?",
+      "reponse": "L'avoine",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel insecte rouge à points noirs porte bonheur ?",
-      "reponse": "La coccinelle",
+      "categorie": "Mots et langue",
+      "question": "Quel palindrome de trois lettres exprime un refus ?",
+      "reponse": "Non",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Dans La Reine des neiges, de quoi rêve Olaf qu'il n'a jamais connu ?",
-      "reponse": "L'été",
+      "categorie": "Culture générale",
+      "question": "Que veut dire l'abréviation DM sur les réseaux sociaux ?",
+      "reponse": "Un message privé",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -142,50 +172,25 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Pluriel de œil ?",
-      "reponse": "Yeux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle vitamine trouve-t-on dans les oranges ?",
-      "reponse": "La vitamine C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelles montagnes russes en bois de La Ronde sont célèbres ?",
-      "reponse": "Le Monstre",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quel film d'animation raconte une princesse écossaise aux cheveux roux qui tire à l'arc ?",
-      "reponse": "Rebelle",
+      "question": "Quel mot répète Sheldon en cognant à la porte ?",
+      "reponse": "Penny",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel sport se joue avec un ballon qu'on frappe des mains par-dessus un filet ?",
-      "reponse": "Le volleyball",
+      "categorie": "Mots et langue",
+      "question": "Quelle est la lettre la plus utilisée en français ?",
+      "reponse": "Le E",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Combien de sens possède l'être humain ?",
-      "reponse": "Cinq",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles petites autos de métal roulent sur des pistes de plastique orange ?",
-      "reponse": "Les Hot Wheels",
+      "categorie": "Mots et langue",
+      "question": "Que signifie être blanc comme un drap ?",
+      "reponse": "Être très pâle",
       "niveau": 1
     }
   ]

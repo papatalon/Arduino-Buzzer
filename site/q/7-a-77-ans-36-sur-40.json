@@ -7,176 +7,177 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Culture générale",
+      "question": "Quel jeu de société fait acheter des rues ?",
+      "reponse": "Monopoly",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve la Grande Muraille ?",
+      "reponse": "La Chine",
+      "niveau": 1
+    },
+    {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on la bouteille dans laquelle un joueur boit sur le banc ?",
-      "reponse": "Une gourde",
+      "question": "Comment appelle-t-on le match qui décide du championnat ?",
+      "reponse": "La finale",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle plante à quatre feuilles porte chance ?",
+      "reponse": "Le trèfle",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels sont les trois états de l'eau ?",
+      "reponse": "Solide liquide gaz",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâtisserie ronde se décore de glaçage pour une fête ?",
-      "reponse": "Le gâteau",
+      "question": "Quel fruit brun et poilu vient de Nouvelle-Zélande ?",
+      "reponse": "Le kiwi",
       "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plateforme de diffusion a un grand N rouge pour logo ?",
+      "reponse": "Netflix",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport lance-t-on un javelot ?",
+      "reponse": "L'athlétisme",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle lumière invisible bronze la peau ?",
+      "reponse": "Les ultraviolets",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur canadien a été découvert sur YouTube ?",
+      "reponse": "Justin Bieber",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
+      "reponse": "Georges St-Pierre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle la statuette du cinéma américain ?",
-      "reponse": "L'Oscar",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Combien de minutes dans une heure ?",
-      "reponse": "60",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil au propane sort sur le balcon dès les premiers beaux jours ?",
-      "reponse": "Le barbecue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "De quelle couleur est le feu de circulation qui dit d'avancer ?",
-      "reponse": "Vert",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle échelle mesure les séismes ?",
-      "reponse": "Richter",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu provençal lance des boules vers un cochonnet ?",
-      "reponse": "La pétanque",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le pôle Sud ?",
-      "reponse": "L'Antarctique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Que fait-on peindre sur son visage dans les fêtes d’enfants ?",
-      "reponse": "Du maquillage",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on le document qui rapporte les notes d'un élève à ses parents ?",
-      "reponse": "Le bulletin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe a chanté Hey Jude et Let It Be ?",
-      "reponse": "Les Beatles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie il pleut à boire debout ?",
-      "reponse": "Il pleut très fort",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert glacé mange-t-on en cornet l'été ?",
-      "reponse": "La crème glacée",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle couche de gaz protège la Terre des UV ?",
-      "reponse": "La couche d'ozone",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel animal nous donne la laine ?",
-      "reponse": "Le mouton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fruit orange à peau veloutée cache un gros noyau ?",
-      "reponse": "La pêche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui écrit la musique d'une chanson ?",
-      "reponse": "Le compositeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'énorme masse de glace qui flotte sur la mer ?",
-      "reponse": "Un iceberg",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel jeu se joue avec cinq dés et des combinaisons ?",
-      "reponse": "Le Yum (Yahtzee)",
+      "question": "Comment s'appellent les trois neveux de Donald ?",
+      "reponse": "Riri, Fifi et Loulou",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel constructeur a lancé la Ford T ?",
-      "reponse": "Henry Ford",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de fermer ?",
-      "reponse": "Ouvrir",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel gros chien rouge de livres pour enfants est devenu un film ?",
-      "reponse": "Clifford",
-      "niveau": 1,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel événement cache le Soleil derrière la Lune ?",
-      "reponse": "Une éclipse",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Contraire de généreux, commençant par A ?",
-      "reponse": "Avare",
+      "question": "Quelle reine a régné 70 ans sur le Royaume-Uni ?",
+      "reponse": "Elizabeth II",
       "niveau": 1,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de jours dans une année bissextile ?",
+      "reponse": "366",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on les longs cônes de glace qui pendent des toits ?",
+      "reponse": "Des glaçons",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir un chat dans la gorge ?",
+      "reponse": "Être enroué",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle animatrice québécoise animait Le Banquier ?",
+      "reponse": "Julie Snyder",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
+      "reponse": "Rio de Janeiro",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel biscuit au chocolat cache une guimauve ?",
+      "reponse": "Le Whippet",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment nomme-t-on la période des sucres ?",
+      "reponse": "Le temps des sucres",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment dit-on « oui » en espagnol ?",
+      "reponse": "Sí",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle force nous retient au sol ?",
+      "reponse": "La gravité",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie se lever du mauvais pied ?",
+      "reponse": "Être de mauvaise humeur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle chaîne de restaurants a des arches dorées ?",
+      "reponse": "McDonald's",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le musicien assis derrière ses caisses et ses cymbales ?",
+      "reponse": "Un batteur",
+      "niveau": 1
     }
   ]
 }

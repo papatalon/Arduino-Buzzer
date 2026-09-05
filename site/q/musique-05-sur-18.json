@@ -14,24 +14,26 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel appareil enregistrait la musique sur une bande dans les années 80 ?",
-      "reponse": "Une cassette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Dans « Alouette, gentille alouette », quelle partie plume-t-on en premier ?",
+      "reponse": "La tête",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Que fait un musicien qui règle son instrument avant de jouer ?",
-      "reponse": "Accorder",
-      "niveau": 3
+      "question": "Quelle danse fait claquer des souliers ferrés sur le plancher ?",
+      "reponse": "La claquette",
+      "niveau": 2
     },
     {
       "categorie": "Musique",
       "question": "Comment appelle-t-on l'absence de son ?",
       "reponse": "Le silence",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument rempli de graines produit un son quand on le secoue ?",
+      "reponse": "Les maracas",
       "niveau": 1
     },
     {
@@ -46,30 +48,19 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe de Seattle a popularisé le grunge ?",
-      "reponse": "Nirvana",
-      "niveau": 2,
+      "question": "Quelle plateforme suédoise diffuse de la musique en continu ?",
+      "reponse": "Spotify",
+      "niveau": 1,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados",
+        "adultes"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Dans « Alouette, gentille alouette », quelle partie plume-t-on en premier ?",
-      "reponse": "La tête",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument rempli de graines produit un son quand on le secoue ?",
-      "reponse": "Les maracas",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle plateforme suédoise diffuse de la musique en continu ?",
-      "reponse": "Spotify",
+      "question": "Quelle chanson anglaise fait toucher la tête, les épaules, les genoux et les orteils ?",
+      "reponse": "Head and Shoulders",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -89,9 +80,9 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment s'appelle un groupe de quatre musiciens ?",
-      "reponse": "Un quatuor",
-      "niveau": 1,
+      "question": "Dans Pierre et le loup, quel instrument joue l'oiseau ?",
+      "reponse": "La flûte",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -100,22 +91,10 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanson anglaise fait toucher la tête, les épaules, les genoux et les orteils ?",
-      "reponse": "Head and Shoulders",
-      "niveau": 1,
+      "question": "Quel groupe de Seattle a popularisé le grunge ?",
+      "reponse": "Nirvana",
+      "niveau": 2,
       "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel style triste est né dans le delta du Mississippi ?",
-      "reponse": "Le blues",
-      "niveau": 1,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -134,6 +113,40 @@
     },
     {
       "categorie": "Musique",
+      "question": "Comment appelle-t-on le fait de jouer en inventant, sans partition ?",
+      "reponse": "L'improvisation",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style triste est né dans le delta du Mississippi ?",
+      "reponse": "Le blues",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment s'appelle un groupe de quatre musiciens ?",
+      "reponse": "Un quatuor",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on une chanson enregistrée avec deux artistes vedettes ?",
+      "reponse": "Un duo",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
       "question": "Comment appelle-t-on la voix qui accompagne la voix principale en harmonie ?",
       "reponse": "Les chœurs",
       "niveau": 2,
@@ -145,18 +158,6 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on le fait de jouer en inventant, sans partition ?",
-      "reponse": "L'improvisation",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on une chanson enregistrée avec deux artistes vedettes ?",
-      "reponse": "Un duo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
       "question": "Comment appelle-t-on la liste de chansons qu'on se prépare pour une occasion ?",
       "reponse": "Une liste de lecture",
       "niveau": 1,
@@ -165,6 +166,12 @@
         "ados",
         "adultes"
       ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse à trois temps fait tourner les couples dans les bals ?",
+      "reponse": "La valse",
+      "niveau": 2
     },
     {
       "categorie": "Musique",
@@ -185,12 +192,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse à trois temps fait tourner les couples dans les bals ?",
-      "reponse": "La valse",
-      "niveau": 2
     },
     {
       "categorie": "Musique",

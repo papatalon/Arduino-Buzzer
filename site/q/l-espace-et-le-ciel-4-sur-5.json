@@ -7,33 +7,25 @@
   "emoji": "🪐",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est l'étoile la plus proche de la Terre ?",
-      "reponse": "Le Soleil",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle direction le soleil se couche-t-il ?",
-      "reponse": "À l'ouest",
-      "niveau": 1
+      "categorie": "Histoire",
+      "question": "Quel rover s'est posé sur Mars en 2012 ?",
+      "reponse": "Curiosity",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?",
-      "reponse": "La Station spatiale internationale",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle semaine de congé coupe l'hiver scolaire au début de mars ?",
-      "reponse": "La semaine de relâche",
+      "question": "Qui fut le premier homme sur la Lune ?",
+      "reponse": "Neil Armstrong",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Qui fut le deuxième homme à marcher sur la Lune ?",
-      "reponse": "Buzz Aldrin",
+      "categorie": "Culture pop",
+      "question": "Quelles espadrilles de toile montantes portent une étoile sur la cheville ?",
+      "reponse": "Les Converse",
       "niveau": 2,
       "ages": [
         "ados",
@@ -42,15 +34,15 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal marin à cinq bras peut en faire repousser un ?",
-      "reponse": "L'étoile de mer",
+      "categorie": "Géographie",
+      "question": "De quel côté se couche le soleil ?",
+      "reponse": "À l'ouest",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Combien de lunes possède la Terre ?",
-      "reponse": "Une",
+      "categorie": "Mots et langue",
+      "question": "Que signifie être dans la lune ?",
+      "reponse": "Être distrait",
       "niveau": 1
     },
     {
@@ -60,102 +52,117 @@
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel instrument de navigation mesurait la hauteur des astres sur l'horizon ?",
-      "reponse": "Le sextant",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quelle est la planète la plus proche du Soleil ?",
-      "reponse": "Mercure",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel astronaute canadien a chanté dans l'espace ?",
-      "reponse": "Chris Hadfield",
-      "niveau": 2,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien de temps la Terre met-elle pour faire le tour du Soleil ?",
-      "reponse": "Un an",
+      "question": "Quel animal hurle à la lune et chasse en meute ?",
+      "reponse": "Le loup",
       "niveau": 1
     },
     {
+      "categorie": "Sciences et nature",
+      "question": "Quelle vitamine fabrique la peau au soleil ?",
+      "reponse": "La vitamine D",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que porte un astronaute pour survivre dans l'espace ?",
+      "reponse": "Un scaphandre",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel astre supermassif avale même la lumière ?",
+      "reponse": "Le trou noir",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle galaxie abrite notre système solaire ?",
+      "reponse": "La Voie lactée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel astronome a placé le Soleil au centre de l'univers ?",
+      "reponse": "Copernic",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Dans quel jeu faut-il démasquer l'imposteur à bord d'un vaisseau spatial ?",
+      "reponse": "Among Us",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle salle de Montréal projette le ciel étoilé sur un dôme au-dessus des spectateurs ?",
+      "reponse": "Le Planétarium",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle direction le soleil se couche-t-il ?",
+      "reponse": "À l'ouest",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète est la plus chaude du système solaire ?",
+      "reponse": "Vénus",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Cinéma et télé",
-      "question": "Quel méchant des Minions veut voler la Lune ?",
-      "reponse": "Gru",
+      "question": "De quelle planète vient Superman ?",
+      "reponse": "Krypton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle science étudie les astres ?",
+      "reponse": "L'astronomie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel astre change de forme dans le ciel au fil des nuits ?",
+      "reponse": "La Lune",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la semaine de congé scolaire du début mars ?",
-      "reponse": "La relâche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Le Soleil est-il une planète ou une étoile ?",
-      "reponse": "Une étoile",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel fut le premier satellite artificiel ?",
-      "reponse": "Spoutnik",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle fleur suit le Soleil ?",
-      "reponse": "Le tournesol",
+      "question": "Quelle basilique du Vieux-Montréal a un plafond bleu étoilé ?",
+      "reponse": "Notre-Dame",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles chaussures de caoutchouc percées de trous divisent la planète ?",
-      "reponse": "Les Crocs",
+      "question": "Quelle créature bleue de Disney, échappée de l'espace, s'appelle l'expérience 626 ?",
+      "reponse": "Stitch",
       "niveau": 1,
       "ages": [
         "enfants",
         "ados",
         "adultes"
       ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète est surnommée la planète rouge ?",
-      "reponse": "Mars",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel cirque québécois est connu mondialement ?",
-      "reponse": "Cirque du Soleil",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel animal fut le premier en orbite ?",
-      "reponse": "La chienne Laïka",
-      "niveau": 2
     }
   ]
 }

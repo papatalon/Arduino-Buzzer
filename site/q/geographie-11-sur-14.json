@@ -8,15 +8,20 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Quelle montagne se dresse au milieu de Montréal ?",
-      "reponse": "Le mont Royal",
-      "niveau": 1
+      "question": "Quel pays est surnommé l'île d'émeraude ?",
+      "reponse": "L'Irlande",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la voie bordée de maisons où l'on habite en ville ?",
-      "reponse": "Une rue",
-      "niveau": 1
+      "question": "Quelle chaîne de montagnes du Québec attire les skieurs au nord de Montréal ?",
+      "reponse": "Les Laurentides",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -31,15 +36,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays vivent les pandas géants ?",
-      "reponse": "La Chine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande île du monde ?",
-      "reponse": "Le Groenland",
-      "niveau": 2,
+      "question": "Quelle grande île de l'Atlantique, au large de Terre-Neuve, appartient à la France ?",
+      "reponse": "Saint-Pierre-et-Miquelon",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -70,26 +69,37 @@
     },
     {
       "categorie": "Géographie",
+      "question": "Dans quel pays se tient le grand carnaval de Rio ?",
+      "reponse": "Le Brésil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
       "question": "Capitale du Japon ?",
       "reponse": "Tokyo",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve Londres ?",
-      "reponse": "L'Angleterre",
+      "question": "Quelle est la plus grande île du monde ?",
+      "reponse": "Le Groenland",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une terre entièrement entourée d'eau ?",
+      "reponse": "Une île",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel point le plus au sud de la Terre est couvert de glace ?",
-      "reponse": "Le pôle Sud",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle saison fait tomber les feuilles des arbres ?",
-      "reponse": "L'automne",
+      "question": "Quelle saison fait fleurir les arbres et fondre la neige ?",
+      "reponse": "Le printemps",
       "niveau": 1
     },
     {
@@ -116,21 +126,15 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'eau qui tombe du haut d'une falaise dans une rivière ?",
-      "reponse": "Une chute",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
       "question": "Quel est le continent le plus peuplé ?",
       "reponse": "L'Asie",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le grand bâtiment d'où décollent les avions ?",
-      "reponse": "Un aéroport",
-      "niveau": 1
+      "question": "Comment appelle-t-on la grande vallée creusée par une rivière entre deux parois ?",
+      "reponse": "Un canyon",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -145,21 +149,33 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la capitale de la province de Québec ?",
-      "reponse": "La ville de Québec",
+      "question": "Quelle région du Québec est célèbre pour ses bleuets ?",
+      "reponse": "Le Lac-Saint-Jean",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien de territoires compte le Canada ?",
+      "reponse": "Trois",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on des koalas et des kangourous ?",
-      "reponse": "L'Australie",
-      "niveau": 1
+      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
+      "reponse": "La Norvège",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Quel continent n'a aucun pays ?",
-      "reponse": "L'Antarctique",
-      "niveau": 1
+      "question": "Comment appelle-t-on le mur de béton qui retient l'eau d'une rivière ?",
+      "reponse": "Un barrage",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le décalage d'heure entre Montréal et Paris ?",
+      "reponse": "Le décalage horaire",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
@@ -169,8 +185,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel passage maritime arctique relie deux océans ?",
-      "reponse": "Nord-Ouest",
+      "question": "Quel courant marin réchauffe l'Europe ?",
+      "reponse": "Le Gulf Stream",
       "niveau": 2,
       "ages": [
         "ados",
@@ -180,20 +196,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Monnaie utilisée aux États-Unis ?",
-      "reponse": "Le dollar",
+      "question": "Sur quel continent se trouve le pôle Sud ?",
+      "reponse": "L'Antarctique",
       "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on l'opéra aux voiles blanches ?",
-      "reponse": "Sydney",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
     }
   ]
 }

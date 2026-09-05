@@ -26,20 +26,31 @@ sans contrôle.** Repères au 4 septembre 2026 : 53 et 258.
 
 ## Ce qui n'est pas contrôlé
 
-### 1. Les faits jamais relus
+### 1. Les faits jamais relus — FAIT (septembre 2026)
 
-Sur 1746 affirmations vérifiables de la banque, 503 ont été relues et
-vérifiées à l'extérieur en septembre 2026. **1243 ne l'ont jamais été**,
-surtout dans la moitié miroir du firmware.
+Les 1746 affirmations vérifiables de la banque ont toutes été relues, et les
+plus exposées vérifiées à l'extérieur plutôt qu'en se relisant.
 
-Ce que la relecture de septembre a trouvé sur les 503 : sept faits faux, deux
-données périmées, une vingtaine d'ambiguïtés. Rien ne laisse croire que les
-1243 autres soient plus propres.
+Résultat : **treize faits faux**, deux données périmées, une quarantaine
+d'ambiguïtés et de fuites, et 37 quasi-doublons. La mésange n'est pas bleue,
+la mouffette ne fait pas le mort, Toupie est une souris, Gabby est une
+fillette, le cipaille vient de la Gaspésie et non du Lac-Saint-Jean,
+Mont-Sainte-Anne ne domine pas Stoneham, BIXI compte quatre lettres, Cartier
+ne remonte pas le fleuve en 1534, La Presse a cessé le papier en 2017, le
+parc Maisonneuve borde le Parc olympique sans l'entourer, la Boîte à surprise
+n'ouvrait sur aucun coffre, le chapeau de Toad est blanc taché de rouge, et
+c'est Isabelle Pierre qui a popularisé Évangéline.
 
-Méthode qui a marché : trier par forme de risque (détail descriptif sur une
-entité réelle, date, record, mesure, nom propre), puis vérifier à l'extérieur
-au lieu de se relire. Les questions de vocabulaire et de définitions ne
-peuvent pas être fausses et ne demandent rien.
+Méthode qui a marché, à reprendre pour tout nouveau lot : trier par forme de
+risque (détail descriptif sur une entité réelle, date, record, mesure, nom
+propre), puis vérifier à l'extérieur. Les questions de vocabulaire et de
+définitions ne peuvent pas être fausses et ne demandent rien. **Se relire ne
+sert à rien** : les treize faits faux étaient tous des souvenirs qui
+paraissaient sûrs.
+
+Ce qui n'est toujours pas couvert ici : les titres localisés. Le même film
+porte un nom au Québec et un autre en France (Moana / Vaiana, Sens dessus
+dessous / Vice-versa), et rien ne le signale.
 
 ### 2. L'ambiguïté
 

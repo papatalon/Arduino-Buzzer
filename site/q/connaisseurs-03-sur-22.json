@@ -7,9 +7,37 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Histoire",
+      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
+      "reponse": "Une diligence",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays d'Afrique se trouve la grande réserve du Masai Mara ?",
+      "reponse": "Le Kenya",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument de bois à trous se joue en travers des lèvres ?",
+      "reponse": "La flûte traversière",
+      "niveau": 3
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Comment appelle-t-on le fait d'engloutir une saison complète d'un seul coup ?",
-      "reponse": "L'écoute en rafale",
+      "question": "Que rapportait-on à l'épicerie pour récupérer quelques sous ?",
+      "reponse": "Les bouteilles vides",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?",
+      "reponse": "La baie James",
       "niveau": 3,
       "ages": [
         "ados",
@@ -18,9 +46,28 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel explorateur portugais a contourné l'Afrique en 1498 ?",
-      "reponse": "Vasco de Gama",
+      "categorie": "Culture pop",
+      "question": "Quelle autrice et animatrice québécoise a abordé les tabous à la télé pendant des décennies ?",
+      "reponse": "Janette Bertrand",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel secteur de Montréal regroupe salles de spectacle et festivals au centre-ville ?",
+      "reponse": "Le Quartier des spectacles",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle infusion sud-africaine est naturellement rouge ?",
+      "reponse": "Le rooibos",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -28,9 +75,123 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle tartelette portugaise est à la crème ?",
-      "reponse": "Pastel de nata",
+      "categorie": "Musique",
+      "question": "Quelle comptine fait répondre le hibou au coucou, du haut de son grand chêne ?",
+      "reponse": "Dans la forêt lointaine",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle baie nordique québécoise parfume gins et confitures ?",
+      "reponse": "La chicoutai",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel inventeur italien est considéré comme le père de la radio ?",
+      "reponse": "Marconi",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel imitateur québécois a chanté en enchaînant des dizaines de voix célèbres ?",
+      "reponse": "André-Philippe Gagnon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui dirige une chorale ?",
+      "reponse": "Un chef de chœur",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel manga suit Luffy et son équipage de pirates ?",
+      "reponse": "One Piece",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel meuble de bois abrite les tuyaux et les claviers dans une église ?",
+      "reponse": "Le buffet d'orgue",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel rappeur américain a reçu un prix Pulitzer pour un album ?",
+      "reponse": "Kendrick Lamar",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument espagnol se claque entre les doigts pendant le flamenco ?",
+      "reponse": "Les castagnettes",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la grille de fer qui descend pour bloquer l'entrée d'un château ?",
+      "reponse": "La herse",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention chinoise a remplacé le parchemin pour écrire ?",
+      "reponse": "Le papier",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel art martial signifie voie de la souplesse ?",
+      "reponse": "Le judo",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Qui était le dernier tsar de Russie ?",
+      "reponse": "Nicolas II",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel lac canadien est le plus profond ?",
+      "reponse": "Lac des Esclaves",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -39,65 +200,20 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle autoroute mène de Montréal vers les Laurentides ?",
-      "reponse": "La 15",
+      "question": "Quel bâtiment incliné de Montréal permet de voir la ville d'en haut ?",
+      "reponse": "La tour de Montréal",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel bonbon acidulé se vend en poudre avec un petit bâton à tremper ?",
-      "reponse": "Le Fun Dip",
+      "question": "Quelle quincaillerie québécoise portait un prénom dans son enseigne ?",
+      "reponse": "Pascal",
       "niveau": 3,
       "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
-      "reponse": "Le Wordle",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel explorateur a cherché la fontaine de Jouvence en Floride ?",
-      "reponse": "Ponce de León",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle pédale déforme le son de la guitare pour le rendre saturé ?",
-      "reponse": "La distorsion",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse traditionnelle québécoise se danse à quatre couples sur les appels d'un câlleur ?",
-      "reponse": "Le set carré",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     },
@@ -108,145 +224,6 @@
       "niveau": 3,
       "ages": [
         "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Qui a inventé le basketball ?",
-      "reponse": "James Naismith",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel artiste québécois a fait sensation avec l'album Darlène ?",
-      "reponse": "Hubert Lenoir",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Dans quelle ville Jeanne d'Arc fut-elle brûlée ?",
-      "reponse": "Rouen",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve Petra, la cité rose ?",
-      "reponse": "La Jordanie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument de flûtes de longueurs différentes se joue en soufflant à leur bord ?",
-      "reponse": "La flûte de Pan",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel compositeur russe a écrit Casse-Noisette ?",
-      "reponse": "Tchaïkovski",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu télévisé québécois demande de repérer celui qui ment ?",
-      "reponse": "Le Tricheur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?",
-      "reponse": "Une corde de bois",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Maroc ?",
-      "reponse": "Rabat",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
-      "reponse": "Grand Theft Auto",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?",
-      "reponse": "Fanfreluche",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
-      "reponse": "Traité de Paris",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle longue habitation abritait plusieurs familles chez les Iroquoiens ?",
-      "reponse": "La maison longue",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel objet à ressort le professeur de musique frappe-t-il pour donner le la ?",
-      "reponse": "Un diapason",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle bibliothèque nationale ouverte en 2005 se dresse près de Berri-UQAM ?",
-      "reponse": "La Grande Bibliothèque",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
       ]
     }
   ]

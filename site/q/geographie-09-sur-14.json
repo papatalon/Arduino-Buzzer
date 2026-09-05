@@ -8,15 +8,9 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
-      "reponse": "L'épinette",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouvent le Brésil et l'Argentine ?",
-      "reponse": "L'Amérique du Sud",
-      "niveau": 1
+      "question": "Comment appelle-t-on les chutes situées juste à côté de la ville de Québec ?",
+      "reponse": "Les chutes Montmorency",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -37,33 +31,32 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville des États-Unis ?",
-      "reponse": "New York",
+      "question": "Comment appelle-t-on la grande étendue de terre où le fermier sème son blé ?",
+      "reponse": "Un champ",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne parle surtout français ?",
-      "reponse": "Le Québec",
+      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
+      "reponse": "L'Alberta",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville se trouve la tour Eiffel ?",
+      "reponse": "Paris",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le trou d'eau au milieu du désert avec des palmiers ?",
-      "reponse": "Une oasis",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée au Mexique ?",
-      "reponse": "L'espagnol",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le village où l'on cultive la terre et élève des animaux ?",
-      "reponse": "Une ferme",
-      "niveau": 1
+      "question": "Sur quelle côte d'Australie se trouvent Sydney et Melbourne ?",
+      "reponse": "La côte est",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -73,9 +66,25 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
-      "reponse": "Rio de Janeiro",
+      "question": "Langue parlée au Mexique ?",
+      "reponse": "L'espagnol",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le mouvement de la mer qui monte et descend chaque jour ?",
+      "reponse": "La marée",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve Tombouctou ?",
+      "reponse": "Le Mali",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -107,14 +116,55 @@
     },
     {
       "categorie": "Géographie",
+      "question": "Quelle est la capitale de la province de Québec ?",
+      "reponse": "La ville de Québec",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?",
+      "reponse": "Le pont Champlain",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on un très grand bâtiment de plusieurs dizaines d'étages ?",
+      "reponse": "Un gratte-ciel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle île canadienne a inspiré Anne aux pignons verts ?",
+      "reponse": "Prince-Édouard",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel petit pays d'Europe est connu pour ses frites, ses gaufres et sa capitale Bruxelles ?",
+      "reponse": "La Belgique",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Christ Rédempteur ?",
+      "reponse": "Rio de Janeiro",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
       "question": "Quel animal figure sur la pièce d'un dollar canadien ?",
       "reponse": "Le huard",
       "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on la place Tiananmen ?",
-      "reponse": "Pékin",
+      "question": "Quelle est la plus grande île du golfe Saint-Laurent ?",
+      "reponse": "Anticosti",
       "niveau": 2,
       "ages": [
         "ados",
@@ -124,85 +174,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne produit le plus de pétrole ?",
-      "reponse": "L'Alberta",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel golfe borde le Texas et la Floride ?",
-      "reponse": "Golfe du Mexique",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Pérou ?",
-      "reponse": "Lima",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel territoire canadien a Iqaluit pour capitale ?",
-      "reponse": "Le Nunavut",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Kremlin ?",
-      "reponse": "Moscou",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus long fleuve du Canada ?",
-      "reponse": "Le Mackenzie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays d'Europe a la forme d'une main et borde la mer Baltique ?",
-      "reponse": "La Pologne",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "De quel côté se couche le soleil ?",
-      "reponse": "À l'ouest",
+      "question": "Quel océan borde la côte ouest du Canada ?",
+      "reponse": "Le Pacifique",
       "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Chili ?",
+      "reponse": "Santiago",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

@@ -8,6 +8,17 @@
   "questions": [
     {
       "categorie": "Sports",
+      "question": "Quel sport de montagne grimpe des parois gelées à crampons ?",
+      "reponse": "L'alpinisme",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
       "question": "Quel sport de cirque marche sur un fil tendu en hauteur ?",
       "reponse": "Le funambulisme",
       "niveau": 3,
@@ -29,18 +40,6 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle embarcation étroite se dirige avec une pagaie à deux pales ?",
-      "reponse": "Le kayak",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de prises retirent un frappeur au baseball ?",
-      "reponse": "Trois",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sports",
       "question": "Quel tournoi du grand chelem se joue en janvier ?",
       "reponse": "Open d'Australie",
       "niveau": 2,
@@ -49,6 +48,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de prises retirent un frappeur au baseball ?",
+      "reponse": "Trois",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
@@ -121,8 +126,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel circuit montréalais accueille le Grand Prix ?",
-      "reponse": "Gilles-Villeneuve",
+      "question": "Sur quelle île de Montréal se court le Grand Prix de Formule 1 ?",
+      "reponse": "L'île Notre-Dame",
       "niveau": 1,
       "ages": [
         "ados",

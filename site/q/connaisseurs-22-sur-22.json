@@ -8,8 +8,47 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quel instrument permettait aux marins de repérer leur position grâce aux étoiles ?",
-      "reponse": "Le sextant",
+      "question": "Qui a déchiffré les hiéroglyphes ?",
+      "reponse": "Champollion",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu télévisé opposait des équipes d'élèves du secondaire ?",
+      "reponse": "Génies en herbe",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
+      "reponse": "Radio Enfer",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel gâteau blanc et rond de Vachon porte un prénom féminin ?",
+      "reponse": "Le May West",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne sépare l'Europe de l'Asie ?",
+      "reponse": "L'Oural",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -18,46 +57,79 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle plateforme les pirates faisaient-ils parcourir aux prisonniers au-dessus de l'eau ?",
-      "reponse": "La planche",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Que porte un astronaute pour survivre dans l'espace ?",
-      "reponse": "Un scaphandre",
-      "niveau": 3
+      "question": "Comment appelle-t-on le marin posté en haut du mât pour surveiller l'horizon ?",
+      "reponse": "La vigie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe italien a gagné l'Eurovision en 2021 en jouant du rock ?",
-      "reponse": "Måneskin",
+      "question": "Quelle chanson de Bon Jovi raconte Tommy et Gina à mi-chemin ?",
+      "reponse": "Livin' on a Prayer",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission de Radio-Canada enquête sur ce qu'on met dans notre assiette ?",
+      "reponse": "L'épicerie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
+      "reponse": "Klô Pelgag",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle pédale déforme le son de la guitare pour le rendre saturé ?",
+      "reponse": "La distorsion",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel attaquant norvégien enfile les buts à Manchester City ?",
+      "reponse": "Haaland",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la voix masculine aiguë des grands airs d'opéra ?",
+      "reponse": "Le ténor",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel biscuit québécois à la mélasse se trempe dans le lait ?",
-      "reponse": "La galette à la mélasse",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel genre musical africain aux rythmes chaloupés s'est imposé mondialement ?",
-      "reponse": "L'afrobeat",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on celui qui mène les danses traditionnelles à l'archet ?",
-      "reponse": "Un violoneux",
+      "question": "Quelle barrière de longues pièces de bois croisées entourait les vieilles fermes d'ici ?",
+      "reponse": "Une clôture de perches",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -66,27 +138,17 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel appareil fallait-il installer sur le toit pour capter les chaînes de télé ?",
-      "reponse": "L'antenne",
+      "question": "Quel capitaine de la télé jeunesse racontait des histoires invraisemblables avec ses invisibles ?",
+      "reponse": "Le Capitaine Bonhomme",
       "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
-      "reponse": "Dans une galaxie près de chez vous",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
-      "reponse": "Le REM",
+      "categorie": "Histoire",
+      "question": "Quel grand navire de guerre espagnol transportait l'or des Amériques ?",
+      "reponse": "Le galion",
       "niveau": 3,
       "ages": [
         "ados",
@@ -96,8 +158,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays d'Asie compte plus de 17000 îles ?",
-      "reponse": "L'Indonésie",
+      "question": "Quelle est la plus haute montagne du Canada ?",
+      "reponse": "Le mont Logan",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -105,28 +167,10 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel cheval célèbre a gagné la Triple Couronne en 1973 ?",
-      "reponse": "Secretariat",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
       "categorie": "Québec",
-      "question": "Quel poisson à moustaches se pêche au fond des rivières du Québec ?",
-      "reponse": "La barbotte",
+      "question": "Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?",
+      "reponse": "Une corde de bois",
       "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle carte de plastique rigide permettait de louer des films au club vidéo ?",
-      "reponse": "La carte de membre",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
     }
   ]
 }

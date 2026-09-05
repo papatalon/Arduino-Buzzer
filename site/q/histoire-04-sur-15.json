@@ -8,7 +8,7 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelle grande statue verte tient une torche à l'entrée de New York ?",
+      "question": "Quelle grande statue verte tient une torche à l'entrée d'un port américain ?",
       "reponse": "La statue de la Liberté",
       "niveau": 1
     },
@@ -20,9 +20,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel peintre italien a peint la Joconde ?",
-      "reponse": "Léonard de Vinci",
-      "niveau": 2
+      "question": "Quel savant français a montré que les microbes causent les maladies ?",
+      "reponse": "Pasteur",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
@@ -37,17 +37,21 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel général français s'est couronné empereur en 1804 ?",
-      "reponse": "Napoléon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quelle prison parisienne fut prise le 14 juillet 1789 ?",
       "reponse": "La Bastille",
       "niveau": 2,
       "ages": [
         "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle brebis clonée est née en 1996 ?",
+      "reponse": "Dolly",
+      "niveau": 2,
+      "ages": [
         "adultes",
         "aines"
       ]
@@ -60,13 +64,15 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle brebis clonée est née en 1996 ?",
-      "reponse": "Dolly",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel général français s'est couronné empereur en 1804 ?",
+      "reponse": "Napoléon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quelle matière les tout premiers outils de l'humanité étaient-ils taillés ?",
+      "reponse": "La pierre",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -81,23 +87,16 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelait-on les soldats montés à cheval dans les armées d'autrefois ?",
-      "reponse": "La cavalerie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quel peuple a construit Chichén Itzá ?",
       "reponse": "Les Mayas",
       "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on les grandes pierres dressées et posées à plat par les hommes préhistoriques ?",
-      "reponse": "Un dolmen",
+      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
+      "reponse": "L'inlandsis",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -115,9 +114,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel savant a expliqué la gravité en voyant tomber une pomme ?",
-      "reponse": "Newton",
-      "niveau": 2
+      "question": "Quel roi anglais légendaire aurait retiré une épée d'un rocher ?",
+      "reponse": "Le roi Arthur",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -141,14 +140,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on les longues bandes de terre perpendiculaires au fleuve ?",
-      "reponse": "Les rangs",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on le long bateau à rames des Grecs et des Romains ?",
+      "reponse": "Une galère",
+      "niveau": 3
     },
     {
       "categorie": "Histoire",
@@ -190,9 +184,14 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande maison fortifiée d'un seigneur, avec ses tours ?",
-      "reponse": "Un château fort",
-      "niveau": 1
+      "question": "Comment appelle-t-on les longues bandes de terre perpendiculaires au fleuve ?",
+      "reponse": "Les rangs",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",

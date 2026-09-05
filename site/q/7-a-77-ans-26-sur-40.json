@@ -7,133 +7,45 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Mots et langue",
+      "question": "Citez un palindrome de cinq lettres qui flotte.",
+      "reponse": "Kayak",
+      "niveau": 1
+    },
+    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel mollusque mange-t-on avec du beurre à l'ail ?",
-      "reponse": "L'escargot",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal hurle à la lune et chasse en meute ?",
-      "reponse": "Le loup",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Qui est le père de Luke Skywalker ?",
-      "reponse": "Dark Vador",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle créature de Tolkien dit mon précieux ?",
-      "reponse": "Gollum",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel cerceau fait-on tourner autour de la taille ?",
-      "reponse": "Le hula hoop",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel symbole lumineux surplombe le mont Royal ?",
-      "reponse": "La croix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Contraire d'avare, commençant par G ?",
-      "reponse": "Généreux",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film de 1977 s'ouvre sur « Il y a bien longtemps, dans une galaxie lointaine » ?",
-      "reponse": "La Guerre des étoiles",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Dans « Alouette, gentille alouette », quelle partie plume-t-on en premier ?",
-      "reponse": "La tête",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel repas québécois correspond au dîner français ?",
-      "reponse": "Le souper",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle épreuve d'athlétisme fait franchir une barre très haute à l'aide d'une longue tige souple ?",
-      "reponse": "Le saut à la perche",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal masqué fouille dans les poubelles la nuit au Québec ?",
-      "reponse": "Le raton laveur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien de provinces compte le Canada ?",
-      "reponse": "Dix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment surnomme-t-on la fête du 24 juin ?",
-      "reponse": "La Saint-Jean",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel objet québécois fait disparaître les traits de crayon sur le papier ?",
-      "reponse": "Une efface",
+      "question": "Quelle pâte à tartiner aux noisettes est adorée ?",
+      "reponse": "Le Nutella",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel instrument mesure le temps avec du sable ?",
-      "reponse": "Le sablier",
+      "question": "De quelle couleur sont les Schtroumpfs ?",
+      "reponse": "Bleus",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la partie d'une chanson qui revient entre les couplets ?",
-      "reponse": "Le refrain",
+      "categorie": "Mots et langue",
+      "question": "Masculin de poule ?",
+      "reponse": "Le coq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ville canadienne abrite la Tour CN ?",
+      "reponse": "Toronto",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle roche liquide sort des volcans ?",
-      "reponse": "La lave",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel biscuit au chocolat cache une guimauve ?",
-      "reponse": "Le Whippet",
+      "question": "Quel est l'os le plus long du corps humain ?",
+      "reponse": "Le fémur",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel stade accueillait les Expos ?",
-      "reponse": "Stade olympique",
+      "question": "Quel basketteur légendaire portait le 23 des Bulls ?",
+      "reponse": "Michael Jordan",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -141,9 +53,61 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel animal est Tony, la mascotte des céréales Frosted Flakes ?",
-      "reponse": "Un tigre",
+      "categorie": "Histoire",
+      "question": "Quelle machine volante a été mise au point par les frères Wright ?",
+      "reponse": "L'avion",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel appareil sèche les vêtements après le lavage ?",
+      "reponse": "La sécheuse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle expression québécoise signifie c'est correct ?",
+      "reponse": "C'est beau",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel minuscule oiseau peut voler en arrière ?",
+      "reponse": "Le colibri",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel est le sport national d'hiver du Canada ?",
+      "reponse": "Le hockey",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle comédie musicale met en scène des chats ?",
+      "reponse": "Cats",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le passage creusé sous une montagne ou sous l'eau ?",
+      "reponse": "Un tunnel",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel écureuil de L'Ère de glace court sans cesse après son gland ?",
+      "reponse": "Scrat",
       "niveau": 1,
       "ages": [
         "enfants",
@@ -152,33 +116,69 @@
       ]
     },
     {
+      "categorie": "Cinéma et télé",
+      "question": "Quel ami étoile de mer accompagne Bob l'éponge ?",
+      "reponse": "Patrick",
+      "niveau": 1
+    },
+    {
       "categorie": "Mots et langue",
-      "question": "Comment appelle-t-on la personne assise aux commandes d'un avion ?",
-      "reponse": "Un pilote",
+      "question": "Quel est le cri du coq ?",
+      "reponse": "Cocorico",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Aux échecs, combien de dames au départ par joueur ?",
-      "reponse": "Une",
+      "question": "Quel sac chaud sert à dormir en camping ?",
+      "reponse": "Un sac de couchage",
       "niveau": 1
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel empire avait Rome pour capitale ?",
-      "reponse": "L'Empire romain",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui joue d'un instrument ?",
+      "reponse": "Un musicien",
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
-      "reponse": "Les Pyrénées",
+      "categorie": "Culture pop",
+      "question": "Quels écouteurs sans fil blancs se rangent dans un petit boîtier ?",
+      "reponse": "Les AirPods",
       "niveau": 1,
       "ages": [
+        "enfants",
         "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume mariné accompagne le burger ?",
+      "reponse": "Le cornichon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel est le plus grand cervidé du Québec ?",
+      "reponse": "L'orignal",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel gros fruit vert à chair rouge et à pépins noirs se mange en tranches l'été ?",
+      "reponse": "La pastèque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de temps dure une punition mineure au hockey ?",
+      "reponse": "Deux minutes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animal est Sébastien dans La Petite Sirène ?",
+      "reponse": "Un crabe",
+      "niveau": 1
     }
   ]
 }

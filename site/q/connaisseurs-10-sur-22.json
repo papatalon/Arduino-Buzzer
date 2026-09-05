@@ -7,57 +7,28 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel instrument de bois à trous se joue en travers des lèvres ?",
-      "reponse": "La flûte traversière",
-      "niveau": 3
+      "categorie": "Géographie",
+      "question": "Capitale du Maroc ?",
+      "reponse": "Rabat",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?",
+      "reponse": "Le yéyé",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
-      "reponse": "L'Alberta",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel arbre fut ajouté au drapeau de Montréal en 2017 ?",
-      "reponse": "Le pin blanc",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel rover s'est posé sur Mars en 2012 ?",
-      "reponse": "Curiosity",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel tambour métallique vient de Trinité ?",
-      "reponse": "Le steel drum",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le service réussi que l'adversaire ne touche pas au tennis ?",
-      "reponse": "Un as",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la grosse chute qui blanchit tout en une nuit ?",
-      "reponse": "Une bordée de neige",
+      "question": "Quelle mer intérieure borde le Kazakhstan et l'Iran ?",
+      "reponse": "La Caspienne",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -66,78 +37,38 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel secteur de Montréal regroupe salles de spectacle et festivals au centre-ville ?",
-      "reponse": "Le Quartier des spectacles",
+      "question": "Comment appelle-t-on celui qui exploite une érablière ?",
+      "reponse": "Un acériculteur",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel meuble gardait les aliments au froid avec un bloc de glace ?",
-      "reponse": "La glacière",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
-      "reponse": "La Finlande",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle bataille vit trois cents Spartiates tenir un défilé étroit ?",
-      "reponse": "Les Thermopyles",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel vêtement des années 60 a scandalisé en raccourcissant brusquement ?",
-      "reponse": "La minijupe",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument à soufflet accompagne le tango ?",
-      "reponse": "Le bandonéon",
+      "question": "Quel groupe a chanté Smoke on the Water ?",
+      "reponse": "Deep Purple",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
-      "reponse": "Un missionnaire",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
-      "reponse": "Les Denis Drolet",
+      "question": "Quel humoriste québécois d'origine marocaine raconte sa famille sur scène ?",
+      "reponse": "Rachid Badouri",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
+      "reponse": "Loft Story",
       "niveau": 3,
       "ages": [
         "adultes"
@@ -145,14 +76,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
-      "reponse": "Une joute",
-      "niveau": 3
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat argentin grille des viandes au feu de bois ?",
-      "reponse": "L'asado",
+      "question": "Quel explorateur portugais a contourné l'Afrique en 1498 ?",
+      "reponse": "Vasco de Gama",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -161,8 +86,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on le groupe de chanteurs qui répond au soliste dans une chanson ?",
-      "reponse": "Le chœur",
+      "question": "Quel objet à ressort le professeur de musique frappe-t-il pour donner le la ?",
+      "reponse": "Un diapason",
       "niveau": 3,
       "ages": [
         "ados",
@@ -171,60 +96,156 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Capitale de la Turquie ?",
-      "reponse": "Ankara",
+      "categorie": "Musique",
+      "question": "Quel instrument à vent en bois donne les sons les plus graves de l'orchestre ?",
+      "reponse": "Le basson",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel rappeur québécois a chanté Toutes les femmes savent danser ?",
-      "reponse": "Loud",
+      "categorie": "Histoire",
+      "question": "Quelle arme se tendait avec une manivelle et tirait un carreau ?",
+      "reponse": "L'arbalète",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel rouleau de riz translucide se trempe dans une sauce aux arachides ?",
-      "reponse": "Le rouleau de printemps",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel piano à pouces africain vibre sous les doigts ?",
-      "reponse": "La kalimba",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
-      "reponse": "La Grande Ourse",
-      "niveau": 3
+      "question": "Combien de vertèbres a le cou d'une girafe ?",
+      "reponse": "Sept",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on plusieurs notes jouées en même temps ?",
+      "reponse": "Un accord",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
-      "reponse": "Radio Enfer",
+      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
+      "reponse": "Watatatow",
       "niveau": 3,
       "ages": [
         "adultes"
       ]
     },
     {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'aide financière que l'État avance aux étudiants ?",
+      "reponse": "Les prêts et bourses",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Islande ?",
+      "reponse": "Reykjavik",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les cent ans d'un événement qu'on souligne par une fête ?",
+      "reponse": "Un centenaire",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse acadienne s'est fait connaître au banjo, en français ?",
+      "reponse": "Lisa LeBlanc",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport court dans les bois avec une carte et une boussole ?",
+      "reponse": "La course d'orientation",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la peur qui saisit un artiste juste avant d'entrer en scène ?",
+      "reponse": "Le trac",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le paysan qui travaillait la terre du seigneur ?",
+      "reponse": "Un serf",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle compagnie de fourrures rivalisait avec la Baie d'Hudson ?",
+      "reponse": "Nord-Ouest",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle construction de béton a coupé une capitale allemande en deux jusqu'en 1989 ?",
+      "reponse": "Le mur de Berlin",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel panier passait dans les rangs pendant la messe du dimanche ?",
-      "reponse": "La quête",
+      "question": "Quel jeu fait bâtir routes et villages en échangeant bois, blé et minerai ?",
+      "reponse": "Les Colons de Catane",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
+      "reponse": "Olivier Guimond",
       "niveau": 3,
       "ages": [
         "aines"

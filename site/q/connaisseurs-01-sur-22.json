@@ -8,117 +8,49 @@
   "questions": [
     {
       "categorie": "Musique",
-      "question": "Quel ancêtre du piano pince ses cordes au lieu de les frapper ?",
-      "reponse": "Le clavecin",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
-      "reponse": "Dominique Michel et Denise Filiatrault",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
-      "reponse": "Nézet-Séguin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?",
-      "reponse": "Le pont Champlain",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel sous-genre du rap se reconnaît à ses charlestons rapides et ses basses lourdes ?",
-      "reponse": "La trap",
-      "niveau": 3,
-      "ages": [
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel art martial signifie voie de la souplesse ?",
-      "reponse": "Le judo",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel est l'arbre emblème du Québec ?",
-      "reponse": "Le bouleau jaune",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel grand magasin canadien publiait un catalogue attendu chaque année ?",
-      "reponse": "Eaton",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
       "question": "Comment appelle-t-on les chaussons rigides qui permettent de danser sur le bout des orteils ?",
       "reponse": "Des pointes",
       "niveau": 3
     },
     {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'encadré qui explique les symboles d'une carte ?",
+      "reponse": "La légende",
+      "niveau": 3
+    },
+    {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le paysan qui travaillait la terre du seigneur ?",
-      "reponse": "Un serf",
+      "question": "Quel moine a affiché 95 thèses en 1517 ?",
+      "reponse": "Luther",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
-      "reponse": "Loft Story",
+      "question": "Quelle émission fait présenter des projets d'affaires à des investisseurs pour obtenir du financement ?",
+      "reponse": "Dans l'œil du dragon",
       "niveau": 3,
       "ages": [
         "adultes"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelles équipes de sous-marins explorent les océans en secourant les animaux marins ?",
-      "reponse": "Les Octonauts",
+      "categorie": "Musique",
+      "question": "Quelle chanteuse américaine a chanté Kill Bill en 2022 ?",
+      "reponse": "SZA",
       "niveau": 3,
       "ages": [
-        "enfants"
+        "ados",
+        "adultes"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel appareil de poche vibrait pour dire de rappeler quelqu'un, avant le cellulaire ?",
-      "reponse": "Le téléavertisseur",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat brésilien est un ragoût de haricots noirs ?",
+      "reponse": "La feijoada",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -126,9 +58,9 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "En quelle année le métro de Montréal a-t-il ouvert ?",
-      "reponse": "1966",
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de café québécoise porte le nom de son fondateur ?",
+      "reponse": "Van Houtte",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -137,9 +69,34 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la grande maison en orbite où vivent les astronautes ?",
-      "reponse": "La Station spatiale internationale",
-      "niveau": 3
+      "question": "Quel rover s'est posé sur Mars en 2012 ?",
+      "reponse": "Curiosity",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
+      "reponse": "Le Wordle",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on un extrait de chanson repris dans une autre chanson ?",
+      "reponse": "Un échantillon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Culture pop",
@@ -153,9 +110,9 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle infusion sud-africaine est naturellement rouge ?",
-      "reponse": "Le rooibos",
+      "categorie": "Histoire",
+      "question": "Quel explorateur a cherché la fontaine de Jouvence en Floride ?",
+      "reponse": "Ponce de León",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -163,44 +120,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle autrice et animatrice québécoise a abordé les tabous à la télé pendant des décennies ?",
-      "reponse": "Janette Bertrand",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel savant italien a affirmé que la Terre tourne autour du Soleil ?",
-      "reponse": "Galilée",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle méthode permet de dater un vestige grâce à un isotope ?",
-      "reponse": "Le carbone 14",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Quelle chanson de Journey encourage à ne jamais cesser d'y croire ?",
-      "reponse": "Don't Stop Believin'",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les grandes pierres dressées et posées à plat par les hommes préhistoriques ?",
-      "reponse": "Un dolmen",
+      "question": "Sur quel support incliné le musicien pose-t-il sa partition ?",
+      "reponse": "Un lutrin",
       "niveau": 3,
       "ages": [
         "ados",
@@ -215,9 +137,94 @@
       "niveau": 3
     },
     {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
+      "reponse": "Une joute",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle plateforme loue le logement d'un particulier pour des vacances ?",
+      "reponse": "Airbnb",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel bonbon acidulé se vend en poudre avec un petit bâton à tremper ?",
+      "reponse": "Le Fun Dip",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le long bateau à rames des Grecs et des Romains ?",
+      "reponse": "Une galère",
+      "niveau": 3
+    },
+    {
       "categorie": "Québec",
-      "question": "Quel champignon rouge à pois blancs des contes pousse dans les forêts ?",
-      "reponse": "L'amanite tue-mouches",
+      "question": "Quel parc national de la Gaspésie s'avance au bout de la péninsule ?",
+      "reponse": "Forillon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel artiste a mêlé country et rap dans Old Town Road ?",
+      "reponse": "Lil Nas X",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle région québécoise occupe un cratère de météorite ?",
+      "reponse": "Charlevoix",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
+      "reponse": "L'autoroute 40",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magasin se visitait catalogue en main, avant que la marchandise sorte de l'entrepôt ?",
+      "reponse": "Distribution aux consommateurs",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle course de traîneaux à chiens traverse l'Alaska ?",
+      "reponse": "L'Iditarod",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -226,8 +233,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui installe les micros avant un concert ?",
-      "reponse": "Un technicien de son",
+      "question": "Quel instrument de rue se joue en tournant une manivelle ?",
+      "reponse": "Un orgue de Barbarie",
       "niveau": 3,
       "ages": [
         "adultes",

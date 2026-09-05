@@ -8,39 +8,33 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Quel grand fleuve traverse l'Amazonie ?",
-      "reponse": "L'Amazone",
+      "question": "Quelle montagne se dresse au milieu de Montréal ?",
+      "reponse": "Le mont Royal",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays insulaire du nord de l'Atlantique compte des volcans et des geysers ?",
-      "reponse": "L'Islande",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays d'Europe est célèbre pour ses moulins à vent et ses tulipes ?",
-      "reponse": "Les Pays-Bas",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays d'Amérique du Sud danse-t-on le tango ?",
-      "reponse": "L'Argentine",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle tour de fer domine Paris ?",
-      "reponse": "La tour Eiffel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le mur de béton qui retient l'eau d'une rivière ?",
-      "reponse": "Un barrage",
+      "question": "Dans quel pays sont nés les Jeux olympiques ?",
+      "reponse": "La Grèce",
       "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle plaque plantée au bord du chemin indique la direction à suivre ?",
+      "reponse": "Un panneau",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle saison amène la neige au Québec ?",
+      "reponse": "L'hiver",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le village où l'on cultive la terre et élève des animaux ?",
+      "reponse": "Une ferme",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -50,14 +44,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle baie géante borde le nord du Québec ?",
-      "reponse": "Baie d'Hudson",
+      "question": "Dans quel pays se trouve Londres ?",
+      "reponse": "L'Angleterre",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de la Hongrie ?",
-      "reponse": "Budapest",
+      "question": "Quelle île canadienne est la plus grande ?",
+      "reponse": "Île de Baffin",
       "niveau": 2,
       "ages": [
         "ados",
@@ -67,16 +61,11 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Combien de temps la Terre met-elle pour faire le tour du Soleil ?",
-      "reponse": "Un an",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve Tombouctou ?",
-      "reponse": "Le Mali",
-      "niveau": 3,
+      "question": "Capitale de la Thaïlande ?",
+      "reponse": "Bangkok",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -89,8 +78,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Monnaie utilisée en Suisse ?",
-      "reponse": "Le franc suisse",
+      "question": "Monnaie utilisée en Inde ?",
+      "reponse": "La roupie",
       "niveau": 2,
       "ages": [
         "ados",
@@ -100,24 +89,31 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel désert chilien est le plus aride du monde ?",
-      "reponse": "L'Atacama",
-      "niveau": 3,
+      "question": "Dans quelle direction le soleil se couche-t-il ?",
+      "reponse": "À l'ouest",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande île de la Méditerranée ?",
+      "reponse": "La Sicile",
+      "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "De quelles couleurs est le drapeau de la France ?",
-      "reponse": "Bleu blanc rouge",
-      "niveau": 1
+      "question": "Quel animal est l'emblème des États-Unis ?",
+      "reponse": "L'aigle",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le mouvement de la mer qui monte et descend chaque jour ?",
-      "reponse": "La marée",
+      "question": "Comment appelle-t-on la haute paroi de roche au bord de la mer ?",
+      "reponse": "Une falaise",
       "niveau": 2
     },
     {
@@ -133,26 +129,37 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de la Grèce ?",
-      "reponse": "Athènes",
-      "niveau": 1
+      "question": "Dans quel pays se trouve le Machu Picchu ?",
+      "reponse": "Le Pérou",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
-      "reponse": "Le Japon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle grande île de l'Atlantique, au large de Terre-Neuve, appartient à la France ?",
-      "reponse": "Saint-Pierre-et-Miquelon",
+      "question": "Quel pays d'Europe a la forme d'une main et borde la mer Baltique ?",
+      "reponse": "La Pologne",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Grèce ?",
+      "reponse": "Athènes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel État américain chaud accueille Disney World ?",
+      "reponse": "La Floride",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -167,21 +174,26 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la construction qui permet de traverser une rivière ?",
-      "reponse": "Un pont",
+      "question": "Comment appelle-t-on la grande route à plusieurs voies entre deux villes ?",
+      "reponse": "Une autoroute",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la ville de Venise et ses canaux ?",
+      "question": "Quel pays est surnommé la botte de l'Europe ?",
       "reponse": "L'Italie",
-      "niveau": 1
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville du Québec ?",
-      "reponse": "Montréal",
-      "niveau": 1
+      "question": "Dans quel pays nordique le père Noël a-t-il son village officiel, à Rovaniemi ?",
+      "reponse": "La Finlande",
+      "niveau": 3
     }
   ]
 }

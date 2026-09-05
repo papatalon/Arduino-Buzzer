@@ -122,7 +122,7 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Qui a fondé Ville-Marie, la future Montréal ?",
+      "question": "Qui a fondé Ville-Marie en 1642 ?",
       "reponse": "Maisonneuve",
       "niveau": 2,
       "ages": [
@@ -156,9 +156,9 @@
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quelle est la dernière lettre de l'alphabet grec ?",
-      "reponse": "Oméga",
+      "categorie": "Géographie",
+      "question": "Quel fleuve traverse l'Allemagne et se jette à Rotterdam ?",
+      "reponse": "Le Rhin",
       "niveau": 2,
       "ages": [
         "ados",
@@ -167,9 +167,9 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel est le plus grand lac d'Afrique ?",
-      "reponse": "Le lac Victoria",
+      "categorie": "Mots et langue",
+      "question": "Quelle est la dernière lettre de l'alphabet grec ?",
+      "reponse": "Oméga",
       "niveau": 2,
       "ages": [
         "ados",
@@ -206,9 +206,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
-      "reponse": "Le Japon",
-      "niveau": 1
+      "question": "Quel pays est surnommé la botte de l'Europe ?",
+      "reponse": "L'Italie",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

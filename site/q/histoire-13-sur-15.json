@@ -8,17 +8,6 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Quelle merveille du monde antique éclairait l'entrée d'un port égyptien ?",
-      "reponse": "Le phare d'Alexandrie",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quels frères ont inventé le cinématographe ?",
       "reponse": "Les frères Lumière",
       "niveau": 2,
@@ -35,22 +24,6 @@
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année les Jeux olympiques ont-ils été reportés d'un an pour la première fois ?",
-      "reponse": "2020",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le chef qui régnait sur tout l'Empire romain ?",
-      "reponse": "Un empereur",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quel oiseau portait les messages avant le télégraphe ?",
       "reponse": "Le pigeon voyageur",
       "niveau": 2
@@ -60,6 +33,27 @@
       "question": "Quelle habitation autochtone en forme de cône était faite de peaux et de perches ?",
       "reponse": "Un tipi",
       "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
+      "reponse": "La tradition orale",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année les Jeux olympiques ont-ils été reportés d'un an pour la première fois ?",
+      "reponse": "2020",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -86,15 +80,21 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel savant italien a affirmé que la Terre tourne autour du Soleil ?",
-      "reponse": "Galilée",
-      "niveau": 3
+      "question": "Comment appelle-t-on le chef qui régnait sur tout l'Empire romain ?",
+      "reponse": "Un empereur",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle tour éclairée guidait les bateaux vers la côte bien avant les radars ?",
-      "reponse": "Un phare",
+      "question": "Quel peintre italien a peint la Joconde ?",
+      "reponse": "Léonard de Vinci",
       "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quoi le maître écrivait-il à la craie devant sa classe, autrefois ?",
+      "reponse": "Le tableau noir",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -145,9 +145,14 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on le cahier où l'on note ce qui se passe jour après jour ?",
-      "reponse": "Un journal",
-      "niveau": 1
+      "question": "Comment appelle-t-on les grandes pierres dressées et posées à plat par les hommes préhistoriques ?",
+      "reponse": "Un dolmen",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -173,9 +178,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel roi de France fut surnommé le Roi-Soleil ?",
-      "reponse": "Louis XIV",
-      "niveau": 2
+      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
+      "reponse": "Le parchemin",
+      "niveau": 3
     }
   ]
 }

@@ -7,9 +7,103 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Histoire",
+      "question": "Quel fleuve César a-t-il franchi en disant le sort en est jeté ?",
+      "reponse": "Le Rubicon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Daft Punk répète qu'on est plus fort, meilleur et plus rapide ?",
+      "reponse": "Harder, Better, Faster, Stronger",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle pâte à tartiner orange se vend en pot et se met sur les rôties ?",
+      "reponse": "Le Cheez Whiz",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on l'écriture des Vikings, gravée dans la pierre ?",
+      "reponse": "Les runes",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
       "categorie": "Québec",
-      "question": "Quel roman de Gabrielle Roy se passe à Saint-Henri ?",
-      "reponse": "Bonheur d'occasion",
+      "question": "Quel poète québécois a écrit L'homme rapaillé ?",
+      "reponse": "Gaston Miron",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?",
+      "reponse": "Le pont Champlain",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus grande lune de Saturne ?",
+      "reponse": "Titan",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
+      "reponse": "Steinberg",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel conquistador espagnol a conquis l'empire inca ?",
+      "reponse": "Pizarro",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à soufflet accompagne le tango ?",
+      "reponse": "Le bandonéon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la femelle du sanglier ?",
+      "reponse": "La laie",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -18,14 +112,81 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la terre gelée sans arbres du Grand Nord ?",
-      "reponse": "La toundra",
+      "question": "Quelle ville du Québec accueille chaque été le Festival de la poutine ?",
+      "reponse": "Drummondville",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission québécoise fait juger des numéros de danse par des maîtres ?",
+      "reponse": "Révolution",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle note dure deux fois moins longtemps qu'une blanche ?",
+      "reponse": "La noire",
       "niveau": 3
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu fait deviner des mots à son équipe en trois manches, de plus en plus serrées ?",
-      "reponse": "Le Time's Up",
+      "question": "Quel jeu de cordelette passe de mains en mains en formant des figures géométriques ?",
+      "reponse": "Le jeu de la ficelle",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on le bruit désagréable d'un micro trop près d'un haut-parleur ?",
+      "reponse": "Le larsen",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel petit rongeur rayé du Québec remplit ses joues de graines ?",
+      "reponse": "Le suisse",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission de variétés pour adolescents Véronique Cloutier a-t-elle animée ?",
+      "reponse": "La Fureur",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce verte argentine accompagne les grillades ?",
+      "reponse": "Le chimichurri",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
+      "reponse": "Tessa Virtue",
       "niveau": 3,
       "ages": [
         "ados",
@@ -34,20 +195,18 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
-      "reponse": "Le parchemin",
-      "niveau": 3
+      "question": "Quel télescope spatial lancé en 2021 observe l'univers en infrarouge ?",
+      "reponse": "Le télescope James Webb",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle figure de note vaut quatre temps, la plus longue de toutes ?",
-      "reponse": "La ronde",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel mot québécois désigne une soirée où l'on boit entre amis ?",
-      "reponse": "Un 5 à 7",
+      "categorie": "Culture pop",
+      "question": "Quelle marque de véhicules tout-terrain a une calandre à sept fentes ?",
+      "reponse": "Jeep",
       "niveau": 3,
       "ages": [
         "ados",
@@ -56,23 +215,12 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?",
-      "reponse": "La Révolution tranquille",
+      "categorie": "Musique",
+      "question": "Quel genre de musique douce et répétitive sert de fond sonore pour étudier ?",
+      "reponse": "Le lo-fi",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
-      "reponse": "Le maelstrom",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
+        "ados"
       ]
     },
     {
@@ -86,152 +234,9 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète est la plus chaude du système solaire ?",
-      "reponse": "Vénus",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de points vaut la bille noire au snooker ?",
-      "reponse": "Sept",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
-      "reponse": "La guignolée",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle pédale du piano prolonge les notes après qu'on a levé les doigts ?",
-      "reponse": "La pédale forte",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel mélange de sirop et glace pilée vient d'Italie ?",
-      "reponse": "La granita",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur écossais a chanté Someone You Loved ?",
-      "reponse": "Lewis Capaldi",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
-      "reponse": "Un divulgâcheur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Cinéma et télé",
       "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
       "reponse": "Les Plouffe",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel concours de chant européen réunit les pays chaque printemps ?",
-      "reponse": "L'Eurovision",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
-      "reponse": "Les oreilles de lapin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
-      "reponse": "La fin de semaine des Patriotes",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle ville canadienne fut dévastée par une explosion en 1917 ?",
-      "reponse": "Halifax",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
-      "reponse": "Une diligence",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle danse argentine se danse joue contre joue avec une rose ?",
-      "reponse": "Le tango",
-      "niveau": 3
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle figure de style exagère volontairement ?",
-      "reponse": "L'hyperbole",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel appareil du restaurant jouait une chanson contre une pièce de monnaie ?",
-      "reponse": "Le juke-box",
       "niveau": 3,
       "ages": [
         "aines"

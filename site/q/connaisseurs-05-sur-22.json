@@ -7,64 +7,52 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Comment appelait-on le téléphone que plusieurs foyers du village devaient se partager ?",
-      "reponse": "La ligne partagée",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
-      "reponse": "Le smoked meat",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle infirmière célèbre soignait pendant la guerre de Crimée ?",
-      "reponse": "Florence Nightingale",
+      "question": "Quelle boulette de poulpe japonaise est une collation ?",
+      "reponse": "Le takoyaki",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
-      "reponse": "Le tramway",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?",
-      "reponse": "Un tir de barrage",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quel roi du blues appelait sa guitare Lucille ?",
-      "reponse": "B.B. King",
+      "question": "Quel chant de Noël fait résonner un long « Gloria » repris par tout le monde ?",
+      "reponse": "Les anges dans nos campagnes",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chanteur a popularisé le twist ?",
+      "reponse": "Chubby Checker",
       "niveau": 3,
       "ages": [
-        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle émission jeunesse de Radio-Canada, animée par Monsieur Surprise, a lancé Fanfreluche et Sol ?",
+      "reponse": "La Boîte à surprise",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse folk canadienne a écrit Big Yellow Taxi ?",
+      "reponse": "Joni Mitchell",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle grande île de l'Atlantique, au large de Terre-Neuve, appartient à la France ?",
-      "reponse": "Saint-Pierre-et-Miquelon",
+      "question": "Comment appelle-t-on la carte qui montre le relief avec des couleurs et des courbes ?",
+      "reponse": "Une carte topographique",
       "niveau": 3,
       "ages": [
         "ados",
@@ -73,9 +61,20 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "En quelle année le Canada a-t-il adopté son drapeau actuel ?",
-      "reponse": "1965",
+      "categorie": "Sports",
+      "question": "Combien de médailles d'or olympiques a Michael Phelps ?",
+      "reponse": "23",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
+      "reponse": "Les oreilles de lapin",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -84,38 +83,44 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel tunnel fait passer l'autoroute sous le centre-ville de Montréal ?",
-      "reponse": "Le tunnel Ville-Marie",
+      "question": "Quel petit oiseau à calotte noire fréquente les mangeoires du Québec tout l'hiver ?",
+      "reponse": "La mésange",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
+      "reponse": "Cracké",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel manga suit Luffy et son équipage de pirates ?",
-      "reponse": "One Piece",
+      "question": "Quelle carte de plastique rigide permettait de louer des films au club vidéo ?",
+      "reponse": "La carte de membre",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel rappeur américain tatoué au visage a chanté Circles ?",
-      "reponse": "Post Malone",
+      "categorie": "Géographie",
+      "question": "Quel pays d'Europe a la forme d'une main et borde la mer Baltique ?",
+      "reponse": "La Pologne",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel premier ministre canadien a dirigé pendant la Seconde Guerre ?",
-      "reponse": "Mackenzie King",
+      "question": "Sur quelle île Napoléon est-il mort ?",
+      "reponse": "Sainte-Hélène",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -124,8 +129,34 @@
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année les Canadiennes ont-elles voté au fédéral ?",
-      "reponse": "1918",
+      "question": "Qui fut la première femme dans l'espace ?",
+      "reponse": "Valentina Terechkova",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Dans un orchestre, quel instrument donne le la aux autres avant le concert ?",
+      "reponse": "Le hautbois",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel savant français a montré que les microbes causent les maladies ?",
+      "reponse": "Pasteur",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel est l'arbre emblème du Québec ?",
+      "reponse": "Le bouleau jaune",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -139,50 +170,37 @@
       "niveau": 3
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 comptait René Angélil dans ses rangs ?",
-      "reponse": "Les Baronets",
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la couche de glace qui se forme au bord des toits ?",
+      "reponse": "Une barrière de glace",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à cordes indien a un très long manche ?",
-      "reponse": "Le sitar",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles bottes anglaises à coutures jaunes sont un classique punk ?",
-      "reponse": "Les Doc Martens",
+      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
+      "reponse": "MusiquePlus",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle marque de vêtements de sport et de yoga vient de Vancouver ?",
-      "reponse": "Lululemon",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Combien de régions administratives compte le Québec ?",
-      "reponse": "17",
+      "categorie": "Culture pop",
+      "question": "Quel petit âne de dessin animé français est très curieux ?",
+      "reponse": "Trotro",
+      "niveau": 3,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel guitariste de Queen a un doctorat en astrophysique ?",
+      "reponse": "Brian May",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -191,28 +209,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel peuple antique a inventé l'écriture cunéiforme ?",
-      "reponse": "Les Sumériens",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus long fleuve du Canada ?",
-      "reponse": "Le Mackenzie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui écrit les paroles d'une chanson ?",
-      "reponse": "Un parolier",
+      "question": "Quel religieux enseignait aux enfants de la Nouvelle-France ?",
+      "reponse": "Un missionnaire",
       "niveau": 3,
       "ages": [
         "ados",
@@ -221,9 +219,9 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle fête de juin invite les gens d'une même rue à se rassembler ?",
-      "reponse": "La fête des voisins",
+      "categorie": "Histoire",
+      "question": "Quelles sondes jumelles ont été lancées en 1977 ?",
+      "reponse": "Voyager",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -232,22 +230,12 @@
     },
     {
       "categorie": "Musique",
-      "question": "Combien de cordes a un violoncelle ?",
-      "reponse": "Quatre",
+      "question": "Dans Pierre et le loup, quel instrument joue le loup ?",
+      "reponse": "Le cor",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel artiste a mêlé country et rap dans Old Town Road ?",
-      "reponse": "Lil Nas X",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
       ]
     }
   ]

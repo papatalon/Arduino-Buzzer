@@ -14,9 +14,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel appareil envoyait des messages en points et en traits sur des fils ?",
-      "reponse": "Le télégraphe",
-      "niveau": 3
+      "question": "Comment appelle-t-on celui qui fabrique des objets à la main dans son atelier ?",
+      "reponse": "Un artisan",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
@@ -69,9 +69,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
-      "reponse": "Une diligence",
-      "niveau": 3
+      "question": "Quel outil de bois et de fer les paysans utilisaient-ils pour retourner la terre ?",
+      "reponse": "La charrue",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
@@ -85,28 +85,12 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle arme de bois courbé propulsait des flèches avant les armes à feu ?",
-      "reponse": "Un arc",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
       "question": "Qui était le dernier tsar de Russie ?",
       "reponse": "Nicolas II",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on l'écriture des Vikings, gravée dans la pierre ?",
-      "reponse": "Les runes",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
       ]
     },
     {
@@ -121,8 +105,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quel jour célèbre-t-on l'Armistice de 1918 ?",
-      "reponse": "Le 11 novembre",
+      "question": "Comment appelle-t-on celui qui garde un troupeau de moutons dans les champs ?",
+      "reponse": "Un berger",
       "niveau": 1
     },
     {
@@ -130,6 +114,12 @@
       "question": "Quel fleuve faisait pousser les récoltes des Égyptiens en débordant chaque année ?",
       "reponse": "Le Nil",
       "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel jour célèbre-t-on l'Armistice de 1918 ?",
+      "reponse": "Le 11 novembre",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
@@ -144,12 +134,6 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on les premiers habitants de l'Amérique, ici avant les Européens ?",
-      "reponse": "Les Autochtones",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
       "reponse": "Le Jolly Roger",
       "niveau": 3,
@@ -160,9 +144,23 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Où Napoléon a-t-il subi sa dernière défaite ?",
-      "reponse": "Waterloo",
-      "niveau": 2
+      "question": "Comment appelle-t-on l'écriture des Vikings, gravée dans la pierre ?",
+      "reponse": "Les runes",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année eut lieu la bataille de Waterloo ?",
+      "reponse": "1815",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -177,25 +175,27 @@
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année l'homme a-t-il marché sur la Lune ?",
-      "reponse": "1969",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quels peuples vivaient déjà en Amérique quand les Européens sont arrivés ?",
       "reponse": "Les Autochtones",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année eut lieu la bataille de Waterloo ?",
-      "reponse": "1815",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on les premiers habitants de l'Amérique, ici avant les Européens ?",
+      "reponse": "Les Autochtones",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Où Napoléon a-t-il subi sa dernière défaite ?",
+      "reponse": "Waterloo",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "En quelle année l'homme a-t-il marché sur la Lune ?",
+      "reponse": "1969",
+      "niveau": 2
     }
   ]
 }

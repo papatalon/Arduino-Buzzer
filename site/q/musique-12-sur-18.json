@@ -159,8 +159,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe a chanté Another Brick in the Wall ?",
-      "reponse": "Pink Floyd",
+      "question": "Quel chanteur aveugle américain a chanté Superstition ?",
+      "reponse": "Stevie Wonder",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -181,16 +181,6 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel chanteur aveugle joue du piano depuis l'enfance ?",
-      "reponse": "Stevie Wonder",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
       "question": "Que fait le public avec ses mains à la fin d'un spectacle ?",
       "reponse": "Il applaudit",
       "niveau": 1
@@ -200,6 +190,17 @@
       "question": "Que met-on sur les oreilles pour écouter de la musique sans déranger ?",
       "reponse": "Des écouteurs",
       "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel style musical est né dans les églises noires américaines ?",
+      "reponse": "Le gospel",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

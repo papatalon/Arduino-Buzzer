@@ -8,6 +8,29 @@
   "questions": [
     {
       "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes traverse l'ouest canadien ?",
+      "reponse": "Les Rocheuses",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus grande ville du Canada ?",
+      "reponse": "Toronto",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Monnaie utilisée en Suisse ?",
+      "reponse": "Le franc suisse",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
       "question": "Capitale de la Colombie-Britannique ?",
       "reponse": "Victoria",
       "niveau": 2,
@@ -19,67 +42,71 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle saison amène la neige au Québec ?",
-      "reponse": "L'hiver",
+      "question": "Quelle saison fait tomber les feuilles des arbres ?",
+      "reponse": "L'automne",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes traverse l'ouest canadien ?",
-      "reponse": "Les Rocheuses",
+      "question": "Quel pays a pour emblème le coq ?",
+      "reponse": "La France",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays a pour emblème le panda ?",
-      "reponse": "La Chine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quel continent se trouve le pôle Sud ?",
-      "reponse": "L'Antarctique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Sur quelle côte d'Australie se trouvent Sydney et Melbourne ?",
-      "reponse": "La côte est",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle langue parle-t-on aux États-Unis ?",
-      "reponse": "L'anglais",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la grande étendue de terre où le fermier sème son blé ?",
-      "reponse": "Un champ",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle frontière est la plus longue du monde ?",
-      "reponse": "Canada-USA",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Colisée ?",
-      "reponse": "L'Italie",
+      "question": "Dans quelle ville trouve-t-on le Kremlin ?",
+      "reponse": "Moscou",
       "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel lac est le plus profond du monde ?",
+      "reponse": "Le Baïkal",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien d'états composent les États-Unis ?",
+      "reponse": "50",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel détroit sépare la Russie de l'Alaska ?",
+      "reponse": "Bering",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays est célèbre pour ses tacos et ses sombreros ?",
+      "reponse": "Le Mexique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays trouve-t-on les gondoles et les gladiateurs de l'histoire ?",
+      "reponse": "L'Italie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ville sainte est commune à trois religions ?",
+      "reponse": "Jérusalem",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -94,17 +121,6 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays possède le mont Fuji ?",
-      "reponse": "Le Japon",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
       "question": "Capitale de la Suède ?",
       "reponse": "Stockholm",
       "niveau": 2,
@@ -116,32 +132,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel objet en forme de boule qui tourne montre tous les pays du monde ?",
-      "reponse": "Le globe terrestre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
-      "reponse": "L'hémisphère nord",
+      "question": "Comment appelle-t-on les régions chaudes situées près de l'équateur ?",
+      "reponse": "Les tropiques",
       "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouvent les pyramides et le Sphinx ?",
-      "reponse": "L'Égypte",
+      "question": "Dans quel pays vivent les pandas géants ?",
+      "reponse": "La Chine",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle saison fait fleurir les arbres et fondre la neige ?",
-      "reponse": "Le printemps",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a la feuille d'érable sur son drapeau ?",
-      "reponse": "Le Canada",
+      "question": "Comment appelle-t-on un dessin qui représente un pays ou une ville vus d'en haut ?",
+      "reponse": "Une carte",
       "niveau": 1
     },
     {
@@ -157,35 +161,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Combien de temps la Terre met-elle pour faire un tour sur elle-même ?",
-      "reponse": "Un jour",
+      "question": "Quel pays a la feuille d'érable sur son drapeau ?",
+      "reponse": "Le Canada",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Kilimandjaro ?",
-      "reponse": "La Tanzanie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Monnaie utilisée aux États-Unis ?",
+      "reponse": "Le dollar",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Langue parlée en Égypte ?",
-      "reponse": "L'arabe",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "De quelle couleur les océans sont-ils dessinés sur une carte ?",
-      "reponse": "Bleus",
+      "question": "Dans quel sens le soleil se lève-t-il ?",
+      "reponse": "À l'est",
       "niveau": 1
     },
     {
@@ -198,6 +187,12 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'eau salée qu'on ne peut pas boire ?",
+      "reponse": "L'eau de mer",
+      "niveau": 1
     }
   ]
 }

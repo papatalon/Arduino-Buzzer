@@ -7,9 +7,36 @@
   "emoji": "🧠",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
-      "reponse": "Le fromage en grains",
+      "categorie": "Québec",
+      "question": "Quelle fête du 14 février fait échanger des cartes en forme de cœur ?",
+      "reponse": "La Saint-Valentin",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir les yeux dans la graisse de bines ?",
+      "reponse": "Être dans la lune",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de litres de sang contient un adulte ?",
+      "reponse": "Cinq",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui soigne les dents ?",
+      "reponse": "Le dentiste",
       "niveau": 1
     },
     {
@@ -20,76 +47,41 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de poumons possède l'humain ?",
-      "reponse": "Deux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle partie de l'œil donne sa couleur ?",
-      "reponse": "L'iris",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on une petite chanson simple que les enfants apprennent par cœur ?",
-      "reponse": "Une comptine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat botté a de grands yeux attendrissants ?",
-      "reponse": "Chat Potté",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelles parties blanches de la bouche servent à mâcher ?",
-      "reponse": "Les dents",
+      "question": "Quelle articulation plie le bras en son milieu ?",
+      "reponse": "Le coude",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
-      "reponse": "Une sirène",
+      "question": "Quel drap blanc troué de deux yeux fait un costume d'Halloween facile ?",
+      "reponse": "Un fantôme",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel groupe sanguin est donneur universel ?",
-      "reponse": "O négatif",
-      "niveau": 2,
+      "question": "Combien de vertèbres a le cou d'une girafe ?",
+      "reponse": "Sept",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Musique",
-      "question": "Quelle pianiste et chanteuse québécoise se fait appeler Cœur de pirate ?",
-      "reponse": "Béatrice Martin",
+      "question": "Quel instrument à dents pincées accompagne le folklore ?",
+      "reponse": "La guimbarde",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle lumière invisible bronze la peau ?",
-      "reponse": "Les ultraviolets",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel est l'os le plus long du corps humain ?",
+      "reponse": "Le fémur",
+      "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
@@ -103,39 +95,31 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la température du corps humain en santé ?",
-      "reponse": "37 degrés C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel objet de papier mâché rempli de bonbons se frappe les yeux bandés ?",
-      "reponse": "La piñata",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
+      "reponse": "Le fromage en grains",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Le pluriel de genou prend un S ou un X ?",
-      "reponse": "Un X",
+      "question": "Pluriel de œil ?",
+      "reponse": "Yeux",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelles cellules du sang combattent les infections ?",
-      "reponse": "Globules blancs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
-      "reponse": "Le parchemin",
-      "niveau": 3
+      "categorie": "Cinéma et télé",
+      "question": "Quel film de 1975 a vidé les plages avec son requin géant ?",
+      "reponse": "Les Dents de la mer",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de cavités possède le cœur humain ?",
-      "reponse": "Quatre",
+      "question": "Combien de chromosomes possède l'humain ?",
+      "reponse": "46",
       "niveau": 2,
       "ages": [
         "ados",
@@ -144,37 +128,71 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel drap blanc troué de deux yeux fait un costume d'Halloween facile ?",
-      "reponse": "Un fantôme",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
-      "reponse": "Les branchies",
+      "question": "Comment appelle-t-on l'ensemble des os du corps ?",
+      "reponse": "Le squelette",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quels organes nous servent à respirer ?",
-      "reponse": "Les poumons",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle peluche électronique aux grands yeux parlait toute seule en 1998 ?",
-      "reponse": "Le Furby",
+      "categorie": "Musique",
+      "question": "Quelle pianiste et chanteuse québécoise se fait appeler Cœur de pirate ?",
+      "reponse": "Béatrice Martin",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie coûter les yeux de la tête ?",
-      "reponse": "Coûter très cher",
+      "categorie": "Sciences et nature",
+      "question": "Quelle partie de l'œil donne sa couleur ?",
+      "reponse": "L'iris",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelles parties blanches de la bouche servent à mâcher ?",
+      "reponse": "Les dents",
       "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de paires de côtes avons-nous ?",
+      "reponse": "Douze",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat botté a de grands yeux attendrissants ?",
+      "reponse": "Chat Potté",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel ustensile à quatre dents pique les aliments ?",
+      "reponse": "La fourchette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de dents possède un adulte en général ?",
+      "reponse": "32",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

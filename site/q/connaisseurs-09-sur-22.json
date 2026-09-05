@@ -7,9 +7,30 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Sciences et nature",
-      "question": "Combien de cœurs possède un ver de terre ?",
-      "reponse": "Cinq",
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on une œuvre écrite pour un soliste accompagné d'un orchestre ?",
+      "reponse": "Un concerto",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle fête de juin invite les gens d'une même rue à se rassembler ?",
+      "reponse": "La fête des voisins",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Dans quelle ville Jeanne d'Arc fut-elle brûlée ?",
+      "reponse": "Rouen",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -18,18 +39,17 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel animateur québécois mène une émission de musique en direct avec un band maison ?",
-      "reponse": "Normand Brathwaite",
+      "question": "Quel humoriste québécois jouait le concierge Symphorien ?",
+      "reponse": "Gilles Latulippe",
       "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Sur quel support les Mésopotamiens gravaient-ils leur écriture avec un roseau ?",
-      "reponse": "Les tablettes d'argile",
+      "categorie": "Musique",
+      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
+      "reponse": "Bleu Jeans Bleu",
       "niveau": 3,
       "ages": [
         "ados",
@@ -37,45 +57,45 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel parc animalier du Lac-Saint-Jean se visite à bord d'un train grillagé ?",
-      "reponse": "Le zoo de Saint-Félicien",
+      "categorie": "Culture pop",
+      "question": "Quel rassemblement de percussionnistes a lieu au pied du mont Royal le dimanche ?",
+      "reponse": "Les tam-tams",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument de flûtes de longueurs différentes se joue en soufflant à leur bord ?",
+      "reponse": "La flûte de Pan",
       "niveau": 3
     },
     {
-      "categorie": "Musique",
-      "question": "Quel groupe américain a chanté Mr. Brightside ?",
-      "reponse": "The Killers",
+      "categorie": "Québec",
+      "question": "Quelle taxe québécoise s'ajoute à la taxe fédérale sur les achats ?",
+      "reponse": "La TVQ",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle région québécoise occupe un cratère de météorite ?",
-      "reponse": "Charlevoix",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel instrument de rue se joue en tournant une manivelle ?",
-      "reponse": "Un orgue de Barbarie",
+      "categorie": "Québec",
+      "question": "Quel auteur québécois a écrit Le Matou ?",
+      "reponse": "Yves Beauchemin",
       "niveau": 3,
       "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle mer intérieure borde le Kazakhstan et l'Iran ?",
-      "reponse": "La Caspienne",
+      "question": "Quel long fleuve traverse la Chine ?",
+      "reponse": "Le Yangtsé",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -84,48 +104,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "En quelle année l'Allemagne s'est-elle réunifiée ?",
-      "reponse": "1990",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui a traversé l'Atlantique en avion solo en 1927 ?",
-      "reponse": "Lindbergh",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse acadienne s'est fait connaître au banjo, en français ?",
-      "reponse": "Lisa LeBlanc",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel parc national québécois porte le nom d'un explorateur, au nord de Québec ?",
-      "reponse": "Le parc de la Jacques-Cartier",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle gymnaste a obtenu le premier 10 parfait ?",
-      "reponse": "Nadia Comăneci",
+      "question": "Qui a atteint le pôle Sud en premier ?",
+      "reponse": "Amundsen",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -134,83 +114,8 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Masculin d'abeille ?",
-      "reponse": "Le faux bourdon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Suisse ?",
-      "reponse": "Berne",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays d'Amérique du Sud danse-t-on le tango ?",
-      "reponse": "L'Argentine",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à dents pincées accompagne le folklore ?",
-      "reponse": "La guimbarde",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à percussion se joue avec les mains sur deux tambours accolés ?",
-      "reponse": "Les bongos",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles rondelles de carton s'empilaient et se retournaient dans les cours d'école des années 90 ?",
-      "reponse": "Les Pogs",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
-      "reponse": "Michel Louvain",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel nom porte le jalapeño fumé ?",
-      "reponse": "Chipotle",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel imitateur québécois a chanté en enchaînant des dizaines de voix célèbres ?",
-      "reponse": "André-Philippe Gagnon",
+      "question": "De quelle langue vient le mot pyjama ?",
+      "reponse": "Le persan",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -219,27 +124,128 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Où regardait-on un film assis dans son auto, l'été ?",
-      "reponse": "Au ciné-parc",
+      "question": "Quelles cigarettes de bonbon blanches portaient le nom d'un marin costaud ?",
+      "reponse": "Les Popeye",
       "niveau": 3,
       "ages": [
         "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle prière se récitait en famille à la radio, chaque soir, dans les années 50 ?",
-      "reponse": "Le chapelet",
-      "niveau": 3,
-      "ages": [
         "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel roi babylonien a gravé un célèbre code de lois ?",
-      "reponse": "Hammurabi",
+      "question": "En quelle année les Jeux olympiques ont-ils été reportés d'un an pour la première fois ?",
+      "reponse": "2020",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
+      "reponse": "Le tramway",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel poisson à voile est le plus rapide des mers ?",
+      "reponse": "Le voilier",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
+      "reponse": "La Finlande",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui installe les micros avant un concert ?",
+      "reponse": "Un technicien de son",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
+      "reponse": "L'inlandsis",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?",
+      "reponse": "Un tir de barrage",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel petit disque contenait une chanson de chaque côté ?",
+      "reponse": "Le 45 tours",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays entoure complètement le Lesotho ?",
+      "reponse": "Afrique du Sud",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle tartelette portugaise est à la crème ?",
+      "reponse": "Pastel de nata",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
+      "reponse": "Coup de Pouce",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Sur quelle bande magnétique écoutait-on la musique avant le disque compact ?",
+      "reponse": "Une cassette",
       "niveau": 3,
       "ages": [
         "adultes",

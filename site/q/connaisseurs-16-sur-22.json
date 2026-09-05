@@ -7,9 +7,20 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on un extrait de chanson repris dans une autre chanson ?",
-      "reponse": "Un échantillon",
+      "categorie": "Histoire",
+      "question": "Quel bâton orné le roi tient-il en main comme signe de son pouvoir ?",
+      "reponse": "Le sceptre",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel studio japonais a créé Mon voisin Totoro ?",
+      "reponse": "Ghibli",
       "niveau": 3,
       "ages": [
         "ados",
@@ -17,9 +28,9 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
-      "reponse": "L'escalier Casse-Cou",
+      "categorie": "Musique",
+      "question": "Quel roi du blues appelait sa guitare Lucille ?",
+      "reponse": "B.B. King",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -27,9 +38,24 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
-      "reponse": "L'autoroute 40",
+      "categorie": "Géographie",
+      "question": "Dans quel pays d'Amérique du Sud danse-t-on le tango ?",
+      "reponse": "L'Argentine",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil du restaurant jouait une chanson contre une pièce de monnaie ?",
+      "reponse": "Le juke-box",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à cordes indien a un très long manche ?",
+      "reponse": "Le sitar",
       "niveau": 3,
       "ages": [
         "ados",
@@ -38,30 +64,110 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel chanteur a popularisé le twist ?",
-      "reponse": "Chubby Checker",
+      "categorie": "Québec",
+      "question": "Quel chansonnier a écrit Quand les hommes vivront d'amour ?",
+      "reponse": "Raymond Lévesque",
       "niveau": 3,
       "ages": [
         "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne d'épicerie québécoise a fermé ses portes en 1992 ?",
-      "reponse": "Steinberg",
+      "categorie": "Québec",
+      "question": "Quelle autoroute mène de Montréal vers les Laurentides ?",
+      "reponse": "La 15",
       "niveau": 3,
       "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle gomme rose se vendait avec une petite bande dessinée dans l'emballage ?",
-      "reponse": "La Bazooka",
+      "categorie": "Sports",
+      "question": "Comment appelle-t-on la balle de golf entrée dans la coupe dès le départ ?",
+      "reponse": "Un trou d'un coup",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quelle merveille antique se trouvait à Babylone ?",
+      "reponse": "Jardins suspendus",
       "niveau": 3,
       "ages": [
         "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson de Gloria Gaynor est devenue l'hymne des cœurs brisés ?",
+      "reponse": "I Will Survive",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
+      "reponse": "Willie Lamothe",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on celui qui mène les danses traditionnelles à l'archet ?",
+      "reponse": "Un violoneux",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel tunnel fait passer l'autoroute sous le centre-ville de Montréal ?",
+      "reponse": "Le tunnel Ville-Marie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Comment mesure-t-on la force des ouragans ?",
+      "reponse": "Saffir-Simpson",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
+      "reponse": "Dominique Michel et Denise Filiatrault",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?",
+      "reponse": "La lessiveuse à tordeur",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     },
@@ -77,65 +183,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on les chansons anciennes transmises de génération en génération ?",
-      "reponse": "Le folklore",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel attaquant norvégien enfile les buts à Manchester City ?",
-      "reponse": "Haaland",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne de café québécoise porte le nom de son fondateur ?",
-      "reponse": "Van Houtte",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Histoire",
-      "question": "Quelle construction de béton a coupé une capitale allemande en deux jusqu'en 1989 ?",
-      "reponse": "Le mur de Berlin",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui a composé la musique de l'hymne O Canada ?",
-      "reponse": "Calixa Lavallée",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série de films enferme des adolescents dans un dédale aux murs mouvants ?",
-      "reponse": "Le Labyrinthe",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Bon Jovi raconte Tommy et Gina à mi-chemin ?",
-      "reponse": "Livin' on a Prayer",
+      "question": "Quelle méthode permet de dater un vestige grâce à un isotope ?",
+      "reponse": "Le carbone 14",
       "niveau": 3,
       "ages": [
         "ados",
@@ -144,81 +194,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Où logeait le curé de la paroisse ?",
-      "reponse": "Au presbytère",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville américaine se trouve Disney World ?",
-      "reponse": "Orlando",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel rassemblement de percussionnistes a lieu au pied du mont Royal le dimanche ?",
-      "reponse": "Les tam-tams",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Comment mesure-t-on la force des ouragans ?",
-      "reponse": "Saffir-Simpson",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les grands ponts qui amenaient l'eau jusqu'aux villes romaines ?",
-      "reponse": "Un aqueduc",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle merveille antique se trouvait à Babylone ?",
-      "reponse": "Jardins suspendus",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
-      "reponse": "Le Village Vacances Valcartier",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel instrument de navigation mesurait la hauteur des astres sur l'horizon ?",
-      "reponse": "Le sextant",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel lac est le plus profond du monde ?",
-      "reponse": "Le Baïkal",
+      "question": "Quel pichet souriant défonce les murs en criant « Oh yeah » ?",
+      "reponse": "Le pichet Kool-Aid",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -227,8 +204,30 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel petit objet de métal en forme de fourche donne le la aux musiciens ?",
-      "reponse": "Un diapason",
+      "question": "Quelle chanteuse colombienne a chanté Provenza ?",
+      "reponse": "Karol G",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le décalage d'heure entre Montréal et Paris ?",
+      "reponse": "Le décalage horaire",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le quartier bâti pour loger les athlètes pendant les Jeux ?",
+      "reponse": "Le village olympique",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on les récits du passé transmis de bouche à oreille ?",
+      "reponse": "La tradition orale",
       "niveau": 3,
       "ages": [
         "ados",
@@ -237,10 +236,15 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quel pays nordique le père Noël a-t-il son village officiel, à Rovaniemi ?",
-      "reponse": "La Finlande",
-      "niveau": 3
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
+      "reponse": "Un divulgâcheur",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

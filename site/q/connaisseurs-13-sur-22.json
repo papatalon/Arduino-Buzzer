@@ -7,47 +7,9 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on une œuvre écrite pour un soliste accompagné d'un orchestre ?",
-      "reponse": "Un concerto",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays d'Afrique se trouve la grande réserve du Masai Mara ?",
-      "reponse": "Le Kenya",
-      "niveau": 3
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel métal précieux conduit le mieux l'électricité ?",
-      "reponse": "L'argent",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel tambour à main vient d'Irlande ?",
-      "reponse": "Le bodhrán",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
-      "reponse": "Klô Pelgag",
+      "categorie": "Québec",
+      "question": "Quel club-école des Canadiens joue à Laval ?",
+      "reponse": "Le Rocket",
       "niveau": 3,
       "ages": [
         "ados",
@@ -55,21 +17,13 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Combien de pays ont le français comme langue officielle : 9, 29 ou 59 ?",
-      "reponse": "29",
+      "categorie": "Sciences et nature",
+      "question": "Quelle échelle mesure la dureté des minéraux ?",
+      "reponse": "Mohs",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle petite radio portative à pile a libéré la musique des salons ?",
-      "reponse": "Le transistor",
-      "niveau": 3,
-      "ages": [
         "aines"
       ]
     },
@@ -84,15 +38,200 @@
       ]
     },
     {
+      "categorie": "Culture pop",
+      "question": "Quel site de mode en ligne inonde le marché de vêtements à très bas prix ?",
+      "reponse": "Shein",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la longue route de campagne bordée de fermes au Québec ?",
-      "reponse": "Un rang",
+      "question": "Quelle ville se proclame capitale mondiale de l'érable ?",
+      "reponse": "Plessisville",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel instrument de navigation mesurait la hauteur des astres sur l'horizon ?",
+      "reponse": "Le sextant",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel grand rendez-vous de novembre réunit éditeurs et auteurs au Palais des congrès de Montréal ?",
+      "reponse": "Le Salon du livre",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle bataille vit trois cents Spartiates tenir un défilé étroit ?",
+      "reponse": "Les Thermopyles",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de points vaut la bille noire au snooker ?",
+      "reponse": "Sept",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse de jazz était surnommée Lady Day ?",
+      "reponse": "Billie Holiday",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
+      "reponse": "Mariana Mazza",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
+      "reponse": "Les Denis Drolet",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles équipes de sous-marins explorent les océans en secourant les animaux marins ?",
+      "reponse": "Les Octonauts",
+      "niveau": 3,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel tambour métallique vient de Trinité ?",
+      "reponse": "Le steel drum",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanteuse acadienne a gagné le Félix de la chanson de l'année avec Évangéline ?",
+      "reponse": "Annie Blanchard",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel carré de plastique de trois pouces et demi stockait des fichiers d'ordinateur ?",
+      "reponse": "La disquette",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Que porte un astronaute pour survivre dans l'espace ?",
+      "reponse": "Un scaphandre",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magasin à rayons offrait un comptoir-lunch où manger un hot-dog ?",
+      "reponse": "Woolworth",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle mer sépare la péninsule coréenne de l'archipel nippon ?",
+      "reponse": "La mer du Japon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument à percussion se joue avec les mains sur deux tambours accolés ?",
+      "reponse": "Les bongos",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la peur des hauteurs ?",
+      "reponse": "L'acrophobie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays nordique le père Noël a-t-il son village officiel, à Rovaniemi ?",
+      "reponse": "La Finlande",
       "niveau": 3
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à tartiner australienne est très salée ?",
-      "reponse": "La Vegemite",
+      "question": "Quelle pâte russe est un petit chausson farci ?",
+      "reponse": "Le pirojki",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
+      "reponse": "Expo 67",
       "niveau": 3,
       "ages": [
         "ados",
@@ -102,143 +241,11 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays insulaire du nord de l'Atlantique compte des volcans et des geysers ?",
-      "reponse": "L'Islande",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit disque contenait une chanson de chaque côté ?",
-      "reponse": "Le 45 tours",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de kilomètres fait un triathlon olympique à vélo ?",
-      "reponse": "40",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission de variétés pour adolescents Véronique Cloutier a-t-elle animée ?",
-      "reponse": "La Fureur",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel empereur romain a légalisé le christianisme ?",
-      "reponse": "Constantin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel grand musée du Vieux-Port de Québec a ouvert ses portes en 1988 ?",
-      "reponse": "Le Musée de la civilisation",
+      "question": "Quelle fosse océanique est la plus profonde ?",
+      "reponse": "Les Mariannes",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les longues routes pavées construites par les Romains ?",
-      "reponse": "Les voies romaines",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?",
-      "reponse": "Le yéyé",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "En quelle année l'URSS a-t-elle disparu ?",
-      "reponse": "1991",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe a chanté Smoke on the Water ?",
-      "reponse": "Deep Purple",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle arme se tendait avec une manivelle et tirait un carreau ?",
-      "reponse": "L'arbalète",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?",
-      "reponse": "La lessiveuse à tordeur",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle chaîne québécoise faisait tourner des vidéoclips dans les années 90 ?",
-      "reponse": "MusiquePlus",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel xylophone africain a des calebasses ?",
-      "reponse": "Le balafon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle barrière de longues pièces de bois croisées entourait les vieilles fermes d'ici ?",
-      "reponse": "Une clôture de perches",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]

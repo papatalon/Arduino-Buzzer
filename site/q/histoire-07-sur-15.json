@@ -8,12 +8,6 @@
   "questions": [
     {
       "categorie": "Histoire",
-      "question": "Comment appelait-on le soldat armé d'un arc dans les armées d'autrefois ?",
-      "reponse": "Un archer",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
       "question": "Quel peuple de l'Antiquité construisait des pyramides et embaumait ses morts ?",
       "reponse": "Les Égyptiens",
       "niveau": 1
@@ -30,6 +24,12 @@
     },
     {
       "categorie": "Histoire",
+      "question": "Quel coureur unijambiste a traversé une partie du Canada pour la recherche sur le cancer ?",
+      "reponse": "Terry Fox",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
       "question": "Quel empereur romain aurait incendié Rome ?",
       "reponse": "Néron",
       "niveau": 2,
@@ -41,19 +41,20 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle construction de béton a coupé une capitale allemande en deux jusqu'en 1989 ?",
-      "reponse": "Le mur de Berlin",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quelle bataille de 1759 a fait passer Québec aux mains des Britanniques ?",
+      "reponse": "La bataille des plaines d'Abraham",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
       "question": "Quel tombeau égyptien fut découvert en 1922 ?",
       "reponse": "Toutankhamon",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle jeune fille a mené les armées françaises en 1429 ?",
+      "reponse": "Jeanne d'Arc",
       "niveau": 2
     },
     {
@@ -65,12 +66,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle jeune fille a mené les armées françaises en 1429 ?",
-      "reponse": "Jeanne d'Arc",
-      "niveau": 2
     },
     {
       "categorie": "Histoire",
@@ -106,19 +101,20 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la ville où siégeait le pouvoir d'un royaume ?",
-      "reponse": "La capitale du royaume",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel animal servait de moyen de transport principal avant l'automobile ?",
+      "reponse": "Le cheval",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
-      "reponse": "Le mammouth",
-      "niveau": 1
+      "question": "Quelle fondatrice a ouvert la première école de Ville-Marie ?",
+      "reponse": "Marguerite Bourgeoys",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -138,20 +134,21 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle journée du 11 novembre honore la mémoire des soldats ?",
-      "reponse": "Le jour du Souvenir",
-      "niveau": 2
+      "question": "Comment appelle-t-on la personne dont le métier est d'étudier le passé ?",
+      "reponse": "Un historien",
+      "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle fondatrice a ouvert la première école de Ville-Marie ?",
-      "reponse": "Marguerite Bourgeoys",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
+      "reponse": "Le mammouth",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle femme a reçu deux prix Nobel ?",
+      "reponse": "Marie Curie",
+      "niveau": 2
     },
     {
       "categorie": "Histoire",
@@ -166,10 +163,11 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la période où les Québécois ont bâti écoles et hôpitaux dans les années 1960 ?",
-      "reponse": "La Révolution tranquille",
+      "question": "Quelle grande fête mondiale a rempli Montréal de pavillons en 1967 ?",
+      "reponse": "Expo 67",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -192,14 +190,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle femme a reçu deux prix Nobel ?",
-      "reponse": "Marie Curie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
-      "reponse": "Le parchemin",
+      "question": "Quel casque de métal protégeait la tête du chevalier ?",
+      "reponse": "Un heaume",
       "niveau": 3
     },
     {

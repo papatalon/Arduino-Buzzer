@@ -89,24 +89,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
-      "reponse": "L'Ontario",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle ville américaine est la capitale du country ?",
-      "reponse": "Nashville",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de joueurs par équipe au soccer ?",
-      "reponse": "Onze",
+      "question": "Quelle province canadienne est voisine du Québec, à l'est, avec Fredericton pour capitale ?",
+      "reponse": "Le Nouveau-Brunswick",
       "niveau": 1
     },
     {
@@ -116,21 +100,27 @@
       "niveau": 1
     },
     {
+      "categorie": "Sports",
+      "question": "Combien de joueurs par équipe au soccer ?",
+      "reponse": "Onze",
+      "niveau": 1
+    },
+    {
       "categorie": "Bouffe et cuisine",
       "question": "Quel oignon frit en anneaux accompagne le burger ?",
       "reponse": "Rondelles d'oignon",
       "niveau": 1
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel est le plus grand animal du monde ?",
-      "reponse": "La baleine bleue",
-      "niveau": 1
-    },
-    {
       "categorie": "Musique",
       "question": "Quel chant de Noël anglais fait tinter les grelots du traîneau ?",
       "reponse": "Jingle Bells",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le plus grand animal du monde ?",
+      "reponse": "La baleine bleue",
       "niveau": 1
     },
     {
@@ -145,9 +135,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle baie géante borde le nord du Québec ?",
-      "reponse": "Baie d'Hudson",
-      "niveau": 1
+      "question": "Quelle île canadienne est la plus grande ?",
+      "reponse": "Île de Baffin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -161,21 +156,31 @@
       ]
     },
     {
+      "categorie": "Musique",
+      "question": "Quelle ville américaine est la capitale du country ?",
+      "reponse": "Nashville",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
       "question": "Quelle créature à écailles crache du feu et garde un trésor ?",
       "reponse": "Un dragon",
       "niveau": 1
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel instrument d'écriture contient du graphite ?",
-      "reponse": "Le crayon",
-      "niveau": 1
-    },
-    {
       "categorie": "Mots et langue",
       "question": "Que signifie faire la file ?",
       "reponse": "Attendre son tour",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel instrument d'écriture contient du graphite ?",
+      "reponse": "Le crayon",
       "niveau": 1
     },
     {

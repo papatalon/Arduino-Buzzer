@@ -8,23 +8,6 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Combien y a-t-il de continents sur Terre ?",
-      "reponse": "Sept",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?",
-      "reponse": "La baie James",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
       "question": "Capitale de l'Inde ?",
       "reponse": "New Delhi",
       "niveau": 2,
@@ -36,8 +19,31 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le train qui circule sous la ville ?",
-      "reponse": "Le métro",
+      "question": "Quelle feuille rouge orne le drapeau du Canada ?",
+      "reponse": "La feuille d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve la Grande Muraille ?",
+      "reponse": "La Chine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel volcan sicilien est le plus actif d'Europe ?",
+      "reponse": "L'Etna",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la construction qui permet de traverser une rivière ?",
+      "reponse": "Un pont",
       "niveau": 1
     },
     {
@@ -53,50 +59,31 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la secousse qui fait trembler le sol ?",
-      "reponse": "Un tremblement de terre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien de territoires compte le Canada ?",
-      "reponse": "Trois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne borde le Pacifique ?",
-      "reponse": "Colombie-Britannique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle plaque plantée au bord du chemin indique la direction à suivre ?",
-      "reponse": "Un panneau",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la Grande Muraille ?",
-      "reponse": "La Chine",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale des États-Unis ?",
-      "reponse": "Washington",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
       "question": "Capitale du Canada ?",
       "reponse": "Ottawa",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle ville italienne est célèbre pour ses canaux ?",
-      "reponse": "Venise",
+      "question": "Quel archipel espagnol se trouve au large du Maroc ?",
+      "reponse": "Les Canaries",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel petit pays d'Amérique centrale est réputé pour sa forêt tropicale et sa faune ?",
+      "reponse": "Le Costa Rica",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale des États-Unis ?",
+      "reponse": "Washington",
       "niveau": 1
     },
     {
@@ -112,9 +99,32 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on une langue de terre qui s'avance dans la mer ?",
-      "reponse": "Une péninsule",
-      "niveau": 3
+      "question": "Quelle frontière est la plus longue du monde ?",
+      "reponse": "Canada-USA",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve la tour de Pise ?",
+      "reponse": "L'Italie",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ville italienne est célèbre pour ses canaux ?",
+      "reponse": "Venise",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la ligne où le ciel semble toucher la mer ?",
+      "reponse": "L'horizon",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -128,14 +138,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de la Thaïlande ?",
-      "reponse": "Bangkok",
+      "question": "Capitale du Vietnam ?",
+      "reponse": "Hanoï",
       "niveau": 2,
       "ages": [
         "ados",
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quel continent se dresse le Kilimandjaro ?",
+      "reponse": "L'Afrique",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -150,21 +166,26 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle ville est surnommée la Ville lumière ?",
-      "reponse": "Paris",
+      "question": "Quelle ville est surnommée la Ville éternelle ?",
+      "reponse": "Rome",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays produit le plus de sirop d'érable ?",
+      "reponse": "Le Canada",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Sur quel continent se dresse le Kilimandjaro ?",
-      "reponse": "L'Afrique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays produit le plus de café ?",
-      "reponse": "Le Brésil",
-      "niveau": 2,
+      "question": "Quel pays a un drapeau avec une étoile de David ?",
+      "reponse": "Israël",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -173,30 +194,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Monnaie utilisée en Inde ?",
-      "reponse": "La roupie",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Sur quel continent se trouve l'Australie ?",
+      "reponse": "L'Océanie",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays a pour emblème le kiwi ?",
-      "reponse": "Nouvelle-Zélande",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville se trouve la tour Eiffel ?",
-      "reponse": "Paris",
+      "question": "Quel pays a pour emblème le panda ?",
+      "reponse": "La Chine",
       "niveau": 1
     }
   ]

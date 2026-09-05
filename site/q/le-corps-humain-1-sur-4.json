@@ -8,54 +8,8 @@
   "questions": [
     {
       "categorie": "Sciences et nature",
-      "question": "Combien de dents de lait a un enfant ?",
-      "reponse": "20",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle vitamine trouve-t-on dans les oranges ?",
-      "reponse": "La vitamine C",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel liquide rouge circule dans nos veines ?",
-      "reponse": "Le sang",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle articulation plie le bras en son milieu ?",
-      "reponse": "Le coude",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quels organes nous permettent de voir ?",
-      "reponse": "Les yeux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal polaire a la peau noire sous son pelage blanc ?",
-      "reponse": "L'ours polaire",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel ustensile à quatre dents pique les aliments ?",
-      "reponse": "La fourchette",
+      "question": "Quel organe permet aux poissons de respirer sous l'eau ?",
+      "reponse": "Les branchies",
       "niveau": 1
     },
     {
@@ -69,79 +23,16 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quelle articulation relie la cuisse à la jambe ?",
-      "reponse": "Le genou",
+      "question": "Quel minéral renforce les os ?",
+      "reponse": "Le calcium",
       "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de paires de côtes avons-nous ?",
-      "reponse": "Douze",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie avoir le cœur sur la main ?",
-      "reponse": "Être généreux",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Qui soigne les dents ?",
-      "reponse": "Le dentiste",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel sucre trouve-t-on dans le sang ?",
-      "reponse": "Le glucose",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel jeu consiste à se cacher pendant qu'un joueur compte les yeux fermés ?",
-      "reponse": "La cachette",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de vertèbres a le cou d'une girafe ?",
-      "reponse": "Sept",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quelle fête du 14 février fait échanger des cartes en forme de cœur ?",
-      "reponse": "La Saint-Valentin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel géant mythologique n'a qu'un seul œil ?",
-      "reponse": "Le cyclope",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel liquide produit par le foie digère les graisses ?",
-      "reponse": "La bile",
-      "niveau": 2,
+      "question": "Quelle est la fleur emblème du Québec ?",
+      "reponse": "Iris versicolore",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -153,15 +44,25 @@
       "niveau": 3
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Combien d'os dans le squelette humain adulte ?",
-      "reponse": "206",
-      "niveau": 2,
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle vitamine trouve-t-on dans les oranges ?",
+      "reponse": "La vitamine C",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle peluche électronique aux grands yeux parlait toute seule en 1998 ?",
+      "reponse": "Le Furby",
+      "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
+        "adultes"
       ]
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel géant mythologique n'a qu'un seul œil ?",
+      "reponse": "Le cyclope",
+      "niveau": 1
     },
     {
       "categorie": "Québec",
@@ -175,29 +76,102 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel peintre s'est coupé une oreille ?",
-      "reponse": "Van Gogh",
+      "categorie": "Sciences et nature",
+      "question": "Quel liquide rouge circule dans nos veines ?",
+      "reponse": "Le sang",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument se frappe avec deux baguettes sur une peau tendue ?",
+      "reponse": "Le tambour",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quels organes nous permettent d'entendre ?",
+      "reponse": "Les oreilles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle créature marine a une queue de poisson et un buste humain ?",
+      "reponse": "Une sirène",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel fromage frais grince sous la dent ?",
+      "reponse": "Fromage en grains",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel jeu consiste à se cacher pendant qu'un joueur compte les yeux fermés ?",
+      "reponse": "La cachette",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
+      "reponse": "Le parchemin",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Combien de dents de lait a un enfant ?",
+      "reponse": "20",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film de 1975 a vidé les plages avec son requin géant ?",
-      "reponse": "Les Dents de la mer",
+      "categorie": "Culture pop",
+      "question": "Quel film Pixar suit un garçon poisson qui devient humain sur la terre ferme ?",
+      "reponse": "Luca",
       "niveau": 2,
       "ages": [
-        "adultes",
-        "aines"
+        "enfants",
+        "ados"
       ]
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel os protège le cerveau ?",
-      "reponse": "Le crâne",
+      "question": "Quelle est la plus petite unité du vivant ?",
+      "reponse": "La cellule",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel muscle bat sans jamais se reposer ?",
+      "reponse": "Le cœur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel document de peau ou de papier, écrit à la main, se copiait dans les monastères ?",
+      "reponse": "Un manuscrit",
+      "niveau": 3
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quels bonbons mous et colorés collent aux dents ?",
+      "reponse": "Les jujubes",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Combien de sens possède l'être humain ?",
+      "reponse": "Cinq",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel panneau rouge à huit côtés oblige l'auto à s'immobiliser ?",
+      "reponse": "Un arrêt",
       "niveau": 1
     }
   ]

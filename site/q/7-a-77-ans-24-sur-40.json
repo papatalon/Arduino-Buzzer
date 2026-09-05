@@ -7,109 +7,51 @@
   "emoji": "🎈",
   "questions": [
     {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on la petite lumière laissée allumée pour la nuit ?",
+      "reponse": "Une veilleuse",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture générale",
-      "question": "Quel monument italien penche dangereusement depuis des siècles ?",
-      "reponse": "La tour de Pise",
+      "question": "Combien de lettres dans l'alphabet français ?",
+      "reponse": "26",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel oncle jaloux trahit Mufasa ?",
+      "reponse": "Scar",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays a la feuille d'érable sur son drapeau ?",
-      "reponse": "Le Canada",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle céréale est la base de l'alimentation en Asie ?",
-      "reponse": "Le riz",
+      "question": "Quel est le plus grand désert chaud du monde ?",
+      "reponse": "Le Sahara",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel jeu de cour d'école saute sur des cases numérotées dessinées à la craie ?",
-      "reponse": "La marelle",
+      "question": "Quel sport japonais oppose deux colosses dans un cercle ?",
+      "reponse": "Le sumo",
       "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Petit du chat ?",
-      "reponse": "Le chaton",
+      "question": "Comment appelle-t-on celui qui joue un rôle dans un film ?",
+      "reponse": "Un acteur",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel grand oiseau rose se tient souvent sur une seule patte ?",
-      "reponse": "Le flamant rose",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série suit six amis dans un café new-yorkais ?",
-      "reponse": "Friends",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Allemagne ?",
-      "reponse": "Berlin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel métier éteint les incendies ?",
-      "reponse": "Le pompier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle course olympique est la plus courte ?",
-      "reponse": "Le 100 mètres",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel casse-tête coloré à six faces se replace en tournant ses rangées ?",
-      "reponse": "Le Rubik's Cube",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel thé japonais en poudre est vert vif ?",
-      "reponse": "Le matcha",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle princesse Disney a de très longs cheveux magiques ?",
-      "reponse": "Raiponce",
+      "question": "Qu'est-ce qui pousse sur la tête et qu'on va faire couper chez le coiffeur ?",
+      "reponse": "Les cheveux",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelle comptine demande si le loup y est pendant qu'il s'habille ?",
-      "reponse": "Promenons-nous dans les bois",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel signe encadre les paroles rapportées ?",
-      "reponse": "Les guillemets",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle huile méditerranéenne est pressée d'un fruit ?",
-      "reponse": "Huile d'olive",
+      "question": "Quel spectacle italien fait chanter toute l'histoire, sans dialogues parlés ?",
+      "reponse": "L'opéra",
       "niveau": 1,
       "ages": [
         "ados",
@@ -118,33 +60,84 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal noir et blanc dégage une odeur terrible quand il a peur ?",
-      "reponse": "La mouffette",
+      "categorie": "Bouffe et cuisine",
+      "question": "Dans quel pays grille-t-on soi-même sa viande sur un gril au centre de la table ?",
+      "reponse": "La Corée",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Dans quel sport porte-t-on un fleuret et un masque ?",
+      "reponse": "L'escrime",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel animal géant et blanc est le symbole du Grand Nord canadien ?",
+      "reponse": "L'ours polaire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel instrument mesure la température ?",
+      "reponse": "Le thermomètre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de rire ?",
+      "reponse": "Pleurer",
       "niveau": 1
     },
     {
       "categorie": "Histoire",
-      "question": "Quel animal géant à défenses et à longs poils vivait à l'époque des glaces ?",
-      "reponse": "Le mammouth",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel petit animal à grosse queue touffue cache des noix pour l'hiver ?",
-      "reponse": "L'écureuil",
+      "question": "Quelle grande statue verte tient une torche à l'entrée d'un port américain ?",
+      "reponse": "La statue de la Liberté",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui joue du violon ?",
-      "reponse": "Un violoniste",
+      "question": "Dans « Savez-vous planter les choux », avec quoi les plante-t-on en premier ?",
+      "reponse": "Le doigt",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle éponge jaune vit dans un ananas sous la mer ?",
+      "reponse": "Bob l'éponge",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle soupe jaune est un classique québécois ?",
-      "reponse": "Soupe aux pois",
+      "question": "Quel film culte parle d'une guerre de balles de neige ?",
+      "reponse": "La Guerre des tuques",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Où emprunte-t-on gratuitement des livres dans son quartier ?",
+      "reponse": "À la bibliothèque",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Contraire de bruyant, commençant par S ?",
+      "reponse": "Silencieux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle galette de maïs enroule les fajitas ?",
+      "reponse": "La tortilla",
       "niveau": 1,
       "ages": [
         "ados",
@@ -153,31 +146,38 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel signe de ponctuation sépare deux idées dans une phrase ?",
-      "reponse": "La virgule",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle famille préhistorique conduit une voiture à pédales ?",
-      "reponse": "Les Pierrafeu",
+      "categorie": "Sports",
+      "question": "Comment nomme-t-on un circuit avec les buts remplis ?",
+      "reponse": "Grand chelem",
       "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel jeu de gymnase oppose deux équipes qui se lancent des ballons pour éliminer les autres ?",
-      "reponse": "Le ballon chasseur",
+      "categorie": "Québec",
+      "question": "Quel dessert de la cabane à sucre se roule sur la neige avec un bâton ?",
+      "reponse": "La tire",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quelles plaines célèbres bordent le Vieux-Québec ?",
-      "reponse": "Plaines d'Abraham",
+      "categorie": "Sciences et nature",
+      "question": "Quel animal rampe sans pattes ?",
+      "reponse": "Le serpent",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel arbre des Gardiens ne dit que trois mots ?",
+      "reponse": "Groot",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle friandise glacée se tient par un bâton de bois ?",
+      "reponse": "Un popsicle",
       "niveau": 1
     }
   ]

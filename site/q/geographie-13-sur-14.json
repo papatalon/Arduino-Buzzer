@@ -8,26 +8,20 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la grande route à plusieurs voies entre deux villes ?",
-      "reponse": "Une autoroute",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le chemin de terre battue dans le bois ?",
-      "reponse": "Un sentier",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
       "question": "Quelle est la plus petite province canadienne ?",
       "reponse": "Prince-Édouard",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes du Québec attire les skieurs au nord de Montréal ?",
-      "reponse": "Les Laurentides",
+      "question": "Comment appelle-t-on les grandes îles du golfe où l'on va en traversier l'été ?",
+      "reponse": "Les Îles-de-la-Madeleine",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays voisin de la France et de l'Italie parle-t-on quatre langues officielles ?",
+      "reponse": "La Suisse",
       "niveau": 2
     },
     {
@@ -54,9 +48,38 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se trouve le Machu Picchu ?",
-      "reponse": "Le Pérou",
-      "niveau": 2,
+      "question": "Quelle province canadienne produit le plus de pétrole ?",
+      "reponse": "L'Alberta",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on l'encadré qui explique les symboles d'une carte ?",
+      "reponse": "La légende",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouvent les pyramides et le Sphinx ?",
+      "reponse": "L'Égypte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le terrain planté de pommiers ?",
+      "reponse": "Un verger",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+      "reponse": "Les Pyrénées",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -75,35 +98,6 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on le livre rempli de cartes de tous les pays ?",
-      "reponse": "Un atlas",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province des Prairies a Regina pour capitale ?",
-      "reponse": "La Saskatchewan",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la haute paroi de roche au bord de la mer ?",
-      "reponse": "Une falaise",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a la forme d'une longue bande le long de l'océan Pacifique ?",
-      "reponse": "Le Chili",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
       "question": "Quel pays entoure complètement le Lesotho ?",
       "reponse": "Afrique du Sud",
       "niveau": 3,
@@ -114,9 +108,29 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays a une croix blanche sur fond rouge ?",
-      "reponse": "La Suisse",
-      "niveau": 1,
+      "question": "Dans quel pays se trouve Petra, la cité rose ?",
+      "reponse": "La Jordanie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
+      "reponse": "La Finlande",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel état américain touche le Québec et le Nouveau-Brunswick ?",
+      "reponse": "Le Maine",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -125,8 +139,8 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Combien d'états composent les États-Unis ?",
-      "reponse": "50",
+      "question": "Sur quel continent se trouvent la France et l'Italie ?",
+      "reponse": "L'Europe",
       "niveau": 1
     },
     {
@@ -137,34 +151,16 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel fleuve russe est le plus long d'Europe ?",
-      "reponse": "La Volga",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle étendue d'eau salée immense sépare les continents ?",
-      "reponse": "L'océan",
+      "question": "Dans quel pays trouve-t-on des koalas et des kangourous ?",
+      "reponse": "L'Australie",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Où se trouvent les pyramides de Gizeh ?",
-      "reponse": "En Égypte",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle péninsule abrite la Mecque ?",
-      "reponse": "L'Arabie",
-      "niveau": 2,
+      "question": "Quelle mer intérieure borde le Kazakhstan et l'Iran ?",
+      "reponse": "La Caspienne",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
@@ -182,21 +178,32 @@
     },
     {
       "categorie": "Géographie",
+      "question": "Où se trouvent les pyramides de Gizeh ?",
+      "reponse": "En Égypte",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
       "question": "Quel est le plus haut sommet du monde ?",
       "reponse": "L'Everest",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel énorme bloc de calcaire troué se dresse dans la mer en Gaspésie ?",
-      "reponse": "Le rocher Percé",
-      "niveau": 2
+      "question": "Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?",
+      "reponse": "La baie James",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on les grandes îles du golfe où l'on va en traversier l'été ?",
-      "reponse": "Les Îles-de-la-Madeleine",
-      "niveau": 3
+      "question": "Quel grand fleuve traverse l'Amazonie ?",
+      "reponse": "L'Amazone",
+      "niveau": 1
     }
   ]
 }

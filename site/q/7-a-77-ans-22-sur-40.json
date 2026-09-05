@@ -8,48 +8,26 @@
   "questions": [
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel légume en feuilles vertes est la base d'une salade ?",
-      "reponse": "La laitue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment appelle-t-on les petits personnages bleus qui vivent dans des champignons ?",
-      "reponse": "Les Schtroumpfs",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle est la durée d'une année sur Terre ?",
-      "reponse": "365 jours",
+      "question": "Quelle volaille trône au repas de Noël ?",
+      "reponse": "La dinde",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle activité d'hiver descend une pente sur un traîneau ou une chambre à air ?",
-      "reponse": "La glissade",
+      "question": "Comment appelle-t-on le joueur du baseball qui envoie la balle au frappeur ?",
+      "reponse": "Le lanceur",
       "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quel joueur québécois des Penguins était surnommé le Magnifique ?",
-      "reponse": "Mario Lemieux",
-      "niveau": 1,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Géographie",
+      "question": "Quel massif abrite l'Everest ?",
+      "reponse": "L'Himalaya",
+      "niveau": 1
     },
     {
       "categorie": "Mots et langue",
-      "question": "Contraire de majuscule ?",
-      "reponse": "Minuscule",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comédie musicale met en scène des chats ?",
-      "reponse": "Cats",
+      "question": "Contraire de courageux, en cinq lettres ?",
+      "reponse": "Lâche",
       "niveau": 1,
       "ages": [
         "ados",
@@ -58,56 +36,21 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel outil sert à planter un clou ?",
-      "reponse": "Le marteau",
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse amérindienne chante L'air du vent ?",
+      "reponse": "Pocahontas",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel méchant sorcier des Schtroumpfs a un chat ?",
-      "reponse": "Gargamel",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois achaler ?",
-      "reponse": "Déranger",
+      "categorie": "Culture générale",
+      "question": "Dans quel jeu doit-on deviner un mot dessiné ?",
+      "reponse": "Pictionary",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport japonais oppose deux colosses dans un cercle ?",
-      "reponse": "Le sumo",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel poisson à l'aileron pointu fait fuir les baigneurs ?",
-      "reponse": "Le requin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Contraire de léger ?",
-      "reponse": "Lourd",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel légume orange se creuse et se sculpte à l'Halloween ?",
-      "reponse": "La citrouille d'Halloween",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Langue parlée en Argentine ?",
-      "reponse": "L'espagnol",
+      "question": "Dans quel sport parle-t-on de peloton ?",
+      "reponse": "Le cyclisme",
       "niveau": 1,
       "ages": [
         "ados",
@@ -117,67 +60,132 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument principal joue un batteur ?",
-      "reponse": "La batterie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel phacochère accompagne Timon ?",
-      "reponse": "Pumbaa",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel trophée les équipes de la Ligue nationale se disputent-elles au printemps ?",
-      "reponse": "La coupe Stanley",
-      "niveau": 1
+      "question": "Quelle chanson anglaise fait toucher la tête, les épaules, les genoux et les orteils ?",
+      "reponse": "Head and Shoulders",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Que porte-t-on sur le visage pour ne pas être reconnu à l'Halloween ?",
-      "reponse": "Un masque",
-      "niveau": 1
+      "question": "Dans Minecraft, quelle pierre bleue sert à fabriquer les meilleurs outils ?",
+      "reponse": "Le diamant",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel gros camion dégage la neige des rues après une tempête ?",
-      "reponse": "Une charrue",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "De quel côté se lève le soleil ?",
-      "reponse": "À l'est",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel beurre de noix est interdit dans les écoles ?",
-      "reponse": "Beurre d'arachide",
+      "question": "Où dépose-t-on une lettre pour qu'elle parte par la poste ?",
+      "reponse": "Au bureau de poste",
       "niveau": 1
     },
     {
       "categorie": "Culture générale",
-      "question": "Qui a ouvert la boîte qui libérait tous les maux ?",
-      "reponse": "Pandore",
+      "question": "Aux échecs, combien de dames au départ par joueur ?",
+      "reponse": "Une",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle péninsule québécoise s'avance dans le golfe ?",
+      "reponse": "La Gaspésie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson chante-t-on aux anniversaires ?",
+      "reponse": "Bonne fête",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel appareil garde la crème glacée bien dure ?",
+      "reponse": "Le congélateur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel sucre trouve-t-on dans le sang ?",
+      "reponse": "Le glucose",
       "niveau": 1,
       "ages": [
-        "enfants",
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Sur quel objet de ménage les sorcières se déplacent-elles dans le ciel ?",
-      "reponse": "Un balai",
+      "categorie": "Géographie",
+      "question": "Combien de territoires compte le Canada ?",
+      "reponse": "Trois",
       "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir de l'eau dans la cave ?",
+      "reponse": "Pantalon trop court",
+      "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel animal servait de moyen de transport principal avant l'automobile ?",
-      "reponse": "Le cheval",
+      "question": "Comment appelle-t-on le cahier où l'on note ce qui se passe jour après jour ?",
+      "reponse": "Un journal",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle princesse perd sa pantoufle de verre ?",
+      "reponse": "Cendrillon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le contraire de gagner ?",
+      "reponse": "Perdre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume rouge, jaune ou vert se coupe en lanières croquantes ?",
+      "reponse": "Le poivron",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle rôtisserie québécoise est célèbre pour son poulet BBQ ?",
+      "reponse": "St-Hubert",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel reptile porte une carapace sur son dos ?",
+      "reponse": "La tortue",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quels trois héros en pyjama se transforment la nuit pour affronter des méchants ?",
+      "reponse": "Les Pyjamasques",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel acolyte de Batman porte un costume rouge et vert ?",
+      "reponse": "Robin",
       "niveau": 1
     }
   ]

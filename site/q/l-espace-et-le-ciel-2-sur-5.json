@@ -7,55 +7,26 @@
   "emoji": "🪐",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel chanteur américain a chanté Uptown Funk et Just the Way You Are ?",
-      "reponse": "Bruno Mars",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Culture générale",
+      "question": "Quel mois vient après mars ?",
+      "reponse": "Avril",
+      "niveau": 1
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle salle de Montréal projette le ciel étoilé sur un dôme au-dessus des spectateurs ?",
-      "reponse": "Le Planétarium",
+      "categorie": "Sciences et nature",
+      "question": "Comment appelle-t-on l'ensemble formé par le Soleil et ses planètes ?",
+      "reponse": "Le système solaire",
       "niveau": 2
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment nomme-t-on une roche tombée de l'espace ?",
-      "reponse": "Une météorite",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle planète a été rétrogradée en planète naine ?",
-      "reponse": "Pluton",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel métal est liquide à température ambiante ?",
-      "reponse": "Le mercure",
-      "niveau": 2,
+      "question": "Quelle est la plus grande lune de Saturne ?",
+      "reponse": "Titan",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comptine demande à Pierrot de prêter sa plume pour écrire un mot ?",
-      "reponse": "Au clair de la lune",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel instrument sert à observer les étoiles ?",
-      "reponse": "Le télescope",
-      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -68,14 +39,60 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel animal hurle à la lune et chasse en meute ?",
-      "reponse": "Le loup",
+      "question": "Quel instrument sert à observer les étoiles ?",
+      "reponse": "Le télescope",
       "niveau": 1
     },
     {
+      "categorie": "Géographie",
+      "question": "Quel pays est surnommé le pays du Soleil-Levant ?",
+      "reponse": "Le Japon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle semaine de congé coupe l'hiver scolaire au début de mars ?",
+      "reponse": "La semaine de relâche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel événement cache le Soleil derrière la Lune ?",
+      "reponse": "Une éclipse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète tourne couchée sur le côté ?",
+      "reponse": "Uranus",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète a les anneaux les plus spectaculaires ?",
+      "reponse": "Saturne",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel télescope spatial a été lancé en 1990 ?",
+      "reponse": "Hubble",
+      "niveau": 2
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quels pneus la loi québécoise impose-t-elle du 1er décembre au 15 mars ?",
+      "reponse": "Les pneus d'hiver",
+      "niveau": 2
+    },
+    {
       "categorie": "Culture générale",
-      "question": "Quel musée parisien abrite la Vénus de Milo ?",
-      "reponse": "Le Louvre",
+      "question": "Quel jour de la semaine porte le nom de la Lune ?",
+      "reponse": "Lundi",
       "niveau": 2,
       "ages": [
         "ados",
@@ -84,10 +101,20 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quel astre traverse le ciel en traînant une longue queue lumineuse ?",
-      "reponse": "Une comète",
-      "niveau": 2
+      "categorie": "Histoire",
+      "question": "Quel engin a emmené les premiers hommes jusqu'à la Lune ?",
+      "reponse": "Une fusée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle station spatiale russe a précédé l'ISS ?",
+      "reponse": "Mir",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Mots et langue",
@@ -100,68 +127,34 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel film de 1977 s'ouvre sur « Il y a bien longtemps, dans une galaxie lointaine » ?",
-      "reponse": "La Guerre des étoiles",
+      "categorie": "Sciences et nature",
+      "question": "Quels points brillants voit-on dans le ciel par une nuit claire ?",
+      "reponse": "Les étoiles",
       "niveau": 1
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Sur quelle planète habitons-nous ?",
-      "reponse": "La Terre",
-      "niveau": 1
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel roi de France fut surnommé le Roi-Soleil ?",
-      "reponse": "Louis XIV",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle comète célèbre revient tous les 76 ans ?",
-      "reponse": "Halley",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Combien de planètes dans le système solaire ?",
-      "reponse": "Huit",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel sens le soleil se lève-t-il ?",
-      "reponse": "À l'est",
+      "question": "Quel caillou céleste brille en traversant l'atmosphère ?",
+      "reponse": "L'étoile filante",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle basilique du Vieux-Montréal a un plafond bleu étoilé ?",
-      "reponse": "Notre-Dame",
+      "question": "Quel cirque québécois est connu mondialement ?",
+      "reponse": "Cirque du Soleil",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel groupe de héros défend la galaxie avec un raton laveur ?",
-      "reponse": "Les Gardiens",
+      "categorie": "Sciences et nature",
+      "question": "Quelle est la plus grosse planète du système solaire ?",
+      "reponse": "Jupiter",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle créature bleue de Disney, échappée de l'espace, s'appelle l'expérience 626 ?",
-      "reponse": "Stitch",
-      "niveau": 1,
-      "ages": [
-        "enfants",
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on les régions chaudes situées près de l'équateur ?",
+      "reponse": "Les tropiques",
+      "niveau": 3
     }
   ]
 }

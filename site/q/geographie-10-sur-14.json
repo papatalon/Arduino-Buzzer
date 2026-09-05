@@ -8,15 +8,25 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne est célèbre pour ses cow-boys et son Stampede ?",
-      "reponse": "L'Alberta",
-      "niveau": 3
+      "question": "Dans quelle ville trouve-t-on la place Tiananmen ?",
+      "reponse": "Pékin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle ville américaine se trouve Disney World ?",
-      "reponse": "Orlando",
-      "niveau": 3
+      "question": "Quel territoire canadien a Iqaluit pour capitale ?",
+      "reponse": "Le Nunavut",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -37,8 +47,20 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel océan borde la côte ouest du Canada ?",
-      "reponse": "Le Pacifique",
+      "question": "Comment appelle-t-on le grand bâtiment d'où décollent les avions ?",
+      "reponse": "Un aéroport",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle grande ville américaine abrite la statue de la Liberté ?",
+      "reponse": "New York",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays d'Europe est célèbre pour ses moulins à vent et ses tulipes ?",
+      "reponse": "Les Pays-Bas",
       "niveau": 1
     },
     {
@@ -54,45 +76,41 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel sens le soleil se lève-t-il ?",
-      "reponse": "À l'est",
+      "question": "Quel est le plus long fleuve du Canada ?",
+      "reponse": "Le Mackenzie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel petit pays est enclavé entre France et Espagne ?",
+      "reponse": "Andorre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la voie bordée de maisons où l'on habite en ville ?",
+      "reponse": "Une rue",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel immense pays occupe la moitié de l'Amérique du Sud ?",
-      "reponse": "Le Brésil",
+      "question": "Capitale de l'Allemagne ?",
+      "reponse": "Berlin",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la rive du fleuve où se trouve Longueuil ?",
-      "reponse": "La Rive-Sud",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on les chutes situées juste à côté de la ville de Québec ?",
-      "reponse": "Les chutes Montmorency",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le décalage d'heure entre Montréal et Paris ?",
-      "reponse": "Le décalage horaire",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la terre gelée sans arbres du Grand Nord ?",
-      "reponse": "La toundra",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel petit pays d'Amérique centrale est réputé pour sa forêt tropicale et sa faune ?",
-      "reponse": "Le Costa Rica",
-      "niveau": 2
+      "question": "Quelle étendue d'eau salée immense sépare les continents ?",
+      "reponse": "L'océan",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -106,14 +124,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Allemagne ?",
-      "reponse": "Berlin",
-      "niveau": 1
+      "question": "Comment appelle-t-on le passage étroit d'eau entre deux terres ?",
+      "reponse": "Un détroit",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on la basilique Saint-Pierre ?",
-      "reponse": "Rome (Vatican)",
+      "question": "Dans quel pays se trouve La Mecque ?",
+      "reponse": "Arabie saoudite",
       "niveau": 2,
       "ages": [
         "ados",
@@ -123,15 +141,21 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Combien y a-t-il de pôles sur la Terre ?",
-      "reponse": "Deux",
+      "question": "De quelle couleur les océans sont-ils dessinés sur une carte ?",
+      "reponse": "Bleus",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'encadré qui explique les symboles d'une carte ?",
-      "reponse": "La légende",
-      "niveau": 3
+      "question": "Quelle grande étendue d'eau salée sépare l'Angleterre de la France ?",
+      "reponse": "La Manche",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel grand pays d'Asie du Sud a plus d'un milliard d'habitants et borde l'océan Indien ?",
+      "reponse": "L'Inde",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
@@ -157,15 +181,15 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays se tient le grand carnaval de Rio ?",
-      "reponse": "Le Brésil",
+      "question": "De quel côté se lève le soleil ?",
+      "reponse": "À l'est",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne est voisine du Québec, à l'est, avec Fredericton pour capitale ?",
-      "reponse": "Le Nouveau-Brunswick",
-      "niveau": 1
+      "question": "Dans quel pays d'Afrique se trouve la grande réserve du Masai Mara ?",
+      "reponse": "Le Kenya",
+      "niveau": 3
     },
     {
       "categorie": "Géographie",
@@ -173,17 +197,6 @@
       "reponse": "Le Yangtsé",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays est surnommé la botte de l'Europe ?",
-      "reponse": "L'Italie",
-      "niveau": 1,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]

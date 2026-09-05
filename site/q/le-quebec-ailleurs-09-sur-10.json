@@ -1,0 +1,223 @@
+{
+  "format": "buzzer-questionnaire",
+  "version": 1,
+  "titre": "Le Québec ailleurs 09 sur 10",
+  "note": "Le Québec caché dans les neuf autres catégories. Manche 9 sur 10.",
+  "collection": "Québec",
+  "emoji": "🌲",
+  "questions": [
+    {
+      "categorie": "Histoire",
+      "question": "Quelle fourrure les Européens recherchaient-ils le plus en Nouvelle-France ?",
+      "reponse": "Le castor",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle viande fumée fait la réputation des sandwichs de la rue Saint-Laurent ?",
+      "reponse": "Le smoked meat",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe québécois chante Toune d'automne ?",
+      "reponse": "Cowboys Fringants",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne une fête ?",
+      "reponse": "Un party",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle baie géante borde le nord du Québec ?",
+      "reponse": "Baie d'Hudson",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle société d'État a le monopole de la vente d'alcool au Québec ?",
+      "reponse": "La SAQ",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la sève recueillie au printemps pour faire le sirop ?",
+      "reponse": "L'eau d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise raconte Séraphin Poudrier ?",
+      "reponse": "Les Belles Histoires",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
+      "reponse": "Michel Louvain",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
+      "reponse": "Le CF Montréal",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
+      "reponse": "Rue des Pignons",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert québécois est un gâteau arrosé de sauce sucrée ?",
+      "reponse": "Pouding chômeur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel quotidien montréalais a imprimé sa dernière édition en 2017 pour passer à la tablette ?",
+      "reponse": "La Presse",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
+      "reponse": "L'inlandsis",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
+      "reponse": "Coup de Pouce",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
+      "reponse": "Caillou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
+      "reponse": "La poutine",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe de Montréal a gagné un Grammy pour The Suburbs ?",
+      "reponse": "Arcade Fire",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le nord du Québec, immense et presque sans routes ?",
+      "reponse": "Le Grand Nord",
+      "niveau": 2
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel traité de 1763 a cédé la Nouvelle-France à l'Angleterre ?",
+      "reponse": "Traité de Paris",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Dans quelle émission québécoise des vedettes chantent-elles cachées dans des costumes géants ?",
+      "reponse": "Chanteurs masqués",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne éducative appartient au gouvernement du Québec ?",
+      "reponse": "Télé-Québec",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel événement montréalais ferme des rues chaque été pour des spectacles gratuits ?",
+      "reponse": "Le Festival de jazz",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
+      "reponse": "Les Boys",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on au Québec la coupe de cheveux courte devant et longue derrière ?",
+      "reponse": "La coupe Longueuil",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    }
+  ]
+}

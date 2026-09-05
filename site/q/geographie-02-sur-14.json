@@ -8,15 +8,39 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on un cours d'eau qui se jette dans un fleuve ?",
-      "reponse": "Une rivière",
+      "question": "Quel énorme bloc de calcaire troué se dresse dans la mer en Gaspésie ?",
+      "reponse": "Le rocher Percé",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle tempête tropicale géante porte un nom de personne ?",
+      "reponse": "Un ouragan",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quel continent se trouve le Canada ?",
+      "reponse": "L'Amérique du Nord",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle région du Québec est célèbre pour ses bleuets ?",
-      "reponse": "Le Lac-Saint-Jean",
-      "niveau": 2
+      "question": "De quel côté se couche le soleil ?",
+      "reponse": "À l'ouest",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une montagne qui crache de la lave ?",
+      "reponse": "Un volcan",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une immense étendue de sable sans eau ?",
+      "reponse": "Un désert",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -32,38 +56,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle grande ville des États-Unis abrite Hollywood ?",
-      "reponse": "Los Angeles",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "De quel côté se lève le soleil ?",
-      "reponse": "À l'est",
+      "question": "Quel océan traverse-t-on en avion pour aller du Canada à la France ?",
+      "reponse": "L'Atlantique",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle province se trouve Montréal ?",
-      "reponse": "Le Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on une montagne qui crache de la lave ?",
-      "reponse": "Un volcan",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on les régions chaudes situées près de l'équateur ?",
-      "reponse": "Les tropiques",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a un drapeau avec une étoile de David ?",
-      "reponse": "Israël",
+      "question": "Quel pays a une croix blanche sur fond rouge ?",
+      "reponse": "La Suisse",
       "niveau": 1,
       "ages": [
         "ados",
@@ -79,84 +79,38 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel état américain se trouvent les Everglades et la ville de Miami ?",
-      "reponse": "La Floride",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
       "question": "Capitale du Mexique ?",
       "reponse": "Mexico",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la plus grande île du golfe Saint-Laurent ?",
-      "reponse": "Anticosti",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle fleur bleue orne le drapeau du Québec ?",
-      "reponse": "La fleur de lys",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a Bagdad pour capitale ?",
-      "reponse": "L'Irak",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la ville de New York ?",
-      "reponse": "Les États-Unis",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?",
-      "reponse": "Le pont Champlain",
+      "question": "Comment appelle-t-on la moitié de la Terre où se trouve le Québec ?",
+      "reponse": "L'hémisphère nord",
       "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Quel pays produit le plus de sirop d'érable ?",
-      "reponse": "Le Canada",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel océan entoure le pôle Nord ?",
-      "reponse": "L'océan Arctique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays est célèbre pour ses tacos et ses sombreros ?",
-      "reponse": "Le Mexique",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays d'Afrique se trouve la grande réserve du Masai Mara ?",
-      "reponse": "Le Kenya",
+      "question": "Dans quel pays d'Amérique du Sud danse-t-on le tango ?",
+      "reponse": "L'Argentine",
       "niveau": 3
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle ville canadienne abrite la Tour CN ?",
-      "reponse": "Toronto",
+      "question": "De quelles couleurs est le drapeau de la France ?",
+      "reponse": "Bleu blanc rouge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel continent n'a aucun pays ?",
+      "reponse": "L'Antarctique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle province canadienne borde le Pacifique ?",
+      "reponse": "Colombie-Britannique",
       "niveau": 1
     },
     {
@@ -167,9 +121,59 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Combien de continents compte la Terre ?",
-      "reponse": "Sept",
+      "question": "Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?",
+      "reponse": "La ville de Québec",
       "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays vivent les kangourous ?",
+      "reponse": "L'Australie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale du Manitoba ?",
+      "reponse": "Winnipeg",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Langue parlée en Argentine ?",
+      "reponse": "L'espagnol",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Sur quel continent se trouve le désert du Sahara ?",
+      "reponse": "L'Afrique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle baie géante borde le nord du Québec ?",
+      "reponse": "Baie d'Hudson",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel lac canadien est le plus profond ?",
+      "reponse": "Lac des Esclaves",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     }
   ]
 }

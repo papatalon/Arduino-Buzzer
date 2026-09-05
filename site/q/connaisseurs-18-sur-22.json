@@ -7,95 +7,22 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quel gros livre illustré arrivait par la poste et faisait rêver avant Noël ?",
-      "reponse": "Le catalogue",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Géographie",
-      "question": "Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?",
-      "reponse": "La baie James",
+      "question": "Dans quel pays se trouve Tombouctou ?",
+      "reponse": "Le Mali",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel papillon est l'insecte emblème du Québec ?",
-      "reponse": "L'amiral",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Comment appelle-t-on la banque coopérative très répandue au Québec ?",
-      "reponse": "La caisse populaire",
-      "niveau": 3,
-      "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel humoriste québécois jouait le concierge Symphorien ?",
-      "reponse": "Gilles Latulippe",
+      "question": "Quelle série québécoise se déroulait dans Charlevoix après la Première Guerre ?",
+      "reponse": "Le temps d'une paix",
       "niveau": 3,
       "ages": [
         "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel instrument à cordes pincées, plus petit qu'un piano droit, symbolise l'Irlande ?",
-      "reponse": "La harpe celtique",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Avec quel lait fait-on la feta traditionnelle ?",
-      "reponse": "Lait de brebis",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'écran qui affiche les paroles pendant un karaoké ?",
-      "reponse": "Le téléprompteur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel peuple autochtone habitait Stadaconé et Hochelaga à l'arrivée des Français ?",
-      "reponse": "Les Iroquoiens",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
       ]
     },
     {
@@ -105,9 +32,19 @@
       "niveau": 3
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus haute montagne du Canada ?",
-      "reponse": "Le mont Logan",
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'air de danse traditionnel joué au violon dans les veillées d'ici ?",
+      "reponse": "Un rigodon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
+      "reponse": "La dionée",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -116,8 +53,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse colombienne a chanté Provenza ?",
-      "reponse": "Karol G",
+      "question": "Quel groupe américain a chanté Mr. Brightside ?",
+      "reponse": "The Killers",
       "niveau": 3,
       "ages": [
         "ados",
@@ -126,76 +63,8 @@
     },
     {
       "categorie": "Musique",
-      "question": "Combien de symphonies Beethoven a-t-il composées ?",
-      "reponse": "Neuf",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise a suivi des adolescents de 1991 à 2005 ?",
-      "reponse": "Watatatow",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle bénédiction le père de famille donnait-il aux siens le matin du 1er janvier ?",
-      "reponse": "La bénédiction paternelle",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle patineuse canadienne a gagné l'or en danse en 2018 ?",
-      "reponse": "Tessa Virtue",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle merveille antique gardait le port de Rhodes ?",
-      "reponse": "Le colosse",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel chat robot bleu vient du futur ?",
-      "reponse": "Doraemon",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle fut la première île d'exil de Napoléon ?",
-      "reponse": "L'île d'Elbe",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel inventeur italien est considéré comme le père de la radio ?",
-      "reponse": "Marconi",
+      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
+      "reponse": "La podorythmie",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -204,8 +73,37 @@
     },
     {
       "categorie": "Mots et langue",
-      "question": "Combien de temps principaux a l'indicatif ?",
-      "reponse": "Huit",
+      "question": "Masculin d'abeille ?",
+      "reponse": "Le faux bourdon",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel grand magasin canadien publiait un catalogue attendu chaque année ?",
+      "reponse": "Eaton",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de joueurs par équipe au water-polo ?",
+      "reponse": "Sept",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe de Birmingham a lancé le heavy metal ?",
+      "reponse": "Black Sabbath",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -214,8 +112,46 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on celui qui exploite une érablière ?",
-      "reponse": "Un acériculteur",
+      "question": "Quel oiseau noir aux reflets bleus envahit les champs du Québec en bandes bruyantes ?",
+      "reponse": "L'étourneau",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
+      "reponse": "Les Classels",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel duo américain à la batterie et au clavier a chanté Stressed Out ?",
+      "reponse": "Twenty One Pilots",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel camion de course rouge et bleu affronte Crusher dans une série pour enfants ?",
+      "reponse": "Blaze",
+      "niveau": 3,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle fondatrice a ouvert la première école de Ville-Marie ?",
+      "reponse": "Marguerite Bourgeoys",
       "niveau": 3,
       "ages": [
         "ados",
@@ -225,8 +161,53 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
-      "reponse": "Pierre Falardeau",
+      "question": "Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?",
+      "reponse": "Alys Robi",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel film d'animation japonais suit une fillette prisonnière d'un bain public d'esprits ?",
+      "reponse": "Le Voyage de Chihiro",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on la grosse chute qui blanchit tout en une nuit ?",
+      "reponse": "Une bordée de neige",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert meringué porte le nom d'une ballerine ?",
+      "reponse": "La pavlova",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel petit navire rapide Christophe Colomb utilisait-il pour ses voyages ?",
+      "reponse": "Une caravelle",
+      "niveau": 3
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Où se tenaient les courses de chars à Rome ?",
+      "reponse": "Le Circus Maximus",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -235,17 +216,32 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument à peau, porté en bandoulière, rythme le pas des soldats ?",
-      "reponse": "Un tambour militaire",
-      "niveau": 3
+      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
+      "reponse": "Nézet-Séguin",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Turquie ?",
+      "reponse": "Ankara",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de cour d'école fait sauter en tapant dans les mains d'un partenaire ?",
-      "reponse": "La tape-tape",
+      "question": "Quel appareil fallait-il installer sur le toit pour capter les chaînes de télé ?",
+      "reponse": "L'antenne",
       "niveau": 3,
       "ages": [
-        "enfants"
+        "adultes",
+        "aines"
       ]
     }
   ]

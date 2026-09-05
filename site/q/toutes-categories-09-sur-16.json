@@ -59,9 +59,9 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle voiture tirée par des chevaux transportait les voyageurs autrefois ?",
-      "reponse": "Une diligence",
-      "niveau": 3
+      "question": "Quel outil de bois et de fer les paysans utilisaient-ils pour retourner la terre ?",
+      "reponse": "La charrue",
+      "niveau": 2
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -76,15 +76,25 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Monnaie utilisée aux États-Unis ?",
-      "reponse": "Le dollar",
-      "niveau": 1
+      "question": "Monnaie utilisée en Suisse ?",
+      "reponse": "Le franc suisse",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle ville est surnommée la Ville lumière ?",
-      "reponse": "Paris",
-      "niveau": 1
+      "question": "Quelle ville est surnommée la Ville éternelle ?",
+      "reponse": "Rome",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture pop",

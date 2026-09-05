@@ -14,14 +14,9 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel fleuve traverse l'Allemagne et se jette à Rotterdam ?",
-      "reponse": "Le Rhin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "question": "Sur quel continent se trouve le Canada ?",
+      "reponse": "L'Amérique du Nord",
+      "niveau": 1
     },
     {
       "categorie": "Culture pop",
@@ -115,8 +110,8 @@
     },
     {
       "categorie": "Culture générale",
-      "question": "Quel filet suspendu entre deux arbres sert à se bercer ?",
-      "reponse": "Un hamac",
+      "question": "Quel jeu de société fait deviner un mot en le mimant, sans parler ni pointer ?",
+      "reponse": "Le mime",
       "niveau": 2
     },
     {
@@ -132,18 +127,20 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Comment appelle-t-on la couche de glace de plusieurs kilomètres qui couvrait le Québec il y a 20 000 ans ?",
-      "reponse": "L'inlandsis",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelait-on les soldats montés à cheval dans les armées d'autrefois ?",
+      "reponse": "La cavalerie",
+      "niveau": 2
     },
     {
       "categorie": "Sports",
       "question": "Comment appelle-t-on la personne qui surveille les baigneurs à la piscine ?",
       "reponse": "Un sauveteur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on un dessin qui représente un pays ou une ville vus d'en haut ?",
+      "reponse": "Une carte",
       "niveau": 1
     },
     {
@@ -167,12 +164,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel objet en forme de boule qui tourne montre tous les pays du monde ?",
-      "reponse": "Le globe terrestre",
-      "niveau": 1
     },
     {
       "categorie": "Cinéma et télé",

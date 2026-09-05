@@ -8,60 +8,13 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Capitale du Manitoba ?",
-      "reponse": "Winnipeg",
-      "niveau": 2,
+      "question": "Quelle mer sépare la péninsule coréenne de l'archipel nippon ?",
+      "reponse": "La mer du Japon",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays vivent les kangourous ?",
-      "reponse": "L'Australie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel canal traverse l'Amérique centrale ?",
-      "reponse": "Panama",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel est le plus grand des Grands Lacs ?",
-      "reponse": "Le lac Supérieur",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on une des sept grandes masses de terre du globe ?",
-      "reponse": "Un continent",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on le quartier bâti pour loger les athlètes pendant les Jeux ?",
-      "reponse": "Le village olympique",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la majorité de l'Amazonie ?",
-      "reponse": "Le Brésil",
-      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -75,10 +28,34 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la plus haute montagne d'Amérique du Nord ?",
-      "reponse": "Le Denali",
+      "question": "Dans quel pays se trouve la majorité de l'Amazonie ?",
+      "reponse": "Le Brésil",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle ville du Québec accueille chaque été le Festival de la poutine ?",
+      "reponse": "Drummondville",
       "niveau": 3,
       "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel océan entoure le pôle Nord ?",
+      "reponse": "L'océan Arctique",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel est le plus grand des Grands Lacs ?",
+      "reponse": "Le lac Supérieur",
+      "niveau": 2,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -96,6 +73,12 @@
     },
     {
       "categorie": "Géographie",
+      "question": "Comment appelle-t-on une langue de terre qui s'avance dans la mer ?",
+      "reponse": "Une péninsule",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
       "question": "Capitale de la Suisse ?",
       "reponse": "Berne",
       "niveau": 3,
@@ -103,6 +86,28 @@
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel lac écossais abriterait un monstre ?",
+      "reponse": "Le Loch Ness",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus haute montagne d'Amérique du Nord ?",
+      "reponse": "Le Denali",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays a un drapeau bleu, blanc et rouge à trois bandes verticales ?",
+      "reponse": "La France",
+      "niveau": 1
     },
     {
       "categorie": "Géographie",
@@ -117,15 +122,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quelle ville trouve-t-on le Golden Gate ?",
-      "reponse": "San Francisco",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel lac écossais abriterait un monstre ?",
-      "reponse": "Le Loch Ness",
-      "niveau": 1
+      "question": "Dans quelle ville trouve-t-on l'opéra aux voiles blanches ?",
+      "reponse": "Sydney",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
@@ -146,8 +150,48 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale du Chili ?",
-      "reponse": "Santiago",
+      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
+      "reponse": "L'épinette",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel point le plus au sud de la Terre est couvert de glace ?",
+      "reponse": "Le pôle Sud",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel état américain se trouvent les Everglades et la ville de Miami ?",
+      "reponse": "La Floride",
+      "niveau": 2
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays se trouve juste au sud du Canada ?",
+      "reponse": "Les États-Unis",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Nouvelle-Zélande ?",
+      "reponse": "Wellington",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel animal des Andes crache quand il est fâché ?",
+      "reponse": "Le lama",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel fleuve forme la frontière Ontario-Québec au sud ?",
+      "reponse": "L'Outaouais",
       "niveau": 2,
       "ages": [
         "ados",
@@ -157,60 +201,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle grande ville américaine abrite la statue de la Liberté ?",
-      "reponse": "New York",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on les gondoles et les gladiateurs de l'histoire ?",
-      "reponse": "L'Italie",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la petite colline de sable poussée par le vent au bord de la mer ?",
-      "reponse": "Une dune",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a pour emblème le coq ?",
-      "reponse": "La France",
+      "question": "Comment appelle-t-on le chemin de terre battue dans le bois ?",
+      "reponse": "Un sentier",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
       "question": "Capitale de l'Irlande ?",
       "reponse": "Dublin",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?",
-      "reponse": "La ville de Québec",
-      "niveau": 2
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve La Mecque ?",
-      "reponse": "Arabie saoudite",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale du Vietnam ?",
-      "reponse": "Hanoï",
       "niveau": 2,
       "ages": [
         "ados",
