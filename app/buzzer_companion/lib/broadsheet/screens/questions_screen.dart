@@ -56,6 +56,10 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   Questionnaire? _open;
   String? _openPath;
   bool _dirty = false;
+  // L'onglet ouvert. Vit ici plutôt que dans la bibliothèque : ouvrir un
+  // questionnaire puis revenir doit ramener là où on était, et un état porté
+  // par un widget détruit à l'ouverture de l'éditeur repartirait à zéro.
+  bool _surLaBanque = false;
   @override
   void initState() {
     super.initState();
@@ -225,6 +229,8 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             store: widget.store,
             banque: widget.banque,
             pourLaPartie: widget.pourLaPartie,
+            surLaBanque: _surLaBanque,
+            onOnglet: (v) => setState(() => _surLaBanque = v),
             onRetourPartie: widget.onRetourPartie,
             onNew: _newQuestionnaire,
             onOpen: _openFile,
@@ -303,13 +309,19 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
 
 // --------------------------------------------------------------- Bibliothèque
 
-// L'écran a maintenant DEUX PARTIES, et non plus deux provenances de
-// questionnaires.
+// DEUX ONGLETS, parce que ce sont deux tâches et non deux sections d'une
+// même page.
 //
-// « Personnalisé » est le dossier de l'opérateur : ses questionnaires à lui,
+// Elles étaient empilées : on descendait ses questionnaires, puis le chemin
+// du dossier, puis la banque. Personne ne fait les deux à la fois, et celui
+// qui vient consulter la banque commençait par défiler devant une section
+// vide qui ne le concernait pas. Pire, la banque a besoin de toute la hauteur
+// disponible : empilée, elle en recevait ce qui restait.
+//
+// « MES QUESTIONNAIRES » est le dossier de l'opérateur : ses fichiers à lui,
 // modifiables, jamais publiés, et les seuls qu'on mette en jeu tels quels.
-// C'est aussi le seul endroit où il peut perdre du travail, donc il passe en
-// premier.
+// C'est aussi le seul endroit où il peut perdre du travail, donc il ouvre par
+// défaut.
 //
 // LA BANQUE se consulte, ne se joue pas fichier par fichier. Elle a remplacé
 // les 283 questionnaires prédécoupés : on compose sa manche au moment de
@@ -323,6 +335,8 @@ class _Library extends StatelessWidget {
     required this.store,
     required this.banque,
     required this.pourLaPartie,
+    required this.surLaBanque,
+    required this.onOnglet,
     required this.onRetourPartie,
     required this.onNew,
     required this.onOpen,
@@ -332,56 +346,64 @@ class _Library extends StatelessWidget {
   final QuestionnaireStore store;
   final BanqueStore banque;
   final bool pourLaPartie;
+  final bool surLaBanque;
+  final ValueChanged<bool> onOnglet;
   final VoidCallback onRetourPartie;
   final VoidCallback onNew;
   final ValueChanged<QuestionnaireFile> onOpen;
   final VoidCallback onImport;
 
+  // Arrivé depuis le lancement d'une partie, on vient chercher un fichier à
+  // jouer : la banque ne se joue pas fichier par fichier, l'onglet n'aurait
+  // rien à offrir.
+  bool get _banqueVisible => !pourLaPartie && surLaBanque;
+
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Align(
-        alignment: Alignment.topLeft,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        ..._bandeauPartie(),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            ..._bandeauPartie(),
-            Row(
-              children: [
-                Text('Questions', style: BSType.buzzerNameConsole(size: 26)),
-                const SizedBox(width: BSSpace.s4),
-                _boutonPlein('Nouveau', onNew),
-                const SizedBox(width: BSSpace.s2),
-                _boutonContour('Importer', onImport),
-              ],
-            ),
-            const SizedBox(height: BSSpace.s2),
-            SizedBox(
-              width: 820,
-              child: Text(
-                'Ce que vous écrivez vous-même vit dans « $kPersonnalise », ne '
-                'part jamais en ligne, et se met en jeu tel quel. La banque, '
-                'elle, se consulte ici et se joue depuis l\'écran Partie : '
-                '« Questions au hasard » y compose une manche selon la '
-                'catégorie, la tranche d\'âge et le niveau que vous choisissez.',
-                style: BSType.body(size: 17, color: BSColors.neutral700),
+            Text('Questions', style: BSType.buzzerNameConsole(size: 26)),
+            const SizedBox(width: BSSpace.s6),
+            if (!pourLaPartie)
+              _Segmente(
+                options: const ['Mes questionnaires', 'La banque'],
+                choisi: surLaBanque ? 1 : 0,
+                onChoisir: (i) => onOnglet(i == 1),
               ),
-            ),
-            const SizedBox(height: BSSpace.s6),
-            ..._mesQuestionnaires(),
-            // Le fureteur ne s'affiche pas quand on vient chercher un
-            // questionnaire pour une partie : on est là pour choisir un
-            // fichier, pas pour lire la banque.
-            if (!pourLaPartie) ...[
-              const SizedBox(height: BSSpace.s8),
-              _FureteurBanque(banque: banque),
-            ],
-            const SizedBox(height: BSSpace.s8),
-            ..._reglages(),
           ],
         ),
-      ),
+        const SizedBox(height: BSSpace.s3),
+        Container(height: 2, color: BSColors.text),
+        const SizedBox(height: BSSpace.s4),
+        // La banque prend toute la hauteur qui reste : c'est une liste de
+        // trois mille lignes, et lui en donner une part fixe la condamnait à
+        // se lire par la fenêtre d'une enveloppe.
+        if (_banqueVisible)
+          Expanded(child: _FureteurBanque(banque: banque))
+        else
+          Expanded(
+            child: SingleChildScrollView(
+              child: Align(
+                alignment: Alignment.topLeft,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    ..._mesQuestionnaires(),
+                    const SizedBox(height: BSSpace.s8),
+                    ..._reglages(),
+                    const SizedBox(height: BSSpace.s8),
+                  ],
+                ),
+              ),
+            ),
+          ),
+      ],
     );
   }
 
@@ -396,11 +418,7 @@ class _Library extends StatelessWidget {
       Container(
         margin: const EdgeInsets.only(bottom: BSSpace.s4),
         padding: const EdgeInsets.fromLTRB(
-          BSSpace.s3,
-          BSSpace.s2,
-          BSSpace.s2,
-          BSSpace.s2,
-        ),
+            BSSpace.s3, BSSpace.s2, BSSpace.s2, BSSpace.s2),
         decoration: const BoxDecoration(
           color: BSColors.accent100,
           border: Border(top: BorderSide(color: BSColors.accent, width: 3)),
@@ -432,27 +450,28 @@ class _Library extends StatelessWidget {
     return [
       Row(
         children: [
-          Text(kPersonnalise.toUpperCase(), style: BSType.sectionKicker()),
-          const SizedBox(width: BSSpace.s3),
-          Text(
-            fichiers.isEmpty
-                ? 'aucun pour le moment'
-                : '${fichiers.length} questionnaire${fichiers.length > 1 ? 's' : ''}',
-            style: BSType.body(size: 14, color: BSColors.neutral600),
+          _boutonPlein('Nouveau', onNew),
+          const SizedBox(width: BSSpace.s2),
+          _boutonContour('Importer', onImport),
+          const SizedBox(width: BSSpace.s4),
+          Expanded(
+            child: Text(
+              fichiers.isEmpty
+                  // L'état vide dit quoi faire, et il est le seul texte
+                  // d'explication de l'onglet : une fois qu'il y a des cartes,
+                  // il n'y a plus rien à expliquer.
+                  ? 'Rien ici encore. « Nouveau » ouvre un questionnaire vide, '
+                      '« Importer » reprend un fichier reçu de quelqu\'un d\'autre.'
+                  : '${fichiers.length} questionnaire'
+                      '${fichiers.length > 1 ? 's' : ''}, à vous, jamais publiés, '
+                      'et qui se mettent en jeu tels quels.',
+              style: BSType.body(size: 16, color: BSColors.neutral600),
+            ),
           ),
         ],
       ),
-      const SizedBox(height: BSSpace.s3),
-      if (fichiers.isEmpty)
-        SizedBox(
-          width: 820,
-          child: Text(
-            'Rien ici encore. « Nouveau » ouvre un questionnaire vide, '
-            '« Importer » reprend un fichier reçu de quelqu\'un d\'autre.',
-            style: BSType.body(size: 16, color: BSColors.neutral600),
-          ),
-        )
-      else
+      if (fichiers.isNotEmpty) ...[
+        const SizedBox(height: BSSpace.s6),
         Wrap(
           spacing: BSSpace.s6,
           runSpacing: BSSpace.s6,
@@ -461,14 +480,15 @@ class _Library extends StatelessWidget {
               _QuestionnaireCard(file: f, onTap: () => onOpen(f)),
           ],
         ),
+      ],
     ];
   }
 
   List<Widget> _reglages() {
     return [
       Container(height: 1, color: BSColors.divider),
-      const SizedBox(height: BSSpace.s4),
-      Text('MES QUESTIONNAIRES', style: BSType.sectionKicker()),
+      const SizedBox(height: BSSpace.s3),
+      Text('LE DOSSIER', style: BSType.sectionKicker()),
       const SizedBox(height: BSSpace.s1),
       SizedBox(
         width: 900,
@@ -493,9 +513,8 @@ class _Library extends StatelessWidget {
             if (store.usesCustomFolder)
               TextButton(
                 onPressed: store.useDefaultFolder,
-                style: TextButton.styleFrom(
-                  foregroundColor: BSColors.neutral600,
-                ),
+                style:
+                    TextButton.styleFrom(foregroundColor: BSColors.neutral600),
                 child: const Text('Par défaut'),
               ),
           ],
@@ -515,15 +534,15 @@ class _Library extends StatelessWidget {
   }
 
   static Widget _boutonPlein(String texte, VoidCallback onTap) => FilledButton(
-    onPressed: onTap,
-    style: FilledButton.styleFrom(
-      backgroundColor: BSColors.accent,
-      foregroundColor: BSColors.bg,
-      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-    ),
-    child: Text(texte),
-  );
+        onPressed: onTap,
+        style: FilledButton.styleFrom(
+          backgroundColor: BSColors.accent,
+          foregroundColor: BSColors.bg,
+          shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+        ),
+        child: Text(texte),
+      );
 
   static Widget _boutonContour(String texte, VoidCallback onTap) =>
       OutlinedButton(
@@ -538,22 +557,84 @@ class _Library extends StatelessWidget {
       );
 }
 
+// Le contrôle segmenté du design system (`.seg` de styles.css) : un cadre,
+// des options séparées par un filet, celle qui est retenue en aplat d'accent.
+// Sans coins arrondis, comme tout le reste de la console.
+//
+// Deux onglets ne méritent pas un TabBar : celui de Material apporte un
+// indicateur animé, un défilement et un thème à mater, pour un choix entre
+// deux mots.
+class _Segmente extends StatelessWidget {
+  const _Segmente({
+    required this.options,
+    required this.choisi,
+    required this.onChoisir,
+  });
+
+  final List<String> options;
+  final int choisi;
+  final ValueChanged<int> onChoisir;
+
+  @override
+  Widget build(BuildContext context) {
+    return DecoratedBox(
+      decoration: BoxDecoration(border: Border.all(color: BSColors.divider)),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          for (var i = 0; i < options.length; i++)
+            DecoratedBox(
+              decoration: BoxDecoration(
+                color: i == choisi ? BSColors.accent : Colors.transparent,
+                border: i == 0
+                    ? null
+                    : const Border(
+                        left: BorderSide(color: BSColors.divider),
+                      ),
+              ),
+              child: InkWell(
+                onTap: () => onChoisir(i),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 14, vertical: 9),
+                  child: Text(
+                    options[i],
+                    style: BSType.body(
+                      size: 15,
+                      color: i == choisi ? BSColors.bg : BSColors.text,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
 // ---------------------------------------------------------- Fureteur de banque
 
 // LIRE LA BANQUE, sans la jouer.
 //
-// Trois usages, et un seul écran suffit pour les trois : vérifier une
-// question dont on doute, voir ce qu'une catégorie contient avant une soirée,
-// et compter ce qu'un filtre laisse. Les mêmes critères que le tirage, dans
-// le même ordre, pour que ce qu'on lit ici corresponde à ce qu'on jouera.
+// Trois usages : vérifier une question dont on doute, voir ce qu'une
+// catégorie contient avant une soirée, et compter ce qu'un filtre laisse. Le
+// premier est de loin le plus fréquent, donc la recherche est en tête.
+//
+// LES CRITÈRES SONT EN COLONNE, à gauche, et non en rangées au-dessus de la
+// liste. Deux tentatives ont échoué avant celle-là, et pour la même raison :
+// dix-neuf critères qui se replient en rangées donnent un pavé au bord droit
+// déchiqueté, qui prend le tiers haut de l'écran et pèse plus lourd que le
+// contenu qu'il sert à trouver. Encadrés ou en toutes lettres, c'était le
+// même pavé.
+//
+// En colonne, chaque critère tient sur sa ligne, les compteurs s'alignent et
+// se lisent d'un coup d'œil, et la liste récupère toute la hauteur de la
+// fenêtre. C'est la mise en page des catalogues, pour la raison qui les y a
+// menés.
 //
 // LES RÉPONSES SONT VISIBLES. C'est une bibliothèque, pas une partie : les
-// cacher obligerait à cliquer 3684 fois pour vérifier une seule chose.
-//
-// LA LISTE EST PLAFONNÉE. Afficher 3684 lignes d'un coup fige la fenêtre
-// plusieurs secondes pour un résultat que personne ne lit jusqu'au bout ; le
-// compte total reste annoncé, et affiner le filtre est de toute façon le
-// geste utile.
+// cacher obligerait à cliquer trois mille fois pour vérifier une chose.
 class _FureteurBanque extends StatefulWidget {
   const _FureteurBanque({required this.banque});
 
@@ -564,13 +645,29 @@ class _FureteurBanque extends StatefulWidget {
 }
 
 class _FureteurBanqueState extends State<_FureteurBanque> {
-  static const _plafond = 60;
+  static const _largeurFacettes = 258.0;
+
+  // Largeurs des colonnes de droite. Fixes, donc les valeurs s'alignent d'une
+  // ligne à l'autre et se lisent en colonne plutôt qu'une par une.
+  static const _lNumero = 46.0;
+  static const _lCategorie = 180.0;
+  static const _lClassement = 190.0;
 
   final Set<String> _categories = {};
   final Set<String> _themes = {};
   final Set<Tranche> _tranches = {};
   final Set<int> _niveaux = {};
-  String _recherche = '';
+  final _recherche = TextEditingController();
+  final _defilementListe = ScrollController();
+  final _defilementFacettes = ScrollController();
+
+  @override
+  void dispose() {
+    _recherche.dispose();
+    _defilementListe.dispose();
+    _defilementFacettes.dispose();
+    super.dispose();
+  }
 
   // Sans accents et sans casse : on tape « quebec » et on trouve « Québec ».
   static String _plat(String s) => s
@@ -582,260 +679,322 @@ class _FureteurBanqueState extends State<_FureteurBanque> {
       .replaceAll(RegExp('[ùûü]'), 'u')
       .replaceAll('ç', 'c');
 
-  bool _retenue(QuizQuestion q) {
-    if (_categories.isNotEmpty || _themes.isNotEmpty) {
-      final parCategorie = _categories.contains(q.category);
-      final parTheme = q.themes.any(_themes.contains);
-      if (!parCategorie && !parTheme) return false;
-    }
-    if (_niveaux.isNotEmpty &&
-        q.niveau != null &&
-        !_niveaux.contains(q.niveau)) {
-      return false;
-    }
-    if (_tranches.isNotEmpty &&
-        q.ages.isNotEmpty &&
-        q.ages.intersection(_tranches).isEmpty) {
-      return false;
-    }
-    if (_recherche.isNotEmpty) {
-      final texte = _plat('${q.question} ${q.answer}');
-      if (!texte.contains(_plat(_recherche))) return false;
-    }
-    return true;
+  bool _retenue(QuizQuestion q) =>
+      _parCategorie(q) &&
+      _parTheme(q) &&
+      _parNiveau(q) &&
+      _parTranche(q) &&
+      _parMot(q);
+
+  bool _parCategorie(QuizQuestion q) =>
+      _categories.isEmpty || _categories.contains(q.category);
+  bool _parTheme(QuizQuestion q) =>
+      _themes.isEmpty || q.themes.any(_themes.contains);
+  // Une question qui ne se prononce pas passe : un questionnaire écrit à la
+  // main ne cote rien, et l'écarter reviendrait à le punir de son silence.
+  bool _parNiveau(QuizQuestion q) =>
+      _niveaux.isEmpty || q.niveau == null || _niveaux.contains(q.niveau);
+  bool _parTranche(QuizQuestion q) =>
+      _tranches.isEmpty ||
+      q.ages.isEmpty ||
+      q.ages.intersection(_tranches).isNotEmpty;
+  bool _parMot(QuizQuestion q) {
+    final mot = _recherche.text.trim();
+    return mot.isEmpty ||
+        _plat('${q.question} ${q.answer}').contains(_plat(mot));
   }
+
+  void _reinitialiser() => setState(() {
+        _categories.clear();
+        _themes.clear();
+        _tranches.clear();
+        _niveaux.clear();
+        _recherche.clear();
+      });
+
+  bool get _filtre =>
+      _categories.isNotEmpty ||
+      _themes.isNotEmpty ||
+      _tranches.isNotEmpty ||
+      _niveaux.isNotEmpty ||
+      _recherche.text.trim().isNotEmpty;
 
   @override
   Widget build(BuildContext context) {
     final b = widget.banque;
-    final trouvees = b.banque.questions.where(_retenue).toList();
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Row(
-          children: [
-            Text('LA BANQUE', style: BSType.sectionKicker()),
-            const SizedBox(width: BSSpace.s3),
-            // D'où vient cette liste, dit en clair. « Rien ne signale un
-            // problème » est une preuve trop faible : sans cette ligne, la
-            // seule façon de savoir que la banque vient du réseau était de
-            // remarquer l'ABSENCE d'un avertissement.
-            if (b.loading)
-              Text(
-                'Lecture de la banque...',
-                style: BSType.body(size: 14, color: BSColors.neutral600),
-              )
-            else if (b.depuisLeBuild)
-              Text(
-                "Hors ligne. Questions livrées avec l'application, "
-                'à rafraîchir dès que le réseau revient',
-                style: BSType.body(size: 14, color: BSColors.accent2_800),
-              )
-            else if (b.horsLigne)
-              Text(
-                'Hors ligne. Copie du poste, lue ${_quand(b.lastFetch)}',
-                style: BSType.body(size: 14, color: BSColors.accent2_800),
-              )
-            else if (b.total > 0)
-              Text(
-                'Lue en ligne ${_quand(b.lastFetch)} · ${b.total} questions',
-                style: BSType.body(size: 14, color: BSColors.accent700),
-              ),
-            const SizedBox(width: BSSpace.s2),
-            TextButton(
-              onPressed: b.loading ? null : b.refresh,
-              style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
-              child: const Text('Rafraîchir'),
-            ),
-          ],
+    if (b.banque.isEmpty) {
+      return Align(
+        alignment: Alignment.topLeft,
+        child: Text(
+          b.lastError ?? 'Aucune question pour le moment.',
+          style: BSType.body(size: 15, color: BSColors.accent2_800),
         ),
-        const SizedBox(height: BSSpace.s3),
-        if (b.banque.isEmpty)
-          SizedBox(
-            width: 820,
-            child: Text(
-              b.lastError ?? 'Aucune question pour le moment.',
-              style: BSType.body(size: 15, color: BSColors.accent2_800),
+      );
+    }
+    final trouvees = b.banque.questions.where(_retenue).toList();
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        SizedBox(width: _largeurFacettes, child: _facettes(b)),
+        // Un filet, pas une marge : c'est ce qui sépare deux colonnes dans
+        // toute la console.
+        Container(width: 1, color: BSColors.divider),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.only(left: BSSpace.s6),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _recherchePuisCompte(b, trouvees.length),
+                const SizedBox(height: BSSpace.s4),
+                _enteteColonnes(),
+                // LES CRITÈRES RESTENT EN PLACE, la liste seule défile. Trois
+                // mille questions veut dire défiler longtemps, et devoir
+                // remonter toute la page pour décocher une case ferait perdre
+                // sa place à chaque fois.
+                Expanded(
+                  child: trouvees.isEmpty
+                      ? Align(
+                          alignment: Alignment.topLeft,
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: BSSpace.s3),
+                            child: Text(
+                              'Aucune question ne répond à ces critères.',
+                              style: BSType.body(
+                                  size: 15, color: BSColors.neutral600),
+                            ),
+                          ),
+                        )
+                      // Construite à la demande : la liste porte les 3684
+                      // questions sans que rien ne rame, donc plus de plafond
+                      // arbitraire qui coupait à soixante et laissait deviner
+                      // le reste.
+                      : Scrollbar(
+                          controller: _defilementListe,
+                          thumbVisibility: true,
+                          child: ListView.builder(
+                            controller: _defilementListe,
+                            primary: false,
+                            padding: const EdgeInsets.only(right: BSSpace.s3),
+                            itemCount: trouvees.length,
+                            itemBuilder: (context, i) => _LigneBanque(
+                              question: trouvees[i],
+                              rang: i + 1,
+                              largeurNumero: _lNumero,
+                              largeurCategorie: _lCategorie,
+                              largeurClassement: _lClassement,
+                            ),
+                          ),
+                        ),
+                ),
+              ],
             ),
-          )
-        else ...[
-          _FiltreBanque(
-            titre: 'Dans quoi',
-            vide: _categories.isEmpty && _themes.isEmpty,
-            quandVide: 'toute la banque',
-            options: [
-              for (final f in b.banque.categories)
-                _OptionFiltre(
-                  label: '${f.emoji} ${f.nom}'.trim(),
-                  coche: _categories.contains(f.nom),
-                  onTap: () => setState(
-                    () => _categories.contains(f.nom)
-                        ? _categories.remove(f.nom)
-                        : _categories.add(f.nom),
-                  ),
-                ),
-              for (final f in b.banque.themes)
-                _OptionFiltre(
-                  label: '${f.emoji} ${f.nom}'.trim(),
-                  coche: _themes.contains(f.nom),
-                  traversant: true,
-                  onTap: () => setState(
-                    () => _themes.contains(f.nom)
-                        ? _themes.remove(f.nom)
-                        : _themes.add(f.nom),
-                  ),
-                ),
-            ],
           ),
-          const SizedBox(height: BSSpace.s2),
-          _FiltreBanque(
-            titre: 'Pour qui',
-            vide: _tranches.isEmpty,
-            quandVide: 'tout le monde',
-            options: [
-              for (final t in Tranche.values)
-                _OptionFiltre(
-                  label: kNomsTranches[t]!,
-                  coche: _tranches.contains(t),
-                  onTap: () => setState(
-                    () => _tranches.contains(t)
-                        ? _tranches.remove(t)
-                        : _tranches.add(t),
-                  ),
-                ),
-            ],
-          ),
-          const SizedBox(height: BSSpace.s2),
-          _FiltreBanque(
-            titre: 'Difficulté',
-            vide: _niveaux.isEmpty,
-            quandVide: 'tous les niveaux',
-            options: [
-              for (final n in kNomsNiveaux.keys)
-                _OptionFiltre(
-                  label: kNomsNiveaux[n]!,
-                  coche: _niveaux.contains(n),
-                  onTap: () => setState(
-                    () => _niveaux.contains(n)
-                        ? _niveaux.remove(n)
-                        : _niveaux.add(n),
-                  ),
-                ),
-            ],
-          ),
-          const SizedBox(height: BSSpace.s3),
-          Row(
-            children: [
-              SizedBox(
-                width: 84,
-                child: Text(
-                  'Contient',
-                  style: BSType.body(size: 14, color: BSColors.neutral600),
-                ),
-              ),
-              SizedBox(
-                width: 320,
-                child: TextField(
-                  onChanged: (v) => setState(() => _recherche = v.trim()),
-                  style: BSType.body(size: 15, color: BSColors.text),
-                  decoration: InputDecoration(
-                    isDense: true,
-                    hintText: 'un mot de la question ou de la réponse',
-                    hintStyle: BSType.body(
-                      size: 14,
-                      color: BSColors.neutral500,
-                    ),
-                    border: const OutlineInputBorder(
-                      borderRadius: BorderRadius.zero,
-                      borderSide: BorderSide(color: BSColors.divider),
-                    ),
-                    enabledBorder: const OutlineInputBorder(
-                      borderRadius: BorderRadius.zero,
-                      borderSide: BorderSide(color: BSColors.divider),
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(width: BSSpace.s3),
-              Text(
-                '${trouvees.length} question${trouvees.length > 1 ? 's' : ''}',
-                style: BSType.body(
-                  size: 15,
-                  color: BSColors.text,
-                ).copyWith(fontWeight: FontWeight.w600),
-              ),
-            ],
-          ),
-          const SizedBox(height: BSSpace.s4),
-          if (trouvees.isEmpty)
-            Text(
-              'Aucune question ne répond à ces critères.',
-              style: BSType.body(size: 15, color: BSColors.neutral600),
-            )
-          else ...[
-            for (final q in trouvees.take(_plafond)) _LigneBanque(q),
-            if (trouvees.length > _plafond) ...[
-              const SizedBox(height: BSSpace.s2),
-              Text(
-                'et ${trouvees.length - _plafond} autres. Affinez les critères '
-                'pour les voir.',
-                style: BSType.body(
-                  size: 14,
-                  color: BSColors.neutral600,
-                ).copyWith(fontStyle: FontStyle.italic),
-              ),
-            ],
-          ],
-        ],
+        ),
       ],
     );
   }
-}
 
-// Une question de la banque, en lecture. L'énoncé et la réponse d'abord,
-// parce que c'est ce qu'on vient vérifier ; le classement en petit à côté,
-// parce qu'on le consulte plus rarement.
-class _LigneBanque extends StatelessWidget {
-  const _LigneBanque(this.q);
+  // --------------------------------------------------------- Les facettes
 
-  final QuizQuestion q;
-
-  @override
-  Widget build(BuildContext context) {
-    final marques = [
-      q.category,
-      if (q.niveau != null) kNomsNiveaux[q.niveau]!,
-      for (final t in Tranche.values)
-        if (q.ages.contains(t)) kNomsTranches[t]!,
-      ...q.themes,
-    ];
-    return Container(
-      width: 900,
-      margin: const EdgeInsets.only(bottom: BSSpace.s3),
-      padding: const EdgeInsets.only(top: BSSpace.s2),
-      decoration: const BoxDecoration(
-        border: Border(top: BorderSide(color: BSColors.divider)),
+  // CHAQUE COMPTEUR DIT CE QUE CE CRITÈRE-LÀ DONNERAIT, SEUL. C'est la seule
+  // règle qui se tienne : un compteur qui suivrait les autres cases cochées
+  // afficherait zéro partout dès qu'on croise deux critères, et un compteur
+  // « nombre de questions portant cette étiquette » mentirait pour les
+  // niveaux et les tranches, où une question muette passe tous les filtres.
+  // Ici le chiffre à côté de « facile » est exactement ce qu'on obtient en
+  // cliquant « facile » sur une banque vierge.
+  Widget _facettes(BanqueStore b) {
+    final qs = b.banque.questions;
+    return Scrollbar(
+      controller: _defilementFacettes,
+      child: SingleChildScrollView(
+        controller: _defilementFacettes,
+        padding: const EdgeInsets.only(right: BSSpace.s3),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _SectionFacette(
+              titre: 'CATÉGORIES',
+              indice: _categories.isEmpty ? 'toutes' : null,
+              rangees: [
+                for (final f in b.banque.categories)
+                  _Facette(
+                    label: f.nom,
+                    emoji: f.emoji,
+                    compte: f.questions,
+                    coche: _categories.contains(f.nom),
+                    onTap: () => setState(() => _categories.contains(f.nom)
+                        ? _categories.remove(f.nom)
+                        : _categories.add(f.nom)),
+                  ),
+              ],
+            ),
+            _SectionFacette(
+              titre: 'THÉMATIQUES',
+              indice: _themes.isEmpty ? 'aucune' : null,
+              // Une thématique traverse les catégories : « Spécial Noël »
+              // pioche dans Bouffe, Musique et Cinéma à la fois. Le magenta
+              // dit que ce n'est pas un rangement de plus.
+              teinte: BSColors.accent2_700,
+              rangees: [
+                for (final f in b.banque.themes)
+                  _Facette(
+                    label: f.nom,
+                    emoji: f.emoji,
+                    compte: f.questions,
+                    coche: _themes.contains(f.nom),
+                    onTap: () => setState(() => _themes.contains(f.nom)
+                        ? _themes.remove(f.nom)
+                        : _themes.add(f.nom)),
+                  ),
+              ],
+            ),
+            _SectionFacette(
+              titre: 'POUR QUI',
+              indice: _tranches.isEmpty ? 'tout le monde' : null,
+              rangees: [
+                for (final t in Tranche.values)
+                  _Facette(
+                    label: kNomsTranches[t]!,
+                    compte: qs
+                        .where((q) => q.ages.isEmpty || q.ages.contains(t))
+                        .length,
+                    coche: _tranches.contains(t),
+                    onTap: () => setState(() => _tranches.contains(t)
+                        ? _tranches.remove(t)
+                        : _tranches.add(t)),
+                  ),
+              ],
+            ),
+            _SectionFacette(
+              titre: 'DIFFICULTÉ',
+              indice: _niveaux.isEmpty ? 'tous niveaux' : null,
+              rangees: [
+                for (final n in kNomsNiveaux.keys)
+                  _Facette(
+                    label: kNomsNiveaux[n]!,
+                    compte: qs
+                        .where((q) => q.niveau == null || q.niveau == n)
+                        .length,
+                    coche: _niveaux.contains(n),
+                    onTap: () => setState(() => _niveaux.contains(n)
+                        ? _niveaux.remove(n)
+                        : _niveaux.add(n)),
+                  ),
+              ],
+            ),
+            const SizedBox(height: BSSpace.s6),
+          ],
+        ),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          SelectableText(
-            q.question,
+    );
+  }
+
+  // LA RECHERCHE D'ABORD. Sur les trois raisons de venir ici, « je veux
+  // revérifier cette question-là » est de loin la plus fréquente, et elle ne
+  // passe pas par les critères.
+  //
+  // La provenance de la banque partage cette ligne au lieu d'avoir la sienne :
+  // c'est une information qu'on vérifie une fois, pas un contrôle.
+  Widget _recherchePuisCompte(BanqueStore b, int trouvees) {
+    final total = b.total;
+    return Row(
+      children: [
+        SizedBox(
+          width: 400,
+          child: TextField(
+            controller: _recherche,
+            onChanged: (_) => setState(() {}),
             style: BSType.body(size: 16, color: BSColors.text),
+            decoration: InputDecoration(
+              isDense: true,
+              contentPadding: const EdgeInsets.symmetric(
+                  horizontal: BSSpace.s2, vertical: BSSpace.s2),
+              hintText: 'Chercher un mot de la question ou de la réponse',
+              hintStyle: BSType.body(size: 16, color: BSColors.neutral500),
+              border: const OutlineInputBorder(
+                  borderRadius: BorderRadius.zero,
+                  borderSide: BorderSide(color: BSColors.divider)),
+              enabledBorder: const OutlineInputBorder(
+                  borderRadius: BorderRadius.zero,
+                  borderSide: BorderSide(color: BSColors.divider)),
+              focusedBorder: const OutlineInputBorder(
+                  borderRadius: BorderRadius.zero,
+                  borderSide: BorderSide(color: BSColors.accent, width: 2)),
+            ),
           ),
-          const SizedBox(height: 2),
-          SelectableText(
-            q.answer,
-            style: BSType.body(
-              size: 16,
-              color: BSColors.accent700,
-            ).copyWith(fontWeight: FontWeight.w600),
+        ),
+        const SizedBox(width: BSSpace.s4),
+        // Le compte vivant. C'est la seule réponse à « est-ce que mon filtre
+        // a du sens », et il doit se lire sans le chercher.
+        Text('$trouvees', style: BSType.buzzerNameConsole(size: 26)),
+        const SizedBox(width: BSSpace.s1),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 3),
+          child: Text(
+            trouvees == total ? 'questions, tout' : 'sur $total',
+            style: BSType.body(size: 15, color: BSColors.neutral600),
           ),
-          const SizedBox(height: 2),
+        ),
+        if (_filtre)
+          TextButton(
+            onPressed: _reinitialiser,
+            style: TextButton.styleFrom(foregroundColor: BSColors.neutral700),
+            child: const Text('Tout effacer'),
+          ),
+        const Spacer(),
+        // D'où vient cette liste, dit en clair. « Rien ne signale un
+        // problème » est une preuve trop faible : sans cette ligne, la seule
+        // façon de savoir que la banque vient du réseau était de remarquer
+        // l'ABSENCE d'un avertissement.
+        if (b.loading)
+          Text('Lecture de la banque...',
+              style: BSType.body(size: 14, color: BSColors.neutral600))
+        else if (b.depuisLeBuild)
           Text(
-            marques.join(' · '),
-            style: BSType.body(size: 13, color: BSColors.neutral600),
+            "Hors ligne. Questions livrées avec l'application",
+            style: BSType.body(size: 14, color: BSColors.accent2_800),
+          )
+        else if (b.horsLigne)
+          Text(
+            'Hors ligne. Copie du poste, lue ${_quand(b.lastFetch)}',
+            style: BSType.body(size: 14, color: BSColors.accent2_800),
+          )
+        else if (total > 0)
+          Text(
+            'Lue en ligne ${_quand(b.lastFetch)}',
+            style: BSType.body(size: 14, color: BSColors.neutral600),
+          ),
+        const SizedBox(width: BSSpace.s2),
+        TextButton(
+          onPressed: b.loading ? null : b.refresh,
+          style: TextButton.styleFrom(foregroundColor: BSColors.accent700),
+          child: const Text('Rafraîchir'),
+        ),
+      ],
+    );
+  }
+
+  // En-têtes de colonnes : inutiles avec cinq lignes, indispensables avec
+  // trois mille, quand « facile » et « ados » ne sont plus que deux colonnes
+  // de texte gris.
+  Widget _enteteColonnes() {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: BSSpace.s1),
+      child: Row(
+        children: [
+          const SizedBox(width: _lNumero),
+          Expanded(
+            child: Text('QUESTION ET RÉPONSE', style: BSType.sectionKicker()),
+          ),
+          SizedBox(
+            width: _lCategorie,
+            child: Text('CATÉGORIE', style: BSType.sectionKicker()),
+          ),
+          SizedBox(
+            width: _lClassement,
+            child: Text('NIVEAU ET TRANCHES', style: BSType.sectionKicker()),
           ),
         ],
       ),
@@ -843,110 +1002,245 @@ class _LigneBanque extends StatelessWidget {
   }
 }
 
-// Les mêmes pastilles que dans l'écran Partie, pour que le fureteur et le
-// tirage se lisent pareil. Dupliquées plutôt que partagées : les deux écrans
-// n'ont pas le même propriétaire, et un widget commun les aurait couplés pour
-// économiser trente lignes.
-class _OptionFiltre {
-  const _OptionFiltre({
+// Un critère de la colonne de gauche.
+class _Facette {
+  const _Facette({
     required this.label,
+    required this.compte,
     required this.coche,
     required this.onTap,
-    this.traversant = false,
+    this.emoji,
   });
   final String label;
+  final String? emoji;
+  // Ce que ce critère donnerait SEUL, et non ce qu'il reste après les autres.
+  final int compte;
   final bool coche;
   final VoidCallback onTap;
-  final bool traversant;
 }
 
-class _FiltreBanque extends StatelessWidget {
-  const _FiltreBanque({
+class _SectionFacette extends StatelessWidget {
+  const _SectionFacette({
     required this.titre,
-    required this.options,
-    required this.vide,
-    required this.quandVide,
+    required this.rangees,
+    this.indice,
+    this.teinte = BSColors.accent700,
   });
 
   final String titre;
-  final List<_OptionFiltre> options;
-  final bool vide;
-  final String quandVide;
+  final List<_Facette> rangees;
+  // Ce que « rien de coché » veut dire, montré seulement dans ce cas. Dès
+  // qu'un critère est retenu, il se voit à sa couleur et l'indice n'a plus
+  // rien à dire.
+  final String? indice;
+  final Color teinte;
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.only(top: 7),
-          child: SizedBox(
-            width: 84,
-            child: Text(
-              titre,
-              style: BSType.body(size: 14, color: BSColors.neutral600),
-            ),
-          ),
-        ),
-        Expanded(
-          child: Wrap(
-            spacing: BSSpace.s2,
-            runSpacing: BSSpace.s2,
-            crossAxisAlignment: WrapCrossAlignment.center,
+          padding: const EdgeInsets.only(
+              top: BSSpace.s4, bottom: BSSpace.s1, left: 6),
+          child: Row(
             children: [
-              for (final o in options)
-                InkWell(
-                  onTap: o.onTap,
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 7,
-                    ),
-                    decoration: BoxDecoration(
-                      color: o.coche
-                          ? (o.traversant ? BSColors.accent2 : BSColors.accent)
-                          : Colors.transparent,
-                      border: Border.all(
-                        color: o.coche
-                            ? (o.traversant
-                                  ? BSColors.accent2
-                                  : BSColors.accent)
-                            : BSColors.divider,
-                        width: o.coche ? 2 : 1,
-                      ),
-                    ),
-                    child: Text(
-                      o.label,
-                      style:
-                          BSType.body(
-                            size: 14,
-                            color: o.coche ? BSColors.bg : BSColors.text,
-                          ).copyWith(
-                            fontWeight: o.coche
-                                ? FontWeight.w600
-                                : FontWeight.w400,
-                          ),
-                    ),
-                  ),
-                ),
-              if (vide)
-                Padding(
-                  padding: const EdgeInsets.only(left: BSSpace.s2, top: 7),
-                  child: Text(
-                    quandVide,
-                    style: BSType.body(
-                      size: 13,
-                      color: BSColors.neutral500,
-                    ).copyWith(fontStyle: FontStyle.italic),
-                  ),
-                ),
+              Text(titre, style: BSType.sectionKicker()),
+              if (indice != null) ...[
+                const Spacer(),
+                Text(indice!,
+                    style: BSType.body(size: 13, color: BSColors.neutral500)
+                        .copyWith(fontStyle: FontStyle.italic)),
+              ],
             ],
           ),
         ),
+        Container(height: 1, color: BSColors.divider),
+        for (final f in rangees) _RangeeFacette(facette: f, teinte: teinte),
       ],
     );
   }
 }
+
+// Une ligne : le nom à gauche, le compte aligné à droite. Rien d'autre.
+//
+// C'est l'alignement des compteurs qui fait tout le travail : en rangées
+// repliées ils tombaient n'importe où et il fallait les lire un par un, alors
+// qu'en colonne on voit d'un coup que Culture pop et Musique mènent à 428.
+class _RangeeFacette extends StatefulWidget {
+  const _RangeeFacette({required this.facette, required this.teinte});
+
+  final _Facette facette;
+  final Color teinte;
+
+  @override
+  State<_RangeeFacette> createState() => _RangeeFacetteState();
+}
+
+class _RangeeFacetteState extends State<_RangeeFacette> {
+  bool _survole = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final f = widget.facette;
+    final couleur = f.coche ? widget.teinte : BSColors.text;
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      onEnter: (_) => setState(() => _survole = true),
+      onExit: (_) => setState(() => _survole = false),
+      child: GestureDetector(
+        onTap: f.onTap,
+        child: Container(
+          // Le survol du design system : 7 % du texte sur transparent.
+          color: _survole
+              ? BSColors.text.withValues(alpha: 0.07)
+              : Colors.transparent,
+          padding: const EdgeInsets.fromLTRB(6, 5, 6, 5),
+          child: Row(
+            children: [
+              // Le trait de sélection tient lieu de case à cocher : présent
+              // ou absent, il se repère en balayant la colonne, ce qu'une
+              // simple mise en couleur ne donne pas.
+              Container(
+                width: 3,
+                height: 15,
+                color: f.coche ? widget.teinte : Colors.transparent,
+              ),
+              const SizedBox(width: 7),
+              if (f.emoji != null && f.emoji!.isNotEmpty) ...[
+                Text(f.emoji!, style: BSType.body(size: 14)),
+                const SizedBox(width: 6),
+              ],
+              Expanded(
+                child: Text(
+                  f.label,
+                  overflow: TextOverflow.ellipsis,
+                  style: BSType.body(size: 14, color: couleur).copyWith(
+                    fontWeight: f.coche ? FontWeight.w600 : FontWeight.w400,
+                  ),
+                ),
+              ),
+              const SizedBox(width: BSSpace.s2),
+              Text(
+                '${f.compte}',
+                style: BSType.body(
+                  size: 13,
+                  color: f.coche ? widget.teinte : BSColors.neutral500,
+                ).copyWith(fontFeatures: const [FontFeature.tabularFigures()]),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// Une question de la banque, en lecture, sur une ligne de grille.
+//
+// L'ÉNONCÉ ET LA RÉPONSE À GAUCHE, le classement dans des colonnes fixes à
+// droite. Les trois lignes empilées de la première version faisaient
+// cinquante pixels chacune, coûtaient trois fois la hauteur, et ne
+// s'alignaient sur rien : pour comparer le niveau de deux questions il
+// fallait le chercher deux fois.
+//
+// La réponse est en italique magenta, comme sur l'écran public et dans la
+// revue. C'était du gras bleu, plus fort que la question, ce qui inversait
+// l'ordre de lecture : on vient ici lire des questions.
+class _LigneBanque extends StatelessWidget {
+  const _LigneBanque({
+    required this.question,
+    required this.rang,
+    required this.largeurNumero,
+    required this.largeurCategorie,
+    required this.largeurClassement,
+  });
+
+  final QuizQuestion question;
+  final int rang;
+  final double largeurNumero;
+  final double largeurCategorie;
+  final double largeurClassement;
+
+  @override
+  Widget build(BuildContext context) {
+    final q = question;
+    // Une case vide se lit comme une donnée manquante. « Tout le monde » dit
+    // la même chose que l'absence de tranches, mais le dit.
+    final tranches = q.ages.isEmpty
+        ? 'tout le monde'
+        : [
+            for (final t in Tranche.values)
+              if (q.ages.contains(t)) kNomsTranches[t]!,
+          ].join(', ');
+    final classement = [
+      if (q.niveau != null) kNomsNiveaux[q.niveau]!,
+      tranches,
+    ].join(' · ');
+
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: BSSpace.s2),
+      decoration: const BoxDecoration(
+        border: Border(bottom: BorderSide(color: BSColors.divider)),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            width: largeurNumero,
+            child: Padding(
+              padding: const EdgeInsets.only(right: BSSpace.s2),
+              child: Text(
+                '$rang',
+                textAlign: TextAlign.right,
+                style: BSType.body(size: 13, color: BSColors.neutral500)
+                    .copyWith(fontFeatures: const [FontFeature.tabularFigures()]),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.only(right: BSSpace.s3),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SelectableText(q.question,
+                      style: BSType.body(size: 16, color: BSColors.text)),
+                  SelectableText(
+                    q.answer,
+                    style: BSType.body(size: 16, color: BSColors.accent2_700)
+                        .copyWith(fontStyle: FontStyle.italic),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            width: largeurCategorie,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(q.category,
+                    style: BSType.body(size: 14, color: BSColors.neutral700)),
+                if (q.themes.isNotEmpty)
+                  Text(
+                    q.themes.join(', '),
+                    style: BSType.body(size: 13, color: BSColors.accent2_700),
+                  ),
+              ],
+            ),
+          ),
+          SizedBox(
+            width: largeurClassement,
+            child: Text(classement,
+                style: BSType.body(size: 14, color: BSColors.neutral600)),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 
 // L'heure seule quand c'est aujourd'hui, la date en plus sinon : une copie
 // hors ligne peut remonter à des semaines, et « lue à 10:39 » laisserait
