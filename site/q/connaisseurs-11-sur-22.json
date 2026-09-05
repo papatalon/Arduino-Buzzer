@@ -8,8 +8,58 @@
   "questions": [
     {
       "categorie": "Culture pop",
-      "question": "Quel revêtement de sol en rouleau couvrait les cuisines avant le plancher flottant ?",
-      "reponse": "Le prélart",
+      "question": "Quel jeu de cordelette passe de mains en mains en formant des figures géométriques ?",
+      "reponse": "Le jeu de la ficelle",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve Tombouctou ?",
+      "reponse": "Le Mali",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la personne qui installe les micros avant un concert ?",
+      "reponse": "Un technicien de son",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle chanson des Cowboys Fringants raconte un homme qui revient en 2050 ?",
+      "reponse": "Plus rien",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel rover s'est posé sur Mars en 2012 ?",
+      "reponse": "Curiosity",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelait-on le téléphone que plusieurs foyers du village devaient se partager ?",
+      "reponse": "La ligne partagée",
       "niveau": 3,
       "ages": [
         "aines"
@@ -17,8 +67,27 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
-      "reponse": "Le maelstrom",
+      "question": "Quel fleuve traverse Rome ?",
+      "reponse": "Le Tibre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel auteur québécois a écrit Le Matou ?",
+      "reponse": "Yves Beauchemin",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le marin posté en haut du mât pour surveiller l'horizon ?",
+      "reponse": "La vigie",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -36,61 +105,29 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quelle science étudie l'origine et l'histoire des mots ?",
-      "reponse": "L'étymologie",
+      "categorie": "Culture pop",
+      "question": "Quelle petite radio portative à pile a libéré la musique des salons ?",
+      "reponse": "Le transistor",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Combien de médailles d'or olympiques a Michael Phelps ?",
+      "reponse": "23",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel métal précieux conduit le mieux l'électricité ?",
-      "reponse": "L'argent",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle cantatrice grecque fut surnommée la Divina ?",
-      "reponse": "Maria Callas",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle fête de juin invite les gens d'une même rue à se rassembler ?",
-      "reponse": "La fête des voisins",
-      "niveau": 3,
-      "ages": [
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel magazine québécois publie chaque semaine les potins des vedettes ?",
-      "reponse": "Le 7 Jours",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
-      "reponse": "Bleu Jeans Bleu",
+      "question": "Quelle activité enferme un groupe devant des énigmes à résoudre avant la fin du temps ?",
+      "reponse": "Un jeu d'évasion",
       "niveau": 3,
       "ages": [
         "ados",
@@ -98,57 +135,9 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel est l'arbre emblème du Québec ?",
-      "reponse": "Le bouleau jaune",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel chanteur a popularisé le twist ?",
-      "reponse": "Chubby Checker",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte russe est un petit chausson farci ?",
-      "reponse": "Le pirojki",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel fleuve traverse Rome ?",
-      "reponse": "Le Tibre",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Qui a composé la musique de l'hymne O Canada ?",
-      "reponse": "Calixa Lavallée",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
-      "reponse": "La fin de semaine des Patriotes",
+      "question": "Quel vêtement des années 60 a scandalisé en raccourcissant brusquement ?",
+      "reponse": "La minijupe",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -156,9 +145,19 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le marin posté en haut du mât pour surveiller l'horizon ?",
-      "reponse": "La vigie",
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on la femelle du sanglier ?",
+      "reponse": "La laie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel congé de mai précède la saison du jardinage au Québec ?",
+      "reponse": "La journée nationale des patriotes",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -167,9 +166,13 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quelle danse argentine se danse joue contre joue avec une rose ?",
-      "reponse": "Le tango",
-      "niveau": 3
+      "question": "Quel concours de chant européen réunit les pays chaque printemps ?",
+      "reponse": "L'Eurovision",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -177,6 +180,23 @@
       "reponse": "Le Rubicon",
       "niveau": 3,
       "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?",
+      "reponse": "Une corde de bois",
+      "niveau": 3
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qui a créé le tableau périodique ?",
+      "reponse": "Mendeleïev",
+      "niveau": 3,
+      "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
@@ -193,9 +213,9 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel rover s'est posé sur Mars en 2012 ?",
-      "reponse": "Curiosity",
+      "categorie": "Musique",
+      "question": "Quel chanteur écossais a chanté Someone You Loved ?",
+      "reponse": "Lewis Capaldi",
       "niveau": 3,
       "ages": [
         "ados",
@@ -203,9 +223,9 @@
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle plongeuse québécoise a gagné l'argent à Tokyo ?",
-      "reponse": "Jennifer Abel",
+      "categorie": "Culture pop",
+      "question": "Quel rassemblement de percussionnistes a lieu au pied du mont Royal le dimanche ?",
+      "reponse": "Les tam-tams",
       "niveau": 3,
       "ages": [
         "ados",
@@ -214,34 +234,17 @@
     },
     {
       "categorie": "Musique",
-      "question": "Comment appelle-t-on les cinq lignes sur lesquelles on écrit les notes ?",
-      "reponse": "La portée",
+      "question": "Quelle danse argentine se danse joue contre joue avec une rose ?",
+      "reponse": "Le tango",
       "niveau": 3
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
-      "reponse": "Les Denis Drolet",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce verte argentine accompagne les grillades ?",
+      "reponse": "Le chimichurri",
       "niveau": 3,
       "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle poupée de la télé jeunesse racontait des contes en les modifiant à sa façon ?",
-      "reponse": "Fanfreluche",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle prière se récitait en famille à la radio, chaque soir, dans les années 50 ?",
-      "reponse": "Le chapelet",
-      "niveau": 3,
-      "ages": [
+        "adultes",
         "aines"
       ]
     }

@@ -7,10 +7,22 @@
   "emoji": "🌲",
   "questions": [
     {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on les chutes situées juste à côté de la ville de Québec ?",
+      "reponse": "Les chutes Montmorency",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
+      "reponse": "La Grande Ourse",
+      "niveau": 3
+    },
+    {
       "categorie": "Histoire",
-      "question": "Quel premier ministre a donné son nom à un aéroport de Montréal ?",
-      "reponse": "Trudeau",
-      "niveau": 1,
+      "question": "Quelle infirmière a fondé l'Hôtel-Dieu de Montréal ?",
+      "reponse": "Jeanne Mance",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -18,26 +30,16 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle fin de semaine de mai marque le début officieux de l'été au Québec ?",
-      "reponse": "La fin de semaine des Patriotes",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a la feuille d'érable sur son drapeau ?",
-      "reponse": "Le Canada",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelles galettes du déjeuner arrose-t-on de sirop d'érable ?",
+      "reponse": "Les crêpes",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
-      "reponse": "La podorythmie",
-      "niveau": 3,
+      "question": "Quel chanteur québécois a chanté Lindberg avec Louise Forestier ?",
+      "reponse": "Robert Charlebois",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -45,24 +47,8 @@
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle émission québécoise a des fauteuils qui pivotent ?",
-      "reponse": "La Voix",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel monologuiste québécois a écrit « Les unions, qu'ossa donne ? »",
-      "reponse": "Yvon Deschamps",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
-      "reponse": "Montréal",
+      "question": "Quel avare célèbre du terroir québécois aime son argent ?",
+      "reponse": "Séraphin",
       "niveau": 1,
       "ages": [
         "adultes",
@@ -70,36 +56,86 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle province canadienne est voisine du Québec, à l'est, avec Fredericton pour capitale ?",
-      "reponse": "Le Nouveau-Brunswick",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quelle série québécoise des années 60 portait le nom d'une rue et de ses maisons ?",
-      "reponse": "Rue des Pignons",
+      "question": "Quelle émission québécoise fait juger des numéros de danse par des maîtres ?",
+      "reponse": "Révolution",
       "niveau": 3,
       "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle télésérie québécoise suit une équipe de hockey de garage ?",
-      "reponse": "Les Boys",
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois magasiner ?",
+      "reponse": "Faire des achats",
       "niveau": 1
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois jaser ?",
-      "reponse": "Bavarder",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel déjeuner québécois trempe du pain dans l'œuf avant de le poêler ?",
+      "reponse": "Le pain doré",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel patineur de vitesse québécois a plusieurs ors olympiques ?",
+      "reponse": "Charles Hamelin",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel animateur québécois a longtemps animé Tout le monde en parle ?",
+      "reponse": "Guy A. Lepage",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle animatrice québécoise recevait des chefs dans sa cuisine à Télé-Québec ?",
-      "reponse": "Josée di Stasio",
+      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
+      "reponse": "Quétaine",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment nomme-t-on les habitants des Îles-de-la-Madeleine ?",
+      "reponse": "Les Madelinots",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel petit fruit bleu foncé se cueille dans les bois du Lac-Saint-Jean ?",
+      "reponse": "Le bleuet sauvage",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel athlète québécois d'arts martiaux est surnommé GSP ?",
+      "reponse": "Georges St-Pierre",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel animateur québécois mène une émission de musique en direct avec un band maison ?",
+      "reponse": "Normand Brathwaite",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -107,24 +143,48 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quelle chaîne de montagnes du Québec attire les skieurs au nord de Montréal ?",
-      "reponse": "Les Laurentides",
-      "niveau": 2
+      "categorie": "Culture pop",
+      "question": "Quel objet québécois fait disparaître les traits de crayon sur le papier ?",
+      "reponse": "Une efface",
+      "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quel lutteur québécois était surnommé Mad Dog ?",
-      "reponse": "Maurice Vachon",
-      "niveau": 2,
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois remplace « chat » pour une conversation écrite en ligne ?",
+      "reponse": "Le clavardage",
+      "niveau": 3,
       "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
     },
     {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle confiserie d'érable se roule sur la neige ?",
+      "reponse": "La tire",
+      "niveau": 1
+    },
+    {
       "categorie": "Musique",
-      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
-      "reponse": "Bleu Jeans Bleu",
+      "question": "Quel chanteur québécois a chanté Le petit roi ?",
+      "reponse": "Jean-Pierre Ferland",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle émission jeunesse québécoise a Passe-Montagne ?",
+      "reponse": "Passe-Partout",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
+      "reponse": "Big Brother Célébrités",
       "niveau": 3,
       "ages": [
         "ados",
@@ -132,66 +192,12 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quelle bataille de 1759 a fait passer Québec aux mains des Britanniques ?",
-      "reponse": "La bataille des plaines d'Abraham",
-      "niveau": 2
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel personnage rouge et blanc à tuque se cache dans des foules dessinées ?",
-      "reponse": "Charlie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant de Montréal ?",
-      "reponse": "Un Montréalais",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boulette de patates est un plat acadien ?",
-      "reponse": "Poutine râpée",
+      "question": "Quel service de vélos en libre-service porte un nom de trois lettres à Montréal ?",
+      "reponse": "Bixi",
       "niveau": 2,
       "ages": [
         "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe québécois chante Toune d'automne ?",
-      "reponse": "Cowboys Fringants",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
-      "reponse": "Michel Louvain",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle feuille rouge orne le drapeau du Canada ?",
-      "reponse": "La feuille d'érable",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
-      "reponse": "Radio Enfer",
-      "niveau": 3,
-      "ages": [
         "adultes"
       ]
     }

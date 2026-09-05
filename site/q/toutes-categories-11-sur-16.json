@@ -7,28 +7,16 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle boule de pâte frite est saupoudrée de sucre ?",
-      "reponse": "Le beigne",
+      "categorie": "Sports",
+      "question": "Quel officiel siffle les punitions ?",
+      "reponse": "L'arbitre",
       "niveau": 1
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle percussion ronde a des cymbalettes ?",
-      "reponse": "Le tambourin",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve la ville de Venise et ses canaux ?",
-      "reponse": "L'Italie",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Qui a créé le tableau périodique ?",
-      "reponse": "Mendeleïev",
-      "niveau": 3,
+      "categorie": "Mots et langue",
+      "question": "Quelle langue ancienne a donné alpha et oméga ?",
+      "reponse": "Le grec",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -47,9 +35,65 @@
       ]
     },
     {
+      "categorie": "Mots et langue",
+      "question": "Pluriel de cheval ?",
+      "reponse": "Chevaux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve l'Acropole ?",
+      "reponse": "La Grèce",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la douce chanson qu'on chante pour endormir un bébé ?",
+      "reponse": "Une berceuse",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel minuscule oiseau peut voler en arrière ?",
+      "reponse": "Le colibri",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quelle danse des années 70 se pratiquait sous une boule miroir, en pantalon patte d'éléphant ?",
-      "reponse": "Le disco",
+      "question": "Quelle émission matinale de TVA réveille le Québec en semaine ?",
+      "reponse": "Salut Bonjour",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel petit maître Jedi vert parle à l'envers ?",
+      "reponse": "Yoda",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de l'Égypte ?",
+      "reponse": "Le Caire",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel spectacle musical français raconte Quasimodo ?",
+      "reponse": "Notre-Dame de Paris",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -63,20 +107,19 @@
       "niveau": 1
     },
     {
-      "categorie": "Géographie",
-      "question": "Langue parlée en Égypte ?",
-      "reponse": "L'arabe",
-      "niveau": 1,
+      "categorie": "Québec",
+      "question": "Quel congé de mai précède la saison du jardinage au Québec ?",
+      "reponse": "La journée nationale des patriotes",
+      "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelles espadrilles de toile montantes portent une étoile sur la cheville ?",
-      "reponse": "Les Converse",
+      "question": "Quel humoriste québécois au débit très rapide a animé de nombreux galas ?",
+      "reponse": "Louis-José Houde",
       "niveau": 2,
       "ages": [
         "ados",
@@ -85,46 +128,21 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Qui a fondé la ville de Québec en 1608 ?",
-      "reponse": "Champlain",
-      "niveau": 1
-    },
-    {
       "categorie": "Cinéma et télé",
-      "question": "Quelle journaliste aime Clark Kent ?",
-      "reponse": "Lois Lane",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel bonhomme de biscuit court dans les contes ?",
-      "reponse": "Pain d'épice",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle est la première personne du pluriel ?",
-      "reponse": "Nous",
+      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
+      "reponse": "Caillou",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Que porte-t-on pour se baigner ?",
-      "reponse": "Un maillot de bain",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel repas de fête se prend après la messe de minuit ?",
-      "reponse": "Le réveillon",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel phénomène coloré apparaît quand le soleil revient pendant la pluie ?",
-      "reponse": "L'arc-en-ciel",
-      "niveau": 1
+      "question": "Quel tournoi du grand chelem se joue à New York ?",
+      "reponse": "Le US Open",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Culture générale",
@@ -138,20 +156,37 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?",
-      "reponse": "Le Wordle",
+      "categorie": "Québec",
+      "question": "Quelles chutes près de Québec sont plus hautes que Niagara ?",
+      "reponse": "Montmorency",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle sauce verte argentine accompagne les grillades ?",
+      "reponse": "Le chimichurri",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Sports",
-      "question": "Quel gardien détient le record de victoires en carrière ?",
-      "reponse": "Martin Brodeur",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fruit rouge trempe-t-on dans le chocolat fondu ?",
+      "reponse": "La fraise au chocolat",
+      "niveau": 2
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel astre traverse le ciel en traînant une longue queue lumineuse ?",
+      "reponse": "Une comète",
+      "niveau": 2
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment surnomme-t-on les membres de l'Académie ?",
+      "reponse": "Les Immortels",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -159,27 +194,19 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel mot québécois désigne une fête ?",
-      "reponse": "Un party",
-      "niveau": 1
+      "categorie": "Culture pop",
+      "question": "Quelles figurines surprises se déballent couche par couche dans une boule ?",
+      "reponse": "Les LOL Surprise",
+      "niveau": 2,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quel instrument à quatre grosses cordes donne les notes graves d'un groupe rock ?",
-      "reponse": "La basse électrique",
-      "niveau": 2
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quel ogre vert a une femme nommée Fiona ?",
-      "reponse": "Shrek",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel est le cri du chat ?",
-      "reponse": "Le miaulement",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâte à base de tomates nappe les pizzas ?",
+      "reponse": "La sauce tomate",
       "niveau": 1
     },
     {
@@ -191,12 +218,6 @@
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat québécois cuit des haricots blancs au four ?",
-      "reponse": "Fèves au lard",
-      "niveau": 1
     }
   ]
 }

@@ -7,9 +7,29 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Musique",
-      "question": "Quel instrument à cordes indien a un très long manche ?",
-      "reponse": "Le sitar",
+      "categorie": "Géographie",
+      "question": "Quelle est la plus haute montagne du Canada ?",
+      "reponse": "Le mont Logan",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Avec quel lait fait-on la feta traditionnelle ?",
+      "reponse": "Lait de brebis",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle autoroute relie Montréal à Québec sur la rive nord ?",
+      "reponse": "L'autoroute 40",
       "niveau": 3,
       "ages": [
         "ados",
@@ -18,9 +38,9 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Qui a inventé le World Wide Web ?",
-      "reponse": "Tim Berners-Lee",
+      "categorie": "Culture pop",
+      "question": "Quel aréna a été le domicile des Canadiens de Montréal jusqu'en 1996 ?",
+      "reponse": "Le Forum",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -28,9 +48,79 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Quelle plante carnivore referme ses mâchoires sur les mouches ?",
-      "reponse": "La dionée",
+      "categorie": "Musique",
+      "question": "Quelle chanteuse acadienne a popularisé Évangéline ?",
+      "reponse": "Annie Blanchard",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel compositeur baroque a écrit les Concertos brandebourgeois ?",
+      "reponse": "Bach",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle fosse océanique est la plus profonde ?",
+      "reponse": "Les Mariannes",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
+      "reponse": "Les Plouffe",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel chanteur country québécois a chanté Mille après mille ?",
+      "reponse": "Willie Lamothe",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot pyjama ?",
+      "reponse": "Le persan",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment appelle-t-on la répétition complète faite la veille d'un spectacle ?",
+      "reponse": "La générale",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel traité de 1992 a créé l'Union européenne ?",
+      "reponse": "Maastricht",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -48,67 +138,35 @@
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel roman de Roger Lemelin suit une famille de Québec ?",
-      "reponse": "Les Plouffe",
+      "categorie": "Musique",
+      "question": "Quel groupe québécois chante en salopette de denim avec humour ?",
+      "reponse": "Bleu Jeans Bleu",
       "niveau": 3,
       "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays se trouve Petra, la cité rose ?",
-      "reponse": "La Jordanie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
-      "reponse": "Les oreilles de lapin",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
-      "reponse": "Les Classels",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit âne de dessin animé français est très curieux ?",
-      "reponse": "Trotro",
-      "niveau": 3,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel sport de cirque marche sur un fil tendu en hauteur ?",
-      "reponse": "Le funambulisme",
-      "niveau": 3,
-      "ages": [
-        "enfants",
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle planète tourne couchée sur le côté ?",
+      "reponse": "Uranus",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Histoire",
-      "question": "Quel traité de 1992 a créé l'Union européenne ?",
-      "reponse": "Maastricht",
+      "question": "Comment appelle-t-on les cent ans d'un événement qu'on souligne par une fête ?",
+      "reponse": "Un centenaire",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Qui a inventé le World Wide Web ?",
+      "reponse": "Tim Berners-Lee",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -116,9 +174,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Daft Punk répète qu'on est plus fort, meilleur et plus rapide ?",
-      "reponse": "Harder, Better, Faster, Stronger",
+      "categorie": "Culture pop",
+      "question": "Quelle série de jeux fait conduire des voitures volées dans une ville ouverte ?",
+      "reponse": "Grand Theft Auto",
       "niveau": 3,
       "ages": [
         "ados",
@@ -126,18 +184,9 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
-      "reponse": "Loft Story",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Musique",
-      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
-      "reponse": "Nézet-Séguin",
+      "question": "À quelle famille d'instruments appartient la flûte ?",
+      "reponse": "Les bois",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -145,9 +194,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Combien de symphonies Beethoven a-t-il composées ?",
-      "reponse": "Neuf",
+      "categorie": "Sports",
+      "question": "Combien de joueurs par équipe au water-polo ?",
+      "reponse": "Sept",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -156,28 +205,21 @@
     },
     {
       "categorie": "Québec",
-      "question": "Comment appelle-t-on la longue route de campagne bordée de fermes au Québec ?",
-      "reponse": "Un rang",
-      "niveau": 3
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat libanais est une purée d'aubergines fumées ?",
-      "reponse": "Baba ganouj",
+      "question": "Quelle autoroute mène de Montréal vers les Laurentides ?",
+      "reponse": "La 15",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Culture pop",
-      "question": "Dans quel jeu de société conquiert-on des territoires sur une carte du monde ?",
-      "reponse": "Le Risk",
+      "question": "Quel magasin se visitait catalogue en main, avant que la marchandise sorte de l'entrepôt ?",
+      "reponse": "Distribution aux consommateurs",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     },
@@ -192,53 +234,24 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on la répétition d'un son au début des mots ?",
-      "reponse": "Une allitération",
+      "categorie": "Culture pop",
+      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
+      "reponse": "Le REM",
       "niveau": 3,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on les cent ans d'un événement qu'on souligne par une fête ?",
-      "reponse": "Un centenaire",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
-      "reponse": "La Norvège",
-      "niveau": 3
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel duo américain à la batterie et au clavier a chanté Stressed Out ?",
-      "reponse": "Twenty One Pilots",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel effet corrige et robotise la voix d'un chanteur en studio ?",
-      "reponse": "L'autotune",
+      "question": "Quelle marque de véhicules tout-terrain a une calandre à sept fentes ?",
+      "reponse": "Jeep",
       "niveau": 3,
       "ages": [
         "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel poète québécois a écrit L'homme rapaillé ?",
-      "reponse": "Gaston Miron",
-      "niveau": 3,
-      "ages": [
+        "adultes",
         "aines"
       ]
     }

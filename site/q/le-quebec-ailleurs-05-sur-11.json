@@ -7,21 +7,63 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Quelles jeunes filles furent envoyées peupler la Nouvelle-France ?",
-      "reponse": "Filles du Roy",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel fromage québécois fait « scouic scouic » sous la dent ?",
+      "reponse": "Le fromage en grains",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle télésérie québécoise raconte Séraphin Poudrier ?",
+      "reponse": "Les Belles Histoires",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Quel pilote québécois a donné son nom au circuit de Montréal ?",
-      "reponse": "Gilles Villeneuve",
+      "question": "Dans quelle ville ont eu lieu les JO d'été de 1976 ?",
+      "reponse": "Montréal",
       "niveau": 1,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "De quel arbre tire-t-on la sève qui devient du sirop au printemps ?",
+      "reponse": "L'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelles pièces de bois claque-t-on entre les doigts au Québec ?",
+      "reponse": "Les cuillères",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne éducative appartient au gouvernement du Québec ?",
+      "reponse": "Télé-Québec",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série animée québécoise suit un garçon chauve de 4 ans ?",
+      "reponse": "Caillou",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
+      "reponse": "Un divulgâcheur",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",
@@ -30,25 +72,20 @@
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu garnit les muffins et les tartes au Québec ?",
-      "reponse": "Le bleuet",
+      "question": "Quel plat de frites disparaît sous le fromage et la sauce brune ?",
+      "reponse": "La poutine",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel mot québécois qualifie ce qui est de mauvais goût mais attachant ?",
-      "reponse": "Quétaine",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on le décalage d'heure entre Montréal et Paris ?",
+      "reponse": "Le décalage horaire",
+      "niveau": 3
     },
     {
       "categorie": "Musique",
-      "question": "Quelle chanteuse québécoise a raflé les Junos avec l'album Phoenix ?",
-      "reponse": "Charlotte Cardin",
+      "question": "Quelle autrice-compositrice québécoise porte un nom de scène commençant par Klô ?",
+      "reponse": "Klô Pelgag",
       "niveau": 3,
       "ages": [
         "ados",
@@ -56,27 +93,73 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Comment appelait-on la colonie française en Amérique du Nord ?",
-      "reponse": "La Nouvelle-France",
+      "categorie": "Cinéma et télé",
+      "question": "Quel groupe québécois a parodié les années 80 à la télé ?",
+      "reponse": "RBO",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu télévisé québécois demande de repérer celui qui ment ?",
+      "reponse": "Le Tricheur",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie le mot québécois jaser ?",
+      "reponse": "Bavarder",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Comment appelle-t-on au Québec la coupe de cheveux courte devant et longue derrière ?",
+      "reponse": "La coupe Longueuil",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel magazine québécois de cuisine et de décoration porte un nom d'encouragement ?",
+      "reponse": "Coup de Pouce",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
+      "reponse": "La Bolduc",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quels trois étages composent le pâté chinois ?",
+      "reponse": "Bœuf maïs patates",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Combien de coupes Stanley pour les Canadiens de Montréal ?",
-      "reponse": "24",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série québécoise suivait une famille qui vivait de combines et d'aide sociale ?",
-      "reponse": "Les Bougon",
-      "niveau": 2,
+      "question": "Quel stade accueillait les Expos ?",
+      "reponse": "Stade olympique",
+      "niveau": 1,
       "ages": [
         "adultes",
         "aines"
@@ -84,68 +167,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la capitale de la province de Québec ?",
-      "reponse": "La ville de Québec",
-      "niveau": 1
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quelle tartinade blanche accompagne le bagel ?",
-      "reponse": "Fromage à la crème",
+      "question": "Quel océan sépare le Québec de l'Europe ?",
+      "reponse": "L'océan Atlantique",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe folklorique québécois a une bottine dans son nom ?",
-      "reponse": "La Bottine Souriante",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle plage du Maine est la destination classique des vacances québécoises ?",
-      "reponse": "Old Orchard",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
-      "reponse": "Cracké",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle est la plus grande ville du Québec ?",
-      "reponse": "Montréal",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois achaler ?",
-      "reponse": "Déranger",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle émission jeunesse québécoise a Passe-Montagne ?",
-      "reponse": "Passe-Partout",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel concours de chant québécois lance des carrières depuis 2003 ?",
-      "reponse": "Star Académie",
+      "question": "Quelle chanson de Céline Dion ouvre par une flûte irlandaise ?",
+      "reponse": "My Heart Will Go On",
       "niveau": 2,
       "ages": [
         "ados",
@@ -155,44 +184,19 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel duo d'actrices québécoises menait la série Moi et l'autre ?",
-      "reponse": "Dominique Michel et Denise Filiatrault",
-      "niveau": 3,
+      "question": "Quelle marque de croustilles québécoise répète deux fois la même syllabe ?",
+      "reponse": "Yum Yum",
+      "niveau": 2,
       "ages": [
+        "ados",
+        "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quelle constellation en forme de casserole se repère dans le ciel du Québec ?",
-      "reponse": "La Grande Ourse",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle fleur bleue orne le drapeau du Québec ?",
-      "reponse": "La fleur de lys",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel humoriste québécois jouait le concierge Symphorien ?",
-      "reponse": "Gilles Latulippe",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie le mot québécois magasiner ?",
-      "reponse": "Faire des achats",
-      "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle confiserie d'érable se roule sur la neige ?",
-      "reponse": "La tire",
+      "question": "Quel repas se prend le soir au Québec ?",
+      "reponse": "Le souper",
       "niveau": 1
     }
   ]

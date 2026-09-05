@@ -7,6 +7,165 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on une langue de terre qui s'avance dans la mer ?",
+      "reponse": "Une péninsule",
+      "niveau": 3
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel chat robot bleu vient du futur ?",
+      "reponse": "Doraemon",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
+      "reponse": "Mariana Mazza",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel réalisateur québécois a créé le personnage d'Elvis Gratton ?",
+      "reponse": "Pierre Falardeau",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Qui collectionne les pièces de monnaie ?",
+      "reponse": "Un numismate",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?",
+      "reponse": "La lessiveuse à tordeur",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve Petra, la cité rose ?",
+      "reponse": "La Jordanie",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle danse traditionnelle québécoise se danse à quatre couples sur les appels d'un câlleur ?",
+      "reponse": "Le set carré",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle fut la première île d'exil de Napoléon ?",
+      "reponse": "L'île d'Elbe",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
+      "reponse": "Un divulgâcheur",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
+      "reponse": "Une joute",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays se trouve le Machu Picchu, cité perdue des Incas ?",
+      "reponse": "Le Pérou",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel rappeur américain tatoué au visage a chanté Circles ?",
+      "reponse": "Post Malone",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel papillon est l'insecte emblème du Québec ?",
+      "reponse": "L'amiral",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel appareil enregistrait la musique sur une bande dans les années 80 ?",
+      "reponse": "Une cassette",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle pédale du piano prolonge les notes après qu'on a levé les doigts ?",
+      "reponse": "La pédale forte",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle case horaire de Radio-Canada présentait des grands spectacles le dimanche ?",
+      "reponse": "Les Beaux Dimanches",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
       "categorie": "Histoire",
       "question": "Quel mur antique protégeait l'Angleterre romaine ?",
       "reponse": "Mur d'Hadrien",
@@ -28,90 +187,17 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel imitateur québécois a chanté en enchaînant des dizaines de voix célèbres ?",
-      "reponse": "André-Philippe Gagnon",
+      "question": "Quel comédien québécois incarnait Basile Lebrun dans Cré Basile ?",
+      "reponse": "Olivier Guimond",
       "niveau": 3,
       "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série de films enferme des adolescents dans un dédale aux murs mouvants ?",
-      "reponse": "Le Labyrinthe",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle fut la première île d'exil de Napoléon ?",
-      "reponse": "L'île d'Elbe",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel petit boîtier rond de poche contient une maison miniature ?",
-      "reponse": "Le Polly Pocket",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel accessoire rembourré élargissait les épaules des vestons dans les années 80 ?",
-      "reponse": "L'épaulette",
-      "niveau": 3,
-      "ages": [
-        "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Sports",
-      "question": "Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?",
-      "reponse": "Un tir de barrage",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la voix masculine aiguë des grands airs d'opéra ?",
-      "reponse": "Le ténor",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel genre musical africain aux rythmes chaloupés s'est imposé mondialement ?",
-      "reponse": "L'afrobeat",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quelle figure de style exagère volontairement ?",
-      "reponse": "L'hyperbole",
+      "question": "Quel coureur éthiopien a gagné le marathon pieds nus ?",
+      "reponse": "Abebe Bikila",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -130,43 +216,14 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quelle baie nordique québécoise parfume gins et confitures ?",
-      "reponse": "La chicoutai",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel arbre couvre les immenses forêts du nord du Québec ?",
-      "reponse": "L'épinette",
+      "question": "Quel petit rongeur rayé du Québec remplit ses joues de graines ?",
+      "reponse": "Le suisse",
       "niveau": 3
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument électronique se joue en frappant des pastilles sensibles ?",
-      "reponse": "Le pad",
-      "niveau": 3,
-      "ages": [
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quelle merveille antique se trouvait à Babylone ?",
-      "reponse": "Jardins suspendus",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle émission jeunesse de Radio-Canada, animée par Monsieur Surprise, a lancé Fanfreluche et Sol ?",
-      "reponse": "La Boîte à surprise",
+      "question": "Quel chanteur a popularisé le twist ?",
+      "reponse": "Chubby Checker",
       "niveau": 3,
       "ages": [
         "aines"
@@ -174,72 +231,12 @@
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Comment mesure-t-on la force des ouragans ?",
-      "reponse": "Saffir-Simpson",
+      "question": "Combien de cœurs possède un ver de terre ?",
+      "reponse": "Cinq",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on une langue de terre qui s'avance dans la mer ?",
-      "reponse": "Une péninsule",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel club-école des Canadiens joue à Laval ?",
-      "reponse": "Le Rocket",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle série de HBO suit une famille qui se déchire pour un empire médiatique ?",
-      "reponse": "Succession",
-      "niveau": 3,
-      "ages": [
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le combat à cheval, lance en main, entre deux chevaliers ?",
-      "reponse": "Une joute",
-      "niveau": 3
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel grand magasin canadien publiait un catalogue attendu chaque année ?",
-      "reponse": "Eaton",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on la personne qui règle le son pendant un spectacle ?",
-      "reponse": "Le sonorisateur",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanson de Toto porte le nom d'un continent ?",
-      "reponse": "Africa",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
       ]
     }
   ]

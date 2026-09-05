@@ -7,54 +7,53 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel plat coréen mélange riz, légumes et œuf ?",
-      "reponse": "Le bibimbap",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle province des Prairies a Regina pour capitale ?",
-      "reponse": "La Saskatchewan",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture générale",
-      "question": "Quel objet indique l'heure grâce à une ombre ?",
-      "reponse": "Cadran solaire",
+      "categorie": "Mots et langue",
+      "question": "Que signifie être rusé comme un renard ?",
+      "reponse": "Être très malin",
       "niveau": 1
     },
     {
-      "categorie": "Sports",
-      "question": "Quelle plongeuse québécoise a gagné l'argent à Tokyo ?",
-      "reponse": "Jennifer Abel",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
+      "categorie": "Québec",
+      "question": "Quel panneau rouge à huit côtés oblige l'auto à s'immobiliser ?",
+      "reponse": "Un arrêt",
+      "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quel instrument de cuivre se joue en soufflant dans une embouchure et en pressant trois pistons ?",
-      "reponse": "La trompette",
-      "niveau": 1
+      "question": "Quel chanteur français moustachu chantait Les Champs-Élysées ?",
+      "reponse": "Joe Dassin",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelles espadrilles de planchistes affichent un damier noir et blanc ?",
+      "reponse": "Les Vans",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel groupe sanguin est donneur universel ?",
+      "reponse": "O négatif",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Cinéma et télé",
-      "question": "Quelle série américaine suit un bureau de vente de papier ?",
-      "reponse": "The Office",
-      "niveau": 1,
+      "question": "Quelle série animée japonaise oppose l'humanité à des géants derrière de hauts murs ?",
+      "reponse": "L'Attaque des Titans",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes"
@@ -62,9 +61,13 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on un très grand bâtiment de plusieurs dizaines d'étages ?",
-      "reponse": "Un gratte-ciel",
-      "niveau": 1
+      "question": "Capitale de la Nouvelle-Zélande ?",
+      "reponse": "Wellington",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Histoire",
@@ -77,27 +80,9 @@
       ]
     },
     {
-      "categorie": "Sciences et nature",
-      "question": "Comment s'appelle la maison des fourmis ?",
-      "reponse": "La fourmilière",
-      "niveau": 1
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel jeu se joue à deux avec le pouce pour immobiliser celui de l'autre ?",
-      "reponse": "La lutte de pouces",
-      "niveau": 2
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel animal terrestre est le plus lourd ?",
-      "reponse": "L'éléphant",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Comment nomme-t-on l'habitant du Saguenay ?",
-      "reponse": "Un Saguenéen",
+      "question": "Quelle mascotte orange et poilue est passée des Expos aux Canadiens ?",
+      "reponse": "Youppi",
       "niveau": 2,
       "ages": [
         "ados",
@@ -106,52 +91,43 @@
       ]
     },
     {
-      "categorie": "Culture générale",
-      "question": "Quel pantin de bois voit son nez s'allonger ?",
-      "reponse": "Pinocchio",
-      "niveau": 1
-    },
-    {
       "categorie": "Musique",
-      "question": "Quelle comptine demande à Pierrot de prêter sa plume pour écrire un mot ?",
-      "reponse": "Au clair de la lune",
+      "question": "Comment appelle-t-on une petite chanson simple que les enfants apprennent par cœur ?",
+      "reponse": "Une comptine",
       "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Comment appelle-t-on l'ensemble des chansons réunies sur un même disque ?",
-      "reponse": "Un album",
-      "niveau": 1
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel gratte-ciel de Montréal, en forme de croix, a ouvert en 1962 ?",
-      "reponse": "La Place Ville-Marie",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel premier ministre québécois fut surnommé le Cheuf ?",
-      "reponse": "Duplessis",
-      "niveau": 2,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel petit fruit bleu foncé se cueille dans les bois du Lac-Saint-Jean ?",
-      "reponse": "Le bleuet sauvage",
-      "niveau": 2
     },
     {
       "categorie": "Sports",
-      "question": "Combien de haies compte le 110 mètres haies ?",
-      "reponse": "Dix",
+      "question": "Quel jeu oppose deux équipes qui tirent chacune un bout du même câble ?",
+      "reponse": "Le tir à la corde",
+      "niveau": 1
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel réalisateur canadien a fait Titanic et Avatar ?",
+      "reponse": "James Cameron",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Comment appelle-t-on la personne qui distribue le courrier ?",
+      "reponse": "Un facteur",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture générale",
+      "question": "Quel objet indique l'heure grâce à une ombre ?",
+      "reponse": "Cadran solaire",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel lac des Cantons-de-l'Est cacherait un monstre ?",
+      "reponse": "Memphrémagog",
       "niveau": 2,
       "ages": [
         "ados",
@@ -160,9 +136,9 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Quel est le contraire de jeune ?",
-      "reponse": "Vieux",
+      "categorie": "Musique",
+      "question": "Quelle comptine demande Dormez-vous ?",
+      "reponse": "Frère Jacques",
       "niveau": 1
     },
     {
@@ -177,32 +153,62 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quel biscuit québécois à la mélasse se trempe dans le lait ?",
-      "reponse": "La galette à la mélasse",
-      "niveau": 3
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel légume vert et long se mange en cosse ou en conserve ?",
+      "reponse": "Le haricot",
+      "niveau": 2
     },
     {
       "categorie": "Sciences et nature",
-      "question": "Quel organe pompe le sang ?",
-      "reponse": "Le cœur",
+      "question": "Quel grand reptile du Nil était sacré en Égypte ?",
+      "reponse": "Le crocodile",
       "niveau": 1
     },
     {
       "categorie": "Sports",
-      "question": "Quelle couleur de carton expulse un joueur au soccer ?",
-      "reponse": "Rouge",
+      "question": "Quel sport pratiquait Michael Phelps ?",
+      "reponse": "La natation",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Sur quel engin descend-on une côte enneigée en position assise ?",
+      "reponse": "Un traîneau",
       "niveau": 1
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quel jeune partenaire aide Walter White ?",
-      "reponse": "Jesse Pinkman",
-      "niveau": 2,
+      "categorie": "Culture générale",
+      "question": "Quel pantin de bois voit son nez s'allonger ?",
+      "reponse": "Pinocchio",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle pâtisserie colorée a deux coques et une ganache ?",
+      "reponse": "Le macaron",
+      "niveau": 1,
       "ages": [
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quel est le plus grand oiseau du monde, incapable de voler ?",
+      "reponse": "L'autruche",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la grande vallée creusée par une rivière entre deux parois ?",
+      "reponse": "Un canyon",
+      "niveau": 2
     }
   ]
 }

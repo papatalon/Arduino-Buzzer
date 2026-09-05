@@ -8,15 +8,54 @@
   "questions": [
     {
       "categorie": "Géographie",
-      "question": "Dans quelle direction le soleil se couche-t-il ?",
+      "question": "Quelle mer sépare l'Europe de l'Afrique ?",
+      "reponse": "La Méditerranée",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Langue parlée en Autriche ?",
+      "reponse": "L'allemand",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Capitale de la Nouvelle-Écosse ?",
+      "reponse": "Halifax",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quelle ville trouve-t-on le Kremlin ?",
+      "reponse": "Moscou",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "De quel côté se couche le soleil ?",
       "reponse": "À l'ouest",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel est le plus petit pays du monde ?",
-      "reponse": "Le Vatican",
-      "niveau": 2,
+      "question": "Quel pays possède le mont Fuji ?",
+      "reponse": "Le Japon",
+      "niveau": 1,
       "ages": [
         "ados",
         "adultes",
@@ -25,20 +64,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on les régions chaudes situées près de l'équateur ?",
-      "reponse": "Les tropiques",
-      "niveau": 3
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on un très grand bâtiment de plusieurs dizaines d'étages ?",
-      "reponse": "Un gratte-ciel",
+      "question": "Quelle saison fait tomber les feuilles des arbres ?",
+      "reponse": "L'automne",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Capitale de l'Écosse ?",
-      "reponse": "Édimbourg",
+      "question": "Quel courant marin réchauffe l'Europe ?",
+      "reponse": "Le Gulf Stream",
       "niveau": 2,
       "ages": [
         "ados",
@@ -48,26 +81,93 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quel énorme bloc de calcaire troué se dresse dans la mer en Gaspésie ?",
-      "reponse": "Le rocher Percé",
+      "question": "Quel pays voisin du Québec se trouve juste au sud ?",
+      "reponse": "Les États-Unis",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+      "reponse": "Les Pyrénées",
+      "niveau": 1,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle est la plus petite province canadienne ?",
+      "reponse": "Prince-Édouard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la secousse qui fait trembler le sol ?",
+      "reponse": "Un tremblement de terre",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la grande forêt humide et chaude de l'Amazonie ?",
+      "reponse": "La forêt tropicale",
       "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Quel océan borde la côte ouest du Canada ?",
-      "reponse": "Le Pacifique",
+      "question": "Comment appelle-t-on l'endroit où les bateaux accostent ?",
+      "reponse": "Un port",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on la construction qui permet de traverser une rivière ?",
-      "reponse": "Un pont",
+      "question": "Capitale de l'Espagne ?",
+      "reponse": "Madrid",
       "niveau": 1
     },
     {
       "categorie": "Géographie",
-      "question": "Quel désert froid couvre une partie de la Mongolie ?",
-      "reponse": "Le Gobi",
+      "question": "Quel est le continent le plus peuplé ?",
+      "reponse": "L'Asie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel phénomène marin fait tourbillonner l'eau ?",
+      "reponse": "Le maelstrom",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Combien y a-t-il de pôles sur la Terre ?",
+      "reponse": "Deux",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays d'Amérique du Sud danse-t-on le tango ?",
+      "reponse": "L'Argentine",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle mer intérieure borde le Kazakhstan et l'Iran ?",
+      "reponse": "La Caspienne",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel pays produit le plus de café ?",
+      "reponse": "Le Brésil",
       "niveau": 2,
       "ages": [
         "ados",
@@ -88,116 +188,14 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Dans quel pays les vaches sont-elles sacrées ?",
-      "reponse": "L'Inde",
-      "niveau": 1
+      "question": "Comment appelle-t-on la vague géante déclenchée par un tremblement de terre ?",
+      "reponse": "Un tsunami",
+      "niveau": 2
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle province canadienne est voisine du Québec, à l'ouest ?",
-      "reponse": "L'Ontario",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Nouvelle-Écosse ?",
-      "reponse": "Halifax",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ville est surnommée la Ville lumière ?",
-      "reponse": "Paris",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel état américain est surnommé le Golden State ?",
-      "reponse": "La Californie",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on l'eau salée qu'on ne peut pas boire ?",
-      "reponse": "L'eau de mer",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Argentine ?",
-      "reponse": "Buenos Aires",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de la Suède ?",
-      "reponse": "Stockholm",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Capitale de l'Inde ?",
-      "reponse": "New Delhi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays a Kaboul pour capitale ?",
-      "reponse": "L'Afghanistan",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle tour de fer domine Paris ?",
-      "reponse": "La tour Eiffel",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Dans quelle ville se dresse la statue de la Liberté ?",
-      "reponse": "New York",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle ligne imaginaire sépare l'hémisphère nord de l'hémisphère sud ?",
-      "reponse": "L'équateur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel courant marin réchauffe l'Europe ?",
-      "reponse": "Le Gulf Stream",
+      "question": "Capitale de l'Australie ?",
+      "reponse": "Canberra",
       "niveau": 2,
       "ages": [
         "ados",

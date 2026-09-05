@@ -7,10 +7,41 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel joueur de hockey est surnommé La Merveille ?",
-      "reponse": "Wayne Gretzky",
-      "niveau": 1,
+      "categorie": "Cinéma et télé",
+      "question": "Comment s'appelle le meilleur ami de Fred Caillou ?",
+      "reponse": "Arthur Laroche",
+      "niveau": 2,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel aliment blanc, fait de lait, mange-t-on avec des fruits au déjeuner ?",
+      "reponse": "Le yogourt",
+      "niveau": 1
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle chaîne de montagnes traverse l'ouest canadien ?",
+      "reponse": "Les Rocheuses",
+      "niveau": 1
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel comédien incarne Elvis Gratton ?",
+      "reponse": "Julien Poulin",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel est le cri du corbeau ?",
+      "reponse": "Le croassement",
+      "niveau": 2,
       "ages": [
         "ados",
         "adultes",
@@ -39,54 +70,25 @@
       ]
     },
     {
+      "categorie": "Sports",
+      "question": "Quel sport pratique-t-on sur une planche dans les vagues ?",
+      "reponse": "Le surf",
+      "niveau": 1
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel petit pingouin de dessin animé porte une salopette et va à la garderie ?",
-      "reponse": "T'choupi",
-      "niveau": 2,
-      "ages": [
-        "enfants"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Complétez : les chaussettes de l'archiduchesse sont-elles...",
-      "reponse": "Sèches archi-sèches",
-      "niveau": 1
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on une langue de terre qui s'avance dans la mer ?",
-      "reponse": "Une péninsule",
-      "niveau": 3
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel aliment ovale pondu par la poule mange-t-on brouillé ?",
-      "reponse": "L'œuf",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Sur quel support incliné le musicien pose-t-il sa partition ?",
-      "reponse": "Un lutrin",
+      "question": "Quel commerce de village vendait autrefois aussi bien le clou que la farine ?",
+      "reponse": "Le magasin général",
       "niveau": 3,
       "ages": [
-        "ados",
-        "adultes",
         "aines"
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle baleine blanche du Saint-Laurent est protégée ?",
-      "reponse": "Le béluga",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Comment s'appelle le cinéma de l'Inde ?",
-      "reponse": "Bollywood",
-      "niveau": 2,
+      "categorie": "Musique",
+      "question": "Quelle danse traditionnelle québécoise se danse à quatre couples sur les appels d'un câlleur ?",
+      "reponse": "Le set carré",
+      "niveau": 3,
       "ages": [
         "ados",
         "adultes",

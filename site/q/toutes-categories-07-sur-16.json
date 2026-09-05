@@ -7,49 +7,33 @@
   "emoji": "🎲",
   "questions": [
     {
-      "categorie": "Histoire",
-      "question": "Comment appelle-t-on le bandit des mers qui attaquait les navires ?",
-      "reponse": "Un pirate",
-      "niveau": 1
-    },
-    {
       "categorie": "Sciences et nature",
-      "question": "Quelle particule négative tourne autour du noyau ?",
-      "reponse": "L'électron",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sports",
-      "question": "Dans quel sport utilise-t-on un fer et un vert ?",
-      "reponse": "Le golf",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel épi grillé se mange au beurre en août ?",
-      "reponse": "Le blé d'Inde",
+      "question": "Combien de poumons possède l'humain ?",
+      "reponse": "Deux",
       "niveau": 1
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle pâte à base de tomates nappe les pizzas ?",
-      "reponse": "La sauce tomate",
+      "question": "Quel oignon frit en anneaux accompagne le burger ?",
+      "reponse": "Rondelles d'oignon",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quelle noix compose le beurre le plus vendu ?",
+      "reponse": "L'arachide",
       "niveau": 1
     },
     {
       "categorie": "Québec",
-      "question": "Quelle ville québécoise est surnommée la ville aux cent clochers ?",
-      "reponse": "Montréal",
+      "question": "Quel mot québécois désigne le manteau et la salopette d'hiver des enfants ?",
+      "reponse": "L'habit de neige",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel dessert sicilien est un rouleau fourré à la ricotta ?",
+      "reponse": "Le cannoli",
       "niveau": 2,
       "ages": [
         "ados",
@@ -58,9 +42,25 @@
       ]
     },
     {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel condiment jaune accompagne le hot-dog ?",
-      "reponse": "La moutarde",
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne éducative appartient au gouvernement du Québec ?",
+      "reponse": "Télé-Québec",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Comment appelle-t-on le bandit des mers qui attaquait les navires ?",
+      "reponse": "Un pirate",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quelle carte l'arbitre de soccer montre-t-il pour avertir un joueur ?",
+      "reponse": "Un carton jaune",
       "niveau": 1
     },
     {
@@ -71,37 +71,120 @@
     },
     {
       "categorie": "Musique",
-      "question": "Quel groupe américain a chanté Believer et Radioactive ?",
-      "reponse": "Imagine Dragons",
+      "question": "Quel groupe a chanté Sweet Child O' Mine ?",
+      "reponse": "Guns N' Roses",
       "niveau": 2,
       "ages": [
-        "ados",
-        "adultes"
+        "adultes",
+        "aines"
       ]
     },
     {
-      "categorie": "Cinéma et télé",
-      "question": "Quelle série animée japonaise suit Son Goku ?",
-      "reponse": "Dragon Ball",
+      "categorie": "Géographie",
+      "question": "De quelles couleurs est le drapeau de la France ?",
+      "reponse": "Bleu blanc rouge",
+      "niveau": 1
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir le bras long ?",
+      "reponse": "Avoir de l'influence",
       "niveau": 1,
       "ages": [
-        "enfants",
         "ados",
-        "adultes"
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Sports",
+      "question": "Quel sport se joue avec un volant ?",
+      "reponse": "Le badminton",
+      "niveau": 1
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Qu'est-ce qui pousse au bout des doigts et qu'il faut couper ?",
+      "reponse": "Les ongles",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
+      "reponse": "Nézet-Séguin",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quelle station de ski des Laurentides attire les skieurs de partout ?",
+      "reponse": "Le mont Tremblant",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quel État américain chaud accueille Disney World ?",
+      "reponse": "La Floride",
+      "niveau": 1
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel organisme québécois délivre les permis de conduire et les plaques ?",
+      "reponse": "La SAAQ",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
       ]
     },
     {
       "categorie": "Mots et langue",
-      "question": "Que signifie il pleut à boire debout ?",
-      "reponse": "Il pleut très fort",
-      "niveau": 1
+      "question": "Comment nomme-t-on un mot formé des lettres d'un autre ?",
+      "reponse": "Une anagramme",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Québec",
-      "question": "Quel premier ministre québécois a lancé la Révolution tranquille ?",
-      "reponse": "Jean Lesage",
-      "niveau": 2,
+      "question": "Quelle expression québécoise signifie c'est correct ?",
+      "reponse": "C'est beau",
+      "niveau": 1,
       "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Cinéma et télé",
+      "question": "Quel méchant sorcier des Schtroumpfs a un chat ?",
+      "reponse": "Gargamel",
+      "niveau": 1,
+      "ages": [
+        "enfants",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Que signifie avoir de l'eau dans la cave ?",
+      "reponse": "Pantalon trop court",
+      "niveau": 1,
+      "ages": [
+        "adultes",
         "aines"
       ]
     },
@@ -112,100 +195,19 @@
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelles pastilles de chocolat colorées se vendent en boîte cylindrique ?",
-      "reponse": "Les Smarties",
-      "niveau": 1
-    },
-    {
-      "categorie": "Cinéma et télé",
-      "question": "Quelles petites créatures jaunes adorent les bananes ?",
-      "reponse": "Les Minions",
-      "niveau": 1
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Que signifie manger comme un cochon ?",
-      "reponse": "Manger salement",
-      "niveau": 1
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle chanson de Félix Leclerc célèbre une île ?",
-      "reponse": "Le tour de l'île",
-      "niveau": 2,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Combien de fuseaux horaires couvre le Canada ?",
-      "reponse": "Six",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Sciences et nature",
-      "question": "Quel métal précieux conduit le mieux l'électricité ?",
-      "reponse": "L'argent",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel prix récompense la musique aux États-Unis ?",
-      "reponse": "Le Grammy",
-      "niveau": 1,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel signe marque l'élision dans le mot l'arbre ?",
-      "reponse": "L'apostrophe",
-      "niveau": 1
-    },
-    {
       "categorie": "Histoire",
       "question": "Quelles expéditions religieuses visaient Jérusalem ?",
       "reponse": "Les croisades",
       "niveau": 2
     },
     {
-      "categorie": "Géographie",
-      "question": "Comment appelle-t-on la grande étendue de terre où le fermier sème son blé ?",
-      "reponse": "Un champ",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel coureur éthiopien a gagné le marathon pieds nus ?",
-      "reponse": "Abebe Bikila",
-      "niveau": 3,
+      "categorie": "Cinéma et télé",
+      "question": "Quelle série suit six amis dans un café new-yorkais ?",
+      "reponse": "Friends",
+      "niveau": 1,
       "ages": [
+        "ados",
         "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle prière se récitait en famille à la radio, chaque soir, dans les années 50 ?",
-      "reponse": "Le chapelet",
-      "niveau": 3,
-      "ages": [
         "aines"
       ]
     }

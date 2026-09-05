@@ -7,81 +7,120 @@
   "emoji": "🌲",
   "questions": [
     {
-      "categorie": "Sports",
-      "question": "Quel lanceur québécois a gagné un Cy Young ?",
-      "reponse": "Éric Gagné",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel crustacé rouge est la fierté de la Gaspésie ?",
+      "reponse": "Le homard",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe progressif québécois a fait L'Heptade ?",
+      "reponse": "Harmonium",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Quelle baie du Québec a donné son nom à un immense complexe hydroélectrique ?",
+      "reponse": "La baie James",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
+      "reponse": "Radio Enfer",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel objet orange envahit les rues de Montréal chaque été ?",
+      "reponse": "Le cône",
       "niveau": 2,
       "ages": [
+        "ados",
         "adultes",
         "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quels trois étages composent le pâté chinois ?",
-      "reponse": "Bœuf maïs patates",
+      "question": "Quelle fête québécoise célèbre le blé d'Inde ?",
+      "reponse": "L'épluchette",
       "niveau": 1
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quel objet québécois fait disparaître les traits de crayon sur le papier ?",
-      "reponse": "Une efface",
-      "niveau": 1
+      "categorie": "Musique",
+      "question": "Quelle danse traditionnelle québécoise se danse à quatre couples sur les appels d'un câlleur ?",
+      "reponse": "Le set carré",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Mots et langue",
+      "question": "Quel mot québécois désigne un enfant ?",
+      "reponse": "Un flo",
+      "niveau": 2,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle rébellion québécoise eut lieu en 1837 ?",
+      "reponse": "Les Patriotes",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
     },
     {
       "categorie": "Géographie",
-      "question": "Comment appelle-t-on les chutes situées juste à côté de la ville de Québec ?",
-      "reponse": "Les chutes Montmorency",
+      "question": "Quelle chaîne de montagnes du Québec attire les skieurs au nord de Montréal ?",
+      "reponse": "Les Laurentides",
       "niveau": 2
     },
     {
-      "categorie": "Musique",
-      "question": "Quel instrument est roi dans les rigodons québécois ?",
-      "reponse": "Le violon",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?",
-      "reponse": "Le Canadien",
+      "categorie": "Bouffe et cuisine",
+      "question": "Quel poisson fumé garnit le bagel classique ?",
+      "reponse": "Le saumon fumé",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel humoriste québécois d'origine marocaine raconte sa famille sur scène ?",
-      "reponse": "Rachid Badouri",
+      "question": "Quelle téléréalité québécoise des années 2000 enfermait des candidats dans un loft ?",
+      "reponse": "Loft Story",
       "niveau": 3,
       "ages": [
-        "ados",
         "adultes"
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Quelle boisson gazeuse a longtemps servi de surnom moqueur aux Québécois ?",
-      "reponse": "Le Pepsi",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel océan sépare le Québec de l'Europe ?",
-      "reponse": "L'océan Atlantique",
+      "categorie": "Cinéma et télé",
+      "question": "Quel duo de La Petite Vie dort debout ?",
+      "reponse": "Popa et Moman",
       "niveau": 1
     },
     {
       "categorie": "Musique",
-      "question": "Quelles pièces de bois claque-t-on entre les doigts au Québec ?",
-      "reponse": "Les cuillères",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel receveur des Expos, surnommé The Kid, est au Temple de la renommée ?",
-      "reponse": "Gary Carter",
+      "question": "Quel groupe rock québécois était mené par Gerry Boulet ?",
+      "reponse": "Offenbach",
       "niveau": 2,
       "ages": [
         "adultes",
@@ -90,18 +129,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel service de vélos en libre-service porte un nom de trois lettres à Montréal ?",
-      "reponse": "Bixi",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle comédie québécoise de science-fiction envoyait un équipage dans l'espace ?",
-      "reponse": "Dans une galaxie près de chez vous",
+      "question": "Quel duo d'humoristes québécois joue de la guitare en habit brun ?",
+      "reponse": "Les Denis Drolet",
       "niveau": 3,
       "ages": [
         "adultes"
@@ -109,21 +138,46 @@
     },
     {
       "categorie": "Géographie",
-      "question": "Quelle est la seule ville fortifiée d'Amérique du Nord au nord du Mexique ?",
+      "question": "Quelle est la capitale de la province de Québec ?",
       "reponse": "La ville de Québec",
-      "niveau": 2
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle comptine québécoise plume un oiseau, la tête, le bec et les ailes ?",
-      "reponse": "Alouette",
       "niveau": 1
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle écharpe de laine tissée aux couleurs vives est un symbole du folklore québécois ?",
-      "reponse": "La ceinture fléchée",
+      "question": "Quel personnage rouge et blanc à tuque se cache dans des foules dessinées ?",
+      "reponse": "Charlie",
+      "niveau": 1
+    },
+    {
+      "categorie": "Bouffe et cuisine",
+      "question": "Comment appelle-t-on la sève recueillie au printemps pour faire le sirop ?",
+      "reponse": "L'eau d'érable",
+      "niveau": 1
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel festival de musique se tient chaque été au parc Jean-Drapeau à Montréal ?",
+      "reponse": "Osheaga",
+      "niveau": 2,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chanteuse québécoise fut la première vedette internationale d'ici, avec Tico Tico ?",
+      "reponse": "Alys Robi",
       "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle chaîne de restaurants québécoise s'est bâtie sur le déjeuner ?",
+      "reponse": "Cora",
+      "niveau": 2,
       "ages": [
         "adultes",
         "aines"
@@ -131,8 +185,8 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quelle équipe de soccer porte le bleu, le noir et l'argent au Stade Saputo ?",
-      "reponse": "Le CF Montréal",
+      "question": "Quel circuit montréalais accueille le Grand Prix ?",
+      "reponse": "Gilles-Villeneuve",
       "niveau": 1,
       "ages": [
         "ados",
@@ -142,51 +196,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel centre récréatif de la région de Québec offre rafting et glissades d'eau ?",
-      "reponse": "Le Village Vacances Valcartier",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Bouffe et cuisine",
-      "question": "Quel dessert québécois est un gâteau arrosé de sauce sucrée ?",
-      "reponse": "Pouding chômeur",
-      "niveau": 1
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle pianiste et chanteuse québécoise se fait appeler Cœur de pirate ?",
-      "reponse": "Béatrice Martin",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Mots et langue",
-      "question": "Quel mot québécois désigne les bonbons ?",
-      "reponse": "Des nananes",
-      "niveau": 1
-    },
-    {
-      "categorie": "Sports",
-      "question": "Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?",
-      "reponse": "Alexandre Bilodeau",
-      "niveau": 2,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel véhicule sur rails circulait dans les rues de Montréal jusqu'en 1959 ?",
-      "reponse": "Le tramway",
+      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
+      "reponse": "Les Classels",
       "niveau": 3,
       "ages": [
         "aines"

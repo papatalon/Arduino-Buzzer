@@ -7,9 +7,30 @@
   "emoji": "🎓",
   "questions": [
     {
+      "categorie": "Histoire",
+      "question": "Quelle ville canadienne fut dévastée par une explosion en 1917 ?",
+      "reponse": "Halifax",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
       "categorie": "Culture pop",
-      "question": "Quel mot québécois désigne celui qui dévoile la fin d'un film ?",
-      "reponse": "Un divulgâcheur",
+      "question": "Quel bonbon acidulé se vend en poudre avec un petit bâton à tremper ?",
+      "reponse": "Le Fun Dip",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle jeune fille a écrit un journal en se cachant à Amsterdam pendant la guerre ?",
+      "reponse": "Anne Frank",
       "niveau": 3,
       "ages": [
         "ados",
@@ -18,76 +39,28 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Dans quel pays d'Afrique se trouve la grande réserve du Masai Mara ?",
-      "reponse": "Le Kenya",
-      "niveau": 3
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quelle ville se proclame capitale mondiale de l'érable ?",
-      "reponse": "Plessisville",
+      "categorie": "Culture pop",
+      "question": "Quelle antenne en forme de V se posait sur le dessus des vieux téléviseurs ?",
+      "reponse": "Les oreilles de lapin",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle est la voix féminine la plus grave ?",
-      "reponse": "L'alto (contralto)",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel roi du blues appelait sa guitare Lucille ?",
-      "reponse": "B.B. King",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Qui fut la première femme dans l'espace ?",
-      "reponse": "Valentina Terechkova",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quelle île de Montréal accueille le parc d'attractions La Ronde ?",
-      "reponse": "L'île Sainte-Hélène",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quel savant italien a affirmé que la Terre tourne autour du Soleil ?",
-      "reponse": "Galilée",
-      "niveau": 3
     },
     {
       "categorie": "Culture pop",
-      "question": "Quel jeu de cour d'école fait sauter en tapant dans les mains d'un partenaire ?",
-      "reponse": "La tape-tape",
+      "question": "Quel capitaine de la télé jeunesse racontait des histoires invraisemblables avec ses invisibles ?",
+      "reponse": "Le Capitaine Bonhomme",
       "niveau": 3,
       "ages": [
-        "enfants"
+        "aines"
       ]
     },
     {
       "categorie": "Bouffe et cuisine",
-      "question": "Quelle boisson brésilienne mélange lime et cachaça ?",
-      "reponse": "La caipirinha",
+      "question": "Quel dessert meringué porte le nom d'une ballerine ?",
+      "reponse": "La pavlova",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -95,9 +68,65 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
-      "reponse": "Le Jolly Roger",
+      "categorie": "Géographie",
+      "question": "Quel petit pays est enclavé entre France et Espagne ?",
+      "reponse": "Andorre",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe de Birmingham a lancé le heavy metal ?",
+      "reponse": "Black Sabbath",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
+      "reponse": "Cracké",
+      "niveau": 3,
+      "ages": [
+        "enfants",
+        "ados"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel ensemble de cloches sonne dans le clocher d'une église ?",
+      "reponse": "Le carillon",
+      "niveau": 3
+    },
+    {
+      "categorie": "Québec",
+      "question": "En quelle année le métro de Montréal a-t-il ouvert ?",
+      "reponse": "1966",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel chef d'orchestre québécois dirige le Met de New York ?",
+      "reponse": "Nézet-Séguin",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel parc national québécois porte le nom d'un explorateur, au nord de Québec ?",
+      "reponse": "Le parc de la Jacques-Cartier",
       "niveau": 3,
       "ages": [
         "ados",
@@ -106,17 +135,8 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Qui livrait les bouteilles de lait à la porte des maisons ?",
-      "reponse": "Le laitier",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle machine à laver essorait le linge en le passant entre deux rouleaux ?",
-      "reponse": "La lessiveuse à tordeur",
+      "question": "Quel chanteur québécois de charme faisait se pâmer les dames avec Sylvie ?",
+      "reponse": "Michel Louvain",
       "niveau": 3,
       "ages": [
         "aines"
@@ -124,8 +144,24 @@
     },
     {
       "categorie": "Sports",
-      "question": "Quel sport pratique la famille Hart de Calgary ?",
-      "reponse": "La lutte",
+      "question": "Combien de kilomètres fait un triathlon olympique à vélo ?",
+      "reponse": "40",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Comment appelle-t-on la petite colline de sable poussée par le vent au bord de la mer ?",
+      "reponse": "Une dune",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel quotidien montréalais a cessé son édition papier en 2018 pour passer à la tablette ?",
+      "reponse": "La Presse",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -142,59 +178,19 @@
       ]
     },
     {
-      "categorie": "Culture pop",
-      "question": "Où logeait le curé de la paroisse ?",
-      "reponse": "Au presbytère",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel escalier du Vieux-Québec porte un nom qui promet une chute ?",
-      "reponse": "L'escalier Casse-Cou",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel ancêtre du piano pince ses cordes au lieu de les frapper ?",
-      "reponse": "Le clavecin",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel jeu électronique rond répète une suite de couleurs et de sons à imiter ?",
-      "reponse": "Le Simon",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse américaine a chanté Espresso en 2024 ?",
-      "reponse": "Sabrina Carpenter",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
       "categorie": "Histoire",
-      "question": "Quelle ville canadienne fut dévastée par une explosion en 1917 ?",
-      "reponse": "Halifax",
+      "question": "Qui fut la première femme dans l'espace ?",
+      "reponse": "Valentina Terechkova",
+      "niveau": 3,
+      "ages": [
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel instrument de rue se joue en tournant une manivelle ?",
+      "reponse": "Un orgue de Barbarie",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -203,18 +199,29 @@
     },
     {
       "categorie": "Québec",
-      "question": "Quel congé de mai précède la saison du jardinage au Québec ?",
-      "reponse": "La journée nationale des patriotes",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
+      "question": "Comment appelle-t-on la longue route de campagne bordée de fermes au Québec ?",
+      "reponse": "Un rang",
+      "niveau": 3
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle gomme rose se vendait avec une petite bande dessinée dans l'emballage ?",
-      "reponse": "La Bazooka",
+      "question": "Quelle série jeunesse québécoise se passait dans la radio étudiante d'une école ?",
+      "reponse": "Radio Enfer",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quel savant italien a affirmé que la Terre tourne autour du Soleil ?",
+      "reponse": "Galilée",
+      "niveau": 3
+    },
+    {
+      "categorie": "Musique",
+      "question": "Comment nomme-t-on le rythme frappé du pied au Québec ?",
+      "reponse": "La podorythmie",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -223,19 +230,8 @@
     },
     {
       "categorie": "Histoire",
-      "question": "Quelle jeune fille a écrit un journal en se cachant à Amsterdam pendant la guerre ?",
-      "reponse": "Anne Frank",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel groupe américain a chanté Mr. Brightside ?",
-      "reponse": "The Killers",
+      "question": "Quel drapeau noir à tête de mort les pirates hissaient-ils ?",
+      "reponse": "Le Jolly Roger",
       "niveau": 3,
       "ages": [
         "ados",

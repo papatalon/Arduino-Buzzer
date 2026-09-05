@@ -449,6 +449,8 @@ void main(List<String> args) {
   // seul questionnaire, c'est exactement ce que le plafond interdit. Les 2000
   // sont là quand même, réparties dans les manches par catégorie.
 
+  _controleQualite(all);
+
   _writeCatalogue();
   _writeVersion();
   _writeRevue(all);
@@ -1703,6 +1705,56 @@ Set<String> _motsMarquants(Entry e) => {
           .split(RegExp('[^a-z0-9]+'))
           .where((m) => m.length >= 4),
     };
+
+// Deux défauts que la relecture ne voit pas mais qu'une machine attrape, sur
+// les versions SERVIES : la réponse déjà donnée dans l'énoncé, et deux
+// questions différentes qui attendent la même réponse. Ni l'un ni l'autre
+// n'arrête la génération : les cas légitimes existent (« la vitamine C »
+// quand la question dit vitamine, « Quatre » qui répond à vingt questions
+// sans rapport). Mais le compte s'affiche à chaque passage, et une hausse
+// veut dire qu'un lot est entré sans être contrôlé.
+void _controleQualite(List<Entry> all) {
+  // Les mots outils ne comptent pas : « appelle-t-on » se retrouve partout.
+  const vides = {
+    'le', 'la', 'les', 'un', 'une', 'des', 'du', 'de', 'au', 'aux', 'dans',
+    'sur', 'sous', 'pour', 'par', 'avec', 'sans', 'que', 'qui', 'quoi', 'dont',
+    'est', 'sont', 'fait', 'font', 'quel', 'quelle', 'quels', 'quelles',
+    'comment', 'combien', 'quand', 'pourquoi', 'appelle', 'nomme', 'deux',
+    'trois', 'plus', 'tout', 'toute', 'tous', 'toutes', 'son', 'sa', 'ses',
+  };
+  String plat(String s) => _strip(s)
+      .toLowerCase()
+      .replaceAll(RegExp(r"[^a-z0-9 ]"), ' ')
+      .replaceAll(RegExp(r'\s+'), ' ')
+      .trim();
+
+  var echos = 0;
+  for (final e in all) {
+    final q = plat(e.question);
+    final mots = plat(e.answer)
+        .split(' ')
+        .where((m) => m.length > 3 && !vides.contains(m))
+        .toList();
+    if (mots.isEmpty) continue;
+    // La racine plutôt que le mot entier : « voiles » doit attraper « voile ».
+    final donnes = mots.where((m) {
+      final racine = m.substring(0, max(5, m.length - 2).clamp(0, m.length));
+      return q.contains(racine);
+    }).length;
+    if (donnes == mots.length) echos++;
+  }
+
+  final parReponse = <String, int>{};
+  for (final e in all) {
+    final k = plat(e.answer)
+        .replaceFirst(RegExp(r'^(le|la|les|un|une|des|du|de la) '), '');
+    parReponse[k] = (parReponse[k] ?? 0) + 1;
+  }
+  final collisions = parReponse.values.where((n) => n > 1).length;
+
+  stdout.writeln('Contrôle : $echos réponses déjà dans leur question, '
+      '$collisions réponses partagées par plusieurs questions.');
+}
 
 // La clé d'unicité d'une question : l'énoncé sans accents, sans casse, sans
 // ponctuation finale. La même règle que l'app applique pour ne pas reposer

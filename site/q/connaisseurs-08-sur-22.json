@@ -7,49 +7,19 @@
   "emoji": "🎓",
   "questions": [
     {
-      "categorie": "Culture pop",
-      "question": "Quelle case horaire de Radio-Canada présentait des grands spectacles le dimanche ?",
-      "reponse": "Les Beaux Dimanches",
+      "categorie": "Musique",
+      "question": "Quel genre de musique douce et répétitive sert de fond sonore pour étudier ?",
+      "reponse": "Le lo-fi",
       "niveau": 3,
       "ages": [
-        "aines"
+        "ados"
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Quelle comptine fait répondre le hibou au coucou, du haut de son grand chêne ?",
-      "reponse": "Dans la forêt lointaine",
+      "categorie": "Histoire",
+      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
+      "reponse": "Le parchemin",
       "niveau": 3
-    },
-    {
-      "categorie": "Sports",
-      "question": "Combien de kilomètres fait un triathlon olympique à vélo ?",
-      "reponse": "40",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Géographie",
-      "question": "Quel pays entoure complètement le Lesotho ?",
-      "reponse": "Afrique du Sud",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quelle chanteuse colombienne a chanté Provenza ?",
-      "reponse": "Karol G",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
     },
     {
       "categorie": "Bouffe et cuisine",
@@ -62,15 +32,9 @@
       ]
     },
     {
-      "categorie": "Histoire",
-      "question": "Sur quelle peau d'animal préparée écrivait-on au Moyen Âge ?",
-      "reponse": "Le parchemin",
-      "niveau": 3
-    },
-    {
       "categorie": "Musique",
-      "question": "Combien de touches noires compte un piano ?",
-      "reponse": "36",
+      "question": "Quel opéra de Bizet se déroule en Espagne ?",
+      "reponse": "Carmen",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -78,12 +42,31 @@
       ]
     },
     {
-      "categorie": "Géographie",
-      "question": "Quel pays nordique a un drapeau bleu et blanc croisé ?",
-      "reponse": "La Finlande",
+      "categorie": "Mots et langue",
+      "question": "De quelle langue vient le mot robot ?",
+      "reponse": "Le tchèque",
       "niveau": 3,
       "ages": [
         "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Comment appelle-t-on l'aide financière que l'État avance aux étudiants ?",
+      "reponse": "Les prêts et bourses",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel groupe québécois des années 60 se produisait tout habillé de blanc ?",
+      "reponse": "Les Classels",
+      "niveau": 3,
+      "ages": [
         "aines"
       ]
     },
@@ -98,64 +81,48 @@
       ]
     },
     {
-      "categorie": "Mots et langue",
-      "question": "Qui collectionne les pièces de monnaie ?",
-      "reponse": "Un numismate",
-      "niveau": 3,
-      "ages": [
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Musique",
-      "question": "Quel petit instrument à cordes italien se pince avec un médiator ?",
-      "reponse": "La mandoline",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Culture pop",
-      "question": "Quel mouvement musical des années 60 faisait crier les jeunes Québécois ?",
-      "reponse": "Le yéyé",
-      "niveau": 3,
-      "ages": [
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelle autruche maladroite est la vedette d'une série d'animation québécoise sans paroles ?",
-      "reponse": "Cracké",
-      "niveau": 3,
-      "ages": [
-        "enfants",
-        "ados"
-      ]
-    },
-    {
-      "categorie": "Québec",
-      "question": "Quel grand rendez-vous de novembre réunit éditeurs et auteurs au Palais des congrès de Montréal ?",
-      "reponse": "Le Salon du livre",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quelles poupées à grosse tête et lèvres pulpeuses ont concurrencé Barbie ?",
-      "reponse": "Les Bratz",
+      "question": "Quelle téléréalité québécoise enferme des célébrités dans une maison sous caméras ?",
+      "reponse": "Big Brother Célébrités",
       "niveau": 3,
       "ages": [
         "ados",
         "adultes"
+      ]
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel appareil branché à la ligne téléphonique faisait des bruits stridents pour se connecter ?",
+      "reponse": "Le modem",
+      "niveau": 3,
+      "ages": [
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Québec",
+      "question": "Quel petit fruit rouge se cueille dans les tourbières du Québec l'automne ?",
+      "reponse": "La canneberge",
+      "niveau": 3
+    },
+    {
+      "categorie": "Culture pop",
+      "question": "Quel jeu de cour d'école fait sauter en tapant dans les mains d'un partenaire ?",
+      "reponse": "La tape-tape",
+      "niveau": 3,
+      "ages": [
+        "enfants"
+      ]
+    },
+    {
+      "categorie": "Sciences et nature",
+      "question": "Quelle échelle mesure la dureté des minéraux ?",
+      "reponse": "Mohs",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
       ]
     },
     {
@@ -169,36 +136,9 @@
       ]
     },
     {
-      "categorie": "Musique",
-      "question": "Que fait un musicien qui règle son instrument avant de jouer ?",
-      "reponse": "Accorder",
-      "niveau": 3
-    },
-    {
-      "categorie": "Histoire",
-      "question": "Quelle invention chinoise a remplacé le parchemin pour écrire ?",
-      "reponse": "Le papier",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes"
-      ]
-    },
-    {
-      "categorie": "Culture pop",
-      "question": "Quel train léger automatisé relie la Rive-Sud au centre-ville de Montréal ?",
-      "reponse": "Le REM",
-      "niveau": 3,
-      "ages": [
-        "ados",
-        "adultes",
-        "aines"
-      ]
-    },
-    {
       "categorie": "Géographie",
-      "question": "Quel long fleuve traverse la Chine ?",
-      "reponse": "Le Yangtsé",
+      "question": "Quel pays entoure complètement le Lesotho ?",
+      "reponse": "Afrique du Sud",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -217,8 +157,28 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle humoriste québécoise a fait de son franc-parler sa marque de commerce ?",
-      "reponse": "Mariana Mazza",
+      "question": "Quelle chanteuse québécoise des années 30 est connue pour ses turlutes ?",
+      "reponse": "La Bolduc",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel objet à ressort le professeur de musique frappe-t-il pour donner le la ?",
+      "reponse": "Un diapason",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes",
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quel groupe italien a gagné l'Eurovision en 2021 en jouant du rock ?",
+      "reponse": "Måneskin",
       "niveau": 3,
       "ages": [
         "ados",
@@ -227,8 +187,17 @@
     },
     {
       "categorie": "Culture pop",
-      "question": "Quelle collecte de dons a lieu au Québec avant Noël, pour les paniers de Noël ?",
-      "reponse": "La guignolée",
+      "question": "Quel magazine hebdomadaire publiait les horaires de télévision au Québec ?",
+      "reponse": "Le TV Hebdo",
+      "niveau": 3,
+      "ages": [
+        "aines"
+      ]
+    },
+    {
+      "categorie": "Musique",
+      "question": "Quelle cantatrice grecque fut surnommée la Divina ?",
+      "reponse": "Maria Callas",
       "niveau": 3,
       "ages": [
         "adultes",
@@ -236,14 +205,36 @@
       ]
     },
     {
-      "categorie": "Québec",
-      "question": "Quelle est la fleur emblème du Québec ?",
-      "reponse": "Iris versicolore",
+      "categorie": "Sports",
+      "question": "Combien de points vaut la bille noire au snooker ?",
+      "reponse": "Sept",
       "niveau": 3,
       "ages": [
         "adultes",
         "aines"
       ]
+    },
+    {
+      "categorie": "Histoire",
+      "question": "Quelle invention chinoise a remplacé le parchemin pour écrire ?",
+      "reponse": "Le papier",
+      "niveau": 3,
+      "ages": [
+        "ados",
+        "adultes"
+      ]
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays trouve-t-on les fjords et les Vikings ?",
+      "reponse": "La Norvège",
+      "niveau": 3
+    },
+    {
+      "categorie": "Géographie",
+      "question": "Dans quel pays d'Afrique se trouve la grande réserve du Masai Mara ?",
+      "reponse": "Le Kenya",
+      "niveau": 3
     }
   ]
 }
