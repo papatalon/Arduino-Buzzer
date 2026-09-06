@@ -74,6 +74,29 @@ void main() {
     expect(nomLisible('035_C3PO.mp3', 34), 'C3PO');
   });
 
+  // Le client a ecoute la banque et nomme les sons en francais. Le nom voulu
+  // est donc ECRIT dans le fichier, accents compris : le nettoyage n'a plus
+  // rien a deviner, il retire le rang et rend la chaine telle quelle.
+  //
+  // Ces trois formes n'existaient nulle part avant : un accent, une
+  // ponctuation, et une capitale au milieu d'une phrase.
+  test('un nom ecrit en clair traverse le nettoyage intact', () {
+    expect(nomLisible('009_Fin période.mp3', 8), 'Fin période');
+    expect(nomLisible('012_Chèvre.mp3', 11), 'Chèvre');
+    expect(nomLisible('011_Boum!.mp3', 10), 'Boum!');
+    expect(nomLisible('030_La guerre des clans.mp3', 29), 'La guerre des clans');
+    expect(nomLisible('020_I Will win.mp3', 19), 'I Will win');
+  });
+
+  // Le piege du nom ecrit en clair : « Toot Toot! » se termine par une
+  // ponctuation, pas par un chiffre, donc la regle du numero de prise ne
+  // doit pas s'y appliquer. Et « Mario Drapeau » garde sa capitale du
+  // milieu, que seule une mise en majuscule mot par mot aurait touchee.
+  test('ni la ponctuation ni les capitales du milieu ne sont touchees', () {
+    expect(nomLisible('032_Toot Toot!.mp3', 31), 'Toot Toot!');
+    expect(nomLisible('034_Mario Drapeau.mp3', 33), 'Mario Drapeau');
+  });
+
   test('un chiffre en tete du nom survit', () {
     expect(nomLisible('018_1-wheel-of-fortune.mp3', 17), '1 wheel of fortune');
     expect(nomLisible('007_30s-countdown.mp3', 6), '30s countdown');
