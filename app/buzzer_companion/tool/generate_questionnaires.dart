@@ -1722,10 +1722,24 @@ const kThemes = <Theme>[
   //
   // LES 69 ETIQUETTES N'ONT PAS ETE JETEES : 49 etaient sur des questions de
   // sports.txt, que la thematique prend deja par absorption ; les 20 autres
-  // vivaient ailleurs (le Centre Bell et les stations de ski dans Quebec, le
-  // canal Rideau dans Geographie, le crazy carpet dans Culture pop) et
-  // portent maintenant « @ sports ». Sans ce transfert, la fusion aurait
-  // perdu vingt questions au lieu d'en gagner.
+  // vivaient ailleurs (le Centre Bell, les stations de ski, le canal Rideau,
+  // le Forum) et portent maintenant « @ sports ». Sans ce transfert, la
+  // fusion aurait perdu vingt questions au lieu d'en gagner.
+  //
+  // CINQ ONT ETE REPRISES, ET C'EST LA LECON : le transfert a d'abord ete
+  // fait « sans discussion », au motif qu'un sport d'hiver est un sport. Le
+  // client a vu le resultat a l'ecran : « motoneige, ce n'est pas un sport ».
+  // Il avait raison, et l'erreur etait de lire le NOM de la thematique qui
+  // partait au lieu de sa DEFINITION : « Sports d'hiver » disait « tout ce
+  // qui se joue sur la glace ou la neige », ce qui est plus large qu'un
+  // sport. Y vivaient la motoneige (un vehicule), la traine sauvage et la
+  // soucoupe (des objets), le fort de neige et l'ange dans la neige (des
+  // jeux d'enfants). Les cinq ont perdu « @ sports » ; la motoneige garde
+  // « @ transports », qui est sa vraie place.
+  //
+  // CE QUI RESTE DEDANS, et la regle qui a servi : un sport, un athlete, une
+  // equipe, une ligue, ou un LIEU fait pour le sport — l'arena, le Forum, le
+  // Centre Bell, les stations de ski, le canal-patinoire d'Ottawa.
   //
   // LE FILET A MOTS-CLES EST CELUI DE L'ANCIENNE THEMATIQUE, garde pour que
   // « --proposer sports » continue de trouver le sport disperse dans les

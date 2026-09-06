@@ -181,14 +181,27 @@ Québec, Géographie et Culture pop. Dans l'ordre :
 5. déplacer ses mots-clés dans la thématique cible, pour que `--proposer`
    continue de trouver le sujet dispersé.
 
-**Une fusion se juge question par question quand les deux thématiques ne se
-recouvrent pas exactement.** Un sport d'hiver est un sport : les 69
-étiquettes ont suivi sans discussion. Le végétal, non : 28 des 58 étiquettes
-hors de Sciences étaient des légumes DE RECETTE rangés dans Bouffe, et une
-manche de Sciences qui pose le cornichon du burger se fait reprendre. 34 sont
-entrées, 24 sont restées dans Bouffe sans étiquette de plante. C'est une
-perte, elle est assumée, et elle est écrite dans le code au-dessus de la
-thématique.
+**Une fusion se juge question par question, TOUJOURS**, et le piège est de
+lire le NOM de la thématique qui part au lieu de sa DÉFINITION.
+
+« Sports d'hiver » a l'air d'un sous-ensemble de « Sports », alors ses 69
+étiquettes ont été transférées sans les relire. Le client l'a vu à l'écran :
+« motoneige, ce n'est pas un sport ». La définition de la thématique qui
+partait disait « tout ce qui se joue sur la glace ou la neige » — plus large
+qu'un sport, et cinq de ses questions n'en étaient pas : un véhicule (la
+motoneige), deux objets (la traîne sauvage, la soucoupe), deux jeux d'enfants
+(le fort de neige, l'ange dans la neige). Il a fallu revenir en arrière.
+
+Le végétal, lui, avait été jugé : 28 des 58 étiquettes hors de Sciences
+étaient des légumes DE RECETTE rangés dans Bouffe, et une manche de Sciences
+qui pose le cornichon du burger se fait reprendre. 34 sont entrées, 24 sont
+restées dans Bouffe sans étiquette de plante. C'est une perte, elle est
+assumée, et elle est écrite dans le code au-dessus de la thématique.
+
+**Écrire la règle de tri avant de trier**, et la mettre dans le code : pour
+Sports, « un sport, un athlète, une équipe, une ligue, ou un lieu fait pour
+le sport ». Sans cette phrase, le tri se fait au sentiment et le lot suivant
+la refera autrement.
 
 **Le slug d'une catégorie ne s'écrit jamais dans son propre fichier.** Le
 générateur s'arrête et nomme les fautives. On ne l'écrit que sur une question
