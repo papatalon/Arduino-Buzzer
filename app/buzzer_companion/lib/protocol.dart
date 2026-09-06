@@ -34,25 +34,13 @@ const kGameModeNames = [
   'Duel',
 ];
 
-// Doit rester dans le même ordre que Questions.cpp (CAT0_NAME..CAT9_NAME).
-// LE SEUL ENDROIT OÙ LA NOTION DE CATÉGORIE SURVIT, et on ne peut pas l'en
-// déloger : ces dix noms sont compilés dans le Mega, sans carte SD ni EEPROM
-// pour les changer. Côté app ce sont des thématiques comme les autres, et
-// cette liste ne sert plus qu'à suggérer des noms déjà connus quand on écrit
-// un questionnaire à la main.
-// À resynchroniser seulement si Questions.cpp change.
-const kThemesFirmware = [
-  'Culture générale',
-  'Histoire',
-  'Géographie',
-  'Sciences et nature',
-  'Sports',
-  'Musique',
-  'Cinéma et télé',
-  'Québec',
-  'Bouffe et cuisine',
-  'Mots et langue',
-];
+// Il y avait ici « kCategoryNames », les dix noms de CAT0_NAME..CAT9_NAME
+// compilés dans le Mega. L'app ne s'en servait plus que pour peupler le menu
+// de suggestions du champ Thématique, dans l'éditeur de questionnaires — or
+// ce sont les thématiques des questions DU BUZZER, pas celles de la banque :
+// neuf manquaient à l'appel, dont Disney, Voyages et Spécial Noël. L'éditeur
+// lit maintenant les thématiques de la banque, et cette liste morte est
+// partie plutôt que de rester à resynchroniser pour personne.
 
 // Doit rester dans le même ordre que PhaseMode.h. Fragile par construction :
 // un ajout/retrait dans l'enum Arduino doit se refléter ici.

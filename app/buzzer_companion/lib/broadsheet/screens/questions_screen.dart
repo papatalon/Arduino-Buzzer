@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../protocol.dart';
 import '../../questionnaires/active_questionnaire.dart';
 import '../../questionnaires/banque.dart';
 import '../../questionnaires/questionnaire.dart';
@@ -245,6 +244,12 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
         }
         return _Editor(
           questionnaire: _open!,
+          // LES SUGGESTIONS VIENNENT DE LA BANQUE, PAS DU BUZZER. Elles
+          // puisaient dans les dix noms compilés dans le Mega, qui sont les
+          // thématiques des questions DU BUZZER et n'ont rien à voir avec
+          // celles de la banque : neuf manquaient à l'appel, dont Disney,
+          // Voyages et Spécial Noël.
+          themes: [for (final t in widget.banque.banque.themes) t.nom],
           dirty: _dirty,
           saved: _openPath != null,
           pourLaPartie: widget.pourLaPartie,
@@ -1361,6 +1366,7 @@ String _resumeQuestions(int total, int utiles, Map<int, int> niveaux) {
 class _Editor extends StatelessWidget {
   const _Editor({
     required this.questionnaire,
+    required this.themes,
     required this.dirty,
     required this.onBack,
     required this.saved,
@@ -1374,6 +1380,8 @@ class _Editor extends StatelessWidget {
   });
 
   final Questionnaire questionnaire;
+  // Les noms proposés sous le champ Thématique de chaque ligne.
+  final List<String> themes;
   final bool dirty;
   final VoidCallback onBack;
   final bool saved;
@@ -1583,6 +1591,7 @@ class _Editor extends StatelessWidget {
         SliverList.builder(
           itemCount: questionnaire.questions.length,
           itemBuilder: (context, i) => _QuestionRow(
+            themes: themes,
             key: ValueKey(
               '${identityHashCode(questionnaire)}-${identityHashCode(questionnaire.questions[i])}',
             ),
@@ -1635,12 +1644,14 @@ class _QuestionRow extends StatelessWidget {
   const _QuestionRow({
     super.key,
     required this.index,
+    required this.themes,
     required this.question,
     required this.onChanged,
     required this.onDelete,
   });
 
   final int index;
+  final List<String> themes;
   final QuizQuestion question;
   final VoidCallback onChanged;
   final VoidCallback? onDelete;
@@ -1703,6 +1714,7 @@ class _QuestionRow extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   _ThemeField(
+                    suggestions: themes,
                     value: question.etiquette,
                     onChanged: (v) {
                       final reste = question.themes.skip(1).toList();
@@ -1786,8 +1798,14 @@ class _NiveauField extends StatelessWidget {
 }
 
 class _ThemeField extends StatelessWidget {
-  const _ThemeField({required this.value, required this.onChanged});
+  const _ThemeField(
+      {required this.value,
+      required this.onChanged,
+      required this.suggestions});
 
+  // Les thématiques de la banque. Vide tant qu'elle n'est pas chargée : le
+  // champ reste libre, on tape ce qu'on veut.
+  final List<String> suggestions;
   final String value;
   final ValueChanged<String> onChanged;
 
@@ -1809,7 +1827,7 @@ class _ThemeField extends StatelessWidget {
           shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
           onSelected: onChanged,
           itemBuilder: (context) => [
-            for (final name in kThemesFirmware)
+            for (final name in suggestions)
               PopupMenuItem(
                 value: name,
                 child: Text(
