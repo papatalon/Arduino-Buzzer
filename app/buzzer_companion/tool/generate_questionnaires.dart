@@ -1922,13 +1922,35 @@ const kThemes = <Theme>[
   // CE QUI A DISPARU DU QUOTIDIEN, et non « ce qui est vieux ». Le tramway de
   // Montréal, le catalogue qui arrivait par la poste, Steinberg, le TV Hebdo.
   //
+  // ET LE MOMENT D'ÉPOQUE QU'ON A VÉCU COMME PUBLIC : l'Expo 67, les Jeux de
+  // 1976, le pape au Stade olympique, l'Osstidcho, le but de Henderson. Une
+  // fête, un spectacle, un rassemblement, une soirée devant la télé. Le
+  // souvenir est le sujet, pas la date.
+  //
+  // La frontière, tenue question par question :
+  //   DEDANS  l'objet, la marque, l'émission, le métier que le quotidien a
+  //           laissés tomber ; et l'événement que la salle a vu, visité ou
+  //           écouté, jusqu'au début des années 90.
+  //   DEHORS  la politique et les crises : le référendum, la crise d'Octobre,
+  //           Duplessis, la Grande Noirceur. Ce sont Histoire et Québec, et
+  //           les y reprendre ferait de la thématique leur clone. Une soirée
+  //           « Dans l'temps » se joue en souriant.
+  //   DEHORS  le fait d'histoire mondiale que tous les enfants apprennent :
+  //           la marche sur la Lune, le mur de Berlin. Personne ne l'a
+  //           « perdu », il est au programme.
+  //
+  // UNE SEULE QUESTION PAR ÉVÉNEMENT, comme par objet. Expo 67 et Terre des
+  // Hommes sont le même souvenir sous deux noms, et la seconde nomme la
+  // première dans son énoncé : la servir dans la même manche donnerait la
+  // réponse de l'autre.
+  //
   // AUCUN MOT-CLÉ NE SAIT REPÉRER UN SOUVENIR. Le filet ci-dessous ramasse les
   // marques et les objets nommément disparus, mais l'essentiel se trouve
   // autrement : par les tranches d'âge, puisque la banque cote déjà « aînés »
   // les questions qui appartiennent à un monde révolu. C'est à quoi sert
   // proposeAges.
   Theme('nostalgie', 'Dans l\'temps', '📻',
-      'Ce qui a disparu du quotidien : marques, émissions, objets.', [
+      'Ce qui a disparu du quotidien, et les moments qu\'on a vécus.', [
     'autrefois', 'jadis', 'antan', 'ancien', 'ancienne', 'anciens',
     'disparu', 'disparue', 'epoque',
     'tramway', 'catalogue', 'walkman', 'baladeur', 'cassette', 'cassettes',
@@ -1938,6 +1960,7 @@ const kThemes = <Theme>[
     'steinberg', 'eaton', 'woolworth', 'kresge',
     'tv hebdo', 'cre basile', 'symphorien', 'yeye', 'discotheque',
     'club video', 'transistor', 'sears', 'lessiveuse', 'tordeur',
+    'expo 67', 'terre des hommes', 'osstidcho', 'serie du siecle',
   ], proposeAges: ['aines']),
   // CE QU'ON FAIT EN PARTANT ET CE QU'ON VA VOIR, pas la géographie.
   //
