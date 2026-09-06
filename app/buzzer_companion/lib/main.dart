@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:window_manager/window_manager.dart';
 
+import 'audio/noms_de_sons.dart';
 import 'audio/sound_engine.dart';
 import 'audio/sonorisation.dart';
 import 'audio/sound_library.dart';
@@ -139,6 +140,11 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
     // Partage, parce que deux moments s'en servent : melanger les sons des
     // buzzers, et designer qui ouvre une manche de Vol.
     _tirage = AnimationTirage(ble: _ble, sons: _sons);
+    // CHAQUE PAS DE LA ROUE PART VERS L'ECRAN PUBLIC. C'est ce qui fait
+    // qu'elle ralentit en meme temps devant la salle, sur la console et sur
+    // les LED de la table. Sans cet abonnement, l'animation n'existait que
+    // pour l'animateur.
+    _tirage.addListener(_pushSnapshotToPopout);
 
     // LE MOTEUR DE JEU DE L'APPLICATION. En mode application, le buzzer ne
     // garde aucun état de partie : il arme des boutons et rapporte les appuis.
@@ -294,14 +300,66 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
             question: _actif.current,
             teamNames: _teams.all,
             logoPath: _logo.path,
-            recallIndex: _sound.recallIndex,
+            vueSons: _vueDesSons(),
           )
         : PopoutSnapshot.fromGameState(
             _game,
             teamNames: _teams.all,
             logoPath: _logo.path,
-            recallIndex: _sound.recallIndex,
+            vueSons: _vueDesSons(),
           );
+  }
+
+  // CE QUE LA SALLE VOIT DU CHOIX DES SONS (voir VueDesSons).
+  //
+  // Les noms voyagent tout faits : la fenêtre du pop-out ne partage ni la
+  // bibliothèque de l'app ni la mémoire de la console, et c'est de toute
+  // façon ici qu'on sait si le son sort de l'application ou de la carte SD
+  // du buzzer.
+  VueDesSons _vueDesSons() {
+    // Le mélange des sons seulement : la roue sert aussi à désigner qui ouvre
+    // une manche de Vol, et celle-là se raconte déjà sur l'écran de jeu.
+    final melange = _tirage.motif == MotifTirage.sons;
+    final enMelange = melange && _tirage.enCours;
+    final revele = melange && _tirage.revelation;
+    final sonApp = _ble.appHandlesSound;
+    final grille = _sound.grilleIndex;
+
+    return VueDesSons(
+      rappel: _sound.recallIndex,
+      melange: enMelange,
+      revelation: revele,
+      melangeAllume: _tirage.allume,
+      melangeNoms: [
+        for (var i = 0; i < 4; i++)
+          if (enMelange)
+            nomDuSonQuiDefile(
+              sound: _sound,
+              sonApplication: sonApp,
+              tirage: _tirage.defilement[i],
+            )
+          else if (revele)
+            nomDuSonAssigne(
+              sound: _sound,
+              game: _game,
+              sonApplication: sonApp,
+              buzzer: i,
+            )
+          else
+            '',
+      ],
+      // La grille n'existe qu'en mode « son application » : quand le buzzer
+      // joue, l'app ne connaît pas les noms des fichiers de sa carte SD et
+      // n'a donc rien à montrer.
+      grilleBuzzer: sonApp ? grille : null,
+      grilleSons: grille == null
+          ? const []
+          : [
+              for (var i = 0; i < _sound.library.count(SoundFolder.buzzer); i++)
+                _sound.library.displayName(SoundFolder.buzzer, i),
+            ],
+      grilleAssignation: List<int>.of(_sound.assignment),
+    );
   }
 
   void _pushSnapshotToPopout() => _popout.pushSnapshot(_instantane());
@@ -358,6 +416,8 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
     _neBuzzePas.dispose();
     _simon.removeListener(_pushSnapshotToPopout);
     _simon.dispose();
+    _tirage.removeListener(_pushSnapshotToPopout);
+    _tirage.dispose();
     _sound.removeListener(_pushSnapshotToPopout);
     _sound.dispose();
     _ble.dispose();

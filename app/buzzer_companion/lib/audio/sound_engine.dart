@@ -159,6 +159,28 @@ class SoundEngine extends ChangeNotifier {
   // Apercu d'un son du dossier des buzzers sans toucher aux assignations.
   Future<void> previewBuzzerSound(int soundIndex) => _play(SoundFolder.buzzer, soundIndex);
 
+  // --- La grille des sons, ouverte ----------------------------------------
+  //
+  // Le buzzer dont la grille est ouverte sur la console, ou null.
+  //
+  // Meme intention que [recallIndex] : un etat d'ecran que la SALLE doit
+  // voir, porte par l'objet qui possede deja la bibliotheque et les
+  // assignations. Sans ca, la personne qui choisit son son regarde
+  // l'animateur cliquer dans une fenetre qu'elle ne voit pas.
+  int? grilleIndex;
+
+  void ouvrirGrille(int buzzerId) {
+    if (buzzerId < 0 || buzzerId > 3 || grilleIndex == buzzerId) return;
+    grilleIndex = buzzerId;
+    notifyListeners();
+  }
+
+  void fermerGrille() {
+    if (grilleIndex == null) return;
+    grilleIndex = null;
+    notifyListeners();
+  }
+
   // --- Rappel des sons ----------------------------------------------------
   //
   // Avant de lancer une partie, l'animateur refait entendre a la salle le son

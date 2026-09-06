@@ -8,6 +8,7 @@ import '../protocol.dart';
 import 'game_screens.dart';
 import 'popout_idle.dart';
 import 'popout_snapshot.dart';
+import 'popout_sons.dart';
 
 // Contenu visuel du châssis pop-out (design_handoff_buzzer_console/README.md,
 // "Le châssis du pop-out (invariant)") : 1440×810, fond clair (jamais sombre
@@ -77,11 +78,11 @@ class PopoutContent extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(52, 18, 52, 0),
               child: SizedBox(height: 4, child: ColoredBox(color: BSColors.text)),
             ),
-            // Le rappel des sons passe avant tout le reste, partie en cours
-            // ou non : pendant ces quelques secondes, la salle n'a qu'une
-            // chose à faire, associer un son à une équipe.
-            if (snapshot.recallIndex != null)
-              Expanded(child: _SoundRecallZone(index: snapshot.recallIndex!, snapshot: snapshot))
+            // Le choix des sons passe avant tout le reste, partie en cours ou
+            // non : pendant ces quelques secondes, la salle n'a qu'une chose
+            // à faire, suivre les sons (voir ZoneDesSons).
+            if (snapshot.vueSons.quelqueChose)
+              Expanded(child: ZoneDesSons(vue: snapshot.vueSons, snapshot: snapshot))
             // Hors partie, l'écran d'attente prend tout le bas du châssis :
             // il porte son propre pied de page (les équipes du soir) à la
             // place du tableau des scores, qui n'aurait que des zéros à
@@ -671,43 +672,6 @@ class _Scoreboard extends StatelessWidget {
   }
 }
 
-// Plein écran pendant le rappel des sons : une couleur, un nom, rien
-// d'autre. Le son joue en même temps, et c'est l'association des deux qui
-// compte. Un bandeau de scores ou un compteur en même temps ne ferait que
-// disperser l'attention au moment où elle doit être entière.
-class _SoundRecallZone extends StatelessWidget {
-  const _SoundRecallZone({required this.index, required this.snapshot});
-
-  final int index;
-  final PopoutSnapshot snapshot;
-
-  @override
-  Widget build(BuildContext context) {
-    final couleur = kBuzzerColors[index].fill;
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 80),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text('VOICI VOTRE SON', style: BSType.popoutHeaderMeta(color: BSColors.neutral600)),
-            const SizedBox(height: BSSpace.s6),
-            Container(width: 320, height: 24, color: couleur),
-            const SizedBox(height: BSSpace.s6),
-            FittedBox(
-              fit: BoxFit.scaleDown,
-              child: Text(
-                snapshot.teamName(index).toUpperCase(),
-                maxLines: 1,
-                style: BSType.heroDigitPopout(size: 170, color: couleur),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
 
 // La barre qui se vide avec le décompte. Même largeur que la barre grise du
 // chrono non lancé, pour que le passage de l'une à l'autre ne fasse pas

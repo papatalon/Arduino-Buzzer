@@ -11,11 +11,23 @@ import '../tokens.dart';
 //
 // N'existe qu'en mode « son application » : quand c'est le buzzer qui joue,
 // l'app ne connaît pas les noms des fichiers de sa carte SD.
-Future<void> showSoundPicker(BuildContext context, SoundEngine sound, int buzzerId) {
-  return showDialog<void>(
-    context: context,
-    builder: (context) => _SoundPickerDialog(sound: sound, buzzerId: buzzerId),
-  );
+//
+// L'ouverture est ANNONCÉE au moteur de son, qui la transporte jusqu'à
+// l'écran public : la personne qui choisit doit voir la même grille que
+// l'animateur, sinon elle choisit à l'aveugle pendant qu'il clique.
+Future<void> showSoundPicker(BuildContext context, SoundEngine sound, int buzzerId) async {
+  sound.ouvrirGrille(buzzerId);
+  try {
+    await showDialog<void>(
+      context: context,
+      builder: (context) => _SoundPickerDialog(sound: sound, buzzerId: buzzerId),
+    );
+  } finally {
+    // Dans un `finally` : la grille se ferme au clavier (Échap) et au clic
+    // hors du cadre autant que par le bouton, et l'écran public ne doit
+    // rester bloqué dessus dans aucun de ces cas.
+    sound.fermerGrille();
+  }
 }
 
 class _SoundPickerDialog extends StatelessWidget {
@@ -57,7 +69,8 @@ class _SoundPickerDialog extends StatelessWidget {
                   ),
                   const SizedBox(height: BSSpace.s1),
                   Text(
-                    'Clique un son pour l\'entendre et l\'attribuer. $total sons disponibles.',
+                    'Clique un son pour l\'entendre et l\'attribuer. $total sons '
+                    'disponibles. L\'écran public montre la même grille.',
                     style: BSType.body(size: 15, color: BSColors.neutral600),
                   ),
                   const SizedBox(height: BSSpace.s4),

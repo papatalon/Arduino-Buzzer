@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../audio/noms_de_sons.dart';
 import '../../audio/sound_engine.dart';
-import '../../audio/sound_library.dart';
 import '../../ble_link_service.dart';
 import '../../jeu/animation_tirage.dart';
 import '../../protocol.dart';
@@ -64,6 +64,7 @@ class BuzzersScreen extends StatelessWidget {
                           ? null
                           : () => tirage.lancer(
                         presents: game.present,
+                        motif: MotifTirage.sons,
                         // Les sons ne sont re-tires qu'a la FIN, comme le fait
                         // le firmware : on decouvre le resultat quand la roue
                         // s'arrete, pas avant.
@@ -97,7 +98,7 @@ class BuzzersScreen extends StatelessWidget {
                   // plus, plutot que de laisser croire a un blocage.
                   Text(
                     'Mélange en cours. Les sons seront révélés quand la roue '
-                    "s'arrête.",
+                    "s'arrête. L'écran public suit la roue.",
                     style: BSType.body(size: 15, color: BSColors.accent2_700),
                   ),
                 ] else if (!ble.appHandlesSound) ...[
@@ -207,25 +208,21 @@ class _BuzzerRow extends StatelessWidget {
     // physiques ; faire defiler les noms au meme rythme donne l'effet machine
     // a sous, et rend visible que les sons sont bel et bien en train d'etre
     // rebrasses. Le vrai nom n'apparait qu'a l'arret.
-    final String name;
-    if (melange) {
-      if (appOwnsSound) {
-        final total = sound.library.count(SoundFolder.buzzer);
-        name = total == 0
-            ? '...'
-            : sound.library
-                .displayName(SoundFolder.buzzer, tirage.defilement[index] % total);
-      } else {
-        // Cote carte SD, on ne connait que des numeros : on en fait defiler
-        // un dans la meme plage que ceux qu'on affiche d'habitude.
-        name = 'Son ${tirage.defilement[index] % 30 + 1} de la carte SD';
-      }
-    } else if (appOwnsSound) {
-      name = sound.library.displayName(SoundFolder.buzzer, sound.assignment[index]);
-    } else {
-      final megaSound = game.buzzerSound[index];
-      name = megaSound == null ? 'Aucun son assigné' : 'Son ${megaSound + 1} de la carte SD';
-    }
+    //
+    // Les deux formules vivent dans noms_de_sons.dart : l'ecran public montre
+    // exactement les memes noms au meme instant.
+    final name = melange
+        ? nomDuSonQuiDefile(
+            sound: sound,
+            sonApplication: appOwnsSound,
+            tirage: tirage.defilement[index],
+          )
+        : nomDuSonAssigne(
+            sound: sound,
+            game: game,
+            sonApplication: appOwnsSound,
+            buzzer: index,
+          );
 
     return Opacity(
       // Pendant le melange, toute la rangee s'efface SAUF celle que le
