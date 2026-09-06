@@ -61,6 +61,7 @@ Repères, à mettre à jour après chaque lot :
 | 5 septembre 2026, sports-hiver et regne-vegetal fusionnés (0 neuve) | 54 | 217 | 0 | 14 | 0 |
 | 6 septembre 2026, 5 étiquettes Sports reprises, 3 questions molles retirées | 54 | 217 | 0 | 14 | 0 |
 | 6 septembre 2026, les villes des grandes équipes (+35) | 54 | 225 | 0 | 14 | 0 |
+| 6 septembre 2026, les figures du sport d'ici (+8) | 54 | 225 | 0 | 14 | 0 |
 
 Ce dernier passage n'a touché aucune question : les onze catégories sont
 devenues des thématiques qui absorbent leur catégorie, ce qui donne une
