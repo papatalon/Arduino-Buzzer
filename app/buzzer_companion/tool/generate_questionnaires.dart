@@ -1849,7 +1849,12 @@ const kThemes = <Theme>[
     'tony stark', 'groot', 'gardiens', 'mutant', 'mutants', 'asterix',
     'obelix', 'idefix', 'panoramix', 'tintin', 'milou', 'herge',
     'schtroumpfs', 'gargamel', 'lucky luke', 'dalton', 'picsou', 'popeye',
-    'garfield', 'bd',
+    'garfield', 'bd', 'bande dessinee', 'franquin', 'lagaffe', 'spirou',
+    'fantasio', 'marsupilami', 'achille talon', 'boule et bill', 'uderzo',
+    'goscinny', 'peyo', 'deadpool', 'snoopy', 'charlie brown', 'batmobile',
+    'stan lee', 'peter parker', 'bruce wayne', 'loki', 'tortues ninja',
+    'jolly jumper', 'naruto', 'hokage', 'goldorak', 'manga', 'dragon ball',
+    'luffy',
   ]),
   // « Créatures et légendes » a fondu dans culture-generale et « La mer et
   // les bateaux » dans geographie, par « --absorber » : le client ne les
