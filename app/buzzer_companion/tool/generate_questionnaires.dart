@@ -1775,6 +1775,15 @@ const kThemes = <Theme>[
   // Les 221 étiquettes ont été récupérées telles quelles du commit qui les
   // avait effacées : le tri avait déjà été fait une fois, et le refaire de
   // mémoire aurait été plus long et moins sûr.
+  // LE RÈGNE ANIMAL RESTE, ET C'EST UNE DÉCISION, PAS UNE SYMÉTRIE OUBLIÉE.
+  //
+  // Son pendant végétal a fondu dans Sciences et nature le 5 septembre 2026,
+  // et la question s'est posée pour celui-ci le lendemain. Le client a
+  // tranché : il reste. 244 questions, soit plus que la catégorie Sciences et
+  // nature elle-même — une thématique de cette taille tient debout seule,
+  // alors que le végétal n'en avait que 81.
+  //
+  // Ne pas « finir le ménage » en le fusionnant : ce serait défaire un choix.
   Theme('regne-animal', 'Le règne animal', '🐾', 'Bêtes à poil, à plume et à écailles.', [
     'animal', 'animaux', 'oiseau', 'oiseaux', 'poisson', 'poissons',
     'insecte', 'insectes', 'mammifere', 'mammiferes', 'reptile', 'reptiles',

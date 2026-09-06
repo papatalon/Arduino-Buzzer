@@ -650,7 +650,7 @@ class _FureteurBanqueState extends State<_FureteurBanque> {
   // Largeurs des colonnes de droite. Fixes, donc les valeurs s'alignent d'une
   // ligne à l'autre et se lisent en colonne plutôt qu'une par une.
   static const _lNumero = 46.0;
-  static const _lCategorie = 180.0;
+  static const _lThematiques = 180.0;
   static const _lClassement = 190.0;
 
   // UNE SEULE LISTE DE FACETTES : les onze catégories sont aussi des
@@ -777,7 +777,7 @@ class _FureteurBanqueState extends State<_FureteurBanque> {
                               question: trouvees[i],
                               rang: i + 1,
                               largeurNumero: _lNumero,
-                              largeurCategorie: _lCategorie,
+                              largeurThematiques: _lThematiques,
                               largeurClassement: _lClassement,
                             ),
                           ),
@@ -996,8 +996,8 @@ class _FureteurBanqueState extends State<_FureteurBanque> {
             child: Text('QUESTION ET RÉPONSE', style: BSType.sectionKicker()),
           ),
           SizedBox(
-            width: _lCategorie,
-            child: Text('CATÉGORIE', style: BSType.sectionKicker()),
+            width: _lThematiques,
+            child: Text('THÉMATIQUES', style: BSType.sectionKicker()),
           ),
           SizedBox(
             width: _lClassement,
@@ -1159,14 +1159,14 @@ class _LigneBanque extends StatelessWidget {
     required this.question,
     required this.rang,
     required this.largeurNumero,
-    required this.largeurCategorie,
+    required this.largeurThematiques,
     required this.largeurClassement,
   });
 
   final QuizQuestion question;
   final int rang;
   final double largeurNumero;
-  final double largeurCategorie;
+  final double largeurThematiques;
   final double largeurClassement;
 
   @override
@@ -1222,21 +1222,22 @@ class _LigneBanque extends StatelessWidget {
               ),
             ),
           ),
+          // TOUTES LES THÉMATIQUES DU MÊME CÔTÉ ET DE LA MÊME COULEUR.
+          //
+          // La catégorie s'affichait au-dessus, en gris, et les thématiques en
+          // dessous, en magenta. Deux natures, deux couleurs : c'était vrai
+          // quand la catégorie était l'autre axe du classement. Depuis que
+          // les onze catégories SONT des thématiques, « Sports » en gris
+          // au-dessus de « Québec » en magenta faisait croire à deux sortes
+          // d'étiquettes alors que le tirage les traite pareil.
+          //
+          // Celle de la catégorie vient en tête, parce que le générateur les
+          // écrit dans l'ordre de kThemes et que les onze y sont d'abord.
           SizedBox(
-            width: largeurCategorie,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(q.category,
-                    style: BSType.body(size: 14, color: BSColors.neutral700)),
-                // Sans celle qui porte le nom de la catégorie : elle est
-                // écrite juste au-dessus, et la répéter ne dit rien de plus.
-                if (q.themes.any((t) => t != q.category))
-                  Text(
-                    q.themes.where((t) => t != q.category).join(', '),
-                    style: BSType.body(size: 13, color: BSColors.accent2_700),
-                  ),
-              ],
+            width: largeurThematiques,
+            child: Text(
+              q.themes.isEmpty ? q.category : q.themes.join(', '),
+              style: BSType.body(size: 14, color: BSColors.accent2_700),
             ),
           ),
           SizedBox(
