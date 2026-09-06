@@ -50,15 +50,58 @@ class SoundLibrary {
     return files[index];
   }
 
-  // Nom lisible d'un son, pour l'ecran des buzzers : on retire le chemin,
-  // l'extension et le prefixe numerique ("003-castle-clear.mp3" ->
-  // "castle-clear"), qui n'apporte rien a l'operateur.
+  // Nom lisible d'un son. Voir [nomLisible] pour le detail du nettoyage.
   String displayName(SoundFolder folder, int index) {
     final path = assetPath(folder, index);
     if (path == null) return '';
-    var name = path.split('/').last;
-    final dot = name.lastIndexOf('.');
-    if (dot > 0) name = name.substring(0, dot);
-    return name.replaceFirst(RegExp(r'^\d+[_-]?'), '').trim();
+    return nomLisible(path.split('/').last, index);
   }
+}
+
+// LE NOM D'UN FICHIER DE SON, TEL QU'ON LE MONTRE.
+//
+// Les fichiers de la bibliotheque du client sont des noms techniques : un
+// rang a trois chiffres, des mots colles par des tirets, et pour les trois
+// quarts d'entre eux la provenance du fournisseur en suffixe. Rien de tout ca
+// ne se lit devant une salle, et l'ecran public en montre maintenant une
+// grille entiere.
+//
+// LES FICHIERS EUX-MEMES NE SE RENOMMENT PAS : leur rang alphabetique donne
+// le numero DFPlayer de la carte SD, et renommer un fichier forcerait a
+// renumeroter le dossier entier sur les trois copies de la banque. Le
+// nettoyage vit donc ici, a l'affichage, et nulle part ailleurs.
+//
+// Fonction libre plutot que methode : elle ne depend que de la chaine, ce qui
+// la rend verifiable sans monter une bibliotheque d'assets.
+String nomLisible(String fichier, int index) {
+  var nom = fichier;
+  final point = nom.lastIndexOf('.');
+  if (point > 0) nom = nom.substring(0, point);
+
+  // Le rang dans le dossier : « 003-castle-clear » -> « castle-clear ».
+  nom = nom.replaceFirst(RegExp(r'^\d+[_-]?'), '');
+
+  // La provenance, collee a 28 des 35 sons de buzzer. Deux fichiers ne
+  // s'appellent QUE comme ca : ils tombent alors sur le repli plus bas.
+  nom = nom.replaceFirst(
+    RegExp(r'[-_ ]?101soundboards$', caseSensitive: false),
+    '',
+  );
+
+  nom = nom.replaceAll(RegExp(r'[-_]+'), ' ').replaceAll(RegExp(r'\s+'), ' ').trim();
+
+  // Le numero de prise laisse par le fournisseur (« goat 1 », « horse 8 ») :
+  // il ne distingue rien dans la bibliotheque et se lit comme du code. Deux
+  // chiffres au plus, pour ne manger ni une annee ni un identifiant :
+  // « jeopardy 1998 » et « buzzer 4 183895 » restent entiers.
+  nom = nom.replaceFirst(RegExp(r' \d{1,2}$'), '');
+
+  // Il ne reste rien de lisible : le numero du son est alors tout ce qu'on
+  // peut honnetement en dire.
+  if (nom.isEmpty) return 'Son ${index + 1}';
+
+  // Une seule majuscule, celle du debut. Mettre une capitale a chaque mot
+  // ferait un titre anglais la ou la plupart des noms sont des phrases
+  // (« I am groot », « Lets go doc »).
+  return nom[0].toUpperCase() + nom.substring(1);
 }

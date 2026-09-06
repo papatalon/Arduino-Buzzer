@@ -348,7 +348,9 @@ class _TuileSon extends StatelessWidget {
           const SizedBox(width: BSSpace.s2),
           Expanded(
             child: Text(
-              nom.isEmpty ? 'Son $numero' : nom,
+              // Pas de repli sur « Son N » ici : nomLisible s'en charge deja
+              // pour les fichiers dont il ne reste rien apres nettoyage.
+              nom,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: BSType.body(size: 26, color: encre),

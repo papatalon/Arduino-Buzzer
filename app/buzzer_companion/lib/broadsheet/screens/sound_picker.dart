@@ -147,7 +147,10 @@ class _SoundTile extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                label.isEmpty ? 'Son ${index + 1}' : label,
+                // Pas de repli sur « Son N » ici : nomLisible s'en charge
+                // deja pour les fichiers dont il ne reste rien apres
+                // nettoyage.
+                label,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: BSType.body(size: 14, color: selected ? BSColors.accent800 : BSColors.text)
