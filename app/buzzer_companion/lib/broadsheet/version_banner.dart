@@ -1,9 +1,8 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../version_check.dart';
+import 'ouvrir_navigateur.dart';
 import 'tokens.dart';
 
 // Bandeau annonçant une version plus récente de l'application.
@@ -76,21 +75,13 @@ class VersionBanner extends StatelessWidget {
     );
   }
 
-  // Ouvre dans le navigateur du poste. Pas de dépendance ajoutée pour ça :
-  // l'application ne tourne que sur Windows, et « cmd /c start » y suffit.
-  //
   // Si l'ouverture échoue, l'adresse part dans le presse-papiers plutôt que
   // de laisser un bouton qui ne fait rien : l'opérateur peut la coller
   // lui-même.
   Future<void> _ouvrir(BuildContext context, String? url) async {
     if (url == null || url.isEmpty) return;
     final messenger = ScaffoldMessenger.of(context);
-    try {
-      final r = await Process.run('cmd', ['/c', 'start', '', url]);
-      if (r.exitCode == 0) return;
-    } catch (_) {
-      // On retombe sur le presse-papiers.
-    }
+    if (await ouvrirDansLeNavigateur(url)) return;
     await Clipboard.setData(ClipboardData(text: url));
     messenger.showSnackBar(
       SnackBar(

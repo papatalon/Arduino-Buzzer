@@ -48,6 +48,7 @@ void main() {
         teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
         logoPath: null,
         vueSons: VueDesSons.aucune,
+        pisteEnCours: PisteEnCours.aucune,
       );
 
   test('la réponse ne part pas tant que la question est ouverte', () {

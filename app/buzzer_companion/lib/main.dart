@@ -19,6 +19,7 @@ import 'jeu/moteur_chrono_aveugle.dart';
 import 'jeu/moteur_ne_buzze_pas.dart';
 import 'jeu/moteur_reflexe.dart';
 import 'jeu/moteur_simon.dart';
+import 'musique/ambiance_spotify.dart';
 import 'popout/popout_launcher.dart';
 import 'popout/popout_snapshot.dart';
 import 'popout/popout_window.dart';
@@ -91,6 +92,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
   late final Sonorisation _sons;
   late final AnimationTirage _tirage;
   final _version = VersionCheck();
+  final _ambiance = AmbianceSpotify();
   late final Simulateur _simulateur;
   late final SoundEngine _sound;
   StreamSubscription<SfxEvent>? _sfxSub;
@@ -141,6 +143,10 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
     // haut-parleur du buzzer (voir Sonorisation). Créée avant le moteur de
     // jeu, qui s'en sert.
     _sons = Sonorisation(locale: _sound, ble: _ble);
+    // L'ouverture d'une partie coupe la musique d'ambiance. C'est le seul
+    // point de contact entre les deux : Sonorisation ne sait rien de
+    // Spotify, elle annonce seulement qu'une partie s'ouvre.
+    _sons.surOuverture = _ambiance.pauserPourLaPartie;
     // Le tirage au sort anime : chenillard qui ralentit, cale sur son bruitage.
     // Partage, parce que deux moments s'en servent : melanger les sons des
     // buzzers, et designer qui ouvre une manche de Vol.
@@ -212,6 +218,16 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
     _logo.load();
     _logo.addListener(_pushSnapshotToPopout);
     _sfxSub = _game.sfxEvents.listen(_handleSfx);
+    // La musique d'ambiance reprend d'elle-même la connexion retenue, sans
+    // repasser par le navigateur. Silencieuse si Spotify est injoignable.
+    _ambiance.load();
+    _ambiance.addListener(_pushSnapshotToPopout);
+    // Les quatre autres jeux n'ont pas d'ouverture sonore, donc rien ne
+    // passe par Sonorisation quand ils démarrent : sans ça, la musique
+    // continuerait par-dessus une manche de Réflexe ou de Simon.
+    for (final moteur in [_reflexe, _chronoAveugle, _neBuzzePas, _simon]) {
+      moteur.addListener(_surDepartDeJeu);
+    }
     // Silencieux si le site est injoignable : voir VersionCheck.
     _version.init();
   }
@@ -236,9 +252,28 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
     _reflexe.presentsMateriel = List<bool>.of(vu);
   }
 
+  bool _unJeuTournait = false;
+
+  // LES QUATRE AUTRES JEUX N'OUVRENT PAS EN MUSIQUE. Seul le quiz passe par
+  // Sonorisation.intro(), donc seul lui coupe l'ambiance tout seul. Ici on
+  // regarde le passage du repos à l'action, plutôt que d'ajouter un appel à
+  // Spotify dans chacun des quatre moteurs : leurs règles de jeu n'ont pas à
+  // connaître la musique de la salle.
+  void _surDepartDeJeu() {
+    final tourne = _reflexe.etape != EtapeReflexe.repos ||
+        _chronoAveugle.etape != EtapeChronoAveugle.repos ||
+        _neBuzzePas.etape != EtapeNeBuzzePas.repos ||
+        _simon.etape != EtapeSimon.repos;
+    if (tourne && !_unJeuTournait) _ambiance.pauserPourLaPartie();
+    _unJeuTournait = tourne;
+  }
+
   void _handleSfx(SfxEvent event) {
     switch (event.type) {
       case 'INTRO':
+        // Le buzzer mène : l'ouverture ne passe pas par Sonorisation, mais
+        // la musique doit se taire pareil.
+        _ambiance.pauserPourLaPartie();
         _sound.playIntro();
       case 'GOOD':
         _sound.playGood();
@@ -306,12 +341,14 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
             teamNames: _teams.all,
             logoPath: _logo.path,
             vueSons: _vueDesSons(),
+            pisteEnCours: _ambiance.piste,
           )
         : PopoutSnapshot.fromGameState(
             _game,
             teamNames: _teams.all,
             logoPath: _logo.path,
             vueSons: _vueDesSons(),
+            pisteEnCours: _ambiance.piste,
           );
   }
 
@@ -413,6 +450,11 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
     _game.removeListener(_suivrePresence);
     _moteur.removeListener(_pushSnapshotToPopout);
     _moteur.dispose();
+    // Le départ de ces quatre jeux coupe la musique : à détacher AVANT de
+    // les libérer, sinon on parle à un ChangeNotifier déjà mort.
+    for (final moteur in [_reflexe, _chronoAveugle, _neBuzzePas, _simon]) {
+      moteur.removeListener(_surDepartDeJeu);
+    }
     _reflexe.removeListener(_pushSnapshotToPopout);
     _reflexe.dispose();
     _chronoAveugle.removeListener(_pushSnapshotToPopout);
@@ -431,6 +473,8 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
     _logo.removeListener(_pushSnapshotToPopout);
     _logo.dispose();
     _teams.dispose();
+    _ambiance.removeListener(_pushSnapshotToPopout);
+    _ambiance.dispose();
     _game.dispose();
     _popout.close();
     super.dispose();
@@ -481,6 +525,7 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
       tirage: _tirage,
       version: _version,
       simulateur: _simulateur,
+      ambiance: _ambiance,
     );
   }
 }

@@ -1,10 +1,12 @@
 import 'dart:async';
+import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
 
 import '../broadsheet/tokens.dart';
 import '../protocol.dart';
+import 'phrases_attente.dart';
 import 'popout_snapshot.dart';
 
 // Écran d'attente du pop-out : ce que la salle regarde entre deux parties,
@@ -26,76 +28,11 @@ class PopoutIdle extends StatefulWidget {
   State<PopoutIdle> createState() => _PopoutIdleState();
 }
 
-// Assez de lignes pour qu'une soirée entière n'en montre jamais deux fois la
-// même de suite. Ton québécois, jamais moqueur envers un joueur en
-// particulier : c'est affiché devant tout le monde.
-//
-// PAS DE POUCES. Les buzzers sont de gros boutons qu'on abat avec la main,
-// pas des manettes. Quatre messages y faisaient référence et sonnaient faux
-// devant l'objet posé sur la table.
-const _messages = <String>[
-  'Le bouton est gros. Personne ne pourra dire qu\'il l\'a manqué.',
-  "Personne n'a encore perdu. Profitez-en.",
-  'Le pointage est à zéro. Tout le monde est premier.',
-  'Ça commence dans pas long.',
-  "Le premier à peser l'emporte. Toujours.",
-  'Buzzer avant de savoir la réponse : un plan risqué.',
-  "Aucune question n'a encore fait de victime.",
-  'Que la main la plus rapide gagne.',
-  'Prenez une gorgée. Après, ça va vite.',
-  'Il y a des bonnes réponses, et il y a des réponses à zéro point.',
-  'Vos coéquipiers comptent sur vous. Aucune pression.',
-  'On teste vos réflexes dans un instant.',
-  'Le silence avant la tempête de buzz.',
-  'La main au-dessus du bouton. Respirez.',
-  "Ce soir, quelqu'un va buzzer trop vite.",
-  'Les remontées spectaculaires commencent toutes à zéro.',
-  "Le buzzer ne pardonne pas l'hésitation.",
-  'Chacun son tour de briller.',
-  'La chance sourit à ceux qui appuient.',
-  'Préparez vos meilleures excuses.',
-  'Frapper plus fort ne rend pas la réponse meilleure.',
-  'Le bouton ne connaît pas la réponse. Vous non plus, peut-être.',
-  'On entend qui a buzzé. On voit qui le regrette.',
-  'Un gros bouton, une petite hésitation, une longue soirée.',
-  'Le bouton encaisse. Votre orgueil, un peu moins.',
-  'Quatre boutons, une seule bonne réponse, beaucoup de courage.',
-  'Le bouton ne juge pas. Nous, un peu.',
-  'On oublie les bonnes réponses. Jamais les mauvaises.',
-  "Vous avez tous l'air bien confiants. On verra.",
-  'Être sûr de soi et avoir raison, ça fait deux.',
-  'Le pointage, lui, se souvient de tout.',
-  'Répondre vite est un talent. Répondre juste aussi.',
-  "Pas de téléphones. On voit très bien d'ici.",
-  'Certains vont briller. Les autres vont apprendre.',
-  'Un buzz mal placé se raconte encore des années plus tard.',
-  "Vous pouvez encore changer d'équipe. Dans deux minutes, non.",
-  "On ne juge pas vos réponses. On les compte, c'est pire.",
-  'Le doute est permis. Le silence ne rapporte rien.',
-  "Vos souvenirs d'école secondaire vont enfin servir.",
-  'Tout le monde est bon au quiz, assis dans son salon.',
-  'Tout le monde connaît la réponse une seconde trop tard.',
-  '« Je le savais » ne vaut aucun point.',
-  'Contester la réponse est un sport. Pas celui de ce soir.',
-  'Presque, ça ne se compte pas.',
-  'Les lumières savent qui a pesé en premier. Aucun débat.',
-  'Le hasard aide. Avoir lu un peu, encore plus.',
-  'Une égalité, ça se règle. Rarement dans la bonne humeur.',
-  'Personne ne repart sans une histoire à raconter.',
-  'Deviner est permis. Deviner avec aplomb, recommandé.',
-  'Il y a toujours une question facile. Rarement la vôtre.',
-  "Le silence de la salle pèse plus lourd qu'on pense.",
-  'Vous allez apprendre des choses. Sur vous, surtout.',
-  'La modestie est une belle qualité. Gardez-la pour demain.',
-  "Un point, c'est un point. Même tombé du ciel.",
-  'Ce soir, aucune excuse. Le bouton est juste là.',
-];
-
 class _PopoutIdleState extends State<PopoutIdle> {
   static const _rotation = Duration(seconds: 9);
 
   final _random = Random();
-  late int _index = _random.nextInt(_messages.length);
+  late int _index = _random.nextInt(phrasesAttente.length);
   Timer? _timer;
 
   @override
@@ -108,8 +45,8 @@ class _PopoutIdleState extends State<PopoutIdle> {
   // suite donnerait l'impression que l'écran est figé, exactement ce qu'on
   // cherche à éviter.
   int _nextIndex() {
-    if (_messages.length < 2) return 0;
-    final next = _random.nextInt(_messages.length - 1);
+    if (phrasesAttente.length < 2) return 0;
+    final next = _random.nextInt(phrasesAttente.length - 1);
     return next >= _index ? next + 1 : next;
   }
 
@@ -175,7 +112,7 @@ class _PopoutIdleState extends State<PopoutIdle> {
                       height: 150,
                       child: Center(
                         child: Text(
-                          tirage.isNotEmpty ? tirage : _messages[_index],
+                          tirage.isNotEmpty ? tirage : phrasesAttente[_index],
                           textAlign: TextAlign.center,
                           style: BSType.questionPopout(
                                   color: tirage.isNotEmpty
@@ -191,7 +128,93 @@ class _PopoutIdleState extends State<PopoutIdle> {
             ),
           ),
         ),
+        // La musique d'ambiance s'annonce SOUS le bloc central, jamais à sa
+        // place : les phrases qui tournent sont ce qui fait sourire la salle
+        // pendant que l'animateur parle, et elles gardent leur boîte de
+        // 1080 x 150 et leur rotation de neuf secondes. Le bandeau se sert
+        // dans le mou du bloc centré, qui en a largement.
+        if (widget.snapshot.pisteEnCours.quelqueChose)
+          _BandeauMusique(piste: widget.snapshot.pisteEnCours),
         _TonightBand(snapshot: widget.snapshot),
+      ],
+    );
+  }
+}
+
+// « C'est quoi, cette toune-là ? »
+//
+// La question revient à chaque soirée, et personne ne veut interrompre pour
+// la poser. Trois éléments y répondent : la pochette, le titre, l'artiste.
+//
+// LA POCHETTE EST MONTRÉE TELLE QUELLE, sans recadrage, sans filtre et sans
+// le traitement demi-teinte du design system : les règles de Spotify
+// l'exigent, et c'est aussi la seule photographie de tout l'écran public.
+// Elle vient d'un fichier local (voir CachePochettes) : cette fenêtre n'a
+// jamais fait de réseau et ne va pas commencer dans une salle sans Wi-Fi.
+class _BandeauMusique extends StatelessWidget {
+  const _BandeauMusique({required this.piste});
+
+  final PisteEnCours piste;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        // Le même filet que le pied de page des équipes, pour que les deux
+        // bandes se lisent comme un seul bas de page.
+        const SizedBox(height: 4, child: ColoredBox(color: BSColors.text)),
+        SizedBox(
+          height: 128,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 52),
+            child: Row(
+              children: [
+                if (piste.pochette != null) ...[
+                  // Une image disparue ne casse pas l'écran en pleine
+                  // soirée : on n'affiche simplement rien, comme le logo.
+                  Image.file(
+                    File(piste.pochette!),
+                    width: 96,
+                    height: 96,
+                    fit: BoxFit.cover,
+                    errorBuilder: (_, _, _) => const SizedBox.shrink(),
+                  ),
+                  const SizedBox(width: 28),
+                ],
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('EN LECTURE SUR SPOTIFY',
+                          style: BSType.popoutHeaderMeta(
+                              color: BSColors.neutral500)),
+                      const SizedBox(height: BSSpace.s2),
+                      // Plancher de lisibilité du pop-out : 26 px, aucune
+                      // exception pour du contenu réel. Le titre monte plus
+                      // haut, l'artiste reste juste au-dessus.
+                      Text(
+                        piste.titre,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: BSType.buzzerNamePopout(color: BSColors.text)
+                            .copyWith(fontSize: 34),
+                      ),
+                      if (piste.artiste.isNotEmpty)
+                        Text(
+                          piste.artiste,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: BSType.body(
+                              size: 26, color: BSColors.neutral700),
+                        ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
       ],
     );
   }

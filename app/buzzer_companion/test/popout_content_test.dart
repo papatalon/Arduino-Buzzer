@@ -61,6 +61,7 @@ void main() {
         teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
         logoPath: null,
         vueSons: VueDesSons.aucune,
+        pisteEnCours: PisteEnCours.aucune,
       ),
     );
     expect(find.text("LE JEU S'EN VIENT"), findsOneWidget);
@@ -86,6 +87,7 @@ void main() {
         teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
         logoPath: null,
         vueSons: VueDesSons.aucune,
+        pisteEnCours: PisteEnCours.aucune,
       ),
     );
     expect(find.text('Qui donc ?'), findsOneWidget);
@@ -116,6 +118,7 @@ void main() {
         teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
         logoPath: null,
         vueSons: VueDesSons.aucune,
+        pisteEnCours: PisteEnCours.aucune,
       ),
     );
     expect(find.text('JAUNE GAGNE'), findsOneWidget);
@@ -173,6 +176,7 @@ void main() {
           teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
           logoPath: null,
           vueSons: VueDesSons.aucune,
+          pisteEnCours: PisteEnCours.aucune,
         );
 
     moteur.surBuzz(1, 300);
@@ -208,6 +212,7 @@ void main() {
         teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
         logoPath: null,
         vueSons: VueDesSons.aucune,
+        pisteEnCours: PisteEnCours.aucune,
       ),
     );
     expect(find.text(moteur.motAttention), findsOneWidget);
@@ -253,6 +258,7 @@ void main() {
         teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
         logoPath: null,
         vueSons: VueDesSons.aucune,
+        pisteEnCours: PisteEnCours.aucune,
       ),
     );
     expect(find.text('20 s'), findsOneWidget);

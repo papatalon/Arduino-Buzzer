@@ -27,6 +27,7 @@ import '../jeu/moteur_chrono_aveugle.dart';
 import '../jeu/moteur_ne_buzze_pas.dart';
 import '../jeu/moteur_reflexe.dart';
 import '../jeu/moteur_simon.dart';
+import '../musique/ambiance_spotify.dart';
 import '../questionnaires/tirage_questions.dart';
 import '../jeu/moteur_quiz.dart';
 import 'game_rules_panel.dart';
@@ -37,18 +38,24 @@ import 'question_flow.dart';
 import 'right_rail.dart';
 import 'screens/buzzers_screen.dart';
 import 'screens/device_screen.dart';
+import 'screens/musique_screen.dart';
 import 'screens/questions_screen.dart';
 import 'tokens.dart';
 
 // « Jeu actif » a eu son onglet ici. Choisir un jeu, choisir ses questions et
 // lancer sont trois etapes d'une seule chose : elles vivent maintenant dans
 // « Partie », dans cet ordre.
-enum ConsoleSection { partie, buzzers, questions, appareil }
+//
+// « Musique » se range avant « Appareil » : c'est un réglage de soirée, au
+// même titre que les buzzers et les questions, alors qu'Appareil est
+// l'outil technique et reste en bout de liste.
+enum ConsoleSection { partie, buzzers, questions, musique, appareil }
 
 const _sectionLabels = {
   ConsoleSection.partie: 'Partie',
   ConsoleSection.buzzers: 'Buzzers',
   ConsoleSection.questions: 'Questions',
+  ConsoleSection.musique: 'Musique',
   ConsoleSection.appareil: 'Appareil',
 };
 
@@ -78,6 +85,7 @@ class ConsoleShell extends StatefulWidget {
     required this.sons,
     required this.tirage,
     required this.simulateur,
+    required this.ambiance,
     required this.version,
   });
 
@@ -99,6 +107,7 @@ class ConsoleShell extends StatefulWidget {
   final Sonorisation sons;
   final AnimationTirage tirage;
   final Simulateur simulateur;
+  final AmbianceSpotify ambiance;
   final VersionCheck version;
 
   @override
@@ -202,6 +211,7 @@ class _ConsoleShellState extends State<ConsoleShell> {
                                   sons: widget.sons,
                                   tirage: widget.tirage,
                                   simulateur: widget.simulateur,
+                                  ambiance: widget.ambiance,
                                   pourLaPartie: _pourLaPartie,
                                   onNavigate: (s) => setState(() {
                                     _section = s;
@@ -401,6 +411,7 @@ class _CenterColumn extends StatelessWidget {
     required this.sons,
     required this.tirage,
     required this.simulateur,
+    required this.ambiance,
     required this.pourLaPartie,
     required this.onNavigate,
     required this.onChoisirPourPartie,
@@ -421,6 +432,7 @@ class _CenterColumn extends StatelessWidget {
   final Sonorisation sons;
   final AnimationTirage tirage;
   final Simulateur simulateur;
+  final AmbianceSpotify ambiance;
 
   final ConsoleSection section;
   final GameState game;
@@ -442,6 +454,8 @@ class _CenterColumn extends StatelessWidget {
             actif: actif,
             pourLaPartie: pourLaPartie,
             onRetourPartie: () => onNavigate(ConsoleSection.partie));
+      case ConsoleSection.musique:
+        return MusiqueScreen(ambiance: ambiance);
       case ConsoleSection.appareil:
         return DeviceScreen(
             ble: ble, game: game, logo: logo, simulateur: simulateur);

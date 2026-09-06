@@ -14,6 +14,11 @@ import '../questionnaires/questionnaire.dart';
 // tableau "Règles de confidentialité"). [answerText] est gardé à null tant
 // que [GameState.answerRevealed] est faux, dès la construction — la donnée
 // sensible n'est jamais sérialisée, pas seulement cachée côté UI.
+//
+// [pisteEnCours] est l'exception qui confirme la règle : ce qui joue dans
+// les haut-parleurs, la salle l'entend déjà. Rien à cacher, donc rien à
+// vérifier, et c'est écrit ici pour que personne n'aille chercher la ligne
+// manquante dans le tableau de confidentialité.
 class PopoutSnapshot {
   const PopoutSnapshot({
     required this.scores,
@@ -59,6 +64,7 @@ class PopoutSnapshot {
     this.soundLastOwner,
     this.soundLastClaimed = false,
     this.vueSons = VueDesSons.aucune,
+    this.pisteEnCours = PisteEnCours.aucune,
     this.enLice = const [true, true, true, true],
     this.motFinal = '',
     this.motAttention = '',
@@ -212,6 +218,9 @@ class PopoutSnapshot {
 
   // TOUT CE QUE LA SALLE VOIT DU CHOIX DES SONS. Voir [VueDesSons].
   final VueDesSons vueSons;
+
+  // La musique d'ambiance qui joue entre deux parties. Voir [PisteEnCours].
+  final PisteEnCours pisteEnCours;
 
   // Chemin du logo de la soirée sur le disque (les deux fenêtres tournent
   // sur la même machine), null si l'opérateur n'en a pas choisi.
@@ -450,6 +459,7 @@ class PopoutSnapshot {
     required List<String> teamNames,
     required String? logoPath,
     required VueDesSons vueSons,
+    required PisteEnCours pisteEnCours,
   }) {
     // Meme regle que pour le firmware : sur les jeux avec chrono, la salle ne
     // voit la question qu'une fois le « top » donne, pas pendant que
@@ -503,6 +513,7 @@ class PopoutSnapshot {
       chronoRestant: moteur.chronoRestant,
       chronoTotal: moteur.chronoTotal,
       vueSons: vueSons,
+      pisteEnCours: pisteEnCours,
       logoPath: logoPath,
     );
   }
@@ -512,6 +523,7 @@ class PopoutSnapshot {
     required List<String> teamNames,
     required String? logoPath,
     required VueDesSons vueSons,
+    required PisteEnCours pisteEnCours,
   }) {
     // La question elle-même n'est pas listée comme sensible dans le tableau
     // de confidentialité du design, mais le client a précisé que sur le
@@ -565,6 +577,7 @@ class PopoutSnapshot {
       soundLastOwner: game.soundLastOwner,
       soundLastClaimed: game.soundLastClaimed,
       vueSons: vueSons,
+      pisteEnCours: pisteEnCours,
       logoPath: logoPath,
     );
   }
@@ -625,6 +638,8 @@ class PopoutSnapshot {
       soundLastOwner: json['soundLastOwner'] as int?,
       soundLastClaimed: json['soundLastClaimed'] as bool? ?? false,
       vueSons: VueDesSons.decode(json['vueSons'] as Map<String, dynamic>?),
+      pisteEnCours:
+          PisteEnCours.decode(json['pisteEnCours'] as Map<String, dynamic>?),
       logoPath: json['logoPath'] as String?,
     );
   }
@@ -682,8 +697,78 @@ class PopoutSnapshot {
         'soundLastOwner': soundLastOwner,
         'soundLastClaimed': soundLastClaimed,
         'vueSons': vueSons.encode(),
+        'pisteEnCours': pisteEnCours.encode(),
         'logoPath': logoPath,
       });
+}
+
+// CE QUE LA SALLE VOIT DE LA MUSIQUE D'AMBIANCE.
+//
+// Entre deux parties, l'écran d'attente est le plan le plus longtemps
+// affiché de la soirée, et quelqu'un finit toujours par demander « c'est
+// quoi, cette toune-là ». Trois champs y répondent sans rien enlever au
+// reste de l'écran.
+//
+// RIEN DE CONFIDENTIEL ICI, contrairement au reste de l'instantané : ce qui
+// joue sort déjà des haut-parleurs, la salle l'entend avant de le lire. Le
+// champ s'ajoute donc au contrat sans lui poser de question.
+//
+// La pochette voyage en CHEMIN DE FICHIER, jamais en octets ni en adresse
+// web, pour la même raison que le logo de la soirée : les deux fenêtres
+// tournent sur la même machine, et celle du pop-out n'a jamais fait de
+// réseau. Voir CachePochettes.
+class PisteEnCours {
+  const PisteEnCours({
+    this.titre = '',
+    this.artiste = '',
+    this.pochette,
+    this.enLecture = false,
+  });
+
+  static const aucune = PisteEnCours();
+
+  final String titre;
+
+  /// Vide sur un balado, qui n'a pas d'artistes : on n'invente rien.
+  final String artiste;
+
+  /// Chemin local de la pochette, null tant qu'elle n'est pas descendue.
+  /// Le bandeau se passe alors d'image plutôt que de montrer un trou.
+  final String? pochette;
+
+  final bool enLecture;
+
+  /// Vrai quand il y a de quoi montrer un bandeau.
+  ///
+  /// EN PAUSE, LE BANDEAU DISPARAÎT. Laisser la dernière piste affichée
+  /// pendant que le silence dure ferait mentir l'écran, et c'est justement
+  /// ce qui arrive au départ d'une partie, quand l'ambiance se coupe toute
+  /// seule.
+  bool get quelqueChose => enLecture && titre.isNotEmpty;
+
+  PisteEnCours copierAvec({bool? enLecture, String? pochette}) => PisteEnCours(
+        titre: titre,
+        artiste: artiste,
+        pochette: pochette ?? this.pochette,
+        enLecture: enLecture ?? this.enLecture,
+      );
+
+  factory PisteEnCours.decode(Map<String, dynamic>? json) {
+    if (json == null) return aucune;
+    return PisteEnCours(
+      titre: json['titre'] as String? ?? '',
+      artiste: json['artiste'] as String? ?? '',
+      pochette: json['pochette'] as String?,
+      enLecture: json['enLecture'] as bool? ?? false,
+    );
+  }
+
+  Map<String, dynamic> encode() => {
+        'titre': titre,
+        'artiste': artiste,
+        'pochette': pochette,
+        'enLecture': enLecture,
+      };
 }
 
 // CE QUE LA SALLE VOIT DU CHOIX DES SONS.

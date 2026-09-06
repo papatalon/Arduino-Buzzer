@@ -32,8 +32,24 @@ class Sonorisation {
 
   bool get versLApplication => ble.appHandlesSound;
 
+  /// Prévenu qu'une partie s'ouvre. Sert à couper la musique d'ambiance.
+  ///
+  /// L'AMBIANCE N'EST PAS UNE TROISIÈME SORTIE. Elle ne joue aucun son de
+  /// partie, elle ignore le réglage PC/buzzer, et elle sort des
+  /// haut-parleurs par un tout autre chemin (le client Spotify du poste).
+  /// La router ici serait une erreur.
+  ///
+  /// Mais l'ouverture est LE moment où elle doit se taire, et cette classe
+  /// est la seule à le voir passer quelle que soit la sortie. Le crochet dit
+  /// « une partie s'ouvre », pas « le son sort par là » : les appelants
+  /// restent ignorants du routage, ce qui est tout l'objet de cette classe.
+  void Function()? surOuverture;
+
   /// Musique d'ouverture, au lancement d'une partie.
-  void intro() => _jouer(locale.playIntro, 'I');
+  void intro() {
+    surOuverture?.call();
+    _jouer(locale.playIntro, 'I');
+  }
 
   /// Vrai tant que l'application SAIT qu'un son joue encore.
   ///
