@@ -57,6 +57,7 @@ Repères, à mettre à jour après chaque lot :
 | 5 septembre 2026, thématique Disney et les parcs (+18, 24 étiquetées) | 54 | 217 | 0 | 14 | 0 |
 | 5 septembre 2026, thématique Voyages (+27, 86 étiquetées) | 54 | 217 | 0 | 14 | 0 |
 | 5 septembre 2026, les 11 catégories deviennent des thématiques (0 neuve) | 54 | 217 | 0 | 14 | 0 |
+| 5 septembre 2026, les 221 étiquettes « quebec » récupérées (0 neuve) | 54 | 217 | 0 | 14 | 0 |
 
 Ce dernier passage n'a touché aucune question : les onze catégories sont
 devenues des thématiques qui absorbent leur catégorie, ce qui donne une

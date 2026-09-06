@@ -5,10 +5,10 @@ description: Écrire de nouvelles questions pour la banque du Buzzer, sans doubl
 
 # Écrire des questions
 
-La banque compte 3684 questions relues une par une. Une seule affirmation
+La banque compte 3875 questions relues une par une. Une seule affirmation
 fausse fait perdre au jeu son autorité : quelqu'un dans le salon va le
 savoir, et à partir de là il doute de tout le reste. Cette procédure existe
-pour qu'aucun lot n'entre sans avoir passé les mêmes barrières que les 3684.
+pour qu'aucun lot n'entre sans avoir passé les mêmes barrières que les 3875.
 
 **Une question qui n'a pas franchi toutes les étapes n'entre pas.** Il n'y a
 pas de « presque ».
@@ -126,6 +126,49 @@ précédent brouillon de ce skill en citait un de mémoire, et il était faux.
   ne l'écrit que sur une question d'un AUTRE fichier qui parle du même
   sujet — « @ quebec » sous une question québécoise rangée dans Culture pop.
 
+### Bonifier une thématique, ou en ouvrir une
+
+**L'étiquette coûte moins cher que la question, et vaut autant.** La
+thématique Voyages compte 113 questions : 27 ont été écrites, **86 étaient
+déjà dans la banque** sans l'étiquette. Sur un lot de thématique, le premier
+travail n'est donc pas d'écrire, c'est de **relire les candidates** :
+
+```bash
+cd app/buzzer_companion && dart run tool/generate_questionnaires.dart --proposer <slug>
+```
+
+Les mots-clés de la thématique ne servent qu'à ça, et ils ratissent large :
+sur 212 candidates proposées à Voyages, 86 ont été retenues. La liste se
+relit une par une, comme un lot.
+
+**Une thématique neuve ne refait pas une catégorie.** « Le Québec ailleurs »
+a été supprimée pour ça, et Voyages a frôlé le même sort : elle touche
+Géographie et ses 360 questions. La frontière s'écrit **dans le code**,
+au-dessus du thème, en disant ce qui est dedans ET ce qui est dehors. Pour
+Voyages : dedans le départ, le séjour et ce qu'on visite ; dehors les
+capitales, les frontières et les superficies, qui sont le cœur de la
+catégorie. Sans cette ligne écrite, la thématique dérive vers son voisin au
+fil des lots.
+
+**Une seule question par lieu, par œuvre, par personne.** Le Louvre en avait
+deux, le Taj Mahal deux, la tour Eiffel trois, Gizeh cinq. Une manche de dix
+questions tirées dans la thématique reposait deux fois le même monument.
+Quand plusieurs existent, garder celle **dont la réponse EST le sujet** :
+« Quelle grande statue verte tient une torche à l'entrée d'un port
+américain ? » plutôt que « Quel pays a offert la statue de la Liberté ? ».
+
+**Une question peut porter plusieurs thématiques**, et il faut le faire : 21
+des 113 questions de Voyages en portent une autre, le pont de la
+Confédération `voyages transports mer`, le canal Rideau `voyages
+sports-hiver`. Le critère reste le SUJET : l'île Bonaventure n'a pas pris
+`regne-animal` parce que le sujet est l'île, et les fous de Bassan ne sont
+qu'un attribut.
+
+**Le slug d'une catégorie ne s'écrit jamais dans son propre fichier.** Le
+générateur s'arrête et nomme les fautives. On ne l'écrit que sur une question
+d'un AUTRE fichier : `@ quebec` sous « Quel objet orange envahit les rues de
+Montréal chaque été ? », rangée dans Culture pop.
+
 ### La question s'écrit en français soigné
 
 Elle est lue à voix haute et s'affiche sur l'écran public. Les conventions
@@ -201,9 +244,20 @@ Trois recherches par question, pas une :
 3. **La forme de la réponse.** Si la banque dit `Le pont Jacques-Cartier`,
    ne pas écrire `Jacques-Cartier` : deux noms pour la même chose font
    refuser un joueur qui a raison, et c'est un compteur qui monte.
+4. **Le sujet SANS son mot générique.** Chercher `132` et non `route 132`,
+   `Bonaventure` et non `île Bonaventure`, `Confédération` et non `pont de
+   la Confédération`. C'est la recherche qui manque le plus souvent, et elle
+   a coûté sept questions au lot Voyages : écrites, vérifiées, sourcées, puis
+   jetées parce que la banque les avait déjà sous un autre habillage.
+   « route 132 » ne trouve pas « Quelle route ceinture la péninsule
+   gaspésienne ? », dont la réponse est `La 132`.
 
 Une recherche vide ne prouve pas que le terrain est libre. Elle prouve que
 ce mot-là n'y est pas.
+
+**Quand la banque l'a déjà, on l'étiquette au lieu de l'écrire.** C'est le
+même résultat pour la thématique, zéro ligne ajoutée, et zéro fait de plus à
+vérifier.
 
 Sur un gros lot, **lire d'abord le fichier de la catégorie** en entier,
 `tool/questions/<categorie>.txt`, les deux blocs. C'est la source, à jour,
@@ -384,7 +438,7 @@ cd app/buzzer_companion && dart run tool/generate_questionnaires.dart
 
 | compteur | portée | règle |
 |---|---|---|
-| le générateur | tout | doit sortir en **code 0**. Un doublon exact ou un miroir cassé l'arrête. |
+| le générateur | tout | doit sortir en **code 0**. Un doublon exact, un miroir cassé, un slug inconnu ou le slug d'une catégorie écrit dans son propre fichier l'arrêtent. |
 | **questions exigées sans source** | bloc libre, sous le repère | doit rester à **0**. Chacune est nommée dans la sortie. Les **sources orphelines** se corrigent aussi : une question reformulée se revérifie, une question retirée libère son entrée. |
 | **quasi-doublons** | même catégorie | doit rester à **0**. Aucun cas légitime : quand il en sort un, une des deux lignes est de trop. Le générateur les affiche en détail. |
 | **variantes de nom** | toute la banque | ne doit **pas augmenter**. Deux réponses pour la même chose font refuser un joueur qui a raison. |
@@ -429,6 +483,9 @@ ses entrées dans `SOURCES.txt` n'est pas rendu, et le compteur le dira.
 - Décrire une entité réelle de mémoire : sa couleur, sa race, son aspect.
 - Trancher entre deux sources qui se contredisent.
 - Écrire une question sans niveau, sans tranches ou sans ses thématiques.
+- Écrire une question que la banque a déjà, faute d'avoir cherché son sujet
+  sans son mot générique.
+- Écrire le slug d'une catégorie sous une question de son propre fichier.
 - Compléter un lot pour atteindre le nombre demandé.
 - Écrire une question sous le repère des sources sans son entrée dans
   `SOURCES.txt`, ou l'écrire au-dessus du repère pour échapper au compteur.

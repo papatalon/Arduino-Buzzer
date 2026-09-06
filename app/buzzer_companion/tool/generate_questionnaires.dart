@@ -1696,25 +1696,26 @@ const kThemes = <Theme>[
   ], exclude: [
     'chaise',   // « se tirer une buche » : la buche est un siege, ici
   ]),
-  // PAS DE THÉMATIQUE QUÉBÉCOISE, et c'est une décision, pas un oubli.
+  // LA THÉMATIQUE QUÉBÉCOISE EST REVENUE, ET AUTREMENT. Son histoire vaut
+  // d'être lue avant d'en ouvrir une autre du même genre.
   //
   // Il y en a eu une, « Le Québec ailleurs », qui ramassait les 221 questions
   // québécoises vivant dans les neuf autres catégories : Maurice Richard dans
   // Sports, La Petite Vie dans Cinéma, les rigodons dans Musique. Elle
-  // excluait la catégorie Québec pour ne rien reposer, et se rangeait sous sa
-  // tuile pour ne pas ressembler à un doublon.
+  // EXCLUAIT la catégorie Québec pour ne rien reposer. Elle a été supprimée
+  // parce que « Québec 368 » au-dessus de « Le Québec ailleurs 221 » ne
+  // s'expliquait pas tout seul : ailleurs qu'où ? Rien ne distinguait les
+  // deux du siège du joueur, la séparation ne tenait qu'au fichier où la
+  // question avait été écrite.
   //
-  // LES DEUX RAISONS SONT MORTES AVEC LES TUILES. Il n'y a plus de
-  // bibliothèque de questionnaires à ranger, et dans une colonne de facettes
-  // « Québec 368 » au-dessus de « Le Québec ailleurs 221 » ne s'explique plus
-  // tout seul : ailleurs qu'où ? Rien ne distinguait les deux du siège du
-  // joueur, la séparation ne tenait qu'au fichier où la question avait été
-  // écrite.
+  // CE QUI A CHANGÉ : la thématique ABSORBE sa catégorie au lieu de
+  // l'exclure. Une seule facette, « Québec 592 », qui est la somme des 371 du
+  // fichier et des 221 étiquetées ailleurs. Le probleme qui l'avait tuée ne
+  // se pose plus, puisqu'il n'y a plus deux tuiles à distinguer.
   //
-  // Ce que ça coûte, et qui est assumé : les 221 questions restent dans la
-  // banque et se jouent dans leur catégorie, mais on ne peut plus composer
-  // une manche québécoise qui les rassemble. Une soirée « Québec » tire dans
-  // les 368 de la catégorie.
+  // Les 221 étiquettes ont été récupérées telles quelles du commit qui les
+  // avait effacées : le tri avait déjà été fait une fois, et le refaire de
+  // mémoire aurait été plus long et moins sûr.
   Theme('regne-animal', 'Le règne animal', '🐾', 'Bêtes à poil, à plume et à écailles.', [
     'animal', 'animaux', 'oiseau', 'oiseaux', 'poisson', 'poissons',
     'insecte', 'insectes', 'mammifere', 'mammiferes', 'reptile', 'reptiles',
