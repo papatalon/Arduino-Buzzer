@@ -13,7 +13,7 @@ import '../tokens.dart';
 // UN SEUL TYPE DE FICHIER, depuis qu'il n'y a plus de questionnaires
 // prédécoupés. Les 283 fichiers publiés en ligne ont laissé la place à une
 // banque unique dans laquelle l'écran Partie compose une manche au moment de
-// jouer, selon la catégorie, la tranche d'âge et le niveau demandés. Un
+// jouer, selon la thématique, la tranche d'âge et le niveau demandés. Un
 // fichier figé ne servait plus qu'à répéter, en moins souple, un tirage qui
 // sait déjà le faire.
 //
@@ -326,7 +326,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
 // LA BANQUE se consulte, ne se joue pas fichier par fichier. Elle a remplacé
 // les 283 questionnaires prédécoupés : on compose sa manche au moment de
 // jouer, dans l'écran Partie. Ce qu'on vient chercher ici, c'est vérifier une
-// question, voir ce qu'une catégorie contient avant une soirée, ou juste
+// question, voir ce qu'une thématique contient avant une soirée, ou juste
 // lire. Le fureteur est donc en lecture seule et n'a aucun bouton « jouer » :
 // il n'aurait aucun sens de mettre en jeu une liste filtrée depuis une
 // bibliothèque alors que le tirage fait exactement cela, en mieux.
@@ -618,7 +618,7 @@ class _Segmente extends StatelessWidget {
 // LIRE LA BANQUE, sans la jouer.
 //
 // Trois usages : vérifier une question dont on doute, voir ce qu'une
-// catégorie contient avant une soirée, et compter ce qu'un filtre laisse. Le
+// thématique contient avant une soirée, et compter ce qu'un filtre laisse. Le
 // premier est de loin le plus fréquent, donc la recherche est en tête.
 //
 // LES CRITÈRES SONT EN COLONNE, à gauche, et non en rangées au-dessus de la
@@ -653,8 +653,9 @@ class _FureteurBanqueState extends State<_FureteurBanque> {
   static const _lThematiques = 180.0;
   static const _lClassement = 190.0;
 
-  // UNE SEULE LISTE DE FACETTES : les onze catégories sont aussi des
-  // thématiques, et le furetage se filtre donc sur un seul axe.
+  // UNE SEULE LISTE DE FACETTES : vingt thématiques, onze déclarées par le
+  // fichier de la question et neuf qui traversent. Le furetage se filtre donc
+  // sur un seul axe.
   final Set<String> _themes = {};
   final Set<Tranche> _tranches = {};
   final Set<int> _niveaux = {};
@@ -813,8 +814,8 @@ class _FureteurBanqueState extends State<_FureteurBanque> {
             _SectionFacette(
               titre: 'THÉMATIQUES',
               indice: _themes.isEmpty ? 'toutes' : null,
-              // UNE SEULE SECTION : les onze catégories sont devenues des
-              // thématiques, elles ouvrent la liste et les treize qui
+              // UNE SEULE SECTION : les onze déclarées par un fichier ouvrent
+              // la liste, et les neuf qui
               // traversent la banque suivent. « Musique » et « Spécial Noël »
               // se cochent donc au même endroit, ce que le tirage faisait
               // déjà en les réunissant dans un seul OU.
@@ -1224,19 +1225,19 @@ class _LigneBanque extends StatelessWidget {
           ),
           // TOUTES LES THÉMATIQUES DU MÊME CÔTÉ ET DE LA MÊME COULEUR.
           //
-          // La catégorie s'affichait au-dessus, en gris, et les thématiques en
-          // dessous, en magenta. Deux natures, deux couleurs : c'était vrai
-          // quand la catégorie était l'autre axe du classement. Depuis que
-          // les onze catégories SONT des thématiques, « Sports » en gris
+          // L'étiquette du fichier s'affichait au-dessus, en gris, et les
+          // autres en dessous, en magenta. Deux natures, deux couleurs :
+          // c'était vrai quand elle était l'autre axe du classement. Depuis
+          // qu'il n'y a plus qu'un axe, « Sports » en gris
           // au-dessus de « Québec » en magenta faisait croire à deux sortes
           // d'étiquettes alors que le tirage les traite pareil.
           //
-          // Celle de la catégorie vient en tête, parce que le générateur les
-          // écrit dans l'ordre de kThemes et que les onze y sont d'abord.
+          // Celle du fichier vient en tête : le générateur la place là, et
+          // c'est elle qui sert d'étiquette à l'écran et au tirage.
           SizedBox(
             width: largeurThematiques,
             child: Text(
-              q.themes.isEmpty ? q.category : q.themes.join(', '),
+              q.themes.join(', '),
               style: BSType.body(size: 14, color: BSColors.accent2_700),
             ),
           ),
@@ -1557,7 +1558,7 @@ class _Editor extends StatelessWidget {
               ),
               const SizedBox(height: BSSpace.s4),
               // En-têtes de colonnes : inutiles avec une question, précieux avec
-              // trente, quand la catégorie n'est plus qu'une colonne de texte
+              // trente, quand l'étiquette n'est plus qu'une colonne de texte
               // gris parmi d'autres.
               Row(
                 children: [
@@ -1692,18 +1693,23 @@ class _QuestionRow extends StatelessWidget {
               ),
             ),
             const SizedBox(width: BSSpace.s3),
-            // Catégorie libre, avec les dix du firmware en suggestion : un
-            // questionnaire à thème invente ses propres catégories
-            // (« Films de Noël »), mais autant ne pas retaper « Histoire ».
+            // Thématique libre, avec les dix du firmware en suggestion : un
+            // questionnaire écrit à la main invente les siennes (« Films de
+            // Noël »), mais autant ne pas retaper « Histoire ». Elle prend la
+            // PREMIÈRE place de « themes », celle qui sert d'étiquette.
             SizedBox(
               width: 240,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  _CategoryField(
-                    value: question.category,
+                  _ThemeField(
+                    value: question.etiquette,
                     onChanged: (v) {
-                      question.category = v;
+                      final reste = question.themes.skip(1).toList();
+                      question.themes = {
+                        if (v.trim().isNotEmpty) v.trim(),
+                        ...reste,
+                      };
                       onChanged();
                     },
                   ),
@@ -1735,7 +1741,7 @@ class _QuestionRow extends StatelessWidget {
   }
 }
 
-// Le niveau d'une question, sous sa catégorie : les trois mots côte à
+// Le niveau d'une question, sous sa thématique : les trois mots côte à
 // côte, celui qui est retenu souligné, et un second clic le retire. Trois
 // options ne méritent ni menu ni boîte.
 class _NiveauField extends StatelessWidget {
@@ -1779,8 +1785,8 @@ class _NiveauField extends StatelessWidget {
   }
 }
 
-class _CategoryField extends StatelessWidget {
-  const _CategoryField({required this.value, required this.onChanged});
+class _ThemeField extends StatelessWidget {
+  const _ThemeField({required this.value, required this.onChanged});
 
   final String value;
   final ValueChanged<String> onChanged;
@@ -1803,7 +1809,7 @@ class _CategoryField extends StatelessWidget {
           shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
           onSelected: onChanged,
           itemBuilder: (context) => [
-            for (final name in kCategoryNames)
+            for (final name in kThemesFirmware)
               PopupMenuItem(
                 value: name,
                 child: Text(

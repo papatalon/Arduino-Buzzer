@@ -9,7 +9,7 @@ import 'questionnaire.dart';
 // LE PARTAGE DES RÔLES. En mode applicatif, le buzzer ne s'occupe que des
 // boutons : qui a sonné le premier, les lumières, le verrouillage entre deux
 // questions. Les questions, elles, viennent d'ici. Le firmware a déjà tout
-// ce qu'il faut pour s'effacer : un masque de catégories à zéro met sa banque
+// ce qu'il faut pour s'effacer : un masque de thématiques à zéro met sa banque
 // en retrait (« l'animateur utilise son propre questionnaire ») et le reste
 // de la partie continue de tourner sans rien savoir des questions.
 //
@@ -99,7 +99,7 @@ class ActiveQuestionnaire extends ChangeNotifier {
 
   /// LE PERIMETRE OU PIOCHER UNE QUESTION DE BRIS.
   ///
-  /// Les categories et thematiques de la manche en cours, pour rester dans le
+  /// Les thematiques de la manche en cours, pour rester dans le
   /// meme esprit : departager une manche d'histoire avec une question de
   /// cinema serait injuste. Vide veut dire « toutes les questions », ce qui
   /// est le cas d'un questionnaire personnalise, qui ne designe aucun
@@ -174,7 +174,7 @@ class ActiveQuestionnaire extends ChangeNotifier {
   void _push() {
     final q = current;
     _game.setAppQuestion(
-      q?.category.isEmpty ?? true ? null : q!.category,
+      q?.etiquette.isEmpty ?? true ? null : q!.etiquette,
       q?.question,
       q?.answer,
       numero: q == null ? null : _index + 1,

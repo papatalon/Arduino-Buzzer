@@ -37,7 +37,7 @@ const kSiteUrl = 'https://buzzer.sd6tools.net';
 const kFormatBanque = 'buzzer-banque';
 const kAssetBanque = 'assets/questions/banque.json';
 
-// Une catégorie ou une thématique, avec de quoi dessiner sa pastille.
+// Une thématique, avec de quoi dessiner sa pastille.
 class Facette {
   const Facette({
     required this.nom,

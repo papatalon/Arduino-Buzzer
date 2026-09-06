@@ -487,7 +487,7 @@ class PopoutSnapshot {
       phase: game.phase,
       lastBuzz: moteur.etape == EtapeQuiz.buzze ? moteur.buzzeur : moteur.dernierJuge,
       flowState: flow,
-      questionCategory: montrer && question.category.isNotEmpty ? question.category : null,
+      questionCategory: montrer && question.etiquette.isNotEmpty ? question.etiquette : null,
       questionText: montrer ? question.question : null,
       answerText: revelee ? question?.answer : null,
       questionsAsked: moteur.numeroQuestion,

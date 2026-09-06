@@ -67,14 +67,20 @@ void main() {
   // grilles de filtres, et une question qui perdrait la thematique de sa
   // categorie deviendrait injoignable au tirage sans qu'un ecran ne le dise.
   // C'est exactement le genre de manque qui ne se voit qu'en soiree.
-  test('chaque question porte au moins la thématique de sa catégorie',
+  // L'étiquette d'une question est sa PREMIÈRE thématique, depuis que le champ
+  // « categorie » a disparu. Deux choses à garder : elle existe, sinon la
+  // question est injoignable au tirage ; et elle nomme une vraie thématique de
+  // la banque, sinon l'écran affiche un nom que nulle grille ne propose.
+  test('chaque question porte une étiquette qui est une vraie thématique',
       () async {
     final b = await lire();
     expect(b.questions.where((q) => q.themes.isEmpty), isEmpty,
         reason: 'une question sans thématique est injoignable au tirage');
+    final connus = {for (final t in b.themes) t.nom};
     for (final q in b.questions) {
-      expect(q.themes, contains(q.category),
-          reason: 'la thématique « ${q.category} » manque sous « ${q.question} »');
+      expect(connus, contains(q.etiquette),
+          reason: 'l\x27étiquette « ${q.etiquette} » de « ${q.question} » ne '
+              'correspond à aucune thématique de la banque');
     }
   });
 

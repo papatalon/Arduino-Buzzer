@@ -84,7 +84,6 @@ String? etiquetteDesNiveaux(Map<int, int> comptes) {
 
 class QuizQuestion {
   QuizQuestion({
-    this.category = '',
     this.question = '',
     this.answer = '',
     this.niveau,
@@ -92,7 +91,6 @@ class QuizQuestion {
     this.themes = const {},
   });
 
-  String category;
   String question;
   String answer;
   // Voir [kNomsNiveaux]. Null quand personne ne l'a coté : un questionnaire
@@ -101,17 +99,23 @@ class QuizQuestion {
   // Voir [Tranche]. Vide quand la question ne se prononce pas : elle vaut
   // alors pour tout le monde et aucun filtre ne l'écarte.
   Set<Tranche> ages;
-  // Les découpes qui traversent les catégories : « Spécial Noël », « Le corps
+  // Les découpes qui traversent les fichiers : « Spécial Noël », « Le corps
   // humain ». Calculées par le générateur, portées par la question plutôt que
   // par un fichier depuis que les questionnaires prédécoupés ont disparu.
   Set<String> themes;
+
+  // L'ÉTIQUETTE D'UNE QUESTION EST SA PREMIÈRE THÉMATIQUE. Il y avait ici un
+  // champ « category » qui redisait le nom du fichier d'où venait la
+  // question, alors que « themes » le porte déjà, en tête de liste : un axe
+  // parallèle qui ne pouvait que diverger. C'est ce nom qui s'affiche
+  // au-dessus de la question et qui sert de clé d'équilibrage au tirage.
+  String get etiquette => themes.isEmpty ? '' : themes.first;
 
   // Une question sans énoncé n'est pas jouable ; la réponse peut rester vide
   // (l'animateur la connaît, ou la juge lui-même).
   bool get isUsable => question.trim().isNotEmpty;
 
   QuizQuestion copy() => QuizQuestion(
-      category: category,
       question: question,
       answer: answer,
       niveau: niveau,
@@ -119,7 +123,6 @@ class QuizQuestion {
       themes: {...themes});
 
   Map<String, dynamic> toJson() => {
-        'categorie': category,
         'question': question,
         'reponse': answer,
         if (niveau != null) 'niveau': niveau,
@@ -128,14 +131,19 @@ class QuizQuestion {
       };
 
   // Tolérant à dessein : un fichier écrit à la main peut omettre la
-  // catégorie ou la réponse. Seul l'énoncé compte vraiment.
+  // thématique ou la réponse. Seul l'énoncé compte vraiment.
   factory QuizQuestion.fromJson(Map<String, dynamic> json) => QuizQuestion(
-        category: (json['categorie'] as String?)?.trim() ?? '',
         question: (json['question'] as String?)?.trim() ?? '',
         answer: (json['reponse'] as String?)?.trim() ?? '',
         niveau: niveauDepuisJson(json['niveau']),
         ages: tranchesDepuisJson(json['ages']),
         themes: {
+          // Les questionnaires enregistrés avant le retrait du champ portent
+          // encore « categorie » : on la relit EN PREMIER, pour qu'un fichier
+          // déjà sur le disque garde exactement l'étiquette qu'il affichait.
+          if ((json['categorie'] as String?)?.trim() case final String c
+              when c.isNotEmpty)
+            c,
           if (json['themes'] case final List brut)
             for (final e in brut) '$e'.trim(),
         },

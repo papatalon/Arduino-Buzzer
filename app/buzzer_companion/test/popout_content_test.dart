@@ -70,7 +70,7 @@ void main() {
     final actif = ActiveQuestionnaire(GameState())
       ..use(
         Questionnaire(title: 'Essai', questions: [
-          QuizQuestion(category: 'Histoire', question: 'Qui donc ?', answer: 'Lui'),
+          QuizQuestion(themes: {'Histoire'}, question: 'Qui donc ?', answer: 'Lui'),
         ]),
         origine: 'Essai',
       );

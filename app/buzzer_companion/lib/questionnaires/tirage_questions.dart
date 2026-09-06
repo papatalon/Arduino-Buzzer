@@ -74,7 +74,7 @@ class TirageQuestions {
     // « Spécial Noël » demande les questions de l'une OU de l'autre, pas leur
     // intersection, qui serait presque toujours vide.
     //
-    // Il y avait ici une seconde condition sur l'ancien axe des catégories.
+    // Il y avait ici une seconde condition sur l'ancien axe des étiquettes.
     // Elle ne pouvait plus être vraie sans que la thématique du fichier le
     // soit déjà : chaque question porte celle de son fichier, et un test de
     // banque_embarquee_test.dart garde qu'aucune n'en est dépourvue.
@@ -200,22 +200,22 @@ class TirageQuestions {
     // ex aequo.
     final restant = List<QuizQuestion>.from(bassin)..shuffle(_hasard);
     final choisies = <QuizQuestion>[];
-    final quotas = _quotasCategories(bassin, nombre);
+    final quotas = _quotasEtiquettes(bassin, nombre);
     final pris = <String, int>{};
 
-    // Combien il manque à cette catégorie pour atteindre sa cible. Négatif
+    // Combien il manque à cette étiquette pour atteindre sa cible. Négatif
     // quand elle déborde déjà, ce qui la fait passer en dernier.
-    int manque(String categorie) =>
-        (quotas[categorie] ?? 0) - (pris[categorie] ?? 0);
+    int manque(String etiquette) =>
+        (quotas[etiquette] ?? 0) - (pris[etiquette] ?? 0);
 
     // La question la plus utile parmi celles proposées : celle dont la
-    // catégorie est la plus en retard. À égalité, la première dans l'ordre
+    // étiquette est la plus en retard. À égalité, la première dans l'ordre
     // brassé.
     QuizQuestion? meilleure(Iterable<QuizQuestion> parmi) {
       QuizQuestion? gagnante;
       var meilleurEcart = -1 << 30;
       for (final q in parmi) {
-        final ecart = manque(q.category);
+        final ecart = manque(q.etiquette);
         if (ecart > meilleurEcart) {
           meilleurEcart = ecart;
           gagnante = q;
@@ -227,7 +227,7 @@ class TirageQuestions {
     void prendre(QuizQuestion q) {
       choisies.add(q);
       restant.remove(q);
-      pris[q.category] = (pris[q.category] ?? 0) + 1;
+      pris[q.etiquette] = (pris[q.etiquette] ?? 0) + 1;
     }
 
     // Aucune tranche cochée veut dire « tout le monde », pas « peu importe » :
@@ -241,7 +241,7 @@ class TirageQuestions {
     // veulent rien de général. Le plancher répond à une demande de MÉLANGE.
     if (enJeu.length >= 2) {
       // Jamais plus de la moitié de la manche en planchers : le reste doit
-      // rester libre pour le prorata des catégories. Pour une manche courte,
+      // rester libre pour le prorata des étiquettes. Pour une manche courte,
       // la division tombe à zéro d'elle-même, et une question de bris ne se
       // retrouve pas à devoir servir une tranche en particulier.
       final plancher = nombre ~/ (2 * enJeu.length);
@@ -272,7 +272,7 @@ class TirageQuestions {
       if (oubliees.length == enJeu.length) oubliees.clear();
     }
 
-    // Le reste au prorata des catégories, en rattrapant celles que les
+    // Le reste au prorata des étiquettes, en rattrapant celles que les
     // planchers ont laissées derrière.
     while (choisies.length < nombre && restant.isNotEmpty) {
       prendre(meilleure(restant)!);
@@ -283,10 +283,10 @@ class TirageQuestions {
   int _stock(List<QuizQuestion> bassin, Tranche t) =>
       bassin.where((q) => q.ages.contains(t)).length;
 
-  // Combien de questions chaque catégorie doit fournir, au prorata de son
+  // Combien de questions chaque étiquette doit fournir, au prorata de son
   // stock dans le bassin filtré.
   //
-  // Onze catégories valant chacune 2,3 questions donnent 22 places sur 25
+  // Onze étiquettes valant chacune 2,3 questions donnent 22 places sur 25
   // demandées : il reste toujours des miettes à distribuer, et c'est là que
   // tout se joue.
   //
@@ -303,10 +303,10 @@ class TirageQuestions {
   // peu moins souvent, et sur une soirée chacune retombe sur son vrai
   // prorata. Balayage à départ aléatoire plutôt que tirages indépendants,
   // pour que le compte tombe pile sur le nombre demandé.
-  Map<String, int> _quotasCategories(List<QuizQuestion> bassin, int nombre) {
+  Map<String, int> _quotasEtiquettes(List<QuizQuestion> bassin, int nombre) {
     final stock = <String, int>{};
     for (final q in bassin) {
-      stock[q.category] = (stock[q.category] ?? 0) + 1;
+      stock[q.etiquette] = (stock[q.etiquette] ?? 0) + 1;
     }
     final quotas = <String, int>{};
     final restes = <String, double>{};
@@ -321,7 +321,7 @@ class TirageQuestions {
     final places = nombre - attribuees;
     if (places <= 0) return quotas;
 
-    // Ordre brassé : sans lui, deux catégories aux restes voisins seraient
+    // Ordre brassé : sans lui, deux étiquettes aux restes voisins seraient
     // toujours départagées dans le même sens par le balayage.
     final ordre = restes.keys.toList()..shuffle(_hasard);
     var curseur = _hasard.nextDouble();

@@ -41,9 +41,9 @@ const _sourcePath = '../../Questions.cpp';
 //
 // Un fichier porte donc les deux :
 //
-//   # Catégorie : Culture générale
+//   # Thématique : Culture générale
 //   # Emoji : 💡
-//   # Firmware : 0            (absent si la catégorie n'est pas au firmware)
+//   # Firmware : 0            (absent si la thématique n'est pas au firmware)
 //   ... le miroir, vérifié contre Questions.cpp ...
 //   === hors firmware ===
 //   ... les questions libres ...
@@ -122,10 +122,10 @@ List<_Fichier> _fichiersQuestions() {
           repereAvantSeparateur = !apresSeparateur;
           continue;
         }
-        final m = RegExp(r'^#\s*(Catégorie|Emoji|Firmware)\s*:\s*(.+)$').firstMatch(l);
+        final m = RegExp(r'^#\s*(Thématique|Emoji|Firmware)\s*:\s*(.+)$').firstMatch(l);
         if (m == null) continue;
         switch (m.group(1)) {
-          case 'Catégorie':
+          case 'Thématique':
             categorie = m.group(2)!.trim();
           case 'Emoji':
             emoji = m.group(2)!.trim();
@@ -137,7 +137,7 @@ List<_Fichier> _fichiersQuestions() {
       (apresSeparateur ? libres : miroir).add(l);
     }
     if (categorie == null || emoji == null) {
-      stderr.writeln('$nom : « # Catégorie : ... » et « # Emoji : ... » sont obligatoires.');
+      stderr.writeln('$nom : « # Thématique : ... » et « # Emoji : ... » sont obligatoires.');
       exit(1);
     }
     // SANS « # Firmware », TOUT EST LIBRE. Une catégorie que le firmware ne
@@ -315,8 +315,10 @@ class Entry {
   // « ages » n'est écrit que pour les questions qui appartiennent à certaines
   // tranches : l'absence de la clé veut dire « tout le monde », ce qui est le
   // cas de la grande majorité et garde les fichiers lisibles.
+  // « categorie » a disparu de la sortie : les onze noms de fichiers sont des
+  // thématiques comme les neuf autres, et « themes » les porte déjà, la
+  // sienne en tête.
   Map<String, dynamic> toJson() => {
-        'categorie': category,
         'question': question,
         'reponse': answer,
         if (niveau != null) 'niveau': niveau,
@@ -526,7 +528,7 @@ void _writeBanqueQuestions(List<Entry> all) {
   }
   if (redites.isNotEmpty) {
     stderr.writeln('${redites.length} question(s) portent le slug de leur '
-        'propre catégorie, qui les prend déjà sans marqueur :');
+        'propre thématique de fichier, qui les prend déjà sans marqueur :');
     for (final e in redites.take(10)) {
       stderr.writeln('   [${e.category}] ${e.question}');
     }
@@ -556,6 +558,20 @@ void _writeBanqueQuestions(List<Entry> all) {
     comptesThemes[theme.name] = trouvees.length;
     for (final e in trouvees) {
       (etiquettes[e] ??= []).add(theme.name);
+    }
+  }
+
+  // LA THÉMATIQUE DU FICHIER VIENT EN TÊTE. L'app portait jusqu'ici un champ
+  // « categorie » séparé qui redisait ce nom ; il a disparu, et c'est
+  // désormais le premier thème qui sert d'étiquette à l'écran et de clé
+  // d'équilibrage au tirage. Sans ce tri, les 99 questions dont un thème
+  // traversant précède le leur dans kThemes changeraient d'étiquette.
+  for (final entree in etiquettes.entries) {
+    final sien = entree.key.category;
+    final rang = entree.value.indexOf(sien);
+    if (rang > 0) {
+      entree.value.removeAt(rang);
+      entree.value.insert(0, sien);
     }
   }
 

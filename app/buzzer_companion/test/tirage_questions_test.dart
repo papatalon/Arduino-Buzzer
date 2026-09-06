@@ -34,31 +34,26 @@ void main() {
   BanqueStore fonds() => magasin(
         [
           QuizQuestion(
-              category: 'Histoire',
               question: 'H1',
               niveau: 1,
               ages: {Tranche.enfants},
               themes: {'Histoire'}),
           QuizQuestion(
-              category: 'Histoire',
               question: 'H2',
               niveau: 3,
               ages: {Tranche.adultes, Tranche.aines},
               themes: {'Histoire'}),
           QuizQuestion(
-              category: 'Musique',
               question: 'M1',
               niveau: 2,
               ages: {Tranche.enfants, Tranche.ados},
               themes: {'Musique'}),
           QuizQuestion(
-              category: 'Musique',
               question: 'M2',
               niveau: 1,
               ages: {Tranche.aines},
               themes: {'Musique', 'Spécial Noël'}),
           QuizQuestion(
-              category: 'Histoire',
               question: 'H3',
               niveau: 2,
               ages: {Tranche.ados},
@@ -66,7 +61,7 @@ void main() {
           // Ni niveau ni tranche : une question écrite à la main, qui ne
           // s'est pas prononcée. Aucun filtre ne doit l'écarter.
           QuizQuestion(
-              category: 'Histoire', question: 'X1', themes: {'Histoire'}),
+              question: 'X1', themes: {'Histoire'}),
         ],
         themes: const [
           Facette(nom: 'Histoire', emoji: '📜', questions: 4),
@@ -170,7 +165,7 @@ void main() {
     final t = TirageQuestions(
         banque: magasin([
           QuizQuestion(
-              category: 'Histoire', question: 'H2', niveau: 3, ages: {Tranche.aines}),
+              themes: {'Histoire'}, question: 'H2', niveau: 3, ages: {Tranche.aines}),
         ]),
         hasard: Random(19));
     expect(t.composer(nombre: 5, niveaux: {1}), isNull);
@@ -220,7 +215,6 @@ void main() {
     void lot(String fichier, Set<Tranche> ages, int combien) {
       for (var i = 0; i < combien; i++) {
         questions.add(QuizQuestion(
-            category: fichier,
             question: 'Q${n++}',
             answer: 'R',
             niveau: 1 + i % 3,
@@ -281,7 +275,7 @@ void main() {
       final manche = t.composer(nombre: 24)!;
       for (final e in stocks.entries) {
         final cible = 24 * e.value / total;
-        final obtenu = manche.questions.where((q) => q.category == e.key).length;
+        final obtenu = manche.questions.where((q) => q.etiquette == e.key).length;
         expect(obtenu, inInclusiveRange(cible.floor(), cible.ceil()),
             reason: 'graine $graine, ${e.key}, cible $cible');
       }
@@ -292,17 +286,17 @@ void main() {
     final t = TirageQuestions(
         banque: magasin([
           for (var i = 0; i < 300; i++)
-            QuizQuestion(category: 'Grosse', question: 'G$i', answer: 'R'),
+            QuizQuestion(themes: {'Grosse'}, question: 'G$i', answer: 'R'),
           for (var i = 0; i < 100; i++)
-            QuizQuestion(category: 'Petite', question: 'P$i', answer: 'R'),
+            QuizQuestion(themes: {'Petite'}, question: 'P$i', answer: 'R'),
         ]),
         hasard: Random(5));
     final manche = t.composer(nombre: 20)!;
     // Trois fois plus de stock, trois fois plus de questions. Exactement, et
     // non « en moyenne sur beaucoup de manches » : c'est celle de ce soir qui
     // compte.
-    expect(manche.questions.where((q) => q.category == 'Grosse').length, 15);
-    expect(manche.questions.where((q) => q.category == 'Petite').length, 5);
+    expect(manche.questions.where((q) => q.etiquette == 'Grosse').length, 15);
+    expect(manche.questions.where((q) => q.etiquette == 'Petite').length, 5);
   });
 
   test('une seule tranche cochée ne déclenche aucun plancher', () {
@@ -335,7 +329,7 @@ void main() {
     final t = TirageQuestions(
         banque: magasin([
           for (var i = 0; i < 40; i++)
-            QuizQuestion(category: 'Maison', question: 'M$i', answer: 'R'),
+            QuizQuestion(themes: {'Maison'}, question: 'M$i', answer: 'R'),
         ]),
         hasard: Random(13));
     expect(t.composer(nombre: 10)!.note, isEmpty);
@@ -364,15 +358,15 @@ void main() {
       final t = TirageQuestions(
           banque: magasin([
             for (var i = 0; i < 300; i++)
-              QuizQuestion(category: 'Grosse', question: 'G$i', answer: 'R'),
+              QuizQuestion(themes: {'Grosse'}, question: 'G$i', answer: 'R'),
             for (var i = 0; i < 100; i++)
-              QuizQuestion(category: 'Petite', question: 'P$i', answer: 'R'),
+              QuizQuestion(themes: {'Petite'}, question: 'P$i', answer: 'R'),
           ]),
           hasard: Random(graine));
       final m = t.composer(nombre: 7)!;
       expect(m.questions.length, 7, reason: 'graine $graine');
-      grosse += m.questions.where((q) => q.category == 'Grosse').length;
-      petite += m.questions.where((q) => q.category == 'Petite').length;
+      grosse += m.questions.where((q) => q.etiquette == 'Grosse').length;
+      petite += m.questions.where((q) => q.etiquette == 'Petite').length;
     }
     expect(grosse / manches, closeTo(5.25, 0.15));
     expect(petite / manches, closeTo(1.75, 0.15));

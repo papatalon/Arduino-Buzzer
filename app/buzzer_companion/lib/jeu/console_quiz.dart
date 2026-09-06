@@ -471,8 +471,8 @@ class _Question extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        if (q.category.isNotEmpty) ...[
-          Text(q.category.toUpperCase(), style: BSType.sectionKicker()),
+        if (q.etiquette.isNotEmpty) ...[
+          Text(q.etiquette.toUpperCase(), style: BSType.sectionKicker()),
           const SizedBox(height: BSSpace.s2),
         ],
         Text(q.question, style: BSType.questionConsole()),
@@ -742,7 +742,7 @@ class _FinDePartie extends StatelessWidget {
   // questionnaire : celui-ci est termine, et rejouer une de ses questions
   // serait absurde puisque toute la salle l'a deja entendue.
   //
-  // Le perimetre suit la manche : les categories et thematiques de ce qui se
+  // Le perimetre suit la manche : les thematiques de ce qui se
   // joue, ou toute la banque pour un questionnaire personnalise, qui n'en
   // designe aucune (voir ActiveQuestionnaire.perimetreDuBris).
   Future<void> _departager() async {

@@ -1,6 +1,6 @@
 ---
 name: ecrire-des-questions
-description: Écrire de nouvelles questions pour la banque du Buzzer, sans doublon, avec chaque fait vérifié à l'extérieur et consigné, et la réponse telle qu'on la dit au Québec. À utiliser quand on demande d'ajouter, d'écrire, de créer ou de compléter des questions, un lot de questions, une catégorie ou une thématique du jeu-questionnaire.
+description: Écrire de nouvelles questions pour la banque du Buzzer, sans doublon, avec chaque fait vérifié à l'extérieur et consigné, et la réponse telle qu'on la dit au Québec. À utiliser quand on demande d'ajouter, d'écrire, de créer ou de compléter des questions, un lot de questions, une thématique du jeu-questionnaire.
 ---
 
 # Écrire des questions
@@ -27,7 +27,7 @@ BIXI qui compterait cinq lettres, Cartier qui remonterait le fleuve en 1534.
 existait ; le détail était inventé.
 
 **2. Écrire pour atteindre un nombre fabrique des doublons.** Chaque fois
-qu'un lot a été écrit pour compléter une catégorie à 200, il a produit des
+qu'un lot a été écrit pour compléter une thématique à 200, il a produit des
 redites : 45 variantes de nom en un seul commit. **Le nombre demandé est un
 plafond, jamais une cible.** Rendre 22 bonnes questions sur 30 demandées est
 un succès ; en rendre 30 dont 8 redites est un échec qui se paiera en soirée.
@@ -35,7 +35,7 @@ un succès ; en rendre 30 dont 8 redites est un échec qui se paiera en soirée.
 **3. Le doublon ne se voit pas en se relisant.** Deux questions au texte
 différent qui attendent la même réponse passent la relecture et se posent
 deux fois dans la même manche. Et le compteur qui les attrape **ne regarde
-qu'à l'intérieur d'une catégorie** : « Quel plat québécois combine frites,
+qu'à l'intérieur d'un même fichier** : « Quel plat québécois combine frites,
 fromage et sauce ? » dans Québec et « Quel plat de frites disparaît sous le
 fromage et la sauce brune ? » dans Bouffe donnent tous deux *La poutine*, et
 il ne le voit pas. Seule la recherche préalable le voit.
@@ -117,12 +117,12 @@ précédent brouillon de ce skill en citait un de mémoire, et il était faux.
   sport d'hiver, et « Quel légume mariné accompagne le burger ? » a pour
   sujet le burger.
 
-  **Les onze catégories sont aussi des thématiques**, sous le nom de leur
+  **Onze des vingt thématiques sont déclarées par le fichier**, sous le nom de ce
   fichier : `bouffe-et-cuisine cinema-et-tele culture-generale culture-pop
   geographie histoire mots-et-langue musique quebec sciences-et-nature
   sports`. Chaque question porte celle de son fichier SANS qu'on l'écrive —
-  la catégorie n'est pas devinée, c'est le fichier qui la déclare, et la
-  thématique l'absorbe. **Ne jamais écrire le slug de la catégorie sous une
+  elle n'est pas devinée, c'est le fichier qui la déclare, et la
+  thématique l'absorbe. **Ne jamais écrire le slug d'un fichier sous une
   question de son propre fichier** : ce serait redire ce qui est déjà là. On
   ne l'écrit que sur une question d'un AUTRE fichier qui parle du même
   sujet — « @ quebec » sous une question québécoise rangée dans Culture pop.
@@ -142,13 +142,13 @@ Les mots-clés de la thématique ne servent qu'à ça, et ils ratissent large :
 sur 212 candidates proposées à Voyages, 86 ont été retenues. La liste se
 relit une par une, comme un lot.
 
-**Une thématique neuve ne refait pas une catégorie.** « Le Québec ailleurs »
+**Une thématique neuve ne refait pas celle d'un fichier.** « Le Québec ailleurs »
 a été supprimée pour ça, et Voyages a frôlé le même sort : elle touche
 Géographie et ses 360 questions. La frontière s'écrit **dans le code**,
 au-dessus du thème, en disant ce qui est dedans ET ce qui est dehors. Pour
 Voyages : dedans le départ, le séjour et ce qu'on visite ; dehors les
 capitales, les frontières et les superficies, qui sont le cœur de la
-catégorie. Sans cette ligne écrite, la thématique dérive vers son voisin au
+thématique du fichier. Sans cette ligne écrite, la thématique dérive vers son voisin au
 fil des lots.
 
 **Une seule question par lieu, par œuvre, par personne.** Le Louvre en avait
@@ -203,7 +203,7 @@ Sports, « un sport, un athlète, une équipe, une ligue, ou un lieu fait pour
 le sport ». Sans cette phrase, le tri se fait au sentiment et le lot suivant
 la refera autrement.
 
-**Le slug d'une catégorie ne s'écrit jamais dans son propre fichier.** Le
+**Le slug d'un fichier ne s'écrit jamais dans ce fichier.** Le
 générateur s'arrête et nomme les fautives. On ne l'écrit que sur une question
 d'un AUTRE fichier : `@ quebec` sous « Quel objet orange envahit les rues de
 Montréal chaque été ? », rangée dans Culture pop.
@@ -217,7 +217,7 @@ party, vérifiable et absente de la banque a la même valeur d'où qu'elle
 vienne, et la jeter parce qu'elle déborde du sujet du jour, c'est refaire
 plus tard le travail de vérification qu'on vient de faire.
 
-Elle se range dans **le fichier de sa vraie catégorie**, avec **ses propres
+Elle se range dans **son vrai fichier**, avec **ses propres
 `@`** — pas ceux du lot en cours. C'est la seule façon d'ajouter sans
 polluer : coller l'étiquette du jour sur une question qui ne la mérite pas,
 c'est exactement la faute de la motoneige rangée dans Sports.
@@ -261,7 +261,7 @@ existantes telles qu'elles sont écrites.
 
 ## 1. Cadrer, et le dire
 
-Avant d'écrire une ligne, fixer et annoncer : **quelle catégorie**, **combien
+Avant d'écrire une ligne, fixer et annoncer : **quel fichier**, **combien
 au maximum**, **quel niveau**, **quelles tranches**, **quelles thématiques**.
 
 Si la demande est vague (« des questions de cinéma »), choisir des valeurs
@@ -289,7 +289,7 @@ sont dans `tool/questions/INTEGRITE.md`, pas ici : ils changent à chaque lot.
 ## 3. Reconnaître le terrain
 
 **Le geste qui évite le plus de dégâts**, et le seul qui voie les redites
-entre catégories. Avant d'écrire une question, chercher son sujet :
+entre fichiers. Avant d'écrire une question, chercher son sujet :
 
 ```bash
 cd app/buzzer_companion && dart run tool/generate_questionnaires.dart --chercher "coupe stanley"
@@ -297,7 +297,7 @@ cd app/buzzer_companion && dart run tool/generate_questionnaires.dart --chercher
 
 Les mots se tapent comme on veut : `quebecoise` trouve `québécoise`. C'est la
 RECHERCHE qui ignore accents et casse ; les questions ressortent telles
-qu'écrites, avec catégorie, niveau, tranches et thématiques.
+qu'écrites, avec fichier, niveau, tranches et thématiques.
 
 Trois recherches par question, pas une :
 
@@ -324,7 +324,7 @@ ce mot-là n'y est pas.
 même résultat pour la thématique, zéro ligne ajoutée, et zéro fait de plus à
 vérifier.
 
-Sur un gros lot, **lire d'abord le fichier de la catégorie** en entier,
+Sur un gros lot, **lire d'abord le fichier visé** en entier,
 `tool/questions/<categorie>.txt`, les deux blocs. C'est la source, à jour,
 retouches comprises.
 
@@ -476,7 +476,7 @@ possible, ou changer de question.
 
 Seulement ce qui a survécu aux étapes 4, 5 et 6.
 
-**Dans le fichier de la catégorie**, à la fin du bloc libre, **sous la ligne
+**Dans le fichier visé**, à la fin du bloc libre, **sous la ligne
 `# Sources exigées à partir d'ici`** : une ligne par question, ses `@` en
 dessous. Tout ce qui est écrit sous ce repère doit avoir sa source, et le
 générateur le compte.
@@ -503,9 +503,9 @@ cd app/buzzer_companion && dart run tool/generate_questionnaires.dart
 
 | compteur | portée | règle |
 |---|---|---|
-| le générateur | tout | doit sortir en **code 0**. Un doublon exact, un miroir cassé, un slug inconnu ou le slug d'une catégorie écrit dans son propre fichier l'arrêtent. |
+| le générateur | tout | doit sortir en **code 0**. Un doublon exact, un miroir cassé, un slug inconnu ou le slug d'un fichier écrit dans ce fichier l'arrêtent. |
 | **questions exigées sans source** | bloc libre, sous le repère | doit rester à **0**. Chacune est nommée dans la sortie. Les **sources orphelines** se corrigent aussi : une question reformulée se revérifie, une question retirée libère son entrée. |
-| **quasi-doublons** | même catégorie | doit rester à **0**. Aucun cas légitime : quand il en sort un, une des deux lignes est de trop. Le générateur les affiche en détail. |
+| **quasi-doublons** | même fichier | doit rester à **0**. Aucun cas légitime : quand il en sort un, une des deux lignes est de trop. Le générateur les affiche en détail. |
 | **variantes de nom** | toute la banque | ne doit **pas augmenter**. Deux réponses pour la même chose font refuser un joueur qui a raison. |
 | échos et réponses partagées | toute la banque | peuvent monter un peu. Pour **chaque** unité de hausse, nommer la question responsable et dire pourquoi c'est légitime (« Quatre » répond à vingt questions sans rapport). Une hausse non expliquée veut dire qu'un lot est entré sans contrôle. |
 
@@ -550,7 +550,7 @@ ses entrées dans `SOURCES.txt` n'est pas rendu, et le compteur le dira.
 - Écrire une question sans niveau, sans tranches ou sans ses thématiques.
 - Écrire une question que la banque a déjà, faute d'avoir cherché son sujet
   sans son mot générique.
-- Écrire le slug d'une catégorie sous une question de son propre fichier.
+- Écrire le slug d'un fichier sous une question de ce fichier.
 - Compléter un lot pour atteindre le nombre demandé.
 - Jeter une bonne question vérifiée parce qu'elle relève d'une autre
   thématique que celle du lot : elle se range dans son fichier, avec ses

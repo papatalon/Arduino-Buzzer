@@ -35,9 +35,13 @@ const kGameModeNames = [
 ];
 
 // Doit rester dans le même ordre que Questions.cpp (CAT0_NAME..CAT9_NAME).
-// Catégories fixes, compilées dans le firmware (pas de carte SD/EEPROM) —
-// à resynchroniser seulement si Questions.cpp change.
-const kCategoryNames = [
+// LE SEUL ENDROIT OÙ LA NOTION DE CATÉGORIE SURVIT, et on ne peut pas l'en
+// déloger : ces dix noms sont compilés dans le Mega, sans carte SD ni EEPROM
+// pour les changer. Côté app ce sont des thématiques comme les autres, et
+// cette liste ne sert plus qu'à suggérer des noms déjà connus quand on écrit
+// un questionnaire à la main.
+// À resynchroniser seulement si Questions.cpp change.
+const kThemesFirmware = [
   'Culture générale',
   'Histoire',
   'Géographie',

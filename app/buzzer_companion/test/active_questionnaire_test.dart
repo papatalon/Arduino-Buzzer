@@ -36,9 +36,9 @@ void main() {
   Questionnaire troisQuestions() => Questionnaire(
         title: 'Essai',
         questions: [
-          QuizQuestion(category: 'Un', question: 'Q1', answer: 'R1'),
-          QuizQuestion(category: 'Deux', question: 'Q2', answer: 'R2'),
-          QuizQuestion(category: 'Trois', question: 'Q3', answer: 'R3'),
+          QuizQuestion(themes: {'Un'}, question: 'Q1', answer: 'R1'),
+          QuizQuestion(themes: {'Deux'}, question: 'Q2', answer: 'R2'),
+          QuizQuestion(themes: {'Trois'}, question: 'Q3', answer: 'R3'),
         ],
       );
 

@@ -33,8 +33,8 @@ void main() {
     actif = ActiveQuestionnaire(GameState())
       ..use(
         Questionnaire(title: 'Essai', questions: [
-          QuizQuestion(category: 'Histoire', question: 'Q1', answer: 'R1'),
-          QuizQuestion(category: 'Histoire', question: 'Q2', answer: 'R2'),
+          QuizQuestion(themes: {'Histoire'}, question: 'Q1', answer: 'R1'),
+          QuizQuestion(themes: {'Histoire'}, question: 'Q2', answer: 'R2'),
         ]),
         origine: 'Essai',
       );
