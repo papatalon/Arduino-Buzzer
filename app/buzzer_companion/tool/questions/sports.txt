@@ -457,3 +457,54 @@ Quel sport fait tourner des athlètes en combinaison moulante sur un anneau glac
 Quel sport de rue se joue en espadrilles, bâton en main, avec une balle orange ?|Le hockey-balle|2|enfants ados adultes aines
 Dans quoi le joueur transporte-t-il ses bâtons d'un trou à l'autre ?|Le sac de golf|2|enfants ados adultes aines
 # Sources exigées à partir d'ici
+#
+# --- Les villes des grandes equipes : hockey, baseball, football, basketball ---
+#
+# UNE SEULE EQUIPE PAR VILLE, et c'est une contrainte de conception, pas un
+# hasard : deux questions de la meme categorie qui repondent « New York »
+# auraient partage leur reponse et, avec un enonce plus long, se seraient
+# vues en quasi-doublon. Les 35 villes sont donc toutes differentes, ce qui a
+# ecarte les Dodgers (Los Angeles pris par les Lakers), les Red Sox (Boston
+# pris par les Celtics), les Cubs (Chicago pris par les Bulls) et les
+# Steelers (Pittsburgh pris par les Penguins).
+#
+# LES EQUIPES DONT LE NOM PORTE UN ETAT OU UNE REGION SONT ECARTEES, faute de
+# reponse unique : les Patriots de la Nouvelle-Angleterre, les Panthers de la
+# Caroline, les Vikings du Minnesota, les Warriors de Golden State, les
+# Devils du New Jersey. Un joueur qui repond l'etat a raison, et un joueur
+# qui repond la ville aussi.
+Dans quelle ville jouent les Canucks ?|Vancouver|2|ados adultes aines
+Dans quelle ville de l'Alberta jouent les Flames ?|Calgary|2|ados adultes aines
+Dans quelle ville jouent les Jets du hockey ?|Winnipeg|2|ados adultes aines
+Quelle ville abrite les Sénateurs du hockey ?|Ottawa|1|ados adultes aines
+Dans quelle ville jouent les Penguins ?|Pittsburgh|2|ados adultes aines
+Quelle ville du Michigan voit jouer les Red Wings ?|Détroit|2|ados adultes aines
+Dans quelle ville de Floride jouent les Lightning ?|Tampa|3|ados adultes aines
+Dans quelle ville du Nevada jouent les Golden Knights ?|Las Vegas|3|ados adultes aines
+Dans quelle ville du Tennessee jouent les Predators ?|Nashville|3|ados adultes aines
+Quelle ville abrite les Capitals du hockey ?|Washington|3|ados adultes aines
+Dans quelle ville jouent les Yankees ?|New York|1|ados adultes aines
+Dans quelle ville canadienne jouent les Blue Jays ?|Toronto|1|ados adultes aines
+Dans quelle ville jouent les Giants du baseball ?|San Francisco|3|ados adultes aines
+Dans quelle ville jouent les Braves ?|Atlanta|2|ados adultes aines
+Quelle ville du Texas voit jouer les Astros ?|Houston|2|ados adultes aines
+Dans quelle ville du Missouri jouent les Cardinals du baseball ?|Saint-Louis|3|ados adultes aines
+Dans quelle ville jouent les Mariners ?|Seattle|3|ados adultes aines
+Dans quelle ville jouent les Phillies ?|Philadelphie|2|ados adultes aines
+Dans quelle ville du Maryland jouent les Orioles ?|Baltimore|3|ados adultes aines
+Dans quelle ville du Wisconsin jouent les Brewers ?|Milwaukee|3|ados adultes aines
+Dans quelle ville de Californie jouent les Padres ?|San Diego|3|ados adultes aines
+De quelle ville les Cowboys du football portent-ils le nom ?|Dallas|1|ados adultes aines
+Dans quelle petite ville du Wisconsin jouent les Packers ?|Green Bay|2|ados adultes aines
+Dans quelle ville jouent les Chiefs ?|Kansas City|2|ados adultes aines
+Dans quelle ville de l'État de New York jouent les Bills ?|Buffalo|2|ados adultes aines
+Dans quelle ville de Louisiane jouent les Saints du football ?|La Nouvelle-Orléans|2|ados adultes aines
+Dans quelle ville de l'Ohio jouent les Browns ?|Cleveland|3|ados adultes aines
+Dans quelle ville de l'Ohio jouent les Bengals ?|Cincinnati|3|ados adultes aines
+Dans quelle ville de l'Indiana jouent les Colts ?|Indianapolis|3|ados adultes aines
+Dans quelle ville du Colorado jouent les Broncos ?|Denver|2|ados adultes aines
+Dans quelle ville jouent les Lakers ?|Los Angeles|1|ados adultes aines
+Dans quelle ville jouent les Celtics ?|Boston|2|ados adultes aines
+Dans quelle ville jouent les Bulls ?|Chicago|1|ados adultes aines
+Dans quelle ville de Floride jouent les Heat ?|Miami|2|ados adultes aines
+Dans quelle ville du Texas jouent les Spurs ?|San Antonio|3|ados adultes aines
