@@ -1849,6 +1849,12 @@ const kThemes = <Theme>[
     'crane', 'cotes', 'etrier', 'iris', 'pupille', 'oesophage', 'bile',
     'hemoglobine', 'insuline', 'globules', 'sanguin', 'genou', 'articulation',
     'humain', 'adulte',
+    // Les mots du corps que le premier filet oubliait : le nombril, les ongles
+    // et l'odorat dormaient dans Sciences sans étiquette, et « --proposer » ne
+    // les voyait pas.
+    'nombril', 'ongle', 'ongles', 'odorat', 'pouce', 'cheveu', 'cheveux',
+    'nez', 'doigt', 'doigts', 'gorge', 'luette', 'tympan', 'papille',
+    'papilles', 'poil', 'poils', 'sommeil', 'voix',
     // « corps » attrapait le corps de lion du Sphinx et la langue du
     // caméléon : trop large, et rien ne se perd à l'enlever (ces questions
     // gardent « organe » ou « os »).

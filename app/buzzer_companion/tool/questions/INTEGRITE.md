@@ -74,6 +74,10 @@ Repères, à mettre à jour après chaque lot :
 | 6 septembre 2026, Dans l'temps, les annonces d'époque (+3, 1 étiquetée) | 54 | 225 | 0 | 14 | 0 |
 | 6 septembre 2026, Dans l'temps accueille les moments d'époque (+3, 2 étiquetées) | 54 | 225 | 0 | 14 | 0 |
 | 6 septembre 2026, rues et lieux à visiter (+9, 1 doublon retiré) | 54 | 224 | 0 | 14 | 0 |
+| 6 septembre 2026, corps humain et espace nourris (+16, 9 étiquetées, 3 doublons retirés) | 54 | 221 | 0 | 14 | 0 |
+| 6 septembre 2026, corps humain et espace, deuxième lot (+16, 1 étiquetée) | 54 | 221 | 0 | 14 | 0 |
+| 6 septembre 2026, les années 90 et le monde des jeunes (+10) | 54 | 221 | 0 | 14 | 0 |
+| 6 septembre 2026, le monde des jeunes, deuxième passe (+7) | 54 | 221 | 0 | 14 | 0 |
 
 **UN SEUL AXE, VINGT THÉMATIQUES.** Onze sont déclarées par le fichier où vit
 la question, neuf traversent la banque et s'écrivent avec `@`. Le passage du
