@@ -47,6 +47,7 @@ dependencies:
   # recopier dans une constante : une version en double finit toujours par
   # diverger, et c'est l'avis de mise a jour qui mentirait.
   package_info_plus: ^8.1.2
+  ffi: ^2.2.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

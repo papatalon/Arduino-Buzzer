@@ -5,11 +5,15 @@ import 'package:flutter/foundation.dart';
 
 import 'popout_snapshot.dart';
 import 'popout_window.dart';
+import 'veille_ecran.dart';
 import 'window_launch_args.dart';
 
 // Ouvre/pilote la fenêtre de l'écran public depuis la console.
 class PopoutLauncher extends ChangeNotifier {
-  PopoutLauncher() {
+  // [veille] n'est passé que par les tests. Le verrou vit ici parce que
+  // c'est le seul objet qui sait vraiment si l'écran public est affiché,
+  // fermeture native comprise.
+  PopoutLauncher({VeilleEcran? veille}) : _veille = veille ?? VeilleEcran() {
     // Si l'animateur ferme la fenêtre elle-même (bouton natif, Alt+F4), rien
     // ne le dit spontanément à ce contrôleur : sans ce suivi, le bouton
     // "Détacher" resterait bloqué sur "réattacher" indéfiniment.
@@ -30,6 +34,7 @@ class PopoutLauncher extends ChangeNotifier {
 
   WindowController? _controller;
   StreamSubscription<void>? _windowsChangedSub;
+  final VeilleEcran _veille;
 
   Future<void> _checkStillOpen() async {
     final controller = _controller;
@@ -38,6 +43,10 @@ class PopoutLauncher extends ChangeNotifier {
     final stillOpen = all.any((c) => c.windowId == controller.windowId);
     if (!stillOpen) {
       _controller = null;
+      // La fenêtre est partie sans passer par close() : c'est le chemin le
+      // plus courant en fin de soirée, et celui qui laisserait le verrou
+      // posé jusqu'à la fermeture de la console.
+      _veille.permettreLaVeille();
       notifyListeners();
     }
   }
@@ -48,6 +57,11 @@ class PopoutLauncher extends ChangeNotifier {
   // rien ne fonctionnait alors que seule la synchronisation initiale
   // manquait.
   Future<void> open() async {
+    // Posé avant même la création de la fenêtre : rien n'oblige l'animateur
+    // à toucher au clavier entre l'ouverture et le début de la partie, et
+    // c'est précisément ce silence-là que Windows prend pour de l'absence.
+    _veille.interdireLaVeille();
+
     if (_controller != null) {
       await _controller!.show();
       await _pousserCourant();
@@ -87,6 +101,7 @@ class PopoutLauncher extends ChangeNotifier {
   Future<void> close() async {
     final controller = _controller;
     if (controller == null) return;
+    _veille.permettreLaVeille();
     // Oublié AVANT d'attendre la fermeture : sinon, pendant que la fenêtre
     // se ferme, un instantané poussé par la télémétrie continuerait de
     // viser un canal en train de disparaître.
@@ -111,6 +126,7 @@ class PopoutLauncher extends ChangeNotifier {
   @override
   void dispose() {
     _windowsChangedSub?.cancel();
+    _veille.dispose();
     super.dispose();
   }
 }
