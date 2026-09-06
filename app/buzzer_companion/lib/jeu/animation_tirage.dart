@@ -19,6 +19,14 @@ import 'moteur_quiz.dart';
 // manche de Vol. En mode autonome le Mega les anime tous les deux ; en mode
 // application c'est à elle de le faire, puisque le buzzer n'a plus d'état de
 // jeu.
+enum MotifTirage {
+  /// Rebrasser les sons des buzzers.
+  sons,
+
+  /// Désigner le joueur qui ouvre une manche de Vol.
+  joueur,
+}
+
 class AnimationTirage extends ChangeNotifier {
   AnimationTirage({required this.ble, required this.sons});
 
@@ -48,6 +56,15 @@ class AnimationTirage extends ChangeNotifier {
   /// s'arretaient au milieu du bruitage.
   static const _securiteMs = 30000;
 
+  /// Combien de temps la salle garde le résultat sous les yeux une fois la
+  /// roue arrêtée.
+  ///
+  /// Ne sert qu'au mélange des sons : c'est le seul des deux motifs dont le
+  /// résultat n'apparaît nulle part ailleurs. Sans cette pause, l'écran
+  /// public repasserait à son plan d'attente à l'instant précis où il y a
+  /// enfin quelque chose à lire.
+  static const _revelationMs = 7000;
+
   /// Le son met un instant à démarrer : sans ce délai, on le croirait fini
   /// avant d'avoir commencé. Même précaution que INTRO_START_MS côté
   /// firmware.
@@ -55,6 +72,17 @@ class AnimationTirage extends ChangeNotifier {
 
   Timer? _minuteur;
   bool get enCours => _minuteur != null;
+
+  /// Pourquoi la roue tourne. Les deux motifs n'ont pas le même public : une
+  /// manche de Vol se raconte déjà sur l'écran de jeu, un mélange de sons n'a
+  /// que l'écran public pour se montrer.
+  MotifTirage motif = MotifTirage.joueur;
+
+  Timer? _revelation;
+
+  /// Vrai pendant les quelques secondes qui suivent un mélange, le temps de
+  /// laisser lire le résultat.
+  bool get revelation => _revelation != null;
 
   /// Un tirage par buzzer, renouvele a chaque pas.
   ///
@@ -75,8 +103,13 @@ class AnimationTirage extends ChangeNotifier {
 
   /// Lance l'animation sur les buzzers [presents]. [surFin] est appelé une
   /// seule fois, à la fin, LED éteintes.
-  void lancer({required List<bool> presents, required VoidCallback surFin}) {
+  void lancer({
+    required List<bool> presents,
+    required MotifTirage motif,
+    required VoidCallback surFin,
+  }) {
     arreter();
+    this.motif = motif;
     final pool = [for (var i = 0; i < 4; i++) if (presents[i]) i];
     if (pool.isEmpty) {
       surFin();
@@ -101,7 +134,10 @@ class AnimationTirage extends ChangeNotifier {
       if (fini || ecoule >= _securiteMs) {
         arreter();
         ble.allumerLeds(0);
+        // Les sons sont retirés AVANT d'armer la révélation : elle montre le
+        // résultat, pas l'état d'avant.
         surFin();
+        if (motif == MotifTirage.sons) _armerRevelation();
         return;
       }
       allume = pool[index % pool.length];
@@ -124,12 +160,31 @@ class AnimationTirage extends ChangeNotifier {
     notifyListeners();
   }
 
+  void _armerRevelation() {
+    _revelation = Timer(const Duration(milliseconds: _revelationMs), () {
+      _revelation = null;
+      notifyListeners();
+    });
+    notifyListeners();
+  }
+
+  /// Arrête tout ce que la roue montrait, révélation comprise : un nouveau
+  /// mélange ne doit pas se lancer par-dessus le résultat du précédent.
   void arreter() {
-    final tournait = _minuteur != null;
+    final montrait = _minuteur != null || _revelation != null;
     _minuteur?.cancel();
     _minuteur = null;
+    _revelation?.cancel();
+    _revelation = null;
     allume = null;
-    if (tournait) notifyListeners();
+    if (montrait) notifyListeners();
+  }
+
+  @override
+  void dispose() {
+    _minuteur?.cancel();
+    _revelation?.cancel();
+    super.dispose();
   }
 }
 

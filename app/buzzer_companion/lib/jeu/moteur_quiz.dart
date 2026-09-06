@@ -348,7 +348,11 @@ class MoteurQuiz extends ChangeNotifier {
     if (estVol && tirage != null) {
       motTirage = motDeTirage();
       notifyListeners();
-      tirage!.lancer(presents: presents, surFin: questionSuivante);
+      tirage!.lancer(
+        presents: presents,
+        motif: MotifTirage.joueur,
+        surFin: questionSuivante,
+      );
       return;
     }
     questionSuivante();

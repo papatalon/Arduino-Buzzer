@@ -58,7 +58,7 @@ class PopoutSnapshot {
     this.soundLearning,
     this.soundLastOwner,
     this.soundLastClaimed = false,
-    this.recallIndex,
+    this.vueSons = VueDesSons.aucune,
     this.enLice = const [true, true, true, true],
     this.motFinal = '',
     this.motAttention = '',
@@ -210,10 +210,8 @@ class PopoutSnapshot {
   final int? soundLastOwner;
   final bool soundLastClaimed;
 
-  // Rappel des sons avant le depart : buzzer dont le son passe en ce moment.
-  // Null quand aucun rappel n'est en cours. Pilote par l'app (SoundEngine),
-  // pas par le Mega.
-  final int? recallIndex;
+  // TOUT CE QUE LA SALLE VOIT DU CHOIX DES SONS. Voir [VueDesSons].
+  final VueDesSons vueSons;
 
   // Chemin du logo de la soirée sur le disque (les deux fenêtres tournent
   // sur la même machine), null si l'opérateur n'en a pas choisi.
@@ -451,7 +449,7 @@ class PopoutSnapshot {
     required QuizQuestion? question,
     required List<String> teamNames,
     required String? logoPath,
-    required int? recallIndex,
+    required VueDesSons vueSons,
   }) {
     // Meme regle que pour le firmware : sur les jeux avec chrono, la salle ne
     // voit la question qu'une fois le « top » donne, pas pendant que
@@ -504,7 +502,7 @@ class PopoutSnapshot {
       brisEgalite: moteur.brisEgalite,
       chronoRestant: moteur.chronoRestant,
       chronoTotal: moteur.chronoTotal,
-      recallIndex: recallIndex,
+      vueSons: vueSons,
       logoPath: logoPath,
     );
   }
@@ -513,7 +511,7 @@ class PopoutSnapshot {
     GameState game, {
     required List<String> teamNames,
     required String? logoPath,
-    required int? recallIndex,
+    required VueDesSons vueSons,
   }) {
     // La question elle-même n'est pas listée comme sensible dans le tableau
     // de confidentialité du design, mais le client a précisé que sur le
@@ -566,7 +564,7 @@ class PopoutSnapshot {
       soundLearning: game.soundLearning,
       soundLastOwner: game.soundLastOwner,
       soundLastClaimed: game.soundLastClaimed,
-      recallIndex: recallIndex,
+      vueSons: vueSons,
       logoPath: logoPath,
     );
   }
@@ -626,7 +624,7 @@ class PopoutSnapshot {
       soundLearning: json['soundLearning'] as int?,
       soundLastOwner: json['soundLastOwner'] as int?,
       soundLastClaimed: json['soundLastClaimed'] as bool? ?? false,
-      recallIndex: json['recallIndex'] as int?,
+      vueSons: VueDesSons.decode(json['vueSons'] as Map<String, dynamic>?),
       logoPath: json['logoPath'] as String?,
     );
   }
@@ -683,9 +681,99 @@ class PopoutSnapshot {
         'soundLearning': soundLearning,
         'soundLastOwner': soundLastOwner,
         'soundLastClaimed': soundLastClaimed,
-        'recallIndex': recallIndex,
+        'vueSons': vueSons.encode(),
         'logoPath': logoPath,
       });
+}
+
+// CE QUE LA SALLE VOIT DU CHOIX DES SONS.
+//
+// Trois moments, et un seul à la fois : le rappel des sons avant le départ,
+// le mélange animé, et la grille ouverte pendant qu'une équipe choisit. Tous
+// les trois se passent HORS partie, sur la console de l'animateur, et
+// jusqu'ici la salle ne voyait rien : elle regardait quelqu'un cliquer.
+//
+// Regroupés plutôt que dispersés en champs libres dans l'instantané : ils
+// partagent la même source (SoundEngine et l'animation du tirage), le même
+// public, et ils s'excluent l'un l'autre. Les noms de sons voyagent tout
+// faits, parce que la fenêtre du pop-out ne partage ni la bibliothèque ni la
+// mémoire de la console.
+class VueDesSons {
+  const VueDesSons({
+    this.rappel,
+    this.melange = false,
+    this.revelation = false,
+    this.melangeAllume,
+    this.melangeNoms = const ['', '', '', ''],
+    this.grilleBuzzer,
+    this.grilleSons = const [],
+    this.grilleAssignation = const [0, 1, 2, 3],
+  });
+
+  static const aucune = VueDesSons();
+
+  /// Rappel des sons avant le départ : buzzer dont le son passe en ce moment.
+  /// Null quand aucun rappel n'est en cours. Piloté par l'app (SoundEngine),
+  /// pas par le Mega.
+  final int? rappel;
+
+  /// La roue tourne pour rebrasser les sons.
+  final bool melange;
+
+  /// La roue s'est arrêtée et le résultat est encore à l'écran.
+  final bool revelation;
+
+  /// Le buzzer allumé à cet instant par le chenillard, ou null.
+  final int? melangeAllume;
+
+  /// Le nom montré sous chaque buzzer : celui qui défile pendant le mélange,
+  /// celui qui vient d'être tiré pendant la révélation.
+  final List<String> melangeNoms;
+
+  /// Pour qui la grille est ouverte, ou null si elle est fermée.
+  final int? grilleBuzzer;
+
+  /// Tous les sons offerts, dans l'ordre et la numérotation de la console :
+  /// la salle et l'animateur doivent pouvoir se dire un numéro.
+  final List<String> grilleSons;
+
+  /// Le son porté par chaque buzzer, pour marquer ceux qui sont déjà pris.
+  final List<int> grilleAssignation;
+
+  /// Vrai dès qu'il y a quelque chose à montrer. L'écran public s'en sert
+  /// pour passer devant son plan d'attente.
+  bool get quelqueChose =>
+      rappel != null || melange || revelation || grilleBuzzer != null;
+
+  factory VueDesSons.decode(Map<String, dynamic>? json) {
+    if (json == null) return aucune;
+    return VueDesSons(
+      rappel: json['rappel'] as int?,
+      melange: json['melange'] as bool? ?? false,
+      revelation: json['revelation'] as bool? ?? false,
+      melangeAllume: json['melangeAllume'] as int?,
+      melangeNoms:
+          (json['melangeNoms'] as List?)?.cast<String>() ?? const ['', '', '', ''],
+      grilleBuzzer: json['grilleBuzzer'] as int?,
+      grilleSons: (json['grilleSons'] as List?)?.cast<String>() ?? const [],
+      grilleAssignation:
+          (json['grilleAssignation'] as List?)?.cast<int>() ?? const [0, 1, 2, 3],
+    );
+  }
+
+  Map<String, dynamic> encode() => {
+        'rappel': rappel,
+        'melange': melange,
+        'revelation': revelation,
+        'melangeAllume': melangeAllume,
+        'melangeNoms': melangeNoms,
+        'grilleBuzzer': grilleBuzzer,
+        // La liste complète ne part QUE quand la grille est ouverte : une
+        // trentaine de noms à chaque instantané, y compris pendant une partie
+        // où personne ne la regarde, ne servirait qu'à grossir le message.
+        'grilleSons': grilleBuzzer == null ? const <String>[] : grilleSons,
+        'grilleAssignation': grilleAssignation,
+      };
 }
 
 // Les deux duellistes se deduisent des buzzers presents, comme le fait le

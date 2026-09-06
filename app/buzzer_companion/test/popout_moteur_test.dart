@@ -47,7 +47,7 @@ void main() {
         question: actif.current,
         teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
         logoPath: null,
-        recallIndex: null,
+        vueSons: VueDesSons.aucune,
       );
 
   test('la réponse ne part pas tant que la question est ouverte', () {
