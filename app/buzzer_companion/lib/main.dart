@@ -119,6 +119,11 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
     // ecran. Elle lit le disque avant le reseau : immediat, et hors ligne.
     _banque.init();
     _tirageQuestions = TirageQuestions(banque: _banque);
+    // Ce qu'on a demandé au dernier tirage, thématiques, âges, niveau et
+    // nombre : la soirée se prépare l'après-midi et se joue le soir, souvent
+    // avec la même tablée. Recocher les mêmes cases à chaque manche n'apprend
+    // rien à personne.
+    _tirageQuestions.criteres.load();
     _simulateur = Simulateur(_game);
     // Moteur de son : joue la bibliothèque embarquée à la place du DFPlayer
     // et renvoie au Mega son état de lecture, qui remplace la broche BUSY

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../questionnaires/active_questionnaire.dart';
+import '../questionnaires/criteres_tirage.dart';
 import '../questionnaires/questionnaire.dart';
 import '../questionnaires/tirage_questions.dart';
 import 'source_questions.dart';
@@ -43,19 +44,38 @@ class SourceAuHasard extends StatefulWidget {
 }
 
 class _SourceAuHasardState extends State<SourceAuHasard> {
-  static const _parDefaut = 20;
-
-  // Vides = sans filtre. Voir l'en-tête : c'est l'état normal, pas un oubli.
+  // LES CRITÈRES NE VIVENT PLUS ICI. Ils vivaient dans cet état de widget, et
+  // n'y survivaient donc ni à un aller-retour vers l'écran Questions, ni à la
+  // fermeture de l'application : entre deux manches de la même soirée, il
+  // fallait recocher les quatre mêmes cases devant la salle qui attend. Ils
+  // appartiennent au tirage, qui les garde et les écrit sur le disque (voir
+  // CriteresTirage).
   //
   // UNE SEULE LISTE DE FACETTES depuis que les onze catégories sont aussi des
   // thématiques : « Musique » et « Spécial Noël » se cochent dans la même
   // grille, ce que le tirage faisait déjà en les réunissant dans un seul OU.
-  final Set<String> _themes = {};
-  final Set<Tranche> _tranches = {};
-  final Set<int> _niveaux = {};
-  int _nombre = _parDefaut;
+  CriteresTirage get _criteresRetenus => widget.tirage.criteres;
+  Set<String> get _themes => _criteresRetenus.themes;
+  Set<Tranche> get _tranches => _criteresRetenus.tranches;
+  Set<int> get _niveaux => _criteresRetenus.niveaux;
+  int get _nombre => _criteresRetenus.nombre;
+
   bool _deplie = false;
   String? _erreur;
+
+  // CE QUE LE DERNIER TIRAGE A DONNÉ, et l'heure qu'il était.
+  //
+  // Deux manches tirées sur les mêmes critères s'annoncent avec les mêmes
+  // mots : « 20 questions tirées, niveau facile, moyen ». Cliquer « Tirer une
+  // autre manche » ne changeait donc rien à l'écran, et on en concluait,
+  // raisonnablement, que le tirage ne tirait plus rien — alors que les vingt
+  // questions étaient neuves (deux manches de suite ne se recoupent jamais,
+  // voir TirageQuestions._dejaPosees). L'heure, elle, change à chaque fois.
+  DateTime? _tiree;
+
+  // La remarque du tirage : manche tronquée, tranche laissée de côté. Elle
+  // était calculée et jetée.
+  String _note = '';
 
   bool get _choisi => widget.actif.tireAuHasard;
 
@@ -63,18 +83,39 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
   void initState() {
     super.initState();
     widget.tirage.banque.addListener(_surBanque);
+    // Les critères viennent du disque, donc plus tard que le premier build ;
+    // et ils changent aussi sous nos pieds, depuis l'autre écran qui montre
+    // cette même source.
+    _criteresRetenus.addListener(_surCriteres);
+    _elaguerLesThemes();
   }
 
   @override
   void dispose() {
     widget.tirage.banque.removeListener(_surBanque);
+    _criteresRetenus.removeListener(_surCriteres);
     super.dispose();
   }
 
   // La banque arrive du disque puis du réseau : sans cette écoute, les
   // catégories n'apparaîtraient qu'au prochain passage sur l'écran.
   void _surBanque() {
+    if (!mounted) return;
+    _elaguerLesThemes();
+    setState(() {});
+  }
+
+  void _surCriteres() {
     if (mounted) setState(() {});
+  }
+
+  // Une thématique retenue l'hiver dernier peut ne plus exister dans la
+  // banque d'aujourd'hui. Cochée, elle ne laisserait passer aucune question
+  // sans que sa case soit là pour se décocher.
+  void _elaguerLesThemes() {
+    final banque = widget.tirage.banque.banque;
+    if (banque.isEmpty) return;
+    _criteresRetenus.oublierThemesInconnus(banque.themes.map((f) => f.nom));
   }
 
   int get _disponibles => widget.tirage.compter(
@@ -90,15 +131,32 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
       tranches: _tranches,
       nombre: _nombre,
     );
-    setState(() => _erreur = compose == null ? widget.tirage.derniereErreur : null);
-    if (compose != null) {
-      widget.actif.use(compose, origine: 'Tirage au hasard');
-      // Le périmètre du bris suit celui de la manche : départager une manche
-      // d'histoire avec une question de cinéma serait injuste.
-      widget.actif.perimetreDuBris = {..._themes};
-      widget.actif.tireAuHasard = true;
+    if (compose == null) {
+      setState(() {
+        _erreur = widget.tirage.derniereErreur;
+        _tiree = null;
+        _note = '';
+      });
+      return;
     }
+    widget.actif.use(compose, origine: 'Tirage au hasard');
+    // Le périmètre du bris suit celui de la manche : départager une manche
+    // d'histoire avec une question de cinéma serait injuste.
+    widget.actif.perimetreDuBris = {..._themes};
+    widget.actif.tireAuHasard = true;
+    setState(() {
+      _erreur = null;
+      _tiree = DateTime.now();
+      _note = compose.note;
+      // Une manche vient d'être composée ici : les réglages restent ouverts,
+      // même après une partie, qui remet la source à zéro (mancheJouee).
+      _deplie = true;
+    });
   }
+
+  // « 20 h 41 », comme on écrit l'heure ici.
+  static String _heure(DateTime t) =>
+      '${t.hour} h ${t.minute.toString().padLeft(2, '0')}';
 
   // Ce que l'animateur a demandé, en une phrase. Les critères laissés vides
   // ne s'écrivent pas : « toutes catégories, pour tout le monde, tous
@@ -174,9 +232,8 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
                           emoji: f.emoji,
                           compte: f.questions,
                           coche: _themes.contains(f.nom),
-                          onTap: () => setState(() => _themes.contains(f.nom)
-                              ? _themes.remove(f.nom)
-                              : _themes.add(f.nom)),
+                          onTap: () =>
+                              _criteresRetenus.basculerTheme(f.nom),
                         ),
                     ],
                   ),
@@ -204,10 +261,8 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
                               _Case(
                                 label: kNomsTranches[t]!,
                                 coche: _tranches.contains(t),
-                                onTap: () => setState(() =>
-                                    _tranches.contains(t)
-                                        ? _tranches.remove(t)
-                                        : _tranches.add(t)),
+                                onTap: () =>
+                                    _criteresRetenus.basculerTranche(t),
                               ),
                           ],
                         ),
@@ -224,10 +279,8 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
                               _Case(
                                 label: kNomsNiveaux[n]!,
                                 coche: _niveaux.contains(n),
-                                onTap: () => setState(() =>
-                                    _niveaux.contains(n)
-                                        ? _niveaux.remove(n)
-                                        : _niveaux.add(n)),
+                                onTap: () =>
+                                    _criteresRetenus.basculerNiveau(n),
                               ),
                           ],
                         ),
@@ -244,8 +297,11 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
                             style: BSType.body(
                                 size: 14, color: BSColors.neutral600)),
                       ),
-                      PetitBouton('−',
-                          _nombre > 1 ? () => setState(() => _nombre -= 1) : null),
+                      PetitBouton(
+                          '−',
+                          _nombre > 1
+                              ? () => _criteresRetenus.reglerNombre(_nombre - 1)
+                              : null),
                       SizedBox(
                         width: 52,
                         child: Text(
@@ -255,8 +311,11 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
                               .copyWith(fontWeight: FontWeight.w600),
                         ),
                       ),
-                      PetitBouton('+',
-                          _nombre < 99 ? () => setState(() => _nombre += 1) : null),
+                      PetitBouton(
+                          '+',
+                          _nombre < 99
+                              ? () => _criteresRetenus.reglerNombre(_nombre + 1)
+                              : null),
                       const SizedBox(width: BSSpace.s3),
                       // LE COMPTE, à côté du nombre demandé : c'est là qu'on
                       // voit qu'on en demande vingt pour huit disponibles.
@@ -294,6 +353,26 @@ class _SourceAuHasardState extends State<SourceAuHasard> {
                     Text(_erreur!,
                         style:
                             BSType.body(size: 14, color: BSColors.accent2_800)),
+                  ]
+                  // L'ACCUSÉ DE RÉCEPTION DU TIRAGE. Sans lui, cliquer sur le
+                  // bouton n'avait aucun effet visible : mêmes critères,
+                  // même compte, mêmes mots. La remarque du tirage passe par
+                  // ici aussi, quand il y en a une à faire.
+                  else if (_choisi && _tiree != null) ...[
+                    const SizedBox(height: BSSpace.s2),
+                    SizedBox(
+                      width: 560,
+                      child: Text(
+                        'Manche composée à ${_heure(_tiree!)} : '
+                        '${widget.actif.total} questions neuves.'
+                        '${_note.isEmpty ? '' : ' $_note'}',
+                        style: BSType.body(
+                            size: 14,
+                            color: _note.isEmpty
+                                ? BSColors.neutral600
+                                : BSColors.accent2_800),
+                      ),
+                    ),
                   ],
                 ],
               ],

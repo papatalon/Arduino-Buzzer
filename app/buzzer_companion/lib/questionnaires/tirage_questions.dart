@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'banque.dart';
+import 'criteres_tirage.dart';
 import 'questionnaire.dart';
 
 // UNE MANCHE COMPOSÉE SUR PLACE, pour une partie et une seule.
@@ -28,6 +29,11 @@ class TirageQuestions {
 
   final BanqueStore banque;
   final Random _hasard;
+
+  /// CE QU'ON A DEMANDÉ LA DERNIÈRE FOIS, gardé d'une manche à l'autre et
+  /// d'un soir à l'autre. Le tirage se souvient donc de deux choses : ce
+  /// qu'il a déjà posé, et ce qu'on lui a demandé. Voir [CriteresTirage].
+  final CriteresTirage criteres = CriteresTirage();
 
   /// Ce qu'on a déjà posé ce soir. Conservé entre deux tirages.
   final Set<String> _dejaPosees = {};
