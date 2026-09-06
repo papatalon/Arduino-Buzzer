@@ -28,10 +28,13 @@
 # d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
 # question québécoise rangée dans Culture pop.
 #
-# Les treize qui traversent la banque : noel, regne-animal, espace,
-# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
-# transports, disney, nostalgie, voyages. Un slug inconnu arrête la
-# génération.
+# Les onze qui traversent la banque : noel, regne-animal, espace,
+# corps-humain, super-heros, creatures, mer, transports, disney, nostalgie,
+# voyages. Un slug inconnu arrête la génération.
+#
+# « Sports d'hiver » a fondu dans sports et « Le règne végétal » dans
+# sciences-et-nature : le client n'en voulait pas deux. Les étiquettes qui
+# vivaient hors du fichier absorbeur ont été transférées, pas jetées.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -56,7 +59,6 @@ De quel pays viennent les tacos ?|Le Mexique|1|enfants ados adultes aines
 Pays d'origine du croissant ?|La France|1|enfants ados adultes aines
 Pays d'origine de la fondue au fromage ?|La Suisse|1|ados adultes aines
 Quel légume principal compose le guacamole ?|L'avocat|1|enfants ados adultes aines
-@ regne-vegetal
 De quelle légumineuse est fait le houmous ?|Pois chiches|2|ados adultes aines
 De quoi est fait le tofu ?|Du soja|1|ados adultes aines
 Quel fruit principal compose le ketchup ?|La tomate|1|enfants ados adultes aines
@@ -64,15 +66,14 @@ Quel insecte fabrique le miel ?|L'abeille|1|enfants ados adultes aines
 # Réponse dans la question, et « la sève » passait aussi.
 De quel liquide fait-on le sirop d'érable ?|L'eau d'érable|1|enfants ados adultes aines
 > Comment appelle-t-on la sève recueillie au printemps pour faire le sirop ?|L'eau d'érable
-@ regne-vegetal
 @ quebec
+@ sciences-et-nature
 De quoi est fait le fromage ?|Du lait|1|enfants ados adultes aines
 De quel fruit fait-on le vin ?|Le raisin|1|enfants ados adultes aines
 De quelle fève fait-on le chocolat ?|Le cacao|1|enfants ados adultes aines
 Quelle vitamine trouve-t-on dans les oranges ?|La vitamine C|1|enfants ados adultes aines
 De quelle couleur est la chair de l'avocat ?|Verte|1|enfants ados adultes aines
 Quel légume fait pleurer quand on le coupe ?|L'oignon|1|enfants ados adultes aines
-@ regne-vegetal
 Quelle pâte longue et fine mange-t-on avec des boulettes ?|Le spaghetti|1|enfants ados adultes aines
 Quelle céréale est la base de l'alimentation en Asie ?|Le riz|1|enfants ados adultes aines
 Avec quelle farine fait-on le pain traditionnel ?|La farine de blé|2|ados adultes aines
@@ -82,10 +83,9 @@ Quel aliment orange est riche en carotène ?|La carotte|1|enfants ados adultes a
 Quel mollusque mange-t-on avec du beurre à l'ail ?|L'escargot|1|ados adultes aines
 Quelle boisson chaude est faite de grains torréfiés ?|Le café|1|ados adultes aines
 Quelle plante donne le thé ?|Le théier|2|ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Quel condiment jaune accompagne le hot-dog ?|La moutarde|1|enfants ados adultes aines
 Quelle herbe verte garnit la pizza margherita ?|Le basilic|1|ados adultes aines
-@ regne-vegetal
 # Ambigu : le bleu d'Auvergne est célèbre aussi. Le lait de brebis tranche.
 Quel fromage bleu français est très célèbre ?|Le roquefort|2|ados adultes aines
 > Quel fromage bleu français au lait de brebis est le plus célèbre ?|Le roquefort
@@ -114,7 +114,6 @@ Quel plat suisse racle du fromage fondu ?|La raclette|1|ados adultes aines
 Quelle sauce brune très salée accompagne les sushis ?|Sauce soya|1|enfants ados adultes aines
 Quelle pâte verte piquante accompagne les sushis ?|Le wasabi|1|ados adultes aines
 Quelle algue enroule les makis ?|Le nori|2|ados adultes aines
-@ regne-vegetal
 Quelles petites portions espagnoles se partagent ?|Les tapas|1|ados adultes aines
 Quelle galette de maïs enroule les fajitas ?|La tortilla|1|ados adultes aines
 Quel pain plat indien cuit dans un four tandoor ?|Le naan|1|ados adultes aines
@@ -132,9 +131,8 @@ Quel fruit tropical porte une couronne ?|L'ananas|1|enfants ados adultes aines
 Quel fruit brun et poilu vient de Nouvelle-Zélande ?|Le kiwi|1|enfants ados adultes aines
 Quel petit fruit rouge pousse dans les tourbières ?|La canneberge|1|enfants ados adultes aines
 Quel légume vert ressemble à un petit arbre ?|Le brocoli|1|enfants ados adultes aines
-@ regne-vegetal
 Quel champignon de luxe est déterré par des chiens ?|La truffe|1|ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Quel crustacé rouge est la fierté de la Gaspésie ?|Le homard|1|enfants ados adultes aines
 @ regne-animal
 @ quebec
@@ -237,7 +235,6 @@ Quel élément croquant garnit la salade César ?|Des croûtons|1|enfants ados a
 Quelle laitue compose la salade César ?|La romaine|1|ados adultes aines
 Quelle vinaigrette porte le nom d'un archipel ?|Mille-Îles|1|ados adultes aines
 Quel légume mariné accompagne le burger ?|Le cornichon|1|enfants ados adultes aines
-@ regne-vegetal
 Quel oignon frit en anneaux accompagne le burger ?|Rondelles d'oignon|1|enfants ados adultes aines
 Quelle pomme de terre frite est en spirale ?|Frite tornade|2|ados adultes aines
 Quel épi grillé se mange au beurre en août ?|Le blé d'Inde|1|enfants ados adultes aines
@@ -259,7 +256,6 @@ Quelle confiture d'agrumes est amère ?|La marmelade|1|ados adultes aines
 Quel sirop doré anglais vient de la canne ?|Golden syrup|3|adultes aines
 Quel sucre brun humide parfume les biscuits ?|La cassonade|1|enfants ados adultes aines
 Quelle écorce parfume les brioches roulées ?|La cannelle|1|enfants ados adultes aines
-@ regne-vegetal
 Quelle gousse noire parfume la crème glacée ?|La vanille|1|enfants ados adultes aines
 Quelle épice se râpe sur le lait de poule ?|La muscade|2|ados adultes aines
 @ noel
@@ -267,7 +263,6 @@ Quel clou parfume le jambon de Noël ?|Clou de girofle|1|ados adultes aines
 @ noel
 Quelle racine piquante parfume les biscuits de Noël ?|Le gingembre|1|enfants ados adultes aines
 @ noel
-@ regne-vegetal
 Quel bonhomme de biscuit court dans les contes ?|Pain d'épice|1|enfants ados adultes aines
 @ noel
 @ creatures
@@ -282,11 +277,10 @@ Quel plat français mijote du bœuf au vin rouge ?|Bœuf bourguignon|1|ados adul
 Quel plat provençal mijote des légumes et aubergines ?|La ratatouille|1|ados adultes aines
 Quel fruit est l'ingrédient principal du cidre ?|La pomme|1|enfants ados adultes aines
 Quelle plante aromatique garnit le mojito ?|La menthe|1|enfants ados adultes aines
-@ regne-vegetal
 Quel agrume jaune très acide accompagne les poissons ?|Le citron|1|enfants ados adultes aines
 Quelle boisson gazeuse brune est née à Atlanta ?|Le Coca-Cola|1|enfants ados adultes aines
 Quel champignon blanc est le plus cultivé au monde ?|Champignon de Paris|2|ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Quel plat indien s'appelle butter chicken en anglais ?|Poulet au beurre|1|ados adultes aines
 Quelle céréale maltée est la base de la bière ?|L'orge|2|ados adultes aines
 Quelle céréale compose le gruau ?|L'avoine|1|enfants ados adultes aines
@@ -297,9 +291,7 @@ Quel repas québécois se mange le midi ?|Le dîner|1|enfants ados adultes aines
 Quelle boulette de patates est un plat acadien ?|Poutine râpée|2|ados adultes aines
 @ quebec
 Quel légume violet et allongé gratine la moussaka ?|L'aubergine|1|ados adultes aines
-@ regne-vegetal
 Quel légume en tiges rouges garnit des tartes ?|La rhubarbe|1|enfants ados adultes aines
-@ regne-vegetal
 Quelle boisson pétillante est du thé fermenté ?|Le kombucha|1|ados adultes
 Quel pain français long et croustillant est emblématique ?|La baguette|1|enfants ados adultes aines
 Quelle soupe japonaise est à base de pâte de soja ?|La soupe miso|1|ados adultes aines
@@ -321,12 +313,10 @@ Quel colonel a fondé la chaîne de poulet PFK ?|Sanders|1|adultes aines
 # réponse doit être possible. Format : Question|Réponse|niveau.
 Quel petit fruit rouge à noyau couronne un sundae ?|La cerise|1|enfants ados adultes aines
 Quel petit fruit bleu garnit les muffins et les tartes au Québec ?|Le bleuet|1|enfants ados adultes aines
-@ regne-vegetal
 @ quebec
 Quel aliment blanc, fait de lait, mange-t-on avec des fruits au déjeuner ?|Le yogourt|1|enfants ados adultes aines
 Comment appelle-t-on la boîte où l'on met son repas pour l'école ?|La boîte à lunch|1|enfants ados adultes aines
 Quel petit légume vert et rond roule dans l'assiette ?|Le petit pois|1|enfants ados adultes aines
-@ regne-vegetal
 Quel fruit rond porte le nom de sa couleur ?|L'orange|1|enfants ados adultes aines
 Quel dessert glacé mange-t-on en cornet l'été ?|La crème glacée|1|enfants ados adultes aines
 Quelles galettes du déjeuner arrose-t-on de sirop d'érable ?|Les crêpes|1|enfants ados adultes aines
@@ -335,7 +325,6 @@ Quels biscuits noirs à la crème blanche trempe-t-on dans le lait ?|Les Oreo|1|
 Quel animal est Tony, la mascotte des céréales Frosted Flakes ?|Un tigre|1|enfants ados adultes
 @ regne-animal
 Quel légume en feuilles vertes est la base d'une salade ?|La laitue|1|enfants ados adultes aines
-@ regne-vegetal
 Quel jus boit-on le plus souvent au déjeuner ?|Le jus d'orange|1|enfants ados adultes aines
 Quelle chaîne canadienne vend du café, des beignes et des Timbits ?|Tim Hortons|1|enfants ados adultes aines
 Quel fruit orange à peau veloutée cache un gros noyau ?|La pêche|1|enfants ados adultes aines
@@ -344,7 +333,6 @@ Quelle pâte italienne en petits tubes courbés se mange au fromage ?|Le macaron
 Quel plat de pâtes au fromage orange en boîte est célèbre au Canada ?|Le Kraft Dinner|1|enfants ados adultes
 Quelle épice noire moulue accompagne le sel sur la table ?|Le poivre|1|enfants ados adultes aines
 Quel légume vert et allongé croque-t-on en salade et transforme-t-on en cornichon ?|Le concombre|1|enfants ados adultes aines
-@ regne-vegetal
 Quel dessert coloré tremble dans son bol et se prépare avec de la poudre ?|Le Jell-O|1|enfants ados adultes aines
 Quelles tranches de pommes de terre frites et salées se vendent en sac ?|Les croustilles|1|enfants ados adultes aines
 Quelle collation salée et croquante a la forme d'un nœud ?|Le bretzel|1|enfants ados adultes aines
@@ -357,25 +345,16 @@ Quel agrume vert et acide parfume la limonade ?|La lime|2|enfants ados adultes a
 Quel gros fruit orangé à noyau plat vient des pays chauds ?|La mangue|2|enfants ados adultes aines
 Quel petit agrume orangé se pèle en quartiers dans la boîte à lunch ?|La clémentine|2|enfants ados adultes aines
 Quel légume blanc en bouquets ressemble à un brocoli pâle ?|Le chou-fleur|2|enfants ados adultes aines
-@ regne-vegetal
 Quel légume jaune se mange en épi, au beurre et au sel ?|Le maïs|1|enfants ados adultes aines
-@ regne-vegetal
 Quel légume vert et long se mange en cosse ou en conserve ?|Le haricot|2|enfants ados adultes aines
-@ regne-vegetal
 Quel légume rouge, jaune ou vert se coupe en lanières croquantes ?|Le poivron|1|enfants ados adultes aines
-@ regne-vegetal
 Quel légume en longues tiges vertes croque avec du beurre d'arachide ?|Le céleri|1|enfants ados adultes aines
-@ regne-vegetal
 Quel petit légume rond, rouge dehors et blanc dedans, pique la langue ?|Le radis|2|enfants ados adultes aines
-@ regne-vegetal
 Quel légume vert en feuilles rendait Popeye très fort ?|L'épinard|1|enfants ados adultes aines
 @ super-heros
-@ regne-vegetal
 Quel légume à chapeau pousse dans le noir et se met sur la pizza ?|Le champignon|1|enfants ados adultes aines
-@ regne-vegetal
 Quelle gousse blanche à l'odeur forte se pile dans les sauces ?|L'ail|2|enfants ados adultes aines
 Quel légume racine devient des frites une fois coupé ?|La pomme de terre|1|enfants ados adultes aines
-@ regne-vegetal
 Quelle tranche de pain grillée se beurre le matin ?|Une rôtie|1|enfants ados adultes aines
 Quelle bouillie d'avoine chaude réchauffe les matins d'hiver ?|Le gruau|2|enfants ados adultes aines
 Quels carrés croustillants se versent dans un bol avec du lait le matin ?|Les céréales|1|enfants ados adultes aines

@@ -28,10 +28,13 @@
 # d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
 # question québécoise rangée dans Culture pop.
 #
-# Les treize qui traversent la banque : noel, regne-animal, espace,
-# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
-# transports, disney, nostalgie, voyages. Un slug inconnu arrête la
-# génération.
+# Les onze qui traversent la banque : noel, regne-animal, espace,
+# corps-humain, super-heros, creatures, mer, transports, disney, nostalgie,
+# voyages. Un slug inconnu arrête la génération.
+#
+# « Sports d'hiver » a fondu dans sports et « Le règne végétal » dans
+# sciences-et-nature : le client n'en voulait pas deux. Les étiquettes qui
+# vivaient hors du fichier absorbeur ont été transférées, pas jetées.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -51,11 +54,9 @@
 # l'extérieur. Ce qui ne se vérifie pas ne s'écrit pas.
 Combien de joueurs par équipe au soccer ?|Onze|1|enfants ados adultes aines
 Combien de joueurs sur la glace par équipe au hockey ?|Six|1|enfants ados adultes aines
-@ sports-hiver
 Combien de joueurs par équipe au basketball ?|Cinq|1|enfants ados adultes aines
 Combien de joueurs par équipe au volleyball ?|Six|2|ados adultes aines
 Combien de périodes dans un match de hockey ?|Trois|1|enfants ados adultes aines
-@ sports-hiver
 Combien de manches dans un match de baseball ?|Neuf|1|enfants ados adultes aines
 Combien de prises pour retirer un frappeur ?|Trois|1|enfants ados adultes aines
 Quelle est la distance d'un marathon ?|42,2 km|2|ados adultes aines
@@ -64,13 +65,10 @@ Où ont eu lieu les premiers Jeux olympiques modernes ?|Athènes|2|ados adultes 
 Quelle course cycliste est la plus célèbre au monde ?|Le Tour de France|1|ados adultes aines
 Quel tournoi de tennis se joue sur gazon à Londres ?|Wimbledon|2|ados adultes aines
 Quel trophée remporte le champion de la LNH ?|La coupe Stanley|1|enfants ados adultes aines
-@ sports-hiver
 Combien de coupes Stanley pour les Canadiens de Montréal ?|24|2|ados adultes aines
 - le compte monte à chaque conquête
 Quel joueur de hockey est surnommé La Merveille ?|Wayne Gretzky|1|ados adultes aines
-@ sports-hiver
 Quel numéro portait Wayne Gretzky ?|99|1|ados adultes aines
-@ sports-hiver
 Quel sprinteur détient le record du 100 mètres ?|Usain Bolt|1|enfants ados adultes aines
 > Quel sprinteur jamaïcain a couru le 100 mètres en 9 secondes 58 ?|Usain Bolt
 Combien de points vaut un touché au football ?|Six|2|ados adultes aines
@@ -88,29 +86,24 @@ Quel pays a remporté le plus de Coupes du monde de soccer ?|Le Brésil|2|ados a
 > Quel pays a gagné la Coupe du monde de soccer en 1958, en 1962 et en 1970 ?|Le Brésil
 Dans quel sport marque-t-on des essais ?|Le rugby|2|ados adultes aines
 Quel sport de glace utilise des pierres et des balais ?|Le curling|1|enfants ados adultes aines
-@ sports-hiver
 Quel sport pratique-t-on sur une planche dans les vagues ?|Le surf|1|enfants ados adultes aines
 @ mer
 Combien de quilles dans un jeu de bowling ?|Dix|1|enfants ados adultes aines
 Quel sport combine ski de fond et tir ?|Le biathlon|2|ados adultes aines
-@ sports-hiver
 Dans quel sport dit-on échec et mat ?|Les échecs|1|enfants ados adultes aines
 Quelle équipe de baseball a joué à Montréal ?|Les Expos|1|ados adultes aines
 @ quebec
 Quel boxeur se surnommait The Greatest ?|Muhammad Ali|2|adultes aines
 Combien de sets gagnants pour un match de tennis masculin en grand chelem ?|Trois|2|ados adultes aines
 Quel objet frappe-t-on au hockey ?|La rondelle|1|enfants ados adultes aines
-@ sports-hiver
 Quelle gymnaste a obtenu le premier 10 parfait ?|Nadia Comăneci|3|adultes aines
 Dans quelle ville ont eu lieu les JO d'été de 1976 ?|Montréal|1|adultes aines
 @ quebec
 Combien de trous compte un parcours de golf complet ?|18|1|ados adultes aines
 Combien de minutes dure une période de hockey ?|20|1|enfants ados adultes aines
-@ sports-hiver
 Combien de minutes dure un match de soccer ?|90|1|ados adultes aines
 Qui a inventé le basketball ?|James Naismith|3|adultes aines
 Quel pays est le berceau du hockey sur glace ?|Le Canada|1|enfants ados adultes aines
-@ sports-hiver
 Quel sport pratique Tiger Woods ?|Le golf|1|ados adultes aines
 Quel sport pratiquait Serena Williams ?|Le tennis|1|ados adultes aines
 Quel sport pratiquait Michael Phelps ?|La natation|1|ados adultes aines
@@ -127,13 +120,10 @@ Dans quel sport évolue-t-on sur une poutre ?|La gymnastique|1|enfants ados adul
 # Réponse dans la question.
 Quelle discipline de ski slalome entre des piquets ?|Le slalom|1|enfants ados adultes aines
 > Quelle discipline de ski descend en zigzag entre des piquets ?|Le slalom
-@ sports-hiver
 Quel sport de glisse se pratique à plat ventre ?|Le skeleton|2|ados adultes aines
-@ sports-hiver
 # Réponse dans la question.
 Quel sport d'hiver canadien se joue avec un ballon et des balais ?|Le ballon-balai|2|ados adultes aines
 > Quel sport canadien se joue sur la glace en espadrilles, sans patins ?|Le ballon-balai
-@ sports-hiver
 Quel est le sport national d'été du Canada ?|La crosse|2|ados adultes aines
 Combien de points vaut un panier de loin au basketball ?|Trois|1|enfants ados adultes aines
 Combien de points vaut un lancer franc au basketball ?|Un|1|enfants ados adultes aines
@@ -142,15 +132,12 @@ Quel mot anglais désigne zéro au tennis ?|Love|2|ados adultes aines
 Quel gardien québécois a popularisé le style papillon ?|Patrick Roy|2|adultes aines
 @ quebec
 Quel capitaine des Penguins est surnommé Sid the Kid ?|Sidney Crosby|1|enfants ados adultes aines
-@ sports-hiver
 Quel numéro portait Maurice Richard ?|9|1|adultes aines
 @ quebec
 Combien d'équipes compte la LNH aujourd'hui ?|32|2|ados adultes aines
 - la ligue s'agrandit
 Quelle ville canadienne a reçu les JO d'hiver de 2010 ?|Vancouver|1|enfants ados adultes aines
-@ sports-hiver
 Quelle ville canadienne a reçu les JO d'hiver de 1988 ?|Calgary|2|enfants adultes aines
-@ sports-hiver
 Dans quel sport porte-t-on un fleuret et un masque ?|L'escrime|1|enfants ados adultes aines
 Quel sport de raquette utilise une petite balle noire ?|Le squash|2|ados adultes aines
 Quel jeu provençal lance des boules vers un cochonnet ?|La pétanque|1|enfants ados adultes aines
@@ -179,29 +166,19 @@ Quel golfeur canadien a gagné le Masters en 2003 ?|Mike Weir|2|adultes aines
 # Faute dans la source : « a bat ».
 Quel hockeyeur a bat le record de buts de Gretzky en 2025 ?|Ovechkin|2|ados adultes
 > Quel hockeyeur a battu le record de buts de Gretzky en 2025 ?|Ovechkin
-@ sports-hiver
 Quel gardien détient le record de victoires en carrière ?|Martin Brodeur|2|adultes aines
 > Quel gardien du New Jersey a gagné 691 matchs en carrière ?|Martin Brodeur
-@ sports-hiver
 Quelle équipe de hockey joue à Toronto ?|Les Maple Leafs|1|enfants ados adultes aines
-@ sports-hiver
 Quelle équipe de hockey joue à Edmonton ?|Les Oilers|1|enfants ados adultes aines
-@ sports-hiver
 Quel joueur des Oilers porte le numéro 97 ?|Connor McDavid|1|enfants ados adultes
 > Quel joueur a été repêché premier au total par Edmonton en 2015 ?|Connor McDavid
-@ sports-hiver
 Quel trophée récompense le meilleur marqueur de la LNH ?|Art Ross|2|ados adultes aines
-@ sports-hiver
 Quel trophée récompense le joueur le plus utile de la LNH ?|Hart|2|ados adultes aines
-@ sports-hiver
 Combien de temps dure une punition mineure au hockey ?|Deux minutes|1|enfants ados adultes aines
-@ sports-hiver
 Comment nomme-t-on trois buts d'un même joueur ?|Un tour du chapeau|1|enfants ados adultes aines
 Quel objet lance-t-on sur la glace après un tour du chapeau ?|Des chapeaux|1|enfants ados adultes aines
 > Que pleut-il sur la patinoire quand un joueur compte trois buts dans le même match ?|Des chapeaux
-@ sports-hiver
 Quelle ligne rouge coupe la patinoire en deux ?|Ligne centrale|1|ados adultes aines
-@ sports-hiver
 Quel officiel siffle les punitions ?|L'arbitre|1|enfants ados adultes aines
 Combien de minutes dure un quart au football américain ?|Quinze|2|ados adultes aines
 Combien vaut un placement au football ?|Trois points|1|ados adultes aines
@@ -233,16 +210,13 @@ Quel objet se passent les coureurs de relais ?|Le témoin|1|enfants ados adultes
 Combien de coureurs dans un relais 4x100 ?|Quatre|1|enfants ados adultes aines
 Quel sport combine natation, vélo et course ?|Le triathlon|1|enfants ados adultes aines
 Quel sport olympique mélange saut à ski et ski de fond ?|Combiné nordique|2|ados adultes aines
-@ sports-hiver
 # L'alpinisme monte, il ne descend pas.
 Quel sport de montagne descend des pentes gelées à crampons ?|L'alpinisme|2|ados adultes aines
 > Quel sport de montagne grimpe des parois gelées à crampons ?|L'alpinisme
-@ sports-hiver
 Quel sport descend des rivières en radeau pneumatique ?|Le rafting|1|enfants ados adultes aines
 Quel sport glisse sur l'eau tiré par un bateau ?|Le ski nautique|1|enfants ados adultes aines
 @ mer
 Quel sport surfe sur la neige ?|La planche à neige|1|enfants ados adultes aines
-@ sports-hiver
 Quel sport de raquette au nom de cornichon est en plein essor ?|Le pickleball|2|adultes aines
 # Réponse dans la question, et quasi-doublon de la même question dans Québec.
 Quelle équipe montréalaise joue au soccer professionnel ?|CF Montréal|1|ados adultes aines
@@ -272,11 +246,9 @@ Comment nomme-t-on trois abats de suite au bowling ?|Un dindon|2|ados adultes ai
 Quel sport de table se joue avec des queues et des billes ?|Le billard|1|enfants ados adultes aines
 Combien de billes rouges au snooker ?|Quinze|3|adultes aines
 Quel sport olympique descend un couloir de glace sur le dos ?|La luge|1|enfants ados adultes aines
-@ sports-hiver
 Quelle fédération organise la Coupe du monde de soccer ?|La FIFA|1|ados adultes aines
 Quel comité organise les Jeux olympiques ?|Le CIO|2|ados adultes aines
 Tous les combien d'années ont lieu les JO d'hiver ?|Quatre ans|1|enfants ados adultes aines
-@ sports-hiver
 Que transporte le relais avant les Jeux ?|La flamme olympique|1|enfants ados adultes aines
 Quelle médaille récompense la troisième place ?|Le bronze|1|enfants ados adultes aines
 Quel pays a gagné le plus de médailles olympiques au total ?|Les États-Unis|1|ados adultes aines
@@ -298,15 +270,11 @@ Quel lutteur québécois était surnommé Mad Dog ?|Maurice Vachon|2|aines
 @ quebec
 Quel sport pratique la famille Hart de Calgary ?|La lutte|3|adultes aines
 Quelle discipline olympique note des figures sur glace ?|Patinage artistique|1|enfants ados adultes aines
-@ sports-hiver
 Quel patineur de vitesse québécois a plusieurs ors olympiques ?|Charles Hamelin|2|ados adultes
 > Quel patineur québécois a remporté quatre médailles d'or olympiques en courte piste ?|Charles Hamelin
-@ sports-hiver
 @ quebec
 Quelle patineuse canadienne a gagné l'or en danse en 2018 ?|Tessa Virtue|3|ados adultes
-@ sports-hiver
 Quel skieur de bosses québécois a gagné l'or en 2010 et 2014 ?|Alexandre Bilodeau|2|ados adultes
-@ sports-hiver
 @ quebec
 Quelle plongeuse québécoise a gagné l'argent à Tokyo ?|Jennifer Abel|3|ados adultes
 > Quelle plongeuse de Laval a gagné l'argent en tremplin synchro à Tokyo ?|Jennifer Abel
@@ -324,11 +292,9 @@ Quelle couleur de carton avertit un joueur au soccer ?|Jaune|1|enfants ados adul
 Quel joueur brésilien est surnommé le Roi du soccer ?|Pelé|1|adultes aines
 Quel Argentin a marqué le but de la main de Dieu ?|Maradona|2|adultes aines
 Quelle course de traîneaux à chiens traverse l'Alaska ?|L'Iditarod|3|adultes aines
-@ sports-hiver
 Combien de rondes maximum en boxe professionnelle ?|Douze|2|ados adultes aines
 Combien de quarts compte un match de la NBA ?|Quatre|1|ados adultes aines
 Quel est le sport national d'hiver du Canada ?|Le hockey|1|enfants ados adultes aines
-@ sports-hiver
 Quel club de soccer espagnol joue au Camp Nou ?|FC Barcelone|2|ados adultes aines
 Quel club anglais est surnommé les Diables rouges ?|Manchester United|2|ados adultes aines
 Combien de joueurs par équipe au football canadien ?|Douze|2|ados adultes aines
@@ -350,17 +316,14 @@ Combien de touches maximum par équipe au volleyball ?|Trois|2|ados adultes aine
 # réponse doit être possible. Format : Question|Réponse|niveau.
 Avec quel objet frappe-t-on la balle au baseball ?|Le bâton|1|enfants ados adultes aines
 Comment s'appelle le joueur qui garde le filet au hockey ?|Le gardien de but|1|enfants ados adultes aines
-@ sports-hiver
 Quelle médaille reçoit celui qui termine premier ?|L'or|1|enfants ados adultes aines
 Quel sport se pratique dans une piscine ?|La natation|1|enfants ados adultes aines
 Quel sport de glisse descend les pentes enneigées sur deux planches étroites ?|Le ski|1|enfants ados adultes aines
-@ sports-hiver
 Quel sport se joue avec un ballon rond qu'on frappe du pied dans un but ?|Le soccer|1|enfants ados adultes aines
 Quel sport se joue avec un ballon orange qu'on lance dans un panier ?|Le basketball|1|enfants ados adultes aines
 Combien de roues a une planche à roulettes ?|Quatre|1|enfants ados adultes aines
 @ transports
 Quel équipement protège la tête à vélo et au hockey ?|Le casque|1|enfants ados adultes aines
-@ sports-hiver
 @ transports
 Quel sport se joue avec un ballon qu'on frappe des mains par-dessus un filet ?|Le volleyball|1|enfants ados adultes aines
 Quel jeu de cour d'école consiste à courir après les autres pour les toucher ?|La tag|1|enfants ados adultes aines
@@ -375,7 +338,6 @@ Quel jeu de table imite le soccer avec des joueurs fixés sur des tiges ?|Le bab
 Quel jeu de table fait glisser une rondelle sur un coussin d'air ?|Le hockey sur air|1|enfants ados adultes aines
 Quelle activité d'hiver descend une pente sur un traîneau ou une chambre à air ?|La glissade|1|enfants ados adultes aines
 Quel équipement large attaché aux pieds empêche de caler dans la neige épaisse ?|Les raquettes|1|enfants ados adultes aines
-@ sports-hiver
 Quelle activité se pratique avec une canne et un hameçon ?|La pêche|1|enfants ados adultes aines
 Quelle activité d'été fait dormir sous une tente ?|Le camping|1|enfants ados adultes aines
 Quelle activité consiste à marcher longtemps sur des sentiers en forêt ou en montagne ?|La randonnée|1|enfants ados adultes aines
@@ -392,20 +354,15 @@ Quel objet rond et gonflé frappe-t-on à la volée sur la plage ?|Le ballon de 
 Quel joueur français a marqué trois buts en finale de la Coupe du monde 2022 ?|Mbappé|2|ados adultes
 Quelle gymnaste américaine a des figures qui portent son nom au code de pointage ?|Simone Biles|2|ados adultes
 Sur quelle surface glacée se joue le hockey ?|La patinoire|1|enfants ados adultes aines
-@ sports-hiver
 Que chausse-t-on aux pieds pour aller sur la glace ?|Des patins|1|enfants ados adultes aines
-@ sports-hiver
 Dans quoi faut-il envoyer la rondelle pour compter ?|Le filet|1|enfants ados adultes aines
-@ sports-hiver
 Quelles grosses protections le gardien porte-t-il sur les jambes ?|Des jambières|2|enfants ados adultes aines
 Dans quel objet l'arbitre souffle-t-il pour arrêter le jeu ?|Un sifflet|1|enfants ados adultes aines
 Comment appelle-t-on la pièce où les joueurs enfilent leur équipement ?|Le vestiaire|1|enfants ados adultes aines
 Comment appelle-t-on la période supplémentaire quand le match est nul ?|La prolongation|2|enfants ados adultes aines
 Comment appelle-t-on le banc où le joueur puni doit s'asseoir ?|Le banc des punitions|1|enfants ados adultes aines
 Comment appelle-t-on le moment où l'arbitre laisse tomber la rondelle entre deux joueurs ?|La mise au jeu|2|enfants ados adultes aines
-@ sports-hiver
 Quelle équipe de hockey de Montréal porte le bleu, blanc, rouge ?|Le Canadien|1|enfants ados adultes aines
-@ sports-hiver
 @ quebec
 Quel trophée les équipes de la Ligue nationale se disputent-elles au printemps ?|La coupe Stanley|1|enfants ados adultes aines
 Dans quoi faut-il faire entrer le ballon pour marquer au basketball ?|Le panier|1|enfants ados adultes aines
@@ -487,9 +444,7 @@ Comment appelle-t-on le tableau qui affiche le pointage pendant un match ?|Le ta
 Comment appelle-t-on le trait blanc où les coureurs s'alignent avant le coup de pistolet ?|La ligne de départ|1|enfants ados adultes aines
 Comment appelle-t-on l'ensemble des équipes qui s'affrontent toute une saison ?|Une ligue|2|enfants ados adultes aines
 Comment appelle-t-on la saison qui suit la saison régulière au hockey ?|Les séries éliminatoires|2|enfants ados adultes aines
-@ sports-hiver
 Comment appelle-t-on la faute qui envoie un joueur de hockey au banc deux minutes ?|Une punition|1|enfants ados adultes aines
-@ sports-hiver
 Comment appelle-t-on la passe qui mène directement à un but ?|Une passe décisive|2|enfants ados adultes aines
 Comment appelle-t-on le lancer d'un joueur seul devant le gardien après une faute ?|Un tir de barrage|3|ados adultes aines
 Comment appelle-t-on la faute du joueur de soccer parti trop tôt derrière la défense ?|Le hors-jeu|2|enfants ados adultes aines
@@ -499,7 +454,6 @@ Comment appelle-t-on chacune des bandes tracées sur une piste d'athlétisme ?|U
 Quelle épreuve d'athlétisme projette une longue tige pointue le plus loin possible ?|Le lancer du javelot|2|enfants ados adultes aines
 Comment appelle-t-on la balle de golf entrée dans la coupe dès le départ ?|Un trou d'un coup|3|ados adultes aines
 Quel sport fait tourner des athlètes en combinaison moulante sur un anneau glacé ?|Le patin de vitesse|2|enfants ados adultes aines
-@ sports-hiver
 Quel sport de rue se joue en espadrilles, bâton en main, avec une balle orange ?|Le hockey-balle|2|enfants ados adultes aines
 Dans quoi le joueur transporte-t-il ses bâtons d'un trou à l'autre ?|Le sac de golf|2|enfants ados adultes aines
 # Sources exigées à partir d'ici

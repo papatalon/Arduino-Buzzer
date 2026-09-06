@@ -28,10 +28,13 @@
 # d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
 # question québécoise rangée dans Culture pop.
 #
-# Les treize qui traversent la banque : noel, regne-animal, espace,
-# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
-# transports, disney, nostalgie, voyages. Un slug inconnu arrête la
-# génération.
+# Les onze qui traversent la banque : noel, regne-animal, espace,
+# corps-humain, super-heros, creatures, mer, transports, disney, nostalgie,
+# voyages. Un slug inconnu arrête la génération.
+#
+# « Sports d'hiver » a fondu dans sports et « Le règne végétal » dans
+# sciences-et-nature : le client n'en voulait pas deux. Les étiquettes qui
+# vivaient hors du fichier absorbeur ont été transférées, pas jetées.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -383,11 +386,11 @@ Comment appelle-t-on l'énorme masse de glace qui flotte sur la mer ?|Un iceberg
 @ mer
 Comment appelle-t-on la rivière de glace qui descend lentement d'une montagne ?|Un glacier|2|enfants ados adultes aines
 Comment appelle-t-on la grande forêt humide et chaude de l'Amazonie ?|La forêt tropicale|2|enfants ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Comment appelle-t-on la vaste plaine d'herbe où broutent les bisons ?|La prairie|2|enfants ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Comment appelle-t-on la terre gelée sans arbres du Grand Nord ?|La toundra|3|enfants ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Comment appelle-t-on le passage étroit d'eau entre deux terres ?|Un détroit|3|enfants ados adultes aines
 @ mer
 Comment appelle-t-on la partie de la mer qui rentre dans les terres ?|Une baie|2|enfants ados adultes aines
@@ -440,10 +443,10 @@ Quelle tempête tropicale géante porte un nom de personne ?|Un ouragan|2|enfant
 Comment appelle-t-on la vague géante déclenchée par un tremblement de terre ?|Un tsunami|2|enfants ados adultes aines
 Comment appelle-t-on la secousse qui fait trembler le sol ?|Un tremblement de terre|1|enfants ados adultes aines
 Quelle feuille rouge orne le drapeau du Canada ?|La feuille d'érable|1|enfants ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Quelle fleur bleue orne le drapeau du Québec ?|La fleur de lys|1|enfants ados adultes aines
-@ regne-vegetal
 @ quebec
+@ sciences-et-nature
 De quelles couleurs est le drapeau de la France ?|Bleu blanc rouge|1|enfants ados adultes aines
 Quel animal est l'emblème des États-Unis ?|L'aigle|2|enfants ados adultes aines
 @ regne-animal
@@ -483,7 +486,7 @@ Comment appelle-t-on la haute paroi de roche au bord de la mer ?|Une falaise|2|e
 Comment appelle-t-on le chemin de terre battue dans le bois ?|Un sentier|1|enfants ados adultes aines
 Comment appelle-t-on la grande étendue de terre où le fermier sème son blé ?|Un champ|1|enfants ados adultes aines
 Comment appelle-t-on le terrain planté de pommiers ?|Un verger|2|enfants ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Dans quel pays voisin de la France et de l'Italie parle-t-on quatre langues officielles ?|La Suisse|2|enfants ados adultes aines
 Dans quel pays trouve-t-on les gondoles et les gladiateurs de l'histoire ?|L'Italie|2|enfants ados adultes aines
 Quelle grande ville des États-Unis abrite Hollywood ?|Los Angeles|2|enfants ados adultes aines
@@ -498,8 +501,8 @@ Quel pont relie l'île de Montréal à Brossard, sur la Rive-Sud ?|Le pont Champ
 Comment appelle-t-on le nord du Québec, immense et presque sans routes ?|Le Grand Nord|2|enfants ados adultes aines
 @ quebec
 Quel arbre couvre les immenses forêts du nord du Québec ?|L'épinette|3|enfants ados adultes aines
-@ regne-vegetal
 @ quebec
+@ sciences-et-nature
 Quelle ville du Québec accueille chaque été le Festival de la poutine ?|Drummondville|3|ados adultes aines
 @ quebec
 Comment appelle-t-on la rive du fleuve où se trouve Longueuil ?|La Rive-Sud|2|enfants ados adultes aines
@@ -521,7 +524,7 @@ Quel grand pays d'Asie du Sud a plus d'un milliard d'habitants et borde l'océan
 
 Comment appelle-t-on la carte qui montre le relief avec des couleurs et des courbes ?|Une carte topographique|3|ados adultes aines
 Quelle grande forêt de conifères ceinture le nord de l'hémisphère ?|La forêt boréale|3|enfants ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Comment appelle-t-on le petit cours d'eau où l'on peut marcher les pieds dedans ?|Un ruisseau|1|enfants ados adultes aines
 # Sources exigées à partir d'ici
 #
@@ -569,7 +572,8 @@ Quel plan d'eau turquoise du parc de Banff est nourri par le glacier Victoria ?|
 Quel bras de mer du Canada atlantique est réputé pour ses très grandes marées ?|La baie de Fundy|2|ados adultes aines
 @ voyages mer
 Quel canal d'Ottawa devient en hiver la plus vaste patinoire naturelle du monde ?|Le canal Rideau|2|enfants ados adultes aines
-@ voyages sports-hiver
+@ voyages
+@ sports
 Quel centre commercial d'Edmonton abrite un parc d'attractions et un parc aquatique intérieur ?|Le West Edmonton Mall|3|ados adultes aines
 @ voyages
 Quel musée de Gatineau est le plus fréquenté du Canada ?|Le Musée canadien de l'histoire|3|adultes aines

@@ -28,10 +28,13 @@
 # d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
 # question québécoise rangée dans Culture pop.
 #
-# Les treize qui traversent la banque : noel, regne-animal, espace,
-# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
-# transports, disney, nostalgie, voyages. Un slug inconnu arrête la
-# génération.
+# Les onze qui traversent la banque : noel, regne-animal, espace,
+# corps-humain, super-heros, creatures, mer, transports, disney, nostalgie,
+# voyages. Un slug inconnu arrête la génération.
+#
+# « Sports d'hiver » a fondu dans sports et « Le règne végétal » dans
+# sciences-et-nature : le client n'en voulait pas deux. Les étiquettes qui
+# vivaient hors du fichier absorbeur ont été transférées, pas jetées.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -82,7 +85,6 @@ Qui a découvert la gravitation ?|Newton|1|enfants ados adultes aines
 Qui a développé la théorie de la relativité ?|Einstein|1|ados adultes aines
 Quelle scientifique a étudié la radioactivité ?|Marie Curie|2|ados adultes aines
 Quel gaz les plantes rejettent-elles le jour ?|L'oxygène|1|enfants ados adultes aines
-@ regne-vegetal
 Comment s'appelle la transformation de la chenille ?|La métamorphose|1|enfants ados adultes aines
 @ regne-animal
 Que devient un têtard ?|Une grenouille|1|enfants ados adultes aines
@@ -169,9 +171,7 @@ Quel insecte soulève 50 fois son poids ?|La fourmi|1|enfants ados adultes aines
 Combien d'ailes possède une abeille ?|Quatre|2|ados adultes aines
 @ regne-animal
 Quel arbre géant de Californie est le plus gros du monde ?|Le séquoia|2|ados adultes aines
-@ regne-vegetal
 Quelle plante carnivore referme ses mâchoires sur les mouches ?|La dionée|3|adultes aines
-@ regne-vegetal
 Quel phénomène lumineux colore le ciel polaire ?|Aurore boréale|1|enfants ados adultes aines
 @ espace
 Quel instrument mesure la pression atmosphérique ?|Le baromètre|2|ados adultes aines
@@ -300,28 +300,19 @@ Quel grand singe est le plus proche de l'homme ?|Le chimpanzé|1|enfants ados ad
 # « À feuilles caduques » répondait tout aussi bien.
 Comment nomme-t-on un arbre qui perd ses feuilles l'hiver ?|Un feuillu|1|ados adultes aines
 > Comment nomme-t-on un arbre à feuilles, par opposition à un conifère ?|Un feuillu
-@ regne-vegetal
 Comment nomme-t-on un arbre qui garde ses aiguilles ?|Un conifère|1|enfants ados adultes aines
-@ regne-vegetal
 Quelle partie de la plante absorbe l'eau ?|Les racines|1|enfants ados adultes aines
-@ regne-vegetal
 Quel pigment rend les plantes vertes ?|La chlorophylle|1|enfants ados adultes aines
-@ regne-vegetal
 Quel gaz les plantes absorbent-elles ?|Le gaz carbonique|1|enfants ados adultes aines
-@ regne-vegetal
 Comment s'appelle le voyage du pollen ?|La pollinisation|1|enfants ados adultes aines
-@ regne-vegetal
 Quel insecte est le principal pollinisateur ?|L'abeille|1|enfants ados adultes aines
 @ regne-animal
 Quelle fleur suit le Soleil ?|Le tournesol|1|enfants ados adultes aines
-@ regne-vegetal
 # Ambigu : le concombre est un fruit et bat le melon. On décrit celui qu'on veut.
 Quel fruit contient le plus d'eau ?|Le melon d'eau|2|ados adultes aines
 > Quel gros fruit d'été est fait d'eau à plus de 90 pour cent ?|Le melon d'eau
 Comment s'appellent les anneaux du tronc d'un arbre ?|Les cernes|2|ados adultes aines
-@ regne-vegetal
 Quel champignon fait lever le pain ?|La levure|1|ados adultes aines
-@ regne-vegetal
 Quelle énergie vient du Soleil ?|L'énergie solaire|1|enfants ados adultes aines
 Quelle énergie vient des barrages ?|L'hydroélectricité|1|ados adultes aines
 Quelle énergie vient du vent ?|L'énergie éolienne|1|enfants ados adultes aines
@@ -371,9 +362,7 @@ Quel arachnide a une queue munie d'un dard ?|Le scorpion|1|enfants ados adultes 
 Combien de pattes possède un crabe ?|Dix|2|ados adultes aines
 @ regne-animal
 Quelle plante compose le menu du panda géant ?|Le bambou|1|enfants ados adultes aines
-@ regne-vegetal
 De quel arbre le koala mange-t-il les feuilles ?|L'eucalyptus|1|enfants ados adultes aines
-@ regne-vegetal
 Combien de bosses a un dromadaire ?|Une|1|enfants ados adultes aines
 @ regne-animal
 Combien de bosses a un chameau ?|Deux|1|enfants ados adultes aines
@@ -437,12 +426,9 @@ En quelle saison les feuilles des arbres tombent-elles ?|L'automne|1|enfants ado
 Que devient l'eau quand elle gèle ?|De la glace|1|enfants ados adultes aines
 De quoi sont faites les dunes du désert ?|De sable|1|enfants ados adultes aines
 De quel arbre tire-t-on la sève qui devient du sirop au printemps ?|L'érable|1|enfants ados adultes aines
-@ regne-vegetal
 @ quebec
 Quelle fleur jaune devient une boule de duvet qu'on souffle ?|Le pissenlit|1|enfants ados adultes aines
-@ regne-vegetal
 Quelle plante piquante pousse dans le désert ?|Le cactus|1|enfants ados adultes aines
-@ regne-vegetal
 Quel dinosaure carnivore géant, aux petits bras, est le plus célèbre ?|Le tyrannosaure|1|enfants ados adultes aines
 @ regne-animal
 Sur quelle planète habitons-nous ?|La Terre|1|enfants ados adultes aines
@@ -514,15 +500,10 @@ Quelle constellation en forme de casserole se repère dans le ciel du Québec ?|
 Comment appelle-t-on l'ensemble formé par le Soleil et ses planètes ?|Le système solaire|2|enfants ados adultes aines
 @ espace
 Quelles parties de l'arbre changent de couleur en automne ?|Les feuilles|1|enfants ados adultes aines
-@ regne-vegetal
 Quelle partie de la plante relie la racine à la fleur ?|La tige|2|enfants ados adultes aines
-@ regne-vegetal
 Que faut-il mettre en terre pour faire pousser une plante ?|Une graine|1|enfants ados adultes aines
-@ regne-vegetal
 Comment appelle-t-on la grosse partie de l'arbre qui porte les branches ?|Le tronc|1|enfants ados adultes aines
-@ regne-vegetal
 Comment appelle-t-on la peau rugueuse qui recouvre le tronc ?|L'écorce|2|enfants ados adultes aines
-@ regne-vegetal
 Quel mammifère marin sauteur siffle et vit en groupe ?|Le dauphin|1|enfants ados adultes aines
 @ regne-animal
 @ mer
@@ -559,5 +540,4 @@ Quel oiseau de l'étang fait « coin-coin » ?|Le canard|1|enfants ados adultes 
 Quel insecte piqueur bourdonne autour des campeurs les soirs d'été ?|Le maringouin|1|enfants ados adultes aines
 @ regne-animal
 Quelle partie colorée de la fleur attire les abeilles ?|Les pétales|2|enfants ados adultes aines
-@ regne-vegetal
 # Sources exigées à partir d'ici

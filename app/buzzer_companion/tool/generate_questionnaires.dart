@@ -1680,10 +1680,69 @@ const kThemes = <Theme>[
       'Chansons, groupes et instruments.', [], absorbe: 'Musique'),
   Theme('quebec', 'Québec', '⚜️',
       'D\'ici : la langue, les lieux, le monde.', [], absorbe: 'Québec'),
+  // LE REGNE VEGETAL A FONDU DANS SCIENCES ET NATURE, a la demande du client.
+  //
+  // LA FRONTIERE A ETE TRACEE A LA MAIN, question par question, et c'est le
+  // seul endroit ou la fusion demandait un jugement : sur les 58 etiquettes
+  // qui vivaient hors de sciences-et-nature.txt, 28 etaient des legumes DE
+  // RECETTE ranges dans Bouffe. « Quel legume marine accompagne le burger ? »
+  // a pour sujet le burger, pas le cornichon, et une manche de Sciences qui
+  // la pose se fait reprendre.
+  //
+  // 34 sont donc entrees : les arbres, les forets, la toundra, la prairie, le
+  // verger, les emblemes du Quebec et de Montreal, l'erabliere et sa
+  // tubulure, l'herbe a puce, l'amanite, le Jardin botanique, la botanique,
+  // le papyrus, le coquelicot. Plus quatre venues de Bouffe dont le sujet est
+  // bien la plante : l'eau d'erable, le theier, la truffe et le champignon de
+  // Paris. Les 24 autres restent dans Bouffe et n'ont plus d'etiquette de
+  // plante : c'est le prix de la fusion, et il est assume.
+  //
+  // LE FILET A MOTS-CLES EST CELUI DE L'ANCIENNE THEMATIQUE, garde pour que
+  // « --proposer sciences-et-nature » trouve encore le vegetal disperse. Il
+  // reproposera les legumes de recette a chaque fois : c'est normal, un filet
+  // propose et ne classe pas.
   Theme('sciences-et-nature', 'Sciences et nature', '🔬',
-      'Le vivant, la matière et les mécanismes.', [], absorbe: 'Sciences et nature'),
+      'Le vivant, la matière, les plantes et les mécanismes.', [
+    'arbre', 'arbres', 'fleur', 'fleurs', 'plante', 'plantes', 'feuille',
+    'feuilles', 'racine', 'racines', 'graine', 'graines', 'foret', 'forets',
+    'erable', 'erables', 'erabliere', 'chene', 'sapin', 'epinette', 'pin',
+    'bouleau', 'saule', 'peuplier', 'sequoia', 'bambou', 'eucalyptus',
+    'cactus', 'champignon', 'champignons', 'mousse', 'algue', 'algues',
+    'herbe', 'gazon', 'jardin', 'potager', 'tige',
+    'petale', 'petales', 'pollen', 'photosynthese', 'seve', 'tronc',
+    'branche', 'branches', 'ecorce', 'bourgeon', 'tulipe', 'marguerite',
+    'tournesol', 'orchidee', 'nenuphar', 'lilas', 'pissenlit', 'fougere',
+    'bonsai', 'semer', 'germer', 'botanique',
+    // « legume » et « bleuet » sont volontairement absents : ils ne
+    // ramassaient que des recettes, et le tri les a tous ecartes.
+  ], absorbe: 'Sciences et nature'),
+  // SPORTS D'HIVER A FONDU DANS SPORTS, a la demande du client : « pas besoin
+  // de deux ». Un sport d'hiver est un sport, et la facette qui les separait
+  // obligeait a cocher deux cases pour une soiree de sport.
+  //
+  // LES 69 ETIQUETTES N'ONT PAS ETE JETEES : 49 etaient sur des questions de
+  // sports.txt, que la thematique prend deja par absorption ; les 20 autres
+  // vivaient ailleurs (le Centre Bell et les stations de ski dans Quebec, le
+  // canal Rideau dans Geographie, le crazy carpet dans Culture pop) et
+  // portent maintenant « @ sports ». Sans ce transfert, la fusion aurait
+  // perdu vingt questions au lieu d'en gagner.
+  //
+  // LE FILET A MOTS-CLES EST CELUI DE L'ANCIENNE THEMATIQUE, garde pour que
+  // « --proposer sports » continue de trouver le sport disperse dans les
+  // autres categories. Il ne classe rien : il propose.
   Theme('sports', 'Sports', '🏅',
-      'Ce qui se joue, se court et se compte en points.', [], absorbe: 'Sports'),
+      'Ce qui se joue, se court, se glisse et se compte en points.', [
+    'hockey', 'patinage', 'patineur', 'patineuse', 'patinoire', 'ski',
+    'skieur', 'curling', 'luge', 'skeleton', 'biathlon', 'slalom',
+    'ballon-balai', 'rondelle', 'glace', 'neige', 'planche a neige',
+    'jo d\'hiver', 'coupe stanley', 'lnh', 'gretzky', 'crosby', 'mcdavid',
+    'ovechkin', 'brodeur', 'maple leafs', 'oilers', 'canadiens',
+    'vancouver', 'calgary', 'bilodeau', 'hamelin', 'virtue', 'tremblant',
+    'traineaux', 'iditarod', 'combine nordique', 'alpinisme',
+  ], exclude: [
+    // « glace » attrapait le gelato italien, « neige » un chant de Noel.
+    'gelato', 'chanson',
+  ], absorbe: 'Sports'),
   Theme('noel', 'Spécial Noël', '🎄', 'Le temps des fêtes, toutes catégories confondues.', [
     'noel', 'renne', 'rudolphe', 'sapin', 'buche', 'dinde',
     'reveillon', 'tourtiere', 'canneberge', 'canneberges', 'cannelle',
@@ -1780,34 +1839,6 @@ const kThemes = <Theme>[
     'fee', 'ogre', 'troll', 'conte', 'contes', 'graal', 'excalibur',
     'merlin', 'arthur', 'romulus', 'remus', 'pandore', 'midas', 'troie',
     'halloween', 'superstition', 'malheur', 'chaudron',
-  ]),
-  Theme('sports-hiver', "Sports d'hiver", '⛷️', 'Tout ce qui se joue sur la glace ou la neige.', [
-    'hockey', 'patinage', 'patineur', 'patineuse', 'patinoire', 'ski',
-    'skieur', 'curling', 'luge', 'skeleton', 'biathlon', 'slalom',
-    'ballon-balai', 'rondelle', 'glace', 'neige', 'planche a neige',
-    'jo d\'hiver', 'coupe stanley', 'lnh', 'gretzky', 'crosby', 'mcdavid',
-    'ovechkin', 'brodeur', 'maple leafs', 'oilers', 'canadiens',
-    'vancouver', 'calgary', 'bilodeau', 'hamelin', 'virtue', 'tremblant',
-    'traineaux', 'iditarod', 'combine nordique', 'alpinisme',
-  ], exclude: [
-    // « glace » attrapait le gelato italien, « neige » un chant de Noel.
-    'gelato', 'chanson',
-  ]),
-  // Le pendant du règne animal, et le mieux réparti de tous : l'érable et la
-  // tubulure côté Québec, la photosynthèse côté Sciences, l'épinard côté
-  // Bouffe, le pin blanc du drapeau de Montréal au passage.
-  Theme('regne-vegetal', 'Le règne végétal', '🌿',
-      'Arbres, fleurs, et tout ce qui pousse.', [
-    'arbre', 'arbres', 'fleur', 'fleurs', 'plante', 'plantes', 'feuille',
-    'feuilles', 'racine', 'racines', 'graine', 'graines', 'foret', 'forets',
-    'erable', 'erables', 'erabliere', 'chene', 'sapin', 'epinette', 'pin',
-    'bouleau', 'saule', 'peuplier', 'sequoia', 'bambou', 'eucalyptus',
-    'cactus', 'champignon', 'champignons', 'mousse', 'algue', 'algues',
-    'herbe', 'gazon', 'jardin', 'potager', 'legume', 'legumes', 'tige',
-    'petale', 'petales', 'pollen', 'photosynthese', 'seve', 'tronc',
-    'branche', 'branches', 'ecorce', 'bourgeon', 'tulipe', 'marguerite',
-    'tournesol', 'orchidee', 'nenuphar', 'lilas', 'pissenlit', 'fougere',
-    'bonsai', 'semer', 'germer', 'botanique', 'bleuet', 'bleuets',
   ]),
   Theme('mer', 'La mer et les bateaux', '⚓',
       'Océans, navigation, et ce qui se passe au large.', [

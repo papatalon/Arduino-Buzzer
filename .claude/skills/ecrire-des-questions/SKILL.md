@@ -109,12 +109,13 @@ rangeait Blanche-Neige dans Sports d'hiver. Chaque question porte les trois,
 
 Ces quatre exemples viennent de la banque, relus avec `--chercher`. Le
 précédent brouillon de ce skill en citait un de mémoire, et il était faux.
-- **`@ slug`** pour chaque thématique dont la question relève. Les treize
+- **`@ slug`** pour chaque thématique dont la question relève. Les onze
   qui traversent la banque : `noel regne-animal espace corps-humain
-  super-heros creatures sports-hiver regne-vegetal mer transports disney
-  nostalgie voyages`. Un slug inconnu arrête la génération. Le critère est le
-  SUJET de la question, pas un mot qu'elle contient : une question sur
-  Blanche-Neige n'est pas un sport d'hiver.
+  super-heros creatures mer transports disney nostalgie voyages`. Un slug
+  inconnu arrête la génération. Le critère est le SUJET de la question, pas
+  un mot qu'elle contient : une question sur Blanche-Neige n'est pas un
+  sport d'hiver, et « Quel légume mariné accompagne le burger ? » a pour
+  sujet le burger.
 
   **Les onze catégories sont aussi des thématiques**, sous le nom de leur
   fichier : `bouffe-et-cuisine cinema-et-tele culture-generale culture-pop
@@ -163,6 +164,31 @@ Confédération `voyages transports mer`, le canal Rideau `voyages
 sports-hiver`. Le critère reste le SUJET : l'île Bonaventure n'a pas pris
 `regne-animal` parce que le sujet est l'île, et les fous de Bassan ne sont
 qu'un attribut.
+
+**Fusionner deux thématiques, c'est TRANSFÉRER puis retirer.** `Sports
+d'hiver` a fondu dans `sports` et `Le règne végétal` dans
+`sciences-et-nature`. Les étiquettes posées sur des questions du fichier
+absorbeur sont redondantes et disparaissent ; **celles qui vivaient ailleurs
+doivent être re-étiquetées AVANT le retrait**, sinon la fusion perd des
+questions au lieu d'en gagner : 20 des 69 `sports-hiver` étaient dans
+Québec, Géographie et Culture pop. Dans l'ordre :
+
+1. relever où vivent les étiquettes du slug qui part, fichier et rang ;
+2. `--etiqueter <cible>` sur celles qui sont hors du fichier absorbeur ;
+3. `--retirer <slug qui part>`, qui nettoie tous les fichiers ;
+4. sortir la thématique de `kThemes` — **dans cet ordre**, le lecteur refuse
+   un slug inconnu et s'arrêterait sur un dépôt qu'on ne peut plus nettoyer ;
+5. déplacer ses mots-clés dans la thématique cible, pour que `--proposer`
+   continue de trouver le sujet dispersé.
+
+**Une fusion se juge question par question quand les deux thématiques ne se
+recouvrent pas exactement.** Un sport d'hiver est un sport : les 69
+étiquettes ont suivi sans discussion. Le végétal, non : 28 des 58 étiquettes
+hors de Sciences étaient des légumes DE RECETTE rangés dans Bouffe, et une
+manche de Sciences qui pose le cornichon du burger se fait reprendre. 34 sont
+entrées, 24 sont restées dans Bouffe sans étiquette de plante. C'est une
+perte, elle est assumée, et elle est écrite dans le code au-dessus de la
+thématique.
 
 **Le slug d'une catégorie ne s'écrit jamais dans son propre fichier.** Le
 générateur s'arrête et nomme les fautives. On ne l'écrit que sur une question

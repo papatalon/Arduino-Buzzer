@@ -28,10 +28,13 @@
 # d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
 # question québécoise rangée dans Culture pop.
 #
-# Les treize qui traversent la banque : noel, regne-animal, espace,
-# corps-humain, super-heros, creatures, sports-hiver, regne-vegetal, mer,
-# transports, disney, nostalgie, voyages. Un slug inconnu arrête la
-# génération.
+# Les onze qui traversent la banque : noel, regne-animal, espace,
+# corps-humain, super-heros, creatures, mer, transports, disney, nostalgie,
+# voyages. Un slug inconnu arrête la génération.
+#
+# « Sports d'hiver » a fondu dans sports et « Le règne végétal » dans
+# sciences-et-nature : le client n'en voulait pas deux. Les étiquettes qui
+# vivaient hors du fichier absorbeur ont été transférées, pas jetées.
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -57,9 +60,9 @@ Qui a planté une croix à Gaspé en 1534 ?|Jacques Cartier|2|ados adultes aines
 Quel est l'oiseau emblème du Québec ?|Harfang des neiges|2|ados adultes aines
 @ regne-animal
 Quelle est la fleur emblème du Québec ?|Iris versicolore|3|adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Quel est l'arbre emblème du Québec ?|Le bouleau jaune|3|adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Qui est la mascotte du Carnaval de Québec ?|Bonhomme Carnaval|1|enfants ados adultes aines
 Quel plat québécois combine frites, fromage et sauce ?|La poutine|1|enfants ados adultes aines
 Quel sirop est une spécialité du Québec ?|Le sirop d'érable|1|enfants ados adultes aines
@@ -70,7 +73,7 @@ Quelle date est la Fête nationale du Québec ?|Le 24 juin|1|enfants ados adulte
 Quel hockeyeur était surnommé le Rocket ?|Maurice Richard|1|enfants adultes aines
 Quelle équipe de hockey joue au Centre Bell ?|Les Canadiens|1|enfants ados adultes aines
 > Quelle équipe de la Ligue nationale joue ses matchs locaux à Montréal ?|Les Canadiens
-@ sports-hiver
+@ sports
 Quelle exposition universelle a eu lieu à Montréal ?|Expo 67|1|enfants adultes aines
 En quelle année le métro de Montréal a-t-il ouvert ?|1966|3|adultes aines
 @ transports
@@ -89,8 +92,8 @@ Quelle île au milieu du Saint-Laurent est célèbre pour ses produits ?|Île d'
 @ mer
 @ voyages
 Quelle station de ski célèbre est dans les Laurentides ?|Tremblant|1|enfants ados adultes aines
-@ sports-hiver
 @ voyages
+@ sports
 Quel film culte parle d'une guerre de balles de neige ?|La Guerre des tuques|1|adultes aines
 Quel cirque québécois est connu mondialement ?|Cirque du Soleil|1|enfants ados adultes aines
 Qui a composé la musique de l'hymne O Canada ?|Calixa Lavallée|3|aines
@@ -218,12 +221,12 @@ Quel mont de l'Estrie abrite un observatoire célèbre ?|Le mont Mégantic|2|ado
 @ voyages
 Quel parc national québécois protège des caribous ?|La Gaspésie|2|ados adultes aines
 Quelle station de ski domine le fleuve dans Charlevoix ?|Le Massif|2|ados adultes aines
-@ sports-hiver
+@ sports
 Quelle région québécoise occupe un cratère de météorite ?|Charlevoix|3|adultes aines
 @ espace
 Quelle station de ski domine Stoneham et Québec ?|Mont-Sainte-Anne|2|ados adultes aines
 > Quelle station de ski de la région de Québec offre une vue sur le fleuve depuis ses pistes ?|Le Mont-Sainte-Anne
-@ sports-hiver
+@ sports
 Quel premier ministre québécois a lancé la Révolution tranquille ?|Jean Lesage|2|aines
 Quel premier ministre québécois fut surnommé le Cheuf ?|Duplessis|2|aines
 Quelle période sombre est associée à Duplessis ?|La Grande Noirceur|2|aines
@@ -258,17 +261,17 @@ Quel gala québécois récompense la télévision ?|Les Gémeaux|1|ados adultes 
 Quel gala québécois récompense le cinéma ?|Les Iris|2|ados adultes aines
 Quel humoriste montréalais fait des spectacles bilingues ?|Sugar Sammy|1|ados adultes
 Quel joueur des Canadiens fut surnommé le Démon blond ?|Guy Lafleur|1|adultes aines
-@ sports-hiver
+@ sports
 Quel joueur des Canadiens fut surnommé le Gros Bill ?|Jean Béliveau|2|aines
-@ sports-hiver
+@ sports
 Quel gardien des Canadiens a porté le premier masque ?|Jacques Plante|2|aines
-@ sports-hiver
+@ sports
 Quelle émeute de 1955 porte le nom d'un joueur ?|Émeute Richard|2|aines
 Quel joueur québécois des Penguins était surnommé le Magnifique ?|Mario Lemieux|1|adultes aines
 Quel capitaine des Canadiens a soulevé la coupe en 1993 ?|Guy Carbonneau|2|adultes aines
-@ sports-hiver
+@ sports
 Quel entraîneur légendaire des Canadiens s'appelait Scotty ?|Scotty Bowman|2|adultes aines
-@ sports-hiver
+@ sports
 Quelle fête hivernale illumine le Vieux-Port de Montréal ?|Igloofest|1|ados adultes
 Quel bonnet d'hiver porte un nom bien québécois ?|La tuque|1|enfants ados adultes aines
 Quel mot québécois désigne le vélo ?|Un bicycle|1|enfants ados adultes aines
@@ -286,9 +289,9 @@ Quelle expression québécoise signifie c'est correct ?|C'est beau|1|ados adulte
 Quel animal emblème figure sur les armoiries de Montréal ?|Le castor|2|ados adultes aines
 @ regne-animal
 Quelle fleur figure sur le drapeau de Montréal ?|Fleur de lys|2|ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Quel arbre fut ajouté au drapeau de Montréal en 2017 ?|Le pin blanc|3|adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Quel papillon est l'insecte emblème du Québec ?|L'amiral|3|adultes aines
 @ regne-animal
 Quel explorateur a hiverné à Stadaconé en 1535 ?|Jacques Cartier|2|ados adultes aines
@@ -326,8 +329,8 @@ Quelle université montréalaise fut fondée en 1821 ?|McGill|2|ados adultes ain
 Quel ancien vélodrome de Montréal abrite des animaux ?|Le Biodôme|1|enfants ados adultes aines
 @ voyages
 Quel jardin montréalais est parmi les plus grands au monde ?|Jardin botanique|1|enfants ados adultes aines
-@ regne-vegetal
 @ voyages
+@ sciences-et-nature
 Quelles montagnes russes en bois de La Ronde sont célèbres ?|Le Monstre|1|enfants ados adultes aines
 Quelle station de métro montréalaise dessert trois lignes ?|Berri-UQAM|1|ados adultes aines
 @ transports
@@ -366,7 +369,7 @@ Comment appelle-t-on au Québec le petit magasin du coin ouvert tard ?|Le dépan
 Que colle-t-on dans le dos des gens le 1er avril ?|Un poisson d'avril|1|enfants ados adultes aines
 Comment appelle-t-on au Québec les boissons gazeuses ?|La liqueur|1|enfants ados adultes aines
 Quel traîneau de bois aux lattes recourbées glisse sur la neige au Québec ?|La traîne sauvage|1|enfants ados adultes aines
-@ sports-hiver
+@ sports
 Comment appelle-t-on au Québec la maison de vacances au bord d'un lac ?|Le chalet|1|enfants ados adultes aines
 @ voyages
 Quel mot québécois désigne le chandail chaud à capuchon ?|Un coton ouaté|1|enfants ados adultes aines
@@ -412,11 +415,11 @@ Quel parc national de la Gaspésie s'avance au bout de la péninsule ?|Forillon|
 #
 # --- Sport d'ici ---
 Quelle ligue de hockey junior regroupe les équipes du Québec et des Maritimes ?|La LHJMQ|3|ados adultes aines
-@ sports-hiver
+@ sports
 Quelle équipe de hockey junior de Québec a été dirigée par Patrick Roy ?|Les Remparts|3|ados adultes aines
-@ sports-hiver
+@ sports
 Quel club-école des Canadiens joue à Laval ?|Le Rocket|3|ados adultes
-@ sports-hiver
+@ sports
 #
 # --- Mots et expressions ---
 Quel mot québécois désigne le fait de flâner sans but ?|Niaiser|2|ados adultes aines
@@ -450,15 +453,15 @@ Quel oiseau blanc envahit les champs du Québec au printemps et à l'automne ?|L
 Quelle chaîne québécoise vend équipement de sport et vêtements de plein air ?|Sports Experts|2|ados adultes aines
 Comment appelle-t-on le premier jour de classe après les vacances d'été ?|La rentrée|1|enfants ados adultes aines
 Comment appelle-t-on celui qui exploite une érablière ?|Un acériculteur|3|ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Comment appelle-t-on le réseau de tuyaux qui recueille l'eau d'érable ?|La tubulure|3|ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Quel poisson moucheté se pêche dans les lacs du Québec ?|La truite|2|enfants ados adultes aines
 @ regne-animal
 Quelle fête de juin invite les gens d'une même rue à se rassembler ?|La fête des voisins|3|adultes aines
 Comment appelle-t-on l'emploi temporaire qu'un étudiant occupe l'été ?|Une job d'été|2|ados adultes aines
 Quelle plante grimpante rougit les murs des maisons à l'automne ?|La vigne vierge|3|adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Quelle sortie familiale attire les Québécois dans les vergers en septembre ?|L'autocueillette|2|enfants ados adultes aines
 
 Quel grand rendez-vous de novembre réunit éditeurs et auteurs au Palais des congrès de Montréal ?|Le Salon du livre|3|ados adultes aines
@@ -482,15 +485,15 @@ Comment appelle-t-on les longs cônes de glace qui pendent des toits ?|Des glaç
 Comment appelle-t-on la neige poussée par le vent qui empêche de voir la route ?|La poudrerie|2|enfants ados adultes aines
 Comment appelle-t-on le mur de neige que la charrue laisse au bout de l'entrée ?|Un banc de neige|2|enfants ados adultes aines
 Quelle forme creusée dans la neige sert de cachette aux enfants ?|Un fort de neige|1|enfants ados adultes aines
-@ sports-hiver
+@ sports
 Quel dessin fait-on en s'allongeant dans la neige et en bougeant les bras ?|Un ange dans la neige|2|enfants ados adultes aines
-@ sports-hiver
+@ sports
 Quelle résidence du Bonhomme est rebâtie en blocs translucides chaque hiver ?|Le palais de glace|2|enfants ados adultes aines
 Quel seau de métal se suspend à l'érable pour recueillir l'eau ?|Une chaudière|2|enfants ados adultes aines
 Quel dessert de la cabane à sucre se roule sur la neige avec un bâton ?|La tire|1|enfants ados adultes aines
 Quel plat de haricots bruns mijotés se sert à la cabane à sucre ?|Les fèves au lard|2|enfants ados adultes aines
 Quelle plantation d'érables se visite au printemps ?|Une érablière|2|enfants ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Comment appelle-t-on l'école qu'un enfant fréquente de la 1re à la 6e année ?|Le primaire|1|enfants ados adultes aines
 Comment appelle-t-on l'école qui suit le primaire, pendant cinq ans ?|Le secondaire|1|enfants ados adultes aines
 Comment appelle-t-on la personne qui surveille la cour d'école à la récréation ?|Un surveillant|2|enfants ados adultes aines
@@ -522,8 +525,8 @@ Quelle salle de Montréal projette le ciel étoilé sur un dôme au-dessus des s
 Quel parc animalier du Lac-Saint-Jean se visite à bord d'un train grillagé ?|Le zoo de Saint-Félicien|3|enfants ados adultes aines
 @ voyages
 Quel véhicule d'hiver file sur la neige avec des chenilles et des skis ?|Une motoneige|1|enfants ados adultes aines
-@ sports-hiver
 @ transports
+@ sports
 Quel petit véhicule tout-terrain se conduit à califourchon dans les sentiers l'été ?|Un quatre-roues|2|enfants ados adultes aines
 @ transports
 Quel gros camion dégage la neige des rues après une tempête ?|Une charrue|1|enfants ados adultes aines
@@ -536,9 +539,9 @@ Quelle tour cylindrique de la ferme conserve la nourriture des vaches ?|Un silo|
 Quelle grosse machine tire la charrue dans les champs ?|Un tracteur|1|enfants ados adultes aines
 @ transports
 Comment appelle-t-on l'herbe coupée et séchée qu'on donne aux vaches l'hiver ?|Le foin|2|enfants ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Comment appelle-t-on le petit jardin où l'on fait pousser ses légumes ?|Un potager|2|enfants ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Comment appelle-t-on les bûches empilées le long du mur pour l'hiver ?|Une corde de bois|3|enfants ados adultes aines
 Quelle partie de l'église pointe vers le ciel et se voit de loin dans un village ?|Le clocher|1|enfants ados adultes aines
 Comment appelle-t-on la longue plateforme de bois devant la maison, avec sa balançoire ?|La galerie|1|enfants ados adultes aines
@@ -554,7 +557,7 @@ Où va-t-on quand on est très malade et qu'il faut être soigné ?|À l'hôpita
 Où emprunte-t-on gratuitement des livres dans son quartier ?|À la bibliothèque|1|enfants ados adultes aines
 Où va-t-on chercher un médicament sur ordonnance ?|À la pharmacie|1|enfants ados adultes aines
 Quel bâtiment abrite une patinoire intérieure dans la plupart des villes du Québec ?|Un aréna|1|enfants ados adultes aines
-@ sports-hiver
+@ sports
 Quel commerce vend des outils, de la peinture et des clous ?|Une quincaillerie|2|enfants ados adultes aines
 Où dépose-t-on une lettre pour qu'elle parte par la poste ?|Au bureau de poste|1|enfants ados adultes aines
 Comment appelle-t-on la banque coopérative très répandue au Québec ?|La caisse populaire|3|ados adultes aines
@@ -580,11 +583,11 @@ Quel petit rongeur rayé du Québec remplit ses joues de graines ?|Le suisse|3|e
 Quel oiseau rouge vif est facile à repérer dans la neige ?|Le cardinal|3|enfants ados adultes aines
 @ regne-animal
 Quelle plante à trois feuilles brillantes donne des démangeaisons en forêt ?|L'herbe à puce|2|enfants ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Quel arbre blanc à écorce qui pèle sert à faire les canots d'écorce ?|Le bouleau|2|enfants ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Quel champignon rouge à pois blancs des contes pousse dans les forêts ?|L'amanite tue-mouches|3|adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Quel congé du début septembre marque la fin de l'été au Québec ?|La fête du Travail|2|enfants ados adultes aines
 Quel congé de mai précède la saison du jardinage au Québec ?|La journée nationale des patriotes|3|adultes aines
 Quel jour d'octobre les enfants passent-ils de porte en porte ?|L'Halloween|1|enfants ados adultes aines
@@ -604,7 +607,7 @@ Quelle barrière de longues pièces de bois croisées entourait les vieilles fer
 Quel oiseau noir aux reflets bleus envahit les champs du Québec en bandes bruyantes ?|L'étourneau|3|adultes aines
 @ regne-animal
 Quel arbre du Québec donne des cocottes que les enfants ramassent ?|Le pin|1|enfants ados adultes aines
-@ regne-vegetal
+@ sciences-et-nature
 Quel poisson à moustaches se pêche au fond des rivières du Québec ?|La barbotte|3|enfants ados adultes aines
 @ regne-animal
 Quel petit fruit noir se cueille dans les fossés du Québec en août ?|La mûre|2|enfants ados adultes aines
