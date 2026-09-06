@@ -27,7 +27,7 @@ BIXI qui compterait cinq lettres, Cartier qui remonterait le fleuve en 1534.
 existait ; le détail était inventé.
 
 **2. Écrire pour atteindre un nombre fabrique des doublons.** Chaque fois
-qu'un lot a été écrit pour compléter une thématique à 200, il a produit des
+qu'un lot a été écrit pour mener une thématique à 200, il a produit des
 redites : 45 variantes de nom en un seul commit. **Le nombre demandé est un
 plafond, jamais une cible.** Rendre 22 bonnes questions sur 30 demandées est
 un succès ; en rendre 30 dont 8 redites est un échec qui se paiera en soirée.
@@ -35,8 +35,8 @@ un succès ; en rendre 30 dont 8 redites est un échec qui se paiera en soirée.
 **3. Le doublon ne se voit pas en se relisant.** Deux questions au texte
 différent qui attendent la même réponse passent la relecture et se posent
 deux fois dans la même manche. Et le compteur qui les attrape **ne regarde
-qu'à l'intérieur d'un même fichier** : « Quel plat québécois combine frites,
-fromage et sauce ? » dans Québec et « Quel plat de frites disparaît sous le
+qu'à l'intérieur d'un même fichier** : « Quel plat québécois combine
+frites, fromage et sauce ? » dans Québec et « Quel plat de frites disparaît
 fromage et la sauce brune ? » dans Bouffe donnent tous deux *La poutine*, et
 il ne le voit pas. Seule la recherche préalable le voit.
 
@@ -117,15 +117,15 @@ précédent brouillon de ce skill en citait un de mémoire, et il était faux.
   sport d'hiver, et « Quel légume mariné accompagne le burger ? » a pour
   sujet le burger.
 
-  **Onze des vingt thématiques sont déclarées par le fichier**, sous le nom de ce
-  fichier : `bouffe-et-cuisine cinema-et-tele culture-generale culture-pop
+  **Onze des vingt thématiques sont déclarées par le fichier**, sous son
+  nom : `bouffe-et-cuisine cinema-et-tele culture-generale culture-pop
   geographie histoire mots-et-langue musique quebec sciences-et-nature
-  sports`. Chaque question porte celle de son fichier SANS qu'on l'écrive —
-  elle n'est pas devinée, c'est le fichier qui la déclare, et la
-  thématique l'absorbe. **Ne jamais écrire le slug d'un fichier sous une
-  question de son propre fichier** : ce serait redire ce qui est déjà là. On
-  ne l'écrit que sur une question d'un AUTRE fichier qui parle du même
-  sujet — « @ quebec » sous une question québécoise rangée dans Culture pop.
+  sports`. Chaque question porte celle de son fichier SANS qu'on l'écrive, et
+  elle n'est pas devinée non plus : c'est le fichier qui la déclare. **Ne
+  jamais écrire le slug d'un fichier sous une question de ce fichier** : ce
+  serait redire ce qui est déjà là. On ne l'écrit que sur une question d'un
+  AUTRE fichier qui parle du même sujet — « @ quebec » sous une question
+  québécoise rangée dans Culture pop.
 
 ### Bonifier une thématique, ou en ouvrir une
 
@@ -142,13 +142,13 @@ Les mots-clés de la thématique ne servent qu'à ça, et ils ratissent large :
 sur 212 candidates proposées à Voyages, 86 ont été retenues. La liste se
 relit une par une, comme un lot.
 
-**Une thématique neuve ne refait pas celle d'un fichier.** « Le Québec ailleurs »
-a été supprimée pour ça, et Voyages a frôlé le même sort : elle touche
-Géographie et ses 360 questions. La frontière s'écrit **dans le code**,
+**Une thématique neuve ne refait pas celle d'un fichier.** « Le Québec
+ailleurs » a été supprimée pour ça, et Voyages a frôlé le même sort : elle
+touche Géographie et ses 360 questions. La frontière s'écrit **dans le code**,
 au-dessus du thème, en disant ce qui est dedans ET ce qui est dehors. Pour
 Voyages : dedans le départ, le séjour et ce qu'on visite ; dehors les
-capitales, les frontières et les superficies, qui sont le cœur de la
-thématique du fichier. Sans cette ligne écrite, la thématique dérive vers son voisin au
+capitales, les frontières et les superficies, qui sont le cœur de
+Géographie. Sans cette ligne écrite, la thématique dérive vers sa voisine au
 fil des lots.
 
 **Une seule question par lieu, par œuvre, par personne.** Le Louvre en avait

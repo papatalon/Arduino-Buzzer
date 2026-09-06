@@ -11,14 +11,14 @@
 # LES THÉMATIQUES SONT ÉCRITES, PAS DÉDUITES. Elles l'étaient, par mots-clés,
 # et se trompaient sans le dire : « neige » rangeait Blanche-Neige dans Sports
 # d'hiver, « dents » rangeait Les Dents de la mer dans Le corps humain. Une
-# thématique est un jugement sur le sujet de la question, du même ordre que sa
-# catégorie, et la catégorie n'a jamais été devinée.
+# thématique est un jugement sur le sujet de la question, du même ordre que
+# celle que déclare son fichier, et celle-là n'a jamais été devinée.
 #
-# LES ONZE CATÉGORIES SONT AUSSI DES THÉMATIQUES, sous le nom du fichier :
+# ONZE DES VINGT THÉMATIQUES SONT DÉCLARÉES PAR LE FICHIER, sous son nom :
 # bouffe-et-cuisine, cinema-et-tele, culture-generale, culture-pop,
 # geographie, histoire, mots-et-langue, musique, quebec, sciences-et-nature,
 # sports. Elles ne s'écrivent PAS sous les questions de leur propre fichier,
-# qui y sont déjà par leur catégorie ; on ne les écrit que sur une question
+# qui les portent déjà par leur fichier ; on ne les écrit que sur une question
 # d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
 # question québécoise rangée dans Culture pop.
 #
@@ -40,7 +40,7 @@
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
 # Marques, télé, jouets, modes, internet. Ce qui n'y entre pas : le cinéma et
-# la musique, qui ont leur propre catégorie.
+# la musique, qui ont leur propre thématique.
 #
 # ─── culture-pop-dici ───
 #
@@ -471,7 +471,7 @@ Quelle émission fait présenter des projets d'affaires à des investisseurs pou
 #
 # Ce qui entre ici : marques et slogans, mascottes, objets cultes, télé,
 # internet, jouets, modes. Ce qui n'y entre pas : le cinéma et la musique,
-# qui ont déjà leur catégorie, ni rien qui double une question de la banque.
+# qui ont déjà la leur, ni rien qui double une question de la banque.
 #
 # --- Marques et logos ---
 Quelle plateforme de diffusion a un grand N rouge pour logo ?|Netflix|1|enfants ados adultes aines

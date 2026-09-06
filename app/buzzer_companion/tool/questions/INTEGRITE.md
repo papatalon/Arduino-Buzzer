@@ -14,9 +14,9 @@ Le générateur refuse de produire le site si :
   ses accents retirés ;
 - une ligne n'a pas ses quatre champs, ou un niveau et des tranches valides ;
 - une thématique `@` porte un slug qui n'existe pas ;
-- une question porte le slug de sa PROPRE catégorie, qui la prend déjà sans
-  marqueur : les onze catégories sont aussi des thématiques, et `@ quebec`
-  ne s'écrit que sur une question québécoise rangée dans un autre fichier.
+- une question porte le slug de la thématique que déclare son PROPRE fichier,
+  qui la prend déjà sans marqueur : `@ quebec` ne s'écrit que sur une
+  question québécoise rangée dans un autre fichier.
 
 Il affiche aussi, sans bloquer, quatre comptes sur les versions servies :
 
@@ -24,7 +24,7 @@ Il affiche aussi, sans bloquer, quatre comptes sur les versions servies :
 |---|---|---|
 | réponses déjà dans leur question | toute la banque | monter peu, et chaque hausse s'explique |
 | réponses partagées par plusieurs questions | toute la banque | idem |
-| quasi-doublons | même catégorie seulement | **rester à 0**, aucun cas légitime |
+| quasi-doublons | même fichier seulement | **rester à 0**, aucun cas légitime |
 | variantes de nom | toute la banque | **ne pas augmenter** |
 | questions exigées sans source | bloc libre, sous le repère | **rester à 0** |
 
@@ -40,7 +40,7 @@ vitamine C » quand la question dit vitamine, « Quatre » qui répond à vingt
 questions sans rapport. **Une hausse non expliquée veut dire qu'un lot est
 entré sans contrôle.**
 
-Le quasi-doublon ne regarde qu'à l'intérieur d'une catégorie : une redite
+Le quasi-doublon ne regarde qu'à l'intérieur d'un même fichier : une redite
 entre Québec et Bouffe lui échappe, et seule la recherche préalable
 (`--chercher`) la voit. La procédure complète est dans le skill
 `ecrire-des-questions`.
@@ -56,7 +56,7 @@ Repères, à mettre à jour après chaque lot :
 | 5 septembre 2026, musique 2010-2020 pour les enfants (+7, 4 recotées) | 54 | 216 | 0 | 14 | 0 |
 | 5 septembre 2026, thématique Disney et les parcs (+18, 24 étiquetées) | 54 | 217 | 0 | 14 | 0 |
 | 5 septembre 2026, thématique Voyages (+27, 86 étiquetées) | 54 | 217 | 0 | 14 | 0 |
-| 5 septembre 2026, les 11 catégories deviennent des thématiques (0 neuve) | 54 | 217 | 0 | 14 | 0 |
+| 5 septembre 2026, les 11 fichiers déclarent leur thématique (0 neuve) | 54 | 217 | 0 | 14 | 0 |
 | 5 septembre 2026, les 221 étiquettes « quebec » récupérées (0 neuve) | 54 | 217 | 0 | 14 | 0 |
 | 5 septembre 2026, sports-hiver et regne-vegetal fusionnés (0 neuve) | 54 | 217 | 0 | 14 | 0 |
 | 6 septembre 2026, 5 étiquettes Sports reprises, 3 questions molles retirées | 54 | 217 | 0 | 14 | 0 |
@@ -71,13 +71,14 @@ Repères, à mettre à jour après chaque lot :
 | 6 septembre 2026, huit de plus, party seulement (+8) | 54 | 225 | 0 | 14 | 0 |
 | 6 septembre 2026, Casper, Hemsworth et Docteur Strange (+3) | 54 | 225 | 0 | 14 | 0 |
 
-Ce dernier passage n'a touché aucune question : les onze catégories sont
-devenues des thématiques qui absorbent leur catégorie, ce qui donne une
-étiquette aux 2795 questions qui n'en portaient aucune. **Zéro question sans
-thématique**, et un test de `banque_embarquee_test.dart` le garde : depuis que
-les grilles de filtres n'affichent plus qu'un seul axe, une question qui
-perdrait la thématique de sa catégorie deviendrait injoignable au tirage sans
-qu'aucun écran ne le dise.
+**UN SEUL AXE, VINGT THÉMATIQUES.** Onze sont déclarées par le fichier où vit
+la question, neuf traversent la banque et s'écrivent avec `@`. Le passage du
+5 septembre 2026 n'a touché aucune question : il a donné une étiquette aux
+2795 qui n'en portaient aucune. **Zéro question sans thématique**, et un test
+de `banque_embarquee_test.dart` le garde : l'étiquette d'une question est sa
+PREMIÈRE thématique, elle doit exister et nommer une vraie thématique de la
+banque. Sans elle, la question serait injoignable au tirage sans qu'aucun
+écran ne le dise.
 
 ## Ce qui n'est pas contrôlé
 

@@ -17,14 +17,14 @@
 # LES THÉMATIQUES SONT ÉCRITES, PAS DÉDUITES. Elles l'étaient, par mots-clés,
 # et se trompaient sans le dire : « neige » rangeait Blanche-Neige dans Sports
 # d'hiver, « dents » rangeait Les Dents de la mer dans Le corps humain. Une
-# thématique est un jugement sur le sujet de la question, du même ordre que sa
-# catégorie, et la catégorie n'a jamais été devinée.
+# thématique est un jugement sur le sujet de la question, du même ordre que
+# celle que déclare son fichier, et celle-là n'a jamais été devinée.
 #
-# LES ONZE CATÉGORIES SONT AUSSI DES THÉMATIQUES, sous le nom du fichier :
+# ONZE DES VINGT THÉMATIQUES SONT DÉCLARÉES PAR LE FICHIER, sous son nom :
 # bouffe-et-cuisine, cinema-et-tele, culture-generale, culture-pop,
 # geographie, histoire, mots-et-langue, musique, quebec, sciences-et-nature,
 # sports. Elles ne s'écrivent PAS sous les questions de leur propre fichier,
-# qui y sont déjà par leur catégorie ; on ne les écrit que sur une question
+# qui les portent déjà par leur fichier ; on ne les écrit que sur une question
 # d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
 # question québécoise rangée dans Culture pop.
 #
@@ -369,7 +369,7 @@ Quelle île du Saint-Laurent fut une station de quarantaine ?|Grosse-Île|2|ados
 # réponse doit être possible. Format : Question|Réponse|niveau.
 #
 # Peu de questions ici, exprès : la collection vise la culture générale, pas
-# le Québec, qui a déjà sa catégorie.
+# le Québec, qui a déjà la sienne.
 Quelle langue parle-t-on au Québec ?|Le français|1|enfants ados adultes aines
 Comment appelle-t-on au Québec la neige mouillée et boueuse du printemps ?|La slush|1|enfants ados adultes aines
 Comment appelle-t-on au Québec le petit magasin du coin ouvert tard ?|Le dépanneur|1|enfants ados adultes aines
