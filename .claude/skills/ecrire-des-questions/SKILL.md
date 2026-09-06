@@ -208,6 +208,32 @@ générateur s'arrête et nomme les fautives. On ne l'écrit que sur une questio
 d'un AUTRE fichier : `@ quebec` sous « Quel objet orange envahit les rues de
 Montréal chaque été ? », rangée dans Culture pop.
 
+### La trouvaille qui relève d'une autre thématique ne se jette pas
+
+**On cherche une thématique, on trouve une bonne question qui n'en est pas :
+elle entre quand même, rangée ailleurs.** Le but d'un lot est de grossir la
+banque, pas seulement le compteur de la thématique demandée. Une question
+party, vérifiable et absente de la banque a la même valeur d'où qu'elle
+vienne, et la jeter parce qu'elle déborde du sujet du jour, c'est refaire
+plus tard le travail de vérification qu'on vient de faire.
+
+Elle se range dans **le fichier de sa vraie catégorie**, avec **ses propres
+`@`** — pas ceux du lot en cours. C'est la seule façon d'ajouter sans
+polluer : coller l'étiquette du jour sur une question qui ne la mérite pas,
+c'est exactement la faute de la motoneige rangée dans Sports.
+
+**Avant de conclure qu'elle déborde, revérifier.** Casper a d'abord été
+écarté d'un lot Super-héros au motif qu'il naît en dessin animé en 1945 et
+non en bande dessinée. La vérification a montré une série chez St. John dès
+1949 puis chez Harvey Comics à partir de 1952 : il était dans le sujet
+depuis le début, et c'est le souvenir approximatif de son origine qui
+l'écartait.
+
+Ce qui ne change pas : elle passe les mêmes barrières que les autres. Terrain
+cherché, faits vérifiés à l'extérieur, entrée dans `SOURCES.txt`, compteurs
+au vert. Et le nombre demandé reste un plafond : une trouvaille hors sujet
+n'est pas une raison de gonfler un lot.
+
 ### La question s'écrit en français soigné
 
 Elle est lue à voix haute et s'affiche sur l'écran public. Les conventions
@@ -526,6 +552,11 @@ ses entrées dans `SOURCES.txt` n'est pas rendu, et le compteur le dira.
   sans son mot générique.
 - Écrire le slug d'une catégorie sous une question de son propre fichier.
 - Compléter un lot pour atteindre le nombre demandé.
+- Jeter une bonne question vérifiée parce qu'elle relève d'une autre
+  thématique que celle du lot : elle se range dans son fichier, avec ses
+  propres `@`.
+- Coller l'étiquette du lot en cours sur une question qui ne la mérite pas,
+  pour la garder dans le décompte.
 - Écrire une question sous le repère des sources sans son entrée dans
   `SOURCES.txt`, ou l'écrire au-dessus du repère pour échapper au compteur.
 - Annoncer un lot conforme sans les compteurs avant et après, ni le journal.

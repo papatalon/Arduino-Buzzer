@@ -69,6 +69,7 @@ Repères, à mettre à jour après chaque lot :
 | 6 septembre 2026, le Marsupilami et Fantasio (+2) | 54 | 225 | 0 | 14 | 0 |
 | 6 septembre 2026, vingt de plus dans Super-héros et BD (+20) | 54 | 225 | 0 | 14 | 0 |
 | 6 septembre 2026, huit de plus, party seulement (+8) | 54 | 225 | 0 | 14 | 0 |
+| 6 septembre 2026, Casper, Hemsworth et Docteur Strange (+3) | 54 | 225 | 0 | 14 | 0 |
 
 Ce dernier passage n'a touché aucune question : les onze catégories sont
 devenues des thématiques qui absorbent leur catégorie, ce qui donne une
