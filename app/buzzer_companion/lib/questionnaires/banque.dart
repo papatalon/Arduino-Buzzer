@@ -62,20 +62,20 @@ class Facette {
 class Banque {
   const Banque({
     required this.questions,
-    required this.categories,
     required this.themes,
   });
 
   final List<QuizQuestion> questions;
-  // Les catégories du firmware : Histoire, Musique, Québec...
-  final List<Facette> categories;
-  // Les découpes qui TRAVERSENT les catégories : « Spécial Noël » prend le
-  // renne dans Culture générale, la bûche dans Bouffe et les chants dans
-  // Musique. C'est ce qu'aucune catégorie ne sait faire, et la raison pour
-  // laquelle elles ont survécu à la disparition des fichiers.
+  // UN SEUL AXE. Les thématiques du fichier d'une question l'absorbent, et
+  // les autres la TRAVERSENT : « Spécial Noël » prend le renne dans Culture
+  // générale, la bûche dans Bouffe et les chants dans Musique. Il y avait
+  // ici une seconde liste, « categories », qui redisait les onze noms déjà
+  // présents dans celle-ci ; l'interface ne la remplissait plus et le tirage
+  // gardait une branche qui ne pouvait plus être vraie sans être déjà
+  // couverte. Une seule liste dit la vérité du code.
   final List<Facette> themes;
 
-  static const vide = Banque(questions: [], categories: [], themes: []);
+  static const vide = Banque(questions: [], themes: []);
 
   bool get isEmpty => questions.isEmpty;
 
@@ -107,7 +107,6 @@ class Banque {
           for (final q in brutQuestions)
             if (q is Map<String, dynamic>) QuizQuestion.fromJson(q),
       ],
-      categories: facettes(parsed['categories']),
       themes: facettes(parsed['themes']),
     );
   }

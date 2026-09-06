@@ -62,25 +62,15 @@ Future<void> main(List<String> args) async {
   }
 
   final questions = (banque['questions'] as List).cast<Map<String, dynamic>>();
-  final categories = (banque['categories'] as List).cast<Map<String, dynamic>>();
   final themes = (banque['themes'] as List).cast<Map<String, dynamic>>();
   final ko = (octets.length / 1024).round();
-  stdout.writeln('${questions.length} questions, ${categories.length} catégories, '
+  stdout.writeln('${questions.length} questions, '
       '${themes.length} thématiques, $ko ko.');
 
   // UNE FACETTE QUI MENT NE SE VOIT NULLE PART. L'application dessine ses
   // pastilles à partir de ces comptes et pioche dans les questions : si une
-  // catégorie annonce 300 questions et que la banque n'en porte que 280 sous
+  // thématique annonce 300 questions et que la banque n'en porte que 280 sous
   // ce nom, la manche arrive tronquée sans qu'aucune erreur ne le dise.
-  for (final f in categories) {
-    final nom = f['nom'] as String;
-    final reelles = questions.where((q) => q['categorie'] == nom).length;
-    if (reelles != f['questions']) {
-      stderr.writeln('Catégorie « $nom » : ${f['questions']} questions '
-          'annoncées, $reelles trouvées.');
-      erreurs++;
-    }
-  }
   for (final f in themes) {
     final nom = f['nom'] as String;
     final reelles = questions

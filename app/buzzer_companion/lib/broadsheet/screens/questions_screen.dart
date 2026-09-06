@@ -1792,13 +1792,13 @@ class _CategoryField extends StatelessWidget {
         Expanded(
           child: _Field(
             value: value,
-            hint: 'Catégorie',
+            hint: 'Thématique',
             style: BSType.body(size: 15, color: BSColors.neutral700),
             onChanged: onChanged,
           ),
         ),
         PopupMenuButton<String>(
-          tooltip: 'Catégories courantes',
+          tooltip: 'Thématiques courantes',
           color: BSColors.bg,
           shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
           onSelected: onChanged,

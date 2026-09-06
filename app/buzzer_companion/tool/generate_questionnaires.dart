@@ -386,7 +386,8 @@ void main(List<String> args) {
   final raw = source.readAsStringSync();
   final categories = _parseCategories(raw);
   if (categories.isEmpty) {
-    stderr.writeln("Aucune catégorie trouvée : le format de Questions.cpp a changé.");
+    stderr.writeln("Aucun bloc de questions trouvé : le format de "
+        "Questions.cpp a changé.");
     exit(1);
   }
 
@@ -401,8 +402,8 @@ void main(List<String> args) {
     all.addAll(entries);
   }
 
-  stdout.writeln('${all.length} questions, ${categories.length} catégories '
-      '($accentues accentuées, ${categories.length - accentues} en attente).');
+  stdout.writeln('${all.length} questions, ${categories.length} fichiers '
+      '($accentues accentués, ${categories.length - accentues} en attente).');
 
   // LES INÉDITES : des questions qui n'existent que dans le catalogue, jamais
   // dans le firmware. Elles rejoignent leur catégorie (la tuile grossit
@@ -558,22 +559,16 @@ void _writeBanqueQuestions(List<Entry> all) {
     }
   }
 
-  final comptesCategories = <String, int>{};
-  for (final e in all) {
-    comptesCategories[e.category] = (comptesCategories[e.category] ?? 0) + 1;
-  }
-
   final contenu = {
     'format': kFormatBanque,
     'version': 1,
-    'categories': [
-      for (final nom in comptesCategories.keys.toList()..sort())
-        {
-          'nom': nom,
-          'emoji': kEmojiCategories[nom] ?? _emojiInedites[nom] ?? '',
-          'questions': comptesCategories[nom],
-        },
-    ],
+    // UNE SEULE LISTE DE FACETTES. Il y avait ici une liste « categories »
+    // qui redisait les onze noms de fichiers, déjà tous présents dans
+    // « themes » depuis qu'ils absorbent leur fichier. L'application ne la
+    // remplissait plus dans ses filtres et le tirage gardait une branche
+    // morte pour elle. Une app déjà installée qui ne trouve pas la clé
+    // reçoit une liste vide sans planter, et retrouve les onze noms dans
+    // les thématiques : rien ne devient injoignable.
     'themes': [
       for (final theme in kThemes)
         if (comptesThemes.containsKey(theme.name))
@@ -605,8 +600,8 @@ void _writeBanqueQuestions(List<Entry> all) {
 
   final ko = (utf8.encode(json).length / 1024).round();
   stdout.writeln('banque.json : ${all.length} questions, '
-      '${comptesCategories.length} catégories, ${comptesThemes.length} '
-      'thématiques, $ko ko. Copiée dans $_assetBanque.');
+      '${comptesThemes.length} thématiques, $ko ko. '
+      'Copiée dans $_assetBanque.');
 }
 
 
@@ -906,7 +901,7 @@ void _writeRevue(List<Entry> all) {
 </head>
 <body>
   <h1>Revue des questions</h1>
-  <p class="chapeau">Les $total questions de la banque, par catégorie, avec leur
+  <p class="chapeau">Les $total questions de la banque, par thématique, avec leur
      niveau. Cette page suit exactement ce qui est publié : elle est écrite en
      même temps que le catalogue. <a class="retour" href="/">Retour au site</a></p>
 
@@ -999,7 +994,6 @@ $sections
 
 void _writeAccueil(List<Entry> all) {
   final questions = all.length;
-  final categories = all.map((e) => e.category).toSet().length;
   final version = _versionApp();
   final lien = '$kDepotGitHub/releases/download/v$version/'
       'buzzer-console-$version-windows.zip';
@@ -1067,9 +1061,9 @@ void _writeAccueil(List<Entry> all) {
     <li>Joue les sons par les haut-parleurs de l'ordinateur plutôt que par le
         petit haut-parleur du buzzer, et retombe sur ce dernier si le lien
         Bluetooth tombe.</li>
-    <li>Apporte <strong>$questions questions</strong> en $categories
-        catégories, cotées par difficulté et par tranche d'âge. Vous choisissez
-        vos critères avant chaque manche et l'application la compose sur le
+    <li>Apporte <strong>$questions questions</strong> rangées par thématique et
+        cotées par difficulté et par tranche d'âge. Vous choisissez vos
+        critères avant chaque manche et l'application la compose sur le
         champ. Vous pouvez aussi écrire vos propres questionnaires.</li>
   </ul>
 
@@ -2207,9 +2201,9 @@ void _proposer(String slug) {
   }
 
   if (theme.absorbe != null) {
-    stdout.writeln('\n« ${theme.name} » absorbe la catégorie '
+    stdout.writeln('\n« ${theme.name} » absorbe le fichier '
         '« ${theme.absorbe} » : ces questions y sont déjà, sans marqueur. '
-        'Ce qui suit ne vient que des AUTRES catégories.');
+        'Ce qui suit ne vient que des AUTRES fichiers.');
   }
   stdout.writeln('\n« ${theme.name} » : $deja déjà étiquetées, '
       '$proposees candidates à relire.');
