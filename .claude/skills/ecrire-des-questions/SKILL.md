@@ -85,7 +85,7 @@ Format d'une ligne, des deux côtés :
 Question|Réponse|niveau|tranches
 > Question|Réponse     retouche la ligne du dessus, servie à sa place
 - motif                la retire du catalogue
-@ noel creatures       ses thématiques
+@ noel nostalgie       ses thématiques
 ```
 
 ### Niveau, tranches, thématiques : trois jugements, tous écrits
@@ -109,9 +109,9 @@ rangeait Blanche-Neige dans Sports d'hiver. Chaque question porte les trois,
 
 Ces quatre exemples viennent de la banque, relus avec `--chercher`. Le
 précédent brouillon de ce skill en citait un de mémoire, et il était faux.
-- **`@ slug`** pour chaque thématique dont la question relève. Les onze
+- **`@ slug`** pour chaque thématique dont la question relève. Les neuf
   qui traversent la banque : `noel regne-animal espace corps-humain
-  super-heros creatures mer transports disney nostalgie voyages`. Un slug
+  super-heros transports disney nostalgie voyages`. Un slug
   inconnu arrête la génération. Le critère est le SUJET de la question, pas
   un mot qu'elle contient : une question sur Blanche-Neige n'est pas un
   sport d'hiver, et « Quel légume mariné accompagne le burger ? » a pour
