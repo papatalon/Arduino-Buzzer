@@ -19,3 +19,12 @@ app/buzzer_companion/tool/** text eol=lf
 # apparaissent modifies apres chaque compilation alors que leur contenu est
 # identique, et on finit par ne plus lire git status.
 app/buzzer_companion/windows/flutter/** text eol=lf
+
+# LA BANQUE EMBARQUEE EST UNE COPIE OCTET POUR OCTET de site/banque.json : le
+# generateur ecrit le site puis copie dans les assets. Elle manquait ici, et
+# git lui rendait un CRLF au checkout alors que sa jumelle du site restait en
+# LF. Les deux fichiers cessaient d'etre identiques pour un seul octet, et
+# tool/verify_banque.dart annoncait « ne correspond pas a la banque publiee »
+# apres chaque git pull, sur une banque parfaitement bonne. Un outil qui crie
+# au loup finit par ne plus etre lu.
+app/buzzer_companion/assets/questions/banque.json text eol=lf
