@@ -12,7 +12,7 @@
 #   Question|Réponse|niveau|tranches
 #   > Question|Réponse     retouche la question du dessus
 #   - motif                la retire du catalogue
-#   @ noel creatures       ses thématiques, écrites et jamais devinées
+#   @ noel nostalgie       ses thématiques, écrites et jamais devinées
 #
 # LES THÉMATIQUES SONT ÉCRITES, PAS DÉDUITES. Elles l'étaient, par mots-clés,
 # et se trompaient sans le dire : « neige » rangeait Blanche-Neige dans Sports
@@ -28,13 +28,20 @@
 # d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
 # question québécoise rangée dans Culture pop.
 #
-# Les onze qui traversent la banque : noel, regne-animal, espace,
-# corps-humain, super-heros, creatures, mer, transports, disney, nostalgie,
-# voyages. Un slug inconnu arrête la génération.
+# Les neuf qui traversent la banque : noel, regne-animal, espace,
+# corps-humain, super-heros, transports, disney, nostalgie, voyages.
+# Un slug inconnu arrête la génération.
 #
-# « Sports d'hiver » a fondu dans sports et « Le règne végétal » dans
-# sciences-et-nature : le client n'en voulait pas deux. Les étiquettes qui
-# vivaient hors du fichier absorbeur ont été transférées, pas jetées.
+# QUATRE ONT DÉJÀ FONDU, ET AUCUNE QUESTION N'A ÉTÉ RETIRÉE avec elles.
+# « Sports d'hiver » est allée dans sports et « Le règne végétal » dans
+# sciences-et-nature : le client n'en voulait pas deux. « Créatures et
+# légendes » est allée dans culture-generale et « La mer et les bateaux »
+# dans geographie : elles n'étaient pas petites, 77 et 121 questions, elles
+# n'étaient juste pas invitantes à l'heure de composer une manche. Les
+# étiquettes qui vivaient hors du fichier absorbeur ont été transférées, pas
+# jetées : c'est ce que fait « --absorber <slug> <absorbeur> », et c'est ce
+# que « --retirer » ne fait pas.
+#
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -113,7 +120,7 @@ Quel phénomène lumineux accompagne le tonnerre ?|L'éclair|1|enfants ados adul
 Combien de temps la Terre met-elle à tourner sur elle-même ?|24 heures|1|enfants ados adultes aines
 Quel astre provoque les marées ?|La Lune|1|enfants ados adultes aines
 @ espace
-@ mer
+@ geographie
 Quel reptile change de couleur pour se camoufler ?|Le caméléon|1|enfants ados adultes aines
 @ regne-animal
 Quel gaz compose 78 pour cent de l'air ?|L'azote|2|ados adultes aines
@@ -144,12 +151,12 @@ Quel cousin rayé du cheval vit en Afrique ?|Le zèbre|1|enfants ados adultes ai
 @ regne-animal
 Quel animal marin a trois cœurs ?|La pieuvre|2|ados adultes aines
 @ regne-animal
-@ mer
+@ geographie
 # La pieuvre régénère aussi ses bras. Les cinq branches tranchent.
 Quel animal marin peut régénérer ses bras ?|L'étoile de mer|1|enfants ados adultes aines
 > Quel animal marin à cinq bras peut en faire repousser un ?|L'étoile de mer
 @ regne-animal
-@ mer
+@ geographie
 # « Le plus grand » : l'albatros gagne en envergure, le condor aussi.
 Quel est le plus grand oiseau du monde ?|L'autruche|1|enfants ados adultes aines
 > Quel est le plus grand oiseau du monde, incapable de voler ?|L'autruche
@@ -212,7 +219,7 @@ Quelle roche liquide sort des volcans ?|La lave|1|enfants ados adultes aines
 Comment s'appelle la roche fondue sous terre ?|Le magma|1|enfants ados adultes aines
 Quel appareil enregistre les tremblements de terre ?|Le sismographe|2|ados adultes aines
 Quelle vague géante suit parfois un séisme ?|Le tsunami|1|enfants ados adultes aines
-@ mer
+@ geographie
 Quel vent tourbillonnant forme un entonnoir ?|La tornade|1|enfants ados adultes aines
 Comment mesure-t-on la force des ouragans ?|Saffir-Simpson|3|adultes aines
 De quoi sont faits les nuages ?|Gouttelettes d'eau|1|enfants ados adultes aines
@@ -259,7 +266,7 @@ Quel oiseau est le plus rapide en piqué ?|Le faucon pèlerin|2|ados adultes ain
 @ regne-animal
 Quel poisson à voile est le plus rapide des mers ?|Le voilier|3|ados adultes aines
 @ regne-animal
-@ mer
+@ geographie
 Quel félin est le plus gros du monde ?|Le tigre|2|ados adultes aines
 @ regne-animal
 Quel animal a la langue la plus longue par rapport au corps ?|Le caméléon|2|ados adultes aines
@@ -287,12 +294,12 @@ Quel animal produit de la soie ?|Le ver à soie|1|enfants ados adultes aines
 @ regne-animal
 Quel animal marin ressemble à un cheval miniature ?|L'hippocampe|1|enfants ados adultes aines
 @ regne-animal
-@ mer
+@ geographie
 Chez quel animal le mâle porte-t-il les bébés ?|L'hippocampe|1|enfants ados adultes aines
 @ regne-animal
 Quel mammifère marin chante des mélodies ?|La baleine à bosse|2|ados adultes aines
 @ regne-animal
-@ mer
+@ geographie
 Quel animal polaire a la peau noire sous son pelage blanc ?|L'ours polaire|2|ados adultes aines
 @ regne-animal
 Quel grand singe est le plus proche de l'homme ?|Le chimpanzé|1|enfants ados adultes aines
@@ -326,7 +333,7 @@ Quels sont les trois états de l'eau ?|Solide liquide gaz|1|enfants ados adultes
 Comment s'appelle le passage de liquide à gaz ?|L'évaporation|1|enfants ados adultes aines
 Comment s'appelle le passage de gaz à liquide ?|La condensation|1|ados adultes aines
 Quel phénomène fait flotter les bateaux ?|Poussée d'Archimède|2|ados adultes aines
-@ mer
+@ geographie
 # « Cette poussée » renvoyait à la question précédente : brassée, elle ne suit plus.
 Quel savant a donné son nom à cette poussée ?|Archimède|1|ados adultes aines
 > Quel savant grec aurait crié « Eurêka » en sortant de son bain ?|Archimède
@@ -437,7 +444,7 @@ Combien de pattes a un oiseau ?|Deux|1|enfants ados adultes aines
 @ regne-animal
 Quel animal marin géant souffle un jet d'eau par le dos ?|La baleine|1|enfants ados adultes aines
 @ regne-animal
-@ mer
+@ geographie
 Quel animal à longues oreilles adore les carottes ?|Le lapin|1|enfants ados adultes aines
 @ regne-animal
 Quel animal rampe sans pattes ?|Le serpent|1|enfants ados adultes aines
@@ -506,7 +513,7 @@ Comment appelle-t-on la grosse partie de l'arbre qui porte les branches ?|Le tro
 Comment appelle-t-on la peau rugueuse qui recouvre le tronc ?|L'écorce|2|enfants ados adultes aines
 Quel mammifère marin sauteur siffle et vit en groupe ?|Le dauphin|1|enfants ados adultes aines
 @ regne-animal
-@ mer
+@ geographie
 Quel poisson à l'aileron pointu fait fuir les baigneurs ?|Le requin|1|enfants ados adultes aines
 @ regne-animal
 Comment appelle-t-on le bébé de la grenouille, qui a encore une queue ?|Le têtard|2|enfants ados adultes aines

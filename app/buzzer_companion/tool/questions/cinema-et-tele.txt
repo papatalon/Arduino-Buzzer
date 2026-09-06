@@ -12,7 +12,7 @@
 #   Question|Réponse|niveau|tranches
 #   > Question|Réponse     retouche la question du dessus
 #   - motif                la retire du catalogue
-#   @ noel creatures       ses thématiques, écrites et jamais devinées
+#   @ noel nostalgie       ses thématiques, écrites et jamais devinées
 #
 # LES THÉMATIQUES SONT ÉCRITES, PAS DÉDUITES. Elles l'étaient, par mots-clés,
 # et se trompaient sans le dire : « neige » rangeait Blanche-Neige dans Sports
@@ -28,13 +28,20 @@
 # d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
 # question québécoise rangée dans Culture pop.
 #
-# Les onze qui traversent la banque : noel, regne-animal, espace,
-# corps-humain, super-heros, creatures, mer, transports, disney, nostalgie,
-# voyages. Un slug inconnu arrête la génération.
+# Les neuf qui traversent la banque : noel, regne-animal, espace,
+# corps-humain, super-heros, transports, disney, nostalgie, voyages.
+# Un slug inconnu arrête la génération.
 #
-# « Sports d'hiver » a fondu dans sports et « Le règne végétal » dans
-# sciences-et-nature : le client n'en voulait pas deux. Les étiquettes qui
-# vivaient hors du fichier absorbeur ont été transférées, pas jetées.
+# QUATRE ONT DÉJÀ FONDU, ET AUCUNE QUESTION N'A ÉTÉ RETIRÉE avec elles.
+# « Sports d'hiver » est allée dans sports et « Le règne végétal » dans
+# sciences-et-nature : le client n'en voulait pas deux. « Créatures et
+# légendes » est allée dans culture-generale et « La mer et les bateaux »
+# dans geographie : elles n'étaient pas petites, 77 et 121 questions, elles
+# n'étaient juste pas invitantes à l'heure de composer une manche. Les
+# étiquettes qui vivaient hors du fichier absorbeur ont été transférées, pas
+# jetées : c'est ce que fait « --absorber <slug> <absorbeur> », et c'est ce
+# que « --retirer » ne fait pas.
+#
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -62,7 +69,7 @@ Quel type de poisson est Nemo ?|Un poisson-clown|1|enfants ados adultes aines
 @ regne-animal
 @ disney
 Quelle créature verte vit dans un marais ?|Shrek|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Comment s'appelle l'école de Harry Potter ?|Poudlard|1|enfants ados adultes aines
 Comment s'appelle la chouette de Harry Potter ?|Hedwige|1|enfants ados adultes aines
 Quel est le matricule de James Bond ?|007|1|ados adultes aines
@@ -94,9 +101,9 @@ Comment s'appelle la statuette du cinéma américain ?|L'Oscar|1|ados adultes ai
 Dans quelle ville se trouve Hollywood ?|Los Angeles|1|ados adultes aines
 Comment s'appelle le cinéma de l'Inde ?|Bollywood|2|ados adultes aines
 Quel ogre a un ami âne très bavard ?|Shrek|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel pirate est joué par Johnny Depp ?|Jack Sparrow|1|ados adultes aines
-@ mer
+@ geographie
 Quel magicien gris guide la Communauté de l'anneau ?|Gandalf|1|ados adultes aines
 Quelle voiture voyage dans le temps dans Retour vers le futur ?|La DeLorean|2|adultes aines
 @ transports
@@ -134,37 +141,37 @@ Quelle famille de super-héros Pixar porte du rouge ?|Les Incroyables|1|enfants 
 @ super-heros
 @ disney
 Quel monstre bleu et poilu travaille avec Mike ?|Sulley|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 @ disney
 Dans quel film Pixar une maison vole-t-elle avec des ballons ?|Là-haut|1|enfants ados adultes aines
 @ disney
 Quelles petites créatures jaunes adorent les bananes ?|Les Minions|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel méchant des Minions veut voler la Lune ?|Gru|1|enfants ados adultes aines
 Quel panda pratique le kung-fu au cinéma ?|Po|1|enfants ados adultes aines
 @ regne-animal
 Quel dragon noir accompagne Harold ?|Krokmou|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quelle princesse Disney a de très longs cheveux magiques ?|Raiponce|1|enfants ados adultes aines
 @ disney
 Quelle sirène Disney rêve de vivre sur terre ?|Ariel|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 @ disney
 Quelle princesse perd sa pantoufle de verre ?|Cendrillon|1|enfants ados adultes aines
 @ disney
 Comment se nomme la Belle au bois dormant chez Disney ?|Aurore|2|ados adultes aines
 @ disney
 Dans quel conte Disney une rose est-elle sous cloche ?|La Belle et la Bête|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 @ disney
 Quelle nounou anglaise vole avec un parapluie ?|Mary Poppins|1|adultes aines
 Quel garçon ne veut jamais grandir ?|Peter Pan|1|enfants ados adultes aines
 @ disney
 Quelle fée accompagne Peter Pan ?|Clochette|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 @ disney
 Quel pirate est l'ennemi juré de Peter Pan ?|Capitaine Crochet|1|enfants ados adultes aines
-@ mer
+@ geographie
 @ disney
 Quelle série suit six amis dans un café new-yorkais ?|Friends|1|ados adultes aines
 Comment s'appelle le café de Friends ?|Central Perk|2|ados adultes
@@ -178,7 +185,7 @@ Quel petit maître Jedi vert parle à l'envers ?|Yoda|1|enfants ados adultes ain
 @ disney
 Quel hobbit doit détruire l'anneau unique ?|Frodon|1|enfants ados adultes aines
 Quelle créature de Tolkien dit mon précieux ?|Gollum|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel mage noir est l'ennemi de Harry Potter ?|Voldemort|1|enfants ados adultes aines
 Quel sport sorcier se joue sur des balais ?|Le quidditch|1|enfants ados adultes aines
 Quel acteur incarne Iron Man au cinéma ?|Robert Downey Jr|2|ados adultes
@@ -194,7 +201,7 @@ Quel canard milliardaire plonge dans ses pièces d'or ?|Picsou|1|adultes aines
 @ disney
 Quel marin devient fort en mangeant des épinards ?|Popeye|1|aines
 @ super-heros
-@ mer
+@ geographie
 Quel chat orange déteste les lundis et adore la lasagne ?|Garfield|1|enfants adultes aines
 @ super-heros
 @ regne-animal
@@ -270,7 +277,7 @@ Quelle suite de Nemo suit la mémoire de Dory ?|Trouver Doris|1|enfants ados adu
 @ disney
 Quel escargot de course devient ultra rapide au cinéma ?|Turbo|2|enfants ados
 Quel ogre vert a une femme nommée Fiona ?|Shrek|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 # Question circulaire : elle nommait déjà l'Âne.
 Quel animal est l'Âne dans Shrek ?|Un âne|1|enfants ados adultes aines
 > Quel animal de ferme, très bavard, accompagne Shrek partout ?|L'âne
@@ -315,7 +322,7 @@ Quelle série suit la famille royale anglaise ?|The Crown|2|adultes aines
 Quelle série coréenne met en scène des jeux mortels ?|Squid Game|1|ados adultes
 Quelle série de science-fiction se passe à Hawkins ?|Stranger Things|1|enfants ados adultes
 Quel monstre menace les enfants de Stranger Things ?|Le Démogorgon|2|ados adultes
-@ creatures
+@ culture-generale
 Quelle série suit un professeur de chimie nommé Walter White ?|Breaking Bad|1|ados adultes
 Quel jeune partenaire aide Walter White ?|Jesse Pinkman|2|ados adultes
 Quelle sitcom suit des physiciens et leur voisine Penny ?|Big Bang Theory|1|ados adultes
@@ -328,7 +335,7 @@ Comment s'appelle le voisin trop gentil des Simpson ?|Ned Flanders|1|enfants ado
 Quelle série animée suit Stewie et Peter Griffin ?|Family Guy|2|ados adultes
 Quel père de famille travaille dans une centrale nucléaire ?|Homer Simpson|1|enfants ados adultes aines
 Quelle éponge jaune vit dans un ananas sous la mer ?|Bob l'éponge|1|enfants ados adultes aines
-@ mer
+@ geographie
 Quel ami étoile de mer accompagne Bob l'éponge ?|Patrick|1|enfants ados adultes aines
 Quel garçon a une casquette rouge et chasse des Pokémon ?|Sacha|1|enfants ados adultes
 Quel Pokémon jaune lance des éclairs ?|Pikachu|1|enfants ados adultes
@@ -355,7 +362,7 @@ Quelle amazone a un lasso de vérité ?|Wonder Woman|1|enfants ados adultes aine
 Quel héros court plus vite que tout le monde en rouge ?|Flash|1|enfants ados adultes aines
 Quel roi des mers parle aux poissons ?|Aquaman|1|enfants ados adultes aines
 @ super-heros
-@ mer
+@ geographie
 Quel milliardaire Marvel a un réacteur dans la poitrine ?|Tony Stark|1|enfants ados adultes aines
 @ super-heros
 @ disney
@@ -420,7 +427,7 @@ Quels quatre frères bandits affrontent Lucky Luke ?|Les Dalton|1|enfants adulte
 @ super-heros
 Quel méchant sorcier des Schtroumpfs a un chat ?|Gargamel|1|enfants adultes aines
 @ super-heros
-@ creatures
+@ culture-generale
 
 === hors firmware ===
 
@@ -467,9 +474,9 @@ Quel écureuil de L'Ère de glace court sans cesse après son gland ?|Scrat|1|en
 Quel film de 1977 s'ouvre sur « Il y a bien longtemps, dans une galaxie lointaine » ?|La Guerre des étoiles|1|enfants ados adultes aines
 Quelle princesse Mario doit-il sauver ?|Peach|1|enfants ados adultes aines
 Quel gorille géant grimpe l'Empire State Building au cinéma ?|King Kong|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel monstre géant venu du Japon écrase des villes au cinéma ?|Godzilla|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel légume la marraine de Cendrillon transforme-t-elle en carrosse ?|La citrouille|1|enfants ados adultes aines
 @ disney
 Quel animal est Abu, l'ami d'Aladin ?|Un singe|1|enfants ados adultes aines
@@ -520,7 +527,7 @@ Quelle série de films enferme des adolescents dans un dédale aux murs mouvants
 Quel film d'animation japonais suit une fillette prisonnière d'un bain public d'esprits ?|Le Voyage de Chihiro|3|ados adultes
 Quelle série animée japonaise oppose l'humanité à des géants derrière de hauts murs ?|L'Attaque des Titans|2|ados adultes
 Quel héros de manga au chapeau de paille veut devenir le roi des pirates ?|Luffy|2|enfants ados
-@ mer
+@ geographie
 Quelle série animée japonaise suit un garçon qui pourfend des démons au sabre ?|Demon Slayer|2|enfants ados
 Quel acteur canadien incarne Deadpool au cinéma ?|Ryan Reynolds|2|ados adultes
 Quel jeune voleur de Disney trouve une lampe magique à Agrabah ?|Aladdin|1|enfants ados adultes
@@ -547,9 +554,9 @@ Comment s'appelle le petit chien blanc de Tintin ?|Milou|1|enfants ados adultes 
 @ regne-animal
 Quel marin barbu et grognon accompagne Tintin dans ses aventures ?|Le capitaine Haddock|2|enfants ados adultes aines
 @ super-heros
-@ mer
+@ geographie
 Quel demi-dieu tatoué accompagne Moana avec un hameçon magique ?|Maui|2|enfants ados
-@ creatures
+@ culture-generale
 @ disney
 Comment s'appelle la petite fille hawaïenne qui adopte Stitch ?|Lilo|2|enfants ados adultes
 @ disney
@@ -560,7 +567,7 @@ Quel duo québécois de dessins animés met en scène une souris et son chat en 
 Quel homme élevé par les singes se balance de liane en liane ?|Tarzan|1|enfants ados adultes aines
 Quelle créature verte et mal lunée veut voler le Noël des Chou ?|Le Grinch|1|enfants ados adultes
 @ noel
-@ creatures
+@ culture-generale
 Dans quelle ville sous-marine habitent Bob l'éponge et Patrick ?|Bikini Bottom|2|enfants ados
 Quel petit champignon à chapeau blanc taché de rouge sert de messager chez Mario ?|Toad|2|enfants ados
 Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?|Le Bossu de Notre-Dame|3|enfants ados adultes
@@ -571,13 +578,13 @@ Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?|
 Quelle série de films est née d'une attraction de Disneyland ouverte en 1967 ?|Pirates des Caraïbes|2|ados adultes aines
 @ disney
 Comment s'appelle la sorcière des mers de La Petite Sirène ?|Ursula|2|enfants ados adultes aines
-@ disney mer
+@ disney geographie
 Quelle méchante fée de Disney se transforme en dragon ?|Maléfique|2|enfants ados adultes aines
-@ disney creatures
+@ disney culture-generale
 Comment s'appelle le méchant vizir d'Aladdin ?|Jafar|3|enfants ados adultes
 @ disney
 Comment s'appelle le père d'Ariel, le roi des mers ?|Triton|3|enfants ados adultes aines
-@ disney mer
+@ disney geographie
 À cinq ans près, en quelle année Disney a-t-il sorti Blanche-Neige, son premier long métrage d'animation ?|1937|2|ados adultes aines
 @ disney
 Dans quel court métrage de 1928 Mickey Mouse est-il apparu pour la première fois ?|Steamboat Willie|3|adultes aines

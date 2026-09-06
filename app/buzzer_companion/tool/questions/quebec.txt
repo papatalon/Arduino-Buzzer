@@ -12,7 +12,7 @@
 #   Question|Réponse|niveau|tranches
 #   > Question|Réponse     retouche la question du dessus
 #   - motif                la retire du catalogue
-#   @ noel creatures       ses thématiques, écrites et jamais devinées
+#   @ noel nostalgie       ses thématiques, écrites et jamais devinées
 #
 # LES THÉMATIQUES SONT ÉCRITES, PAS DÉDUITES. Elles l'étaient, par mots-clés,
 # et se trompaient sans le dire : « neige » rangeait Blanche-Neige dans Sports
@@ -28,13 +28,20 @@
 # d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
 # question québécoise rangée dans Culture pop.
 #
-# Les onze qui traversent la banque : noel, regne-animal, espace,
-# corps-humain, super-heros, creatures, mer, transports, disney, nostalgie,
-# voyages. Un slug inconnu arrête la génération.
+# Les neuf qui traversent la banque : noel, regne-animal, espace,
+# corps-humain, super-heros, transports, disney, nostalgie, voyages.
+# Un slug inconnu arrête la génération.
 #
-# « Sports d'hiver » a fondu dans sports et « Le règne végétal » dans
-# sciences-et-nature : le client n'en voulait pas deux. Les étiquettes qui
-# vivaient hors du fichier absorbeur ont été transférées, pas jetées.
+# QUATRE ONT DÉJÀ FONDU, ET AUCUNE QUESTION N'A ÉTÉ RETIRÉE avec elles.
+# « Sports d'hiver » est allée dans sports et « Le règne végétal » dans
+# sciences-et-nature : le client n'en voulait pas deux. « Créatures et
+# légendes » est allée dans culture-generale et « La mer et les bateaux »
+# dans geographie : elles n'étaient pas petites, 77 et 121 questions, elles
+# n'étaient juste pas invitantes à l'heure de composer une manche. Les
+# étiquettes qui vivaient hors du fichier absorbeur ont été transférées, pas
+# jetées : c'est ce que fait « --absorber <slug> <absorbeur> », et c'est ce
+# que « --retirer » ne fait pas.
+#
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -89,7 +96,7 @@ Quel premier ministre a fondé le Parti québécois ?|René Lévesque|2|adultes 
 Quel parc d'attractions se trouve à Montréal ?|La Ronde|1|enfants ados adultes aines
 @ voyages
 Quelle île au milieu du Saint-Laurent est célèbre pour ses produits ?|Île d'Orléans|1|ados adultes aines
-@ mer
+@ geographie
 @ voyages
 Quelle station de ski célèbre est dans les Laurentides ?|Tremblant|1|enfants ados adultes aines
 @ voyages
@@ -119,7 +126,7 @@ Quel hôtel célèbre domine le Vieux-Québec ?|Château Frontenac|1|enfants ado
 Quelles chutes près de Québec sont plus hautes que Niagara ?|Montmorency|1|enfants ados adultes aines
 @ voyages
 Quel lac des Cantons-de-l'Est cacherait un monstre ?|Memphrémagog|2|ados adultes aines
-@ creatures
+@ culture-generale
 Quelle région est la capitale du bleuet ?|Lac-Saint-Jean|1|enfants ados adultes aines
 Quelle tourte de viandes vient du Lac-Saint-Jean ?|Le cipaille|2|ados adultes aines
 > Quelle tourte à plusieurs étages de pâte vient de la Gaspésie ?|Le cipaille
@@ -148,16 +155,16 @@ Quel film de Denys Arcand a gagné un Oscar ?|Invasions barbares|2|adultes aines
 Quel réalisateur québécois a tourné Dune ?|Denis Villeneuve|2|ados adultes
 Quel style musical a son grand festival à Montréal en juillet ?|Le jazz|1|ados adultes aines
 Quelle embarcation traverse le fleuve gelé au Carnaval ?|Le canot|1|enfants ados adultes aines
-@ mer
+@ geographie
 Quelle université francophone montréalaise est la plus grande ?|UdeM|2|ados adultes aines
 Quel fromage frais grince sous la dent ?|Fromage en grains|1|enfants ados adultes aines
 Quel mot québécois désigne une petite amie ?|Une blonde|1|enfants ados adultes aines
 Quel mot québécois désigne un épi de maïs ?|Un blé d'Inde|1|enfants ados adultes aines
 Quel mammifère marin blanc remonte le Saguenay ?|Le béluga|1|enfants ados adultes aines
 @ regne-animal
-@ mer
+@ geographie
 Quelle île gaspésienne abrite des fous de Bassan ?|Bonaventure|2|ados adultes aines
-@ mer
+@ geographie
 @ voyages
 # Réponse dans la question : « Manicouagan » et « 5 » donnaient « Manic-5 ».
 Quel barrage géant porte le numéro 5 sur la Manicouagan ?|Manic-5|2|ados adultes aines
@@ -180,15 +187,15 @@ Quelle route ceinture la péninsule gaspésienne ?|La 132|2|ados adultes aines
 @ transports
 @ voyages
 Quelle péninsule québécoise s'avance dans le golfe ?|La Gaspésie|1|enfants ados adultes aines
-@ mer
+@ geographie
 Quelles îles québécoises sont au milieu du golfe ?|Îles de la Madeleine|1|enfants ados adultes aines
-@ mer
+@ geographie
 @ voyages
 Quel fjord spectaculaire abrite des bélugas ?|Fjord du Saguenay|1|ados adultes aines
 @ voyages
 Quel lac immense borde Roberval et Alma ?|Lac Saint-Jean|1|enfants ados adultes aines
 Quelle île montréalaise accueille La Ronde ?|Île Sainte-Hélène|1|enfants ados adultes aines
-@ mer
+@ geographie
 Quel circuit de F1 se trouve sur l'île Notre-Dame ?|Gilles-Villeneuve|1|ados adultes aines
 - doublon du circuit Gilles-Villeneuve, déjà dans Sports
 Quel dôme géodésique brille sur l'île Sainte-Hélène ?|La Biosphère|1|enfants ados adultes aines
@@ -301,13 +308,13 @@ Quelle compagnie de fourrures rivalisait avec la Baie d'Hudson ?|Nord-Ouest|3|ad
 Quels canots géants transportaient les fourrures ?|Canots de maître|3|adultes aines
 Comment appelait-on les traiteurs de fourrures en forêt ?|Coureurs des bois|1|enfants ados adultes aines
 Quelle légende québécoise fait voler un canot ?|La chasse-galerie|1|enfants adultes aines
-@ creatures
-@ mer
+@ culture-generale
+@ geographie
 Quelle jeune fille a dansé avec le diable dans la légende ?|Rose Latulippe|2|adultes aines
-@ creatures
+@ culture-generale
 Quelle créature légendaire fait peur aux enfants ?|Bonhomme Sept-Heures|1|enfants ados adultes aines
 > Quelle créature du folklore québécois porte dans son nom l'heure du coucher ?|Bonhomme Sept-Heures
-@ creatures
+@ culture-generale
 De quel village vient le conteur Fred Pellerin ?|Saint-Élie-de-Caxton|2|ados adultes aines
 Quelle série de romans suit Émilie Bordeleau ?|Les Filles de Caleb|1|adultes aines
 Quelle auteure a écrit Les Filles de Caleb ?|Arlette Cousture|2|adultes aines
@@ -323,7 +330,7 @@ Quel nouveau pont montréalais a ouvert en 2019 ?|Samuel-De Champlain|1|ados adu
 Quel marché public borde le canal de Lachine ?|Atwater|1|ados adultes aines
 Comment surnomme-t-on la fête du 24 juin ?|La Saint-Jean|1|enfants ados adultes aines
 Combien de ponts mènent à l'île d'Orléans ?|Un seul|1|ados adultes aines
-@ mer
+@ geographie
 @ transports
 Quelle université montréalaise fut fondée en 1821 ?|McGill|2|ados adultes aines
 Quel ancien vélodrome de Montréal abrite des animaux ?|Le Biodôme|1|enfants ados adultes aines
@@ -350,7 +357,7 @@ Quelle nation autochtone vit à Wendake près de Québec ?|Les Hurons-Wendat|2|a
 Quel auteur québécois a écrit Le Matou ?|Yves Beauchemin|3|aines
 Quel poète québécois a écrit Le Vaisseau d'or ?|Émile Nelligan|2|adultes aines
 Quelle île du Saint-Laurent fut une station de quarantaine ?|Grosse-Île|2|ados adultes aines
-@ mer
+@ geographie
 
 === hors firmware ===
 
@@ -445,7 +452,7 @@ Quelle autoroute mène de Montréal vers les Laurentides ?|La 15|3|ados adultes 
 @ transports
 Quel pont de Montréal illumine ses câbles de couleurs le soir ?|Le pont Jacques-Cartier|2|ados adultes aines
 Quel bateau relie Québec et Lévis toute l'année ?|Le traversier|2|enfants ados adultes aines
-@ mer
+@ geographie
 Quel oiseau blanc envahit les champs du Québec au printemps et à l'automne ?|L'oie blanche|3|ados adultes aines
 @ regne-animal
 
@@ -589,7 +596,7 @@ Quel champignon rouge à pois blancs des contes pousse dans les forêts ?|L'aman
 Quel congé du début septembre marque la fin de l'été au Québec ?|La fête du Travail|2|enfants ados adultes aines
 Quel congé de mai précède la saison du jardinage au Québec ?|La journée nationale des patriotes|3|adultes aines
 Quel jour d'octobre les enfants passent-ils de porte en porte ?|L'Halloween|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel congé tombe le lendemain de la Saint-Sylvestre ?|Le jour de l'An|1|enfants ados adultes aines
 @ noel
 Quelle fête d'octobre réunit la famille autour d'une dinde au Canada ?|L'Action de grâce|2|enfants ados adultes aines
