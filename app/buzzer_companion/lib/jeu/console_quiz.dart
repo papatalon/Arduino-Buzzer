@@ -746,10 +746,10 @@ class _FinDePartie extends StatelessWidget {
   // joue, ou toute la banque pour un questionnaire personnalise, qui n'en
   // designe aucune (voir ActiveQuestionnaire.perimetreDuBris).
   Future<void> _departager() async {
-    // Le meme ensemble des deux cotes : un nom de categorie ne correspond a
-    // aucune thematique et l'inverse, et le filtre les cumule en OU.
-    final question = tirage.questionDeBris(
-        categories: actif.perimetreDuBris, themes: actif.perimetreDuBris);
+    // Un seul axe : le perimetre du bris est une liste de thematiques. Il
+    // etait passe deux fois, aux deux axes du filtre, du temps ou les onze
+    // noms de fichiers formaient une liste a part.
+    final question = tirage.questionDeBris(themes: actif.perimetreDuBris);
     if (question != null) actif.poserQuestionDeBris(question);
     // Faute de tirage possible (hors ligne, rien de synchronise), le moteur
     // prend la question suivante du questionnaire : mieux vaut departager

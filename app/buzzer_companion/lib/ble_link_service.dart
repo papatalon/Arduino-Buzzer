@@ -507,7 +507,7 @@ class BleLinkService extends ChangeNotifier implements CommandesBuzzer {
   Future<void> setCategories(int mask) async {
     final ok = await _writeUartLine(connectedDeviceId, _uartServiceId, _uartCharacteristicId, 'SET_CATS|$mask');
     status = ok
-        ? 'Catégories confirmées.'
+        ? 'Thématiques confirmées.'
         : 'Envoi impossible : aucune caractéristique BLE identifiée pour écrire.';
     notifyListeners();
   }

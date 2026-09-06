@@ -6,7 +6,7 @@
 #   Question|Réponse|niveau|tranches
 #   > Question|Réponse     retouche la question du dessus
 #   - motif                la retire du catalogue
-#   @ noel creatures       ses thématiques, écrites et jamais devinées
+#   @ noel nostalgie       ses thématiques, écrites et jamais devinées
 #
 # LES THÉMATIQUES SONT ÉCRITES, PAS DÉDUITES. Elles l'étaient, par mots-clés,
 # et se trompaient sans le dire : « neige » rangeait Blanche-Neige dans Sports
@@ -22,13 +22,20 @@
 # d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
 # question québécoise rangée dans Culture pop.
 #
-# Les onze qui traversent la banque : noel, regne-animal, espace,
-# corps-humain, super-heros, creatures, mer, transports, disney, nostalgie,
-# voyages. Un slug inconnu arrête la génération.
+# Les neuf qui traversent la banque : noel, regne-animal, espace,
+# corps-humain, super-heros, transports, disney, nostalgie, voyages.
+# Un slug inconnu arrête la génération.
 #
-# « Sports d'hiver » a fondu dans sports et « Le règne végétal » dans
-# sciences-et-nature : le client n'en voulait pas deux. Les étiquettes qui
-# vivaient hors du fichier absorbeur ont été transférées, pas jetées.
+# QUATRE ONT DÉJÀ FONDU, ET AUCUNE QUESTION N'A ÉTÉ RETIRÉE avec elles.
+# « Sports d'hiver » est allée dans sports et « Le règne végétal » dans
+# sciences-et-nature : le client n'en voulait pas deux. « Créatures et
+# légendes » est allée dans culture-generale et « La mer et les bateaux »
+# dans geographie : elles n'étaient pas petites, 77 et 121 questions, elles
+# n'étaient juste pas invitantes à l'heure de composer une manche. Les
+# étiquettes qui vivaient hors du fichier absorbeur ont été transférées, pas
+# jetées : c'est ce que fait « --absorber <slug> <absorbeur> », et c'est ce
+# que « --retirer » ne fait pas.
+#
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -178,7 +185,7 @@ Quel film Pixar de 2023 fait vivre ensemble le feu, l'eau, la terre et l'air ?|�
 @ disney
 Quel film de 2023 a porté le plombier moustachu de Nintendo au cinéma ?|Super Mario Bros, le film|1|enfants ados adultes
 Quelle créature bleue de Disney, échappée de l'espace, s'appelle l'expérience 626 ?|Stitch|1|enfants ados adultes
-@ creatures
+@ culture-generale
 @ disney
 Quels petits êtres colorés aux cheveux dressés chantent dans leurs films ?|Les Trolls|1|enfants ados
 #
@@ -195,7 +202,7 @@ Quel petit ours de dessin animé porte un chandail et un prénom de couleur ?|Pe
 Quel petit âne de dessin animé français est très curieux ?|Trotro|3|enfants
 @ regne-animal
 Quelles équipes de sous-marins explorent les océans en secourant les animaux marins ?|Les Octonauts|3|enfants
-@ mer
+@ geographie
 Quel camion de course rouge et bleu affronte Crusher dans une série pour enfants ?|Blaze|3|enfants
 @ transports
 Quels ninjas de Lego portent chacun une couleur et un élément ?|Ninjago|2|enfants ados
@@ -681,7 +688,7 @@ Quel jeu de la Wii proposait bowling, tennis et boxe avec la télécommande ?|Wi
 Quel casse-tête coloré à six faces se replace en tournant ses rangées ?|Le Rubik's Cube|1|enfants ados adultes aines
 Quel jeu quotidien fait deviner un mot de cinq lettres en six essais ?|Le Wordle|3|ados adultes aines
 Quel manga suit Luffy et son équipage de pirates ?|One Piece|3|ados adultes
-@ mer
+@ geographie
 Quelle plateforme diffuse les films de Marvel et de Pixar ?|Disney+|1|enfants ados adultes aines
 @ disney
 Comment appelle-t-on une bande dessinée japonaise ?|Un manga|2|enfants ados adultes
@@ -742,13 +749,13 @@ Quel artiste fait disparaître des objets devant un public ébahi ?|Un magicien|
 Quel bâton le magicien agite-t-il en disant sa formule ?|Une baguette magique|1|enfants ados adultes aines
 Quel mot le magicien lance-t-il pour faire apparaître quelque chose ?|Abracadabra|1|enfants ados adultes aines
 Quelle formule ouvre la caverne au trésor dans le conte d'Ali Baba ?|Sésame ouvre-toi|2|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel drap blanc troué de deux yeux fait un costume d'Halloween facile ?|Un fantôme|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel personnage au chapeau pointu vole sur un balai ?|Une sorcière|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quelle créature de la nuit dort dans un cercueil et craint l'ail ?|Un vampire|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel mort-vivant marche les bras tendus dans les films d'horreur ?|Un zombie|2|enfants ados adultes aines
 Que porte-t-on sur le visage pour ne pas être reconnu à l'Halloween ?|Un masque|1|enfants ados adultes aines
 Comment appelle-t-on l'habit qu'on enfile pour se transformer en personnage ?|Un déguisement|1|enfants ados adultes aines
@@ -784,25 +791,25 @@ Quel meuble de la classe range les effets de l'élève ?|Un pupitre|1|enfants ad
 Quel gros véhicule jaune ramasse les enfants le matin ?|L'autobus scolaire|1|enfants ados adultes aines
 @ transports
 Quelle créature poilue laisserait des empreintes géantes dans la neige des montagnes ?|Le yéti|2|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Comment appelle-t-on un être venu d'une autre planète ?|Un extraterrestre|1|enfants ados adultes aines
 @ espace
 Quelle créature à écailles crache du feu et garde un trésor ?|Un dragon|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quelle créature marine a une queue de poisson et un buste humain ?|Une sirène|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel petit être ailé exauce parfois des vœux dans les contes ?|Une fée|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quelle créature des contes nordiques vit sous les ponts ?|Un troll|2|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel cheval blanc porte une corne unique sur le front ?|Une licorne|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel petit personnage barbu en bonnet rouge décore les jardins ?|Un nain de jardin|2|enfants ados adultes aines
 Que bâtit-on avec trois boules de neige, une carotte et des boutons ?|Un bonhomme de neige|1|enfants ados adultes aines
 Quel petit personnage de conte sème des cailloux pour retrouver son chemin ?|Le Petit Poucet|2|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel oiseau apporterait les bébés selon la légende ?|La cigogne|2|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel personnage viendrait jeter du sable dans les yeux des enfants le soir ?|Le marchand de sable|2|enfants ados adultes aines
 Quel objet de métal en forme de U se cloue au-dessus d'une porte pour attirer la chance ?|Un fer à cheval|2|enfants ados adultes aines
 Quel jeu se joue à deux avec des pions noirs et blancs qu'on saute pour les prendre ?|Les dames|2|enfants ados adultes aines
@@ -815,9 +822,9 @@ Comment appelle-t-on une histoire racontée en cases dessinées ?|Une bande dess
 Dans quoi les paroles d'un personnage de bande dessinée sont-elles écrites ?|Une bulle|2|enfants ados adultes aines
 Quel cahier propose des dessins à remplir sans dépasser ?|Un livre à colorier|1|enfants ados adultes aines
 Quel personnage de conte chaussé de bottes parle au nom de son maître ?|Le Chat botté|2|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel géant des contes crie qu'il sent la chair fraîche ?|L'ogre|2|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel objet magique répond « toi, ma reine » quand la méchante l'interroge ?|Un miroir magique|2|enfants ados adultes aines
 Sur quel objet de ménage les sorcières se déplacent-elles dans le ciel ?|Un balai|1|enfants ados adultes aines
 Quel animal porte malheur s'il croise notre chemin, selon la superstition ?|Un chat noir|1|enfants ados adultes aines

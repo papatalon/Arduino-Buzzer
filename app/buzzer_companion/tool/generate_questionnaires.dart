@@ -357,6 +357,11 @@ void main(List<String> args) {
     _retirer(iRetirer + 1 < args.length ? args[iRetirer + 1] : '');
     return;
   }
+  final iAbsorber = args.indexOf('--absorber');
+  if (iAbsorber >= 0) {
+    _absorber(args.sublist(iAbsorber + 1));
+    return;
+  }
   final iEtiqueter = args.indexOf('--etiqueter');
   if (iEtiqueter >= 0) {
     _etiqueter(args.sublist(iEtiqueter + 1));
@@ -381,7 +386,8 @@ void main(List<String> args) {
   final raw = source.readAsStringSync();
   final categories = _parseCategories(raw);
   if (categories.isEmpty) {
-    stderr.writeln("Aucune catégorie trouvée : le format de Questions.cpp a changé.");
+    stderr.writeln("Aucun bloc de questions trouvé : le format de "
+        "Questions.cpp a changé.");
     exit(1);
   }
 
@@ -396,8 +402,8 @@ void main(List<String> args) {
     all.addAll(entries);
   }
 
-  stdout.writeln('${all.length} questions, ${categories.length} catégories '
-      '($accentues accentuées, ${categories.length - accentues} en attente).');
+  stdout.writeln('${all.length} questions, ${categories.length} fichiers '
+      '($accentues accentués, ${categories.length - accentues} en attente).');
 
   // LES INÉDITES : des questions qui n'existent que dans le catalogue, jamais
   // dans le firmware. Elles rejoignent leur catégorie (la tuile grossit
@@ -553,22 +559,16 @@ void _writeBanqueQuestions(List<Entry> all) {
     }
   }
 
-  final comptesCategories = <String, int>{};
-  for (final e in all) {
-    comptesCategories[e.category] = (comptesCategories[e.category] ?? 0) + 1;
-  }
-
   final contenu = {
     'format': kFormatBanque,
     'version': 1,
-    'categories': [
-      for (final nom in comptesCategories.keys.toList()..sort())
-        {
-          'nom': nom,
-          'emoji': kEmojiCategories[nom] ?? _emojiInedites[nom] ?? '',
-          'questions': comptesCategories[nom],
-        },
-    ],
+    // UNE SEULE LISTE DE FACETTES. Il y avait ici une liste « categories »
+    // qui redisait les onze noms de fichiers, déjà tous présents dans
+    // « themes » depuis qu'ils absorbent leur fichier. L'application ne la
+    // remplissait plus dans ses filtres et le tirage gardait une branche
+    // morte pour elle. Une app déjà installée qui ne trouve pas la clé
+    // reçoit une liste vide sans planter, et retrouve les onze noms dans
+    // les thématiques : rien ne devient injoignable.
     'themes': [
       for (final theme in kThemes)
         if (comptesThemes.containsKey(theme.name))
@@ -600,8 +600,8 @@ void _writeBanqueQuestions(List<Entry> all) {
 
   final ko = (utf8.encode(json).length / 1024).round();
   stdout.writeln('banque.json : ${all.length} questions, '
-      '${comptesCategories.length} catégories, ${comptesThemes.length} '
-      'thématiques, $ko ko. Copiée dans $_assetBanque.');
+      '${comptesThemes.length} thématiques, $ko ko. '
+      'Copiée dans $_assetBanque.');
 }
 
 
@@ -901,7 +901,7 @@ void _writeRevue(List<Entry> all) {
 </head>
 <body>
   <h1>Revue des questions</h1>
-  <p class="chapeau">Les $total questions de la banque, par catégorie, avec leur
+  <p class="chapeau">Les $total questions de la banque, par thématique, avec leur
      niveau. Cette page suit exactement ce qui est publié : elle est écrite en
      même temps que le catalogue. <a class="retour" href="/">Retour au site</a></p>
 
@@ -994,7 +994,6 @@ $sections
 
 void _writeAccueil(List<Entry> all) {
   final questions = all.length;
-  final categories = all.map((e) => e.category).toSet().length;
   final version = _versionApp();
   final lien = '$kDepotGitHub/releases/download/v$version/'
       'buzzer-console-$version-windows.zip';
@@ -1062,9 +1061,9 @@ void _writeAccueil(List<Entry> all) {
     <li>Joue les sons par les haut-parleurs de l'ordinateur plutôt que par le
         petit haut-parleur du buzzer, et retombe sur ce dernier si le lien
         Bluetooth tombe.</li>
-    <li>Apporte <strong>$questions questions</strong> en $categories
-        catégories, cotées par difficulté et par tranche d'âge. Vous choisissez
-        vos critères avant chaque manche et l'application la compose sur le
+    <li>Apporte <strong>$questions questions</strong> rangées par thématique et
+        cotées par difficulté et par tranche d'âge. Vous choisissez vos
+        critères avant chaque manche et l'application la compose sur le
         champ. Vous pouvez aussi écrire vos propres questionnaires.</li>
   </ul>
 
@@ -1172,7 +1171,7 @@ class _Ligne {
   String? perissable;
   Set<Tranche>? tranches;
   // Les thématiques auxquelles la question appartient, écrites en toutes
-  // lettres sous elle : « @ noel creatures ». Vide par défaut.
+  // lettres sous elle : « @ noel nostalgie ». Vide par défaut.
   //
   // ÉCRITES, ET NON DÉDUITES. Elles l'étaient, par mots-clés, et se
   // trompaient sans le dire : « neige » mettait Blanche-Neige dans Sports
@@ -1353,7 +1352,7 @@ List<_Ligne> _lireBloc(List<String> lignes, String nom) {
       continue;
     }
 
-    // Thématiques : « @ noel creatures ». Une question peut en porter
+    // Thématiques : « @ noel nostalgie ». Une question peut en porter
     // plusieurs, une thématique traverse les catégories.
     if (l.startsWith('@')) {
       if (lues.isEmpty) {
@@ -1852,29 +1851,13 @@ const kThemes = <Theme>[
     'schtroumpfs', 'gargamel', 'lucky luke', 'dalton', 'picsou', 'popeye',
     'garfield', 'bd',
   ]),
-  Theme('creatures', 'Créatures et légendes', '🐉', 'Monstres, dieux et histoires qu\'on se raconte.', [
-    'monstre', 'creature', 'creatures', 'dragon', 'fantome', 'sorcier',
-    'sorciere', 'vampire', 'geant', 'legende', 'legendaire', 'mythologique',
-    'mythique', 'dieu', 'deesse', 'zeus', 'poseidon', 'hades', 'aphrodite',
-    'hermes', 'athena', 'atlas', 'hercule', 'meduse', 'pegase', 'phenix',
-    'centaure', 'cyclope', 'cerbere', 'minotaure', 'licorne', 'farfadet',
-    'chasse-galerie', 'bonhomme sept-heures', 'loch ness', 'sirene',
-    'fee', 'ogre', 'troll', 'conte', 'contes', 'graal', 'excalibur',
-    'merlin', 'arthur', 'romulus', 'remus', 'pandore', 'midas', 'troie',
-    'halloween', 'superstition', 'malheur', 'chaudron',
-  ]),
-  Theme('mer', 'La mer et les bateaux', '⚓',
-      'Océans, navigation, et ce qui se passe au large.', [
-    'mer', 'mers', 'ocean', 'oceans', 'bateau', 'bateaux', 'navire',
-    'navires', 'marin', 'marins', 'voilier', 'traversier', 'ferry',
-    'paquebot', 'chaloupe', 'canot', 'kayak', 'radeau', 'sous-marin',
-    'port', 'quai', 'phare', 'ancre', 'voile', 'voiles', 'coque',
-    'proue', 'equipage', 'capitaine', 'matelot', 'naufrage',
-    'pirate', 'pirates', 'corsaire', 'ile', 'iles', 'archipel', 'plage',
-    'vague', 'vagues', 'maree', 'marees', 'recif', 'lagon', 'baie',
-    'golfe', 'detroit', 'fleuve', 'estuaire', 'coquillage', 'titanic',
-    'croisiere', 'boussole', 'sextant', 'gouvernail', 'nautique',
-  ]),
+  // « Créatures et légendes » a fondu dans culture-generale et « La mer et
+  // les bateaux » dans geographie, par « --absorber » : le client ne les
+  // trouvait pas invitantes au moment de composer une manche. Ni l'une ni
+  // l'autre n'était petite (77 et 121 questions, la mer était la troisième
+  // en volume) et aucune question n'a été retirée : les 114 étiquettes qui
+  // vivaient hors du fichier absorbeur ont été transférées, les 84 autres
+  // étaient déjà couvertes par leur catégorie.
   Theme('transports', 'Les transports', '🚗',
       'Autos, trains, avions, ponts et tunnels.', [
     'auto', 'autos', 'automobile', 'voiture', 'voitures', 'camion',
@@ -2218,9 +2201,9 @@ void _proposer(String slug) {
   }
 
   if (theme.absorbe != null) {
-    stdout.writeln('\n« ${theme.name} » absorbe la catégorie '
+    stdout.writeln('\n« ${theme.name} » absorbe le fichier '
         '« ${theme.absorbe} » : ces questions y sont déjà, sans marqueur. '
-        'Ce qui suit ne vient que des AUTRES catégories.');
+        'Ce qui suit ne vient que des AUTRES fichiers.');
   }
   stdout.writeln('\n« ${theme.name} » : $deja déjà étiquetées, '
       '$proposees candidates à relire.');
@@ -2352,7 +2335,7 @@ void _etiqueter(List<String> args) {
 // génère plus.
 //
 // La ligne « @ » ne disparaît que si elle ne portait que ce slug. Une
-// question étiquetée « @ noel creatures » à qui l'on retire Noël garde sa
+// question étiquetée « @ noel nostalgie » à qui l'on retire Noël garde sa
 // ligne, allégée.
 void _retirer(String slug) {
   if (!kThemes.any((t) => t.slug == slug)) {
@@ -2393,6 +2376,96 @@ void _retirer(String slug) {
     total += retires;
   }
   stdout.writeln('$total étiquettes « $slug » retirées. '
+      'La thématique peut maintenant sortir de kThemes.');
+}
+
+// Fond une thématique dans une autre, comme « Sports d'hiver » dans sports
+// et « Le règne végétal » dans sciences-et-nature.
+//
+//   dart run tool/generate_questionnaires.dart --absorber <slug> <absorbeur>
+//
+// Les deux slugs doivent encore être dans kThemes au moment de la commande,
+// donc l'exemple d'hier ne se rejoue pas : « creatures culture-generale » et
+// « mer geographie » ont été passées ici, et les deux thématiques absorbées
+// n'existent plus.
+//
+// CE QUE « --retirer » NE FAIT PAS. Retirer jette l'étiquette partout, y
+// compris sous les questions qui n'appartiennent à l'absorbeur par aucun
+// autre chemin : celles-là sortent du furetage sans que rien ne le dise.
+// C'est la moitié du geste, et c'est la moitié qui perd du monde. Absorber
+// TRANSFÈRE ces étiquettes-là et ne laisse tomber que les redondantes.
+//
+// UNE ÉTIQUETTE EST REDONDANTE de deux façons : la question vit déjà dans le
+// fichier de l'absorbeur, donc y est par sa catégorie, ou elle porte déjà le
+// slug de l'absorbeur par une autre voie. Les catégories sont des
+// thématiques (voir kThemes) et ne s'écrivent jamais sous les questions de
+// leur propre fichier ; le nom du fichier est le slug de sa catégorie.
+//
+// À FAIRE AVANT de sortir la thématique de kThemes, pour la même raison que
+// « --retirer » : le lecteur refuse un slug inconnu et s'arrête, donc
+// l'ordre inverse laisse un dépôt qui ne se génère plus.
+void _absorber(List<String> args) {
+  if (args.length < 2) {
+    stderr.writeln('Usage : --absorber <slug> <absorbeur>');
+    exit(1);
+  }
+  final slug = args[0];
+  final absorbeur = args[1];
+  for (final s in [slug, absorbeur]) {
+    if (!kThemes.any((t) => t.slug == s)) {
+      stderr.writeln('Thématique inconnue « $s ». '
+          'Connues : ${kThemes.map((t) => t.slug).join(', ')}.');
+      exit(1);
+    }
+  }
+  if (slug == absorbeur) {
+    stderr.writeln('Une thématique ne s\'absorbe pas elle-même.');
+    exit(1);
+  }
+  var transferees = 0;
+  var tombees = 0;
+  for (final f in Directory(_questionsDir)
+      .listSync()
+      .whereType<File>()
+      .where(_estUnFichierDeQuestions)) {
+    final nom = f.uri.pathSegments.last;
+    final dansLAbsorbeur = nom == '$absorbeur.txt';
+    final sortie = <String>[];
+    var t = 0;
+    var r = 0;
+    for (final brute in f.readAsLinesSync()) {
+      final l = brute.trim();
+      if (!l.startsWith('@')) {
+        sortie.add(brute);
+        continue;
+      }
+      final slugs = l
+          .substring(1)
+          .trim()
+          .split(RegExp(r'\s+'))
+          .where((s) => s.isNotEmpty)
+          .toList();
+      if (!slugs.contains(slug)) {
+        sortie.add(brute); // Rien à absorber sur cette ligne.
+        continue;
+      }
+      final restants = slugs.where((s) => s != slug).toList();
+      if (dansLAbsorbeur || restants.contains(absorbeur)) {
+        r++;
+      } else {
+        restants.add(absorbeur);
+        t++;
+      }
+      if (restants.isNotEmpty) sortie.add('@ ${restants.join(' ')}');
+    }
+    if (t == 0 && r == 0) continue;
+    f.writeAsStringSync('${sortie.join('\n')}\n');
+    stdout.writeln('$nom : $t transférées, $r déjà couvertes.');
+    transferees += t;
+    tombees += r;
+  }
+  stdout.writeln('« $slug » fondue dans « $absorbeur » : $transferees '
+      'étiquettes transférées, $tombees déjà couvertes. '
       'La thématique peut maintenant sortir de kThemes.');
 }
 

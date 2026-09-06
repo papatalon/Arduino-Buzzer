@@ -16,58 +16,63 @@ import 'package:buzzer_companion/questionnaires/tirage_questions.dart';
 // Un magasin qu'on remplit à la main : ces tests portent sur les règles du
 // tirage, pas sur la lecture du fichier.
 BanqueStore magasin(List<QuizQuestion> questions,
-    {List<Facette> categories = const [], List<Facette> themes = const []}) {
+    {List<Facette> themes = const []}) {
   final store = BanqueStore();
-  store.banque = Banque(
-    questions: questions,
-    categories: categories,
-    themes: themes,
-  );
+  store.banque = Banque(questions: questions, themes: themes);
   return store;
 }
 
 void main() {
-  // Un petit fonds représentatif : deux catégories, une thématique qui les
-  // traverse, les deux axes de classement, et une question qui ne se
+  // Un petit fonds représentatif : deux thématiques qui viennent d'un
+  // fichier, une troisième qui les traverse, et une question qui ne se
   // prononce sur rien.
+  //
+  // CHAQUE QUESTION PORTE LA THÉMATIQUE DE SON FICHIER, comme dans la vraie
+  // banque : c'est le générateur qui l'écrit, et un test de
+  // banque_embarquee_test.dart garde qu'aucune n'en est dépourvue. Un fonds
+  // qui l'oublierait rendrait ses questions injoignables au tirage.
   BanqueStore fonds() => magasin(
         [
           QuizQuestion(
               category: 'Histoire',
               question: 'H1',
               niveau: 1,
-              ages: {Tranche.enfants}),
+              ages: {Tranche.enfants},
+              themes: {'Histoire'}),
           QuizQuestion(
               category: 'Histoire',
               question: 'H2',
               niveau: 3,
-              ages: {Tranche.adultes, Tranche.aines}),
+              ages: {Tranche.adultes, Tranche.aines},
+              themes: {'Histoire'}),
           QuizQuestion(
               category: 'Musique',
               question: 'M1',
               niveau: 2,
-              ages: {Tranche.enfants, Tranche.ados}),
+              ages: {Tranche.enfants, Tranche.ados},
+              themes: {'Musique'}),
           QuizQuestion(
               category: 'Musique',
               question: 'M2',
               niveau: 1,
               ages: {Tranche.aines},
-              themes: {'Spécial Noël'}),
+              themes: {'Musique', 'Spécial Noël'}),
           QuizQuestion(
               category: 'Histoire',
               question: 'H3',
               niveau: 2,
               ages: {Tranche.ados},
-              themes: {'Spécial Noël'}),
+              themes: {'Histoire', 'Spécial Noël'}),
           // Ni niveau ni tranche : une question écrite à la main, qui ne
           // s'est pas prononcée. Aucun filtre ne doit l'écarter.
-          QuizQuestion(category: 'Histoire', question: 'X1'),
+          QuizQuestion(
+              category: 'Histoire', question: 'X1', themes: {'Histoire'}),
         ],
-        categories: const [
+        themes: const [
           Facette(nom: 'Histoire', emoji: '📜', questions: 4),
           Facette(nom: 'Musique', emoji: '🎵', questions: 2),
+          Facette(nom: 'Spécial Noël', emoji: '🎄', questions: 2),
         ],
-        themes: const [Facette(nom: 'Spécial Noël', emoji: '🎄', questions: 2)],
       );
 
   test('compose le nombre demandé', () {
@@ -93,32 +98,31 @@ void main() {
 
   test('une manche plus courte plutôt qu\'une erreur, et la note le dit', () {
     final t = TirageQuestions(banque: fonds(), hasard: Random(9));
-    final q = t.composer(categories: {'Musique'}, nombre: 50)!;
+    final q = t.composer(themes: {'Musique'}, nombre: 50)!;
     expect(q.questions.length, 2);
     expect(q.note, contains('2'));
   });
 
-  test('la catégorie limite le tirage', () {
+  test('la thématique limite le tirage', () {
     final t = TirageQuestions(banque: fonds(), hasard: Random(7));
-    final q = t.composer(categories: {'Musique'}, nombre: 5)!;
+    final q = t.composer(themes: {'Musique'}, nombre: 5)!;
     for (final question in q.questions) {
       expect(question.question, startsWith('M'));
     }
   });
 
-  test('une thématique traverse les catégories', () {
+  test('une thématique transversale traverse les fichiers', () {
     final t = TirageQuestions(banque: fonds(), hasard: Random(11));
     final q = t.composer(themes: {'Spécial Noël'}, nombre: 5)!;
     final enonces = q.questions.map((e) => e.question).toSet();
-    // C'est tout l'intérêt d'une thématique : M2 vient de Musique et H3 de
-    // Histoire. Aucune catégorie ne sait rassembler les deux.
+    // C'est tout l'intérêt d'une transversale : M2 vient du fichier Musique
+    // et H3 de Histoire. Aucune thématique de fichier ne rassemble les deux.
     expect(enonces, {'M2', 'H3'});
   });
 
-  test('catégories et thématiques se cumulent en OU, pas en ET', () {
+  test('deux thématiques cochées se cumulent en OU, pas en ET', () {
     final t = TirageQuestions(banque: fonds(), hasard: Random(13));
-    final q = t.composer(
-        categories: {'Musique'}, themes: {'Spécial Noël'}, nombre: 9)!;
+    final q = t.composer(themes: {'Musique', 'Spécial Noël'}, nombre: 9)!;
     final enonces = q.questions.map((e) => e.question).toSet();
     // L'intersection serait le seul M2. L'union ramène aussi M1 et H3.
     expect(enonces, containsAll(['M1', 'M2', 'H3']));
@@ -156,9 +160,9 @@ void main() {
     final t = TirageQuestions(banque: fonds(), hasard: Random(17));
     // Ce compte s'affiche pendant qu'on coche : s'il mentait, l'animateur
     // découvrirait sa manche tronquée une fois la partie lancée.
-    final attendu = t.compter(categories: {'Histoire'}, niveaux: {2});
+    final attendu = t.compter(themes: {'Histoire'}, niveaux: {2});
     final obtenu =
-        t.composer(categories: {'Histoire'}, niveaux: {2}, nombre: 99)!;
+        t.composer(themes: {'Histoire'}, niveaux: {2}, nombre: 99)!;
     expect(obtenu.questions.length, attendu);
   });
 
@@ -191,7 +195,7 @@ void main() {
   test('le titre dit le périmètre, parce que la salle le lit', () {
     final t = TirageQuestions(banque: fonds(), hasard: Random(29));
     expect(t.composer(nombre: 2)!.title, 'Questions au hasard');
-    expect(t.composer(categories: {'Musique'}, nombre: 1)!.title,
+    expect(t.composer(themes: {'Musique'}, nombre: 1)!.title,
         contains('Musique'));
   });
 
@@ -213,14 +217,15 @@ void main() {
   BanqueStore fondsRealiste() {
     final questions = <QuizQuestion>[];
     var n = 0;
-    void lot(String categorie, Set<Tranche> ages, int combien) {
+    void lot(String fichier, Set<Tranche> ages, int combien) {
       for (var i = 0; i < combien; i++) {
         questions.add(QuizQuestion(
-            category: categorie,
+            category: fichier,
             question: 'Q${n++}',
             answer: 'R',
             niveau: 1 + i % 3,
-            ages: ages));
+            ages: ages,
+            themes: {fichier}));
       }
     }
 
@@ -234,7 +239,7 @@ void main() {
     lot('Musique', {Tranche.enfants, Tranche.ados}, 12);
     lot('Histoire', {Tranche.enfants}, 6);
     return magasin(questions,
-        categories: const [
+        themes: const [
           Facette(nom: 'Musique', emoji: '🎵', questions: 372),
           Facette(nom: 'Histoire', emoji: '📜', questions: 366),
           Facette(nom: 'Géographie', emoji: '🌍', questions: 360),
@@ -316,7 +321,7 @@ void main() {
     // une raison pour refuser de composer une manche de géographie, mais
     // l'animateur doit savoir ce qui manque avant de la poser.
     final t = TirageQuestions(banque: fondsRealiste(), hasard: Random(11));
-    final manche = t.composer(categories: {'Géographie'}, nombre: 25)!;
+    final manche = t.composer(themes: {'Géographie'}, nombre: 25)!;
     expect(manche.questions.length, 25);
     expect(pour(manche, Tranche.enfants), 0);
     expect(manche.note, contains('enfants'));

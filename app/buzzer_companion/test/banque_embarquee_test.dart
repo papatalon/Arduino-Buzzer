@@ -25,21 +25,10 @@ void main() {
 
   test('les facettes sont là pour dessiner les pastilles', () async {
     final b = await lire();
-    expect(b.categories, isNotEmpty);
     expect(b.themes, isNotEmpty);
-    for (final f in [...b.categories, ...b.themes]) {
+    for (final f in b.themes) {
       expect(f.nom, isNotEmpty);
       expect(f.questions, greaterThan(0));
-    }
-  });
-
-  test('chaque catégorie annoncée porte réellement ses questions', () async {
-    final b = await lire();
-    // Le piège : une facette qui annonce 300 questions alors que la banque
-    // n'en porte que 280 sous ce nom. Le manque ne se verrait qu'au tirage.
-    for (final f in b.categories) {
-      final reelles = b.questions.where((q) => q.category == f.nom).length;
-      expect(reelles, f.questions, reason: 'catégorie « ${f.nom} »');
     }
   });
 

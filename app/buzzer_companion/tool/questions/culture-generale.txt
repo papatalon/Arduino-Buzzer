@@ -12,7 +12,7 @@
 #   Question|Réponse|niveau|tranches
 #   > Question|Réponse     retouche la question du dessus
 #   - motif                la retire du catalogue
-#   @ noel creatures       ses thématiques, écrites et jamais devinées
+#   @ noel nostalgie       ses thématiques, écrites et jamais devinées
 #
 # LES THÉMATIQUES SONT ÉCRITES, PAS DÉDUITES. Elles l'étaient, par mots-clés,
 # et se trompaient sans le dire : « neige » rangeait Blanche-Neige dans Sports
@@ -28,13 +28,20 @@
 # d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
 # question québécoise rangée dans Culture pop.
 #
-# Les onze qui traversent la banque : noel, regne-animal, espace,
-# corps-humain, super-heros, creatures, mer, transports, disney, nostalgie,
-# voyages. Un slug inconnu arrête la génération.
+# Les neuf qui traversent la banque : noel, regne-animal, espace,
+# corps-humain, super-heros, transports, disney, nostalgie, voyages.
+# Un slug inconnu arrête la génération.
 #
-# « Sports d'hiver » a fondu dans sports et « Le règne végétal » dans
-# sciences-et-nature : le client n'en voulait pas deux. Les étiquettes qui
-# vivaient hors du fichier absorbeur ont été transférées, pas jetées.
+# QUATRE ONT DÉJÀ FONDU, ET AUCUNE QUESTION N'A ÉTÉ RETIRÉE avec elles.
+# « Sports d'hiver » est allée dans sports et « Le règne végétal » dans
+# sciences-et-nature : le client n'en voulait pas deux. « Créatures et
+# légendes » est allée dans culture-generale et « La mer et les bateaux »
+# dans geographie : elles n'étaient pas petites, 77 et 121 questions, elles
+# n'étaient juste pas invitantes à l'heure de composer une manche. Les
+# étiquettes qui vivaient hors du fichier absorbeur ont été transférées, pas
+# jetées : c'est ce que fait « --absorber <slug> <absorbeur> », et c'est ce
+# que « --retirer » ne fait pas.
+#
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -95,7 +102,7 @@ Quel signal international signale une détresse ?|SOS|1|enfants ados adultes ain
 > Quelles trois lettres forment le signal de détresse en morse ?|SOS
 Quel numéro d'urgence compose-t-on en Amérique du Nord ?|911|1|enfants ados adultes aines
 Quelle direction indique l'aiguille d'une boussole ?|Le nord|1|enfants ados adultes aines
-@ mer
+@ geographie
 Quel jeu consiste à placer les chiffres 1 à 9 ?|Le sudoku|1|enfants ados adultes aines
 # Boggle, les mots croisés et Lettres et chiffres répondaient aussi bien.
 # « Mot compte triple » n'existe qu'au Scrabble.
@@ -114,7 +121,7 @@ Combien de faces a un cube ?|Six|1|enfants ados adultes aines
 # Ambigu : bien du monde a appris quatre océans à l'école.
 Combien d'océans sur Terre ?|Cinq|2|ados adultes aines
 > Combien d'océans compte-t-on aujourd'hui, en incluant l'océan Austral ?|Cinq
-@ mer
+@ geographie
 Combien de mois ont 31 jours ?|Sept|2|ados adultes aines
 Quel est le plus petit nombre premier ?|Deux|2|ados adultes aines
 Combien de millimètres dans un centimètre ?|Dix|1|enfants ados adultes aines
@@ -169,7 +176,6 @@ Quelle fleur offre-t-on à la Saint-Valentin ?|La rose|1|enfants ados adultes ai
 Quel événement célèbre-t-on le 25 décembre ?|Noël|1|enfants ados adultes aines
 @ noel
 Quelle fête des déguisements a lieu le 31 octobre ?|L'Halloween|1|enfants ados adultes aines
-@ creatures
 Quel animal cache des œufs à Pâques ?|Le lapin|1|enfants ados adultes aines
 @ regne-animal
 Quel musée parisien abrite la Vénus de Milo ?|Le Louvre|2|ados adultes aines
@@ -180,32 +186,22 @@ Quel jeu de cartes se joue avec 78 cartes et des atouts ?|Le tarot|3|adultes ain
 Qui soigne les dents ?|Le dentiste|1|enfants ados adultes aines
 @ corps-humain
 Quel dieu grec règne sur l'Olympe ?|Zeus|1|enfants ados adultes aines
-@ creatures
 Quel dieu grec règne sur les mers ?|Poséidon|1|enfants ados adultes aines
-@ creatures
-@ mer
+@ geographie
 Quel dieu grec règne sur les enfers ?|Hadès|2|ados adultes aines
-@ creatures
 Quelle déesse grecque est née de l'écume ?|Aphrodite|2|ados adultes aines
-@ creatures
 Quel héros grec a accompli douze travaux ?|Hercule|1|enfants ados adultes aines
-@ creatures
 Quel monstre grec pétrifie du regard ?|Méduse|1|enfants ados adultes aines
-@ creatures
 Quel cheval mythologique a des ailes ?|Pégase|1|enfants ados adultes aines
-@ creatures
 Quel oiseau mythique renaît de ses cendres ?|Le phénix|1|enfants ados adultes aines
-@ creatures
 Quelle créature est mi-homme mi-cheval ?|Le centaure|1|enfants ados adultes aines
-@ creatures
 Quel géant mythologique n'a qu'un seul œil ?|Le cyclope|1|enfants ados adultes aines
-@ creatures
 Qui a écrit L'Odyssée ?|Homère|2|adultes aines
 Quel héros de Jules Verne fait le tour du monde en 80 jours ?|Phileas Fogg|2|adultes aines
 Qui a écrit Vingt mille lieues sous les mers ?|Jules Verne|2|adultes aines
-@ mer
+@ geographie
 Quel capitaine commande le sous-marin Nautilus ?|Nemo|2|adultes aines
-@ mer
+@ geographie
 Quel bossu sonne les cloches de Notre-Dame ?|Quasimodo|1|enfants ados adultes aines
 Quelle orpheline rousse vit aux Pignons verts ?|Anne|1|adultes aines
 Qui a écrit Les Trois Mousquetaires ?|Alexandre Dumas|2|adultes aines
@@ -238,7 +234,7 @@ Quel jeu vidéo se joue avec des cubes à construire ?|Minecraft|1|enfants ados
 Quel jeu de société fait acheter des rues ?|Monopoly|1|enfants ados adultes aines
 Dans quel jeu doit-on deviner un mot dessiné ?|Pictionary|1|enfants ados adultes aines
 Quel jeu consiste à couler des navires adverses ?|Bataille navale|1|enfants ados adultes aines
-@ mer
+@ geographie
 Quel jeu se joue avec cinq dés et des combinaisons ?|Le Yum (Yahtzee)|1|enfants ados adultes aines
 Combien de dominos dans un jeu standard ?|28|2|ados adultes aines
 Combien de pièces dans un jeu d'échecs complet ?|32|2|ados adultes aines
@@ -272,22 +268,16 @@ Quel rameau symbolise la paix ?|L'olivier|2|ados adultes aines
 Quelle plante à quatre feuilles porte chance ?|Le trèfle|1|enfants ados adultes aines
 @ sciences-et-nature
 Quel chiffre porte malheur en Occident ?|13|1|enfants ados adultes aines
-@ creatures
 Quel objet cassé porte sept ans de malheur ?|Le miroir|1|enfants ados adultes aines
-@ creatures
 Sous quel objet ne faut-il pas passer selon la superstition ?|Une échelle|1|enfants ados adultes aines
-@ creatures
 # « Noir » était donné ; il ne restait que l'animal à trouver.
 Quel animal noir porterait malheur ?|Le chat noir|1|enfants ados adultes aines
 > Quel animal, s'il croise votre chemin, porterait malheur ?|Le chat noir
-@ creatures
 @ regne-animal
 Que trouve-t-on au pied de l'arc-en-ciel selon la légende ?|Un chaudron d'or|1|enfants ados adultes aines
-@ creatures
 # Le mot anglais est celui que la salle va crier.
 Quelle créature irlandaise garde un trésor ?|Le farfadet|2|ados adultes aines
 > Quelle créature irlandaise garde un trésor ?|Le farfadet (leprechaun)
-@ creatures
 Quel renne du père Noël a le nez rouge ?|Rudolphe|1|enfants ados adultes aines
 @ noel
 Quelle fête célèbre l'amour le 14 février ?|La Saint-Valentin|1|enfants ados adultes aines
@@ -299,7 +289,7 @@ Quel mausolée indien est tout de marbre blanc ?|Le Taj Mahal|2|ados adultes ain
 @ voyages
 Quelle merveille antique se trouvait à Babylone ?|Jardins suspendus|3|adultes aines
 Quelle merveille antique gardait le port de Rhodes ?|Le colosse|3|adultes aines
-@ mer
+@ geographie
 Quelle grande horloge domine Londres ?|Big Ben|1|enfants ados adultes aines
 @ voyages
 Quel palais habite le président français ?|L'Élysée|2|adultes aines
@@ -308,20 +298,14 @@ Quelle maison habite le président américain ?|La Maison-Blanche|1|enfants ados
 Dans quel palais londonien vit le roi d'Angleterre ?|Buckingham|1|ados adultes aines
 @ voyages
 Quel géant de bois cache des soldats grecs ?|Le cheval de Troie|1|enfants ados adultes aines
-@ creatures
 Quel roi légendaire cherchait le Graal ?|Le roi Arthur|1|enfants ados adultes aines
-@ creatures
 Quelle épée légendaire appartenait au roi Arthur ?|Excalibur|1|enfants ados adultes aines
-@ creatures
 Quel magicien conseillait le roi Arthur ?|Merlin|1|enfants ados adultes aines
-@ creatures
 Quel hors-la-loi anglais volait aux riches pour les pauvres ?|Robin des Bois|1|enfants ados adultes aines
 Dans quelle forêt vivait Robin des Bois ?|Sherwood|2|adultes aines
 Quel marin de conte a fait sept voyages ?|Sinbad|2|adultes aines
-@ creatures
-@ mer
+@ geographie
 Quel personnage de conte a une lampe magique ?|Aladin|1|enfants ados adultes aines
-@ creatures
 Combien de vœux accorde le génie de la lampe ?|Trois|1|enfants ados adultes aines
 Qui apporte une galette à sa grand-mère malade ?|Chaperon rouge|1|enfants ados adultes aines
 Combien de côtés a un octogone ?|Huit|1|enfants ados adultes aines
@@ -331,17 +315,11 @@ Combien font C en chiffres romains ?|100|2|ados adultes aines
 Quel objet indique l'heure grâce à une ombre ?|Cadran solaire|1|enfants ados adultes aines
 Quel instrument mesure le temps avec du sable ?|Le sablier|1|enfants ados adultes aines
 Quelle déesse grecque a donné son nom à Athènes ?|Athéna|1|enfants ados adultes aines
-@ creatures
 Quel dieu grec messager porte des sandales ailées ?|Hermès|2|ados adultes aines
-@ creatures
 Quel titan grec porte le ciel sur ses épaules ?|Atlas|2|ados adultes aines
-@ creatures
 Quel roi mythique change en or tout ce qu'il touche ?|Midas|2|adultes aines
-@ creatures
 Qui a ouvert la boîte qui libérait tous les maux ?|Pandore|1|enfants adultes aines
-@ creatures
 Quel chien à trois têtes garde les enfers ?|Cerbère|2|ados adultes aines
-@ creatures
 Quel pantin de bois voit son nez s'allonger ?|Pinocchio|1|enfants ados adultes aines
 Quelle fillette de roman visite le pays des merveilles ?|Alice|1|enfants ados adultes aines
 Quel écrivain anglais a créé Oliver Twist ?|Charles Dickens|2|adultes aines
@@ -380,7 +358,6 @@ De quelle couleur est le feu de circulation qui dit d'arrêter ?|Rouge|1|enfants
 Quel personnage descend par la cheminée pour laisser des cadeaux ?|Le père Noël|1|enfants ados adultes aines
 @ noel
 Qui laisse de l'argent sous l'oreiller en échange d'une dent ?|La fée des dents|1|enfants ados adultes aines
-@ creatures
 Quel objet ouvre-t-on pour se protéger de la pluie ?|Un parapluie|1|enfants ados adultes aines
 Combien de roues a une bicyclette ?|Deux|1|enfants ados adultes aines
 @ transports
@@ -395,7 +372,7 @@ Comment s'appelle la maison de brindilles que construit un oiseau ?|Un nid|1|enf
 @ regne-animal
 Comment s'appelle une maison faite de blocs de neige ?|Un igloo|1|enfants ados adultes aines
 Comment appelle-t-on le grand navire qui emmène des passagers en croisière ?|Un paquebot|1|enfants ados adultes aines
-@ mer
+@ geographie
 @ voyages
 Quel véhicule vole grâce à une grande hélice sur le toit ?|L'hélicoptère|1|enfants ados adultes aines
 @ transports
@@ -411,15 +388,10 @@ Comment surnomme-t-on la pièce canadienne de deux dollars ?|Le toonie|1|enfants
 Combien de cents y a-t-il dans un dollar ?|100|1|enfants ados adultes aines
 De quelles couleurs est le drapeau du Canada ?|Rouge et blanc|1|enfants ados adultes aines
 Dans quel conte un loup souffle-t-il sur des maisons de paille, de bois et de briques ?|Les Trois Petits Cochons|1|enfants ados adultes aines
-@ creatures
 Dans quel conte une princesse s'endort cent ans après s'être piqué le doigt ?|La Belle au bois dormant|1|enfants ados adultes aines
-@ creatures
 Quelle fillette de conte entre chez trois ours et goûte leur gruau ?|Boucle d'or|1|enfants ados adultes aines
-@ creatures
 Quel frère et quelle sœur de conte sèment des miettes de pain dans la forêt ?|Hansel et Gretel|1|enfants ados adultes aines
-@ creatures
 Dans quel conte un oisillon rejeté par les siens devient un magnifique cygne ?|Le vilain petit canard|1|enfants ados adultes aines
-@ creatures
 Quel animal nous donne la laine ?|Le mouton|1|enfants ados adultes aines
 @ regne-animal
 Que tisse l'araignée pour attraper les insectes ?|Une toile|1|enfants ados adultes aines
@@ -434,7 +406,6 @@ Quelle forme a une pièce de monnaie ?|Ronde|1|enfants ados adultes aines
 # questions sont FACILES POUR EUX et souvent opaques pour la table d'à côté,
 # c'est exactement leur rôle. Format : Question|Réponse|niveau.
 Quel monstre vert explose à côté du joueur dans Minecraft ?|Le creeper|1|enfants ados
-@ creatures
 Dans quel jeu vidéo cent joueurs s'affrontent-ils jusqu'au dernier survivant en construisant des murs ?|Fortnite|1|enfants ados
 Sur quelle plateforme les jeunes jouent-ils à des millions de jeux créés par d'autres joueurs ?|Roblox|1|enfants ados
 Quel jeu mobile fait attraper des créatures en marchant dans la vraie ville ?|Pokémon GO|1|enfants ados

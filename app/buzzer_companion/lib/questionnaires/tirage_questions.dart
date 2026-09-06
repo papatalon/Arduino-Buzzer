@@ -45,20 +45,18 @@ class TirageQuestions {
 
   void oublierCeQuiAEtePose() => _dejaPosees.clear();
 
-  List<Facette> get categories => banque.banque.categories;
   List<Facette> get themes => banque.banque.themes;
 
   /// Combien de questions répondent à ces critères, avant même de tirer.
   /// Affiché à côté des cases : un filtre qui ne laisse que huit questions
   /// doit se voir AVANT de composer, pas après.
   int compter({
-    Set<String> categories = const {},
     Set<String> themes = const {},
     Set<int> niveaux = const {},
     Set<Tranche> tranches = const {},
   }) =>
       banque.banque.questions
-          .where((q) => _retenue(q, categories, themes, niveaux, tranches))
+          .where((q) => _retenue(q, themes, niveaux, tranches))
           .length;
 
   /// Un filtre vide veut dire « sans filtre ». Une question qui ne porte pas
@@ -67,20 +65,20 @@ class TirageQuestions {
   /// silence.
   bool _retenue(
     QuizQuestion q,
-    Set<String> categories,
     Set<String> themes,
     Set<int> niveaux,
     Set<Tranche> tranches,
   ) {
     if (!q.isUsable) return false;
-    // Catégories et thématiques se cumulent en OU : cocher « Québec » et
-    // « Spécial Noël » demande les questions de l'un OU de l'autre, pas leur
+    // Les thématiques cochées se cumulent en OU : cocher « Québec » et
+    // « Spécial Noël » demande les questions de l'une OU de l'autre, pas leur
     // intersection, qui serait presque toujours vide.
-    if (categories.isNotEmpty || themes.isNotEmpty) {
-      final parCategorie = categories.contains(q.category);
-      final parTheme = q.themes.any(themes.contains);
-      if (!parCategorie && !parTheme) return false;
-    }
+    //
+    // Il y avait ici une seconde condition sur l'ancien axe des catégories.
+    // Elle ne pouvait plus être vraie sans que la thématique du fichier le
+    // soit déjà : chaque question porte celle de son fichier, et un test de
+    // banque_embarquee_test.dart garde qu'aucune n'en est dépourvue.
+    if (themes.isNotEmpty && !q.themes.any(themes.contains)) return false;
     if (niveaux.isNotEmpty && q.niveau != null && !niveaux.contains(q.niveau)) {
       return false;
     }
@@ -98,7 +96,6 @@ class TirageQuestions {
   /// pas assez de questions, plutôt que d'échouer : mieux vaut douze
   /// questions qu'aucune, et la note le dit.
   Questionnaire? composer({
-    Set<String> categories = const {},
     Set<String> themes = const {},
     Set<int> niveaux = const {},
     Set<Tranche> tranches = const {},
@@ -112,14 +109,13 @@ class TirageQuestions {
     }
 
     final candidates = banque.banque.questions
-        .where((q) => _retenue(q, categories, themes, niveaux, tranches))
+        .where((q) => _retenue(q, themes, niveaux, tranches))
         .where((q) => !_dejaPosees.contains(cle(q)))
         .toList()
       ..shuffle(_hasard);
 
     if (candidates.isEmpty) {
-      final filtre = categories.isNotEmpty ||
-          themes.isNotEmpty ||
+      final filtre = themes.isNotEmpty ||
           niveaux.isNotEmpty ||
           tranches.isNotEmpty;
       // Distinguer les deux échecs : « tout a déjà été posé » et « ces
@@ -140,7 +136,7 @@ class TirageQuestions {
     _dejaPosees.addAll(retenues.map(cle));
 
     return Questionnaire(
-      title: _titre(categories, themes),
+      title: _titre(themes),
       note: _note(retenues.length, nombre, oubliees),
       questions: retenues,
     );
@@ -357,19 +353,17 @@ class TirageQuestions {
 
   /// Une seule question, pour départager. Jamais une de celles déjà posées.
   QuizQuestion? questionDeBris({
-    Set<String> categories = const {},
     Set<String> themes = const {},
   }) {
-    final compose =
-        composer(categories: categories, themes: themes, nombre: 1);
+    final compose = composer(themes: themes, nombre: 1);
     if (compose == null || compose.questions.isEmpty) return null;
     return compose.questions.first;
   }
 
   // Le titre dit le périmètre, parce qu'il s'affiche sur l'écran public et
   // que la salle doit comprendre ce qu'on lui pose.
-  String _titre(Set<String> categories, Set<String> themes) {
-    final noms = [...categories, ...themes];
+  String _titre(Set<String> themes) {
+    final noms = themes.toList();
     if (noms.isEmpty) return 'Questions au hasard';
     if (noms.length == 1) return 'Au hasard : ${noms.first}';
     return 'Au hasard : ${noms.length} sélections';

@@ -12,7 +12,7 @@
 #   Question|Réponse|niveau|tranches
 #   > Question|Réponse     retouche la question du dessus
 #   - motif                la retire du catalogue
-#   @ noel creatures       ses thématiques, écrites et jamais devinées
+#   @ noel nostalgie       ses thématiques, écrites et jamais devinées
 #
 # LES THÉMATIQUES SONT ÉCRITES, PAS DÉDUITES. Elles l'étaient, par mots-clés,
 # et se trompaient sans le dire : « neige » rangeait Blanche-Neige dans Sports
@@ -28,13 +28,20 @@
 # d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
 # question québécoise rangée dans Culture pop.
 #
-# Les onze qui traversent la banque : noel, regne-animal, espace,
-# corps-humain, super-heros, creatures, mer, transports, disney, nostalgie,
-# voyages. Un slug inconnu arrête la génération.
+# Les neuf qui traversent la banque : noel, regne-animal, espace,
+# corps-humain, super-heros, transports, disney, nostalgie, voyages.
+# Un slug inconnu arrête la génération.
 #
-# « Sports d'hiver » a fondu dans sports et « Le règne végétal » dans
-# sciences-et-nature : le client n'en voulait pas deux. Les étiquettes qui
-# vivaient hors du fichier absorbeur ont été transférées, pas jetées.
+# QUATRE ONT DÉJÀ FONDU, ET AUCUNE QUESTION N'A ÉTÉ RETIRÉE avec elles.
+# « Sports d'hiver » est allée dans sports et « Le règne végétal » dans
+# sciences-et-nature : le client n'en voulait pas deux. « Créatures et
+# légendes » est allée dans culture-generale et « La mer et les bateaux »
+# dans geographie : elles n'étaient pas petites, 77 et 121 questions, elles
+# n'étaient juste pas invitantes à l'heure de composer une manche. Les
+# étiquettes qui vivaient hors du fichier absorbeur ont été transférées, pas
+# jetées : c'est ce que fait « --absorber <slug> <absorbeur> », et c'est ce
+# que « --retirer » ne fait pas.
+#
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -62,7 +69,7 @@ Quel type de poisson est Nemo ?|Un poisson-clown|1|enfants ados adultes aines
 @ regne-animal
 @ disney
 Quelle créature verte vit dans un marais ?|Shrek|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Comment s'appelle l'école de Harry Potter ?|Poudlard|1|enfants ados adultes aines
 Comment s'appelle la chouette de Harry Potter ?|Hedwige|1|enfants ados adultes aines
 Quel est le matricule de James Bond ?|007|1|ados adultes aines
@@ -94,9 +101,9 @@ Comment s'appelle la statuette du cinéma américain ?|L'Oscar|1|ados adultes ai
 Dans quelle ville se trouve Hollywood ?|Los Angeles|1|ados adultes aines
 Comment s'appelle le cinéma de l'Inde ?|Bollywood|2|ados adultes aines
 Quel ogre a un ami âne très bavard ?|Shrek|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel pirate est joué par Johnny Depp ?|Jack Sparrow|1|ados adultes aines
-@ mer
+@ geographie
 Quel magicien gris guide la Communauté de l'anneau ?|Gandalf|1|ados adultes aines
 Quelle voiture voyage dans le temps dans Retour vers le futur ?|La DeLorean|2|adultes aines
 @ transports
@@ -134,37 +141,37 @@ Quelle famille de super-héros Pixar porte du rouge ?|Les Incroyables|1|enfants 
 @ super-heros
 @ disney
 Quel monstre bleu et poilu travaille avec Mike ?|Sulley|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 @ disney
 Dans quel film Pixar une maison vole-t-elle avec des ballons ?|Là-haut|1|enfants ados adultes aines
 @ disney
 Quelles petites créatures jaunes adorent les bananes ?|Les Minions|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel méchant des Minions veut voler la Lune ?|Gru|1|enfants ados adultes aines
 Quel panda pratique le kung-fu au cinéma ?|Po|1|enfants ados adultes aines
 @ regne-animal
 Quel dragon noir accompagne Harold ?|Krokmou|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quelle princesse Disney a de très longs cheveux magiques ?|Raiponce|1|enfants ados adultes aines
 @ disney
 Quelle sirène Disney rêve de vivre sur terre ?|Ariel|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 @ disney
 Quelle princesse perd sa pantoufle de verre ?|Cendrillon|1|enfants ados adultes aines
 @ disney
 Comment se nomme la Belle au bois dormant chez Disney ?|Aurore|2|ados adultes aines
 @ disney
 Dans quel conte Disney une rose est-elle sous cloche ?|La Belle et la Bête|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 @ disney
 Quelle nounou anglaise vole avec un parapluie ?|Mary Poppins|1|adultes aines
 Quel garçon ne veut jamais grandir ?|Peter Pan|1|enfants ados adultes aines
 @ disney
 Quelle fée accompagne Peter Pan ?|Clochette|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 @ disney
 Quel pirate est l'ennemi juré de Peter Pan ?|Capitaine Crochet|1|enfants ados adultes aines
-@ mer
+@ geographie
 @ disney
 Quelle série suit six amis dans un café new-yorkais ?|Friends|1|ados adultes aines
 Comment s'appelle le café de Friends ?|Central Perk|2|ados adultes
@@ -178,7 +185,7 @@ Quel petit maître Jedi vert parle à l'envers ?|Yoda|1|enfants ados adultes ain
 @ disney
 Quel hobbit doit détruire l'anneau unique ?|Frodon|1|enfants ados adultes aines
 Quelle créature de Tolkien dit mon précieux ?|Gollum|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel mage noir est l'ennemi de Harry Potter ?|Voldemort|1|enfants ados adultes aines
 Quel sport sorcier se joue sur des balais ?|Le quidditch|1|enfants ados adultes aines
 Quel acteur incarne Iron Man au cinéma ?|Robert Downey Jr|2|ados adultes
@@ -194,7 +201,7 @@ Quel canard milliardaire plonge dans ses pièces d'or ?|Picsou|1|adultes aines
 @ disney
 Quel marin devient fort en mangeant des épinards ?|Popeye|1|aines
 @ super-heros
-@ mer
+@ geographie
 Quel chat orange déteste les lundis et adore la lasagne ?|Garfield|1|enfants adultes aines
 @ super-heros
 @ regne-animal
@@ -270,7 +277,7 @@ Quelle suite de Nemo suit la mémoire de Dory ?|Trouver Doris|1|enfants ados adu
 @ disney
 Quel escargot de course devient ultra rapide au cinéma ?|Turbo|2|enfants ados
 Quel ogre vert a une femme nommée Fiona ?|Shrek|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 # Question circulaire : elle nommait déjà l'Âne.
 Quel animal est l'Âne dans Shrek ?|Un âne|1|enfants ados adultes aines
 > Quel animal de ferme, très bavard, accompagne Shrek partout ?|L'âne
@@ -315,7 +322,7 @@ Quelle série suit la famille royale anglaise ?|The Crown|2|adultes aines
 Quelle série coréenne met en scène des jeux mortels ?|Squid Game|1|ados adultes
 Quelle série de science-fiction se passe à Hawkins ?|Stranger Things|1|enfants ados adultes
 Quel monstre menace les enfants de Stranger Things ?|Le Démogorgon|2|ados adultes
-@ creatures
+@ culture-generale
 Quelle série suit un professeur de chimie nommé Walter White ?|Breaking Bad|1|ados adultes
 Quel jeune partenaire aide Walter White ?|Jesse Pinkman|2|ados adultes
 Quelle sitcom suit des physiciens et leur voisine Penny ?|Big Bang Theory|1|ados adultes
@@ -328,7 +335,7 @@ Comment s'appelle le voisin trop gentil des Simpson ?|Ned Flanders|1|enfants ado
 Quelle série animée suit Stewie et Peter Griffin ?|Family Guy|2|ados adultes
 Quel père de famille travaille dans une centrale nucléaire ?|Homer Simpson|1|enfants ados adultes aines
 Quelle éponge jaune vit dans un ananas sous la mer ?|Bob l'éponge|1|enfants ados adultes aines
-@ mer
+@ geographie
 Quel ami étoile de mer accompagne Bob l'éponge ?|Patrick|1|enfants ados adultes aines
 Quel garçon a une casquette rouge et chasse des Pokémon ?|Sacha|1|enfants ados adultes
 Quel Pokémon jaune lance des éclairs ?|Pikachu|1|enfants ados adultes
@@ -355,7 +362,7 @@ Quelle amazone a un lasso de vérité ?|Wonder Woman|1|enfants ados adultes aine
 Quel héros court plus vite que tout le monde en rouge ?|Flash|1|enfants ados adultes aines
 Quel roi des mers parle aux poissons ?|Aquaman|1|enfants ados adultes aines
 @ super-heros
-@ mer
+@ geographie
 Quel milliardaire Marvel a un réacteur dans la poitrine ?|Tony Stark|1|enfants ados adultes aines
 @ super-heros
 @ disney
@@ -420,7 +427,7 @@ Quels quatre frères bandits affrontent Lucky Luke ?|Les Dalton|1|enfants adulte
 @ super-heros
 Quel méchant sorcier des Schtroumpfs a un chat ?|Gargamel|1|enfants adultes aines
 @ super-heros
-@ creatures
+@ culture-generale
 
 === hors firmware ===
 
@@ -467,9 +474,9 @@ Quel écureuil de L'Ère de glace court sans cesse après son gland ?|Scrat|1|en
 Quel film de 1977 s'ouvre sur « Il y a bien longtemps, dans une galaxie lointaine » ?|La Guerre des étoiles|1|enfants ados adultes aines
 Quelle princesse Mario doit-il sauver ?|Peach|1|enfants ados adultes aines
 Quel gorille géant grimpe l'Empire State Building au cinéma ?|King Kong|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel monstre géant venu du Japon écrase des villes au cinéma ?|Godzilla|1|enfants ados adultes aines
-@ creatures
+@ culture-generale
 Quel légume la marraine de Cendrillon transforme-t-elle en carrosse ?|La citrouille|1|enfants ados adultes aines
 @ disney
 Quel animal est Abu, l'ami d'Aladin ?|Un singe|1|enfants ados adultes aines
@@ -520,7 +527,7 @@ Quelle série de films enferme des adolescents dans un dédale aux murs mouvants
 Quel film d'animation japonais suit une fillette prisonnière d'un bain public d'esprits ?|Le Voyage de Chihiro|3|ados adultes
 Quelle série animée japonaise oppose l'humanité à des géants derrière de hauts murs ?|L'Attaque des Titans|2|ados adultes
 Quel héros de manga au chapeau de paille veut devenir le roi des pirates ?|Luffy|2|enfants ados
-@ mer
+@ geographie
 Quelle série animée japonaise suit un garçon qui pourfend des démons au sabre ?|Demon Slayer|2|enfants ados
 Quel acteur canadien incarne Deadpool au cinéma ?|Ryan Reynolds|2|ados adultes
 Quel jeune voleur de Disney trouve une lampe magique à Agrabah ?|Aladdin|1|enfants ados adultes
@@ -547,9 +554,9 @@ Comment s'appelle le petit chien blanc de Tintin ?|Milou|1|enfants ados adultes 
 @ regne-animal
 Quel marin barbu et grognon accompagne Tintin dans ses aventures ?|Le capitaine Haddock|2|enfants ados adultes aines
 @ super-heros
-@ mer
+@ geographie
 Quel demi-dieu tatoué accompagne Moana avec un hameçon magique ?|Maui|2|enfants ados
-@ creatures
+@ culture-generale
 @ disney
 Comment s'appelle la petite fille hawaïenne qui adopte Stitch ?|Lilo|2|enfants ados adultes
 @ disney
@@ -560,7 +567,7 @@ Quel duo québécois de dessins animés met en scène une souris et son chat en 
 Quel homme élevé par les singes se balance de liane en liane ?|Tarzan|1|enfants ados adultes aines
 Quelle créature verte et mal lunée veut voler le Noël des Chou ?|Le Grinch|1|enfants ados adultes
 @ noel
-@ creatures
+@ culture-generale
 Dans quelle ville sous-marine habitent Bob l'éponge et Patrick ?|Bikini Bottom|2|enfants ados
 Quel petit champignon à chapeau blanc taché de rouge sert de messager chez Mario ?|Toad|2|enfants ados
 Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?|Le Bossu de Notre-Dame|3|enfants ados adultes
@@ -571,14 +578,175 @@ Quel film Disney raconte l'histoire de Quasimodo, sonneur de cloches à Paris ?|
 Quelle série de films est née d'une attraction de Disneyland ouverte en 1967 ?|Pirates des Caraïbes|2|ados adultes aines
 @ disney
 Comment s'appelle la sorcière des mers de La Petite Sirène ?|Ursula|2|enfants ados adultes aines
-@ disney mer
+@ disney geographie
 Quelle méchante fée de Disney se transforme en dragon ?|Maléfique|2|enfants ados adultes aines
-@ disney creatures
+@ disney culture-generale
 Comment s'appelle le méchant vizir d'Aladdin ?|Jafar|3|enfants ados adultes
 @ disney
 Comment s'appelle le père d'Ariel, le roi des mers ?|Triton|3|enfants ados adultes aines
-@ disney mer
+@ disney geographie
 À cinq ans près, en quelle année Disney a-t-il sorti Blanche-Neige, son premier long métrage d'animation ?|1937|2|ados adultes aines
 @ disney
 Dans quel court métrage de 1928 Mickey Mouse est-il apparu pour la première fois ?|Steamboat Willie|3|adultes aines
 @ disney
+#
+# --- Acteurs d'Hollywood : les rôles qu'on nomme avant l'acteur ---
+Quel acteur joue le pilote de chasse surnommé Maverick dans Top Gun ?|Tom Cruise|2|ados adultes aines
+Quelle actrice tient le rôle principal féminin de Pretty Woman ?|Julia Roberts|2|adultes aines
+Quel acteur joue Néo dans la trilogie Matrix ?|Keanu Reeves|2|ados adultes
+Quel acteur joue le policier John McClane au cinéma ?|Bruce Willis|2|adultes aines
+Quel acteur canadien joue le détective animalier Ace Ventura ?|Jim Carrey|2|ados adultes aines
+Quel acteur joue à la fois Indiana Jones et Han Solo ?|Harrison Ford|2|adultes aines
+Quel acteur joue Maximus dans le film Gladiateur ?|Russell Crowe|3|adultes aines
+Quel acteur joue l'agent J, en complet noir, qui traque des extraterrestres ?|Will Smith|2|ados adultes
+Quel acteur joue Don Vito Corleone dans Le Parrain ?|Marlon Brando|3|adultes aines
+Quel acteur se déguise en vieille gouvernante pour revoir ses enfants dans une comédie de 1993 ?|Robin Williams|2|adultes aines
+#
+# --- Cinéma québécois : les films que la salle a vus ---
+Quel film québécois oblige un policier québécois et un policier ontarien à enquêter ensemble ?|Bon Cop, Bad Cop|2|ados adultes aines
+@ quebec
+Dans quel film québécois un homme apprend-il qu'il est le père biologique de 533 enfants ?|Starbuck|2|ados adultes aines
+@ quebec
+Quel film québécois raconte un village qui monte une mise en scène pour attirer un médecin ?|La Grande Séduction|2|adultes aines
+@ quebec
+Quel acteur québécois joue quatre personnages différents dans Cruising Bar ?|Michel Côté|3|adultes aines
+@ quebec
+Quel film québécois de 2005 tire son titre des initiales des prénoms de cinq frères ?|C.R.A.Z.Y.|2|ados adultes aines
+@ quebec
+Quel film québécois envoie un père et un fils policiers dans une thérapie père-fils ?|De père en flic|2|adultes aines
+@ quebec
+Quel film de Denys Arcand réunit huit intellectuels dans une maison de campagne ?|Le Déclin de l'empire américain|3|adultes aines
+@ quebec
+Quel film de Denis Villeneuve est adapté d'une pièce de Wajdi Mouawad ?|Incendies|3|adultes aines
+@ quebec
+Quel film québécois suit un immigrant algérien qui remplace une enseignante au primaire ?|Monsieur Lazhar|3|adultes aines
+@ quebec
+Quel acteur québécois incarne Maurice Richard au cinéma ?|Roy Dupuis|2|adultes aines
+@ quebec
+Quel film de Xavier Dolan a gagné le Prix du jury à Cannes en 2014 ?|Mommy|3|ados adultes
+@ quebec
+#
+# --- Cinéma français qui a marché ici ---
+Dans quel film français un homme sans aucune formation devient-il l'aide à domicile d'un riche tétraplégique ?|Intouchables|2|ados adultes aines
+Dans quel film français un employé de la poste est-il muté du Sud vers le Nord de la France ?|Bienvenue chez les Ch'tis|2|adultes aines
+Comment s'appelle la serveuse du café de Montmartre, héroïne d'un film français de 2001 ?|Amélie Poulain|2|adultes aines
+Quel film français fait inviter à souper un homme qui construit des maquettes en allumettes ?|Le Dîner de cons|3|adultes aines
+Quel film français de 1966 fait traverser la France occupée à deux civils et à des aviateurs britanniques ?|La Grande Vadrouille|3|adultes aines
+Dans quel film français deux hommes du Moyen Âge se retrouvent-ils projetés au 20e siècle ?|Les Visiteurs|2|adultes aines
+Quel film de science-fiction français de 1997 a pour héroïne une jeune femme nommée Leeloo ?|Le Cinquième Élément|3|ados adultes
+#
+# --- Blockbusters des annees 90 a aujourd'hui ---
+Quel acteur a reçu un Oscar à titre posthume pour son rôle du Joker ?|Heath Ledger|3|ados adultes
+Quel royaume africain imaginaire Black Panther protège-t-il chez Marvel ?|Le Wakanda|2|enfants ados adultes
+@ super-heros
+Quelle actrice joue la redoutable rédactrice en chef du Diable s'habille en Prada ?|Meryl Streep|2|adultes aines
+Quel acteur a gagné l'Oscar du meilleur acteur pour son rôle de Freddie Mercury ?|Rami Malek|3|ados adultes
+Quel réalisateur a gagné la Palme d'or de 1994 avec Pulp Fiction ?|Quentin Tarantino|3|adultes
+Quel réalisateur néo-zélandais a porté Le Seigneur des anneaux à l'écran ?|Peter Jackson|3|ados adultes
+Quel réalisateur a tourné Inception et Oppenheimer ?|Christopher Nolan|3|ados adultes
+Dans quel film de 1999 un jeune garçon dit-il « Je vois des gens qui sont morts » ?|Sixième Sens|3|adultes aines
+Quelle actrice joue l'aspirante comédienne de La La Land ?|Emma Stone|3|ados adultes
+#
+# --- Series : d'ici et d'ailleurs ---
+Dans quelle série un ingénieur se fait-il emprisonner volontairement pour faire évader son frère ?|Prison Break|2|ados adultes
+Comment s'appellent les deux agents du FBI de la série X-Files ?|Mulder et Scully|3|adultes aines
+Quelle télésérie québécoise suit le club de hockey fictif le National de Québec ?|Lance et compte|2|adultes aines
+@ quebec
+Comment s'appelle le vaisseau spatial de la série Dans une galaxie près de chez vous ?|Le Romano Fafard|3|adultes
+@ quebec espace
+Quel est le vrai nom de l'enfant surnommé Bébé Yoda dans The Mandalorian ?|Grogu|2|enfants ados adultes
+@ disney
+Quelle actrice joue Mercredi Addams dans la série de Netflix ?|Jenna Ortega|2|ados adultes
+#
+# --- Pour les enfants et les ados ---
+Comment s'appelle le robot gonflable blanc qui soigne les gens dans Les Nouveaux Héros ?|Baymax|2|enfants ados
+@ disney
+Quel rat est le maître des Tortues Ninja ?|Splinter|2|enfants ados adultes
+@ regne-animal
+Comment s'appelle le jeune héros de la série animée Avatar, le dernier maître de l'air ?|Aang|3|enfants ados
+Quel jeu de société libère des animaux de la jungle dans un film de 1995 ?|Jumanji|2|enfants ados adultes
+Quelle série animée japonaise suit les élèves d'un lycée qui forme des super-héros ?|My Hero Academia|2|enfants ados
+@ super-heros
+Quel surnom porte la petite Aurore Gagnon, dont l'histoire vraie a inspiré deux films québécois ?|L'enfant martyre|3|adultes aines
+@ quebec
+Quel acteur comique français joue le gendarme Cruchot, muté à Saint-Tropez ?|Louis de Funès|2|adultes aines
+Quel acteur français joue Assane Diop, l'héritier d'Arsène Lupin, dans la série de Netflix ?|Omar Sy|2|ados adultes
+Quelle sitcom américaine des années 90 se décrivait comme « une série sur rien » ?|Seinfeld|3|adultes aines
+Comment les survivants appellent-ils les morts-vivants dans la série The Walking Dead ?|Les rôdeurs|2|ados adultes
+Quelle famille criminelle de Birmingham est au centre de la série Peaky Blinders ?|Les Shelby|3|ados adultes
+Quelle série suit un entraîneur de football américain embauché pour diriger une équipe de soccer anglaise ?|Ted Lasso|2|ados adultes
+Dans quelle série un homme dans la quarantaine devient-il la plus vieille recrue de la police de Los Angeles ?|The Rookie|2|ados adultes aines
+#
+# --- Le doublage quebecois, que la salle entend depuis trente ans ---
+Quelle comédienne québécoise a prêté sa voix à Marge Simpson pendant 33 ans ?|Béatrice Picard|3|adultes aines
+@ quebec
+Quel comédien a été la voix québécoise d'Homer Simpson pendant 27 ans ?|Hubert Gagnon|3|adultes aines
+@ quebec
+#
+# --- Quebec, deuxieme lot : films et teleromans ---
+Dans quel film québécois de 1993 un chauffeur d'autobus de Montréal part-il tenir un motel dans le Sud ?|La Florida|3|adultes aines
+@ quebec
+Quel pilote québécois, devenu un héros en 2001, a eu droit à son film en 2010 ?|Robert Piché|3|adultes aines
+@ quebec transports
+Quel roman de Claude-Henri Grignon a donné Les Belles Histoires des pays d'en haut ?|Un homme et son péché|3|aines
+@ quebec
+Quel téléroman québécois de Fabienne Larouche s'est déroulé dans une école secondaire pendant quinze saisons ?|Virginie|3|adultes aines
+@ quebec
+Quel téléroman québécois racontait la vie des locataires d'une résidence étudiante ?|Chambres en ville|3|adultes aines
+@ quebec
+Quelle série québécoise de TVA suit une équipe d'avocats de la défense criminelle ?|Indéfendable|2|adultes aines
+@ quebec
+Quelle actrice partage l'affiche avec Keanu Reeves dans le film de 1994 où un autobus ne doit pas ralentir ?|Sandra Bullock|3|adultes aines
+Quel acteur joue Dieu dans Bruce le tout-puissant ?|Morgan Freeman|2|ados adultes aines
+Quel acteur joue l'inspecteur Axel Foley, le policier de Detroit envoyé à Beverly Hills ?|Eddie Murphy|3|adultes aines
+Quel acteur joue le policier corrompu de Training Day ?|Denzel Washington|3|adultes
+#
+# --- Troisieme lot : ce que le client a nomme ---
+Comment s'appelle le ballon de volleyball qui tient compagnie à Tom Hanks dans Seul au monde ?|Wilson|3|adultes aines
+Quel acteur joue Achille dans le film Troie ?|Brad Pitt|2|ados adultes
+Dans quel film Julia Roberts affronte-t-elle une compagnie d'électricité pour de l'eau contaminée ?|Erin Brockovich|3|adultes
+Quel acteur français joue Obélix dans Astérix et Obélix : Mission Cléopâtre ?|Gérard Depardieu|2|ados adultes aines
+Quel humoriste québécois joue le Gaulois Alafolix dans Astérix aux Jeux olympiques ?|Stéphane Rousseau|3|adultes
+@ quebec
+Quel réalisateur québécois a signé C.R.A.Z.Y. ?|Jean-Marc Vallée|3|adultes
+@ quebec
+Quel acteur québécois joue Stan, le propriétaire de brasserie qui commandite l'équipe des Boys ?|Rémy Girard|2|adultes aines
+@ quebec
+Quel acteur québécois joue le chauffeur de taxi Rogatien Dubois ?|Patrick Huard|3|adultes
+@ quebec
+Quel comédien a animé le jeu télévisé Le Tricheur pendant quinze saisons ?|Guy Jodoin|2|adultes aines
+@ quebec
+Quel animateur a mené la première saison de Survivor Québec en 2023 ?|Patrice Bélanger|3|ados adultes
+@ quebec
+Quelle série quotidienne de Radio-Canada se déroule à l'urgence de l'hôpital Saint-Vincent ?|STAT|2|adultes aines
+@ quebec
+Quelle série de TVA a fait connaître Ludivine Reding dans le rôle de Fanny Couture en 2018 ?|Fugueuse|3|adultes aines
+@ quebec
+Quelle série de Florence Longpré se déroule dans un institut psychiatrique ?|Empathie|3|adultes
+@ quebec
+#
+# --- Quatrieme lot : les filons qui restaient au niveau party ---
+Comment s'appelle le héros de Retour vers le futur ?|Marty McFly|2|ados adultes aines
+Dans quel film Michael Jordan joue-t-il au basketball avec les Looney Tunes ?|Space Jam|2|ados adultes
+Comment s'appelle le vieux maître qui enseigne le karaté à Daniel en le faisant cirer des autos ?|Monsieur Miyagi|3|adultes aines
+Quel Teletubbie violet porte un sac à main rouge ?|Tinky Winky|3|enfants ados adultes
+Comment s'appelle la nièce de l'inspecteur Gadget ?|Sophie|2|enfants adultes aines
+Qui est l'ennemi juré de l'inspecteur Gadget ?|Le docteur Gang|3|adultes aines
+Quel acteur québécois incarne l'homme fort Louis Cyr au cinéma ?|Antoine Bertrand|2|adultes aines
+@ quebec
+Quelle actrice joue Émilie Bordeleau dans la télésérie Les Filles de Caleb ?|Marina Orsini|2|adultes aines
+@ quebec
+Quelle animatrice a créé et animé En direct de l'univers ?|France Beaudoin|3|adultes aines
+@ quebec
+Quelle émission québécoise fait charmer une vedette par tout un village ?|La Petite Séduction|3|adultes aines
+@ quebec
+Comment appelle-t-on la personne qui remplace l'acteur dans les scènes dangereuses ?|Un cascadeur|2|ados adultes aines
+Comment appelle-t-on le court extrait diffusé pour donner le goût d'un film à venir ?|La bande-annonce|2|ados adultes aines
+Sur quoi les vedettes défilent-elles devant les photographes avant une grande première ?|Le tapis rouge|2|ados adultes aines
+Comment appelle-t-on la personne qui prête sa voix à un acteur dans une autre langue ?|Un doubleur|2|ados adultes aines
+Quelle actrice joue la détenue Marie Lamontagne dans Unité 9 ?|Guylaine Tremblay|2|adultes aines
+@ quebec
+Quel acteur joue le gardien de nuit d'un musée où tout se réveille après la fermeture ?|Ben Stiller|2|ados adultes
+Comment s'appelle la cousine de trois ans qui tyrannise les bébés dans Les Razmoket ?|Angelica|3|enfants ados adultes
+Quel acteur québécois joue le coureur de rue Max dans le film Nitro ?|Guillaume Lemay-Thivierge|3|adultes
+@ quebec

@@ -12,7 +12,7 @@
 #   Question|Réponse|niveau|tranches
 #   > Question|Réponse     retouche la question du dessus
 #   - motif                la retire du catalogue
-#   @ noel creatures       ses thématiques, écrites et jamais devinées
+#   @ noel nostalgie       ses thématiques, écrites et jamais devinées
 #
 # LES THÉMATIQUES SONT ÉCRITES, PAS DÉDUITES. Elles l'étaient, par mots-clés,
 # et se trompaient sans le dire : « neige » rangeait Blanche-Neige dans Sports
@@ -28,13 +28,20 @@
 # d'un AUTRE fichier qui parle du même sujet, comme « @ quebec » sous une
 # question québécoise rangée dans Culture pop.
 #
-# Les onze qui traversent la banque : noel, regne-animal, espace,
-# corps-humain, super-heros, creatures, mer, transports, disney, nostalgie,
-# voyages. Un slug inconnu arrête la génération.
+# Les neuf qui traversent la banque : noel, regne-animal, espace,
+# corps-humain, super-heros, transports, disney, nostalgie, voyages.
+# Un slug inconnu arrête la génération.
 #
-# « Sports d'hiver » a fondu dans sports et « Le règne végétal » dans
-# sciences-et-nature : le client n'en voulait pas deux. Les étiquettes qui
-# vivaient hors du fichier absorbeur ont été transférées, pas jetées.
+# QUATRE ONT DÉJÀ FONDU, ET AUCUNE QUESTION N'A ÉTÉ RETIRÉE avec elles.
+# « Sports d'hiver » est allée dans sports et « Le règne végétal » dans
+# sciences-et-nature : le client n'en voulait pas deux. « Créatures et
+# légendes » est allée dans culture-generale et « La mer et les bateaux »
+# dans geographie : elles n'étaient pas petites, 77 et 121 questions, elles
+# n'étaient juste pas invitantes à l'heure de composer une manche. Les
+# étiquettes qui vivaient hors du fichier absorbeur ont été transférées, pas
+# jetées : c'est ce que fait « --absorber <slug> <absorbeur> », et c'est ce
+# que « --retirer » ne fait pas.
+#
 # « --proposer <slug> » liste les candidates à relire ; « --etiqueter <slug>
 # <fichier> <bloc> <rangs> » écrit les marqueurs au bon endroit.
 #
@@ -87,7 +94,7 @@ Quel pays a remporté le plus de Coupes du monde de soccer ?|Le Brésil|2|ados a
 Dans quel sport marque-t-on des essais ?|Le rugby|2|ados adultes aines
 Quel sport de glace utilise des pierres et des balais ?|Le curling|1|enfants ados adultes aines
 Quel sport pratique-t-on sur une planche dans les vagues ?|Le surf|1|enfants ados adultes aines
-@ mer
+@ geographie
 Combien de quilles dans un jeu de bowling ?|Dix|1|enfants ados adultes aines
 Quel sport combine ski de fond et tir ?|Le biathlon|2|ados adultes aines
 Dans quel sport dit-on échec et mat ?|Les échecs|1|enfants ados adultes aines
@@ -215,7 +222,7 @@ Quel sport de montagne descend des pentes gelées à crampons ?|L'alpinisme|2|ad
 > Quel sport de montagne grimpe des parois gelées à crampons ?|L'alpinisme
 Quel sport descend des rivières en radeau pneumatique ?|Le rafting|1|enfants ados adultes aines
 Quel sport glisse sur l'eau tiré par un bateau ?|Le ski nautique|1|enfants ados adultes aines
-@ mer
+@ geographie
 Quel sport surfe sur la neige ?|La planche à neige|1|enfants ados adultes aines
 Quel sport de raquette au nom de cornichon est en plein essor ?|Le pickleball|2|adultes aines
 # Réponse dans la question, et quasi-doublon de la même question dans Québec.
@@ -345,9 +352,9 @@ Quel sport aquatique saute d'un tremplin dans une piscine ?|Le plongeon|1|enfant
 Quel cerceau fait-on tourner autour de la taille ?|Le hula hoop|1|enfants ados adultes aines
 Dans quel sport les joueurs portent-ils épaulettes et casque à grille et courent-ils avec un ballon ovale ?|Le football|1|enfants ados adultes aines
 Quelle embarcation étroite se dirige avec une pagaie à deux pales ?|Le kayak|1|enfants ados adultes aines
-@ mer
+@ geographie
 Quel objet rond et gonflé frappe-t-on à la volée sur la plage ?|Le ballon de plage|1|enfants ados adultes aines
-@ mer
+@ geographie
 #
 # ─── pour les ados ───
 #
@@ -422,7 +429,7 @@ Quel sport fait courir des chevaux montés par des jockeys ?|Les courses de chev
 Quel sport fait tourner des voitures très rapides sur un circuit ?|La course automobile|1|enfants ados adultes aines
 @ transports
 Quel sport de plage frappe un ballon par-dessus un filet, pieds dans le sable ?|Le volleyball de plage|2|enfants ados adultes aines
-@ mer
+@ geographie
 Quel sport monte des parois avec des prises de couleur et un baudrier ?|L'escalade|1|enfants ados adultes aines
 Quel sport pousse un canot avec une pagaie à deux palettes ?|Le kayak|1|enfants ados adultes aines
 Quel sport fait descendre un skieur derrière un bateau ?|Le ski nautique|2|enfants ados adultes aines
