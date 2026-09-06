@@ -117,6 +117,32 @@ void main() {
     expect(game.questionText, isNull);
   });
 
+  // UNE MANCHE TIRÉE NE SE REJOUE PAS. Elle est composée pour une partie et
+  // une seule ; la garder en place après coup, c'était offrir « Lancer la
+  // partie » sur les vingt questions que la salle venait d'entendre, sans que
+  // rien ne le dise.
+  test('la manche tirée au hasard se retire une fois jouée', () {
+    actif.use(troisQuestions(), origine: 'Tirage au hasard');
+    actif.tireAuHasard = true;
+    actif.perimetreDuBris = {'Histoire'};
+    actif.mancheJouee();
+    expect(actif.active, isFalse);
+    expect(actif.tireAuHasard, isFalse);
+    expect(actif.perimetreDuBris, isEmpty);
+    expect(actif.pretAJouer, isFalse);
+    expect(game.questionText, isNull);
+  });
+
+  // Celui-là se choisit et se rechoisit : une autre tablée peut vouloir le
+  // même questionnaire.
+  test('un questionnaire écrit à la main survit à la partie', () {
+    actif.use(troisQuestions(), origine: 'Personnalisé');
+    actif.goTo(2);
+    actif.mancheJouee();
+    expect(actif.active, isTrue);
+    expect(actif.title, 'Essai');
+  });
+
   test('sans questionnaire actif, une QUESTION du buzzer passe normalement', () async {
     messages.add('QUESTION|Histoire|Qui a fondé Québec ?|Champlain');
     await Future<void>.delayed(Duration.zero);

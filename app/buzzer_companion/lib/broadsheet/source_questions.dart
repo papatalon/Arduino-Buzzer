@@ -132,7 +132,13 @@ class SourceQuestionnaire extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final aUnQuestionnaire = actif.active;
+    // UNE MANCHE TIRÉE N'EST PAS UN QUESTIONNAIRE QU'ON A ÉCRIT, même si
+    // elle occupe la même case en mémoire. Cette ligne la reprenait à son
+    // compte : les deux premiers boutons ronds se cochaient ensemble, la
+    // même manche s'annonçait deux fois de suite, et le « Changer » d'ici
+    // menait à la bibliothèque, où il n'y a rien qui puisse changer un
+    // tirage. Le tirage a sa ligne, juste dessous ; celle-ci se tait.
+    final aUnQuestionnaire = actif.active && !actif.tireAuHasard;
     return ChoixLigne(
       choisi: !actif.libre && aUnQuestionnaire,
       titre: aUnQuestionnaire

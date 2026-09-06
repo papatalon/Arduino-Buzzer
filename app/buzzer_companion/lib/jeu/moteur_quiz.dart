@@ -602,6 +602,11 @@ class MoteurQuiz extends ChangeNotifier {
     ble.allumerLeds(0);
     etape = EtapeQuiz.repos;
     jeu = null;
+    // La manche est consommée. Ça ne concerne que les manches tirées au
+    // hasard, qui n'existent que pour une partie : sans ça, l'écran de
+    // lancement rouvrait sur les vingt questions qu'on vient de poser, prêtes
+    // à repartir, et rien ne le disait.
+    actif.mancheJouee();
     notifyListeners();
   }
 

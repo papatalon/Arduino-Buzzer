@@ -141,6 +141,30 @@ class ActiveQuestionnaire extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// LA MANCHE VIENT D'ÊTRE JOUÉE, on revient au menu.
+  ///
+  /// Une manche TIRÉE AU HASARD ne se rejoue pas : elle a été composée pour
+  /// une partie et une seule, et la salle vient d'entendre ses vingt
+  /// questions. La garder en place, c'était offrir « Lancer la partie » sur
+  /// exactement les mêmes questions, et l'animateur ne s'en apercevait qu'à
+  /// la première, à voix haute. L'écran de lancement repart donc sur
+  /// « Composer la manche », avec les critères de la manche précédente encore
+  /// cochés : un clic pour la suivante.
+  ///
+  /// Un questionnaire ÉCRIT À LA MAIN reste, lui : c'est un objet qu'on a
+  /// choisi, qu'on peut vouloir refaire jouer à une autre tablée.
+  void mancheJouee() {
+    if (!tireAuHasard) return;
+    _questionDeBris = null;
+    tireAuHasard = false;
+    perimetreDuBris = const {};
+    _questionnaire = null;
+    _origine = '';
+    _index = 0;
+    _push();
+    notifyListeners();
+  }
+
   void clear() {
     _questionnaire = null;
     _origine = '';
