@@ -925,29 +925,20 @@ class _FureteurBanqueState extends State<_FureteurBanque> {
             style: TextButton.styleFrom(foregroundColor: BSColors.neutral700),
             child: const Text('Tout effacer'),
           ),
-        const Spacer(),
-        // D'où vient cette liste, dit en clair. « Rien ne signale un
-        // problème » est une preuve trop faible : sans cette ligne, la seule
-        // façon de savoir que la banque vient du réseau était de remarquer
-        // l'ABSENCE d'un avertissement.
-        if (b.loading)
-          Text('Lecture de la banque...',
-              style: BSType.body(size: 14, color: BSColors.neutral600))
-        else if (b.depuisLeBuild)
-          Text(
-            "Hors ligne. Questions livrées avec l'application",
-            style: BSType.body(size: 14, color: BSColors.accent2_800),
-          )
-        else if (b.horsLigne)
-          Text(
-            'Hors ligne. Copie du poste, lue ${_quand(b.lastFetch)}',
-            style: BSType.body(size: 14, color: BSColors.accent2_800),
-          )
-        else if (total > 0)
-          Text(
-            'Lue en ligne ${_quand(b.lastFetch)}',
-            style: BSType.body(size: 14, color: BSColors.neutral600),
+        // TOUTE LA PLACE QUI RESTE, À DROITE, ET TRONQUÉE PLUTÔT QUE DÉBORDÉE.
+        //
+        // Ce libellé grandit tout seul, sans qu'on y touche : « Lue en ligne à
+        // 21:34 » devient « Lue en ligne le 05/09 à 21:34 » dès le lendemain,
+        // et la version hors ligne fait le double. La rangée était rigide
+        // (champ de 400 px, compte, Spacer) : elle débordait de 3,6 px le
+        // lendemain d'une lecture et de 116 px hors ligne, avec les rayures
+        // jaunes de Flutter par-dessus l'écran.
+        Expanded(
+          child: Align(
+            alignment: Alignment.centerRight,
+            child: _provenance(b, total),
           ),
+        ),
         const SizedBox(width: BSSpace.s2),
         TextButton(
           onPressed: b.loading ? null : b.refresh,
@@ -955,6 +946,40 @@ class _FureteurBanqueState extends State<_FureteurBanque> {
           child: const Text('Rafraîchir'),
         ),
       ],
+    );
+  }
+
+  // D'où vient cette liste, dit en clair. « Rien ne signale un problème » est
+  // une preuve trop faible : sans cette ligne, la seule façon de savoir que la
+  // banque vient du réseau était de remarquer l'ABSENCE d'un avertissement.
+  //
+  // Une seule ligne, jamais deux : sur cette rangée, un retour à la ligne
+  // pousserait le champ de recherche et le compte vers le bas.
+  Widget _provenance(BanqueStore b, int total) {
+    final (String texte, Color couleur) = switch (b) {
+      _ when b.loading => ('Lecture de la banque...', BSColors.neutral600),
+      _ when b.depuisLeBuild => (
+          "Hors ligne. Questions livrées avec l'application",
+          BSColors.accent2_800
+        ),
+      _ when b.horsLigne => (
+          'Hors ligne. Copie du poste, lue ${_quand(b.lastFetch)}',
+          BSColors.accent2_800
+        ),
+      _ when total > 0 => (
+          'Lue en ligne ${_quand(b.lastFetch)}',
+          BSColors.neutral600
+        ),
+      _ => ('', BSColors.neutral600),
+    };
+    if (texte.isEmpty) return const SizedBox.shrink();
+    return Text(
+      texte,
+      textAlign: TextAlign.right,
+      maxLines: 1,
+      softWrap: false,
+      overflow: TextOverflow.ellipsis,
+      style: BSType.body(size: 14, color: couleur),
     );
   }
 
