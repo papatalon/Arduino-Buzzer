@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 import '../audio/sonorisation.dart';
 import 'animation_tirage.dart';
 import 'mots_de_la_fin.dart';
+import 'phrases_lecture.dart';
 import '../questionnaires/active_questionnaire.dart';
 
 /// COMMENT LES APPUIS SONT RAPPORTES pendant un armement.
@@ -196,6 +197,52 @@ class MoteurQuiz extends ChangeNotifier {
   /// La phrase projetee pendant le tirage au sort du mode Vol. Vide sinon.
   String motTirage = '';
 
+  // --- Lecture de la question --------------------------------------------
+  //
+  // L'animateur lit la question a voix haute. Si la salle la voit a l'ecran
+  // pendant ce temps, elle la lit plus vite que lui et buzze avant qu'il ait
+  // fini. D'ou la possibilite de la retenir jusqu'a son clic.
+
+  /// REGLAGE : la question attend-elle le clic de l'animateur avant de
+  /// paraitre a l'ecran de la salle ?
+  ///
+  /// Faux par defaut DANS LE MOTEUR, pour que les regles que verifient les
+  /// tests d'avant restent celles d'avant. La valeur qu'on vit en soiree vient
+  /// du reglage memorise (voir ReglagesLecture), qui, lui, est vrai par
+  /// defaut.
+  bool questionSurAutorisation = false;
+
+  /// REGLAGE : les buzzers sont-ils verrouilles pendant la lecture ?
+  ///
+  /// Armes par defaut : on peut buzzer en ecoutant, ce qui recompense
+  /// l'ecoute. Verrouilles, le clic de l'animateur devient le signal de
+  /// depart, pareil pour tout le monde. Sans objet quand la question
+  /// n'attend pas l'animateur.
+  bool buzzersVerrouillesPendantLecture = false;
+
+  /// Vrai quand la salle peut voir la question en cours.
+  bool questionMontree = true;
+
+  /// La phrase projetee a la place de la question pendant la lecture. Tiree
+  /// une fois par question, pour qu'elle ne change pas sous les yeux de la
+  /// salle pendant que l'animateur parle.
+  String motLecture = '';
+
+  final TirageLecture _tirageLecture = TirageLecture();
+
+  void reglerLecture({bool? surAutorisation, bool? verrouiller}) {
+    if (surAutorisation != null) questionSurAutorisation = surAutorisation;
+    if (verrouiller != null) buzzersVerrouillesPendantLecture = verrouiller;
+    notifyListeners();
+  }
+
+  /// La question est posee, mais la salle ne la voit pas encore.
+  bool get lectureEnCours => etape == EtapeQuiz.attente && !questionMontree;
+
+  /// Les buzzers attendent le clic de l'animateur pour s'armer.
+  bool get buzzersRetenus =>
+      lectureEnCours && questionSurAutorisation && buzzersVerrouillesPendantLecture;
+
   // --- Chrono ------------------------------------------------------------
 
   /// Secondes restantes, ou null si aucun chrono ne tourne.
@@ -242,6 +289,8 @@ class MoteurQuiz extends ChangeNotifier {
     brisEgalite = false;
     actif.goTo(0);
     egalite = false;
+    questionMontree = true;
+    motLecture = '';
     // Vol : le premier joueur est tiré au sort avant la première question.
     if (estVol) {
       final pool = [for (var i = 0; i < 4; i++) if (presents[i]) i];
@@ -380,7 +429,8 @@ class MoteurQuiz extends ChangeNotifier {
     }
 
     etape = EtapeQuiz.attente;
-    _armer();
+    _preparerLecture();
+    _armerOuRetenir();
 
     // Le chrono des réponses suivantes part tout seul : la question est déjà
     // connue. Celui de la première attend le « top » de l'animateur, qui
@@ -389,16 +439,73 @@ class MoteurQuiz extends ChangeNotifier {
     notifyListeners();
   }
 
+  // Decide, au moment ou la question arrive, si la salle la voit tout de
+  // suite. Deux raisons de la retenir : le reglage de l'animateur, et la
+  // regle plus ancienne des jeux a chrono, ou la question attend le « top »
+  // quel que soit le reglage.
+  //
+  // Sans texte a l'ecran (manche libre, questionnaire epuise), il n'y a rien
+  // a retenir : l'ecran public montre deja sa phrase d'attention, et
+  // l'animateur n'aurait aucun bouton « montrer » qui veuille dire quelque
+  // chose. current rend deja compte de la manche libre ; une question de
+  // bris piochee pendant une manche libre a un vrai texte, et attend donc
+  // l'animateur comme les autres.
+  void _preparerLecture() {
+    final attendLeTop = utiliseChrono && chronoPremiere > 0;
+    final retenue =
+        actif.current != null && (questionSurAutorisation || attendLeTop);
+    questionMontree = !retenue;
+    motLecture = retenue ? _tirageLecture.suivante() : '';
+  }
+
   void _armer() {
     ble.armer(_masqueEnLice);
     ble.allumerLeds(0);
+  }
+
+  // Arme les buzzers en lice, sauf pendant une lecture ou l'animateur a
+  // demande qu'on les retienne : ils s'armeront a son clic.
+  void _armerOuRetenir() {
+    if (buzzersRetenus) {
+      ble.desarmer();
+      ble.allumerLeds(0);
+      return;
+    }
+    _armer();
+  }
+
+  /// L'animateur a fini de lire : la salle voit la question.
+  ///
+  /// UN SEUL GESTE. Sur les jeux a chrono, le meme clic lance le chrono de la
+  /// premiere reponse : finir de lire, montrer et partir le decompte sont le
+  /// meme moment, et deux boutons a enchainer devant la salle seraient un de
+  /// trop.
+  void montrerQuestion() {
+    if (!lectureEnCours) return;
+    final etaientRetenus = buzzersRetenus;
+    questionMontree = true;
+    motLecture = '';
+    if (etaientRetenus) _armer();
+    if (utiliseChrono && chronoPremiere > 0 && !chronoActif) {
+      _lancerChrono(chronoPremiere);
+    }
+    notifyListeners();
   }
 
   /// Le matériel rapporte un appui. [ms] est mesuré sur le Mega, donc sans la
   /// gigue du Bluetooth.
   void surBuzz(int qui, int ms) {
     if (etape != EtapeQuiz.attente) return;
+    // Buzzers retenus pendant la lecture : le Mega est desarme, aucun appui
+    // ne devrait arriver. S'il en arrive un quand meme (un message deja en
+    // route au moment du desarmement), il ne compte pas.
+    if (buzzersRetenus) return;
     if (qui < 0 || qui > 3 || !presents[qui] || !enLice[qui]) return;
+    // Un buzz pendant la lecture met la question en jeu. Si la reponse est
+    // mauvaise, les autres repartent sur le chrono court : ils doivent
+    // pouvoir lire ce a quoi ils repondent.
+    questionMontree = true;
+    motLecture = '';
     buzzeur = qui;
     etape = EtapeQuiz.buzze;
     sons?.buzz(qui);
@@ -590,8 +697,11 @@ class MoteurQuiz extends ChangeNotifier {
       enLice[i] = presents[i] && scores[i] == meilleur;
     }
     etape = EtapeQuiz.attente;
+    // La question du bris se lit a voix haute comme les autres : elle
+    // attend l'animateur de la meme facon.
+    _preparerLecture();
     _arreterChrono();
-    _armer();
+    _armerOuRetenir();
     notifyListeners();
   }
 
@@ -602,6 +712,8 @@ class MoteurQuiz extends ChangeNotifier {
     ble.allumerLeds(0);
     etape = EtapeQuiz.repos;
     jeu = null;
+    questionMontree = true;
+    motLecture = '';
     // La manche est consommée. Ça ne concerne que les manches tirées au
     // hasard, qui n'existent que pour une partie : sans ça, l'écran de
     // lancement rouvrait sur les vingt questions qu'on vient de poser, prêtes
@@ -645,6 +757,12 @@ class MoteurQuiz extends ChangeNotifier {
   /// Le « top » de l'animateur, qui vient de lire la question.
   void lancerChronoPremiere() {
     if (!utiliseChrono || chronoPremiere <= 0) return;
+    // Pendant la lecture, lancer le chrono, c'est montrer la question : un
+    // decompte n'a aucun sens pour une question que la salle ne voit pas.
+    if (lectureEnCours) {
+      montrerQuestion();
+      return;
+    }
     _lancerChrono(chronoPremiere);
   }
 

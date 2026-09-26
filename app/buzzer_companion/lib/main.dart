@@ -19,6 +19,7 @@ import 'jeu/moteur_chrono_aveugle.dart';
 import 'jeu/moteur_ne_buzze_pas.dart';
 import 'jeu/moteur_reflexe.dart';
 import 'jeu/moteur_simon.dart';
+import 'jeu/reglages_lecture.dart';
 import 'musique/ambiance_spotify.dart';
 import 'popout/popout_launcher.dart';
 import 'popout/popout_snapshot.dart';
@@ -163,6 +164,9 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
     // partie (voir MoteurQuiz).
     _moteur = MoteurQuiz(ble: _ble, actif: _actif, sons: _sons);
     _moteur.tirage = _tirage;
+    // Les reglages de lecture de la derniere soiree : la question attend-elle
+    // l'animateur, les buzzers sont-ils retenus pendant qu'il la lit.
+    ReglagesLecture.charger(_moteur);
 
     // LE REFLEXE, deuxieme jeu mene par l'application. Chaque jeu a son
     // moteur : leurs regles n'ont rien en commun, et les melanger dans une

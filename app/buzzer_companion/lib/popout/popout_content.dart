@@ -228,18 +228,30 @@ class _ArmingZone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Pour les jeux avec chrono, la question n'arrive dans l'instantané
-    // qu'une fois le chrono lancé (voir PopoutSnapshot.fromGameState) : tant
-    // que ce n'est pas le cas, rien à afficher ici sauf l'attente elle-même
-    // — le public ne doit pas la voir pendant que l'animateur la lit encore
-    // à voix haute. Les jeux sans chrono (Classique, Pénalité...) n'ont pas
-    // cette attente : la question arrive tout de suite, pas de barre.
+    // La question n'arrive dans l'instantané qu'une fois que l'animateur a
+    // fini de la lire (voir MoteurQuiz.lectureEnCours) : sur les jeux avec
+    // chrono, au « top » ; sur les autres, à son clic si le réglage le
+    // demande, sinon tout de suite. Pendant la lecture, une phrase tient la
+    // place, pour que l'écran ne ressemble pas à une panne.
     final chrono = usesChrono(snapshot.gameMode);
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
         if (snapshot.questionText != null) ...[
           Text(snapshot.questionText!, style: BSType.questionPopout(), textAlign: TextAlign.center),
+          const SizedBox(height: BSSpace.s6),
+        ] else if (snapshot.motLecture.isNotEmpty) ...[
+          // L'animateur lit la question a voix haute. Sans cette phrase,
+          // l'ecran resterait vide au moment precis ou toute la salle le
+          // regarde, ce qui ressemble a une panne.
+          SizedBox(
+            width: 1100,
+            child: Text(
+              snapshot.motLecture,
+              textAlign: TextAlign.center,
+              style: BSType.lecturePopout(),
+            ),
+          ),
           const SizedBox(height: BSSpace.s6),
         ] else if (snapshot.motAttention.isNotEmpty) ...[
           // Manche libre : la question se pose a voix haute. Sans ca, l'ecran
@@ -268,8 +280,13 @@ class _ArmingZone extends StatelessWidget {
             total: snapshot.chronoTotal,
           ),
         ] else if (chrono) ...[
-          Text('CHRONO NON LANCÉ', style: BSType.popoutHeaderMeta(color: BSColors.neutral500)),
-          const SizedBox(height: BSSpace.s2),
+          // Pendant la lecture, la phrase dit deja que ca s'en vient : le
+          // libelle technique par-dessus serait de trop. La barre pleine,
+          // elle, reste : elle annonce qu'un decompte va partir.
+          if (snapshot.motLecture.isEmpty) ...[
+            Text('CHRONO NON LANCÉ', style: BSType.popoutHeaderMeta(color: BSColors.neutral500)),
+            const SizedBox(height: BSSpace.s2),
+          ],
           Container(width: 400, height: 20, color: BSColors.neutral300),
         ],
       ],

@@ -137,6 +137,49 @@ void main() {
     expect(retour.qcountValue, 5);
   });
 
+  // LA QUESTION RETENUE PENDANT LA LECTURE. Même exigence que pour la
+  // réponse : la question ne doit pas être sérialisée du tout tant que
+  // l'animateur ne l'a pas montrée, pas seulement cachée à l'affichage.
+  group('pendant la lecture', () {
+    setUp(() => moteur.reglerLecture(surAutorisation: true));
+
+    test('la question ne part pas, une phrase part à sa place', () {
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      final s = vu();
+      expect(s.questionText, isNull);
+      expect(s.questionCategory, isNull);
+      expect(s.motLecture, isNotEmpty);
+      expect(s.flowState, QuestionFlowState.arming);
+    });
+
+    test('le clic de l\'animateur l\'envoie et retire la phrase', () {
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.montrerQuestion();
+      final s = vu();
+      expect(s.questionText, 'Q1');
+      expect(s.motLecture, isEmpty);
+    });
+
+    // Un « Personne ne trouve » en pleine lecture : la question est tranchée,
+    // la salle voit la question et sa réponse, pas la phrase d'attente.
+    test('une question passée sans être montrée se révèle quand même', () {
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.passer();
+      final s = vu();
+      expect(s.questionText, 'Q1');
+      expect(s.answerText, 'R1');
+      expect(s.motLecture, isEmpty);
+    });
+
+    test('la phrase survit à l\'aller-retour vers la fenêtre publique', () {
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      final aller = vu();
+      final retour = PopoutSnapshot.decode(aller.encode());
+      expect(retour.motLecture, aller.motLecture);
+      expect(retour.questionText, isNull);
+    });
+  });
+
   // MANCHE LIBRE APRÈS UN QUESTIONNAIRE. Le questionnaire reste en réserve,
   // et ses questions sortaient quand même : projetées à la place de la
   // phrase d'attention, puis leur réponse révélée en fin de question, pour

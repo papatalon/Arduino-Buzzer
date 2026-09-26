@@ -161,6 +161,18 @@ class BSType {
         color: color,
       );
 
+  // La phrase projetee pendant que l'animateur lit la question. Italique et
+  // plus petite que la question elle-meme : elle occupe sa place, et ne doit
+  // jamais pouvoir se lire comme elle. Neutre plutot que magenta, pour ne pas
+  // emprunter la couleur de la reponse.
+  static TextStyle lecturePopout({Color color = BSColors.neutral700}) => _serif(
+        size: 60,
+        weight: FontWeight.w400,
+        height: 1.15,
+        style: FontStyle.italic,
+        color: color,
+      );
+
   static TextStyle scorePopout({Color? color}) => _serif(
         size: 74,
         weight: FontWeight.w600,

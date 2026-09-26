@@ -68,6 +68,7 @@ class PopoutSnapshot {
     this.enLice = const [true, true, true, true],
     this.motFinal = '',
     this.motAttention = '',
+    this.motLecture = '',
     this.motTirage = '',
     this.phaseJeu,
     this.brisEgalite = false,
@@ -135,6 +136,10 @@ class PopoutSnapshot {
   // En manche libre, la phrase projetee a la place de la question. Vide des
   // qu'un questionnaire fournit un texte.
   final String motAttention;
+
+  // Pendant que l'animateur lit la question a voix haute, la phrase projetee
+  // a sa place. Vide des que la salle peut lire la question elle-meme.
+  final String motLecture;
 
   // Le decompte en cours, en secondes, ou null si aucun chrono ne tourne.
   // La salle doit le voir aussi grand que l'animateur : c'est elle qui
@@ -461,16 +466,14 @@ class PopoutSnapshot {
     required VueDesSons vueSons,
     required PisteEnCours pisteEnCours,
   }) {
-    // Meme regle que pour le firmware : sur les jeux avec chrono, la salle ne
-    // voit la question qu'une fois le « top » donne, pas pendant que
-    // l'animateur la lit encore a voix haute.
-    final porteChrono = moteur.utiliseChrono && moteur.chronoPremiere > 0;
-    final avantLeTop = porteChrono &&
-        moteur.etape == EtapeQuiz.attente &&
-        !moteur.secondeChance &&
-        !moteur.chronoActif &&
-        !moteur.tempsEcoule;
-    final montrer = question != null && !avantLeTop;
+    // La salle ne voit pas la question pendant que l'animateur la lit encore
+    // a voix haute. C'est le moteur qui decide quand elle est retenue : sur
+    // les jeux a chrono, jusqu'au « top », comme le firmware l'a toujours
+    // fait ; ailleurs, jusqu'au clic de l'animateur si le reglage le demande.
+    // Une seule source de verite, pour que la console et la salle ne
+    // puissent pas se contredire sur ce que la salle voit.
+    final retenue = moteur.lectureEnCours;
+    final montrer = question != null && !retenue;
 
     final flow = switch (moteur.etape) {
       EtapeQuiz.attente => QuestionFlowState.arming,
@@ -508,6 +511,7 @@ class PopoutSnapshot {
       gameFinished: moteur.etape == EtapeQuiz.finie,
       motFinal: moteur.motFinal,
       motAttention: moteur.motAttention,
+      motLecture: retenue ? moteur.motLecture : '',
       motTirage: moteur.motTirage,
       brisEgalite: moteur.brisEgalite,
       chronoRestant: moteur.chronoRestant,
@@ -609,6 +613,7 @@ class PopoutSnapshot {
           const [true, true, true, true],
       motFinal: json['motFinal'] as String? ?? '',
       motAttention: json['motAttention'] as String? ?? '',
+      motLecture: json['motLecture'] as String? ?? '',
       motTirage: json['motTirage'] as String? ?? '',
       phaseJeu: json['phaseJeu'] as int?,
       brisEgalite: json['brisEgalite'] as bool? ?? false,
@@ -668,6 +673,7 @@ class PopoutSnapshot {
         'enLice': enLice,
         'motFinal': motFinal,
         'motAttention': motAttention,
+        'motLecture': motLecture,
         'motTirage': motTirage,
         'phaseJeu': phaseJeu,
         'brisEgalite': brisEgalite,

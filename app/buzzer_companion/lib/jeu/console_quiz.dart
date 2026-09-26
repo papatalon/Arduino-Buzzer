@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../audio/sonorisation.dart';
 import '../broadsheet/boutons.dart';
+import '../broadsheet/segmente.dart';
 import '../ble_link_service.dart';
 import '../broadsheet/screens/game_choice_screen.dart';
 import '../broadsheet/source_hasard.dart';
@@ -12,6 +14,7 @@ import '../questionnaires/active_questionnaire.dart';
 import '../questionnaires/tirage_questions.dart';
 import '../team_names.dart';
 import 'moteur_quiz.dart';
+import 'reglages_lecture.dart';
 
 // LA CONSOLE DE L'ANIMATEUR, en mode application.
 //
@@ -204,6 +207,13 @@ class _LancementState extends State<_Lancement> {
           ],
         ],
 
+        // Une manche libre n'a aucun texte a projeter, donc rien a retenir :
+        // le reglage n'y changerait rien, et un choix sans effet trompe.
+        if (_estQuiz && !actif.libre) ...[
+          const SizedBox(height: BSSpace.s4),
+          _ReglagesLecture(moteur: widget.moteur, chrono: _chrono),
+        ],
+
         if (_chrono) ...[
           const SizedBox(height: BSSpace.s4),
           Text('LE CHRONO', style: BSType.sectionKicker()),
@@ -276,6 +286,86 @@ class _LancementState extends State<_Lancement> {
     final actif = widget.actif;
     if (actif.libre) return actif.nombreLibre ?? 0;
     return actif.total;
+  }
+}
+
+// QUAND LA SALLE VOIT LA QUESTION, et ce que font les buzzers pendant la
+// lecture.
+//
+// Deux choix a deux options chacun : le controle segmente, qu'on compare d'un
+// coup d'oeil. Le second n'a de sens que si la question attend l'animateur :
+// il se plie tant que ce n'est pas le cas, plutot que d'offrir un reglage
+// qui ne ferait rien.
+//
+// Chaque choix est retenu d'une soiree a l'autre (voir ReglagesLecture).
+class _ReglagesLecture extends StatelessWidget {
+  const _ReglagesLecture({required this.moteur, required this.chrono});
+
+  final MoteurQuiz moteur;
+
+  /// Le jeu retenu a un chrono : la question y attend deja son lancement,
+  /// quel que soit le reglage.
+  final bool chrono;
+
+  void _regler({bool? surAutorisation, bool? verrouiller}) {
+    moteur.reglerLecture(
+        surAutorisation: surAutorisation, verrouiller: verrouiller);
+    ReglagesLecture.enregistrer(moteur);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final retenue = moteur.questionSurAutorisation;
+    final verrouilles = moteur.buzzersVerrouillesPendantLecture;
+    final explication = retenue
+        ? "Pendant que vous lisez, la salle voit une phrase d'attente. "
+            'La question paraît quand vous cliquez « Montrer la question ».'
+        : chrono
+            ? 'Sur ce jeu, la question attend quand même le lancement du chrono.'
+            : "La salle voit la question dès qu'elle est tirée.";
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text("LA QUESTION À L'ÉCRAN", style: BSType.sectionKicker()),
+        const SizedBox(height: BSSpace.s2),
+        BSSegmente(
+          options: const ['Tout de suite', 'Quand je la montre'],
+          choisi: retenue ? 1 : 0,
+          onChoisir: (i) => _regler(surAutorisation: i == 1),
+        ),
+        const SizedBox(height: BSSpace.s2),
+        SizedBox(
+          width: 620,
+          child: Text(explication,
+              style: BSType.body(size: 15, color: BSColors.neutral600)),
+        ),
+        if (retenue) ...[
+          const SizedBox(height: BSSpace.s3),
+          Row(
+            children: [
+              Text('Pendant la lecture, les buzzers sont',
+                  style: BSType.body(size: 15, color: BSColors.text)),
+              const SizedBox(width: BSSpace.s3),
+              BSSegmente(
+                options: const ['Armés', 'Verrouillés'],
+                choisi: verrouilles ? 1 : 0,
+                onChoisir: (i) => _regler(verrouiller: i == 1),
+              ),
+            ],
+          ),
+          const SizedBox(height: BSSpace.s2),
+          SizedBox(
+            width: 620,
+            child: Text(
+              verrouilles
+                  ? 'Personne ne peut buzzer avant que la question paraisse.'
+                  : 'On peut buzzer en écoutant la lecture.',
+              style: BSType.body(size: 15, color: BSColors.neutral600),
+            ),
+          ),
+        ],
+      ],
+    );
   }
 }
 
@@ -509,15 +599,36 @@ class _Attente extends StatelessWidget {
       for (var i = 0; i < 4; i++)
         if (moteur.presents[i] && moteur.enLice[i]) i
     ];
+    final lecture = moteur.lectureEnCours;
+    // LE BOUTON « MONTRER » n'existe que si c'est le reglage qui retient la
+    // question. Sur un jeu a chrono sans ce reglage, elle attend le « Lancer
+    // le chrono » d'avant, avec son libelle d'avant.
+    final montrer = lecture && moteur.questionSurAutorisation;
+    final vol = moteur.estVol && enLice.length == 1
+        ? 'À ${teams.nameFor(enLice.first)} de répondre. '
+        : '';
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          moteur.estVol && enLice.length == 1
-              ? 'À ${teams.nameFor(enLice.first)} de répondre'
-              : 'Buzzers armés',
+          lecture
+              ? 'Lecture en cours'
+              : moteur.estVol && enLice.length == 1
+                  ? 'À ${teams.nameFor(enLice.first)} de répondre'
+                  : 'Buzzers armés',
           style: BSType.buzzerNameConsole(size: 24),
         ),
+        // Ce que la salle voit, dit sans detour : l'animateur ne regarde pas
+        // l'ecran projete pendant qu'il lit, et doit savoir que la question
+        // n'y est pas encore.
+        if (lecture) ...[
+          const SizedBox(height: BSSpace.s1),
+          Text(
+            'La salle ne voit pas encore la question. $vol'
+            '${moteur.buzzersRetenus ? 'Buzzers verrouillés jusque-là.' : 'Buzzers armés.'}',
+            style: BSType.body(size: 15, color: BSColors.neutral700),
+          ),
+        ],
         const SizedBox(height: BSSpace.s3),
         Row(
           children: [
@@ -534,7 +645,11 @@ class _Attente extends StatelessWidget {
           ],
         ),
         const SizedBox(height: BSSpace.s4),
-        if (moteur.utiliseChrono) _Chrono(moteur: moteur),
+        if (montrer) ...[
+          _MontrerQuestion(moteur: moteur),
+          const SizedBox(height: BSSpace.s4),
+        ] else if (moteur.utiliseChrono)
+          _Chrono(moteur: moteur),
         const SizedBox(height: BSSpace.s3),
         // Wrap et non Row : des boutons de cette taille debordent d'une
         // colonne etroite, et un bouton coupe est un bouton qu'on rate.
@@ -553,6 +668,91 @@ class _Attente extends StatelessWidget {
             // pas de la sortie (voir Sonorisation).
             BSGhostButton(label: "Son d'attente", onPressed: sons.attente),
           ],
+        ),
+      ],
+    );
+  }
+}
+
+// LE GESTE QUI MONTRE LA QUESTION A LA SALLE.
+//
+// L'animateur a les yeux sur le texte et la voix occupee : le bouton doit se
+// trouver sans le chercher. Il prend donc la place du geste principal de
+// l'etape, en grand, et rien d'autre ne lui dispute ce rang.
+//
+// UN RACCOURCI CLAVIER, aussi : la fleche droite ou « Page suivante ». Ce sont
+// les deux touches qu'envoie une telecommande de presentation, ce qui permet
+// de lire debout, loin du clavier. Pas la barre d'espace ni Entree : Flutter
+// s'en sert pour presser le bouton qui a le focus, et un « Personne ne
+// trouve » actionne par erreur devant la salle ne se rattrape pas.
+class _MontrerQuestion extends StatefulWidget {
+  const _MontrerQuestion({required this.moteur});
+  final MoteurQuiz moteur;
+
+  @override
+  State<_MontrerQuestion> createState() => _MontrerQuestionState();
+}
+
+class _MontrerQuestionState extends State<_MontrerQuestion> {
+  @override
+  void initState() {
+    super.initState();
+    // A l'ecoute du clavier entier, pas seulement quand ce bouton a le focus :
+    // l'animateur n'a aucune raison de l'avoir cliqué avant.
+    HardwareKeyboard.instance.addHandler(_surTouche);
+  }
+
+  @override
+  void dispose() {
+    HardwareKeyboard.instance.removeHandler(_surTouche);
+    super.dispose();
+  }
+
+  bool _surTouche(KeyEvent evenement) {
+    if (evenement is! KeyDownEvent) return false;
+    final touche = evenement.logicalKey;
+    if (touche != LogicalKeyboardKey.arrowRight &&
+        touche != LogicalKeyboardKey.pageDown) {
+      return false;
+    }
+    // Pendant une saisie, la fleche deplace le curseur : on ne lui vole pas.
+    final focus = FocusManager.instance.primaryFocus?.context;
+    if (focus != null &&
+        focus.findAncestorWidgetOfExactType<EditableText>() != null) {
+      return false;
+    }
+    if (!widget.moteur.lectureEnCours) return false;
+    widget.moteur.montrerQuestion();
+    return true;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final m = widget.moteur;
+    final avecChrono = m.utiliseChrono && m.chronoPremiere > 0;
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        BSPrimaryButton(
+          label: 'Montrer la question',
+          onPressed: m.montrerQuestion,
+          grand: true,
+        ),
+        const SizedBox(width: BSSpace.s4),
+        Flexible(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // Le clic lance aussi le chrono : l'animateur doit le savoir
+              // avant de cliquer, pas le decouvrir au decompte.
+              if (avecChrono)
+                Text('Le chrono de ${m.chronoPremiere} s part en même temps.',
+                    style: BSType.body(size: 15, color: BSColors.text)),
+              Text('Raccourci : flèche droite',
+                  style: BSType.body(size: 13, color: BSColors.neutral600)),
+            ],
+          ),
         ),
       ],
     );

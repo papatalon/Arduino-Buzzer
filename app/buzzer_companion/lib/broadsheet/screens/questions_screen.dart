@@ -4,6 +4,7 @@ import '../../questionnaires/active_questionnaire.dart';
 import '../../questionnaires/banque.dart';
 import '../../questionnaires/questionnaire.dart';
 import '../../questionnaires/questionnaire_store.dart';
+import '../segmente.dart';
 import '../tokens.dart';
 
 // Écran "Questions" : la bibliothèque de questionnaires, et l'atelier pour
@@ -375,7 +376,7 @@ class _Library extends StatelessWidget {
             Text('Questions', style: BSType.buzzerNameConsole(size: 26)),
             const SizedBox(width: BSSpace.s6),
             if (!pourLaPartie)
-              _Segmente(
+              BSSegmente(
                 options: const ['Mes questionnaires', 'La banque'],
                 choisi: surLaBanque ? 1 : 0,
                 onChoisir: (i) => onOnglet(i == 1),
@@ -560,62 +561,6 @@ class _Library extends StatelessWidget {
         ),
         child: Text(texte),
       );
-}
-
-// Le contrôle segmenté du design system (`.seg` de styles.css) : un cadre,
-// des options séparées par un filet, celle qui est retenue en aplat d'accent.
-// Sans coins arrondis, comme tout le reste de la console.
-//
-// Deux onglets ne méritent pas un TabBar : celui de Material apporte un
-// indicateur animé, un défilement et un thème à mater, pour un choix entre
-// deux mots.
-class _Segmente extends StatelessWidget {
-  const _Segmente({
-    required this.options,
-    required this.choisi,
-    required this.onChoisir,
-  });
-
-  final List<String> options;
-  final int choisi;
-  final ValueChanged<int> onChoisir;
-
-  @override
-  Widget build(BuildContext context) {
-    return DecoratedBox(
-      decoration: BoxDecoration(border: Border.all(color: BSColors.divider)),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          for (var i = 0; i < options.length; i++)
-            DecoratedBox(
-              decoration: BoxDecoration(
-                color: i == choisi ? BSColors.accent : Colors.transparent,
-                border: i == 0
-                    ? null
-                    : const Border(
-                        left: BorderSide(color: BSColors.divider),
-                      ),
-              ),
-              child: InkWell(
-                onTap: () => onChoisir(i),
-                child: Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 14, vertical: 9),
-                  child: Text(
-                    options[i],
-                    style: BSType.body(
-                      size: 15,
-                      color: i == choisi ? BSColors.bg : BSColors.text,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-        ],
-      ),
-    );
-  }
 }
 
 // ---------------------------------------------------------- Fureteur de banque

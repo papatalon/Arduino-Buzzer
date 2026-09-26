@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -5,6 +7,7 @@ import 'package:buzzer_companion/jeu/moteur_quiz.dart';
 import 'dart:math';
 
 import 'package:buzzer_companion/jeu/mots_de_la_fin.dart';
+import 'package:buzzer_companion/jeu/phrases_lecture.dart';
 import 'package:buzzer_companion/jeu/moteur_reflexe.dart';
 import 'package:buzzer_companion/popout/popout_content.dart';
 import 'package:buzzer_companion/popout/popout_snapshot.dart';
@@ -346,5 +349,67 @@ void main() {
     expect(find.text("BRIS D'ÉGALITÉ"), findsOneWidget);
     expect(find.textContaining('SUR 2'), findsNothing);
     moteur.dispose();
+  });
+
+  // PENDANT LA LECTURE, l'ecran ne doit ni rester vide ni montrer la
+  // question : une phrase tient sa place. Rendu pour de vrai, comme les
+  // autres, parce qu'un debordement de mise en page laisserait un ecran vide
+  // sans rien signaler.
+  PopoutSnapshot pendantLaLecture({required int jeu, int chrono = 0}) {
+    final actif = ActiveQuestionnaire(GameState())
+      ..use(
+        Questionnaire(title: 'Essai', questions: [
+          QuizQuestion(question: 'Qui donc ?', answer: 'Lui'),
+        ]),
+        origine: 'Essai',
+      );
+    final moteur = MoteurQuiz(ble: _MaterielMuet(), actif: actif)
+      ..chronoPremiere = chrono
+      ..reglerLecture(surAutorisation: true)
+      ..demarrer(jeuChoisi: jeu, limite: 1);
+    final snap = PopoutSnapshot.duMoteur(
+      moteur,
+      GameState(),
+      question: actif.current,
+      teamNames: const ['Rouge', 'Bleu', 'Jaune', 'Vert'],
+      logoPath: null,
+      vueSons: VueDesSons.aucune,
+      pisteEnCours: PisteEnCours.aucune,
+    );
+    moteur.dispose();
+    return snap;
+  }
+
+  testWidgets('pendant la lecture, la phrase remplace la question',
+      (tester) async {
+    final snap = pendantLaLecture(jeu: 0);
+    await rendre(tester, snap);
+    expect(find.text(snap.motLecture), findsOneWidget);
+    expect(find.text('Qui donc ?'), findsNothing);
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('sur un jeu a chrono, la phrase remplace aussi le libelle',
+      (tester) async {
+    final snap = pendantLaLecture(jeu: 2, chrono: 20);
+    await rendre(tester, snap);
+    expect(find.text(snap.motLecture), findsOneWidget);
+    // La phrase dit deja que ca s'en vient : le libelle technique serait de
+    // trop. La barre, elle, reste.
+    expect(find.text('CHRONO NON LANCÉ'), findsNothing);
+    expect(tester.takeException(), isNull);
+  });
+
+  // La plus longue phrase de la liste doit tenir dans la zone sans
+  // debordement : c'est elle qui casserait la mise en page la premiere.
+  testWidgets('la plus longue phrase tient sans deborder', (tester) async {
+    final longue = phrasesLecture.reduce((a, b) => a.length >= b.length ? a : b);
+    final base = pendantLaLecture(jeu: 2, chrono: 20);
+    final json = jsonDecode(base.encode()) as Map<String, dynamic>;
+    json['motLecture'] = longue;
+    final snap = PopoutSnapshot.decode(jsonEncode(json));
+    await rendre(tester, snap);
+    expect(find.text(longue), findsOneWidget);
+    expect(tester.takeException(), isNull);
   });
 }

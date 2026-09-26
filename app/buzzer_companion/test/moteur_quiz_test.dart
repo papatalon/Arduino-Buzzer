@@ -2,6 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:buzzer_companion/jeu/moteur_quiz.dart';
 import 'package:buzzer_companion/jeu/mots_de_la_fin.dart';
+import 'package:buzzer_companion/jeu/phrases_lecture.dart';
 import 'package:buzzer_companion/protocol.dart';
 import 'package:buzzer_companion/questionnaires/active_questionnaire.dart';
 import 'package:buzzer_companion/questionnaires/questionnaire.dart';
@@ -423,6 +424,173 @@ void main() {
       // buzzer.
       expect(moteur.etape, EtapeQuiz.finie);
       expect(moteur.gagnant, _bleu);
+    });
+  });
+
+  // LA QUESTION RETENUE PENDANT LA LECTURE.
+  //
+  // L'animateur lit a voix haute ; la salle ne doit pas lire plus vite que
+  // lui. Ce qui se trompe en silence ici : une question qui ne parait jamais,
+  // des buzzers qui restent desarmes apres le clic, ou un appui qui compte
+  // alors que personne ne devait pouvoir buzzer.
+  group('La lecture de la question', () {
+    setUp(() => moteur = creer());
+
+    test('dans le moteur seul, rien ne change : la question part tout de suite', () {
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      expect(moteur.lectureEnCours, isFalse);
+      expect(moteur.questionMontree, isTrue);
+      expect(moteur.motLecture, isEmpty);
+    });
+
+    test('avec le reglage, la question attend et une phrase tient sa place', () {
+      moteur.reglerLecture(surAutorisation: true);
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      expect(moteur.lectureEnCours, isTrue);
+      expect(phrasesLecture, contains(moteur.motLecture));
+      // Armes par defaut : on peut buzzer en ecoutant.
+      expect(materiel.dernierArmement, 0x0F);
+    });
+
+    test('le clic de l\'animateur la montre et retire la phrase', () {
+      moteur.reglerLecture(surAutorisation: true);
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.montrerQuestion();
+      expect(moteur.lectureEnCours, isFalse);
+      expect(moteur.motLecture, isEmpty);
+      expect(moteur.etape, EtapeQuiz.attente);
+    });
+
+    test('chaque question repart en lecture, avec une autre phrase', () {
+      moteur.reglerLecture(surAutorisation: true);
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      final premiere = moteur.motLecture;
+      moteur.montrerQuestion();
+      moteur.surBuzz(_rouge, 300);
+      moteur.bonneReponse();
+      moteur.continuer();
+      expect(moteur.lectureEnCours, isTrue);
+      expect(moteur.motLecture, isNot(premiere));
+    });
+
+    group('buzzers verrouilles', () {
+      setUp(() => moteur
+        ..reglerLecture(surAutorisation: true, verrouiller: true));
+
+      test('la question arrive sans armer personne', () {
+        moteur.demarrer(jeuChoisi: 0, limite: 0);
+        expect(moteur.buzzersRetenus, isTrue);
+        expect(materiel.armements, isEmpty);
+        expect(materiel.desarmements, greaterThan(0));
+      });
+
+      test('un appui pendant la lecture ne compte pas', () {
+        moteur.demarrer(jeuChoisi: 0, limite: 0);
+        moteur.surBuzz(_bleu, 300);
+        expect(moteur.etape, EtapeQuiz.attente);
+        expect(moteur.buzzeur, isNull);
+      });
+
+      test('le clic arme tous ceux qui sont en lice', () {
+        moteur.demarrer(jeuChoisi: 0, limite: 0);
+        moteur.montrerQuestion();
+        expect(materiel.dernierArmement, 0x0F);
+        moteur.surBuzz(_bleu, 300);
+        expect(moteur.buzzeur, _bleu);
+      });
+
+      test('en Vol, le clic n\'arme que le joueur designe', () {
+        moteur.demarrer(jeuChoisi: 4, limite: 0);
+        final designe = moteur.tourVol;
+        moteur.montrerQuestion();
+        expect(materiel.dernierArmement, _bit(designe));
+        moteur.dispose();
+      });
+    });
+
+    test('arme, un buzz pendant la lecture compte et met la question en jeu', () {
+      moteur.reglerLecture(surAutorisation: true);
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.surBuzz(_jaune, 300);
+      expect(moteur.buzzeur, _jaune);
+      // Si la reponse est mauvaise, les autres doivent pouvoir lire ce a
+      // quoi ils repondent.
+      expect(moteur.questionMontree, isTrue);
+      moteur.mauvaiseReponse();
+      expect(moteur.etape, EtapeQuiz.attente);
+      expect(moteur.lectureEnCours, isFalse);
+    });
+
+    test('sur un jeu a chrono, un seul clic montre et lance le chrono', () {
+      moteur.chronoPremiere = 20;
+      moteur.reglerLecture(surAutorisation: true);
+      moteur.demarrer(jeuChoisi: 2, limite: 0);
+      expect(moteur.chronoActif, isFalse);
+      moteur.montrerQuestion();
+      expect(moteur.lectureEnCours, isFalse);
+      expect(moteur.chronoActif, isTrue);
+      expect(moteur.chronoRestant, 20);
+      moteur.dispose();
+    });
+
+    test('« Lancer le chrono » pendant la lecture montre aussi la question', () {
+      moteur.chronoPremiere = 20;
+      moteur.reglerLecture(surAutorisation: true, verrouiller: true);
+      moteur.demarrer(jeuChoisi: 2, limite: 0);
+      moteur.lancerChronoPremiere();
+      expect(moteur.lectureEnCours, isFalse);
+      expect(moteur.chronoActif, isTrue);
+      // Sans quoi le chrono tournerait devant des buzzers morts.
+      expect(materiel.dernierArmement, 0x0F);
+      moteur.dispose();
+    });
+
+    // La regle plus ancienne des jeux a chrono tient toujours sans le
+    // reglage : la question attend le lancement du chrono. Le verrouillage,
+    // lui, reste un sous-choix du reglage et ne s'applique pas.
+    test('sans le reglage, un jeu a chrono retient la question, buzzers armes', () {
+      moteur.chronoPremiere = 20;
+      moteur.reglerLecture(surAutorisation: false, verrouiller: true);
+      moteur.demarrer(jeuChoisi: 2, limite: 0);
+      expect(moteur.lectureEnCours, isTrue);
+      expect(moteur.buzzersRetenus, isFalse);
+      expect(materiel.dernierArmement, 0x0F);
+      moteur.lancerChronoPremiere();
+      expect(moteur.lectureEnCours, isFalse);
+      moteur.dispose();
+    });
+
+    test('une manche libre n\'a rien a retenir', () {
+      moteur.actif.utiliserLibre();
+      moteur.reglerLecture(surAutorisation: true, verrouiller: true);
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      expect(moteur.lectureEnCours, isFalse);
+      expect(moteur.motLecture, isEmpty);
+      expect(materiel.dernierArmement, 0x0F);
+    });
+
+    test('la question du bris d\'egalite attend aussi l\'animateur', () {
+      moteur.reglerLecture(surAutorisation: true);
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.montrerQuestion();
+      moteur.surBuzz(_bleu, 300);
+      moteur.bonneReponse();
+      moteur.continuer();
+      moteur.montrerQuestion();
+      moteur.surBuzz(_rouge, 300);
+      moteur.bonneReponse();
+      moteur.terminer();
+      moteur.lancerBrisDegalite();
+      expect(moteur.lectureEnCours, isTrue);
+      expect(moteur.motLecture, isNotEmpty);
+    });
+
+    test('une nouvelle partie ne garde rien de la lecture precedente', () {
+      moteur.reglerLecture(surAutorisation: true);
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.retourAuMenu();
+      expect(moteur.questionMontree, isTrue);
+      expect(moteur.motLecture, isEmpty);
     });
   });
 }
