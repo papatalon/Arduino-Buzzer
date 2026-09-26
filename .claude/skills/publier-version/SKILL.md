@@ -10,7 +10,7 @@ doit être sautée « parce que rien n'a changé de ce côté ».
 
 ## Ce qui rend cette procédure fragile
 
-Trois choses se trompent en silence si on va trop vite.
+Quatre choses se trompent en silence si on va trop vite.
 
 **Le numéro de build.** C'est lui, et lui seul, qui décide si un poste voit
 le bandeau de mise à jour. Oublier de l'incrémenter publie une version que
@@ -18,8 +18,13 @@ personne ne sera jamais invité à télécharger : l'app compare `build` et
 n'annonce rien quand les deux sont égaux. Rien ne le signalera.
 
 **L'adresse visée par le binaire.** Une version compilée pendant un essai
-local peut viser `localhost`. Elle s'installe, se lance, et ne trouve aucun
+local peut viser `localhost`. Elle s'installe, se lance, et ne trouve aucune
 banque de questions chez l'utilisateur. Vérification obligatoire à l'étape 4.
+
+**Le tag.** `gh release create` le pose sur le commit visé. Créer la release
+avant d'avoir poussé la montée de version pose `v1.1.0` sur un commit dont le
+`pubspec.yaml` dit encore la version précédente. Tous les tags existants
+pointent sur leur commit « Version X » : d'où l'ordre de l'étape 7.
 
 **Les notes de version.** Elles sont la seule chose que l'utilisateur lit
 avant de télécharger, et le bandeau y renvoie par « Nouveautés ». Une
@@ -98,8 +103,13 @@ a été laissée de travers : corriger et reconstruire.
 
 ```powershell
 $rel = "D:\dev\Arduino\Buzzer\app\buzzer_companion\build\windows\x64\runner\Release"
-Compress-Archive -Path "$rel\*" -DestinationPath "$env:TEMP\buzzer-console-1.1.0-windows.zip" -CompressionLevel Optimal
+$zip = "$env:TEMP\buzzer-console-1.1.0-windows.zip"
+Compress-Archive -Path "$rel\*" -DestinationPath $zip -CompressionLevel Optimal -Force
+$zip   # le chemin a donner a gh a l'etape 7
 ```
+
+`-Force` écrase une archive laissée par un essai précédent. Sans lui,
+`Compress-Archive` s'arrête sur une erreur au lieu de la remplacer.
 
 Le nom du fichier doit correspondre **exactement** à celui que la page
 d'accueil calcule, `buzzer-console-<version>-windows.zip`. Sinon le bouton
@@ -108,11 +118,14 @@ Télécharger mène à un 404.
 Rappel : l'archive ne va **jamais** dans le dépôt. 18 Mo par version, sans
 compression delta possible, resteraient dans l'historique pour toujours.
 
-## 6. Publier la version sur GitHub, avec de vraies notes
+## 6. Écrire les notes de version
 
 Les notes de version sont **la seule chose que l'utilisateur lit avant de
 télécharger**, et le bandeau de mise à jour y renvoie par « Nouveautés ».
 Elles ne sont pas une formalité de fin de procédure.
+
+On les écrit ici, mais on ne publie rien encore : la release part à l'étape
+7, juste après le push.
 
 ### D'abord, retrouver ce qui a changé
 
@@ -163,33 +176,92 @@ Ce qui pourrait surprendre ou bloquer : reflash du firmware necessaire,
 reglage remis a zero, comportement qui change.
 ```
 
-### Publier
+### Garder le ton des versions précédentes
+
+Relire les notes d'une version récente avant d'écrire :
 
 ```bash
-gh release create v1.1.0 "<chemin du zip>#Console de l'animateur, Windows 64 bits" \
-  --title "Console de l'animateur 1.1.0" --notes-file -
+gh release view v2.2.0 --json body -q .body
 ```
 
-Puis relire la page publiée : `gh release view v1.1.0`. Des notes vides, ou
-celles de la version précédente, sont pires qu'une version sans bandeau.
+Ce qu'on y trouve et qu'on garde : le vouvoiement, « l'écran des
+participants », une phrase en gras en tête de chaque point, et la mention du
+firmware en fin d'« À savoir », qu'il faille reflasher ou non.
 
-## 7. Pousser le site
+### Les préparer dans un fichier
+
+Écrire les notes dans un fichier du scratchpad, **avant** l'étape 7. La
+release doit suivre le push sans délai (voir pourquoi plus bas), et ce n'est
+pas à ce moment-là qu'on cherche ses mots.
+
+## 7. Commiter la version, pousser, puis publier aussitôt
+
+### D'abord le commit « Version X.Y.Z », poussé
 
 ```bash
-git add -A && git commit && git push origin main
+git add app/buzzer_companion/pubspec.yaml site/
+git commit -m "Version 1.1.0"
+git push origin main
 ```
 
-Cloudflare Pages redéploie tout seul. Attendre, puis **vérifier pour de
-vrai** :
+Nommer les fichiers plutôt que faire un `git add -A` : un artefact oublié
+dans l'arbre (captures d'un navigateur piloté, test jetable) partirait avec
+la version.
+
+**POURQUOI LE PUSH AVANT LA RELEASE.** C'est ce qui pose le tag sur le bon
+commit (voir « Le tag » plus haut). Le prix : le push redéploie le site, et
+`version.json` annonce la nouvelle version avant que la release existe.
+C'est sans conséquence si on enchaîne tout de suite, parce que Cloudflare met
+environ une minute à redéployer et que la release se crée en quelques
+secondes. C'est pour ça que les notes doivent être prêtes d'avance.
+
+### Ensuite la release, sans attendre
+
+```bash
+SHA=$(git rev-parse HEAD)
+gh release create v1.1.0 \
+  "C:/Users/<vous>/AppData/Local/Temp/buzzer-console-1.1.0-windows.zip#Console de l'animateur, Windows 64 bits" \
+  --target "$SHA" --title "Console de l'animateur 1.1.0" \
+  --notes-file "C:/<scratchpad>/notes-v1.1.0.md"
+```
+
+Deux pièges, rencontrés pour de vrai à la 2.3.0 :
+
+- **`--target` exige le SHA complet.** GitHub refuse un SHA abrégé avec
+  `HTTP 422: Release.target_commitish is invalid`. Dans ce cas rien n'est
+  créé, ni release ni tag : on relance tel quel avec le SHA complet.
+- **Des chemins Windows, pas ceux de Git Bash.** `gh` est un programme
+  Windows : un chemin en `/c/Users/...` échoue sur « Le chemin d'accès
+  spécifié est introuvable ». Il faut écrire `C:/Users/...`, pour l'archive
+  comme pour les notes. Le chemin de l'archive est celui affiché à l'étape 5.
+
+Puis relire ce qui a été publié. Des notes vides, ou celles de la version
+précédente, sont pires qu'une version sans bandeau :
+
+```bash
+gh release view v1.1.0
+gh release list --limit 2                                  # la nouvelle doit etre « Latest »
+git fetch --tags && git log -1 --format='%h %s' v1.1.0     # doit etre « Version 1.1.0 »
+```
+
+### Enfin, vérifier le site pour de vrai
+
+Attendre que Cloudflare Pages ait redéployé, puis :
 
 ```bash
 cd app/buzzer_companion && dart run tool/verify_banque.dart
 curl -s https://buzzer.sd6tools.net/version.json
-curl -sIL -o /dev/null -w "%{http_code}\n" <lien de telechargement de la page>
+curl -sIL -o /dev/null -w "%{http_code}\n" \
+  https://github.com/papatalon/Arduino-Buzzer/releases/download/v1.1.0/buzzer-console-1.1.0-windows.zip
+curl -s https://buzzer.sd6tools.net/ \
+  | grep -oE "releases/download/v[0-9.]+/buzzer-console-[0-9.]+-windows\.zip" | sort -u
 ```
 
-Les trois doivent passer : banque cohérente, `version.json` au nouveau
-build, lien de téléchargement qui répond 200.
+Les quatre doivent passer : la banque est cohérente, `version.json` est au
+nouveau build, le lien de téléchargement répond 200, et le bouton
+Télécharger de la page d'accueil pointe sur la nouvelle version. Ce dernier
+contrôle est celui que la personne qui télécharge voit en premier ; un
+`version.json` juste ne garantit pas que la page servie l'est aussi.
 
 ## Vérifier le bandeau, si on veut en être sûr
 
