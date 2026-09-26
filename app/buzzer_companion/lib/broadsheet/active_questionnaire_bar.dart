@@ -21,7 +21,10 @@ class ActiveQuestionnaireBar extends StatelessWidget {
     return ListenableBuilder(
       listenable: actif,
       builder: (context, _) {
-        if (!actif.active) return const SizedBox.shrink();
+        // En manche libre, le questionnaire est garde en reserve mais ne
+        // fournit rien : annoncer « question 3 sur 20 » d'un questionnaire
+        // dont aucune question ne se pose serait faux.
+        if (!actif.active || actif.libre) return const SizedBox.shrink();
         final epuise = actif.exhausted;
         return Container(
           margin: const EdgeInsets.only(bottom: BSSpace.s4),

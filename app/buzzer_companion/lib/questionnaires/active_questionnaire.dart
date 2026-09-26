@@ -117,9 +117,23 @@ class ActiveQuestionnaire extends ChangeNotifier {
     notifyListeners();
   }
 
+  // LA QUESTION A POSER, telle que tout l'aval la lit : la console, l'ecran
+  // public, l'etat de partie (voir _push) et la regle qui decide s'il y a une
+  // reponse a reveler.
+  //
+  // EN MANCHE LIBRE, AUCUNE. Le questionnaire choisi reste en reserve pour
+  // qu'on y revienne sans le rechoisir, mais il ne fournit plus rien : c'est
+  // l'animateur qui pose ses questions. Ce getter le renvoyait quand meme, et
+  // chaque question d'une manche libre projetait a la salle celle du
+  // questionnaire en reserve, revelait sa reponse en fin de question, et
+  // reecrivait l'etat de partie que utiliserLibre venait de vider.
+  //
+  // La question de bris fait exception, meme en manche libre : l'animateur
+  // l'a demandee lui-meme, en cliquant « Departager », et elle doit
+  // s'afficher.
   QuizQuestion? get current =>
       _questionDeBris ??
-      (active && _index >= 0 && _index < total
+      (!libre && active && _index >= 0 && _index < total
           ? _questionnaire!.questions[_index]
           : null);
 

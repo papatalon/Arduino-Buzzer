@@ -117,6 +117,49 @@ void main() {
     expect(game.questionText, isNull);
   });
 
+  // LE CAS QUI AVAIT ÉCHAPPÉ au test précédent : un questionnaire choisi
+  // AVANT de passer en manche libre. Il reste en réserve pour qu'on y
+  // revienne, mais ses questions ne doivent sortir nulle part. Elles
+  // sortaient : projetées à la salle à chaque question, et leur réponse
+  // révélée à la fin.
+  group('en manche libre, avec un questionnaire en réserve', () {
+    setUp(() {
+      actif.use(troisQuestions(), origine: 'Essai');
+      actif.utiliserLibre();
+    });
+
+    test('aucune question courante', () {
+      expect(actif.active, isTrue, reason: 'le questionnaire reste en réserve');
+      expect(actif.current, isNull);
+      expect(game.questionText, isNull);
+    });
+
+    // Le moteur appelle goTo à chaque question, manche libre ou non : c'est
+    // lui qui réécrivait l'état de partie que utiliserLibre venait de vider.
+    test('avancer ne réécrit pas l\'état de partie', () {
+      actif.goTo(1);
+      expect(actif.current, isNull);
+      expect(game.questionText, isNull);
+      expect(game.appQuestion, isFalse);
+    });
+
+    test('reprendre le questionnaire le rend tel qu\'il était', () {
+      actif.goTo(1);
+      actif.reprendreQuestionnaire();
+      expect(actif.current?.question, 'Q2');
+      expect(game.questionText, 'Q2');
+    });
+
+    // L'exception : « Départager » demande une question à la banque, et
+    // l'animateur l'a voulue. Elle s'affiche, manche libre ou pas.
+    test('la question de bris demandée par l\'animateur passe quand même', () {
+      actif.poserQuestionDeBris(
+          QuizQuestion(themes: {'Un'}, question: 'Bris', answer: 'B'));
+      expect(actif.current?.question, 'Bris');
+      expect(game.questionText, 'Bris');
+    });
+  });
+
   // UNE MANCHE TIRÉE NE SE REJOUE PAS. Elle est composée pour une partie et
   // une seule ; la garder en place après coup, c'était offrir « Lancer la
   // partie » sur les vingt questions que la salle venait d'entendre, sans que

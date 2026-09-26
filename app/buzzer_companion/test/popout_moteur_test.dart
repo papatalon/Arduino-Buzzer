@@ -136,4 +136,27 @@ void main() {
     expect(retour.gameMode, 1);
     expect(retour.qcountValue, 5);
   });
+
+  // MANCHE LIBRE APRÈS UN QUESTIONNAIRE. Le questionnaire reste en réserve,
+  // et ses questions sortaient quand même : projetées à la place de la
+  // phrase d'attention, puis leur réponse révélée en fin de question, pour
+  // une question que personne n'avait posée.
+  group('en manche libre, avec un questionnaire en réserve', () {
+    setUp(() => actif.utiliserLibre());
+
+    test('la salle voit la phrase d\'attention, pas la question en réserve', () {
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      final s = vu();
+      expect(s.questionText, isNull);
+      expect(s.motAttention, isNotEmpty);
+    });
+
+    test('aucune réponse n\'est révélée en fin de question', () {
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.passer();
+      // Sans question à l'écran, on va droit aux scores.
+      expect(moteur.etape, EtapeQuiz.scores);
+      expect(vu().answerText, isNull);
+    });
+  });
 }
