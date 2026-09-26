@@ -84,9 +84,11 @@ void main() {
   });
 
   // Une partie pose une vingtaine de questions, une soirée trois ou quatre
-  // parties. En deçà, le sac se vide avant la fin de la première partie.
-  test('assez de phrases pour plus d\'une partie sans redite', () {
-    expect(phrasesLecture.length, greaterThanOrEqualTo(40));
+  // parties. Cent phrases, c'est une soirée entière sans une redite : le
+  // client les a demandées, et ce plancher empêche la liste de fondre sans
+  // que personne le remarque.
+  test('assez de phrases pour une soirée entière sans redite', () {
+    expect(phrasesLecture.length, greaterThanOrEqualTo(100));
   });
 
   group('le tirage', () {

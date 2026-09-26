@@ -85,15 +85,66 @@ const phrasesLecture = <String>[
   "L'animateur articule. Faites-lui honneur.",
   'Le texte viendra. Pour l\'instant, les oreilles.',
   'Ne regardez pas ici. Écoutez là-bas.',
+  "Les oreilles d'abord. Les yeux, tantôt.",
+  'Tout le monde écoute. Même ceux qui font semblant.',
+  "L'animateur a trouvé ses lunettes. Ça avance.",
+  'Gardez vos réponses au chaud. Elles serviront.',
+  "On ne lit pas par-dessus l'épaule de l'animateur.",
+  'Le texte fait la file. Il arrive.',
+  'Un peu de patience. Vos neurones vous remercieront.',
+  'Silence radio dans la salle. Parfait.',
+  "On attend la fin de la phrase. C'est la règle.",
+  "L'animateur lit avec émotion. Applaudissez plus tard.",
+  'Le suspense est gratuit ce soir. Profitez-en.',
+  "Personne ne sait encore rien. C'est le moment idéal.",
+  "La question arrive, mais elle prend l'escalier.",
+  "Écouter, c'est déjà la moitié de la réponse.",
+  'Le texte est timide. Il se montre bientôt.',
+  'Vos meilleures réponses sont encore à venir.',
+  'Ça mijote. La question sort du four bientôt.',
+  "Laissez l'animateur finir. Il a pratiqué.",
+  "Pas de précipitation. Juste de l'écoute.",
+  "La salle est prête. L'écran, pas encore.",
+  'On écoute comme au cinéma : sans parler.',
+  'Le savoir arrive par les oreilles ce soir.',
+  'Chaque mot compte. Même les petits.',
+  'Tenez-vous bien. Ça va être bon.',
+  'On lit à voix haute, comme à la petite école.',
+  "L'écran fait une petite sieste. Laissez-le dormir.",
+  'Écouter, ça ne coûte rien. Et ça rapporte gros.',
+  "Retenez vos chevaux. Le texte s'en vient.",
+  'Faites confiance à vos oreilles. Pour une fois.',
+  "Ce n'est pas le temps de jaser avec son voisin.",
+  'Le silence vous va très bien.',
+  'Les plus sages attendent la fin. Les autres aussi, là.',
+  "Mettez vos lunettes d'écoute.",
+  'Du calme et du sang-froid. Ça arrive.',
+  "Une bonne écoute vaut mieux qu'une bonne vue.",
+  "L'animateur lit. Le reste du monde attend.",
+  'La question prend son élan.',
+  'On y est presque. Promis, juré, craché.',
+  'Vos méninges sont priées de se présenter.',
+  "Le texte se fait attendre. C'est sa marque de commerce.",
+  'Il paraît que la réponse est facile. Il paraît.',
+  'Écoutez la question. Elle a travaillé fort.',
+  "Pas besoin de lire dans les pensées. Juste d'écouter.",
+  "La question est prête. L'animateur, presque.",
+  'On retient son souffle. Ou sa collation.',
+  'Rangez vos cellulaires. Sortez vos oreilles.',
+  'Les bonnes réponses aiment le silence.',
+  "Ça s'en vient, aussi sûr que l'hiver.",
+  'On ne souffle pas la réponse à son voisin.',
+  "Même les gagnants écoutent jusqu'au bout.",
 ];
 
 // Tire les phrases SANS REMISE : toutes passent une fois avant qu'une seule
-// ne revienne. Une soirée pose facilement une soixantaine de questions ; tiré
-// au hasard pur, le même gag reviendrait deux fois dans la même partie, et
-// c'est la deuxième fois qu'on remarque.
+// ne revienne. Une soirée pose facilement une soixantaine de questions, et la
+// liste en compte cent : une soirée entière passe sans une redite. Tiré au
+// hasard pur, le même gag reviendrait dans la même partie, et c'est la
+// deuxième fois qu'on remarque.
 //
 // Au changement de sac, la première phrase du nouveau n'est jamais la
-// dernière de l'ancien : sinon, une fois sur cinquante, la même phrase
+// dernière de l'ancien : sinon, une fois sur cent, la même phrase
 // s'afficherait deux questions de suite.
 class TirageLecture {
   TirageLecture({Random? hasard}) : _hasard = hasard ?? Random();
