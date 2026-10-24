@@ -217,7 +217,7 @@ const kDepotGitHubCourt = 'papatalon/Arduino-Buzzer';
 // Purement indicatif, a rafraichir quand l'archive change nettement de taille.
 // Faux, il ne fait qu'induire en erreur sur la duree du telechargement ; il ne
 // casse rien.
-const kTailleTelechargement = '18 Mo';
+const kTailleTelechargement = '23 Mo';
 
 // D'où sort une question. Ne voyage pas dans les questionnaires (une question
 // n'a pas à dire d'où elle vient à l'animateur), seulement dans la page de
