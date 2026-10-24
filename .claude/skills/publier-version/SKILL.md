@@ -1,6 +1,6 @@
 ---
 name: publier-version
-description: Publier une nouvelle version de la console de l'animateur (app Flutter Windows) sur GitHub Releases et buzzer.sd6tools.net. À utiliser quand on demande de publier, livrer, sortir ou releaser une version, de faire un build de diffusion, ou de mettre à jour les notes de version.
+description: Publier une nouvelle version de la console de l'animateur (app Flutter Windows) sur GitHub Releases et buzzer.sd6tools.net. À utiliser quand on demande de publier, déployer, livrer, sortir ou releaser une version, de faire un build de diffusion, ou de mettre à jour les notes de version.
 ---
 
 # Publier une version
@@ -10,7 +10,7 @@ doit être sautée « parce que rien n'a changé de ce côté ».
 
 ## Ce qui rend cette procédure fragile
 
-Quatre choses se trompent en silence si on va trop vite.
+Ces choses se trompent en silence si on va trop vite.
 
 **Le numéro de build.** C'est lui, et lui seul, qui décide si un poste voit
 le bandeau de mise à jour. Oublier de l'incrémenter publie une version que
@@ -30,6 +30,25 @@ pointent sur leur commit « Version X » : d'où l'ordre de l'étape 7.
 avant de télécharger, et le bandeau y renvoie par « Nouveautés ». Une
 version publiée sans notes, ou avec les notes de la précédente, est pire
 qu'une version sans bandeau.
+
+**Le code de la livraison.** Le commit « Version X.Y.Z » ne contient que
+`pubspec.yaml` et le site. Si le correctif est encore dans l'arbre, le tag
+pointe sur une version dont les sources ne sont pas celles du binaire.
+Commiter ce code d'abord, fichiers nommés. Le firmware modifié mais hors de
+cette livraison reste non indexé, et les notes disent qu'il n'y a pas à
+reflasher.
+
+## Lancer les commandes
+
+Le shell de ce poste est PowerShell 5.1. Il n'a pas `&&`, `grep` ni `sed`.
+Enchaîner avec `;` et `if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }`.
+`flutter test` réécrit sa ligne avec un retour chariot : rediriger la sortie
+vers un fichier et n'en lire que le résumé. Les notes s'écrivent avec
+l'éditeur, en UTF-8. `pubspec.yaml` aussi : jamais `Get-Content -Raw`.
+
+Le push sur `main` redéploie Cloudflare Pages tout seul. Pas de wrangler.
+`version.json` peut encore montrer l'ancien build pendant quelques secondes :
+relire jusqu'à voir le nouveau, puis faire les autres contrôles.
 
 ## 1. Choisir la version
 
@@ -53,7 +72,14 @@ cd app/buzzer_companion && sed -i 's/^version: .*/version: 1.1.0+2/' pubspec.yam
 cd app/buzzer_companion && flutter analyze lib test tool && flutter test
 ```
 
-Et si le firmware a changé depuis la dernière fois :
+Cinq tests de `spotify_auth_test.dart` échouent sur ce poste quand Windows a
+réservé 51234, 51235 et 51236. Le vérifier avec
+`netsh interface ipv4 show excludedportrange protocol=tcp`. Le message est
+« Aucun des ports 51234, 51235, 51236 n'est libre ». Ce n'est pas une
+régression de la version : ne pas changer ces ports, ce sont les adresses de
+retour Spotify. L'analyse et le reste de la suite doivent passer.
+
+Compiler le firmware seulement s'il fait partie de la livraison :
 
 ```bash
 cd D:/dev/Arduino/Buzzer && arduino-cli compile --fqbn arduino:avr:mega --output-dir build .
@@ -115,8 +141,12 @@ Le nom du fichier doit correspondre **exactement** à celui que la page
 d'accueil calcule, `buzzer-console-<version>-windows.zip`. Sinon le bouton
 Télécharger mène à un 404.
 
-Rappel : l'archive ne va **jamais** dans le dépôt. 18 Mo par version, sans
-compression delta possible, resteraient dans l'historique pour toujours.
+Rappel : l'archive ne va **jamais** dans le dépôt. Elle pèse la taille
+annoncée par `kTailleTelechargement` dans
+`tool/generate_questionnaires.dart`. Si le zip s'en écarte de plus de deux
+Mo, mettre la constante à jour et relancer le générateur avant le commit de
+version. Une vingtaine de Mo par version, sans compression delta possible,
+resteraient dans l'historique pour toujours.
 
 ## 6. Écrire les notes de version
 
@@ -196,13 +226,22 @@ pas à ce moment-là qu'on cherche ses mots.
 
 ## 7. Commiter la version, pousser, puis publier aussitôt
 
-### D'abord le commit « Version X.Y.Z », poussé
+### D'abord le code, s'il n'est pas déjà sur main
+
+Un commit aux fichiers nommés, message qui dit ce que l'animateur y gagne.
+Pas `pubspec.yaml`, pas `site/`, pas le firmware laissé de côté.
+
+### Puis le commit « Version X.Y.Z », poussé
 
 ```bash
 git add app/buzzer_companion/pubspec.yaml site/
 git commit -m "Version 1.1.0"
 git push origin main
 ```
+
+Si la banque embarquée a changé, nommer aussi
+`app/buzzer_companion/assets/questions/banque.json`. Si seule la page a
+bougé, `site/index.html` et `site/version.json` suffisent.
 
 Nommer les fichiers plutôt que faire un `git add -A` : un artefact oublié
 dans l'arbre (captures d'un navigateur piloté, test jetable) partirait avec
@@ -218,6 +257,7 @@ secondes. C'est pour ça que les notes doivent être prêtes d'avance.
 ### Ensuite la release, sans attendre
 
 ```bash
+# PowerShell : $sha = git rev-parse HEAD
 SHA=$(git rev-parse HEAD)
 gh release create v1.1.0 \
   "C:/Users/<vous>/AppData/Local/Temp/buzzer-console-1.1.0-windows.zip#Console de l'animateur, Windows 64 bits" \
@@ -246,7 +286,9 @@ git fetch --tags && git log -1 --format='%h %s' v1.1.0     # doit etre « Versio
 
 ### Enfin, vérifier le site pour de vrai
 
-Attendre que Cloudflare Pages ait redéployé, puis :
+Attendre que Cloudflare Pages ait redéployé. Relire `version.json` jusqu'à
+y voir le nouveau build : le premier essai montre souvent encore l'ancien.
+Puis :
 
 ```bash
 cd app/buzzer_companion && dart run tool/verify_banque.dart
