@@ -62,6 +62,32 @@ void main() {
     );
   });
 
+  test('le nombre de pistes se lit dans items, sinon dans tracks', () async {
+    // Spotify a renommé le bloc. Une liste n'a plus que l'un ou l'autre.
+    final client = MockClient((_) async => _rep({
+          'items': [
+            {
+              'id': 'neuf',
+              'name': 'Nouvelle forme',
+              'owner': {'display_name': 'Marc'},
+              'items': {'total': 18},
+            },
+            {
+              'id': 'ancien',
+              'name': 'Ancienne forme',
+              'owner': {'display_name': 'Marc'},
+              'tracks': {'total': 7},
+            },
+          ],
+          'next': null,
+        }));
+
+    final comptes = (await _api(client).listerPlaylists())
+        .map((p) => p.nombrePistes)
+        .toList();
+    expect(comptes, [18, 7]);
+  });
+
   test('un 204 veut dire que rien ne joue, pas une erreur', () async {
     final client = MockClient((_) async => http.Response('', 204));
     expect(await _api(client).lectureEnCours(), isNull);

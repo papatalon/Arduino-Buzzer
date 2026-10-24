@@ -80,13 +80,21 @@ class PlaylistSpotify {
     final id = json['id'] as String?;
     if (id == null) return null;
     final proprio = json['owner'] as Map<String, dynamic>?;
-    final pistes = json['tracks'] as Map<String, dynamic>?;
     return PlaylistSpotify(
       id: id,
       nom: json['name'] as String? ?? '(sans nom)',
       proprietaire: proprio?['display_name'] as String? ?? '',
-      nombrePistes: pistes?['total'] as int? ?? 0,
+      // Février 2026 : Spotify a renommé « tracks » en « items ». L'ancien
+      // nom reste lu, pour une réponse d'avant. Sans l'un ni l'autre, le
+      // compte affiché est 0.
+      nombrePistes: _compte(json['items']) ?? _compte(json['tracks']) ?? 0,
     );
+  }
+
+  static int? _compte(Object? bloc) {
+    if (bloc is! Map) return null;
+    final total = bloc['total'];
+    return total is num ? total.toInt() : null;
   }
 }
 
