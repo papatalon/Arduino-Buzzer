@@ -171,6 +171,29 @@ void main() {
       expect(s.motLecture, isEmpty);
     });
 
+    test('réponses décochées : la réponse ne part pas', () {
+      moteur.phasesDesQuiz[0].reponses = false;
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.passer();
+      final s = vu();
+      expect(s.answerText, isNull);
+      expect(s.flowState, QuestionFlowState.scored);
+    });
+
+    test('final décoché : pas d\'écran de victoire, le pointage reste', () {
+      moteur.phasesDesQuiz[0].finale = false;
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.surBuzz(3, 300);
+      moteur.bonneReponse();
+      moteur.terminer();
+      final s = vu();
+      expect(s.gameFinished, isFalse);
+      expect(s.motFinal, isEmpty);
+      expect(s.flowState, QuestionFlowState.scored);
+      expect(s.lastBuzz, isNull);
+      expect(s.scores[3], 1);
+    });
+
     test('la phrase survit à l\'aller-retour vers la fenêtre publique', () {
       moteur.demarrer(jeuChoisi: 0, limite: 0);
       final aller = vu();

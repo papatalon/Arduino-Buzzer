@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 import '../audio/sonorisation.dart';
 import 'animation_tirage.dart';
 import 'mots_de_la_fin.dart';
+import 'phases_actives.dart';
 import 'phrases_lecture.dart';
 import '../questionnaires/active_questionnaire.dart';
 
@@ -147,6 +148,31 @@ class MoteurQuiz extends ChangeNotifier {
   }
 
   final List<int> scores = [0, 0, 0, 0];
+
+  /// Une série de cases par jeu de quiz, index 0 à 4 comme GameMode.h.
+  ///
+  /// Tout est coché au départ. L'animateur décoche sur l'écran de lancement,
+  /// et la partie qui suit saute les étapes éteintes.
+  final List<PhasesActives> phasesDesQuiz =
+      List.generate(5, (_) => PhasesActives());
+
+  /// Les cases du jeu en cours, ou de celui qu'on s'apprête à lancer.
+  PhasesActives get phases {
+    final j = jeu ?? jeuChoisi ?? 0;
+    if (j < 0 || j >= phasesDesQuiz.length) return phasesDesQuiz[0];
+    return phasesDesQuiz[j];
+  }
+
+  void reglerPhase(int jeuVise, EtapeDePartie etape, bool active) {
+    if (jeuVise < 0 || jeuVise >= phasesDesQuiz.length) return;
+    final p = phasesDesQuiz[jeuVise];
+    if (p.estActive(etape) == active) return;
+    p.definir(etape, active);
+    notifyListeners();
+  }
+
+  /// Les cases viennent d'être relues. L'écran de lancement les affiche.
+  void phasesChargees() => notifyListeners();
 
   /// Buzzers présents, tel que le matériel les rapporte.
   List<bool> presents = [true, true, true, true];
@@ -307,11 +333,18 @@ class MoteurQuiz extends ChangeNotifier {
     // mode application c'est au moteur de le faire, puisque c'est lui qui
     // mène.
     //
-    // Sautée quand aucune sonorisation n'est branchée : une ouverture
+    // Sautée dans deux cas. Aucune sonorisation branchée : une ouverture
     // silencieuse n'ouvre rien, et les tests des règles n'ont pas à traverser
-    // une animation pour arriver à la première question.
+    // une animation pour arriver à la première question. Démarrage décoché :
+    // l'animateur a demandé de commencer directement, mais l'ambiance se tait
+    // quand même, sinon elle couvre la première question.
     if (sons == null) {
-      questionSuivante();
+      _entrerEnJeu();
+      return;
+    }
+    if (!phases.demarrage) {
+      sons!.couperAmbiance();
+      _entrerEnJeu();
       return;
     }
     etape = EtapeQuiz.intro;
@@ -385,16 +418,30 @@ class MoteurQuiz extends ChangeNotifier {
   /// encore.
   void commencerLesQuestions() {
     if (etape != EtapeQuiz.intro) return;
+    // Le tirage de Vol tourne déjà : un second clic relancerait la roue
+    // par-dessus la première.
+    if (tirage?.enCours == true) return;
     _arreterChenillard();
     // La musique s'arrete avec le chenillard : la laisser courir par-dessus
     // la premiere question serait pire que pas d'ouverture du tout.
     sons?.arreter();
     ble.allumerLeds(0);
+    _entrerEnJeu();
+  }
 
-    // Vol : on designe le joueur qui ouvre, avec le meme tirage anime que le
-    // buzzer fait en mode autonome. Le sort est deja tire (voir demarrer) :
-    // l'animation ne decide de rien, elle annonce.
+  /// Après l'ouverture, ou à sa place quand elle est sautée.
+  ///
+  /// Vol désigne d'abord qui ouvre. Le sort est déjà tiré (voir [demarrer]) :
+  /// l'animation ne décide de rien, elle annonce. Sans tirage branché, on
+  /// passe à la question, comme les tests des règles le font.
+  void _entrerEnJeu() {
     if (estVol && tirage != null) {
+      // Sans l'écran d'ouverture, la console reviendrait au formulaire de
+      // lancement pendant que la roue tourne.
+      if (etape != EtapeQuiz.intro) {
+        etape = EtapeQuiz.intro;
+        ouvertureTerminee = true;
+      }
       motTirage = motDeTirage();
       notifyListeners();
       tirage!.lancer(
@@ -459,6 +506,13 @@ class MoteurQuiz extends ChangeNotifier {
   }
 
   void _armer() {
+    // Buzzer décoché : les boutons restent au repos pour toute la partie.
+    // L'animateur avance lui-même, depuis la console.
+    if (!phases.buzzer) {
+      ble.desarmer();
+      ble.allumerLeds(0);
+      return;
+    }
     ble.armer(_masqueEnLice);
     ble.allumerLeds(0);
   }
@@ -495,6 +549,7 @@ class MoteurQuiz extends ChangeNotifier {
   /// Le matériel rapporte un appui. [ms] est mesuré sur le Mega, donc sans la
   /// gigue du Bluetooth.
   void surBuzz(int qui, int ms) {
+    if (!phases.buzzer) return;
     if (etape != EtapeQuiz.attente) return;
     // Buzzers retenus pendant la lecture : le Mega est desarme, aucun appui
     // ne devrait arriver. S'il en arrive un quand meme (un message deja en
@@ -518,7 +573,8 @@ class MoteurQuiz extends ChangeNotifier {
   void bonneReponse() {
     final qui = buzzeur;
     if (qui == null || etape != EtapeQuiz.buzze) return;
-    sons?.bonneReponse();
+    // Réponses décochées : le point compte, le son de bonne réponse non.
+    if (phases.reponses) sons?.bonneReponse();
     scores[qui]++;
     dernierJuge = qui;
     derniereEtaitBonne = true;
@@ -535,7 +591,8 @@ class MoteurQuiz extends ChangeNotifier {
   void mauvaiseReponse() {
     final qui = buzzeur;
     if (qui == null || etape != EtapeQuiz.buzze) return;
-    sons?.mauvaiseReponse();
+    // Réponses décochées : l'écart et la pénalité restent, le son non.
+    if (phases.reponses) sons?.mauvaiseReponse();
     if (estPenalite) scores[qui]--;
     dernierJuge = qui;
     derniereEtaitBonne = false;
@@ -652,13 +709,20 @@ class MoteurQuiz extends ChangeNotifier {
     ble.desarmer();
     ble.allumerLeds(0);
     etape = EtapeQuiz.finie;
-    // Tire ici, une seule fois : l'ecran public le recoit dans l'instantane
-    // et ne le retire pas a chaque reconstruction.
-    motFinal = motDeLaFin(egalite: egalite);
-    if (egalite) {
-      sons?.egalite();
-    } else if (gagnant != null) {
-      sons?.victoire();
+    // Final décoché : la console garde le gagnant, pour que l'animateur
+    // puisse l'annoncer et revenir au menu. La salle, elle, ne voit pas
+    // l'écran de victoire, et aucun morceau ne part.
+    if (phases.finale) {
+      // Tire ici, une seule fois : l'ecran public le recoit dans l'instantane
+      // et ne le retire pas a chaque reconstruction.
+      motFinal = motDeLaFin(egalite: egalite);
+      if (egalite) {
+        sons?.egalite();
+      } else if (gagnant != null) {
+        sons?.victoire();
+      }
+    } else {
+      motFinal = '';
     }
     notifyListeners();
   }
@@ -738,7 +802,9 @@ class MoteurQuiz extends ChangeNotifier {
     ble.allumerLeds(0);
     // Sans question à l'écran (questionnaire libre), il n'y a pas de réponse
     // à révéler : on va droit aux scores.
-    etape = actif.current?.answer.isNotEmpty == true
+    // Réponses décochées : on ne s'arrête pas sur la réponse. La console
+    // l'a déjà sous les yeux depuis le début de la question.
+    etape = phases.reponses && actif.current?.answer.isNotEmpty == true
         ? EtapeQuiz.revelee
         : EtapeQuiz.scores;
     notifyListeners();

@@ -15,6 +15,7 @@ import 'broadsheet/tokens.dart';
 import 'event_logo.dart';
 import 'jeu/animation_tirage.dart';
 import 'jeu/moteur_quiz.dart';
+import 'jeu/phases_actives.dart';
 import 'jeu/moteur_chrono_aveugle.dart';
 import 'jeu/moteur_ne_buzze_pas.dart';
 import 'jeu/moteur_reflexe.dart';
@@ -167,6 +168,12 @@ class _BuzzerCompanionAppState extends State<BuzzerCompanionApp>
     // Les reglages de lecture de la derniere soiree : la question attend-elle
     // l'animateur, les buzzers sont-ils retenus pendant qu'il la lit.
     ReglagesLecture.charger(_moteur);
+    // Les étapes cochées de chaque jeu de quiz, telles que laissées à la
+    // soirée précédente. Tant que la relecture n'est pas revenue, tout est
+    // coché, ce qui est aussi la valeur par défaut.
+    ReglagesPhases.charger(_moteur.phasesDesQuiz).then((_) {
+      _moteur.phasesChargees();
+    });
 
     // LE REFLEXE, deuxieme jeu mene par l'application. Chaque jeu a son
     // moteur : leurs regles n'ont rien en commun, et les melanger dans une

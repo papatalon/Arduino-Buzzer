@@ -13,7 +13,9 @@ import '../protocol.dart';
 import '../questionnaires/active_questionnaire.dart';
 import '../questionnaires/tirage_questions.dart';
 import '../team_names.dart';
+import 'geste_montrer_question.dart';
 import 'moteur_quiz.dart';
+import 'phases_actives.dart';
 import 'reglages_lecture.dart';
 
 // LA CONSOLE DE L'ANIMATEUR, en mode application.
@@ -188,6 +190,13 @@ class _LancementState extends State<_Lancement> {
           ),
           const SizedBox(height: BSSpace.s6),
 
+          // Quelles étapes cette partie joue. Les six jeux sans questions
+          // n'ont pas ce découpage : leur console ne le propose pas.
+          if (_estQuiz) ...[
+            _Deroulement(moteur: widget.moteur, jeu: _jeu!),
+            const SizedBox(height: BSSpace.s6),
+          ],
+
           // D'ou viennent les questions. Seuls les cinq jeux de quiz en ont
           // besoin ; sans ca, « Lancer » demarrerait une partie sans matiere
           // et l'animateur ne le decouvrirait qu'apres.
@@ -286,6 +295,105 @@ class _LancementState extends State<_Lancement> {
     final actif = widget.actif;
     if (actif.libre) return actif.nombreLibre ?? 0;
     return actif.total;
+  }
+}
+
+// LES QUATRE ÉTAPES QUI ONT UN SON, cochées pour ce jeu. Tout l'est au départ.
+// La question n'y figure pas : rien ne joue quand elle paraît.
+class _Deroulement extends StatelessWidget {
+  const _Deroulement({required this.moteur, required this.jeu});
+
+  final MoteurQuiz moteur;
+  final int jeu;
+
+  @override
+  Widget build(BuildContext context) {
+    final phases = moteur.phasesDesQuiz[jeu];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text('LE DÉROULEMENT', style: BSType.sectionKicker()),
+        const SizedBox(height: BSSpace.s2),
+        Wrap(
+          spacing: BSSpace.s4,
+          runSpacing: BSSpace.s2,
+          children: [
+            for (final etape in EtapeDePartie.values)
+              _CasePhase(
+                libelle: etape.libelle,
+                coche: phases.estActive(etape),
+                onTap: () {
+                  moteur.reglerPhase(jeu, etape, !phases.estActive(etape));
+                  ReglagesPhases.enregistrer(moteur.phasesDesQuiz);
+                },
+              ),
+          ],
+        ),
+        const SizedBox(height: BSSpace.s2),
+        SizedBox(
+          width: 620,
+          child: Text(
+            "Démarrage ouvre la soirée, Buzzer arme les boutons, "
+            "Réponses révèle la réponse et joue son son, "
+            "Final annonce le gagnant. "
+            "Le choix est retenu pour ce jeu.",
+            style: BSType.body(size: 15, color: BSColors.neutral600),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _CasePhase extends StatelessWidget {
+  const _CasePhase({
+    required this.libelle,
+    required this.coche,
+    required this.onTap,
+  });
+
+  final String libelle;
+  final bool coche;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: onTap,
+        behavior: HitTestBehavior.opaque,
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SizedBox(
+              width: 17,
+              height: 17,
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  color: coche ? BSColors.accent : Colors.transparent,
+                  border: coche ? null : Border.all(color: BSColors.neutral500),
+                ),
+                child: coche
+                    ? const Center(
+                        child: Text('✓',
+                            style: TextStyle(
+                                color: Colors.white, fontSize: 12, height: 1)),
+                      )
+                    : null,
+              ),
+            ),
+            const SizedBox(width: 11),
+            Text(
+              libelle,
+              style: BSType.body(size: 16, color: BSColors.text).copyWith(
+                fontWeight: coche ? FontWeight.w600 : FontWeight.w400,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 
@@ -600,6 +708,7 @@ class _Attente extends StatelessWidget {
         if (moteur.presents[i] && moteur.enLice[i]) i
     ];
     final lecture = moteur.lectureEnCours;
+    final sansBuzzer = !moteur.phases.buzzer;
     // LE BOUTON « MONTRER » n'existe que si c'est le reglage qui retient la
     // question. Sur un jeu a chrono sans ce reglage, elle attend le « Lancer
     // le chrono » d'avant, avec son libelle d'avant.
@@ -610,12 +719,15 @@ class _Attente extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        _RaccourciMontrerQuestion(moteur: moteur),
         Text(
           lecture
               ? 'Lecture en cours'
-              : moteur.estVol && enLice.length == 1
-                  ? 'À ${teams.nameFor(enLice.first)} de répondre'
-                  : 'Buzzers armés',
+              : sansBuzzer
+                  ? 'Buzzers au repos'
+                  : moteur.estVol && enLice.length == 1
+                      ? 'À ${teams.nameFor(enLice.first)} de répondre'
+                      : 'Buzzers armés',
           style: BSType.buzzerNameConsole(size: 24),
         ),
         // Ce que la salle voit, dit sans detour : l'animateur ne regarde pas
@@ -625,7 +737,13 @@ class _Attente extends StatelessWidget {
           const SizedBox(height: BSSpace.s1),
           Text(
             'La salle ne voit pas encore la question. $vol'
-            '${moteur.buzzersRetenus ? 'Buzzers verrouillés jusque-là.' : 'Buzzers armés.'}',
+            '${!moteur.phases.buzzer ? 'Buzzers au repos.' : moteur.buzzersRetenus ? 'Buzzers verrouillés jusque-là.' : 'Buzzers armés.'}',
+            style: BSType.body(size: 15, color: BSColors.neutral700),
+          ),
+        ] else if (sansBuzzer) ...[
+          const SizedBox(height: BSSpace.s1),
+          Text(
+            'Les boutons restent au repos.',
             style: BSType.body(size: 15, color: BSColors.neutral700),
           ),
         ],
@@ -680,55 +798,16 @@ class _Attente extends StatelessWidget {
 // trouver sans le chercher. Il prend donc la place du geste principal de
 // l'etape, en grand, et rien d'autre ne lui dispute ce rang.
 //
-// UN RACCOURCI CLAVIER, aussi : la fleche droite ou « Page suivante ». Ce sont
-// les deux touches qu'envoie une telecommande de presentation, ce qui permet
-// de lire debout, loin du clavier. Pas la barre d'espace ni Entree : Flutter
-// s'en sert pour presser le bouton qui a le focus, et un « Personne ne
-// trouve » actionne par erreur devant la salle ne se rattrape pas.
-class _MontrerQuestion extends StatefulWidget {
+// Les raccourcis vivent dans [_RaccourciMontrerQuestion], qui reste monté
+// après le clic : la barre d'espace tenue ne doit pas retomber sur un autre
+// bouton une fois celui-ci disparu.
+class _MontrerQuestion extends StatelessWidget {
   const _MontrerQuestion({required this.moteur});
   final MoteurQuiz moteur;
 
   @override
-  State<_MontrerQuestion> createState() => _MontrerQuestionState();
-}
-
-class _MontrerQuestionState extends State<_MontrerQuestion> {
-  @override
-  void initState() {
-    super.initState();
-    // A l'ecoute du clavier entier, pas seulement quand ce bouton a le focus :
-    // l'animateur n'a aucune raison de l'avoir cliqué avant.
-    HardwareKeyboard.instance.addHandler(_surTouche);
-  }
-
-  @override
-  void dispose() {
-    HardwareKeyboard.instance.removeHandler(_surTouche);
-    super.dispose();
-  }
-
-  bool _surTouche(KeyEvent evenement) {
-    if (evenement is! KeyDownEvent) return false;
-    final touche = evenement.logicalKey;
-    if (touche != LogicalKeyboardKey.arrowRight &&
-        touche != LogicalKeyboardKey.pageDown) {
-      return false;
-    }
-    // Pendant une saisie, la fleche deplace le curseur : on ne lui vole pas.
-    final focus = FocusManager.instance.primaryFocus?.context;
-    if (focus != null &&
-        focus.findAncestorWidgetOfExactType<EditableText>() != null) {
-      return false;
-    }
-    if (!widget.moteur.lectureEnCours) return false;
-    widget.moteur.montrerQuestion();
-    return true;
-  }
-
-  @override
   Widget build(BuildContext context) {
-    final m = widget.moteur;
+    final m = moteur;
     final avecChrono = m.utiliseChrono && m.chronoPremiere > 0;
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -749,7 +828,7 @@ class _MontrerQuestionState extends State<_MontrerQuestion> {
               if (avecChrono)
                 Text('Le chrono de ${m.chronoPremiere} s part en même temps.',
                     style: BSType.body(size: 15, color: BSColors.text)),
-              Text('Raccourci : flèche droite',
+              Text('Raccourci : espace, ou flèche droite',
                   style: BSType.body(size: 13, color: BSColors.neutral600)),
             ],
           ),
@@ -757,6 +836,63 @@ class _MontrerQuestionState extends State<_MontrerQuestion> {
       ],
     );
   }
+}
+
+// Écoute le clavier tant que la question est en attente, pas seulement
+// pendant que le bouton est visible. Voir [GesteMontrerQuestion].
+class _RaccourciMontrerQuestion extends StatefulWidget {
+  const _RaccourciMontrerQuestion({required this.moteur});
+  final MoteurQuiz moteur;
+
+  @override
+  State<_RaccourciMontrerQuestion> createState() =>
+      _RaccourciMontrerQuestionState();
+}
+
+class _RaccourciMontrerQuestionState extends State<_RaccourciMontrerQuestion> {
+  final _geste = GesteMontrerQuestion();
+
+  @override
+  void initState() {
+    super.initState();
+    // Avant l'arbre de focus : sinon le bouton focalisé prend l'espace.
+    FocusManager.instance.addEarlyKeyEventHandler(_surFocus);
+    // La télécommande arrive même quand rien n'a le focus. Les deux
+    // chemins partagent le geste, le second appel de la même touche
+    // ne montre pas la question une deuxième fois.
+    HardwareKeyboard.instance.addHandler(_surMateriel);
+  }
+
+  @override
+  void dispose() {
+    FocusManager.instance.removeEarlyKeyEventHandler(_surFocus);
+    HardwareKeyboard.instance.removeHandler(_surMateriel);
+    super.dispose();
+  }
+
+  bool get _questionRetenue =>
+      widget.moteur.lectureEnCours && widget.moteur.questionSurAutorisation;
+
+  bool get _dansUnChamp {
+    final focus = FocusManager.instance.primaryFocus?.context;
+    if (focus == null) return false;
+    return focus.findAncestorWidgetOfExactType<EditableText>() != null;
+  }
+
+  KeyEventResult _traiter(KeyEvent evenement) => _geste.traiter(
+        evenement,
+        questionRetenue: _questionRetenue,
+        dansUnChamp: _dansUnChamp,
+        montrer: widget.moteur.montrerQuestion,
+      );
+
+  KeyEventResult _surFocus(KeyEvent evenement) => _traiter(evenement);
+
+  bool _surMateriel(KeyEvent evenement) =>
+      _traiter(evenement) == KeyEventResult.handled;
+
+  @override
+  Widget build(BuildContext context) => const SizedBox.shrink();
 }
 
 class _Chrono extends StatelessWidget {

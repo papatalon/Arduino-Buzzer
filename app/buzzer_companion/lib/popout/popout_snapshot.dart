@@ -480,6 +480,10 @@ class PopoutSnapshot {
       EtapeQuiz.buzze => QuestionFlowState.buzzed,
       EtapeQuiz.scores => QuestionFlowState.scored,
       EtapeQuiz.revelee => QuestionFlowState.revealed,
+      // Final décoché : pas d'écran de victoire. On reste sur le tableau
+      // des scores, pour que la salle voie encore le pointage pendant que
+      // l'animateur annonce le gagnant depuis la console.
+      EtapeQuiz.finie when !moteur.phases.finale => QuestionFlowState.scored,
       // Pendant l'ouverture, l'ecran public reste sur son plan d'attente, qui
       // annonce deja le jeu en grand : c'est exactement ce qu'il faut montrer
       // pendant que la musique joue.
@@ -487,8 +491,10 @@ class PopoutSnapshot {
         QuestionFlowState.none,
     };
     // La reponse ne sort qu'une fois la question tranchee : c'est le contrat
-    // de confidentialite, et il se tient ici, a la serialisation.
-    final revelee = moteur.etape == EtapeQuiz.revelee || moteur.etape == EtapeQuiz.scores;
+    // de confidentialite, et il se tient ici, a la serialisation. Réponses
+    // décochées : elle ne sort pas du tout.
+    final revelee = moteur.phases.reponses &&
+        (moteur.etape == EtapeQuiz.revelee || moteur.etape == EtapeQuiz.scores);
 
     return PopoutSnapshot(
       appMene: true,
@@ -498,7 +504,13 @@ class PopoutSnapshot {
       gameMode: moteur.jeu,
       displayGameMode: moteur.jeu,
       phase: game.phase,
-      lastBuzz: moteur.etape == EtapeQuiz.buzze ? moteur.buzzeur : moteur.dernierJuge,
+      // À la fin sans l'écran Final, le dernier point marqué ne doit pas
+      // rester affiché comme s'il venait d'arriver : le tableau suffit.
+      lastBuzz: moteur.etape == EtapeQuiz.buzze
+          ? moteur.buzzeur
+          : moteur.etape == EtapeQuiz.finie
+              ? null
+              : moteur.dernierJuge,
       flowState: flow,
       questionCategory: montrer && question.etiquette.isNotEmpty ? question.etiquette : null,
       questionText: montrer ? question.question : null,
@@ -508,8 +520,8 @@ class PopoutSnapshot {
       teamNames: teamNames,
       gameWinner: moteur.gagnant,
       gameTie: moteur.egalite,
-      gameFinished: moteur.etape == EtapeQuiz.finie,
-      motFinal: moteur.motFinal,
+      gameFinished: moteur.etape == EtapeQuiz.finie && moteur.phases.finale,
+      motFinal: moteur.phases.finale ? moteur.motFinal : '',
       motAttention: moteur.motAttention,
       motLecture: retenue ? moteur.motLecture : '',
       motTirage: moteur.motTirage,

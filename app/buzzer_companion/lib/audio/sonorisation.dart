@@ -47,9 +47,16 @@ class Sonorisation {
 
   /// Musique d'ouverture, au lancement d'une partie.
   void intro() {
-    surOuverture?.call();
+    couperAmbiance();
     _jouer(locale.playIntro, 'I');
   }
+
+  /// Coupe la musique d'ambiance, sans jouer l'ouverture.
+  ///
+  /// L'ambiance se tait parce qu'une partie commence, pas parce qu'un morceau
+  /// d'intro passe. Quand l'animateur a décoché Démarrage, il n'y a pas de
+  /// morceau, et Spotify continuerait sinon par-dessus la première question.
+  void couperAmbiance() => surOuverture?.call();
 
   /// Vrai tant que l'application SAIT qu'un son joue encore.
   ///

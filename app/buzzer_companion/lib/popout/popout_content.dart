@@ -360,12 +360,14 @@ class _RevealedZone extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text(
-          snapshot.questionText ?? '',
-          style: BSType.body(size: 40, color: BSColors.neutral700).copyWith(fontWeight: FontWeight.w600),
-          textAlign: TextAlign.center,
-        ),
-        const SizedBox(height: BSSpace.s4),
+        if (snapshot.questionText != null && snapshot.questionText!.isNotEmpty) ...[
+          Text(
+            snapshot.questionText!,
+            style: BSType.body(size: 40, color: BSColors.neutral700).copyWith(fontWeight: FontWeight.w600),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: BSSpace.s4),
+        ],
         Text('LA RÉPONSE ÉTAIT', style: BSType.popoutHeaderMeta(color: BSColors.accent2_700)),
         const SizedBox(height: BSSpace.s2),
         if (snapshot.answerText != null)

@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:buzzer_companion/audio/sonorisation.dart';
 import 'package:buzzer_companion/jeu/moteur_quiz.dart';
 import 'package:buzzer_companion/jeu/mots_de_la_fin.dart';
 import 'package:buzzer_companion/jeu/phrases_lecture.dart';
@@ -17,6 +18,32 @@ import 'package:buzzer_companion/questionnaires/questionnaire.dart';
 // de Vol qui n'avance pas : rien ne plante, la soirée est juste fausse.
 
 // Enregistre ce que le moteur demande au matériel.
+/// Espionne les demandes de son, sans carte audio.
+class _Sons implements Sonorisation {
+  final appels = <String>[];
+
+  @override
+  bool get sonEnCours => false;
+
+  @override
+  bool get finDesSonsConnue => true;
+
+  @override
+  void intro() => appels.add('intro');
+
+  @override
+  void couperAmbiance() => appels.add('ambiance');
+
+  @override
+  void bonneReponse() => appels.add('bonne');
+
+  @override
+  void mauvaiseReponse() => appels.add('mauvaise');
+
+  @override
+  dynamic noSuchMethod(Invocation invocation) => null;
+}
+
 class _Materiel implements CommandesBuzzer {
   final List<int> armements = [];
   final List<int> leds = [];
@@ -45,7 +72,7 @@ void main() {
   late _Materiel materiel;
   late MoteurQuiz moteur;
 
-  MoteurQuiz creer({List<bool>? presents}) {
+  MoteurQuiz creer({List<bool>? presents, Sonorisation? sons}) {
     materiel = _Materiel();
     final actif = ActiveQuestionnaire(GameState())
       ..use(
@@ -56,7 +83,7 @@ void main() {
         ]),
         origine: 'Essai',
       );
-    final m = MoteurQuiz(ble: materiel, actif: actif);
+    final m = MoteurQuiz(ble: materiel, actif: actif, sons: sons);
     if (presents != null) m.presents = presents;
     return m;
   }
@@ -591,6 +618,84 @@ void main() {
       moteur.retourAuMenu();
       expect(moteur.questionMontree, isTrue);
       expect(moteur.motLecture, isEmpty);
+    });
+  });
+
+  // Chaque case décochée saute une étape. Tout coché, les groupes
+  // ci-dessus restent les règles d'avant.
+  group('Étapes décochées', () {
+    test('sans démarrage, la première question part et l\'ambiance se tait', () {
+      final sons = _Sons();
+      moteur = creer(sons: sons);
+      moteur.phasesDesQuiz[0].demarrage = false;
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+
+      expect(moteur.etape, EtapeQuiz.attente);
+      expect(moteur.numeroQuestion, 1);
+      expect(sons.appels, ['ambiance']);
+    });
+
+    test('avec démarrage, la musique d\'ouverture part', () {
+      final sons = _Sons();
+      moteur = creer(sons: sons);
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+
+      expect(moteur.etape, EtapeQuiz.intro);
+      expect(sons.appels, ['intro']);
+      moteur.dispose();
+    });
+
+    test('buzzer décoché : un appui ne compte pas', () {
+      moteur = creer();
+      moteur.phasesDesQuiz[0].buzzer = false;
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+
+      expect(materiel.armements, isEmpty);
+      moteur.surBuzz(_bleu, 200);
+      expect(moteur.etape, EtapeQuiz.attente);
+      expect(moteur.buzzeur, isNull);
+    });
+
+    test('réponses décochées : on ne s\'arrête pas sur la révélation', () {
+      moteur = creer();
+      moteur.phasesDesQuiz[0].reponses = false;
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.passer();
+
+      expect(moteur.etape, EtapeQuiz.scores);
+    });
+
+    test('réponses décochées : le point compte, sans son', () {
+      final sons = _Sons();
+      moteur = creer(sons: sons);
+      moteur.phasesDesQuiz[0].demarrage = false;
+      moteur.phasesDesQuiz[0].reponses = false;
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+
+      moteur.surBuzz(_bleu, 200);
+      moteur.bonneReponse();
+      expect(moteur.scores[_bleu], 1);
+
+      moteur.continuer();
+      moteur.surBuzz(_rouge, 200);
+      moteur.mauvaiseReponse();
+      expect(moteur.enLice[_rouge], isFalse);
+
+      expect(sons.appels, isNot(contains('bonne')));
+      expect(sons.appels, isNot(contains('mauvaise')));
+    });
+
+    test('final décoché : le gagnant reste sur la console, sans phrase', () {
+      moteur = creer();
+      moteur.phasesDesQuiz[0].finale = false;
+      moteur.demarrer(jeuChoisi: 0, limite: 0);
+      moteur.surBuzz(_bleu, 200);
+      moteur.bonneReponse();
+      moteur.terminer();
+
+      expect(moteur.etape, EtapeQuiz.finie);
+      expect(moteur.gagnant, _bleu);
+      expect(moteur.motFinal, isEmpty);
     });
   });
 }
